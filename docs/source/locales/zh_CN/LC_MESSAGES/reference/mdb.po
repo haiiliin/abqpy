@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb.rst:8
+#: ../../reference/mdb.md:5
 msgid "Objects in Mdb"
 msgstr ""
 
-#: ../../reference/mdb.rst:3
+#: ../../reference/mdb.md:1
 msgid "Abaqus Model Database"
 msgstr ""
 
-#: ../../reference/mdb.rst:5
+#: ../../reference/mdb.md:3
 msgid ""
 "Mdb commands are used to create and upgrade an Abaqus model database that"
 " stores models and analysis controls."
 msgstr ""
 
-#: ../../reference/mdb.rst:19
+#: ../../reference/mdb.md:15
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb.rst:22
+#: ../../reference/mdb.md:17
 msgid "Mdb"
 msgstr ""
 
@@ -409,6 +409,11 @@ msgid ""
 "been opened earlier using the openAuxMdb command."
 msgstr ""
 
+#: abaqus.Job.JobMdb.JobMdb:1 abaqus.Mdb.Mdb.Mdb:1 abaqus.Mdb.MdbBase.MdbBase:1
+#: abaqus.Part.AcisMdb.AcisMdb:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Job.JobMdb.JobMdb.Job:5 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:4
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:4 abaqus.Mdb.Mdb.Mdb.Model:4
 #: abaqus.Mdb.MdbBase.MdbBase.__init__:4 abaqus.Mdb.MdbBase.MdbBase.importDxf:6
@@ -534,8 +539,8 @@ msgstr ""
 msgid ":class:`Model`"
 msgstr ""
 
-#: ../../reference/mdb.rst:32
-msgid "MdbBase"
+#: ../../reference/mdb.md:28
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Mdb.MdbBase.MdbBase:1 of
@@ -779,10 +784,6 @@ msgstr ""
 msgid ""
 "cannot save file;     If the command fails to save the Mdb object to disk"
 " for reasons not mentioned above"
-msgstr ""
-
-#: ../../reference/mdb.rst:42
-msgid "AcisMdb"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb:1 abaqus.Part.AcisMdb.AcisMdb:1 of
@@ -1104,10 +1105,6 @@ msgstr ""
 msgid "The data in the VDA-FS file are corrupted."
 msgstr ""
 
-#: ../../reference/mdb.rst:52
-msgid "JobMdb"
-msgstr ""
-
 #: abaqus.Job.JobMdb.JobMdb:10 of
 msgid ""
 "Check `JobMdb on help.3ds.com/2021 "
@@ -1148,9 +1145,9 @@ msgstr ""
 #: abaqus.Job.JobMdb.JobMdb.Job:25 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
-" default value is an empty string.Note:You can use the **queue** argument"
-" when creating a Job object on a Windows workstation; however, remote "
-"queues are available only on Linux platforms."
+" default value is an empty string. Note: You can use the **queue** "
+"argument when creating a Job object on a Windows workstation; however, "
+"remote queues are available only on Linux platforms."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:29 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:27
@@ -1171,14 +1168,16 @@ msgid ""
 "and **atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:37 of
+#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:35
+#: of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
 "empty, the string syntax must be valid for the Linux `at` command. If "
 "**queue** is set, the syntax must be valid according to the system "
-"administrator. The default value is an empty string.Note:You can use the "
-"**atTime** argument when creating a Job object on a Windows workstation; "
-"however, the `at` command is available only on Linux platforms."
+"administrator. The default value is an empty string. Note: You can use "
+"the **atTime** argument when creating a Job object on a Windows "
+"workstation; however, the `at` command is available only on Linux "
+"platforms."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:43 of
@@ -1223,7 +1222,7 @@ msgstr ""
 #: of
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
-" processing is available. Possible values are **numCpus** >> 0. The "
+" processing is available. Possible values are **numCpus** > 0. The "
 "default value is 1."
 msgstr ""
 
@@ -1333,19 +1332,9 @@ msgstr ""
 #: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:23 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
-" default value is an empty string.Note: You can use the **queue** "
+" default value is an empty string. Note:  You can use the **queue** "
 "argument when creating a Job object on a Windows workstation; however, "
 "remote queues are available only on Linux platforms."
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:35 of
-msgid ""
-"A String specifying the time at which to submit the job. If **queue** is "
-"empty, the string syntax must be valid for the Linux `at` command. If "
-"**queue** is set, the syntax must be valid according to the system "
-"administrator. The default value is an empty string.Note: You can use the"
-" **atTime** argument when creating a Job object on a Windows workstation;"
-" however, the `at` command is available only on Linux platforms."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:75 of
@@ -2155,5 +2144,75 @@ msgstr ""
 #~ ":py:obj:`copyAuxMdbModel "
 #~ "<abaqus.Job.JobMdb.JobMdb.copyAuxMdbModel>`\\ \\(fromName\\[\\,"
 #~ " toName\\]\\)"
+#~ msgstr ""
+
+#~ msgid "MdbBase"
+#~ msgstr ""
+
+#~ msgid "AcisMdb"
+#~ msgstr ""
+
+#~ msgid "JobMdb"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the queue to which to submit the"
+#~ " job. The default value is an "
+#~ "empty string.Note:You can use the "
+#~ "**queue** argument when creating a Job"
+#~ " object on a Windows workstation; "
+#~ "however, remote queues are available "
+#~ "only on Linux platforms."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the time at "
+#~ "which to submit the job. If "
+#~ "**queue** is empty, the string syntax"
+#~ " must be valid for the Linux "
+#~ "`at` command. If **queue** is set, "
+#~ "the syntax must be valid according "
+#~ "to the system administrator. The default"
+#~ " value is an empty string.Note:You "
+#~ "can use the **atTime** argument when "
+#~ "creating a Job object on a Windows"
+#~ " workstation; however, the `at` command "
+#~ "is available only on Linux platforms."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "CPUs to use for this analysis if"
+#~ " parallel processing is available. Possible"
+#~ " values are **numCpus** >> 0. The "
+#~ "default value is 1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the queue to which to submit the"
+#~ " job. The default value is an "
+#~ "empty string.Note: You can use the "
+#~ "**queue** argument when creating a Job"
+#~ " object on a Windows workstation; "
+#~ "however, remote queues are available "
+#~ "only on Linux platforms."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the time at "
+#~ "which to submit the job. If "
+#~ "**queue** is empty, the string syntax"
+#~ " must be valid for the Linux "
+#~ "`at` command. If **queue** is set, "
+#~ "the syntax must be valid according "
+#~ "to the system administrator. The default"
+#~ " value is an empty string.Note: You"
+#~ " can use the **atTime** argument when"
+#~ " creating a Job object on a "
+#~ "Windows workstation; however, the `at` "
+#~ "command is available only on Linux "
+#~ "platforms."
 #~ msgstr ""
 

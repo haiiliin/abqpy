@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/step.rst:7
+#: ../../reference/mdb/model/step.md:5
 msgid "Objects in Step"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:3 ../../reference/mdb/model/step.rst:28
+#: ../../reference/mdb/model/step.md:1
 msgid "Step"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:5
+#: ../../reference/mdb/model/step.md:3
 msgid ""
 "The Step commands described in this chapter are used to create and "
 "configure analysis steps. Step commands (output) describes the commands "
@@ -35,7 +35,7 @@ msgid ""
 " configure controls, damping, and frequency tables."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:15
+#: ../../reference/mdb/model/step.md:12
 msgid "Create steps"
 msgstr ""
 
@@ -1178,6 +1178,42 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:1
+#: abaqus.Step.AnalysisStep.AnalysisStep:1 abaqus.Step.AnnealStep.AnnealStep:1
+#: abaqus.Step.BuckleStep.BuckleStep:1
+#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:1
+#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:1
+#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:1
+#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:1
+#: abaqus.Step.DirectCyclicStep.DirectCyclicStep:1
+#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:1
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:1
+#: abaqus.Step.FrequencyStep.FrequencyStep:1
+#: abaqus.Step.GeostaticStep.GeostaticStep:1
+#: abaqus.Step.HeatTransferStep.HeatTransferStep:1
+#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:1
+#: abaqus.Step.InitialStep.InitialStep:1
+#: abaqus.Step.MassDiffusionStep.MassDiffusionStep:1
+#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:1
+#: abaqus.Step.RandomResponseStep.RandomResponseStep:1
+#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:1
+#: abaqus.Step.SoilsStep.SoilsStep:1
+#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:1
+#: abaqus.Step.StaticRiksStep.StaticRiksStep:1
+#: abaqus.Step.StaticStep.StaticStep:1
+#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:1
+#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:1
+#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:1
+#: abaqus.Step.Step.Step:1 abaqus.Step.StepBase.StepBase:1
+#: abaqus.Step.StepModel.StepModel:1
+#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:1
+#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:1
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:1
+#: abaqus.Step.ViscoStep.ViscoStep:1 abaqus.StepOutput.OutputStep.OutputStep:1
+#: of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:8
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:7
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:11
@@ -1831,7 +1867,7 @@ msgstr ""
 msgid ""
 "The SymbolicConstant DEFAULT or an Int specifying the maximum number of "
 "Lanczos block steps within each Lanczos run. The default value is "
-"DEFAULT.Note:*minEigen*, **blockSize**, and **maxBlocks** are ignored "
+"DEFAULT. Note: *minEigen*, **blockSize**, and **maxBlocks** are ignored "
 "unless **eigensolver** = LANCZOS."
 msgstr ""
 
@@ -3379,8 +3415,8 @@ msgstr ""
 #: abaqus.Step.GeostaticStep.GeostaticStep.setValues:31
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:44 of
 msgid ""
-"A Float specifying the total time period. The default value is "
-"1.0.Note:This parameter is ignored unless **timeIncrementationMethod** = "
+"A Float specifying the total time period. The default value is 1.0. Note:"
+" This parameter is ignored unless **timeIncrementationMethod** = "
 "AUTOMATIC."
 msgstr ""
 
@@ -3404,7 +3440,7 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:55 of
 msgid ""
 "A Float specifying the initial time increment. The default value is the "
-"total time period for the step.Note:This parameter is ignored unless "
+"total time period for the step. Note: This parameter is ignored unless "
 "**timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
@@ -3415,7 +3451,7 @@ msgstr ""
 msgid ""
 "A Float specifying the minimum time increment allowed. The default value "
 "is the smaller of the suggested initial time increment or 10−5 times the "
-"total time period.Note:This parameter is ignored unless "
+"total time period. Note: This parameter is ignored unless "
 "**timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
@@ -3425,7 +3461,7 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:63 of
 msgid ""
 "A Float specifying the maximum time increment allowed. The default value "
-"is the total time period for the step.Note:This parameter is ignored "
+"is the total time period for the step. Note: This parameter is ignored "
 "unless **timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
@@ -3493,7 +3529,7 @@ msgid ""
 "None or a Float specifying the temperature change rate (temperature per "
 "time) used to define steady state. When all nodal temperatures are "
 "changing at less than this rate, the solution terminates. The default "
-"value is None.Note:This parameter is ignored unless **response** = "
+"value is None. Note: This parameter is ignored unless **response** = "
 "STEADY_STATE."
 msgstr ""
 
@@ -3669,8 +3705,8 @@ msgstr ""
 msgid ""
 "The SymbolicConstant DEFAULT or a Float specifying the nondefault value "
 "of the numerical (artificial) damping control parameter, αα, in the "
-"implicit operator. Possible values are −.333 <α<<α< 0. The default value "
-"is DEFAULT."
+"implicit operator. Possible values are −.333 <α< 0. The default value is "
+"DEFAULT."
 msgstr ""
 
 #: ../../docstring
@@ -4794,8 +4830,8 @@ msgstr ""
 msgid ":class:`ViscoStep`"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:25
-msgid "Classes"
+#: ../../reference/mdb/model/step.md:23
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Step.Step.Step:1 of
@@ -5807,10 +5843,6 @@ msgstr ""
 msgid "This method suppresses the step."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:38
-msgid "StepBase"
-msgstr ""
-
 #: abaqus.Step.StepBase.StepBase:1 of
 msgid "Bases: :py:class:`object`"
 msgstr ""
@@ -6781,10 +6813,6 @@ msgid ""
 "value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:48
-msgid "AdaptivityStep"
-msgstr ""
-
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:1
 #: abaqus.StepOutput.OutputStep.OutputStep:1 of
 msgid "Bases: :py:class:`~abaqus.Step.StepBase.StepBase`"
@@ -7255,10 +7283,6 @@ msgid ""
 "AdaptiveMeshConstraintState  object. Possible values  are:"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:59
-msgid "OutputStep"
-msgstr ""
-
 #: abaqus.StepOutput.OutputStep.OutputStep:13 of
 msgid ""
 "Check `OutputStep on help.3ds.com/2021 "
@@ -7558,10 +7582,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:70
-msgid "AnalysisStep"
-msgstr ""
-
 #: abaqus.Step.AnalysisStep.AnalysisStep:1 of
 msgid "Bases: :py:class:`~abaqus.Step.Step.Step`"
 msgstr ""
@@ -7682,10 +7702,6 @@ msgstr ""
 msgid ""
 ":py:obj:`predefinedFieldStates "
 "<abaqus.Step.AnalysisStep.AnalysisStep.predefinedFieldStates>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:80
-msgid "AnnealStep"
 msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep:1 abaqus.Step.BuckleStep.BuckleStep:1
@@ -8019,10 +8035,6 @@ msgid ""
 "#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:90
-msgid "BuckleStep"
-msgstr ""
-
 #: abaqus.Step.BuckleStep.BuckleStep:1 of
 msgid ""
 "The BuckleStep object controls eigenvalue buckling estimation. The "
@@ -8246,10 +8258,6 @@ msgstr ""
 
 #: abaqus.Step.BuckleStep.BuckleStep.__init__:48 of
 msgid "A :py:class:`~abaqus.Step.BuckleStep.BuckleStep` object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:100
-msgid "ComplexFrequencyStep"
 msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:1 of
@@ -8503,10 +8511,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:110
-msgid "CoupledTempDisplacementStep"
 msgstr ""
 
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:1 of
@@ -8952,10 +8956,6 @@ msgid ""
 " object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:120
-msgid "CoupledThermalElectricalStructuralStep"
-msgstr ""
-
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:1
 #: of
 msgid ""
@@ -9247,10 +9247,6 @@ msgid ""
 " object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:130
-msgid "CoupledThermalElectricStep"
-msgstr ""
-
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:1 of
 msgid ""
 "The CoupledThermalElectricStep object is used to analyze problems where "
@@ -9530,10 +9526,6 @@ msgid ""
 "A "
 ":py:class:`~abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep`"
 " object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:140
-msgid "DirectCyclicStep"
 msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:1 of
@@ -9899,10 +9891,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Step.DirectCyclicStep.DirectCyclicStep` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:150
-msgid "EmagTimeHarmonicStep"
-msgstr ""
-
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:1 of
 msgid ""
 "The EmagTimeHarmonicStep object is used to calculate the electromagnetic "
@@ -10095,10 +10083,6 @@ msgstr ""
 msgid ""
 "An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:160
-msgid "ExplicitDynamicsStep"
 msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:1 of
@@ -10443,10 +10427,6 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod:7
 #: of
 msgid "The `improvedDtMethod` attribute was added."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:170
-msgid "FrequencyStep"
 msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep:1 of
@@ -10839,10 +10819,6 @@ msgid ""
 "residual modes are requested. The default value is None."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:180
-msgid "GeostaticStep"
-msgstr ""
-
 #: abaqus.Step.GeostaticStep.GeostaticStep:1 of
 msgid ""
 "The GeostaticStep object is used to verify that the geostatic stress "
@@ -11098,11 +11074,7 @@ msgid "type"
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep.timePeriod:4 of
-msgid "A Float specifying the total time period. The default value is 1.0.Note"
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:190
-msgid "HeatTransferStep"
+msgid "A Float specifying the total time period. The default value is 1.0. Note"
 msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:1 of
@@ -11383,10 +11355,6 @@ msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep.__init__:75 of
 msgid "A :py:class:`~abaqus.Step.HeatTransferStep.HeatTransferStep` object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:200
-msgid "ImplicitDynamicsStep"
 msgstr ""
 
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:1 of
@@ -11750,10 +11718,6 @@ msgid ""
 "object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:210
-msgid "InitialStep"
-msgstr ""
-
 #: abaqus.Step.InitialStep.InitialStep:1 of
 msgid ""
 "The InitialStep object is a placeholder that you cannot create, delete, "
@@ -11871,10 +11835,6 @@ msgstr ""
 msgid ""
 ":py:obj:`predefinedFieldStates "
 "<abaqus.Step.InitialStep.InitialStep.predefinedFieldStates>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:220
-msgid "MassDiffusionStep"
 msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep:1 of
@@ -12121,10 +12081,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:230
-msgid "ModalDynamicsStep"
-msgstr ""
-
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:1 of
 msgid ""
 "The ModalDynamicsStep object is used to provide dynamic time history "
@@ -12369,10 +12325,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:240
-msgid "RandomResponseStep"
-msgstr ""
-
 #: abaqus.Step.RandomResponseStep.RandomResponseStep:1 of
 msgid ""
 "The RandomResponseStep object is used to give the linearized response of "
@@ -12597,10 +12549,6 @@ msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep.__init__:41 of
 msgid "A :py:class:`~abaqus.Step.RandomResponseStep.RandomResponseStep` object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:250
-msgid "ResponseSpectrumStep"
 msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:1 of
@@ -12846,10 +12794,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:260
-msgid "SoilsStep"
 msgstr ""
 
 #: abaqus.Step.SoilsStep.SoilsStep:1 of
@@ -13119,10 +13063,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Step.SoilsStep.SoilsStep` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:270
-msgid "StaticLinearPerturbationStep"
-msgstr ""
-
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:1 of
 msgid ""
 "The StaticLinearPerturbationStep object is used to indicate that the "
@@ -13313,10 +13253,6 @@ msgid ""
 "A "
 ":py:class:`~abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep`"
 " object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:280
-msgid "StaticRiksStep"
 msgstr ""
 
 #: abaqus.Step.StaticRiksStep.StaticRiksStep:1 of
@@ -13646,10 +13582,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:290
-msgid "StaticStep"
-msgstr ""
-
 #: abaqus.Step.StaticStep.StaticStep:1 of
 msgid ""
 "The StaticStep object is used to indicate that the step should be "
@@ -13915,10 +13847,6 @@ msgstr ""
 msgid ":class:`StaticStep`"
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:300
-msgid "SteadyStateDirectStep"
-msgstr ""
-
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:1 of
 msgid ""
 "The SteadyStateDirectStep object is used to calculate the linearized "
@@ -14137,10 +14065,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:310
-msgid "SteadyStateModalStep"
 msgstr ""
 
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:1 of
@@ -14371,10 +14295,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:320
-msgid "SteadyStateSubspaceStep"
 msgstr ""
 
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:1 of
@@ -14621,10 +14541,6 @@ msgid ""
 "object."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:330
-msgid "SubspaceDynamicsStep"
-msgstr ""
-
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:1 of
 msgid ""
 "The SubspaceDynamicsStep object is used to calculate the linearized "
@@ -14840,10 +14756,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` "
 "object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:340
-msgid "SubstructureGenerateStep"
 msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:1 of
@@ -15167,10 +15079,6 @@ msgid ""
 " value is an empty string."
 msgstr ""
 
-#: ../../reference/mdb/model/step.rst:350
-msgid "TempDisplacementDynamicsStep"
-msgstr ""
-
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:1 of
 msgid ""
 "The TempDisplacementDynamicsStep object is used to perform a dynamic "
@@ -15411,10 +15319,6 @@ msgid ""
 "A "
 ":py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep`"
 " object."
-msgstr ""
-
-#: ../../reference/mdb/model/step.rst:360
-msgid "ViscoStep"
 msgstr ""
 
 #: abaqus.Step.ViscoStep.ViscoStep:1 of
@@ -19141,5 +19045,173 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":py:obj:`suppress <abaqus.Step.ViscoStep.ViscoStep.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant DEFAULT or an Int"
+#~ " specifying the maximum number of "
+#~ "Lanczos block steps within each Lanczos"
+#~ " run. The default value is "
+#~ "DEFAULT.Note:*minEigen*, **blockSize**, and "
+#~ "**maxBlocks** are ignored unless "
+#~ "**eigensolver** = LANCZOS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the total time "
+#~ "period. The default value is "
+#~ "1.0.Note:This parameter is ignored unless "
+#~ "**timeIncrementationMethod** = AUTOMATIC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the initial time "
+#~ "increment. The default value is the "
+#~ "total time period for the step.Note:This"
+#~ " parameter is ignored unless "
+#~ "**timeIncrementationMethod** = AUTOMATIC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the minimum time "
+#~ "increment allowed. The default value is"
+#~ " the smaller of the suggested initial"
+#~ " time increment or 10−5 times the "
+#~ "total time period.Note:This parameter is "
+#~ "ignored unless **timeIncrementationMethod** = "
+#~ "AUTOMATIC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the maximum time "
+#~ "increment allowed. The default value is"
+#~ " the total time period for the "
+#~ "step.Note:This parameter is ignored unless "
+#~ "**timeIncrementationMethod** = AUTOMATIC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "None or a Float specifying the "
+#~ "temperature change rate (temperature per "
+#~ "time) used to define steady state. "
+#~ "When all nodal temperatures are changing"
+#~ " at less than this rate, the "
+#~ "solution terminates. The default value "
+#~ "is None.Note:This parameter is ignored "
+#~ "unless **response** = STEADY_STATE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant DEFAULT or a Float"
+#~ " specifying the nondefault value of "
+#~ "the numerical (artificial) damping control "
+#~ "parameter, αα, in the implicit operator."
+#~ " Possible values are −.333 <α<<α< 0."
+#~ " The default value is DEFAULT."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "StepBase"
+#~ msgstr ""
+
+#~ msgid "AdaptivityStep"
+#~ msgstr ""
+
+#~ msgid "OutputStep"
+#~ msgstr ""
+
+#~ msgid "AnalysisStep"
+#~ msgstr ""
+
+#~ msgid "AnnealStep"
+#~ msgstr ""
+
+#~ msgid "BuckleStep"
+#~ msgstr ""
+
+#~ msgid "ComplexFrequencyStep"
+#~ msgstr ""
+
+#~ msgid "CoupledTempDisplacementStep"
+#~ msgstr ""
+
+#~ msgid "CoupledThermalElectricalStructuralStep"
+#~ msgstr ""
+
+#~ msgid "CoupledThermalElectricStep"
+#~ msgstr ""
+
+#~ msgid "DirectCyclicStep"
+#~ msgstr ""
+
+#~ msgid "EmagTimeHarmonicStep"
+#~ msgstr ""
+
+#~ msgid "ExplicitDynamicsStep"
+#~ msgstr ""
+
+#~ msgid "FrequencyStep"
+#~ msgstr ""
+
+#~ msgid "GeostaticStep"
+#~ msgstr ""
+
+#~ msgid "A Float specifying the total time period. The default value is 1.0.Note"
+#~ msgstr ""
+
+#~ msgid "HeatTransferStep"
+#~ msgstr ""
+
+#~ msgid "ImplicitDynamicsStep"
+#~ msgstr ""
+
+#~ msgid "InitialStep"
+#~ msgstr ""
+
+#~ msgid "MassDiffusionStep"
+#~ msgstr ""
+
+#~ msgid "ModalDynamicsStep"
+#~ msgstr ""
+
+#~ msgid "RandomResponseStep"
+#~ msgstr ""
+
+#~ msgid "ResponseSpectrumStep"
+#~ msgstr ""
+
+#~ msgid "SoilsStep"
+#~ msgstr ""
+
+#~ msgid "StaticLinearPerturbationStep"
+#~ msgstr ""
+
+#~ msgid "StaticRiksStep"
+#~ msgstr ""
+
+#~ msgid "StaticStep"
+#~ msgstr ""
+
+#~ msgid "SteadyStateDirectStep"
+#~ msgstr ""
+
+#~ msgid "SteadyStateModalStep"
+#~ msgstr ""
+
+#~ msgid "SteadyStateSubspaceStep"
+#~ msgstr ""
+
+#~ msgid "SubspaceDynamicsStep"
+#~ msgstr ""
+
+#~ msgid "SubstructureGenerateStep"
+#~ msgstr ""
+
+#~ msgid "TempDisplacementDynamicsStep"
+#~ msgstr ""
+
+#~ msgid "ViscoStep"
 #~ msgstr ""
 

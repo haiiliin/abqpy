@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,78 +16,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/part_assembly/region.rst:3
-#: ../../reference/mdb/model/part_assembly/region.rst:78
+#: ../../reference/mdb/model/part_assembly/region.md:1
 msgid "Region"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:5
+#: ../../reference/mdb/model/part_assembly/region.md:3
 msgid "Region commands are used to create part and assembly sets or surfaces from elements, nodes, and geometry. For more information, see Specifying a region. Part and assembly objects have the following member, a repository of Set objects:"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:7
+#: ../../reference/mdb/model/part_assembly/region.md:5
 msgid "sets"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:9
+#: ../../reference/mdb/model/part_assembly/region.md:7
 msgid "In turn, a Set object can contain any one of the following types:"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:11
-#: ../../reference/mdb/model/part_assembly/region.rst:20
+#: ../../reference/mdb/model/part_assembly/region.md:9
+#: ../../reference/mdb/model/part_assembly/region.md:18
 msgid "elements"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:12
-#: ../../reference/mdb/model/part_assembly/region.rst:19
+#: ../../reference/mdb/model/part_assembly/region.md:10
+#: ../../reference/mdb/model/part_assembly/region.md:17
 msgid "nodes"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:13
+#: ../../reference/mdb/model/part_assembly/region.md:11
 msgid "geometry"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:15
+#: ../../reference/mdb/model/part_assembly/region.md:13
 msgid "A Set object can contain a number of entities of a single type (nodes, elements, or geometry) or a combination of node and element types. However, except for nodes and elements, a Set object cannot contain a combination of types."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:17
+#: ../../reference/mdb/model/part_assembly/region.md:15
 msgid "The following are members of the Set object:"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:21
+#: ../../reference/mdb/model/part_assembly/region.md:19
 msgid "cells"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:22
+#: ../../reference/mdb/model/part_assembly/region.md:20
 msgid "faces"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:23
+#: ../../reference/mdb/model/part_assembly/region.md:21
 msgid "edges"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:24
+#: ../../reference/mdb/model/part_assembly/region.md:22
 msgid "vertices"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:25
+#: ../../reference/mdb/model/part_assembly/region.md:23
 msgid "referencePoints"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:27
+#: ../../reference/mdb/model/part_assembly/region.md:25
 msgid "Region commands are also used to create surfaces on the assembly. Surfaces are sets with additional sidedness information."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:29
+#: ../../reference/mdb/model/part_assembly/region.md:27
 msgid "Part sets contain regions of a part. You can assign section definitions to a set created by selecting a region of a part. The part sets can be accessed from the instance; however, the section definition you assigned to a region is copied automatically to all instances of that part in the assembly."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:31
+#: ../../reference/mdb/model/part_assembly/region.md:29
 msgid "Assembly sets contain regions of an assembly and are used by many commands that operate on the assembly. For example, you can apply a load or boundary condition to a set created by selecting a region of the assembly. Sets can include regions from multiple part instances."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:34
+#: ../../reference/mdb/model/part_assembly/region.md:31
 msgid "Create regions for Part"
 msgstr ""
 
@@ -2063,6 +2062,19 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: ../../../../src/abaqus/Region/Region.py:docstring of abaqus.Region.Region.Region:1
+#: ../../../../src/abaqus/Region/RegionArray.py:docstring of abaqus.Region.RegionArray.RegionArray:1
+#: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly:1
+#: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:1
+#: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:1
+#: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:1
+#: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin:1
+#: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer:1
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:1
 #: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.EditSkin:1
 msgid "This method modifies underlying entities of the selected skin. At least one of the optional arguments needs to be specified."
@@ -2576,7 +2588,7 @@ msgstr ""
 msgid ":class:`Surface`"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:44
+#: ../../reference/mdb/model/part_assembly/region.md:42
 msgid "Create regions for Assembly"
 msgstr ""
 
@@ -3228,12 +3240,8 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Region.Surface.Surface` object."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:55
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/region.rst:58
-msgid "Region features for Part"
+#: ../../reference/mdb/model/part_assembly/region.md:54
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPartBase.py:docstring of abaqus.Region.RegionPartBase.RegionPartBase:1
@@ -3354,10 +3362,6 @@ msgstr ""
 msgid "A Boolean specifying whether the Surface should be marked as internal."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:68
-msgid "Region features for Assembly"
-msgstr ""
-
 #: ../../../../src/abaqus/Region/RegionAssemblyBase.py:docstring of abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1
 msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
 msgstr ""
@@ -3426,14 +3430,6 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Region.Region.Region.__init__>`\\ \\(\\[xVertices\\, xEdges\\, xFaces\\, ...\\]\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/region.rst:88
-msgid "RegionArray"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/region.rst:98
-msgid "Set"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set:1
@@ -3569,10 +3565,6 @@ msgstr ""
 msgid ":py:obj:`MapSetsFromOdb <abaqus.Region.Set.Set.MapSetsFromOdb>`\\ \\(odbPath\\, odbSets\\[\\, partSets\\, ...\\]\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/region.rst:108
-msgid "Skin"
-msgstr ""
-
 #: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin:1
 msgid "The Skin object stores information on skin reinforcements created on entities."
 msgstr ""
@@ -3614,10 +3606,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/Skin.py:docstring of abaqus.Region.Skin.Skin.__init__:10
 msgid "Check `Skin.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-skinpyc.htm?contextscope=all#simaker-skin__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/region.rst:118
-msgid "Stringer"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer:1
@@ -3669,10 +3657,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/Stringer.py:docstring of abaqus.Region.Stringer.Stringer.__init__:10
 msgid "Check `Stringer.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerpyc.htm?contextscope=all#simaker-stringer__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/region.rst:128
-msgid "Surface"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface:1

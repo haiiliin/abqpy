@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/optimization.rst:3
+#: ../../reference/mdb/model/optimization.md:1
 msgid "Optimization"
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:5
+#: ../../reference/mdb/model/optimization.md:3
 msgid "Optimization commands are used to perform topology, shape, or sizing optimization of your model given a set of objectives and a set of restrictions."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:8
+#: ../../reference/mdb/model/optimization.md:5
 msgid "Create optimization tasks"
 msgstr ""
 
@@ -76,8 +76,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:5
 #: ../../../../src/abaqus/Optimization/StepOption.py:docstring of abaqus.Optimization.StepOption.StepOption:4
 #: ../../../../src/abaqus/Optimization/StopCondition.py:docstring of abaqus.Optimization.StopCondition.StopCondition:6
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:6
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:6
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:5
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:6
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:6
@@ -132,8 +130,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:0
 #: ../../../../src/abaqus/Optimization/StepOption.py:docstring of abaqus.Optimization.StepOption.StepOption:0
 #: ../../../../src/abaqus/Optimization/StopCondition.py:docstring of abaqus.Optimization.StopCondition.StopCondition:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:0
@@ -603,8 +599,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask:0
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl:0
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:0
@@ -698,6 +692,58 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion:1
+#: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth:1
+#: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck:1
+#: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry:1
+#: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry:1
+#: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry:1
+#: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:1
+#: ../../../../src/abaqus/Optimization/CombinedTermDesignResponse.py:docstring of abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse:1
+#: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:1
+#: ../../../../src/abaqus/Optimization/DesignResponse.py:docstring of abaqus.Optimization.DesignResponse.DesignResponse:1
+#: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl:1
+#: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion:1
+#: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea:1
+#: ../../../../src/abaqus/Optimization/GeometricRestriction.py:docstring of abaqus.Optimization.GeometricRestriction.GeometricRestriction:1
+#: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth:1
+#: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition:1
+#: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction:1
+#: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint:1
+#: ../../../../src/abaqus/Optimization/OptimizationObjective.py:docstring of abaqus.Optimization.OptimizationObjective.OptimizationObjective:1
+#: ../../../../src/abaqus/Optimization/OptimizationObjectiveArray.py:docstring of abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray:1
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask:1
+#: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel:1
+#: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck:1
+#: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl:1
+#: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:1
+#: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry:1
+#: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry:1
+#: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry:1
+#: ../../../../src/abaqus/Optimization/ShapeTask.py:docstring of abaqus.Optimization.ShapeTask.ShapeTask:1
+#: ../../../../src/abaqus/Optimization/SingleTermDesignResponse.py:docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse:1
+#: ../../../../src/abaqus/Optimization/SizingClusterAreas.py:docstring of abaqus.Optimization.SizingClusterAreas.SizingClusterAreas:1
+#: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry:1
+#: ../../../../src/abaqus/Optimization/SizingFrozenArea.py:docstring of abaqus.Optimization.SizingFrozenArea.SizingFrozenArea:1
+#: ../../../../src/abaqus/Optimization/SizingMemberSize.py:docstring of abaqus.Optimization.SizingMemberSize.SizingMemberSize:1
+#: ../../../../src/abaqus/Optimization/SizingPlanarSymmetry.py:docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry:1
+#: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry:1
+#: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry:1
+#: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask:1
+#: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl:1
+#: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:1
+#: ../../../../src/abaqus/Optimization/StepOption.py:docstring of abaqus.Optimization.StepOption.StepOption:1
+#: ../../../../src/abaqus/Optimization/StepOptionArray.py:docstring of abaqus.Optimization.StepOptionArray.StepOptionArray:1
+#: ../../../../src/abaqus/Optimization/StopCondition.py:docstring of abaqus.Optimization.StopCondition.StopCondition:1
+#: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:1
+#: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:1
+#: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:1
+#: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:1
+#: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:1
+#: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:4
 #: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:4
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:4
@@ -773,8 +819,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.__init__:4
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:4
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:4
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:4
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:4
@@ -893,10 +937,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.setValues:0
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:0
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.setValues:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
@@ -1200,8 +1240,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.__init__:0
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:0
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
@@ -1289,8 +1327,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.__init__:0
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:0
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
@@ -1866,7 +1902,7 @@ msgstr ""
 msgid ":class:`TopologyTask`"
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:18
+#: ../../reference/mdb/model/optimization.md:16
 msgid "Assign features to optimization tasks"
 msgstr ""
 
@@ -2290,9 +2326,7 @@ msgid ":py:obj:`TopologyCyclicSymmetry <abaqus.Optimization.OptimizationTask.Opt
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:1
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:1
 #: ../../None:39:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyCyclicSymmetry object."
 msgstr ""
 
@@ -2301,9 +2335,7 @@ msgid ":py:obj:`TopologyDemoldControl <abaqus.Optimization.OptimizationTask.Opti
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:1
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:1
 #: ../../None:39:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyDemoldControl object."
 msgstr ""
 
@@ -2436,8 +2468,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:12
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:12
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:12
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:12
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:12
@@ -2519,8 +2549,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.setValues:10
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:21
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:7
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:24
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:11
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:21
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.setValues:10
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:23
@@ -2540,7 +2568,6 @@ msgstr ""
 #: ../../docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.StampControl.StampControl.csys:1
-#: ../../docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.TurnControl.TurnControl.csys:1
@@ -2780,8 +2807,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.__init__:18
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:18
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:17
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:14
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:14
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:14
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:14
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:14
@@ -3240,10 +3265,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:25
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:21
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues:7
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:25
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:14
 #: ../../docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.collisionCheckRegion:1
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.collisionCheckRegion:1
 msgid "The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check region. If the value is DEMOLD_REGION, then the value of **region** is used as both the demold region and the collision check region. The default value is DEMOLD_REGION."
 msgstr ""
 
@@ -3252,10 +3274,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:22
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:25
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues:11
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:18
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:7
 #: ../../docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.csys:1
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.csys:1
 msgid "None or a DatumCsys object specifying the local coordinate system of the **pullDirection**. If **csys** = None, the global coordinate system is used. When this member is queried, it returns an Int indicating the identifier of the DatumCsys. The default value is None."
 msgstr ""
 
@@ -3543,9 +3562,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:18
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:16
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:18
 #: ../../docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.translation:1
-#: ../../docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.translation:1
 msgid "A Float specifying the translation distance."
 msgstr ""
 
@@ -3553,10 +3570,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:20
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:18
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.setValues:7
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:20
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:7
 #: ../../docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.axis:1
-#: ../../docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.axis:1
 msgid "A SymbolicConstant specifying the translation direction defined along an axis positioned at the **csys** origin. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1."
 msgstr ""
 
@@ -3575,8 +3589,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.setValues:11
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:25
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.setValues:14
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:28
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:15
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:25
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.setValues:14
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:22
@@ -3587,7 +3599,6 @@ msgstr ""
 #: ../../docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.ignoreFrozenArea:1
 #: ../../docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.ignoreFrozenArea:1
 #: ../../docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.ignoreFrozenArea:1
-#: ../../docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.ignoreFrozenArea:1
 #: ../../docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.ignoreFrozenArea:1
 #: ../../docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.ignoreFrozenArea:1
 #: ../../docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.ignoreFrozenArea:1
@@ -3767,61 +3778,42 @@ msgid ":class:`StampControl`"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:9
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:12
 msgid "Check `TopologyCyclicSymmetry on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologycyclicsymmetrypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:30
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:30
 msgid "A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:31
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:31
 msgid ":class:`TopologyCyclicSymmetry`"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:9
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:12
 msgid "Check `TopologyDemoldControl on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologydemoldcontrolpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:23
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:23
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:12
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.draftAngle:1
 msgid "A Float specifying the draft angle. The default value is 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:29
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:29
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:18
-#: ../../None:8:<autosummary>:1
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.pointRegion:1
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction, used to specify the central plane when **technique** is POINT."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:32
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:32
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:21
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.pullDirection:1
 msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:35
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:35
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:24
-#: ../../docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.technique:1
 msgid "A SymbolicConstant specifying the demold technique. Possible values are AUTO, AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:38
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:38
 msgid "A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:39
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:39
 msgid ":class:`TopologyDemoldControl`"
 msgstr ""
 
@@ -3960,12 +3952,8 @@ msgstr ""
 msgid ":class:`TurnControl`"
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:29
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:32
-msgid "BeadFixedRegion"
+#: ../../reference/mdb/model/optimization.md:28
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion:1
@@ -3994,8 +3982,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl:1
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:1
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:1
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:1
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:1
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:1
@@ -4079,10 +4065,6 @@ msgstr ""
 msgid "Check `BeadFixedRegion.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadfixedregionpyc.htm?contextscope=all#simaker-beadfixedregionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:42
-msgid "BeadGrowth"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth:1
 msgid "The BeadGrowth object defines a growth geometric restriction. The BeadGrowth object is derived from the GeometricRestriction object."
 msgstr ""
@@ -4126,10 +4108,6 @@ msgstr ""
 msgid "Check `BeadGrowth.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadgrowthpyc.htm?contextscope=all#simaker-beadgrowthsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:52
-msgid "BeadPenetrationCheck"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck:1
 msgid "The BeadPenetrationCheck object defines a penetration check geometric restriction. The BeadPenetrationCheck object is derived from the GeometricRestriction object."
 msgstr ""
@@ -4149,10 +4127,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:9
 msgid "Check `BeadPenetrationCheck.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadpenetrationcheckpyc.htm?contextscope=all#simaker-beadpenetrationcheck__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:62
-msgid "BeadPlanarSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry:1
@@ -4193,10 +4167,6 @@ msgstr ""
 msgid "Check `BeadPlanarSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadplanarsymmetrypyc.htm?contextscope=all#simaker-beadplanarsymmetrysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:72
-msgid "BeadPointSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry:1
 msgid "The BeadPointSymmetry object defines a point symmetry geometric restriction. The BeadPointSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -4231,10 +4201,6 @@ msgstr ""
 msgid "Check `BeadPointSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadpointsymmetrypyc.htm?contextscope=all#simaker-beadpointsymmetrysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:82
-msgid "BeadRotationalSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry:1
 msgid "The BeadRotationalSymmetry object defines a bead rotational symmetry geometric restriction. The BeadRotationalSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -4266,10 +4232,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.setValues:4
 msgid "Check `BeadRotationalSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadrotationalsymmetrypyc.htm?contextscope=all#simaker-beadrotationalsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:92
-msgid "BeadTask"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:1
@@ -4515,10 +4477,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask.setValues:4
 msgid "Check `BeadTask.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadtaskpyc.htm?contextscope=all#simaker-beadtasksetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:102
-msgid "CombinedTermDesignResponse"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/CombinedTermDesignResponse.py:docstring of abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse:1
@@ -4868,10 +4826,6 @@ msgstr ""
 msgid "Check `CombinedTermDesignResponse.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-combinedtermdesignresponsepyc.htm?contextscope=all#simaker-combinedtermdesignresponsesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:112
-msgid "DesignDirection"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:1
 msgid "The DesignDirection object defines a design direction geometric restriction. The DesignDirection object is derived from the GeometricRestriction object."
 msgstr ""
@@ -4969,10 +4923,6 @@ msgstr ""
 msgid "Check `DesignDirection.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-designdirectionpyc.htm?contextscope=all#simaker-designdirectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:122
-msgid "DesignResponse"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/DesignResponse.py:docstring of abaqus.Optimization.DesignResponse.DesignResponse:1
 #: ../../../../src/abaqus/Optimization/GeometricRestriction.py:docstring of abaqus.Optimization.GeometricRestriction.GeometricRestriction:1
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction:1
@@ -4989,10 +4939,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignResponse.py:docstring of abaqus.Optimization.DesignResponse.DesignResponse:12
 msgid "Check `DesignResponse on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-designresponsepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:132
-msgid "DrillControl"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl:1
@@ -5088,10 +5034,6 @@ msgstr ""
 msgid "Check `DrillControl.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drillcontrolpyc.htm?contextscope=all#simaker-drillcontrolsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:142
-msgid "FixedRegion"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion:1
 msgid "The FixedRegion object defines a fixed region geometric restriction. The FixedRegion object is derived from the GeometricRestriction object."
 msgstr ""
@@ -5137,10 +5079,6 @@ msgstr ""
 msgid "Check `FixedRegion.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fixedregionpyc.htm?contextscope=all#simaker-fixedregionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:152
-msgid "FrozenArea"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea:1
 msgid "The FrozenArea object defines a frozen area geometric restriction. The FrozenArea object is derived from the GeometricRestriction object."
 msgstr ""
@@ -5170,20 +5108,12 @@ msgstr ""
 msgid "Check `FrozenArea.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-frozenareapyc.htm?contextscope=all#simaker-frozenareasetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:162
-msgid "GeometricRestriction"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/GeometricRestriction.py:docstring of abaqus.Optimization.GeometricRestriction.GeometricRestriction:1
 msgid "The GeometricRestriction object is the abstract base type for other GeometricRestriction objects. The GeometricRestriction object has no explicit constructor. The methods and members of the GeometricRestriction object are common to all objects derived from GeometricRestriction."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/GeometricRestriction.py:docstring of abaqus.Optimization.GeometricRestriction.GeometricRestriction:13
 msgid "Check `GeometricRestriction on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geometricrestrictionpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:172
-msgid "Growth"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth:1
@@ -5221,10 +5151,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth.setValues:4
 msgid "Check `Growth.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-growthpyc.htm?contextscope=all#simaker-growthsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:182
-msgid "LocalStopCondition"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition:1
@@ -5436,10 +5362,6 @@ msgstr ""
 msgid "Check `LocalStopCondition.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-localstopconditionpyc.htm?contextscope=all#simaker-localstopconditionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:192
-msgid "ObjectiveFunction"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction:1
 msgid "The ObjectiveFunction object defines the objective of the optimization."
 msgstr ""
@@ -5477,10 +5399,6 @@ msgstr ""
 msgid "Check `ObjectiveFunction.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-objectivefunctionpyc.htm?contextscope=all#simaker-objectivefunctionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:202
-msgid "OptimizationConstraint"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint:1
 msgid "The OptimizationConstraint object constrains an optimization from making changes to the topology of the model."
 msgstr ""
@@ -5512,10 +5430,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.setValues:4
 msgid "Check `OptimizationConstraint.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationconstraintpyc.htm?contextscope=all#simaker-optimizationconstraintsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:212
-msgid "OptimizationObjective"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationObjective.py:docstring of abaqus.Optimization.OptimizationObjective.OptimizationObjective:1
@@ -5571,14 +5485,6 @@ msgstr ""
 msgid "A Float specifying the weight applied to the design response value. The default value is 1.0."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:222
-msgid "OptimizationObjectiveArray"
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:232
-msgid "PenetrationCheck"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck:1
 msgid "The PenetrationCheck object defines a penetration check geometric restriction. The PenetrationCheck object is derived from the GeometricRestriction object. This page discusses:"
 msgstr ""
@@ -5608,10 +5514,6 @@ msgstr ""
 msgid "Check `PenetrationCheck.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-penetrationcheckpyc.htm?contextscope=all#simaker-penetrationchecksetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:242
-msgid "ShapeDemoldControl"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl:1
 msgid "The ShapeDemoldControl object defines a shape demold control geometric restriction. The ShapeDemoldControl object is derived from the GeometricRestriction object."
 msgstr ""
@@ -5621,7 +5523,6 @@ msgid ":py:obj:`collisionCheckRegion <abaqus.Optimization.ShapeDemoldControl.Sha
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: ../../None:8:<autosummary>:1
 msgid "The SymbolicConstant DEMOLD_REGION or a Region object specifying the collision check region."
 msgstr ""
 
@@ -5630,7 +5531,6 @@ msgid ":py:obj:`csys <abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: ../../None:8:<autosummary>:1
 msgid "None or a DatumCsys object specifying the local coordinate system of the **pullDirection**."
 msgstr ""
 
@@ -5681,10 +5581,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues:4
 msgid "Check `ShapeDemoldControl.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shapedemoldcontrolpyc.htm?contextscope=all#simaker-shapedemoldcontrolsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:252
-msgid "ShapeMemberSize"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:1
@@ -5744,10 +5640,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:16
 msgid "A Node Region object specifying the check node group."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:262
-msgid "ShapePlanarSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry:1
@@ -5819,10 +5711,6 @@ msgstr ""
 msgid "Check `ShapePlanarSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shapeplanarsymmetrypyc.htm?contextscope=all#simaker-shapeplanarsymmetrysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:272
-msgid "ShapePointSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry:1
 msgid "The ShapePointSymmetry object defines a shape point symmetry geometric restriction. The ShapePointSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -5874,10 +5762,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.setValues:4
 msgid "Check `ShapePointSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shapepointsymmetrypyc.htm?contextscope=all#simaker-shapepointsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:282
-msgid "ShapeRotationalSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry:1
@@ -5947,10 +5831,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues:4
 msgid "Check `ShapeRotationalSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shaperotationalsymmetrypyc.htm?contextscope=all#simaker-shaperotationalsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:292
-msgid "ShapeTask"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeTask.py:docstring of abaqus.Optimization.ShapeTask.ShapeTask:1
@@ -6336,10 +6216,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the optimization task algorithm. Possible values are GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is CONDITION_BASED_OPTIMIZATION."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:302
-msgid "SingleTermDesignResponse"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SingleTermDesignResponse.py:docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse:1
 msgid "The SingleTermDesignResponse object defines a single-term design response. The SingleTermDesignResponse object is derived from the DesignResponse object."
 msgstr ""
@@ -6413,10 +6289,6 @@ msgstr ""
 msgid "Check `SingleTermDesignResponse.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-singletermdesignresponsepyc.htm?contextscope=all#simaker-singletermdesignresponsesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:312
-msgid "SizingClusterAreas"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SizingClusterAreas.py:docstring of abaqus.Optimization.SizingClusterAreas.SizingClusterAreas:1
 msgid "The SizingClusterAreas object defines a sizing cluster areas geometric restriction. The SizingClusterAreas object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6436,10 +6308,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingClusterAreas.py:docstring of abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.__init__:9
 msgid "Check `SizingClusterAreas.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingclusterareaspyc.htm?contextscope=all#simaker-sizingclusterareas__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:322
-msgid "SizingCyclicSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry:1
@@ -6488,10 +6356,6 @@ msgstr ""
 msgid "Check `SizingCyclicSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingcyclicsymmetrypyc.htm?contextscope=all#simaker-sizingcyclicsymmetrysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:332
-msgid "SizingFrozenArea"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SizingFrozenArea.py:docstring of abaqus.Optimization.SizingFrozenArea.SizingFrozenArea:1
 msgid "The SizingFrozenArea object defines a sizing frozen area geometric restriction. The SizingFrozenArea object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6513,10 +6377,6 @@ msgstr ""
 msgid "Check `SizingFrozenArea.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingfrozenareapyc.htm?contextscope=all#simaker-sizingfrozenarea__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:342
-msgid "SizingMemberSize"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SizingMemberSize.py:docstring of abaqus.Optimization.SizingMemberSize.SizingMemberSize:1
 msgid "The SizingMemberSize object defines a sizing member size geometric restriction. The SizingMemberSize object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6536,10 +6396,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingMemberSize.py:docstring of abaqus.Optimization.SizingMemberSize.SizingMemberSize.__init__:9
 msgid "Check `SizingMemberSize.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingmembersizepyc.htm?contextscope=all#simaker-sizingmembersize__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:352
-msgid "SizingPlanarSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingPlanarSymmetry.py:docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry:1
@@ -6575,10 +6431,6 @@ msgstr ""
 msgid "Check `SizingPlanarSymmetry.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingplanarsymmetrypyc.htm?contextscope=all#simaker-sizingplanarsymmetry__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:362
-msgid "SizingPointSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry:1
 msgid "The SizingPointSymmetry object defines a sizing point symmetry geometric restriction. The SizingPointSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6610,10 +6462,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.setValues:4
 msgid "Check `SizingPointSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingpointsymmetrypyc.htm?contextscope=all#simaker-sizingpointsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:372
-msgid "SizingRotationalSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry:1
@@ -6651,10 +6499,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.setValues:4
 msgid "Check `SizingRotationalSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingrotationalsymmetrypyc.htm?contextscope=all#simaker-sizingrotationalsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:382
-msgid "SizingTask"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask:1
@@ -6782,10 +6626,6 @@ msgstr ""
 msgid "Check `SizingTask.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sizingtaskpyc.htm?contextscope=all#simaker-sizingtasksetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:392
-msgid "SlideRegionControl"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl:1
 msgid "The SlideRegionControl object defines a slide region control geometric restriction. The SlideRegionControl object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6855,10 +6695,6 @@ msgstr ""
 msgid "Check `SlideRegionControl.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-slideregioncontrolpyc.htm?contextscope=all#simaker-slideregioncontrolsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:402
-msgid "StampControl"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:1
 msgid "The StampControl object defines a stamp control geometric restriction. The StampControl object is derived from the GeometricRestriction object."
 msgstr ""
@@ -6918,10 +6754,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:4
 msgid "Check `StampControl.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stampcontrolpyc.htm?contextscope=all#simaker-stampcontrolsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:412
-msgid "StepOption"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/StepOption.py:docstring of abaqus.Optimization.StepOption.StepOption:1
@@ -6992,130 +6824,12 @@ msgstr ""
 msgid "The SymbolicConstant ALL or an Int specifying the upper mode in the range of modes to consider in the step. **upperMode** is ignored for steps without modes. The default value is ALL."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:422
-msgid "StepOptionArray"
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:432
-msgid "StopCondition"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/StopCondition.py:docstring of abaqus.Optimization.StopCondition.StopCondition:1
 msgid "The StopCondition object is the abstract base type for other StopCondition objects. The StopCondition object has no explicit constructor. The methods and members of the StopCondition object are common to all objects derived from StopCondition."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/StopCondition.py:docstring of abaqus.Optimization.StopCondition.StopCondition:12
 msgid "Check `StopCondition on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stopconditionpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:442
-msgid "TopologyCyclicSymmetry"
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry:1
-msgid "The TopologyCyclicSymmetry object defines a topology cyclic symmetry geometric restriction. The TopologyCyclicSymmetry object is derived from the GeometricRestriction object."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`axis <abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.axis>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`csys <abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.csys>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`ignoreFrozenArea <abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.ignoreFrozenArea>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__>`\\ \\(name\\, region\\, translation\\[\\, axis\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues>`\\ \\(\\[axis\\, csys\\, ignoreFrozenArea\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:1
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies the TopologyCyclicSymmetry object."
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:9
-msgid "Check `TopologyCyclicSymmetry.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologycyclicsymmetrypyc.htm?contextscope=all#simaker-topologycyclicsymmetry__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.setValues:4
-msgid "Check `TopologyCyclicSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologycyclicsymmetrypyc.htm?contextscope=all#simaker-topologycyclicsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:452
-msgid "TopologyDemoldControl"
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl:1
-msgid "The TopologyDemoldControl object defines a topology demold control geometric restriction. The TopologyDemoldControl object is derived from the GeometricRestriction object."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`csys <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.csys>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`draftAngle <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.draftAngle>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A Float specifying the draft angle."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`collisionCheckRegion <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.collisionCheckRegion>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`pointRegion <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.pointRegion>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`pullDirection <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.pullDirection>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`technique <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.technique>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A SymbolicConstant specifying the demold technique."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__>`\\ \\(name\\, region\\[\\, csys\\, draftAngle\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues>`\\ \\(\\[csys\\, draftAngle\\, ...\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:1
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies the TopologyDemoldControl object."
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:9
-msgid "Check `TopologyDemoldControl.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologydemoldcontrolpyc.htm?contextscope=all#simaker-topologydemoldcontrol__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:4
-msgid "Check `TopologyDemoldControl.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologydemoldcontrolpyc.htm?contextscope=all#simaker-topologydemoldcontrolsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:462
-msgid "TopologyMemberSize"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize:1
@@ -7167,10 +6881,6 @@ msgstr ""
 msgid "Check `TopologyMemberSize.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologymembersizepyc.htm?contextscope=all#simaker-topologymembersizesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:472
-msgid "TopologyPlanarSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:1
 msgid "The TopologyPlanarSymmetry object defines a topology planar symmetry geometric restriction. The TopologyPlanarSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -7208,10 +6918,6 @@ msgstr ""
 msgid "Check `TopologyPlanarSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyplanarsymmetrypyc.htm?contextscope=all#simaker-topologyplanarsymmetrysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/optimization.rst:482
-msgid "TopologyPointSymmetry"
-msgstr ""
-
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:1
 msgid "The TopologyPointSymmetry object defines a topology point symmetry geometric restriction. The TopologyPointSymmetry object is derived from the GeometricRestriction object."
 msgstr ""
@@ -7243,10 +6949,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues:4
 msgid "Check `TopologyPointSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologypointsymmetrypyc.htm?contextscope=all#simaker-topologypointsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:492
-msgid "TopologyRotationalSymmetry"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:1
@@ -7284,10 +6986,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.setValues:4
 msgid "Check `TopologyRotationalSymmetry.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyrotationalsymmetrypyc.htm?contextscope=all#simaker-topologyrotationalsymmetrysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:502
-msgid "TopologyTask"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:1
@@ -7565,10 +7263,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.setValues:4
 msgid "Check `TopologyTask.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologytaskpyc.htm?contextscope=all#simaker-topologytasksetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/optimization.rst:512
-msgid "TurnControl"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:1

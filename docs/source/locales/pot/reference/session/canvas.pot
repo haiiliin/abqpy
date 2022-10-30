@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/canvas.rst:3
-#: ../../reference/session/canvas.rst:47
+#: ../../reference/session/canvas.md:1
 msgid "Canvas"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:5
+#: ../../reference/session/canvas.md:3
 msgid "Canvas commands are used to create, position, and modify canvas objects. The Canvas commands need only the abaqus module to be imported; no additional modules need to be imported."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:9
+#: ../../reference/session/canvas.md:5
 msgid "Create layers in a viewport"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:12
+#: ../../reference/session/canvas.md:7
 msgid "Viewport"
 msgstr ""
 
@@ -44,6 +43,7 @@ msgstr ""
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:0
 #: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:0
 #: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport:0
+#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -373,6 +373,7 @@ msgstr ""
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:0
 #: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:0
 #: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport:0
+#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -605,6 +606,19 @@ msgstr ""
 msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
+#: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
+#: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap:1
+#: ../../../../src/abaqus/Canvas/Canvas.py:docstring of abaqus.Canvas.Canvas.Canvas:1
+#: ../../../../src/abaqus/Canvas/Displayable.py:docstring of abaqus.Canvas.Displayable.Displayable:1
+#: ../../../../src/abaqus/Canvas/DrawingArea.py:docstring of abaqus.Canvas.DrawingArea.DrawingArea:1
+#: ../../../../src/abaqus/Canvas/ImageOptions.py:docstring of abaqus.Canvas.ImageOptions.ImageOptions:1
+#: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:1
+#: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:1
+#: ../../../../src/abaqus/Canvas/Viewport.py:docstring of abaqus.Canvas.Viewport.Viewport:1
+#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.highlight:4
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:4
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.__init__:4
@@ -691,12 +705,8 @@ msgstr ""
 msgid "A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the viewport content."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:23
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/canvas.rst:26
-msgid "Annotation features of Viewport"
+#: ../../reference/session/canvas.md:19
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
@@ -733,11 +743,8 @@ msgstr ""
 msgid "An Int specifying the index of the Annotation object in the sequence of annotations to plot. The default value is zero."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:37
-msgid "AttributeColorMap"
-msgstr ""
-
 #: ../../../../src/abaqus/Canvas/AttributeColorMap.py:docstring of abaqus.Canvas.AttributeColorMap.AttributeColorMap:1
+#: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:1
 msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
@@ -841,14 +848,6 @@ msgstr ""
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:57
-msgid "Displayable"
-msgstr ""
-
-#: ../../reference/session/canvas.rst:67
-msgid "DrawingArea"
-msgstr ""
-
 #: ../../../../src/abaqus/Canvas/DrawingArea.py:docstring of abaqus.Canvas.DrawingArea.DrawingArea:1
 msgid "The DrawingArea object specifies the location and size of the drawing area used for placement of viewports."
 msgstr ""
@@ -882,10 +881,6 @@ msgstr ""
 #: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.Canvas.DrawingArea.DrawingArea.origin:1
 msgid "A pair of Floats specifying the coordinates of the bottom left hand corner in millimeters."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:77
-msgid "Highlight"
 msgstr ""
 
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight:1
@@ -997,10 +992,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Canvas/Highlight.py:docstring of abaqus.Canvas.Highlight.unhighlight:11
 msgid "An object specifying the object in the current viewport from which the highlighting will be removed. You can specify only a single object. See highlight for a list of supported objects."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:85
-msgid "ImageOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Canvas/ImageOptions.py:docstring of abaqus.Canvas.ImageOptions.ImageOptions:1
@@ -1321,10 +1312,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:95
-msgid "Layer"
-msgstr ""
-
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer:1
 msgid "Objects can be superimposed by displaying them in different layers of a viewport."
 msgstr ""
@@ -1399,10 +1386,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Canvas/Layer.py:docstring of abaqus.Canvas.Layer.Layer.moveBefore:4
 msgid "Check `Layer.moveBefore on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all#simaker-layermovebeforepyc>`__."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:105
-msgid "MovieOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions:1
@@ -1498,10 +1481,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Canvas/MovieOptions.py:docstring of abaqus.Canvas.MovieOptions.MovieOptions.setValues:72
 msgid "None or a MovieOptions object specifying the object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in the **options** member. The default value is None."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:115
-msgid "ViewportBase"
 msgstr ""
 
 #: ../../../../src/abaqus/Canvas/ViewportBase.py:docstring of abaqus.Canvas.ViewportBase.ViewportBase:1

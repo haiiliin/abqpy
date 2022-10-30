@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/bc.rst:3
+#: ../../reference/mdb/model/bc.md:1
 msgid "Boundary Condition"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:5
+#: ../../reference/mdb/model/bc.md:3
 msgid ""
 "A specific type of boundary condition object and a specific type of "
 "boundary condition state object are designed for each type of boundary "
@@ -33,7 +33,7 @@ msgid ""
 "its corresponding BoundaryCondition object."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:9
+#: ../../reference/mdb/model/bc.md:5
 msgid "Create boundary conditions"
 msgstr ""
 
@@ -1154,6 +1154,57 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:1
+#: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState:1
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC:1
+#: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState:1
+#: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC:1
+#: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState:1
+#: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition:1
+#: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:1
+#: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState:1
+#: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC:1
+#: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState:1
+#: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC:1
+#: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState:1
+#: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC:1
+#: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState:1
+#: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:1
+#: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState:1
+#: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC:1
+#: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState:1
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC:1
+#: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState:1
+#: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC:1
+#: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState:1
+#: abaqus.BoundaryCondition.EulerianBC.EulerianBC:1
+#: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState:1
+#: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC:1
+#: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState:1
+#: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC:1
+#: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState:1
+#: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC:1
+#: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC:1
+#: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState:1
+#: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC:1
+#: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState:1
+#: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC:1
+#: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC:1
+#: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState:1
+#: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:1
+#: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState:1
+#: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:1
+#: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState:1
+#: abaqus.BoundaryCondition.TypeBC.TypeBC:1
+#: abaqus.BoundaryCondition.TypeBCState.TypeBCState:1
+#: abaqus.BoundaryCondition.VelocityBC.VelocityBC:1
+#: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState:1
+#: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:1
+#: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState:1
+#: of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.__init__:4
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.__init__:4
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.__init__:4
@@ -1628,7 +1679,7 @@ msgstr ""
 msgid ""
 "A Float or a SymbolicConstant specifying the acceleration component in "
 "the 1-direction. Possible values for the SymbolicConstant are UNSET and "
-"SET. The default value is UNSET.Note:Although **a1**, **a2**, **a3**, "
+"SET. The default value is UNSET. Note: Although **a1**, **a2**, **a3**, "
 "**ar1**, **ar2**, and **ar3** are optional arguments, at least one of "
 "them must be specified."
 msgstr ""
@@ -2294,9 +2345,9 @@ msgstr ""
 msgid ""
 "A Float or a SymbolicConstant specifying the acceleration component in "
 "the connector's local 1-direction. Possible values for the "
-"SymbolicConstant are UNSET and SET. The default value is "
-"UNSET.Note:Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3**"
-" are optional arguments, at least one of them must be specified."
+"SymbolicConstant are UNSET and SET. The default value is UNSET. Note: "
+"Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are "
+"optional arguments, at least one of them must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:36
@@ -2409,9 +2460,9 @@ msgstr ""
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
 "component in the connector's local 1-direction. Possible values for the "
-"SymbolicConstant are UNSET and SET. The default value is "
-"UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3**"
-" are optional arguments, at least one of them must be specified."
+"SymbolicConstant are UNSET and SET. The default value is UNSET. Note: "
+"Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are "
+"optional arguments, at least one of them must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC:36
@@ -2536,7 +2587,7 @@ msgstr ""
 msgid ""
 "A Float or a SymbolicConstant specifying the velocity component in the "
 "connector's local 1-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET.Note:Although **v1**, "
+"are UNSET and SET. The default value is UNSET. Note: Although **v1**, "
 "**v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at "
 "least one of them must be specified."
 msgstr ""
@@ -2625,7 +2676,7 @@ msgstr ""
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
 "component in the 1-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET.Note:Although **u1**, "
+"are UNSET and SET. The default value is UNSET. Note: Although **u1**, "
 "**u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at "
 "least one of them must be specified."
 msgstr ""
@@ -3620,9 +3671,9 @@ msgstr ""
 msgid ""
 "A Float or a SymbolicConstant specifying the velocity component in the "
 "1-direction. Possible values for the SymbolicConstant are UNSET and SET. "
-"The default value is UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**,"
-" **vr2**, and **vr3** are optional arguments, at least one of them must "
-"be specified."
+"The default value is UNSET. Note: Although **v1**, **v2**, **v3**, "
+"**vr1**, **vr2**, and **vr3** are optional arguments, at least one of "
+"them must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:27
@@ -3745,12 +3796,8 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-zsymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:23
-msgid "BoundaryCondition"
+#: ../../reference/mdb/model/bc.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition:1
@@ -3991,10 +4038,6 @@ msgstr ""
 msgid ""
 "A String specifying the name of the step in which the boundary condition "
 "state is reset."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:33
-msgid "BoundaryConditionState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState:1 of
@@ -4467,10 +4510,6 @@ msgstr ""
 msgid "BUILT_INTO_MODES"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:43
-msgid "AccelerationBaseMotionBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:1
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC:1
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC:1
@@ -4708,10 +4747,6 @@ msgid ""
 "**amplitude** argument only if it is valid for the specified step."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:53
-msgid "AccelerationBaseMotionBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState:1
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState:1
 #: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState:1
@@ -4806,10 +4841,6 @@ msgstr ""
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState.amplitude>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:63
-msgid "AccelerationBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:1 of
@@ -4971,10 +5002,6 @@ msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
 "component about the 3-direction. Possible values for the SymbolicConstant"
 " are SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:73
-msgid "AccelerationBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState:1 of
@@ -5226,10 +5253,6 @@ msgid ""
 "SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:83
-msgid "AcousticPressureBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC:1 of
 msgid ""
 "The AcousticPressureBC object stores the data for an acoustic pressure "
@@ -5348,10 +5371,6 @@ msgid ""
 "magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:93
-msgid "AcousticPressureBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState:1
 #: of
 msgid ""
@@ -5420,10 +5439,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the acoustic "
 "pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and"
 " MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:103
-msgid "ConcentrationBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC:1 of
@@ -5540,10 +5555,6 @@ msgid ""
 "magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:113
-msgid "ConcentrationBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState:1 of
 msgid ""
 "The ConcentrationBCState object stores the propagating data for a "
@@ -5610,10 +5621,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the concentration "
 "magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
 "MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:123
-msgid "ConnAccelerationBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC:1 of
@@ -5792,10 +5799,6 @@ msgid ""
 "A Float or a SymbolicConstant specifying the connector acceleration "
 "component in the connector's local 6-direction. Possible values for the "
 "SymbolicConstant are SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:133
-msgid "ConnAccelerationBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState:1
@@ -6051,10 +6054,6 @@ msgid ""
 "values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:143
-msgid "ConnDisplacementBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC:1 of
 msgid ""
 "The ConnDisplacementBC object stores the data for a connector "
@@ -6244,10 +6243,6 @@ msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the rotational "
 "component in the connector's local 6-direction. Possible values for the "
 "SymbolicConstant are SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:153
-msgid "ConnDisplacementBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState:1
@@ -6497,10 +6492,6 @@ msgid ""
 "UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:163
-msgid "ConnVelocityBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:1 of
 msgid ""
 "The ConnVelocityBC object stores the data for a connector velocity "
@@ -6652,10 +6643,6 @@ msgid ""
 "A Float or a SymbolicConstant specifying the rotational velocity "
 "component in the connector's local 6-direction. Possible values for the "
 "SymbolicConstant are SET and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:173
-msgid "ConnVelocityBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState:1 of
@@ -6897,10 +6884,6 @@ msgid ""
 "are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:183
-msgid "DisplacementBaseMotionBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC:1
 #: of
 msgid ""
@@ -7032,10 +7015,6 @@ msgid ""
 "#simaker-displacementbasemotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:193
-msgid "DisplacementBaseMotionBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState:1
 #: of
 msgid ""
@@ -7071,10 +7050,6 @@ msgstr ""
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState.amplitude>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:203
-msgid "DisplacementBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC:1 of
@@ -7240,10 +7215,6 @@ msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the rotational "
 "displacement component about the 3-direction. Possible values for the "
 "SymbolicConstant are SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:213
-msgid "DisplacementBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState:1 of
@@ -7485,10 +7456,6 @@ msgid ""
 "SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:223
-msgid "ElectricPotentialBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC:1 of
 msgid ""
 "The ElectricPotentialBC object stores the data for an electrical "
@@ -7608,10 +7575,6 @@ msgid ""
 " magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:233
-msgid "ElectricPotentialBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState:1
 #: of
 msgid ""
@@ -7680,10 +7643,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the electrical "
 "potential magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, "
 "and MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:243
-msgid "EulerianBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC:1 of
@@ -7823,10 +7782,6 @@ msgid ""
 "#simaker-eulerianbcsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:253
-msgid "EulerianBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState:1 of
 msgid ""
 "The EulerianBCState object stores the propagating data for an Eulerian "
@@ -7934,10 +7889,6 @@ msgid ""
 "A SymbolicConstant specifying the material flow conditions to be defined."
 " Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and "
 "EQUILIBRIUM. The default value is ZERO_PRESSURE."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:263
-msgid "EulerianMotionBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC:1 of
@@ -8301,10 +8252,6 @@ msgid ""
 "#simaker-eulerianmotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:273
-msgid "EulerianMotionBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState:1 of
 msgid ""
 "The EulerianMotionBCState object stores the propagating data for an "
@@ -8464,10 +8411,6 @@ msgid ""
 "<abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.amplitude>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:283
-msgid "FluidCavityPressureBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC:1 of
 msgid ""
 "The FluidCavityPressureBC object stores the data for a fluid cavity "
@@ -8581,10 +8524,6 @@ msgid ""
 "pressure magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:293
-msgid "FluidCavityPressureBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState:1
 #: of
 msgid ""
@@ -8653,10 +8592,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the fluid cavity "
 "pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and"
 " MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:303
-msgid "MagneticVectorPotentialBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC:1
@@ -8790,10 +8725,6 @@ msgid ""
 "areSET and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:313
-msgid "MaterialFlowBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC:1 of
 msgid ""
 "The MaterialFlowBC object stores the data for a connector material flow "
@@ -8905,10 +8836,6 @@ msgid ""
 "magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:323
-msgid "MaterialFlowBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState:1 of
 msgid ""
 "The MaterialFlowBCState object stores the propagating data for a "
@@ -8975,10 +8902,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the material flow "
 "magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
 "MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:333
-msgid "PorePressureBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC:1 of
@@ -9092,10 +9015,6 @@ msgid ""
 "magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:343
-msgid "PorePressureBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState:1 of
 msgid ""
 "The PorePressureBCState object stores the propagating data for a pore "
@@ -9162,10 +9081,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the pore pressure "
 "magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
 "MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:353
-msgid "RetainedNodalDofsBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC:1 of
@@ -9310,10 +9225,6 @@ msgid ""
 "about the 3-direction."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:363
-msgid "SecondaryBaseBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC:1 of
 msgid ""
 "The SecondaryBaseBC object stores the data for a slave base boundary "
@@ -9425,10 +9336,6 @@ msgid ""
 "#simaker-secondarybasebcsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:373
-msgid "SecondaryBaseBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState:1 of
 msgid ""
 "The SecondaryBaseBCState object stores the propagating data for a slave "
@@ -9462,10 +9369,6 @@ msgstr ""
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState.amplitude>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:383
-msgid "SubmodelBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:1 of
@@ -9638,10 +9541,6 @@ msgid ""
 "A Float specifying the thickness of the center zone size around the shell"
 " midsurface. The default value is None.The **centerZoneSize** argument is"
 " applicable only if **fixed** = OFF."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:393
-msgid "SubmodelBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState:1 of
@@ -9864,10 +9763,6 @@ msgid ""
 "member. Possible values are SET and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:403
-msgid "TemperatureBC"
-msgstr ""
-
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:1 of
 msgid ""
 "The TemperatureBC object stores the data for a temperature boundary "
@@ -9979,10 +9874,6 @@ msgid ""
 "magnitude."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:413
-msgid "TemperatureBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState:1 of
 msgid ""
 "The TemperatureBCState object stores the propagating data for a "
@@ -10061,10 +9952,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the temperature "
 "magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
 "MODIFIED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:423
-msgid "TypeBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC:1 of
@@ -10225,10 +10112,6 @@ msgstr ""
 msgid "A Symmetry/Antisymmetry/Encastre BC cannot be edited in a propagated step."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:433
-msgid "TypeBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.TypeBCState.TypeBCState:1 of
 msgid ""
 "The TypeBCState object stores the propagating data for a predefined "
@@ -10290,10 +10173,6 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the propagation state of the predefined "
 "boundary condition type. The only possible value is UNCHANGED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:443
-msgid "VelocityBaseMotionBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:1 of
@@ -10426,10 +10305,6 @@ msgid ""
 "#simaker-velocitybasemotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/bc.rst:453
-msgid "VelocityBaseMotionBCState"
-msgstr ""
-
 #: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState:1
 #: of
 msgid ""
@@ -10465,10 +10340,6 @@ msgstr ""
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState.amplitude>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:463
-msgid "VelocityBC"
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:1 of
@@ -10606,10 +10477,6 @@ msgid ""
 "A Float or a SymbolicConstant specifying the rotational velocity "
 "component about the 3-direction. Possible values for the SymbolicConstant"
 " are SET and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/bc.rst:473
-msgid "VelocityBCState"
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState:1 of
@@ -13063,5 +12930,219 @@ msgstr ""
 #~ ":py:obj:`delete "
 #~ "<abaqus.BoundaryCondition.VelocityBC.VelocityBC.delete>`\\ "
 #~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float or a SymbolicConstant specifying"
+#~ " the acceleration component in the "
+#~ "1-direction. Possible values for the "
+#~ "SymbolicConstant are UNSET and SET. The"
+#~ " default value is UNSET.Note:Although "
+#~ "**a1**, **a2**, **a3**, **ar1**, **ar2**, "
+#~ "and **ar3** are optional arguments, at"
+#~ " least one of them must be "
+#~ "specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float or a SymbolicConstant specifying"
+#~ " the acceleration component in the "
+#~ "connector's local 1-direction. Possible values"
+#~ " for the SymbolicConstant are UNSET "
+#~ "and SET. The default value is "
+#~ "UNSET.Note:Although **a1**, **a2**, **a3**, "
+#~ "**ar1**, **ar2**, and **ar3** are "
+#~ "optional arguments, at least one of "
+#~ "them must be specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float, a Complex, or a "
+#~ "SymbolicConstant specifying the displacement "
+#~ "component in the connector's local "
+#~ "1-direction. Possible values for the "
+#~ "SymbolicConstant are UNSET and SET. The"
+#~ " default value is UNSET.Note:Although "
+#~ "**u1**, **u2**, **u3**, **ur1**, **ur2**, "
+#~ "and **ur3** are optional arguments, at"
+#~ " least one of them must be "
+#~ "specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float or a SymbolicConstant specifying"
+#~ " the velocity component in the "
+#~ "connector's local 1-direction. Possible values"
+#~ " for the SymbolicConstant are UNSET "
+#~ "and SET. The default value is "
+#~ "UNSET.Note:Although **v1**, **v2**, **v3**, "
+#~ "**vr1**, **vr2**, and **vr3** are "
+#~ "optional arguments, at least one of "
+#~ "them must be specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float, a Complex, or a "
+#~ "SymbolicConstant specifying the displacement "
+#~ "component in the 1-direction. Possible "
+#~ "values for the SymbolicConstant are "
+#~ "UNSET and SET. The default value "
+#~ "is UNSET.Note:Although **u1**, **u2**, **u3**,"
+#~ " **ur1**, **ur2**, and **ur3** are "
+#~ "optional arguments, at least one of "
+#~ "them must be specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float or a SymbolicConstant specifying"
+#~ " the velocity component in the "
+#~ "1-direction. Possible values for the "
+#~ "SymbolicConstant are UNSET and SET. The"
+#~ " default value is UNSET.Note:Although "
+#~ "**v1**, **v2**, **v3**, **vr1**, **vr2**, "
+#~ "and **vr3** are optional arguments, at"
+#~ " least one of them must be "
+#~ "specified."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "BoundaryCondition"
+#~ msgstr ""
+
+#~ msgid "BoundaryConditionState"
+#~ msgstr ""
+
+#~ msgid "AccelerationBaseMotionBC"
+#~ msgstr ""
+
+#~ msgid "AccelerationBaseMotionBCState"
+#~ msgstr ""
+
+#~ msgid "AccelerationBC"
+#~ msgstr ""
+
+#~ msgid "AccelerationBCState"
+#~ msgstr ""
+
+#~ msgid "AcousticPressureBC"
+#~ msgstr ""
+
+#~ msgid "AcousticPressureBCState"
+#~ msgstr ""
+
+#~ msgid "ConcentrationBC"
+#~ msgstr ""
+
+#~ msgid "ConcentrationBCState"
+#~ msgstr ""
+
+#~ msgid "ConnAccelerationBC"
+#~ msgstr ""
+
+#~ msgid "ConnAccelerationBCState"
+#~ msgstr ""
+
+#~ msgid "ConnDisplacementBC"
+#~ msgstr ""
+
+#~ msgid "ConnDisplacementBCState"
+#~ msgstr ""
+
+#~ msgid "ConnVelocityBC"
+#~ msgstr ""
+
+#~ msgid "ConnVelocityBCState"
+#~ msgstr ""
+
+#~ msgid "DisplacementBaseMotionBC"
+#~ msgstr ""
+
+#~ msgid "DisplacementBaseMotionBCState"
+#~ msgstr ""
+
+#~ msgid "DisplacementBC"
+#~ msgstr ""
+
+#~ msgid "DisplacementBCState"
+#~ msgstr ""
+
+#~ msgid "ElectricPotentialBC"
+#~ msgstr ""
+
+#~ msgid "ElectricPotentialBCState"
+#~ msgstr ""
+
+#~ msgid "EulerianBC"
+#~ msgstr ""
+
+#~ msgid "EulerianBCState"
+#~ msgstr ""
+
+#~ msgid "EulerianMotionBC"
+#~ msgstr ""
+
+#~ msgid "EulerianMotionBCState"
+#~ msgstr ""
+
+#~ msgid "FluidCavityPressureBC"
+#~ msgstr ""
+
+#~ msgid "FluidCavityPressureBCState"
+#~ msgstr ""
+
+#~ msgid "MagneticVectorPotentialBC"
+#~ msgstr ""
+
+#~ msgid "MaterialFlowBC"
+#~ msgstr ""
+
+#~ msgid "MaterialFlowBCState"
+#~ msgstr ""
+
+#~ msgid "PorePressureBC"
+#~ msgstr ""
+
+#~ msgid "PorePressureBCState"
+#~ msgstr ""
+
+#~ msgid "RetainedNodalDofsBC"
+#~ msgstr ""
+
+#~ msgid "SecondaryBaseBC"
+#~ msgstr ""
+
+#~ msgid "SecondaryBaseBCState"
+#~ msgstr ""
+
+#~ msgid "SubmodelBC"
+#~ msgstr ""
+
+#~ msgid "SubmodelBCState"
+#~ msgstr ""
+
+#~ msgid "TemperatureBC"
+#~ msgstr ""
+
+#~ msgid "TemperatureBCState"
+#~ msgstr ""
+
+#~ msgid "TypeBC"
+#~ msgstr ""
+
+#~ msgid "TypeBCState"
+#~ msgstr ""
+
+#~ msgid "VelocityBaseMotionBC"
+#~ msgstr ""
+
+#~ msgid "VelocityBaseMotionBCState"
+#~ msgstr ""
+
+#~ msgid "VelocityBC"
+#~ msgstr ""
+
+#~ msgid "VelocityBCState"
 #~ msgstr ""
 
