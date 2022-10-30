@@ -6,7 +6,7 @@ Miscellaneous Step commands are used for configuring controls, damping, and freq
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping
         :members:

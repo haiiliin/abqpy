@@ -39,7 +39,7 @@ section/connector
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Section.Section.Section
         :members:
