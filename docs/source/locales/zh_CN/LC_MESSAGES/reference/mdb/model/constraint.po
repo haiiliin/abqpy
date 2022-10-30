@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/constraint.rst:3
-#: ../../reference/mdb/model/constraint.rst:23
+#: ../../reference/mdb/model/constraint.md:1
 msgid "Constraint"
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:6
+#: ../../reference/mdb/model/constraint.md:3
 msgid "The Constraint commands define constraints between regions of the model."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:9
+#: ../../reference/mdb/model/constraint.md:5
 msgid "Create constraints"
 msgstr ""
 
@@ -740,6 +739,20 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints:1
+#: abaqus.Constraint.Constraint.Constraint:1
+#: abaqus.Constraint.ConstraintModel.ConstraintModel:1
+#: abaqus.Constraint.Coupling.Coupling:1
+#: abaqus.Constraint.DisplayBody.DisplayBody:1
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:1
+#: abaqus.Constraint.Equation.Equation:1
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint:1
+#: abaqus.Constraint.RigidBody.RigidBody:1
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:1
+#: abaqus.Constraint.Tie.Tie:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:4
@@ -1418,7 +1431,7 @@ msgstr ""
 msgid ""
 "A Float specifying the position tolerance. The default value is 0.0.The "
 "**positionTolerance** argument applies only when "
-"**positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain "
+"**positionToleranceMethod** = SPECIFIED. Note: Abaqus will not constrain "
 "nodes on the solid face region outside the position tolerance."
 msgstr ""
 
@@ -1552,8 +1565,8 @@ msgstr ""
 msgid ":class:`Tie`"
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:20
-msgid "Classes"
+#: ../../reference/mdb/model/constraint.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Constraint.Constraint.Constraint:1 of
@@ -1649,10 +1662,6 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:33
-msgid "AdjustPoints"
-msgstr ""
-
 #: abaqus.Constraint.AdjustPoints.AdjustPoints:1
 #: abaqus.Constraint.Coupling.Coupling:1
 #: abaqus.Constraint.DisplayBody.DisplayBody:1
@@ -1718,10 +1727,6 @@ msgid ""
 "Check `AdjustPoints.__init__ on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adjustpointspyc.htm?contextscope=all"
 "#simaker-adjustpoints__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:44
-msgid "Coupling"
 msgstr ""
 
 #: abaqus.Constraint.Coupling.Coupling:1 of
@@ -1865,10 +1870,6 @@ msgid ""
 "#simaker-couplingsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:54
-msgid "DisplayBody"
-msgstr ""
-
 #: abaqus.Constraint.DisplayBody.DisplayBody:1 of
 msgid ""
 "The DisplayBody object defines a constraint such that the specified "
@@ -1912,10 +1913,6 @@ msgid ""
 "Check `DisplayBody.__init__ on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodypyc.htm?contextscope=all"
 "#simaker-displaybody__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:64
-msgid "EmbeddedRegion"
 msgstr ""
 
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:1 of
@@ -2017,10 +2014,6 @@ msgid ""
 "#simaker-embeddedregionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:74
-msgid "Equation"
-msgstr ""
-
 #: abaqus.Constraint.Equation.Equation:1 of
 msgid ""
 "The Equation object defines a linear multi-point constraint between a set"
@@ -2058,10 +2051,6 @@ msgid ""
 "Check `Equation.__init__ on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equationpyc.htm?contextscope=all"
 "#simaker-equation__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:84
-msgid "MultipointConstraint"
 msgstr ""
 
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint:1 of
@@ -2150,10 +2139,6 @@ msgid ""
 "Check `MultipointConstraint.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-multipointconstraintpyc.htm?contextscope=all"
 "#simaker-multipointconstraintsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:94
-msgid "RigidBody"
 msgstr ""
 
 #: abaqus.Constraint.RigidBody.RigidBody:1 of
@@ -2267,10 +2252,6 @@ msgid ""
 "#simaker-rigidbodysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:104
-msgid "ShellSolidCoupling"
-msgstr ""
-
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:1 of
 msgid ""
 "The ShellSolidCoupling object defines two surfaces to be tied together "
@@ -2363,10 +2344,6 @@ msgid ""
 "Check `ShellSolidCoupling.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsolidcouplingpyc.htm?contextscope=all"
 "#simaker-shellsolidcouplingsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:114
-msgid "Tie"
 msgstr ""
 
 #: abaqus.Constraint.Tie.Tie:1 of
@@ -3241,5 +3218,45 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":py:obj:`delete <abaqus.Constraint.Tie.Tie.delete>`\\ \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the position "
+#~ "tolerance. The default value is 0.0.The"
+#~ " **positionTolerance** argument applies only "
+#~ "when **positionToleranceMethod** = "
+#~ "SPECIFIED.Note:Abaqus will not constrain nodes"
+#~ " on the solid face region outside "
+#~ "the position tolerance."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "AdjustPoints"
+#~ msgstr ""
+
+#~ msgid "Coupling"
+#~ msgstr ""
+
+#~ msgid "DisplayBody"
+#~ msgstr ""
+
+#~ msgid "EmbeddedRegion"
+#~ msgstr ""
+
+#~ msgid "Equation"
+#~ msgstr ""
+
+#~ msgid "MultipointConstraint"
+#~ msgstr ""
+
+#~ msgid "RigidBody"
+#~ msgstr ""
+
+#~ msgid "ShellSolidCoupling"
+#~ msgstr ""
+
+#~ msgid "Tie"
 #~ msgstr ""
 

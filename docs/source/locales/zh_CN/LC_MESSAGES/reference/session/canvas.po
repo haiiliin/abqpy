@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/canvas.rst:3 ../../reference/session/canvas.rst:47
+#: ../../reference/session/canvas.md:1
 msgid "Canvas"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:5
+#: ../../reference/session/canvas.md:3
 msgid ""
 "Canvas commands are used to create, position, and modify canvas objects. "
 "The Canvas commands need only the abaqus module to be imported; no "
 "additional modules need to be imported."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:9
+#: ../../reference/session/canvas.md:5
 msgid "Create layers in a viewport"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:12
+#: ../../reference/session/canvas.md:7
 msgid "Viewport"
 msgstr ""
 
@@ -46,7 +46,8 @@ msgstr ""
 #: abaqus.Canvas.AttributeColorMap.AttributeColorMap
 #: abaqus.Canvas.DrawingArea.DrawingArea
 #: abaqus.Canvas.ImageOptions.ImageOptions abaqus.Canvas.Layer.Layer
-#: abaqus.Canvas.MovieOptions.MovieOptions abaqus.Canvas.Viewport.Viewport of
+#: abaqus.Canvas.MovieOptions.MovieOptions abaqus.Canvas.Viewport.Viewport
+#: abaqus.Canvas.ViewportBase.ViewportBase of
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -469,7 +470,8 @@ msgstr ""
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport
 #: abaqus.Canvas.AttributeColorMap.AttributeColorMap
 #: abaqus.Canvas.ImageOptions.ImageOptions abaqus.Canvas.Layer.Layer
-#: abaqus.Canvas.MovieOptions.MovieOptions abaqus.Canvas.Viewport.Viewport of
+#: abaqus.Canvas.MovieOptions.MovieOptions abaqus.Canvas.Viewport.Viewport
+#: abaqus.Canvas.ViewportBase.ViewportBase of
 msgid "Public Methods:"
 msgstr ""
 
@@ -791,6 +793,16 @@ msgstr ""
 msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:1
+#: abaqus.Canvas.Canvas.Canvas:1 abaqus.Canvas.Displayable.Displayable:1
+#: abaqus.Canvas.DrawingArea.DrawingArea:1
+#: abaqus.Canvas.ImageOptions.ImageOptions:1 abaqus.Canvas.Layer.Layer:1
+#: abaqus.Canvas.MovieOptions.MovieOptions:1 abaqus.Canvas.Viewport.Viewport:1
+#: abaqus.Canvas.ViewportBase.ViewportBase:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Canvas.Highlight.highlight:4 abaqus.Canvas.Highlight.unhighlight:4
 #: abaqus.Canvas.Layer.Layer.__init__:4 abaqus.Canvas.Viewport.Viewport.Layer:4
 #: abaqus.Canvas.ViewportBase.ViewportBase.__init__:4 of
@@ -875,12 +887,8 @@ msgid ""
 "object that controls viewing of the viewport content."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:23
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/canvas.rst:26
-msgid "Annotation features of Viewport"
+#: ../../reference/session/canvas.md:19
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
@@ -925,11 +933,8 @@ msgid ""
 "annotations to plot. The default value is zero."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:37
-msgid "AttributeColorMap"
-msgstr ""
-
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:1 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:1
+#: abaqus.Canvas.ViewportBase.ViewportBase:1 of
 msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
@@ -1093,14 +1098,6 @@ msgstr ""
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:57
-msgid "Displayable"
-msgstr ""
-
-#: ../../reference/session/canvas.rst:67
-msgid "DrawingArea"
-msgstr ""
-
 #: abaqus.Canvas.DrawingArea.DrawingArea:1 of
 msgid ""
 "The DrawingArea object specifies the location and size of the drawing "
@@ -1140,10 +1137,6 @@ msgstr ""
 msgid ""
 "A pair of Floats specifying the coordinates of the bottom left hand "
 "corner in millimeters."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:77
-msgid "Highlight"
 msgstr ""
 
 #: abaqus.Canvas.Highlight:1 of
@@ -1276,10 +1269,6 @@ msgid ""
 "An object specifying the object in the current viewport from which the "
 "highlighting will be removed. You can specify only a single object. See "
 "highlight for a list of supported objects."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:85
-msgid "ImageOptions"
 msgstr ""
 
 #: abaqus.Canvas.ImageOptions.ImageOptions:1
@@ -1700,10 +1689,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:95
-msgid "Layer"
-msgstr ""
-
 #: abaqus.Canvas.Layer.Layer:1 of
 msgid ""
 "Objects can be superimposed by displaying them in different layers of a "
@@ -1799,10 +1784,6 @@ msgid ""
 "Check `Layer.moveBefore on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all"
 "#simaker-layermovebeforepyc>`__."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:105
-msgid "MovieOptions"
 msgstr ""
 
 #: abaqus.Canvas.MovieOptions.MovieOptions:1 of
@@ -1940,10 +1921,6 @@ msgid ""
 " to be copied. If other arguments are also supplied to setValues, they "
 "will override the values in the **options** member. The default value is "
 "None."
-msgstr ""
-
-#: ../../reference/session/canvas.rst:115
-msgid "ViewportBase"
 msgstr ""
 
 #: abaqus.Canvas.ViewportBase.ViewportBase:1 of
@@ -3483,5 +3460,35 @@ msgstr ""
 #~ ":py:obj:`get_user_attributes "
 #~ "<abaqus.Canvas.MovieOptions.MovieOptions.get_user_attributes>`\\ "
 #~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "Annotation features of Viewport"
+#~ msgstr ""
+
+#~ msgid "AttributeColorMap"
+#~ msgstr ""
+
+#~ msgid "Displayable"
+#~ msgstr ""
+
+#~ msgid "DrawingArea"
+#~ msgstr ""
+
+#~ msgid "Highlight"
+#~ msgstr ""
+
+#~ msgid "ImageOptions"
+#~ msgstr ""
+
+#~ msgid "Layer"
+#~ msgstr ""
+
+#~ msgid "MovieOptions"
+#~ msgstr ""
+
+#~ msgid "ViewportBase"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/edit_mesh.rst:3
+#: ../../reference/mdb/edit_mesh.md:1
 msgid "Edit Mesh"
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:5
+#: ../../reference/mdb/edit_mesh.md:3
 msgid ""
 "Edit mesh commands are used to edit an orphan mesh part or part instance "
 "or an Abaqus native mesh."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:9
+#: ../../reference/mdb/edit_mesh.md:5
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:12
+#: ../../reference/mdb/edit_mesh.md:7
 msgid "Edit mesh features of Assembly"
 msgstr ""
 
@@ -1911,6 +1911,12 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1
+#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:5 of
 msgid ""
 "Check `Assembly.collapseMeshEdge on help.3ds.com/2019 "
@@ -2233,8 +2239,8 @@ msgstr ""
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:9 of
 msgid ""
 "A Float specifying the normalized distance along the **edge** at which to"
-" split. Possible values are 0.0 << **parameter** << 1.0. The default "
-"value is 0.5."
+" split. Possible values are 0.0 < **parameter** < 1.0. The default value "
+"is 0.5."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:4 of
@@ -2259,7 +2265,7 @@ msgid ""
 "sufficient cache allowance to store the edit mesh operation."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:22
+#: ../../reference/mdb/edit_mesh.md:18
 msgid "Edit mesh features of Part"
 msgstr ""
 
@@ -4632,8 +4638,8 @@ msgstr ""
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:10 of
 msgid ""
 "A Float specifying the normalized distance along **edge** at which to "
-"split. Possible values are 0.0 << **parameter** << 1.0. The default value"
-" is 0.5."
+"split. Possible values are 0.0 < **parameter** < 1.0. The default value "
+"is 0.5."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:4 of
@@ -4707,8 +4713,8 @@ msgid ""
 " = xrxr, and zz=yy."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:32
-msgid "MeshEditOptions"
+#: ../../reference/mdb/edit_mesh.md:29
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1 of
@@ -7246,5 +7252,24 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`suppress "
 #~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the normalized "
+#~ "distance along the **edge** at which "
+#~ "to split. Possible values are 0.0 "
+#~ "<< **parameter** << 1.0. The default "
+#~ "value is 0.5."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the normalized "
+#~ "distance along **edge** at which to "
+#~ "split. Possible values are 0.0 << "
+#~ "**parameter** << 1.0. The default value"
+#~ " is 0.5."
+#~ msgstr ""
+
+#~ msgid "MeshEditOptions"
 #~ msgstr ""
 

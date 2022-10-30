@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/display_options.rst:3
+#: ../../reference/session/display_options.md:1
 msgid "Display Options"
 msgstr ""
 
-#: ../../reference/session/display_options.rst:5
+#: ../../reference/session/display_options.md:3
 msgid ""
 "Display options commands are used to store settings that specify how "
 "assemblies and parts are to be displayed and how annotations are to be "
 "rendered in a particular viewport."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:9
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/display_options.rst:12
-msgid "AssemblyDisplayOptions"
+#: ../../reference/session/display_options.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1
@@ -53,7 +49,9 @@ msgstr ""
 #: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:1
 #: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:1
 #: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:1
-#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1 of
+#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1
+#: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:1
+#: of
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
@@ -534,7 +532,8 @@ msgstr ""
 #: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions
 #: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions
 #: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions
-#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions of
+#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions
+#: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions of
 msgid "Public Methods:"
 msgstr ""
 
@@ -549,6 +548,30 @@ msgstr ""
 #: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions.setValues:1
 #: of
 msgid "This method modifies the AssemblyDisplayOptions object."
+msgstr ""
+
+#: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1
+#: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:1
+#: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:1
+#: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:1
+#: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:1
+#: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:1
+#: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:1
+#: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:1
+#: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:1
+#: abaqus.DisplayOptions.Light.Light:1
+#: abaqus.DisplayOptions.LightArray.LightArray:1
+#: abaqus.DisplayOptions.LightOptions.LightOptions:1
+#: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:1
+#: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:1
+#: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:1
+#: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:1
+#: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:1
+#: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:1
+#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1
+#: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:1
+#: of
+msgid "Member Details:"
 msgstr ""
 
 #: ../../docstring
@@ -799,10 +822,6 @@ msgid ""
 "visible in the viewport. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:22
-msgid "BCDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:1 of
 msgid ""
 "The BCDisplayOptions object stores settings that specify how assemblies "
@@ -915,10 +934,6 @@ msgid ""
 "is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:32
-msgid "ConstraintDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:1 of
 msgid ""
 "The ConstraintDisplayOptions object stores settings that specify how "
@@ -989,10 +1004,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether coupling constraint symbols are shown. The "
 "default value is ON."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:42
-msgid "EngineeringFeatureDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:1
@@ -1073,10 +1084,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether two-point spring symbols are shown. The "
 "default value is ON."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:52
-msgid "GeometricRestrictionDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:1
@@ -1257,10 +1264,6 @@ msgid ""
 "are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:62
-msgid "GeometryDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:1 of
 msgid ""
 "The GeometryDisplayOptions object stores settings that specify how "
@@ -1366,10 +1369,6 @@ msgid ""
 "A Boolean specifying whether to apply translucency to the geometry that "
 "belongs to the reference representation of the Part or Instance. The "
 "default value is ON."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:72
-msgid "GraphicsInfo"
 msgstr ""
 
 #: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:1 of
@@ -1507,10 +1506,6 @@ msgid ""
 " of the glx version of the server. The sequence consists of an Int with "
 "the glx major version number, an Int with the glx minor version number, "
 "and a String with any additional information."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:82
-msgid "GraphicsOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:1 of
@@ -2227,9 +2222,9 @@ msgstr ""
 #: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions.setValues:27 of
 msgid ""
 "A sequence of SymbolicConstants specifying a hint used to modify the "
-"highlight method. Possible values are:HARDWARE_OVERLAY, specifying a hint"
-" of hardware overlay. The best graphics performance is achieved using "
-"hardware overlay, but not all systems and graphics adapters support "
+"highlight method. Possible values are: HARDWARE_OVERLAY, specifying a "
+"hint of hardware overlay. The best graphics performance is achieved using"
+" hardware overlay, but not all systems and graphics adapters support "
 "hardware overlay.XOR, specifying a hint of XOR technique. The XOR "
 "technique uses a boolean pixel operation to simulate the drawing "
 "operations but can produce different colors depending on the color of the"
@@ -2313,10 +2308,6 @@ msgid ""
 "depend on the setting of **shadersAvailable** and the capabilities of the"
 " graphics hardware and driver. Possible values are 1 ≤ "
 "**translucencyMode** ≤ 6. The default value is 4."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:92
-msgid "InteractionDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:1
@@ -2413,10 +2404,6 @@ msgid ""
 "shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:102
-msgid "Light"
-msgstr ""
-
 #: abaqus.DisplayOptions.Light.Light:1 of
 msgid ""
 "The Light object stores settings that control how objects are lit when "
@@ -2496,14 +2483,6 @@ msgid ""
 "A String specifying the color of the specular highlights created by this "
 "light source. The initial value is 36% gray. A list of valid color "
 "strings is in the **colors** map in the **session** object."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:112
-msgid "LightArray"
-msgstr ""
-
-#: ../../reference/session/display_options.rst:122
-msgid "LightOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.LightOptions.LightOptions:1 of
@@ -2637,13 +2616,14 @@ msgid ""
 "to **shading** =GOURAUD, lighting values are computed for each corner of "
 "a facet and the lighting for the remainder of the facet is interpolated "
 "from the corner values. When **shading** =PHONG, lighting values are "
-"computed for each pixel of a facet.Note:The shading technique can only be"
-" set to PHONG when the **shadersAvailable** member of GraphicsOptions is "
-"True.Printed output will only contain Phong shading if the output format "
-"is raster and the **accelerateOffScreen** member of GraphicsOptions is "
-"ON.The **renderStyle** setting is part of AssemblyDisplayOptions, "
-"PartDisplayOptions, and various other options objects not listed here "
-"since they are generally used for meshed geometry."
+"computed for each pixel of a facet. Note: The shading technique can only "
+"be set to PHONG when the **shadersAvailable** member of GraphicsOptions "
+"is True.Printed output will only contain Phong shading if the output "
+"format is raster and the **accelerateOffScreen** member of "
+"GraphicsOptions is ON.The **renderStyle** setting is part of "
+"AssemblyDisplayOptions, PartDisplayOptions, and various other options "
+"objects not listed here since they are generally used for meshed "
+"geometry."
 msgstr ""
 
 #: ../../docstring abaqus.DisplayOptions.LightOptions.LightOptions.setValues:22
@@ -2659,10 +2639,6 @@ msgid ""
 "(viewpoint) to a vertex. When **viewpoint** =LOCAL, the result is more "
 "realistic because the actual vector from the camera to each vertex is "
 "calculated. However, overall performance is decreased."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:132
-msgid "LoadDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:1 of
@@ -2879,10 +2855,6 @@ msgid ""
 "shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:142
-msgid "MeshDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:1 of
 msgid ""
 "The MeshDisplayOptions object stores settings that specify how the "
@@ -2995,10 +2967,6 @@ msgid ""
 " partDisplay. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:152
-msgid "OptimizationTaskDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:1
 #: of
 msgid ""
@@ -3049,10 +3017,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether shape task symbols are shown. The default "
 "value is ON."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:162
-msgid "PartDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:1 of
@@ -3174,10 +3138,6 @@ msgid ""
 "#simaker-partdisplayoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:172
-msgid "PredefinedFieldDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:1
 #: of
 msgid ""
@@ -3251,10 +3211,6 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:182
-msgid "StopConditionDisplayOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:1
 #: of
 msgid ""
@@ -3298,10 +3254,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether local stop condition symbols are shown. The "
 "default value is ON."
-msgstr ""
-
-#: ../../reference/session/display_options.rst:192
-msgid "SymbolDisplayOptions"
 msgstr ""
 
 #: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1 of
@@ -3385,10 +3337,6 @@ msgid ""
 " field value. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:202
-msgid "ViewportAnnotationOptions"
-msgstr ""
-
 #: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions:1
 #: of
 msgid ""
@@ -3411,6 +3359,14 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportannotationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions.setValues>`\\"
+" \\(\\[triad\\, triadPosition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
 #: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions.setValues:1
 #: of
 msgid "This method modifies the ViewportAnnotationOptions object."
@@ -5125,5 +5081,145 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "AssemblyDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "BCDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "ConstraintDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "EngineeringFeatureDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "GeometricRestrictionDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "GeometryDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "GraphicsInfo"
+#~ msgstr ""
+
+#~ msgid "GraphicsOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of SymbolicConstants specifying "
+#~ "a hint used to modify the "
+#~ "highlight method. Possible values "
+#~ "are:HARDWARE_OVERLAY, specifying a hint of "
+#~ "hardware overlay. The best graphics "
+#~ "performance is achieved using hardware "
+#~ "overlay, but not all systems and "
+#~ "graphics adapters support hardware "
+#~ "overlay.XOR, specifying a hint of XOR"
+#~ " technique. The XOR technique uses a"
+#~ " boolean pixel operation to simulate "
+#~ "the drawing operations but can produce"
+#~ " different colors depending on the "
+#~ "color of the underlying "
+#~ "pixels.SOFTWARE_OVERLAY, specifying a hint of"
+#~ " software overlay. The software overlay "
+#~ "method simulates the effect of hardware"
+#~ " overlay.BLEND, specifying a hint of "
+#~ "blend method. The blend method combines"
+#~ " the color of the underlying pixel"
+#~ " with the desired color producing an"
+#~ " approximation of the transient "
+#~ "graphics.The default value is "
+#~ "(HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, BLEND).The"
+#~ " values of this sequence are applied"
+#~ " by Abaqus when you start a "
+#~ "session in first to last order. "
+#~ "The first successful value becomes the"
+#~ " default highlight method. Not all "
+#~ "graphics adapters support the HARDWARE_OVERLAY"
+#~ " value and you must use the "
+#~ "**highlightMethodHint** argument to provide an"
+#~ " alternative.You can use a single "
+#~ "value to set the first element of"
+#~ " the list, or you can use a "
+#~ "tuple with one to four unique "
+#~ "values. Abaqus sets any remaining "
+#~ "elements of the tuple to unique "
+#~ "values based on the default order."
+#~ msgstr ""
+
+#~ msgid "InteractionDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "Light"
+#~ msgstr ""
+
+#~ msgid "LightArray"
+#~ msgstr ""
+
+#~ msgid "LightOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the shading "
+#~ "technique that should be used to "
+#~ "fill facets for geometric bodies when"
+#~ " **renderStyle** =SHADED. The lighting of"
+#~ " facets for meshed geometry is not"
+#~ " affected by this setting. Possible "
+#~ "values are:GOURAUD, specifying that lighting"
+#~ " values should be computed for each"
+#~ " corner of a facet and interpolated"
+#~ " to fill the remainder of the "
+#~ "facet.PHONG, specifying that lighting values"
+#~ " should be computed for each pixel"
+#~ " of a facet.The default value is "
+#~ "GOURAUD.When set to **shading** =GOURAUD, "
+#~ "lighting values are computed for each"
+#~ " corner of a facet and the "
+#~ "lighting for the remainder of the "
+#~ "facet is interpolated from the corner"
+#~ " values. When **shading** =PHONG, lighting"
+#~ " values are computed for each pixel"
+#~ " of a facet.Note:The shading technique "
+#~ "can only be set to PHONG when "
+#~ "the **shadersAvailable** member of "
+#~ "GraphicsOptions is True.Printed output will"
+#~ " only contain Phong shading if the"
+#~ " output format is raster and the "
+#~ "**accelerateOffScreen** member of GraphicsOptions"
+#~ " is ON.The **renderStyle** setting is "
+#~ "part of AssemblyDisplayOptions, PartDisplayOptions,"
+#~ " and various other options objects "
+#~ "not listed here since they are "
+#~ "generally used for meshed geometry."
+#~ msgstr ""
+
+#~ msgid "LoadDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "MeshDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "OptimizationTaskDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "PartDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "PredefinedFieldDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "StopConditionDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "SymbolDisplayOptions"
+#~ msgstr ""
+
+#~ msgid "ViewportAnnotationOptions"
 #~ msgstr ""
 

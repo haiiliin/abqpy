@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:3
-#: ../../reference/mdb/model/part_assembly/feature.rst:12
+#: ../../reference/mdb/model/part_assembly/feature.md:1
 msgid "Feature"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:5
+#: ../../reference/mdb/model/part_assembly/feature.md:3
 msgid ""
 "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly "
 "operations. The commands that create Feature objects on only the Part "
@@ -32,8 +31,8 @@ msgid ""
 "the rootAssembly objects are described here."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:9
-msgid "Classes"
+#: ../../reference/mdb/model/part_assembly/feature.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature:1
@@ -907,6 +906,11 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid "This method suppresses features."
+msgstr ""
+
+#: abaqus.Feature.Feature.Feature:1
+#: abaqus.Feature.FeatureOptions.FeatureOptions:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.AttachmentPoints:1 of
@@ -1894,7 +1898,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:16 of
 msgid ""
 "A Float specifying the distance along **edge** to the DatumPoint object. "
-"Possible values are 0 << **parameter** << 1."
+"Possible values are 0 < **parameter** < 1."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumPointByMidPoint:10 of
@@ -1957,7 +1961,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:16 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object "
-"representing a datum plane.Note:Any other types of planes are not "
+"representing a datum plane. Note: Any other types of planes are not "
 "supported."
 msgstr ""
 
@@ -2173,8 +2177,8 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:19 of
 msgid ""
 "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object "
-"specifying a point on the plane.Note:*point1*, **point2**, and **point3**"
-" must not be colinear and must not coincide."
+"specifying a point on the plane. Note: *point1*, **point2**, and "
+"**point3** must not be colinear and must not coincide."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:11 of
@@ -2225,7 +2229,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:15 of
 msgid ""
 "A Float specifying the normalized distance along **edge** at which to "
-"partition. Possible values are 0.0 << **parameter** << 1.0."
+"partition. Possible values are 0.0 < **parameter** < 1.0."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:10 of
@@ -2383,10 +2387,9 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:18 of
 msgid ""
-"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint "
-"object.Note:*point1* and **point2** must not coincide, and they must both"
-" lie on the underlying surface geometry of at least one of the target "
-"faces."
+"A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object. Note: "
+"*point1* and **point2** must not coincide, and they must both lie on the "
+"underlying surface geometry of at least one of the target faces."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:10 of
@@ -2440,7 +2443,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:26 of
 msgid ""
 "A Float specifying the projection distance. Possible values are "
-"**distance** >> 0.0."
+"**distance** > 0.0."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:12 of
@@ -2598,7 +2601,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.setValues:7 of
 msgid ""
 "A Float specifying the normalized distance along **edge** at which to "
-"partition. Possible values are 0.0 << **parameter** << 1.0. You use this "
+"partition. Possible values are 0.0 < **parameter** < 1.0. You use this "
 "argument to modify a partition created with the created with the "
 "PartitionEdgeByParam method."
 msgstr ""
@@ -2630,7 +2633,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.setValues:23 of
 msgid ""
 "A Float specifying the projection **distance**. Possible values are "
-"**distance** >> 0.0. You use this argument to modify a partition object "
+"**distance** > 0.0. You use this argument to modify a partition object "
 "created with the PartitionFaceBySketchDistance method."
 msgstr ""
 
@@ -2642,10 +2645,6 @@ msgid ""
 "cannot suppress the base feature. In addition, if you suppress a parent "
 "feature, all of its child features are also suppressed automatically. "
 "Suppressed features can be restored with the resume command."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/feature.rst:22
-msgid "FeatureOptions"
 msgstr ""
 
 #: abaqus.Feature.FeatureOptions.FeatureOptions:1 of
@@ -3369,5 +3368,73 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the distance along"
+#~ " **edge** to the DatumPoint object. "
+#~ "Possible values are 0 << **parameter**"
+#~ " << 1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Face.Face` object "
+#~ "or a Datum object representing a "
+#~ "datum plane.Note:Any other types of "
+#~ "planes are not supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A ConstrainedSketchVertex, InterestingPoint, or "
+#~ "DatumPoint object specifying a point on"
+#~ " the plane.Note:*point1*, **point2**, and "
+#~ "**point3** must not be colinear and "
+#~ "must not coincide."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the normalized "
+#~ "distance along **edge** at which to "
+#~ "partition. Possible values are 0.0 <<"
+#~ " **parameter** << 1.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A ConstrainedSketchVertex, InterestingPoint, or "
+#~ "DatumPoint object.Note:*point1* and **point2** "
+#~ "must not coincide, and they must "
+#~ "both lie on the underlying surface "
+#~ "geometry of at least one of the"
+#~ " target faces."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the projection "
+#~ "distance. Possible values are **distance** "
+#~ ">> 0.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the normalized "
+#~ "distance along **edge** at which to "
+#~ "partition. Possible values are 0.0 <<"
+#~ " **parameter** << 1.0. You use this"
+#~ " argument to modify a partition "
+#~ "created with the created with the "
+#~ "PartitionEdgeByParam method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the projection "
+#~ "**distance**. Possible values are **distance**"
+#~ " >> 0.0. You use this argument "
+#~ "to modify a partition object created "
+#~ "with the PartitionFaceBySketchDistance method."
+#~ msgstr ""
+
+#~ msgid "FeatureOptions"
 #~ msgstr ""
 
