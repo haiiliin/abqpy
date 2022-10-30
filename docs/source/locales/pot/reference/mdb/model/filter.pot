@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/filter.rst:3
-#: ../../reference/mdb/model/filter.rst:35
+#: ../../reference/mdb/model/filter.md:1
 msgid "Filter"
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:5
+#: ../../reference/mdb/model/filter.md:3
 msgid "Filter commands are used to create real-time filters of output request data."
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:8
+#: ../../reference/mdb/model/filter.md:5
 msgid "Create filters"
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:11
+#: ../../reference/mdb/model/filter.md:7
 msgid "In Mdb"
 msgstr ""
 
@@ -592,6 +591,16 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Filter/ButterworthFilter.py:docstring of abaqus.Filter.ButterworthFilter.ButterworthFilter:1
+#: ../../../../src/abaqus/Filter/Chebyshev1Filter.py:docstring of abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter:1
+#: ../../../../src/abaqus/Filter/Chebyshev2Filter.py:docstring of abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter:1
+#: ../../../../src/abaqus/Filter/Filter.py:docstring of abaqus.Filter.Filter.Filter:1
+#: ../../../../src/abaqus/Filter/FilterModel.py:docstring of abaqus.Filter.FilterModel.FilterModel:1
+#: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:1
+#: ../../../../src/abaqus/Filter/OperatorFilter.py:docstring of abaqus.Filter.OperatorFilter.OperatorFilter:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Filter/ButterworthFilter.py:docstring of abaqus.Filter.ButterworthFilter.ButterworthFilter.__init__:4
 #: ../../../../src/abaqus/Filter/Chebyshev1Filter.py:docstring of abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.__init__:4
 #: ../../../../src/abaqus/Filter/Chebyshev2Filter.py:docstring of abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.__init__:4
@@ -915,7 +924,7 @@ msgstr ""
 msgid ":class:`OperatorFilter`"
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:21
+#: ../../reference/mdb/model/filter.md:18
 msgid "In Odb"
 msgstr ""
 
@@ -1079,8 +1088,8 @@ msgstr ""
 msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:32
-msgid "Classes"
+#: ../../reference/mdb/model/filter.md:30
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Filter/Filter.py:docstring of abaqus.Filter.Filter.Filter:1
@@ -1157,10 +1166,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the invariant to which filtering is applied."
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:45
-msgid "ButterworthFilter"
-msgstr ""
-
 #: ../../../../src/abaqus/Filter/ButterworthFilter.py:docstring of abaqus.Filter.ButterworthFilter.ButterworthFilter:1
 #: ../../../../src/abaqus/Filter/Chebyshev1Filter.py:docstring of abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter:1
 #: ../../../../src/abaqus/Filter/Chebyshev2Filter.py:docstring of abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter:1
@@ -1227,10 +1232,6 @@ msgstr ""
 msgid "Check `ButterworthFilter.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-butterworthfilterpyc.htm?contextscope=all#simaker-butterworthfiltersetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:55
-msgid "Chebyshev1Filter"
-msgstr ""
-
 #: ../../../../src/abaqus/Filter/Chebyshev1Filter.py:docstring of abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter:1
 msgid "The Chebyshev1Filter object defines a Chebyshev type 1 filter. The Chebyshev1Filter object is derived from the Filter object."
 msgstr ""
@@ -1284,10 +1285,6 @@ msgstr ""
 msgid "Check `Chebyshev1Filter.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-chebyshev1filterpyc.htm?contextscope=all#simaker-chebyshev1filtersetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/filter.rst:65
-msgid "Chebyshev2Filter"
-msgstr ""
-
 #: ../../../../src/abaqus/Filter/Chebyshev2Filter.py:docstring of abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter:1
 msgid "The Chebyshev2Filter object defines a Chebyshev type 2 filter. The Chebyshev2Filter object is derived from the Filter object."
 msgstr ""
@@ -1335,10 +1332,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Filter/Chebyshev2Filter.py:docstring of abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.setValues:4
 msgid "Check `Chebyshev2Filter.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-chebyshev2filterpyc.htm?contextscope=all#simaker-chebyshev2filtersetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/filter.rst:75
-msgid "OperatorFilter"
 msgstr ""
 
 #: ../../../../src/abaqus/Filter/OperatorFilter.py:docstring of abaqus.Filter.OperatorFilter.OperatorFilter:1

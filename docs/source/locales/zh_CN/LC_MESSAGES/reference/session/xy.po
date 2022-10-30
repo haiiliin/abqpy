@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/xy.rst:3
+#: ../../reference/session/xy.md:1
 msgid "XY"
 msgstr ""
 
-#: ../../reference/session/xy.rst:5
+#: ../../reference/session/xy.md:3
 msgid ""
 "XY commands are used to plot X-Y data and store its display attributes "
 "and to write X-Y data to an ASCII file."
 msgstr ""
 
-#: ../../reference/session/xy.rst:9
+#: ../../reference/session/xy.md:5
 msgid "Create XY Objects in Session"
 msgstr ""
 
@@ -42,8 +42,8 @@ msgstr ""
 #: abaqus.XY.LineStyle.LineStyle abaqus.XY.QuantityType.QuantityType
 #: abaqus.XY.SymbolStyle.SymbolStyle abaqus.XY.TextStyle.TextStyle
 #: abaqus.XY.Title.Title abaqus.XY.XYCurve.XYCurve abaqus.XY.XYData.XYData
-#: abaqus.XY.XYPlot.XYPlot abaqus.XY.XYPlotBase.XYPlotBase
-#: abaqus.XY.XYSession.XYSession abaqus.XY.XYSessionBase.XYSessionBase of
+#: abaqus.XY.XYPlot.XYPlot abaqus.XY.XYSession.XYSession
+#: abaqus.XY.XYSessionBase.XYSessionBase of
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -527,8 +527,7 @@ msgstr ""
 msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.XY.XYPlotBase.XYPlotBase.curves:1 of
+#: ../../None:72:<autosummary>:1 ../../None:7:<autosummary>:1
 msgid "A repository of XYCurve objects."
 msgstr ""
 
@@ -544,8 +543,7 @@ msgstr ""
 msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.XY.XYPlotBase.XYPlotBase.charts:1 of
+#: ../../None:72:<autosummary>:1 ../../None:7:<autosummary>:1
 msgid "A repository of Chart objects."
 msgstr ""
 
@@ -724,9 +722,8 @@ msgstr ""
 #: abaqus.XY.LineStyle.LineStyle abaqus.XY.QuantityType.QuantityType
 #: abaqus.XY.SymbolStyle.SymbolStyle abaqus.XY.TextStyle.TextStyle
 #: abaqus.XY.Title.Title abaqus.XY.XYCurve.XYCurve abaqus.XY.XYData.XYData
-#: abaqus.XY.XYPlot.XYPlot abaqus.XY.XYPlotBase.XYPlotBase
-#: abaqus.XY.XYReportOptions.XYReportOptions abaqus.XY.XYSession.XYSession
-#: abaqus.XY.XYSessionBase.XYSessionBase of
+#: abaqus.XY.XYPlot.XYPlot abaqus.XY.XYReportOptions.XYReportOptions
+#: abaqus.XY.XYSession.XYSession abaqus.XY.XYSessionBase.XYSessionBase of
 msgid "Public Methods:"
 msgstr ""
 
@@ -1125,6 +1122,19 @@ msgid ""
 "output database. For example::."
 msgstr ""
 
+#: abaqus.XY.Area.Area:1 abaqus.XY.AreaStyle.AreaStyle:1 abaqus.XY.Axis.Axis:1
+#: abaqus.XY.AxisArray.AxisArray:1 abaqus.XY.AxisData.AxisData:1
+#: abaqus.XY.Chart.Chart:1 abaqus.XY.DefaultChartOptions.DefaultChartOptions:1
+#: abaqus.XY.DefaultPlot.DefaultPlot:1 abaqus.XY.Legend.Legend:1
+#: abaqus.XY.LineStyle.LineStyle:1 abaqus.XY.QuantityType.QuantityType:1
+#: abaqus.XY.SymbolStyle.SymbolStyle:1 abaqus.XY.TextStyle.TextStyle:1
+#: abaqus.XY.Title.Title:1 abaqus.XY.XYCurve.XYCurve:1
+#: abaqus.XY.XYCurveArray.XYCurveArray:1 abaqus.XY.XYData.XYData:1
+#: abaqus.XY.XYPlot.XYPlot:1 abaqus.XY.XYReportOptions.XYReportOptions:1
+#: abaqus.XY.XYSession.XYSession:1 abaqus.XY.XYSessionBase.XYSessionBase:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.XY.AreaStyle.AreaStyle.__init__:4
 #: abaqus.XY.LineStyle.LineStyle.__init__:4
 #: abaqus.XY.QuantityType.QuantityType.__init__:4
@@ -1139,7 +1149,6 @@ msgstr ""
 #: abaqus.XY.XYPlot.XYPlot.AreaStyle:4 abaqus.XY.XYPlot.XYPlot.LineStyle:4
 #: abaqus.XY.XYPlot.XYPlot.QuantityType:4 abaqus.XY.XYPlot.XYPlot.SymbolStyle:4
 #: abaqus.XY.XYPlot.XYPlot.TextStyle:4
-#: abaqus.XY.XYPlotBase.XYPlotBase.__init__:4
 #: abaqus.XY.XYSession.XYSession.AreaStyle:4
 #: abaqus.XY.XYSession.XYSession.LineStyle:4
 #: abaqus.XY.XYSession.XYSession.QuantityType:4
@@ -1186,11 +1195,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField
 #: abaqus.XY.XYPlot.XYPlot.AreaStyle abaqus.XY.XYPlot.XYPlot.LineStyle
 #: abaqus.XY.XYPlot.XYPlot.QuantityType abaqus.XY.XYPlot.XYPlot.SymbolStyle
-#: abaqus.XY.XYPlot.XYPlot.TextStyle abaqus.XY.XYPlotBase.XYPlotBase.__init__
-#: abaqus.XY.XYPlotBase.XYPlotBase.autoColor
-#: abaqus.XY.XYPlotBase.XYPlotBase.next
-#: abaqus.XY.XYPlotBase.XYPlotBase.previous
-#: abaqus.XY.XYPlotBase.XYPlotBase.setValues
+#: abaqus.XY.XYPlot.XYPlot.TextStyle
 #: abaqus.XY.XYReportOptions.XYReportOptions.setValues
 #: abaqus.XY.XYSession.XYSession.AreaStyle
 #: abaqus.XY.XYSession.XYSession.LineStyle
@@ -1252,8 +1257,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField
 #: abaqus.XY.XYPlot.XYPlot.AreaStyle abaqus.XY.XYPlot.XYPlot.LineStyle
 #: abaqus.XY.XYPlot.XYPlot.QuantityType abaqus.XY.XYPlot.XYPlot.SymbolStyle
-#: abaqus.XY.XYPlot.XYPlot.TextStyle abaqus.XY.XYPlotBase.XYPlotBase.__init__
-#: abaqus.XY.XYSession.XYSession.AreaStyle
+#: abaqus.XY.XYPlot.XYPlot.TextStyle abaqus.XY.XYSession.XYSession.AreaStyle
 #: abaqus.XY.XYSession.XYSession.LineStyle
 #: abaqus.XY.XYSession.XYSession.QuantityType
 #: abaqus.XY.XYSession.XYSession.SymbolStyle
@@ -1288,8 +1292,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField
 #: abaqus.XY.XYPlot.XYPlot.AreaStyle abaqus.XY.XYPlot.XYPlot.LineStyle
 #: abaqus.XY.XYPlot.XYPlot.QuantityType abaqus.XY.XYPlot.XYPlot.SymbolStyle
-#: abaqus.XY.XYPlot.XYPlot.TextStyle abaqus.XY.XYPlotBase.XYPlotBase.__init__
-#: abaqus.XY.XYSession.XYSession.AreaStyle
+#: abaqus.XY.XYPlot.XYPlot.TextStyle abaqus.XY.XYSession.XYSession.AreaStyle
 #: abaqus.XY.XYSession.XYSession.LineStyle
 #: abaqus.XY.XYSession.XYSession.QuantityType
 #: abaqus.XY.XYSession.XYSession.SymbolStyle
@@ -2354,7 +2357,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:13
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:14
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:13
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:13
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:13 of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
@@ -2411,7 +2414,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:77
 #: abaqus.XY.XYData.XYData.xyDataListFromField:80
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:35
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:89 of
 msgid "A list of XYData objects."
 msgstr ""
@@ -2420,7 +2423,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:78
 #: abaqus.XY.XYData.XYData.xyDataListFromField:81
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:36
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:82
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:90
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:81 of
 msgid ":class:`List[XYData]`"
@@ -2492,7 +2495,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:73
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:41
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:88
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:74
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:73 of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
@@ -2507,7 +2510,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:77
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:45
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:92
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:69
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:78
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:77 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
@@ -2677,14 +2680,14 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:22
 #: abaqus.XY.XYData.XYData.xyDataListFromField:21
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:58
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:22
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:21 of
 msgid "Variable label: A String specifying the variable; for example, 'U'."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:23
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:59
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:20 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:23 of
 msgid ""
 "Variable output position: A SymbolicConstant specifying the output "
 "position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, "
@@ -2694,7 +2697,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:27
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:62
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:27 of
 msgid ""
 "Refinement: A tuple specifying the refinement. If the refinement tuple is"
 " omitted, data are written for all components and invariants (if "
@@ -2706,7 +2709,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:32
 #: abaqus.XY.XYData.XYData.xyDataListFromField:30
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:67
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:29
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:30 of
 msgid ""
 "Type: A SymbolicConstant specifying the type of refinement. Possible "
@@ -2716,7 +2719,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:33
 #: abaqus.XY.XYData.XYData.xyDataListFromField:32
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:69
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:30
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:33
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:32 of
 msgid ""
 "Label: A String specifying the invariant or the component; for example, "
@@ -2726,7 +2729,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:35
 #: abaqus.XY.XYData.XYData.xyDataListFromField:34
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:34 of
 msgid ""
 "Location: An optional Dictionary specifying the location. The dictionary "
@@ -2736,7 +2739,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:38
 #: abaqus.XY.XYData.XYData.xyDataListFromField:37
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:74
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:37 of
 msgid "A String specifying the category selection label."
 msgstr ""
@@ -2744,7 +2747,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:39
 #: abaqus.XY.XYData.XYData.xyDataListFromField:38
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:75
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:36
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:39
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:38 of
 msgid "A String specifying the section point label."
 msgstr ""
@@ -2752,7 +2755,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:41
 #: abaqus.XY.XYData.XYData.xyDataListFromField:40
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:77
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:41
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:40 of
 msgid "For example::"
 msgstr ""
@@ -2857,7 +2860,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:16
 #: abaqus.XY.XYData.XYData.xyDataListFromField:15
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:15 of
 msgid ""
 "A SymbolicConstant specifying the position from which output will be "
@@ -2866,7 +2869,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:19
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following:  * "
@@ -2895,7 +2898,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:19
 #: abaqus.XY.XYData.XYData.xyDataListFromField:18
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:18 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
@@ -2904,7 +2907,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:49
 #: abaqus.XY.XYData.XYData.xyDataListFromField:48
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:45
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:49
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:48 of
 msgid ""
 "A sequence of Strings specifying element sets or a String specifying a "
@@ -2912,7 +2915,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:51
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -2927,7 +2930,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:51
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -2939,19 +2942,19 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:57
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:53
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:58
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:57 of
 msgid "An Int specifying a single element label; for example, `1`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:58
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:54
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:58 of
 msgid "A String specifying a single element label; for example, `'7'`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:59
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:55
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:60
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:59 of
 msgid ""
 "A String specifying a sequence of element labels; for example, `'3:5'` "
@@ -2960,14 +2963,14 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:60
 #: abaqus.XY.XYData.XYData.xyDataListFromField:61
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:56
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:62
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:61 of
 msgid ""
 "A sequence of Strings specifying node sets or a String specifying a "
 "single node set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
 " model. Each part instance node expression is a sequence of a String "
@@ -2981,7 +2984,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:63
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:63 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
@@ -2992,16 +2995,16 @@ msgid ""
 "following:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:63 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:70 of
 msgid "An Int specifying a single node label; for example, `1`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:71 of
 msgid "A String specifying a single node label; for example, `'7'`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:65
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:71 of
 msgid ""
 "A String specifying a sequence of node labels; for example, `'3:5'` and "
@@ -3100,12 +3103,8 @@ msgid ""
 " saved as is."
 msgstr ""
 
-#: ../../reference/session/xy.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/xy.rst:23
-msgid "XY features for Session"
+#: ../../reference/session/xy.md:16
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase:1 of
@@ -3125,8 +3124,7 @@ msgstr ""
 #: abaqus.XY.LineStyle.LineStyle:6 abaqus.XY.QuantityType.QuantityType:8
 #: abaqus.XY.SymbolStyle.SymbolStyle:6 abaqus.XY.TextStyle.TextStyle:7
 #: abaqus.XY.Title.Title:5 abaqus.XY.XYCurve.XYCurve:4
-#: abaqus.XY.XYData.XYData:12 abaqus.XY.XYPlotBase.XYPlotBase:4
-#: abaqus.XY.XYReportOptions.XYReportOptions:6
+#: abaqus.XY.XYData.XYData:12 abaqus.XY.XYReportOptions.XYReportOptions:6
 #: abaqus.XY.XYSessionBase.XYSessionBase:5 of
 msgid "This object can be accessed by::"
 msgstr ""
@@ -3166,8 +3164,8 @@ msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:9 of
 msgid ""
-"APath object specifying the end points of the stress line.Note:You must "
-"provide either the **path** argument or the **startPoint** and "
+"APath object specifying the end points of the stress line. Note: You must"
+" provide either the **path** argument or the **startPoint** and "
 "**endPoint** arguments."
 msgstr ""
 
@@ -3191,8 +3189,8 @@ msgstr ""
 msgid ""
 "A sequence of Strings specifying the linearized stress components to be "
 "displayed in the xyPlot object. Possible values are \"S11\", \"S22\", "
-"\"S33\", \"S12\", \"S23\", and \"S13\".Note:You must provide at least one"
-" of the **components** , **xyMembraneComps** , and **xyBendingComps** "
+"\"S33\", \"S12\", \"S23\", and \"S13\". Note: You must provide at least "
+"one of the **components** , **xyMembraneComps** , and **xyBendingComps** "
 "arguments."
 msgstr ""
 
@@ -3362,10 +3360,6 @@ msgstr ""
 msgid "A Double specifying the tolerance. The default value is 0.00001."
 msgstr ""
 
-#: ../../reference/session/xy.rst:33
-msgid "Area"
-msgstr ""
-
 #: abaqus.XY.Area.Area:1 abaqus.XY.AreaStyle.AreaStyle:1 abaqus.XY.Axis.Axis:1
 #: abaqus.XY.AxisData.AxisData:1 abaqus.XY.Chart.Chart:1
 #: abaqus.XY.DefaultChartOptions.DefaultChartOptions:1
@@ -3373,7 +3367,6 @@ msgstr ""
 #: abaqus.XY.LineStyle.LineStyle:1 abaqus.XY.QuantityType.QuantityType:1
 #: abaqus.XY.SymbolStyle.SymbolStyle:1 abaqus.XY.TextStyle.TextStyle:1
 #: abaqus.XY.Title.Title:1 abaqus.XY.XYCurve.XYCurve:1
-#: abaqus.XY.XYPlotBase.XYPlotBase:1
 #: abaqus.XY.XYReportOptions.XYReportOptions:1 of
 msgid "Bases: :py:class:`object`"
 msgstr ""
@@ -3704,10 +3697,6 @@ msgstr ""
 msgid "A Float specifying the width of the area in mm. The default value is 1.0."
 msgstr ""
 
-#: ../../reference/session/xy.rst:43
-msgid "AreaStyle"
-msgstr ""
-
 #: abaqus.XY.AreaStyle.AreaStyle:1 of
 msgid ""
 "The AreaStyle object is used to define how areas are to be filled when "
@@ -3772,10 +3761,6 @@ msgid ""
 "Check `AreaStyle.setValues on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-areastylepyc.htm?contextscope=all"
 "#simaker-areastylesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/session/xy.rst:53
-msgid "Axis"
 msgstr ""
 
 #: abaqus.XY.Axis.Axis:1 of
@@ -3958,14 +3943,6 @@ msgid ""
 "inside of the axis.OUTSIDE, specifying that the tick marcks are placed on"
 " the outside of the axis.ACROSS, specifying that the tick marcks are "
 "placed across the axis.The default value is INSIDE."
-msgstr ""
-
-#: ../../reference/session/xy.rst:63
-msgid "AxisArray"
-msgstr ""
-
-#: ../../reference/session/xy.rst:73
-msgid "AxisData"
 msgstr ""
 
 #: abaqus.XY.AxisData.AxisData:1 of
@@ -4353,7 +4330,7 @@ msgstr ""
 #: abaqus.XY.AxisData.AxisData.tickIncrement:1 of
 msgid ""
 "A Float specifying the increment of the major tick marks on the axis when"
-" **tickMode** = INCREMENT. Valid values are 0 << **tickIncrement**. The "
+" **tickMode** = INCREMENT. Valid values are 0 < **tickIncrement**. The "
 "default value is computed based on the results of the automatic method "
 "and the range being plotted. When the **scale** is set to LOG, the "
 "tickIncrement is interpreted as a value per decade and should be between "
@@ -4400,10 +4377,6 @@ msgstr ""
 msgid ""
 "A Float specifying the shown tick increment of the major ticks. This "
 "value takes zoom/pan into account."
-msgstr ""
-
-#: ../../reference/session/xy.rst:83
-msgid "Chart"
 msgstr ""
 
 #: abaqus.XY.Chart.Chart:1 of
@@ -4717,13 +4690,11 @@ msgid ""
 "#simaker-chartautocolorpyc>`__."
 msgstr ""
 
-#: abaqus.XY.Chart.Chart.autoColor:8
-#: abaqus.XY.XYPlotBase.XYPlotBase.autoColor:8 of
+#: abaqus.XY.Chart.Chart.autoColor:8 of
 msgid "A Boolean defining whether color distribution affects curve lines."
 msgstr ""
 
-#: abaqus.XY.Chart.Chart.autoColor:10
-#: abaqus.XY.XYPlotBase.XYPlotBase.autoColor:10 of
+#: abaqus.XY.Chart.Chart.autoColor:10 of
 msgid "A Boolean defining whether color distribution affects curve symbols."
 msgstr ""
 
@@ -4855,10 +4826,6 @@ msgid ""
 "with axes. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/xy.rst:93
-msgid "DefaultChartOptions"
-msgstr ""
-
 #: abaqus.XY.DefaultChartOptions.DefaultChartOptions:1 of
 msgid ""
 "The DefaultChartOptions object is used to hold on default chart and axis "
@@ -4984,10 +4951,6 @@ msgid ""
 "default text properties to be used when creating tags."
 msgstr ""
 
-#: ../../reference/session/xy.rst:103
-msgid "DefaultPlot"
-msgstr ""
-
 #: abaqus.XY.DefaultPlot.DefaultPlot:1 of
 msgid ""
 "The DefaultPlot object is used to hold on default plot attributes. The "
@@ -5022,10 +4985,6 @@ msgstr ""
 msgid ""
 "A :py:class:`~abaqus.XY.Title.Title` object specifying a Title object "
 "used to hold on to the default properties of the XY-Plot title."
-msgstr ""
-
-#: ../../reference/session/xy.rst:113
-msgid "Legend"
 msgstr ""
 
 #: abaqus.XY.Legend.Legend:1 of
@@ -5177,10 +5136,6 @@ msgid ""
 "is an empty string."
 msgstr ""
 
-#: ../../reference/session/xy.rst:123
-msgid "LineStyle"
-msgstr ""
-
 #: abaqus.XY.LineStyle.LineStyle:1 of
 msgid ""
 "The LineStyle object is used to define the line style to be used for "
@@ -5256,10 +5211,6 @@ msgid ""
 "#simaker-linestylesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/session/xy.rst:133
-msgid "QuantityType"
-msgstr ""
-
 #: abaqus.XY.QuantityType.QuantityType:1 of
 msgid ""
 "The QuantityType object is used to store attributes defining the physical"
@@ -5303,10 +5254,6 @@ msgid ""
 "Check `QuantityType.__init__ on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quantitytypepyc.htm?contextscope=all"
 "#simaker-quantitytype__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/session/xy.rst:143
-msgid "SymbolStyle"
 msgstr ""
 
 #: abaqus.XY.SymbolStyle.SymbolStyle:1 of
@@ -5379,10 +5326,6 @@ msgid ""
 "Check `SymbolStyle.setValues on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symbolstylepyc.htm?contextscope=all"
 "#simaker-symbolstylesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/session/xy.rst:153
-msgid "TextStyle"
 msgstr ""
 
 #: abaqus.XY.TextStyle.TextStyle:1 of
@@ -5458,10 +5401,6 @@ msgid ""
 "Check `TextStyle.setValues on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textstylepyc.htm?contextscope=all"
 "#simaker-textstylesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/session/xy.rst:163
-msgid "Title"
 msgstr ""
 
 #: abaqus.XY.Title.Title:1 of
@@ -5545,10 +5484,6 @@ msgid ""
 " is OFF."
 msgstr ""
 
-#: ../../reference/session/xy.rst:173
-msgid "writeXYReport"
-msgstr ""
-
 #: abaqus.XY.writeXYReport.writeXYReport:1 of
 msgid "This method writes an XYData object to a user-defined ASCII file."
 msgstr ""
@@ -5574,10 +5509,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to append the **X - Y** data to the existing"
 " file. The default value is ON."
-msgstr ""
-
-#: ../../reference/session/xy.rst:181
-msgid "XYCurve"
 msgstr ""
 
 #: abaqus.XY.XYCurve.XYCurve:1 of
@@ -5749,8 +5680,8 @@ msgstr ""
 #: abaqus.XY.XYCurve.XYCurve.symbolFrequency:1 of
 msgid ""
 "An Int specifying the frequency of plotting the markers. Possible values "
-"are **symbolFrequency** >> 0. If **symbolFrequency** = 1, then markers "
-"are plotted at every point. The default value is 1."
+"are **symbolFrequency** > 0. If **symbolFrequency** = 1, then markers are"
+" plotted at every point. The default value is 1."
 msgstr ""
 
 #: ../../docstring abaqus.XY.XYCurve.XYCurve.setValues:17
@@ -5758,14 +5689,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to use the system supplied legend label. The"
 " default value is ON."
-msgstr ""
-
-#: ../../reference/session/xy.rst:191
-msgid "XYCurveArray"
-msgstr ""
-
-#: ../../reference/session/xy.rst:201
-msgid "XYData"
 msgstr ""
 
 #: abaqus.XY.XYData.XYData:1 of
@@ -6225,10 +6148,6 @@ msgid ""
 "#simaker-xydataxydatalistfromfieldpyc>`__."
 msgstr ""
 
-#: ../../reference/session/xy.rst:211
-msgid "XYPlot"
-msgstr ""
-
 #: abaqus.XY.XYPlot.XYPlot:1 of
 msgid "Bases: :py:class:`~abaqus.XY.XYPlotBase.XYPlotBase`"
 msgstr ""
@@ -6237,8 +6156,7 @@ msgstr ""
 msgid ":py:obj:`area <abaqus.XY.XYPlotBase.XYPlotBase.area>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.XY.XYPlotBase.XYPlotBase.area:1 of
+#: ../../None:7:<autosummary>:1
 msgid ""
 "An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, "
 "background and borders of the XYPlot object."
@@ -6248,9 +6166,7 @@ msgstr ""
 msgid ":py:obj:`title <abaqus.XY.XYPlotBase.XYPlotBase.title>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.XY.XYPlotBase.XYPlotBase.setValues:7
-#: abaqus.XY.XYPlotBase.XYPlotBase.title:1 of
+#: ../../None:7:<autosummary>:1
 msgid ""
 "A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the "
 "XYPlot object."
@@ -6268,8 +6184,7 @@ msgstr ""
 msgid ":py:obj:`transform <abaqus.XY.XYPlotBase.XYPlotBase.transform>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.XY.XYPlotBase.XYPlotBase.transform:1 of
+#: ../../None:7:<autosummary>:1
 msgid ""
 "A tuple of Floats specifying a transformation matrix used to scale or pan"
 " along the axes of the active Chart object of this XYPlot."
@@ -6313,7 +6228,7 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.XY.XYPlotBase.XYPlotBase.__init__>`\\ \\(name\\)"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1 abaqus.XY.XYPlotBase.XYPlotBase.__init__:1 of
+#: ../../None:9:<autosummary>:1
 msgid "This method creates an empty XYPlot object."
 msgstr ""
 
@@ -6323,7 +6238,7 @@ msgid ""
 "\\(\\[lines\\, symbols\\]\\)"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1 abaqus.XY.XYPlotBase.XYPlotBase.autoColor:1 of
+#: ../../None:9:<autosummary>:1
 msgid ""
 "This method distributes the colors on all curves displayed in the XYPlot "
 "using the color palette defined by the xyColors AutoColors object."
@@ -6333,7 +6248,7 @@ msgstr ""
 msgid ":py:obj:`autoSymbol <abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1 abaqus.XY.XYPlotBase.XYPlotBase.autoSymbol:1 of
+#: ../../None:9:<autosummary>:1
 msgid "This method distributes the symbols on all curves displayed in the XYPlot."
 msgstr ""
 
@@ -6375,106 +6290,32 @@ msgid ""
 "\\(title\\, transform\\)"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1 abaqus.XY.XYPlotBase.XYPlotBase.setValues:1 of
+#: ../../None:9:<autosummary>:1
 msgid "This method modifies the XYPlot object."
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase:1 of
-msgid "The XYPlot object is used to display Chart objects."
+#: ../../reference/session/xy.md:159
+msgid "```"
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase:10 of
-msgid ""
-"Check `XYPlotBase on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all>`__."
+#: ../../reference/session/xy.md:161
+msgid "```{eval-rst} .. autoclass:: abaqus.XY.XYPlotBase.XYPlotBase"
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase.__init__:9 of
-msgid ""
-"Check `XYPlot.__init__ on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
-"#simaker-xyplot__init__pyc>`__."
+#: ../../reference/session/xy.md
+msgid "members"
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase.__init__:12 of
-msgid "A String specifying the name of the XYPlot object."
+#: ../../reference/session/xy.md
+msgid "special-members"
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase.__init__:14 of
-msgid "An :py:class:`~abaqus.XY.XYPlot.XYPlot` object."
+#: ../../reference/session/xy.md:164
+msgid "__init__"
 msgstr ""
 
-#: abaqus.XY.XYPlotBase.XYPlotBase.__init__:15 of
-msgid ":class:`XYPlot`"
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.autoColor:5 of
-msgid ""
-"Check `XYPlot.autoColor on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
-"#simaker-xyplotautocolorpyc>`__."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.fitCurves:1 of
-msgid ""
-"This method resets the transform of all the charts of the XYPlot object. "
-"It cancels any zoom or pan action."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.next:1 of
-msgid ""
-"This method restores the **transform** member of the active Chart object "
-"to the next setting in the transform list. (There is a list of eight "
-"transforms stored for each chart.) If there is no next transform, no "
-"action is taken."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.next:6 of
-msgid ""
-"Check `XYPlot.next on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
-"#simaker-xyplotnextpyc>`__."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.next:9
-#: abaqus.XY.XYPlotBase.XYPlotBase.previous:9 of
-msgid ""
-"A Boolean specifying the viewport should refresh immediately after the "
-"command is processed. This is typically only used when writing a script "
-"and it is desirable to show intermediate results before the script "
-"completes. The default value is False."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.previous:1 of
-msgid ""
-"This method restores the **transform** member of the active Chart object "
-"to the previous setting in the transform list. (There is a list of eight "
-"transforms stored for each chart.) If there is no next transform, no "
-"action is taken."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.previous:6 of
-msgid ""
-"Check `XYPlot.previous on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
-"#simaker-xyplotpreviouspyc>`__."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.setValues:4 of
-msgid ""
-"Check `XYPlot.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
-"#simaker-xyplotsetvaluespyc>`__."
-msgstr ""
-
-#: abaqus.XY.XYPlotBase.XYPlotBase.setValues:9 of
-msgid ""
-"A sequence of Floats specifying a transformation matrix used to scale or "
-"pan along the axes of the active Chart object of this XYPlot."
-msgstr ""
-
-#: ../../reference/session/xy.rst:228
-msgid "XYReportOptions"
+#: ../../reference/session/xy.md
+msgid "show-inheritance"
 msgstr ""
 
 #: abaqus.XY.XYReportOptions.XYReportOptions:1 of
@@ -6513,7 +6354,7 @@ msgstr ""
 #: abaqus.XY.XYReportOptions.XYReportOptions.setValues:7 of
 msgid ""
 "An Int specifying the number of characters per line of the report file "
-"when **pageWidthLimited** = ON. Possible values are **pageWidth** >> 0. "
+"when **pageWidthLimited** = ON. Possible values are **pageWidth** > 0. "
 "The default value is 80."
 msgstr ""
 
@@ -8847,5 +8688,212 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`setValues <abaqus.XY.XYPlot.XYPlot.setValues>`\\ "
 #~ "\\(title\\, transform\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "XY features for Session"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "APath object specifying the end points"
+#~ " of the stress line.Note:You must "
+#~ "provide either the **path** argument or"
+#~ " the **startPoint** and **endPoint** "
+#~ "arguments."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Strings specifying the "
+#~ "linearized stress components to be "
+#~ "displayed in the xyPlot object. Possible"
+#~ " values are \"S11\", \"S22\", \"S33\", "
+#~ "\"S12\", \"S23\", and \"S13\".Note:You must"
+#~ " provide at least one of the "
+#~ "**components** , **xyMembraneComps** , and "
+#~ "**xyBendingComps** arguments."
+#~ msgstr ""
+
+#~ msgid "Area"
+#~ msgstr ""
+
+#~ msgid "AreaStyle"
+#~ msgstr ""
+
+#~ msgid "Axis"
+#~ msgstr ""
+
+#~ msgid "AxisArray"
+#~ msgstr ""
+
+#~ msgid "AxisData"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the increment of "
+#~ "the major tick marks on the axis"
+#~ " when **tickMode** = INCREMENT. Valid "
+#~ "values are 0 << **tickIncrement**. The"
+#~ " default value is computed based on"
+#~ " the results of the automatic method"
+#~ " and the range being plotted. When"
+#~ " the **scale** is set to LOG, "
+#~ "the tickIncrement is interpreted as a"
+#~ " value per decade and should be "
+#~ "between 0.05 and 1."
+#~ msgstr ""
+
+#~ msgid "Chart"
+#~ msgstr ""
+
+#~ msgid "DefaultChartOptions"
+#~ msgstr ""
+
+#~ msgid "DefaultPlot"
+#~ msgstr ""
+
+#~ msgid "Legend"
+#~ msgstr ""
+
+#~ msgid "LineStyle"
+#~ msgstr ""
+
+#~ msgid "QuantityType"
+#~ msgstr ""
+
+#~ msgid "SymbolStyle"
+#~ msgstr ""
+
+#~ msgid "TextStyle"
+#~ msgstr ""
+
+#~ msgid "Title"
+#~ msgstr ""
+
+#~ msgid "writeXYReport"
+#~ msgstr ""
+
+#~ msgid "XYCurve"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the frequency of "
+#~ "plotting the markers. Possible values "
+#~ "are **symbolFrequency** >> 0. If "
+#~ "**symbolFrequency** = 1, then markers "
+#~ "are plotted at every point. The "
+#~ "default value is 1."
+#~ msgstr ""
+
+#~ msgid "XYCurveArray"
+#~ msgstr ""
+
+#~ msgid "XYData"
+#~ msgstr ""
+
+#~ msgid "XYPlot"
+#~ msgstr ""
+
+#~ msgid "The XYPlot object is used to display Chart objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlotBase on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.__init__ on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplot__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid "A String specifying the name of the XYPlot object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.XY.XYPlot.XYPlot` object."
+#~ msgstr ""
+
+#~ msgid ":class:`XYPlot`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.autoColor on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotautocolorpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method resets the transform of "
+#~ "all the charts of the XYPlot "
+#~ "object. It cancels any zoom or pan"
+#~ " action."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method restores the **transform** "
+#~ "member of the active Chart object "
+#~ "to the next setting in the "
+#~ "transform list. (There is a list "
+#~ "of eight transforms stored for each "
+#~ "chart.) If there is no next "
+#~ "transform, no action is taken."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.next on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotnextpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying the viewport should"
+#~ " refresh immediately after the command "
+#~ "is processed. This is typically only "
+#~ "used when writing a script and it"
+#~ " is desirable to show intermediate "
+#~ "results before the script completes. The"
+#~ " default value is False."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method restores the **transform** "
+#~ "member of the active Chart object "
+#~ "to the previous setting in the "
+#~ "transform list. (There is a list "
+#~ "of eight transforms stored for each "
+#~ "chart.) If there is no next "
+#~ "transform, no action is taken."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.previous on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotpreviouspyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.setValues on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotsetvaluespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying a "
+#~ "transformation matrix used to scale or"
+#~ " pan along the axes of the "
+#~ "active Chart object of this XYPlot."
+#~ msgstr ""
+
+#~ msgid "XYReportOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "characters per line of the report "
+#~ "file when **pageWidthLimited** = ON. "
+#~ "Possible values are **pageWidth** >> 0."
+#~ " The default value is 80."
 #~ msgstr ""
 

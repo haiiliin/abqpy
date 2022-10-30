@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/annotation.rst:3 ../../reference/mdb/annotation.rst:22
+#: ../../reference/mdb/annotation.md:1
 msgid "Annotation"
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:5
+#: ../../reference/mdb/annotation.md:3
 msgid ""
 "Annotation commands are used to create, position, and modify viewport "
 "annotations."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:9
+#: ../../reference/mdb/annotation.md:5
 msgid "Create annotations"
 msgstr ""
 
@@ -842,8 +842,8 @@ msgstr ""
 msgid ":class:`XYData`"
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:19
-msgid "Classes"
+#: ../../reference/mdb/annotation.md:20
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Annotation.Annotation.Annotation:1 of
@@ -977,6 +977,13 @@ msgstr ""
 msgid "This method translates the Annotation object on the viewport plane."
 msgstr ""
 
+#: abaqus.Annotation.Annotation.Annotation:1
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1
+#: abaqus.Annotation.Arrow.Arrow:1 abaqus.Annotation.Text.Text:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Annotation.Annotation.Annotation.moveAfter:4 of
 msgid ""
 "Check `Annotation.moveAfter on help.3ds.com/2021 "
@@ -1011,10 +1018,6 @@ msgstr ""
 
 #: abaqus.Annotation.Annotation.Annotation.translate:9 of
 msgid "A Float specifying the **Y** translation amount in millimeters."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:32
-msgid "AnnotationsToPlotArray"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
@@ -1510,10 +1513,6 @@ msgid ""
 "Check `AnnotationsToPlotArray.sendToBack on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
 "#simaker-annotationstoplotarraysendtobackpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:42
-msgid "AnnotationViewport"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
@@ -2256,10 +2255,6 @@ msgid ""
 "object that controls viewing of the viewport content."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:52
-msgid "Arrow"
-msgstr ""
-
 #: abaqus.Annotation.Arrow.Arrow:1 of
 msgid ""
 "Bases: :py:class:`~abaqus.Annotation.Annotation.Annotation`, "
@@ -2450,10 +2445,6 @@ msgid ""
 "Check `Arrow.translateStartPoint on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
 "#simaker-arrowtranslatestartpointpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:62
-msgid "Text"
 msgstr ""
 
 #: abaqus.Annotation.Text.Text:1 of
@@ -3378,5 +3369,20 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`get_user_attributes "
 #~ "<abaqus.Annotation.Arrow.Arrow.get_user_attributes>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "AnnotationsToPlotArray"
+#~ msgstr ""
+
+#~ msgid "AnnotationViewport"
+#~ msgstr ""
+
+#~ msgid "Arrow"
+#~ msgstr ""
+
+#~ msgid "Text"
 #~ msgstr ""
 

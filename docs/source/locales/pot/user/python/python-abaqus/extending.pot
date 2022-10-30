@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,262 +16,262 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../user/python/python-abaqus/extending.rst:3
+#: ../../user/python/python-abaqus/extending.md:1
 msgid "Extending the Abaqus Scripting Interface"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:5
-msgid "You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in :ref:`creating-functions` and :ref:`functions-and-modules`."
+#: ../../user/python/python-abaqus/extending.md:3
+msgid "You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in {ref}`creating-functions` and {ref}`functions-and-modules`."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:7
+#: ../../user/python/python-abaqus/extending.md:5
 msgid "This section describes how you can extend the functionality of the Abaqus Scripting Interface."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:10
+#: ../../user/python/python-abaqus/extending.md:7
 msgid "Storing custom data in the model database or in other objects"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:12
+#: ../../user/python/python-abaqus/extending.md:9
 msgid "If you extend the kernel functionality by writing your own classes and functions, you may want to store data required by those classes or functions in the Abaqus/CAE model database so the data are available the next time you open the database. To store custom kernel data in the Abaqus/CAE model database, you must make use of the `customKernel` module. The `customKernel` module augments the mdb object with a member called customData. When you save a model database, Abaqus/CAE also saves any data created below the customData object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:14
+#: ../../user/python/python-abaqus/extending.md:11
 msgid "For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:25
+#: ../../user/python/python-abaqus/extending.md:22
 msgid "If you start a new session and open the model database, `custom-test.cae`, you can refer to the variables that you saved. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:34
-msgid "You can store almost any type of Python object under `mdb.customData`; for example, strings, numbers, and Python classes. However, there are some restrictions; for example, you cannot store file objects. These restrictions are due to the fact that the Abaqus/CAE infrastructure uses Python’s `pickle` module to store the `customData` object in the model database. The `pickle` module allows the Python programmer to write a data structure to a file and then recreate that data structure when reading from the file. For details on the restrictions imposed by the `pickle` module, see the official Python website (https://www.python.org)."
+#: ../../user/python/python-abaqus/extending.md:31
+msgid "You can store almost any type of Python object under `mdb.customData`; for example, strings, numbers, and Python classes. However, there are some restrictions; for example, you cannot store file objects. These restrictions are due to the fact that the Abaqus/CAE infrastructure uses Python’s `pickle` module to store the `customData` object in the model database. The `pickle` module allows the Python programmer to write a data structure to a file and then recreate that data structure when reading from the file. For details on the restrictions imposed by the `pickle` module, see the official Python website (<https://www.python.org>)."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:36
+#: ../../user/python/python-abaqus/extending.md:33
 msgid "If your code creates a custom class and stores an instance of the class in the model database, the custom module that defined that custom class must be available for Python to unpickle the data when the database is subsequently opened. Consequently, if a user saves custom data to a model database and then passes that model database to another user, the other user must also have access to the custom modules that produced the custom data. Otherwise, they will not be able to load the custom data into their Abaqus/CAE session."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:38
+#: ../../user/python/python-abaqus/extending.md:35
 msgid "Abaqus/CAE does not keep track of changes made to the `customData` object. As a result, when the user quits a session, Abaqus/CAE will not prompt them to save their changes if they changed only objects under `customData`."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:41
+#: ../../user/python/python-abaqus/extending.md:37
 msgid "Interaction with the GUI"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:43
+#: ../../user/python/python-abaqus/extending.md:39
 msgid "In addition to providing a persistence mechanism, the `customKernel` module contains classes that provide the following capabilities:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:45
+#: ../../user/python/python-abaqus/extending.md:41
 msgid "Querying custom kernel data values from the GUI. From a GUI script you can access some attribute of your custom kernel object, just as you would from the kernel. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:51
+#: ../../user/python/python-abaqus/extending.md:47
 msgid "Notification to the GUI when custom kernel data change. For example, you can have a manager dialog box that lists the objects in a repository. When the contents of the repository change, you can be notified and take the appropriate action to update the list of objects in the manager dialog box."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:53
-msgid "To make use of these features, you must derive your custom kernel objects from the classes listed in the following sections. For more details on GUI customization, see the `Abaqus GUI Toolkit Reference Guide <https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all>`_."
+#: ../../user/python/python-abaqus/extending.md:49
+msgid "To make use of these features, you must derive your custom kernel objects from the classes listed in the following sections. For more details on GUI customization, see the [Abaqus GUI Toolkit Reference Guide](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all)."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:56
+#: ../../user/python/python-abaqus/extending.md:51
 msgid "CommandRegister class"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:58
+#: ../../user/python/python-abaqus/extending.md:53
 msgid "You can use the CommandRegister class to derive a general class that can be queried from the GUI. In addition, the class can notify the GUI when its contents change. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:68
-msgid "If a query is registered by the GUI on an instance of this class, the GUI will be notified when a member of this instance is changed, added, or deleted, For more details on registering queries, see the `Abaqus GUI Toolkit Reference Guide <https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all>`_."
+#: ../../user/python/python-abaqus/extending.md:63
+msgid "If a query is registered by the GUI on an instance of this class, the GUI will be notified when a member of this instance is changed, added, or deleted, For more details on registering queries, see the [Abaqus GUI Toolkit Reference Guide](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all)."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:70
+#: ../../user/python/python-abaqus/extending.md:65
 msgid "If your object is to be stored in a repository (see below), the first argument to the constructor must be a string representing the name of the object. That string will automatically be assigned by the infrastructure to a member called name."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:73
+#: ../../user/python/python-abaqus/extending.md:67
 msgid "Repositories"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:75
+#: ../../user/python/python-abaqus/extending.md:69
 msgid "Repositories are containers that hold objects that are keyed by strings. It may be convenient to store your custom kernel objects in repositories, in the same way that Abaqus/CAE part objects are stored in the Parts repository."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:77
+#: ../../user/python/python-abaqus/extending.md:71
 msgid "The customData object is an instance of a `RepositorySupport` class, which provides a Repository method that allows you to create a repository as an attribute of the instance. For more information, see `RepositorySupport`. The arguments to the Repository method are the name of the repository and a constructor or a sequence of constructors. Those constructors must have name as their first argument, and the infrastructure will automatically assign that value to a member called name. Instances of these constructors will be stored in the repository. For more information, see Repository object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:79
+#: ../../user/python/python-abaqus/extending.md:73
 msgid "Since repositories are designed to notify the GUI when their contents change, the objects placed inside them should be derived from either CommandRegister or `RepositorySupport` to extend this capability to its fullest."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:81
+#: ../../user/python/python-abaqus/extending.md:75
 msgid "The Abaqus Scripting Interface uses the following conventions:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:83
+#: ../../user/python/python-abaqus/extending.md:77
 msgid "The name of a repository is a plural noun with all lowercase letters."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:85
+#: ../../user/python/python-abaqus/extending.md:79
 msgid "A constructor is a capitalized noun (or a combination of capitalized nouns and adjectives)."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:87
+#: ../../user/python/python-abaqus/extending.md:81
 msgid "The first argument to the constructor must be name."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:89
+#: ../../user/python/python-abaqus/extending.md:83
 msgid "For example, the Part constructor creates a part object and stores it in the parts repository. You can access the part object from the repository using the same name argument that you passed in with the Part constructor. In some cases, more than one constructor can create instances that are stored in the same repository. For example, the HomogeneousSolidSection and the HomogeneousShellSection constructors both create section objects that are stored in the sections repository. For more information, see Abstract base type. For example, the following script creates a blocks repository, and the Block constructor creates a block object in the blocks repository:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:104
+#: ../../user/python/python-abaqus/extending.md:97
 msgid "Repository methods"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:106
+#: ../../user/python/python-abaqus/extending.md:99
 msgid "Repositories have several useful methods for querying their contents, as shown in the following table:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:108
+#: ../../user/python/python-abaqus/extending.md:101
 msgid "**keys()**:   Returns a list of the keys in the repository."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:109
+#: ../../user/python/python-abaqus/extending.md:102
 msgid "**has_key()**:        Returns 1 if the key is found in the repository; otherwise, returns 0."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:110
+#: ../../user/python/python-abaqus/extending.md:103
 msgid "**values()**:         Returns a list of the objects in the repository."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:111
+#: ../../user/python/python-abaqus/extending.md:104
 msgid "**items()**:  Returns a list of key, value pairs in the repository."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:112
+#: ../../user/python/python-abaqus/extending.md:105
 msgid "**changeKey(fromName, toName)**:      Changes the name of a key in the repository. This method will also change the name attribute of the instance in the repository."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:114
+#: ../../user/python/python-abaqus/extending.md:107
 msgid "The following script illustrates some of these methods:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:139
+#: ../../user/python/python-abaqus/extending.md:132
 msgid "The resulting output is"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:151
+#: ../../user/python/python-abaqus/extending.md:143
 msgid "RepositorySupport"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:153
+#: ../../user/python/python-abaqus/extending.md:145
 msgid "You can use the `RepositorySupport` class to derive a class that can contain one or more repositories. However, if you do not intend to create a repository as an attribute of your class, you should derive your class from `CommandRegister`, not from `RepositorySupport`."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:155
-msgid "Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in `repositories`_."
+#: ../../user/python/python-abaqus/extending.md:147
+msgid "Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in [repositories]."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:176
+#: ../../user/python/python-abaqus/extending.md:168
 msgid "The path to the object being created can be found by calling repr(self) in the constructor of your object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:179
+#: ../../user/python/python-abaqus/extending.md:170
 msgid "Registered dictionaries"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:181
+#: ../../user/python/python-abaqus/extending.md:172
 msgid "You use the `RegisteredDictionary` class to create a dictionary that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the dictionary change. The key of a registered dictionary must be either a String or an Int. The values associated with a key must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The `RegisteredDictionary` class has the same methods as a Python dictionary. In addition, the `RegisteredDictionary` class has a changeKey method that you use to rename a key in the dictionary. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:191
+#: ../../user/python/python-abaqus/extending.md:181
 msgid "Registered lists"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:193
+#: ../../user/python/python-abaqus/extending.md:183
 msgid "You use the `RegisteredList` class to create a list that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the list change. The values in the list must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The values must all be of the same type; for example, all integers or all strings. The `RegisteredList` has the same methods as a Python list. For example, appending `Item-1` to the list in the following statements causes the infrastructure to notify the GUI that the contents of the list have changed:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:202
+#: ../../user/python/python-abaqus/extending.md:191
 msgid "Registered tuples"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:204
+#: ../../user/python/python-abaqus/extending.md:193
 msgid "You use the `RegisteredTuple` class to create a tuple that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of any of the members of the tuple change. The members in the tuple must derive from the `CommandRegister` class, and the values in the tuple must all be of the same type; for example, all integers or all strings. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:222
+#: ../../user/python/python-abaqus/extending.md:210
 msgid "Session data"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:224
+#: ../../user/python/python-abaqus/extending.md:212
 msgid "The `customKernel` module also provides a session.customData object that allows you to store data on the session object and query it from the GUI. Data stored on the session object persist only for the current Abaqus/CAE session. When you close the Abaqus/CAE session, Abaqus does not store any of the data below `session.customData` on the model database. As a result, these data will be lost, and you will not be able to retrieve these data when you start a new session and open the model database. The session object is useful for maintaining data relevant to the current session only, such as the current model or output database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:226
+#: ../../user/python/python-abaqus/extending.md:214
 msgid "The same methods and classes that are available for `mdb.customData` are available for `session.customData`."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:229
+#: ../../user/python/python-abaqus/extending.md:216
 msgid "Saving application data in a model database"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:231
+#: ../../user/python/python-abaqus/extending.md:218
 msgid "f you have custom kernel scripts that store data in a model database, you may want to store information about your application in the same model database. When the model database is opened subsequently, you can access this information and decide how to proceed. For example, you can store version information and check if you need to upgrade your data in the model database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:233
+#: ../../user/python/python-abaqus/extending.md:220
 msgid "You use the appData object to store custom application-related data in the model database. The appData object is an instance of an AbaqusAppData class. You can add any attributes to the appData object that are necessary to track information about your custom application. The following example illustrates how you can store the version number of your application on the appData object:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:243
+#: ../../user/python/python-abaqus/extending.md:230
 msgid "You use the setAppData method to install an appData object as session.customData.appData and to associate it with your application name. For example:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:250
+#: ../../user/python/python-abaqus/extending.md:237
 msgid "You can call the `setAppData` method only once per application name, which prevents unauthorized changes to the method. However, the `setAppData` method may be called multiple times using different application names to allow more than one application to register with the same model database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:252
+#: ../../user/python/python-abaqus/extending.md:239
 msgid "When the user saves a model database, Abaqus copies the session.customData.appData object to the mdb.customData.appData object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:255
+#: ../../user/python/python-abaqus/extending.md:241
 msgid "Checking a model database when it is opened"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:257
+#: ../../user/python/python-abaqus/extending.md:243
 msgid "If you have custom kernel scripts that use custom data in a model database, you may want your application to verify some of the contents of a model database before it is fully opened. For example, you may want to check the database to see if you need to upgrade the data that is stored in it. In addition, you may need to initialize a new model database with your custom data. Two methods are provided for verifying and initializing a model database: `verifyMdb` and `initializeMdb`."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:259
+#: ../../user/python/python-abaqus/extending.md:245
 msgid "**Verifying a model database**"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:261
+#: ../../user/python/python-abaqus/extending.md:247
 msgid "The `verifyMdb` method is used to verify the partial contents of a model database when it is opened. You must write the verifyMdb method and install it using the `setVerifyMdb` method. You can call the `setVerifyMdb` method only once per application name, which prevents unauthorized changes to the method. However, the `setVerifyMdb` method may be called multiple times using different application names to allow more than one application to register with the same model database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:263
-msgid "When Abaqus opens a model database, its first action is to load only the mdb.`customData.appData` object and pass that object to each `verifyMdb` method registered in the session. If the model database has no appData, then Abaqus passes None to each `verifyMdb` method. Inside your `verifyMdb` method you can query the appData object to determine if you need to take any action, such as upgrading your data."
+#: ../../user/python/python-abaqus/extending.md:249
+msgid "When Abaqus opens a model database, its first action is to load only the mdb.\\`customData.appData\\` object and pass that object to each `verifyMdb` method registered in the session. If the model database has no appData, then Abaqus passes None to each `verifyMdb` method. Inside your `verifyMdb` method you can query the appData object to determine if you need to take any action, such as upgrading your data."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:265
+#: ../../user/python/python-abaqus/extending.md:251
 msgid "**Initializing a model database**"
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:267
+#: ../../user/python/python-abaqus/extending.md:253
 msgid "If a script creates a new model database, you can initialize the model database with your custom objects using the `initializeMdb` method. Abaqus calls each `initializeMdb` method registered with the session whenever a new model database is created. You must write the `initializeMdb` method and install it using the `setInitializeMdb` method. You can call the `setInitializeMdb` method only once per application name, which prevents unauthorized changes to the method. However, the `setInitializeMdb` method may be called multiple times using different application names to allow more than one application to register with the same model database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:269
+#: ../../user/python/python-abaqus/extending.md:255
 msgid "Kernel initialization scripts specified by the **startup** command line option are executed by Abaqus/CAE after it has finished its initialization process. By that time, a new model database or a database specified on the command line using the database option has already been opened. A utility method called `processInitialMdb` has been created to automatically process the initial model database for you. If the initial model database does not have any customData or does not have customData for your particular application, your `initializeMdb` method will be called. If the initial model database has customData for your application, your `verifyMdb` method will be called."
 msgstr ""
 
-#: ../../user/python/python-abaqus/extending.rst:271
+#: ../../user/python/python-abaqus/extending.md:257
 msgid "The following example shows how you can use the `verifyMdb`, `intializeMdb`, and `processInitialMdb` methods. You should execute the example using the startup command line option when you start Abaqus/CAE. For more information, see Abaqus/CAE execution."
 msgstr ""

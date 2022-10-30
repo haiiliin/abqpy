@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/calibration.rst:3
+#: ../../reference/mdb/model/calibration.md:1
 msgid "Calibration of Material"
 msgstr ""
 
-#: ../../reference/mdb/model/calibration.rst:5
+#: ../../reference/mdb/model/calibration.md:3
 msgid "The calibration commands are used for material calibration."
 msgstr ""
 
-#: ../../reference/mdb/model/calibration.rst:9
+#: ../../reference/mdb/model/calibration.md:5
 msgid "Create material calibrations"
 msgstr ""
 
@@ -536,6 +536,13 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:1
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:1
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:1
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:4
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:4
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:4
@@ -614,12 +621,8 @@ msgstr ""
 msgid ":class:`Calibration`"
 msgstr ""
 
-#: ../../reference/mdb/model/calibration.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/calibration.rst:23
-msgid "Calibration"
+#: ../../reference/mdb/model/calibration.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:1
@@ -742,10 +745,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:9
 msgid "Check `Calibration.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-calibrationpyc.htm?contextscope=all#simaker-calibration__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/calibration.rst:33
-msgid "Behavior"
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:1
@@ -1096,10 +1095,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:19
 msgid ":class:`Sequence[str]`"
-msgstr ""
-
-#: ../../reference/mdb/model/calibration.rst:43
-msgid "DataSet"
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:1
