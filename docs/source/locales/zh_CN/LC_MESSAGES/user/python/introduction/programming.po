@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:14+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/python/introduction/programming.rst:3
+#: ../../user/python/introduction/programming.md:1
 msgid "Programming techniques"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:5
+#: ../../user/python/introduction/programming.md:3
 msgid ""
 "The following sections introduce you to some of the techniques you will "
 "need to program with Python."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:8
+#: ../../user/python/introduction/programming.md:7
 msgid "Creating functions"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:10
+#: ../../user/python/introduction/programming.md:9
 msgid ""
 "You can define your own functions in Python. A function is like a "
 "subroutine in Fortran. You can pass arguments into a function, it "
@@ -40,15 +40,15 @@ msgid ""
 "origin. The def statement starts a function definition."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:18
+#: ../../user/python/introduction/programming.md:17
 msgid "You supply the arguments to a function in parentheses; for example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:25
+#: ../../user/python/introduction/programming.md:24
 msgid "You can assign the return value to a variable:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:33
+#: ../../user/python/introduction/programming.md:32
 msgid ""
 "One of the methods provided by Abaqus uses as many as 50 arguments. Some "
 "of the arguments are required by the method; others are optional, and "
@@ -60,64 +60,64 @@ msgid ""
 "calculateCylinderVolume:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:43
+#: ../../user/python/introduction/programming.md:41
 msgid "You can call the function with the following line:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:49
+#: ../../user/python/introduction/programming.md:47
 msgid ""
 "Here the arguments are called positional arguments because you are "
 "relying on their position in the function call to determine the variable "
 "to which they are assigned in the function—radius followed by height."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:51
+#: ../../user/python/introduction/programming.md:49
 msgid "The following is the same statement using keyword arguments:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:57
+#: ../../user/python/introduction/programming.md:55
 msgid ""
 "Keyword arguments make your code more readable. In addition, if you use "
 "keyword arguments, you can enter the arguments in any order."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:63
+#: ../../user/python/introduction/programming.md:61
 msgid ""
 "You can define default values for an argument in a function definition. "
 "For example, the following sets the default value of radius to 0.5 and "
 "the default value of height to 1.0:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:72
+#: ../../user/python/introduction/programming.md:70
 msgid ""
 "You can now call the function without providing all the arguments. The "
 "function assigns the default value to any missing arguments."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:78
+#: ../../user/python/introduction/programming.md:76
 msgid ""
 "It is good programming practice to use a documentation string that "
 "indicates the purpose of a function and the arguments expected. A "
 "documentation string appears at the top of a function and is delimited by"
-" triple quotes \"\"\". You can use the __doc__ method to obtain the "
-"documentation string from a function while running the Python "
+" triple quotes \"\"\". You can use the \\_\\_doc\\_\\_ method to obtain "
+"the documentation string from a function while running the Python "
 "interpreter. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:100
+#: ../../user/python/introduction/programming.md:98
 msgid ""
 "You can retrieve the documentation string for the methods in the Abaqus "
 "Scripting Interface. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:114
+#: ../../user/python/introduction/programming.md:112
 msgid ""
 "The documentation string shows the name of each argument name and whether"
 " the argument is required or optional. The string also shows a brief "
 "description of the method."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:116
+#: ../../user/python/introduction/programming.md:114
 msgid ""
 "You can use the sys module to retrieve command line arguments and pass "
 "them to a function. For example, the following script takes two "
@@ -125,37 +125,37 @@ msgid ""
 " from the point to the origin. The script uses the following modules:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:118
+#: ../../user/python/introduction/programming.md:116
 msgid "The `sys` module to retrieve the command line arguments."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:120
+#: ../../user/python/introduction/programming.md:118
 msgid "The `math` module to calculate the square root."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:155
+#: ../../user/python/introduction/programming.md:153
 msgid "To use this script, do the following:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:157
+#: ../../user/python/introduction/programming.md:155
 msgid ""
 "Copy the statements into a file called `distance.py` in your local "
 "directory."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:159
+#: ../../user/python/introduction/programming.md:157
 msgid "Type the following at the system prompt:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:165
+#: ../../user/python/introduction/programming.md:163
 msgid "Abaqus executes the script and prints the result."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:172
+#: ../../user/python/introduction/programming.md:171
 msgid "Using dictionaries"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:174
+#: ../../user/python/introduction/programming.md:173
 msgid ""
 "Dictionaries are a powerful tool in Python. A dictionary maps a variable "
 "to a set of data, much like a real dictionary maps a word to its "
@@ -165,7 +165,7 @@ msgid ""
 "specifies the position of the object in the list. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:182
+#: ../../user/python/introduction/programming.md:181
 msgid ""
 "In contrast, you access an object in a dictionary through its key, which "
 "can be a string, an integer, or any type of immutable Python object. "
@@ -176,15 +176,15 @@ msgid ""
 "example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:192
+#: ../../user/python/introduction/programming.md:191
 msgid "You can add dictionary keys at any time."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:199
+#: ../../user/python/introduction/programming.md:198
 msgid "You use the key to access an item in a dictionary."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:210
+#: ../../user/python/introduction/programming.md:209
 msgid ""
 "Dictionaries are not sequences, and you cannot apply sequence methods "
 "such as slicing and concatenating to dictionaries. Dictionaries have "
@@ -192,38 +192,38 @@ msgid ""
 "dictionary myPart."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:218
+#: ../../user/python/introduction/programming.md:217
 msgid "The `keys()` method returns a list of the dictionary keys."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:225
+#: ../../user/python/introduction/programming.md:224
 msgid ""
 "The `values()` method returns a list of the values of each entry in the "
 "dictionary."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:232
+#: ../../user/python/introduction/programming.md:231
 msgid ""
 "The `items()` method returns a list of tuples. Each tuple contains the "
 "key and its value."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:240
+#: ../../user/python/introduction/programming.md:239
 msgid ""
 "You use the `has_key()` method to see if a key exists. A return value of "
 "1 indicates the key exists in the dictionary. A return value of 0 "
 "indicates the key does not exist."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:247
+#: ../../user/python/introduction/programming.md:246
 msgid "Python's del statement allows you to delete a variable."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:253
+#: ../../user/python/introduction/programming.md:252
 msgid "You can also use del to delete an item from a dictionary."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:261
+#: ../../user/python/introduction/programming.md:260
 msgid ""
 "You can use the `keys()`, `values()`, or `items()` methods to loop "
 "through a dictionary. In the following example, `items()` returns two "
@@ -231,18 +231,18 @@ msgid ""
 "setting."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:275
+#: ../../user/python/introduction/programming.md:273
 msgid "Reading and writing from files"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:277
+#: ../../user/python/introduction/programming.md:275
 msgid ""
 "Many of the file commands are built-in Python commands. You do not have "
 "to import a module to use file commands. You use the open() function to "
 "create a file."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:284
+#: ../../user/python/introduction/programming.md:282
 msgid ""
 "The first line opens an existing file in the crash_test directory called "
 "fender.txt. The file is opened in read-only mode; myInputFile is a "
@@ -251,30 +251,30 @@ msgid ""
 " file is opened in read and write mode."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:286
+#: ../../user/python/introduction/programming.md:284
 msgid ""
 "Use the `__methods__` technique that we saw earlier to see the methods of"
 " a file object."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:296
+#: ../../user/python/introduction/programming.md:294
 msgid ""
 "The `readline()` method reads a single line from a file into a string, "
 "including the new line character that terminates the string. The "
 "`readlines()` method reads all the lines in a file into a list. The "
 "`write()` function writes a string to a file. Look at the standard Python"
-" documentation on the official Python website (https://www.python.org) "
+" documentation on the official Python website (<https://www.python.org>) "
 "for a description of functions that operate on files. File objects are "
 "described in the Built-in Types section of the Python Library Reference."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:298
+#: ../../user/python/introduction/programming.md:296
 msgid ""
 "The following example reads each line of a text file and changes the line"
 " to uppercase characters:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:317
+#: ../../user/python/introduction/programming.md:315
 msgid ""
 "The first line opens the input file; you do not need the `'r'` because "
 "read-only is the default access mode. The next line opens a new file to "
@@ -284,11 +284,11 @@ msgid ""
 "files."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:320
+#: ../../user/python/introduction/programming.md:319
 msgid "Error handling"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:322
+#: ../../user/python/introduction/programming.md:321
 msgid ""
 "When a script encounters unusual circumstances, Python allows you to "
 "modify the flow of control through the script and to take the necessary "
@@ -298,20 +298,20 @@ msgid ""
 "handling."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:324
+#: ../../user/python/introduction/programming.md:323
 msgid ""
 "Python provides exception handling through the try and except commands. "
 "For example, the following statement attempts to open an existing file "
 "for reading:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:330
+#: ../../user/python/introduction/programming.md:329
 msgid ""
 "If the file does not exist, the statement fails, and Python displays the "
 "following error message:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:339
+#: ../../user/python/introduction/programming.md:338
 msgid ""
 "If you use exception handling, you can catch the error, display a helpful"
 " message, and take the appropriate action. For example, a revised version"
@@ -320,7 +320,7 @@ msgid ""
 "exception and assigns the exception's value to the variable error."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:350
+#: ../../user/python/introduction/programming.md:349
 msgid ""
 "You can raise your own exceptions by providing the error type and the "
 "error message to the raise statement. The following example script raises"
@@ -328,24 +328,24 @@ msgid ""
 "encounters a problem."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:366
+#: ../../user/python/introduction/programming.md:365
 msgid ""
 "Exception handling is discussed in more detail in Error handling in the "
-":doc:`/references`."
+"{doc}`/references`."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:369
+#: ../../user/python/introduction/programming.md:369
 msgid "Functions and modules"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:371
+#: ../../user/python/introduction/programming.md:371
 msgid ""
 "When you start Python from a local window or from Abaqus/CAE, the Python "
 "interpreter is aware of a limited set of built-in functions. For example,"
 " try entering the following at the Python prompt:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:378
+#: ../../user/python/introduction/programming.md:378
 msgid ""
 "Python returns the number 8, indicating the length of the string "
 "`myName`. The `len()` function is a built-in function and is always "
@@ -354,22 +354,22 @@ msgid ""
 "prompt."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:380
+#: ../../user/python/introduction/programming.md:380
 msgid ""
 "`dir(__builtins__)` is typed as dir(underscore "
 "underscorebuiltinsunderscore underscore). You have seen this underscore "
 "underscore notation already in Sequences."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:382
+#: ../../user/python/introduction/programming.md:382
 msgid ""
 "In addition, you can look at the standard Python documentation on the "
-"official Python website (http:www.python.org) for a list of built-in "
+"official Python website (<http:www.python.org>) for a list of built-in "
 "functions. Built-in functions are described in the Built-in Functions "
 "section of the Python Library Reference."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:384
+#: ../../user/python/introduction/programming.md:384
 msgid ""
 "Many functions, however, are not built-in; for example, most of the math "
 "functions, such as `sin()` and `cos()`, are not available when you start "
@@ -380,13 +380,13 @@ msgid ""
 "uses the `argv` member of `sys` to print the command line arguments:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:392
+#: ../../user/python/introduction/programming.md:392
 msgid ""
 "You must first import the module to make its functions, names, and "
 "functionality available to the Python interpreter. Try the following:"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:402
+#: ../../user/python/introduction/programming.md:401
 msgid ""
 "The first line imports all of the names from the math module. The second "
 "line uses `pi`, a float number defined in the math module. The third line"
@@ -394,18 +394,18 @@ msgid ""
 "because you imported it from the math module."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:404
+#: ../../user/python/introduction/programming.md:403
 msgid "To import only the `sin()` function, you could have typed"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:411
+#: ../../user/python/introduction/programming.md:409
 msgid ""
 "You need to import a module only once during a session. Once a module is "
 "imported, its functions, methods, and attributes are always available to "
 "you. You cannot unload a module after you import it."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:413
+#: ../../user/python/introduction/programming.md:411
 msgid ""
 "To see a list of all the functions that come with the math module, look "
 "at the Miscellaneous Services section of the Python Library Reference. "
@@ -413,11 +413,11 @@ msgid ""
 "modules."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:415
+#: ../../user/python/introduction/programming.md:413
 msgid "Python provides a second approach to importing modules. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:425
+#: ../../user/python/introduction/programming.md:422
 msgid ""
 "The `import` approach shown above imports the module as a unit, and you "
 "must qualify the name of an object from the module. To access a function "
@@ -425,7 +425,7 @@ msgid ""
 " `math.`; the `math.` statement is said to qualify the `sin()` function."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:427
+#: ../../user/python/introduction/programming.md:424
 msgid ""
 "What is the difference between the two approaches to importing modules? "
 "If two modules contain an object with the same name, Python cannot "
@@ -435,11 +435,11 @@ msgid ""
 " modulename qualifies the name of the object and makes it unique."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:430
+#: ../../user/python/introduction/programming.md:426
 msgid "Writing your own modules"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:432
+#: ../../user/python/introduction/programming.md:428
 msgid ""
 "You can create your own module containing a set of Python functions. You "
 "can import this module and make use of its functions. The name of the "
@@ -447,39 +447,39 @@ msgid ""
 "functions without the `.py` file suffix."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:434
+#: ../../user/python/introduction/programming.md:430
 msgid ""
 "For example, you can create a module called myUtilities by copying a "
 "modified version of the function that calculates the distance from a "
 "point to the origin into a file called myUtilities.py."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:457
+#: ../../user/python/introduction/programming.md:453
 msgid ""
 "You must import the module to make use of the functions and constants "
 "that it contains."
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:465
+#: ../../user/python/introduction/programming.md:461
 msgid ""
 "You can use the `__doc__` method to obtain the documentation string from "
 "a module. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:472
+#: ../../user/python/introduction/programming.md:468
 msgid ""
 "A tool for finding bugs in your modules is provided with Abaqus. The tool"
 " is called pychecker. When you import a module, pychecker prints warnings"
 " for any problems it finds with the Python source code. For example,"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:482
+#: ../../user/python/introduction/programming.md:478
 msgid ""
 "For more information about `pychecker`, see the official Python website "
-"(https://www.python.org)"
+"(<https://www.python.org>)"
 msgstr ""
 
-#: ../../user/python/introduction/programming.rst:484
+#: ../../user/python/introduction/programming.md:480
 msgid ""
 "If you import a module during an interactive session using the command "
 "line interface and then make changes to the module, Python will not "
@@ -490,5 +490,58 @@ msgstr ""
 #~ "Exception handling is discussed in more"
 #~ " detail in Error handling in the "
 #~ ":doc:`references`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is good programming practice to "
+#~ "use a documentation string that "
+#~ "indicates the purpose of a function "
+#~ "and the arguments expected. A "
+#~ "documentation string appears at the top"
+#~ " of a function and is delimited "
+#~ "by triple quotes \"\"\". You can "
+#~ "use the __doc__ method to obtain "
+#~ "the documentation string from a function"
+#~ " while running the Python interpreter. "
+#~ "For example,"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `readline()` method reads a single"
+#~ " line from a file into a "
+#~ "string, including the new line character"
+#~ " that terminates the string. The "
+#~ "`readlines()` method reads all the lines"
+#~ " in a file into a list. The "
+#~ "`write()` function writes a string to"
+#~ " a file. Look at the standard "
+#~ "Python documentation on the official "
+#~ "Python website (https://www.python.org) for a"
+#~ " description of functions that operate "
+#~ "on files. File objects are described "
+#~ "in the Built-in Types section of"
+#~ " the Python Library Reference."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Exception handling is discussed in more"
+#~ " detail in Error handling in the "
+#~ ":doc:`/references`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In addition, you can look at the"
+#~ " standard Python documentation on the "
+#~ "official Python website (http:www.python.org) "
+#~ "for a list of built-in functions."
+#~ " Built-in functions are described in"
+#~ " the Built-in Functions section of"
+#~ " the Python Library Reference."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information about `pychecker`, "
+#~ "see the official Python website "
+#~ "(https://www.python.org)"
 #~ msgstr ""
 

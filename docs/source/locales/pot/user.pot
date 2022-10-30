@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,138 +16,138 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../user.rst:63
+#: ../../user.md:61
 msgid "Contents"
 msgstr ""
 
-#: ../../user.rst:3
+#: ../../user.md:1
 msgid "User's Guide"
 msgstr ""
 
-#: ../../user.rst:5
+#: ../../user.md:3
 msgid "The Abaqus Scripting User's Guide takes you through the process of understanding the Python programming language and the Abaqus Scripting Interface so that you can write your own programs. It also describes how you use the Abaqus Scripting Interface and the C++ application programming interface (API) to access an Abaqus output database."
 msgstr ""
 
-#: ../../user.rst:7
+#: ../../user.md:5
 msgid "This guide is a part of the Abaqus® documentation collection, which describes all the capabilities of the Abaqus finite element analysis technology used in SIMULIA® applications."
 msgstr ""
 
-#: ../../user.rst:9
+#: ../../user.md:7
 msgid "The guide consists of the following sections:"
 msgstr ""
 
-#: ../../user.rst:11
-msgid ":doc:`user/about`"
+#: ../../user.md:9
+msgid "{doc}`user/about`"
 msgstr ""
 
-#: ../../user.rst:13
-msgid ":doc:`user/about/interface`"
+#: ../../user.md:11
+msgid "{doc}`user/about/interface`"
 msgstr ""
 
-#: ../../user.rst:15
+#: ../../user.md:13
 msgid "This section provides an overview of the Abaqus Scripting Interface and describes how Abaqus/CAE executes scripts."
 msgstr ""
 
-#: ../../user.rst:17
-msgid ":doc:`user/about/examples`"
+#: ../../user.md:15
+msgid "{doc}`user/about/examples`"
 msgstr ""
 
-#: ../../user.rst:19
+#: ../../user.md:17
 msgid "Two simple examples are provided to introduce you to programming with the Abaqus Scripting Interface."
 msgstr ""
 
-#: ../../user.rst:21
-msgid ":doc:`user/about/examples/create-part`"
+#: ../../user.md:19
+msgid "{doc}`user/about/examples/create-part`"
 msgstr ""
 
-#: ../../user.rst:22
-msgid ":doc:`user/about/examples/read-output`"
+#: ../../user.md:20
+msgid "{doc}`user/about/examples/read-output`"
 msgstr ""
 
-#: ../../user.rst:24
-msgid ":doc:`user/python`"
+#: ../../user.md:22
+msgid "{doc}`user/python`"
 msgstr ""
 
-#: ../../user.rst:26
-msgid ":doc:`user/python/introduction`"
+#: ../../user.md:24
+msgid "{doc}`user/python/introduction`"
 msgstr ""
 
-#: ../../user.rst:28
+#: ../../user.md:26
 msgid "This section is intended as a basic introduction to the Python programming language and is not an exhaustive description of the language. There are several books on the market that describe Python, and these books are listed as references. Additional resources, such as Python-related sites, are also listed."
 msgstr ""
 
-#: ../../user.rst:30
-msgid ":doc:`user/python/python-abaqus`"
+#: ../../user.md:28
+msgid "{doc}`user/python/python-abaqus`"
 msgstr ""
 
-#: ../../user.rst:32
+#: ../../user.md:30
 msgid "This section describes the Abaqus Scripting Interface in more detail. The documentation style used in the command reference is explained, and important Abaqus Scripting Interface concepts such as data types and error handling are introduced."
 msgstr ""
 
-#: ../../user.rst:34
-msgid ":doc:`user/python/use-scripts`"
+#: ../../user.md:32
+msgid "{doc}`user/python/use-scripts`"
 msgstr ""
 
-#: ../../user.rst:36
+#: ../../user.md:34
 msgid "This section describes how you use the Abaqus Scripting Interface to control Abaqus/CAE models and analysis jobs. The Abaqus object model is introduced, along with techniques for specifying a region and reading messages from an analysis product (Abaqus/Standard or Abaqus/Explicit). You can skip this section of the guide if you are not working with Abaqus/CAE."
 msgstr ""
 
-#: ../../user.rst:38
-msgid ":doc:`user/environment`"
+#: ../../user.md:36
+msgid "{doc}`user/environment`"
 msgstr ""
 
-#: ../../user.rst:40
-msgid ":doc:`user/examples`"
+#: ../../user.md:38
+msgid "{doc}`user/examples`"
 msgstr ""
 
-#: ../../user.rst:42
-msgid "This section provides a set of example scripts that lead you through the cantilever beam tutorial found in `Creating and Analyzing a Simple Model in Abaqus/CAE <https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb>`_. The following section is a basic tutorial for the experienced Abaqus user. It leads you through the Abaqus/CAE modeling process by visiting each of the modules and showing you the basic steps to create and analyze a simple model.\"). Additional examples are provided that read from an output database, display a contour plot, and print a contour plot from each step of the analysis. The final example illustrates how you can read from a model database created by Abaqus/CAE, parameterize the model, submit a set of analysis jobs, and generate results from the resulting output databases."
+#: ../../user.md:40
+msgid "This section provides a set of example scripts that lead you through the cantilever beam tutorial found in [Creating and Analyzing a Simple Model in Abaqus/CAE](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb). The following section is a basic tutorial for the experienced Abaqus user. It leads you through the Abaqus/CAE modeling process by visiting each of the modules and showing you the basic steps to create and analyze a simple model.\"). Additional examples are provided that read from an output database, display a contour plot, and print a contour plot from each step of the analysis. The final example illustrates how you can read from a model database created by Abaqus/CAE, parameterize the model, submit a set of analysis jobs, and generate results from the resulting output databases."
 msgstr ""
 
-#: ../../user.rst:44
-msgid ":doc:`user/output`"
+#: ../../user.md:42
+msgid "{doc}`user/output`"
 msgstr ""
 
-#: ../../user.rst:46
-msgid ":doc:`user/output/python`"
+#: ../../user.md:44
+msgid "{doc}`user/output/python`"
 msgstr ""
 
-#: ../../user.rst:48
+#: ../../user.md:46
 msgid "When you execute an analysis job, Abaqus/Standard and Abaqus/Explicit store the results of the analysis in an output database (.odb file) that can be viewed in the Visualization module of Abaqus/CAE or in Abaqus/Viewer. This section describes how you use the Abaqus Scripting Interface to access the data stored in an output database."
 msgstr ""
 
-#: ../../user.rst:50
+#: ../../user.md:48
 msgid "You can do the following with the Abaqus Scripting Interface:"
 msgstr ""
 
-#: ../../user.rst:52
+#: ../../user.md:50
 msgid "Read model data describing the geometry of the parts and the assembly; for example, nodal coordinates, element connectivity, and element type and shape."
 msgstr ""
 
-#: ../../user.rst:53
+#: ../../user.md:51
 msgid "Read model data describing the sections and materials and where they are used in an assembly."
 msgstr ""
 
-#: ../../user.rst:54
+#: ../../user.md:52
 msgid "Read field output data from selected steps, frames, and regions."
 msgstr ""
 
-#: ../../user.rst:55
+#: ../../user.md:53
 msgid "Read history output data."
 msgstr ""
 
-#: ../../user.rst:56
+#: ../../user.md:54
 msgid "Operate on field output and history output data."
 msgstr ""
 
-#: ../../user.rst:57
+#: ../../user.md:55
 msgid "Write model data, field output data, and history data to an existing output database or to a new output database."
 msgstr ""
 
-#: ../../user.rst:59
-msgid ":doc:`user/output/cpp`"
+#: ../../user.md:57
+msgid "{doc}`user/output/cpp`"
 msgstr ""
 
-#: ../../user.rst:61
+#: ../../user.md:59
 msgid "This section describes how you use the C++ language to access an application programming interface (API) to the data stored in an output database. The functionality of the C++ API is identical to the Abaqus Scripting Interface API; however, the interactive nature of the Abaqus Scripting Interface and its integration with Abaqus/CAE makes it easier to use and program. The C++ interface is aimed at experienced C++ programmers who want to bypass the Abaqus Scripting Interface for performance considerations. The C++ API offers faster access to the output database, although this is a consideration only if you need to access large amounts of data."
 msgstr ""

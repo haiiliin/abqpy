@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/path.rst:3
+#: ../../reference/session/path.md:1
 msgid "Path and Probe"
 msgstr ""
 
-#: ../../reference/session/path.rst:5
+#: ../../reference/session/path.md:3
 msgid ""
 "Path commands are used to define a line through your model by specifying "
 "a series of points. You can view results along the path in the form of an"
@@ -29,7 +29,7 @@ msgid ""
 "results at selected locations."
 msgstr ""
 
-#: ../../reference/session/path.rst:9
+#: ../../reference/session/path.md:5
 msgid "Create paths in Session"
 msgstr ""
 
@@ -938,6 +938,18 @@ msgid ""
 "output database. For example::."
 msgstr ""
 
+#: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:1
+#: abaqus.PathAndProbe.FreeBody.FreeBody:1
+#: abaqus.PathAndProbe.NodeQuery.NodeQuery:1 abaqus.PathAndProbe.Path.Path:1
+#: abaqus.PathAndProbe.PathSession.PathSession:1
+#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1
+#: abaqus.PathAndProbe.ProbeReport.ProbeReport:1
+#: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:1
+#: abaqus.PathAndProbe.Spectrum.Spectrum:1 abaqus.PathAndProbe.Stream.Stream:1
+#: of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:4
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:4
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:4
@@ -1246,7 +1258,7 @@ msgstr ""
 msgid ":class:`Stream`"
 msgstr ""
 
-#: ../../reference/session/path.rst:20
+#: ../../reference/session/path.md:17
 msgid "Create free bodies in Session"
 msgstr ""
 
@@ -1388,12 +1400,8 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyfromnodeselementspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/session/path.rst:30
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/path.rst:33
-msgid "CurrentProbeValues"
+#: ../../reference/session/path.md:28
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:1 of
@@ -1424,10 +1432,6 @@ msgid ""
 "A tuple of Floats specifying the values obtained while probing. These "
 "values are updated constantly as the user moves the mouse over the object"
 " being probed."
-msgstr ""
-
-#: ../../reference/session/path.rst:43
-msgid "NodeQuery"
 msgstr ""
 
 #: abaqus.PathAndProbe.NodeQuery.NodeQuery:1 of
@@ -1466,10 +1470,6 @@ msgstr ""
 msgid ""
 "An Int specifying the ID of the most recently queried node. If the last "
 "query was unsuccessful, **nodeID** = −1."
-msgstr ""
-
-#: ../../reference/session/path.rst:53
-msgid "Path"
 msgstr ""
 
 #: abaqus.PathAndProbe.Path.Path:1 of
@@ -1512,10 +1512,6 @@ msgstr ""
 msgid ""
 "of three Floats, specifying the coordinates of the points used to define "
 "a coordinate system."
-msgstr ""
-
-#: ../../reference/session/path.rst:63
-msgid "ProbeOptions"
 msgstr ""
 
 #: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1 of
@@ -1930,10 +1926,6 @@ msgid ""
 "**probeObject** = XYPlot. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/path.rst:73
-msgid "ProbeReport"
-msgstr ""
-
 #: abaqus.PathAndProbe.ProbeReport.ProbeReport:1 of
 msgid ""
 "The ProbeReport object is used to store settings associated with tabular "
@@ -2017,10 +2009,6 @@ msgid ""
 " value is OFF."
 msgstr ""
 
-#: ../../reference/session/path.rst:83
-msgid "SelectedProbeValues"
-msgstr ""
-
 #: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:1 of
 msgid ""
 "The SelectedProbeValues object has no constructor. The "
@@ -2081,10 +2069,6 @@ msgstr ""
 msgid "A tuple of Floats specifying the last sequence of the **values** member."
 msgstr ""
 
-#: ../../reference/session/path.rst:93
-msgid "Spectrum"
-msgstr ""
-
 #: abaqus.PathAndProbe.Spectrum.Spectrum:1 of
 msgid "The Spectrum object defines a color spectrum for the contour display."
 msgstr ""
@@ -2100,10 +2084,6 @@ msgid ""
 "Check `Spectrum.__init__ on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all"
 "#simaker-spectrum__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/session/path.rst:103
-msgid "Stream"
 msgstr ""
 
 #: abaqus.PathAndProbe.Stream.Stream:1 of
@@ -2871,5 +2851,32 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "CurrentProbeValues"
+#~ msgstr ""
+
+#~ msgid "NodeQuery"
+#~ msgstr ""
+
+#~ msgid "Path"
+#~ msgstr ""
+
+#~ msgid "ProbeOptions"
+#~ msgstr ""
+
+#~ msgid "ProbeReport"
+#~ msgstr ""
+
+#~ msgid "SelectedProbeValues"
+#~ msgstr ""
+
+#~ msgid "Spectrum"
+#~ msgstr ""
+
+#~ msgid "Stream"
 #~ msgstr ""
 

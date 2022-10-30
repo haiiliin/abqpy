@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,26 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/animation.rst:3
+#: ../../reference/session/animation.md:1
 msgid "Animation Options"
 msgstr ""
 
-#: ../../reference/session/animation.rst:6
+#: ../../reference/session/animation.md:3
 msgid "Animation commands are used to create and control object-based and image-based animations in the viewport."
 msgstr ""
 
-#: ../../reference/session/animation.rst:10
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/animation.rst:13
-msgid "AnimationOptions"
+#: ../../reference/session/animation.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions:1
 #: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions:1
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:1
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1
 msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
@@ -63,6 +60,7 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:0
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:0
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:0
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -256,6 +254,7 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:0
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:0
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:0
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -282,6 +281,16 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the _OptionsBase object."
+msgstr ""
+
+#: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions:1
+#: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions:1
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:1
+#: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:1
+#: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1
+#: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:1
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions.setValues:13
@@ -451,10 +460,6 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/AnimationOptions.py:docstring of abaqus.Animation.AnimationOptions.AnimationOptions.setValues:77
 #: ../../docstring of abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor:1
 msgid "A String specifying the color used to plot **X - Y** time tracker symbols when **xyUseHighlightMethod** = False. When setting the color to 'Default' the system will take the color associated to each curve. The default value is \"Default\"."
-msgstr ""
-
-#: ../../reference/session/animation.rst:23
-msgid "AnimationSession"
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:1
@@ -1264,10 +1269,6 @@ msgstr ""
 msgid "A sequence specifying the canvas objects to capture. The default behavior is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session/animation.rst:33
-msgid "AVIOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions:1
 msgid "The AVIOptions object is used to store values and attributes to be used in generating AVI animation. The AVIOptions object has no constructor. Abaqus creates the **aviOptions** member when the animation module is imported."
 msgstr ""
@@ -1308,6 +1309,7 @@ msgstr ""
 msgid ":py:obj:`sizeDefinition <abaqus.Animation.AVIOptions.AVIOptions.sizeDefinition>`\\"
 msgstr ""
 
+#: ../../None:5:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid "A SymbolicConstant specifying how the width and height of the image are specified."
 msgstr ""
@@ -1316,6 +1318,7 @@ msgstr ""
 msgid ":py:obj:`imageSize <abaqus.Animation.AVIOptions.AVIOptions.imageSize>`\\"
 msgstr ""
 
+#: ../../None:5:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid "A pair of Ints specifying the width and height of the image in pixels when **sizeDefinition** = USER_DEFINED."
 msgstr ""
@@ -1380,10 +1383,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Animation/AVIOptions.py:docstring of abaqus.Animation.AVIOptions.AVIOptions.setValues:27
 msgid "A pair of Ints specifying the width and height of the image in pixels when **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, **maxHeight**). The default value is the screen size. Note:The values of the minimum width (*minWidth*) and height (*minHeight*) depend on the following:viewport font size,whether decorations are printed,decoration size, andscreen resolution.The minimum width and height are normally < 50 pixels. The values of the maximum width (*maxWidth*) and height (*maxHeight*) depend on the graphics capabilities of the system. The maximum width and height will be at least as large as the screen dimensions."
-msgstr ""
-
-#: ../../reference/session/animation.rst:43
-msgid "ImageAnimation"
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/ImageAnimation.py:docstring of abaqus.Animation.ImageAnimation.ImageAnimation:1
@@ -1463,10 +1462,6 @@ msgstr ""
 msgid "A sequence specifying the canvas objects to capture. The default is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session/animation.rst:53
-msgid "ImageAnimationOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1
 msgid "The ImageAnimationOptions object is used to store values and attributes associated with saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus creates the **imageAnimationOptions** member when the animation module is imported."
 msgstr ""
@@ -1539,10 +1534,6 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/ImageAnimationOptions.py:docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues:16
 #: ../../docstring of abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpBackground:1
 msgid "A Boolean specifying whether to capture viewport backgrounds. The default value is OFF."
-msgstr ""
-
-#: ../../reference/session/animation.rst:63
-msgid "Movie"
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/Movie.py:docstring of abaqus.Animation.Movie.Movie:1
@@ -1671,16 +1662,37 @@ msgstr ""
 msgid "If **startFrame**,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*timelineStartTime*,     or*timelineEndTime* are outside their respective valid range."
 msgstr ""
 
-#: ../../reference/session/animation.rst:73
-msgid "QuickTimeOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1
 msgid "The QuickTimeOptions object is used to store values and attributes to be used in generating QuickTime animation. The QuickTimeOptions object has no constructor. Abaqus creates the **quickTimeOptions** member when the animation module is imported."
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions:12
 msgid "Check `QuickTimeOptions on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`compressionMethod <abaqus.Animation.QuickTimeOptions.QuickTimeOptions.compressionMethod>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A SymbolicConstant specifying the compression method for the QuickTime format."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`sizeDefinition <abaqus.Animation.QuickTimeOptions.QuickTimeOptions.sizeDefinition>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`imageSize <abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues>`\\ \\(\\[compressionMethod\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:1
+#: ../../None:3:<autosummary>:1
+msgid "This method modifies the QuickTimeOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:7
@@ -1706,10 +1718,6 @@ msgstr ""
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:19
 #: ../../docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize:1
 msgid "A pair of Ints specifying the width and height of the image in pixels when **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, **maxHeight**). The default value is the screen size. Note: The values of the minimum width (*minWidth*) and height (*minHeight*) depend on the following:viewport font size,whether decorations are printed,decoration size, and screen resolution.The minimum width and height are normally < 50 pixels. The values of the maximum width (*maxWidth*) and height (*maxHeight*) depend on the graphics capabilities of the system. The maximum width and height will be at least as large as the screen dimensions."
-msgstr ""
-
-#: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:1
-msgid "This method modifies the QuickTimeOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/Animation/QuickTimeOptions.py:docstring of abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:4
