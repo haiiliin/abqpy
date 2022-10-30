@@ -34,11 +34,3 @@ section/connector
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Section
-    :members:
-```

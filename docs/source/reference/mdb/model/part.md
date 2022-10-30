@@ -21,11 +21,3 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
     .. autoclasstoc::
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Part
-    :members:
-```

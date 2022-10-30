@@ -27,11 +27,3 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Amplitude
-    :members:
-```

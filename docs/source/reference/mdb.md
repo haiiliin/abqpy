@@ -24,11 +24,3 @@ mdb/edit_mesh
 
    .. autoclasstoc::
 ```
-
-### Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Mdb
-    :members:
-```

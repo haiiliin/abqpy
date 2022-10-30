@@ -13,11 +13,3 @@ Field report commands are used to write a field output report and free body comp
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.FieldReport
-    :members:
-```

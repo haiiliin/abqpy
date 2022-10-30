@@ -13,11 +13,3 @@ A Field object stores the non-propagating data of a field as well as a number of
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Field
-    :members:
-```

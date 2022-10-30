@@ -8,11 +8,3 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
     :noindex:
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.InputFileParser
-    :members:
-```

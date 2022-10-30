@@ -13,11 +13,3 @@ A connector describes the relative motions between two points. A connector also 
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Connector
-    :members:
-```

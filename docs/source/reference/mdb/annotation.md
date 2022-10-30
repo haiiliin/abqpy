@@ -16,11 +16,3 @@ Annotation commands are used to create, position, and modify viewport annotation
 .. automethod:: abaqus.Annotation.AnimationUserData.AnimationUserData.XYData
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Annotation
-    :members:
-```

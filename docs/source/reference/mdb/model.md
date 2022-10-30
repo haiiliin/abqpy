@@ -40,11 +40,3 @@ model/step
 
     .. autoclasstoc::
 ```
-
-### Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Model
-    :members:
-```

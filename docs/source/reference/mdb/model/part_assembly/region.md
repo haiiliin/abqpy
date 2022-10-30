@@ -50,11 +50,3 @@ Assembly sets contain regions of an assembly and are used by many commands that 
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Region
-    :members:
-```

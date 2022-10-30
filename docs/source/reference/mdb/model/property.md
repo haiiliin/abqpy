@@ -13,11 +13,3 @@ The Property commands are used to create and manage reinforcements and to assign
 
     .. autoclasstoc::
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Property
-    :members:
-```

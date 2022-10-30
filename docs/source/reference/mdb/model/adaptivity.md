@@ -37,11 +37,3 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Adaptivity
-    :members:
-```

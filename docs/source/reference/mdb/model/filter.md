@@ -26,11 +26,3 @@ Filter commands are used to create real-time filters of output request data.
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Filter
-    :members:
-```

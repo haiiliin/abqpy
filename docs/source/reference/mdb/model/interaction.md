@@ -49,11 +49,3 @@ A specific type of interaction object and a specific type of interaction state o
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Interaction
-    :members:
-```

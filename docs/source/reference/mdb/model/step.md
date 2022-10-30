@@ -19,11 +19,3 @@ step/step_miscellaneous
 
     .. autoclasstoc::
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Step
-    :members:
-```

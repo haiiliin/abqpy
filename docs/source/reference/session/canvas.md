@@ -15,11 +15,3 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Annotation
-    :members:
-```

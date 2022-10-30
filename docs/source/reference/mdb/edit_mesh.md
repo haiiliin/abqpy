@@ -25,11 +25,3 @@ Edit mesh commands are used to edit an orphan mesh part or part instance or an A
 
     .. autoclasstoc::
 ```
-
-### Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.EditMesh
-    :members:
-```

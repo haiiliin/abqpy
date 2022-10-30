@@ -30,11 +30,3 @@ session/xy
 
     .. autoclasstoc::
 ```
-
-### Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Session
-    :members:
-```

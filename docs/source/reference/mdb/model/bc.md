@@ -13,11 +13,3 @@ A specific type of boundary condition object and a specific type of boundary con
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.BoundaryCondition
-    :members:
-```

@@ -16,11 +16,3 @@ The Job object is the abstract base type for other Job objects. The Job object h
 .. automethod:: abaqus.Job.JobSession.JobSession.Queue
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Job
-    :members:
-```

@@ -13,11 +13,3 @@ The calibration commands are used for material calibration.
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Calibration
-    :members:
-```

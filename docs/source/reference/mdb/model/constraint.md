@@ -13,11 +13,3 @@ The Constraint commands define constraints between regions of the model.
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Constraint
-    :members:
-```

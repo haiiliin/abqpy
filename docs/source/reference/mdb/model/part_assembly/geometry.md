@@ -1,11 +1,3 @@
 # Basic Geometry
 
 The basic geometry commands create geometric entities that are referenced by Part objects, Instance objects, and GeometrySet objects.
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.BasicGeometry
-    :members:
-```

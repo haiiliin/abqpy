@@ -13,11 +13,3 @@ Utility commands are used to do the following:
 - Upgrade Abaqus kernel or GUI scripts from one release of Abaqus to a later release.
 
 View commands are used to transform three-dimensional views stored in Session and Viewport objects to the screen. (See Session object and Viewport object.)
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.UtilityAndView
-    :members:
-```

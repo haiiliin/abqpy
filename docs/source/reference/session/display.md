@@ -13,11 +13,3 @@ Display group commands are used to select a subset of the entities displayed in 
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.DisplayGroup
-    :members:
-```

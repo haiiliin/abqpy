@@ -24,11 +24,3 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Optimization
-    :members:
-```

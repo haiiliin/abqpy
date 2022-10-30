@@ -38,11 +38,3 @@ The Material commands are used to define the materials in a model.
     .. autoclasstoc::
 
 ```
-
-## Other Classes
-
-```{eval-rst}
-
-.. autopackage:: abaqus.Material
-    :members:
-```
