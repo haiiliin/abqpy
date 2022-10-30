@@ -18,7 +18,7 @@ View commands are used to transform three-dimensional views stored in Session an
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
         :members:

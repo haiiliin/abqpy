@@ -8,7 +8,7 @@ Each command also creates a Datum object in the corresponding datum repository. 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Datum.Datum.Datum
         :members:

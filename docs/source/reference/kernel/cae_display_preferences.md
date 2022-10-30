@@ -6,7 +6,7 @@ Display preferences commands are used to edit the Abaqus/CAE preferences file, `
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs
         :members:
