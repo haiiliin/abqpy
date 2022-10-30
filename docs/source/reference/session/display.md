@@ -18,7 +18,7 @@ Display group commands are used to select a subset of the entities displayed in 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
         :members:
