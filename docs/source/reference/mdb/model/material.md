@@ -43,7 +43,7 @@ The Material commands are used to define the materials in a model.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Material.Density.Density.Density
         :members:

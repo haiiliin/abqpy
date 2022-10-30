@@ -31,7 +31,7 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
         :members:

@@ -35,7 +35,7 @@ session/xy
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Session.SessionBase.SessionBase
         :members:

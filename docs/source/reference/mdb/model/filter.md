@@ -31,7 +31,7 @@ Filter commands are used to create real-time filters of output request data.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Filter.Filter.Filter
         :members:
