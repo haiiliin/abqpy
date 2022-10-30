@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/display.rst:3
+#: ../../reference/session/display.md:1
 msgid "Display Group"
 msgstr ""
 
-#: ../../reference/session/display.rst:5
+#: ../../reference/session/display.md:3
 msgid "Display group commands are used to select a subset of the entities displayed in the viewport."
 msgstr ""
 
-#: ../../reference/session/display.rst:9
+#: ../../reference/session/display.md:5
 msgid "Create display groups"
 msgstr ""
 
@@ -66,6 +66,7 @@ msgstr ""
 #: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSets.py:docstring of abaqus.DisplayGroup.LeafFromSets.LeafFromSets:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets:0
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -641,6 +642,7 @@ msgstr ""
 #: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSets.py:docstring of abaqus.DisplayGroup.LeafFromSets.LeafFromSets:0
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets:0
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -765,6 +767,47 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1
 msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
+msgstr ""
+
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroup.py:docstring of abaqus.DisplayGroup.DisplayGroup.DisplayGroup:1
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroupArray.py:docstring of abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray:1
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstance.py:docstring of abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance:1
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py:docstring of abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository:1
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
+#: ../../../../src/abaqus/DisplayGroup/Leaf.py:docstring of abaqus.DisplayGroup.Leaf.Leaf:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromDatums.py:docstring of abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromDisplayGroup.py:docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromElementSets.py:docstring of abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromElementVarRange.py:docstring of abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromGeometry.py:docstring of abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromInstance.py:docstring of abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromInstanceElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromMeshElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromMeshNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromModelElemLabels.py:docstring of abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromNodeSets.py:docstring of abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromNodeVarRange.py:docstring of abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbEdgePick.py:docstring of abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementMaterials.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementPick.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementPlies.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementSections.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementTypes.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromOdbNodePick.py:docstring of abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromPartElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromPartInstance.py:docstring of abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromPartNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSets.py:docstring of abaqus.DisplayGroup.LeafFromSets.LeafFromSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroup.py:docstring of abaqus.DisplayGroup.DisplayGroup.DisplayGroup.__init__:4
@@ -960,12 +1003,8 @@ msgstr ""
 msgid ":class:`DisplayGroup`"
 msgstr ""
 
-#: ../../reference/session/display.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/display.rst:23
-msgid "DisplayGroup"
+#: ../../reference/session/display.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroup.py:docstring of abaqus.DisplayGroup.DisplayGroup.DisplayGroup:1
@@ -1181,14 +1220,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items with which to replace the current display group contents."
 msgstr ""
 
-#: ../../reference/session/display.rst:33
-msgid "DisplayGroupArray"
-msgstr ""
-
-#: ../../reference/session/display.rst:43
-msgid "DisplayGroupInstance"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstance.py:docstring of abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance:1
 msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` object stores the IDs of the entities displayed in a viewport. The DisplayGroupInstance object has no constructor. When you set a display group to be plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display group and places it in the DisplayGroupInstanceRepository object."
 msgstr ""
@@ -1273,10 +1304,6 @@ msgstr ""
 msgid "Check `DisplayGroupInstance.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaygroupinstancepyc.htm?contextscope=all#simaker-displaygroupinstancesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/session/display.rst:53
-msgid "DisplayGroupInstanceRepository"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py:docstring of abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository:1
 msgid "The DisplayGroupInstanceRepository object stores DisplayGroupInstance objects. In addition to all the standard Python repository methods, the DisplayGroupInstance repository defines additional methods as described below."
 msgstr ""
@@ -1300,10 +1327,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py:docstring of abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository.syncOptions:10
 msgid "A Boolean specifying whether to synchronize the display options on all the DisplayGroupInstance objects stored in the DisplayGroupInstanceRepository for which **lockOptions** is OFF. The default value of **updateInstances** is ON."
-msgstr ""
-
-#: ../../reference/session/display.rst:63
-msgid "Leaf"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/Leaf.py:docstring of abaqus.DisplayGroup.Leaf.Leaf:1
@@ -1372,10 +1395,6 @@ msgstr ""
 msgid ":class:`Leaf`"
 msgstr ""
 
-#: ../../reference/session/display.rst:73
-msgid "LeafFromDatums"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDatums.py:docstring of abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums:1
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDisplayGroup.py:docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup:1
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels:1
@@ -1407,6 +1426,7 @@ msgstr ""
 #: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint:1
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSets.py:docstring of abaqus.DisplayGroup.LeafFromSets.LeafFromSets:1
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets:1
+#: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange:1
 msgid "Bases: :py:class:`~abaqus.DisplayGroup.Leaf.Leaf`"
 msgstr ""
 
@@ -1455,10 +1475,6 @@ msgstr ""
 msgid ":class:`LeafFromDatums`"
 msgstr ""
 
-#: ../../reference/session/display.rst:83
-msgid "LeafFromDisplayGroup"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDisplayGroup.py:docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup:1
 msgid "The LeafFromDisplayGroup object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands.The LeafFromDisplayGroup object is derived from the Leaf object."
 msgstr ""
@@ -1495,10 +1511,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromDisplayGroup.py:docstring of abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__:15
 msgid ":class:`LeafFromDisplayGroup`"
-msgstr ""
-
-#: ../../reference/session/display.rst:93
-msgid "LeafFromElementLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels:1
@@ -1544,10 +1556,6 @@ msgstr ""
 msgid ":class:`LeafFromElementLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:103
-msgid "LeafFromElementSets"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementSets.py:docstring of abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets:1
 msgid "The LeafFromElementSets object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromElementSets object is derived from the Leaf object."
 msgstr ""
@@ -1584,10 +1592,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementSets.py:docstring of abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.__init__:16
 msgid ":class:`LeafFromElementSets`"
-msgstr ""
-
-#: ../../reference/session/display.rst:113
-msgid "LeafFromElementVarRange"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromElementVarRange.py:docstring of abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange:1
@@ -1674,10 +1678,6 @@ msgstr ""
 msgid ":class:`LeafFromElementVarRange`"
 msgstr ""
 
-#: ../../reference/session/display.rst:123
-msgid "LeafFromGeometry"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromGeometry.py:docstring of abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry:1
 msgid "The LeafFromGeometry object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromGeometry object is derived from the Leaf object."
 msgstr ""
@@ -1735,10 +1735,6 @@ msgstr ""
 msgid "If at least one of the sequences is not passed to this method."
 msgstr ""
 
-#: ../../reference/session/display.rst:133
-msgid "LeafFromInstance"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromInstance.py:docstring of abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance:1
 msgid "The LeafFromInstance object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromInstance object is derived from the Leaf object."
 msgstr ""
@@ -1778,10 +1774,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromInstance.py:docstring of abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance.__init__:17
 msgid "If an invalid argument is passed to this method."
-msgstr ""
-
-#: ../../reference/session/display.rst:143
-msgid "LeafFromInstanceElementLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromInstanceElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels:1
@@ -1824,10 +1816,6 @@ msgstr ""
 msgid ":class:`LeafFromInstanceElementLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:153
-msgid "LeafFromInstanceNodeLabels"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels:1
 msgid "The LeafFromInstanceNodeLabels object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromInstanceNodeLabels object is derived from the Leaf object."
 msgstr ""
@@ -1866,10 +1854,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromInstanceNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels.__init__:17
 msgid ":class:`LeafFromInstanceNodeLabels`"
-msgstr ""
-
-#: ../../reference/session/display.rst:163
-msgid "LeafFromMeshElementLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromMeshElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels:1
@@ -1912,10 +1896,6 @@ msgstr ""
 msgid ":class:`LeafFromMeshElementLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:173
-msgid "LeafFromMeshNodeLabels"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromMeshNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels:1
 msgid "The LeafFromMeshNodeLabels object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromMeshNodeLabels object is derived from the Leaf object."
 msgstr ""
@@ -1956,10 +1936,6 @@ msgstr ""
 msgid ":class:`LeafFromMeshNodeLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:183
-msgid "LeafFromMeshSurfaceSets"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets:1
 msgid "The LeafFromMeshSurfaceSets object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromMeshSurfaceSets object is derived from the Leaf object."
 msgstr ""
@@ -1996,10 +1972,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromMeshSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets.__init__:15
 msgid ":class:`LeafFromMeshSurfaceSets`"
-msgstr ""
-
-#: ../../reference/session/display.rst:193
-msgid "LeafFromModelElemLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromModelElemLabels.py:docstring of abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels:1
@@ -2040,10 +2012,6 @@ msgstr ""
 msgid ":class:`LeafFromModelElemLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:203
-msgid "LeafFromModelNodeLabels"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels:1
 msgid "The LeafFromModelNodeLabels object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromModelNodeLabels object is derived from the Leaf object."
 msgstr ""
@@ -2080,10 +2048,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromModelNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.__init__:22
 msgid ":class:`LeafFromModelNodeLabels`"
-msgstr ""
-
-#: ../../reference/session/display.rst:213
-msgid "LeafFromNodeLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels:1
@@ -2129,10 +2093,6 @@ msgstr ""
 msgid ":class:`LeafFromNodeLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:223
-msgid "LeafFromNodeSets"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromNodeSets.py:docstring of abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets:1
 msgid "The LeafFromNodeSets object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromNodeSets object is derived from the Leaf object."
 msgstr ""
@@ -2169,10 +2129,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromNodeSets.py:docstring of abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.__init__:15
 msgid ":class:`LeafFromNodeSets`"
-msgstr ""
-
-#: ../../reference/session/display.rst:233
-msgid "LeafFromNodeVarRange"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromNodeVarRange.py:docstring of abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange:1
@@ -2220,10 +2176,6 @@ msgstr ""
 msgid ":class:`LeafFromNodeVarRange`"
 msgstr ""
 
-#: ../../reference/session/display.rst:243
-msgid "LeafFromOdbEdgePick"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbEdgePick.py:docstring of abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick:1
 msgid "The LeafFromOdbEdgePick object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromOdbEdgePick object is derived from the Leaf object."
 msgstr ""
@@ -2266,10 +2218,6 @@ msgstr ""
 msgid ":class:`LeafFromOdbEdgePick`"
 msgstr ""
 
-#: ../../reference/session/display.rst:253
-msgid "LeafFromOdbElementLayups"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups:1
 msgid "The LeafFromOdbElementLayups object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromOdbElementLayups object is derived from the Leaf object."
 msgstr ""
@@ -2308,10 +2256,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementLayups.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups.__init__:16
 msgid ":class:`LeafFromOdbElementLayups`"
-msgstr ""
-
-#: ../../reference/session/display.rst:263
-msgid "LeafFromOdbElementMaterials"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementMaterials.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials:1
@@ -2354,10 +2298,6 @@ msgstr ""
 msgid ":class:`LeafFromOdbElementMaterials`"
 msgstr ""
 
-#: ../../reference/session/display.rst:273
-msgid "LeafFromOdbElementPick"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementPick.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick:1
 msgid "The LeafFromOdbElementPick object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromOdbElementPick object is derived from the Leaf object."
 msgstr ""
@@ -2392,10 +2332,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementPick.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick.__init__:18
 msgid ":class:`LeafFromOdbElementPick`"
-msgstr ""
-
-#: ../../reference/session/display.rst:283
-msgid "LeafFromOdbElementPlies"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementPlies.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies:1
@@ -2438,10 +2374,6 @@ msgstr ""
 msgid ":class:`LeafFromOdbElementPlies`"
 msgstr ""
 
-#: ../../reference/session/display.rst:293
-msgid "LeafFromOdbElementSections"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementSections.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections:1
 msgid "The LeafFromOdbElementSections object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromOdbElementSections object is derived from the Leaf object."
 msgstr ""
@@ -2480,10 +2412,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementSections.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections.__init__:16
 msgid ":class:`LeafFromOdbElementSections`"
-msgstr ""
-
-#: ../../reference/session/display.rst:303
-msgid "LeafFromOdbElementTypes"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbElementTypes.py:docstring of abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes:1
@@ -2526,10 +2454,6 @@ msgstr ""
 msgid ":class:`LeafFromOdbElementTypes`"
 msgstr ""
 
-#: ../../reference/session/display.rst:313
-msgid "LeafFromOdbNodePick"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbNodePick.py:docstring of abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick:1
 msgid "The LeafFromOdbNodePick object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromOdbNodePick object is derived from the Leaf object."
 msgstr ""
@@ -2564,10 +2488,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromOdbNodePick.py:docstring of abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick.__init__:18
 msgid ":class:`LeafFromOdbNodePick`"
-msgstr ""
-
-#: ../../reference/session/display.rst:323
-msgid "LeafFromPartElementLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromPartElementLabels.py:docstring of abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels:1
@@ -2615,10 +2535,6 @@ msgstr ""
 msgid ":class:`LeafFromPartElementLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:333
-msgid "LeafFromPartInstance"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromPartInstance.py:docstring of abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance:1
 msgid "The LeafFromPartInstance object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromPartInstance object is derived from the Leaf object."
 msgstr ""
@@ -2655,10 +2571,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromPartInstance.py:docstring of abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.__init__:15
 msgid ":class:`LeafFromPartInstance`"
-msgstr ""
-
-#: ../../reference/session/display.rst:343
-msgid "LeafFromPartNodeLabels"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromPartNodeLabels.py:docstring of abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels:1
@@ -2701,10 +2613,6 @@ msgstr ""
 msgid ":class:`LeafFromPartNodeLabels`"
 msgstr ""
 
-#: ../../reference/session/display.rst:353
-msgid "LeafFromReferencePoint"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint:1
 msgid "The LeafFromReferencePoint object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromReferencePoint object is derived from the Leaf object."
 msgstr ""
@@ -2740,10 +2648,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromReferencePoint.py:docstring of abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint.__init__:15
 msgid ":class:`LeafFromReferencePoint`"
-msgstr ""
-
-#: ../../reference/session/display.rst:363
-msgid "LeafFromSets"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSets.py:docstring of abaqus.DisplayGroup.LeafFromSets.LeafFromSets:1
@@ -2783,10 +2687,6 @@ msgstr ""
 msgid ":class:`LeafFromSets`"
 msgstr ""
 
-#: ../../reference/session/display.rst:373
-msgid "LeafFromSurfaceSets"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceSets.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets:1
 msgid "The LeafFromSurfaceSets object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromSurfaceSets object is derived from the Leaf object."
 msgstr ""
@@ -2820,10 +2720,6 @@ msgstr ""
 msgid ":class:`LeafFromSurfaceSets`"
 msgstr ""
 
-#: ../../reference/session/display.rst:383
-msgid "LeafFromSurfaceVarRange"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange:1
 msgid "The LeafFromSurfaceVarRange object can be used whenever a Leaf object is expected as an argument. Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which are then used as arguments to DisplayGroup commands. The LeafFromSurfaceVarRange object is derived from the Leaf object."
 msgstr ""
@@ -2832,7 +2728,28 @@ msgstr ""
 msgid "Check `LeafFromSurfaceVarRange on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromsurfacevarrangepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`leafType <abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.leafType>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`minimumRange <abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.minimumRange>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`maximumRange <abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.maximumRange>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`insideRange <abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.insideRange>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.__init__>`\\ \\(\\[minimumRange\\, maximumRange\\, ...\\]\\)"
+msgstr ""
+
 #: ../../../../src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py:docstring of abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.__init__:1
+#: ../../None:3:<autosummary>:1
 msgid "This method creates a Leaf object from surfaces with values lying in a variable range."
 msgstr ""
 
