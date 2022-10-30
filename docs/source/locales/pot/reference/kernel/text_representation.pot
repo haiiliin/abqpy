@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/kernel/text_representation.rst:3
+#: ../../reference/kernel/text_representation.md:1
 msgid "Text Representation"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:5
+#: ../../reference/kernel/text_representation.md:3
 msgid "Text representation commands are used to determine how objects are printed on the Python command line."
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/text_representation.rst:11
-msgid "redentABQ"
+#: ../../reference/kernel/text_representation.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/redentABQ.py:docstring of abaqus.TextRepresentation.redentABQ.indentFile:1
@@ -89,10 +85,6 @@ msgstr ""
 msgid ":class:`Boolean`"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:19
-msgid "textRepr"
-msgstr ""
-
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getIndentedRepr:1
 msgid "This method returns a String with each level of parentheses indented."
 msgstr ""
@@ -121,7 +113,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getIndentedRepr:21
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:21
-msgid "An Int specifying the number of significant digits for Floats in the output. Possible values are 0 << **significantDigits** ≤ 15. The default value is 6."
+msgid "An Int specifying the number of significant digits for Floats in the output. Possible values are 0 < **significantDigits** ≤ 15. The default value is 6."
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getIndentedRepr:24
@@ -207,10 +199,6 @@ msgstr ""
 msgid "Check `textRepr.printTypes on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprinttypespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:27
-msgid "TextReprOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
@@ -240,6 +228,10 @@ msgstr ""
 msgid "This method modifies the TextReprOptions object."
 msgstr ""
 
+#: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:4
 msgid "Check `TextReprOptions.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all#simaker-textreproptionssetvaluespyc>`__."
 msgstr ""
@@ -257,5 +249,5 @@ msgid "A String specifying the string to be returned when the maximum depth of r
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:22
-msgid "An Int or the SymbolicConstant UNLIMITED specifying the maximum number of elements of a sequence to return. Possible values are UNLIMITED or Ints >> 0. The initial value is 100. After the maximum number of elements, the remainder are indicated by the string '...'."
+msgid "An Int or the SymbolicConstant UNLIMITED specifying the maximum number of elements of a sequence to return. Possible values are UNLIMITED or Ints > 0. The initial value is 100. After the maximum number of elements, the remainder are indicated by the string '...'."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/mesh.rst:3
+#: ../../reference/mdb/model/mesh.md:1
 msgid "Mesh"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:5
+#: ../../reference/mdb/model/mesh.md:3
 msgid "Mesh commands are used to mesh part instances and regions. Mesh commands are also used to assign element sizes, element types, and mesh control parameters."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:11
-msgid "Mesh features for Assembly"
+#: ../../reference/mdb/model/mesh.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly:1
@@ -1541,6 +1537,22 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:1
+#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly:1
+#: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge:1
+#: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:1
+#: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement:1
+#: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray:1
+#: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace:1
+#: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:1
+#: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode:1
+#: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray:1
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart:1
+#: ../../../../src/abaqus/Mesh/MeshStats.py:docstring of abaqus.Mesh.MeshStats.MeshStats:1
+#: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection:1
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.assignStackDirection:1
 msgid "This method assigns a stack direction to geometric cells. The stack direction will be used to orient the elements during mesh generation."
@@ -2568,7 +2580,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:14
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:14
-msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE.Note:You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
+msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:21
@@ -2605,7 +2617,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:40
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:40
-msgid "A Float specifying the desired largest element size.Note:You must specify either the **ratio** and **number** or **minSize** and **maxSize** pair of arguments."
+msgid "A Float specifying the desired largest element size. Note: You must specify either the **ratio** and **number** or **minSize** and **maxSize** pair of arguments."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:43
@@ -2708,7 +2720,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:11
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11
-msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 << **firstElemSize** ≤ 106."
+msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 106."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:14
@@ -2741,7 +2753,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType:11
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setElementType:11
-msgid "A sequence of ElemType objects, one for each element shape applicable to the regions.Note:If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order will be deduced from the order of other valid ElemType objects within the same setElementType command. If no valid ElemType objects can be found, the order will remain unchanged."
+msgid "A sequence of ElemType objects, one for each element shape applicable to the regions. Note: If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order will be deduced from the order of other valid ElemType objects within the same setElementType command. If no valid ElemType objects can be found, the order will remain unchanged."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType:17
@@ -3036,10 +3048,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:68
 msgid ":class:`Dict[str`, :class:`int | float | MeshElement]`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:21
-msgid "ElemType"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:1
@@ -3440,10 +3448,6 @@ msgstr ""
 msgid ":class:`ElemType`"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:31
-msgid "MeshEdge"
-msgstr ""
-
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge:1
 msgid "The MeshEdge object refers to an element edge. It has no constructor or members. A MeshEdge object can be accessed via a MeshEdgeArray or a repository on a part or part instance."
 msgstr ""
@@ -3579,10 +3583,6 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask:12
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:11
 msgid ":class:`MeshNodeArray`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:41
-msgid "MeshEdgeArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:1
@@ -3971,10 +3971,6 @@ msgstr ""
 msgid "An exception occurs if the resulting sequence is empty."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:51
-msgid "MeshElement"
-msgstr ""
-
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement:1
 msgid "The MeshElement object refers to an element of a native mesh or an orphan mesh. A MeshElement object can be accessed via a part or part instance using an index that refers to the internal numbering of the element repository. The index does not refer to the element label."
 msgstr ""
@@ -4144,10 +4140,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.setValues:7
 msgid "An Int specifying the element label. This member may only be edited if the element belongs to an orphan mesh part. The specified label must be non-negative and must not be in use by any other element of the same part."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:61
-msgid "MeshElementArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray:1
@@ -4370,10 +4362,6 @@ msgstr ""
 msgid "A sequence of Ints specifying the labels."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:71
-msgid "MesherOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions:1
 msgid "The MesherOptions object controls the default settings that Abaqus uses for all meshing methods. The MesherOptions object has no constructor. Abaqus creates the **MesherOptions** member when a session is started. MesherOptions commands are intended for use at the beginning of scripts and in the abaqus_v6.env file only; they should not be used during an Abaqus/CAE session."
 msgstr ""
@@ -4413,10 +4401,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:22
 msgid "A Boolean specifying whether Abaqus/CAE should attempt to minimize the mesh transition when it moves from a coarse mesh to a fine mesh. The default value is ON."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:81
-msgid "MeshFace"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace:1
@@ -4633,10 +4617,6 @@ msgstr ""
 msgid ":class:`Sequence[float]`"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:91
-msgid "MeshFaceArray"
-msgstr ""
-
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:1
 msgid "Bases: :py:class:`~typing.List`\\ [:py:class:`~abaqus.Mesh.MeshFace.MeshFace`]"
 msgstr ""
@@ -4689,10 +4669,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask:5
 msgid "Check `MeshFaceArray.getSequenceFromMask on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacearraypyc.htm?contextscope=all#simaker-meshfacearraygetsequencefrommaskpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:101
-msgid "MeshNode"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode:1
@@ -4825,10 +4801,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.setValues:11
 msgid ":obj:`None`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:111
-msgid "MeshNodeArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray:1
@@ -5008,10 +4980,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:5
 msgid "Check `MeshNodeArray.sequenceFromLabels on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all#simaker-meshnodearraysequencefromlabelspyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:121
-msgid "MeshPart"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart:1
@@ -6731,10 +6699,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:69
 msgid ":class:`Dict[str`, :class:`int | float`, :class:`MeshElement]`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:131
-msgid "MeshStats"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshStats.py:docstring of abaqus.Mesh.MeshStats.MeshStats:1

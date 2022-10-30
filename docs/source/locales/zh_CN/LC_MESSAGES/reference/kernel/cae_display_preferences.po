@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/kernel/cae_display_preferences.rst:3
+#: ../../reference/kernel/cae_display_preferences.md:1
 msgid "Abaqus CAE Display Preferences"
 msgstr ""
 
-#: ../../reference/kernel/cae_display_preferences.rst:5
+#: ../../reference/kernel/cae_display_preferences.md:3
 msgid ""
 "Display preferences commands are used to edit the Abaqus/CAE preferences "
 "file, `abaqus_2021.gpr`."
 msgstr ""
 
-#: ../../reference/kernel/cae_display_preferences.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/cae_display_preferences.rst:11
-msgid "CaeGuiPrefs"
+#: ../../reference/kernel/cae_display_preferences.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:1
@@ -106,6 +102,11 @@ msgstr ""
 msgid "This method saves the guiPreferences settings to the specified location."
 msgstr ""
 
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:1
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:4 of
 msgid ""
 "Check `CaeGuiPrefs.save on help.3ds.com/2017 "
@@ -135,10 +136,6 @@ msgid ""
 "Check `CaeGuiPrefs.saveAs on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all"
 "#simaker-caeguiprefssaveaspyc>`__."
-msgstr ""
-
-#: ../../reference/kernel/cae_display_preferences.rst:21
-msgid "CaeKerPrefs"
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:1 of
@@ -245,10 +242,6 @@ msgid ""
 "The default value is HOME. Either **fileName** or **directory** must be "
 "supplied. The **fileName** or **directory** arguments are mutually "
 "exclusive."
-msgstr ""
-
-#: ../../reference/kernel/cae_display_preferences.rst:31
-msgid "caePrefsAccess"
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:1
@@ -596,5 +589,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "CaeGuiPrefs"
+#~ msgstr ""
+
+#~ msgid "CaeKerPrefs"
+#~ msgstr ""
+
+#~ msgid "caePrefsAccess"
 #~ msgstr ""
 
