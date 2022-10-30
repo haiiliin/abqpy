@@ -18,26 +18,5 @@ The calibration commands are used for material calibration.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
-
-    .. autoclass:: abaqus.Calibration.Calibration.Calibration
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Calibration.Behavior.Behavior
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Calibration.DataSet.DataSet
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+.. autopackage:: abaqus.Calibration
 ```
