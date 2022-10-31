@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,9 +168,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.journalOptions:1 of
 msgid ""
-"A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object "
-"specifying how to record selection of geometry in the journal and replay "
-"files."
+"A JournalOptions object specifying how to record selection of geometry in"
+" the journal and replay files."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -182,9 +181,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.memoryReductionOptions:1 of
 msgid ""
-"A "
-":py:class:`~abaqus.Session.MemoryReductionOptions.MemoryReductionOptions`"
-" object specifying options for running in reduced memory mode."
+"A MemoryReductionOptions object specifying options for running in reduced"
+" memory mode."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -193,9 +191,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.nodeQuery:1 of
-msgid ""
-"A :py:class:`~abaqus.PathAndProbe.NodeQuery.NodeQuery` object specifying "
-"nodes and their coordinates in a path."
+msgid "A NodeQuery object specifying nodes and their coordinates in a path."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -207,9 +203,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.sketcherOptions:1 of
 msgid ""
-"A "
-":py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions`"
-" object specifying common options for all sketches."
+"A ConstrainedSketcherOptions object specifying common options for all "
+"sketches."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -220,7 +215,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.viewerOptions:1 of
-msgid "A :py:class:`~abaqus.OdbDisplay.ViewerOptions.ViewerOptions` object."
+msgid "A ViewerOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -231,7 +226,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.animationOptions:1 of
-msgid "An :py:class:`~abaqus.Animation.AnimationOptions.AnimationOptions` object."
+msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -240,7 +235,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.aviOptions:1 of
-msgid "An :py:class:`~abaqus.Animation.AVIOptions.AVIOptions` object."
+msgid "An AVIOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -251,10 +246,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.imageAnimationOptions:1 of
-msgid ""
-"An "
-":py:class:`~abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions`"
-" object."
+msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -265,7 +257,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.imageAnimation:1 of
-msgid "An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object."
+msgid "An ImageAnimation object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -276,7 +268,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.quickTimeOptions:1 of
-msgid "A :py:class:`~abaqus.Animation.QuickTimeOptions.QuickTimeOptions` object."
+msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -294,9 +286,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.customData:1 of
-msgid ""
-"A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` "
-"object."
+msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -308,9 +298,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions:1
 #: abaqus.Session.SessionBase.SessionBase.fieldReportOptions:1 of
-msgid ""
-"A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` "
-"object."
+msgid "A FieldReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -322,10 +310,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions:1
 #: abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions:1 of
-msgid ""
-"A "
-":py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions`"
-" object."
+msgid "A FreeBodyReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -368,9 +353,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay:1 of
-msgid ""
-"A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` "
-"object."
+msgid "A DefaultOdbDisplay object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -381,7 +364,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultPlot:1 of
-msgid "A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object."
+msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -392,7 +375,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultChartOptions:1 of
-msgid "A :py:class:`~abaqus.XY.DefaultChartOptions.DefaultChartOptions` object."
+msgid "A DefaultChartOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -457,9 +440,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.currentProbeValues:1 of
-msgid ""
-"A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` "
-"object."
+msgid "A CurrentProbeValues object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -471,7 +452,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultProbeOptions:1
 #: abaqus.Session.SessionBase.SessionBase.probeOptions:1 of
-msgid "A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object."
+msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -489,7 +470,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultProbeReport:1
 #: abaqus.Session.SessionBase.SessionBase.probeReport:1 of
-msgid "A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object."
+msgid "A ProbeReport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -506,10 +487,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.selectedProbeValues:1 of
-msgid ""
-"A "
-":py:class:`~abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues` "
-"object."
+msgid "A SelectedProbeValues object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -520,7 +498,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.printOptions:1 of
-msgid "A :py:class:`~abaqus.Print.PrintOptions.PrintOptions` object."
+msgid "A PrintOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -529,7 +507,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.epsOptions:1 of
-msgid "An :py:class:`~abaqus.Print.EpsOptions.EpsOptions` object."
+msgid "An EpsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -540,7 +518,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.pageSetupOptions:1 of
-msgid "A :py:class:`~abaqus.Print.PageSetupOptions.PageSetupOptions` object."
+msgid "A PageSetupOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -549,7 +527,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.pngOptions:1 of
-msgid "A :py:class:`~abaqus.Print.PngOptions.PngOptions` object."
+msgid "A PngOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -558,7 +536,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.psOptions:1 of
-msgid "A :py:class:`~abaqus.Print.PsOptions.PsOptions` object."
+msgid "A PsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -567,7 +545,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.svgOptions:1 of
-msgid "A :py:class:`~abaqus.Print.SvgOptions.SvgOptions` object."
+msgid "A SvgOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -578,7 +556,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.tiffOptions:1 of
-msgid "A :py:class:`~abaqus.PredefinedField.TiffOptions.TiffOptions` object."
+msgid "A TiffOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -588,8 +566,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.autoColors:1 of
 msgid ""
-"An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying "
-"the color palette to be used for color coding."
+"An AutoColors object specifying the color palette to be used for color "
+"coding."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -599,8 +577,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.xyColors:1 of
 msgid ""
-"An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying "
-"the color palette to be used forXYCurve objects."
+"An AutoColors object specifying the color palette to be used forXYCurve "
+"objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -650,7 +628,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions:1
 #: abaqus.Session.SessionBase.SessionBase.xyReportOptions:1 of
-msgid "An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object."
+msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -698,7 +676,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.graphicsInfo:1 of
-msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object."
+msgid "A GraphicsInfo object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -710,9 +688,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions:1
 #: abaqus.Session.SessionBase.SessionBase.graphicsOptions:1 of
-msgid ""
-"A :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` "
-"object."
+msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -729,10 +705,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions:1 of
-msgid ""
-"A "
-":py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions`"
-" object."
+msgid "A ViewportAnnotationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -791,7 +764,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultLightOptions:1 of
-msgid "A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object."
+msgid "A LightOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -802,7 +775,7 @@ msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.drawingArea:1 of
-msgid "A :py:class:`~abaqus.Canvas.DrawingArea.DrawingArea` object."
+msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -814,8 +787,8 @@ msgstr ""
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultMesherOptions:1 of
 msgid ""
-"A :py:class:`~abaqus.Mesh.MesherOptions.MesherOptions` object specifying "
-"how to control default settings in the Mesh module."
+"A MesherOptions object specifying how to control default settings in the "
+"Mesh module."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -1668,7 +1641,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Session.SessionBase.SessionBase.openOdb:25 of
-msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object."
+msgid "An Odb object."
 msgstr ""
 
 #: abaqus.Session.SessionBase.SessionBase.openOdb:26 of
@@ -2137,7 +2110,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:38 of
-msgid "A :py:class:`~abaqus.Animation.Movie.Movie` object."
+msgid "A Movie object."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:39 of
@@ -2253,7 +2226,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:42 of
-msgid "A :py:class:`~abaqus.Canvas.Viewport.Viewport` object."
+msgid "A Viewport object."
 msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:43 of
@@ -2281,14 +2254,12 @@ msgstr ""
 
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:14
 #: of
-msgid ""
-"A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items "
-"in the display group."
+msgid "A Leaf object specifying the items in the display group."
 msgstr ""
 
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:16
 #: of
-msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object."
+msgid "A DisplayGroup object."
 msgstr ""
 
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
@@ -2325,9 +2296,7 @@ msgstr ""
 
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
 #: of
-msgid ""
-"An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field "
-"output values."
+msgid "An Odb object from which to obtain field output values."
 msgstr ""
 
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:21
@@ -2357,8 +2326,8 @@ msgstr ""
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:31
 #: of
 msgid ""
-"A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object "
-"specifying the subset of the model for which to obtain data."
+"A DisplayGroup object specifying the subset of the model for which to "
+"obtain data."
 msgstr ""
 
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
@@ -2503,9 +2472,7 @@ msgstr ""
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:13
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:13 of
-msgid ""
-"An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
-"from which data will be read."
+msgid "An Odb object specifying the output database from which data will be read."
 msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:1 of
@@ -2579,7 +2546,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:40 of
-msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
+msgid "A Queue object."
 msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:41 of
@@ -2603,13 +2570,11 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:12 of
-msgid ""
-"An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
-"with which to associate."
+msgid "An Odb object specifying the output database with which to associate."
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:14 of
-msgid "A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object."
+msgid "A ScratchOdb object."
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15 of
@@ -2748,7 +2713,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:67 of
-msgid "A :py:class:`~abaqus.PathAndProbe.Path.Path` object."
+msgid "A Path object."
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:68 of
@@ -2776,7 +2741,7 @@ msgid "A sequence of strings indicating the colors of the spectrum."
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:16 of
-msgid "A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object."
+msgid "A Spectrum object."
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17 of
@@ -2815,7 +2780,7 @@ msgid "APath object that specifies the rake."
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:24 of
-msgid "A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object."
+msgid "A Stream object."
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:25 of
@@ -2851,7 +2816,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.AreaStyle:22 of
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object."
+msgid "An AreaStyle object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.AreaStyle:23 of
@@ -2890,7 +2855,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.LineStyle:26 of
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object."
+msgid "A LineStyle object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.LineStyle:27 of
@@ -3239,7 +3204,7 @@ msgid "A String specifying the label for this quantity type."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.QuantityType:90 of
-msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object."
+msgid "A QuantityType object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.QuantityType:91 of
@@ -3334,7 +3299,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.SymbolStyle:39 of
-msgid "A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object."
+msgid "A SymbolStyle object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.SymbolStyle:40 of
@@ -3373,7 +3338,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.TextStyle:25 of
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object."
+msgid "A TextStyle object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.TextStyle:26 of
@@ -3434,14 +3399,14 @@ msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:33 of
 msgid ""
-"A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the "
-"QuantityType object associated to the X -axis1- values."
+"A QuantityType object specifying the QuantityType object associated to "
+"the X -axis1- values."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:36 of
 msgid ""
-"A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the "
-"QuantityType object associated to the Y -axis2- values."
+"A QuantityType object specifying the QuantityType object associated to "
+"the Y -axis2- values."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:39 of
@@ -3466,7 +3431,7 @@ msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:49
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:50 of
-msgid "An :py:class:`~abaqus.XY.XYData.XYData` object."
+msgid "An XYData object."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:50
@@ -3615,9 +3580,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:13 of
-msgid ""
-"A :py:class:`~abaqus.PathAndProbe.Path.Path` object to use in **X - Y** "
-"data generation."
+msgid "A Path object to use in **X - Y** data generation."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:15 of
@@ -4408,7 +4371,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing.__init__:14 of
-msgid "A :py:class:`~abaqus.Session.Drawing.Drawing` object."
+msgid "A Drawing object."
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing.__init__:15 of
@@ -4951,7 +4914,7 @@ msgstr ""
 
 #: abaqus.Session.Image.Image.ImageFromMovie:16
 #: abaqus.Session.Image.Image.__init__:18 of
-msgid "An :py:class:`~abaqus.Session.Image.Image` object."
+msgid "An Image object."
 msgstr ""
 
 #: abaqus.Session.Image.Image.ImageFromMovie:17
@@ -5010,13 +4973,12 @@ msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions:1 of
 msgid ""
-"A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object "
-"specifies how to record selection of geometry in the journal and replay "
-"files. **journalOptions** can also be used to set the numeric formatting "
-"options for field report output, geometry commands output, and a default "
-"format for other numeric output. The JournalOptions object has no "
-"constructor. Abaqus creates the **journalOptions** member when a session "
-"is started."
+"A JournalOptions object specifies how to record selection of geometry in "
+"the journal and replay files. **journalOptions** can also be used to set "
+"the numeric formatting options for field report output, geometry commands"
+" output, and a default format for other numeric output. The "
+"JournalOptions object has no constructor. Abaqus creates the "
+"**journalOptions** member when a session is started."
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions:13 of
@@ -5105,7 +5067,7 @@ msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:28
 #: abaqus.Session.NumberFormat.NumberFormat.__init__:28 of
-msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object."
+msgid "A NumberFormat object."
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions.NumberFormat:29
@@ -5136,23 +5098,23 @@ msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions.setValues:13 of
 msgid ""
-"A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying"
-" the default format for numeric output. The default values are the same "
-"as the default values for the NumberFormat object."
+"A NumberFormat object specifying the default format for numeric output. "
+"The default values are the same as the default values for the "
+"NumberFormat object."
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions.setValues:16 of
 msgid ""
-"A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying"
-" the default format for numbers in a field report output. The default "
-"values are the same as the default values for the NumberFormat object."
+"A NumberFormat object specifying the default format for numbers in a "
+"field report output. The default values are the same as the default "
+"values for the NumberFormat object."
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions.setValues:20 of
 msgid ""
-"A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying"
-" the default format for numbers in geometry commands output. The default "
-"values are the same as the default values for the NumberFormat object."
+"A NumberFormat object specifying the default format for numbers in "
+"geometry commands output. The default values are the same as the default "
+"values for the NumberFormat object."
 msgstr ""
 
 #: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1 of
@@ -5457,10 +5419,7 @@ msgstr ""
 
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:43
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector`"
-" object."
+msgid "A NetworkDatabaseConnector object."
 msgstr ""
 
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:44
@@ -11706,5 +11665,320 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "NumberFormat"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` "
+#~ "object specifying how to record "
+#~ "selection of geometry in the journal "
+#~ "and replay files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Session.MemoryReductionOptions.MemoryReductionOptions`"
+#~ " object specifying options for running "
+#~ "in reduced memory mode."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.PathAndProbe.NodeQuery.NodeQuery` "
+#~ "object specifying nodes and their "
+#~ "coordinates in a path."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions`"
+#~ " object specifying common options for "
+#~ "all sketches."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.OdbDisplay.ViewerOptions.ViewerOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Animation.AnimationOptions.AnimationOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Animation.AVIOptions.AVIOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Animation.QuickTimeOptions.QuickTimeOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.XY.DefaultChartOptions.DefaultChartOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Print.PrintOptions.PrintOptions` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Print.EpsOptions.EpsOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Print.PageSetupOptions.PageSetupOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Print.PngOptions.PngOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Print.PsOptions.PsOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Print.SvgOptions.SvgOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PredefinedField.TiffOptions.TiffOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Session.AutoColors.AutoColors` "
+#~ "object specifying the color palette to"
+#~ " be used for color coding."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Session.AutoColors.AutoColors` "
+#~ "object specifying the color palette to"
+#~ " be used forXYCurve objects."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Canvas.DrawingArea.DrawingArea` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MesherOptions.MesherOptions` "
+#~ "object specifying how to control default"
+#~ " settings in the Mesh module."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Animation.Movie.Movie` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Canvas.Viewport.Viewport` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object "
+#~ "specifying the items in the display "
+#~ "group."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Odb.Odb.Odb` object from "
+#~ "which to obtain field output values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` "
+#~ "object specifying the subset of the "
+#~ "model for which to obtain data."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying"
+#~ " the output database from which data"
+#~ " will be read."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying"
+#~ " the output database with which to"
+#~ " associate."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PathAndProbe.Path.Path` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PathAndProbe.Spectrum.Spectrum` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object"
+#~ " specifying the QuantityType object "
+#~ "associated to the X -axis1- values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object"
+#~ " specifying the QuantityType object "
+#~ "associated to the Y -axis2- values."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.XY.XYData.XYData` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.PathAndProbe.Path.Path` object "
+#~ "to use in **X - Y** data "
+#~ "generation."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Session.Drawing.Drawing` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Session.Image.Image` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` "
+#~ "object specifies how to record selection"
+#~ " of geometry in the journal and "
+#~ "replay files. **journalOptions** can also "
+#~ "be used to set the numeric "
+#~ "formatting options for field report "
+#~ "output, geometry commands output, and a"
+#~ " default format for other numeric "
+#~ "output. The JournalOptions object has no"
+#~ " constructor. Abaqus creates the "
+#~ "**journalOptions** member when a session "
+#~ "is started."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` "
+#~ "object specifying the default format for"
+#~ " numeric output. The default values "
+#~ "are the same as the default values"
+#~ " for the NumberFormat object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` "
+#~ "object specifying the default format for"
+#~ " numbers in a field report output."
+#~ " The default values are the same "
+#~ "as the default values for the "
+#~ "NumberFormat object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` "
+#~ "object specifying the default format for"
+#~ " numbers in geometry commands output. "
+#~ "The default values are the same as"
+#~ " the default values for the "
+#~ "NumberFormat object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector`"
+#~ " object."
 #~ msgstr ""
 
