@@ -66,11 +66,7 @@ class ContactExp(Interaction):
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-    #: A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
@@ -151,13 +147,8 @@ class ContactExp(Interaction):
 
             .. versionadded:: 2021
                 The `surfaceFrictionAssignments` argument was added.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.

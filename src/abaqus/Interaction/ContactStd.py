@@ -61,11 +61,7 @@ class ContactStd(Interaction):
     #: the contact domain.
     surfaceOffsetAssignments: SurfaceOffsetAssignment = SurfaceOffsetAssignment()
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-    #: A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
@@ -167,7 +163,7 @@ class ContactStd(Interaction):
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
@@ -177,13 +173,8 @@ class ContactStd(Interaction):
 
             .. versionadded:: 2021
                 The `slidingFormulationAssignments` argument was added.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
@@ -257,7 +248,7 @@ class ContactStd(Interaction):
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
