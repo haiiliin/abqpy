@@ -95,12 +95,6 @@ class Plastic:
     #: An AnnealTemperature object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
 
-<<<<<<< HEAD
-=======
-    #: A TensileFailure object.
-    tensileFailure: TensileFailure = TensileFailure()
-
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
     @abaqus_method_doc
     def __init__(
         self,

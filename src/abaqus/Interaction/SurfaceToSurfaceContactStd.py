@@ -54,17 +54,10 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: is created.
     createStepName: str
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+    #: A Region object specifying the master surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
-=======
-    #: A Region object specifying the main surface.
-    master: Region
-
-    #: A Region object specifying the secondary surface.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A Region object specifying the slave surface.
     slave: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -187,11 +180,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: default value is NONE.
     surfaceSmoothing: Optional[SymbolicConstant] = None
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
-=======
-    #: A Region object specifying the secondary node sub-set for bonding, used only when the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A Region object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
     bondingSet: Optional[Region] = None
 
@@ -245,15 +234,9 @@ class SurfaceToSurfaceContactStd(Interaction):
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-<<<<<<< HEAD
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+            A Region object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
-=======
-            A Region object specifying the main surface.
-        slave
-            A Region object specifying the secondary surface.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -349,11 +332,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-<<<<<<< HEAD
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
-=======
-            A Region object specifying the secondary node sub-set for bonding, used only when the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
 
         Returns
@@ -493,11 +472,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-<<<<<<< HEAD
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
-=======
-            A Region object specifying the secondary node sub-set for bonding, used only when the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         """
         ...

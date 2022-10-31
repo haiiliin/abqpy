@@ -277,12 +277,6 @@ class OdbAssembly(OdbAssemblyBase):
         pinNodes
             An OdbSet object specifying the node set which have only translational degrees of
             freedom associated with the rigid body.
-<<<<<<< HEAD
-=======
-        analyticSurface
-            An AnalyticSurface object specifying the analytic surface whose motion is governed by
-            the motion of rigid body reference node.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
 
         Returns
         -------
