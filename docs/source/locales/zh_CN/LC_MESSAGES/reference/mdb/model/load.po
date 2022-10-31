@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,7 +374,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -382,7 +382,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -594,7 +594,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -1729,9 +1729,7 @@ msgstr ""
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.region:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.__init__:16
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.region:1 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the load is applied."
+msgid "A Region object specifying the region to which the load is applied."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
@@ -2144,7 +2142,7 @@ msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BodyCharge:32 of
-msgid "A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object."
+msgid "A BodyCharge object."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.__init__
@@ -2290,9 +2288,7 @@ msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BodyConcentrationFlux:32 of
-msgid ""
-"A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` "
-"object."
+msgid "A BodyConcentrationFlux object."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.__init__:33
@@ -2309,7 +2305,7 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BodyCurrent:32 of
-msgid "A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object."
+msgid "A BodyCurrent object."
 msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.__init__:33
@@ -2371,7 +2367,7 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BodyCurrentDensity:32 of
-msgid "A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object."
+msgid "A BodyCurrentDensity object."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.__init__:33
@@ -2432,7 +2428,7 @@ msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.__init__:37
 #: abaqus.Load.LoadModel.LoadModel.BodyForce:37 of
-msgid "A :py:class:`~abaqus.Load.BodyForce.BodyForce` object."
+msgid "A BodyForce object."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.__init__:38
@@ -2466,7 +2462,7 @@ msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BodyHeatFlux:32 of
-msgid "A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object."
+msgid "A BodyHeatFlux object."
 msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.__init__:33
@@ -2493,10 +2489,9 @@ msgstr ""
 #: abaqus.Load.BoltLoad.BoltLoad.setValues:11
 #: abaqus.Load.LoadModel.LoadModel.BoltLoad:21 of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
-"orientation of the pre-tension section normal. Note: **datumAxis** is "
-"applicable only for Solid and Shell regions; it has no meaning for Wire "
-"regions."
+"A DatumAxis object specifying the orientation of the pre-tension section "
+"normal. Note: **datumAxis** is applicable only for Solid and Shell "
+"regions; it has no meaning for Wire regions."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.__init__:25
@@ -2510,7 +2505,7 @@ msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.BoltLoad:32 of
-msgid "A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object."
+msgid "A BoltLoad object."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.__init__:33
@@ -2533,7 +2528,7 @@ msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.ConcCharge:32 of
-msgid "A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object."
+msgid "A ConcCharge object."
 msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge.__init__:33
@@ -2550,7 +2545,7 @@ msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.ConcConcFlux:32 of
-msgid "A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object."
+msgid "A ConcConcFlux object."
 msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux.__init__:33
@@ -2567,7 +2562,7 @@ msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.ConcCurrent:32 of
-msgid "A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object."
+msgid "A ConcCurrent object."
 msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent.__init__:33
@@ -2584,7 +2579,7 @@ msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.ConcPoreFluid:32 of
-msgid "A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object."
+msgid "A ConcPoreFluid object."
 msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.__init__:33
@@ -2653,7 +2648,7 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.__init__:46
 #: abaqus.Load.LoadModel.LoadModel.ConcentratedForce:46 of
-msgid "A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object."
+msgid "A ConcentratedForce object."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.__init__:47
@@ -2680,9 +2675,7 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.__init__:35
 #: abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux:35 of
-msgid ""
-"A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` "
-"object."
+msgid "A ConcentratedHeatFlux object."
 msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.__init__:36
@@ -2777,7 +2770,7 @@ msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.__init__:43
 #: abaqus.Load.LoadModel.LoadModel.ConnectorForce:43 of
-msgid "A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object."
+msgid "A ConnectorForce object."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.__init__:44
@@ -2826,7 +2819,7 @@ msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.__init__:42
 #: abaqus.Load.LoadModel.LoadModel.ConnectorMoment:42 of
-msgid "A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object."
+msgid "A ConnectorMoment object."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.__init__:43
@@ -2861,7 +2854,7 @@ msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.__init__:36
 #: abaqus.Load.LoadModel.LoadModel.CoriolisForce:36 of
-msgid "A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object."
+msgid "A CoriolisForce object."
 msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.__init__:37
@@ -2902,7 +2895,7 @@ msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.__init__:37
 #: abaqus.Load.LoadModel.LoadModel.Gravity:37 of
-msgid "A :py:class:`~abaqus.Load.Gravity.Gravity` object."
+msgid "A Gravity object."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.__init__:38
@@ -3003,7 +2996,7 @@ msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.__init__:41
 #: abaqus.Load.LoadModel.LoadModel.InertiaRelief:41 of
-msgid "An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object."
+msgid "An InertiaRelief object."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.__init__:42
@@ -3027,7 +3020,7 @@ msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.__init__:32
 #: abaqus.Load.LoadModel.LoadModel.InwardVolAccel:32 of
-msgid "An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object."
+msgid "An InwardVolAccel object."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.__init__:33
@@ -3080,7 +3073,7 @@ msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.__init__:41
 #: abaqus.Load.LoadModel.LoadModel.LineLoad:41 of
-msgid "A :py:class:`~abaqus.Load.LineLoad.LineLoad` object."
+msgid "A LineLoad object."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.__init__:42
@@ -3137,7 +3130,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Moment:46
 #: abaqus.Load.Moment.Moment.__init__:46 of
-msgid "A :py:class:`~abaqus.Load.Moment.Moment` object."
+msgid "A Moment object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Moment:47
@@ -3182,7 +3175,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PEGLoad:37
 #: abaqus.Load.PEGLoad.PEGLoad.__init__:37 of
-msgid "A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object."
+msgid "A PEGLoad object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PEGLoad:38
@@ -3262,7 +3255,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PipePressure:43
 #: abaqus.Load.PipePressure.PipePressure.__init__:43 of
-msgid "A :py:class:`~abaqus.Load.PipePressure.PipePressure` object."
+msgid "A PipePressure object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PipePressure:44
@@ -3316,7 +3309,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Pressure:42
 #: abaqus.Load.Pressure.Pressure.__init__:42 of
-msgid "A :py:class:`~abaqus.Load.Pressure.Pressure` object."
+msgid "A Pressure object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Pressure:43
@@ -3355,7 +3348,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.RotationalBodyForce:44
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.__init__:44 of
-msgid "A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object."
+msgid "A RotationalBodyForce object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.RotationalBodyForce:45
@@ -3410,12 +3403,11 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.__init__:39
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:26 of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the "
-"local coordinate system of the load's degrees of freedom. The default "
-"value is None, indicating that the degrees of freedom are defined in the "
-"global coordinate system or by the **userCsys** parameter if defined. "
-"This parameter is available only if **traction** is GENERAL. When this "
-"member is queried, it returns an Int."
+"A DatumCsys object specifying the local coordinate system of the load's "
+"degrees of freedom. The default value is None, indicating that the "
+"degrees of freedom are defined in the global coordinate system or by the "
+"**userCsys** parameter if defined. This parameter is available only if "
+"**traction** is GENERAL. When this member is queried, it returns an Int."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:45
@@ -3470,7 +3462,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:67
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.__init__:67 of
-msgid "A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object."
+msgid "A ShellEdgeLoad object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:68
@@ -3540,7 +3532,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubmodelSB:39
 #: abaqus.Load.SubmodelSB.SubmodelSB.__init__:39 of
-msgid "A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object."
+msgid "A SubmodelSB object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubmodelSB:40
@@ -3578,7 +3570,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubstructureLoad:26
 #: abaqus.Load.SubstructureLoad.SubstructureLoad.__init__:26 of
-msgid "A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object."
+msgid "A SubstructureLoad object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubstructureLoad:27
@@ -3595,7 +3587,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCharge:32
 #: abaqus.Load.SurfaceCharge.SurfaceCharge.__init__:32 of
-msgid "A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object."
+msgid "A SurfaceCharge object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCharge:33
@@ -3630,10 +3622,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceConcentrationFlux:33
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.__init__:33 of
-msgid ""
-"A "
-":py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux`"
-" object."
+msgid "A SurfaceConcentrationFlux object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceConcentrationFlux:34
@@ -3650,7 +3639,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrent:32
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.__init__:32 of
-msgid "A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object."
+msgid "A SurfaceCurrent object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrent:33
@@ -3667,9 +3656,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrentDensity:32
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.__init__:32 of
-msgid ""
-"A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` "
-"object."
+msgid "A SurfaceCurrentDensity object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrentDensity:33
@@ -3703,7 +3690,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceHeatFlux:32
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.__init__:32 of
-msgid "A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object."
+msgid "A SurfaceHeatFlux object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceHeatFlux:33
@@ -3737,7 +3724,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:32
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.__init__:32 of
-msgid "A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object."
+msgid "A SurfacePoreFluid object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:33
@@ -3816,12 +3803,11 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.directionVector:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:35 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of the load. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates. If **traction** is SHEAR, then **directionVector** will be "
-"projected onto the region surface. This parameter is available only if "
-"**traction** is GENERAL or SHEAR."
+"A VertexArray object of length 2 specifying the direction of the load. "
+"Instead of through a ConstrainedSketchVertex, each point may be specified"
+" through a tuple of coordinates. If **traction** is SHEAR, then "
+"**directionVector** will be projected onto the region surface. This "
+"parameter is available only if **traction** is GENERAL or SHEAR."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:53
@@ -3858,7 +3844,7 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceTraction:65
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.__init__:65 of
-msgid "A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object."
+msgid "A SurfaceTraction object."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceTraction:66
@@ -5647,8 +5633,8 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
-"orientation of the pre-tension section normal."
+"A DatumAxis object specifying the orientation of the pre-tension section "
+"normal."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -5696,10 +5682,9 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.BoltLoad.BoltLoad.datumAxis:1 of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
-"orientation of the pre-tension section normal. Note: *datumAxis* is "
-"required only for Solid and Shell regions; it has no meaning for Wire "
-"regions."
+"A DatumAxis object specifying the orientation of the pre-tension section "
+"normal. Note: *datumAxis* is required only for Solid and Shell regions; "
+"it has no meaning for Wire regions."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValues:5 of
@@ -10776,9 +10761,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of the load."
+msgid "A VertexArray object of length 2 specifying the direction of the load."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -10980,7 +10963,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object."
+msgid "A DiagnosticPrint object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -10988,7 +10971,7 @@ msgid ":py:obj:`monitor <abaqus.Step.StepBase.StepBase.monitor>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object."
+msgid "A Monitor object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -10996,7 +10979,7 @@ msgid ":py:obj:`restart <abaqus.Step.StepBase.StepBase.restart>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A :py:class:`~abaqus.StepOutput.Restart.Restart` object."
+msgid "A Restart object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -11024,7 +11007,7 @@ msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object."
+msgid "A Control object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -11032,9 +11015,7 @@ msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` "
-"object."
+msgid "A SolverControl object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -11149,7 +11130,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Load.LoadStep.LoadStep.LoadCase:23 of
-msgid "A :py:class:`~abaqus.Load.LoadCase.LoadCase` object."
+msgid "A LoadCase object."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase.__init__:24
@@ -11205,7 +11186,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase.__init__:23 of
-msgid "**case** -- A :py:class:`~abaqus.Load.LoadCase.LoadCase` object"
+msgid "**case** -- A LoadCase object"
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase.setValues:4 of
@@ -14177,5 +14158,225 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features of load cases"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "load is applied."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.BodyForce.BodyForce` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object "
+#~ "specifying the orientation of the "
+#~ "pre-tension section normal. Note: "
+#~ "**datumAxis** is applicable only for "
+#~ "Solid and Shell regions; it has no"
+#~ " meaning for Wire regions."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.Gravity.Gravity` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.LineLoad.LineLoad` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.Moment.Moment` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.PipePressure.PipePressure` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.Pressure.Pressure` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object "
+#~ "specifying the local coordinate system "
+#~ "of the load's degrees of freedom. "
+#~ "The default value is None, indicating"
+#~ " that the degrees of freedom are "
+#~ "defined in the global coordinate system"
+#~ " or by the **userCsys** parameter if"
+#~ " defined. This parameter is available "
+#~ "only if **traction** is GENERAL. When"
+#~ " this member is queried, it returns"
+#~ " an Int."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of the load. Instead of "
+#~ "through a ConstrainedSketchVertex, each point"
+#~ " may be specified through a tuple "
+#~ "of coordinates. If **traction** is "
+#~ "SHEAR, then **directionVector** will be "
+#~ "projected onto the region surface. This"
+#~ " parameter is available only if "
+#~ "**traction** is GENERAL or SHEAR."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object "
+#~ "specifying the orientation of the "
+#~ "pre-tension section normal."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object "
+#~ "specifying the orientation of the "
+#~ "pre-tension section normal. Note: "
+#~ "*datumAxis* is required only for Solid"
+#~ " and Shell regions; it has no "
+#~ "meaning for Wire regions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of the load."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepOutput.Restart.Restart` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Load.LoadCase.LoadCase` object."
+#~ msgstr ""
+
+#~ msgid "**case** -- A :py:class:`~abaqus.Load.LoadCase.LoadCase` object"
 #~ msgstr ""
 

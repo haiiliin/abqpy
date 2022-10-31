@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,7 +106,7 @@ msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOp
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifying how to record selection of geometry in the journal and replay files."
+msgid "A JournalOptions object specifying how to record selection of geometry in the journal and replay files."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -114,7 +114,7 @@ msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.m
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Session.MemoryReductionOptions.MemoryReductionOptions` object specifying options for running in reduced memory mode."
+msgid "A MemoryReductionOptions object specifying options for running in reduced memory mode."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -122,7 +122,7 @@ msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PathAndProbe.NodeQuery.NodeQuery` object specifying nodes and their coordinates in a path."
+msgid "A NodeQuery object specifying nodes and their coordinates in a path."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -130,7 +130,7 @@ msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcher
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions` object specifying common options for all sketches."
+msgid "A ConstrainedSketcherOptions object specifying common options for all sketches."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -138,7 +138,7 @@ msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOpti
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.OdbDisplay.ViewerOptions.ViewerOptions` object."
+msgid "A ViewerOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -146,7 +146,7 @@ msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animati
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Animation.AnimationOptions.AnimationOptions` object."
+msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -154,7 +154,7 @@ msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Animation.AVIOptions.AVIOptions` object."
+msgid "An AVIOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -162,7 +162,7 @@ msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.im
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions` object."
+msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -170,7 +170,7 @@ msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnim
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object."
+msgid "An ImageAnimation object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -178,7 +178,7 @@ msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTi
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Animation.QuickTimeOptions.QuickTimeOptions` object."
+msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -194,7 +194,7 @@ msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -202,7 +202,7 @@ msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBas
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
+msgid "A FieldReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -210,7 +210,7 @@ msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.Session
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
+msgid "A FreeBodyReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -242,7 +242,7 @@ msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaul
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` object."
+msgid "A DefaultOdbDisplay object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -250,7 +250,7 @@ msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object."
+msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -258,7 +258,7 @@ msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.XY.DefaultChartOptions.DefaultChartOptions` object."
+msgid "A DefaultChartOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -314,7 +314,7 @@ msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.curre
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` object."
+msgid "A CurrentProbeValues object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -322,7 +322,7 @@ msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object."
+msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -334,7 +334,7 @@ msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object."
+msgid "A ProbeReport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -346,7 +346,7 @@ msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.sele
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues` object."
+msgid "A SelectedProbeValues object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -354,7 +354,7 @@ msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOption
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Print.PrintOptions.PrintOptions` object."
+msgid "A PrintOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -362,7 +362,7 @@ msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Print.EpsOptions.EpsOptions` object."
+msgid "An EpsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -370,7 +370,7 @@ msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSet
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Print.PageSetupOptions.PageSetupOptions` object."
+msgid "A PageSetupOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -378,7 +378,7 @@ msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Print.PngOptions.PngOptions` object."
+msgid "A PngOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -386,7 +386,7 @@ msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Print.PsOptions.PsOptions` object."
+msgid "A PsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -394,7 +394,7 @@ msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Print.SvgOptions.SvgOptions` object."
+msgid "A SvgOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -402,7 +402,7 @@ msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.PredefinedField.TiffOptions.TiffOptions` object."
+msgid "A TiffOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -410,7 +410,7 @@ msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used for color coding."
+msgid "An AutoColors object specifying the color palette to be used for color coding."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -418,7 +418,7 @@ msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used forXYCurve objects."
+msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -460,7 +460,7 @@ msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.d
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object."
+msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -496,7 +496,7 @@ msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInf
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object."
+msgid "A GraphicsInfo object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -504,7 +504,7 @@ msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.d
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` object."
+msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -516,7 +516,7 @@ msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.Ses
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object."
+msgid "A ViewportAnnotationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -564,7 +564,7 @@ msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object."
+msgid "A LightOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -572,7 +572,7 @@ msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Canvas.DrawingArea.DrawingArea` object."
+msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -580,7 +580,7 @@ msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.def
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A :py:class:`~abaqus.Mesh.MesherOptions.MesherOptions` object specifying how to control default settings in the Mesh module."
+msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -1084,7 +1084,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/AreaStyle.py:docstring of abaqus.XY.AreaStyle.AreaStyle.__init__:22
 #: ../../../../src/abaqus/XY/XYPlot.py:docstring of abaqus.XY.XYPlot.XYPlot.AreaStyle:22
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.AreaStyle:22
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object."
+msgid "An AreaStyle object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AreaStyle.py:docstring of abaqus.XY.AreaStyle.AreaStyle.__init__:0
@@ -1205,7 +1205,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/LineStyle.py:docstring of abaqus.XY.LineStyle.LineStyle.__init__:26
 #: ../../../../src/abaqus/XY/XYPlot.py:docstring of abaqus.XY.XYPlot.XYPlot.LineStyle:26
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.LineStyle:26
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object."
+msgid "A LineStyle object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/LineStyle.py:docstring of abaqus.XY.LineStyle.LineStyle.__init__:27
@@ -1748,7 +1748,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/QuantityType.py:docstring of abaqus.XY.QuantityType.QuantityType.__init__:90
 #: ../../../../src/abaqus/XY/XYPlot.py:docstring of abaqus.XY.XYPlot.XYPlot.QuantityType:90
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.QuantityType:90
-msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object."
+msgid "A QuantityType object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/QuantityType.py:docstring of abaqus.XY.QuantityType.QuantityType.__init__:91
@@ -1901,7 +1901,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/SymbolStyle.py:docstring of abaqus.XY.SymbolStyle.SymbolStyle.__init__:39
 #: ../../../../src/abaqus/XY/XYPlot.py:docstring of abaqus.XY.XYPlot.XYPlot.SymbolStyle:39
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.SymbolStyle:39
-msgid "A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object."
+msgid "A SymbolStyle object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/SymbolStyle.py:docstring of abaqus.XY.SymbolStyle.SymbolStyle.__init__:40
@@ -1951,7 +1951,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/TextStyle.py:docstring of abaqus.XY.TextStyle.TextStyle.__init__:25
 #: ../../../../src/abaqus/XY/XYPlot.py:docstring of abaqus.XY.XYPlot.XYPlot.TextStyle:25
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.TextStyle:25
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object."
+msgid "A TextStyle object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/TextStyle.py:docstring of abaqus.XY.TextStyle.TextStyle.__init__:26
@@ -2019,7 +2019,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:33
 #: ../../None:14:<autosummary>:1
 #: ../../docstring of abaqus.XY.XYData.XYData.axis1QuantityType:1
-msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the X -axis1- values."
+msgid "A QuantityType object specifying the QuantityType object associated to the X -axis1- values."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFile:36
@@ -2027,7 +2027,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:36
 #: ../../None:14:<autosummary>:1
 #: ../../docstring of abaqus.XY.XYData.XYData.axis2QuantityType:1
-msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the Y -axis2- values."
+msgid "A QuantityType object specifying the QuantityType object associated to the Y -axis2- values."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFile:39
@@ -2049,7 +2049,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:50
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:49
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:50
-msgid "An :py:class:`~abaqus.XY.XYData.XYData` object."
+msgid "An XYData object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFile:50
@@ -2072,7 +2072,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:13
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:13
-msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
+msgid "An Odb object specifying the output database from which data will be read."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFreeBody:16
@@ -2203,7 +2203,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:13
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:13
-msgid "A :py:class:`~abaqus.PathAndProbe.Path.Path` object to use in **X - Y** data generation."
+msgid "A Path object to use in **X - Y** data generation."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:15
@@ -2834,7 +2834,7 @@ msgstr ""
 
 #: ../../None:18:<autosummary>:1
 #: ../../docstring of abaqus.XY.Area.Area.style:1
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying whether and how to fill the area."
+msgid "An AreaStyle object specifying whether and how to fill the area."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -2843,7 +2843,7 @@ msgstr ""
 
 #: ../../None:18:<autosummary>:1
 #: ../../docstring of abaqus.XY.Area.Area.border:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying whether and how to draw the border of the area."
+msgid "A LineStyle object specifying whether and how to draw the border of the area."
 msgstr ""
 
 #: ../../None:18:<autosummary>:1
@@ -2976,7 +2976,7 @@ msgid "Check `Area.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Area.py:docstring of abaqus.XY.Area.Area.setValues:7
-msgid "An :py:class:`~abaqus.XY.Area.Area` object from which attributes are to be copied."
+msgid "An Area object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Area.py:docstring of abaqus.XY.Area.Area.setValues:16
@@ -3100,7 +3100,7 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.XY.Axis.Axis.axisData:1
-msgid "An :py:class:`~abaqus.XY.AxisData.AxisData` object specifying the numerical data of the axis."
+msgid "An AxisData object specifying the numerical data of the axis."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3110,7 +3110,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:20
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.XY.Axis.Axis.lineStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the axis."
+msgid "A LineStyle object specifying the line properties used to display the axis."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3120,7 +3120,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:17
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.XY.Axis.Axis.labelStyle:1
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying axis labels."
+msgid "A TextStyle object specifying the text properties to be used when displaying axis labels."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3130,7 +3130,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:41
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.XY.Axis.Axis.titleStyle:1
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying the axis title."
+msgid "A TextStyle object specifying the text properties to be used when displaying the axis title."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3140,7 +3140,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:39
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.XY.Axis.Axis.tickStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when displaying axis ticks."
+msgid "A LineStyle object specifying the line properties to be used when displaying axis ticks."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3172,7 +3172,7 @@ msgid "Check `Axis.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:7
-msgid "An :py:class:`~abaqus.XY.Axis.Axis` object from which attributes are to be copied."
+msgid "An Axis object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Axis.py:docstring of abaqus.XY.Axis.Axis.setValues:31
@@ -3186,7 +3186,7 @@ msgid "A SymbolicConstant specifying how tick marks are placed on the axis. Poss
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AxisData.py:docstring of abaqus.XY.AxisData.AxisData:1
-msgid "The AxisData object is used to store the data attributes of axes. An :py:class:`~abaqus.XY.AxisData.AxisData` object is automatically created when creating an Axis object."
+msgid "The AxisData object is used to store the data attributes of axes. An AxisData object is automatically created when creating an Axis object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AxisData.py:docstring of abaqus.XY.AxisData.AxisData:16
@@ -3357,7 +3357,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.XY.AxisData.AxisData.curves:1
-msgid "An :py:class:`~abaqus.XY.XYCurveArray.XYCurveArray` object specifying a read-only sequence of Curve objects associated to this axis."
+msgid "An XYCurveArray object specifying a read-only sequence of Curve objects associated to this axis."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3472,7 +3472,7 @@ msgid "type"
 msgstr ""
 
 #: ../../docstring of abaqus.XY.AxisData.AxisData.quantityType:4
-msgid "A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the quantity type"
+msgid "A QuantityType object specifying the quantity type"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AxisData.py:docstring of abaqus.XY.AxisData.AxisData.setValues:15
@@ -3485,7 +3485,7 @@ msgid "Check `AxisData.setValues on help.3ds.com/2017 <https://help.3ds.com/2017
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AxisData.py:docstring of abaqus.XY.AxisData.AxisData.setValues:7
-msgid "An :py:class:`~abaqus.XY.AxisData.AxisData` object from which attributes are to be copied."
+msgid "An AxisData object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/AxisData.py:docstring of abaqus.XY.AxisData.AxisData.setValues:36
@@ -3526,7 +3526,7 @@ msgid "A Float specifying the shown tick increment of the major ticks. This valu
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart:1
-msgid "The Chart object is used to display XYCurve objects. A :py:class:`~abaqus.XY.Chart.Chart` object is automatically created when creating an XYPlot object"
+msgid "The Chart object is used to display XYCurve objects. A Chart object is automatically created when creating an XYPlot object"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart:12
@@ -3573,7 +3573,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.axes1:1
-msgid "An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 - the abscissa for a Cartesian chart."
+msgid "An AxisArray object specifying a read-only sequence of axis objects displayed as axes1 - the abscissa for a Cartesian chart."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3582,7 +3582,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.axes2:1
-msgid "An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 - the ordinate for a Cartesian chart."
+msgid "An AxisArray object specifying a read-only sequence of axis objects displayed as axes2 - the ordinate for a Cartesian chart."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3591,7 +3591,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.area:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart."
+msgid "An Area object specifying position, padding, background and borders of the chart."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3600,7 +3600,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.gridArea:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying how to display the grid area."
+msgid "An Area object specifying how to display the grid area."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3609,7 +3609,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.legend:1
-msgid "A :py:class:`~abaqus.XY.Legend.Legend` object specifying the attributes for the legend of the chart."
+msgid "A Legend object specifying the attributes for the legend of the chart."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3618,7 +3618,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.majorAxis1GridStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major gridlines along axis 1."
+msgid "A LineStyle object specifying the line properties to be used when drawing major gridlines along axis 1."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3627,7 +3627,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.majorAxis2GridStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major gridlines along axis 2."
+msgid "A LineStyle object specifying the line properties to be used when drawing major gridlines along axis 2."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3636,7 +3636,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.minorAxis1GridStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor gridlines along axis 1."
+msgid "A LineStyle object specifying the line properties to be used when drawing minor gridlines along axis 1."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3645,7 +3645,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.minorAxis2GridStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor gridlines along axis 2."
+msgid "A LineStyle object specifying the line properties to be used when drawing minor gridlines along axis 2."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3654,7 +3654,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.tagTextStyle:1
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when creating tags."
+msgid "A TextStyle object specifying the text properties to be used when creating tags."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3663,7 +3663,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.tagAreaStyle:1
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying the area properties to be used when creating tags."
+msgid "An AreaStyle object specifying the area properties to be used when creating tags."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3672,7 +3672,7 @@ msgstr ""
 
 #: ../../None:19:<autosummary>:1
 #: ../../docstring of abaqus.XY.Chart.Chart.tagBorder:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the tag area border properties to be used when creating tags."
+msgid "A LineStyle object specifying the tag area border properties to be used when creating tags."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -3801,7 +3801,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.getAxis1:12
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.getAxis2:12
-msgid "An :py:class:`~abaqus.XY.Axis.Axis` object."
+msgid "An Axis object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.getAxis1:13
@@ -3862,11 +3862,11 @@ msgid "Check `Chart.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/En
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.setValues:7
-msgid "A :py:class:`~abaqus.XY.Chart.Chart` object from which attributes are to be copied."
+msgid "A Chart object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.setValues:9
-msgid "A sequence of Strings specifying the names of the curves to plot. In addition to this type, the argument can also be one of the following:A String specifying the name of the curve to plot.An :py:class:`~abaqus.XY.XYCurve.XYCurve` object specifying the curve to plot.A sequence of XYCurve objects specifying the curves to plot (as returned by the curveSet method)."
+msgid "A sequence of Strings specifying the names of the curves to plot. In addition to this type, the argument can also be one of the following:A String specifying the name of the curve to plot.An XYCurve object specifying the curve to plot.A sequence of XYCurve objects specifying the curves to plot (as returned by the curveSet method)."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.setValues:17
@@ -3874,7 +3874,7 @@ msgid "A sequence of Floats specifying a transformation matrix used to scale or 
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.setValues:20
-msgid "A :py:class:`~abaqus.UtilityAndView.View.View` object."
+msgid "A View object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Chart.py:docstring of abaqus.XY.Chart.Chart.setValues:22
@@ -3909,7 +3909,7 @@ msgid "Check `DefaultChartOptions.setValues on help.3ds.com/2017 <https://help.3
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:7
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying an AreaStyle used to hold on to the default display properties for the chart area."
+msgid "An AreaStyle object specifying an AreaStyle used to hold on to the default display properties for the chart area."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:10
@@ -3917,51 +3917,51 @@ msgid "A Float specifying the default aspect ratio of the grid area. A value of 
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:13
-msgid "An :py:class:`~abaqus.XY.Axis.Axis` object specifying an Axis object used to hold on to the default properties for direction 1 axes—the abscissa for a Cartesian chart."
+msgid "An Axis object specifying an Axis object used to hold on to the default properties for direction 1 axes—the abscissa for a Cartesian chart."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:16
-msgid "An :py:class:`~abaqus.XY.Axis.Axis` object specifying an Axis object used to hold on to the default properties for direction 2 axes—the ordinate for a Cartesian chart."
+msgid "An Axis object specifying an Axis object used to hold on to the default properties for direction 2 axes—the ordinate for a Cartesian chart."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:19
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying how to display the grid area by default."
+msgid "An Area object specifying how to display the grid area by default."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:21
-msgid "A :py:class:`~abaqus.XY.Legend.Legend` object specifying the default attributes for the legend of the chart."
+msgid "A Legend object specifying the default attributes for the legend of the chart."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:23
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the default line properties to be used when drawing major gridlines along axis 1."
+msgid "A LineStyle object specifying the default line properties to be used when drawing major gridlines along axis 1."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:26
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the default line properties to be used when drawing major gridlines along axis 2."
+msgid "A LineStyle object specifying the default line properties to be used when drawing major gridlines along axis 2."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:29
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the default line properties to be used when drawing minor gridlines along axis 1."
+msgid "A LineStyle object specifying the default line properties to be used when drawing minor gridlines along axis 1."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:32
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the default line properties to be used when drawing minor gridlines along axis 2."
+msgid "A LineStyle object specifying the default line properties to be used when drawing minor gridlines along axis 2."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:35
-msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying the default area properties to be used when creating tags."
+msgid "An AreaStyle object specifying the default area properties to be used when creating tags."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:38
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the default tag area border properties to be used when creating tags."
+msgid "A LineStyle object specifying the default tag area border properties to be used when creating tags."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultChartOptions.py:docstring of abaqus.XY.DefaultChartOptions.DefaultChartOptions.setValues:41
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the default text properties to be used when creating tags."
+msgid "A TextStyle object specifying the default text properties to be used when creating tags."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultPlot.py:docstring of abaqus.XY.DefaultPlot.DefaultPlot:1
-msgid "The DefaultPlot object is used to hold on default plot attributes. The DefaultPlot object attributes are used whenever an XYPlot object is created. A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object is automatically created when opening a session."
+msgid "The DefaultPlot object is used to hold on default plot attributes. The DefaultPlot object attributes are used whenever an XYPlot object is created. A DefaultPlot object is automatically created when opening a session."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/DefaultPlot.py:docstring of abaqus.XY.DefaultPlot.DefaultPlot:12
@@ -3974,7 +3974,7 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.XY.DefaultPlot.DefaultPlot.area:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying an Area used to hold on to the default display properties for the plot area."
+msgid "An Area object specifying an Area used to hold on to the default display properties for the plot area."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -3983,7 +3983,7 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.XY.DefaultPlot.DefaultPlot.title:1
-msgid "A :py:class:`~abaqus.XY.Title.Title` object specifying a Title object used to hold on to the default properties of the XY-Plot title."
+msgid "A Title object specifying a Title object used to hold on to the default properties of the XY-Plot title."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Legend.py:docstring of abaqus.XY.Legend.Legend:1
@@ -4032,7 +4032,7 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.XY.Legend.Legend.area:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the legend."
+msgid "An Area object specifying the area of the legend."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4042,7 +4042,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Legend.py:docstring of abaqus.XY.Legend.Legend.setValues:24
 #: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.XY.Legend.Legend.textStyle:1
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend text."
+msgid "A TextStyle object specifying the text properties used to display the legend text."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4063,7 +4063,7 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.XY.Legend.Legend.titleStyle:1
 #: ../../docstring of abaqus.XY.Title.Title.titleStyle:1
-msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties used to display the legend title."
+msgid "A TextStyle object specifying the text properties used to display the legend title."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -4090,7 +4090,7 @@ msgid "Check `Legend.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/E
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Legend.py:docstring of abaqus.XY.Legend.Legend.setValues:7
-msgid "A :py:class:`~abaqus.XY.Legend.Legend` object from which attributes are to be copied."
+msgid "A Legend object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Legend.py:docstring of abaqus.XY.Legend.Legend.setValues:9
@@ -4335,7 +4335,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/Title.py:docstring of abaqus.XY.Title.Title.setValues:12
 #: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.XY.Title.Title.area:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying the area of the title."
+msgid "An Area object specifying the area of the title."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -4364,7 +4364,7 @@ msgid "Check `Title.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/En
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Title.py:docstring of abaqus.XY.Title.Title.setValues:7
-msgid "A :py:class:`~abaqus.XY.Title.Title` object from which attributes are to be copied."
+msgid "A Title object from which attributes are to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/Title.py:docstring of abaqus.XY.Title.Title.setValues:9
@@ -4446,7 +4446,7 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYCurve.py:docstring of abaqus.XY.XYCurve.XYCurve.Curve:14
 #: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.XY.XYCurve.XYCurve.data:1
-msgid "An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve."
+msgid "An XYData object specifying the data for the curve."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -4455,7 +4455,7 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.XY.XYCurve.XYCurve.lineStyle:1
-msgid "A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the curve."
+msgid "A LineStyle object specifying the line properties used to display the curve."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -4464,7 +4464,7 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.XY.XYCurve.XYCurve.symbolStyle:1
-msgid "A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object specifying the symbol properties used to display the curve."
+msgid "A SymbolStyle object specifying the symbol properties used to display the curve."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -4506,7 +4506,7 @@ msgid "Check `Curve on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSI
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYCurve.py:docstring of abaqus.XY.XYCurve.XYCurve.Curve:16
-msgid "An :py:class:`~abaqus.XY.XYCurve.XYCurve` object."
+msgid "An XYCurve object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYCurve.py:docstring of abaqus.XY.XYCurve.XYCurve.Curve:17
@@ -4904,7 +4904,7 @@ msgid ":py:obj:`area <abaqus.XY.XYPlotBase.XYPlotBase.area>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid "An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot object."
+msgid "An Area object specifying position, padding, background and borders of the XYPlot object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -4912,7 +4912,7 @@ msgid ":py:obj:`title <abaqus.XY.XYPlotBase.XYPlotBase.title>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid "A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the XYPlot object."
+msgid "A Title object specifying the title of the XYPlot object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
