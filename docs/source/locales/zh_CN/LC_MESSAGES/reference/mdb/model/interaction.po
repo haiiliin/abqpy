@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -449,7 +449,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -457,7 +457,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -669,7 +669,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1807,9 +1807,7 @@ msgstr ""
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance.__init__:17
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance.surface:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance:17 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic"
-" boundary surface."
+msgid "A Region object specifying the acoustic boundary surface."
 msgstr ""
 
 #: ../../docstring
@@ -2003,9 +2001,7 @@ msgstr ""
 
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance.__init__:50
 #: abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance:50 of
-msgid ""
-"An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` "
-"object."
+msgid "An AcousticImpedance object."
 msgstr ""
 
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance.__init__
@@ -2129,9 +2125,7 @@ msgstr ""
 #: ../../docstring abaqus.Interaction.ActuatorSensor.ActuatorSensor.__init__:17
 #: abaqus.Interaction.ActuatorSensor.ActuatorSensor.point:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensor:17 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the point at"
-" which the constraint is applied."
+msgid "A Region object specifying the point at which the constraint is applied."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.ActuatorSensor.ActuatorSensor.__init__:19
@@ -2190,7 +2184,7 @@ msgstr ""
 
 #: abaqus.Interaction.ActuatorSensor.ActuatorSensor.__init__:35
 #: abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensor:35 of
-msgid "An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor` object."
+msgid "An ActuatorSensor object."
 msgstr ""
 
 #: abaqus.Interaction.ActuatorSensor.ActuatorSensor.__init__:36
@@ -2219,8 +2213,8 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.surfaces:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:17 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the surfaces for which radiation viewfactor control is being specified."
+"A RegionArray object specifying the surfaces for which radiation "
+"viewfactor control is being specified."
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.__init__:20
@@ -2258,9 +2252,9 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.setValuesInStep:14
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:31 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the surfaces that provide blocking inside the cavity. This argument "
-"applies only when **blocking** = PARTIAL_BLOCKING."
+"A RegionArray object specifying the surfaces that provide blocking inside"
+" the cavity. This argument applies only when **blocking** = "
+"PARTIAL_BLOCKING."
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.__init__:34
@@ -2356,9 +2350,8 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.setValues:51
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:63 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the rotation axis point. This argument applies only when "
-"**cyclicSymmetry** = ON."
+"A ModelDot object specifying the rotation axis point. This argument "
+"applies only when **cyclicSymmetry** = ON."
 msgstr ""
 
 #: ../../docstring
@@ -2367,9 +2360,9 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.setValues:54
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:66 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the rotation axis end point. This argument applies only for three-"
-"dimensional models, and only when **cyclicSymmetry** = ON."
+"A ModelDot object specifying the rotation axis end point. This argument "
+"applies only for three-dimensional models, and only when "
+"**cyclicSymmetry** = ON."
 msgstr ""
 
 #: ../../docstring
@@ -2378,9 +2371,8 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.setValues:57
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:69 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the symmetry axis end point. This argument applies only when "
-"**cyclicSymmetry** = ON."
+"A ModelDot object specifying the symmetry axis end point. This argument "
+"applies only when **cyclicSymmetry** = ON."
 msgstr ""
 
 #: ../../docstring
@@ -2613,7 +2605,7 @@ msgstr ""
 
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.__init__:163
 #: abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation:163 of
-msgid "A :py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` object."
+msgid "A CavityRadiation object."
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiation.CavityRadiation.__init__:164
@@ -2645,9 +2637,9 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedFilmCondition:17
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the concentrated film condition interaction is applied. The "
-"interaction is applied to each node in the region."
+"A Region object specifying the region to which the concentrated film "
+"condition interaction is applied. The interaction is applied to each node"
+" in the region."
 msgstr ""
 
 #: ../../docstring
@@ -2812,10 +2804,7 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.__init__:67
 #: abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedFilmCondition:67
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition`"
-" object."
+msgid "A ConcentratedFilmCondition object."
 msgstr ""
 
 #: abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition.__init__:68
@@ -2848,9 +2837,9 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedRadiationToAmbient:17
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the concentrated radiation interaction is applied. The "
-"interaction is applied to each node in the region."
+"A Region object specifying the region to which the concentrated radiation"
+" interaction is applied. The interaction is applied to each node in the "
+"region."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
@@ -2943,10 +2932,7 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.__init__:45
 #: abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedRadiationToAmbient:45
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient`"
-" object."
+msgid "A ConcentratedRadiationToAmbient object."
 msgstr ""
 
 #: abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient.__init__:46
@@ -2990,9 +2976,7 @@ msgstr ""
 #: abaqus.Interaction.ContactStd.ContactStd.includedPairs:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:23
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:22 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object "
-"specifying the domain pairs included in contact."
+msgid "A RegionPairs object specifying the domain pairs included in contact."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3000,9 +2984,7 @@ msgstr ""
 #: abaqus.Interaction.ContactStd.ContactStd.excludedPairs:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:25
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:24 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object "
-"specifying the domain pairs excluded from contact."
+msgid "A RegionPairs object specifying the domain pairs excluded from contact."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3011,10 +2993,8 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:27
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:26 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment`"
-" object specifying the contact property assignments in the contact "
-"domain."
+"A ContactPropertyAssignment object specifying the contact property "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3023,10 +3003,8 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:30
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:29 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment`"
-" object specifying the surface thickness assignments in the contact "
-"domain."
+"A SurfaceThicknessAssignment object specifying the surface thickness "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3035,10 +3013,8 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:33
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:32 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment`"
-" object specifying the surface offset fraction assignments in the contact"
-" domain."
+"A SurfaceOffsetAssignment object specifying the surface offset fraction "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3047,10 +3023,8 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:36
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:35 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment`"
-" object specifying the surface feature angle assignments in the contact "
-"domain."
+"A SurfaceFeatureAssignment object specifying the surface feature angle "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../None:17:<autosummary>:1 ../../docstring
@@ -3059,26 +3033,21 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:39
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:70 of
 msgid ""
-"A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment`"
-" object specifying the surface smoothing assignments in the contact "
-"domain."
+"A SmoothingAssignment object specifying the surface smoothing assignments"
+" in the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:42 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`"
-" object specifying the surface crush trigger assignments in the contact "
-"domain.  .. versionadded:: 2021     The `surfaceCrushTriggerAssignments` "
-"argument was added."
+"A SurfaceCrushTriggerAssignment object specifying the surface crush "
+"trigger assignments in the contact domain.  .. versionadded:: 2021     "
+"The `surfaceCrushTriggerAssignments` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:42 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`"
-" object specifying the surface crush trigger assignments in the contact "
-"domain."
+"A SurfaceCrushTriggerAssignment object specifying the surface crush "
+"trigger assignments in the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:45 of
@@ -3087,19 +3056,15 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:48 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`"
-" object specifying the surface friction assignments in the contact "
-"domain.  .. versionadded:: 2021     The `surfaceFrictionAssignments` "
-"argument was added."
+"A SurfaceFrictionAssignment object specifying the surface friction "
+"assignments in the contact domain.  .. versionadded:: 2021     The "
+"`surfaceFrictionAssignments` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:48 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`"
-" object specifying the surface friction assignments in the contact "
-"domain."
+"A SurfaceFrictionAssignment object specifying the surface friction "
+"assignments in the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:51 of
@@ -3112,9 +3077,8 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:54
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:61 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment`"
-" object specifying the master-slave assignments in the contact domain."
+"A MasterSlaveAssignment object specifying the master-slave assignments in"
+" the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:57 of
@@ -3137,7 +3101,7 @@ msgid "The `polarityAssignments` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:62 of
-msgid "A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object."
+msgid "A ContactExp object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:63 of
@@ -3159,19 +3123,15 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:38 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`"
-" object specifying the surface beam smoothing assignments in the contact "
-"domain.  .. versionadded:: 2021     The `surfaceBeamSmoothingAssignments`"
-" argument was added."
+"A SurfaceBeamSmoothingAssignment object specifying the surface beam "
+"smoothing assignments in the contact domain.  .. versionadded:: 2021     "
+"The `surfaceBeamSmoothingAssignments` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:38 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`"
-" object specifying the surface beam smoothing assignments in the contact "
-"domain."
+"A SurfaceBeamSmoothingAssignment object specifying the surface beam "
+"smoothing assignments in the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:41 of
@@ -3180,19 +3140,15 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:44 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`"
-" object specifying the surface vertex criteria assignments in the contact"
-" domain.  .. versionadded:: 2021     The "
-"`surfaceVertexCriteriaAssignments` argument was added."
+"A SurfaceVertexCriteriaAssignment object specifying the surface vertex "
+"criteria assignments in the contact domain.  .. versionadded:: 2021     "
+"The `surfaceVertexCriteriaAssignments` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:44 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`"
-" object specifying the surface vertex criteria assignments in the contact"
-" domain."
+"A SurfaceVertexCriteriaAssignment object specifying the surface vertex "
+"criteria assignments in the contact domain."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:47 of
@@ -3201,11 +3157,10 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:50 of
 msgid ""
-"A sequence of tuples of "
-":py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`"
-" specifying the sliding formulation assignments. Each tuple contains two "
-"entries:  - A region object or the SymbolicConstant GLOBAL specifying the"
-" surface to which the   sliding formulation attribute is assigned. - A "
+"A sequence of tuples of SlidingFormulationAssignment specifying the "
+"sliding formulation assignments. Each tuple contains two entries:  - A "
+"region object or the SymbolicConstant GLOBAL specifying the surface to "
+"which the   sliding formulation attribute is assigned. - A "
 "SymbolicConstant specifying the overriding the smoothness value to be "
 "used for the   first surface. Possible values of the SymbolicConstant are"
 " NONE and SMALL_SLIDING.  .. versionadded:: 2021     The "
@@ -3214,10 +3169,8 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:50 of
 msgid ""
-"A sequence of tuples of "
-":py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`"
-" specifying the sliding formulation assignments. Each tuple contains two "
-"entries:"
+"A sequence of tuples of SlidingFormulationAssignment specifying the "
+"sliding formulation assignments. Each tuple contains two entries:"
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:53 of
@@ -3241,20 +3194,16 @@ msgstr ""
 #: abaqus.Interaction.ContactStd.ContactStd.initializationAssignments:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:64 of
 msgid ""
-"An "
-":py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment`"
-" object specifying the contact initialization assignments in the contact "
-"domain."
+"An InitializationAssignment object specifying the contact initialization "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ContactStd.ContactStd.stabilizationAssignments:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:67 of
 msgid ""
-"A "
-":py:class:`~abaqus.Interaction.StabilizationAssignment.StabilizationAssignment`"
-" object specifying the contact stabilization assignments in the contact "
-"domain."
+"A StabilizationAssignment object specifying the contact stabilization "
+"assignments in the contact domain."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
@@ -3266,7 +3215,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:76 of
-msgid "A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object."
+msgid "A ContactStd object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:77 of
@@ -3297,9 +3246,7 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.__init__:17
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.master:1
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the master "
-"surface."
+msgid "A Region object specifying the master surface."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:19
@@ -3311,9 +3258,7 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.__init__:19
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.slave:1
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the slave "
-"surface."
+msgid "A Region object specifying the slave surface."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:21
@@ -3328,21 +3273,20 @@ msgstr ""
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.axisPoint1:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry:23 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the first "
-"point of the axis of symmetry. The region should contain exactly one mesh"
-" node, vertex, interesting point, reference point, or datum point. In a "
-"two-dimensional model **axisPoint1** is the only point used to define the"
-" axis of symmetry."
+"A Region object specifying the first point of the axis of symmetry. The "
+"region should contain exactly one mesh node, vertex, interesting point, "
+"reference point, or datum point. In a two-dimensional model "
+"**axisPoint1** is the only point used to define the axis of symmetry."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:28
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.axisPoint2:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry:28 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the second "
-"point of the axis of symmetry. The region should contain exactly one mesh"
-" node, vertex, interesting point, reference point, or datum point. This "
-"point is ignored in a two-dimensional model."
+"A Region object specifying the second point of the axis of symmetry. The "
+"region should contain exactly one mesh node, vertex, interesting point, "
+"reference point, or datum point. This point is ignored in a two-"
+"dimensional model."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:32
@@ -3428,7 +3372,7 @@ msgstr ""
 
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:60
 #: abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry:60 of
-msgid "A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object."
+msgid "A CyclicSymmetry object."
 msgstr ""
 
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.__init__:61
@@ -3456,9 +3400,7 @@ msgstr ""
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation.__init__:17
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation.surface:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.ElasticFoundation:17 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"to which the foundation applies."
+msgid "A Region object specifying the surface to which the foundation applies."
 msgstr ""
 
 #: ../../docstring
@@ -3473,9 +3415,7 @@ msgstr ""
 
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation.__init__:21
 #: abaqus.Interaction.InteractionModel.InteractionModel.ElasticFoundation:21 of
-msgid ""
-"An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` "
-"object."
+msgid "An ElasticFoundation object."
 msgstr ""
 
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation.__init__:22
@@ -3502,8 +3442,8 @@ msgstr ""
 #: abaqus.Interaction.FilmCondition.FilmCondition.surface:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition:16 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the name of "
-"the surface to which the film condition interaction is applied."
+"A Region object specifying the name of the surface to which the film "
+"condition interaction is applied."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.FilmCondition.FilmCondition.__init__:19
@@ -3544,7 +3484,7 @@ msgstr ""
 
 #: abaqus.Interaction.FilmCondition.FilmCondition.__init__:58
 #: abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition:58 of
-msgid "A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object."
+msgid "A FilmCondition object."
 msgstr ""
 
 #: abaqus.Interaction.FilmCondition.FilmCondition.__init__:59
@@ -3570,17 +3510,15 @@ msgstr ""
 #: ../../docstring abaqus.Interaction.FluidCavity.FluidCavity.__init__:16
 #: abaqus.Interaction.FluidCavity.FluidCavity.cavityPoint:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity:16 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid "
-"cavity reference point."
+msgid "A Region object specifying the fluid cavity reference point."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.FluidCavity.FluidCavity.__init__:18
 #: abaqus.Interaction.FluidCavity.FluidCavity.cavitySurface:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity:18 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"forming the boundary of the fluid cavity."
+"A Region object specifying the surface forming the boundary of the fluid "
+"cavity."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.FluidCavity.FluidCavity.__init__:20
@@ -3631,7 +3569,7 @@ msgstr ""
 
 #: abaqus.Interaction.FluidCavity.FluidCavity.__init__:34
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity:34 of
-msgid "A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object."
+msgid "A FluidCavity object."
 msgstr ""
 
 #: abaqus.Interaction.FluidCavity.FluidCavity.__init__:35
@@ -3700,7 +3638,7 @@ msgstr ""
 
 #: abaqus.Interaction.FluidExchange.FluidExchange.__init__:29
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange:29 of
-msgid "A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object."
+msgid "A FluidExchange object."
 msgstr ""
 
 #: abaqus.Interaction.FluidExchange.FluidExchange.__init__:30
@@ -3779,28 +3717,25 @@ msgstr ""
 #: ../../docstring abaqus.Interaction.IncidentWave.IncidentWave.__init__:16
 #: abaqus.Interaction.IncidentWave.IncidentWave.sourcePoint:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:16 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the incident"
-" wave source point."
+msgid "A Region object specifying the incident wave source point."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.IncidentWave.IncidentWave.__init__:18
 #: abaqus.Interaction.IncidentWave.IncidentWave.standoffPoint:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:18 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the incident"
-" wave standoff point.This argument is not valid when **definition** = "
-"CONWEP."
+"A Region object specifying the incident wave standoff point.This argument"
+" is not valid when **definition** = CONWEP."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.IncidentWave.IncidentWave.__init__:21
 #: abaqus.Interaction.IncidentWave.IncidentWave.surface:1
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:21 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"defining the incident wave interaction. In problems involving "
-"fluid/surface boundaries, both the fluid surface and the solid surface "
-"comprising the boundary must have an incident wave interaction specified."
+"A Region object specifying the surface defining the incident wave "
+"interaction. In problems involving fluid/surface boundaries, both the "
+"fluid surface and the solid surface comprising the boundary must have an "
+"incident wave interaction specified."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.IncidentWave.IncidentWave.__init__:25
@@ -3899,7 +3834,7 @@ msgstr ""
 
 #: abaqus.Interaction.IncidentWave.IncidentWave.__init__:59
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:59 of
-msgid "An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object."
+msgid "An IncidentWave object."
 msgstr ""
 
 #: abaqus.Interaction.IncidentWave.IncidentWave.__init__:60
@@ -3952,9 +3887,8 @@ msgstr ""
 #: abaqus.Interaction.ModelChange.ModelChange.region:1
 #: abaqus.Interaction.ModelChange.ModelChange.setValues:16 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the elements"
-" to be removed or reactivated. This argument is valid only when "
-"**isRestart** = False."
+"A Region object specifying the elements to be removed or reactivated. "
+"This argument is valid only when **isRestart** = False."
 msgstr ""
 
 #: ../../docstring
@@ -3983,7 +3917,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ModelChange:34
 #: abaqus.Interaction.ModelChange.ModelChange.__init__:34 of
-msgid "A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object."
+msgid "A ModelChange object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ModelChange:35
@@ -4023,8 +3957,8 @@ msgstr ""
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.__init__:19
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.masterPoints:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the points on the master surface that are exposed to the fluid."
+"A RegionArray object specifying the points on the master surface that are"
+" exposed to the fluid."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
@@ -4032,8 +3966,8 @@ msgstr ""
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.__init__:22
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.slavePoints:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the points on the slave surface that are exposed to the fluid."
+"A RegionArray object specifying the points on the slave surface that are "
+"exposed to the fluid."
 msgstr ""
 
 #: ../../docstring
@@ -4082,9 +4016,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:39
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.__init__:39 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration`"
-" object."
+msgid "A PressurePenetration object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:40
@@ -4113,8 +4045,8 @@ msgstr ""
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.__init__:17
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.surface:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"to which the radiation interaction is applied."
+"A Region object specifying the surface to which the radiation interaction"
+" is applied."
 msgstr ""
 
 #: ../../docstring
@@ -4166,9 +4098,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.RadiationToAmbient:43
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.__init__:43 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient` "
-"object."
+msgid "A RadiationToAmbient object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.RadiationToAmbient:44
@@ -4199,9 +4129,7 @@ msgstr ""
 #: abaqus.Interaction.SelfContactExp.SelfContactExp.surface:1
 #: abaqus.Interaction.SelfContactStd.SelfContactStd.__init__:16
 #: abaqus.Interaction.SelfContactStd.SelfContactStd.surface:1 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"where self-contact is defined."
+msgid "A Region object specifying the surface where self-contact is defined."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../None:7:<autosummary>:1 ../../docstring
@@ -4271,7 +4199,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SelfContactExp:28
 #: abaqus.Interaction.SelfContactExp.SelfContactExp.__init__:28 of
-msgid "A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object."
+msgid "A SelfContactExp object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SelfContactExp:29
@@ -4340,7 +4268,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SelfContactStd:35
 #: abaqus.Interaction.SelfContactStd.SelfContactStd.__init__:35 of
-msgid "A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object."
+msgid "A SelfContactStd object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SelfContactStd:36
@@ -4369,9 +4297,8 @@ msgstr ""
 #: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation.__init__:17
 #: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation.region:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the import "
-"and export region upon which the co-simulation exchanges data with the "
-"coupled analysis program."
+"A Region object specifying the import and export region upon which the "
+"co-simulation exchanges data with the coupled analysis program."
 msgstr ""
 
 #: ../../docstring
@@ -4410,9 +4337,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.StdXplCosimulation:32
 #: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation.__init__:32 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` "
-"object."
+msgid "A StdXplCosimulation object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.StdXplCosimulation:33
@@ -4440,16 +4365,12 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:17
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the main "
-"surface."
+msgid "A Region object specifying the main surface."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:19
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the "
-"secondary surface."
+msgid "A Region object specifying the secondary surface."
 msgstr ""
 
 #: ../../docstring
@@ -4574,8 +4495,8 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:84
 #: of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the "
-"orientation of the bolt hole when specifying bolt clearance."
+"A DatumAxis object specifying the orientation of the bolt hole when "
+"specifying bolt clearance."
 msgstr ""
 
 #: ../../docstring
@@ -4604,17 +4525,14 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:90
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the contact "
-"region for which clearance is specified."
+"A Region object specifying the contact region for which clearance is "
+"specified."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:63
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.__init__:63
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp`"
-" object."
+msgid "A SurfaceToSurfaceContactExp object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:64
@@ -4860,8 +4778,8 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:53
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the Set "
-"object to which the adjustment is to be applied."
+"A Region object specifying the Set object to which the adjustment is to "
+"be applied."
 msgstr ""
 
 #: ../../docstring
@@ -4919,9 +4837,8 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:96
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the slave "
-"node sub-set for bonding, used only when the contact property "
-"CohesiveBehavior option specifies use."
+"A Region object specifying the slave node sub-set for bonding, used only "
+"when the contact property CohesiveBehavior option specifies use."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd:118
@@ -4981,10 +4898,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd:131
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.__init__:131
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd`"
-" object."
+msgid "A SurfaceToSurfaceContactStd object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd:132
@@ -5031,7 +4945,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth:21
 #: abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.__init__:21 of
-msgid "A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object."
+msgid "A XFEMCrackGrowth object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth:22
@@ -5350,9 +5264,7 @@ msgstr ""
 #: abaqus.Interaction.ExpContactControl.ExpContactControl.__init__:35
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl:35
 #: of
-msgid ""
-"An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` "
-"object."
+msgid "An ExpContactControl object."
 msgstr ""
 
 #: abaqus.Interaction.ExpContactControl.ExpContactControl.__init__:36
@@ -5616,9 +5528,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:94
 #: abaqus.Interaction.StdContactControl.StdContactControl.__init__:93 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` "
-"object."
+msgid "A StdContactControl object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:95
@@ -5739,9 +5649,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:49
 #: of
-msgid ""
-"An :py:class:`~abaqus.Interaction.ExpInitialization.ExpInitialization` "
-"object."
+msgid "An ExpInitialization object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:50
@@ -5785,9 +5693,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:35
 #: abaqus.Interaction.StdInitialization.StdInitialization.__init__:32 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` "
-"object."
+msgid "A StdInitialization object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:36
@@ -5874,9 +5780,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization:33
 #: abaqus.Interaction.StdStabilization.StdStabilization.__init__:33 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` "
-"object."
+msgid "A StdStabilization object."
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization:34
@@ -5961,10 +5865,7 @@ msgstr ""
 #: abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp.__init__:27
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.AcousticImpedanceProp:27
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp`"
-" object."
+msgid "An AcousticImpedanceProp object."
 msgstr ""
 
 #: abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp.__init__:28
@@ -6006,9 +5907,7 @@ msgstr ""
 #: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp.__init__:20
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.ActuatorSensorProp:20
 #: of
-msgid ""
-"An :py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp` "
-"object."
+msgid "An ActuatorSensorProp object."
 msgstr ""
 
 #: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp.__init__:21
@@ -6072,9 +5971,7 @@ msgstr ""
 #: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp.__init__:22
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.CavityRadiationProp:22
 #: of
-msgid ""
-"A :py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp`"
-" object."
+msgid "A CavityRadiationProp object."
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp.__init__:23
@@ -6094,7 +5991,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.__init__:14
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.ContactProperty:14
 #: of
-msgid "A :py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` object."
+msgid "A ContactProperty object."
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.__init__:15
@@ -6314,9 +6211,7 @@ msgstr ""
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.__init__:26
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp:26
 #: of
-msgid ""
-"A :py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp` "
-"object."
+msgid "A FilmConditionProp object."
 msgstr ""
 
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp.__init__:27
@@ -6687,9 +6582,7 @@ msgstr ""
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__:107
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty:107
 #: of
-msgid ""
-"A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty`"
-" object."
+msgid "A FluidCavityProperty object."
 msgstr ""
 
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__:108
@@ -6978,10 +6871,7 @@ msgstr ""
 #: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__:80
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty:80
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty`"
-" object."
+msgid "A FluidExchangeProperty object."
 msgstr ""
 
 #: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__:81
@@ -7483,10 +7373,7 @@ msgstr ""
 #: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.__init__:129
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty:129
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty`"
-" object."
+msgid "An IncidentWaveProperty object."
 msgstr ""
 
 #: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.__init__:130
@@ -8171,7 +8058,7 @@ msgstr ""
 #: abaqus.Interaction.ContactDamage.ContactDamage.__init__:68
 #: abaqus.Interaction.ContactProperty.ContactProperty.Damage:68
 #: abaqus.Interaction.ContactProperty.ContactProperty.damage:1 of
-msgid "A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object."
+msgid "A ContactDamage object."
 msgstr ""
 
 #: abaqus.Interaction.ContactDamage.ContactDamage.__init__:69
@@ -8363,7 +8250,7 @@ msgstr ""
 #: abaqus.Interaction.ContactDamping.ContactDamping.__init__:26
 #: abaqus.Interaction.ContactProperty.ContactProperty.Damping:26
 #: abaqus.Interaction.ContactProperty.ContactProperty.damping:1 of
-msgid "A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object."
+msgid "A ContactDamping object."
 msgstr ""
 
 #: abaqus.Interaction.ContactDamping.ContactDamping.__init__:27
@@ -8418,10 +8305,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.tangentialBehavior:1
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior.__init__:52
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior`"
-" object."
+msgid "A ContactTangentialBehavior object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8434,7 +8318,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.NormalBehavior:69
 #: abaqus.Interaction.ContactProperty.ContactProperty.normalBehavior:1
 #: abaqus.Interaction.NormalBehavior.NormalBehavior.__init__:69 of
-msgid "A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object."
+msgid "A NormalBehavior object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8459,9 +8343,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.FractureCriterion:36
 #: abaqus.Interaction.ContactProperty.ContactProperty.fractureCriterion:1
 #: abaqus.Interaction.FractureCriterion.FractureCriterion.__init__:36 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` "
-"object."
+msgid "A FractureCriterion object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8474,9 +8356,7 @@ msgstr ""
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior.__init__:35
 #: abaqus.Interaction.ContactProperty.ContactProperty.CohesiveBehavior:35
 #: abaqus.Interaction.ContactProperty.ContactProperty.cohesiveBehavior:1 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` "
-"object."
+msgid "A CohesiveBehavior object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8489,9 +8369,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.ThermalConductance:43
 #: abaqus.Interaction.ContactProperty.ContactProperty.thermalConductance:1
 #: abaqus.Interaction.ThermalConductance.ThermalConductance.__init__:43 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance` "
-"object."
+msgid "A ThermalConductance object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8504,9 +8382,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.HeatGeneration:18
 #: abaqus.Interaction.ContactProperty.ContactProperty.heatGeneration:1
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.__init__:18 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration` "
-"object."
+msgid "A GapHeatGeneration object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8519,7 +8395,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.Radiation:19
 #: abaqus.Interaction.ContactProperty.ContactProperty.radiation:1
 #: abaqus.Interaction.Radiation.Radiation.__init__:19 of
-msgid "A :py:class:`~abaqus.Interaction.Radiation.Radiation` object."
+msgid "A Radiation object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8532,9 +8408,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.GeometricProperties:38
 #: abaqus.Interaction.ContactProperty.ContactProperty.geometricProperties:1
 #: abaqus.Interaction.GeometricProperties.GeometricProperties.__init__:38 of
-msgid ""
-"A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties`"
-" object."
+msgid "A GeometricProperties object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -8548,10 +8422,7 @@ msgstr ""
 #: abaqus.Interaction.ContactProperty.ContactProperty.electricalConductance:1
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.__init__:37
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance`"
-" object."
+msgid "A GapElectricalConductance object."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -11001,9 +10872,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the rotation axis point."
+msgid "A ModelDot object specifying the rotation axis point."
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -11013,9 +10882,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the rotation axis end point."
+msgid "A ModelDot object specifying the rotation axis end point."
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -11025,9 +10892,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying "
-"the symmetry axis end point."
+msgid "A ModelDot object specifying the symmetry axis end point."
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -15514,9 +15379,7 @@ msgid ":py:obj:`region <abaqus.Interaction.ModelChange.ModelChange.region>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the elements"
-" to be removed or reactivated."
+msgid "A Region object specifying the elements to be removed or reactivated."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -25680,5 +25543,658 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "XFEMCrackGrowthState"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the acoustic boundary surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the point at which the "
+#~ "constraint is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Interaction.ActuatorSensor.ActuatorSensor`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the surfaces for which"
+#~ " radiation viewfactor control is being "
+#~ "specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the surfaces that "
+#~ "provide blocking inside the cavity. This"
+#~ " argument applies only when **blocking**"
+#~ " = PARTIAL_BLOCKING."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the rotation axis "
+#~ "point. This argument applies only when"
+#~ " **cyclicSymmetry** = ON."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the rotation axis end"
+#~ " point. This argument applies only "
+#~ "for three-dimensional models, and only"
+#~ " when **cyclicSymmetry** = ON."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the symmetry axis end"
+#~ " point. This argument applies only "
+#~ "when **cyclicSymmetry** = ON."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.CavityRadiation.CavityRadiation` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "concentrated film condition interaction is "
+#~ "applied. The interaction is applied to"
+#~ " each node in the region."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "concentrated radiation interaction is applied."
+#~ " The interaction is applied to each"
+#~ " node in the region."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` "
+#~ "object specifying the domain pairs "
+#~ "included in contact."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` "
+#~ "object specifying the domain pairs "
+#~ "excluded from contact."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment`"
+#~ " object specifying the contact property "
+#~ "assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment`"
+#~ " object specifying the surface thickness"
+#~ " assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment`"
+#~ " object specifying the surface offset "
+#~ "fraction assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment`"
+#~ " object specifying the surface feature "
+#~ "angle assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment`"
+#~ " object specifying the surface smoothing"
+#~ " assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`"
+#~ " object specifying the surface crush "
+#~ "trigger assignments in the contact "
+#~ "domain.  .. versionadded:: 2021     The "
+#~ "`surfaceCrushTriggerAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`"
+#~ " object specifying the surface crush "
+#~ "trigger assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`"
+#~ " object specifying the surface friction "
+#~ "assignments in the contact domain.  .."
+#~ " versionadded:: 2021     The "
+#~ "`surfaceFrictionAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`"
+#~ " object specifying the surface friction "
+#~ "assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment`"
+#~ " object specifying the master-slave "
+#~ "assignments in the contact domain."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`"
+#~ " object specifying the surface beam "
+#~ "smoothing assignments in the contact "
+#~ "domain.  .. versionadded:: 2021     The "
+#~ "`surfaceBeamSmoothingAssignments` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`"
+#~ " object specifying the surface beam "
+#~ "smoothing assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`"
+#~ " object specifying the surface vertex "
+#~ "criteria assignments in the contact "
+#~ "domain.  .. versionadded:: 2021     The "
+#~ "`surfaceVertexCriteriaAssignments` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`"
+#~ " object specifying the surface vertex "
+#~ "criteria assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of tuples of "
+#~ ":py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`"
+#~ " specifying the sliding formulation "
+#~ "assignments. Each tuple contains two "
+#~ "entries:  - A region object or the"
+#~ " SymbolicConstant GLOBAL specifying the "
+#~ "surface to which the   sliding "
+#~ "formulation attribute is assigned. - A"
+#~ " SymbolicConstant specifying the overriding "
+#~ "the smoothness value to be used "
+#~ "for the   first surface. Possible values"
+#~ " of the SymbolicConstant are NONE and"
+#~ " SMALL_SLIDING.  .. versionadded:: 2021     "
+#~ "The `slidingFormulationAssignments` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of tuples of "
+#~ ":py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`"
+#~ " specifying the sliding formulation "
+#~ "assignments. Each tuple contains two "
+#~ "entries:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment`"
+#~ " object specifying the contact "
+#~ "initialization assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.StabilizationAssignment.StabilizationAssignment`"
+#~ " object specifying the contact "
+#~ "stabilization assignments in the contact "
+#~ "domain."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the master surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the slave surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the first point of the "
+#~ "axis of symmetry. The region should "
+#~ "contain exactly one mesh node, vertex,"
+#~ " interesting point, reference point, or "
+#~ "datum point. In a two-dimensional "
+#~ "model **axisPoint1** is the only point"
+#~ " used to define the axis of "
+#~ "symmetry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the second point of the "
+#~ "axis of symmetry. The region should "
+#~ "contain exactly one mesh node, vertex,"
+#~ " interesting point, reference point, or "
+#~ "datum point. This point is ignored "
+#~ "in a two-dimensional model."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface to which the "
+#~ "foundation applies."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the name of the surface "
+#~ "to which the film condition interaction"
+#~ " is applied."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.FilmCondition.FilmCondition` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the fluid cavity reference "
+#~ "point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface forming the "
+#~ "boundary of the fluid cavity."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.FluidExchange.FluidExchange` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the incident wave source "
+#~ "point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the incident wave standoff "
+#~ "point.This argument is not valid when"
+#~ " **definition** = CONWEP."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface defining the "
+#~ "incident wave interaction. In problems "
+#~ "involving fluid/surface boundaries, both the"
+#~ " fluid surface and the solid surface"
+#~ " comprising the boundary must have an"
+#~ " incident wave interaction specified."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the elements to be removed"
+#~ " or reactivated. This argument is "
+#~ "valid only when **isRestart** = False."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.ModelChange.ModelChange` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the points on the "
+#~ "master surface that are exposed to "
+#~ "the fluid."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the points on the "
+#~ "slave surface that are exposed to "
+#~ "the fluid."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface to which the "
+#~ "radiation interaction is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.RadiationToAmbient.RadiationToAmbient`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface where self-"
+#~ "contact is defined."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.SelfContactExp.SelfContactExp` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.SelfContactStd.SelfContactStd` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the import and export region"
+#~ " upon which the co-simulation "
+#~ "exchanges data with the coupled analysis"
+#~ " program."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the main surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the secondary surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object "
+#~ "specifying the orientation of the bolt"
+#~ " hole when specifying bolt clearance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the contact region for which"
+#~ " clearance is specified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the Set object to which "
+#~ "the adjustment is to be applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the slave node sub-set "
+#~ "for bonding, used only when the "
+#~ "contact property CohesiveBehavior option "
+#~ "specifies use."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.StdContactControl.StdContactControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.ExpInitialization.ExpInitialization`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.StdInitialization.StdInitialization`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.StdStabilization.StdStabilization` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.CavityRadiationProp.CavityRadiationProp`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ContactProperty.ContactProperty` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.FilmConditionProp.FilmConditionProp`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Interaction.Radiation.Radiation` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Interaction.GapElectricalConductance.GapElectricalConductance`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the rotation axis "
+#~ "point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the rotation axis end"
+#~ " point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying the symmetry axis end"
+#~ " point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the elements to be removed"
+#~ " or reactivated."
 #~ msgstr ""
 
