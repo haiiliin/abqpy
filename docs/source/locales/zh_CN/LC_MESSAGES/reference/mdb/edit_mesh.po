@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,9 @@ msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1 of
 msgid ""
-"An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container "
-"for instances of parts. The Assembly object has no constructor command. "
-"Abaqus creates the **rootAssembly** member when a Model object is "
-"created."
+"An Assembly object is a container for instances of parts. The Assembly "
+"object has no constructor command. Abaqus creates the **rootAssembly** "
+"member when a Model object is created."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:6
@@ -115,8 +114,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object "
-"specifying all the vertices existing at the assembly level."
+"A VertexArray object specifying all the vertices existing at the assembly"
+" level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -125,8 +124,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object "
-"specifying all the edges existing at the assembly level."
+"An EdgeArray object specifying all the edges existing at the assembly "
+"level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -135,8 +134,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object "
-"specifying all the elements existing at the assembly level."
+"A MeshElementArray object specifying all the elements existing at the "
+"assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -145,8 +144,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
-"all the nodes existing at the assembly level."
+"A MeshNodeArray object specifying all the nodes existing at the assembly "
+"level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -297,10 +296,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
-"specifying the PartInstances and A "
-":py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object "
-"specifying the ModelInstances."
+"A PartInstance object specifying the PartInstances and A ModelInstance "
+"object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -310,10 +307,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
-msgid ""
-"An "
-":py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature`"
-" object."
+msgid "An EngineeringFeature object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -333,10 +327,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray`"
-" object."
+msgid "A ConnectorOrientationArray object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -346,10 +337,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray`"
-" object."
+msgid "A SectionAssignmentArray object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2078,9 +2066,8 @@ msgstr ""
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:33
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:34 of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the "
-"local coordinate system. If unspecified, the global coordinate system "
-"will be used."
+"A DatumCsys object specifying the local coordinate system. If "
+"unspecified, the global coordinate system will be used."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:36
@@ -2108,9 +2095,7 @@ msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:8
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:8 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the domain "
-"to be offset."
+msgid "A Region object specifying the domain to be offset."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:10
@@ -2312,9 +2297,7 @@ msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object "
-"specifying all the vertices in the part."
+msgid "A VertexArray object specifying all the vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2325,9 +2308,8 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
-"An "
-":py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` "
-"object specifying all the ignored vertices in the part."
+"An IgnoredVertexArray object specifying all the ignored vertices in the "
+"part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2335,9 +2317,7 @@ msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object "
-"specifying all the edges in the part."
+msgid "An EdgeArray object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2345,9 +2325,7 @@ msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` "
-"object specifying all the ignored edges in the part."
+msgid "An IgnoredEdgeArray object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2355,9 +2333,7 @@ msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying"
-" all the faces in the part."
+msgid "A FaceArray object specifying all the faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2365,9 +2341,7 @@ msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying"
-" all the cells in the part."
+msgid "A CellArray object specifying all the cells in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2401,9 +2375,7 @@ msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object "
-"specifying all the elements in the part."
+msgid "A MeshElementArray object specifying all the elements in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2422,8 +2394,8 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying "
-"all the unique element faces in the part."
+"A MeshFaceArray object specifying all the unique element faces in the "
+"part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2431,9 +2403,7 @@ msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
-"all the nodes in the part."
+msgid "A MeshNodeArray object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2442,8 +2412,8 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
-"all the retained nodes in the substructure part."
+"A MeshNodeArray object specifying all the retained nodes in the "
+"substructure part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2540,10 +2510,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray`"
-" object."
+msgid "A MaterialOrientationArray object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2572,8 +2539,8 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying "
-"all the unique element edges in the part."
+"A MeshEdgeArray object specifying all the unique element edges in the "
+"part."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -4474,8 +4441,8 @@ msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:6 of
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying a "
-"reference top face that indicates the desired orientation."
+"A MeshFace object specifying a reference top face that indicates the "
+"desired orientation."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:1 of
@@ -4666,20 +4633,20 @@ msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:16 of
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object that serves as a "
-"reference for indicating two topological directions for the subdivision "
-"operation. Must be a face of one of the specified elements, and all "
-"specified elements must be reachable by topological navigation from this "
-"element face. May not be combined with **edge**."
+"A MeshFace object that serves as a reference for indicating two "
+"topological directions for the subdivision operation. Must be a face of "
+"one of the specified elements, and all specified elements must be "
+"reachable by topological navigation from this element face. May not be "
+"combined with **edge**."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:21 of
 msgid ""
-"A :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` object that serves as a "
-"reference for indicating a single topological direction for the "
-"subdivision operation. Must be an edge of one of the specified elements, "
-"and all specified elements must be reachable by topological navigation "
-"from this element edge. May not be combined with **face**."
+"A MeshEdge object that serves as a reference for indicating a single "
+"topological direction for the subdivision operation. Must be an edge of "
+"one of the specified elements, and all specified elements must be "
+"reachable by topological navigation from this element edge. May not be "
+"combined with **face**."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:5 of
@@ -7271,5 +7238,180 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "MeshEditOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object"
+#~ " is a container for instances of "
+#~ "parts. The Assembly object has no "
+#~ "constructor command. Abaqus creates the "
+#~ "**rootAssembly** member when a Model "
+#~ "object is created."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object specifying all the vertices "
+#~ "existing at the assembly level."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` "
+#~ "object specifying all the edges existing"
+#~ " at the assembly level."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` "
+#~ "object specifying all the elements "
+#~ "existing at the assembly level."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` "
+#~ "object specifying all the nodes existing"
+#~ " at the assembly level."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the PartInstances and "
+#~ "A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` "
+#~ "object specifying the ModelInstances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object "
+#~ "specifying the local coordinate system. "
+#~ "If unspecified, the global coordinate "
+#~ "system will be used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the domain to be offset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object specifying all the vertices in"
+#~ " the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray`"
+#~ " object specifying all the ignored "
+#~ "vertices in the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` "
+#~ "object specifying all the edges in "
+#~ "the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray`"
+#~ " object specifying all the ignored "
+#~ "edges in the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` "
+#~ "object specifying all the faces in "
+#~ "the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` "
+#~ "object specifying all the cells in "
+#~ "the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` "
+#~ "object specifying all the elements in"
+#~ " the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` "
+#~ "object specifying all the unique element"
+#~ " faces in the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` "
+#~ "object specifying all the nodes in "
+#~ "the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` "
+#~ "object specifying all the retained nodes"
+#~ " in the substructure part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` "
+#~ "object specifying all the unique element"
+#~ " edges in the part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object "
+#~ "specifying a reference top face that "
+#~ "indicates the desired orientation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object "
+#~ "that serves as a reference for "
+#~ "indicating two topological directions for "
+#~ "the subdivision operation. Must be a "
+#~ "face of one of the specified "
+#~ "elements, and all specified elements "
+#~ "must be reachable by topological "
+#~ "navigation from this element face. May"
+#~ " not be combined with **edge**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` object "
+#~ "that serves as a reference for "
+#~ "indicating a single topological direction "
+#~ "for the subdivision operation. Must be"
+#~ " an edge of one of the "
+#~ "specified elements, and all specified "
+#~ "elements must be reachable by "
+#~ "topological navigation from this element "
+#~ "edge. May not be combined with "
+#~ "**face**."
 #~ msgstr ""
 

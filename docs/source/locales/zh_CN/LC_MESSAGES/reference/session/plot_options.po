@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1130,9 +1130,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.datumCsys:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:230 of
 msgid ""
-"A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the "
-"coordinate system to use for results transformation when "
-"**transformationType** = USER_SPECIFIED."
+"A DatumCsys object specifying the coordinate system to use for results "
+"transformation when **transformationType** = USER_SPECIFIED."
 msgstr ""
 
 #: ../../None:92:<autosummary>:1
@@ -1808,10 +1807,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:7 of
 msgid ""
-"A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object from "
-"which values are to be copied. If other arguments are also supplied to "
-"setValues, they will override the values in **options**. The default "
-"value is None."
+"A BasicOptions object from which values are to be copied. If other "
+"arguments are also supplied to setValues, they will override the values "
+"in **options**. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:44
@@ -2125,9 +2123,7 @@ msgstr ""
 #: ../../None:3:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions.plyStackPlotOptions:1
 #: of
-msgid ""
-"A :py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions`"
-" object."
+msgid "A PlyStackPlotOptions object."
 msgstr ""
 
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1 of
@@ -4411,10 +4407,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:7 of
 msgid ""
-"A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object "
-"from which values are to be copied. If other arguments are also supplied "
-"to setValues, they will override the values in **options**. The default "
-"value is None."
+"A DisplayOptions object from which values are to be copied. If other "
+"arguments are also supplied to setValues, they will override the values "
+"in **options**. The default value is None."
 msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:11 of
@@ -4830,16 +4825,13 @@ msgid ":py:obj:`frames <abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray` "
-"object specifying the list of frames."
+msgid "A MdbDataFrameArray object specifying the list of frames."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames:1 of
 msgid ""
-"A :py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray` "
-"object specifying the list of frames. The list is read-only. There is "
-"only one frame in a step."
+"A MdbDataFrameArray object specifying the list of frames. The list is "
+"read-only. There is only one frame in a step."
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint:1 of
@@ -4956,9 +4948,7 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError.data:1 of
-msgid ""
-"An :py:class:`~abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData` "
-"object."
+msgid "An OdbAuxiliaryData object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -5481,9 +5471,7 @@ msgstr ""
 
 #: ../../None:20:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbData.OdbData.diagnosticData:1 of
-msgid ""
-"An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` "
-"object."
+msgid "An OdbDiagnosticData object."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -5936,9 +5924,7 @@ msgid ":py:obj:`frames <abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid ""
-"An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` "
-"object specifying the list of frames."
+msgid "An OdbDataFrameArray object specifying the list of frames."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -5955,8 +5941,8 @@ msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames:1 of
 msgid ""
-"An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` "
-"object specifying the list of frames. The list is read-only."
+"An OdbDataFrameArray object specifying the list of frames. The list is "
+"read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:4 of
@@ -6208,7 +6194,7 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData.jobTime:1 of
-msgid "An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object."
+msgid "An OdbJobTime object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6220,10 +6206,7 @@ msgstr ""
 #: ../../None:13:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData.numericalProblemSummary:1
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary`"
-" object."
+msgid "An OdbNumericalProblemSummary object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6975,7 +6958,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.commonOptions:1 of
-msgid "A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object."
+msgid "A DGCommonOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -6987,10 +6970,7 @@ msgstr ""
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.superimposeOptions:1
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions`"
-" object."
+msgid "A DGSuperimposeOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -7001,9 +6981,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.contourOptions:1 of
-msgid ""
-"A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` "
-"object."
+msgid "A DGContourOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -7014,7 +6992,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.symbolOptions:1 of
-msgid "A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object."
+msgid "A DGSymbolOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -7026,10 +7004,7 @@ msgstr ""
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.materialOrientationOptions:1
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions`"
-" object."
+msgid "A DGOrientationOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -7041,10 +7016,7 @@ msgstr ""
 #: ../../None:8:<autosummary>:1 ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.displayBodyOptions:1
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions`"
-" object."
+msgid "A DGDisplayBodyOptions object."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbJobTime.OdbJobTime:1 of
@@ -7357,7 +7329,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg.__init__:42 of
-msgid "An :py:class:`~abaqus.PlotOptions.OptionArg.OptionArg` object."
+msgid "An OptionArg object."
 msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg.__init__:43 of
@@ -8598,10 +8570,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:7 of
 msgid ""
-"A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object "
-"from which values are to be copied. If other arguments are also supplied "
-"to setValues, they will override the values in **options**. The default "
-"value is None."
+"A ViewCutOptions object from which values are to be copied. If other "
+"arguments are also supplied to setValues, they will override the values "
+"in **options**. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -9786,5 +9757,135 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "ViewCutOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object "
+#~ "specifying the coordinate system to use"
+#~ " for results transformation when "
+#~ "**transformationType** = USER_SPECIFIED."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` "
+#~ "object from which values are to be"
+#~ " copied. If other arguments are also"
+#~ " supplied to setValues, they will "
+#~ "override the values in **options**. The"
+#~ " default value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions`"
+#~ " object from which values are to "
+#~ "be copied. If other arguments are "
+#~ "also supplied to setValues, they will"
+#~ " override the values in **options**. "
+#~ "The default value is None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray`"
+#~ " object specifying the list of "
+#~ "frames."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray`"
+#~ " object specifying the list of "
+#~ "frames. The list is read-only. "
+#~ "There is only one frame in a "
+#~ "step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray`"
+#~ " object specifying the list of "
+#~ "frames."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray`"
+#~ " object specifying the list of "
+#~ "frames. The list is read-only."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.PlotOptions.OptionArg.OptionArg` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions`"
+#~ " object from which values are to "
+#~ "be copied. If other arguments are "
+#~ "also supplied to setValues, they will"
+#~ " override the values in **options**. "
+#~ "The default value is None."
 #~ msgstr ""
 

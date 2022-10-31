@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -325,9 +325,7 @@ msgid "Returns"
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:3 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a"
-" sequence of Cell objects."
+msgid "A CellArray object which is a sequence of Cell objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells
@@ -447,9 +445,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Edge.Edge.getElements:3
 #: abaqus.BasicGeometry.Face.Face.getElements:3
 #: abaqus.BasicGeometry.Vertex.Vertex.getElements:3 of
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which"
-" is a sequence of MeshElement objects."
+msgid "A MeshElementArray object which is a sequence of MeshElement objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getElements:4
@@ -462,9 +458,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Cell.Cell.getNodes:3
 #: abaqus.BasicGeometry.Face.Face.getNodes:14
 #: abaqus.BasicGeometry.Vertex.Vertex.getNodes:3 of
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a "
-"sequence of MeshNode objects."
+msgid "A MeshNodeArray object which is a sequence of MeshNode objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getNodes:4
@@ -1004,7 +998,7 @@ msgid "A list of Cell objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.__init__:14 of
-msgid "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object."
+msgid "A CellArray object."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:1 of
@@ -1079,7 +1073,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:32 of
-msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
+msgid "A Cell object."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:33
@@ -1179,9 +1173,7 @@ msgstr ""
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:19
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:16
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:12 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is "
-"a sequence of Cell objects."
+msgid "A CellArray object, which is a sequence of Cell objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:5 of
@@ -1279,9 +1271,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:12 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of "
-"Cell objects."
+msgid "A Cell object or a sequence of Cell objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask
@@ -1492,9 +1482,7 @@ msgstr ""
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:19
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:16
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:12 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is"
-" a sequence of Edge objects."
+msgid "An EdgeArray object, which is a sequence of Edge objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:4
@@ -1559,9 +1547,7 @@ msgid "A float specifying the value of the face angle in degrees."
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:10 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is"
-" a sequence of Edgeobjects."
+msgid "An EdgeArray object, which is a sequence of Edgeobjects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getFaces:5
@@ -1571,9 +1557,7 @@ msgid ":class:`Tuple[int]`"
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getNodes:3 of
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a"
-" sequence of MeshNode objects."
+msgid "A MeshNodeArray object, which is a sequence of MeshNode objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getRadius:3
@@ -1753,7 +1737,7 @@ msgid "A list of Edge objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:14 of
-msgid "A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object."
+msgid "A EdgeArray object."
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:1 of
@@ -1816,9 +1800,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:32
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:12 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of "
-"Edge objects."
+msgid "An Edge object or a sequence of Edge objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:33
@@ -2133,9 +2115,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:3 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a"
-" sequence of Face objects."
+msgid "A FaceArray object which is a sequence of Face objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:4
@@ -2229,9 +2209,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getElementFaces:12 of
-msgid ""
-"A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a "
-"sequence of MeshFace objects."
+msgid "A MeshFaceArray object which is a sequence of MeshFace objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getElementFaces:13 of
@@ -2243,9 +2221,7 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:19
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:16
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:12 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is "
-"a sequence of Face objects."
+msgid "A FaceArray object, which is a sequence of Face objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:5 of
@@ -2478,7 +2454,7 @@ msgid "A list of Face objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:14 of
-msgid "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object."
+msgid "A FaceArray object."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:1 of
@@ -2549,7 +2525,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36 of
-msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object."
+msgid "A Face object."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:37
@@ -2657,16 +2633,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:12 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of "
-"Face objects."
+msgid "A Face object or a sequence of Face objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:1 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a "
-"one-dimensional region of geometry that has been abstracted away by a "
-"virtual topology feature."
+"An IgnoredEdge object is a one-dimensional region of geometry that has "
+"been abstracted away by a virtual topology feature."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:14 of
@@ -2877,9 +2850,7 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:32
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:12
 #: of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a "
-"sequence of IgnoredEdge objects."
+msgid "An IgnoredEdge object or a sequence of IgnoredEdge objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:33
@@ -2937,9 +2908,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:1 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object "
-"is a point region of the geometry that was abstracted away by a virtual "
-"topology feature."
+"An IgnoredVertex object is a point region of the geometry that was "
+"abstracted away by a virtual topology feature."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:14 of
@@ -3087,9 +3057,7 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:29
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:12
 #: of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object "
-"or a sequence of IgnoredVertex objects."
+msgid "An IgnoredVertex object or a sequence of IgnoredVertex objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:30
@@ -3162,8 +3130,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:7 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` "
-"object is a temporary object and cannot be accessed from the Mdb object."
+"An InterestingPoint object is a temporary object and cannot be accessed "
+"from the Mdb object."
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:17 of
@@ -3198,8 +3166,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:14 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
-" on which the interesting point is positioned."
+"An Edge object specifying the edge on which the interesting point is "
+"positioned."
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:16 of
@@ -3209,9 +3177,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:19 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` "
-"object."
+msgid "An InterestingPoint object."
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:20 of
@@ -3277,7 +3243,7 @@ msgid "Used internally by the input file writer."
 msgstr ""
 
 #: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:20 of
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+msgid "A Feature object."
 msgstr ""
 
 #: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:21 of
@@ -3485,10 +3451,9 @@ msgstr ""
 #: abaqus.BasicGeometry.Transform.Transform:1 of
 msgid ""
 "The MakeSketchTransform method creates a Transform object. The Transform "
-"object has no direct constructor. A "
-":py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4×3 "
-"matrix of Floats that represents the transformation from sketch "
-"coordinates to assembly coordinates or to part coordinates."
+"object has no direct constructor. A Transform object is a 4×3 matrix of "
+"Floats that represents the transformation from sketch coordinates to "
+"assembly coordinates or to part coordinates."
 msgstr ""
 
 #: abaqus.BasicGeometry.Transform.Transform:12 of
@@ -3759,7 +3724,7 @@ msgid "A list of ConstrainedSketchVertex objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:14 of
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object."
+msgid "A VertexArray object."
 msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:15
@@ -3820,9 +3785,8 @@ msgstr ""
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:29
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:12 of
 msgid ""
-"A "
-":py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`"
-" object or a sequence of ConstrainedSketchVertex objects.."
+"A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex"
+" objects.."
 msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:30
@@ -3841,8 +3805,8 @@ msgstr ""
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:16
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:12 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which"
-" is a sequence of ConstrainedSketchVertex objects.."
+"A VertexArray object, which is a sequence of ConstrainedSketchVertex "
+"objects.."
 msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:5 of
@@ -6782,5 +6746,171 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "VertexArray"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` "
+#~ "object which is a sequence of Cell"
+#~ " objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` "
+#~ "object which is a sequence of "
+#~ "MeshElement objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` "
+#~ "object which is a sequence of "
+#~ "MeshNode objects."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` "
+#~ "object, which is a sequence of "
+#~ "Cell objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object "
+#~ "or a sequence of Cell objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` "
+#~ "object, which is a sequence of "
+#~ "Edge objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` "
+#~ "object, which is a sequence of "
+#~ "Edgeobjects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` "
+#~ "object, which is a sequence of "
+#~ "MeshNode objects."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "or a sequence of Edge objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` "
+#~ "object which is a sequence of Face"
+#~ " objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` "
+#~ "object which is a sequence of "
+#~ "MeshFace objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` "
+#~ "object, which is a sequence of "
+#~ "Face objects."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Face.Face` object "
+#~ "or a sequence of Face objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` "
+#~ "object is a one-dimensional region "
+#~ "of geometry that has been abstracted "
+#~ "away by a virtual topology feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` "
+#~ "object or a sequence of IgnoredEdge "
+#~ "objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex`"
+#~ " object is a point region of "
+#~ "the geometry that was abstracted away"
+#~ " by a virtual topology feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex`"
+#~ " object or a sequence of "
+#~ "IgnoredVertex objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint`"
+#~ " object is a temporary object and "
+#~ "cannot be accessed from the Mdb "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the edge on which the "
+#~ "interesting point is positioned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The MakeSketchTransform method creates a "
+#~ "Transform object. The Transform object "
+#~ "has no direct constructor. A "
+#~ ":py:class:`~abaqus.BasicGeometry.Transform.Transform` object "
+#~ "is a 4×3 matrix of Floats that "
+#~ "represents the transformation from sketch "
+#~ "coordinates to assembly coordinates or "
+#~ "to part coordinates."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`"
+#~ " object or a sequence of "
+#~ "ConstrainedSketchVertex objects.."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object, which is a sequence of "
+#~ "ConstrainedSketchVertex objects.."
 #~ msgstr ""
 
