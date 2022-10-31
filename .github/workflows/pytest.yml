@@ -7,6 +7,8 @@ on:
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
+    - 'tests/**'
+    - '.github/workflows/pytest.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -14,7 +16,6 @@ concurrency:
 
 jobs:
   pytest:
-    if: ${{ github.base_ref == '2023' || contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'pytest') }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -22,6 +23,8 @@ jobs:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11", "pypy3.7", "pypy3.8", "pypy3.9"]
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
@@ -29,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest pytest-cov
+          pip install flake8 pytest pytest-cov coverage
           pip install -r requirements.txt
           pip install -e .
       - name: Lint with flake8
@@ -40,9 +43,38 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          pytest --cov-report xml:coverage.xml
+          coverage run -m pytest
+          coverage xml
+      
       - name: Get Coverage
+        if: matrix.python-version == '3.10'
         uses: orgoro/coverage@v3
         with:
           coverageFile: coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Coverage Badge
+        if: matrix.python-version == '3.10'
+        uses: tj-actions/coverage-badge-py@v1.8
+
+      - name: Verify Changed files
+        if: matrix.python-version == '3.10'
+        uses: tj-actions/verify-changed-files@v9
+        id: changed_files
+        with:
+          files: coverage.svg
+
+      - name: Commit files
+        if: steps.changed_files.outputs.files_changed == 'true' && matrix.python-version == '3.10'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add "coverage.svg"
+          git commit -m "Update coverage.svg"
+
+      - name: Push changes
+        if: steps.changed_files.outputs.files_changed == 'true' && matrix.python-version == '3.10'
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.github_token }}
+          branch: ${{ github.head_ref }}
