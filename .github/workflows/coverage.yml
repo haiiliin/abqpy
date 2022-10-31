@@ -1,0 +1,37 @@
+name: Coverage badge
+
+on:
+  push:
+    branches: [ "20**" ]
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with: 
+          fetch-depth: 0
+
+      - name: Coverage Badge
+        uses: tj-actions/coverage-badge-py@v1.8
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v9
+        id: changed_files
+        with:
+          files: coverage.svg
+
+      - name: Commit files
+        if: steps.changed_files.outputs.files_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add "coverage.svg"
+          git commit -m "Update coverage.svg"
+
+      - name: Push changes
+        if: steps.changed_files.outputs.files_changed == 'true'
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.github_token }}
+          branch: ${{ github.ref }}
