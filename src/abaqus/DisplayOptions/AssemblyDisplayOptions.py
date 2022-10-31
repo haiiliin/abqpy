@@ -99,47 +99,47 @@ class AssemblyDisplayOptions:
     #: are WIREFRAME, HIDDEN, SHADED, and FILLED. The default value is WIREFRAME.
     renderStyle: SymbolicConstant = WIREFRAME
 
-    #: A :py:class:`~abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions` object.
+    #: A BCDisplayOptions object.
     bcOptions: BCDisplayOptions = BCDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions` object.
+    #: A ConstraintDisplayOptions object.
     constraintOptions: ConstraintDisplayOptions = ConstraintDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: A DisplayGroup object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
     displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
 
-    #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
+    #: An EngineeringFeatureDisplayOptions object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = EngineeringFeatureDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions` object.
+    #: A PredefinedFieldDisplayOptions object.
     predefinedFieldOptions: PredefinedFieldDisplayOptions = PredefinedFieldDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions` object.
+    #: A GeometricRestrictionDisplayOptions object.
     geometricRestrictionOptions: GeometricRestrictionDisplayOptions = GeometricRestrictionDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
+    #: A GeometryDisplayOptions object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()
 
-    #: An :py:class:`~abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions` object.
+    #: An InteractionDisplayOptions object.
     interactionOptions: InteractionDisplayOptions = InteractionDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions` object.
+    #: A LoadDisplayOptions object.
     loadOptions: LoadDisplayOptions = LoadDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
+    #: A MeshDisplayOptions object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
-    #: An :py:class:`~abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions` object.
+    #: An OptimizationTaskDisplayOptions object.
     optimizationTaskOptions: OptimizationTaskDisplayOptions = OptimizationTaskDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions` object.
+    #: A StopConditionDisplayOptions object.
     stopConditionOptions: StopConditionDisplayOptions = StopConditionDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions` object.
+    #: A SymbolDisplayOptions object.
     symbolOptions: SymbolDisplayOptions = SymbolDisplayOptions()
 
     #: A tuple of Strings specifying the names of the part instances that are visible in the

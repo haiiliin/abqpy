@@ -22,7 +22,7 @@ class CompositePly:
     #: A Float specifying the thickness of the section layer.
     thickness: float
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the composite ply applies.
+    #: A Region object specifying the region to which the composite ply applies.
     region: Region
 
     #: A String specifying the name of the material for the ply.
@@ -121,7 +121,7 @@ class CompositePly:
         thickness
             A Float specifying the thickness of the section layer.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the composite ply applies.
+            A Region object specifying the region to which the composite ply applies.
         material
             A String specifying the name of the material for the ply.
         plyName
@@ -182,7 +182,7 @@ class CompositePly:
         Returns
         -------
         CompositePly
-            A :py:class:`~abaqus.Property.CompositePly.CompositePly` object.
+            A CompositePly object.
 
         Raises
         ------

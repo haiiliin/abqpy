@@ -44,6 +44,6 @@ class LeafFromOdbEdgePick(Leaf):
         Returns
         -------
         LeafFromOdbEdgePick
-            A :py:class:`~abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick` object.
+            A LeafFromOdbEdgePick object.
         """
         super().__init__(DEFAULT_MODEL)

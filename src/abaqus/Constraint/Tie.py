@@ -31,13 +31,13 @@ class Tie(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
+    #: A Region object specifying the name of the main surface.
     #:
     #: .. versionchanged:: 2022
     #:     The `master` attribute was renamed to `main`.
     main: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
+    #: A Region object specifying the name of the secondary surface.
     #:
     #: .. versionchanged:: 2022
     #:     The `slave` attribute was renamed to `secondary`.
@@ -104,12 +104,12 @@ class Tie(Constraint):
         name
             A String specifying the constraint repository key.
         main
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the main surface.
+            A Region object specifying the name of the main surface.
 
             .. versionchanged:: 2022
                 The `master` argument was renamed to `main`.
         secondary
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the secondary surface.
+            A Region object specifying the name of the secondary surface.
 
             .. versionchanged:: 2022
                 The `slave` argument was renamed to `secondary`.
@@ -143,7 +143,7 @@ class Tie(Constraint):
         Returns
         -------
         Tie
-            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+            A Tie object.
         """
         super().__init__()
 

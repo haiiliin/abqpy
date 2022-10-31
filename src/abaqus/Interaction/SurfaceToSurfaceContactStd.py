@@ -55,10 +55,10 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+    #: A Region object specifying the main surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+    #: A Region object specifying the secondary surface.
     slave: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -124,7 +124,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: A Float specifying the adjust tolerance. The default value is 0.0.
     adjustTolerance: float = 0
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
+    #: A Region object specifying the Set object to which the adjustment is to be applied.
     adjustSet: Optional[Region] = None
 
     #: A SymbolicConstant specifying the discretization method. Possible values are
@@ -165,7 +165,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: for bolt clearance. The default value is COMPUTED.
     meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
-    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+    #: A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
     datumAxis: Optional[DatumAxis] = None
 
@@ -173,7 +173,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+    #: A Region object specifying the contact region for which clearance is specified.
     clearanceRegion: Optional[Region] = None
 
     #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
@@ -181,7 +181,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: default value is NONE.
     surfaceSmoothing: SymbolicConstant = NONE
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+    #: A Region object specifying the secondary node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
     bondingSet: Optional[Region] = None
 
@@ -252,9 +252,9 @@ class SurfaceToSurfaceContactStd(Interaction):
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
+            A Region object specifying the main surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
+            A Region object specifying the secondary surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -307,7 +307,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         adjustTolerance
             A Float specifying the adjust tolerance. The default value is 0.0.
         adjustSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
+            A Region object specifying the Set object to which the adjustment is to be applied.
         enforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
@@ -338,19 +338,19 @@ class SurfaceToSurfaceContactStd(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+            A Region object specifying the contact region for which clearance is specified.
         surfaceSmoothing
             A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+            A Region object specifying the secondary node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
@@ -369,7 +369,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         Returns
         -------
         SurfaceToSurfaceContactStd
-            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd` object.
+            A SurfaceToSurfaceContactStd object.
         """
         super().__init__()
 
@@ -465,7 +465,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         adjustTolerance
             A Float specifying the adjust tolerance. The default value is 0.0.
         adjustSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
+            A Region object specifying the Set object to which the adjustment is to be applied.
         enforcement
             A SymbolicConstant specifying the discretization method. Possible values are
             NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
@@ -496,19 +496,19 @@ class SurfaceToSurfaceContactStd(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+            A Region object specifying the contact region for which clearance is specified.
         surfaceSmoothing
             A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary node sub-set for bonding, used only when the
+            A Region object specifying the secondary node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT

@@ -41,7 +41,7 @@ class CrushStress:
     # An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
-    #: A :py:class:`~abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor` object.
+    #: A CrushStressVelocityFactor object.
     crushStressVelocityFactor: CrushStressVelocityFactor = CrushStressVelocityFactor(((),))
 
     @abaqus_method_doc

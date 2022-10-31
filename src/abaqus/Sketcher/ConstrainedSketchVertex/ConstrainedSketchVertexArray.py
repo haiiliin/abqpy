@@ -32,6 +32,6 @@ class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
         Returns
         -------
         ConstrainedSketchVertex
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object.
+            A ConstrainedSketchVertex object.
         """
         return ConstrainedSketchVertex()

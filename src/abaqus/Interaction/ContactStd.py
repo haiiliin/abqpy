@@ -43,44 +43,44 @@ class ContactStd(Interaction):
     #: applied to all eligible surfaces. The default value is ON.
     globalSmoothing: Boolean = ON
 
-    #: A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
+    #: A RegionPairs object specifying the domain pairs included in contact.
     includedPairs: RegionPairs = RegionPairs()
 
-    #: A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
+    #: A RegionPairs object specifying the domain pairs excluded from contact.
     excludedPairs: RegionPairs = RegionPairs()
 
-    #: A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
+    #: A ContactPropertyAssignment object specifying the contact property assignments in the
     #: contact domain.
     contactPropertyAssignments: ContactPropertyAssignment = ContactPropertyAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
+    #: A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
     #: contact domain.
     surfaceThicknessAssignments: SurfaceThicknessAssignment = SurfaceThicknessAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
+    #: A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
     #: the contact domain.
     surfaceOffsetAssignments: SurfaceOffsetAssignment = SurfaceOffsetAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+    #: A MainSecondaryAssignment object specifying the main-secondary assignments in the
     #: contact domain.
     #:
     #: .. versionchanged:: 2022
     #:     The attribute `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
-    #: An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
+    #: An InitializationAssignment object specifying the contact initialization assignments in
     #: the contact domain.
     initializationAssignments: InitializationAssignment = InitializationAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.StabilizationAssignment.StabilizationAssignment` object specifying the contact stabilization assignments in the
+    #: A StabilizationAssignment object specifying the contact stabilization assignments in the
     #: contact domain.
     stabilizationAssignments: StabilizationAssignment = StabilizationAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
+    #: A SmoothingAssignment object specifying the surface smoothing assignments in the contact
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
+    #: A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
     #: the contact domain.
     surfaceFeatureAssignments: SurfaceFeatureAssignment = SurfaceFeatureAssignment()
 
@@ -138,35 +138,35 @@ class ContactStd(Interaction):
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
         includedPairs
-            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
+            A RegionPairs object specifying the domain pairs included in contact.
         excludedPairs
-            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
+            A RegionPairs object specifying the domain pairs excluded from contact.
         contactPropertyAssignments
-            A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
+            A ContactPropertyAssignment object specifying the contact property assignments in the
             contact domain.
         surfaceThicknessAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
+            A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
             contact domain.
         surfaceOffsetAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
+            A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
             the contact domain.
         surfaceFeatureAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
+            A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
         surfaceBeamSmoothingAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
             assignments in the contact domain.
 
             .. versionadded:: 2021
                 The `surfaceBeamSmoothingAssignments` argument was added.
         surfaceVertexCriteriaAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
@@ -177,19 +177,19 @@ class ContactStd(Interaction):
             .. versionadded:: 2021
                 The `slidingFormulationAssignments` argument was added.
         mainSecondaryAssignments
-            A :py:class:`~abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment` object specifying the main-secondary assignments in the
+            A MainSecondaryAssignment object specifying the main-secondary assignments in the
             contact domain.
 
             .. versionchanged:: 2022
                 The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
         initializationAssignments
-            An :py:class:`~abaqus.Interaction.InitializationAssignment.InitializationAssignment` object specifying the contact initialization assignments in
+            An InitializationAssignment object specifying the contact initialization assignments in
             the contact domain.
         stabilizationAssignments
-            A :py:class:`~abaqus.Interaction.StabilizationAssignment.StabilizationAssignment` object specifying the contact stabilization assignments in the
+            A StabilizationAssignment object specifying the contact stabilization assignments in the
             contact domain.
         smoothingAssignments
-            A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
+            A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
         slidingTransitionAssignments
             A SlidingTransitionAssignments object specifying the sliding transition assignments in
@@ -198,7 +198,7 @@ class ContactStd(Interaction):
         Returns
         -------
         ContactStd
-            A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
+            A ContactStd object.
         """
         super().__init__()
 
@@ -242,19 +242,19 @@ class ContactStd(Interaction):
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
         surfaceBeamSmoothingAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment` object specifying the surface beam smoothing
+            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
             assignments in the contact domain.
 
             .. versionadded:: 2021
                 The `surfaceBeamSmoothingAssignments` argument was added.
         surfaceVertexCriteriaAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment` object specifying the surface vertex criteria
+            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
@@ -278,8 +278,8 @@ class ContactStd(Interaction):
         contactPropertyAssignments
             A sequence of tuples specifying the properties assigned to each surface pair. Each tuple
             contains three entries:
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant GLOBAL.
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant SELF.
+            - A Region object or the SymbolicConstant GLOBAL.
+            - A Region object or the SymbolicConstant SELF.
             - A String specifying an InteractionProperty object associated with this pair of
               regions.
         surfaceFeatureAssignments
@@ -322,14 +322,14 @@ class ContactStd(Interaction):
         initializationAssignments
             A sequence of tuples specifying the contact initialization data assigned to each surface
             pair. Each tuple contains three entries:
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant GLOBAL.
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant SELF.
+            - A Region object or the SymbolicConstant GLOBAL.
+            - A Region object or the SymbolicConstant SELF.
             - A String specifying a StdStabilization object associated with this pair of regions.
         stabilizationAssignments
             A sequence of tuples specifying the contact stabilization assigned to each surface pair.
             Each tuple contains three entries:
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant GLOBAL.
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant SELF.
+            - A Region object or the SymbolicConstant GLOBAL.
+            - A Region object or the SymbolicConstant SELF.
             - A String specifying a StdStabilization object associated with this pair of regions.
         smoothingAssignments
             A sequence of tuples specifying the surface smoothing assignments in the contact domain.
@@ -351,7 +351,7 @@ class ContactStd(Interaction):
         Returns
         -------
         ContactStd
-            A :py:class:`~abaqus.Interaction.ContactStd.ContactStd` object.
+            A ContactStd object.
         """
         super().__init__()
 

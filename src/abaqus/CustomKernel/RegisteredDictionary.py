@@ -28,7 +28,7 @@ class RegisteredDictionary(CommandRegister, dict):
         Returns
         -------
         RegisteredDictionary
-            A :py:class:`~abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary` object.
+            A RegisteredDictionary object.
         """
         super().__init__()
 

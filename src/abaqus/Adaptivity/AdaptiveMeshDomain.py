@@ -15,7 +15,7 @@ class AdaptiveMeshDomain:
             mdb.models[name].steps[name].adaptiveMeshDomains[name]
     """
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
+    #: A Region object specifying the region to which the adaptive mesh domain is applied.
     region: Region
 
     #: A String specifying the name of an AdaptiveMeshControl object.
@@ -52,7 +52,7 @@ class AdaptiveMeshDomain:
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh domain is applied.
+            A Region object specifying the region to which the adaptive mesh domain is applied.
         controls
             A String specifying the name of an AdaptiveMeshControl object.
         frequency
@@ -68,7 +68,7 @@ class AdaptiveMeshDomain:
         Returns
         -------
         AdaptiveMeshDomain
-            An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object.
+            An AdaptiveMeshDomain object.
 
         Raises
         ------

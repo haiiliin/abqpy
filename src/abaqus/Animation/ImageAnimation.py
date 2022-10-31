@@ -38,7 +38,7 @@ class ImageAnimation:
         Returns
         -------
         ImageAnimation
-            An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object.
+            An ImageAnimation object.
         """
         self.fileName = fileName
 

@@ -24,7 +24,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
     #: A Float specifying the translation distance.
@@ -65,7 +65,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         translation
             A Float specifying the translation distance.
         axis
@@ -82,7 +82,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
         Returns
         -------
         SizingCyclicSymmetry
-            A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
+            A SizingCyclicSymmetry object.
         """
         super().__init__()
 

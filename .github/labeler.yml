@@ -1,0 +1,23 @@
+# Add 'test' label to any change to files within the tests dir
+test:
+- any:
+  - 'tests/*'
+  - 'tests/**/*'
+
+# Add 'example' label to any change to files within the example dir
+example:
+- any:
+  - 'examples/*'
+  - 'examples/**/*'
+
+# Add 'docs` label to any change to files within the docs dir
+docs:
+- any:
+  - 'docs/*'
+  - 'docs/**/*'
+
+# Add 'translation` label to any change to files within the docs/source/locales dir
+translation:
+- any:
+  - 'docs/source/locales/*'
+  - 'docs/source/locales/**/*'

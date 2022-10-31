@@ -57,21 +57,21 @@ class Axis:
     #: outside of the axis.The default value is INSIDE.
     labelPlacement: SymbolicConstant = INSIDE
 
-    #: An :py:class:`~abaqus.XY.AxisData.AxisData` object specifying the numerical data of the axis.
+    #: An AxisData object specifying the numerical data of the axis.
     axisData: AxisData = AxisData()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the axis.
+    #: A LineStyle object specifying the line properties used to display the axis.
     lineStyle: LineStyle = LineStyle()
 
-    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying axis
+    #: A TextStyle object specifying the text properties to be used when displaying axis
     #: labels.
     labelStyle: TextStyle = TextStyle()
 
-    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying the axis
+    #: A TextStyle object specifying the text properties to be used when displaying the axis
     #: title.
     titleStyle: TextStyle = TextStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when displaying axis ticks.
+    #: A LineStyle object specifying the line properties to be used when displaying axis ticks.
     tickStyle: LineStyle = LineStyle()
 
     @abaqus_method_doc
@@ -93,7 +93,7 @@ class Axis:
         Parameters
         ----------
         axis
-            An :py:class:`~abaqus.XY.Axis.Axis` object from which attributes are to be copied.
+            An Axis object from which attributes are to be copied.
         labelFrequency
             An Int specifying the frequency of the labels with respect to the tick marks. The
             default value is 1.
@@ -103,10 +103,10 @@ class Axis:
             placed on the inside of the axis.OUTSIDE, specifying that the labels are placed on the
             outside of the axis.The default value is INSIDE.
         labelStyle
-            A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying axis
+            A TextStyle object specifying the text properties to be used when displaying axis
             labels.
         lineStyle
-            A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the axis.
+            A LineStyle object specifying the line properties used to display the axis.
         placement
             A SymbolicConstant specifying the placement of the axis on the grid. Possible values
             are:MIN_EDGE, specifying that the axis is placed at the minimum edge - for an abscissa
@@ -125,9 +125,9 @@ class Axis:
             placed on the outside of the axis.ACROSS, specifying that the tick marcks are placed
             across the axis.The default value is INSIDE.
         tickStyle
-            A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when displaying axis ticks.
+            A LineStyle object specifying the line properties to be used when displaying axis ticks.
         titleStyle
-            A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when displaying the axis
+            A TextStyle object specifying the text properties to be used when displaying the axis
             title.
         """
         ...
