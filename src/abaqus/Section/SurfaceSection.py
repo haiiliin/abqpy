@@ -25,7 +25,7 @@ class SurfaceSection(Section):
         - SURFACE SECTION
     """
 
-    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A RebarLayers object specifying reinforcement properties.
     rebarLayers: Optional[RebarLayers] = None
 
     #: A String specifying the repository key.
@@ -63,7 +63,7 @@ class SurfaceSection(Section):
         Returns
         -------
         SurfaceSection
-            A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
+            A SurfaceSection object.
 
         Raises
         ------

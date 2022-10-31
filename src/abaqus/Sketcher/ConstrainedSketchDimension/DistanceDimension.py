@@ -30,9 +30,9 @@ class DistanceDimension(ConstrainedSketchDimension):
         Parameters
         ----------
         entity1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
+            A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
         entity2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.
+            A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
 
             .. versionchanged:: 2017
                 The `vertex2` argument was renamed to `entity2`.
@@ -47,7 +47,7 @@ class DistanceDimension(ConstrainedSketchDimension):
         Returns
         -------
         ConstrainedSketchDimension
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
+            A ConstrainedSketchDimension object (None if the dimension cannot be created).
 
         """
         ...

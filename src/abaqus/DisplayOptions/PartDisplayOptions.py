@@ -44,20 +44,20 @@ class PartDisplayOptions:
     #: are WIREFRAME, HIDDEN, and SHADED. The default value is WIREFRAME.
     renderStyle: SymbolicConstant = WIREFRAME
 
-    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: A DisplayGroup object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
     displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
 
-    #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
+    #: An EngineeringFeatureDisplayOptions object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = EngineeringFeatureDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
+    #: A GeometryDisplayOptions object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions` object.
+    #: A MeshDisplayOptions object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
     @abaqus_method_doc

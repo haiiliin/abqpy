@@ -33,7 +33,7 @@ class OdbStep(OdbStepBase):
         description
             A String specifying the description of the HistoryRegion object.
         point
-            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+            A HistoryPoint object specifying the point to which the history data refer.
         loadCase
             None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
             object. The default value is None.
@@ -41,7 +41,7 @@ class OdbStep(OdbStepBase):
         Returns
         -------
         HistoryRegion
-            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+            A HistoryRegion object.
         """
         self.historyRegions[name] = historyRegion = HistoryRegion(name, description, point, loadCase)
         return historyRegion
@@ -72,7 +72,7 @@ class OdbStep(OdbStepBase):
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -101,7 +101,7 @@ class OdbStep(OdbStepBase):
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -119,7 +119,7 @@ class OdbStep(OdbStepBase):
         Parameters
         ----------
         loadCase
-            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
+            An OdbLoadCase object specifying the load case for the frame.
         description
             A String specifying the contents of the frame. The default value is an empty string.
         frequency
@@ -129,7 +129,7 @@ class OdbStep(OdbStepBase):
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -155,7 +155,7 @@ class OdbStep(OdbStepBase):
         Returns
         -------
         OdbLoadCase
-            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
+            An OdbLoadCase object.
         """
         self.loadCases[name] = odbLoadCase = OdbLoadCase(name)
         return odbLoadCase

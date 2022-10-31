@@ -54,14 +54,14 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
+            A Region object specifying the surface to which the **controlPoints** are adjusted.
         controlPoints
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
+            A Region object specifying the constraint control points.
 
         Returns
         -------
         AdjustPoints
-            An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
+            An AdjustPoints object.
         """
         self.constraints[name] = constraint = AdjustPoints(name, surface, controlPoints)
         return constraint
@@ -96,9 +96,9 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the coupling nodes are located.
+            A Region object specifying the surface on which the coupling nodes are located.
         controlPoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
+            A Region object specifying the constraint control point.
         influenceRadius
             The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.
         couplingType
@@ -145,7 +145,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         Coupling
-            A :py:class:`~abaqus.Constraint.Coupling.Coupling` object.
+            A Coupling object.
         """
         self.constraints[name] = constraint = Coupling(
             name,
@@ -179,9 +179,9 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         instance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance that is to be used for display only.
+            A PartInstance object specifying the part instance that is to be used for display only.
         controlPoints
-            A :py:class:`~abaqus.BasicGeometry.ModelDotArray.ModelDotArray` object specifying the motion of the PartInstance. The control points may
+            A ModelDotArray object specifying the motion of the PartInstance. The control points may
             be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of
             the PartInstance. If this argument is set to an empty sequence, the PartInstance will
             remain fixed in space during the analysis. The sequence can have either one object or
@@ -190,7 +190,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         DisplayBody
-            A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object.
+            A DisplayBody object.
         """
         self.constraints[name] = constraint = DisplayBody(name, instance, controlPoints)
         return constraint
@@ -218,9 +218,9 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         embeddedRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the body region to be embedded.
+            A Region object specifying the body region to be embedded.
         hostRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the host region. A value of None indicates that the host
+            A Region object specifying the host region. A value of None indicates that the host
             region is the whole model.
         weightFactorTolerance
             A Float specifying a small value below which the weighting factors will be zeroed out.
@@ -244,7 +244,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         EmbeddedRegion
-            An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object.
+            An EmbeddedRegion object.
         """
         self.constraints[name] = constraint = EmbeddedRegion(
             name,
@@ -277,7 +277,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         Equation
-            An :py:class:`~abaqus.Constraint.Equation.Equation` object.
+            An Equation object.
 
         Raises
         ------
@@ -309,10 +309,10 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are
+            A Region object specifying the surface on which the MultipointConstraint nodes are
             located.
         controlPoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
+            A Region object specifying the constraint control point.
         mpcType
             A SymbolicConstant specifying the MPC type of the constraint. Possible values are
             BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.
@@ -333,7 +333,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         MultipointConstraint
-            A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
+            A MultipointConstraint object.
         """
         self.constraints[name] = constraint = MultipointConstraint(
             name, surface, controlPoint, mpcType, csys, userType, userMode
@@ -364,7 +364,7 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         refPointRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point.
+            A Region object specifying the reference point.
         bodyRegion
             None or a Region object specifying the elements constrained to the movement of the
             reference point. The default value is None.
@@ -387,7 +387,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         RigidBody
-            A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object.
+            A RigidBody object.
         """
         self.constraints[name] = constraint = RigidBody(
             name,
@@ -424,9 +424,9 @@ class ConstraintModel(ModelBase):
         name
             A String specifying the constraint repository key.
         shellEdge
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface.
+            A Region object specifying the name of the shell edge surface.
         solidFace
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface.
+            A Region object specifying the name of the solid surface.
         positionToleranceMethod
             A SymbolicConstant specifying the method used to determine the position tolerance.
             Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
@@ -445,7 +445,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         ShellSolidCoupling
-            A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
+            A ShellSolidCoupling object.
         """
         self.constraints[name] = constraint = ShellSolidCoupling(
             name,
@@ -484,10 +484,23 @@ class ConstraintModel(ModelBase):
         ----------
         name
             A String specifying the constraint repository key.
+<<<<<<< HEAD
         master
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
         slave
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface.
+=======
+
+            .. versionchanged:: 2022
+                The `master` argument was renamed to `main`.
+        main
+            A Region object specifying the name of the main surface.
+
+            .. versionchanged:: 2022
+                The `slave` argument was renamed to `secondary`.
+        secondary
+            A Region object specifying the name of the secondary surface.
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.
@@ -518,7 +531,7 @@ class ConstraintModel(ModelBase):
         Returns
         -------
         Tie
-            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+            A Tie object.
         """
         self.constraints[name] = constraint = Tie(
             name,

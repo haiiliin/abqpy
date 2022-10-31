@@ -32,14 +32,14 @@ class IncidentWave(Interaction):
     #: A String specifying the name of the step in which the IncidentWave object is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave source point.
+    #: A Region object specifying the incident wave source point.
     sourcePoint: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave standoff point.This argument is not valid
+    #: A Region object specifying the incident wave standoff point.This argument is not valid
     #: when **definition** = CONWEP.
     standoffPoint: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface defining the incident wave interaction. In
+    #: A Region object specifying the surface defining the incident wave interaction. In
     #: problems involving fluid/surface boundaries, both the fluid surface and the solid
     #: surface comprising the boundary must have an incident wave interaction specified.
     surface: Region
@@ -119,12 +119,12 @@ class IncidentWave(Interaction):
         createStepName
             A String specifying the name of the step in which the IncidentWave object is created.
         sourcePoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave source point.
+            A Region object specifying the incident wave source point.
         standoffPoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the incident wave standoff point.This argument is not valid
+            A Region object specifying the incident wave standoff point.This argument is not valid
             when **definition** = CONWEP.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface defining the incident wave interaction. In
+            A Region object specifying the surface defining the incident wave interaction. In
             problems involving fluid/surface boundaries, both the fluid surface and the solid
             surface comprising the boundary must have an incident wave interaction specified.
         interactionProperty
@@ -165,7 +165,7 @@ class IncidentWave(Interaction):
         Returns
         -------
         IncidentWave
-            An :py:class:`~abaqus.Interaction.IncidentWave.IncidentWave` object.
+            An IncidentWave object.
         """
         super().__init__()
 

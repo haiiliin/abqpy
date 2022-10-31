@@ -65,7 +65,7 @@ class Ratios:
         Returns
         -------
         Ratios
-            A :py:class:`~abaqus.Material.Ratios.Ratios` object.
+            A Ratios object.
 
         Raises
         ------

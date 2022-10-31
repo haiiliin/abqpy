@@ -46,10 +46,10 @@ class Creep:
         - CREEP
     """
 
-    #: An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
+    #: An Ornl object.
     ornl: Ornl = Ornl()
 
-    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A Potential object.
     potential: Potential = Potential(((),))
 
     @abaqus_method_doc
@@ -87,7 +87,7 @@ class Creep:
         Returns
         -------
         Creep
-            A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
+            A Creep object.
 
         Raises
         ------

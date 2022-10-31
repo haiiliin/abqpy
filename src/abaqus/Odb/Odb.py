@@ -52,7 +52,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         Returns
         -------
         OdbPart
-            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
+            An OdbPart object.
         """
         self.parts[name] = odbPart = OdbPart(name, embeddedSpace, type)
         return odbPart
@@ -151,7 +151,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         Returns
         -------
         OdbStep
-            An :py:class:`~abaqus.Odb.OdbStep.OdbStep` object.
+            An OdbStep object.
 
         Raises
         ------
@@ -188,7 +188,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         Returns
         -------
         SectionCategory
-            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
+            A SectionCategory object.
         """
         self.sectionCategories[name] = sectionCategory = SectionCategory(name, description)
         return sectionCategory

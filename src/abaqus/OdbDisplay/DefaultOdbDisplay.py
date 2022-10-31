@@ -24,32 +24,32 @@ class DefaultOdbDisplay:
             session.defaultOdbDisplay
     """
 
-    #: A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
+    #: A BasicOptions object.
     basicOptions: BasicOptions = BasicOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object.
+    #: A CommonOptions object.
     commonOptions: CommonOptions = CommonOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object.
+    #: A ContourOptions object.
     contourOptions: ContourOptions = ContourOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object.
+    #: A DisplayBodyOptions object.
     displayBodyOptions: DisplayBodyOptions = DisplayBodyOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object.
+    #: A FreeBodyOptions object.
     freeBodyOptions: FreeBodyOptions = FreeBodyOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object.
+    #: A StreamOptions object.
     streamOptions: StreamOptions = StreamOptions()
 
-    #: An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object.
+    #: An OrientationOptions object.
     materialOrientationOptions: OrientationOptions = OrientationOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object.
+    #: A SuperimposeOptions object.
     superimposeOptions: SuperimposeOptions = SuperimposeOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object.
+    #: A SymbolOptions object.
     symbolOptions: SymbolOptions = SymbolOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object.
+    #: A ViewCutOptions object.
     viewCutOptions: ViewCutOptions = ViewCutOptions()

@@ -30,11 +30,25 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: is created.
     createStepName: str
 
+<<<<<<< HEAD
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
     master: Region
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
     slave: Region
+=======
+    #: A Region object specifying the main surface.
+    #:
+    #: .. versionchanged:: 2022
+    #:     The attribute `master` was renamed to `main`.
+    main: Region
+
+    #: A Region object specifying the secondary surface.
+    #:
+    #: .. versionchanged:: 2022
+    #:     The attribute `slave` was renamed to `secondary`.
+    secondary: Region
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
     #: SMALL.
@@ -81,7 +95,7 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: for bolt clearance. The default value is COMPUTED.
     meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
-    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+    #: A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
     datumAxis: Optional[DatumAxis] = None
 
@@ -89,7 +103,7 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+    #: A Region object specifying the contact region for which clearance is specified.
     clearanceRegion: Optional[Region] = None
 
     @abaqus_method_doc
@@ -128,10 +142,23 @@ class SurfaceToSurfaceContactExp(Interaction):
         createStepName
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
+<<<<<<< HEAD
         master
             A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
         slave
             A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
+=======
+        main
+            A Region object specifying the main surface.
+
+            .. versionchanged:: 2022
+                The argument `master` was renamed to `main`.
+        secondary
+            A Region object specifying the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument `slave` was renamed to `secondary`.
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -167,18 +194,18 @@ class SurfaceToSurfaceContactExp(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+            A Region object specifying the contact region for which clearance is specified.
 
         Returns
         -------
         SurfaceToSurfaceContactExp
-            A :py:class:`~abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp` object.
+            A SurfaceToSurfaceContactExp object.
         """
         super().__init__()
 
@@ -239,13 +266,13 @@ class SurfaceToSurfaceContactExp(Interaction):
             The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
             for bolt clearance. The default value is COMPUTED.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
+            A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
             clearance.
         useReverseDatumAxis
             A Boolean specifying whether to reverse the bolt clearance direction given by the datum
             axis. The default value is OFF.
         clearanceRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
+            A Region object specifying the contact region for which clearance is specified.
         """
         ...
 
