@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,7 +239,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -247,7 +247,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -459,7 +459,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -760,7 +760,7 @@ msgstr ""
 #: abaqus.Field.DiscreteField.DiscreteField.data:1
 #: abaqus.Field.DiscreteField.DiscreteField.setValues:12
 #: abaqus.Field.FieldModel.FieldModel.DiscreteField:24 of
-msgid "A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object."
+msgid "A DataTableArray object."
 msgstr ""
 
 #: ../../docstring abaqus.Field.AnalyticalField.AnalyticalField.description:1
@@ -819,7 +819,7 @@ msgstr ""
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:21
 #: abaqus.Field.DiscreteField.DiscreteField.__init__:35
 #: abaqus.Field.FieldModel.FieldModel.DiscreteField:35 of
-msgid "A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object."
+msgid "A DiscreteField object."
 msgstr ""
 
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData
@@ -888,7 +888,7 @@ msgstr ""
 
 #: abaqus.Field.ExpressionField.ExpressionField.__init__:23
 #: abaqus.Field.FieldModel.FieldModel.ExpressionField:23 of
-msgid "An :py:class:`~abaqus.Field.ExpressionField.ExpressionField` object."
+msgid "An ExpressionField object."
 msgstr ""
 
 #: abaqus.Field.ExpressionField.ExpressionField.__init__:24
@@ -1054,7 +1054,7 @@ msgstr ""
 
 #: abaqus.Field.FieldModel.FieldModel.MappedField:78
 #: abaqus.Field.MappedField.MappedField.__init__:78 of
-msgid "A :py:class:`~abaqus.Field.MappedField.MappedField` object."
+msgid "A MappedField object."
 msgstr ""
 
 #: abaqus.Field.FieldModel.FieldModel.MappedField:79
@@ -1159,7 +1159,7 @@ msgstr ""
 #: abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:125
 #: abaqus.Field.AnalyticalField.AnalyticalField.odbMeshRegionData:1
 #: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:128 of
-msgid "An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object."
+msgid "An OdbMeshRegionData object."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1786,16 +1786,14 @@ msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:15 of
 msgid ""
-"A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
-"specifying the elements for which volume fraction values will be "
-"computed."
+"A PartInstance object specifying the elements for which volume fraction "
+"values will be computed."
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:18 of
 msgid ""
-"A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
-"specifying the region that either contains material or is empty of "
-"material."
+"A PartInstance object specifying the region that either contains material"
+" or is empty of material."
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:21 of
@@ -1831,7 +1829,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:19 of
-msgid "A :py:class:`~abaqus.Region.Region.Region` object for the field."
+msgid "A Region object for the field."
 msgstr ""
 
 #: abaqus.Field.DiscreteField.DiscreteField.__init__:9 of
@@ -2089,8 +2087,8 @@ msgstr ""
 #: ../../None:21:<autosummary>:1 ../../docstring
 #: abaqus.Field.MappedField.MappedField.odbMeshRegionData:1 of
 msgid ""
-"An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object "
-"specifying the external source data from ODB mesh region."
+"An OdbMeshRegionData object specifying the external source data from ODB "
+"mesh region."
 msgstr ""
 
 #: ../../None:21:<autosummary>:1
@@ -3115,5 +3113,54 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "OdbMeshRegionData"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Field.ExpressionField.ExpressionField` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Field.MappedField.MappedField` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the elements for which"
+#~ " volume fraction values will be "
+#~ "computed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` "
+#~ "object specifying the region that either"
+#~ " contains material or is empty of "
+#~ "material."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Region.Region.Region` object for the field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`"
+#~ " object specifying the external source "
+#~ "data from ODB mesh region."
 #~ msgstr ""
 
