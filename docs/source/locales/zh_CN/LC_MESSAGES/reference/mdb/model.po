@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.keywordBlock:1 of
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.rootAssembly:1 of
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -531,7 +531,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.featureOptions:1 of
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -3146,7 +3146,7 @@ msgstr ""
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:66
 #: abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:19
 #: abaqus.Model.ModelBase.ModelBase.__init__:39 of
-msgid "A :py:class:`~abaqus.Model.Model.Model` object."
+msgid "A Model object."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile
@@ -3414,8 +3414,7 @@ msgid ""
 "general rule, edits to the KeywordBlock object should be made as the last"
 " step prior to writing the actual Abaqus input file, thus avoiding "
 "possible conflicts with changes made using other MDB commands. The "
-"KeywordBlock object has no constructor. A "
-":py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object is created "
+"KeywordBlock object has no constructor. A KeywordBlock object is created "
 "when you create a model object. A model object contains only one "
 "KeywordBlock object."
 msgstr ""
@@ -29257,5 +29256,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "ModelBase"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.Model.Model` object."
 #~ msgstr ""
 
