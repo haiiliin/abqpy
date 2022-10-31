@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -935,7 +935,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:7
-msgid "A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A CommonOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:14
@@ -1551,7 +1551,7 @@ msgid "Check `ContourOptions.setValues on help.3ds.com/2023 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:7
-msgid "A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A ContourOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:17
@@ -1649,7 +1649,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.basicOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object."
+msgid "A BasicOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1660,7 +1660,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.commonOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.commonOptions:1
-msgid "A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object."
+msgid "A CommonOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1671,7 +1671,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.contourOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.contourOptions:1
-msgid "A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object."
+msgid "A ContourOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1682,7 +1682,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.displayBodyOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayBodyOptions:1
-msgid "A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object."
+msgid "A DisplayBodyOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1693,7 +1693,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.freeBodyOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.freeBodyOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object."
+msgid "A FreeBodyOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1704,7 +1704,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.streamOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.streamOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object."
+msgid "A StreamOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1715,7 +1715,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.materialOrientationOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.materialOrientationOptions:1
-msgid "An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object."
+msgid "An OrientationOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1726,7 +1726,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.superimposeOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.superimposeOptions:1
-msgid "A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object."
+msgid "A SuperimposeOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1737,7 +1737,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.symbolOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolOptions:1
-msgid "A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object."
+msgid "A SymbolOptions object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1748,7 +1748,7 @@ msgstr ""
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object."
+msgid "A ViewCutOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1
@@ -1881,7 +1881,7 @@ msgid "Check `DisplayBodyOptions.setValues on help.3ds.com/2023 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:7
-msgid "A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A DisplayBodyOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:36
@@ -1919,7 +1919,7 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldVariables:1
-msgid "An :py:class:`~abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList` object."
+msgid "An OdbFieldVarList object."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1928,7 +1928,7 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.modelVariableList:1
-msgid "An :py:class:`~abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList` object."
+msgid "An OdbModelFieldVarList object."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1953,7 +1953,7 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display:1
-msgid "A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object."
+msgid "A DisplayOptions object."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2003,7 +2003,7 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroup:1
-msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in the **displayGroups** member of Session."
+msgid "A DisplayGroup object specifying the current display group and referring to an object in the **displayGroups** member of Session."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2012,7 +2012,7 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroupInstances:1
-msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository` object."
+msgid "A DisplayGroupInstanceRepository object."
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2307,7 +2307,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.__init__:55
-msgid "A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object."
+msgid "A ViewCut object."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:0
@@ -2955,7 +2955,7 @@ msgid "Check `OrientationOptions.setValues on help.3ds.com/2023 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:7
-msgid "An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "An OrientationOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:14
@@ -3339,7 +3339,7 @@ msgid "Check `SuperimposeOptions.setValues on help.3ds.com/2023 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:7
-msgid "A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A SuperimposeOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:14
@@ -3925,7 +3925,7 @@ msgid "Check `SymbolOptions.setValues on help.3ds.com/2023 <https://help.3ds.com
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:7
-msgid "A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A SymbolOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:11

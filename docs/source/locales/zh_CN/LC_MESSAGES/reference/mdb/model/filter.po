@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,7 +245,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -253,7 +253,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -465,7 +465,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -943,7 +943,7 @@ msgstr ""
 #: abaqus.Filter.ButterworthFilter.ButterworthFilter.__init__:36
 #: abaqus.Filter.FilterModel.FilterModel.ButterworthFilter:36
 #: abaqus.Filter.FilterOdb.FilterOdb.ButterworthFilter:36 of
-msgid "A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object."
+msgid "A ButterworthFilter object."
 msgstr ""
 
 #: abaqus.Filter.ButterworthFilter.ButterworthFilter.__init__
@@ -1007,7 +1007,7 @@ msgstr ""
 #: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.__init__:39
 #: abaqus.Filter.FilterModel.FilterModel.Chebyshev1Filter:39
 #: abaqus.Filter.FilterOdb.FilterOdb.Chebyshev1Filter:39 of
-msgid "A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object."
+msgid "A Chebyshev1Filter object."
 msgstr ""
 
 #: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter.__init__:40
@@ -1037,7 +1037,7 @@ msgstr ""
 #: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.__init__:39
 #: abaqus.Filter.FilterModel.FilterModel.Chebyshev2Filter:39
 #: abaqus.Filter.FilterOdb.FilterOdb.Chebyshev2Filter:39 of
-msgid "A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object."
+msgid "A Chebyshev2Filter object."
 msgstr ""
 
 #: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter.__init__:40
@@ -1057,7 +1057,7 @@ msgstr ""
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter:36
 #: abaqus.Filter.FilterOdb.FilterOdb.OperatorFilter:36
 #: abaqus.Filter.OperatorFilter.OperatorFilter.__init__:36 of
-msgid "An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object."
+msgid "An OperatorFilter object."
 msgstr ""
 
 #: abaqus.Filter.FilterModel.FilterModel.OperatorFilter:37
@@ -1109,7 +1109,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Odb.OdbBase.OdbBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object."
+msgid "An OdbAssembly object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1117,7 +1117,7 @@ msgid ":py:obj:`jobData <abaqus.Odb.OdbBase.OdbBase.jobData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A :py:class:`~abaqus.Odb.JobData.JobData` object."
+msgid "A JobData object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1159,7 +1159,7 @@ msgid ":py:obj:`sectorDefinition <abaqus.Odb.OdbBase.OdbBase.sectorDefinition>`\
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object."
+msgid "A SectorDefinition object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1167,7 +1167,7 @@ msgid ":py:obj:`userData <abaqus.Odb.OdbBase.OdbBase.userData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A :py:class:`~abaqus.Odb.UserData.UserData` object."
+msgid "A UserData object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1175,9 +1175,7 @@ msgid ":py:obj:`customData <abaqus.Odb.OdbBase.OdbBase.customData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` "
-"object."
+msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -2000,5 +1998,46 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "OperatorFilter"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Odb.JobData.JobData` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Odb.UserData.UserData` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport`"
+#~ " object."
 #~ msgstr ""
 

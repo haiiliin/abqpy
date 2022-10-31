@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,9 +132,8 @@ msgstr ""
 #: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.meshEditOptions:1 of
 msgid ""
-"A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object "
-"specifying the undo/redo behavior when editing meshes on parts or part "
-"instances."
+"A MeshEditOptions object specifying the undo/redo behavior when editing "
+"meshes on parts or part instances."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -152,9 +151,7 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.customData:1 of
-msgid ""
-"A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` "
-"object."
+msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -529,7 +526,7 @@ msgid "Returns"
 msgstr ""
 
 #: abaqus.Mdb.Mdb.Mdb.Model:39 of
-msgid "**model** -- A :py:class:`~abaqus.Model.Model.Model` object"
+msgid "**model** -- A Model object"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
@@ -579,7 +576,7 @@ msgstr ""
 #: abaqus.Mdb.MdbBase.MdbBase.__init__:17
 #: abaqus.Mdb.MdbBase.MdbBase.importDxf:16
 #: abaqus.Mdb.MdbBase.MdbBase.openMdb:16 of
-msgid "A :py:class:`~abaqus.Mdb.Mdb.Mdb` object"
+msgid "A Mdb object"
 msgstr ""
 
 #: abaqus.Mdb.MdbBase.MdbBase.__init__:18
@@ -836,7 +833,7 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
 #: abaqus.Part.AcisMdb.AcisMdb.openStep:18
 #: abaqus.Part.AcisMdb.AcisMdb.openVda:15 of
-msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
+msgid "An AcisFile object."
 msgstr ""
 
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis:19
@@ -1323,7 +1320,7 @@ msgid "The `licenseType` argument was added."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:100 of
-msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
+msgid "A ModelJob object."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:101 of
@@ -1465,7 +1462,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:48 of
-msgid "An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object."
+msgid "An OptimizationProcess object."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:49 of
@@ -2514,5 +2511,36 @@ msgstr ""
 #~ "Windows workstation; however, the `at` "
 #~ "command is available only on Linux "
 #~ "platforms."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions`"
+#~ " object specifying the undo/redo behavior"
+#~ " when editing meshes on parts or "
+#~ "part instances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "**model** -- A :py:class:`~abaqus.Model.Model.Model` object"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Mdb.Mdb.Mdb` object"
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` "
+#~ "object."
 #~ msgstr ""
 

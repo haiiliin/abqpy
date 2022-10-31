@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -332,7 +332,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -340,7 +340,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -552,7 +552,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1629,8 +1629,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.region:1
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the boundary condition is applied."
+"A Region object specifying the region to which the boundary condition is "
+"applied."
 msgstr ""
 
 #: ../../docstring
@@ -1964,10 +1964,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC:57
 #: of
-msgid ""
-"**bc** -- An "
-":py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` "
-"object."
+msgid "**bc** -- An AccelerationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.__init__
@@ -2095,9 +2092,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:10
 #: of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a"
-" tuple containing one center of rotation. The default value is the global"
-" origin. This argument applies only when **dof** = UR1, UR2, or UR3."
+"A ModelDot object specifying a tuple containing one center of rotation. "
+"The default value is the global origin. This argument applies only when "
+"**dof** = UR1, UR2, or UR3."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../docstring
@@ -2114,7 +2111,7 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.correlation:1
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:13
 #: of
-msgid "A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object."
+msgid "A Correlation object."
 msgstr ""
 
 #: ../../docstring
@@ -2158,10 +2155,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC:37
 #: of
-msgid ""
-"**bc** -- An "
-":py:class:`~abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC`"
-" object."
+msgid "**bc** -- An AccelerationBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.__init__:38
@@ -2225,10 +2219,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC:36
 #: of
-msgid ""
-"**bc** -- An "
-":py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC`"
-" object."
+msgid "**bc** -- An AcousticPressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.__init__:37
@@ -2255,10 +2246,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC:36
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` "
-"object."
+msgid "**bc** -- A ConcentrationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC:37
@@ -2426,10 +2414,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:64
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC`"
-" object."
+msgid "**bc** -- A ConnAccelerationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:65
@@ -2554,10 +2539,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC:71
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC`"
-" object."
+msgid "**bc** -- A ConnDisplacementBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC:72
@@ -2639,10 +2621,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC:64
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` "
-"object."
+msgid "**bc** -- A ConnVelocityBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC:65
@@ -2739,10 +2718,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:68
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` "
-"object"
+msgid "**bc** -- A DisplacementBC object"
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:69
@@ -2760,10 +2736,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC:37
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC`"
-" object."
+msgid "**bc** -- A DisplacementBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC:38
@@ -2791,10 +2764,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC:36
 #: of
-msgid ""
-"**bc** -- An "
-":py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC`"
-" object."
+msgid "**bc** -- An ElectricPotentialBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC:37
@@ -2826,7 +2796,7 @@ msgstr ""
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.YsymmBC:26
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.ZasymmBC:26
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.ZsymmBC:26 of
-msgid "A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object."
+msgid "A TypeBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC:27
@@ -2888,9 +2858,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC:28
 #: of
-msgid ""
-"**bc** -- An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` "
-"object."
+msgid "**bc** -- An EulerianBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC:29
@@ -3209,10 +3177,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC:95
 #: of
-msgid ""
-"**bc** -- An "
-":py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` "
-"object."
+msgid "**bc** -- An EulerianMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC:96
@@ -3246,10 +3211,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC:28
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC`"
-" object."
+msgid "**bc** -- A FluidCavityPressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC:29
@@ -3298,10 +3260,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:42
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC`"
-" object."
+msgid "**bc** -- A MagneticVectorPotentialBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:43
@@ -3328,10 +3287,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC:36
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` "
-"object."
+msgid "**bc** -- A MaterialFlowBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC:37
@@ -3364,10 +3320,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC:36
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` "
-"object."
+msgid "**bc** -- A PorePressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC:37
@@ -3444,10 +3397,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:39
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC`"
-" object."
+msgid "**bc** -- A RetainedNodalDofsBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:40
@@ -3468,9 +3418,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.__init__:16
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.regions:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the region to which the boundary condition is applied. Note that the "
-"usual **region** is ignored. The default value is MODEL."
+"A RegionArray object specifying the region to which the boundary "
+"condition is applied. Note that the usual **region** is ignored. The "
+"default value is MODEL."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC:19
@@ -3482,10 +3432,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC:21
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` "
-"object."
+msgid "**bc** -- A SecondaryBaseBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC:22
@@ -3615,9 +3562,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:63
 #: of
-msgid ""
-"**bc** -- A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` "
-"object."
+msgid "**bc** -- A SubmodelBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:64
@@ -3648,9 +3593,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:38
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object."
+msgid "**bc** -- A TemperatureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:39
@@ -3723,9 +3666,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:57
 #: of
-msgid ""
-"**bc** -- A :py:class:`~abaqus.BoundaryCondition.VelocityBC.VelocityBC` "
-"object."
+msgid "**bc** -- A VelocityBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:58
@@ -3742,10 +3683,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC:37
 #: of
-msgid ""
-"**bc** -- A "
-":py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC`"
-" object."
+msgid "**bc** -- A VelocityBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC:38
@@ -4581,9 +4519,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a"
-" tuple containing one center of rotation."
+msgid "A ModelDot object specifying a tuple containing one center of rotation."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -4669,10 +4605,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.__init__:37
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC`"
-" object."
+msgid "An AccelerationBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValues:5
@@ -4943,9 +4876,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.__init__:57 of
-msgid ""
-"An :py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` "
-"object."
+msgid "An AccelerationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValues:5 of
@@ -5342,10 +5273,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.__init__:36
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC`"
-" object."
+msgid "An AcousticPressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValues:5
@@ -5528,9 +5456,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.__init__:36 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` "
-"object."
+msgid "A ConcentrationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValues:5 of
@@ -5731,10 +5657,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.__init__:64
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC`"
-" object."
+msgid "A ConnAccelerationBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:5
@@ -6175,10 +6098,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.__init__:71
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC`"
-" object."
+msgid "A ConnDisplacementBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValues:5
@@ -6584,9 +6504,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.__init__:64 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` "
-"object."
+msgid "A ConnVelocityBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:5 of
@@ -6993,10 +6911,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.__init__:37
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC`"
-" object."
+msgid "A DisplacementBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValues:5
@@ -7156,9 +7071,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.__init__:68 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` "
-"object."
+msgid "A DisplacementBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:5 of
@@ -7546,10 +7459,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.__init__:36
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC`"
-" object."
+msgid "An ElectricPotentialBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValues:5
@@ -7748,7 +7658,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.__init__:28 of
-msgid "An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object."
+msgid "An EulerianBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValues:5 of
@@ -8231,10 +8141,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.__init__:95 of
-msgid ""
-"An "
-":py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` "
-"object."
+msgid "An EulerianMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValues:5 of
@@ -8495,10 +8402,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.__init__:28
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC`"
-" object."
+msgid "A FluidCavityPressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues:5
@@ -8679,10 +8583,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.__init__:42
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC`"
-" object."
+msgid "A MagneticVectorPotentialBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues:5
@@ -8811,9 +8712,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.__init__:36 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` "
-"object."
+msgid "A MaterialFlowBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValues:5 of
@@ -8990,9 +8889,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.__init__:36 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` "
-"object."
+msgid "A PorePressureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValues:5 of
@@ -9161,10 +9058,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.__init__:39
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC`"
-" object."
+msgid "A RetainedNodalDofsBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValues:5
@@ -9257,8 +9151,8 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the region to which the boundary condition is applied."
+"A RegionArray object specifying the region to which the boundary "
+"condition is applied."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -9323,9 +9217,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.__init__:21 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` "
-"object."
+msgid "A SecondaryBaseBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValuesInStep:5
@@ -9488,7 +9380,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.__init__:63 of
-msgid "A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object."
+msgid "A SubmodelBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:5 of
@@ -9849,9 +9741,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.__init__:38 of
-msgid ""
-"A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` "
-"object."
+msgid "A TemperatureBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:5 of
@@ -10283,10 +10173,7 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.__init__:37
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC`"
-" object."
+msgid "A VelocityBaseMotionBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:5
@@ -10423,7 +10310,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.__init__:57 of
-msgid "A :py:class:`~abaqus.BoundaryCondition.VelocityBC.VelocityBC` object."
+msgid "A VelocityBC object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:5 of
@@ -14402,5 +14289,193 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "VelocityBCState"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "boundary condition is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying a tuple containing one"
+#~ " center of rotation. The default "
+#~ "value is the global origin. This "
+#~ "argument applies only when **dof** = "
+#~ "UR1, UR2, or UR3."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC`"
+#~ " object"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- An "
+#~ ":py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the region to which"
+#~ " the boundary condition is applied. "
+#~ "Note that the usual **region** is "
+#~ "ignored. The default value is MODEL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.VelocityBC.VelocityBC` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**bc** -- A "
+#~ ":py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` "
+#~ "object specifying a tuple containing one"
+#~ " center of rotation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the region to which"
+#~ " the boundary condition is applied."
 #~ msgstr ""
 
