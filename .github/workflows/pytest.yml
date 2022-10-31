@@ -56,7 +56,7 @@ jobs:
         if: matrix.python-version == '3.10' && github.event_name == 'pull_request'
         uses: actions/upload-artifact@v3
         with:
-          name: coverage
+          name: coverage.xml
           path: coverage.xml
 
   coverage:
