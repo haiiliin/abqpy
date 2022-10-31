@@ -56,7 +56,7 @@ class RectangularProfile(Profile):
         Returns
         -------
         RectangularProfile
-            A :py:class:`~abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile` object.
+            A RectangularProfile object.
 
         Raises
         ------

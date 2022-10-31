@@ -121,7 +121,7 @@ class CohesiveBehavior:
         Returns
         -------
         CohesiveBehavior
-            A :py:class:`~abaqus.Interaction.CohesiveBehavior.CohesiveBehavior` object.
+            A CohesiveBehavior object.
         """
         ...
 

@@ -12,7 +12,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TableCollectionAssembly(AssemblyBase):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -49,7 +49,7 @@ class TableCollectionAssembly(AssemblyBase):
         name
             A String specifying the key of the repository.
         elset
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region containing the elements that will be activated
+            A Region object specifying the region containing the elements that will be activated
             during the analysis.
         deformation
             A Boolean value specifying whether the elements that have not yet been activated will
@@ -65,7 +65,7 @@ class TableCollectionAssembly(AssemblyBase):
         Returns
         -------
         ElementProgressiveActivation
-            An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object.
+            An ElementProgressiveActivation object.
 
         Raises
         ------

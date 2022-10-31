@@ -42,16 +42,16 @@ class ConcreteDamagedPlasticity:
         - CONCRETE DAMAGED PLASTICITY
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening` object.
+    #: A ConcreteCompressionHardening object.
     concreteCompressionHardening: ConcreteCompressionHardening = ConcreteCompressionHardening(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening` object.
+    #: A ConcreteTensionStiffening object.
     concreteTensionStiffening: ConcreteTensionStiffening = ConcreteTensionStiffening(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage` object.
+    #: A ConcreteCompressionDamage object.
     concreteCompressionDamage: ConcreteCompressionDamage = ConcreteCompressionDamage(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage` object.
+    #: A ConcreteTensionDamage object.
     concreteTensionDamage: ConcreteTensionDamage = ConcreteTensionDamage(((),))
 
     @abaqus_method_doc
@@ -76,7 +76,7 @@ class ConcreteDamagedPlasticity:
         Returns
         -------
         ConcreteDamagedPlasticity
-            A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
+            A ConcreteDamagedPlasticity object.
 
         Raises
         ------

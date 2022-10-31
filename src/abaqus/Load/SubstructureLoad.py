@@ -22,7 +22,7 @@ class SubstructureLoad(Load):
     #: A String specifying the load repository key.
     name: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -49,7 +49,7 @@ class SubstructureLoad(Load):
         createStepName
             A String specifying the name of the step in which the substructure load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         loadCaseNames
             A list of names of the load cases that should be activated by this substructure load.
         magnitude
@@ -62,7 +62,7 @@ class SubstructureLoad(Load):
         Returns
         -------
         SubstructureLoad
-            A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
+            A SubstructureLoad object.
         """
         super().__init__()
 

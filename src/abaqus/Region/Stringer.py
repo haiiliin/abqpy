@@ -23,10 +23,10 @@ class Stringer:
             mdb.models[name].rootAssembly.stringers[name]
     """
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An EdgeArray object.
     edges: EdgeArray = EdgeArray([])
 
     @abaqus_method_doc
@@ -53,7 +53,7 @@ class Stringer:
         Returns
         -------
         Stringer
-            A :py:class:`~abaqus.Region.Stringer.Stringer` object.
+            A Stringer object.
         """
         ...
 
@@ -81,6 +81,6 @@ class Stringer:
         Returns
         -------
         Stringer
-            A :py:class:`~abaqus.Region.Stringer.Stringer` object.
+            A Stringer object.
         """
         ...

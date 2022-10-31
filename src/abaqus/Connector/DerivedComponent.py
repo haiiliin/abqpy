@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DerivedComponent:
-    """A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object describes user-customized components for use in defining
+    """A DerivedComponent object describes user-customized components for use in defining
     ConnectorFriction and Potential objects.
 
     .. note::
@@ -31,7 +31,7 @@ class DerivedComponent:
         - CONNECTOR DERIVED COMPONENT
     """
 
-    #: A :py:class:`~abaqus.Connector.CDCTermArray.CDCTermArray` object.
+    #: A CDCTermArray object.
     cdcTerms: CDCTermArray = []
 
     @abaqus_method_doc
@@ -53,7 +53,7 @@ class DerivedComponent:
         Returns
         -------
         DerivedComponent
-            A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
+            A DerivedComponent object.
 
         Raises
         ------
@@ -143,7 +143,7 @@ class DerivedComponent:
         Returns
         -------
         CDCTerm
-            A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
+            A CDCTerm object.
 
         Raises
         ------

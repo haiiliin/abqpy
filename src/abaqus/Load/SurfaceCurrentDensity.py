@@ -26,7 +26,7 @@ class SurfaceCurrentDensity(Load):
     #: UNIFORM and USER_DEFINED. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -56,7 +56,7 @@ class SurfaceCurrentDensity(Load):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         comp1
             A Complex specifying the first component of the load.
         comp2
@@ -74,7 +74,7 @@ class SurfaceCurrentDensity(Load):
         Returns
         -------
         SurfaceCurrentDensity
-            A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
+            A SurfaceCurrentDensity object.
         """
         super().__init__()
 

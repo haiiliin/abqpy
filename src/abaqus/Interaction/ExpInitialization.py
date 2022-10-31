@@ -131,7 +131,7 @@ class ExpInitialization(ContactInitialization):
         Returns
         -------
         ExpInitialization
-            An :py:class:`~abaqus.Interaction.ExpInitialization.ExpInitialization` object.
+            An ExpInitialization object.
 
         Raises
         ------

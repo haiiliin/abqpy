@@ -76,7 +76,7 @@ class AdaptivityIteration:
         Returns
         -------
         AdaptivityIteration
-            An :py:class:`~abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration` object.
+            An AdaptivityIteration object.
         """
         ...
 
@@ -102,7 +102,7 @@ class AdaptivityIteration:
         Returns
         -------
         ErrorIndicatorResult
-            An :py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` object.
+            An ErrorIndicatorResult object.
 
         Raises
         ------
@@ -148,7 +148,7 @@ class AdaptivityIteration:
         Returns
         -------
         RuleResult
-            A :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` object.
+            A RuleResult object.
 
         Raises
         ------
