@@ -33,7 +33,7 @@ class OdbFrame:
     #: An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
     mode: Optional[int] = None
 
-    #: An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
+    #: An OdbFrame object specifying the real or imaginary portion of the data corresponding to
     #: this cyclic symmetry mode.
     associatedFrame: Optional["OdbFrame"] = None
 
@@ -41,7 +41,7 @@ class OdbFrame:
     #: is a String representing an output variable.
     fieldOutputs: Dict[str, FieldOutput] = {}
 
-    #: An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
+    #: An OdbLoadCase object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")
 
     #: An Int specifying the frame increment number within the step. The base frame has
@@ -83,7 +83,7 @@ class OdbFrame:
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -112,7 +112,7 @@ class OdbFrame:
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -130,7 +130,7 @@ class OdbFrame:
         Parameters
         ----------
         loadCase
-            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
+            An OdbLoadCase object specifying the load case for the frame.
         description
             A String specifying the contents of the frame. The default value is an empty string.
         frequency
@@ -140,7 +140,7 @@ class OdbFrame:
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -197,7 +197,7 @@ class OdbFrame:
         Returns
         -------
         FieldOutput
-            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+            A FieldOutput object.
         """
         ...
 
@@ -215,7 +215,7 @@ class OdbFrame:
         Parameters
         ----------
         field
-            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+            A FieldOutput object.
         name
             A String specifying the name of the FieldOutput object.
         description
@@ -225,7 +225,7 @@ class OdbFrame:
         Returns
         -------
         FieldOutput
-            A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object.
+            A FieldOutput object.
         """
         ...
 

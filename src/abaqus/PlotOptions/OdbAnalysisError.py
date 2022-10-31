@@ -30,7 +30,7 @@ class OdbAnalysisError:
     #: String specifying the category of error. This attribute is read-only.
     category: str = ""
 
-    #: An :py:class:`~abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData` object.
+    #: An OdbAuxiliaryData object.
     data: OdbAuxiliaryData = OdbAuxiliaryData()
 
     #: String specifying the cause of the error. This attribute is read-only.

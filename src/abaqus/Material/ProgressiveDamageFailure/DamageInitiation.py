@@ -238,13 +238,13 @@ class DamageInitiation:
     #: A tuple of tuples of Floats specifying the items described in the "Table data" section.
     table: Optional[float] = None
 
-    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
+    #: A DamageEvolution object.
     damageEvolution: Optional[DamageEvolution] = None
 
-    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
+    #: A DamageStabilization object.
     damageStabilization: Optional[DamageStabilization] = None
 
-    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
+    #: A DamageStabilizationCohesive object.
     damageStabilizationCohesive: DamageStabilizationCohesive = DamageStabilizationCohesive()
 
     @abaqus_method_doc
@@ -265,7 +265,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -320,7 +320,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -346,7 +346,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -401,7 +401,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -427,7 +427,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -482,7 +482,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -508,7 +508,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -563,7 +563,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -590,7 +590,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -648,7 +648,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -675,7 +675,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -733,7 +733,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -759,7 +759,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -814,7 +814,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -840,7 +840,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -895,7 +895,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -922,7 +922,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -980,7 +980,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1007,7 +1007,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -1065,7 +1065,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1092,7 +1092,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -1150,7 +1150,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1177,7 +1177,7 @@ class DamageInitiation:
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -1235,7 +1235,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1261,7 +1261,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -1316,7 +1316,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1342,7 +1342,7 @@ class DamageInitiation:
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -1397,7 +1397,7 @@ class DamageInitiation:
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -1482,7 +1482,7 @@ class DamageInitiation:
         Returns
         -------
         DamageEvolution
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
+            A DamageEvolution object.
 
         Raises
         ------
@@ -1534,7 +1534,7 @@ class DamageInitiation:
         Returns
         -------
         DamageStabilizationCohesive
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
+            A DamageStabilizationCohesive object.
 
         Raises
         ------

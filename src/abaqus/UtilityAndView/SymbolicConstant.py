@@ -51,7 +51,7 @@ class SymbolicConstant(str):
         Returns
         -------
         SymbolicConstant
-            A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object.
+            A SymbolicConstant object.
         """
         if not text.isupper() or not text.isidentifier():
             raise ValueError(f"SymbolicConstant name {text} may only contain upper case, digit or underscore")

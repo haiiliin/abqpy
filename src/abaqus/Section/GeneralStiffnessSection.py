@@ -29,10 +29,10 @@ class GeneralStiffnessSection(ShellSection):
         - SHELL GENERAL SECTION
     """
 
-    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A RebarLayers object specifying reinforcement properties.
     rebarLayers: Optional[RebarLayers] = None
 
-    #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
+    #: A TransverseShearShell object specifying the transverse shear stiffness properties.
     transverseShear: Optional[TransverseShearShell] = None
 
     #: A String specifying the repository key.
@@ -153,7 +153,7 @@ class GeneralStiffnessSection(ShellSection):
         Returns
         -------
         GeneralStiffnessSection
-            A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
+            A GeneralStiffnessSection object.
         """
         super().__init__()
 

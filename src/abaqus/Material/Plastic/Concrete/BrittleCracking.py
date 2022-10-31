@@ -52,10 +52,10 @@ class BrittleCracking:
         - BRITTLE CRACKING
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear` object.
+    #: A BrittleShear object.
     brittleShear: BrittleShear = BrittleShear(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure` object.
+    #: A BrittleFailure object.
     brittleFailure: BrittleFailure = BrittleFailure(((),))
 
     @abaqus_method_doc
@@ -89,7 +89,7 @@ class BrittleCracking:
         Returns
         -------
         BrittleCracking
-            A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
+            A BrittleCracking object.
         """
         ...
 

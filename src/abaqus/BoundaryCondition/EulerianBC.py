@@ -41,7 +41,7 @@ class EulerianBC(BoundaryCondition):
     #: are MECHANICAL and THERMAL.
     category: Optional[SymbolicConstant] = None
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -73,7 +73,7 @@ class EulerianBC(BoundaryCondition):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         definition
             A SymbolicConstant specifying the flow conditions to be defined. Possible values are
             INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
@@ -88,7 +88,7 @@ class EulerianBC(BoundaryCondition):
         Returns
         -------
         EulerianBC
-            An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
+            An EulerianBC object.
         """
         super().__init__()
 
@@ -106,7 +106,7 @@ class EulerianBC(BoundaryCondition):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         definition
             A SymbolicConstant specifying the material flow conditions to be defined. Possible
             values are INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.

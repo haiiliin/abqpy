@@ -22,7 +22,7 @@ class IntegratedOutputSection:
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface over which the output is based.
+    #: A Region object specifying the surface over which the output is based.
     surface: Region
 
     #: None or a Region object specifying the anchor point about which the integrated moment
@@ -78,7 +78,7 @@ class IntegratedOutputSection:
         name
             A String specifying the repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface over which the output is based.
+            A Region object specifying the surface over which the output is based.
         refPoint
             None or a Region object specifying the anchor point about which the integrated moment
             over the output region is computed or the SymbolicConstant None representing the global
@@ -108,7 +108,7 @@ class IntegratedOutputSection:
         Returns
         -------
         IntegratedOutputSection
-            An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
+            An IntegratedOutputSection object.
         """
         ...
 
@@ -127,7 +127,7 @@ class IntegratedOutputSection:
         Parameters
         ----------
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface over which the output is based.
+            A Region object specifying the surface over which the output is based.
         refPoint
             None or a Region object specifying the anchor point about which the integrated moment
             over the output region is computed or the SymbolicConstant None representing the global

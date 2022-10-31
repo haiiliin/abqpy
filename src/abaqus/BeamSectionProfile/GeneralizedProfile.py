@@ -88,7 +88,7 @@ class GeneralizedProfile(Profile):
         Returns
         -------
         GeneralizedProfile
-            A :py:class:`~abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile` object.
+            A GeneralizedProfile object.
 
         Raises
         ------

@@ -31,6 +31,6 @@ class UserDefinedField:
         Returns
         -------
         UserDefinedField
-            A :py:class:`~abaqus.Material.Others.User.UserDefinedField.UserDefinedField` object.
+            A UserDefinedField object.
         """
         ...

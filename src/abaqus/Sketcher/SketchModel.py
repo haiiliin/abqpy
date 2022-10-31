@@ -52,7 +52,7 @@ class SketchModel(ModelBase):
         Returns
         -------
         sketch: ConstrainedSketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object.
+            A ConstrainedSketch object.
         """
         self.sketches[name] = sketch = ConstrainedSketch(name, sheetSize, gridSpacing, transform)
         return sketch

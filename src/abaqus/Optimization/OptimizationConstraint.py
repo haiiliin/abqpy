@@ -71,7 +71,7 @@ class OptimizationConstraint:
         Returns
         -------
         OptimizationConstraint
-            An :py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint` object.
+            An OptimizationConstraint object.
 
         Raises
         ------

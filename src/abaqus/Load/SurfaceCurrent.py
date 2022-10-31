@@ -33,7 +33,7 @@ class SurfaceCurrent(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -62,7 +62,7 @@ class SurfaceCurrent(Load):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -80,7 +80,7 @@ class SurfaceCurrent(Load):
         Returns
         -------
         SurfaceCurrent
-            A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
+            A SurfaceCurrent object.
         """
         super().__init__()
 

@@ -34,7 +34,7 @@ class BodyConcentrationFlux(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -62,7 +62,7 @@ class BodyConcentrationFlux(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body concentration flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -81,7 +81,7 @@ class BodyConcentrationFlux(Load):
         Returns
         -------
         BodyConcentrationFlux
-            A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
+            A BodyConcentrationFlux object.
         """
         super().__init__()
 

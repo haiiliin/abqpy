@@ -76,7 +76,7 @@ class HistoryOutput:
         Returns
         -------
         HistoryOutput
-            A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
+            A HistoryOutput object.
         """
         ...
 

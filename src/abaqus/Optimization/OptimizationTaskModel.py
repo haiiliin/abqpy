@@ -146,7 +146,7 @@ class OptimizationTaskModel(ModelBase):
         Returns
         -------
         BeadTask
-            A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object.
+            A BeadTask object.
         """
         self.optimizationTasks[name] = optimizationTask = BeadTask(
             name,
@@ -380,7 +380,7 @@ class OptimizationTaskModel(ModelBase):
         Returns
         -------
         ShapeTask
-            A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object.
+            A ShapeTask object.
         """
         self.optimizationTasks[name] = optimizationTask = ShapeTask(
             name,
@@ -496,7 +496,7 @@ class OptimizationTaskModel(ModelBase):
         Returns
         -------
         SizingTask
-            A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object.
+            A SizingTask object.
         """
         self.optimizationTasks[name] = optimizationTask = SizingTask(
             name,
@@ -682,7 +682,7 @@ class OptimizationTaskModel(ModelBase):
         Returns
         -------
         TopologyTask
-            A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object.
+            A TopologyTask object.
         """
         self.optimizationTasks[name] = optimizationTask = TopologyTask(
             name,

@@ -31,10 +31,10 @@ class ShellSolidCoupling(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface.
+    #: A Region object specifying the name of the shell edge surface.
     shellEdge: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface.
+    #: A Region object specifying the name of the solid surface.
     solidFace: Region
 
     #: A SymbolicConstant specifying the method used to determine the position tolerance.
@@ -78,9 +78,9 @@ class ShellSolidCoupling(Constraint):
         name
             A String specifying the constraint repository key.
         shellEdge
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface.
+            A Region object specifying the name of the shell edge surface.
         solidFace
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface.
+            A Region object specifying the name of the solid surface.
         positionToleranceMethod
             A SymbolicConstant specifying the method used to determine the position tolerance.
             Possible values are COMPUTED and SPECIFIED. The default value is COMPUTED.
@@ -99,7 +99,7 @@ class ShellSolidCoupling(Constraint):
         Returns
         -------
         ShellSolidCoupling
-            A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object.
+            A ShellSolidCoupling object.
         """
         super().__init__()
 

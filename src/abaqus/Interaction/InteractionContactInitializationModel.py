@@ -75,7 +75,7 @@ class InteractionContactInitializationModel(ModelBase):
         Returns
         -------
         ExpInitialization
-            An :py:class:`~abaqus.Interaction.ExpInitialization.ExpInitialization` object.
+            An ExpInitialization object.
 
         Raises
         ------
@@ -140,7 +140,7 @@ class InteractionContactInitializationModel(ModelBase):
         Returns
         -------
         StdInitialization
-            A :py:class:`~abaqus.Interaction.StdInitialization.StdInitialization` object.
+            A StdInitialization object.
 
         Raises
         ------

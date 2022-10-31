@@ -22,13 +22,13 @@ class FixedConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the item to fix in
+            A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the item to fix in
             space.
 
         Returns
         -------
         ConstrainedSketchConstraint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+            A ConstrainedSketchConstraint object.
 
         """
         ...

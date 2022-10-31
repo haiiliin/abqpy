@@ -110,7 +110,7 @@ class OdbData(_OptionsBase):
     #: repository is read-only.
     ties: Dict[str, TieConstraint] = {}
 
-    #: An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` object.
+    #: An OdbDiagnosticData object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
     @abaqus_method_doc
