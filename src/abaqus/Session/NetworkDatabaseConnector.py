@@ -114,7 +114,7 @@ class NetworkDatabaseConnector:
         Returns
         -------
         NetworkDatabaseConnector
-            A :py:class:`~abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector` object.
+            A NetworkDatabaseConnector object.
         """
         ...
 

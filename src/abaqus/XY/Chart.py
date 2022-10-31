@@ -15,7 +15,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class Chart:
-    """The Chart object is used to display XYCurve objects. A :py:class:`~abaqus.XY.Chart.Chart` object is automatically
+    """The Chart object is used to display XYCurve objects. A Chart object is automatically
     created when creating an XYPlot object
 
     .. note::
@@ -41,46 +41,46 @@ class Chart:
     #: the Chart.
     curves: Dict[str, XYCurve] = {}
 
-    #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
+    #: An AxisArray object specifying a read-only sequence of axis objects displayed as axes1 -
     #: the abscissa for a Cartesian chart.
     axes1: AxisArray = []
 
-    #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes2 -
+    #: An AxisArray object specifying a read-only sequence of axis objects displayed as axes2 -
     #: the ordinate for a Cartesian chart.
     axes2: AxisArray = []
 
-    #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the chart.
+    #: An Area object specifying position, padding, background and borders of the chart.
     area: Area = Area()
 
-    #: An :py:class:`~abaqus.XY.Area.Area` object specifying how to display the grid area.
+    #: An Area object specifying how to display the grid area.
     gridArea: Area = Area()
 
-    #: A :py:class:`~abaqus.XY.Legend.Legend` object specifying the attributes for the legend of the chart.
+    #: A Legend object specifying the attributes for the legend of the chart.
     legend: Legend = Legend()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
+    #: A LineStyle object specifying the line properties to be used when drawing major
     #: gridlines along axis 1.
     majorAxis1GridStyle: LineStyle = LineStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing major
+    #: A LineStyle object specifying the line properties to be used when drawing major
     #: gridlines along axis 2.
     majorAxis2GridStyle: LineStyle = LineStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
+    #: A LineStyle object specifying the line properties to be used when drawing minor
     #: gridlines along axis 1.
     minorAxis1GridStyle: LineStyle = LineStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties to be used when drawing minor
+    #: A LineStyle object specifying the line properties to be used when drawing minor
     #: gridlines along axis 2.
     minorAxis2GridStyle: LineStyle = LineStyle()
 
-    #: A :py:class:`~abaqus.XY.TextStyle.TextStyle` object specifying the text properties to be used when creating tags.
+    #: A TextStyle object specifying the text properties to be used when creating tags.
     tagTextStyle: TextStyle = TextStyle()
 
-    #: An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying the area properties to be used when creating tags.
+    #: An AreaStyle object specifying the area properties to be used when creating tags.
     tagAreaStyle: AreaStyle = AreaStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the tag area border properties to be used when creating
+    #: A LineStyle object specifying the tag area border properties to be used when creating
     #: tags.
     tagBorder: LineStyle = LineStyle()
 
@@ -127,7 +127,7 @@ class Chart:
         Returns
         -------
         Axis
-            An :py:class:`~abaqus.XY.Axis.Axis` object.
+            An Axis object.
 
         Raises
         ------
@@ -155,7 +155,7 @@ class Chart:
         Returns
         -------
         Axis
-            An :py:class:`~abaqus.XY.Axis.Axis` object.
+            An Axis object.
 
         Raises
         ------
@@ -219,11 +219,11 @@ class Chart:
         Parameters
         ----------
         chart
-            A :py:class:`~abaqus.XY.Chart.Chart` object from which attributes are to be copied.
+            A Chart object from which attributes are to be copied.
         curvesToPlot
             A sequence of Strings specifying the names of the curves to plot. In addition to this
             type, the argument can also be one of the following:A String specifying the name of the
-            curve to plot.An :py:class:`~abaqus.XY.XYCurve.XYCurve` object specifying the curve to plot.A sequence of XYCurve
+            curve to plot.An XYCurve object specifying the curve to plot.A sequence of XYCurve
             objects specifying the curves to plot (as returned by the curveSet method).
         aspectRatio
             A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
@@ -232,7 +232,7 @@ class Chart:
             A sequence of Floats specifying a transformation matrix used to scale or pan along the
             axes of the Chart.
         view
-            A :py:class:`~abaqus.UtilityAndView.View.View` object.
+            A View object.
         useQuantityType
             A Boolean specifying whether to use the QuantityType to associate curves with axes. The
             default value is ON.

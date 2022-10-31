@@ -58,10 +58,10 @@ class Diffusivity:
         - DIFFUSIVITY
     """
 
-    #: A :py:class:`~abaqus.Material.Others.MassDiffusion.PressureEffect.PressureEffect` object.
+    #: A PressureEffect object.
     pressureEffect: PressureEffect = PressureEffect(((),))
 
-    #: A :py:class:`~abaqus.Material.Others.MassDiffusion.SoretEffect.SoretEffect` object.
+    #: A SoretEffect object.
     soretEffect: SoretEffect = SoretEffect(((),))
 
     @abaqus_method_doc
@@ -99,7 +99,7 @@ class Diffusivity:
         Returns
         -------
         Diffusivity
-            A :py:class:`~abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity` object.
+            A Diffusivity object.
 
         Raises
         ------

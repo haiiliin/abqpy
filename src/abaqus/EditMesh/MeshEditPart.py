@@ -202,7 +202,7 @@ class MeshEditPart(PartBase):
             A Float specifying an offset to apply to the value of the third coordinate of the
             specified nodes.
         localCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global
+            A DatumCsys object specifying the local coordinate system. If unspecified, the global
             coordinate system will be used.
         projectToGeometry
             A Boolean specifying whether to project nodes back to their original geometry. For
@@ -266,7 +266,7 @@ class MeshEditPart(PartBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the domain to be offset.
+            A Region object specifying the domain to be offset.
         meshType
             A Symbolic Constant specifying the type of mesh to be generated. Possible values are
             SOLID or SHELL.
@@ -363,9 +363,9 @@ class MeshEditPart(PartBase):
         Parameters
         ----------
         node1
-            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the first node to merge.
+            A MeshNode object specifying the first node to merge.
         node2
-            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the second node to merge.
+            A MeshNode object specifying the second node to merge.
         removeDuplicateElements
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is True.
@@ -388,7 +388,7 @@ class MeshEditPart(PartBase):
         pickedElements
             A sequence of MeshElement objects specifying the elements to orient.
         referenceRegion
-            A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying a reference top face that indicates the desired
+            A MeshFace object specifying a reference top face that indicates the desired
             orientation.
         """
         ...
@@ -539,12 +539,12 @@ class MeshEditPart(PartBase):
             subdivided according to this number in all possible directions. Must be greater than
             one. Default is 2.
         face
-            A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object that serves as a reference for indicating two topological directions
+            A MeshFace object that serves as a reference for indicating two topological directions
             for the subdivision operation. Must be a face of one of the specified elements, and all
             specified elements must be reachable by topological navigation from this element face.
             May not be combined with **edge**.
         edge
-            A :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` object that serves as a reference for indicating a single topological
+            A MeshEdge object that serves as a reference for indicating a single topological
             direction for the subdivision operation. Must be an edge of one of the specified
             elements, and all specified elements must be reachable by topological navigation from
             this element edge. May not be combined with **face**.

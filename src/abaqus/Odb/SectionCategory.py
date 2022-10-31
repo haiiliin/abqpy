@@ -36,7 +36,7 @@ class SectionCategory:
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.surfaces[name].elements[i].sectionCategory
     """
 
-    #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
+    #: A SectionPointArray object.
     sectionPoints: SectionPointArray = []
 
     #: A String specifying the name of the category.
@@ -64,7 +64,7 @@ class SectionCategory:
         Returns
         -------
         SectionCategory
-            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
+            A SectionCategory object.
         """
         ...
 
@@ -88,7 +88,7 @@ class SectionCategory:
         Returns
         -------
         SectionPoint
-            A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
+            A SectionPoint object.
         """
         sectionPoint = SectionPoint(number, description)
         self.sectionPoints.append(sectionPoint)

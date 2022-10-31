@@ -29,9 +29,9 @@ class VerticalDimension(ConstrainedSketchDimension):
         Parameters
         ----------
         vertex1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the first endpoint.
+            A ConstrainedSketchVertex object specifying the first endpoint.
         vertex2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the second endpoint.
+            A ConstrainedSketchVertex object specifying the second endpoint.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -43,7 +43,7 @@ class VerticalDimension(ConstrainedSketchDimension):
         Returns
         -------
         ConstrainedSketchDimension
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
+            A ConstrainedSketchDimension object (None if the dimension cannot be created).
 
         """
         ...

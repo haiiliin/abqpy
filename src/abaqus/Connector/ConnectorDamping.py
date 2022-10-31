@@ -72,7 +72,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
         - CONNECTOR DAMPING
     """
 
-    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
@@ -176,7 +176,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
         Returns
         -------
         ConnectorDamping
-            A :py:class:`~abaqus.Connector.ConnectorDamping.ConnectorDamping` object.
+            A ConnectorDamping object.
 
         Raises
         ------

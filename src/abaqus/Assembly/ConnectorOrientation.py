@@ -32,10 +32,10 @@ class ConnectorOrientation:
     axis2: SymbolicConstant = AXIS_1
     angle2: float = 0
 
-    #: A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned.
+    #: A Set object specifying the region to which the orientation is assigned.
     region: Set
 
-    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point.
+    #: A DatumCsys object specifying the local coordinate system of the first connector point.
     #: This value may be None, indicating the global coordinate system.
     localCsys1: Optional[DatumCsys] = None
 
@@ -51,7 +51,7 @@ class ConnectorOrientation:
     #: coordinate system, axis, and angle as the first point. The default value is ON.
     orient2sameAs1: Boolean = ON
 
-    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point.
+    #: A DatumCsys object specifying the local coordinate system of the second connector point.
     #: This value may be None, indicating the global coordinate system.
     localCsys2: Optional[DatumCsys] = None
 
@@ -86,9 +86,9 @@ class ConnectorOrientation:
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned.
+            A Set object specifying the region to which the orientation is assigned.
         localCsys1
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point.
+            A DatumCsys object specifying the local coordinate system of the first connector point.
             This value may be None, indicating the global coordinate system.
         axis1
             A SymbolicConstant specifying the axis of a datum coordinate system about which an
@@ -100,7 +100,7 @@ class ConnectorOrientation:
             A Boolean specifying whether or not the second connector point is to use the same local
             coordinate system, axis, and angle as the first point. The default value is ON.
         localCsys2
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point.
+            A DatumCsys object specifying the local coordinate system of the second connector point.
             This value may be None, indicating the global coordinate system.
         axis2
             A SymbolicConstant specifying the axis of a datum coordinate system about which an
@@ -112,7 +112,7 @@ class ConnectorOrientation:
         Returns
         -------
         ConnectorOrientation
-            A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object.
+            A ConnectorOrientation object.
         """
         ...
 

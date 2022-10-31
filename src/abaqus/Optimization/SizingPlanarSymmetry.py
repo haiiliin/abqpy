@@ -24,7 +24,7 @@ class SizingPlanarSymmetry(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
     #: A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
@@ -60,7 +60,7 @@ class SizingPlanarSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -74,7 +74,7 @@ class SizingPlanarSymmetry(GeometricRestriction):
         Returns
         -------
         SizingPlanarSymmetry
-            A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
+            A SizingPlanarSymmetry object.
         """
         super().__init__()
 

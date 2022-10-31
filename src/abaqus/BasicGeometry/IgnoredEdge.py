@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class IgnoredEdge:
-    """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
+    """An IgnoredEdge object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
 
     .. note::

@@ -68,12 +68,12 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region of attachment points to which assembled fasteners
+            A Region object specifying the region of attachment points to which assembled fasteners
             are applied.
         templateModel
             A String specifying the name of the template model.
         controlSet
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the template model control point set. The set must contain a
+            A Region object specifying the template model control point set. The set must contain a
             single node or vertex.
         templateSurfaces
             A sequence of Strings specifying the names of the template model surfaces that are
@@ -100,7 +100,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         AssembledFastener
-            An :py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener` object.
+            An AssembledFastener object.
         """
         self.fasteners[name] = assembledFastener = AssembledFastener(
             name,
@@ -147,11 +147,11 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         crackFront
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-front region to which the contour integral is
+            A RegionArray object specifying the crack-front region to which the contour integral is
             applied. If the crack-front consists of a single region, a Region object may be
             specified instead of a sequence with a single item in it.
         crackTip
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-tip region to which the contour integral is
+            A RegionArray object specifying the crack-tip region to which the contour integral is
             applied. If the crack-tip consists of a single region, a Region object may be specified
             instead of a sequence with a single item in it.
         extensionDirectionMethod
@@ -193,7 +193,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         ContourIntegral
-            A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
+            A ContourIntegral object.
         """
         self.cracks[name] = contourIntegral = ContourIntegral(
             name,
@@ -250,7 +250,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         DebondVCCT
-            A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object.
+            A DebondVCCT object.
         """
         self.cracks[name] = debondVCCT = DebondVCCT(
             name,
@@ -289,7 +289,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied.
+            A Region object specifying the region to which the fastener is applied.
         influenceRadius
             The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
         ur1
@@ -321,7 +321,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         DiscreteFastener
-            A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
+            A DiscreteFastener object.
         """
         self.fasteners[name] = discreteFastener = DiscreteFastener(
             name,
@@ -358,7 +358,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied.
+            A Region object specifying the region to which the heat capacitance is applied.
         table
             A sequence of sequences of Floats specifying heat capacitance properties. The items in
             the table data are described below.
@@ -370,7 +370,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         HeatCapacitance
-            A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
+            A HeatCapacitance object.
         """
         self.inertias[name] = heatCapacitance = HeatCapacitance(
             name, region, table, temperatureDependency, dependencies
@@ -399,7 +399,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass is applied.
+            A Region object specifying the region to which the mass is applied.
         units
             A SymbolicConstant specifying the units used to specify the nonstructural mass. Possible
             values are TOTAL_MASS, MASS_PER_VOLUME, MASS_PER_AREA, and MASS_PER_LENGTH.
@@ -413,7 +413,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         NonstructuralMass
-            A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
+            A NonstructuralMass object.
         """
         self.inertias[name] = nonstructuralMass = NonstructuralMass(name, region, units, magnitude, distribution)
         return nonstructuralMass
@@ -464,15 +464,15 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which fasteners are applied.
+            A Region object specifying the region to which fasteners are applied.
         physicalRadius
             A Float specifying the physical fastener radius.
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
+            A VertexArray object of length 2 specifying the direction of projection. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
             default value is None.
         targetSurfaces
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
+            A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
         ur1
             A Boolean specifying whether to constrain rotational displacement component about the
             1-direction. The default value is ON.
@@ -564,7 +564,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         PointFastener
-            A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
+            A PointFastener object.
         """
         self.fasteners[name] = pointFastener = PointFastener(
             name,
@@ -629,7 +629,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass or rotary inertia is applied.
+            A Region object specifying the region to which the mass or rotary inertia is applied.
         mass
             A Float specifying the mass magnitude for isotropic mass. This parameter cannot be
             specified when anisotropic mass terms are specified. The default value is 0.0.
@@ -672,7 +672,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         PointMassInertia
-            A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
+            A PointMassInertia object.
         """
         self.inertias[name] = pointMassInertia = PointMassInertia(
             name,
@@ -718,7 +718,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied.
+            A Region object specifying the region to which the springs and/or dashpots are applied.
         dof
             An Int specifying the degree of freedom associated with the spring and dashpot
             behaviors.
@@ -744,7 +744,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         SpringDashpotToGround
-            A :py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround` object.
+            A SpringDashpotToGround object.
         """
         self.springDashpots[name] = springDashpotToGround = SpringDashpotToGround(
             name,
@@ -822,7 +822,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         TwoPointSpringDashpot
-            A :py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot` object.
+            A TwoPointSpringDashpot object.
         """
         self.springDashpots[name] = twoPointSpringDashpot = TwoPointSpringDashpot(
             name,
@@ -869,13 +869,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         name
             A String specifying the repository key.
         crackDomain
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region that contains the crack or is likely to contain
+            A Region object specifying the region that contains the crack or is likely to contain
             the crack.
         allowCrackGrowth
             A Boolean specifying whether the crack is allowed to propagate (grow). The default value
             is ON.
         crackLocation
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
+            A Region object specifying the initial crack location. This parameter is required when
             **allowCrackGrowth** = OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
@@ -908,7 +908,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         Returns
         -------
         XFEMCrack
-            A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
+            A XFEMCrack object.
         """
         self.cracks[name] = xFEMCrack = XFEMCrack(
             name,

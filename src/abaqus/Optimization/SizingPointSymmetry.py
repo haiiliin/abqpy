@@ -22,7 +22,7 @@ class SizingPointSymmetry(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
     #: None or a DatumCsys object specifying the position of the symmetry point defined as the
@@ -53,7 +53,7 @@ class SizingPointSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
             origin of a local coordinate system. If **csys** = None, the global coordinate system is
@@ -64,7 +64,7 @@ class SizingPointSymmetry(GeometricRestriction):
         Returns
         -------
         SizingPointSymmetry
-            A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
+            A SizingPointSymmetry object.
         """
         super().__init__()
 

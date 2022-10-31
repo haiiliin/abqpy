@@ -93,7 +93,7 @@ class AnimationSession(SessionBase):
         Returns
         -------
         Movie
-            A :py:class:`~abaqus.Animation.Movie.Movie` object.
+            A Movie object.
 
         Raises
         ------

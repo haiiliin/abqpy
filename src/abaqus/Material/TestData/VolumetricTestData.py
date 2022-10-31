@@ -29,7 +29,7 @@ class VolumetricTestData:
             - Volume ratio, :math:`J` (current volume/original volume).
 
         - For a viscoelastic material model, the values depend on the value of the **time** member of the
-          :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
+          Viscoelastic object.
 
             - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
 
@@ -89,7 +89,7 @@ class VolumetricTestData:
         Returns
         -------
         VolumetricTestData
-            A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
+            A VolumetricTestData object.
         """
         ...
 

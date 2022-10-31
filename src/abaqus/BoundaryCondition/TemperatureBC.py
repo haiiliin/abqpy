@@ -37,7 +37,7 @@ class TemperatureBC(BoundaryCondition):
     #: are MECHANICAL and THERMAL.
     category: Optional[SymbolicConstant] = None
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+    #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
 
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
@@ -72,7 +72,7 @@ class TemperatureBC(BoundaryCondition):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -97,7 +97,7 @@ class TemperatureBC(BoundaryCondition):
         Returns
         -------
         TemperatureBC
-            A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object.
+            A TemperatureBC object.
         """
         super().__init__()
 

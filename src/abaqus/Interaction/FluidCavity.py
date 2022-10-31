@@ -27,10 +27,10 @@ class FluidCavity(Interaction):
     #: A String specifying the name of the step in which the FluidCavity object is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid cavity reference point.
+    #: A Region object specifying the fluid cavity reference point.
     cavityPoint: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface forming the boundary of the fluid cavity.
+    #: A Region object specifying the surface forming the boundary of the fluid cavity.
     cavitySurface: Region
 
     #: A String specifying the FluidCavityProperty object associated with this interaction.
@@ -79,9 +79,9 @@ class FluidCavity(Interaction):
         createStepName
             A String specifying the name of the step in which the FluidCavity object is created.
         cavityPoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the fluid cavity reference point.
+            A Region object specifying the fluid cavity reference point.
         cavitySurface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface forming the boundary of the fluid cavity.
+            A Region object specifying the surface forming the boundary of the fluid cavity.
         interactionProperty
             A String specifying the FluidCavityProperty object associated with this interaction.
         ambientPressure
@@ -100,7 +100,7 @@ class FluidCavity(Interaction):
         Returns
         -------
         FluidCavity
-            A :py:class:`~abaqus.Interaction.FluidCavity.FluidCavity` object.
+            A FluidCavity object.
         """
         super().__init__()
 

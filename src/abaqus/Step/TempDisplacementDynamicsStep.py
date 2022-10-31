@@ -95,7 +95,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: A String specifying a description of the new step. The default value is an empty string.
     description: str = ""
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
+    #: A MassScalingArray object specifying mass scaling controls. The default value is
     #: PREVIOUS_STEP.
     massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP
 
@@ -148,13 +148,13 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: A repository of HistoryOutputRequestState objects.
     historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
-    #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+    #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
+    #: A Monitor object.
     monitor: Optional[Monitor] = None
 
-    #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+    #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
@@ -163,10 +163,10 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
+    #: A Control object.
     control: Control = Control()
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
+    #: A SolverControl object.
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
@@ -239,7 +239,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
+            A MassScalingArray object specifying mass scaling controls. The default value is
             PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
@@ -262,7 +262,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         Returns
         -------
         TempDisplacementDynamicsStep
-            A :py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep` object.
+            A TempDisplacementDynamicsStep object.
 
         Raises
         ------
@@ -312,7 +312,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
+            A MassScalingArray object specifying mass scaling controls. The default value is
             PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
