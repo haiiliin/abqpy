@@ -162,7 +162,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         surf: Surface
-            A :py:class:`~abaqus.Region.Surface.Surface` object
+            A Surface object
         """
         surface = Surface(
             side1Faces,
@@ -228,7 +228,7 @@ class RegionPart(RegionPartBase):
         elements
             A sequence of MeshElement objects. The default value is None.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
+            A Region object specifying other objects to be included in the set. The default value is
             None.
         vertices
             A sequence of ConstrainedSketchVertex objects. The default value is None.
@@ -262,7 +262,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         set: Set
-            A :py:class:`~abaqus.Region.Set.Set` object
+            A Set object
         """
         ...
 
@@ -282,12 +282,12 @@ class RegionPart(RegionPartBase):
         name
             A String specifying the name of the set.
         objectToCopy
-            A :py:class:`~abaqus.Region.Set.Set` object to be copied.
+            A Set object to be copied.
 
         Returns
         -------
         set: Set
-            A :py:class:`~abaqus.Region.Set.Set` object
+            A Set object
         """
         ...
 
@@ -336,7 +336,7 @@ class RegionPart(RegionPartBase):
         elements
             A sequence of MeshElement objects. The default value is None.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
+            A Region object specifying other objects to be included in the set. The default value is
             None.
         vertices
             A sequence of ConstrainedSketchVertex objects. The default value is None.
@@ -370,7 +370,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         set: Set
-            A :py:class:`~abaqus.Region.Set.Set` object
+            A Set object
         """
         ...
 
@@ -416,7 +416,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         skin: Skin
-            A :py:class:`~abaqus.Region.Skin.Skin` object
+            A Skin object
         """
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
@@ -458,7 +458,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         skin: Skin
-            A :py:class:`~abaqus.Region.Skin.Skin` object
+            A Skin object
         """
         self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
         return skin
@@ -492,7 +492,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         stringer: Stringer
-            A :py:class:`~abaqus.Region.Stringer.Stringer` object
+            A Stringer object
         """
         self.stringers[name] = stringer = Stringer(name, edges, elementEdges)
         return stringer
@@ -526,7 +526,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -555,7 +555,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -586,7 +586,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -623,7 +623,7 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -651,6 +651,6 @@ class RegionPart(RegionPartBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
+            A Set object or a tuple of Set objects.
         """
         ...

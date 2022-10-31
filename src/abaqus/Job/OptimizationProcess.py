@@ -133,7 +133,7 @@ class OptimizationProcess:
         Returns
         -------
         OptimizationProcess
-            An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object.
+            An OptimizationProcess object.
 
         Raises
         ------

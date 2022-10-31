@@ -277,7 +277,7 @@ class ViewportBase(_OptionsBase):
     #: when*viewManipLayers* =CURRENT.
     currentLayer: str = ""
 
-    #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The
+    #: A Displayable object specifying the object to be displayed. The
     #: Displayable type is an abstract generalization. The concrete possible types are Part, Assembly,
     #: ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
     #: displays an empty viewport.
@@ -287,28 +287,28 @@ class ViewportBase(_OptionsBase):
     #: name of the layer.
     layers: Dict[str, Layer] = {}
 
-    #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the
+    #: A View object specifying the object that controls viewing of the
     #: viewport content.
     view: View
 
-    #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
+    #: An OdbDisplay object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
 
-    #: A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options
+    #: A PartDisplayOptions object specifying the display options
     #: for the Part object.
     partDisplay: PartDisplayOptions = PartDisplayOptions()
 
-    #: An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the
+    #: An AssemblyDisplayOptions object specifying the
     #: display options for the Assembly object.
     assemblyDisplay: AssemblyDisplayOptions = AssemblyDisplayOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object.
+    #: A ViewportAnnotationOptions object.
     viewportAnnotationOptions: ViewportAnnotationOptions = ViewportAnnotationOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions` object.
+    #: A DetailPlotOptions object.
     detailPlotOptions: DetailPlotOptions = DetailPlotOptions()
 
-    #: An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
+    #: An AnnotationsToPlotArray object.
     annotationsToPlot: AnnotationsToPlotArray = AnnotationsToPlotArray()
 
     #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
@@ -326,13 +326,13 @@ class ViewportBase(_OptionsBase):
     #: **windowState** =MINIMIZED.
     iconOrigin: Sequence[float] = ()
 
-    #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
+    #: A LightOptions object.
     lightOptions: LightOptions = LightOptions()
 
-    #: An :py:class:`~abaqus.Canvas.ImageOptions.ImageOptions` object.
+    #: An ImageOptions object.
     imageOptions: ImageOptions = ImageOptions()
 
-    #: A :py:class:`~abaqus.Canvas.MovieOptions.MovieOptions` object.
+    #: A MovieOptions object.
     movieOptions: MovieOptions = MovieOptions()
 
     #: A tuple of Strings specifying keys to the session.drawings repository. The default value
@@ -394,7 +394,7 @@ class ViewportBase(_OptionsBase):
         Returns
         -------
         Viewport
-            A :py:class:`~abaqus.Canvas.Viewport.Viewport` object.
+            A Viewport object.
 
         Raises
         ------
@@ -607,7 +607,7 @@ class ViewportBase(_OptionsBase):
         Parameters
         ----------
         colorMapping
-            An :py:class:`~abaqus.Canvas.AttributeColorMap.AttributeColorMap` object. Possible values are any
+            An AttributeColorMap object. Possible values are any
             AttributeColorMap object.
         """
         # TODO: implement this method
@@ -641,7 +641,7 @@ class ViewportBase(_OptionsBase):
         Parameters
         ----------
         leaf
-            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object. Possible values are any Leaf object.
+            A Leaf object. Possible values are any Leaf object.
         edgeColorWireHide
             A String specifying the color to be used for drawing the edges of the elements contained
             in **leaf** when the render style is wireframe or hidden.
@@ -695,7 +695,7 @@ class ViewportBase(_OptionsBase):
         Parameters
         ----------
         displayedObject
-            A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The
+            A Displayable object specifying the object to be displayed. The
             Displayable type is an abstract generalization. The concrete possible types are Part, Assembly,
             ConstrainedSketch, Odb, PlyStackPlot, or XYPlot. If **displayedObject** = None, Abaqus
             displays an empty viewport.

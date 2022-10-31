@@ -251,7 +251,7 @@ class SymbolOptions(DGSymbolOptions):
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object from which values are to be copied. If other arguments are also
+            A SymbolOptions object from which values are to be copied. If other arguments are also
             supplied to setValues, they will override the values in **options**. The default value is
             None.
         vectorQuantity

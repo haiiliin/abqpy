@@ -43,6 +43,6 @@ class LeafFromDatums(Leaf):
         Returns
         -------
         LeafFromDatums
-            A :py:class:`~abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums` object.
+            A LeafFromDatums object.
         """
         super().__init__(DEFAULT_MODEL)

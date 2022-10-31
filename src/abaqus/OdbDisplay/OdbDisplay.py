@@ -80,10 +80,10 @@ class OdbDisplay:
     #:   frame numbers.
     fieldSteps: tuple = ()
 
-    #: An :py:class:`~abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList` object.
+    #: An OdbFieldVarList object.
     fieldVariables: OdbFieldVarList = OdbFieldVarList()
 
-    #: An :py:class:`~abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList` object.
+    #: An OdbModelFieldVarList object.
     modelVariableList: OdbModelFieldVarList = OdbModelFieldVarList()
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
@@ -95,47 +95,47 @@ class OdbDisplay:
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
     surfaceSet: Dict[str, OdbSet] = {}
 
-    #: A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object.
+    #: A DisplayOptions object.
     display: DisplayOptions = DisplayOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object.
+    #: A ContourOptions object.
     contourOptions: ContourOptions = ContourOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object.
+    #: A CommonOptions object.
     commonOptions: CommonOptions = CommonOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object.
+    #: A SymbolOptions object.
     symbolOptions: SymbolOptions = SymbolOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` object.
+    #: A SuperimposeOptions object.
     superimposeOptions: SuperimposeOptions = SuperimposeOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` object.
+    #: A DisplayBodyOptions object.
     displayBodyOptions: DisplayBodyOptions = DisplayBodyOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object.
+    #: A FreeBodyOptions object.
     freeBodyOptions: FreeBodyOptions = FreeBodyOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object.
+    #: A StreamOptions object.
     streamOptions: StreamOptions = StreamOptions()
 
-    #: A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object.
+    #: A ViewCutOptions object.
     viewCutOptions: ViewCutOptions = ViewCutOptions()
 
     #: A repository of ViewCut objects.
     viewCuts: Dict[str, ViewCut] = {}
 
-    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
+    #: A DisplayGroup object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
-    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository` object.
+    #: A DisplayGroupInstanceRepository object.
     displayGroupInstances: DisplayGroupInstanceRepository = DisplayGroupInstanceRepository()
 
-    #: A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
+    #: A BasicOptions object.
     basicOptions: BasicOptions = BasicOptions()
 
-    #: An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` object.
+    #: An OrientationOptions object.
     materialOrientationOptions: OrientationOptions = OrientationOptions()
 
     #: A tuple of Strings specifying the step label and the frame label when the current step
@@ -325,7 +325,7 @@ class OdbDisplay:
         Parameters
         ----------
         frame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
         """
         ...
 
@@ -663,7 +663,7 @@ class OdbDisplay:
         Returns
         -------
         ViewCut
-            A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object.
+            A ViewCut object.
         """
         self.viewCuts[name] = viewCut = ViewCut(
             name,

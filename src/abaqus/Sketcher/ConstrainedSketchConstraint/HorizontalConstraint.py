@@ -21,12 +21,12 @@ class HorizontalConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line to constrain.
+            A ConstrainedSketchGeometry object specifying the line to constrain.
 
         Returns
         -------
         ConstrainedSketchConstraint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+            A ConstrainedSketchConstraint object.
 
         """
         ...

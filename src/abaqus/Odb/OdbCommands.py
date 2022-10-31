@@ -118,7 +118,7 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
     Returns
     -------
     Odb
-        An :py:class:`~abaqus.Odb.Odb.Odb` object.
+        An Odb object.
 
     Raises
     ------
@@ -179,6 +179,6 @@ def AnalyticSurfaceProfile() -> OdbSequenceAnalyticSurfaceSegment:
     Returns
     -------
     OdbSequenceAnalyticSurfaceSegment
-        An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object.
+        An OdbSequenceAnalyticSurfaceSegment object.
     """
     return OdbSequenceAnalyticSurfaceSegment()

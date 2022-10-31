@@ -108,7 +108,7 @@ def openMdb(pathName: str) -> Mdb:
     Returns
     -------
     Mdb
-        A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
+        A Mdb object
 
     Raises
     ------

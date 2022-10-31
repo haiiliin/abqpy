@@ -38,11 +38,11 @@ class OdbSet:
     #: the set is on a Part or an OdbInstance object.
     instanceNames: tuple = ()
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object specifying the nodes of an OdbSet. If a set spans more than
+    #: An OdbMeshNodeArray object specifying the nodes of an OdbSet. If a set spans more than
     #: one part instance, this member is a sequence of sequences for each part instance.
     nodes: OdbMeshNodeArray = []
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object specifying the elements of an OdbSet. If a set spans more
+    #: An OdbMeshElementArray object specifying the elements of an OdbSet. If a set spans more
     #: than one part instance, this member is a sequence of sequences for each part instance.
     elements: OdbMeshElementArray = []
 
@@ -74,7 +74,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -101,7 +101,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -130,7 +130,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -157,7 +157,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -200,7 +200,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -228,7 +228,7 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
 
@@ -255,6 +255,6 @@ class OdbSet:
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         ...
