@@ -124,7 +124,7 @@ class ContactExp(Interaction):
             A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
         masterSlaveAssignments
-            A MasterSlaveAssignment object specifying the main-secondary assignments in the
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
 
         Returns

@@ -28,7 +28,7 @@ class PolarityAssignments:
         Parameters
         ----------
         stepName
-            A String specifying the name of the step in which the main-secondary assignments are to
+            A String specifying the name of the step in which the master-slave assignments are to
             be modified.
         index
             An Int specifying the position of the polarity assignment whose value is to be modified.
