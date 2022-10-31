@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
+msgid "An Assembly object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:5
@@ -115,7 +115,7 @@ msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level."
+msgid "A VertexArray object specifying all the vertices existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -123,7 +123,7 @@ msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level."
+msgid "An EdgeArray object specifying all the edges existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -131,7 +131,7 @@ msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level."
+msgid "A MeshElementArray object specifying all the elements existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -139,7 +139,7 @@ msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level."
+msgid "A MeshNodeArray object specifying all the nodes existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -255,7 +255,7 @@ msgid ":py:obj:`allInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.allInsta
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
+msgid "A PartInstance object specifying the PartInstances and A ModelInstance object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -263,7 +263,7 @@ msgid ":py:obj:`engineeringFeatures <abaqus.Assembly.AssemblyBase.AssemblyBase.e
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object."
+msgid "An EngineeringFeature object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -279,7 +279,7 @@ msgid ":py:obj:`connectorOrientations <abaqus.Assembly.AssemblyBase.AssemblyBase
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object."
+msgid "A ConnectorOrientationArray object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -287,7 +287,7 @@ msgid ":py:obj:`sectionAssignments <abaqus.Assembly.AssemblyBase.AssemblyBase.se
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object."
+msgid "A SectionAssignmentArray object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1330,7 +1330,7 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:15
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:15
 #: ../../docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.elset:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region containing the elements that will be activated during the analysis."
+msgid "A Region object specifying the region containing the elements that will be activated during the analysis."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:18
@@ -1368,7 +1368,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:28
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:28
-msgid "An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object."
+msgid "An ElementProgressiveActivation object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:0
@@ -1582,7 +1582,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1590,7 +1590,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1774,7 +1774,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1985,7 +1985,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:30
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:30
-msgid "An :py:class:`~abaqus.TableCollection.EventSeries.EventSeries` object."
+msgid "An EventSeries object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:31
@@ -2007,7 +2007,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:18
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:18
-msgid "A :py:class:`~abaqus.TableCollection.EventSeriesType.EventSeriesType` object."
+msgid "A EventSeriesType object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:19
@@ -2119,7 +2119,7 @@ msgid "A string specifying the name of progressive element activation."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:22
-msgid "An :py:class:`~abaqus.TableCollection.ActivateElements.ActivateElements` object."
+msgid "An ActivateElements object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:23
@@ -2185,7 +2185,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable.__init__:14
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.DataTable:14
-msgid "A :py:class:`~abaqus.Field.DataTable.DataTable` object."
+msgid "A DataTable object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable.__init__:15
@@ -2434,7 +2434,7 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.Column:26
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.__init__:15
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:15
-msgid "A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` object."
+msgid "A ParameterTable object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:27
@@ -2624,7 +2624,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:28
 #: ../../../../src/abaqus/TableCollection/PropertyTableData.py:docstring of abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:28
-msgid "A :py:class:`~abaqus.TableCollection.PropertyTableData.PropertyTableData` object."
+msgid "A PropertyTableData object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:29
@@ -2651,7 +2651,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:19
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:19
-msgid "A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object."
+msgid "A PropertyTable object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:20
@@ -2789,7 +2789,7 @@ msgid "Check `TableCollection.__init__ on help.3ds.com/2020 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.__init__:15
-msgid "A :py:class:`~abaqus.TableCollection.TableCollection.TableCollection` object."
+msgid "A TableCollection object."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.__init__:16
