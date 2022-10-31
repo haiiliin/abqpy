@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1
 #: ../../docstring of abaqus.Model.ModelBase.ModelBase.keywordBlock:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -238,7 +238,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1
 #: ../../docstring of abaqus.Model.ModelBase.ModelBase.rootAssembly:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -445,7 +445,7 @@ msgstr ""
 
 #: ../../None:55:<autosummary>:1
 #: ../../docstring of abaqus.Model.ModelBase.ModelBase.featureOptions:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2374,7 +2374,7 @@ msgstr ""
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:66
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:19
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.__init__:39
-msgid "A :py:class:`~abaqus.Model.Model.Model` object."
+msgid "A Model object."
 msgstr ""
 
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:0
@@ -2540,7 +2540,7 @@ msgid "The `tableCollections` attribute was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:1
-msgid "The KeywordBlock object contains a representation of its model in the Abaqus input file format. You may edit the contents of the KeywordBlock to add solver functionality that is not supported by Abaqus/CAE. As a general rule, edits to the KeywordBlock object should be made as the last step prior to writing the actual Abaqus input file, thus avoiding possible conflicts with changes made using other MDB commands. The KeywordBlock object has no constructor. A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object is created when you create a model object. A model object contains only one KeywordBlock object."
+msgid "The KeywordBlock object contains a representation of its model in the Abaqus input file format. You may edit the contents of the KeywordBlock to add solver functionality that is not supported by Abaqus/CAE. As a general rule, edits to the KeywordBlock object should be made as the last step prior to writing the actual Abaqus input file, thus avoiding possible conflicts with changes made using other MDB commands. The KeywordBlock object has no constructor. A KeywordBlock object is created when you create a model object. A model object contains only one KeywordBlock object."
 msgstr ""
 
 #: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:15
