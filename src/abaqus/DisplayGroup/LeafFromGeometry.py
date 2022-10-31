@@ -48,7 +48,7 @@ class LeafFromGeometry(Leaf):
         Returns
         -------
         LeafFromGeometry
-            A :py:class:`~abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry` object.
+            A LeafFromGeometry object.
 
         Raises
         ------

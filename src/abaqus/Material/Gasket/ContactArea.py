@@ -5,7 +5,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ContactArea:
-    """A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object specifies a suboption of gasket thickness behavior when
+    """A ContactArea object specifies a suboption of gasket thickness behavior when
     **variableUnits** = FORCE on the GasketThicknessBehavior object. The ContactArea object
     defines the contact area or contact width versus closure curves to output an average
     pressure through variable CS11.
@@ -56,7 +56,7 @@ class ContactArea:
         Returns
         -------
         ContactArea
-            A :py:class:`~abaqus.Material.Gasket.ContactArea.ContactArea` object.
+            A ContactArea object.
         """
         ...
 

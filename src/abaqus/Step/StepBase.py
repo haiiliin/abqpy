@@ -85,13 +85,13 @@ class StepBase:
     #: A repository of HistoryOutputRequestState objects.
     historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
-    #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+    #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
+    #: A Monitor object.
     monitor: Optional[Monitor] = None
 
-    #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+    #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
@@ -100,10 +100,10 @@ class StepBase:
     #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
+    #: A Control object.
     control: Control = Control()
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
+    #: A SolverControl object.
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.

@@ -70,7 +70,7 @@ class FieldReportSession(SessionBase):
         sortItem
             A String specifying the item by which to sort the tabular values.
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field output values.
+            An Odb object from which to obtain field output values.
         step
             An Int (or stepIndex) specifying the step from which to obtain field output values.
             Possible values are 0 ≤ **step** ≤ (*numSteps* − 1).
@@ -82,7 +82,7 @@ class FieldReportSession(SessionBase):
             are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
             WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.
         displayGroup
-            A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the subset of the model for which to obtain data.
+            A DisplayGroup object specifying the subset of the model for which to obtain data.
         variable
             A sequence of variable description sequences specifying one or more field output
             variables for which to obtain data. Each variable description sequence contains the
@@ -157,7 +157,7 @@ class FieldReportSession(SessionBase):
             from all active frames. Possible values are SPECIFY and ALL. The default value is
             SPECIFY.
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+            An Odb object specifying the output database from which data will be read.
 
         Returns
         -------

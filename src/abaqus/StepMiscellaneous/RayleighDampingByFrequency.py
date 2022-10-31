@@ -7,7 +7,7 @@ from .RayleighDampingByFrequencyComponentArray import (
 
 @abaqus_class_doc
 class RayleighDampingByFrequency:
-    """A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object contains Rayleigh Damping parameters.
+    """A RayleighDampingByFrequency object contains Rayleigh Damping parameters.
 
     .. note::
         This object can be accessed by::
@@ -16,5 +16,5 @@ class RayleighDampingByFrequency:
             mdb.models[name].steps[name].rayleighDampingByFrequency
     """
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray` object.
+    #: A RayleighDampingByFrequencyComponentArray object.
     components: RayleighDampingByFrequencyComponentArray = []

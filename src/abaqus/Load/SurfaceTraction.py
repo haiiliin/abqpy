@@ -68,13 +68,13 @@ class SurfaceTraction(Load):
     #: queried, it returns an Int. The default value is None.
     localCsys: Optional[int] = None
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
+    #: A VertexArray object of length 2 specifying the direction of the load. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
     #: **traction** is SHEAR, then **directionVector** will be projected onto the region surface.
     #: This parameter is available only if **traction** is GENERAL or SHEAR.
     directionVector: tuple = ()
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -110,7 +110,7 @@ class SurfaceTraction(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -142,7 +142,7 @@ class SurfaceTraction(Load):
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
+            A VertexArray object of length 2 specifying the direction of the load. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
             **traction** is SHEAR, then **directionVector** will be projected onto the region surface.
             This parameter is available only if **traction** is GENERAL or SHEAR.
@@ -162,7 +162,7 @@ class SurfaceTraction(Load):
         Returns
         -------
         SurfaceTraction
-            A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
+            A SurfaceTraction object.
         """
         super().__init__()
 
@@ -214,7 +214,7 @@ class SurfaceTraction(Load):
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
+            A VertexArray object of length 2 specifying the direction of the load. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
             **traction** is SHEAR, then **directionVector** will be projected onto the region surface.
             This parameter is available only if **traction** is GENERAL or SHEAR.

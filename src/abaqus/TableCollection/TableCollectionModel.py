@@ -62,7 +62,7 @@ class TableCollectionModel(ModelBase):
         Returns
         -------
         EventSeries
-            An :py:class:`~abaqus.TableCollection.EventSeries.EventSeries` object.
+            An EventSeries object.
 
         Raises
         ------
@@ -101,7 +101,7 @@ class TableCollectionModel(ModelBase):
         Returns
         -------
         EventSeriesType
-            A :py:class:`~abaqus.TableCollection.EventSeriesType.EventSeriesType` object.
+            A EventSeriesType object.
 
         Raises
         ------

@@ -108,7 +108,7 @@ class Cell:
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a sequence of Cell objects.
+            A CellArray object which is a sequence of Cell objects.
 
         """
         ...
@@ -120,7 +120,7 @@ class Cell:
         Returns
         -------
         MeshNodeArray
-            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
+            A MeshNodeArray object which is a sequence of MeshNode objects.
 
         """
         ...
@@ -132,7 +132,7 @@ class Cell:
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+            A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         ...

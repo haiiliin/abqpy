@@ -46,7 +46,7 @@ class GapHeatGeneration:
         Returns
         -------
         GapHeatGeneration
-            A :py:class:`~abaqus.Interaction.GapHeatGeneration.GapHeatGeneration` object.
+            A GapHeatGeneration object.
         """
         ...
 

@@ -28,10 +28,10 @@ class AdjustPoints(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
+    #: A Region object specifying the surface to which the **controlPoints** are adjusted.
     surface: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
+    #: A Region object specifying the constraint control points.
     controlPoints: Region
 
     @abaqus_method_doc
@@ -48,14 +48,14 @@ class AdjustPoints(Constraint):
         name
             A String specifying the constraint repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted.
+            A Region object specifying the surface to which the **controlPoints** are adjusted.
         controlPoints
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points.
+            A Region object specifying the constraint control points.
 
         Returns
         -------
         AdjustPoints
-            An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object.
+            An AdjustPoints object.
         """
         super().__init__()
 

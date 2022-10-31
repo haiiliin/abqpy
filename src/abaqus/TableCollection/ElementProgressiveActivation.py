@@ -27,7 +27,7 @@ class ElementProgressiveActivation:
     #: A String specifying the key of the repository.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region containing the elements that will be activated
+    #: A Region object specifying the region containing the elements that will be activated
     #: during the analysis.
     elset: Region
 
@@ -64,7 +64,7 @@ class ElementProgressiveActivation:
         name
             A String specifying the key of the repository.
         elset
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region containing the elements that will be activated
+            A Region object specifying the region containing the elements that will be activated
             during the analysis.
         deformation
             A Boolean value specifying whether the elements that have not yet been activated will
@@ -80,7 +80,7 @@ class ElementProgressiveActivation:
         Returns
         -------
         ElementProgressiveActivation
-            An :py:class:`~abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation` object.
+            An ElementProgressiveActivation object.
 
         Raises
         ------

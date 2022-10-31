@@ -47,7 +47,7 @@ class DisplayOptions(_CopyOptionsBase):
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object from which values are to be copied.
+            A DisplayOptions object from which values are to be copied.
             If other arguments are also supplied to setValues, they will override the values in **options**. The default
             value is None.
         plotState

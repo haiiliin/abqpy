@@ -273,7 +273,7 @@ class FluidCavityProperty(ContactProperty):
         Returns
         -------
         FluidCavityProperty
-            A :py:class:`~abaqus.Interaction.FluidCavityProperty.FluidCavityProperty` object.
+            A FluidCavityProperty object.
         """
         super().__init__(name)
 

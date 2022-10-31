@@ -34,22 +34,22 @@ class CyclicSymmetry(Interaction):
     #: be created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+    #: A Region object specifying the master surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
+    #: A Region object specifying the slave surface.
     slave: Region
 
     #: An Int specifying the total number of sectors in the cyclic symmetric model.
     repetitiveSectors: int
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the first point of the axis of symmetry. The region should
+    #: A Region object specifying the first point of the axis of symmetry. The region should
     #: contain exactly one mesh node, vertex, interesting point, reference point, or datum
     #: point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
     #: of symmetry.
     axisPoint1: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the second point of the axis of symmetry. The region should
+    #: A Region object specifying the second point of the axis of symmetry. The region should
     #: contain exactly one mesh node, vertex, interesting point, reference point, or datum
     #: point. This point is ignored in a two-dimensional model.
     axisPoint2: Region
@@ -122,18 +122,18 @@ class CyclicSymmetry(Interaction):
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+            A Region object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
+            A Region object specifying the slave surface.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the first point of the axis of symmetry. The region should
+            A Region object specifying the first point of the axis of symmetry. The region should
             contain exactly one mesh node, vertex, interesting point, reference point, or datum
             point. In a two-dimensional model **axisPoint1** is the only point used to define the axis
             of symmetry.
         axisPoint2
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the second point of the axis of symmetry. The region should
+            A Region object specifying the second point of the axis of symmetry. The region should
             contain exactly one mesh node, vertex, interesting point, reference point, or datum
             point. This point is ignored in a two-dimensional model.
         extractedNodalDiameter
@@ -168,7 +168,7 @@ class CyclicSymmetry(Interaction):
         Returns
         -------
         CyclicSymmetry
-            A :py:class:`~abaqus.Interaction.CyclicSymmetry.CyclicSymmetry` object.
+            A CyclicSymmetry object.
         """
         super().__init__()
 

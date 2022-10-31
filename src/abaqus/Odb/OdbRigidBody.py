@@ -24,7 +24,7 @@ class OdbRigidBody:
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.rigidBodies[i]
     """
 
-    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
+    #: An OdbSet object specifying the reference node set associated with the rigid body.
     referenceNode: OdbSet
 
     #: A SymbolicConstant specifying the specific location of the OdbRigidBody reference node
@@ -37,19 +37,19 @@ class OdbRigidBody:
     #: value is ON.
     isothermal: Boolean = ON
 
-    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
+    #: An OdbSet object specifying the element set whose motion is governed by the motion of
     #: rigid body reference node.
     elements: OdbSet = OdbSet("set", ())
 
-    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
+    #: An OdbSet object specifying the node set which have both translational and rotational
     #: degrees of freedom associated with the rigid body.
     tieNodes: OdbSet = OdbSet("set", ())
 
-    #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
+    #: An OdbSet object specifying the node set which have only translational degrees of
     #: freedom associated with the rigid body.
     pinNodes: OdbSet = OdbSet("set", ())
 
-    #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
+    #: An AnalyticSurface object specifying the analytic surface whose motion is governed by
     #: the motion of rigid body reference node.
     analyticSurface: Optional[AnalyticSurface] = None
 
@@ -75,7 +75,7 @@ class OdbRigidBody:
         Parameters
         ----------
         referenceNode
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the reference node set associated with the rigid body.
+            An OdbSet object specifying the reference node set associated with the rigid body.
         position
             A SymbolicConstant specifying the specific location of the OdbRigidBody reference node
             relative to the rest of the rigid body. Possible values are INPUT and CENTER_OF_MASS.
@@ -85,21 +85,21 @@ class OdbRigidBody:
             be isothermal. This is used only for fully coupled thermal-stress analysis The default
             value is ON.
         elements
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the element set whose motion is governed by the motion of
+            An OdbSet object specifying the element set whose motion is governed by the motion of
             rigid body reference node.
         tieNodes
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have both translational and rotational
+            An OdbSet object specifying the node set which have both translational and rotational
             degrees of freedom associated with the rigid body.
         pinNodes
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the node set which have only translational degrees of
+            An OdbSet object specifying the node set which have only translational degrees of
             freedom associated with the rigid body.
         analyticSurface
-            An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
+            An AnalyticSurface object specifying the analytic surface whose motion is governed by
             the motion of rigid body reference node.
 
         Returns
         -------
         OdbRigidBody
-            An :py:class:`~abaqus.Odb.OdbRigidBody.OdbRigidBody` object.
+            An OdbRigidBody object.
         """
         ...

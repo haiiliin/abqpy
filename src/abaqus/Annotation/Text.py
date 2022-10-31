@@ -223,7 +223,7 @@ class Text(Annotation, _OptionsBase):
         Returns
         -------
         Text
-            A :py:class:`~abaqus.Annotation.Text.Text` object.
+            A Text object.
 
         """
         super().__init__()

@@ -8,7 +8,7 @@ from .DataSet import DataSet
 
 @abaqus_class_doc
 class Calibration:
-    """A :py:class:`~abaqus.Material.Calibration.Calibration` object is the object used to specify a material calibration. The
+    """A Calibration object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
 
     .. note::
@@ -18,10 +18,10 @@ class Calibration:
             mdb.models[name].calibrations[name]
     """
 
-    #: A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+    #: A DataSet object.
     dataSets: Optional[DataSet] = None
 
-    #: A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+    #: A Behavior object.
     behaviors: Optional[Behavior] = None
 
     #: A String specifying the name of the new calibration.
@@ -44,7 +44,7 @@ class Calibration:
         Returns
         -------
         Calibration
-            A :py:class:`~abaqus.Material.Calibration.Calibration` object.
+            A Calibration object.
         """
         ...
 
@@ -68,7 +68,7 @@ class Calibration:
         Returns
         -------
         Behavior
-            A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
+            A Behavior object.
         """
         self.behaviors = behavior = Behavior(name, typeName)
         return behavior
@@ -100,7 +100,7 @@ class Calibration:
         Returns
         -------
         DataSet
-            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+            A DataSet object.
         """
         self.dataSets = dataSet = DataSet(name, data, type, form)
         return dataSet

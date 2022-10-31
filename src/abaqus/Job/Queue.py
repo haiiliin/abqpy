@@ -5,7 +5,7 @@ from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, SymbolicCons
 
 @abaqus_class_doc
 class Queue:
-    """A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can
+    """A Queue object tells the job where and how to submit a job remotely. A Queue object can
     be used as the **queue** argument to the Job method.
 
     .. note::
@@ -107,7 +107,7 @@ class Queue:
         Returns
         -------
         Queue
-            A :py:class:`~abaqus.Job.Queue.Queue` object.
+            A Queue object.
 
         Raises
         ------

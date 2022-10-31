@@ -311,7 +311,7 @@ class ContactDamage:
         Returns
         -------
         ContactDamage
-            A :py:class:`~abaqus.Interaction.ContactDamage.ContactDamage` object.
+            A ContactDamage object.
         """
         ...
 

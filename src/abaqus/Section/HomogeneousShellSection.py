@@ -30,10 +30,10 @@ class HomogeneousShellSection(GeometryShellSection):
         - SHELL GENERAL SECTION
     """
 
-    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A RebarLayers object specifying reinforcement properties.
     rebarLayers: Optional[RebarLayers] = None
 
-    #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
+    #: A TransverseShearShell object specifying the transverse shear stiffness properties.
     transverseShear: Optional[TransverseShearShell] = None
 
     #: A String specifying the repository key.
@@ -229,7 +229,7 @@ class HomogeneousShellSection(GeometryShellSection):
         Returns
         -------
         HomogeneousShellSection
-            A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
+            A HomogeneousShellSection object.
         """
         super().__init__()
 

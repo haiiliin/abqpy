@@ -49,7 +49,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+            A CellArray object.
 
         """
         ...
@@ -122,7 +122,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         Cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
+            A Cell object.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -136,7 +136,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+            A FaceArray object representing the faces on the exterior of the cells.
 
         """
         ...
@@ -166,7 +166,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         Cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of Cell objects.
+            A Cell object or a sequence of Cell objects.
 
         Raises
         ------
@@ -217,7 +217,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...
@@ -246,7 +246,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...
@@ -266,7 +266,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...
