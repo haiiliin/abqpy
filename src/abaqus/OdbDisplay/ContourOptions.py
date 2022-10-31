@@ -265,7 +265,7 @@ class ContourOptions(DGContourOptions):
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object from which values are to be copied. If other arguments are also
+            A ContourOptions object from which values are to be copied. If other arguments are also
             supplied to setValues, they will override the values in **options**. The default value is
             None.
         contourType

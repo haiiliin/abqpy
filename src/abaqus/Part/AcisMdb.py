@@ -40,7 +40,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
 
         Raises
         ------
@@ -88,7 +88,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
         """
         return AcisFile()
 
@@ -131,7 +131,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
         """
         return AcisFile()
 
@@ -190,7 +190,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
 
         Raises
         ------
@@ -224,7 +224,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
         """
         return AcisFile()
 
@@ -250,7 +250,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
 
         Raises
         ------
@@ -278,7 +278,7 @@ class AcisMdb(MdbBase):
         Returns
         -------
         AcisFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object.
+            An AcisFile object.
 
         Raises
         ------

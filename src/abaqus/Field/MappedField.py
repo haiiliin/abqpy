@@ -94,7 +94,7 @@ class MappedField(AnalyticalField):
     #: value is an empty sequence.
     xyzPointData: tuple = ()
 
-    #: An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object specifying the external source data from ODB mesh region.
+    #: An OdbMeshRegionData object specifying the external source data from ODB mesh region.
     odbMeshRegionData: Optional[OdbMeshRegionData] = None
 
     #: A tuple of Floats specifying the scaling factors for the global 1, 2 and 3 directions.
@@ -210,7 +210,7 @@ class MappedField(AnalyticalField):
         Returns
         -------
         MappedField
-            A :py:class:`~abaqus.Field.MappedField.MappedField` object.
+            A MappedField object.
 
         Raises
         ------

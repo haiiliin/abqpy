@@ -194,7 +194,7 @@ class NormalBehavior:
         Returns
         -------
         NormalBehavior
-            A :py:class:`~abaqus.Interaction.NormalBehavior.NormalBehavior` object.
+            A NormalBehavior object.
         """
         ...
 

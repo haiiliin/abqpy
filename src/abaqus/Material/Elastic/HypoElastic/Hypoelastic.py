@@ -49,7 +49,7 @@ class Hypoelastic:
         Returns
         -------
         Hypoelastic
-            A :py:class:`~abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic` object.
+            A Hypoelastic object.
         """
         ...
 

@@ -77,7 +77,7 @@ class TProfile(Profile):
         Returns
         -------
         TProfile
-            A :py:class:`~abaqus.BeamSectionProfile.TProfile.TProfile` object.
+            A TProfile object.
 
         Raises
         ------

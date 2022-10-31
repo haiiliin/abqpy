@@ -27,7 +27,7 @@ class Spline(ConstrainedSketchGeometry):
         Returns
         -------
         ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spline cannot be created).
+            A ConstrainedSketchGeometry object (None if the spline cannot be created).
 
         """
         ...
