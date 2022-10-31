@@ -7,7 +7,6 @@ on:
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
-  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip install flake8 pytest pytest-cov
           pip install -r requirements.txt
           pip install -e .
       - name: Lint with flake8
@@ -41,4 +40,9 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          pytest
+          pytest --cov-report xml:coverage.xml
+      - name: Get Coverage
+        uses: orgoro/coverage@v3
+        with:
+          coverageFile: coverage.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
