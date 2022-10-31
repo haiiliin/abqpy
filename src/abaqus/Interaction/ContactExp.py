@@ -64,11 +64,7 @@ class ContactExp(Interaction):
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-    #: A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
@@ -135,25 +131,8 @@ class ContactExp(Interaction):
         smoothingAssignments
             A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceCrushTriggerAssignments` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceFrictionAssignments` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
@@ -202,21 +181,6 @@ class ContactExp(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
-<<<<<<< HEAD
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceCrushTriggerAssignments` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceFrictionAssignments` argument was added.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         useAllstar
             A Boolean specifying whether the contacting surface pair consists of all exterior faces,
             shell edges, beam segments, analytical rigid surfaces, and, when applicable, Eulerian

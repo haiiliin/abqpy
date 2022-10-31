@@ -116,17 +116,7 @@ class MaterialBase:
     #: A CrushableFoam object.
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
-=======
-    #: A CrushStress object
-    #:
-    #: .. versionadded:: 2022
-    #:     The `crushStress` attribute was added.
-    crushStress: CrushStress = CrushStress(((),))
-
     #: A DamageInitiation object.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
     ductileDamageInitiation: DamageInitiation = DamageInitiation()
 
     #: A DamageInitiation object.
