@@ -37,11 +37,11 @@ class MullinsEffect:
     #: an empty sequence.
     table: tuple = ()
 
-    #: A :py:class:`~abaqus.Material.TestData.UniaxialTestDataArray.UniaxialTestDataArray` object.
+    #: A UniaxialTestDataArray object.
     uniaxialTests: UniaxialTestDataArray = []
 
-    #: A :py:class:`~abaqus.Material.TestData.BiaxialTestDataArray.BiaxialTestDataArray` object.
+    #: A BiaxialTestDataArray object.
     biaxialTests: BiaxialTestDataArray = []
 
-    #: A :py:class:`~abaqus.Material.TestData.PlanarTestDataArray.PlanarTestDataArray` object.
+    #: A PlanarTestDataArray object.
     planarTests: PlanarTestDataArray = []

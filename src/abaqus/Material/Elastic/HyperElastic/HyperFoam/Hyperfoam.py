@@ -37,19 +37,19 @@ class Hyperfoam:
         - HYPERFOAM
     """
 
-    #: A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
+    #: A BiaxialTestData object.
     biaxialTestData: BiaxialTestData = BiaxialTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
+    #: A VolumetricTestData object.
     volumetricTestData: VolumetricTestData = VolumetricTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.PlanarTestData.PlanarTestData` object.
+    #: A PlanarTestData object.
     planarTestData: PlanarTestData = PlanarTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData` object.
+    #: A SimpleShearTestData object.
     simpleShearTestData: SimpleShearTestData = SimpleShearTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
+    #: A UniaxialTestData object.
     uniaxialTestData: UniaxialTestData = UniaxialTestData(((),))
 
     @abaqus_method_doc
@@ -92,7 +92,7 @@ class Hyperfoam:
         Returns
         -------
         Hyperfoam
-            A :py:class:`~abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam` object.
+            A Hyperfoam object.
 
         Raises
         ------

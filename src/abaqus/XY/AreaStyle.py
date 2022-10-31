@@ -71,7 +71,7 @@ class AreaStyle:
         Returns
         -------
         AreaStyle
-            An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
+            An AreaStyle object.
 
         Raises
         ------

@@ -36,7 +36,7 @@ class Parameter(ConstrainedSketchParameter):
         Returns
         -------
         sketch: ConstrainedSketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object.
+            A ConstrainedSketch object.
 
         """
         ...

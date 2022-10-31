@@ -29,7 +29,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: values are MECHANICAL and THERMAL.
     category: Optional[SymbolicConstant] = None
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
+    #: A Region object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
 
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
@@ -68,7 +68,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
             A String specifying the name of the step in which the adaptive mesh constraint is
             created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
+            A Region object specifying the region to which the adaptive mesh constraint is applied.
         u1
             A Float or a SymbolicConstant specifying the displacement component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
@@ -109,7 +109,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         Returns
         -------
         DisplacementAdaptiveMeshConstraint
-            A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object.
+            A DisplacementAdaptiveMeshConstraint object.
         """
         super().__init__(name, region=region, category=MECHANICAL, localCsys=localCsys)
 

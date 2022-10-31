@@ -40,10 +40,10 @@ class OdbBase:
     #: A repository of Filter objects.
     filters: Dict[str, Filter] = {}
 
-    #: An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
+    #: An OdbAssembly object.
     rootAssembly: OdbAssembly = OdbAssembly()
 
-    #: A :py:class:`~abaqus.Odb.JobData.JobData` object.
+    #: A JobData object.
     jobData: JobData = JobData()
 
     #: A repository of OdbPart objects.
@@ -61,13 +61,13 @@ class OdbBase:
     #: A repository of SectionCategory objects.
     sectionCategories: Dict[str, SectionCategory] = {}
 
-    #: A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
+    #: A SectorDefinition object.
     sectorDefinition: SectorDefinition = SectorDefinition()
 
-    #: A :py:class:`~abaqus.Odb.UserData.UserData` object.
+    #: A UserData object.
     userData: UserData = UserData()
 
-    #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
+    #: A RepositorySupport object.
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Profile objects.
@@ -99,7 +99,7 @@ class OdbBase:
         Returns
         -------
         Odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object.
+            An Odb object.
         """
         ...
 
@@ -131,7 +131,7 @@ class OdbBase:
         Returns
         -------
         OdbFrame
-            An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object.
+            An OdbFrame object.
 
         Raises
         ------

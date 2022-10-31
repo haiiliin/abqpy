@@ -36,7 +36,7 @@ class SubmodelSB(Load):
     #: that the entire global model will be searched. The default value is an empty string.
     globalDrivingRegion: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -65,7 +65,7 @@ class SubmodelSB(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
@@ -91,7 +91,7 @@ class SubmodelSB(Load):
         Returns
         -------
         SubmodelSB
-            A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
+            A SubmodelSB object.
         """
         super().__init__()
 

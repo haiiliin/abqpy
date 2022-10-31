@@ -48,7 +48,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+            A CellArray object.
 
         """
         ...
@@ -121,14 +121,41 @@ class CellArray(List[Cell]):
         Returns
         -------
         Cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
+            A Cell object.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
+=======
+    def getExteriorFaces(self) -> FaceArray:
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        Returns
+        -------
+        FaceArray
+            A FaceArray object representing the faces on the exterior of the cells.
+
+        """
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Cell:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Cell]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, List[Cell]]:
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When large number of objects are involved, this method is highly
@@ -142,7 +169,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         Cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of Cell objects.
+            A Cell object or a sequence of Cell objects.
 
         Raises
         ------
@@ -193,7 +220,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...
@@ -222,7 +249,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...
@@ -242,7 +269,7 @@ class CellArray(List[Cell]):
         Returns
         -------
         CellArray
-            A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is a sequence of Cell objects.
+            A CellArray object, which is a sequence of Cell objects.
 
         """
         ...

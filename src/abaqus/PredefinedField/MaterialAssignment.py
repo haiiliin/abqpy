@@ -23,13 +23,13 @@ class MaterialAssignment(PredefinedField):
         - INITIAL CONDITIONS
     """
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+    #: A Region object specifying the region to which the predefined field is applied.
     region: Region = Region()
 
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field
+    #: A PartInstanceArray object specifying the part instances to which the predefined field
     #: is applied. All instances must be assigned the same Eulerian section.
     instanceList: PartInstanceArray
 
@@ -78,7 +78,7 @@ class MaterialAssignment(PredefinedField):
         name
             A String specifying the repository key.
         instanceList
-            A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field
+            A PartInstanceArray object specifying the part instances to which the predefined field
             is applied. All instances must be assigned the same Eulerian section.
         useFields
             A Boolean specifying whether the volume fraction data will be uniform or defined by
@@ -103,7 +103,7 @@ class MaterialAssignment(PredefinedField):
         Returns
         -------
         MaterialAssignment
-            A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
+            A MaterialAssignment object.
         """
         super().__init__()
 

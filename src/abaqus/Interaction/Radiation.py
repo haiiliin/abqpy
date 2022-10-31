@@ -48,7 +48,7 @@ class Radiation:
         Returns
         -------
         Radiation
-            A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
+            A Radiation object.
         """
         ...
 

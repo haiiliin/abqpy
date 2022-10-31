@@ -27,7 +27,7 @@ class StdXplCosimulation(Interaction):
     #: created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the import and export region upon which the co-simulation
+    #: A Region object specifying the import and export region upon which the co-simulation
     #: exchanges data with the coupled analysis program.
     region: Region
 
@@ -71,7 +71,7 @@ class StdXplCosimulation(Interaction):
             A String specifying the name of the step in which the StdXplCosimulation object is
             created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the import and export region upon which the co-simulation
+            A Region object specifying the import and export region upon which the co-simulation
             exchanges data with the coupled analysis program.
         incrementation
             A SymbolicConstant specifying whether the analysis programs use the same time increments
@@ -89,7 +89,7 @@ class StdXplCosimulation(Interaction):
         Returns
         -------
         StdXplCosimulation
-            A :py:class:`~abaqus.Interaction.StdXplCosimulation.StdXplCosimulation` object.
+            A StdXplCosimulation object.
         """
         super().__init__()
 

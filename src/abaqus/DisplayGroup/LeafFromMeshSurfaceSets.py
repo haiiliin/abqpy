@@ -42,6 +42,6 @@ class LeafFromMeshSurfaceSets(Leaf):
         Returns
         -------
         LeafFromMeshSurfaceSets
-            A :py:class:`~abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets` object.
+            A LeafFromMeshSurfaceSets object.
         """
         super().__init__(DEFAULT_MODEL)

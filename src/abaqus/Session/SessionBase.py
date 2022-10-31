@@ -98,53 +98,53 @@ class SessionBase:
     #: A repository of Color objects.
     colors: Dict[str, Color] = {}
 
-    #: A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifying how to record selection of geometry in the journal
+    #: A JournalOptions object specifying how to record selection of geometry in the journal
     #: and replay files.
     journalOptions: JournalOptions = JournalOptions()
 
-    #: A :py:class:`~abaqus.Session.MemoryReductionOptions.MemoryReductionOptions` object specifying options for running in reduced memory mode.
+    #: A MemoryReductionOptions object specifying options for running in reduced memory mode.
     memoryReductionOptions: MemoryReductionOptions = MemoryReductionOptions()
 
-    #: A :py:class:`~abaqus.PathAndProbe.NodeQuery.NodeQuery` object specifying nodes and their coordinates in a path.
+    #: A NodeQuery object specifying nodes and their coordinates in a path.
     nodeQuery: NodeQuery = NodeQuery()
 
-    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions` object specifying common options for all sketches.
+    #: A ConstrainedSketcherOptions object specifying common options for all sketches.
     sketcherOptions: ConstrainedSketcherOptions = ConstrainedSketcherOptions()
 
-    #: A :py:class:`~abaqus.OdbDisplay.ViewerOptions.ViewerOptions` object.
+    #: A ViewerOptions object.
     viewerOptions: ViewerOptions = ViewerOptions()
 
-    #: An :py:class:`~abaqus.Animation.AnimationOptions.AnimationOptions` object.
+    #: An AnimationOptions object.
     animationOptions: AnimationOptions = AnimationOptions()
 
-    #: An :py:class:`~abaqus.Animation.AVIOptions.AVIOptions` object.
+    #: An AVIOptions object.
     aviOptions: AVIOptions = AVIOptions()
 
-    #: An :py:class:`~abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions` object.
+    #: An ImageAnimationOptions object.
     imageAnimationOptions: ImageAnimationOptions = ImageAnimationOptions()
 
-    #: An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object.
+    #: An ImageAnimation object.
     imageAnimation: ImageAnimation = ImageAnimation("img", AVI)
 
-    #: A :py:class:`~abaqus.Animation.QuickTimeOptions.QuickTimeOptions` object.
+    #: A QuickTimeOptions object.
     quickTimeOptions: QuickTimeOptions = QuickTimeOptions()
 
     #: A repository of Viewport objects.
     viewports: Dict[str, Viewport] = {}
 
-    #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
+    #: A RepositorySupport object.
     customData: RepositorySupport = RepositorySupport()
 
-    #: A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
+    #: A FieldReportOptions object.
     defaultFieldReportOptions: FieldReportOptions = FieldReportOptions()
 
-    #: A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object.
+    #: A FreeBodyReportOptions object.
     defaultFreeBodyReportOptions: FreeBodyReportOptions = FreeBodyReportOptions()
 
-    #: A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
+    #: A FieldReportOptions object.
     fieldReportOptions: FieldReportOptions = FieldReportOptions()
 
-    #: A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object.
+    #: A FreeBodyReportOptions object.
     freeBodyReportOptions: FreeBodyReportOptions = FreeBodyReportOptions()
 
     #: A repository of Odb objects.
@@ -153,13 +153,13 @@ class SessionBase:
     #: A repository of ScratchOdb objects.
     scratchOdbs: Dict[str, ScratchOdb] = {}
 
-    #: A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` object.
+    #: A DefaultOdbDisplay object.
     defaultOdbDisplay: DefaultOdbDisplay = DefaultOdbDisplay()
 
-    #: A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object.
+    #: A DefaultPlot object.
     defaultPlot: DefaultPlot = DefaultPlot()
 
-    #: A :py:class:`~abaqus.XY.DefaultChartOptions.DefaultChartOptions` object.
+    #: A DefaultChartOptions object.
     defaultChartOptions: DefaultChartOptions = DefaultChartOptions()
 
     #: A repository of OdbData objects.
@@ -180,49 +180,49 @@ class SessionBase:
     #: A repository of Spectrum objects.
     spectrums: Dict[str, Spectrum] = {}
 
-    #: A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` object.
+    #: A CurrentProbeValues object.
     currentProbeValues: CurrentProbeValues = CurrentProbeValues()
 
-    #: A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object.
+    #: A ProbeOptions object.
     defaultProbeOptions: ProbeOptions = ProbeOptions()
 
-    #: A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object.
+    #: A ProbeOptions object.
     probeOptions: ProbeOptions = ProbeOptions()
 
-    #: A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object.
+    #: A ProbeReport object.
     probeReport: ProbeReport = ProbeReport()
 
-    #: A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object.
+    #: A ProbeReport object.
     defaultProbeReport: ProbeReport = ProbeReport()
 
-    #: A :py:class:`~abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues` object.
+    #: A SelectedProbeValues object.
     selectedProbeValues: SelectedProbeValues = SelectedProbeValues()
 
-    #: A :py:class:`~abaqus.Print.PrintOptions.PrintOptions` object.
+    #: A PrintOptions object.
     printOptions: PrintOptions = PrintOptions()
 
-    #: An :py:class:`~abaqus.Print.EpsOptions.EpsOptions` object.
+    #: An EpsOptions object.
     epsOptions: EpsOptions = EpsOptions()
 
-    #: A :py:class:`~abaqus.Print.PageSetupOptions.PageSetupOptions` object.
+    #: A PageSetupOptions object.
     pageSetupOptions: PageSetupOptions = PageSetupOptions()
 
-    #: A :py:class:`~abaqus.Print.PngOptions.PngOptions` object.
+    #: A PngOptions object.
     pngOptions: PngOptions = PngOptions()
 
-    #: A :py:class:`~abaqus.Print.PsOptions.PsOptions` object.
+    #: A PsOptions object.
     psOptions: PsOptions = PsOptions()
 
-    #: A :py:class:`~abaqus.Print.SvgOptions.SvgOptions` object.
+    #: A SvgOptions object.
     svgOptions: SvgOptions = SvgOptions()
 
-    #: A :py:class:`~abaqus.PredefinedField.TiffOptions.TiffOptions` object.
+    #: A TiffOptions object.
     tiffOptions: TiffOptions = TiffOptions()
 
-    #: An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used for color coding.
+    #: An AutoColors object specifying the color palette to be used for color coding.
     autoColors: AutoColors = AutoColors()
 
-    #: An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used forXYCurve objects.
+    #: An AutoColors object specifying the color palette to be used forXYCurve objects.
     xyColors: AutoColors = AutoColors()
 
     #: A repository of XYData objects.
@@ -237,10 +237,10 @@ class SessionBase:
     #: A repository of Chart objects.
     charts: Dict[str, Chart] = {}
 
-    #: An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object.
+    #: An XYReportOptions object.
     defaultXYReportOptions: XYReportOptions = XYReportOptions()
 
-    #: An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object.
+    #: An XYReportOptions object.
     xyReportOptions: XYReportOptions = XYReportOptions()
 
     #: A repository of View objects.
@@ -252,16 +252,16 @@ class SessionBase:
     #: A repository of DisplayGroup objects.
     displayGroups: Dict[str, DisplayGroup] = {}
 
-    #: A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object.
+    #: A GraphicsInfo object.
     graphicsInfo: GraphicsInfo = GraphicsInfo()
 
-    #: A :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` object.
+    #: A GraphicsOptions object.
     defaultGraphicsOptions: GraphicsOptions = GraphicsOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` object.
+    #: A GraphicsOptions object.
     graphicsOptions: GraphicsOptions = GraphicsOptions()
 
-    #: A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object.
+    #: A ViewportAnnotationOptions object.
     defaultViewportAnnotationOptions: ViewportAnnotationOptions = ViewportAnnotationOptions()
 
     #: A repository of Queue objects.
@@ -281,13 +281,13 @@ class SessionBase:
     #: A repository of Movie objects.
     movies: Dict[str, Movie] = {}
 
-    #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
+    #: A LightOptions object.
     defaultLightOptions: LightOptions = LightOptions()
 
-    #: A :py:class:`~abaqus.Canvas.DrawingArea.DrawingArea` object.
+    #: A DrawingArea object.
     drawingArea: DrawingArea = DrawingArea()
 
-    #: A :py:class:`~abaqus.Mesh.MesherOptions.MesherOptions` object specifying how to control default settings in the Mesh module.
+    #: A MesherOptions object specifying how to control default settings in the Mesh module.
     defaultMesherOptions: MesherOptions = MesherOptions()
 
     #: A repository of Drawing objects.
@@ -620,7 +620,7 @@ class SessionBase:
         Returns
         -------
         Odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object.
+            An Odb object.
 
         Raises
         ------

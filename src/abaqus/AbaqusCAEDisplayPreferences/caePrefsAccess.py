@@ -125,7 +125,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     Returns
     -------
     CaeGuiPrefs
-        A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs` object.
+        A CaeGuiPrefs object.
     """
     return CaeGuiPrefs()
 
@@ -164,7 +164,7 @@ def openSessionOptions(fileName: str = "", directory: Literal[C.CURRENT, C.HOME]
     Returns
     -------
     CaeKerPrefs
-        A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs` object.
+        A CaeKerPrefs object.
     """
     if fileName and directory:
         raise TypeError("fileName and directory arguments are mutually exclusive")
