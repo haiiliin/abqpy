@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1187,7 +1187,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.ReferencePoint:20
 #: abaqus.Feature.Feature.Feature.RemoveWireEdges:16
 #: abaqus.Feature.Feature.Feature.WirePolyLine:38 of
-msgid "**feature** -- A :py:class:`~abaqus.Feature.Feature.Feature` object"
+msgid "**feature** -- A Feature object"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.AttachmentPoints
@@ -1551,7 +1551,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:31
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:30
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:29 of
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+msgid "A Feature object."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumAxisByCylFace
@@ -1740,8 +1740,8 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumCsysByOffset:17 of
 msgid ""
-"A :py:class:`~abaqus.Datum.Datum.Datum` object representing a datum "
-"coordinate system from which to offset."
+"A Datum object representing a datum coordinate system from which to "
+"offset."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumCsysByOffset:19 of
@@ -1892,7 +1892,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:14 of
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object."
+msgid "An Edge object."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:16 of
@@ -1960,15 +1960,13 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:16 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object "
-"representing a datum plane. Note: Any other types of planes are not "
-"supported."
+"A Face object or a Datum object representing a datum plane. Note: Any "
+"other types of planes are not supported."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.MakeSketchTransform:1 of
 msgid ""
-"This method creates a Transform object. A "
-":py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 "
+"This method creates a Transform object. A Transform object is a 4x3 "
 "matrix of Floats that represents the transformation from sketch "
 "coordinates to part coordinates."
 msgstr ""
@@ -2017,17 +2015,14 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.MakeSketchTransform:28 of
 msgid ""
-"* :class:`Transform` -- A "
-":py:class:`~abaqus.BasicGeometry.Transform.Transform` object. A Transform"
-" is an object with one method that returns the transform * "
-":class:`matrix.`"
+"* :class:`Transform` -- A Transform object. A Transform is an object with"
+" one method that returns the transform * :class:`matrix.`"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.MakeSketchTransform:28 of
 msgid ""
-":class:`Transform` -- A "
-":py:class:`~abaqus.BasicGeometry.Transform.Transform` object. A Transform"
-" is an object with one method that returns the transform"
+":class:`Transform` -- A Transform object. A Transform is an object with "
+"one method that returns the transform"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.MakeSketchTransform:29 of
@@ -2057,7 +2052,7 @@ msgid "A sequence of Cell objects specifying the cells to partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:15 of
-msgid "A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object."
+msgid "A DatumPlane object."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:11 of
@@ -2103,9 +2098,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:14 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the cell "
-"to partition."
+msgid "A Cell object specifying the cell to partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners:16 of
@@ -2139,9 +2132,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:16 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
-"normal to the plane."
+msgid "An Edge object specifying the normal to the plane."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge:18 of
@@ -2196,10 +2187,9 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:20 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
-"sweep path. The start of **sweepPath** must be in the plane and "
-"perpendicular to the plane formed by **edges**. The sweep path must be "
-"planar."
+"An Edge object specifying the sweep path. The start of **sweepPath** must"
+" be in the plane and perpendicular to the plane formed by **edges**. The "
+"sweep path must be planar."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:10 of
@@ -2215,9 +2205,7 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane:15
 #: abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane:15 of
-msgid ""
-"A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object specifying the "
-"location of the partition."
+msgid "A DatumPlane object specifying the location of the partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByParam:10 of
@@ -2239,9 +2227,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:13 of
-msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
-" to partition."
+msgid "An Edge object specifying the edge to partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:15 of
@@ -2257,9 +2243,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceByAuto:14
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:14
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:14 of
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face "
-"to partition."
+msgid "A Face object specifying the face to partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:11 of
@@ -2271,8 +2255,8 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:16
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:16 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
-"start of the partition. The edge must belong to **face**."
+"An Edge object specifying the start of the partition. The edge must "
+"belong to **face**."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:18 of
@@ -2284,8 +2268,8 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:21
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints:20 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the end "
-"of the partition. The edge must belong to **face**."
+"An Edge object specifying the end of the partition. The edge must belong "
+"to **face**."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams:23 of
@@ -2337,9 +2321,8 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace:16 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.Face.Face` object that is to be "
-"extended to create the partition. The face to extend can be a planar, "
-"cylindrical, conical, or spherical face."
+"A Face object that is to be extended to create the partition. The face to"
+" extend can be a planar, cylindrical, conical, or spherical face."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace:11 of
@@ -2402,9 +2385,7 @@ msgstr ""
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:24
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:22
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll:24 of
-msgid ""
-"A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
-" specifying the partition."
+msgid "A ConstrainedSketch object specifying the partition."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketch:17 of
@@ -2435,9 +2416,8 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:21 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the "
-"orientation of **sketch**. This edge must not be orthogonal to "
-"**sketchPlane**."
+"An Edge object specifying the orientation of **sketch**. This edge must "
+"not be orthogonal to **sketchPlane**."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:26 of
@@ -2454,9 +2434,9 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:19 of
 msgid ""
-"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a DatumAxis "
-"object specifying the orientation of **sketch**. This edge or datum axis "
-"must not be orthogonal to **sketchPlane**."
+"An Edge object or a DatumAxis object specifying the orientation of "
+"**sketch**. This edge or datum axis must not be orthogonal to "
+"**sketchPlane**."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:24 of
@@ -2624,10 +2604,9 @@ msgstr ""
 
 #: abaqus.Feature.Feature.Feature.setValues:19 of
 msgid ""
-"A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
-" specifying the partition. You use this argument to modify a partition "
-"object created with a sketch; for example, using the "
-"PartitionFaceBySketch method."
+"A ConstrainedSketch object specifying the partition. You use this "
+"argument to modify a partition object created with a sketch; for example,"
+" using the PartitionFaceBySketch method."
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.setValues:23 of
@@ -3436,5 +3415,139 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "FeatureOptions"
+#~ msgstr ""
+
+#~ msgid "**feature** -- A :py:class:`~abaqus.Feature.Feature.Feature` object"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.Datum.Datum` object "
+#~ "representing a datum coordinate system "
+#~ "from which to offset."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Face.Face` object "
+#~ "or a Datum object representing a "
+#~ "datum plane. Note: Any other types "
+#~ "of planes are not supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method creates a Transform object."
+#~ " A :py:class:`~abaqus.BasicGeometry.Transform.Transform` "
+#~ "object is a 4x3 matrix of Floats"
+#~ " that represents the transformation from"
+#~ " sketch coordinates to part coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "* :class:`Transform` -- A "
+#~ ":py:class:`~abaqus.BasicGeometry.Transform.Transform` object."
+#~ " A Transform is an object with "
+#~ "one method that returns the transform"
+#~ " * :class:`matrix.`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":class:`Transform` -- A "
+#~ ":py:class:`~abaqus.BasicGeometry.Transform.Transform` object."
+#~ " A Transform is an object with "
+#~ "one method that returns the transform"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object "
+#~ "specifying the cell to partition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the normal to the plane."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the sweep path. The start "
+#~ "of **sweepPath** must be in the "
+#~ "plane and perpendicular to the plane "
+#~ "formed by **edges**. The sweep path "
+#~ "must be planar."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Datum.DatumPlane.DatumPlane` object"
+#~ " specifying the location of the "
+#~ "partition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the edge to partition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Face.Face` object "
+#~ "specifying the face to partition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the start of the partition."
+#~ " The edge must belong to **face**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the end of the partition. "
+#~ "The edge must belong to **face**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.Face.Face` object "
+#~ "that is to be extended to create"
+#~ " the partition. The face to extend"
+#~ " can be a planar, cylindrical, "
+#~ "conical, or spherical face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` "
+#~ "object specifying the partition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "specifying the orientation of **sketch**. "
+#~ "This edge must not be orthogonal "
+#~ "to **sketchPlane**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object "
+#~ "or a DatumAxis object specifying the "
+#~ "orientation of **sketch**. This edge or"
+#~ " datum axis must not be orthogonal"
+#~ " to **sketchPlane**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` "
+#~ "object specifying the partition. You use"
+#~ " this argument to modify a partition"
+#~ " object created with a sketch; for"
+#~ " example, using the PartitionFaceBySketch "
+#~ "method."
 #~ msgstr ""
 
