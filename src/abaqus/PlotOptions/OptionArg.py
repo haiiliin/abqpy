@@ -123,7 +123,7 @@ class OptionArg:
         Returns
         -------
         OptionArg
-            An :py:class:`~abaqus.PlotOptions.OptionArg.OptionArg` object.
+            An OptionArg object.
 
         Raises
         ------

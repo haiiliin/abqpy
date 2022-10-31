@@ -27,7 +27,7 @@ class RegisteredList(CommandRegister, list):
         Returns
         -------
         RegisteredList
-            A :py:class:`~abaqus.CustomKernel.RegisteredList.RegisteredList` object.
+            A RegisteredList object.
         """
         super().__init__()
 

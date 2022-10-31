@@ -228,7 +228,7 @@ class BeadTask(OptimizationTask):
         Returns
         -------
         BeadTask
-            A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object.
+            A BeadTask object.
         """
         super().__init__()
 

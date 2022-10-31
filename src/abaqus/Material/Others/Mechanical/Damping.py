@@ -53,7 +53,7 @@ class Damping:
         Returns
         -------
         Damping
-            A :py:class:`~abaqus.Material.Others.Mechanical.Damping.Damping` object.
+            A Damping object.
 
         Raises
         ------

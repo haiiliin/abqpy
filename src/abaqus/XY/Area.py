@@ -87,10 +87,10 @@ class Area:
     #: A Float specifying the bottom padding of the area in mm. The default value is 1.0.
     pb: float = 1
 
-    #: An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object specifying whether and how to fill the area.
+    #: An AreaStyle object specifying whether and how to fill the area.
     style: AreaStyle = AreaStyle()
 
-    #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying whether and how to draw the border of the area.
+    #: A LineStyle object specifying whether and how to draw the border of the area.
     border: LineStyle = LineStyle()
 
     #: A pair of Floats specifying the X- and Y-offsets in millimeters from the lower-left
@@ -136,11 +136,11 @@ class Area:
         Parameters
         ----------
         area
-            An :py:class:`~abaqus.XY.Area.Area` object from which attributes are to be copied.
+            An Area object from which attributes are to be copied.
         style
-            An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object.
+            An AreaStyle object.
         border
-            A :py:class:`~abaqus.XY.LineStyle.LineStyle` object.
+            A LineStyle object.
         positionMethod
             A SymbolicConstant specifying how the area is positioned. Possible values are AUTO_ALIGN
             and MANUAL. The default value is AUTO_ALIGN.

@@ -31,10 +31,10 @@ class Tie(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
+    #: A Region object specifying the name of the master surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface.
+    #: A Region object specifying the name of the slave surface.
     slave: Region
 
     #: A Boolean specifying whether initial positions of tied slave nodes are adjusted to
@@ -98,9 +98,9 @@ class Tie(Constraint):
         name
             A String specifying the constraint repository key.
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
+            A Region object specifying the name of the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface.
+            A Region object specifying the name of the slave surface.
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.
@@ -131,7 +131,7 @@ class Tie(Constraint):
         Returns
         -------
         Tie
-            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+            A Tie object.
         """
         super().__init__()
 

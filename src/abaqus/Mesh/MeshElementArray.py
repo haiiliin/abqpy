@@ -58,7 +58,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
         """
         super().__init__()
 
@@ -74,7 +74,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElement
-            A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
+            A MeshElement object.
         """
         ...
 
@@ -92,7 +92,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
         """
         ...
 
@@ -138,7 +138,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -160,7 +160,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -179,7 +179,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -213,7 +213,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
 
         Raises
         ------

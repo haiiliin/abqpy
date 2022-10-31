@@ -77,22 +77,22 @@ class Plastic:
         - PLASTIC
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
+    #: A RateDependent object.
     rateDependent: RateDependent = RateDependent(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A Potential object.
     potential: Potential = Potential(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CyclicHardening.CyclicHardening` object.
+    #: A CyclicHardening object.
     cyclicHardening: CyclicHardening = CyclicHardening(((),))
 
-    #: An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
+    #: An Ornl object.
     ornl: Ornl = Ornl()
 
-    #: A :py:class:`~abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic` object.
+    #: A CycledPlastic object.
     cycledPlastic: CycledPlastic = CycledPlastic(((),))
 
-    #: An :py:class:`~abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature` object.
+    #: An AnnealTemperature object.
     annealTemperature: AnnealTemperature = AnnealTemperature(((),))
 
     @abaqus_method_doc
@@ -142,7 +142,7 @@ class Plastic:
         Returns
         -------
         Plastic
-            A :py:class:`~abaqus.Material.Plastic.Plastic.Plastic` object.
+            A Plastic object.
 
         Raises
         ------
