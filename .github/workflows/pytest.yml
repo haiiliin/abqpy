@@ -29,6 +29,11 @@ jobs:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
     steps:
+      - name: Add disable-auto-merge label
+        if: github.event_name == 'pull_request' && matrix.python-version == '3.10'
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: disable-auto-merge
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
@@ -116,3 +121,9 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           branch: ${{ github.head_ref }}
+
+      - name: Remove disable-auto-merge label
+        if: github.event_name == 'pull_request'
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: disable-auto-merge
