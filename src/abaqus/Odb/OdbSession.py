@@ -19,12 +19,12 @@ class OdbSession(SessionBase):
         Parameters
         ----------
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database with which to associate.
+            An Odb object specifying the output database with which to associate.
 
         Returns
         -------
         ScratchOdb
-            A :py:class:`~abaqus.Odb.ScratchOdb.ScratchOdb` object.
+            A ScratchOdb object.
         """
         self.scratchOdbs["odb"] = scratchOdb = ScratchOdb(odb)
         return scratchOdb

@@ -104,7 +104,7 @@ class OperatorFilter(Filter):
         Returns
         -------
         OperatorFilter
-            An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object.
+            An OperatorFilter object.
 
         Raises
         ------

@@ -88,7 +88,7 @@ class UniaxialTestData:
         Returns
         -------
         UniaxialTestData
-            A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
+            A UniaxialTestData object.
         """
         ...
 

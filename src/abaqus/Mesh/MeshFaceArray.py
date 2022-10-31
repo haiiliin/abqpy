@@ -41,7 +41,7 @@ class MeshFaceArray(List[MeshFace]):
         Returns
         -------
         MeshFaceArray
-            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
+            A MeshFaceArray object.
         """
         super().__init__()
 
@@ -58,7 +58,7 @@ class MeshFaceArray(List[MeshFace]):
         Returns
         -------
         MeshFaceArray
-            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
+            A MeshFaceArray object.
 
         Raises
         ------

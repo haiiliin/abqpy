@@ -106,10 +106,10 @@ class BoundaryConditionModel(ModelBase):
         amplitudeScaleFactor
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
-            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
+            A ModelDot object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
+            A Correlation object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -125,7 +125,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: AccelerationBaseMotionBC
-            An :py:class:`~abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC` object.
+            An AccelerationBaseMotionBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = AccelerationBaseMotionBC(
             name,
@@ -172,7 +172,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -216,7 +216,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: AccelerationBC
-            An :py:class:`~abaqus.BoundaryCondition.AccelerationBC.AccelerationBC` object.
+            An AccelerationBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = AccelerationBC(
             name,
@@ -262,7 +262,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -285,7 +285,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: AcousticPressureBC
-            An :py:class:`~abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC` object.
+            An AcousticPressureBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = AcousticPressureBC(
             name,
@@ -326,7 +326,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -349,7 +349,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: ConcentrationBC
-            A :py:class:`~abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC` object.
+            A ConcentrationBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = ConcentrationBC(
             name,
@@ -446,7 +446,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: ConnAccelerationBC
-            A :py:class:`~abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC` object.
+            A ConnAccelerationBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = ConnAccelerationBC(
             name,
@@ -559,7 +559,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: ConnDisplacementBC
-            A :py:class:`~abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC` object.
+            A ConnDisplacementBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = ConnDisplacementBC(
             name,
@@ -663,7 +663,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: ConnVelocityBC
-            A :py:class:`~abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC` object.
+            A ConnVelocityBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = ConnVelocityBC(
             name,
@@ -715,10 +715,10 @@ class BoundaryConditionModel(ModelBase):
         amplitudeScaleFactor
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
-            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
+            A ModelDot object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
+            A Correlation object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -734,7 +734,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: DisplacementBaseMotionBC
-            A :py:class:`~abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC` object.
+            A DisplacementBaseMotionBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = DisplacementBaseMotionBC(
             name,
@@ -785,7 +785,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField or DiscreteField object associated
             with this boundary condition. The **fieldName** argument applies only when
@@ -840,7 +840,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: DisplacementBC
-            A :py:class:`~abaqus.BoundaryCondition.DisplacementBC.DisplacementBC` object
+            A DisplacementBC object
         """
         self.boundaryConditions[name] = boundaryCondition = DisplacementBC(
             name,
@@ -888,7 +888,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -911,7 +911,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: ElectricPotentialBC
-            An :py:class:`~abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC` object.
+            An ElectricPotentialBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = ElectricPotentialBC(
             name,
@@ -950,7 +950,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         definition
             A SymbolicConstant specifying the flow conditions to be defined. Possible values are
             INFLOW, OUTFLOW, and BOTH. The default value is INFLOW.
@@ -965,7 +965,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: EulerianBC
-            An :py:class:`~abaqus.BoundaryCondition.EulerianBC.EulerianBC` object.
+            An EulerianBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = EulerianBC(
             name, createStepName, region, definition, inflowType, outflowType
@@ -1022,7 +1022,7 @@ class BoundaryConditionModel(ModelBase):
             A Boolean specifying whether the mesh will follow a regular surface region or an
             Eulerian surface. The default value is ON.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         materialName
             A String specifying the name of the Eulerian surface to follow. This argument applies
             only when **followRegion** = False.
@@ -1099,7 +1099,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: EulerianMotionBC
-            An :py:class:`~abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC` object.
+            An EulerianMotionBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = EulerianMotionBC(
             name,
@@ -1171,7 +1171,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: FluidCavityPressureBC
-            A :py:class:`~abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC` object.
+            A FluidCavityPressureBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = FluidCavityPressureBC(
             name, createStepName, fluidCavity, magnitude, amplitude, fixed
@@ -1206,7 +1206,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         component1
             A Complex, or a SymbolicConstant specifying the magnetic vector potential component in
             the 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default
@@ -1235,7 +1235,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: MagneticVectorPotentialBC
-            A :py:class:`~abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC` object.
+            A MagneticVectorPotentialBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = MagneticVectorPotentialBC(
             name,
@@ -1276,7 +1276,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -1299,7 +1299,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: MaterialFlowBC
-            A :py:class:`~abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC` object.
+            A MaterialFlowBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = MaterialFlowBC(
             name,
@@ -1340,7 +1340,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -1363,7 +1363,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: PorePressureBC
-            A :py:class:`~abaqus.BoundaryCondition.PorePressureBC.PorePressureBC` object.
+            A PorePressureBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = PorePressureBC(
             name,
@@ -1405,7 +1405,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         u1
             A Boolean specifying whether to retain the degree of freedom in the 1-direction. The
             default value is OFF indicating that the degree of freedom is not retained.
@@ -1431,7 +1431,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: RetainedNodalDofsBC
-            A :py:class:`~abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC` object.
+            A RetainedNodalDofsBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = RetainedNodalDofsBC(
             name, createStepName, region, u1, u2, u3, ur1, ur2, ur3
@@ -1454,7 +1454,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         regions
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the region to which the boundary condition is applied.
+            A RegionArray object specifying the region to which the boundary condition is applied.
             Note that the usual **region** is ignored. The default value is MODEL.
         dofs
             A sequence of sequences of Ints specifying the constrained degrees-of-freedom.
@@ -1462,7 +1462,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: SecondaryBaseBC
-            A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
+            A SecondaryBaseBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = SecondaryBaseBC(name, createStepName, regions, dofs)
         self.steps[createStepName].boundaryConditionStates[name] = SecondaryBaseBCState()
@@ -1500,7 +1500,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         dof
             A sequence of Ints specifying the degrees of freedom to which the boundary condition is
             applied.
@@ -1550,7 +1550,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: SubmodelBC
-            A :py:class:`~abaqus.BoundaryCondition.SubmodelBC.SubmodelBC` object.
+            A SubmodelBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = SubmodelBC(
             name,
@@ -1598,7 +1598,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -1623,7 +1623,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: TemperatureBC
-            A :py:class:`~abaqus.BoundaryCondition.TemperatureBC.TemperatureBC` object.
+            A TemperatureBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TemperatureBC(
             name,
@@ -1671,10 +1671,10 @@ class BoundaryConditionModel(ModelBase):
         amplitudeScaleFactor
             A Float specifying the scale factor for the amplitude curve. The default value is 1.0.
         centerOfRotation
-            A :py:class:`~abaqus.BasicGeometry.ModelDot.ModelDot` object specifying a tuple containing one center of rotation. The default
+            A ModelDot object specifying a tuple containing one center of rotation. The default
             value is the global origin. This argument applies only when **dof** = UR1, UR2, or UR3.
         correlation
-            A :py:class:`~abaqus.Amplitude.Correlation.Correlation` object.
+            A Correlation object.
         secondaryBase
             A String specifying the name of the SecondaryBaseBC object associated with this boundary
             condition. The default value is an empty string.
@@ -1690,7 +1690,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: VelocityBaseMotionBC
-            A :py:class:`~abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC` object.
+            A VelocityBaseMotionBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = VelocityBaseMotionBC(
             name,
@@ -1737,7 +1737,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         fieldName
             A String specifying the name of the AnalyticalField object associated with this boundary
             condition. The **fieldName** argument applies only when **distributionType** = FIELD. The
@@ -1781,7 +1781,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         bc: VelocityBC
-            A :py:class:`~abaqus.BoundaryCondition.VelocityBC.VelocityBC` object.
+            A VelocityBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = VelocityBC(
             name,
@@ -1826,7 +1826,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -1839,7 +1839,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.EncastreBC(
             name,
@@ -1875,7 +1875,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -1888,7 +1888,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.PinnedBC(
             name,
@@ -1924,7 +1924,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -1937,7 +1937,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.XsymmBC(
             name,
@@ -1973,7 +1973,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -1986,7 +1986,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.YsymmBC(
             name,
@@ -2022,7 +2022,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -2035,7 +2035,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.ZsymmBC(
             name,
@@ -2071,7 +2071,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -2084,7 +2084,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.XasymmBC(
             name,
@@ -2120,7 +2120,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -2133,7 +2133,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.YasymmBC(
             name,
@@ -2169,7 +2169,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the boundary condition is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
+            A Region object specifying the region to which the boundary condition is applied.
         buckleCase
             A SymbolicConstant specifying how the boundary condition is defined in a BUCKLE
             analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, BUCKLING_MODES, and
@@ -2182,7 +2182,7 @@ class BoundaryConditionModel(ModelBase):
         Returns
         -------
         TypeBC
-            A :py:class:`~abaqus.BoundaryCondition.TypeBC.TypeBC` object.
+            A TypeBC object.
         """
         self.boundaryConditions[name] = boundaryCondition = TypeBC.ZasymmBC(
             name,

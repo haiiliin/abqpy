@@ -20,11 +20,11 @@ class XYPlotBase:
             session.xyPlots[name]
     """
 
-    #: An :py:class:`~abaqus.XY.Area.Area` object specifying position, padding, background and borders of the XYPlot
+    #: An Area object specifying position, padding, background and borders of the XYPlot
     #: object.
     area: Area = Area()
 
-    #: A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the XYPlot object.
+    #: A Title object specifying the title of the XYPlot object.
     title: Title = Title()
 
     #: A repository of Chart objects.
@@ -54,7 +54,7 @@ class XYPlotBase:
         Returns
         -------
         XYPlot
-            An :py:class:`~abaqus.XY.XYPlot.XYPlot` object.
+            An XYPlot object.
         """
         ...
 
@@ -121,7 +121,7 @@ class XYPlotBase:
         Parameters
         ----------
         title
-            A :py:class:`~abaqus.XY.Title.Title` object specifying the title of the XYPlot object.
+            A Title object specifying the title of the XYPlot object.
         transform
             A sequence of Floats specifying a transformation matrix used to scale or pan along the
             axes of the active Chart object of this XYPlot.

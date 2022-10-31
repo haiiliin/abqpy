@@ -42,6 +42,6 @@ class LeafFromOdbElementSections(Leaf):
         Returns
         -------
         LeafFromOdbElementSections
-            A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections` object.
+            A LeafFromOdbElementSections object.
         """
         super().__init__(DEFAULT_MODEL)

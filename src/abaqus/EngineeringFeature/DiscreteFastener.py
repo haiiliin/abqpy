@@ -34,7 +34,7 @@ class DiscreteFastener(Fastener):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied.
+    #: A Region object specifying the region to which the fastener is applied.
     region: Region
 
     #: The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
@@ -99,7 +99,7 @@ class DiscreteFastener(Fastener):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the fastener is applied.
+            A Region object specifying the region to which the fastener is applied.
         influenceRadius
             The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
         ur1
@@ -131,7 +131,7 @@ class DiscreteFastener(Fastener):
         Returns
         -------
         DiscreteFastener
-            A :py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` object.
+            A DiscreteFastener object.
         """
         super().__init__()
 

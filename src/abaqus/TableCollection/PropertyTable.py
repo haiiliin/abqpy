@@ -64,7 +64,7 @@ class PropertyTable:
         Returns
         -------
         PropertyTable
-            A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object.
+            A PropertyTable object.
 
         Raises
         ------
@@ -131,7 +131,7 @@ class PropertyTable:
         Returns
         -------
         PropertyTableData
-            A :py:class:`~abaqus.TableCollection.PropertyTableData.PropertyTableData` object.
+            A PropertyTableData object.
 
         Raises
         ------

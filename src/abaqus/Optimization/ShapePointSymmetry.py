@@ -24,7 +24,7 @@ class ShapePointSymmetry(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
     #: the default value is MODEL.
     region: Region
@@ -81,7 +81,7 @@ class ShapePointSymmetry(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -110,7 +110,7 @@ class ShapePointSymmetry(GeometricRestriction):
         Returns
         -------
         ShapePointSymmetry
-            A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
+            A ShapePointSymmetry object.
         """
         super().__init__()
 

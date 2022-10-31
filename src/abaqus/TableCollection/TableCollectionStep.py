@@ -52,7 +52,7 @@ class TableCollectionStep(StepBase):
         Returns
         -------
         elements: ActivateElements
-            An :py:class:`~abaqus.TableCollection.ActivateElements.ActivateElements` object.
+            An ActivateElements object.
         """
         self.activateElements["activation"] = activateElements = ActivateElements(
             tableCollection, activation, eigenTimeConst, expansionTimeConstant

@@ -70,7 +70,7 @@ class FilterModel(ModelBase):
         Returns
         -------
         ButterworthFilter
-            A :py:class:`~abaqus.Filter.ButterworthFilter.ButterworthFilter` object.
+            A ButterworthFilter object.
 
         Raises
         ------
@@ -134,7 +134,7 @@ class FilterModel(ModelBase):
         Returns
         -------
         Chebyshev1Filter
-            A :py:class:`~abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter` object.
+            A Chebyshev1Filter object.
 
         Raises
         ------
@@ -205,7 +205,7 @@ class FilterModel(ModelBase):
         Returns
         -------
         Chebyshev2Filter
-            A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object.
+            A Chebyshev2Filter object.
 
         Raises
         ------
@@ -272,7 +272,7 @@ class FilterModel(ModelBase):
         Returns
         -------
         OperatorFilter
-            An :py:class:`~abaqus.Filter.OperatorFilter.OperatorFilter` object.
+            An OperatorFilter object.
 
         Raises
         ------

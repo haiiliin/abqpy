@@ -468,7 +468,7 @@ class ShapeTask(OptimizationTask):
         Returns
         -------
         ShapeTask
-            A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object.
+            A ShapeTask object.
         """
         super().__init__()
 

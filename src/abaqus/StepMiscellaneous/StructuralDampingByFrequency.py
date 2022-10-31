@@ -7,7 +7,7 @@ from .StructuralDampingByFrequencyComponentArray import (
 
 @abaqus_class_doc
 class StructuralDampingByFrequency:
-    """A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object contains structural damping parameters.
+    """A StructuralDampingByFrequency object contains structural damping parameters.
 
     .. note::
         This object can be accessed by::
@@ -16,5 +16,5 @@ class StructuralDampingByFrequency:
             mdb.models[name].steps[name].structuralDampingByFrequency
     """
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray` object.
+    #: A StructuralDampingByFrequencyComponentArray object.
     components: StructuralDampingByFrequencyComponentArray = []
