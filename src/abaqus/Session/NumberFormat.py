@@ -77,6 +77,6 @@ class NumberFormat:
         Returns
         -------
         NumberFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
+            A NumberFormat object.
         """
         ...

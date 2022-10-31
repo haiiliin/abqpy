@@ -43,6 +43,6 @@ class LeafFromInstanceElementLabels(Leaf):
         Returns
         -------
         LeafFromInstanceElementLabels
-            A :py:class:`~abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels` object.
+            A LeafFromInstanceElementLabels object.
         """
         super().__init__(DEFAULT_MODEL)

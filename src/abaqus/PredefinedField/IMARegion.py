@@ -17,7 +17,7 @@ class IMARegion:
             mdb.models[name].predefinedFields[name].assignmentList
     """
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the sub-region of the selected part instance to which the
+    #: A Region object specifying the sub-region of the selected part instance to which the
     #: volume fractions will be applied.
     region: Region = Region()
 

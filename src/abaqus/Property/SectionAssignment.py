@@ -29,7 +29,7 @@ class SectionAssignment:
     #: value is OFF.
     suppressed: Boolean = OFF
 
-    #: A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
+    #: A Set object specifying the region to which the section is assigned.
     region: Set
 
     #: A String specifying the name of the section.
@@ -75,7 +75,7 @@ class SectionAssignment:
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
+            A Set object specifying the region to which the section is assigned.
         sectionName
             A String specifying the name of the section.
         thicknessAssignment
@@ -95,7 +95,7 @@ class SectionAssignment:
         Returns
         -------
         SectionAssignment
-            A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
+            A SectionAssignment object.
         """
         ...
 

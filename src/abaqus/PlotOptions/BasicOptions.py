@@ -411,7 +411,7 @@ class BasicOptions(_CopyOptionsBase):
     #: system. The default value is GLOBAL.
     patternCsysName: SymbolicConstant = GLOBAL
 
-    #: A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results
+    #: A DatumCsys object specifying the coordinate system to use for results
     #: transformation
     #: when **transformationType** = USER_SPECIFIED.
     datumCsys: DatumCsys = DatumCsys()
@@ -544,7 +544,7 @@ class BasicOptions(_CopyOptionsBase):
         Parameters
         ----------
         options
-            A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object from which values are to be copied.
+            A BasicOptions object from which values are to be copied.
             If other arguments are also supplied to setValues, they will override the values in **options**.
             The default value is None.
         cameraCsysName
@@ -771,7 +771,7 @@ class BasicOptions(_CopyOptionsBase):
             into the layup orientation defined in the composite section. The odb should contain the
             field SORIENT in order to use this option.
         datumCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results
+            A DatumCsys object specifying the coordinate system to use for results
             transformation when **transformationType** = USER_SPECIFIED.
         rigidTransformPrimary
             A Boolean specifying whether to perform a rigid transformation of nodal vector datasets

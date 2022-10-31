@@ -50,7 +50,7 @@ class TransverseShearShell:
         Returns
         -------
         TransverseShearShell
-            A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
+            A TransverseShearShell object.
         """
         ...
 

@@ -23,16 +23,16 @@ class ConcentricConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc, circle, ellipse, or sketch
+            A ConstrainedSketchGeometry object specifying the first arc, circle, ellipse, or sketch
             vertex.
         entity2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second arc, circle, ellipse, or sketch
+            A ConstrainedSketchGeometry object specifying the second arc, circle, ellipse, or sketch
             vertex.
 
         Returns
         -------
         ConstrainedSketchConstraint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+            A ConstrainedSketchConstraint object.
 
         """
         ...

@@ -27,7 +27,7 @@ class ConcentratedFilmCondition(Interaction):
     #: is created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated film condition
+    #: A Region object specifying the region to which the concentrated film condition
     #: interaction is applied. The interaction is applied to each node in the region.
     region: Region
 
@@ -122,7 +122,7 @@ class ConcentratedFilmCondition(Interaction):
             A String specifying the name of the step in which the ConcentratedFilmCondition object
             is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the concentrated film condition
+            A Region object specifying the region to which the concentrated film condition
             interaction is applied. The interaction is applied to each node in the region.
         definition
             A SymbolicConstant specifying how the concentrated film condition is defined. Possible
@@ -175,7 +175,7 @@ class ConcentratedFilmCondition(Interaction):
         Returns
         -------
         ConcentratedFilmCondition
-            A :py:class:`~abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition` object.
+            A ConcentratedFilmCondition object.
         """
         super().__init__()
 

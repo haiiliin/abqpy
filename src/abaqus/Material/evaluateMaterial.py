@@ -48,7 +48,7 @@ def evaluateMaterial(
     Parameters
     ----------
     material
-        A :py:class:`~abaqus.Material.Material.Material` object.
+        A Material object.
     simulationName
         A String specifying the name to be used for the material evaluation simulation.
     dataSource

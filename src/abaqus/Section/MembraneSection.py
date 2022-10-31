@@ -27,7 +27,7 @@ class MembraneSection(Section):
         - MEMBRANE SECTION
     """
 
-    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A RebarLayers object specifying reinforcement properties.
     rebarLayers: Optional[RebarLayers] = None
 
     #: A String specifying the repository key.
@@ -114,7 +114,7 @@ class MembraneSection(Section):
         Returns
         -------
         MembraneSection
-            A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
+            A MembraneSection object.
 
         Raises
         ------

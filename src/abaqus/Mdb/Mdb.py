@@ -75,7 +75,7 @@ class Mdb(AcisMdb, JobMdb):
         Returns
         -------
         model: Model
-            A :py:class:`~abaqus.Model.Model.Model` object
+            A Model object
         """
         self.models[name] = model = Model(
             name,

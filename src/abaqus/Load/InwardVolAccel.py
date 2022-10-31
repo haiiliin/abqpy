@@ -34,7 +34,7 @@ class InwardVolAccel(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -63,7 +63,7 @@ class InwardVolAccel(Load):
             A String specifying the name of the step in which the load is created. This must be the
             name of the first analysis step.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -81,7 +81,7 @@ class InwardVolAccel(Load):
         Returns
         -------
         InwardVolAccel
-            An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
+            An InwardVolAccel object.
         """
         super().__init__()
 
