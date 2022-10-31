@@ -166,7 +166,7 @@ class ContactStd(Interaction):
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
@@ -254,7 +254,7 @@ class ContactStd(Interaction):
             .. versionadded:: 2021
                 The `surfaceVertexCriteriaAssignments` argument was added.
         slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
+            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the

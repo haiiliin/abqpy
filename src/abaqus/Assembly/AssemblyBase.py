@@ -500,9 +500,9 @@ class AssemblyBase(AssemblyFeature):
               attachment line.
             - **endFace**: A Face object specifying the face associated with the other end of
               the attachment line.
-            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
+            - **startVertex**: A ConstrainedSketchVertex
               object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace.
-            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
+            - **endVertex**: A ConstrainedSketchVertex
               object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace.
         """
         ...
