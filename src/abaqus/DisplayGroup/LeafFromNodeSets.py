@@ -44,6 +44,6 @@ class LeafFromNodeSets(Leaf):
         Returns
         -------
         LeafFromNodeSets
-            A :py:class:`~abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets` object.
+            A LeafFromNodeSets object.
         """
         super().__init__(DEFAULT_MODEL)

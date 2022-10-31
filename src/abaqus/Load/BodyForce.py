@@ -37,7 +37,7 @@ class BodyForce(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -67,7 +67,7 @@ class BodyForce(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -91,7 +91,7 @@ class BodyForce(Load):
         Returns
         -------
         BodyForce
-            A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
+            A BodyForce object.
         """
         super().__init__()
 

@@ -12,7 +12,7 @@ class KeywordBlock:
     is not supported by Abaqus/CAE. As a general rule, edits to the KeywordBlock object
     should be made as the last step prior to writing the actual Abaqus input file, thus
     avoiding possible conflicts with changes made using other MDB commands. The KeywordBlock
-    object has no constructor. A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object is created when you create a model
+    object has no constructor. A KeywordBlock object is created when you create a model
     object. A model object contains only one KeywordBlock object.
 
     .. note::

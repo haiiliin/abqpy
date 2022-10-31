@@ -59,7 +59,7 @@ class ExpressionField(AnalyticalField):
         Returns
         -------
         ExpressionField
-            An :py:class:`~abaqus.Field.ExpressionField.ExpressionField` object.
+            An ExpressionField object.
 
         Raises
         ------

@@ -22,14 +22,14 @@ class PerpendicularConstraint(ConstrainedSketchConstraint):
         Parameters
         ----------
         entity1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first object.
+            A ConstrainedSketchGeometry object specifying the first object.
         entity2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second object.
+            A ConstrainedSketchGeometry object specifying the second object.
 
         Returns
         -------
         ConstrainedSketchConstraint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+            A ConstrainedSketchConstraint object.
 
         """
         ...

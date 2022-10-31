@@ -23,7 +23,7 @@ class PredefinedField:
     #: A String specifying the repository key.
     name: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
+    #: A Region object specifying the region to which the predefined field is applied. **Region**
     #: is ignored if the predefined field has an **instances** member available. **Region** is also
     #: ignored if the predefined field has a **distributionType** member available, and
     #: **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.

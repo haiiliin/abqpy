@@ -31,7 +31,7 @@ class AnalyticSurface:
     #: segments. The default value is 0.0.
     filletRadius: float = 0
 
-    #: An :py:class:`~abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment` object specifying the profile associated with the
+    #: An OdbSequenceAnalyticSurfaceSegment object specifying the profile associated with the
     #: surface.
     segments: OdbSequenceAnalyticSurfaceSegment = OdbSequenceAnalyticSurfaceSegment()
 

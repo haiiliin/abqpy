@@ -37,33 +37,33 @@ class ContactExp(Interaction):
     #: applied to all eligible surfaces. The default value is ON.
     globalSmoothing: Boolean = ON
 
-    #: A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
+    #: A RegionPairs object specifying the domain pairs included in contact.
     includedPairs: RegionPairs = RegionPairs()
 
-    #: A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
+    #: A RegionPairs object specifying the domain pairs excluded from contact.
     excludedPairs: RegionPairs = RegionPairs()
 
-    #: A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
+    #: A ContactPropertyAssignment object specifying the contact property assignments in the
     #: contact domain.
     contactPropertyAssignments: ContactPropertyAssignment = ContactPropertyAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
+    #: A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
     #: contact domain.
     surfaceThicknessAssignments: SurfaceThicknessAssignment = SurfaceThicknessAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
+    #: A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
     #: the contact domain.
     surfaceOffsetAssignments: SurfaceOffsetAssignment = SurfaceOffsetAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
+    #: A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
     #: the contact domain.
     surfaceFeatureAssignments: SurfaceFeatureAssignment = SurfaceFeatureAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
+    #: A SmoothingAssignment object specifying the surface smoothing assignments in the contact
     #: domain.
     smoothingAssignments: SmoothingAssignment = SmoothingAssignment()
 
-    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
+    #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
@@ -105,32 +105,32 @@ class ContactExp(Interaction):
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
         includedPairs
-            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs included in contact.
+            A RegionPairs object specifying the domain pairs included in contact.
         excludedPairs
-            A :py:class:`~abaqus.Interaction.RegionPairs.RegionPairs` object specifying the domain pairs excluded from contact.
+            A RegionPairs object specifying the domain pairs excluded from contact.
         contactPropertyAssignments
-            A :py:class:`~abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment` object specifying the contact property assignments in the
+            A ContactPropertyAssignment object specifying the contact property assignments in the
             contact domain.
         surfaceThicknessAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
+            A SurfaceThicknessAssignment object specifying the surface thickness assignments in the
             contact domain.
         surfaceOffsetAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
+            A SurfaceOffsetAssignment object specifying the surface offset fraction assignments in
             the contact domain.
         surfaceFeatureAssignments
-            A :py:class:`~abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment` object specifying the surface feature angle assignments in
+            A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
         smoothingAssignments
-            A :py:class:`~abaqus.Interaction.SmoothingAssignment.SmoothingAssignment` object specifying the surface smoothing assignments in the contact
+            A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the main-secondary assignments in the
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
 
         Returns
         -------
         ContactExp
-            A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
+            A ContactExp object.
         """
         super().__init__()
 
@@ -182,8 +182,8 @@ class ContactExp(Interaction):
         contactPropertyAssignments
             A sequence of tuples specifying the properties assigned to each surface pair. Each tuple
             contains three entries:
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant GLOBAL.
-            - A :py:class:`~abaqus.Region.Region.Region` object or the SymbolicConstant SELF.
+            - A Region object or the SymbolicConstant GLOBAL.
+            - A Region object or the SymbolicConstant SELF.
             - A String specifying an InteractionProperty object associated with this pair of
               regions.
         surfaceThicknessAssignments
@@ -231,7 +231,7 @@ class ContactExp(Interaction):
         Returns
         -------
         ContactExp
-            A :py:class:`~abaqus.Interaction.ContactExp.ContactExp` object.
+            A ContactExp object.
         """
         super().__init__()
 

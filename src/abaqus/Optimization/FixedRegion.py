@@ -22,7 +22,7 @@ class FixedRegion(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
     #: the default value is MODEL.
     region: Region
@@ -71,7 +71,7 @@ class FixedRegion(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -94,7 +94,7 @@ class FixedRegion(GeometricRestriction):
         Returns
         -------
         FixedRegion
-            A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
+            A FixedRegion object.
         """
         super().__init__()
 

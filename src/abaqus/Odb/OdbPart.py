@@ -77,7 +77,7 @@ class OdbPart(OdbPartBase):
         Returns
         -------
         OdbSet
-            An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object.
+            An OdbSet object.
         """
         self.nodeSets[name] = odbSet = OdbSet(name, nodes)
         return odbSet

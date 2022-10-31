@@ -31,7 +31,7 @@ class AcousticImpedance(Interaction):
     #: created.
     createStepName: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
+    #: A Region object specifying the acoustic boundary surface.
     surface: Region
 
     #: A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
@@ -105,7 +105,7 @@ class AcousticImpedance(Interaction):
             A String specifying the name of the step in which the AcousticImpedance object is
             created.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the acoustic boundary surface.
+            A Region object specifying the acoustic boundary surface.
         definition
             A SymbolicConstant specifying the type of acoustic impedance to be defined. Possible
             values are TABULAR and NONREFLECTING. The default value is TABULAR.
@@ -141,7 +141,7 @@ class AcousticImpedance(Interaction):
         Returns
         -------
         AcousticImpedance
-            An :py:class:`~abaqus.Interaction.AcousticImpedance.AcousticImpedance` object.
+            An AcousticImpedance object.
         """
         super().__init__()
 

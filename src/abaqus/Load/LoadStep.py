@@ -39,7 +39,7 @@ class LoadStep(StepBase):
         Returns
         -------
         LoadCase
-            A :py:class:`~abaqus.Load.LoadCase.LoadCase` object.
+            A LoadCase object.
 
         Raises
         ------

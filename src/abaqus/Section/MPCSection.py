@@ -76,7 +76,7 @@ class MPCSection(Section):
         Returns
         -------
         MPCSection
-            A :py:class:`~abaqus.Section.MPCSection.MPCSection` object.
+            A MPCSection object.
 
         Raises
         ------

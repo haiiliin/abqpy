@@ -33,7 +33,7 @@ class XFEMCrack(Crack):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region that contains the crack or is likely to contain
+    #: A Region object specifying the region that contains the crack or is likely to contain
     #: the crack.
     crackDomain: Region
 
@@ -41,7 +41,7 @@ class XFEMCrack(Crack):
     #: is ON.
     allowCrackGrowth: Boolean = ON
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
+    #: A Region object specifying the initial crack location. This parameter is required when
     #: **allowCrackGrowth** = OFF.
     crackLocation: Optional[Region] = None
 
@@ -111,13 +111,13 @@ class XFEMCrack(Crack):
         name
             A String specifying the repository key.
         crackDomain
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region that contains the crack or is likely to contain
+            A Region object specifying the region that contains the crack or is likely to contain
             the crack.
         allowCrackGrowth
             A Boolean specifying whether the crack is allowed to propagate (grow). The default value
             is ON.
         crackLocation
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
+            A Region object specifying the initial crack location. This parameter is required when
             **allowCrackGrowth** = OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are
@@ -150,7 +150,7 @@ class XFEMCrack(Crack):
         Returns
         -------
         XFEMCrack
-            A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object.
+            A XFEMCrack object.
         """
         super().__init__()
 
@@ -176,7 +176,7 @@ class XFEMCrack(Crack):
             A Boolean specifying whether the crack is allowed to propagate (grow). The default value
             is ON.
         crackLocation
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the initial crack location. This parameter is required when
+            A Region object specifying the initial crack location. This parameter is required when
             **allowCrackGrowth** = OFF.
         singularityCalcRadius
             None or a Float specifying the radius from the crack tips within which the elements are

@@ -66,7 +66,7 @@ class CanvasSession(SessionBase):
         Returns
         -------
         Viewport
-            A :py:class:`~abaqus.Canvas.Viewport.Viewport` object.
+            A Viewport object.
 
         Raises
         ------
