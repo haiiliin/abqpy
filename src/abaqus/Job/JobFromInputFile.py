@@ -39,7 +39,7 @@ class JobFromInputFile(Job):
         Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
     ] = None
 
-    #: A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
+    #: A MessageArray object specifying the messages received during an analysis.
     messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
@@ -270,7 +270,7 @@ class JobFromInputFile(Job):
         Returns
         -------
         JobFromInputFile
-            A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object.
+            A JobFromInputFile object.
 
         Raises
         ------

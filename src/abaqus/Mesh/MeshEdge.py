@@ -29,7 +29,7 @@ class MeshEdge:
         Returns
         -------
         Sequence[MeshElement]
-            A tuple of :py:class:`~abaqus.Mesh.MeshElement.MeshElement` objects.
+            A tuple of MeshElement objects.
         """
         ...
 
@@ -41,13 +41,13 @@ class MeshEdge:
         Parameters
         ----------
         domain
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying the domain to include in the search. By default,
+            A MeshElementArray object specifying the domain to include in the search. By default,
             all elements in the mesh are included.
 
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -59,13 +59,13 @@ class MeshEdge:
         Parameters
         ----------
         domain
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying the domain to include in the search. By default,
+            A MeshElementArray object specifying the domain to include in the search. By default,
             all elements in the mesh are included.
 
         Returns
         -------
         MeshNodeArray
-            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a sequence of MeshNode objects.
+            A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
         ...
 
@@ -76,7 +76,7 @@ class MeshEdge:
         Returns
         -------
         Sequence[MeshFace]
-            A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
+            A tuple of MeshFace objects.
         """
         ...
 
@@ -87,6 +87,6 @@ class MeshEdge:
         Returns
         -------
         Sequence[MeshNode]
-            A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
+            A tuple of MeshNode objects.
         """
         ...

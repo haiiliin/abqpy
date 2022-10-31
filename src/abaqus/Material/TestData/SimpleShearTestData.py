@@ -42,7 +42,7 @@ class SimpleShearTestData:
         Returns
         -------
         SimpleShearTestData
-            A :py:class:`~abaqus.Material.TestData.SimpleShearTestData.SimpleShearTestData` object.
+            A SimpleShearTestData object.
         """
         ...
 

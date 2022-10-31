@@ -50,7 +50,7 @@ class PartModel(ModelBase):
         Returns
         -------
         Part
-            A :py:class:`~abaqus.Part.Part.Part` object.
+            A Part object.
         """
         self.parts[name] = part = Part(name, dimensionality, type, twist)
         return part

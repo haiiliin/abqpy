@@ -115,12 +115,12 @@ class OptimizationTask(OptimizationTaskBase):
             A SymbolicConstant specifying the operation used on values across steps and load cases.
             Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
-            A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
+            A StepOptionArray object.
 
         Returns
         -------
         SingleTermDesignResponse
-            A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
+            A SingleTermDesignResponse object.
         """
         self.designResponses[name] = singleTermDesignResponse = SingleTermDesignResponse(
             name,
@@ -154,7 +154,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the objective function repository key.
         objectives
-            An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object.
+            An OptimizationObjectiveArray object.
         target
             A SymbolicConstant specifying the target of the objective function. Possible values are
             MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
@@ -162,7 +162,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ObjectiveFunction
-            An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object.
+            An ObjectiveFunction object.
 
         Raises
         ------
@@ -211,7 +211,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         OptimizationConstraint
-            An :py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint` object.
+            An OptimizationConstraint object.
 
         Raises
         ------
@@ -245,7 +245,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
@@ -263,7 +263,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         BeadFixedRegion
-            A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
+            A BeadFixedRegion object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadFixedRegion(name, region, csys, u1, u2, u3)
         return geometricRestriction
@@ -282,7 +282,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         beadGrowth
             A Float specifying the maximum optimization displacement in the growth direction. Either
             **beadGrowth** or **shrink** or both must be specified. The default value is 0.0.
@@ -293,7 +293,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         BeadGrowth
-            A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
+            A BeadGrowth object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadGrowth(name, region, beadGrowth, shrink)
         return geometricRestriction
@@ -314,14 +314,14 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         beadPenetrationCheckRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
+            A Region object specifying the penetration check region.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
 
         Returns
         -------
         BeadPenetrationCheck
-            A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object.
+            A BeadPenetrationCheck object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPenetrationCheck(
             name, beadPenetrationCheckRegion, region
@@ -348,7 +348,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -360,7 +360,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         BeadPlanarSymmetry
-            A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
+            A BeadPlanarSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPlanarSymmetry(name, region, axis, csys)
         return geometricRestriction
@@ -379,7 +379,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
             origin of a local coordinate system. If **csys** = None, the global coordinate system is
@@ -388,7 +388,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         BeadPointSymmetry
-            A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
+            A BeadPointSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadPointSymmetry(name, region, csys)
         return geometricRestriction
@@ -416,7 +416,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle
             A Float specifying the repeating segment size, an angle in degrees.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -428,7 +428,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         BeadRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
+            A BeadRotationalSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadRotationalSymmetry(
             name, angle, region, axis, csys
@@ -461,7 +461,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -504,7 +504,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         DesignDirection
-            A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object.
+            A DesignDirection object.
         """
         self.geometricRestrictions[name] = geometricRestriction = DesignDirection(
             name,
@@ -548,11 +548,11 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the drill axis positioned
+            A VertexArray object of length 2 specifying the direction of the drill axis positioned
             at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point may be specified through a
             tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -591,7 +591,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         DrillControl
-            A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
+            A DrillControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = DrillControl(
             name,
@@ -632,7 +632,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -655,7 +655,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         FixedRegion
-            A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object.
+            A FixedRegion object.
         """
         self.geometricRestrictions[name] = geometricRestriction = FixedRegion(
             name, region, csys, presumeFeasibleRegionAtStart, u1, u2, u3
@@ -676,14 +676,14 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
 
         Returns
         -------
         FrozenArea
-            A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
+            A FrozenArea object.
         """
         self.geometricRestrictions[name] = geometricRestriction = FrozenArea(name, region)
         return geometricRestriction
@@ -709,7 +709,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         growth
@@ -725,7 +725,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         Growth
-            A :py:class:`~abaqus.Optimization.Growth.Growth` object.
+            A Growth object.
         """
         self.geometricRestrictions[name] = geometricRestriction = Growth(
             name, region, growth, presumeFeasibleRegionAtStart, shrink
@@ -752,9 +752,9 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         penetrationCheckRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region.
+            A Region object specifying the penetration check region.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         presumeFeasibleRegionAtStart
@@ -764,7 +764,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         PenetrationCheck
-            A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object.
+            A PenetrationCheck object.
         """
         self.geometricRestrictions[name] = geometricRestriction = PenetrationCheck(
             name, penetrationCheckRegion, region, presumeFeasibleRegionAtStart
@@ -799,10 +799,10 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         pullDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
+            A VertexArray object of length 2 specifying the demold pull direction. Instead of
             through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         collisionCheckRegion
@@ -840,7 +840,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ShapeDemoldControl
-            A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object.
+            A ShapeDemoldControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapeDemoldControl(
             name,
@@ -881,7 +881,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         maxThickness
@@ -905,7 +905,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ShapeMemberSize
-            A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object.
+            A ShapeMemberSize object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapeMemberSize(
             name,
@@ -944,11 +944,11 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the vector positioned at the **csys** origin
+            A VertexArray object of length 2 specifying the vector positioned at the **csys** origin
             that is normal to the symmetry plane. Instead of through a ConstrainedSketchVertex, each point may be
             specified through a tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         allowNonSymmetricMesh
@@ -983,7 +983,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ShapePlanarSymmetry
-            A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object.
+            A ShapePlanarSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapePlanarSymmetry(
             name,
@@ -1023,7 +1023,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -1052,7 +1052,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ShapePointSymmetry
-            A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object.
+            A ShapePointSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapePointSymmetry(
             name,
@@ -1095,11 +1095,11 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the vector positioned at the **csys** origin,
+            A VertexArray object of length 2 specifying the vector positioned at the **csys** origin,
             used as the axis of symmetry. Instead of through a ConstrainedSketchVertex, each point might be specified
             through a tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         allowNonSymmetricMesh
@@ -1146,7 +1146,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         ShapeRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
+            A ShapeRotationalSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = ShapeRotationalSymmetry(
             name,
@@ -1185,7 +1185,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SizingClusterAreas
-            A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
+            A SizingClusterAreas object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingClusterAreas(name, regions)
         return geometricRestriction
@@ -1212,7 +1212,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         translation
             A Float specifying the translation distance.
         axis
@@ -1229,7 +1229,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SizingCyclicSymmetry
-            A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object.
+            A SizingCyclicSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingCyclicSymmetry(
             name, region, translation, axis, csys, ignoreFrozenArea
@@ -1250,12 +1250,12 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
 
         Returns
         -------
         SizingFrozenArea
-            A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
+            A SizingFrozenArea object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingFrozenArea(name, region)
         return geometricRestriction
@@ -1274,7 +1274,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         minWidth
             A Float specifying the min width.
 
@@ -1308,7 +1308,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -1322,7 +1322,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SizingPlanarSymmetry
-            A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object.
+            A SizingPlanarSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingPlanarSymmetry(
             name, region, axis, csys, ignoreFrozenArea
@@ -1349,7 +1349,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the position of the symmetry point defined as the
             origin of a local coordinate system. If **csys** = None, the global coordinate system is
@@ -1360,7 +1360,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SizingPointSymmetry
-            A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object.
+            A SizingPointSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingPointSymmetry(
             name, region, csys, ignoreFrozenArea
@@ -1391,7 +1391,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle
             A Float specifying the repeating segment size, an angle in degrees.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -1405,7 +1405,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SizingRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
+            A SizingRotationalSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SizingRotationalSymmetry(
             name, angle, region, axis, csys, ignoreFrozenArea
@@ -1439,11 +1439,11 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the axis of revolution. Instead of through a
+            A VertexArray object of length 2 specifying the axis of revolution. Instead of through a
             ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. This is used when
             **approach** is TURN.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         approach
@@ -1477,7 +1477,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         SlideRegionControl
-            A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object.
+            A SlideRegionControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = SlideRegionControl(
             name,
@@ -1522,10 +1522,10 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the stamping direction. Instead of through a
+            A VertexArray object of length 2 specifying the stamping direction. Instead of through a
             ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -1564,7 +1564,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         StampControl
-            A :py:class:`~abaqus.Optimization.StampControl.StampControl` object.
+            A StampControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = StampControl(
             name,
@@ -1604,7 +1604,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         translation
@@ -1623,7 +1623,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyCyclicSymmetry
-            A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
+            A TopologyCyclicSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyCyclicSymmetry(
             name, region, translation, axis, csys, ignoreFrozenArea
@@ -1654,7 +1654,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -1669,10 +1669,10 @@ class OptimizationTask(OptimizationTaskBase):
             region. If the value is DEMOLD_REGION, then the value of **region** is used as both the
             demold region and the collision check region. The default value is DEMOLD_REGION.
         pointRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction,
+            A Region object specifying the point on a plane perpendicular to the pull direction,
             used to specify the central plane when **technique** is POINT.
         pullDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of
+            A VertexArray object of length 2 specifying the demold pull direction. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates.
         technique
             A SymbolicConstant specifying the demold technique. Possible values are AUTO,
@@ -1681,7 +1681,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyDemoldControl
-            A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object.
+            A TopologyDemoldControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyDemoldControl(
             name,
@@ -1717,7 +1717,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         maxThickness
@@ -1734,7 +1734,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyMemberSize
-            A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object.
+            A TopologyMemberSize object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyMemberSize(
             name, region, maxThickness, minThickness, separation, sizeRestriction
@@ -1769,7 +1769,7 @@ class OptimizationTask(OptimizationTaskBase):
             A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
             can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
             **millingDirections**. If **csys** = None, the global coordinate system is used. When this
@@ -1787,7 +1787,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyMillingControl
-            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+            A TopologyMillingControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyMillingControl(
             name, millingDirections, region, csys, millingCheckRegion, radius
@@ -1886,7 +1886,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         axis
@@ -1902,7 +1902,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyPlanarSymmetry
-            A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
+            A TopologyPlanarSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyPlanarSymmetry(
             name, region, axis, csys, ignoreFrozenArea
@@ -1929,7 +1929,7 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -1942,7 +1942,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyPointSymmetry
-            A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object.
+            A TopologyPointSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyPointSymmetry(
             name, region, csys, ignoreFrozenArea
@@ -1973,7 +1973,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle
             A Float specifying the repeating segment size, an angle in degrees.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         axis
@@ -1989,7 +1989,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TopologyRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
+            A TopologyRotationalSymmetry object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TopologyRotationalSymmetry(
             name, angle, region, axis, csys, ignoreFrozenArea
@@ -2022,11 +2022,11 @@ class OptimizationTask(OptimizationTaskBase):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the rotation axis as a
+            A VertexArray object of length 2 specifying the direction of the rotation axis as a
             vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be
             specified through a tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -2061,7 +2061,7 @@ class OptimizationTask(OptimizationTaskBase):
         Returns
         -------
         TurnControl
-            A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object.
+            A TurnControl object.
         """
         self.geometricRestrictions[name] = geometricRestriction = TurnControl(
             name,

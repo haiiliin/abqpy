@@ -49,7 +49,7 @@ class EventSeriesType:
         Returns
         -------
         EventSeriesType
-            A :py:class:`~abaqus.TableCollection.EventSeriesType.EventSeriesType` object.
+            A EventSeriesType object.
 
         Raises
         ------

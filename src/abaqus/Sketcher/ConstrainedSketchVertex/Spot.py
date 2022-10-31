@@ -24,6 +24,6 @@ class Spot(ConstrainedSketchVertex):
         Returns
         -------
         ConstrainedSketchVertex
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created).
+            A ConstrainedSketchVertex object (None if the spot cannot be created).
         """
         ...

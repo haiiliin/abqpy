@@ -34,14 +34,14 @@ class PressurePenetration(Interaction):
     #: A String specifying the name of the Surface-to-surface contact (Standard) interaction.
     contactInteraction: str = ""
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+    #: A RegionArray object specifying the points on the main surface that are exposed to the
     #: fluid.
     #:
     #: .. versionchanged:: 2022
     #:     The attribute `masterPoints` was renamed to `mainPoints`.
     mainPoints: RegionArray = []
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+    #: A RegionArray object specifying the points on the secondary surface that are exposed to
     #: the fluid.
     #:
     #: .. versionchanged:: 2022
@@ -78,13 +78,13 @@ class PressurePenetration(Interaction):
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
         mainPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the main surface that are exposed to the
+            A RegionArray object specifying the points on the main surface that are exposed to the
             fluid.
 
             .. versionchanged:: 2022
                 The argument `masterPoints` was renamed to `mainPoints`.
         secondaryPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the secondary surface that are exposed to
+            A RegionArray object specifying the points on the secondary surface that are exposed to
             the fluid.
 
             .. versionchanged:: 2022
@@ -107,7 +107,7 @@ class PressurePenetration(Interaction):
         Returns
         -------
         PressurePenetration
-            A :py:class:`~abaqus.Interaction.PressurePenetration.PressurePenetration` object.
+            A PressurePenetration object.
         """
         super().__init__()
 

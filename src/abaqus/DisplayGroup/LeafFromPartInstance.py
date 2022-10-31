@@ -44,6 +44,6 @@ class LeafFromPartInstance(Leaf):
         Returns
         -------
         LeafFromPartInstance
-            A :py:class:`~abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance` object.
+            A LeafFromPartInstance object.
         """
         super().__init__(DEFAULT_MODEL)

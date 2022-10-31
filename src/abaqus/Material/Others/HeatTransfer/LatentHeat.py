@@ -42,7 +42,7 @@ class LatentHeat:
         Returns
         -------
         LatentHeat
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat` object.
+            A LatentHeat object.
 
         Raises
         ------

@@ -110,19 +110,19 @@ class Hyperelastic:
         - HYPERELASTIC
     """
 
-    #: A :py:class:`~abaqus.Material.TestData.BiaxialTestData.BiaxialTestData` object.
+    #: A BiaxialTestData object.
     biaxialTestData: BiaxialTestData = BiaxialTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.PlanarTestData.PlanarTestData` object.
+    #: A PlanarTestData object.
     planarTestData: PlanarTestData = PlanarTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.UniaxialTestData.UniaxialTestData` object.
+    #: A UniaxialTestData object.
     uniaxialTestData: UniaxialTestData = UniaxialTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.TestData.VolumetricTestData.VolumetricTestData` object.
+    #: A VolumetricTestData object.
     volumetricTestData: VolumetricTestData = VolumetricTestData(((),))
 
-    #: A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis` object.
+    #: A Hysteresis object.
     hysteresis: Hysteresis = Hysteresis(((),))
 
     @abaqus_method_doc
@@ -252,7 +252,7 @@ class Hyperelastic:
         Returns
         -------
         Hyperelastic
-            A :py:class:`~abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic` object.
+            A Hyperelastic object.
 
         Raises
         ------

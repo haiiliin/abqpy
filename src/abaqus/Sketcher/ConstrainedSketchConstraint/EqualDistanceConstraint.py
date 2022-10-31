@@ -27,15 +27,15 @@ class EqualDistanceConstraint(ConstrainedSketchConstraint):
         entity1
             AConstrainedSketchGeometry object specifying the first line or ConstrainedSketchVertex object.
         entity2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line or ConstrainedSketchVertex object.
+            A ConstrainedSketchGeometry object specifying the second line or ConstrainedSketchVertex object.
         midpoint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex that will be positioned an equal distance from
+            A ConstrainedSketchVertex object specifying the vertex that will be positioned an equal distance from
             **entity1** and **entity2**.
 
         Returns
         -------
         ConstrainedSketchConstraint
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object.
+            A ConstrainedSketchConstraint object.
 
         """
         ...

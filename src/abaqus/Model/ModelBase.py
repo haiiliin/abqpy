@@ -128,10 +128,10 @@ class ModelBase:
     #: instances this model.
     copyInteractions: Boolean = OFF
 
-    #: A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object.
+    #: A KeywordBlock object.
     keywordBlock: KeywordBlock = KeywordBlock()
 
-    #: An :py:class:`~abaqus.Assembly.Assembly.Assembly` object.
+    #: An Assembly object.
     rootAssembly: Assembly = Assembly()
 
     #: A repository of Amplitude objects.
@@ -202,7 +202,7 @@ class ModelBase:
     #: A repository of Step objects.
     steps: Dict[str, Step] = {}
 
-    #: A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object.
+    #: A FeatureOptions object.
     featureOptions: FeatureOptions = FeatureOptions()
 
     #: A repository of AdaptiveMeshConstraint objects.
@@ -301,7 +301,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Model.Model.Model` object.
+            A Model object.
         """
         self.steps["Initial"] = InitialStep()
 
@@ -327,7 +327,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Model.Model.Model` object.
+            A Model object.
         """
         ...
 
@@ -353,7 +353,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Model.Model.Model` object.
+            A Model object.
         """
         ...
 
@@ -440,7 +440,7 @@ class ModelBase:
         Returns
         -------
         Model
-            A :py:class:`~abaqus.Model.Model.Model` object.
+            A Model object.
         """
         ...
 
