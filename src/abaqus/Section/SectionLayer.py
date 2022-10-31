@@ -145,6 +145,6 @@ class SectionLayer:
         Returns
         -------
         SectionLayer
-            A :py:class:`~abaqus.Section.SectionLayer.SectionLayer` object.
+            A SectionLayer object.
         """
         ...

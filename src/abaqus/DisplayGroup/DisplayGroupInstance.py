@@ -6,7 +6,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class DisplayGroupInstance:
-    """A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance` object stores the IDs of the entities displayed in a viewport.
+    """A DisplayGroupInstance object stores the IDs of the entities displayed in a viewport.
     The DisplayGroupInstance object has no constructor. When you set a display group to be
     plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display
     group and places it in the DisplayGroupInstanceRepository object.
@@ -35,7 +35,7 @@ class DisplayGroupInstance:
     #: OFF.
     lockOptions: Boolean = OFF
 
-    #: An :py:class:`~abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions` object specifying this member is available only for
+    #: An OdbDisplayOptions object specifying this member is available only for
     #: DisplayGroupInstance objects that are members of the DisplayGroupInstance repository
     #: member of the OdbDisplay object.
     odbDisplayOptions: OdbDisplayOptions = OdbDisplayOptions()

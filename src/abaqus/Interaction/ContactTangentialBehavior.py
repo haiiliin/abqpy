@@ -186,7 +186,7 @@ class ContactTangentialBehavior:
         Returns
         -------
         ContactTangentialBehavior
-            A :py:class:`~abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior` object.
+            A ContactTangentialBehavior object.
         """
         ...
 

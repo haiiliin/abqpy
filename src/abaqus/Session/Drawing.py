@@ -106,7 +106,7 @@ class Drawing:
         Returns
         -------
         Drawing
-            A :py:class:`~abaqus.Session.Drawing.Drawing` object.
+            A Drawing object.
 
         Raises
         ------

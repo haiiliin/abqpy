@@ -160,7 +160,7 @@ class FractureCriterion:
         Returns
         -------
         FractureCriterion
-            A :py:class:`~abaqus.Interaction.FractureCriterion.FractureCriterion` object.
+            A FractureCriterion object.
         """
         ...
 

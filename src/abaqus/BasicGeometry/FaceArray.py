@@ -58,7 +58,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+            A FaceArray object.
 
         """
         ...
@@ -136,7 +136,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         Face
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
+            A Face object.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -157,7 +157,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         Face
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects.
+            A Face object or a sequence of Face objects.
 
         """
         ...
@@ -204,7 +204,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...
@@ -228,7 +228,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...
@@ -248,7 +248,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...

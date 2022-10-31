@@ -39,7 +39,7 @@ class PorousFailureCriteria:
         Returns
         -------
         PorousFailureCriteria
-            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousFailureCriteria.PorousFailureCriteria` object.
+            A PorousFailureCriteria object.
 
         Raises
         ------

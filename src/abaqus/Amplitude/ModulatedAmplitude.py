@@ -90,7 +90,7 @@ class ModulatedAmplitude(Amplitude):
         Returns
         -------
         ModulatedAmplitude
-            A :py:class:`~abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude` object.
+            A ModulatedAmplitude object.
 
         Raises
         ------

@@ -33,11 +33,11 @@ class MultipointConstraint(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are
+    #: A Region object specifying the surface on which the MultipointConstraint nodes are
     #: located.
     surface: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
+    #: A Region object specifying the constraint control point.
     controlPoint: Region
 
     #: A SymbolicConstant specifying the MPC type of the constraint. Possible values are
@@ -83,10 +83,10 @@ class MultipointConstraint(Constraint):
         name
             A String specifying the constraint repository key.
         surface
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are
+            A Region object specifying the surface on which the MultipointConstraint nodes are
             located.
         controlPoint
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point.
+            A Region object specifying the constraint control point.
         mpcType
             A SymbolicConstant specifying the MPC type of the constraint. Possible values are
             BEAM_MPC, ELBOW_MPC, PIN_MPC, LINK_MPC, TIE_MPC, and USER_MPC.
@@ -107,7 +107,7 @@ class MultipointConstraint(Constraint):
         Returns
         -------
         MultipointConstraint
-            A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object.
+            A MultipointConstraint object.
         """
         super().__init__()
 

@@ -40,16 +40,16 @@ class ConnectorFriction(ConnectorBehaviorOption):
         - CONNECTOR FRICTION
     """
 
-    #: A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
+    #: A TangentialBehavior object.
     tangentialBehavior: TangentialBehavior = TangentialBehavior()
 
-    #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object specifying the DerivedComponent used to compute the contact
+    #: A DerivedComponent object specifying the DerivedComponent used to compute the contact
     #: force component direction. This argument applies only if
     #: **frictionModel** = USER_CUSTOMIZED, if **useContactForceComponent** = ON, and if
     #: **contactForceStyle** = DERIVED_COMPONENT.
     derivedComponent: DerivedComponent = DerivedComponent()
 
-    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
@@ -119,7 +119,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: **forcePotentialOperator** = SUM.
     forcePotentialExponent: float = 2
 
-    #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
+    #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
     #: potential contribution. This member can be specified only if
     #: **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
     connectorPotentials: Optional[ConnectorPotentialArray] = None
@@ -243,7 +243,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
             **frictionModel** = USER_CUSTOMIZED, if **slipStyle** = COMPUTE, and if
             **forcePotentialOperator** = SUM.
         connectorPotentials
-            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
+            A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
             potential contribution. This member can be specified only if
             **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
         table
@@ -279,7 +279,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
         Returns
         -------
         ConnectorFriction
-            A :py:class:`~abaqus.Connector.ConnectorFriction.ConnectorFriction` object.
+            A ConnectorFriction object.
 
         Raises
         ------

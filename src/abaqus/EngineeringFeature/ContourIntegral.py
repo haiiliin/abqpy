@@ -32,12 +32,12 @@ class ContourIntegral(Crack):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-front region to which the contour integral is
+    #: A RegionArray object specifying the crack-front region to which the contour integral is
     #: applied. If the crack-front consists of a single region, a Region object may be
     #: specified instead of a sequence with a single item in it.
     crackFront: RegionArray
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-tip region to which the contour integral is
+    #: A RegionArray object specifying the crack-tip region to which the contour integral is
     #: applied. If the crack-tip consists of a single region, a Region object may be specified
     #: instead of a sequence with a single item in it.
     crackTip: RegionArray
@@ -117,11 +117,11 @@ class ContourIntegral(Crack):
         name
             A String specifying the repository key.
         crackFront
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-front region to which the contour integral is
+            A RegionArray object specifying the crack-front region to which the contour integral is
             applied. If the crack-front consists of a single region, a Region object may be
             specified instead of a sequence with a single item in it.
         crackTip
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the crack-tip region to which the contour integral is
+            A RegionArray object specifying the crack-tip region to which the contour integral is
             applied. If the crack-tip consists of a single region, a Region object may be specified
             instead of a sequence with a single item in it.
         extensionDirectionMethod
@@ -163,7 +163,7 @@ class ContourIntegral(Crack):
         Returns
         -------
         ContourIntegral
-            A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` object.
+            A ContourIntegral object.
         """
         super().__init__()
 

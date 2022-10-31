@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AxisData:
-    """The AxisData object is used to store the data attributes of axes. An :py:class:`~abaqus.XY.AxisData.AxisData` object is
+    """The AxisData object is used to store the data attributes of axes. An AxisData object is
     automatically created when creating an Axis object.
 
     .. note::
@@ -119,11 +119,11 @@ class AxisData:
     #: user defined. The default value is ON.
     useSystemTitle: Boolean = ON
 
-    #: An :py:class:`~abaqus.XY.XYCurveArray.XYCurveArray` object specifying a read-only sequence of Curve objects associated to
+    #: An XYCurveArray object specifying a read-only sequence of Curve objects associated to
     #: this axis.
     curves: XYCurveArray = []
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the quantity type: i.e. the physical dimension and
+    #: A QuantityType object specifying the quantity type: i.e. the physical dimension and
     #: associated label of the data represented by this axis.
     quantityType: QuantityType = QuantityType(NONE)
 
@@ -165,7 +165,7 @@ class AxisData:
         Parameters
         ----------
         axisData
-            An :py:class:`~abaqus.XY.AxisData.AxisData` object from which attributes are to be copied.
+            An AxisData object from which attributes are to be copied.
         labelFormat
             A SymbolicConstant specifying how tick labels are formatted. Possible values are
             AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is AUTOMATIC.

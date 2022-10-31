@@ -46,10 +46,10 @@ class CrushableFoam:
         - CRUSHABLE FOAM
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening` object.
+    #: A CrushableFoamHardening object.
     crushableFoamHardening: CrushableFoamHardening = CrushableFoamHardening(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
+    #: A RateDependent object.
     rateDependent: RateDependent = RateDependent(((),))
 
     @abaqus_method_doc
@@ -83,7 +83,7 @@ class CrushableFoam:
         Returns
         -------
         CrushableFoam
-            A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam` object.
+            A CrushableFoam object.
 
         Raises
         ------

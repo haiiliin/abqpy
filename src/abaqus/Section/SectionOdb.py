@@ -74,7 +74,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         AcousticInfiniteSection
-            An :py:class:`~abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection` object.
+            An AcousticInfiniteSection object.
 
         Raises
         ------
@@ -105,7 +105,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         AcousticInterfaceSection
-            An :py:class:`~abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection` object.
+            An AcousticInterfaceSection object.
 
         Raises
         ------
@@ -248,7 +248,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         BeamSection
-            A :py:class:`~abaqus.Section.BeamSection.BeamSection` object.
+            A BeamSection object.
         """
         self.sections[name] = section = BeamSection(
             name,
@@ -326,7 +326,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         CohesiveSection
-            A :py:class:`~abaqus.Section.CohesiveSection.CohesiveSection` object.
+            A CohesiveSection object.
 
         Raises
         ------
@@ -379,7 +379,7 @@ class SectionOdb(OdbBase):
         name
             A String specifying the repository key.
         layup
-            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the shell cross-section.
+            A SectionLayerArray object specifying the shell cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -442,7 +442,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         CompositeShellSection
-            A :py:class:`~abaqus.Section.CompositeShellSection.CompositeShellSection` object.
+            A CompositeShellSection object.
         """
         self.sections[name] = section = CompositeShellSection(
             name,
@@ -486,7 +486,7 @@ class SectionOdb(OdbBase):
         name
             A String specifying the repository key.
         layup
-            A :py:class:`~abaqus.Section.SectionLayerArray.SectionLayerArray` object specifying the solid cross-section.
+            A SectionLayerArray object specifying the solid cross-section.
         symmetric
             A Boolean specifying whether or not the layup should be made symmetric by the analysis.
             The default value is OFF.
@@ -497,7 +497,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         CompositeSolidSection
-            A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
+            A CompositeSolidSection object.
         """
         self.sections[name] = section = CompositeSolidSection(name, layup, symmetric, layupName)
         return section
@@ -611,12 +611,12 @@ class SectionOdb(OdbBase):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
+            A ConnectorBehaviorOptionArray object.
 
         Returns
         -------
         ConnectorSection
-            A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
+            A ConnectorSection object.
 
         Raises
         ------
@@ -667,7 +667,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         EulerianSection
-            An :py:class:`~abaqus.Section.EulerianSection.EulerianSection` object.
+            An EulerianSection object.
         """
         self.sections[name] = section = EulerianSection(name, data)
         return section
@@ -719,7 +719,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         GasketSection
-            A :py:class:`~abaqus.Section.GasketSection.GasketSection` object. and ValueError.
+            A GasketSection object. and ValueError.
         """
         self.sections[name] = section = GasketSection(
             name,
@@ -800,7 +800,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         GeneralStiffnessSection
-            A :py:class:`~abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection` object.
+            A GeneralStiffnessSection object.
         """
         self.sections[name] = section = GeneralStiffnessSection(
             name,
@@ -920,7 +920,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         HomogeneousShellSection
-            A :py:class:`~abaqus.Section.HomogeneousShellSection.HomogeneousShellSection` object.
+            A HomogeneousShellSection object.
         """
         self.sections[name] = section = HomogeneousShellSection(
             name,
@@ -966,7 +966,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         HomogeneousSolidSection
-            A :py:class:`~abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection` object.
+            A HomogeneousSolidSection object.
 
         Raises
         ------
@@ -1027,7 +1027,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         MembraneSection
-            A :py:class:`~abaqus.Section.MembraneSection.MembraneSection` object.
+            A MembraneSection object.
 
         Raises
         ------
@@ -1079,7 +1079,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         MPCSection
-            A :py:class:`~abaqus.Section.MPCSection.MPCSection` object.
+            A MPCSection object.
 
         Raises
         ------
@@ -1124,7 +1124,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         PEGSection
-            A :py:class:`~abaqus.Section.PEGSection.PEGSection` object.
+            A PEGSection object.
 
         Raises
         ------
@@ -1158,7 +1158,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         SurfaceSection
-            A :py:class:`~abaqus.Section.SurfaceSection.SurfaceSection` object.
+            A SurfaceSection object.
 
         Raises
         ------
@@ -1190,7 +1190,7 @@ class SectionOdb(OdbBase):
         Returns
         -------
         TrussSection
-            A :py:class:`~abaqus.Section.TrussSection.TrussSection` object.
+            A TrussSection object.
 
         Raises
         ------

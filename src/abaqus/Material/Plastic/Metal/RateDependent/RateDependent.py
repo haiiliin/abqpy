@@ -84,7 +84,7 @@ class RateDependent:
         Returns
         -------
         RateDependent
-            A :py:class:`~abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent` object.
+            A RateDependent object.
 
         Raises
         ------
