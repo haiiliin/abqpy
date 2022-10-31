@@ -141,7 +141,7 @@ class DamageEvolution:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type** = ENERGY, **softening** = LINEAR and constructor for :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` = HashinDamageInitiation, the table data specify the following:
+        - If **type** = ENERGY, **softening** = LINEAR and constructor for DamageInitiation = HashinDamageInitiation, the table data specify the following:
 
             - Fiber tensile fracture energy.
             - Fiber compressive fracture energy.
@@ -229,7 +229,7 @@ class DamageEvolution:
         Returns
         -------
         DamageEvolution
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
+            A DamageEvolution object.
 
         Raises
         ------

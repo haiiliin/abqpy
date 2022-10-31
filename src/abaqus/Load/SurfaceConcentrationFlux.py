@@ -35,7 +35,7 @@ class SurfaceConcentrationFlux(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -63,7 +63,7 @@ class SurfaceConcentrationFlux(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface concentration flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -83,7 +83,7 @@ class SurfaceConcentrationFlux(Load):
         Returns
         -------
         SurfaceConcentrationFlux
-            A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
+            A SurfaceConcentrationFlux object.
         """
         super().__init__()
 

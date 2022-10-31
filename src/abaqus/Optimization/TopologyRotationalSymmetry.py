@@ -28,7 +28,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
     #: A Float specifying the repeating segment size, an angle in degrees.
     angle: float
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
     #: the default value is MODEL.
     region: Region
@@ -69,7 +69,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         angle
             A Float specifying the repeating segment size, an angle in degrees.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         axis
@@ -85,7 +85,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         Returns
         -------
         TopologyRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
+            A TopologyRotationalSymmetry object.
         """
         super().__init__()
 

@@ -31,10 +31,10 @@ class OdbPartBase:
             session.odbs[name].parts[name]
     """
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
+    #: An OdbMeshNodeArray object.
     nodes: OdbMeshNodeArray = []
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
+    #: An OdbMeshElementArray object.
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
@@ -46,22 +46,22 @@ class OdbPartBase:
     #: A repository of OdbSet objects specifying surfaces.
     surfaces: Dict[str, OdbSet] = {}
 
-    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
 
-    #: A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
+    #: A BeamOrientationArray object.
     beamOrientations: BeamOrientationArray = []
 
-    #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
+    #: A MaterialOrientationArray object.
     materialOrientations: MaterialOrientationArray = []
 
-    #: A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
+    #: A RebarOrientationArray object.
     rebarOrientations: RebarOrientationArray = []
 
-    #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
+    #: An OdbRigidBodyArray object.
     rigidBodies: OdbRigidBodyArray = []
 
-    #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
+    #: An AnalyticSurface object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
     @abaqus_method_doc
@@ -93,7 +93,7 @@ class OdbPartBase:
         Returns
         -------
         OdbPart
-            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
+            An OdbPart object.
         """
         ...
 
@@ -123,7 +123,7 @@ class OdbPartBase:
         elementSetName
             A String specifying a name for this element set. The default value is the empty string.
         sectionCategory
-            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object for this element set.
+            A SectionCategory object for this element set.
         """
         ...
 
@@ -151,7 +151,7 @@ class OdbPartBase:
         elementSetName
             A String specifying a name for this element set. The default value is None.
         sectionCategory
-            A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object for this element set.
+            A SectionCategory object for this element set.
         """
         ...
 
@@ -230,7 +230,7 @@ class OdbPartBase:
         region
             An OdbSet specifying a region on an instance.
         localCSys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
+            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -261,7 +261,7 @@ class OdbPartBase:
         region
             An OdbSet specifying a region on an instance.
         localCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
+            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -285,7 +285,7 @@ class OdbPartBase:
         Returns
         -------
         OdbMeshElement
-            An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
+            An OdbMeshElement object.
 
         Raises
         ------
@@ -306,7 +306,7 @@ class OdbPartBase:
         Returns
         -------
         OdbMeshNode
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object.
+            An OdbMeshNode object.
 
         Raises
         ------

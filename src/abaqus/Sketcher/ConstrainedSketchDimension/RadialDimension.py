@@ -33,7 +33,7 @@ class RadialDimension(ConstrainedSketchDimension):
         Parameters
         ----------
         curve
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the circular or elliptical arc.
+            A ConstrainedSketchGeometry object specifying the circular or elliptical arc.
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value
@@ -51,7 +51,7 @@ class RadialDimension(ConstrainedSketchDimension):
         Returns
         -------
         ConstrainedSketchDimension
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created).
+            A ConstrainedSketchDimension object (None if the dimension cannot be created).
 
         """
         ...

@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PropertyAssembly(AssemblyBase):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -44,7 +44,7 @@ class PropertyAssembly(AssemblyBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
+            A Set object specifying the region to which the section is assigned.
         sectionName
             A String specifying the name of the section.
         thicknessAssignment
@@ -64,7 +64,7 @@ class PropertyAssembly(AssemblyBase):
         Returns
         -------
         SectionAssignment
-            A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
+            A SectionAssignment object.
         """
         sectionAssignment = SectionAssignment(region, sectionName, thicknessAssignment, offset, offsetType, offsetField)
         self.sectionAssignments.append(sectionAssignment)

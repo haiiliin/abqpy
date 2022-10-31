@@ -25,7 +25,7 @@ class MoistureSwelling:
         - MOISTURE SWELLING
     """
 
-    #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
+    #: A Ratios object.
     ratios: Ratios = Ratios(((),))
 
     @abaqus_method_doc
@@ -46,7 +46,7 @@ class MoistureSwelling:
         Returns
         -------
         MoistureSwelling
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
+            A MoistureSwelling object.
         """
         ...
 

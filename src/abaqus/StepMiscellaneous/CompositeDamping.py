@@ -5,7 +5,7 @@ from .CompositeDampingComponentArray import CompositeDampingComponentArray
 
 @abaqus_class_doc
 class CompositeDamping:
-    """A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object contains composite modal damping parameters.
+    """A CompositeDamping object contains composite modal damping parameters.
 
     .. note::
         This object can be accessed by::
@@ -14,5 +14,5 @@ class CompositeDamping:
             mdb.models[name].steps[name].compositeDamping
     """
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray` object.
+    #: A CompositeDampingComponentArray object.
     components: CompositeDampingComponentArray = []

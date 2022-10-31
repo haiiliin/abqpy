@@ -33,7 +33,7 @@ class SurfaceHeatFlux(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -61,7 +61,7 @@ class SurfaceHeatFlux(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface heat flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -80,7 +80,7 @@ class SurfaceHeatFlux(Load):
         Returns
         -------
         SurfaceHeatFlux
-            A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
+            A SurfaceHeatFlux object.
         """
         super().__init__()
 

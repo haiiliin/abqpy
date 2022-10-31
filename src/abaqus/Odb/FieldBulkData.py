@@ -37,10 +37,10 @@ class FieldBulkData:
     #: TENSOR_2D_SURFACE.
     type: Optional[SymbolicConstant] = None
 
-    #: An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the part to which the labels belong.
+    #: An OdbInstance object specifying the part to which the labels belong.
     instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
-    #: A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object specifying the section point number of the current block of data.
+    #: A SectionPoint object specifying the section point number of the current block of data.
     sectionPoint: Optional[SectionPoint] = None
 
     #: A sequence of Ints specifying the element labels of the elements in the block.

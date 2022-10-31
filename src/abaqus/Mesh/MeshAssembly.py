@@ -20,7 +20,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshAssembly(AssemblyBase):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -41,7 +41,7 @@ class MeshAssembly(AssemblyBase):
         cells
             A sequence of Cell objects specifying regions where to assign the stack direction.
         referenceRegion
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the top side of the stack direction.
+            A Face object specifying the top side of the stack direction.
         """
         ...
 
@@ -76,7 +76,7 @@ class MeshAssembly(AssemblyBase):
             A sequence of MeshEdge objects specifying the element edges to be associated with the
             geometric edge.
         node
-            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the mesh node to be associated with the geometric vertex.
+            A MeshNode object specifying the mesh node to be associated with the geometric vertex.
         """
         ...
 
@@ -175,7 +175,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object
+            A Feature object
         """
         ...
 
@@ -265,7 +265,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
+            A Cell object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         numberOfLayers
             An Int specifying the number of layers to be generated along the extrusion vector.
@@ -320,7 +320,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
+            A Cell object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         geometrySourceSide
             A Region of Face objects specifying the geometric domain to be used as the source for
@@ -340,7 +340,7 @@ class MeshAssembly(AssemblyBase):
             A sequence of 2D MeshElement objects specifying connecting sides of the sweep meshing
             operation.
         targetSide
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the target side of the sweep meshing operation.
+            A Face object specifying the target side of the sweep meshing operation.
         numberOfLayers
             An Int specifying the number of layers to be generated along the sweep direction.
         extendElementSets
@@ -368,7 +368,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         cell
-            A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This
+            A Cell object specifying the geometric region where the mesh is to be generated. This
             argument is valid only for native part instances.
         numberOfLayers
             An Int specifying the number of layers of elements to be generated around the axis of
@@ -459,7 +459,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         edge
-            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge to be queried.
+            An Edge object specifying the edge to be queried.
         attribute
             A SymbolicConstant specifying the type of edge seed attribute to return. Possible values
             are:
@@ -561,7 +561,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         Sequence[Face]
-            A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects.
+            A sequence of Face objects.
         """
         ...
 
@@ -645,7 +645,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         MeshStats
-            A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object.
+            A MeshStats object.
         """
         ...
 
@@ -660,7 +660,7 @@ class MeshAssembly(AssemblyBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance to be queried.
+            A PartInstance object specifying the part instance to be queried.
         attribute
             A SymbolicConstant specifying the type of part seed attribute to return. Possible values
             are:
@@ -703,7 +703,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         Region
-            A :py:class:`~abaqus.Region.Region.Region` object, or None.
+            A Region object, or None.
         """
         ...
 
@@ -722,7 +722,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object
+            A Feature object
         """
         ...
 
@@ -740,7 +740,7 @@ class MeshAssembly(AssemblyBase):
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object
+            A Feature object
         """
         ...
 
@@ -1068,7 +1068,7 @@ class MeshAssembly(AssemblyBase):
         region
             A sweepable region.
         edge
-            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the sweep or revolve path.
+            An Edge object specifying the sweep or revolve path.
         sense
             A SymbolicConstant specifying the sweep sense. The sense will affect only how gasket
             elements will be created; it will have no effect if gasket elements are not used.
