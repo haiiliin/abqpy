@@ -52,22 +52,32 @@ jobs:
         run: |
           coverage run -m pytest
           coverage xml
-      - name: Upload coverage data
+      - name: Upload coverage.xml
         if: matrix.python-version == '3.10' && github.event_name == 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: coverage.xml
           path: coverage.xml
+      - name: Upload .coverage
+        if: matrix.python-version == '3.10' && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          name: .coverage
+          path: .coverage
 
   coverage:
     needs: pytest
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Download coverage data
+      - name: Download coverage.xml
         uses: actions/download-artifact@v3
         with:
           name: coverage.xml
+      - name: Download .coverage
+        uses: actions/download-artifact@v3
+        with:
+          name: .coverage
       - name: Get Coverage
         uses: orgoro/coverage@v3
         with:
