@@ -60,6 +60,7 @@ jobs:
           path: coverage.xml
 
   coverage:
+    needs: pytest
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
