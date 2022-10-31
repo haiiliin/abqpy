@@ -484,23 +484,10 @@ class ConstraintModel(ModelBase):
         ----------
         name
             A String specifying the constraint repository key.
-<<<<<<< HEAD
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
+            A Region object specifying the name of the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface.
-=======
-
-            .. versionchanged:: 2022
-                The `master` argument was renamed to `main`.
-        main
-            A Region object specifying the name of the main surface.
-
-            .. versionchanged:: 2022
-                The `slave` argument was renamed to `secondary`.
-        secondary
-            A Region object specifying the name of the secondary surface.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the name of the slave surface.
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.

@@ -115,17 +115,7 @@ class MaterialBase:
     #: A CrushableFoam object.
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
-=======
-    #: A CrushStress object
-    #:
-    #: .. versionadded:: 2022
-    #:     The `crushStress` attribute was added.
-    crushStress: CrushStress = CrushStress(((),))
-
     #: A DamageInitiation object.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
     ductileDamageInitiation: DamageInitiation = DamageInitiation()
 
     #: A DamageInitiation object.
@@ -308,15 +298,6 @@ class MaterialBase:
     #: A Viscous object.
     viscous: Viscous = Viscous(((),))
 
-<<<<<<< HEAD
-=======
-    #: A MeanFieldHomogenization object.
-    #:
-    #: .. versionadded:: 2018
-    #:     The `meanFieldHomogenization` attribute was added.
-    meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
-
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
     @abaqus_method_doc
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
