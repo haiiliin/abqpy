@@ -50,10 +50,10 @@ class OdbInstanceBase:
     #: instance has been changed at this frame.The default value is PROPAGATED.
     resultState: SymbolicConstant = PROPAGATED
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray` object.
+    #: An OdbMeshNodeArray object.
     nodes: OdbMeshNodeArray = []
 
-    #: An :py:class:`~abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray` object.
+    #: An OdbMeshElementArray object.
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
@@ -65,22 +65,22 @@ class OdbInstanceBase:
     #: A repository of OdbSet objects specifying surfaces.
     surfaces: Dict[str, OdbSet] = {}
 
-    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
 
-    #: An :py:class:`~abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray` object.
+    #: An OdbRigidBodyArray object.
     rigidBodies: OdbRigidBodyArray = []
 
-    #: A :py:class:`~abaqus.Odb.BeamOrientationArray.BeamOrientationArray` object.
+    #: A BeamOrientationArray object.
     beamOrientations: BeamOrientationArray = []
 
-    #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
+    #: A MaterialOrientationArray object.
     materialOrientations: MaterialOrientationArray = []
 
-    #: A :py:class:`~abaqus.Odb.RebarOrientationArray.RebarOrientationArray` object.
+    #: A RebarOrientationArray object.
     rebarOrientations: RebarOrientationArray = []
 
-    #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying analytic Surface defined on the instance.
+    #: An AnalyticSurface object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
     @abaqus_method_doc
@@ -97,7 +97,7 @@ class OdbInstanceBase:
         name
             A String specifying the instance name.
         object
-            An :py:class:`~abaqus.Odb.OdbPart.OdbPart` object.
+            An OdbPart object.
         localCoordSystem
             A sequence of sequences of three Floats specifying the rotation and translation of the
             part instance in the global Cartesian coordinate system. The first three sequences
@@ -114,7 +114,7 @@ class OdbInstanceBase:
         Returns
         -------
         OdbInstance
-            An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object.
+            An OdbInstance object.
         """
         ...
 
@@ -151,7 +151,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         localCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
+            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -182,7 +182,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         localCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the local coordinate system or None, indicating the
+            An OdbDatumCsys object specifying the local coordinate system or None, indicating the
             global coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -207,7 +207,7 @@ class OdbInstanceBase:
         Returns
         -------
         OdbMeshElement
-            An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object.
+            An OdbMeshElement object.
 
         Raises
         ------
@@ -246,7 +246,7 @@ class OdbInstanceBase:
         region
             An OdbSet specifying a region on an instance.
         section
-            A :py:class:`~abaqus.Section.Section.Section` object.
+            A Section object.
 
         Raises
         ------

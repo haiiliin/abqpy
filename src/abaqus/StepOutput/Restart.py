@@ -71,7 +71,7 @@ class Restart:
         Returns
         -------
         Restart
-            A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+            A Restart object.
 
         Raises
         ------

@@ -99,13 +99,13 @@ class EmagTimeHarmonicStep(AnalysisStep):
     #: A repository of HistoryOutputRequestState objects.
     historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
-    #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+    #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
+    #: A Monitor object.
     monitor: Optional[Monitor] = None
 
-    #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+    #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
@@ -114,10 +114,10 @@ class EmagTimeHarmonicStep(AnalysisStep):
     #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
+    #: A Control object.
     control: Control = Control()
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
+    #: A SolverControl object.
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
@@ -142,7 +142,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
     #: in the list of analysis steps.
     previous: str
 
-    #: An :py:class:`~abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray` object.
+    #: An EmagTimeHarmonicFrequencyArray object.
     frequencyRange: EmagTimeHarmonicFrequencyArray
 
     #: A String specifying a description of the new step. The default value is an empty string.
@@ -177,7 +177,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            An :py:class:`~abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray` object.
+            An EmagTimeHarmonicFrequencyArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -188,7 +188,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
         Returns
         -------
         EmagTimeHarmonicStep
-            An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` object.
+            An EmagTimeHarmonicStep object.
 
         Raises
         ------

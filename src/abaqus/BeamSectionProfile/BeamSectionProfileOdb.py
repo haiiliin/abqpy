@@ -46,7 +46,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         ArbitraryProfile
-            An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object.
+            An ArbitraryProfile object.
 
         Raises
         ------
@@ -103,7 +103,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         BoxProfile
-            A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object.
+            A BoxProfile object.
 
         Raises
         ------
@@ -134,7 +134,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         CircularProfile
-            A :py:class:`~abaqus.BeamSectionProfile.CircularProfile.CircularProfile` object.
+            A CircularProfile object.
 
         Raises
         ------
@@ -185,7 +185,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         GeneralizedProfile
-            A :py:class:`~abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile` object.
+            A GeneralizedProfile object.
 
         Raises
         ------
@@ -219,7 +219,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         HexagonalProfile
-            A :py:class:`~abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile` object.
+            A HexagonalProfile object.
 
         Raises
         ------
@@ -272,7 +272,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         IProfile
-            An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object.
+            An IProfile object.
 
         Raises
         ------
@@ -311,7 +311,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         LProfile
-            A :py:class:`~abaqus.BeamSectionProfile.LProfile.LProfile` object.
+            A LProfile object.
 
         Raises
         ------
@@ -344,7 +344,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         PipeProfile
-            A :py:class:`~abaqus.BeamSectionProfile.PipeProfile.PipeProfile` object.
+            A PipeProfile object.
 
         Raises
         ------
@@ -377,7 +377,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         RectangularProfile
-            A :py:class:`~abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile` object.
+            A RectangularProfile object.
 
         Raises
         ------
@@ -419,7 +419,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         TProfile
-            A :py:class:`~abaqus.BeamSectionProfile.TProfile.TProfile` object.
+            A TProfile object.
 
         Raises
         ------
@@ -456,7 +456,7 @@ class BeamSectionProfileOdb(OdbBase):
         Returns
         -------
         TrapezoidalProfile
-            A :py:class:`~abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile` object.
+            A TrapezoidalProfile object.
 
         Raises
         ------

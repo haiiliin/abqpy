@@ -78,7 +78,7 @@ class PropertyPart(PartBase):
         Returns
         -------
         layup: CompositeLayup
-            A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object.
+            A CompositeLayup object.
 
         Raises
         ------
@@ -118,7 +118,7 @@ class PropertyPart(PartBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned.
+            A Set object specifying the region to which the section is assigned.
         sectionName
             A String specifying the name of the section.
         thicknessAssignment
@@ -138,7 +138,7 @@ class PropertyPart(PartBase):
         Returns
         -------
         assignment: SectionAssignment
-            A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object
+            A SectionAssignment object
         """
         sectionAssignment = SectionAssignment(region, sectionName, thicknessAssignment, offset, offsetType, offsetField)
         self.sectionAssignments.append(sectionAssignment)
@@ -177,9 +177,9 @@ class PropertyPart(PartBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Set.Set` object specifying a region for which the material orientation is defined.
+            A Set object specifying a region for which the material orientation is defined.
         localCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system or None, describing the
+            A DatumCsys object specifying the local coordinate system or None, describing the
             material orientation for the given region. In the ODB, this member was previously
             accessible using "csys," but support has now been added for localCsys and the csys
             member will be deprecated.
@@ -210,10 +210,10 @@ class PropertyPart(PartBase):
             discrete orientation. Possible values are SURFACE, NORMAL_DATUM, and NORMAL_VECTOR. The
             default value is NORMAL_VECTOR.
         normalAxisRegion
-            A :py:class:`~abaqus.Region.Surface.Surface` object specifying a region whose geometric normals define the normal axis for
+            A Surface object specifying a region whose geometric normals define the normal axis for
             the discrete orientation.
         normalAxisDatum
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the normal axis
+            A DatumAxis object specifying the Datum Axis or None, describing the normal axis
             direction for the discrete orientation.
         flipNormalDirection
             A Boolean specifying the flag to reverse the direction of the defined normal axis
@@ -230,10 +230,10 @@ class PropertyPart(PartBase):
             discrete orientation. Possible values are SURFACE, PRIMARY_DATUM, and PRIMARY_VECTOR.
             The default value is PRIMARY_VECTOR.
         primaryAxisRegion
-            A :py:class:`~abaqus.Region.Set.Set` object specifying a region whose geometric tangents define the primary axis for
+            A Set object specifying a region whose geometric tangents define the primary axis for
             the discrete orientation.
         primaryAxisDatum
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the primary axis
+            A DatumAxis object specifying the Datum Axis or None, describing the primary axis
             direction for the discrete orientation.
         flipPrimaryDirection
             A Boolean specifying the flag to reverse the direction of the defined primary axis
@@ -245,7 +245,7 @@ class PropertyPart(PartBase):
         Returns
         -------
         orientation: MaterialOrientation
-            A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
+            A MaterialOrientation object.
         """
         materialOrientation = MaterialOrientation(
             region,
@@ -311,7 +311,7 @@ class PropertyPart(PartBase):
             A sequence of geomSequences of ConstrainedSketchVertex, Edge, Face, and Cell objects or a sequence of
             sequences of elements.
         localCsys
-            A :py:class:`~abaqus.Datum.Datum.Datum` object specifying the local coordinate system or None, indicating the global
+            A Datum object specifying the local coordinate system or None, indicating the global
             coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -340,7 +340,7 @@ class PropertyPart(PartBase):
             A sequence of geomSequences of ConstrainedSketchVertex, Edge, Face, and Cell objects or a sequence of
             sequences of elements.
         localCsys
-            A :py:class:`~abaqus.Datum.Datum.Datum` object specifying the local coordinate system or None, indicating the global
+            A Datum object specifying the local coordinate system or None, indicating the global
             coordinate system.
         axis
             A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
@@ -365,7 +365,7 @@ class PropertyPart(PartBase):
         Parameters
         ----------
         regions
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. For 3D parts, the
+            A Region object specifying the region on which normals are flipped. For 3D parts, the
             region contains Face objects or two-dimensional triangle or quadrilateral Element
             objects. For axisymmetric parts, the region contains Edge objects or line Elements
             objects.
@@ -390,7 +390,7 @@ class PropertyPart(PartBase):
         Parameters
         ----------
         regions
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. The region contains
+            A Region object specifying the region on which normals are flipped. The region contains
             Edge objects or one-dimensional Element objects.
         """
         ...

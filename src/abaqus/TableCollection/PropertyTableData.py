@@ -89,7 +89,7 @@ class PropertyTableData:
         Returns
         -------
         PropertyTableData
-            A :py:class:`~abaqus.TableCollection.PropertyTableData.PropertyTableData` object.
+            A PropertyTableData object.
 
         Raises
         ------

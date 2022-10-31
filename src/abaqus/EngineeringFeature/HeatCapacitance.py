@@ -38,7 +38,7 @@ class HeatCapacitance(Inertia):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied.
+    #: A Region object specifying the region to which the heat capacitance is applied.
     region: Region
 
     #: A sequence of sequences of Floats specifying heat capacitance properties. The items in
@@ -73,7 +73,7 @@ class HeatCapacitance(Inertia):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the heat capacitance is applied.
+            A Region object specifying the region to which the heat capacitance is applied.
         table
             A sequence of sequences of Floats specifying heat capacitance properties. The items in
             the table data are described below.
@@ -85,7 +85,7 @@ class HeatCapacitance(Inertia):
         Returns
         -------
         HeatCapacitance
-            A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` object.
+            A HeatCapacitance object.
         """
         super().__init__()
 

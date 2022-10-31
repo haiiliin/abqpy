@@ -34,6 +34,6 @@ class OdbLoadCase:
         Returns
         -------
         OdbLoadCase
-            An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object.
+            An OdbLoadCase object.
         """
         ...

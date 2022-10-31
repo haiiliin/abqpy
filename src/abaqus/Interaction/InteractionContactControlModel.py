@@ -59,7 +59,7 @@ class InteractionContactControlModel(ModelBase):
         Returns
         -------
         ExpContactControl
-            An :py:class:`~abaqus.Interaction.ExpContactControl.ExpContactControl` object.
+            An ExpContactControl object.
 
         Raises
         ------
@@ -196,7 +196,7 @@ class InteractionContactControlModel(ModelBase):
         Returns
         -------
         StdContactControl
-            A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
+            A StdContactControl object.
 
         Raises
         ------

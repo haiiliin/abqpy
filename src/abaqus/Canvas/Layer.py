@@ -19,22 +19,22 @@ class Layer:
             session.viewports[name].layers[name]
     """
 
-    #: A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying the object to be displayed. The
+    #: A Displayable object specifying the object to be displayed. The
     #: Displayable type is an abstract generalization. The concrete possible types are Part, Assembly,
     #: ConstrainedSketch, Odb, or XYPlot.
     displayedObject: Displayable = Displayable()
 
-    #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the layer.
+    #: A View object specifying the object that controls viewing of the layer.
     view: Optional[View] = None
 
-    #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
+    #: An OdbDisplay object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
 
-    #: A :py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` object specifying the display options
+    #: A PartDisplayOptions object specifying the display options
     #: for the Part object.
     partDisplay: PartDisplayOptions = PartDisplayOptions()
 
-    #: An :py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions` object specifying the
+    #: An AssemblyDisplayOptions object specifying the
     #: display options for the Assembly object.
     assemblyDisplay: AssemblyDisplayOptions = AssemblyDisplayOptions()
 
@@ -63,7 +63,7 @@ class Layer:
         Returns
         -------
         Layer
-            A :py:class:`~abaqus.Canvas.Layer.Layer` object.
+            A Layer object.
         """
         self.name = name
         self.copyViewName = copyViewName

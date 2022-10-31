@@ -345,6 +345,6 @@ class ElemType:
         Returns
         -------
         elemType: ElemType
-            An :py:class:`~abaqus.Mesh.ElemType.ElemType` object
+            An ElemType object
         """
         ...

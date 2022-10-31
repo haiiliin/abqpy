@@ -32,7 +32,7 @@ class TopologyMillingControl(GeometricRestriction):
     #: can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
     millingDirections: tuple
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
     #: None or a DatumCsys object specifying the local coordinate system of the
@@ -76,7 +76,7 @@ class TopologyMillingControl(GeometricRestriction):
             A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
             can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         csys
             None or a DatumCsys object specifying the local coordinate system of the
             **millingDirections**. If **csys** = None, the global coordinate system is used. When this
@@ -94,7 +94,7 @@ class TopologyMillingControl(GeometricRestriction):
         Returns
         -------
         TopologyMillingControl
-            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
+            A TopologyMillingControl object.
         """
         super().__init__()
 

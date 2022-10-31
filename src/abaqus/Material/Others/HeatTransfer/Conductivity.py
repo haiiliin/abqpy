@@ -84,7 +84,7 @@ class Conductivity:
         Returns
         -------
         Conductivity
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity` object.
+            A Conductivity object.
 
         Raises
         ------

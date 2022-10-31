@@ -59,7 +59,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         ActuatorAmplitude
-            An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object.
+            An ActuatorAmplitude object.
 
         Raises
         ------
@@ -106,7 +106,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         DecayAmplitude
-            A :py:class:`~abaqus.Amplitude.DecayAmplitude.DecayAmplitude` object.
+            A DecayAmplitude object.
 
         Raises
         ------
@@ -158,7 +158,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         EquallySpacedAmplitude
-            An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object.
+            An EquallySpacedAmplitude object.
 
         Raises
         ------
@@ -210,7 +210,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         ModulatedAmplitude
-            A :py:class:`~abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude` object.
+            A ModulatedAmplitude object.
 
         Raises
         ------
@@ -259,7 +259,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         PeriodicAmplitude
-            A :py:class:`~abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude` object.
+            A PeriodicAmplitude object.
 
         Raises
         ------
@@ -322,7 +322,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         PsdDefinition
-            A :py:class:`~abaqus.Amplitude.PsdDefinition.PsdDefinition` object.
+            A PsdDefinition object.
 
         Raises
         ------
@@ -365,7 +365,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         SmoothStepAmplitude
-            A :py:class:`~abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude` object.
+            A SmoothStepAmplitude object.
 
         Raises
         ------
@@ -412,7 +412,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         SolutionDependentAmplitude
-            A :py:class:`~abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude` object.
+            A SolutionDependentAmplitude object.
 
         Raises
         ------
@@ -491,7 +491,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         SpectrumAmplitude
-            A :py:class:`~abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude` object.
+            A SpectrumAmplitude object.
 
         Raises
         ------
@@ -548,7 +548,7 @@ class AmplitudeModel(ModelBase):
         Returns
         -------
         TabularAmplitude
-            A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object.
+            A TabularAmplitude object.
 
         Raises
         ------

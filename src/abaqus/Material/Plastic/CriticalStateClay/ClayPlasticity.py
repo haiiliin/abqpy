@@ -53,7 +53,7 @@ class ClayPlasticity:
         - CLAY PLASTICITY
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening` object.
+    #: A ClayHardening object.
     clayHardening: ClayHardening = ClayHardening(((),))
 
     @abaqus_method_doc
@@ -92,7 +92,7 @@ class ClayPlasticity:
         Returns
         -------
         ClayPlasticity
-            A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity` object.
+            A ClayPlasticity object.
 
         Raises
         ------

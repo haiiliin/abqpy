@@ -248,7 +248,7 @@ class StdContactControl(ContactControl):
         Returns
         -------
         StdContactControl
-            A :py:class:`~abaqus.Interaction.StdContactControl.StdContactControl` object.
+            A StdContactControl object.
 
         Raises
         ------

@@ -41,7 +41,7 @@ class MeshEdgeArray(List[MeshEdge]):
         Returns
         -------
         MeshEdgeArray
-            A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
+            A MeshEdgeArray object.
         """
         super().__init__()
 
@@ -58,7 +58,7 @@ class MeshEdgeArray(List[MeshEdge]):
         Returns
         -------
         MeshEdgeArray
-            A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
+            A MeshEdgeArray object.
 
         Raises
         ------

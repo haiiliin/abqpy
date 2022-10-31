@@ -35,16 +35,16 @@ class DatumCsys(Datum):
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
     coordSysType: Optional[SymbolicConstant] = None
 
-    #: A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
+    #: A DatumPoint object specifying the origin of the coordinate system.
     origin: DatumPoint = DatumPoint()
 
-    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 1-direction of the coordinate system.
+    #: A DatumAxis object specifying the 1-direction of the coordinate system.
     axis1: DatumAxis = DatumAxis()
 
-    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 2-direction of the coordinate system.
+    #: A DatumAxis object specifying the 2-direction of the coordinate system.
     axis2: DatumAxis = DatumAxis()
 
-    #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the 3-direction of the coordinate system.
+    #: A DatumAxis object specifying the 3-direction of the coordinate system.
     axis3: DatumAxis = DatumAxis()
 
     @abaqus_method_doc

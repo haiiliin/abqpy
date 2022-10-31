@@ -141,7 +141,7 @@ class DiagnosticPrint:
         Returns
         -------
         DiagnosticPrint
-            A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+            A DiagnosticPrint object.
         """
         ...
 

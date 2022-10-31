@@ -70,7 +70,7 @@ class BrittleFailure:
         Returns
         -------
         BrittleFailure
-            A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure` object.
+            A BrittleFailure object.
 
         Raises
         ------
