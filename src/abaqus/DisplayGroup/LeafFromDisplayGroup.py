@@ -25,7 +25,7 @@ class LeafFromDisplayGroup(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: Optional[SymbolicConstant] = None
 
-    #: A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
+    #: A DisplayGroupArray object.
     displayGroup: DisplayGroupArray
 
     @abaqus_method_doc
@@ -40,11 +40,11 @@ class LeafFromDisplayGroup(Leaf):
         Parameters
         ----------
         displayGroup
-            A :py:class:`~abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray` object.
+            A DisplayGroupArray object.
 
         Returns
         -------
         LeafFromDisplayGroup
-            A :py:class:`~abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup` object.
+            A LeafFromDisplayGroup object.
         """
         super().__init__(DEFAULT_MODEL)

@@ -107,7 +107,7 @@ class Face:
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+            A MeshElementArray object which is a sequence of MeshElement objects.
 
         """
         ...
@@ -127,7 +127,7 @@ class Face:
         Returns
         -------
         MeshFaceArray
-            A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a sequence of MeshFace objects.
+            A MeshFaceArray object which is a sequence of MeshFace objects.
 
         """
         ...
@@ -149,7 +149,7 @@ class Face:
         Returns
         -------
         MeshNodeArray
-            A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a sequence of MeshNode objects.
+            A MeshNodeArray object which is a sequence of MeshNode objects.
 
         """
         ...
@@ -241,7 +241,7 @@ class Face:
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a sequence of Face objects.
+            A FaceArray object which is a sequence of Face objects.
 
         """
         ...
@@ -259,7 +259,7 @@ class Face:
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...
@@ -272,7 +272,7 @@ class Face:
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...

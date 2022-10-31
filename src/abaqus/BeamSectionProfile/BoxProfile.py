@@ -100,7 +100,7 @@ class BoxProfile(Profile):
         Returns
         -------
         BoxProfile
-            A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object.
+            A BoxProfile object.
 
         Raises
         ------

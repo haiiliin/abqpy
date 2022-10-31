@@ -43,7 +43,7 @@ class Gel:
         Returns
         -------
         Gel
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Gel.Gel` object.
+            A Gel object.
         """
         ...
 

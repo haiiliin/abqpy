@@ -58,7 +58,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+            A FaceArray object.
 
         """
         ...
@@ -136,14 +136,41 @@ class FaceArray(List[Face]):
         Returns
         -------
         Face
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
+            A Face object.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
+=======
+    def getExteriorEdges(self) -> EdgeArray:
+        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
+        returns the edges that are referenced by exactly one of the faces in the sequence.
+
+        Returns
+        -------
+        EdgeArray
+            An EdgeArray object specifying the exterior edges.
+
+        """
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Face:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Face]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, List[Face]]:
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
@@ -157,7 +184,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         Face
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects.
+            A Face object or a sequence of Face objects.
 
         """
         ...
@@ -204,7 +231,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...
@@ -228,7 +255,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...
@@ -248,7 +275,7 @@ class FaceArray(List[Face]):
         Returns
         -------
         FaceArray
-            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is a sequence of Face objects.
+            A FaceArray object, which is a sequence of Face objects.
 
         """
         ...

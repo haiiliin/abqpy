@@ -89,11 +89,11 @@ class XYData(tuple):
     #: **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
     yValuesLabel: str = ""
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to the
+    #: A QuantityType object specifying the QuantityType object associated to the
     #: X -axis1- values.
     axis1QuantityType: Optional[QuantityType] = None
 
-    #: A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+    #: A QuantityType object specifying the QuantityType object associated to
     #: the Y -axis2- values.
     axis2QuantityType: Optional[QuantityType] = None
 
@@ -148,16 +148,16 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the Y -axis2- values.
 
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object.
+            An XYData object.
         """
         ...
 
@@ -175,12 +175,12 @@ class XYData(tuple):
         Parameters
         ----------
         objectToCopy
-            An :py:class:`~abaqus.XY.XYData.XYData` object to be copied.
+            An XYData object to be copied.
 
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object.
+            An XYData object.
         """
         ...
 
@@ -238,10 +238,10 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the Y -axis2- values.
         xField
             An Int specifying the field from which the **X**-data will be read. Fields are delimited
@@ -257,7 +257,7 @@ class XYData(tuple):
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object.
+            An XYData object.
 
         Raises
         ------
@@ -293,7 +293,7 @@ class XYData(tuple):
         Parameters
         ----------
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+            An Odb object specifying the output database from which data will be read.
         outputVariableName
             A String specifying the output variable from which the **X - Y** data will be read.
         steps
@@ -333,7 +333,7 @@ class XYData(tuple):
         Returns
         -------
         XYData
-            An :py:class:`~abaqus.XY.XYData.XYData` object.
+            An XYData object.
 
         Raises
         ------
@@ -383,7 +383,7 @@ class XYData(tuple):
         Parameters
         ----------
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+            An Odb object specifying the output database from which data will be read.
         outputPosition
             A SymbolicConstant specifying the position from which output will be read. Possible
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
@@ -489,7 +489,7 @@ class XYData(tuple):
         Parameters
         ----------
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+            An Odb object specifying the output database from which data will be read.
         force
             A boolean indicating whether to compute the force. The default is ON.
         moment
@@ -566,7 +566,7 @@ class XYData(tuple):
         Parameters
         ----------
         odb
-            An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+            An Odb object specifying the output database from which data will be read.
         outputPosition
             A SymbolicConstant specifying the position from which output will be read. Possible
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
@@ -701,7 +701,7 @@ class XYData(tuple):
         Parameters
         ----------
         path
-            A :py:class:`~abaqus.PathAndProbe.Path.Path` object to use in **X - Y** data generation.
+            A Path object to use in **X - Y** data generation.
         name
             A String specifying the repository key:for **session** 'name' is required argument and for
             **xyPlot** 'name' is optional argument.
@@ -845,10 +845,10 @@ class XYData(tuple):
             A String specifying the label for the Y-values. This value may be overridden if the
             **X - Y** data are combined with other **X - Y** data. The default value is an empty string.
         axis1QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the X -axis1- values.
         axis2QuantityType
-            A :py:class:`~abaqus.XY.QuantityType.QuantityType` object specifying the QuantityType object associated to
+            A QuantityType object specifying the QuantityType object associated to
             the Y -axis2- values.
         """
         ...

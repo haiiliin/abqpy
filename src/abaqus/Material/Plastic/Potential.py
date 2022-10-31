@@ -63,7 +63,7 @@ class Potential:
         Returns
         -------
         Potential
-            A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+            A Potential object.
 
         Raises
         ------

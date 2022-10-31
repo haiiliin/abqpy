@@ -60,7 +60,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         EdgeArray
-            A :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+            A EdgeArray object.
 
         """
         ...
@@ -133,7 +133,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         Edge
-            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
+            An Edge object or a sequence of Edge objects.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -197,7 +197,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         Edge
-            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
+            An Edge object or a sequence of Edge objects.
 
         Raises
         ------
@@ -248,7 +248,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+            An EdgeArray object, which is a sequence of Edge objects.
 
         """
         ...
@@ -277,7 +277,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+            An EdgeArray object, which is a sequence of Edge objects.
 
         """
         ...
@@ -301,7 +301,7 @@ class EdgeArray(List[Edge]):
         Returns
         -------
         EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is a sequence of Edge objects.
+            An EdgeArray object, which is a sequence of Edge objects.
 
         """
         ...

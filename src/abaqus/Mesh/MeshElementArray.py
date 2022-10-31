@@ -58,7 +58,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
         """
         super().__init__()
 
@@ -74,7 +74,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElement
-            A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
+            A MeshElement object.
         """
         ...
 
@@ -92,7 +92,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
         """
         ...
 
@@ -138,7 +138,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -160,7 +160,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -179,7 +179,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 
@@ -213,7 +213,7 @@ class MeshElementArray(List[MeshElement]):
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+            A MeshElementArray object.
 
         Raises
         ------
@@ -221,3 +221,38 @@ class MeshElementArray(List[MeshElement]):
             An exception occurs if the resulting sequence is empty.
         """
         ...
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def getExteriorEdges(self) -> EdgeArray:
+        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
+        returns the edges that are referenced by exactly one of the faces in the sequence.
+
+        .. versionadded:: 2018
+            The `getExteriorEdges` method was added.
+
+        Returns
+        -------
+        EdgeArray
+            An EdgeArray object specifying the exterior edges.
+
+        """
+        ...
+
+    @abaqus_method_doc
+    def getExteriorFaces(self) -> FaceArray:
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        .. versionadded:: 2018
+            The `getExteriorFaces` method was added.
+
+        Returns
+        -------
+        FaceArray
+            A FaceArray object representing the faces on the exterior of the cells.
+
+        """
+        ...
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))

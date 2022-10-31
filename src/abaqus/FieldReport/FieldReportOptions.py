@@ -44,7 +44,7 @@ class FieldReportOptions:
             An Int specifying the number of columns to display for the tabular report. The default
             value is 80.
         numberFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the format type, number of digits and precision used to
+            A NumberFormat object specifying the format type, number of digits and precision used to
             print the numeric output.
         printXYData
             A Boolean specifying whether to include **X - Y** data values in the tabular report. The
@@ -69,7 +69,7 @@ class FieldReportOptions:
         Returns
         -------
         FieldReportOptions
-            A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object.
+            A FieldReportOptions object.
         """
         ...
 
@@ -110,7 +110,7 @@ class FieldReportOptions:
         Returns
         -------
         NumberFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
+            A NumberFormat object.
         """
         self.numberFormat = numberFormat = NumberFormat(blankPad, format, numDigits, precision)
         return numberFormat

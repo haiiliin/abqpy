@@ -152,7 +152,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: AnnealStep
-            An :py:class:`~abaqus.Step.AnnealStep.AnnealStep` object.
+            An AnnealStep object.
         """
         self.steps[name] = step = AnnealStep(name, previous, description, refTemp, maintainAttributes)
         return step
@@ -223,7 +223,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: BuckleStep
-            A :py:class:`~abaqus.Step.BuckleStep.BuckleStep` object.
+            A BuckleStep object.
         """
         self.steps[name] = step = BuckleStep(
             name,
@@ -305,7 +305,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: ComplexFrequencyStep
-            A :py:class:`~abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep` object.
+            A ComplexFrequencyStep object.
         """
         self.steps[name] = step = ComplexFrequencyStep(
             name,
@@ -438,7 +438,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: CoupledTempDisplacementStep
-            A :py:class:`~abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep` object.
+            A CoupledTempDisplacementStep object.
         """
         self.steps[name] = step = CoupledTempDisplacementStep(
             name,
@@ -580,7 +580,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: CoupledThermalElectricalStructuralStep
-            A :py:class:`~abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep` object.
+            A CoupledThermalElectricalStructuralStep object.
         """
         self.steps[name] = step = CoupledThermalElectricalStructuralStep(
             name,
@@ -700,7 +700,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: CoupledThermalElectricStep
-            A :py:class:`~abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep` object.
+            A CoupledThermalElectricStep object.
         """
         self.steps[name] = step = CoupledThermalElectricStep(
             name,
@@ -846,7 +846,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: DirectCyclicStep
-            A :py:class:`~abaqus.Step.DirectCyclicStep.DirectCyclicStep` object.
+            A DirectCyclicStep object.
         """
         self.steps[name] = step = DirectCyclicStep(
             name,
@@ -902,7 +902,7 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            An :py:class:`~abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray` object.
+            An EmagTimeHarmonicFrequencyArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -913,7 +913,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: EmagTimeHarmonicStep
-            An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` object.
+            An EmagTimeHarmonicStep object.
         """
         self.steps[name] = step = EmagTimeHarmonicStep(name, previous, frequencyRange, description, factorization)
         return step
@@ -975,7 +975,7 @@ class StepModel(ModelBase):
             required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying
+            A MassScalingArray object specifying
             mass scaling controls. The default value is PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
@@ -992,7 +992,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: ExplicitDynamicsStep
-            An :py:class:`~abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep` object.
+            An ExplicitDynamicsStep object.
         """
         self.steps[name] = step = ExplicitDynamicsStep(
             name,
@@ -1155,7 +1155,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: FrequencyStep
-            A :py:class:`~abaqus.Step.FrequencyStep.FrequencyStep` object.
+            A FrequencyStep object.
         """
         self.steps[name] = step = FrequencyStep(
             name,
@@ -1272,7 +1272,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: GeostaticStep
-            A :py:class:`~abaqus.Step.GeostaticStep.GeostaticStep` object.
+            A GeostaticStep object.
         """
         self.steps[name] = step = GeostaticStep(
             name,
@@ -1395,7 +1395,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: HeatTransferStep
-            A :py:class:`~abaqus.Step.HeatTransferStep.HeatTransferStep` object.
+            A HeatTransferStep object.
         """
         self.steps[name] = step = HeatTransferStep(
             name,
@@ -1551,7 +1551,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: ImplicitDynamicsStep
-            An :py:class:`~abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep` object.
+            An ImplicitDynamicsStep object.
         """
         self.steps[name] = step = ImplicitDynamicsStep(
             name,
@@ -1662,7 +1662,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: MassDiffusionStep
-            A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object.
+            A MassDiffusionStep object.
         """
         self.steps[name] = step = MassDiffusionStep(
             name,
@@ -1725,11 +1725,11 @@ class StepModel(ModelBase):
         incSize
             A Float specifying the time increment to be used. The default value is 1.0.
         directDamping
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
+            A DirectDamping object.
         compositeDamping
-            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
+            A CompositeDamping object.
         rayleighDamping
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
+            A RayleighDamping object.
         amplitude
             A SymbolicConstant specifying the amplitude variation for loading magnitudes during the
             step. Possible values are STEP and RAMP. The default value is STEP.
@@ -1737,14 +1737,14 @@ class StepModel(ModelBase):
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
         directDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
+            A DirectDampingByFrequency object.
         rayleighDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
+            A RayleighDampingByFrequency object.
 
         Returns
         -------
         step: ModalDynamicsStep
-            A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object.
+            A ModalDynamicsStep object.
         """
         self.steps[name] = step = ModalDynamicsStep(
             name,
@@ -1795,26 +1795,26 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         freq
-            A :py:class:`~abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray` object specifying frequencies over ranges of modes.
+            A RandomResponseFrequencyArray object specifying frequencies over ranges of modes.
         description
             A String specifying a description of the new step. The default value is an empty string.
         scale
             A SymbolicConstant specifying the frequency scale. Possible values are LINEAR and LOG.
             The default value is LOG.
         directDamping
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
+            A DirectDamping object.
         compositeDamping
-            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
+            A CompositeDamping object.
         rayleighDamping
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
+            A RayleighDamping object.
         structuralDamping
-            A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
+            A StructuralDamping object.
         directDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
+            A DirectDampingByFrequency object.
         rayleighDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
+            A RayleighDampingByFrequency object.
         structuralDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
+            A StructuralDampingByFrequency object.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -1822,7 +1822,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: RandomResponseStep
-            A :py:class:`~abaqus.Step.RandomResponseStep.RandomResponseStep` object.
+            A RandomResponseStep object.
         """
         self.steps[name] = step = RandomResponseStep(
             name,
@@ -1878,7 +1878,7 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         components
-            A :py:class:`~abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray` object.
+            A ResponseSpectrumComponentArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         comp
@@ -1890,15 +1890,15 @@ class StepModel(ModelBase):
             A SymbolicConstant specifying the method used to sum the components. Possible values are
             ABS, CQC, NRL, SRSS, TENP, DSC, and GRP. The default value is ABS.
         directDamping
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
+            A DirectDamping object.
         compositeDamping
-            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
+            A CompositeDamping object.
         rayleighDamping
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
+            A RayleighDamping object.
         directDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
+            A DirectDampingByFrequency object.
         rayleighDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
+            A RayleighDampingByFrequency object.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -1906,7 +1906,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: ResponseSpectrumStep
-            A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` object.
+            A ResponseSpectrumStep object.
         """
         self.steps[name] = step = ResponseSpectrumStep(
             name,
@@ -2051,7 +2051,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SoilsStep
-            A :py:class:`~abaqus.Step.SoilsStep.SoilsStep` object.
+            A SoilsStep object.
         """
         self.steps[name] = step = SoilsStep(
             name,
@@ -2123,7 +2123,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: StaticLinearPerturbationStep
-            A :py:class:`~abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep` object.
+            A StaticLinearPerturbationStep object.
         """
         self.steps[name] = step = StaticLinearPerturbationStep(
             name, previous, description, matrixSolver, matrixStorage, maintainAttributes
@@ -2193,7 +2193,7 @@ class StepModel(ModelBase):
             An Int specifying the degree of freedom being monitored. This argument is required when
             **nodeOn** = ON. The default value is 0.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the vertex at which the finishing displacement value is being
+            A Region object specifying the vertex at which the finishing displacement value is being
             monitored. This argument is required when **nodeOn** = ON.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -2243,7 +2243,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: StaticRiksStep
-            A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object.
+            A StaticRiksStep object.
         """
         self.steps[name] = step = StaticRiksStep(
             name,
@@ -2397,7 +2397,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: StaticRiksStep
-            A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object.
+            A StaticRiksStep object.
         """
         self.steps[name] = step = StaticStep(
             name,
@@ -2458,7 +2458,7 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray` object.
+            A SteadyStateDirectFrequencyArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -2484,7 +2484,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SteadyStateDirectStep
-            A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` object.
+            A SteadyStateDirectStep object.
         """
         self.steps[name] = step = SteadyStateDirectStep(
             name,
@@ -2533,26 +2533,26 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray` object.
+            A SteadyStateModalFrequencyArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         scale
             A SymbolicConstant specifying whether a logarithmic or linear scale is used for output.
             Possible values are LOGARITHMIC and LINEAR. The default value is LOGARITHMIC.
         directDamping
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDamping.DirectDamping` object.
+            A DirectDamping object.
         compositeDamping
-            A :py:class:`~abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping` object.
+            A CompositeDamping object.
         rayleighDamping
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping` object.
+            A RayleighDamping object.
         structuralDamping
-            A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
+            A StructuralDamping object.
         directDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency` object.
+            A DirectDampingByFrequency object.
         rayleighDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
+            A RayleighDampingByFrequency object.
         structuralDampingByFrequency
-            A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
+            A StructuralDampingByFrequency object.
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
@@ -2563,7 +2563,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SteadyStateModalStep
-            A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` object.
+            A SteadyStateModalStep object.
         """
         self.steps[name] = step = SteadyStateModalStep(
             name,
@@ -2617,7 +2617,7 @@ class StepModel(ModelBase):
             A String specifying the name of the previous step. The new step appears after this step
             in the list of analysis steps.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray` object.
+            A SteadyStateSubspaceFrequencyArray object.
         description
             A String specifying a description of the new step. The default value is an empty string.
         factorization
@@ -2653,7 +2653,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SteadyStateSubspaceStep
-            A :py:class:`~abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep` object.
+            A SteadyStateSubspaceStep object.
         """
         self.steps[name] = step = SteadyStateSubspaceStep(
             name,
@@ -2725,7 +2725,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SubspaceDynamicsStep
-            A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` object.
+            A SubspaceDynamicsStep object.
         """
         self.steps[name] = step = SubspaceDynamicsStep(
             name,
@@ -2788,7 +2788,7 @@ class StepModel(ModelBase):
             A SymbolicConstant specifying the subtructure recovery to be computed. Possible values
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region for substructure recovery. This argument is
+            A Region object specifying the region for substructure recovery. This argument is
             required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
@@ -2812,9 +2812,9 @@ class StepModel(ModelBase):
             A SymbolicConstant specifying the eigenmodes to be retained. Possible values are
             MODE_RANGE, FREQUENCY_RANGE, and NONE. The default value is NONE.
         modeRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
+            A SubstructureGenerateModesArray object.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray` object.
+            A SubstructureGenerateFrequencyArray object.
         globalDampingField
             A SymbolicConstant specifying the field to which the global damping factors should be
             applied. Possible values are ALL, ACOUSTIC, MECHANICAL, and NONE. The default value is
@@ -2839,7 +2839,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: SubstructureGenerateStep
-            A :py:class:`~abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep` object.
+            A SubstructureGenerateStep object.
         """
         self.steps[name] = step = SubstructureGenerateStep(
             name,
@@ -2920,7 +2920,7 @@ class StepModel(ModelBase):
         userDefinedInc
             None or a Float specifying the user-defined time increment. The default value is None.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
+            A MassScalingArray object specifying mass scaling controls. The default value is
             PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
@@ -2934,7 +2934,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: TempDisplacementDynamicsStep
-            A :py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep` object.
+            A TempDisplacementDynamicsStep object.
         """
         self.steps[name] = step = TempDisplacementDynamicsStep(
             name,
@@ -3069,7 +3069,7 @@ class StepModel(ModelBase):
         Returns
         -------
         step: ViscoStep
-            A :py:class:`~abaqus.Step.ViscoStep.ViscoStep` object.
+            A ViscoStep object.
         """
         self.steps[name] = step = ViscoStep(
             name,

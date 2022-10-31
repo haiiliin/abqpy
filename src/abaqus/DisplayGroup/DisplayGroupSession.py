@@ -21,12 +21,12 @@ class DisplayGroupSession(SessionBase):
         name
             A String specifying the repository key.
         leaf
-            A :py:class:`~abaqus.DisplayGroup.Leaf.Leaf` object specifying the items in the display group.
+            A Leaf object specifying the items in the display group.
 
         Returns
         -------
         DisplayGroup
-            A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object.
+            A DisplayGroup object.
         """
         self.displayGroups[name] = displayGroup = DisplayGroup(name, leaf)
         return displayGroup

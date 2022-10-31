@@ -285,7 +285,7 @@ class Arrow(Annotation, _OptionsBase):
         Returns
         -------
         Arrow
-            An :py:class:`~abaqus.Annotation.Arrow.Arrow` object.
+            An Arrow object.
 
         """
         super().__init__()

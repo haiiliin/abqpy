@@ -103,7 +103,7 @@ class GeometricProperties:
         Returns
         -------
         GeometricProperties
-            A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
+            A GeometricProperties object.
         """
         ...
 

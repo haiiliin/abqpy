@@ -117,7 +117,7 @@ class SymbolStyle:
         Returns
         -------
         SymbolStyle
-            A :py:class:`~abaqus.XY.SymbolStyle.SymbolStyle` object.
+            A SymbolStyle object.
 
         Raises
         ------

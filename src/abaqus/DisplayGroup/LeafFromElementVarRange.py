@@ -65,6 +65,6 @@ class LeafFromElementVarRange(Leaf):
         Returns
         -------
         LeafFromElementVarRange
-            A :py:class:`~abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange` object.
+            A LeafFromElementVarRange object.
         """
         super().__init__(DEFAULT_MODEL)
