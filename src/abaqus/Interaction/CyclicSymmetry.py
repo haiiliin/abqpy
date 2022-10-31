@@ -34,25 +34,11 @@ class CyclicSymmetry(Interaction):
     #: be created.
     createStepName: str
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+    #: A Region object specifying the master surface.
     master: Region
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
+    #: A Region object specifying the slave surface.
     slave: Region
-=======
-    #: A Region object specifying the main surface.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute `master` was renamed to `main`.
-    main: Region
-
-    #: A Region object specifying the secondary surface.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute `slave` was renamed to `secondary`.
-    secondary: Region
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
 
     #: An Int specifying the total number of sectors in the cyclic symmetric model.
     repetitiveSectors: int
@@ -135,23 +121,10 @@ class CyclicSymmetry(Interaction):
         createStepName
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
-<<<<<<< HEAD
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+            A Region object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
-=======
-        main
-            A Region object specifying the main surface.
-
-            .. versionchanged:: 2022
-                The argument `master` was renamed to `main`.
-        secondary
-            A Region object specifying the secondary surface.
-
-            .. versionchanged:: 2022
-                The argument `slave` was renamed to `secondary`.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave surface.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1

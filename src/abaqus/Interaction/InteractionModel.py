@@ -863,25 +863,8 @@ class InteractionModel(
         smoothingAssignments
             A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceCrushTriggerAssignments` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceFrictionAssignments` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
 
         Returns
@@ -959,36 +942,8 @@ class InteractionModel(
         surfaceFeatureAssignments
             A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
@@ -1059,23 +1014,10 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
-<<<<<<< HEAD
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+            A Region object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
-=======
-        main
-            A Region object specifying the main surface.
-
-            .. versionchanged:: 2022
-                The argument `master` was renamed to `main`.
-        secondary
-            A Region object specifying the secondary surface.
-
-            .. versionchanged:: 2022
-                The argument `slave` was renamed to `secondary`.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave surface.
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
@@ -1615,22 +1557,11 @@ class InteractionModel(
             created.
         contactInteraction
             A String specifying the name of the Surface-to-surface contact (Standard) interaction.
-<<<<<<< HEAD
         masterPoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the master surface that are exposed to the
+            A RegionArray object specifying the points on the master surface that are exposed to the
             fluid.
         slavePoints
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying the points on the slave surface that are exposed to
-=======
-        mainPoints
-            A RegionArray object specifying the points on the main surface that are exposed to the
-            fluid.
-
-            .. versionchanged:: 2022
-                The argument `masterPoints` was renamed to `mainPoints`.
-        secondaryPoints
-            A RegionArray object specifying the points on the secondary surface that are exposed to
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A RegionArray object specifying the points on the slave surface that are exposed to
             the fluid.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
@@ -1936,23 +1867,10 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the SurfaceToSurfaceContactExp object
             is created.
-<<<<<<< HEAD
         master
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the main surface.
-        slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the secondary surface.
-=======
-        main
             A Region object specifying the main surface.
-
-            .. versionchanged:: 2022
-                The argument `master` was renamed to `main`.
-        secondary
+        slave
             A Region object specifying the secondary surface.
-
-            .. versionchanged:: 2022
-                The argument `slave` was renamed to `secondary`.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2075,15 +1993,9 @@ class InteractionModel(
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
         master
-<<<<<<< HEAD
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the master surface.
+            A Region object specifying the master surface.
         slave
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave surface.
-=======
-            A Region object specifying the main surface.
-        slave
-            A Region object specifying the secondary surface.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave surface.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2179,11 +2091,7 @@ class InteractionModel(
             SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
             default value is NONE.
         bondingSet
-<<<<<<< HEAD
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
-=======
-            A Region object specifying the secondary node sub-set for bonding, used only when the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A Region object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
         handedness
             A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
