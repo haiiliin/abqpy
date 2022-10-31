@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -288,7 +288,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -472,7 +472,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -1227,7 +1227,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask.__init__:78
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:78
-msgid "A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object."
+msgid "A BeadTask object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:0
@@ -1612,7 +1612,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask:158
 #: ../../../../src/abaqus/Optimization/ShapeTask.py:docstring of abaqus.Optimization.ShapeTask.ShapeTask.__init__:158
-msgid "A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object."
+msgid "A ShapeTask object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask:159
@@ -1695,7 +1695,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask:49
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.__init__:49
-msgid "A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object."
+msgid "A SizingTask object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask:50
@@ -1870,7 +1870,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask:123
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.__init__:123
-msgid "A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object."
+msgid "A TopologyTask object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask:124
@@ -2472,6 +2472,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:16
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:20
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:14
 #: ../../../../src/abaqus/Optimization/SizingFrozenArea.py:docstring of abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.__init__:14
 #: ../../../../src/abaqus/Optimization/SizingMemberSize.py:docstring of abaqus.Optimization.SizingMemberSize.SizingMemberSize.__init__:14
@@ -2480,7 +2481,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:16
 #: ../../None:3:<autosummary>:1
 #: ../../None:4:<autosummary>:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied."
+msgid "A Region object specifying the region to which the geometric restriction is applied."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:16
@@ -2585,7 +2586,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:29
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:29
-msgid "A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object."
+msgid "A BeadFixedRegion object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:30
@@ -2614,7 +2615,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:22
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:22
-msgid "A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object."
+msgid "A BeadGrowth object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:23
@@ -2633,12 +2634,12 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:14
 #: ../../docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.beadPenetrationCheckRegion:1
 #: ../../docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.penetrationCheckRegion:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the penetration check region."
+msgid "A Region object specifying the penetration check region."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:18
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:18
-msgid "A :py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck` object."
+msgid "A BeadPenetrationCheck object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:19
@@ -2679,7 +2680,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:23
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry:23
-msgid "A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object."
+msgid "A BeadPlanarSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:24
@@ -2709,7 +2710,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:20
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry:20
-msgid "A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object."
+msgid "A BeadPointSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:21
@@ -2736,7 +2737,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:25
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry:25
-msgid "A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object."
+msgid "A BeadRotationalSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:26
@@ -2790,7 +2791,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:18
 #: ../../docstring of abaqus.Optimization.FrozenArea.FrozenArea.region:1
 #: ../../docstring of abaqus.Optimization.GeometricRestriction.GeometricRestriction.region:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied. When used with a TopologyTask, there is no default value. When used with a ShapeTask, the default value is MODEL."
+msgid "A Region object specifying the region to which the geometric restriction is applied. When used with a TopologyTask, there is no default value. When used with a ShapeTask, the default value is MODEL."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection.__init__:22
@@ -2915,7 +2916,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection.__init__:48
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection:48
-msgid "A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object."
+msgid "A DesignDirection object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection.__init__:49
@@ -2931,7 +2932,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl.__init__:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl:14
 #: ../../docstring of abaqus.Optimization.DrillControl.DrillControl.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the drill axis positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the direction of the drill axis positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl.__init__:26
@@ -3059,7 +3060,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl.__init__:48
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl:48
-msgid "A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object."
+msgid "A DrillControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl.__init__:49
@@ -3074,7 +3075,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion.__init__:34
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion:34
-msgid "A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object."
+msgid "A FixedRegion object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion.__init__:35
@@ -3089,7 +3090,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea.__init__:18
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea:18
-msgid "A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object."
+msgid "A FrozenArea object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea.__init__:19
@@ -3118,7 +3119,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth.__init__:27
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.Growth:27
-msgid "A :py:class:`~abaqus.Optimization.Growth.Growth` object."
+msgid "A Growth object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth.__init__:28
@@ -3141,7 +3142,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction:14
 #: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.objectives:1
-msgid "An :py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray` object."
+msgid "An OptimizationObjectiveArray object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:16
@@ -3153,7 +3154,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:19
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction:19
-msgid "An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` object."
+msgid "An ObjectiveFunction object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:20
@@ -3202,7 +3203,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:23
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint:23
-msgid "An :py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint` object."
+msgid "An OptimizationConstraint object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:24
@@ -3217,7 +3218,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck:23
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:23
-msgid "A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` object."
+msgid "A PenetrationCheck object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck:24
@@ -3233,7 +3234,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:14
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:14
 #: ../../docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.pullDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the demold pull direction. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:21
@@ -3262,7 +3263,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:49
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:49
-msgid "A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` object."
+msgid "A ShapeDemoldControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:50
@@ -3306,7 +3307,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:25
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.__init__:25
-msgid "A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object."
+msgid "A ShapeMemberSize object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:26
@@ -3322,7 +3323,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:14
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.__init__:14
 #: ../../docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the vector positioned at the **csys** origin that is normal to the symmetry plane. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the vector positioned at the **csys** origin that is normal to the symmetry plane. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:26
@@ -3337,7 +3338,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:41
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.__init__:41
-msgid "A :py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` object."
+msgid "A ShapePlanarSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:42
@@ -3359,7 +3360,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:37
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.__init__:37
-msgid "A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` object."
+msgid "A ShapePointSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:38
@@ -3375,7 +3376,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:14
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.__init__:14
 #: ../../docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the vector positioned at the **csys** origin, used as the axis of symmetry. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the vector positioned at the **csys** origin, used as the axis of symmetry. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:22
@@ -3402,7 +3403,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:50
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.__init__:50
-msgid "A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object."
+msgid "A ShapeRotationalSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:51
@@ -3469,12 +3470,12 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SingleTermDesignResponse.py:docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.setValues:26
 #: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.stepOptions:1
-msgid "A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object."
+msgid "A StepOptionArray object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse:37
 #: ../../../../src/abaqus/Optimization/SingleTermDesignResponse.py:docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.__init__:37
-msgid "A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object."
+msgid "A SingleTermDesignResponse object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse:38
@@ -3495,7 +3496,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas:17
 #: ../../../../src/abaqus/Optimization/SizingClusterAreas.py:docstring of abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.__init__:17
-msgid "A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object."
+msgid "A SizingClusterAreas object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas:18
@@ -3556,7 +3557,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:28
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:28
-msgid "A :py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry` object."
+msgid "A SizingCyclicSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:29
@@ -3571,7 +3572,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea:16
 #: ../../../../src/abaqus/Optimization/SizingFrozenArea.py:docstring of abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.__init__:16
-msgid "A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object."
+msgid "A SizingFrozenArea object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea:17
@@ -3597,7 +3598,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:25
 #: ../../../../src/abaqus/Optimization/SizingPlanarSymmetry.py:docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.__init__:25
-msgid "A :py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry` object."
+msgid "A SizingPlanarSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:26
@@ -3612,7 +3613,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:22
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.__init__:22
-msgid "A :py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` object."
+msgid "A SizingPointSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:23
@@ -3627,7 +3628,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:27
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:27
-msgid "A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object."
+msgid "A SizingRotationalSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:28
@@ -3643,7 +3644,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:14
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:14
 #: ../../docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the axis of revolution. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. This is used when **approach** is TURN."
+msgid "A VertexArray object of length 2 specifying the axis of revolution. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. This is used when **approach** is TURN."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:22
@@ -3697,7 +3698,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:49
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:49
-msgid "A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` object."
+msgid "A SlideRegionControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:50
@@ -3713,12 +3714,12 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:14
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:14
 #: ../../docstring of abaqus.Optimization.StampControl.StampControl.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the stamping direction. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the stamping direction. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:47
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:47
-msgid "A :py:class:`~abaqus.Optimization.StampControl.StampControl` object."
+msgid "A StampControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:48
@@ -3731,7 +3732,7 @@ msgid "Check `TopologyCyclicSymmetry on help.3ds.com/2019 <https://help.3ds.com/
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:30
-msgid "A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object."
+msgid "A TopologyCyclicSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:31
@@ -3747,11 +3748,11 @@ msgid "A Float specifying the draft angle. The default value is 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:29
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the point on a plane perpendicular to the pull direction, used to specify the central plane when **technique** is POINT."
+msgid "A Region object specifying the point on a plane perpendicular to the pull direction, used to specify the central plane when **technique** is POINT."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:32
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the demold pull direction. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the demold pull direction. Instead of through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:35
@@ -3759,7 +3760,7 @@ msgid "A SymbolicConstant specifying the demold technique. Possible values are A
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:38
-msgid "A :py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl` object."
+msgid "A TopologyDemoldControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:39
@@ -3787,7 +3788,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:28
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:28
-msgid "A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` object."
+msgid "A TopologyMemberSize object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:29
@@ -3805,10 +3806,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:17
 msgid "A VertexArray object of length 2 specifying the overhang control print direction. Instead of through a ConstrainedSketchVertex, each point can be specified through a tuple of coordinates."
-msgstr ""
-
-#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:20
-msgid "A Region object specifying the region to which the geometric restriction is applied."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:27
@@ -3842,7 +3839,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:27
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:27
-msgid "A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object."
+msgid "A TopologyPlanarSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:28
@@ -3857,7 +3854,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:24
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:24
-msgid "A :py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry` object."
+msgid "A TopologyPointSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:25
@@ -3872,7 +3869,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:29
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:29
-msgid "A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object."
+msgid "A TopologyRotationalSymmetry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:30
@@ -3888,12 +3885,12 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:14
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:14
 #: ../../docstring of abaqus.Optimization.TurnControl.TurnControl.clientDirection:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the rotation axis as a vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
+msgid "A VertexArray object of length 2 specifying the direction of the rotation axis as a vector positioned at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point might be specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:44
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:44
-msgid "A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object."
+msgid "A TurnControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:45
@@ -4764,7 +4761,7 @@ msgid "A sequence of Floats specifying the weights to apply to the list of desig
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/CombinedTermDesignResponse.py:docstring of abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.__init__:71
-msgid "A :py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse` object."
+msgid "A CombinedTermDesignResponse object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/CombinedTermDesignResponse.py:docstring of abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.__init__:72
@@ -5247,7 +5244,7 @@ msgid "The SymbolicConstant MODEL or a Region object specifying the region to wh
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:49
-msgid "A :py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition` object."
+msgid "A LocalStopCondition object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:50

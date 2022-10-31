@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -420,8 +420,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:17
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"of attachment points to which assembled fasteners are applied."
+"A Region object specifying the region of attachment points to which "
+"assembled fasteners are applied."
 msgstr ""
 
 #: ../../docstring
@@ -438,8 +438,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:22
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the template"
-" model control point set. The set must contain a single node or vertex."
+"A Region object specifying the template model control point set. The set "
+"must contain a single node or vertex."
 msgstr ""
 
 #: ../../docstring
@@ -537,10 +537,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:46
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:46
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener`"
-" object."
+msgid "An AssembledFastener object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
@@ -597,10 +594,10 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:17
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the crack-front region to which the contour integral is applied. If the "
-"crack-front consists of a single region, a Region object may be specified"
-" instead of a sequence with a single item in it."
+"A RegionArray object specifying the crack-front region to which the "
+"contour integral is applied. If the crack-front consists of a single "
+"region, a Region object may be specified instead of a sequence with a "
+"single item in it."
 msgstr ""
 
 #: ../../docstring
@@ -609,10 +606,10 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:21
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"the crack-tip region to which the contour integral is applied. If the "
-"crack-tip consists of a single region, a Region object may be specified "
-"instead of a sequence with a single item in it."
+"A RegionArray object specifying the crack-tip region to which the contour"
+" integral is applied. If the crack-tip consists of a single region, a "
+"Region object may be specified instead of a sequence with a single item "
+"in it."
 msgstr ""
 
 #: ../../docstring
@@ -729,9 +726,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:60
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:60
 #: of
-msgid ""
-"A :py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral` "
-"object."
+msgid "A ContourIntegral object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:61
@@ -800,7 +795,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:29
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:29
 #: of
-msgid "A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object."
+msgid "A DebondVCCT object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:30
@@ -831,9 +826,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.region:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:17
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the fastener is applied."
+msgid "A Region object specifying the region to which the fastener is applied."
 msgstr ""
 
 #: ../../docstring
@@ -934,10 +927,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:46
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:46
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener` "
-"object."
+msgid "A DiscreteFastener object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:47
@@ -958,8 +948,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:15
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.region:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the heat capacitance is applied."
+"A Region object specifying the region to which the heat capacitance is "
+"applied."
 msgstr ""
 
 #: ../../docstring
@@ -994,9 +984,7 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:24
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:24 of
-msgid ""
-"A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` "
-"object."
+msgid "A HeatCapacitance object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:25
@@ -1015,9 +1003,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:15
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:15
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.region:1 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the mass is applied."
+msgid "A Region object specifying the region to which the mass is applied."
 msgstr ""
 
 #: ../../docstring
@@ -1051,10 +1037,7 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:26
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:26 of
-msgid ""
-"A "
-":py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass`"
-" object."
+msgid "A NonstructuralMass object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:27
@@ -1081,9 +1064,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:17
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:17
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.region:1 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which fasteners are applied."
+msgid "A Region object specifying the region to which fasteners are applied."
 msgstr ""
 
 #: ../../docstring
@@ -1099,10 +1080,9 @@ msgstr ""
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:7 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of projection. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates. The default value is None."
+"A VertexArray object of length 2 specifying the direction of projection. "
+"Instead of through a ConstrainedSketchVertex, each point may be specified"
+" through a tuple of coordinates. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -1111,8 +1091,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:11
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"surfaces to be fastened. The default value is MODEL."
+"A RegionArray object specifying surfaces to be fastened. The default "
+"value is MODEL."
 msgstr ""
 
 #: ../../docstring
@@ -1336,9 +1316,7 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:114
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:114 of
-msgid ""
-"A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` "
-"object."
+msgid "A PointFastener object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:115
@@ -1358,8 +1336,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:15
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.region:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the mass or rotary inertia is applied."
+"A Region object specifying the region to which the mass or rotary inertia"
+" is applied."
 msgstr ""
 
 #: ../../docstring
@@ -1501,10 +1479,7 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:55
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:55 of
-msgid ""
-"A "
-":py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` "
-"object."
+msgid "A PointMassInertia object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:56
@@ -1525,8 +1500,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.region:1
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the springs and/or dashpots are applied."
+"A Region object specifying the region to which the springs and/or "
+"dashpots are applied."
 msgstr ""
 
 #: ../../docstring
@@ -1601,10 +1576,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:38
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:38
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround`"
-" object."
+msgid "A SpringDashpotToGround object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:39
@@ -1728,10 +1700,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:49
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:49
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot`"
-" object."
+msgid "A TwoPointSpringDashpot object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:50
@@ -1760,8 +1729,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:17
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackDomain:1 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"that contains the crack or is likely to contain the crack."
+"A Region object specifying the region that contains the crack or is "
+"likely to contain the crack."
 msgstr ""
 
 #: ../../docstring
@@ -1780,9 +1749,8 @@ msgstr ""
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:10 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the initial "
-"crack location. This parameter is required when **allowCrackGrowth** = "
-"OFF."
+"A Region object specifying the initial crack location. This parameter is "
+"required when **allowCrackGrowth** = OFF."
 msgstr ""
 
 #: ../../docstring
@@ -1871,7 +1839,7 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:53
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:53 of
-msgid "A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object."
+msgid "A XFEMCrack object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:54
@@ -2812,9 +2780,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of projection."
+msgid "A VertexArray object of length 2 specifying the direction of projection."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -2824,9 +2790,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying "
-"surfaces to be fastened."
+msgid "A RegionArray object specifying surfaces to be fastened."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -3580,9 +3544,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the initial "
-"crack location."
+msgid "A Region object specifying the initial crack location."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -4488,5 +4450,184 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "XFEMCrack"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region of attachment "
+#~ "points to which assembled fasteners are"
+#~ " applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the template model control "
+#~ "point set. The set must contain a"
+#~ " single node or vertex."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.EngineeringFeature.AssembledFastener.AssembledFastener`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the crack-front region"
+#~ " to which the contour integral is "
+#~ "applied. If the crack-front consists "
+#~ "of a single region, a Region "
+#~ "object may be specified instead of "
+#~ "a sequence with a single item in"
+#~ " it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying the crack-tip region"
+#~ " to which the contour integral is "
+#~ "applied. If the crack-tip consists "
+#~ "of a single region, a Region "
+#~ "object may be specified instead of "
+#~ "a sequence with a single item in"
+#~ " it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.ContourIntegral.ContourIntegral`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "fastener is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "heat capacitance is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "mass is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which fasteners"
+#~ " are applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of projection. Instead of "
+#~ "through a ConstrainedSketchVertex, each point"
+#~ " may be specified through a tuple "
+#~ "of coordinates. The default value is "
+#~ "None."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying surfaces to be "
+#~ "fastened. The default value is MODEL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "mass or rotary inertia is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "springs and/or dashpots are applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region that contains the"
+#~ " crack or is likely to contain "
+#~ "the crack."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the initial crack location. "
+#~ "This parameter is required when "
+#~ "**allowCrackGrowth** = OFF."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of projection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.RegionArray.RegionArray` "
+#~ "object specifying surfaces to be "
+#~ "fastened."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the initial crack location."
 #~ msgstr ""
 

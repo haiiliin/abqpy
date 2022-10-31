@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:15
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object to be copied."
+msgid "A PartInstance object to be copied."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:0
@@ -227,7 +227,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:17
-msgid "A :py:class:`~abaqus.Model.Model.Model` object."
+msgid "A Model object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:0
@@ -311,7 +311,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:1
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
+msgid "An Assembly object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:12
@@ -365,7 +365,7 @@ msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level."
+msgid "A VertexArray object specifying all the vertices existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -373,7 +373,7 @@ msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level."
+msgid "An EdgeArray object specifying all the edges existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -381,7 +381,7 @@ msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level."
+msgid "A MeshElementArray object specifying all the elements existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -389,7 +389,7 @@ msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level."
+msgid "A MeshNodeArray object specifying all the nodes existing at the assembly level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -523,7 +523,7 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying the ModelInstances."
+msgid "A PartInstance object specifying the PartInstances and A ModelInstance object specifying the ModelInstances."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -532,7 +532,7 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures:1
-msgid "An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object."
+msgid "An EngineeringFeature object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -550,7 +550,7 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations:1
-msgid "A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object."
+msgid "A ConnectorOrientationArray object."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -559,7 +559,7 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments:1
-msgid "A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object."
+msgid "A SectionAssignmentArray object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1958,13 +1958,13 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:13
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:13
 #: ../../docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.region:1
-msgid "A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the orientation is assigned."
+msgid "A Set object specifying the region to which the orientation is assigned."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:15
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:15
 #: ../../docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.localCsys1:1
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point. This value may be None, indicating the global coordinate system."
+msgid "A DatumCsys object specifying the local coordinate system of the first connector point. This value may be None, indicating the global coordinate system."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:18
@@ -1994,12 +1994,12 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:27
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:27
 #: ../../docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.localCsys2:1
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point. This value may be None, indicating the global coordinate system."
+msgid "A DatumCsys object specifying the local coordinate system of the second connector point. This value may be None, indicating the global coordinate system."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:36
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:36
-msgid "A :py:class:`~abaqus.Assembly.ConnectorOrientation.ConnectorOrientation` object."
+msgid "A ConnectorOrientation object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:37
@@ -2031,7 +2031,7 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:24
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:41
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.__init__:23
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object."
+msgid "A PartInstance object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:16
@@ -2066,7 +2066,7 @@ msgid "A sequence of MeshFace objects specifying the source region."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:17
-msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying the target region. The target face can be of a different part instance."
+msgid "A MeshFace object specifying the target region. The target face can be of a different part instance."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:20
@@ -2086,11 +2086,11 @@ msgid "A sequence of Strings specifying the feature names that will be deleted f
 msgstr ""
 
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.edges:1
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level. This member does not provide access to the edges at the instance level."
+msgid "An EdgeArray object specifying all the edges existing at the assembly level. This member does not provide access to the edges at the instance level."
 msgstr ""
 
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.elements:1
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level. This member does not provide access to the elements at the instance level."
+msgid "A MeshElementArray object specifying all the elements existing at the assembly level. This member does not provide access to the elements at the instance level."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:4
@@ -2199,11 +2199,11 @@ msgid "Check `Assembly.getFacesAndVerticesOfAttachmentLines on help.3ds.com/2019
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:9
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object which is a sequence of Edge objects."
+msgid "An EdgeArray object which is a sequence of Edge objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:11
-msgid "A tuple of dictionary objects. Each dictionary contains five items with the following keys:  - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line. - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the   attachment line. - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of   the attachment line. - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`   object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace. - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`   object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
+msgid "A tuple of dictionary objects. Each dictionary contains five items with the following keys:  - **edge**: An Edge object specifying the attachment line. - **startFace**: A Face object specifying the face associated with one end of the   attachment line. - **endFace**: A Face object specifying the face associated with the other end of   the attachment line. - **startVertex**: A ConstrainedSketchVertex   object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace. - **endVertex**: A ConstrainedSketchVertex   object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:11
@@ -2211,23 +2211,23 @@ msgid "A tuple of dictionary objects. Each dictionary contains five items with t
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:13
-msgid "**edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line."
+msgid "**edge**: An Edge object specifying the attachment line."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:14
-msgid "**startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the attachment line."
+msgid "**startFace**: A Face object specifying the face associated with one end of the attachment line."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:16
-msgid "**endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of the attachment line."
+msgid "**endFace**: A Face object specifying the face associated with the other end of the attachment line."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:18
-msgid "**startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace."
+msgid "**startVertex**: A ConstrainedSketchVertex object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
-msgid "**endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
+msgid "**endVertex**: A ConstrainedSketchVertex object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
@@ -2388,7 +2388,7 @@ msgid "A sequence of PartInstance objects to convert to independent part instanc
 msgstr ""
 
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.nodes:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level. This member does not provide access to the nodes at the instance level."
+msgid "A MeshNodeArray object specifying all the nodes existing at the assembly level. This member does not provide access to the nodes at the instance level."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:1
@@ -2408,7 +2408,7 @@ msgid "A SymbolicConstant specifying how to limit the amount of projection. Poss
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:16
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, all part entities are candidates for projection."
+msgid "A Feature object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, all part entities are candidates for projection."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:21
@@ -2550,7 +2550,7 @@ msgid "This method unlocks the assembly. Unlocking the assembly allows it to be 
 msgstr ""
 
 #: ../../docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.vertices:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level. This member does not provide access to the vertices at the instance level."
+msgid "A VertexArray object specifying all the vertices existing at the assembly level. This member does not provide access to the vertices at the instance level."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:5
@@ -2596,7 +2596,7 @@ msgid ":py:obj:`localCsys1 <abaqus.Assembly.ConnectorOrientation.ConnectorOrient
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the first connector point."
+msgid "A DatumCsys object specifying the local coordinate system of the first connector point."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -2628,7 +2628,7 @@ msgid ":py:obj:`localCsys2 <abaqus.Assembly.ConnectorOrientation.ConnectorOrient
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the second connector point."
+msgid "A DatumCsys object specifying the local coordinate system of the second connector point."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -2737,7 +2737,7 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:17
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:22
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:22
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+msgid "A Feature object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:65
@@ -2782,7 +2782,7 @@ msgstr ""
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:19
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.Contact:21
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:20
-msgid "**feature** -- A :py:class:`~abaqus.Feature.Feature.Feature` object"
+msgid "**feature** -- A Feature object"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:10
@@ -2857,7 +2857,7 @@ msgid "Check `ParallelFace on help.3ds.com/2019 <https://help.3ds.com/2019/Engli
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:1
-msgid "A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model."
+msgid "A ModelInstance object is an instance of a Model."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:10
@@ -2888,7 +2888,7 @@ msgstr ""
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.vertices:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.vertices:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object."
+msgid "A VertexArray object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -2899,7 +2899,7 @@ msgstr ""
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.edges:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.edges:1
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object."
+msgid "An EdgeArray object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -2910,7 +2910,7 @@ msgstr ""
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.elements:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.elements:1
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object."
+msgid "A MeshElementArray object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -2921,7 +2921,7 @@ msgstr ""
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.ModelInstance.ModelInstance.nodes:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.nodes:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object."
+msgid "A MeshNodeArray object."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -3001,7 +3001,8 @@ msgid "The repository key. The name must be a valid Abaqus object name."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.__init__:14
-msgid "A :py:class:`~abaqus.Model.Model.Model` object to be instanced. If the model does not exist, no ModelInstance object is created."
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:10
+msgid "A Model object to be instanced. If the model does not exist, no ModelInstance object is created."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.__init__:17
@@ -3009,7 +3010,7 @@ msgid "A Boolean specifying whether to apply an auto offset to the new instance 
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.__init__:20
-msgid "A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object."
+msgid "A ModelInstance object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.__init__:21
@@ -3022,10 +3023,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:7
 msgid "Check `ModelInstance.replace on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all#simaker-modelinstancereplacepyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:10
-msgid "A Model object to be instanced. If the model does not exist, no ModelInstance object is created."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.replace:13
@@ -3046,7 +3043,7 @@ msgid "Check `ModelInstance.translate on help.3ds.com/2019 <https://help.3ds.com
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object."
+msgid "A PartInstance object is an instance of a Part object."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:11
@@ -3103,7 +3100,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.part:1
-msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part."
+msgid "A Part object specifying the instanced part."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3148,7 +3145,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.ignoredVertices:1
-msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object."
+msgid "An IgnoredVertexArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3161,7 +3158,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.ignoredEdges:1
-msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object."
+msgid "An IgnoredEdgeArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3170,7 +3167,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.faces:1
-msgid "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object."
+msgid "A FaceArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3179,7 +3176,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.cells:1
-msgid "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object."
+msgid "A CellArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3208,7 +3205,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.elementFaces:1
-msgid "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object."
+msgid "A MeshFaceArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3225,7 +3222,7 @@ msgstr ""
 
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Assembly.PartInstance.PartInstance.elementEdges:1
-msgid "A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object."
+msgid "A MeshEdgeArray object."
 msgstr ""
 
 #: ../../None:28:<autosummary>:1
@@ -3463,7 +3460,8 @@ msgid "A sequence of three Floats specifying a vector along the second direction
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:33
-msgid "A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects."
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:30
+msgid "A sequence of PartInstance objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:34
@@ -3491,16 +3489,12 @@ msgstr ""
 msgid "A sequence of three Floats specifying the central axis of the radial pattern. The default value is (0.0, 0.0, 1.0)."
 msgstr ""
 
-#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:30
-msgid "A sequence of PartInstance objects."
-msgstr ""
-
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.__init__:9
 msgid "Check `PartInstance.__init__ on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all#simaker-partinstance__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.__init__:14
-msgid "A :py:class:`~abaqus.Part.Part.Part` object to be instanced. If the part does not exist, no PartInstance object is created."
+msgid "A Part object to be instanced. If the part does not exist, no PartInstance object is created."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.__init__:17
@@ -3573,7 +3567,7 @@ msgid "Check `PartInstance.replace on help.3ds.com/2019 <https://help.3ds.com/20
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.replace:7
-msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying which Part will be instanced in place of the original Part."
+msgid "A Part object specifying which Part will be instanced in place of the original Part."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:4

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -234,7 +234,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -419,7 +419,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -891,7 +891,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/Parameter.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter.__init__:28
 #: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch:27
-msgid "**sketch** -- A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object."
+msgid "**sketch** -- A ConstrainedSketch object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.ConstrainedSketchFromGeometryFile:0
@@ -1010,7 +1010,7 @@ msgid ":py:obj:`geometry <abaqus.Sketcher.ConstrainedSketchBase.ConstrainedSketc
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines, arcs, circles, and splines."
+msgid "A ConstrainedSketchGeometryArray object specifying the sketch geometry, such as lines, arcs, circles, and splines."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -1026,7 +1026,7 @@ msgid ":py:obj:`sketchOptions <abaqus.Sketcher.ConstrainedSketchBase.Constrained
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings."
+msgid "A ConstrainedSketchOptions object specifying the sketch option settings."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -1034,7 +1034,7 @@ msgid ":py:obj:`vertices <abaqus.Sketcher.ConstrainedSketchBase.ConstrainedSketc
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object."
+msgid "A ConstrainedSketchVertexArray object."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -1042,7 +1042,7 @@ msgid ":py:obj:`imageOptions <abaqus.Sketcher.ConstrainedSketchBase.ConstrainedS
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object."
+msgid "A ConstrainedSketchImageOptions object."
 msgstr ""
 
 #: ../../None:35:<autosummary>:1
@@ -1633,7 +1633,7 @@ msgid "This method creates a spot (construction point) located at the specified 
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.ConstrainedSketchFromGeometryFile:11
-msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object specifying a file containing geometry. The geometry in the file is converted to two-dimensional sketch geometry in the **X - Y** plane."
+msgid "An AcisFile object specifying a file containing geometry. The geometry in the file is converted to two-dimensional sketch geometry in the **X - Y** plane."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.ConstrainedSketchFromGeometryFile:14
@@ -1648,7 +1648,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.PerpendicularConstraint:18
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.TangentConstraint:17
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.VerticalConstraint:15
-msgid "**sketch** -- A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object"
+msgid "**sketch** -- A ConstrainedSketch object"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.assignCenterOfTwist:5
@@ -1656,7 +1656,7 @@ msgid "Check `ConstrainedSketch.assignCenterOfTwist on help.3ds.com/2019 <https:
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.assignCenterOfTwist:8
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying an isolated point that indicates the center of twist for extruded features that use a twist angle."
+msgid "A ConstrainedSketchVertex object specifying an isolated point that indicates the center of twist for extruded features that use a twist angle."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.assignCenterline:5
@@ -1664,7 +1664,7 @@ msgid "Check `ConstrainedSketch.assignCenterline on help.3ds.com/2019 <https://h
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.assignCenterline:8
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying a construction line that indicates the centerline of revolved features."
+msgid "A ConstrainedSketchGeometry object specifying a construction line that indicates the centerline of revolved features."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.autoDimension:5
@@ -1704,7 +1704,7 @@ msgid "Check `ConstrainedSketch.breakCurve on help.3ds.com/2019 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.breakCurve:11
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the object to be broken."
+msgid "A ConstrainedSketchGeometry object specifying the object to be broken."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.breakCurve:13
@@ -1712,7 +1712,7 @@ msgid "A pair of Floats specifying the location on **curve1** near where the bre
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.breakCurve:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying where **curve1** should be broken."
+msgid "A ConstrainedSketchGeometry object specifying where **curve1** should be broken."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.breakCurve:18
@@ -1724,7 +1724,7 @@ msgid "Check `ConstrainedSketch.copyMirror on help.3ds.com/2019 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.copyMirror:9
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line about which Abaqus will mirror the sketch."
+msgid "A ConstrainedSketchGeometry object specifying the line about which Abaqus will mirror the sketch."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.copyMirror:12
@@ -1992,7 +1992,7 @@ msgid "Check `ConstrainedSketch.retrieveSketch on help.3ds.com/2019 <https://hel
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.retrieveSketch:11
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the object from which to copy."
+msgid "A ConstrainedSketch object specifying the object from which to copy."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.rotate:5
@@ -2124,7 +2124,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel:1
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are contained in their respective repositories."
+msgid "A ConstrainedSketch object contains the entities that are used to create a sketch. The objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are contained in their respective repositories."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel:13
@@ -2142,12 +2142,12 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint.__init__:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.CoincidentConstraint:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the first object."
+msgid "A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the first object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint.__init__:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.CoincidentConstraint:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the second object."
+msgid "A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the second object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint.__init__:1
@@ -2161,12 +2161,12 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint.__init__:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.ConcentricConstraint:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc, circle, ellipse, or sketch vertex."
+msgid "A ConstrainedSketchGeometry object specifying the first arc, circle, ellipse, or sketch vertex."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint.__init__:18
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.ConcentricConstraint:18
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second arc, circle, ellipse, or sketch vertex."
+msgid "A ConstrainedSketchGeometry object specifying the second arc, circle, ellipse, or sketch vertex."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualDistanceConstraint:1
@@ -2185,12 +2185,12 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualDistanceConstraint:19
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualDistanceConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint.__init__:18
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line or ConstrainedSketchVertex object."
+msgid "A ConstrainedSketchGeometry object specifying the second line or ConstrainedSketchVertex object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualDistanceConstraint:21
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualDistanceConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint.__init__:20
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the vertex that will be positioned an equal distance from **entity1** and **entity2**."
+msgid "A ConstrainedSketchVertex object specifying the vertex that will be positioned an equal distance from **entity1** and **entity2**."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualLengthConstraint:1
@@ -2208,7 +2208,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ParallelConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint.__init__:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension.__init__:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.AngularDimension:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first line."
+msgid "A ConstrainedSketchGeometry object specifying the first line."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualLengthConstraint:15
@@ -2217,7 +2217,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ParallelConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint.__init__:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension.__init__:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.AngularDimension:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second line."
+msgid "A ConstrainedSketchGeometry object specifying the second line."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualRadiusConstraint:1
@@ -2231,7 +2231,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualRadiusConstraint:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualRadiusConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint.__init__:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first arc or circle."
+msgid "A ConstrainedSketchGeometry object specifying the first arc or circle."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.EqualRadiusConstraint:15
@@ -2250,7 +2250,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.FixedConstraint:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/FixedConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.FixedConstraint.FixedConstraint.__init__:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object or a ConstrainedSketchVertex object specifying the item to fix in space."
+msgid "A ConstrainedSketchGeometry object or a ConstrainedSketchVertex object specifying the item to fix in space."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.HorizontalConstraint:1
@@ -2266,7 +2266,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.VerticalConstraint:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/HorizontalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint.__init__:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/VerticalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint.__init__:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line to constrain."
+msgid "A ConstrainedSketchGeometry object specifying the line to constrain."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.ParallelConstraint:1
@@ -2291,14 +2291,14 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.TangentConstraint:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint.__init__:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/TangentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint.__init__:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first object."
+msgid "A ConstrainedSketchGeometry object specifying the first object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.PerpendicularConstraint:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.TangentConstraint:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint.__init__:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/TangentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint.__init__:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second object."
+msgid "A ConstrainedSketchGeometry object specifying the second object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel.TangentConstraint:1
@@ -2368,7 +2368,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.ObliqueDimension:24
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.RadialDimension:29
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.VerticalDimension:24
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object"
+msgid "A ConstrainedSketchDimension object"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.AngularDimension:25
@@ -2393,7 +2393,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.DistanceDimension:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension.__init__:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension.__init__:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object."
+msgid "A ConstrainedSketchVertex object or ConstrainedSketchGeometry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.HorizontalDimension:1
@@ -2411,7 +2411,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/HorizontalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension.__init__:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ObliqueDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension.__init__:13
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension.__init__:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the first endpoint."
+msgid "A ConstrainedSketchVertex object specifying the first endpoint."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.HorizontalDimension:16
@@ -2420,7 +2420,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/HorizontalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension.__init__:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ObliqueDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension.__init__:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension.__init__:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying the second endpoint."
+msgid "A ConstrainedSketchVertex object specifying the second endpoint."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.HorizontalDimension:20
@@ -2460,7 +2460,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.RadialDimension:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/RadialDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension.__init__:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the circular or elliptical arc."
+msgid "A ConstrainedSketchGeometry object specifying the circular or elliptical arc."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.RadialDimension:18
@@ -2529,7 +2529,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.Line:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.Spline:18
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.Spot:15
-msgid "**geometry** -- A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object"
+msgid "**geometry** -- A ConstrainedSketchGeometry object"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points.__init__:20
@@ -2691,7 +2691,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.FilletByRadius:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/FilletByRadius.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius.__init__:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first curve."
+msgid "A ConstrainedSketchGeometry object specifying the first curve."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.FilletByRadius:17
@@ -2701,7 +2701,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.FilletByRadius:21
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/FilletByRadius.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius.__init__:21
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second curve."
+msgid "A ConstrainedSketchGeometry object specifying the second curve."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel.FilletByRadius:23
@@ -2813,7 +2813,7 @@ msgid "A String specifying the name of the previous ConstrainedSketchParameter, 
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel.ConstrainedSketchParameter:26
-msgid "**obj** -- A :py:class:`~abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameter.ConstrainedSketchParameter` object"
+msgid "**obj** -- A ConstrainedSketchParameter object"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel.ConstrainedSketchParameter:27
@@ -2831,7 +2831,7 @@ msgid "A pair of Floats specifying the coordinates of the construction point."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel.Spot:14
-msgid "**vertex** -- A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created)"
+msgid "**vertex** -- A ConstrainedSketchVertex object (None if the spot cannot be created)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex.Spot:15
@@ -2874,7 +2874,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint.__init__:18
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/TangentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint.__init__:17
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/VerticalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint.__init__:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint` object."
+msgid "A ConstrainedSketchConstraint object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint.__init__:19
@@ -3011,7 +3011,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ObliqueDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension.__init__:24
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/RadialDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension.__init__:29
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension.__init__:24
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimension.ConstrainedSketchDimension` object (None if the dimension cannot be created)."
+msgid "A ConstrainedSketchDimension object (None if the dimension cannot be created)."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension.__init__:25
@@ -3032,7 +3032,7 @@ msgid "Check `DistanceDimension.__init__ on help.3ds.com/2019 <https://help.3ds.
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension.__init__:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or ConstrainedSketchGeometry object.  .. versionchanged:: 2017     The `vertex2` argument was renamed to `entity2`."
+msgid "A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.  .. versionchanged:: 2017     The `vertex2` argument was renamed to `entity2`."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension.__init__:18
@@ -3446,7 +3446,7 @@ msgid "A Boolean specifying whether a message is to be printed to the CLI if no 
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryArray.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray.findAt:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object."
+msgid "A ConstrainedSketchGeometry object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points:1
@@ -3475,7 +3475,7 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points.__init__:19
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByCenterEnds.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds.__init__:26
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByStartEndTangent.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent.__init__:19
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the arc cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3516,7 +3516,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/CircleByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.CircleByCenterPerimeter.CircleByCenterPerimeter.__init__:17
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionCircleByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter.__init__:18
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the circle cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the circle cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3537,7 +3537,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionLine.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionLine.ConstructionLine.__init__:16
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Line.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line.__init__:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the line cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the line cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3549,7 +3549,7 @@ msgid "Check `EllipseByCenterPerimeter.__init__ on help.3ds.com/2019 <https://he
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/EllipseByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter.__init__:20
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the ellipse cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the ellipse cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3561,7 +3561,7 @@ msgid "Check `FilletByRadius.__init__ on help.3ds.com/2019 <https://help.3ds.com
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/FilletByRadius.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius.__init__:27
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the fillet cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the fillet cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3597,7 +3597,7 @@ msgid "A Boolean that determines whether the points given are to constrained to 
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Spline.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Spline.Spline.__init__:18
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spline cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the spline cannot be created)."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3610,7 +3610,7 @@ msgid "Check `Spot.__init__ on help.3ds.com/2019 <https://help.3ds.com/2019/Engl
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot.__init__:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spot cannot be created)."
+msgid "A ConstrainedSketchGeometry object (None if the spot cannot be created)."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions:1
@@ -3865,7 +3865,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex.Spot:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot.__init__:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created)."
+msgid "A ConstrainedSketchVertex object (None if the spot cannot be created)."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexArray.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray:1
@@ -3894,7 +3894,7 @@ msgid "Check `ConstrainedSketchVertexArray.findAt on help.3ds.com/2019 <https://
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexArray.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray.findAt:12
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object."
+msgid "A ConstrainedSketchVertex object."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot:1
