@@ -391,10 +391,10 @@ class View:
         """This method modifies the View object.
 
         .. note::
-            This method is not available for a :py:class:`~abaqus.Canvas.Layer.Layer` View.
+            This method is not available for a Layer View.
 
         The optional arguments to `setValues` are the same as the arguments to the
-        :py:class:`~abaqus.UtilityAndView.View.View` method, except for the `name`
+        View method, except for the `name`
         and `autoFit` arguments. In addition, `setValues` has the following optional
         arguments:
 

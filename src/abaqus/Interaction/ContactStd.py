@@ -58,11 +58,7 @@ class ContactStd(Interaction):
     #: the contact domain.
     surfaceOffsetAssignments: SurfaceOffsetAssignment = SurfaceOffsetAssignment()
 
-<<<<<<< HEAD
-    #: A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-    #: A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+    #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
 
@@ -148,36 +144,8 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments
             A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
-<<<<<<< HEAD
         masterSlaveAssignments
-            A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
+            A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
@@ -235,32 +203,6 @@ class ContactStd(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
-<<<<<<< HEAD
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of :py:class:`~abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment` specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
->>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.
