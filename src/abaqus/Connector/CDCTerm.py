@@ -35,7 +35,7 @@ class CDCTerm:
             session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].derivedComponent.cdcTerms[i]
     """
 
-    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for this ConnectorBehaviorOption.
     options: ConnectorOptions = ConnectorOptions()
 
@@ -159,7 +159,7 @@ class CDCTerm:
         Returns
         -------
         CDCTerm
-            A :py:class:`~abaqus.Connector.CDCTerm.CDCTerm` object.
+            A CDCTerm object.
 
         Raises
         ------
@@ -249,7 +249,7 @@ class CDCTerm:
         Returns
         -------
         ConnectorOptions
-            A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object.
+            A ConnectorOptions object.
 
         Raises
         ------

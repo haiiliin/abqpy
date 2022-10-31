@@ -60,7 +60,7 @@ class SmoothStepAmplitude(Amplitude):
         Returns
         -------
         SmoothStepAmplitude
-            A :py:class:`~abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude` object.
+            A SmoothStepAmplitude object.
 
         Raises
         ------

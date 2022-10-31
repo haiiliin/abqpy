@@ -175,7 +175,7 @@ class Path:
         Returns
         -------
         Path
-            A :py:class:`~abaqus.PathAndProbe.Path.Path` object.
+            A Path object.
 
         Raises
         ------

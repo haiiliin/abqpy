@@ -34,7 +34,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         Returns
         -------
         ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created).
+            A ConstrainedSketchGeometry object (None if the arc cannot be created).
 
         Raises
         ------

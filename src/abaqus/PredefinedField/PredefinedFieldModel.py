@@ -62,7 +62,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         FluidCavityPressure
-            A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
+            A FluidCavityPressure object.
         """
         self.predefinedFields[name] = predefinedField = FluidCavityPressure(name, fluidCavity, fluidPressure)
         return predefinedField
@@ -89,7 +89,7 @@ class PredefinedFieldModel(ModelBase):
         name
             A String specifying the repository key.
         instances
-            A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the instances to which the predefined field is
+            A PartInstanceArray object specifying the instances to which the predefined field is
             applied.
         fileName
             A String specifying the name of the job that generated the initial state data.
@@ -108,7 +108,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         InitialState
-            An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object.
+            An InitialState object.
         """
         self.predefinedFields[name] = predefinedField = InitialState(
             name,
@@ -147,7 +147,7 @@ class PredefinedFieldModel(ModelBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+            A Region object specifying the region to which the predefined field is applied.
         numBackStress
             An Int specifying the number of backstresses. The default value is 1.
         equivPlasticStrain
@@ -172,7 +172,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         KinematicHardening
-            A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object.
+            A KinematicHardening object.
         """
         self.predefinedFields[name] = predefinedField = KinematicHardening(
             name,
@@ -209,7 +209,7 @@ class PredefinedFieldModel(ModelBase):
         name
             A String specifying the repository key.
         instanceList
-            A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field
+            A PartInstanceArray object specifying the part instances to which the predefined field
             is applied. All instances must be assigned the same Eulerian section.
         useFields
             A Boolean specifying whether the volume fraction data will be uniform or defined by
@@ -234,7 +234,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         MaterialAssignment
-            A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object.
+            A MaterialAssignment object.
         """
         self.predefinedFields[name] = predefinedField = MaterialAssignment(
             name, instanceList, useFields, assignmentList, fieldList, colorList
@@ -370,7 +370,7 @@ class PredefinedFieldModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the predefined field is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region**
+            A Region object specifying the region to which the predefined field is applied. **Region**
             is ignored if the predefined field has a **distributionType** member available, and
             **distributionType** = FROM_FILE .
         distributionType
@@ -451,7 +451,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         Temperature
-            A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object.
+            A Temperature object.
         """
         self.predefinedFields[name] = predefinedField = Temperature(
             name,
@@ -499,7 +499,7 @@ class PredefinedFieldModel(ModelBase):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied.
+            A Region object specifying the region to which the predefined field is applied.
         velocity1
             A Float specifying the first component of the velocity.
         velocity2
@@ -525,7 +525,7 @@ class PredefinedFieldModel(ModelBase):
         Returns
         -------
         Velocity
-            A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object.
+            A Velocity object.
         """
         self.predefinedFields[name] = predefinedField = Velocity(
             name,

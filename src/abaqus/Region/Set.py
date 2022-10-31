@@ -56,34 +56,34 @@ class Set(Region):
             mdb.models[name].rootAssembly.sets[name]
     """
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A MeshNodeArray object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A VertexArray object.
     vertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An EdgeArray object.
     edges: EdgeArray = EdgeArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A FaceArray object.
     faces: FaceArray = FaceArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+    #: A CellArray object.
     cells: CellArray = CellArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A VertexArray object.
     xVertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An EdgeArray object.
     xEdges: EdgeArray = EdgeArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A FaceArray object.
     xFaces: FaceArray = FaceArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
+    #: A ReferencePointArray object.
     referencePoints: ReferencePointArray = []
 
     @overload
@@ -131,7 +131,7 @@ class Set(Region):
         elements
             A sequence of MeshElement objects. The default value is None.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
+            A Region object specifying other objects to be included in the set. The default value is
             None.
         vertices
             A sequence of ConstrainedSketchVertex objects. The default value is None.
@@ -165,7 +165,7 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -185,12 +185,12 @@ class Set(Region):
         name
             A String specifying the name of the set.
         objectToCopy
-            A :py:class:`~abaqus.Region.Set.Set` object to be copied.
+            A Set object to be copied.
 
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -224,7 +224,7 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -253,7 +253,7 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -284,7 +284,7 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -315,7 +315,7 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -343,6 +343,6 @@ class Set(Region):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
+            A Set object or a tuple of Set objects.
         """
         ...

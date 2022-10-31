@@ -8,7 +8,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
-    """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
@@ -42,7 +42,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -74,7 +74,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
 
         Raises
         ------
@@ -104,7 +104,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -128,7 +128,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -153,7 +153,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -182,7 +182,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -208,13 +208,13 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         radius
             A Float specifying the radius of the fillet arc. Possible values are Floats > 0.
         curve1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the first curve.
+            A ConstrainedSketchGeometry object specifying the first curve.
         nearPoint1
             A pair of Floats specifying a point on the sketch near where the user wishes the fillet
             to intersect with **curve1**. This point does not need to be on*curve1*; it is used as a
             hint to draw the fillet.
         curve2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the second curve.
+            A ConstrainedSketchGeometry object specifying the second curve.
         nearPoint2
             A pair of Floats specifying a point on the sketch near where the user wishes the fillet
             to intersect with **curve2**. This point does not need to be on **curve2**; it is used as a
@@ -223,7 +223,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
 
         Raises
         ------
@@ -251,7 +251,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -274,7 +274,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -299,7 +299,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 
@@ -321,7 +321,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         Returns
         -------
         geometry: ConstrainedSketchGeometry
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object
+            A ConstrainedSketchGeometry object
         """
         ...
 

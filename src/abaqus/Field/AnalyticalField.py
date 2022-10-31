@@ -47,7 +47,7 @@ class AnalyticalField(Field):
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
-    #: An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
+    #: An OdbMeshRegionData object.
     odbMeshRegionData: OdbMeshRegionData = OdbMeshRegionData("", "")
 
     @abaqus_method_doc
@@ -252,7 +252,7 @@ class AnalyticalField(Field):
         Returns
         -------
         OdbMeshRegionData
-            An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object.
+            An OdbMeshRegionData object.
 
         Raises
         ------

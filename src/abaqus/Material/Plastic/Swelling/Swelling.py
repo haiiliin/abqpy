@@ -31,7 +31,7 @@ class Swelling:
         - SWELLING
     """
 
-    #: A :py:class:`~abaqus.Material.Ratios.Ratios` object.
+    #: A Ratios object.
     ratios: Ratios = Ratios(((),))
 
     @abaqus_method_doc
@@ -66,7 +66,7 @@ class Swelling:
         Returns
         -------
         Swelling
-            A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
+            A Swelling object.
 
         Raises
         ------

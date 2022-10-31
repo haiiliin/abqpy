@@ -100,7 +100,7 @@ class GeometryShellSection(ShellSection):
     #: value is an empty string.
     thicknessField: str = ""
 
-    #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
+    #: A RebarLayers object specifying reinforcement properties.
     rebarLayers: RebarLayers = RebarLayers(CONSTANT, [])
 
     #: A String specifying the name of the AnalyticalField or DiscreteField object used to
@@ -109,7 +109,7 @@ class GeometryShellSection(ShellSection):
     #: **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
     nodalThicknessField: str = ""
 
-    #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
+    #: A TransverseShearShell object specifying the transverse shear stiffness properties.
     transverseShear: Optional[TransverseShearShell] = None
 
     @abaqus_method_doc
@@ -190,7 +190,7 @@ class GeometryShellSection(ShellSection):
         Returns
         -------
         GeometryShellSection
-            A :py:class:`~abaqus.Section.GeometryShellSection.GeometryShellSection` object.
+            A GeometryShellSection object.
         """
         ...
 
@@ -211,12 +211,12 @@ class GeometryShellSection(ShellSection):
             A SymbolicConstant specifying the type of rebar geometry. Possible values are CONSTANT,
             ANGULAR, and LIFT_EQUATION.
         layerTable
-            A :py:class:`~abaqus.Section.LayerPropertiesArray.LayerPropertiesArray` object specifying the layers of reinforcement.
+            A LayerPropertiesArray object specifying the layers of reinforcement.
 
         Returns
         -------
         RebarLayers
-            A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object.
+            A RebarLayers object.
         """
         self.rebarLayers = rebarLayers = RebarLayers(rebarSpacing, layerTable)
         return rebarLayers

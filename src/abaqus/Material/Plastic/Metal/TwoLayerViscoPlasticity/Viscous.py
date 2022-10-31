@@ -44,7 +44,7 @@ class Viscous:
         - VISCOUS
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.Potential.Potential` object.
+    #: A Potential object.
     potential: Potential = Potential(((),))
 
     @abaqus_method_doc
@@ -81,7 +81,7 @@ class Viscous:
         Returns
         -------
         Viscous
-            A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
+            A Viscous object.
         """
         ...
 

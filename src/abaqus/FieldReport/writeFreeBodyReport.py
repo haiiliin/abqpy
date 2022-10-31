@@ -44,7 +44,7 @@ def writeFreeBodyReport(
         from all active frames. Possible values are SPECIFY and ALL. The default value is
         SPECIFY.
     odb
-        An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read.
+        An Odb object specifying the output database from which data will be read.
 
     Returns
     -------

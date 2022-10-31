@@ -78,7 +78,7 @@ class Sorption:
         Returns
         -------
         Sorption
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption` object.
+            A Sorption object.
 
         Raises
         ------

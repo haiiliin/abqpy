@@ -28,7 +28,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PartInstance:
-    """A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object.
+    """A PartInstance object is an instance of a Part object.
 
     .. note::
         This object can be accessed by::
@@ -64,7 +64,7 @@ class PartInstance:
     #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
     referenceNode: Optional[int] = None
 
-    #: A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part.
+    #: A Part object specifying the instanced part.
     part: Optional[Part] = None
 
     #: A repository of Set objects specifying the sets created on the part. For more
@@ -87,31 +87,31 @@ class PartInstance:
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     stringers: Dict[str, Stringer] = {}
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A VertexArray object.
     vertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object.
+    #: An IgnoredVertexArray object.
     ignoredVertices: IgnoredVertexArray = []
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An EdgeArray object.
     edges: EdgeArray = EdgeArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object.
+    #: An IgnoredEdgeArray object.
     ignoredEdges: IgnoredEdgeArray = []
 
-    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object.
+    #: A FaceArray object.
     faces: FaceArray = FaceArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object.
+    #: A CellArray object.
     cells: CellArray = CellArray([])
 
     #: A repository of Datum objects.
     datums: List[Datum] = []
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A MeshNodeArray object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of MeshFace objects specifying all the element faces in the part instance.
@@ -120,7 +120,7 @@ class PartInstance:
     #: + j), where i and j are zero-based element and face indices, respectively.
     elemFaces: Dict[str, MeshFace] = {}
 
-    #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
+    #: A MeshFaceArray object.
     elementFaces: MeshFaceArray = MeshFaceArray([])
 
     #: A repository of MeshEdge objects specifying all the element edges in the part instance.
@@ -130,7 +130,7 @@ class PartInstance:
     #: indices, respectively.
     elemEdges: Dict[str, MeshEdge] = {}
 
-    #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
+    #: A MeshEdgeArray object.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     #: A repository of ReferencePoint objects.
@@ -153,7 +153,7 @@ class PartInstance:
         name
             A String specifying the repository key. The name must be a valid Abaqus object name.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object to be instanced. If the part does not exist, no PartInstance object is
+            A Part object to be instanced. If the part does not exist, no PartInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new part instance that will
@@ -165,7 +165,7 @@ class PartInstance:
         Returns
         -------
         PartInstance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+            A PartInstance object.
         """
         self.vertices = part.vertices
         self.ignoredEdges = part.ignoredEdges
@@ -217,7 +217,7 @@ class PartInstance:
         Returns
         -------
         PartInstance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+            A PartInstance object.
         """
         ...
 
@@ -275,7 +275,7 @@ class PartInstance:
         Returns
         -------
         PartInstance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+            A PartInstance object.
         """
         ...
 
@@ -324,7 +324,7 @@ class PartInstance:
         Returns
         -------
         Sequence[PartInstance]
-            A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
+            A sequence of PartInstance objects.
         """
         ...
 
@@ -428,7 +428,7 @@ class PartInstance:
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object
+            A Feature object
         """
         ...
 
@@ -479,7 +479,7 @@ class PartInstance:
         Parameters
         ----------
         instanceOf
-            A :py:class:`~abaqus.Part.Part.Part` object specifying which Part will be instanced in place of the original Part.
+            A Part object specifying which Part will be instanced in place of the original Part.
         applyConstraints
             A Boolean specifying whether to apply existing constraints on the new instance or to
             position the new instance in the same place as the original instance. The default value
@@ -546,6 +546,6 @@ class PartInstance:
         Returns
         -------
         feature: Feature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object
+            A Feature object
         """
         ...

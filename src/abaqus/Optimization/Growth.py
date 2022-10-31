@@ -20,7 +20,7 @@ class Growth(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
     #: the default value is MODEL.
     region: Region
@@ -58,7 +58,7 @@ class Growth(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         growth
@@ -74,7 +74,7 @@ class Growth(GeometricRestriction):
         Returns
         -------
         Growth
-            A :py:class:`~abaqus.Optimization.Growth.Growth` object.
+            A Growth object.
         """
         super().__init__()
 

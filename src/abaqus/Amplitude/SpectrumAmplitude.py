@@ -151,7 +151,7 @@ class SpectrumAmplitude(Amplitude):
         Returns
         -------
         SpectrumAmplitude
-            A :py:class:`~abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude` object.
+            A SpectrumAmplitude object.
 
         Raises
         ------

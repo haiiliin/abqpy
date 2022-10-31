@@ -23,7 +23,7 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexArray import (
 
 @abaqus_class_doc
 class ConstrainedSketchBase:
-    """A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object contains the entities that are used to create a sketch. The
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
     objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
@@ -41,7 +41,7 @@ class ConstrainedSketchBase:
     #: A repository of ConstrainedSketchDimension objects.
     dimensions: Dict[str, ConstrainedSketchDimension] = {}
 
-    #: A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
+    #: A ConstrainedSketchGeometryArray object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
     geometry: ConstrainedSketchGeometryArray = []
 
@@ -49,11 +49,11 @@ class ConstrainedSketchBase:
     #: may be associated with dimensions.
     parameters: Dict[str, ConstrainedSketchParameter] = {}
 
-    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
+    #: A ConstrainedSketchOptions object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
 
-    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray` object.
+    #: A ConstrainedSketchVertexArray object.
     vertices: ConstrainedSketchVertexArray = []
 
-    #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions` object.
+    #: A ConstrainedSketchImageOptions object.
     imageOptions: ConstrainedSketchImageOptions = ConstrainedSketchImageOptions()

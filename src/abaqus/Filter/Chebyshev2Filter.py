@@ -112,7 +112,7 @@ class Chebyshev2Filter(Filter):
         Returns
         -------
         Chebyshev2Filter
-            A :py:class:`~abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter` object.
+            A Chebyshev2Filter object.
 
         Raises
         ------

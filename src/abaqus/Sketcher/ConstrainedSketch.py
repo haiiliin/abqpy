@@ -74,7 +74,7 @@ class ConstrainedSketch(
         Returns
         -------
         sketch: ConstrainedSketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
+            A ConstrainedSketch object
         """
         ...
 
@@ -97,12 +97,12 @@ class ConstrainedSketch(
         name
             A String specifying the repository key.
         objectToCopy
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object to be copied.
+            A ConstrainedSketch object to be copied.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
+            A ConstrainedSketch object
         """
         ...
 
@@ -123,13 +123,13 @@ class ConstrainedSketch(
         name
             A String specifying the repository key.
         geometryFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object specifying a file containing geometry. The geometry in the file is
+            An AcisFile object specifying a file containing geometry. The geometry in the file is
             converted to two-dimensional sketch geometry in the **X - Y** plane.
 
         Returns
         -------
         sketch: ConstrainedSketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
+            A ConstrainedSketch object
         """
         ...
 
@@ -151,7 +151,7 @@ class ConstrainedSketch(
         Parameters
         ----------
         line
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying a construction line that indicates the
+            A ConstrainedSketchGeometry object specifying a construction line that indicates the
             centerline of revolved features.
         """
         ...
@@ -164,7 +164,7 @@ class ConstrainedSketch(
         Parameters
         ----------
         point
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object specifying an isolated point that indicates the center
+            A ConstrainedSketchVertex object specifying an isolated point that indicates the center
             of twist for extruded features that use a twist angle.
         """
         ...
@@ -217,12 +217,12 @@ class ConstrainedSketch(
         Parameters
         ----------
         curve1
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the object to be broken.
+            A ConstrainedSketchGeometry object specifying the object to be broken.
         point1
             A pair of Floats specifying the location on **curve1** near where the break should be
             applied.
         curve2
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying where **curve1** should be broken.
+            A ConstrainedSketchGeometry object specifying where **curve1** should be broken.
         point2
             A pair of Floats specifying the location on **curve2** near where **curve1** should be
             broken.
@@ -242,7 +242,7 @@ class ConstrainedSketch(
         Parameters
         ----------
         mirrorLine
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object specifying the line about which Abaqus will mirror
+            A ConstrainedSketchGeometry object specifying the line about which Abaqus will mirror
             the sketch.
         objectList
             A sequence of ConstrainedSketchGeometry objects specifying the sketch to be copied and
@@ -567,7 +567,7 @@ class ConstrainedSketch(
         Parameters
         ----------
         sketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the object from which to copy.
+            A ConstrainedSketch object specifying the object from which to copy.
         """
         ...
 
