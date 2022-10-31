@@ -45,7 +45,7 @@ class Section(ConnectorSection):
         Returns
         -------
         TransverseShearBeam
-            A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object.
+            A TransverseShearBeam object.
         """
         self.beamTransverseShear = transverseShearBeam = TransverseShearBeam(
             scfDefinition, k23, k13, slendernessCompensation
@@ -74,7 +74,7 @@ class Section(ConnectorSection):
         Returns
         -------
         TransverseShearShell
-            A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
+            A TransverseShearShell object.
         """
         self.transverseShear = transverseShearShell = TransverseShearShell(k11, k22, k12)
         return transverseShearShell

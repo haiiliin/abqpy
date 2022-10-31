@@ -32,7 +32,7 @@ class RegisteredTuple(CommandRegister, tuple):
         Returns
         -------
         RegisteredTuple
-            A :py:class:`~abaqus.CustomKernel.RegisteredTuple.RegisteredTuple` object.
+            A RegisteredTuple object.
         """
         super().__init__()
 

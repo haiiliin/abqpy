@@ -24,12 +24,12 @@ class DrillControl(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the drill axis positioned
+    #: A VertexArray object of length 2 specifying the direction of the drill axis positioned
     #: at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point may be specified through a
     #: tuple of coordinates.
     clientDirection: tuple
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     #: When used with a TopologyTask, there is no default value. When used with a ShapeTask,
     #: the default value is MODEL.
     region: Region
@@ -97,11 +97,11 @@ class DrillControl(GeometricRestriction):
         name
             A String specifying the geometric restriction repository key.
         clientDirection
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the drill axis positioned
+            A VertexArray object of length 2 specifying the direction of the drill axis positioned
             at the **csys** origin. Instead of through a ConstrainedSketchVertex, each point may be specified through a
             tuple of coordinates.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
         csys
@@ -134,7 +134,7 @@ class DrillControl(GeometricRestriction):
         Returns
         -------
         DrillControl
-            A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object.
+            A DrillControl object.
         """
         super().__init__()
 

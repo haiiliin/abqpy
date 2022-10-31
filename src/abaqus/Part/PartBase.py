@@ -78,22 +78,22 @@ class PartBase(PartFeature):
     #: A Float specifying when the part was last modified.
     timeStamp: Optional[float] = None
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part.
+    #: A VertexArray object specifying all the vertices in the part.
     vertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
+    #: An IgnoredVertexArray object specifying all the ignored vertices in the part.
     ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
+    #: An EdgeArray object specifying all the edges in the part.
     edges: EdgeArray = EdgeArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
+    #: An IgnoredEdgeArray object specifying all the ignored edges in the part.
     ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
 
-    #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
+    #: A FaceArray object specifying all the faces in the part.
     faces: FaceArray = FaceArray([])
 
-    #: A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying all the cells in the part.
+    #: A CellArray object specifying all the cells in the part.
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
@@ -109,7 +109,7 @@ class PartBase(PartFeature):
     #: A repository of Datum objects specifying all the datums in the part.
     datums: List[Datum] = []
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
+    #: A MeshElementArray object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
 
     #: A repository of MeshFace objects specifying all the element faces in the part. For a
@@ -118,13 +118,13 @@ class PartBase(PartFeature):
     #: where i and j are zero-based element and face indices, respectively.
     elemFaces: Dict[str, MeshFace] = {}
 
-    #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part.
+    #: A MeshFaceArray object specifying all the unique element faces in the part.
     elementFaces: MeshFaceArray = MeshFaceArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes in the part.
+    #: A MeshNodeArray object specifying all the nodes in the part.
     nodes: MeshNodeArray = MeshNodeArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the retained nodes in the substructure part.
+    #: A MeshNodeArray object specifying all the retained nodes in the substructure part.
     retainedNodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Set objects specifying for more information, see Set.
@@ -156,13 +156,13 @@ class PartBase(PartFeature):
     #: A repository of ReferencePoint objects.
     referencePoints: ReferencePoints = ReferencePoints()
 
-    #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
+    #: An EngineeringFeature object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
 
-    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
 
-    #: A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object.
+    #: A MaterialOrientationArray object.
     materialOrientations: MaterialOrientationArray = []
 
     #: A repository of CompositeLayup objects.
@@ -175,7 +175,7 @@ class PartBase(PartFeature):
     #: indices, respectively.
     elemEdges: Dict[str, MeshEdge] = {}
 
-    #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part.
+    #: A MeshEdgeArray object specifying all the unique element edges in the part.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     @overload
@@ -212,7 +212,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
         """
         ...
 
@@ -261,7 +261,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
         """
         ...
 
@@ -291,7 +291,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
         """
         ...
 
@@ -343,7 +343,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
         """
         ...
 
@@ -362,7 +362,7 @@ class PartBase(PartFeature):
         name
             A String specifying the repository key.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object specifying an existing two-dimensional orphan mesh Part object.
+            A Part object specifying an existing two-dimensional orphan mesh Part object.
         depth
             A Float specifying the total extrusion distance.
         elementSize
@@ -371,7 +371,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the specified part is not an orphan mesh part:
               Cannot extrude a geometric part.
@@ -412,7 +412,7 @@ class PartBase(PartFeature):
         name
             A String specifying the repository key.
         geometryFile
-            An :py:class:`~abaqus.Part.AcisFile.AcisFile` object specifying a file containing geometry.
+            An AcisFile object specifying a file containing geometry.
         dimensionality
             A SymbolicConstant specifying the dimensionality of the part. Possible values are
             THREE_D, TWO_D_PLANAR, and AXISYMMETRIC.
@@ -463,7 +463,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the ACIS file is corrupt:
               PartError: the file is corrupt
@@ -508,7 +508,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the analysis type (deformable or rigid) is not consistent among the supplied part
               instances:
@@ -541,7 +541,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the part does not contain a mesh:
               The current part does not contain a mesh for a mesh part.
@@ -566,7 +566,7 @@ class PartBase(PartFeature):
         name
             A String specifying the repository key.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object specifying an existing orphan mesh part.
+            A Part object specifying an existing orphan mesh part.
         point1
             A sequence of three Floats specifying a point on the mirror plane. This point is the
             local origin in the local system of the plane.
@@ -577,7 +577,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the specified part is not an orphan mesh part:
               Cannot mirror a geometric part.
@@ -636,7 +636,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
         """
         ...
 
@@ -697,7 +697,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the output database contains elements of more than one dimensionality or type:
               File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and
@@ -733,7 +733,7 @@ class PartBase(PartFeature):
         name
             A String specifying the repository key.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object specifying an existing three-dimensional orphan mesh part.
+            A Part object specifying an existing three-dimensional orphan mesh part.
         point1
             A Sequence of three Floats specifying a point on the cutting plane. This point is the
             local origin in the local system of the plane.
@@ -747,7 +747,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the specified part is not an orphan mesh part:
               Cannot reduce dimension of a geometric part.
@@ -786,7 +786,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the specified part is not a substructure:
               File specified does not contain a substructure.
@@ -824,7 +824,7 @@ class PartBase(PartFeature):
         name
             A String specifying the repository key.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object specifying an existing two-dimensional orphan mesh Part object.
+            A Part object specifying an existing two-dimensional orphan mesh Part object.
         featureAngle
             A Float specifying the angle (in degrees) between line segments that triggers a break in
             the geometry.
@@ -839,7 +839,7 @@ class PartBase(PartFeature):
         Returns
         -------
         part: Part
-            A :py:class:`~abaqus.Part.Part.Part` object
+            A Part object
 
             - If the specified part is not an orphan mesh part:
               Specified part must be an orphan mesh.
@@ -871,7 +871,7 @@ class PartBase(PartFeature):
         Parameters
         ----------
         sketch
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object.
+            A ConstrainedSketch object.
         """
         ...
 
@@ -1465,7 +1465,7 @@ class PartBase(PartFeature):
             ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part.
+            A Feature object specifying a marker in the feature-based history of the part.
             Abaqus/CAE projects onto the sketch only the part entities that were created before the
             feature specified by this marker. By default, part entities in features created before
             the sketch you are editing are candidates for projection.
@@ -1544,7 +1544,7 @@ class PartBase(PartFeature):
         Returns
         -------
         region: Region
-            A :py:class:`~abaqus.Region.Region.Region` object, or None
+            A Region object, or None
         """
         ...
 
@@ -1764,7 +1764,7 @@ class PartBase(PartFeature):
         elemFaces
             A sequence of MeshFace objects specifying the source region.
         targetFace
-            A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying the target region.
+            A MeshFace object specifying the target region.
         nodes
             A sequence of MeshNode objects or a Set object containing nodes on the boundary of
             source region which are to be positioned to the boundary of target face.

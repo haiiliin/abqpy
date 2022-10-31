@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class CompositeDampingComponent:
-    """A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent` object is used to define composite damping over a range of
+    """A CompositeDampingComponent object is used to define composite damping over a range of
     modes.
 
     .. note::

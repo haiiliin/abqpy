@@ -87,7 +87,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Returns
         -------
         IgnoredEdge
-            An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
+            An IgnoredEdge object or a sequence of IgnoredEdge objects.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -118,7 +118,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Returns
         -------
         IgnoredEdge
-            An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
+            An IgnoredEdge object or a sequence of IgnoredEdge objects.
 
         """
         ...

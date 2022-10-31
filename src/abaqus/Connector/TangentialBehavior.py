@@ -152,7 +152,7 @@ class TangentialBehavior:
         Returns
         -------
         TangentialBehavior
-            A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object.
+            A TangentialBehavior object.
         """
         ...
 
