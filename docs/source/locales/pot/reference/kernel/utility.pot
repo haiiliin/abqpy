@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid "Bases: :py:class:`int`"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:1
-msgid "The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you pass an AbaqusBoolean object to the Python repr() function, the function returns the text without quotes. In effect, the text is the variable that, by convention, refers to the AbaqusBoolean object. An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object has a value of 0 or 1, and an AbaqusBoolean object can be tested in an if statement. You can use an AbaqusBoolean object as an argument to a method in place of 1 or 0. Conversely, you can pass a 0 or a 1 to an Abaqus Scripting Interface method that expects a Boolean argument, and the 0 or 1 will be coerced to the appropriate AbaqusBoolean value. There are only two possible values for an AbaqusBoolean object: 1 and 0. You can import both values from the symbolicConstants module or from the abaqus module. Abaqus Scripting Interface commands that expect an AbaqusBoolean object will also accept a Python bool (True, False), or a Python int (1, 0)."
+msgid "The AbaqusBoolean object is used in a similar way to the SymbolicConstant object. If you pass an AbaqusBoolean object to the Python repr() function, the function returns the text without quotes. In effect, the text is the variable that, by convention, refers to the AbaqusBoolean object. An AbaqusBoolean object has a value of 0 or 1, and an AbaqusBoolean object can be tested in an if statement. You can use an AbaqusBoolean object as an argument to a method in place of 1 or 0. Conversely, you can pass a 0 or a 1 to an Abaqus Scripting Interface method that expects a Boolean argument, and the 0 or 1 will be coerced to the appropriate AbaqusBoolean value. There are only two possible values for an AbaqusBoolean object: 1 and 0. You can import both values from the symbolicConstants module or from the abaqus module. Abaqus Scripting Interface commands that expect an AbaqusBoolean object will also accept a Python bool (True, False), or a Python int (1, 0)."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:16
@@ -722,7 +722,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean.__init__:15
-msgid "An :py:class:`~abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean` object."
+msgid "An AbaqusBoolean object."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean.__init__:0
@@ -1775,7 +1775,7 @@ msgid "A String specifying the text of the SymbolicConstant object. The String m
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant.__init__:15
-msgid "A :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant` object."
+msgid "A SymbolicConstant object."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant.__init__:16
@@ -2096,7 +2096,7 @@ msgid "A Boolean specifying whether or not the camera is in movie mode. The defa
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:58
-msgid "A :py:class:`~abaqus.UtilityAndView.View.View` object."
+msgid "A View object."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:59
@@ -2237,7 +2237,7 @@ msgid "A sequence of 16 Floats specifying the transformation matrix."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setLayerTransform:10
-msgid "A :py:class:`~abaqus.UtilityAndView.View.View` object from which the view settings are to be copied. If the **layerTransform** argument is also supplied to setLayerTransform, it will override the values in the View object specified by **view**."
+msgid "A View object from which the view settings are to be copied. If the **layerTransform** argument is also supplied to setLayerTransform, it will override the values in the View object specified by **view**."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setProjection:1
@@ -2261,11 +2261,11 @@ msgid "rotationCenter cannot be set using a part instance and node label unless 
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:4
-msgid "This method is not available for a :py:class:`~abaqus.Canvas.Layer.Layer` View."
+msgid "This method is not available for a Layer View."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:6
-msgid "The optional arguments to `setValues` are the same as the arguments to the :py:class:`~abaqus.UtilityAndView.View.View` method, except for the `name` and `autoFit` arguments. In addition, `setValues` has the following optional arguments:"
+msgid "The optional arguments to `setValues` are the same as the arguments to the View method, except for the `name` and `autoFit` arguments. In addition, `setValues` has the following optional arguments:"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:12

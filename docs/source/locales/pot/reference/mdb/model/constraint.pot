@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,7 +209,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -217,7 +217,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -401,7 +401,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -739,13 +739,13 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:14
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:14
 #: ../../docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.surface:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface to which the **controlPoints** are adjusted."
+msgid "A Region object specifying the surface to which the **controlPoints** are adjusted."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:16
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:16
 #: ../../docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control points."
+msgid "A Region object specifying the constraint control points."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:0
@@ -771,7 +771,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:18
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:18
-msgid "An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object."
+msgid "An AdjustPoints object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:0
@@ -808,7 +808,7 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:14
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.__init__:14
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.surface:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the coupling nodes are located."
+msgid "A Region object specifying the surface on which the coupling nodes are located."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:16
@@ -817,7 +817,7 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:17
 #: ../../docstring of abaqus.Constraint.Coupling.Coupling.controlPoint:1
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the constraint control point."
+msgid "A Region object specifying the constraint control point."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:18
@@ -897,7 +897,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:60
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling.__init__:60
-msgid "A :py:class:`~abaqus.Constraint.Coupling.Coupling` object."
+msgid "A Coupling object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:61
@@ -913,18 +913,18 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:14
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody.__init__:14
 #: ../../docstring of abaqus.Constraint.DisplayBody.DisplayBody.instance:1
-msgid "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the part instance that is to be used for display only."
+msgid "A PartInstance object specifying the part instance that is to be used for display only."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:16
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody.__init__:16
 #: ../../docstring of abaqus.Constraint.DisplayBody.DisplayBody.controlPoints:1
-msgid "A :py:class:`~abaqus.BasicGeometry.ModelDotArray.ModelDotArray` object specifying the motion of the PartInstance. The control points may be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of the PartInstance. If this argument is set to an empty sequence, the PartInstance will remain fixed in space during the analysis. The sequence can have either one object or three objects."
+msgid "A ModelDotArray object specifying the motion of the PartInstance. The control points may be ConstrainedSketchVertex, ReferencePoint, or MeshNode objects. Their motion will control the motion of the PartInstance. If this argument is set to an empty sequence, the PartInstance will remain fixed in space during the analysis. The sequence can have either one object or three objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:22
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody.__init__:22
-msgid "A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object."
+msgid "A DisplayBody object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:23
@@ -940,13 +940,13 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:14
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:14
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.embeddedRegion:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the body region to be embedded."
+msgid "A Region object specifying the body region to be embedded."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:16
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:16
 #: ../../docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.hostRegion:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the host region. A value of None indicates that the host region is the whole model."
+msgid "A Region object specifying the host region. A value of None indicates that the host region is the whole model."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:19
@@ -979,7 +979,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:37
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:37
-msgid "An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object."
+msgid "An EmbeddedRegion object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:38
@@ -1000,7 +1000,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:17
 #: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation.__init__:17
-msgid "An :py:class:`~abaqus.Constraint.Equation.Equation` object."
+msgid "An Equation object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:18
@@ -1022,7 +1022,7 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:14
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:14
 #: ../../docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.surface:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface on which the MultipointConstraint nodes are located."
+msgid "A Region object specifying the surface on which the MultipointConstraint nodes are located."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:19
@@ -1054,7 +1054,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:35
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:35
-msgid "A :py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` object."
+msgid "A MultipointConstraint object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:36
@@ -1070,7 +1070,7 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:14
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.__init__:14
 #: ../../docstring of abaqus.Constraint.RigidBody.RigidBody.refPointRegion:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the reference point."
+msgid "A Region object specifying the reference point."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:16
@@ -1117,7 +1117,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:34
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody.__init__:34
-msgid "A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object."
+msgid "A RigidBody object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:35
@@ -1133,13 +1133,13 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:14
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:14
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.shellEdge:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the shell edge surface."
+msgid "A Region object specifying the name of the shell edge surface."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:16
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:16
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.solidFace:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the solid surface."
+msgid "A Region object specifying the name of the solid surface."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:18
@@ -1176,7 +1176,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:32
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:32
-msgid "A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` object."
+msgid "A ShellSolidCoupling object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:33
@@ -1192,13 +1192,13 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:14
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.__init__:14
 #: ../../docstring of abaqus.Constraint.Tie.Tie.master:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface."
+msgid "A Region object specifying the name of the master surface."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:16
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.__init__:16
 #: ../../docstring of abaqus.Constraint.Tie.Tie.slave:1
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface."
+msgid "A Region object specifying the name of the slave surface."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:18
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:44
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie.__init__:44
-msgid "A :py:class:`~abaqus.Constraint.Tie.Tie` object."
+msgid "A Tie object."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:45

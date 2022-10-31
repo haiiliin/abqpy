@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -848,7 +848,7 @@ msgstr ""
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:234
 #: ../../None:92:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.datumCsys:1
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the coordinate system to use for results transformation when **transformationType** = USER_SPECIFIED."
+msgid "A DatumCsys object specifying the coordinate system to use for results transformation when **transformationType** = USER_SPECIFIED."
 msgstr ""
 
 #: ../../None:92:<autosummary>:1
@@ -1306,7 +1306,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:7
-msgid "A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A BasicOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:44
@@ -1531,7 +1531,7 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions.plyStackPlotOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions` object."
+msgid "A PlyStackPlotOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DGCommonOptions.py:docstring of abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1
@@ -3056,7 +3056,7 @@ msgid "Check `DisplayOptions.setValues on help.3ds.com/2020 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DisplayOptions.py:docstring of abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:7
-msgid "A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A DisplayOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DisplayOptions.py:docstring of abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:11
@@ -3355,11 +3355,11 @@ msgid ":py:obj:`frames <abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid "A :py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray` object specifying the list of frames."
+msgid "A MdbDataFrameArray object specifying the list of frames."
 msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames:1
-msgid "A :py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray` object specifying the list of frames. The list is read-only. There is only one frame in a step."
+msgid "A MdbDataFrameArray object specifying the list of frames. The list is read-only. There is only one frame in a step."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MpcConstraint.py:docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint:1
@@ -3455,7 +3455,7 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError.data:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData` object."
+msgid "An OdbAuxiliaryData object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -3848,7 +3848,7 @@ msgstr ""
 
 #: ../../None:20:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbData.OdbData.diagnosticData:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData` object."
+msgid "An OdbDiagnosticData object."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -4172,7 +4172,7 @@ msgid ":py:obj:`frames <abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames."
+msgid "An OdbDataFrameArray object specifying the list of frames."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -4185,7 +4185,7 @@ msgid "This method modifies the OdbDataStep object."
 msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray` object specifying the list of frames. The list is read-only."
+msgid "An OdbDataFrameArray object specifying the list of frames. The list is read-only."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:4
@@ -4366,7 +4366,7 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData.jobTime:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object."
+msgid "An OdbJobTime object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -4375,7 +4375,7 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData.numericalProblemSummary:1
-msgid "An :py:class:`~abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary` object."
+msgid "An OdbNumericalProblemSummary object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -4884,7 +4884,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.commonOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions` object."
+msgid "A DGCommonOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -4893,7 +4893,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.superimposeOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions` object."
+msgid "A DGSuperimposeOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -4902,7 +4902,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.contourOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions` object."
+msgid "A DGContourOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -4911,7 +4911,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.symbolOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions` object."
+msgid "A DGSymbolOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -4920,7 +4920,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.materialOrientationOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions` object."
+msgid "A DGOrientationOptions object."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -4929,7 +4929,7 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions.displayBodyOptions:1
-msgid "A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object."
+msgid "A DGDisplayBodyOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbJobTime.py:docstring of abaqus.PlotOptions.OdbJobTime.OdbJobTime:1
@@ -5145,7 +5145,7 @@ msgid "A Float specifying the translucency factor when **translucency** = ON. Po
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:42
-msgid "An :py:class:`~abaqus.PlotOptions.OptionArg.OptionArg` object."
+msgid "An OptionArg object."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:43
@@ -6009,7 +6009,7 @@ msgid "Check `ViewCutOptions.setValues on help.3ds.com/2020 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:7
-msgid "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
+msgid "A ViewCutOptions object from which values are to be copied. If other arguments are also supplied to setValues, they will override the values in **options**. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:14

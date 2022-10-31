@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,7 +330,7 @@ msgid "Returns"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:97 abaqus.Job.ModelJob.ModelJob.__init__:94 of
-msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
+msgid "A ModelJob object."
 msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__
@@ -441,7 +441,7 @@ msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:40 abaqus.Job.Queue.Queue.__init__:40
 #: of
-msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
+msgid "A Queue object."
 msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:41 abaqus.Job.Queue.Queue.__init__:41
@@ -1008,9 +1008,7 @@ msgstr ""
 #: ../../None:30:<autosummary>:1 ../../docstring abaqus.Job.Job.Job.messages:1
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.messages:1
 #: abaqus.Job.ModelJob.ModelJob.messages:1 of
-msgid ""
-"A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the"
-" messages received during an analysis."
+msgid "A MessageArray object specifying the messages received during an analysis."
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1390,7 +1388,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:87 of
-msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
+msgid "A JobFromInputFile object."
 msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:88 of
@@ -2018,7 +2016,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:48 of
-msgid "An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object."
+msgid "An OptimizationProcess object."
 msgstr ""
 
 #: abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:49 of
@@ -2118,9 +2116,8 @@ msgstr ""
 
 #: abaqus.Job.Queue.Queue:1 of
 msgid ""
-"A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how "
-"to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object "
-"can be used as the **queue** argument to the Job method."
+"A Queue object tells the job where and how to submit a job remotely. A "
+"Queue object can be used as the **queue** argument to the Job method."
 msgstr ""
 
 #: abaqus.Job.Queue.Queue.__init__:10 of
@@ -2586,5 +2583,35 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Queue"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Job.MessageArray.MessageArray` object"
+#~ " specifying the messages received during"
+#~ " an analysis."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Job.Queue.Queue` object tells"
+#~ " the job where and how to "
+#~ "submit a job remotely. A "
+#~ ":py:class:`~abaqus.Job.Queue.Queue` object can be"
+#~ " used as the **queue** argument to"
+#~ " the Job method."
 #~ msgstr ""
 
