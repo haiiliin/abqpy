@@ -74,7 +74,7 @@ class TransverseShearBeam:
         Returns
         -------
         TransverseShearBeam
-            A :py:class:`~abaqus.Section.TransverseShearBeam.TransverseShearBeam` object.
+            A TransverseShearBeam object.
         """
         ...
 

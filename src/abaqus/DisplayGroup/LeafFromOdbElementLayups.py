@@ -42,6 +42,6 @@ class LeafFromOdbElementLayups(Leaf):
         Returns
         -------
         LeafFromOdbElementLayups
-            A :py:class:`~abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups` object.
+            A LeafFromOdbElementLayups object.
         """
         super().__init__(DEFAULT_MODEL)

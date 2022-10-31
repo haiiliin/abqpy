@@ -105,7 +105,7 @@ class MeshElement:
         Returns
         -------
         element: MeshElement
-            A :py:class:`~abaqus.Mesh.MeshElement.MeshElement` object.
+            A MeshElement object.
         """
         ...
 
@@ -116,7 +116,7 @@ class MeshElement:
         Returns
         -------
         Tuple[MeshNode]
-            A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
+            A tuple of MeshNode objects.
         """
         ...
 
@@ -127,7 +127,7 @@ class MeshElement:
         Returns
         -------
         Tuple[MeshEdge]
-            A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
+            A tuple of MeshEdge objects.
         """
         ...
 
@@ -138,7 +138,7 @@ class MeshElement:
         Returns
         -------
         Tuple[MeshFace]
-            A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
+            A tuple of MeshFace objects.
         """
         ...
 
@@ -149,7 +149,7 @@ class MeshElement:
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which is a sequence of MeshElement objects.
+            A MeshElementArray object which is a sequence of MeshElement objects.
         """
         ...
 
@@ -167,7 +167,7 @@ class MeshElement:
         Returns
         -------
         MeshElementArray
-            A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object, which is a sequence of MeshElement objects.
+            A MeshElementArray object, which is a sequence of MeshElement objects.
         """
         ...
 

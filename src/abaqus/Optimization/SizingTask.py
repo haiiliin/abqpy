@@ -155,7 +155,7 @@ class SizingTask(OptimizationTask):
         Returns
         -------
         SizingTask
-            A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object.
+            A SizingTask object.
         """
         super().__init__()
 

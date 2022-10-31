@@ -144,7 +144,7 @@ class ThermalConductance:
         Returns
         -------
         ThermalConductance
-            A :py:class:`~abaqus.Interaction.ThermalConductance.ThermalConductance` object.
+            A ThermalConductance object.
         """
         ...
 

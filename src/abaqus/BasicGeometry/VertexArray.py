@@ -52,7 +52,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         VertexArray
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+            A VertexArray object.
 
         """
         ...
@@ -122,7 +122,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         ConstrainedSketchVertex
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
+            A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -155,7 +155,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         ConstrainedSketchVertex
-            A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
+            A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
 
         """
         ...
@@ -203,7 +203,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         VertexArray
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         ...
@@ -227,7 +227,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         VertexArray
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         ...
@@ -247,7 +247,7 @@ class VertexArray(List[Vertex]):
         Returns
         -------
         VertexArray
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which is a sequence of ConstrainedSketchVertex objects..
+            A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
 
         """
         ...

@@ -44,7 +44,7 @@ class Moment(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -76,7 +76,7 @@ class Moment(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         cm1
             A Float or a Complex specifying the load component in the 4-direction. Note: Although
             **comp1**, **comp2**, and **comp3** are optional arguments, at least one of them must be
@@ -109,7 +109,7 @@ class Moment(Load):
         Returns
         -------
         Moment
-            A :py:class:`~abaqus.Load.Moment.Moment` object.
+            A Moment object.
         """
         super().__init__()
 

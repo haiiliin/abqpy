@@ -55,7 +55,7 @@ class Trs:
         Returns
         -------
         Trs
-            A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs` object.
+            A Trs object.
         """
         ...
 

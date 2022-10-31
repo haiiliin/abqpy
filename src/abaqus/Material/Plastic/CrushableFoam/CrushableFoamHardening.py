@@ -53,7 +53,7 @@ class CrushableFoamHardening:
         Returns
         -------
         CrushableFoamHardening
-            A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening` object.
+            A CrushableFoamHardening object.
 
         Raises
         ------

@@ -80,7 +80,7 @@ class DecayAmplitude(Amplitude):
         Returns
         -------
         DecayAmplitude
-            A :py:class:`~abaqus.Amplitude.DecayAmplitude.DecayAmplitude` object.
+            A DecayAmplitude object.
 
         Raises
         ------

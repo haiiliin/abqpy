@@ -38,13 +38,13 @@ class LeafFromPartElementLabels(Leaf):
         Parameters
         ----------
         part
-            A :py:class:`~abaqus.Part.Part.Part` object.
+            A Part object.
         elementLabels
             A sequence of Strings specifying element labels.
 
         Returns
         -------
         LeafFromPartElementLabels
-            A :py:class:`~abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels` object.
+            A LeafFromPartElementLabels object.
         """
         super().__init__(DEFAULT_MODEL)

@@ -54,7 +54,7 @@ class FreeBody:
         Returns
         -------
         FreeBody
-            A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
+            A FreeBody object.
         """
         ...
 
@@ -95,7 +95,7 @@ class FreeBody:
         Returns
         -------
         FreeBody
-            A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
+            A FreeBody object.
         """
         ...
 
@@ -139,6 +139,6 @@ class FreeBody:
         Returns
         -------
         FreeBody
-            A :py:class:`~abaqus.PathAndProbe.FreeBody.FreeBody` object.
+            A FreeBody object.
         """
         ...

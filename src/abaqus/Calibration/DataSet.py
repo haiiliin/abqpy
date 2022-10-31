@@ -55,7 +55,7 @@ class DataSet:
         Returns
         -------
         DataSet
-            A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
+            A DataSet object.
         """
         ...
 

@@ -19,7 +19,7 @@ from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import Constrain
 
 @abaqus_class_doc
 class RegionAssembly(RegionAssemblyBase):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -157,7 +157,7 @@ class RegionAssembly(RegionAssemblyBase):
         Returns
         -------
         Surface
-            A :py:class:`~abaqus.Region.Surface.Surface` object.
+            A Surface object.
         """
         surface = Surface(
             side1Faces,
@@ -223,7 +223,7 @@ class RegionAssembly(RegionAssemblyBase):
         elements
             A sequence of MeshElement objects. The default value is None.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
+            A Region object specifying other objects to be included in the set. The default value is
             None.
         vertices
             A sequence of ConstrainedSketchVertex objects. The default value is None.
@@ -257,7 +257,7 @@ class RegionAssembly(RegionAssemblyBase):
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 
@@ -277,12 +277,12 @@ class RegionAssembly(RegionAssemblyBase):
         name
             A String specifying the name of the set.
         objectToCopy
-            A :py:class:`~abaqus.Region.Set.Set` object to be copied.
+            A Set object to be copied.
 
         Returns
         -------
         Set
-            A :py:class:`~abaqus.Region.Set.Set` object.
+            A Set object.
         """
         ...
 

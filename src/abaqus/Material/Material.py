@@ -111,7 +111,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Material(MaterialBase):
-    """A :py:class:`~abaqus.Material.Material.Material` object is the object used to specify a material. The Material object stores
+    """A Material object is the object used to specify a material. The Material object stores
     the various settings that determine how a material behaves.
     A material is created by combining one or more individual material options and sub
     options. A particular material option is associated with the Material object through a
@@ -193,7 +193,7 @@ class Material(MaterialBase):
         Returns
         -------
         AcousticMedium
-            An :py:class:`~abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium` object.
+            An AcousticMedium object.
 
         Raises
         ------
@@ -241,7 +241,7 @@ class Material(MaterialBase):
         Returns
         -------
         BrittleCracking
-            A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
+            A BrittleCracking object.
         """
         self.brittleCracking = BrittleCracking(table, temperatureDependency, dependencies, type)
         return self.brittleCracking
@@ -268,7 +268,7 @@ class Material(MaterialBase):
         Returns
         -------
         CapPlasticity
-            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity` object.
+            A CapPlasticity object.
 
         Raises
         ------
@@ -301,7 +301,7 @@ class Material(MaterialBase):
         Returns
         -------
         CastIronPlasticity
-            A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity` object.
+            A CastIronPlasticity object.
 
         Raises
         ------
@@ -346,7 +346,7 @@ class Material(MaterialBase):
         Returns
         -------
         ClayPlasticity
-            A :py:class:`~abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity` object.
+            A ClayPlasticity object.
 
         Raises
         ------
@@ -377,7 +377,7 @@ class Material(MaterialBase):
         Returns
         -------
         Concrete
-            A :py:class:`~abaqus.Material.Plastic.Concrete.Concrete.Concrete` object.
+            A Concrete object.
 
         Raises
         ------
@@ -410,7 +410,7 @@ class Material(MaterialBase):
         Returns
         -------
         ConcreteDamagedPlasticity
-            A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
+            A ConcreteDamagedPlasticity object.
 
         Raises
         ------
@@ -450,7 +450,7 @@ class Material(MaterialBase):
         Returns
         -------
         Conductivity
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity` object.
+            A Conductivity object.
 
         Raises
         ------
@@ -509,7 +509,7 @@ class Material(MaterialBase):
         Returns
         -------
         Creep
-            A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object.
+            A Creep object.
 
         Raises
         ------
@@ -549,7 +549,7 @@ class Material(MaterialBase):
         Returns
         -------
         CrushableFoam
-            A :py:class:`~abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam` object.
+            A CrushableFoam object.
 
         Raises
         ------
@@ -592,7 +592,7 @@ class Material(MaterialBase):
         Returns
         -------
         Damping
-            A :py:class:`~abaqus.Material.Others.Mechanical.Damping.Damping` object.
+            A Damping object.
 
         Raises
         ------
@@ -621,7 +621,7 @@ class Material(MaterialBase):
         Returns
         -------
         DeformationPlasticity
-            A :py:class:`~abaqus.Material.Plastic.Metal.Deformation.DeformationPlasticity.DeformationPlasticity` object.
+            A DeformationPlasticity object.
 
         Raises
         ------
@@ -667,7 +667,7 @@ class Material(MaterialBase):
         Returns
         -------
         Density
-            A :py:class:`~abaqus.Material.Density.Density.Density` object.
+            A Density object.
 
         Raises
         ------
@@ -698,7 +698,7 @@ class Material(MaterialBase):
         Returns
         -------
         Depvar
-            A :py:class:`~abaqus.Material.Others.User.Depvar.Depvar` object.
+            A Depvar object.
 
         Raises
         ------
@@ -741,7 +741,7 @@ class Material(MaterialBase):
         Returns
         -------
         Dielectric
-            A :py:class:`~abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric` object.
+            A Dielectric object.
         """
         self.dielectric = Dielectric(table, type, frequencyDependency, temperatureDependency, dependencies)
         return self.dielectric
@@ -781,7 +781,7 @@ class Material(MaterialBase):
         Returns
         -------
         Diffusivity
-            A :py:class:`~abaqus.Material.Others.MassDiffusion.Diffusivity.Diffusivity` object.
+            A Diffusivity object.
 
         Raises
         ------
@@ -834,7 +834,7 @@ class Material(MaterialBase):
         Returns
         -------
         DruckerPrager
-            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager` object.
+            A DruckerPrager object.
 
         Raises
         ------
@@ -913,7 +913,7 @@ class Material(MaterialBase):
         Returns
         -------
         Elastic
-            An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object.
+            An Elastic object.
 
         Raises
         ------
@@ -964,7 +964,7 @@ class Material(MaterialBase):
         Returns
         -------
         ElectricalConductivity
-            An :py:class:`~abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity` object.
+            An ElectricalConductivity object.
 
         Raises
         ------
@@ -1121,7 +1121,7 @@ class Material(MaterialBase):
         Returns
         -------
         Expansion
-            An :py:class:`~abaqus.Material.Others.Mechanical.Expansion.Expansion` object.
+            An Expansion object.
 
         Raises
         ------
@@ -1162,7 +1162,7 @@ class Material(MaterialBase):
         Returns
         -------
         FluidLeakoff
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff` object.
+            A FluidLeakoff object.
         """
         self.fluidLeakoff = FluidLeakoff(temperatureDependency, dependencies, type, table)
         return self.fluidLeakoff
@@ -1206,7 +1206,7 @@ class Material(MaterialBase):
         Returns
         -------
         GapFlow
-            A :py:class:`~abaqus.Material.Gap.GapFlow.GapFlow` object.
+            A GapFlow object.
         """
         self.gapFlow = GapFlow(table, kmax, temperatureDependency, dependencies, type)
         return self.gapFlow
@@ -1235,7 +1235,7 @@ class Material(MaterialBase):
         Returns
         -------
         GasketMembraneElastic
-            A :py:class:`~abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic` object.
+            A GasketMembraneElastic object.
 
         Raises
         ------
@@ -1311,7 +1311,7 @@ class Material(MaterialBase):
         Returns
         -------
         GasketThicknessBehavior
-            A :py:class:`~abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior` object.
+            A GasketThicknessBehavior object.
 
         Raises
         ------
@@ -1363,7 +1363,7 @@ class Material(MaterialBase):
         Returns
         -------
         GasketTransverseShearElastic
-            A :py:class:`~abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic` object.
+            A GasketTransverseShearElastic object.
 
         Raises
         ------
@@ -1392,7 +1392,7 @@ class Material(MaterialBase):
         Returns
         -------
         Gel
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Gel.Gel` object.
+            A Gel object.
         """
         self.gel = Gel(table)
         return self.gel
@@ -1506,7 +1506,7 @@ class Material(MaterialBase):
         Returns
         -------
         Hyperelastic
-            A :py:class:`~abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic` object.
+            A Hyperelastic object.
 
         Raises
         ------
@@ -1575,7 +1575,7 @@ class Material(MaterialBase):
         Returns
         -------
         Hyperfoam
-            A :py:class:`~abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam` object.
+            A Hyperfoam object.
 
         Raises
         ------
@@ -1605,7 +1605,7 @@ class Material(MaterialBase):
         Returns
         -------
         Hypoelastic
-            A :py:class:`~abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic` object.
+            A Hypoelastic object.
         """
         self.hypoelastic = Hypoelastic(table, user)
         return self.hypoelastic
@@ -1630,7 +1630,7 @@ class Material(MaterialBase):
         Returns
         -------
         InelasticHeatFraction
-            An :py:class:`~abaqus.Material.Others.HeatTransfer.InelasticHeatFraction.InelasticHeatFraction` object.
+            An InelasticHeatFraction object.
 
         Raises
         ------
@@ -1658,7 +1658,7 @@ class Material(MaterialBase):
         Returns
         -------
         JouleHeatFraction
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.JouleHeatFraction.JouleHeatFraction` object.
+            A JouleHeatFraction object.
 
         Raises
         ------
@@ -1685,7 +1685,7 @@ class Material(MaterialBase):
         Returns
         -------
         LatentHeat
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.LatentHeat.LatentHeat` object.
+            A LatentHeat object.
 
         Raises
         ------
@@ -1738,7 +1738,7 @@ class Material(MaterialBase):
         Returns
         -------
         LowDensityFoam
-            A :py:class:`~abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam` object.
+            A LowDensityFoam object.
 
         Raises
         ------
@@ -1805,7 +1805,7 @@ class Material(MaterialBase):
         Returns
         -------
         MagneticPermeability
-            A :py:class:`~abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability` object.
+            A MagneticPermeability object.
 
         Raises
         ------
@@ -1863,7 +1863,7 @@ class Material(MaterialBase):
         Returns
         -------
         MohrCoulombPlasticity
-            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
+            A MohrCoulombPlasticity object.
 
         Raises
         ------
@@ -1897,7 +1897,7 @@ class Material(MaterialBase):
         Returns
         -------
         MoistureSwelling
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling` object.
+            A MoistureSwelling object.
         """
         self.moistureSwelling = MoistureSwelling(table)
         return self.moistureSwelling
@@ -1939,7 +1939,7 @@ class Material(MaterialBase):
         Returns
         -------
         Permeability
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability` object.
+            A Permeability object.
 
         Raises
         ------
@@ -1986,7 +1986,7 @@ class Material(MaterialBase):
         Returns
         -------
         Piezoelectric
-            A :py:class:`~abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric` object.
+            A Piezoelectric object.
         """
         self.piezoelectric = Piezoelectric(table, type, temperatureDependency, dependencies)
         return self.piezoelectric
@@ -2038,7 +2038,7 @@ class Material(MaterialBase):
         Returns
         -------
         Plastic
-            A :py:class:`~abaqus.Material.Plastic.Plastic.Plastic` object.
+            A Plastic object.
 
         Raises
         ------
@@ -2086,7 +2086,7 @@ class Material(MaterialBase):
         Returns
         -------
         PoreFluidExpansion
-            A :py:class:`~abaqus.Material.Others.Mechanical.PoreFluidExpansion.PoreFluidExpansion` object.
+            A PoreFluidExpansion object.
 
         Raises
         ------
@@ -2115,7 +2115,7 @@ class Material(MaterialBase):
         Returns
         -------
         PorousBulkModuli
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli` object.
+            A PorousBulkModuli object.
         """
         self.porousBulkModuli = PorousBulkModuli(table, temperatureDependency)
         return self.porousBulkModuli
@@ -2151,7 +2151,7 @@ class Material(MaterialBase):
         Returns
         -------
         PorousElastic
-            A :py:class:`~abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic` object.
+            A PorousElastic object.
 
         Raises
         ------
@@ -2191,7 +2191,7 @@ class Material(MaterialBase):
         Returns
         -------
         PorousMetalPlasticity
-            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity` object.
+            A PorousMetalPlasticity object.
 
         Raises
         ------
@@ -2225,7 +2225,7 @@ class Material(MaterialBase):
         Returns
         -------
         Regularization
-            A :py:class:`~abaqus.Material.Regularization.Regularization` object.
+            A Regularization object.
 
         Raises
         ------
@@ -2256,7 +2256,7 @@ class Material(MaterialBase):
         Returns
         -------
         Solubility
-            A :py:class:`~abaqus.Material.Others.MassDiffusion.Solubility.Solubility` object.
+            A Solubility object.
 
         Raises
         ------
@@ -2306,7 +2306,7 @@ class Material(MaterialBase):
         Returns
         -------
         Sorption
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption` object.
+            A Sorption object.
 
         Raises
         ------
@@ -2353,7 +2353,7 @@ class Material(MaterialBase):
         Returns
         -------
         SpecificHeat
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat` object.
+            A SpecificHeat object.
 
         Raises
         ------
@@ -2394,7 +2394,7 @@ class Material(MaterialBase):
         Returns
         -------
         Swelling
-            A :py:class:`~abaqus.Material.Plastic.Swelling.Swelling.Swelling` object.
+            A Swelling object.
 
         Raises
         ------
@@ -2451,7 +2451,7 @@ class Material(MaterialBase):
         Returns
         -------
         UserMaterial
-            A :py:class:`~abaqus.Material.Others.User.UserMaterial.UserMaterial` object.
+            A UserMaterial object.
 
         Raises
         ------
@@ -2486,7 +2486,7 @@ class Material(MaterialBase):
         Returns
         -------
         UserOutputVariables
-            A :py:class:`~abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables` object.
+            A UserOutputVariables object.
 
         Raises
         ------
@@ -2558,7 +2558,7 @@ class Material(MaterialBase):
         Returns
         -------
         Viscoelastic
-            A :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
+            A Viscoelastic object.
 
         Raises
         ------
@@ -2597,7 +2597,7 @@ class Material(MaterialBase):
         Returns
         -------
         Viscosity
-            A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity` object.
+            A Viscosity object.
 
         Raises
         ------
@@ -2648,7 +2648,7 @@ class Material(MaterialBase):
         Returns
         -------
         Viscous
-            A :py:class:`~abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous` object.
+            A Viscous object.
         """
         self.viscous = Viscous(table, law, temperatureDependency, dependencies, time)
         return self.viscous
@@ -2671,7 +2671,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -2726,7 +2726,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -2752,7 +2752,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -2807,7 +2807,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -2833,7 +2833,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -2888,7 +2888,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -2914,7 +2914,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -2969,7 +2969,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -2996,7 +2996,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3054,7 +3054,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3081,7 +3081,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3139,7 +3139,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3165,7 +3165,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3220,7 +3220,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3246,7 +3246,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3301,7 +3301,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3328,7 +3328,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3386,7 +3386,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3413,7 +3413,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3471,7 +3471,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3498,7 +3498,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3556,7 +3556,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3583,7 +3583,7 @@ class Material(MaterialBase):
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
         position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3641,7 +3641,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3667,7 +3667,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3722,7 +3722,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------
@@ -3748,7 +3748,7 @@ class Material(MaterialBase):
         tolerance: float = 0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
-        """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+        """This method creates A DamageInitiation object.
 
         .. note::
             This function can be accessed by::
@@ -3803,7 +3803,7 @@ class Material(MaterialBase):
         Returns
         -------
         DamageInitiation
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
+            A DamageInitiation object.
 
         Raises
         ------

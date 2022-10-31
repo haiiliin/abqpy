@@ -114,11 +114,11 @@ class ConnectorDamage(ConnectorBehaviorOption):
         - CONNECTOR DAMAGE INITIATION
     """
 
-    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for the damage initiation table.
     initiationOptions: ConnectorOptions = ConnectorOptions()
 
-    #: A :py:class:`~abaqus.Connector.ConnectorOptions.ConnectorOptions` object specifying the ConnectorOptions used to define tabular options
+    #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for the damage evolution table.
     evolutionOptions: ConnectorOptions = ConnectorOptions()
 
@@ -194,12 +194,12 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
     evolutionPotentialExponent: float = 2
 
-    #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+    #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: initiation potential contribution. This member can be specified only if
     #: **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
     initiationPotentials: Optional[ConnectorPotentialArray] = None
 
-    #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+    #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: evolution potential contribution). This member can be specified only if
     #: **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
     #: **criterion** = FORCE or MOTION.
@@ -321,11 +321,11 @@ class ConnectorDamage(ConnectorBehaviorOption):
             only if **coupling** = COUPLED, when **evolution** = ON, when **evolutionPotentialOperator** = SUM,
             when **evolutionType** = MOTION, and when **criterion** = FORCE or MOTION.
         initiationPotentials
-            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+            A ConnectorPotentialArray object specifying one ConnectorPotential object for each
             initiation potential contribution. This member can be specified only if
             **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
         evolutionPotentials
-            A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
+            A ConnectorPotentialArray object specifying one ConnectorPotential object for each
             evolution potential contribution). This member can be specified only if
             **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
             **criterion** = FORCE or MOTION.
@@ -350,7 +350,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
         Returns
         -------
         ConnectorDamage
-            A :py:class:`~abaqus.Connector.ConnectorDamage.ConnectorDamage` object.
+            A ConnectorDamage object.
 
         Raises
         ------

@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class JournalOptions:
-    """A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifies how to record selection of geometry in the journal and
+    """A JournalOptions object specifies how to record selection of geometry in the journal and
     replay files. **journalOptions** can also be used to set the numeric formatting options
     for field report output, geometry commands output, and a default format for other
     numeric output. The JournalOptions object has no constructor. Abaqus creates the
@@ -45,14 +45,14 @@ class JournalOptions:
             A SymbolicConstant specifying the format of the geometry in the recovery file. Possible
             values are COORDINATE, INDEX, and COMPRESSEDINDEX. The default value is COMPRESSEDINDEX.
         defaultFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the default format for numeric output. The default
+            A NumberFormat object specifying the default format for numeric output. The default
             values are the same as the default values for the NumberFormat object.
         fieldReportFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the default format for numbers in a field report
+            A NumberFormat object specifying the default format for numbers in a field report
             output. The default values are the same as the default values for the NumberFormat
             object.
         geometryFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the default format for numbers in geometry commands
+            A NumberFormat object specifying the default format for numbers in geometry commands
             output. The default values are the same as the default values for the NumberFormat
             object.
         """
@@ -95,7 +95,7 @@ class JournalOptions:
         Returns
         -------
         NumberFormat
-            A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
+            A NumberFormat object.
         """
         self.numberFormat = numberFormat = NumberFormat(blankPad, format, numDigits, precision)
         return numberFormat

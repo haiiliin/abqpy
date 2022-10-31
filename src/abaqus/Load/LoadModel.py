@@ -94,7 +94,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         amplitude
@@ -112,7 +112,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyCharge
-            A :py:class:`~abaqus.Load.BodyCharge.BodyCharge` object.
+            A BodyCharge object.
         """
         self.loads[name] = load = BodyCharge(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -144,7 +144,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body concentration flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -163,7 +163,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyConcentrationFlux
-            A :py:class:`~abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux` object.
+            A BodyConcentrationFlux object.
         """
         self.loads[name] = load = BodyConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -196,7 +196,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         amplitude
@@ -214,7 +214,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyCurrent
-            A :py:class:`~abaqus.Load.BodyCurrent.BodyCurrent` object.
+            A BodyCurrent object.
         """
         self.loads[name] = load = BodyCurrent(
             name, createStepName, region, magnitude, amplitude, distributionType, field
@@ -248,7 +248,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         comp1
             A Complex specifying the first component of the load.
         comp2
@@ -266,7 +266,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyCurrentDensity
-            A :py:class:`~abaqus.Load.BodyCurrentDensity.BodyCurrentDensity` object.
+            A BodyCurrentDensity object.
         """
         self.loads[name] = load = BodyCurrentDensity(
             name,
@@ -307,7 +307,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         field
             A String specifying the name of the AnalyticalField object associated with this load.
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -331,7 +331,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyForce
-            A :py:class:`~abaqus.Load.BodyForce.BodyForce` object.
+            A BodyForce object.
         """
         self.loads[name] = load = BodyForce(
             name,
@@ -371,7 +371,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the body heat flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -390,7 +390,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BodyHeatFlux
-            A :py:class:`~abaqus.Load.BodyHeatFlux.BodyHeatFlux` object.
+            A BodyHeatFlux object.
         """
         self.loads[name] = load = BodyHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -424,11 +424,11 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the bolt load magnitude.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note:
+            A DatumAxis object specifying the orientation of the pre-tension section normal. Note:
             **datumAxis** is applicable only for Solid and Shell regions; it has no meaning for Wire
             regions.
         boltMethod
@@ -450,7 +450,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         BoltLoad
-            A :py:class:`~abaqus.Load.BoltLoad.BoltLoad` object.
+            A BoltLoad object.
 
         Raises
         ------
@@ -487,7 +487,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -505,7 +505,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcCharge
-            A :py:class:`~abaqus.Load.ConcCharge.ConcCharge` object.
+            A ConcCharge object.
         """
         self.loads[name] = load = ConcCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -538,7 +538,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -556,7 +556,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcConcFlux
-            A :py:class:`~abaqus.Load.ConcConcFlux.ConcConcFlux` object.
+            A ConcConcFlux object.
         """
         self.loads[name] = load = ConcConcFlux(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -589,7 +589,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -607,7 +607,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcCurrent
-            A :py:class:`~abaqus.Load.ConcCurrent.ConcCurrent` object.
+            A ConcCurrent object.
         """
         self.loads[name] = load = ConcCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -643,7 +643,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM and FIELD. The default value is UNIFORM.
@@ -676,7 +676,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcentratedForce
-            A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
+            A ConcentratedForce object.
         """
         self.loads[name] = load = ConcentratedForce(
             name,
@@ -720,7 +720,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -741,7 +741,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcentratedHeatFlux
-            A :py:class:`~abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux` object.
+            A ConcentratedHeatFlux object.
         """
         self.loads[name] = load = ConcentratedHeatFlux(
             name,
@@ -781,7 +781,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -799,7 +799,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConcPoreFluid
-            A :py:class:`~abaqus.Load.ConcPoreFluid.ConcPoreFluid` object.
+            A ConcPoreFluid object.
         """
         self.loads[name] = load = ConcPoreFluid(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -863,7 +863,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConnectorForce
-            A :py:class:`~abaqus.Load.ConnectorForce.ConnectorForce` object.
+            A ConnectorForce object.
         """
         self.loads[name] = load = ConnectorForce(
             name,
@@ -934,7 +934,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ConnectorMoment
-            A :py:class:`~abaqus.Load.ConnectorMoment.ConnectorMoment` object.
+            A ConnectorMoment object.
         """
         self.loads[name] = load = ConnectorMoment(
             name,
@@ -977,7 +977,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         point1
@@ -999,7 +999,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         CoriolisForce
-            A :py:class:`~abaqus.Load.CoriolisForce.CoriolisForce` object.
+            A CoriolisForce object.
         """
         self.loads[name] = load = CoriolisForce(
             name,
@@ -1048,7 +1048,7 @@ class LoadModel(ModelBase):
             The **field** argument applies only when **distributionType** = FIELD. The default value is an
             empty string.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
             1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
@@ -1065,7 +1065,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         Gravity
-            A :py:class:`~abaqus.Load.Gravity.Gravity` object.
+            A Gravity object.
         """
         self.loads[name] = load = Gravity(
             name,
@@ -1136,7 +1136,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         InertiaRelief
-            An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
+            An InertiaRelief object.
         """
         self.loads[name] = load = InertiaRelief(
             name,
@@ -1178,7 +1178,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             name of the first analysis step.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -1196,7 +1196,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         InwardVolAccel
-            An :py:class:`~abaqus.Load.InwardVolAccel.InwardVolAccel` object.
+            An InwardVolAccel object.
         """
         self.loads[name] = load = InwardVolAccel(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -1231,7 +1231,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
@@ -1259,7 +1259,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         LineLoad
-            A :py:class:`~abaqus.Load.LineLoad.LineLoad` object.
+            A LineLoad object.
         """
         self.loads[name] = load = LineLoad(
             name,
@@ -1304,7 +1304,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         cm1
             A Float or a Complex specifying the load component in the 4-direction. Note: Although
             **comp1**, **comp2**, and **comp3** are optional arguments, at least one of them must be
@@ -1337,7 +1337,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         Moment
-            A :py:class:`~abaqus.Load.Moment.Moment` object.
+            A Moment object.
         """
         self.loads[name] = load = Moment(
             name,
@@ -1381,7 +1381,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM and FIELD. The default value is UNIFORM.
@@ -1405,7 +1405,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         PEGLoad
-            A :py:class:`~abaqus.Load.PEGLoad.PEGLoad` object.
+            A PEGLoad object.
         """
         self.loads[name] = load = PEGLoad(
             name,
@@ -1449,7 +1449,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the pressure is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
@@ -1479,7 +1479,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         PipePressure
-            A :py:class:`~abaqus.Load.PipePressure.PipePressure` object.
+            A PipePressure object.
         """
         self.loads[name] = load = PipePressure(
             name,
@@ -1526,7 +1526,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the pressure is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float or a Complex specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
@@ -1555,7 +1555,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         Pressure
-            A :py:class:`~abaqus.Load.Pressure.Pressure` object.
+            A Pressure object.
         """
         self.loads[name] = load = Pressure(
             name,
@@ -1601,7 +1601,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         point1
@@ -1631,7 +1631,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         RotationalBodyForce
-            A :py:class:`~abaqus.Load.RotationalBodyForce.RotationalBodyForce` object.
+            A RotationalBodyForce object.
         """
         self.loads[name] = load = RotationalBodyForce(
             name,
@@ -1681,7 +1681,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED
@@ -1704,7 +1704,7 @@ class LoadModel(ModelBase):
             **directionVector**. Possible values are AXIS_1, AXIS_2, AXIS_3. The default value is
             AXIS_1.This parameter is available only if **traction** is GENERAL.
         localCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system of the load's degrees of
+            A DatumCsys object specifying the local coordinate system of the load's degrees of
             freedom. The default value is None, indicating that the degrees of freedom are defined
             in the global coordinate system or by the **userCsys** parameter if defined. This
             parameter is available only if **traction** is GENERAL. When this member is queried, it
@@ -1735,7 +1735,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         ShellEdgeLoad
-            A :py:class:`~abaqus.Load.ShellEdgeLoad.ShellEdgeLoad` object.
+            A ShellEdgeLoad object.
         """
         self.loads[name] = load = ShellEdgeLoad(
             name,
@@ -1782,7 +1782,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         globalStep
             A String specifying the step in the global model from which Abaqus reads the values of
             the variables that will drive the submodel analysis. The String indicates the position
@@ -1808,7 +1808,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SubmodelSB
-            A :py:class:`~abaqus.Load.SubmodelSB.SubmodelSB` object.
+            A SubmodelSB object.
         """
         self.loads[name] = load = SubmodelSB(
             name,
@@ -1846,7 +1846,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the substructure load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         loadCaseNames
             A list of names of the load cases that should be activated by this substructure load.
         magnitude
@@ -1859,7 +1859,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SubstructureLoad
-            A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
+            A SubstructureLoad object.
         """
         self.loads[name] = load = SubstructureLoad(name, createStepName, region, loadCaseNames, magnitude, amplitude)
         return load
@@ -1890,7 +1890,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -1908,7 +1908,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceCharge
-            A :py:class:`~abaqus.Load.SurfaceCharge.SurfaceCharge` object.
+            A SurfaceCharge object.
         """
         self.loads[name] = load = SurfaceCharge(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -1940,7 +1940,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface concentration flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -1960,7 +1960,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceConcentrationFlux
-            A :py:class:`~abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux` object.
+            A SurfaceConcentrationFlux object.
         """
         self.loads[name] = load = SurfaceConcentrationFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -1993,7 +1993,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the load magnitude.
         distributionType
@@ -2011,7 +2011,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceCurrent
-            A :py:class:`~abaqus.Load.SurfaceCurrent.SurfaceCurrent` object.
+            A SurfaceCurrent object.
         """
         self.loads[name] = load = SurfaceCurrent(
             name, createStepName, region, magnitude, distributionType, field, amplitude
@@ -2045,7 +2045,7 @@ class LoadModel(ModelBase):
             A String specifying the name of the step in which the load is created. This must be the
             first analysis step name.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         comp1
             A Complex specifying the first component of the load.
         comp2
@@ -2063,7 +2063,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceCurrentDensity
-            A :py:class:`~abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity` object.
+            A SurfaceCurrentDensity object.
         """
         self.loads[name] = load = SurfaceCurrentDensity(
             name,
@@ -2102,7 +2102,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface heat flux magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -2121,7 +2121,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceHeatFlux
-            A :py:class:`~abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux` object.
+            A SurfaceHeatFlux object.
         """
         self.loads[name] = load = SurfaceHeatFlux(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2153,7 +2153,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float specifying the surface pore fluid flow magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -2172,7 +2172,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfacePoreFluid
-            A :py:class:`~abaqus.Load.SurfacePoreFluid.SurfacePoreFluid` object.
+            A SurfacePoreFluid object.
         """
         self.loads[name] = load = SurfacePoreFluid(
             name, createStepName, region, magnitude, field, distributionType, amplitude
@@ -2212,7 +2212,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float or Complex specifying the load magnitude. **magnitude** is optional if
             **distributionType** = USER_DEFINED.
@@ -2244,7 +2244,7 @@ class LoadModel(ModelBase):
             of freedom are defined in the global coordinate system or by the **localCsys** parameter
             if defined. The default value is "None".
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
+            A VertexArray object of length 2 specifying the direction of the load. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
             **traction** is SHEAR, then **directionVector** will be projected onto the region surface.
             This parameter is available only if **traction** is GENERAL or SHEAR.
@@ -2264,7 +2264,7 @@ class LoadModel(ModelBase):
         Returns
         -------
         SurfaceTraction
-            A :py:class:`~abaqus.Load.SurfaceTraction.SurfaceTraction` object.
+            A SurfaceTraction object.
         """
         self.loads[name] = load = SurfaceTraction(
             name,

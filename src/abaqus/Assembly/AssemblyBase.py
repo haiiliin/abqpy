@@ -31,7 +31,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AssemblyBase(AssemblyFeature):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -58,19 +58,19 @@ class AssemblyBase(AssemblyFeature):
     #: **regenerateConstraintsTogether**, Abaqus/CAE will regenerate the assembly features.
     regenerateConstraintsTogether: Boolean = ON
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices existing at the assembly level. This
+    #: A VertexArray object specifying all the vertices existing at the assembly level. This
     #: member does not provide access to the vertices at the instance level.
     vertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges existing at the assembly level. This member
+    #: An EdgeArray object specifying all the edges existing at the assembly level. This member
     #: does not provide access to the edges at the instance level.
     edges: EdgeArray = EdgeArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements existing at the assembly level.
+    #: A MeshElementArray object specifying all the elements existing at the assembly level.
     #: This member does not provide access to the elements at the instance level.
     elements: MeshElementArray = MeshElementArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes existing at the assembly level. This
+    #: A MeshNodeArray object specifying all the nodes existing at the assembly level. This
     #: member does not provide access to the nodes at the instance level.
     nodes: MeshNodeArray = MeshNodeArray([])
 
@@ -123,20 +123,20 @@ class AssemblyBase(AssemblyFeature):
     #: A repository of ModelInstance objects.
     modelInstances: Dict[str, ModelInstance] = {}
 
-    #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying
+    #: A PartInstance object specifying the PartInstances and A ModelInstance object specifying
     #: the ModelInstances.
     allInstances: Dict[str, Union[PartInstance, ModelInstance]] = {}
 
-    #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
+    #: An EngineeringFeature object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
 
     #: A String specifying the name of the model to which the assembly belongs.
     modelName: str = ""
 
-    #: A :py:class:`~abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray` object.
+    #: A ConnectorOrientationArray object.
     connectorOrientations: ConnectorOrientationArray = []
 
-    #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
+    #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
 
     @overload
@@ -154,7 +154,7 @@ class AssemblyBase(AssemblyFeature):
         name
             A String specifying the repository key. The name must be a valid Abaqus object name.
         part
-            A :py:class:`~abaqus.Part.Part.Part` object to be instanced. If the part does not exist, no PartInstance object is
+            A Part object to be instanced. If the part does not exist, no PartInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new part instance that will
@@ -166,7 +166,7 @@ class AssemblyBase(AssemblyFeature):
         Returns
         -------
         PartInstance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+            A PartInstance object.
         """
         ...
 
@@ -185,7 +185,7 @@ class AssemblyBase(AssemblyFeature):
         name
             The repository key. The name must be a valid Abaqus object name.
         model
-            A :py:class:`~abaqus.Model.Model.Model` object to be instanced. If the model does not exist, no ModelInstance object is
+            A Model object to be instanced. If the model does not exist, no ModelInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new instance that will
@@ -194,7 +194,7 @@ class AssemblyBase(AssemblyFeature):
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+            A ModelInstance object.
         """
         ...
 
@@ -217,7 +217,7 @@ class AssemblyBase(AssemblyFeature):
         Returns
         -------
         PartInstance
-            A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object.
+            A PartInstance object.
         """
         if "part" in kwargs.keys() or (len(args) > 0 and isinstance(args[0], Part)):
             instance = PartInstance(name, *args, **kwargs)
@@ -481,21 +481,21 @@ class AssemblyBase(AssemblyFeature):
         Parameters
         ----------
         edges
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object which is a sequence of Edge objects.
+            An EdgeArray object which is a sequence of Edge objects.
 
         Returns
         -------
         Sequence[dict]
             A tuple of dictionary objects. Each dictionary contains five items with the following keys:
 
-            - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line.
-            - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the
+            - **edge**: An Edge object specifying the attachment line.
+            - **startFace**: A Face object specifying the face associated with one end of the
               attachment line.
-            - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of
+            - **endFace**: A Face object specifying the face associated with the other end of
               the attachment line.
-            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
+            - **startVertex**: A ConstrainedSketchVertex
               object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace.
-            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
+            - **endVertex**: A ConstrainedSketchVertex
               object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace.
         """
         ...
@@ -679,7 +679,7 @@ class AssemblyBase(AssemblyFeature):
             ALL_EDGES and COPLANAR_EDGES. If **filter** = COPLANAR_EDGES, edges that are coplanar to the
             sketching plane are the only candidates for projection. The default value is ALL_EDGES.
         upToFeature
-            A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part.
+            A Feature object specifying a marker in the feature-based history of the part.
             Abaqus/CAE projects onto the sketch only the part entities that were created before the
             feature specified by this marker. By default, all part entities are candidates for
             projection.
@@ -927,7 +927,7 @@ class AssemblyBase(AssemblyFeature):
         elemFaces
             A sequence of MeshFace objects specifying the source region.
         targetFace
-            A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying the target region. The target face can be of a different
+            A MeshFace object specifying the target region. The target face can be of a different
             part instance.
         nodes
             A sequence of MeshNode objects or a Set object containing nodes on the boundary of
