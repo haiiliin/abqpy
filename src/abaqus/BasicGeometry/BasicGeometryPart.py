@@ -23,7 +23,7 @@ class BasicGeometryPart(PartBase):
         Parameters
         ----------
         edge
-            An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge on which the interesting point is positioned.
+            An Edge object specifying the edge on which the interesting point is positioned.
         rule
             A SymbolicConstant specifying the position of the interesting point. Possible values are
             MIDDLE or CENTER.
@@ -31,7 +31,7 @@ class BasicGeometryPart(PartBase):
         Returns
         -------
         InterestingPoint
-            An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object.
+            An InterestingPoint object.
 
         """
         ...

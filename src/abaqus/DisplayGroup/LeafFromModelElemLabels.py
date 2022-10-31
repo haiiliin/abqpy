@@ -57,6 +57,6 @@ class LeafFromModelElemLabels(Leaf):
         Returns
         -------
         LeafFromModelElemLabels
-            A :py:class:`~abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels` object.
+            A LeafFromModelElemLabels object.
         """
         super().__init__(DEFAULT_MODEL)

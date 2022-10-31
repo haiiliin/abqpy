@@ -84,7 +84,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         Returns
         -------
         IgnoredVertex
-            An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
+            An IgnoredVertex object or a sequence of IgnoredVertex objects.
 
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
@@ -115,7 +115,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         Returns
         -------
         IgnoredVertex
-            An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
+            An IgnoredVertex object or a sequence of IgnoredVertex objects.
 
         """
         ...

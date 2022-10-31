@@ -34,10 +34,10 @@ class MohrCoulombPlasticity:
         - MOHR COULOMB
     """
 
-    #: A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object.
+    #: A MohrCoulombHardening object.
     mohrCoulombHardening: MohrCoulombHardening = MohrCoulombHardening(((),))
 
-    #: A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff` object.
+    #: A TensionCutOff object.
     tensionCutOff: TensionCutOff = TensionCutOff(((),))
 
     @abaqus_method_doc
@@ -80,7 +80,7 @@ class MohrCoulombPlasticity:
         Returns
         -------
         MohrCoulombPlasticity
-            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
+            A MohrCoulombPlasticity object.
 
         Raises
         ------

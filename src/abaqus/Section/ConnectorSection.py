@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, CONSTANT, NONE, ON, UNSPEC
 
 @abaqus_class_doc
 class ConnectorSection(Section):
-    """A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object describes the connection type and the behavior of a connector.
+    """A ConnectorSection object describes the connection type and the behavior of a connector.
     The ConnectorSection object is derived from the Section object.
 
     .. note::
@@ -160,7 +160,7 @@ class ConnectorSection(Section):
     #: default value is CONSTANT.
     extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT
 
-    #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
+    #: A ConnectorBehaviorOptionArray object.
     behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None
 
     @abaqus_method_doc
@@ -309,12 +309,12 @@ class ConnectorSection(Section):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
+            A ConnectorBehaviorOptionArray object.
 
         Returns
         -------
         ConnectorSection
-            A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object.
+            A ConnectorSection object.
 
         Raises
         ------
@@ -460,7 +460,7 @@ class ConnectorSection(Section):
             data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
             default value is CONSTANT.
         behaviorOptions
-            A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
+            A ConnectorBehaviorOptionArray object.
 
         Raises
         ------

@@ -79,7 +79,7 @@ class CapCreepCohesion:
         Returns
         -------
         CapCreepCohesion
-            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion` object.
+            A CapCreepCohesion object.
         """
         ...
 

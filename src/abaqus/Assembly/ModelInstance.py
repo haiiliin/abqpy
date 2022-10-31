@@ -20,7 +20,7 @@ class Model:
 
 @abaqus_class_doc
 class ModelInstance:
-    """A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model.
+    """A ModelInstance object is an instance of a Model.
 
     .. note::
         This object can be accessed by::
@@ -39,16 +39,16 @@ class ModelInstance:
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
     surfaces: Dict[str, Surface] = {}
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
+    #: A VertexArray object.
     vertices: VertexArray = VertexArray([])
 
-    #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object.
+    #: An EdgeArray object.
     edges: EdgeArray = EdgeArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
+    #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
 
-    #: A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object.
+    #: A MeshNodeArray object.
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Datum objects.
@@ -71,7 +71,7 @@ class ModelInstance:
         name
             The repository key. The name must be a valid Abaqus object name.
         model
-            A :py:class:`~abaqus.Model.Model.Model` object to be instanced. If the model does not exist, no ModelInstance object is
+            A Model object to be instanced. If the model does not exist, no ModelInstance object is
             created.
         autoOffset
             A Boolean specifying whether to apply an auto offset to the new instance that will
@@ -80,7 +80,7 @@ class ModelInstance:
         Returns
         -------
         ModelInstance
-            A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object.
+            A ModelInstance object.
         """
         ...
 

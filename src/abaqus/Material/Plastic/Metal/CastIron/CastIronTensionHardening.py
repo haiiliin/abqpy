@@ -51,7 +51,7 @@ class CastIronTensionHardening:
         Returns
         -------
         CastIronTensionHardening
-            A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronTensionHardening.CastIronTensionHardening` object.
+            A CastIronTensionHardening object.
 
         Raises
         ------

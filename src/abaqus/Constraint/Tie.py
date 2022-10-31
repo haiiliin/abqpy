@@ -31,6 +31,7 @@ class Tie(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
+<<<<<<< HEAD
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
     master: Region
 
@@ -39,6 +40,22 @@ class Tie(Constraint):
 
     #: A Boolean specifying whether initial positions of tied slave nodes are adjusted to
     #: lie on the master surface. The default value is ON.
+=======
+    #: A Region object specifying the name of the main surface.
+    #:
+    #: .. versionchanged:: 2022
+    #:     The `master` attribute was renamed to `main`.
+    main: Region
+
+    #: A Region object specifying the name of the secondary surface.
+    #:
+    #: .. versionchanged:: 2022
+    #:     The `slave` attribute was renamed to `secondary`.
+    secondary: Region
+
+    #: A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
+    #: lie on the main surface. The default value is ON.
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
     adjust: Boolean = ON
 
     #: A SymbolicConstant specifying the method used to determine the position tolerance.
@@ -97,10 +114,23 @@ class Tie(Constraint):
         ----------
         name
             A String specifying the constraint repository key.
+<<<<<<< HEAD
         master
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the master surface.
         slave
             A :py:class:`~abaqus.Region.Region.Region` object specifying the name of the slave surface.
+=======
+        main
+            A Region object specifying the name of the main surface.
+
+            .. versionchanged:: 2022
+                The `master` argument was renamed to `main`.
+        secondary
+            A Region object specifying the name of the secondary surface.
+
+            .. versionchanged:: 2022
+                The `slave` argument was renamed to `secondary`.
+>>>>>>> 493f63dd ([typing]: Remove `:py:class:` roles in docstrings (#3459))
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.
@@ -131,7 +161,7 @@ class Tie(Constraint):
         Returns
         -------
         Tie
-            A :py:class:`~abaqus.Constraint.Tie.Tie` object.
+            A Tie object.
         """
         super().__init__()
 

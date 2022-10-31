@@ -101,7 +101,7 @@ class DamageStabilization:
         Returns
         -------
         DamageStabilization
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
+            A DamageStabilization object.
 
         Raises
         ------

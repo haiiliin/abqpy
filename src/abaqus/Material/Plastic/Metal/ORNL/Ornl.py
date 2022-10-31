@@ -56,7 +56,7 @@ class Ornl:
         Returns
         -------
         Ornl
-            An :py:class:`~abaqus.Material.Plastic.Metal.ORNL.Ornl.Ornl` object.
+            An Ornl object.
 
         Raises
         ------

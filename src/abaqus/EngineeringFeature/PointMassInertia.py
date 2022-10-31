@@ -32,7 +32,7 @@ class PointMassInertia(Inertia):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass or rotary inertia is applied.
+    #: A Region object specifying the region to which the mass or rotary inertia is applied.
     region: Region
 
     #: A Float specifying the mass magnitude for isotropic mass. This parameter cannot be
@@ -118,7 +118,7 @@ class PointMassInertia(Inertia):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the mass or rotary inertia is applied.
+            A Region object specifying the region to which the mass or rotary inertia is applied.
         mass
             A Float specifying the mass magnitude for isotropic mass. This parameter cannot be
             specified when anisotropic mass terms are specified. The default value is 0.0.
@@ -161,7 +161,7 @@ class PointMassInertia(Inertia):
         Returns
         -------
         PointMassInertia
-            A :py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` object.
+            A PointMassInertia object.
         """
         super().__init__()
 

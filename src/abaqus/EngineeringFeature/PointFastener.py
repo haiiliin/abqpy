@@ -48,18 +48,18 @@ class PointFastener(Fastener):
     #: A String specifying the repository key.
     name: str
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which fasteners are applied.
+    #: A Region object specifying the region to which fasteners are applied.
     region: Region
 
     #: A Float specifying the physical fastener radius.
     physicalRadius: float
 
-    #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
+    #: A VertexArray object of length 2 specifying the direction of projection. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
     #: default value is None.
     directionVector: Optional[tuple] = None
 
-    #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
+    #: A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
     targetSurfaces: RegionArray = MODEL
 
     #: A Boolean specifying whether to constrain rotational displacement component about the
@@ -217,15 +217,15 @@ class PointFastener(Fastener):
         name
             A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which fasteners are applied.
+            A Region object specifying the region to which fasteners are applied.
         physicalRadius
             A Float specifying the physical fastener radius.
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
+            A VertexArray object of length 2 specifying the direction of projection. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
             default value is None.
         targetSurfaces
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
+            A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
         ur1
             A Boolean specifying whether to constrain rotational displacement component about the
             1-direction. The default value is ON.
@@ -317,7 +317,7 @@ class PointFastener(Fastener):
         Returns
         -------
         PointFastener
-            A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` object.
+            A PointFastener object.
         """
         super().__init__()
 
@@ -354,11 +354,11 @@ class PointFastener(Fastener):
         Parameters
         ----------
         directionVector
-            A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
+            A VertexArray object of length 2 specifying the direction of projection. Instead of
             through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
             default value is None.
         targetSurfaces
-            A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
+            A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
         ur1
             A Boolean specifying whether to constrain rotational displacement component about the
             1-direction. The default value is ON.

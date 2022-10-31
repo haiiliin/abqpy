@@ -35,7 +35,7 @@ class HistoryRegion:
     #: A String specifying the description of the HistoryRegion object.
     description: str
 
-    #: A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+    #: A HistoryPoint object specifying the point to which the history data refer.
     point: HistoryPoint
 
     #: None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
@@ -64,7 +64,7 @@ class HistoryRegion:
         description
             A String specifying the description of the HistoryRegion object.
         point
-            A :py:class:`~abaqus.Odb.HistoryPoint.HistoryPoint` object specifying the point to which the history data refer.
+            A HistoryPoint object specifying the point to which the history data refer.
         loadCase
             None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
             object. The default value is None.
@@ -72,7 +72,7 @@ class HistoryRegion:
         Returns
         -------
         HistoryRegion
-            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+            A HistoryRegion object.
         """
         ...
 
@@ -89,7 +89,7 @@ class HistoryRegion:
         Returns
         -------
         HistoryRegion
-            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+            A HistoryRegion object.
         """
         ...
 
@@ -107,7 +107,7 @@ class HistoryRegion:
         Returns
         -------
         HistoryRegion
-            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+            A HistoryRegion object.
         """
         ...
 
@@ -127,7 +127,7 @@ class HistoryRegion:
         Returns
         -------
         HistoryRegion
-            A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
+            A HistoryRegion object.
         """
         ...
 
@@ -167,7 +167,7 @@ class HistoryRegion:
         Returns
         -------
         HistoryOutput
-            A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
+            A HistoryOutput object.
         """
         self.historyOutputs[name] = historyOutput = HistoryOutput(name, description, type, validInvariants)
         return historyOutput

@@ -78,7 +78,7 @@ class OdbDatumCsys:
         Returns
         -------
         OdbDatumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+            An OdbDatumCsys object.
         """
         ...
 
@@ -111,16 +111,16 @@ class OdbDatumCsys:
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         origin
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node at the origin of the datum coordinate system.
+            An OdbMeshNode object specifying a node at the origin of the datum coordinate system.
         point1
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node on the local 1- or rr-axis.
+            An OdbMeshNode object specifying a node on the local 1- or rr-axis.
         point2
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying a node in the 1-2 or rr-θθ plane.
+            An OdbMeshNode object specifying a node in the 1-2 or rr-θθ plane.
 
         Returns
         -------
         OdbDatumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+            An OdbDatumCsys object.
         """
         ...
 
@@ -153,16 +153,16 @@ class OdbDatumCsys:
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         node1Arc
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
+            An OdbMeshNode object that lies on the circular arc.
         node2Arc
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
+            An OdbMeshNode object that lies on the circular arc.
         node3Arc
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object that lies on the circular arc.
+            An OdbMeshNode object that lies on the circular arc.
 
         Returns
         -------
         OdbDatumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+            An OdbDatumCsys object.
         """
         ...
 
@@ -190,12 +190,12 @@ class OdbDatumCsys:
             A SymbolicConstant specifying the type of coordinate system. Possible values are
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         origin
-            An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the origin of the datum coordinate system.
+            An OdbMeshNode object specifying the origin of the datum coordinate system.
 
         Returns
         -------
         OdbDatumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+            An OdbDatumCsys object.
         """
         ...
 
@@ -213,11 +213,11 @@ class OdbDatumCsys:
         name
             A String specifying the repository key.
         datumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object specifying the object to be copied.
+            An OdbDatumCsys object specifying the object to be copied.
 
         Returns
         -------
         OdbDatumCsys
-            An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
+            An OdbDatumCsys object.
         """
         ...
