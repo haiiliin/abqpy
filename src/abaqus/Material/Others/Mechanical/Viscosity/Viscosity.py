@@ -33,7 +33,7 @@ class Viscosity:
         - VISCOSITY
     """
 
-    #: A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs` object.
+    #: A Trs object.
     trs: Trs = Trs()
 
     @abaqus_method_doc
@@ -66,7 +66,7 @@ class Viscosity:
         Returns
         -------
         Viscosity
-            A :py:class:`~abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity` object.
+            A Viscosity object.
 
         Raises
         ------

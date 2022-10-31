@@ -34,7 +34,7 @@ class Pressure(Load):
     #: **distributionType** = DISCRETE_FIELD. The default value is an empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -67,7 +67,7 @@ class Pressure(Load):
         createStepName
             A String specifying the name of the step in which the pressure is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         magnitude
             A Float or a Complex specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
@@ -96,7 +96,7 @@ class Pressure(Load):
         Returns
         -------
         Pressure
-            A :py:class:`~abaqus.Load.Pressure.Pressure` object.
+            A Pressure object.
         """
         super().__init__()
 

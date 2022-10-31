@@ -14,7 +14,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshEditAssembly(AssemblyBase):
-    """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
+    """An Assembly object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
@@ -127,7 +127,7 @@ class MeshEditAssembly(AssemblyBase):
             A Float specifying an offset to apply to the value of the third coordinate of the
             specified nodes.
         localCsys
-            A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global
+            A DatumCsys object specifying the local coordinate system. If unspecified, the global
             coordinate system will be used.
         projectToGeometry
             A Boolean specifying whether to project nodes back to their original geometry. For
@@ -174,9 +174,9 @@ class MeshEditAssembly(AssemblyBase):
         Parameters
         ----------
         node1
-            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the first node to merge.
+            A MeshNode object specifying the first node to merge.
         node2
-            A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the second node to merge.
+            A MeshNode object specifying the second node to merge.
         removeDuplicateElements
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is True.
@@ -244,7 +244,7 @@ class MeshEditAssembly(AssemblyBase):
         Parameters
         ----------
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the domain to be offset.
+            A Region object specifying the domain to be offset.
         meshType
             A Symbolic Constant specifying the type of mesh to be generated. Possible values are
             SOLID or SHELL.

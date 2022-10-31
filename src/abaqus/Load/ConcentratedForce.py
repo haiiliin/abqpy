@@ -44,7 +44,7 @@ class ConcentratedForce(Load):
     #: empty string.
     field: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -76,7 +76,7 @@ class ConcentratedForce(Load):
         createStepName
             A String specifying the name of the step in which the load is created.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+            A Region object specifying the region to which the load is applied.
         distributionType
             A SymbolicConstant specifying how the load is distributed spatially. Possible values are
             UNIFORM and FIELD. The default value is UNIFORM.
@@ -109,7 +109,7 @@ class ConcentratedForce(Load):
         Returns
         -------
         ConcentratedForce
-            A :py:class:`~abaqus.Load.ConcentratedForce.ConcentratedForce` object.
+            A ConcentratedForce object.
         """
         super().__init__()
 

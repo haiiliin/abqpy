@@ -97,14 +97,14 @@ class SubstructureGenerateStep(AnalysisStep):
     #: empty string.
     substructureIdentifier: str = ""
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region for substructure recovery. This argument is
+    #: A Region object specifying the region for substructure recovery. This argument is
     #: required when **recoveryMatrix** = REGION.
     recoveryRegion: Region = Region()
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray` object.
+    #: A SubstructureGenerateFrequencyArray object.
     frequencyRange: SubstructureGenerateFrequencyArray = []
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
+    #: A SubstructureGenerateModesArray object.
     modeRange: SubstructureGenerateModesArray = []
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
@@ -156,13 +156,13 @@ class SubstructureGenerateStep(AnalysisStep):
     #: A repository of HistoryOutputRequestState objects.
     historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
-    #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
+    #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
-    #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
+    #: A Monitor object.
     monitor: Optional[Monitor] = None
 
-    #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
+    #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
@@ -171,10 +171,10 @@ class SubstructureGenerateStep(AnalysisStep):
     #: A repository of AdaptiveMeshDomain objects.
     adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
+    #: A Control object.
     control: Control = Control()
 
-    #: A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` object.
+    #: A SolverControl object.
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
@@ -239,7 +239,7 @@ class SubstructureGenerateStep(AnalysisStep):
             A SymbolicConstant specifying the subtructure recovery to be computed. Possible values
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region for substructure recovery. This argument is
+            A Region object specifying the region for substructure recovery. This argument is
             required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
@@ -263,9 +263,9 @@ class SubstructureGenerateStep(AnalysisStep):
             A SymbolicConstant specifying the eigenmodes to be retained. Possible values are
             MODE_RANGE, FREQUENCY_RANGE, and NONE. The default value is NONE.
         modeRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
+            A SubstructureGenerateModesArray object.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray` object.
+            A SubstructureGenerateFrequencyArray object.
         globalDampingField
             A SymbolicConstant specifying the field to which the global damping factors should be
             applied. Possible values are ALL, ACOUSTIC, MECHANICAL, and NONE. The default value is
@@ -290,7 +290,7 @@ class SubstructureGenerateStep(AnalysisStep):
         Returns
         -------
         SubstructureGenerateStep
-            A :py:class:`~abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep` object.
+            A SubstructureGenerateStep object.
 
         Raises
         ------
@@ -330,7 +330,7 @@ class SubstructureGenerateStep(AnalysisStep):
             A SymbolicConstant specifying the subtructure recovery to be computed. Possible values
             are WHOLE_MODEL, REGION, and NONE. The default value is WHOLE_MODEL.
         recoveryRegion
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region for substructure recovery. This argument is
+            A Region object specifying the region for substructure recovery. This argument is
             required when **recoveryMatrix** = REGION.
         computeGravityLoadVectors
             A Boolean specifying whether to compute the gravity load vectors. The default value is
@@ -354,9 +354,9 @@ class SubstructureGenerateStep(AnalysisStep):
             A SymbolicConstant specifying the eigenmodes to be retained. Possible values are
             MODE_RANGE, FREQUENCY_RANGE, and NONE. The default value is NONE.
         modeRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray` object.
+            A SubstructureGenerateModesArray object.
         frequencyRange
-            A :py:class:`~abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray` object.
+            A SubstructureGenerateFrequencyArray object.
         globalDampingField
             A SymbolicConstant specifying the field to which the global damping factors should be
             applied. Possible values are ALL, ACOUSTIC, MECHANICAL, and NONE. The default value is

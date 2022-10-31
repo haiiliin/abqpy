@@ -164,7 +164,7 @@ class AdaptiveMeshControl:
         Returns
         -------
         AdaptiveMeshControl
-            An :py:class:`~abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl` object.
+            An AdaptiveMeshControl object.
 
         Raises
         ------

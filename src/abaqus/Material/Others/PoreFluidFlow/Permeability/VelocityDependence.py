@@ -42,7 +42,7 @@ class VelocityDependence:
         Returns
         -------
         VelocityDependence
-            A :py:class:`~abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence` object.
+            A VelocityDependence object.
 
         Raises
         ------

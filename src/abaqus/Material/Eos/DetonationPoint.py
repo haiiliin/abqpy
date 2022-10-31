@@ -3,7 +3,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class DetonationPoint:
-    """A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object specifies a suboption of the Eos object. The DetonationPoint
+    """A DetonationPoint object specifies a suboption of the Eos object. The DetonationPoint
     object defines either isotropic linear elastic shear or linear viscous shear behavior
     for a hydrodynamic material.
 
@@ -45,7 +45,7 @@ class DetonationPoint:
         Returns
         -------
         DetonationPoint
-            A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object.
+            A DetonationPoint object.
         """
         ...
 

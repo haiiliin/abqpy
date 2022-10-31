@@ -61,7 +61,7 @@ class SpecificHeat:
         Returns
         -------
         SpecificHeat
-            A :py:class:`~abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat` object.
+            A SpecificHeat object.
 
         Raises
         ------

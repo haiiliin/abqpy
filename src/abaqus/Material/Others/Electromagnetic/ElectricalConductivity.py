@@ -90,7 +90,7 @@ class ElectricalConductivity:
         Returns
         -------
         ElectricalConductivity
-            An :py:class:`~abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity` object.
+            An ElectricalConductivity object.
 
         Raises
         ------

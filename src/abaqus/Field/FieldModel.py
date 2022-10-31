@@ -49,7 +49,7 @@ class FieldModel(ModelBase):
         dataWidth
             An Int specifying the width of the supplied data. The default value is 1.
         data
-            A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
+            A DataTableArray object.
         description
             A String specifying the description of the field. The default value is an empty string.
         orientationType
@@ -63,7 +63,7 @@ class FieldModel(ModelBase):
         Returns
         -------
         DiscreteField
-            A :py:class:`~abaqus.Field.DiscreteField.DiscreteField` object.
+            A DiscreteField object.
 
         Raises
         ------
@@ -110,7 +110,7 @@ class FieldModel(ModelBase):
         Returns
         -------
         ExpressionField
-            An :py:class:`~abaqus.Field.ExpressionField.ExpressionField` object.
+            An ExpressionField object.
 
         Raises
         ------
@@ -220,7 +220,7 @@ class FieldModel(ModelBase):
         Returns
         -------
         MappedField
-            A :py:class:`~abaqus.Field.MappedField.MappedField` object.
+            A MappedField object.
 
         Raises
         ------

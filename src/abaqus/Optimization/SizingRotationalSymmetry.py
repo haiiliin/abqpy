@@ -28,7 +28,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
     #: A Float specifying the repeating segment size, an angle in degrees.
     angle: float
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+    #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
     #: A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
@@ -67,7 +67,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
         angle
             A Float specifying the repeating segment size, an angle in degrees.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
+            A Region object specifying the region to which the geometric restriction is applied.
         axis
             A SymbolicConstant specifying the axis of symmetry. Possible values are AXIS_1, AXIS_2,
             and AXIS_3. The default value is AXIS_1.
@@ -81,7 +81,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
         Returns
         -------
         SizingRotationalSymmetry
-            A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
+            A SizingRotationalSymmetry object.
         """
         super().__init__()
 

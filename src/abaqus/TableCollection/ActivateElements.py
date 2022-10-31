@@ -65,7 +65,7 @@ class ActivateElements:
         Returns
         -------
         ActivateElements
-            An :py:class:`~abaqus.TableCollection.ActivateElements.ActivateElements` object.
+            An ActivateElements object.
 
         Raises
         ------

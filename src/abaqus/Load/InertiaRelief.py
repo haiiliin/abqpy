@@ -28,7 +28,7 @@ class InertiaRelief(Load):
     #: returns an Int. The default value is None.
     localCoordinates: Optional[int] = None
 
-    #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
+    #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
     @abaqus_method_doc
@@ -87,7 +87,7 @@ class InertiaRelief(Load):
         Returns
         -------
         InertiaRelief
-            An :py:class:`~abaqus.Load.InertiaRelief.InertiaRelief` object.
+            An InertiaRelief object.
         """
         super().__init__()
 
