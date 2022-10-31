@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-10-31 07:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -233,7 +233,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -417,7 +417,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1040,7 +1040,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel.Part:24
-msgid "A :py:class:`~abaqus.Part.Part.Part` object."
+msgid "A Part object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.Node:0
@@ -1232,7 +1232,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.vertices:1
-msgid "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part."
+msgid "A VertexArray object specifying all the vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1241,7 +1241,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.ignoredVertices:1
-msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part."
+msgid "An IgnoredVertexArray object specifying all the ignored vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1250,7 +1250,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.edges:1
-msgid "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part."
+msgid "An EdgeArray object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1259,7 +1259,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.ignoredEdges:1
-msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part."
+msgid "An IgnoredEdgeArray object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1268,7 +1268,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.faces:1
-msgid "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part."
+msgid "A FaceArray object specifying all the faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1277,7 +1277,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.cells:1
-msgid "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying all the cells in the part."
+msgid "A CellArray object specifying all the cells in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1312,7 +1312,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.elements:1
-msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part."
+msgid "A MeshElementArray object specifying all the elements in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1329,7 +1329,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.elementFaces:1
-msgid "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part."
+msgid "A MeshFaceArray object specifying all the unique element faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1338,7 +1338,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.nodes:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the nodes in the part."
+msgid "A MeshNodeArray object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1347,7 +1347,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.retainedNodes:1
-msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying all the retained nodes in the substructure part."
+msgid "A MeshNodeArray object specifying all the retained nodes in the substructure part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1437,7 +1437,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.engineeringFeatures:1
-msgid "An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object."
+msgid "An EngineeringFeature object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1446,7 +1446,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.sectionAssignments:1
-msgid "A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object."
+msgid "A SectionAssignmentArray object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1455,7 +1455,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.materialOrientations:1
-msgid "A :py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray` object."
+msgid "A MaterialOrientationArray object."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1481,7 +1481,7 @@ msgstr ""
 
 #: ../../None:34:<autosummary>:1
 #: ../../docstring of abaqus.Part.PartBase.PartBase.elementEdges:1
-msgid "A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part."
+msgid "A MeshEdgeArray object specifying all the unique element edges in the part."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -3039,7 +3039,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:15
-msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing two-dimensional orphan mesh Part object."
+msgid "A Part object specifying an existing two-dimensional orphan mesh Part object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:20
@@ -3051,7 +3051,7 @@ msgid "A Float specifying the traversal angle in degrees of the spline that trig
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:30
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the specified part is not an orphan mesh part:   Specified part must be an orphan mesh. - If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:   Planar shell feature failed - If the specified part is not two-dimensional:   Cannot create a geometry from a 3D part. - If the specified part is a rigid body:   Cannot create a geometry from a rigid body."
+msgid "**part** -- A Part object  - If the specified part is not an orphan mesh part:   Specified part must be an orphan mesh. - If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:   Planar shell feature failed - If the specified part is not two-dimensional:   Cannot create a geometry from a 3D part. - If the specified part is a rigid body:   Cannot create a geometry from a rigid body."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:30
@@ -3066,7 +3066,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromOdb:43
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:27
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSubstructure:19
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object"
+msgid "**part** -- A Part object"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:32
@@ -3138,7 +3138,7 @@ msgid "A Float specifying an approximate element length in the extruded directio
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:21
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the specified part is not an orphan mesh part:   Cannot extrude a geometric part. - If the specified part is not two-dimensional:   Cannot extrude a 3D part. - If the specified part is a rigid body:   Cannot change dimension of a rigid body."
+msgid "**part** -- A Part object  - If the specified part is not an orphan mesh part:   Cannot extrude a geometric part. - If the specified part is not two-dimensional:   Cannot extrude a 3D part. - If the specified part is a rigid body:   Cannot change dimension of a rigid body."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh:23
@@ -3159,7 +3159,7 @@ msgid "Check `PartFromGeometryFile on help.3ds.com/2022 <https://help.3ds.com/20
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromGeometryFile:14
-msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object specifying a file containing geometry."
+msgid "An AcisFile object specifying a file containing geometry."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromGeometryFile:22
@@ -3201,7 +3201,7 @@ msgid "An Int specifying whether to convert to precise geometry. Possible value 
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromGeometryFile:62
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the ACIS file is corrupt:   PartError: the file is corrupt - If the dimensionality does not correspond to what is found in the ACIS file:   PartError: dimensionality does not match the contents of the file - If the type does not correspond to what is found in the ACIS file:   PartError: type does not match the contents of the file"
+msgid "**part** -- A Part object  - If the ACIS file is corrupt:   PartError: the file is corrupt - If the dimensionality does not correspond to what is found in the ACIS file:   PartError: dimensionality does not match the contents of the file - If the type does not correspond to what is found in the ACIS file:   PartError: type does not match the contents of the file"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromGeometryFile:64
@@ -3233,7 +3233,7 @@ msgid "A Boolean specifying whether to copy assembly-level sets that reference e
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:25
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the analysis type (deformable or rigid) is not consistent among the supplied part   instances:   The selected part instances do not have a consistent analysis type. - If the assembly does not contain a mesh:   The current assembly does not contain a mesh for a mesh part. - If the specified part instances do not contain a mesh:   The selected part instances do not have a mesh for a mesh part."
+msgid "**part** -- A Part object  - If the analysis type (deformable or rigid) is not consistent among the supplied part   instances:   The selected part instances do not have a consistent analysis type. - If the assembly does not contain a mesh:   The current assembly does not contain a mesh for a mesh part. - If the specified part instances do not contain a mesh:   The selected part instances do not have a mesh for a mesh part."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromInstanceMesh:27
@@ -3257,7 +3257,7 @@ msgid "A Boolean specifying whether to copy sets, surfaces, and attributes to th
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMesh:18
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the part does not contain a mesh:   The current part does not contain a mesh for a mesh part."
+msgid "**part** -- A Part object  - If the part does not contain a mesh:   The current part does not contain a mesh for a mesh part."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMesh:20
@@ -3273,7 +3273,7 @@ msgid "Check `PartFromMeshMirror on help.3ds.com/2022 <https://help.3ds.com/2022
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMeshMirror:18
-msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing orphan mesh part."
+msgid "A Part object specifying an existing orphan mesh part."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMeshMirror:20
@@ -3285,7 +3285,7 @@ msgid "A sequence of three Floats specifying a point in the direction of the nor
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMeshMirror:26
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the specified part is not an orphan mesh part:   Cannot mirror a geometric part. - If the specified part is a rigid body:   Cannot mirror a rigid body. - If **point1** and **point2** are coincident:   Mirror plane director has zero length. - If the specified part is two-dimensional and the plane is not parallel to the   **Z**-axis:   Mirror plane must be parallel to Z axis for 2D parts"
+msgid "**part** -- A Part object  - If the specified part is not an orphan mesh part:   Cannot mirror a geometric part. - If the specified part is a rigid body:   Cannot mirror a rigid body. - If **point1** and **point2** are coincident:   Mirror plane director has zero length. - If the specified part is two-dimensional and the plane is not parallel to the   **Z**-axis:   Mirror plane must be parallel to Z axis for 2D parts"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromMeshMirror:28
@@ -3357,7 +3357,7 @@ msgid "An Int specifying the frame number for reading deformed coordinates. 0≤
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromOdb:43
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the output database contains elements of more than one dimensionality or type:   File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and   3D elements.File contains both rigid and deformable elements. - If more than one part is found on the output database:   PartError: importing of more than one part is not currently supported - If the output database does not contain any valid results for the specified step:   Error. File does not contain any valid frames. - If the specified step and frame do not contain any displacements:   Error. Specified frame does not contain nodal displacements. - If the specified element set is not found on the output database:   Error. Specified element set is not defined in the ODB. - If the step number is invalid:   OdiError: Invalid step index: i. Available step indices: 0 - j. - If the frame number is invalid:   OdiError: Invalid frame index: i. Available frame indices: 0 - j."
+msgid "**part** -- A Part object  - If the output database contains elements of more than one dimensionality or type:   File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and   3D elements.File contains both rigid and deformable elements. - If more than one part is found on the output database:   PartError: importing of more than one part is not currently supported - If the output database does not contain any valid results for the specified step:   Error. File does not contain any valid frames. - If the specified step and frame do not contain any displacements:   Error. Specified frame does not contain nodal displacements. - If the specified element set is not found on the output database:   Error. Specified element set is not defined in the ODB. - If the step number is invalid:   OdiError: Invalid step index: i. Available step indices: 0 - j. - If the frame number is invalid:   OdiError: Invalid frame index: i. Available frame indices: 0 - j."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromOdb:45
@@ -3397,7 +3397,7 @@ msgid "Check `PartFromSection3DMeshByPlane on help.3ds.com/2022 <https://help.3d
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:16
-msgid "A :py:class:`~abaqus.Part.Part.Part` object specifying an existing three-dimensional orphan mesh part."
+msgid "A Part object specifying an existing three-dimensional orphan mesh part."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:18
@@ -3413,7 +3413,7 @@ msgid "A sequence of three Floats specifying the direction of the local 1-axis i
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:27
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the specified part is not an orphan mesh part:   Cannot reduce dimension of a geometric part. - If the specified part is not three-dimensional:   Cannot reduce dimension of a 2D part. - If the specified part is a rigid body:   Cannot change dimension of a rigid body. - If **point1** and **point2** are coincident:   Cutting plane director has zero length. - If **point3** projects onto **point1**:   Local axis point projects to origin. - If no elements are cut by the specified plane:   Cannot reduce part dimension."
+msgid "**part** -- A Part object  - If the specified part is not an orphan mesh part:   Cannot reduce dimension of a geometric part. - If the specified part is not three-dimensional:   Cannot reduce dimension of a 2D part. - If the specified part is a rigid body:   Cannot change dimension of a rigid body. - If **point1** and **point2** are coincident:   Cutting plane director has zero length. - If **point3** projects onto **point1**:   Local axis point projects to origin. - If no elements are cut by the specified plane:   Cannot reduce part dimension."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:29
@@ -3449,7 +3449,7 @@ msgid "The output database file corresponding to the substructure sim file."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSubstructure:19
-msgid "**part** -- A :py:class:`~abaqus.Part.Part.Part` object  - If the specified part is not a substructure:   File specified does not contain a substructure. - If the specified part already exists:   A part with the same name already exists. - If the substructure cannot be imported:   The output database is missing nodes and elements.Nested substructures are not   supported.The substructure sim file was generated using a version that is different from   the current version."
+msgid "**part** -- A Part object  - If the specified part is not a substructure:   File specified does not contain a substructure. - If the specified part already exists:   A part with the same name already exists. - If the substructure cannot be imported:   The output database is missing nodes and elements.Nested substructures are not   supported.The substructure sim file was generated using a version that is different from   the current version."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromSubstructure:21
@@ -3477,7 +3477,7 @@ msgid "Check `PartBase.addGeomToSketch on help.3ds.com/2022 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.addGeomToSketch:9
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object."
+msgid "A ConstrainedSketch object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.assignThickness:1
@@ -3545,7 +3545,7 @@ msgid "A sequence of MeshFace objects specifying the source region."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.copyMeshPattern:17
-msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying the target region."
+msgid "A MeshFace object specifying the target region."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.copyMeshPattern:19
@@ -4009,7 +4009,7 @@ msgid "A SymbolicConstant specifying how to limit the amount of projection. Poss
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch:16
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, part entities in features created before the sketch you are editing are candidates for projection."
+msgid "A Feature object specifying a marker in the feature-based history of the part. Abaqus/CAE projects onto the sketch only the part entities that were created before the feature specified by this marker. By default, part entities in features created before the sketch you are editing are candidates for projection."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch:21
@@ -4094,7 +4094,7 @@ msgid "**geometry** -- A Dictionary object with string keys, which returns the a
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.queryRegionsMissingSections:4
-msgid "**region** -- A :py:class:`~abaqus.Region.Region.Region` object, or None"
+msgid "**region** -- A Region object, or None"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions:5
@@ -4608,7 +4608,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:1
 #: ../../None:34:<autosummary>:1
-msgid "This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible elements."
+msgid "This method returns a sequence of Face objects that are meshed with incompatible elements."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -5080,7 +5080,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.WireFromEdge:15
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.WirePolyLine:29
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.WireSpline:31
-msgid "**feature** -- A :py:class:`~abaqus.Feature.Feature.Feature` object"
+msgid "**feature** -- A Feature object"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:76
@@ -5152,7 +5152,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar:13
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:13
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseWire:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar wire."
+msgid "A ConstrainedSketch object specifying the planar wire."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude:10
@@ -5168,7 +5168,7 @@ msgid "Check `AnalyticRigidSurfRevolve on help.3ds.com/2022 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve:13
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the surface to be revolved."
+msgid "A ConstrainedSketch object specifying the surface to be revolved."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion:1
@@ -5197,7 +5197,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShell:13
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Shell:22
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar shell."
+msgid "A ConstrainedSketch object specifying the planar shell."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:1
@@ -5209,7 +5209,7 @@ msgid "Check `BaseShellExtrude on help.3ds.com/2022 <https://help.3ds.com/2022/E
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be extruded."
+msgid "A ConstrainedSketch object specifying the shape to be extruded."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:16
@@ -5243,7 +5243,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:40
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CoverEdges:19
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities:20
-msgid "A :py:class:`~abaqus.Feature.Feature.Feature` object."
+msgid "A Feature object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:1
@@ -5256,7 +5256,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:15
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:15
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved."
+msgid "A ConstrainedSketch object specifying the shape to be revolved."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:17
@@ -5304,12 +5304,12 @@ msgid "Check `BaseShellSweep on help.3ds.com/2022 <https://help.3ds.com/2022/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellSweep:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the section to be swept."
+msgid "A ConstrainedSketch object specifying the section to be swept."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellSweep:18
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:18
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the path of the sweep."
+msgid "A ConstrainedSketch object specifying the path of the sweep."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:1
@@ -5321,7 +5321,7 @@ msgid "Check `BaseSolidExtrude on help.3ds.com/2022 <https://help.3ds.com/2022/E
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:14
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the plane shape to be extruded."
+msgid "A ConstrainedSketch object specifying the plane shape to be extruded."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude:16
@@ -5349,7 +5349,7 @@ msgid "Check `BaseSolidSweep on help.3ds.com/2022 <https://help.3ds.com/2022/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:16
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the profile to be swept."
+msgid "A ConstrainedSketch object specifying the profile to be swept."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseWire:10
@@ -5373,7 +5373,7 @@ msgid "A SymbolicConstant indicating a method for creating blends. This argument
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BlendFaces:26
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object that connects **side1** to **side2** and specifies the path for creating the blend. This argument is required if **method** = SPECIFY_PATH; otherwise, it is ignored."
+msgid "An Edge object that connects **side1** to **side2** and specifies the path for creating the blend. This argument is required if **method** = SPECIFY_PATH; otherwise, it is ignored."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Chamfer:10
@@ -5465,11 +5465,11 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidExtrude:19
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidRevolve:20
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Wire:19
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the sketch."
+msgid "An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the sketch."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Cut:21
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar cut."
+msgid "A ConstrainedSketch object specifying the planar cut."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Cut:23
@@ -5489,7 +5489,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutExtrude:27
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellExtrude:22
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidExtrude:22
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be extruded."
+msgid "A ConstrainedSketch object specifying the planar sketch to be extruded."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutExtrude:29
@@ -5567,7 +5567,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellRevolve:24
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidRevolve:23
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.Wire:22
-msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the planar sketch to be revolved."
+msgid "A ConstrainedSketch object specifying the planar sketch to be revolved."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutRevolve:27
@@ -5604,7 +5604,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutSweep:26
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellSweep:26
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidSweep:26
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a ConstrainedSketch object."
+msgid "An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the path sketch. Only required when path is a ConstrainedSketch object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutSweep:29
@@ -5620,7 +5620,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutSweep:38
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellSweep:38
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidSweep:38
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a ConstrainedSketch object."
+msgid "An Edge object or a Datum axis object specifying the vertical (*Y*) direction of the profile sketch. Only required when profile is a ConstrainedSketch object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutSweep:41
@@ -5678,7 +5678,7 @@ msgid "Check `FaceFromElementFaces on help.3ds.com/2022 <https://help.3ds.com/20
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:12
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the collection of orphan element faces."
+msgid "A Region object specifying the collection of orphan element faces."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces:14
@@ -5714,7 +5714,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:22
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleFromEdges:17
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:22
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance1** is measured."
+msgid "An Edge object specifying the edge from which **distance1** is measured."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:24
@@ -5726,7 +5726,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:26
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleFromEdges:21
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:26
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge from which **distance2** is measured."
+msgid "An Edge object specifying the edge from which **distance2** is measured."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges:28
@@ -5880,6 +5880,7 @@ msgstr ""
 msgid "Check `RepairFaceNormals on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repairfacenormalspyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:10
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.RepairFaceNormals:15
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.RepairSmallFaces:14
 msgid "A sequence of Face objects."
@@ -5907,7 +5908,7 @@ msgid "Check `RepairSliver on help.3ds.com/2022 <https://help.3ds.com/2022/Engli
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.RepairSliver:14
-msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face on which the sliver is located."
+msgid "A Face object specifying the face on which the sliver is located."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.RepairSliver:16
@@ -6305,7 +6306,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:34
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.Node:14
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global coordinate system will be used."
+msgid "A DatumCsys object specifying the local coordinate system. If unspecified, the global coordinate system will be used."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:37
@@ -6329,7 +6330,7 @@ msgid "Check `MeshEditPart.generateMeshByOffset on help.3ds.com/2022 <https://he
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:8
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the domain to be offset."
+msgid "A Region object specifying the domain to be offset."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:10
@@ -6389,7 +6390,7 @@ msgid "A sequence of MeshElement objects specifying the elements to orient."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:6
-msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying a reference top face that indicates the desired orientation."
+msgid "A MeshFace object specifying a reference top face that indicates the desired orientation."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:1
@@ -6534,11 +6535,11 @@ msgid "An Int specifying the number of resulting elements for each input element
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:16
-msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object that serves as a reference for indicating two topological directions for the subdivision operation. Must be a face of one of the specified elements, and all specified elements must be reachable by topological navigation from this element face. May not be combined with **edge**."
+msgid "A MeshFace object that serves as a reference for indicating two topological directions for the subdivision operation. Must be a face of one of the specified elements, and all specified elements must be reachable by topological navigation from this element face. May not be combined with **edge**."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:21
-msgid "A :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` object that serves as a reference for indicating a single topological direction for the subdivision operation. Must be an edge of one of the specified elements, and all specified elements must be reachable by topological navigation from this element edge. May not be combined with **face**."
+msgid "A MeshEdge object that serves as a reference for indicating a single topological direction for the subdivision operation. Must be an edge of one of the specified elements, and all specified elements must be reachable by topological navigation from this element edge. May not be combined with **face**."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:5
@@ -6578,7 +6579,7 @@ msgid "An Int specifying the node label."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.Node:19
-msgid "A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object."
+msgid "A MeshNode object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.Node:20
@@ -6598,7 +6599,7 @@ msgid "A sequence of Cell objects specifying regions where to assign the stack d
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.assignStackDirection:10
-msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the top side of the stack direction."
+msgid "A Face object specifying the top side of the stack direction."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:5
@@ -6606,7 +6607,7 @@ msgid "Check `MeshPart.associateMeshWithGeometry on help.3ds.com/2022 <https://h
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:8
-msgid "A Cell, a Face, an Edge, or a ConstrainedSketchVertex object specifying geometric entity to be associated with one or more mesh entities.If the geometric entity is a Cell object then the argument **elements** must be specified.If the geometric entity is a :py:class:`~abaqus.BasicGeometry.Face.Face` object then the argument **elemFaces** must be specified.If the geometric entity is an Edge object then the argument **elemEdges** must be specified.If the geometric entity is a ConstrainedSketchVertex object then the argument **node** must be specified."
+msgid "A Cell, a Face, an Edge, or a ConstrainedSketchVertex object specifying geometric entity to be associated with one or more mesh entities.If the geometric entity is a Cell object then the argument **elements** must be specified.If the geometric entity is a Face object then the argument **elemFaces** must be specified.If the geometric entity is an Edge object then the argument **elemEdges** must be specified.If the geometric entity is a ConstrainedSketchVertex object then the argument **node** must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:15
@@ -6614,7 +6615,7 @@ msgid "A sequence of MeshElement objects specifying the elements to be associate
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:18
-msgid "A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the element faces to be associated with the geometric face."
+msgid "A sequence of MeshFace objects specifying the element faces to be associated with the geometric face."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:21
@@ -6622,7 +6623,7 @@ msgid "A sequence of MeshEdge objects specifying the element edges to be associa
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.associateMeshWithGeometry:24
-msgid "A :py:class:`~abaqus.Mesh.MeshNode.MeshNode` object specifying the mesh node to be associated with the geometric vertex."
+msgid "A MeshNode object specifying the mesh node to be associated with the geometric vertex."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:1
@@ -6634,7 +6635,7 @@ msgid "Check `MeshPart.createVirtualTopology on help.3ds.com/2022 <https://help.
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:9
-msgid "A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the domain to search for geometric entities that need to be merged. Entities identified as candidates to be merged may be merged with entities from outside the specified region. If **regions** is not specified then the entire part is the domain for searching geometric entities that need to be merged."
+msgid "A sequence of Face objects specifying the domain to search for geometric entities that need to be merged. Entities identified as candidates to be merged may be merged with entities from outside the specified region. If **regions** is not specified then the entire part is the domain for searching geometric entities that need to be merged."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:14
@@ -6719,7 +6720,7 @@ msgid "Check `MeshPart.deleteMeshAssociationWithGeometry on help.3ds.com/2022 <h
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry:7
-msgid "A sequence of Cell objects, :py:class:`~abaqus.BasicGeometry.Face.Face` objects, Edge objects, or ConstrainedSketchVertex objects specifying the geometric entities that will be disassociated from the mesh."
+msgid "A sequence of Cell objects, Face objects, Edge objects, or ConstrainedSketchVertex objects specifying the geometric entities that will be disassociated from the mesh."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.deleteMeshAssociationWithGeometry:10
@@ -6745,7 +6746,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:8
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh:8
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:8
-msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object specifying the geometric region where the mesh is to be generated. This argument is valid only for native parts."
+msgid "A Cell object specifying the geometric region where the mesh is to be generated. This argument is valid only for native parts."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:11
@@ -6757,11 +6758,11 @@ msgid "A sequence of sequences of Floats specifying the start point and end poin
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:17
-msgid "A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for the extrude meshing operation."
+msgid "A Region of Face objects specifying the geometric domain to be used as the source for the extrude meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:20
-msgid "A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the source for the extrude meshing operation."
+msgid "A sequence of MeshFace objects specifying the faces of 3D elements to be used as the source for the extrude meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:23
@@ -6773,7 +6774,7 @@ msgid "A Float specifying the distance of the mesh extrusion. If unspecified, th
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:29
-msgid "A datum plane, a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects, a sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects, or a sequence of 2D MeshElement objects specifying the target of the extrude meshing operation. If specified, this argument overrides the **depth** argument, and all points on the source will be extruded in the direction of the extrusion vector until meeting the target."
+msgid "A datum plane, a sequence of Face objects, a sequence of MeshFace objects, or a sequence of 2D MeshElement objects specifying the target of the extrude meshing operation. If specified, this argument overrides the **depth** argument, and all points on the source will be extruded in the direction of the extrusion vector until meeting the target."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpExtrudedMesh:34
@@ -6802,11 +6803,11 @@ msgid "A Float specifying the angle of revolution."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh:22
-msgid "A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for the revolve meshing operation."
+msgid "A Region of Face objects specifying the geometric domain to be used as the source for the revolve meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh:25
-msgid "A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the source for the revolve meshing operation."
+msgid "A sequence of MeshFace objects specifying the faces of 3D elements to be used as the source for the revolve meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpRevolvedMesh:28
@@ -6818,11 +6819,11 @@ msgid "Check `MeshPart.generateBottomUpSweptMesh on help.3ds.com/2022 <https://h
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:11
-msgid "A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the geometric domain to be used as the source for the sweep meshing operation."
+msgid "A Region of Face objects specifying the geometric domain to be used as the source for the sweep meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:14
-msgid "A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces of 3D elements to be used as the source for the sweep meshing operation."
+msgid "A sequence of MeshFace objects specifying the faces of 3D elements to be used as the source for the sweep meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:17
@@ -6830,11 +6831,11 @@ msgid "A sequence of 2D MeshElement objects specifying the elements to be used a
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:20
-msgid "A Region of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying connecting sides of the sweep meshing operation."
+msgid "A Region of Face objects specifying connecting sides of the sweep meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:22
-msgid "A sequence of Mesh:py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying connecting sides of the sweep meshing operation."
+msgid "A sequence of MeshFace objects specifying connecting sides of the sweep meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:25
@@ -6842,7 +6843,7 @@ msgid "A sequence of 2D MeshElement objects specifying connecting sides of the s
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:28
-msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the target side of the sweep meshing operation."
+msgid "A Face object specifying the target side of the sweep meshing operation."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.generateBottomUpSweptMesh:30
@@ -6882,7 +6883,7 @@ msgid "Check `MeshPart.getEdgeSeeds on help.3ds.com/2022 <https://help.3ds.com/2
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:7
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge to be queried."
+msgid "An Edge object specifying the edge to be queried."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:9
@@ -7073,10 +7074,6 @@ msgstr ""
 msgid "A sequence of cell objects which will be used to search the incompatible faces."
 msgstr ""
 
-#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:10
-msgid "A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects."
-msgstr ""
-
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshControl:4
 msgid "Check `MeshPart.getMeshControl on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all#simaker-partgetmeshcontrolpyc>`__."
 msgstr ""
@@ -7142,7 +7139,7 @@ msgid "A sequence or tuple of ConstrainedSketchGeometry regions for which mesh s
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshStats:9
-msgid "A :py:class:`~abaqus.Mesh.MeshStats.MeshStats` object."
+msgid "A MeshStats object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshStats:10
@@ -7198,7 +7195,7 @@ msgid "An exception occurs if the part does not contain native geometry."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getUnmeshedRegions:4
-msgid "A :py:class:`~abaqus.Region.Region.Region` object, or None."
+msgid "A Region object, or None."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:1
@@ -7347,7 +7344,7 @@ msgid "An Int specifying the number of element layers to be generated. Possible 
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:20
-msgid "A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects specifying the faces where boundary layer should not be generated. By default, boundary layer mesh will be generated on all faces of the selected regions."
+msgid "A sequence of Face objects specifying the faces where boundary layer should not be generated. By default, boundary layer mesh will be generated on all faces of the selected regions."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:24
@@ -7527,7 +7524,7 @@ msgid "A sweepable region."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setSweepPath:10
-msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the sweep or revolve path."
+msgid "An Edge object specifying the sweep or revolve path."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setSweepPath:12
@@ -7603,7 +7600,7 @@ msgid "A sequence of Region or MeshElement objects. If you do not specify the **
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:65
-msgid "A Dictionary object containing values for some number of the following keys: failedElements, warningElements, naElements (sequences of MeshElement objects); numElements (Int); average, worst (Float); worstElement (:py:class:`~abaqus.Mesh.MeshElement.MeshElement` object) ."
+msgid "A Dictionary object containing values for some number of the following keys: failedElements, warningElements, naElements (sequences of MeshElement objects); numElements (Int); average, worst (Float); worstElement (MeshElement object) ."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:69
@@ -7639,7 +7636,7 @@ msgid "A Boolean specifying whether or not the layup should be made symmetric by
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:33
-msgid "**layup** -- A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object."
+msgid "**layup** -- A CompositeLayup object."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:34
@@ -7651,11 +7648,11 @@ msgid "Check `MaterialOrientation on help.3ds.com/2022 <https://help.3ds.com/202
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:12
-msgid "A :py:class:`~abaqus.Region.Set.Set` object specifying a region for which the material orientation is defined."
+msgid "A Set object specifying a region for which the material orientation is defined."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:14
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system or None, describing the material orientation for the given region. In the ODB, this member was previously accessible using \"csys,\" but support has now been added for localCsys and the csys member will be deprecated."
+msgid "A DatumCsys object specifying the local coordinate system or None, describing the material orientation for the given region. In the ODB, this member was previously accessible using \"csys,\" but support has now been added for localCsys and the csys member will be deprecated."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:19
@@ -7687,11 +7684,11 @@ msgid "A SymbolicConstant specifying the method used to define the normal axis d
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:45
-msgid "A :py:class:`~abaqus.Region.Surface.Surface` object specifying a region whose geometric normals define the normal axis for the discrete orientation."
+msgid "A Surface object specifying a region whose geometric normals define the normal axis for the discrete orientation."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:48
-msgid "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the normal axis direction for the discrete orientation."
+msgid "A DatumAxis object specifying the Datum Axis or None, describing the normal axis direction for the discrete orientation."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:51
@@ -7711,11 +7708,11 @@ msgid "A SymbolicConstant specifying the method used to define the primary axis 
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:65
-msgid "A :py:class:`~abaqus.Region.Set.Set` object specifying a region whose geometric tangents define the primary axis for the discrete orientation."
+msgid "A Set object specifying a region whose geometric tangents define the primary axis for the discrete orientation."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:68
-msgid "A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the primary axis direction for the discrete orientation."
+msgid "A DatumAxis object specifying the Datum Axis or None, describing the primary axis direction for the discrete orientation."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:71
@@ -7727,7 +7724,7 @@ msgid "A sequence of Floats specifying the vector that defines the direction of 
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:77
-msgid "**orientation** -- A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object."
+msgid "**orientation** -- A MaterialOrientation object."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:78
@@ -7739,7 +7736,7 @@ msgid "Check `SectionAssignment on help.3ds.com/2022 <https://help.3ds.com/2022/
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:13
-msgid "A :py:class:`~abaqus.Region.Set.Set` object specifying the region to which the section is assigned."
+msgid "A Set object specifying the region to which the section is assigned."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:15
@@ -7763,7 +7760,7 @@ msgid "A String specifying the name of the field specifying the offset. The defa
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:30
-msgid "**assignment** -- A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object"
+msgid "**assignment** -- A SectionAssignment object"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:31
@@ -7797,7 +7794,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:15
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:15
-msgid "A :py:class:`~abaqus.Datum.Datum.Datum` object specifying the local coordinate system or None, indicating the global coordinate system."
+msgid "A Datum object specifying the local coordinate system or None, indicating the global coordinate system."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:18
@@ -7819,7 +7816,7 @@ msgid "Check `PropertyPart.flipNormal on help.3ds.com/2022 <https://help.3ds.com
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.flipNormal:13
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. For 3D parts, the region contains Face objects or two-dimensional triangle or quadrilateral Element objects. For axisymmetric parts, the region contains Edge objects or line Elements objects."
+msgid "A Region object specifying the region on which normals are flipped. For 3D parts, the region contains Face objects or two-dimensional triangle or quadrilateral Element objects. For axisymmetric parts, the region contains Edge objects or line Elements objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.flipNormal:18
@@ -7831,7 +7828,7 @@ msgid "Check `PropertyPart.flipTangent on help.3ds.com/2022 <https://help.3ds.co
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.flipTangent:13
-msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region on which normals are flipped. The region contains Edge objects or one-dimensional Element objects."
+msgid "A Region object specifying the region on which normals are flipped. The region contains Edge objects or one-dimensional Element objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:9
@@ -7903,7 +7900,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:27
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:27
-msgid "**skin** -- A :py:class:`~abaqus.Region.Skin.Skin` object"
+msgid "**skin** -- A Skin object"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.EditSkin:28
@@ -7932,7 +7929,7 @@ msgid "An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default i
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:21
-msgid "A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects."
+msgid "A Set object or a tuple of Set objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:22
@@ -7955,7 +7952,7 @@ msgstr ""
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromColor:22
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:24
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:29
-msgid "A :py:class:`~abaqus.Region.Set.Set` object."
+msgid "A Set object."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromColor:1
@@ -8036,7 +8033,7 @@ msgid "A sequence of MeshEdge objects specifying the mesh edges on which stringe
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:21
-msgid "**stringer** -- A :py:class:`~abaqus.Region.Stringer.Stringer` object"
+msgid "**stringer** -- A Stringer object"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Stringer:22
@@ -8176,7 +8173,7 @@ msgid "On two-dimensional or axisymmetric wire elements, you can use the followi
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:100
-msgid "**surf** -- A :py:class:`~abaqus.Region.Surface.Surface` object"
+msgid "**surf** -- A Surface object"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:101
@@ -8318,7 +8315,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:18
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:15
-msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
+msgid "An AcisFile object."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openAcis:19
@@ -8609,7 +8606,7 @@ msgid ":py:obj:`meshEditOptions <abaqus.Mdb.MdbBase.MdbBase.meshEditOptions>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid "A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts or part instances."
+msgid "A MeshEditOptions object specifying the undo/redo behavior when editing meshes on parts or part instances."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -8625,7 +8622,7 @@ msgid ":py:obj:`customData <abaqus.Mdb.MdbBase.MdbBase.customData>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
