@@ -8,7 +8,6 @@ Mdb commands are used to create and upgrade an Abaqus model database that stores
 
 mdb/model
 mdb/job
-mdb/edit_mesh
 ```
 
 ## Classes
