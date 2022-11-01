@@ -2,7 +2,7 @@
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
-[![coverage](https://raw.githubusercontent.com/haiiliin/abqpy/2016/coverage.svg)](https://github.com/haiiliin/abqpy/blob/2016/coverage.svg)
+[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2016/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2016)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
