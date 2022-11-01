@@ -8,6 +8,7 @@ Model commands are used to create Abaqus/CAE models. A finished model contains a
 
 model/adaptivity
 model/amplitude
+model/assembly
 model/bc
 model/calibration
 model/constraint
@@ -19,7 +20,7 @@ model/material
 model/mesh
 model/optimization
 model/output
-model/part_assembly
+model/part
 model/predefined
 model/profile
 model/property
