@@ -11,7 +11,7 @@ from driverUtils import *
 In the module `abaqus`, two important objects are provided, `mdb` and `session`, which represent the Abaqus model database and a object controls the Abaqus options.
 
 - The `mdb` object is the high-level Abaqus model database. A model database stores models and analysis controls. For more information about the `mdb` object, see {doc}`mdb API Reference <../reference/mdb>`.
-- The `odb` object is the in-memory representation of an output database (ODB) file. For more information about the `odb` object, see  {doc}`odb API Reference <../reference/odb>`.
+- The `odb` object is the in-memory representation of an output database (ODB) file. For more information about the `odb` object, see  {doc}`odb API Reference <../reference/session/odb>`.
 - The `session` object has no constructor. Abaqus creates the session member when a session is started. For more information about the `session` object, see {doc}`session API Reference <../reference/session>`.
 
 In the module `abaqusConstants`, all the constant strings used in the Abaqus modeling are provided such as `THREE_D` (which specifies a 3-D model), for more constant strings, please refer to the API reference.
@@ -29,7 +29,6 @@ Other modules like `field`, `material`, `mesh` can be imported whenever required
 :maxdepth: 1
 
 reference/mdb
-reference/odb
 reference/session
 reference/kernel
 ```
