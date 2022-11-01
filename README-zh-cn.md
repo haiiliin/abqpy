@@ -2,7 +2,11 @@
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
+<<<<<<< HEAD
 [![coverage](https://raw.githubusercontent.com/haiiliin/abqpy/2022/.github/coverage.svg)](https://github.com/haiiliin/abqpy/blob/2022/.github/coverage.svg)
+=======
+[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://codecov.io/gh/haiiliin/abqpy)
+>>>>>>> 70cae27c ([automation]: Use codecov to analyze the code coverage (#3532))
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
