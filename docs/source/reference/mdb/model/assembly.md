@@ -7,6 +7,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 :maxdepth: 1
 
 datum
+edit_mesh
 engineering
 feature
 geometry
