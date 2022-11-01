@@ -60,7 +60,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           files: coverage.xml # optional
-          flags: pytest # optional
+          flags: pytest, ${{ github.base_ref }} # optional
           name: codecov-umbrella # optional
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
