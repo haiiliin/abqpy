@@ -3,6 +3,7 @@
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhaiiliin%2Fabqpy.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhaiiliin%2Fabqpy?ref=badge_shield)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
@@ -33,3 +34,7 @@ Abaqus/Python 脚本的类型提示
 ![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/model-code.gif)
 
 ![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/output-code.gif)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhaiiliin%2Fabqpy.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhaiiliin%2Fabqpy?ref=badge_large)
