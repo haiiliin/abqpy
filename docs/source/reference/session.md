@@ -7,6 +7,7 @@ Session commands are used to create objects that are not stored with the model; 
 :maxdepth: 1
 
 session/animation
+session/annotation
 session/canvas
 session/display_options
 session/display
