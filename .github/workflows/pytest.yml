@@ -51,8 +51,10 @@ jobs:
           coverage run -m pytest
           coverage xml
       - name: Git branch name
+        id: git-branch-name
         uses: EthanSK/git-branch-name-action@v1
       - uses: codecov/codecov-action@v3
+        if: ${{ startsWith(env.GIT_BRANCH_NAME, '20') }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           files: coverage.xml # optional
