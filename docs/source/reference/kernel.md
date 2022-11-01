@@ -1,4 +1,4 @@
-# Kernel
+# Abaqus Kernel
 
 ```{toctree}
 :caption: Kernel objects
