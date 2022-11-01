@@ -29,11 +29,6 @@ jobs:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
     steps:
-      - name: Add disable-auto-merge label
-        if: github.event_name == 'pull_request' && matrix.python-version == '3.10'
-        uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: disable-auto-merge
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
@@ -55,75 +50,11 @@ jobs:
         run: |
           coverage run -m pytest
           coverage xml
-      - name: Upload coverage.xml
-        if: matrix.python-version == '3.10' && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v3
+      - uses: codecov/codecov-action@v3
         with:
-          name: coverage.xml
-          path: coverage.xml
-      - name: Upload .coverage
-        if: matrix.python-version == '3.10' && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v3
-        with:
-          name: .coverage
-          path: .coverage
-
-  coverage:
-    needs: pytest
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-      - name: Download coverage.xml
-        uses: actions/download-artifact@v3
-        with:
-          name: coverage.xml
-      - name: Download .coverage
-        uses: actions/download-artifact@v3
-        with:
-          name: .coverage
-      - name: Get Coverage
-        uses: orgoro/coverage@v3
-        with:
-          coverageFile: coverage.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Coverage Badge
-        uses: tj-actions/coverage-badge-py@v1.8
-
-      - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v12
-        id: changed_files
-        with:
-          files: coverage.svg
-
-      - name: Commit files
-        if: steps.changed_files.outputs.files_changed == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add "coverage.svg"
-          git commit -m "Update coverage.svg"
-
-      - name: Push changes
-        if: steps.changed_files.outputs.files_changed == 'true'
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.github_token }}
-          branch: ${{ github.head_ref }}
-
-      - name: Remove disable-auto-merge label
-        if: github.event_name == 'pull_request'
-        uses: actions-ecosystem/action-remove-labels@v1
-        with:
-          labels: disable-auto-merge
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          files: coverage.xml # optional
+          flags: Python-${{ matrix.python-version }} # optional
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
