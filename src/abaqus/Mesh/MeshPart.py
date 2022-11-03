@@ -791,8 +791,10 @@ class MeshPart(PartBase):
             A SymbolicConstant specifying whether single- or double-biased seed distribution will be
             applied. If unspecified, single-biased seed distribution will be applied. Possible
             values are:
-            - SINGLE: Single-biased seed distribution will be applied.
-            - DOUBLE: Double-biased seed distribution will be applied.
+            
+            * SINGLE: Single-biased seed distribution will be applied.
+            * DOUBLE: Double-biased seed distribution will be applied.
+
         end1Edges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near the end where the normalized curve parameter=0.0. You must provide
