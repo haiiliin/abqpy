@@ -713,7 +713,7 @@ class SectionOdb(OdbBase):
             The SymbolicConstant DEFAULT or a Float specifying the default stabilization stiffness
             used in all but link elements to stabilize gasket elements that are not supported at all
             nodes, such as those that extend outside neighboring components. If DEFAULT is
-            specified, a value is used equal to 10-9 times the initial compressive stiffness in the
+            specified, a value is used equal to 10⁻⁹ times the initial compressive stiffness in the
             thickness direction. The default value is DEFAULT.
 
         Returns
