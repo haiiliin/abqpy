@@ -94,7 +94,7 @@ class ShapeTask(OptimizationTask):
     #: default value is FE_SAFE. Only valid if the **activateDurability** argument is ON.
     durabilitySolver: str = FE_SAFE
 
-    #: A Float specifying the equality constraint tolerance. The default value is 10-3.
+    #: A Float specifying the equality constraint tolerance. The default value is 10⁻³.
     equalityConstraintTolerance: Optional[float] = None
 
     #: A Float specifying the mesh smoothing feature recognition angle for edges and corners.
@@ -333,7 +333,7 @@ class ShapeTask(OptimizationTask):
             FE_SAFE, FEMFAT, FALANCS, MSC_FATIGUE, FE_FATIGUE, DESIGN_LIFE, CUSTOM, FEMSITE. The
             default value is FE_SAFE. Only valid if the **activateDurability** argument is ON.
         equalityConstraintTolerance
-            A Float specifying the equality constraint tolerance. The default value is 10-3.
+            A Float specifying the equality constraint tolerance. The default value is 10⁻³.
         featureRecognitionAngle
             A Float specifying the mesh smoothing feature recognition angle for edges and corners.
             The default value is 30.0.
@@ -541,7 +541,7 @@ class ShapeTask(OptimizationTask):
             FE_SAFE, FEMFAT, FALANCS, MSC_FATIGUE, FE_FATIGUE, DESIGN_LIFE, CUSTOM, FEMSITE. The
             default value is FE_SAFE. Only valid if the **activateDurability** argument is ON.
         equalityConstraintTolerance
-            A Float specifying the equality constraint tolerance. The default value is 10-3.
+            A Float specifying the equality constraint tolerance. The default value is 10⁻³.
         featureRecognitionAngle
             A Float specifying the mesh smoothing feature recognition angle for edges and corners.
             The default value is 30.0.
