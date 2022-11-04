@@ -791,7 +791,7 @@ class MeshPart(PartBase):
             A SymbolicConstant specifying whether single- or double-biased seed distribution will be
             applied. If unspecified, single-biased seed distribution will be applied. Possible
             values are:
-            
+
             * SINGLE: Single-biased seed distribution will be applied.
             * DOUBLE: Double-biased seed distribution will be applied.
 
