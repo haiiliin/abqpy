@@ -74,7 +74,7 @@ class SoilsStep(AnalysisStep):
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-    #: value is 2×10-4.
+    #: value is 2×10⁻⁴.
     stabilizationMagnitude: Optional[float] = None
 
     #: A Boolean specifying whether a creep response occurs during this step. The default value
@@ -306,7 +306,7 @@ class SoilsStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10-4.
+            value is 2×10⁻⁴.
         creep
             A Boolean specifying whether a creep response occurs during this step. The default value
             is ON.
@@ -428,7 +428,7 @@ class SoilsStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10-4.
+            value is 2×10⁻⁴.
         creep
             A Boolean specifying whether a creep response occurs during this step. The default value
             is ON.
