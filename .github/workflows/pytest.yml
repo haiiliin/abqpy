@@ -50,12 +50,6 @@ jobs:
         run: |
           coverage run -m pytest
           coverage xml
-      - uses: haya14busa/action-cond@v1
-        id: branch
-        with:
-          cond: ${{ github.event_name == 'pull_request' }}
-          if_true: ${{ github.base_ref }}
-          if_false: ${{ github.ref_name }}
       - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
@@ -64,4 +58,4 @@ jobs:
           name: codecov-umbrella # optional
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
-          override_branch: ${{ steps.branch.outputs.value }} # optional (default = github.ref)
+          dry_run: ${{ github.event_name == 'pull_request' }} # optional (default = false)
