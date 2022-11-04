@@ -199,7 +199,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -234,12 +234,12 @@ class PartFeature(BaseFeature):
         sketch
             A ConstrainedSketch object specifying the shape to be revolved.
         angle
-            A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤
+            A Float specifying the revolve angle in degrees. Possible values are 10⁻⁴ ≤ **angle** ≤
             360. Note: If **pitch** > 0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -351,7 +351,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
 
         Returns
@@ -395,7 +395,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -741,7 +741,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -871,7 +871,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -965,7 +965,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -1683,7 +1683,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -1833,7 +1833,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -1931,7 +1931,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
@@ -2011,7 +2011,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         flipExtrudeDirection
             A Boolean specifying whether to override the direction of feature creation. If the value
@@ -2159,7 +2159,7 @@ class PartFeature(BaseFeature):
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
-            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105.
+            full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵.
             The default value, 0, implies a normal revolve.
         flipRevolveDirection
             A Boolean specifying whether to override the direction of feature creation. If
@@ -2257,7 +2257,7 @@ class PartFeature(BaseFeature):
             direction by the sketch when the sketch has completed one full revolution about the
             twist axis. Pitch can be specified as positive or negative to achieve right-handed or
             left-handed twist about the twist axis, respectively. The default value, 0, implies a
-            normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle**
+            normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle**
             and **pitch** are mutually exclusive.
         profileNormal
             A Boolean specifying whether to keep the profile normal same as original or varying
