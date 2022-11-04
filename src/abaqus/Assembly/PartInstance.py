@@ -266,7 +266,7 @@ class PartInstance:
             A Float specifying the maximum distance between nodes of the specified part instances
             that will be merged and replaced with a single node in the new part. The location of the
             new node is the average position of the deleted nodes. This argument is only applicable
-            if **domain** is MESH. The default value is 10-6.
+            if **domain** is MESH. The default value is 10⁻⁶.
         removeDuplicateElements
             A Boolean specifying whether elements with the same connectivity in the new part will be
             merged into a single element. This argument is only applicable if **domain** is MESH. The

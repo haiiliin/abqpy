@@ -237,7 +237,7 @@ class GraphicsOptions:
     #: A Float specifying a tolerance used when computing the appropriate scale for
     #: transforming result (contour) values to texture values. When set too low the 'out of
     #: range' colors may be incorrectly shown for values near the range limits. The default
-    #: value is 0.5×10-5.
+    #: value is 0.5×10⁻⁵.
     contourRangeTexturePrecision: float = 0
 
     #: None or a GraphicsOptions object specifying the object from which values are to be
@@ -513,7 +513,7 @@ class GraphicsOptions:
             A Float specifying a tolerance used when computing the appropriate scale for
             transforming result (contour) values to texture values. When set too low the 'out of
             range' colors may be incorrectly shown for values near the range limits. The default
-            value is 0.5×10-5.
+            value is 0.5×10⁻⁵.
 
         Raises
         ------

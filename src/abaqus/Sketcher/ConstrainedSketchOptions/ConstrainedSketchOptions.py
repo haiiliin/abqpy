@@ -101,7 +101,7 @@ class ConstrainedSketchOptions:
         autoConstrainLinearTolerance
             A Float specifying the linear tolerance which is used to determine when two points or
             geometries are coincident during the auto-constrain operation. The default value is
-            10-6.
+            10⁻⁶.
         autoConstrainOptions
             A sequence of SymbolicConstants specifying which type of constraints may be added by the
             auto-constraint tool. Possible values are PARALLEL, PERPENDICULAR, IDENTICAL, TANGENT,
