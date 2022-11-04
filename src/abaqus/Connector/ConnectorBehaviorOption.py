@@ -108,7 +108,7 @@ class ConnectorBehaviorOption:
             argument applies only to Abaqus/Standard analyses.
         fraction
             A Float specifying the ratio of the allowable maximum elastic slip to a characteristic
-            model dimension. The default value is 10-4.This argument applies only to Abaqus/Standard
+            model dimension. The default value is 10⁻⁴.This argument applies only to Abaqus/Standard
             analyses.
         absoluteDistance
             None or a Float specifying the absolute magnitude of the allowable elastic slip. The
