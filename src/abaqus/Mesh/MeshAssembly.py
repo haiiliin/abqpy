@@ -789,10 +789,10 @@ class MeshAssembly(AssemblyBase):
             positioned near edge ends.
         ratio
             A Float specifying the ratio of the largest element to the smallest element. Possible
-            values are 1.0 ≤ **ratio** ≤ 106.
+            values are 1.0 ≤ **ratio** ≤ 10⁶.
         number
             An Int specifying the number of elements along each edge. Possible values are 1 ≤
-            **number** ≤ 104.
+            **number** ≤ 10⁴.
         minSize
             A Float specifying the desired smallest element size.
         maxSize
@@ -821,7 +821,7 @@ class MeshAssembly(AssemblyBase):
             A sequence of Edge objects specifying the edges to seed.
         number
             An Int specifying the number of elements along each edge. Possible values are 1 ≤
-            **number** ≤ 104.
+            **number** ≤ 10⁴.
         constraint
             A SymbolicConstant specifying how closely the seeds must be matched by the mesh. The
             default value is FREE. If unspecified, the existing constraint will remain unchanged.
@@ -917,13 +917,13 @@ class MeshAssembly(AssemblyBase):
             mesh control parameters.
         firstElemSize
             A Float specifying the height of the first element layer off boundary. Possible values
-            are 0.0 < **firstElemSize** ≤ 106.
+            are 0.0 < **firstElemSize** ≤ 10⁶.
         growthFactor
             A Float specifying the ratio of heights of any two consecutive element layers. Possible
             values are 1.0 ≤ **growthFactor** ≤ 10.0.
         numLayers
             An Int specifying the number of element layers to be generated. Possible values are 1 ≤
-            **numLayers** ≤ 104.
+            **numLayers** ≤ 10⁴.
         inactiveFaces
             A sequence of Face objects specifying the faces where boundary layer should not be
             generated. By default, boundary layer mesh will be generated on all faces of the
