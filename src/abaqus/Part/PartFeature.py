@@ -234,7 +234,7 @@ class PartFeature(BaseFeature):
         sketch
             A ConstrainedSketch object specifying the shape to be revolved.
         angle
-            A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤
+            A Float specifying the revolve angle in degrees. Possible values are 10⁻⁴ ≤ **angle** ≤
             360. Note: If **pitch** > 0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
