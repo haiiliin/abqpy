@@ -43,7 +43,7 @@ class StdContactControl(ContactControl):
     #: A Float specifying the ratio of the allowable penetration to the characteristic contact
     #: surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
     #: contact interactions defined with augmented Lagrangian surface behavior will be affected
-    #: by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
+    #: by this argument. The default value is 10⁻³.The **relativePenetrationTolerance** argument
     #: applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
     #: and **absolutePenetrationTolerance** arguments are mutually exclusive.
     relativePenetrationTolerance: Optional[float] = None
@@ -173,7 +173,7 @@ class StdContactControl(ContactControl):
             A Float specifying the ratio of the allowable penetration to the characteristic contact
             surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
             contact interactions defined with augmented Lagrangian surface behavior will be affected
-            by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
+            by this argument. The default value is 10⁻³.The **relativePenetrationTolerance** argument
             applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
             and **absolutePenetrationTolerance** arguments are mutually exclusive.
         absolutePenetrationTolerance
@@ -289,7 +289,7 @@ class StdContactControl(ContactControl):
             A Float specifying the ratio of the allowable penetration to the characteristic contact
             surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only
             contact interactions defined with augmented Lagrangian surface behavior will be affected
-            by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
+            by this argument. The default value is 10⁻³.The **relativePenetrationTolerance** argument
             applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
             and **absolutePenetrationTolerance** arguments are mutually exclusive.
         absolutePenetrationTolerance

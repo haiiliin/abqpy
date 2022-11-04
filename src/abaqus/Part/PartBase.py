@@ -331,7 +331,7 @@ class PartBase(PartFeature):
         nodeMergingTolerance
             A Float specifying the maximum distance between nodes of orphan mesh part instances that
             will be merged and replaced with a single new node. The location of the new node is the
-            average position of the deleted nodes. The default value is 10-6.
+            average position of the deleted nodes. The default value is 10⁻⁶.
         removeDuplicateElements
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is ON.
