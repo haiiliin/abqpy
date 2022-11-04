@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence
+from typing import Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import ABSOLUTE, MODEL, OFF, Boolean
-from ..UtilityAndView.abaqusConstants import SymbolicConstant, abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -69,14 +69,14 @@ class View:
     projection: Literal[C.PERSPECTIVE, C.PARALLEL]
 
     #: A sequence of three Floats specifying the camera position.
-    cameraPosition: tuple
+    cameraPosition: Tuple[float, float, float]
 
     #: A sequence of three Floats specifying the camera's up vector (the screen's positive
     #: **Y**-axis). The initial value is (0, 0, 0).
-    cameraUpVector: tuple
+    cameraUpVector: Tuple[float, float, float]
 
     #: A sequence of three Floats specifying the center of the scene.
-    cameraTarget: tuple
+    cameraTarget: Tuple[float, float, float]
 
     #: A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
     #: of the viewport width. A positive value pans the model to the right. A negative value
@@ -107,9 +107,9 @@ class View:
         width: float,
         height: float,
         projection: Literal[C.PERSPECTIVE, C.PARALLEL],
-        cameraPosition: tuple,
-        cameraUpVector: tuple,
-        cameraTarget: tuple,
+        cameraPosition: Tuple[float, float, float],
+        cameraUpVector: Tuple[float, float, float],
+        cameraTarget: Tuple[float, float, float],
         viewOffsetX: float,
         viewOffsetY: float,
         autoFit: Boolean,
@@ -380,10 +380,10 @@ class View:
         farPlane: float = ...,
         width: float = ...,
         height: float = ...,
-        projection: SymbolicConstant = ...,
-        cameraPosition: tuple = ...,
-        cameraUpVector: tuple = ...,
-        cameraTarget: tuple = ...,
+        projection: Literal[C.PERSPECTIVE, C.PARALLEL] = ...,
+        cameraPosition: Tuple[float, float, float] = ...,
+        cameraUpVector: Tuple[float, float, float] = ...,
+        cameraTarget: Tuple[float, float, float] = ...,
         viewOffsetX: float = ...,
         viewOffsetY: float = ...,
         movieMode: Boolean = OFF,
