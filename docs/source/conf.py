@@ -62,7 +62,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
     'sphinx_copybutton',
-    'sphinx_toolbox.collapse',
+    'sphinx_autodoc_toolbox.collapse',
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
     'sphinx_design',
