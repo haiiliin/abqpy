@@ -120,12 +120,12 @@ class IncidentWaveProperty(ContactProperty):
     maximumSteps: int = 1500
 
     #: A Float specifying the relative step size control parameter. The default value is
-    #: 1x10-11.This argument is valid only when **definition** = SPHERICAL and
+    #: 1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
     relativeStepControl: Optional[float] = None
 
     #: A Float specifying the absolute step size control parameter. The default value is
-    #: 1x10-11.This argument is valid only when **definition** = SPHERICAL and
+    #: 1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
     absoluteStepControl: Optional[float] = None
 
@@ -295,11 +295,11 @@ class IncidentWaveProperty(ContactProperty):
             **propagationModel** = UNDEX_CHARGE.
         relativeStepControl
             A Float specifying the relative step size control parameter. The default value is
-            1x10-11.This argument is valid only when **definition** = SPHERICAL and
+            1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
             **propagationModel** = UNDEX_CHARGE.
         absoluteStepControl
             A Float specifying the absolute step size control parameter. The default value is
-            1x10-11.This argument is valid only when **definition** = SPHERICAL and
+            1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
             **propagationModel** = UNDEX_CHARGE.
         stepControlExponent
             A Float specifying the step size control exponent. The default value is 0.2.This
@@ -457,11 +457,11 @@ class IncidentWaveProperty(ContactProperty):
             **propagationModel** = UNDEX_CHARGE.
         relativeStepControl
             A Float specifying the relative step size control parameter. The default value is
-            1x10-11.This argument is valid only when **definition** = SPHERICAL and
+            1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
             **propagationModel** = UNDEX_CHARGE.
         absoluteStepControl
             A Float specifying the absolute step size control parameter. The default value is
-            1x10-11.This argument is valid only when **definition** = SPHERICAL and
+            1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and
             **propagationModel** = UNDEX_CHARGE.
         stepControlExponent
             A Float specifying the step size control exponent. The default value is 0.2.This
