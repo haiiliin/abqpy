@@ -767,15 +767,16 @@ class MeshAssembly(AssemblyBase):
             A SymbolicConstant specifying whether single- or double-biased seed distribution will be
             applied. If unspecified, single-biased seed distribution will be applied. Possible
             values are:
-            - SINGLE: Single-biased seed distribution will be applied.
-            - DOUBLE: Double-biased seed distribution will be applied.
+
+            * SINGLE: Single-biased seed distribution will be applied.
+            * DOUBLE: Double-biased seed distribution will be applied.
+
         end1Edges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near the end where the normalized curve parameter=0.0. You must provide
             either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and
             omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by
-            the order of the vertex indices returned by
-            [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).
+            the order of the vertex indices returned by `getVertices()`.
         end2Edges
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near the end where the normalized curve parameter=1.0.
