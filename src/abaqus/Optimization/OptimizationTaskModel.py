@@ -246,7 +246,7 @@ class OptimizationTaskModel(ModelBase):
             FE_SAFE, FEMFAT, FLANS, MSC_FATIGUE, FE_FATIGUE, DESIGN_LIFE, CUSTOM, FEMSITE. The
             default value is FE_SAFE. Only valid if the **activateDurability** argument is ON.
         equalityConstraintTolerance
-            A Float specifying the equality constraint tolerance. The default value is 10-3.
+            A Float specifying the equality constraint tolerance. The default value is 10⁻³.
         featureRecognitionAngle
             A Float specifying the mesh smoothing feature recognition angle for edges and corners.
             The default value is 30.0.
@@ -442,7 +442,7 @@ class OptimizationTaskModel(ModelBase):
             A String specifying the optimization task repository key.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10-2.
+            default value is 0.5 × 10⁻².
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.
@@ -557,7 +557,7 @@ class OptimizationTaskModel(ModelBase):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10-2.
+            default value is 0.5×10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.
@@ -591,7 +591,7 @@ class OptimizationTaskModel(ModelBase):
         maxDensity
             A Float specifying the maximum density in the density update. The default value is 1.0.
         minDensity
-            A Float specifying the minimum density in the density update. The default value is 10-3.
+            A Float specifying the minimum density in the density update. The default value is 10⁻³.
         modeTrackingRegion
             The SymbolicConstant MODEL or a Region object specifying the region to use for mode
             tracking. The default value is MODEL.
@@ -604,7 +604,7 @@ class OptimizationTaskModel(ModelBase):
             An Int specifying the number of modes included in mode tracking. The default value is 5.
         objectiveFunctionDeltaStopCriteria
             A Float specifying the stop criteria based on the change in objective function. The
-            default value is 10-3.
+            default value is 10⁻³.
         region
             The SymbolicConstant MODEL or a Region object specifying the region to which the
             optimization task is applied. The default value is MODEL.
