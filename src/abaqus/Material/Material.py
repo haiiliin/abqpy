@@ -1262,7 +1262,7 @@ class Material(MaterialBase):
             of the loading data, in addition to temperature. The default value is 0.
         tensileStiffnessFactor
             A Float specifying the fraction of the initial compressive stiffness that defines the
-            stiffness in tension. The default value is 10-3.
+            stiffness in tension. The default value is 10⁻³.
         type
             A SymbolicConstant specifying a damage elasticity model or an elastic-Plastic model for
             gasket thickness-direction behavior. Possible values are ELASTIC_PLASTIC and DAMAGE. The
@@ -1709,9 +1709,9 @@ class Material(MaterialBase):
             A SymbolicConstant specifying strain rate measure used for constitutive calculations.
             Possible values are PRINCIPAL and VOLUMETRIC. The default value is VOLUMETRIC.
         mu0
-            A Float specifying the relaxation coefficient μ0. The default value is 10-4.
+            A Float specifying the relaxation coefficient μ0. The default value is 10⁻⁴.
         mu1
-            A Float specifying the relaxation coefficient μ1. The default value is 0.5×10-2.
+            A Float specifying the relaxation coefficient μ1. The default value is 0.5×10⁻².
         alpha
             A Float specifying the relaxation coefficient α. The default value is 2.0.
 
