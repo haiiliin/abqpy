@@ -336,7 +336,7 @@ class MeshEditPart(PartBase):
         tolerance
             A Float specifying the maximum distance between nodes that will be merged to a single
             node. The location of the new node is the average position of the merged nodes. The
-            default value is 10-6.
+            default value is 10⁻⁶.
         removeDuplicateElements
             A Boolean specifying whether elements with the same connectivity after the merge will
             merged into a single element. The default value is True.
