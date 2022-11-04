@@ -122,7 +122,7 @@ class GasketThicknessBehavior:
             of the loading data, in addition to temperature. The default value is 0.
         tensileStiffnessFactor
             A Float specifying the fraction of the initial compressive stiffness that defines the
-            stiffness in tension. The default value is 10-3.
+            stiffness in tension. The default value is 10⁻³.
         type
             A SymbolicConstant specifying a damage elasticity model or an elastic-Plastic model for
             gasket thickness-direction behavior. Possible values are ELASTIC_PLASTIC and DAMAGE. The

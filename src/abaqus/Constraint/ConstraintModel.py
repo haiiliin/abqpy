@@ -232,7 +232,7 @@ class ConstraintModel(ModelBase):
             region is the whole model.
         weightFactorTolerance
             A Float specifying a small value below which the weighting factors will be zeroed out.
-            The default value is 10-6.
+            The default value is 10⁻⁶.
         toleranceMethod
             A SymbolicConstant specifying the method used to determine the embedded element
             tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is

@@ -77,7 +77,7 @@ class TopologyTask(OptimizationTask):
     densityUpdateStrategy: SymbolicConstant = NORMAL
 
     #: A Float specifying the stop criteria based upon the change in element densities. The
-    #: default value is 0.5×10-2.
+    #: default value is 0.5×10⁻².
     elementDensityDeltaStopCriteria: float = 0
 
     #: None or a Float specifying the mesh filter radius for mesh independence and minimum
@@ -122,7 +122,7 @@ class TopologyTask(OptimizationTask):
     #: A Float specifying the maximum density in the density update. The default value is 1.0.
     maxDensity: float = 1
 
-    #: A Float specifying the minimum density in the density update. The default value is 10-3.
+    #: A Float specifying the minimum density in the density update. The default value is 10⁻³.
     minDensity: Optional[float] = None
 
     #: The SymbolicConstant MODEL or a Region object specifying the region to use for mode
@@ -140,7 +140,7 @@ class TopologyTask(OptimizationTask):
     numTrackedModes: int = 5
 
     #: A Float specifying the stop criteria based on the change in objective function. The
-    #: default value is 10-3.
+    #: default value is 10⁻³.
     objectiveFunctionDeltaStopCriteria: Optional[float] = None
 
     #: The SymbolicConstant MODEL or a Region object specifying the region to which the
@@ -279,7 +279,7 @@ class TopologyTask(OptimizationTask):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10-2.
+            default value is 0.5×10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.
@@ -313,7 +313,7 @@ class TopologyTask(OptimizationTask):
         maxDensity
             A Float specifying the maximum density in the density update. The default value is 1.0.
         minDensity
-            A Float specifying the minimum density in the density update. The default value is 10-3.
+            A Float specifying the minimum density in the density update. The default value is 10⁻³.
         modeTrackingRegion
             The SymbolicConstant MODEL or a Region object specifying the region to use for mode
             tracking. The default value is MODEL.
@@ -326,7 +326,7 @@ class TopologyTask(OptimizationTask):
             An Int specifying the number of modes included in mode tracking. The default value is 5.
         objectiveFunctionDeltaStopCriteria
             A Float specifying the stop criteria based on the change in objective function. The
-            default value is 10-3.
+            default value is 10⁻³.
         region
             The SymbolicConstant MODEL or a Region object specifying the region to which the
             optimization task is applied. The default value is MODEL.
@@ -451,7 +451,7 @@ class TopologyTask(OptimizationTask):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10-2.
+            default value is 0.5×10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.
@@ -485,7 +485,7 @@ class TopologyTask(OptimizationTask):
         maxDensity
             A Float specifying the maximum density in the density update. The default value is 1.0.
         minDensity
-            A Float specifying the minimum density in the density update. The default value is 10-3.
+            A Float specifying the minimum density in the density update. The default value is 10⁻³.
         modeTrackingRegion
             The SymbolicConstant MODEL or a Region object specifying the region to use for mode
             tracking. The default value is MODEL.
@@ -498,7 +498,7 @@ class TopologyTask(OptimizationTask):
             An Int specifying the number of modes included in mode tracking. The default value is 5.
         objectiveFunctionDeltaStopCriteria
             A Float specifying the stop criteria based on the change in objective function. The
-            default value is 10-3.
+            default value is 10⁻³.
         region
             The SymbolicConstant MODEL or a Region object specifying the region to which the
             optimization task is applied. The default value is MODEL.
