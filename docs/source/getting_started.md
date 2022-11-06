@@ -66,11 +66,17 @@ or a later version.
 
         ++++
 
-        .. code-block:: bash
+        .. parsed-literal::
 
+<<<<<<< HEAD
             pip install abqpy==2019.3.15
             pip install abqpy==2019.*
             conda install -c haiiliin abqpy=2019.3.15
+=======
+            pip install :pippkg:`abqpy`
+            pip install abqpy==2023.*
+            conda install -c haiiliin :condapkg:`abqpy`
+>>>>>>> 4c9e1179 ([docs]: Auto update version in getting started (#3589))
 
     .. grid-item-card::
 
