@@ -13,10 +13,6 @@ Python script, even without opening the Abaqus/CAE.
 `abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
 or a later version.
 
-```{eval-rst}
-.. |abqpy-pip| replace:: :pippkg:`abqpy`
-.. |abqpy-conda| replace:: :condapkg:`abqpy`
-
 .. grid:: 1 2 2 2
     :gutter: 4
 
@@ -71,9 +67,9 @@ or a later version.
 
         .. parsed-literal::
 
-            pip install |abqpy-pip|
+            pip install :pippkg:`abqpy`
             pip install abqpy==2023.*
-            conda install -c haiiliin |abqpy-conda|
+            conda install -c haiiliin :condapkg:`abqpy`
 
     .. grid-item-card::
 
