@@ -38,6 +38,7 @@ except (ImportError, AttributeError):
     warnings.warn('abqpy is not installed, using 2017.0.0')
     release = version = '2017.0.0'[:4]
 sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('./_ext'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
@@ -72,6 +73,7 @@ extensions = [
     'sphinx_toolbox.collapse',
     'hoverxref.extension',
     'myst_parser',
+    'autopkg',
 ]
 
 # MyST configuration
