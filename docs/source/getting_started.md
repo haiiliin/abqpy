@@ -16,9 +16,7 @@ or a later version.
 ```{eval-rst}
 .. |abqpy-pip| replace:: :pippkg:`abqpy`
 .. |abqpy-conda| replace:: :condapkg:`abqpy`
-```
 
-```{eval-rst}
 .. grid:: 1 2 2 2
     :gutter: 4
 
