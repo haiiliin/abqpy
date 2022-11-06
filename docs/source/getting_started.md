@@ -68,15 +68,9 @@ or a later version.
 
         .. parsed-literal::
 
-<<<<<<< HEAD
-            pip install abqpy==2017.3.15
-            pip install abqpy==2017.*
-            conda install -c haiiliin abqpy=2017.3.15
-=======
             pip install :pippkg:`abqpy`
-            pip install abqpy==2023.*
+            pip install abqpy==2017.*
             conda install -c haiiliin :condapkg:`abqpy`
->>>>>>> 4c9e1179 ([docs]: Auto update version in getting started (#3589))
 
     .. grid-item-card::
 
