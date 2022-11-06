@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1937,7 +1937,7 @@ msgstr ""
 #: ../../../../src/abaqus/Step/StepModel.py:docstring of abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep:30
 #: ../../docstring of abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.stabilizationMagnitude:1
 #: ../../docstring of abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.stabilizationMagnitude:1
-msgid "A Float specifying the damping intensity of the automatic damping algorithm if the problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is 2×10-4."
+msgid "A Float specifying the damping intensity of the automatic damping algorithm if the problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is 2×10⁻⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Step/CoupledTempDisplacementStep.py:docstring of abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.__init__:34
@@ -3400,7 +3400,7 @@ msgstr ""
 #: ../../docstring of abaqus.Step.SoilsStep.SoilsStep.stabilizationMagnitude:1
 #: ../../docstring of abaqus.Step.StaticStep.StaticStep.stabilizationMagnitude:1
 #: ../../docstring of abaqus.Step.ViscoStep.ViscoStep.stabilizationMagnitude:1
-msgid "A Float specifying the damping intensity of the automatic damping algorithm if the problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default value is 2×10-4."
+msgid "A Float specifying the damping intensity of the automatic damping algorithm if the problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default value is 2×10⁻⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Step/SoilsStep.py:docstring of abaqus.Step.SoilsStep.SoilsStep.__init__:34
@@ -3587,7 +3587,7 @@ msgstr ""
 #: ../../../../src/abaqus/Step/StaticStep.py:docstring of abaqus.Step.StaticStep.StaticStep.setValues:32
 #: ../../../../src/abaqus/Step/StepModel.py:docstring of abaqus.Step.StepModel.StepModel.StaticStep:42
 #: ../../docstring of abaqus.Step.StaticStep.StaticStep.minInc:1
-msgid "A Float specifying the minimum time increment allowed. The default value is the smaller of the suggested initial time increment or 10-5 times the total time period."
+msgid "A Float specifying the minimum time increment allowed. The default value is the smaller of the suggested initial time increment or 10⁻⁵ times the total time period."
 msgstr ""
 
 #: ../../../../src/abaqus/Step/StaticStep.py:docstring of abaqus.Step.StaticStep.StaticStep.__init__:54
