@@ -1,7 +1,8 @@
+import functools
+from importlib import metadata
+
 from docutils import nodes
 from sphinx.application import Sphinx
-from importlib import metadata
-import functools
 
 
 def version_role(name, rawtext, text, lineno, inliner, options=None, content=None, type='pip'):
