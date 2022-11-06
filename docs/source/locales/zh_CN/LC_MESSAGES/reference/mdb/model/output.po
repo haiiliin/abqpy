@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb/model/output.md:1
 msgid "Output Request"
@@ -259,7 +259,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -267,7 +267,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -479,7 +479,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1045,9 +1045,7 @@ msgid "Returns"
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:88 of
-msgid ""
-"A :py:class:`~abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest` "
-"object."
+msgid "A FieldOutputRequest object."
 msgstr ""
 
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__
@@ -1184,10 +1182,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:88 of
-msgid ""
-"A "
-":py:class:`~abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest` "
-"object."
+msgid "A HistoryOutputRequest object."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:89 of
@@ -1206,9 +1201,7 @@ msgstr ""
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues:7
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.surface:1
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:14 of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
-"over which the output is based."
+msgid "A Region object specifying the surface over which the output is based."
 msgstr ""
 
 #: ../../docstring
@@ -1278,10 +1271,7 @@ msgstr ""
 
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__:41
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:41 of
-msgid ""
-"An "
-":py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection`"
-" object."
+msgid "An IntegratedOutputSection object."
 msgstr ""
 
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__:42
@@ -1306,7 +1296,7 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.TimePoint:17
 #: abaqus.StepOutput.TimePoint.TimePoint.__init__:17 of
-msgid "A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object."
+msgid "A TimePoint object."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.TimePoint:18
@@ -1422,7 +1412,7 @@ msgstr ""
 
 #: ../../None:23:<autosummary>:1
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__:54 of
-msgid "A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object."
+msgid "A DiagnosticPrint object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1431,7 +1421,7 @@ msgstr ""
 
 #: ../../None:23:<autosummary>:1 abaqus.StepOutput.Monitor.Monitor.__init__:38
 #: of
-msgid "A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object."
+msgid "A Monitor object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1440,7 +1430,7 @@ msgstr ""
 
 #: ../../None:23:<autosummary>:1 abaqus.StepOutput.Restart.Restart.__init__:26
 #: of
-msgid "A :py:class:`~abaqus.StepOutput.Restart.Restart` object."
+msgid "A Restart object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1468,7 +1458,7 @@ msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid "A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object."
+msgid "A Control object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1476,9 +1466,7 @@ msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` "
-"object."
+msgid "A SolverControl object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1710,9 +1698,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:54 of
-msgid ""
-"**diagnosticPrint** -- A "
-":py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object"
+msgid "**diagnosticPrint** -- A DiagnosticPrint object"
 msgstr ""
 
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__:55
@@ -1846,7 +1832,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep.Monitor:38 of
-msgid "**monitor** -- A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object"
+msgid "**monitor** -- A Monitor object"
 msgstr ""
 
 #: abaqus.StepOutput.Monitor.Monitor.__init__:39
@@ -1897,7 +1883,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep.Restart:26 of
-msgid "**restart** -- A :py:class:`~abaqus.StepOutput.Restart.Restart` object"
+msgid "**restart** -- A Restart object"
 msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep.Restart:27
@@ -4024,5 +4010,73 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "TimePoint"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the surface over which the"
+#~ " output is based."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepOutput.TimePoint.TimePoint` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepOutput.Restart.Restart` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.StepMiscellaneous.SolverControl.SolverControl` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**diagnosticPrint** -- A "
+#~ ":py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` "
+#~ "object"
+#~ msgstr ""
+
+#~ msgid "**monitor** -- A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object"
+#~ msgstr ""
+
+#~ msgid "**restart** -- A :py:class:`~abaqus.StepOutput.Restart.Restart` object"
 #~ msgstr ""
 

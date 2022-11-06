@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb/model/optimization.md:1
 msgid "Optimization"
@@ -330,7 +330,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -338,7 +338,7 @@ msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -550,7 +550,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1522,7 +1522,7 @@ msgstr ""
 #: abaqus.Optimization.BeadTask.BeadTask.__init__:85
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:85
 #: of
-msgid "A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object."
+msgid "A BeadTask object."
 msgstr ""
 
 #: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__
@@ -1704,7 +1704,7 @@ msgstr ""
 #: abaqus.Optimization.ShapeTask.ShapeTask.setValues:39 of
 msgid ""
 "A Float specifying the equality constraint tolerance. The default value "
-"is 10-3."
+"is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -2064,7 +2064,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask:165
 #: abaqus.Optimization.ShapeTask.ShapeTask.__init__:165 of
-msgid "A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object."
+msgid "A ShapeTask object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask:166
@@ -2086,7 +2086,7 @@ msgstr ""
 #: abaqus.Optimization.SizingTask.SizingTask.setValues:13 of
 msgid ""
 "A Float specifying the stop criteria based on the change in element "
-"thickness. The default value is 0.5 × 10-2."
+"thickness. The default value is 0.5 × 10⁻²."
 msgstr ""
 
 #: ../../docstring
@@ -2172,7 +2172,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask:56
 #: abaqus.Optimization.SizingTask.SizingTask.__init__:56 of
-msgid "A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object."
+msgid "A SizingTask object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask:57
@@ -2215,7 +2215,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:24 of
 msgid ""
 "A Float specifying the stop criteria based upon the change in element "
-"densities. The default value is 0.5×10-2."
+"densities. The default value is 0.5×10⁻²."
 msgstr ""
 
 #: ../../docstring
@@ -2306,7 +2306,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:59 of
 msgid ""
 "A Float specifying the minimum density in the density update. The default"
-" value is 10-3."
+" value is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -2326,7 +2326,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:71 of
 msgid ""
 "A Float specifying the stop criteria based on the change in objective "
-"function. The default value is 10-3."
+"function. The default value is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -2434,7 +2434,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask:130
 #: abaqus.Optimization.TopologyTask.TopologyTask.__init__:130 of
-msgid "A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object."
+msgid "A TopologyTask object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask:131
@@ -3157,6 +3157,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:14
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:16
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:20
+#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:20
 #: abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:14
 #: abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.__init__:14
 #: abaqus.Optimization.SizingMemberSize.SizingMemberSize.__init__:14
@@ -3166,8 +3167,8 @@ msgstr ""
 #: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:17
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the geometric restriction is applied."
+"A Region object specifying the region to which the geometric restriction "
+"is applied."
 msgstr ""
 
 #: ../../docstring
@@ -3288,7 +3289,7 @@ msgstr ""
 
 #: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:29
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:29 of
-msgid "A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object."
+msgid "A BeadFixedRegion object."
 msgstr ""
 
 #: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:30
@@ -3325,7 +3326,7 @@ msgstr ""
 
 #: abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:22
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:22 of
-msgid "A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object."
+msgid "A BeadGrowth object."
 msgstr ""
 
 #: abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:23
@@ -3349,18 +3350,13 @@ msgstr ""
 #: abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:14
 #: abaqus.Optimization.PenetrationCheck.PenetrationCheck.penetrationCheckRegion:1
 #: of
-msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the "
-"penetration check region."
+msgid "A Region object specifying the penetration check region."
 msgstr ""
 
 #: abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:18
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:18
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck`"
-" object."
+msgid "A BeadPenetrationCheck object."
 msgstr ""
 
 #: abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:19
@@ -3410,9 +3406,7 @@ msgstr ""
 #: abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:23
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry:23
 #: of
-msgid ""
-"A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` "
-"object."
+msgid "A BeadPlanarSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:24
@@ -3452,9 +3446,7 @@ msgstr ""
 #: abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:20
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry:20
 #: of
-msgid ""
-"A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` "
-"object."
+msgid "A BeadPointSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:21
@@ -3488,10 +3480,7 @@ msgstr ""
 #: abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:25
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry:25
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry`"
-" object."
+msgid "A BeadRotationalSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:26
@@ -3552,10 +3541,9 @@ msgstr ""
 #: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:16
 #: abaqus.Optimization.TurnControl.TurnControl.__init__:18 of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
-"to which the geometric restriction is applied. When used with a "
-"TopologyTask, there is no default value. When used with a ShapeTask, the "
-"default value is MODEL."
+"A Region object specifying the region to which the geometric restriction "
+"is applied. When used with a TopologyTask, there is no default value. "
+"When used with a ShapeTask, the default value is MODEL."
 msgstr ""
 
 #: abaqus.Optimization.DesignDirection.DesignDirection.__init__:22
@@ -3791,7 +3779,7 @@ msgstr ""
 
 #: abaqus.Optimization.DesignDirection.DesignDirection.__init__:54
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection:54 of
-msgid "A :py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` object."
+msgid "A DesignDirection object."
 msgstr ""
 
 #: abaqus.Optimization.DesignDirection.DesignDirection.__init__:55
@@ -3810,10 +3798,10 @@ msgstr ""
 #: abaqus.Optimization.DrillControl.DrillControl.clientDirection:1
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl:14 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of the drill axis positioned at the "
-"**csys** origin. Instead of through a ConstrainedSketchVertex, each point"
-" may be specified through a tuple of coordinates."
+"A VertexArray object of length 2 specifying the direction of the drill "
+"axis positioned at the **csys** origin. Instead of through a "
+"ConstrainedSketchVertex, each point may be specified through a tuple of "
+"coordinates."
 msgstr ""
 
 #: ../../docstring abaqus.Optimization.DrillControl.DrillControl.__init__:26
@@ -3947,7 +3935,7 @@ msgstr ""
 
 #: abaqus.Optimization.DrillControl.DrillControl.__init__:54
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl:54 of
-msgid "A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object."
+msgid "A DrillControl object."
 msgstr ""
 
 #: abaqus.Optimization.DrillControl.DrillControl.__init__:55
@@ -3964,7 +3952,7 @@ msgstr ""
 
 #: abaqus.Optimization.FixedRegion.FixedRegion.__init__:34
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion:34 of
-msgid "A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object."
+msgid "A FixedRegion object."
 msgstr ""
 
 #: abaqus.Optimization.FixedRegion.FixedRegion.__init__:35
@@ -3981,7 +3969,7 @@ msgstr ""
 
 #: abaqus.Optimization.FrozenArea.FrozenArea.__init__:18
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea:18 of
-msgid "A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object."
+msgid "A FrozenArea object."
 msgstr ""
 
 #: abaqus.Optimization.FrozenArea.FrozenArea.__init__:19
@@ -4018,7 +4006,7 @@ msgstr ""
 
 #: abaqus.Optimization.Growth.Growth.__init__:27
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.Growth:27 of
-msgid "A :py:class:`~abaqus.Optimization.Growth.Growth` object."
+msgid "A Growth object."
 msgstr ""
 
 #: abaqus.Optimization.Growth.Growth.__init__:28
@@ -4046,10 +4034,7 @@ msgstr ""
 #: abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.objectives:1
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction:14
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray`"
-" object."
+msgid "An OptimizationObjectiveArray object."
 msgstr ""
 
 #: ../../docstring
@@ -4067,9 +4052,7 @@ msgstr ""
 #: abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:19
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction:19
 #: of
-msgid ""
-"An :py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction` "
-"object."
+msgid "An ObjectiveFunction object."
 msgstr ""
 
 #: abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:20
@@ -4139,10 +4122,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:23
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint:23
 #: of
-msgid ""
-"An "
-":py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint`"
-" object."
+msgid "An OptimizationConstraint object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:24
@@ -4160,9 +4140,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck:23
 #: abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:23 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` "
-"object."
+msgid "A PenetrationCheck object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck:24
@@ -4182,10 +4160,9 @@ msgstr ""
 #: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:14
 #: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.pullDirection:1 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the demold pull direction. Instead of through a "
-"ConstrainedSketchVertex, each point might be specified through a tuple of"
-" coordinates."
+"A VertexArray object of length 2 specifying the demold pull direction. "
+"Instead of through a ConstrainedSketchVertex, each point might be "
+"specified through a tuple of coordinates."
 msgstr ""
 
 #: ../../docstring
@@ -4245,9 +4222,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:52
 #: abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:52 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl` "
-"object."
+msgid "A ShapeDemoldControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:53
@@ -4346,7 +4321,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:35
 #: abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.__init__:35 of
-msgid "A :py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` object."
+msgid "A ShapeMemberSize object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:36
@@ -4367,11 +4342,10 @@ msgstr ""
 #: abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.clientDirection:1
 #: of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the vector positioned at the **csys** origin that is "
-"normal to the symmetry plane. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates."
+"A VertexArray object of length 2 specifying the vector positioned at the "
+"**csys** origin that is normal to the symmetry plane. Instead of through "
+"a ConstrainedSketchVertex, each point may be specified through a tuple of"
+" coordinates."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:22
@@ -4435,10 +4409,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:50
 #: abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.__init__:47 of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry` "
-"object."
+msgid "A ShapePlanarSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:51
@@ -4467,9 +4438,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:40
 #: abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.__init__:40 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry` "
-"object."
+msgid "A ShapePointSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:41
@@ -4490,10 +4459,10 @@ msgstr ""
 #: abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.clientDirection:1
 #: of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the vector positioned at the **csys** origin, used as"
-" the axis of symmetry. Instead of through a ConstrainedSketchVertex, each"
-" point might be specified through a tuple of coordinates."
+"A VertexArray object of length 2 specifying the vector positioned at the "
+"**csys** origin, used as the axis of symmetry. Instead of through a "
+"ConstrainedSketchVertex, each point might be specified through a tuple of"
+" coordinates."
 msgstr ""
 
 #: ../../docstring
@@ -4545,10 +4514,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:62
 #: abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.__init__:62
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`"
-" object."
+msgid "A ShapeRotationalSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:63
@@ -4644,16 +4610,13 @@ msgstr ""
 #: abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.setValues:26
 #: abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.stepOptions:1
 #: of
-msgid "A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object."
+msgid "A StepOptionArray object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse:37
 #: abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.__init__:37
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse`"
-" object."
+msgid "A SingleTermDesignResponse object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse:38
@@ -4680,9 +4643,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas:17
 #: abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.__init__:17 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` "
-"object."
+msgid "A SizingClusterAreas object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas:18
@@ -4764,10 +4725,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:28
 #: abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:28 of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry`"
-" object."
+msgid "A SizingCyclicSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:29
@@ -4784,9 +4742,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea:16
 #: abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.__init__:16 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` "
-"object."
+msgid "A SizingFrozenArea object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea:17
@@ -4817,10 +4773,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:25
 #: abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.__init__:25 of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry`"
-" object."
+msgid "A SizingPlanarSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:26
@@ -4837,10 +4790,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:22
 #: abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.__init__:22 of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry` "
-"object."
+msgid "A SizingPointSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:23
@@ -4858,10 +4808,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:27
 #: abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:27
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry`"
-" object."
+msgid "A SizingRotationalSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:28
@@ -4883,10 +4830,9 @@ msgstr ""
 #: abaqus.Optimization.SlideRegionControl.SlideRegionControl.clientDirection:1
 #: of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the axis of revolution. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates. This is used when **approach** is TURN."
+"A VertexArray object of length 2 specifying the axis of revolution. "
+"Instead of through a ConstrainedSketchVertex, each point may be specified"
+" through a tuple of coordinates. This is used when **approach** is TURN."
 msgstr ""
 
 #: ../../docstring
@@ -4967,9 +4913,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:49
 #: abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:49 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl` "
-"object."
+msgid "A SlideRegionControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:50
@@ -4989,15 +4933,14 @@ msgstr ""
 #: abaqus.Optimization.StampControl.StampControl.__init__:14
 #: abaqus.Optimization.StampControl.StampControl.clientDirection:1 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the stamping direction. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates."
+"A VertexArray object of length 2 specifying the stamping direction. "
+"Instead of through a ConstrainedSketchVertex, each point may be specified"
+" through a tuple of coordinates."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:53
 #: abaqus.Optimization.StampControl.StampControl.__init__:53 of
-msgid "A :py:class:`~abaqus.Optimization.StampControl.StampControl` object."
+msgid "A StampControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:54
@@ -5015,10 +4958,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:30
 #: abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:30
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry`"
-" object."
+msgid "A TopologyCyclicSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:31
@@ -5050,9 +4990,9 @@ msgstr ""
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:18
 #: of
 msgid ""
-"A :py:class:`~abaqus.Region.Region.Region` object specifying the point on"
-" a plane perpendicular to the pull direction, used to specify the central"
-" plane when **technique** is POINT."
+"A Region object specifying the point on a plane perpendicular to the pull"
+" direction, used to specify the central plane when **technique** is "
+"POINT."
 msgstr ""
 
 #: ../../docstring
@@ -5062,10 +5002,9 @@ msgstr ""
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.setValues:21
 #: of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the demold pull direction. Instead of through a "
-"ConstrainedSketchVertex, each point may be specified through a tuple of "
-"coordinates."
+"A VertexArray object of length 2 specifying the demold pull direction. "
+"Instead of through a ConstrainedSketchVertex, each point may be specified"
+" through a tuple of coordinates."
 msgstr ""
 
 #: ../../docstring
@@ -5082,10 +5021,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:38
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:38
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl`"
-" object."
+msgid "A TopologyDemoldControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:39
@@ -5123,9 +5059,7 @@ msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:28
 #: abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:28 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize` "
-"object."
+msgid "A TopologyMemberSize object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:29
@@ -5196,10 +5130,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:35
 #: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:32
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl`"
-" object."
+msgid "A TopologyMillingControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:36
@@ -5226,13 +5157,6 @@ msgid ""
 "A VertexArray object of length 2 specifying the overhang control print "
 "direction. Instead of through a ConstrainedSketchVertex, each point can "
 "be specified through a tuple of coordinates."
-msgstr ""
-
-#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:20
-#: of
-msgid ""
-"A Region object specifying the region to which the geometric restriction "
-"is applied."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:27
@@ -5287,10 +5211,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:27
 #: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:27
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry`"
-" object."
+msgid "A TopologyPlanarSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:28
@@ -5309,10 +5230,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:24
 #: abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:24
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry`"
-" object."
+msgid "A TopologyPointSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:25
@@ -5332,10 +5250,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:29
 #: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:29
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry`"
-" object."
+msgid "A TopologyRotationalSymmetry object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:30
@@ -5356,16 +5271,15 @@ msgstr ""
 #: abaqus.Optimization.TurnControl.TurnControl.__init__:14
 #: abaqus.Optimization.TurnControl.TurnControl.clientDirection:1 of
 msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the direction of the rotation axis as a vector "
-"positioned at the **csys** origin. Instead of through a "
-"ConstrainedSketchVertex, each point might be specified through a tuple of"
-" coordinates."
+"A VertexArray object of length 2 specifying the direction of the rotation"
+" axis as a vector positioned at the **csys** origin. Instead of through a"
+" ConstrainedSketchVertex, each point might be specified through a tuple "
+"of coordinates."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:50
 #: abaqus.Optimization.TurnControl.TurnControl.__init__:47 of
-msgid "A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object."
+msgid "A TurnControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:51
@@ -6574,10 +6488,7 @@ msgstr ""
 
 #: abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.__init__:71
 #: of
-msgid ""
-"A "
-":py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse`"
-" object."
+msgid "A CombinedTermDesignResponse object."
 msgstr ""
 
 #: abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse.__init__:72
@@ -7276,9 +7187,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:49 of
-msgid ""
-"A :py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition` "
-"object."
+msgid "A LocalStopCondition object."
 msgstr ""
 
 #: abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:50 of
@@ -9672,9 +9581,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
-msgid ""
-"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of "
-"length 2 specifying the demold pull direction."
+msgid "A VertexArray object of length 2 specifying the demold pull direction."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -14218,5 +14125,392 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "TurnControl"
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+#~ msgstr ""
+
+#~ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.BeadTask.BeadTask` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the equality "
+#~ "constraint tolerance. The default value "
+#~ "is 10-3."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.ShapeTask.ShapeTask` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based on the change in element "
+#~ "thickness. The default value is 0.5 "
+#~ "× 10-2."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.SizingTask.SizingTask` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based upon the change in element "
+#~ "densities. The default value is "
+#~ "0.5×10-2."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the minimum density"
+#~ " in the density update. The default"
+#~ " value is 10-3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based on the change in objective "
+#~ "function. The default value is 10-3."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.TopologyTask.TopologyTask` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "geometric restriction is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the penetration check region."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the region to which the "
+#~ "geometric restriction is applied. When "
+#~ "used with a TopologyTask, there is "
+#~ "no default value. When used with a"
+#~ " ShapeTask, the default value is "
+#~ "MODEL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.DesignDirection.DesignDirection` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of the drill axis positioned"
+#~ " at the **csys** origin. Instead of"
+#~ " through a ConstrainedSketchVertex, each "
+#~ "point may be specified through a "
+#~ "tuple of coordinates."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.DrillControl.DrillControl` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.FixedRegion.FixedRegion` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.Growth.Growth` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjectiveArray`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Optimization.ObjectiveFunction.ObjectiveFunction`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An "
+#~ ":py:class:`~abaqus.Optimization.OptimizationConstraint.OptimizationConstraint`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.PenetrationCheck.PenetrationCheck` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "demold pull direction. Instead of "
+#~ "through a ConstrainedSketchVertex, each point"
+#~ " might be specified through a tuple"
+#~ " of coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.ShapeMemberSize.ShapeMemberSize` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "vector positioned at the **csys** origin"
+#~ " that is normal to the symmetry "
+#~ "plane. Instead of through a "
+#~ "ConstrainedSketchVertex, each point may be "
+#~ "specified through a tuple of "
+#~ "coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "vector positioned at the **csys** "
+#~ "origin, used as the axis of "
+#~ "symmetry. Instead of through a "
+#~ "ConstrainedSketchVertex, each point might be"
+#~ " specified through a tuple of "
+#~ "coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "axis of revolution. Instead of through"
+#~ " a ConstrainedSketchVertex, each point may"
+#~ " be specified through a tuple of "
+#~ "coordinates. This is used when "
+#~ "**approach** is TURN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.SlideRegionControl.SlideRegionControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "stamping direction. Instead of through a"
+#~ " ConstrainedSketchVertex, each point may be"
+#~ " specified through a tuple of "
+#~ "coordinates."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.StampControl.StampControl` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.Region.Region.Region` object "
+#~ "specifying the point on a plane "
+#~ "perpendicular to the pull direction, "
+#~ "used to specify the central plane "
+#~ "when **technique** is POINT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "demold pull direction. Instead of "
+#~ "through a ConstrainedSketchVertex, each point"
+#~ " may be specified through a tuple "
+#~ "of coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyMemberSize.TopologyMemberSize`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "direction of the rotation axis as "
+#~ "a vector positioned at the **csys** "
+#~ "origin. Instead of through a "
+#~ "ConstrainedSketchVertex, each point might be"
+#~ " specified through a tuple of "
+#~ "coordinates."
+#~ msgstr ""
+
+#~ msgid "A :py:class:`~abaqus.Optimization.TurnControl.TurnControl` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.CombinedTermDesignResponse.CombinedTermDesignResponse`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Optimization.LocalStopCondition.LocalStopCondition`"
+#~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
+#~ "object of length 2 specifying the "
+#~ "demold pull direction."
 #~ msgstr ""
 
