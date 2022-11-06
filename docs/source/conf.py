@@ -73,7 +73,7 @@ extensions = [
     'sphinx_toolbox.collapse',
     'hoverxref.extension',
     'myst_parser',
-    'version',
+    'autopkg',
 ]
 
 # MyST configuration
