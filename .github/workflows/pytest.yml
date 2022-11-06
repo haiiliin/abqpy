@@ -57,6 +57,9 @@ jobs:
           if_true: ${{ github.base_ref }}
           if_false: ${{ github.ref_name }}
       - uses: codecov/codecov-action@v3
+        if: |
+          (github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'backport')) || 
+          github.event_name == 'push'
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           files: coverage.xml # optional
