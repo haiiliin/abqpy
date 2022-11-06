@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3860,7 +3860,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/StdContactControl.py:docstring of abaqus.Interaction.StdContactControl.StdContactControl.__init__:24
 #: ../../../../src/abaqus/Interaction/StdContactControl.py:docstring of abaqus.Interaction.StdContactControl.StdContactControl.setValues:17
 #: ../../docstring of abaqus.Interaction.StdContactControl.StdContactControl.relativePenetrationTolerance:1
-msgid "A Float specifying the ratio of the allowable penetration to the characteristic contact surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only contact interactions defined with augmented Lagrangian surface behavior will be affected by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance** and **absolutePenetrationTolerance** arguments are mutually exclusive."
+msgid "A Float specifying the ratio of the allowable penetration to the characteristic contact surface face dimension. The float values represent percentages (e.g.: 0.001=0.1%). Only contact interactions defined with augmented Lagrangian surface behavior will be affected by this argument. The default value is 10⁻³.The **relativePenetrationTolerance** argument applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance** and **absolutePenetrationTolerance** arguments are mutually exclusive."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/InteractionContactControlModel.py:docstring of abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl:31
@@ -4992,14 +4992,14 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/IncidentWaveProperty.py:docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.setValues:77
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty:84
 #: ../../docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.relativeStepControl:1
-msgid "A Float specifying the relative step size control parameter. The default value is 1x10-11.This argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE."
+msgid "A Float specifying the relative step size control parameter. The default value is 1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/IncidentWaveProperty.py:docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.__init__:88
 #: ../../../../src/abaqus/Interaction/IncidentWaveProperty.py:docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.setValues:81
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty:88
 #: ../../docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.absoluteStepControl:1
-msgid "A Float specifying the absolute step size control parameter. The default value is 1x10-11.This argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE."
+msgid "A Float specifying the absolute step size control parameter. The default value is 1x10⁻¹¹.This argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/IncidentWaveProperty.py:docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty.__init__:92
@@ -10866,7 +10866,7 @@ msgid "A SymbolicConstant specifying the propagation state of the **penetrationP
 msgstr ""
 
 #: ../../docstring of abaqus.Interaction.PressurePenetrationState.PressurePenetrationState.penetrationTime:1
-msgid "A Float specifying the fraction of the current step time over which the fluid pressure on newly penetrated contact surface segments is ramped up to the current magnitude. The default value is 10-3."
+msgid "A Float specifying the fraction of the current step time over which the fluid pressure on newly penetrated contact surface segments is ramped up to the current magnitude. The default value is 10⁻³."
 msgstr ""
 
 #: ../../docstring of abaqus.Interaction.PressurePenetrationState.PressurePenetrationState.penetrationTimeState:1

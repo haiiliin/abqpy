@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3085,7 +3085,7 @@ msgid "A SymbolicConstant specifying whether the nodes of orphan mesh part insta
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:25
-msgid "A Float specifying the maximum distance between nodes of orphan mesh part instances that will be merged and replaced with a single new node. The location of the new node is the average position of the deleted nodes. The default value is 10-6."
+msgid "A Float specifying the maximum distance between nodes of orphan mesh part instances that will be merged and replaced with a single new node. The location of the new node is the average position of the deleted nodes. The default value is 10⁻⁶."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.PartFromBooleanMerge:29
@@ -5196,7 +5196,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellSweep:51
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidExtrude:40
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidSweep:51
-msgid "A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are -105 ≤ **pitch** ≤ 105. The arguments **draftAngle** and **pitch** are mutually exclusive."
+msgid "A Float specifying the pitch. The pitch is the distance traveled along the axial direction by the sketch when the sketch has completed one full revolution about the twist axis. Pitch can be specified as positive or negative to achieve right-handed or left-handed twist about the twist axis, respectively. The default value, 0, implies a normal extrude. Possible values are -10⁵ ≤ **pitch** ≤ 10⁵. The arguments **draftAngle** and **pitch** are mutually exclusive."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellExtrude:31
@@ -5229,7 +5229,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutRevolve:29
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellRevolve:31
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidRevolve:30
-msgid "A Float specifying the pitch. The pitch is the distance traveled along the axial direction, measured between corresponding points on the sketch when it has completed one full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 105. The default value, 0, implies a normal revolve."
+msgid "A Float specifying the pitch. The pitch is the distance traveled along the axial direction, measured between corresponding points on the sketch when it has completed one full revolution about the axis of revolution. Possible values are 0 ≤ **pitch** ≤ 10⁵. The default value, 0, implies a normal revolve."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:25
@@ -5298,7 +5298,7 @@ msgid "Check `BaseSolidRevolve on help.3ds.com/2018 <https://help.3ds.com/2018/E
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:17
-msgid "A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤ 360. Note: If **pitch** > 0, there is no upper limit for **angle**."
+msgid "A Float specifying the revolve angle in degrees. Possible values are 10⁻⁴ ≤ **angle** ≤ 360. Note: If **pitch** > 0, there is no upper limit for **angle**."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:1
@@ -7181,11 +7181,23 @@ msgid "Check `Part.seedEdgeByBias on help.3ds.com/2018 <https://help.3ds.com/201
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:8
-msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are: - SINGLE: Single-biased seed distribution will be applied. - DOUBLE: Double-biased seed distribution will be applied."
+msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are:  * SINGLE: Single-biased seed distribution will be applied. * DOUBLE: Double-biased seed distribution will be applied."
 msgstr ""
 
-#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:14
-msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:8
+msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are:"
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:12
+msgid "SINGLE: Single-biased seed distribution will be applied."
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:13
+msgid "DOUBLE: Double-biased seed distribution will be applied."
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:15
+msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by `getVertices()`."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:21
@@ -7201,12 +7213,12 @@ msgid "A sequence of Edge objects specifying the edges to seed. The smallest ele
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:32
-msgid "A Float specifying the ratio of the largest element to the smallest element. Possible values are 1.0 ≤ **ratio** ≤ 106."
+msgid "A Float specifying the ratio of the largest element to the smallest element. Possible values are 1.0 ≤ **ratio** ≤ 10⁶."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:35
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:10
-msgid "An Int specifying the number of elements along each edge. Possible values are 1 ≤ **number** ≤ 104."
+msgid "An Int specifying the number of elements along each edge. Possible values are 1 ≤ **number** ≤ 10⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:38
@@ -7290,7 +7302,7 @@ msgid "Check `Part.setBoundaryLayerControls on help.3ds.com/2018 <https://help.3
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11
-msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 106."
+msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 10⁶."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:14
@@ -7298,7 +7310,7 @@ msgid "A Float specifying the ratio of heights of any two consecutive element la
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:17
-msgid "An Int specifying the number of element layers to be generated. Possible values are 1 ≤ **numLayers** ≤ 104."
+msgid "An Int specifying the number of element layers to be generated. Possible values are 1 ≤ **numLayers** ≤ 10⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:20
