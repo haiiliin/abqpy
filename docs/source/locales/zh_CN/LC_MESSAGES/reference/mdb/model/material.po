@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb/model/material.md:1
 msgid "Material"
@@ -6639,7 +6639,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.GasketThicknessBehavior:24 of
 msgid ""
 "A Float specifying the fraction of the initial compressive stiffness that"
-" defines the stiffness in tension. The default value is 10-3."
+" defines the stiffness in tension. The default value is 10⁻³."
 msgstr ""
 
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior.__init__:27
@@ -7061,14 +7061,14 @@ msgstr ""
 #: abaqus.Material.Material.Material.LowDensityFoam:26 of
 msgid ""
 "A Float specifying the relaxation coefficient μ0. The default value is "
-"10-4."
+"10⁻⁴."
 msgstr ""
 
 #: abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam.__init__:28
 #: abaqus.Material.Material.Material.LowDensityFoam:28 of
 msgid ""
 "A Float specifying the relaxation coefficient μ1. The default value is "
-"0.5×10-2."
+"0.5×10⁻²."
 msgstr ""
 
 #: abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam.__init__:30
@@ -22213,5 +22213,24 @@ msgstr ""
 #~ "the **time** member of the "
 #~ ":py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic`"
 #~ " object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the fraction of "
+#~ "the initial compressive stiffness that "
+#~ "defines the stiffness in tension. The"
+#~ " default value is 10-3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the relaxation "
+#~ "coefficient μ0. The default value is "
+#~ "10-4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the relaxation "
+#~ "coefficient μ1. The default value is "
+#~ "0.5×10-2."
 #~ msgstr ""
 
