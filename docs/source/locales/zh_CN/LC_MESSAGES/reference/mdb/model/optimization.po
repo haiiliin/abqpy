@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb/model/optimization.md:1
 msgid "Optimization"
@@ -1704,7 +1704,7 @@ msgstr ""
 #: abaqus.Optimization.ShapeTask.ShapeTask.setValues:39 of
 msgid ""
 "A Float specifying the equality constraint tolerance. The default value "
-"is 10-3."
+"is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -2086,7 +2086,7 @@ msgstr ""
 #: abaqus.Optimization.SizingTask.SizingTask.setValues:13 of
 msgid ""
 "A Float specifying the stop criteria based on the change in element "
-"thickness. The default value is 0.5 × 10-2."
+"thickness. The default value is 0.5 × 10⁻²."
 msgstr ""
 
 #: ../../docstring
@@ -2215,7 +2215,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:24 of
 msgid ""
 "A Float specifying the stop criteria based upon the change in element "
-"densities. The default value is 0.5×10-2."
+"densities. The default value is 0.5×10⁻²."
 msgstr ""
 
 #: ../../docstring
@@ -2306,7 +2306,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:59 of
 msgid ""
 "A Float specifying the minimum density in the density update. The default"
-" value is 10-3."
+" value is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -2326,7 +2326,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyTask.TopologyTask.setValues:71 of
 msgid ""
 "A Float specifying the stop criteria based on the change in objective "
-"function. The default value is 10-3."
+"function. The default value is 10⁻³."
 msgstr ""
 
 #: ../../docstring
@@ -13430,5 +13430,37 @@ msgstr ""
 #~ "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` "
 #~ "object of length 2 specifying the "
 #~ "demold pull direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the equality "
+#~ "constraint tolerance. The default value "
+#~ "is 10-3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based on the change in element "
+#~ "thickness. The default value is 0.5 "
+#~ "× 10-2."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based upon the change in element "
+#~ "densities. The default value is "
+#~ "0.5×10-2."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the minimum density"
+#~ " in the density update. The default"
+#~ " value is 10-3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the stop criteria "
+#~ "based on the change in objective "
+#~ "function. The default value is 10-3."
 #~ msgstr ""
 

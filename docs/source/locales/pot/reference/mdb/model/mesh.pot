@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-11-06 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2589,12 +2589,27 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:8
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:8
-msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are: - SINGLE: Single-biased seed distribution will be applied. - DOUBLE: Double-biased seed distribution will be applied."
+msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are:  * SINGLE: Single-biased seed distribution will be applied. * DOUBLE: Double-biased seed distribution will be applied."
 msgstr ""
 
-#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:14
-#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:14
-msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
+#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:8
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:8
+msgid "A SymbolicConstant specifying whether single- or double-biased seed distribution will be applied. If unspecified, single-biased seed distribution will be applied. Possible values are:"
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:12
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:12
+msgid "SINGLE: Single-biased seed distribution will be applied."
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:13
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:13
+msgid "DOUBLE: Double-biased seed distribution will be applied."
+msgstr ""
+
+#: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:15
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:15
+msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by `getVertices()`."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:21
@@ -2614,14 +2629,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:32
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:32
-msgid "A Float specifying the ratio of the largest element to the smallest element. Possible values are 1.0 ≤ **ratio** ≤ 106."
+msgid "A Float specifying the ratio of the largest element to the smallest element. Possible values are 1.0 ≤ **ratio** ≤ 10⁶."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:35
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:10
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:35
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:10
-msgid "An Int specifying the number of elements along each edge. Possible values are 1 ≤ **number** ≤ 104."
+msgid "An Int specifying the number of elements along each edge. Possible values are 1 ≤ **number** ≤ 10⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:38
@@ -2734,7 +2749,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:11
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11
-msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 106."
+msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 10⁶."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:14
@@ -2744,7 +2759,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:17
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:17
-msgid "An Int specifying the number of element layers to be generated. Possible values are 1 ≤ **numLayers** ≤ 104."
+msgid "An Int specifying the number of element layers to be generated. Possible values are 1 ≤ **numLayers** ≤ 10⁴."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:20
