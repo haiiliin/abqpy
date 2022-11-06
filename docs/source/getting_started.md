@@ -66,11 +66,11 @@ or a later version.
 
         ++++
 
-        .. code-block:: bash
+        .. parsed-literal::
 
-            pip install abqpy==2018.3.15
+            pip install :pippkg:`abqpy`
             pip install abqpy==2018.*
-            conda install -c haiiliin abqpy=2018.3.15
+            conda install -c haiiliin :condapkg:`abqpy`
 
     .. grid-item-card::
 
