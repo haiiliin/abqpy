@@ -3,7 +3,7 @@ on:
   release:
     types: [published]
   workflow_dispatch:
-# workflow_dispatch:        # Un comment line if you also want to trigger action manually
+
 jobs:
   conda_deployment_with_new_tag:
     name: Conda deployment of package with Python ${{ matrix.python-version }}
