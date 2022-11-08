@@ -4,7 +4,6 @@ package:
 build:
   noarch: python
   script: |
-    pip install auto-all
     pip instll .
   skip: True # [py<37]
 source:
