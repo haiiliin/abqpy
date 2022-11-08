@@ -1,17 +1,17 @@
 # .github/release-drafter.yml
 
-name-template: 'v$RESOLVED_VERSION 🌈'
+name-template: "v$RESOLVED_VERSION \U0001F308"
 tag-template: 'v$RESOLVED_VERSION'
 filter-by-commitish: true
 commitish: "2018"
 categories:
-  - title: '🚀 New Features'
+  - title: "\U0001F680 New Features"
     labels:
       - 'feature'
       - 'new feature'
       - 'enhancement'
       - 'customization'
-  - title: '🐛 Bug Fixes'
+  - title: "\U0001F41B Bug Fixes"
     labels:
       - 'fix'
       - 'bugfix'
@@ -19,18 +19,18 @@ categories:
       - 'test'
       - 'typo'
       - 'refactor'
-  - title: '💁‍♂️ Typing Annotations'
+  - title: "\U0001F481‍♂️ Typing Annotations"
     labels:
       - 'typing'
-  - title: '📝 Documentation'
+  - title: "\U0001F4DD Documentation"
     labels:
       - 'documentation'
       - 'docs'
       - 'doc'
-  - title: '🌐 Translations'
+  - title: "\U0001F310 Translations"
     labels:
       - 'translation'
-  - title: '🤖 Automation'
+  - title: "\U0001F916 Automation"
     labels:
       - 'automation'
       - 'release'
@@ -55,4 +55,3 @@ template: |
   $CHANGES
 
   **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
-

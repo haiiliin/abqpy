@@ -17,8 +17,8 @@ pull_request_rules:
     conditions:
       - label=backport-to-2023
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2023
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2023
     actions:
       backport:
         branches:
@@ -29,12 +29,11 @@ pull_request_rules:
           - backport
           - "2023"
           - disable-auto-merge
-
   - name: Backport to 2022 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2022
+          - label=backport-to-all
+          - label=backport-to-2022
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2022
     actions:
@@ -49,11 +48,11 @@ pull_request_rules:
   - name: Backport to 2022 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2022
+          - label=backport-to-all
+          - label=backport-to-2022
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2022
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2022
     actions:
       backport:
         branches:
@@ -64,12 +63,11 @@ pull_request_rules:
           - backport
           - "2022"
           - disable-auto-merge
-
   - name: Backport to 2021 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2021
+          - label=backport-to-all
+          - label=backport-to-2021
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2021
     actions:
@@ -84,11 +82,11 @@ pull_request_rules:
   - name: Backport to 2021 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2021
+          - label=backport-to-all
+          - label=backport-to-2021
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2021
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2021
     actions:
       backport:
         branches:
@@ -99,12 +97,11 @@ pull_request_rules:
           - backport
           - "2021"
           - disable-auto-merge
-
   - name: Backport to 2020 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2020
+          - label=backport-to-all
+          - label=backport-to-2020
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2020
     actions:
@@ -119,11 +116,11 @@ pull_request_rules:
   - name: Backport to 2020 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2020
+          - label=backport-to-all
+          - label=backport-to-2020
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2020
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2020
     actions:
       backport:
         branches:
@@ -134,12 +131,11 @@ pull_request_rules:
           - backport
           - "2020"
           - disable-auto-merge
-
   - name: Backport to 2019 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2019
+          - label=backport-to-all
+          - label=backport-to-2019
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2019
     actions:
@@ -154,11 +150,11 @@ pull_request_rules:
   - name: Backport to 2019 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2019
+          - label=backport-to-all
+          - label=backport-to-2019
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2019
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2019
     actions:
       backport:
         branches:
@@ -169,12 +165,11 @@ pull_request_rules:
           - backport
           - "2019"
           - disable-auto-merge
-
   - name: Backport to 2018 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2018
+          - label=backport-to-all
+          - label=backport-to-2018
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2018
     actions:
@@ -189,11 +184,11 @@ pull_request_rules:
   - name: Backport to 2018 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2018
+          - label=backport-to-all
+          - label=backport-to-2018
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2018
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2018
     actions:
       backport:
         branches:
@@ -204,12 +199,11 @@ pull_request_rules:
           - backport
           - "2018"
           - disable-auto-merge
-
   - name: Backport to 2017 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2017
+          - label=backport-to-all
+          - label=backport-to-2017
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2017
     actions:
@@ -224,11 +218,11 @@ pull_request_rules:
   - name: Backport to 2017 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2017
+          - label=backport-to-all
+          - label=backport-to-2017
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2017
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2017
     actions:
       backport:
         branches:
@@ -239,12 +233,11 @@ pull_request_rules:
           - backport
           - "2017"
           - disable-auto-merge
-
   - name: Backport to 2016 (auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2016
+          - label=backport-to-all
+          - label=backport-to-2016
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2016
     actions:
@@ -259,11 +252,11 @@ pull_request_rules:
   - name: Backport to 2016 (disable-auto-merge)
     conditions:
       - or:
-        - label=backport-to-all
-        - label=backport-to-2016
+          - label=backport-to-all
+          - label=backport-to-2016
       - or:
-        - label=disable-auto-merge
-        - label=disable-auto-merge-2016
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2016
     actions:
       backport:
         branches:
@@ -274,93 +267,88 @@ pull_request_rules:
           - backport
           - "2016"
           - disable-auto-merge
-
   - name: Auto merge backport pull request
     conditions:
       - and:
-        - label=backport
-        - label!=conflicts
-        - label!=disable-auto-merge
-        - and:
-          - label!=disable-auto-merge-2023
-          - label!=disable-auto-merge-2022
-          - label!=disable-auto-merge-2021
-          - label!=disable-auto-merge-2020
-          - label!=disable-auto-merge-2019
-          - label!=disable-auto-merge-2018
-          - label!=disable-auto-merge-2017
-          - label!=disable-auto-merge-2016
-        - title~=[\w\W]+?\(backport \#\d+?\)
+          - label=backport
+          - label!=conflicts
+          - label!=disable-auto-merge
+          - and:
+              - label!=disable-auto-merge-2023
+              - label!=disable-auto-merge-2022
+              - label!=disable-auto-merge-2021
+              - label!=disable-auto-merge-2020
+              - label!=disable-auto-merge-2019
+              - label!=disable-auto-merge-2018
+              - label!=disable-auto-merge-2017
+              - label!=disable-auto-merge-2016
+          - title~=[\w\W]+?\(backport \#\d+?\)
     actions:
       merge:
         method: squash
-
   - name: Auto merge translation pull request
     conditions:
       - and:
-        - label=translation
-        - label!=conflicts
-        - label!=disable-auto-merge
-        - and:
-          - label!=disable-auto-merge-2023
-          - label!=disable-auto-merge-2022
-          - label!=disable-auto-merge-2021
-          - label!=disable-auto-merge-2020
-          - label!=disable-auto-merge-2019
-          - label!=disable-auto-merge-2018
-          - label!=disable-auto-merge-2017
-          - label!=disable-auto-merge-2016
-        - title~=Update translations \(\d+\/\d+\/\d+\)
+          - label=translation
+          - label!=conflicts
+          - label!=disable-auto-merge
+          - and:
+              - label!=disable-auto-merge-2023
+              - label!=disable-auto-merge-2022
+              - label!=disable-auto-merge-2021
+              - label!=disable-auto-merge-2020
+              - label!=disable-auto-merge-2019
+              - label!=disable-auto-merge-2018
+              - label!=disable-auto-merge-2017
+              - label!=disable-auto-merge-2016
+          - title~=Update translations \(\d+\/\d+\/\d+\)
     actions:
       merge:
         method: squash
-
   - name: Auto merge updating version number pull request
     conditions:
       - and:
-        - label=release
-        - label!=conflicts
-        - label!=disable-auto-merge
-        - and:
-          - label!=disable-auto-merge-2023
-          - label!=disable-auto-merge-2022
-          - label!=disable-auto-merge-2021
-          - label!=disable-auto-merge-2020
-          - label!=disable-auto-merge-2019
-          - label!=disable-auto-merge-2018
-          - label!=disable-auto-merge-2017
-          - label!=disable-auto-merge-2016
-        - title~=Update release version \(\d+\/\d+\/\d+\)
+          - label=release
+          - label!=conflicts
+          - label!=disable-auto-merge
+          - and:
+              - label!=disable-auto-merge-2023
+              - label!=disable-auto-merge-2022
+              - label!=disable-auto-merge-2021
+              - label!=disable-auto-merge-2020
+              - label!=disable-auto-merge-2019
+              - label!=disable-auto-merge-2018
+              - label!=disable-auto-merge-2017
+              - label!=disable-auto-merge-2016
+          - title~=Update release version \(\d+\/\d+\/\d+\)
     actions:
       merge:
         method: squash
-
   - name: Auto merge updating docs pull request
     conditions:
       - and:
-        - label=docs
-        - label!=conflicts
-        - label!=disable-auto-merge
-        - and:
-          - label!=disable-auto-merge-2023
-          - label!=disable-auto-merge-2022
-          - label!=disable-auto-merge-2021
-          - label!=disable-auto-merge-2020
-          - label!=disable-auto-merge-2019
-          - label!=disable-auto-merge-2018
-          - label!=disable-auto-merge-2017
-          - label!=disable-auto-merge-2016
-        - title~=Update docs \(\w+, \d+\/\d+\/\d+\)
+          - label=docs
+          - label!=conflicts
+          - label!=disable-auto-merge
+          - and:
+              - label!=disable-auto-merge-2023
+              - label!=disable-auto-merge-2022
+              - label!=disable-auto-merge-2021
+              - label!=disable-auto-merge-2020
+              - label!=disable-auto-merge-2019
+              - label!=disable-auto-merge-2018
+              - label!=disable-auto-merge-2017
+              - label!=disable-auto-merge-2016
+          - title~=Update docs \(\w+, \d+\/\d+\/\d+\)
     actions:
       merge:
         method: squash
-
   - name: Warn on conflicts
     conditions:
       - conflict
     actions:
       comment:
-        message: "@{{author}} this pull request is now in conflicts 😩"
+        message: "@{{author}} this pull request is now in conflicts \U0001F629"
       label:
         add:
           - conflicts

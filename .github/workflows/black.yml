@@ -1,14 +1,12 @@
 name: black
-
 on:
   pull_request:
-    branches: [ "20**" ]
+    branches: ["20**"]
     paths:
       - "src/abaqus/**"
       - "src/abqpy/**"
       - "tests/**"
       - "setup.py"
-
 jobs:
   linter_name:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'reformat-with-black') }}

@@ -10,10 +10,8 @@ on:
   # pull_request_target:
   #   types: [opened, reopened, synchronize]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   update-release:
     permissions:
@@ -23,7 +21,6 @@ jobs:
       # otherwise, read permission is required at least
       pull-requests: write
     runs-on: ubuntu-latest
-
     steps:
       # (Optional) GitHub Enterprise requires GHE_HOST variable set
       #- name: Set GHE_HOST

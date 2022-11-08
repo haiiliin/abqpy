@@ -1,6 +1,5 @@
 version: 2
 updates:
-
   # Dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -12,7 +11,6 @@ updates:
       - "disable-auto-merge"
     schedule:
       interval: "weekly"
-
   # Dependencies for pip
   - package-ecosystem: "pip"
     directory: "/"

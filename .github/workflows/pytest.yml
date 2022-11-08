@@ -1,26 +1,23 @@
 name: pytest
-
 on:
   pull_request:
     branches:
-    - 20**
+      - 20**
     types: [opened, reopened, synchronize]
     paths:
-    - 'src/**'
-    - 'tests/**'
-    - '.github/workflows/pytest.yml'
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/pytest.yml'
   push:
     branches:
-    - 20**
+      - 20**
     paths:
-    - 'src/**'
-    - 'tests/**'
-    - '.github/workflows/pytest.yml'
-
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/pytest.yml'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   pytest:
     runs-on: ubuntu-latest
@@ -57,9 +54,7 @@ jobs:
           if_true: ${{ github.base_ref }}
           if_false: ${{ github.ref_name }}
       - uses: codecov/codecov-action@v3
-        if: |
-          (github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'backport')) || 
-          github.event_name == 'push'
+        if: "(github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'backport')) || \ngithub.event_name == 'push'\n"
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           files: coverage.xml # optional

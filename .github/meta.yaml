@@ -1,17 +1,14 @@
 package:
   name: abqpy
   version: "{{ GIT_DESCRIBE_TAG }}"
-
 build:
   noarch: python
   script: |
     pip install auto-all
     pip instll .
   skip: True # [py<37]
-
 source:
   path: ..
-
 requirements:
   build:
     - python
@@ -20,7 +17,6 @@ requirements:
     - python
     - Jinja2
     - toml
-
 test:
   import:
     - abaqus
