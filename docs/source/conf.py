@@ -189,12 +189,6 @@ html_theme_options = {
             "type": "local",
         },
         {
-            "name": "Anaconda",
-            "url": "https://anaconda.org/haiiliin/abqpy",
-            "icon": "_static/anaconda.svg",
-            "type": "local",
-        },
-        {
             "name": "Read the Docs",
             "url": "https://readthedocs.org/projects/abqpy/",
             "icon": "_static/rtd-logo-dark.svg",
