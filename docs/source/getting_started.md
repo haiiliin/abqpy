@@ -54,14 +54,8 @@ or a later version.
 
         .. parsed-literal::
 
-<<<<<<< HEAD
-            pip install :pippkg:`abqpy`
-            pip install abqpy==2020.*
-            conda install -c haiiliin :condapkg:`abqpy`
-=======
             pip install :autopkg:`abqpy`
-            pip install abqpy==2023.*
->>>>>>> 246c53c8 ([automation] Remove `conda` package because `auto-all` is not distributed in `conda` (#3631))
+            pip install abqpy==2020.*
 
     .. grid-item-card::
 
