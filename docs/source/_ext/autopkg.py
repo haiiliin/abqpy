@@ -5,7 +5,7 @@ from docutils import nodes
 from sphinx.application import Sphinx
 
 
-def version_role(name, rawtext, text, lineno, inliner, options=None, content=None, type='pip'):
+def version_role(name, rawtext, text, lineno, inliner, options=None, content=None):
     """Role for version numbers.
     
     Parameters
@@ -39,12 +39,10 @@ def version_role(name, rawtext, text, lineno, inliner, options=None, content=Non
         after the end of the current block (can also be empty).
     """
     version = '.'.join(metadata.version(text).split('.')[:3])
-    text = f"{text}=={version}" if type == 'pip' else f"{text}={version}"
-    node = nodes.Text(text, text)
+    node = nodes.Text(f"{text}=={version}", f"{text}=={version}")
     return [node], []
     
 
 def setup(app: Sphinx):
-    app.add_role('pippkg', functools.partial(version_role, type='pip'))
-    app.add_role('condapkg', functools.partial(version_role, type='conda'))
+    app.add_role('autopkg', version_role)
     return {'version': '0.0.1', 'parallel_read_safe': True}
