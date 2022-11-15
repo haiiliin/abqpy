@@ -19,23 +19,10 @@ or a later version.
 
     .. grid-item-card::
 
-        Working with conda?
-        ^^^^^^^^^^^^^^^^^^^
+        Install with pip
+        ^^^^^^^^^^^^^^^^
 
-        `abqpy` can be installed via conda from `anaconda <https://anaconda.org/haiiliin/abqpy>`_.
-
-        ++++
-
-        .. code-block:: bash
-
-            conda install -c haiiliin abqpy
-
-    .. grid-item-card::
-
-        Prefer pip?
-        ^^^^^^^^^^^
-
-        abqpy can also be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
+        abqpy can be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
 
         ++++
 
@@ -44,10 +31,9 @@ or a later version.
             pip install abqpy
 
     .. grid-item-card::
-        :columns: 12
 
-        Install from source?
-        ^^^^^^^^^^^^^^^^^^^^
+        Install from source
+        ^^^^^^^^^^^^^^^^^^^
 
         You can also install `abqpy` from source:
 
@@ -68,9 +54,8 @@ or a later version.
 
         .. parsed-literal::
 
-            pip install :pippkg:`abqpy`
+            pip install :autopkg:`abqpy`
             pip install abqpy==2016.*
-            conda install -c haiiliin :condapkg:`abqpy`
 
     .. grid-item-card::
 
