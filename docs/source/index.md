@@ -23,7 +23,6 @@ must write codes that are compatiable with Python 2 and Python 3.
 - Websitte: <https://abqpy.com>
 - GitHub repository: <https://github.com/haiiliin/abqpy>
 - PyPI: <https://pypi.org/project/abqpy>
-- Anaconda: <https://anaconda.org/haiiliin/abqpy>
 - Read the Docs: <https://readthedocs.org/projects/abqpy>
 - Bug report: <https://github.com/haiiliin/abqpy/issues>
 
