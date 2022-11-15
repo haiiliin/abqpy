@@ -51,7 +51,7 @@ class MeshNode:
     """
 
     #: An Int specifying the node label.
-    label: Optional[int] = None
+    label: int
 
     #: A String specifying the name of the part instance that owns this node.
     instanceName: str = ""
