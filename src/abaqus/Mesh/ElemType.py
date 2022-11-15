@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
@@ -7,6 +7,7 @@ from ..UtilityAndView.abaqusConstants import (
     AVERAGE_STRAIN,
     Boolean,
     CUBIC,
+    CODE,
     DEFAULT,
     ENHANCED,
     OFF,
@@ -180,8 +181,8 @@ class ElemType:
     @abaqus_method_doc
     def __init__(
         self,
-        elemCode: Literal[
-            C.C3D8R, C.UNKNOWN_HEX, C.CODE, C.UNKNOWN_TET, C.UNKNOWN_TRI, C.UNKNOWN_WEDGE, C.UNKNOWN_QUAD
+        elemCode: Union[
+            CODE, Literal[C.C3D8R, C.UNKNOWN_HEX, C.UNKNOWN_TET, C.UNKNOWN_TRI, C.UNKNOWN_WEDGE, C.UNKNOWN_QUAD]
         ],
         elemLibrary: Literal[C.EXPLICIT, C.STANDARD] = STANDARD,
         hourglassStiffness: float = 0,
