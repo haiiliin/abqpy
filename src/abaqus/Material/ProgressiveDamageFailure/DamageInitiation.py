@@ -1331,6 +1331,90 @@ class DamageInitiation:
         ...
 
     @abaqus_method_doc
+    def HosfordCoulombDamageInitiation(
+        self,
+        table: tuple,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
+        feq: float = 10,
+        fnn: float = 10,
+        fnt: float = 10,
+        frequency: int = 1,
+        ks: float = 0,
+        numberImperfections: int = 4,
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+        alpha: float = 0,
+        omega: float = 1,
+        tolerance: float = 0,
+        accumulationPower: float = 0.0,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+    ):
+        """This method creates A DamageInitiation object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].HosfordCoulombDamageInitiation
+                session.odbs[name].materials[name].HosfordCoulombDamageInitiation
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described in the "Table data"
+            section.
+        definition
+            A SymbolicConstant specifying the damage initiation definition. Possible values are FLD
+            and MSFLD. The default value is MSFLD.
+        feq
+            A Float specifying the critical value of the deformation severity index for equivalent
+            Plastic strains. The default value is 10.0.
+        fnn
+            A Float specifying the critical value of the deformation severity index for strains
+            normal to the groove direction. The default value is 10.0.
+        fnt
+            A Float specifying the critical value of the deformation severity index for shear
+            strains. The default value is 10.0.
+        frequency
+            An Int specifying the frequency, in increments, at which the Marciniak-Kuczynski
+            analysis is going to be performed. The default value is 1.
+        ks
+            A Float specifying the value of Ks. The default value is 0.0.
+        numberImperfections
+            An Int specifying the number of imperfections to be considered for the evaluation of the
+            Marciniak-Kuczynski analysis. These imperfections are assumed to be equally spaced in
+            the angular direction. The default value is 4.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+        alpha
+            A Float specifying the value of the coefficient that will multiply the shear
+            contribution to the Hashin's fiber initiation criterion. The default value is 0.0.
+        omega
+            A Float specifying the factor used for filtering the ratio of principal strain rates
+            used for the evaluation of the MSFLD damage initiation criterion. The default value is
+            1.0.
+        tolerance
+            A Float specifying the tolerance within which the damage initiation criterion must be
+            satisfied. The default value is 0.05.
+        accumulationPower
+            A Float specifying the value of the power coefficient, N. The default value is 0.0.
+        direction
+            A SymbolicConstant specifying the damage initiation direction. Possible values are NMORI
+            and TMORI. The default value is NMORI.
+
+        Returns
+        -------
+        DamageInitiation
+            A DamageInitiation object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
     def HashinDamageInitiation(
         self,
         table: tuple,
