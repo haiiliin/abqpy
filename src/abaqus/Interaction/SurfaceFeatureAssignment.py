@@ -3,7 +3,7 @@ from typing import Union
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C, Boolean, ON
 
 
 @abaqus_class_doc
@@ -29,6 +29,7 @@ class SurfaceFeatureAssignment:
         stepName: str,
         index: int,
         value: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
+        useDynFeatEdge: Boolean = ON,
     ):
         """This method allows modification of surface feature angle assignments already defined on
         surfaces in a given step.
@@ -56,6 +57,13 @@ class SurfaceFeatureAssignment:
               GLOBAL region constant and can be used only in the Abaqus/Explicit version of general
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
+        useDynFeatEdge
+            A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface
+            in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF.
+
+            .. versionadded:: 2023
+
+                The `useDynFeatEdge` argument was added.
         """
         ...
 
@@ -64,6 +72,7 @@ class SurfaceFeatureAssignment:
         self,
         stepName: str,
         assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
+        useDynFeatEdge: Boolean = ON,
     ):
         """This method allows addition of surface feature angle assignments to new surfaces in a
         given step.
@@ -89,6 +98,13 @@ class SurfaceFeatureAssignment:
               GLOBAL region constant and can be used only in the Abaqus/Explicit version of general
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
+        useDynFeatEdge
+            A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface
+            in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF.
+
+            .. versionadded:: 2023
+
+                The `useDynFeatEdge` argument was added.
         """
         ...
 

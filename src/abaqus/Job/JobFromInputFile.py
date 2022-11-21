@@ -5,7 +5,7 @@ from typing_extensions import Literal
 
 from .Job import Job
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON, PERCENTAGE, SINGLE, ODB
+from ..UtilityAndView.abaqusConstants import ANALYSIS, Boolean, DEFAULT, OFF, ON, PERCENTAGE, SINGLE, ODB
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -20,6 +20,10 @@ class JobFromInputFile(Job):
 
             import job
             mdb.jobs[name]
+
+    .. versionchanged:: 2023
+
+        The `parallelizationMethodExplicit` attribute was removed.
     """
 
     #: A Boolean specifying whether to retrieve the recommended memory settings from the last
@@ -113,16 +117,13 @@ class JobFromInputFile(Job):
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.
     nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE
 
-    #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-    #: Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-    #:
-    #: .. versionchanged:: 2017
-    #:     The default value for parallelizationMethodExplicit is now `DOMAIN`
-    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN
-
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-    #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
-    #: The default value is 1.
+    #: using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
+    #:
+    #: .. versionchanged:: 2023
+    #:
+    #:     The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+    #:     argument was removed in 2023.
     numDomains: int = 1
 
     #: A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -162,7 +163,6 @@ class JobFromInputFile(Job):
             C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
         ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
-        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
@@ -177,6 +177,10 @@ class JobFromInputFile(Job):
             This function can be accessed by::
 
                 mdb.JobFromInputFile
+
+        .. versionchanged:: 2023
+
+            The `parallelizationMethodExplicit` argument was removed.
 
         Parameters
         ----------
@@ -232,16 +236,14 @@ class JobFromInputFile(Job):
         nodalOutputPrecision
             A SymbolicConstant specifying the precision of the nodal output written to the output
             database. Possible values are SINGLE and FULL. The default value is SINGLE.
-        parallelizationMethodExplicit
-            A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-            Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-
-            .. versionchanged:: 2017
-                The default value for parallelizationMethodExplicit is now `DOMAIN`
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
-            The default value is 1.
+            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
+
+            .. versionchanged:: 2023
+
+                The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+                argument was removed in 2023.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.
@@ -298,13 +300,16 @@ class JobFromInputFile(Job):
             C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
         ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
-        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
         licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
     ):
         """This method modifies the JobFromInputFile object.
+
+        .. versionchanged:: 2023
+
+            The `parallelizationMethodExplicit` argument was removed.
 
         Parameters
         ----------
@@ -353,16 +358,14 @@ class JobFromInputFile(Job):
         nodalOutputPrecision
             A SymbolicConstant specifying the precision of the nodal output written to the output
             database. Possible values are SINGLE and FULL. The default value is SINGLE.
-        parallelizationMethodExplicit
-            A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-            Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-
-            .. versionchanged:: 2017
-                The default value for parallelizationMethodExplicit is now `DOMAIN`
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-            **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
-            The default value is 1.
+            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
+
+            .. versionchanged:: 2023
+
+                The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+                argument was removed in 2023.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.

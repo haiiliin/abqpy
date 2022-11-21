@@ -4,6 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Crack import Crack
 from .Fastener import Fastener
+from .Imperfection import Imperfection
 from .Inertia import Inertia
 from .SpringDashpot import SpringDashpot
 from ..Region.Region import Region
@@ -34,6 +35,9 @@ class EngineeringFeatureBase:
 
     #: A repository of SpringDashpot objects.
     springDashpots: Dict[str, SpringDashpot] = {}
+
+    #: A repository of Imperfection objects.
+    imperfections: Dict[str, Imperfection] = {}
 
     @abaqus_method_doc
     def assignSeam(self, regions: Sequence[Region]):

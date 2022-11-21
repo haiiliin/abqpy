@@ -432,13 +432,20 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def getCoordinates(self, entity: str):
+    def getCoordinates(self, entity: str, csys: DatumCsys = DatumCsys()):
         """This method returns the coordinates of a specified point.
 
         Parameters
         ----------
         entity
             A ConstrainedSketchVertex, Datum point, MeshNode, or ReferencePoint specifying the entity to query.
+        csys
+            A DatumCsys object specifying the desired coordinate system of the returned coordinates. By default,
+            coordinates are given in the global coordinate system.
+
+            .. versionadded:: 2023
+
+                The `csys` argument was added.
 
         Returns
         -------
@@ -455,6 +462,10 @@ class AssemblyBase(AssemblyFeature):
         - The minimum distance between a point and an edge.
         - The minimum distance between two edges.
 
+        .. versionchanged:: 2023
+
+            The `csys` argument was removed.
+
         Parameters
         ----------
         entity1
@@ -465,12 +476,6 @@ class AssemblyBase(AssemblyFeature):
             measure.
         printResults
             A Boolean that determines whether a verbose output is to be printed. The default is True
-        csys
-            A DatumCsys object specifying the desired coordinate system of the returned coordinates.
-            By default, coordinates are given in the global coordinate system.
-
-            .. versionadded:: 2022
-                The `csys` argument was added.
 
         Returns
         -------

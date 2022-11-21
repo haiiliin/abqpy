@@ -56,11 +56,12 @@ from .Plastic.Metal.Porous.PorousMetalPlasticity import PorousMetalPlasticity
 from .Plastic.Metal.TwoLayerViscoPlasticity.Viscous import Viscous
 from .Plastic.MohrCoulomb.MohrCoulombPlasticity import MohrCoulombPlasticity
 from .Plastic.Plastic import Plastic
+from .Plastic.PlasticityCorrection import PlasticityCorrection
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-from ..UtilityAndView.abaqusConstants import FREQUENCY
+from ..UtilityAndView.abaqusConstants import FREQUENCY, RAMBERG_OSGOOD
 
 
 @abaqus_class_doc
@@ -260,6 +261,9 @@ class MaterialBase:
 
     #: A Plastic object.
     plastic: Plastic = Plastic(((),))
+
+    #: A PlasticityCorrection object.
+    plasticityCorrection: PlasticityCorrection = PlasticityCorrection(RAMBERG_OSGOOD, ((),))
 
     #: A PoreFluidExpansion object.
     poreFluidExpansion: PoreFluidExpansion = PoreFluidExpansion(((),))
