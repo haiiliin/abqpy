@@ -273,7 +273,7 @@ class OptimizationTask(OptimizationTaskBase):
             A BeadFilter object.
         """
         self.geometricRestrictions[name] = geometricRestriction = BeadFilter(
-            name, region, name, region, radius, filterRadiusBy, filterCheckRegion
+            name, region, radius, filterRadiusBy, filterCheckRegion
         )
         return geometricRestriction
 
