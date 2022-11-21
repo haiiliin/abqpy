@@ -750,6 +750,13 @@ The Material commands are used to define the materials in a model.
 
         .. autoclasstoc::
 
+    .. autoclass:: abaqus.Material.Plastic.PlasticityCorrection.PlasticityCorrection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
     .. autoclass:: abaqus.Material.Plastic.Potential.Potential
         :members:
         :special-members: __init__

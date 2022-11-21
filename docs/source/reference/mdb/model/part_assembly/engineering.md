@@ -130,4 +130,32 @@ A specific type of engineering feature object is designed for each type of engin
         :show-inheritance:
 
         .. autoclasstoc::
+
+    .. autoclass:: abaqus.EngineeringFeature.Imperfection.Imperfection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.EngineeringFeature.FileImperfection.FileImperfection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.EngineeringFeature.InputImperfection.InputImperfection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.EngineeringFeature.DataImperfection.DataImperfection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
 ```

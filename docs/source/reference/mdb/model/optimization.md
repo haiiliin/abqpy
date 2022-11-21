@@ -360,6 +360,13 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
         .. autoclasstoc::
 
+    .. autoclass:: abaqus.Optimization.TopologyRibDesign.TopologyRibDesign
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
     .. autoclass:: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry
         :members:
         :special-members: __init__
