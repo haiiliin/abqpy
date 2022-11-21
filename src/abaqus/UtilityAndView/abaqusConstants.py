@@ -1968,6 +1968,7 @@ REVERSED_RAINBOW = abaqusConstants.REVERSED_RAINBOW
 REVERSE_MIRROR = abaqusConstants.REVERSE_MIRROR
 REVOLUTE = abaqusConstants.REVOLUTE
 REVOLUTION = abaqusConstants.REVOLUTION
+RIBDESIGN_REGION = abaqusConstants.RIBDESIGN_REGION
 RIGHT = abaqusConstants.RIGHT
 RIGID = abaqusConstants.RIGID
 RIGID_BODY = abaqusConstants.RIGID_BODY
