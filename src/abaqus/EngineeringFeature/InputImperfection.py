@@ -22,6 +22,7 @@ class InputImperfection(Imperfection):
     .. versionadded:: 2023
         The `InputImperfection` class was added.
     """
+
     #: A String specifying the repository key.
     name: str
 
@@ -46,7 +47,7 @@ class InputImperfection(Imperfection):
 
         .. note::
             This function can be accessed by::
-            
+
                 mdb.models[name].rootAssembly.engineeringFeatures.InputImperfection
 
         Parameters

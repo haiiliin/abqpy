@@ -31,6 +31,7 @@ class DataImperfection(Imperfection):
     .. versionadded:: 2023
         The `DataImperfection` class was added.
     """
+
     #: A String specifying the repository key.
     name: str
 
@@ -56,7 +57,7 @@ class DataImperfection(Imperfection):
 
         .. note::
             This function can be accessed by::
-            
+
                 mdb.models[name].rootAssembly.engineeringFeatures.DataImperfection
 
         Parameters

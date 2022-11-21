@@ -35,7 +35,8 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     STEP,
-    UNIFORM, R,
+    UNIFORM,
+    R,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
@@ -1004,9 +1005,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         InputImperfection
             A InputImperfection object.
         """
-        self.inputImperfections[name] = inputImperfection = InputImperfection(
-            name, file, system
-        )
+        self.inputImperfections[name] = inputImperfection = InputImperfection(name, file, system)
         return inputImperfection
 
     def DataImperfection(
@@ -1039,7 +1038,5 @@ class EngineeringFeature(EngineeringFeatureBase):
         DataImperfection
             A DataImperfection object.
         """
-        self.dataImperfections[name] = dataImperfection = DataImperfection(
-            name, imperfectionTable, system
-        )
+        self.dataImperfections[name] = dataImperfection = DataImperfection(name, imperfectionTable, system)
         return dataImperfection

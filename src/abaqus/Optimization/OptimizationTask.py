@@ -66,7 +66,10 @@ from ..UtilityAndView.abaqusConstants import (
     OVERHANG_REGION,
     SUM,
     TRUE,
-    VECTOR, ABSOLUTE_VALUE, FILTER_REGION, RIBDESIGN_REGION,
+    VECTOR,
+    ABSOLUTE_VALUE,
+    FILTER_REGION,
+    RIBDESIGN_REGION,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

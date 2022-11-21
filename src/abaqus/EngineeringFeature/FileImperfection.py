@@ -27,6 +27,7 @@ class FileImperfection(Imperfection):
     .. versionadded:: 2023
         The `FileImperfection` class was added.
     """
+
     #: A String specifying the repository key.
     name: str
 

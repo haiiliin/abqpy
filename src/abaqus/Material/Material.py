@@ -2149,9 +2149,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.plasticityCorrection = PlasticityCorrection(
-            type, table, temperatureDependency, dependencies
-        )
+        self.plasticityCorrection = PlasticityCorrection(type, table, temperatureDependency, dependencies)
         return self.plasticityCorrection
 
     @abaqus_method_doc
