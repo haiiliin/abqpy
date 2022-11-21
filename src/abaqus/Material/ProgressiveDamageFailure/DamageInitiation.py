@@ -263,6 +263,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
+        lodeDependency: Boolean = OFF,
+        accumulationPower: float = 0.0,
         direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A DamageInitiation object.
@@ -313,6 +315,10 @@ class DamageInitiation:
         tolerance
             A Float specifying the tolerance within which the damage initiation criterion must be
             satisfied. The default value is 0.05.
+        lodeDependency
+            A Boolean specifying whether the data depend on lode dependent data. The default value is OFF.
+        accumulationPower
+            A Float specifying the value of the power coefficient, N. The default value is 0.0.
         direction
             A SymbolicConstant specifying the damage initiation direction. Possible values are NMORI
             and TMORI. The default value is NMORI.
