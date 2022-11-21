@@ -445,7 +445,7 @@ class AssemblyBase(AssemblyFeature):
 
             .. versionadded:: 2023
 
-                The ``csys`` argument was added.
+                The `csys` argument was added.
 
         Returns
         -------
