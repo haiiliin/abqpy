@@ -1079,6 +1079,7 @@ FILLED_DIAMOND = abaqusConstants.FILLED_DIAMOND
 FILLED_SQUARE = abaqusConstants.FILLED_SQUARE
 FILLED_TRI = abaqusConstants.FILLED_TRI
 FILTER = abaqusConstants.FILTER
+FILTER_REGION = abaqusConstants.FILTER_REGION
 FINE = abaqusConstants.FINE
 FINER = abaqusConstants.FINER
 FINITE = abaqusConstants.FINITE

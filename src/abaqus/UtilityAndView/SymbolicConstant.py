@@ -1170,6 +1170,7 @@ class abaqusConstants(SymbolicConstant, Enum):
     FILLED_SQUARE = "FILLED_SQUARE"
     FILLED_TRI = "FILLED_TRI"
     FILTER = "FILTER"
+    FILTER_REGION = "FILTER_REGION"
     FINE = "FINE"
     FINER = "FINER"
     FINITE = "FINITE"

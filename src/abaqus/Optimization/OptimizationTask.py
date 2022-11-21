@@ -1,8 +1,9 @@
-from typing import Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from .BeadFilter import BeadFilter
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
 from .BeadPenetrationCheck import BeadPenetrationCheck
@@ -62,7 +63,7 @@ from ..UtilityAndView.abaqusConstants import (
     OVERHANG_REGION,
     SUM,
     TRUE,
-    VECTOR,
+    VECTOR, ABSOLUTE_VALUE, FILTER_REGION,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
@@ -222,6 +223,53 @@ class OptimizationTask(OptimizationTaskBase):
             name, designResponse, restrictionValue, restrictionMethod
         )
         return optimizationConstraint
+
+    @abaqus_method_doc
+    def BeadFilter(
+        self,
+        name: str,
+        region: Region,
+        radius: float = None,
+        filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
+        filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
+    ):
+        """This method creates a BeadFilter object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].optimizationTasks[name].BeadFilter
+
+        .. versionadded:: 2023
+
+        The `BeadFilter` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        region
+            A Region object specifying the region to which the geometric restriction is applied.
+        radius
+            A Float specifying the filter radius. The default value is double the average edge length of the model.
+        filterRadiusBy
+            The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute
+            radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is
+            ABSOLUTE_VALUE.
+        filterCheckRegion
+            The SymbolicConstant FILTER_REGION or a Region object specifying the filter check region. If the value is
+            FILTER_REGION, the value of the region is used as both the filter region and the filter check region.
+            The default value is FILTER_REGION.
+
+        Returns
+        -------
+        BeadFilter
+            A BeadFilter object.
+        """
+        self.geometricRestrictions[name] = geometricRestriction = BeadFilter(
+            name, region, name, region, radius, filterRadiusBy, filterCheckRegion
+        )
+        return geometricRestriction
 
     @abaqus_method_doc
     def BeadFixedRegion(
