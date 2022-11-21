@@ -7,7 +7,6 @@ from ..UtilityAndView.abaqusConstants import (
     ANALYSIS,
     Boolean,
     DEFAULT,
-    DOMAIN,
     OFF,
     ON,
     PERCENTAGE,
@@ -33,6 +32,10 @@ class Job:
 
         - HEADING
         - PREPRINT
+
+    .. versionchanged:: 2023
+
+        The `parallelizationMethodExplicit` attribute was removed.
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
@@ -81,16 +84,13 @@ class Job:
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.
     nodalOutputPrecision: SymbolicConstant = SINGLE
 
-    #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-    #: Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-    #:
-    #: .. versionchanged:: 2017
-    #:     The default value for parallelizationMethodExplicit is now `DOMAIN`
-    parallelizationMethodExplicit: SymbolicConstant = DOMAIN
-
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-    #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
-    #: The default value is 1.
+    #: using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
+    #:
+    #: .. versionchanged:: 2023
+    #:
+    #:     The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+    #:     argument was removed in 2023.
     numDomains: int = 1
 
     #: A Boolean specifying whether to activate dyanmic load balancing for jobs running on
