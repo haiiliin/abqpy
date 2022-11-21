@@ -1,6 +1,7 @@
-from typing import Literal, Optional, Sequence
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_function_doc
+from typing_extensions import Literal
 
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
