@@ -1899,6 +1899,7 @@ RADIAL_THRUST = abaqusConstants.RADIAL_THRUST
 RADIATION_ALL = abaqusConstants.RADIATION_ALL
 RADIUS = abaqusConstants.RADIUS
 RAINBOW = abaqusConstants.RAINBOW
+RAMBERG_OSGOOD = abaqusConstants.RAMBERG_OSGOOD
 RAMP = abaqusConstants.RAMP
 RANDOM_RESPONSE = abaqusConstants.RANDOM_RESPONSE
 RANGE = abaqusConstants.RANGE

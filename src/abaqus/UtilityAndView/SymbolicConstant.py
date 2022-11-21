@@ -1990,6 +1990,7 @@ class abaqusConstants(SymbolicConstant, Enum):
     RADIATION_ALL = "RADIATION_ALL"
     RADIUS = "RADIUS"
     RAINBOW = "RAINBOW"
+    RAMBERG_OSGOOD = "RAMBERG_OSGOOD"
     RAMP = "RAMP"
     RANDOM_RESPONSE = "RANDOM_RESPONSE"
     RANGE = "RANGE"
