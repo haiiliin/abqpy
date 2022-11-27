@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,13 @@ msgstr ""
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Job.Job.Job:18 abaqus.Job.JobMdb.JobMdb.Job:10 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:10
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:5
+#: abaqus.Job.JobMdb.JobMdb.Job:11 of
+msgid "The `parallelizationMethodExplicit` argument was removed."
+msgstr ""
+
+#: abaqus.Job.Job.Job:22 abaqus.Job.JobMdb.JobMdb.Job:14 of
 msgid ""
 "Check `Job on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
@@ -70,29 +76,29 @@ msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.name:1
 #: abaqus.Job.Job.Job.name:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:12
-#: abaqus.Job.JobMdb.JobMdb.Job:13 abaqus.Job.ModelJob.ModelJob.__init__:13
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:16
+#: abaqus.Job.JobMdb.JobMdb.Job:17 abaqus.Job.ModelJob.ModelJob.__init__:13
 #: abaqus.Job.ModelJob.ModelJob.name:1 of
 msgid ""
 "A String specifying the name of the new job. The name must be a valid "
 "Abaqus/CAE object name."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1 ../../docstring
-#: abaqus.Job.JobMdb.JobMdb.Job:16 abaqus.Job.ModelJob.ModelJob.__init__:16
+#: ../../None:29:<autosummary>:1 ../../docstring
+#: abaqus.Job.JobMdb.JobMdb.Job:20 abaqus.Job.ModelJob.ModelJob.__init__:16
 #: abaqus.Job.ModelJob.ModelJob.model:1 of
 msgid ""
 "A String specifying the name of the model to be analyzed or a Model "
 "object specifying the model to be analyzed."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1 ../../docstring
-#: abaqus.Job.JobMdb.JobMdb.Job:19 abaqus.Job.ModelJob.ModelJob.__init__:19
+#: ../../None:29:<autosummary>:1 ../../docstring
+#: abaqus.Job.JobMdb.JobMdb.Job:23 abaqus.Job.ModelJob.ModelJob.__init__:19
 #: abaqus.Job.ModelJob.ModelJob.description:1 of
 msgid "A String specifying a description of the job."
 msgstr ""
 
-#: ../../docstring abaqus.Job.Job.Job.type:1 abaqus.Job.JobMdb.JobMdb.Job:21
+#: ../../docstring abaqus.Job.Job.Job.type:1 abaqus.Job.JobMdb.JobMdb.Job:25
 #: abaqus.Job.ModelJob.ModelJob.__init__:21 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
@@ -101,7 +107,7 @@ msgid ""
 "is not available."
 msgstr ""
 
-#: ../../docstring abaqus.Job.Job.Job.queue:1 abaqus.Job.JobMdb.JobMdb.Job:25
+#: ../../docstring abaqus.Job.Job.Job.queue:1 abaqus.Job.JobMdb.JobMdb.Job:29
 #: abaqus.Job.ModelJob.ModelJob.__init__:25
 #: abaqus.Job.ModelJob.ModelJob.queue:1 of
 msgid ""
@@ -112,10 +118,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.waitHours:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:27
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:15
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:31
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:19
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours:1
-#: abaqus.Job.JobMdb.JobMdb.Job:29 abaqus.Job.ModelJob.ModelJob.__init__:29
+#: abaqus.Job.JobMdb.JobMdb.Job:33 abaqus.Job.ModelJob.ModelJob.__init__:29
 #: abaqus.Job.ModelJob.ModelJob.waitHours:1 of
 msgid ""
 "An Int specifying the number of hours to wait before submitting the job. "
@@ -126,10 +132,10 @@ msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.waitMinutes:1
 #: abaqus.Job.Job.Job.waitMinutes:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:31
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:19
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes:1
-#: abaqus.Job.JobMdb.JobMdb.Job:33 abaqus.Job.ModelJob.ModelJob.__init__:33
+#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.ModelJob.ModelJob.__init__:33
 #: abaqus.Job.ModelJob.ModelJob.waitMinutes:1 of
 msgid ""
 "An Int specifying the number of minutes to wait before submitting the "
@@ -139,10 +145,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.atTime:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:39
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.atTime:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
-#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.ModelJob.ModelJob.__init__:37
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:27
+#: abaqus.Job.JobMdb.JobMdb.Job:41 abaqus.Job.ModelJob.ModelJob.__init__:37
 #: abaqus.Job.ModelJob.ModelJob.atTime:1 of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
@@ -154,7 +160,7 @@ msgid ""
 "platforms."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:43
+#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:47
 #: abaqus.Job.ModelJob.ModelJob.__init__:43
 #: abaqus.Job.ModelJob.ModelJob.echoPrint:1 of
 msgid ""
@@ -162,7 +168,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:46
+#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:50
 #: abaqus.Job.ModelJob.ModelJob.__init__:46
 #: abaqus.Job.ModelJob.ModelJob.contactPrint:1 of
 msgid ""
@@ -170,7 +176,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:49
+#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:53
 #: abaqus.Job.ModelJob.ModelJob.__init__:49
 #: abaqus.Job.ModelJob.ModelJob.modelPrint:1 of
 msgid ""
@@ -178,7 +184,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:52
+#: ../../docstring abaqus.Job.JobMdb.JobMdb.Job:56
 #: abaqus.Job.ModelJob.ModelJob.__init__:52
 #: abaqus.Job.ModelJob.ModelJob.historyPrint:1 of
 msgid ""
@@ -187,10 +193,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.scratch:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:41
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:45
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.scratch:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:29
-#: abaqus.Job.JobMdb.JobMdb.Job:54 abaqus.Job.ModelJob.ModelJob.__init__:54
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:33
+#: abaqus.Job.JobMdb.JobMdb.Job:58 abaqus.Job.ModelJob.ModelJob.__init__:54
 #: abaqus.Job.ModelJob.ModelJob.scratch:1 of
 msgid ""
 "A String specifying the location of the scratch directory. The default "
@@ -198,10 +204,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.userSubroutine:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:44
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:32
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:48
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:36
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine:1
-#: abaqus.Job.JobMdb.JobMdb.Job:57 abaqus.Job.ModelJob.ModelJob.__init__:57
+#: abaqus.Job.JobMdb.JobMdb.Job:61 abaqus.Job.ModelJob.ModelJob.__init__:57
 #: abaqus.Job.ModelJob.ModelJob.userSubroutine:1 of
 msgid ""
 "A String specifying the file containing the user's subroutine "
@@ -209,10 +215,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.numCpus:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:47
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:51
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:35
-#: abaqus.Job.JobMdb.JobMdb.Job:60 abaqus.Job.ModelJob.ModelJob.__init__:60
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:39
+#: abaqus.Job.JobMdb.JobMdb.Job:64 abaqus.Job.ModelJob.ModelJob.__init__:60
 #: abaqus.Job.ModelJob.ModelJob.numCpus:1 of
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
@@ -221,10 +227,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.memory:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:50
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:54
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.memory:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:38
-#: abaqus.Job.JobMdb.JobMdb.Job:63 abaqus.Job.ModelJob.ModelJob.__init__:63
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:42
+#: abaqus.Job.JobMdb.JobMdb.Job:67 abaqus.Job.ModelJob.ModelJob.__init__:63
 #: abaqus.Job.ModelJob.ModelJob.memory:1 of
 msgid ""
 "An Int specifying the amount of memory available to Abaqus analysis. The "
@@ -233,10 +239,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.memoryUnits:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:53
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:57
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:41
-#: abaqus.Job.JobMdb.JobMdb.Job:66 abaqus.Job.ModelJob.ModelJob.__init__:66
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:45
+#: abaqus.Job.JobMdb.JobMdb.Job:70 abaqus.Job.ModelJob.ModelJob.__init__:66
 #: abaqus.Job.ModelJob.ModelJob.memoryUnits:1 of
 msgid ""
 "A SymbolicConstant specifying the units for the amount of memory used in "
@@ -245,10 +251,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.explicitPrecision:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:57
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:61
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:45
-#: abaqus.Job.JobMdb.JobMdb.Job:70 abaqus.Job.ModelJob.ModelJob.__init__:70
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:49
+#: abaqus.Job.JobMdb.JobMdb.Job:74 abaqus.Job.ModelJob.ModelJob.__init__:70
 #: abaqus.Job.ModelJob.ModelJob.explicitPrecision:1 of
 msgid ""
 "A SymbolicConstant specifying whether to use the double precision version"
@@ -258,10 +264,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.nodalOutputPrecision:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:61
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:65
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:49
-#: abaqus.Job.JobMdb.JobMdb.Job:74 abaqus.Job.ModelJob.ModelJob.__init__:74
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:53
+#: abaqus.Job.JobMdb.JobMdb.Job:78 abaqus.Job.ModelJob.ModelJob.__init__:74
 #: abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision:1 of
 msgid ""
 "A SymbolicConstant specifying the precision of the nodal output written "
@@ -269,30 +275,45 @@ msgid ""
 "value is SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:77 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:68
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:56
+#: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.ModelJob.ModelJob.__init__:77 of
 msgid ""
-"A SymbolicConstant specifying the parallelization method for "
-"Abaqus/Explicit. This value is ignored for Abaqus/Standard. Possible "
-"values are DOMAIN and LOOP. The default value is DOMAIN."
+"An Int specifying the number of domains for parallel execution in "
+"Abaqus/Explicit. When using more than 1 numCpus, numDomains must be a "
+"multiple of numCpus. The default value is 1.  .. versionchanged:: 2023"
+"      The docs for this argument were updated to reflect that the "
+"`parallelizationMethodExplicit`     argument was removed in 2023."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.numDomains:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:70
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:68
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:58
-#: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.ModelJob.ModelJob.__init__:83
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:56
+#: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.ModelJob.ModelJob.__init__:77
 #: abaqus.Job.ModelJob.ModelJob.numDomains:1 of
 msgid ""
 "An Int specifying the number of domains for parallel execution in "
-"Abaqus/Explicit. When **parallelizationMethodExplicit** = DOMAIN, "
-"**numDomains** must be a multiple of **numCpus**. The default value is 1."
+"Abaqus/Explicit. When using more than 1 numCpus, numDomains must be a "
+"multiple of numCpus. The default value is 1."
+msgstr ""
+
+#: ../../docstring abaqus.Job.Job.Job.numDomains:6
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:73
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains:6
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:61
+#: abaqus.Job.JobMdb.JobMdb.Job:86 abaqus.Job.ModelJob.ModelJob.__init__:82
+#: abaqus.Job.ModelJob.ModelJob.numDomains:6 of
+msgid ""
+"The docs for this argument were updated to reflect that the "
+"`parallelizationMethodExplicit` argument was removed in 2023."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.activateLoadBalancing:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:74
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:76
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:62
-#: abaqus.Job.JobMdb.JobMdb.Job:85 abaqus.Job.ModelJob.ModelJob.__init__:87
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:64
+#: abaqus.Job.JobMdb.JobMdb.Job:89 abaqus.Job.ModelJob.ModelJob.__init__:85
 #: abaqus.Job.ModelJob.ModelJob.activateLoadBalancing:1 of
 msgid ""
 "A Boolean specifying whether to activate dyanmic load balancing for jobs "
@@ -300,10 +321,10 @@ msgid ""
 "The default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:77
+#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:79
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:65
-#: abaqus.Job.JobMdb.JobMdb.Job:88 abaqus.Job.ModelJob.ModelJob.__init__:90
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:67
+#: abaqus.Job.JobMdb.JobMdb.Job:92 abaqus.Job.ModelJob.ModelJob.__init__:88
 #: abaqus.Job.ModelJob.ModelJob.multiprocessingMode:1 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
@@ -312,8 +333,8 @@ msgid ""
 "The default value is DEFAULT."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:81
-#: abaqus.Job.JobMdb.JobMdb.Job:92 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:83
+#: abaqus.Job.JobMdb.JobMdb.Job:96 of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
@@ -323,10 +344,10 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.licenseType:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:81
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:83
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:69
-#: abaqus.Job.JobMdb.JobMdb.Job:92 abaqus.Job.ModelJob.ModelJob.__init__:94 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:71
+#: abaqus.Job.JobMdb.JobMdb.Job:96 abaqus.Job.ModelJob.ModelJob.__init__:92 of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
@@ -334,8 +355,8 @@ msgid ""
 "not the DSLS SimUnit, the licenseType is not available."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:86
-#: abaqus.Job.JobMdb.JobMdb.Job:97 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:88
+#: abaqus.Job.JobMdb.JobMdb.Job:101 of
 msgid "The `licenseType` argument was added."
 msgstr ""
 
@@ -347,7 +368,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:100 abaqus.Job.ModelJob.ModelJob.__init__:99 of
+#: abaqus.Job.JobMdb.JobMdb.Job:104 abaqus.Job.ModelJob.ModelJob.__init__:97 of
 msgid "A ModelJob object."
 msgstr ""
 
@@ -359,8 +380,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:101 abaqus.Job.ModelJob.ModelJob.__init__:100
-#: of
+#: abaqus.Job.JobMdb.JobMdb.Job:105 abaqus.Job.ModelJob.ModelJob.__init__:98 of
 msgid ":class:`ModelJob`"
 msgstr ""
 
@@ -535,8 +555,8 @@ msgstr ""
 msgid ":py:obj:`name <abaqus.Job.Coexecution.Coexecution.name>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:15:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A String specifying the name of the new job."
 msgstr ""
 
@@ -576,8 +596,8 @@ msgstr ""
 msgid ":py:obj:`waitMinutes <abaqus.Job.Coexecution.Coexecution.waitMinutes>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1 ../../None:24:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
+#: ../../None:15:<autosummary>:1 ../../None:23:<autosummary>:1
+#: ../../None:25:<autosummary>:1 ../../None:29:<autosummary>:1
 msgid "An Int specifying the number of minutes to wait before submitting the job."
 msgstr ""
 
@@ -855,244 +875,236 @@ msgid ""
 "#simaker-coexecutionwriteinputpyc>`__."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: abaqus.Job.Job.Job:19 abaqus.Job.JobFromInputFile.JobFromInputFile:13
+#: abaqus.Job.ModelJob.ModelJob:14 of
+msgid "The `parallelizationMethodExplicit` attribute was removed."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Job.Job.Job.name>`\\"
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`type <abaqus.Job.Job.Job.type>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A SymbolicConstant specifying the type of job."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`waitHours <abaqus.Job.Job.Job.waitHours>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "An Int specifying the number of hours to wait before submitting the job."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`waitMinutes <abaqus.Job.Job.Job.waitMinutes>`\\"
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`numCpus <abaqus.Job.Job.Job.numCpus>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
 " processing is available."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`memory <abaqus.Job.Job.Job.memory>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "An Int specifying the amount of memory available to Abaqus analysis."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`memoryUnits <abaqus.Job.Job.Job.memoryUnits>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the units for the amount of memory used in "
 "an Abaqus analysis."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`getMemoryFromAnalysis "
 "<abaqus.Job.Job.Job.getMemoryFromAnalysis>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A Boolean specifying whether to retrieve the recommended memory settings "
 "from the last datacheck or analysis run and use those values in "
 "subsequent submissions."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`explicitPrecision <abaqus.Job.Job.Job.explicitPrecision>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether to use the double precision version"
 " of Abaqus/Explicit."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`nodalOutputPrecision <abaqus.Job.Job.Job.nodalOutputPrecision>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the precision of the nodal output written "
 "to the output database."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
-msgid ""
-":py:obj:`parallelizationMethodExplicit "
-"<abaqus.Job.Job.Job.parallelizationMethodExplicit>`\\"
-msgstr ""
-
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the parallelization method for "
-"Abaqus/Explicit."
-msgstr ""
-
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`numDomains <abaqus.Job.Job.Job.numDomains>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "An Int specifying the number of domains for parallel execution in "
 "Abaqus/Explicit."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`activateLoadBalancing "
 "<abaqus.Job.Job.Job.activateLoadBalancing>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A Boolean specifying whether to activate dyanmic load balancing for jobs "
 "running on multiple processors with multiple domains in Abaqus/Explicit."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`multiprocessingMode <abaqus.Job.Job.Job.multiprocessingMode>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message "
 "passing interface (MPI)."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`numThreadsPerMpiProcess "
 "<abaqus.Job.Job.Job.numThreadsPerMpiProcess>`\\"
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ""
 "An Int specifying the number of threads per MPI process to use for this "
 "analysis if parallel processing is available."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`analysis <abaqus.Job.Job.Job.analysis>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether the job will be analyzed by "
 "Abaqus/Standard or Abaqus/Explicit."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`status <abaqus.Job.Job.Job.status>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A SymbolicConstant specifying the status of the analysis."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`queue <abaqus.Job.Job.Job.queue>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A String specifying the name of the queue to which to submit the job."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`atTime <abaqus.Job.Job.Job.atTime>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A String specifying the time at which to submit the job."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`scratch <abaqus.Job.Job.Job.scratch>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A String specifying the location of the scratch directory."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`userSubroutine <abaqus.Job.Job.Job.userSubroutine>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A String specifying the file containing the user's subroutine definitions."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`messages <abaqus.Job.Job.Job.messages>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1 ../../docstring abaqus.Job.Job.Job.messages:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1 ../../docstring abaqus.Job.Job.Job.messages:1
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.messages:1
 #: abaqus.Job.ModelJob.ModelJob.messages:1 of
 msgid "A MessageArray object specifying the messages received during an analysis."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`environment <abaqus.Job.Job.Job.environment>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1 ../../docstring
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
+#: ../../None:29:<autosummary>:1 ../../docstring
 #: abaqus.Job.Job.Job.environment:1
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.environment:1
 #: abaqus.Job.ModelJob.ModelJob.environment:1 of
 msgid "A tuple of Strings specifying the environment variables and their values."
 msgstr ""
 
-#: ../../None:26:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`licenseType <abaqus.Job.Job.Job.licenseType>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1 ../../None:26:<autosummary>:1
+#: ../../None:23:<autosummary>:1 ../../None:25:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model."
@@ -1147,7 +1159,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.getMemoryFromAnalysis:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:89
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:91
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis:1
 #: abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis:1 of
 msgid ""
@@ -1169,27 +1181,6 @@ msgid ""
 "An Int specifying the number of threads per MPI process to use for this "
 "analysis if parallel processing is available. Possible values are "
 "**numThreadsPerMpiProcess** > 0. The default value is 1."
-msgstr ""
-
-#: ../../docstring abaqus.Job.Job.Job.parallelizationMethodExplicit:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
-#: abaqus.Job.ModelJob.ModelJob.__init__:77
-#: abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit:1 of
-msgid ""
-"A SymbolicConstant specifying the parallelization method for "
-"Abaqus/Explicit. Possible values are LOOP and DOMAIN. The default value "
-"is DOMAIN."
-msgstr ""
-
-#: ../../docstring abaqus.Job.Job.Job.parallelizationMethodExplicit:4
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:67
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit:4
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:55
-#: abaqus.Job.ModelJob.ModelJob.__init__:80
-#: abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit:4 of
-msgid "The default value for parallelizationMethodExplicit is now `DOMAIN`"
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.status:1
@@ -1250,125 +1241,119 @@ msgid ""
 "the Job object."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile:12 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile:16 of
 msgid ""
 "Check `JobFromInputFile on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`getMemoryFromAnalysis "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`analysis "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.analysis>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`status <abaqus.Job.JobFromInputFile.JobFromInputFile.status>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`messages "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.messages>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`environment "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.environment>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`type <abaqus.Job.JobFromInputFile.JobFromInputFile.type>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`queue <abaqus.Job.JobFromInputFile.JobFromInputFile.queue>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`waitHours "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`waitMinutes "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`atTime <abaqus.Job.JobFromInputFile.JobFromInputFile.atTime>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`scratch <abaqus.Job.JobFromInputFile.JobFromInputFile.scratch>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`userSubroutine "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`numCpus <abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ":py:obj:`memory <abaqus.Job.JobFromInputFile.JobFromInputFile.memory>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`memoryUnits "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`explicitPrecision "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`nodalOutputPrecision "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
-msgid ""
-":py:obj:`parallelizationMethodExplicit "
-"<abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit>`\\"
-msgstr ""
-
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`numDomains "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`activateLoadBalancing "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`multiprocessingMode "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode>`\\"
 msgstr ""
 
-#: ../../None:24:<autosummary>:1
+#: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`licenseType "
 "<abaqus.Job.JobFromInputFile.JobFromInputFile.licenseType>`\\"
@@ -1400,14 +1385,14 @@ msgstr ""
 msgid "This method modifies the JobFromInputFile object."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:9 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:13 of
 msgid ""
 "Check `JobFromInputFile.__init__ on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all"
 "#simaker-jobfrominputfile__init__pyc>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:15
+#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:19
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.inputFileName:1 of
 msgid ""
 "A String specifying the input file to read. Possible values are any valid"
@@ -1415,8 +1400,8 @@ msgid ""
 "argument, the system will append it for the user."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:19
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:7
+#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:23
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:11
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.type:1 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
@@ -1425,9 +1410,9 @@ msgid ""
 "supported."
 msgstr ""
 
-#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:23
+#: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:27
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.queue:1
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:11 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:15 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string. Note:  You can use the **queue** "
@@ -1435,46 +1420,36 @@ msgid ""
 "remote queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
-#: abaqus.Job.ModelJob.ModelJob.__init__:77 of
-msgid ""
-"A SymbolicConstant specifying the parallelization method for "
-"Abaqus/Explicit. Possible values are LOOP and DOMAIN. The default value "
-"is DOMAIN.  .. versionchanged:: 2017     The default value for "
-"parallelizationMethodExplicit is now `DOMAIN`"
-msgstr ""
-
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:93 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:95 of
 msgid ""
 "An Int specifying the number of GPUs to use for this analysis if parallel"
 " processing is available. Possible values are **numCpus** >= 0. The "
 "default value is 0."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:96 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:98 of
 msgid ""
 "This option specifies the results output format: ODB, SIM, or BOTH. The "
 "default value is ODB."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:98 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:100 of
 msgid "A JobFromInputFile object."
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:99 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:101 of
 msgid ":class:`JobFromInputFile`"
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:101 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:103 of
 msgid "If the user attempts to provide RESTART as a value to argument type:"
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:102 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:104 of
 msgid "RESTART of input file job is not currently supported"
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:4 of
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:8 of
 msgid ""
 "Check `JobFromInputFile.setValues on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all"
@@ -1615,149 +1590,143 @@ msgid ""
 "model database (MDB). The ModelJob object is derived from the Job object."
 msgstr ""
 
-#: abaqus.Job.ModelJob.ModelJob:13 of
+#: abaqus.Job.ModelJob.ModelJob:17 of
 msgid ""
 "Check `ModelJob on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeljobpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Job.ModelJob.ModelJob.name>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`echoPrint <abaqus.Job.ModelJob.ModelJob.echoPrint>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A Boolean specifying whether an echo of the input data is printed."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`contactPrint <abaqus.Job.ModelJob.ModelJob.contactPrint>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A Boolean specifying whether contact constraint data are printed."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`modelPrint <abaqus.Job.ModelJob.ModelJob.modelPrint>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A Boolean specifying whether model definition data are printed."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`historyPrint <abaqus.Job.ModelJob.ModelJob.historyPrint>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid "A Boolean specifying whether history data are printed."
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`model <abaqus.Job.ModelJob.ModelJob.model>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`description <abaqus.Job.ModelJob.ModelJob.description>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`type <abaqus.Job.ModelJob.ModelJob.type>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`waitHours <abaqus.Job.ModelJob.ModelJob.waitHours>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`waitMinutes <abaqus.Job.ModelJob.ModelJob.waitMinutes>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`numCpus <abaqus.Job.ModelJob.ModelJob.numCpus>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`memory <abaqus.Job.ModelJob.ModelJob.memory>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`memoryUnits <abaqus.Job.ModelJob.ModelJob.memoryUnits>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`getMemoryFromAnalysis "
 "<abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`explicitPrecision "
 "<abaqus.Job.ModelJob.ModelJob.explicitPrecision>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`nodalOutputPrecision "
 "<abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
-msgid ""
-":py:obj:`parallelizationMethodExplicit "
-"<abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit>`\\"
-msgstr ""
-
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`numDomains <abaqus.Job.ModelJob.ModelJob.numDomains>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`activateLoadBalancing "
 "<abaqus.Job.ModelJob.ModelJob.activateLoadBalancing>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`multiprocessingMode "
 "<abaqus.Job.ModelJob.ModelJob.multiprocessingMode>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`analysis <abaqus.Job.ModelJob.ModelJob.analysis>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`status <abaqus.Job.ModelJob.ModelJob.status>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`queue <abaqus.Job.ModelJob.ModelJob.queue>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`atTime <abaqus.Job.ModelJob.ModelJob.atTime>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`scratch <abaqus.Job.ModelJob.ModelJob.scratch>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`userSubroutine <abaqus.Job.ModelJob.ModelJob.userSubroutine>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`messages <abaqus.Job.ModelJob.ModelJob.messages>`\\"
 msgstr ""
 
-#: ../../None:30:<autosummary>:1
+#: ../../None:29:<autosummary>:1
 msgid ":py:obj:`environment <abaqus.Job.ModelJob.ModelJob.environment>`\\"
 msgstr ""
 
@@ -2855,5 +2824,63 @@ msgstr ""
 #~ ":py:class:`~abaqus.Job.Queue.Queue` object can be"
 #~ " used as the **queue** argument to"
 #~ " the Job method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the "
+#~ "parallelization method for Abaqus/Explicit. "
+#~ "This value is ignored for "
+#~ "Abaqus/Standard. Possible values are DOMAIN"
+#~ " and LOOP. The default value is "
+#~ "DOMAIN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "domains for parallel execution in "
+#~ "Abaqus/Explicit. When **parallelizationMethodExplicit**"
+#~ " = DOMAIN, **numDomains** must be a"
+#~ " multiple of **numCpus**. The default "
+#~ "value is 1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parallelizationMethodExplicit "
+#~ "<abaqus.Job.Job.Job.parallelizationMethodExplicit>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the "
+#~ "parallelization method for Abaqus/Explicit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the "
+#~ "parallelization method for Abaqus/Explicit. "
+#~ "Possible values are LOOP and DOMAIN. "
+#~ "The default value is DOMAIN."
+#~ msgstr ""
+
+#~ msgid "The default value for parallelizationMethodExplicit is now `DOMAIN`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parallelizationMethodExplicit "
+#~ "<abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the "
+#~ "parallelization method for Abaqus/Explicit. "
+#~ "Possible values are LOOP and DOMAIN. "
+#~ "The default value is DOMAIN.  .. "
+#~ "versionchanged:: 2017     The default value"
+#~ " for parallelizationMethodExplicit is now "
+#~ "`DOMAIN`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parallelizationMethodExplicit "
+#~ "<abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit>`\\"
 #~ msgstr ""
 

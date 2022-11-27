@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:6
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:6
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:6
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:5
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:6
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:5
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:5
@@ -139,6 +140,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:0
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:0
@@ -611,6 +613,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:0
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:0
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:0
@@ -750,6 +753,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:1
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:1
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:1
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:1
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:1
@@ -772,6 +776,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:4
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:4
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:4
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:4
@@ -808,6 +813,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:4
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:4
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:4
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:4
@@ -838,6 +844,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:4
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:4
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.__init__:4
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:4
@@ -880,6 +887,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.setValues:0
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:0
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.setValues:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:0
@@ -916,6 +924,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:0
@@ -966,6 +975,8 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.setValues:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.setValues:0
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.__init__:0
@@ -1256,6 +1267,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:0
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:0
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:0
@@ -1290,6 +1302,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:0
@@ -1319,6 +1332,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.__init__:0
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:0
@@ -1346,6 +1360,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/LocalStopCondition.py:docstring of abaqus.Optimization.LocalStopCondition.LocalStopCondition.__init__:0
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:0
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:0
@@ -1381,6 +1396,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTaskModel.py:docstring of abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask:0
@@ -1410,6 +1426,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.__init__:0
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:0
@@ -2082,425 +2099,448 @@ msgstr ""
 msgid "A repository of StopCondition objects."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SingleTermDesignResponse <abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse>`\\ \\(name\\, identifier\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse:1
 #: ../../../../src/abaqus/Optimization/SingleTermDesignResponse.py:docstring of abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SingleTermDesignResponse object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ObjectiveFunction <abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction>`\\ \\(name\\, objectives\\[\\, target\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ObjectiveFunction.py:docstring of abaqus.Optimization.ObjectiveFunction.ObjectiveFunction.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates an ObjectiveFunction object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`OptimizationConstraint <abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint>`\\ \\(name\\, designResponse\\, ...\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationConstraint.py:docstring of abaqus.Optimization.OptimizationConstraint.OptimizationConstraint.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates an OptimizationConstraint object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
+msgid ":py:obj:`BeadFilter <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter>`\\ \\(name\\, region\\[\\, radius\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:1
+#: ../../None:42:<autosummary>:1
+msgid "This method creates a BeadFilter object."
+msgstr ""
+
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadFixedRegion <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion>`\\ \\(name\\, region\\[\\, csys\\, u1\\, u2\\, u3\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadFixedRegion object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadGrowth <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth>`\\ \\(name\\, region\\[\\, beadGrowth\\, shrink\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadGrowth.py:docstring of abaqus.Optimization.BeadGrowth.BeadGrowth.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadGrowth object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadPenetrationCheck <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck>`\\ \\(name\\, ...\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPenetrationCheck.py:docstring of abaqus.Optimization.BeadPenetrationCheck.BeadPenetrationCheck.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadPenetrationCheck object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadPlanarSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry>`\\ \\(name\\, region\\[\\, axis\\, csys\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadPlanarSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadPointSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry>`\\ \\(name\\, region\\[\\, csys\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadPointSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`BeadRotationalSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry>`\\ \\(name\\, angle\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BeadRotationalSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`DesignDirection <abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a DesignDirection object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`DrillControl <abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl>`\\ \\(name\\, clientDirection\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DrillControl.py:docstring of abaqus.Optimization.DrillControl.DrillControl.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a DrillControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`FixedRegion <abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a FixedRegion object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`FrozenArea <abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea>`\\ \\(name\\[\\, region\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a FrozenArea object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`Growth <abaqus.Optimization.OptimizationTask.OptimizationTask.Growth>`\\ \\(name\\, region\\[\\, growth\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth.__init__:1
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.Growth:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a Growth object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`PenetrationCheck <abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck:1
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a PenetrationCheck object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ShapeDemoldControl <abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl>`\\ \\(name\\, pullDirection\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:1
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ShapeDemoldControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ShapeMemberSize <abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize>`\\ \\(name\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:1
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ShapeMemberSize object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ShapePlanarSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry>`\\ \\(name\\, clientDirection\\, ...\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ShapePlanarSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ShapePointSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:1
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ShapePointSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`ShapeRotationalSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry>`\\ \\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ShapeRotationalSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingClusterAreas <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas>`\\ \\(name\\, regions\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas:1
 #: ../../../../src/abaqus/Optimization/SizingClusterAreas.py:docstring of abaqus.Optimization.SizingClusterAreas.SizingClusterAreas.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingClusterAreas object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingCyclicSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry>`\\ \\(name\\, region\\, translation\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry:1
 #: ../../../../src/abaqus/Optimization/SizingCyclicSymmetry.py:docstring of abaqus.Optimization.SizingCyclicSymmetry.SizingCyclicSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingCyclicSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingFrozenArea <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea>`\\ \\(name\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea:1
 #: ../../../../src/abaqus/Optimization/SizingFrozenArea.py:docstring of abaqus.Optimization.SizingFrozenArea.SizingFrozenArea.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingFrozenArea object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingMemberSize <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize>`\\ \\(name\\, region\\, minWidth\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize:1
 #: ../../../../src/abaqus/Optimization/SizingMemberSize.py:docstring of abaqus.Optimization.SizingMemberSize.SizingMemberSize.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingMemberSize object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingPlanarSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry>`\\ \\(name\\, region\\[\\, axis\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/SizingPlanarSymmetry.py:docstring of abaqus.Optimization.SizingPlanarSymmetry.SizingPlanarSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingPlanarSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingPointSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:1
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingPointSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SizingRotationalSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry>`\\ \\(name\\, angle\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/SizingRotationalSymmetry.py:docstring of abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SizingRotationalSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`SlideRegionControl <abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl>`\\ \\(name\\, clientDirection\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl:1
 #: ../../../../src/abaqus/Optimization/SlideRegionControl.py:docstring of abaqus.Optimization.SlideRegionControl.SlideRegionControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SlideRegionControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`StampControl <abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl>`\\ \\(name\\, clientDirection\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl:1
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a StampControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyCyclicSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry>`\\ \\(name\\, region\\, translation\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyCyclicSymmetry.py:docstring of abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyCyclicSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyDemoldControl <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:1
 #: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyDemoldControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyMemberSize <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize>`\\ \\(name\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:1
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyMemberSize object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyMillingControl <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl>`\\ \\(name\\, ...\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:1
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyMillingControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyOverhangControl <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl>`\\ \\(name\\, pullDirection\\, ...\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid "This method creates a TopologyOverhangControl object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyPlanarSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry>`\\ \\(name\\, region\\[\\, axis\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyPlanarSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyPointSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry>`\\ \\(name\\, region\\[\\, csys\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyPointSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
+msgid ":py:obj:`TopologyRibDesign <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign>`\\ \\(name\\, ribDirection\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:1
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:1
+#: ../../None:42:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a TopologyRibDesign object."
+msgstr ""
+
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TopologyRotationalSymmetry <abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry>`\\ \\(name\\, angle\\, region\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TopologyRotationalSymmetry object."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 msgid ":py:obj:`TurnControl <abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl>`\\ \\(name\\, clientDirection\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:1
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:1
-#: ../../None:40:<autosummary>:1
+#: ../../None:42:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TurnControl object."
 msgstr ""
 
-#: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion:11
-#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:9
-msgid "Check `BeadFixedRegion on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadfixedregionpyc.htm?contextscope=all>`__."
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:10
+msgid "The `BeadFilter` method was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:13
+msgid "Check `BeadFilter on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadfilterpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:12
@@ -2514,6 +2554,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/FixedRegion.py:docstring of abaqus.Optimization.FixedRegion.FixedRegion.__init__:12
 #: ../../../../src/abaqus/Optimization/FrozenArea.py:docstring of abaqus.Optimization.FrozenArea.FrozenArea.__init__:12
 #: ../../../../src/abaqus/Optimization/Growth.py:docstring of abaqus.Optimization.Growth.Growth.__init__:12
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:12
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:12
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:12
@@ -2547,6 +2588,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:15
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:12
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:12
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:12
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:12
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:12
@@ -2570,6 +2612,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:12
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:12
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:12
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:12
 #: ../../None:4:<autosummary>:1
@@ -2583,6 +2626,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/BeadPlanarSymmetry.py:docstring of abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry.__init__:14
 #: ../../../../src/abaqus/Optimization/BeadPointSymmetry.py:docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.__init__:14
 #: ../../../../src/abaqus/Optimization/BeadRotationalSymmetry.py:docstring of abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry.__init__:16
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:18
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck:16
@@ -2607,6 +2651,31 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "A Region object specifying the region to which the geometric restriction is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:20
+msgid "A Float specifying the filter radius. The default value is double the average edge length of the model."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:22
+msgid "The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is ABSOLUTE_VALUE."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:26
+msgid "The SymbolicConstant FILTER_REGION or a Region object specifying the filter check region. If the value is FILTER_REGION, the value of the region is used as both the filter region and the filter check region. The default value is FILTER_REGION."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:30
+msgid "A BeadFilter object."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:31
+msgid ":class:`BeadFilter`"
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion:11
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion:9
+msgid "Check `BeadFixedRegion on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beadfixedregionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFixedRegion.py:docstring of abaqus.Optimization.BeadFixedRegion.BeadFixedRegion.__init__:16
@@ -2826,13 +2895,17 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:18
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:30
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.__init__:16
 #: ../../../../src/abaqus/Optimization/SizingPointSymmetry.py:docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.setValues:7
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:18
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues:7
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:26
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:19
 #: ../../docstring of abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.SizingPointSymmetry.SizingPointSymmetry.csys:1
 #: ../../docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.csys:1
+#: ../../docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.csys:1
 msgid "None or a DatumCsys object specifying the position of the symmetry point defined as the origin of a local coordinate system. If **csys** = None, the global coordinate system is used. When this member is queried, it returns an Int. The default value is None."
 msgstr ""
 
@@ -2902,6 +2975,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:14
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:14
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:26
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:16
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl:18
 #: ../../../../src/abaqus/Optimization/PenetrationCheck.py:docstring of abaqus.Optimization.PenetrationCheck.PenetrationCheck.__init__:16
@@ -2917,6 +2991,8 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:14
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:14
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:14
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:22
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:15
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__:16
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.__init__:18
 #: ../../docstring of abaqus.Optimization.FrozenArea.FrozenArea.region:1
@@ -4229,6 +4305,53 @@ msgstr ""
 msgid ":class:`TopologyPointSymmetry`"
 msgstr ""
 
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:10
+msgid "The `TopologyRibDesign` method was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:13
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:15
+msgid "Check `TopologyRibDesign on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyribdesignpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:18
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:14
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:7
+#: ../../docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.ribDirection:1
+msgid "A VertexArray object of length 2 specifying the out-of-plane growth direction of the ribs. Instead of through a Vertex, each point can be specified through a tuple of coordinates."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:21
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:17
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:10
+#: ../../docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.ribThickness:1
+msgid "A Float specifying the average thickness of the ribs."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:23
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:19
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:12
+#: ../../docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.ribDistance:1
+msgid "A Float specifying the average distance between the rib centers. The distance must be larger than twice the average element edge length."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:34
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:30
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:23
+#: ../../docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.ribDesignCheckRegion:1
+msgid "The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check region. The default value is RIBDESIGN_REGION."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:38
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:34
+msgid "A TopologyRibDesign object."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:39
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:35
+msgid ":class:`TopologyRibDesign`"
+msgstr ""
+
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry:9
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:12
 msgid "Check `TopologyRotationalSymmetry on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyrotationalsymmetrypyc.htm?contextscope=all>`__."
@@ -4301,6 +4424,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:1
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry:1
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry:1
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:1
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:1
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:1
 msgid "Bases: :py:class:`~abaqus.Optimization.GeometricRestriction.GeometricRestriction`"
@@ -7458,6 +7582,47 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.setValues:4
 msgid "Check `TopologyPointSymmetry.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologypointsymmetrypyc.htm?contextscope=all#simaker-topologypointsymmetrysetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:1
+msgid "The TopologyRibDesign object defines a topology rib design geometric restriction. The TopologyRibDesign object is derived from the GeometricRestriction object."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:12
+msgid "The `TopologyRibDesign` class was added."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`csys <abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.csys>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`ribDesignCheckRegion <abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.ribDesignCheckRegion>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__>`\\ \\(name\\, ribDirection\\, ribThickness\\, ...\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues>`\\ \\(ribDirection\\, ribThickness\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:1
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the TopologyRibDesign object."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:9
+msgid "Check `TopologyRibDesign.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyribdesignpyc.htm?contextscope=all#simaker-topologyribdesign__init__pyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:4
+msgid "Check `TopologyRibDesign.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-topologyribdesignpyc.htm?contextscope=all#simaker-topologyribdesignsetvaluespyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyRotationalSymmetry.py:docstring of abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry:1

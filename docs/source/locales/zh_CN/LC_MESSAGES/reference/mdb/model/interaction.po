@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18104,7 +18104,7 @@ msgstr ""
 msgid ""
 ":py:obj:`changeValuesInStep "
 "<abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep>`\\"
-" \\(stepName\\, index\\, value\\)"
+" \\(stepName\\, index\\, value\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -18119,7 +18119,7 @@ msgstr ""
 msgid ""
 ":py:obj:`appendInStep "
 "<abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep>`\\"
-" \\(stepName\\, assignments\\)"
+" \\(stepName\\, assignments\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -18221,6 +18221,31 @@ msgstr ""
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:27
 #: of
 msgid "A SymbolicConstant ORIGINAL or CURRENT specifying the configuration."
+msgstr ""
+
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:27
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:29
+#: of
+msgid ""
+"A Boolean specifying whether the dynamic feature edge criterion should be"
+" activated for the contact surface in an Abaqus/Explicit analysis. This "
+"argument can be set to ON (default) or OFF.  .. versionadded:: 2023      "
+"The `useDynFeatEdge` argument was added."
+msgstr ""
+
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:27
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:29
+#: of
+msgid ""
+"A Boolean specifying whether the dynamic feature edge criterion should be"
+" activated for the contact surface in an Abaqus/Explicit analysis. This "
+"argument can be set to ON (default) or OFF."
+msgstr ""
+
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:32
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:34
+#: of
+msgid "The `useDynFeatEdge` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:5
@@ -29024,5 +29049,17 @@ msgstr ""
 #~ " contact surface segments is ramped "
 #~ "up to the current magnitude. The "
 #~ "default value is 10-3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`changeValuesInStep "
+#~ "<abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep>`\\"
+#~ " \\(stepName\\, index\\, value\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`appendInStep "
+#~ "<abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep>`\\"
+#~ " \\(stepName\\, assignments\\)"
 #~ msgstr ""
 

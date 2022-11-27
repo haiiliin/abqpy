@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,13 +40,17 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
 #: abaqus.EngineeringFeature.Crack.Crack
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
 #: abaqus.EngineeringFeature.Fastener.Fastener
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
+#: abaqus.EngineeringFeature.Imperfection.Imperfection
 #: abaqus.EngineeringFeature.Inertia.Inertia
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
 #: abaqus.EngineeringFeature.PointFastener.PointFastener
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
@@ -57,64 +61,80 @@ msgstr ""
 msgid "Public Data Attributes:"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`inertias "
 "<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
+#: ../../None:7:<autosummary>:1 ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias:1
 #: of
 msgid "A repository of Inertia objects."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`cracks "
 "<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
+#: ../../None:7:<autosummary>:1 ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks:1
 #: of
 msgid "A repository of Crack objects."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`fasteners "
 "<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
+#: ../../None:7:<autosummary>:1 ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners:1
 #: of
 msgid "A repository of Fastener objects."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`springDashpots "
 "<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
+#: ../../None:7:<autosummary>:1 ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots:1
 #: of
 msgid "A repository of SpringDashpot objects."
 msgstr ""
 
+#: ../../None:7:<autosummary>:1
+msgid ""
+":py:obj:`imperfections "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.imperfections>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.imperfections:1
+#: of
+msgid "A repository of Imperfection objects."
+msgstr ""
+
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
 #: abaqus.EngineeringFeature.Crack.Crack
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
 #: abaqus.EngineeringFeature.Fastener.Fastener
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
+#: abaqus.EngineeringFeature.Imperfection.Imperfection
 #: abaqus.EngineeringFeature.Inertia.Inertia
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
 #: abaqus.EngineeringFeature.PointFastener.PointFastener
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
@@ -125,137 +145,177 @@ msgstr ""
 msgid "Public Methods:"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`AssembledFastener "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener>`\\"
 " \\(name\\, region\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates an AssembledFastener object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`ContourIntegral "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral>`\\"
 " \\(name\\, crackFront\\, crackTip\\, ...\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates a ContourIntegral object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`DebondVCCT "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT>`\\"
 " \\(name\\, initiationStep\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates a DebondVCCT object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`DiscreteFastener "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener>`\\"
 " \\(name\\, region\\, influenceRadius\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates a DiscreteFastener object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`HeatCapacitance "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance>`\\"
 " \\(name\\, region\\, table\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:1
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:1 of
 msgid "This method creates a HeatCapacitance object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`NonstructuralMass "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass>`\\"
 " \\(name\\, region\\, units\\, magnitude\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:1
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:1 of
 msgid "This method creates a NonstructuralMass object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`PointFastener "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener>`\\"
 " \\(name\\, region\\, physicalRadius\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates a PointFastener object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`PointMassInertia "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia>`\\"
 " \\(name\\, region\\[\\, mass\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:1 of
 msgid "This method creates a PointMassInertia object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`SpringDashpotToGround "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround>`\\"
 " \\(name\\, region\\, dof\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:1
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:1
 #: of
 msgid "This method creates a SpringDashpotToGround object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`TwoPointSpringDashpot "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot>`\\"
 " \\(name\\, regionPairs\\, axis\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:1
 #: of
 msgid "This method creates a TwoPointSpringDashpot object."
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`XFEMCrack "
 "<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack>`\\"
 " \\(name\\, crackDomain\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
 msgid "This method creates a XFEMCrack object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ""
+":py:obj:`FileImperfection "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection>`\\"
+" \\(name\\, file\\, step\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:1 of
+msgid "This method creates a FileImperfection object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ""
+":py:obj:`InputImperfection "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection>`\\"
+" \\(name\\, file\\[\\, system\\]\\)"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:1 of
+msgid "This method creates a InputImperfection object."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ""
+":py:obj:`DataImperfection "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection>`\\"
+" \\(name\\, imperfectionTable\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:1
+#: of
+msgid "This method creates a DataImperfection object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -287,13 +347,17 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:1
 #: abaqus.EngineeringFeature.Crack.Crack:1
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:1
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:1
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature:1
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:1
 #: abaqus.EngineeringFeature.Fastener.Fastener:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:1
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:1
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:1
 #: abaqus.EngineeringFeature.Inertia.Inertia:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:1
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:1
@@ -315,20 +379,26 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:6
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:6
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:4
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:6
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:6
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:6
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:4
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:6
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:4
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:4
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:4
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:4
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:6
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:4
@@ -350,15 +420,20 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.setValues
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia
@@ -367,8 +442,12 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.setValues
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
@@ -388,13 +467,17 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:15
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:15
 #: abaqus.EngineeringFeature.Crack.Crack.name:1
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:9
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:15
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:15
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:9
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:15
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:9
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:13
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:9
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:13
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:13
@@ -402,8 +485,11 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:13
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:15
 #: abaqus.EngineeringFeature.Fastener.Fastener.name:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:9
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:13
+#: abaqus.EngineeringFeature.Imperfection.Imperfection.name:1
 #: abaqus.EngineeringFeature.Inertia.Inertia.name:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:9
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:13
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:15
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:13
@@ -511,20 +597,26 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__
@@ -542,20 +634,26 @@ msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__
@@ -733,6 +831,43 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:61
 #: of
 msgid ":class:`ContourIntegral`"
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:11
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.imperfectionTable:1
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.setValues:4
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:11
+#: of
+msgid ""
+"A sequence of sequences of Ints and Floats specifying the imperfection "
+"components at a given node. The items in the table data are described "
+"below."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:15
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.setValues:8
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.system:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:15
+#: of
+msgid ""
+"A SymbolicConstant specifying the coordinate system. The imperfection "
+"values in the data lines would be treated as perturbation values of the "
+"respective coordinates. Possible values are R, C, and S. The default "
+"value is R."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:19
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:19
+#: of
+msgid "A DataImperfection object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__:20
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DataImperfection:20
+#: of
+msgid ":class:`DataImperfection`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:1
@@ -936,6 +1071,70 @@ msgstr ""
 msgid ":class:`DiscreteFastener`"
 msgstr ""
 
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:11
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:11
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.file:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:4 of
+msgid ""
+"A String specifying the results file from a previous analysis from which "
+"the file imperfection is applied."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:13
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:13
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:6
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.step:1 of
+msgid ""
+"An Int specifying the step number (in the analysis whose file is being "
+"used as input to this option) from which the modal or displacement data "
+"are to be read."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:16
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:16
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.linearSuperpositions:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:9 of
+msgid ""
+"A sequence of sequences of Integers and Floats specifying "
+"linearSuperpositions. The items in the table data are described below."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:19
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:19
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.region:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:12 of
+msgid ""
+"A Region object specifying the region to which the file imperfection is "
+"applied. By default, the imperfection will be applied to all nodes in the"
+" model."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:22
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:22
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.increment:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:15 of
+msgid ""
+"An Int specifying the increment number (in the analysis whose file is "
+"being used as input to this option) from which the displacement data are "
+"to be read. By default, the data will be read from the last increment "
+"available for the specified step."
+msgstr ""
+
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:26
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:26 of
+msgid "A FileImperfection object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.FileImperfection:27
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__:27 of
+msgid ":class:`FileImperfection`"
+msgstr ""
+
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:10
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:26 of
 msgid ""
@@ -990,6 +1189,38 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:25
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:25 of
 msgid ":class:`HeatCapacitance`"
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:11
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:11
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.file:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.setValues:4 of
+msgid ""
+"A String specifying the name of the alternate input file containing the "
+"imperfection data."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:13
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:13
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.setValues:6
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.system:1 of
+msgid ""
+"A SymbolicConstant specifying the coordinate system. The imperfection "
+"values in the alternate input file being used as input to this option "
+"would be treated as perturbation values of respective coordinates. "
+"Possible values are R, C and S. The default value is R."
+msgstr ""
+
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:17
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:17 of
+msgid "A InputImperfection object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.InputImperfection:18
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__:18 of
+msgid ":class:`InputImperfection`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:10
@@ -1854,6 +2085,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.Crack.Crack:1
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:1
 #: abaqus.EngineeringFeature.Fastener.Fastener:1
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:1
 #: abaqus.EngineeringFeature.Inertia.Inertia:1
 #: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:1 of
 msgid "Bases: :py:class:`object`"
@@ -1868,12 +2100,16 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:5
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:6
 #: abaqus.EngineeringFeature.Crack.Crack:4
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:5
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:6
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:5
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:5
 #: abaqus.EngineeringFeature.Fastener.Fastener:5
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:5
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:6
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:4
 #: abaqus.EngineeringFeature.Inertia.Inertia:5
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:5
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:6
 #: abaqus.EngineeringFeature.PointFastener.PointFastener:5
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:6
@@ -1986,6 +2222,7 @@ msgstr ""
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed:1
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed:1
 #: abaqus.EngineeringFeature.Fastener.Fastener.suppressed:1
+#: abaqus.EngineeringFeature.Imperfection.Imperfection.suppressed:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed:1 of
 msgid ""
 "A Boolean specifying whether the fastener is suppressed or not. The "
@@ -2210,9 +2447,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:13
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:10
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:13
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:12
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:10
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:21
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:10
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:13
 #: abaqus.EngineeringFeature.PointFastener.PointFastener:12
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:13
@@ -3675,6 +3915,268 @@ msgid ""
 "Check `XFEMCrack.setValues on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all"
 "#simaker-xfemcracksetvaluespyc>`__."
+msgstr ""
+
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:1 of
+msgid ""
+"The Imperfection object is the abstract base type for FileImperfection, "
+"InputImperfection, and DataImperfection."
+msgstr ""
+
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:9 of
+msgid "The `Imperfection` class was added."
+msgstr ""
+
+#: abaqus.EngineeringFeature.Imperfection.Imperfection:13 of
+msgid ""
+"Check `Imperfection on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imperfectionpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`name "
+"<abaqus.EngineeringFeature.Imperfection.Imperfection.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.EngineeringFeature.Imperfection.Imperfection.suppressed>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`resume "
+"<abaqus.EngineeringFeature.Imperfection.Imperfection.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.Imperfection.Imperfection.resume:1 of
+msgid "This method resumes the imperfection that was previously suppressed."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`suppress "
+"<abaqus.EngineeringFeature.Imperfection.Imperfection.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.Imperfection.Imperfection.suppress:1 of
+msgid "This method suppresses the imperfection."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:1 of
+msgid "Bases: :py:class:`~abaqus.EngineeringFeature.Imperfection.Imperfection`"
+msgstr ""
+
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:1 of
+msgid ""
+"The FileImperfection object defines geometric imperfection on an assembly"
+" region. The FileImperfection object is derived from the Imperfection "
+"object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:7
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:7
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:7 of
+msgid ""
+"import assembly "
+"mdb.models[name].rootAssembly.engineeringFeatures.imperfections[name]"
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:12
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:12
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:12 of
+msgid "IMPERFECTION"
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:14
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:14 of
+msgid "The table data for this object are:"
+msgstr ""
+
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:16 of
+msgid "Mode Number."
+msgstr ""
+
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:17 of
+msgid "Scaling factor for this mode."
+msgstr ""
+
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection:19 of
+msgid "The `FileImperfection` class was added."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`region "
+"<abaqus.EngineeringFeature.FileImperfection.FileImperfection.region>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+"A Region object specifying the region to which the file imperfection is "
+"applied."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`increment "
+"<abaqus.EngineeringFeature.FileImperfection.FileImperfection.increment>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+"An Int specifying the increment number (in the analysis whose file is "
+"being used as input to this option) from which the displacement data are "
+"to be read."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.EngineeringFeature.FileImperfection.FileImperfection.suppressed>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
+msgid "A Boolean specifying whether the imperfection is suppressed or not."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init__ "
+"<abaqus.EngineeringFeature.FileImperfection.FileImperfection.__init__>`\\"
+" \\(name\\, file\\, step\\, linearSuperpositions\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues>`\\"
+" \\(file\\, step\\, linearSuperpositions\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.setValues:1 of
+msgid "This method modifies the FileImperfection object."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.suppressed:1
+#: abaqus.EngineeringFeature.FileImperfection.FileImperfection.suppressed:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.suppressed:1
+#: of
+msgid ""
+"A Boolean specifying whether the imperfection is suppressed or not. The "
+"default value is OFF."
+msgstr ""
+
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:1 of
+msgid ""
+"The InputImperfection object defines geometric imperfection on an "
+"assembly region. The InputImperfection object is derived from the "
+"Imperfection object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection:14 of
+msgid "The `InputImperfection` class was added."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`system "
+"<abaqus.EngineeringFeature.InputImperfection.InputImperfection.system>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "A SymbolicConstant specifying the coordinate system."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.EngineeringFeature.InputImperfection.InputImperfection.suppressed>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init__ "
+"<abaqus.EngineeringFeature.InputImperfection.InputImperfection.__init__>`\\"
+" \\(name\\, file\\[\\, system\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.EngineeringFeature.InputImperfection.InputImperfection.setValues>`\\"
+" \\(file\\[\\, system\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.InputImperfection.InputImperfection.setValues:1 of
+msgid "This method modifies the InputImperfection object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:1 of
+msgid ""
+"The DataImperfection object defines geometric imperfection on an assembly"
+" region. The DataImperfection object is derived from the Imperfection "
+"object."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:16 of
+msgid "Node number."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:17 of
+msgid "Component of imperfection in the first coordinate direction."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:18 of
+msgid "Component of imperfection in the second coordinate direction."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:19 of
+msgid "Component of imperfection in the third coordinate direction."
+msgstr ""
+
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection:21 of
+msgid "The `DataImperfection` class was added."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`system "
+"<abaqus.EngineeringFeature.DataImperfection.DataImperfection.system>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.EngineeringFeature.DataImperfection.DataImperfection.suppressed>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init__ "
+"<abaqus.EngineeringFeature.DataImperfection.DataImperfection.__init__>`\\"
+" \\(name\\, imperfectionTable\\[\\, system\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.EngineeringFeature.DataImperfection.DataImperfection.setValues>`\\"
+" \\(imperfectionTable\\[\\, system\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.DataImperfection.DataImperfection.setValues:1 of
+msgid "This method modifies the DataImperfection object."
 msgstr ""
 
 #~ msgid ""

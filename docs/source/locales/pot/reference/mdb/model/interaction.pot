@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12814,7 +12814,7 @@ msgid "Check `SurfaceFeatureAssignment on help.3ds.com/2023 <https://help.3ds.co
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-msgid ":py:obj:`changeValuesInStep <abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep>`\\ \\(stepName\\, index\\, value\\)"
+msgid ":py:obj:`changeValuesInStep <abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep>`\\ \\(stepName\\, index\\, value\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:1
@@ -12823,7 +12823,7 @@ msgid "This method allows modification of surface feature angle assignments alre
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-msgid ":py:obj:`appendInStep <abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep>`\\ \\(stepName\\, assignments\\)"
+msgid ":py:obj:`appendInStep <abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep>`\\ \\(stepName\\, assignments\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:1
@@ -12872,6 +12872,21 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:25
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:27
 msgid "A SymbolicConstant ORIGINAL or CURRENT specifying the configuration."
+msgstr ""
+
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:27
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:29
+msgid "A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF.  .. versionadded:: 2023      The `useDynFeatEdge` argument was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:27
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:29
+msgid "A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep:32
+#: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:34
+msgid "The `useDynFeatEdge` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/SurfaceFeatureAssignment.py:docstring of abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep:5

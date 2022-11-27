@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1449,7 +1449,7 @@ msgstr ""
 msgid ""
 ":py:obj:`getCoordinates "
 "<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
-"\\(entity\\)"
+"\\(entity\\[\\, csys\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -3045,7 +3045,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:28
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:26 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:24 of
 msgid ":class:`float`"
 msgstr ""
 
@@ -3064,11 +3064,30 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:9 of
 msgid ""
+"A DatumCsys object specifying the desired coordinate system of the "
+"returned coordinates. By default, coordinates are given in the global "
+"coordinate system.  .. versionadded:: 2023      The `csys` argument was "
+"added."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:9 of
+msgid ""
+"A DatumCsys object specifying the desired coordinate system of the "
+"returned coordinates. By default, coordinates are given in the global "
+"coordinate system."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:14 of
+msgid "The `csys` argument was added."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:16 of
+msgid ""
 "A tuple of three Floats representing the coordinates of the specified "
 "point."
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:10 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:17 of
 msgid ":class:`Tuple[float`, :class:`float]`"
 msgstr ""
 
@@ -3084,51 +3103,36 @@ msgstr ""
 msgid "The minimum distance between two edges."
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:8 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:9 of
+msgid "The `csys` argument was removed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:12 of
 msgid ""
 "Check `AssemblyBase.getDistance on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetdistancepyc>`__."
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:11 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:15 of
 msgid ""
 "A ConstrainedSketchVertex, Datum point, MeshNode, or Edge specifying the "
 "first entity from which to measure."
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:14 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:18 of
 msgid ""
 "A ConstrainedSketchVertex, Datum point, MeshNode, or Edge specifying the "
 "second entity to which to measure."
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:17 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:21 of
 msgid ""
 "A Boolean that determines whether a verbose output is to be printed. The "
 "default is True"
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:19 of
-msgid ""
-"A DatumCsys object specifying the desired coordinate system of the "
-"returned coordinates. By default, coordinates are given in the global "
-"coordinate system.  .. versionadded:: 2022     The `csys` argument was "
-"added."
-msgstr ""
-
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:19 of
-msgid ""
-"A DatumCsys object specifying the desired coordinate system of the "
-"returned coordinates. By default, coordinates are given in the global "
-"coordinate system."
-msgstr ""
-
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:22 of
-msgid "The `csys` argument was added."
-msgstr ""
-
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:25 of
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:23 of
 msgid "A Float specifying the calculated distance."
 msgstr ""
 
@@ -16523,5 +16527,20 @@ msgstr ""
 #~ "A :py:class:`~abaqus.Part.Part.Part` object "
 #~ "specifying which Part will be instanced"
 #~ " in place of the original Part."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCoordinates "
+#~ "<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
+#~ "\\(entity\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A DatumCsys object specifying the "
+#~ "desired coordinate system of the "
+#~ "returned coordinates. By default, coordinates"
+#~ " are given in the global coordinate"
+#~ " system.  .. versionadded:: 2022     The"
+#~ " `csys` argument was added."
 #~ msgstr ""
 

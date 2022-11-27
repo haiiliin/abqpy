@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-11-27 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1117,30 +1117,35 @@ msgid ""
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:10 of
+#: abaqus.Job.JobMdb.JobMdb.Job:11 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:10
+#: of
+msgid "The `parallelizationMethodExplicit` argument was removed."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job:14 of
 msgid ""
 "Check `Job on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:13 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:12
+#: abaqus.Job.JobMdb.JobMdb.Job:17 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:16
 #: of
 msgid ""
 "A String specifying the name of the new job. The name must be a valid "
 "Abaqus/CAE object name."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:16 of
+#: abaqus.Job.JobMdb.JobMdb.Job:20 of
 msgid ""
 "A String specifying the name of the model to be analyzed or a Model "
 "object specifying the model to be analyzed."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:19 of
+#: abaqus.Job.JobMdb.JobMdb.Job:23 of
 msgid "A String specifying a description of the job."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:21 of
+#: abaqus.Job.JobMdb.JobMdb.Job:25 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
 "ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is "
@@ -1148,7 +1153,7 @@ msgid ""
 "is not available."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:25 of
+#: abaqus.Job.JobMdb.JobMdb.Job:29 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string. Note: You can use the **queue** "
@@ -1156,7 +1161,7 @@ msgid ""
 "remote queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:29 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:27
+#: abaqus.Job.JobMdb.JobMdb.Job:33 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:31
 #: of
 msgid ""
 "An Int specifying the number of hours to wait before submitting the job. "
@@ -1165,7 +1170,7 @@ msgid ""
 "**atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:33 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:31
+#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:35
 #: of
 msgid ""
 "An Int specifying the number of minutes to wait before submitting the "
@@ -1174,7 +1179,7 @@ msgid ""
 "and **atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:37 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:35
+#: abaqus.Job.JobMdb.JobMdb.Job:41 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:39
 #: of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
@@ -1186,45 +1191,45 @@ msgid ""
 "platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:43 of
+#: abaqus.Job.JobMdb.JobMdb.Job:47 of
 msgid ""
 "A Boolean specifying whether an echo of the input data is printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:46 of
+#: abaqus.Job.JobMdb.JobMdb.Job:50 of
 msgid ""
 "A Boolean specifying whether contact constraint data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:49 of
+#: abaqus.Job.JobMdb.JobMdb.Job:53 of
 msgid ""
 "A Boolean specifying whether model definition data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:52 of
+#: abaqus.Job.JobMdb.JobMdb.Job:56 of
 msgid ""
 "A Boolean specifying whether history data are printed. The default value "
 "is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:54 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:41
+#: abaqus.Job.JobMdb.JobMdb.Job:58 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:45
 #: of
 msgid ""
 "A String specifying the location of the scratch directory. The default "
 "value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:57 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:44
+#: abaqus.Job.JobMdb.JobMdb.Job:61 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:48
 #: of
 msgid ""
 "A String specifying the file containing the user's subroutine "
 "definitions. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:60 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:47
+#: abaqus.Job.JobMdb.JobMdb.Job:64 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:51
 #: of
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
@@ -1232,7 +1237,7 @@ msgid ""
 "default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:63 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:50
+#: abaqus.Job.JobMdb.JobMdb.Job:67 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:54
 #: of
 msgid ""
 "An Int specifying the amount of memory available to Abaqus analysis. The "
@@ -1240,7 +1245,7 @@ msgid ""
 "default value is 90."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:66 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:53
+#: abaqus.Job.JobMdb.JobMdb.Job:70 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:57
 #: of
 msgid ""
 "A SymbolicConstant specifying the units for the amount of memory used in "
@@ -1248,7 +1253,7 @@ msgid ""
 "GIGA_BYTES. The default value is PERCENTAGE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:70 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:57
+#: abaqus.Job.JobMdb.JobMdb.Job:74 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:61
 #: of
 msgid ""
 "A SymbolicConstant specifying whether to use the double precision version"
@@ -1257,7 +1262,7 @@ msgid ""
 "SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:74 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:61
+#: abaqus.Job.JobMdb.JobMdb.Job:78 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:65
 #: of
 msgid ""
 "A SymbolicConstant specifying the precision of the nodal output written "
@@ -1265,23 +1270,32 @@ msgid ""
 "value is SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:77 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:64
+#: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:68
 #: of
 msgid ""
-"A SymbolicConstant specifying the parallelization method for "
-"Abaqus/Explicit. This value is ignored for Abaqus/Standard. Possible "
-"values are DOMAIN and LOOP. The default value is DOMAIN."
+"An Int specifying the number of domains for parallel execution in "
+"Abaqus/Explicit. When using more than 1 numCpus, numDomains must be a "
+"multiple of numCpus. The default value is 1.  .. versionchanged:: 2023"
+"      The docs for this argument were updated to reflect that the "
+"`parallelizationMethodExplicit`     argument was removed in 2023."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:81 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:68
 #: of
 msgid ""
 "An Int specifying the number of domains for parallel execution in "
-"Abaqus/Explicit. When **parallelizationMethodExplicit** = DOMAIN, "
-"**numDomains** must be a multiple of **numCpus**. The default value is 1."
+"Abaqus/Explicit. When using more than 1 numCpus, numDomains must be a "
+"multiple of numCpus. The default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:85 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:72
+#: abaqus.Job.JobMdb.JobMdb.Job:86 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:73
+#: of
+msgid ""
+"The docs for this argument were updated to reflect that the "
+"`parallelizationMethodExplicit` argument was removed in 2023."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job:89 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:76
 #: of
 msgid ""
 "A Boolean specifying whether to activate dyanmic load balancing for jobs "
@@ -1289,7 +1303,7 @@ msgid ""
 "The default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:88 of
+#: abaqus.Job.JobMdb.JobMdb.Job:92 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message "
@@ -1297,7 +1311,7 @@ msgid ""
 "The default value is DEFAULT."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:92 of
+#: abaqus.Job.JobMdb.JobMdb.Job:96 of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
@@ -1306,7 +1320,7 @@ msgid ""
 "versionchanged:: 2022     The `licenseType` argument was added."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:92 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:78
+#: abaqus.Job.JobMdb.JobMdb.Job:96 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:82
 #: of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
@@ -1315,32 +1329,32 @@ msgid ""
 "not the DSLS SimUnit, the licenseType is not available."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:97 of
+#: abaqus.Job.JobMdb.JobMdb.Job:101 of
 msgid "The `licenseType` argument was added."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:100 of
+#: abaqus.Job.JobMdb.JobMdb.Job:104 of
 msgid "A ModelJob object."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:101 of
+#: abaqus.Job.JobMdb.JobMdb.Job:105 of
 msgid ":class:`ModelJob`"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:9 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:13 of
 msgid ""
 "Check `JobFromInputFile on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:15 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:19 of
 msgid ""
 "A String specifying the input file to read. Possible values are any valid"
 " file name. If the .inp extension is not included in the value of the "
 "argument, the system will append it for the user."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:19 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:23 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
 "ANALYSIS, SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For "
@@ -1348,7 +1362,7 @@ msgid ""
 "supported."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:23 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:27 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string. Note:  You can use the **queue** "
@@ -1356,27 +1370,27 @@ msgid ""
 "remote queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:75 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:79 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:83 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:87 of
 msgid ""
 "A Boolean specifying whether to retrieve the recommended memory settings "
 "from the last datacheck or analysis run and use those values in "
 "subsequent submissions. The default value is ON."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:87 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:91 of
 msgid ""
 "An Int specifying the number of GPUs to use for this analysis if parallel"
 " processing is available. Possible values are **numCpus** >= 0. The "
 "default value is 0."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:90 of
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:94 of
 msgid ""
 "This option specifies the results output format: ODB, SIM, or BOTH. The "
 "default value is ODB."
@@ -2542,5 +2556,23 @@ msgstr ""
 #~ "An "
 #~ ":py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` "
 #~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the "
+#~ "parallelization method for Abaqus/Explicit. "
+#~ "This value is ignored for "
+#~ "Abaqus/Standard. Possible values are DOMAIN"
+#~ " and LOOP. The default value is "
+#~ "DOMAIN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "domains for parallel execution in "
+#~ "Abaqus/Explicit. When **parallelizationMethodExplicit**"
+#~ " = DOMAIN, **numDomains** must be a"
+#~ " multiple of **numCpus**. The default "
+#~ "value is 1."
 #~ msgstr ""
 
