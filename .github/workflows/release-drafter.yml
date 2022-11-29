@@ -32,7 +32,7 @@ jobs:
 
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - uses: release-drafter/release-drafter@v5
-        id: drafter
+        id: release_drafter
         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
         with:
           config-name: release-drafter-2023.yml
@@ -53,13 +53,13 @@ jobs:
         uses: bhowell2/github-substring-action@v1.0.0
         id: tag
         with:
-          value: ${{ steps.drafter.outputs.tag_name }}
+          value: ${{ steps.release_drafter.outputs.tag_name }}
           index_of_str: "v"
       - name: Tag the next version
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git tag -a ${{ steps.drafter.outputs.tag_name }} -m "Release ${{ steps.drafter.outputs.tag_name }}"
+          git tag -a ${{ steps.release_drafter.outputs.tag_name }} -m "Release ${{ steps.release_drafter.outputs.tag_name }}"
       - name: Build package
         run: python -m build
       - name: Upload binaries to release
@@ -67,5 +67,5 @@ jobs:
           gh release upload --clobber ${{ env.VERSION }} ${{ env.FILES }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERSION: ${{ steps.drafter.outputs.tag_name }}
+          VERSION: ${{ steps.release_drafter.outputs.tag_name }}
           FILES: dist/abqpy-${{ steps.tag.outputs.substring }}.tar.gz dist/abqpy-${{ steps.tag.outputs.substring }}-py3-none-any.whl
