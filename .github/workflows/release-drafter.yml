@@ -52,18 +52,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install build
 
-      - name: Substring version
-        uses: bhowell2/github-substring-action@v1.0.0
-        id: tag
-        with:
-          value: ${{ steps.release_drafter.outputs.tag_name }}
-          index_of_str: "v"
-
       - name: Git tag
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git tag -a ${{ steps.tag.outputs.substring }} -m "Release ${{ steps.tag.outputs.substring }}"
+          git tag -a ${{ steps.release_drafter.outputs.tag_name }} -m "Release ${{ steps.release_drafter.outputs.tag_name }}"
 
       - name: Build package
         run: python -m build
@@ -72,6 +65,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.release_drafter.outputs.tag_name }}
           file: ./dist/abqpy-*
           file_glob: true
           overwrite: true
