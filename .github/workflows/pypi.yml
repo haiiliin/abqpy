@@ -31,6 +31,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.ref_name }}
+        file: ./dist/abqpy-*
+        file_glob: true
+        overwrite: true
     - name: Build package
       run: python -m build
     - name: Publish package
