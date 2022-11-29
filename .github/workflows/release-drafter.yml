@@ -53,7 +53,7 @@ jobs:
           pip install build
       
       - name: Git tag
-        run: git tag -a ${{ steps.release.outputs.tag_name }} -m "Release ${{ steps.release.outputs.tag }}"
+        run: git tag -a ${{ steps.release_drafter.outputs.tag_name }} -m "Release ${{ steps.release_drafter.outputs.tag }}"
 
       - name: Build package
         run: python -m build
