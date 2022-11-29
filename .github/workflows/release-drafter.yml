@@ -57,7 +57,7 @@ jobs:
         id: tag
         with:
           value: ${{ steps.release_drafter.outputs.tag_name }}
-          length_from_start: 1
+          index_of_str: "v"
 
       - name: Git tag
         run: |
