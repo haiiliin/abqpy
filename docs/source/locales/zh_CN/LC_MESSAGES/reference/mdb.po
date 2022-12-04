@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb.md:5
 msgid "Objects in Mdb"
@@ -69,7 +69,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`version <abaqus.Mdb.MdbBase.MdbBase.version>`\\"
+msgid ":py:obj:`version <abaqus.Mdb.Mdb.Mdb.version>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -78,7 +78,7 @@ msgid "An Int specifying the release number of the Mdb object in memory."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Mdb.MdbBase.MdbBase.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Mdb.Mdb.Mdb.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -86,7 +86,7 @@ msgid "A Float specifying the value of a counter associated with the Mdb object.
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`jobs <abaqus.Mdb.MdbBase.MdbBase.jobs>`\\"
+msgid ":py:obj:`jobs <abaqus.Mdb.Mdb.Mdb.jobs>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -95,9 +95,7 @@ msgid "A repository of Job objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`adaptivityProcesses "
-"<abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses>`\\"
+msgid ":py:obj:`adaptivityProcesses <abaqus.Mdb.Mdb.Mdb.adaptivityProcesses>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -106,7 +104,7 @@ msgid "A repository of AdaptivityProcess objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`coexecutions <abaqus.Mdb.MdbBase.MdbBase.coexecutions>`\\"
+msgid ":py:obj:`coexecutions <abaqus.Mdb.Mdb.Mdb.coexecutions>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -117,7 +115,7 @@ msgstr ""
 #: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationProcesses "
-"<abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses>`\\"
+"<abaqus.Mdb.Mdb.Mdb.optimizationProcesses>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -126,7 +124,7 @@ msgid "A repository of OptimizationProcess objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`meshEditOptions <abaqus.Mdb.MdbBase.MdbBase.meshEditOptions>`\\"
+msgid ":py:obj:`meshEditOptions <abaqus.Mdb.Mdb.Mdb.meshEditOptions>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -137,7 +135,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`models <abaqus.Mdb.MdbBase.MdbBase.models>`\\"
+msgid ":py:obj:`models <abaqus.Mdb.Mdb.Mdb.models>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -146,7 +144,7 @@ msgid "A repository of Model objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Mdb.MdbBase.MdbBase.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Mdb.Mdb.Mdb.customData>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
@@ -155,12 +153,146 @@ msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`annotations <abaqus.Mdb.MdbBase.MdbBase.annotations>`\\"
+msgid ":py:obj:`annotations <abaqus.Mdb.Mdb.Mdb.annotations>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.annotations:1 of
 msgid "A repository of Annotation objects."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`version <abaqus.Part.AcisMdb.AcisMdb.version>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`lastChangedCount "
+"<abaqus.Part.AcisMdb.AcisMdb.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`jobs <abaqus.Part.AcisMdb.AcisMdb.jobs>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`adaptivityProcesses "
+"<abaqus.Part.AcisMdb.AcisMdb.adaptivityProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`coexecutions <abaqus.Part.AcisMdb.AcisMdb.coexecutions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`optimizationProcesses "
+"<abaqus.Part.AcisMdb.AcisMdb.optimizationProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`meshEditOptions <abaqus.Part.AcisMdb.AcisMdb.meshEditOptions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`models <abaqus.Part.AcisMdb.AcisMdb.models>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Part.AcisMdb.AcisMdb.customData>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Part.AcisMdb.AcisMdb.annotations>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`version <abaqus.Job.JobMdb.JobMdb.version>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Job.JobMdb.JobMdb.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`jobs <abaqus.Job.JobMdb.JobMdb.jobs>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`adaptivityProcesses "
+"<abaqus.Job.JobMdb.JobMdb.adaptivityProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`coexecutions <abaqus.Job.JobMdb.JobMdb.coexecutions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`optimizationProcesses "
+"<abaqus.Job.JobMdb.JobMdb.optimizationProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`meshEditOptions <abaqus.Job.JobMdb.JobMdb.meshEditOptions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`models <abaqus.Job.JobMdb.JobMdb.models>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Job.JobMdb.JobMdb.customData>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Job.JobMdb.JobMdb.annotations>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`version <abaqus.Mdb.MdbBase.MdbBase.version>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Mdb.MdbBase.MdbBase.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`jobs <abaqus.Mdb.MdbBase.MdbBase.jobs>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`adaptivityProcesses "
+"<abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`coexecutions <abaqus.Mdb.MdbBase.MdbBase.coexecutions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`optimizationProcesses "
+"<abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`meshEditOptions <abaqus.Mdb.MdbBase.MdbBase.meshEditOptions>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`models <abaqus.Mdb.MdbBase.MdbBase.models>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Mdb.MdbBase.MdbBase.customData>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Mdb.MdbBase.MdbBase.annotations>`\\"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb abaqus.Mdb.Mdb.Mdb abaqus.Mdb.MdbBase.MdbBase

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/session/display.md:1
 msgid "Display Group"
@@ -38,6 +38,7 @@ msgstr ""
 #: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
 #: abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
+#: abaqus.DisplayGroup.Leaf.Leaf
 #: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
 #: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums
 #: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup
@@ -77,7 +78,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`attachedToGui "
-"<abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.attachedToGui>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -87,7 +88,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`replayInProgress "
-"<abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.replayInProgress>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -97,7 +98,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryFootprint "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -109,7 +110,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryMaxFootprint "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryMaxFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -121,7 +122,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryLimit "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryLimit>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -131,7 +132,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgid ""
+":py:obj:`colors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.colors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -141,7 +144,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`journalOptions "
-"<abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.journalOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -153,7 +156,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`memoryReductionOptions "
-"<abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.memoryReductionOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -163,7 +166,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -173,7 +178,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`sketcherOptions "
-"<abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.sketcherOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -185,7 +190,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`viewerOptions "
-"<abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.viewerOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -195,7 +200,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`animationOptions "
-"<abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.animationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -203,7 +208,9 @@ msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.aviOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -213,7 +220,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`imageAnimationOptions "
-"<abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.imageAnimationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -223,7 +230,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`imageAnimation "
-"<abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.imageAnimation>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -233,7 +240,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`quickTimeOptions "
-"<abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.quickTimeOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -241,7 +248,9 @@ msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgid ""
+":py:obj:`viewports "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -249,7 +258,9 @@ msgid "A repository of Viewport objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgid ""
+":py:obj:`customData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.customData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -259,7 +270,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultFieldReportOptions "
-"<abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultFieldReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -269,11 +280,603 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultFreeBodyReportOptions "
-"<abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid "A FreeBodyReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbs "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of ScratchOdb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultPlot object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of OdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`mdbData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`paths "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Path objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`streams "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Stream objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PrintOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PageSetupOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A TiffOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+"An AutoColors object specifying the color palette to be used for color "
+"coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyColors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+"An AutoColors object specifying the color palette to be used forXYCurve "
+"objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`curves "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyPlots "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`charts "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An XYReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`views "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of NetworkDatabaseConnector objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`queues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Queue objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`images "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`movies "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Movie objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DrawingArea object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+"A MesherOptions object specifying how to control default settings in the "
+"Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawings "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Drawing objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -293,17 +896,9 @@ msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Odb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`scratchOdbs "
 "<abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of ScratchOdb objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -313,17 +908,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A DefaultOdbDisplay object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultPlot "
 "<abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -333,15 +920,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A DefaultChartOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of OdbData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -349,15 +928,7 @@ msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of MdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Path objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -365,23 +936,11 @@ msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of FreeBody objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Stream objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Spectrum objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -391,17 +950,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A CurrentProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultProbeOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -417,10 +968,6 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A ProbeReport object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultProbeReport "
 "<abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
@@ -433,25 +980,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A SelectedProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`printOptions "
 "<abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A PrintOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An EpsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -461,15 +996,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A PageSetupOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PngOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -477,15 +1004,7 @@ msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A PsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A SvgOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -495,27 +1014,11 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A TiffOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-"An AutoColors object specifying the color palette to be used for color "
-"coding."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ""
-"An AutoColors object specifying the color palette to be used forXYCurve "
-"objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -525,15 +1028,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of XYData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -541,25 +1036,13 @@ msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of XYPlot objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Chart objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultXYReportOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -573,17 +1056,9 @@ msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of View objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`networkDatabaseConnectors "
 "<abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of NetworkDatabaseConnector objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -593,27 +1068,15 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of DisplayGroup objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`graphicsInfo "
 "<abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A GraphicsInfo object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultGraphicsOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -629,15 +1092,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Queue objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -647,17 +1102,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A String specifying the name of the current viewport."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`sessionState "
 "<abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A Dictionary object specifying the viewports and their associated models."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -665,15 +1112,7 @@ msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Image objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Movie objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -683,17 +1122,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A LightOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`drawingArea "
 "<abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -703,17 +1134,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-"A MesherOptions object specifying how to control default settings in the "
-"Mesh module."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Drawing objects."
 msgstr ""
 
 #: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
@@ -1685,6 +2106,15 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
+msgid ":py:obj:`leafType <abaqus.DisplayGroup.Leaf.Leaf.leafType>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
+msgid "A SymbolicConstant specifying the leaf type."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.DisplayGroup.Leaf.Leaf.__init__>`\\ "
 "\\(leafType\\)"
@@ -1809,10 +2239,6 @@ msgstr ""
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames.leafType>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../None:6:<autosummary>:1
-msgid "A SymbolicConstant specifying the leaf type."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1940,10 +2366,23 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromdisplaygrouppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`displayGroup "
+"<abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.displayGroup>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__:12
+#: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.displayGroup:1
+#: of
+msgid "A DisplayGroupArray object."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1965,13 +2404,6 @@ msgid ""
 "Check `LeafFromDisplayGroup.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromdisplaygrouppyc.htm?contextscope=all"
 "#simaker-leaffromdisplaygroup__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__:12
-#: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.displayGroup:1
-#: of
-msgid "A DisplayGroupArray object."
 msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__:14 of
@@ -1998,10 +2430,35 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromelementlabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.leafType>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`partInstanceName "
+"<abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.partInstanceName>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.__init__:13
+#: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.partInstanceName:1
+#: of
+msgid ""
+"A String specifying the name of the part instance to which "
+"**elementLabels** refers."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`elementLabels "
+"<abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.elementLabels>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A sequence of Strings specifying expressions that denote element labels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2025,15 +2482,6 @@ msgid ""
 "Check `LeafFromElementLabels.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromelementlabelspyc.htm?contextscope=all"
 "#simaker-leaffromelementlabels__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.__init__:13
-#: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.partInstanceName:1
-#: of
-msgid ""
-"A String specifying the name of the part instance to which "
-"**elementLabels** refers."
 msgstr ""
 
 #: ../../docstring
@@ -2073,10 +2521,24 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromelementsetspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`elementSets "
+"<abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.elementSets>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.__init__:12
+#: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.elementSets:1 of
+msgid ""
+"A sequence of Strings specifying element sets or a String specifying a "
+"single element set."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2096,14 +2558,6 @@ msgid ""
 "Check `LeafFromElementSets.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromelementsetspyc.htm?contextscope=all"
 "#simaker-leaffromelementsets__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.__init__:12
-#: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.elementSets:1 of
-msgid ""
-"A sequence of Strings specifying element sets or a String specifying a "
-"single element set."
 msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets.__init__:15 of
@@ -2709,10 +3163,22 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffrommodelelemlabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`elementLabels "
+"<abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels.elementLabels>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+"A sequence of Strings specifying expressions that denote element labels "
+"per part instance in the model."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2779,10 +3245,22 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffrommodelnodelabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabels "
+"<abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels.nodeLabels>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+"A sequence of Strings specifying expressions that denote node labels per "
+"part instance in the model."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2849,10 +3327,35 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromnodelabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.leafType>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`partInstanceName "
+"<abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.partInstanceName>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.__init__:13
+#: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.partInstanceName:1
+#: of
+msgid ""
+"A String specifying the name of the part instance to which **nodeLabels**"
+" refers."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabels "
+"<abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.nodeLabels>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "A sequence of Strings specifying expressions that denote node labels."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2874,15 +3377,6 @@ msgid ""
 "Check `LeafFromNodeLabels.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromnodelabelspyc.htm?contextscope=all"
 "#simaker-leaffromnodelabels__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.__init__:13
-#: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels.partInstanceName:1
-#: of
-msgid ""
-"A String specifying the name of the part instance to which **nodeLabels**"
-" refers."
 msgstr ""
 
 #: ../../docstring
@@ -2919,10 +3413,24 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromnodesetspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`nodeSets "
+"<abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.nodeSets>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.__init__:12
+#: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.nodeSets:1 of
+msgid ""
+"A sequence of Strings specifying node sets or a String specifying a "
+"single node set."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2942,14 +3450,6 @@ msgid ""
 "Check `LeafFromNodeSets.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromnodesetspyc.htm?contextscope=all"
 "#simaker-leaffromnodesets__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.__init__:12
-#: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.nodeSets:1 of
-msgid ""
-"A sequence of Strings specifying node sets or a String specifying a "
-"single node set."
 msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets.__init__:14 of
@@ -3621,10 +4121,23 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffrompartinstancepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`partInstanceName "
+"<abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.partInstanceName>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.__init__:12
+#: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.partInstanceName:1
+#: of
+msgid "A sequence of Strings specifying the names of the part instances."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3644,13 +4157,6 @@ msgid ""
 "Check `LeafFromPartInstance.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffrompartinstancepyc.htm?contextscope=all"
 "#simaker-leaffrompartinstance__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.__init__:12
-#: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.partInstanceName:1
-#: of
-msgid "A sequence of Strings specifying the names of the part instances."
 msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance.__init__:14 of
@@ -3850,10 +4356,24 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromsurfacesetspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`leafType "
 "<abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.leafType>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`surfaceSets "
+"<abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.surfaceSets>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.__init__:12
+#: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.surfaceSets:1 of
+msgid ""
+"A sequence of Strings specifying surface sets, or a String specifying a "
+"single surface set."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3868,14 +4388,6 @@ msgid ""
 "Check `LeafFromSurfaceSets.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-leaffromsurfacesetspyc.htm?contextscope=all"
 "#simaker-leaffromsurfacesets__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.__init__:12
-#: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.surfaceSets:1 of
-msgid ""
-"A sequence of Strings specifying surface sets, or a String specifying a "
-"single surface set."
 msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets.__init__:15 of
