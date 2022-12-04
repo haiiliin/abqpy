@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/session.md:5
 msgid "Objects of Session"
@@ -82,7 +82,8 @@ msgstr ""
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession
 #: abaqus.Job.JobSession.JobSession abaqus.Odb.OdbSession.OdbSession
 #: abaqus.PathAndProbe.PathSession.PathSession abaqus.Session.Color.Color
-#: abaqus.Session.Drawing.Drawing abaqus.Session.JournalOptions.JournalOptions
+#: abaqus.Session.Drawing.Drawing abaqus.Session.Image.Image
+#: abaqus.Session.JournalOptions.JournalOptions
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector
 #: abaqus.Session.NumberFormat.NumberFormat abaqus.Session.Session.Session
 #: abaqus.Session.SessionBase.SessionBase abaqus.XY.XYSession.XYSession of
@@ -90,9 +91,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-":py:obj:`attachedToGui "
-"<abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgid ":py:obj:`attachedToGui <abaqus.Session.Session.Session.attachedToGui>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -103,7 +102,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`replayInProgress "
-"<abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+"<abaqus.Session.Session.Session.replayInProgress>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -114,7 +113,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryFootprint "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+"<abaqus.Session.Session.Session.kernelMemoryFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -127,7 +126,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryMaxFootprint "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+"<abaqus.Session.Session.Session.kernelMemoryMaxFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -140,7 +139,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`kernelMemoryLimit "
-"<abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+"<abaqus.Session.Session.Session.kernelMemoryLimit>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -151,7 +150,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgid ":py:obj:`colors <abaqus.Session.Session.Session.colors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -160,9 +159,7 @@ msgid "A repository of Color objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-":py:obj:`journalOptions "
-"<abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgid ":py:obj:`journalOptions <abaqus.Session.Session.Session.journalOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -175,7 +172,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`memoryReductionOptions "
-"<abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+"<abaqus.Session.Session.Session.memoryReductionOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -186,7 +183,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgid ":py:obj:`nodeQuery <abaqus.Session.Session.Session.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -197,7 +194,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`sketcherOptions "
-"<abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+"<abaqus.Session.Session.Session.sketcherOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -208,9 +205,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-":py:obj:`viewerOptions "
-"<abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgid ":py:obj:`viewerOptions <abaqus.Session.Session.Session.viewerOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -221,7 +216,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`animationOptions "
-"<abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+"<abaqus.Session.Session.Session.animationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -230,7 +225,7 @@ msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgid ":py:obj:`aviOptions <abaqus.Session.Session.Session.aviOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -241,7 +236,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`imageAnimationOptions "
-"<abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+"<abaqus.Session.Session.Session.imageAnimationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -250,9 +245,7 @@ msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ""
-":py:obj:`imageAnimation "
-"<abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgid ":py:obj:`imageAnimation <abaqus.Session.Session.Session.imageAnimation>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -263,7 +256,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`quickTimeOptions "
-"<abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+"<abaqus.Session.Session.Session.quickTimeOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -272,7 +265,7 @@ msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgid ":py:obj:`viewports <abaqus.Session.Session.Session.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -281,7 +274,7 @@ msgid "A repository of Viewport objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Session.Session.Session.customData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -292,7 +285,7 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultFieldReportOptions "
-"<abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+"<abaqus.Session.Session.Session.defaultFieldReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
@@ -304,13 +297,4020 @@ msgstr ""
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultFreeBodyReportOptions "
-"<abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
+"<abaqus.Session.Session.Session.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1 ../../docstring
 #: abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions:1
 #: abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions:1 of
 msgid "A FreeBodyReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Session.Session.Session.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Session.Session.Session.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Session.Session.Session.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.odbs:1 of
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Session.Session.Session.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.scratchOdbs:1 of
+msgid "A repository of ScratchOdb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Session.Session.Session.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay:1 of
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Session.Session.Session.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultPlot:1 of
+msgid "A DefaultPlot object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Session.Session.Session.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultChartOptions:1 of
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Session.Session.Session.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.odbData:1 of
+msgid "A repository of OdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Session.Session.Session.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.mdbData:1 of
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Session.Session.Session.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.paths:1 of
+msgid "A repository of Path objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Session.Session.Session.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.freeBodies:1 of
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Session.Session.Session.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.streams:1 of
+msgid "A repository of Stream objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Session.Session.Session.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.spectrums:1 of
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Session.Session.Session.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.currentProbeValues:1 of
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Session.Session.Session.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultProbeOptions:1
+#: abaqus.Session.SessionBase.SessionBase.probeOptions:1 of
+msgid "A ProbeOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Session.Session.Session.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Session.Session.Session.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultProbeReport:1
+#: abaqus.Session.SessionBase.SessionBase.probeReport:1 of
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Session.Session.Session.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Session.Session.Session.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.selectedProbeValues:1 of
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Session.Session.Session.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.printOptions:1 of
+msgid "A PrintOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Session.Session.Session.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.epsOptions:1 of
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Session.Session.Session.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.pageSetupOptions:1 of
+msgid "A PageSetupOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Session.Session.Session.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.pngOptions:1 of
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Session.Session.Session.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.psOptions:1 of
+msgid "A PsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Session.Session.Session.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.svgOptions:1 of
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Session.Session.Session.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.tiffOptions:1 of
+msgid "A TiffOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Session.Session.Session.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.autoColors:1 of
+msgid ""
+"An AutoColors object specifying the color palette to be used for color "
+"coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Session.Session.Session.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.xyColors:1 of
+msgid ""
+"An AutoColors object specifying the color palette to be used forXYCurve "
+"objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Session.Session.Session.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.xyDataObjects:1 of
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Session.Session.Session.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.curves:1 of
+msgid "A repository of XYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Session.Session.Session.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.xyPlots:1 of
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Session.Session.Session.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.charts:1 of
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Session.Session.Session.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions:1
+#: abaqus.Session.SessionBase.SessionBase.xyReportOptions:1 of
+msgid "An XYReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Session.Session.Session.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Session.Session.Session.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.views:1 of
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Session.Session.Session.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors:1 of
+msgid "A repository of NetworkDatabaseConnector objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Session.Session.Session.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.displayGroups:1 of
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Session.Session.Session.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.graphicsInfo:1 of
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Session.Session.Session.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions:1
+#: abaqus.Session.SessionBase.SessionBase.graphicsOptions:1 of
+msgid "A GraphicsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Session.Session.Session.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Session.Session.Session.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions:1 of
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Session.Session.Session.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.queues:1 of
+msgid "A repository of Queue objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Session.Session.Session.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.currentViewportName:1 of
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Session.Session.Session.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Session.Session.Session.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.images:1 of
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Session.Session.Session.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.movies:1 of
+msgid "A repository of Movie objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Session.Session.Session.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultLightOptions:1 of
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Session.Session.Session.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.drawingArea:1 of
+msgid "A DrawingArea object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Session.Session.Session.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.defaultMesherOptions:1 of
+msgid ""
+"A MesherOptions object specifying how to control default settings in the "
+"Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Session.Session.Session.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1 ../../docstring
+#: abaqus.Session.SessionBase.SessionBase.drawings:1 of
+msgid "A repository of Drawing objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.Animation.AnimationSession.AnimationSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Animation.AnimationSession.AnimationSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Animation.AnimationSession.AnimationSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Animation.AnimationSession.AnimationSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Animation.AnimationSession.AnimationSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`colors "
+"<abaqus.Animation.AnimationSession.AnimationSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.Animation.AnimationSession.AnimationSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Animation.AnimationSession.AnimationSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.Animation.AnimationSession.AnimationSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.Animation.AnimationSession.AnimationSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Animation.AnimationSession.AnimationSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.Animation.AnimationSession.AnimationSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbData "
+"<abaqus.Animation.AnimationSession.AnimationSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`mdbData "
+"<abaqus.Animation.AnimationSession.AnimationSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`paths "
+"<abaqus.Animation.AnimationSession.AnimationSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.Animation.AnimationSession.AnimationSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`streams "
+"<abaqus.Animation.AnimationSession.AnimationSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.Animation.AnimationSession.AnimationSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Animation.AnimationSession.AnimationSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.Animation.AnimationSession.AnimationSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Animation.AnimationSession.AnimationSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.Animation.AnimationSession.AnimationSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyColors "
+"<abaqus.Animation.AnimationSession.AnimationSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.Animation.AnimationSession.AnimationSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`curves "
+"<abaqus.Animation.AnimationSession.AnimationSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyPlots "
+"<abaqus.Animation.AnimationSession.AnimationSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`charts "
+"<abaqus.Animation.AnimationSession.AnimationSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`views "
+"<abaqus.Animation.AnimationSession.AnimationSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Animation.AnimationSession.AnimationSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.Animation.AnimationSession.AnimationSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.Animation.AnimationSession.AnimationSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`queues "
+"<abaqus.Animation.AnimationSession.AnimationSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Animation.AnimationSession.AnimationSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.Animation.AnimationSession.AnimationSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`images "
+"<abaqus.Animation.AnimationSession.AnimationSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`movies "
+"<abaqus.Animation.AnimationSession.AnimationSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.Animation.AnimationSession.AnimationSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Animation.AnimationSession.AnimationSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawings "
+"<abaqus.Animation.AnimationSession.AnimationSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.Canvas.CanvasSession.CanvasSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Canvas.CanvasSession.CanvasSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Canvas.CanvasSession.CanvasSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.Canvas.CanvasSession.CanvasSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Canvas.CanvasSession.CanvasSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.Canvas.CanvasSession.CanvasSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.Canvas.CanvasSession.CanvasSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Canvas.CanvasSession.CanvasSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.Canvas.CanvasSession.CanvasSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Canvas.CanvasSession.CanvasSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Canvas.CanvasSession.CanvasSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Canvas.CanvasSession.CanvasSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.Canvas.CanvasSession.CanvasSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Canvas.CanvasSession.CanvasSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.Canvas.CanvasSession.CanvasSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Canvas.CanvasSession.CanvasSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.Canvas.CanvasSession.CanvasSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Canvas.CanvasSession.CanvasSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.Canvas.CanvasSession.CanvasSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Canvas.CanvasSession.CanvasSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.Canvas.CanvasSession.CanvasSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Canvas.CanvasSession.CanvasSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Canvas.CanvasSession.CanvasSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Canvas.CanvasSession.CanvasSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Canvas.CanvasSession.CanvasSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Canvas.CanvasSession.CanvasSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.Canvas.CanvasSession.CanvasSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.Canvas.CanvasSession.CanvasSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Canvas.CanvasSession.CanvasSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Canvas.CanvasSession.CanvasSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.Canvas.CanvasSession.CanvasSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Canvas.CanvasSession.CanvasSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Canvas.CanvasSession.CanvasSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.Canvas.CanvasSession.CanvasSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Canvas.CanvasSession.CanvasSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`colors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbs "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`mdbData "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`paths "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`streams "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyColors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`curves "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyPlots "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`charts "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`views "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`queues "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`images "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`movies "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawings "
+"<abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`colors "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbs "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`odbData "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`mdbData "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`paths "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`streams "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyColors "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`curves "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyPlots "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`charts "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`views "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`queues "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`images "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`movies "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawings "
+"<abaqus.FieldReport.FieldReportSession.FieldReportSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.Job.JobSession.JobSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Job.JobSession.JobSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Job.JobSession.JobSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Job.JobSession.JobSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Job.JobSession.JobSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Job.JobSession.JobSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Job.JobSession.JobSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Job.JobSession.JobSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Job.JobSession.JobSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Job.JobSession.JobSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.Job.JobSession.JobSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Job.JobSession.JobSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Job.JobSession.JobSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Job.JobSession.JobSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Job.JobSession.JobSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Job.JobSession.JobSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Job.JobSession.JobSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Job.JobSession.JobSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Job.JobSession.JobSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Job.JobSession.JobSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Job.JobSession.JobSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Job.JobSession.JobSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Job.JobSession.JobSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Job.JobSession.JobSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Job.JobSession.JobSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Job.JobSession.JobSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Job.JobSession.JobSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Job.JobSession.JobSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Job.JobSession.JobSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Job.JobSession.JobSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Job.JobSession.JobSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Job.JobSession.JobSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Job.JobSession.JobSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Job.JobSession.JobSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Job.JobSession.JobSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Job.JobSession.JobSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Job.JobSession.JobSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Job.JobSession.JobSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Job.JobSession.JobSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Job.JobSession.JobSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Job.JobSession.JobSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Job.JobSession.JobSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Job.JobSession.JobSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Job.JobSession.JobSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Job.JobSession.JobSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Job.JobSession.JobSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Job.JobSession.JobSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Job.JobSession.JobSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Job.JobSession.JobSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Job.JobSession.JobSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Job.JobSession.JobSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Job.JobSession.JobSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Job.JobSession.JobSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Job.JobSession.JobSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Job.JobSession.JobSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Job.JobSession.JobSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Job.JobSession.JobSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Job.JobSession.JobSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Job.JobSession.JobSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Job.JobSession.JobSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Job.JobSession.JobSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Job.JobSession.JobSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Job.JobSession.JobSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Job.JobSession.JobSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Job.JobSession.JobSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Job.JobSession.JobSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Job.JobSession.JobSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Job.JobSession.JobSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Job.JobSession.JobSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Job.JobSession.JobSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.Odb.OdbSession.OdbSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Odb.OdbSession.OdbSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Odb.OdbSession.OdbSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Odb.OdbSession.OdbSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Odb.OdbSession.OdbSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Odb.OdbSession.OdbSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Odb.OdbSession.OdbSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Odb.OdbSession.OdbSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Odb.OdbSession.OdbSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Odb.OdbSession.OdbSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.Odb.OdbSession.OdbSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Odb.OdbSession.OdbSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Odb.OdbSession.OdbSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Odb.OdbSession.OdbSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Odb.OdbSession.OdbSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Odb.OdbSession.OdbSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Odb.OdbSession.OdbSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Odb.OdbSession.OdbSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Odb.OdbSession.OdbSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Odb.OdbSession.OdbSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Odb.OdbSession.OdbSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Odb.OdbSession.OdbSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Odb.OdbSession.OdbSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Odb.OdbSession.OdbSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Odb.OdbSession.OdbSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Odb.OdbSession.OdbSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Odb.OdbSession.OdbSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Odb.OdbSession.OdbSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Odb.OdbSession.OdbSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Odb.OdbSession.OdbSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Odb.OdbSession.OdbSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Odb.OdbSession.OdbSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Odb.OdbSession.OdbSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Odb.OdbSession.OdbSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Odb.OdbSession.OdbSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Odb.OdbSession.OdbSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Odb.OdbSession.OdbSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Odb.OdbSession.OdbSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Odb.OdbSession.OdbSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Odb.OdbSession.OdbSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Odb.OdbSession.OdbSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Odb.OdbSession.OdbSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Odb.OdbSession.OdbSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Odb.OdbSession.OdbSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Odb.OdbSession.OdbSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Odb.OdbSession.OdbSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Odb.OdbSession.OdbSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Odb.OdbSession.OdbSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Odb.OdbSession.OdbSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Odb.OdbSession.OdbSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Odb.OdbSession.OdbSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Odb.OdbSession.OdbSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Odb.OdbSession.OdbSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Odb.OdbSession.OdbSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Odb.OdbSession.OdbSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Odb.OdbSession.OdbSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Odb.OdbSession.OdbSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Odb.OdbSession.OdbSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Odb.OdbSession.OdbSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Odb.OdbSession.OdbSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.PathAndProbe.PathSession.PathSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.PathAndProbe.PathSession.PathSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.PathAndProbe.PathSession.PathSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.PathAndProbe.PathSession.PathSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.PathAndProbe.PathSession.PathSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.PathAndProbe.PathSession.PathSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.PathAndProbe.PathSession.PathSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.PathAndProbe.PathSession.PathSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.PathAndProbe.PathSession.PathSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.PathAndProbe.PathSession.PathSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.PathAndProbe.PathSession.PathSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.PathAndProbe.PathSession.PathSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.PathAndProbe.PathSession.PathSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.PathAndProbe.PathSession.PathSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.PathAndProbe.PathSession.PathSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.PathAndProbe.PathSession.PathSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.PathAndProbe.PathSession.PathSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.PathAndProbe.PathSession.PathSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.PathAndProbe.PathSession.PathSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyColors "
+"<abaqus.PathAndProbe.PathSession.PathSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.PathAndProbe.PathSession.PathSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.PathAndProbe.PathSession.PathSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.PathAndProbe.PathSession.PathSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.PathAndProbe.PathSession.PathSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.PathAndProbe.PathSession.PathSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.PathAndProbe.PathSession.PathSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.PathAndProbe.PathSession.PathSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.PathAndProbe.PathSession.PathSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.PathAndProbe.PathSession.PathSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.PathAndProbe.PathSession.PathSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.PathAndProbe.PathSession.PathSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.PathAndProbe.PathSession.PathSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.PathAndProbe.PathSession.PathSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.PathAndProbe.PathSession.PathSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.PathAndProbe.PathSession.PathSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawings "
+"<abaqus.PathAndProbe.PathSession.PathSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.XY.XYSession.XYSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.XY.XYSession.XYSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.XY.XYSession.XYSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.XY.XYSession.XYSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.XY.XYSession.XYSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.XY.XYSession.XYSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`journalOptions <abaqus.XY.XYSession.XYSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.XY.XYSession.XYSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.XY.XYSession.XYSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.XY.XYSession.XYSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.XY.XYSession.XYSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.XY.XYSession.XYSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.XY.XYSession.XYSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.XY.XYSession.XYSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimation <abaqus.XY.XYSession.XYSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.XY.XYSession.XYSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.XY.XYSession.XYSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.XY.XYSession.XYSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.XY.XYSession.XYSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.XY.XYSession.XYSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.XY.XYSession.XYSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.XY.XYSession.XYSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.XY.XYSession.XYSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.XY.XYSession.XYSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.XY.XYSession.XYSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.XY.XYSession.XYSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.XY.XYSession.XYSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.XY.XYSession.XYSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.XY.XYSession.XYSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.XY.XYSession.XYSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.XY.XYSession.XYSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.XY.XYSession.XYSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.XY.XYSession.XYSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.XY.XYSession.XYSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.XY.XYSession.XYSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.XY.XYSession.XYSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.XY.XYSession.XYSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.XY.XYSession.XYSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.XY.XYSession.XYSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.XY.XYSession.XYSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.XY.XYSession.XYSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.XY.XYSession.XYSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.XY.XYSession.XYSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.XY.XYSession.XYSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.XY.XYSession.XYSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.XY.XYSession.XYSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.XY.XYSession.XYSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.XY.XYSession.XYSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.XY.XYSession.XYSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.XY.XYSession.XYSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.XY.XYSession.XYSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.XY.XYSession.XYSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.XY.XYSession.XYSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.XY.XYSession.XYSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.XY.XYSession.XYSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.XY.XYSession.XYSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.XY.XYSession.XYSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.XY.XYSession.XYSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.XY.XYSession.XYSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.XY.XYSession.XYSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.XY.XYSession.XYSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.XY.XYSession.XYSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.XY.XYSession.XYSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.XY.XYSession.XYSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.XY.XYSession.XYSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.XY.XYSession.XYSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.XY.XYSession.XYSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.XY.XYSession.XYSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.XY.XYSession.XYSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.XY.XYSession.XYSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.XY.XYSessionBase.XYSessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.XY.XYSessionBase.XYSessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.XY.XYSessionBase.XYSessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.XY.XYSessionBase.XYSessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.XY.XYSessionBase.XYSessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.XY.XYSessionBase.XYSessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.XY.XYSessionBase.XYSessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.XY.XYSessionBase.XYSessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.XY.XYSessionBase.XYSessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.XY.XYSessionBase.XYSessionBase.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.XY.XYSessionBase.XYSessionBase.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.XY.XYSessionBase.XYSessionBase.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.XY.XYSessionBase.XYSessionBase.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.XY.XYSessionBase.XYSessionBase.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.XY.XYSessionBase.XYSessionBase.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.XY.XYSessionBase.XYSessionBase.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.XY.XYSessionBase.XYSessionBase.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.XY.XYSessionBase.XYSessionBase.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.XY.XYSessionBase.XYSessionBase.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.XY.XYSessionBase.XYSessionBase.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.XY.XYSessionBase.XYSessionBase.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.XY.XYSessionBase.XYSessionBase.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.XY.XYSessionBase.XYSessionBase.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.XY.XYSessionBase.XYSessionBase.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.XY.XYSessionBase.XYSessionBase.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.XY.XYSessionBase.XYSessionBase.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.XY.XYSessionBase.XYSessionBase.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.XY.XYSessionBase.XYSessionBase.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.XY.XYSessionBase.XYSessionBase.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.XY.XYSessionBase.XYSessionBase.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.XY.XYSessionBase.XYSessionBase.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.XY.XYSessionBase.XYSessionBase.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.XY.XYSessionBase.XYSessionBase.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.XY.XYSessionBase.XYSessionBase.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.XY.XYSessionBase.XYSessionBase.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.XY.XYSessionBase.XYSessionBase.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.XY.XYSessionBase.XYSessionBase.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.XY.XYSessionBase.XYSessionBase.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.XY.XYSessionBase.XYSessionBase.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.XY.XYSessionBase.XYSessionBase.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.XY.XYSessionBase.XYSessionBase.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.XY.XYSessionBase.XYSessionBase.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.XY.XYSessionBase.XYSessionBase.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.XY.XYSessionBase.XYSessionBase.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -329,20 +4329,10 @@ msgstr ""
 msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.odbs:1 of
-msgid "A repository of Odb objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`scratchOdbs "
 "<abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.scratchOdbs:1 of
-msgid "A repository of ScratchOdb objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -351,20 +4341,10 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay:1 of
-msgid "A DefaultOdbDisplay object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultPlot "
 "<abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultPlot:1 of
-msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -373,63 +4353,28 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.defaultChartOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultChartOptions:1 of
-msgid "A DefaultChartOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.odbData:1 of
-msgid "A repository of OdbData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.mdbData:1 of
-msgid "A repository of MdbData objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.paths:1 of
-msgid "A repository of Path objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.freeBodies:1 of
-msgid "A repository of FreeBody objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.streams:1 of
-msgid "A repository of Stream objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.spectrums:1 of
-msgid "A repository of Spectrum objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -438,21 +4383,10 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.currentProbeValues:1 of
-msgid "A CurrentProbeValues object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultProbeOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultProbeOptions:1
-#: abaqus.Session.SessionBase.SessionBase.probeOptions:1 of
-msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -467,12 +4401,6 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.probeReport>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultProbeReport:1
-#: abaqus.Session.SessionBase.SessionBase.probeReport:1 of
-msgid "A ProbeReport object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultProbeReport "
@@ -485,29 +4413,14 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.selectedProbeValues>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.selectedProbeValues:1 of
-msgid "A SelectedProbeValues object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`printOptions "
 "<abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.printOptions:1 of
-msgid "A PrintOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.epsOptions:1 of
-msgid "An EpsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -516,36 +4429,16 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.pageSetupOptions:1 of
-msgid "A PageSetupOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.pngOptions:1 of
-msgid "A PngOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.psOptions:1 of
-msgid "A PsOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.svgOptions:1 of
-msgid "A SvgOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -554,31 +4447,12 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.tiffOptions:1 of
-msgid "A TiffOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.autoColors:1 of
-msgid ""
-"An AutoColors object specifying the color palette to be used for color "
-"coding."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.xyColors:1 of
-msgid ""
-"An AutoColors object specifying the color palette to be used forXYCurve "
-"objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -587,48 +4461,22 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.xyDataObjects>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.xyDataObjects:1 of
-msgid "A repository of XYData objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.curves:1 of
-msgid "A repository of XYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.xyPlots:1 of
-msgid "A repository of XYPlot objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.charts:1 of
-msgid "A repository of Chart objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultXYReportOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions:1
-#: abaqus.Session.SessionBase.SessionBase.xyReportOptions:1 of
-msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -641,20 +4489,10 @@ msgstr ""
 msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.views:1 of
-msgid "A repository of View objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`networkDatabaseConnectors "
 "<abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors:1 of
-msgid "A repository of NetworkDatabaseConnector objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -663,32 +4501,16 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.displayGroups>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.displayGroups:1 of
-msgid "A repository of DisplayGroup objects."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`graphicsInfo "
 "<abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.graphicsInfo:1 of
-msgid "A GraphicsInfo object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`defaultGraphicsOptions "
 "<abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions:1
-#: abaqus.Session.SessionBase.SessionBase.graphicsOptions:1 of
-msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -703,29 +4525,14 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions:1 of
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.queues:1 of
-msgid "A repository of Queue objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`currentViewportName "
 "<abaqus.Session.SessionBase.SessionBase.currentViewportName>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.currentViewportName:1 of
-msgid "A String specifying the name of the current viewport."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -735,25 +4542,11 @@ msgid ""
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A Dictionary object specifying the viewports and their associated models."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.images:1 of
-msgid "A repository of Image objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.movies:1 of
-msgid "A repository of Movie objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -762,20 +4555,10 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.defaultLightOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultLightOptions:1 of
-msgid "A LightOptions object."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ""
 ":py:obj:`drawingArea "
 "<abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.drawingArea:1 of
-msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -784,20 +4567,8 @@ msgid ""
 "<abaqus.Session.SessionBase.SessionBase.defaultMesherOptions>`\\"
 msgstr ""
 
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.defaultMesherOptions:1 of
-msgid ""
-"A MesherOptions object specifying how to control default settings in the "
-"Mesh module."
-msgstr ""
-
 #: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1 ../../docstring
-#: abaqus.Session.SessionBase.SessionBase.drawings:1 of
-msgid "A repository of Drawing objects."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession
@@ -2165,7 +5936,8 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:12
+#: ../../None:13:<autosummary>:1 ../../None:16:<autosummary>:1 ../../docstring
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:12
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:12
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:12
 #: abaqus.Session.Drawing.Drawing.__init__:12
@@ -4184,133 +7956,137 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`vertexCount <abaqus.Session.Drawing.Drawing.vertexCount>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "An Int specifying the number of vertices in the vertex array after a call"
 " to the setVertices method."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`normalCount <abaqus.Session.Drawing.Drawing.normalCount>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "An Int specifying the number of normal vectors in the normal array after "
 "a call to the setNormals method."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`colorCount <abaqus.Session.Drawing.Drawing.colorCount>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "An Int specifying the number of colors in the color array after a call to"
 " the setColors method."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`show <abaqus.Session.Drawing.Drawing.show>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Boolean specifying whether the drawing object will be rendered when "
 "referenced."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`cullBackfaces <abaqus.Session.Drawing.Drawing.cullBackfaces>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Boolean specifying whether polygonal graphics primitives facing away "
 "from the viewer should be culled (not rendered)."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`frontFaceOrder <abaqus.Session.Drawing.Drawing.frontFaceOrder>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the winding order for polygonal graphics "
 "primitives that face the viewer."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`translucency <abaqus.Session.Drawing.Drawing.translucency>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid "A Float specifying the opacity for polygonal graphics primitives."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`lineSize <abaqus.Session.Drawing.Drawing.lineSize>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Float specifying the width of the line, in millimeters, used to render "
 "edges."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`pointSize <abaqus.Session.Drawing.Drawing.pointSize>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Float specifying the width of points, in millimeters, used to render "
 "points."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`smoothShade <abaqus.Session.Drawing.Drawing.smoothShade>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Boolean specifying whether the lighting of polygonal graphics "
 "primitives is consistent for each facet or calculated for each displayed "
 "pixel."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`edgesInShaded <abaqus.Session.Drawing.Drawing.edgesInShaded>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A Boolean specifying whether edge and point drawing commands will be "
 "issued in a FILLED or SHADED display."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`edgeColor <abaqus.Session.Drawing.Drawing.edgeColor>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A tuple of three Floats specifying the **Red**, **Green**, and **Blue** "
 "component values for the edge color."
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ":py:obj:`pointColor <abaqus.Session.Drawing.Drawing.pointColor>`\\"
 msgstr ""
 
-#: ../../None:15:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 "A tuple of three Floats specifying the **Red**, **Green**, and **Blue** "
 "component values for the point color."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Session.Drawing.Drawing.name>`\\"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -4919,6 +8695,24 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Session.Image.Image.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Session.Image.Image.ImageFromMovie:7
+#: abaqus.Session.Image.Image.__init__:12 abaqus.Session.Image.Image.name:1 of
+msgid "A String specifying the repository name for the image."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`fileName <abaqus.Session.Image.Image.fileName>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "A String specifying the file from which the image is to be read."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.Session.Image.Image.__init__>`\\ \\(name\\, "
 "fileName\\)"
@@ -4946,11 +8740,6 @@ msgstr ""
 msgid ""
 "Check `ImageFromMovie on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imagefrommoviepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../docstring abaqus.Session.Image.Image.ImageFromMovie:7
-#: abaqus.Session.Image.Image.__init__:12 abaqus.Session.Image.Image.name:1 of
-msgid "A String specifying the repository name for the image."
 msgstr ""
 
 #: abaqus.Session.Image.Image.ImageFromMovie:9 of
@@ -5233,13 +9022,13 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`connected "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.connected>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../docstring
+#: ../../None:13:<autosummary>:1 ../../docstring
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.connected:1
 #: of
 msgid ""
@@ -5247,13 +9036,13 @@ msgid ""
 "is established."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`remoteAbaqusDriverName "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.remoteAbaqusDriverName>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../docstring
+#: ../../None:13:<autosummary>:1 ../../docstring
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:22
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.remoteAbaqusDriverName:1
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:7
@@ -5263,68 +9052,100 @@ msgid ""
 "remote computer."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`remoteLoginMechanism "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.remoteLoginMechanism>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the remote shell command on the local "
 "system."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`sshPath "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.sshPath>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "A String specifying the path to the`ssh` command on the local system."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`serverPort "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.serverPort>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "An Int specifying the server port on the remote computer."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`connectionPort "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.connectionPort>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "An Int specifying the connection port on the remote computer."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`serverTimeout "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.serverTimeout>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "86400 corresponds to one day."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`allowAutomaticStartup "
 "<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.allowAutomaticStartup>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 "A Boolean specifying whether to start the remote network database "
 "connector server."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`name "
+"<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.name>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`hostName "
+"<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.hostName>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../docstring
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:18
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.hostName:1
+#: of
+msgid "A String specifying the name of the remote computer."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`directory "
+"<abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.directory>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../docstring
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:20
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.directory:1
+#: of
+msgid "A String specifying the directory on the remote computer."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -5399,20 +9220,6 @@ msgid ""
 "Check `NetworkDatabaseConnector.__init__ on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all"
 "#simaker-networkdatabaseconnector__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:18
-#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.hostName:1
-#: of
-msgid "A String specifying the name of the remote computer."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.__init__:20
-#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.directory:1
-#: of
-msgid "A String specifying the directory on the remote computer."
 msgstr ""
 
 #: ../../docstring

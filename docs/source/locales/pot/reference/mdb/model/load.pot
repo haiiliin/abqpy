@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgid ":py:obj:`name <abaqus.Load.LoadModel.LoadModel.name>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -213,7 +213,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.Load.LoadModel.LoadModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -221,7 +221,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Load.LoadModel.LoadModel.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -229,7 +229,7 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.Load.LoadModel.LoadModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -237,7 +237,7 @@ msgid "A SymbolicConstant specifying the type of incident wave formulation to be
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Load.LoadModel.LoadModel.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -245,7 +245,7 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.Load.LoadModel.LoadModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -253,7 +253,7 @@ msgid "A Boolean specifying whether an input file should be written without part
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.Load.LoadModel.LoadModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -261,7 +261,7 @@ msgid "An Int specifying the increment, interval, iteration or cycle where the r
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.Load.LoadModel.LoadModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -269,7 +269,7 @@ msgid "A Boolean specifying that the step specified by **restartStep** should be
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Load.LoadModel.LoadModel.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -277,7 +277,7 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Load.LoadModel.LoadModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -285,7 +285,7 @@ msgid "A Float specifying the time stamp that indicates when the model was last 
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ":py:obj:`description <abaqus.Load.LoadModel.LoadModel.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -293,7 +293,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Load.LoadModel.LoadModel.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -301,7 +301,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Load.LoadModel.LoadModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -309,7 +309,7 @@ msgid "A String specifying the name of the step where the restart analysis will 
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Load.LoadModel.LoadModel.globalJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -317,7 +317,7 @@ msgid "A String specifying the name of the job that generated the results for th
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.Load.LoadModel.LoadModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -325,7 +325,7 @@ msgid "A boolean specifying the status of constraints created in a model, in the
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.Load.LoadModel.LoadModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -333,7 +333,7 @@ msgid "A boolean specifying the status of connectors created in a model, in the 
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.Load.LoadModel.LoadModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -341,7 +341,7 @@ msgid "A boolean specifying the status of interactions created in a model, in th
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Load.LoadModel.LoadModel.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -349,7 +349,7 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Load.LoadModel.LoadModel.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -357,7 +357,7 @@ msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Load.LoadModel.LoadModel.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -365,7 +365,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Load.LoadModel.LoadModel.profiles>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -373,7 +373,7 @@ msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.Load.LoadModel.LoadModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -381,7 +381,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Load.LoadModel.LoadModel.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -389,7 +389,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.Load.LoadModel.LoadModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -397,7 +397,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.Load.LoadModel.LoadModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -405,7 +405,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.Load.LoadModel.LoadModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -413,7 +413,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Load.LoadModel.LoadModel.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -421,7 +421,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.Load.LoadModel.LoadModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -429,7 +429,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.Load.LoadModel.LoadModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -437,7 +437,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.Load.LoadModel.LoadModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -445,7 +445,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.Load.LoadModel.LoadModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -453,7 +453,7 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.Load.LoadModel.LoadModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -461,7 +461,7 @@ msgid "A tuple of tuples of Strings specifying the linked child PartInstance nam
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Load.LoadModel.LoadModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -469,7 +469,7 @@ msgid "A tuple of tuples of Strings specifying the linked child Part name in the
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Load.LoadModel.LoadModel.loads>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -477,7 +477,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Load.LoadModel.LoadModel.materials>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -485,7 +485,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Load.LoadModel.LoadModel.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -493,7 +493,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Load.LoadModel.LoadModel.sections>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -501,7 +501,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.Load.LoadModel.LoadModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -509,7 +509,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Load.LoadModel.LoadModel.sketches>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -517,7 +517,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Load.LoadModel.LoadModel.parts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -525,7 +525,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Load.LoadModel.LoadModel.steps>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -533,7 +533,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.Load.LoadModel.LoadModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -541,7 +541,7 @@ msgid "A FeatureOptions object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Load.LoadModel.LoadModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -549,7 +549,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Load.LoadModel.LoadModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -557,7 +557,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Load.LoadModel.LoadModel.timePoints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -565,7 +565,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Load.LoadModel.LoadModel.filters>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -573,7 +573,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.Load.LoadModel.LoadModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -581,7 +581,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.Load.LoadModel.LoadModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -589,7 +589,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.Load.LoadModel.LoadModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -597,11 +597,211 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.Load.LoadModel.LoadModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/Load/BodyCharge.py:docstring of abaqus.Load.BodyCharge.BodyCharge:0
@@ -8392,6 +8592,162 @@ msgid "Bases: :py:class:`~abaqus.Step.StepBase.StepBase`"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Load.LoadStep.LoadStep.name>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`explicit <abaqus.Load.LoadStep.LoadStep.explicit>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A SymbolicConstant specifying whether the step has an explicit procedure type (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT)."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`perturbation <abaqus.Load.LoadStep.LoadStep.perturbation>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Boolean specifying whether the step has a perturbation procedure type."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`nonmechanical <abaqus.Load.LoadStep.LoadStep.nonmechanical>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Boolean specifying whether the step has a mechanical procedure type."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`procedureType <abaqus.Load.LoadStep.LoadStep.procedureType>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A SymbolicConstant specifying the Abaqus procedure."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.Load.LoadStep.LoadStep.suppressed>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Boolean specifying whether the step is suppressed or not."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequestState <abaqus.Load.LoadStep.LoadStep.fieldOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of FieldOutputRequestState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`historyOutputRequestState <abaqus.Load.LoadStep.LoadStep.historyOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of HistoryOutputRequestState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`diagnosticPrint <abaqus.Load.LoadStep.LoadStep.diagnosticPrint>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A DiagnosticPrint object."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`monitor <abaqus.Load.LoadStep.LoadStep.monitor>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Monitor object."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`restart <abaqus.Load.LoadStep.LoadStep.restart>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Restart object."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraintStates <abaqus.Load.LoadStep.LoadStep.adaptiveMeshConstraintStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraintState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshDomains <abaqus.Load.LoadStep.LoadStep.adaptiveMeshDomains>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of AdaptiveMeshDomain objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`control <abaqus.Load.LoadStep.LoadStep.control>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A Control object."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`solverControl <abaqus.Load.LoadStep.LoadStep.solverControl>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A SolverControl object."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`boundaryConditionStates <abaqus.Load.LoadStep.LoadStep.boundaryConditionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of BoundaryConditionState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`interactionStates <abaqus.Load.LoadStep.LoadStep.interactionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of InteractionState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`loadStates <abaqus.Load.LoadStep.LoadStep.loadStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of LoadState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`loadCases <abaqus.Load.LoadStep.LoadStep.loadCases>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of LoadCase objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`predefinedFieldStates <abaqus.Load.LoadStep.LoadStep.predefinedFieldStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid "A repository of PredefinedFieldState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.StepBase.StepBase.name>`\\"
 msgstr ""
 
@@ -8400,15 +8756,7 @@ msgid ":py:obj:`explicit <abaqus.Step.StepBase.StepBase.explicit>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A SymbolicConstant specifying whether the step has an explicit procedure type (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT)."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A Boolean specifying whether the step has a perturbation procedure type."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8416,15 +8764,7 @@ msgid ":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Boolean specifying whether the step has a mechanical procedure type."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A SymbolicConstant specifying the Abaqus procedure."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8432,15 +8772,7 @@ msgid ":py:obj:`suppressed <abaqus.Step.StepBase.StepBase.suppressed>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Boolean specifying whether the step is suppressed or not."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`fieldOutputRequestState <abaqus.Step.StepBase.StepBase.fieldOutputRequestState>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A repository of FieldOutputRequestState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8448,15 +8780,7 @@ msgid ":py:obj:`historyOutputRequestState <abaqus.Step.StepBase.StepBase.history
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A repository of HistoryOutputRequestState objects."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`diagnosticPrint <abaqus.Step.StepBase.StepBase.diagnosticPrint>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A DiagnosticPrint object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8464,15 +8788,7 @@ msgid ":py:obj:`monitor <abaqus.Step.StepBase.StepBase.monitor>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Monitor object."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`restart <abaqus.Step.StepBase.StepBase.restart>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A Restart object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8480,15 +8796,7 @@ msgid ":py:obj:`adaptiveMeshConstraintStates <abaqus.Step.StepBase.StepBase.adap
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A repository of AdaptiveMeshConstraintState objects."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`adaptiveMeshDomains <abaqus.Step.StepBase.StepBase.adaptiveMeshDomains>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A repository of AdaptiveMeshDomain objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8496,15 +8804,7 @@ msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Control object."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A SolverControl object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8512,15 +8812,7 @@ msgid ":py:obj:`boundaryConditionStates <abaqus.Step.StepBase.StepBase.boundaryC
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A repository of BoundaryConditionState objects."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`interactionStates <abaqus.Step.StepBase.StepBase.interactionStates>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A repository of InteractionState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -8528,23 +8820,11 @@ msgid ":py:obj:`loadStates <abaqus.Step.StepBase.StepBase.loadStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A repository of LoadState objects."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`loadCases <abaqus.Step.StepBase.StepBase.loadCases>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A repository of LoadCase objects."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
 msgid ":py:obj:`predefinedFieldStates <abaqus.Step.StepBase.StepBase.predefinedFieldStates>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "A repository of PredefinedFieldState objects."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
