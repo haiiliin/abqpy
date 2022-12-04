@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,6 +93,7 @@ msgstr ""
 #: ../../../../src/abaqus/Filter/FilterOdb.py:docstring of abaqus.Filter.FilterOdb.FilterOdb:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb:0
 #: ../../../../src/abaqus/Odb/AnalyticSurface.py:docstring of abaqus.Odb.AnalyticSurface.AnalyticSurface:0
+#: ../../../../src/abaqus/Odb/AnalyticSurfaceSegment.py:docstring of abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment:0
 #: ../../../../src/abaqus/Odb/BeamOrientation.py:docstring of abaqus.Odb.BeamOrientation.BeamOrientation:0
 #: ../../../../src/abaqus/Odb/FieldBulkData.py:docstring of abaqus.Odb.FieldBulkData.FieldBulkData:0
 #: ../../../../src/abaqus/Odb/FieldLocation.py:docstring of abaqus.Odb.FieldLocation.FieldLocation:0
@@ -110,6 +111,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbFrame.py:docstring of abaqus.Odb.OdbFrame.OdbFrame:0
 #: ../../../../src/abaqus/Odb/OdbInstance.py:docstring of abaqus.Odb.OdbInstance.OdbInstance:0
 #: ../../../../src/abaqus/Odb/OdbInstanceBase.py:docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase:0
+#: ../../../../src/abaqus/Odb/OdbLoadCase.py:docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase:0
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement:0
 #: ../../../../src/abaqus/Odb/OdbMeshNode.py:docstring of abaqus.Odb.OdbMeshNode.OdbMeshNode:0
 #: ../../../../src/abaqus/Odb/OdbPart.py:docstring of abaqus.Odb.OdbPart.OdbPart:0
@@ -122,6 +124,7 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbStepBase.py:docstring of abaqus.Odb.OdbStepBase.OdbStepBase:0
 #: ../../../../src/abaqus/Odb/RebarOrientation.py:docstring of abaqus.Odb.RebarOrientation.RebarOrientation:0
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory:0
+#: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint:0
 #: ../../../../src/abaqus/Odb/SectorDefinition.py:docstring of abaqus.Odb.SectorDefinition.SectorDefinition:0
 #: ../../../../src/abaqus/Odb/UserData.py:docstring of abaqus.Odb.UserData.UserData:0
 #: ../../../../src/abaqus/Odb/UserDataBase.py:docstring of abaqus.Odb.UserDataBase.UserDataBase:0
@@ -129,7 +132,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`isReadOnly <abaqus.Odb.OdbBase.OdbBase.isReadOnly>`\\"
+msgid ":py:obj:`isReadOnly <abaqus.Odb.Odb.Odb.isReadOnly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -138,7 +141,7 @@ msgid "A Boolean specifying whether the output database was opened with read-onl
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Odb.OdbBase.OdbBase.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Odb.Odb.Odb.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -147,7 +150,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Odb.OdbBase.OdbBase.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Odb.Odb.Odb.filters>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -156,7 +159,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Odb.OdbBase.OdbBase.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Odb.Odb.Odb.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -165,7 +168,7 @@ msgid "An OdbAssembly object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`jobData <abaqus.Odb.OdbBase.OdbBase.jobData>`\\"
+msgid ":py:obj:`jobData <abaqus.Odb.Odb.Odb.jobData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -174,7 +177,7 @@ msgid "A JobData object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Odb.OdbBase.OdbBase.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Odb.Odb.Odb.parts>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -183,7 +186,7 @@ msgid "A repository of OdbPart objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Odb.OdbBase.OdbBase.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Odb.Odb.Odb.materials>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -192,7 +195,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Odb.OdbBase.OdbBase.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Odb.Odb.Odb.steps>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -201,7 +204,7 @@ msgid "A repository of OdbStep objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Odb.OdbBase.OdbBase.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Odb.Odb.Odb.sections>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -210,7 +213,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectionCategories <abaqus.Odb.OdbBase.OdbBase.sectionCategories>`\\"
+msgid ":py:obj:`sectionCategories <abaqus.Odb.Odb.Odb.sectionCategories>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -219,7 +222,7 @@ msgid "A repository of SectionCategory objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectorDefinition <abaqus.Odb.OdbBase.OdbBase.sectorDefinition>`\\"
+msgid ":py:obj:`sectorDefinition <abaqus.Odb.Odb.Odb.sectorDefinition>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -228,7 +231,7 @@ msgid "A SectorDefinition object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`userData <abaqus.Odb.OdbBase.OdbBase.userData>`\\"
+msgid ":py:obj:`userData <abaqus.Odb.Odb.Odb.userData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -237,7 +240,7 @@ msgid "A UserData object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Odb.OdbBase.OdbBase.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Odb.Odb.Odb.customData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -247,12 +250,292 @@ msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Odb.OdbBase.OdbBase.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Odb.Odb.Odb.profiles>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbBase.OdbBase.profiles:1
 msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Filter.FilterOdb.FilterOdb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Filter.FilterOdb.FilterOdb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Filter.FilterOdb.FilterOdb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Filter.FilterOdb.FilterOdb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Filter.FilterOdb.FilterOdb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Filter.FilterOdb.FilterOdb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Filter.FilterOdb.FilterOdb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Filter.FilterOdb.FilterOdb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Filter.FilterOdb.FilterOdb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Filter.FilterOdb.FilterOdb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Filter.FilterOdb.FilterOdb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Filter.FilterOdb.FilterOdb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Filter.FilterOdb.FilterOdb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Filter.FilterOdb.FilterOdb.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Material.MaterialOdb.MaterialOdb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Material.MaterialOdb.MaterialOdb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Material.MaterialOdb.MaterialOdb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Material.MaterialOdb.MaterialOdb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Material.MaterialOdb.MaterialOdb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Material.MaterialOdb.MaterialOdb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Material.MaterialOdb.MaterialOdb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Material.MaterialOdb.MaterialOdb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Material.MaterialOdb.MaterialOdb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Material.MaterialOdb.MaterialOdb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Material.MaterialOdb.MaterialOdb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Material.MaterialOdb.MaterialOdb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Material.MaterialOdb.MaterialOdb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Material.MaterialOdb.MaterialOdb.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`isReadOnly <abaqus.Odb.OdbBase.OdbBase.isReadOnly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Odb.OdbBase.OdbBase.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Odb.OdbBase.OdbBase.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Odb.OdbBase.OdbBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`jobData <abaqus.Odb.OdbBase.OdbBase.jobData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Odb.OdbBase.OdbBase.parts>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Odb.OdbBase.OdbBase.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Odb.OdbBase.OdbBase.steps>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Odb.OdbBase.OdbBase.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectionCategories <abaqus.Odb.OdbBase.OdbBase.sectionCategories>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`sectorDefinition <abaqus.Odb.OdbBase.OdbBase.sectorDefinition>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`userData <abaqus.Odb.OdbBase.OdbBase.userData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Odb.OdbBase.OdbBase.customData>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Odb.OdbBase.OdbBase.profiles>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:0
@@ -1055,12 +1338,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.SectionCategory:12
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory.__init__:12
+#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.Odb.SectionCategory.SectionCategory.name:1
 msgid "A String specifying the name of the category."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/Odb.py:docstring of abaqus.Odb.Odb.Odb.SectionCategory:14
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory.__init__:14
+#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.Odb.SectionCategory.SectionCategory.description:1
 msgid "A String specifying the description of the category."
 msgstr ""
@@ -2358,6 +2643,22 @@ msgstr ""
 msgid "Check `AnalyticSurfaceSegment on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticsurfacesegmentpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`type <abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment.type>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of AnalyticSurfaceSegment."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`data <abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment.data>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "A sequence of sequences of Floats specifying the coordinates of point/s representing the segment of the AnalyticSurface object."
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment.__init__>`\\ \\(type\\, data\\)"
 msgstr ""
@@ -2449,8 +2750,10 @@ msgstr ""
 msgid ":py:obj:`type <abaqus.Odb.FieldBulkData.FieldBulkData.type>`\\"
 msgstr ""
 
+#: ../../None:13:<autosummary>:1
 #: ../../None:14:<autosummary>:1
 #: ../../None:28:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "A SymbolicConstant specifying the output type."
 msgstr ""
 
@@ -2619,8 +2922,8 @@ msgstr ""
 msgid ":py:obj:`sectionPoints <abaqus.Odb.FieldLocation.FieldLocation.sectionPoints>`\\"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
 #: ../../None:4:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldLocation.FieldLocation.sectionPoints:1
 #: ../../docstring of abaqus.Odb.SectionCategory.SectionCategory.sectionPoints:1
 msgid "A SectionPointArray object."
@@ -2638,74 +2941,100 @@ msgstr ""
 msgid "Check `FieldOutput on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`dim <abaqus.Odb.FieldOutput.FieldOutput.dim>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.dim:1
 msgid "An Int specifying the dimension of vector or the first dimension (number of rows) of matrix."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`dim2 <abaqus.Odb.FieldOutput.FieldOutput.dim2>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.dim2:1
 msgid "An Int specifying the second dimension (number of columns) of matrix."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`isComplex <abaqus.Odb.FieldOutput.FieldOutput.isComplex>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.isComplex:1
 msgid "A Boolean specifying whether the data are complex."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`locations <abaqus.Odb.FieldOutput.FieldOutput.locations>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.locations:1
 msgid "A FieldLocationArray object."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`values <abaqus.Odb.FieldOutput.FieldOutput.values>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.values:1
 msgid "A FieldValueArray object specifying the order of the objects in the array is determined by the Abaqus Scripting Interface; see the **data** argument to the addData method for a description of the order."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`componentLabels <abaqus.Odb.FieldOutput.FieldOutput.componentLabels>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "A sequence of Strings specifying the labels for each component of the value."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`validInvariants <abaqus.Odb.FieldOutput.FieldOutput.validInvariants>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
-#: ../../None:5:<autosummary>:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "A sequence of SymbolicConstants specifying which invariants should be calculated for this field."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ":py:obj:`isEngineeringTensor <abaqus.Odb.FieldOutput.FieldOutput.isEngineeringTensor>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid "A Boolean specifying whether the field is an engineering tensor or not."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.FieldOutput.FieldOutput.name>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:12
+#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:9
+#: ../../None:13:<autosummary>:1
+#: ../../None:8:<autosummary>:1
+#: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.name:1
+#: ../../docstring of abaqus.Odb.HistoryOutput.HistoryOutput.name:1
+msgid "A String specifying the output variable name."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Odb.FieldOutput.FieldOutput.description>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.description:1
+msgid ") should not be used as a part of the field output description."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`type <abaqus.Odb.FieldOutput.FieldOutput.type>`\\"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -2768,10 +3097,6 @@ msgstr ""
 msgid "A sequence of Strings specifying the labels for each component of the value. The length of the sequence must match the type. If **type** = TENSOR, the default value is **name** with the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an empty sequence."
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.description:1
-msgid ") should not be used as a part of the field output description."
-msgstr ""
-
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.description:0
 msgid "type"
 msgstr ""
@@ -2802,13 +3127,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.isEngineeringTensor:1
 msgid "A Boolean specifying whether the field is an engineering tensor or not. Setting isEngineeringTensor to true makes a tensor field behave as a strain like quantity where the off-diagonal components of tensor are halved for invariants computation. This parameter applies only to tensor field outputs. The default value is OFF."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:12
-#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:9
-#: ../../docstring of abaqus.Odb.FieldOutput.FieldOutput.name:1
-#: ../../docstring of abaqus.Odb.HistoryOutput.HistoryOutput.name:1
-msgid "A String specifying the output variable name."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/FieldOutput.py:docstring of abaqus.Odb.FieldOutput.FieldOutput.setComponentLabels:4
@@ -3037,7 +3355,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:17
 #: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint.__init__:17
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 #: ../../None:28:<autosummary>:1
 #: ../../docstring of abaqus.Odb.FieldValue.FieldValue.sectionPoint:1
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.sectionPoint:1
@@ -3185,24 +3503,43 @@ msgstr ""
 msgid "Check `HistoryOutput on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`data <abaqus.Odb.HistoryOutput.HistoryOutput.data>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where **frameValue** is either time, frequency, or mode and **value** is the value of the specified variable at **frameValue**."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`conjugateData <abaqus.Odb.HistoryOutput.HistoryOutput.conjugateData>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "A tuple of pairs of Floats specifying the imaginary portion of a specified complex variable at each frame value (time, frequency, or mode)."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`validInvariants <abaqus.Odb.HistoryOutput.HistoryOutput.validInvariants>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.HistoryOutput.HistoryOutput.name>`\\"
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Odb.HistoryOutput.HistoryOutput.description>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:14
+#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:11
+#: ../../None:8:<autosummary>:1
+#: ../../docstring of abaqus.Odb.HistoryOutput.HistoryOutput.description:1
+msgid "A String specifying the output variable."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`type <abaqus.Odb.HistoryOutput.HistoryOutput.type>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -3222,12 +3559,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:9
 msgid "Check `HistoryOutput.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputpyc.htm?contextscope=all#simaker-historyoutput__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:14
-#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:11
-#: ../../docstring of abaqus.Odb.HistoryOutput.HistoryOutput.description:1
-msgid "A String specifying the output variable."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:16
@@ -3268,68 +3599,77 @@ msgstr ""
 msgid "Check `HistoryPoint on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historypointpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`ipNumber <abaqus.Odb.HistoryPoint.HistoryPoint.ipNumber>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid "An Int specifying the integration point."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`face <abaqus.Odb.HistoryPoint.HistoryPoint.face>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid "A SymbolicConstant specifying the element face."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`position <abaqus.Odb.HistoryPoint.HistoryPoint.position>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid "A SymbolicConstant specifying the result position of the history point."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`element <abaqus.Odb.HistoryPoint.HistoryPoint.element>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.element:1
 msgid "An OdbMeshElement object specifying the element for which the data are to be collected."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`sectionPoint <abaqus.Odb.HistoryPoint.HistoryPoint.sectionPoint>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`region <abaqus.Odb.HistoryPoint.HistoryPoint.region>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.region:1
 msgid "An OdbSet object specifying the region for which the data are to be collected."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`assembly <abaqus.Odb.HistoryPoint.HistoryPoint.assembly>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.assembly:1
 msgid "An OdbAssembly object specifying the assembly for which the data are to be collected."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`instance <abaqus.Odb.HistoryPoint.HistoryPoint.instance>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.instance:1
 msgid "An OdbInstance object specifying the instance for which the data are to be collected."
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+msgid ":py:obj:`node <abaqus.Odb.HistoryPoint.HistoryPoint.node>`\\"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1
+#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.node:1
+msgid "An OdbMeshNode object specifying the node for which the data are to be collected."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3396,10 +3736,6 @@ msgstr ""
 msgid "An Int specifying the integration point. This argument is used to define a history output position of INTEGRATION_POINT or ELEMENT_FACE_INTEGRATION_POINT. The default value is 0."
 msgstr ""
 
-#: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.node:1
-msgid "An OdbMeshNode object specifying the node for which the data are to be collected."
-msgstr ""
-
 #: ../../docstring of abaqus.Odb.HistoryPoint.HistoryPoint.position:1
 msgid "A SymbolicConstant specifying the result position of the history point. Possible values are:"
 msgstr ""
@@ -3433,29 +3769,62 @@ msgstr ""
 msgid "Check `HistoryRegion on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyregionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`position <abaqus.Odb.HistoryRegion.HistoryRegion.position>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "A SymbolicConstant specifying the position of the history output."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`historyOutputs <abaqus.Odb.HistoryRegion.HistoryRegion.historyOutputs>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 #: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.historyOutputs:1
 msgid "A repository of HistoryOutput objects."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ":py:obj:`loadCase <abaqus.Odb.HistoryRegion.HistoryRegion.loadCase>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid "None or an OdbLoadCase object specifying the load case associated with the HistoryRegion object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.HistoryRegion.HistoryRegion.name>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:12
+#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:12
+#: ../../None:8:<autosummary>:1
+#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.name:1
+msgid "A String specifying the name of the HistoryRegion object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Odb.HistoryRegion.HistoryRegion.description>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:14
+#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:14
+#: ../../None:8:<autosummary>:1
+#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.description:1
+msgid "A String specifying the description of the HistoryRegion object."
+msgstr ""
+
+#: ../../None:8:<autosummary>:1
+msgid ":py:obj:`point <abaqus.Odb.HistoryRegion.HistoryRegion.point>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:16
+#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:16
+#: ../../None:8:<autosummary>:1
+#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.point:1
+msgid "A HistoryPoint object specifying the point to which the history data refer."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -3478,24 +3847,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:9
 msgid "Check `HistoryRegion.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyregionpyc.htm?contextscope=all#simaker-historyregion__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:12
-#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:12
-#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.name:1
-msgid "A String specifying the name of the HistoryRegion object."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:14
-#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:14
-#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.description:1
-msgid "A String specifying the description of the HistoryRegion object."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:16
-#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.HistoryRegion:16
-#: ../../docstring of abaqus.Odb.HistoryRegion.HistoryRegion.point:1
-msgid "A HistoryPoint object specifying the point to which the history data refer."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/HistoryRegion.py:docstring of abaqus.Odb.HistoryRegion.HistoryRegion.__init__:18
@@ -3614,7 +3965,7 @@ msgid "Bases: :py:class:`~abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase`"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`instances <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.instances>`\\"
+msgid ":py:obj:`instances <abaqus.Odb.OdbAssembly.OdbAssembly.instances>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3623,7 +3974,7 @@ msgid "A repository of OdbInstance objects."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`nodeSets <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.nodeSets>`\\"
+msgid ":py:obj:`nodeSets <abaqus.Odb.OdbAssembly.OdbAssembly.nodeSets>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3635,7 +3986,7 @@ msgid "A repository of OdbSet objects specifying node sets."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`elementSets <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.elementSets>`\\"
+msgid ":py:obj:`elementSets <abaqus.Odb.OdbAssembly.OdbAssembly.elementSets>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3647,7 +3998,7 @@ msgid "A repository of OdbSet objects specifying element sets."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Odb.OdbAssembly.OdbAssembly.surfaces>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3659,7 +4010,7 @@ msgid "A repository of OdbSet objects specifying surfaces."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Odb.OdbAssembly.OdbAssembly.nodes>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3671,7 +4022,7 @@ msgid "An OdbMeshNodeArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Odb.OdbAssembly.OdbAssembly.elements>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3683,7 +4034,7 @@ msgid "An OdbMeshElementArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`datumCsyses <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.datumCsyses>`\\"
+msgid ":py:obj:`datumCsyses <abaqus.Odb.OdbAssembly.OdbAssembly.datumCsyses>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3692,7 +4043,7 @@ msgid "A repository of OdbDatumCsys objects."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`sectionAssignments <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.sectionAssignments>`\\"
+msgid ":py:obj:`sectionAssignments <abaqus.Odb.OdbAssembly.OdbAssembly.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3704,7 +4055,7 @@ msgid "A SectionAssignmentArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`rigidBodies <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.rigidBodies>`\\"
+msgid ":py:obj:`rigidBodies <abaqus.Odb.OdbAssembly.OdbAssembly.rigidBodies>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3716,7 +4067,7 @@ msgid "An OdbRigidBodyArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`pretensionSections <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.pretensionSections>`\\"
+msgid ":py:obj:`pretensionSections <abaqus.Odb.OdbAssembly.OdbAssembly.pretensionSections>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -3725,12 +4076,56 @@ msgid "An OdbPretensionSectionArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`connectorOrientations <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.connectorOrientations>`\\"
+msgid ":py:obj:`connectorOrientations <abaqus.Odb.OdbAssembly.OdbAssembly.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.connectorOrientations:1
 msgid "A ConnectorOrientationArray object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`instances <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.instances>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nodeSets <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.nodeSets>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`elementSets <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.elementSets>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.surfaces>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.nodes>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.elements>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`datumCsyses <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.datumCsyses>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`sectionAssignments <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`rigidBodies <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.rigidBodies>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`pretensionSections <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.pretensionSections>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`connectorOrientations <abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4081,6 +4476,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:13
 #: ../../../../src/abaqus/Odb/OdbRigidBody.py:docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__:13
+#: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.referenceNode:1
 msgid "An OdbSet object specifying the reference node set associated with the rigid body."
 msgstr ""
@@ -4099,28 +4495,28 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:23
 #: ../../../../src/abaqus/Odb/OdbRigidBody.py:docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__:23
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.elements:1
 msgid "An OdbSet object specifying the element set whose motion is governed by the motion of rigid body reference node."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:26
 #: ../../../../src/abaqus/Odb/OdbRigidBody.py:docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__:26
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.tieNodes:1
 msgid "An OdbSet object specifying the node set which have both translational and rotational degrees of freedom associated with the rigid body."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:29
 #: ../../../../src/abaqus/Odb/OdbRigidBody.py:docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__:29
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.pinNodes:1
 msgid "An OdbSet object specifying the node set which have only translational degrees of freedom associated with the rigid body."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbAssembly.py:docstring of abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:32
 #: ../../../../src/abaqus/Odb/OdbRigidBody.py:docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.__init__:32
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbRigidBody.OdbRigidBody.analyticSurface:1
 msgid "An AnalyticSurface object specifying the analytic surface whose motion is governed by the motion of rigid body reference node."
 msgstr ""
@@ -4519,71 +4915,87 @@ msgstr ""
 msgid "Check `OdbFrame on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbframepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`cyclicModeNumber <abaqus.Odb.OdbFrame.OdbFrame.cyclicModeNumber>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "An Int specifying the cyclic mode number associated with the data stored on this frame."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`domain <abaqus.Odb.OdbFrame.OdbFrame.domain>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "A SymbolicConstant specifying the domain of the step of which the frame is a member."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`frequency <abaqus.Odb.OdbFrame.OdbFrame.frequency>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "A Float specifying the frequency."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`mode <abaqus.Odb.OdbFrame.OdbFrame.mode>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "An Int specifying the eigenmode."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`associatedFrame <abaqus.Odb.OdbFrame.OdbFrame.associatedFrame>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbFrame.OdbFrame.associatedFrame:1
 msgid "An OdbFrame object specifying the real or imaginary portion of the data corresponding to this cyclic symmetry mode."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`fieldOutputs <abaqus.Odb.OdbFrame.OdbFrame.fieldOutputs>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbFrame.OdbFrame.fieldOutputs:1
 msgid "A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository is a String representing an output variable."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`loadCase <abaqus.Odb.OdbFrame.OdbFrame.loadCase>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbFrame.OdbFrame.loadCase:1
 msgid "An OdbLoadCase object specifying the load case for the frame."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`description <abaqus.Odb.OdbFrame.OdbFrame.description>`\\"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "A String specifying the contents of the frame."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`incrementNumber <abaqus.Odb.OdbFrame.OdbFrame.incrementNumber>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "An Int specifying the frame increment number within the step."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`frameValue <abaqus.Odb.OdbFrame.OdbFrame.frameValue>`\\"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid "A Float specifying the value in units determined by the **domain** member of the Step object."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -4636,6 +5048,106 @@ msgid "Bases: :py:class:`~abaqus.Odb.OdbInstanceBase.OdbInstanceBase`"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.OdbInstance.OdbInstance.name>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`type <abaqus.Odb.OdbInstance.OdbInstance.type>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of the Part object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`embeddedSpace <abaqus.Odb.OdbInstance.OdbInstance.embeddedSpace>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "A SymbolicConstant specifying the dimensionality of the Part object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`resultState <abaqus.Odb.OdbInstance.OdbInstance.resultState>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "A SymbolicConstant specifying the state of the Instance as modified by the analysis."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Odb.OdbInstance.OdbInstance.nodes>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Odb.OdbInstance.OdbInstance.elements>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`nodeSets <abaqus.Odb.OdbInstance.OdbInstance.nodeSets>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`elementSets <abaqus.Odb.OdbInstance.OdbInstance.elementSets>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Odb.OdbInstance.OdbInstance.surfaces>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`sectionAssignments <abaqus.Odb.OdbInstance.OdbInstance.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`rigidBodies <abaqus.Odb.OdbInstance.OdbInstance.rigidBodies>`\\"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`beamOrientations <abaqus.Odb.OdbInstance.OdbInstance.beamOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../None:17:<autosummary>:1
+#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.beamOrientations:1
+#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.beamOrientations:1
+msgid "A BeamOrientationArray object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`materialOrientations <abaqus.Odb.OdbInstance.OdbInstance.materialOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../None:17:<autosummary>:1
+#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.materialOrientations:1
+#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.materialOrientations:1
+msgid "A MaterialOrientationArray object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`rebarOrientations <abaqus.Odb.OdbInstance.OdbInstance.rebarOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../None:17:<autosummary>:1
+#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.rebarOrientations:1
+#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.rebarOrientations:1
+msgid "A RebarOrientationArray object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`analyticSurface <abaqus.Odb.OdbInstance.OdbInstance.analyticSurface>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: ../../None:17:<autosummary>:1
+#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.analyticSurface:1
+#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.analyticSurface:1
+msgid "An AnalyticSurface object specifying analytic Surface defined on the instance."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.name>`\\"
 msgstr ""
 
@@ -4644,23 +5156,11 @@ msgid ":py:obj:`type <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.type>`\\"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of the Part object."
-msgstr ""
-
-#: ../../None:17:<autosummary>:1
 msgid ":py:obj:`embeddedSpace <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.embeddedSpace>`\\"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-msgid "A SymbolicConstant specifying the dimensionality of the Part object."
-msgstr ""
-
-#: ../../None:17:<autosummary>:1
 msgid ":py:obj:`resultState <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.resultState>`\\"
-msgstr ""
-
-#: ../../None:17:<autosummary>:1
-msgid "A SymbolicConstant specifying the state of the Instance as modified by the analysis."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
@@ -4695,44 +5195,16 @@ msgstr ""
 msgid ":py:obj:`beamOrientations <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.beamOrientations>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
-#: ../../None:17:<autosummary>:1
-#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.beamOrientations:1
-#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.beamOrientations:1
-msgid "A BeamOrientationArray object."
-msgstr ""
-
 #: ../../None:17:<autosummary>:1
 msgid ":py:obj:`materialOrientations <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.materialOrientations>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-#: ../../None:17:<autosummary>:1
-#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.materialOrientations:1
-#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.materialOrientations:1
-msgid "A MaterialOrientationArray object."
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
 msgid ":py:obj:`rebarOrientations <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.rebarOrientations>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1
-#: ../../None:17:<autosummary>:1
-#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.rebarOrientations:1
-#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.rebarOrientations:1
-msgid "A RebarOrientationArray object."
-msgstr ""
-
 #: ../../None:17:<autosummary>:1
 msgid ":py:obj:`analyticSurface <abaqus.Odb.OdbInstanceBase.OdbInstanceBase.analyticSurface>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-#: ../../None:17:<autosummary>:1
-#: ../../docstring of abaqus.Odb.OdbInstanceBase.OdbInstanceBase.analyticSurface:1
-#: ../../docstring of abaqus.Odb.OdbPartBase.OdbPartBase.analyticSurface:1
-msgid "An AnalyticSurface object specifying analytic Surface defined on the instance."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -5063,6 +5535,17 @@ msgid "Check `OdbLoadCase on help.3ds.com/2021 <https://help.3ds.com/2021/Englis
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.OdbLoadCase.OdbLoadCase.name>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbLoadCase.py:docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.__init__:12
+#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.LoadCase:9
+#: ../../None:3:<autosummary>:1
+#: ../../docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.name:1
+msgid "A String specifying the name of the OdbLoadCase object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Odb.OdbLoadCase.OdbLoadCase.__init__>`\\ \\(name\\)"
 msgstr ""
 
@@ -5075,12 +5558,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbLoadCase.py:docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.__init__:9
 msgid "Check `OdbLoadCase.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbloadcasepyc.htm?contextscope=all#simaker-odbloadcase__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/OdbLoadCase.py:docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.__init__:12
-#: ../../../../src/abaqus/Odb/OdbStep.py:docstring of abaqus.Odb.OdbStep.OdbStep.LoadCase:9
-#: ../../docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.name:1
-msgid "A String specifying the name of the OdbLoadCase object."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbLoadCase.py:docstring of abaqus.Odb.OdbLoadCase.OdbLoadCase.__init__:14
@@ -5215,6 +5692,50 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbPart.py:docstring of abaqus.Odb.OdbPart.OdbPart:1
 msgid "Bases: :py:class:`~abaqus.Odb.OdbPartBase.OdbPartBase`"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Odb.OdbPart.OdbPart.nodes>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Odb.OdbPart.OdbPart.elements>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nodeSets <abaqus.Odb.OdbPart.OdbPart.nodeSets>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`elementSets <abaqus.Odb.OdbPart.OdbPart.elementSets>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Odb.OdbPart.OdbPart.surfaces>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`sectionAssignments <abaqus.Odb.OdbPart.OdbPart.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`beamOrientations <abaqus.Odb.OdbPart.OdbPart.beamOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`materialOrientations <abaqus.Odb.OdbPart.OdbPart.materialOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`rebarOrientations <abaqus.Odb.OdbPart.OdbPart.rebarOrientations>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`rigidBodies <abaqus.Odb.OdbPart.OdbPart.rigidBodies>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`analyticSurface <abaqus.Odb.OdbPart.OdbPart.analyticSurface>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -5440,36 +5961,40 @@ msgstr ""
 msgid "Check `OdbRigidBody on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbrigidbodypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`position <abaqus.Odb.OdbRigidBody.OdbRigidBody.position>`\\"
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid "A SymbolicConstant specifying the specific location of the OdbRigidBody reference node relative to the rest of the rigid body."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`isothermal <abaqus.Odb.OdbRigidBody.OdbRigidBody.isothermal>`\\"
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid "A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or be isothermal."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`elements <abaqus.Odb.OdbRigidBody.OdbRigidBody.elements>`\\"
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`tieNodes <abaqus.Odb.OdbRigidBody.OdbRigidBody.tieNodes>`\\"
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`pinNodes <abaqus.Odb.OdbRigidBody.OdbRigidBody.pinNodes>`\\"
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`analyticSurface <abaqus.Odb.OdbRigidBody.OdbRigidBody.analyticSurface>`\\"
+msgstr ""
+
+#: ../../None:9:<autosummary>:1
+msgid ":py:obj:`referenceNode <abaqus.Odb.OdbRigidBody.OdbRigidBody.referenceNode>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -5573,7 +6098,7 @@ msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgid ":py:obj:`attachedToGui <abaqus.Odb.OdbSession.OdbSession.attachedToGui>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5581,7 +6106,7 @@ msgid "A Boolean specifying whether an Abaqus interactive session is running."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgid ":py:obj:`replayInProgress <abaqus.Odb.OdbSession.OdbSession.replayInProgress>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5589,7 +6114,7 @@ msgid "A Boolean specifying whether Abaqus is executing a replay file."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Odb.OdbSession.OdbSession.kernelMemoryFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5597,7 +6122,7 @@ msgid "A Float specifying the memory usage value for the Abaqus/CAE kernel proce
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Odb.OdbSession.OdbSession.kernelMemoryMaxFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5605,7 +6130,7 @@ msgid "A Float specifying the maximum value for the memory usage for the Abaqus/
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Odb.OdbSession.OdbSession.kernelMemoryLimit>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5613,7 +6138,7 @@ msgid "A Float specifying the limit for the memory use for the Abaqus/CAE kernel
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgid ":py:obj:`colors <abaqus.Odb.OdbSession.OdbSession.colors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5621,7 +6146,7 @@ msgid "A repository of Color objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgid ":py:obj:`journalOptions <abaqus.Odb.OdbSession.OdbSession.journalOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5629,7 +6154,7 @@ msgid "A JournalOptions object specifying how to record selection of geometry in
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgid ":py:obj:`memoryReductionOptions <abaqus.Odb.OdbSession.OdbSession.memoryReductionOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5637,7 +6162,7 @@ msgid "A MemoryReductionOptions object specifying options for running in reduced
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgid ":py:obj:`nodeQuery <abaqus.Odb.OdbSession.OdbSession.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5645,7 +6170,7 @@ msgid "A NodeQuery object specifying nodes and their coordinates in a path."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgid ":py:obj:`sketcherOptions <abaqus.Odb.OdbSession.OdbSession.sketcherOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5653,7 +6178,7 @@ msgid "A ConstrainedSketcherOptions object specifying common options for all ske
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgid ":py:obj:`viewerOptions <abaqus.Odb.OdbSession.OdbSession.viewerOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5661,7 +6186,7 @@ msgid "A ViewerOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgid ":py:obj:`animationOptions <abaqus.Odb.OdbSession.OdbSession.animationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5669,7 +6194,7 @@ msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgid ":py:obj:`aviOptions <abaqus.Odb.OdbSession.OdbSession.aviOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5677,7 +6202,7 @@ msgid "An AVIOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgid ":py:obj:`imageAnimationOptions <abaqus.Odb.OdbSession.OdbSession.imageAnimationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5685,7 +6210,7 @@ msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgid ":py:obj:`imageAnimation <abaqus.Odb.OdbSession.OdbSession.imageAnimation>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5693,7 +6218,7 @@ msgid "An ImageAnimation object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgid ":py:obj:`quickTimeOptions <abaqus.Odb.OdbSession.OdbSession.quickTimeOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5701,11 +6226,477 @@ msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgid ":py:obj:`viewports <abaqus.Odb.OdbSession.OdbSession.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid "A repository of Viewport objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Odb.OdbSession.OdbSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFieldReportOptions <abaqus.Odb.OdbSession.OdbSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A FieldReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Odb.OdbSession.OdbSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A FreeBodyReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`fieldReportOptions <abaqus.Odb.OdbSession.OdbSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodyReportOptions <abaqus.Odb.OdbSession.OdbSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Odb.OdbSession.OdbSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Odb.OdbSession.OdbSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of ScratchOdb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultOdbDisplay <abaqus.Odb.OdbSession.OdbSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Odb.OdbSession.OdbSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultPlot object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultChartOptions <abaqus.Odb.OdbSession.OdbSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Odb.OdbSession.OdbSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of OdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Odb.OdbSession.OdbSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Odb.OdbSession.OdbSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Path objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Odb.OdbSession.OdbSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Odb.OdbSession.OdbSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Stream objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Odb.OdbSession.OdbSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentProbeValues <abaqus.Odb.OdbSession.OdbSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeOptions <abaqus.Odb.OdbSession.OdbSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Odb.OdbSession.OdbSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Odb.OdbSession.OdbSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeReport <abaqus.Odb.OdbSession.OdbSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`selectedProbeValues <abaqus.Odb.OdbSession.OdbSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Odb.OdbSession.OdbSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PrintOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Odb.OdbSession.OdbSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pageSetupOptions <abaqus.Odb.OdbSession.OdbSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PageSetupOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Odb.OdbSession.OdbSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Odb.OdbSession.OdbSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Odb.OdbSession.OdbSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Odb.OdbSession.OdbSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A TiffOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Odb.OdbSession.OdbSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used for color coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Odb.OdbSession.OdbSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Odb.OdbSession.OdbSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.xyDataObjects:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Odb.OdbSession.OdbSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Odb.OdbSession.OdbSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Odb.OdbSession.OdbSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultXYReportOptions <abaqus.Odb.OdbSession.OdbSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An XYReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyReportOptions <abaqus.Odb.OdbSession.OdbSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Odb.OdbSession.OdbSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`networkDatabaseConnectors <abaqus.Odb.OdbSession.OdbSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of NetworkDatabaseConnector objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Odb.OdbSession.OdbSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Odb.OdbSession.OdbSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultGraphicsOptions <abaqus.Odb.OdbSession.OdbSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsOptions <abaqus.Odb.OdbSession.OdbSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Odb.OdbSession.OdbSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Odb.OdbSession.OdbSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Queue objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentViewportName <abaqus.Odb.OdbSession.OdbSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Odb.OdbSession.OdbSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Odb.OdbSession.OdbSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Odb.OdbSession.OdbSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Movie objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultLightOptions <abaqus.Odb.OdbSession.OdbSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Odb.OdbSession.OdbSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DrawingArea object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultMesherOptions <abaqus.Odb.OdbSession.OdbSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Odb.OdbSession.OdbSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Drawing objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5717,15 +6708,7 @@ msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBas
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A FieldReportOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A FreeBodyReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5741,15 +6724,7 @@ msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Odb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`scratchOdbs <abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of ScratchOdb objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5757,15 +6732,7 @@ msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaul
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A DefaultOdbDisplay object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5773,15 +6740,7 @@ msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A DefaultChartOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of OdbData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5789,15 +6748,7 @@ msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of MdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Path objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5805,15 +6756,7 @@ msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of FreeBody objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Stream objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5821,23 +6764,11 @@ msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Spectrum objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A CurrentProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5849,10 +6780,6 @@ msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A ProbeReport object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeReport <abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
 msgstr ""
 
@@ -5861,15 +6788,7 @@ msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.sele
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A SelectedProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PrintOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5877,15 +6796,7 @@ msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An EpsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PageSetupOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5893,15 +6804,7 @@ msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A PngOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5909,15 +6812,7 @@ msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A SvgOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A TiffOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5925,25 +6820,11 @@ msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used for color coding."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyDataObjects <abaqus.Session.SessionBase.SessionBase.xyDataObjects>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-#: ../../None:72:<autosummary>:1
-#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.xyDataObjects:1
-msgid "A repository of XYData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5951,15 +6832,7 @@ msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of XYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYPlot objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5967,15 +6840,7 @@ msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Chart objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -5987,15 +6852,7 @@ msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of View objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`networkDatabaseConnectors <abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of NetworkDatabaseConnector objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6003,23 +6860,11 @@ msgid ":py:obj:`displayGroups <abaqus.Session.SessionBase.SessionBase.displayGro
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of DisplayGroup objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A GraphicsInfo object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6031,15 +6876,7 @@ msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.Ses
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Queue objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6047,15 +6884,7 @@ msgid ":py:obj:`currentViewportName <abaqus.Session.SessionBase.SessionBase.curr
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A String specifying the name of the current viewport."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`sessionState <abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A Dictionary object specifying the viewports and their associated models."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6063,15 +6892,7 @@ msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A repository of Image objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Movie objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6079,15 +6900,7 @@ msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A LightOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -6095,15 +6908,7 @@ msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.def
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Drawing objects."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -6477,7 +7282,7 @@ msgid "Bases: :py:class:`~abaqus.Odb.OdbStepBase.OdbStepBase`"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`number <abaqus.Odb.OdbStepBase.OdbStepBase.number>`\\"
+msgid ":py:obj:`number <abaqus.Odb.OdbStep.OdbStep.number>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6486,7 +7291,7 @@ msgid "An Int specifying the step number."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`nlgeom <abaqus.Odb.OdbStepBase.OdbStepBase.nlgeom>`\\"
+msgid ":py:obj:`nlgeom <abaqus.Odb.OdbStep.OdbStep.nlgeom>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6495,7 +7300,7 @@ msgid "A Boolean specifying whether geometric nonlinearity can occur in this ste
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`mass <abaqus.Odb.OdbStepBase.OdbStepBase.mass>`\\"
+msgid ":py:obj:`mass <abaqus.Odb.OdbStep.OdbStep.mass>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6503,7 +7308,7 @@ msgid "A Float specifying the current value of the mass of the model."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`acousticMass <abaqus.Odb.OdbStepBase.OdbStepBase.acousticMass>`\\"
+msgid ":py:obj:`acousticMass <abaqus.Odb.OdbStep.OdbStep.acousticMass>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6512,7 +7317,7 @@ msgid "A Float specifying the current value of the mass of the acoustic media of
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`frames <abaqus.Odb.OdbStepBase.OdbStepBase.frames>`\\"
+msgid ":py:obj:`frames <abaqus.Odb.OdbStep.OdbStep.frames>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6521,7 +7326,7 @@ msgid "An OdbFrameArray object."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`historyRegions <abaqus.Odb.OdbStepBase.OdbStepBase.historyRegions>`\\"
+msgid ":py:obj:`historyRegions <abaqus.Odb.OdbStep.OdbStep.historyRegions>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6530,7 +7335,7 @@ msgid "A repository of HistoryRegion objects."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`loadCases <abaqus.Odb.OdbStepBase.OdbStepBase.loadCases>`\\"
+msgid ":py:obj:`loadCases <abaqus.Odb.OdbStep.OdbStep.loadCases>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6539,7 +7344,7 @@ msgid "A repository of OdbLoadCase objects."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`massCenter <abaqus.Odb.OdbStepBase.OdbStepBase.massCenter>`\\"
+msgid ":py:obj:`massCenter <abaqus.Odb.OdbStep.OdbStep.massCenter>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6548,7 +7353,7 @@ msgid "A tuple of Floats specifying the coordinates of the center of mass."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`inertiaAboutCenter <abaqus.Odb.OdbStepBase.OdbStepBase.inertiaAboutCenter>`\\"
+msgid ":py:obj:`inertiaAboutCenter <abaqus.Odb.OdbStep.OdbStep.inertiaAboutCenter>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6556,7 +7361,7 @@ msgid "A tuple of Floats specifying the moments and products of inertia about th
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`inertiaAboutOrigin <abaqus.Odb.OdbStepBase.OdbStepBase.inertiaAboutOrigin>`\\"
+msgid ":py:obj:`inertiaAboutOrigin <abaqus.Odb.OdbStep.OdbStep.inertiaAboutOrigin>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -6564,12 +7369,56 @@ msgid "A tuple of Floats specifying the moments and products of inertia about th
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`acousticMassCenter <abaqus.Odb.OdbStepBase.OdbStepBase.acousticMassCenter>`\\"
+msgid ":py:obj:`acousticMassCenter <abaqus.Odb.OdbStep.OdbStep.acousticMassCenter>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 #: ../../docstring of abaqus.Odb.OdbStepBase.OdbStepBase.acousticMassCenter:1
 msgid "A tuple of Floats specifying the coordinates of the center of mass of the acoustic media."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`number <abaqus.Odb.OdbStepBase.OdbStepBase.number>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`nlgeom <abaqus.Odb.OdbStepBase.OdbStepBase.nlgeom>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`mass <abaqus.Odb.OdbStepBase.OdbStepBase.mass>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`acousticMass <abaqus.Odb.OdbStepBase.OdbStepBase.acousticMass>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`frames <abaqus.Odb.OdbStepBase.OdbStepBase.frames>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`historyRegions <abaqus.Odb.OdbStepBase.OdbStepBase.historyRegions>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`loadCases <abaqus.Odb.OdbStepBase.OdbStepBase.loadCases>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`massCenter <abaqus.Odb.OdbStepBase.OdbStepBase.massCenter>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`inertiaAboutCenter <abaqus.Odb.OdbStepBase.OdbStepBase.inertiaAboutCenter>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`inertiaAboutOrigin <abaqus.Odb.OdbStepBase.OdbStepBase.inertiaAboutOrigin>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ":py:obj:`acousticMassCenter <abaqus.Odb.OdbStepBase.OdbStepBase.acousticMassCenter>`\\"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -6734,8 +7583,16 @@ msgstr ""
 msgid "The SectionCategory object is used to group regions of the model with like sections. Section definitions that contain the same number of section points or integration points are grouped together. To access data for a particular section definition, use the individual Section objects in the output database. For more information, see Beam Section profile commands and Section commands."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ":py:obj:`sectionPoints <abaqus.Odb.SectionCategory.SectionCategory.sectionPoints>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.SectionCategory.SectionCategory.name>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Odb.SectionCategory.SectionCategory.description>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -6766,6 +7623,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/SectionCategory.py:docstring of abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:15
 #: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint.__init__:15
+#: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.Odb.SectionPoint.SectionPoint.description:1
 msgid "A String specifying the description of the section point."
 msgstr ""
@@ -6781,6 +7639,18 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/SectionPoint.py:docstring of abaqus.Odb.SectionPoint.SectionPoint:1
 msgid "The SectionPoint object describes the location of a section point within a section category."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`number <abaqus.Odb.SectionPoint.SectionPoint.number>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "An Int specifying the number of the section point."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Odb.SectionPoint.SectionPoint.description>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -6822,11 +7692,11 @@ msgid "Bases: :py:class:`~abaqus.Annotation.AnimationUserData.AnimationUserData`
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Odb.UserDataBase.UserDataBase.name>`\\"
+msgid ":py:obj:`name <abaqus.Odb.UserData.UserData.name>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`sourceDescription <abaqus.Odb.UserDataBase.UserDataBase.sourceDescription>`\\"
+msgid ":py:obj:`sourceDescription <abaqus.Odb.UserData.UserData.sourceDescription>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6834,7 +7704,7 @@ msgid "A String specifying the source of the **X - Y** data (e.g., “Entered fr
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`contentDescription <abaqus.Odb.UserDataBase.UserDataBase.contentDescription>`\\"
+msgid ":py:obj:`contentDescription <abaqus.Odb.UserData.UserData.contentDescription>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6842,7 +7712,7 @@ msgid "A String specifying the content of the **X - Y** data (e.g., “field 1 v
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`positionDescription <abaqus.Odb.UserDataBase.UserDataBase.positionDescription>`\\"
+msgid ":py:obj:`positionDescription <abaqus.Odb.UserData.UserData.positionDescription>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6850,7 +7720,7 @@ msgid "A String specifying additional information about the **X - Y** data (e.g.
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`xValuesLabel <abaqus.Odb.UserDataBase.UserDataBase.xValuesLabel>`\\"
+msgid ":py:obj:`xValuesLabel <abaqus.Odb.UserData.UserData.xValuesLabel>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6858,7 +7728,7 @@ msgid "A String specifying the label for the X-values."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`yValuesLabel <abaqus.Odb.UserDataBase.UserDataBase.yValuesLabel>`\\"
+msgid ":py:obj:`yValuesLabel <abaqus.Odb.UserData.UserData.yValuesLabel>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6866,7 +7736,7 @@ msgid "A String specifying the label for the Y-values."
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`axis1QuantityType <abaqus.Odb.UserDataBase.UserDataBase.axis1QuantityType>`\\"
+msgid ":py:obj:`axis1QuantityType <abaqus.Odb.UserData.UserData.axis1QuantityType>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/UserDataBase.py:docstring of abaqus.Odb.UserDataBase.UserDataBase.XYData:34
@@ -6876,7 +7746,7 @@ msgid "A QuantityType object specifying the QuantityType object associated to th
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`axis2QuantityType <abaqus.Odb.UserDataBase.UserDataBase.axis2QuantityType>`\\"
+msgid ":py:obj:`axis2QuantityType <abaqus.Odb.UserData.UserData.axis2QuantityType>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/UserDataBase.py:docstring of abaqus.Odb.UserDataBase.UserDataBase.XYData:37
@@ -6886,11 +7756,117 @@ msgid "A QuantityType object specifying the QuantityType object associated to th
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`legendLabel <abaqus.Odb.UserDataBase.UserDataBase.legendLabel>`\\"
+msgid ":py:obj:`legendLabel <abaqus.Odb.UserData.UserData.legendLabel>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid "A String specifying the label to be used in the legend."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Odb.UserData.UserData.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Odb.UserData.UserData.annotations>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.annotations:1
+msgid "A repository of Annotation objects."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`data <abaqus.Odb.UserData.UserData.data>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.data:1
+msgid "A tuple of pairs of Floats specifying the **X - Y** data pairs."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Annotation.AnimationUserData.AnimationUserData.name>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`sourceDescription <abaqus.Annotation.AnimationUserData.AnimationUserData.sourceDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`contentDescription <abaqus.Annotation.AnimationUserData.AnimationUserData.contentDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`positionDescription <abaqus.Annotation.AnimationUserData.AnimationUserData.positionDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`xValuesLabel <abaqus.Annotation.AnimationUserData.AnimationUserData.xValuesLabel>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`yValuesLabel <abaqus.Annotation.AnimationUserData.AnimationUserData.yValuesLabel>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`axis1QuantityType <abaqus.Annotation.AnimationUserData.AnimationUserData.axis1QuantityType>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`axis2QuantityType <abaqus.Annotation.AnimationUserData.AnimationUserData.axis2QuantityType>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`legendLabel <abaqus.Annotation.AnimationUserData.AnimationUserData.legendLabel>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Annotation.AnimationUserData.AnimationUserData.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`annotations <abaqus.Annotation.AnimationUserData.AnimationUserData.annotations>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`data <abaqus.Annotation.AnimationUserData.AnimationUserData.data>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Odb.UserDataBase.UserDataBase.name>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`sourceDescription <abaqus.Odb.UserDataBase.UserDataBase.sourceDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`contentDescription <abaqus.Odb.UserDataBase.UserDataBase.contentDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`positionDescription <abaqus.Odb.UserDataBase.UserDataBase.positionDescription>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`xValuesLabel <abaqus.Odb.UserDataBase.UserDataBase.xValuesLabel>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`yValuesLabel <abaqus.Odb.UserDataBase.UserDataBase.yValuesLabel>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`axis1QuantityType <abaqus.Odb.UserDataBase.UserDataBase.axis1QuantityType>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`axis2QuantityType <abaqus.Odb.UserDataBase.UserDataBase.axis2QuantityType>`\\"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`legendLabel <abaqus.Odb.UserDataBase.UserDataBase.legendLabel>`\\"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -6902,17 +7878,7 @@ msgid ":py:obj:`annotations <abaqus.Odb.UserDataBase.UserDataBase.annotations>`\
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.annotations:1
-msgid "A repository of Annotation objects."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
 msgid ":py:obj:`data <abaqus.Odb.UserDataBase.UserDataBase.data>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-#: ../../docstring of abaqus.Odb.UserDataBase.UserDataBase.data:1
-msgid "A tuple of pairs of Floats specifying the **X - Y** data pairs."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1

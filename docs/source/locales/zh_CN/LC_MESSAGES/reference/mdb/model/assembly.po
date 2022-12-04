@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,8 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../None:28:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:28:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:4:<autosummary>:1
 #: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:13 of
 msgid "A String specifying the repository key."
 msgstr ""
@@ -381,143 +382,135 @@ msgstr ""
 msgid "Public Data Attributes:"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`isOutOfDate "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`isOutOfDate <abaqus.Assembly.Assembly.Assembly.isOutOfDate>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "An Int specifying that feature parameters have been modified but that the"
 " assembly has not been regenerated."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`timeStamp "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`timeStamp <abaqus.Assembly.Assembly.Assembly.timeStamp>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp:1 of
 msgid ""
 "A Float specifying which gives an indication when the assembly was last "
 "modified."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`isLocked <abaqus.Assembly.Assembly.Assembly.isLocked>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid "An Int specifying whether the assembly is locked or not."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`regenerateConstraintsTogether "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
+"<abaqus.Assembly.Assembly.Assembly.regenerateConstraintsTogether>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "A Boolean specifying whether the positioning constraints in the assembly "
 "should be regenerated together before regenerating other assembly "
 "features."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Assembly.Assembly.Assembly.vertices>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "A VertexArray object specifying all the vertices existing at the assembly"
 " level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Assembly.Assembly.Assembly.edges>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "An EdgeArray object specifying all the edges existing at the assembly "
 "level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Assembly.Assembly.Assembly.elements>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "A MeshElementArray object specifying all the elements existing at the "
 "assembly level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Assembly.Assembly.Assembly.nodes>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "A MeshNodeArray object specifying all the nodes existing at the assembly "
 "level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`instances "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`instances <abaqus.Assembly.Assembly.Assembly.instances>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.instances:1 of
 msgid "A repository of PartInstance objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Assembly.Assembly.Assembly.datums>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.datums:1 of
 msgid ""
 "A repository of Datum objects specifying all Datum objects in the "
 "assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`features <abaqus.Assembly.Assembly.Assembly.features>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.features:1 of
 msgid ""
 "A repository of Feature objects specifying all Feature objects in the "
 "assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`featuresById "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`featuresById <abaqus.Assembly.Assembly.Assembly.featuresById>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 "A repository of Feature objects specifying all Feature objects in the "
 "assembly.The Feature objects in the featuresById repository are the same "
 "as the Feature objects in the features repository."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Assembly.Assembly.Assembly.surfaces>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces:1
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces:1 of
 msgid ""
@@ -527,37 +520,35 @@ msgid ""
 "-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`allSurfaces "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allSurfaces <abaqus.Assembly.Assembly.Assembly.allSurfaces>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSurfaces "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
+"<abaqus.Assembly.Assembly.Assembly.allInternalSurfaces>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces:1 of
 msgid "A repository of Surface objects specifying picked regions."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Assembly.Assembly.Assembly.sets>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.sets:1 of
 msgid "A repository of Set objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Assembly.Assembly.Assembly.allSets>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.allSets:1 of
 msgid ""
 "A repository of Set objects specifying for more information, see [Region "
@@ -565,119 +556,1087 @@ msgid ""
 "-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSets "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
+"<abaqus.Assembly.Assembly.Assembly.allInternalSets>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets:1 of
 msgid "A repository of Set objects specifying picked regions."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Assembly.Assembly.Assembly.skins>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.skins:1 of
 msgid "A repository of Skin objects specifying the skins created on the assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`stringers "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`stringers <abaqus.Assembly.Assembly.Assembly.stringers>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.stringers:1 of
 msgid ""
 "A repository of Stringer objects specifying the stringers created on the "
 "assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`referencePoints "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
+"<abaqus.Assembly.Assembly.Assembly.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1 ../../None:28:<autosummary>:1
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints:1
 #: abaqus.Assembly.ModelInstance.ModelInstance.referencePoints:1
 #: abaqus.Assembly.PartInstance.PartInstance.referencePoints:1 of
 msgid "A repository of ReferencePoint objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`modelInstances "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
+"<abaqus.Assembly.Assembly.Assembly.modelInstances>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances:1 of
 msgid "A repository of ModelInstance objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`allInstances "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allInstances <abaqus.Assembly.Assembly.Assembly.allInstances>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
+#: ../../None:31:<autosummary>:1 ../../docstring
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances:1 of
 msgid ""
 "A PartInstance object specifying the PartInstances and A ModelInstance "
 "object specifying the ModelInstances."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Assembly.Assembly.Assembly.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1 ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures:1 of
+msgid "An EngineeringFeature object."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`modelName <abaqus.Assembly.Assembly.Assembly.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1 ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.modelName:1 of
+msgid "A String specifying the name of the model to which the assembly belongs."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.Assembly.Assembly.Assembly.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1 ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations:1 of
+msgid "A ConnectorOrientationArray object."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Assembly.Assembly.Assembly.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1 ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments:1 of
+msgid "A SectionAssignmentArray object."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Assembly.Assembly.Assembly.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Assembly.Assembly.Assembly.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "An Int specifying the ID of the feature."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`timeStamp "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isLocked "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vertices "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`edges "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`elements "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`nodes "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`instances "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`datums "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`features "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`surfaces "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSets "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`skins "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`stringers "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelName "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`timeStamp <abaqus.Mesh.MeshAssembly.MeshAssembly.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`isLocked <abaqus.Mesh.MeshAssembly.MeshAssembly.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Mesh.MeshAssembly.MeshAssembly.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Mesh.MeshAssembly.MeshAssembly.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Mesh.MeshAssembly.MeshAssembly.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Mesh.MeshAssembly.MeshAssembly.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`instances <abaqus.Mesh.MeshAssembly.MeshAssembly.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Mesh.MeshAssembly.MeshAssembly.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`features <abaqus.Mesh.MeshAssembly.MeshAssembly.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Mesh.MeshAssembly.MeshAssembly.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Mesh.MeshAssembly.MeshAssembly.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Mesh.MeshAssembly.MeshAssembly.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Mesh.MeshAssembly.MeshAssembly.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`stringers <abaqus.Mesh.MeshAssembly.MeshAssembly.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`modelName <abaqus.Mesh.MeshAssembly.MeshAssembly.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Mesh.MeshAssembly.MeshAssembly.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Mesh.MeshAssembly.MeshAssembly.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Mesh.MeshAssembly.MeshAssembly.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`timeStamp "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isLocked "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vertices "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`edges "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`elements "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`nodes "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`instances "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`datums "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`features "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`surfaces "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Property.PropertyAssembly.PropertyAssembly.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSets "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`skins "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`stringers "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelName "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Property.PropertyAssembly.PropertyAssembly.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Property.PropertyAssembly.PropertyAssembly.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Property.PropertyAssembly.PropertyAssembly.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.Region.RegionAssembly.RegionAssembly.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`timeStamp "
+"<abaqus.Region.RegionAssembly.RegionAssembly.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isLocked "
+"<abaqus.Region.RegionAssembly.RegionAssembly.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.Region.RegionAssembly.RegionAssembly.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vertices "
+"<abaqus.Region.RegionAssembly.RegionAssembly.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Region.RegionAssembly.RegionAssembly.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`elements "
+"<abaqus.Region.RegionAssembly.RegionAssembly.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Region.RegionAssembly.RegionAssembly.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`instances "
+"<abaqus.Region.RegionAssembly.RegionAssembly.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Region.RegionAssembly.RegionAssembly.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`features "
+"<abaqus.Region.RegionAssembly.RegionAssembly.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.Region.RegionAssembly.RegionAssembly.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`surfaces "
+"<abaqus.Region.RegionAssembly.RegionAssembly.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.Region.RegionAssembly.RegionAssembly.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Region.RegionAssembly.RegionAssembly.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Region.RegionAssembly.RegionAssembly.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Region.RegionAssembly.RegionAssembly.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Region.RegionAssembly.RegionAssembly.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Region.RegionAssembly.RegionAssembly.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`stringers "
+"<abaqus.Region.RegionAssembly.RegionAssembly.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Region.RegionAssembly.RegionAssembly.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.Region.RegionAssembly.RegionAssembly.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.Region.RegionAssembly.RegionAssembly.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Region.RegionAssembly.RegionAssembly.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelName "
+"<abaqus.Region.RegionAssembly.RegionAssembly.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.Region.RegionAssembly.RegionAssembly.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Region.RegionAssembly.RegionAssembly.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Region.RegionAssembly.RegionAssembly.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Region.RegionAssembly.RegionAssembly.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`timeStamp "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isLocked "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vertices "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`edges "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`elements "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`nodes "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`instances "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`datums "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`features "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`surfaces "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sets "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSets "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`skins "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`stringers "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelName "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.modelName>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`connectorOrientations "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`name "
+"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.id>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`isOutOfDate "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`timeStamp "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`regenerateConstraintsTogether "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`instances "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`featuresById "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allSurfaces "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`stringers "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`modelInstances "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`allInstances "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`engineeringFeatures "
 "<abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures:1 of
-msgid "An EngineeringFeature object."
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`modelName "
 "<abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.modelName:1 of
-msgid "A String specifying the name of the model to which the assembly belongs."
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`connectorOrientations "
 "<abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations:1 of
-msgid "A ConnectorOrientationArray object."
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
+#: ../../None:31:<autosummary>:1
 msgid ""
 ":py:obj:`sectionAssignments "
 "<abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1 ../../docstring
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments:1 of
-msgid "A SectionAssignmentArray object."
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Assembly.AssemblyBase.AssemblyBase.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Assembly.AssemblyBase.AssemblyBase.id>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Assembly.AssemblyFeature.AssemblyFeature.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Assembly.AssemblyFeature.AssemblyFeature.id>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -686,10 +1645,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "An Int specifying the ID of the feature."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2773,7 +3728,8 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectororientationpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:13
+#: ../../None:10:<autosummary>:1 ../../docstring
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:13
 #: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:13
 #: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.region:1 of
 msgid "A Set object specifying the region to which the orientation is assigned."
@@ -3814,74 +4770,80 @@ msgid ""
 " to a connector."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`localCsys1 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.localCsys1>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 "A DatumCsys object specifying the local coordinate system of the first "
 "connector point."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`axis1 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.axis1>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the axis of a datum coordinate system about"
 " which an additional rotation is applied."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`angle1 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.angle1>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid "A Float specifying the angle of the additional rotation."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`orient2sameAs1 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.orient2sameAs1>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 "A Boolean specifying whether or not the second connector point is to use "
 "the same local coordinate system, axis, and angle as the first point."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`localCsys2 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.localCsys2>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 "A DatumCsys object specifying the local coordinate system of the second "
 "connector point."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`axis2 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.axis2>`\\"
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`angle2 "
 "<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.angle2>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ""
+":py:obj:`region "
+"<abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.region>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
