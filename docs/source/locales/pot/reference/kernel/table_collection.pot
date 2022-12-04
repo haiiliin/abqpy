@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,224 +74,250 @@ msgstr ""
 msgid "Public Data Attributes:"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid ":py:obj:`elementProgressiveActivations <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.elementProgressiveActivations>`\\"
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`isOutOfDate <abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`isOutOfDate <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "An Int specifying that feature parameters have been modified but that the assembly has not been regenerated."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`timeStamp <abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`timeStamp <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A Float specifying which gives an indication when the assembly was last modified."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`isLocked <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isLocked>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "An Int specifying whether the assembly is locked or not."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`regenerateConstraintsTogether <abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`regenerateConstraintsTogether <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A Boolean specifying whether the positioning constraints in the assembly should be regenerated together before regenerating other assembly features."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.vertices>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A VertexArray object specifying all the vertices existing at the assembly level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "An EdgeArray object specifying all the edges existing at the assembly level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.elements>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A MeshElementArray object specifying all the elements existing at the assembly level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A MeshNodeArray object specifying all the nodes existing at the assembly level."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`instances <abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`instances <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.instances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of PartInstance objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.datums>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Datum objects specifying all Datum objects in the assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`features <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.features>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Feature objects specifying all Feature objects in the assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`featuresById <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.featuresById>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Feature objects specifying all Feature objects in the assembly.The Feature objects in the featuresById repository are the same as the Feature objects in the features repository."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.surfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Surface objects specifying for more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allSurfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`allSurfaces <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`allInternalSurfaces <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allInternalSurfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Surface objects specifying picked regions."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Set objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Set objects specifying for more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allInternalSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`allInternalSets <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Set objects specifying picked regions."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.skins>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Skin objects specifying the skins created on the assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`stringers <abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`stringers <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.stringers>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of Stringer objects specifying the stringers created on the assembly."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`referencePoints <abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`referencePoints <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of ReferencePoint objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`modelInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`modelInstances <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A repository of ModelInstance objects."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`allInstances <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A PartInstance object specifying the PartInstances and A ModelInstance object specifying the ModelInstances."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`engineeringFeatures <abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`engineeringFeatures <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "An EngineeringFeature object."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`modelName <abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`modelName <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelName>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A String specifying the name of the model to which the assembly belongs."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`connectorOrientations <abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`connectorOrientations <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A ConnectorOrientationArray object."
 msgstr ""
 
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`sectionAssignments <abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`sectionAssignments <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 msgid "A SectionAssignmentArray object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.name>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:12
@@ -303,20 +329,149 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.__init__:13
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:12
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:12
+#: ../../None:10:<autosummary>:1
+#: ../../None:32:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 #: ../../None:55:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.name:1
 #: ../../docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.name:1
 #: ../../docstring of abaqus.TableCollection.PropertyTable.PropertyTable.name:1
 msgid "A String specifying the repository key."
 msgstr ""
 
+#: ../../None:32:<autosummary>:1
+msgid ":py:obj:`id <abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.id>`\\"
+msgstr ""
+
+#: ../../None:32:<autosummary>:1
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
+msgid "An Int specifying the ID of the feature."
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`isOutOfDate <abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`timeStamp <abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`regenerateConstraintsTogether <abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`instances <abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`featuresById <abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`allSurfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`allInternalSurfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`allInternalSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`stringers <abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`referencePoints <abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`modelInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`allInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`engineeringFeatures <abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`modelName <abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`connectorOrientations <abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1
+msgid ":py:obj:`sectionAssignments <abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid "An Int specifying the ID of the feature."
+msgid ":py:obj:`name <abaqus.Assembly.AssemblyFeature.AssemblyFeature.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Assembly.AssemblyFeature.AssemblyFeature.id>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:0
@@ -1323,12 +1478,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:13
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:13
+#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.name:1
 msgid "A String specifying the key of the repository."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:15
 #: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:15
+#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.elset:1
 msgid "A Region object specifying the region containing the elements that will be activated during the analysis."
 msgstr ""
@@ -1446,6 +1603,426 @@ msgid "Check `TableCollectionModel on help.3ds.com/2020 <https://help.3ds.com/20
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.name>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`stefanBoltzmann <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`waveFormulation <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.universalGas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`noPartsInputFile <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`restartIncrement <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`endRestartStep <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`description <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.description>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartJob>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartStep>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.globalJob>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`copyConstraints <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`copyConnectors <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`copyInteractions <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A KeywordBlock object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "An Assembly object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.profiles>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`boundaryConditions <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.constraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`analyticalFields <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`discreteFields <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of DiscreteField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`predefinedFields <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Interaction objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`interactionProperties <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`contactControls <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactControls>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactControl objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`contactInitializations <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`contactStabilizations <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`linkedInstances <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.loads>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.materials>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.calibrations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`remeshingRules <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sketches>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.parts>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.steps>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Step objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`featureOptions <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A FeatureOptions object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshControls <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.timePoints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TimePoint objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.filters>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`integratedOutputSections <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequests <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`historyOutputRequests <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`optimizationTasks <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`tableCollections <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.tableCollections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TableCollection objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`eventSeriesTypes <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesTypes>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesType objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid ":py:obj:`eventSeriesDatas <abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesDatas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesData objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
 msgstr ""
 
@@ -1454,15 +2031,7 @@ msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzman
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the Stefan-Boltzmann constant."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1470,15 +2039,7 @@ msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulatio
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1486,15 +2047,7 @@ msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputF
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1502,15 +2055,7 @@ msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1518,15 +2063,7 @@ msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCo
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A Float specifying the time stamp that indicates when the model was last changed."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1534,15 +2071,7 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1550,15 +2079,7 @@ msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the job that generated the results for the global model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1566,15 +2087,7 @@ msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1582,15 +2095,7 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A KeywordBlock object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1598,15 +2103,7 @@ msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of Amplitude objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1614,15 +2111,7 @@ msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryCon
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of BoundaryCondition objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1630,15 +2119,7 @@ msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFie
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of AnalyticalField objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1646,15 +2127,7 @@ msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFie
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of PredefinedField objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1662,15 +2135,7 @@ msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interact
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of InteractionProperty objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1678,15 +2143,7 @@ msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contact
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of ContactInitialization objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1694,15 +2151,7 @@ msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstance
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1710,15 +2159,7 @@ msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of Load objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1726,15 +2167,7 @@ msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of Calibration objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1742,15 +2175,7 @@ msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of RemeshingRule objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1758,15 +2183,7 @@ msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of Part objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1774,15 +2191,7 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A FeatureOptions object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1790,15 +2199,7 @@ msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveM
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of AdaptiveMeshControl objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1806,15 +2207,7 @@ msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of Filter objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1822,15 +2215,7 @@ msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutpu
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of FieldOutputRequest objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1838,15 +2223,7 @@ msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimization
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of OptimizationTask objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`tableCollections <abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -1854,15 +2231,7 @@ msgid ":py:obj:`eventSeriesTypes <abaqus.Model.ModelBase.ModelBase.eventSeriesTy
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid "A repository of EventSeriesType objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`eventSeriesDatas <abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of EventSeriesData objects."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1934,6 +2303,8 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:14
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:14
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:14
+#: ../../None:10:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.createStepName:1
 #: ../../docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.createStepName:1
 msgid "A string specifying the step name."
@@ -1941,6 +2312,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:16
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:16
+#: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.eventSeriesType:1
 msgid "A string specifying the type of event series."
 msgstr ""
@@ -1962,7 +2334,7 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:24
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.setValues:13
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:24
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.transformations:1
 msgid "An Array specifying the required transformations over event series data."
 msgstr ""
@@ -1970,7 +2342,7 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:26
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.setValues:15
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:26
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.fileName:1
 msgid "A String specifying the filename."
 msgstr ""
@@ -1978,7 +2350,7 @@ msgstr ""
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.__init__:28
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries.setValues:17
 #: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:28
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.EventSeries.EventSeries.data:1
 msgid "An Array of double specifying the values of fields provided in EventSeriesType."
 msgstr ""
@@ -2066,24 +2438,44 @@ msgstr ""
 msgid "Check `ActivateElements on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-activateelementspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`eigenTimeConst <abaqus.TableCollection.ActivateElements.ActivateElements.eigenTimeConst>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:16
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.eigenTimeConst:1
 msgid "A Double specifying the time constant used to ramp up the eigenstrains at element activation."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`expansionTimeConstant <abaqus.TableCollection.ActivateElements.ActivateElements.expansionTimeConstant>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:19
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.expansionTimeConstant:1
 msgid "A Double specifying the time constant used to ramp up the thermal strains at element activation."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`tableCollection <abaqus.TableCollection.ActivateElements.ActivateElements.tableCollection>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:12
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.tableCollection:1
+msgid "A String specifying the name of the tableCollection object."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`activation <abaqus.TableCollection.ActivateElements.ActivateElements.activation>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:14
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.activation:1
+msgid "A string specifying the name of progressive element activation."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2106,16 +2498,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:9
 msgid "Check `ActivateElements.__init__ on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-activateelementspyc.htm?contextscope=all#simaker-activateelements__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:12
-#: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.tableCollection:1
-msgid "A String specifying the name of the tableCollection object."
-msgstr ""
-
-#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:14
-#: ../../docstring of abaqus.TableCollection.ActivateElements.ActivateElements.activation:1
-msgid "A string specifying the name of progressive element activation."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:22
@@ -2205,20 +2587,28 @@ msgstr ""
 msgid "The `ElementProgressiveActivation` class was added."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`deformation <abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.deformation>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid "A Boolean value specifying whether the elements that have not yet been activated will follow the deformations of the active elements."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`freeSurfaceType <abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.freeSurfaceType>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid "A SymbolicConstant specifying the exposed areas of the element facets that are active for convection or radiation boundary conditions to be applied."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.name>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`elset <abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.elset>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2256,32 +2646,44 @@ msgstr ""
 msgid "The `EventSeries` class was added."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ":py:obj:`transformType <abaqus.TableCollection.EventSeries.EventSeries.transformType>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid "A Symbolic constant specifying the type of transformation."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.TableCollection.EventSeries.EventSeries.timeSpan>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid "A Symbolic constant specifying time."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ":py:obj:`transformations <abaqus.TableCollection.EventSeries.EventSeries.transformations>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ":py:obj:`fileName <abaqus.TableCollection.EventSeries.EventSeries.fileName>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ":py:obj:`data <abaqus.TableCollection.EventSeries.EventSeries.data>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.EventSeries.EventSeries.name>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`createStepName <abaqus.TableCollection.EventSeries.EventSeries.createStepName>`\\"
+msgstr ""
+
+#: ../../None:10:<autosummary>:1
+msgid ":py:obj:`eventSeriesType <abaqus.TableCollection.EventSeries.EventSeries.eventSeriesType>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2313,12 +2715,20 @@ msgstr ""
 msgid "The `EventSeriesType` class was added."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ":py:obj:`fields <abaqus.TableCollection.EventSeriesType.EventSeriesType.fields>`\\"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid "A String array specifying fields."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.EventSeriesType.EventSeriesType.name>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`createStepName <abaqus.TableCollection.EventSeriesType.EventSeriesType.createStepName>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2359,45 +2769,53 @@ msgstr ""
 msgid "Check `ParameterColumn on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parametercolumnpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`unit <abaqus.TableCollection.ParameterColumn.ParameterColumn.unit>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:17
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.Column:17
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.unit:1
 msgid "A String specifying the unit of the parameter."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`description <abaqus.TableCollection.ParameterColumn.ParameterColumn.description>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:19
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.Column:19
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.description:1
 msgid "A String specifying the description of the parameter."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`default <abaqus.TableCollection.ParameterColumn.ParameterColumn.default>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid "The default value of the first parameter."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`allowedValues <abaqus.TableCollection.ParameterColumn.ParameterColumn.allowedValues>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:24
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.Column:24
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn.allowedValues:1
 msgid "A Set of allowed values for the parameter."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`type <abaqus.TableCollection.ParameterColumn.ParameterColumn.type>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "A SymbolicConstant specifying the data type of the parameter."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2521,20 +2939,35 @@ msgstr ""
 msgid "Check `PropertyTable on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytablepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`propertyTableDatas <abaqus.TableCollection.PropertyTable.PropertyTable.propertyTableDatas>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid "A repository of PropertyTableData."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`variables <abaqus.TableCollection.PropertyTable.PropertyTable.variables>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid "A String array specifying multiple independent variables."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`name <abaqus.TableCollection.PropertyTable.PropertyTable.name>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ":py:obj:`properties <abaqus.TableCollection.PropertyTable.PropertyTable.properties>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:14
+#: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:14
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.TableCollection.PropertyTable.PropertyTable.properties:1
+msgid "A string array specifying the multiple properties to build the parameter table type."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -2634,12 +3067,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:9
 msgid "Check `PropertyTable.__init__ on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytablepyc.htm?contextscope=all#simaker-propertytable__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:14
-#: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:14
-#: ../../docstring of abaqus.TableCollection.PropertyTable.PropertyTable.properties:1
-msgid "A string array specifying the multiple properties to build the parameter table type."
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable.__init__:16
