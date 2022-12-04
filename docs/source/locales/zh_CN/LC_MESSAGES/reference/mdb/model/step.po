@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-06 00:26+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,18 +124,19 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgid ":py:obj:`name <abaqus.Step.StepModel.StepModel.name>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../None:52:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1
+#: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.name:1
 #: abaqus.Step.AnnealStep.AnnealStep.__init__:12
 #: abaqus.Step.AnnealStep.AnnealStep.name:1
@@ -228,7 +229,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`stefanBoltzmann "
-"<abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+"<abaqus.Step.StepModel.StepModel.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -236,7 +237,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Step.StepModel.StepModel.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -246,7 +247,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`waveFormulation "
-"<abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+"<abaqus.Step.StepModel.StepModel.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -256,7 +257,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Step.StepModel.StepModel.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -266,7 +267,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`noPartsInputFile "
-"<abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+"<abaqus.Step.StepModel.StepModel.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -278,7 +279,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`restartIncrement "
-"<abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+"<abaqus.Step.StepModel.StepModel.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -290,7 +291,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`endRestartStep "
-"<abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+"<abaqus.Step.StepModel.StepModel.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -300,7 +301,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Step.StepModel.StepModel.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -310,7 +311,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`lastChangedCount "
-"<abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+"<abaqus.Step.StepModel.StepModel.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -320,7 +321,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ":py:obj:`description <abaqus.Step.StepModel.StepModel.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -328,7 +329,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Step.StepModel.StepModel.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -336,7 +337,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Step.StepModel.StepModel.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -346,7 +347,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Step.StepModel.StepModel.globalJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -358,7 +359,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`copyConstraints "
-"<abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+"<abaqus.Step.StepModel.StepModel.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -370,7 +371,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`copyConnectors "
-"<abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+"<abaqus.Step.StepModel.StepModel.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -382,7 +383,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`copyInteractions "
-"<abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+"<abaqus.Step.StepModel.StepModel.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -392,7 +393,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Step.StepModel.StepModel.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -400,7 +401,7 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Step.StepModel.StepModel.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -408,7 +409,7 @@ msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Step.StepModel.StepModel.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -416,7 +417,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Step.StepModel.StepModel.profiles>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -426,7 +427,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditions "
-"<abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+"<abaqus.Step.StepModel.StepModel.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -434,7 +435,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Step.StepModel.StepModel.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -444,7 +445,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`analyticalFields "
-"<abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+"<abaqus.Step.StepModel.StepModel.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -454,7 +455,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`discreteFields "
-"<abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+"<abaqus.Step.StepModel.StepModel.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -464,7 +465,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFields "
-"<abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+"<abaqus.Step.StepModel.StepModel.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -472,7 +473,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Step.StepModel.StepModel.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -482,7 +483,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`interactionProperties "
-"<abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+"<abaqus.Step.StepModel.StepModel.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -492,7 +493,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`contactControls "
-"<abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+"<abaqus.Step.StepModel.StepModel.contactControls>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -502,7 +503,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`contactInitializations "
-"<abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+"<abaqus.Step.StepModel.StepModel.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -512,7 +513,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`contactStabilizations "
-"<abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+"<abaqus.Step.StepModel.StepModel.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -522,7 +523,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`linkedInstances "
-"<abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+"<abaqus.Step.StepModel.StepModel.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -533,7 +534,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Step.StepModel.StepModel.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -544,7 +545,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Step.StepModel.StepModel.loads>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -552,7 +553,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Step.StepModel.StepModel.materials>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -560,7 +561,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Step.StepModel.StepModel.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -568,7 +569,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Step.StepModel.StepModel.sections>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -578,7 +579,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`remeshingRules "
-"<abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+"<abaqus.Step.StepModel.StepModel.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -586,7 +587,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Step.StepModel.StepModel.sketches>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -594,7 +595,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Step.StepModel.StepModel.parts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -602,7 +603,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Step.StepModel.StepModel.steps>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -612,7 +613,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`featureOptions "
-"<abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+"<abaqus.Step.StepModel.StepModel.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -622,7 +623,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraints "
-"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+"<abaqus.Step.StepModel.StepModel.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -632,7 +633,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshControls "
-"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+"<abaqus.Step.StepModel.StepModel.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -640,7 +641,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Step.StepModel.StepModel.timePoints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -648,7 +649,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Step.StepModel.StepModel.filters>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -658,7 +659,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`integratedOutputSections "
-"<abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+"<abaqus.Step.StepModel.StepModel.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -668,7 +669,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequests "
-"<abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+"<abaqus.Step.StepModel.StepModel.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -678,7 +679,7 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequests "
-"<abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+"<abaqus.Step.StepModel.StepModel.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -688,11 +689,263 @@ msgstr ""
 #: ../../None:52:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationTasks "
-"<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
+"<abaqus.Step.StepModel.StepModel.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`stefanBoltzmann "
+"<abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`waveFormulation "
+"<abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`noPartsInputFile "
+"<abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`restartIncrement "
+"<abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`endRestartStep "
+"<abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`lastChangedCount "
+"<abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`copyConstraints "
+"<abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`copyConnectors "
+"<abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`copyInteractions "
+"<abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`boundaryConditions "
+"<abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`analyticalFields "
+"<abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`discreteFields "
+"<abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`predefinedFields "
+"<abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`interactionProperties "
+"<abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`contactControls "
+"<abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`contactInitializations "
+"<abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`contactStabilizations "
+"<abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`linkedInstances "
+"<abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`remeshingRules "
+"<abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`featureOptions "
+"<abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshConstraints "
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshControls "
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`integratedOutputSections "
+"<abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`fieldOutputRequests "
+"<abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`historyOutputRequests "
+"<abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+":py:obj:`optimizationTasks "
+"<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
@@ -2852,7 +3105,7 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-emagtimeharmonicsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
+#: ../../None:28:<autosummary>:1 ../../docstring
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.__init__:17
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.frequencyRange:1
 #: abaqus.Step.StepModel.StepModel.EmagTimeHarmonicStep:17 of
@@ -4726,22 +4979,22 @@ msgid ""
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Step.StepBase.StepBase.name>`\\"
+msgid ":py:obj:`name <abaqus.Step.Step.Step.name>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`explicit <abaqus.Step.StepBase.StepBase.explicit>`\\"
+msgid ":py:obj:`explicit <abaqus.Step.Step.Step.explicit>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.explicit:1
 #: abaqus.Step.AnnealStep.AnnealStep.explicit:1
 #: abaqus.Step.BuckleStep.BuckleStep.explicit:1
@@ -4780,18 +5033,18 @@ msgid ""
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
+msgid ":py:obj:`perturbation <abaqus.Step.Step.Step.perturbation>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.perturbation:1
 #: abaqus.Step.AnnealStep.AnnealStep.perturbation:1
 #: abaqus.Step.BuckleStep.BuckleStep.perturbation:1
@@ -4827,18 +5080,18 @@ msgid "A Boolean specifying whether the step has a perturbation procedure type."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
+msgid ":py:obj:`nonmechanical <abaqus.Step.Step.Step.nonmechanical>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.nonmechanical:1
 #: abaqus.Step.AnnealStep.AnnealStep.nonmechanical:1
 #: abaqus.Step.BuckleStep.BuckleStep.nonmechanical:1
@@ -4874,51 +5127,52 @@ msgid "A Boolean specifying whether the step has a mechanical procedure type."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
+msgid ":py:obj:`procedureType <abaqus.Step.Step.Step.procedureType>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
+#: ../../None:48:<autosummary>:1
 msgid "A SymbolicConstant specifying the Abaqus procedure."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`suppressed <abaqus.Step.StepBase.StepBase.suppressed>`\\"
+msgid ":py:obj:`suppressed <abaqus.Step.Step.Step.suppressed>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1
 msgid "A Boolean specifying whether the step is suppressed or not."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequestState "
-"<abaqus.Step.StepBase.StepBase.fieldOutputRequestState>`\\"
+"<abaqus.Step.Step.Step.fieldOutputRequestState>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.fieldOutputRequestState:1
 #: abaqus.Step.AnnealStep.AnnealStep.fieldOutputRequestState:1
 #: abaqus.Step.BuckleStep.BuckleStep.fieldOutputRequestState:1
@@ -4956,18 +5210,18 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequestState "
-"<abaqus.Step.StepBase.StepBase.historyOutputRequestState>`\\"
+"<abaqus.Step.Step.Step.historyOutputRequestState>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.historyOutputRequestState:1
 #: abaqus.Step.AnnealStep.AnnealStep.historyOutputRequestState:1
 #: abaqus.Step.BuckleStep.BuckleStep.historyOutputRequestState:1
@@ -5003,20 +5257,18 @@ msgid "A repository of HistoryOutputRequestState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ""
-":py:obj:`diagnosticPrint "
-"<abaqus.Step.StepBase.StepBase.diagnosticPrint>`\\"
+msgid ":py:obj:`diagnosticPrint <abaqus.Step.Step.Step.diagnosticPrint>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.diagnosticPrint:1
 #: abaqus.Step.AnnealStep.AnnealStep.diagnosticPrint:1
 #: abaqus.Step.BuckleStep.BuckleStep.diagnosticPrint:1
@@ -5052,18 +5304,18 @@ msgid "A DiagnosticPrint object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`monitor <abaqus.Step.StepBase.StepBase.monitor>`\\"
+msgid ":py:obj:`monitor <abaqus.Step.Step.Step.monitor>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.monitor:1
 #: abaqus.Step.AnnealStep.AnnealStep.monitor:1
 #: abaqus.Step.BuckleStep.BuckleStep.monitor:1
@@ -5099,18 +5351,18 @@ msgid "A Monitor object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`restart <abaqus.Step.StepBase.StepBase.restart>`\\"
+msgid ":py:obj:`restart <abaqus.Step.Step.Step.restart>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.restart:1
 #: abaqus.Step.AnnealStep.AnnealStep.restart:1
 #: abaqus.Step.BuckleStep.BuckleStep.restart:1
@@ -5148,18 +5400,18 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraintStates "
-"<abaqus.Step.StepBase.StepBase.adaptiveMeshConstraintStates>`\\"
+"<abaqus.Step.Step.Step.adaptiveMeshConstraintStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.adaptiveMeshConstraintStates:1
 #: abaqus.Step.AnnealStep.AnnealStep.adaptiveMeshConstraintStates:1
 #: abaqus.Step.BuckleStep.BuckleStep.adaptiveMeshConstraintStates:1
@@ -5197,18 +5449,18 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshDomains "
-"<abaqus.Step.StepBase.StepBase.adaptiveMeshDomains>`\\"
+"<abaqus.Step.Step.Step.adaptiveMeshDomains>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.adaptiveMeshDomains:1
 #: abaqus.Step.AnnealStep.AnnealStep.adaptiveMeshDomains:1
 #: abaqus.Step.BuckleStep.BuckleStep.adaptiveMeshDomains:1
@@ -5244,18 +5496,18 @@ msgid "A repository of AdaptiveMeshDomain objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
+msgid ":py:obj:`control <abaqus.Step.Step.Step.control>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.control:1
 #: abaqus.Step.AnnealStep.AnnealStep.control:1
 #: abaqus.Step.BuckleStep.BuckleStep.control:1
@@ -5291,18 +5543,18 @@ msgid "A Control object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
+msgid ":py:obj:`solverControl <abaqus.Step.Step.Step.solverControl>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.solverControl:1
 #: abaqus.Step.AnnealStep.AnnealStep.solverControl:1
 #: abaqus.Step.BuckleStep.BuckleStep.solverControl:1
@@ -5340,18 +5592,18 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditionStates "
-"<abaqus.Step.StepBase.StepBase.boundaryConditionStates>`\\"
+"<abaqus.Step.Step.Step.boundaryConditionStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.boundaryConditionStates:1
 #: abaqus.Step.AnnealStep.AnnealStep.boundaryConditionStates:1
 #: abaqus.Step.BuckleStep.BuckleStep.boundaryConditionStates:1
@@ -5387,20 +5639,18 @@ msgid "A repository of BoundaryConditionState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ""
-":py:obj:`interactionStates "
-"<abaqus.Step.StepBase.StepBase.interactionStates>`\\"
+msgid ":py:obj:`interactionStates <abaqus.Step.Step.Step.interactionStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.interactionStates:1
 #: abaqus.Step.AnnealStep.AnnealStep.interactionStates:1
 #: abaqus.Step.BuckleStep.BuckleStep.interactionStates:1
@@ -5436,18 +5686,18 @@ msgid "A repository of InteractionState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`loadStates <abaqus.Step.StepBase.StepBase.loadStates>`\\"
+msgid ":py:obj:`loadStates <abaqus.Step.Step.Step.loadStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.loadStates:1
 #: abaqus.Step.AnnealStep.AnnealStep.loadStates:1
 #: abaqus.Step.BuckleStep.BuckleStep.loadStates:1
@@ -5483,18 +5733,18 @@ msgid "A repository of LoadState objects."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`loadCases <abaqus.Step.StepBase.StepBase.loadCases>`\\"
+msgid ":py:obj:`loadCases <abaqus.Step.Step.Step.loadCases>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.loadCases:1
 #: abaqus.Step.AnnealStep.AnnealStep.loadCases:1
 #: abaqus.Step.BuckleStep.BuckleStep.loadCases:1
@@ -5532,18 +5782,18 @@ msgstr ""
 #: ../../None:22:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFieldStates "
-"<abaqus.Step.StepBase.StepBase.predefinedFieldStates>`\\"
+"<abaqus.Step.Step.Step.predefinedFieldStates>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../None:25:<autosummary>:1
-#: ../../None:26:<autosummary>:1 ../../None:30:<autosummary>:1
-#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
-#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
-#: ../../None:48:<autosummary>:1 ../../docstring
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
+#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
+#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1 ../../docstring
 #: abaqus.Step.AnalysisStep.AnalysisStep.predefinedFieldStates:1
 #: abaqus.Step.AnnealStep.AnnealStep.predefinedFieldStates:1
 #: abaqus.Step.BuckleStep.BuckleStep.predefinedFieldStates:1
@@ -5576,6 +5826,328 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.predefinedFieldStates:1
 #: abaqus.Step.ViscoStep.ViscoStep.predefinedFieldStates:1 of
 msgid "A repository of PredefinedFieldState objects."
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.name>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`explicit "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.explicit>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`perturbation "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.perturbation>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`nonmechanical "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.nonmechanical>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`procedureType "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.procedureType>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.suppressed>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`fieldOutputRequestState "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.fieldOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`historyOutputRequestState "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.historyOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`diagnosticPrint "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.diagnosticPrint>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`monitor "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.monitor>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`restart "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.restart>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshConstraintStates "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshConstraintStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshDomains "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshDomains>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`control "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.control>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`solverControl "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.solverControl>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`boundaryConditionStates "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.boundaryConditionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`interactionStates "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.interactionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`loadStates "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`loadCases "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadCases>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`predefinedFieldStates "
+"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.predefinedFieldStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`name <abaqus.StepOutput.OutputStep.OutputStep.name>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`explicit <abaqus.StepOutput.OutputStep.OutputStep.explicit>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`perturbation "
+"<abaqus.StepOutput.OutputStep.OutputStep.perturbation>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`nonmechanical "
+"<abaqus.StepOutput.OutputStep.OutputStep.nonmechanical>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`procedureType "
+"<abaqus.StepOutput.OutputStep.OutputStep.procedureType>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`suppressed "
+"<abaqus.StepOutput.OutputStep.OutputStep.suppressed>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`fieldOutputRequestState "
+"<abaqus.StepOutput.OutputStep.OutputStep.fieldOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`historyOutputRequestState "
+"<abaqus.StepOutput.OutputStep.OutputStep.historyOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`diagnosticPrint "
+"<abaqus.StepOutput.OutputStep.OutputStep.diagnosticPrint>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`monitor <abaqus.StepOutput.OutputStep.OutputStep.monitor>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`restart <abaqus.StepOutput.OutputStep.OutputStep.restart>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshConstraintStates "
+"<abaqus.StepOutput.OutputStep.OutputStep.adaptiveMeshConstraintStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshDomains "
+"<abaqus.StepOutput.OutputStep.OutputStep.adaptiveMeshDomains>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`control <abaqus.StepOutput.OutputStep.OutputStep.control>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`solverControl "
+"<abaqus.StepOutput.OutputStep.OutputStep.solverControl>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`boundaryConditionStates "
+"<abaqus.StepOutput.OutputStep.OutputStep.boundaryConditionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`interactionStates "
+"<abaqus.StepOutput.OutputStep.OutputStep.interactionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`loadStates "
+"<abaqus.StepOutput.OutputStep.OutputStep.loadStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`loadCases <abaqus.StepOutput.OutputStep.OutputStep.loadCases>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`predefinedFieldStates "
+"<abaqus.StepOutput.OutputStep.OutputStep.predefinedFieldStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Step.StepBase.StepBase.name>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`explicit <abaqus.Step.StepBase.StepBase.explicit>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`suppressed <abaqus.Step.StepBase.StepBase.suppressed>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`fieldOutputRequestState "
+"<abaqus.Step.StepBase.StepBase.fieldOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`historyOutputRequestState "
+"<abaqus.Step.StepBase.StepBase.historyOutputRequestState>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`diagnosticPrint "
+"<abaqus.Step.StepBase.StepBase.diagnosticPrint>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`monitor <abaqus.Step.StepBase.StepBase.monitor>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`restart <abaqus.Step.StepBase.StepBase.restart>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshConstraintStates "
+"<abaqus.Step.StepBase.StepBase.adaptiveMeshConstraintStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`adaptiveMeshDomains "
+"<abaqus.Step.StepBase.StepBase.adaptiveMeshDomains>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`boundaryConditionStates "
+"<abaqus.Step.StepBase.StepBase.boundaryConditionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`interactionStates "
+"<abaqus.Step.StepBase.StepBase.interactionStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`loadStates <abaqus.Step.StepBase.StepBase.loadStates>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ":py:obj:`loadCases <abaqus.Step.StepBase.StepBase.loadCases>`\\"
+msgstr ""
+
+#: ../../None:22:<autosummary>:1
+msgid ""
+":py:obj:`predefinedFieldStates "
+"<abaqus.Step.StepBase.StepBase.predefinedFieldStates>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -7663,13 +8235,14 @@ msgid ":py:obj:`previous <abaqus.Step.AnnealStep.AnnealStep.previous>`\\"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
-#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
-#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
-#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1
+#: ../../None:28:<autosummary>:1 ../../None:30:<autosummary>:1
+#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
+#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
+#: ../../None:48:<autosummary>:1
 msgid "A String specifying the name of the previous step."
 msgstr ""
 
@@ -7678,13 +8251,14 @@ msgid ":py:obj:`description <abaqus.Step.AnnealStep.AnnealStep.description>`\\"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1 ../../None:26:<autosummary>:1
-#: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
-#: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
-#: ../../None:35:<autosummary>:1 ../../None:36:<autosummary>:1
-#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1 ../../None:48:<autosummary>:1
+#: ../../None:28:<autosummary>:1 ../../None:30:<autosummary>:1
+#: ../../None:31:<autosummary>:1 ../../None:33:<autosummary>:1
+#: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
+#: ../../None:48:<autosummary>:1
 msgid "A String specifying a description of the new step."
 msgstr ""
 
@@ -7963,9 +8537,9 @@ msgid ""
 "<abaqus.Step.BuckleStep.BuckleStep.matrixStorage>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1 ../../None:26:<autosummary>:1
+#: ../../None:26:<autosummary>:1 ../../None:28:<autosummary>:1
 #: ../../None:30:<autosummary>:1 ../../None:31:<autosummary>:1
-#: ../../None:33:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:33:<autosummary>:1 ../../None:37:<autosummary>:1
 #: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
 #: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
 #: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
@@ -8414,7 +8988,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:43:<autosummary>:1
 #: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
 #: ../../None:47:<autosummary>:1
 msgid ""
@@ -8453,10 +9027,10 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 ../../None:35:<autosummary>:1
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid "A SymbolicConstant specifying the time incrementation method to be used."
 msgstr ""
 
@@ -8467,9 +9041,10 @@ msgid ""
 msgstr ""
 
 #: ../../None:30:<autosummary>:1 ../../None:36:<autosummary>:1
-#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
-#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
-#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
+#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
+#: ../../None:47:<autosummary>:1
 msgid "An Int specifying the maximum number of increments in a step."
 msgstr ""
 
@@ -8479,10 +9054,10 @@ msgid ""
 "<abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.initialInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid "A Float specifying the initial time increment."
 msgstr ""
 
@@ -8492,10 +9067,10 @@ msgid ""
 "<abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.minInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid "A Float specifying the minimum time increment allowed."
 msgstr ""
 
@@ -8505,10 +9080,10 @@ msgid ""
 "<abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.maxInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid "A Float specifying the maximum time increment allowed."
 msgstr ""
 
@@ -8604,10 +9179,10 @@ msgid ""
 "<abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.convertSDI>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
-#: ../../None:41:<autosummary>:1 ../../None:43:<autosummary>:1
-#: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
-#: ../../None:47:<autosummary>:1
+#: ../../None:36:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:39:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:43:<autosummary>:1 ../../None:44:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether to force a new iteration if severe "
 "discontinuities occur during an iteration."
@@ -9737,156 +10312,174 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`matrixStorage "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.matrixStorage>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`subdivideUsingEigenfrequencies "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.subdivideUsingEigenfrequencies>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1 ../../None:30:<autosummary>:1
+#: ../../None:28:<autosummary>:1 ../../None:30:<autosummary>:1
 #: ../../None:33:<autosummary>:1 ../../None:34:<autosummary>:1
 msgid ""
 "A Boolean specifying whether to subdivide each frequency range using the "
 "eigenfrequencies of the system."
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`explicit "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.explicit>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`perturbation "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.perturbation>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`nonmechanical "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.nonmechanical>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`procedureType "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.procedureType>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.suppressed>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequestState "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.fieldOutputRequestState>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequestState "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.historyOutputRequestState>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`diagnosticPrint "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.diagnosticPrint>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`monitor "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.monitor>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`restart "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.restart>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraintStates "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.adaptiveMeshConstraintStates>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshDomains "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.adaptiveMeshDomains>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`control "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.control>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`solverControl "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.solverControl>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditionStates "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.boundaryConditionStates>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`interactionStates "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.interactionStates>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`loadStates "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.loadStates>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`loadCases "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.loadCases>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFieldStates "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.predefinedFieldStates>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`description "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.description>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1
+#: ../../None:28:<autosummary>:1
 msgid ""
 ":py:obj:`factorization "
 "<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.factorization>`\\"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1 ../../None:30:<autosummary>:1
+#: ../../None:28:<autosummary>:1 ../../None:30:<autosummary>:1
 #: ../../None:33:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying whether damping terms are to be ignored so "
 "that a real, rather than a complex, system matrix is factored."
+msgstr ""
+
+#: ../../None:28:<autosummary>:1
+msgid ""
+":py:obj:`name "
+"<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.name>`\\"
+msgstr ""
+
+#: ../../None:28:<autosummary>:1
+msgid ""
+":py:obj:`previous "
+"<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.previous>`\\"
+msgstr ""
+
+#: ../../None:28:<autosummary>:1
+msgid ""
+":py:obj:`frequencyRange "
+"<abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.frequencyRange>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -10651,39 +11244,39 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Step.GeostaticStep.GeostaticStep.name>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`nlgeom <abaqus.Step.GeostaticStep.GeostaticStep.nlgeom>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`matrixSolver "
 "<abaqus.Step.GeostaticStep.GeostaticStep.matrixSolver>`\\"
 msgstr ""
 
-#: ../../None:26:<autosummary>:1 ../../None:36:<autosummary>:1
+#: ../../None:26:<autosummary>:1 ../../None:37:<autosummary>:1
 #: ../../None:41:<autosummary>:1 ../../None:44:<autosummary>:1
 #: ../../None:46:<autosummary>:1 ../../None:47:<autosummary>:1
 msgid "A SymbolicConstant specifying the type of solver."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`matrixStorage "
 "<abaqus.Step.GeostaticStep.GeostaticStep.matrixStorage>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`solutionTechnique "
 "<abaqus.Step.GeostaticStep.GeostaticStep.solutionTechnique>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:41:<autosummary>:1
 #: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
 #: ../../None:47:<autosummary>:1
 msgid ""
@@ -10691,13 +11284,13 @@ msgid ""
 " equations."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`reformKernel "
 "<abaqus.Step.GeostaticStep.GeostaticStep.reformKernel>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:41:<autosummary>:1
+#: ../../None:37:<autosummary>:1 ../../None:41:<autosummary>:1
 #: ../../None:44:<autosummary>:1 ../../None:46:<autosummary>:1
 #: ../../None:47:<autosummary>:1
 msgid ""
@@ -10705,165 +11298,169 @@ msgid ""
 "the kernel matrix is reformed."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`convertSDI "
 "<abaqus.Step.GeostaticStep.GeostaticStep.convertSDI>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`utol <abaqus.Step.GeostaticStep.GeostaticStep.utol>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 "None or a Float specifying the tolerance for maximum change of "
 "displacements."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`timePeriod "
 "<abaqus.Step.GeostaticStep.GeostaticStep.timePeriod>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../docstring
+#: ../../None:37:<autosummary>:1 ../../docstring
 #: abaqus.Step.GeostaticStep.GeostaticStep.timePeriod:1 of
 msgid "This parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`timeIncrementationMethod "
 "<abaqus.Step.GeostaticStep.GeostaticStep.timeIncrementationMethod>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`initialInc "
 "<abaqus.Step.GeostaticStep.GeostaticStep.initialInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`minInc <abaqus.Step.GeostaticStep.GeostaticStep.minInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`maxInc <abaqus.Step.GeostaticStep.GeostaticStep.maxInc>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`previous <abaqus.Step.GeostaticStep.GeostaticStep.previous>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`description "
 "<abaqus.Step.GeostaticStep.GeostaticStep.description>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`explicit <abaqus.Step.GeostaticStep.GeostaticStep.explicit>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`perturbation "
 "<abaqus.Step.GeostaticStep.GeostaticStep.perturbation>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`nonmechanical "
 "<abaqus.Step.GeostaticStep.GeostaticStep.nonmechanical>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`procedureType "
 "<abaqus.Step.GeostaticStep.GeostaticStep.procedureType>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Step.GeostaticStep.GeostaticStep.suppressed>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequestState "
 "<abaqus.Step.GeostaticStep.GeostaticStep.fieldOutputRequestState>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequestState "
 "<abaqus.Step.GeostaticStep.GeostaticStep.historyOutputRequestState>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`diagnosticPrint "
 "<abaqus.Step.GeostaticStep.GeostaticStep.diagnosticPrint>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`monitor <abaqus.Step.GeostaticStep.GeostaticStep.monitor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`restart <abaqus.Step.GeostaticStep.GeostaticStep.restart>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraintStates "
 "<abaqus.Step.GeostaticStep.GeostaticStep.adaptiveMeshConstraintStates>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshDomains "
 "<abaqus.Step.GeostaticStep.GeostaticStep.adaptiveMeshDomains>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`control <abaqus.Step.GeostaticStep.GeostaticStep.control>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`solverControl "
 "<abaqus.Step.GeostaticStep.GeostaticStep.solverControl>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditionStates "
 "<abaqus.Step.GeostaticStep.GeostaticStep.boundaryConditionStates>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`interactionStates "
 "<abaqus.Step.GeostaticStep.GeostaticStep.interactionStates>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`loadStates "
 "<abaqus.Step.GeostaticStep.GeostaticStep.loadStates>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ":py:obj:`loadCases <abaqus.Step.GeostaticStep.GeostaticStep.loadCases>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFieldStates "
 "<abaqus.Step.GeostaticStep.GeostaticStep.predefinedFieldStates>`\\"
+msgstr ""
+
+#: ../../None:37:<autosummary>:1
+msgid ":py:obj:`maxNumInc <abaqus.Step.GeostaticStep.GeostaticStep.maxNumInc>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/kernel/utility.md:1
 msgid "Utility and View"
@@ -2299,49 +2299,167 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ""
 ":py:obj:`displayedObjectScreenWidth "
 "<abaqus.UtilityAndView.View.View.displayedObjectScreenWidth>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ""
 "A Float specifying the width in viewport millimeters of the bounding "
 "rectangle around the viewport contents."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ""
 ":py:obj:`displayedObjectScreenHeight "
 "<abaqus.UtilityAndView.View.View.displayedObjectScreenHeight>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ""
 "A Float specifying the height in viewport millimeters of the bounding "
 "rectangle around the viewport contents."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ""
 ":py:obj:`layerTransform "
 "<abaqus.UtilityAndView.View.View.layerTransform>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
+#: ../../None:18:<autosummary>:1 ../../docstring
 #: abaqus.UtilityAndView.View.View.layerTransform:1 of
 msgid ""
 "A tuple of Floats specifying a transformation matrix used to position the"
 " contents of the Layer within a viewport."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid ":py:obj:`movieMode <abaqus.UtilityAndView.View.View.movieMode>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:18:<autosummary>:1
 msgid "A Boolean specifying whether or not the camera is in movie mode."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`name <abaqus.UtilityAndView.View.View.name>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A String specifying the name of the view (also used as the repository "
+"key)."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`nearPlane <abaqus.UtilityAndView.View.View.nearPlane>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A Float specifying the distance from the camera to the near clipping "
+"plane."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`farPlane <abaqus.UtilityAndView.View.View.farPlane>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A Float specifying the distance from the camera to the far clipping plane"
+" when **farPlaneMode** =SPECIFY."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`width <abaqus.UtilityAndView.View.View.width>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid "A Float specifying the width of the front clipping plane."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`height <abaqus.UtilityAndView.View.View.height>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid "A Float specifying the height of the front clipping plane."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`projection <abaqus.UtilityAndView.View.View.projection>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid "A SymbolicConstant specifying the projection mode."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+":py:obj:`cameraPosition "
+"<abaqus.UtilityAndView.View.View.cameraPosition>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1 ../../docstring
+#: abaqus.UtilityAndView.View.View.__init__:35
+#: abaqus.UtilityAndView.View.View.cameraPosition:1 of
+msgid "A sequence of three Floats specifying the camera position."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+":py:obj:`cameraUpVector "
+"<abaqus.UtilityAndView.View.View.cameraUpVector>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A sequence of three Floats specifying the camera's up vector (the "
+"screen's positive **Y**-axis)."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`cameraTarget <abaqus.UtilityAndView.View.View.cameraTarget>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1 ../../docstring
+#: abaqus.UtilityAndView.View.View.__init__:40
+#: abaqus.UtilityAndView.View.View.cameraTarget:1 of
+msgid "A sequence of three Floats specifying the center of the scene."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`viewOffsetX <abaqus.UtilityAndView.View.View.viewOffsetX>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A Float specifying the amount to pan the model in the screen "
+"**X**-direction as a fraction of the viewport width."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`viewOffsetY <abaqus.UtilityAndView.View.View.viewOffsetY>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ""
+"A Float specifying the amount to pan the model in the screen "
+"**Y**-direction as a fraction of the viewport height."
+msgstr ""
+
+#: ../../None:18:<autosummary>:1
+msgid ":py:obj:`autoFit <abaqus.UtilityAndView.View.View.autoFit>`\\"
+msgstr ""
+
+#: ../../None:18:<autosummary>:1 ../../docstring
+#: abaqus.UtilityAndView.View.View.__init__:53
+#: abaqus.UtilityAndView.View.View.autoFit:1 of
+msgid "A Boolean specifying whether the view is auto-fit when applied."
 msgstr ""
 
 #: ../../None:15:<autosummary>:1
@@ -2551,22 +2669,12 @@ msgid ""
 "PERSPECTIVE and PARALLEL."
 msgstr ""
 
-#: ../../docstring abaqus.UtilityAndView.View.View.__init__:35
-#: abaqus.UtilityAndView.View.View.cameraPosition:1 of
-msgid "A sequence of three Floats specifying the camera position."
-msgstr ""
-
 #: ../../docstring abaqus.UtilityAndView.View.View.__init__:37
 #: abaqus.UtilityAndView.View.View.cameraUpVector:1
 #: abaqus.UtilityAndView.View.View.setViewpoint:11 of
 msgid ""
 "A sequence of three Floats specifying the camera's up vector (the "
 "screen's positive **Y**-axis). The initial value is (0, 0, 0)."
-msgstr ""
-
-#: ../../docstring abaqus.UtilityAndView.View.View.__init__:40
-#: abaqus.UtilityAndView.View.View.cameraTarget:1 of
-msgid "A sequence of three Floats specifying the center of the scene."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View.__init__:42
@@ -2588,11 +2696,6 @@ msgid ""
 "A Float specifying the amount to pan the model in the screen "
 "**Y**-direction as a fraction of the viewport height. A positive value "
 "pans the model upward. A negative value pans the model downward."
-msgstr ""
-
-#: ../../docstring abaqus.UtilityAndView.View.View.__init__:53
-#: abaqus.UtilityAndView.View.View.autoFit:1 of
-msgid "A Boolean specifying whether the view is auto-fit when applied."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View.__init__:55
