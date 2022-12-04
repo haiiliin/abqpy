@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2746,40 +2746,49 @@ msgstr ""
 msgid "Check `Vertex on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`index <abaqus.BasicGeometry.Vertex.Vertex.index>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.index:1
 msgid "An Int specifying the index of the ConstrainedSketchVertex in the VertexArray."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`isReferenceRep <abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep:1
 msgid "A Boolean specifying whether the vertex belongs to the reference representation of the Part or Instance."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`featureName <abaqus.BasicGeometry.Vertex.Vertex.featureName>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.featureName:1
 msgid "A tuple of Floats specifying the name of the feature that created this vertex."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Vertex.Vertex.instanceName>`\\"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.instanceName:1
 msgid "A tuple of Floats specifying the name of the part instance for this vertex (if applicable)."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Vertex.Vertex.pointOn>`\\"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+#: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.pointOn:1
+msgid "A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -2807,10 +2816,6 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex.getElements:1
 #: ../../None:5:<autosummary>:1
 msgid "This method returns an array of element objects that are associated with the vertex."
-msgstr ""
-
-#: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.pointOn:1
-msgid "A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex."
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray:1

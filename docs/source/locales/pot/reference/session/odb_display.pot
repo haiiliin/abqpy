@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-04 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2234,6 +2234,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.__init__:13
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.name:1
 msgid "A String specifying the repository key."
 msgstr ""
@@ -4078,143 +4079,195 @@ msgstr ""
 msgid "The ViewCut object is used to store values and attributes associate with ViewCut type objects. ViewCut objects can be created using the methods described below. The methods accessed via the OdbDisplay object cause the ViewCut object to be added to the session.viewports[name].odbDisplay.viewCuts repository."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`angle <abaqus.OdbDisplay.ViewCut.ViewCut.angle>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:7
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.angle:1
 msgid "A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`motion <abaqus.OdbDisplay.ViewCut.ViewCut.motion>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set to PLANE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`position <abaqus.OdbDisplay.ViewCut.ViewCut.position>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:12
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.position:1
 msgid "A Float specifying the position of the cut defined with a **shape** set to PLANE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`radius <abaqus.OdbDisplay.ViewCut.ViewCut.radius>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:14
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.radius:1
 msgid "A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or SPHERE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`rotationAxis <abaqus.OdbDisplay.ViewCut.ViewCut.rotationAxis>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set to PLANE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`value <abaqus.OdbDisplay.ViewCut.ViewCut.value>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:20
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.value:1
 msgid "A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`showModelAboveCut <abaqus.OdbDisplay.ViewCut.ViewCut.showModelAboveCut>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying whether to display the model above the cut."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`showModelOnCut <abaqus.OdbDisplay.ViewCut.ViewCut.showModelOnCut>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying whether to display the model on the cut."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`showModelBelowCut <abaqus.OdbDisplay.ViewCut.ViewCut.showModelBelowCut>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying whether to display the model below the cut."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`showFreeBodyCut <abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying whether to display the free body cut."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`active <abaqus.OdbDisplay.ViewCut.ViewCut.active>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.active:1
 msgid "A Boolean specifying whether the cut is displayed."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`cutRange <abaqus.OdbDisplay.ViewCut.ViewCut.cutRange>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.cutRange:1
 msgid "A pair of Floats specifying the acceptable range for positioning the cut."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`followDeformation <abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying whether the cut will follow the deformation or be static."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`overrideAveraging <abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A Boolean specifying averaging for element based fields associated with isosurface cuts will be set to compute-average with a threshold of 100% when true."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`referenceFrame <abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "A SymbolicConstant specifying which reference frame will be used when the cut follows the deformation."
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ":py:obj:`crossSectionalArea <abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea>`\\"
 msgstr ""
 
-#: ../../None:18:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:1
 msgid "A Float returning the cross-sectional area of the cut when **showFreeBodyCut** is set to ON."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`name <abaqus.OdbDisplay.ViewCut.ViewCut.name>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`shape <abaqus.OdbDisplay.ViewCut.ViewCut.shape>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A SymbolicConstant specifying the shape of the ViewCut object."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`origin <abaqus.OdbDisplay.ViewCut.ViewCut.origin>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the origin of the plane, cylinder or sphere cut."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`normal <abaqus.OdbDisplay.ViewCut.ViewCut.normal>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the normal axis to the plane defining the cut, when the plane is defined using the **origin** argument or a SymbolicConstant defining this normal axis, when the cut is defined by the **csysName** argument."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`axis2 <abaqus.OdbDisplay.ViewCut.ViewCut.axis2>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis of the plane defining the cut, when the plane is defined using the **origin** argument or a SymbolicConstant defining this second axis, when the cut is defined by the **csysName** argument."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`csysName <abaqus.OdbDisplay.ViewCut.ViewCut.csysName>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A String specifying the name of the DatumCsys object to be used to define the cut."
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid ":py:obj:`cylinderAxis <abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis>`\\"
+msgstr ""
+
+#: ../../None:25:<autosummary>:1
+msgid "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the cylinder axis defining the cut, when the cut is defined using the **origin** argument or a SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName** argument."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
