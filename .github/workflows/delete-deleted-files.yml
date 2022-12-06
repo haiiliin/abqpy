@@ -24,7 +24,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Write pull request body to file
-      uses: DamianReeves/write-file-action@v1.1
+      uses: DamianReeves/write-file-action@v1.2
       with:
         path: ${{ github.workspace }}/pull_request_body.txt
         contents: ${{ github.event.pull_request.body }}
