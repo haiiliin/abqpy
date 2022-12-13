@@ -1,8 +1,13 @@
 # abqpy 2020
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
+<<<<<<< HEAD
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2020/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2020)
+=======
+[![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
+[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
