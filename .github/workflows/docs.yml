@@ -34,7 +34,7 @@ jobs:
     - uses: actions/cache@v3.0.11
       with:
         path: docs/build/${{ matrix.language }}/html
-        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.event.number }}
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
     - name: Installing the library
       shell: bash -l {0}
       run: |
@@ -51,4 +51,4 @@ jobs:
     - uses: actions/cache@v3.0.11
       with:
         path: docs/build/${{ matrix.language }}/html
-        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.event.number }}
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
