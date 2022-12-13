@@ -2,8 +2,7 @@ name: conflicts
 
 on:
   pull_request:
-    branches:
-    - 20**
+    branches: [ "2016", "2017", "2018", "2019", "2020", "2021", "2022" ]
     types: [opened, reopened, synchronize, labeled]
     paths: ['src/**', 'docs/**', '.github/**']
 
