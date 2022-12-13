@@ -20,59 +20,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 .. toggle::
 
-    .. autoclass:: abaqus.Assembly.Assembly.Assembly
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.AssemblyBase.AssemblyBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.AssemblyFeature.AssemblyFeature
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.ModelInstance.ModelInstance
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.PartInstance.PartInstance
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Assembly.PartInstanceArray.PartInstanceArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Assembly
+        :recursive:
+        :exclude: AssemblyModel
 ```
