@@ -31,59 +31,7 @@ Path commands are used to define a line through your model by specifying a serie
 
 .. toggle::
 
-    .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.Path.Path
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.PathAndProbe.Stream.Stream
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.PathAndProbe
+        :recursive:
+        :exclude: PathSession, FreeBody
 ```
