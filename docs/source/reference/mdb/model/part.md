@@ -28,64 +28,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 .. toggle::
 
-    .. autoclass:: abaqus.Part.Part.Part
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Part.PartFeature.PartFeature
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.RegionPart.RegionPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Part.AcisFile.AcisFile
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Part
+        :recursive:
+        :exclude: PartModel, PartBase
 ```

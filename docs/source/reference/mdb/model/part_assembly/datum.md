@@ -10,38 +10,6 @@ Each command also creates a Datum object in the corresponding datum repository. 
 
 .. toggle::
 
-    .. autoclass:: abaqus.Datum.Datum.Datum
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Datum
+        :recursive:
 ```
