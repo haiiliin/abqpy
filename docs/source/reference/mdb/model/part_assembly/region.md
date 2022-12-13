@@ -57,59 +57,7 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 
 .. toggle::
 
-    .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.Region.Region
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.RegionArray.RegionArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.Set.Set
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.Skin.Skin
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.Stringer.Stringer
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Region.Surface.Surface
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Region
+        :recursive:
+        :exclude: RegionPart, RegionAssembly
 ```
