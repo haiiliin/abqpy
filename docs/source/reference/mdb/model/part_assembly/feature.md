@@ -8,17 +8,6 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 .. toggle::
 
-    .. autoclass:: abaqus.Feature.Feature.Feature
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Feature.FeatureOptions.FeatureOptions
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Feature
+        :recursive:
 ```

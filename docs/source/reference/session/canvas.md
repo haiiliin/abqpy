@@ -22,72 +22,7 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 
 .. toggle::
 
-    .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-        :noindex:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.AttributeColorMap.AttributeColorMap
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.Canvas.Canvas
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.Displayable.Displayable
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.DrawingArea.DrawingArea
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. automodule:: abaqus.Canvas.Highlight
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-    .. autoclass:: abaqus.Canvas.ImageOptions.ImageOptions
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.Layer.Layer
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.MovieOptions.MovieOptions
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Canvas.ViewportBase.ViewportBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Annotation
+        :recursive:
+        :exclude: Viewport
 ```
