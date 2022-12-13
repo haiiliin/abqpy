@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  docs-test:
+  sphinx:
     if: >
       github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
