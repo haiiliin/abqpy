@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  delete:
+  resolve:
     if: >
       contains(github.event.pull_request.labels.*.name, 'backport') && 
       contains(github.event.pull_request.labels.*.name, 'conflicts')

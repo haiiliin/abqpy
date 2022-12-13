@@ -8,14 +8,14 @@ on:
     paths:
     - 'src/**'
     - 'tests/**'
-    - '.github/workflows/pytest.yml'
+    - '.github/workflows/package.yml'
   push:
     branches:
     - 20**
     paths:
     - 'src/**'
     - 'tests/**'
-    - '.github/workflows/pytest.yml'
+    - '.github/workflows/package.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
