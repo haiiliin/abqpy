@@ -31,7 +31,7 @@ class AutoMembers(SphinxDirective):
         return self._excluded_members
 
     def run(self):
-        return [node for _, member in self.get_members(self.module_name) for node in self.nodes_from_rst(member)]
+        return [node for member in self.get_members(self.module_name).values() for node in self.nodes_from_rst(member)]
 
     def nodes_from_rst(self, rst: list[str]) -> list[nodes.Node]:
         wrapper = nodes.paragraph()
