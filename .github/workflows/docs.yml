@@ -48,4 +48,7 @@ jobs:
         SOURCEDIR: docs/source
         BUILDDIR: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
         SPHINXOPTS: -b html -D language=${{ matrix.language }} -j auto
-
+    - uses: actions/cache@v3.0.11
+      with:
+        path: docs/build/${{ matrix.language }}/html
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.event.number }}
