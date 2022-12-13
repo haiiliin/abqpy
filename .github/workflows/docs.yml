@@ -43,7 +43,7 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build ${{ env.SOURCESDIR }} ${{ env.BUILDDIR }} ${{ env.SPHINXOPTS }}
+        sphinx-build ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }} ${{ env.SPHINXOPTS }}
       env:
         SOURCEDIR: docs/source
         BUILDDIR: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
