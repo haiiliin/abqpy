@@ -1,7 +1,7 @@
 # abqpy 2016
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
-[![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
+[![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2016/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2016)
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).

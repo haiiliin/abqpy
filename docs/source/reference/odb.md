@@ -21,7 +21,7 @@ The Python ODB API commands are used to read and write data from an output datab
 
 .. toggle::
 
-    .. autoclass:: abaqus.Odb.OdbBase.OdbBase
+    .. automembers:: abaqus.Odb.OdbBase.OdbBase
         :members:
         :special-members: __init__
         :show-inheritance:
