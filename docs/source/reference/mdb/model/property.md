@@ -20,66 +20,7 @@ The Property commands are used to create and manage reinforcements and to assign
 
 .. toggle::
 
-    .. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.CompositePly.CompositePly
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.CompositePlyArray.CompositePlyArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.MaterialOrientation.MaterialOrientation
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.MaterialOrientationArray.MaterialOrientationArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.PlyStackPlot.PlyStackPlot
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.PropertyAssembly.PropertyAssembly
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.SectionAssignment.SectionAssignment
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Property.SectionAssignmentArray.SectionAssignmentArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Property
+        :recursive:
+        :exclude: PropertyPart
 ```
