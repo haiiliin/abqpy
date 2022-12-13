@@ -37,7 +37,7 @@ session/xy
 
 .. toggle::
 
-    .. automembers:: abaqus.Session.SessionBase.SessionBase
+    .. autoclass:: abaqus.Session.SessionBase.SessionBase
         :members:
         :special-members: __init__
         :show-inheritance:
