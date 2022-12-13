@@ -15,6 +15,7 @@ permissions:
   contents: read
 
 jobs:
+<<<<<<< HEAD
   update-release:
     permissions:
       # write permission is required to create a github release
@@ -22,8 +23,10 @@ jobs:
       # write permission is required for autolabeler
       # otherwise, read permission is required at least
       pull-requests: write
+=======
+  update:
+>>>>>>> 5a7afae5 ([automation]: Update workflows (#3771))
     runs-on: ubuntu-latest
-
     steps:
       # (Optional) GitHub Enterprise requires GHE_HOST variable set
       #- name: Set GHE_HOST
