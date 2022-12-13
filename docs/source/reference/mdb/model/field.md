@@ -20,59 +20,7 @@ A Field object stores the non-propagating data of a field as well as a number of
 
 .. toggle::
 
-    .. autoclass:: abaqus.Field.Field.Field
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.DataTable.DataTable
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.MappedField.MappedField
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Field
+        :recursive:
+        :exclude: FieldModel
 ```
