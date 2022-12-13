@@ -19,6 +19,7 @@ A specific type of engineering feature object is designed for each type of engin
 
 .. toggle::
 
+<<<<<<< HEAD
     .. autoclass:: abaqus.EngineeringFeature.Crack.Crack
         :members:
         :special-members: __init__
@@ -130,4 +131,9 @@ A specific type of engineering feature object is designed for each type of engin
         :show-inheritance:
 
         .. autoclasstoc::
+=======
+    .. automembers:: abaqus.EngineeringFeature
+        :recursive:
+        :exclude: EngineeringFeature
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 ```

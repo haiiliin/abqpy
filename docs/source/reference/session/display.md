@@ -20,6 +20,7 @@ Display group commands are used to select a subset of the entities displayed in 
 
 .. toggle::
 
+<<<<<<< HEAD
     .. autoclass:: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
         :members:
         :special-members: __init__
@@ -278,4 +279,9 @@ Display group commands are used to select a subset of the entities displayed in 
         :show-inheritance:
 
         .. autoclasstoc::
+=======
+    .. automembers:: abaqus.DisplayGroup
+        :recursive:
+        :exclude: DisplayGroupSession
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 ```
