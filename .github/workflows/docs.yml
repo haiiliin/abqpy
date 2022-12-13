@@ -10,6 +10,7 @@ on:
     - 'docs/requirements.txt'
     - 'docs/source/**'
     - 'docs/source/locales/**'
+    - '.github/workflows/docs.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
