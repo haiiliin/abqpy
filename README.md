@@ -1,6 +1,6 @@
 # abqpy 2021
 
-[![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
+[![pytest](https://github.com/haiiliin/abqpy/actions/workflows/package.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/package.yml)
 [![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2021/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2021)
 
