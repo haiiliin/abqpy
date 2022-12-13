@@ -2,10 +2,10 @@ name: Update Release News
 
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 jobs:
-  update:
+  trigger:
     if: ${{ startsWith(github.ref_name, 'v2022') }}
     runs-on: ubuntu-latest
     steps:
