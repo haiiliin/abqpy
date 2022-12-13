@@ -1,7 +1,7 @@
 # abqpy 2023
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
-[![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
+[![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
