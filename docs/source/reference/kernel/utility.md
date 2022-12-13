@@ -20,66 +20,6 @@ View commands are used to transform three-dimensional views stored in Session an
 
 .. toggle::
 
-    .. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. automodule:: abaqus.UtilityAndView.Callback
-        :members:
-
-    .. automodule:: abaqus.UtilityAndView.Customization
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-    .. automodule:: abaqus.UtilityAndView.Delete
-        :members:
-
-    .. automodule:: abaqus.UtilityAndView.Method
-        :members:
-
-    .. autoclass:: abaqus.UtilityAndView.Repository.Repository
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. automodule:: abaqus.UtilityAndView.Status
-        :members:
-
-    .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.abaqusConstants
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-    .. automodule:: abaqus.UtilityAndView.Upgrade
-        :members:
-
-    .. automodule:: abaqus.UtilityAndView.User
-        :members:
-
-    .. autoclass:: abaqus.UtilityAndView.View.View
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.UtilityAndView
+        :recursive:
 ```

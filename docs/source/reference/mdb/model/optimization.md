@@ -31,6 +31,7 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
 .. toggle::
 
+<<<<<<< HEAD
     .. autoclass:: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion
         :members:
         :special-members: __init__
@@ -366,4 +367,9 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
         :show-inheritance:
 
         .. autoclasstoc::
+=======
+    .. automembers:: abaqus.Optimization
+        :recursive:
+        :exclude: OptimizationTaskModel, OptimizationTask
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 ```
