@@ -56,6 +56,7 @@ A specific type of interaction object and a specific type of interaction state o
 
 .. toggle::
 
+<<<<<<< HEAD
     .. autoclass:: abaqus.Interaction.ContactControl.ContactControl
         :members:
         :special-members: __init__
@@ -633,4 +634,9 @@ A specific type of interaction object and a specific type of interaction state o
         :show-inheritance:
 
         .. autoclasstoc::
+=======
+    .. automembers:: abaqus.Interaction
+        :recursive:
+        :exclude: InteractionModel, InteractionContactControlModel, InteractionContactInitializationModel, InteractionContactStabilizationModel, InteractionPropertyModel
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 ```
