@@ -32,7 +32,7 @@ Edit mesh commands are used to edit an orphan mesh part or part instance or an A
 
 .. toggle::
 
-    .. autoclass:: abaqus.EditMesh.MeshEditOptions.MeshEditOptions
-        :members:
-        :special-members: __init__
+    .. automembers:: abaqus.EditMesh
+        :recursive:
+        :exclude: MeshEditAssembly, MeshEditPart
 ```

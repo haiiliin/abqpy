@@ -45,6 +45,7 @@ The Material commands are used to define the materials in a model.
 
 .. toggle::
 
+<<<<<<< HEAD
     .. autoclass:: abaqus.Material.Density.Density.Density
         :members:
         :special-members: __init__
@@ -924,4 +925,9 @@ The Material commands are used to define the materials in a model.
         :show-inheritance:
 
         .. autoclasstoc::
+=======
+    .. automembers:: abaqus.Material
+        :recursive:
+        :exclude: MaterialModel, MaterialOdb, Material
+>>>>>>> 397e34e1 ([docs]: Use automembers directive to simplify the api docs (#3747))
 ```

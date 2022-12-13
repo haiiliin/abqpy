@@ -8,16 +8,6 @@ Text representation commands are used to determine how objects are printed on th
 
 .. toggle::
 
-    .. automodule:: abaqus.TextRepresentation.redentABQ
-        :members:
-
-    .. automodule:: abaqus.TextRepresentation.textRepr
-        :members:
-
-    .. autoclass:: abaqus.TextRepresentation.TextReprOptions.TextReprOptions
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.TextRepresentation
+        :recursive:
 ```

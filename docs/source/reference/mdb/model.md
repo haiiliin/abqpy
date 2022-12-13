@@ -47,17 +47,7 @@ model/step
 
 .. toggle::
 
-    .. autoclass:: abaqus.Model.ModelBase.ModelBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
+    .. automembers:: abaqus.Model
+        :recursive:
+        :exclude: Model
 ```
