@@ -31,7 +31,7 @@ class AutoMembers(SphinxDirective):
         return self._excluded_members
 
     def run(self):
-        return [node for member in self.get_members(self.module_name) for node in self.nodes_from_rst(member)]
+        return [node for _, member in self.get_members(self.module_name) for node in self.nodes_from_rst(member)]
 
     def nodes_from_rst(self, rst: list[str]) -> list[nodes.Node]:
         wrapper = nodes.paragraph()
@@ -42,9 +42,9 @@ class AutoMembers(SphinxDirective):
         return (self.module_name in getattr(obj, "__module__", obj.__name__) and
                 obj.__name__ not in self.excluded_members)
 
-    def get_members(self, module: str | ModuleType) -> set[list[str]]:
+    def get_members(self, module: str | ModuleType) -> dict[str, list[str]]:
         autodoc_options = self.env.config.automembers_autodoc_options
-        members = []
+        members = {}
         try:
             # If the module is already imported, use it directly
             module = importlib.import_module(module)
@@ -54,34 +54,37 @@ class AutoMembers(SphinxDirective):
                 for member in inspect.getmembers(module, inspect.isclass)
                 if self.should_include(member[1])
             ]
-            class_members = [
+            class_members = {
+                cls.__qualname__:
                 [f".. currentmodule:: {module.__name__}"]
                 + [f".. autoclass:: {cls.__qualname__}"]
                 + [f"    {option}" for option in autodoc_options]
-                for name, cls in classes
-            ]
-            members += class_members
+                for name, cls in classes if cls.__qualname__ not in members
+            }
+            members.update(class_members)
             # Function members
             functions = [
                 member
                 for member in inspect.getmembers(module, inspect.isfunction)
                 if self.should_include(member[1])
             ]
-            function_members = [
+            function_members = {
+                func.__qualname__:
                 [f".. currentmodule:: {module.__name__}"]
-                + [f".. autofunction:: {func.__qualname__}"] for name, func in functions
-            ]
-            members += function_members
+                + [f".. autofunction:: {func.__qualname__}"]
+                for name, func in functions if func.__qualname__ not in members
+            }
+            members.update(function_members)
             # submodule members
             if "recursive" in self.options and "__path__" in dir(module):
                 for moduleinfo in pkgutil.iter_modules(module.__path__):
                     fullname = f"{module.__name__}.{moduleinfo.name}"
                     if self.module_name not in fullname or fullname == self.module_name:
                         continue
-                    members += self.get_members(fullname)
-            return set(members)
+                    members.update(self.get_members(fullname))
+            return members
         except ImportError:
-            return set(members)
+            return members
 
 
 def setup(app: Sphinx) -> dict:
