@@ -17,10 +17,8 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
-
+  publish:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
