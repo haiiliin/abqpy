@@ -17,8 +17,8 @@ concurrency:
 
 jobs:
   docs-test:
-    if: |
-      github.base_ref == '2023' && matrix.language == 'en' ||
+    if: >
+      github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
     runs-on: ubuntu-latest
