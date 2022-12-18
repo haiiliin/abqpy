@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:22+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2069,7 +2069,8 @@ msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1
 #: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart:1 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart:1
+#: abaqus.EditMesh.MeshEditPart.Node:1 of
 msgid "Member Details:"
 msgstr ""
 
@@ -5029,6 +5030,10 @@ msgid "Other Classes"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1 of
 msgid ""
 "The MeshEditOptions object stores settings that specify the behavior when"
 " editing meshes on parts or part instances. The MeshEditOptions object "
@@ -5079,6 +5084,18 @@ msgid ""
 "assemblies in any model will be unaffected. The default value is OFF.If "
 "you change the value of **enableUndo** to True, Abaqus sets "
 "**_suspendUndo** to False."
+msgstr ""
+
+#: abaqus.EditMesh.MeshEditPart.Node:1 of
+msgid "Bases: :py:class:`~abaqus.Mesh.MeshNode.MeshNode`"
+msgstr ""
+
+#: ../../docstring abaqus.EditMesh.MeshEditPart.Node.coordinates:1 of
+msgid "A tuple of three Floats specifying the coordinates of the new node."
+msgstr ""
+
+#: ../../docstring abaqus.EditMesh.MeshEditPart.Node.label:1 of
+msgid "An Int specifying the node label."
 msgstr ""
 
 #~ msgid ""

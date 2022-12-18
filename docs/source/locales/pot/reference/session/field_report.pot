@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:22+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgstr ""
 msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
 msgid "Public Data Attributes:"
 msgstr ""
@@ -855,10 +854,7 @@ msgstr ""
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:0
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -1168,30 +1164,7 @@ msgstr ""
 msgid "Check `FieldReportOptions on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`numberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-#: ../../docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat:1
-msgid "Format of the number"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues>`\\ \\(numColumns\\, numberFormat\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:1
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies the FieldReportOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`NumberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat>`\\ \\(\\[blankPad\\, format\\, numDigits\\, ...\\]\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:1
-#: ../../None:4:<autosummary>:1
 msgid "This method creates a NumberFormat object."
 msgstr ""
 
@@ -1233,6 +1206,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:29
 msgid ":class:`NumberFormat`"
+msgstr ""
+
+#: ../../docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat:1
+msgid "Format of the number"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:1
+msgid "This method modifies the FieldReportOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:4
@@ -1283,12 +1264,7 @@ msgstr ""
 msgid "Check `FreeBodyReportOptions on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues>`\\ \\(\\[numDigits\\, forceThreshold\\, ...\\]\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:1
-#: ../../None:3:<autosummary>:1
 msgid "This method modifies the FreeBodyReportOptions object."
 msgstr ""
 
@@ -1334,294 +1310,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:13
 msgid "Check `OdbFieldVarList on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbfieldvarlistpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return repr(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\ \\(name\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return getattr(self, name)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self<value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self<=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self==value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self!=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self>value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self>=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement iter(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__init__ <builtins.list.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return len(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "x.__getitem__(y) <==> x[y]"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ \\(key\\, value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Set self[key] to value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Delete self[key]."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self+value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self*value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return value*self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return key in self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self+=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self*=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a reverse iterator over the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return the size of the list in memory, in bytes."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove all items from list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a shallow copy of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Append object to the end of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Insert object before index."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Extend list by appending elements from the iterable."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove and return item at index (default last)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove first occurrence of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return first index of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return number of occurrences of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Reverse *IN PLACE*."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Sort the list in ascending order and return None."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "See PEP 585"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <typing.Generic.__class_getitem__>`\\ \\(params\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init_subclass__ <typing.Generic.__init_subclass__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method is called when a class is subclassed."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
-msgid "Private Data Attributes:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
