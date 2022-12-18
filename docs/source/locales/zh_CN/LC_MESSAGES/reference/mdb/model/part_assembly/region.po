@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,11 +137,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
-#: abaqus.Region.RegionPart.RegionPart
-#: abaqus.Region.RegionPartBase.RegionPartBase abaqus.Region.Set.Set
-#: abaqus.Region.Skin.Skin abaqus.Region.Stringer.Stringer
-#: abaqus.Region.Surface.Surface of
+#: abaqus.Region.RegionPart.RegionPart of
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -835,12 +831,8 @@ msgstr ""
 msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
-#: abaqus.Region.Region.Region abaqus.Region.RegionAssembly.RegionAssembly
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
-#: abaqus.Region.RegionPart.RegionPart
-#: abaqus.Region.RegionPartBase.RegionPartBase abaqus.Region.Set.Set
-#: abaqus.Region.Skin.Skin abaqus.Region.Stringer.Stringer
-#: abaqus.Region.Surface.Surface of
+#: abaqus.Region.RegionAssembly.RegionAssembly
+#: abaqus.Region.RegionPart.RegionPart of
 msgid "Public Methods:"
 msgstr ""
 
@@ -869,7 +861,7 @@ msgid ""
 " faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "This method creates a skin from a sequence of objects in a model database."
 msgstr ""
 
@@ -879,7 +871,7 @@ msgid ""
 "\\(\\[name\\, faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "This method modifies underlying entities of the selected skin."
 msgstr ""
 
@@ -889,7 +881,7 @@ msgid ""
 "\\(name\\[\\, edges\\, elementEdges\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 "This method creates a stringer from a sequence of objects in a model "
 "database."
@@ -902,7 +894,7 @@ msgid ""
 "sets\\[\\, operation\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: abaqus.Region.RegionPart.RegionPart.SetByBoolean:1
 #: abaqus.Region.Set.Set.SetByBoolean:1 of
 msgid ""
@@ -916,7 +908,7 @@ msgid ""
 "<abaqus.Region.RegionPart.RegionPart.SetFromColor>`\\ \\(name\\, color\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 "This method creates a set containing faces of the part marked with a "
 "specified color attribute."
@@ -929,7 +921,7 @@ msgid ""
 "elementLabels\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:1
 #: abaqus.Region.Set.Set.SetFromElementLabels:1 of
 msgid ""
@@ -944,7 +936,7 @@ msgid ""
 "nodeLabels\\[\\, unsorted\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:1
 #: abaqus.Region.Set.Set.SetFromNodeLabels:1 of
 msgid ""
@@ -959,7 +951,7 @@ msgid ""
 "odbSets\\[\\, partSets\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:1
 #: abaqus.Region.Set.Set.MapSetsFromOdb:1 of
 msgid ""
@@ -3268,8 +3260,7 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
-#: abaqus.Region.Region.Region:1 abaqus.Region.RegionArray.RegionArray:1
-#: abaqus.Region.RegionAssembly.RegionAssembly:1
+#: abaqus.Region.Region.Region:1 abaqus.Region.RegionAssembly.RegionAssembly:1
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1
 #: abaqus.Region.RegionPart.RegionPart:1
 #: abaqus.Region.RegionPartBase.RegionPartBase:1 abaqus.Region.Set.Set:1
@@ -5226,230 +5217,6 @@ msgstr ""
 msgid "Other Classes"
 msgstr ""
 
-#: abaqus.Region.RegionPartBase.RegionPartBase:1 of
-msgid "Bases: :py:class:`~abaqus.Part.PartBase.PartBase`"
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase:10 of
-msgid ""
-"Check `RegionPartBase on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:1
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:1 of
-msgid ""
-"This command prints a message describing the relationship between the "
-"contents of two sets. Possible outcomes are:"
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:4
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:4 of
-msgid "Both sets are the same."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:5 of
-msgid "Set 2 is a subset of set 1."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:6 of
-msgid "Set 2 is a superset of set 1."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:7 of
-msgid "Set 2 intersects set 1."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:8 of
-msgid "Set 2 touches set 1 (their boundaries intersect)."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:9 of
-msgid "Set 2 and set 1 are disjoint."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:11
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:11 of
-msgid "This command accepts only positional arguments and has no keywords."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:14 of
-msgid ""
-"Check `Part.clashSets on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partclashsetspyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:17
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:17 of
-msgid "A Set or Surface object specifying set 1."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:19
-#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:19 of
-msgid "A Set or Surface object specifying set 2."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:4 of
-msgid ""
-"Check `Part.deleteSets on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partdeletesetspyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:7 of
-msgid ""
-"A sequence of Strings specifying the set names that will be deleted from "
-"the part."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:4 of
-msgid ""
-"Check `Part.deleteSurfaces on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partdeletesurfacespyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:7 of
-msgid ""
-"A sequence of Strings specifying the surface names that will be deleted "
-"from the part."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal:4 of
-msgid ""
-"Check `Part.isSetInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partissetinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:7
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:7
-#: abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal:7
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:7 of
-msgid "A string specifying the Set name."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:4 of
-msgid ""
-"Check `Part.isSurfaceInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partissurfaceinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:7
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:7
-#: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:7
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:7 of
-msgid "A string specifying the Surface name."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:4 of
-msgid ""
-"Check `Part.markSetInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partmarksetinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:9
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:9 of
-msgid "A Boolean specifying whether the Set should be marked as internal."
-msgstr ""
-
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:4 of
-msgid ""
-"Check `Part.markSurfaceInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partmarksurfaceinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:9
-#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:9 of
-msgid "A Boolean specifying whether the Surface should be marked as internal."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1 of
-msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1 of
-msgid ""
-"The following commands operate on Assembly objects. For more information "
-"about the Assembly object, see Assembly object."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:10 of
-msgid ""
-"Check `RegionAssemblyBase on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:14 of
-msgid ""
-"Check `Assembly.clashSets on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyclashsetspyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:4 of
-msgid ""
-"Check `Assembly.deleteSets on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblydeletesetspyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:7 of
-msgid ""
-"A sequence of Strings specifying the set names that will be deleted from "
-"the assembly."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:4 of
-msgid ""
-"Check `Assembly.deleteSurfaces on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblydeletesurfacespyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:7 of
-msgid ""
-"A sequence of Strings specifying the surface names that will be deleted "
-"from the assembly."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:4 of
-msgid ""
-"Check `Assembly.isSetInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyissetinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:4 of
-msgid ""
-"Check `Assembly.isSurfaceInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyissurfaceinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:4 of
-msgid ""
-"Check `Assembly.markSetInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblymarksetinternalpyc>`__."
-msgstr ""
-
-#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:4 of
-msgid ""
-"Check `Assembly.markSurfaceInternal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblymarksurfaceinternalpyc>`__."
-msgstr ""
-
 #: abaqus.Region.Region.Region:1 abaqus.Region.Skin.Skin:1
 #: abaqus.Region.Stringer.Stringer:1 of
 msgid "Bases: :py:class:`object`"
@@ -5501,10 +5268,157 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-regionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1 of
 msgid ""
-":py:obj:`__init__ <abaqus.Region.Region.Region.__init__>`\\ "
-"\\(\\[xVertices\\, xEdges\\, xFaces\\, ...\\]\\)"
+"The following commands operate on Assembly objects. For more information "
+"about the Assembly object, see Assembly object."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:10 of
+msgid ""
+"Check `RegionAssemblyBase on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:1
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:1 of
+msgid ""
+"This command prints a message describing the relationship between the "
+"contents of two sets. Possible outcomes are:"
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:4
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:4 of
+msgid "Both sets are the same."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:5
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:5 of
+msgid "Set 2 is a subset of set 1."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:6
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:6 of
+msgid "Set 2 is a superset of set 1."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:7
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:7 of
+msgid "Set 2 intersects set 1."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:8
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:8 of
+msgid "Set 2 touches set 1 (their boundaries intersect)."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:9
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:9 of
+msgid "Set 2 and set 1 are disjoint."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:11
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:11 of
+msgid "This command accepts only positional arguments and has no keywords."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:14 of
+msgid ""
+"Check `Assembly.clashSets on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyclashsetspyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:17
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:17 of
+msgid "A Set or Surface object specifying set 1."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:19
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:19 of
+msgid "A Set or Surface object specifying set 2."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:4 of
+msgid ""
+"Check `Assembly.deleteSets on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblydeletesetspyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:7 of
+msgid ""
+"A sequence of Strings specifying the set names that will be deleted from "
+"the assembly."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:4 of
+msgid ""
+"Check `Assembly.deleteSurfaces on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblydeletesurfacespyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:7 of
+msgid ""
+"A sequence of Strings specifying the surface names that will be deleted "
+"from the assembly."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:4 of
+msgid ""
+"Check `Assembly.isSetInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyissetinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:7
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:7
+#: abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal:7
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:7 of
+msgid "A string specifying the Set name."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:4 of
+msgid ""
+"Check `Assembly.isSurfaceInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyissurfaceinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:7
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:7
+#: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:7
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:7 of
+msgid "A string specifying the Surface name."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:4 of
+msgid ""
+"Check `Assembly.markSetInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblymarksetinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:9
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:9 of
+msgid "A Boolean specifying whether the Set should be marked as internal."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:4 of
+msgid ""
+"Check `Assembly.markSurfaceInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblymarksurfaceinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:9
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:9 of
+msgid "A Boolean specifying whether the Surface should be marked as internal."
 msgstr ""
 
 #: abaqus.Region.Set.Set:1 abaqus.Region.Surface.Surface:1 of
@@ -5525,154 +5439,176 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Region.Set.Set.elements>`\\"
+#: ../../docstring abaqus.Region.Set.Set.cells:1 of
+msgid "A CellArray object."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
-#: ../../None:5:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Region.Set.Set.elements:1 abaqus.Region.Skin.Skin.elements:1
-#: abaqus.Region.Stringer.Stringer.elements:1
-#: abaqus.Region.Surface.Surface.elements:1 of
-msgid "A MeshElementArray object."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Region.Set.Set.nodes>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Region.Set.Set.nodes:1 abaqus.Region.Surface.Surface.nodes:1 of
-msgid "A MeshNodeArray object."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Region.Set.Set.vertices>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Region.Set.Set.vertices:1 abaqus.Region.Set.Set.xVertices:1 of
-msgid "A VertexArray object."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Region.Set.Set.edges>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
-#: ../../None:5:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Region.Set.Set.edges:1 abaqus.Region.Set.Set.xEdges:1
+#: ../../docstring abaqus.Region.Set.Set.edges:1 abaqus.Region.Set.Set.xEdges:1
 #: abaqus.Region.Skin.Skin.edges:1 abaqus.Region.Stringer.Stringer.edges:1
 #: abaqus.Region.Surface.Surface.edges:1 of
 msgid "An EdgeArray object."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.Region.Set.Set.faces>`\\"
+#: ../../docstring abaqus.Region.Set.Set.elements:1
+#: abaqus.Region.Skin.Skin.elements:1
+#: abaqus.Region.Stringer.Stringer.elements:1
+#: abaqus.Region.Surface.Surface.elements:1 of
+msgid "A MeshElementArray object."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:8:<autosummary>:1 ../../docstring abaqus.Region.Set.Set.faces:1
-#: abaqus.Region.Set.Set.xFaces:1 abaqus.Region.Skin.Skin.faces:1
-#: abaqus.Region.Surface.Surface.faces:1 of
+#: ../../docstring abaqus.Region.Set.Set.faces:1 abaqus.Region.Set.Set.xFaces:1
+#: abaqus.Region.Skin.Skin.faces:1 abaqus.Region.Surface.Surface.faces:1 of
 msgid "A FaceArray object."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`cells <abaqus.Region.Set.Set.cells>`\\"
+#: ../../docstring abaqus.Region.Set.Set.nodes:1
+#: abaqus.Region.Surface.Surface.nodes:1 of
+msgid "A MeshNodeArray object."
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../docstring abaqus.Region.Set.Set.cells:1
-#: of
-msgid "A CellArray object."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`xVertices <abaqus.Region.Set.Set.xVertices>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`xEdges <abaqus.Region.Set.Set.xEdges>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`xFaces <abaqus.Region.Set.Set.xFaces>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`referencePoints <abaqus.Region.Set.Set.referencePoints>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Region.Set.Set.referencePoints:1 of
+#: ../../docstring abaqus.Region.Set.Set.referencePoints:1 of
 msgid "A ReferencePointArray object."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Region.Set.Set.__init__>`\\ \\(\\[skinFaces\\, "
-"skinEdges\\, stringerEdges\\]\\)"
+#: ../../docstring abaqus.Region.Set.Set.vertices:1
+#: abaqus.Region.Set.Set.xVertices:1 of
+msgid "A VertexArray object."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: abaqus.Region.Surface.Surface:1 of
 msgid ""
-":py:obj:`SetByBoolean <abaqus.Region.Set.Set.SetByBoolean>`\\ \\(name\\, "
-"sets\\[\\, operation\\]\\)"
+"The Surface object stores surfaces selected from the assembly. A surface "
+"is comprised of geometric or discrete entities but not both. An instance "
+"of a Surface object is available from the **surface** member of the "
+"Assembly object."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: abaqus.Region.Surface.Surface.SurfaceByBoolean:1 of
 msgid ""
-":py:obj:`SetFromColor <abaqus.Region.Set.Set.SetFromColor>`\\ \\(name\\, "
-"color\\)"
+"This method creates a surface by performing a boolean operation on two or"
+" more input surfaces."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`SetFromElementLabels "
-"<abaqus.Region.Set.Set.SetFromElementLabels>`\\ \\(name\\, "
-"elementLabels\\)"
+#: abaqus.Region.Surface.Surface.SurfaceByBoolean:13 of
+msgid "A sequence of Surface objects."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: abaqus.Region.Surface.Surface.SurfaceByBoolean:15 of
 msgid ""
-":py:obj:`SetFromNodeLabels <abaqus.Region.Set.Set.SetFromNodeLabels>`\\ "
-"\\(name\\, nodeLabels\\[\\, unsorted\\]\\)"
+"A SymbolicConstant specifying the boolean operation to perform. Possible "
+"values are UNION, INTERSECTION, and DIFFERENCE. The default value is "
+"UNION. Note that if DIFFERENCE is specified, the order of the given input"
+" surfaces is important; All surfaces specified after the first one are "
+"subtracted from the first one."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:1 of
 msgid ""
-":py:obj:`MapSetsFromOdb <abaqus.Region.Set.Set.MapSetsFromOdb>`\\ "
-"\\(odbPath\\, odbSets\\[\\, partSets\\, ...\\]\\)"
+"This method creates a surface from a sequence of element sets in a model "
+"database."
+msgstr ""
+
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:10 of
+msgid ""
+"Check `SurfaceFromElsets on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacefromelsetspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:15 of
+msgid ""
+"A sequence of element sets. For example,`elementSetSeq=((elset1, "
+"S1),(elset2, S2))`where "
+"`elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` "
+"indicate the side of the element set."
+msgstr ""
+
+#: ../../docstring abaqus.Region.Surface.Surface.instances:1 of
+msgid ""
+"A tuple of Ints specifying the instances. This member is not applicable "
+"for a Surface object on an output database."
+msgstr ""
+
+#: ../../docstring abaqus.Region.Surface.Surface.sides:1 of
+msgid ""
+"A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, "
+"SIDE2)."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase:1 of
+msgid "Bases: :py:class:`~abaqus.Part.PartBase.PartBase`"
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase:10 of
+msgid ""
+"Check `RegionPartBase on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:14 of
+msgid ""
+"Check `Part.clashSets on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partclashsetspyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:4 of
+msgid ""
+"Check `Part.deleteSets on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partdeletesetspyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:7 of
+msgid ""
+"A sequence of Strings specifying the set names that will be deleted from "
+"the part."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:4 of
+msgid ""
+"Check `Part.deleteSurfaces on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partdeletesurfacespyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:7 of
+msgid ""
+"A sequence of Strings specifying the surface names that will be deleted "
+"from the part."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal:4 of
+msgid ""
+"Check `Part.isSetInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partissetinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:4 of
+msgid ""
+"Check `Part.isSurfaceInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partissurfaceinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:4 of
+msgid ""
+"Check `Part.markSetInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partmarksetinternalpyc>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:4 of
+msgid ""
+"Check `Part.markSurfaceInternal on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
+"#simaker-partmarksurfaceinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.Skin.Skin:1 of
 msgid ""
 "The Skin object stores information on skin reinforcements created on "
 "entities."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Region.Skin.Skin.elements>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Region.Skin.Skin.edges>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.Region.Skin.Skin.faces>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Region.Skin.Skin.__init__>`\\ \\(name\\[\\, "
-"faces\\, edges\\, elementFaces\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`EditSkin <abaqus.Region.Skin.Skin.EditSkin>`\\ \\(\\[name\\, "
-"faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
 #: abaqus.Region.Skin.Skin.EditSkin:15 abaqus.Region.Skin.Skin.__init__:15 of
@@ -5702,30 +5638,6 @@ msgstr ""
 msgid ""
 "The Stringer object stores information on stringer reinforcements created"
 " on entities."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Region.Stringer.Stringer.elements>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Region.Stringer.Stringer.edges>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Region.Stringer.Stringer.__init__>`\\ "
-"\\(name\\[\\, edges\\, elementEdges\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`EditStringer <abaqus.Region.Stringer.Stringer.EditStringer>`\\ "
-"\\(name\\[\\, edges\\, elementEdges\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies underlying entities of the selected stringer."
 msgstr ""
 
 #: abaqus.Region.Stringer.Stringer.EditStringer:1 of
@@ -5765,114 +5677,6 @@ msgid ""
 "Check `Stringer.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerpyc.htm?contextscope=all"
 "#simaker-stringer__init__pyc>`__."
-msgstr ""
-
-#: abaqus.Region.Surface.Surface:1 of
-msgid ""
-"The Surface object stores surfaces selected from the assembly. A surface "
-"is comprised of geometric or discrete entities but not both. An instance "
-"of a Surface object is available from the **surface** member of the "
-"Assembly object."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Region.Surface.Surface.edges>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.Region.Surface.Surface.faces>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Region.Surface.Surface.elements>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Region.Surface.Surface.nodes>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`sides <abaqus.Region.Surface.Surface.sides>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Region.Surface.Surface.sides:1 of
-msgid ""
-"A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, "
-"SIDE2)."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`instances <abaqus.Region.Surface.Surface.instances>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A tuple of Ints specifying the instances."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Region.Surface.Surface.__init__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`SurfaceByBoolean "
-"<abaqus.Region.Surface.Surface.SurfaceByBoolean>`\\ \\(name\\, "
-"surfaces\\[\\, operation\\]\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-#: abaqus.Region.Surface.Surface.SurfaceByBoolean:1 of
-msgid ""
-"This method creates a surface by performing a boolean operation on two or"
-" more input surfaces."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`SurfaceFromElsets "
-"<abaqus.Region.Surface.Surface.SurfaceFromElsets>`\\ \\(name\\, "
-"elementSetSeq\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-#: abaqus.Region.Surface.Surface.SurfaceFromElsets:1 of
-msgid ""
-"This method creates a surface from a sequence of element sets in a model "
-"database."
-msgstr ""
-
-#: abaqus.Region.Surface.Surface.SurfaceByBoolean:13 of
-msgid "A sequence of Surface objects."
-msgstr ""
-
-#: abaqus.Region.Surface.Surface.SurfaceByBoolean:15 of
-msgid ""
-"A SymbolicConstant specifying the boolean operation to perform. Possible "
-"values are UNION, INTERSECTION, and DIFFERENCE. The default value is "
-"UNION. Note that if DIFFERENCE is specified, the order of the given input"
-" surfaces is important; All surfaces specified after the first one are "
-"subtracted from the first one."
-msgstr ""
-
-#: abaqus.Region.Surface.Surface.SurfaceFromElsets:10 of
-msgid ""
-"Check `SurfaceFromElsets on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacefromelsetspyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Region.Surface.Surface.SurfaceFromElsets:15 of
-msgid ""
-"A sequence of element sets. For example,`elementSetSeq=((elset1, "
-"S1),(elset2, S2))`where "
-"`elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` "
-"indicate the side of the element set."
-msgstr ""
-
-#: ../../docstring abaqus.Region.Surface.Surface.instances:1 of
-msgid ""
-"A tuple of Ints specifying the instances. This member is not applicable "
-"for a Surface object on an output database."
 msgstr ""
 
 #~ msgid ""
@@ -8824,5 +8628,150 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "A :py:class:`~abaqus.Region.Stringer.Stringer` object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Region.Region.Region.__init__>`\\ "
+#~ "\\(\\[xVertices\\, xEdges\\, xFaces\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`elements <abaqus.Region.Set.Set.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`nodes <abaqus.Region.Set.Set.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`vertices <abaqus.Region.Set.Set.vertices>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edges <abaqus.Region.Set.Set.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`faces <abaqus.Region.Set.Set.faces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`cells <abaqus.Region.Set.Set.cells>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`xVertices <abaqus.Region.Set.Set.xVertices>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`xEdges <abaqus.Region.Set.Set.xEdges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`xFaces <abaqus.Region.Set.Set.xFaces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`referencePoints <abaqus.Region.Set.Set.referencePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Region.Set.Set.__init__>`\\ "
+#~ "\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SetByBoolean <abaqus.Region.Set.Set.SetByBoolean>`\\"
+#~ " \\(name\\, sets\\[\\, operation\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SetFromColor <abaqus.Region.Set.Set.SetFromColor>`\\"
+#~ " \\(name\\, color\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SetFromElementLabels "
+#~ "<abaqus.Region.Set.Set.SetFromElementLabels>`\\ \\(name\\, "
+#~ "elementLabels\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SetFromNodeLabels "
+#~ "<abaqus.Region.Set.Set.SetFromNodeLabels>`\\ \\(name\\, "
+#~ "nodeLabels\\[\\, unsorted\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MapSetsFromOdb "
+#~ "<abaqus.Region.Set.Set.MapSetsFromOdb>`\\ \\(odbPath\\, "
+#~ "odbSets\\[\\, partSets\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`elements <abaqus.Region.Skin.Skin.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edges <abaqus.Region.Skin.Skin.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`faces <abaqus.Region.Skin.Skin.faces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Region.Skin.Skin.__init__>`\\ "
+#~ "\\(name\\[\\, faces\\, edges\\, elementFaces\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EditSkin <abaqus.Region.Skin.Skin.EditSkin>`\\ "
+#~ "\\(\\[name\\, faces\\, edges\\, elementFaces\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`elements <abaqus.Region.Stringer.Stringer.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edges <abaqus.Region.Stringer.Stringer.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Region.Stringer.Stringer.__init__>`\\"
+#~ " \\(name\\[\\, edges\\, elementEdges\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EditStringer "
+#~ "<abaqus.Region.Stringer.Stringer.EditStringer>`\\ \\(name\\[\\,"
+#~ " edges\\, elementEdges\\]\\)"
+#~ msgstr ""
+
+#~ msgid "This method modifies underlying entities of the selected stringer."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edges <abaqus.Region.Surface.Surface.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`faces <abaqus.Region.Surface.Surface.faces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`elements <abaqus.Region.Surface.Surface.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`nodes <abaqus.Region.Surface.Surface.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`sides <abaqus.Region.Surface.Surface.sides>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`instances <abaqus.Region.Surface.Surface.instances>`\\"
+#~ msgstr ""
+
+#~ msgid "A tuple of Ints specifying the instances."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__init__ <abaqus.Region.Surface.Surface.__init__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SurfaceByBoolean "
+#~ "<abaqus.Region.Surface.Surface.SurfaceByBoolean>`\\ \\(name\\,"
+#~ " surfaces\\[\\, operation\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SurfaceFromElsets "
+#~ "<abaqus.Region.Surface.Surface.SurfaceFromElsets>`\\ \\(name\\,"
+#~ " elementSetSeq\\)"
 #~ msgstr ""
 
