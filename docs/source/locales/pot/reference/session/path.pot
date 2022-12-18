@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,7 @@ msgstr ""
 msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/CurrentProbeValues.py:docstring of abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:0
-#: ../../../../src/abaqus/PathAndProbe/NodeQuery.py:docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery:0
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession:0
-#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:0
-#: ../../../../src/abaqus/PathAndProbe/SelectedProbeValues.py:docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -858,12 +853,7 @@ msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:0
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession:0
-#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:0
-#: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport:0
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:0
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -873,7 +863,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:1
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:1
-#: ../../None:3:<autosummary>:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a Path object."
 msgstr ""
@@ -884,7 +873,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:1
 #: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:1
-#: ../../None:3:<autosummary>:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a Spectrum object and places it in the spectrums repository."
 msgstr ""
@@ -895,7 +883,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:1
 #: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:1
-#: ../../None:3:<autosummary>:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates aStream object and places it in the streams repository."
 msgstr ""
@@ -1058,14 +1045,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:12
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:12
-#: ../../None:14:<autosummary>:1
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.name:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.name:1
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:14
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:14
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.type:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.type:1
 msgid "A SymbolicConstant specifying the type of path being created. Possible values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
@@ -1101,49 +1087,49 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:39
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:39
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.circleDefinition:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.circleDefinition:1
 msgid "A SymbolicConstant specifying the method in which the circle is being defined. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL. Possible values are ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in **expression** are points on the rotational axis and the third point lies on the x-axis. When the value is POINT_ARC, the three points in **expression** are points lying on the arc of the circle."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:46
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:46
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.numSegments:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.numSegments:1
 msgid "An Int specifying the number of equal segments in the path. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:49
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:49
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.startAngle:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startAngle:1
 msgid "A Float specifying the start angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:52
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:52
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.endAngle:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endAngle:1
 msgid "A Float specifying the end angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:55
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:55
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.radius:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:58
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:58
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.radialAngle:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radialAngle:1
 msgid "A Float specifying the angle between the radial path and the **X**-axis of the specified coordinate system. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:61
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:61
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.startRadius:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:64
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:64
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.endRadius:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
@@ -1384,14 +1370,6 @@ msgstr ""
 msgid "Check `CurrentProbeValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-currentprobevaluespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`values <abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid "A tuple of Floats specifying the values obtained while probing."
-msgstr ""
-
 #: ../../docstring of abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues.values:1
 msgid "A tuple of Floats specifying the values obtained while probing. These values are updated constantly as the user moves the mouse over the object being probed."
 msgstr ""
@@ -1404,134 +1382,44 @@ msgstr ""
 msgid "Check `NodeQuery on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodequerypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`nodeId <abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "An Int specifying the ID of the most recently queried node."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`nodePos <abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: ../../docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos:1
-msgid "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently queried node."
-msgstr ""
-
 #: ../../docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery.nodeId:1
 msgid "An Int specifying the ID of the most recently queried node. If the last query was unsuccessful, **nodeID** = −1."
+msgstr ""
+
+#: ../../docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos:1
+msgid "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently queried node."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:1
 msgid "The Path object defines a line through your model by specifying a series of nodes or points."
 msgstr ""
 
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`coordinates <abaqus.PathAndProbe.Path.Path.coordinates>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PathAndProbe.Path.Path.name>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`type <abaqus.PathAndProbe.Path.Path.type>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of path being created."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`expression <abaqus.PathAndProbe.Path.Path.expression>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.expression:1
-msgid "of three Floats, specifying the coordinates of the points used to define a coordinate system."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`circleDefinition <abaqus.PathAndProbe.Path.Path.circleDefinition>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the method in which the circle is being defined."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`numSegments <abaqus.PathAndProbe.Path.Path.numSegments>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "An Int specifying the number of equal segments in the path."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startAngle <abaqus.PathAndProbe.Path.Path.startAngle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A Float specifying the start angle of the circumferential path."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endAngle <abaqus.PathAndProbe.Path.Path.endAngle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A Float specifying the end angle of the circumferential path."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`radius <abaqus.PathAndProbe.Path.Path.radius>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the circumferential path."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`radialAngle <abaqus.PathAndProbe.Path.Path.radialAngle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A Float specifying the angle between the radial path and the **X**-axis of the specified coordinate system."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startRadius <abaqus.PathAndProbe.Path.Path.startRadius>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial path."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endRadius <abaqus.PathAndProbe.Path.Path.endRadius>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial path."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.PathAndProbe.Path.Path.__init__>`\\ \\(name\\, type\\, expression\\, ...\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:9
 msgid "Check `Path.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pathpyc.htm?contextscope=all#simaker-path__init__pyc>`__."
 msgstr ""
 
-#: ../../docstring of abaqus.PathAndProbe.Path.Path.coordinates:1
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.coordinates:1
 msgid "If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be used as the value for the **expression** argument when creating a Path object of **type** = POINT_LIST."
+msgstr ""
+
+#: ../../docstring of abaqus.PathAndProbe.PathSession.Path.expression:1
+msgid "of three Floats, specifying the coordinates of the points used to define a coordinate system."
+msgstr ""
+
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:1
+msgid "The Spectrum object defines a color spectrum for the contour display."
+msgstr ""
+
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:9
+msgid "Check `Spectrum.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all#simaker-spectrum__init__pyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:1
+msgid "TheStream object defines a set of streamlines in fluid mechanics."
+msgstr ""
+
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:9
+msgid "Check `Stream.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streampyc.htm?contextscope=all#simaker-stream__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1
@@ -1540,167 +1428,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:15
 msgid "Check `ProbeOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probeoptionspyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`probeEntity <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeEntity>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A SymbolicConstant specifying the entity being probed when **probeObject** = \"ODB\"."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`probeOutputPosition <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeOutputPosition>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A SymbolicConstant specifying the output position to probe for field output results when **probeObject** = \"ODB\"."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`partInstance <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.partInstance>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the part instance information."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`elementID <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementID>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the element ID information."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`elementType <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementType>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the element type information."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`elementConnectivity <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementConnectivity>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the element connectivity."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`elementFieldResults <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.elementFieldResults>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the element field output results."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`nodeId <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeId>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the node ID when **probeObject** = ODB and **probeEntity** = NODE."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`baseCoordinates <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.baseCoordinates>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the base coordinates of a node when **probeObject** = ODB and **probeEntity** = NODE."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`deformedCoordinates <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.deformedCoordinates>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the deformed coordinates of a node when **probeObject** = ODB and **probeEntity** = NODE."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`attachedElements <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.attachedElements>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the elements attached to a node when **probeObject** = ODB and **probeEntity** = NODE."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`nodeFieldResults <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.nodeFieldResults>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the node field output results."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`legend <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.legend>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the legend for a curve being probed."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`xValue <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.xValue>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the **x**-coordinate value of the point on the curve being probed."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`yValue <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.yValue>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the **y**-coordinate value of the point on the curve being probed."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`sequenceID <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.sequenceID>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to display the sequence ID of the point on the curve being probed."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`interpolateXy <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.interpolateXy>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether to interpolate values within a line segment when **probeObject** = XYPlot."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`isFieldOutputAvailable <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.isFieldOutputAvailable>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A Boolean specifying whether field output is available for probing when **probeObject** = XYPlot."
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid ":py:obj:`probeObject <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.probeObject>`\\"
-msgstr ""
-
-#: ../../None:21:<autosummary>:1
-msgid "A String specifying the type of the displayed object being probed."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues>`\\ \\(\\[options\\, probeEntity\\, ...\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:1
-#: ../../None:3:<autosummary>:1
-msgid "This method modifies the settings on the ProbeOptions object."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:45
@@ -1786,6 +1513,10 @@ msgstr ""
 msgid "A Boolean specifying whether to display the sequence ID of the point on the curve being probed. This member is valid when **probeObject** = XYPlot. The default value is ON."
 msgstr ""
 
+#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:1
+msgid "This method modifies the settings on the ProbeOptions object."
+msgstr ""
+
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:4
 msgid "Check `ProbeOptions.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probeoptionspyc.htm?contextscope=all#simaker-probeoptionssetvaluespyc>`__."
 msgstr ""
@@ -1812,12 +1543,7 @@ msgstr ""
 msgid "Check `ProbeReport on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probereportpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues>`\\ \\(\\[options\\, numColumns\\, numDigits\\, ...\\]\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues:1
-#: ../../None:3:<autosummary>:1
 msgid "This method modifies the ProbeReport object."
 msgstr ""
 
@@ -1861,62 +1587,18 @@ msgstr ""
 msgid "Check `SelectedProbeValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-selectedprobevaluespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`length <abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.length>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.length:1
-msgid "An Int specifying the length of the **values** member."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`fieldOutputAvailable <abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.fieldOutputAvailable:1
 msgid "A Boolean specifying whether any probe values have been selected (as is necessary prior to writing to a file)."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`values <abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.values>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.values:1
-msgid "A tuple of tuples of Floats specifying the selected probe values."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`lastValues <abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.lastValues>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
 #: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.lastValues:1
 msgid "A tuple of Floats specifying the last sequence of the **values** member."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:1
-msgid "The Spectrum object defines a color spectrum for the contour display."
+#: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.length:1
+msgid "An Int specifying the length of the **values** member."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.PathAndProbe.Spectrum.Spectrum.__init__>`\\ \\(name\\, colors\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:9
-msgid "Check `Spectrum.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all#simaker-spectrum__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:1
-msgid "TheStream object defines a set of streamlines in fluid mechanics."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.PathAndProbe.Stream.Stream.__init__>`\\ \\(name\\, numPointsOnRake\\[\\, pointA\\, ...\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:9
-msgid "Check `Stream.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streampyc.htm?contextscope=all#simaker-stream__init__pyc>`__."
+#: ../../docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues.values:1
+msgid "A tuple of tuples of Floats specifying the selected probe values."
 msgstr ""
