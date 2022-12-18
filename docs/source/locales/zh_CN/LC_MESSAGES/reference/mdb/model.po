@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,8 +83,7 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Model.KeywordBlock.KeywordBlock abaqus.Model.Model.Model
-#: abaqus.Model.ModelBase.ModelBase of
+#: abaqus.Model.Model.Model of
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -6888,8 +6887,7 @@ msgid ""
 "<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
-#: abaqus.Model.KeywordBlock.KeywordBlock abaqus.Model.Model.Model
-#: abaqus.Model.ModelBase.ModelBase of
+#: abaqus.Model.Model.Model of
 msgid "Public Methods:"
 msgstr ""
 
@@ -9301,6 +9299,174 @@ msgstr ""
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
+#: abaqus.Model.KeywordBlock.KeywordBlock:1 of
+msgid ""
+"The KeywordBlock object contains a representation of its model in the "
+"Abaqus input file format. You may edit the contents of the KeywordBlock "
+"to add solver functionality that is not supported by Abaqus/CAE. As a "
+"general rule, edits to the KeywordBlock object should be made as the last"
+" step prior to writing the actual Abaqus input file, thus avoiding "
+"possible conflicts with changes made using other MDB commands. The "
+"KeywordBlock object has no constructor. A KeywordBlock object is created "
+"when you create a model object. A model object contains only one "
+"KeywordBlock object."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock:15 of
+msgid ""
+"Check `KeywordBlock on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../docstring abaqus.Model.ModelBase.KeywordBlock.edited:1 of
+msgid ""
+"A Boolean specifying whether the Keywords Editor has been used to change "
+"the model."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert:1 of
+msgid ""
+"This method inserts a String at a specified position in the **sieBlocks**"
+" member."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert:4 of
+msgid ""
+"Check `KeywordBlock.insert on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
+"#simaker-keywordblockinsertpyc>`__."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace
+#: abaqus.Model.KeywordBlock.KeywordBlock.setValues
+#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions
+#: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile
+#: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile
+#: abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile
+#: abaqus.Model.ModelBase.ModelBase.__init__
+#: abaqus.Model.ModelBase.ModelBase.setValues of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert:7 of
+msgid ""
+"An Int specifying the position in the **sieBlocks** member after which "
+"the new string will be inserted."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert:10 of
+msgid ""
+"A String specifying the text to be inserted. The text represents an "
+"Abaqus input file keyword and its associated data"
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.insert
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace
+#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions of
+msgid "Raises"
+msgstr ""
+
+#: ../../docstring abaqus.Model.ModelBase.KeywordBlock.lastSynchCount:1 of
+msgid ""
+"A Float specifying the value of the counter associated with the Mdb "
+"object at the most recent synchronization."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace:1 of
+msgid ""
+"This method replaces a String at a specified position in the "
+"**sieBlocks** member."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace:4 of
+msgid ""
+"Check `KeywordBlock.replace on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
+"#simaker-keywordblockreplacepyc>`__."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace:7 of
+msgid ""
+"An Int specifying the position of the String to be replaced in the "
+"**sieBlocks** member."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.replace:9 of
+msgid ""
+"A String specifying the text to be replaced. The text represents an "
+"Abaqus input file keyword and its associated data."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:1 of
+msgid "This method modifies the KeywordBlock object."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:4 of
+msgid ""
+"Check `KeywordBlock.setValues on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
+"#simaker-keywordblocksetvaluespyc>`__."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:7 of
+msgid ""
+"A Boolean specifying whether this objects **sieBlocks** member has been "
+"edited. Setting edited=False will set the **sieBlocks** member to an "
+"empty tuple, thereby discarding all previous edits."
+msgstr ""
+
+#: ../../docstring abaqus.Model.ModelBase.KeywordBlock.sieBlocks:1 of
+msgid ""
+"A tuple of Strings specifying a sequence of Strings that is identical to "
+"the information written to the Abaqus input file. Each String in the "
+"sequence represents an Abaqus input file keyword along with the "
+"parameters and data lines associated with the keyword. A String can also "
+"be a comment in the input file. You initialize this data member by "
+"calling synchVersions. After you initialize the data member, you use "
+"calls to replace and insert to record your edits in the correct location."
+" If the last call to synchVersions used the argument "
+"**storeNodesAndElements** = False, the entry for the keywords NODE and "
+"ELEMENT will contain only the keyword and its parameters, not the data "
+"lines."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:1 of
+msgid ""
+"This method synchronizes, or merges, the edits made in this object with "
+"those made in the model using other scripting commands or the user "
+"interface. The synchVersions method updates the **sieBlocks** member. The"
+" **sieBlocks** member is empty prior to the first call to synchVersions. "
+"As a side effect, synchVersions sets **lastSynchCount** to the current "
+"value of the counter associated with the Mdb object, which is used to "
+"determine if synchronization is necessary."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:9 of
+msgid ""
+"Check `KeywordBlock.synchVersions on help.3ds.com/2018 "
+"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
+"#simaker-keywordblocksynchversionspyc>`__."
+msgstr ""
+
+#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:12 of
+msgid ""
+"A Boolean specifying whether the nodal coordinates and element "
+"connectivities (i.e. the data lines for the *NODE and *ELEMENT keyword "
+"blocks) are to be stored in the **sieBlocks** member. All other keywords "
+"and their data lines are always stored. The default value is True. If "
+"**storeNodesAndElements** is True, the size of the keywordBlock data will"
+" be similar to that of the input file. Since the KeywordBlock is stored "
+"in the Abaqus/CAE database, this will result in a larger database. It "
+"will also result in a slower execution of the synchVersions command. If "
+"**storeNodesAndElements** is False, the data lines are not stored in "
+"**sieBlocks**. Consequently, only set **storeNodesAndElements** = True if"
+" you wish to make changes to the **NODE** or **ELEMENT** data lines "
+"themselves. If your task is limited to reading nodal coordinates and "
+"element connectivities (i.e. not editing this information) then it is "
+"generally better to access this information from other parts of the Mdb."
+msgstr ""
+
 #: abaqus.Model.ModelBase.ModelBase:13 of
 msgid ""
 "Check `ModelBase on help.3ds.com/2018 "
@@ -9318,18 +9484,6 @@ msgstr ""
 msgid ""
 "Check `ModelFromInputFile on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelfrominputfilepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.insert
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace
-#: abaqus.Model.KeywordBlock.KeywordBlock.setValues
-#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions
-#: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile
-#: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile
-#: abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile
-#: abaqus.Model.ModelBase.ModelBase.__init__
-#: abaqus.Model.ModelBase.ModelBase.setValues of
-msgid "Parameters"
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:15 of
@@ -9596,219 +9750,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to copy the interactions created in the "
 "model to the model that instances this model."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock:1 of
-msgid ""
-"The KeywordBlock object contains a representation of its model in the "
-"Abaqus input file format. You may edit the contents of the KeywordBlock "
-"to add solver functionality that is not supported by Abaqus/CAE. As a "
-"general rule, edits to the KeywordBlock object should be made as the last"
-" step prior to writing the actual Abaqus input file, thus avoiding "
-"possible conflicts with changes made using other MDB commands. The "
-"KeywordBlock object has no constructor. A KeywordBlock object is created "
-"when you create a model object. A model object contains only one "
-"KeywordBlock object."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock:15 of
-msgid ""
-"Check `KeywordBlock on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`edited <abaqus.Model.KeywordBlock.KeywordBlock.edited>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Model.KeywordBlock.KeywordBlock.edited:1 of
-msgid ""
-"A Boolean specifying whether the Keywords Editor has been used to change "
-"the model."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`lastSynchCount "
-"<abaqus.Model.KeywordBlock.KeywordBlock.lastSynchCount>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Model.KeywordBlock.KeywordBlock.lastSynchCount:1 of
-msgid ""
-"A Float specifying the value of the counter associated with the Mdb "
-"object at the most recent synchronization."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`sieBlocks <abaqus.Model.KeywordBlock.KeywordBlock.sieBlocks>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-"A tuple of Strings specifying a sequence of Strings that is identical to "
-"the information written to the Abaqus input file."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus.Model.KeywordBlock.KeywordBlock.setValues>`\\ "
-"\\(\\[edited\\]\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:1 of
-msgid "This method modifies the KeywordBlock object."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`insert <abaqus.Model.KeywordBlock.KeywordBlock.insert>`\\ "
-"\\(position\\, text\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 abaqus.Model.KeywordBlock.KeywordBlock.insert:1
-#: of
-msgid ""
-"This method inserts a String at a specified position in the **sieBlocks**"
-" member."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`replace <abaqus.Model.KeywordBlock.KeywordBlock.replace>`\\ "
-"\\(position\\, text\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace:1 of
-msgid ""
-"This method replaces a String at a specified position in the "
-"**sieBlocks** member."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`synchVersions "
-"<abaqus.Model.KeywordBlock.KeywordBlock.synchVersions>`\\ "
-"\\(storeNodesAndElements\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-"This method synchronizes, or merges, the edits made in this object with "
-"those made in the model using other scripting commands or the user "
-"interface."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.insert:4 of
-msgid ""
-"Check `KeywordBlock.insert on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblockinsertpyc>`__."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.insert:7 of
-msgid ""
-"An Int specifying the position in the **sieBlocks** member after which "
-"the new string will be inserted."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.insert:10 of
-msgid ""
-"A String specifying the text to be inserted. The text represents an "
-"Abaqus input file keyword and its associated data"
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.insert
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace
-#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions of
-msgid "Raises"
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace:4 of
-msgid ""
-"Check `KeywordBlock.replace on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblockreplacepyc>`__."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace:7 of
-msgid ""
-"An Int specifying the position of the String to be replaced in the "
-"**sieBlocks** member."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.replace:9 of
-msgid ""
-"A String specifying the text to be replaced. The text represents an "
-"Abaqus input file keyword and its associated data."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:4 of
-msgid ""
-"Check `KeywordBlock.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblocksetvaluespyc>`__."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.setValues:7 of
-msgid ""
-"A Boolean specifying whether this objects **sieBlocks** member has been "
-"edited. Setting edited=False will set the **sieBlocks** member to an "
-"empty tuple, thereby discarding all previous edits."
-msgstr ""
-
-#: ../../docstring abaqus.Model.KeywordBlock.KeywordBlock.sieBlocks:1 of
-msgid ""
-"A tuple of Strings specifying a sequence of Strings that is identical to "
-"the information written to the Abaqus input file. Each String in the "
-"sequence represents an Abaqus input file keyword along with the "
-"parameters and data lines associated with the keyword. A String can also "
-"be a comment in the input file. You initialize this data member by "
-"calling synchVersions. After you initialize the data member, you use "
-"calls to replace and insert to record your edits in the correct location."
-" If the last call to synchVersions used the argument "
-"**storeNodesAndElements** = False, the entry for the keywords NODE and "
-"ELEMENT will contain only the keyword and its parameters, not the data "
-"lines."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:1 of
-msgid ""
-"This method synchronizes, or merges, the edits made in this object with "
-"those made in the model using other scripting commands or the user "
-"interface. The synchVersions method updates the **sieBlocks** member. The"
-" **sieBlocks** member is empty prior to the first call to synchVersions. "
-"As a side effect, synchVersions sets **lastSynchCount** to the current "
-"value of the counter associated with the Mdb object, which is used to "
-"determine if synchronization is necessary."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:9 of
-msgid ""
-"Check `KeywordBlock.synchVersions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblocksynchversionspyc>`__."
-msgstr ""
-
-#: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:12 of
-msgid ""
-"A Boolean specifying whether the nodal coordinates and element "
-"connectivities (i.e. the data lines for the *NODE and *ELEMENT keyword "
-"blocks) are to be stored in the **sieBlocks** member. All other keywords "
-"and their data lines are always stored. The default value is True. If "
-"**storeNodesAndElements** is True, the size of the keywordBlock data will"
-" be similar to that of the input file. Since the KeywordBlock is stored "
-"in the Abaqus/CAE database, this will result in a larger database. It "
-"will also result in a slower execution of the synchVersions command. If "
-"**storeNodesAndElements** is False, the data lines are not stored in "
-"**sieBlocks**. Consequently, only set **storeNodesAndElements** = True if"
-" you wish to make changes to the **NODE** or **ELEMENT** data lines "
-"themselves. If your task is limited to reading nodal coordinates and "
-"element connectivities (i.e. not editing this information) then it is "
-"generally better to access this information from other parts of the Mdb."
 msgstr ""
 
 #~ msgid "A :py:class:`~abaqus.BoundaryCondition.Calibration.Calibration` object."
@@ -34767,5 +34708,57 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "A :py:class:`~abaqus.Model.Model.Model` object."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edited <abaqus.Model.KeywordBlock.KeywordBlock.edited>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastSynchCount "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.lastSynchCount>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sieBlocks "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.sieBlocks>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Strings specifying a "
+#~ "sequence of Strings that is identical"
+#~ " to the information written to the"
+#~ " Abaqus input file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.setValues>`\\ "
+#~ "\\(\\[edited\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`insert "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.insert>`\\ "
+#~ "\\(position\\, text\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`replace "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.replace>`\\ "
+#~ "\\(position\\, text\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`synchVersions "
+#~ "<abaqus.Model.KeywordBlock.KeywordBlock.synchVersions>`\\ "
+#~ "\\(storeNodesAndElements\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method synchronizes, or merges, the"
+#~ " edits made in this object with "
+#~ "those made in the model using "
+#~ "other scripting commands or the user "
+#~ "interface."
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,6 @@ msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
 #: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
@@ -76,147 +75,8 @@ msgid "Check `AbaqusNDarray on help.3ds.com/2018 <https://help.3ds.com/2018/Engl
 msgstr ""
 
 #: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
 #: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
 msgid "Member Details:"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
-#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:0
-msgid "Public Data Attributes:"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`file <abaqus.InputFileParser.InputFile.InputFile.file>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.InputFile.InputFile.file:1
-msgid "A String specifying the source file name of the Abaqus input file."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`directory <abaqus.InputFileParser.InputFile.InputFile.directory>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.InputFile.InputFile.directory:1
-msgid "A String specifying the directory where the input file is located."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`includes <abaqus.InputFileParser.InputFile.InputFile.includes>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.InputFile.InputFile.includes:1
-msgid "A sequence of Strings specifying any additional input files included in the specified input file."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`missingIncludes <abaqus.InputFileParser.InputFile.InputFile.missingIncludes>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.InputFile.InputFile.missingIncludes:1
-msgid "A sequence of Strings for input files included in the specified input file that could not be located."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
-msgid "Public Methods:"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.InputFileParser.InputFile.InputFile.__init__>`\\ \\(file\\[\\, directory\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates an InputFile object by reading an Abaqus input file."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`parse <abaqus.InputFileParser.InputFile.InputFile.parse>`\\ \\(\\[organize\\, verbose\\, bulk\\, usePyArray\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:1
-#: ../../None:4:<autosummary>:1
-msgid "This method parses the input file associated with the InputFile object."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:4
-msgid "This function can be accessed by::"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:9
-msgid "Check `InputFile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfile__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:12
-msgid "A String specifying the path to the input file."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:14
-msgid "A String specifying the path to the directory containing the input file."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:16
-msgid "An InputFile object."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
-msgid "Return type"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:17
-msgid ":class:`InputFile`"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:4
-msgid "Check `InputFile.parse on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:7
-msgid "A Boolean specifying whether keywords should be organized into suboptions. The default is False."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:10
-msgid "A Boolean specifying whether verbose output is to be printed. If **verbose** is True, information about fatal errors is printed. If no fatal errors occur, there is no output. The default is False."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:14
-msgid "A Boolean specifying whether the input file includes bulk data that should be parsed. The default is True."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:17
-msgid "A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword data value. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True. The default is False."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:22
-msgid "A KeywordSequence object."
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:23
-msgid ":class:`KeywordSequence`"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
-msgid "Raises"
-msgstr ""
-
-#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:25
-msgid "If you parse an input file more than once, a ValueError is raised for each subsequent     parsing."
 msgstr ""
 
 #: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
@@ -227,50 +87,22 @@ msgstr ""
 msgid "Check `Keyword on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`name <abaqus.InputFileParser.Keyword.Keyword.name>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.name:1
-msgid "A String specifying the name of the keyword."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`parameter <abaqus.InputFileParser.Keyword.Keyword.parameter>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.parameter:1
-msgid "A Dictionary of Strings specifying the keyword parameters."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`data <abaqus.InputFileParser.Keyword.Keyword.data>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid "A sequence of sequences or an AbaqusNDarray object specifying the keyword data."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`suboptions <abaqus.InputFileParser.Keyword.Keyword.suboptions>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.suboptions:1
-msgid "A KeywordSequence specifying the suboptions of the keyword."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`comments <abaqus.InputFileParser.Keyword.Keyword.comments>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
 #: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.comments:1
 msgid "A sequence of Strings specifying the comments."
 msgstr ""
 
 #: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.data:1
 msgid "A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if the data is suitable and if the InputFile.parse() method was called with the option usePyArray=True. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True."
+msgstr ""
+
+#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.name:1
+msgid "A String specifying the name of the keyword."
+msgstr ""
+
+#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.parameter:1
+msgid "A Dictionary of Strings specifying the keyword parameters."
+msgstr ""
+
+#: ../../docstring of abaqus.InputFileParser.Keyword.Keyword.suboptions:1
+msgid "A KeywordSequence specifying the suboptions of the keyword."
 msgstr ""

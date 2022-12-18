@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,10 +47,7 @@ msgstr ""
 msgid "Check `CalibrationModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:0
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -654,10 +651,7 @@ msgstr ""
 msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:0
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -668,7 +662,6 @@ msgstr ""
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:1
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:1
 #: ../../None:3:<autosummary>:1
-#: ../../None:5:<autosummary>:1
 msgid "This method creates a Calibration object."
 msgstr ""
 
@@ -753,8 +746,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:12
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:12
-#: ../../None:5:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Calibration.Calibration.name:1
+#: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.name:1
 msgid "A String specifying the name of the new calibration."
 msgstr ""
 
@@ -808,64 +800,8 @@ msgstr ""
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:1
-msgid "A Calibration object is the object used to specify a material calibration. The Calibration object stores the data that is used for specifying materials from test data."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`dataSets <abaqus.Calibration.Calibration.Calibration.dataSets>`\\"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:8
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:8
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:8
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:8
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:24
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:24
-#: ../../None:5:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Calibration.Calibration.dataSets:1
-msgid "A DataSet object."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`behaviors <abaqus.Calibration.Calibration.Calibration.behaviors>`\\"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:17
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:17
-#: ../../None:5:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Calibration.Calibration.behaviors:1
-msgid "A Behavior object."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Calibration.Calibration.Calibration.name>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Calibration.Calibration.Calibration.__init__>`\\ \\(name\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`Behavior <abaqus.Calibration.Calibration.Calibration.Behavior>`\\ \\(name\\, typeName\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:1
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:1
-#: ../../None:11:<autosummary>:1
-#: ../../None:5:<autosummary>:1
-msgid "This method creates a Behavior object."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`DataSet <abaqus.Calibration.Calibration.Calibration.DataSet>`\\ \\(name\\[\\, data\\, type\\, form\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:1
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:1
-#: ../../None:4:<autosummary>:1
-#: ../../None:5:<autosummary>:1
-msgid "This method creates a DataSet object."
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:1
+msgid "The Behavior object specifies the method used for calibrating a material."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:10
@@ -873,17 +809,31 @@ msgstr ""
 msgid "Check `Behavior on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:1
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:1
+msgid "This method creates a Behavior object."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:9
+msgid "Check `Behavior.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all#simaker-behavior__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:12
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:12
-#: ../../None:8:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.name:1
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.name:1
 msgid "A String specifying the name of the new behavior."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:14
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:14
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.typeName:1
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.typeName:1
 msgid "A String specifying the type of the new Behavior. Values can be \"ElasIsoBehavior\", \"ElasPlasIsoBehavior\", \"FeFpBehavior\", or a user plug-in behavior type."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:17
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:17
+#: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.behaviors:1
+msgid "A Behavior object."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:18
@@ -891,168 +841,13 @@ msgstr ""
 msgid ":class:`Behavior`"
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:9
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:10
-msgid "Check `DataSet on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datasetpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:12
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:12
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.DataSet.DataSet.name:1
-msgid "A String specifying the name of the new dataset."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:14
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:14
-#: ../../docstring of abaqus.Calibration.DataSet.DataSet.data:1
-msgid "A sequence of pairs of Floats specifying data set type pairs. Possible values are for stress/strain, force/displacement, or transverse strain/axial strain pairs."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:17
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:17
-#: ../../docstring of abaqus.Calibration.DataSet.DataSet.type:1
-msgid "A String specifying the type of the new dataset. Values can be \"STRESS/STRAIN\", \"FORCE/DISPLACEMENT\", or \"AXIALSTRAIN/TRANSVERSESTRAIN\". The default value is \"STRESS/STRAIN\"."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:21
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:21
-#: ../../docstring of abaqus.Calibration.DataSet.DataSet.form:1
-msgid "A String specifying the form of the new dataset. Values can be \"NOMINAL\" or \"TRUE\". The default value is \"NOMINAl\"."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:25
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:25
-msgid ":class:`DataSet`"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:9
-msgid "Check `Calibration.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-calibrationpyc.htm?contextscope=all#simaker-calibration__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:1
-msgid "The Behavior object specifies the method used for calibrating a material."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`modelName <abaqus.Calibration.Behavior.Behavior.modelName>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.modelName:1
-msgid "A string specifying the name of the model to which the behavior belongs."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`calibrationName <abaqus.Calibration.Behavior.Behavior.calibrationName>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.calibrationName:1
-msgid "A string specifying the name of calibration to which the behavior belongs."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`biAxialAllName <abaqus.Calibration.Behavior.Behavior.biAxialAllName>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A String specifying the name of the dataset containing all the raw data in the test data file."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`uniAxialAllName <abaqus.Calibration.Behavior.Behavior.uniAxialAllName>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Calibration.Behavior.Behavior.name>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ":py:obj:`typeName <abaqus.Calibration.Behavior.Behavior.typeName>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid "A String specifying the type of the new Behavior."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Calibration.Behavior.Behavior.__init__>`\\ \\(name\\, typeName\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Calibration.Behavior.Behavior.setValues>`\\ \\(\\[E\\, nu\\, ds1Name\\, ds2Name\\, ...\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.setValues:1
-#: ../../None:11:<autosummary>:1
-msgid "This method modifies the data for an existing behavior object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`mapToMaterial <abaqus.Calibration.Behavior.Behavior.mapToMaterial>`\\ \\(materialName\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method appends the calibration data obtained from the DataSet object to an existing material object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`compute_E <abaqus.Calibration.Behavior.Behavior.compute_E>`\\ \\(dataSet\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method computes the value of young's modulus from the existing DataSet object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`compute_nu <abaqus.Calibration.Behavior.Behavior.compute_nu>`\\ \\(dataSet\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method computes the value of Poisson's Ratio from the existing DataSet object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`compute_ultimatePoint <abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint>`\\ \\(dataSet\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method computes the coordinates of the Ultimate point from the existing DataSet object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`compute_elasticModulus <abaqus.Calibration.Behavior.Behavior.compute_elasticModulus>`\\ \\(yieldPoint\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method computes the value of the elastic modulus from the yieldpoint value."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`compute_plasticPoints <abaqus.Calibration.Behavior.Behavior.compute_plasticPoints>`\\ \\(dataSet\\, slider\\_val\\, ...\\)"
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid "This method extracts the coordinates of the Plastic Points."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1
-msgid ":py:obj:`xyDataDissect <abaqus.Calibration.Behavior.Behavior.xyDataDissect>`\\ \\(dsName\\, modelName\\, calibrationName\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:1
-#: ../../None:11:<autosummary>:1
-msgid "This method extracts primary, unload, reload and permanent DataSet objects from the existing DataSet object.The method is only valid for FeFpBehavior type of behavior."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:9
-msgid "Check `Behavior.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all#simaker-behavior__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.biAxialAllName:1
-#: ../../docstring of abaqus.Calibration.Behavior.Behavior.uniAxialAllName:1
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.biAxialAllName:1
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.uniAxialAllName:1
 msgid "A String specifying the name of the dataset containing all the raw data in the test data file. Only valid if the behavior is of type FeFpBehavior"
+msgstr ""
+
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.calibrationName:1
+msgid "A string specifying the name of calibration to which the behavior belongs."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:1
@@ -1061,6 +856,16 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:5
 msgid "Check `Behavior.compute_E on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all#simaker-behaviorcompute_epyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:8
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:8
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:8
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:8
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:24
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:24
+#: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.dataSets:1
+msgid "A DataSet object."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:10
@@ -1156,6 +961,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.mapToMaterial:11
 msgid "A String specifying the name of the existing material"
+msgstr ""
+
+#: ../../docstring of abaqus.Calibration.Calibration.Behavior.modelName:1
+msgid "A string specifying the name of the model to which the behavior belongs."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.setValues:1
+msgid "This method modifies the data for an existing behavior object."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.setValues:4
@@ -1264,6 +1077,10 @@ msgstr ""
 msgid "A string specifying name of Primary DataSet object. Only valid if the behavior is of type FeFpBehavior"
 msgstr ""
 
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:1
+msgid "This method extracts primary, unload, reload and permanent DataSet objects from the existing DataSet object.The method is only valid for FeFpBehavior type of behavior."
+msgstr ""
+
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:5
 msgid "Check `Behavior.xyDataDissect on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all#simaker-behaviorxydatadissectpyc>`__."
 msgstr ""
@@ -1296,52 +1113,65 @@ msgstr ""
 msgid "The DataSetobject specifies material test data."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`data <abaqus.Calibration.DataSet.DataSet.data>`\\"
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:9
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:10
+msgid "Check `DataSet on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datasetpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:7
-#: ../../None:6:<autosummary>:1
-msgid "A sequence of pairs of Floats specifying data set type pairs."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`type <abaqus.Calibration.DataSet.DataSet.type>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid "A String specifying the type of the new dataset."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`form <abaqus.Calibration.DataSet.DataSet.form>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid "A String specifying the form of the new dataset."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Calibration.DataSet.DataSet.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Calibration.DataSet.DataSet.__init__>`\\ \\(name\\[\\, data\\, type\\, form\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Calibration.DataSet.DataSet.setValues>`\\ \\(\\[data\\]\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:1
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies the data for an existing DataSet object."
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:1
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:1
+msgid "This method creates a DataSet object."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:9
 msgid "Check `DataSet.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datasetpyc.htm?contextscope=all#simaker-dataset__init__pyc>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:12
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:12
+#: ../../docstring of abaqus.Calibration.DataSet.DataSet.name:1
+msgid "A String specifying the name of the new dataset."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:14
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:14
+#: ../../docstring of abaqus.Calibration.DataSet.DataSet.data:1
+msgid "A sequence of pairs of Floats specifying data set type pairs. Possible values are for stress/strain, force/displacement, or transverse strain/axial strain pairs."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:17
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:17
+#: ../../docstring of abaqus.Calibration.DataSet.DataSet.type:1
+msgid "A String specifying the type of the new dataset. Values can be \"STRESS/STRAIN\", \"FORCE/DISPLACEMENT\", or \"AXIALSTRAIN/TRANSVERSESTRAIN\". The default value is \"STRESS/STRAIN\"."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:21
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:21
+#: ../../docstring of abaqus.Calibration.DataSet.DataSet.form:1
+msgid "A String specifying the form of the new dataset. Values can be \"NOMINAL\" or \"TRUE\". The default value is \"NOMINAl\"."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:25
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:25
+msgid ":class:`DataSet`"
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:1
+msgid "This method modifies the data for an existing DataSet object."
+msgstr ""
+
 #: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:4
 msgid "Check `DataSet.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datasetpyc.htm?contextscope=all#simaker-datasetsetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:7
+msgid "A sequence of pairs of Floats specifying data set type pairs."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:1
+msgid "A Calibration object is the object used to specify a material calibration. The Calibration object stores the data that is used for specifying materials from test data."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:9
+msgid "Check `Calibration.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-calibrationpyc.htm?contextscope=all#simaker-calibration__init__pyc>`__."
 msgstr ""
