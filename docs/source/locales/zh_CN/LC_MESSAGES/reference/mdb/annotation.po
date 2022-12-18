@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,6 @@ msgstr ""
 msgid "Create annotations"
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:1
 #: abaqus.Annotation.Arrow.Arrow.__init__:1 of
 msgid "This method creates an Arrow object."
@@ -73,11 +72,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../None:14:<autosummary>:1 ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:13
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:13
-#: abaqus.Annotation.Annotation.Annotation.name:1
 #: abaqus.Annotation.Arrow.Arrow.__init__:13
+#: abaqus.Annotation.Text.Annotation.name:1
 #: abaqus.Annotation.Text.Text.__init__:13 of
 msgid "A String specifying the annotation repository key."
 msgstr ""
@@ -773,7 +772,7 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatapyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:40:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport.name:1
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData:12 of
 msgid "A String specifying the repository key."
@@ -846,137 +845,11 @@ msgstr ""
 msgid "Other Classes"
 msgstr ""
 
-#: abaqus.Annotation.Annotation.Annotation:1 of
-msgid "Bases: :py:class:`object`"
+#: abaqus.Annotation.AnimationUserData.AnimationUserData:1 of
+msgid "Bases: :py:class:`~abaqus.Odb.UserDataBase.UserDataBase`"
 msgstr ""
 
-#: abaqus.Annotation.Annotation.Annotation:1 of
-msgid ""
-"The Annotation object is the abstract base type for other Annotation "
-"objects. The Annotation object has no explicit constructor. The methods "
-"and members of the Annotation object are common to all objects derived "
-"from Annotation."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation:6
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:5
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:6
-#: abaqus.Annotation.Arrow.Arrow:5 abaqus.Annotation.Text.Text:5 of
-msgid "This object can be accessed by::"
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation:14 of
-msgid ""
-"Check `Annotation on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport
-#: abaqus.Annotation.Arrow.Arrow of
-msgid "Public Data Attributes:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Annotation.Annotation.Annotation.name>`\\"
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
-#: abaqus.Annotation.Arrow.Arrow of
-msgid "Public Methods:"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`bringToFront "
-"<abaqus.Annotation.Annotation.Annotation.bringToFront>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.bringToFront:1 of
-msgid ""
-"This method brings the Annotation object to the top of the annotation "
-"stack."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`sendToBack "
-"<abaqus.Annotation.Annotation.Annotation.sendToBack>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.sendToBack:1 of
-msgid ""
-"This method sends the Annotation object to the bottom of the annotation "
-"stack."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`bringForward "
-"<abaqus.Annotation.Annotation.Annotation.bringForward>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.bringForward:1 of
-msgid ""
-"This method brings the Annotation object one position up in the "
-"annotation stack."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`sendBackward "
-"<abaqus.Annotation.Annotation.Annotation.sendBackward>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.sendBackward:1 of
-msgid ""
-"This method sends the Annotation object one position down in the "
-"annotation stack."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`moveBefore "
-"<abaqus.Annotation.Annotation.Annotation.moveBefore>`\\ \\(name\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.moveBefore:1 of
-msgid ""
-"This method moves the Annotation object before another object in the same"
-" repository."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`moveAfter <abaqus.Annotation.Annotation.Annotation.moveAfter>`\\"
-" \\(name\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.moveAfter:1 of
-msgid ""
-"This method moves the Annotation object after another object in the same "
-"repository."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`translate <abaqus.Annotation.Annotation.Annotation.translate>`\\"
-" \\(\\[x\\, y\\]\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.Annotation.Annotation.translate:1 of
-msgid "This method translates the Annotation object on the viewport plane."
-msgstr ""
-
+#: abaqus.Annotation.AnimationUserData.AnimationUserData:1
 #: abaqus.Annotation.Annotation.Annotation:1
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1
@@ -984,1478 +857,7 @@ msgstr ""
 msgid "Member Details:"
 msgstr ""
 
-#: abaqus.Annotation.Annotation.Annotation.moveAfter:4 of
-msgid ""
-"Check `Annotation.moveAfter on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
-"#simaker-annotationmoveafterpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation.moveAfter:7
-#: abaqus.Annotation.Annotation.Annotation.moveBefore:7 of
-msgid "A String specifying the name of the other Annotation object."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation.moveBefore:4 of
-msgid ""
-"Check `Annotation.moveBefore on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
-"#simaker-annotationmovebeforepyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation.translate:4 of
-msgid ""
-"Check `Annotation.translate on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
-"#simaker-annotationtranslatepyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation.translate:7
-#: abaqus.Annotation.Arrow.Arrow.translateEndPoint:7
-#: abaqus.Annotation.Arrow.Arrow.translateStartPoint:7 of
-msgid "A Float specifying the **X** translation amount in millimeters."
-msgstr ""
-
-#: abaqus.Annotation.Annotation.Annotation.translate:9 of
-msgid "A Float specifying the **Y** translation amount in millimeters."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
-msgid ""
-"Bases: :py:class:`~typing.List`\\ "
-"[:py:class:`~abaqus.Annotation.Annotation.Annotation`]"
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
-msgid ""
-"The AnnotationsToPlotArray object is a sequence that stores references to"
-" plotted annotations. By adding annotations to and removing annotations "
-"from this sequence, you can control which annotations are displayed in a "
-"particular viewport."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:12 of
-msgid ""
-"Check `AnnotationsToPlotArray on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`__new__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__new__>`\\"
-" \\(cls\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`bringForward "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward>`\\"
-" \\(index\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:1
-#: of
-msgid ""
-"This method brings the Annotation object one position forward in the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`bringToFront "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront>`\\"
-" \\(index\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:1
-#: of
-msgid ""
-"This method brings the Annotation object to the beginning of the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`moveAfter "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter>`\\"
-" \\(index\\, other\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:1
-#: of
-msgid ""
-"This method moves the Annotation object after another object in the same "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`moveBefore "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore>`\\"
-" \\(index\\, other\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:1
-#: of
-msgid ""
-"This method moves the Annotation object before another object in the same"
-" AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`sendBackward "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward>`\\"
-" \\(index\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:1
-#: of
-msgid ""
-"This method sends the Annotation object one position backward in the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`sendToBack "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack>`\\"
-" \\(index\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:1
-#: of
-msgid ""
-"This method sends the Annotation object to the end of the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return repr(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\ \\(name\\, "
-"\\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return getattr(self, name)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self<value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self<=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self==value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self!=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self>value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self>=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement iter(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <builtins.list.__init__>`\\ \\(\\*args\\, "
-"\\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return len(self)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "x.__getitem__(y) <==> x[y]"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ \\(key\\, value\\, "
-"\\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Set self[key] to value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Delete self[key]."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self+value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return self*value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return value*self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return key in self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self+=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self*=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a reverse iterator over the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return the size of the list in memory, in bytes."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove all items from list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a shallow copy of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Append object to the end of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Insert object before index."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Extend list by appending elements from the iterable."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove and return item at index (default last)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove first occurrence of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return first index of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return number of occurrences of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Reverse *IN PLACE*."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Sort the list in ascending order and return None."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "See PEP 585"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`__class_getitem__ <typing.Generic.__class_getitem__>`\\ "
-"\\(params\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`__init_subclass__ <typing.Generic.__init_subclass__>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method is called when a class is subclassed."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray of
-msgid "Private Data Attributes:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.bringForward on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraybringforwardpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:8
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:8
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:8
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:8
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:8
-#: of
-msgid ""
-"An Int specifying the index of the Annotation object in the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.bringToFront on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraybringtofrontpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.moveAfter on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraymoveafterpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:8
-#: of
-msgid ""
-"An Integer specifying the index of the Annotation object in the "
-"AnnotationsToPlotArray sequence."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:11
-#: of
-msgid ""
-"An Integer specifying the index of the other Annotation object in the "
-"AnnotationsToPlotArray sequence after which this object will be moved."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.moveBefore on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraymovebeforepyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:11
-#: of
-msgid ""
-"An Int specifying the index of the other Annotation object in the "
-"AnnotationsToPlotArray sequence before which this object will be moved."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.sendBackward on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraysendbackwardpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:5
-#: of
-msgid ""
-"Check `AnnotationsToPlotArray.sendToBack on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
-"#simaker-annotationstoplotarraysendtobackpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
-msgid "Bases: :py:class:`~abaqus.Canvas.ViewportBase.ViewportBase`"
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
-msgid ""
-"The following commands operate on Viewport objects. For more information "
-"about the Viewport object, see Viewport object."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:10 of
-msgid ""
-"Check `AnnotationViewport on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`origin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.origin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A pair of Floats specifying the **X**- and **Y**-coordinates in "
-"millimeters in the canvas coordinate system of the lower left corner of "
-"the viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`width "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.width>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A Float specifying the width in millimeters of the viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`height "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.height>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A Float specifying the height in millimeters of the viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`border "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.border>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Boolean specifying whether the viewport border is visible in a printed "
-"image."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`titleBar "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleBar>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Boolean specifying whether the viewport title should be displayed in a "
-"printed image."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`titleStyle "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleStyle>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A SymbolicConstant specifying which title to use for the viewport title."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`customTitleString "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.customTitleString>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A String specifying the viewport title when **titleStyle** =CUSTOM."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`displayMode "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayMode>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A SymbolicConstant specifying the display mode of the viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`viewManipLayers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewManipLayers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying which layer or layers will be controlled by"
-" the view manipulation tools when **displayMode** = OVERLAY."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`layerOffset "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layerOffset>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Float specifying a factor to be used in offsetting layers in the screen"
-" Z direction."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`windowState "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.windowState>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A SymbolicConstant specifying the current state of a viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentWidth "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentWidth>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Float specifying the width in millimeters of the current viewport, "
-"regardless of the value of **windowState**."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentHeight "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentHeight>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Float specifying the height in millimeters of the current viewport, "
-"regardless of the value of **windowState**, and including the title bar."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`applyLinkedCommands "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.applyLinkedCommands>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A Boolean specifying whether the viewport is linked for synchronization."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`activeColorModes "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.activeColorModes>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A SymbolicConstant specifying the currently active color mappings."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`colorMode "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMode>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A SymbolicConstant specifying the last applied color mapping."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`translucency "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.translucency>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A Float specifying the translucency that will be applied to objects "
-"colored using **initialColor** and it needs to be set along with "
-"**initialColor**."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`animationConnect "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.animationConnect>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A Boolean specifying whether an animation is connected to the viewport."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`colorMappings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMappings>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A repository of AttributeColorMap objects specifying the objects cannot "
-"be constructed but the following attribute maps are supported:"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`initialColor "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.initialColor>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A String specifying the color that will be applied to all objects in the "
-"viewport at the start of color coding."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentLayer "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentLayer>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A String specifying which layer is affected by options settings when "
-"**displayMode** =OVERLAY."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`displayedObject "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayedObject>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A Displayable object specifying the object to be displayed."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`layers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A repository of Layer objects specifying the key to the repository is a "
-"String with the name of the layer."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`odbDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.odbDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "An OdbDisplay object specifying the display options for the Odb object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`partDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.partDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A PartDisplayOptions object specifying the display options for the Part "
-"object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`assemblyDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.assemblyDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"An AssemblyDisplayOptions object specifying the display options for the "
-"Assembly object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`viewportAnnotationOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewportAnnotationOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`detailPlotOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.detailPlotOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A DetailPlotOptions object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`annotationsToPlot "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.annotationsToPlot>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "An AnnotationsToPlotArray object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`visibleLayers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.visibleLayers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A tuple of Strings specifying the names of layers that will be displayed "
-"in the viewport when **displayMode** = OVERLAY."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentOrigin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentOrigin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A pair of Floats specifying the **X**- and **Y**-coordinates in "
-"millimeters in the canvas coordinate system of the lower left corner of "
-"the current viewport, regardless of the value of **windowState**."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`iconOrigin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.iconOrigin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-"A pair of Floats specifying the **X**- and **Y**-coordinates in "
-"millimeters of the lower left corner of the current viewport from a "
-"coordinate system having its origin in the lower left corner of the "
-"drawing area."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`lightOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.lightOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A LightOptions object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`imageOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.imageOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "An ImageOptions object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`movieOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.movieOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A MovieOptions object."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`drawings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.drawings>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid "A tuple of Strings specifying keys to the session.drawings repository."
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`origin <abaqus.Canvas.ViewportBase.ViewportBase.origin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`width <abaqus.Canvas.ViewportBase.ViewportBase.width>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`height <abaqus.Canvas.ViewportBase.ViewportBase.height>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`border <abaqus.Canvas.ViewportBase.ViewportBase.border>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`titleBar <abaqus.Canvas.ViewportBase.ViewportBase.titleBar>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`titleStyle "
-"<abaqus.Canvas.ViewportBase.ViewportBase.titleStyle>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`customTitleString "
-"<abaqus.Canvas.ViewportBase.ViewportBase.customTitleString>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`displayMode "
-"<abaqus.Canvas.ViewportBase.ViewportBase.displayMode>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`viewManipLayers "
-"<abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`layerOffset "
-"<abaqus.Canvas.ViewportBase.ViewportBase.layerOffset>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`windowState "
-"<abaqus.Canvas.ViewportBase.ViewportBase.windowState>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentWidth "
-"<abaqus.Canvas.ViewportBase.ViewportBase.currentWidth>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentHeight "
-"<abaqus.Canvas.ViewportBase.ViewportBase.currentHeight>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`applyLinkedCommands "
-"<abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`activeColorModes "
-"<abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`colorMode <abaqus.Canvas.ViewportBase.ViewportBase.colorMode>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`translucency "
-"<abaqus.Canvas.ViewportBase.ViewportBase.translucency>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`animationConnect "
-"<abaqus.Canvas.ViewportBase.ViewportBase.animationConnect>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`colorMappings "
-"<abaqus.Canvas.ViewportBase.ViewportBase.colorMappings>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`initialColor "
-"<abaqus.Canvas.ViewportBase.ViewportBase.initialColor>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentLayer "
-"<abaqus.Canvas.ViewportBase.ViewportBase.currentLayer>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`displayedObject "
-"<abaqus.Canvas.ViewportBase.ViewportBase.displayedObject>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`layers <abaqus.Canvas.ViewportBase.ViewportBase.layers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`odbDisplay "
-"<abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`partDisplay "
-"<abaqus.Canvas.ViewportBase.ViewportBase.partDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`assemblyDisplay "
-"<abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`viewportAnnotationOptions "
-"<abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`detailPlotOptions "
-"<abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`annotationsToPlot "
-"<abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`visibleLayers "
-"<abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`currentOrigin "
-"<abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`iconOrigin "
-"<abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`lightOptions "
-"<abaqus.Canvas.ViewportBase.ViewportBase.lightOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`imageOptions "
-"<abaqus.Canvas.ViewportBase.ViewportBase.imageOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ""
-":py:obj:`movieOptions "
-"<abaqus.Canvas.ViewportBase.ViewportBase.movieOptions>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`drawings <abaqus.Canvas.ViewportBase.ViewportBase.drawings>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Canvas.ViewportBase.ViewportBase.name>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1
-msgid ":py:obj:`view <abaqus.Canvas.ViewportBase.ViewportBase.view>`\\"
-msgstr ""
-
-#: ../../None:40:<autosummary>:1 ../../docstring
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.view:1 of
-msgid ""
-"A View object specifying the object that controls viewing of the viewport"
-" content."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`plotAnnotation "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation>`\\"
-" \\(annotation\\[\\, index\\]\\)"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:1 of
-msgid "This method plots an Annotation object in aViewport."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Canvas.ViewportBase.ViewportBase.__init__>`\\ "
-"\\(name\\[\\, origin\\, width\\, height\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method creates a Viewport object with the specified origin and "
-"dimensions."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`bringToFront "
-"<abaqus.Canvas.ViewportBase.ViewportBase.bringToFront>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method moves the Viewport object to the front."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`disableMultipleColors "
-"<abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method disables applying multiple color mappings that was enabled "
-"using enableMultipleColors"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`disableRefresh "
-"<abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method disables Viewport refresh."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`disableColorCodeUpdates "
-"<abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method disables Viewport updates and internal computations triggered"
-" because of color coding."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`enableMultipleColors "
-"<abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method enables multiple color mappings to be applied at the same "
-"time."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`enableRefresh "
-"<abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method enables Viewport refresh disabled using disableRefresh."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`enableColorCodeUpdates "
-"<abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method enables Viewport color code updates disabled using "
-"disableColorCodeUpdates."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`getActiveElementLabels "
-"<abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels>`\\ "
-"\\(\\[useCut\\, printResults\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method returns the element labels currently active in the viewport "
-"based on the current display group."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`getActiveNodeLabels "
-"<abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels>`\\ "
-"\\(\\[useCut\\, printResults\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method returns the node labels currently active in the viewport "
-"based on the current display group."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`getPrimVarMinMaxLoc "
-"<abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method returns a dictionary containing the minimum, maximum and "
-"their location for the current primary variable."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`makeCurrent "
-"<abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method makes theViewport object the current viewport."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`maximize <abaqus.Canvas.ViewportBase.ViewportBase.maximize>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method maximizes the Viewport object to fill the drawing area."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`minimize <abaqus.Canvas.ViewportBase.ViewportBase.minimize>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method minimizes the Viewport object to appear as an abbreviated "
-"title bar."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`offset <abaqus.Canvas.ViewportBase.ViewportBase.offset>`\\ "
-"\\(\\[deltaX\\, deltaY\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method modifies the current **X**-*Y* location of the viewport by "
-"the specified distance."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`restore <abaqus.Canvas.ViewportBase.ViewportBase.restore>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method restores a maximized or minimized Viewport object to its "
-"previous size and location."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`sendToBack "
-"<abaqus.Canvas.ViewportBase.ViewportBase.sendToBack>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method moves the Viewport object to the back."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`setColor <abaqus.Canvas.ViewportBase.ViewportBase.setColor>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`forceRefresh "
-"<abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method causes the Viewport to refresh immediately."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus.Canvas.ViewportBase.ViewportBase.setValues>`\\"
-" \\(\\[displayedObject\\, displayMode\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid "This method modifies the Viewport object."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`addDrawings "
-"<abaqus.Canvas.ViewportBase.ViewportBase.addDrawings>`\\ "
-"\\(\\[names\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method identifies the names of Drawing objects to be rendered in the"
-" Viewport."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`removeDrawings "
-"<abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings>`\\ "
-"\\(\\[names\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method identifies the names of Drawing objects to no longer be "
-"rendered in the Viewport."
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-":py:obj:`timeDisplay "
-"<abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay>`\\ "
-"\\(\\[numFrames\\, numSeconds\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:25:<autosummary>:1
-msgid ""
-"This method refreshes the Viewport display **numFrames** times and then "
-"checks to see if **numSeconds** seconds have elapsed."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus._OptionsBase._OptionsBase.get_user_attributes>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "Returns a list of the user attributes of the class."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus._OptionsBase._OptionsBase.setValues>`\\ "
-"\\(\\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method modifies the _OptionsBase object."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:4 of
-msgid ""
-"Check `AnnotationViewport.plotAnnotation on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all"
-"#simaker-annotationviewportplotannotationpyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:7 of
-msgid "An Annotation object to plot."
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:9 of
-msgid ""
-"An Int specifying the index of the Annotation object in the sequence of "
-"annotations to plot. The default value is zero."
-msgstr ""
-
-#: abaqus.Annotation.Arrow.Arrow:1 of
+#: abaqus.Annotation.Arrow.Arrow:1 abaqus.Annotation.Text.Text:1 of
 msgid ""
 "Bases: :py:class:`~abaqus.Annotation.Annotation.Annotation`, "
 ":py:class:`~abaqus._OptionsBase._OptionsBase`"
@@ -2467,142 +869,11 @@ msgid ""
 "annotation. The Arrow object is derived from the Annotation object."
 msgstr ""
 
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startPoint <abaqus.Annotation.Arrow.Arrow.startPoint>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A pair of Floats specifying the start point **X**- and **Y**-offsets in "
-"millimeters from **startAnchor**."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endPoint <abaqus.Annotation.Arrow.Arrow.endPoint>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A pair of Floats specifying the end point **X**- and **Y**-offsets in "
-"millimeters from **endAnchor**."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startAnchor <abaqus.Annotation.Arrow.Arrow.startAnchor>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant or a sequence of Floats specifying a point."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endAnchor <abaqus.Annotation.Arrow.Arrow.endAnchor>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startHeadStyle <abaqus.Annotation.Arrow.Arrow.startHeadStyle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the style of the start head."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endHeadStyle <abaqus.Annotation.Arrow.Arrow.endHeadStyle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the style of the end head."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`startGap <abaqus.Annotation.Arrow.Arrow.startGap>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A Float specifying the distance in millimeters between the arrow start "
-"point and the arrow start head."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`endGap <abaqus.Annotation.Arrow.Arrow.endGap>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A Float specifying the distance in millimeters between the arrow end "
-"point and the arrow end head."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`color <abaqus.Annotation.Arrow.Arrow.color>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A String specifying the color of the arrow."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`lineStyle <abaqus.Annotation.Arrow.Arrow.lineStyle>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the line style of the arrow."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`lineThickness <abaqus.Annotation.Arrow.Arrow.lineThickness>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the line thickness of the arrow."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Annotation.Arrow.Arrow.name>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Annotation.Arrow.Arrow.__init__>`\\ "
-"\\(name\\[\\, startPoint\\, endPoint\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`translateStartPoint "
-"<abaqus.Annotation.Arrow.Arrow.translateStartPoint>`\\ \\(\\[x\\, y\\]\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: abaqus.Annotation.Arrow.Arrow.translateStartPoint:1 of
-msgid ""
-"This method translates the start point of the Arrow object on the "
-"viewport plane."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`translateEndPoint "
-"<abaqus.Annotation.Arrow.Arrow.translateEndPoint>`\\ \\(\\[x\\, y\\]\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-#: abaqus.Annotation.Arrow.Arrow.translateEndPoint:1 of
-msgid ""
-"This method translates the end point of the Arrow object on the viewport "
-"plane."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`setValues <abaqus.Annotation.Arrow.Arrow.setValues>`\\ "
-"\\(\\[startPoint\\, endPoint\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 abaqus.Annotation.Arrow.Arrow.setValues:1 of
-msgid "This method modifies the Arrow object."
+#: abaqus.Annotation.Annotation.Annotation:6
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:5
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:6
+#: abaqus.Annotation.Arrow.Arrow:5 abaqus.Annotation.Text.Text:5 of
+msgid "This object can be accessed by::"
 msgstr ""
 
 #: abaqus.Annotation.Arrow.Arrow.__init__:10 of
@@ -2625,11 +896,21 @@ msgid ""
 "The default value is BOTTOM_LEFT."
 msgstr ""
 
+#: abaqus.Annotation.Arrow.Arrow.setValues:1 of
+msgid "This method modifies the Arrow object."
+msgstr ""
+
 #: abaqus.Annotation.Arrow.Arrow.setValues:4 of
 msgid ""
 "Check `Arrow.setValues on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
 "#simaker-arrowsetvaluespyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.Arrow.Arrow.translateEndPoint:1 of
+msgid ""
+"This method translates the end point of the Arrow object on the viewport "
+"plane."
 msgstr ""
 
 #: abaqus.Annotation.Arrow.Arrow.translateEndPoint:4 of
@@ -2639,9 +920,21 @@ msgid ""
 "#simaker-arrowtranslateendpointpyc>`__."
 msgstr ""
 
+#: abaqus.Annotation.Annotation.Annotation.translate:7
+#: abaqus.Annotation.Arrow.Arrow.translateEndPoint:7
+#: abaqus.Annotation.Arrow.Arrow.translateStartPoint:7 of
+msgid "A Float specifying the **X** translation amount in millimeters."
+msgstr ""
+
 #: abaqus.Annotation.Arrow.Arrow.translateEndPoint:9
 #: abaqus.Annotation.Arrow.Arrow.translateStartPoint:9 of
 msgid "A Float specifying the*Y* translation amount in millimeters."
+msgstr ""
+
+#: abaqus.Annotation.Arrow.Arrow.translateStartPoint:1 of
+msgid ""
+"This method translates the start point of the Arrow object on the "
+"viewport plane."
 msgstr ""
 
 #: abaqus.Annotation.Arrow.Arrow.translateStartPoint:4 of
@@ -2681,6 +974,280 @@ msgstr ""
 
 #: ../../docstring abaqus.Annotation.Text.Text.width:1 of
 msgid "A Float specifying the width in millimeters of the Text object."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation:1 of
+msgid ""
+"The Annotation object is the abstract base type for other Annotation "
+"objects. The Annotation object has no explicit constructor. The methods "
+"and members of the Annotation object are common to all objects derived "
+"from Annotation."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation:14 of
+msgid ""
+"Check `Annotation on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.bringForward:1 of
+msgid ""
+"This method brings the Annotation object one position up in the "
+"annotation stack."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.bringToFront:1 of
+msgid ""
+"This method brings the Annotation object to the top of the annotation "
+"stack."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.moveAfter:1 of
+msgid ""
+"This method moves the Annotation object after another object in the same "
+"repository."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.moveAfter:4 of
+msgid ""
+"Check `Annotation.moveAfter on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
+"#simaker-annotationmoveafterpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.moveAfter:7
+#: abaqus.Annotation.Annotation.Annotation.moveBefore:7 of
+msgid "A String specifying the name of the other Annotation object."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.moveBefore:1 of
+msgid ""
+"This method moves the Annotation object before another object in the same"
+" repository."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.moveBefore:4 of
+msgid ""
+"Check `Annotation.moveBefore on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
+"#simaker-annotationmovebeforepyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.sendBackward:1 of
+msgid ""
+"This method sends the Annotation object one position down in the "
+"annotation stack."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.sendToBack:1 of
+msgid ""
+"This method sends the Annotation object to the bottom of the annotation "
+"stack."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.translate:1 of
+msgid "This method translates the Annotation object on the viewport plane."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.translate:4 of
+msgid ""
+"Check `Annotation.translate on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all"
+"#simaker-annotationtranslatepyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation.translate:9 of
+msgid "A Float specifying the **Y** translation amount in millimeters."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
+msgid "Bases: :py:class:`~abaqus.Canvas.ViewportBase.ViewportBase`"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
+msgid ""
+"The following commands operate on Viewport objects. For more information "
+"about the Viewport object, see Viewport object."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:10 of
+msgid ""
+"Check `AnnotationViewport on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:1 of
+msgid "This method plots an Annotation object in aViewport."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:4 of
+msgid ""
+"Check `AnnotationViewport.plotAnnotation on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all"
+"#simaker-annotationviewportplotannotationpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:7 of
+msgid "An Annotation object to plot."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:9 of
+msgid ""
+"An Int specifying the index of the Annotation object in the sequence of "
+"annotations to plot. The default value is zero."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.view:1 of
+msgid ""
+"A View object specifying the object that controls viewing of the viewport"
+" content."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
+msgid ""
+"Bases: :py:class:`~typing.List`\\ "
+"[:py:class:`~abaqus.Annotation.Annotation.Annotation`]"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
+msgid ""
+"The AnnotationsToPlotArray object is a sequence that stores references to"
+" plotted annotations. By adding annotations to and removing annotations "
+"from this sequence, you can control which annotations are displayed in a "
+"particular viewport."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:12 of
+msgid ""
+"Check `AnnotationsToPlotArray on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:1
+#: of
+msgid ""
+"This method brings the Annotation object one position forward in the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.bringForward on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraybringforwardpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:8
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:8
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:8
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:8
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:8
+#: of
+msgid ""
+"An Int specifying the index of the Annotation object in the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:1
+#: of
+msgid ""
+"This method brings the Annotation object to the beginning of the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.bringToFront on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraybringtofrontpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:1
+#: of
+msgid ""
+"This method moves the Annotation object after another object in the same "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.moveAfter on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraymoveafterpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:8
+#: of
+msgid ""
+"An Integer specifying the index of the Annotation object in the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter:11
+#: of
+msgid ""
+"An Integer specifying the index of the other Annotation object in the "
+"AnnotationsToPlotArray sequence after which this object will be moved."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:1
+#: of
+msgid ""
+"This method moves the Annotation object before another object in the same"
+" AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.moveBefore on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraymovebeforepyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore:11
+#: of
+msgid ""
+"An Int specifying the index of the other Annotation object in the "
+"AnnotationsToPlotArray sequence before which this object will be moved."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:1
+#: of
+msgid ""
+"This method sends the Annotation object one position backward in the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.sendBackward on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraysendbackwardpyc>`__."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:1
+#: of
+msgid ""
+"This method sends the Annotation object to the end of the "
+"AnnotationsToPlotArray sequence."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:5
+#: of
+msgid ""
+"Check `AnnotationsToPlotArray.sendToBack on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
+"#simaker-annotationstoplotarraysendtobackpyc>`__."
 msgstr ""
 
 #~ msgid ""
@@ -3666,5 +2233,1037 @@ msgstr ""
 #~ "A :py:class:`~abaqus.UtilityAndView.View.View` object "
 #~ "specifying the object that controls "
 #~ "viewing of the viewport content."
+#~ msgstr ""
+
+#~ msgid "Public Data Attributes:"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Annotation.Annotation.Annotation.name>`\\"
+#~ msgstr ""
+
+#~ msgid "Public Methods:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringToFront "
+#~ "<abaqus.Annotation.Annotation.Annotation.bringToFront>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendToBack "
+#~ "<abaqus.Annotation.Annotation.Annotation.sendToBack>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringForward "
+#~ "<abaqus.Annotation.Annotation.Annotation.bringForward>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendBackward "
+#~ "<abaqus.Annotation.Annotation.Annotation.sendBackward>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveBefore "
+#~ "<abaqus.Annotation.Annotation.Annotation.moveBefore>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveAfter "
+#~ "<abaqus.Annotation.Annotation.Annotation.moveAfter>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translate "
+#~ "<abaqus.Annotation.Annotation.Annotation.translate>`\\ "
+#~ "\\(\\[x\\, y\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__new__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__new__>`\\"
+#~ " \\(cls\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringForward "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward>`\\"
+#~ " \\(index\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringToFront "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront>`\\"
+#~ " \\(index\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveAfter "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveAfter>`\\"
+#~ " \\(index\\, other\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveBefore "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore>`\\"
+#~ " \\(index\\, other\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendBackward "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward>`\\"
+#~ " \\(index\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendToBack "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack>`\\"
+#~ " \\(index\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Return repr(self)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\"
+#~ " \\(name\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return getattr(self, name)."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self<value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self<=value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self==value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self!=value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self>value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self>=value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Implement iter(self)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <builtins.list.__init__>`\\ "
+#~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Return len(self)."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
+#~ msgstr ""
+
+#~ msgid "x.__getitem__(y) <==> x[y]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ "
+#~ "\\(key\\, value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Set self[key] to value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Delete self[key]."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self+value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return self*value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return value*self."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return key in self."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Implement self+=value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Implement self*=value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Return a reverse iterator over the list."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Return the size of the list in memory, in bytes."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Remove all items from list."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Return a shallow copy of the list."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Append object to the end of the list."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Insert object before index."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Extend list by appending elements from the iterable."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Remove and return item at index (default last)."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Remove first occurrence of value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, "
+#~ "start\\, stop\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Return first index of value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid "Return number of occurrences of value."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Reverse *IN PLACE*."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Sort the list in ascending order and return None."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
+#~ msgstr ""
+
+#~ msgid "See PEP 585"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__class_getitem__ <typing.Generic.__class_getitem__>`\\"
+#~ " \\(params\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init_subclass__ <typing.Generic.__init_subclass__>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid "This method is called when a class is subclassed."
+#~ msgstr ""
+
+#~ msgid "Private Data Attributes:"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "**X**- and **Y**-coordinates in millimeters"
+#~ " in the canvas coordinate system of"
+#~ " the lower left corner of the "
+#~ "viewport."
+#~ msgstr ""
+
+#~ msgid "A Float specifying the width in millimeters of the viewport."
+#~ msgstr ""
+
+#~ msgid "A Float specifying the height in millimeters of the viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the "
+#~ "viewport border is visible in a "
+#~ "printed image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the "
+#~ "viewport title should be displayed in"
+#~ " a printed image."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying which title "
+#~ "to use for the viewport title."
+#~ msgstr ""
+
+#~ msgid "A String specifying the viewport title when **titleStyle** =CUSTOM."
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the display mode of the viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying which layer "
+#~ "or layers will be controlled by "
+#~ "the view manipulation tools when "
+#~ "**displayMode** = OVERLAY."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying a factor to be"
+#~ " used in offsetting layers in the "
+#~ "screen Z direction."
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the current state of a viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the width in "
+#~ "millimeters of the current viewport, "
+#~ "regardless of the value of "
+#~ "**windowState**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the height in "
+#~ "millimeters of the current viewport, "
+#~ "regardless of the value of "
+#~ "**windowState**, and including the title "
+#~ "bar."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the "
+#~ "viewport is linked for synchronization."
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the currently active color mappings."
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the last applied color mapping."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the translucency that"
+#~ " will be applied to objects colored"
+#~ " using **initialColor** and it needs "
+#~ "to be set along with **initialColor**."
+#~ msgstr ""
+
+#~ msgid "A Boolean specifying whether an animation is connected to the viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A repository of AttributeColorMap objects "
+#~ "specifying the objects cannot be "
+#~ "constructed but the following attribute "
+#~ "maps are supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the color that "
+#~ "will be applied to all objects in"
+#~ " the viewport at the start of "
+#~ "color coding."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying which layer is "
+#~ "affected by options settings when "
+#~ "**displayMode** =OVERLAY."
+#~ msgstr ""
+
+#~ msgid "A Displayable object specifying the object to be displayed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A repository of Layer objects specifying"
+#~ " the key to the repository is a"
+#~ " String with the name of the "
+#~ "layer."
+#~ msgstr ""
+
+#~ msgid "An OdbDisplay object specifying the display options for the Odb object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A PartDisplayOptions object specifying the "
+#~ "display options for the Part object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An AssemblyDisplayOptions object specifying "
+#~ "the display options for the Assembly "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "A ViewportAnnotationOptions object."
+#~ msgstr ""
+
+#~ msgid "A DetailPlotOptions object."
+#~ msgstr ""
+
+#~ msgid "An AnnotationsToPlotArray object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Strings specifying the "
+#~ "names of layers that will be "
+#~ "displayed in the viewport when "
+#~ "**displayMode** = OVERLAY."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "**X**- and **Y**-coordinates in millimeters"
+#~ " in the canvas coordinate system of"
+#~ " the lower left corner of the "
+#~ "current viewport, regardless of the "
+#~ "value of **windowState**."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "**X**- and **Y**-coordinates in millimeters"
+#~ " of the lower left corner of "
+#~ "the current viewport from a coordinate"
+#~ " system having its origin in the "
+#~ "lower left corner of the drawing "
+#~ "area."
+#~ msgstr ""
+
+#~ msgid "A LightOptions object."
+#~ msgstr ""
+
+#~ msgid "An ImageOptions object."
+#~ msgstr ""
+
+#~ msgid "A MovieOptions object."
+#~ msgstr ""
+
+#~ msgid "A tuple of Strings specifying keys to the session.drawings repository."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`origin <abaqus.Canvas.ViewportBase.ViewportBase.origin>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`width <abaqus.Canvas.ViewportBase.ViewportBase.width>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`height <abaqus.Canvas.ViewportBase.ViewportBase.height>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`border <abaqus.Canvas.ViewportBase.ViewportBase.border>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`titleBar <abaqus.Canvas.ViewportBase.ViewportBase.titleBar>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`titleStyle "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.titleStyle>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`customTitleString "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.customTitleString>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`displayMode "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.displayMode>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`viewManipLayers "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`layerOffset "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.layerOffset>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`windowState "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.windowState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentWidth "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.currentWidth>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentHeight "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.currentHeight>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`applyLinkedCommands "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`activeColorModes "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`colorMode "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.colorMode>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translucency "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.translucency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`animationConnect "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.animationConnect>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`colorMappings "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.colorMappings>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`initialColor "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.initialColor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentLayer "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.currentLayer>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`displayedObject "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.displayedObject>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`layers <abaqus.Canvas.ViewportBase.ViewportBase.layers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`odbDisplay "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`partDisplay "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.partDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`assemblyDisplay "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`viewportAnnotationOptions "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`detailPlotOptions "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`annotationsToPlot "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`visibleLayers "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentOrigin "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`iconOrigin "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lightOptions "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.lightOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`imageOptions "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.imageOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`movieOptions "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.movieOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`drawings <abaqus.Canvas.ViewportBase.ViewportBase.drawings>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Canvas.ViewportBase.ViewportBase.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`view <abaqus.Canvas.ViewportBase.ViewportBase.view>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`plotAnnotation "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation>`\\"
+#~ " \\(annotation\\[\\, index\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.__init__>`\\ "
+#~ "\\(name\\[\\, origin\\, width\\, height\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method creates a Viewport object"
+#~ " with the specified origin and "
+#~ "dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringToFront "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.bringToFront>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method moves the Viewport object to the front."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableMultipleColors "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method disables applying multiple "
+#~ "color mappings that was enabled using"
+#~ " enableMultipleColors"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableRefresh "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method disables Viewport refresh."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableColorCodeUpdates "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method disables Viewport updates "
+#~ "and internal computations triggered because"
+#~ " of color coding."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableMultipleColors "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method enables multiple color "
+#~ "mappings to be applied at the same"
+#~ " time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableRefresh "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method enables Viewport refresh disabled using disableRefresh."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableColorCodeUpdates "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method enables Viewport color code"
+#~ " updates disabled using disableColorCodeUpdates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getActiveElementLabels "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels>`\\"
+#~ " \\(\\[useCut\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns the element labels"
+#~ " currently active in the viewport "
+#~ "based on the current display group."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getActiveNodeLabels "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels>`\\ "
+#~ "\\(\\[useCut\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns the node labels "
+#~ "currently active in the viewport based"
+#~ " on the current display group."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getPrimVarMinMaxLoc "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary "
+#~ "containing the minimum, maximum and "
+#~ "their location for the current primary"
+#~ " variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeCurrent "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method makes theViewport object the current viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`maximize "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.maximize>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method maximizes the Viewport object to fill the drawing area."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`minimize "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.minimize>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method minimizes the Viewport "
+#~ "object to appear as an abbreviated "
+#~ "title bar."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`offset "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.offset>`\\ "
+#~ "\\(\\[deltaX\\, deltaY\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method modifies the current "
+#~ "**X**-*Y* location of the viewport by"
+#~ " the specified distance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.restore>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method restores a maximized or "
+#~ "minimized Viewport object to its "
+#~ "previous size and location."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendToBack "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.sendToBack>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method moves the Viewport object to the back."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setColor "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.setColor>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`forceRefresh "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "This method causes the Viewport to refresh immediately."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.setValues>`\\ "
+#~ "\\(\\[displayedObject\\, displayMode\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid "This method modifies the Viewport object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`addDrawings "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.addDrawings>`\\ "
+#~ "\\(\\[names\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method identifies the names of "
+#~ "Drawing objects to be rendered in "
+#~ "the Viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`removeDrawings "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings>`\\ "
+#~ "\\(\\[names\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method identifies the names of "
+#~ "Drawing objects to no longer be "
+#~ "rendered in the Viewport."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeDisplay "
+#~ "<abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay>`\\ "
+#~ "\\(\\[numFrames\\, numSeconds\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method refreshes the Viewport "
+#~ "display **numFrames** times and then "
+#~ "checks to see if **numSeconds** seconds"
+#~ " have elapsed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus._OptionsBase._OptionsBase.get_user_attributes>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Returns a list of the user attributes of the class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus._OptionsBase._OptionsBase.setValues>`\\ "
+#~ "\\(\\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid "This method modifies the _OptionsBase object."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`startPoint <abaqus.Annotation.Arrow.Arrow.startPoint>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "start point **X**- and **Y**-offsets in"
+#~ " millimeters from **startAnchor**."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`endPoint <abaqus.Annotation.Arrow.Arrow.endPoint>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "end point **X**- and **Y**-offsets in"
+#~ " millimeters from **endAnchor**."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`startAnchor <abaqus.Annotation.Arrow.Arrow.startAnchor>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant or a sequence of Floats specifying a point."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`endAnchor <abaqus.Annotation.Arrow.Arrow.endAnchor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`startHeadStyle "
+#~ "<abaqus.Annotation.Arrow.Arrow.startHeadStyle>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the style of the start head."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`endHeadStyle <abaqus.Annotation.Arrow.Arrow.endHeadStyle>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the style of the end head."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`startGap <abaqus.Annotation.Arrow.Arrow.startGap>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the distance in "
+#~ "millimeters between the arrow start "
+#~ "point and the arrow start head."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`endGap <abaqus.Annotation.Arrow.Arrow.endGap>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the distance in "
+#~ "millimeters between the arrow end point"
+#~ " and the arrow end head."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`color <abaqus.Annotation.Arrow.Arrow.color>`\\"
+#~ msgstr ""
+
+#~ msgid "A String specifying the color of the arrow."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`lineStyle <abaqus.Annotation.Arrow.Arrow.lineStyle>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the line style of the arrow."
+#~ msgstr ""
+
+#~ msgid ":py:obj:`lineThickness <abaqus.Annotation.Arrow.Arrow.lineThickness>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the line thickness of the arrow."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Annotation.Arrow.Arrow.__init__>`\\"
+#~ " \\(name\\[\\, startPoint\\, endPoint\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translateStartPoint "
+#~ "<abaqus.Annotation.Arrow.Arrow.translateStartPoint>`\\ "
+#~ "\\(\\[x\\, y\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translateEndPoint "
+#~ "<abaqus.Annotation.Arrow.Arrow.translateEndPoint>`\\ \\(\\[x\\,"
+#~ " y\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues <abaqus.Annotation.Arrow.Arrow.setValues>`\\"
+#~ " \\(\\[startPoint\\, endPoint\\, ...\\]\\)"
 #~ msgstr ""
 
