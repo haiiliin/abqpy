@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../reference/mdb/model/step/step_miscellaneous.md:1
 msgid "Step Miscellaneous"
@@ -99,87 +99,38 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositedampingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping
-#: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent
-#: abaqus.StepMiscellaneous.DirectDamping.DirectDamping
-#: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency
-#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent
-#: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent
-#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling
-#: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency
-#: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent
-#: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency
-#: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping
-#: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency
-#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent
-#: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent
-#: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency
-#: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes
-#: of
-msgid "Public Data Attributes:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components:1 of
-msgid "A CompositeDampingComponentArray object."
-msgstr ""
-
 #: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping:1
 #: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent:1
-#: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray:1
 #: abaqus.StepMiscellaneous.Control.Control:1
 #: abaqus.StepMiscellaneous.DirectDamping.DirectDamping:1
 #: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency:1
 #: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent:1
-#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray:1
 #: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent:1
-#: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray:1
 #: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency:1
-#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray:1
 #: abaqus.StepMiscellaneous.MassScaling.MassScaling:1
-#: abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray:1
 #: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency:1
-#: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray:1
 #: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping:1
 #: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency:1
 #: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent:1
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray:1
 #: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent:1
-#: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray:1
 #: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent:1
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray:1
 #: abaqus.StepMiscellaneous.SolverControl.SolverControl:1
 #: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency:1
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray:1
 #: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency:1
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray:1
 #: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency:1
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray:1
 #: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping:1
 #: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency:1
 #: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent:1
-#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray:1
 #: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent:1
-#: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray:1
 #: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency:1
-#: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray:1
 #: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes:1
-#: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray:1
 #: of
 msgid "Member Details:"
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components:1 of
+msgid "A CompositeDampingComponentArray object."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent:1
@@ -196,38 +147,24 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositedampingcomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`start "
-"<abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.start>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.start:1
-#: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.start:1
-#: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.start:1
-#: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.start:1
-#: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.start:1
-#: of
-msgid "An Int specifying the mode number of the lowest mode of a range."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`end "
-"<abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.end>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.end:1
-#: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.end:1
-#: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.end:1
-#: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.end:1
-#: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.end:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponent.end:1
+#: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponent.end:1
+#: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponent.end:1
+#: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponent.end:1
+#: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModes.end:1
 #: of
 msgid "An Int specifying the mode number of the highest mode of a range."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponent.start:1
+#: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponent.start:1
+#: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponent.start:1
+#: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponent.start:1
+#: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModes.start:1
+#: of
+msgid "An Int specifying the mode number of the lowest mode of a range."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.Control.Control:1 of
@@ -242,19 +179,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-controlpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.StepMiscellaneous.Control.Control
-#: abaqus.StepMiscellaneous.SolverControl.SolverControl of
-msgid "Public Methods:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`setValues "
-"<abaqus.StepMiscellaneous.Control.Control.setValues>`\\ "
-"\\(\\[allowPropagation\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
 #: abaqus.StepMiscellaneous.Control.Control.setValues:1 of
 msgid "This method modifies the Control object."
 msgstr ""
@@ -424,13 +348,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components:1 of
 msgid "A DirectDampingComponentArray object."
 msgstr ""
@@ -447,13 +365,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingbyfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components:1
 #: of
 msgid "A DirectDampingByFrequencyComponentArray object."
@@ -473,31 +385,19 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingbyfrequencycomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`frequency "
-"<abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.frequency>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.frequency:1
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.frequency:1
-#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.frequency:1
-#: of
-msgid "A Float specifying the frequency value in cycles/time."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`fraction "
-"<abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.fraction>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.fraction:1
-#: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponent.fraction:1
+#: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponent.fraction:1
 #: of
 msgid "A Float specifying the fraction of critical damping."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponent.frequency:1
+#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponent.frequency:1
+#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponent.frequency:1
+#: of
+msgid "A Float specifying the frequency value in cycles/time."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent:1 of
@@ -512,24 +412,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingcomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`start "
-"<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.start>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`end "
-"<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.end>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`fraction "
-"<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction>`\\"
-msgstr ""
-
 #: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency:8
 #: of
 msgid ""
@@ -537,53 +419,35 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-emagtimeharmonicfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.lower>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.lower:1
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.lower:1
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.lower:1
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.lower:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequency.lower:1
+#: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequency.lower:1
+#: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequency.lower:1
+#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequency.lower:1
 #: of
 msgid ""
 "A Float specifying the lower limit of frequency range or a single "
 "frequency, in cycles/time."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.upper:1
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.upper:1
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.upper:1
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.upper:1
-#: of
-msgid "A Float specifying the upper limit of frequency range, in cycles/time."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`nPoints "
-"<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.nPoints>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.nPoints:1
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.nPoints:1
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.nPoints:1
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.nPoints:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequency.nPoints:1
+#: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequency.nPoints:1
+#: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequency.nPoints:1
+#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequency.nPoints:1
 #: of
 msgid ""
 "An Int specifying the number of points in the frequency range at which "
 "results should be given."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequency.upper:1
+#: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequency.upper:1
+#: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequency.upper:1
+#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequency.upper:1
+#: of
+msgid "A Float specifying the upper limit of frequency range, in cycles/time."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.MassScaling.MassScaling:1 of
@@ -598,173 +462,82 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-massscalingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`objective "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.objective>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying the objective of the mass scaling "
-"definition."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`occurs "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.occurs>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"A SymbolicConstant specifying whether mass scaling should be performed at"
-" the beginning of the step or throughout the step."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`type <abaqus.StepMiscellaneous.MassScaling.MassScaling.type>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of scaling."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`factor "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.factor>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.factor:1 of
-msgid "A Float specifying a scaling factor."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ":py:obj:`dt <abaqus.StepMiscellaneous.MassScaling.MassScaling.dt>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.dt:1 of
-msgid "A Float specifying a target time increment."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`frequency "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.frequency>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.frequency:1 of
-msgid ""
-"An Int specifying the frequency at which mass scaling calculations are "
-"performed."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`numberInterval "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.numberInterval>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.numberInterval:1 of
-msgid ""
-"An Int specifying the number of intervals at which mass scaling "
-"calculations are performed."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`feedRate "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.feedRate>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.feedRate:1 of
-msgid ""
-"A Float specifying the estimated average velocity of the workpiece in the"
-" rolling direction at steady-state conditions."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`extrudedLength "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.extrudedLength>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.extrudedLength:1 of
-msgid "A Float specifying the average element length in the extruded direction."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`crossSection "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.crossSection>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.MassScaling.MassScaling.crossSection:1 of
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.crossSection:1 of
 msgid ""
 "An Int specifying the number of nodes in the cross-section of the "
 "workpiece."
 msgstr ""
 
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`direction "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.direction>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid "A SymbolicConstant specifying the rolling direction."
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-":py:obj:`region "
-"<abaqus.StepMiscellaneous.MassScaling.MassScaling.region>`\\"
-msgstr ""
-
-#: ../../None:14:<autosummary>:1
-msgid ""
-"The SymbolicConstant MODEL or a Region object specifying where the mass "
-"scaling is applied."
-msgstr ""
-
-#: ../../docstring abaqus.StepMiscellaneous.MassScaling.MassScaling.direction:1
-#: of
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.direction:1 of
 msgid ""
 "A SymbolicConstant specifying the rolling direction. Possible values are "
 "GLOBAL_X, GLOBAL_Y, GLOBAL_Z, and GLOBAL_NONE. The default value is "
 "GLOBAL_X."
 msgstr ""
 
-#: ../../docstring abaqus.StepMiscellaneous.MassScaling.MassScaling.objective:1
+#: ../../docstring abaqus.StepMiscellaneous.MassScalingArray.MassScaling.dt:1
 #: of
+msgid "A Float specifying a target time increment."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.extrudedLength:1 of
+msgid "A Float specifying the average element length in the extruded direction."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.factor:1 of
+msgid "A Float specifying a scaling factor."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.feedRate:1 of
+msgid ""
+"A Float specifying the estimated average velocity of the workpiece in the"
+" rolling direction at steady-state conditions."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.frequency:1 of
+msgid ""
+"An Int specifying the frequency at which mass scaling calculations are "
+"performed."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.numberInterval:1 of
+msgid ""
+"An Int specifying the number of intervals at which mass scaling "
+"calculations are performed."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.objective:1 of
 msgid ""
 "A SymbolicConstant specifying the objective of the mass scaling "
 "definition. Possible values are SEMI_AUTOMATIC, AUTOMATIC, and "
 "REINITIALIZE. The default value is SEMI_AUTOMATIC."
 msgstr ""
 
-#: ../../docstring abaqus.StepMiscellaneous.MassScaling.MassScaling.occurs:1 of
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.occurs:1 of
 msgid ""
 "A SymbolicConstant specifying whether mass scaling should be performed at"
 " the beginning of the step or throughout the step. Possible values are "
 "AT_BEGINNING and THROUGHOUT_STEP."
 msgstr ""
 
-#: ../../docstring abaqus.StepMiscellaneous.MassScaling.MassScaling.region:1 of
+#: ../../docstring
+#: abaqus.StepMiscellaneous.MassScalingArray.MassScaling.region:1 of
 msgid ""
 "The SymbolicConstant MODEL or a Region object specifying where the mass "
 "scaling is applied. The default value is MODEL."
 msgstr ""
 
-#: ../../docstring abaqus.StepMiscellaneous.MassScaling.MassScaling.type:1 of
+#: ../../docstring abaqus.StepMiscellaneous.MassScalingArray.MassScaling.type:1
+#: of
 msgid ""
 "A SymbolicConstant specifying the type of scaling. Possible values are "
 "UNIFORM, BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is "
@@ -785,58 +558,34 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-randomresponsefrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.lower>`\\"
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequency.bias:1
+#: of
+msgid "A Float specifying the bias parameter."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.lower:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequency.lower:1
 #: of
 msgid ""
 "A Float specifying the lower limit of the frequency range in cycles per "
 "time."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.upper:1
-#: of
-msgid ""
-"A Float specifying the upper limit of the frequency range in cycles per "
-"time."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`nCalcs "
-"<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.nCalcs>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.nCalcs:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequency.nCalcs:1
 #: of
 msgid ""
 "An Int specifying the number of points between eigenfrequencies at which "
 "the response should be calculated."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`bias "
-"<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.bias>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.bias:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequency.upper:1
 #: of
-msgid "A Float specifying the bias parameter."
+msgid ""
+"A Float specifying the upper limit of the frequency range in cycles per "
+"time."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping:1 of
@@ -849,13 +598,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components:1 of
 msgid "A RayleighDampingComponentArray object."
 msgstr ""
@@ -872,13 +615,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingbyfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components:1
 #: of
 msgid "A RayleighDampingByFrequencyComponentArray object."
@@ -898,34 +635,16 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingbyfrequencycomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`frequency "
-"<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.frequency>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`alpha "
-"<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.alpha>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.alpha:1
-#: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.alpha:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponent.alpha:1
+#: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponent.alpha:1
 #: of
 msgid "A Float specifying the mass proportional damping, αM."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`beta "
-"<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.beta>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.beta:1
-#: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponent.beta:1
+#: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponent.beta:1
 #: of
 msgid "A Float specifying the stiffness proportional damping, βM."
 msgstr ""
@@ -944,30 +663,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingcomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`start "
-"<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.start>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`end "
-"<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.end>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`alpha "
-"<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.alpha>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`beta "
-"<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta>`\\"
-msgstr ""
-
 #: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent:1
 #: of
 msgid ""
@@ -982,74 +677,8 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-responsespectrumcomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`x "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.x>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.x:1
-#: of
-msgid "A Float specifying the **X**-direction cosine."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`y "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.y>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.y:1
-#: of
-msgid "A Float specifying the **Y**-direction cosine."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`z "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.z>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.z:1
-#: of
-msgid "A Float specifying the **Z**-direction cosine."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`scale "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.scale>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.scale:1
-#: of
-msgid "A Float specifying the scale factor."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`timeDuration "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.timeDuration>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-"A Float specifying the time duration of the dynamic event, from which "
-"this spectrum was created."
-msgstr ""
-
-#: ../../None:8:<autosummary>:1
-msgid ""
-":py:obj:`respSpectrum "
-"<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.respSpectrum>`\\"
-msgstr ""
-
-#: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.respSpectrum:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.respSpectrum:1
 #: of
 msgid ""
 "A String specifying the name of the response spectrum specified with the "
@@ -1057,12 +686,36 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.timeDuration:1
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.scale:1
+#: of
+msgid "A Float specifying the scale factor."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.timeDuration:1
 #: of
 msgid ""
 "A Float specifying the time duration of the dynamic event, from which "
 "this spectrum was created. Note: This parameter is ignored unless used "
 "with the DSC modal summation rule."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.x:1
+#: of
+msgid "A Float specifying the **X**-direction cosine."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.y:1
+#: of
+msgid "A Float specifying the **Y**-direction cosine."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponent.z:1
+#: of
+msgid "A Float specifying the **Z**-direction cosine."
 msgstr ""
 
 #: abaqus.StepMiscellaneous.SolverControl.SolverControl:1 of
@@ -1077,14 +730,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solvercontrolpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`setValues "
-"<abaqus.StepMiscellaneous.SolverControl.SolverControl.setValues>`\\ "
-"\\(\\[allowPropagation\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
 #: abaqus.StepMiscellaneous.SolverControl.SolverControl.setValues:1 of
 msgid "This method modifies the SolverControl object."
 msgstr ""
@@ -1144,37 +789,9 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatedirectfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.lower>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`nPoints "
-"<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.nPoints>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`bias "
-"<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.bias>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid "A Float specifying the Bias parameter."
-msgstr ""
-
 #: ../../docstring
-#: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.bias:1
-#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias:1
+#: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequency.bias:1
+#: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequency.bias:1
 #: of
 msgid ""
 "A Float specifying the Bias parameter. When results are requested at four"
@@ -1196,32 +813,8 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatemodalfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.lower>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`nPoints "
-"<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.nPoints>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`bias "
-"<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.bias>`\\"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.bias:1
+#: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequency.bias:1
 #: of
 msgid ""
 "A Float specifying the bias parameter. When results are requested at four"
@@ -1243,30 +836,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatesubspacefrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.lower>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`nPoints "
-"<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.nPoints>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`bias "
-"<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias>`\\"
-msgstr ""
-
 #: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping:1 of
 msgid "A StructuralDamping object contains structural damping parameters."
 msgstr ""
@@ -1277,13 +846,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components:1 of
 msgid "A StructuralDampingComponentArray object."
 msgstr ""
@@ -1302,13 +865,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingbyfrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`components "
-"<abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components>`\\"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../docstring
+#: ../../docstring
 #: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components:1
 #: of
 msgid "A StructuralDampingByFrequencyComponentArray object."
@@ -1328,21 +885,9 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingbyfrequencycomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`frequency "
-"<abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.frequency>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`factor "
-"<abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.factor>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.factor:1
-#: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponent.factor:1
+#: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponent.factor:1
 #: of
 msgid "A Float specifying the damping factor, s."
 msgstr ""
@@ -1361,24 +906,6 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingcomponentpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`start "
-"<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.start>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`end "
-"<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.end>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`factor "
-"<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor>`\\"
-msgstr ""
-
 #: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency:1
 #: of
 msgid ""
@@ -1394,26 +921,14 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructuregeneratefrequencypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`lower "
-"<abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.lower>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.lower:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequency.lower:1
 #: of
 msgid "A Float specifying the lower limit of the frequency range, in cycles/time."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`upper "
-"<abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.upper>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.upper:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequency.upper:1
 #: of
 msgid "A Float specifying the upper limit of the frequency range, in cycles/time."
 msgstr ""
@@ -1432,26 +947,8 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructuregeneratemodespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`start "
-"<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.start>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`end "
-"<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.end>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`increment "
-"<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.increment>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.increment:1
+#: ../../docstring
+#: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModes.increment:1
 #: of
 msgid ""
 "An Int specifying the increment used to define the intermediate mode "
@@ -1983,5 +1480,394 @@ msgstr ""
 #~ " object is used to define the "
 #~ "modes to be used in a modal "
 #~ "dynamic analysis."
+#~ msgstr ""
+
+#~ msgid "Public Data Attributes:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`start "
+#~ "<abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.start>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`end "
+#~ "<abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.end>`\\"
+#~ msgstr ""
+
+#~ msgid "Public Methods:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.StepMiscellaneous.Control.Control.setValues>`\\ "
+#~ "\\(\\[allowPropagation\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`frequency "
+#~ "<abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.frequency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fraction "
+#~ "<abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.fraction>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`start "
+#~ "<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.start>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`end "
+#~ "<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.end>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fraction "
+#~ "<abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nPoints "
+#~ "<abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.nPoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`objective "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.objective>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the objective"
+#~ " of the mass scaling definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`occurs "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.occurs>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying whether mass "
+#~ "scaling should be performed at the "
+#~ "beginning of the step or throughout "
+#~ "the step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`type "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.type>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the type of scaling."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`factor "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.factor>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`dt <abaqus.StepMiscellaneous.MassScaling.MassScaling.dt>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`frequency "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.frequency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`numberInterval "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.numberInterval>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`feedRate "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.feedRate>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`extrudedLength "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.extrudedLength>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`crossSection "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.crossSection>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`direction "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.direction>`\\"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the rolling direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`region "
+#~ "<abaqus.StepMiscellaneous.MassScaling.MassScaling.region>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant MODEL or a Region"
+#~ " object specifying where the mass "
+#~ "scaling is applied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nCalcs "
+#~ "<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.nCalcs>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bias "
+#~ "<abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.bias>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`frequency "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.frequency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`alpha "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.alpha>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`beta "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.beta>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`start "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.start>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`end "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.end>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`alpha "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.alpha>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`beta "
+#~ "<abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`x "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.x>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`y "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.y>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`z "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.z>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`scale "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.scale>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeDuration "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.timeDuration>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the time duration "
+#~ "of the dynamic event, from which "
+#~ "this spectrum was created."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`respSpectrum "
+#~ "<abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.respSpectrum>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.StepMiscellaneous.SolverControl.SolverControl.setValues>`\\"
+#~ " \\(\\[allowPropagation\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nPoints "
+#~ "<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.nPoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bias "
+#~ "<abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.bias>`\\"
+#~ msgstr ""
+
+#~ msgid "A Float specifying the Bias parameter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nPoints "
+#~ "<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.nPoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bias "
+#~ "<abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.bias>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nPoints "
+#~ "<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.nPoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bias "
+#~ "<abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`components "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`frequency "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.frequency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`factor "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.factor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`start "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.start>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`end "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.end>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`factor "
+#~ "<abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lower "
+#~ "<abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.lower>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`upper "
+#~ "<abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.upper>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`start "
+#~ "<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.start>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`end "
+#~ "<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.end>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`increment "
+#~ "<abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.increment>`\\"
 #~ msgstr ""
 

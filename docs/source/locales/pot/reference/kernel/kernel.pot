@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 07:34+0000\n"
+"POT-Creation-Date: 2022-12-18 00:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:1
-#: ../../None:3:<autosummary>:1
 msgid "This class allows you to derive a general class that can be queried from the GUI and is capable of notifying the GUI when the contents of the class change."
 msgstr ""
 
@@ -56,18 +55,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:10
 msgid "Check `CommandRegister on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:0
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:0
-msgid "Public Methods:"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.CustomKernel.CommandRegister.CommandRegister.__init__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
@@ -122,287 +109,12 @@ msgstr ""
 msgid "Check `RegisteredDictionary on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__>`\\ \\(\\)"
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods:1
+msgid "The RegisteredDictionary object supports the same methods as a Python dictionary. In addition, the RegisteredDictionary object supports the changeKey method."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:1
-#: ../../None:5:<autosummary>:1
 msgid "This method creates a RegisteredDictionary object."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`Methods <abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid "The RegisteredDictionary object supports the same methods as a Python dictionary."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`changeKey <abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey>`\\ \\(fromName\\, toName\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:1
-#: ../../None:5:<autosummary>:1
-msgid "This method changes the name of a key in the dictionary."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__repr__ <builtins.dict.__repr__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return repr(self)."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__getattribute__ <builtins.dict.__getattribute__>`\\ \\(name\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return getattr(self, name)."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__lt__ <builtins.dict.__lt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self<value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__le__ <builtins.dict.__le__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self<=value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__eq__ <builtins.dict.__eq__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self==value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__ne__ <builtins.dict.__ne__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self!=value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__gt__ <builtins.dict.__gt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self>value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__ge__ <builtins.dict.__ge__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self>=value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__iter__ <builtins.dict.__iter__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Implement iter(self)."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__init__ <builtins.dict.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__or__ <builtins.dict.__or__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Return self|value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__ror__ <builtins.dict.__ror__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Return value|self."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__ior__ <builtins.dict.__ior__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Return self|=value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__len__ <builtins.dict.__len__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return len(self)."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__getitem__ <builtins.dict.__getitem__>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "x.__getitem__(y) <==> x[y]"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__setitem__ <builtins.dict.__setitem__>`\\ \\(key\\, value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Set self[key] to value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__delitem__ <builtins.dict.__delitem__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Delete self[key]."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__contains__ <builtins.dict.__contains__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "True if the dictionary has the specified key, else False."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <builtins.dict.__sizeof__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`get <builtins.dict.get>`\\ \\(key\\[\\, default\\]\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Return the value for key if key is in the dictionary, else default."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`setdefault <builtins.dict.setdefault>`\\ \\(key\\[\\, default\\]\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Insert key with a value of default if key is not in the dictionary."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`pop <builtins.dict.pop>`\\ \\(k\\[\\,d\\]\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "If key is not found, default is returned if given, otherwise KeyError is raised"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`popitem <builtins.dict.popitem>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Remove and return a (key, value) pair as a 2-tuple."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`keys <builtins.dict.keys>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`items <builtins.dict.items>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`values <builtins.dict.values>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`update <builtins.dict.update>`\\ \\(\\[E\\, \\]\\*\\*F\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`fromkeys <builtins.dict.fromkeys>`\\ \\(\\[value\\]\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Create a new dictionary with keys from iterable and values set to value."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`clear <builtins.dict.clear>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`copy <builtins.dict.copy>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__reversed__ <builtins.dict.__reversed__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "Return a reverse iterator over the dict keys."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <builtins.dict.__class_getitem__>`\\"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "See PEP 585"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods:1
-msgid "The RegisteredDictionary object supports the same methods as a Python dictionary. In addition, the RegisteredDictionary object supports the changeKey method."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:8
@@ -411,6 +123,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:9
 msgid ":class:`RegisteredDictionary`"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:1
+msgid "This method changes the name of a key in the dictionary."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:4
@@ -443,240 +159,12 @@ msgstr ""
 msgid "Check `RegisteredList on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.CustomKernel.RegisteredList.RegisteredList.__init__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a RegisteredList object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`Methods <abaqus.CustomKernel.RegisteredList.RegisteredList.Methods>`\\ \\(\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.Methods:1
-#: ../../None:4:<autosummary>:1
 msgid "The RegisteredList object supports the same methods as a standard Python list object."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\ \\(name\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__init__ <builtins.list.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ \\(key\\, value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self+value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return self*value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return value*self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return key in self."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self+=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Implement self*=value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a reverse iterator over the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return the size of the list in memory, in bytes."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove all items from list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Return a shallow copy of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Append object to the end of the list."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Insert object before index."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Extend list by appending elements from the iterable."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove and return item at index (default last)."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Remove first occurrence of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return first index of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-#: ../../None:36:<autosummary>:1
-msgid "Return number of occurrences of value."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Reverse *IN PLACE*."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid "Sort the list in ascending order and return None."
-msgstr ""
-
-#: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:1
+msgid "This method creates a RegisteredList object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:8
@@ -699,110 +187,12 @@ msgstr ""
 msgid "Check `RegisteredTuple on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__>`\\ \\(tuple\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a RegisteredTuple object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`Methods <abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods>`\\ \\(\\)"
-msgstr ""
-
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods:1
-#: ../../None:4:<autosummary>:1
 msgid "The RegisteredTuple object supports the same methods as a standard Python list object."
 msgstr ""
 
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__repr__ <builtins.tuple.__repr__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__hash__ <builtins.tuple.__hash__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "Return hash(self)."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__getattribute__ <builtins.tuple.__getattribute__>`\\ \\(name\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__lt__ <builtins.tuple.__lt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__le__ <builtins.tuple.__le__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__eq__ <builtins.tuple.__eq__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__ne__ <builtins.tuple.__ne__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__gt__ <builtins.tuple.__gt__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__ge__ <builtins.tuple.__ge__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__iter__ <builtins.tuple.__iter__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__len__ <builtins.tuple.__len__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__getitem__ <builtins.tuple.__getitem__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid "Return self[key]."
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__add__ <builtins.tuple.__add__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__mul__ <builtins.tuple.__mul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__rmul__ <builtins.tuple.__rmul__>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__contains__ <builtins.tuple.__contains__>`\\ \\(key\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__getnewargs__ <builtins.tuple.__getnewargs__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`index <builtins.tuple.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`count <builtins.tuple.count>`\\ \\(value\\, \\/\\)"
-msgstr ""
-
-#: ../../None:22:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <builtins.tuple.__class_getitem__>`\\"
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:1
+msgid "This method creates a RegisteredTuple object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:9
@@ -833,23 +223,6 @@ msgstr ""
 msgid "Check `RepositorySupport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__>`\\ \\(\\)"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a RepositorySupport object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`Repository <abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository>`\\ \\(name\\, constructors\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method installs a repository on the class."
-msgstr ""
-
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:1
 msgid "This method installs a repository on the class. The repository is an instance of a RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored in the repository are assumed to have an attribute called **name** that stores the key used to access the object in the repository. The name attribute will be modified by the changeKey method."
 msgstr ""
@@ -864,6 +237,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:13
 msgid "A constructor or sequence of constructors specifying which classes will store their instances in the repository."
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1
+msgid "This method creates a RepositorySupport object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:8
