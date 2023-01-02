@@ -22,7 +22,7 @@ def run(cae: bool = True) -> None:
     if not hasattr(main, "__file__") or main.__file__ is None:
         return
 
-    filePath = os.path.abspath(main.__file__)
+    filePath = os.path.relpath(main.__file__)
     args = " ".join(sys.argv[1:])
 
     try:  # If it is a jupyter notebook
