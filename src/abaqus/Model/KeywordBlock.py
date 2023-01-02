@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -37,7 +37,7 @@ class KeywordBlock:
     #: synchVersions used the argument **storeNodesAndElements** = False, the entry for the
     #: keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
     #: lines.
-    sieBlocks: tuple = ()
+    sieBlocks: Tuple[str, ...] = ()
 
     @abaqus_method_doc
     def setValues(self, edited: Boolean = OFF):
