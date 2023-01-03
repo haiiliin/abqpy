@@ -13,12 +13,6 @@ pull_request_rules:
         labels:
           - backport
           - "2023"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2023 (disable-auto-merge)
     conditions:
       - label=backport-to-2023
@@ -35,12 +29,6 @@ pull_request_rules:
           - backport
           - "2023"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2022 (auto-merge)
     conditions:
@@ -58,12 +46,6 @@ pull_request_rules:
         labels:
           - backport
           - "2022"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2022 (disable-auto-merge)
     conditions:
       - or:
@@ -82,12 +64,6 @@ pull_request_rules:
           - backport
           - "2022"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2021 (auto-merge)
     conditions:
@@ -105,12 +81,6 @@ pull_request_rules:
         labels:
           - backport
           - "2021"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2021 (disable-auto-merge)
     conditions:
       - or:
@@ -129,12 +99,6 @@ pull_request_rules:
           - backport
           - "2021"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2020 (auto-merge)
     conditions:
@@ -152,12 +116,6 @@ pull_request_rules:
         labels:
           - backport
           - "2020"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2020 (disable-auto-merge)
     conditions:
       - or:
@@ -176,12 +134,6 @@ pull_request_rules:
           - backport
           - "2020"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2019 (auto-merge)
     conditions:
@@ -199,12 +151,6 @@ pull_request_rules:
         labels:
           - backport
           - "2019"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2019 (disable-auto-merge)
     conditions:
       - or:
@@ -223,12 +169,6 @@ pull_request_rules:
           - backport
           - "2019"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2018 (auto-merge)
     conditions:
@@ -246,12 +186,6 @@ pull_request_rules:
         labels:
           - backport
           - "2018"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2018 (disable-auto-merge)
     conditions:
       - or:
@@ -270,12 +204,6 @@ pull_request_rules:
           - backport
           - "2018"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2017 (auto-merge)
     conditions:
@@ -293,12 +221,6 @@ pull_request_rules:
         labels:
           - backport
           - "2017"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2017 (disable-auto-merge)
     conditions:
       - or:
@@ -317,12 +239,6 @@ pull_request_rules:
           - backport
           - "2017"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Backport to 2016 (auto-merge)
     conditions:
@@ -340,12 +256,6 @@ pull_request_rules:
         labels:
           - backport
           - "2016"
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
   - name: Backport to 2016 (disable-auto-merge)
     conditions:
       - or:
@@ -364,12 +274,6 @@ pull_request_rules:
           - backport
           - "2016"
           - disable-auto-merge
-        body: |
-          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}
-
-          ## Commit Message
-
-          {{title}}
 
   - name: Auto merge backport pull request
     conditions:
@@ -390,8 +294,6 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-        commit_message_template: |
-          {{ body | get_section("## Commit Message") }}
 
   - name: Auto merge translation pull request
     conditions:
@@ -412,8 +314,6 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-        commit_message_template: |
-          {{ body | get_section("## Commit Message") }}
 
   - name: Auto merge updating version number pull request
     conditions:
@@ -434,8 +334,6 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-        commit_message_template: |
-          {{ body | get_section("## Commit Message") }}
 
   - name: Auto merge updating docs pull request
     conditions:
@@ -456,8 +354,6 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-        commit_message_template: |
-          {{ body | get_section("## Commit Message") }}
 
   - name: Warn on conflicts
     conditions:
