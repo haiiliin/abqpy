@@ -19,8 +19,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2023 (disable-auto-merge)
     conditions:
       - label=backport-to-2023
@@ -44,8 +42,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2022 (auto-merge)
     conditions:
       - or:
@@ -68,8 +64,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2022 (disable-auto-merge)
     conditions:
       - or:
@@ -95,8 +89,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2021 (auto-merge)
     conditions:
       - or:
@@ -119,8 +111,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2021 (disable-auto-merge)
     conditions:
       - or:
@@ -146,8 +136,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2020 (auto-merge)
     conditions:
       - or:
@@ -170,8 +158,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2020 (disable-auto-merge)
     conditions:
       - or:
@@ -197,8 +183,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2019 (auto-merge)
     conditions:
       - or:
@@ -221,8 +205,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2019 (disable-auto-merge)
     conditions:
       - or:
@@ -248,8 +230,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2018 (auto-merge)
     conditions:
       - or:
@@ -272,8 +252,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2018 (disable-auto-merge)
     conditions:
       - or:
@@ -299,8 +277,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2017 (auto-merge)
     conditions:
       - or:
@@ -323,8 +299,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2017 (disable-auto-merge)
     conditions:
       - or:
@@ -350,8 +324,6 @@ pull_request_rules:
 
           {{title}}
 
-          {{body}}
-
   - name: Backport to 2016 (auto-merge)
     conditions:
       - or:
@@ -374,8 +346,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
   - name: Backport to 2016 (disable-auto-merge)
     conditions:
       - or:
@@ -400,8 +370,6 @@ pull_request_rules:
           ## Commit Message
 
           {{title}}
-
-          {{body}}
 
   - name: Auto merge backport pull request
     conditions:
