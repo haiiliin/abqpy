@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1450,6 +1450,7 @@ msgstr ""
 #: abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup
 #: abaqus.DisplayGroup.Leaf.Leaf.__init__
+#: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames.__init__
 #: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.__init__
 #: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__
 #: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.__init__
@@ -1497,7 +1498,6 @@ msgstr ""
 #: abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup
 #: abaqus.DisplayGroup.Leaf.Leaf.__init__
-#: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames.__init__
 #: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums.__init__
 #: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup.__init__
 #: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels.__init__
@@ -2012,7 +2012,7 @@ msgstr ""
 
 #: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames.__init__:18
 #: of
-msgid ":class:`A LeafFromConstraintNames object.`"
+msgid "A LeafFromConstraintNames object."
 msgstr ""
 
 #: ../../docstring
@@ -6062,5 +6062,8 @@ msgstr ""
 #~ ":py:obj:`__init__ "
 #~ "<abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange.__init__>`\\"
 #~ " \\(\\[minimumRange\\, maximumRange\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":class:`A LeafFromConstraintNames object.`"
 #~ msgstr ""
 

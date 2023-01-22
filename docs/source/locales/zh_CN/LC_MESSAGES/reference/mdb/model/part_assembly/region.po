@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -851,8 +851,8 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
-":py:obj:`Set <abaqus.Region.RegionPart.RegionPart.Set>`\\ "
-"\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
+":py:obj:`Set <abaqus.Region.RegionPart.RegionPart.Set>`\\ \\(name\\, "
+"\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1049,7 +1049,9 @@ msgid "This command deletes the given surfaces from the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+msgid ""
+":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2583,7 +2585,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByRotation "
-"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2705,7 +2708,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByOffset "
-"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3809,7 +3813,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:71
-#: abaqus.Region.RegionPart.RegionPart.Surface:71 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:72 of
 msgid ""
 "The required parameters for different conditions are:  - On three-"
 "dimensional solid faces, you can use the following arguments:   "
@@ -3832,40 +3836,40 @@ msgid ""
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:71
-#: abaqus.Region.RegionPart.RegionPart.Surface:71 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:72 of
 msgid "The required parameters for different conditions are:"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:73
-#: abaqus.Region.RegionPart.RegionPart.Surface:73 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:74 of
 msgid ""
 "On three-dimensional solid faces, you can use the following arguments: "
 "side1Faces, side2Faces"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:76
-#: abaqus.Region.RegionPart.RegionPart.Surface:76 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:77 of
 msgid ""
 "On three-dimensional shell faces, you can use the following arguments: "
 "side1Faces, side2Faces, side12Faces"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:79
-#: abaqus.Region.RegionPart.RegionPart.Surface:79 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:80 of
 msgid ""
 "On three-dimensional wire edges, you can use the following arguments: "
 "end1Edges, end2Edges, circumEdges"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:82
-#: abaqus.Region.RegionPart.RegionPart.Surface:82 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:83 of
 msgid ""
 "On three-dimensional or two-dimensional or axisymmetric edges, you can "
 "use the following arguments: side1Edges, side2Edges"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:85
-#: abaqus.Region.RegionPart.RegionPart.Surface:85 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:86 of
 msgid ""
 "On two-dimensional or axisymmetric shell elements, you can use the "
 "following arguments: face1Elements, face2Elements, face3Elements, "
@@ -3873,39 +3877,39 @@ msgid ""
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:88
-#: abaqus.Region.RegionPart.RegionPart.Surface:88 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:89 of
 msgid ""
 "On solid elements, you can use the following arguments: face1Elements, "
 "face2Elements, face3Elements, face4Elements, face5Elements, face6Elements"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:91
-#: abaqus.Region.RegionPart.RegionPart.Surface:91 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:92 of
 msgid ""
 "On three-dimensional shell elements, you can use the following arguments:"
 " side1Elements, side2Elements, side12Elements"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:94
-#: abaqus.Region.RegionPart.RegionPart.Surface:94 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:95 of
 msgid ""
 "On three-dimensional wire elements, you can use the following arguments: "
 "end1Elements, end2Elements, circumElements"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:97
-#: abaqus.Region.RegionPart.RegionPart.Surface:97 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:98 of
 msgid ""
 "On two-dimensional or axisymmetric wire elements, you can use the "
 "following arguments: side1Elements, side2Elements"
 msgstr ""
 
-#: abaqus.Region.RegionPart.RegionPart.Surface:100 of
+#: abaqus.Region.RegionPart.RegionPart.Surface:101 of
 msgid "**surf** -- A Surface object"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:101
-#: abaqus.Region.RegionPart.RegionPart.Surface:101
+#: abaqus.Region.RegionPart.RegionPart.Surface:102
 #: abaqus.Region.Surface.Surface.SurfaceByBoolean:21
 #: abaqus.Region.Surface.Surface.SurfaceFromElsets:20 of
 msgid ":class:`Surface`"
@@ -4550,7 +4554,7 @@ msgstr ""
 #: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`Set <abaqus.Region.RegionAssembly.RegionAssembly.Set>`\\ "
-"\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
+"\\(name\\, \\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -4615,7 +4619,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\"
-" \\(\\)"
+" \\(name\\, \\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -9241,5 +9245,34 @@ msgstr ""
 #~ ":py:obj:`SurfaceFromElsets "
 #~ "<abaqus.Region.Surface.Surface.SurfaceFromElsets>`\\ \\(name\\,"
 #~ " elementSetSeq\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Set <abaqus.Region.RegionPart.RegionPart.Set>`\\ "
+#~ "\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Set "
+#~ "<abaqus.Region.RegionAssembly.RegionAssembly.Set>`\\ "
+#~ "\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Instance "
+#~ "<abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\ \\(\\)"
 #~ msgstr ""
 

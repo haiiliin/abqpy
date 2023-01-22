@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -704,7 +704,9 @@ msgid "This method deletes a rebar orientation assignment."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+msgid ""
+":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2238,7 +2240,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByRotation "
-"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2360,7 +2363,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByOffset "
-"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3067,6 +3071,7 @@ msgstr ""
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__
 #: abaqus.Property.PlyStackPlot.MdbPlyStackPlot
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
@@ -3089,7 +3094,6 @@ msgstr ""
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__
 #: abaqus.Property.PlyStackPlot.MdbPlyStackPlot
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
@@ -4186,7 +4190,8 @@ msgstr ""
 msgid "A Region object which contains a composite shell layup."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:19 of
 msgid "A PlyStackPlot object."
 msgstr ""
 
@@ -4218,10 +4223,6 @@ msgstr ""
 
 #: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:17 of
 msgid "A Float specifying the shell offset. The default value is 0.0."
-msgstr ""
-
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:19 of
-msgid ":class:`A PlyStackPlot object.`"
 msgstr ""
 
 #: abaqus.Property.Property.assignBeamSectionOrientation:9 of
@@ -7441,5 +7442,21 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.Property.SectionAssignment.SectionAssignment.setValues>`\\ "
 #~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":class:`A PlyStackPlot object.`"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3047,19 +3047,19 @@ msgid ":py:obj:`__init__ <abaqus.Odb.FieldOutput.FieldOutput.__init__>`\\ \\(\\*
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`addData <abaqus.Odb.FieldOutput.FieldOutput.addData>`\\ \\(\\)\\)"
+msgid ":py:obj:`addData <abaqus.Odb.FieldOutput.FieldOutput.addData>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`getScalarField <abaqus.Odb.FieldOutput.FieldOutput.getScalarField>`\\ \\(\\)"
+msgid ":py:obj:`getScalarField <abaqus.Odb.FieldOutput.FieldOutput.getScalarField>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`getSubset <abaqus.Odb.FieldOutput.FieldOutput.getSubset>`\\ \\(\\)  \\)\\)"
+msgid ":py:obj:`getSubset <abaqus.Odb.FieldOutput.FieldOutput.getSubset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`getTransformedField <abaqus.Odb.FieldOutput.FieldOutput.getTransformedField>`\\ \\(\\)"
+msgid ":py:obj:`getTransformedField <abaqus.Odb.FieldOutput.FieldOutput.getTransformedField>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -3559,7 +3559,7 @@ msgid "This method creates a HistoryOutput object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`addData <abaqus.Odb.HistoryOutput.HistoryOutput.addData>`\\ \\(\\)"
+msgid ":py:obj:`addData <abaqus.Odb.HistoryOutput.HistoryOutput.addData>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/HistoryOutput.py:docstring of abaqus.Odb.HistoryOutput.HistoryOutput.__init__:9
@@ -3843,7 +3843,7 @@ msgid "This method creates a HistoryRegion object."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-msgid ":py:obj:`getSubset <abaqus.Odb.HistoryRegion.HistoryRegion.getSubset>`\\ \\(\\)"
+msgid ":py:obj:`getSubset <abaqus.Odb.HistoryRegion.HistoryRegion.getSubset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -5072,7 +5072,7 @@ msgid ":py:obj:`Frame <abaqus.Odb.OdbFrame.OdbFrame.Frame>`\\ \\(\\*args\\, \\*\
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-msgid ":py:obj:`FieldOutput <abaqus.Odb.OdbFrame.OdbFrame.FieldOutput>`\\ \\(\\[validInvariants\\, ...\\]\\)"
+msgid ":py:obj:`FieldOutput <abaqus.Odb.OdbFrame.OdbFrame.FieldOutput>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.OdbFrame.OdbFrame.cyclicModeNumber:1
@@ -5710,15 +5710,7 @@ msgid "A Double specifying the value at which the frame is required. **frameValu
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:25
-msgid "* :class:`A tuple` of :class:`3 floats representing the unit normal vector. If the element face is` * :class:`collapsed such that a normal cannot be computed`, :class:`a zero-length vector is returned.`"
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:25
-msgid ":class:`A tuple` of :class:`3 floats representing the unit normal vector. If the element face is`"
-msgstr ""
-
-#: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:26
-msgid ":class:`collapsed such that a normal cannot be computed`, :class:`a zero-length vector is returned.`"
+msgid "A tuple of 3 floats representing the unit normal vector. If the element face is collapsed such that a normal cannot be computed, a zero-length vector is returned."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbMeshElement.py:docstring of abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:29
@@ -5860,11 +5852,11 @@ msgid ":py:obj:`__init__ <abaqus.Odb.OdbPartBase.OdbPartBase.__init__>`\\ \\(nam
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`addElements <abaqus.Odb.OdbPartBase.OdbPartBase.addElements>`\\ \\(\\)"
+msgid ":py:obj:`addElements <abaqus.Odb.OdbPartBase.OdbPartBase.addElements>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
-msgid ":py:obj:`addNodes <abaqus.Odb.OdbPartBase.OdbPartBase.addNodes>`\\ \\(\\)"
+msgid ":py:obj:`addNodes <abaqus.Odb.OdbPartBase.OdbPartBase.addNodes>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -7486,7 +7478,7 @@ msgid ":py:obj:`HistoryRegion <abaqus.Odb.OdbStep.OdbStep.HistoryRegion>`\\ \\(n
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-msgid ":py:obj:`Frame <abaqus.Odb.OdbStep.OdbStep.Frame>`\\ \\(\\)"
+msgid ":py:obj:`Frame <abaqus.Odb.OdbStep.OdbStep.Frame>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -7498,7 +7490,7 @@ msgid ":py:obj:`__init__ <abaqus.Odb.OdbStepBase.OdbStepBase.__init__>`\\ \\(nam
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`getFrame <abaqus.Odb.OdbStepBase.OdbStepBase.getFrame>`\\ \\(\\)"
+msgid ":py:obj:`getFrame <abaqus.Odb.OdbStepBase.OdbStepBase.getFrame>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1

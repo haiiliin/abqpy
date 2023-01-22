@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1702,7 +1702,10 @@ msgstr ""
 #: abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity.__init__
 #: abaqus.Material.Eos.DetonationPoint.DetonationPoint.__init__
 #: abaqus.Material.Eos.EosCompaction.EosCompaction.__init__
+#: abaqus.Material.Gap.GapConductance.GapConductance.__init__
+#: abaqus.Material.Gap.GapConvection.GapConvection.__init__
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__
+#: abaqus.Material.Gap.GapRadiation.GapRadiation.__init__
 #: abaqus.Material.Gasket.ContactArea.ContactArea.__init__
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic.__init__
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior.__init__
@@ -1716,6 +1719,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity
 #: abaqus.Material.Material.Material.Conductivity
 #: abaqus.Material.Material.Material.Creep
+#: abaqus.Material.Material.Material.CrushStress
 #: abaqus.Material.Material.Material.CrushableFoam
 #: abaqus.Material.Material.Material.Damping
 #: abaqus.Material.Material.Material.DeformationPlasticity
@@ -1731,7 +1735,10 @@ msgstr ""
 #: abaqus.Material.Material.Material.FldDamageInitiation
 #: abaqus.Material.Material.Material.FlsdDamageInitiation
 #: abaqus.Material.Material.Material.FluidLeakoff
+#: abaqus.Material.Material.Material.GapConductance
+#: abaqus.Material.Material.Material.GapConvection
 #: abaqus.Material.Material.Material.GapFlow
+#: abaqus.Material.Material.Material.GapRadiation
 #: abaqus.Material.Material.Material.GasketMembraneElastic
 #: abaqus.Material.Material.Material.GasketThicknessBehavior
 #: abaqus.Material.Material.Material.GasketTransverseShearElastic
@@ -1750,6 +1757,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.MaxpeDamageInitiation
 #: abaqus.Material.Material.Material.MaxpsDamageInitiation
 #: abaqus.Material.Material.Material.MaxsDamageInitiation
+#: abaqus.Material.Material.Material.MeanFieldHomogenization
 #: abaqus.Material.Material.Material.MkDamageInitiation
 #: abaqus.Material.Material.Material.MohrCoulombPlasticity
 #: abaqus.Material.Material.Material.MoistureSwelling
@@ -1779,6 +1787,13 @@ msgstr ""
 #: abaqus.Material.MaterialBase.MaterialBase.materialsFromOdb
 #: abaqus.Material.MaterialModel.MaterialModel.Material
 #: abaqus.Material.MaterialOdb.MaterialOdb.Material
+#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion
+#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix
+#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid
+#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__
+#: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__
+#: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__
+#: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__
 #: abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.__init__
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__
@@ -1913,10 +1928,7 @@ msgstr ""
 #: abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity.__init__
 #: abaqus.Material.Eos.DetonationPoint.DetonationPoint.__init__
 #: abaqus.Material.Eos.EosCompaction.EosCompaction.__init__
-#: abaqus.Material.Gap.GapConductance.GapConductance.__init__
-#: abaqus.Material.Gap.GapConvection.GapConvection.__init__
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__
-#: abaqus.Material.Gap.GapRadiation.GapRadiation.__init__
 #: abaqus.Material.Gasket.ContactArea.ContactArea.__init__
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic.__init__
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior.__init__
@@ -1930,7 +1942,6 @@ msgstr ""
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity
 #: abaqus.Material.Material.Material.Conductivity
 #: abaqus.Material.Material.Material.Creep
-#: abaqus.Material.Material.Material.CrushStress
 #: abaqus.Material.Material.Material.CrushableFoam
 #: abaqus.Material.Material.Material.Damping
 #: abaqus.Material.Material.Material.DeformationPlasticity
@@ -1946,10 +1957,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.FldDamageInitiation
 #: abaqus.Material.Material.Material.FlsdDamageInitiation
 #: abaqus.Material.Material.Material.FluidLeakoff
-#: abaqus.Material.Material.Material.GapConductance
-#: abaqus.Material.Material.Material.GapConvection
 #: abaqus.Material.Material.Material.GapFlow
-#: abaqus.Material.Material.Material.GapRadiation
 #: abaqus.Material.Material.Material.GasketMembraneElastic
 #: abaqus.Material.Material.Material.GasketThicknessBehavior
 #: abaqus.Material.Material.Material.GasketTransverseShearElastic
@@ -1968,7 +1976,6 @@ msgstr ""
 #: abaqus.Material.Material.Material.MaxpeDamageInitiation
 #: abaqus.Material.Material.Material.MaxpsDamageInitiation
 #: abaqus.Material.Material.Material.MaxsDamageInitiation
-#: abaqus.Material.Material.Material.MeanFieldHomogenization
 #: abaqus.Material.Material.Material.MkDamageInitiation
 #: abaqus.Material.Material.Material.MohrCoulombPlasticity
 #: abaqus.Material.Material.Material.MoistureSwelling
@@ -1998,13 +2005,6 @@ msgstr ""
 #: abaqus.Material.MaterialBase.MaterialBase.materialsFromOdb
 #: abaqus.Material.MaterialModel.MaterialModel.Material
 #: abaqus.Material.MaterialOdb.MaterialOdb.Material
-#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion
-#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix
-#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid
-#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__
-#: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__
-#: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__
-#: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__
 #: abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.__init__
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__
@@ -3378,7 +3378,10 @@ msgid ""
 msgstr ""
 
 #: ../../None:76:<autosummary>:1 ../../docstring
-#: abaqus.Material.MaterialBase.MaterialBase.meanFieldHomogenization:1 of
+#: abaqus.Material.Material.Material.MeanFieldHomogenization:28
+#: abaqus.Material.MaterialBase.MaterialBase.meanFieldHomogenization:1
+#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:25
+#: of
 msgid "A MeanFieldHomogenization object."
 msgstr ""
 
@@ -6350,7 +6353,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Material.Material.Material.CrushStress:22 of
-msgid ":class:`A CrushStress object.`"
+msgid "A CrushStress object."
 msgstr ""
 
 #: abaqus.Material.Material.Material.CrushableFoam:10
@@ -7543,7 +7546,7 @@ msgstr ""
 
 #: abaqus.Material.Gap.GapConductance.GapConductance.__init__:19
 #: abaqus.Material.Material.Material.GapConductance:22 of
-msgid ":class:`A GapConductance object.`"
+msgid "A GapConductance object."
 msgstr ""
 
 #: abaqus.Material.Material.Material.GapConvection:9 of
@@ -7566,7 +7569,7 @@ msgstr ""
 
 #: abaqus.Material.Gap.GapConvection.GapConvection.__init__:22
 #: abaqus.Material.Material.Material.GapConvection:25 of
-msgid ":class:`A GapConvection object.`"
+msgid "A GapConvection object."
 msgstr ""
 
 #: abaqus.Material.Gap.GapFlow.GapFlow:52
@@ -7629,7 +7632,7 @@ msgid "A Float specifying the Emissivity of the slave surfaceϵB."
 msgstr ""
 
 #: abaqus.Material.Material.Material.GapRadiation:22 of
-msgid ":class:`A Gapradiation object.`"
+msgid "A Gapradiation object."
 msgstr ""
 
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:26
@@ -8277,12 +8280,6 @@ msgid ""
 "A SymbolicConstant specifying whether the average strain in the matrix is"
 " uniform across all pseudo-grains. Possible values are NO and YES. The "
 "default value is NO."
-msgstr ""
-
-#: abaqus.Material.Material.Material.MeanFieldHomogenization:28
-#: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:25
-#: of
-msgid ":class:`A MeanFieldHomogenization object.`"
 msgstr ""
 
 #: abaqus.Material.Material.Material.MkDamageInitiation:10
@@ -11636,7 +11633,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Material.Gap.GapRadiation.GapRadiation.__init__:19 of
-msgid ":class:`A GapRadiation object.`"
+msgid "A GapRadiation object."
 msgstr ""
 
 #: abaqus.Material.Gap.GapRadiation.GapRadiation.setValues:1 of
@@ -14035,7 +14032,7 @@ msgstr ""
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:48
 #: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__:48
 #: of
-msgid ":class:`A MeanFieldInclusion object.`"
+msgid "A MeanFieldInclusion object."
 msgstr ""
 
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:1
@@ -14052,7 +14049,7 @@ msgstr ""
 
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:20
 #: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__:20 of
-msgid ":class:`A MeanFieldMatrix object.`"
+msgid "A MeanFieldMatrix object."
 msgstr ""
 
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:1
@@ -14069,7 +14066,7 @@ msgstr ""
 
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:48
 #: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__:48 of
-msgid ":class:`A MeanFieldVoid object.`"
+msgid "A MeanFieldVoid object."
 msgstr ""
 
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:10
@@ -24973,5 +24970,32 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.setValues>`\\"
 #~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":class:`A CrushStress object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A GapConductance object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A GapConvection object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A Gapradiation object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A MeanFieldHomogenization object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A GapRadiation object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A MeanFieldInclusion object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A MeanFieldMatrix object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A MeanFieldVoid object.`"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1009,6 +1009,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openEnf:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openIges:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openParasolid:0
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openStep:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openVda:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openAcis:0
@@ -1016,6 +1017,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openEnf:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openIges:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:0
+#: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openSolidworks:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:0
@@ -1035,6 +1037,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getAssociatedCADPaths:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCADParameters:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCentroid:0
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCoordinates:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCurvature:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getDistance:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureCells:0
@@ -1119,7 +1122,6 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openEnf:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openIges:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openParasolid:0
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openStep:0
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openVda:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openAcis:0
@@ -1127,7 +1129,6 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openEnf:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openIges:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:0
-#: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openSolidworks:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh:0
@@ -1147,7 +1148,6 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getAssociatedCADPaths:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCADParameters:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCentroid:0
-#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCoordinates:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCurvature:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getDistance:0
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureCells:0
@@ -1561,7 +1561,7 @@ msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2646,7 +2646,7 @@ msgid "This method creates a Feature object and a DatumAxis object along one of 
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByRotation <abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+msgid ":py:obj:`DatumAxisByRotation <abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2722,7 +2722,7 @@ msgid "This method creates a Feature object and a DatumPlane object through the 
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByOffset <abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+msgid ":py:obj:`DatumPlaneByOffset <abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3779,7 +3779,7 @@ msgid "The `csys` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCoordinates:15
-msgid ":class:`A tuple` of :class:`3 Floats representing the coordinates` of :class:`the specified point.`"
+msgid "A tuple of 3 Floats representing the coordinates of the specified point."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCurvature:1
@@ -4335,6 +4335,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openEnf:30
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openIges:43
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openParasolid:21
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:24
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openStep:18
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openVda:15
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openAcis:18
@@ -4342,6 +4343,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openEnf:30
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openIges:43
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
+#: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:18
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:15
 msgid "An AcisFile object."
@@ -4516,11 +4518,6 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:18
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openSolidworks:18
 msgid "A SymbolicConstant specifying the topology of the data to be read from the file and of the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach cells to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value is SOLID."
-msgstr ""
-
-#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:24
-#: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24
-msgid ":class:`An AcisFile object.`"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.openSolidworks:26
