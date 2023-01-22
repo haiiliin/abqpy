@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-04 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -632,6 +632,7 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
 #: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
 msgid "Returns"
 msgstr ""
@@ -647,7 +648,6 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
 #: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
 msgid "Return type"
 msgstr ""
@@ -942,6 +942,7 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf:30
 #: abaqus.Part.AcisMdb.AcisMdb.openIges:43
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24
 #: abaqus.Part.AcisMdb.AcisMdb.openStep:18
 #: abaqus.Part.AcisMdb.AcisMdb.openVda:15 of
 msgid "An AcisFile object."
@@ -1162,10 +1163,6 @@ msgid ""
 "to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the "
 "body as a shell entity, not as a solid entity. The default value is "
 "SOLID."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24 of
-msgid ":class:`An AcisFile object.`"
 msgstr ""
 
 #: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:26 of
@@ -2362,5 +2359,8 @@ msgstr ""
 #~ "An "
 #~ ":py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` "
 #~ "object."
+#~ msgstr ""
+
+#~ msgid ":class:`An AcisFile object.`"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1504,6 +1504,7 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxpeDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxpsDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxsDamageInitiation:0
+#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MkDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MohrCoulombPlasticity:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MoistureSwelling:0
@@ -1532,6 +1533,13 @@ msgstr ""
 #: ../../../../src/abaqus/Material/MaterialBase.py:docstring of abaqus.Material.MaterialBase.MaterialBase.materialsFromOdb:0
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__:0
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__:0
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.__init__:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:0
@@ -1711,7 +1719,6 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxpeDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxpsDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MaxsDamageInitiation:0
-#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MkDamageInitiation:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MohrCoulombPlasticity:0
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MoistureSwelling:0
@@ -1740,13 +1747,6 @@ msgstr ""
 #: ../../../../src/abaqus/Material/MaterialBase.py:docstring of abaqus.Material.MaterialBase.MaterialBase.materialsFromOdb:0
 #: ../../../../src/abaqus/Material/MaterialModel.py:docstring of abaqus.Material.MaterialModel.MaterialModel.Material:0
 #: ../../../../src/abaqus/Material/MaterialOdb.py:docstring of abaqus.Material.MaterialOdb.MaterialOdb.Material:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__:0
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__:0
 #: ../../../../src/abaqus/Material/Others/Acoustic/AcousticMedium.py:docstring of abaqus.Material.Others.Acoustic.AcousticMedium.AcousticMedium.__init__:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/Dielectric.py:docstring of abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:0
 #: ../../../../src/abaqus/Material/Others/Electromagnetic/ElectricalConductivity.py:docstring of abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:0
@@ -2935,6 +2935,8 @@ msgstr ""
 msgid ":py:obj:`meanFieldHomogenization <abaqus.Material.Material.Material.meanFieldHomogenization>`\\"
 msgstr ""
 
+#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:28
+#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:25
 #: ../../None:74:<autosummary>:1
 #: ../../docstring of abaqus.Material.MaterialBase.MaterialBase.meanFieldHomogenization:1
 msgid "A MeanFieldHomogenization object."
@@ -6764,11 +6766,6 @@ msgstr ""
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:25
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:22
 msgid "A SymbolicConstant specifying whether the average strain in the matrix is uniform across all pseudo-grains. Possible values are NO and YES. The default value is NO."
-msgstr ""
-
-#: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MeanFieldHomogenization:28
-#: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:25
-msgid ":class:`A MeanFieldHomogenization object.`"
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Material.py:docstring of abaqus.Material.Material.Material.MkDamageInitiation:10
@@ -11025,7 +11022,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:48
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldInclusion.py:docstring of abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion.__init__:48
-msgid ":class:`A MeanFieldInclusion object.`"
+msgid "A MeanFieldInclusion object."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:1
@@ -11040,7 +11037,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:20
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldMatrix.py:docstring of abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix.__init__:20
-msgid ":class:`A MeanFieldMatrix object.`"
+msgid "A MeanFieldMatrix object."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:1
@@ -11055,7 +11052,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:48
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldVoid.py:docstring of abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid.__init__:48
-msgid ":class:`A MeanFieldVoid object.`"
+msgid "A MeanFieldVoid object."
 msgstr ""
 
 #: ../../../../src/abaqus/Material/Multiscale/MeanFieldHomogenization.py:docstring of abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.__init__:10

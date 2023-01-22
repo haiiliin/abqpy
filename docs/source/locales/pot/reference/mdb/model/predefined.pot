@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1199,12 +1199,12 @@ msgstr ""
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:0
 #: ../../../../src/abaqus/PredefinedField/VoidsRatio.py:docstring of abaqus.PredefinedField.VoidsRatio.VoidsRatio.__init__:0
 #: ../../../../src/abaqus/PredefinedField/VoidsRatio.py:docstring of abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:0
-msgid "Return type"
+msgid "Returns"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Field.py:docstring of abaqus.PredefinedField.Field.Field.__init__:95
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:97
-msgid ":class:`A Field object.`"
+msgid "A Field object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:16
@@ -1224,6 +1224,11 @@ msgstr ""
 msgid "A Float specifying the initial fluid pressure."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:18
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:18
+msgid "A FluidCavityPressure object."
+msgstr ""
+
 #: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:0
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:0
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:0
@@ -1236,12 +1241,7 @@ msgstr ""
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:0
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:0
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:18
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:18
-msgid "A FluidCavityPressure object."
+msgid "Return type"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:19
@@ -1527,7 +1527,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PorePressure.py:docstring of abaqus.PredefinedField.PorePressure.PorePressure.__init__:50
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:50
-msgid ":class:`A PorePressure object.`"
+msgid "A PorePressure object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:10
@@ -1555,7 +1555,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:27
 #: ../../../../src/abaqus/PredefinedField/Saturation.py:docstring of abaqus.PredefinedField.Saturation.Saturation.__init__:27
-msgid ":class:`A Saturation object.`"
+msgid "A Saturation object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:8
@@ -1611,7 +1611,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:35
 #: ../../../../src/abaqus/PredefinedField/Stress.py:docstring of abaqus.PredefinedField.Stress.Stress.__init__:32
-msgid ":class:`A Stress object.`"
+msgid "A Stress object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:9
@@ -1845,7 +1845,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:49
 #: ../../../../src/abaqus/PredefinedField/VoidsRatio.py:docstring of abaqus.PredefinedField.VoidsRatio.VoidsRatio.__init__:49
-msgid ":class:`A VoidsRatio object.`"
+msgid "A VoidsRatio object."
 msgstr ""
 
 #: ../../reference/mdb/model/predefined.md:16
@@ -2346,7 +2346,7 @@ msgstr ""
 #: ../../../../src/abaqus/PredefinedField/Saturation.py:docstring of abaqus.PredefinedField.Saturation.Saturation.setValues:21
 #: ../../../../src/abaqus/PredefinedField/Stress.py:docstring of abaqus.PredefinedField.Stress.Stress.setValues:22
 #: ../../../../src/abaqus/PredefinedField/VoidsRatio.py:docstring of abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:39
-msgid ":obj:`None`"
+msgid "None"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Saturation.py:docstring of abaqus.PredefinedField.Saturation.Saturation:1
