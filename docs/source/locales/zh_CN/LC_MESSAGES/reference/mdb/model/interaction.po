@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3274,6 +3274,8 @@ msgstr ""
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__
 #: abaqus.Interaction.FluidExchange.FluidExchange.__init__
 #: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__
+#: abaqus.Interaction.FluidInflator.FluidInflator.__init__
+#: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__
 #: abaqus.Interaction.FractureCriterion.FractureCriterion.__init__
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.__init__
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.__init__
@@ -3296,6 +3298,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange
+#: abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave
 #: abaqus.Interaction.InteractionModel.InteractionModel.ModelChange
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration
@@ -3314,6 +3317,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty
+#: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty
 #: abaqus.Interaction.ModelChange.ModelChange.__init__
 #: abaqus.Interaction.NormalBehavior.NormalBehavior.__init__
@@ -3371,8 +3375,6 @@ msgstr ""
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__
 #: abaqus.Interaction.FluidExchange.FluidExchange.__init__
 #: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__
-#: abaqus.Interaction.FluidInflator.FluidInflator.__init__
-#: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__
 #: abaqus.Interaction.FractureCriterion.FractureCriterion.__init__
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.__init__
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.__init__
@@ -3395,7 +3397,6 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange
-#: abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator
 #: abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave
 #: abaqus.Interaction.InteractionModel.InteractionModel.ModelChange
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration
@@ -3415,7 +3416,6 @@ msgstr ""
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty
-#: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty
 #: abaqus.Interaction.ModelChange.ModelChange.__init__
 #: abaqus.Interaction.NormalBehavior.NormalBehavior.__init__
@@ -4908,7 +4908,7 @@ msgstr ""
 
 #: abaqus.Interaction.FluidInflator.FluidInflator.__init__:26
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:29 of
-msgid ":class:`A FluidInflator object.`"
+msgid "A FluidInflator object."
 msgstr ""
 
 #: abaqus.Interaction.IncidentWave.IncidentWave:16
@@ -8105,7 +8105,7 @@ msgstr ""
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__:43
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty:46
 #: of
-msgid ":class:`A FluidInflatorProperty object.`"
+msgid "A FluidInflatorProperty object."
 msgstr ""
 
 #: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty:18
@@ -26971,5 +26971,11 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`status "
 #~ "<abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState.status>`\\"
+#~ msgstr ""
+
+#~ msgid ":class:`A FluidInflator object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A FluidInflatorProperty object.`"
 #~ msgstr ""
 
