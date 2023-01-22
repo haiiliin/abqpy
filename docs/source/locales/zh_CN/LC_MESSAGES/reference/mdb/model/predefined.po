@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1539,12 +1539,12 @@ msgstr ""
 #: abaqus.PredefinedField.Velocity.Velocity.__init__
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.__init__
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues of
-msgid "Return type"
+msgid "Returns"
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.__init__:95
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field:97 of
-msgid ":class:`A Field object.`"
+msgid "A Field object."
 msgstr ""
 
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:16
@@ -1571,6 +1571,12 @@ msgstr ""
 msgid "A Float specifying the initial fluid pressure."
 msgstr ""
 
+#: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:18
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:18
+#: of
+msgid "A FluidCavityPressure object."
+msgstr ""
+
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__
 #: abaqus.PredefinedField.InitialState.InitialState.__init__
 #: abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__
@@ -1583,13 +1589,7 @@ msgstr ""
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity
 #: abaqus.PredefinedField.Temperature.Temperature.__init__
 #: abaqus.PredefinedField.Velocity.Velocity.__init__ of
-msgid "Returns"
-msgstr ""
-
-#: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:18
-#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:18
-#: of
-msgid "A FluidCavityPressure object."
+msgid "Return type"
 msgstr ""
 
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:19
@@ -2005,7 +2005,7 @@ msgstr ""
 #: abaqus.PredefinedField.PorePressure.PorePressure.__init__:50
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:50
 #: of
-msgid ":class:`A PorePressure object.`"
+msgid "A PorePressure object."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:10
@@ -2042,7 +2042,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:27
 #: abaqus.PredefinedField.Saturation.Saturation.__init__:27 of
-msgid ":class:`A Saturation object.`"
+msgid "A Saturation object."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:8 of
@@ -2102,7 +2102,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:35
 #: abaqus.PredefinedField.Stress.Stress.__init__:32 of
-msgid ":class:`A Stress object.`"
+msgid "A Stress object."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:9
@@ -2436,7 +2436,7 @@ msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:49
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.__init__:49 of
-msgid ":class:`A VoidsRatio object.`"
+msgid "A VoidsRatio object."
 msgstr ""
 
 #: ../../reference/mdb/model/predefined.md:16
@@ -3160,7 +3160,7 @@ msgstr ""
 #: abaqus.PredefinedField.Saturation.Saturation.setValues:21
 #: abaqus.PredefinedField.Stress.Stress.setValues:22
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:39 of
-msgid ":obj:`None`"
+msgid "None"
 msgstr ""
 
 #: abaqus.PredefinedField.Saturation.Saturation:1 of
@@ -5445,5 +5445,23 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.PredefinedField.Velocity.Velocity.setValues>`\\ "
 #~ "\\(\\[field\\, distributionType\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":class:`A Field object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A PorePressure object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A Saturation object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A Stress object.`"
+#~ msgstr ""
+
+#~ msgid ":class:`A VoidsRatio object.`"
+#~ msgstr ""
+
+#~ msgid ":obj:`None`"
 #~ msgstr ""
 
