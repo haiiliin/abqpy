@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2607,6 +2607,8 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__:0
 #: ../../../../src/abaqus/Interaction/FluidExchange.py:docstring of abaqus.Interaction.FluidExchange.FluidExchange.__init__:0
 #: ../../../../src/abaqus/Interaction/FluidExchangeProperty.py:docstring of abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__:0
+#: ../../../../src/abaqus/Interaction/FluidInflator.py:docstring of abaqus.Interaction.FluidInflator.FluidInflator.__init__:0
+#: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__:0
 #: ../../../../src/abaqus/Interaction/FractureCriterion.py:docstring of abaqus.Interaction.FractureCriterion.FractureCriterion.__init__:0
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.__init__:0
 #: ../../../../src/abaqus/Interaction/GapHeatGeneration.py:docstring of abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.__init__:0
@@ -2630,6 +2632,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange:0
+#: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.ModelChange:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:0
@@ -2648,6 +2651,7 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty:0
+#: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty:0
 #: ../../../../src/abaqus/Interaction/ModelChange.py:docstring of abaqus.Interaction.ModelChange.ModelChange.__init__:0
 #: ../../../../src/abaqus/Interaction/NormalBehavior.py:docstring of abaqus.Interaction.NormalBehavior.NormalBehavior.__init__:0
@@ -2706,8 +2710,6 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/FluidCavityProperty.py:docstring of abaqus.Interaction.FluidCavityProperty.FluidCavityProperty.__init__:0
 #: ../../../../src/abaqus/Interaction/FluidExchange.py:docstring of abaqus.Interaction.FluidExchange.FluidExchange.__init__:0
 #: ../../../../src/abaqus/Interaction/FluidExchangeProperty.py:docstring of abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty.__init__:0
-#: ../../../../src/abaqus/Interaction/FluidInflator.py:docstring of abaqus.Interaction.FluidInflator.FluidInflator.__init__:0
-#: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__:0
 #: ../../../../src/abaqus/Interaction/FractureCriterion.py:docstring of abaqus.Interaction.FractureCriterion.FractureCriterion.__init__:0
 #: ../../../../src/abaqus/Interaction/GapElectricalConductance.py:docstring of abaqus.Interaction.GapElectricalConductance.GapElectricalConductance.__init__:0
 #: ../../../../src/abaqus/Interaction/GapHeatGeneration.py:docstring of abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.__init__:0
@@ -2731,7 +2733,6 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange:0
-#: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.ModelChange:0
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:0
@@ -2751,7 +2752,6 @@ msgstr ""
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty:0
-#: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty:0
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty:0
 #: ../../../../src/abaqus/Interaction/ModelChange.py:docstring of abaqus.Interaction.ModelChange.ModelChange.__init__:0
 #: ../../../../src/abaqus/Interaction/NormalBehavior.py:docstring of abaqus.Interaction.NormalBehavior.NormalBehavior.__init__:0
@@ -3875,7 +3875,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflator.py:docstring of abaqus.Interaction.FluidInflator.FluidInflator.__init__:26
 #: ../../../../src/abaqus/Interaction/InteractionModel.py:docstring of abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:29
-msgid ":class:`A FluidInflator object.`"
+msgid "A FluidInflator object."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/IncidentWave.py:docstring of abaqus.Interaction.IncidentWave.IncidentWave:16
@@ -6134,7 +6134,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Interaction/FluidInflatorProperty.py:docstring of abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty.__init__:43
 #: ../../../../src/abaqus/Interaction/InteractionPropertyModel.py:docstring of abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty:46
-msgid ":class:`A FluidInflatorProperty object.`"
+msgid "A FluidInflatorProperty object."
 msgstr ""
 
 #: ../../../../src/abaqus/Interaction/IncidentWaveProperty.py:docstring of abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty:18

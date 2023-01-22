@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1650,6 +1650,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize
+#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry
@@ -1678,6 +1679,7 @@ msgstr ""
 #: abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__
 #: abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__
+#: abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__
 #: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__
 #: abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__
 #: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__
@@ -1739,7 +1741,6 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize
-#: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry
@@ -1768,7 +1769,6 @@ msgstr ""
 #: abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry.__init__
 #: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__
 #: abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__
-#: abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__
 #: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__
 #: abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__
 #: abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry.__init__
@@ -5156,7 +5156,7 @@ msgstr ""
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:43
 #: abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__:40
 #: of
-msgid ":class:`A TopologyOverhangControl object.`"
+msgid "A TopologyOverhangControl object."
 msgstr ""
 
 #: abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:9
@@ -13060,5 +13060,8 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.Optimization.TurnControl.TurnControl.setValues>`\\ "
 #~ "\\(\\[csys\\, masterPoint\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":class:`A TopologyOverhangControl object.`"
 #~ msgstr ""
 
