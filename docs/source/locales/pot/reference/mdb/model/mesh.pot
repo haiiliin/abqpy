@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -456,6 +456,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemFaces:0
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElements:0
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:0
+#: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.setValues:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.__init__:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:0
@@ -541,7 +542,6 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemFaces:0
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElements:0
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:0
-#: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.setValues:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.__init__:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.getBoundingBox:0
 #: ../../../../src/abaqus/Mesh/MeshNodeArray.py:docstring of abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:0
@@ -2458,7 +2458,7 @@ msgid "An Int specifying the node label. This member may only be edited if the n
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.setValues:11
-msgid ":obj:`None`"
+msgid "None"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray:1
