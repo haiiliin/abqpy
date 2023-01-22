@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1172,10 +1172,12 @@ msgstr ""
 #: abaqus.Part.AcisFile.AcisFile.openCatia
 #: abaqus.Part.AcisFile.AcisFile.openEnf abaqus.Part.AcisFile.AcisFile.openIges
 #: abaqus.Part.AcisFile.AcisFile.openParasolid
+#: abaqus.Part.AcisFile.AcisFile.openSolidworks
 #: abaqus.Part.AcisFile.AcisFile.openStep abaqus.Part.AcisFile.AcisFile.openVda
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
 #: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda
 #: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh
 #: abaqus.Part.PartBase.PartBase.PartFromBooleanCut
@@ -1193,6 +1195,7 @@ msgstr ""
 #: abaqus.Part.PartBase.PartBase.getAssociatedCADPaths
 #: abaqus.Part.PartBase.PartBase.getCADParameters
 #: abaqus.Part.PartBase.PartBase.getCentroid
+#: abaqus.Part.PartBase.PartBase.getCoordinates
 #: abaqus.Part.PartBase.PartBase.getCurvature
 #: abaqus.Part.PartBase.PartBase.getDistance
 #: abaqus.Part.PartBase.PartBase.getFeatureCells
@@ -1276,12 +1279,10 @@ msgstr ""
 #: abaqus.Part.AcisFile.AcisFile.openCatia
 #: abaqus.Part.AcisFile.AcisFile.openEnf abaqus.Part.AcisFile.AcisFile.openIges
 #: abaqus.Part.AcisFile.AcisFile.openParasolid
-#: abaqus.Part.AcisFile.AcisFile.openSolidworks
 #: abaqus.Part.AcisFile.AcisFile.openStep abaqus.Part.AcisFile.AcisFile.openVda
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
 #: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda
 #: abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh
 #: abaqus.Part.PartBase.PartBase.PartFromBooleanCut
@@ -1299,7 +1300,6 @@ msgstr ""
 #: abaqus.Part.PartBase.PartBase.getAssociatedCADPaths
 #: abaqus.Part.PartBase.PartBase.getCADParameters
 #: abaqus.Part.PartBase.PartBase.getCentroid
-#: abaqus.Part.PartBase.PartBase.getCoordinates
 #: abaqus.Part.PartBase.PartBase.getCurvature
 #: abaqus.Part.PartBase.PartBase.getDistance
 #: abaqus.Part.PartBase.PartBase.getFeatureCells
@@ -1756,7 +1756,9 @@ msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+msgid ""
+":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3333,7 +3335,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByRotation "
-"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -3455,7 +3458,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByOffset "
-"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -5150,9 +5154,7 @@ msgid "The `csys` argument was added."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getCoordinates:15 of
-msgid ""
-":class:`A tuple` of :class:`3 Floats representing the coordinates` of "
-":class:`the specified point.`"
+msgid "A tuple of 3 Floats representing the coordinates of the specified point."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getCurvature:1 of
@@ -5997,6 +5999,7 @@ msgstr ""
 #: abaqus.Part.AcisFile.AcisFile.openEnf:30
 #: abaqus.Part.AcisFile.AcisFile.openIges:43
 #: abaqus.Part.AcisFile.AcisFile.openParasolid:21
+#: abaqus.Part.AcisFile.AcisFile.openSolidworks:24
 #: abaqus.Part.AcisFile.AcisFile.openStep:18
 #: abaqus.Part.AcisFile.AcisFile.openVda:15
 #: abaqus.Part.AcisMdb.AcisMdb.openAcis:18
@@ -6004,6 +6007,7 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf:30
 #: abaqus.Part.AcisMdb.AcisMdb.openIges:43
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24
 #: abaqus.Part.AcisMdb.AcisMdb.openStep:18
 #: abaqus.Part.AcisMdb.AcisMdb.openVda:15 of
 msgid "An AcisFile object."
@@ -6259,11 +6263,6 @@ msgid ""
 "to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the "
 "body as a shell entity, not as a solid entity. The default value is "
 "SOLID."
-msgstr ""
-
-#: abaqus.Part.AcisFile.AcisFile.openSolidworks:24
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24 of
-msgid ":class:`An AcisFile object.`"
 msgstr ""
 
 #: abaqus.Part.AcisFile.AcisFile.openSolidworks:26
@@ -31198,5 +31197,24 @@ msgstr ""
 #~ "from the auxiliary Mdb which had "
 #~ "been opened earlier using the openAuxMdb"
 #~ " command."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":class:`A tuple` of :class:`3 Floats "
+#~ "representing the coordinates` of :class:`the"
+#~ " specified point.`"
+#~ msgstr ""
+
+#~ msgid ":class:`An AcisFile object.`"
 #~ msgstr ""
 

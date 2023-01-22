@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-01-22 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1427,6 +1427,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:0
+#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:0
@@ -1457,6 +1458,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:0
+#: ../../../../src/abaqus/Optimization/TopologyOverhangControl.py:docstring of abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:0
@@ -1521,7 +1523,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:0
-#: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry:0
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:0
@@ -1552,7 +1553,6 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/TopologyDemoldControl.py:docstring of abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMemberSize.py:docstring of abaqus.Optimization.TopologyMemberSize.TopologyMemberSize.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.__init__:0
-#: ../../../../src/abaqus/Optimization/TopologyOverhangControl.py:docstring of abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPlanarSymmetry.py:docstring of abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyPointSymmetry.py:docstring of abaqus.Optimization.TopologyPointSymmetry.TopologyPointSymmetry.__init__:0
 #: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.__init__:0
@@ -4396,7 +4396,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:43
 #: ../../../../src/abaqus/Optimization/TopologyOverhangControl.py:docstring of abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl.__init__:40
-msgid ":class:`A TopologyOverhangControl object.`"
+msgid "A TopologyOverhangControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry:9
