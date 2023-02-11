@@ -1,7 +1,5 @@
 from pathlib import Path
 
-from .template import *
-
 try:
     from ._version import version as _default_version
 except ImportError:
