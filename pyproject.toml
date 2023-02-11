@@ -62,9 +62,6 @@ py-modules = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools.package-data]
-abqpy = ["templates/*.toml", "templates/*.tmpl"]
-
 [tool.setuptools_scm]
 root = "."
 relative_to = "__file__"
