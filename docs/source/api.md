@@ -9,6 +9,5 @@ components of the abqpy project.
 
 cli
 envvars
-templates
 references
 ```
