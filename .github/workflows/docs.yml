@@ -31,7 +31,7 @@ jobs:
       with:
         python-version: '3.10'
     - uses: actions/checkout@v3.1.0
-    - uses: actions/cache@v3.2.4
+    - uses: actions/cache@v3.2.5
       with:
         path: docs/build/${{ matrix.language }}/html
         key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
@@ -48,7 +48,7 @@ jobs:
         SOURCEDIR: docs/source
         BUILDDIR: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
         SPHINXOPTS: -b html -D language=${{ matrix.language }} -j auto
-    - uses: actions/cache@v3.2.4
+    - uses: actions/cache@v3.2.5
       with:
         path: docs/build/${{ matrix.language }}/html
         key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
