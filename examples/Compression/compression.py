@@ -53,7 +53,7 @@ field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
 # Boundary condition
 bottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']
 bc = model.DisplacementBC(name='BC-1', createStepName='Initial',
-                          region=bottom_instance, u3=SET)
+                          region=bottom_instance, u1=SET, u2=SET, u3=SET, ur1=SET, ur2=SET, ur3=SET)
 
 # Load
 top_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']
