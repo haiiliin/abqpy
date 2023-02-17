@@ -34,7 +34,7 @@ import numpy as np
 
 def fitness(x: float, maxdisp_expected: float = -0.1):
     # Change the working directory to a new folder
-    wd = os.path.join(os.getcwd(), f"Job-E={x}")
+    wd = os.path.join(os.path.dirname(__file__), f"Job-E={x}")
     os.makedirs(wd, exist_ok=True)
     os.chdir(wd)
 
