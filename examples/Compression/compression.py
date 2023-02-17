@@ -3,6 +3,12 @@ Compression Model
 =================
 
 A simple example to establish a compression model.
+
+.. figure:: /images/model.png
+    :width: 50%
+    :align: center
+
+    A simple compression model.
 """
 
 from abaqus import *
