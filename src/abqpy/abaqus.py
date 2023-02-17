@@ -62,7 +62,7 @@ def run(cae: bool = True) -> None:
 
     # If in debug mode do not run the abaqus command at all
     if not debug and not make_docs:
-        cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args)}".strip()
+        cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {args}".strip()
         message = f"Running the following abaqus command: {cmd}"
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
