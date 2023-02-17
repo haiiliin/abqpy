@@ -17,7 +17,7 @@ The output of this script is:
 .. code-block:: none
 
     Search results:
-             modulus   fitness
+         modulus   fitness
     0       10.0  9.774944
     1      100.0  0.887494
     2     1000.0  0.001251
