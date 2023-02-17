@@ -3,8 +3,8 @@ Parameter Identification
 ========================
 
 This is a simple example of parameter identification. The compression model is a simple model with a cube of 1x1x1 m.
-The lower face is fixed and the upper face is loaded with a pressure of 100 Pa. The goal is to find the Young's modulus
-of the material that gives a maximum displacement of -0.1 m.
+The lower surface is fixed and the upper surface is loaded with a pressure of 100 Pa. The goal is to find the Young's
+modulus of the material that gives a maximum displacement of -0.1 m.
 
 Theoretically, the Young's modulus of the material can be calculated with the following equation:
 
