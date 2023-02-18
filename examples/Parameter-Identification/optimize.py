@@ -16,7 +16,7 @@ Theoretically, the Young's modulus of the material can be calculated with the fo
 
 .. math::
 
-    E = \\frac{\\sigma}{\\epsilon} = \\frac{P/A}{u_{\max}/h} = \\frac{100 / (1.0 \\times 1.0)}{0.1 / 1.0} = 1000
+    E = \\frac{\\sigma}{\\epsilon} = \\frac{P}{u_{\max}/h} = \\frac{100}{0.1 / 1.0} = 1000
 
 The output of this script is:
 
