@@ -208,7 +208,7 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
 
 - Create an Abaqus Model
 
-  ```{image} images/model-code.gif
+  ```{image} images/model-code.*
   :align: center
   :alt: Create an Abaqus Model
   :width: 100%
@@ -216,7 +216,7 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
 
 - Extract Output Data
 
-  ```{image} images/output-code.gif
+  ```{image} images/output-code.*
   :align: center
   :alt: Extract Output Data
   :width: 100%
