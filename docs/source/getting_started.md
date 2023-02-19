@@ -227,5 +227,5 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
 You may wonder how does this package work,
 you can go {doc}`/getting_started` for more detailed introduction and go
 {doc}`/tutorials` for a simple tutorial. For more documentation about
-Abaqus/Python scripting, please check {doc}`/references`
+Abaqus/Python scripting, please check {doc}`/reference/index`
 for more detailed API references.
