@@ -9,7 +9,6 @@ on:
     - 'src/**'
     - 'docs/requirements.txt'
     - 'docs/source/**'
-    - 'docs/source/locales/**'
     - '.github/workflows/docs.yml'
 
 concurrency:
@@ -25,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['en', 'zh_CN']
+        language: ['en']
     steps:
     - uses: actions/setup-python@v4
       with:
@@ -38,8 +37,7 @@ jobs:
     - name: Installing the library
       shell: bash -l {0}
       run: |
-        pip install .
-        pip install -r docs/requirements.txt
+        pip install .[docs]
     - name: Build the documentation
       shell: bash -l {0}
       run: |

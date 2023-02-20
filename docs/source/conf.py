@@ -177,33 +177,10 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'sphinx_rtd_theme'
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
-
-html_sidebars = {
-    "**": ["search-field.html", "sidebar-nav-bs.html"]
-}
-
-html_theme_options = {
-    'navigation_depth': 9,
-    "github_url": "https://github.com/haiiliin/abqpy",
-    "icon_links": [
-        {
-            "name": "PyPI",
-            "url": "https://pypi.org/project/abqpy",
-            "icon": "_static/PyPI_logo.svg",
-            "type": "local",
-        },
-        {
-            "name": "Read the Docs",
-            "url": "https://readthedocs.org/projects/abqpy/",
-            "icon": "_static/rtd-logo-dark.svg",
-            "type": "local",
-        },
-   ],
-}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
