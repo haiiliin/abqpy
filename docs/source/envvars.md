@@ -1,4 +1,4 @@
-# System Environment Variables
+# Environment Variables
 
 ## `ABAQUS_BAT_PATH`
 
