@@ -36,7 +36,9 @@ getting_started
 examples/index
 tutorials
 user
-api
+cli
+envvars
+reference/index
 ```
 
 # Indices and tables
