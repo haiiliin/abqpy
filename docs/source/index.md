@@ -20,7 +20,7 @@ must write codes that are compatiable with Python 2 and Python 3.
 
 ## Other links for this project
 
-- Websitte: <https://abqpy.com>
+- Website: <https://abqpy.com>
 - GitHub repository: <https://github.com/haiiliin/abqpy>
 - PyPI: <https://pypi.org/project/abqpy>
 - Read the Docs: <https://readthedocs.org/projects/abqpy>
