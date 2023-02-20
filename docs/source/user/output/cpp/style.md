@@ -1,10 +1,10 @@
 # Abaqus Scripting Interface documentation style
 
-This section describes the style that is used to describe a command in the {doc}`/references`. You may want to refer to the {doc}`/references` while you read this section and compare the style of a documented command with the descriptions provided here.
+This section describes the style that is used to describe a command in the {doc}`/reference/index`. You may want to refer to the {doc}`/reference/index` while you read this section and compare the style of a documented command with the descriptions provided here.
 
-The following list describes the order in which commands are documented in the {doc}`/references`:
+The following list describes the order in which commands are documented in the {doc}`/reference/index`:
 
-- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, {doc}`/reference/session/animation`, and {doc}`/reference/mdb/model/assembly`.
+- Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, {doc}`/reference/session/animation`, and {doc}`/reference/mdb/model/part_assembly/assembly`.
 
 - Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in {doc}`/reference/mdb/model/mesh` the objects are listed in the following order:
 
@@ -26,7 +26,7 @@ The following list describes the order in which commands are documented in the {
 
 ## Access
 
-The description of each object in the {doc}`/references` begins with a section that describes how you access an instance of the object.
+The description of each object in the {doc}`/reference/index` begins with a section that describes how you access an instance of the object.
 
 The following is the access description for the Part object:
 
@@ -68,7 +68,7 @@ odb_SequenceInvariant myInvariants = field.validInvariants();
 
 ## Path
 
-A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/references` includes a path to the command. For example, the following describes the path to the Part constructor:
+A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Part constructor:
 
 ```cpp
 odb.Part
