@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Type hints for Abaqus/Python scripting"
 readme = "README.md"
-dynamic = ["version"]
+dynamic = ["version", "dependencies", "optional-dependencies"]
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python",
@@ -25,15 +25,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = [
-    "typing-extensions",
-    "auto-all",
-    "Jinja2",
-    "toml",
-]
-
-[project.optional-dependencies]
-jupyter = ["juptyerlab", "ipynbname"]
 
 [project.urls]
 "Homepage" = "https://abqpy.com"
@@ -58,6 +49,18 @@ py-modules = [
     "upgradeScript", "visualization", "regionToolset", "step", 
     "load", "optimization", "job", "sketch", "xyPlot",
 ]
+
+[tool.setuptools.dynamic.dependencies]
+file = ["requirements.txt"]
+
+[tool.setuptools.dynamic.optional-dependencies.dev]
+file = ["requirements-dev.txt"]
+
+[tool.setuptools.dynamic.optional-dependencies.jupyter]
+file = ["requirements-jupyter.txt"]
+
+[tool.setuptools.dynamic.optional-dependencies.docs]
+file = ["docs/requirements.txt"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
