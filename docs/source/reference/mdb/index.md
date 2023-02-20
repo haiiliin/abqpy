@@ -6,10 +6,10 @@ Mdb commands are used to create and upgrade an Abaqus model database that stores
 :caption: Objects in Mdb
 :maxdepth: 1
 
-mdb/model
-mdb/job
-mdb/annotation
-mdb/edit_mesh
+model/index
+job
+annotation
+edit_mesh
 ```
 
 ## Classes

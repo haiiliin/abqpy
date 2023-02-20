@@ -6,26 +6,26 @@ Model commands are used to create Abaqus/CAE models. A finished model contains a
 :caption: Objects in Model
 :maxdepth: 1
 
-model/adaptivity
-model/amplitude
-model/bc
-model/calibration
-model/constraint
-model/field
-model/filter
-model/interaction
-model/load
-model/material
-model/mesh
-model/optimization
-model/output
-model/part_assembly
-model/predefined
-model/profile
-model/property
-model/section
-model/sketcher
-model/step
+adaptivity
+amplitude
+bc
+calibration
+constraint
+field
+filter
+interaction
+load
+material
+mesh
+optimization
+output
+part_assembly/index
+predefined
+profile
+property
+section/index
+sketcher
+step/index
 ```
 
 ## Classes
