@@ -6,7 +6,7 @@ The Step commands described in this chapter are used to create and configure ana
 :caption: Objects in Step
 :maxdepth: 1
 
-step/step_miscellaneous
+step_miscellaneous
 ```
 
 ## Create steps

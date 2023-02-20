@@ -6,7 +6,7 @@ The Section commands are used to create sections and profiles with their associa
 :caption: Objects in Section
 :maxdepth: 1
 
-section/connector
+connector
 ```
 
 ## Create sections
