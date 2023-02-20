@@ -38,10 +38,6 @@ The example model described in the following is simple, there is a square struct
 
 Usually, when we use Python script to build the model, we need to import the following modules:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 from abaqus import *
 from abaqusConstants import *
@@ -50,10 +46,6 @@ from driverUtils import *
 
 Module `abaqus` contains two most important variable `mdb` and `session` which control the model. Module `abaqusConstants` contains constant strings used in modelling, i.e., when we defines a part using the following code:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 mdb.models['Model-1'].Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
 ```
@@ -61,10 +53,6 @@ mdb.models['Model-1'].Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_
 `THREE_D` indicates the part is a 3D part, `DEFORMABLE_BODY` indicates the part is deformable.
 
 Module `driverUtils` contains an important function `executeOnCaeStartup`, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script. Now, the header of our Python script would be like:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 from abaqus import *
@@ -78,10 +66,6 @@ executeOnCaeStartup()
 
 First we need to create a sketch that will be used to create the part, we need to use {py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to create a sketch:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 model = mdb.models['Model-1']
 sketch = model.ConstrainedSketch(name='sketch', sheetSize=1.0)
@@ -89,10 +73,6 @@ sketch.rectangle((0, 0), (1, 1))
 ```
 
 In this code, we draw a sketch with a square. Now we can create a part using this sketch:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 part = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
@@ -107,10 +87,6 @@ Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to crea
 
 We can use {py:meth}`~abaqus.Region.RegionPart.RegionPart.Set` and {py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and surfaces:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 part.Set(name='set-all', cells=part.cells.findAt(coordinates=((0.5, 0.5, 0.5), )))
 part.Set(name='set-bottom', faces=part.faces.findAt(coordinates=((0.5, 0.5, 0.0), )))
@@ -123,10 +99,6 @@ part.Surface(name='surface-top',
 
 We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances：
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 model.rootAssembly.DatumCsysByDefault(CARTESIAN)
 model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
@@ -136,19 +108,11 @@ model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
 
 First we create a Material object using {py:meth}`~abaqus.Material.MaterialModel.MaterialModel.Material`:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 material = model.Material(name='material')
 ```
 
 Then we assign some properties to the Material object, i.e., {py:meth}`~abaqus.Material.Material.Material.Elastic` and {py:meth}`~abaqus.Material.Material.Material.Density`:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 material.Elastic(table=((1000, 0.2), ))
@@ -156,10 +120,6 @@ material.Density(table=((2500, ), ))
 ```
 
 Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the material to the section ({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 model.HomogeneousSolidSection(name='section', material='material', thickness=None)
@@ -169,10 +129,6 @@ part.SectionAssignment(region=part.sets['set-all'], sectionName='section')
 ### Create steps
 
 It is easy to create a {py:meth}`~abaqus.Step.StepModel.StepModel.StaticStep`:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 step = model.StaticStep(name='Step-1', previous='Initial', description='',
@@ -184,10 +140,6 @@ step = model.StaticStep(name='Step-1', previous='Initial', description='',
 
 We can use the {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest` and {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest` to specify field output and history output information.
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
                                  variables=('S', 'E', 'U'))
@@ -196,10 +148,6 @@ field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
 ### Create boundary conditions
 
 We can use {py:meth}`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC` to create a displacement boundary condition:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 bottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']
@@ -213,10 +161,6 @@ It should be noted that region of the boundary condition should be a region of t
 
 We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create a pressure:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 top_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']
 pressure = model.Pressure('pressure', createStepName='Step-1', region=top_instance,
@@ -226,10 +170,6 @@ pressure = model.Pressure('pressure', createStepName='Step-1', region=top_instan
 ### Mesh
 
 To mesh the model, we have to set the {py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh` module, so we need to import `mesh` module:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 import mesh
@@ -246,29 +186,17 @@ part.generateMesh()
 
 We can use {py:meth}`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 job = mdb.Job(name='Job-1', model='Model-1')
 ```
 
 Then we can write the model to an input file (`.inp`):
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 job.writeInput()
 ```
 
 Then we can submit the job:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 job.submit()
@@ -279,10 +207,6 @@ job.waitForCompletion()
 
 We can use {py:class}`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 mdb.saveAs('compression.cae')
 ```
@@ -291,19 +215,11 @@ mdb.saveAs('compression.cae')
 
 It should be noted that when we execute all the above codes, the Python script have to not be sent to the Python interpreter. Instead, we have to call the Abaqus kernel, using the command like this:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```sh
 abaqus cae noGUI=script.py
 ```
 
 In order to make it simple, this has been done inside the {py:mod}`~abaqus` module, in the {py:meth}`~abqpy.abaqus.run` function:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 def run():
@@ -324,10 +240,6 @@ This function is called when we import the {py:mod}`~abaqus` module, with the li
 ### The whole script
 
 The whole script of this example is showed as follows:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```{code-block} Python
 :caption: compression.py
@@ -415,10 +327,6 @@ If we want to extract the output data, we have to write an output script.
 
 Similarly, we have to import some modules:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 from abaqus import *
 from abaqusConstants import *
@@ -431,10 +339,6 @@ executeOnCaeStartup()
 
 We can use {py:meth}`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 import visualization
 odb = session.openOdb('Job-1.odb')
@@ -445,10 +349,6 @@ session.viewports['Viewport: 1'].setValues(displayedObject=odb)
 
 We can use the {py:meth}`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:
 
-```{eval-rst}
-.. autolink-concat:: on
-```
-
 ```Python
 dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL,
                                        variable=(('U', NODAL, ((COMPONENT, 'U3'),)),),
@@ -456,10 +356,6 @@ dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL,
 ```
 
 `dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```Python
 import numpy as np
@@ -491,10 +387,6 @@ The distribution of the vertical displacement of a point in the top surface is s
 ### The whole output script
 
 The whole output script of this example is showed as follows:
-
-```{eval-rst}
-.. autolink-concat:: on
-```
 
 ```{code-block} Python
 :caption: compression-output.py
