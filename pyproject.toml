@@ -53,6 +53,9 @@ py-modules = [
 [tool.setuptools.dynamic.dependencies]
 file = ["requirements.txt"]
 
+[tool.setuptools.dynamic.optional-dependencies.dev]
+file = ["requirements-dev.txt"]
+
 [tool.setuptools.dynamic.optional-dependencies.jupyter]
 file = ["requirements-jupyter.txt"]
 
