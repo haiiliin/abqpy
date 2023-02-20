@@ -362,7 +362,7 @@ except ValueError, error:
     print error
 ```
 
-Exception handling is discussed in more detail in Error handling in the {doc}`/references`.
+Exception handling is discussed in more detail in Error handling in the {doc}`/reference/index`.
 
 (functions-and-modules)=
 
