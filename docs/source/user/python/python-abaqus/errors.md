@@ -4,13 +4,13 @@ The basics of Python's exception handling apply to the Abaqus Scripting Interfac
 
 ## Standard Python exceptions
 
-Python exceptions arise from either system-related problems, such as a disk or network error, or from programming errors, such as numeric overflow or reference to an index that does not exist. Standard Python exceptions are not described in this guide and are not listed as possible exceptions in the {doc}`/references`.
+Python exceptions arise from either system-related problems, such as a disk or network error, or from programming errors, such as numeric overflow or reference to an index that does not exist. Standard Python exceptions are not described in this guide and are not listed as possible exceptions in the {doc}`/reference/index`.
 
 Look at the standard Python documentation on the official Python website ([https://www.python.org](https://www.python.org)) for a list of standard Python exceptions. Standard exceptions are described in the Built-in Exceptions section of the Python Library Reference.
 
 ## Standard Abaqus Scripting Interface exceptions
 
-Standard Abaqus Scripting Interface exceptions arise from errors in a script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface exceptions that can be raised by a method are listed with each command in the {doc}`/references`.
+Standard Abaqus Scripting Interface exceptions arise from errors in a script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface exceptions that can be raised by a method are listed with each command in the {doc}`/reference/index`.
 
 The standard Abaqus Scripting Interface exception types are listed below:
 
@@ -45,12 +45,12 @@ The standard Abaqus Scripting Interface exception types are listed below:
   Context-dependent message.
 
 :::{note}
-The command descriptions in the {doc}`/references` list the type of standard Abaqus Scripting Interface exceptions that can occur; however, the exception messages are not included with the command description.
+The command descriptions in the {doc}`/reference/index` list the type of standard Abaqus Scripting Interface exceptions that can occur; however, the exception messages are not included with the command description.
 :::
 
 ## Additional Abaqus Scripting Interface exceptions
 
-Each command in the {doc}`/references` lists the standard Abaqus Scripting Interface exceptions that can be raised by a command. In addition, if the exception is not a standard Python or Abaqus Scripting Interface exception, the description lists the following:
+Each command in the {doc}`/reference/index` lists the standard Abaqus Scripting Interface exceptions that can be raised by a command. In addition, if the exception is not a standard Python or Abaqus Scripting Interface exception, the description lists the following:
 
 - A brief description of the problem.
 - The exception type.
@@ -73,7 +73,7 @@ You use the exception type in your error handling routines.
 
 ## Exception handling
 
-The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the {doc}`/references` to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:
+The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the {doc}`/reference/index` to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:
 
 ```python2
 try:

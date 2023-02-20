@@ -10,7 +10,7 @@ Some arguments require that you provide a SymbolicConstant. SymbolicConstants ar
 from abaqusConstants import *
 ```
 
-When an argument to a command is a SymbolicConstant, the description in the {doc}`/references` lists all its possible values. For example, when you are printing an image, the image can be rendered in one of the following formats: BLACK_AND_WHITE, GREYSCALE, or COLOR.
+When an argument to a command is a SymbolicConstant, the description in the {doc}`/reference/index` lists all its possible values. For example, when you are printing an image, the image can be rendered in one of the following formats: BLACK_AND_WHITE, GREYSCALE, or COLOR.
 
 Similarly, a data member can be a SymbolicConstant. For example, the type member of the Elastic object can be one of the following SymbolicConstants: ISOTROPIC, ORTHOTROPIC, ANISOTROPIC, ENGINEERING_CONSTANTS, LAMINA, TRACTION, or COUPLED_TRACTION.
 

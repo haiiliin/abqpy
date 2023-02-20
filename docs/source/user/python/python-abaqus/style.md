@@ -1,10 +1,10 @@
 # Abaqus Scripting Interface documentation style
 
-This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the {doc}`/references`. You may want to refer to the {doc}`/references` while you read this section and compare the style of a documented command with the descriptions provided here.
+This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the {doc}`/reference/index`. You may want to refer to the {doc}`/reference/index` while you read this section and compare the style of a documented command with the descriptions provided here.
 
 ## How the commands are ordered
 
-The following list describes the order in which commands are documented in the {doc}`/references`:
+The following list describes the order in which commands are documented in the {doc}`/reference/index`:
 
 Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, Amplitude commands, Animation commands, and Assembly commands.
 
@@ -29,7 +29,7 @@ Some methods are not associated with an object and appear at the end of a chapte
 
 ## Access
 
-The description of each object in the {doc}`/references` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:
+The description of each object in the {doc}`/reference/index` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:
 
 ```python2
 from abaqusConstants import *
@@ -86,7 +86,7 @@ invariantsData = stressData.validInvariants
 
 ## Path
 
-A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/references` includes a path to the command. For example, the following describes the path to the Viewport constructor:
+A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Viewport constructor:
 
 ```python2
 session.Viewport
@@ -131,7 +131,7 @@ In contrast, the `makeCurrent` method takes no arguments.
 makeCurrent()
 ```
 
-Some arguments of a command are required, and some arguments are optional. In the {doc}`/references` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument.
+Some arguments of a command are required, and some arguments are optional. In the {doc}`/reference/index` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument.
 
 The `setValues` method is a special case. All of the arguments to the `setValues` method are optional, but any argument that you omit retains its current value; Abaqus does not assign a default value to the argument.
 
