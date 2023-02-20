@@ -6,16 +6,16 @@ Session commands are used to create objects that are not stored with the model; 
 :caption: Objects of Session
 :maxdepth: 1
 
-session/animation
-session/canvas
-session/display_options
-session/display
-session/field_report
-session/odb_display
-session/path
-session/plot_options
-session/print
-session/xy
+animation
+canvas
+display_options
+display
+field_report
+odb_display
+path
+plot_options
+print
+xy
 ```
 
 ## Classes
