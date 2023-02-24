@@ -24,6 +24,8 @@ xy
 
 ```{eval-rst}
 .. autoclass:: abaqus.Session.Session.Session
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```

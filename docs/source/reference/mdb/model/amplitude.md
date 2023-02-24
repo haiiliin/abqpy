@@ -8,6 +8,8 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```{eval-rst}
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -17,6 +19,8 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```{eval-rst}
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
