@@ -8,6 +8,8 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 ```{eval-rst}
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -16,6 +18,8 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 ```{eval-rst}
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 

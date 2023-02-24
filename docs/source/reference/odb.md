@@ -8,6 +8,8 @@ The Python ODB API commands are used to read and write data from an output datab
 
 ```{eval-rst}
 .. autoclass:: abaqus.Odb.Odb.Odb
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
