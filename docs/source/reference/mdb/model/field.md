@@ -6,9 +6,6 @@ A Field object stores the non-propagating data of a field as well as a number of
 
 ```{eval-rst}
 .. autoclass:: abaqus.Field.FieldModel.FieldModel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 
