@@ -6,30 +6,40 @@ A specific type of interaction object and a specific type of interaction state o
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 

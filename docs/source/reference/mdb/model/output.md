@@ -6,6 +6,8 @@ Step output commands are used for configuring output requests, integrated output
 
 ```{eval-rst}
 .. autoclass:: abaqus.StepOutput.OutputModel.OutputModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -14,6 +16,8 @@ Step output commands are used for configuring output requests, integrated output
 
 ```{eval-rst}
 .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```

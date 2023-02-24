@@ -34,6 +34,8 @@ step/index
 
 ```{eval-rst}
 .. autoclass:: abaqus.Model.Model.Model
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
