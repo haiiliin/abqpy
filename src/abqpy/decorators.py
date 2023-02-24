@@ -380,6 +380,8 @@ class_suffix = {
 
 def abaqus_method_doc(method):
     """Add a link to the Abaqus documentation to the docstring of the method."""
+    if method.__name__ == "__init__":
+        return method
     class_name = method.__qualname__.split(".")[0]
     class_name = _process_class_name(class_name)
     method.__doc__ = doc.add_link_in_method_docstring(
