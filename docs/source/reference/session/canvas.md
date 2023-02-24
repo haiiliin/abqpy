@@ -8,6 +8,8 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 
 ```{eval-rst}
 .. autoclass:: abaqus.Canvas.Viewport.Viewport
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
