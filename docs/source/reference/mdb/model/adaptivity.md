@@ -6,6 +6,8 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
 
 ```{eval-rst}
 .. autoclass:: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -15,6 +17,8 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
 
 ```{eval-rst}
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -24,6 +28,8 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
 
 ```{eval-rst}
 .. autoclass:: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
