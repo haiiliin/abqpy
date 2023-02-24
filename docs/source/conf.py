@@ -59,7 +59,6 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
     'sphinx.ext.githubpages',
-    'sphinx.ext.inheritance_diagram',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
@@ -78,15 +77,10 @@ extensions = [
     'automembers',
 ]
 
-# autodoc configuration
-autodoc_default_options = {
-    "members": True,
-    "show-inheritance": True,
-}
-
 # automembers configuration
 automembers_autodoc_options = [
     ":members:",
+    ":special-members: __init__",
     ":show-inheritance:",
 ]
 

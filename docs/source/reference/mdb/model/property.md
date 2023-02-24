@@ -7,6 +7,9 @@ The Property commands are used to create and manage reinforcements and to assign
 
 ```{eval-rst}
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```

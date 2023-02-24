@@ -6,6 +6,9 @@ Field report commands are used to write a field output report and free body comp
 
 ```{eval-rst}
 .. autoclass:: abaqus.FieldReport.FieldReportSession.FieldReportSession
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 

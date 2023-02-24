@@ -6,6 +6,9 @@ A specific type of boundary condition object and a specific type of boundary con
 
 ```{eval-rst}
 .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 

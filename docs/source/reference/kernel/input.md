@@ -6,6 +6,9 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
 
 ```{eval-rst}
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```

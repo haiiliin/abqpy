@@ -6,6 +6,9 @@ Table Collection commands are used to create dynamic table types and tables.
 
 ```{eval-rst}
 .. autoclass:: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -14,6 +17,9 @@ Table Collection commands are used to create dynamic table types and tables.
 
 ```{eval-rst}
 .. autoclass:: abaqus.TableCollection.TableCollectionModel.TableCollectionModel
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
