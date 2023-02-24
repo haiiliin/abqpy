@@ -6,9 +6,6 @@ Path commands are used to define a line through your model by specifying a serie
 
 ```{eval-rst}
 .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -18,9 +15,6 @@ Path commands are used to define a line through your model by specifying a serie
 
 ```{eval-rst}
 .. autoclass:: abaqus.PathAndProbe.FreeBody.FreeBody
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 ```
