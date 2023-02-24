@@ -19,7 +19,6 @@ edit_mesh
 ```{eval-rst}
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
    :members:
-   :special-members: __init__
    :show-inheritance:
 
    .. autoclasstoc::
@@ -31,31 +30,7 @@ edit_mesh
 
 .. toggle::
 
-   .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Job.JobMdb.JobMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
+   .. automembers:: abaqus.Mdb
+      :recursive:
+      :exclude: Mdb
 ```

@@ -7,7 +7,6 @@ A specific type of interaction object and a specific type of interaction state o
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -16,7 +15,6 @@ A specific type of interaction object and a specific type of interaction state o
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -25,7 +23,6 @@ A specific type of interaction object and a specific type of interaction state o
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -34,7 +31,6 @@ A specific type of interaction object and a specific type of interaction state o
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -43,7 +39,6 @@ A specific type of interaction object and a specific type of interaction state o
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

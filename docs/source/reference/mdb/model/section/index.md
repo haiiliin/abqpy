@@ -16,7 +16,6 @@ connector
 ```{eval-rst}
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -28,7 +27,6 @@ connector
 ```{eval-rst}
 .. autoclass:: abaqus.Section.SectionOdb.SectionOdb
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

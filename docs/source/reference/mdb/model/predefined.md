@@ -7,7 +7,6 @@ A PredefinedField object stores the non-propagating data of a predefined field a
 ```{eval-rst}
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

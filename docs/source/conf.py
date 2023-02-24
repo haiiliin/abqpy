@@ -80,7 +80,6 @@ extensions = [
 # automembers configuration
 automembers_autodoc_options = [
     ":members:",
-    ":special-members: __init__",
     ":show-inheritance:",
 ]
 

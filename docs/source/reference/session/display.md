@@ -7,7 +7,6 @@ Display group commands are used to select a subset of the entities displayed in 
 ```{eval-rst}
 .. autoclass:: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

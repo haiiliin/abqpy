@@ -14,7 +14,6 @@ step_miscellaneous
 ```{eval-rst}
 .. autoclass:: abaqus.Step.StepModel.StepModel
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

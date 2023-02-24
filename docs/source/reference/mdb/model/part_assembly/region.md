@@ -33,7 +33,6 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 ```{eval-rst}
 .. autoclass:: abaqus.Region.RegionPart.RegionPart
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -44,7 +43,6 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 ```{eval-rst}
 .. autoclass:: abaqus.Region.RegionAssembly.RegionAssembly
     :members:
-    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
