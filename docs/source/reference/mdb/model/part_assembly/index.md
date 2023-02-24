@@ -1,7 +1,7 @@
 # Part and Assembly
 
 ```{toctree}
-:caption: Objects in and Assembly
+:caption: Objects in Part and Assembly
 :maxdepth: 1
 
 part
