@@ -6,6 +6,8 @@ A specific type of engineering feature object is designed for each type of engin
 
 ```{eval-rst}
 .. autoclass:: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
