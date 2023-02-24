@@ -6,6 +6,8 @@ Sketcher commands are used to define the entities, such as the geometry, constra
 
 ```{eval-rst}
 .. autoclass:: abaqus.Sketcher.SketchModel.SketchModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 

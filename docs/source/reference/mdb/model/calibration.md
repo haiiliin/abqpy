@@ -6,6 +6,8 @@ The calibration commands are used for material calibration.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Calibration.CalibrationModel.CalibrationModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
