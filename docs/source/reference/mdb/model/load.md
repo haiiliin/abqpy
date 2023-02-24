@@ -12,9 +12,6 @@ The Load object is the abstract base type for other Load objects. The Load objec
 
 ```{eval-rst}
 .. autoclass:: abaqus.Load.LoadModel.LoadModel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 
