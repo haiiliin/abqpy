@@ -6,6 +6,8 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
 ```{eval-rst}
 .. autoclass:: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -14,6 +16,8 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
 ```{eval-rst}
 .. autoclass:: abaqus.Optimization.OptimizationTask.OptimizationTask
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 

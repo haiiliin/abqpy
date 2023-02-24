@@ -8,6 +8,8 @@ Filter commands are used to create real-time filters of output request data.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Filter.FilterModel.FilterModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -16,6 +18,8 @@ Filter commands are used to create real-time filters of output request data.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
