@@ -6,6 +6,8 @@ The Constraint commands define constraints between regions of the model.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Constraint.ConstraintModel.ConstraintModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
