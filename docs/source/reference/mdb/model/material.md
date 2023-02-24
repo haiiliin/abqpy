@@ -8,6 +8,8 @@ The Material commands are used to define the materials in a model.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Material.MaterialModel.MaterialModel
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -16,6 +18,8 @@ The Material commands are used to define the materials in a model.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -25,6 +29,8 @@ The Material commands are used to define the materials in a model.
 
 ```{eval-rst}
 .. autoclass:: abaqus.Material.Material.Material
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
