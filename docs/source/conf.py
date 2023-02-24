@@ -217,7 +217,7 @@ latex_logo = None
 # It defaults to 'manual'.
 latex_theme = 'manual'
 
-# autoclass_content = 'both'
+autoclass_content = 'both'
 
 latex_toplevel_sectioning = 'part'
 latex_engine = 'xelatex'
