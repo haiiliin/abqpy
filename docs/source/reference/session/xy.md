@@ -6,6 +6,8 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
 
 ```{eval-rst}
 .. autoclass:: abaqus.XY.XYSession.XYSession
+    :members:
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
