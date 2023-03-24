@@ -10,6 +10,7 @@ on:
     - 'docs/requirements.txt'
     - 'docs/source/**'
     - '.github/workflows/docs.yml'
+    - 'pyproject.toml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
