@@ -51,12 +51,12 @@ py-modules = [
 ]
 
 [tool.setuptools.dynamic.dependencies]
-file = ["requirements.txt"]
+file = ["requirements/deps.txt"]
 
 [tool.setuptools.dynamic.optional-dependencies]
-dev.file = ["requirements-dev.txt"]
-juptyer.file = ["requirements-jupyter.txt"]
-docs.file = ["docs/requirements.txt"]
+dev.file = ["requirements/dev.txt"]
+juptyer.file = ["requirements/jupyter.txt"]
+docs.file = ["requirements/docs.txt"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
