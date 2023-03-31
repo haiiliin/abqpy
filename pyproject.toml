@@ -56,7 +56,6 @@ file = ["requirements/deps.txt"]
 [tool.setuptools.dynamic.optional-dependencies]
 dev.file = ["requirements/dev.txt"]
 juptyer.file = ["requirements/jupyter.txt"]
-docs.file = ["requirements/docs.txt"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

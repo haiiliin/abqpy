@@ -38,7 +38,8 @@ jobs:
     - name: Installing the library
       shell: bash -l {0}
       run: |
-        pip install .[docs]
+        pip install .
+        pip install requirements/docs.txt
     - name: Build the documentation
       shell: bash -l {0}
       run: |
