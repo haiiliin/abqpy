@@ -7,7 +7,7 @@ on:
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
-    - 'docs/requirements.txt'
+    - 'requirements/docs.txt'
     - 'docs/source/**'
     - '.github/workflows/docs.yml'
     - 'pyproject.toml'
@@ -26,6 +26,7 @@ jobs:
     strategy:
       matrix:
         language: ['en']
+        builder: ['html']
     steps:
     - uses: actions/setup-python@v4
       with:
@@ -33,21 +34,22 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/cache@v3.3.1
       with:
-        path: docs/build/${{ matrix.language }}/html
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
         key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
     - name: Installing the library
       shell: bash -l {0}
       run: |
-        pip install .[docs]
+        pip install .
+        pip install -r requirements/docs.txt
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }} ${{ env.SPHINXOPTS }}
+        sphinx-build ${{ env.SPHINXOPTS }} ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }}
       env:
         SOURCEDIR: docs/source
-        BUILDDIR: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
-        SPHINXOPTS: -b html -D language=${{ matrix.language }} -j auto
+        BUILDDIR: docs/build/${{ matrix.language }}/${{ matrix.builder }}/pr-${{ github.event.number }}
+        SPHINXOPTS: -M ${{ matrix.builder }} -D language=${{ matrix.language }} -j auto
     - uses: actions/cache@v3.3.1
       with:
-        path: docs/build/${{ matrix.language }}/html
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
         key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
