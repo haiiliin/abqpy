@@ -39,7 +39,7 @@ jobs:
       shell: bash -l {0}
       run: |
         pip install .
-        pip install requirements/docs.txt
+        pip install -r requirements/docs.txt
     - name: Build the documentation
       shell: bash -l {0}
       run: |
