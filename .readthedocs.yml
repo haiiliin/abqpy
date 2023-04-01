@@ -5,6 +5,7 @@ build:
   tools:
     python: "3.10"
   jobs:
+    # see https://github.com/readthedocs/readthedocs.org/pull/9649
     post_checkout:
       # Exit when there aren't changed in docs directory
       # --quiet exits with a 1 when there **are** changes,
