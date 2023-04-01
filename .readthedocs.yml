@@ -13,7 +13,7 @@ build:
 
       # Use `git branch` to check if the current branch is "2016", "2017", "2018", "2019", "2020", "2021" or "2022",
       # in that case exit the command with 183 to skip the build
-      - (git branch --show-current | grep -viq "2016\|2017\|2018\|2019\|2020\|2021\|2022") || exit 183
+      - (git branch --show-current | grep -viq "2022") || exit 183
 
       # If there are not changes (exit 0) we force the command to return with 439.
       # This is a special exit code on Read the Docs that will cancel the build immediately.
