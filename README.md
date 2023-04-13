@@ -2,13 +2,9 @@
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/package.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/package.yml)
 [![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
-<<<<<<< HEAD
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2021/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2021)
-=======
-[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
->>>>>>> 74ae5a7a ([docs] Add quick start in README and update ABAQUS_BAT_PATH doc (#4027))
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
 
