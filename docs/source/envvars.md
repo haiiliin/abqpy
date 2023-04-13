@@ -2,7 +2,7 @@
 
 ## `ABAQUS_BAT_PATH`
 
-The file path of the `abaqus` command line batch file.
+The file path of the `abaqus` command line batch file (`.bat`).
 
 ## `ABAQUS_COMMAND_OPTIONS`
 
