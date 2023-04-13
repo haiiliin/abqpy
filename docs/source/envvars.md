@@ -2,16 +2,7 @@
 
 ## `ABAQUS_BAT_PATH`
 
-In order to use Abaqus command to execute the Python script and submit the job, you need to tell
-`abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this:
-
-```sh
-C:/SIMULIA/Commands/abaqus.bat
-```
-
-You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new
-system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e.,
-`C:/SIMULIA/Commands/abaqus.bat`.
+The file path of the `abaqus` command line batch file
 
 ## `ABAQUS_COMMAND_OPTIONS`
 
