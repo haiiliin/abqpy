@@ -2,7 +2,13 @@
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/package.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/package.yml)
 [![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
+<<<<<<< HEAD
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2020/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2020)
+=======
+[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
+[![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
+[![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
+>>>>>>> 74ae5a7a ([docs] Add quick start in README and update ABAQUS_BAT_PATH doc (#4027))
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
 
@@ -18,6 +24,17 @@ Python script, even without opening the Abaqus/CAE.
 - GitHub repository: [https://github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [https://pypi.org/project/abqpy](https://pypi.org/project/abqpy)
 - Documentation: [https://docs.abqpy.com/en/latest](https://docs.abqpy.com/en/latest)
+
+## Quick Start
+
+Make sure <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> and <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> are installed on your computer,
+open `cmd` or `terminal`, type:
+```
+pip install abqpy
+```
+Then, open your Abaqus/Python script in your favorite IDE with Python language support, 
+run the script with Python 3.7+ (just do it!), see the magic happens.
+For more information, please refer to the [documentation](https://docs.abqpy.com/en/latest).
 
 ## Pull Requests are Welcome
 
