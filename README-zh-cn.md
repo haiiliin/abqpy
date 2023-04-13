@@ -3,8 +3,8 @@
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/package.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/package.yml)
 [![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
-[![python](https://img.shields.io/badge/python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
-[![abaqus](https://img.shields.io/badge/abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
+[![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
+[![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
@@ -20,7 +20,7 @@ Abaqus/Python 脚本的类型提示
 
 ## 快速开始
 
-打开 `cmd` 或者 `terminal`，输入：
+确保 <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> 和 <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> 已经安装成功，然后打开 `cmd` 或者 `terminal`，输入：
 ```
 pip install abqpy
 ```
