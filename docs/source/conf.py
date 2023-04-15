@@ -91,6 +91,17 @@ myst_enable_extensions = [
 
 # AutoAPI configuration
 autoapi_dirs = ["../../src/abqpy"]
+autoapi_template_dir = "_autoapi_templates"
+autoapi_ignore = ["*_version.py"]
+autoapi_options = [
+    'members', 
+    'undoc-members', 
+    # 'private-members', 
+    'show-inheritance', 
+    'show-module-summary', 
+    'special-members', 
+    # 'imported-members', 
+]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
 codeautolink_concat_default = False
