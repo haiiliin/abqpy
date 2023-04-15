@@ -39,6 +39,7 @@ user
 cli
 envvars
 reference/index
+autoapi/index
 ```
 
 # Indices and tables
