@@ -10,7 +10,7 @@ class VersionRole(SphinxRole):
 
     def run(self):
         prefix, suffix, package = '', '', ''
-        elements = self.text.split('|', 2)
+        elements = self.text.split('|', 3)
         if len(elements) == 1:
             package = elements[0]
         elif len(elements) == 2:
