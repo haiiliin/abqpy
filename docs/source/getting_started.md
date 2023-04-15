@@ -129,7 +129,7 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 abaqus cae noGUI=script.py
 ```
 
-The secret is hided in the {py:meth}`~abqpy.abaqus.run` function:
+The secret is hided in the {py:func}`~abqpy.abaqus.run` function:
 
 ```python
 def run(cae = True):
@@ -147,7 +147,7 @@ def run(cae = True):
 
 In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
 script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
-**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:meth}`~abqpy.abaqus.run`
+**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.abaqus.run`
 will exit the interpreter, because the script will already run in Abaqus Python interpreter.
 
 In the output script, we might not want to always use the {py:mod}`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license).
@@ -158,9 +158,9 @@ Then, another similar **abaqus** command line is needed:
 abaqus python script.py
 ```
 
-So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:meth}`~abqpy.abaqus.run` function with the argument `cae = False`.
+So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:func}`~abqpy.abaqus.run` function with the argument `cae = False`.
 
-In summary, the {py:meth}`~abqpy.abaqus.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
+In summary, the {py:func}`~abqpy.abaqus.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
 in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module.
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
 on the top of your script.
