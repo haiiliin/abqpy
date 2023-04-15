@@ -249,16 +249,9 @@ def abaqus_method_doc(method):
     if method.__name__ == "__init__":
         return method
     class_name = method.__qualname__.split(".")[0]
-<<<<<<< HEAD
-    class_name = _process_class_name(class_name)
-    method.__doc__ = doc.add_link_in_method_docstring(
-        class_name=_process_class_name(class_name),
-        method_name=method.__name__,
-=======
     method.__doc__ = add_link_in_method_docstring(
         class_or_module_name=_process_class_name(class_name),
         method_or_function_name=method.__name__,
->>>>>>> d08c3bb8 ([docs] Simplify getting started docs (#4039))
         docstring=method.__doc__,
         prefix="gpr" if class_name.lower().startswith("cae") else "",
         suffix=class_suffix.get(class_name, ""),
