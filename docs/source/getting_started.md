@@ -25,7 +25,7 @@ You can install `abqpy` with the following commands.
 
             :version-major:`pip install abqpy==|abqpy|.*`  # recommended
             :version:`pip install abqpy==|abqpy|`
-            pip install abqpy  # equivalent to `pip install abqpy==2023.*` currently
+            pip install abqpy
 
     .. tab-item:: Install from source
 
