@@ -6,6 +6,16 @@ from sphinx.util.docutils import SphinxRole
 
 
 class VersionRole(SphinxRole):
+    """Role for inserting the version of a package. For example:
+
+    .. code-block:: rst
+
+        :version:`numpy`
+        :version-major:`numpy`
+        :version-minor:`numpy`
+        :version-patch:`numpy`
+        :version:`prefix text |numpy| suffix text`
+    """
     type = 'version'
 
     def run(self):
