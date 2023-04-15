@@ -10,13 +10,16 @@ Python script, even without opening the Abaqus/CAE.
 
 ## Installation
 
-`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
-or a later version.
+Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> and 
+<a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> </a>
+are installed on your computer before installing `abqpy`. 
+
+You can install `abqpy` with the following commands.
 
 ```{eval-rst}
-.. grid:: 1 2 2 2
-    :gutter: 4
+.. tab-set::
 
+<<<<<<< HEAD
     .. grid-item-card::
 
         Install with pip
@@ -56,21 +59,32 @@ or a later version.
 
             pip install :autopkg:`abqpy`
             pip install abqpy==2017.*
+=======
+    .. tab-item:: Install with pip
 
-    .. grid-item-card::
+        .. parsed-literal::
 
-        Optional dependencies
-        ^^^^^^^^^^^^^^^^^^^^^
+            :version-major:`pip install abqpy==|abqpy|.*`  # recommended
+            :version:`pip install abqpy==|abqpy|`
+            pip install abqpy
+>>>>>>> 076464b5 ([docs] Use tab sets for installing method (#4047))
 
-        If you want to use the Jupyter notebook to write your Abaqus/Python scripts, use
-        the following command:
+    .. tab-item:: Install from source
 
-        ++++
+        .. parsed-literal::
 
-        .. code-block:: bash
+            :version-major:`pip install git+https://github.com/haiiliin/abqpy@|abqpy|`
+
+    .. tab-item:: Install with jupyter notebook support
+
+        .. code-block:: sh
 
             pip install abqpy[jupyter]
 
+.. note::
+
+    You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+    To do so, specify the major version of `abqpy` in the above commands, e.g., `pip install abqpy==2023.*`.
 ```
 
 ### Two Python interpreters
