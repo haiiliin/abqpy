@@ -129,42 +129,11 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 abaqus cae noGUI=script.py
 ```
 
-The secret is hided in the {py:meth}`~abqpy.abaqus.run` function:
-
-```python
-def run():
-    abaqus = 'abaqus'
-    if 'ABAQUS_BAT_PATH' in os.environ.keys():
-        abaqus = os.environ['ABAQUS_BAT_PATH']
-
-    filePath = os.path.abspath(__main__.__file__)
-    args = " ".join(sys.argv[1:])
-
-    os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-
-    sys.exit(0)
-```
-
-In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
-script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
-**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:meth}`~abqpy.abaqus.run`
-will exit the interpreter, because the script will already run in Abaqus Python interpreter.
-
-In the output script, we might not want to always use the {py:mod}`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license).
-Instead, we use the module {py:mod}`~odbAccess` (i.e., `from odbAccess import *`), which requires only the Abaqus Python interpreter.
-Then, another similar **abaqus** command line is needed:
-
-```sh
-abaqus python script.py
-```
-
-So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:meth}`~abqpy.abaqus.run` function, and the actual implementation of this function is similar to:
+The secret is hided in the {py:func}`~abqpy.abaqus.run` function:
 
 ```python
 def run(cae = True):
-    abaqus = 'abaqus'
-    if 'ABAQUS_BAT_PATH' in os.environ.keys():
-        abaqus = os.environ['ABAQUS_BAT_PATH']
+    abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
 
     filePath = os.path.abspath(__main__.__file__)
     args = " ".join(sys.argv[1:])
@@ -176,7 +145,22 @@ def run(cae = True):
     sys.exit(0)
 ```
 
-In summary: this function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
+In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
+script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
+**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.abaqus.run`
+will exit the interpreter, because the script will already run in Abaqus Python interpreter.
+
+In the output script, we might not want to always use the {py:mod}`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license).
+Instead, we use the module {py:mod}`~odbAccess` (i.e., `from odbAccess import *`), which requires only the Abaqus Python interpreter.
+Then, another similar **abaqus** command line is needed:
+
+```sh
+abaqus python script.py
+```
+
+So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:func}`~abqpy.abaqus.run` function with the argument `cae = False`.
+
+In summary, the {py:func}`~abqpy.abaqus.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
 in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module.
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
 on the top of your script.
@@ -186,8 +170,8 @@ on the top of your script.
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
 [abqpy/examples at main · haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples)
-for some tests of the script, for more detailed documentation, please check
-[abqpy documentation](https://haiiliin.com/abqpy/).
+for some script examples. Or you may go {doc}`/tutorials` for a simple tutorial. For more documentation about
+Abaqus/Python scripting, please check {doc}`/reference/index` for more detailed API references.
 
 ## Setup your Abaqus Environment
 
@@ -214,11 +198,3 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
   :alt: Extract Output Data
   :width: 100%
   ```
-
-## What next?
-
-You may wonder how does this package work,
-you can go {doc}`/getting_started` for more detailed introduction and go
-{doc}`/tutorials` for a simple tutorial. For more documentation about
-Abaqus/Python scripting, please check {doc}`/reference/index`
-for more detailed API references.
