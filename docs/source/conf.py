@@ -75,6 +75,7 @@ extensions = [
     'myst_parser',
     'autopkg',
     'automembers',
+    'autoapi.extension',
 ]
 
 # automembers configuration
@@ -86,6 +87,20 @@ automembers_autodoc_options = [
 # MyST configuration
 myst_enable_extensions = [
   "colon_fence",
+]
+
+# AutoAPI configuration
+autoapi_dirs = ["../../src/abqpy"]
+autoapi_template_dir = "_autoapi_templates"
+autoapi_ignore = ["*_version.py"]
+autoapi_options = [
+    'members', 
+    'undoc-members', 
+    # 'private-members', 
+    'show-inheritance', 
+    'show-module-summary', 
+    'special-members', 
+    # 'imported-members', 
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
@@ -141,10 +156,10 @@ hoverxref_intersphinx = [
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
-     'examples_dirs': '../../examples',
-     'gallery_dirs': 'examples',
-     'filename_pattern': '/.+\.py',
-     'plot_gallery': False,
+    'examples_dirs': '../../examples',
+    'gallery_dirs': 'examples',
+    'filename_pattern': '/.+\.py',
+    'plot_gallery': False,
 }
 
 # Show short type hints for user-defined classes and defaults for parameters
