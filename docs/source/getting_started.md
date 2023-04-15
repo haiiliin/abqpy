@@ -170,8 +170,8 @@ on the top of your script.
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
 [abqpy/examples at main · haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples)
-for some tests of the script, for more detailed documentation, please check
-[abqpy documentation](https://haiiliin.com/abqpy/).
+for some script examples. Or you may go {doc}`/tutorials` for a simple tutorial. For more documentation about
+Abaqus/Python scripting, please check {doc}`/reference/index` for more detailed API references.
 
 ## Setup your Abaqus Environment
 
@@ -198,11 +198,3 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
   :alt: Extract Output Data
   :width: 100%
   ```
-
-## What next?
-
-You may wonder how does this package work,
-you can go {doc}`/getting_started` for more detailed introduction and go
-{doc}`/tutorials` for a simple tutorial. For more documentation about
-Abaqus/Python scripting, please check {doc}`/reference/index`
-for more detailed API references.
