@@ -21,8 +21,8 @@ are installed on your computer before installing `abqpy`. You are recommended to
 
         .. parsed-literal::
 
-            :version-major:`pip install abqpy==|abqpy|.*`  # change the major version which matches your Abaqus version, recommended
-            :version:`pip install abqpy==|abqpy|`  # change the major version which matches your Abaqus version
+            :version-major:`pip install abqpy==|abqpy|.*`  # change the major version to match your Abaqus version, recommended
+            :version:`pip install abqpy==|abqpy|`  # change the major version to match your Abaqus version
             pip install abqpy  # equivalent to `pip install abqpy==2023.*` currently
 
     .. tab-item:: Install from source
