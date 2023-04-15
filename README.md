@@ -28,7 +28,7 @@ Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shi
 are installed on your computer,
 open `cmd` or `terminal`, type:
 ```
-pip install abqpy
+pip install abqpy==2023.*  # change the major version which matches your Abaqus version
 ```
 Then, open your Abaqus/Python script in your favorite IDE with Python language support, 
 run the script with Python 3.7+ (just do it!), see the magic happens.
