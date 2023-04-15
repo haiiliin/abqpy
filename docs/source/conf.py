@@ -73,7 +73,7 @@ extensions = [
     'sphinx_toolbox.collapse',
     'hoverxref.extension',
     'myst_parser',
-    'autopkg',
+    'version',
     'automembers',
     'autoapi.extension',
 ]
