@@ -10,6 +10,7 @@ pip install .[docs]
 ```
 After the dependencies are installed, you can build the docs by running the following command from the `docs` directory of the repository:
 ```bash
+cd docs
 make html
 ```
 
