@@ -4,7 +4,7 @@ This is the source for the abqpy documentation. The documentation is built using
 
 ## Build the docs
 
-To build the docs, you will need to install [Python](https://www.python.org/downloads/). Then, install the dependencies using pip:
+To build the docs, you will need to install [Python](https://www.python.org/downloads/). Then, install the dependencies using pip from the root directory of the repository:
 ```bash
 pip install .[docs]
 ```
