@@ -132,16 +132,16 @@ abaqus cae noGUI=script.py
 The secret is hided in the {py:meth}`~abqpy.abaqus.run` function:
 
 ```python
-def run():
-    abaqus = 'abaqus'
-    if 'ABAQUS_BAT_PATH' in os.environ.keys():
-        abaqus = os.environ['ABAQUS_BAT_PATH']
+def run(cae = True):
+    abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
 
     filePath = os.path.abspath(__main__.__file__)
     args = " ".join(sys.argv[1:])
 
-    os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-
+    if cae:
+        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+    else:
+        os.system(f"{abaqus} python {filePath} {args}")
     sys.exit(0)
 ```
 
@@ -158,25 +158,9 @@ Then, another similar **abaqus** command line is needed:
 abaqus python script.py
 ```
 
-So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:meth}`~abqpy.abaqus.run` function, and the actual implementation of this function is similar to:
+So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:meth}`~abqpy.abaqus.run` function with the argument `cae = False`.
 
-```python
-def run(cae = True):
-    abaqus = 'abaqus'
-    if 'ABAQUS_BAT_PATH' in os.environ.keys():
-        abaqus = os.environ['ABAQUS_BAT_PATH']
-
-    filePath = os.path.abspath(__main__.__file__)
-    args = " ".join(sys.argv[1:])
-
-    if cae:
-        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-    else:
-        os.system(f"{abaqus} python {filePath} {args}")
-    sys.exit(0)
-```
-
-In summary: this function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
+In summary, the {py:meth}`~abqpy.abaqus.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
 in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module.
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
 on the top of your script.
