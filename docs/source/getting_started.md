@@ -19,47 +19,6 @@ You can install `abqpy` with the following commands.
 ```{eval-rst}
 .. tab-set::
 
-<<<<<<< HEAD
-    .. grid-item-card::
-
-        Install with pip
-        ^^^^^^^^^^^^^^^^
-
-        abqpy can be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
-
-        ++++
-
-        .. code-block:: bash
-
-            pip install abqpy
-
-    .. grid-item-card::
-
-        Install from source
-        ^^^^^^^^^^^^^^^^^^^
-
-        You can also install `abqpy` from source:
-
-        ++++
-
-        .. code-block:: bash
-
-            pip install git+https://github.com/haiiliin/abqpy@2022
-
-    .. grid-item-card::
-
-        Install a specific version
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-        You can specify the version number when installing `abqpy`, for example:
-
-        ++++
-
-        .. parsed-literal::
-
-            pip install :autopkg:`abqpy`
-            pip install abqpy==2022.*
-=======
     .. tab-item:: Install with pip
 
         .. parsed-literal::
@@ -67,7 +26,6 @@ You can install `abqpy` with the following commands.
             :version-major:`pip install abqpy==|abqpy|.*`  # recommended
             :version:`pip install abqpy==|abqpy|`
             pip install abqpy
->>>>>>> 076464b5 ([docs] Use tab sets for installing method (#4047))
 
     .. tab-item:: Install from source
 
