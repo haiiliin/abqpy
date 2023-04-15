@@ -12,7 +12,9 @@ Python script, even without opening the Abaqus/CAE.
 
 Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> and 
 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> </a>
-are installed on your computer before installing `abqpy`. You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+are installed on your computer before installing `abqpy`. 
+
+You can install `abqpy` with the following commands.
 
 ```{eval-rst}
 .. tab-set::
@@ -21,8 +23,8 @@ are installed on your computer before installing `abqpy`. You are recommended to
 
         .. parsed-literal::
 
-            :version-major:`pip install abqpy==|abqpy|.*`  # change the major version to match your Abaqus version, recommended
-            :version:`pip install abqpy==|abqpy|`  # change the major version to match your Abaqus version
+            :version-major:`pip install abqpy==|abqpy|.*`  # recommended
+            :version:`pip install abqpy==|abqpy|`
             pip install abqpy  # equivalent to `pip install abqpy==2023.*` currently
 
     .. tab-item:: Install from source
@@ -36,6 +38,11 @@ are installed on your computer before installing `abqpy`. You are recommended to
         .. code-block:: sh
 
             pip install abqpy[jupyter]
+
+.. note::
+
+    You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+    To do so, specify the major version of `abqpy` in the above commands, e.g., `pip install abqpy==2023.*`.
 ```
 
 ### Two Python interpreters
