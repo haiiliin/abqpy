@@ -1,22 +1,10 @@
-name: pytest
+name: tests
 
 on:
   pull_request:
-    branches:
-    - 20**
-    types: [opened, reopened, synchronize]
-    paths:
-    - 'src/**'
-    - 'tests/**'
-    - '.github/workflows/package.yml'
-    - 'pyproject.toml'
   push:
     branches:
-    - 20**
-    paths:
-    - 'src/**'
-    - 'tests/**'
-    - '.github/workflows/package.yml'
+      - 20**
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
