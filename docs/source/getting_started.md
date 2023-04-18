@@ -42,7 +42,6 @@ You can install `abqpy` with the following commands.
 .. note::
 
     You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
-    To do so, specify the major version of `abqpy` in the above commands, e.g., `pip install abqpy==2023.*`.
 ```
 
 ### Two Python interpreters
