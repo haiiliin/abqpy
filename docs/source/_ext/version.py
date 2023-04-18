@@ -36,7 +36,7 @@ class VersionRole(SphinxRole):
                    patch if self.type == 'patch' else
                    f'{major}.{minor}.{patch}')
         text = f'{prefix}{version}{suffix}'
-        return [nodes.Text(text, text)], []
+        return [nodes.literal_block(text, text)], []
 
 
 class MajorVersionRole(VersionRole):
