@@ -23,9 +23,9 @@ To record actions from Abaqus/CAE, the Abaqus PDE session must be associated wit
 
 3. Complete all the desired actions in the Abaqus/CAE session to record them in the .guiLog file.
 
-   :::{note}
+   ```{note}
    When you record .guiLog files, do not use mouse button 2 to close the dialog box for a procedure. Instead, use the buttons in the dialog box to close it. Using mouse button 2 adds multiple dialog box closing commands to the recorded .guiLog file. Since only one command is needed to close the dialog, the extra commands will result in an error when the recorded script is played.
-   :::
+   ```
 
 4. Click the Stop Recording icon  to stop recording.
 
@@ -55,18 +55,18 @@ The debugger consists of a call stack area, action buttons, and the debugger com
 
 (cmd-pde-debugger-nls)=
 
-:::{figure} /images/cmd-pde-debugger-nls.png
+```{figure} /images/cmd-pde-debugger-nls.png
 :align: center
 :width: 50%
 
 The Abaqus PDE debugger.
-:::
+```
 
 The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see [running a script]).
 
-:::{note}
+```{note}
 If you enter a command in the debugger CLI and it does not seem to work, it may be conflicting with a Pdb command.
-:::
+```
 
 The call stack area shows the commands that are currently being executed.
 

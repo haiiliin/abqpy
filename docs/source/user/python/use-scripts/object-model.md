@@ -24,12 +24,12 @@ In general terms the Abaqus object model is divided into the Session, the Mdb, a
 
 (cmd-int-model-overview-nls)=
 
-:::{figure} /images/cmd-int-model-overview-nls.png
+```{figure} /images/cmd-int-model-overview-nls.png
 :align: center
 :width: 100%
 
 The Abaqus object model.
-:::
+```
 
 An object in the object model can be one of the following:
 
@@ -51,23 +51,23 @@ An object in the object model can be one of the following:
 
   (cmd-int-model-session-nls)=
 
-  :::{figure} /images/cmd-int-model-session-nls.png
+  ```{figure} /images/cmd-int-model-session-nls.png
   :align: center
   :width: 50%
 
   The Session object model.
-  :::
+  ```
 
   The viewports container is owned by the Session object, as shown in {numref}`cmd-int-model-session-nls`.
 
   % cmd-int-model-session-nls:
 
-  :::{figure} /images/cmd-int-model-viewport-nls.png
+  ```{figure} /images/cmd-int-model-viewport-nls.png
   :align: center
   :width: 100%
 
   The Viewport object model.
-  :::
+  ```
 
 - **Mdb**
 
@@ -75,12 +75,12 @@ An object in the object model can be one of the following:
 
   (cmd-int-model-model-nls)=
 
-  :::{figure} /images/cmd-int-model-model-nls.png
+  ```{figure} /images/cmd-int-model-model-nls.png
   :align: center
   :width: 50%
 
   The structure of the objects under the Model object.
-  :::
+  ```
 
 - **Odb**
 
@@ -88,12 +88,12 @@ An object in the object model can be one of the following:
 
   (cmd-int-model-odb-nls)=
 
-  :::{figure} /images/cmd-int-model-odb-nls.png
+  ```{figure} /images/cmd-int-model-odb-nls.png
   :align: center
   :width: 100%
 
   The Odb object model.
-  :::
+  ```
 
   Most of the commands in the Abaqus Scripting Interface begin with either the Session, the Mdb, or the Odb object. For example,
 
@@ -147,21 +147,21 @@ The Model object contains many objects. {numref}`cmd-int-model-overview-nls-2` a
 
 (cmd-int-model-overview-nls-2)=
 
-:::{figure} /images/cmd-int-model-overview-nls.png
+```{figure} /images/cmd-int-model-overview-nls.png
 :align: center
 :width: 100%
 
 The Part object model.
-:::
+```
 
 (cmd-int-model-assembly-nls)=
 
-:::{figure} /images/cmd-int-model-assembly-nls.png
+```{figure} /images/cmd-int-model-assembly-nls.png
 :align: center
 :width: 100%
 
 The RootAssembly object model.
-:::
+```
 
 The Job object is separate from the Model object. The object model for the Job object is straightforward; the Job object owns no other objects. The Job object refers to a Model object but is not owned by the Model object.
 
@@ -188,12 +188,12 @@ In {numref}`cmd-int-abstract-nls` AnalysisStep and Step are both abstract base t
 
 (cmd-int-abstract-nls)=
 
-:::{figure} /images/cmd-int-abstract-nls.png
+```{figure} /images/cmd-int-abstract-nls.png
 :align: center
 :width: 50%
 
 An example of the is a relationships between objects.
-:::
+```
 
 In contrast the object model figures described at the beginning of this section show what object-oriented programmers call has a relationships between objects. For example, a session has a viewport repository, and a model has a root assembly.
 
