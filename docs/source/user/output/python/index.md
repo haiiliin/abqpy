@@ -6,14 +6,14 @@ The following sections describe the architecture of an output database and how t
 :caption: Contents
 :maxdepth: 1
 
-python/need-what-to-understand
-python/object-model
-python/output-object-model
-python/execute-script
-python/read
-python/write
-python/exceptions
-python/computations
-python/improve-efficiency
-python/examples
+need-what-to-understand
+object-model
+output-object-model
+execute-script
+read
+write
+exceptions
+computations
+improve-efficiency
+examples
 ```
