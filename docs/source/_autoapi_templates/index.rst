@@ -1,5 +1,5 @@
-abqpy Reference
-===============
+API References
+==============
 
 This page contains auto-generated API reference documentation [#f1]_.
 
