@@ -57,10 +57,11 @@ autoapi/index
 ```{toctree}
 :caption: Dassault Systèmes
 :maxdepth: 1
+:hidden:
 
 Dassault Systèmes <https://www.3ds.com/>
-Abaqus <https://www.3ds.com/products-services/simulia/products/abaqus/>
 SIMULA User Assistance <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all>
+Abaqus <https://www.3ds.com/products-services/simulia/products/abaqus/>
 ```
 
 # Indices and tables
