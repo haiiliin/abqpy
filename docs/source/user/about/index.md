@@ -15,7 +15,7 @@ This section provides an introduction to the Abaqus Scripting Interface.
 :caption: Contents
 :maxdepth: 1
 
-about/interface
-about/interact
-about/examples
+interface
+interact
+examples/index
 ```

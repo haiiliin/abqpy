@@ -6,19 +6,19 @@ The following sections describe the architecture of an output database and how t
 :caption: Contents
 :maxdepth: 1
 
-cpp/about
-cpp/need-what-access
-cpp/style
-cpp/object-model
-cpp/output-object-model
-cpp/compile-link
-cpp/access
-cpp/architecture
-cpp/utility
-cpp/read
-cpp/write
-cpp/exceptions
-cpp/computations
-cpp/improve-efficiency
-cpp/examples
+about
+need-what-access
+style
+object-model
+output-object-model
+compile-link
+access
+architecture
+utility
+read
+write
+exceptions
+computations
+improve-efficiency
+examples
 ```
