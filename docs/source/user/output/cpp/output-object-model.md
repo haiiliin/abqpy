@@ -10,9 +10,9 @@ An output database generated from an Abaqus analysis contains both model and res
 
   Results data describe the results of your analysis; for example, stresses, strains, and displacements. You use output requests to configure the contents of the results data. Results data can be either field output data or history output data.
 
-:::{note}
+```{note}
 For a description of object models, see {doc}`/user/python/use-scripts/object-model`.
-:::
+```
 
 You can find more information on the format of the output database in [Output to the Output Database](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEOUTRefMap/simaout-m-dboutput-sb.htm?contextscope=all#simaout-m-dboutput-sb).
 
@@ -74,12 +74,12 @@ Abaqus does not write all the model data to the output database; for example, yo
 
 (odb-model-nls-cpp)=
 
-:::{figure} /images/odb-model-nls.png
+```{figure} /images/odb-model-nls.png
 :align: center
 :width: 100%
 
 The model data object model.
-:::
+```
 
 ## Results data
 
@@ -99,12 +99,12 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   (odb-field-nls-1)=
 
-  :::{figure} /images/odb-field-nls.png
+  ```{figure} /images/odb-field-nls.png
   :align: center
   :width: 100%
 
   The field output data object model.
-  :::
+  ```
 
 - **History output**
 
@@ -121,9 +121,9 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   (odb-history-nls-2)=
 
-  :::{figure} /images/odb-history-nls.png
+  ```{figure} /images/odb-history-nls.png
   :align: center
   :width: 100%
 
   The history output data.
-  :::
+  ```
