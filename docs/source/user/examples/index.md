@@ -28,8 +28,8 @@ where **scriptName.py** is the name of the script (see [Fetching sample input fi
 :caption: Contents
 :maxdepth: 1
 
-examples/cantilever
-examples/plot
-examples/sensitivity
-examples/settings
+cantilever
+plot
+sensitivity
+settings
 ```

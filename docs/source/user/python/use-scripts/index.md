@@ -6,13 +6,13 @@ This section discusses how you can use the Abaqus Scripting Interface to control
 :caption: Contents
 :maxdepth: 1
 
-use-scripts/object-model
-use-scripts/modify-objects
-use-scripts/sequences
-use-scripts/namespace
-use-scripts/specify-viewport
-use-scripts/specify-region
-use-scripts/user-input
-use-scripts/interact
-use-scripts/environment-file
+object-model
+modify-objects
+sequences
+namespace
+specify-viewport
+specify-region
+user-input
+interact
+environment-file
 ```
