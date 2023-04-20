@@ -6,12 +6,12 @@ For example, consider the object model for field output data shown in {numref}`o
 
 (odb-overview-nls-1)=
 
-:::{figure} /images/odb-overview-nls.png
+```{figure} /images/odb-overview-nls.png
 :align: center
 :width: 100%
 
 The output database object model.
-:::
+```
 
 The object model translates directly to the structure of an Abaqus C++ API command. For example, the following command refers to a Frame object in the sequence of frames contained in an OdbStep object:
 
