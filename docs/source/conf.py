@@ -91,7 +91,6 @@ myst_enable_extensions = [
 
 # AutoAPI configuration
 autoapi_dirs = ["../../src/abqpy"]
-autoapi_template_dir = "_autoapi_templates"
 autoapi_ignore = ["*_version.py"]
 autoapi_options = [
     'members', 

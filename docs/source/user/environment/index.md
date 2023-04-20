@@ -6,7 +6,7 @@ This section describes the **Abaqus Python development environment** (PDE). The 
 :caption: Contents
 :maxdepth: 1
 
-environment/about
-environment/pde-basics
-environment/use-pde
+about
+pde-basics
+use-pde
 ```
