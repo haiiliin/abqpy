@@ -1,4 +1,4 @@
-# User's Guide
+# Abaqus Scripting User's Guide
 
 The Abaqus Scripting User's Guide takes you through the process of understanding the Python programming language and the Abaqus Scripting Interface so that you can write your own programs. It also describes how you use the Abaqus Scripting Interface and the C++ application programming interface (API) to access an Abaqus output database.
 
