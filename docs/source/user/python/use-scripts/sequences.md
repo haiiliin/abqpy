@@ -6,10 +6,10 @@ For example, consider the case where the user is creating an elastic material an
 
 (cmd-int-table-editor-nls)=
 
-:::{figure} /images/cmd-int-table-editor-nls.png
+```{figure} /images/cmd-int-table-editor-nls.png
 :align: center
 :width: 50%
-:::
+```
 
 The equivalent Abaqus Scripting Interface command is
 

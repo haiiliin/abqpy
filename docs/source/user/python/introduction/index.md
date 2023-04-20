@@ -8,11 +8,11 @@ The Python language is used throughout Abaqus, not only in the Abaqus Scripting 
 :caption: Contents
 :maxdepth: 1
 
-introduction/python-abaqus
-introduction/python-resources
-introduction/python-interpreter
-introduction/oop-basics
-introduction/python-basics
-introduction/programming
-introduction/further-reading
+python-abaqus
+python-resources
+python-interpreter
+oop-basics
+python-basics
+programming
+further-reading
 ```
