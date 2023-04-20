@@ -1,4 +1,4 @@
-# API References
+# Abaqus Class References
 
 Before you can access the Abaqus model and output database, you need to import some modules. In most cases, `abaqus`, `abaqusConstants`, and `driverUtils` are required:
 

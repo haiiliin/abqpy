@@ -4,12 +4,12 @@ Namespace is an important concept for the Abaqus Scripting Interface programmer.
 
 (acl-all-schematic-nls-2)=
 
-:::{figure} /images/acl-all-schematic-nls.png
+```{figure} /images/acl-all-schematic-nls.png
 :align: center
 :width: 50%
 
 The Abaqus Scripting Interface and the Abaqus/CAE kernel.
-:::
+```
 
 Abaqus Scripting Interface commands are issued to the Python interpreter from either the GUI, the command line interface, or a script. Abaqus/CAE executes these commands in one of two namespaces.
 

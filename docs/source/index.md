@@ -13,10 +13,10 @@ It also provides some simple APIs to execute the Abaqus commands so that you can
 Python script to build the model, submit the job and extract the output data in just one
 Python script, even without opening the Abaqus/CAE.
 
-:::{note}
+```{note}
 The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you
 must write codes that are compatiable with Python 2 and Python 3.
-:::
+```
 
 ## Other links for this project
 
@@ -26,18 +26,30 @@ must write codes that are compatiable with Python 2 and Python 3.
 - Read the Docs: <https://readthedocs.org/projects/abqpy>
 - Bug report: <https://github.com/haiiliin/abqpy/issues>
 
-## Documentation
+## Table of Contents
 
 ```{toctree}
-:caption: Contents
+:caption: User Manual
 :maxdepth: 1
 
 getting_started
-examples/index
-tutorials
-user
-cli
 envvars
+cli
+```
+
+```{toctree}
+:caption: Tutorials & Examples
+:maxdepth: 1
+
+tutorials
+examples/index
+```
+
+```{toctree}
+:caption: References
+:maxdepth: 1
+
+user/index
 reference/index
 autoapi/index
 ```

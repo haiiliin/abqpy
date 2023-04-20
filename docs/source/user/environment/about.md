@@ -8,12 +8,12 @@ It is intended primarily for use with scripts that use the Abaqus/CAE graphical 
 
 (cmd-pde-nls)=
 
-:::{figure} /images/cmd-pde-nls.png
+```{figure} /images/cmd-pde-nls.png
 :align: center
 :width: 100%
 
 The Abaqus PDE.
-:::
+```
 
 The PDE controls allow you to complete the following tasks:
 
