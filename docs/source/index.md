@@ -49,7 +49,7 @@ examples/index
 :caption: References
 :maxdepth: 1
 
-user
+user/index
 reference/index
 autoapi/index
 ```
