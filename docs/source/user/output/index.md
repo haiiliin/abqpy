@@ -10,6 +10,6 @@ The C++ commands that read and write data from an output database are described 
 :caption: Contents
 :maxdepth: 1
 
-output/python
-output/cpp
+python/index
+cpp/index
 ```
