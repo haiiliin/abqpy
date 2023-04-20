@@ -2,7 +2,9 @@
 
 ## `ABAQUS_BAT_PATH`
 
-The file path of the `abaqus` command line batch file (`.bat`).
+The file path of the `abaqus` command line batch file (`.bat`). Only set this environment variable if `abaqus` is not 
+the default Abaqus command line executable. This variable is used by `abqpy` to run the Abaqus command line
+procedure inside the Python interpreter environment where it is installed.
 
 ## `ABAQUS_COMMAND_OPTIONS`
 

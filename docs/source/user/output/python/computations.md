@@ -144,9 +144,9 @@ The following rules apply to the transformation of results:
 
 - The component directions 1, 2, and 3 of the transformed results will correspond to the system directions **X**, **Y**, and **Z** for rectangular coordinate systems; $R$, $\theta$, and **Z** for cylindrical coordinate systems; and $R$, $\theta$, and $\phi$ for spherical coordinate systems.
 
-  :::{note}
+  ```{note}
   Stress results for three-dimensional continuum elements transformed into a cylindrical system would have the hoop stress in S22, which is consistent with the coordinate system axis but inconsistent with the stress state for a three-dimensional axisymmetric elements having hoop stress in S33.
-  :::
+  ```
 
 - When you are transforming a tensor, the location or integration point always takes into account the deformation. The location of the coordinate system depends on the model, as follows:
 
