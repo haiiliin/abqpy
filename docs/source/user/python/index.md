@@ -6,7 +6,7 @@ This section provides an introduction to the Python programming language and a d
 :caption: Contents
 :maxdepth: 1
 
-python/introduction
-python/python-abaqus
-python/use-scripts
+introduction/index
+python-abaqus/index
+use-scripts/index
 ```

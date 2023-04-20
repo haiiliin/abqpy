@@ -10,10 +10,10 @@ This section is intended as a programmer's guide to using the Abaqus Scripting I
 :caption: Contents
 :maxdepth: 1
 
-python-abaqus/executing
-python-abaqus/style
-python-abaqus/types
-python-abaqus/oop
-python-abaqus/errors
-python-abaqus/extending
+executing
+style
+types
+oop
+errors
+extending
 ```

@@ -6,7 +6,7 @@ Programming with the Abaqus Scripting Interface is straightforward and logical. 
 :caption: Contents
 :maxdepth: 1
 
-examples/create-part
-examples/read-output
-examples/summary
+create-part
+read-output
+summary
 ```
