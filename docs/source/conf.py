@@ -67,6 +67,7 @@ extensions = [
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
     'sphinx_design',
+    'sphinx_disqus.disqus',
     'sphinx_gallery.gen_gallery',
     'sphinx_togglebutton',
     'sphinx_toolbox.confval',
@@ -77,6 +78,9 @@ extensions = [
     'automembers',
     'autoapi.extension',
 ]
+
+# sphinx-disqus configuration
+disqus_shortname = 'docs-abqpy-com'
 
 # automembers configuration
 automembers_autodoc_options = [

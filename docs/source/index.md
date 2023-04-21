@@ -64,8 +64,19 @@ SIMULA User Assistance <https://help.3ds.com/2023/English/DSSIMULIA_Established/
 Abaqus <https://www.3ds.com/products-services/simulia/products/abaqus/>
 ```
 
+```{toctree}
+:caption: Policy & License
+:maxdepth: 1
+:hidden:
+
+policy
+```
+
 # Indices and tables
 
 - {ref}`genindex`
 - {ref}`modindex`
 - {ref}`search`
+
+```{disqus}
+```
