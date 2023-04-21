@@ -78,7 +78,7 @@ policy
 - {ref}`modindex`
 - {ref}`search`
 
-# Comments
+## Comments
 
 ```{disqus}
 ```
