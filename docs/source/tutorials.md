@@ -100,7 +100,6 @@ part.Surface(name='surface-top',
 We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances：
 
 ```Python
-model.rootAssembly.DatumCsysByDefault(CARTESIAN)
 model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
 ```
 
@@ -119,7 +118,7 @@ material.Elastic(table=((1000, 0.2), ))
 material.Density(table=((2500, ), ))
 ```
 
-Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the material to the section ({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):
+Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the section to the part region ({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):
 
 ```Python
 model.HomogeneousSolidSection(name='section', material='material', thickness=None)
@@ -210,32 +209,6 @@ We can use {py:class}`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus mod
 ```Python
 mdb.saveAs('compression.cae')
 ```
-
-### How the model is submitted to Abaqus?
-
-It should be noted that when we execute all the above codes, the Python script have to not be sent to the Python interpreter. Instead, we have to call the Abaqus kernel, using the command like this:
-
-```sh
-abaqus cae noGUI=script.py
-```
-
-In order to make it simple, this has been done inside the {py:mod}`~abaqus` module, in the {py:meth}`~abqpy.abaqus.run` function:
-
-```Python
-def run():
-    abaqus = 'abaqus'
-    if 'ABAQUS_BAT_PATH' in os.environ.keys():
-        abaqus = os.environ['ABAQUS_BAT_PATH']
-
-    filePath = os.path.abspath(__main__.__file__)
-    args = " ".join(sys.argv[1:])
-
-    os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
-
-    sys.exit(0)
-```
-
-This function is called when we import the {py:mod}`~abaqus` module, with the line `from abaqus import *`. So, we have to import the {py:mod}`~abaqus` module to submit the model when we use `abqpy` to build an Abaqus model. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints.
 
 ### The whole script
 
