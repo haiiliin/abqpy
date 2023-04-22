@@ -32,4 +32,6 @@ Path commands are used to define a line through your model by specifying a serie
     .. automembers:: abaqus.PathAndProbe
         :recursive:
         :exclude: PathSession, FreeBody
+
+    .. placeholder for empty members
 ```

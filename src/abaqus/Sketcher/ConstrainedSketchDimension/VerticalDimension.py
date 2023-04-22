@@ -19,7 +19,7 @@ class VerticalDimension(ConstrainedSketchDimension):
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
-        dimension controls the vertical distance along the **Y**-axis between two vertices.
+        dimension controls the vertical distance along the **Y** axis between two vertices.
 
         .. note::
             This function can be accessed by::

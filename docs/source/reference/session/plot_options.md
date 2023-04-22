@@ -10,4 +10,6 @@ Plot options commands are used to control the appearance of plots in the Visuali
 
     .. automembers:: abaqus.PlotOptions
         :recursive:
+
+    .. placeholder for empty members
 ```

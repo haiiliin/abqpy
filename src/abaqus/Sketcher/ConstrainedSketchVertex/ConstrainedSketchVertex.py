@@ -15,7 +15,7 @@ class ConstrainedSketchVertex:
             mdb.models[name].sketches[name].vertices[i][i]
     """
 
-    #: A tuple of Floats specifying the*X*-, **Y**-, and **Z**-coordinates of the sketch vertex.
+    #: A tuple of Floats specifying the*X*-, **Y**, and **Z** coordinates of the sketch vertex.
     coords: Optional[float] = None
 
     @abaqus_method_doc

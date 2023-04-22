@@ -39,7 +39,7 @@ class ConstrainedSketchImageOptions:
             A Boolean specifying whether an image should be displayed in the sketcher background.
             The default value is OFF.
         origin
-            A pair of Floats specifying the **X**- and **Y**-offsets in millimeters from the lower-left
+            A pair of Floats specifying the **X**  and **Y** offsets in millimeters from the lower-left
             corner of the viewport. The default value is (0, 0).
         xScale
             A Float specifying the scale applied to the image width. The default value is 1.0.When

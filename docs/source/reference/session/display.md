@@ -22,4 +22,6 @@ Display group commands are used to select a subset of the entities displayed in 
     .. automembers:: abaqus.DisplayGroup
         :recursive:
         :exclude: DisplayGroupSession
+
+    .. placeholder for empty members
 ```

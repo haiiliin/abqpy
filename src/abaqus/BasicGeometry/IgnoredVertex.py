@@ -21,5 +21,5 @@ class IgnoredVertex:
     #: An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.
     index: Optional[int] = None
 
-    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the vertex.
+    #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the vertex.
     pointOn: Optional[float] = None
