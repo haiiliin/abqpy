@@ -47,7 +47,7 @@ class ViewportBase(_OptionsBase):
     #: A String specifying the repository key.
     name: str
 
-    #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
+    #: A pair of Floats specifying the **X**  and **Y** coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the viewport. The default origin is (0, 0).
     origin: Sequence[float] = (0.0, 0.0)
 
@@ -316,12 +316,12 @@ class ViewportBase(_OptionsBase):
     #: when **displayMode** = OVERLAY.
     visibleLayers: tuple = ()
 
-    #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
+    #: A pair of Floats specifying the **X**  and **Y** coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
     currentOrigin: Sequence[float] = ()
 
-    #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
+    #: A pair of Floats specifying the **X**  and **Y** coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
@@ -370,7 +370,7 @@ class ViewportBase(_OptionsBase):
         name
             A String specifying the repository key.
         origin
-            A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
+            A pair of Floats specifying the **X**  and **Y** coordinates in millimeters in the canvas
             coordinate system of the lower left corner of the viewport. The default origin is (0,
             0).
         width
@@ -405,8 +405,8 @@ class ViewportBase(_OptionsBase):
 
         Raises
         ------
-        SystemError: the current viewport may not be deleted
-            If the user attempts to delete the only viewport.
+        SystemError
+            the current viewport may not be deleted, If the user attempts to delete the only viewport.
         RangeError: width must be a Float in the range: 30 <= width <= **maxWidth**
             If **width** is out of range.
         RangeError: height must be a Float in the range: 30 <= width <= **maxHeight**
@@ -558,16 +558,16 @@ class ViewportBase(_OptionsBase):
 
     @abaqus_method_doc
     def offset(self, deltaX: float = 0, deltaY: float = 0):
-        """This method modifies the current **X**-*Y* location of the viewport by the specified
+        """This method modifies the current **X** *Y* location of the viewport by the specified
         distance.
 
         Parameters
         ----------
         deltaX
-            A Float specifying the offset in millimeters of the **X**-component of the viewport
+            A Float specifying the offset in millimeters of the **X** component of the viewport
             origin. The default value is 0.
         deltaY
-            A Float specifying the offset in millimeters of the **Y**-component of the viewport
+            A Float specifying the offset in millimeters of the **Y** component of the viewport
             origin. The default value is 0.
         """
         # TODO: implement this method

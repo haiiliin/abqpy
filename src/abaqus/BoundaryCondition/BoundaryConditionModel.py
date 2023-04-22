@@ -1901,7 +1901,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
+        """This method creates a TypeBC object that specifies symmetry about the **X** axis.
 
         .. note::
             This function can be accessed by::
@@ -1950,7 +1950,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
+        """This method creates a TypeBC object that specifies symmetry about the **Y** axis.
 
         .. note::
             This function can be accessed by::
@@ -1999,7 +1999,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
+        """This method creates a TypeBC object that specifies symmetry about the **Z** axis.
 
         .. note::
             This function can be accessed by::
@@ -2048,7 +2048,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
+        """This method creates a TypeBC object that specifies antisymmetry about the **X** axis.
 
         .. note::
             This function can be accessed by::
@@ -2097,7 +2097,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
+        """This method creates a TypeBC object that specifies antisymmetry about the **Y** axis.
 
         .. note::
             This function can be accessed by::
@@ -2146,7 +2146,7 @@ class BoundaryConditionModel(ModelBase):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
-        """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
+        """This method creates a TypeBC object that specifies antisymmetry about the **Z** axis.
 
         .. note::
             This function can be accessed by::

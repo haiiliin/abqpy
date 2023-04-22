@@ -80,12 +80,12 @@ class ProbeOptions:
     #: is valid when **probeObject** = XYPlot. The default value is ON.
     legend: Boolean = ON
 
-    #: A Boolean specifying whether to display the **x**-coordinate value of the point on the
+    #: A Boolean specifying whether to display the **X** coordinate value of the point on the
     #: curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
     #: ON.
     xValue: Boolean = ON
 
-    #: A Boolean specifying whether to display the **y**-coordinate value of the point on the
+    #: A Boolean specifying whether to display the **Y** coordinate value of the point on the
     #: curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
     #: ON.
     yValue: Boolean = ON
@@ -194,11 +194,11 @@ class ProbeOptions:
             A Boolean specifying whether to display the legend for a curve being probed. This member
             is valid when **probeObject** = XYPlot. The default value is ON.
         xValue
-            A Boolean specifying whether to display the **x**-coordinate value of the point on the
+            A Boolean specifying whether to display the **X** coordinate value of the point on the
             curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
             ON.
         yValue
-            A Boolean specifying whether to display the **y**-coordinate value of the point on the
+            A Boolean specifying whether to display the **Y** coordinate value of the point on the
             curve being probed. This member is valid when **probeObject** = XYPlot. The default value is
             ON.
         sequenceID

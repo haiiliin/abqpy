@@ -21,7 +21,9 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 
 .. toggle::
 
-    .. automembers:: abaqus.Annotation
+    .. automembers:: abaqus.Canvas
         :recursive:
         :exclude: Viewport
+
+    .. placeholder for empty members
 ```

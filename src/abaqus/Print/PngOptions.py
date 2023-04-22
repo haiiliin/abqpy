@@ -43,8 +43,9 @@ class PngOptions(_OptionsBase):
 
         Raises
         ------
-        RangeError: imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range
-        (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)
+        RangeError
+            imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range
+            (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)
             If either the width or height arguments of **imageSize** are out of range (where
             **minWidth** and **minHeight** are the number of pixels corresponding to approximately 10 mm
             for a given display and **maxWidth** and **maxHeight** are the largest allowable number of
