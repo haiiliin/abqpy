@@ -10,6 +10,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
     :show-inheritance:
 
     .. autoclasstoc::
+
 ```
 
 ```{eval-rst}
@@ -18,6 +19,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
     :show-inheritance:
 
     .. autoclasstoc::
+
 ```
 
 ## Other Classes
@@ -29,4 +31,6 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
     .. automembers:: abaqus.Part
         :recursive:
         :exclude: PartModel, PartBase
+
+    .. placeholder for empty members
 ```

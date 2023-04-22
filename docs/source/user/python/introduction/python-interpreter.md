@@ -1,11 +1,3 @@
----
-substitutions:
-  afxI_commandLine: |-
-    ```{image} /images/afxI_commandLine.png
-    :height: 20
-    ```
----
-
 # Using the Python interpreter
 
 Python is an interpreted language. This means you can type a statement and view the results without having to compile and link your scripts. Experimenting with Python statements is quick and easy. You are encouraged to try the examples in these tutorials on your workstation, and you should feel free to experiment with your own variations. To run the Python interpreter, do one of the following:
@@ -23,7 +15,7 @@ Python is an interpreted language. This means you can type a statement and view 
 
 - You can also use the Python interpreter provided in the command line interface by Abaqus/CAE. The command line is at the bottom of the Abaqus/CAE window and is shared with the message area. Abaqus/CAE displays the Python >>> prompt in the command line interface.
 
-  Click {{ afxI_commandLine }} in the lower left corner of the main window to display the command line interface. You may want to drag the handle at the top of the command line interface to increase the number of lines displayed.
+  Click ![afxI_commandLine](/images/afxI_commandLine.png) in the lower left corner of the main window to display the command line interface. You may want to drag the handle at the top of the command line interface to increase the number of lines displayed.
 
   ```{image} /images/cmd-int-cae.png
   :align: center

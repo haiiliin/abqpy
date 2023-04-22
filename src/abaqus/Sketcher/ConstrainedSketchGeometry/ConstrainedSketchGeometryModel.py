@@ -78,7 +78,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Raises
         ------
-        If incompatible data are given, the second endpoint is ignored
+        Exception
+            If incompatible data are given, the second endpoint is ignored
         """
         ...
 
@@ -227,7 +228,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Raises
         ------
-        Range Error: cannot construct the Fillet specified
+        Range Error
+            cannot construct the Fillet specified,
             If the radius given cannot be used to create a fillet between the two curves given.
         """
         ...
