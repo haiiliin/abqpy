@@ -23,4 +23,6 @@ The Python ODB API commands are used to read and write data from an output datab
     .. automembers:: abaqus.Odb
         :recursive:
         :exclude: Odb
+
+    .. placeholder for empty members
 ```
