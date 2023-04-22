@@ -289,7 +289,8 @@ class ConstraintModel(ModelBase):
 
         Raises
         ------
-        If **terms** does not contain more than one entry, Equation must have two or more terms.
+        Exception
+            If **terms** does not contain more than one entry, Equation must have two or more terms.
         """
         self.constraints[name] = constraint = Equation(name, terms)
         return constraint

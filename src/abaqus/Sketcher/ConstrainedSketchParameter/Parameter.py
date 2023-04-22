@@ -15,8 +15,6 @@ class Parameter(ConstrainedSketchParameter):
 
                 mdb.models[name].sketches[name].Parameter
 
-        ----------
-
         Parameters
         ----------
         name

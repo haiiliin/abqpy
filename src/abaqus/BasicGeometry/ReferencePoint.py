@@ -54,8 +54,8 @@ class ReferencePoint:
         ----------
         point
             A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum object specifying a reference point.
-            **point** can also be a sequence of three Floats representing the **X**-, **Y**-, and
-            **Z**-coordinates of the point.
+            **point** can also be a sequence of three Floats representing the **X**, **Y**, and
+            **Z** coordinates of the point.
         instanceName
             Used internally by the input file writer.
 

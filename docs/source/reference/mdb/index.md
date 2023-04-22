@@ -33,4 +33,6 @@ edit_mesh
    .. automembers:: abaqus.Mdb
       :recursive:
       :exclude: Mdb
+
+   .. placeholder for empty members
 ```
