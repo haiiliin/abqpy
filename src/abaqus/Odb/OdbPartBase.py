@@ -289,8 +289,8 @@ class OdbPartBase:
 
         Raises
         ------
-        OdbError: Invalid element label
-            If no element with the specified label exists.
+        OdbError
+            Invalid element label, If no element with the specified label exists.
         """
         ...
 
@@ -310,8 +310,8 @@ class OdbPartBase:
 
         Raises
         ------
-        OdbError: Invalid node label
-            If no node with the specified label exists.
+        OdbError
+            Invalid node label, If no node with the specified label exists.
         """
         ...
 

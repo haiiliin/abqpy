@@ -22,4 +22,6 @@ A connector describes the relative motions between two points. A connector also 
     .. automembers:: abaqus.Connector
         :recursive:
         :exclude: ConnectorSection
+
+    .. placeholder for empty members
 ```

@@ -35,7 +35,7 @@ class Cell:
     #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the cell.
     pointOn: Optional[float] = None
 
