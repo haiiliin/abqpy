@@ -350,7 +350,7 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def PartFromExtrude2DMesh(self, name: str, part: "PartBase", depth: float, elementSize: float):
         """This method creates a Part object by extruding an existing two-dimensional orphan mesh
-        Part object in the positive **Z**-direction and places it in the parts repository.
+        Part object in the positive **Z** direction and places it in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -465,12 +465,15 @@ class PartBase(PartFeature):
         part: Part
             A Part object
 
-            - If the ACIS file is corrupt:
-              PartError: the file is corrupt
-            - If the dimensionality does not correspond to what is found in the ACIS file:
-              PartError: dimensionality does not match the contents of the file
-            - If the type does not correspond to what is found in the ACIS file:
-              PartError: type does not match the contents of the file
+        Raises
+        ------
+        PartError
+            If the ACIS file is corrupt
+        PartError
+            the file is corrupt, If the dimensionality does not correspond to what is found in the ACIS file
+        PartError
+            type does not match the contents of the file, dimensionality does not match the contents of the file, 
+            If the type does not correspond to what is found in the ACIS file
         """
         ...
 
@@ -586,7 +589,7 @@ class PartBase(PartFeature):
             - If **point1** and **point2** are coincident:
               Mirror plane director has zero length.
             - If the specified part is two-dimensional and the plane is not parallel to the
-              **Z**-axis:
+              **Z** axis:
               Mirror plane must be parallel to Z axis for 2D parts
         """
         ...
@@ -699,21 +702,28 @@ class PartBase(PartFeature):
         part: Part
             A Part object
 
-            - If the output database contains elements of more than one dimensionality or type:
-              File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and
-              3D elements.File contains both rigid and deformable elements.
-            - If more than one part is found on the output database:
-              PartError: importing of more than one part is not currently supported
-            - If the output database does not contain any valid results for the specified step:
-              Error. File does not contain any valid frames.
-            - If the specified step and frame do not contain any displacements:
-              Error. Specified frame does not contain nodal displacements.
-            - If the specified element set is not found on the output database:
-              Error. Specified element set is not defined in the ODB.
-            - If the step number is invalid:
-              OdiError: Invalid step index: i. Available step indices: 0 - j.
-            - If the frame number is invalid:
-              OdiError: Invalid frame index: i. Available frame indices: 0 - j.
+        Raises
+        ------
+        PartError
+            If the output database contains elements of more than one dimensionality or type:
+            File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and
+            3D elements.File contains both rigid and deformable elements.
+            If more than one part is found on the output database:
+        Error
+            File does not contain any valid frames.
+            importing of more than one part is not currently supported, - If the output database does not contain any valid results for the specified step:
+        Error
+            Specified frame does not contain nodal displacements.
+            If the specified step and frame do not contain any displacements:
+        Error
+            Specified element set is not defined in the ODB.
+            If the specified element set is not found on the output database:
+        OdiError
+            Invalid step index: i. Available step indices: 0 - j.
+            If the step number is invalid:
+        OdiError
+            Invalid frame index: i. Available frame indices: 0 - j.
+            If the frame number is invalid:
         """
         ...
 
@@ -749,18 +759,26 @@ class PartBase(PartFeature):
         part: Part
             A Part object
 
-            - If the specified part is not an orphan mesh part:
-              Cannot reduce dimension of a geometric part.
-            - If the specified part is not three-dimensional:
-              Cannot reduce dimension of a 2D part.
-            - If the specified part is a rigid body:
-              Cannot change dimension of a rigid body.
-            - If **point1** and **point2** are coincident:
-              Cutting plane director has zero length.
-            - If **point3** projects onto **point1**:
-              Local axis point projects to origin.
-            - If no elements are cut by the specified plane:
-              Cannot reduce part dimension.
+        Raises
+        ------
+        Exception
+            If the specified part is not an orphan mesh part,
+            Cannot reduce dimension of a geometric part.
+        Exception
+            If the specified part is not three-dimensional,
+            Cannot reduce dimension of a 2D part.
+        Exception
+            If the specified part is a rigid body,
+            Cannot change dimension of a rigid body.
+        Exception
+            If **point1** and **point2** are coincident,
+            Cutting plane director has zero length.
+        Exception
+            If **point3** projects onto **point1**,
+            Local axis point projects to origin.
+        Exception
+            If no elements are cut by the specified plane,
+            Cannot reduce part dimension.
         """
         ...
 
@@ -788,14 +806,19 @@ class PartBase(PartFeature):
         part: Part
             A Part object
 
-            - If the specified part is not a substructure:
-              File specified does not contain a substructure.
-            - If the specified part already exists:
-              A part with the same name already exists.
-            - If the substructure cannot be imported:
-              The output database is missing nodes and elements.Nested substructures are not
-              supported.The substructure sim file was generated using a version that is different from
-              the current version.
+        Raises
+        ------
+        Exception
+            If the specified part is not a substructure,
+            File specified does not contain a substructure.
+        Exception
+            If the specified part already exists,
+            A part with the same name already exists.
+        Exception
+            If the substructure cannot be imported,
+            The output database is missing nodes and elements.Nested substructures are not
+            supported.The substructure sim file was generated using a version that is different from
+            the current version.
         """
         ...
 
@@ -1027,7 +1050,7 @@ class PartBase(PartFeature):
         depending on what which one was imported.
 
         Returns
-        -------`
+        -------
         paths: tuple
             A sequence containing the path to the associated CAD part and assembly file
         """
@@ -1067,7 +1090,7 @@ class PartBase(PartFeature):
         Returns
         -------
         centroid: Sequence[float]
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
 
             - The location of the centroid of a given face or group of faces.
@@ -1243,71 +1266,73 @@ class PartBase(PartFeature):
         -------
         properties: dict
             A Dictionary object with the following items:
-            **area**: None or a Float specifying the sum of the area of the specified faces. The area
-            is computed only for one side for shells.
-            **areaCentroid**: None or a tuple of three Floats representing the coordinates of the area
-            centroid.
-            **volume**: None or a Float specifying the volume of the specified regions.
-            **volumeCentroid**: None or a tuple of three Floats representing the coordinates of the
-            volume centroid.
-            **massFromMassPerUnitSurfaceArea**: None or a Float specifying the mass due to mass per
-            unit surface area.
-            **mass**: None or a Float specifying the mass of the specified regions. It is the total
-            mass and includes mass from quantities such as mass per unit surface area.
-            **centerOfMass**: None or a tuple of three Floats representing the coordinates of the
-            center of mass.
-            **momentOfInertia**: None or a tuple of six Floats representing the moments of inertia
-            about the center of mass or about the point specified.
-            **warnings**: A tuple of SymbolicConstants representing the problems encountered while
-            computing the mass properties. Possible SymbolicConstants are:
-            UNSUPPORTED_ENTITIES: Some unsupported entities exist in the specified region. The mass
-            properties are computed only for beams, trusses, shells, solids, point and
-            non-structural mass elements and rotary inertia elements. The mass properties are not
-            computed for axisymmetric elements, springs, connectors, gaskets or any other elements.
-            MISSING_THICKNESS: For some regions, the section definitions are missing thickness
-            values.
-            ZERO_THICKNESS: For some regions, the section definitions have a zero thickness value.
-            VARIABLE_THICKNESS: The nodal thickness or field thickness specified for some regions
-            has been ignored.
-            NON_APPLICABLE_THICKNESS: For some regions, the thickness value is not applicable to the
-            corresponding sections specified on the regions.
-            MISSING_DENSITY: For some regions, the section definitions are missing material density
-            values.
-            MISSING_MATERIAL_DEFINITION: For some regions, the material definition is missing.
-            ZERO_DENSITY: For some regions, the section definitions have a zero material density
-            value.
-            UNSUPPORTED_DENSITY: For some regions, either a negative material density or a
-            temperature dependent density has been specified, or the material value is missing for
-            one or more plies in the composite section.
-            SHELL_OFFSETS: For shells, this method does not account for any offsets specified.
-            MISSING_SECTION_DEFINITION: For some regions, the section definition is missing.
-            UNSUPPORTED_SECTION_DEFINITION: The section definition provided for some regions is not
-            supported.
-            REINFORCEMENTS: This method does not account for any reinforcements specified on the
-            model.
-            SMEARED_PROPERTIES: For regions with composite section assignments, the density is
-            smeared across the thickness. The volume centroid and center of mass computations for a
-            composite shell use a lumped mass approach where the volume and mass is assumed to be
-            lumped in the plane of the shell. As a result of these approximations the volume
-            centroid, center of mass and moments of inertia may be slightly inaccurate for regions
-            with composite section assignments.
-            UNSUPPORTED_NON_STRUCTURAL_MASS_ENTITIES: This method does not account for any
-            non-structural mass on wires.
-            INCORRECT_MOMENT_OF_INERTIA: For geometry regions with non-structural mass per volume,
-            the non-structural mass is assumed to be a point mass at the centroid of the regions.
-            Thus, the moments of inertia may be inaccurate as the distribution of the non-structural
-            mass is not accounted for. Use the mesh for accurately computing the moments of inertia.
-            MISSING_BEAM_ORIENTATIONS: For some regions with beam section assignments, the beam
-            section orientations are missing.
-            UNSUPPORTED_BEAM_PROFILES: This method supports the Box, Pipe, Circular, Rectangular,
-            Hexagonal, Trapezoidal, I, L, T, Arbitrary, and Tapered beam profiles. Any other beam
-            profile is not supported.
-            TAPERED_BEAM_MI: Moment of inertia calculations for tapered beams are not accurate.
-            SUBSTRUCTURE_INCORRECT_PROPERTIES: The user assigned density and thickness is not
-            considered for substructures.
-            UNSUPPORTED_NON_STRUCTURAL_MASS_PROPORTIONAL: Non-structural mass with Mass Proportional
-            distribution is not supported. Results are computed using Volume Proportional
-            distribution.
+
+            - **area**: None or a Float specifying the sum of the area of the specified faces. The area
+              is computed only for one side for shells.
+            - **areaCentroid**: None or a tuple of three Floats representing the coordinates of the area
+              centroid.
+            - **volume**: None or a Float specifying the volume of the specified regions.
+            - **volumeCentroid**: None or a tuple of three Floats representing the coordinates of the
+              volume centroid.
+            - **massFromMassPerUnitSurfaceArea**: None or a Float specifying the mass due to mass per
+              unit surface area.
+            - **mass**: None or a Float specifying the mass of the specified regions. It is the total
+              mass and includes mass from quantities such as mass per unit surface area.
+            - **centerOfMass**: None or a tuple of three Floats representing the coordinates of the
+              center of mass.
+            - **momentOfInertia**: None or a tuple of six Floats representing the moments of inertia
+              about the center of mass or about the point specified.
+            - **warnings**: A tuple of SymbolicConstants representing the problems encountered while
+              computing the mass properties. Possible SymbolicConstants are:
+
+            - UNSUPPORTED_ENTITIES: Some unsupported entities exist in the specified region. The mass
+              properties are computed only for beams, trusses, shells, solids, point and
+              non-structural mass elements and rotary inertia elements. The mass properties are not
+              computed for axisymmetric elements, springs, connectors, gaskets or any other elements.
+            - MISSING_THICKNESS: For some regions, the section definitions are missing thickness
+              values.
+            - ZERO_THICKNESS: For some regions, the section definitions have a zero thickness value.
+            - VARIABLE_THICKNESS: The nodal thickness or field thickness specified for some regions
+              has been ignored.
+            - NON_APPLICABLE_THICKNESS: For some regions, the thickness value is not applicable to the
+              corresponding sections specified on the regions.
+            - MISSING_DENSITY: For some regions, the section definitions are missing material density
+              values.
+            - MISSING_MATERIAL_DEFINITION: For some regions, the material definition is missing.
+            - ZERO_DENSITY: For some regions, the section definitions have a zero material density
+              value.
+            - UNSUPPORTED_DENSITY: For some regions, either a negative material density or a
+              temperature dependent density has been specified, or the material value is missing for
+              one or more plies in the composite section.
+            - SHELL_OFFSETS: For shells, this method does not account for any offsets specified.
+            - MISSING_SECTION_DEFINITION: For some regions, the section definition is missing.
+            - UNSUPPORTED_SECTION_DEFINITION: The section definition provided for some regions is not
+              supported.
+            - REINFORCEMENTS: This method does not account for any reinforcements specified on the
+              model.
+            - SMEARED_PROPERTIES: For regions with composite section assignments, the density is
+              smeared across the thickness. The volume centroid and center of mass computations for a
+              composite shell use a lumped mass approach where the volume and mass is assumed to be
+              lumped in the plane of the shell. As a result of these approximations the volume
+              centroid, center of mass and moments of inertia may be slightly inaccurate for regions
+              with composite section assignments.
+            - UNSUPPORTED_NON_STRUCTURAL_MASS_ENTITIES: This method does not account for any
+              non-structural mass on wires.
+            - INCORRECT_MOMENT_OF_INERTIA: For geometry regions with non-structural mass per volume,
+              the non-structural mass is assumed to be a point mass at the centroid of the regions.
+              Thus, the moments of inertia may be inaccurate as the distribution of the non-structural
+              mass is not accounted for. Use the mesh for accurately computing the moments of inertia.
+            - MISSING_BEAM_ORIENTATIONS: For some regions with beam section assignments, the beam
+              section orientations are missing.
+            - UNSUPPORTED_BEAM_PROFILES: This method supports the Box, Pipe, Circular, Rectangular,
+              Hexagonal, Trapezoidal, I, L, T, Arbitrary, and Tapered beam profiles. Any other beam
+              profile is not supported.
+            - TAPERED_BEAM_MI: Moment of inertia calculations for tapered beams are not accurate.
+            - SUBSTRUCTURE_INCORRECT_PROPERTIES: The user assigned density and thickness is not
+              considered for substructures.
+            - UNSUPPORTED_NON_STRUCTURAL_MASS_PROPORTIONAL: Non-structural mass with Mass Proportional
+              distribution is not supported. Results are computed using Volume Proportional
+              distribution.
         """
         ...
 
@@ -1327,7 +1352,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Error : Incorrect feature name
+        Error
+            Incorrect feature name,
             An exception occurs if a feature with the given name does not exist.
         """
         ...
@@ -1348,8 +1374,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Error: Incorrect feature name
-            An exception occurs if a feature with the given name does not exist.
+        Error
+            Incorrect feature name, An exception occurs if a feature with the given name does not exist.
         """
         ...
 
@@ -1369,7 +1395,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Error : Incorrect feature name
+        Error
+            Incorrect feature name,
             An exception occurs if a feature with the given name does not exist.
         """
         ...
@@ -1390,8 +1417,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Error: Incorrect feature name
-            An exception occurs if a feature with the given name does not exist.
+        Error
+            Incorrect feature name, An exception occurs if a feature with the given name does not exist.
         """
         ...
 
@@ -1408,8 +1435,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        AbaqusException: Can only be used with analytical rigid parts
-            If the part is not an analytical rigid part.
+        AbaqusException
+            Can only be used with analytical rigid parts, If the part is not an analytical rigid part.
         """
         ...
 
@@ -1511,13 +1538,14 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def queryGeometry(self, relativeAccuracy: float = 0, printResults: Boolean = True):
         """This method prints the following information about a part:
-            - the name, modeling space, and analysis type;
-            - whether twist is included (only available when the modeling space is axisymmetric and
-        the analysis type is deformable);
-            - a 3D point representing the minimum of the part's bounding box;
-            - a 3D point representing the maximum of the part's bounding box;
-            - a 3D point representing the part's centroid (only on 3D solid parts); and
-            - the volume (only on 3D solid parts).
+
+        - the name, modeling space, and analysis type;
+        - whether twist is included (only available when the modeling space is axisymmetric and
+          the analysis type is deformable);
+        - a 3D point representing the minimum of the part's bounding box;
+        - a 3D point representing the maximum of the part's bounding box;
+        - a 3D point representing the part's centroid (only on 3D solid parts); and
+        - the volume (only on 3D solid parts).
 
         Parameters
         ----------
@@ -1657,7 +1685,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Cannot export orphan mesh parts to ACIS
+        Exception
+            Cannot export orphan mesh parts to ACIS,
             If the part is an orphan mesh part.
         """
         ...
@@ -1697,7 +1726,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Cannot export orphan mesh parts to IGES
+        Exception
+            Cannot export orphan mesh parts to IGES,
             If the part is an orphan mesh part.
         """
         ...
@@ -1713,8 +1743,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Parterror: Cannot export orphan mesh parts to STEP
-            If the part contains no geometry.
+        Parterror
+            Cannot export orphan mesh parts to STEP, If the part contains no geometry.
         """
         ...
 
@@ -1729,8 +1759,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Cannot export orphan mesh parts to VDA-FS
-            If the part is an orphan mesh part.
+        Exception
+            Cannot export orphan mesh parts to VDA-FS If the part is an orphan mesh part.
         """
         ...
 

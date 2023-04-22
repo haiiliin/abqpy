@@ -105,5 +105,13 @@ Which provides a way to change the default abaqus execution procedure to GUI mod
 
 ## Comments
 
-```{disqus}
-```
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>

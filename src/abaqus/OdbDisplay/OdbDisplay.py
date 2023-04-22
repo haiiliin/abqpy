@@ -385,7 +385,8 @@ class OdbDisplay:
 
         Raises
         ------
-        If the viewport is not associated with any Odb object
+        Exception
+            If the viewport is not associated with any Odb object
             The current viewport is not associated with an ODB file. Requested operation
             cancelled.
         """

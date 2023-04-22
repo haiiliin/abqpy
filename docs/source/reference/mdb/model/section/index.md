@@ -42,4 +42,6 @@ connector
     .. automembers:: abaqus.Section
         :recursive:
         :exclude: SectionModel, SectionOdb
+
+    .. placeholder for empty members
 ```

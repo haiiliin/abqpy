@@ -686,12 +686,12 @@ class Feature:
         datumCoordSys
             A Datum object representing a datum coordinate system from which to offset.
         vector
-            A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-offsets from
+            A sequence of three Floats specifying the **X**, **Y**, and **Z** offsets from
             **datumCoordSys**. The arguments **vector** and **point** are mutually exclusive, and one of
             them must be specified.
         point
             A ConstrainedSketchVertex, InterestingPoint, DatumPoint object or a sequence of three Floats specifying
-            the **X**-, **Y**-, and **Z**-coordinates of a point in space. The point represents the origin
+            the **X**, **Y**, and **Z** coordinates of a point in space. The point represents the origin
             of the new datum coordinate system. The arguments **vector** and **point** are mutually
             exclusive, and one of them must be specified.
         name
@@ -737,7 +737,7 @@ class Feature:
             specifying the origin of the coordinate system.
         point1
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point
-            specifying a point on the **X**-axis or the rr-axis. The **point1** and **line1** arguments
+            specifying a point on the **X** axis or the rr-axis. The **point1** and **line1** arguments
             are mutually exclusive. One of them must be specified.
         point2
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point
@@ -745,7 +745,7 @@ class Feature:
             arguments are mutually exclusive. One of them must be specified.
         line1
             An Edge, an Element Edge, or a Datum object representing a datum axis specifying the
-            **X**-axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One
+            **X** axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One
             of them must be specified.
         line2
             An Edge, an Element Edge, or a Datum object representing a datum axis specifying a
@@ -790,7 +790,7 @@ class Feature:
             CARTESIAN, CYLINDRICAL, and SPHERICAL.
         line1
             A straight Edge, an ElementEdge, or a Datum object representing a datum axis specifying
-            the **X**-axis or the rr-axis.
+            the **X** axis or the rr-axis.
         line2
             A straight Edge, an ElementEdge, or a Datum object representing a datum axis specifying
             a line in the **X - Y** plane or in the rr-θθ plane.
@@ -1069,7 +1069,7 @@ class Feature:
         Parameters
         ----------
         coords
-            A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the datum
+            A sequence of three Floats specifying the **X**, **Y**, and **Z** coordinates of the datum
             point.
 
         Returns
@@ -1095,7 +1095,7 @@ class Feature:
         point
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.
         vector
-            A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-offsets from **point**.
+            A sequence of three Floats specifying the **X**, **Y**, and **Z** offsets from **point**.
 
         Returns
         -------
@@ -1276,7 +1276,7 @@ class Feature:
         sketchPlane
             A Datum plane object or a planar Face object specifying the sketch plane.
         origin
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates that will be used as
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates that will be used as
             the origin of the sketch. The default value is computed as the centroid of the face.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
@@ -1286,17 +1286,18 @@ class Feature:
             positioned. Possible values are SIDE1 and SIDE2. The default value is SIDE1.
         sketchUpEdge
             An Edge or DatumAxis object specifying the orientation of the sketch. If unspecified,
-            the sketch is assumed to be oriented with the **Y**-direction pointing up.
+            the sketch is assumed to be oriented with the **Y** direction pointing up.
 
         Returns
         -------
         Transform
             A Transform object. A Transform is an object with one method that returns the transform
-        matrix.
+            matrix.
 
         Raises
         ------
-        Up direction is parallel to plane normal
+        Exception
+            Up direction is parallel to plane normal,
             If the sketchUpEdge is parallel to the sketchPlane.
         """
         ...
@@ -1548,7 +1549,7 @@ class Feature:
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane.
         point3
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the
-            plane. Note: *point1*, **point2**, and **point3** must not be colinear and must not coincide.
+            plane. Note: **point1**, **point2**, and **point3** must not be colinear and must not coincide.
 
         Returns
         -------
@@ -2129,8 +2130,8 @@ class Feature:
         ----------
         point
             A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum object specifying a reference point.
-            **point** can also be a sequence of three Floats representing the **X**-, **Y**-, and
-            **Z**-coordinates of the point.
+            **point** can also be a sequence of three Floats representing the **X**, **Y**, and
+            **Z** coordinates of the point.
         instanceName
             Used internally by the input file writer.
 
