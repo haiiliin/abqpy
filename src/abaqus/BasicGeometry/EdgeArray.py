@@ -114,7 +114,7 @@ class EdgeArray(List[Edge]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the object to
             find. findAt returns either an Edge object or a sequence of Edge objects based on the
             type of input.
 
@@ -147,8 +147,8 @@ class EdgeArray(List[Edge]):
         Parameters
         ----------
         coordinates
-            A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**- coordinates of a point::
+            A sequence of a sequence of floats, where each sequence of floats describes the **X**,
+            **Y**, and **Z**  coordinates of a point::
 
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
                 >>> r.keys()
@@ -167,7 +167,7 @@ class EdgeArray(List[Edge]):
             index 0. If a closest edge could be found then the value is a sequence consisting of two
             objects. The first object in the sequence is an Edge that is close to the input point
             referred to by the key. The second object in the sequence is a sequence of floats that
-            specifies the **X**-, **Y**-, and **Z**- location of the closest point on the Edge to the given
+            specifies the **X**, **Y**, and **Z**  location of the closest point on the Edge to the given
             point. See program listing above.
         """
         ...
@@ -201,8 +201,8 @@ class EdgeArray(List[Edge]):
 
         Raises
         ------
-        Error: The mask results in an empty sequence
-            An exception occurs if the resulting sequence is empty.
+        Error
+            The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
         ...
 
@@ -233,17 +233,17 @@ class EdgeArray(List[Edge]):
         Parameters
         ----------
         xMin
-            A float specifying the minimum **X**-boundary of the bounding box.
+            A float specifying the minimum **X** boundary of the bounding box.
         yMin
-            A float specifying the minimum **Y**-boundary of the bounding box.
+            A float specifying the minimum **Y** boundary of the bounding box.
         zMin
-            A float specifying the minimum **Z**-boundary of the bounding box.
+            A float specifying the minimum **Z** boundary of the bounding box.
         xMax
-            A float specifying the maximum **X**-boundary of the bounding box.
+            A float specifying the maximum **X** boundary of the bounding box.
         yMax
-            A float specifying the maximum **Y**-boundary of the bounding box.
+            A float specifying the maximum **Y** boundary of the bounding box.
         zMax
-            A float specifying the maximum **Z**-boundary of the bounding box.
+            A float specifying the maximum **Z** boundary of the bounding box.
 
         Returns
         -------
@@ -266,10 +266,10 @@ class EdgeArray(List[Edge]):
         Parameters
         ----------
         center1
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the first end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the first end of the
             cylinder.
         center2
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the second end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the second end of the
             cylinder.
         radius
             A float specifying the radius of the cylinder.
@@ -294,7 +294,7 @@ class EdgeArray(List[Edge]):
         Parameters
         ----------
         center
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the sphere.
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the sphere.
         radius
             A float specifying the radius of the sphere.
 

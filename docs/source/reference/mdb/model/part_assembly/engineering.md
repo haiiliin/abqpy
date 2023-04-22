@@ -21,4 +21,6 @@ A specific type of engineering feature object is designed for each type of engin
     .. automembers:: abaqus.EngineeringFeature
         :recursive:
         :exclude: EngineeringFeature
+
+    .. placeholder for empty members
 ```

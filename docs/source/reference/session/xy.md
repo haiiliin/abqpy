@@ -21,4 +21,6 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
     .. automembers:: abaqus.XY
         :recursive:
         :exclude: XYSession
+
+    .. placeholder for empty members
 ```

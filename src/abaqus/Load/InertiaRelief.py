@@ -74,7 +74,7 @@ class InertiaRelief(Load):
         ur3
             A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
-            A sequence of Floats specifying the **X**, **Y** and **Z**-coordinates of a fixed rotation
+            A sequence of Floats specifying the **X**, **Y** and **Z** coordinates of a fixed rotation
             point or a point on the rotation axis or a point on the symmetry line, about which
             rotations are defined. Such a point must be specified only for certain combinations of
             free directions.
@@ -124,7 +124,7 @@ class InertiaRelief(Load):
         ur3
             A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
-            A sequence of Floats specifying the **X**, **Y** and **Z**-coordinates of a fixed rotation
+            A sequence of Floats specifying the **X**, **Y** and **Z** coordinates of a fixed rotation
             point or a point on the rotation axis or a point on the symmetry line, about which
             rotations are defined. Such a point must be specified only for certain combinations of
             free directions.
@@ -173,7 +173,7 @@ class InertiaRelief(Load):
             can be specified only for certain combinations of free directions. The **referencePoint**
             argument can be one of the following:
 
-            - The **X**, **Y** and **Z**-coordinates of a fixed rotation point.
+            - The **X**, **Y** and **Z** coordinates of a fixed rotation point.
             - A point on the rotation axis.
             - A point on the symmetry line.
         fixed

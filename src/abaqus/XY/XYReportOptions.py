@@ -46,14 +46,14 @@ class XYReportOptions:
             A Boolean specifying whether to perform linear interpolation for missing data values.
             The default value is OFF.
         xyData
-            A Boolean specifying whether to print the **X**- and **Y**-values of the selected XYData
+            A Boolean specifying whether to print the **X**  and **Y** values of the selected XYData
             objects. (If **xyData** = OFF, **totals** and **minMax** can still be printed.) The default
             value is ON.
         totals
-            A Boolean specifying whether to print the sum of the **Y**-values of the selected XYData
+            A Boolean specifying whether to print the sum of the **Y** values of the selected XYData
             objects. The default value is OFF.
         minMax
-            A Boolean specifying whether to print the minimum and maximum **X**- and **Y**-values of the
+            A Boolean specifying whether to print the minimum and maximum **X**  and **Y** values of the
             selected XYData objects. The default value is OFF.
         pageWidthLimited
             A Boolean specifying whether the page width is limited. The default value is OFF.

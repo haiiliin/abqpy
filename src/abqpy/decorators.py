@@ -4,8 +4,6 @@ from typing import Tuple
 
 from . import __version__ as version
 
-version = version[:4]
-
 
 def class_or_module_link(
     type: str,
@@ -18,7 +16,7 @@ def class_or_module_link(
 
     Parameters
     ----------
-    type : 'class' or 'module'
+    type : str
         Type of the object, 'class' or 'module'.
     class_or_module_name : str
         The name of the class or module.
@@ -40,10 +38,10 @@ def class_or_module_link(
         label = class_or_module_name
     module_name = f"{type if type == 'module' else ''}{class_or_module_name.lower()}"
     link = (
-        f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
+        f"https://help.3ds.com/{version[:4]}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
         f"simaker-c-{prefix}{module_name}{suffix}pyc.htm?contextscope=all"
     )
-    return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
+    return link, f"Check `{label} on help.3ds.com/{version[:4]} <{link}>`__."
 
 
 def method_or_function_link(
@@ -58,7 +56,7 @@ def method_or_function_link(
 
     Parameters
     ----------
-    type : 'method' or 'function'
+    type : str
         Type of the object, 'method' or 'function'.
     class_or_module_name : str
         The name of the module.
@@ -86,7 +84,7 @@ def method_or_function_link(
     if type == "class" and method_or_function_name == "__init__":
         method_or_function_name = class_or_module_name
     link = (
-        f"https://help.3ds.com/{version}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
+        f"https://help.3ds.com/{version[:4]}/English/DSSIMULIA_Established/SIMACAEKERRefMap/"
         f"simaker-c-{prefix}{class_name}{suffix}pyc.htm?contextscope=all"
         f"#simaker-{function_prefix}{class_name}{method_or_function_name.lower()}pyc"
     )
@@ -96,7 +94,7 @@ def method_or_function_link(
         signature = f"{class_or_module_name}.{method_or_function_name}()"
     if label is None:
         label = signature
-    return link, f"Check `{label} on help.3ds.com/{version} <{link}>`__."
+    return link, f"Check `{label} on help.3ds.com/{version[:4]} <{link}>`__."
 
 
 def add_link_in_class_or_module_docstring(
@@ -111,7 +109,7 @@ def add_link_in_class_or_module_docstring(
 
     Parameters
     ----------
-    type : 'class' or 'module'
+    type : str
         Type of the object, 'class' or 'module'.
     class_or_module_name : str
         The name of the class or module.
@@ -159,7 +157,7 @@ def add_link_in_method_or_function_docstring(
 
     Parameters
     ----------
-    type : 'method' or 'function'
+    type : str
         Type of the object, 'method' or 'function'.
     class_or_module_name : str
         The name of the module.
