@@ -48,7 +48,7 @@ jobs:
       env:
         SOURCEDIR: docs/source
         BUILDDIR: docs/build/${{ matrix.language }}/${{ matrix.builder }}/pr-${{ github.event.number }}
-        SPHINXOPTS: -M ${{ matrix.builder }} -D language=${{ matrix.language }} -j auto
+        SPHINXOPTS: -W -M ${{ matrix.builder }} -D language=${{ matrix.language }} -j auto
     - uses: actions/cache@v3.3.1
       with:
         path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
