@@ -66,6 +66,7 @@ extensions = [
     'sphinx_autodoc_typehints',
     'sphinx_copybutton',
     'sphinx_codeautolink',
+    'sphinx_comments',
     'sphinx_design',
     'sphinx_disqus.disqus',
     'sphinx_gallery.gen_gallery',
@@ -77,6 +78,14 @@ extensions = [
     'version',
     'autoapi.extension',
 ]
+
+# sphinx-comments
+comments_config = {
+   "utterances": {
+      "repo": "github-org/github-repo",
+      "optional": "config",
+   }
+}
 
 # sphinx-disqus configuration
 disqus_shortname = 'docs-abqpy-com'
