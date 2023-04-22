@@ -50,6 +50,7 @@ class PolarityAssignments:
         assignments
             A sequence of tuples specifying the polarity assignments. Each tuple contains two
             entries:
+
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               polarity attribute is assigned.
             - A SymbolicConstant specifying the overriding polarity value to be used for the first

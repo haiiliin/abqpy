@@ -150,7 +150,7 @@ class Temperature(PredefinedField):
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value and the gradient in the thickness
-            direction.
+              direction.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
               sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
               gradient in the N2 direction.

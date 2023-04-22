@@ -44,4 +44,6 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
     .. automembers:: abaqus.Adaptivity
         :recursive:
         :exclude: AdaptivityModel, AdaptivityStep, AdaptivityIteration
+
+    .. placeholder for empty members
 ```

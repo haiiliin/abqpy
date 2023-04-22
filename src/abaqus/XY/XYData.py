@@ -244,10 +244,10 @@ class XYData(tuple):
             A QuantityType object specifying the QuantityType object associated to
             the Y -axis2- values.
         xField
-            An Int specifying the field from which the **X**-data will be read. Fields are delimited
+            An Int specifying the field from which the **X** data will be read. Fields are delimited
             by spaces, tabs, or commas. The default value is 1.
         yField
-            An Int specifying the field from which the **Y**-data will be read. Fields are delimited
+            An Int specifying the field from which the **Y** data will be read. Fields are delimited
             by spaces, tabs, or commas. The default value is 2.
         skipFrequency
             An Int specifying how often data rows will be skipped. A **skipFrequency** of 1 means skip
@@ -788,8 +788,8 @@ class XYData(tuple):
 
         Raises
         ------
-        ErrorPathNotFound: Path not found
-            If **path** is invalid.
+        ErrorPathNotFound
+            Path not found, If **path** is invalid.
         ErrorCurrentVPNotFound: Current viewport not found
             If **viewport** is invalid.
         ErrorInvalidUserStepAndFrame: The user step and frame specified have not been defined

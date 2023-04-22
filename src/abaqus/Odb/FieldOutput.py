@@ -297,8 +297,8 @@ class FieldOutput:
 
         Raises
         ------
-        odbException: Entities from multiple instances present in set
-            If you specify an odbSet containing entities from multiple instances
+        odbException
+            Entities from multiple instances present in set, If you specify an odbSet containing entities from multiple instances
         dbException: Transformation not allowed for scalar data
             The addData method throws many exceptions of type odbException. For example, if the
             local coordinate system is specified for scalar data
@@ -564,8 +564,8 @@ class FieldOutput:
 
         Raises
         ------
-        odbException: Cannot apply transformation to field containing assembly level nodes
-            The getTransformedField method throws an exception if the field contains any assembly
+        odbException
+            Cannot apply transformation to field containing assembly level nodes, The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
         ...
@@ -611,8 +611,8 @@ class FieldOutput:
 
         Raises
         ------
-        odbException: Cannot apply transformation to field containing assembly level nodes
-            The getTransformedField method throws an exception if the field contains any assembly
+        odbException
+            Cannot apply transformation to field containing assembly level nodes, The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
         ...
@@ -663,8 +663,8 @@ class FieldOutput:
 
         Raises
         ------
-        odbException: Cannot apply transformation to field containing assembly level nodes
-            The getTransformedField method throws an exception if the field contains any assembly
+        odbException
+            Cannot apply transformation to field containing assembly level nodes, The getTransformedField method throws an exception if the field contains any assembly
             level nodes.
         """
         ...

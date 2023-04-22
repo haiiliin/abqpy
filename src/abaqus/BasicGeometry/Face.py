@@ -47,9 +47,9 @@ class Face:
     isReferenceRep: Boolean = OFF
 
     #: A tuple of tuples of Floats specifying the coordinates. For a face of a shell **pointOn**
-    #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
-    #: **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
-    #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
+    #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face and the
+    #: **X**, **Y**, and **Z** components of the normal to the face.For a face of a solid **pointOn**
+    #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face.
     pointOn: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this face.
@@ -66,7 +66,7 @@ class Face:
         Returns
         -------
         Sequence[float]
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the centroid of
             the face.
         """
         ...
@@ -78,7 +78,7 @@ class Face:
         Parameters
         ----------
         point
-            A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point where the curvature
+            A tuple specifying the **X**, **Y**, and **Z** coordinates of the point where the curvature
             is desired. If the **point** does not lie on the face it will be projected onto the face.
             This argument and **uParam** and **vParam** are mutually exclusive.
         uParam
@@ -163,14 +163,14 @@ class Face:
         Parameters
         ----------
         point
-            A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point where the normal to
+            A tuple specifying the **X**, **Y**, and **Z** coordinates of the point where the normal to
             the face is desired. If the **point** does not lie on the face it will be projected onto
             the face.
 
         Returns
         -------
         Sequence[float]
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
+            A sequence of Floats specifying the **X**, **Y**, and **Z** components of the normal to the
             face.
 
         Raises

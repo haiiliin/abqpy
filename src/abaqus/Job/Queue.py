@@ -111,9 +111,11 @@ class Queue:
 
         Raises
         ------
-        Remote queue host name is not set
+        Exception
+            Remote queue host name is not set,
             If **fileCopy** = ON and **hostName** is empty.
-        Directory in which to run the job on the remote computer is not set
+        Exception
+            Directory in which to run the job on the remote computer is not set,
             If **fileCopy** = ON and **directory** is empty.
         """
         ...
