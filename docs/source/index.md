@@ -72,12 +72,6 @@ Abaqus <https://www.3ds.com/products-services/simulia/products/abaqus/>
 policy
 ```
 
-# Indices and tables
-
-- {ref}`genindex`
-- {ref}`modindex`
-- {ref}`search`
-
 ## Comments
 
 <script
@@ -90,3 +84,9 @@ policy
    label="💬 comment"
    crossorigin="anonymous"
 />
+
+# Indices and tables
+
+- {ref}`genindex`
+- {ref}`modindex`
+- {ref}`search`
