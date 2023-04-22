@@ -72,21 +72,21 @@ class View:
     cameraPosition: Tuple[float, float, float]
 
     #: A sequence of three Floats specifying the camera's up vector (the screen's positive
-    #: **Y**-axis). The initial value is (0, 0, 0).
+    #: **Y** axis). The initial value is (0, 0, 0).
     cameraUpVector: Tuple[float, float, float]
 
     #: A sequence of three Floats specifying the center of the scene.
     cameraTarget: Tuple[float, float, float]
 
-    #: A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
+    #: A Float specifying the amount to pan the model in the screen **X** direction as a fraction
     #: of the viewport width. A positive value pans the model to the right. A negative value
-    #: pans the model to the left.The*viewOffsetX* and **viewOffsetY** arguments allow you to pan
+    #: pans the model to the left. The *viewOffsetX* and **viewOffsetY** arguments allow you to pan
     #: the view without changing the position of the camera or the target (*cameraPosition* and
     #: **cameraTarget** arguments to the View method). The resulting change in the view allows
     #: you to pan a perspective display without producing an apparent rotation of the model.
     viewOffsetX: float
 
-    #: A Float specifying the amount to pan the model in the screen **Y**-direction as a fraction
+    #: A Float specifying the amount to pan the model in the screen **Y** direction as a fraction
     #: of the viewport height. A positive value pans the model upward. A negative value pans
     #: the model downward.
     viewOffsetY: float
@@ -128,7 +128,7 @@ class View:
         ----------
         name
             A String specifying the name of the view (also used as the repository key). Possible
-            values are 'Front', 'Back', 'Top', 'Bottom', 'Left', `Right', 'Iso', 'User-1', 'User-2',
+            values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
             'User-3', and 'User-4'. The object member associated with this argument is a
             SymbolicConstant. Possible values of the **name** member are:FRONT, BACK, TOP, BOTTOM,
             LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.
@@ -151,18 +151,18 @@ class View:
             A sequence of three Floats specifying the camera position.
         cameraUpVector
             A sequence of three Floats specifying the camera's up vector (the screen's positive
-            **Y**-axis). The initial value is (0, 0, 0).
+            **Y** axis). The initial value is (0, 0, 0).
         cameraTarget
             A sequence of three Floats specifying the center of the scene.
         viewOffsetX
-            A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
+            A Float specifying the amount to pan the model in the screen **X** direction as a fraction
             of the viewport width. A positive value pans the model to the right. A negative value
-            pans the model to the left.The*viewOffsetX* and **viewOffsetY** arguments allow you to pan
+            pans the model to the left. The *viewOffsetX* and **viewOffsetY** arguments allow you to pan
             the view without changing the position of the camera or the target (*cameraPosition* and
             **cameraTarget** arguments to the View method). The resulting change in the view allows
             you to pan a perspective display without producing an apparent rotation of the model.
         viewOffsetY
-            A Float specifying the amount to pan the model in the screen **Y**-direction as a fraction
+            A Float specifying the amount to pan the model in the screen **Y** direction as a fraction
             of the viewport height. A positive value pans the model upward. A negative value pans
             the model downward.
         autoFit
@@ -225,11 +225,11 @@ class View:
         Parameters
         ----------
         xFraction
-            A Float specifying the amount to pan the model in the screen **X**-direction as a fraction
+            A Float specifying the amount to pan the model in the screen **X** direction as a fraction
             of the viewport width. A positive value pans the model to the right. A negative value
             pans the model to the left. The default value is 0.0.
         yFraction
-            A Float specifying the amount to pan the model in the screen **Y**-direction as a fraction
+            A Float specifying the amount to pan the model in the screen **Y** direction as a fraction
             of the viewport height. A positive value pans the model upward. A negative value pans
             the model downward. The default value is 0.0.
         asMovie
@@ -277,9 +277,9 @@ class View:
         Parameters
         ----------
         xAngle
-            A Float specifying the degrees to rotate about the **X**-axis. The default value is 0.0.
+            A Float specifying the degrees to rotate about the **X** axis. The default value is 0.0.
         yAngle
-            A Float specifying the degrees to rotate about the **Y**-axis. The default value is 0.0.
+            A Float specifying the degrees to rotate about the **Y** axis. The default value is 0.0.
         zAngle
             A Float specifying the degrees to rotate about the*Z*-axis. The default value is 0.0.
         mode
@@ -446,7 +446,7 @@ class View:
             of the model).
         cameraUpVector
             A sequence of three Floats specifying the camera's up vector (the screen's positive
-            **Y**-axis). The initial value is (0, 0, 0).
+            **Y** axis). The initial value is (0, 0, 0).
         drawImmediately
             A Boolean specifying the viewport should refresh immediately after the command is
             processed. This argument is typically used only when writing a script and it is
@@ -505,10 +505,10 @@ class View:
         Parameters
         ----------
         point1
-            A pair of Floats specifying the*X*- and **Y**-coordinates of one corner of the rectangle
+            A pair of Floats specifying the*X*- and **Y** coordinates of one corner of the rectangle
             in fractions of the viewport width and height.
         point2
-            A pair of Floats specifying the*X*- and **Y**-coordinates of the other corner of the
+            A pair of Floats specifying the*X*- and **Y** coordinates of the other corner of the
             rectangle in fractions of the viewport width and height.
         drawImmediately
             A Boolean specifying the viewport should refresh immediately after the command is

@@ -20,6 +20,6 @@ class NodeQuery:
     #: unsuccessful, **nodeID** = −1.
     nodeId: Optional[int] = None
 
-    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently
+    #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the most recently
     #: queried node.
     nodePos: Optional[float] = None

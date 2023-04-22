@@ -10,4 +10,6 @@ Animation commands are used to create and control object-based and image-based a
 
     .. automembers:: abaqus.Animation
         :recursive:
+
+    .. placeholder for empty members
 ```

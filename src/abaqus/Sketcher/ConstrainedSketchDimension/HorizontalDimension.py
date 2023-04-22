@@ -19,7 +19,7 @@ class HorizontalDimension(ConstrainedSketchDimension):
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two vertices. A
-        horizontal dimension indicates the horizontal distance along the **X**-axis between two
+        horizontal dimension indicates the horizontal distance along the **X** axis between two
         vertices.
 
         .. note::

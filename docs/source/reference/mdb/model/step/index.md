@@ -28,4 +28,6 @@ step_miscellaneous
     .. automembers:: abaqus.Step
         :recursive:
         :exclude: StepModel
+
+    .. placeholder for empty members
 ```
