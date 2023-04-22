@@ -1696,7 +1696,8 @@ class PartBase(PartFeature):
 
         Raises
         ------
-        Cannot export orphan mesh parts to ACIS
+        Exception
+            Cannot export orphan mesh parts to ACIS,
             If the part is an orphan mesh part.
         """
         ...

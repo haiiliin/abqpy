@@ -211,7 +211,8 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-        A coordinate and an offset may not both be specified for the same coordinate component
+        Exception
+            A coordinate and an offset may not both be specified for the same coordinate component
         """
         ...
 

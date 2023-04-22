@@ -1292,11 +1292,12 @@ class Feature:
         -------
         Transform
             A Transform object. A Transform is an object with one method that returns the transform
-        matrix.
+            matrix.
 
         Raises
         ------
-        Up direction is parallel to plane normal
+        Exception
+            Up direction is parallel to plane normal,
             If the sketchUpEdge is parallel to the sketchPlane.
         """
         ...
