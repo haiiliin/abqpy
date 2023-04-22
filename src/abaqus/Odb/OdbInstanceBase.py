@@ -105,9 +105,9 @@ class OdbInstanceBase:
             specifies a point on the 1-axis.The second sequence specifies a point on the 2-axis.The
             third sequence specifies a point on the 3-axis.The fourth sequence specifies the
             translation of the local coordinate system from the origin to its intended location.For
-            example, the following sequence moves a part 10 units in the **X**-direction with no
+            example, the following sequence moves a part 10 units in the **X** direction with no
             rotation: `localCoordSystem = ((1, 0, 0), (0, 1, 0), (0, 0, 1), (10, 0, 0))`The following
-            sequence moves a part 5 units in the **X**-direction with rotation:
+            sequence moves a part 5 units in the **X** direction with rotation:
             `localCoordSystem = ((0, 1, 0), (1, 0, 0), (0, 0, 1), (5, 0, 0))` transforms a part
             containing the two points `Pt1= (1,0,0) Pt2= (2,0,0)` to `Pt1 = (0, 6, 0) Pt2 = (0, 7, 0)`
 
@@ -211,8 +211,8 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Invalid element label
-            If no element with the specified label exists.
+        OdbError
+            Invalid element label, If no element with the specified label exists.
         """
         ...
 
@@ -232,8 +232,8 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Invalid node label
-            If no node with the specified label exists.
+        OdbError
+            Invalid node label, If no node with the specified label exists.
         """
         ...
 
@@ -250,10 +250,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Section assignment requires element set
-            If **region** is not an element set.
-        OdbError: Section assignment requires element set from this part instance
-            If the element set is not from the current instance.
+        OdbError
+            Section assignment requires element set, If **region** is not an element set.
+        OdbError
+            Section assignment requires element set from this part instance, If the element set is not from the current instance.
         """
         ...
 
@@ -274,8 +274,9 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of
-        type TWO_D_PLANAR or AXISYMMETRIC.
+        OdbError
+            2D-Planar Analytic Rigid Surface can be defined only if the instance is of
+            type TWO_D_PLANAR or AXISYMMETRIC.
             If OdbPart associated with the part instance is of type THREE_D.
 
         """
@@ -308,9 +309,9 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Analytic Rigid Surface of type CYLINDER can be defined only if the instance is
-        of type THREE_D
-            If OdbPart associated with the part instance is not of type THREE_D.
+        OdbError
+            Analytic Rigid Surface of type CYLINDER can be defined only if the instance is
+            of type THREE_D, If OdbPart associated with the part instance is not of type THREE_D.
 
         """
         ...
@@ -342,9 +343,9 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Analytic Rigid Surface of type REVOLUTION can be defined only if the
-        instance is of type THREE_D
-            If OdbPart associated with the part instance is not of type THREE_D.
+        OdbError
+            Analytic Rigid Surface of type REVOLUTION can be defined only if the
+            instance is of type THREE_D, If OdbPart associated with the part instance is not of type THREE_D.
 
         """
         ...
@@ -380,7 +381,7 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Rigid body definition requires a node set
-            If **referenceNode** is not a node set.
+        OdbError
+            Rigid body definition requires a node set, If **referenceNode** is not a node set.
         """
         ...

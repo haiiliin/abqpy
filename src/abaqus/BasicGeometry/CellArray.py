@@ -102,7 +102,7 @@ class CellArray(List[Cell]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the object to
             find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type
             of input.
 
@@ -170,8 +170,8 @@ class CellArray(List[Cell]):
 
         Raises
         ------
-        Error: The mask results in an empty sequence
-            An exception occurs if the resulting sequence is empty.
+        Error
+            The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
         ...
 
@@ -202,17 +202,17 @@ class CellArray(List[Cell]):
         Parameters
         ----------
         xMin
-            A float specifying the minimum **X**-boundary of the bounding box.
+            A float specifying the minimum **X** boundary of the bounding box.
         yMin
-            A float specifying the minimum **Y**-boundary of the bounding box.
+            A float specifying the minimum **Y** boundary of the bounding box.
         zMin
-            A float specifying the minimum **Z**-boundary of the bounding box.
+            A float specifying the minimum **Z** boundary of the bounding box.
         xMax
-            A float specifying the maximum **X**-boundary of the bounding box.
+            A float specifying the maximum **X** boundary of the bounding box.
         yMax
-            A float specifying the maximum **Y**-boundary of the bounding box.
+            A float specifying the maximum **Y** boundary of the bounding box.
         zMax
-            A float specifying the maximum **Z**-boundary of the bounding box.
+            A float specifying the maximum **Z** boundary of the bounding box.
 
         Returns
         -------
@@ -235,10 +235,10 @@ class CellArray(List[Cell]):
         Parameters
         ----------
         center1
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the first end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the first end of the
             cylinder.
         center2
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the second end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the second end of the
             cylinder.
         radius
             A float specifying the radius of the cylinder.
@@ -259,7 +259,7 @@ class CellArray(List[Cell]):
         Parameters
         ----------
         center
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the sphere.
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the sphere.
         radius
             A float specifying the radius of the sphere.
 

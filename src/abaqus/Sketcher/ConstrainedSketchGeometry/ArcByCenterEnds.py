@@ -48,7 +48,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
 
         Raises
         ------
-        If incompatible data are given, the second endpoint is ignored.
-
+        Exception
+            If incompatible data are given, the second endpoint is ignored.
         """
         ...
