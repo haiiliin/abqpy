@@ -34,4 +34,6 @@ The Beam Section profile commands are used to create profiles. A profile definit
     .. automembers:: abaqus.BeamSectionProfile
         :recursive:
         :exclude: BeamSectionProfileModel, BeamSectionProfileOdb
+
+    .. placeholder for empty members
 ```

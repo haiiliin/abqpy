@@ -12,4 +12,6 @@ Each command also creates a Datum object in the corresponding datum repository. 
 
     .. automembers:: abaqus.Datum
         :recursive:
+
+    .. placeholder for empty members
 ```

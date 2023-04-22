@@ -25,7 +25,7 @@ class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**- and **Y**-coordinates of the object to find.
+            A sequence of Floats specifying the **X**  and **Y** coordinates of the object to find.
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
             at the specified location. The default value is True.

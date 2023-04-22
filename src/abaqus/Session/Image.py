@@ -47,10 +47,10 @@ class Image:
         ------
         ValueError
             - If **fileName** does not exist or can not be read:
-              ValueError: Unable to open image file
-            - If **fileName** references an unsupported image file format:
-              ValueError: Unsupported image format
-            - If the contents of **fileName** are corrupt or can not be decoded:
+              ValueError
+            Unable to open image file, - If **fileName** references an unsupported image file format:
+              ValueError
+            Unsupported image format, - If the contents of **fileName** are corrupt or can not be decoded:
               ValueError: Unable to decode image file
         """
         ...
@@ -84,7 +84,7 @@ class Image:
             If **frame** references an non existing frame.
         ValueError: Could not load frame at time 't' from movie: 'movieName'
             If **time** references an non existing frame.
-        TypeError: keyword error on time
-            If **time** and **frame** are given in the same command.
+        TypeError
+            keyword error on time, If **time** and **frame** are given in the same command.
         """
         ...
