@@ -45,8 +45,8 @@ class OdbPart(OdbPartBase):
 
         Raises
         ------
-        OdbError: Rigid body definition requires a node set
-            If **referenceNode** is not a node set.
+        OdbError
+            Rigid body definition requires a node set, If **referenceNode** is not a node set.
         """
         ...
 

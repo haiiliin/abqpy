@@ -39,7 +39,8 @@ class AutoMembers(SphinxDirective):
         return wrapper.children
 
     def should_include(self, obj: object) -> bool:
-        return (self.module_name in getattr(obj, "__module__", obj.__name__) and
+        module_or_name = getattr(obj, "__module__", obj.__name__)
+        return (self.module_name == module_or_name or f"{self.module_name}." in module_or_name and
                 obj.__name__ not in self.excluded_members)
 
     def get_members(self, module: str | ModuleType) -> dict[str, list[str]]:

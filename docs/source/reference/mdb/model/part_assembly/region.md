@@ -58,4 +58,6 @@ Assembly sets contain regions of an assembly and are used by many commands that 
     .. automembers:: abaqus.Region
         :recursive:
         :exclude: RegionPart, RegionAssembly
+
+    .. placeholder for empty members
 ```
