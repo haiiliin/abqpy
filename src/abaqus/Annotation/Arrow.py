@@ -26,17 +26,17 @@ class Arrow(Annotation, _OptionsBase):
     #: A String specifying the annotation repository key.
     name: str
 
-    #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
+    #: A pair of Floats specifying the start point **X**  and **Y** offsets in millimeters from
     #: **startAnchor**. The default value is (0, 0).
     startPoint: Sequence[float] = (0.0, 0.0)
 
-    #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
+    #: A pair of Floats specifying the end point **X**  and **Y** offsets in millimeters from
     #: **endAnchor**. The default value is (0, 0).
     endPoint: Sequence[float] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-    #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-    #: A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+    #: specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+    #: A sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
     #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
     #: values are:
     #:
@@ -54,8 +54,8 @@ class Arrow(Annotation, _OptionsBase):
     startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-    #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-    #: A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+    #: specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+    #: A Sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
     #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
     #: values are:
     #:
@@ -197,15 +197,15 @@ class Arrow(Annotation, _OptionsBase):
         name
             A String specifying the annotation repository key.
         startPoint
-            A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the start point **X**  and **Y** offsets in millimeters from
             **startAnchor**. The default value is (0, 0).
         endPoint
-            A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the end point **X**  and **Y** offsets in millimeters from
             **endAnchor**. The default value is (0, 0).
         startAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
 
@@ -222,8 +222,8 @@ class Arrow(Annotation, _OptionsBase):
             The default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A Sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
 
@@ -398,15 +398,15 @@ class Arrow(Annotation, _OptionsBase):
         Parameters
         ----------
         startPoint
-            A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the start point **X**  and **Y** offsets in millimeters from
             **startAnchor**. The default value is (0, 0).
         endPoint
-            A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the end point **X**  and **Y** offsets in millimeters from
             **endAnchor**. The default value is (0, 0).
         startAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values
             are:
@@ -425,8 +425,8 @@ class Arrow(Annotation, _OptionsBase):
             default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A Sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values
             are:

@@ -39,4 +39,6 @@ xy
     .. automembers:: abaqus.Session
         :recursive:
         :exclude: Session
+
+    .. placeholder for empty members
 ```

@@ -22,4 +22,6 @@ A specific type of boundary condition object and a specific type of boundary con
     .. automembers:: abaqus.BoundaryCondition
         :recursive:
         :exclude: BoundaryConditionModel
+
+    .. placeholder for empty members
 ```

@@ -301,8 +301,8 @@ class Drawing:
         ------
         ValueError
             If (**startIndex** + **numVertices** - 1) is larger than the length of the vertex array:
-        ValueError: Drawing request extends past array size of vertices
-            - If (**startIndex** + **numVertices** - 1) is larger than the length of the normal array
+        ValueError
+            Drawing request extends past array size of vertices, - If (**startIndex** + **numVertices** - 1) is larger than the length of the normal array
               and normals are required for the graphics primitive:
               Drawing request extends past array size of normals.
             - If (**startIndex** + **numVertices** - 1) is larger than the length of the color array and
@@ -355,10 +355,10 @@ class Drawing:
         ------
         ValueError
             - If any value in the **indices** sequence negative:
-              ValueError: Index values must be positive.
-            - If any value in the **indices** sequence is larger than the length of the vertex array:
-        ValueError: Drawing request extends past array size of vertices.
-            - If any value in the **indices** sequence is larger than the length of the normal array
+              ValueError
+            Index values must be positive, - If any value in the **indices** sequence is larger than the length of the vertex array:
+        ValueError
+            Drawing request extends past array size of vertices, - If any value in the **indices** sequence is larger than the length of the normal array
               and normals are required for the graphics primitive:
               Drawing request extends past array size of normals.
             - If any value in the **indices** sequence is larger than the length of the color array

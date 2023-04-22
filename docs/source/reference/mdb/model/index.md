@@ -49,4 +49,6 @@ step/index
     .. automembers:: abaqus.Model
         :recursive:
         :exclude: Model
+
+    .. placeholder for empty members
 ```
