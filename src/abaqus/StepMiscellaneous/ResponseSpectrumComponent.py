@@ -14,13 +14,13 @@ class ResponseSpectrumComponent:
             mdb.models[name].steps[name].components[i]
     """
 
-    #: A Float specifying the **X**-direction cosine.
+    #: A Float specifying the **X** direction cosine.
     x: Optional[float] = None
 
-    #: A Float specifying the **Y**-direction cosine.
+    #: A Float specifying the **Y** direction cosine.
     y: Optional[float] = None
 
-    #: A Float specifying the **Z**-direction cosine.
+    #: A Float specifying the **Z** direction cosine.
     z: Optional[float] = None
 
     #: A Float specifying the scale factor.

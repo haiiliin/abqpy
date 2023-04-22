@@ -40,9 +40,9 @@ class Stress(PredefinedField):
         """This method creates a Stress predefined field object.
 
         .. note::
-        This function can be accessed by::
+            This function can be accessed by::
 
-            mdb.models[name].Stress
+                mdb.models[name].Stress
 
         Parameters
         ----------
@@ -106,6 +106,6 @@ class Stress(PredefinedField):
 
         Returns
         -------
-            None
+        None
         """
         ...

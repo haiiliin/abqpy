@@ -29,6 +29,6 @@ class ConstrainedSketchGeometry:
     #: REFERENCE, and CONSTRUCTION.
     type: Optional[SymbolicConstant] = None
 
-    #: A tuple of Floats specifying the **X**- and*Y*-coordinates of a point located on the
+    #: A tuple of Floats specifying the **X**  and*Y*-coordinates of a point located on the
     #: geometry.
     pointOn: Optional[float] = None

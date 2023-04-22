@@ -262,7 +262,6 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a PorePressure predefined field object.
 
         .. note::
-
             This function can be accessed by::
 
                 mdb.models[name].PorePressure
@@ -509,10 +508,10 @@ class PredefinedFieldModel(ModelBase):
         omega
             A Float specifying the angular velocity.
         axisBegin
-            A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting
+            A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the starting
             point of the axis about which **omega** is defined.
         axisEnd
-            A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of
+            A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the end point of
             the axis about which **omega** is defined.
         field
             A String specifying the name of the AnalyticalField object associated with this
@@ -553,7 +552,6 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a Saturation predefined field object.
 
         .. note::
-
             This function can be accessed by::
 
                 mdb.models[name].Saturation
@@ -669,9 +667,9 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a PorePressure predefined field object.
 
         .. note::
-        This function can be accessed by::
+            This function can be accessed by::
 
-            mdb.models[name].PorePressure
+                mdb.models[name].PorePressure
 
         Parameters
         ----------
