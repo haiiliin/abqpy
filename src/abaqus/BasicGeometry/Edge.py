@@ -53,7 +53,7 @@ class Edge:
     #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
-    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the edge.
     pointOn: Optional[float] = None
 
@@ -87,7 +87,7 @@ class Edge:
             A Float specifying the normalized parameter location on the edge where the curvature is
             to be computed. This argument is mutually exclusive with the argument **point**.
         point
-            A tuple of **X**-, **Y**-, and **Z**-coordinates of a point at which the curvature is to be
+            A tuple of **X**, **Y**, and **Z** coordinates of a point at which the curvature is to be
             computed. If **point** does not lie on the edge an attempt is made to project it onto the
             edge and use the projected point.
 
