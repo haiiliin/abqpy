@@ -127,7 +127,7 @@ class Field(PredefinedField):
 
             .. note::
                 **amplitude** should be given only if it is valid for the specified
-            step.
+                step.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
             **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
@@ -189,7 +189,7 @@ class Field(PredefinedField):
 
         Raises
         ------
-            TextError.
+        TextError
         """
         ...
 
@@ -236,10 +236,12 @@ class Field(PredefinedField):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the
             cross-section of the region. Possible values are
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -282,15 +284,16 @@ class Field(PredefinedField):
             A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
             FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
-            specifying the Field.
+              specifying the Field.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
-            of Doubles specifying the mean value and the gradient in the thickness direction.
+              of Doubles specifying the mean value and the gradient in the thickness direction.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
-            Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
-            the N2 direction.
+              Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
+              the N2 direction.
             - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
-            Doubles specifying the Field at each point.
+              Doubles specifying the Field at each point.
         """
         ...
 
@@ -365,14 +368,15 @@ class Field(PredefinedField):
             A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
             FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
-            specifying the Field.
+              specifying the Field.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
-            of Doubles specifying the mean value and the gradient in the thickness direction.
+              of Doubles specifying the mean value and the gradient in the thickness direction.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
-            Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
-            the N2 direction.
+              Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
+              the N2 direction.
             - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
-            Doubles specifying the Field at each point.
+              Doubles specifying the Field at each point.
         """
         ...

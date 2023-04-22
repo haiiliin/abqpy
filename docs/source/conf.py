@@ -53,8 +53,9 @@ os.environ['ABQPY_MAKE_DOCS'] = 'true'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_toolbox.more_autodoc.overloads',
     'autoclasstoc',
+    'automembers',
+    'autoclass_collapse',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
@@ -62,25 +63,27 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.napoleon',
-    'sphinx_copybutton',
-    'sphinx_autodoc_toolbox.collapse',
     'sphinx_autodoc_typehints',
+    'sphinx_copybutton',
     'sphinx_codeautolink',
+    'sphinx_comments',
     'sphinx_design',
-    'sphinx_disqus.disqus',
     'sphinx_gallery.gen_gallery',
     'sphinx_togglebutton',
     'sphinx_toolbox.confval',
-    'sphinx_toolbox.collapse',
+    'sphinx_toolbox.more_autodoc.overloads',
     'hoverxref.extension',
     'myst_parser',
     'version',
-    'automembers',
     'autoapi.extension',
 ]
 
-# sphinx-disqus configuration
-disqus_shortname = 'docs-abqpy-com'
+# sphinx-comments
+comments_config = {
+   "utterances": {
+      "repo": "haiiliin/abqpy",
+   }
+}
 
 # automembers configuration
 automembers_autodoc_options = [
@@ -188,7 +191,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ["locales/README.md"]
 
 # -- Options for HTML output -------------------------------------------------
 

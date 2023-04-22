@@ -103,7 +103,7 @@ class VertexArray(List[Vertex]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
+            A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the object to
             find.findAt returns either a ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects based on the
             type of input.
 
@@ -188,17 +188,17 @@ class VertexArray(List[Vertex]):
         Parameters
         ----------
         xMin
-            A float specifying the minimum **X**-boundary of the bounding box.
+            A float specifying the minimum **X** boundary of the bounding box.
         yMin
-            A float specifying the minimum **Y**-boundary of the bounding box.
+            A float specifying the minimum **Y** boundary of the bounding box.
         zMin
-            A float specifying the minimum **Z**-boundary of the bounding box.
+            A float specifying the minimum **Z** boundary of the bounding box.
         xMax
-            A float specifying the maximum **X**-boundary of the bounding box.
+            A float specifying the maximum **X** boundary of the bounding box.
         yMax
-            A float specifying the maximum **Y**-boundary of the bounding box.
+            A float specifying the maximum **Y** boundary of the bounding box.
         zMax
-            A float specifying the maximum **Z**-boundary of the bounding box.
+            A float specifying the maximum **Z** boundary of the bounding box.
 
         Returns
         -------
@@ -216,10 +216,10 @@ class VertexArray(List[Vertex]):
         Parameters
         ----------
         center1
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the first end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the first end of the
             cylinder.
         center2
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the second end of the
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the second end of the
             cylinder.
         radius
             A float specifying the radius of the cylinder.
@@ -240,7 +240,7 @@ class VertexArray(List[Vertex]):
         Parameters
         ----------
         center
-            A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the sphere.
+            A tuple of the **X**, **Y**, and **Z** coordinates of the center of the sphere.
         radius
             A float specifying the radius of the sphere.
 
@@ -278,8 +278,8 @@ class VertexArray(List[Vertex]):
         Parameters
         ----------
         coordinates
-            A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**-coordinates of a point::
+            A sequence of a sequence of floats, where each sequence of floats describes the **X**,
+            **Y**, and **Z** coordinates of a point::
 
                 >>> r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
                 >>> r.keys()
@@ -298,12 +298,12 @@ class VertexArray(List[Vertex]):
             index 0. If a closest vertex could be found then the value is a sequence consisting of
             two objects. The first object in the sequence is a ConstrainedSketchVertex that is close to the input
             point referred to by the key. The second object in the sequence is a sequence of floats
-            that specifies the **X**-, **Y**-, and **Z**- location of the ConstrainedSketchVertex. See program listing
+            that specifies the **X**, **Y**, and **Z**  location of the ConstrainedSketchVertex. See program listing
             above.
 
         Raises
         ------
-        Error: The mask results in an empty sequence
-            An exception occurs if the resulting sequence is empty.
+        Error
+            The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
         ...

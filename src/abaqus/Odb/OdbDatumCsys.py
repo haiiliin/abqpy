@@ -34,13 +34,13 @@ class OdbDatumCsys:
     #: system.
     origin: Optional[float] = None
 
-    #: A tuple of Floats specifying a point on the **X**-axis.
+    #: A tuple of Floats specifying a point on the **X** axis.
     xAxis: Optional[float] = None
 
-    #: A tuple of Floats specifying a point on the **Y**-axis.
+    #: A tuple of Floats specifying a point on the **Y** axis.
     yAxis: Optional[float] = None
 
-    #: A tuple of Floats specifying a point on the **Z**-axis.
+    #: A tuple of Floats specifying a point on the **Z** axis.
     zAxis: Optional[float] = None
 
     @abaqus_method_doc
