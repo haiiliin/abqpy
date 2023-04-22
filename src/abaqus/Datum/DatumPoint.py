@@ -23,6 +23,6 @@ class DatumPoint(Datum):
             mdb.models[name].rootAssembly.instances[name].datums[i]
     """
 
-    #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
+    #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the datum.
     pointOn: Optional[float] = None

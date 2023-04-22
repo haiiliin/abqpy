@@ -163,8 +163,8 @@ class OdbStepBase:
 
         Raises
         ------
-        ValueError: previousStepName is invalid
-            If **previousStepName** is invalid.
+        ValueError
+            previousStepName is invalid, If **previousStepName** is invalid.
 
         """
         ...
@@ -194,8 +194,8 @@ class OdbStepBase:
 
         Raises
         ------
-        OdbError: Frame not found
-            If the OdbFrame object is not found.
+        OdbError
+            Frame not found, If the OdbFrame object is not found.
         """
         ...
 
@@ -216,8 +216,8 @@ class OdbStepBase:
 
         Raises
         ------
-        OdbError: Frame not found
-            If the OdbFrame object is not found.
+        OdbError
+            Frame not found, If the OdbFrame object is not found.
         """
         ...
 
@@ -254,8 +254,8 @@ class OdbStepBase:
 
         Raises
         ------
-        OdbError: Frame not found
-            If the OdbFrame object is not found.
+        OdbError
+            Frame not found, If the OdbFrame object is not found.
         """
         ...
 
@@ -281,8 +281,8 @@ class OdbStepBase:
 
         Raises
         ------
-        OdbError: HistoryRegion not found
-            If a HistoryRegion object is not found.
+        OdbError
+            HistoryRegion not found, If a HistoryRegion object is not found.
         """
         ...
 

@@ -427,8 +427,8 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-        Error: Renumbering can be applied to orphan mesh parts only
-            Renumbering is attempted on a native part
+        Error
+            Renumbering can be applied to orphan mesh parts only, Renumbering is attempted on a native part
         Error: Either startLabel and increment or offset must be specified
             Renumbering data is specified incorrectly
         Error: Specified data will result in invalid labels
@@ -467,8 +467,8 @@ class MeshEditPart(PartBase):
 
         Raises
         ------
-        Error: Renumbering can be applied to orphan mesh parts only
-            Renumbering is attempted on a native part.
+        Error
+            Renumbering can be applied to orphan mesh parts only, Renumbering is attempted on a native part.
         Error: Either startLabel and increment or offset must be specified
             Renumbering data is specified incorrectly.
         Error: Specified data will result in invalid labels
@@ -565,7 +565,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def wrapMesh(self, radius: float):
-        """This method wraps a planar orphan mesh part about the **Z**-axis.
+        """This method wraps a planar orphan mesh part about the **Z** axis.
 
         Parameters
         ----------

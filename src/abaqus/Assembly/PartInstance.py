@@ -68,23 +68,19 @@ class PartInstance:
     part: Optional[Part] = None
 
     #: A repository of Set objects specifying the sets created on the part. For more
-    #: information, see [Region
-    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: information, see Region commands.
     sets: Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the part. For more
-    #: information, see [Region
-    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: information, see Region commands.
     surfaces: Dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part. For more
-    #: information, see [Region
-    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: information, see Region commands.
     skins: Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part. For more
-    #: information, see [Region
-    #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
+    #: information, see Region commands.
     stringers: Dict[str, Stringer] = {}
 
     #: A VertexArray object.
@@ -116,8 +112,8 @@ class PartInstance:
 
     #: A repository of MeshFace objects specifying all the element faces in the part instance.
     #: For a given element and a given face index within that element, the corresponding
-    #: MeshFace object can be retrieved from the repository by using the key calculated as (i*8
-    #: + j), where i and j are zero-based element and face indices, respectively.
+    #: MeshFace object can be retrieved from the repository by using the key calculated as 
+    # (i*8 + j), where i and j are zero-based element and face indices, respectively.
     elemFaces: Dict[str, MeshFace] = {}
 
     #: A MeshFaceArray object.
@@ -462,8 +458,8 @@ class PartInstance:
 
     @abaqus_method_doc
     def getTranslation(self) -> Tuple[float, float, float]:
-        """This method returns a tuple of three Floats representing translation in the **X**-, **Y**-,
-        and **Z**-directions.
+        """This method returns a tuple of three Floats representing translation in the **X**, **Y**,
+        and **Z** directions.
 
         Returns
         -------
@@ -495,7 +491,7 @@ class PartInstance:
         Parameters
         ----------
         axisPoint
-            A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point on
+            A sequence of three Floats specifying the **X**, **Y**, and **Z** coordinates of a point on
             the axis.
         axisDirection
             A sequence of three Floats specifying the direction vector of the axis.

@@ -12,8 +12,8 @@ class FileImperfection(Imperfection):
     .. note::
         This object can be accessed by::
 
-        import assembly
-        mdb.models[name].rootAssembly.engineeringFeatures.imperfections[name]
+            import assembly
+            mdb.models[name].rootAssembly.engineeringFeatures.imperfections[name]
 
         The corresponding analysis keywords are:
 

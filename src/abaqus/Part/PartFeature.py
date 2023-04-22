@@ -121,7 +121,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def AnalyticRigidSurfRevolve(self, sketch: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object for an analytical rigid surface by revolving
-        the given ConstrainedSketch object by 360° about the **Y**-axis.
+        the given ConstrainedSketch object by 360° about the **Y** axis.
 
         .. note::
             This function can be accessed by::
@@ -634,12 +634,12 @@ class PartFeature(BaseFeature):
 
         Raises
         ------
-        Parterror: Cannot find a closed loop
-            If the given boundary is not a closed loop.
-        Parterror: Cannot find a closed loop
-            If the given boundary contains a zero length component.
-        Parterror: Cannot construct face geometry
-            If the underlying surface is too difficult to fit.
+        Parterror
+            Cannot find a closed loop, If the given boundary is not a closed loop.
+        Parterror
+            Cannot find a closed loop, If the given boundary contains a zero length component.
+        Parterror
+            Cannot construct face geometry, If the underlying surface is too difficult to fit.
         """
         ...
 
@@ -1394,8 +1394,8 @@ class PartFeature(BaseFeature):
 
         Raises
         ------
-        Parterror: None of the selected entities are redundant
-            If the selected entity is not a redundant entity.
+        Parterror
+            None of the selected entities are redundant, If the selected entity is not a redundant entity.
         """
         ...
 

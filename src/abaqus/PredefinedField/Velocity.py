@@ -41,11 +41,11 @@ class Velocity(PredefinedField):
     #: A Float specifying the angular velocity.
     omega: float
 
-    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting
+    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the starting
     #: point of the axis about which **omega** is defined.
     axisBegin: tuple
 
-    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of
+    #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the end point of
     #: the axis about which **omega** is defined.
     axisEnd: tuple
 
@@ -94,10 +94,10 @@ class Velocity(PredefinedField):
         omega
             A Float specifying the angular velocity.
         axisBegin
-            A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting
+            A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the starting
             point of the axis about which **omega** is defined.
         axisEnd
-            A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of
+            A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the end point of
             the axis about which **omega** is defined.
         field
             A String specifying the name of the AnalyticalField object associated with this
