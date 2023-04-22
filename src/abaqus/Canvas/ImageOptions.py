@@ -85,7 +85,7 @@ class ImageOptions(_CopyOptionsBase):
     #: is negative, the image is mirrored about its x-axis but its position is not affected.
     yScale: float = 1.0
 
-    #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters from the lower-left
+    #: A pair of Floats specifying the **X**  and **Y** offsets in millimeters from the lower-left
     #: corner of the viewport. The **origin** argument is ignored unless **positionMethod**
     #: =MANUAL. The default value is (0, 0).
     origin: Sequence[float] = (0.0, 0.0)
@@ -180,7 +180,7 @@ class ImageOptions(_CopyOptionsBase):
             ignored when **positionMethod** =FIT_TO_VIEWPORT. The default value is 1.0.When **yScale**
             is negative, the image is mirrored about its x-axis but its position is not affected.
         origin
-            A pair of Floats specifying the **X**- and **Y**-offsets in millimeters from the lower-left
+            A pair of Floats specifying the **X**  and **Y** offsets in millimeters from the lower-left
             corner of the viewport. The **origin** argument is ignored unless **positionMethod**
             =MANUAL. The default value is (0, 0).
         translucency

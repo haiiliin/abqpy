@@ -812,8 +812,8 @@ class AssemblyBase(AssemblyFeature):
 
         Raises
         ------
-        FeatureError: Regeneration failed
-            If one or more features in the assembly fails to regenerate
+        FeatureError
+            Regeneration failed, If one or more features in the assembly fails to regenerate
         """
         ...
 

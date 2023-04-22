@@ -4,7 +4,7 @@
 The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you must write codes that are compatible with Python 2 and Python 3.
 ```
 
-For more examples, check {doc}`examples`.
+For more examples, check {doc}`/examples/index`.
 
 Usually in Abaqus, we have several things to do:
 
@@ -386,5 +386,13 @@ np.savetxt('data.csv', data, header='time,U3', delimiter=',', comments='')
 
 ## Comments
 
-```{disqus}
-```
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
