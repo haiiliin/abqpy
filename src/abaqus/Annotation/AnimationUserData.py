@@ -97,15 +97,15 @@ class AnimationUserData(UserDataBase):
         name
             A String specifying the annotation repository key.
         startPoint
-            A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the start point **X**  and **Y** offsets in millimeters from
             **startAnchor**. The default value is (0, 0).
         endPoint
-            A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
+            A pair of Floats specifying the end point **X**  and **Y** offsets in millimeters from
             **endAnchor**. The default value is (0, 0).
         startAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
 
@@ -122,8 +122,8 @@ class AnimationUserData(UserDataBase):
             The default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
-            A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A Sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
 
@@ -260,12 +260,12 @@ class AnimationUserData(UserDataBase):
         text
             A String specifying the text of the Text object. The default value is an empty string.
         offset
-            A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
+            A pair of Floats specifying the **X**  and **Y** offsets in millimeters of the Text object
             from **anchor**. The default value is (0, 0).
         anchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
-            specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
-            A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
+            specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
+            A Sequence of three Floats specifies the **X**, **Y**, and **Z** coordinates of a point in
             the model coordinate system. A SymbolicConstant specifies a relative position. Possible
             values are:
 
@@ -282,7 +282,7 @@ class AnimationUserData(UserDataBase):
             The default value is BOTTOM_LEFT.
         referencePoint
             A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
-            Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
+            Floats specifies the **X**  and **Y** coordinates of the reference point of the Text
             annotation given as percentages of its width and height. The SymbolicConstant indicates
             a relative position. Possible values are:
 

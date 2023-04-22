@@ -32,4 +32,6 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
     .. automembers:: abaqus.Optimization
         :recursive:
         :exclude: OptimizationTaskModel, OptimizationTask
+
+    .. placeholder for empty members
 ```

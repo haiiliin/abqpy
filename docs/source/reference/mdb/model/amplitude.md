@@ -35,4 +35,6 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
     .. automembers:: abaqus.Amplitude
         :recursive:
         :exclude: AmplitudeModel, AmplitudeOdb
+
+    .. placeholder for empty members
 ```
