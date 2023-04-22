@@ -35,7 +35,7 @@ class CanvasSession(SessionBase):
         name
             A String specifying the repository key.
         origin
-            A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
+            A pair of Floats specifying the **X**  and **Y** coordinates in millimeters in the canvas
             coordinate system of the lower left corner of the viewport. The default origin is (0,
             0).
         width
@@ -70,8 +70,8 @@ class CanvasSession(SessionBase):
 
         Raises
         ------
-        SystemError: the current viewport may not be deleted
-            If the user attempts to delete the only viewport.
+        SystemError
+            the current viewport may not be deleted, If the user attempts to delete the only viewport.
         RangeError: width must be a Float in the range: 30 <= width <= **maxWidth**
             If **width** is out of range.
         RangeError: height must be a Float in the range: 30 <= width <= **maxHeight**

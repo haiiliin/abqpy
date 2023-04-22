@@ -124,12 +124,12 @@ class Movie(_OptionsBase):
 
         Raises
         ------
-        ValueError: Unable to open movie file
-            If **fileName** does not exist or can not be read.
-        ValueError: Unsupported movie format
-            If **fileName** references an unsupported movie file format.
-        ValueError: Unable to decode movie file
-            If the contents of **fileName** are corrupt or can not be decoded.
+        ValueError
+            Unable to open movie file, If **fileName** does not exist or can not be read.
+        ValueError
+            Unsupported movie format, If **fileName** references an unsupported movie file format.
+        ValueError
+            Unable to decode movie file, If the contents of **fileName** are corrupt or can not be decoded.
         """
         self.name = name
         self.fileName = fileName
