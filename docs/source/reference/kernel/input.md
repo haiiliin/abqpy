@@ -21,4 +21,6 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
     .. automembers:: abaqus.InputFileParser
         :recursive:
         :exclude: InputFile
+
+    .. placeholder for empty members
 ```
