@@ -22,4 +22,6 @@ Sketcher commands are used to define the entities, such as the geometry, constra
     .. automembers:: abaqus.Sketcher
         :recursive:
         :exclude: SketchModel
+
+    .. placeholder for empty members
 ```

@@ -108,8 +108,8 @@ class OdbAssemblyBase:
 
         Raises
         ------
-        OdbError: Connector orientation assignment requires element set
-            If **region** is not an element set.
+        OdbError
+            Connector orientation assignment requires element set, If **region** is not an element set.
         """
         ...
 
@@ -127,8 +127,8 @@ class OdbAssemblyBase:
 
         Raises
         ------
-        OdbError: Section assignment requires element set
-            If **region** is not an element set.
+        OdbError
+            Section assignment requires element set, If **region** is not an element set.
         """
         ...
 
@@ -168,11 +168,11 @@ class OdbAssemblyBase:
 
         Raises
         ------
-        OdbError: Addition of this element type is not permitted at the assembly level
-            Only certain element types are permitted at the assembly level. e.g., connector
+        OdbError
+            Addition of this element type is not permitted at the assembly level, Only certain element types are permitted at the assembly level. e.g., connector
             elements.
-        OdbError: Connectivity array must be provided for all element
-            If length of label array does not match connectivity data length.
+        OdbError
+            Connectivity array must be provided for all element, If length of label array does not match connectivity data length.
         """
         ...
 
@@ -193,10 +193,10 @@ class OdbAssemblyBase:
 
         Raises
         ------
-        OdbError: Number of node labels and coordinates does not match
-            If length of labels does not match length of coordinates.
-        OdbError: Node location specification does not correspond to part dimensions
-            If width of coordinate array does not match assembly dimension.
+        OdbError
+            Number of node labels and coordinates does not match, If length of labels does not match length of coordinates.
+        OdbError
+            Node location specification does not correspond to part dimensions, If width of coordinate array does not match assembly dimension.
         """
         ...
 
@@ -234,7 +234,7 @@ class OdbAssemblyBase:
 
         Raises
         ------
-        OdbError: Rigid body definition requires a node set
-            If **referenceNode** is not a node set
+        OdbError
+            Rigid body definition requires a node set, If **referenceNode** is not a node set
         """
         ...

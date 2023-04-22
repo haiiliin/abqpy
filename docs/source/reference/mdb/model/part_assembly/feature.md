@@ -10,4 +10,6 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
     .. automembers:: abaqus.Feature
         :recursive:
+
+    .. placeholder for empty members
 ```

@@ -223,9 +223,9 @@ class OdbAssembly(OdbAssemblyBase):
             specifies a point on the 1-axis.The second sequence specifies a point on the 2-axis.The
             third sequence specifies a point on the 3-axis.The fourth sequence specifies the
             translation of the local coordinate system from the origin to its intended location.For
-            example, the following sequence moves a part 10 units in the **X**-direction with no
+            example, the following sequence moves a part 10 units in the **X** direction with no
             rotation:`localCoordSystem = ((1, 0, 0), (0, 1, 0), (0, 0, 1), (10, 0, 0))`The following
-            sequence moves a part 5 units in the **X**-direction with rotation:
+            sequence moves a part 5 units in the **X** direction with rotation:
             `localCoordSystem = ((0, 1, 0), (1, 0, 0), (0, 0, 1), (5, 0, 0))`transforms a part
             containing the two points`Pt1= (1,0,0) Pt2= (2,0,0)` to `Pt1 = (0, 6, 0) Pt2 = (0, 7, 0)`
 
