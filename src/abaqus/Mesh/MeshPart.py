@@ -714,8 +714,8 @@ class MeshPart(PartBase):
 
         Raises
         ------
-        Error: Part does not contain native geometry
-            An exception occurs if the part does not contain native geometry.
+        Error
+            Part does not contain native geometry, An exception occurs if the part does not contain native geometry.
         """
         ...
 

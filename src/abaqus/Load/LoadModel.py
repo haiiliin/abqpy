@@ -1123,7 +1123,7 @@ class LoadModel(ModelBase):
         ur3
             A Boolean specifying the rotation about the 3-direction as a free direction.
         referencePoint
-            A sequence of Floats specifying the **X**, **Y** and **Z**-coordinates of a fixed rotation
+            A sequence of Floats specifying the **X**, **Y** and **Z** coordinates of a fixed rotation
             point or a point on the rotation axis or a point on the symmetry line, about which
             rotations are defined. Such a point must be specified only for certain combinations of
             free directions.
