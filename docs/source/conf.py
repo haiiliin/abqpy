@@ -68,7 +68,6 @@ extensions = [
     'sphinx_codeautolink',
     'sphinx_comments',
     'sphinx_design',
-    'sphinx_disqus.disqus',
     'sphinx_gallery.gen_gallery',
     'sphinx_togglebutton',
     'sphinx_toolbox.confval',
@@ -85,9 +84,6 @@ comments_config = {
       "repo": "haiiliin/abqpy",
    }
 }
-
-# sphinx-disqus configuration
-disqus_shortname = 'docs-abqpy-com'
 
 # automembers configuration
 automembers_autodoc_options = [

@@ -102,8 +102,3 @@ python -m abqpy -g -- script.py [args ...]
 ```
 
 Which provides a way to change the default abaqus execution procedure to GUI mode.
-
-## Comments
-
-```{disqus}
-```

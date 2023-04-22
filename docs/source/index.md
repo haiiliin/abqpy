@@ -77,8 +77,3 @@ policy
 - {ref}`genindex`
 - {ref}`modindex`
 - {ref}`search`
-
-## Comments
-
-```{disqus}
-```

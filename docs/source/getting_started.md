@@ -169,8 +169,3 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
   :alt: Extract Output Data
   :width: 100%
   ```
-
-## Comments
-
-```{disqus}
-```
