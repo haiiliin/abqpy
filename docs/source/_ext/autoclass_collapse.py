@@ -29,3 +29,4 @@ def setup(app: Sphinx) -> None:
     app.setup_extension('sphinx.ext.autodoc')  # Require autodoc extension
     app.setup_extension('sphinx_togglebutton')  # Require sphinx-togglebutton extension
     app.add_autodocumenter(AutoCollapsibleClassDocumenter)
+    return {'version': '0.0.1', 'parallel_read_safe': True, 'parallel_write_safe': True}
