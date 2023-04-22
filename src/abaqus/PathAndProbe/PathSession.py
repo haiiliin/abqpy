@@ -83,7 +83,7 @@ class PathSession(SessionBase):
             The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
             circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL.
         radialAngle
-            A Float specifying the angle between the radial path and the **X**-axis of the specified
+            A Float specifying the angle between the radial path and the **X** axis of the specified
             coordinate system. This argument is valid only when **type** = RADIAL.
         startRadius
             The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial

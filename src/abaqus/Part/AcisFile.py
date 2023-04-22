@@ -45,10 +45,10 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: ACIS File version exceeds Kernel
-            File is from a newer version of ACIS than the CAE kernel.
-        Texterror: Failed to read ACIS file
-            The data in the ACIS file are corrupted.
+        Texterror
+            ACIS File version exceeds Kernel, File is from a newer version of ACIS than the CAE kernel.
+        Texterror
+            Failed to read ACIS file, The data in the ACIS file are corrupted.
         """
         ...
 
@@ -195,8 +195,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read IGES file
-            The data in the IGES file are corrupted.
+        Texterror
+            Failed to read IGES file, The data in the IGES file are corrupted.
         """
         ...
 
@@ -253,8 +253,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read STEP file
-            The data in the STEP file are corrupted.
+        Texterror
+            Failed to read STEP file, The data in the STEP file are corrupted.
         """
         ...
 
@@ -280,8 +280,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read VDA file
-            The data in the VDA-FS file are corrupted.
+        Texterror
+            Failed to read VDA file, The data in the VDA-FS file are corrupted.
         """
         ...
 
@@ -315,8 +315,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read Solidworks file
-            The data in the Solidworks file are corrupted.
+        Texterror
+            Failed to read Solidworks file, The data in the Solidworks file are corrupted.
         """
         ...
 

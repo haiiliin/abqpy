@@ -57,11 +57,11 @@ class ProbeReport:
             SPECIFY. The default value is NO_LIMIT.
         printTotal
             A Boolean specifying whether to print the total value of either the field output result
-            (when **probeObject** = ”ODB”) or the **x**- and **y**-coordinates (when **probeObject** = XYPlot).
+            (when **probeObject** = ”ODB”) or the **X**  and **Y** coordinates (when **probeObject** = XYPlot).
             The default value is OFF.
         printMinMax
             A Boolean specifying whether to print the minimum and maximum values of either the field
-            output result (when **probeObject** = ”ODB”) or the **x**- and **y**-coordinates (when
+            output result (when **probeObject** = ”ODB”) or the **X**  and **Y** coordinates (when
             **probeObject** = XYPlot). The default value is OFF.
         """
         ...
