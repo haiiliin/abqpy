@@ -10,4 +10,6 @@ Display options commands are used to store settings that specify how assemblies 
 
     .. automembers:: abaqus.DisplayOptions
         :recursive:
+
+    .. placeholder for empty members
 ```

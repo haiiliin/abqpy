@@ -135,8 +135,8 @@ class OdbBase:
 
         Raises
         ------
-        OdbError: Frame not found
-            If the exact frame is not found.
+        OdbError
+            Frame not found, If the exact frame is not found.
         """
         ...
 

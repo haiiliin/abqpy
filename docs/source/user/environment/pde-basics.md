@@ -1,15 +1,3 @@
----
-substitutions:
-  afxI_messageArea: |-
-    ```{image} /images/afxI_messageArea.png
-    :height: 20pt
-    ```
-  ico_guiCli: |-
-    ```{image} /images/ico_guiCli.png
-    :height: 20pt
-    ```
----
-
 # Abaqus PDE basics
 
 The following sections describe the basic functions of the PDE.
@@ -224,6 +212,6 @@ The following items are available from the **Settings** menu:
 
 The message area and the GUI command line interface share the space at the bottom of the Abaqus PDE, similar to the kernel command line interface in Abaqus/CAE. (For more information, see [Components of the main window](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all).) The message area is displayed by default. It displays messages and warnings as you run scripts in the Abaqus PDE.
 
-The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click {{ ico_guiCli }} in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (>>>) and secondary (...) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click {{ afxI_messageArea }} to display the message area.
+The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click ![ico_guiCli](/images/ico_guiCli.png) in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (>>>) and secondary (...) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click ![afxI_messageArea](/images/afxI_messageArea.png) to display the message area.
 
 If new messages are generated in the message area while the GUI command line interface is active, the background around the message area icon turns red. The background reverts to its normal color when you display the message area.

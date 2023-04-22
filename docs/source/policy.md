@@ -5,5 +5,13 @@ are off-topic, rude, or disrespectful. We also reserve the right to ban users wh
 
 ## Comments
 
-```{disqus}
-```
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
