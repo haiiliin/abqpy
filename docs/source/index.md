@@ -72,19 +72,6 @@ Abaqus <https://www.3ds.com/products-services/simulia/products/abaqus/>
 policy
 ```
 
-## Comments
-
-<script
-   type="text/javascript"
-   src="https://utteranc.es/client.js"
-   async="async"
-   repo="haiiliin/abqpy"
-   issue-term="pathname"
-   theme="github-light"
-   label="💬 comment"
-   crossorigin="anonymous"
-/>
-
 # Indices and tables
 
 - {ref}`genindex`
