@@ -102,3 +102,16 @@ python -m abqpy -g -- script.py [args ...]
 ```
 
 Which provides a way to change the default abaqus execution procedure to GUI mode.
+
+## Comments
+
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>

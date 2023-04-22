@@ -77,3 +77,16 @@ policy
 - {ref}`genindex`
 - {ref}`modindex`
 - {ref}`search`
+
+## Comments
+
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>

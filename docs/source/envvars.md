@@ -82,3 +82,16 @@ and load a *database* file, i.e., it will run the following command line.
 ```sh
 abaqus cae script=script.py database=file.odb -- [args ...]
 ```
+
+## Comments
+
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="haiiliin/abqpy"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
