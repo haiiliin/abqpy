@@ -690,8 +690,8 @@ class MeshAssembly(AssemblyBase):
 
         Raises
         ------
-        Error: Part instance does not contain native geometry
-            An exception occurs if the part instance does not contain native geometry.
+        Error
+            Part instance does not contain native geometry, An exception occurs if the part instance does not contain native geometry.
         """
         ...
 

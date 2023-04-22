@@ -6,15 +6,17 @@ Annotation commands are used to create, position, and modify viewport annotation
 
 ```{eval-rst}
 .. automethod:: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow
+    :noindex:
 ```
 
 ```{eval-rst}
 .. automethod:: abaqus.Annotation.AnimationUserData.AnimationUserData.Text
+    :noindex:
 ```
 
 ```{eval-rst}
 .. automethod:: abaqus.Annotation.AnimationUserData.AnimationUserData.XYData
-
+    :noindex:
 ```
 
 ## Other Classes
@@ -25,4 +27,6 @@ Annotation commands are used to create, position, and modify viewport annotation
 
     .. automembers:: abaqus.Annotation
         :recursive:
+
+    .. placeholder for empty members
 ```

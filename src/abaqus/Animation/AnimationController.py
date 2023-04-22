@@ -41,8 +41,8 @@ class AnimationController(_OptionsBase):
 
         Raises
         ------
-        AnimationError: animationType not set
-            If **animationType** = NONE:
+        AnimationError
+            animationType not set, If **animationType** = NONE:
         """
         # TODO: implement this method
         ...

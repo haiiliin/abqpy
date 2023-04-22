@@ -10,4 +10,6 @@ The basic geometry commands create geometric entities that are referenced by Par
 
     .. automembers:: abaqus.BasicGeometry
         :recursive:
+
+    .. placeholder for empty members
 ```

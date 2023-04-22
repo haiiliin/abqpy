@@ -68,7 +68,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Parameters
         ----------
         coordinates
-            A sequence of Floats specifying the **X**-, **Y**-, and **Z**- coordinates of the object to
+            A sequence of Floats specifying the **X**, **Y**, and **Z**  coordinates of the object to
             find.findAt returns either an IgnoredEdge object or a sequence of IgnoredEdge objects
             based on the type of input.
 
@@ -143,8 +143,8 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Parameters
         ----------
         coordinates
-            A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
-            **Y**-, and **Z**-coordinates of a point::
+            A sequence of a sequence of floats, where each sequence of floats describes the **X**,
+            **Y**, and **Z** coordinates of a point::
 
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
                 >>> r.keys()
@@ -163,12 +163,12 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
             index 0. If a closest IgnoredEdge could be found then the value is a sequence consisting
             of two objects. The first object in the sequence is an IgnoredEdge that is close to the
             input point referred to by the key. The second object in the sequence, is a sequence of
-            floats which specify the **X**-, **Y**-, and **Z**- location of the closest point on the
+            floats which specify the **X**, **Y**, and **Z**  location of the closest point on the
             IgnoredEdge to the given point. See program listing above.
 
         Raises
         ------
-        Error: The mask results in an empty sequence
-            An exception occurs if the resulting sequence is empty.
+        Error
+            The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
         ...

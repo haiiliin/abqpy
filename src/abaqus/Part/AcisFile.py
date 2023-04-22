@@ -45,10 +45,10 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: ACIS File version exceeds Kernel
-            File is from a newer version of ACIS than the CAE kernel.
-        Texterror: Failed to read ACIS file
-            The data in the ACIS file are corrupted.
+        Texterror
+            ACIS File version exceeds Kernel, File is from a newer version of ACIS than the CAE kernel.
+        Texterror
+            Failed to read ACIS file, The data in the ACIS file are corrupted.
         """
         ...
 
@@ -195,8 +195,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read IGES file
-            The data in the IGES file are corrupted.
+        Texterror
+            Failed to read IGES file, The data in the IGES file are corrupted.
         """
         ...
 
@@ -253,8 +253,8 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read STEP file
-            The data in the STEP file are corrupted.
+        Texterror
+            Failed to read STEP file, The data in the STEP file are corrupted.
         """
         ...
 
@@ -280,13 +280,52 @@ class AcisFile:
 
         Raises
         ------
-        Texterror: Failed to read VDA file
-            The data in the VDA-FS file are corrupted.
+        Texterror
+            Failed to read VDA file, The data in the VDA-FS file are corrupted.
         """
         ...
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def writeAcisFile(self, fileName: str, version: float = None):
+=======
+    def openSolidworks(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
+        """This method creates an AcisFile object from a file containing Solidworks format
+        geometry. This object is subsequently used by the PartFromGeometryFile method.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.openAcis
+
+        .. versionadded:: 2020
+            The `openSolidworks` method was added.
+
+        Parameters
+        ----------
+        fileName
+            A String specifying the path to the Solidworks file to open.
+        topology
+            A SymbolicConstant specifying the topology of the data to be read from the file and of
+            the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology** = SOLID,
+            Abaqus/CAE attempts to attach cells to create a solid entity. If **topology** = SHELL,
+            Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value
+            is SOLID.
+
+        Returns
+        -------
+            An AcisFile object.
+
+        Raises
+        ------
+        Texterror
+            Failed to read Solidworks file, The data in the Solidworks file are corrupted.
+        """
+        ...
+
+    @abaqus_method_doc
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
+>>>>>>> cb818a60 ([bugfix] Fix docs warnings (#4104))
         """This method exports the assembly to a named file in ACIS format.
 
         Parameters
