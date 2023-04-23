@@ -1,9 +1,5 @@
 from typing import Union, Optional, Sequence
 
-from abaqus.Material.Gap.GapConductance import GapConductance
-from abaqus.Material.Gap.GapConvection import GapConvection
-from abaqus.Material.Gap.GapRadiation import GapRadiation
-from abaqus.Material.MaterialBase import MaterialBase
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
@@ -21,7 +17,10 @@ from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
 from .Electromagnetic.MagneticPermeability import MagneticPermeability
 from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
+from .Gap.GapConductance import GapConductance
+from .Gap.GapConvection import GapConvection
 from .Gap.GapFlow import GapFlow
+from .Gap.GapRadiation import GapRadiation
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
@@ -32,6 +31,7 @@ from .HeatTransfer.LatentHeat import LatentHeat
 from .HeatTransfer.SpecificHeat import SpecificHeat
 from .MassDiffusion.Diffusivity import Diffusivity
 from .MassDiffusion.Solubility import Solubility
+from .MaterialBase import MaterialBase
 from .Mechanical.Damping import Damping
 from .Mechanical.Expansion import Expansion
 from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
