@@ -56,15 +56,11 @@ from .PoreFluidFlow.Sorption import Sorption
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import FREQUENCY
-=======
 from .User.Depvar import Depvar
 from .User.UserDefinedField import UserDefinedField
 from .User.UserMaterial import UserMaterial
 from .User.UserOutputVariables import UserOutputVariables
-from ..UtilityAndView.abaqusConstants import FREQUENCY, RAMBERG_OSGOOD
->>>>>>> 39cbd835 ([refactor] refactor the abaqus.Material.Others package (#4130))
+from ..UtilityAndView.abaqusConstants import FREQUENCY
 
 
 @abaqus_class_doc
