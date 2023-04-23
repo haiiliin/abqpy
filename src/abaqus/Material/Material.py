@@ -1,6 +1,5 @@
 from typing import Union, Optional
 
-from abaqus.Material.MaterialBase import MaterialBase
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
@@ -29,6 +28,7 @@ from .HeatTransfer.LatentHeat import LatentHeat
 from .HeatTransfer.SpecificHeat import SpecificHeat
 from .MassDiffusion.Diffusivity import Diffusivity
 from .MassDiffusion.Solubility import Solubility
+from .MaterialBase import MaterialBase
 from .Mechanical.Damping import Damping
 from .Mechanical.Expansion import Expansion
 from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
