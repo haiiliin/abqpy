@@ -30,7 +30,7 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   A GeomSequence is a sequence of geometry objects, such as Vertices or Edges. An Edge sequence is derived from the GeomSequence object. Use the len() function to determine the number of objects in a GeomSequence. A GeomSequence has methods and members too.
 
-  For example, the following creates a three-dimensional part by extruding a 70 × 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects.
+  For example, the following creates a three-dimensional part by extruding a 70 x 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects.
 
   ```python2
   mdb.Model('Body')
