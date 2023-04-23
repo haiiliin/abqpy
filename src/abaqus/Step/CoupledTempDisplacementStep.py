@@ -73,7 +73,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
-    #: 2×10⁻⁴.
+    #: 2x10⁻⁴.
     stabilizationMagnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -291,7 +291,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
-            2×10⁻⁴.
+            2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -402,7 +402,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
-            2×10⁻⁴.
+            2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
