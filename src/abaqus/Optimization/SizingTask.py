@@ -51,7 +51,7 @@ class SizingTask(OptimizationTask):
     abaqusSensitivities: Boolean = False
 
     #: A Float specifying the stop criteria based on the change in element thickness. The
-    #: default value is 0.5 × 10⁻².
+    #: default value is 0.5 x 10⁻².
     elementThicknessDeltaStopCriteria: float = 0
 
     #: A Boolean specifying whether to exclude elements with boundary conditions from the
@@ -124,7 +124,7 @@ class SizingTask(OptimizationTask):
                 The `abaqusSensitivities` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10⁻².
+            default value is 0.5 x 10⁻².
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.
@@ -186,7 +186,7 @@ class SizingTask(OptimizationTask):
                 The `abaqusSensitivities` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10⁻².
+            default value is 0.5 x 10⁻².
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.
