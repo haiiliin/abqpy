@@ -17,7 +17,7 @@ The problem investigates the effects on the accuracy of the bending moment compu
 :align: center
 :width: 50%
 
-A 4 × 4 quadrilateral mesh of the plate.
+A 4 x 4 quadrilateral mesh of the plate.
 ```
 
 The plate is loaded by a uniform pressure of $1\times10^{-6}$ MPa applied over the entire surface. The edges of the plate are all simply supported. The analysis is performed for five different values of the skew angle, $\delta$: 90°, 80°, 60°, 40°, and 30°. The analysis is performed for two different quadrilateral elements: S4 and S8R.
@@ -71,7 +71,7 @@ Start Abaqus/CAE, and create a model database from the **Start Session** dialog 
 
 - **Mesh**
 
-  Create a 4 × 4 mesh of quadrilateral elements on the plate.
+  Create a 4 x 4 mesh of quadrilateral elements on the plate.
 
 - **Job**
 
