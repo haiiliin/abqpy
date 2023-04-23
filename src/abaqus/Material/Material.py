@@ -1774,7 +1774,7 @@ class Material(MaterialBase):
         mu0
             A Float specifying the relaxation coefficient μ0. The default value is 10⁻⁴.
         mu1
-            A Float specifying the relaxation coefficient μ1. The default value is 0.5×10⁻².
+            A Float specifying the relaxation coefficient μ1. The default value is 0.5x10⁻².
         alpha
             A Float specifying the relaxation coefficient α. The default value is 2.0.
 
