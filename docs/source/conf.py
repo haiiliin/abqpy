@@ -108,6 +108,7 @@ autoapi_options = [
     'special-members', 
     # 'imported-members', 
 ]
+autoapi_template_dir = '_autoapi_templates'
 
 # Default behavior for code block concatenation for sphinx_codeautolink
 codeautolink_concat_default = False
