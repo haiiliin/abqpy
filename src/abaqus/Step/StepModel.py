@@ -380,7 +380,7 @@ class StepModel(ModelBase):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
-            2×10⁻⁴.
+            2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -525,7 +525,7 @@ class StepModel(ModelBase):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
-            2×10⁻⁴.
+            2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -2003,7 +2003,7 @@ class StepModel(ModelBase):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         creep
             A Boolean specifying whether a creep response occurs during this step. The default value
             is ON.
@@ -2347,7 +2347,7 @@ class StepModel(ModelBase):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         adiabatic
             A Boolean specifying whether to perform an adiabatic stress analysis. The default value
             is OFF.
@@ -3036,7 +3036,7 @@ class StepModel(ModelBase):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
