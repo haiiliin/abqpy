@@ -55,7 +55,7 @@ os.environ['ABQPY_MAKE_DOCS'] = 'true'
 extensions = [
     'autoclasstoc',
     'automembers',
-    'autoclass_collapse',
+    'classdocumenter',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
