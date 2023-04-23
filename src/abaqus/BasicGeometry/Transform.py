@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 @abaqus_class_doc
 class Transform:
     """The MakeSketchTransform method creates a Transform object. The Transform object has no
-    direct constructor. A Transform object is a 4×3 matrix of Floats that represents the
+    direct constructor. A Transform object is a 4x3 matrix of Floats that represents the
     transformation from sketch coordinates to assembly coordinates or to part coordinates.
 
     .. note::

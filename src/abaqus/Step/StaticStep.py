@@ -67,7 +67,7 @@ class StaticStep(AnalysisStep):
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-    #: value is 2×10⁻⁴.
+    #: value is 2x10⁻⁴.
     stabilizationMagnitude: Optional[float] = None
 
     #: A Boolean specifying whether to perform an adiabatic stress analysis. The default value
@@ -297,7 +297,7 @@ class StaticStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         adiabatic
             A Boolean specifying whether to perform an adiabatic stress analysis. The default value
             is OFF.
@@ -417,7 +417,7 @@ class StaticStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         adiabatic
             A Boolean specifying whether to perform an adiabatic stress analysis. The default value
             is OFF.
