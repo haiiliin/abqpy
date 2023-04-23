@@ -124,7 +124,7 @@ class FieldValue:
     #: A SectionPoint object.
     sectionPoint: Optional[SectionPoint] = None
 
-    #: A tuple of tuples of Floats specifying the 3 × 3 matrix of Floats specifying the
+    #: A tuple of tuples of Floats specifying the 3 x 3 matrix of Floats specifying the
     #: direction cosines of the local coordinate system (the rotation from global to local).
     #: Each sequence represents a row in the direction cosine matrix. **localCoordSystem** is
     #: available for TENSOR data written in a local coordinate system. It is also available for
@@ -133,7 +133,7 @@ class FieldValue:
     #: be thrown.
     localCoordSystem: tuple = ()
 
-    #: A tuple of tuples of Floats specifying the 3 × 3 matrix of Doubles specifying the
+    #: A tuple of tuples of Floats specifying the 3 x 3 matrix of Doubles specifying the
     #: direction cosines of the local coordinate system (the rotation from global to local).
     #: Each sequence represents a row in the direction cosine matrix. **localCoordSystemDouble**
     #: is available for TENSOR data written in a local coordinate system. It is also available
