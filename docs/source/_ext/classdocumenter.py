@@ -2,11 +2,8 @@ from sphinx.application import Sphinx
 from sphinx.ext.autodoc import ClassDocumenter, ALL
 
 
-class AutoCollapsibleClassDocumenter(ClassDocumenter):
-    objtype = 'class'
-    directivetype = ClassDocumenter.objtype
-    priority = 10 + ClassDocumenter.priority
-    option_spec = dict(ClassDocumenter.option_spec)
+class AbqpyClassDocumenter(ClassDocumenter):
+    """Toggles the class members section"""
 
     def document_members(self, all_members: bool = False) -> None:
         # find out all the members that are documented
@@ -19,14 +16,18 @@ class AutoCollapsibleClassDocumenter(ClassDocumenter):
             self.add_line('', sourcename)
             self.add_line('.. toggle::', sourcename)
             self.add_line('', sourcename)
-            self.indent += ' ' * 4
             self.add_line('    .. placeholder for empty members', sourcename)
             self.add_line('', sourcename)
+            self.indent += ' ' * 4
         super().document_members(all_members)
 
 
-def setup(app: Sphinx) -> None:
+def setup(app: Sphinx):
     app.setup_extension('sphinx.ext.autodoc')  # Require autodoc extension
     app.setup_extension('sphinx_togglebutton')  # Require sphinx-togglebutton extension
-    app.add_autodocumenter(AutoCollapsibleClassDocumenter)
-    return {'version': '0.0.1', 'parallel_read_safe': True, 'parallel_write_safe': True}
+    app.add_autodocumenter(AbqpyClassDocumenter, override=True)
+    return {
+        'version': '0.0.1',
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }
