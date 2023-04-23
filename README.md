@@ -1,13 +1,8 @@
 # abqpy 2021
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
-<<<<<<< HEAD
-[![docs](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs.yml)
-[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2021/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2021)
-=======
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
-[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2023/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2023)
->>>>>>> 4b7e5579 ([bugfix] Update classdocumenter extension (#4121))
+[![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2021/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2021)
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 
