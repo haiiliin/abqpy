@@ -74,7 +74,7 @@ class TopologyTask(OptimizationTask):
     densityUpdateStrategy: SymbolicConstant = NORMAL
 
     #: A Float specifying the stop criteria based upon the change in element densities. The
-    #: default value is 0.5×10⁻².
+    #: default value is 0.5x10⁻².
     elementDensityDeltaStopCriteria: float = 0
 
     #: None or a Float specifying the mesh filter radius for mesh independence and minimum
@@ -264,7 +264,7 @@ class TopologyTask(OptimizationTask):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10⁻².
+            default value is 0.5x10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.
@@ -425,7 +425,7 @@ class TopologyTask(OptimizationTask):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10⁻².
+            default value is 0.5x10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.
