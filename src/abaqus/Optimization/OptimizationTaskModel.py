@@ -465,7 +465,7 @@ class OptimizationTaskModel(ModelBase):
                 The `abaqusSensitivities` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
-            default value is 0.5 × 10⁻².
+            default value is 0.5 x 10⁻².
         freezeBoundaryConditionRegions
             A Boolean specifying whether to exclude elements with boundary conditions from the
             optimization. The default value is OFF.
@@ -588,7 +588,7 @@ class OptimizationTaskModel(ModelBase):
             The default value is NORMAL.
         elementDensityDeltaStopCriteria
             A Float specifying the stop criteria based upon the change in element densities. The
-            default value is 0.5×10⁻².
+            default value is 0.5x10⁻².
         filterRadius
             None or a Float specifying the mesh filter radius for mesh independence and minimum
             size. The default value is None.

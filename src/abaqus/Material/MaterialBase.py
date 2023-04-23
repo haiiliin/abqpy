@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from .Acoustic.AcousticMedium import AcousticMedium
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
@@ -8,39 +9,28 @@ from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
 from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
+from .Electromagnetic.Dielectric import Dielectric
+from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
+from .Electromagnetic.MagneticPermeability import MagneticPermeability
+from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
 from .Gap.GapFlow import GapFlow
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
+from .HeatTransfer.Conductivity import Conductivity
+from .HeatTransfer.HeatGeneration import HeatGeneration
+from .HeatTransfer.InelasticHeatFraction import InelasticHeatFraction
+from .HeatTransfer.JouleHeatFraction import JouleHeatFraction
+from .HeatTransfer.LatentHeat import LatentHeat
+from .HeatTransfer.SpecificHeat import SpecificHeat
+from .MassDiffusion.Diffusivity import Diffusivity
+from .MassDiffusion.Solubility import Solubility
+from .Mechanical.Damping import Damping
+from .Mechanical.Expansion import Expansion
+from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
+from .Mechanical.Viscosity.Viscosity import Viscosity
 from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
-from .Others.Acoustic.AcousticMedium import AcousticMedium
-from .Others.Electromagnetic.Dielectric import Dielectric
-from .Others.Electromagnetic.ElectricalConductivity import ElectricalConductivity
-from .Others.Electromagnetic.MagneticPermeability import MagneticPermeability
-from .Others.Electromagnetic.Piezoelectric import Piezoelectric
-from .Others.HeatTransfer.Conductivity import Conductivity
-from .Others.HeatTransfer.HeatGeneration import HeatGeneration
-from .Others.HeatTransfer.InelasticHeatFraction import InelasticHeatFraction
-from .Others.HeatTransfer.JouleHeatFraction import JouleHeatFraction
-from .Others.HeatTransfer.LatentHeat import LatentHeat
-from .Others.HeatTransfer.SpecificHeat import SpecificHeat
-from .Others.MassDiffusion.Diffusivity import Diffusivity
-from .Others.MassDiffusion.Solubility import Solubility
-from .Others.Mechanical.Damping import Damping
-from .Others.Mechanical.Expansion import Expansion
-from .Others.Mechanical.PoreFluidExpansion import PoreFluidExpansion
-from .Others.Mechanical.Viscosity.Viscosity import Viscosity
-from .Others.PoreFluidFlow.FluidLeakoff import FluidLeakoff
-from .Others.PoreFluidFlow.Gel import Gel
-from .Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling import MoistureSwelling
-from .Others.PoreFluidFlow.Permeability.Permeability import Permeability
-from .Others.PoreFluidFlow.PorousBulkModuli import PorousBulkModuli
-from .Others.PoreFluidFlow.Sorption import Sorption
-from .Others.User.Depvar import Depvar
-from .Others.User.UserDefinedField import UserDefinedField
-from .Others.User.UserMaterial import UserMaterial
-from .Others.User.UserOutputVariables import UserOutputVariables
 from .Plastic.Concrete.BrittleCracking import BrittleCracking
 from .Plastic.Concrete.Concrete import Concrete
 from .Plastic.Concrete.ConcreteDamagedPlasticity import ConcreteDamagedPlasticity
@@ -56,10 +46,24 @@ from .Plastic.Metal.TwoLayerViscoPlasticity.Viscous import Viscous
 from .Plastic.MohrCoulomb.MohrCoulombPlasticity import MohrCoulombPlasticity
 from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
+from .PoreFluidFlow.FluidLeakoff import FluidLeakoff
+from .PoreFluidFlow.Gel import Gel
+from .PoreFluidFlow.MoistureSwelling.MoistureSwelling import MoistureSwelling
+from .PoreFluidFlow.Permeability.Permeability import Permeability
+from .PoreFluidFlow.PorousBulkModuli import PorousBulkModuli
+from .PoreFluidFlow.Sorption import Sorption
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import FREQUENCY
+=======
+from .User.Depvar import Depvar
+from .User.UserDefinedField import UserDefinedField
+from .User.UserMaterial import UserMaterial
+from .User.UserOutputVariables import UserOutputVariables
+from ..UtilityAndView.abaqusConstants import FREQUENCY, RAMBERG_OSGOOD
+>>>>>>> 39cbd835 ([refactor] refactor the abaqus.Material.Others package (#4130))
 
 
 @abaqus_class_doc
