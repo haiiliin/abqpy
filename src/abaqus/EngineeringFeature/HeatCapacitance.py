@@ -21,7 +21,7 @@ class HeatCapacitance(Inertia):
 
         The table data specify the following:
 
-        - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
+        - Heat capacitance magnitude, ρcVρ⁢c⁢V (density x specific heat x volume).
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.

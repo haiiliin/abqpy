@@ -68,7 +68,7 @@ class ViscoStep(AnalysisStep):
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-    #: value is 2×10⁻⁴.
+    #: value is 2x10⁻⁴.
     stabilizationMagnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -287,7 +287,7 @@ class ViscoStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -398,7 +398,7 @@ class ViscoStep(AnalysisStep):
         stabilizationMagnitude
             A Float specifying the damping intensity of the automatic damping algorithm if the
             problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
-            value is 2×10⁻⁴.
+            value is 2x10⁻⁴.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
