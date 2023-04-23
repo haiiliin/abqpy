@@ -209,7 +209,7 @@ class FieldOutput:
             are displaying the field output data using the Visualization module.
         localCoordSystem
             The **localCoordSystem** parameter can be specified using either of the following:A
-            sequence of sequences of Floats specifying the 3 × 3 matrix of direction cosines of the
+            sequence of sequences of Floats specifying the 3 x 3 matrix of direction cosines of the
             local coordinate system. This argument is available only for fields with type=TENSOR or
             VECTOR.A sequence of matrices of floats specifying the direction cosines of the local
             coordinates systems, where the sequence is the same length as **data**. If
@@ -416,7 +416,7 @@ class FieldOutput:
         Parameters
         ----------
         localCoordSystem
-            A sequence of sequences of Floats specifying the 3 × 3 matrix of direction cosines.
+            A sequence of sequences of Floats specifying the 3 x 3 matrix of direction cosines.
             Field values associated with the supplied coordinate system will be extracted.
 
         Returns
