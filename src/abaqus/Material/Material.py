@@ -1,8 +1,13 @@
 from typing import Union, Optional
 
+from abaqus.Material.Gap.GapConductance import GapConductance
+from abaqus.Material.Gap.GapConvection import GapConvection
+from abaqus.Material.Gap.GapRadiation import GapRadiation
+from abaqus.Material.MaterialBase import MaterialBase
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from .Acoustic.AcousticMedium import AcousticMedium
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
@@ -11,11 +16,16 @@ from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
 from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
+from .Electromagnetic.Dielectric import Dielectric
+from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
+from .Electromagnetic.MagneticPermeability import MagneticPermeability
+from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
 from .Gap.GapFlow import GapFlow
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
+<<<<<<< HEAD
 from .MaterialBase import MaterialBase
 from .Others.Acoustic.AcousticMedium import AcousticMedium
 from .Others.Electromagnetic.Dielectric import Dielectric
@@ -42,6 +52,20 @@ from .Others.PoreFluidFlow.Sorption import Sorption
 from .Others.User.Depvar import Depvar
 from .Others.User.UserMaterial import UserMaterial
 from .Others.User.UserOutputVariables import UserOutputVariables
+=======
+from .HeatTransfer.Conductivity import Conductivity
+from .HeatTransfer.InelasticHeatFraction import InelasticHeatFraction
+from .HeatTransfer.JouleHeatFraction import JouleHeatFraction
+from .HeatTransfer.LatentHeat import LatentHeat
+from .HeatTransfer.SpecificHeat import SpecificHeat
+from .MassDiffusion.Diffusivity import Diffusivity
+from .MassDiffusion.Solubility import Solubility
+from .Mechanical.Damping import Damping
+from .Mechanical.Expansion import Expansion
+from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
+from .Mechanical.Viscosity.Viscosity import Viscosity
+from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
+>>>>>>> 39cbd835 ([refactor] refactor the abaqus.Material.Others package (#4130))
 from .Plastic.Concrete.BrittleCracking import BrittleCracking
 from .Plastic.Concrete.Concrete import Concrete
 from .Plastic.Concrete.ConcreteDamagedPlasticity import ConcreteDamagedPlasticity
@@ -57,8 +81,17 @@ from .Plastic.Metal.TwoLayerViscoPlasticity.Viscous import Viscous
 from .Plastic.MohrCoulomb.MohrCoulombPlasticity import MohrCoulombPlasticity
 from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
+from .PoreFluidFlow.FluidLeakoff import FluidLeakoff
+from .PoreFluidFlow.Gel import Gel
+from .PoreFluidFlow.MoistureSwelling.MoistureSwelling import MoistureSwelling
+from .PoreFluidFlow.Permeability.Permeability import Permeability
+from .PoreFluidFlow.PorousBulkModuli import PorousBulkModuli
+from .PoreFluidFlow.Sorption import Sorption
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
+from .User.Depvar import Depvar
+from .User.UserMaterial import UserMaterial
+from .User.UserOutputVariables import UserOutputVariables
 from ..UtilityAndView.abaqusConstants import (
     Boolean,
     CENTROID,
@@ -1707,7 +1740,7 @@ class Material(MaterialBase):
         mu0
             A Float specifying the relaxation coefficient μ0. The default value is 10⁻⁴.
         mu1
-            A Float specifying the relaxation coefficient μ1. The default value is 0.5×10⁻².
+            A Float specifying the relaxation coefficient μ1. The default value is 0.5x10⁻².
         alpha
             A Float specifying the relaxation coefficient α. The default value is 2.0.
 
