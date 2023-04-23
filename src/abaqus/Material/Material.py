@@ -1,8 +1,5 @@
 from typing import Union, Optional
 
-from abaqus.Material.Gap.GapConductance import GapConductance
-from abaqus.Material.Gap.GapConvection import GapConvection
-from abaqus.Material.Gap.GapRadiation import GapRadiation
 from abaqus.Material.MaterialBase import MaterialBase
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
