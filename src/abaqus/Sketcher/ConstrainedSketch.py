@@ -65,7 +65,7 @@ class ConstrainedSketch(
             default value is approximately 2 percent of **sheetSize**.
         transform
             A sequence of sequences of Floats specifying the three-dimensional orientation of the
-            sketch. The sequence is a 3 × 4 transformation matrix specifying the axis of rotation
+            sketch. The sequence is a 3 x 4 transformation matrix specifying the axis of rotation
             and the translation vector. Possible values are any Floats.The default value for the
             axis of rotation is the identity matrix`(1.0, 0.0, 0.0),  (0.0, 1.0, 0.0),  (0.0, 0.0,
             1.0)`The default value for the translation vector is`(0.0, 0.0, 0.0)`The default values
