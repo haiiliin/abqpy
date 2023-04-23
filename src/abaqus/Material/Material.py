@@ -1,5 +1,9 @@
 from typing import Union, Optional, Sequence
 
+from abaqus.Material.Gap.GapConductance import GapConductance
+from abaqus.Material.Gap.GapConvection import GapConvection
+from abaqus.Material.Gap.GapRadiation import GapRadiation
+from abaqus.Material.MaterialBase import MaterialBase
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
@@ -12,29 +16,25 @@ from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
 from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
-from .Electromagnetic import ElectricalConductivity
 from .Electromagnetic.Dielectric import Dielectric
+from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
 from .Electromagnetic.MagneticPermeability import MagneticPermeability
 from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
-from .Gap.GapConductance import GapConductance
-from .Gap.GapConvection import GapConvection
 from .Gap.GapFlow import GapFlow
-from .Gap.GapRadiation import GapRadiation
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
-from .HeatTransfer import InelasticHeatFraction
 from .HeatTransfer.Conductivity import Conductivity
+from .HeatTransfer.InelasticHeatFraction import InelasticHeatFraction
 from .HeatTransfer.JouleHeatFraction import JouleHeatFraction
 from .HeatTransfer.LatentHeat import LatentHeat
 from .HeatTransfer.SpecificHeat import SpecificHeat
 from .MassDiffusion.Diffusivity import Diffusivity
 from .MassDiffusion.Solubility import Solubility
-from .MaterialBase import MaterialBase
-from .Mechanical import PoreFluidExpansion
 from .Mechanical.Damping import Damping
 from .Mechanical.Expansion import Expansion
+from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
 from .Mechanical.Viscosity.Viscosity import Viscosity
 from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 from .Plastic.Concrete.BrittleCracking import BrittleCracking
@@ -54,17 +54,17 @@ from .Plastic.MohrCoulomb.MohrCoulombPlasticity import MohrCoulombPlasticity
 from .Plastic.Plastic import Plastic
 from .Plastic.PlasticityCorrection import PlasticityCorrection
 from .Plastic.Swelling.Swelling import Swelling
-from .PoreFluidFlow import Gel
-from .PoreFluidFlow import Sorption
 from .PoreFluidFlow.FluidLeakoff import FluidLeakoff
-from .PoreFluidFlow.MoistureSwelling import MoistureSwelling
-from .PoreFluidFlow.Permeability import Permeability
+from .PoreFluidFlow.Gel import Gel
+from .PoreFluidFlow.MoistureSwelling.MoistureSwelling import MoistureSwelling
+from .PoreFluidFlow.Permeability.Permeability import Permeability
 from .PoreFluidFlow.PorousBulkModuli import PorousBulkModuli
+from .PoreFluidFlow.Sorption import Sorption
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from .User import Depvar
-from .User import UserOutputVariables
+from .User.Depvar import Depvar
 from .User.UserMaterial import UserMaterial
+from .User.UserOutputVariables import UserOutputVariables
 from ..UtilityAndView.abaqusConstants import (
     ALLISO,
     Boolean,

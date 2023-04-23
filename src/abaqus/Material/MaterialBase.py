@@ -9,8 +9,8 @@ from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
 from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
-from .Electromagnetic import ElectricalConductivity
 from .Electromagnetic.Dielectric import Dielectric
+from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
 from .Electromagnetic.MagneticPermeability import MagneticPermeability
 from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
@@ -18,17 +18,17 @@ from .Gap.GapFlow import GapFlow
 from .Gasket.GasketMembraneElastic import GasketMembraneElastic
 from .Gasket.GasketThicknessBehavior import GasketThicknessBehavior
 from .Gasket.GasketTransverseShearElastic import GasketTransverseShearElastic
-from .HeatTransfer import InelasticHeatFraction
 from .HeatTransfer.Conductivity import Conductivity
 from .HeatTransfer.HeatGeneration import HeatGeneration
+from .HeatTransfer.InelasticHeatFraction import InelasticHeatFraction
 from .HeatTransfer.JouleHeatFraction import JouleHeatFraction
 from .HeatTransfer.LatentHeat import LatentHeat
 from .HeatTransfer.SpecificHeat import SpecificHeat
 from .MassDiffusion.Diffusivity import Diffusivity
 from .MassDiffusion.Solubility import Solubility
-from .Mechanical import PoreFluidExpansion
 from .Mechanical.Damping import Damping
 from .Mechanical.Expansion import Expansion
+from .Mechanical.PoreFluidExpansion import PoreFluidExpansion
 from .Mechanical.Viscosity.Viscosity import Viscosity
 from .Multiscale.MeanFieldHomogenization import MeanFieldHomogenization
 from .Plastic.Concrete.BrittleCracking import BrittleCracking
@@ -48,19 +48,19 @@ from .Plastic.MohrCoulomb.MohrCoulombPlasticity import MohrCoulombPlasticity
 from .Plastic.Plastic import Plastic
 from .Plastic.PlasticityCorrection import PlasticityCorrection
 from .Plastic.Swelling.Swelling import Swelling
-from .PoreFluidFlow import Gel
-from .PoreFluidFlow import Sorption
 from .PoreFluidFlow.FluidLeakoff import FluidLeakoff
-from .PoreFluidFlow.MoistureSwelling import MoistureSwelling
-from .PoreFluidFlow.Permeability import Permeability
+from .PoreFluidFlow.Gel import Gel
+from .PoreFluidFlow.MoistureSwelling.MoistureSwelling import MoistureSwelling
+from .PoreFluidFlow.Permeability.Permeability import Permeability
 from .PoreFluidFlow.PorousBulkModuli import PorousBulkModuli
+from .PoreFluidFlow.Sorption import Sorption
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-from .User import Depvar
-from .User import UserDefinedField
-from .User import UserOutputVariables
+from .User.Depvar import Depvar
+from .User.UserDefinedField import UserDefinedField
 from .User.UserMaterial import UserMaterial
+from .User.UserOutputVariables import UserOutputVariables
 from ..UtilityAndView.abaqusConstants import FREQUENCY, RAMBERG_OSGOOD
 
 
