@@ -18,6 +18,10 @@ Theoretically, the Young's modulus of the material can be calculated with the fo
 
     E = \\frac{\\sigma}{\\epsilon} = \\frac{P}{u_{\max}/h} = \\frac{100}{0.1 / 1.0} = 1000
 
+The Abaqus/Python script used in this example is the same as the one used in the :ref:`compression` example,
+except that it accepts an additional argument that is the Young's modulus and possion ratio of the material.
+The script is shown :doc:`here </examples/Parameter-Identification/compression>`.
+
 The output of this script is:
 
 .. code-block:: none
