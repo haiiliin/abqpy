@@ -1,6 +1,6 @@
 """
 Cantilever Beam
-===============
+~~~~~~~~~~~~~~~
 
 `beamExample.py` from `Reproducing the cantilever beam tutorial <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-m-IntExaBeam-sb.htm?contextscope=all&id=912c66dae2554e53b439b484eddbfd6e>`_.
 

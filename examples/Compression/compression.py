@@ -1,6 +1,6 @@
 """
 Compression Model
-=================
+~~~~~~~~~~~~~~~~~
 
 A simple example to establish a compression model.
 

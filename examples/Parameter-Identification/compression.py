@@ -1,6 +1,6 @@
 """
 Parameter Identification: Model Script
-======================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Script to build the compression model for the parameter identification
 """

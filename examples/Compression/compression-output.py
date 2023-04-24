@@ -1,6 +1,6 @@
 """
 Compression Output Script
-=========================
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A script to get the output of the compression model.
 """

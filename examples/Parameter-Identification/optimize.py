@@ -1,6 +1,6 @@
 """
 Parameter Identification
-========================
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a simple example of parameter identification. The compression model is a simple model with a cube of 1x1x1 m.
 The lower surface is fixed and the upper surface is loaded with a pressure of 100 Pa. The goal is to find the Young's
