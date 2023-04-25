@@ -32,11 +32,16 @@ author = 'WANG Hailin'
 # The full version, including alpha/beta/rc tags
 try:
     import abqpy
-    release, version = abqpy.__version__, abqpy.__semver__
+    release, version = abqpy.__version__, abqpy.__semver__.split(".")[0]
 except (ImportError, AttributeError):
     import warnings
+<<<<<<< HEAD
     warnings.warn('abqpy is not installed, using 2017.0.0')
     release = version = '2017.0.0'
+=======
+    warnings.warn('abqpy is not installed, using 2023.0.0')
+    release, version = '2023.0.0', '2023'
+>>>>>>> 9b6e1632 ([bugfix] Ignore _autoapi_templates/index.rst (#4155))
 sys.path.insert(0, os.path.abspath('../../src'))
 sys.path.insert(0, os.path.abspath('./_ext'))
 
@@ -192,7 +197,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["locales/README.md"]
+exclude_patterns = ["locales/README.md", "_autoapi_templates"]
 
 # -- Options for HTML output -------------------------------------------------
 
