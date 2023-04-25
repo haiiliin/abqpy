@@ -35,13 +35,8 @@ try:
     release, version = abqpy.__version__, abqpy.__semver__.split(".")[0]
 except (ImportError, AttributeError):
     import warnings
-<<<<<<< HEAD
-    warnings.warn('abqpy is not installed, using 2022.0.0')
-    release = version = '2022.0.0'
-=======
     warnings.warn('abqpy is not installed, using 2023.0.0')
-    release, version = '2023.0.0', '2023'
->>>>>>> 9b6e1632 ([bugfix] Ignore _autoapi_templates/index.rst (#4155))
+    release, version = '2022.0.0', '2022'
 sys.path.insert(0, os.path.abspath('../../src'))
 sys.path.insert(0, os.path.abspath('./_ext'))
 
