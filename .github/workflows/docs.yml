@@ -37,12 +37,8 @@ jobs:
         path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
         key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
     - name: Installing the library
-      shell: bash -l {0}
-      run: |
-        pip install .
-        pip install -r requirements/docs.txt
+      run: pip install .[docs]
     - name: Build the documentation
-      shell: bash -l {0}
       run: |
         sphinx-build -b changes -j auto -W docs/source docs/build/${{ matrix.language }}/changes
         sphinx-build ${{ env.SPHINXOPTS }} ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }}

@@ -1,0 +1,44 @@
+name: changes
+
+on:
+  push:
+    branches:
+    - 20**
+    paths:
+    - 'src/**'
+    - 'requirements/docs.txt'
+    - 'docs/source/**'
+    - '.github/workflows/docs.yml'
+    - 'pyproject.toml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - uses: actions/checkout@v3
+    - uses: actions/cache@v3.3.1
+      with:
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
+        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
+    - name: Installing the library
+      run: pip install .[docs]
+    - name: Build the documentation
+      run: sphinx-build -b changes -j auto -W docs/source docs/build/changes
+    - name: Commit the changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/source/CHANGES.md
+        git commit -m "Update CHANGES.md" || echo "Nothing to commit"
+    - name: Push the changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
