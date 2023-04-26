@@ -11,7 +11,7 @@ build:
       # in that case exit the command with 183 to skip the build
       - (git --no-pager log --pretty="tformat:%s -- %b" -1 | grep -viq "skip rtd") || exit 183
     pre_build:
-      - sphinx-build -b changes -D -j auto -W docs/source docs/build/changes
+      - sphinx-build -b changes -j auto -W docs/source docs/build/changes
 
 sphinx:
   configuration: docs/source/conf.py
