@@ -19,14 +19,14 @@ class AbqpyChangesBuilder(ChangesBuilder):
             context = changeset.content.replace('\n', ' ')
             if descname or changeset.module:
                 module = changeset.module or _('Builtins')
-                descname = f"{{py:obj}}`~{module}.{descname}`" or _('**Module level**')
+                descname = f"{{py:obj}}`{module}.{descname}`" or _('**Module level**')
                 entry = f"{descname}: *{ttext}*: {context}" if context else f"{descname}: *{ttext}*"
                 libchanges.setdefault(module, []).append(entry)
 
         document = f"# Changes in Abaqus {self.config.version}\n\n"
         document += f"## Library changes\n\n"
         for module, changes in libchanges.items():
-            document += f"### {{py:mod}}`{module}`\n\n"
+            document += f"### {{py:obj}}`{module}`\n\n"
             for change in changes:
                 document += f"- {change}\n"
             document += "\n"
