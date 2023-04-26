@@ -50,7 +50,8 @@ jobs:
         SOURCEDIR: docs/source
         BUILDDIR: docs/build/${{ matrix.language }}/${{ matrix.builder }}/pr-${{ github.event.number }}
         SPHINXOPTS: -M ${{ matrix.builder }} -D language=${{ matrix.language }} -j auto -W
-    - uses: actions/cache@v3.3.1
+    - name: Upload the documentation
+      uses: actions/upload-artifact@v2
       with:
-        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}
-        key: ${{ runner.os }}-docs-${{ matrix.language }}-${{ github.ref }}
+        name: docs-${{ matrix.language }}-${{ matrix.builder }}-pr-${{ github.event.number }}
+        path: docs/build/${{ matrix.language }}/${{ matrix.builder }}/pr-${{ github.event.number }}
