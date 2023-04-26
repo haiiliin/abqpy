@@ -6,10 +6,7 @@ on:
     - 20**
     paths:
     - 'src/**'
-    - 'requirements/docs.txt'
-    - 'docs/source/**'
-    - '.github/workflows/docs.yml'
-    - 'pyproject.toml'
+    - '.github/workflows/changes.yml'
   workflow_dispatch:
 
 concurrency:
@@ -37,7 +34,7 @@ jobs:
         git add docs/source/CHANGES.md
         git commit -m "Update CHANGES.md" || echo "Nothing to commit"
     - name: Push the changes
-      uses: ad-m/github-push-action@master
+      uses: CasperWA/push-protected@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+        branch: ${{ github.ref_name }}
