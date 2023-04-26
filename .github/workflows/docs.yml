@@ -44,7 +44,7 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        cd docs && make changes && cd ..
+        sphinx-build -b changes -j auto -W docs/source docs/build/${{ matrix.language }}/changes
         sphinx-build ${{ env.SPHINXOPTS }} ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }}
       env:
         SOURCEDIR: docs/source
