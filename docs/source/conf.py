@@ -81,6 +81,7 @@ extensions = [
 
 # changes configuration
 changes_write_to = "CHANGES.md"
+changes_versions = [str(v) for v in range(int(version), 2015, -1)]
 
 # sphinx-comments
 comments_config = {
