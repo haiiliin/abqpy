@@ -8,7 +8,6 @@ cae_display_preferences
 input
 kernel
 messaging
-table_collection
 text_representation
 utility
 ```
