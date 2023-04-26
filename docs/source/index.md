@@ -35,7 +35,6 @@ must write codes that are compatiable with Python 2 and Python 3.
 getting_started
 envvars
 cli
-CHANGES
 ```
 
 ```{toctree}
@@ -52,6 +51,7 @@ examples/index
 
 user/index
 reference/index
+CHANGES
 autoapi/index
 ```
 
