@@ -44,6 +44,7 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
+        cd docs && make changes && cd ..
         sphinx-build ${{ env.SPHINXOPTS }} ${{ env.SOURCEDIR }} ${{ env.BUILDDIR }}
       env:
         SOURCEDIR: docs/source
