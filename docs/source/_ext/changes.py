@@ -23,7 +23,7 @@ class AbqpyChangesBuilder(ChangesBuilder):
                 entry = f"{descname}: *{ttext}*: {context}" if context else f"{descname}: *{ttext}*"
                 libchanges.setdefault(module, []).append(entry)
 
-        document = f"# Automatically generated list of changes in version {self.config.version}\n\n"
+        document = f"# Changes in Abaqus {self.config.version}\n\n"
         document += f"## Library changes\n\n"
         for module, changes in libchanges.items():
             document += f"### {{py:mod}}`{module}`\n\n"
