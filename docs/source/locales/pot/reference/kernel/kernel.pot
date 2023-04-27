@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:1
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:12
 msgid "This class allows you to derive a general class that can be queried from the GUI and is capable of notifying the GUI when the contents of the class change."
 msgstr ""
 
@@ -57,44 +57,44 @@ msgstr ""
 msgid "Check `CommandRegister on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:16
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:17
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:16
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:16
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:20
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:0
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:20
+msgid "A CommandRegister object."
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:0
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:21
+msgid ":class:`CommandRegister`"
+msgstr ""
+
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:1
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:1
 msgid "Member Details:"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:5
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:4
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:4
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:4
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:4
-msgid "This function can be accessed by::"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:9
-msgid "A CommandRegister object."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:0
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:0
-msgid "Return type"
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:10
-msgid ":class:`CommandRegister`"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
@@ -109,20 +109,20 @@ msgstr ""
 msgid "Check `RegisteredDictionary on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods:1
-msgid "The RegisteredDictionary object supports the same methods as a Python dictionary. In addition, the RegisteredDictionary object supports the changeKey method."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:14
 msgid "This method creates a RegisteredDictionary object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:8
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:21
 msgid "A RegisteredDictionary object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:9
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:22
 msgid ":class:`RegisteredDictionary`"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods:1
+msgid "The RegisteredDictionary object supports the same methods as a Python dictionary. In addition, the RegisteredDictionary object supports the changeKey method."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:1
@@ -134,7 +134,7 @@ msgid "Check `RegisteredDictionary.changeKey on help.3ds.com/2016 <https://help.
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:0
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:0
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:0
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:0
 msgid "Parameters"
 msgstr ""
@@ -159,20 +159,20 @@ msgstr ""
 msgid "Check `RegisteredList on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.Methods:1
-msgid "The RegisteredList object supports the same methods as a standard Python list object."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:13
 msgid "This method creates a RegisteredList object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:8
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:20
 msgid "A RegisteredList object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:9
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:21
 msgid ":class:`RegisteredList`"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList.Methods:1
+msgid "The RegisteredList object supports the same methods as a standard Python list object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
@@ -187,28 +187,24 @@ msgstr ""
 msgid "Check `RegisteredTuple on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods:1
-msgid "The RegisteredTuple object supports the same methods as a standard Python list object."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:13
 msgid "This method creates a RegisteredTuple object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:9
-msgid "Check `RegisteredTuple.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all#simaker-registeredtuple__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:12
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:21
 msgid "A tuple of objects. These objects must be derived from the CommandRegister class."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:14
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:23
 msgid "A RegisteredTuple object."
 msgstr ""
 
-#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:15
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:24
 msgid ":class:`RegisteredTuple`"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods:1
+msgid "The RegisteredTuple object supports the same methods as a standard Python list object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:1
@@ -221,6 +217,18 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:15
 msgid "Check `RepositorySupport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:17
+msgid "This method creates a RepositorySupport object."
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:24
+msgid "A RepositorySupport object."
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:25
+msgid ":class:`RepositorySupport`"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:1
@@ -237,16 +245,4 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:13
 msgid "A constructor or sequence of constructors specifying which classes will store their instances in the repository."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1
-msgid "This method creates a RepositorySupport object."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:8
-msgid "A RepositorySupport object."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:9
-msgid ":class:`RepositorySupport`"
 msgstr ""

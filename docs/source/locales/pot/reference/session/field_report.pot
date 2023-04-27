@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`attachedToGui <abaqus.FieldReport.FieldReportSession.FieldReportSession.attachedToGui>`\\"
+msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -45,7 +45,7 @@ msgid "A Boolean specifying whether an Abaqus interactive session is running."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`replayInProgress <abaqus.FieldReport.FieldReportSession.FieldReportSession.replayInProgress>`\\"
+msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -53,7 +53,7 @@ msgid "A Boolean specifying whether Abaqus is executing a replay file."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryFootprint <abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryFootprint>`\\"
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -61,7 +61,7 @@ msgid "A Float specifying the memory usage value for the Abaqus/CAE kernel proce
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryMaxFootprint>`\\"
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -69,7 +69,7 @@ msgid "A Float specifying the maximum value for the memory usage for the Abaqus/
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryLimit <abaqus.FieldReport.FieldReportSession.FieldReportSession.kernelMemoryLimit>`\\"
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -77,7 +77,7 @@ msgid "A Float specifying the limit for the memory use for the Abaqus/CAE kernel
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.FieldReport.FieldReportSession.FieldReportSession.colors>`\\"
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -85,7 +85,7 @@ msgid "A repository of Color objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`journalOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.journalOptions>`\\"
+msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -93,7 +93,7 @@ msgid "A JournalOptions object specifying how to record selection of geometry in
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`memoryReductionOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.memoryReductionOptions>`\\"
+msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -101,7 +101,7 @@ msgid "A MemoryReductionOptions object specifying options for running in reduced
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.FieldReport.FieldReportSession.FieldReportSession.nodeQuery>`\\"
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -109,7 +109,7 @@ msgid "A NodeQuery object specifying nodes and their coordinates in a path."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sketcherOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.sketcherOptions>`\\"
+msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -117,7 +117,7 @@ msgid "A ConstrainedSketcherOptions object specifying common options for all ske
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewerOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.viewerOptions>`\\"
+msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -125,7 +125,7 @@ msgid "A ViewerOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`animationOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.animationOptions>`\\"
+msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -133,7 +133,7 @@ msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.aviOptions>`\\"
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -141,7 +141,7 @@ msgid "An AVIOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimationOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.imageAnimationOptions>`\\"
+msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -149,7 +149,7 @@ msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimation <abaqus.FieldReport.FieldReportSession.FieldReportSession.imageAnimation>`\\"
+msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -157,7 +157,7 @@ msgid "An ImageAnimation object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`quickTimeOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.quickTimeOptions>`\\"
+msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -165,7 +165,7 @@ msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.FieldReport.FieldReportSession.FieldReportSession.viewports>`\\"
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -173,7 +173,7 @@ msgid "A repository of Viewport objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.FieldReport.FieldReportSession.FieldReportSession.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -181,7 +181,7 @@ msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFieldReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultFieldReportOptions>`\\"
+msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:32
@@ -190,468 +190,12 @@ msgid "A FieldReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultFreeBodyReportOptions>`\\"
+msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
 #: ../../None:72:<autosummary>:1
 msgid "A FreeBodyReportOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`fieldReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.fieldReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`freeBodyReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.freeBodyReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`odbs <abaqus.FieldReport.FieldReportSession.FieldReportSession.odbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Odb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`scratchOdbs <abaqus.FieldReport.FieldReportSession.FieldReportSession.scratchOdbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of ScratchOdb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultOdbDisplay <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultOdbDisplay>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultOdbDisplay object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultPlot <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultPlot>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultPlot object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultChartOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultChartOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultChartOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`odbData <abaqus.FieldReport.FieldReportSession.FieldReportSession.odbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of OdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`mdbData <abaqus.FieldReport.FieldReportSession.FieldReportSession.mdbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of MdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`paths <abaqus.FieldReport.FieldReportSession.FieldReportSession.paths>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Path objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`freeBodies <abaqus.FieldReport.FieldReportSession.FieldReportSession.freeBodies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of FreeBody objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`streams <abaqus.FieldReport.FieldReportSession.FieldReportSession.streams>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Stream objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`spectrums <abaqus.FieldReport.FieldReportSession.FieldReportSession.spectrums>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Spectrum objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`currentProbeValues <abaqus.FieldReport.FieldReportSession.FieldReportSession.currentProbeValues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A CurrentProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultProbeOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultProbeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`probeOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.probeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`probeReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.probeReport>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeReport object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultProbeReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultProbeReport>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`selectedProbeValues <abaqus.FieldReport.FieldReportSession.FieldReportSession.selectedProbeValues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A SelectedProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`printOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.printOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PrintOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`epsOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.epsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An EpsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`pageSetupOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.pageSetupOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PageSetupOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`pngOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.pngOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PngOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`psOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.psOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`svgOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.svgOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A SvgOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`tiffOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.tiffOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A TiffOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`autoColors <abaqus.FieldReport.FieldReportSession.FieldReportSession.autoColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used for color coding."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyColors <abaqus.FieldReport.FieldReportSession.FieldReportSession.xyColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyDataObjects <abaqus.FieldReport.FieldReportSession.FieldReportSession.xyDataObjects>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`curves <abaqus.FieldReport.FieldReportSession.FieldReportSession.curves>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyPlots <abaqus.FieldReport.FieldReportSession.FieldReportSession.xyPlots>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYPlot objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`charts <abaqus.FieldReport.FieldReportSession.FieldReportSession.charts>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Chart objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultXYReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultXYReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An XYReportOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyReportOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.xyReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`views <abaqus.FieldReport.FieldReportSession.FieldReportSession.views>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of View objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`networkDatabaseConnectors <abaqus.FieldReport.FieldReportSession.FieldReportSession.networkDatabaseConnectors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of NetworkDatabaseConnector objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`displayGroups <abaqus.FieldReport.FieldReportSession.FieldReportSession.displayGroups>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of DisplayGroup objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`graphicsInfo <abaqus.FieldReport.FieldReportSession.FieldReportSession.graphicsInfo>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsInfo object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultGraphicsOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultGraphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`graphicsOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.graphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultViewportAnnotationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`queues <abaqus.FieldReport.FieldReportSession.FieldReportSession.queues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Queue objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`currentViewportName <abaqus.FieldReport.FieldReportSession.FieldReportSession.currentViewportName>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A String specifying the name of the current viewport."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sessionState <abaqus.FieldReport.FieldReportSession.FieldReportSession.sessionState>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A Dictionary object specifying the viewports and their associated models."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`images <abaqus.FieldReport.FieldReportSession.FieldReportSession.images>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Image objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`movies <abaqus.FieldReport.FieldReportSession.FieldReportSession.movies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Movie objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultLightOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultLightOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A LightOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`drawingArea <abaqus.FieldReport.FieldReportSession.FieldReportSession.drawingArea>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DrawingArea object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultMesherOptions <abaqus.FieldReport.FieldReportSession.FieldReportSession.defaultMesherOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`drawings <abaqus.FieldReport.FieldReportSession.FieldReportSession.drawings>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Drawing objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -667,7 +211,15 @@ msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`scratchOdbs <abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of ScratchOdb objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -675,7 +227,15 @@ msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaul
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -683,7 +243,15 @@ msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of OdbData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -691,7 +259,15 @@ msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Path objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -699,7 +275,15 @@ msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Stream objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -707,11 +291,23 @@ msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -723,6 +319,10 @@ msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeReport <abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
 msgstr ""
 
@@ -731,7 +331,15 @@ msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.sele
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PrintOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -739,7 +347,15 @@ msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PageSetupOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -747,7 +363,15 @@ msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -755,7 +379,15 @@ msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A TiffOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -763,7 +395,15 @@ msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used for color coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -771,7 +411,15 @@ msgid ":py:obj:`xyDataObjects <abaqus.Session.SessionBase.SessionBase.xyDataObje
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -779,11 +427,23 @@ msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -795,7 +455,15 @@ msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`networkDatabaseConnectors <abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of NetworkDatabaseConnector objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -803,11 +471,23 @@ msgid ":py:obj:`displayGroups <abaqus.Session.SessionBase.SessionBase.displayGro
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -819,7 +499,15 @@ msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.Ses
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Queue objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -827,7 +515,15 @@ msgid ":py:obj:`currentViewportName <abaqus.Session.SessionBase.SessionBase.curr
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`sessionState <abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -835,7 +531,15 @@ msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Movie objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -843,7 +547,15 @@ msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -851,7 +563,15 @@ msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.def
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Drawing objects."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
@@ -1137,7 +857,7 @@ msgstr ""
 msgid "An Odb object specifying the output database from which data will be read."
 msgstr ""
 
-#: ../../reference/session/field_report.md:17
+#: ../../reference/session/field_report.md:16
 msgid "Other Classes"
 msgstr ""
 

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/mdb/annotation.md:1
 msgid "Annotation"
@@ -32,14 +32,14 @@ msgid "Create annotations"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:1
-#: abaqus.Annotation.Arrow.Arrow.__init__:1 of
+#: abaqus.Annotation.Arrow.Arrow:15 of
 msgid "This method creates an Arrow object."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:4
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:4
-#: abaqus.Annotation.Arrow.Arrow.__init__:4
-#: abaqus.Annotation.Text.Text.__init__:4
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:15
+#: abaqus.Annotation.Arrow.Arrow:18 abaqus.Annotation.Text.Text:18
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData:4 of
 msgid "This function can be accessed by::"
 msgstr ""
@@ -56,6 +56,7 @@ msgstr ""
 #: abaqus.Annotation.Annotation.Annotation.moveAfter
 #: abaqus.Annotation.Annotation.Annotation.moveBefore
 #: abaqus.Annotation.Annotation.Annotation.translate
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringToFront
@@ -63,11 +64,10 @@ msgstr ""
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack
-#: abaqus.Annotation.Arrow.Arrow.__init__
-#: abaqus.Annotation.Arrow.Arrow.setValues
+#: abaqus.Annotation.Arrow.Arrow abaqus.Annotation.Arrow.Arrow.setValues
 #: abaqus.Annotation.Arrow.Arrow.translateEndPoint
 #: abaqus.Annotation.Arrow.Arrow.translateStartPoint
-#: abaqus.Annotation.Text.Text.__init__ abaqus.Annotation.Text.Text.setValues
+#: abaqus.Annotation.Text.Text abaqus.Annotation.Text.Text.setValues
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Parameters"
 msgstr ""
@@ -75,38 +75,35 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:13
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:13
-#: abaqus.Annotation.Arrow.Arrow.__init__:13
-#: abaqus.Annotation.Text.Annotation.name:1
-#: abaqus.Annotation.Text.Text.__init__:13 of
+#: abaqus.Annotation.Arrow.Arrow:24 abaqus.Annotation.Text.Annotation.name:1
+#: abaqus.Annotation.Text.Text:24 of
 msgid "A String specifying the annotation repository key."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:15
-#: abaqus.Annotation.Arrow.Arrow.__init__:15
-#: abaqus.Annotation.Arrow.Arrow.setValues:7
+#: abaqus.Annotation.Arrow.Arrow:26 abaqus.Annotation.Arrow.Arrow.setValues:7
 #: abaqus.Annotation.Arrow.Arrow.startPoint:1 of
 msgid ""
-"A pair of Floats specifying the start point **X**- and **Y**-offsets in "
+"A pair of Floats specifying the start point **X**  and **Y** offsets in "
 "millimeters from **startAnchor**. The default value is (0, 0)."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:18
-#: abaqus.Annotation.Arrow.Arrow.__init__:18
-#: abaqus.Annotation.Arrow.Arrow.endPoint:1
+#: abaqus.Annotation.Arrow.Arrow:29 abaqus.Annotation.Arrow.Arrow.endPoint:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:10 of
 msgid ""
-"A pair of Floats specifying the end point **X**- and **Y**-offsets in "
+"A pair of Floats specifying the end point **X**  and **Y** offsets in "
 "millimeters from **endAnchor**. The default value is (0, 0)."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:21 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y**-coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant indicates a relative position. "
 "Possible values are:  - BOTTOM_LEFT,, - BOTTOM_CENTER - BOTTOM_RIGHT - "
 "CENTER_LEFT - CENTER - CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  "
@@ -115,14 +112,13 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:21
-#: abaqus.Annotation.Arrow.Arrow.__init__:21
-#: abaqus.Annotation.Arrow.Arrow.setValues:13
+#: abaqus.Annotation.Arrow.Arrow:32 abaqus.Annotation.Arrow.Arrow.setValues:13
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:1 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y**-coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant indicates a relative position. "
 "Possible values are:"
 msgstr ""
@@ -136,14 +132,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:46
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:27
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:44
-#: abaqus.Annotation.Arrow.Arrow.__init__:28
-#: abaqus.Annotation.Arrow.Arrow.__init__:46
+#: abaqus.Annotation.Arrow.Arrow:39 abaqus.Annotation.Arrow.Arrow:57
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:8
 #: abaqus.Annotation.Arrow.Arrow.setValues:21
 #: abaqus.Annotation.Arrow.Arrow.setValues:41
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:8
-#: abaqus.Annotation.Text.Text.__init__:27
-#: abaqus.Annotation.Text.Text.__init__:44 abaqus.Annotation.Text.Text.anchor:8
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:8 abaqus.Annotation.Text.Text:38
+#: abaqus.Annotation.Text.Text:55 abaqus.Annotation.Text.Text.anchor:8
 #: abaqus.Annotation.Text.Text.referencePoint:7
 #: abaqus.Annotation.Text.Text.setValues:20
 #: abaqus.Annotation.Text.Text.setValues:38 of
@@ -155,14 +149,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:47
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:28
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:45
-#: abaqus.Annotation.Arrow.Arrow.__init__:29
-#: abaqus.Annotation.Arrow.Arrow.__init__:47
+#: abaqus.Annotation.Arrow.Arrow:40 abaqus.Annotation.Arrow.Arrow:58
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:9
 #: abaqus.Annotation.Arrow.Arrow.setValues:22
 #: abaqus.Annotation.Arrow.Arrow.setValues:42
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:9
-#: abaqus.Annotation.Text.Text.__init__:28
-#: abaqus.Annotation.Text.Text.__init__:45 abaqus.Annotation.Text.Text.anchor:9
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:9 abaqus.Annotation.Text.Text:39
+#: abaqus.Annotation.Text.Text:56 abaqus.Annotation.Text.Text.anchor:9
 #: abaqus.Annotation.Text.Text.referencePoint:8
 #: abaqus.Annotation.Text.Text.setValues:21
 #: abaqus.Annotation.Text.Text.setValues:39 of
@@ -174,15 +166,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:48
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:29
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:46
-#: abaqus.Annotation.Arrow.Arrow.__init__:30
-#: abaqus.Annotation.Arrow.Arrow.__init__:48
+#: abaqus.Annotation.Arrow.Arrow:41 abaqus.Annotation.Arrow.Arrow:59
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:10
 #: abaqus.Annotation.Arrow.Arrow.setValues:23
 #: abaqus.Annotation.Arrow.Arrow.setValues:43
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:10
-#: abaqus.Annotation.Text.Text.__init__:29
-#: abaqus.Annotation.Text.Text.__init__:46
-#: abaqus.Annotation.Text.Text.anchor:10
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:10 abaqus.Annotation.Text.Text:40
+#: abaqus.Annotation.Text.Text:57 abaqus.Annotation.Text.Text.anchor:10
 #: abaqus.Annotation.Text.Text.referencePoint:9
 #: abaqus.Annotation.Text.Text.setValues:22
 #: abaqus.Annotation.Text.Text.setValues:40 of
@@ -194,15 +183,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:49
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:30
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:47
-#: abaqus.Annotation.Arrow.Arrow.__init__:31
-#: abaqus.Annotation.Arrow.Arrow.__init__:49
+#: abaqus.Annotation.Arrow.Arrow:42 abaqus.Annotation.Arrow.Arrow:60
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:11
 #: abaqus.Annotation.Arrow.Arrow.setValues:24
 #: abaqus.Annotation.Arrow.Arrow.setValues:44
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:11
-#: abaqus.Annotation.Text.Text.__init__:30
-#: abaqus.Annotation.Text.Text.__init__:47
-#: abaqus.Annotation.Text.Text.anchor:11
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:11 abaqus.Annotation.Text.Text:41
+#: abaqus.Annotation.Text.Text:58 abaqus.Annotation.Text.Text.anchor:11
 #: abaqus.Annotation.Text.Text.referencePoint:10
 #: abaqus.Annotation.Text.Text.setValues:23
 #: abaqus.Annotation.Text.Text.setValues:41 of
@@ -214,15 +200,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:50
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:31
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:48
-#: abaqus.Annotation.Arrow.Arrow.__init__:32
-#: abaqus.Annotation.Arrow.Arrow.__init__:50
+#: abaqus.Annotation.Arrow.Arrow:43 abaqus.Annotation.Arrow.Arrow:61
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:12
 #: abaqus.Annotation.Arrow.Arrow.setValues:25
 #: abaqus.Annotation.Arrow.Arrow.setValues:45
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:12
-#: abaqus.Annotation.Text.Text.__init__:31
-#: abaqus.Annotation.Text.Text.__init__:48
-#: abaqus.Annotation.Text.Text.anchor:12
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:12 abaqus.Annotation.Text.Text:42
+#: abaqus.Annotation.Text.Text:59 abaqus.Annotation.Text.Text.anchor:12
 #: abaqus.Annotation.Text.Text.referencePoint:11
 #: abaqus.Annotation.Text.Text.setValues:24
 #: abaqus.Annotation.Text.Text.setValues:42 of
@@ -234,15 +217,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:51
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:32
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:49
-#: abaqus.Annotation.Arrow.Arrow.__init__:33
-#: abaqus.Annotation.Arrow.Arrow.__init__:51
+#: abaqus.Annotation.Arrow.Arrow:44 abaqus.Annotation.Arrow.Arrow:62
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:13
 #: abaqus.Annotation.Arrow.Arrow.setValues:26
 #: abaqus.Annotation.Arrow.Arrow.setValues:46
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:13
-#: abaqus.Annotation.Text.Text.__init__:32
-#: abaqus.Annotation.Text.Text.__init__:49
-#: abaqus.Annotation.Text.Text.anchor:13
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:13 abaqus.Annotation.Text.Text:43
+#: abaqus.Annotation.Text.Text:60 abaqus.Annotation.Text.Text.anchor:13
 #: abaqus.Annotation.Text.Text.referencePoint:12
 #: abaqus.Annotation.Text.Text.setValues:25
 #: abaqus.Annotation.Text.Text.setValues:43 of
@@ -254,15 +234,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:52
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:33
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:50
-#: abaqus.Annotation.Arrow.Arrow.__init__:34
-#: abaqus.Annotation.Arrow.Arrow.__init__:52
+#: abaqus.Annotation.Arrow.Arrow:45 abaqus.Annotation.Arrow.Arrow:63
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:14
 #: abaqus.Annotation.Arrow.Arrow.setValues:27
 #: abaqus.Annotation.Arrow.Arrow.setValues:47
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:14
-#: abaqus.Annotation.Text.Text.__init__:33
-#: abaqus.Annotation.Text.Text.__init__:50
-#: abaqus.Annotation.Text.Text.anchor:14
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:14 abaqus.Annotation.Text.Text:44
+#: abaqus.Annotation.Text.Text:61 abaqus.Annotation.Text.Text.anchor:14
 #: abaqus.Annotation.Text.Text.referencePoint:13
 #: abaqus.Annotation.Text.Text.setValues:26
 #: abaqus.Annotation.Text.Text.setValues:44 of
@@ -274,15 +251,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:53
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:34
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:51
-#: abaqus.Annotation.Arrow.Arrow.__init__:35
-#: abaqus.Annotation.Arrow.Arrow.__init__:53
+#: abaqus.Annotation.Arrow.Arrow:46 abaqus.Annotation.Arrow.Arrow:64
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:15
 #: abaqus.Annotation.Arrow.Arrow.setValues:28
 #: abaqus.Annotation.Arrow.Arrow.setValues:48
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:15
-#: abaqus.Annotation.Text.Text.__init__:34
-#: abaqus.Annotation.Text.Text.__init__:51
-#: abaqus.Annotation.Text.Text.anchor:15
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:15 abaqus.Annotation.Text.Text:45
+#: abaqus.Annotation.Text.Text:62 abaqus.Annotation.Text.Text.anchor:15
 #: abaqus.Annotation.Text.Text.referencePoint:14
 #: abaqus.Annotation.Text.Text.setValues:27
 #: abaqus.Annotation.Text.Text.setValues:45 of
@@ -294,15 +268,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:55
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:36
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:53
-#: abaqus.Annotation.Arrow.Arrow.__init__:37
-#: abaqus.Annotation.Arrow.Arrow.__init__:55
+#: abaqus.Annotation.Arrow.Arrow:48 abaqus.Annotation.Arrow.Arrow:66
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:17
 #: abaqus.Annotation.Arrow.Arrow.setValues:30
 #: abaqus.Annotation.Arrow.Arrow.setValues:50
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:17
-#: abaqus.Annotation.Text.Text.__init__:36
-#: abaqus.Annotation.Text.Text.__init__:53
-#: abaqus.Annotation.Text.Text.anchor:17
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:17 abaqus.Annotation.Text.Text:47
+#: abaqus.Annotation.Text.Text:64 abaqus.Annotation.Text.Text.anchor:17
 #: abaqus.Annotation.Text.Text.referencePoint:16
 #: abaqus.Annotation.Text.Text.setValues:29
 #: abaqus.Annotation.Text.Text.setValues:47 of
@@ -310,13 +281,13 @@ msgid "The default value is BOTTOM_LEFT."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:39
-#: abaqus.Annotation.Arrow.Arrow.__init__:39
-#: abaqus.Annotation.Arrow.Arrow.setValues:33 of
+#: abaqus.Annotation.Arrow.Arrow:50 abaqus.Annotation.Arrow.Arrow.setValues:33
+#: of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y**-coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A Sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant indicates a relative position. "
 "Possible values are:  - BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - "
 "CENTER_LEFT - CENTER - CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  "
@@ -325,14 +296,13 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:39
-#: abaqus.Annotation.Arrow.Arrow.__init__:39
-#: abaqus.Annotation.Arrow.Arrow.endAnchor:1
+#: abaqus.Annotation.Arrow.Arrow:50 abaqus.Annotation.Arrow.Arrow.endAnchor:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:33 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y**-coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A Sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant indicates a relative position. "
 "Possible values are:"
 msgstr ""
@@ -341,14 +311,12 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:45
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:26
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:43
-#: abaqus.Annotation.Arrow.Arrow.__init__:27
-#: abaqus.Annotation.Arrow.Arrow.__init__:45
+#: abaqus.Annotation.Arrow.Arrow:38 abaqus.Annotation.Arrow.Arrow:56
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:7
 #: abaqus.Annotation.Arrow.Arrow.setValues:20
 #: abaqus.Annotation.Arrow.Arrow.setValues:40
-#: abaqus.Annotation.Arrow.Arrow.startAnchor:7
-#: abaqus.Annotation.Text.Text.__init__:26
-#: abaqus.Annotation.Text.Text.__init__:43 abaqus.Annotation.Text.Text.anchor:7
+#: abaqus.Annotation.Arrow.Arrow.startAnchor:7 abaqus.Annotation.Text.Text:37
+#: abaqus.Annotation.Text.Text:54 abaqus.Annotation.Text.Text.anchor:7
 #: abaqus.Annotation.Text.Text.referencePoint:6
 #: abaqus.Annotation.Text.Text.setValues:19
 #: abaqus.Annotation.Text.Text.setValues:37 of
@@ -356,8 +324,8 @@ msgid "BOTTOM_LEFT"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:57
-#: abaqus.Annotation.Arrow.Arrow.__init__:57
-#: abaqus.Annotation.Arrow.Arrow.setValues:53 of
+#: abaqus.Annotation.Arrow.Arrow:68 abaqus.Annotation.Arrow.Arrow.setValues:53
+#: of
 msgid ""
 "A SymbolicConstant specifying the style of the start head. Possible "
 "values are:  - ARROW - FILLED_ARROW - HOLLOW_CIRCLE - FILLED_CIRCLE - "
@@ -367,8 +335,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:57
-#: abaqus.Annotation.Arrow.Arrow.__init__:57
-#: abaqus.Annotation.Arrow.Arrow.setValues:53
+#: abaqus.Annotation.Arrow.Arrow:68 abaqus.Annotation.Arrow.Arrow.setValues:53
 #: abaqus.Annotation.Arrow.Arrow.startHeadStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the style of the start head. Possible "
@@ -378,8 +345,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:59
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:73
-#: abaqus.Annotation.Arrow.Arrow.__init__:59
-#: abaqus.Annotation.Arrow.Arrow.__init__:73
+#: abaqus.Annotation.Arrow.Arrow:70 abaqus.Annotation.Arrow.Arrow:84
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:3
 #: abaqus.Annotation.Arrow.Arrow.setValues:56
 #: abaqus.Annotation.Arrow.Arrow.setValues:71
@@ -390,8 +356,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:60
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:74
-#: abaqus.Annotation.Arrow.Arrow.__init__:60
-#: abaqus.Annotation.Arrow.Arrow.__init__:74
+#: abaqus.Annotation.Arrow.Arrow:71 abaqus.Annotation.Arrow.Arrow:85
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:4
 #: abaqus.Annotation.Arrow.Arrow.setValues:57
 #: abaqus.Annotation.Arrow.Arrow.setValues:72
@@ -402,8 +367,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:61
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:75
-#: abaqus.Annotation.Arrow.Arrow.__init__:61
-#: abaqus.Annotation.Arrow.Arrow.__init__:75
+#: abaqus.Annotation.Arrow.Arrow:72 abaqus.Annotation.Arrow.Arrow:86
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:5
 #: abaqus.Annotation.Arrow.Arrow.setValues:58
 #: abaqus.Annotation.Arrow.Arrow.setValues:73
@@ -414,8 +378,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:62
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:76
-#: abaqus.Annotation.Arrow.Arrow.__init__:62
-#: abaqus.Annotation.Arrow.Arrow.__init__:76
+#: abaqus.Annotation.Arrow.Arrow:73 abaqus.Annotation.Arrow.Arrow:87
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:6
 #: abaqus.Annotation.Arrow.Arrow.setValues:59
 #: abaqus.Annotation.Arrow.Arrow.setValues:74
@@ -426,8 +389,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:63
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:77
-#: abaqus.Annotation.Arrow.Arrow.__init__:63
-#: abaqus.Annotation.Arrow.Arrow.__init__:77
+#: abaqus.Annotation.Arrow.Arrow:74 abaqus.Annotation.Arrow.Arrow:88
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:7
 #: abaqus.Annotation.Arrow.Arrow.setValues:60
 #: abaqus.Annotation.Arrow.Arrow.setValues:75
@@ -438,8 +400,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:64
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:78
-#: abaqus.Annotation.Arrow.Arrow.__init__:64
-#: abaqus.Annotation.Arrow.Arrow.__init__:78
+#: abaqus.Annotation.Arrow.Arrow:75 abaqus.Annotation.Arrow.Arrow:89
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:8
 #: abaqus.Annotation.Arrow.Arrow.setValues:61
 #: abaqus.Annotation.Arrow.Arrow.setValues:76
@@ -450,8 +411,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:65
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:79
-#: abaqus.Annotation.Arrow.Arrow.__init__:65
-#: abaqus.Annotation.Arrow.Arrow.__init__:79
+#: abaqus.Annotation.Arrow.Arrow:76 abaqus.Annotation.Arrow.Arrow:90
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:9
 #: abaqus.Annotation.Arrow.Arrow.setValues:62
 #: abaqus.Annotation.Arrow.Arrow.setValues:77
@@ -462,8 +422,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:66
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:80
-#: abaqus.Annotation.Arrow.Arrow.__init__:66
-#: abaqus.Annotation.Arrow.Arrow.__init__:80
+#: abaqus.Annotation.Arrow.Arrow:77 abaqus.Annotation.Arrow.Arrow:91
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:10
 #: abaqus.Annotation.Arrow.Arrow.setValues:63
 #: abaqus.Annotation.Arrow.Arrow.setValues:78
@@ -474,8 +433,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:67
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:81
-#: abaqus.Annotation.Arrow.Arrow.__init__:67
-#: abaqus.Annotation.Arrow.Arrow.__init__:81
+#: abaqus.Annotation.Arrow.Arrow:78 abaqus.Annotation.Arrow.Arrow:92
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:11
 #: abaqus.Annotation.Arrow.Arrow.setValues:64
 #: abaqus.Annotation.Arrow.Arrow.setValues:79
@@ -485,15 +443,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:69
-#: abaqus.Annotation.Arrow.Arrow.__init__:69
-#: abaqus.Annotation.Arrow.Arrow.setValues:66
+#: abaqus.Annotation.Arrow.Arrow:80 abaqus.Annotation.Arrow.Arrow.setValues:66
 #: abaqus.Annotation.Arrow.Arrow.startHeadStyle:13 of
 msgid "The default value is NONE."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:71
-#: abaqus.Annotation.Arrow.Arrow.__init__:71
-#: abaqus.Annotation.Arrow.Arrow.setValues:68 of
+#: abaqus.Annotation.Arrow.Arrow:82 abaqus.Annotation.Arrow.Arrow.setValues:68
+#: of
 msgid ""
 "A SymbolicConstant specifying the style of the end head. Possible values "
 "are:  - ARROW - FILLED_ARROW - HOLLOW_CIRCLE - FILLED_CIRCLE - "
@@ -503,7 +460,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:71
-#: abaqus.Annotation.Arrow.Arrow.__init__:71
+#: abaqus.Annotation.Arrow.Arrow:82
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:68 of
 msgid ""
@@ -513,7 +470,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:83
-#: abaqus.Annotation.Arrow.Arrow.__init__:83
+#: abaqus.Annotation.Arrow.Arrow:94
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:13
 #: abaqus.Annotation.Arrow.Arrow.setValues:81 of
 msgid "The default value is FILLED_ARROW."
@@ -521,8 +478,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:85
-#: abaqus.Annotation.Arrow.Arrow.__init__:85
-#: abaqus.Annotation.Arrow.Arrow.setValues:83
+#: abaqus.Annotation.Arrow.Arrow:96 abaqus.Annotation.Arrow.Arrow.setValues:83
 #: abaqus.Annotation.Arrow.Arrow.startGap:1 of
 msgid ""
 "A Float specifying the distance in millimeters between the arrow start "
@@ -531,8 +487,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:88
-#: abaqus.Annotation.Arrow.Arrow.__init__:88
-#: abaqus.Annotation.Arrow.Arrow.endGap:1
+#: abaqus.Annotation.Arrow.Arrow:99 abaqus.Annotation.Arrow.Arrow.endGap:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:86 of
 msgid ""
 "A Float specifying the distance in millimeters between the arrow end "
@@ -541,8 +496,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:91
-#: abaqus.Annotation.Arrow.Arrow.__init__:91
-#: abaqus.Annotation.Arrow.Arrow.color:1
+#: abaqus.Annotation.Arrow.Arrow:102 abaqus.Annotation.Arrow.Arrow.color:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:89 of
 msgid ""
 "A String specifying the color of the arrow. Possible string values are "
@@ -551,8 +505,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:94
-#: abaqus.Annotation.Arrow.Arrow.__init__:94
-#: abaqus.Annotation.Arrow.Arrow.lineStyle:1
+#: abaqus.Annotation.Arrow.Arrow:105 abaqus.Annotation.Arrow.Arrow.lineStyle:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:92 of
 msgid ""
 "A SymbolicConstant specifying the line style of the arrow. Possible "
@@ -562,7 +515,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:97
-#: abaqus.Annotation.Arrow.Arrow.__init__:97
+#: abaqus.Annotation.Arrow.Arrow:108
 #: abaqus.Annotation.Arrow.Arrow.lineThickness:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:95 of
 msgid ""
@@ -573,30 +526,32 @@ msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text
-#: abaqus.Annotation.Arrow.Arrow.__init__ abaqus.Annotation.Text.Text.__init__
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport
+#: abaqus.Annotation.Arrow.Arrow abaqus.Annotation.Text.Text
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Returns"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:100
-#: abaqus.Annotation.Arrow.Arrow.__init__:100 of
+#: abaqus.Annotation.Arrow.Arrow:111 of
 msgid "An Arrow object."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text
-#: abaqus.Annotation.Arrow.Arrow.__init__ abaqus.Annotation.Text.Text.__init__
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport
+#: abaqus.Annotation.Arrow.Arrow abaqus.Annotation.Text.Text
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Return type"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:101
-#: abaqus.Annotation.Arrow.Arrow.__init__:101 of
+#: abaqus.Annotation.Arrow.Arrow:112 of
 msgid ":class:`Arrow`"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:1
-#: abaqus.Annotation.Text.Text.__init__:1 of
+#: abaqus.Annotation.Text.Text:15 of
 msgid "This method creates a Text object."
 msgstr ""
 
@@ -609,9 +564,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:15
-#: abaqus.Annotation.Text.Text.__init__:15
-#: abaqus.Annotation.Text.Text.setValues:7 abaqus.Annotation.Text.Text.text:1
-#: of
+#: abaqus.Annotation.Text.Text:26 abaqus.Annotation.Text.Text.setValues:7
+#: abaqus.Annotation.Text.Text.text:1 of
 msgid ""
 "A String specifying the text of the Text object. The default value is an "
 "empty string."
@@ -619,21 +573,20 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:17
-#: abaqus.Annotation.Text.Text.__init__:17 abaqus.Annotation.Text.Text.offset:1
+#: abaqus.Annotation.Text.Text:28 abaqus.Annotation.Text.Text.offset:1
 #: abaqus.Annotation.Text.Text.setValues:9 of
 msgid ""
-"A pair of Floats specifying the **X**- and **Y**-offsets in millimeters "
+"A pair of Floats specifying the **X**  and **Y** offsets in millimeters "
 "of the Text object from **anchor**. The default value is (0, 0)."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:20
-#: abaqus.Annotation.Text.Text.__init__:20
-#: abaqus.Annotation.Text.Text.setValues:12 of
+#: abaqus.Annotation.Text.Text:31 abaqus.Annotation.Text.Text.setValues:12 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y** coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A Sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant specifies a relative position. "
 "Possible values are:  - BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - "
 "CENTER_LEFT - CENTER - CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  "
@@ -642,23 +595,22 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:20
-#: abaqus.Annotation.Text.Text.__init__:20 abaqus.Annotation.Text.Text.anchor:1
+#: abaqus.Annotation.Text.Text:31 abaqus.Annotation.Text.Text.anchor:1
 #: abaqus.Annotation.Text.Text.setValues:12 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y** coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A Sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant specifies a relative position. "
 "Possible values are:"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:38
-#: abaqus.Annotation.Text.Text.__init__:38
-#: abaqus.Annotation.Text.Text.setValues:31 of
+#: abaqus.Annotation.Text.Text:49 abaqus.Annotation.Text.Text.setValues:31 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. The "
-"sequence of two Floats specifies the **X**- and **Y**-coordinates of the "
+"sequence of two Floats specifies the **X**  and **Y** coordinates of the "
 "reference point of the Text annotation given as percentages of its width "
 "and height. The SymbolicConstant indicates a relative position. Possible "
 "values are:  - BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - CENTER_LEFT -"
@@ -668,12 +620,11 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:38
-#: abaqus.Annotation.Text.Text.__init__:38
-#: abaqus.Annotation.Text.Text.referencePoint:1
+#: abaqus.Annotation.Text.Text:49 abaqus.Annotation.Text.Text.referencePoint:1
 #: abaqus.Annotation.Text.Text.setValues:31 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. The "
-"sequence of two Floats specifies the **X**- and **Y**-coordinates of the "
+"sequence of two Floats specifies the **X**  and **Y** coordinates of the "
 "reference point of the Text annotation given as percentages of its width "
 "and height. The SymbolicConstant indicates a relative position. Possible "
 "values are:"
@@ -681,8 +632,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:55
-#: abaqus.Annotation.Text.Text.__init__:55
-#: abaqus.Annotation.Text.Text.rotationAngle:1
+#: abaqus.Annotation.Text.Text:66 abaqus.Annotation.Text.Text.rotationAngle:1
 #: abaqus.Annotation.Text.Text.setValues:49 of
 msgid ""
 "A Float specifying the amount of rotation in degrees about "
@@ -691,7 +641,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:58
-#: abaqus.Annotation.Text.Text.__init__:58 abaqus.Annotation.Text.Text.color:1
+#: abaqus.Annotation.Text.Text:69 abaqus.Annotation.Text.Text.color:1
 #: abaqus.Annotation.Text.Text.setValues:52 of
 msgid ""
 "A String specifying the color of the Text object. Possible string values "
@@ -700,7 +650,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:61
-#: abaqus.Annotation.Text.Text.__init__:61 abaqus.Annotation.Text.Text.font:1
+#: abaqus.Annotation.Text.Text:72 abaqus.Annotation.Text.Text.font:1
 #: abaqus.Annotation.Text.Text.setValues:55 of
 msgid ""
 "A String specifying the font of the Text object. Possible string values "
@@ -710,8 +660,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:64
-#: abaqus.Annotation.Text.Text.__init__:64
-#: abaqus.Annotation.Text.Text.backgroundStyle:1
+#: abaqus.Annotation.Text.Text:75 abaqus.Annotation.Text.Text.backgroundStyle:1
 #: abaqus.Annotation.Text.Text.setValues:58 of
 msgid ""
 "A SymbolicConstant specifying the Text object background style. Possible "
@@ -721,8 +670,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:67
-#: abaqus.Annotation.Text.Text.__init__:67
-#: abaqus.Annotation.Text.Text.backgroundColor:1
+#: abaqus.Annotation.Text.Text:78 abaqus.Annotation.Text.Text.backgroundColor:1
 #: abaqus.Annotation.Text.Text.setValues:61 of
 msgid ""
 "A String specifying the color of the Text object background. Possible "
@@ -732,7 +680,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:70
-#: abaqus.Annotation.Text.Text.__init__:70 abaqus.Annotation.Text.Text.box:1
+#: abaqus.Annotation.Text.Text:81 abaqus.Annotation.Text.Text.box:1
 #: abaqus.Annotation.Text.Text.setValues:64 of
 msgid ""
 "A Boolean specifying whether the box around the text is shown. The "
@@ -741,8 +689,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:72
-#: abaqus.Annotation.Text.Text.__init__:72
-#: abaqus.Annotation.Text.Text.justification:1
+#: abaqus.Annotation.Text.Text:83 abaqus.Annotation.Text.Text.justification:1
 #: abaqus.Annotation.Text.Text.setValues:66 of
 msgid ""
 "A SymbolicConstant specifying the Text object justification for multiline"
@@ -751,12 +698,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:76
-#: abaqus.Annotation.Text.Text.__init__:76 of
+#: abaqus.Annotation.Text.Text:87 of
 msgid "A Text object."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:77
-#: abaqus.Annotation.Text.Text.__init__:77 of
+#: abaqus.Annotation.Text.Text:88 of
 msgid ":class:`Text`"
 msgstr ""
 
@@ -772,8 +719,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatapyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.name:1
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:20
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData:12 of
 msgid "A String specifying the repository key."
 msgstr ""
@@ -841,7 +787,7 @@ msgstr ""
 msgid ":class:`XYData`"
 msgstr ""
 
-#: ../../reference/mdb/annotation.md:20
+#: ../../reference/mdb/annotation.md:22
 msgid "Other Classes"
 msgstr ""
 
@@ -876,20 +822,13 @@ msgstr ""
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Annotation.Arrow.Arrow.__init__:10 of
-msgid ""
-"Check `Arrow.__init__ on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
-"#simaker-arrow__init__pyc>`__."
-msgstr ""
-
-#: abaqus.Annotation.Arrow.Arrow.__init__:21
-#: abaqus.Annotation.Arrow.Arrow.setValues:13 of
+#: abaqus.Annotation.Arrow.Arrow:32 abaqus.Annotation.Arrow.Arrow.setValues:13
+#: of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
-" of two Floats specifies the **X**- and **Y**-coordinates as percentages "
+" of two Floats specifies the **X**  and **Y** coordinates as percentages "
 "of the viewport width and height. A sequence of three Floats specifies "
-"the **X**-, **Y**-, and **Z**-coordinates of a point in the model "
+"the **X**, **Y**, and **Z** coordinates of a point in the model "
 "coordinate system. A SymbolicConstant indicates a relative position. "
 "Possible values are:  - BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - "
 "CENTER_LEFT - CENTER - CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  "
@@ -948,13 +887,6 @@ msgstr ""
 msgid ""
 "The Text object stores the text settings and location of a text "
 "annotation. The Text object is derived from the Annotation object."
-msgstr ""
-
-#: abaqus.Annotation.Text.Text.__init__:10 of
-msgid ""
-"Check `Text.__init__ on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textpyc.htm?contextscope=all"
-"#simaker-text__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Annotation.Text.Text.height:1 of
@@ -1080,6 +1012,88 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:12 of
+msgid ""
+"This method creates a Viewport object with the specified origin and "
+"dimensions."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:22 of
+msgid ""
+"A pair of Floats specifying the **X**  and **Y** coordinates in "
+"millimeters in the canvas coordinate system of the lower left corner of "
+"the viewport. The default origin is (0, 0)."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:26 of
+msgid ""
+"A Float specifying the width in millimeters of the viewport. Possible "
+"values are 30 ≤ **width** ≤ (*maxWidth*). The default value is 120.0. "
+"Note: The maximum value of width (*maxWidth*) is the width of the screen "
+"in millimeters."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:30 of
+msgid ""
+"A Float specifying the height in millimeters of the viewport. This height"
+" includes the title bar. Possible values are 30 ≤ **height** ≤ "
+"(*maxHeight*). The default value is 80.0. Note: The maximum value of "
+"height (*maxHeight*) is the height of the screen in millimeters."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:35 of
+msgid ""
+"A Boolean specifying whether the viewport border is visible in a printed "
+"image. The default value is ON."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:38 of
+msgid ""
+"A Boolean specifying whether the viewport title should be displayed in a "
+"printed image. The default value is ON.If **border** = OFF, the title "
+"will not be visible, even if **titleBar** =ON."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:42 of
+msgid ""
+"A SymbolicConstant specifying which title to use for the viewport title. "
+"Possible values are CUSTOM and SYSTEM. The default value is SYSTEM.If "
+"**titleStyle** = CUSTOM, **customTitleString** will be used. If "
+"**titleStyle** =  SYSTEM, a system-generated string will be used."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:47 of
+msgid ""
+"A String specifying the viewport title when **titleStyle** =CUSTOM. The "
+"default value is an empty string."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:50 of
+msgid "A Viewport object."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:51 of
+msgid ":class:`Viewport`"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport of
+msgid "Raises"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:53 of
+msgid ""
+"the current viewport may not be deleted, If the user attempts to delete "
+"the only viewport."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:54 of
+msgid "If **width** is out of range."
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:55 of
+msgid "If **height** is out of range."
+msgstr ""
+
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:1 of
 msgid "This method plots an Annotation object in aViewport."
 msgstr ""
@@ -1099,13 +1113,6 @@ msgstr ""
 msgid ""
 "An Int specifying the index of the Annotation object in the sequence of "
 "annotations to plot. The default value is zero."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.view:1 of
-msgid ""
-"A View object specifying the object that controls viewing of the viewport"
-" content."
 msgstr ""
 
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
@@ -3265,5 +3272,182 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`setValues <abaqus.Annotation.Arrow.Arrow.setValues>`\\"
 #~ " \\(\\[startPoint\\, endPoint\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "start point **X**- and **Y**-offsets in"
+#~ " millimeters from **startAnchor**. The "
+#~ "default value is (0, 0)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "end point **X**- and **Y**-offsets in"
+#~ " millimeters from **endAnchor**. The "
+#~ "default value is (0, 0)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates as percentages of"
+#~ " the viewport width and height. A "
+#~ "sequence of three Floats specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point in the model coordinate "
+#~ "system. A SymbolicConstant indicates a "
+#~ "relative position. Possible values are:  "
+#~ "- BOTTOM_LEFT,, - BOTTOM_CENTER - "
+#~ "BOTTOM_RIGHT - CENTER_LEFT - CENTER -"
+#~ " CENTER_RIGHT - TOP_LEFT - TOP_CENTER "
+#~ "- TOP_RIGHT  The default value is "
+#~ "BOTTOM_LEFT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates as percentages of"
+#~ " the viewport width and height. A "
+#~ "sequence of three Floats specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point in the model coordinate "
+#~ "system. A SymbolicConstant indicates a "
+#~ "relative position. Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates as percentages of"
+#~ " the viewport width and height. A "
+#~ "Sequence of three Floats specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point in the model coordinate "
+#~ "system. A SymbolicConstant indicates a "
+#~ "relative position. Possible values are:  "
+#~ "- BOTTOM_LEFT - BOTTOM_CENTER - "
+#~ "BOTTOM_RIGHT - CENTER_LEFT - CENTER -"
+#~ " CENTER_RIGHT - TOP_LEFT - TOP_CENTER "
+#~ "- TOP_RIGHT  The default value is "
+#~ "BOTTOM_LEFT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates as percentages of"
+#~ " the viewport width and height. A "
+#~ "Sequence of three Floats specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point in the model coordinate "
+#~ "system. A SymbolicConstant indicates a "
+#~ "relative position. Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A pair of Floats specifying the "
+#~ "**X**- and **Y**-offsets in millimeters "
+#~ "of the Text object from **anchor**. "
+#~ "The default value is (0, 0)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y** coordinates as percentages "
+#~ "of the viewport width and height. "
+#~ "A Sequence of three Floats specifies "
+#~ "the **X**-, **Y**-, and **Z**-coordinates "
+#~ "of a point in the model coordinate"
+#~ " system. A SymbolicConstant specifies a "
+#~ "relative position. Possible values are:  "
+#~ "- BOTTOM_LEFT - BOTTOM_CENTER - "
+#~ "BOTTOM_RIGHT - CENTER_LEFT - CENTER -"
+#~ " CENTER_RIGHT - TOP_LEFT - TOP_CENTER "
+#~ "- TOP_RIGHT  The default value is "
+#~ "BOTTOM_LEFT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y** coordinates as percentages "
+#~ "of the viewport width and height. "
+#~ "A Sequence of three Floats specifies "
+#~ "the **X**-, **Y**-, and **Z**-coordinates "
+#~ "of a point in the model coordinate"
+#~ " system. A SymbolicConstant specifies a "
+#~ "relative position. Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. The sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates of the reference "
+#~ "point of the Text annotation given "
+#~ "as percentages of its width and "
+#~ "height. The SymbolicConstant indicates a "
+#~ "relative position. Possible values are:  "
+#~ "- BOTTOM_LEFT - BOTTOM_CENTER - "
+#~ "BOTTOM_RIGHT - CENTER_LEFT - CENTER -"
+#~ " CENTER_RIGHT - TOP_LEFT - TOP_CENTER "
+#~ "- TOP_RIGHT  The default value is "
+#~ "BOTTOM_LEFT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. The sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates of the reference "
+#~ "point of the Text annotation given "
+#~ "as percentages of its width and "
+#~ "height. The SymbolicConstant indicates a "
+#~ "relative position. Possible values are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Arrow.__init__ on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
+#~ "#simaker-arrow__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant or a sequence of "
+#~ "Floats specifying a point. A sequence"
+#~ " of two Floats specifies the **X**-"
+#~ " and **Y**-coordinates as percentages of"
+#~ " the viewport width and height. A "
+#~ "sequence of three Floats specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point in the model coordinate "
+#~ "system. A SymbolicConstant indicates a "
+#~ "relative position. Possible values are:  "
+#~ "- BOTTOM_LEFT - BOTTOM_CENTER - "
+#~ "BOTTOM_RIGHT - CENTER_LEFT - CENTER -"
+#~ " CENTER_RIGHT - TOP_LEFT - TOP_CENTER "
+#~ "- TOP_RIGHT  The default value is "
+#~ "BOTTOM_LEFT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Text.__init__ on help.3ds.com/2016 "
+#~ "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textpyc.htm?contextscope=all"
+#~ "#simaker-text__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A View object specifying the object "
+#~ "that controls viewing of the viewport"
+#~ " content."
 #~ msgstr ""
 
