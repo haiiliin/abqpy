@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/session/odb_display.md:1
 msgid "Odb Display"
@@ -479,7 +479,7 @@ msgstr ""
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__
+#: abaqus.OdbDisplay.ViewCut.ViewCut
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues of
 msgid "Parameters"
@@ -1740,12 +1740,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:1
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:1 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut:16 of
 msgid "This method creates a ViewCut object."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:4
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:4 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut:19 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -1757,13 +1757,13 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:13
+#: abaqus.OdbDisplay.ViewCut.ViewCut:25
 #: abaqus.OdbDisplay.ViewCut.ViewCut.name:1 of
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:15
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:15
+#: abaqus.OdbDisplay.ViewCut.ViewCut:27
 #: abaqus.OdbDisplay.ViewCut.ViewCut.shape:1 of
 msgid ""
 "A SymbolicConstant specifying the shape of the ViewCut object. Possible "
@@ -1771,7 +1771,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:18
+#: abaqus.OdbDisplay.ViewCut.ViewCut:30
 #: abaqus.OdbDisplay.ViewCut.ViewCut.origin:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:36 of
 msgid ""
@@ -1782,7 +1782,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:22
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:22
+#: abaqus.OdbDisplay.ViewCut.ViewCut:34
 #: abaqus.OdbDisplay.ViewCut.ViewCut.normal:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:40 of
 msgid ""
@@ -1795,7 +1795,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:28
+#: abaqus.OdbDisplay.ViewCut.ViewCut:40
 #: abaqus.OdbDisplay.ViewCut.ViewCut.axis2:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:46 of
 msgid ""
@@ -1809,7 +1809,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:34
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:34
+#: abaqus.OdbDisplay.ViewCut.ViewCut:46
 #: abaqus.OdbDisplay.ViewCut.ViewCut.csysName:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:32 of
 msgid ""
@@ -1819,7 +1819,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:38
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:38
+#: abaqus.OdbDisplay.ViewCut.ViewCut:50
 #: abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52 of
 msgid ""
@@ -1832,7 +1832,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:44
+#: abaqus.OdbDisplay.ViewCut.ViewCut:56
 #: abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:58 of
 msgid ""
@@ -1841,7 +1841,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:47
+#: abaqus.OdbDisplay.ViewCut.ViewCut:59
 #: abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:61 of
 msgid ""
@@ -1852,7 +1852,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:51
+#: abaqus.OdbDisplay.ViewCut.ViewCut:63
 #: abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:65 of
 msgid ""
@@ -1862,22 +1862,22 @@ msgid ""
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__ of
+#: abaqus.OdbDisplay.ViewCut.ViewCut of
 msgid "Returns"
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:55 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut:67 of
 msgid "A ViewCut object."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__ of
+#: abaqus.OdbDisplay.ViewCut.ViewCut of
 msgid "Return type"
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:56 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut:68 of
 msgid ":class:`ViewCut`"
 msgstr ""
 
@@ -2381,7 +2381,6 @@ msgid "A String specifying the active ply name."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:15
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:30
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:44
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:10
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:38 of
@@ -2449,6 +2448,13 @@ msgid ""
 "A Dictionary with String keys and String values. Each key specifies a "
 "region in the model; the corresponding value specifies a section point "
 "within that region. For example::"
+msgstr ""
+
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:30 of
+msgid ""
+"If the viewport is not associated with any Odb object     The current "
+"viewport is not associated with an ODB file. Requested operation     "
+"cancelled."
 msgstr ""
 
 #: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:1 of
@@ -2603,13 +2609,6 @@ msgid ""
 "described below. The methods accessed via the OdbDisplay object cause the"
 " ViewCut object to be added to the "
 "session.viewports[name].odbDisplay.viewCuts repository."
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:10 of
-msgid ""
-"Check `ViewCut.__init__ on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
-"#simaker-viewcut__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.active:1 of
@@ -6494,5 +6493,11 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues>`\\ "
 #~ "\\(\\[primaryVariableCaching\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ViewCut.__init__ on help.3ds.com/2018 "
+#~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
+#~ "#simaker-viewcut__init__pyc>`__."
 #~ msgstr ""
 
