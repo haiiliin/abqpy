@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,9 +236,9 @@ msgstr ""
 msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (**minWidth** and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height. The maximum value of width and height (**maxWidth** and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
 msgstr ""
 
-#: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:18
-#: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:17
-msgid ":raises (minWidth`, :class:`minHeight) <= (width`, :class:`height) <= (maxWidth`, :class:`maxHeight): If either the width or height arguments of **imageSize** are out of range (where     **minWidth** and **minHeight** are the number of pixels corresponding to approximately 10 mm     for a given display and **maxWidth** and **maxHeight** are the largest allowable number of     pixels supported by the system graphics)."
+#: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:17
+#: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:16
+msgid "imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range     (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)     If either the width or height arguments of **imageSize** are out of range (where     **minWidth** and **minHeight** are the number of pixels corresponding to approximately 10 mm     for a given display and **maxWidth** and **maxHeight** are the largest allowable number of     pixels supported by the system graphics)."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions:1
@@ -400,7 +400,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:7
 #: ../../docstring of abaqus.Print.SvgOptions.SvgOptions.imageSize:1
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height.The maximum value of width and height (*maxWidth* and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (**minWidth**, **minHeight** ) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (**minWidth** and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height.The maximum value of width and height (**maxWidth** and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,6 +330,7 @@ msgstr ""
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOnFace:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:0
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:0
@@ -617,6 +618,7 @@ msgstr ""
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOnFace:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:0
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtendFace:0
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge:0
@@ -783,11 +785,11 @@ msgid "A Datum object representing a datum coordinate system from which to offse
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByOffset:19
-msgid "A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-offsets from **datumCoordSys**. The arguments **vector** and **point** are mutually exclusive, and one of them must be specified."
+msgid "A sequence of three Floats specifying the **X**, **Y**, and **Z** offsets from **datumCoordSys**. The arguments **vector** and **point** are mutually exclusive, and one of them must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByOffset:23
-msgid "A ConstrainedSketchVertex, InterestingPoint, DatumPoint object or a sequence of three Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point in space. The point represents the origin of the new datum coordinate system. The arguments **vector** and **point** are mutually exclusive, and one of them must be specified."
+msgid "A ConstrainedSketchVertex, InterestingPoint, DatumPoint object or a sequence of three Floats specifying the **X**, **Y**, and **Z** coordinates of a point in space. The point represents the origin of the new datum coordinate system. The arguments **vector** and **point** are mutually exclusive, and one of them must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:1
@@ -803,7 +805,7 @@ msgid "A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum ob
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:19
-msgid "A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point specifying a point on the **X**-axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One of them must be specified."
+msgid "A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point specifying a point on the **X** axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One of them must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:23
@@ -811,7 +813,7 @@ msgid "A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum ob
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:27
-msgid "An Edge, an Element Edge, or a Datum object representing a datum axis specifying the **X**-axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One of them must be specified."
+msgid "An Edge, an Element Edge, or a Datum object representing a datum axis specifying the **X** axis or the rr-axis. The **point1** and **line1** arguments are mutually exclusive. One of them must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByThreePoints:31
@@ -827,7 +829,7 @@ msgid "Check `DatumCsysByTwoLines on help.3ds.com/2020 <https://help.3ds.com/202
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:18
-msgid "A straight Edge, an ElementEdge, or a Datum object representing a datum axis specifying the **X**-axis or the rr-axis."
+msgid "A straight Edge, an ElementEdge, or a Datum object representing a datum axis specifying the **X** axis or the rr-axis."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumCsysByTwoLines:21
@@ -899,7 +901,7 @@ msgid "Check `DatumPointByCoordinate on help.3ds.com/2020 <https://help.3ds.com/
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByCoordinate:14
-msgid "A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the datum point."
+msgid "A sequence of three Floats specifying the **X**, **Y**, and **Z** coordinates of the datum point."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:1
@@ -935,7 +937,7 @@ msgid "Check `DatumPointByOffset on help.3ds.com/2020 <https://help.3ds.com/2020
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOffset:16
-msgid "A sequence of three Floats specifying the **X**-, **Y**-, and **Z**-offsets from **point**."
+msgid "A sequence of three Floats specifying the **X**, **Y**, and **Z** offsets from **point**."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByOnFace:1
@@ -1000,7 +1002,7 @@ msgid "A Datum plane object or a planar Face object specifying the sketch plane.
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:16
-msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates that will be used as the origin of the sketch. The default value is computed as the centroid of the face."
+msgid "A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates that will be used as the origin of the sketch. The default value is computed as the centroid of the face."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:19
@@ -1016,23 +1018,19 @@ msgid "A SymbolicConstant specifying on which side of the **sketchPlane** the sk
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:25
-msgid "An Edge or DatumAxis object specifying the orientation of the sketch. If unspecified, the sketch is assumed to be oriented with the **Y**-direction pointing up."
+msgid "An Edge or DatumAxis object specifying the orientation of the sketch. If unspecified, the sketch is assumed to be oriented with the **Y** direction pointing up."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:28
-msgid "* :class:`Transform` -- A Transform object. A Transform is an object with one method that returns the transform * :class:`matrix.`"
+msgid "A Transform object. A Transform is an object with one method that returns the transform matrix."
 msgstr ""
 
-#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:28
-msgid ":class:`Transform` -- A Transform object. A Transform is an object with one method that returns the transform"
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:30
+msgid ":class:`Transform`"
 msgstr ""
 
-#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:29
-msgid ":class:`matrix.`"
-msgstr ""
-
-#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:31
-msgid ":raises Up direction is parallel` to :class:`plane normal: If the sketchUpEdge is parallel to the sketchPlane."
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:32
+msgid "Up direction is parallel to plane normal,     If the sketchUpEdge is parallel to the sketchPlane."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane:1
@@ -1164,7 +1162,7 @@ msgid "Check `PartitionCellByPlaneThreePoints on help.3ds.com/2020 <https://help
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:19
-msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane. Note: *point1*, **point2**, and **point3** must not be colinear and must not coincide."
+msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane. Note: **point1**, **point2**, and **point3** must not be colinear and must not coincide."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:1
@@ -1450,7 +1448,7 @@ msgid "Check `ReferencePoint on help.3ds.com/2020 <https://help.3ds.com/2020/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.ReferencePoint:14
-msgid "A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum object specifying a reference point. **point** can also be a sequence of three Floats representing the **X**-, **Y**-, and **Z**-coordinates of the point."
+msgid "A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum object specifying a reference point. **point** can also be a sequence of three Floats representing the **X**, **Y**, and **Z** coordinates of the point."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.ReferencePoint:18

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/mdb/model/section/connector.md:1
 msgid "Connector"
@@ -43,7 +43,7 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`behaviorOptions "
-"<abaqus.Connector.ConnectorSection.ConnectorSection.behaviorOptions>`\\"
+"<abaqus.Section.SectionBase.SectionBase.behaviorOptions>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -51,7 +51,7 @@ msgid "A ConnectorBehaviorOptionArray object."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Connector.ConnectorSection.ConnectorSection.name>`\\"
+msgid ":py:obj:`name <abaqus.Section.SectionBase.SectionBase.name>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -61,7 +61,7 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`beamTransverseShear "
-"<abaqus.Connector.ConnectorSection.ConnectorSection.beamTransverseShear>`\\"
+"<abaqus.Section.SectionBase.SectionBase.beamTransverseShear>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -71,33 +71,11 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`transverseShear "
-"<abaqus.Connector.ConnectorSection.ConnectorSection.transverseShear>`\\"
+"<abaqus.Section.SectionBase.SectionBase.transverseShear>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid "A TransverseShearShell object."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`behaviorOptions "
-"<abaqus.Section.SectionBase.SectionBase.behaviorOptions>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Section.SectionBase.SectionBase.name>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`beamTransverseShear "
-"<abaqus.Section.SectionBase.SectionBase.beamTransverseShear>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`transverseShear "
-"<abaqus.Section.SectionBase.SectionBase.transverseShear>`\\"
 msgstr ""
 
 #: abaqus.Connector.ConnectorSection.ConnectorSection of
@@ -112,7 +90,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:1
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:94
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:1 of
 msgid ""
 "This method creates a connector damage behavior option for a "
@@ -127,7 +105,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:1
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:66
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:1 of
 msgid ""
 "This method creates a connector damping behavior option for a "
@@ -142,7 +120,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:1
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:63
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:1 of
 msgid ""
 "This method creates a connector elasticity behavior option for a "
@@ -157,7 +135,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:1
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure:20
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:1 of
 msgid ""
 "This method creates a connector failure behavior option for a "
@@ -185,7 +163,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:1
+#: abaqus.Connector.ConnectorLock.ConnectorLock:20
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:1 of
 msgid ""
 "This method creates a connector lock behavior option for a "
@@ -200,7 +178,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:1
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:74
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:1 of
 msgid ""
 "This method creates a connector plasticity behavior option for a "
@@ -215,7 +193,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:1
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential:28
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:1 of
 msgid ""
 "This method creates a connector potential object to be used in "
@@ -231,7 +209,7 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:1
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:1 of
+#: abaqus.Connector.ConnectorStop.ConnectorStop:20 of
 msgid ""
 "This method creates a connector stop behavior option for a "
 "ConnectorSection object."
@@ -266,21 +244,21 @@ msgstr ""
 msgid "Member Details:"
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm:23
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:5
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:4
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:5
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:4
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:4
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:4
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:4
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:5
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:4
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:6
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:4
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:5
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:5
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:97
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:69
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:67
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure:23
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction:25
+#: abaqus.Connector.ConnectorLock.ConnectorLock:23
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:54
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:78
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential:32
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:4
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:5
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:4
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:4
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:5
@@ -290,10 +268,10 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:5
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:5
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:4
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:4
+#: abaqus.Connector.ConnectorStop.ConnectorStop:23
+#: abaqus.Connector.DerivedComponent.DerivedComponent:28
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:4
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__:4
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:4 of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:45 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -304,19 +282,19 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordamagepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction
+#: abaqus.Connector.ConnectorLock.ConnectorLock
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity
@@ -326,14 +304,14 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__
+#: abaqus.Connector.ConnectorStop.ConnectorStop
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__ of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior of
 msgid "Parameters"
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:15
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:16
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:105
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:86
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.coupling:1
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.coupling:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:15
@@ -344,7 +322,7 @@ msgid ""
 "UNCOUPLED."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:18
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:108
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.criterion:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:18 of
 msgid ""
@@ -353,7 +331,7 @@ msgid ""
 " is FORCE."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:21
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:111
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationTemperature:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:21 of
 msgid ""
@@ -361,7 +339,7 @@ msgid ""
 "The default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:24
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:114
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationPotentialOperator:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:24 of
 msgid ""
@@ -371,7 +349,7 @@ msgid ""
 "and if **criterion** = FORCE or MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:28
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:118
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationPotentialExponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:28 of
 msgid ""
@@ -382,7 +360,7 @@ msgid ""
 "MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:33
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:123
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationDependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:33 of
 msgid ""
@@ -390,7 +368,7 @@ msgid ""
 "initiation data. The default value is 0."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:36
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:126
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolution:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:36 of
 msgid ""
@@ -398,7 +376,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:39
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:129
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionType:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:39 of
 msgid ""
@@ -408,7 +386,7 @@ msgid ""
 "ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:43
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:133
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.softening:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:43 of
 msgid ""
@@ -418,7 +396,7 @@ msgid ""
 " **evolutionType** = MOTION_TYPE."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:47
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:137
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.useAffected:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:47 of
 msgid ""
@@ -428,7 +406,7 @@ msgid ""
 "value is OFF.This argument is applicable only if **evolution** = ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:52
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:142
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.degradation:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:52 of
 msgid ""
@@ -438,7 +416,7 @@ msgid ""
 " applicable if **evolution** = ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:56
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:146
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionTemperature:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:56 of
 msgid ""
@@ -447,7 +425,7 @@ msgid ""
 "**evolution** = ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:59
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:149
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionDependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:59 of
 msgid ""
@@ -456,7 +434,7 @@ msgid ""
 "if **evolution** = ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:62
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:152
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionPotentialOperator:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:62 of
 msgid ""
@@ -467,7 +445,7 @@ msgid ""
 "and when **criterion** = FORCE or MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:67
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:157
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionPotentialExponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:67 of
 msgid ""
@@ -478,7 +456,7 @@ msgid ""
 "**evolutionType** = MOTION, and when **criterion** = FORCE or MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:72
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:162
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationPotentials:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:72 of
 msgid ""
@@ -487,7 +465,7 @@ msgid ""
 " only if **coupling** = COUPLED and if **criterion** = FORCE or MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:76
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:166
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionPotentials:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:76 of
 msgid ""
@@ -497,7 +475,7 @@ msgid ""
 "**evolutionType** = MOTION, and if **criterion** = FORCE or MOTION."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:81
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:171
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.initiationTable:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:81 of
 msgid ""
@@ -506,7 +484,7 @@ msgid ""
 "data are described below."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:84
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:174
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionTable:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:84 of
 msgid ""
@@ -516,7 +494,7 @@ msgid ""
 "**evolution** = ON."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:88
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:178
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.affectedComponents:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:88 of
 msgid ""
@@ -527,8 +505,8 @@ msgid ""
 "empty sequence."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:93
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:64
+#: ../../docstring abaqus.Connector.ConnectorDamage.ConnectorDamage:183
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:134
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.components:1
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.components:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:93
@@ -541,21 +519,21 @@ msgid ""
 " sequence."
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction
+#: abaqus.Connector.ConnectorLock.ConnectorLock
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity
@@ -565,33 +543,33 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__
+#: abaqus.Connector.ConnectorStop.ConnectorStop
+#: abaqus.Connector.DerivedComponent.DerivedComponent
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__ of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior of
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:98
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:188
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:98 of
 msgid "A ConnectorDamage object."
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction
+#: abaqus.Connector.ConnectorLock.ConnectorLock
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity
@@ -601,41 +579,41 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__
+#: abaqus.Connector.ConnectorStop.ConnectorStop
+#: abaqus.Connector.DerivedComponent.DerivedComponent
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__ of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior of
 msgid "Return type"
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:99
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage:189
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage:99 of
 msgid ":class:`ConnectorDamage`"
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__
 #: abaqus.Connector.CDCTerm.CDCTerm.setValues
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__
+#: abaqus.Connector.ConnectorDamage.ConnectorDamage
 #: abaqus.Connector.ConnectorDamage.ConnectorDamage.setValues
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping
 #: abaqus.Connector.ConnectorDamping.ConnectorDamping.setValues
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
 #: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.setValues
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure
 #: abaqus.Connector.ConnectorFailure.ConnectorFailure.setValues
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction
 #: abaqus.Connector.ConnectorFriction.ConnectorFriction.setValues
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__
+#: abaqus.Connector.ConnectorLock.ConnectorLock
 #: abaqus.Connector.ConnectorLock.ConnectorLock.setValues
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions
 #: abaqus.Connector.ConnectorOptions.ConnectorOptions.setValues
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
 #: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.setValues
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.setValues
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping
@@ -646,10 +624,10 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__
+#: abaqus.Connector.ConnectorStop.ConnectorStop
 #: abaqus.Connector.ConnectorStop.ConnectorStop.setValues
+#: abaqus.Connector.DerivedComponent.DerivedComponent
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__
 #: abaqus.Connector.DerivedComponent.DerivedComponent.setValues of
 msgid "Raises"
 msgstr ""
@@ -661,8 +639,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordampingpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:15
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:77
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.behavior:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:15 of
 msgid ""
@@ -671,8 +648,7 @@ msgid ""
 " LINEAR."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:18
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:80
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.coupling:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:18 of
 msgid ""
@@ -684,8 +660,8 @@ msgid ""
 " and COUPLED_MOTION. The default value is UNCOUPLED."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:56
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:24
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:72
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:86
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.dependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:24
 #: abaqus.Connector.DerivedComponent.CDCTerm.fieldDependencies:1
@@ -695,8 +671,7 @@ msgid ""
 "value is 0."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:26
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:88
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.temperatureDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:26 of
 msgid ""
@@ -704,8 +679,7 @@ msgid ""
 " default value is OFF."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:29
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:91
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.frequencyDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:29 of
 msgid ""
@@ -714,8 +688,7 @@ msgid ""
 "UNCOUPLED. The default value is OFF."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:33
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:95
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.table:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:33 of
 msgid ""
@@ -724,8 +697,7 @@ msgid ""
 "sequence."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:36
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:98
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.independentComponents:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:36 of
 msgid ""
@@ -737,11 +709,10 @@ msgid ""
 "specified. The default value is an empty sequence."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:42
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:46
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:33
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:34
+#: ../../docstring abaqus.Connector.ConnectorDamping.ConnectorDamping:104
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:105
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure:49
+#: abaqus.Connector.ConnectorLock.ConnectorLock:50
 #: abaqus.Connector.ConnectorSection.ConnectorDamping.components:1
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.components:1
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.components:1
@@ -751,7 +722,7 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:33
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:34
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:21
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:21
+#: abaqus.Connector.ConnectorStop.ConnectorStop:37
 #: abaqus.Connector.ConnectorStop.ConnectorStop.components:1 of
 msgid ""
 "A sequence of Ints specifying the components of relative motion for which"
@@ -760,12 +731,12 @@ msgid ""
 " sequence."
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:46
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:108
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:46 of
 msgid "A ConnectorDamping object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:47
+#: abaqus.Connector.ConnectorDamping.ConnectorDamping:109
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping:47 of
 msgid ":class:`ConnectorDamping`"
 msgstr ""
@@ -777,8 +748,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorelasticitypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:16
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:75
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.behavior:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:16 of
 msgid ""
@@ -787,8 +757,7 @@ msgid ""
 "The default value is LINEAR."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:19
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:78
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.coupling:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:19 of
 msgid ""
@@ -801,8 +770,7 @@ msgid ""
 "applicable if **behavior** = RIGID."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:26
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:85
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.dependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:26 of
 msgid ""
@@ -810,8 +778,7 @@ msgid ""
 "value is 0.This argument is not applicable if **behavior** = RIGID."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:29
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:88
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.temperatureDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:29 of
 msgid ""
@@ -820,8 +787,7 @@ msgid ""
 "RIGID."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:32
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:91
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.frequencyDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:32 of
 msgid ""
@@ -831,8 +797,7 @@ msgid ""
 "**behavior** = RIGID."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:36
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:95
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.table:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:36 of
 msgid ""
@@ -841,8 +806,7 @@ msgid ""
 "if **behavior** = RIGID. The default value is an empty sequence."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:40
+#: ../../docstring abaqus.Connector.ConnectorElasticity.ConnectorElasticity:99
 #: abaqus.Connector.ConnectorSection.ConnectorElasticity.independentComponents:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:40 of
 msgid ""
@@ -854,12 +818,12 @@ msgid ""
 "specified. The default value is an empty sequence."
 msgstr ""
 
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:50
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:109
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:50 of
 msgid "A ConnectorElasticity object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:51
+#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity:110
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity:51 of
 msgid ":class:`ConnectorElasticity`"
 msgstr ""
@@ -871,8 +835,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfailurepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:15
+#: ../../docstring abaqus.Connector.ConnectorFailure.ConnectorFailure:31
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.releaseComponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:15 of
 msgid ""
@@ -882,15 +845,14 @@ msgid ""
 " components fail. The default value is ALL."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:19
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:20
+#: ../../docstring abaqus.Connector.ConnectorFailure.ConnectorFailure:35
+#: abaqus.Connector.ConnectorLock.ConnectorLock:36
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.minMotion:1
 #: abaqus.Connector.ConnectorSection.ConnectorLock.minMotion:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:19
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:20
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:15
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:15
+#: abaqus.Connector.ConnectorStop.ConnectorStop:31
 #: abaqus.Connector.ConnectorStop.ConnectorStop.minMotion:1 of
 msgid ""
 "None or a Float specifying the lower bound for the connector's relative "
@@ -898,15 +860,14 @@ msgid ""
 "value is None."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:22
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:23
+#: ../../docstring abaqus.Connector.ConnectorFailure.ConnectorFailure:38
+#: abaqus.Connector.ConnectorLock.ConnectorLock:39
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.maxMotion:1
 #: abaqus.Connector.ConnectorSection.ConnectorLock.maxMotion:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:22
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:23
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:18
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:18
+#: abaqus.Connector.ConnectorStop.ConnectorStop:34
 #: abaqus.Connector.ConnectorStop.ConnectorStop.maxMotion:1 of
 msgid ""
 "None or a Float specifying the upper bound for the connector's relative "
@@ -914,9 +875,8 @@ msgid ""
 "value is None."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:25
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:26
+#: ../../docstring abaqus.Connector.ConnectorFailure.ConnectorFailure:41
+#: abaqus.Connector.ConnectorLock.ConnectorLock:42
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.minForce:1
 #: abaqus.Connector.ConnectorSection.ConnectorLock.minForce:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:25
@@ -927,9 +887,8 @@ msgid ""
 "lower bound. The default value is None."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:29
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:30
+#: ../../docstring abaqus.Connector.ConnectorFailure.ConnectorFailure:45
+#: abaqus.Connector.ConnectorLock.ConnectorLock:46
 #: abaqus.Connector.ConnectorSection.ConnectorFailure.maxForce:1
 #: abaqus.Connector.ConnectorSection.ConnectorLock.maxForce:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:29
@@ -940,17 +899,17 @@ msgid ""
 "upper bound. The default value is None."
 msgstr ""
 
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:37
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure:53
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:37 of
 msgid "A ConnectorFailure object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:38
+#: abaqus.Connector.ConnectorFailure.ConnectorFailure:54
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure:38 of
 msgid ":class:`ConnectorFailure`"
 msgstr ""
 
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:1
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction:20
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:1 of
 msgid ""
 "This method creates a connector friction behavior option for a "
@@ -965,8 +924,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfrictionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:17
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:33
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.frictionModel:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:17 of
 msgid ""
@@ -975,7 +933,7 @@ msgid ""
 "PREDEFINED."
 msgstr ""
 
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:20
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction:36
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:20 of
 msgid ""
 "A SymbolicConstant specifying the method of indicating the slip "
@@ -985,8 +943,7 @@ msgid ""
 "USER_CUSTOMIZED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:25
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:41
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.tangentDirection:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:25 of
 msgid ""
@@ -997,8 +954,7 @@ msgid ""
 "= SPECIFY. The default value is None."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:30
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:46
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.stickStiffness:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:30 of
 msgid ""
@@ -1008,8 +964,7 @@ msgid ""
 "the stick stiffness. The default value is None."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:34
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:50
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.componentType:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:34 of
 msgid ""
@@ -1018,8 +973,7 @@ msgid ""
 "default value is NO_INDEPENDENT_COMPONENTS."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:38
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:54
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.slipDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:38 of
 msgid ""
@@ -1028,8 +982,7 @@ msgid ""
 "= USER_CUSTOMIZED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:41
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:57
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.temperatureDependency:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:41 of
 msgid ""
@@ -1038,8 +991,7 @@ msgid ""
 "USER_CUSTOMIZED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:44
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:60
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.dependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:44 of
 msgid ""
@@ -1048,8 +1000,7 @@ msgid ""
 "USER_CUSTOMIZED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:47
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:63
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.useContactForceComponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:47 of
 msgid ""
@@ -1058,8 +1009,7 @@ msgid ""
 " = USER_CUSTOMIZED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:50
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:66
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.contactForceStyle:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:50 of
 msgid ""
@@ -1071,8 +1021,7 @@ msgid ""
 "**useContactForceComponent** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:56
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:72
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.contactForceComponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:56 of
 msgid ""
@@ -1082,8 +1031,7 @@ msgid ""
 "COMPONENT_NUMBER. The default value is 0."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:60
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:76
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.forcePotentialOperator:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:60 of
 msgid ""
@@ -1093,8 +1041,7 @@ msgid ""
 "USER_CUSTOMIZED and if **slipStyle** = COMPUTE."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:65
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:81
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.forcePotentialExponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:65 of
 msgid ""
@@ -1104,8 +1051,7 @@ msgid ""
 "**slipStyle** = COMPUTE, and if **forcePotentialOperator** = SUM."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:70
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:86
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.connectorPotentials:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:70 of
 msgid ""
@@ -1114,8 +1060,7 @@ msgid ""
 " if **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:74
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:90
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.table:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:74 of
 msgid ""
@@ -1148,8 +1093,7 @@ msgid ""
 "the second field variable.Etc."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:97
+#: ../../docstring abaqus.Connector.ConnectorFriction.ConnectorFriction:113
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.independentComponents:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:97 of
 msgid ""
@@ -1160,12 +1104,12 @@ msgid ""
 "components can be specified. The default value is an empty sequence."
 msgstr ""
 
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:103
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction:119
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:103 of
 msgid "A ConnectorFriction object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:104
+#: abaqus.Connector.ConnectorFriction.ConnectorFriction:120
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction:104 of
 msgid ":class:`ConnectorFriction`"
 msgstr ""
@@ -1177,7 +1121,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorlockpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Connector.ConnectorLock.ConnectorLock.__init__:15
+#: ../../docstring abaqus.Connector.ConnectorLock.ConnectorLock:31
 #: abaqus.Connector.ConnectorSection.ConnectorLock.lockingComponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:15 of
 msgid ""
@@ -1187,12 +1131,12 @@ msgid ""
 "all motion components are locked. The default value is ALL."
 msgstr ""
 
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:38
+#: abaqus.Connector.ConnectorLock.ConnectorLock:54
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:38 of
 msgid "A ConnectorLock object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:39
+#: abaqus.Connector.ConnectorLock.ConnectorLock:55
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock:39 of
 msgid ":class:`ConnectorLock`"
 msgstr ""
@@ -1204,8 +1148,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorplasticitypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:19
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:89
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropic:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:19 of
 msgid ""
@@ -1214,8 +1157,7 @@ msgid ""
 "specified as ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:22
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:92
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropicType:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:22 of
 msgid ""
@@ -1224,8 +1166,7 @@ msgid ""
 "value is TABULAR.This argument is applicable only if **isotropic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:26
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:96
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropicTemperature:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:26 of
 msgid ""
@@ -1234,8 +1175,7 @@ msgid ""
 "**isotropic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:29
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:99
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropicDependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:29 of
 msgid ""
@@ -1244,8 +1184,7 @@ msgid ""
 "if **isotropic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:32
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:102
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.kinematic:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:32 of
 msgid ""
@@ -1254,8 +1193,7 @@ msgid ""
 "specified as ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:35
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:105
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.kinematicType:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:35 of
 msgid ""
@@ -1265,8 +1203,7 @@ msgid ""
 "**kinematic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:39
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:109
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.kinematicTemperature:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:39 of
 msgid ""
@@ -1275,8 +1212,7 @@ msgid ""
 "**kinematic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:42
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:112
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.kinematicDependencies:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:42 of
 msgid ""
@@ -1285,8 +1221,7 @@ msgid ""
 "if **kinematic** = ON."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:45
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:115
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.forcePotentialOperator:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:45 of
 msgid ""
@@ -1295,8 +1230,7 @@ msgid ""
 " value is SUM.This argument is applicable only if **coupling** = COUPLED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:49
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:119
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.forcePotentialExponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:49 of
 msgid ""
@@ -1306,8 +1240,7 @@ msgid ""
 "**forcePotentialOperator** = SUM."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:53
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:123
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.connectorPotentials:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:53 of
 msgid ""
@@ -1316,8 +1249,7 @@ msgid ""
 " if **coupling** = COUPLED."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:56
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:126
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropicTable:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:56 of
 msgid ""
@@ -1327,8 +1259,7 @@ msgid ""
 " is an empty sequence."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:60
+#: ../../docstring abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:130
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.kinematicTable:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:60 of
 msgid ""
@@ -1338,12 +1269,12 @@ msgid ""
 " is an empty sequence."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:69
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:139
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:69 of
 msgid "A ConnectorPlasticity object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:70
+#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity:140
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:70 of
 msgid ":class:`ConnectorPlasticity`"
 msgstr ""
@@ -1355,8 +1286,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorpotentialpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:14
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:38
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.componentStyle:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:14 of
 msgid ""
@@ -1366,8 +1296,7 @@ msgid ""
 "COMPONENT_NUMBER."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:18
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:42
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.componentNumber:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:18 of
 msgid ""
@@ -1377,8 +1306,7 @@ msgid ""
 "components can be specified. The default value is 0."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:23
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:47
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.sign:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:23 of
 msgid ""
@@ -1386,8 +1314,7 @@ msgid ""
 "values are POSITIVE and NEGATIVE. The default value is POSITIVE."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:26
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:50
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.scaleFactor:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:26 of
 msgid ""
@@ -1395,8 +1322,7 @@ msgid ""
 "value is 1.0."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:28
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:52
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.positiveExponent:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:28 of
 msgid ""
@@ -1405,8 +1331,7 @@ msgid ""
 "of the invoking behavior option is set to MAXIMUM."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:32
+#: ../../docstring abaqus.Connector.ConnectorPotential.ConnectorPotential:56
 #: abaqus.Connector.ConnectorSection.ConnectorPotential.shiftFactor:1
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:32 of
 msgid ""
@@ -1414,7 +1339,7 @@ msgid ""
 "value is 0.0."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:34
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential:58
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:34 of
 msgid ""
 "A SymbolicConstant specifying the H function of the contribution: either "
@@ -1425,12 +1350,12 @@ msgid ""
 " potential operator of the invoking behavior option must be SUM)."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:40
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential:64
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:40 of
 msgid "A ConnectorPotential object."
 msgstr ""
 
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:41
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential:65
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:41 of
 msgid ":class:`ConnectorPotential`"
 msgstr ""
@@ -1443,16 +1368,16 @@ msgid ""
 msgstr ""
 
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:25
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:25 of
+#: abaqus.Connector.ConnectorStop.ConnectorStop:41 of
 msgid "A ConnectorStop object."
 msgstr ""
 
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:26
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:26 of
+#: abaqus.Connector.ConnectorStop.ConnectorStop:42 of
 msgid ":class:`ConnectorStop`"
 msgstr ""
 
-#: ../../reference/mdb/model/section/connector.md:17
+#: ../../reference/mdb/model/section/connector.md:16
 msgid "Other Classes"
 msgstr ""
 
@@ -1495,9 +1420,107 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cdctermpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Connector.CDCTerm.CDCTerm:20
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:1 of
+msgid "This method creates a CDCTerm object."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:35
+#: abaqus.Connector.DerivedComponent.CDCTerm.intrinsicComponents:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:19 of
+msgid ""
+"A sequence of Ints specifying the components of relative motion for which"
+" the contributing term is defined. Possible values are 1 ≤ "
+"**intrinsicComponents** ≤ 6. Only available components can be specified "
+"if the DerivedComponent object is being referenced by a Potential object."
+" This is not the case if the DerivedComponent object is referenced by a "
+"ConnectorFriction object directly. The default value is an empty "
+"sequence."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:41
+#: abaqus.Connector.DerivedComponent.CDCTerm.table:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:25 of
+msgid ""
+"A sequence of sequences of Floats specifying components numbers and "
+"temperature and field values. Each sequence of the table data "
+"specifies:The first intrinsic component number.If applicable, the second "
+"intrinsic component number.Etc.If applicable, the first independent "
+"component number.If applicable, the second independent component "
+"number.Etc.If applicable, the temperature value.If applicable, the value "
+"of the first field variable.If applicable, the value of the second field "
+"variable.Etc.The default value is an empty sequence."
+msgstr ""
+
+#: abaqus.Connector.CDCTerm.CDCTerm:49
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:33 of
+msgid ""
+"A SymbolicConstant specifying the method for combining contributing "
+"terms: square root of a sum of the squares, direct sum, or Macauley sum. "
+"Possible values are RSS, SUM, and MACAULEY. The default value is RSS."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:53
+#: abaqus.Connector.DerivedComponent.CDCTerm.termSign:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:37 of
+msgid ""
+"A SymbolicConstant specifying the overall sign for the contributing term."
+" Possible values are POSITIVE and NEGATIVE. The default value is "
+"POSITIVE."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:56
+#: abaqus.Connector.DerivedComponent.CDCTerm.localDependency:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:40 of
+msgid ""
+"A Boolean specifying whether the table data depend on either components "
+"of relative position or components of constitutive relative motion. The "
+"default value is OFF."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:59
+#: abaqus.Connector.DerivedComponent.CDCTerm.indepCompType:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:43 of
+msgid ""
+"A SymbolicConstant specifying whether localDependency refers to "
+"components of relative position or components of constitutive relative "
+"motion. Possible values are POSITION and MOTION. The default value is "
+"POSITION.The **indepCompType** argument applies only if "
+"**localDependency** = ON."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:64
+#: abaqus.Connector.DerivedComponent.CDCTerm.indepComponents:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:48 of
+msgid ""
+"A sequence of Ints specifying the independent components included in the "
+"derived component definition. Possible values are 1 ≤ **indepComponents**"
+" ≤ 6. Only available components can be specified. The **indepComponents**"
+" argument applies only if **localDependency** = ON. The default value is "
+"an empty sequence."
+msgstr ""
+
+#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm:69
+#: abaqus.Connector.DerivedComponent.CDCTerm.tempDependency:1
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:53 of
+msgid ""
+"A Boolean specifying whether the table data depend on temperature. The "
+"default value is OFF."
+msgstr ""
+
+#: abaqus.Connector.CDCTerm.CDCTerm:74
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:58 of
+msgid "A CDCTerm object."
+msgstr ""
+
+#: abaqus.Connector.CDCTerm.CDCTerm:75
+#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:59 of
+msgid ":class:`CDCTerm`"
+msgstr ""
+
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:1
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:1
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:1 of
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:50 of
 msgid ""
 "This method creates a connector options object to be used in conjunction "
 "with an allowable connector behavior option, derived component term, or "
@@ -1514,7 +1537,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:20
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:14
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:26
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:72
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.useBehRegSettings:1 of
 msgid ""
 "A Boolean specifying whether or not to use the behavior-level settings "
@@ -1524,7 +1547,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:24
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:18
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:30
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:76
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.regularize:1 of
 msgid ""
 "A Boolean specifying whether or not the tabular data will be regularized."
@@ -1534,7 +1557,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:28
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:22
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:34
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:80
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.defaultTolerance:1 of
 msgid ""
 "A Boolean specifying whether or not the analysis default regularization "
@@ -1545,7 +1568,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:32
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:26
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:38
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:84
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.regularization:1 of
 msgid ""
 "A Float specifying the regularization increment to be used. This argument"
@@ -1556,7 +1579,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:36
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:30
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:42
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:88
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.defaultRateFactor:1 of
 msgid ""
 "A Boolean specifying whether or not the analysis default rate filter "
@@ -1568,7 +1591,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:41
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:35
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:47
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:93
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.rateFactor:1 of
 msgid ""
 "A Float specifying the rate filter factor to be used. This argument is "
@@ -1580,7 +1603,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:46
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:40
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:52
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:98
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.interpolation:1 of
 msgid ""
 "A SymbolicConstant specifying the type of interpolation increment to be "
@@ -1592,7 +1615,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:52
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:46
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:58
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:104
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.useBehExtSettings:1 of
 msgid ""
 "A Boolean specifying whether or not to use the behavior-level settings "
@@ -1601,7 +1624,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:55
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:49
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:61
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:107
 #: abaqus.Connector.ConnectorPlasticity.ConnectorOptions.extrapolation:1 of
 msgid ""
 "A SymbolicConstant specifying the extrapolation technique to be used. "
@@ -1611,7 +1634,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:59
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:53
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:65
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:111
 #: abaqus.Connector.ConnectorStop.ConnectorBehaviorOption.initiationOptions:1
 #: abaqus.Connector.ConnectorStop.ConnectorBehaviorOption.isotropicOptions:1
 #: abaqus.Connector.ConnectorStop.ConnectorBehaviorOption.kinematicOptions:1 of
@@ -1620,113 +1643,8 @@ msgstr ""
 
 #: abaqus.Connector.CDCTerm.CDCTerm.ConnectorOptions:60
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.ConnectorOptions:54
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:66 of
+#: abaqus.Connector.ConnectorOptions.ConnectorOptions:112 of
 msgid ":class:`ConnectorOptions`"
-msgstr ""
-
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:1 of
-msgid "This method creates a CDCTerm object."
-msgstr ""
-
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:16 of
-msgid ""
-"Check `CDCTerm.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cdctermpyc.htm?contextscope=all"
-"#simaker-cdcterm__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:19
-#: abaqus.Connector.DerivedComponent.CDCTerm.intrinsicComponents:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:19 of
-msgid ""
-"A sequence of Ints specifying the components of relative motion for which"
-" the contributing term is defined. Possible values are 1 ≤ "
-"**intrinsicComponents** ≤ 6. Only available components can be specified "
-"if the DerivedComponent object is being referenced by a Potential object."
-" This is not the case if the DerivedComponent object is referenced by a "
-"ConnectorFriction object directly. The default value is an empty "
-"sequence."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:25
-#: abaqus.Connector.DerivedComponent.CDCTerm.table:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:25 of
-msgid ""
-"A sequence of sequences of Floats specifying components numbers and "
-"temperature and field values. Each sequence of the table data "
-"specifies:The first intrinsic component number.If applicable, the second "
-"intrinsic component number.Etc.If applicable, the first independent "
-"component number.If applicable, the second independent component "
-"number.Etc.If applicable, the temperature value.If applicable, the value "
-"of the first field variable.If applicable, the value of the second field "
-"variable.Etc.The default value is an empty sequence."
-msgstr ""
-
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:33
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:33 of
-msgid ""
-"A SymbolicConstant specifying the method for combining contributing "
-"terms: square root of a sum of the squares, direct sum, or Macauley sum. "
-"Possible values are RSS, SUM, and MACAULEY. The default value is RSS."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:37
-#: abaqus.Connector.DerivedComponent.CDCTerm.termSign:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:37 of
-msgid ""
-"A SymbolicConstant specifying the overall sign for the contributing term."
-" Possible values are POSITIVE and NEGATIVE. The default value is "
-"POSITIVE."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:40
-#: abaqus.Connector.DerivedComponent.CDCTerm.localDependency:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:40 of
-msgid ""
-"A Boolean specifying whether the table data depend on either components "
-"of relative position or components of constitutive relative motion. The "
-"default value is OFF."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:43
-#: abaqus.Connector.DerivedComponent.CDCTerm.indepCompType:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:43 of
-msgid ""
-"A SymbolicConstant specifying whether localDependency refers to "
-"components of relative position or components of constitutive relative "
-"motion. Possible values are POSITION and MOTION. The default value is "
-"POSITION.The **indepCompType** argument applies only if "
-"**localDependency** = ON."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:48
-#: abaqus.Connector.DerivedComponent.CDCTerm.indepComponents:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:48 of
-msgid ""
-"A sequence of Ints specifying the independent components included in the "
-"derived component definition. Possible values are 1 ≤ **indepComponents**"
-" ≤ 6. Only available components can be specified. The **indepComponents**"
-" argument applies only if **localDependency** = ON. The default value is "
-"an empty sequence."
-msgstr ""
-
-#: ../../docstring abaqus.Connector.CDCTerm.CDCTerm.__init__:53
-#: abaqus.Connector.DerivedComponent.CDCTerm.tempDependency:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:53 of
-msgid ""
-"A Boolean specifying whether the table data depend on temperature. The "
-"default value is OFF."
-msgstr ""
-
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:58
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:58 of
-msgid "A CDCTerm object."
-msgstr ""
-
-#: abaqus.Connector.CDCTerm.CDCTerm.__init__:59
-#: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:59 of
-msgid ":class:`CDCTerm`"
 msgstr ""
 
 #: ../../docstring abaqus.Connector.ConnectorSection.ConnectorDamping.options:1
@@ -1829,13 +1747,6 @@ msgstr ""
 msgid "CONNECTOR PLASTICITY"
 msgstr ""
 
-#: abaqus.Connector.ConnectorOptions.ConnectorOptions.__init__:23 of
-msgid ""
-"Check `ConnectorOptions.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectoroptionspyc.htm?contextscope=all"
-"#simaker-connectoroptions__init__pyc>`__."
-msgstr ""
-
 #: abaqus.Connector.ConnectorOptions.ConnectorOptions.setValues:1 of
 msgid "This method modifies the ConnectorOptions object."
 msgstr ""
@@ -1857,7 +1768,7 @@ msgstr ""
 
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:1
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__:1 of
+#: abaqus.Connector.DerivedComponent.DerivedComponent:25 of
 msgid "This method creates a DerivedComponent object."
 msgstr ""
 
@@ -1865,18 +1776,18 @@ msgstr ""
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:9
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:9
 #: abaqus.Connector.ConnectorStop.ConnectorBehaviorOption.derivedComponent:1
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__:15 of
+#: abaqus.Connector.DerivedComponent.DerivedComponent:39 of
 msgid "A DerivedComponent object."
 msgstr ""
 
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:10
 #: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:10
-#: abaqus.Connector.DerivedComponent.DerivedComponent.__init__:16 of
+#: abaqus.Connector.DerivedComponent.DerivedComponent:40 of
 msgid ":class:`DerivedComponent`"
 msgstr ""
 
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:1
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:1 of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:42 of
 msgid "This method creates a TangentialBehavior object."
 msgstr ""
 
@@ -1889,7 +1800,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:13
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:13
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:51
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.formulation:1 of
 msgid ""
 "A SymbolicConstant specifying the friction coefficient formulation. "
@@ -1899,7 +1810,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:16
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:16
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:54
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.slipRateDependency:1
 #: of
 msgid ""
@@ -1909,7 +1820,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:18
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:18
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:56
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.pressureDependency:1
 #: of
 msgid ""
@@ -1919,7 +1830,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:21
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:21
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:59
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.temperatureDependency:1
 #: of
 msgid ""
@@ -1929,7 +1840,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:23
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:23
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:61
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.dependencies:1 of
 msgid ""
 "An Int specifying the number of field variables for the data. The default"
@@ -1938,7 +1849,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:25
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:25
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:63
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.exponentialDecayDefinition:1
 #: of
 msgid ""
@@ -1949,7 +1860,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:28
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:28
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:66
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.shearStressLimit:1 of
 msgid ""
 "None or a Float specifying no upper limit or the friction coefficient "
@@ -1958,7 +1869,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:31
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:31
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:69
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.maximumElasticSlip:1
 #: of
 msgid ""
@@ -1970,7 +1881,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:35
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:35
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:73
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.fraction:1 of
 msgid ""
 "A Float specifying the ratio of the allowable maximum elastic slip to a "
@@ -1980,7 +1891,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:39
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:39
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:77
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.absoluteDistance:1 of
 msgid ""
 "None or a Float specifying the absolute magnitude of the allowable "
@@ -1990,7 +1901,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:42
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:42
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:80
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.table:1 of
 msgid ""
 "A sequence of sequences of Floats specifying the tangential properties. "
@@ -2001,12 +1912,12 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:45
 #: abaqus.Connector.ConnectorSection.ConnectorFriction.tangentialBehavior:1
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:45 of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:83 of
 msgid "A TangentialBehavior object."
 msgstr ""
 
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:46
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:46 of
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:84 of
 msgid ":class:`TangentialBehavior`"
 msgstr ""
 
@@ -2220,13 +2131,6 @@ msgstr ""
 msgid "FRICTION"
 msgstr ""
 
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.__init__:10 of
-msgid ""
-"Check `TangentialBehavior.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tangentialbehaviorpyc.htm?contextscope=all"
-"#simaker-tangentialbehavior__init__pyc>`__."
-msgstr ""
-
 #: abaqus.Connector.TangentialBehavior.TangentialBehavior.setValues:1 of
 msgid "This method modifies the TangentialBehavior object."
 msgstr ""
@@ -2400,13 +2304,6 @@ msgstr ""
 msgid "Total energy dissipated by damage at ultimate failure."
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamage.ConnectorDamage.__init__:12 of
-msgid ""
-"Check `ConnectorDamage.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordamagepyc.htm?contextscope=all"
-"#simaker-connectordamage__init__pyc>`__."
-msgstr ""
-
 #: ../../docstring
 #: abaqus.Connector.ConnectorSection.ConnectorDamage.evolutionOptions:1 of
 msgid ""
@@ -2538,13 +2435,6 @@ msgstr ""
 msgid "Etc. up to the Nth **independentComponents** direction."
 msgstr ""
 
-#: abaqus.Connector.ConnectorDamping.ConnectorDamping.__init__:12 of
-msgid ""
-"Check `ConnectorDamping.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordampingpyc.htm?contextscope=all"
-"#simaker-connectordamping__init__pyc>`__."
-msgstr ""
-
 #: abaqus.Connector.ConnectorDamping.ConnectorDamping.setValues:1 of
 msgid "This method modifies the ConnectorDamping object."
 msgstr ""
@@ -2593,13 +2483,6 @@ msgid ""
 "**coupling** = COUPLED_MOTION."
 msgstr ""
 
-#: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.__init__:13 of
-msgid ""
-"Check `ConnectorElasticity.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorelasticitypyc.htm?contextscope=all"
-"#simaker-connectorelasticity__init__pyc>`__."
-msgstr ""
-
 #: abaqus.Connector.ConnectorElasticity.ConnectorElasticity.setValues:1 of
 msgid "This method modifies the ConnectorElasticity object."
 msgstr ""
@@ -2615,13 +2498,6 @@ msgstr ""
 msgid "CONNECTOR FAILURE"
 msgstr ""
 
-#: abaqus.Connector.ConnectorFailure.ConnectorFailure.__init__:12 of
-msgid ""
-"Check `ConnectorFailure.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfailurepyc.htm?contextscope=all"
-"#simaker-connectorfailure__init__pyc>`__."
-msgstr ""
-
 #: abaqus.Connector.ConnectorFailure.ConnectorFailure.setValues:1 of
 msgid "This method modifies the ConnectorFailure object."
 msgstr ""
@@ -2632,13 +2508,6 @@ msgid ""
 "behavior for one or more components of a connector's relative motion. The"
 " ConnectorFriction object is derived from the ConnectorBehaviorOption "
 "object."
-msgstr ""
-
-#: abaqus.Connector.ConnectorFriction.ConnectorFriction.__init__:14 of
-msgid ""
-"Check `ConnectorFriction.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfrictionpyc.htm?contextscope=all"
-"#simaker-connectorfriction__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2677,13 +2546,6 @@ msgstr ""
 
 #: abaqus.Connector.ConnectorLock.ConnectorLock:15 of
 msgid "CONNECTOR LOCK"
-msgstr ""
-
-#: abaqus.Connector.ConnectorLock.ConnectorLock.__init__:12 of
-msgid ""
-"Check `ConnectorLock.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorlockpyc.htm?contextscope=all"
-"#simaker-connectorlock__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Connector.ConnectorLock.ConnectorLock.setValues:1 of
@@ -2798,13 +2660,6 @@ msgstr ""
 msgid "CONNECTOR POTENTIAL"
 msgstr ""
 
-#: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity.__init__:13 of
-msgid ""
-"Check `ConnectorPlasticity.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorplasticitypyc.htm?contextscope=all"
-"#simaker-connectorplasticity__init__pyc>`__."
-msgstr ""
-
 #: ../../docstring
 #: abaqus.Connector.ConnectorSection.ConnectorPlasticity.isotropicOptions:1 of
 msgid ""
@@ -2833,13 +2688,6 @@ msgid ""
 "two separate ConnectorPotential repositories (one for damage initiation "
 "and one for damage evolution), there are two ConnectorPotential "
 "constructors associated with that behavior—IniPotential and EvoPotential."
-msgstr ""
-
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.__init__:11 of
-msgid ""
-"Check `ConnectorPotential.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorpotentialpyc.htm?contextscope=all"
-"#simaker-connectorpotential__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2879,13 +2727,6 @@ msgstr ""
 
 #: abaqus.Connector.ConnectorStop.ConnectorStop:15 of
 msgid "CONNECTOR STOP"
-msgstr ""
-
-#: abaqus.Connector.ConnectorStop.ConnectorStop.__init__:12 of
-msgid ""
-"Check `ConnectorStop.__init__ on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorstoppyc.htm?contextscope=all"
-"#simaker-connectorstop__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Connector.ConnectorStop.ConnectorStop.setValues:1 of
@@ -5560,5 +5401,108 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.Connector.TangentialBehavior.TangentialBehavior.setValues>`\\"
 #~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`behaviorOptions "
+#~ "<abaqus.Connector.ConnectorSection.ConnectorSection.behaviorOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Connector.ConnectorSection.ConnectorSection.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`beamTransverseShear "
+#~ "<abaqus.Connector.ConnectorSection.ConnectorSection.beamTransverseShear>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`transverseShear "
+#~ "<abaqus.Connector.ConnectorSection.ConnectorSection.transverseShear>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `CDCTerm.__init__ on help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cdctermpyc.htm?contextscope=all"
+#~ "#simaker-cdcterm__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorOptions.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectoroptionspyc.htm?contextscope=all"
+#~ "#simaker-connectoroptions__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `TangentialBehavior.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tangentialbehaviorpyc.htm?contextscope=all"
+#~ "#simaker-tangentialbehavior__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorDamage.__init__ on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordamagepyc.htm?contextscope=all"
+#~ "#simaker-connectordamage__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorDamping.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectordampingpyc.htm?contextscope=all"
+#~ "#simaker-connectordamping__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorElasticity.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorelasticitypyc.htm?contextscope=all"
+#~ "#simaker-connectorelasticity__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorFailure.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfailurepyc.htm?contextscope=all"
+#~ "#simaker-connectorfailure__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorFriction.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorfrictionpyc.htm?contextscope=all"
+#~ "#simaker-connectorfriction__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorLock.__init__ on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorlockpyc.htm?contextscope=all"
+#~ "#simaker-connectorlock__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorPlasticity.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorplasticitypyc.htm?contextscope=all"
+#~ "#simaker-connectorplasticity__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorPotential.__init__ on "
+#~ "help.3ds.com/2020 "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorpotentialpyc.htm?contextscope=all"
+#~ "#simaker-connectorpotential__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ConnectorStop.__init__ on help.3ds.com/2020"
+#~ " "
+#~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorstoppyc.htm?contextscope=all"
+#~ "#simaker-connectorstop__init__pyc>`__."
 #~ msgstr ""
 
