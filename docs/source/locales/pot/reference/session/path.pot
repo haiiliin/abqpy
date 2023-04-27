@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`attachedToGui <abaqus.PathAndProbe.PathSession.PathSession.attachedToGui>`\\"
+msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -45,7 +45,7 @@ msgid "A Boolean specifying whether an Abaqus interactive session is running."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`replayInProgress <abaqus.PathAndProbe.PathSession.PathSession.replayInProgress>`\\"
+msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -53,7 +53,7 @@ msgid "A Boolean specifying whether Abaqus is executing a replay file."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryFootprint <abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryFootprint>`\\"
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -61,7 +61,7 @@ msgid "A Float specifying the memory usage value for the Abaqus/CAE kernel proce
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryMaxFootprint>`\\"
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -69,7 +69,7 @@ msgid "A Float specifying the maximum value for the memory usage for the Abaqus/
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryLimit <abaqus.PathAndProbe.PathSession.PathSession.kernelMemoryLimit>`\\"
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -77,7 +77,7 @@ msgid "A Float specifying the limit for the memory use for the Abaqus/CAE kernel
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.PathAndProbe.PathSession.PathSession.colors>`\\"
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -85,7 +85,7 @@ msgid "A repository of Color objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`journalOptions <abaqus.PathAndProbe.PathSession.PathSession.journalOptions>`\\"
+msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -93,7 +93,7 @@ msgid "A JournalOptions object specifying how to record selection of geometry in
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`memoryReductionOptions <abaqus.PathAndProbe.PathSession.PathSession.memoryReductionOptions>`\\"
+msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -101,7 +101,7 @@ msgid "A MemoryReductionOptions object specifying options for running in reduced
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.PathAndProbe.PathSession.PathSession.nodeQuery>`\\"
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -109,7 +109,7 @@ msgid "A NodeQuery object specifying nodes and their coordinates in a path."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sketcherOptions <abaqus.PathAndProbe.PathSession.PathSession.sketcherOptions>`\\"
+msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -117,7 +117,7 @@ msgid "A ConstrainedSketcherOptions object specifying common options for all ske
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewerOptions <abaqus.PathAndProbe.PathSession.PathSession.viewerOptions>`\\"
+msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -125,7 +125,7 @@ msgid "A ViewerOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`animationOptions <abaqus.PathAndProbe.PathSession.PathSession.animationOptions>`\\"
+msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -133,7 +133,7 @@ msgid "An AnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.PathAndProbe.PathSession.PathSession.aviOptions>`\\"
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -141,7 +141,7 @@ msgid "An AVIOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimationOptions <abaqus.PathAndProbe.PathSession.PathSession.imageAnimationOptions>`\\"
+msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -149,7 +149,7 @@ msgid "An ImageAnimationOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimation <abaqus.PathAndProbe.PathSession.PathSession.imageAnimation>`\\"
+msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -157,7 +157,7 @@ msgid "An ImageAnimation object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`quickTimeOptions <abaqus.PathAndProbe.PathSession.PathSession.quickTimeOptions>`\\"
+msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -165,7 +165,7 @@ msgid "A QuickTimeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.PathAndProbe.PathSession.PathSession.viewports>`\\"
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -173,7 +173,7 @@ msgid "A repository of Viewport objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.PathAndProbe.PathSession.PathSession.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -181,7 +181,7 @@ msgid "A RepositorySupport object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFieldReportOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultFieldReportOptions>`\\"
+msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -189,467 +189,11 @@ msgid "A FieldReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultFreeBodyReportOptions>`\\"
+msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
 msgid "A FreeBodyReportOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`fieldReportOptions <abaqus.PathAndProbe.PathSession.PathSession.fieldReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`freeBodyReportOptions <abaqus.PathAndProbe.PathSession.PathSession.freeBodyReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`odbs <abaqus.PathAndProbe.PathSession.PathSession.odbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Odb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`scratchOdbs <abaqus.PathAndProbe.PathSession.PathSession.scratchOdbs>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of ScratchOdb objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultOdbDisplay <abaqus.PathAndProbe.PathSession.PathSession.defaultOdbDisplay>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultOdbDisplay object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultPlot <abaqus.PathAndProbe.PathSession.PathSession.defaultPlot>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultPlot object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultChartOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultChartOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DefaultChartOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`odbData <abaqus.PathAndProbe.PathSession.PathSession.odbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of OdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`mdbData <abaqus.PathAndProbe.PathSession.PathSession.mdbData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of MdbData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`paths <abaqus.PathAndProbe.PathSession.PathSession.paths>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Path objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`freeBodies <abaqus.PathAndProbe.PathSession.PathSession.freeBodies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of FreeBody objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`streams <abaqus.PathAndProbe.PathSession.PathSession.streams>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Stream objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`spectrums <abaqus.PathAndProbe.PathSession.PathSession.spectrums>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Spectrum objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`currentProbeValues <abaqus.PathAndProbe.PathSession.PathSession.currentProbeValues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A CurrentProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultProbeOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultProbeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`probeOptions <abaqus.PathAndProbe.PathSession.PathSession.probeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`probeReport <abaqus.PathAndProbe.PathSession.PathSession.probeReport>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ProbeReport object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultProbeReport <abaqus.PathAndProbe.PathSession.PathSession.defaultProbeReport>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`selectedProbeValues <abaqus.PathAndProbe.PathSession.PathSession.selectedProbeValues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A SelectedProbeValues object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`printOptions <abaqus.PathAndProbe.PathSession.PathSession.printOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PrintOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`epsOptions <abaqus.PathAndProbe.PathSession.PathSession.epsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An EpsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`pageSetupOptions <abaqus.PathAndProbe.PathSession.PathSession.pageSetupOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PageSetupOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`pngOptions <abaqus.PathAndProbe.PathSession.PathSession.pngOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PngOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`psOptions <abaqus.PathAndProbe.PathSession.PathSession.psOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A PsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`svgOptions <abaqus.PathAndProbe.PathSession.PathSession.svgOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A SvgOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`tiffOptions <abaqus.PathAndProbe.PathSession.PathSession.tiffOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A TiffOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`autoColors <abaqus.PathAndProbe.PathSession.PathSession.autoColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used for color coding."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyColors <abaqus.PathAndProbe.PathSession.PathSession.xyColors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyDataObjects <abaqus.PathAndProbe.PathSession.PathSession.xyDataObjects>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYData objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`curves <abaqus.PathAndProbe.PathSession.PathSession.curves>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYCurve objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyPlots <abaqus.PathAndProbe.PathSession.PathSession.xyPlots>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of XYPlot objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`charts <abaqus.PathAndProbe.PathSession.PathSession.charts>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Chart objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultXYReportOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultXYReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "An XYReportOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`xyReportOptions <abaqus.PathAndProbe.PathSession.PathSession.xyReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`views <abaqus.PathAndProbe.PathSession.PathSession.views>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of View objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`networkDatabaseConnectors <abaqus.PathAndProbe.PathSession.PathSession.networkDatabaseConnectors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of NetworkDatabaseConnector objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`displayGroups <abaqus.PathAndProbe.PathSession.PathSession.displayGroups>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of DisplayGroup objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`graphicsInfo <abaqus.PathAndProbe.PathSession.PathSession.graphicsInfo>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsInfo object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultGraphicsOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultGraphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A GraphicsOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`graphicsOptions <abaqus.PathAndProbe.PathSession.PathSession.graphicsOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultViewportAnnotationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A ViewportAnnotationOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`queues <abaqus.PathAndProbe.PathSession.PathSession.queues>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Queue objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`currentViewportName <abaqus.PathAndProbe.PathSession.PathSession.currentViewportName>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A String specifying the name of the current viewport."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sessionState <abaqus.PathAndProbe.PathSession.PathSession.sessionState>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A Dictionary object specifying the viewports and their associated models."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`images <abaqus.PathAndProbe.PathSession.PathSession.images>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Image objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`movies <abaqus.PathAndProbe.PathSession.PathSession.movies>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Movie objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultLightOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultLightOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A LightOptions object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`drawingArea <abaqus.PathAndProbe.PathSession.PathSession.drawingArea>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A DrawingArea object."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultMesherOptions <abaqus.PathAndProbe.PathSession.PathSession.defaultMesherOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`drawings <abaqus.PathAndProbe.PathSession.PathSession.drawings>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid "A repository of Drawing objects."
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
-msgstr ""
-
-#: ../../None:72:<autosummary>:1
-msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -665,7 +209,15 @@ msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`scratchOdbs <abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of ScratchOdb objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -673,7 +225,15 @@ msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaul
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DefaultPlot object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -681,7 +241,15 @@ msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of OdbData objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -689,7 +257,15 @@ msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Path objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -697,7 +273,15 @@ msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Stream objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -705,11 +289,23 @@ msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A ProbeOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -721,6 +317,10 @@ msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultProbeReport <abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
 msgstr ""
 
@@ -729,7 +329,15 @@ msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.sele
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PrintOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -737,7 +345,15 @@ msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PageSetupOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -745,7 +361,15 @@ msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A PsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -753,7 +377,15 @@ msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A TiffOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -761,7 +393,15 @@ msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used for color coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -769,7 +409,15 @@ msgid ":py:obj:`xyDataObjects <abaqus.Session.SessionBase.SessionBase.xyDataObje
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYCurve objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -777,11 +425,23 @@ msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An XYReportOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -793,7 +453,15 @@ msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`networkDatabaseConnectors <abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of NetworkDatabaseConnector objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -801,11 +469,23 @@ msgid ":py:obj:`displayGroups <abaqus.Session.SessionBase.SessionBase.displayGro
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A GraphicsOptions object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -817,7 +497,15 @@ msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.Ses
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Queue objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -825,7 +513,15 @@ msgid ":py:obj:`currentViewportName <abaqus.Session.SessionBase.SessionBase.curr
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`sessionState <abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -833,7 +529,15 @@ msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Movie objects."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -841,7 +545,15 @@ msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defa
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A DrawingArea object."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -849,7 +561,15 @@ msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.def
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
+msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
 msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Drawing objects."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:0
@@ -861,7 +581,7 @@ msgstr ""
 msgid ":py:obj:`Path <abaqus.PathAndProbe.PathSession.PathSession.Path>`\\ \\(name\\, type\\, expression\\, ...\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:1
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:13
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a Path object."
@@ -872,7 +592,7 @@ msgid ":py:obj:`Spectrum <abaqus.PathAndProbe.PathSession.PathSession.Spectrum>`
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:1
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:1
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:12
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a Spectrum object and places it in the spectrums repository."
 msgstr ""
@@ -882,7 +602,7 @@ msgid ":py:obj:`Stream <abaqus.PathAndProbe.PathSession.PathSession.Stream>`\\ \
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:1
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:1
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:12
 #: ../../None:5:<autosummary>:1
 msgid "This method creates aStream object and places it in the streams repository."
 msgstr ""
@@ -1015,12 +735,12 @@ msgstr ""
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:4
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:4
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:4
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:4
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:16
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:4
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:4
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:4
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:4
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:4
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:15
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:15
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -1032,102 +752,102 @@ msgstr ""
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:0
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:0
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:0
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues:0
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:0
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:0
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:12
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:21
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:12
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.name:1
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:14
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:23
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:14
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.type:1
 msgid "A SymbolicConstant specifying the type of path being created. Possible values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:17
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:26
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:17
 msgid "A sequence specifying the nodes or points that make up the path. The definition of the path expression depends on the **type** argument.  - If **type** = NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence   contains two items, the first item is a String specifying the name of a part instance,   and the second item can be either a sequence of Ints or a sequence of Strings, each   specifying a range of Ints. - If **type** = POINT_LIST, **expression** must be a sequence of tuples of three Floats,   specifying the coordinates of each point. - If **type** = EDGE_LIST, **expression** must be a sequence of sequences. Each inner sequence   contains two items, the first item is a String specifying the name of the part instance,   and the second item is a sequence of tuples of four Ints that uniquely identify an   element edge. The four Ints are:   1. The element label.   2. The element face index (one-based).   3. The face edge index (one-based).   4. The edge direction. A positive number specifies that the edge direction runs from the   edge start node to the edge end node. A negative number specifies the opposite. - When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a sequence of three tuples   of three Floats, specifying the coordinates of the points used to define a coordinate   system."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:17
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:26
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:17
 msgid "A sequence specifying the nodes or points that make up the path. The definition of the path expression depends on the **type** argument."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:20
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:29
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:20
 msgid "If **type** = NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence contains two items, the first item is a String specifying the name of a part instance, and the second item can be either a sequence of Ints or a sequence of Strings, each specifying a range of Ints."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:24
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:33
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:24
 msgid "If **type** = POINT_LIST, **expression** must be a sequence of tuples of three Floats, specifying the coordinates of each point."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:26
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:35
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:26
 msgid "If **type** = EDGE_LIST, **expression** must be a sequence of sequences. Each inner sequence contains two items, the first item is a String specifying the name of the part instance, and the second item is a sequence of tuples of four Ints that uniquely identify an element edge. The four Ints are: 1. The element label. 2. The element face index (one-based). 3. The face edge index (one-based). 4. The edge direction. A positive number specifies that the edge direction runs from the edge start node to the edge end node. A negative number specifies the opposite."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:35
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:44
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:35
 msgid "When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a sequence of three tuples of three Floats, specifying the coordinates of the points used to define a coordinate system."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:39
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:48
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:39
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.circleDefinition:1
 msgid "A SymbolicConstant specifying the method in which the circle is being defined. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL. Possible values are ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in **expression** are points on the rotational axis and the third point lies on the x-axis. When the value is POINT_ARC, the three points in **expression** are points lying on the arc of the circle."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:46
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:55
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:46
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.numSegments:1
 msgid "An Int specifying the number of equal segments in the path. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:49
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:58
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:49
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startAngle:1
 msgid "A Float specifying the start angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:52
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:61
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:52
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endAngle:1
 msgid "A Float specifying the end angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:55
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:64
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:55
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:58
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:67
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:58
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radialAngle:1
-msgid "A Float specifying the angle between the radial path and the **X**-axis of the specified coordinate system. This argument is valid only when **type** = RADIAL."
+msgid "A Float specifying the angle between the radial path and the **X** axis of the specified coordinate system. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:61
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:70
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:61
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:64
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:73
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:64
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial path. This argument is valid only when **type** = RADIAL."
@@ -1136,16 +856,16 @@ msgstr ""
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:0
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:0
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:0
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:0
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:67
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:76
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:67
 msgid "A Path object."
 msgstr ""
@@ -1153,26 +873,26 @@ msgstr ""
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:0
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:0
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:0
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:0
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:0
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:68
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:77
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:68
 msgid ":class:`Path`"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:0
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:0
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:0
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:72
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:81
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:72
 msgid "When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in     **expression** are collinear."
 msgstr ""
@@ -1183,22 +903,22 @@ msgid "Check `Spectrum on help.3ds.com/2023 <https://help.3ds.com/2023/English/D
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:12
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:12
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:20
 msgid "A string name for the spectrum."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:14
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:14
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:22
 msgid "A sequence of strings indicating the colors of the spectrum."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:16
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:16
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:24
 msgid "A Spectrum object."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:17
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:17
+#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:25
 msgid ":class:`Spectrum`"
 msgstr ""
 
@@ -1208,41 +928,41 @@ msgid "Check `Stream on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSS
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:12
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:12
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:20
 msgid "A string name for the stream."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:14
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:14
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:22
 msgid "An integer specifying the number of points along the rake."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:16
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:16
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:24
 msgid "A tuple of 3 floats specifying the starting point of the rake. Alternatively, a string representation of the node selected in the viewport."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:19
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:19
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:27
 msgid "A tuple of 3 floats specifying the end point of the rake. Alternatively, a string representation of the node selected in the viewport."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:22
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:22
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:30
 msgid "APath object that specifies the rake."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:24
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:24
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:32
 msgid "A Stream object."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:25
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:25
+#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:33
 msgid ":class:`Stream`"
 msgstr ""
 
-#: ../../reference/session/path.md:17
+#: ../../reference/session/path.md:16
 msgid "Create free bodies in Session"
 msgstr ""
 
@@ -1358,7 +1078,7 @@ msgstr ""
 msgid "Check `FreeBodyFromNodesElements on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyfromnodeselementspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/session/path.md:28
+#: ../../reference/session/path.md:26
 msgid "Other Classes"
 msgstr ""
 
@@ -1387,15 +1107,11 @@ msgid "An Int specifying the ID of the most recently queried node. If the last q
 msgstr ""
 
 #: ../../docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery.nodePos:1
-msgid "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently queried node."
+msgid "A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the most recently queried node."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:1
 msgid "The Path object defines a line through your model by specifying a series of nodes or points."
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path.__init__:9
-msgid "Check `Path.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pathpyc.htm?contextscope=all#simaker-path__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.coordinates:1
@@ -1410,16 +1126,8 @@ msgstr ""
 msgid "The Spectrum object defines a color spectrum for the contour display."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum.__init__:9
-msgid "Check `Spectrum.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumpyc.htm?contextscope=all#simaker-spectrum__init__pyc>`__."
-msgstr ""
-
 #: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream:1
 msgid "TheStream object defines a set of streamlines in fluid mechanics."
-msgstr ""
-
-#: ../../../../src/abaqus/PathAndProbe/Stream.py:docstring of abaqus.PathAndProbe.Stream.Stream.__init__:9
-msgid "Check `Stream.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streampyc.htm?contextscope=all#simaker-stream__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1
@@ -1527,12 +1235,12 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:55
 #: ../../docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.xValue:1
-msgid "A Boolean specifying whether to display the **x**-coordinate value of the point on the curve being probed. This member is valid when **probeObject** = XYPlot. The default value is ON."
+msgid "A Boolean specifying whether to display the **X** coordinate value of the point on the curve being probed. This member is valid when **probeObject** = XYPlot. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.setValues:59
 #: ../../docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions.yValue:1
-msgid "A Boolean specifying whether to display the **y**-coordinate value of the point on the curve being probed. This member is valid when **probeObject** = XYPlot. The default value is ON."
+msgid "A Boolean specifying whether to display the **Y** coordinate value of the point on the curve being probed. This member is valid when **probeObject** = XYPlot. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport:1
@@ -1572,11 +1280,11 @@ msgid "A SymbolicConstant specifying the page width format. Possible values are 
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues:24
-msgid "A Boolean specifying whether to print the total value of either the field output result (when **probeObject** = ”ODB”) or the **x**- and **y**-coordinates (when **probeObject** = XYPlot). The default value is OFF."
+msgid "A Boolean specifying whether to print the total value of either the field output result (when **probeObject** = ”ODB”) or the **X**  and **Y** coordinates (when **probeObject** = XYPlot). The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport.setValues:28
-msgid "A Boolean specifying whether to print the minimum and maximum values of either the field output result (when **probeObject** = ”ODB”) or the **x**- and **y**-coordinates (when **probeObject** = XYPlot). The default value is OFF."
+msgid "A Boolean specifying whether to print the minimum and maximum values of either the field output result (when **probeObject** = ”ODB”) or the **X**  and **Y** coordinates (when **probeObject** = XYPlot). The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/SelectedProbeValues.py:docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:1

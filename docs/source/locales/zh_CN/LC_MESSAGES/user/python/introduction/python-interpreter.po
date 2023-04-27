@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.12.1\n"
 
-#: ../../user/python/introduction/python-interpreter.md:9
+#: ../../user/python/introduction/python-interpreter.md:1
 msgid "Using the Python interpreter"
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:11
+#: ../../user/python/introduction/python-interpreter.md:3
 msgid ""
 "Python is an interpreted language. This means you can type a statement "
 "and view the results without having to compile and link your scripts. "
@@ -31,14 +31,14 @@ msgid ""
 "the Python interpreter, do one of the following:"
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:13
+#: ../../user/python/introduction/python-interpreter.md:5
 msgid ""
 "If you have Abaqus installed on your Linux or Windows workstation, type "
 "abaqus python at the system prompt. Python enters its interpretive mode "
 "and displays the >>> prompt."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:20
+#: ../../user/python/introduction/python-interpreter.md:12
 msgid ""
 "You can enter Python statements at the >>> prompt. To see the value of a "
 "variable or expression, type the variable name or expression at the "
@@ -46,7 +46,7 @@ msgid ""
 " systems or **Ctrl + Z + Enter** on Windows systems."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:22
+#: ../../user/python/introduction/python-interpreter.md:14
 msgid ""
 "You can also use Python to run a script directly by typing abaqus python "
 "**scriptname.py** at the system prompt. Abaqus will run the script "
@@ -55,7 +55,7 @@ msgid ""
 "functions`."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:24
+#: ../../user/python/introduction/python-interpreter.md:16
 msgid ""
 "You can also use the Python interpreter provided in the command line "
 "interface by Abaqus/CAE. The command line is at the bottom of the "
@@ -63,15 +63,19 @@ msgid ""
 "displays the Python >>> prompt in the command line interface."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:26
+#: ../../user/python/introduction/python-interpreter.md:18
 msgid ""
-"Click {{ afxI_commandLine }} in the lower left corner of the main window "
-"to display the command line interface. You may want to drag the handle at"
-" the top of the command line interface to increase the number of lines "
-"displayed."
+"Click ![afxI_commandLine](/images/afxI_commandLine.png) in the lower left"
+" corner of the main window to display the command line interface. You may"
+" want to drag the handle at the top of the command line interface to "
+"increase the number of lines displayed."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.md:33
+#: ../../user/python/introduction/python-interpreter.md:18
+msgid "afxI_commandLine"
+msgstr ""
+
+#: ../../user/python/introduction/python-interpreter.md:25
 msgid ""
 "If Abaqus/CAE displays new messages while you are using the command line "
 "interface, the message area tab turns red."
@@ -124,5 +128,15 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "afxI_commandLine"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click {{ afxI_commandLine }} in the "
+#~ "lower left corner of the main "
+#~ "window to display the command line "
+#~ "interface. You may want to drag "
+#~ "the handle at the top of the "
+#~ "command line interface to increase the"
+#~ " number of lines displayed."
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -503,7 +503,7 @@ msgstr ""
 #: ../../../../src/abaqus/PlotOptions/OdbDataFrame.py:docstring of abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues:0
 #: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:0
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData:0
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:0
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:0
 #: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:0
 #: ../../../../src/abaqus/PlotOptions/StreamOptions.py:docstring of abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:0
 #: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:0
@@ -621,7 +621,7 @@ msgid "A sequence of Strings specifying either element set or display group name
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:0
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:0
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:0
 #: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:0
 msgid "Raises"
 msgstr ""
@@ -692,7 +692,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/CouplingConstraint.py:docstring of abaqus.PlotOptions.CouplingConstraint.CouplingConstraint.constraintData:0
 #: ../../../../src/abaqus/PlotOptions/MpcConstraint.py:docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData:0
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:0
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:0
 #: ../../../../src/abaqus/PlotOptions/RigidBodyConstraint.py:docstring of abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData:0
 #: ../../../../src/abaqus/PlotOptions/TieConstraint.py:docstring of abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData:0
 msgid "Return type"
@@ -733,7 +733,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot an arrow along the tangent to a beam. The default value is \"White\"."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:31
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:49
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.colorCodeOverride:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.colorCodeOverride:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.colorCodeOverride:1
@@ -764,7 +764,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the edges of the model when **renderStyle** = WIREFRAME or HIDDEN. The default value is \"White\"."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:25
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:43
 #: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:12
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.edgeLineStyle:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.edgeLineStyle:1
@@ -774,7 +774,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the edge line style. Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:28
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:46
 #: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:15
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.edgeLineThickness:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.edgeLineThickness:1
@@ -888,7 +888,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the render style of the plot. Possible values are WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is SHADED."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:37
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:55
 #: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:50
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.translucency:1
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.translucency:1
@@ -1059,7 +1059,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the edges of the model when **renderStyle** = WIREFRAME or HIDDEN. The default value is \"Green\"."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:34
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:52
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.fillColor:1
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.fillColor:1
 msgid "A String specifying the color to be used to fill elements when **renderStyle** = FILLED or SHADED. The default value is \"Green\"."
@@ -1117,13 +1117,13 @@ msgstr ""
 msgid "A SymbolicConstant specifying whether to draw element normals and surface normals. Possible values are ELEMENT and SURFACE. The default value is ELEMENT."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:12
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:30
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.renderStyle:1
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.renderStyle:1
 msgid "A SymbolicConstant specifying the render style of the plot. Possible values are WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is WIREFRAME."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:15
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:33
 #: ../../docstring of abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.visibleEdges:1
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.visibleEdges:1
 msgid "A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when **renderStyle** = SHADED."
@@ -1730,7 +1730,7 @@ msgid "This method returns constraint data if any are associated with the object
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MpcConstraint.py:docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData:0
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:0
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:0
 #: ../../../../src/abaqus/PlotOptions/RigidBodyConstraint.py:docstring of abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData:0
 #: ../../../../src/abaqus/PlotOptions/TieConstraint.py:docstring of abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData:0
 msgid "Returns"
@@ -2498,38 +2498,34 @@ msgstr ""
 msgid "Check `OptionArg on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:1
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:22
 msgid "This method creates an OptionArg object."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:4
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:25
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:9
-msgid "Check `OptionArg.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all#simaker-optionarg__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:19
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:37
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.edgeColorWireHide:1
 msgid "A String specifying the color to be used to plot the edges of the undeformed plot when **renderStyle** = WIREFRAME or HIDDEN. The default value is \"Green\"."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:22
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:40
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.edgeColorFillShade:1
 msgid "A String specifying the color to be used to plot the edges of the undeformed plot when **renderStyle** = FILLED or SHADED. The default value is \"Black\"."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:39
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:57
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.translucencyFactor:1
 msgid "A Float specifying the translucency factor when **translucency** = ON. Possible values are 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value is 0.3."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:42
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:60
 msgid "An OptionArg object."
 msgstr ""
 
-#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:43
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:61
 msgid ":class:`OptionArg`"
 msgstr ""
 

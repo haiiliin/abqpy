@@ -1,0 +1,2668 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2023\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../CHANGES.md:1
+msgid "Abaqus API Changes"
+msgstr ""
+
+#: ../../CHANGES.md:3
+msgid "Abaqus 2023"
+msgstr ""
+
+#: ../../CHANGES.md:5 ../../CHANGES.md:92
+msgid "{py:obj}`abaqus.Job.JobMdb`"
+msgstr ""
+
+#: ../../CHANGES.md:7 ../../CHANGES.md:15
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
+"2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:8 ../../CHANGES.md:16
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
+"2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:9
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The parallelizationMethodExplicit attribute was removed."
+msgstr ""
+
+#: ../../CHANGES.md:10
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:11
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The docs for this argument were updated to reflect that the"
+" parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:12
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.numDomains`: *changed*: "
+"Changed in version 2023: The docs for this argument were updated to "
+"reflect that the parallelizationMethodExplicit argument was removed in "
+"2023."
+msgstr ""
+
+#: ../../CHANGES.md:13
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.setValues`: *changed*: "
+"Changed in version 2023: The parallelizationMethodExplicit argument was "
+"removed."
+msgstr ""
+
+#: ../../CHANGES.md:14
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.setValues`: *changed*: "
+"Changed in version 2023: The docs for this argument were updated to "
+"reflect that the parallelizationMethodExplicit argument was removed in "
+"2023."
+msgstr ""
+
+#: ../../CHANGES.md:17
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.JobFromInputFile`: *changed*: Changed "
+"in version 2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:18
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.JobFromInputFile`: *changed*: Changed "
+"in version 2023: The docs for this argument were updated to reflect that "
+"the parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:20
+msgid "{py:obj}`abaqus.Job.ModelJob`"
+msgstr ""
+
+#: ../../CHANGES.md:22
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob`: *changed*: Changed in version "
+"2023: The parallelizationMethodExplicit attribute was removed."
+msgstr ""
+
+#: ../../CHANGES.md:23
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob`: *changed*: Changed in version "
+"2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:24
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob.numDomains`: *changed*: Changed in "
+"version 2023: The docs for this argument were updated to reflect that the"
+" parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:26
+msgid "{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:28
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.appendInStep`:"
+" *added*: New in version 2023: The useDynFeatEdge argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:29
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment.changeValuesInStep`:"
+" *added*: New in version 2023: The useDynFeatEdge argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:31 ../../CHANGES.md:213 ../../CHANGES.md:425
+#: ../../CHANGES.md:516 ../../CHANGES.md:693
+msgid "{py:obj}`abaqus.Material.Material`"
+msgstr ""
+
+#: ../../CHANGES.md:33
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.PlasticityCorrection`: "
+"*added*: New in version 2023: The PlasticityCorrection method was added."
+msgstr ""
+
+#: ../../CHANGES.md:35
+msgid "{py:obj}`abaqus.Material.Plastic.PlasticityCorrection`"
+msgstr ""
+
+#: ../../CHANGES.md:37
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.PlasticityCorrection.PlasticityCorrection`:"
+" *added*: New in version 2023: The PlasticityCorrection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:39 ../../CHANGES.md:262 ../../CHANGES.md:434
+#: ../../CHANGES.md:588
+msgid "{py:obj}`abaqus.Optimization.OptimizationTask`"
+msgstr ""
+
+#: ../../CHANGES.md:41
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter`:"
+" *added*: New in version 2023."
+msgstr ""
+
+#: ../../CHANGES.md:42
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.BeadFilter`: *added*: New "
+"in version 2023: The BeadFilter class was added."
+msgstr ""
+
+#: ../../CHANGES.md:44
+msgid "{py:obj}`abaqus.Optimization.TopologyRibDesign`"
+msgstr ""
+
+#: ../../CHANGES.md:46
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyRibDesign.TopologyRibDesign`: "
+"*added*: New in version 2023: The TopologyRibDesign class was added."
+msgstr ""
+
+#: ../../CHANGES.md:48 ../../CHANGES.md:526
+msgid "{py:obj}`abaqus.Assembly.AssemblyBase`"
+msgstr ""
+
+#: ../../CHANGES.md:50
+msgid ""
+"{py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates`: "
+"*added*: New in version 2023: The csys argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:51
+msgid ""
+"{py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance`: "
+"*changed*: Changed in version 2023: The csys argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:53
+msgid "{py:obj}`abaqus.EngineeringFeature.EngineeringFeature`"
+msgstr ""
+
+#: ../../CHANGES.md:55
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.EngineeringFeature.DataImperfection`: "
+"*added*: New in version 2023: The DataImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:57
+msgid "{py:obj}`abaqus.EngineeringFeature.InputImperfection`"
+msgstr ""
+
+#: ../../CHANGES.md:59
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.InputImperfection.Imperfection`: "
+"*added*: New in version 2023: The Imperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:60
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.InputImperfection.InputImperfection`: "
+"*added*: New in version 2023: The InputImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:62
+msgid "{py:obj}`abaqus.EngineeringFeature.FileImperfection`"
+msgstr ""
+
+#: ../../CHANGES.md:64
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.FileImperfection.FileImperfection`: "
+"*added*: New in version 2023: The FileImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:67
+msgid "Abaqus 2022"
+msgstr ""
+
+#: ../../CHANGES.md:69 ../../CHANGES.md:452 ../../CHANGES.md:621
+msgid "{py:obj}`abaqus.Part.PartBase`"
+msgstr ""
+
+#: ../../CHANGES.md:71
+msgid ""
+"{py:obj}`abaqus.Part.PartBase.PartBase.getCoordinates`: *added*: New in "
+"version 2022: The csys argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:73
+msgid "{py:obj}`abaqus.Connector.ConnectorSection`"
+msgstr ""
+
+#: ../../CHANGES.md:75
+msgid ""
+"{py:obj}`abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping`:"
+" *added*: New in version 2022: The type argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:76
+msgid ""
+"{py:obj}`abaqus.Connector.ConnectorSection.ConnectorDamping`: *added*: "
+"New in version 2022: The type argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:77
+msgid ""
+"{py:obj}`abaqus.Connector.ConnectorSection.ConnectorDamping.type`: "
+"*added*: New in version 2022: The type attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:79 ../../CHANGES.md:460
+msgid "{py:obj}`abaqus.Odb.RebarOrientation`"
+msgstr ""
+
+#: ../../CHANGES.md:81
+msgid ""
+"{py:obj}`abaqus.Odb.RebarOrientation.OdbDatumCsys.globalToLocal`: "
+"*added*: New in version 2022: The globalToLocal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:82
+msgid ""
+"{py:obj}`abaqus.Odb.RebarOrientation.OdbDatumCsys.localToGlobal`: "
+"*added*: New in version 2022: The localToGlobal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:84
+msgid "{py:obj}`abaqus.FieldReport.FieldReportOptions`"
+msgstr ""
+
+#: ../../CHANGES.md:86
+msgid ""
+"{py:obj}`abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues`:"
+" *added*: New in version 2022: The printLocalCSYS argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:88 ../../CHANGES.md:670
+msgid "{py:obj}`abaqus.Session.SessionBase`"
+msgstr ""
+
+#: ../../CHANGES.md:90
+msgid ""
+"{py:obj}`abaqus.Session.SessionBase.SessionBase.printToFile`: *changed*: "
+"Changed in version 2022: It is \"only\" valid to use this argument ..."
+msgstr ""
+
+#: ../../CHANGES.md:94 ../../CHANGES.md:97
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
+"2022: The licenseType argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:95
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2022: The licenseType argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:96
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.licenseType`: *added*: New in"
+" version 2022: The licenseType attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:99
+msgid "{py:obj}`abaqus.Job.Coexecution`"
+msgstr ""
+
+#: ../../CHANGES.md:101
+msgid ""
+"{py:obj}`abaqus.Job.Coexecution.Coexecution.licenseType`: *added*: New in"
+" version 2022: The licenseType attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:102
+msgid ""
+"{py:obj}`abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct`: "
+"*changed*: Changed in version 2022: The masterAnalysisProduct attribute "
+"was changed to mainAnalysisProduct."
+msgstr ""
+
+#: ../../CHANGES.md:103
+msgid ""
+"{py:obj}`abaqus.Job.Coexecution.Coexecution.mainModel`: *changed*: "
+"Changed in version 2022: The masterModel attribute was changed to "
+"mainModel."
+msgstr ""
+
+#: ../../CHANGES.md:104
+msgid ""
+"{py:obj}`abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts`: "
+"*changed*: Changed in version 2022: The slaveAnalysisProducts attribute "
+"was changed to secondaryAnalysisProducts."
+msgstr ""
+
+#: ../../CHANGES.md:105
+msgid ""
+"{py:obj}`abaqus.Job.Coexecution.Coexecution.secondaryModels`: *changed*: "
+"Changed in version 2022: The slaveModels attribute was changed to "
+"secondaryModels."
+msgstr ""
+
+#: ../../CHANGES.md:107
+msgid "{py:obj}`abaqus.Constraint.ConstraintModel`"
+msgstr ""
+
+#: ../../CHANGES.md:109
+msgid ""
+"{py:obj}`abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling`: "
+"*added*: New in version 2022: The alpha argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:110
+msgid ""
+"{py:obj}`abaqus.Constraint.ConstraintModel.ConstraintModel.Tie`: "
+"*changed*: Changed in version 2022: The master argument was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:111
+msgid ""
+"{py:obj}`abaqus.Constraint.ConstraintModel.ConstraintModel.Tie`: "
+"*changed*: Changed in version 2022: The slave argument was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:113
+msgid "{py:obj}`abaqus.Constraint.Coupling`"
+msgstr ""
+
+#: ../../CHANGES.md:115
+msgid ""
+"{py:obj}`abaqus.Constraint.Coupling.Coupling`: *added*: New in version "
+"2022: The alpha argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:116
+msgid ""
+"{py:obj}`abaqus.Constraint.Coupling.Coupling.alpha`: *added*: New in "
+"version 2022: The alpha attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:118
+msgid "{py:obj}`abaqus.Constraint.Tie`"
+msgstr ""
+
+#: ../../CHANGES.md:120
+msgid ""
+"{py:obj}`abaqus.Constraint.Tie.Tie`: *changed*: Changed in version 2022: "
+"The master argument was renamed to main."
+msgstr ""
+
+#: ../../CHANGES.md:121
+msgid ""
+"{py:obj}`abaqus.Constraint.Tie.Tie`: *changed*: Changed in version 2022: "
+"The slave argument was renamed to secondary."
+msgstr ""
+
+#: ../../CHANGES.md:122
+msgid ""
+"{py:obj}`abaqus.Constraint.Tie.Tie.main`: *changed*: Changed in version "
+"2022: The master attribute was renamed to main."
+msgstr ""
+
+#: ../../CHANGES.md:123
+msgid ""
+"{py:obj}`abaqus.Constraint.Tie.Tie.secondary`: *changed*: Changed in "
+"version 2022: The slave attribute was renamed to secondary."
+msgstr ""
+
+#: ../../CHANGES.md:125 ../../CHANGES.md:387 ../../CHANGES.md:506
+#: ../../CHANGES.md:546
+msgid "{py:obj}`abaqus.Interaction.InteractionModel`"
+msgstr ""
+
+#: ../../CHANGES.md:127
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`:"
+" *changed*: Changed in version 2022: The argument masterSlaveAssignments "
+"was renamed to mainSecondaryAssignments."
+msgstr ""
+
+#: ../../CHANGES.md:128
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`:"
+" *changed*: Changed in version 2022: The argument masterSlaveAssignments "
+"was renamed to mainSecondaryAssignments."
+msgstr ""
+
+#: ../../CHANGES.md:129
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry`:"
+" *changed*: Changed in version 2022: The argument master was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:130
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry`:"
+" *changed*: Changed in version 2022: The argument slave was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:131
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration`:"
+" *changed*: Changed in version 2022: The argument masterPoints was "
+"renamed to mainPoints."
+msgstr ""
+
+#: ../../CHANGES.md:132
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration`:"
+" *changed*: Changed in version 2022: The argument slavePoints was renamed"
+" to secondaryPoints."
+msgstr ""
+
+#: ../../CHANGES.md:133
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.SelfContactStd`:"
+" *changed*: Changed in version 2022: Rigid master surfaces was changed to"
+" rigid main surfaces."
+msgstr ""
+
+#: ../../CHANGES.md:134
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp`:"
+" *changed*: Changed in version 2022: The argument master was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:135
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp`:"
+" *changed*: Changed in version 2022: The argument slave was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:136
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.contactDetection`:"
+" *changed*: Changed in version 2022: The argument "
+"createUnionOfMasterSurfaces was renamed to createUnionOfMainSurfaces."
+msgstr ""
+
+#: ../../CHANGES.md:137
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.contactDetection`:"
+" *changed*: Changed in version 2022: The argument "
+"createUnionOfSlaveSurfaces was renamed to createUnionOfSecondarySurfaces."
+msgstr ""
+
+#: ../../CHANGES.md:138
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.contactDetection`:"
+" *changed*: Changed in version 2022: The argument "
+"createUnionOfMasterSlaveSurfaces was renamed to "
+"createUnionOfMainSecondarySurfaces."
+msgstr ""
+
+#: ../../CHANGES.md:139
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.ContactExp.mainSecondaryAssignments`:"
+" *changed*: Changed in version 2022: The attribute masterSlaveAssignments"
+" was renamed to mainSecondaryAssignments."
+msgstr ""
+
+#: ../../CHANGES.md:140
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.ContactStd.mainSecondaryAssignments`:"
+" *changed*: Changed in version 2022: The attribute masterSlaveAssignments"
+" was renamed to mainSecondaryAssignments."
+msgstr ""
+
+#: ../../CHANGES.md:141
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.CyclicSymmetry`: *changed*: "
+"Changed in version 2022: The argument master was renamed to main."
+msgstr ""
+
+#: ../../CHANGES.md:142
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.CyclicSymmetry`: *changed*: "
+"Changed in version 2022: The argument slave was renamed to secondary."
+msgstr ""
+
+#: ../../CHANGES.md:143
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.CyclicSymmetry.main`: "
+"*changed*: Changed in version 2022: The attribute master was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:144
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.CyclicSymmetry.secondary`: "
+"*changed*: Changed in version 2022: The attribute slave was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:146
+msgid "{py:obj}`abaqus.Interaction.InteractionContactControlModel`"
+msgstr ""
+
+#: ../../CHANGES.md:148
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl`:"
+" *changed*: Changed in version 2022: Slave node was changed to secondary "
+"node."
+msgstr ""
+
+#: ../../CHANGES.md:150 ../../CHANGES.md:511
+msgid "{py:obj}`abaqus.Interaction.InteractionContactInitializationModel`"
+msgstr ""
+
+#: ../../CHANGES.md:152
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization`:"
+" *changed*: Changed in version 2022: The argument slaveNodesetName was "
+"renamed to secondaryNodesetName."
+msgstr ""
+
+#: ../../CHANGES.md:153
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization`:"
+" *changed*: Changed in version 2022: The argument slaveNodesetName was "
+"renamed to secondaryNodesetName."
+msgstr ""
+
+#: ../../CHANGES.md:154
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization.secondaryNodesetName`:"
+" *changed*: Changed in version 2022: The attribute slaveNodesetName was "
+"renamed to secondaryNodesetName."
+msgstr ""
+
+#: ../../CHANGES.md:155
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization.setValues`:"
+" *changed*: Changed in version 2022: The argument slaveNodesetName was "
+"renamed to secondaryNodesetName."
+msgstr ""
+
+#: ../../CHANGES.md:157 ../../CHANGES.md:553
+msgid "{py:obj}`abaqus.Interaction.InteractionPropertyModel`"
+msgstr ""
+
+#: ../../CHANGES.md:159
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionPropertyModel.ContactProperty.HeatGeneration`:"
+" *changed*: Changed in version 2022: The argument slaveFraction was "
+"renamed to secondaryFraction."
+msgstr ""
+
+#: ../../CHANGES.md:160
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionPropertyModel.ContactProperty.Radiation`:"
+" *changed*: Changed in version 2022: The argument masterEmissivity was "
+"renamed to mainEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:161
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionPropertyModel.ContactProperty.Radiation`:"
+" *changed*: Changed in version 2022: The argument slaveEmissivity was "
+"renamed to secondaryEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:163
+msgid "{py:obj}`abaqus.Interaction.MainSecondaryAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:165
+msgid ""
+"{py:obj}`abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment`:"
+" *changed*: Changed in version 2022: The MasterSlaveAssignment class was "
+"renamed to MainSecondaryAssignment."
+msgstr ""
+
+#: ../../CHANGES.md:167
+msgid "{py:obj}`abaqus.Interaction.PolarityAssignments`"
+msgstr ""
+
+#: ../../CHANGES.md:169
+msgid ""
+"{py:obj}`abaqus.Interaction.PolarityAssignments.PolarityAssignments.changeValuesInStep`:"
+" *changed*: Changed in version 2022: Master-slave was changed to main-"
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:171
+msgid "{py:obj}`abaqus.Interaction.GapHeatGeneration`"
+msgstr ""
+
+#: ../../CHANGES.md:173
+msgid ""
+"{py:obj}`abaqus.Interaction.GapHeatGeneration.GapHeatGeneration`: "
+"*changed*: Changed in version 2022: The argument slaveFraction was "
+"renamed to secondaryFraction."
+msgstr ""
+
+#: ../../CHANGES.md:174
+msgid ""
+"{py:obj}`abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.secondaryFraction`:"
+" *changed*: Changed in version 2022: The attribute slaveFraction was "
+"renamed to secondaryFraction."
+msgstr ""
+
+#: ../../CHANGES.md:176
+msgid "{py:obj}`abaqus.Interaction.Radiation`"
+msgstr ""
+
+#: ../../CHANGES.md:178
+msgid ""
+"{py:obj}`abaqus.Interaction.Radiation.Radiation`: *changed*: Changed in "
+"version 2022: The argument masterEmissivity was renamed to "
+"mainEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:179
+msgid ""
+"{py:obj}`abaqus.Interaction.Radiation.Radiation`: *changed*: Changed in "
+"version 2022: The argument slaveEmissivity was renamed to "
+"secondaryEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:180
+msgid ""
+"{py:obj}`abaqus.Interaction.Radiation.Radiation.mainEmissivity`: "
+"*changed*: Changed in version 2022: The attribute masterEmissivity was "
+"renamed to mainEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:181
+msgid ""
+"{py:obj}`abaqus.Interaction.Radiation.Radiation.secondaryEmissivity`: "
+"*changed*: Changed in version 2022: The attribute slaveEmissivity was "
+"renamed to secondaryEmissivity."
+msgstr ""
+
+#: ../../CHANGES.md:183
+msgid "{py:obj}`abaqus.Interaction.StdContactControl`"
+msgstr ""
+
+#: ../../CHANGES.md:185
+msgid ""
+"{py:obj}`abaqus.Interaction.StdContactControl.StdContactControl`: "
+"*changed*: Changed in version 2022: Slave node was changed to secondary "
+"node."
+msgstr ""
+
+#: ../../CHANGES.md:186
+msgid ""
+"{py:obj}`abaqus.Interaction.StdContactControl.StdContactControl.setValues`:"
+" *changed*: Changed in version 2022: Slave node was changed to secondary "
+"node."
+msgstr ""
+
+#: ../../CHANGES.md:187
+msgid ""
+"{py:obj}`abaqus.Interaction.StdContactControl.StdContactControl.uerrmx`: "
+"*changed*: Changed in version 2022: Slave node was changed to secondary "
+"node."
+msgstr ""
+
+#: ../../CHANGES.md:189
+msgid "{py:obj}`abaqus.Interaction.PressurePenetration`"
+msgstr ""
+
+#: ../../CHANGES.md:191
+msgid ""
+"{py:obj}`abaqus.Interaction.PressurePenetration.PressurePenetration`: "
+"*changed*: Changed in version 2022: The argument masterPoints was renamed"
+" to mainPoints."
+msgstr ""
+
+#: ../../CHANGES.md:192
+msgid ""
+"{py:obj}`abaqus.Interaction.PressurePenetration.PressurePenetration`: "
+"*changed*: Changed in version 2022: The argument slavePoints was renamed "
+"to secondaryPoints."
+msgstr ""
+
+#: ../../CHANGES.md:193
+msgid ""
+"{py:obj}`abaqus.Interaction.PressurePenetration.PressurePenetration.mainPoints`:"
+" *changed*: Changed in version 2022: The attribute masterPoints was "
+"renamed to mainPoints."
+msgstr ""
+
+#: ../../CHANGES.md:194
+msgid ""
+"{py:obj}`abaqus.Interaction.PressurePenetration.PressurePenetration.secondaryPoints`:"
+" *changed*: Changed in version 2022: The attribute slavePoints was "
+"renamed to secondaryPoints."
+msgstr ""
+
+#: ../../CHANGES.md:196
+msgid "{py:obj}`abaqus.Interaction.SelfContactStd`"
+msgstr ""
+
+#: ../../CHANGES.md:198
+msgid ""
+"{py:obj}`abaqus.Interaction.SelfContactStd.SelfContactStd`: *changed*: "
+"Changed in version 2022: Rigid master surfaces was changed to rigid main "
+"surfaces."
+msgstr ""
+
+#: ../../CHANGES.md:199
+msgid ""
+"{py:obj}`abaqus.Interaction.SelfContactStd.SelfContactStd.smooth`: "
+"*changed*: Changed in version 2022: Rigid master surfaces was changed to "
+"rigid main surfaces."
+msgstr ""
+
+#: ../../CHANGES.md:201
+msgid "{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp`"
+msgstr ""
+
+#: ../../CHANGES.md:203
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp`:"
+" *changed*: Changed in version 2022: The argument master was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:204
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp`:"
+" *changed*: Changed in version 2022: The argument slave was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:205
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.main`:"
+" *changed*: Changed in version 2022: The attribute master was renamed to "
+"main."
+msgstr ""
+
+#: ../../CHANGES.md:206
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.secondary`:"
+" *changed*: Changed in version 2022: The attribute slave was renamed to "
+"secondary."
+msgstr ""
+
+#: ../../CHANGES.md:207
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.swapSurfaces`:"
+" *changed*: Changed in version 2022: Master and slave were changed to "
+"main and secondary."
+msgstr ""
+
+#: ../../CHANGES.md:209 ../../CHANGES.md:562
+msgid "{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd`"
+msgstr ""
+
+#: ../../CHANGES.md:211
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.swapSurfaces`:"
+" *changed*: Changed in version 2022: Master and slave were changed to "
+"main and secondary."
+msgstr ""
+
+#: ../../CHANGES.md:215
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.CrushStress`: *added*: New in "
+"version 2022: The CrushStress method was added."
+msgstr ""
+
+#: ../../CHANGES.md:216
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.Elastic`: *added*: New in "
+"version 2022: The option BILAMINA was added."
+msgstr ""
+
+#: ../../CHANGES.md:217
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.Plastic`: *added*: New in "
+"version 2022: The extrapolation argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:219 ../../CHANGES.md:697
+msgid "{py:obj}`abaqus.Material.MaterialBase`"
+msgstr ""
+
+#: ../../CHANGES.md:221
+msgid ""
+"{py:obj}`abaqus.Material.MaterialBase.Hyperelastic`: *changed*: Changed "
+"in version 2022: Add available value: VALANIS_LANDEL."
+msgstr ""
+
+#: ../../CHANGES.md:222
+msgid ""
+"{py:obj}`abaqus.Material.MaterialBase.Elastic`: *changed*: Changed in "
+"version 2022: Add available value: BILAMINA."
+msgstr ""
+
+#: ../../CHANGES.md:223
+msgid ""
+"{py:obj}`abaqus.Material.MaterialBase.MaterialBase.crushStress`: *added*:"
+" New in version 2022: The crushStress attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:225
+msgid "{py:obj}`abaqus.Material.Plastic.CrushStress.CrushStress`"
+msgstr ""
+
+#: ../../CHANGES.md:227
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress`: "
+"*added*: New in version 2022: The CrushStress class was added."
+msgstr ""
+
+#: ../../CHANGES.md:229
+msgid "{py:obj}`abaqus.Material.Plastic.Plastic`"
+msgstr ""
+
+#: ../../CHANGES.md:231
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.Plastic.Plastic`: *added*: New in "
+"version 2022: The extrapolation argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:233
+msgid "{py:obj}`abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor`"
+msgstr ""
+
+#: ../../CHANGES.md:235
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor`:"
+" *added*: New in version 2022: The CrushStressVelocityFactor class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:237 ../../CHANGES.md:571
+msgid "{py:obj}`abaqus.Mesh.MeshPart`"
+msgstr ""
+
+#: ../../CHANGES.md:239
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType`: *added*: New in version 2022: "
+"The linearKinematicCtrl argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:240
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType`: *added*: New in version 2022: "
+"The initialGapOpening argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:241
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType.initialGapOpening`: *added*: New "
+"in version 2022: The initialGapOpening attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:242
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType.linearKinematicCtrl`: *added*: New"
+" in version 2022: The linearKinematicCtrl attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:244
+msgid "{py:obj}`abaqus.Mesh.MeshEdgeArray`"
+msgstr ""
+
+#: ../../CHANGES.md:246
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshEdgeArray.MeshEdgeArray`: *changed*: Changed in "
+"version 2022: The argument edges was renamed to elemEdges."
+msgstr ""
+
+#: ../../CHANGES.md:248
+msgid "{py:obj}`abaqus.Mesh.MeshFaceArray`"
+msgstr ""
+
+#: ../../CHANGES.md:250
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshFaceArray.MeshFaceArray`: *changed*: Changed in "
+"version 2022: The argument faces was renamed to elemFaces."
+msgstr ""
+
+#: ../../CHANGES.md:252 ../../CHANGES.md:578
+msgid "{py:obj}`abaqus.Optimization.OptimizationTaskModel`"
+msgstr ""
+
+#: ../../CHANGES.md:254
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask`:"
+" *added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:255
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask`:"
+" *added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:256
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask`:"
+" *added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:257
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask`:"
+" *added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:258
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask`: *added*: "
+"New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:259
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask.groupOperator`:"
+" *added*: New in version 2022: The groupSensitivities attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:260
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask.setValues`: "
+"*added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:264
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:265
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:266
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:267
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:268
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:269
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize`:"
+" *added*: New in version 2022: The assignNodeGroupRegion argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:270
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize`:"
+" *added*: New in version 2022: The nodeGroupRegion argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:271
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:272
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:273
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:274
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:275
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:276
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:277
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl`:"
+" *added*: New in version 2022: The TopologyMillingControl method was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:278
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign`:"
+" *added*: New in version 2022: The TopologyRibDesign method was added."
+msgstr ""
+
+#: ../../CHANGES.md:279
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:280
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:281
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection`: "
+"*changed*: Changed in version 2022: The argument masterPoint was renamed "
+"to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:282
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:283
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection.mainPoint`:"
+" *changed*: Changed in version 2022: The attribute masterPoint was "
+"renamed to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:284
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:285
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection.setValues`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:286
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DesignDirection.setValues`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:287
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl`: *changed*: "
+"Changed in version 2022: The argument masterPoint was renamed to "
+"mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:288
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl`: *changed*: "
+"Changed in version 2022: The argument masterPointDetermination was "
+"renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:289
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl.mainPoint`: "
+"*changed*: Changed in version 2022: The attribute masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:290
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:291
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl.setValues`: "
+"*changed*: Changed in version 2022: The argument masterPoint was renamed "
+"to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:292
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.DrillControl.setValues`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:294
+msgid "{py:obj}`abaqus.Optimization.ShapeDemoldControl`"
+msgstr ""
+
+#: ../../CHANGES.md:296
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:297
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:298
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:300
+msgid "{py:obj}`abaqus.Optimization.ShapeMemberSize`"
+msgstr ""
+
+#: ../../CHANGES.md:302
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize`: *added*: "
+"New in version 2022: The assignNodeGroupRegion argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:303
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize`: *added*: "
+"New in version 2022: The nodeGroupRegion argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:304
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.assignNodeGroupRegion`:"
+" *added*: New in version 2022: The assignNodeGroupRegion attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:305
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.nodeGroupRegion`:"
+" *added*: New in version 2022: The nodeGroupRegion attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:306
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues`: "
+"*added*: New in version 2022: The assignNodeGroupRegion argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:307
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues`: "
+"*added*: New in version 2022: The nodeGroupRegion argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:309
+msgid "{py:obj}`abaqus.Optimization.ShapePointSymmetry`"
+msgstr ""
+
+#: ../../CHANGES.md:311
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:312
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:313
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.setValues`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:315 ../../CHANGES.md:444
+msgid "{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry`"
+msgstr ""
+
+#: ../../CHANGES.md:317
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:318
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:319
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.mainPoint`:"
+" *changed*: Changed in version 2022: The attribute masterPoint was "
+"renamed to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:320
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:321
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues`:"
+" *changed*: Changed in version 2022: The argument masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:322
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues`:"
+" *changed*: Changed in version 2022: The argument "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:324
+msgid "{py:obj}`abaqus.Optimization.StampControl`"
+msgstr ""
+
+#: ../../CHANGES.md:326
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl`: *changed*: "
+"Changed in version 2022: The argument masterPoint was renamed to "
+"mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:327
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl`: *changed*: "
+"Changed in version 2022: The argument masterPointDetermination was "
+"renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:328
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl.mainPoint`: "
+"*changed*: Changed in version 2022: The attribute masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:329
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:330
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl.setValues`: "
+"*changed*: Changed in version 2022: The argument masterPoint was renamed "
+"to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:331
+msgid ""
+"{py:obj}`abaqus.Optimization.StampControl.StampControl.setValues`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:333
+msgid "{py:obj}`abaqus.Optimization.TopologyMillingControl`"
+msgstr ""
+
+#: ../../CHANGES.md:335
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyMillingControl.TopologyMillingControl`:"
+" *added*: New in version 2022: The TopologyMillingControl class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:337
+msgid "{py:obj}`abaqus.Optimization.TurnControl`"
+msgstr ""
+
+#: ../../CHANGES.md:339
+msgid ""
+"{py:obj}`abaqus.Optimization.TurnControl.TurnControl`: *changed*: Changed"
+" in version 2022: The argument masterPointDetermination was renamed to "
+"mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:340
+msgid ""
+"{py:obj}`abaqus.Optimization.TurnControl.TurnControl.mainPoint`: "
+"*changed*: Changed in version 2022: The attribute masterPoint was renamed"
+" to mainPoint."
+msgstr ""
+
+#: ../../CHANGES.md:341
+msgid ""
+"{py:obj}`abaqus.Optimization.TurnControl.TurnControl.mainPointDetermination`:"
+" *changed*: Changed in version 2022: The attribute "
+"masterPointDetermination was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:342
+msgid ""
+"{py:obj}`abaqus.Optimization.TurnControl.TurnControl.setValues`: "
+"*changed*: Changed in version 2022: The argument masterPointDetermination"
+" was renamed to mainPointDetermination."
+msgstr ""
+
+#: ../../CHANGES.md:344 ../../CHANGES.md:596
+msgid "{py:obj}`abaqus.Optimization.ShapeTask`"
+msgstr ""
+
+#: ../../CHANGES.md:346
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask`: *added*: New in "
+"version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:347
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask.groupOperator`: *added*:"
+" New in version 2022: The groupSensitivities attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:348
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask.setValues`: *added*: New"
+" in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:350 ../../CHANGES.md:602
+msgid "{py:obj}`abaqus.Optimization.SizingTask`"
+msgstr ""
+
+#: ../../CHANGES.md:352
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask`: *added*: New in "
+"version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:353
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask.groupOperator`: "
+"*added*: New in version 2022: The groupSensitivities attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:354
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask.setValues`: *added*: "
+"New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:356 ../../CHANGES.md:608
+msgid "{py:obj}`abaqus.Optimization.TopologyTask`"
+msgstr ""
+
+#: ../../CHANGES.md:358
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask`: *added*: New in "
+"version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:359
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask.groupOperator`: "
+"*added*: New in version 2022: The groupSensitivities attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:360
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask.setValues`: "
+"*added*: New in version 2022: The groupOperator argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:362
+msgid "{py:obj}`abaqus.StepOutput.OutputModel`"
+msgstr ""
+
+#: ../../CHANGES.md:364
+msgid ""
+"{py:obj}`abaqus.StepOutput.OutputModel.FieldOutputRequest.setValuesInStep`:"
+" *changed*: Changed in version 2022: The argument timePoints was renamed "
+"to timePoint."
+msgstr ""
+
+#: ../../CHANGES.md:366
+msgid "{py:obj}`abaqus.Datum.DatumCsys`"
+msgstr ""
+
+#: ../../CHANGES.md:368
+msgid ""
+"{py:obj}`abaqus.Datum.DatumCsys.DatumCsys.globalToLocal`: *added*: New in"
+" version 2022: The globalToLocal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:369
+msgid ""
+"{py:obj}`abaqus.Datum.DatumCsys.DatumCsys.localToGlobal`: *added*: New in"
+" version 2022: The localToGlobal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:372
+msgid "Abaqus 2021"
+msgstr ""
+
+#: ../../CHANGES.md:374
+msgid "{py:obj}`abaqus.Property.CompositePlyArray`"
+msgstr ""
+
+#: ../../CHANGES.md:376
+msgid ""
+"{py:obj}`abaqus.Property.CompositePlyArray.CompositePly`: *changed*: "
+"Changed in version 2021: Add possible value ANALYTICAL_FIELD_THICKNESS."
+msgstr ""
+
+#: ../../CHANGES.md:377
+msgid ""
+"{py:obj}`abaqus.Property.CompositePlyArray.CompositePly`: *changed*: "
+"Changed in version 2021: Update docs for ANALYTICAL_FIELD_THICKNESS"
+msgstr ""
+
+#: ../../CHANGES.md:379
+msgid "{py:obj}`abaqus.BoundaryCondition.BoundaryConditionModel`"
+msgstr ""
+
+#: ../../CHANGES.md:381
+msgid ""
+"{py:obj}`abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC`:"
+" *added*: New in version 2021: The intersectionOnly argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:383
+msgid "{py:obj}`abaqus.BoundaryCondition.SubmodelBC`"
+msgstr ""
+
+#: ../../CHANGES.md:385
+msgid ""
+"{py:obj}`abaqus.BoundaryCondition.SubmodelBC.SubmodelBC`: *added*: New in"
+" version 2021: The intersectionOnly argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:389
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`:"
+" *added*: New in version 2021: The surfaceCrushTriggerAssignments "
+"argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:390
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`:"
+" *added*: New in version 2021: The surfaceFrictionAssignments argument "
+"was added."
+msgstr ""
+
+#: ../../CHANGES.md:391
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`:"
+" *added*: New in version 2021: The surfaceBeamSmoothingAssignments "
+"argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:392
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`:"
+" *added*: New in version 2021: The surfaceVertexCriteriaAssignments "
+"argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:393
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`:"
+" *added*: New in version 2021: The slidingFormulationAssignments argument"
+" was added."
+msgstr ""
+
+#: ../../CHANGES.md:394
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.ContactPropertyAssignment.appendInStep`:"
+" *changed*: Changed in version 2021: Update descriptions of the three "
+"entries in the tuple."
+msgstr ""
+
+#: ../../CHANGES.md:395
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.ContactPropertyAssignment.delete`:"
+" *changed*: Changed in version 2021: Update descriptions of the two "
+"entries in the tuple."
+msgstr ""
+
+#: ../../CHANGES.md:397
+msgid "{py:obj}`abaqus.Interaction.SurfaceCrushTriggerAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:399
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`:"
+" *added*: New in version 2021: The SurfaceCrushTriggerAssignment class "
+"was added."
+msgstr ""
+
+#: ../../CHANGES.md:401
+msgid "{py:obj}`abaqus.Interaction.SurfaceFrictionAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:403
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`:"
+" *added*: New in version 2021: The SurfaceFrictionAssignment class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:405
+msgid "{py:obj}`abaqus.Interaction.SurfaceOffsetAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:407
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep`:"
+" *changed*: Changed in version 2021: The first entry in the tuple can be "
+"a material object now."
+msgstr ""
+
+#: ../../CHANGES.md:409
+msgid "{py:obj}`abaqus.Interaction.SurfaceThicknessAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:411
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep`:"
+" *changed*: Changed in version 2021: The first entry in the tuple can be "
+"a material object now."
+msgstr ""
+
+#: ../../CHANGES.md:413
+msgid "{py:obj}`abaqus.Interaction.SlidingFormulationAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:415
+msgid ""
+"{py:obj}`abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`:"
+" *added*: New in version 2021: The SlidingFormulationAssignment class was"
+" added."
+msgstr ""
+
+#: ../../CHANGES.md:417
+msgid "{py:obj}`abaqus.Interaction.SurfaceBeamSmoothingAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:419
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`:"
+" *added*: New in version 2021: The SurfaceBeamSmoothingAssignment class "
+"was added."
+msgstr ""
+
+#: ../../CHANGES.md:421
+msgid "{py:obj}`abaqus.Interaction.SurfaceVertexCriteriaAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:423
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`:"
+" *added*: New in version 2021: The SurfaceVertexCriteriaAssignment class "
+"was added."
+msgstr ""
+
+#: ../../CHANGES.md:427
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.GapConductance`: *added*: New "
+"in version 2021: The GapConductance method was added."
+msgstr ""
+
+#: ../../CHANGES.md:428
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.GapConvection`: *added*: New "
+"in version 2021: The GapConvection method was added."
+msgstr ""
+
+#: ../../CHANGES.md:429
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.GapRadiation`: *added*: New in"
+" version 2021: The GapRadiation method was added."
+msgstr ""
+
+#: ../../CHANGES.md:430
+msgid ""
+"{py:obj}`abaqus.Material.Material.GapConductance`: *added*: New in "
+"version 2021: The GapConductance class was added."
+msgstr ""
+
+#: ../../CHANGES.md:431
+msgid ""
+"{py:obj}`abaqus.Material.Material.GapConvection`: *added*: New in version"
+" 2021: The GapConvection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:432
+msgid ""
+"{py:obj}`abaqus.Material.Material.GapRadiation`: *added*: New in version "
+"2021: The GapRadiation class was added."
+msgstr ""
+
+#: ../../CHANGES.md:436
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry`:"
+" *added*: New in version 2021: The alloowNonSymmetricMesh argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:437
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry`:"
+" *added*: New in version 2021: The alloowNonSymmetricMesh argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:439
+msgid "{py:obj}`abaqus.Optimization.ShapePlanarSymmetry`"
+msgstr ""
+
+#: ../../CHANGES.md:441
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry`: "
+"*added*: New in version 2021: The alloowNonSymmetricMesh argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:442
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh`:"
+" *added*: New in version 2021: The allowNonSymmetricMesh attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:446
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`:"
+" *added*: New in version 2021: The alloowNonSymmetricMesh argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:447
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh`:"
+" *added*: New in version 2021: The allowNonSymmetricMesh attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:450
+msgid "Abaqus 2020"
+msgstr ""
+
+#: ../../CHANGES.md:454
+msgid ""
+"{py:obj}`abaqus.Part.PartBase.AcisFile.openSolidworks`: *added*: New in "
+"version 2020: The openSolidworks method was added."
+msgstr ""
+
+#: ../../CHANGES.md:456
+msgid "{py:obj}`abaqus.Part.AcisMdb`"
+msgstr ""
+
+#: ../../CHANGES.md:458
+msgid ""
+"{py:obj}`abaqus.Part.AcisMdb.AcisMdb.openSolidworks`: *added*: New in "
+"version 2020: The openSolidworks method was added."
+msgstr ""
+
+#: ../../CHANGES.md:462
+msgid ""
+"{py:obj}`abaqus.Odb.RebarOrientation.OdbSet.instances`: *added*: New in "
+"version 2020: The instances attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:463
+msgid ""
+"{py:obj}`abaqus.Odb.RebarOrientation.OdbSet.isInternal`: *added*: New in "
+"version 2020: The isInternal attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:465
+msgid "{py:obj}`abaqus.Canvas.ViewportBase`"
+msgstr ""
+
+#: ../../CHANGES.md:467
+msgid ""
+"{py:obj}`abaqus.Canvas.ViewportBase.ViewportBase.animationController`: "
+"*added*: New in version 2020: The animationController attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:469
+msgid "{py:obj}`abaqus.TableCollection.TableCollectionAssembly`"
+msgstr ""
+
+#: ../../CHANGES.md:471
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly`:"
+" *added*: New in version 2020: The TableCollectionAssembly class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:472
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionAssembly.ElementProgressiveActivation`:"
+" *added*: New in version 2020: The ElementProgressiveActivation class was"
+" added."
+msgstr ""
+
+#: ../../CHANGES.md:474
+msgid "{py:obj}`abaqus.TableCollection.TableCollectionModel`"
+msgstr ""
+
+#: ../../CHANGES.md:476
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionModel.TableCollectionModel`:"
+" *added*: New in version 2020: The TableCollectionModel class was added."
+msgstr ""
+
+#: ../../CHANGES.md:477
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionModel.EventSeries`: "
+"*added*: New in version 2020: The EventSeries class was added."
+msgstr ""
+
+#: ../../CHANGES.md:478
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionModel.EventSeriesType`: "
+"*added*: New in version 2020: The EventSeriesType class was added."
+msgstr ""
+
+#: ../../CHANGES.md:480
+msgid "{py:obj}`abaqus.TableCollection.TableCollectionStep`"
+msgstr ""
+
+#: ../../CHANGES.md:482
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionStep.ActivateElements`: "
+"*added*: New in version 2020: The ActivateElements class was added."
+msgstr ""
+
+#: ../../CHANGES.md:483
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollectionStep.TableCollectionStep`:"
+" *added*: New in version 2020: The TableCollectionStep class was added."
+msgstr ""
+
+#: ../../CHANGES.md:485
+msgid "{py:obj}`abaqus.TableCollection.TableCollection`"
+msgstr ""
+
+#: ../../CHANGES.md:487
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollection.DataTable`: *added*: New "
+"in version 2020: The DataTable class was added."
+msgstr ""
+
+#: ../../CHANGES.md:488
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollection.ParameterTable`: *added*:"
+" New in version 2020: The ParameterTable class was added."
+msgstr ""
+
+#: ../../CHANGES.md:489
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollection.PropertyTable`: *added*: "
+"New in version 2020: The PropertyTable class was added."
+msgstr ""
+
+#: ../../CHANGES.md:490
+msgid ""
+"{py:obj}`abaqus.TableCollection.TableCollection.TableCollection`: "
+"*added*: New in version 2020: The TableCollection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:492
+msgid "{py:obj}`abaqus.TableCollection.ParameterTable`"
+msgstr ""
+
+#: ../../CHANGES.md:494
+msgid ""
+"{py:obj}`abaqus.TableCollection.ParameterTable.ParameterColumn`: *added*:"
+" New in version 2020: The ParameterColumn class was added."
+msgstr ""
+
+#: ../../CHANGES.md:496
+msgid "{py:obj}`abaqus.TableCollection.PropertyTableData`"
+msgstr ""
+
+#: ../../CHANGES.md:498
+msgid ""
+"{py:obj}`abaqus.TableCollection.PropertyTableData.PropertyTableData`: "
+"*added*: New in version 2020: The PropertyTableData class was added."
+msgstr ""
+
+#: ../../CHANGES.md:500
+msgid "{py:obj}`abaqus.Model.ModelBase`"
+msgstr ""
+
+#: ../../CHANGES.md:502
+msgid ""
+"{py:obj}`abaqus.Model.ModelBase.ModelBase.eventSeriesDatas`: *added*: New"
+" in version 2020: The eventSeriesDatas attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:503
+msgid ""
+"{py:obj}`abaqus.Model.ModelBase.ModelBase.eventSeriesTypes`: *added*: New"
+" in version 2020: The eventSeriesTypes attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:504
+msgid ""
+"{py:obj}`abaqus.Model.ModelBase.ModelBase.tableCollections`: *added*: New"
+" in version 2020: The tableCollections attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:508
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`:"
+" *added*: New in version 2020: The polarityAssignments argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:509
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments`:"
+" *added*: New in version 2020: The polarityAssignments attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:513
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization`:"
+" *added*: New in version 2020: The ExpInitialization method was added."
+msgstr ""
+
+#: ../../CHANGES.md:514
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization`:"
+" *added*: New in version 2020: The ExpInitialization class was added."
+msgstr ""
+
+#: ../../CHANGES.md:518
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.Creep`: *added*: New in "
+"version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and "
+"TIME_POWER_LAW were added."
+msgstr ""
+
+#: ../../CHANGES.md:519
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.GapFlow`: *added*: New in "
+"version 2020: The options BINGHAM_PLASTIC and HERSCHEL-BULKLEY were "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:520
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.Viscous`: *added*: New in "
+"version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and "
+"TIME_POWER_LAW were added."
+msgstr ""
+
+#: ../../CHANGES.md:522
+msgid "{py:obj}`abaqus.Material.Plastic.TensileFailure`"
+msgstr ""
+
+#: ../../CHANGES.md:524
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.TensileFailure.TensileFailure`: *added*:"
+" New in version 2020: The TensileFailure class was added."
+msgstr ""
+
+#: ../../CHANGES.md:528
+msgid ""
+"{py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes`: "
+"*changed*: Changed in version 2020: The coordinates arguments was "
+"removed, the nodes now replaces it."
+msgstr ""
+
+#: ../../CHANGES.md:531
+msgid "Abaqus 2019"
+msgstr ""
+
+#: ../../CHANGES.md:533
+msgid "{py:obj}`abaqus.DisplayGroup.LeafFromConstraintNames`"
+msgstr ""
+
+#: ../../CHANGES.md:535
+msgid ""
+"{py:obj}`abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames`:"
+" *added*: New in version 2019: The LeafFromConstraintNames class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:537 ../../CHANGES.md:674
+msgid "{py:obj}`abaqus.OdbDisplay.OdbDisplay`"
+msgstr ""
+
+#: ../../CHANGES.md:539
+msgid ""
+"{py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues`: *added*:"
+" New in version 2019: The legendHideOutsideLimits argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:541
+msgid "{py:obj}`abaqus.PlotOptions.BasicOptions`"
+msgstr ""
+
+#: ../../CHANGES.md:543
+msgid ""
+"{py:obj}`abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm`: "
+"*changed*: Changed in version 2019: Add possible values: "
+"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN."
+msgstr ""
+
+#: ../../CHANGES.md:544
+msgid ""
+"{py:obj}`abaqus.PlotOptions.BasicOptions.BasicOptions.setValues`: "
+"*changed*: Changed in version 2019: Add possible values: "
+"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN."
+msgstr ""
+
+#: ../../CHANGES.md:548
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator`:"
+" *added*: New in version 2019: The FluidInflator method was added."
+msgstr ""
+
+#: ../../CHANGES.md:549 ../../CHANGES.md:550
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd`:"
+" *added*: New in version 2019: The normalAdjustment argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:551
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionModel.FluidInflator`: *added*: New"
+" in version 2019: The FluidInflator class was added."
+msgstr ""
+
+#: ../../CHANGES.md:555
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty`:"
+" *added*: New in version 2019: The FluidInflatorProperty method was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:556
+msgid ""
+"{py:obj}`abaqus.Interaction.InteractionPropertyModel.FluidInflatorProperty`:"
+" *added*: New in version 2019: The FluidInflatorProperty class was added."
+msgstr ""
+
+#: ../../CHANGES.md:558
+msgid "{py:obj}`abaqus.Interaction.FluidInflatorState`"
+msgstr ""
+
+#: ../../CHANGES.md:560
+msgid ""
+"{py:obj}`abaqus.Interaction.FluidInflatorState.FluidInflatorState`: "
+"*added*: New in version 2019: The FluidInflatorState class was added."
+msgstr ""
+
+#: ../../CHANGES.md:564 ../../CHANGES.md:565
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd`:"
+" *added*: New in version 2019: The normalAdjustment argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:566
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.handedness`:"
+" *added*: New in version 2019: The handedness attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:567
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.normalAdjustment`:"
+" *added*: New in version 2019: The normalAdjustment attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:568 ../../CHANGES.md:569
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues`:"
+" *added*: New in version 2019: The normalAdjustment argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:573
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType`: *added*: New in version 2019: "
+"The numFourierModes argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:574
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType`: *added*: New in version 2019: "
+"The nodeOffset argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:575
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType.nodeOffset`: *added*: New in "
+"version 2019: The nodeOffset attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:576
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshPart.ElemType.numFourierModes`: *added*: New in "
+"version 2019: The numFourierModes attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:580
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask`:"
+" *added*: New in version 2019: The abaqusSensitivities argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:581
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask`:"
+" *added*: New in version 2019: The abaqusSensitivities argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:582
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask`:"
+" *added*: New in version 2019: The abaqusSensitivities argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:583
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask`:"
+" *added*: New in version 2019: The abaqusSensitivities argument was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:584
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask`: *added*: "
+"New in version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:585
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask.abaqusSensitivities`:"
+" *added*: New in version 2019: The abaqusSensitivities attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:586
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTaskModel.BeadTask.setValues`: "
+"*added*: New in version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:590
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl`:"
+" *added*: New in version 2019: The TopologyOverhangControl method was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:592
+msgid "{py:obj}`abaqus.Optimization.TopologyOverhangControl`"
+msgstr ""
+
+#: ../../CHANGES.md:594
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl`:"
+" *added*: New in version 2019: The TopologyOverhangControl class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:598
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask`: *added*: New in "
+"version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:599
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask.abaqusSensitivities`: "
+"*added*: New in version 2019: The abaqusSensitivities attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:600
+msgid ""
+"{py:obj}`abaqus.Optimization.ShapeTask.ShapeTask.setValues`: *added*: New"
+" in version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:604
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask`: *added*: New in "
+"version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:605
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask.abaqusSensitivities`: "
+"*added*: New in version 2019: The abaqusSensitivities attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:606
+msgid ""
+"{py:obj}`abaqus.Optimization.SizingTask.SizingTask.setValues`: *added*: "
+"New in version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:610
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask`: *added*: New in "
+"version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:611
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask.abaqusSensitivities`:"
+" *added*: New in version 2019: The abaqusSensitivities attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:612
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyTask.TopologyTask.setValues`: "
+"*added*: New in version 2019: The abaqusSensitivities argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:614
+msgid "{py:obj}`abaqus.Assembly.ModelInstance`"
+msgstr ""
+
+#: ../../CHANGES.md:616
+msgid ""
+"{py:obj}`abaqus.Assembly.ModelInstance.ModelInstance.replace`: *added*: "
+"New in version 2019: The replace method was added."
+msgstr ""
+
+#: ../../CHANGES.md:619
+msgid "Abaqus 2018"
+msgstr ""
+
+#: ../../CHANGES.md:623
+msgid ""
+"{py:obj}`abaqus.Part.PartBase.PartBase.writeAcisFile`: *changed*: Changed"
+" in version 2018: Add description for thr file name's extension."
+msgstr ""
+
+#: ../../CHANGES.md:624
+msgid ""
+"{py:obj}`abaqus.Part.PartBase.AcisFile.writeAcisFile`: *changed*: Changed"
+" in version 2018: Add description for thr file name's extension."
+msgstr ""
+
+#: ../../CHANGES.md:626
+msgid "{py:obj}`abaqus.Region.RegionPart`"
+msgstr ""
+
+#: ../../CHANGES.md:628
+msgid ""
+"{py:obj}`abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels`: *added*:"
+" New in version 2018: The unsorted argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:630
+msgid "{py:obj}`abaqus.Region.Set`"
+msgstr ""
+
+#: ../../CHANGES.md:632
+msgid ""
+"{py:obj}`abaqus.Region.Set.Set.SetFromNodeLabels`: *added*: New in "
+"version 2018: The unsorted argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:634 ../../CHANGES.md:729
+msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel`"
+msgstr ""
+
+#: ../../CHANGES.md:636
+msgid ""
+"{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field`:"
+" *added*: New in version 2018: The Field method was added."
+msgstr ""
+
+#: ../../CHANGES.md:637
+msgid ""
+"{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.Field`: *added*: New"
+" in version 2018: The Field class was added."
+msgstr ""
+
+#: ../../CHANGES.md:639
+msgid "{py:obj}`abaqus.PredefinedField.FieldState`"
+msgstr ""
+
+#: ../../CHANGES.md:641
+msgid ""
+"{py:obj}`abaqus.PredefinedField.FieldState.FieldState`: *added*: New in "
+"version 2018: The FieldState class was added."
+msgstr ""
+
+#: ../../CHANGES.md:643
+msgid "{py:obj}`abaqus.Section.SectionModel`"
+msgstr ""
+
+#: ../../CHANGES.md:645
+msgid ""
+"{py:obj}`abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection`:"
+" *changed*: Changed in version 2018: The default value is now 1.0 instead"
+" of None."
+msgstr ""
+
+#: ../../CHANGES.md:647
+msgid "{py:obj}`abaqus.Section.SectionOdb`"
+msgstr ""
+
+#: ../../CHANGES.md:649
+msgid ""
+"{py:obj}`abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection`: "
+"*changed*: Changed in version 2018: The default value is now 1.0 instead "
+"of None."
+msgstr ""
+
+#: ../../CHANGES.md:650
+msgid ""
+"{py:obj}`abaqus.Section.SectionOdb.HomogeneousSolidSection`: *changed*: "
+"Changed in version 2018: The default value is now 1.0 instead of None."
+msgstr ""
+
+#: ../../CHANGES.md:651
+msgid ""
+"{py:obj}`abaqus.Section.SectionOdb.HomogeneousSolidSection.thickness`: "
+"*changed*: Changed in version 2018: The default value is now 1.0 instead "
+"of None."
+msgstr ""
+
+#: ../../CHANGES.md:653
+msgid "{py:obj}`abaqus.Sketcher.SketchModel`"
+msgstr ""
+
+#: ../../CHANGES.md:655
+msgid ""
+"{py:obj}`abaqus.Sketcher.SketchModel.ConstrainedSketch.writeAcisFile`: "
+"*changed*: Changed in version 2018: Add description for thr file name's "
+"extension."
+msgstr ""
+
+#: ../../CHANGES.md:657 ../../CHANGES.md:750
+msgid "{py:obj}`abaqus.Step.StepModel`"
+msgstr ""
+
+#: ../../CHANGES.md:659
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep`: *added*: "
+"New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:660
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep`: "
+"*added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:661
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.ExplicitDynamicsStep`: *added*: New in "
+"version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:662
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.ExplicitDynamicsStep.setValues`: *added*: "
+"New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:664
+msgid "{py:obj}`abaqus.Step.TempDisplacementDynamicsStep`"
+msgstr ""
+
+#: ../../CHANGES.md:666
+msgid ""
+"{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep`:"
+" *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:667
+msgid ""
+"{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod`:"
+" *added*: New in version 2018: The improvedDtMethod attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:668
+msgid ""
+"{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues`:"
+" *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:672
+msgid ""
+"{py:obj}`abaqus.Session.SessionBase.Drawing.setValues`: *added*: New in "
+"version 2018: The depthTest argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:676
+msgid ""
+"{py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues`: *added*:"
+" New in version 2018: The reversedContourLegendRange argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:678
+msgid "{py:obj}`abaqus.XY.XYSession`"
+msgstr ""
+
+#: ../../CHANGES.md:680
+msgid ""
+"{py:obj}`abaqus.XY.XYSession.XYSession.XYDataFromPath`: *added*: New in "
+"version 2018: The removeDuplicateXYPairs argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:681
+msgid ""
+"{py:obj}`abaqus.XY.XYSession.XYSession.XYDataFromPath`: *added*: New in "
+"version 2018: The includeAllElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:683
+msgid "{py:obj}`abaqus.XY.writeXYReport`"
+msgstr ""
+
+#: ../../CHANGES.md:685
+msgid ""
+"{py:obj}`abaqus.XY.writeXYReport.XYData.XYDataFromPath`: *added*: New in "
+"version 2018: The removeDuplicateXYPairs argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:686
+msgid ""
+"{py:obj}`abaqus.XY.writeXYReport.XYData.XYDataFromPath`: *added*: New in "
+"version 2018: The includeAllElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:688
+msgid "{py:obj}`abaqus.Load.LoadModel`"
+msgstr ""
+
+#: ../../CHANGES.md:690
+msgid ""
+"{py:obj}`abaqus.Load.LoadModel.LoadModel.BoltLoad`: *added*: New in "
+"version 2018: The preTenSecPartLevel argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:691
+msgid ""
+"{py:obj}`abaqus.Load.LoadModel.BoltLoad`: *added*: New in version 2018: "
+"The preTenSecPartLevel argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:695
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.MeanFieldHomogenization`: "
+"*added*: New in version 2018: The MeanFieldHomogenization method was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:699
+msgid ""
+"{py:obj}`abaqus.Material.MaterialBase.MaterialBase.meanFieldHomogenization`:"
+" *added*: New in version 2018: The meanFieldHomogenization attribute was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:701
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldHomogenization`"
+msgstr ""
+
+#: ../../CHANGES.md:703
+msgid ""
+"{py:obj}`abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization`:"
+" *added*: New in version 2018: The MeanFieldHomogenization class was "
+"added."
+msgstr ""
+
+#: ../../CHANGES.md:705
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldInclusion`"
+msgstr ""
+
+#: ../../CHANGES.md:707
+msgid ""
+"{py:obj}`abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion`:"
+" *added*: New in version 2018: The MeanFieldInclusion class was added."
+msgstr ""
+
+#: ../../CHANGES.md:709
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldMatrix`"
+msgstr ""
+
+#: ../../CHANGES.md:711
+msgid ""
+"{py:obj}`abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix`: "
+"*added*: New in version 2018: The MeanFieldMatrix class was added."
+msgstr ""
+
+#: ../../CHANGES.md:713
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldVoid`"
+msgstr ""
+
+#: ../../CHANGES.md:715
+msgid ""
+"{py:obj}`abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid`: "
+"*added*: New in version 2018: The MeanFieldMatrix class was added."
+msgstr ""
+
+#: ../../CHANGES.md:717
+msgid "{py:obj}`abaqus.Mesh.MeshElementArray`"
+msgstr ""
+
+#: ../../CHANGES.md:719
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges`:"
+" *added*: New in version 2018: The getExteriorEdges method was added."
+msgstr ""
+
+#: ../../CHANGES.md:720
+msgid ""
+"{py:obj}`abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces`:"
+" *added*: New in version 2018: The getExteriorFaces method was added."
+msgstr ""
+
+#: ../../CHANGES.md:722
+msgid "{py:obj}`abaqus.Mesh.MesherOptions`"
+msgstr ""
+
+#: ../../CHANGES.md:724
+msgid ""
+"{py:obj}`abaqus.Mesh.MesherOptions.MesherOptions.setValues`: *added*: New"
+" in version 2018: The guiPreferredElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:727
+msgid "Abaqus 2017"
+msgstr ""
+
+#: ../../CHANGES.md:731
+msgid ""
+"{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress`:"
+" *added*: New in version 2017: The Stress method was added."
+msgstr ""
+
+#: ../../CHANGES.md:733
+msgid "{py:obj}`abaqus.PredefinedField.Stress`"
+msgstr ""
+
+#: ../../CHANGES.md:735
+msgid ""
+"{py:obj}`abaqus.PredefinedField.Stress.Stress`: *added*: New in version "
+"2017: The Stress class was added."
+msgstr ""
+
+#: ../../CHANGES.md:737
+msgid "{py:obj}`abaqus.Section.SectionLayerArray`"
+msgstr ""
+
+#: ../../CHANGES.md:739
+msgid ""
+"{py:obj}`abaqus.Section.SectionLayerArray.SectionLayer`: *changed*: "
+"Changed in version 2017: The thicknessType attribute and thicknessField "
+"attribute were removed."
+msgstr ""
+
+#: ../../CHANGES.md:740
+msgid ""
+"{py:obj}`abaqus.Section.SectionLayerArray.SectionLayer`: *changed*: "
+"Changed in version 2017: The thicknessType argument and thicknessField "
+"argument were removed."
+msgstr ""
+
+#: ../../CHANGES.md:742
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension`"
+msgstr ""
+
+#: ../../CHANGES.md:744
+msgid ""
+"{py:obj}`abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension`:"
+" *changed*: Changed in version 2017: The vertex2 argument was renamed to "
+"entity2."
+msgstr ""
+
+#: ../../CHANGES.md:746
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds`"
+msgstr ""
+
+#: ../../CHANGES.md:748
+msgid ""
+"{py:obj}`abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds`:"
+" *added*: New in version 2017: The direction argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:752
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.StepModel.GeostaticStep`: *added*: New in "
+"version 2017: The maxNumInc attribute was added to the GeostaticStep "
+"class."
+msgstr ""
+
+#: ../../CHANGES.md:753
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.GeostaticStep`: *added*: New in version "
+"2017: The maxNumInc attribute was added to the GeostaticStep class."
+msgstr ""
+
+#: ../../CHANGES.md:754
+msgid ""
+"{py:obj}`abaqus.Step.StepModel.GeostaticStep.maxNumInc`: *added*: New in "
+"version 2017: The maxNumInc attribute was added to the GeostaticStep "
+"class."
+msgstr ""
+
+#: ../../CHANGES.md:756
+msgid "{py:obj}`abaqus.Odb.OdbSet`"
+msgstr ""
+
+#: ../../CHANGES.md:758
+msgid ""
+"{py:obj}`abaqus.Odb.OdbSet.OdbMeshElement.getNormal`: *added*: New in "
+"version 2017: The getNormal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:760
+msgid "{py:obj}`abaqus.Field.OdbMeshRegionData`"
+msgstr ""
+
+#: ../../CHANGES.md:762
+msgid ""
+"{py:obj}`abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`: *changed*: "
+"Changed in version 2017: The transformationType attribute was moved."
+msgstr ""
+
+#: ../../CHANGES.md:763
+msgid ""
+"{py:obj}`abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`: *changed*: "
+"Changed in version 2017: The transformationType argument was moved."
+msgstr ""
+

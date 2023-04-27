@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-22 00:25+0000\n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`isOutOfDate <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isOutOfDate>`\\"
+msgid ":py:obj:`isOutOfDate <abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -64,7 +64,7 @@ msgid "An Int specifying that feature parameters have been modified but that the
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`timeStamp <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.timeStamp>`\\"
+msgid ":py:obj:`timeStamp <abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -72,7 +72,7 @@ msgid "A Float specifying which gives an indication when the assembly was last m
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`isLocked <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isLocked>`\\"
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -80,7 +80,7 @@ msgid "An Int specifying whether the assembly is locked or not."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`regenerateConstraintsTogether <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerateConstraintsTogether>`\\"
+msgid ":py:obj:`regenerateConstraintsTogether <abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -88,7 +88,7 @@ msgid "A Boolean specifying whether the positioning constraints in the assembly 
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -96,7 +96,7 @@ msgid "A VertexArray object specifying all the vertices existing at the assembly
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -104,7 +104,7 @@ msgid "An EdgeArray object specifying all the edges existing at the assembly lev
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -112,7 +112,7 @@ msgid "A MeshElementArray object specifying all the elements existing at the ass
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -120,7 +120,7 @@ msgid "A MeshNodeArray object specifying all the nodes existing at the assembly 
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`instances <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.instances>`\\"
+msgid ":py:obj:`instances <abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -128,7 +128,7 @@ msgid "A repository of PartInstance objects."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -136,7 +136,7 @@ msgid "A repository of Datum objects specifying all Datum objects in the assembl
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`features <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.features>`\\"
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -144,7 +144,7 @@ msgid "A repository of Feature objects specifying all Feature objects in the ass
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featuresById>`\\"
+msgid ":py:obj:`featuresById <abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -152,194 +152,11 @@ msgid "A repository of Feature objects specifying all Feature objects in the ass
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
 msgid "A repository of Surface objects specifying for more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`allSurfaces <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSurfaces>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`allInternalSurfaces <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSurfaces>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Surface objects specifying picked regions."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sets>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A repository of Set objects."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSets>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A repository of Set objects specifying for more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`allInternalSets <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSets>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Set objects specifying picked regions."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`skins <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.skins>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A repository of Skin objects specifying the skins created on the assembly."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`stringers <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.stringers>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A repository of Stringer objects specifying the stringers created on the assembly."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`referencePoints <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.referencePoints>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-msgid "A repository of ReferencePoint objects."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`modelInstances <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelInstances>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A repository of ModelInstance objects."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`allInstances <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInstances>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A PartInstance object specifying the PartInstances and A ModelInstance object specifying the ModelInstances."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`engineeringFeatures <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.engineeringFeatures>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-msgid "An EngineeringFeature object."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`modelName <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelName>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A String specifying the name of the model to which the assembly belongs."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`connectorOrientations <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.connectorOrientations>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid "A ConnectorOrientationArray object."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`sectionAssignments <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sectionAssignments>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:34:<autosummary>:1
-msgid "A SectionAssignmentArray object."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`name <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.name>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "A String specifying the repository key."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`id <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.id>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "An Int specifying the ID of the feature."
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`isOutOfDate <abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`timeStamp <abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`regenerateConstraintsTogether <abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`instances <abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
-msgstr ""
-
-#: ../../None:31:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -351,7 +168,16 @@ msgid ":py:obj:`allInternalSurfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.a
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Surface objects specifying picked regions."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid "A repository of Set objects."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -359,7 +185,16 @@ msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+msgid "A repository of Set objects specifying for more information, see [Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`allInternalSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Set objects specifying picked regions."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -367,7 +202,15 @@ msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+msgid "A repository of Skin objects specifying the skins created on the assembly."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`stringers <abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid "A repository of Stringer objects specifying the stringers created on the assembly."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -375,7 +218,16 @@ msgid ":py:obj:`referencePoints <abaqus.Assembly.AssemblyBase.AssemblyBase.refer
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+#: ../../None:34:<autosummary>:1
+msgid "A repository of ReferencePoint objects."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`modelInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid "A repository of ModelInstance objects."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -383,7 +235,16 @@ msgid ":py:obj:`allInstances <abaqus.Assembly.AssemblyBase.AssemblyBase.allInsta
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+msgid "A PartInstance object specifying the PartInstances and A ModelInstance object specifying the ModelInstances."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`engineeringFeatures <abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+#: ../../None:34:<autosummary>:1
+msgid "An EngineeringFeature object."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -391,7 +252,15 @@ msgid ":py:obj:`modelName <abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+msgid "A String specifying the name of the model to which the assembly belongs."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`connectorOrientations <abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid "A ConnectorOrientationArray object."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
@@ -399,19 +268,26 @@ msgid ":py:obj:`sectionAssignments <abaqus.Assembly.AssemblyBase.AssemblyBase.se
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
+#: ../../None:34:<autosummary>:1
+msgid "A SectionAssignmentArray object."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Assembly.AssemblyBase.AssemblyBase.name>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:31:<autosummary>:1
 msgid ":py:obj:`id <abaqus.Assembly.AssemblyBase.AssemblyBase.id>`\\"
 msgstr ""
 
+#: ../../None:31:<autosummary>:1
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Assembly.AssemblyFeature.AssemblyFeature.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.Assembly.AssemblyFeature.AssemblyFeature.id>`\\"
+msgid "An Int specifying the ID of the feature."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -472,7 +348,7 @@ msgid "This method changes the coordinates of the given nodes on a part instance
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`mergeNodes <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.mergeNodes>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`mergeNodes <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.mergeNodes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -530,7 +406,7 @@ msgid "This method undoes the most recent edit mesh or the bottom-up meshing ope
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid ":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\ \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -1005,7 +881,7 @@ msgid "This method creates a Feature object and a DatumAxis object along one of 
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumAxisByRotation <abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`DatumAxisByRotation <abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1081,7 +957,7 @@ msgid "This method creates a Feature object and a DatumPlane object through the 
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`DatumPlaneByOffset <abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`DatumPlaneByOffset <abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1485,6 +1361,7 @@ msgstr ""
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:0
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:0
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:0
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:0
 msgid "Parameters"
 msgstr ""
 
@@ -1572,6 +1449,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:33
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:34
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:11
 msgid "A DatumCsys object specifying the local coordinate system. If unspecified, the global coordinate system will be used."
 msgstr ""
 
@@ -1580,9 +1458,16 @@ msgstr ""
 msgid "A Boolean specifying whether to project nodes back to their original geometry. For example, if a node is on a face, this method first positions the node at the new location and then projects it back to the original face. The default value is ON."
 msgstr ""
 
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:0
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:0
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:0
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:0
+msgid "Raises"
+msgstr ""
+
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:40
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:41
-msgid ":raises A coordinate` and :class:`an offset may not both be specified for the same coordinate component:"
+msgid "A coordinate and an offset may not both be specified for the same coordinate component"
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:5
@@ -1706,7 +1591,7 @@ msgid "The following commands operate on Part objects. For more information abou
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`geometryValidity <abaqus.EditMesh.MeshEditPart.MeshEditPart.geometryValidity>`\\"
+msgid ":py:obj:`geometryValidity <abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1714,7 +1599,7 @@ msgid "A Boolean specifying the validity of the geometry of the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`isOutOfDate <abaqus.EditMesh.MeshEditPart.MeshEditPart.isOutOfDate>`\\"
+msgid ":py:obj:`isOutOfDate <abaqus.Part.PartBase.PartBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1722,7 +1607,7 @@ msgid "An Int specifying that feature parameters have been modified but that the
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`timeStamp <abaqus.EditMesh.MeshEditPart.MeshEditPart.timeStamp>`\\"
+msgid ":py:obj:`timeStamp <abaqus.Part.PartBase.PartBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1730,7 +1615,7 @@ msgid "A Float specifying when the part was last modified."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.EditMesh.MeshEditPart.MeshEditPart.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1738,7 +1623,7 @@ msgid "A VertexArray object specifying all the vertices in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`ignoredVertices <abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredVertices>`\\"
+msgid ":py:obj:`ignoredVertices <abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1746,7 +1631,7 @@ msgid "An IgnoredVertexArray object specifying all the ignored vertices in the p
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.EditMesh.MeshEditPart.MeshEditPart.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1754,7 +1639,7 @@ msgid "An EdgeArray object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`ignoredEdges <abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredEdges>`\\"
+msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1762,7 +1647,7 @@ msgid "An IgnoredEdgeArray object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.EditMesh.MeshEditPart.MeshEditPart.faces>`\\"
+msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1770,7 +1655,7 @@ msgid "A FaceArray object specifying all the faces in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`cells <abaqus.EditMesh.MeshEditPart.MeshEditPart.cells>`\\"
+msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1778,7 +1663,7 @@ msgid "A CellArray object specifying all the cells in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`features <abaqus.EditMesh.MeshEditPart.MeshEditPart.features>`\\"
+msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1786,7 +1671,7 @@ msgid "A repository of Feature objects specifying all the features in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.EditMesh.MeshEditPart.MeshEditPart.featuresById>`\\"
+msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1794,7 +1679,7 @@ msgid "A repository of Feature objects specifying all Feature objects in the par
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.EditMesh.MeshEditPart.MeshEditPart.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Part.PartBase.PartBase.datums>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1802,7 +1687,7 @@ msgid "A repository of Datum objects specifying all the datums in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.EditMesh.MeshEditPart.MeshEditPart.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1810,7 +1695,7 @@ msgid "A MeshElementArray object specifying all the elements in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elemFaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.elemFaces>`\\"
+msgid ":py:obj:`elemFaces <abaqus.Part.PartBase.PartBase.elemFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1818,7 +1703,7 @@ msgid "A repository of MeshFace objects specifying all the element faces in the 
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elementFaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.elementFaces>`\\"
+msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1826,7 +1711,7 @@ msgid "A MeshFaceArray object specifying all the unique element faces in the par
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1834,7 +1719,7 @@ msgid "A MeshNodeArray object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`retainedNodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.retainedNodes>`\\"
+msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1842,7 +1727,7 @@ msgid "A MeshNodeArray object specifying all the retained nodes in the substruct
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditPart.MeshEditPart.sets>`\\"
+msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -1850,171 +1735,11 @@ msgid "A repository of Set objects specifying for more information, see Set."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.EditMesh.MeshEditPart.MeshEditPart.allSets>`\\"
+msgid ":py:obj:`allSets <abaqus.Part.PartBase.PartBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid "A repository of Set objects specifying the contents of the **allSets** repository is the same as the contents of the **sets** repository."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allInternalSets <abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSets>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.surfaces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Surface objects specifying for more information, see Surface."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allSurfaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.allSurfaces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Surface objects specifying the contents of the **allSurfaces** repository is the same as the contents of the **surfaces** repository."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allInternalSurfaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSurfaces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`skins <abaqus.EditMesh.MeshEditPart.MeshEditPart.skins>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Skin objects specifying the skins created on the part."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`stringers <abaqus.EditMesh.MeshEditPart.MeshEditPart.stringers>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of Stringer objects specifying the stringers created on the part."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`referencePoints <abaqus.EditMesh.MeshEditPart.MeshEditPart.referencePoints>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`engineeringFeatures <abaqus.EditMesh.MeshEditPart.MeshEditPart.engineeringFeatures>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`sectionAssignments <abaqus.EditMesh.MeshEditPart.MeshEditPart.sectionAssignments>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`materialOrientations <abaqus.EditMesh.MeshEditPart.MeshEditPart.materialOrientations>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A MaterialOrientationArray object."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`compositeLayups <abaqus.EditMesh.MeshEditPart.MeshEditPart.compositeLayups>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of CompositeLayup objects."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elemEdges <abaqus.EditMesh.MeshEditPart.MeshEditPart.elemEdges>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A repository of MeshEdge objects specifying all the element edges in the part."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elementEdges <abaqus.EditMesh.MeshEditPart.MeshEditPart.elementEdges>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid "A MeshEdgeArray object specifying all the unique element edges in the part."
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`geometryValidity <abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`isOutOfDate <abaqus.Part.PartBase.PartBase.isOutOfDate>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`timeStamp <abaqus.Part.PartBase.PartBase.timeStamp>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`ignoredVertices <abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.Part.PartBase.PartBase.datums>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elemFaces <abaqus.Part.PartBase.PartBase.elemFaces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
-msgstr ""
-
-#: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.Part.PartBase.PartBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2026,7 +1751,15 @@ msgid ":py:obj:`surfaces <abaqus.Part.PartBase.PartBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
+msgid "A repository of Surface objects specifying for more information, see Surface."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
 msgid ":py:obj:`allSurfaces <abaqus.Part.PartBase.PartBase.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Surface objects specifying the contents of the **allSurfaces** repository is the same as the contents of the **surfaces** repository."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2038,7 +1771,15 @@ msgid ":py:obj:`skins <abaqus.Part.PartBase.PartBase.skins>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
+msgid "A repository of Skin objects specifying the skins created on the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
 msgid ":py:obj:`stringers <abaqus.Part.PartBase.PartBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Stringer objects specifying the stringers created on the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2058,7 +1799,15 @@ msgid ":py:obj:`materialOrientations <abaqus.Part.PartBase.PartBase.materialOrie
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
+msgid "A MaterialOrientationArray object."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
 msgid ":py:obj:`compositeLayups <abaqus.Part.PartBase.PartBase.compositeLayups>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of CompositeLayup objects."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2066,15 +1815,15 @@ msgid ":py:obj:`elemEdges <abaqus.Part.PartBase.PartBase.elemEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
+msgid "A repository of MeshEdge objects specifying all the element edges in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
 msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Part.PartFeature.PartFeature.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.Part.PartFeature.PartFeature.id>`\\"
+#: ../../None:34:<autosummary>:1
+msgid "A MeshEdgeArray object specifying all the unique element edges in the part."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -2179,7 +1928,7 @@ msgid "Merge a selection of elements arranged in layers on an orphan mesh part i
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-msgid ":py:obj:`mergeNodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeNodes>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`mergeNodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeNodes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -2269,7 +2018,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:1
 #: ../../None:27:<autosummary>:1
-msgid "This method wraps a planar orphan mesh part about the **Z**-axis."
+msgid "This method wraps a planar orphan mesh part about the **Z** axis."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -2289,7 +2038,7 @@ msgid "This method undoes the most recent edit mesh or the bottom-up meshing ope
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2313,7 +2062,7 @@ msgid ":py:obj:`PartFromExtrude2DMesh <abaqus.Part.PartBase.PartBase.PartFromExt
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in the positive **Z**-direction and places it in the parts repository."
+msgid "This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in the positive **Z** direction and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2817,7 +2566,7 @@ msgid ":py:obj:`AnalyticRigidSurfRevolve <abaqus.Part.PartFeature.PartFeature.An
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid "This method creates a first Feature object for an analytical rigid surface by revolving the given ConstrainedSketch object by 360° about the **Y**-axis."
+msgid "This method creates a first Feature object for an analytical rigid surface by revolving the given ConstrainedSketch object by 360° about the **Y** axis."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3372,13 +3121,8 @@ msgstr ""
 msgid "A list of labels for the specified elements. The length of this list must match the number of specified elements."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:0
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:0
-msgid "Raises"
-msgstr ""
-
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:20
-msgid "Renumbering is attempted on a native part"
+msgid "Renumbering can be applied to orphan mesh parts only, Renumbering is attempted on a native part"
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:21
@@ -3418,7 +3162,7 @@ msgid "A list of labels for the specified nodes. The length of this list must ma
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:20
-msgid "Renumbering is attempted on a native part."
+msgid "Renumbering can be applied to orphan mesh parts only, Renumbering is attempted on a native part."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:21
@@ -3529,10 +3273,34 @@ msgstr ""
 msgid "Bases: :py:class:`~abaqus.Mesh.MeshNode.MeshNode`"
 msgstr ""
 
-#: ../../docstring of abaqus.EditMesh.MeshEditPart.Node.coordinates:1
-msgid "A tuple of three Floats specifying the coordinates of the new node."
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:1
+msgid "This method creates a node on an orphan mesh part."
 msgstr ""
 
-#: ../../docstring of abaqus.EditMesh.MeshEditPart.Node.label:1
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:4
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:9
+msgid "A sequence of three Floats specifying the coordinates of the new node."
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:14
 msgid "An Int specifying the node label."
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:16
+msgid "**node** -- A MeshNode object"
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.Node:17
+msgid ":class:`MeshNode`"
 msgstr ""

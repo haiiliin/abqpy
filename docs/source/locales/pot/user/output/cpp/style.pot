@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2023-04-27 13:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,15 +21,15 @@ msgid "Abaqus Scripting Interface documentation style"
 msgstr ""
 
 #: ../../user/output/cpp/style.md:3
-msgid "This section describes the style that is used to describe a command in the {doc}`/references`. You may want to refer to the {doc}`/references` while you read this section and compare the style of a documented command with the descriptions provided here."
+msgid "This section describes the style that is used to describe a command in the {doc}`/reference/index`. You may want to refer to the {doc}`/reference/index` while you read this section and compare the style of a documented command with the descriptions provided here."
 msgstr ""
 
 #: ../../user/output/cpp/style.md:5
-msgid "The following list describes the order in which commands are documented in the {doc}`/references`:"
+msgid "The following list describes the order in which commands are documented in the {doc}`/reference/index`:"
 msgstr ""
 
 #: ../../user/output/cpp/style.md:7
-msgid "Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, {doc}`/reference/session/animation`, and {doc}`/reference/mdb/model/assembly`."
+msgid "Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, {doc}`/reference/session/animation`, and {doc}`/reference/mdb/model/part_assembly/assembly`."
 msgstr ""
 
 #: ../../user/output/cpp/style.md:9
@@ -81,7 +81,7 @@ msgid "Access"
 msgstr ""
 
 #: ../../user/output/cpp/style.md:29
-msgid "The description of each object in the {doc}`/references` begins with a section that describes how you access an instance of the object."
+msgid "The description of each object in the {doc}`/reference/index` begins with a section that describes how you access an instance of the object."
 msgstr ""
 
 #: ../../user/output/cpp/style.md:31
@@ -113,7 +113,7 @@ msgid "Path"
 msgstr ""
 
 #: ../../user/output/cpp/style.md:71
-msgid "A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/references` includes a path to the command. For example, the following describes the path to the Part constructor:"
+msgid "A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Part constructor:"
 msgstr ""
 
 #: ../../user/output/cpp/style.md:77
