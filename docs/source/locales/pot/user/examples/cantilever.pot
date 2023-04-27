@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid "The cantilever beam example script"
 msgstr ""
 
 #: ../../user/examples/cantilever.md:39
-msgid "The first line of the script, `from abaqus import *`, imports the Mdb and Session objects. The current viewport is `session.viewports['Viewport: 1']`, and the current model is `mdb.models['Model-1']`. Both of these objects are available to the script after you import the `abaqus` module. The second line of the script, `from abaqusConstants import *`, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the {doc}`/references`."
+msgid "The first line of the script, `from abaqus import *`, imports the Mdb and Session objects. The current viewport is `session.viewports['Viewport: 1']`, and the current model is `mdb.models['Model-1']`. Both of these objects are available to the script after you import the `abaqus` module. The second line of the script, `from abaqusConstants import *`, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the {doc}`/reference/index`."
 msgstr ""
 
 #: ../../user/examples/cantilever.md:41

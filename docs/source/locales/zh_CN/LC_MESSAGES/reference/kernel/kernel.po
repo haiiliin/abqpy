@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/kernel/kernel.md:1
 msgid "Custom Kernel"
@@ -61,7 +61,7 @@ msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.CustomKernel.CommandRegister.CommandRegister:1
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:1 of
+#: abaqus.CustomKernel.CommandRegister.CommandRegister:12 of
 msgid ""
 "This class allows you to derive a general class that can be queried from "
 "the GUI and is capable of notifying the GUI when the contents of the "
@@ -82,44 +82,44 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.CustomKernel.CommandRegister.CommandRegister:16
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:17
+#: abaqus.CustomKernel.RegisteredList.RegisteredList:16
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:16
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:20 of
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: abaqus.CustomKernel.CommandRegister.CommandRegister
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
+#: abaqus.CustomKernel.RegisteredList.RegisteredList
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.CustomKernel.CommandRegister.CommandRegister:20 of
+msgid "A CommandRegister object."
+msgstr ""
+
+#: abaqus.CustomKernel.CommandRegister.CommandRegister
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
+#: abaqus.CustomKernel.RegisteredList.RegisteredList
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.CustomKernel.CommandRegister.CommandRegister:21 of
+msgid ":class:`CommandRegister`"
+msgstr ""
+
 #: abaqus.CustomKernel.CommandRegister.CommandRegister:1
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
 #: abaqus.CustomKernel.RegisteredList.RegisteredList:1
 #: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport:1 of
 msgid "Member Details:"
-msgstr ""
-
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:5
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:4
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:4
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:4
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:4 of
-msgid "This function can be accessed by::"
-msgstr ""
-
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__ of
-msgid "Returns"
-msgstr ""
-
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:9 of
-msgid "A CommandRegister object."
-msgstr ""
-
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__ of
-msgid "Return type"
-msgstr ""
-
-#: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:10 of
-msgid ":class:`CommandRegister`"
 msgstr ""
 
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1 of
@@ -143,23 +143,23 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:14 of
+msgid "This method creates a RegisteredDictionary object."
+msgstr ""
+
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:21 of
+msgid "A RegisteredDictionary object."
+msgstr ""
+
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:22 of
+msgid ":class:`RegisteredDictionary`"
+msgstr ""
+
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods:1 of
 msgid ""
 "The RegisteredDictionary object supports the same methods as a Python "
 "dictionary. In addition, the RegisteredDictionary object supports the "
 "changeKey method."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:1 of
-msgid "This method creates a RegisteredDictionary object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:8 of
-msgid "A RegisteredDictionary object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.__init__:9 of
-msgid ":class:`RegisteredDictionary`"
 msgstr ""
 
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey:1 of
@@ -174,7 +174,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository of
 msgid "Parameters"
 msgstr ""
@@ -206,22 +206,22 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.CustomKernel.RegisteredList.RegisteredList:13 of
+msgid "This method creates a RegisteredList object."
+msgstr ""
+
+#: abaqus.CustomKernel.RegisteredList.RegisteredList:20 of
+msgid "A RegisteredList object."
+msgstr ""
+
+#: abaqus.CustomKernel.RegisteredList.RegisteredList:21 of
+msgid ":class:`RegisteredList`"
+msgstr ""
+
 #: abaqus.CustomKernel.RegisteredList.RegisteredList.Methods:1 of
 msgid ""
 "The RegisteredList object supports the same methods as a standard Python "
 "list object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:1 of
-msgid "This method creates a RegisteredList object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:8 of
-msgid "A RegisteredList object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredList.RegisteredList.__init__:9 of
-msgid ":class:`RegisteredList`"
 msgstr ""
 
 #: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1 of
@@ -244,35 +244,28 @@ msgid ""
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods:1 of
-msgid ""
-"The RegisteredTuple object supports the same methods as a standard Python"
-" list object."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:1 of
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:13 of
 msgid "This method creates a RegisteredTuple object."
 msgstr ""
 
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:9 of
-msgid ""
-"Check `RegisteredTuple.__init__ on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all"
-"#simaker-registeredtuple__init__pyc>`__."
-msgstr ""
-
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:12 of
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:21 of
 msgid ""
 "A tuple of objects. These objects must be derived from the "
 "CommandRegister class."
 msgstr ""
 
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:14 of
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:23 of
 msgid "A RegisteredTuple object."
 msgstr ""
 
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__init__:15 of
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:24 of
 msgid ":class:`RegisteredTuple`"
+msgstr ""
+
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods:1 of
+msgid ""
+"The RegisteredTuple object supports the same methods as a standard Python"
+" list object."
 msgstr ""
 
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport:1 of
@@ -292,6 +285,18 @@ msgstr ""
 msgid ""
 "Check `RepositorySupport on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:17 of
+msgid "This method creates a RepositorySupport object."
+msgstr ""
+
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:24 of
+msgid "A RepositorySupport object."
+msgstr ""
+
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:25 of
+msgid ":class:`RepositorySupport`"
 msgstr ""
 
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:1 of
@@ -318,18 +323,6 @@ msgstr ""
 msgid ""
 "A constructor or sequence of constructors specifying which classes will "
 "store their instances in the repository."
-msgstr ""
-
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1 of
-msgid "This method creates a RepositorySupport object."
-msgstr ""
-
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:8 of
-msgid "A RepositorySupport object."
-msgstr ""
-
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:9 of
-msgid ":class:`RepositorySupport`"
 msgstr ""
 
 #~ msgid ""
@@ -1563,5 +1556,12 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This method installs a repository on the class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `RegisteredTuple.__init__ on help.3ds.com/2019"
+#~ " "
+#~ "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all"
+#~ "#simaker-registeredtuple__init__pyc>`__."
 #~ msgstr ""
 
