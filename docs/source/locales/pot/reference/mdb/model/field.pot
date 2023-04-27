@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,22 +32,54 @@ msgstr ""
 msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:1
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:4
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:17
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:5
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:4
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:17
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:4
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:4
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:4
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:4
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:4
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:17
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:19
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:0
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:0
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:0
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:0
-msgid "Public Data Attributes:"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:0
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:0
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:0
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:0
+msgid "Parameters"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Field.FieldModel.FieldModel.name>`\\"
-msgstr ""
-
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:22
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:13
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:12
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:12
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:12
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:22
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:9
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:12
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:12
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:12
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:12
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:9
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:22
 #: ../../None:55:<autosummary>:1
 #: ../../docstring of abaqus.Field.Field.Field.name:1
 #: ../../docstring of abaqus.Field.MappedField.AnalyticalField.name:1
@@ -55,420 +87,82 @@ msgstr ""
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`stefanBoltzmann <abaqus.Field.FieldModel.FieldModel.stefanBoltzmann>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:11
+msgid "A String specifying the purpose and contents of the Model object. The default value is an empty string."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the Stefan-Boltzmann constant."
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:14
+msgid "None or a Float specifying the Stefan-Boltzmann constant. The default value is None."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Field.FieldModel.FieldModel.absoluteZero>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:16
+msgid "None or a Float specifying the absolute zero constant. The default value is None."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the absolute zero constant."
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:18
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value is NOT_SET."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`waveFormulation <abaqus.Field.FieldModel.FieldModel.waveFormulation>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:22
+msgid "A SymbolicConstant specifying the analysis model type. Possible values are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:25
+msgid "None or a Float specifying the universal gas constant. The default value is None."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Field.FieldModel.FieldModel.universalGas>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:27
+msgid "A boolean specifying whether to copy the constraints created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "None or a Float specifying the universal gas constant."
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:30
+msgid "A boolean specifying whether to copy the connectors created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`noPartsInputFile <abaqus.Field.FieldModel.FieldModel.noPartsInputFile>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:33
+msgid "A boolean specifying whether to copy the interactions created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:0
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:0
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:0
+msgid "Returns"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartIncrement <abaqus.Field.FieldModel.FieldModel.restartIncrement>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:36
+msgid "A Model object."
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:0
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:0
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:0
+msgid "Return type"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`endRestartStep <abaqus.Field.FieldModel.FieldModel.endRestartStep>`\\"
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:37
+msgid ":class:`Model`"
 msgstr ""
 
-#: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Field.FieldModel.FieldModel.shellToSolid>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Field.FieldModel.FieldModel.lastChangedCount>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A Float specifying the time stamp that indicates when the model was last changed."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Field.FieldModel.FieldModel.description>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the purpose and contents of the Model object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartJob <abaqus.Field.FieldModel.FieldModel.restartJob>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Field.FieldModel.FieldModel.restartStep>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the step where the restart analysis will start."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`globalJob <abaqus.Field.FieldModel.FieldModel.globalJob>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A String specifying the name of the job that generated the results for the global model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyConstraints <abaqus.Field.FieldModel.FieldModel.copyConstraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyConnectors <abaqus.Field.FieldModel.FieldModel.copyConnectors>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyInteractions <abaqus.Field.FieldModel.FieldModel.copyInteractions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Field.FieldModel.FieldModel.keywordBlock>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A KeywordBlock object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Field.FieldModel.FieldModel.rootAssembly>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "An Assembly object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Field.FieldModel.FieldModel.amplitudes>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Amplitude objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Field.FieldModel.FieldModel.profiles>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Profile objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`boundaryConditions <abaqus.Field.FieldModel.FieldModel.boundaryConditions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of BoundaryCondition objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Field.FieldModel.FieldModel.constraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ConstrainedSketchConstraint objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`analyticalFields <abaqus.Field.FieldModel.FieldModel.analyticalFields>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of AnalyticalField objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`discreteFields <abaqus.Field.FieldModel.FieldModel.discreteFields>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of DiscreteField objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`predefinedFields <abaqus.Field.FieldModel.FieldModel.predefinedFields>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of PredefinedField objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Field.FieldModel.FieldModel.interactions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Interaction objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`interactionProperties <abaqus.Field.FieldModel.FieldModel.interactionProperties>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of InteractionProperty objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactControls <abaqus.Field.FieldModel.FieldModel.contactControls>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ContactControl objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactInitializations <abaqus.Field.FieldModel.FieldModel.contactInitializations>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ContactInitialization objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactStabilizations <abaqus.Field.FieldModel.FieldModel.contactStabilizations>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ContactStabilization objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`linkedInstances <abaqus.Field.FieldModel.FieldModel.linkedInstances>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Field.FieldModel.FieldModel.linkedParts>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`loads <abaqus.Field.FieldModel.FieldModel.loads>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Load objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Field.FieldModel.FieldModel.materials>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Material objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Field.FieldModel.FieldModel.calibrations>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Calibration objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Field.FieldModel.FieldModel.sections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Section objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`remeshingRules <abaqus.Field.FieldModel.FieldModel.remeshingRules>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of RemeshingRule objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`sketches <abaqus.Field.FieldModel.FieldModel.sketches>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of ConstrainedSketch objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Field.FieldModel.FieldModel.parts>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Part objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Field.FieldModel.FieldModel.steps>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Step objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`featureOptions <abaqus.Field.FieldModel.FieldModel.featureOptions>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A FeatureOptions object."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Field.FieldModel.FieldModel.adaptiveMeshConstraints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of AdaptiveMeshConstraint objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshControls <abaqus.Field.FieldModel.FieldModel.adaptiveMeshControls>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of AdaptiveMeshControl objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`timePoints <abaqus.Field.FieldModel.FieldModel.timePoints>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of TimePoint objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Field.FieldModel.FieldModel.filters>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of Filter objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`integratedOutputSections <abaqus.Field.FieldModel.FieldModel.integratedOutputSections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of IntegratedOutputSection objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`fieldOutputRequests <abaqus.Field.FieldModel.FieldModel.fieldOutputRequests>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of FieldOutputRequest objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`historyOutputRequests <abaqus.Field.FieldModel.FieldModel.historyOutputRequests>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of HistoryOutputRequest objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`optimizationTasks <abaqus.Field.FieldModel.FieldModel.optimizationTasks>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of OptimizationTask objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`tableCollections <abaqus.Field.FieldModel.FieldModel.tableCollections>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of TableCollection objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`eventSeriesTypes <abaqus.Field.FieldModel.FieldModel.eventSeriesTypes>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of EventSeriesType objects."
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid ":py:obj:`eventSeriesDatas <abaqus.Field.FieldModel.FieldModel.eventSeriesDatas>`\\"
-msgstr ""
-
-#: ../../None:55:<autosummary>:1
-msgid "A repository of EventSeriesData objects."
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:0
+msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -480,7 +174,15 @@ msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzman
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -488,7 +190,15 @@ msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulatio
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -496,7 +206,15 @@ msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputF
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -504,7 +222,15 @@ msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -512,7 +238,15 @@ msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCo
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -520,7 +254,15 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -528,7 +270,15 @@ msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -536,7 +286,15 @@ msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -544,7 +302,15 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A KeywordBlock object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -552,7 +318,15 @@ msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -560,7 +334,15 @@ msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryCon
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -568,7 +350,15 @@ msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFie
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -576,7 +366,15 @@ msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFie
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -584,7 +382,15 @@ msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interact
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -592,7 +398,15 @@ msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contact
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -600,7 +414,15 @@ msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstance
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -608,7 +430,15 @@ msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -616,7 +446,15 @@ msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -624,7 +462,15 @@ msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -632,7 +478,15 @@ msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -640,7 +494,15 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A FeatureOptions object."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -648,7 +510,15 @@ msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveM
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -656,7 +526,15 @@ msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -664,7 +542,15 @@ msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutpu
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -672,7 +558,15 @@ msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimization
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`tableCollections <abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -680,7 +574,15 @@ msgid ":py:obj:`eventSeriesTypes <abaqus.Model.ModelBase.ModelBase.eventSeriesTy
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesType objects."
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
 msgid ":py:obj:`eventSeriesDatas <abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
+msgstr ""
+
+#: ../../None:55:<autosummary>:1
+msgid "A repository of EventSeriesData objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:0
@@ -691,7 +593,7 @@ msgstr ""
 msgid ":py:obj:`DiscreteField <abaqus.Field.FieldModel.FieldModel.DiscreteField>`\\ \\(name\\, defaultValues\\, fieldType\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:1
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:14
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a DiscreteField object."
@@ -701,7 +603,7 @@ msgstr ""
 msgid ":py:obj:`ExpressionField <abaqus.Field.FieldModel.FieldModel.ExpressionField>`\\ \\(name\\, expression\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:1
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:14
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates an ExpressionField object."
@@ -712,17 +614,13 @@ msgid ":py:obj:`MappedField <abaqus.Field.FieldModel.FieldModel.MappedField>`\\ 
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:1
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:1
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:14
 #: ../../None:5:<autosummary>:1
 msgid "This method creates an MappedField object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -769,83 +667,54 @@ msgstr ""
 msgid "Member Details:"
 msgstr ""
 
-#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:4
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:5
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:4
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:4
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:4
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:4
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:4
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:4
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:4
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:4
-msgid "This function can be accessed by::"
-msgstr ""
-
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:12
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:9
 msgid "Check `DiscreteField on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:0
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:0
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:0
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:0
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:14
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:24
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:14
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.defaultValues:1
 msgid "A sequence of Floats specifying a sequence of floats specifying the default values."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:16
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:26
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:16
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.fieldType:1
 msgid "A SymbolicConstant or an Int specifying the type of data represented by this discrete field. Possible values are SCALAR, ORIENTATION, and PRESCRIBEDCONDITION_DOF."
 msgstr ""
 
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:29
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:14
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:19
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:7
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:19
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.location:1
 msgid "A SymbolicConstant or an Int specifying the location of the domain data. Possible values are NODES and ELEMENTS. The default value is NODES."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:22
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:32
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:10
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:22
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.dataWidth:1
 msgid "An Int specifying the width of the supplied data. The default value is 1."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:24
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:34
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:12
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:24
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.data:1
 msgid "A DataTableArray object."
 msgstr ""
 
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:36
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:27
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:26
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:14
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:21
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:31
 #: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:11
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:26
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:21
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:76
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:76
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:86
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:69
 #: ../../docstring of abaqus.Field.Field.Field.description:1
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.description:1
@@ -855,70 +724,44 @@ msgstr ""
 msgid "A String specifying the description of the field. The default value is an empty string."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:28
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:38
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:16
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:28
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.orientationType:1
 msgid "A SymbolicConstant specifying the type of the system being described by a discrete field used for an orientation. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL. The default value is CARTESIAN."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:32
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:42
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:20
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:32
 #: ../../docstring of abaqus.Field.FieldModel.DiscreteField.partLevelOrientation:1
 msgid "A Boolean specifying whether or not the orientations are described in terms of part level coordinates. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:0
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:0
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:0
-msgid "Returns"
-msgstr ""
-
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:45
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:32
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:21
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:35
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:35
 msgid "A DiscreteField object."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:0
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
-#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:0
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:0
-msgid "Return type"
-msgstr ""
-
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:46
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:33
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:22
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:36
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:36
 msgid ":class:`DiscreteField`"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:0
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:0
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:0
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:0
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:0
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:0
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:0
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.DiscreteField:0
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:0
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:0
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:0
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:0
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:0
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:0
 msgid "Raises"
 msgstr ""
 
@@ -927,17 +770,17 @@ msgstr ""
 msgid "Check `ExpressionField on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:14
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:24
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:14
 #: ../../docstring of abaqus.Field.FieldModel.ExpressionField.expression:1
 msgid "A String specifying the Python expression to evaluate in space. Variables are X, Y, and Z; R, Th, and Z; or R, Th, and P based on the selected coordinate system."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:17
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:27
 #: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:7
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:17
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:72
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:72
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:82
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:65
 #: ../../docstring of abaqus.Field.FieldModel.ExpressionField.localCsys:1
 #: ../../docstring of abaqus.Field.MappedField.AnalyticalField.localCsys:1
@@ -945,12 +788,12 @@ msgstr ""
 msgid "None or a DatumCsys object specifying the local coordinate system of the field. If **localCsys** = None, the field is defined in the global coordinate system. The default value is None."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:23
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:33
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:23
 msgid "An ExpressionField object."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:24
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:34
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.ExpressionField:24
 msgid ":class:`ExpressionField`"
 msgstr ""
@@ -961,117 +804,117 @@ msgid "Check `MappedField on help.3ds.com/2022 <https://help.3ds.com/2022/Englis
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:14
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:14
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:24
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:7
 #: ../../docstring of abaqus.Field.MappedField.MappedField.regionType:1
 msgid "A SymbolicConstant specifying the data source region type. It can be either an ODB mesh or a cloud of points. Possible values are MESH and POINT. The default value is POINT."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:17
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:17
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:27
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:10
 #: ../../docstring of abaqus.Field.MappedField.MappedField.partLevelData:1
 msgid "A Boolean specifying whether or not the point cloud source data are described in terms of part level coordinates. If part level coordinates is employed, the local coordinate system defined in **localCsys** will be ignored. The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:21
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:21
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:31
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:14
 #: ../../docstring of abaqus.Field.MappedField.MappedField.pointDataFormat:1
 msgid "A SymbolicConstant specifying point cloud source data format. Possible values are GRID and XYZ. The default value is XYZ."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:24
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:24
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:34
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:17
 #: ../../docstring of abaqus.Field.MappedField.MappedField.gridPointPlane:1
 msgid "A SymbolicConstant specifying the plane on which the point cloud source data of grid format are described. Possible values are XYPLANE, YZPLANE, and XZPLANE. The default value is XYPLANE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:28
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:28
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:38
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:21
 msgid "A Float specifying the parameter (field) value reported when a value cannot be calculated from the data source. The default value is 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:31
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:31
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:41
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:24
 #: ../../docstring of abaqus.Field.MappedField.MappedField.mappingAlgorithm:1
 msgid "A SymbolicConstant specifying the mapping algorithm for target surface, or on mesh target model when the parameter value are located at nodes, for example nodal temperatures. Possible values are SURFACE and VOLUMETRIC. The default value is SURFACE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:35
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:35
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:45
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:28
 #: ../../docstring of abaqus.Field.MappedField.MappedField.searchTolType:1
 msgid "A SymbolicConstant specifying searching tolerance type in terms of absolute value or a fraction of the average of all element characteristic length in target model region. Possible values are ABSOLUTE and RELATIVE. The default value is RELATIVE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:39
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:39
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:49
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:32
 #: ../../docstring of abaqus.Field.MappedField.MappedField.boundarySearchTol:1
 msgid "A Float specifying the search distance tolerance value on the exterior boundary of target model region. Source points within this distance will be included in computing the parameter value of target region. This tolerance applies to both surface and volumetric mapping. The default value is 0.01."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:44
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:44
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:54
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:37
 #: ../../docstring of abaqus.Field.MappedField.MappedField.neighborhoodSearchTol:1
 msgid "A Float specifying the search distance tolerance value used for distance weighting algorithm. Source points within this distance will be included in computing the parameter value of target region. This tolerance only applies to surface mapping. The default value is 1000000.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:49
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:49
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:59
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:42
 #: ../../docstring of abaqus.Field.MappedField.MappedField.negativeNormalSearchTol:1
 msgid "A Float specifying the search distance tolerance value in the negative normal of target surface region. Source points within this distance will be included in computing the parameter value of target region. This tolerance only applies to surface mapping. The default value is 0.15."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:54
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:54
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:64
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:47
 #: ../../docstring of abaqus.Field.MappedField.MappedField.positiveNormalSearchTol:1
 msgid "A Float specifying the search distance tolerance value in the positive normal of target surface region. Source points within this distance will be included in computing the parameter value of target region. This tolerance only applies to surface mapping. The default value is 0.05."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:59
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:59
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:69
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:52
 #: ../../docstring of abaqus.Field.MappedField.MappedField.scaleCoordinates:1
 msgid "A Boolean specifying whether or not to scale the user-supplied coordinate values from the point cloud or indicated ODB. The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:62
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:62
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:72
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:55
 msgid "A sequence of sequences of Floats specifying the point cloud source data of grid format. The default value is an empty sequence."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:65
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:65
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:75
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:58
 msgid "A sequence of sequences of Floats specifying the point cloud source data of XYZ format. Each data item is defining the XYZ coordinates of a point and its field value. The default value is an empty sequence."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:69
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:69
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:79
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.setValues:62
 msgid "A sequence of Floats specifying the scaling factors for the global 1, 2 and 3 directions. The default value is (1.0, 1.0, 1.0)."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:78
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:78
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:88
 msgid "A MappedField object."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel.MappedField:79
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:79
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:89
 msgid ":class:`MappedField`"
 msgstr ""
 
-#: ../../reference/mdb/model/field.md:17
+#: ../../reference/mdb/model/field.md:16
 msgid "Other Classes"
 msgstr ""
 
@@ -1099,7 +942,7 @@ msgid "Check `AnalyticalField on help.3ds.com/2022 <https://help.3ds.com/2022/En
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:1
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:1
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:16
 msgid "This method creates an OdbMeshRegionData object."
 msgstr ""
 
@@ -1109,13 +952,13 @@ msgid "Check `OdbMeshRegionData on help.3ds.com/2022 <https://help.3ds.com/2022/
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:12
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:15
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:27
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.odbFileName:1
 msgid "A String specifying the name of the output database file (including the .odb extension) to be read into as the source data. This String can also be the full path to the output database file if it is located in another directory."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:16
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:19
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:31
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.variableLabel:1
 msgid "A String specifying the field output variable."
 msgstr ""
@@ -1125,260 +968,260 @@ msgid "An Int specifying the step index. Possible values are 0 ≤ **stepIndex**
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:21
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:24
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:36
 msgid "An Int specifying the frame in the specified step. Valid values are 0 ≤ **frameIndex** ≤ (**numFramesInStep** − 1). The default value is 0."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:24
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:27
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:39
 msgid "A SymbolicConstant specifying the position where the data is written in the output database. Data can be obtained only from the position at which it was written to the output database during the analysis. This position should be aligned with the field output variable. Possible values are:  - UNDEFINED_POSITION - NODAL - INTEGRATION_POINT - ELEMENT_FACE - ELEMENT_NODAL - ELEMENT_CENTROID - WHOLE_ELEMENT - WHOLE_REGION - WHOLE_PART_INSTANCE - WHOLE_MODEL - GENERAL_PARTICLE  The default value is UNDEFINED_POSITION."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:24
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:27
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:39
 msgid "A SymbolicConstant specifying the position where the data is written in the output database. Data can be obtained only from the position at which it was written to the output database during the analysis. This position should be aligned with the field output variable. Possible values are:"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:29
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:32
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:44
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:4
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:6
 msgid "UNDEFINED_POSITION"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:30
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:33
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:45
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:5
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:7
 msgid "NODAL"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:31
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:34
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:46
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:6
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:8
 msgid "INTEGRATION_POINT"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:32
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:35
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:47
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:7
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:9
 msgid "ELEMENT_FACE"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:33
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:36
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:48
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:8
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:10
 msgid "ELEMENT_NODAL"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:34
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:37
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:49
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:9
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:11
 msgid "ELEMENT_CENTROID"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:35
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:38
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:50
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:10
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:12
 msgid "WHOLE_ELEMENT"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:36
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:39
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:51
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:11
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:13
 msgid "WHOLE_REGION"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:37
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:40
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:52
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:12
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:14
 msgid "WHOLE_PART_INSTANCE"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:38
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:41
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:53
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:13
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:15
 msgid "WHOLE_MODEL"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:39
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:42
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:54
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:14
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:16
 msgid "GENERAL_PARTICLE"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:41
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:44
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:56
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.displayOutputPosition:16
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.outputPosition:18
 msgid "The default value is UNDEFINED_POSITION."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:43
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:46
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:58
 msgid "A SymbolicConstant specifying the data type of the field output variable which should be aligned with the variable. Currently only SCALAR is supported. Possible values are:  - ENUMERATION - BOOLEAN - INTEGER - SCALAR - VECTOR - QUATERNION_2D - QUATERNION_3D - TENSOR - TENSOR_3D_FULL - TENSOR_3D_PLANAR - TENSOR_3D_SURFACE - TENSOR_2D_PLANAR - TENSOR_2D_SURFACE  The default value is SCALAR."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:43
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:46
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:58
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:1
 msgid "A SymbolicConstant specifying the data type of the field output variable which should be aligned with the variable. Currently only SCALAR is supported. Possible values are:"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:46
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:49
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:61
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:4
 msgid "ENUMERATION"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:47
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:50
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:62
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:5
 msgid "BOOLEAN"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:48
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:51
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:63
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:6
 msgid "INTEGER"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:49
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:52
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:64
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:7
 msgid "SCALAR"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:50
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:53
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:65
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:8
 msgid "VECTOR"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:51
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:54
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:66
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:9
 msgid "QUATERNION_2D"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:52
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:55
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:67
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:10
 msgid "QUATERNION_3D"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:53
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:56
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:68
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:11
 msgid "TENSOR"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:54
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:57
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:69
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:12
 msgid "TENSOR_3D_FULL"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:55
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:58
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:70
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:13
 msgid "TENSOR_3D_PLANAR"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:56
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:59
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:71
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:14
 msgid "TENSOR_3D_SURFACE"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:57
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:60
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:72
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:15
 msgid "TENSOR_2D_PLANAR"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:58
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:61
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:73
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:16
 msgid "TENSOR_2D_SURFACE"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:60
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:63
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:75
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.dataType:18
 msgid "The default value is SCALAR."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:62
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:65
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:77
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.storageType:1
 msgid "A SymbolicConstant specifying the storage type of the field output variable which should be aligned with the variable. Possible values are FLOAT, DOUBLE, INTEGER, and BOOLEAN. The default value is FLOAT."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:66
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:69
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:81
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.quantityToPlot:1
 msgid "A SymbolicConstant specifying the quantity to plot. Currently only FIELD_OUTPUT is supported. Possible values are FIELD_OUTPUT and DISCONTINUITIES. The default value is FIELD_OUTPUT."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:70
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:73
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:85
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageElementOutput:1
 msgid "A Boolean specifying whether to average the element output. The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:72
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:75
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:87
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.useRegionBoundaries:1
 msgid "A Boolean specifying whether to use region boundaries when averaging. The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:75
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:78
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:90
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.regionBoundaries:1
 msgid "A SymbolicConstant specifying the type of averaging region boundaries. Currently only NONE and ODB_REGIONS are supported. Possible values are NONE, ODB_REGIONS, ELEMENT_SET, and DISPLAY_GROUPS. The default value is NONE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:79
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:82
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:94
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.includeFeatureBoundaries:1
 msgid "A Boolean specifying whether to include additional averaging boundaries for shells and membranes based on feature edges. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:82
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:85
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:97
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.featureAngle:1
 msgid "A Float specifying the feature angle to be used when **includeFeatureBoundaries** = ON. The default value is 20.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:85
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:88
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:100
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.averageOnlyDisplayed:1
 msgid "A Boolean specifying whether to average only values on displayed elements. The default value is OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:88
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:91
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:103
 msgid "A Float specifying the nodal averaging threshold percentage. 0 ≤ **averagingThreshold** ≤ 100. The default value is 75.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:91
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:94
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:106
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.computeOrder:1
 msgid "A SymbolicConstant specifying the order or the computations to be performed on the interested field output variable. Possible values are EXTRAPOLATE_AVERAGE_COMPUTE, EXTRAPOLATE_COMPUTE_AVERAGE, EXTRAPOLATE_COMPUTE, EXTRAPOLATE_COMPUTE_DISCONTINUITIES, and RAW_DATA. The default value is EXTRAPOLATE_COMPUTE_AVERAGE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:96
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:99
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:111
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.numericForm:1
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The default value is REAL."
 msgstr ""
@@ -1388,38 +1231,38 @@ msgid "A Float specifying the angle (in degrees) at which to display results tha
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:104
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:107
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:119
 msgid "A Dictionary with String keys and String values. Each key specifies a region in the model; the corresponding value specifies a section point within that region. For example::      sectionPoint = {         'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)',         'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)',     }"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:104
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:107
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:119
 msgid "A Dictionary with String keys and String values. Each key specifies a region in the model; the corresponding value specifies a section point within that region. For example::"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:113
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:116
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:128
 msgid "A SymbolicConstant specifying the type of the FieldOutput object. Possible values for the SymbolicConstant are NO_REFINEMENT, INVARIANT and COMPONENT. Default argument is NO_REFINEMENT. **refinementType** is mandetory if **variableLabel** has an INVARIANT or a COMPONENT."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:118
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:121
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:133
 msgid "A String specifying the Label of FieldOutput object. This is required only if the **refinementType** is INVARIANT or COMPONENT."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:121
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:124
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:136
 msgid "A SymbolicConstant specifying the position from which to obtain the data. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID, WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:125
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:128
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:140
 #: ../../docstring of abaqus.Field.MappedField.AnalyticalField.odbMeshRegionData:1
 msgid "An OdbMeshRegionData object."
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:126
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:129
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:141
 msgid ":class:`OdbMeshRegionData`"
 msgstr ""
 
@@ -1445,20 +1288,16 @@ msgstr ""
 msgid "The `transformationType` attribute was moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:8
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:23
 msgid "The `transformationType` argument was moved."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:12
-msgid "Check `OdbMeshRegionData.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmeshregiondatapyc.htm?contextscope=all#simaker-odbmeshregiondata__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:21
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:33
 #: ../../docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.stepIndex:1
 msgid "An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤ (*numSteps* − 1). The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData.__init__:103
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:115
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm=COMPLEX_MAG_AT_ANGLE** = COMPLEX_MAG_AT_ANGLE. The default value is 0.0."
 msgstr ""
 
@@ -1562,10 +1401,6 @@ msgstr ""
 msgid "A Region object for the field."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.__init__:9
-msgid "Check `DiscreteField.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all#simaker-discretefield__init__pyc>`__."
-msgstr ""
-
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.setValues:1
 msgid "This method modifies the DiscreteField object."
 msgstr ""
@@ -1583,10 +1418,6 @@ msgstr ""
 msgid "The ExpressionField object defines a spatially varying field whose value is calculated from a user-supplied mathematical expression. The ExpressionField object is derived from the AnalyticalField object."
 msgstr ""
 
-#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.__init__:9
-msgid "Check `ExpressionField.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all#simaker-expressionfield__init__pyc>`__."
-msgstr ""
-
 #: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:1
 msgid "This method modifies the ExpressionField object."
 msgstr ""
@@ -1597,10 +1428,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:1
 msgid "The MappedField object defines a spatially varying field whose value is calculated from an external source data. The MappedField object is derived from the AnalyticalField object."
-msgstr ""
-
-#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField.__init__:9
-msgid "Check `MappedField.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mappedfieldpyc.htm?contextscope=all#simaker-mappedfield__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring of abaqus.Field.MappedField.MappedField.coordinateScalingFactors:1
@@ -1633,4 +1460,28 @@ msgstr ""
 
 #: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:1
 msgid "Bases: :py:class:`~abaqus.Odb.OdbBase.OdbBase`"
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:1
+msgid "This method creates a new Odb object."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:11
+msgid "A String specifying the title of the output database. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:14
+msgid "A String specifying the description of the output database. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:17
+msgid "A String specifying the path to the file where the new output database (.odb ) file will be written. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:20
+msgid "An Odb object."
+msgstr ""
+
+#: ../../../../src/abaqus/Field/FieldOdb.py:docstring of abaqus.Field.FieldOdb.FieldOdb:21
+msgid ":class:`Odb`"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 00:31+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Abaqus Scripting Interface documentation style"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:3
-msgid "This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the {doc}`/references`. You may want to refer to the {doc}`/references` while you read this section and compare the style of a documented command with the descriptions provided here."
+msgid "This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the {doc}`/reference/index`. You may want to refer to the {doc}`/reference/index` while you read this section and compare the style of a documented command with the descriptions provided here."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:5
@@ -29,7 +29,7 @@ msgid "How the commands are ordered"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:7
-msgid "The following list describes the order in which commands are documented in the {doc}`/references`:"
+msgid "The following list describes the order in which commands are documented in the {doc}`/reference/index`:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:9
@@ -97,7 +97,7 @@ msgid "Access"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:32
-msgid "The description of each object in the {doc}`/references` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:"
+msgid "The description of each object in the {doc}`/reference/index` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:38
@@ -145,7 +145,7 @@ msgid "Path"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:89
-msgid "A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/references` includes a path to the command. For example, the following describes the path to the Viewport constructor:"
+msgid "A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Viewport constructor:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:95
@@ -181,7 +181,7 @@ msgid "In contrast, the `makeCurrent` method takes no arguments."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:134
-msgid "Some arguments of a command are required, and some arguments are optional. In the {doc}`/references` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument."
+msgid "Some arguments of a command are required, and some arguments are optional. In the {doc}`/reference/index` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:136

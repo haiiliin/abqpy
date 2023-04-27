@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/mdb/model/part_assembly/geometry.md:1
 msgid "Basic Geometry"
@@ -54,19 +54,19 @@ msgid "Member Details:"
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:1
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:1 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:19 of
 msgid ""
 "This method creates an interesting point along an edge. An "
 "InterestingPoint is a temporary object."
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:5
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:4
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:4
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:4
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:5
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:5
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:4 of
+#: abaqus.BasicGeometry.CellArray.CellArray:27
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:39
+#: abaqus.BasicGeometry.FaceArray.FaceArray:37
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:23
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:32
+#: abaqus.BasicGeometry.VertexArray.VertexArray:30 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint
 #: abaqus.BasicGeometry.Cell.Cell.getSize
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__
+#: abaqus.BasicGeometry.CellArray.CellArray
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder
@@ -88,7 +88,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Edge.Edge.getCurvature
 #: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle
 #: abaqus.BasicGeometry.Edge.Edge.getSize
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder
@@ -101,7 +101,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Face.Face.getNodes
 #: abaqus.BasicGeometry.Face.Face.getNormal
 #: abaqus.BasicGeometry.Face.Face.getSize
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__
+#: abaqus.BasicGeometry.FaceArray.FaceArray
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder
@@ -116,9 +116,9 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
+#: abaqus.BasicGeometry.VertexArray.VertexArray
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder
@@ -129,14 +129,14 @@ msgid "Parameters"
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:14
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:14 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:29 of
 msgid ""
 "An Edge object specifying the edge on which the interesting point is "
 "positioned."
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:16
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:16 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:31 of
 msgid ""
 "A SymbolicConstant specifying the position of the interesting point. "
 "Possible values are MIDDLE or CENTER."
@@ -151,7 +151,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Cell.Cell.getNodes
 #: abaqus.BasicGeometry.Cell.Cell.getSize
 #: abaqus.BasicGeometry.Cell.Cell.getVertices
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__
+#: abaqus.BasicGeometry.CellArray.CellArray
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt
 #: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox
@@ -170,7 +170,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Edge.Edge.getSize
 #: abaqus.BasicGeometry.Edge.Edge.getVertices
 #: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox
@@ -194,7 +194,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Face.Face.getSize
 #: abaqus.BasicGeometry.Face.Face.getVertices
 #: abaqus.BasicGeometry.Face.Face.isNormalFlipped
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__
+#: abaqus.BasicGeometry.FaceArray.FaceArray
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox
@@ -215,13 +215,13 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
 #: abaqus.BasicGeometry.Transform.Transform.matrix
 #: abaqus.BasicGeometry.Vertex.Vertex.getEdges
 #: abaqus.BasicGeometry.Vertex.Vertex.getElements
 #: abaqus.BasicGeometry.Vertex.Vertex.getNodes
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__
+#: abaqus.BasicGeometry.VertexArray.VertexArray
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox
@@ -234,7 +234,7 @@ msgid "Returns"
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:19
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:19 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:34 of
 msgid "An InterestingPoint object."
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Cell.Cell.getNodes
 #: abaqus.BasicGeometry.Cell.Cell.getSize
 #: abaqus.BasicGeometry.Cell.Cell.getVertices
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__
+#: abaqus.BasicGeometry.CellArray.CellArray
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt
 #: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox
@@ -266,7 +266,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Edge.Edge.getSize
 #: abaqus.BasicGeometry.Edge.Edge.getVertices
 #: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox
@@ -289,7 +289,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Face.Face.getSize
 #: abaqus.BasicGeometry.Face.Face.getVertices
 #: abaqus.BasicGeometry.Face.Face.isNormalFlipped
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__
+#: abaqus.BasicGeometry.FaceArray.FaceArray
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox
@@ -310,13 +310,13 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
 #: abaqus.BasicGeometry.Transform.Transform.matrix
 #: abaqus.BasicGeometry.Vertex.Vertex.getEdges
 #: abaqus.BasicGeometry.Vertex.Vertex.getElements
 #: abaqus.BasicGeometry.Vertex.Vertex.getNodes
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__
+#: abaqus.BasicGeometry.VertexArray.VertexArray
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox
@@ -329,7 +329,7 @@ msgid "Return type"
 msgstr ""
 
 #: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:20
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:20 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:35 of
 msgid ":class:`InterestingPoint`"
 msgstr ""
 
@@ -391,7 +391,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:4
 #: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:11
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:15
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:47
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:20
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:17
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:13
@@ -419,7 +419,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getCurvature:10 of
 msgid ""
-"A tuple of **X**-, **Y**-, and **Z**-coordinates of a point at which the "
+"A tuple of **X**, **Y**, and **Z** coordinates of a point at which the "
 "curvature is to be computed. If **point** does not lie on the edge an "
 "attempt is made to project it onto the edge and use the projected point."
 msgstr ""
@@ -627,8 +627,8 @@ msgstr ""
 #: ../../docstring abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdge.pointOn:1
 #: abaqus.BasicGeometry.InterestingPoint.Edge.pointOn:1 of
 msgid ""
-"A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
-" a point located on the edge."
+"A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a"
+" point located on the edge."
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1 of
@@ -651,13 +651,6 @@ msgstr ""
 msgid ""
 "An InterestingPoint object is a temporary object and cannot be accessed "
 "from the Mdb object."
-msgstr ""
-
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__:11 of
-msgid ""
-"Check `InterestingPoint.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all"
-"#simaker-interestingpoint__init__pyc>`__."
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell:1 of
@@ -687,7 +680,7 @@ msgid "A CellArray object which is a sequence of Cell objects."
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:4
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:15
+#: abaqus.BasicGeometry.CellArray.CellArray:35
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:20
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:17
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:13 of
@@ -790,8 +783,8 @@ msgstr ""
 
 #: ../../docstring abaqus.BasicGeometry.CellArray.Cell.pointOn:1 of
 msgid ""
-"A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
-" a point located on the cell."
+"A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a"
+" point located on the cell."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray:1 of
@@ -810,22 +803,15 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:1 of
+#: abaqus.BasicGeometry.CellArray.CellArray:24 of
 msgid "This method creates a CellArray object."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:9 of
-msgid ""
-"Check `CellArray.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
-"#simaker-cellarray__init__pyc>`__."
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:12 of
+#: abaqus.BasicGeometry.CellArray.CellArray:32 of
 msgid "A list of Cell objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.__init__:14 of
+#: abaqus.BasicGeometry.CellArray.CellArray:34 of
 msgid "A CellArray object."
 msgstr ""
 
@@ -854,8 +840,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:16 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. `findAt` returns either a Cell object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. `findAt` returns either a Cell object or a "
 "sequence of Cell objects based on the type of input.  * If "
 "**coordinates** is a sequence of Floats, findAt returns the Cell object "
 "at that point.  * If **coordinates** is a sequence of sequence of Floats,"
@@ -870,8 +856,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:16 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. `findAt` returns either a Cell object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. `findAt` returns either a Cell object or a "
 "sequence of Cell objects based on the type of input."
 msgstr ""
 
@@ -973,42 +959,42 @@ msgstr ""
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:7
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:7
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:8 of
-msgid "A float specifying the minimum **X**-boundary of the bounding box."
+msgid "A float specifying the minimum **X** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:9
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:9
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:9
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:10 of
-msgid "A float specifying the minimum **Y**-boundary of the bounding box."
+msgid "A float specifying the minimum **Y** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:11
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:11
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:11
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:12 of
-msgid "A float specifying the minimum **Z**-boundary of the bounding box."
+msgid "A float specifying the minimum **Z** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:13
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:13
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:13
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:14 of
-msgid "A float specifying the maximum **X**-boundary of the bounding box."
+msgid "A float specifying the maximum **X** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:15
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:15
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:15
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:16 of
-msgid "A float specifying the maximum **Y**-boundary of the bounding box."
+msgid "A float specifying the maximum **Y** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:17
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:17
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:17
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:18 of
-msgid "A float specifying the maximum **Z**-boundary of the bounding box."
+msgid "A float specifying the maximum **Z** boundary of the bounding box."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:19
@@ -1035,8 +1021,8 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:8
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:8 of
 msgid ""
-"A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
-" first end of the cylinder."
+"A tuple of the **X**, **Y**, and **Z** coordinates of the center of the "
+"first end of the cylinder."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:11
@@ -1044,8 +1030,8 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:11
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:11 of
 msgid ""
-"A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
-" second end of the cylinder."
+"A tuple of the **X**, **Y**, and **Z** coordinates of the center of the "
+"second end of the cylinder."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:14
@@ -1073,8 +1059,8 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:8
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:8 of
 msgid ""
-"A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
-" sphere."
+"A tuple of the **X**, **Y**, and **Z** coordinates of the center of the "
+"sphere."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:10
@@ -1099,7 +1085,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:4
 #: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:5
 #: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:11
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:15
+#: abaqus.BasicGeometry.FaceArray.FaceArray:45
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:20
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:17
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:13 of
@@ -1164,7 +1150,9 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:29
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:30
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:29 of
-msgid "An exception occurs if the resulting sequence is empty."
+msgid ""
+"The mask results in an empty sequence, An exception occurs if the "
+"resulting sequence is empty."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray:1 of
@@ -1185,22 +1173,15 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:1 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray:34 of
 msgid "This method creates a FaceArray object."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:9 of
-msgid ""
-"Check `FaceArray.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
-"#simaker-facearray__init__pyc>`__."
-msgstr ""
-
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:12 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray:42 of
 msgid "A list of Face objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.__init__:14 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray:44 of
 msgid "A FaceArray object."
 msgstr ""
 
@@ -1229,8 +1210,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. `findAt` returns either a Face object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. `findAt` returns either a Face object or a "
 "sequence of Face objects based on the type of input.  * If "
 "**coordinates** is a sequence of Floats, findAt returns the Face object "
 "at that point.  * If you omit the **coordinates** keyword argument, "
@@ -1245,8 +1226,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. `findAt` returns either a Face object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. `findAt` returns either a Face object or a "
 "sequence of Face objects based on the type of input."
 msgstr ""
 
@@ -1267,8 +1248,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:31 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components "
-"of a vector indicating the face normal."
+"A sequence of Floats specifying the **X**, **Y**, and **Z** components of"
+" a vector indicating the face normal."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36 of
@@ -1376,8 +1357,8 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
-" r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
+"describes the **X**, **Y**, and **Z** coordinates of a point::      >>> "
+"r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
 "     >>> r.keys()     [0, 1]     >>> r[0]     "
 "(mdb.models['Model-1'].parts['Part-1'].faces[0], (15.7090625762939, 20.0,"
 " 10.0))"
@@ -1389,7 +1370,7 @@ msgstr ""
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**-coordinates of a point::"
+"describes the **X**, **Y**, and **Z** coordinates of a point::"
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:17
@@ -1410,8 +1391,8 @@ msgid ""
 "then the value is a sequence consisting of two objects. The first object "
 "in the sequence is a Face that is close to the input point referred to by"
 " the key. The second object in the sequence is a sequence of floats that "
-"specifies the **X**-, **Y**-, and **Z**- location of the closest point on"
-" the Face to the given point. See program listing above."
+"specifies the **X**, **Y**, and **Z**  location of the closest point on "
+"the Face to the given point. See program listing above."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:1 of
@@ -1462,22 +1443,15 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:1 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:36 of
 msgid "This method creates an EdgeArray object."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:9 of
-msgid ""
-"Check `EdgeArray.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
-"#simaker-edgearray__init__pyc>`__."
-msgstr ""
-
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:12 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:44 of
 msgid "A list of Edge objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__:14 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:46 of
 msgid "A EdgeArray object."
 msgstr ""
 
@@ -1506,22 +1480,22 @@ msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. findAt returns either an Edge object or a "
-"sequence of Edge objects based on the type of input.  * If "
-"**coordinates** is a sequence of Floats, findAt returns the Edge object "
-"at that point.  * If you omit the **coordinates** keyword argument, "
-"findAt accepts as arguments a sequence   of sequence of floats in the "
-"following format::      edges = e.findAt(((20.19686, -169.513997, "
-"27.798593), ),                      ((19.657627, -167.295749, 27.056402),"
-" ),                      ((18.274129, -157.144741, 25.15218), ))"
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. findAt returns either an Edge object or a sequence"
+" of Edge objects based on the type of input.  * If **coordinates** is a "
+"sequence of Floats, findAt returns the Edge object at that point.  * If "
+"you omit the **coordinates** keyword argument, findAt accepts as "
+"arguments a sequence   of sequence of floats in the following format::"
+"      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),"
+"                      ((19.657627, -167.295749, 27.056402), ),"
+"                      ((18.274129, -157.144741, 25.15218), ))"
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find. findAt returns either an Edge object or a "
-"sequence of Edge objects based on the type of input."
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find. findAt returns either an Edge object or a sequence"
+" of Edge objects based on the type of input."
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:21 of
@@ -1612,8 +1586,8 @@ msgstr ""
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**- coordinates of a point::      "
-">>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
+"describes the **X**, **Y**, and **Z**  coordinates of a point::      >>> "
+"r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
 "     >>> r.keys()     [0, 1]     >>> r[0]     "
 "(mdb.models['Model-1'].parts['Part-1'].edges[3], (15.7090625762939, 20.0,"
 " 10.0))"
@@ -1622,7 +1596,7 @@ msgstr ""
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**- coordinates of a point::"
+"describes the **X**, **Y**, and **Z**  coordinates of a point::"
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:20 of
@@ -1633,8 +1607,8 @@ msgid ""
 "then the value is a sequence consisting of two objects. The first object "
 "in the sequence is an Edge that is close to the input point referred to "
 "by the key. The second object in the sequence is a sequence of floats "
-"that specifies the **X**-, **Y**-, and **Z**- location of the closest "
-"point on the Edge to the given point. See program listing above."
+"that specifies the **X**, **Y**, and **Z**  location of the closest point"
+" on the Edge to the given point. See program listing above."
 msgstr ""
 
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:1 of
@@ -1696,8 +1670,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCentroid:3 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the centroid of the face."
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the centroid of the face."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCentroid:5
@@ -1720,10 +1694,10 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCurvature:7 of
 msgid ""
-"A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point"
-" where the curvature is desired. If the **point** does not lie on the "
-"face it will be projected onto the face. This argument and **uParam** and"
-" **vParam** are mutually exclusive."
+"A tuple specifying the **X**, **Y**, and **Z** coordinates of the point "
+"where the curvature is desired. If the **point** does not lie on the face"
+" it will be projected onto the face. This argument and **uParam** and "
+"**vParam** are mutually exclusive."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCurvature:11 of
@@ -1863,15 +1837,15 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getNormal:9 of
 msgid ""
-"A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point"
-" where the normal to the face is desired. If the **point** does not lie "
-"on the face it will be projected onto the face."
+"A tuple specifying the **X**, **Y**, and **Z** coordinates of the point "
+"where the normal to the face is desired. If the **point** does not lie on"
+" the face it will be projected onto the face."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getNormal:13 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components "
-"of the normal to the face."
+"A sequence of Floats specifying the **X**, **Y**, and **Z** components of"
+" the normal to the face."
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getSize:1 of
@@ -1926,10 +1900,10 @@ msgstr ""
 #: ../../docstring abaqus.BasicGeometry.FaceArray.Face.pointOn:1 of
 msgid ""
 "A tuple of tuples of Floats specifying the coordinates. For a face of a "
-"shell **pointOn** specifies the **X**-, **Y**-, and **Z**-coordinates of "
-"a point located on the face and the **X**-, **Y**-, and **Z**-components "
-"of the normal to the face.For a face of a solid **pointOn** specifies the"
-" **X**-, **Y**-, and **Z**-coordinates of a point located on the face."
+"shell **pointOn** specifies the **X**, **Y**, and **Z** coordinates of a "
+"point located on the face and the **X**, **Y**, and **Z** components of "
+"the normal to the face.For a face of a solid **pointOn** specifies the "
+"**X**, **Y**, and **Z** coordinates of a point located on the face."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:1 of
@@ -1966,7 +1940,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:11 of
 msgid ""
-"A tuple of **X**-, **Y**-, and **Z**-coordinates of a point at which the "
+"A tuple of **X**, **Y**, and **Z** coordinates of a point at which the "
 "curvature is to be computed. If **point** does not lie on the IgnoredEdge"
 " an attempt is made to project it onto the IgnoredEdge and use the "
 "projected point."
@@ -2040,23 +2014,23 @@ msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**- "
-"coordinates of the object to find.findAt returns either an IgnoredEdge "
-"object or a sequence of IgnoredEdge objects based on the type of input.  "
-"* If **coordinates** is a sequence of Floats, findAt returns the "
-"IgnoredEdge object at that point.  * If you omit the **coordinates** "
-"keyword argument, findAt accepts as arguments a sequence   of sequence of"
-" floats in the following format::      ignoredEdges = "
-"e.findAt(((20.19686, -169.513997, 27.798593), ),"
-"                             ((19.657627, -167.295749, 27.056402), ),"
-"                             ((18.274129, -157.144741, 25.15218), ))"
+"A sequence of Floats specifying the **X**, **Y**, and **Z**  coordinates "
+"of the object to find.findAt returns either an IgnoredEdge object or a "
+"sequence of IgnoredEdge objects based on the type of input.  * If "
+"**coordinates** is a sequence of Floats, findAt returns the IgnoredEdge "
+"object at that point.  * If you omit the **coordinates** keyword "
+"argument, findAt accepts as arguments a sequence   of sequence of floats "
+"in the following format::      ignoredEdges = e.findAt(((20.19686, "
+"-169.513997, 27.798593), ),                             ((19.657627, "
+"-167.295749, 27.056402), ),                             ((18.274129, "
+"-157.144741, 25.15218), ))"
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:17 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**- "
-"coordinates of the object to find.findAt returns either an IgnoredEdge "
-"object or a sequence of IgnoredEdge objects based on the type of input."
+"A sequence of Floats specifying the **X**, **Y**, and **Z**  coordinates "
+"of the object to find.findAt returns either an IgnoredEdge object or a "
+"sequence of IgnoredEdge objects based on the type of input."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:21 of
@@ -2094,9 +2068,9 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
-" r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
-"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"describes the **X**, **Y**, and **Z** coordinates of a point::      >>> "
+"r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))     "
+">>> r.keys()     [0, 1]     >>> r[0]     "
 "(mdb.models['Model-1'].parts['Part-1'].ignoredEdges[3], "
 "(15.7090625762939, 20.0, 10.0))"
 msgstr ""
@@ -2109,7 +2083,7 @@ msgid ""
 "found then the value is a sequence consisting of two objects. The first "
 "object in the sequence is an IgnoredEdge that is close to the input point"
 " referred to by the key. The second object in the sequence, is a sequence"
-" of floats which specify the **X**-, **Y**-, and **Z**- location of the "
+" of floats which specify the **X**, **Y**, and **Z**  location of the "
 "closest point on the IgnoredEdge to the given point. See program listing "
 "above."
 msgstr ""
@@ -2153,8 +2127,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertex.pointOn:1 of
 msgid ""
-"A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
-" the vertex."
+"A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of "
+"the vertex."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:1 of
@@ -2197,8 +2171,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:14 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a IgnoredVertex object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find.findAt returns either a IgnoredVertex object or a "
 "sequence of IgnoredVertex objects based on the type of input.  * If "
 "**coordinates** is a sequence of Floats, findAt returns the IgnoredVertex"
 " object at that point.  * If you omit the **coordinates** keyword "
@@ -2210,8 +2184,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:14 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a IgnoredVertex object or a "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find.findAt returns either a IgnoredVertex object or a "
 "sequence of IgnoredVertex objects based on the type of input."
 msgstr ""
 
@@ -2250,9 +2224,9 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:9 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
-" r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
-"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"describes the **X**, **Y**, and **Z** coordinates of a point::      >>> "
+"r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))     "
+">>> r.keys()     [0, 1]     >>> r[0]     "
 "(mdb.models['Model-1'].parts['Part-1'].ignoredVertices[3], "
 "(15.7090625762939, 20.0, 10.0))"
 msgstr ""
@@ -2265,8 +2239,8 @@ msgid ""
 "found then the value is a sequence consisting of two objects. The first "
 "object in the sequence is a IgnoredVertex that is close to the input "
 "point referred to by the key. The second object in the sequence, is a "
-"sequence of floats which specify the **X**-, **Y**-, and **Z**- location "
-"of the IgnoredVertex. See program listing above."
+"sequence of floats which specify the **X**, **Y**, and **Z**  location of"
+" the IgnoredVertex. See program listing above."
 msgstr ""
 
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:1
@@ -2311,36 +2285,29 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:1 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:28 of
 msgid ""
 "This method creates a Feature object and a ReferencePoint object at the "
 "specified location."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:11 of
-msgid ""
-"Check `ReferencePoint.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all"
-"#simaker-referencepoint__init__pyc>`__."
-msgstr ""
-
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:14 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:38 of
 msgid ""
 "A ConstrainedSketchVertex, InterestingPoint, a MeshNode, or a Datum "
 "object specifying a reference point. **point** can also be a sequence of "
-"three Floats representing the **X**-, **Y**-, and **Z**-coordinates of "
-"the point."
+"three Floats representing the **X**, **Y**, and **Z** coordinates of the "
+"point."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:18 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:42 of
 msgid "Used internally by the input file writer."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:20 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:44 of
 msgid "A Feature object."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:21 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:45 of
 msgid ":class:`Feature`"
 msgstr ""
 
@@ -2411,7 +2378,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Transform.Transform:1 of
 msgid ""
 "The MakeSketchTransform method creates a Transform object. The Transform "
-"object has no direct constructor. A Transform object is a 4×3 matrix of "
+"object has no direct constructor. A Transform object is a 4x3 matrix of "
 "Floats that represents the transformation from sketch coordinates to "
 "assembly coordinates or to part coordinates."
 msgstr ""
@@ -2455,26 +2422,19 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:1 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray:27 of
 msgid "This method creates a VertexArray object."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:9 of
-msgid ""
-"Check `VertexArray.__init__ on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
-"#simaker-vertexarray__init__pyc>`__."
-msgstr ""
-
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:12 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray:35 of
 msgid "A list of ConstrainedSketchVertex objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:14 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray:37 of
 msgid "A VertexArray object."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.__init__:15
+#: abaqus.BasicGeometry.VertexArray.VertexArray:38
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:21
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:17
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:13 of
@@ -2503,8 +2463,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:14 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a ConstrainedSketchVertex "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find.findAt returns either a ConstrainedSketchVertex "
 "object or a sequence of ConstrainedSketchVertex objects based on the type"
 " of input.  * If **coordinates** is a sequence of Floats, findAt returns "
 "the ConstrainedSketchVertex object at that point.  * If you omit the "
@@ -2517,8 +2477,8 @@ msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:14 of
 msgid ""
-"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a ConstrainedSketchVertex "
+"A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates "
+"of the object to find.findAt returns either a ConstrainedSketchVertex "
 "object or a sequence of ConstrainedSketchVertex objects based on the type"
 " of input."
 msgstr ""
@@ -2612,9 +2572,9 @@ msgstr ""
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
-"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
-" r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
-"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"describes the **X**, **Y**, and **Z** coordinates of a point::      >>> "
+"r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))     "
+">>> r.keys()     [0, 1]     >>> r[0]     "
 "(mdb.models['Model-1'].parts['Part-1'].vertices[0], (15.7090625762939, "
 "29.1666641235352, 20.0))"
 msgstr ""
@@ -2627,8 +2587,8 @@ msgid ""
 "then the value is a sequence consisting of two objects. The first object "
 "in the sequence is a ConstrainedSketchVertex that is close to the input "
 "point referred to by the key. The second object in the sequence is a "
-"sequence of floats that specifies the **X**-, **Y**-, and **Z**- location"
-" of the ConstrainedSketchVertex. See program listing above."
+"sequence of floats that specifies the **X**, **Y**, and **Z**  location "
+"of the ConstrainedSketchVertex. See program listing above."
 msgstr ""
 
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:1 of
@@ -6788,5 +6748,547 @@ msgstr ""
 #~ ":py:obj:`getClosest "
 #~ "<abaqus.BasicGeometry.VertexArray.VertexArray.getClosest>`\\ "
 #~ "\\(coordinates\\[\\, searchTolerance\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point at which"
+#~ " the curvature is to be computed. "
+#~ "If **point** does not lie on the"
+#~ " edge an attempt is made to "
+#~ "project it onto the edge and use"
+#~ " the projected point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "a point located on the edge."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `InterestingPoint.__init__ on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all"
+#~ "#simaker-interestingpoint__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "a point located on the cell."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `CellArray.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
+#~ "#simaker-cellarray__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. `findAt` returns "
+#~ "either a Cell object or a sequence"
+#~ " of Cell objects based on the "
+#~ "type of input.  * If **coordinates** "
+#~ "is a sequence of Floats, findAt "
+#~ "returns the Cell object at that "
+#~ "point.  * If **coordinates** is a "
+#~ "sequence of sequence of Floats, findAt"
+#~ " returns a sequence of Cell   objects"
+#~ " at the given locations. The sequence"
+#~ " of sequence of Floats must be "
+#~ "a sequence of   sequence of point "
+#~ "and normal data, not a sequence of"
+#~ " point data. For example::      cells1 "
+#~ "= myCrackedBlockInstance.cells.findAt(((5.5, -8.3, "
+#~ "294.2),),                                                  "
+#~ "((12.1, -8.3, 287.8),),"
+#~ "                                                  ((14.4, "
+#~ "-10.4, 285.5),),)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. `findAt` returns "
+#~ "either a Cell object or a sequence"
+#~ " of Cell objects based on the "
+#~ "type of input."
+#~ msgstr ""
+
+#~ msgid "A float specifying the minimum **X**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid "A float specifying the minimum **Y**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid "A float specifying the minimum **Z**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid "A float specifying the maximum **X**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid "A float specifying the maximum **Y**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid "A float specifying the maximum **Z**-boundary of the bounding box."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of the **X**-, **Y**-, and"
+#~ " **Z**-coordinates of the center of "
+#~ "the first end of the cylinder."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of the **X**-, **Y**-, and"
+#~ " **Z**-coordinates of the center of "
+#~ "the second end of the cylinder."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of the **X**-, **Y**-, and"
+#~ " **Z**-coordinates of the center of "
+#~ "the sphere."
+#~ msgstr ""
+
+#~ msgid "An exception occurs if the resulting sequence is empty."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `FaceArray.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
+#~ "#simaker-facearray__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. `findAt` returns "
+#~ "either a Face object or a sequence"
+#~ " of Face objects based on the "
+#~ "type of input.  * If **coordinates** "
+#~ "is a sequence of Floats, findAt "
+#~ "returns the Face object at that "
+#~ "point.  * If you omit the "
+#~ "**coordinates** keyword argument, findAt "
+#~ "accepts as arguments a   sequence of "
+#~ "pairs of sequences describing each "
+#~ "face's coordinate and normal, and findAt"
+#~ "   returns a sequence of Face objects"
+#~ " at the given locations. If you "
+#~ "omit the **coordinates**   keyword argument,"
+#~ " you must also omit the **normal**"
+#~ " argument::      faces = f.findAt(((-16.438578,"
+#~ " -41.835673, -24.19804), ),                      "
+#~ "((25.210364, -35.689868, 1.860314), ),"
+#~ "                      ((26.727683, -38.207055, "
+#~ "4.164759), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. `findAt` returns "
+#~ "either a Face object or a sequence"
+#~ " of Face objects based on the "
+#~ "type of input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-components of "
+#~ "a vector indicating the face normal."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point::      >>> "
+#~ "r=f.getClosest(coordinates=((20.0, 20.0, 10.0), "
+#~ "(-1.0, -15.0, 15), ))     >>> r.keys()"
+#~ "     [0, 1]     >>> r[0]     "
+#~ "(mdb.models['Model-1'].parts['Part-1'].faces[0], "
+#~ "(15.7090625762939, 20.0, 10.0))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary object."
+#~ " The key to the dictionary object "
+#~ "is the position of the input point"
+#~ " in the tuple specified in the "
+#~ "**coordinates** starting at index 0. If"
+#~ " a closest face could be found "
+#~ "then the value is a sequence "
+#~ "consisting of two objects. The first "
+#~ "object in the sequence is a Face"
+#~ " that is close to the input "
+#~ "point referred to by the key. The"
+#~ " second object in the sequence is "
+#~ "a sequence of floats that specifies "
+#~ "the **X**-, **Y**-, and **Z**- location"
+#~ " of the closest point on the "
+#~ "Face to the given point. See "
+#~ "program listing above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `EdgeArray.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
+#~ "#simaker-edgearray__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. findAt returns "
+#~ "either an Edge object or a "
+#~ "sequence of Edge objects based on "
+#~ "the type of input.  * If "
+#~ "**coordinates** is a sequence of Floats,"
+#~ " findAt returns the Edge object at"
+#~ " that point.  * If you omit the"
+#~ " **coordinates** keyword argument, findAt "
+#~ "accepts as arguments a sequence   of "
+#~ "sequence of floats in the following "
+#~ "format::      edges = e.findAt(((20.19686, "
+#~ "-169.513997, 27.798593), ),                      "
+#~ "((19.657627, -167.295749, 27.056402), ),"
+#~ "                      ((18.274129, -157.144741, "
+#~ "25.15218), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. findAt returns "
+#~ "either an Edge object or a "
+#~ "sequence of Edge objects based on "
+#~ "the type of input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**- coordinates of a point::      >>>"
+#~ " r=e.getClosest(coordinates=((20.0, 20.0, 10.0), "
+#~ "(-1.0, -15.0, 15), ))     >>> r.keys()"
+#~ "     [0, 1]     >>> r[0]     "
+#~ "(mdb.models['Model-1'].parts['Part-1'].edges[3], "
+#~ "(15.7090625762939, 20.0, 10.0))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**- coordinates of a point::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary object."
+#~ " The key to the dictionary object "
+#~ "is the position of the input point"
+#~ " in the tuple specified in the "
+#~ "**coordinates** starting at index 0. If"
+#~ " a closest edge could be found "
+#~ "then the value is a sequence "
+#~ "consisting of two objects. The first "
+#~ "object in the sequence is an Edge"
+#~ " that is close to the input "
+#~ "point referred to by the key. The"
+#~ " second object in the sequence is "
+#~ "a sequence of floats that specifies "
+#~ "the **X**-, **Y**-, and **Z**- location"
+#~ " of the closest point on the "
+#~ "Edge to the given point. See "
+#~ "program listing above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the centroid of the face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple specifying the **X**-, **Y**-,"
+#~ " and **Z** coordinates of the point"
+#~ " where the curvature is desired. If"
+#~ " the **point** does not lie on "
+#~ "the face it will be projected onto"
+#~ " the face. This argument and "
+#~ "**uParam** and **vParam** are mutually "
+#~ "exclusive."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple specifying the **X**-, **Y**-,"
+#~ " and **Z** coordinates of the point"
+#~ " where the normal to the face "
+#~ "is desired. If the **point** does "
+#~ "not lie on the face it will "
+#~ "be projected onto the face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-components of "
+#~ "the normal to the face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of tuples of Floats "
+#~ "specifying the coordinates. For a face"
+#~ " of a shell **pointOn** specifies the"
+#~ " **X**-, **Y**-, and **Z**-coordinates of"
+#~ " a point located on the face "
+#~ "and the **X**-, **Y**-, and "
+#~ "**Z**-components of the normal to the"
+#~ " face.For a face of a solid "
+#~ "**pointOn** specifies the **X**-, **Y**-, "
+#~ "and **Z**-coordinates of a point located"
+#~ " on the face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point at which"
+#~ " the curvature is to be computed. "
+#~ "If **point** does not lie on the"
+#~ " IgnoredEdge an attempt is made to"
+#~ " project it onto the IgnoredEdge and"
+#~ " use the projected point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**- coordinates "
+#~ "of the object to find.findAt returns "
+#~ "either an IgnoredEdge object or a "
+#~ "sequence of IgnoredEdge objects based on"
+#~ " the type of input.  * If "
+#~ "**coordinates** is a sequence of Floats,"
+#~ " findAt returns the IgnoredEdge object "
+#~ "at that point.  * If you omit "
+#~ "the **coordinates** keyword argument, findAt"
+#~ " accepts as arguments a sequence   of"
+#~ " sequence of floats in the following"
+#~ " format::      ignoredEdges = "
+#~ "e.findAt(((20.19686, -169.513997, 27.798593), ),"
+#~ "                             ((19.657627, -167.295749, "
+#~ "27.056402), ),                             ((18.274129,"
+#~ " -157.144741, 25.15218), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**- coordinates "
+#~ "of the object to find.findAt returns "
+#~ "either an IgnoredEdge object or a "
+#~ "sequence of IgnoredEdge objects based on"
+#~ " the type of input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point::      >>> "
+#~ "r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, "
+#~ "-15.0, 15), ))     >>> r.keys()     [0,"
+#~ " 1]     >>> r[0]     "
+#~ "(mdb.models['Model-1'].parts['Part-1'].ignoredEdges[3], "
+#~ "(15.7090625762939, 20.0, 10.0))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary object."
+#~ " The key to the dictionary object "
+#~ "is the position of the input point"
+#~ " in the tuple specified in the "
+#~ "**coordinates** starting at index 0. If"
+#~ " a closest IgnoredEdge could be found"
+#~ " then the value is a sequence "
+#~ "consisting of two objects. The first "
+#~ "object in the sequence is an "
+#~ "IgnoredEdge that is close to the "
+#~ "input point referred to by the "
+#~ "key. The second object in the "
+#~ "sequence, is a sequence of floats "
+#~ "which specify the **X**-, **Y**-, and"
+#~ " **Z**- location of the closest point"
+#~ " on the IgnoredEdge to the given "
+#~ "point. See program listing above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A tuple of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the vertex."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a IgnoredVertex object or a sequence"
+#~ " of IgnoredVertex objects based on "
+#~ "the type of input.  * If "
+#~ "**coordinates** is a sequence of Floats,"
+#~ " findAt returns the IgnoredVertex object"
+#~ " at that point.  * If you omit"
+#~ " the **coordinates** keyword argument, "
+#~ "findAt accepts as arguments   a sequence"
+#~ " of sequence of floats in the "
+#~ "following format::      verts = "
+#~ "v.findAt(((20.19686, -169.513997, 27.798593), ),"
+#~ "                     ((19.657627, -167.295749, "
+#~ "27.056402), ),                     ((18.274129, "
+#~ "-157.144741, 25.15218), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a IgnoredVertex object or a sequence"
+#~ " of IgnoredVertex objects based on "
+#~ "the type of input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point::      >>> "
+#~ "r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, "
+#~ "-15.0, 15), ))     >>> r.keys()     [0,"
+#~ " 1]     >>> r[0]     "
+#~ "(mdb.models['Model-1'].parts['Part-1'].ignoredVertices[3], "
+#~ "(15.7090625762939, 20.0, 10.0))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary object."
+#~ " The key to the dictionary object "
+#~ "is the position of the input point"
+#~ " in the tuple specified in the "
+#~ "**coordinates** starting at index 0. If"
+#~ " a closest IgnoredVertex could be "
+#~ "found then the value is a sequence"
+#~ " consisting of two objects. The first"
+#~ " object in the sequence is a "
+#~ "IgnoredVertex that is close to the "
+#~ "input point referred to by the "
+#~ "key. The second object in the "
+#~ "sequence, is a sequence of floats "
+#~ "which specify the **X**-, **Y**-, and"
+#~ " **Z**- location of the IgnoredVertex. "
+#~ "See program listing above."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `ReferencePoint.__init__ on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all"
+#~ "#simaker-referencepoint__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A ConstrainedSketchVertex, InterestingPoint, a "
+#~ "MeshNode, or a Datum object specifying"
+#~ " a reference point. **point** can "
+#~ "also be a sequence of three Floats"
+#~ " representing the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of the point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The MakeSketchTransform method creates a "
+#~ "Transform object. The Transform object "
+#~ "has no direct constructor. A Transform"
+#~ " object is a 4×3 matrix of "
+#~ "Floats that represents the transformation "
+#~ "from sketch coordinates to assembly "
+#~ "coordinates or to part coordinates."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `VertexArray.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
+#~ "#simaker-vertexarray__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a ConstrainedSketchVertex object or a "
+#~ "sequence of ConstrainedSketchVertex objects "
+#~ "based on the type of input.  * "
+#~ "If **coordinates** is a sequence of "
+#~ "Floats, findAt returns the "
+#~ "ConstrainedSketchVertex object at that point."
+#~ "  * If you omit the **coordinates**"
+#~ " keyword argument, findAt accepts as "
+#~ "arguments a sequence of sequence   of"
+#~ " floats in the following format::      "
+#~ "verts = v.findAt(((20.19686, -169.513997, "
+#~ "27.798593), ),                     ((19.657627, "
+#~ "-167.295749, 27.056402), ),                     "
+#~ "((18.274129, -157.144741, 25.15218), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a ConstrainedSketchVertex object or a "
+#~ "sequence of ConstrainedSketchVertex objects "
+#~ "based on the type of input."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of a sequence of "
+#~ "floats, where each sequence of floats"
+#~ " describes the **X**-, **Y**-, and "
+#~ "**Z**-coordinates of a point::      >>> "
+#~ "r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, "
+#~ "-15.0, 15), ))     >>> r.keys()     [0,"
+#~ " 1]     >>> r[0]     "
+#~ "(mdb.models['Model-1'].parts['Part-1'].vertices[0], "
+#~ "(15.7090625762939, 29.1666641235352, 20.0))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns a dictionary object."
+#~ " The key to the dictionary object "
+#~ "is the position of the input point"
+#~ " in the tuple specified in the "
+#~ "**coordinates** starting at index 0. If"
+#~ " a closest vertex could be found "
+#~ "then the value is a sequence "
+#~ "consisting of two objects. The first "
+#~ "object in the sequence is a "
+#~ "ConstrainedSketchVertex that is close to "
+#~ "the input point referred to by the"
+#~ " key. The second object in the "
+#~ "sequence is a sequence of floats "
+#~ "that specifies the **X**-, **Y**-, and"
+#~ " **Z**- location of the "
+#~ "ConstrainedSketchVertex. See program listing "
+#~ "above."
 #~ msgstr ""
 
