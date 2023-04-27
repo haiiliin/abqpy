@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../reference/session/plot_options.md:1
 msgid "Plot Options"
@@ -747,7 +747,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
+#: abaqus.PlotOptions.OptionArg.OptionArg
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues of
@@ -942,7 +942,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
+#: abaqus.PlotOptions.OptionArg.OptionArg
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues of
 msgid "Raises"
 msgstr ""
@@ -1024,7 +1024,7 @@ msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint.constraintData
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
+#: abaqus.PlotOptions.OptionArg.OptionArg
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData of
 msgid "Return type"
@@ -1088,7 +1088,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.colorCodeOverride:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.colorCodeOverride:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.colorCodeOverride:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:31
+#: abaqus.PlotOptions.OptionArg.OptionArg:49
 #: abaqus.PlotOptions.OptionArg.OptionArg.colorCodeOverride:1 of
 msgid ""
 "A Boolean specifying whether to allow color coded items in the output "
@@ -1141,7 +1141,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.edgeLineStyle:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.edgeLineStyle:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.edgeLineStyle:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:25
+#: abaqus.PlotOptions.OptionArg.OptionArg:43
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeLineStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.edgeStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:12 of
@@ -1154,7 +1154,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.edgeLineThickness:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.edgeLineThickness:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.edgeLineThickness:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:28
+#: abaqus.PlotOptions.OptionArg.OptionArg:46
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeLineThickness:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.edgeThickness:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:15 of
@@ -1349,7 +1349,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.translucency:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.translucency:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.translucency:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:37
+#: abaqus.PlotOptions.OptionArg.OptionArg:55
 #: abaqus.PlotOptions.OptionArg.OptionArg.translucency:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:50
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.translucency:1 of
@@ -1676,7 +1676,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.fillColor:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:34
+#: abaqus.PlotOptions.OptionArg.OptionArg:52
 #: abaqus.PlotOptions.OptionArg.OptionArg.fillColor:1 of
 msgid ""
 "A String specifying the color to be used to fill elements when "
@@ -1765,7 +1765,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.renderStyle:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:12
+#: abaqus.PlotOptions.OptionArg.OptionArg:30
 #: abaqus.PlotOptions.OptionArg.OptionArg.renderStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the render style of the plot. Possible "
@@ -1775,7 +1775,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.visibleEdges:1
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:15
+#: abaqus.PlotOptions.OptionArg.OptionArg:33
 #: abaqus.PlotOptions.OptionArg.OptionArg.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
@@ -2747,7 +2747,7 @@ msgid "This method returns constraint data if any are associated with the object
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
+#: abaqus.PlotOptions.OptionArg.OptionArg
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData of
 msgid "Returns"
@@ -3259,7 +3259,7 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:4 of
 msgid ""
-"Check `Step.setValues on help.3ds.com/2021 "
+"Check `OdbDataStep.setValues on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
 "#simaker-stepsetvaluespyc>`__."
 msgstr ""
@@ -3555,7 +3555,7 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData:5 of
 msgid ""
-"Check `Step.extractData on help.3ds.com/2021 "
+"Check `OdbDiagnosticStep.extractData on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
 "#simaker-stepextractdatapyc>`__."
 msgstr ""
@@ -3933,22 +3933,15 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:1 of
+#: abaqus.PlotOptions.OptionArg.OptionArg:22 of
 msgid "This method creates an OptionArg object."
 msgstr ""
 
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:4 of
+#: abaqus.PlotOptions.OptionArg.OptionArg:25 of
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:9 of
-msgid ""
-"Check `OptionArg.__init__ on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all"
-"#simaker-optionarg__init__pyc>`__."
-msgstr ""
-
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:19
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg:37
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeColorWireHide:1 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the "
@@ -3956,7 +3949,7 @@ msgid ""
 "value is \"Green\"."
 msgstr ""
 
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:22
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg:40
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeColorFillShade:1 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the "
@@ -3964,7 +3957,7 @@ msgid ""
 "value is \"Black\"."
 msgstr ""
 
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:39
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg:57
 #: abaqus.PlotOptions.OptionArg.OptionArg.translucencyFactor:1 of
 msgid ""
 "A Float specifying the translucency factor when **translucency** = ON. "
@@ -3972,11 +3965,11 @@ msgid ""
 " is 0.3."
 msgstr ""
 
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:42 of
+#: abaqus.PlotOptions.OptionArg.OptionArg:60 of
 msgid "An OptionArg object."
 msgstr ""
 
-#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:43 of
+#: abaqus.PlotOptions.OptionArg.OptionArg:61 of
 msgid ":class:`OptionArg`"
 msgstr ""
 
@@ -9243,5 +9236,23 @@ msgstr ""
 #~ ":py:obj:`setValues "
 #~ "<abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues>`\\ "
 #~ "\\(\\[options\\, belowOptions\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Step.setValues on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+#~ "#simaker-stepsetvaluespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Step.extractData on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+#~ "#simaker-stepextractdatapyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `OptionArg.__init__ on help.3ds.com/2021 "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all"
+#~ "#simaker-optionarg__init__pyc>`__."
 #~ msgstr ""
 
