@@ -1,0 +1,37 @@
+{
+  "writeKey": "a7817368190118144594-2a5faafcb358a6d5c3bf673b46e6edc57882b5e8f5a5d7452f0924b86abe809e",
+  "readKey": "a7817368190118144594-b8063e44917d8012696770787f948f6d6dfef625ffb285b740e5930aa4e2836f",
+
+  "upload": {
+    "type": "pot",
+    "files": [
+      {
+        "pattern": "pot/**.pot",
+        "file":"${prefix}--${file}"
+      }
+    ]
+  },
+
+  "download": {
+    "files": {
+      "output": "${languageCode}_${regionCode}/LC_MESSAGES/${filepath}"
+    }
+  },
+
+  "transformations": [
+    {
+      "name": "prefix",
+      "source": "${path}",
+      "operations": "replace: /, --"
+    },
+    {
+      "name": "filepath",
+      "source": "${file}",
+      "operations": [
+        "replace: pot--,",
+        "replace: --, /",
+        "replace: .pot, .po"
+      ]
+    }
+  ]
+}
