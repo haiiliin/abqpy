@@ -1,0 +1,2633 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2017\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../reference/mdb/model/part_assembly/assembly.md:1
+msgid "Assembly"
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/assembly.md:3
+msgid ""
+"Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly "
+"operations. Assembly commands create Feature objects on only the "
+"rootAssembly object. The commands that create Feature objects on only the"
+" Part object are described in Part commands. The commands that create "
+"Feature objects on both the Part and the rootAssembly objects are "
+"described in Feature commands."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/assembly.md:5
+msgid "Create instances"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyModel.ModelBase`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel:1 of
+msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly:6
+#: abaqus.Assembly.AssemblyBase.AssemblyBase:6
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature:5
+#: abaqus.Assembly.AssemblyModel.AssemblyModel:4
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:5
+#: abaqus.Assembly.ModelInstance.ModelInstance:4
+#: abaqus.Assembly.PartInstance.PartInstance:4 of
+msgid "This object can be accessed by::"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel:9 of
+msgid ""
+"Check `AssemblyModel on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`Instance "
+"<abaqus.Assembly.AssemblyModel.AssemblyModel.Instance>`\\ \\(name\\, "
+"objectToCopy\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:1 of
+msgid ""
+"This method copies a PartInstance object from the specified model and "
+"creates a new PartInstance object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`convertAllSketches "
+"<abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches>`\\ "
+"\\(\\[regenerate\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:1 of
+msgid ""
+"This method converts all sketches from Abaqus 6.5 or earlier to the "
+"equivalent ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`linkInstances "
+"<abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances>`\\ "
+"\\(instancesMap\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+"This method links the selected PartInstance objects to the corresponding "
+"PartInstance objects from the specified models."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly:1
+#: abaqus.Assembly.AssemblyBase.AssemblyBase:1
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature:1
+#: abaqus.Assembly.AssemblyModel.AssemblyModel:1
+#: abaqus.Assembly.AssemblyModel.ModelBase:1
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:1
+#: abaqus.Assembly.ModelInstance.Model:1
+#: abaqus.Assembly.ModelInstance.ModelInstance:1
+#: abaqus.Assembly.PartInstance.PartInstance:1 of
+msgid "Member Details:"
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:4
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:4
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:10
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:5
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:5
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:5
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:18
+#: abaqus.Assembly.ModelInstance.ModelInstance:15
+#: abaqus.Assembly.PartInstance.PartInstance:16
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:5
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:5
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:5
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:5 of
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:10 of
+msgid ""
+"Check `Instance on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instanceasmpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.translate
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
+#: abaqus.Assembly.ModelInstance.ModelInstance
+#: abaqus.Assembly.ModelInstance.ModelInstance.translate
+#: abaqus.Assembly.PartInstance.PartInstance
+#: abaqus.Assembly.PartInstance.PartInstance.Contact
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry
+#: abaqus.Assembly.PartInstance.PartInstance.replace
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis
+#: abaqus.Assembly.PartInstance.PartInstance.translate
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:13 of
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:15 of
+msgid "A PartInstance object to be copied."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
+#: abaqus.Assembly.ModelInstance.ModelInstance
+#: abaqus.Assembly.PartInstance.PartInstance
+#: abaqus.Assembly.PartInstance.PartInstance.Contact
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.getRotation
+#: abaqus.Assembly.PartInstance.PartInstance.getTranslation
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:17 of
+msgid "A Model object."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
+#: abaqus.Assembly.ModelInstance.ModelInstance
+#: abaqus.Assembly.PartInstance.PartInstance
+#: abaqus.Assembly.PartInstance.PartInstance.Contact
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern
+#: abaqus.Assembly.PartInstance.PartInstance.getRotation
+#: abaqus.Assembly.PartInstance.PartInstance.getTranslation
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:18 of
+msgid ":class:`Model`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:5 of
+msgid ""
+"Check `AssemblyModel.convertAllSketches on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all"
+"#simaker-modelconvertallsketchespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:8 of
+msgid ""
+"A Boolean specifying if all the features in assembly as well as in all "
+"the parts in the model should be regenerated after the conversion. The "
+"default value is True."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:11 of
+msgid ""
+"A Boolean specifying whether sketches in analytic rigid parts should be "
+"converted even if they cause the orientation of surfaces defined on them "
+"to be flipped. The default value is True."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:15
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:13 of
+msgid ""
+"A list of strings describing any warnings or errors encountered during "
+"the conversion process."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:17
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:15 of
+msgid ":class:`List[str]`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:1 of
+msgid ""
+"This method links the selected PartInstance objects to the corresponding "
+"PartInstance objects from the specified models. If all instances of a "
+"Part are selected for linking, the Part will be linked as well. If not, a"
+" new linked child Part object will be created and added to the "
+"repository."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:7 of
+msgid ""
+"Check `AssemblyModel.linkInstances on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all"
+"#simaker-modellinkinstancespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:10 of
+msgid ""
+"A tuple of tuples containing the instance name to be linked and the "
+"corresponding PartInstance object to which it will be linked."
+msgstr ""
+
+#: ../../reference/mdb/model/part_assembly/assembly.md:16
+msgid "Other Classes"
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly:1 of
+msgid ""
+"Bases: :py:class:`~abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly`, "
+":py:class:`~abaqus.Mesh.MeshAssembly.MeshAssembly`, "
+":py:class:`~abaqus.Property.PropertyAssembly.PropertyAssembly`, "
+":py:class:`~abaqus.Region.RegionAssembly.RegionAssembly`, "
+":py:class:`~abaqus.Canvas.Displayable.Displayable`"
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly:1
+#: abaqus.Assembly.AssemblyBase.AssemblyBase:1 of
+msgid ""
+"An Assembly object is a container for instances of parts. The Assembly "
+"object has no constructor command. Abaqus creates the **rootAssembly** "
+"member when a Model object is created."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly:12 of
+msgid ""
+"Check `Assembly on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:1
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:15 of
+msgid "This method creates a ConnectorOrientation object."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:10
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:13 of
+msgid ""
+"Check `ConnectorOrientation on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectororientationpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:13
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:24
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.region:1 of
+msgid "A Set object specifying the region to which the orientation is assigned."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:15
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:26
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.localCsys1:1
+#: of
+msgid ""
+"A DatumCsys object specifying the local coordinate system of the first "
+"connector point. This value may be None, indicating the global coordinate"
+" system."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:18
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:30
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:29
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:41
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.axis1:1
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.axis2:1 of
+msgid ""
+"A SymbolicConstant specifying the axis of a datum coordinate system about"
+" which an additional rotation is applied. Possible values are AXIS_1, "
+"AXIS_2, and AXIS_3. The default value is AXIS_1."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:22
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:34
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:33
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:45
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.angle1:1
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.angle2:1 of
+msgid ""
+"A Float specifying the angle of the additional rotation. The default "
+"value is 0.0."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:24
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:35
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.orient2sameAs1:1
+#: of
+msgid ""
+"A Boolean specifying whether or not the second connector point is to use "
+"the same local coordinate system, axis, and angle as the first point. The"
+" default value is ON."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:27
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:38
+#: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientation.localCsys2:1
+#: of
+msgid ""
+"A DatumCsys object specifying the local coordinate system of the second "
+"connector point. This value may be None, indicating the global coordinate"
+" system."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:36
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:47 of
+msgid "A ConnectorOrientation object."
+msgstr ""
+
+#: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:37
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:48 of
+msgid ":class:`ConnectorOrientation`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyModel.ModelBase:1
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:1
+#: abaqus.Assembly.ModelInstance.Model:1
+#: abaqus.Assembly.ModelInstance.ModelInstance:1
+#: abaqus.Assembly.PartInstance.PartInstance:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:1 of
+msgid ""
+"The ConnectorOrientation object is used to assign a connector orientation"
+" to a connector."
+msgstr ""
+
+#: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.setValues:1 of
+msgid "This method modifies the ConnectorOrientation object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyFeature.AssemblyFeature`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase:12 of
+msgid ""
+"Check `AssemblyBase on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:1
+#: abaqus.Assembly.PartInstance.PartInstance:13 of
+msgid ""
+"This method creates a PartInstance object and puts it into the instances "
+"repository."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:9 of
+msgid ""
+"Check `Instance on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instancepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:12
+#: abaqus.Assembly.PartInstance.PartInstance:21
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:13
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:13
+#: abaqus.Assembly.PartInstanceArray.PartInstance.name:1 of
+msgid ""
+"A String specifying the repository key. The name must be a valid Abaqus "
+"object name."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:14 of
+msgid "Key-value arguments"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:16
+#: abaqus.Assembly.PartInstance.PartInstance:32
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:24
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:41 of
+msgid "A PartInstance object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:17
+#: abaqus.Assembly.PartInstance.PartInstance:33
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:25
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:42 of
+msgid ":class:`PartInstance`"
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances:1 of
+msgid ""
+"A PartInstance object specifying the PartInstances and A ModelInstance "
+"object specifying the ModelInstances."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets:1
+#: of
+msgid "A repository of Set objects specifying picked regions."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces:1 of
+msgid "A repository of Surface objects specifying picked regions."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.allSets:1 of
+msgid ""
+"A repository of Set objects specifying for more information, see [Region "
+"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
+"-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces:1
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces:1 of
+msgid ""
+"A repository of Surface objects specifying for more information, see "
+"[Region "
+"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
+"-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.backup:1 of
+msgid ""
+"This method makes a backup copy of the features in the assembly. The "
+"backup() method is used in conjunction with the restore() method."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.clearGeometryCache:1 of
+msgid ""
+"This method deletes the geometry cache. Deleting the geometry cache "
+"reduces the amount of memory being used."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations:1 of
+msgid "A ConnectorOrientationArray object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:1 of
+msgid ""
+"This method copies a mesh pattern from a source region consisting of a "
+"set of shell elements or element faces onto a target face, mapping nodes "
+"and elements in a one-one correspondence between source and target."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:6 of
+msgid ""
+"Check `AssemblyBase.copyMeshPattern on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblycopymeshpatternpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:9 of
+msgid ""
+"A sequence of MeshElement objects or a Set object containing elements and"
+" specifying the source region."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:12 of
+msgid ""
+"A sequence of Face objects that have associated with shell elements or "
+"element faces and specifying the source region."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:15 of
+msgid "A sequence of MeshFace objects specifying the source region."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:17 of
+msgid ""
+"A MeshFace object specifying the target region. The target face can be of"
+" a different part instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:20 of
+msgid ""
+"A sequence of MeshNode objects or a Set object containing nodes on the "
+"boundary of source region which are to be positioned to the boundary of "
+"target face."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:23 of
+msgid ""
+"A sequence of three-dimensional coordinate tuples specifying the "
+"coordinates for each of the given nodes. When specified, the number of "
+"coordinate tuples must match the number of given nodes, and be ordered to"
+" correspond to the given nodes in *ascending order* according to index. "
+"These coordinates are positions of the nodes of a mesh that will be the "
+"target face corresponding to nodes provided."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.datums:1 of
+msgid ""
+"A repository of Datum objects specifying all Datum objects in the "
+"assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteAllFeatures:1 of
+msgid "This method deletes all the features in the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures:1 of
+msgid "This method deletes specified features from the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures:4 of
+msgid ""
+"Check `AssemblyBase.deleteFeatures on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblydeletefeaturespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures:7 of
+msgid ""
+"A sequence of Strings specifying the feature names that will be deleted "
+"from the assembly."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.edges:1 of
+msgid ""
+"An EdgeArray object specifying all the edges existing at the assembly "
+"level. This member does not provide access to the edges at the instance "
+"level."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.elements:1 of
+msgid ""
+"A MeshElementArray object specifying all the elements existing at the "
+"assembly level. This member does not provide access to the elements at "
+"the instance level."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures:1 of
+msgid "An EngineeringFeature object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:1 of
+msgid "This method excludes the specified part instances from the analysis."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:4 of
+msgid ""
+"Check `AssemblyBase.excludeFromSimulation on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyexcludefromsimulationpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:7 of
+msgid "A sequence of PartInstance objects to be excluded from the analysis."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:9 of
+msgid ""
+"A Bool specifying whether to exclude the selected instances from the "
+"analysis or include them."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.featurelistInfo:1 of
+msgid ""
+"This method prints the name and status of all the features in the feature"
+" lists."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.features:1 of
+msgid ""
+"A repository of Feature objects specifying all Feature objects in the "
+"assembly."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById:1 of
+msgid ""
+"A repository of Feature objects specifying all Feature objects in the "
+"assembly.The Feature objects in the featuresById repository are the same "
+"as the Feature objects in the features repository. However, the key to "
+"the objects in the featuresById repository is an integer specifying the "
+"**ID**, whereas the key to the objects in the features repository is a "
+"string specifying the **name**."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:1 of
+msgid "This method returns the angle between the specified entities."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:4 of
+msgid ""
+"Check `AssemblyBase.getAngle on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetanglepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:7 of
+msgid ""
+"A Face, MeshFace, or a Datum object specifying the first plane. The Datum"
+" object must represent a datum plane. The **plane1** and **line1** "
+"arguments are mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:11 of
+msgid ""
+"A Face, MeshFace, or a Datum object specifying the second plane. The "
+"Datum object must represent a datum plane. The **plane2** and **line2** "
+"arguments are mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:15 of
+msgid ""
+"An Edge, MeshEdge, or a Datum object specifying the first curve. The "
+"Datum object must represent a datum axis. The **plane1** and **line1** "
+"arguments are mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:19 of
+msgid ""
+"An Edge, MeshEdge, or a Datum object specifying the second curve. The "
+"Datum object must represent a datum axis. The **plane2** and **line2** "
+"arguments are mutually exclusive. One of them must be specified."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:23 of
+msgid ""
+"If the two selected Edge objects have more than one vertex in common, "
+"this ConstrainedSketchVertex object specifies the vertex at which to "
+"evaluate the angle."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:26 of
+msgid ""
+"A Float specifying the angle between the specified entities. If you "
+"provide a plane as an argument, Abaqus/CAE computes the angle using the "
+"normal to the plane."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:28
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:20 of
+msgid ":class:`float`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:1 of
+msgid "This method returns the coordinates of a specified point."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:4 of
+msgid ""
+"Check `AssemblyBase.getCoordinates on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetcoordinatespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:7 of
+msgid ""
+"A ConstrainedSketchVertex, Datum point, MeshNode, or ReferencePoint "
+"specifying the entity to query."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:9 of
+msgid ""
+"A tuple of three Floats representing the coordinates of the specified "
+"point."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:10 of
+msgid ":class:`Tuple[float`, :class:`float]`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:1 of
+msgid ""
+"Depending on the arguments provided, this method returns one of the "
+"following:"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:3 of
+msgid "The distance between two points."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:4 of
+msgid "The minimum distance between a point and an edge."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:5 of
+msgid "The minimum distance between two edges."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:8 of
+msgid ""
+"Check `AssemblyBase.getDistance on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetdistancepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:11 of
+msgid ""
+"A ConstrainedSketchVertex, Datum point, MeshNode, or Edge specifying the "
+"first entity from which to measure."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:14 of
+msgid ""
+"A ConstrainedSketchVertex, Datum point, MeshNode, or Edge specifying the "
+"second entity to which to measure."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:17 of
+msgid ""
+"A Boolean that determines whether a verbose output is to be printed. The "
+"default is True"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:19 of
+msgid "A Float specifying the calculated distance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:1
+#: of
+msgid ""
+"Given an array of edge objects, this method returns a tuple of dictionary"
+" objects. Each object consists of five members including the attachment "
+"line and associated face and vertex objects."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:6
+#: of
+msgid ""
+"Check `AssemblyBase.getFacesAndVerticesOfAttachmentLines on "
+"help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetfacesandverticesofattachmentlinespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:9
+#: of
+msgid "An EdgeArray object which is a sequence of Edge objects."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:11
+#: of
+msgid ""
+"A tuple of dictionary objects. Each dictionary contains five items with "
+"the following keys:  - **edge**: An Edge object specifying the attachment"
+" line. - **startFace**: A Face object specifying the face associated with"
+" one end of the   attachment line. - **endFace**: A Face object "
+"specifying the face associated with the other end of   the attachment "
+"line. - **startVertex**: A ConstrainedSketchVertex   object specifying "
+"the vertex associated with one end of the attachment line. This end is "
+"also associated with the startFace. - **endVertex**: A "
+"ConstrainedSketchVertex   object specifying the vertex associated with "
+"the other end of the attachment line. This end is also associated with "
+"the endFace."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:11
+#: of
+msgid ""
+"A tuple of dictionary objects. Each dictionary contains five items with "
+"the following keys:"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:13
+#: of
+msgid "**edge**: An Edge object specifying the attachment line."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:14
+#: of
+msgid ""
+"**startFace**: A Face object specifying the face associated with one end "
+"of the attachment line."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:16
+#: of
+msgid ""
+"**endFace**: A Face object specifying the face associated with the other "
+"end of the attachment line."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:18
+#: of
+msgid ""
+"**startVertex**: A ConstrainedSketchVertex object specifying the vertex "
+"associated with one end of the attachment line. This end is also "
+"associated with the startFace."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:20
+#: of
+msgid ""
+"**endVertex**: A ConstrainedSketchVertex object specifying the vertex "
+"associated with the other end of the attachment line. This end is also "
+"associated with the endFace."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
+#: of
+msgid ":class:`Sequence[dict]`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:1 of
+msgid ""
+"This method returns the mass properties of the assembly, or instances or "
+"regions. Only beams, trusses, shells, solids, point, nonstructural mass, "
+"and rotary inertia elements are supported."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:6 of
+msgid ""
+"Check `AssemblyBase.getMassProperties on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetmasspropertiespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:9 of
+msgid ""
+"A MeshElementArray, CellArray, FaceArray, EdgeArray, or list of "
+"PartInstance objects specifying the regions whose mass properties are to "
+"be queried. The whole assembly is queried by default."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:13 of
+msgid ""
+"A SymbolicConstant specifying the relative accuracy for geometry "
+"computation. Possible values are LOW, MEDIUM, and HIGH. The default value"
+" is LOW."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:16 of
+msgid ""
+"A Boolean specifying whether the mesh should be used in the computation "
+"if the geometry is meshed. The default value is False."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:19 of
+msgid ""
+"A Boolean specifying whether a user-specified density should be used in "
+"regions with density errors such as undefined material density. The "
+"default value is False."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:22 of
+msgid ""
+"A double value specifying the user-specified density value to be used in "
+"regions with density errors. The user-specified density should be greater"
+" than 0."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:25 of
+msgid ""
+"A Boolean specifying whether a user-specified thickness should be used in"
+" regions with thickness errors such as undefined thickness. The default "
+"value is False."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:28 of
+msgid ""
+"A double value specifying the user-specified thickness value to be used "
+"in regions with thickness errors. The user-specified thickness should be "
+"greater than 0."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:31 of
+msgid ""
+"A Boolean specifying if the moments of inertia should be evaluated about "
+"the center of mass. The default value is True."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:34 of
+msgid ""
+"A tuple of three floats specifying the coordinates of the point about "
+"which to evaluate the moment of inertia. By default if the moments of "
+"inertia are not being evaluated about the center of mass, they will be "
+"evaluated about the origin."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:38 of
+msgid ""
+"**properties** -- A Dictionary object with the following items: **area**:"
+" None or a Float specifying the sum of the area of the specified faces. "
+"The area is computed only for one side for shells. **areaCentroid**: None"
+" or a tuple of three Floats representing the coordinates of the area "
+"centroid. **volume**: None or a Float specifying the volume of the "
+"specified regions. **volumeCentroid**: None or a tuple of three Floats "
+"representing the coordinates of the volume centroid. "
+"**massFromMassPerUnitSurfaceArea**: None or a Float specifying the mass "
+"due to mass per unit surface area. **mass**: None or a Float specifying "
+"the mass of the specified regions. It is the total mass and includes mass"
+" from quantities such as mass per unit surface area. **centerOfMass**: "
+"None or a tuple of three Floats representing the coordinates of the "
+"center of mass. **momentOfInertia**: None or a tuple of six Floats "
+"representing the moments of inertia about the center of mass or about the"
+" point specified. **warnings**: A tuple of SymbolicConstants representing"
+" the problems encountered while computing the mass properties. Possible "
+"SymbolicConstants are: UNSUPPORTED_ENTITIES: Some unsupported entities "
+"exist in the specified regions. The mass properties are computed only for"
+" beams, trusses, shells, solids, point and non-structural mass elements, "
+"and rotary inertia elements. The mass properties are not computed for "
+"axisymmetric elements, springs, connectors, gaskets, or any other "
+"elements. MISSING_THICKNESS: For some regions, the section definitions "
+"are missing thickness values. ZERO_THICKNESS: For some regions, the "
+"section definitions have a zero thickness value. VARIABLE_THICKNESS: The "
+"nodal thickness or field thickness specified for some regions has been "
+"ignored. NON_APPLICABLE_THICKNESS: For some regions, the thickness value "
+"is not applicable to the corresponding sections specified on the regions."
+" MISSING_DENSITY: For some regions, the section definitions are missing "
+"material density values. MISSING_MATERIAL_DEFINITION: For some regions, "
+"the material definition is missing. ZERO_DENSITY: For some regions, the "
+"section definitions have a zero material density value. "
+"UNSUPPORTED_DENSITY: For some regions, either a negative material density"
+" or a temperature dependent density has been specified, or the material "
+"value is missing for one or more plies in the composite section. "
+"SHELL_OFFSETS: For shells, this method does not account for any offsets "
+"specified. MISSING_SECTION_DEFINITION: For some regions, the section "
+"definition is missing. UNSUPPORTED_SECTION_DEFINITION: The section "
+"definition provided for some regions is not supported. REINFORCEMENTS: "
+"This method does not account for any reinforcements specified on the "
+"model. SMEARED_PROPERTIES: For regions with composite section "
+"assignments, the density is smeared across the thickness. The volume "
+"centroid and center of mass computations for a composite shell use a "
+"lumped mass approach where the volume and mass is assumed to be lumped in"
+" the plane of the shell. As a result of these approximations the volume "
+"centroid, center of mass and moments of inertia may be slightly "
+"inaccurate for regions with composite section assignments. "
+"UNSUPPORTED_NON_STRUCTURAL_MASS_ENTITIES: This method does not account "
+"for any non-structural mass on wires. INCORRECT_MOMENT_OF_INERTIA: For "
+"geometry regions with non-structural mass per volume, the non-structural "
+"mass is assumed to be a point mass at the centroid of the regions. Thus, "
+"the moments of inertia may be inaccurate as the distribution of the non-"
+"structural mass is not accounted for. Use the mesh for accurately "
+"computing the moments of inertia. MISSING_BEAM_ORIENTATIONS: For some "
+"regions with beam section assignments, the beam section orientations are "
+"missing. UNSUPPORTED_BEAM_PROFILES: This method supports the Box, Pipe, "
+"Circular, Rectangular, Hexagonal, Trapezoidal, I, L, T, Arbitrary, and "
+"Tapered beam profiles. Any other beam profile is not supported. "
+"TAPERED_BEAM_MI: Moment of inertia calculations for tapered beams are not"
+" accurate. SUBSTRUCTURE_INCORRECT_PROPERTIES: The user assigned density "
+"and thickness is not considered for substructures."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:101 of
+msgid ":class:`dict`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:1 of
+msgid ""
+"This method returns a list of the sections assigned to the regions "
+"encompassed by the specified surface."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:5 of
+msgid ""
+"Check `AssemblyBase.getSurfaceSections on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblygetsurfacesectionspyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:8 of
+msgid "A string specifying the Surface name."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:10 of
+msgid ""
+"A tuple of strings representing the section names. If no section names "
+"are found, the tuple will contain one empty string."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:12 of
+msgid ":class:`Sequence[str]`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File:1 of
+msgid ""
+"This method imports an assembly from a CATIA V5 Elysium Neutral file into"
+" the root assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File:5 of
+msgid ""
+"Check `AssemblyBase.importCatiaV5File on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimportcatiav5filepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File:8 of
+msgid ""
+"A String specifying the path to the CATIA V5 Elysium Neutral file from "
+"which to import the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File:11
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile:9
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile:11
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile:11
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile:9
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile:11 of
+msgid ""
+"A sequence of Ints. Each Int in the sequence is a unique identifier of "
+"the occurrence in the assembly tree or component identifier associated "
+"with the part in the EAF file. If **ids** is an empty sequence, all "
+"occurrences or parts will be imported. The default value is an empty "
+"sequence."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile:1 of
+msgid "This method imports an assembly from an EAF file into the root assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile:4 of
+msgid ""
+"Check `AssemblyBase.importEafFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimporteaffilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile:7 of
+msgid ""
+"A String specifying the path to the EAF file from which to import the "
+"assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile:1 of
+msgid ""
+"This method imports an assembly from an Elysium Neutral file created by "
+"Pro/ENGINEER, I-DEAS, or CATIA V5 into the root assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile:5 of
+msgid ""
+"Check `AssemblyBase.importEnfFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimportenffilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile:8 of
+msgid ""
+"A String specifying the path to the Elysium Neutral file from which to "
+"import the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile:1 of
+msgid ""
+"This method imports an assembly from an I-DEAS Elysium Neutral file into "
+"the root assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile:5 of
+msgid ""
+"Check `AssemblyBase.importIdeasFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimportideasfilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile:8 of
+msgid ""
+"A String specifying the path to the I-DEAS Elysium Neutral file from "
+"which to import the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile:1 of
+msgid ""
+"This method imports an assembly from the Parasolid file into the root "
+"assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile:4 of
+msgid ""
+"Check `AssemblyBase.importParasolidFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimportparasolidfilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile:7 of
+msgid ""
+"A String specifying the path to a Parasolid file from which to import the"
+" assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile:1 of
+msgid ""
+"This method imports an assembly from a Pro/ENGINEER Elysium Neutral file "
+"into the root assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile:5 of
+msgid ""
+"Check `AssemblyBase.importProEFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyimportproefilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile:8 of
+msgid ""
+"A String specifying the path to the Pro/ENGINEER Elysium Neutral file "
+"from which to import the assembly."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.instances:1 of
+msgid "A repository of PartInstance objects."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked:1 of
+msgid ""
+"An Int specifying whether the assembly is locked or not. Possible values "
+"are 0 and 1."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate:1 of
+msgid ""
+"An Int specifying that feature parameters have been modified but that the"
+" assembly has not been regenerated. Possible values are 0 and 1."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.lock:1 of
+msgid ""
+"This method locks the assembly. Locking the assembly prevents any further"
+" changes to the assembly that can trigger regeneration of the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent:1 of
+msgid ""
+"This method converts the specified part instances from independent to "
+"dependent part instances."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent:5 of
+msgid ""
+"Check `AssemblyBase.makeDependent on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblymakedependentpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent:8 of
+msgid "A sequence of PartInstance objects to convert to dependent part instances."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent:1 of
+msgid ""
+"This method converts the specified part instances from dependent to "
+"independent part instances."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent:5 of
+msgid ""
+"Check `AssemblyBase.makeIndependent on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblymakeindependentpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent:8 of
+msgid ""
+"A sequence of PartInstance objects to convert to independent part "
+"instances."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances:1
+#: of
+msgid "A repository of ModelInstance objects."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.modelName:1 of
+msgid "A String specifying the name of the model to which the assembly belongs."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.nodes:1 of
+msgid ""
+"A MeshNodeArray object specifying all the nodes existing at the assembly "
+"level. This member does not provide access to the nodes at the instance "
+"level."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.printAssignedSections:1 of
+msgid "This method prints a summary of assigned connector sections."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations:1 of
+msgid "This method prints a summary of connector orientations."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:1 of
+msgid ""
+"This method projects the specified edges, vertices, and datum points from"
+" the assembly onto the specified ConstrainedSketch object. The edges, "
+"vertices, and datum points appear on the sketch as reference geometry."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:6 of
+msgid ""
+"Check `AssemblyBase.projectReferencesOntoSketch on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyprojectreferencesontosketchpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:9 of
+msgid ""
+"The ConstrainedSketch object on which the edges, vertices, and datum "
+"points are projected."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:12 of
+msgid ""
+"A SymbolicConstant specifying how to limit the amount of projection. "
+"Possible values are ALL_EDGES and COPLANAR_EDGES. If **filter** = "
+"COPLANAR_EDGES, edges that are coplanar to the sketching plane are the "
+"only candidates for projection. The default value is ALL_EDGES."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:16 of
+msgid ""
+"A Feature object specifying a marker in the feature-based history of the "
+"part. Abaqus/CAE projects onto the sketch only the part entities that "
+"were created before the feature specified by this marker. By default, all"
+" part entities are candidates for projection."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:21 of
+msgid ""
+"A sequence of candidate edges to be projected onto the sketch. By "
+"default, all edges are candidates for projection."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:24 of
+msgid ""
+"A sequence of candidate vertices to be projected onto the sketch. By "
+"default, all vertices are candidates for projection."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.queryCachedStates:1 of
+msgid ""
+"This method displays the position of geometric states relative to the "
+"sequence of features in the assembly cache. The output is displayed in "
+"the message area."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints:1
+#: abaqus.Assembly.ModelInstance.ModelInstance.referencePoints:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.referencePoints:1 of
+msgid "A repository of ReferencePoint objects."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.regenerate:1 of
+msgid ""
+"This method regenerates the assembly and brings it up to date with the "
+"latest values of the assembly parameters. When you modify features of an "
+"assembly, it may be convenient to postpone regeneration until you make "
+"all your changes, since regeneration can be time consuming. In contrast, "
+"when you modify features of a part that is included in the assembly, you "
+"should use this command to regenerate the assembly. When you regenerate "
+"the assembly, it will reflect the changes that you made to the part."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether:1
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:7 of
+msgid ""
+"A Boolean specifying whether the positioning constraints in the assembly "
+"should be regenerated together before regenerating other assembly "
+"features. The default value is ON.If the assembly has position constraint"
+" features and you modify the value of **regenerateConstraintsTogether**, "
+"Abaqus/CAE will regenerate the assembly features."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings:1 of
+msgid "This method prints any regeneration warnings associated with the features."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.restore:1 of
+msgid ""
+"This method restores the parameters of all features in the assembly to "
+"the value they had before a failed regeneration. Use the restore method "
+"after a failed regeneration, followed by a regenerate command."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeAllFeatures:1 of
+msgid "This method resumes all the suppressed features in the part or assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures:1 of
+msgid "This method resumes the specified suppressed features in the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures:4 of
+msgid ""
+"Check `AssemblyBase.resumeFeatures on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyresumefeaturespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures:7 of
+msgid "A sequence of Strings specifying the names of features to resume."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeLastSetFeatures:1 of
+msgid ""
+"This method resumes the last set of features to be suppressed in the "
+"assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:1 of
+msgid "This method rotates given instances by the specified amount."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:4 of
+msgid ""
+"Check `AssemblyBase.rotate on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyrotatepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:7 of
+msgid "A sequence of Strings specifying the names of instances to rotate."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:9 of
+msgid ""
+"A sequence of three Floats specifying the coordinates of a point on the "
+"axis."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:11 of
+msgid "A sequence of three Floats specifying the direction of the axis."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:13
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:12 of
+msgid ""
+"A Float specifying the rotation angle in degrees. Use the right-hand rule"
+" to determine the direction."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.saveGeometryCache:1 of
+msgid ""
+"This method caches the current geometry, which improves regeneration "
+"performance."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments:1 of
+msgid "A SectionAssignmentArray object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:1 of
+msgid ""
+"This method changes the start node and/or element labels on the specified"
+" independent part instances before or after Abaqus/CAE generates the "
+"meshes. For the meshed instances, Abaqus/CAE changes the node and/or "
+"element labels while preserving the original order and incrementation."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:7 of
+msgid ""
+"Check `AssemblyBase.setMeshNumberingControl on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblysetmeshnumberingcontrolpyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:10 of
+msgid ""
+"A sequence of PartInstance objects to change the start node and/or "
+"element labels."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:12 of
+msgid "A positive Integer specifying the new start node label."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:14 of
+msgid "A positive Integer specifying the new start element label."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:1 of
+msgid "This method modifies the behavior associated with the specified assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:4 of
+msgid ""
+"Check `AssemblyBase.setValues on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblysetvaluespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry of
+msgid "Raises"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:12 of
+msgid ""
+"Regeneration failed, If one or more features in the assembly fails to "
+"regenerate"
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.sets:1 of
+msgid "A repository of Set objects."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.skins:1 of
+msgid "A repository of Skin objects specifying the skins created on the assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:1 of
+msgid ""
+"This method smooths the given nodes of a native mesh, moving them locally"
+" to a more optimal location that improves the quality of the mesh"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:5 of
+msgid ""
+"Check `AssemblyBase.smoothNodes on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblysmoothnodespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:8 of
+msgid "A sequence of MeshNode objects or a Set object containing nodes."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.stringers:1 of
+msgid ""
+"A repository of Stringer objects specifying the stringers created on the "
+"assembly."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures:1 of
+msgid "This method suppresses specified features."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures:4 of
+msgid ""
+"Check `AssemblyBase.suppressFeatures on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblysuppressfeaturespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures:7 of
+msgid ""
+"A sequence of Strings specifying the names of features to suppress in the"
+" assembly."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp:1 of
+msgid ""
+"A Float specifying which gives an indication when the assembly was last "
+"modified."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.translate:1 of
+msgid "This method translates given instances by the specified amount."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.translate:4 of
+msgid ""
+"Check `AssemblyBase.translate on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblytranslatepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.translate:7 of
+msgid "A sequence of Strings specifying the names of instances to translate."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.translate:9
+#: abaqus.Assembly.ModelInstance.ModelInstance.translate:7
+#: abaqus.Assembly.PartInstance.PartInstance.translate:7 of
+msgid "A sequence of three Floats specifying a translation vector."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:1 of
+msgid ""
+"This method converts the specified PartInstance objects from linked child"
+" instances to regular instances. The parts associated with the selected "
+"instances will be converted to regular parts as well."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:6 of
+msgid ""
+"Check `AssemblyBase.unlinkInstances on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblyunlinkinstancespyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:9 of
+msgid ""
+"A sequence of PartInstance objects to be converted to regular part "
+"instances."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.unlock:1 of
+msgid ""
+"This method unlocks the assembly. Unlocking the assembly allows it to be "
+"regenerated after any modifications to the assembly."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.vertices:1 of
+msgid ""
+"A VertexArray object specifying all the vertices existing at the assembly"
+" level. This member does not provide access to the vertices at the "
+"instance level."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:1 of
+msgid ""
+"This method exports the assembly to a named file in ACIS part (SAT) or "
+"assembly (ASAT) format."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:5 of
+msgid ""
+"Check `AssemblyBase.writeAcisFile on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblywriteacisfilepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:8 of
+msgid ""
+"A String specifying the name of the file to which to write. The file "
+"name's extension is used to determine whether a part or assembly is "
+"written. Use the file extension .asat for the assembly format."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:12 of
+msgid ""
+"A Float specifying the ACIS version. For example, the Float 12.0 "
+"corresponds to ACIS Version 12.0. The default value is the current "
+"version of ACIS."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:1 of
+msgid ""
+"This method writes the parameters that were imported from the CAD system "
+"to a parameter file."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:5 of
+msgid ""
+"Check `AssemblyBase.writeCADParameters on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+"#simaker-assemblywritecadparameterspyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:8 of
+msgid "A String specifying the parameter file name."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:10 of
+msgid ""
+"A tuple of tuples each containing the part name, the parameter name and "
+"the modified parameter value. Default is an empty tuple."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:13 of
+msgid ""
+"A Bool specifying whether to update the path of the CAD model file "
+"specified in the **parameterFile** to the current directory, if the CAD "
+"model is present in the current directory."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature:1 of
+msgid "Bases: :py:class:`~abaqus.Feature.Feature.Feature`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature:1 of
+msgid ""
+"The following commands operate on Feature objects. For more information "
+"about the Feature object, see Feature object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature:10 of
+msgid ""
+"Check `AssemblyFeature on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyfeaturepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:1 of
+msgid ""
+"This method creates a Feature object by creating attachment lines between"
+" the given set of source and target faces. The given points are first "
+"projected onto the source faces using the specified projection method. "
+"The points are then projected normal to the source faces onto the target "
+"faces. The user can specify the number of projections or the length of "
+"projection vector for projection onto the target faces. The lines are "
+"then created between the source face and the closest target face. "
+"Subsequent lines are created between the target faces."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:15 of
+msgid ""
+"Check `AttachmentLines on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentlinespyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:18 of
+msgid "A String specifying a unique Feature name."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:20 of
+msgid ""
+"A tuple of points. Each point can be a ConstrainedSketchVertex, Datum "
+"point, Reference point, an Attachment point, orphan mesh Node, or an "
+"Interesting point object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:23 of
+msgid ""
+"A sequence of Face objects specifying the geometry faces onto which the "
+"points are to be projected."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:26 of
+msgid ""
+"A sequence of MeshFace objects specifying the orphan mesh element faces "
+"onto which the points are to be projected."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:29 of
+msgid ""
+"A sequence of Face objects specifying the geometry faces on which the "
+"attachment lines will terminate."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:32 of
+msgid ""
+"A sequence of MeshFace objects specifying the orphan mesh element faces "
+"on which the attachment lines will terminate."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:35 of
+msgid ""
+"A SymbolicConstant specifying the method to be used to project onto "
+"source faces. Possible values are PROJECT_BY_PROXIMITY and "
+"PROJECT_BY_DIRECTION. The default value is PROJECT_BY_PROXIMITY."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:39 of
+msgid ""
+"A point specifying the start point of the projection direction to project"
+" onto source faces. The point can be a ConstrainedSketchVertex, Datum "
+"point, Reference point, Attachment point, orphan mesh Node, Interesting "
+"Point object, or a tuple of Floats representing the coordinates of a "
+"point."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:44 of
+msgid ""
+"A point specifying the end point of the projection direction to project "
+"onto source faces. The point can be a ConstrainedSketchVertex, Datum "
+"point, Reference point, Attachment point, orphan mesh Node, Interesting "
+"point object, or a tuple of Floats representing the coordinates of a "
+"point."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:49 of
+msgid ""
+"A SymbolicConstant specifying the method to be used to project onto "
+"target faces. Possible values are PROJECT_BY_NUMBER and "
+"PROJECT_BY_DISTANCE. The default value is PROJECT_BY_NUMBER."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:53 of
+msgid ""
+"An integer specifying the maximum number of layers each point should be "
+"projected onto when the source to target projection method is "
+"PROJECT_BY_NUMBER."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:56 of
+msgid ""
+"A float specifying the maximum distance of the projection vector when the"
+" source to target projection method is PROJECT_BY_DISTANCE."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:59 of
+msgid ""
+"A Boolean specifying whether the computed projection direction from the "
+"source to the target faces should be flipped."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:62 of
+msgid "A String specifying a unique set name."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:64
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:19
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:17
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:22
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:22 of
+msgid "A Feature object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines:65
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:20
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:20
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:26
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:25
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:18
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:23
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:23 of
+msgid ":class:`AssemblyFeature`"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:1 of
+msgid ""
+"This method moves an instance so that its selected face is coaxial with "
+"the selected face of a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:10 of
+msgid ""
+"Check `Coaxial on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coaxialpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:13 of
+msgid "A cylindrical or conical Face on the part instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:15 of
+msgid "A cylindrical or conical Face on the part instance that remains fixed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial:17 of
+msgid ""
+"A Boolean specifying whether the axes are forward aligned (OFF) or "
+"reverse aligned (ON)."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:1 of
+msgid ""
+"This method moves an instance so that a specified point is coincident "
+"with a specified point of a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:10 of
+msgid ""
+"Check `CoincidentPoint on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coincidentpointpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:13 of
+msgid ""
+"A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh "
+"node from an orphan mesh on the part instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:16 of
+msgid ""
+"A ConstrainedSketchVertex, a Datum point, or a ReferencePoint or a mesh "
+"node from an orphan mesh on the part instance to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint:19
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:21
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:20 of
+msgid "**feature** -- A Feature object"
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:1
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:1 of
+msgid ""
+"This method moves an instance so that its edge is parallel to an edge of "
+"a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:10 of
+msgid ""
+"Check `EdgeToEdge on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgetoedgepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:13
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:13 of
+msgid ""
+"A straight Edge, a Datum axis, or an element edge from an orphan mesh on "
+"the part instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:16
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:16 of
+msgid ""
+"A straight Edge, a Datum axis, or an element edge from an orphan mesh on "
+"the part instance to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:19
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:19 of
+msgid ""
+"A Boolean specifying whether the edges are forward aligned (OFF) or "
+"reverse aligned (ON)."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:22 of
+msgid ""
+"A Float specifying the distance between the two edges (for two-"
+"dimensional and axisymmetric instances only)."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge:25
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:24 of
+msgid "A Feature Object."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:1 of
+msgid ""
+"This method moves an instance so that its face is coincident with a face "
+"of a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:10 of
+msgid ""
+"Check `FaceToFace on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facetofacepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:13
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:13 of
+msgid ""
+"A planar face, a Datum plane, or a face from an orphan mesh on the part "
+"instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:16
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:16 of
+msgid ""
+"A planar face, a Datum plane, or a face from an orphan mesh on the part "
+"instance to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:19
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:19 of
+msgid ""
+"A Boolean specifying whether the normals to the faces are forward aligned"
+" (OFF) or reverse aligned (ON)."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace:22 of
+msgid "A Float specifying the distance between the two faces."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:1 of
+msgid ""
+"This method moves an instance so that its Datum coordinate system is "
+"parallel to a Datum coordinate system of a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:10 of
+msgid ""
+"Check `ParallelCsys on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelcsyspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:13 of
+msgid "A Datum coordinate system on the part instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys:15 of
+msgid "A Datum coordinate system on the part instance to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge:10 of
+msgid ""
+"Check `ParallelEdge on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-paralleledgepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:1 of
+msgid ""
+"This method moves an instance so that its face is parallel to a face of a"
+" fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace:10 of
+msgid ""
+"Check `ParallelFace on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelfacepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:1 of
+msgid "A ModelInstance object is an instance of a Model."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:10 of
+msgid ""
+"Check `ModelInstance on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:12 of
+msgid ""
+"This method creates a ModelInstance object and puts it into the instances"
+" repository."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:20 of
+msgid "The repository key. The name must be a valid Abaqus object name."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:22 of
+msgid ""
+"A Model object to be instanced. If the model does not exist, no "
+"ModelInstance object is created."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:25 of
+msgid ""
+"A Boolean specifying whether to apply an auto offset to the new instance "
+"that will offset it from existing instances. The default value is OFF."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:28 of
+msgid "A ModelInstance object."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance:29 of
+msgid ":class:`ModelInstance`"
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints:1
+#: abaqus.Assembly.PartInstance.PartInstance.ConvertConstraints:1 of
+msgid ""
+"This method converts the position constraints of an instance to absolute "
+"positions. The method deletes the constraint features on the instance but"
+" preserves the position in space."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.datums:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.datums:1 of
+msgid "A repository of Datum objects."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.edges:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.edges:1 of
+msgid "An EdgeArray object."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.elements:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.elements:1 of
+msgid "A MeshElementArray object."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance.getPosition:1 of
+msgid ""
+"This method prints the sum of the translations and rotations applied to "
+"the ModelInstance object."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.nodes:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.nodes:1 of
+msgid "A MeshNodeArray object."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.sets:1 of
+msgid ""
+"A repository of Set objects specifying the sets created on the assembly. "
+"For more information, see [Region "
+"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
+"-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.surfaces:1 of
+msgid ""
+"A repository of Surface objects specifying the surfaces created on the "
+"assembly. For more information, see [Region "
+"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
+"-RegPyc-sb.htm?ContextScope=all)."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance.translate:1
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:1
+#: abaqus.Assembly.PartInstance.PartInstance.translate:1 of
+msgid "This method translates an instance by the specified amount."
+msgstr ""
+
+#: abaqus.Assembly.ModelInstance.ModelInstance.translate:4 of
+msgid ""
+"Check `ModelInstance.translate on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all"
+"#simaker-modelinstancetranslatepyc>`__."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.ModelInstance.ModelInstance.vertices:1
+#: abaqus.Assembly.PartInstanceArray.PartInstance.vertices:1 of
+msgid "A VertexArray object."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance:1 of
+msgid "A PartInstance object is an instance of a Part object."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance:11 of
+msgid ""
+"Check `PartInstance on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance:23 of
+msgid ""
+"A Part object to be instanced. If the part does not exist, no "
+"PartInstance object is created."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance:26 of
+msgid ""
+"A Boolean specifying whether to apply an auto offset to the new part "
+"instance that will offset it from existing part instances. The default "
+"value is OFF."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstance.PartInstance:29
+#: abaqus.Assembly.PartInstanceArray.PartInstance.dependent:1 of
+msgid ""
+"A Boolean specifying whether the part instance is dependent or "
+"independent. If **dependent** = OFF, the part instance is independent. "
+"The default value is OFF."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:1
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:1 of
+msgid ""
+"This method translates an instance along the specified direction until it"
+" is in contact with a fixed instance."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:5 of
+msgid ""
+"Check `Contact on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contactpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:8
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:8 of
+msgid "A sequence of Face or Edge objects on the part instance to be moved."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:10 of
+msgid "A sequence of Face or Edge objects on the part instance to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:12
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:12 of
+msgid "A sequence of three Floats specifying the direction of contact."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:14
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:14 of
+msgid ""
+"A Float specifying the distance between the two faces along the direction"
+" of contact."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:16 of
+msgid ""
+"A Boolean specifying how Abaqus calculates the contact. If "
+"**isFaceEdges** is OFF, contact is computed from the movable face to the "
+"fixed face. If **isFaceEdges** is ON, contact is computed using only the "
+"edges of the movable face and not its interior. The default value is OFF."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.Contact:22
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:21 of
+msgid ":class:`Feature`"
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:1 of
+msgid ""
+"This method creates a PartInstance in the instances repository after "
+"subtracting or cutting the geometries of a group of part instances from "
+"that of a base part instance."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:10 of
+msgid ""
+"Check `InstanceFromBooleanCut on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instancefrombooleancutpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:15 of
+msgid ""
+"A PartInstance specifying the base instance from which to cut other "
+"instances."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:17 of
+msgid ""
+"A sequence of PartInstance objects specifying the instances with which to"
+" cut the base instance."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:20
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:20 of
+msgid ""
+"A SymbolicConstant specifying whether the original instances should be "
+"suppressed or deleted after the merge operation. Possible values are "
+"SUPPRESS or DELETE. The default value is SUPPRESS."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:1 of
+msgid ""
+"This method creates a PartInstance in the instances repository after "
+"merging two or more part instances."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:10 of
+msgid ""
+"Check `InstanceFromBooleanMerge on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instancefrombooleanmergepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:15 of
+msgid "A sequence of PartInstance objects specifying the part instances to merge."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:17 of
+msgid ""
+"A Boolean specifying whether the boundary intersections of Abaqus native "
+"part instances should be retained after the merge operation. The default "
+"value is False."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:24 of
+msgid ""
+"A SymbolicConstant specifying whether geometry or mesh of the specified "
+"part instances is to be merged. Possible values are GEOMETRY, MESH or "
+"BOTH. The default value is GEOMETRY."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:28 of
+msgid ""
+"A SymbolicConstant specifying which nodes of the specified part instances"
+" should be considered for merging. This argument is only applicable if "
+"**domain** is MESH. Possible values are BOUNDARY_ONLY, ALL, or NONE. The "
+"default value is BOUNDARY_ONLY."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:32 of
+msgid ""
+"A Float specifying the maximum distance between nodes of the specified "
+"part instances that will be merged and replaced with a single node in the"
+" new part. The location of the new node is the average position of the "
+"deleted nodes. This argument is only applicable if **domain** is MESH. "
+"The default value is 10⁻⁶."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:37 of
+msgid ""
+"A Boolean specifying whether elements with the same connectivity in the "
+"new part will be merged into a single element. This argument is only "
+"applicable if **domain** is MESH. The default value is True."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:1 of
+msgid ""
+"This method creates multiple PartInstance objects in a linear pattern and"
+" puts them into the instances repository."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:10 of
+msgid ""
+"Check `LinearInstancePattern on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-linearinstancepatternpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:13
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:13 of
+msgid "A sequence of Strings specifying the names of instances to pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:15 of
+msgid ""
+"An Int specifying the total number of instances, including the original "
+"instances, that appear along the first direction in the pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:18 of
+msgid ""
+"A Float specifying the spacing between instances along the first "
+"direction in the pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:21 of
+msgid ""
+"An Int specifying the total number of instances, including the original "
+"instances, that appear along the second direction in the pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:24 of
+msgid ""
+"A Float specifying the spacing between instances along the second "
+"direction in the pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:27 of
+msgid ""
+"A sequence of three Floats specifying a vector along the first direction."
+" The default value is (1.0, 0.0, 0.0)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:30 of
+msgid ""
+"A sequence of three Floats specifying a vector along the second "
+"direction. The default value is (0.0, 1.0, 0.0)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:33
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:30 of
+msgid "A sequence of PartInstance objects."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:34
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:31 of
+msgid ":class:`Sequence[PartInstance]`"
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:1 of
+msgid ""
+"This method creates multiple PartInstance objects in a radial pattern and"
+" puts them into the instances repository."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:10 of
+msgid ""
+"Check `RadialInstancePattern on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-radialinstancepatternpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:15 of
+msgid ""
+"An Int specifying the total number of instances, including the original "
+"instances, that appear in the radial pattern."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:18 of
+msgid ""
+"A Float specifying the total angle in degrees between the first and last "
+"instance in the pattern. A positive angle corresponds to a counter-"
+"clockwise direction. The values 360° and -360° represent a special case "
+"where the pattern makes a full circle. In this case, because the copy "
+"would overlay the original, the copy is not placed at the last position. "
+"Possible values are -360.0 ≤ **totalAngle** ≤ 360.0."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:24 of
+msgid ""
+"A sequence of three Floats specifying the center of the radial pattern. "
+"The default value is (0.0, 0.0, 0.0)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:27 of
+msgid ""
+"A sequence of three Floats specifying the central axis of the radial "
+"pattern. The default value is (0.0, 0.0, 1.0)."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.analysisType:1 of
+msgid ""
+"A SymbolicConstant specifying the part type. Possible values are "
+"DEFORMABLE_BODY, EULERIAN, DISCRETE_RIGID_SURFACE, and "
+"ANALYTIC_RIGID_SURFACE."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.cells:1 of
+msgid "A CellArray object."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry:1 of
+msgid ""
+"This method checks the validity of the geometry of the part instance and "
+"prints a count of all topological entities on the part instance (faces, "
+"edges, vertices, etc.)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry:5 of
+msgid ""
+"Check `PartInstance.checkGeometry on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
+"#simaker-partinstancecheckgeometrypyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry:8 of
+msgid ""
+"A Boolean specifying whether detailed output will be printed to the "
+"replay file. The default value is OFF."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry:11 of
+msgid ""
+"An Int specifying which level of checking is performed. Values can range "
+"from 20 to 70, with higher values reporting less and less important "
+"errors. The default value is 20, which reports all critical errors. When "
+"the default value is used, the stored validity status is updated to agree"
+" with the result of this check."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.checkGeometry:16 of
+msgid ""
+"An exception is thrown if this is a dependent part instance and **level**"
+" was either not     specified or was set to 20, because the validity "
+"status cannot be updated for a     dependent part instance. In this case,"
+" this command should be called on the Part     instead. The geometry of "
+"dependent part instances cannot be changed."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.elemEdges:1
+#: of
+msgid ""
+"A repository of MeshEdge objects specifying all the element edges in the "
+"part instance. For a given element and a given edge index on a given face"
+" within that element, the corresponding MeshEdge object can be retrieved "
+"from the repository by using the key calculated as (i*32 + j*4 + k), "
+"where i, j, and k are zero-based element, face, and edge indices, "
+"respectively."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.elementEdges:1 of
+msgid "A MeshEdgeArray object."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.elementFaces:1 of
+msgid "A MeshFaceArray object."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.excludedFromSimulation:1 of
+msgid ""
+"A Boolean specifying whether the part instance is excluded from the "
+"simulation. If **excludedFromSimulation** = ON, the part instance is "
+"excluded from the simulation. The default value is OFF."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.faces:1 of
+msgid "A FaceArray object."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.geometryValidity:1 of
+msgid ""
+"A Boolean specifying the validity of the geometry of the instance. The "
+"value is computed, but it can be set to ON to perform feature and mesh "
+"operations on an invalid instance. There is no guarantee that such "
+"operations will work if the instance was originally invalid."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getPosition:1 of
+msgid ""
+"This method prints the sum of the translations and rotations applied to "
+"the PartInstance object."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getRotation:1 of
+msgid ""
+"This method returns a tuple including the point of rotation, axis of "
+"rotation, and rotation angle (in degrees)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getRotation:4 of
+msgid ""
+"A tuple including the point of rotation, axis of rotation, and rotation "
+"angle (in degrees)."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getRotation:6 of
+msgid ":class:`tuple`"
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getTranslation:1 of
+msgid ""
+"This method returns a tuple of three Floats representing translation in "
+"the **X**, **Y**, and **Z** directions."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getTranslation:4 of
+msgid "A tuple of three Floats representing the translation."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.getTranslation:5 of
+msgid ":class:`Tuple[float`, :class:`float`, :class:`float]`"
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.ignoredEdges:1 of
+msgid "An IgnoredEdgeArray object."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.ignoredVertices:1 of
+msgid "An IgnoredVertexArray object."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.part:1 of
+msgid "A Part object specifying the instanced part."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.partName:1 of
+msgid ""
+"A String specifying the name of the part from which the instance was "
+"created."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Assembly.PartInstanceArray.PartInstance.referenceNode:1 of
+msgid ""
+"An Int specifying the reference node number. This member is valid only if"
+" **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.replace:1 of
+msgid "This method replaces one instance with an instance of another part."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.replace:4 of
+msgid ""
+"Check `PartInstance.replace on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
+"#simaker-partinstancereplacepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.replace:7 of
+msgid ""
+"A Part object specifying which Part will be instanced in place of the "
+"original Part."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.replace:9 of
+msgid ""
+"A Boolean specifying whether to apply existing constraints on the new "
+"instance or to position the new instance in the same place as the "
+"original instance. The default value is True. A value of False indicates "
+"that constraints applies to the instance are deleted will be deleted from"
+" the feature list."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:4 of
+msgid ""
+"Check `PartInstance.rotateAboutAxis on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
+"#simaker-partinstancerotateaboutaxispyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:7 of
+msgid ""
+"A sequence of three Floats specifying the **X**, **Y**, and **Z** "
+"coordinates of a point on the axis."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.rotateAboutAxis:10 of
+msgid "A sequence of three Floats specifying the direction vector of the axis."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.sets:1 of
+msgid ""
+"A repository of Set objects specifying the sets created on the part. For "
+"more information, see Region commands."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.skins:1 of
+msgid ""
+"A repository of Skin objects specifying the skins created on the part. "
+"For more information, see Region commands."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.stringers:1
+#: of
+msgid ""
+"A repository of Stringer objects specifying the stringers created on the "
+"part. For more information, see Region commands."
+msgstr ""
+
+#: ../../docstring abaqus.Assembly.PartInstanceArray.PartInstance.surfaces:1 of
+msgid ""
+"A repository of Surface objects specifying the surfaces created on the "
+"part. For more information, see Region commands."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.translate:4 of
+msgid ""
+"Check `PartInstance.translate on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
+"#simaker-partinstancetranslatepyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:5 of
+msgid ""
+"Check `PartInstance.translateTo on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
+"#simaker-partinstancetranslatetopyc>`__."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:10 of
+msgid "A sequence of Face or Edge objects on the part instances to remain fixed."
+msgstr ""
+
+#: abaqus.Assembly.PartInstance.PartInstance.translateTo:16 of
+msgid ""
+"A sequence of three Floats specifying a translation vector. If this "
+"argument is specified, the movable instance will be translated by the "
+"specified amount without solving for the actual contact."
+msgstr ""
+

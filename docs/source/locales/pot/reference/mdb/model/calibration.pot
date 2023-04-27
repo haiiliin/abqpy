@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 00:21+0000\n"
+"POT-Creation-Date: 2023-04-27 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,408 +47,123 @@ msgstr ""
 msgid "Check `CalibrationModel on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:11
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:15
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:16
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:4
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:4
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:14
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:4
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:15
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.mapToMaterial:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.setValues:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
-msgid "Public Data Attributes:"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:0
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:0
+msgid "Parameters"
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Calibration.CalibrationModel.CalibrationModel.name>`\\"
-msgstr ""
-
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:19
 #: ../../None:52:<autosummary>:1
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`stefanBoltzmann <abaqus.Calibration.CalibrationModel.CalibrationModel.stefanBoltzmann>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:21
+msgid "A String specifying the purpose and contents of the Model object. The default value is an empty string."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "None or a Float specifying the Stefan-Boltzmann constant."
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:24
+msgid "None or a Float specifying the Stefan-Boltzmann constant. The default value is None."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Calibration.CalibrationModel.CalibrationModel.absoluteZero>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:26
+msgid "None or a Float specifying the absolute zero constant. The default value is None."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "None or a Float specifying the absolute zero constant."
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:28
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value is NOT_SET."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`waveFormulation <abaqus.Calibration.CalibrationModel.CalibrationModel.waveFormulation>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:32
+msgid "A SymbolicConstant specifying the analysis model type. Possible values are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:35
+msgid "None or a Float specifying the universal gas constant. The default value is None."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Calibration.CalibrationModel.CalibrationModel.universalGas>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:37
+msgid "A boolean specifying whether to copy the constraints created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "None or a Float specifying the universal gas constant."
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:40
+msgid "A boolean specifying whether to copy the connectors created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`noPartsInputFile <abaqus.Calibration.CalibrationModel.CalibrationModel.noPartsInputFile>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:43
+msgid "A boolean specifying whether to copy the interactions created in the model to the model that instances this model. The default value is ON."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:0
+msgid "Returns"
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartIncrement <abaqus.Calibration.CalibrationModel.CalibrationModel.restartIncrement>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:46
+msgid "A Model object."
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:0
+msgid "Return type"
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`endRestartStep <abaqus.Calibration.CalibrationModel.CalibrationModel.endRestartStep>`\\"
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:47
+msgid ":class:`Model`"
 msgstr ""
 
-#: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Calibration.CalibrationModel.CalibrationModel.shellToSolid>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Calibration.CalibrationModel.CalibrationModel.lastChangedCount>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A Float specifying the time stamp that indicates when the model was last changed."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Calibration.CalibrationModel.CalibrationModel.description>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A String specifying the purpose and contents of the Model object."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartJob <abaqus.Calibration.CalibrationModel.CalibrationModel.restartJob>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Calibration.CalibrationModel.CalibrationModel.restartStep>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the step where the restart analysis will start."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`globalJob <abaqus.Calibration.CalibrationModel.CalibrationModel.globalJob>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the results for the global model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyConstraints <abaqus.Calibration.CalibrationModel.CalibrationModel.copyConstraints>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyConnectors <abaqus.Calibration.CalibrationModel.CalibrationModel.copyConnectors>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`copyInteractions <abaqus.Calibration.CalibrationModel.CalibrationModel.copyInteractions>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Calibration.CalibrationModel.CalibrationModel.keywordBlock>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A KeywordBlock object."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Calibration.CalibrationModel.CalibrationModel.rootAssembly>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "An Assembly object."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Calibration.CalibrationModel.CalibrationModel.amplitudes>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Amplitude objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Calibration.CalibrationModel.CalibrationModel.profiles>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Profile objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`boundaryConditions <abaqus.Calibration.CalibrationModel.CalibrationModel.boundaryConditions>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of BoundaryCondition objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Calibration.CalibrationModel.CalibrationModel.constraints>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of ConstrainedSketchConstraint objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`analyticalFields <abaqus.Calibration.CalibrationModel.CalibrationModel.analyticalFields>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of AnalyticalField objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`discreteFields <abaqus.Calibration.CalibrationModel.CalibrationModel.discreteFields>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of DiscreteField objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`predefinedFields <abaqus.Calibration.CalibrationModel.CalibrationModel.predefinedFields>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of PredefinedField objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Calibration.CalibrationModel.CalibrationModel.interactions>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Interaction objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactionProperties <abaqus.Calibration.CalibrationModel.CalibrationModel.interactionProperties>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of InteractionProperty objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactControls <abaqus.Calibration.CalibrationModel.CalibrationModel.contactControls>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of ContactControl objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactInitializations <abaqus.Calibration.CalibrationModel.CalibrationModel.contactInitializations>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of ContactInitialization objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`contactStabilizations <abaqus.Calibration.CalibrationModel.CalibrationModel.contactStabilizations>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of ContactStabilization objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedInstances <abaqus.Calibration.CalibrationModel.CalibrationModel.linkedInstances>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Calibration.CalibrationModel.CalibrationModel.linkedParts>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`loads <abaqus.Calibration.CalibrationModel.CalibrationModel.loads>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Load objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Calibration.CalibrationModel.CalibrationModel.materials>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Material objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Calibration.CalibrationModel.CalibrationModel.calibrations>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Calibration objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Calibration.CalibrationModel.CalibrationModel.sections>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Section objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`remeshingRules <abaqus.Calibration.CalibrationModel.CalibrationModel.remeshingRules>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of RemeshingRule objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`sketches <abaqus.Calibration.CalibrationModel.CalibrationModel.sketches>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of ConstrainedSketch objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Calibration.CalibrationModel.CalibrationModel.parts>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Part objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Calibration.CalibrationModel.CalibrationModel.steps>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Step objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`featureOptions <abaqus.Calibration.CalibrationModel.CalibrationModel.featureOptions>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A FeatureOptions object."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Calibration.CalibrationModel.CalibrationModel.adaptiveMeshConstraints>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of AdaptiveMeshConstraint objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshControls <abaqus.Calibration.CalibrationModel.CalibrationModel.adaptiveMeshControls>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of AdaptiveMeshControl objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`timePoints <abaqus.Calibration.CalibrationModel.CalibrationModel.timePoints>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of TimePoint objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Calibration.CalibrationModel.CalibrationModel.filters>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of Filter objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`integratedOutputSections <abaqus.Calibration.CalibrationModel.CalibrationModel.integratedOutputSections>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of IntegratedOutputSection objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`fieldOutputRequests <abaqus.Calibration.CalibrationModel.CalibrationModel.fieldOutputRequests>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of FieldOutputRequest objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`historyOutputRequests <abaqus.Calibration.CalibrationModel.CalibrationModel.historyOutputRequests>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of HistoryOutputRequest objects."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`optimizationTasks <abaqus.Calibration.CalibrationModel.CalibrationModel.optimizationTasks>`\\"
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid "A repository of OptimizationTask objects."
+#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
+msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -460,7 +175,15 @@ msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzman
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -468,7 +191,15 @@ msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulatio
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -476,7 +207,15 @@ msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputF
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -484,7 +223,15 @@ msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -492,7 +239,15 @@ msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCo
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -500,7 +255,15 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -508,7 +271,15 @@ msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -516,7 +287,15 @@ msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -524,7 +303,15 @@ msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A KeywordBlock object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An Assembly object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -532,7 +319,15 @@ msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -540,7 +335,15 @@ msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryCon
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -548,7 +351,15 @@ msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFie
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -556,7 +367,15 @@ msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFie
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -564,7 +383,15 @@ msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interact
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -572,7 +399,15 @@ msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contact
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -580,7 +415,15 @@ msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstance
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -588,7 +431,15 @@ msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -596,7 +447,15 @@ msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -604,7 +463,15 @@ msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -612,7 +479,15 @@ msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -620,7 +495,15 @@ msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A FeatureOptions object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -628,7 +511,15 @@ msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveM
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -636,7 +527,15 @@ msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -644,11 +543,23 @@ msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutpu
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
 msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel:0
@@ -659,7 +570,7 @@ msgstr ""
 msgid ":py:obj:`Calibration <abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration>`\\ \\(name\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:1
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:13
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:1
 #: ../../None:3:<autosummary>:1
 msgid "This method creates a Calibration object."
@@ -667,10 +578,6 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -712,85 +619,28 @@ msgstr ""
 msgid "Member Details:"
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:4
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:4
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:4
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:4
-#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:4
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:4
-msgid "This function can be accessed by::"
-msgstr ""
-
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:11
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:9
 msgid "Check `Calibration on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-calibrationpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.mapToMaterial:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.setValues:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:0
-#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.setValues:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:12
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:21
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:12
 #: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.name:1
 msgid "A String specifying the name of the new calibration."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:0
-#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:14
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:23
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:14
 msgid "A Calibration object."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_E:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_nu:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:0
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.xyDataDissect:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:0
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:0
-#: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:0
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:0
-msgid "Return type"
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:15
+#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:24
 #: ../../../../src/abaqus/Calibration/CalibrationModel.py:docstring of abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration:15
 msgid ":class:`Calibration`"
 msgstr ""
 
-#: ../../reference/mdb/model/calibration.md:17
+#: ../../reference/mdb/model/calibration.md:16
 msgid "Other Classes"
 msgstr ""
 
@@ -809,34 +659,30 @@ msgstr ""
 msgid "Check `Behavior on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:1
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:12
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:1
 msgid "This method creates a Behavior object."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:9
-msgid "Check `Behavior.__init__ on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-behaviorpyc.htm?contextscope=all#simaker-behavior__init__pyc>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:12
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:20
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:12
 #: ../../docstring of abaqus.Calibration.Calibration.Behavior.name:1
 msgid "A String specifying the name of the new behavior."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:14
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:22
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:14
 #: ../../docstring of abaqus.Calibration.Calibration.Behavior.typeName:1
 msgid "A String specifying the type of the new Behavior. Values can be \"ElasIsoBehavior\", \"ElasPlasIsoBehavior\", \"FeFpBehavior\", or a user plug-in behavior type."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:17
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:25
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:17
 #: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.behaviors:1
 msgid "A Behavior object."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.__init__:18
+#: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior:26
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.Behavior:18
 msgid ":class:`Behavior`"
 msgstr ""
@@ -863,7 +709,7 @@ msgstr ""
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:8
 #: ../../../../src/abaqus/Calibration/Behavior.py:docstring of abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:8
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:24
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:24
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:32
 #: ../../docstring of abaqus.Calibration.CalibrationModel.Calibration.dataSets:1
 msgid "A DataSet object."
 msgstr ""
@@ -1119,40 +965,36 @@ msgid "Check `DataSet on help.3ds.com/2017 <https://help.3ds.com/2017/English/DS
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:1
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:1
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:12
 msgid "This method creates a DataSet object."
 msgstr ""
 
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:9
-msgid "Check `DataSet.__init__ on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datasetpyc.htm?contextscope=all#simaker-dataset__init__pyc>`__."
-msgstr ""
-
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:12
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:12
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:20
 #: ../../docstring of abaqus.Calibration.DataSet.DataSet.name:1
 msgid "A String specifying the name of the new dataset."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:14
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:14
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:22
 #: ../../docstring of abaqus.Calibration.DataSet.DataSet.data:1
 msgid "A sequence of pairs of Floats specifying data set type pairs. Possible values are for stress/strain, force/displacement, or transverse strain/axial strain pairs."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:17
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:17
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:25
 #: ../../docstring of abaqus.Calibration.DataSet.DataSet.type:1
 msgid "A String specifying the type of the new dataset. Values can be \"STRESS/STRAIN\", \"FORCE/DISPLACEMENT\", or \"AXIALSTRAIN/TRANSVERSESTRAIN\". The default value is \"STRESS/STRAIN\"."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:21
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:21
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:29
 #: ../../docstring of abaqus.Calibration.DataSet.DataSet.form:1
 msgid "A String specifying the form of the new dataset. Values can be \"NOMINAL\" or \"TRUE\". The default value is \"NOMINAl\"."
 msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.DataSet:25
-#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet.__init__:25
+#: ../../../../src/abaqus/Calibration/DataSet.py:docstring of abaqus.Calibration.DataSet.DataSet:33
 msgid ":class:`DataSet`"
 msgstr ""
 
@@ -1170,8 +1012,4 @@ msgstr ""
 
 #: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration:1
 msgid "A Calibration object is the object used to specify a material calibration. The Calibration object stores the data that is used for specifying materials from test data."
-msgstr ""
-
-#: ../../../../src/abaqus/Calibration/Calibration.py:docstring of abaqus.Calibration.Calibration.Calibration.__init__:9
-msgid "Check `Calibration.__init__ on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-calibrationpyc.htm?contextscope=all#simaker-calibration__init__pyc>`__."
 msgstr ""
