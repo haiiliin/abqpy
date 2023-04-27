@@ -32,7 +32,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add docs/source/CHANGES.md
-        git commit -m "Update CHANGES.md" || echo "Nothing to commit"
+        git commit -m "[skip ci] Update CHANGES.md" || echo "Nothing to commit"
     - name: Push the changes
       uses: CasperWA/push-protected@v2
       with:
