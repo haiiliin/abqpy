@@ -45,7 +45,7 @@ jobs:
       env:
         SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
     - name: Upload the documentation
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: docs-${{ matrix.language }}-${{ matrix.builder }}
         path: docs/build/${{ matrix.builder }}
