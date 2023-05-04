@@ -1,15 +1,26 @@
 # Command Line Interface
 
+```{warning}
+The command line interface is based on the [`fire`](https://github.com/google/python-fire) 
+package since version `20**.5.0`, and it is not compatible with the command line interface of
+previous versions.
+
+For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
+
+- `--gui` or `--gui=True` to set the flag to `True`;
+- `--nogui` or `--gui=False` to set the flag to `False`
+```
+
 The default execution procedure invoked by `abqpy` inside the Python interpreter
 environment where it is installed is to run one of the two following command lines:
 
-1. When there is a `import abaqus` or `from abaqus import ...` statement:
+1. When the `abaqus` module is imported for the first time:
 
    ```sh
    abaqus cae noGUI=script.py -- [args ...]
    ```
 
-2. When there is a `import odbAccess` or `from odbAccess import ...` statement:
+2. When the `odbAccess` module is imported for the first time:
 
    ```sh
    abaqus python script.py [args ...]
@@ -28,58 +39,38 @@ that procedures and options, `abqpy` provides two alternatives. One of them is a
 separate **command line interface** (another alternative is to use an
 {doc}`System Environment Variable <envvars>`).
 
-```
-usage: abqpy [-h] [-g [options ...] | -n [options ...] | -p [options ...]] [--] [script] [args ...]
-
-The abqpy command line interface
-
-positional arguments:
-script                the python script to run
-args                  arguments that will be passed to the python script
-
-optional arguments:
--h, --help            show this help message and exit
--g [options ...], --cae-gui [options ...]
-                        command line options used to run Abaqus/CAE command with the graphical user interface (GUI mode)
--n [options ...], --cae-nogui [options ...]
-                        command line options used to run Abaqus/CAE command without the graphical user interface (noGUI mode)
--p [options ...], --python [options ...]
-                        command line options used to run Abaqus Python command
---                    argument to pass the script after abaqus command line options
-```
-
 Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE
-Execution** GUI and noGUI modes; and **Abaqus Python Execution** mode.
+Execution** mode and **Abaqus Python Execution** mode, and **Custom Command** mode:
+```sh
+abqpy COMMAND SCRIPT <flags> [ARGS]...
+```
+where `COMMAND` is one of `cae`, `python` or `run`, `SCRIPT` is the file name of
+your python script, `flags` are the options that could be passed to the command,
+and `ARGS` are the extra arguments to be passed after the command line options.
+For details, see the [References](#references) section or run `abqpy COMMAND --help`
+for help.
 
 ## Examples
 
 1. If you want to run you python script in Abaqus/CAE GUI mode, you could run:
 
    ```sh
-   abqpy script.py [args ...] -g
+   abqpy cae script.py [args ...]
    ```
 
 2. If you want to run you python script in Abaqus/CAE GUI or noGUI mode, providing
    the `database` file option, you could run:
 
    ```sh
-   abqpy script.py [args ...] -g database=file.odb # GUI mode
+   abqpy cae script.py --gui --database=file.odb [args ...] # GUI mode
 
-   abqpy script.py [args ...] -n database=file.odb # noGUI mode
+   abqpy cae script.py --nogui --database=file.odb [args ...] # noGUI mode
    ```
 
 3. If you want to run you python script in Abaqus Python Execution mode, you could run:
 
    ```sh
-   abqpy script.py [args ...] -p
-   ```
-
-4. If you want to pass your python script file name after the abaqus command line
-   options, you will need to use the `--` argument before the script filename, to
-   prevent `abqpy` from attempting to parse it to abaqus:
-
-   ```sh
-   abqpy -g database=file.odb -- script.py [args ...]
+   abqpy python script.py [args ...]
    ```
 
 Some moderns Python IDEs allow you to customize the default python launch parameters
@@ -91,17 +82,150 @@ Example: In
 you can specify the following setting:
 
 ```json
-"python.terminal.launchArgs": [ "-m", "abqpy", "-g", "--" ]
+"python.terminal.launchArgs": [ "-m", "abqpy", "cae", "--gui=True" ]
 ```
 
 That setting will make VS Code Python Extension run by default all python script
 files in the integrated terminal with the following command line:
 
 ```sh
-python -m abqpy -g -- script.py [args ...]
+python -m abqpy cae --gui=True script.py [args ...]
 ```
 
 Which provides a way to change the default abaqus execution procedure to GUI mode.
+
+```{warning}
+Noted that if a token other than another flag immediately follows a flag that's supposed to be a boolean, 
+the flag will take on the value of the token rather than the boolean value. 
+Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
+```
+
+(references)=
+## References
+
+```
+$ abqpy
+NAME
+    abqpy - The abqpy command line interface
+
+SYNOPSIS
+    abqpy COMMAND
+
+DESCRIPTION
+    The abqpy command line interface
+
+COMMANDS
+    COMMAND is one of the following:
+
+     cae
+       Run Abaqus/CAE command line interface.
+
+     python
+       Run Abaqus Python command line interface.
+
+     run
+       Run custom command.
+```
+
+### Abaqus/CAE Execution Mode
+
+```
+$ abqpy cae --help
+INFO: Showing help with the command 'abqpy cae -- --help'.
+
+NAME
+    abqpy cae - Run Abaqus/CAE command line interface.
+
+SYNOPSIS
+    abqpy cae SCRIPT <flags> [ARGS]...
+
+DESCRIPTION
+    Run Abaqus/CAE command line interface.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: str
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -d, --database=DATABASE
+        Type: Optional[str]
+        Default: None
+        The name of the database file to open, by default None
+    --replay=REPLAY
+        Type: Optional[str]
+        Default: None
+        The name of the replay file to open, by default None
+    --recover=RECOVER
+        Type: Optional[str]
+        Default: None
+        The name of the journal file to open, by default None
+    --gui=GUI
+        Type: bool
+        Default: False
+        Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+    --noenvstartup=NOENVSTARTUP
+        Type: bool
+        Default: False
+        Do not execute the Abaqus/CAE startup file, by default False
+    --noSavedOptions=NOSAVEDOPTIONS
+        Type: bool
+        Default: False
+        Do not use the saved options, by default False
+    --noStartupDialog=NOSTARTUPDIALOG
+        Type: bool
+        Default: False
+        Do not display the startup dialog, by default False
+    --guiRecord=GUIRECORD
+        Type: bool
+        Default: False
+        Record the GUI commands to a file, by default False
+    --guiNoRecord=GUINORECORD
+        Type: bool
+        Default: False
+        Do not record the GUI commands to a file, by default False
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+```
+
+### Abaqus Python Execution Mode
+
+```
+$ abqpy python --help
+INFO: Showing help with the command 'abqpy python -- --help'.
+
+NAME
+    abqpy python - Run Abaqus Python command line interface.
+
+SYNOPSIS
+    abqpy python SCRIPT <flags> [ARGS]...
+
+DESCRIPTION
+    Run Abaqus Python command line interface.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: str
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -s, --sim=SIM
+        Type: Optional[str]
+        Default: None
+        The name of the simulation file to open, by default None
+    -l, --log=LOG
+        Type: Optional[str]
+        Default: None
+        The name of the log file to open, by default None
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+```
 
 ## Comments
 

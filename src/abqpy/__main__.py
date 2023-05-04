@@ -1,109 +1,110 @@
-import argparse
 import os
 
-epilog = """
-Options
-=======
-The default execution for abaqus command line options is to use `-n` (noGUI mode)
-with no additional command line options.
+import fire
 
-When using abaqus command line options (`-g`, `-n`, `-p`) together with the python 
-`script`, and the script is passed after abaqus command line options, you may need 
-to specify `--` before the script file name, to prevent `abqpy` from attempting to 
-parse it to abaqus. That is not necessary if you pass the file name before abaqus 
-command line options.
 
-If you pass N arguments to your python script with the `args` option, beware that the 
-abaqus python interpreter will not access them in `sys.argv[1:N]`, but `sys.argv[N:]`, 
-because abaqus command already parses some arguments to its python interpreter, depending 
-on the chosen options. Please, refer to abaqus documentation for details.
+class AbqpyCLI:
+    """The abqpy command line interface"""
 
-Possible `abaqus cae` command line options:
+    def run(self, cmd: str):  # noqa
+        """Run custom command."""
+        message = f"Running the following command: {cmd}"
+        print("", "-" * len(message), message, "-" * len(message), sep="\n")
+        os.system(cmd)
 
-    database=database-file
-    replay=replay-file
-    recover=journal-file
-    startup=startup-file
-    noenvstartup
-    noSavedOptions
-    noSavedGuiPrefs
-    noStartupDialog
-    custom=script-file
-    guiTester=GUI-script
-    guiRecord
-    guiNoRecord
-    
-Possible `abaqus python` command line options:
+    def cae(
+        self,
+        script: str,
+        *args,
+        database: str = None,
+        replay: str = None,
+        recover: str = None,
+        gui: bool = False,
+        noenvstartup: bool = False,
+        noSavedOptions: bool = False,
+        noStartupDialog: bool = False,
+        guiRecord: bool = False,
+        guiNoRecord: bool = False,
+    ):
+        """Run Abaqus/CAE command line interface.
 
-    sim=sim_file_name
-    log=log_file_name
+        Parameters
+        ----------
+        script : str
+            The name of the python script to run
+        args : str
+            Extra arguments to be passed after the Abaqus/CAE command line options
+        database : str, optional
+            The name of the database file to open, by default None
+        replay : str, optional
+            The name of the replay file to open, by default None
+        recover : str, optional
+            The name of the journal file to open, by default None
+        gui : bool, optional
+            Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+        noenvstartup : bool, optional
+            Do not execute the Abaqus/CAE startup file, by default False
+        noSavedOptions : bool, optional
+            Do not use the saved options, by default False
+        noStartupDialog : bool, optional
+            Do not display the startup dialog, by default False
+        guiRecord : bool, optional
+            Record the GUI commands to a file, by default False
+        guiNoRecord : bool, optional
+            Do not record the GUI commands to a file, by default False
+        """
+        # Parse options
+        options = [f"script={script}" if gui else f"noGUI={script}"]
+        for option in ["database", "replay", "recover"]:
+            if locals()[option]:
+                options.append(f"{option}={locals()[option]}")
+        for option in ["noenvstartup", "noSavedOptions", "noStartupDialog", "guiRecord", "guiNoRecord"]:
+            if locals()[option]:
+                options.append(option)
+        options = " ".join(options)
+        args = " ".join(args)
+        sep = "--" if args else ""
 
-Please, refer to abaqus documentation for details in each of the above options.
+        # Execute command
+        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
+        self.run(f"{abaqus} cae {options} {sep} {args}".rstrip())
 
-"""
+    def python(
+        self,
+        script: str,
+        *args,
+        sim: str = None,
+        log: str = None,
+    ):
+        """Run Abaqus Python command line interface.
+
+        Parameters
+        ----------
+        script : str
+            The name of the python script to run
+        args : str
+            Extra arguments to be passed after the Abaqus/CAE command line options
+        sim : str, optional
+            The name of the simulation file to open, by default None
+        log : str, optional
+            The name of the log file to open, by default None
+        """
+        # Parse options
+        options = [script]
+        for option in ["sim", "log"]:
+            if locals()[option]:
+                options.append(f"{option}={locals()[option]}")
+        options = " ".join(options)
+        args = " ".join(args)
+
+        # Execute command
+        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
+        self.run(f"{abaqus} python {options} {args}".rstrip())
 
 
 def cli():
-    parser = argparse.ArgumentParser(
-        description="The abqpy command line interface",
-        epilog=epilog,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-    )
-    parser.add_argument("script", metavar="script", type=str, nargs="?", help="the python script to run")
-    parser.add_argument(
-        "args",
-        nargs="*",
-        help="arguments that will be passed to the python script",
-    )
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument(
-        "-g",
-        "--cae-gui",
-        dest="gui",
-        nargs="*",
-        metavar="options",
-        help="command line options used to run Abaqus/CAE command with the graphical user interface (GUI mode)",
-    )
-    group.add_argument(
-        "-n",
-        "--cae-nogui",
-        dest="nogui",
-        nargs="*",
-        metavar="options",
-        help="command line options used to run Abaqus/CAE command without the graphical user interface (noGUI mode)",
-    )
-    group.add_argument(
-        "-p",
-        "--python",
-        dest="python",
-        nargs="*",
-        metavar="options",
-        help="command line options used to run Abaqus Python command",
-    )
-    parser.add_argument(
-        "--",
-        dest="sep",
-        action="store_true",
-        help="argument to pass the script after abaqus command line options",
-    )
-    args = parser.parse_args()
-
-    abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-    proc = "cae"
-    mode = f'noGUI="{args.script}"' if args.script else "noGUI"
-    sep = "--" if args.args else ""
-    options = args.gui or args.nogui or args.python or ""
-    if args.gui is not None:
-        mode = f'script="{args.script}"' if args.script else ""
-    elif args.python is not None:
-        proc = "python"
-        sep = ""
-        mode = f'"{args.script}"' if args.script else ""
-
-    cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args.args)}".strip()
-    message = f"Running the following abaqus command: {cmd}"
-    print("", "-" * len(message), message, "-" * len(message), sep="\n")
-    os.system(cmd)
+    """The abqpy command line interface"""
+    fire.Fire(AbqpyCLI)
 
 
 if __name__ == "__main__":
