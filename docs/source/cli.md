@@ -1,15 +1,21 @@
 # Command Line Interface
 
+```{warning}
+The command line interface is based on the [`fire`](https://github.com/google/python-fire) 
+package since version `20**.5.0`, and it is not compatible with the command line interface of
+previous versions.
+```
+
 The default execution procedure invoked by `abqpy` inside the Python interpreter
 environment where it is installed is to run one of the two following command lines:
 
-1. When there is a `import abaqus` or `from abaqus import ...` statement:
+1. When the `abaqus` module is imported for the first time:
 
    ```sh
    abaqus cae noGUI=script.py -- [args ...]
    ```
 
-2. When there is a `import odbAccess` or `from odbAccess import ...` statement:
+2. When the `odbAccess` module is imported for the first time:
 
    ```sh
    abaqus python script.py [args ...]
@@ -28,61 +34,59 @@ that procedures and options, `abqpy` provides two alternatives. One of them is a
 separate **command line interface** (another alternative is to use an
 {doc}`System Environment Variable <envvars>`).
 
+Currently, `abqpy` command line interface provides several execution modes: **Abaqus/CAE
+Execution** mode and **Abaqus Python Execution** mode, and more:
+```sh
+abqpy COMMAND SCRIPT <flags> [ARGS]...
 ```
-usage: abqpy [-h] [-g [options ...] | -n [options ...] | -p [options ...]] [--] [script] [args ...]
+where `COMMAND` is one of `abaqus`, `cae`, `python`, `run` or any other Abaqus commands, 
+`SCRIPT` is the file name of your python script, `flags` are the options that could be 
+passed to the command, and `ARGS` are the extra arguments to be passed after the command 
+line options. For details, see the [References](#references) section or run 
+`abqpy COMMAND --help` for help.
 
-The abqpy command line interface
+```{note}
+For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
 
-positional arguments:
-script                the python script to run
-args                  arguments that will be passed to the python script
+- `--gui` or `--gui=True` to set the flag to `True`;
+- `--nogui` or `--gui=False` to set the flag to `False`.
 
-optional arguments:
--h, --help            show this help message and exit
--g [options ...], --cae-gui [options ...]
-                        command line options used to run Abaqus/CAE command with the graphical user interface (GUI mode)
--n [options ...], --cae-nogui [options ...]
-                        command line options used to run Abaqus/CAE command without the graphical user interface (noGUI mode)
--p [options ...], --python [options ...]
-                        command line options used to run Abaqus Python command
---                    argument to pass the script after abaqus command line options
+See [here](https://github.com/google/python-fire/blob/master/docs/guide.md#boolean-arguments) for more detailed information.
 ```
-
-Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE
-Execution** GUI and noGUI modes; and **Abaqus Python Execution** mode.
 
 ## Examples
 
-1. If you want to run you python script in Abaqus/CAE GUI mode, you could run:
+1. If you want to run you python script in Abaqus/CAE mode, you could run:
 
    ```sh
-   abqpy script.py [args ...] -g
+   abqpy cae script.py [args ...]
    ```
 
-2. If you want to run you python script in Abaqus/CAE GUI or noGUI mode, providing
+2. If you want to run your python script in Abaqus/CAE GUI or noGUI mode, providing
    the `database` file option, you could run:
 
    ```sh
-   abqpy script.py [args ...] -g database=file.odb # GUI mode
+   abqpy cae script.py --gui --database=file.odb [args ...] # GUI mode
 
-   abqpy script.py [args ...] -n database=file.odb # noGUI mode
+   abqpy cae script.py --nogui --database=file.odb [args ...] # noGUI mode
    ```
 
-3. If you want to run you python script in Abaqus Python Execution mode, you could run:
+3. If you want to run your python script in Abaqus Python Execution mode, you could run:
 
    ```sh
-   abqpy script.py [args ...] -p
+   abqpy python script.py [args ...]
    ```
 
-4. If you want to pass your python script file name after the abaqus command line
-   options, you will need to use the `--` argument before the script filename, to
-   prevent `abqpy` from attempting to parse it to abaqus:
+4. If you want to call the cli in your python script, you could use the
+   {py:obj}`abqpy.cli.abaqus` object:
 
-   ```sh
-   abqpy -g database=file.odb -- script.py [args ...]
+   ```python
+   from abqpy.cli import abaqus
+
+   abaqus.cae("script.py", gui=True, database="file.odb")
    ```
 
-Some moderns Python IDEs allow you to customize the default python launch parameters
+Some modern Python IDEs allow you to customize the default python launch parameters
 that will be passed to the interpreter. This feature permits to run `abqpy` command line
 interface as a module script and customize your default abaqus execution procedure.
 
@@ -91,17 +95,46 @@ Example: In
 you can specify the following setting:
 
 ```json
-"python.terminal.launchArgs": [ "-m", "abqpy", "-g", "--" ]
+"python.terminal.launchArgs": [ "-m", "abqpy", "cae", "--gui=True" ]
 ```
 
 That setting will make VS Code Python Extension run by default all python script
 files in the integrated terminal with the following command line:
 
 ```sh
-python -m abqpy -g -- script.py [args ...]
+python -m abqpy cae --gui=True script.py [args ...]
 ```
 
 Which provides a way to change the default abaqus execution procedure to GUI mode.
+
+```{warning}
+Noted that if a token other than another flag immediately follows a flag that's supposed to be a boolean, 
+the flag will take on the value of the token rather than the boolean value. 
+Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
+```
+
+(references)=
+## References
+
+```{command-output} abqpy
+```
+
+### Abaqus/CAE Execution Mode
+
+```{command-output} abqpy cae --help
+:returncode: 2
+```
+
+### Abaqus Python Execution Mode
+
+```{command-output} abqpy python --help
+:returncode: 2
+```
+
+### Less Frequently Used Commands
+
+```{command-output} abqpy misc --help
+```
 
 ## Comments
 
