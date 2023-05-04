@@ -51,3 +51,4 @@ def run(cae: bool = True) -> None:
         abaqus.cae(filePath, *sys.argv[1:], **options)
     else:
         abaqus.python(filePath, *sys.argv[1:], **options)
+    sys.exit(0)
