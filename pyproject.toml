@@ -34,7 +34,7 @@ classifiers = [
 "Documentation" = "https://docs.abqpy.com"
 
 [project.scripts]
-abqpy = "abqpy.__main__:cli"
+abqpy = "abqpy.__main__:main"
 
 [tool.setuptools]
 py-modules = [
