@@ -20,6 +20,12 @@ class AbqpyCLI:
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
 
+    def abaqus(self, *args):  # noqa
+        """Run custom Abaqus command: `abaqus [args]`, arguments are separated by space."""
+        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")  # noqa
+        options = " ".join(args)
+        self.run(f"{abaqus} {options}")
+
     def cae(
         self,
         script: str,
@@ -72,12 +78,10 @@ class AbqpyCLI:
                                       database=database, replay=replay, recover=recover, noenvstartup=noenvstartup,
                                       noSavedOptions=noSavedOptions, noStartupDialog=noStartupDialog,
                                       guiRecord=guiRecord, guiNoRecord=guiNoRecord)  # fmt: skip
-        args = " ".join(args)
-        sep = "--" if args else ""
+        args = ("--", *args) if args else ()
 
         # Execute command
-        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-        self.run(f"{abaqus} cae {options} {sep} {args}")
+        self.abaqus("cae", options, *args)
 
     def python(
         self,
@@ -107,11 +111,9 @@ class AbqpyCLI:
 
         # Parse options
         options = self._parse_options(sim=sim, log=log)
-        args = " ".join(args)
 
         # Execute command
-        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-        self.run(f"{abaqus} python {script} {options} {args}")
+        self.abaqus("python", script, options, *args)
 
 
 #: The abqpy command line interface, use this object to run abqpy commands from the python scripts
