@@ -79,7 +79,7 @@ For the following commands, the boolean flags can be specified with the followin
    {py:obj}`abqpy.cli.abaqus` object:
 
    ```python
-   from abqpy import abaqus
+   from abqpy.cli import abaqus
 
    abaqus.cae("script.py", gui=True, database="file.odb")
    ```
@@ -114,135 +114,19 @@ Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 (references)=
 ## References
 
-```
-$ abqpy
-NAME
-    abqpy - The abqpy command line interface
-
-SYNOPSIS
-    abqpy COMMAND
-
-DESCRIPTION
-    The abqpy command line interface
-
-COMMANDS
-    COMMAND is one of the following:
-
-     abaqus
-       Run custom Abaqus command: `abaqus [args]`, arguments are separated by space.
-
-     cae
-       Run Abaqus/CAE command line interface.
-
-     python
-       Run Abaqus Python command line interface.
-
-     run
-       Run custom command.
+```{command-output} abqpy
 ```
 
 ### Abaqus/CAE Execution Mode
 
-```
-$ abqpy cae --help
-INFO: Showing help with the command 'abqpy cae -- --help'.
-
-NAME
-    abqpy cae - Run Abaqus/CAE command line interface.
-
-SYNOPSIS
-    abqpy cae SCRIPT <flags> [ARGS]...
-
-DESCRIPTION
-    Run Abaqus/CAE command line interface.
-
-POSITIONAL ARGUMENTS
-    SCRIPT
-        Type: str
-        The name of the python script to run
-    ARGS
-        Extra arguments to be passed after the Abaqus/CAE command line options
-
-FLAGS
-    -d, --database=DATABASE
-        Type: Optional[str]
-        Default: None
-        The name of the database file to open, by default None
-    --replay=REPLAY
-        Type: Optional[str]
-        Default: None
-        The name of the replay file to open, by default None
-    --recover=RECOVER
-        Type: Optional[str]
-        Default: None
-        The name of the journal file to open, by default None
-    --gui=GUI
-        Type: bool
-        Default: False
-        Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
-    --noenvstartup=NOENVSTARTUP
-        Type: bool
-        Default: False
-        Do not execute the Abaqus/CAE startup file, by default False
-    --noSavedOptions=NOSAVEDOPTIONS
-        Type: bool
-        Default: False
-        Do not use the saved options, by default False
-    --noStartupDialog=NOSTARTUPDIALOG
-        Type: bool
-        Default: False
-        Do not display the startup dialog, by default False
-    --guiRecord=GUIRECORD
-        Type: bool
-        Default: False
-        Record the GUI commands to a file, by default False
-    --guiNoRecord=GUINORECORD
-        Type: bool
-        Default: False
-        Do not record the GUI commands to a file, by default False
-    Additional flags are accepted.
-        Other unrecognized keyword arguments
-
-NOTES
-    You can also use flags syntax for POSITIONAL ARGUMENTS
+```{command-output} abqpy cae --help
+:returncode: 2
 ```
 
 ### Abaqus Python Execution Mode
 
-```
-$ abqpy python --help
-INFO: Showing help with the command 'abqpy python -- --help'.
-
-NAME
-    abqpy python - Run Abaqus Python command line interface.
-
-SYNOPSIS
-    abqpy python SCRIPT <flags> [ARGS]...
-
-DESCRIPTION
-    Run Abaqus Python command line interface.
-
-POSITIONAL ARGUMENTS
-    SCRIPT
-        Type: str
-        The name of the python script to run
-    ARGS
-        Extra arguments to be passed after the Abaqus/CAE command line options
-
-FLAGS
-    -s, --sim=SIM
-        Type: Optional[str]
-        Default: None
-        The name of the simulation file to open, by default None
-    -l, --log=LOG
-        Type: Optional[str]
-        Default: None
-        The name of the log file to open, by default None
-    Additional flags are accepted.
-        Other unrecognized keyword arguments
-
-NOTES
-    You can also use flags syntax for POSITIONAL ARGUMENTS
+```{command-output} abqpy python --help
+:returncode: 2
 ```
 
 ## Comments
