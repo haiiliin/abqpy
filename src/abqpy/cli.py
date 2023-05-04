@@ -20,11 +20,20 @@ class AbqpyCLIBase:
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
 
-    def abaqus(self, *args):  # noqa
-        """Run custom Abaqus command: `abaqus [args]`, arguments are separated by space."""
+    def abaqus(self, name: str, *args, **options):
+        """Run custom Abaqus command: `abaqus {name} {args} {options}`, arguments are separated by space, options are
+        handled by the `_parse_options` method.
+
+        Parameters
+        ----------
+        name : str
+            The name of the Abaqus command to be run.
+        args, options
+            Arguments and options to be passed to the Abaqus command.
+        """
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")  # noqa
-        options = " ".join(args)
-        self.run(f"{abaqus} {options}")
+        args, options = " ".join(args), self._parse_options(**options)
+        self.run(f"{abaqus} {name} {args} {options}")
 
 
 class AbqpyMiscCLI(AbqpyCLIBase):
@@ -69,158 +78,141 @@ class AbqpyMiscCLI(AbqpyCLIBase):
         if kwargs:
             warnings.warn(f"Unrecognized keyword arguments: {kwargs}")
 
-        # Parse options
-        options = self._parse_options(cpus=cpus, gpus=gpus, memory=memory, interactive=interactive,
-                                      globalmodel=globalmodel, scratch=scratch)  # fmt: skip
-
         # Execute command
-        self.abaqus("optimization", task, job, options)
+        self.abaqus("optimization", task, job, cpus=cpus, gpus=gpus, memory=memory,
+                    interactive=interactive, globalmodel=globalmodel, scratch=scratch)  # fmt: skip
 
-    def command(self, name: str, *args, **kwargs):
-        """Run any Abaqus command.
+    def help(self, *args, **options):
+        self.abaqus("help", *args, **options)
 
-        Parameters
-        ----------
-        name : str
-            The name of the Abaqus command to run
-        args, kwargs
-            The arguments to be passed to the Abaqus command
-        """
-        # Parse options
-        options = self._parse_options(**kwargs)
-        self.abaqus(name, *args, options)
+    def information(self, *args, **options):
+        self.abaqus("information", *args, **options)
 
-    def help(self, *args, **kwargs):
-        self.command("help", *args, **kwargs)
+    def whereami(self, *args, **options):
+        self.abaqus("whereami", *args, **options)
 
-    def information(self, *args, **kwargs):
-        self.command("information", *args, **kwargs)
+    def cse(self, *args, **options):
+        self.abaqus("cse", *args, **options)
 
-    def whereami(self, *args, **kwargs):
-        self.command("whereami", *args, **kwargs)
+    def cosimulation(self, *args, **options):
+        self.abaqus("cosimulation", *args, **options)
 
-    def cse(self, *args, **kwargs):
-        self.command("cse", *args, **kwargs)
+    def fmu(self, *args, **options):
+        self.abaqus("fmu", *args, **options)
 
-    def cosimulation(self, *args, **kwargs):
-        self.command("cosimulation", *args, **kwargs)
+    def script(self, *args, **options):
+        self.abaqus("script", *args, **options)
 
-    def fmu(self, *args, **kwargs):
-        self.command("fmu", *args, **kwargs)
+    def doc(self, *args, **options):
+        self.abaqus("doc", *args, **options)
 
-    def script(self, *args, **kwargs):
-        self.command("script", *args, **kwargs)
+    def licensing(self, *args, **options):
+        self.abaqus("licensing", *args, **options)
 
-    def doc(self, *args, **kwargs):
-        self.command("doc", *args, **kwargs)
+    def ascfil(self, *args, **options):
+        self.abaqus("ascfil", *args, **options)
 
-    def licensing(self, *args, **kwargs):
-        self.command("licensing", *args, **kwargs)
+    def append(self, *args, **options):
+        self.abaqus("append", *args, **options)
 
-    def ascfil(self, *args, **kwargs):
-        self.command("ascfil", *args, **kwargs)
+    def findkeyword(self, *args, **options):
+        self.abaqus("findkeyword", *args, **options)
 
-    def append(self, *args, **kwargs):
-        self.command("append", *args, **kwargs)
+    def fetch(self, *args, **options):
+        self.abaqus("fetch", *args, **options)
 
-    def findkeyword(self, *args, **kwargs):
-        self.command("findkeyword", *args, **kwargs)
+    def make(self, *args, **options):
+        self.abaqus("make", *args, **options)
 
-    def fetch(self, *args, **kwargs):
-        self.command("fetch", *args, **kwargs)
+    def upgrade(self, *args, **options):
+        self.abaqus("upgrade", *args, **options)
 
-    def make(self, *args, **kwargs):
-        self.command("make", *args, **kwargs)
+    def sim_version(self, *args, **options):
+        self.abaqus("sim_version", *args, **options)
 
-    def upgrade(self, *args, **kwargs):
-        self.command("upgrade", *args, **kwargs)
+    def odb2sim(self, *args, **options):
+        self.abaqus("odb2sim", *args, **options)
 
-    def sim_version(self, *args, **kwargs):
-        self.command("sim_version", *args, **kwargs)
+    def odbreport(self, *args, **options):
+        self.abaqus("odbReport", *args, **options)
 
-    def odb2sim(self, *args, **kwargs):
-        self.command("odb2sim", *args, **kwargs)
+    def restartjoin(self, *args, **options):
+        self.abaqus("restartjoin", *args, **options)
 
-    def odbreport(self, *args, **kwargs):
-        self.command("odbReport", *args, **kwargs)
+    def substructurecombine(self, *args, **options):
+        self.abaqus("substructurecombine", *args, **options)
 
-    def restartjoin(self, *args, **kwargs):
-        self.command("restartjoin", *args, **kwargs)
+    def substructurerecover(self, *args, **options):
+        self.abaqus("substructurerecover", *args, **options)
 
-    def substructurecombine(self, *args, **kwargs):
-        self.command("substructurecombine", *args, **kwargs)
+    def odbcombine(self, *args, **options):
+        self.abaqus("odbcombine", *args, **options)
 
-    def substructurerecover(self, *args, **kwargs):
-        self.command("substructurerecover", *args, **kwargs)
+    def networkDBConnector(self, *args, **options):
+        self.abaqus("networkDBConnector", *args, **options)
 
-    def odbcombine(self, *args, **kwargs):
-        self.command("odbcombine", *args, **kwargs)
+    def emloads(self, *args, **options):
+        self.abaqus("emloads", *args, **options)
 
-    def networkDBConnector(self, *args, **kwargs):
-        self.command("networkDBConnector", *args, **kwargs)
+    def mtxasm(self, *args, **options):
+        self.abaqus("mtxasm", *args, **options)
 
-    def emloads(self, *args, **kwargs):
-        self.command("emloads", *args, **kwargs)
+    def fromnastran(self, *args, **options):
+        self.abaqus("fromnastran", *args, **options)
 
-    def mtxasm(self, *args, **kwargs):
-        self.command("mtxasm", *args, **kwargs)
+    def tonastran(self, *args, **options):
+        self.abaqus("tonastran", *args, **options)
 
-    def fromnastran(self, *args, **kwargs):
-        self.command("fromnastran", *args, **kwargs)
+    def fromansys(self, *args, **options):
+        self.abaqus("fromansys", *args, **options)
 
-    def tonastran(self, *args, **kwargs):
-        self.command("tonastran", *args, **kwargs)
+    def frompamcrash(self, *args, **options):
+        self.abaqus("frompamcrash", *args, **options)
 
-    def fromansys(self, *args, **kwargs):
-        self.command("fromansys", *args, **kwargs)
+    def fromradioss(self, *args, **options):
+        self.abaqus("fromradioss", *args, **options)
 
-    def frompamcrash(self, *args, **kwargs):
-        self.command("frompamcrash", *args, **kwargs)
+    def toOutput2(self, *args, **options):
+        self.abaqus("toOutput2", *args, **options)
 
-    def fromradioss(self, *args, **kwargs):
-        self.command("fromradioss", *args, **kwargs)
+    def fromdyna(self, *args, **options):
+        self.abaqus("fromdyna", *args, **options)
 
-    def toOutput2(self, *args, **kwargs):
-        self.command("toOutput2", *args, **kwargs)
+    def tozaero(self, *args, **options):
+        self.abaqus("tozaero", *args, **options)
 
-    def fromdyna(self, *args, **kwargs):
-        self.command("fromdyna", *args, **kwargs)
+    def adams(self, *args, **options):
+        self.abaqus("adams", *args, **options)
 
-    def tozaero(self, *args, **kwargs):
-        self.command("tozaero", *args, **kwargs)
+    def tosimpack(self, *args, **options):
+        self.abaqus("tosimpack", *args, **options)
 
-    def adams(self, *args, **kwargs):
-        self.command("adams", *args, **kwargs)
+    def fromsimpack(self, *args, **options):
+        self.abaqus("fromsimpack", *args, **options)
 
-    def tosimpack(self, *args, **kwargs):
-        self.command("tosimpack", *args, **kwargs)
+    def toexcite(self, *args, **options):
+        self.abaqus("toexcite", *args, **options)
 
-    def fromsimpack(self, *args, **kwargs):
-        self.command("fromsimpack", *args, **kwargs)
+    def moldflow(self, *args, **options):
+        self.abaqus("moldflow", *args, **options)
 
-    def toexcite(self, *args, **kwargs):
-        self.command("toexcite", *args, **kwargs)
+    def encrypt(self, *args, **options):
+        self.abaqus("encrypt", *args, **options)
 
-    def moldflow(self, *args, **kwargs):
-        self.command("moldflow", *args, **kwargs)
+    def decrypt(self, *args, **options):
+        self.abaqus("decrypt", *args, **options)
 
-    def encrypt(self, *args, **kwargs):
-        self.command("encrypt", *args, **kwargs)
+    def suspend(self, *args, **options):
+        self.abaqus("suspend", *args, **options)
 
-    def decrypt(self, *args, **kwargs):
-        self.command("decrypt", *args, **kwargs)
+    def resume(self, *args, **options):
+        self.abaqus("resume", *args, **options)
 
-    def suspend(self, *args, **kwargs):
-        self.command("suspend", *args, **kwargs)
+    def terminate(self, *args, **options):
+        self.abaqus("terminate", *args, **options)
 
-    def resume(self, *args, **kwargs):
-        self.command("resume", *args, **kwargs)
-
-    def terminate(self, *args, **kwargs):
-        self.command("terminate", *args, **kwargs)
-
-    def sysVerify(self, *args, **kwargs):
-        self.command("sysVerify", *args, **kwargs)
+    def sysVerify(self, *args, **options):
+        self.abaqus("sysVerify", *args, **options)
 
 
 class AbqpyCLI(AbqpyCLIBase):
