@@ -54,7 +54,7 @@ For the following commands, the boolean flags can be specified with the followin
 
 ## Examples
 
-1. If you want to run you python script in Abaqus/CAE GUI mode, you could run:
+1. If you want to run you python script in Abaqus/CAE mode, you could run:
 
    ```sh
    abqpy cae script.py [args ...]
