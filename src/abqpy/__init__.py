@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from .__main__ import AbqpyCLI, abaqus  # noqa
+from .__main__ import AbqpyCLI, cli  # noqa
 
 try:
     from ._version import version as _default_version

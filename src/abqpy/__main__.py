@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import warnings
 
 import fire
 
@@ -34,6 +35,7 @@ class AbqpyCLI:
         noStartupDialog: bool = False,
         guiRecord: bool = False,
         guiNoRecord: bool = False,
+        **kwargs,
     ):
         """Run Abaqus/CAE command line interface.
 
@@ -61,7 +63,12 @@ class AbqpyCLI:
             Record the GUI commands to a file, by default False
         guiNoRecord : bool, optional
             Do not record the GUI commands to a file, by default False
+        kwargs
+            Other unrecognized keyword arguments
         """
+        if kwargs:
+            warnings.warn(f"Unrecognized keyword arguments: {kwargs}")
+
         # Parse options
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
                                       database=database, replay=replay, recover=recover, noenvstartup=noenvstartup,
@@ -80,6 +87,7 @@ class AbqpyCLI:
         *args,
         sim: str = None,
         log: str = None,
+        **kwargs,
     ):
         """Run Abaqus Python command line interface.
 
@@ -93,7 +101,12 @@ class AbqpyCLI:
             The name of the simulation file to open, by default None
         log : str, optional
             The name of the log file to open, by default None
+        kwargs
+            Other unrecognized keyword arguments
         """
+        if kwargs:
+            warnings.warn(f"Unrecognized keyword arguments: {kwargs}")
+
         # Parse options
         options = self._parse_options(sim=sim, log=log)
         args = " ".join(args)
@@ -104,13 +117,13 @@ class AbqpyCLI:
 
 
 #: The abqpy command line interface, use this object to run abqpy commands from the python scripts
-abaqus = AbqpyCLI()
+cli = AbqpyCLI()
 
 
-def cli():
+def main():
     """The abqpy command line interface"""
     fire.Fire(AbqpyCLI)
 
 
 if __name__ == "__main__":
-    cli()
+    main()
