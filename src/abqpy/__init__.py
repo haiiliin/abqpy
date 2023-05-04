@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from .__main__ import AbqpyCLI, abaqus  # noqa
+
 try:
     from ._version import version as _default_version
 except ImportError:

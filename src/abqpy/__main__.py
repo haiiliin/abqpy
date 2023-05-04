@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import os
 
 import fire
@@ -6,8 +8,15 @@ import fire
 class AbqpyCLI:
     """The abqpy command line interface"""
 
+    def _parse_options(self, **options: str | bool | None) -> str:  # noqa
+        """Parse options to be passed to Abaqus/CAE command line interface. If the value is a string, the option will
+        be passed as `option=value`; if the value is a boolean, the option will be passed as `option` if True, or
+        ignored if False; if the value is None, the option will be ignored."""
+        return " ".join([f"{key}={val}" if isinstance(val, str) else key for key, val in options.items() if val])
+
     def run(self, cmd: str):  # noqa
         """Run custom command."""
+        cmd = cmd.strip()
         message = f"Running the following command: {cmd}"
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
@@ -54,20 +63,16 @@ class AbqpyCLI:
             Do not record the GUI commands to a file, by default False
         """
         # Parse options
-        options = [f"script={script}" if gui else f"noGUI={script}"]
-        for option in ["database", "replay", "recover"]:
-            if locals()[option]:
-                options.append(f"{option}={locals()[option]}")
-        for option in ["noenvstartup", "noSavedOptions", "noStartupDialog", "guiRecord", "guiNoRecord"]:
-            if locals()[option]:
-                options.append(option)
-        options = " ".join(options)
+        options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
+                                      database=database, replay=replay, recover=recover, noenvstartup=noenvstartup,
+                                      noSavedOptions=noSavedOptions, noStartupDialog=noStartupDialog,
+                                      guiRecord=guiRecord, guiNoRecord=guiNoRecord)  # fmt: skip
         args = " ".join(args)
         sep = "--" if args else ""
 
         # Execute command
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-        self.run(f"{abaqus} cae {options} {sep} {args}".rstrip())
+        self.run(f"{abaqus} cae {options} {sep} {args}")
 
     def python(
         self,
@@ -90,16 +95,16 @@ class AbqpyCLI:
             The name of the log file to open, by default None
         """
         # Parse options
-        options = [script]
-        for option in ["sim", "log"]:
-            if locals()[option]:
-                options.append(f"{option}={locals()[option]}")
-        options = " ".join(options)
+        options = self._parse_options(sim=sim, log=log)
         args = " ".join(args)
 
         # Execute command
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-        self.run(f"{abaqus} python {options} {args}".rstrip())
+        self.run(f"{abaqus} python {script} {options} {args}")
+
+
+#: The abqpy command line interface, use this object to run abqpy commands from the python scripts
+abaqus = AbqpyCLI()
 
 
 def cli():

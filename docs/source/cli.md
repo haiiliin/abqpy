@@ -58,7 +58,7 @@ for help.
    abqpy cae script.py [args ...]
    ```
 
-2. If you want to run you python script in Abaqus/CAE GUI or noGUI mode, providing
+2. If you want to run your python script in Abaqus/CAE GUI or noGUI mode, providing
    the `database` file option, you could run:
 
    ```sh
@@ -67,13 +67,21 @@ for help.
    abqpy cae script.py --nogui --database=file.odb [args ...] # noGUI mode
    ```
 
-3. If you want to run you python script in Abaqus Python Execution mode, you could run:
+3. If you want to run your python script in Abaqus Python Execution mode, you could run:
 
    ```sh
    abqpy python script.py [args ...]
    ```
 
-Some moderns Python IDEs allow you to customize the default python launch parameters
+4. If you want to call the cli in your python script, you could run:
+
+   ```python
+   from abqpy import abaqus
+
+   abaqus.cae("script.py", gui=True, database="file.odb")
+   ```
+
+Some modern Python IDEs allow you to customize the default python launch parameters
 that will be passed to the interpreter. This feature permits to run `abqpy` command line
 interface as a module script and customize your default abaqus execution procedure.
 
