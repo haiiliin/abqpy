@@ -1,7 +1,7 @@
 import sys
 from math import *  # noqa # pylint: disable=unused-import
 
-import abqpy.abaqus
+from abqpy import run
 
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
@@ -23,6 +23,6 @@ backwardCompatibility = BackwardCompatibility()
 YES = abaqusConstants.YES
 NO = abaqusConstants.NO
 
-abqpy.abaqus.run(cae=True)
+run(cae=True)
 
 __main__ = sys.modules["__main__"]
