@@ -49,7 +49,9 @@ line options. For details, see the [References](#references) section or run
 For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
 
 - `--gui` or `--gui=True` to set the flag to `True`;
-- `--nogui` or `--gui=False` to set the flag to `False`
+- `--nogui` or `--gui=False` to set the flag to `False`.
+
+See [here](https://github.com/google/python-fire/blob/master/docs/guide.md#boolean-arguments) for more detailed information.
 ```
 
 ## Examples
