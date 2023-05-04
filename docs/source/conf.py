@@ -73,6 +73,7 @@ extensions = [
     'sphinx_togglebutton',
     'sphinx_toolbox.confval',
     'sphinx_toolbox.more_autodoc.overloads',
+    'sphinxcontrib.programoutput',
     'hoverxref.extension',
     'myst_parser',
     'version',
