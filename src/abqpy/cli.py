@@ -4,8 +4,8 @@ import os
 import warnings
 
 
-class AbqpyCLI:
-    """The abqpy command line interface"""
+class AbqpyCLIBase:
+    """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
     def _parse_options(self, **options: str | bool | None) -> str:  # noqa
         """Parse options to be passed to Abaqus/CAE command line interface. If the value is a string, the option will
@@ -26,6 +26,209 @@ class AbqpyCLI:
         options = " ".join(args)
         self.run(f"{abaqus} {options}")
 
+
+class AbqpyMiscCLI(AbqpyCLIBase):
+    """Less frequently used Abaqus/CAE commands."""
+
+    def optimization(
+        self,
+        task: str,
+        job: str,
+        *,
+        cpus: int = None,
+        gpus: int = None,
+        memory: int = None,
+        interactive: bool = False,
+        globalmodel: str = None,
+        scratch: str = None,
+        **kwargs,
+    ):
+        """Run Abaqus optimization command.
+
+        Parameters
+        ----------
+        task : str
+            The file containing the parameters that are used to execute the optimization.
+        job : str
+            The name of the folder in which the results of the optimization are stored.
+        cpus : int, optional
+            The number of processors to use during an analysis run if parallel processing is available.
+        gpus : int, optional
+            This acceleration of the Abaqus/Standard direct solver.
+        memory : int, optional
+            Maximum amount of memory or maximum percentage of the physical memory that can be allocated.
+        interactive : bool, optional
+            This option will cause the job to run interactively.
+        globalmodel : str, optional
+            The name of the global model's results file, ODB output database file, or SIM database file.
+        scratch : str, optional
+            The name of the directory used for scratch files.
+        kwargs
+            Other unrecognized keyword arguments
+        """
+        if kwargs:
+            warnings.warn(f"Unrecognized keyword arguments: {kwargs}")
+
+        # Parse options
+        options = self._parse_options(cpus=cpus, gpus=gpus, memory=memory, interactive=interactive,
+                                      globalmodel=globalmodel, scratch=scratch)  # fmt: skip
+
+        # Execute command
+        self.abaqus("optimization", task, job, options)
+
+    def command(self, name: str, *args, **kwargs):
+        """Run any Abaqus command.
+
+        Parameters
+        ----------
+        name : str
+            The name of the Abaqus command to run
+        args, kwargs
+            The arguments to be passed to the Abaqus command
+        """
+        # Parse options
+        options = self._parse_options(**kwargs)
+        self.abaqus(name, *args, options)
+
+    def help(self, *args, **kwargs):
+        self.command("help", *args, **kwargs)
+
+    def information(self, *args, **kwargs):
+        self.command("information", *args, **kwargs)
+
+    def whereami(self, *args, **kwargs):
+        self.command("whereami", *args, **kwargs)
+
+    def cse(self, *args, **kwargs):
+        self.command("cse", *args, **kwargs)
+
+    def cosimulation(self, *args, **kwargs):
+        self.command("cosimulation", *args, **kwargs)
+
+    def fmu(self, *args, **kwargs):
+        self.command("fmu", *args, **kwargs)
+
+    def script(self, *args, **kwargs):
+        self.command("script", *args, **kwargs)
+
+    def doc(self, *args, **kwargs):
+        self.command("doc", *args, **kwargs)
+
+    def licensing(self, *args, **kwargs):
+        self.command("licensing", *args, **kwargs)
+
+    def ascfil(self, *args, **kwargs):
+        self.command("ascfil", *args, **kwargs)
+
+    def append(self, *args, **kwargs):
+        self.command("append", *args, **kwargs)
+
+    def findkeyword(self, *args, **kwargs):
+        self.command("findkeyword", *args, **kwargs)
+
+    def fetch(self, *args, **kwargs):
+        self.command("fetch", *args, **kwargs)
+
+    def make(self, *args, **kwargs):
+        self.command("make", *args, **kwargs)
+
+    def upgrade(self, *args, **kwargs):
+        self.command("upgrade", *args, **kwargs)
+
+    def sim_version(self, *args, **kwargs):
+        self.command("sim_version", *args, **kwargs)
+
+    def odb2sim(self, *args, **kwargs):
+        self.command("odb2sim", *args, **kwargs)
+
+    def odbreport(self, *args, **kwargs):
+        self.command("odbReport", *args, **kwargs)
+
+    def restartjoin(self, *args, **kwargs):
+        self.command("restartjoin", *args, **kwargs)
+
+    def substructurecombine(self, *args, **kwargs):
+        self.command("substructurecombine", *args, **kwargs)
+
+    def substructurerecover(self, *args, **kwargs):
+        self.command("substructurerecover", *args, **kwargs)
+
+    def odbcombine(self, *args, **kwargs):
+        self.command("odbcombine", *args, **kwargs)
+
+    def networkDBConnector(self, *args, **kwargs):
+        self.command("networkDBConnector", *args, **kwargs)
+
+    def emloads(self, *args, **kwargs):
+        self.command("emloads", *args, **kwargs)
+
+    def mtxasm(self, *args, **kwargs):
+        self.command("mtxasm", *args, **kwargs)
+
+    def fromnastran(self, *args, **kwargs):
+        self.command("fromnastran", *args, **kwargs)
+
+    def tonastran(self, *args, **kwargs):
+        self.command("tonastran", *args, **kwargs)
+
+    def fromansys(self, *args, **kwargs):
+        self.command("fromansys", *args, **kwargs)
+
+    def frompamcrash(self, *args, **kwargs):
+        self.command("frompamcrash", *args, **kwargs)
+
+    def fromradioss(self, *args, **kwargs):
+        self.command("fromradioss", *args, **kwargs)
+
+    def toOutput2(self, *args, **kwargs):
+        self.command("toOutput2", *args, **kwargs)
+
+    def fromdyna(self, *args, **kwargs):
+        self.command("fromdyna", *args, **kwargs)
+
+    def tozaero(self, *args, **kwargs):
+        self.command("tozaero", *args, **kwargs)
+
+    def adams(self, *args, **kwargs):
+        self.command("adams", *args, **kwargs)
+
+    def tosimpack(self, *args, **kwargs):
+        self.command("tosimpack", *args, **kwargs)
+
+    def fromsimpack(self, *args, **kwargs):
+        self.command("fromsimpack", *args, **kwargs)
+
+    def toexcite(self, *args, **kwargs):
+        self.command("toexcite", *args, **kwargs)
+
+    def moldflow(self, *args, **kwargs):
+        self.command("moldflow", *args, **kwargs)
+
+    def encrypt(self, *args, **kwargs):
+        self.command("encrypt", *args, **kwargs)
+
+    def decrypt(self, *args, **kwargs):
+        self.command("decrypt", *args, **kwargs)
+
+    def suspend(self, *args, **kwargs):
+        self.command("suspend", *args, **kwargs)
+
+    def resume(self, *args, **kwargs):
+        self.command("resume", *args, **kwargs)
+
+    def terminate(self, *args, **kwargs):
+        self.command("terminate", *args, **kwargs)
+
+    def sysVerify(self, *args, **kwargs):
+        self.command("sysVerify", *args, **kwargs)
+
+
+class AbqpyCLI(AbqpyCLIBase):
+    """The abqpy command line interface"""
+
+    def __init__(self):
+        self.misc = AbqpyMiscCLI()
+
     def cae(
         self,
         script: str,
@@ -41,7 +244,7 @@ class AbqpyCLI:
         guiNoRecord: bool = False,
         **kwargs,
     ):
-        """Run Abaqus/CAE command line interface.
+        """Run Abaqus/CAE command.
 
         Parameters
         ----------
@@ -83,6 +286,8 @@ class AbqpyCLI:
         # Execute command
         self.abaqus("cae", options, *args)
 
+    viewer = cae
+
     def python(
         self,
         script: str,
@@ -91,7 +296,7 @@ class AbqpyCLI:
         log: str = None,
         **kwargs,
     ):
-        """Run Abaqus Python command line interface.
+        """Run Abaqus/Python command.
 
         Parameters
         ----------

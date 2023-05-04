@@ -34,16 +34,16 @@ that procedures and options, `abqpy` provides two alternatives. One of them is a
 separate **command line interface** (another alternative is to use an
 {doc}`System Environment Variable <envvars>`).
 
-Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE
-Execution** mode and **Abaqus Python Execution** mode, and **Custom Command** mode:
+Currently, `abqpy` command line interface provides several execution modes: **Abaqus/CAE
+Execution** mode and **Abaqus Python Execution** mode, and more:
 ```sh
 abqpy COMMAND SCRIPT <flags> [ARGS]...
 ```
-where `COMMAND` is one of `abaqus`, `cae`, `python` or `run`, `SCRIPT` is the file name of
-your python script, `flags` are the options that could be passed to the command,
-and `ARGS` are the extra arguments to be passed after the command line options.
-For details, see the [References](#references) section or run `abqpy COMMAND --help`
-for help.
+where `COMMAND` is one of `abaqus`, `cae`, `python`, `run` or any other Abaqus commands, 
+`SCRIPT` is the file name of your python script, `flags` are the options that could be 
+passed to the command, and `ARGS` are the extra arguments to be passed after the command 
+line options. For details, see the [References](#references) section or run 
+`abqpy COMMAND --help` for help.
 
 ```{note}
 For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
@@ -127,6 +127,11 @@ Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 
 ```{command-output} abqpy python --help
 :returncode: 2
+```
+
+### Less Frequently Used Commands
+
+```{command-output} abqpy misc --help
 ```
 
 ## Comments
