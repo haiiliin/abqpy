@@ -44,7 +44,7 @@ Execution** mode and **Abaqus Python Execution** mode, and **Custom Command** mo
 ```sh
 abqpy COMMAND SCRIPT <flags> [ARGS]...
 ```
-where `COMMAND` is one of `cae`, `python` or `run`, `SCRIPT` is the file name of
+where `COMMAND` is one of `abaqus`, `cae`, `python` or `run`, `SCRIPT` is the file name of
 your python script, `flags` are the options that could be passed to the command,
 and `ARGS` are the extra arguments to be passed after the command line options.
 For details, see the [References](#references) section or run `abqpy COMMAND --help`
@@ -126,6 +126,9 @@ DESCRIPTION
 COMMANDS
     COMMAND is one of the following:
 
+     abaqus
+       Run custom Abaqus command: `abaqus [args]`, arguments are separated by space.
+
      cae
        Run Abaqus/CAE command line interface.
 
@@ -195,6 +198,8 @@ FLAGS
         Type: bool
         Default: False
         Do not record the GUI commands to a file, by default False
+    Additional flags are accepted.
+        Other unrecognized keyword arguments
 
 NOTES
     You can also use flags syntax for POSITIONAL ARGUMENTS
@@ -231,6 +236,8 @@ FLAGS
         Type: Optional[str]
         Default: None
         The name of the log file to open, by default None
+    Additional flags are accepted.
+        Other unrecognized keyword arguments
 
 NOTES
     You can also use flags syntax for POSITIONAL ARGUMENTS
