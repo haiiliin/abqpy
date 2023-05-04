@@ -4,11 +4,6 @@
 The command line interface is based on the [`fire`](https://github.com/google/python-fire) 
 package since version `20**.5.0`, and it is not compatible with the command line interface of
 previous versions.
-
-For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
-
-- `--gui` or `--gui=True` to set the flag to `True`;
-- `--nogui` or `--gui=False` to set the flag to `False`
 ```
 
 The default execution procedure invoked by `abqpy` inside the Python interpreter
@@ -49,6 +44,13 @@ your python script, `flags` are the options that could be passed to the command,
 and `ARGS` are the extra arguments to be passed after the command line options.
 For details, see the [References](#references) section or run `abqpy COMMAND --help`
 for help.
+
+```{note}
+For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
+
+- `--gui` or `--gui=True` to set the flag to `True`;
+- `--nogui` or `--gui=False` to set the flag to `False`
+```
 
 ## Examples
 
