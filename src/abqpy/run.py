@@ -2,7 +2,7 @@ import ast
 import os
 import sys
 
-from .__main__ import cli as abaqus
+from .cli import abaqus
 
 ABAQUS_COMMAND_OPTIONS = {"noGUI": True}
 

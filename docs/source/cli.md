@@ -73,11 +73,11 @@ for help.
    abqpy python script.py [args ...]
    ```
 
-4. If you want to call the cli in your python script, you could use the 
-  {py:obj}`abqpy.cli` object:
+4. If you want to call the cli in your python script, you could use the
+   {py:obj}`abqpy.cli.abaqus` object:
 
    ```python
-   from abqpy import cli as abaqus
+   from abqpy import abaqus
 
    abaqus.cae("script.py", gui=True, database="file.odb")
    ```
