@@ -1,8 +1,8 @@
 from math import *  # noqa # pylint: disable=unused-import
 
-import abqpy.abaqus
+from abqpy import run
 
-abqpy.abaqus.run(cae=False)
+run(cae=False)
 
 from abaqus.Odb.OdbCommands import *  # noqa # pylint: disable=unused-import
 from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
