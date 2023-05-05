@@ -925,7 +925,7 @@ class OptimizationTask(OptimizationTaskBase):
             restriction. The default value is TRUE.
 
             .. versionadded:: 2021
-                The `alloowNonSymmetricMesh` argument was added.
+                The ``alloowNonSymmetricMesh`` argument was added.
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
@@ -1070,7 +1070,7 @@ class OptimizationTask(OptimizationTaskBase):
             restriction. The default value is TRUE.
 
             .. versionadded:: 2021
-                The `alloowNonSymmetricMesh` argument was added.
+                The ``alloowNonSymmetricMesh`` argument was added.
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
@@ -1713,7 +1713,7 @@ class OptimizationTask(OptimizationTaskBase):
                 mdb.models[name].optimizationTasks[name].TopologyOverhangControl
 
         .. versionadded:: 2019
-            The `TopologyOverhangControl` method was added.
+            The ``TopologyOverhangControl`` method was added.
 
         Parameters
         ----------
