@@ -290,19 +290,19 @@ class PredefinedFieldModel(ModelBase):
             Possible values are MAGNITUDE and ANALYTICAL_FIELD.
         pressure2Field
             A String specifying the name of the AnalyticalField object associated with this predefined field.
-            The `pressure2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
+            The ``pressure2Field`` argument applies only when ``distributionType`` = ANALYTICAL_FIELD.
         variation
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
-            `distributionType` = FROM_FILE.
+            ``distributionType`` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
-            of the step when `distributionType` = FROM_FILE.
+            of the step when ``distributionType`` = FROM_FILE.
         step
             The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
-            of the step when `distributionType` = FROM_FILE.
+            of the step when ``distributionType`` = FROM_FILE.
         interpolate
             A Boolean specifying whether to interpolate a field read from an output database or results file.
 
@@ -607,7 +607,7 @@ class PredefinedFieldModel(ModelBase):
                 mdb.models[name].Stress
 
         .. versionadded:: 2017
-            The `Stress` method was added.
+            The ``Stress`` method was added.
 
         Parameters
         ----------
@@ -698,19 +698,19 @@ class PredefinedFieldModel(ModelBase):
             Possible values are MAGNITUDE and ANALYTICAL_FIELD.
         ratio2Field
             A String specifying the name of the AnalyticalField object associated with this predefined field.
-            The `ratio2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
+            The ``ratio2Field`` argument applies only when ``distributionType`` = ANALYTICAL_FIELD.
         variation
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
-            `distributionType` = FROM_FILE.
+            ``distributionType`` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
-            of the step when `distributionType` = FROM_FILE.
+            of the step when ``distributionType`` = FROM_FILE.
         step
             The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
-            of the step when `distributionType` = FROM_FILE.
+            of the step when ``distributionType`` = FROM_FILE.
         interpolate
             A Boolean specifying whether to interpolate a field read from an output database or results file.
 

@@ -23,7 +23,7 @@ class Stress(PredefinedField):
         - INITIAL CONDITIONS
 
     .. versionadded:: 2017
-        The `Stress` class was added.
+        The ``Stress`` class was added.
 
     """
 

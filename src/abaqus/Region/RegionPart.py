@@ -497,8 +497,8 @@ class RegionPart(RegionPartBase):
         self.stringers[name] = stringer = Stringer(name, edges, elementEdges)
         return stringer
 
-    # The following methods was originally in the `Set` object page documentation
-    # But it accessed only by `Part` and `rootAssembly` objetcs.
+    # The following methods was originally in the ``Set`` object page documentation
+    # But it accessed only by ``Part`` and ``rootAssembly`` objetcs.
 
     def SetByBoolean(
         self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
