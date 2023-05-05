@@ -136,12 +136,6 @@ class BeadTask(OptimizationTask):
     #: A Boolean specifying whether the group in the design response will be evaluated using
     #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
     #: value of False means that the existing algorithm will be used.
-<<<<<<< HEAD
-=======
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``groupSensitivities`` attribute was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     groupOperator: Boolean = OFF
 
     @abaqus_method_doc
@@ -244,16 +238,6 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -354,15 +338,5 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...

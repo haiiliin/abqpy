@@ -92,16 +92,6 @@ class Coupling(Constraint):
     #: **couplingType** = DISTRIBUTING.
     weightingMethod: SymbolicConstant = UNIFORM
 
-<<<<<<< HEAD
-=======
-    #: A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
-    #: The alpha argument applies only when couplingType=KINEMATIC.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``alpha`` attribute was added.
-    alpha: float = 0.0
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -177,15 +167,6 @@ class Coupling(Constraint):
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
             **couplingType** = DISTRIBUTING.
-<<<<<<< HEAD
-=======
-        alpha
-            A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
-            The alpha argument applies only when couplingType=KINEMATIC.
-
-            .. versionadded:: 2022
-                The ``alpha`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

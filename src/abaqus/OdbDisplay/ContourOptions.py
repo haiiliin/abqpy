@@ -216,13 +216,8 @@ class ContourOptions(DGContourOptions):
     #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
     #: spectrum when **legendHideOutsideLimits** = ON.The default value is OFF.
     #:
-<<<<<<< HEAD
     #: .. versionadded:: 2019
-    #:     The `legendHideOutsideLimits` attribute was added.
-=======
-    #: ..versionadded:: 2019
     #:     The ``legendHideOutsideLimits`` attribute was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     legendHideOutsideLimits: Boolean = OFF
 
     @abaqus_method_doc

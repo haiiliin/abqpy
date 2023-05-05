@@ -142,16 +142,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -386,16 +376,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -512,16 +492,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -708,16 +678,6 @@ class OptimizationTaskModel(ModelBase):
         viscousStiffnessDamping
             None or a Float specifying the viscous stiffness damping for the task region. The
             default value is None.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
