@@ -7,9 +7,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class LoadState:
-    """The LoadState object is the abstract base type for other LoadState objects. The
-    LoadState object has no explicit constructor or methods. The members of the LoadState
-    object are common to all objects derived from LoadState.
+    """The LoadState object is the abstract base type for other LoadState objects. The LoadState object has no
+    explicit constructor or methods. The members of the LoadState object are common to all objects derived from
+    LoadState.
 
     .. note::
         This object can be accessed by::

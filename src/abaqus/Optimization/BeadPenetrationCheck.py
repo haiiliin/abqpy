@@ -6,8 +6,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class BeadPenetrationCheck(GeometricRestriction):
-    """The BeadPenetrationCheck object defines a penetration check geometric restriction.
-    The BeadPenetrationCheck object is derived from the GeometricRestriction object.
+    """The BeadPenetrationCheck object defines a penetration check geometric restriction. The
+    BeadPenetrationCheck object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

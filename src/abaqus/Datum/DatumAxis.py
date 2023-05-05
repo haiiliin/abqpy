@@ -7,10 +7,9 @@ from .Datum import Datum
 
 @abaqus_class_doc
 class DatumAxis(Datum):
-    """The DatumAxis object has no direct constructor; it is created when a Feature object is
-    created. For example, the DatumAxisByCylFace method creates a Feature object that
-    creates a DatumAxis object.
-    The DatumAxis object is derived from the Datum object.
+    """The DatumAxis object has no direct constructor; it is created when a Feature object is created. For
+    example, the DatumAxisByCylFace method creates a Feature object that creates a DatumAxis object. The
+    DatumAxis object is derived from the Datum object.
 
     .. note::
         This object can be accessed by::

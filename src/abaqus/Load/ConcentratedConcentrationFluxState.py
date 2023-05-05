@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcentratedConcentrationFluxState(LoadState):
-    """The ConcentratedConcentrationFluxState object stores the propagating data of a
-    concentrated concentration flux in a step. One instance of this object is created
-    internally by the ConcConcFlux object for each step. The instance is also deleted
-    internally by the ConcConcFlux object.
-    The ConcentratedConcentrationFluxState object has no constructor or methods.
-    The ConcentratedConcentrationFluxState object is derived from the LoadState object.
+    """The ConcentratedConcentrationFluxState object stores the propagating data of a concentrated concentration
+    flux in a step. One instance of this object is created internally by the ConcConcFlux object for each step.
+    The instance is also deleted internally by the ConcConcFlux object. The ConcentratedConcentrationFluxState
+    object has no constructor or methods. The ConcentratedConcentrationFluxState object is derived from the
+    LoadState object.
 
     .. note::
         This object can be accessed by::

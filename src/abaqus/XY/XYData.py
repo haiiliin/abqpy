@@ -17,15 +17,12 @@ class Odb:
 
 @abaqus_class_doc
 class XYData(tuple):
-    """The XYData object is used to store values and attributes associated with XYData type
-    objects.
-    XYData objects can be created using the methods described below. The methods accessed
-    via the Session object cause the XYData object to be added to the session.xyData
-    repository.
-    Temporary XYData objects will be created if no name is supplied. Temporary XYData
-    objects will be added to the session.xyData repository but automatically deleted when
-    they are not used anymore. Temporary XYData objects are also created as a result of math
-    operations found in the abaqusMath module.
+    """The XYData object is used to store values and attributes associated with XYData type objects. XYData
+    objects can be created using the methods described below. The methods accessed via the Session object cause
+    the XYData object to be added to the session.xyData repository. Temporary XYData objects will be created if
+    no name is supplied. Temporary XYData objects will be added to the session.xyData repository but
+    automatically deleted when they are not used anymore. Temporary XYData objects are also created as a result
+    of math operations found in the abaqusMath module.
 
     .. note::
         This object can be accessed by::
@@ -477,8 +474,7 @@ class XYData(tuple):
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
     ) -> List[XYData]:
-        """This method creates a list of XYData objects by computing free body data from an Odb
-        object.
+        """This method creates a list of XYData objects by computing free body data from an Odb object.
 
         .. note::
             This function can be accessed by::
@@ -554,8 +550,8 @@ class XYData(tuple):
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
     ) -> List[XYData]:
-        """This method creates a list of XYData objects by reading through the thickness field data
-        from an Odb object.
+        """This method creates a list of XYData objects by reading through the thickness field data from an Odb
+        object.
 
         .. note::
             This function can be accessed by::
@@ -811,8 +807,9 @@ class XYData(tuple):
 
     @abaqus_method_doc
     def save(self):
-        """This method saves a temporary XYData. The name of the XYData is changed to "XYData-#".
-        If the XYData is already saved, nothing is done.
+        """This method saves a temporary XYData.
+
+        The name of the XYData is changed to "XYData-#". If the XYData is already saved, nothing is done.
         """
         ...
 

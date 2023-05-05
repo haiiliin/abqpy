@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Velocity(PredefinedField):
-    """The Velocity object stores the data for an initial velocity predefined field.
-    The Velocity object is derived from the PredefinedField object.
+    """The Velocity object stores the data for an initial velocity predefined field. The Velocity object is
+    derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

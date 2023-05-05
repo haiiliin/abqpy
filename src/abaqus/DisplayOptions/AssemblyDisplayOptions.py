@@ -24,10 +24,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AssemblyDisplayOptions:
-    """The AssemblyDisplayOptions object stores settings that specify how assemblies are to be
-    displayed in a particular viewport. The AssemblyDisplayOptions object has no
-    constructor. When you create a new viewport, the settings are copied from the current
-    viewport.
+    """The AssemblyDisplayOptions object stores settings that specify how assemblies are to be displayed in a
+    particular viewport. The AssemblyDisplayOptions object has no constructor. When you create a new viewport,
+    the settings are copied from the current viewport.
 
     .. note::
         This object can be accessed by::

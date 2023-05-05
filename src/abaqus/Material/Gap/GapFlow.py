@@ -9,8 +9,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GapFlow:
-    """The GapFlow object specifies tangential flow constitutive parameters for pore pressure
-    cohesive elements.
+    """The GapFlow object specifies tangential flow constitutive parameters for pore pressure cohesive elements.
 
     .. note::
         This object can be accessed by::

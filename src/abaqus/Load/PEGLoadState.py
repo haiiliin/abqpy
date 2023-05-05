@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PEGLoadState(LoadState):
-    """The PEGLoadState object stores the propagating data for a concentrated force in a step.
-    One instance of this object is created internally by the PEGLoad object for each step.
-    The instance is also deleted internally by the PEGLoad object.
-    The PEGLoadState object has no constructor or methods.
-    The PEGLoadState object is derived from the LoadState object.
+    """The PEGLoadState object stores the propagating data for a concentrated force in a step. One instance of
+    this object is created internally by the PEGLoad object for each step. The instance is also deleted
+    internally by the PEGLoad object. The PEGLoadState object has no constructor or methods. The PEGLoadState
+    object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

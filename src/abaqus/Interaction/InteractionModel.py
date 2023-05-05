@@ -116,8 +116,8 @@ class InteractionModel(
         useShellThickness: Boolean = ON,
         surfaceSmoothing: Optional[Literal[C.AUTOMATIC, C.NONE]] = None,
     ):
-        """This method uses contact detection to create SurfaceToSurfaceContactStd,
-        SurfaceToSurfaceContactExp, and Tie objects.
+        """This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp,
+        and Tie objects.
 
         Parameters
         ----------
@@ -204,8 +204,8 @@ class InteractionModel(
 
     @abaqus_method_doc
     def getSurfaceSeparation(self) -> Tuple[Tuple[str, str, float, bool]]:
-        """This method returns a list of all possible contacts that can be created using the
-        ContactDetection method.
+        """This method returns a list of all possible contacts that can be created using the ContactDetection
+        method.
 
         Returns
         -------

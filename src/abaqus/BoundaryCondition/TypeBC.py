@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TypeBC(BoundaryCondition):
-    """The TypeBC object stores the data for several types of predefined boundary conditions
-    that are commonly used in stress/displacement analyses.
-    The TypeBC object is derived from the BoundaryCondition object.
+    """The TypeBC object stores the data for several types of predefined boundary conditions that are commonly
+    used in stress/displacement analyses. The TypeBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -422,8 +421,7 @@ class TypeBC(BoundaryCondition):
         ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ):
-        """This method modifies the data for an existing TypeBC object in the step where it is
-        created.
+        """This method modifies the data for an existing TypeBC object in the step where it is created.
 
         Parameters
         ----------
@@ -451,8 +449,8 @@ class TypeBC(BoundaryCondition):
             Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]
         ] = None,
     ):
-        """This method always returns a value error for a TypeBC; it is inherited from the
-        BoundaryCondition object.
+        """This method always returns a value error for a TypeBC; it is inherited from the BoundaryCondition
+        object.
 
         Parameters
         ----------

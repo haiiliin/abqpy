@@ -5,9 +5,9 @@ from .CommandRegister import CommandRegister
 
 @abaqus_class_doc
 class RegisteredTuple(CommandRegister, tuple):
-    """This class allows you to create a tuple that can be queried from the GUI and is capable
-    of notifying the GUI when the contents of any of the tuple's members change.
-    The RegisteredTuple object is derived from the CommandRegister object.
+    """This class allows you to create a tuple that can be queried from the GUI and is capable of notifying the
+    GUI when the contents of any of the tuple's members change. The RegisteredTuple object is derived from the
+    CommandRegister object.
 
     .. note::
         This object can be accessed by::

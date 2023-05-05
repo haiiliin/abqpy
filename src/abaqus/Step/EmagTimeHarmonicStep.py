@@ -26,9 +26,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class EmagTimeHarmonicStep(AnalysisStep):
-    """The EmagTimeHarmonicStep object is used to calculate the electromagnetic response of the
-    system to harmonic excitation of the model.
-    The EmagTimeHarmonicStep object is derived from the AnalysisStep object.
+    """The EmagTimeHarmonicStep object is used to calculate the electromagnetic response of the system to
+    harmonic excitation of the model. The EmagTimeHarmonicStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

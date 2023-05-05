@@ -5,10 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class GeometryDisplayOptions:
-    """The GeometryDisplayOptions object stores settings that specify how assemblies are to be
-    displayed in a particular viewport. The GeometryDisplayOptions object has no
-    constructor. When you create a new viewport, the settings are copied from the current
-    viewport.
+    """The GeometryDisplayOptions object stores settings that specify how assemblies are to be displayed in a
+    particular viewport. The GeometryDisplayOptions object has no constructor. When you create a new viewport,
+    the settings are copied from the current viewport.
 
     .. note::
         This object can be accessed by::

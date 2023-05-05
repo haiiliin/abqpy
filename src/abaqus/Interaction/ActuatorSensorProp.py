@@ -5,9 +5,8 @@ from .ContactProperty import ContactProperty
 
 @abaqus_class_doc
 class ActuatorSensorProp(ContactProperty):
-    """The ActuatorSensorProp object is an interaction property that defines the properties
-    referred to by an ActuatorSensor object.
-    The ActuatorSensorProp object is derived from the InteractionProperty object.
+    """The ActuatorSensorProp object is an interaction property that defines the properties referred to by an
+    ActuatorSensor object. The ActuatorSensorProp object is derived from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

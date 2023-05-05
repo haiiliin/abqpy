@@ -7,11 +7,10 @@ from ..UtilityAndView.abaqusConstants import ALL, EVERY_TIME_INCREMENT, Symbolic
 
 @abaqus_class_doc
 class HistoryOutputRequestState:
-    """The HistoryOutputRequestState object stores the propagating data of a History output
-    request current in a step. One instance of this object is created internally by the
-    HistoryOutputRequest object for each step. The instance is also deleted internally by
-    the HistoryOutputRequest object.
-    The HistoryOutputRequestState object has no constructor or methods.
+    """The HistoryOutputRequestState object stores the propagating data of a History output request current in a
+    step. One instance of this object is created internally by the HistoryOutputRequest object for each step.
+    The instance is also deleted internally by the HistoryOutputRequest object. The HistoryOutputRequestState
+    object has no constructor or methods.
 
     .. note::
         This object can be accessed by::

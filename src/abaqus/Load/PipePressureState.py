@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PipePressureState(LoadState):
-    """The PipePressureState object stores the propagating data for a pipe pressure in a step.
-    One instance of this object is created internally by the PipePressure object for each
-    step. The instance is also deleted internally by the PipePressure object.
-    The PipePressureState object has no constructor or methods.
-    The PipePressureState object is derived from the LoadState object.
+    """The PipePressureState object stores the propagating data for a pipe pressure in a step. One instance of
+    this object is created internally by the PipePressure object for each step. The instance is also deleted
+    internally by the PipePressure object. The PipePressureState object has no constructor or methods. The
+    PipePressureState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

@@ -21,10 +21,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class AnalysisStep(Step):
-    """The AnalysisStep object is the abstract base type for other Step objects, except the
-    InitialStep object. It has no explicit constructor, no methods, and has only inherited
-    members.
-    The AnalysisStep object is derived from the Step object.
+    """The AnalysisStep object is the abstract base type for other Step objects, except the InitialStep object.
+    It has no explicit constructor, no methods, and has only inherited members. The AnalysisStep object is
+    derived from the Step object.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class IProfile(Profile):
-    """The IProfile object defines the properties of an I profile.
-    The IProfile object is derived from the Profile object.
+    """The IProfile object defines the properties of an I profile. The IProfile object is derived from the
+    Profile object.
 
     .. note::
         This object can be accessed by::
@@ -96,7 +96,6 @@ class IProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -107,6 +106,5 @@ class IProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

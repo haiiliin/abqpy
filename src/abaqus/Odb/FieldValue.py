@@ -10,10 +10,9 @@ from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, SymbolicConstant, 
 
 @abaqus_class_doc
 class FieldValue:
-    """The FieldValue object represents the field data at a point. The FieldValue object has no
-    constructor; it is created by the Odb object when data are added to the FieldOutput
-    object using the addData method. For faster, bulk-data access, see Using bulk data
-    access to an output database.
+    """The FieldValue object represents the field data at a point. The FieldValue object has no constructor; it
+    is created by the Odb object when data are added to the FieldOutput object using the addData method. For
+    faster, bulk-data access, see Using bulk data access to an output database.
 
     .. note::
         This object can be accessed by::

@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SmoothingAssignment:
-    """The SmoothingAssignment object stores the surface smoothing assignment definition for
-    surfaces in ContactExp and ContactStd objects. The SmoothingAssignment object has no
-    constructor or members.
+    """The SmoothingAssignment object stores the surface smoothing assignment definition for surfaces in
+    ContactExp and ContactStd objects. The SmoothingAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -25,8 +24,8 @@ class SmoothingAssignment:
     def changeValuesInStep(
         self, stepName: str, index: int, value: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]
     ):
-        """This method allows modification of surface smoothing assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface smoothing assignments already defined on surfaces in a
+        given step.
 
         Parameters
         ----------
@@ -46,8 +45,7 @@ class SmoothingAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
-        """This method allows addition of surface smoothing assignments to new surfaces in a given
-        step.
+        """This method allows addition of surface smoothing assignments to new surfaces in a given step.
 
         Parameters
         ----------
@@ -66,8 +64,8 @@ class SmoothingAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing surface smoothing assignments from
-        ContactExp and ContactStd objects.
+        """The delete method allows you to delete existing surface smoothing assignments from ContactExp and
+        ContactStd objects.
 
         Parameters
         ----------

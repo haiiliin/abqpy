@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class EulerianBC(BoundaryCondition):
-    """The EulerianBC object stores the data for an Eulerian boundary condition.
-    The EulerianBC object is derived from the BoundaryCondition object.
+    """The EulerianBC object stores the data for an Eulerian boundary condition. The EulerianBC object is
+    derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -100,8 +100,7 @@ class EulerianBC(BoundaryCondition):
         inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
         outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
     ):
-        """This method modifies the data for an existing EulerianBC object in the step where it is
-        created.
+        """This method modifies the data for an existing EulerianBC object in the step where it is created.
 
         Parameters
         ----------
@@ -128,8 +127,7 @@ class EulerianBC(BoundaryCondition):
         inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
         outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
     ):
-        """This method modifies the propagating data for an existing EulerianBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing EulerianBC object in the specified step.
 
         Parameters
         ----------

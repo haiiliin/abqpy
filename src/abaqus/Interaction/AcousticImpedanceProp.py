@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AcousticImpedanceProp(ContactProperty):
-    """The AcousticImpedanceProp object is an interaction property that defines the properties
-    referred to by an AcousticImpedance object.
-    The AcousticImpedanceProp object is derived from the InteractionProperty object.
+    """The AcousticImpedanceProp object is an interaction property that defines the properties referred to by an
+    AcousticImpedance object. The AcousticImpedanceProp object is derived from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

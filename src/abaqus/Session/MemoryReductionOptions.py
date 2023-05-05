@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class MemoryReductionOptions:
-    """The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for
-    running in reduced memory mode. The MemoryReductionOptions object has no constructor.
-    Abaqus creates the **MemoryReductionOptions** member when a session is started.
+    """The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for running in
+    reduced memory mode. The MemoryReductionOptions object has no constructor. Abaqus creates the
+    **MemoryReductionOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

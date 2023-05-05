@@ -5,8 +5,8 @@ from .Section import Section
 
 @abaqus_class_doc
 class EulerianSection(Section):
-    """The EulerianSection object defines the properties of a Eulerian section.
-    The EulerianSection object is derived from the Section object.
+    """The EulerianSection object defines the properties of a Eulerian section. The EulerianSection object is
+    derived from the Section object.
 
     .. note::
         This object can be accessed by::

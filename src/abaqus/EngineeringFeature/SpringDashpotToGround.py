@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class SpringDashpotToGround(SpringDashpot):
-    """The SpringDashpotToGround object defines springs and/or dashpots between points and
-    ground on a part or an assembly region.
-    The SpringDashpotToGround object is derived from the SpringDashpot object.
+    """The SpringDashpotToGround object defines springs and/or dashpots between points and ground on a part or
+    an assembly region. The SpringDashpotToGround object is derived from the SpringDashpot object.
 
     .. note::
         This object can be accessed by::

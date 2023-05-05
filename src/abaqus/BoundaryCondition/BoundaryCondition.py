@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BoundaryCondition:
-    """The BoundaryCondition object is the abstract base type for other BoundaryCondition
-    objects. The BoundaryCondition object has no explicit constructor. The methods and
-    members of the BoundaryCondition object are common to all objects derived from the
-    BoundaryCondition.
+    """The BoundaryCondition object is the abstract base type for other BoundaryCondition objects. The
+    BoundaryCondition object has no explicit constructor. The methods and members of the BoundaryCondition
+    object are common to all objects derived from the BoundaryCondition.
 
     .. note::
         This object can be accessed by::
@@ -37,8 +36,7 @@ class BoundaryCondition:
 
     @abaqus_method_doc
     def deactivate(self, stepName: str):
-        """This method deactivates the boundary condition in the specified step and all subsequent
-        steps.
+        """This method deactivates the boundary condition in the specified step and all subsequent steps.
 
         Parameters
         ----------
@@ -63,8 +61,8 @@ class BoundaryCondition:
 
     @abaqus_method_doc
     def reset(self, stepName: str):
-        """This method resets the boundary condition state of the specified step to the state of
-        the previous analysis step.
+        """This method resets the boundary condition state of the specified step to the state of the previous
+        analysis step.
 
         Parameters
         ----------

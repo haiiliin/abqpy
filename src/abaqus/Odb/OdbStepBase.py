@@ -165,7 +165,6 @@ class OdbStepBase:
         ------
         ValueError
             previousStepName is invalid, If **previousStepName** is invalid.
-
         """
         ...
 
@@ -229,8 +228,7 @@ class OdbStepBase:
         frameValue: str,
         match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST,
     ) -> OdbFrame:
-        """This method retrieves an OdbFrame object associated with a given load case and frame
-        value.
+        """This method retrieves an OdbFrame object associated with a given load case and frame value.
 
         Parameters
         ----------
@@ -264,8 +262,7 @@ class OdbStepBase:
         ...
 
     def getHistoryRegion(self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")) -> HistoryRegion:
-        """This method retrieves a HistoryRegion object associated with a HistoryPoint in the
-        model.
+        """This method retrieves a HistoryRegion object associated with a HistoryPoint in the model.
 
         Parameters
         ----------

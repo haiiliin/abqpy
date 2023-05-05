@@ -7,9 +7,8 @@ from .Datum import Datum
 
 @abaqus_class_doc
 class DatumPlane(Datum):
-    """The DatumPlane object has no direct constructor; it is created when a Feature object is
-    created. For example, the DatumPlaneByPrincipalPlane method creates a Feature object
-    that creates a DatumPlane object.
+    """The DatumPlane object has no direct constructor; it is created when a Feature object is created. For
+    example, the DatumPlaneByPrincipalPlane method creates a Feature object that creates a DatumPlane object.
     The DatumPlane object is derived from the Datum object.
 
     .. note::

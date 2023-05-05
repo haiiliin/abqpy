@@ -5,8 +5,7 @@ from .OdbAuxiliaryData import OdbAuxiliaryData
 
 @abaqus_class_doc
 class OdbAnalysisError:
-    """The OdbAnalysisError object stores the description of different errors encountered
-    during the analysis.
+    """The OdbAnalysisError object stores the description of different errors encountered during the analysis.
 
     .. note::
         This object can be accessed by::

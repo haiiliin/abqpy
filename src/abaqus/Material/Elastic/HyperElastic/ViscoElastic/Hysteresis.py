@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class Hysteresis:
-    """The Hysteresis object specifies the creep part of the material model for the hysteretic
-    behavior of elastomers.
+    """The Hysteresis object specifies the creep part of the material model for the hysteretic behavior of
+    elastomers.
 
     .. note::
         This object can be accessed by::

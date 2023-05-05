@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class PointMassInertia(Inertia):
-    """The PointMassInertia object defines point masses and point rotary inertia on a part or
-    an assembly region.
-    The PointMassInertia object is derived from the Inertia object.
+    """The PointMassInertia object defines point masses and point rotary inertia on a part or an assembly
+    region. The PointMassInertia object is derived from the Inertia object.
 
     .. note::
         This object can be accessed by::

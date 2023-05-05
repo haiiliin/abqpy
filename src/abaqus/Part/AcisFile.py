@@ -22,8 +22,8 @@ class AcisFile:
 
     @abaqus_method_doc
     def openAcis(self, fileName: str, scaleFromFile: Boolean = OFF):
-        """This method creates an AcisFile object from a file containing ACIS-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing ACIS-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -60,8 +60,8 @@ class AcisFile:
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
-        """This method creates an AcisFile object from a file containing V5-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing V5-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -101,9 +101,9 @@ class AcisFile:
         topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         convertUnits: Boolean = OFF,
     ):
-        """This method creates an AcisFile object from a file containing Elysium Neutral
-        File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object
-        is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry
+        that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object is subsequently used by the
+        PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -147,8 +147,8 @@ class AcisFile:
         topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         uniteWires: Union[SymbolicConstant, Boolean] = ON,
     ):
-        """This method creates an AcisFile object from a file containing IGES-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing IGES-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -202,8 +202,8 @@ class AcisFile:
 
     @abaqus_method_doc
     def openParasolid(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
-        """This method creates an AcisFile object from a file containing Parasolid-format geometry.
-        This object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing Parasolid-format geometry. This object
+        is subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -230,8 +230,8 @@ class AcisFile:
 
     @abaqus_method_doc
     def openStep(self, fileName: str, scale: float = 1):
-        """This method creates an AcisFile object from a file containing STEP-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing STEP-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -260,8 +260,8 @@ class AcisFile:
 
     @abaqus_method_doc
     def openVda(self, fileName: str):
-        """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
-        This object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing VDA-FS-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::

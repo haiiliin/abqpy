@@ -7,13 +7,12 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class KeywordBlock:
-    """The KeywordBlock object contains a representation of its model in the Abaqus input file
-    format. You may edit the contents of the KeywordBlock to add solver functionality that
-    is not supported by Abaqus/CAE. As a general rule, edits to the KeywordBlock object
-    should be made as the last step prior to writing the actual Abaqus input file, thus
-    avoiding possible conflicts with changes made using other MDB commands. The KeywordBlock
-    object has no constructor. A KeywordBlock object is created when you create a model
-    object. A model object contains only one KeywordBlock object.
+    """The KeywordBlock object contains a representation of its model in the Abaqus input file format. You may
+    edit the contents of the KeywordBlock to add solver functionality that is not supported by Abaqus/CAE. As a
+    general rule, edits to the KeywordBlock object should be made as the last step prior to writing the actual
+    Abaqus input file, thus avoiding possible conflicts with changes made using other MDB commands. The
+    KeywordBlock object has no constructor. A KeywordBlock object is created when you create a model object. A
+    model object contains only one KeywordBlock object.
 
     .. note::
         This object can be accessed by::
@@ -91,12 +90,11 @@ class KeywordBlock:
 
     @abaqus_method_doc
     def synchVersions(self, storeNodesAndElements: Boolean):
-        """This method synchronizes, or merges, the edits made in this object with those made in
-        the model using other scripting commands or the user interface. The synchVersions method
-        updates the **sieBlocks** member. The **sieBlocks** member is empty prior to the first call
-        to synchVersions. As a side effect, synchVersions sets **lastSynchCount** to the current
-        value of the counter associated with the Mdb object, which is used to determine if
-        synchronization is necessary.
+        """This method synchronizes, or merges, the edits made in this object with those made in the model using
+        other scripting commands or the user interface. The synchVersions method updates the **sieBlocks**
+        member. The **sieBlocks** member is empty prior to the first call to synchVersions. As a side effect,
+        synchVersions sets **lastSynchCount** to the current value of the counter associated with the Mdb
+        object, which is used to determine if synchronization is necessary.
 
         Parameters
         ----------

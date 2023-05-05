@@ -8,13 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class AccelerationBaseMotionBCState(BoundaryConditionState):
-    """The AccelerationBaseMotionBCState object stores the propagating data for a velocity base
-    motion boundary condition in a step. One instance of this object is created internally
-    by the AccelerationBaseMotionBC object for each step. The instance is also deleted
-    internally by the AccelerationBaseMotionBC object.
-    The AccelerationBaseMotionBCState object has no constructor or methods.
-    The AccelerationBaseMotionBCState object is derived from the BoundaryConditionState
-    object.
+    """The AccelerationBaseMotionBCState object stores the propagating data for a velocity base motion boundary
+    condition in a step. One instance of this object is created internally by the AccelerationBaseMotionBC
+    object for each step. The instance is also deleted internally by the AccelerationBaseMotionBC object. The
+    AccelerationBaseMotionBCState object has no constructor or methods. The AccelerationBaseMotionBCState object
+    is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

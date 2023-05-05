@@ -55,14 +55,12 @@ class Vertex:
 
     @abaqus_method_doc
     def getEdges(self) -> Tuple[int]:
-        """This method returns a sequence consisting of the edge ids of the edges which share this
-        vertex.
+        """This method returns a sequence consisting of the edge ids of the edges which share this vertex.
 
         Returns
         -------
         Tuple[int]
             A tuple of integers.
-
         """
         ...
 
@@ -74,7 +72,6 @@ class Vertex:
         -------
         MeshNodeArray
             A MeshNodeArray object which is a sequence of MeshNode objects.
-
         """
         ...
 
@@ -86,6 +83,5 @@ class Vertex:
         -------
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
-
         """
         ...

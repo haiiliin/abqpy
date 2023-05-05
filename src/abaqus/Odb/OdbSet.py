@@ -52,9 +52,8 @@ class OdbSet:
 
     @abaqus_method_doc
     def __init__(self, name: str, nodes: Sequence[OdbMeshNode]):
-        """This method creates a node set from an array of OdbMeshNode objects (for part
-        instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
-        assembly-level sets).
+        """This method creates a node set from an array of OdbMeshNode objects (for part instance-level sets) or
+        from a sequence of arrays of OdbMeshNode objects (for assembly-level sets).
 
         .. note::
             This function can be accessed by::
@@ -107,9 +106,8 @@ class OdbSet:
 
     @abaqus_method_doc
     def ElementSet(self, name: str, elements: Sequence[OdbMeshElement]):
-        """This method creates an element set from an array of OdbMeshElement objects (for part
-        instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
-        assembly-level sets).
+        """This method creates an element set from an array of OdbMeshElement objects (for part instance-level
+        sets) or from a sequence of arrays of OdbMeshElement objects (for assembly-level sets).
 
         .. note::
             This function can be accessed by::
@@ -224,7 +222,7 @@ class OdbSet:
 
                 elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))``
 
-            where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` 
+            where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']``
             and ``SIDE1`` and ``SIDE2`` indicate the side of the element set.
 
         Returns

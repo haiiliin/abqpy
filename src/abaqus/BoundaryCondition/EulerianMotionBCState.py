@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import Boolean, FREE, ON, SymbolicConstant
 
 @abaqus_class_doc
 class EulerianMotionBCState(BoundaryConditionState):
-    """The EulerianMotionBCState object stores the propagating data for an Eulerian mesh motion
-    boundary condition in a step. One instance of this object is created internally by the
-    EulerianMotionBC object for each step. The instance is also deleted internally by the
-    EulerianMotionBC object.
-    The EulerianMotionBCState object has no constructor or methods.
-    The EulerianMotionBCState object is derived from the BoundaryConditionState object.
+    """The EulerianMotionBCState object stores the propagating data for an Eulerian mesh motion boundary
+    condition in a step. One instance of this object is created internally by the EulerianMotionBC object for
+    each step. The instance is also deleted internally by the EulerianMotionBC object. The EulerianMotionBCState
+    object has no constructor or methods. The EulerianMotionBCState object is derived from the
+    BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

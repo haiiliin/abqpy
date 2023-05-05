@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class HistoryOutput:
-    """The HistoryOutput object contains the history output at a point for the specified
-    variable.
+    """The HistoryOutput object contains the history output at a point for the specified variable.
 
     .. note::
         This object can be accessed by::

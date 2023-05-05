@@ -63,8 +63,6 @@ class ImageAnimation:
 
     @abaqus_method_doc
     def closed(self):
-        """This method indicates if the ImageAnimation is open or closed for writing animation
-        frames.
-        """
+        """This method indicates if the ImageAnimation is open or closed for writing animation frames."""
         # TODO: implement this method
         ...

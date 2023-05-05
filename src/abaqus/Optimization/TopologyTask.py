@@ -27,8 +27,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyTask(OptimizationTask):
-    """The TopologyTask object defines a topology task.
-    The TopologyTask object is derived from the OptimizationTask object.
+    """The TopologyTask object defines a topology task. The TopologyTask object is derived from the
+    OptimizationTask object.
 
     .. note::
         This object can be accessed by::

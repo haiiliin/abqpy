@@ -11,10 +11,10 @@ from ...BasicGeometry.Vertex import Vertex
 class EqualDistanceConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
     def __init__(self, entity1: str, entity2: ConstrainedSketchGeometry, midpoint: Vertex):
-        """This method creates an equal distance constraint. This constraint can be applied between
-        a midpoint ConstrainedSketchVertex object and any other two ConstrainedSketchVertex objects or between a midpoint ConstrainedSketchVertex
-        object and two ConstrainedSketchGeometry objects that are lines. The equal distance
-        constraint forces the midpoint vertex to remain at an equal distance from the two other
+        """This method creates an equal distance constraint. This constraint can be applied between a midpoint
+        ConstrainedSketchVertex object and any other two ConstrainedSketchVertex objects or between a midpoint
+        ConstrainedSketchVertex object and two ConstrainedSketchGeometry objects that are lines. The equal
+        distance constraint forces the midpoint vertex to remain at an equal distance from the two other
         vertices or lines.
 
         .. note::
@@ -36,6 +36,5 @@ class EqualDistanceConstraint(ConstrainedSketchConstraint):
         -------
         ConstrainedSketchConstraint
             A ConstrainedSketchConstraint object.
-
         """
         ...

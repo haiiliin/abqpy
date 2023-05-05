@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnDisplacementBC(BoundaryCondition):
-    """The ConnDisplacementBC object stores the data for a connector displacement/rotation
-    boundary condition.
+    """The ConnDisplacementBC object stores the data for a connector displacement/rotation boundary condition.
     The ConnDisplacementBC object is derived from the BoundaryCondition object.
 
     .. note::
@@ -83,9 +82,8 @@ class ConnDisplacementBC(BoundaryCondition):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ):
-        """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the boundary
+        condition may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -178,8 +176,8 @@ class ConnDisplacementBC(BoundaryCondition):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ):
-        """This method modifies the data for an existing ConnDisplacementBC object in the step
-        where it is created.
+        """This method modifies the data for an existing ConnDisplacementBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -254,8 +252,8 @@ class ConnDisplacementBC(BoundaryCondition):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ):
-        """This method modifies the propagating data for an existing ConnDisplacementBC object in
-        the specified step.
+        """This method modifies the propagating data for an existing ConnDisplacementBC object in the specified
+        step.
 
         Parameters
         ----------

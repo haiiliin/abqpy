@@ -11,8 +11,8 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class Arrow(Annotation, _OptionsBase):
-    """The Arrow object stores the visual settings and location of an arrow annotation.
-    The Arrow object is derived from the Annotation object.
+    """The Arrow object stores the visual settings and location of an arrow annotation. The Arrow object is
+    derived from the Annotation object.
 
     .. note::
         This object can be accessed by::
@@ -286,7 +286,6 @@ class Arrow(Annotation, _OptionsBase):
         -------
         Arrow
             An Arrow object.
-
         """
         super().__init__()
         self.name = name
@@ -312,7 +311,6 @@ class Arrow(Annotation, _OptionsBase):
             A Float specifying the **X** translation amount in millimeters.
         y
             A Float specifying the*Y* translation amount in millimeters.
-
         """
         # TODO: implement this method
         ...
@@ -327,7 +325,6 @@ class Arrow(Annotation, _OptionsBase):
             A Float specifying the **X** translation amount in millimeters.
         y
             A Float specifying the*Y* translation amount in millimeters.
-
         """
         # TODO: implement this method
         ...
@@ -488,7 +485,6 @@ class Arrow(Annotation, _OptionsBase):
         lineThickness
             A SymbolicConstant specifying the line thickness of the arrow. Possible values are
             VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
-
         """
         super().setValues(
             startPoint=startPoint,

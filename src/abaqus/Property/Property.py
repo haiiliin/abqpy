@@ -97,8 +97,8 @@ def assignRebarOrientation(region: tuple, localCsys: Datum, axis: SymbolicConsta
 
 @abaqus_function_doc
 def flipNormal(regions: Region, referenceRegion: str = ""):
-    """This method flips the normals of shell or membrane elements of an orphan mesh or of
-    two-dimensional geometric regions.
+    """This method flips the normals of shell or membrane elements of an orphan mesh or of two-dimensional
+    geometric regions.
 
     .. note::
         This function can be accessed by::
@@ -123,8 +123,8 @@ def flipNormal(regions: Region, referenceRegion: str = ""):
 
 @abaqus_function_doc
 def flipTangent(regions: Region):
-    """This method flips the tangents of beam or truss elements of an orphan mesh or of
-    one-dimensional geometric regions.
+    """This method flips the tangents of beam or truss elements of an orphan mesh or of one-dimensional
+    geometric regions.
 
     .. note::
         This function can be accessed by::

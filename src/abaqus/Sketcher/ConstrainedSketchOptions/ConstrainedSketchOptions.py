@@ -9,8 +9,8 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConstrainedSketchOptions:
-    """The ConstrainedSketchOptions object is used to store values and attributes associated
-    with a particular sketch. The ConstrainedSketchOptions object has no constructor.
+    """The ConstrainedSketchOptions object is used to store values and attributes associated with a particular
+    sketch. The ConstrainedSketchOptions object has no constructor.
 
     .. note::
         This object can be accessed by::
@@ -119,6 +119,5 @@ class ConstrainedSketchOptions:
         Raises
         ------
         RangeError
-
         """
         ...

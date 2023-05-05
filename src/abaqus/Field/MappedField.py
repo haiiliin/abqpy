@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MappedField(AnalyticalField):
-    """The MappedField object defines a spatially varying field whose value is calculated from
-    an external source data.
-    The MappedField object is derived from the AnalyticalField object.
+    """The MappedField object defines a spatially varying field whose value is calculated from an external
+    source data. The MappedField object is derived from the AnalyticalField object.
 
     .. note::
         This object can be accessed by::

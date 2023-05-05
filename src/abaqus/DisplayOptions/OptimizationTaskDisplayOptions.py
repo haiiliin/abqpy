@@ -5,11 +5,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class OptimizationTaskDisplayOptions:
-    """The OptimizationTaskDisplayOptions object stores settings that specify how assemblies
-    are to be displayed in a particular viewport when
-    session.viewports[name].assemblyDisplay.optimizationTasks=ON
-    The OptimizationTaskDisplayOptions object has no constructor. When you create a new
-    viewport, the settings are copied from the current viewport.
+    """The OptimizationTaskDisplayOptions object stores settings that specify how assemblies are to be displayed
+    in a particular viewport when session.viewports[name].assemblyDisplay.optimizationTasks=ON The
+    OptimizationTaskDisplayOptions object has no constructor. When you create a new viewport, the settings are
+    copied from the current viewport.
 
     .. note::
         This object can be accessed by::

@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class MaterialFlowBCState(BoundaryConditionState):
-    """The MaterialFlowBCState object stores the propagating data for a connector material flow
-    boundary condition in a step. One instance of this object is created internally by the
-    MaterialFlowBC object for each step. The instance is also deleted internally by the
-    MaterialFlowBC object.
-    The MaterialFlowBCState object has no constructor or methods.
-    The MaterialFlowBCState object is derived from the BoundaryConditionState object.
+    """The MaterialFlowBCState object stores the propagating data for a connector material flow boundary
+    condition in a step. One instance of this object is created internally by the MaterialFlowBC object for each
+    step. The instance is also deleted internally by the MaterialFlowBC object. The MaterialFlowBCState object
+    has no constructor or methods. The MaterialFlowBCState object is derived from the BoundaryConditionState
+    object.
 
     .. note::
         This object can be accessed by::

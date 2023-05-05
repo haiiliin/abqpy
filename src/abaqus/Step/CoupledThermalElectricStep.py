@@ -35,9 +35,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CoupledThermalElectricStep(AnalysisStep):
-    """The CoupledThermalElectricStep object is used to analyze problems where the electrical
-    potential and temperature fields must be solved simultaneously.
-    The CoupledThermalElectricStep object is derived from the AnalysisStep object.
+    """The CoupledThermalElectricStep object is used to analyze problems where the electrical potential and
+    temperature fields must be solved simultaneously. The CoupledThermalElectricStep object is derived from the
+    AnalysisStep object.
 
     .. note::
         This object can be accessed by::

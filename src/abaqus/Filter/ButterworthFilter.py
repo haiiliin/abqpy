@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ButterworthFilter(Filter):
-    """The ButterworthFilter object defines a Butterworth type filter.
-    The ButterworthFilter object is derived from the Filter object.
+    """The ButterworthFilter object defines a Butterworth type filter. The ButterworthFilter object is derived
+    from the Filter object.
 
     .. note::
         This object can be accessed by::

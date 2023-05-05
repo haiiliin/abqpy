@@ -119,8 +119,8 @@ class OdbFrame:
     @overload
     @abaqus_method_doc
     def __init__(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0):
-        """This constructor creates an OdbFrame object for a specific load case and appends it to
-        the frame sequence.
+        """This constructor creates an OdbFrame object for a specific load case and appends it to the frame
+        sequence.
 
         .. note::
             This function can be accessed by::
@@ -204,8 +204,8 @@ class OdbFrame:
     @overload
     @abaqus_method_doc
     def FieldOutput(self, field: "FieldOutput", name: str = "", description: str = ""):
-        """This method creates a FieldOutput object from an existing FieldOutput object of the same
-        output database.
+        """This method creates a FieldOutput object from an existing FieldOutput object of the same output
+        database.
 
         .. note::
             This function can be accessed by::

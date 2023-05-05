@@ -25,8 +25,7 @@ class InterestingPoint:
 
     @abaqus_method_doc
     def __init__(self, edge: Edge, rule: Literal[C.MIDDLE, C.CENTER]):
-        """This method creates an interesting point along an edge. An InterestingPoint is a
-        temporary object.
+        """This method creates an interesting point along an edge. An InterestingPoint is a temporary object.
 
         .. note::
             This function can be accessed by::
@@ -46,6 +45,5 @@ class InterestingPoint:
         -------
         InterestingPoint
             An InterestingPoint object.
-
         """
         ...

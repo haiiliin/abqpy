@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BodyForceState(LoadState):
-    """The BodyForceState object stores the propagating data of a body force in a step. One
-    instance of this object is created internally by the BodyForce object for each step. The
-    instance is also deleted internally by the BodyForce object.
-    The BodyForceState object has no constructor or methods.
-    The BodyForceState object is derived from the LoadState object.
+    """The BodyForceState object stores the propagating data of a body force in a step. One instance of this
+    object is created internally by the BodyForce object for each step. The instance is also deleted internally
+    by the BodyForce object. The BodyForceState object has no constructor or methods. The BodyForceState object
+    is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

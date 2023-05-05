@@ -12,8 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Axis:
-    """The Axis object is used to store the display attributes of axes. Axes objects are
-    automatically created when adding XYCurve objects to a Chart object.
+    """The Axis object is used to store the display attributes of axes. Axes objects are automatically created
+    when adding XYCurve objects to a Chart object.
 
     .. note::
         This object can be accessed by::

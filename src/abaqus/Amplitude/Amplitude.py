@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
 
 @abaqus_class_doc
 class Amplitude:
-    """The Amplitude object is the abstract base type for other Amplitude objects. The
-    Amplitude object has no explicit constructor. The methods and members of the Amplitude
-    object are common to all objects derived from the Amplitude.
+    """The Amplitude object is the abstract base type for other Amplitude objects. The Amplitude object has no
+    explicit constructor. The methods and members of the Amplitude object are common to all objects derived from
+    the Amplitude.
 
     .. note::
         This object can be accessed by::

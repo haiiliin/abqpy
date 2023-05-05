@@ -18,9 +18,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, NO, OFF, ON, Symbo
 
 @abaqus_class_doc
 class ContactStd(Interaction):
-    """The ContactStd object defines the contact domain and associated properties during
-    contact in an Abaqus/Standard analysis.
-    The ContactStd object is derived from the Interaction object.
+    """The ContactStd object defines the contact domain and associated properties during contact in an
+    Abaqus/Standard analysis. The ContactStd object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

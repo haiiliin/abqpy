@@ -30,8 +30,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         embeddedSpace: Literal[C.THREE_D, C.TWO_D_PLANAR, C.AXISYMMETRIC],
         type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
     ) -> OdbPart:
-        """This method creates an OdbPart object. Nodes and elements are added to this object at a
-        later stage.
+        """This method creates an OdbPart object. Nodes and elements are added to this object at a later stage.
 
         .. note::
             This function can be accessed by::

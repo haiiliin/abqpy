@@ -8,8 +8,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class ElasticFoundation(Interaction):
-    """The ElasticFoundation object defines a mechanical foundation.
-    The ElasticFoundation object is derived from the Interaction object.
+    """The ElasticFoundation object defines a mechanical foundation. The ElasticFoundation object is derived
+    from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -65,15 +65,14 @@ class ElasticFoundation(Interaction):
 
     @abaqus_method_doc
     def setValues(self, *args, **kwargs):
-        """This method modifies the data for an existing ElasticFoundation object in the step where
-        it is created.
-        """
+        """This method modifies the data for an existing ElasticFoundation object in the step where it is
+        created."""
         ...
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, stiffness: Optional[float] = None):
-        """This method modifies the propagating data of an existing ElasticFoundation object in the
-        specified step.
+        """This method modifies the propagating data of an existing ElasticFoundation object in the specified
+        step.
 
         Parameters
         ----------

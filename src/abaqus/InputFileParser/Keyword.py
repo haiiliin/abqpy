@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class Keyword:
-    """The Keyword object is used to store a keyword definition from an Abaqus input file.
-    Keyword objects are returned via the InputFile.parse() method.
+    """The Keyword object is used to store a keyword definition from an Abaqus input file. Keyword objects are
+    returned via the InputFile.parse() method.
 
     .. note::
         This object can be accessed by::

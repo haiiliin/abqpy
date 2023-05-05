@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import ANALYSIS_DEFAULT, Boolean, CONSTANT
 
 @abaqus_class_doc
 class BeamSection(Section):
-    """The BeamSection object defines the properties of a beam section.
-    The BeamSection object is derived from the Section object.
+    """The BeamSection object defines the properties of a beam section. The BeamSection object is derived from
+    the Section object.
 
     .. note::
         This object can be accessed by::

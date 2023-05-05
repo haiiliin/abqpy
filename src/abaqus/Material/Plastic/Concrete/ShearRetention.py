@@ -5,8 +5,8 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ShearRetention:
-    r"""The ShearRetention object defines the reduction of the shear modulus associated with
-    crack surfaces in a Concrete model as a function of the tensile strain across the crack.
+    r"""The ShearRetention object defines the reduction of the shear modulus associated with crack surfaces in a
+    Concrete model as a function of the tensile strain across the crack.
 
     .. note::
         This object can be accessed by::

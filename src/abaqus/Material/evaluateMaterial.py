@@ -38,8 +38,7 @@ def evaluateMaterial(
     relaxationTime: Optional[float] = None,
     creepTime: Optional[float] = None,
 ):
-    """This method evaluates the behavior of a hyperelastic material under standard test
-    conditions.
+    """This method evaluates the behavior of a hyperelastic material under standard test conditions.
 
     .. note::
         This function can be accessed by::

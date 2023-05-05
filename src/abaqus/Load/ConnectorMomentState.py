@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConnectorMomentState(LoadState):
-    """The ConnectorMomentState object stores the propagating data for a connector moment in a
-    step. One instance of this object is created internally by the ConnectorMoment object
-    for each step. The instance is also deleted internally by the ConnectorMoment object.
-    The ConnectorMomentState object has no constructor or methods.
-    The ConnectorMomentState object is derived from the LoadState object.
+    """The ConnectorMomentState object stores the propagating data for a connector moment in a step. One
+    instance of this object is created internally by the ConnectorMoment object for each step. The instance is
+    also deleted internally by the ConnectorMoment object. The ConnectorMomentState object has no constructor or
+    methods. The ConnectorMomentState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

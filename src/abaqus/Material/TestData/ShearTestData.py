@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class ShearTestData:
-    r"""The ShearTestData object specifies the normalized shear creep compliance or relaxation
-    modulus as a function of time.
+    r"""The ShearTestData object specifies the normalized shear creep compliance or relaxation modulus as a
+    function of time.
 
     .. note::
         This object can be accessed by::

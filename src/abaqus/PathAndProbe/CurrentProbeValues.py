@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class CurrentProbeValues:
-    """The CurrentProbeValues object has no constructor. The CurrentProbeValues object is
-    created when you import the Visualization module.
+    """The CurrentProbeValues object has no constructor. The CurrentProbeValues object is created when you
+    import the Visualization module.
 
     .. note::
         This object can be accessed by::

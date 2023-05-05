@@ -23,9 +23,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceToSurfaceContactStd(Interaction):
-    """The SurfaceToSurfaceContactStd object defines surface-to-surface contact during an
-    Abaqus/Standard analysis.
-    The SurfaceToSurfaceContactStd object is derived from the Interaction object.
+    """The SurfaceToSurfaceContactStd object defines surface-to-surface contact during an Abaqus/Standard
+    analysis. The SurfaceToSurfaceContactStd object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -344,8 +343,9 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     @abaqus_method_doc
     def swapSurfaces(self):
-        """This method switches the master and slave surfaces of a surface-to-surface contact
-        pair. This command is valid only for the step in which the interaction is created.
+        """This method switches the master and slave surfaces of a surface-to-surface contact pair.
+
+        This command is valid only for the step in which the interaction is created.
         """
         ...
 
@@ -378,8 +378,8 @@ class SurfaceToSurfaceContactStd(Interaction):
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
         bondingSet: Optional[Region] = None,
     ):
-        """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the
-        step where it is created.
+        """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the step where it
+        is created.
 
         Parameters
         ----------
@@ -489,8 +489,8 @@ class SurfaceToSurfaceContactStd(Interaction):
         amplitude: str = "",
         contactControls: str = "",
     ):
-        """This method modifies the propagating data for an existing SurfaceToSurfaceContactStd
-        object in the specified step.
+        """This method modifies the propagating data for an existing SurfaceToSurfaceContactStd object in the
+        specified step.
 
         Parameters
         ----------
