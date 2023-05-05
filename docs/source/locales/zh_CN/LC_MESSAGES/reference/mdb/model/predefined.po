@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"POT-Creation-Date: 2023-05-05 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1342,8 +1342,8 @@ msgstr ""
 #: of
 msgid ""
 "A String specifying the name of the AnalyticalField object associated "
-"with this predefined field. The `pressure2Field` argument applies only "
-"when `distributionType` = ANALYTICAL_FIELD."
+"with this predefined field. The ``pressure2Field`` argument applies only "
+"when ``distributionType`` = ANALYTICAL_FIELD."
 msgstr ""
 
 #: abaqus.PredefinedField.PorePressure.PorePressure:49
@@ -1366,7 +1366,7 @@ msgstr ""
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:28 of
 msgid ""
 "A String specifying the name of the file from which the Field values are "
-"to be read when `distributionType` = FROM_FILE."
+"to be read when ``distributionType`` = FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.PorePressure.PorePressure:55
@@ -1377,7 +1377,7 @@ msgstr ""
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:31 of
 msgid ""
 "The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, "
-"interval or iteration of the step when `distributionType` = FROM_FILE."
+"interval or iteration of the step when ``distributionType`` = FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.PorePressure.PorePressure:58
@@ -1388,7 +1388,7 @@ msgstr ""
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:34 of
 msgid ""
 "The SymbolicConstant LAST_STEP or an Int specifying the increment, "
-"interval or iteration of the step when `distributionType` = FROM_FILE."
+"interval or iteration of the step when ``distributionType`` = FROM_FILE."
 msgstr ""
 
 #: abaqus.PredefinedField.PorePressure.PorePressure:61
@@ -1445,7 +1445,7 @@ msgid "A Saturation object."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:8 of
-msgid "The `Stress` method was added."
+msgid "The ``Stress`` method was added."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:12
@@ -1914,8 +1914,8 @@ msgstr ""
 #: abaqus.PredefinedField.VoidsRatio.VoidsRatio.setValues:22 of
 msgid ""
 "A String specifying the name of the AnalyticalField object associated "
-"with this predefined field. The `ratio2Field` argument applies only when "
-"`distributionType` = ANALYTICAL_FIELD."
+"with this predefined field. The ``ratio2Field`` argument applies only "
+"when ``distributionType`` = ANALYTICAL_FIELD."
 msgstr ""
 
 #: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:49
@@ -2247,7 +2247,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.PredefinedField.Stress.Stress:14 of
-msgid "The `Stress` class was added."
+msgid "The ``Stress`` class was added."
 msgstr ""
 
 #: abaqus.PredefinedField.Stress.Stress:48 of
@@ -4454,5 +4454,48 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the AnalyticalField object associated with "
+#~ "this predefined field. The `pressure2Field`"
+#~ " argument applies only when "
+#~ "`distributionType` = ANALYTICAL_FIELD."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the file from which the Field "
+#~ "values are to be read when "
+#~ "`distributionType` = FROM_FILE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant LAST_INCREMENT or an "
+#~ "Int specifying the increment, interval "
+#~ "or iteration of the step when "
+#~ "`distributionType` = FROM_FILE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant LAST_STEP or an Int"
+#~ " specifying the increment, interval or "
+#~ "iteration of the step when "
+#~ "`distributionType` = FROM_FILE."
+#~ msgstr ""
+
+#~ msgid "The `Stress` method was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the AnalyticalField object associated with "
+#~ "this predefined field. The `ratio2Field` "
+#~ "argument applies only when `distributionType`"
+#~ " = ANALYTICAL_FIELD."
+#~ msgstr ""
+
+#~ msgid "The `Stress` class was added."
 #~ msgstr ""
 

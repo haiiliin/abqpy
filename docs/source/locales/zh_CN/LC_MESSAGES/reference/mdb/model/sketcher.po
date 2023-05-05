@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"POT-Creation-Date: 2023-05-05 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1848,13 +1848,13 @@ msgstr ""
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:9 of
 msgid ""
 "A SymbolicConstant specifying how the sketch is displayed. Possible "
-"values are:  * `STANDALONE`: Indicates a new stand-alone sketch. The "
+"values are:  * ``STANDALONE``: Indicates a new stand-alone sketch. The "
 "current viewport is     cleared and is replaced by the stand-alone "
-"sketch. The view direction     is set to -Z.  * `SUPERIMPOSE`: Indicates "
-"that the sketch is superimposed on the current     viewport. The view "
-"direction is changed to be perpendicular to the     sketch plane. The "
-"change is effected smoothly as an animated sequence     of many small "
-"viewing steps."
+"sketch. The view direction     is set to -Z.  * ``SUPERIMPOSE``: "
+"Indicates that the sketch is superimposed on the current     viewport. "
+"The view direction is changed to be perpendicular to the     sketch "
+"plane. The change is effected smoothly as an animated sequence     of "
+"many small viewing steps."
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:9 of
@@ -1864,7 +1864,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:13 of
-msgid "`STANDALONE`: Indicates a new stand-alone sketch. The current viewport is"
+msgid ""
+"``STANDALONE``: Indicates a new stand-alone sketch. The current viewport "
+"is"
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:12 of
@@ -1874,7 +1876,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:17 of
-msgid "`SUPERIMPOSE`: Indicates that the sketch is superimposed on the current"
+msgid "``SUPERIMPOSE``: Indicates that the sketch is superimposed on the current"
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:16 of
@@ -3793,13 +3795,13 @@ msgstr ""
 #: of
 msgid ""
 "A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.  .."
-" versionchanged:: 2017     The `vertex2` argument was renamed to "
-"`entity2`."
+" versionchanged:: 2017     The ``vertex2`` argument was renamed to "
+"``entity2``."
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension:15
 #: of
-msgid "The `vertex2` argument was renamed to `entity2`."
+msgid "The ``vertex2`` argument was renamed to ``entity2``."
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points:1
@@ -3831,12 +3833,12 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the direction of the arc. Possible values "
 "are CLOCKWISE and COUNTERCLOCKWISE.  .. versionadded:: 2017     The "
-"`direction` argument was added."
+"``direction`` argument was added."
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds:20
 #: of
-msgid "The `direction` argument was added."
+msgid "The ``direction`` argument was added."
 msgstr ""
 
 #: abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds:26
@@ -8364,5 +8366,52 @@ msgstr ""
 #~ "Check `Parameter.__init__ on help.3ds.com/2017 "
 #~ "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parameterpyc.htm?contextscope=all"
 #~ "#simaker-parameter__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying how the "
+#~ "sketch is displayed. Possible values "
+#~ "are:  * `STANDALONE`: Indicates a new"
+#~ " stand-alone sketch. The current "
+#~ "viewport is     cleared and is replaced"
+#~ " by the stand-alone sketch. The "
+#~ "view direction     is set to -Z.  "
+#~ "* `SUPERIMPOSE`: Indicates that the "
+#~ "sketch is superimposed on the current"
+#~ "     viewport. The view direction is "
+#~ "changed to be perpendicular to the"
+#~ "     sketch plane. The change is "
+#~ "effected smoothly as an animated "
+#~ "sequence     of many small viewing "
+#~ "steps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`STANDALONE`: Indicates a new stand-"
+#~ "alone sketch. The current viewport is"
+#~ msgstr ""
+
+#~ msgid "`SUPERIMPOSE`: Indicates that the sketch is superimposed on the current"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A ConstrainedSketchVertex object or "
+#~ "ConstrainedSketchGeometry object.  .. "
+#~ "versionchanged:: 2017     The `vertex2` "
+#~ "argument was renamed to `entity2`."
+#~ msgstr ""
+
+#~ msgid "The `vertex2` argument was renamed to `entity2`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the direction"
+#~ " of the arc. Possible values are "
+#~ "CLOCKWISE and COUNTERCLOCKWISE.  .. "
+#~ "versionadded:: 2017     The `direction` "
+#~ "argument was added."
+#~ msgstr ""
+
+#~ msgid "The `direction` argument was added."
 #~ msgstr ""
 
