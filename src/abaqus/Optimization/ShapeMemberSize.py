@@ -40,13 +40,13 @@ class ShapeMemberSize(GeometricRestriction):
     #: A bool specifying whether to use the node group region. The default value is OFF.
     #:
     #: .. versionadded:: 2022
-    #:     The `assignNodeGroupRegion` attribute was added.
+    #:     The ``assignNodeGroupRegion`` attribute was added.
     assignNodeGroupRegion: str = OFF
 
     #: A Node Region object specifying the check node group.
     #:
     #: .. versionadded:: 2022
-    #:     The `nodeGroupRegion` attribute was added.
+    #:     The ``nodeGroupRegion`` attribute was added.
     nodeGroupRegion: str = ""
 
     @abaqus_method_doc
@@ -86,12 +86,12 @@ class ShapeMemberSize(GeometricRestriction):
             A bool specifying whether to use the node group region. The default value is OFF.
 
             .. versionadded:: 2022
-                The `assignNodeGroupRegion` argument was added.
+                The ``assignNodeGroupRegion`` argument was added.
         nodeGroupRegion
             A Node Region object specifying the check node group.
 
             .. versionadded:: 2022
-                The `nodeGroupRegion` argument was added.
+                The ``nodeGroupRegion`` argument was added.
 
         Returns
         -------
@@ -124,11 +124,11 @@ class ShapeMemberSize(GeometricRestriction):
             A bool specifying whether to use the node group region. The default value is OFF.
 
             .. versionadded:: 2022
-                The `assignNodeGroupRegion` argument was added.
+                The ``assignNodeGroupRegion`` argument was added.
         nodeGroupRegion
             A Node Region object specifying the check node group.
 
             .. versionadded:: 2022
-                The `nodeGroupRegion` argument was added.
+                The ``nodeGroupRegion`` argument was added.
         """
         ...

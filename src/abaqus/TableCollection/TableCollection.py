@@ -22,7 +22,7 @@ class TableCollection:
         - TABLE COLLECTION
 
     .. versionadded:: 2020
-        The `TableCollection` class was added.
+        The ``TableCollection`` class was added.
     """
 
     #: A repository of the PropertyTable object.

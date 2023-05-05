@@ -84,7 +84,7 @@ class OptimizationTaskModel(ModelBase):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -149,7 +149,7 @@ class OptimizationTaskModel(ModelBase):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------
@@ -247,7 +247,7 @@ class OptimizationTaskModel(ModelBase):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -392,7 +392,7 @@ class OptimizationTaskModel(ModelBase):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------
@@ -481,7 +481,7 @@ class OptimizationTaskModel(ModelBase):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -517,7 +517,7 @@ class OptimizationTaskModel(ModelBase):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------
@@ -602,7 +602,7 @@ class OptimizationTaskModel(ModelBase):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -712,7 +712,7 @@ class OptimizationTaskModel(ModelBase):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------

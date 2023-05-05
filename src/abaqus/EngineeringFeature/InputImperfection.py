@@ -20,7 +20,7 @@ class InputImperfection(Imperfection):
         - IMPERFECTION
 
     .. versionadded:: 2023
-        The `InputImperfection` class was added.
+        The ``InputImperfection`` class was added.
     """
 
     #: A String specifying the repository key.

@@ -29,7 +29,7 @@ class CrushStress:
         - CRUSH STRESS
 
     .. versionadded:: 2022
-        The `CrushStress` class was added.
+        The ``CrushStress`` class was added.
     """
 
     #: A sequence of sequences of Floats specifying the items described below.

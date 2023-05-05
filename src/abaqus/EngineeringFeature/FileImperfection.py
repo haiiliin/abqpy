@@ -25,7 +25,7 @@ class FileImperfection(Imperfection):
         - Scaling factor for this mode.
 
     .. versionadded:: 2023
-        The `FileImperfection` class was added.
+        The ``FileImperfection`` class was added.
     """
 
     #: A String specifying the repository key.

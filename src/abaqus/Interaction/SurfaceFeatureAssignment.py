@@ -63,7 +63,7 @@ class SurfaceFeatureAssignment:
 
             .. versionadded:: 2023
 
-                The `useDynFeatEdge` argument was added.
+                The ``useDynFeatEdge`` argument was added.
         """
         ...
 
@@ -104,7 +104,7 @@ class SurfaceFeatureAssignment:
 
             .. versionadded:: 2023
 
-                The `useDynFeatEdge` argument was added.
+                The ``useDynFeatEdge`` argument was added.
         """
         ...
 

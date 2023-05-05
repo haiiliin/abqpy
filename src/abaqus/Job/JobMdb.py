@@ -73,7 +73,7 @@ class JobMdb(MdbBase):
 
         .. versionchanged:: 2023
 
-            The `parallelizationMethodExplicit` argument was removed.
+            The ``parallelizationMethodExplicit`` argument was removed.
 
         Parameters
         ----------
@@ -103,10 +103,10 @@ class JobMdb(MdbBase):
             with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
-            syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+            syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
             valid according to the system administrator. The default value is an empty
             string. Note: You can use the **atTime** argument when creating a Job object on a Windows
-            workstation; however, the `at` command is available only on Linux platforms.
+            workstation; however, the ``at`` command is available only on Linux platforms.
         echoPrint
             A Boolean specifying whether an echo of the input data is printed. The default value is
             OFF.
@@ -147,7 +147,7 @@ class JobMdb(MdbBase):
 
             .. versionchanged:: 2023
 
-                The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
                 argument was removed in 2023.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -163,7 +163,7 @@ class JobMdb(MdbBase):
             available.
 
             .. versionchanged:: 2022
-                The `licenseType` argument was added.
+                The ``licenseType`` argument was added.
 
         Returns
         -------
@@ -239,7 +239,7 @@ class JobMdb(MdbBase):
 
         .. versionchanged:: 2023
 
-            The `parallelizationMethodExplicit` argument was removed.
+            The ``parallelizationMethodExplicit`` argument was removed.
 
         Parameters
         ----------
@@ -268,10 +268,10 @@ class JobMdb(MdbBase):
             with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
-            syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+            syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
             valid according to the system administrator. The default value is an empty string. Note:
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
-            however, the `at` command is available only on Linux platforms.
+            however, the ``at`` command is available only on Linux platforms.
         scratch
             A String specifying the location of the scratch directory. The default value is an empty
             string.
@@ -301,7 +301,7 @@ class JobMdb(MdbBase):
 
             .. versionchanged:: 2023
 
-                The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
                 argument was removed in 2023.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on

@@ -20,7 +20,7 @@ class FluidInflator(Interaction):
         - FLUID INFLATOR
 
     .. versionadded:: 2019
-        The `FluidInflator` class was added.
+        The ``FluidInflator`` class was added.
     """
 
     @abaqus_method_doc

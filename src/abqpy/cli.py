@@ -9,7 +9,7 @@ class AbqpyCLIBase:
 
     def _parse_options(self, **options: str | bool | None) -> str:  # noqa
         """Parse options to be passed to Abaqus/CAE command line interface. If the value is a string, the option will
-        be passed as `option=value`; if the value is a boolean, the option will be passed as `option` if True, or
+        be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or
         ignored if False; if the value is None, the option will be ignored."""
         return " ".join([f"{key}={val}" if isinstance(val, str) else key for key, val in options.items() if val])
 
@@ -21,8 +21,8 @@ class AbqpyCLIBase:
         os.system(cmd)
 
     def abaqus(self, name: str, *args, **options):
-        """Run custom Abaqus command: `abaqus {name} {args} {options}`, arguments are separated by space, options are
-        handled by the `_parse_options` method.
+        """Run custom Abaqus command: ``abaqus {name} {args} {options}``, arguments are separated by space, options are
+        handled by the :py:meth:`~abqpy.cli.AbqpyCLIBase._parse_options` method.
 
         Parameters
         ----------

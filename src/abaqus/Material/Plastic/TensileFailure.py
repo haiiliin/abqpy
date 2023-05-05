@@ -34,7 +34,7 @@ class TensileFailure:
         - TENSILE FAILURE
 
     .. versionadded:: 2020
-        The `TensileFailure` class was added.
+        The ``TensileFailure`` class was added.
     """
 
     @abaqus_method_doc
