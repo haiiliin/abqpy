@@ -159,7 +159,7 @@ def openSessionOptions(fileName: str = "", directory: Literal[C.CURRENT, C.HOME]
           (caePrefsAccess.HOME)
 
         The default value is HOME. Either **fileName** or **directory** must be
-        supplied. The `fileName` or `directory` arguments are mutually exclusive.
+        supplied. The ``fileName`` or ``directory`` arguments are mutually exclusive.
 
     Returns
     -------

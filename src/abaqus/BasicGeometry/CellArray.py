@@ -102,7 +102,7 @@ class CellArray(List[Cell]):
         ----------
         coordinates
             A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the object to
-            find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type
+            find. ``findAt`` returns either a Cell object or a sequence of Cell objects based on the type
             of input.
 
             * If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point.
