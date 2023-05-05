@@ -1338,7 +1338,7 @@ class InteractionModel(
                 mdb.models[name].FluidInflator
 
         .. versionadded:: 2019
-            The `FluidInflator` method was added.
+            The ``FluidInflator`` method was added.
 
         Parameters
         ----------
@@ -2098,14 +2098,14 @@ class InteractionModel(
             and LEFT. The default value is RIGHT.
 
             .. versionadded:: 2019
-                The `normalAdjustment` argument was added.
+                The ``normalAdjustment`` argument was added.
         normalAdjustment
             A SymbolicConstant specifying the bolt normal adjustment formulation for all slave
             nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
             value is UNIFORM AXIAL COMPONENT.
 
             .. versionadded:: 2019
-                The `normalAdjustment` argument was added.
+                The ``normalAdjustment`` argument was added.
 
         Returns
         -------
