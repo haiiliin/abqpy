@@ -148,42 +148,12 @@ class ElemType:
     #: Abaqus/Explicit. The default value is 1.0.
     quadraticBulkViscosity: float = 1
 
-<<<<<<< HEAD
     #: A Float specifying the linear kinematic conversion value.This argument is applicable
     #: only to some Abaqus/Explicit elements.
-=======
-    #: An Int specifying the number of Fourier modes. Possible values are 1, 2, 3, and 4. The
-    #: default value is 1.This argument is applicable only for axisymmetric elements with
-    #: nonlinear asymmetric deformation.
-    #:
-    #: .. versionadded:: 2019
-    #:     The ``numFourierModes`` attribute was added.
-    numFourierModes: int = 1
-
-    #: An Int specifying the positive offset number for specifying the additional nodes needed
-    #: in the connectivity.This argument is applicable only for axisymmetric elements with
-    #: nonlinear asymmetric deformation.
-    #:
-    #: .. versionadded:: 2019
-    #:     The ``nodeOffset`` attribute was added.
-    nodeOffset: Optional[int] = None
-
-    #: A Float specifying the linear kinematic conversion value.This argument is applicable
-    #: only to some Abaqus/Explicit elements.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``linearKinematicCtrl`` attribute was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     linearKinematicCtrl: Optional[float] = None
 
     #: A Float specifying the initial gap opening.This parameter is applicable only to some
     #: Abaqus/Standard elements.
-<<<<<<< HEAD
-=======
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``initialGapOpening`` attribute was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     initialGapOpening: Optional[float] = None
 
     @abaqus_method_doc
@@ -320,35 +290,6 @@ class ElemType:
         quadraticBulkViscosity
             A Float specifying the quadratic bulk viscosity scaling factor option for
             Abaqus/Explicit. The default value is 1.0.
-<<<<<<< HEAD
-=======
-        numFourierModes
-            An Int specifying the number of Fourier modes. Possible values are 1, 2, 3, and 4. The
-            default value is 1.This argument is applicable only for axisymmetric elements with
-            nonlinear asymmetric deformation.
-
-            .. versionadded:: 2019
-                The ``numFourierModes`` argument was added.
-        nodeOffset
-            An Int specifying the positive offset number for specifying the additional nodes needed
-            in the connectivity.This argument is applicable only for axisymmetric elements with
-            nonlinear asymmetric deformation.
-
-            .. versionadded:: 2019
-                The ``nodeOffset`` argument was added.
-        linearKinematicCtrl
-            A Float specifying the linear kinematic conversion value.This argument is applicable
-            only to some Abaqus/Explicit elements.
-
-            .. versionadded:: 2022
-                The ``linearKinematicCtrl`` argument was added.
-        initialGapOpening
-            A Float specifying the initial gap opening.This parameter is applicable only to some
-            Abaqus/Standard elements.
-
-            .. versionadded:: 2022
-                The ``initialGapOpening`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

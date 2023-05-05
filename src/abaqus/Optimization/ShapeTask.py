@@ -58,16 +58,6 @@ class ShapeTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
-    #: sensitivities. The default value is False.
-    #:
-    #: .. versionadded:: 2019
-    #:     The ``abaqusSensitivities`` attribute was added.
-    abaqusSensitivities: Boolean = False
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A SymbolicConstant specifying whether to control the permitted absolute step size by the
     #: average optimization displacement or minimum optimization displacement. Possible values
     #: are MINIMUM and AVERAGE. The default value is MINIMUM.
@@ -248,17 +238,6 @@ class ShapeTask(OptimizationTask):
     #: default value is EVERY_CYCLE.
     updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether the group in the design response will be evaluated using
-    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-    #: value of False means that the existing algorithm will be used.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``groupSensitivities`` attribute was added.
-    groupOperator: Boolean = OFF
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -317,15 +296,6 @@ class ShapeTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -464,16 +434,6 @@ class ShapeTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -533,15 +493,6 @@ class ShapeTask(OptimizationTask):
 
         Parameters
         ----------
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -684,15 +635,5 @@ class ShapeTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...

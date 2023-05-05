@@ -423,16 +423,6 @@ class Drawing:
             point. The default value is 0.0.A value of 0.0 will be one pixel on the output device.
             One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not
             be clear.
-<<<<<<< HEAD
-=======
-        depthTest
-            A Boolean specifying whether an object's depth will be considered during rendering. The
-            default value is ON.When OFF, the object will not be hidden by other objects in front of
-            it.
-
-            .. versionadded:: 2018
-                The ``depthTest`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Raises
         ------

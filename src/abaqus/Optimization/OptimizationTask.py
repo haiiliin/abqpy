@@ -219,56 +219,6 @@ class OptimizationTask(OptimizationTaskBase):
         return optimizationConstraint
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def BeadFilter(
-        self,
-        name: str,
-        region: Region,
-        radius: float = None,
-        filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
-        filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
-    ):
-        """This method creates a BeadFilter object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].BeadFilter
-
-        .. versionadded:: 2023
-
-        The ``BeadFilter`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-        radius
-            A Float specifying the filter radius. The default value is double the average edge length of the model.
-        filterRadiusBy
-            The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute
-            radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is
-            ABSOLUTE_VALUE.
-        filterCheckRegion
-            The SymbolicConstant FILTER_REGION or a Region object specifying the filter check region. If the value is
-            FILTER_REGION, the value of the region is used as both the filter region and the filter check region.
-            The default value is FILTER_REGION.
-
-        Returns
-        -------
-        BeadFilter
-            A BeadFilter object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = BeadFilter(
-            name, region, radius, filterRadiusBy, filterCheckRegion
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def BeadFixedRegion(
         self,
         name: str,
@@ -516,21 +466,9 @@ class OptimizationTask(OptimizationTaskBase):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-            MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         movementRestriction
             A SymbolicConstant specifying whether movement in the region should follow only the
             direction of the **masterPoint**, only the magnitude, or both the magnitude of the
@@ -615,21 +553,9 @@ class OptimizationTask(OptimizationTaskBase):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-            MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -876,12 +802,6 @@ class OptimizationTask(OptimizationTaskBase):
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -949,19 +869,6 @@ class OptimizationTask(OptimizationTaskBase):
         sizeRestriction
             A SymbolicConstant specifying whether to restrict the minimum or maximum thickness.
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
-<<<<<<< HEAD
-=======
-        assignNodeGroupRegion
-            A bool specifying whether to use the node group region. The default value is OFF.
-
-            .. versionadded:: 2022
-                The ``assignNodeGroupRegion`` argument was added.
-        nodeGroupRegion
-            A Node Region object specifying the check node group.
-
-            .. versionadded:: 2022
-                The ``nodeGroupRegion`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -1009,15 +916,6 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
-<<<<<<< HEAD
-=======
-        allowNonSymmetricMesh
-            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-            restriction. The default value is TRUE.
-
-            .. versionadded:: 2021
-                The ``alloowNonSymmetricMesh`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
@@ -1025,12 +923,6 @@ class OptimizationTask(OptimizationTaskBase):
         masterPointDetermination
             A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1096,12 +988,6 @@ class OptimizationTask(OptimizationTaskBase):
         masterPointDetermination
             A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1167,15 +1053,6 @@ class OptimizationTask(OptimizationTaskBase):
             A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
-<<<<<<< HEAD
-=======
-        allowNonSymmetricMesh
-            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-            restriction. The default value is TRUE.
-
-            .. versionadded:: 2021
-                The ``alloowNonSymmetricMesh`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         angle
             A Float specifying the segment size of the repeating pattern in degrees. If the **angle**
             value is 0, no repeating pattern is created. The default value is 0.0.
@@ -1186,21 +1063,9 @@ class OptimizationTask(OptimizationTaskBase):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
-            are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1610,21 +1475,9 @@ class OptimizationTask(OptimizationTaskBase):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-            MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -1821,133 +1674,6 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def TopologyMillingControl(
-        self,
-        name: str,
-        millingDirections: tuple,
-        region: Region,
-        csys: Optional[int] = None,
-        millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
-        radius: Optional[float] = None,
-    ) -> TopologyMillingControl:
-        """This method creates a TopologyMillingControl object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyMillingControl
-
-        .. versionadded:: 2022
-            The ``TopologyMillingControl`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        millingDirections
-            A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
-            can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-        csys
-            None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
-            member is queried, it returns an Int indicating the identifier of the DatumCsys. The
-            default value is None.
-        millingCheckRegion
-            The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
-            region. If the value is MILLING_REGION, the value of **region** is used as both the
-            milling control region and the milling check region. The default value is
-            MILLING_REGION.
-        radius
-            A Float specifying the radius for the collision check during the removal of the elements
-            for the milling criteria.
-
-        Returns
-        -------
-        TopologyMillingControl
-            A TopologyMillingControl object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = TopologyMillingControl(
-            name, millingDirections, region, csys, millingCheckRegion, radius
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
-    def TopologyOverhangControl(
-        self,
-        name: str,
-        pullDirection: tuple,
-        region: Region,
-        csys: Optional[int] = None,
-        draftAngle: float = 45,
-        overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
-        pointRegion: Region = Region(),
-        radius: Optional[float] = None,
-        technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
-    ) -> TopologyOverhangControl:
-        """This method creates a TopologyOverhangControl object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyOverhangControl
-
-        .. versionadded:: 2019
-            The ``TopologyOverhangControl`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        pullDirection
-            A VertexArray object of length 2 specifying the overhang control print direction.
-            Instead of through a ConstrainedSketchVertex, each point can be specified through a tuple of coordinates.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-        csys
-            None or a DatumCsys object specifying the local coordinate system of the
-            **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
-            is queried, it returns an Int indicating the identifier of the DatumCsys. The default
-            value is None.
-        draftAngle
-            A Float specifying the overhang angle. The default value is 45.0.
-        overhangCheckRegion
-            The SymbolicConstant OVERHANG_REGION or a Region object specifying the overhang check
-            region. If the value is OVERHANG_REGION, the value of **region** is used as both the
-            overhang control region and the overhang check region. The default value is
-            OVERHANG_REGION.
-        pointRegion
-            A Region object specifying the point on a plane perpendicular to the **pullDirection**
-            that is used to specify the base plane when **technique** is POINT.
-        radius
-            A Float specifying the radius to define the size of the cones that are used in the
-            internal check for the overhang criteria.
-        technique
-            A SymbolicConstant specifying the overhang control technique used to define the base
-            plane. Possible values are AUTO, POINT, and NONE. The default value is AUTO.
-
-        Returns
-        -------
-            A TopologyOverhangControl object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = TopologyOverhangControl(
-            name,
-            pullDirection,
-            region,
-            csys,
-            draftAngle,
-            overhangCheckRegion,
-            pointRegion,
-            radius,
-            technique,
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def TopologyPlanarSymmetry(
         self,
         name: str,
@@ -2032,72 +1758,6 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def TopologyRibDesign(
-        self,
-        name: str,
-        ribDirection: VertexArray,
-        ribThickness: float,
-        ribDistance: float,
-        region: Region,
-        csys: Optional[DatumCsys] = None,
-        ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION,
-    ):
-        """This method creates a TopologyRibDesign object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyRibDesign
-
-        .. versionadded:: 2022
-
-            The ``TopologyRibDesign`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        ribDirection
-            A VertexArray object of length 2 specifying the out-of-plane growth direction of the ribs. Instead of
-            through a Vertex, each point can be specified through a tuple of coordinates.
-        ribThickness
-            A Float specifying the average thickness of the ribs.
-        ribDistance
-            A Float specifying the average distance between the rib centers. The distance must be larger than twice
-            the average element edge length.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-            When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-            the default value is MODEL.
-        csys
-            None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys** = None, the global coordinate system is
-            used. When this member is queried, it returns an Int. The default value is None.
-        ribDesignCheckRegion
-            The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value
-            is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check
-            region. The default value is RIBDESIGN_REGION.
-
-        Returns
-        -------
-        TopologyRibDesign
-            A TopologyRibDesign object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = TopologyRibDesign(
-            name,
-            ribDirection,
-            ribThickness,
-            ribDistance,
-            region,
-            csys,
-            ribDesignCheckRegion,
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def TopologyRotationalSymmetry(
         self,
         name: str,
@@ -2184,21 +1844,9 @@ class OptimizationTask(OptimizationTaskBase):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for assigning point priority. Possible values are
-            MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.

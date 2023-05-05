@@ -77,15 +77,6 @@ class OptimizationTaskModel(ModelBase):
         ----------
         name
             A String specifying the optimization task repository key.
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -144,16 +135,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -242,15 +223,6 @@ class OptimizationTaskModel(ModelBase):
         ----------
         name
             A String specifying the optimization task repository key.
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -389,16 +361,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -478,15 +440,6 @@ class OptimizationTaskModel(ModelBase):
         ----------
         name
             A String specifying the optimization task repository key.
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -516,16 +469,6 @@ class OptimizationTaskModel(ModelBase):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -601,15 +544,6 @@ class OptimizationTaskModel(ModelBase):
         ----------
         name
             A String specifying the optimization task repository key.
-<<<<<<< HEAD
-=======
-        abaqusSensitivities
-            A Boolean specifying whether to use Abaqus to compute the design responses and their
-            sensitivities. The default value is True.
-
-            .. versionadded:: 2019
-                The ``abaqusSensitivities`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -713,16 +647,6 @@ class OptimizationTaskModel(ModelBase):
         viscousStiffnessDamping
             None or a Float specifying the viscous stiffness damping for the task region. The
             default value is None.
-<<<<<<< HEAD
-=======
-        groupOperator
-            A Boolean specifying whether the group in the design response will be evaluated using
-            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
-            value of False means that the existing algorithm will be used.
-
-            .. versionadded:: 2022
-                The ``groupOperator`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

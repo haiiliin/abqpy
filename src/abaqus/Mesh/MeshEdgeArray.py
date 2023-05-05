@@ -35,12 +35,6 @@ class MeshEdgeArray(List[MeshEdge]):
         edges
             A list of MeshEdge objects.
 
-<<<<<<< HEAD
-=======
-            .. versionchanged:: 2022
-                The argument ``edges`` was renamed to ``elemEdges``.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Returns
         -------
         MeshEdgeArray

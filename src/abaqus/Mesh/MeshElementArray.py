@@ -221,38 +221,3 @@ class MeshElementArray(List[MeshElement]):
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
         ...
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def getExteriorEdges(self) -> EdgeArray:
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
-        returns the edges that are referenced by exactly one of the faces in the sequence.
-
-        .. versionadded:: 2018
-            The ``getExteriorEdges`` method was added.
-
-        Returns
-        -------
-        EdgeArray
-            An EdgeArray object specifying the exterior edges.
-
-        """
-        ...
-
-    @abaqus_method_doc
-    def getExteriorFaces(self) -> FaceArray:
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
-        the faces that are referenced by exactly one of the cells in the sequence.
-
-        .. versionadded:: 2018
-            The ``getExteriorFaces`` method was added.
-
-        Returns
-        -------
-        FaceArray
-            A FaceArray object representing the faces on the exterior of the cells.
-
-        """
-        ...
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))

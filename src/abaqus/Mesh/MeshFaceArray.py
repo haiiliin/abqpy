@@ -35,12 +35,6 @@ class MeshFaceArray(List[MeshFace]):
         faces
             A list of MeshFace objects.
 
-<<<<<<< HEAD
-=======
-            .. versionchanged:: 2022
-                The argument ``faces`` was renamed to ``elemFaces``.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Returns
         -------
         MeshFaceArray

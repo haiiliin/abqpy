@@ -335,15 +335,6 @@ class ViewportBase(_OptionsBase):
     #: A MovieOptions object.
     movieOptions: MovieOptions = MovieOptions()
 
-<<<<<<< HEAD
-=======
-    #: An AnimationController object.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``animationController`` attribute was added.
-    animationController: AnimationController = AnimationController()
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A tuple of Strings specifying keys to the session.drawings repository. The default value
     #: is an empty sequence.
     drawings: tuple = ()

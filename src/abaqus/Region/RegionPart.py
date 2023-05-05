@@ -614,15 +614,6 @@ class RegionPart(RegionPartBase):
 
                 nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
 
-<<<<<<< HEAD
-=======
-        unsorted
-            A Boolean specifying whether the created set is unsorted. The default value is False.
-
-            .. versionadded:: 2018
-                The ``unsorted`` argument was added.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Returns
         -------
         Set

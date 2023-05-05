@@ -39,16 +39,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: default value is None.
     csys: Optional[int] = None
 
-<<<<<<< HEAD
-=======
-    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-    #: restriction. The default value is TRUE.
-    #:
-    #: .. versionadded:: 2021
-    #:     The ``allowNonSymmetricMesh`` attribute was added.
-    allowNonSymmetricMesh: Boolean = TRUE
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     masterPointDetermination: SymbolicConstant = MAXIMUM
@@ -101,15 +91,6 @@ class ShapePlanarSymmetry(GeometricRestriction):
             A Region object specifying the region to which the geometric restriction is applied.
             When used with a TopologyTask, there is no default value. When used with a ShapeTask,
             the default value is MODEL.
-<<<<<<< HEAD
-=======
-        allowNonSymmetricMesh
-            A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-            restriction. The default value is TRUE.
-
-            .. versionadded:: 2021
-                The ``alloowNonSymmetricMesh`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         csys
             None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
             global coordinate system is used. When this member is queried, it returns an Int. The
