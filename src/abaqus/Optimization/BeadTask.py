@@ -49,6 +49,16 @@ class BeadTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is False.
+    #:
+    #: .. versionadded:: 2019
+    #:     The ``abaqusSensitivities`` attribute was added.
+    abaqusSensitivities: Boolean = False
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
     #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
     #: GENERAL_OPTIMIZATION.
@@ -129,6 +139,12 @@ class BeadTask(OptimizationTask):
     #: A Boolean specifying whether the group in the design response will be evaluated using
     #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
     #: value of False means that the existing algorithm will be used.
+<<<<<<< HEAD
+=======
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``groupSensitivities`` attribute was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     groupOperator: Boolean = OFF
 
     @abaqus_method_doc
@@ -166,6 +182,15 @@ class BeadTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+<<<<<<< HEAD
+=======
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -224,6 +249,16 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -259,6 +294,15 @@ class BeadTask(OptimizationTask):
 
         Parameters
         ----------
+<<<<<<< HEAD
+=======
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -317,5 +361,15 @@ class BeadTask(OptimizationTask):
             A SymbolicConstant specifying whether to update shape basis vectors in the first design
             cycle or every design cycle. Possible values are EVERY_CYCLE and FIRST_CYCLE. The
             default value is EVERY_CYCLE.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...
