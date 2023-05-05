@@ -302,7 +302,7 @@ class MaterialBase:
     #: A MeanFieldHomogenization object.
     #:
     #: .. versionadded:: 2018
-    #:     The `meanFieldHomogenization` attribute was added.
+    #:     The ``meanFieldHomogenization`` attribute was added.
     meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
 
     @abaqus_method_doc

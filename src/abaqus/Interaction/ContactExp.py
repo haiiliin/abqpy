@@ -71,7 +71,7 @@ class ContactExp(Interaction):
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
     #:
     #: .. versionadded:: 2020
-    #:     The `polarityAssignments` attribute was added.
+    #:     The ``polarityAssignments`` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
     @overload
@@ -138,7 +138,7 @@ class ContactExp(Interaction):
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
             .. versionadded:: 2020
-                The `polarityAssignments` argument was added.
+                The ``polarityAssignments`` argument was added.
 
         Returns
         -------
@@ -252,7 +252,7 @@ class ContactExp(Interaction):
               SPOS, SNEG, and TWO_SIDED.
 
               .. versionadded:: 2020
-                    The `polarityAssignments` argument was added.
+                    The ``polarityAssignments`` argument was added.
 
         Returns
         -------

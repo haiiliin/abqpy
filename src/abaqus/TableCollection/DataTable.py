@@ -20,7 +20,7 @@ class DataTable:
         - PARAMETER TABLE
 
     .. versionadded:: 2020
-        The `DataTable` class was added.
+        The ``DataTable`` class was added.
     """
 
     #: A String specifying the label of the data table.

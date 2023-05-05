@@ -53,7 +53,7 @@ class BeadTask(OptimizationTask):
     #: sensitivities. The default value is False.
     #:
     #: .. versionadded:: 2019
-    #:     The `abaqusSensitivities` attribute was added.
+    #:     The ``abaqusSensitivities`` attribute was added.
     abaqusSensitivities: Boolean = False
 
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
@@ -179,7 +179,7 @@ class BeadTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -279,7 +279,7 @@ class BeadTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is

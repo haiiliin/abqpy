@@ -16,7 +16,7 @@ class TableCollectionModel(ModelBase):
             mdb.models[name]
 
     .. versionadded:: 2020
-        The `TableCollectionModel` class was added.
+        The ``TableCollectionModel`` class was added.
     """
 
     @abaqus_method_doc

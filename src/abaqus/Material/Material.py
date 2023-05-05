@@ -3825,7 +3825,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].MeanFieldHomogenization
 
         .. versionadded:: 2018
-            The `MeanFieldHomogenization` method was added.
+            The ``MeanFieldHomogenization`` method was added.
 
         Parameters
         ----------
