@@ -1696,7 +1696,7 @@ class OptimizationTask(OptimizationTaskBase):
                 mdb.models[name].optimizationTasks[name].TopologyOverhangControl
 
         .. versionadded:: 2019
-            The `TopologyOverhangControl` method was added.
+            The ``TopologyOverhangControl`` method was added.
 
         Parameters
         ----------
