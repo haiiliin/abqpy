@@ -37,6 +37,21 @@ class ShapeMemberSize(GeometricRestriction):
     #: Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
     sizeRestriction: SymbolicConstant = MINIMUM
 
+<<<<<<< HEAD
+=======
+    #: A bool specifying whether to use the node group region. The default value is OFF.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``assignNodeGroupRegion`` attribute was added.
+    assignNodeGroupRegion: str = OFF
+
+    #: A Node Region object specifying the check node group.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``nodeGroupRegion`` attribute was added.
+    nodeGroupRegion: str = ""
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -68,6 +83,19 @@ class ShapeMemberSize(GeometricRestriction):
         sizeRestriction
             A SymbolicConstant specifying whether to restrict the minimum or maximum thickness.
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
+<<<<<<< HEAD
+=======
+        assignNodeGroupRegion
+            A bool specifying whether to use the node group region. The default value is OFF.
+
+            .. versionadded:: 2022
+                The ``assignNodeGroupRegion`` argument was added.
+        nodeGroupRegion
+            A Node Region object specifying the check node group.
+
+            .. versionadded:: 2022
+                The ``nodeGroupRegion`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -98,7 +126,18 @@ class ShapeMemberSize(GeometricRestriction):
             Possible values are MAXIMUM and MINIMUM. The default value is MINIMUM.
         assignNodeGroupRegion
             A bool specifying whether to use the node group region. The default value is OFF.
+<<<<<<< HEAD
         nodeGroupRegion
             A Node Region object specifying the check node group.
+=======
+
+            .. versionadded:: 2022
+                The ``assignNodeGroupRegion`` argument was added.
+        nodeGroupRegion
+            A Node Region object specifying the check node group.
+
+            .. versionadded:: 2022
+                The ``nodeGroupRegion`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...

@@ -66,7 +66,7 @@ class InteractionContactInitializationModel(ModelBase):
             specified. The default value is None.
 
             .. versionchanged:: 2022
-                The argument `slaveNodesetName` was renamed to `secondaryNodesetName`.
+                The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -112,7 +112,7 @@ class InteractionContactInitializationModel(ModelBase):
                 mdb.models[name].StdInitialization
 
         .. versionadded:: 2020
-            The `ExpInitialization` method was added.
+            The ``ExpInitialization`` method was added.
 
         Parameters
         ----------

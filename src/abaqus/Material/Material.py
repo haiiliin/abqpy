@@ -555,6 +555,44 @@ class Material(MaterialBase):
         self.crushableFoam = CrushableFoam(table, hardening, temperatureDependency, dependencies)
         return self.crushableFoam
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def CrushStress(
+        self,
+        crushStressTable: Sequence[Sequence[float]],
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a CrushStress object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].CrushStress
+                session.odbs[name].materials[name].CrushStress
+
+        .. versionadded:: 2022
+            The ``CrushStress`` method was added.
+
+        Parameters
+        ----------
+        crushStressTable
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A CrushStress object.
+        """
+        self.crushStress = CrushStress(crushStressTable, temperatureDependency, dependencies)
+        return self.crushStress
+
+    @abaqus_method_doc
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def Damping(
         self,
         alpha: float = 0,
@@ -2031,6 +2069,16 @@ class Material(MaterialBase):
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.
+<<<<<<< HEAD
+=======
+        extrapolation
+            A SymbolicConstant specifying the extrapolation method for the yield stress with respect
+            to the equivalent plastic strain. This argument is valid only if hardening=ISOTROPIC.
+            Possible values are CONSTANT and LINEAR . The default value is CONSTANT.
+
+            .. versionadded:: 2022
+                The ``extrapolation`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -2054,6 +2102,53 @@ class Material(MaterialBase):
         return self.plastic
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def PlasticityCorrection(
+        self,
+        type: Literal[C.RAMBERG_OSGOOD, C.TABULAR],
+        table: Sequence[Sequence[float]],
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ) -> PlasticityCorrection:
+        """This method creates a PlasticityCorrection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].PlasticityCorrection
+                session.odbs[name].materials[name].PlasticityCorrection
+
+        .. versionadded:: 2023
+
+            The ``PlasticityCorrection`` method was added.
+
+        Parameters
+        ----------
+        type
+            Set type=RAMBERG_OSGOOD to specify the Ramberg-Osgood relationship.
+            Set type=TABULAR to specify the tabular form.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        PlasticityCorrection
+            A PlasticCorrection object.
+
+        Raises
+        ------
+        RangeError
+        """
+        self.plasticityCorrection = PlasticityCorrection(type, table, temperatureDependency, dependencies)
+        return self.plasticityCorrection
+
+    @abaqus_method_doc
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def PoreFluidExpansion(
         self,
         table: tuple,
@@ -3825,7 +3920,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].MeanFieldHomogenization
 
         .. versionadded:: 2018
-            The `MeanFieldHomogenization` method was added.
+            The ``MeanFieldHomogenization`` method was added.
 
         Parameters
         ----------
@@ -3851,3 +3946,109 @@ class Material(MaterialBase):
         RangeError
         """
         return MeanFieldHomogenization()
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def GapConductance(
+        self,
+        pressureDependency: Boolean = OFF,
+        dependencies: int = 0,
+        table: tuple = (),
+    ) -> GapConductance:
+        """This method creates a GapConductance object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].GapConductance
+                session.odbs[name].materials[name].GapConductance
+
+        .. versionadded:: 2021
+            The ``GapConductance`` method was added.
+
+        Parameters
+        ----------
+        pressureDependency
+            A Boolean specifying whether the data depend on pressure. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A GapConductance object.
+        """
+        return GapConductance(pressureDependency, dependencies, table)
+
+    @abaqus_method_doc
+    def GapConvection(
+        self,
+        type: str,
+        table: tuple = (),
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ) -> GapConvection:
+        """This method creates a GapConvection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].GapConvection
+                session.odbs[name].materials[name].GapConvection
+
+        .. versionadded:: 2021
+            The ``GapConvection`` method was added.
+
+        Parameters
+        ----------
+        type
+            An odb_String specifying the type of gap convection. Possible values are FLUX,
+            TEMPERATURE, and TABULAR. The default value is FLUX.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A GapConvection object.
+        """
+        return GapConvection(type, table, temperatureDependency, dependencies)
+
+    @abaqus_method_doc
+    def GapRadiation(
+        self,
+        masterSurfaceEmissivity: float,
+        slaveSurfaceEmissivity: float,
+        table: tuple,
+    ) -> GapRadiation:
+        """This method creates a GapRadiation object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].Gapradiation
+                session.odbs[name].materials[name].Gapradiation
+
+        .. versionadded:: 2021
+            The ``GapRadiation`` method was added.
+
+        Parameters
+        ----------
+        masterSurfaceEmissivity
+            A Float specifying the Emissivity of master surface.ϵA
+        slaveSurfaceEmissivity
+            A Float specifying the Emissivity of the slave surfaceϵB.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A Gapradiation object.
+        """
+        return GapRadiation(masterSurfaceEmissivity, slaveSurfaceEmissivity, table)
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))

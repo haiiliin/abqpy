@@ -21,7 +21,7 @@ class ElementProgressiveActivation:
         - ELEMENT PROGRESSIVE ACTIVATION
 
     .. versionadded:: 2020
-        The `ElementProgressiveActivation` class was added.
+        The ``ElementProgressiveActivation`` class was added.
     """
 
     #: A String specifying the key of the repository.

@@ -53,13 +53,13 @@ class OdbSet:
     #: A repository of an OdbInstance object.
     #:
     #: .. versionadded:: 2020
-    #:     The `instances` attribute was added.
+    #:     The ``instances`` attribute was added.
     instances: str = ""
 
     #: A Boolean specifying whether the set is internal.
     #:
     #: .. versionadded:: 2020
-    #:     The `isInternal` attribute was added.
+    #:     The ``isInternal`` attribute was added.
     isInternal: Boolean = OFF
 
     @abaqus_method_doc
@@ -232,10 +232,12 @@ class OdbSet:
         name
             A String specifying the name of the set and the repository key.
         elementSetSeq
-            A sequence of element sets. For
-            example,`elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))`where
-            `elset1=session.odbs[name].rootAssembly.elementSets['Clutch'] `and `SIDE1` and `SIDE2`
-            indicate the side of the element set.
+            A sequence of element sets. For example::
+
+                elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))``
+
+            where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` 
+            and ``SIDE1`` and ``SIDE2`` indicate the side of the element set.
 
         Returns
         -------
@@ -260,9 +262,11 @@ class OdbSet:
         name
             A String specifying the name of the set and the repository key.
         surfaceLabels
-            A sequence of surface labels. For example,`surfaceLabels=(('Instance-1', ((10, FACE1),
-            (11, FACE2))),  ('Instance-2', ((10, FACE3), (12, FACE4))))`where `10` is an element
-            number and `FACE1` indicates the side of the element.
+            A sequence of surface labels. For example::
+
+                surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))),  ('Instance-2', ((10, FACE3), (12, FACE4))))
+
+            where ``10`` is an element number and ``FACE1`` indicates the side of the element.
 
         Returns
         -------
