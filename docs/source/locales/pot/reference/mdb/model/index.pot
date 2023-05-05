@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"POT-Creation-Date: 2023-05-05 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:10
+#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:9
 #: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:4
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase:4
 msgid "This object can be accessed by::"
@@ -71,7 +71,7 @@ msgstr ""
 #: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:18
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase:18
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:5
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:8
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:7
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:5
 msgid "This function can be accessed by::"
 msgstr ""
@@ -92,7 +92,7 @@ msgstr ""
 #: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:23
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase:23
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:13
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:16
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:15
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:13
 #: ../../None:52:<autosummary>:1
 #: ../../docstring of abaqus.Model.ModelBase.ModelBase.name:1
@@ -165,7 +165,7 @@ msgstr ""
 #: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:50
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase:50
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:19
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:66
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:65
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:19
 msgid "A Model object."
 msgstr ""
@@ -181,7 +181,7 @@ msgstr ""
 #: ../../../../src/abaqus/Model/Model.py:docstring of abaqus.Model.Model.Model:51
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase:51
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:20
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:67
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:66
 #: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:20
 msgid ":class:`Model`"
 msgstr ""
@@ -2383,7 +2383,7 @@ msgstr ""
 msgid "The KeywordBlock object contains a representation of its model in the Abaqus input file format. You may edit the contents of the KeywordBlock to add solver functionality that is not supported by Abaqus/CAE. As a general rule, edits to the KeywordBlock object should be made as the last step prior to writing the actual Abaqus input file, thus avoiding possible conflicts with changes made using other MDB commands. The KeywordBlock object has no constructor. A KeywordBlock object is created when you create a model object. A model object contains only one KeywordBlock object."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:15
+#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock:14
 msgid "Check `KeywordBlock on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -2453,11 +2453,11 @@ msgstr ""
 msgid "This method synchronizes, or merges, the edits made in this object with those made in the model using other scripting commands or the user interface. The synchVersions method updates the **sieBlocks** member. The **sieBlocks** member is empty prior to the first call to synchVersions. As a side effect, synchVersions sets **lastSynchCount** to the current value of the counter associated with the Mdb object, which is used to determine if synchronization is necessary."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:9
+#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:8
 msgid "Check `KeywordBlock.synchVersions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all#simaker-keywordblocksynchversionspyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:12
+#: ../../../../src/abaqus/Model/KeywordBlock.py:docstring of abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:11
 msgid "A Boolean specifying whether the nodal coordinates and element connectivities (i.e. the data lines for the *NODE and *ELEMENT keyword blocks) are to be stored in the **sieBlocks** member. All other keywords and their data lines are always stored. The default value is True. If **storeNodesAndElements** is True, the size of the keywordBlock data will be similar to that of the input file. Since the KeywordBlock is stored in the Abaqus/CAE database, this will result in a larger database. It will also result in a slower execution of the synchVersions command. If **storeNodesAndElements** is False, the data lines are not stored in **sieBlocks**. Consequently, only set **storeNodesAndElements** = True if you wish to make changes to the **NODE** or **ELEMENT** data lines themselves. If your task is limited to reading nodal coordinates and element connectivities (i.e. not editing this information) then it is generally better to access this information from other parts of the Mdb."
 msgstr ""
 
@@ -2477,51 +2477,51 @@ msgstr ""
 msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects. The default values is discussed in following and can be defined alternatively in the Abaqus environment file as the one used for the translator from Nastran to Abaqus. For more information, see Translating Nastran data to Abaqus files."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:13
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:12
 msgid "Check `ModelFromNastranFile on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelfromnastranfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:18
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:17
 msgid "A String specifying the name of the Nastran input file (including the .bdf, .dat, .nas, .nastran, .blk, .bulk extension) to be read into the new model. This String can also be the full path to the Nastran input file if it is located in another directory."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:22
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:21
 msgid "A SymbolicConstant specifying the method used to create shell section. Possible values are PRESERVE_SECTION, GROUP_BY_MATERIAL, and NONE. If PRESERVE_SECTION is used, an Abaqus section is created corresponding to each shell property ID. If GROUP_BY_MATERIAL is used, a single Abaqus section is created for all homogeneous elements referencing the same material. In both cases, material orientations and offsets are created using discrete fields. If NONE is used, a separate shell section is created for each combination of orientation, material offset, and/or thickness. The default is PRESERVE_SECTION."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:31
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:30
 msgid "A Boolean specifying whether the pre-integrated shell section is created in default for shell element. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:34
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:33
 msgid "A Boolean specifying whether the value on the Nastran data line PARAM, WTMASS is used as a multiplier for all density, mass, and rotary inertia values created in the Abaqus input file. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:38
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:37
 msgid "A Boolean specifying whether each SUBCASE for linear static analyses is translated to a LOAD CASE option, and all such LOAD CASE options are grouped in a single STEP option. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:42
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:41
 msgid "A Boolean specifying whether to translate the beam element connectivity to newly created nodes at the offset location and rigidly coupling the new and original nodes. If not, beam element offsets are translated to the CENTROID and SHEAR CENTER options, which are suboptions of the BEAM GENERAL SECTION option. The default value is ON. When the beam element references a PBARL or PBEAML property or if the beam offset has a significant component in the direction of the beam axis, the setting for this argument is always ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:49
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:48
 msgid "A String specifying the 2-node beam that is created from CBAR and CBEAM elements. Possible values are B31 and B33. The default is B31."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:52
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:51
 msgid "A String specifying the 4-node shell that is created from CQUAD4 elements. Possible values are S4 and S4R. The default is S4. If a reduced-integration element is chosen, the enhanced hourglass formulation is applied automatically."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:56
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:55
 msgid "A String specifying the 8-node brick that is created from CHEXA elements. Possible values are C3D8I, C3D8 and C3D8R. The default is C3D8I. If a reduced-integration element is chosen, the enhanced hourglass formulation is applied automatically."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:60
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:59
 msgid "A String specifying the 10-node tetrahedron that is created from CTETRA elements. Possible values are C3D10 and C3D10M. The default is C3D10."
 msgstr ""
 
-#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:63
+#: ../../../../src/abaqus/Model/ModelBase.py:docstring of abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:62
 msgid "A Boolean specifying whether to keep the generated Abaqus input file after the model is created from the Nastran input file. The default value is ON."
 msgstr ""
 
