@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,13 +46,13 @@ msgid ""
 "member when a Model object is created."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:6
-#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:7
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:5
+#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:6
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart:5 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:12 of
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:11 of
 msgid ""
 "Check `MeshEditAssembly on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
@@ -502,6 +502,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.redoMeshEdit:1 of
 msgid ""
 "This method executes the edit mesh or the bottom-up meshing operation "
 "most recently undone by the undoMeshEdit method on an assembly."
@@ -515,6 +516,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.undoMeshEdit:1 of
 msgid ""
 "This method undoes the most recent edit mesh or the bottom-up meshing "
 "operation on an assembly and restores the mesh on the affected part "
@@ -1038,7 +1040,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid ""
 "This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh"
+" to a more optimal location that improves the quality of the mesh."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1914,7 +1916,7 @@ msgstr ""
 msgid "Member Details:"
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:5 of
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:4 of
 msgid ""
 "Check `MeshEditAssembly.collapseMeshEdge on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
@@ -1955,12 +1957,12 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:8
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:7
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:8 of
 msgid "A single MeshEdge object specifying the element edge to collapse."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:10
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:9
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:10 of
 msgid ""
 "A SymbolicConstant specifying the method used to collapse the edge. "
@@ -1975,7 +1977,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:7
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:8 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:7 of
 msgid ""
 "A sequence of triangular MeshElement objects specifying the elements to "
 "combine."
@@ -2208,13 +2210,11 @@ msgid ""
 "DatumPoint, DatumAxis, or DatumPlane."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.redoMeshEdit:1 of
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.redoMeshEdit:4 of
 msgid ""
-"This method executes the edit mesh or the bottom-up meshing operation "
-"most recently undone by the undoMeshEdit method on an assembly. A redo "
-"action must be currently available for the assembly. This implies that "
-"the user must have executed the undoMeshEdit method on the assembly and "
-"that the user has not subsequently executed any further edit mesh "
+"A redo action must be currently available for the assembly. This implies "
+"that the user must have executed the undoMeshEdit method on the assembly "
+"and that the user has not subsequently executed any further edit mesh "
 "commands on the assembly. It also implies that the user provided a "
 "sufficient cache allowance to store the undo operation."
 msgstr ""
@@ -2258,14 +2258,12 @@ msgstr ""
 msgid "A single MeshEdge object specifying the element edge to swap."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.undoMeshEdit:1 of
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.undoMeshEdit:4 of
 msgid ""
-"This method undoes the most recent edit mesh or the bottom-up meshing "
-"operation on an assembly and restores the mesh on the affected part "
-"instance to its previous state. An edit mesh undo action must be "
-"available for the assembly. This implies that prior to executing an edit "
-"mesh command on the assembly, the user enabled edit mesh undo with a "
-"sufficient cache allowance to store the edit mesh operation."
+"An edit mesh undo action must be available for the assembly. This implies"
+" that prior to executing an edit mesh command on the assembly, the user "
+"enabled edit mesh undo with a sufficient cache allowance to store the "
+"edit mesh operation."
 msgstr ""
 
 #: ../../reference/mdb/edit_mesh.md:18
@@ -2858,6 +2856,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.redoMeshEdit:1 of
 msgid ""
 "This method executes the edit mesh or the bottom-up meshing operation "
 "most recently undone by the undoMeshEdit method on an part."
@@ -2870,6 +2869,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.undoMeshEdit:1 of
 msgid ""
 "This method undoes the most recent edit mesh or the bottom-up meshing "
 "operation on a part and restores the mesh to its previous state."
@@ -3168,7 +3168,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "Location of the centroid of a given face/cell or group of faces/cells"
+msgid "Location of the centroid of a given face/cell or group of faces/cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -4280,20 +4280,20 @@ msgid ""
 "selecting one or more Edge objects of a Solid or Shell part."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:5 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:4 of
 msgid ""
 "Check `MeshEditPart.adjustMidsideNode on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 "#simaker-partadjustmidsidenodepyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:8 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:7 of
 msgid ""
 "A sequence of Node objects specifying the nodes towards which connected "
 "midside nodes will be biased."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:11 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:10 of
 msgid ""
 "A Float specifying the normalized distance along the edge of the midside "
 "nodes. Possible values are 0.0 ≤ **parameter** ≤ 1.0, where 0.0 specifies"
@@ -4365,7 +4365,7 @@ msgid ""
 "#simaker-partcollapsemeshedgepyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:5 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:4 of
 msgid ""
 "Check `MeshEditPart.combineElement on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
@@ -4431,14 +4431,14 @@ msgid ""
 "#simaker-partgeneratemeshbyoffsetpyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:5 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:4 of
 msgid ""
 "Check `MeshEditPart.mergeElement on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 "#simaker-partmergeelementpyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:8 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:7 of
 msgid ""
 "A MeshEdge of one of the specified elements that serves as a reference "
 "edge to indicate the topological direction for merging elements. All "
@@ -4446,7 +4446,7 @@ msgid ""
 "element edge, and the topological direction must be unambiguous."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:13 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:12 of
 msgid ""
 "A MeshElementArray, a list of MeshElement objects, a Set, or a list of "
 "Set objects containing the elements to be included in the merge "
@@ -4477,14 +4477,12 @@ msgid ""
 "#simaker-partprojectnodepyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.redoMeshEdit:1 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.redoMeshEdit:4 of
 msgid ""
-"This method executes the edit mesh or the bottom-up meshing operation "
-"most recently undone by the undoMeshEdit method on an part. A redo action"
-" must be currently available for the part. This implies that the user "
-"must have executed the undoMeshEdit method on the part and that the user "
-"has not subsequently executed any further edit mesh commands on the "
-"assembly. It also implies that the user provided a sufficient cache "
+"A redo action must be currently available for the part. This implies that"
+" the user must have executed the undoMeshEdit method on the part and that"
+" the user has not subsequently executed any further edit mesh commands on"
+" the assembly. It also implies that the user provided a sufficient cache "
 "allowance to store the undo operation."
 msgstr ""
 
@@ -4673,13 +4671,12 @@ msgid ""
 "#simaker-partswapmeshedgepyc>`__."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditPart.MeshEditPart.undoMeshEdit:1 of
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart.undoMeshEdit:4 of
 msgid ""
-"This method undoes the most recent edit mesh or the bottom-up meshing "
-"operation on a part and restores the mesh to its previous state. An edit "
-"mesh undo action must be available for the part. This implies that prior "
-"to executing an edit mesh command on the part, the user enabled edit mesh"
-" undo with a sufficient cache allowance to store the edit mesh operation."
+"An edit mesh undo action must be available for the part. This implies "
+"that prior to executing an edit mesh command on the part, the user "
+"enabled edit mesh undo with a sufficient cache allowance to store the "
+"edit mesh operation."
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:4 of
@@ -4713,7 +4710,7 @@ msgid ""
 "session is started."
 msgstr ""
 
-#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:12 of
+#: abaqus.EditMesh.MeshEditOptions.MeshEditOptions:11 of
 msgid ""
 "Check `MeshEditOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mesheditoptionspyc.htm?contextscope=all>`__."
@@ -7751,5 +7748,79 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "A tuple of three Floats specifying the coordinates of the new node."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method smooths the given nodes "
+#~ "of a native mesh, moving them "
+#~ "locally to a more optimal location "
+#~ "that improves the quality of the "
+#~ "mesh"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method executes the edit mesh "
+#~ "or the bottom-up meshing operation "
+#~ "most recently undone by the undoMeshEdit"
+#~ " method on an assembly. A redo "
+#~ "action must be currently available for"
+#~ " the assembly. This implies that the"
+#~ " user must have executed the "
+#~ "undoMeshEdit method on the assembly and"
+#~ " that the user has not subsequently"
+#~ " executed any further edit mesh "
+#~ "commands on the assembly. It also "
+#~ "implies that the user provided a "
+#~ "sufficient cache allowance to store the"
+#~ " undo operation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method undoes the most recent "
+#~ "edit mesh or the bottom-up meshing"
+#~ " operation on an assembly and "
+#~ "restores the mesh on the affected "
+#~ "part instance to its previous state. "
+#~ "An edit mesh undo action must be"
+#~ " available for the assembly. This "
+#~ "implies that prior to executing an "
+#~ "edit mesh command on the assembly, "
+#~ "the user enabled edit mesh undo "
+#~ "with a sufficient cache allowance to "
+#~ "store the edit mesh operation."
+#~ msgstr ""
+
+#~ msgid "Location of the centroid of a given face/cell or group of faces/cells"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method executes the edit mesh "
+#~ "or the bottom-up meshing operation "
+#~ "most recently undone by the undoMeshEdit"
+#~ " method on an part. A redo "
+#~ "action must be currently available for"
+#~ " the part. This implies that the "
+#~ "user must have executed the undoMeshEdit"
+#~ " method on the part and that "
+#~ "the user has not subsequently executed"
+#~ " any further edit mesh commands on"
+#~ " the assembly. It also implies that"
+#~ " the user provided a sufficient cache"
+#~ " allowance to store the undo "
+#~ "operation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method undoes the most recent "
+#~ "edit mesh or the bottom-up meshing"
+#~ " operation on a part and restores "
+#~ "the mesh to its previous state. An"
+#~ " edit mesh undo action must be "
+#~ "available for the part. This implies "
+#~ "that prior to executing an edit "
+#~ "mesh command on the part, the user"
+#~ " enabled edit mesh undo with a "
+#~ "sufficient cache allowance to store the"
+#~ " edit mesh operation."
 #~ msgstr ""
 

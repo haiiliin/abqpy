@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -640,7 +640,7 @@ msgid ":py:obj:`getCentroid <abaqus.Part.PartBase.PartBase.getCentroid>`\\ \\(fa
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "Location of the centroid of a given face/cell or group of faces/cells"
+msgid "Location of the centroid of a given face/cell or group of faces/cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -932,7 +932,7 @@ msgid ":py:obj:`smoothNodes <abaqus.Part.PartBase.PartBase.smoothNodes>`\\ \\(no
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method smooths the given nodes of a native mesh, moving them locally to a more optimal location that improves the quality of the mesh"
+msgid "This method smooths the given nodes of a native mesh, moving them locally to a more optimal location that improves the quality of the mesh."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1929,8 +1929,8 @@ msgstr ""
 #: ../../../../src/abaqus/Property/CompositePly.py:docstring of abaqus.Property.CompositePly.CompositePly:15
 #: ../../../../src/abaqus/Property/MaterialOrientation.py:docstring of abaqus.Property.MaterialOrientation.MaterialOrientation:21
 #: ../../../../src/abaqus/Property/MaterialOrientation.py:docstring of abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:4
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:5
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:5
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:4
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:4
 #: ../../../../src/abaqus/Property/Property.py:docstring of abaqus.Property.Property.assignBeamSectionOrientation:4
 #: ../../../../src/abaqus/Property/Property.py:docstring of abaqus.Property.Property.assignMaterialOrientation:4
 #: ../../../../src/abaqus/Property/Property.py:docstring of abaqus.Property.Property.assignRebarOrientation:4
@@ -2422,7 +2422,7 @@ msgstr ""
 #: ../../../../src/abaqus/Property/CompositePly.py:docstring of abaqus.Property.CompositePly.CompositePly:4
 #: ../../../../src/abaqus/Property/MaterialOrientation.py:docstring of abaqus.Property.MaterialOrientation.MaterialOrientation:5
 #: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.PlyStackPlot:5
-#: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:6
+#: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:5
 #: ../../../../src/abaqus/Property/SectionAssignment.py:docstring of abaqus.Property.SectionAssignment.SectionAssignment:5
 msgid "This object can be accessed by::"
 msgstr ""
@@ -2802,24 +2802,24 @@ msgstr ""
 msgid "This method creates a PlyStackPlot object from a region of a part that contains a composite shell layup."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:10
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:9
 msgid "Check `MdbPlyStackPlot on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:13
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:12
 msgid "A Part object."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:15
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:14
 msgid "A Region object which contains a composite shell layup."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:19
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:16
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:18
 msgid "A PlyStackPlot object."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:18
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17
 msgid ":class:`PlyStackPlot`"
 msgstr ""
 
@@ -2827,19 +2827,19 @@ msgstr ""
 msgid "This method creates a PlyStackPlot object from a composite shell section of an Odb object."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:10
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:9
 msgid "Check `OdbPlyStackPlot on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:13
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:12
 msgid "An Odb object."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:15
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:14
 msgid "A String specifying the section name that contains a composite shell section."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:17
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.OdbPlyStackPlot:16
 msgid "A Float specifying the shell offset. The default value is 0.0."
 msgstr ""
 
@@ -2883,7 +2883,7 @@ msgstr ""
 msgid "An Assembly object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
 msgstr ""
 
-#: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:12
+#: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:11
 msgid "Check `PropertyAssembly on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 

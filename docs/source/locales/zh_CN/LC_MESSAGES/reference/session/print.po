@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,8 +50,8 @@ msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions:6
 #: abaqus.Print.PageSetupOptions.PageSetupOptions:6
-#: abaqus.Print.PrintOptions.PrintOptions:6 abaqus.Print.PsOptions.PsOptions:6
-#: abaqus.Print.SvgOptions.SvgOptions:6 of
+#: abaqus.Print.PrintOptions.PrintOptions:6 abaqus.Print.PsOptions.PsOptions:5
+#: abaqus.Print.SvgOptions.SvgOptions:5 of
 msgid "This object can be accessed by::"
 msgstr ""
 
@@ -286,11 +286,16 @@ msgstr ""
 #: abaqus.Print.PngOptions.PngOptions:1 of
 msgid ""
 "The PngOptions object stores the settings that Abaqus uses when printing "
-"in PNG format. The PngOptions object has no constructor. Abaqus creates "
-"the **pngOptions** member when a session is started."
+"in PNG format."
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions:6 of
+#: abaqus.Print.PngOptions.PngOptions:3 of
+msgid ""
+"The PngOptions object has no constructor. Abaqus creates the "
+"**pngOptions** member when a session is started."
+msgstr ""
+
+#: abaqus.Print.PngOptions.PngOptions:7 of
 msgid ""
 "Check `PngOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`__."
@@ -437,7 +442,7 @@ msgid ""
 "creates the **psOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.PsOptions.PsOptions:11 of
+#: abaqus.Print.PsOptions.PsOptions:10 of
 msgid ""
 "Check `PsOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`__."
@@ -551,7 +556,7 @@ msgid ""
 "the **svgOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.SvgOptions.SvgOptions:11 of
+#: abaqus.Print.SvgOptions.SvgOptions:10 of
 msgid ""
 "Check `SvgOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`__."
@@ -1339,5 +1344,14 @@ msgstr ""
 #~ " pixels supported by the system "
 #~ "graphics and will be at least as"
 #~ " large as the screen dimensions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The PngOptions object stores the "
+#~ "settings that Abaqus uses when printing"
+#~ " in PNG format. The PngOptions object"
+#~ " has no constructor. Abaqus creates "
+#~ "the **pngOptions** member when a session"
+#~ " is started."
 #~ msgstr ""
 

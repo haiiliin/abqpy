@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -391,7 +391,7 @@ msgstr ""
 msgid ":py:obj:`close <abaqus.Mdb.MdbBase.MdbBase.close>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1
+#: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.close:1 of
 msgid ""
 "This method closes an open Mdb object but does not save the Mdb object to"
 " disk."
@@ -555,21 +555,20 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.close:1 of
+#: abaqus.Mdb.MdbBase.MdbBase.close:3 of
 msgid ""
-"This method closes an open Mdb object but does not save the Mdb object to"
-" disk. After closing the Mdb object, this method creates a new unnamed "
-"empty Mdb object."
+"After closing the Mdb object, this method creates a new unnamed empty Mdb"
+" object."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:5 of
+#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:4 of
 msgid ""
 "Check `MdbBase.closeAuxMdb on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
 "#simaker-mdbcloseauxmdbpyc>`__."
 msgstr ""
 
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:7 of
+#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:6 of
 msgid ""
 "The auxiliary Mdb was not opened; If the auxiliary Mdb was not opened "
 "earlier"
@@ -829,23 +828,46 @@ msgstr ""
 msgid ""
 "This method upgrades an existing Mdb object to the current release and "
 "writes the upgraded version of the Mdb object to a file. In addition, "
-"Abaqus/CAE writes information about the status of the upgrade to the log "
-"file ( upgradedMdbPath.log )."
+"Abaqus/CAE writes."
 msgstr ""
 
-#: abaqus.Mdb.MdbCommands.upgradeMdb:7 of
+#: abaqus.Mdb.MdbCommands.upgradeMdb:4 of
+msgid ""
+"information about the status of the upgrade to the log file ( "
+"upgradedMdbPath.log )."
+msgstr ""
+
+#: abaqus.Mdb.MdbCommands.upgradeMdb:8 of
 msgid ""
 "A String specifying the path to the file containing the model database to"
 " be upgraded."
 msgstr ""
 
-#: abaqus.Mdb.MdbCommands.upgradeMdb:11 of
+#: abaqus.Mdb.MdbCommands.upgradeMdb:12 of
 msgid ""
 "A String specifying the path to the file that will contain the upgraded "
 "model database."
 msgstr ""
 
-#: abaqus.Mdb.MdbCommands.upgradeMdb:15 of
+#: abaqus.Mdb.MdbCommands.upgradeMdb:16 of
 msgid "Cannot convert file"
 msgstr ""
+
+#~ msgid ""
+#~ "This method closes an open Mdb "
+#~ "object but does not save the Mdb"
+#~ " object to disk. After closing the"
+#~ " Mdb object, this method creates a"
+#~ " new unnamed empty Mdb object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method upgrades an existing Mdb "
+#~ "object to the current release and "
+#~ "writes the upgraded version of the "
+#~ "Mdb object to a file. In addition,"
+#~ " Abaqus/CAE writes information about the"
+#~ " status of the upgrade to the "
+#~ "log file ( upgradedMdbPath.log )."
+#~ msgstr ""
 
