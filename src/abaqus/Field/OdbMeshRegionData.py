@@ -31,7 +31,7 @@ class OdbMeshRegionData:
             mdb.models[name].analyticalFields[name].odbMeshRegionData
 
     .. versionchanged:: 2017
-        The `transformationType` attribute was moved.
+        The ``transformationType`` attribute was moved.
     """
 
     #: An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤ (*numSteps* −
@@ -241,7 +241,7 @@ class OdbMeshRegionData:
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
         .. versionchanged:: 2017
-            The `transformationType` argument was moved.
+            The ``transformationType`` argument was moved.
 
         Parameters
         ----------
