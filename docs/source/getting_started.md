@@ -154,6 +154,15 @@ add a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file
 
 Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed.
 
+```{warning}
+`abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
+If you run the script under the debug mode, the script will not be submitted to Abaqus, but it will run in the
+Python interpreter where `abqpy` is installed. Since `abqpy` does not implement the whole Abaqus/Python APIs,
+the script may not (and most likely) run correctly. However, for some simple scripts, it may work, in this way
+you can use the debugger to check the variables in the Abaqus API roughly. But still, the script will not be
+submitted to Abaqus.
+```
+
 - Create an Abaqus Model
 
   ```{image} images/model-code.*
@@ -169,15 +178,6 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
   :alt: Extract Output Data
   :width: 100%
   ```
-
-```{warning}
-`abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
-If you run the script under the debug mode, the script will not be submitted to Abaqus, but it will run in the
-Python interpreter where `abqpy` is installed. Since `abqpy` does not implement the whole Abaqus/Python APIs,
-the script may not (and most likely) run correctly. However, for some simple scripts, it may work, in this way
-you can use the debugger to check the variables in the Abaqus API roughly. But still, the script will not be
-submitted to Abaqus.
-```
 
 ## Comments
 
