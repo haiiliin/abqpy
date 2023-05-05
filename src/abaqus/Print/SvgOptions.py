@@ -8,9 +8,8 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class SvgOptions(_OptionsBase):
-    """The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
-    The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
-    session is started.
+    """The SvgOptions object stores the settings that Abaqus uses when printing in SVG format. The SvgOptions
+    object has no constructor. Abaqus creates the **svgOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

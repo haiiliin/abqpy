@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PorePressureBCState(BoundaryConditionState):
-    """The PorePressureBCState object stores the propagating data for a pore pressure boundary
-    condition in a step. One instance of this object is created internally by the
-    PorePressureBC object for each step. The instance is also deleted internally by the
-    PorePressureBC object.
-    The PorePressureBCState object has no constructor or methods.
-    The PorePressureBCState object is derived from the BoundaryConditionState object.
+    """The PorePressureBCState object stores the propagating data for a pore pressure boundary condition in a
+    step. One instance of this object is created internally by the PorePressureBC object for each step. The
+    instance is also deleted internally by the PorePressureBC object. The PorePressureBCState object has no
+    constructor or methods. The PorePressureBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ElectricPotentialBCState(BoundaryConditionState):
-    """The ElectricPotentialBCState object stores the propagating data for a electrical
-    potential boundary condition in a step. One instance of this object is created
-    internally by the ElectricPotentialBC object for each step. The instance is also deleted
-    internally by the ElectricPotentialBC object.
-    The ElectricPotentialBCState object has no constructor or methods.
-    The ElectricPotentialBCState object is derived from the BoundaryConditionState object.
+    """The ElectricPotentialBCState object stores the propagating data for a electrical potential boundary
+    condition in a step. One instance of this object is created internally by the ElectricPotentialBC object for
+    each step. The instance is also deleted internally by the ElectricPotentialBC object. The
+    ElectricPotentialBCState object has no constructor or methods. The ElectricPotentialBCState object is
+    derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

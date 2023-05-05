@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SurfacePoreFluidState(LoadState):
-    """The SurfacePoreFluidState object stores the propagating data for a SurfacePoreFluid
-    object in a step. One instance of this object is created internally by the
-    SurfacePoreFluid object for each step. The instance is also deleted internally by the
-    SurfacePoreFluid object.
-    The SurfacePoreFluidState object has no constructor or methods.
-    The SurfacePoreFluidState object is derived from the LoadState object.
+    """The SurfacePoreFluidState object stores the propagating data for a SurfacePoreFluid object in a step. One
+    instance of this object is created internally by the SurfacePoreFluid object for each step. The instance is
+    also deleted internally by the SurfacePoreFluid object. The SurfacePoreFluidState object has no constructor
+    or methods. The SurfacePoreFluidState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

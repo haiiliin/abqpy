@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class PipeProfile(Profile):
-    """The PipeProfile object defines the properties of a circular pipe profile.
-    The PipeProfile object is derived from the Profile object.
+    """The PipeProfile object defines the properties of a circular pipe profile. The PipeProfile object is
+    derived from the Profile object.
 
     .. note::
         This object can be accessed by::
@@ -61,7 +61,6 @@ class PipeProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -72,6 +71,5 @@ class PipeProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

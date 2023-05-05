@@ -38,9 +38,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SoilsStep(AnalysisStep):
-    """The SoilsStep object is used to specify transient (consolidation) or steady-state
-    response analysis of partially or fully saturated fluid-filled porous media.
-    The SoilsStep object is derived from the AnalysisStep object.
+    """The SoilsStep object is used to specify transient (consolidation) or steady-state response analysis of
+    partially or fully saturated fluid-filled porous media. The SoilsStep object is derived from the
+    AnalysisStep object.
 
     .. note::
         This object can be accessed by::

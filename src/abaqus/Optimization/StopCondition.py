@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class StopCondition:
-    """The StopCondition object is the abstract base type for other StopCondition objects. The
-    StopCondition object has no explicit constructor. The methods and members of the
-    StopCondition object are common to all objects derived from StopCondition.
+    """The StopCondition object is the abstract base type for other StopCondition objects. The StopCondition
+    object has no explicit constructor. The methods and members of the StopCondition object are common to all
+    objects derived from StopCondition.
 
     .. note::
         This object can be accessed by::

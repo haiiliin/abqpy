@@ -10,10 +10,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class DatumCsys(Datum):
-    """The DatumCsys object has no direct constructor; it is created when a Feature object is
-    created. For example, the DatumCsysByOffset method creates a Feature object that creates
-    a DatumCsys object.
-    The DatumCsys object is derived from the Datum object.
+    """The DatumCsys object has no direct constructor; it is created when a Feature object is created. For
+    example, the DatumCsysByOffset method creates a Feature object that creates a DatumCsys object. The
+    DatumCsys object is derived from the Datum object.
 
     .. note::
         This object can be accessed by::

@@ -10,9 +10,8 @@ from ..Mesh.MeshNode import MeshNode
 
 @abaqus_class_doc
 class ReferencePoint:
-    """The ReferencePoint object has no direct constructor; it is created when a Feature object
-    is created. The ReferencePoint method creates a Feature object that creates a
-    ReferencePoint object.
+    """The ReferencePoint object has no direct constructor; it is created when a Feature object is created. The
+    ReferencePoint method creates a Feature object that creates a ReferencePoint object.
 
     .. note::
         This object can be accessed by::
@@ -41,8 +40,7 @@ class ReferencePoint:
         point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
         instanceName: str = "",
     ):
-        """This method creates a Feature object and a ReferencePoint object at the specified
-        location.
+        """This method creates a Feature object and a ReferencePoint object at the specified location.
 
         .. note::
             This function can be accessed by::

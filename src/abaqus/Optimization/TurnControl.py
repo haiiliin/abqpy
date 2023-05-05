@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TurnControl(GeometricRestriction):
-    """The TurnControl object defines a turn control geometric restriction.
-    The TurnControl object is derived from the GeometricRestriction object.
+    """The TurnControl object defines a turn control geometric restriction. The TurnControl object is derived
+    from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

@@ -24,11 +24,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Feature:
-    """Abaqus/CAE is a feature-based modeling system, and features are stored in the Feature
-    object. The user defines the parameters of the feature, and Abaqus/CAE modifies the
-    model based on the value of the parameters. This evaluation of the parameters is called
-    regeneration of the feature. Feature objects contain both the parameters and the
-    resulting model modification.
+    """Abaqus/CAE is a feature-based modeling system, and features are stored in the Feature object. The user
+    defines the parameters of the feature, and Abaqus/CAE modifies the model based on the value of the
+    parameters. This evaluation of the parameters is called regeneration of the feature. Feature objects contain
+    both the parameters and the resulting model modification.
 
     .. note::
         This object can be accessed by::
@@ -59,10 +58,9 @@ class Feature:
         projectionDirEndPt: Optional[float] = None,
         setName: str = "",
     ) -> Feature:
-        """This method creates an attachment points Feature. Attachment points may be created using
-        datum points, vertices, reference points, attachment points, interesting points, orphan
-        mesh nodes or coordinates. Optionally, the attachment points can be projected on
-        geometric faces or element faces.
+        """This method creates an attachment points Feature. Attachment points may be created using datum
+        points, vertices, reference points, attachment points, interesting points, orphan mesh nodes or
+        coordinates. Optionally, the attachment points can be projected on geometric faces or element faces.
 
         .. note::
             This function can be accessed by::
@@ -127,10 +125,10 @@ class Feature:
         flipDirection: Boolean = OFF,
         setName: str = "",
     ) -> Feature:
-        """This method creates a Feature object by creating attachment points along a direction or
-        between two points. A Datum point, a ConstrainedSketchVertex, a Reference point, an Attachment point, an
-        Interesting point, or an orphan mesh Node can be specified as the start or end point.
-        The direction can be specified using a straight edge or a datum axis.
+        """This method creates a Feature object by creating attachment points along a direction or between two
+        points. A Datum point, a ConstrainedSketchVertex, a Reference point, an Attachment point, an Interesting
+        point, or an orphan mesh Node can be specified as the start or end point. The direction can be specified
+        using a straight edge or a datum axis.
 
         .. note::
             This function can be accessed by::
@@ -227,8 +225,8 @@ class Feature:
         projectionDirEndPt: Sequence[float] = ...,
         setName: str = "",
     ) -> Feature:
-        """This method creates a Feature object by creating attachment points along or offset from
-        one or more connected edges.
+        """This method creates a Feature object by creating attachment points along or offset from one or more
+        connected edges.
 
         .. note::
             This function can be accessed by::
@@ -326,8 +324,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByCylFace(self, face: str) -> Feature:
-        """This method creates a Feature object and a DatumAxis object along the axis of a cylinder
-        or cone.
+        """This method creates a Feature object and a DatumAxis object along the axis of a cylinder or cone.
 
         .. note::
             This function can be accessed by::
@@ -353,8 +350,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByNormalToPlane(self, plane: str, point: int) -> Feature:
-        """This method creates a Feature object and a DatumAxis object normal to the specified
-        plane and passing through the specified point.
+        """This method creates a Feature object and a DatumAxis object normal to the specified plane and passing
+        through the specified point.
 
         .. note::
             This function can be accessed by::
@@ -382,8 +379,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByParToEdge(self, edge: str, point: int) -> Feature:
-        """This method creates a Feature object and a DatumAxis object parallel to the specified
-        edge and passing through the specified point.
+        """This method creates a Feature object and a DatumAxis object parallel to the specified edge and
+        passing through the specified point.
 
         .. note::
             This function can be accessed by::
@@ -411,8 +408,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByPrincipalAxis(self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]) -> Feature:
-        """This method creates a Feature object and a DatumAxis object along one of the three
-        principal axes.
+        """This method creates a Feature object and a DatumAxis object along one of the three principal axes.
 
         .. note::
             This function can be accessed by::
@@ -440,8 +436,8 @@ class Feature:
     @overload
     @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, axis: str, angle: float) -> Feature:
-        """This method creates a Feature object and a DatumAxis object in a three-dimensional model
-        by rotating a line about the specified axis through the specified angle.
+        """This method creates a Feature object and a DatumAxis object in a three-dimensional model by rotating
+        a line about the specified axis through the specified angle.
 
         .. note::
             This function can be accessed by::
@@ -474,8 +470,8 @@ class Feature:
     @overload
     @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, point: int, angle: float) -> Feature:
-        """This method creates a Feature object and a DatumAxis object in a two-dimensional model
-        by rotating a line about the specified point through the specified angle.
+        """This method creates a Feature object and a DatumAxis object in a two-dimensional model by rotating a
+        line about the specified point through the specified angle.
 
         .. note::
             This function can be accessed by::
@@ -510,8 +506,8 @@ class Feature:
         ...
 
     def DatumAxisByThreePoint(self, point1: int, point2: int, point3: int) -> Feature:
-        """This method creates a Feature object and a DatumAxis object normal to the circle
-        described by three points and through its center.
+        """This method creates a Feature object and a DatumAxis object normal to the circle described by three
+        points and through its center.
 
         .. note::
             This function can be accessed by::
@@ -570,8 +566,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByTwoPlane(self, plane1: str, plane2: str) -> Feature:
-        """This method creates a Feature object and a DatumAxis object at the intersection of two
-        planes.
+        """This method creates a Feature object and a DatumAxis object at the intersection of two planes.
 
         .. note::
             This function can be accessed by::
@@ -599,8 +594,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByTwoPoint(self, point1: int, point2: int) -> Feature:
-        """This method creates a Feature object and a DatumAxis object along the line joining two
-        points.
+        """This method creates a Feature object and a DatumAxis object along the line joining two points.
 
         .. note::
             This function can be accessed by::
@@ -632,8 +626,8 @@ class Feature:
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
         name: str = "",
     ) -> Feature:
-        """This method creates a Feature object and a DatumCsys object from the specified default
-        coordinate system at the origin.
+        """This method creates a Feature object and a DatumCsys object from the specified default coordinate
+        system at the origin.
 
         .. note::
             This function can be accessed by::
@@ -669,8 +663,8 @@ class Feature:
         point: str,
         name: str = "",
     ) -> Feature:
-        """This method creates a Feature object and a DatumCsys object by offsetting the origin of
-        an existing datum coordinate system to a specified point.
+        """This method creates a Feature object and a DatumCsys object by offsetting the origin of an existing
+        datum coordinate system to a specified point.
 
         .. note::
             This function can be accessed by::
@@ -773,9 +767,8 @@ class Feature:
         line2: str,
         name: str = "",
     ) -> Feature:
-        """This method creates a Feature object and a DatumCsys object from two orthogonal lines.
-        The origin of the new datum coordinate system is placed at the intersection of the two
-        lines.
+        """This method creates a Feature object and a DatumCsys object from two orthogonal lines. The origin of
+        the new datum coordinate system is placed at the intersection of the two lines.
 
         .. note::
             This function can be accessed by::
@@ -812,8 +805,8 @@ class Feature:
     def DatumPlaneByPrincipalPlane(
         self, principalPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE], offset: float
     ) -> Feature:
-        """This method creates a Feature object and a DatumPlane object through the origin along
-        one of the three principal planes.
+        """This method creates a Feature object and a DatumPlane object through the origin along one of the
+        three principal planes.
 
         .. note::
             This function can be accessed by::
@@ -843,8 +836,8 @@ class Feature:
     @overload
     @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, flip: Literal[C.SIDE1, C.SIDE2], offset: float) -> Feature:
-        """This method creates a Feature object and a DatumPlane object offset by a specified
-        distance from an existing plane.
+        """This method creates a Feature object and a DatumPlane object offset by a specified distance from an
+        existing plane.
 
         .. note::
             This function can be accessed by::
@@ -876,8 +869,8 @@ class Feature:
     @overload
     @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, point: int) -> Feature:
-        """This method creates a Feature object and a DatumPlane object offset from an existing
-        plane and passing through the specified point.
+        """This method creates a Feature object and a DatumPlane object offset from an existing plane and
+        passing through the specified point.
 
         .. note::
             This function can be accessed by::
@@ -908,8 +901,8 @@ class Feature:
         ...
 
     def DatumPlaneByRotation(self, plane: str, axis: str, angle: float) -> Feature:
-        """This method creates a Feature object and a DatumPlane object by rotating a plane about
-        the specified axis through the specified angle.
+        """This method creates a Feature object and a DatumPlane object by rotating a plane about the specified
+        axis through the specified angle.
 
         .. note::
             This function can be accessed by::
@@ -939,8 +932,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByThreePoints(self, point1: int, point2: int, point3: int) -> Feature:
-        """This method creates a Feature object and a DatumPlane object defined by passing through
-        three points.
+        """This method creates a Feature object and a DatumPlane object defined by passing through three points.
 
         .. note::
             This function can be accessed by::
@@ -970,8 +962,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByLinePoint(self, line: str, point: int) -> Feature:
-        """This method creates a Feature object and a DatumPlane object that pass through the
-        specified line and through the specified point that does not lie on the line.
+        """This method creates a Feature object and a DatumPlane object that pass through the specified line and
+        through the specified point that does not lie on the line.
 
         .. note::
             This function can be accessed by::
@@ -999,8 +991,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByPointNormal(self, point: int, normal: str) -> Feature:
-        """This method creates a Feature object and a DatumPlane object normal to the specified
-        line and running through the specified point.
+        """This method creates a Feature object and a DatumPlane object normal to the specified line and running
+        through the specified point.
 
         .. note::
             This function can be accessed by::
@@ -1028,8 +1020,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByTwoPoint(self, point1: int, point2: int) -> Feature:
-        """This method creates a Feature object and a DatumPlane object midway between two points
-        and normal to the line connecting the points.
+        """This method creates a Feature object and a DatumPlane object midway between two points and normal to
+        the line connecting the points.
 
         .. note::
             This function can be accessed by::
@@ -1057,8 +1049,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByCoordinate(self, coords: Tuple[float, float, float]) -> Feature:
-        """This method creates a Feature object and a DatumPoint object at the point defined by the
-        specified coordinates.
+        """This method creates a Feature object and a DatumPoint object at the point defined by the specified
+        coordinates.
 
         .. note::
             This function can be accessed by::
@@ -1081,8 +1073,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByOffset(self, point: int, vector: tuple) -> Feature:
-        """This method creates a Feature object and a DatumPoint object offset from an existing
-        point by a vector.
+        """This method creates a Feature object and a DatumPoint object offset from an existing point by a
+        vector.
 
         .. note::
             This function can be accessed by::
@@ -1130,8 +1122,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByOnFace(self, face: str, edge1: str, offset1: float, edge2: str, offset2: float) -> Feature:
-        """This method creates a Feature object and a DatumPoint object on the specified face,
-        offset from two edges.
+        """This method creates a Feature object and a DatumPoint object on the specified face, offset from two
+        edges.
 
         .. note::
             This function can be accessed by::
@@ -1165,8 +1157,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByEdgeParam(self, edge: Edge, parameter: float) -> Feature:
-        """This method creates a Feature object and a DatumPoint object along an edge at a selected
-        distance from one end of the edge.
+        """This method creates a Feature object and a DatumPoint object along an edge at a selected distance
+        from one end of the edge.
 
         .. note::
             This function can be accessed by::
@@ -1196,8 +1188,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByProjOnEdge(self, point: int, edge: str) -> Feature:
-        """This method creates a Feature object and a DatumPoint object along an edge by projecting
-        an existing point along the normal to the edge.
+        """This method creates a Feature object and a DatumPoint object along an edge by projecting an existing
+        point along the normal to the edge.
 
         .. note::
             This function can be accessed by::
@@ -1225,8 +1217,8 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPointByProjOnFace(self, point: int, face: Face) -> Feature:
-        """This method creates a Feature object and a DatumPoint object on a specified face by
-        projecting an existing point onto the face.
+        """This method creates a Feature object and a DatumPoint object on a specified face by projecting an
+        existing point onto the face.
 
         .. note::
             This function can be accessed by::
@@ -1262,8 +1254,8 @@ class Feature:
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2] = SIDE1,
         sketchUpEdge: str = "",
     ) -> Transform:
-        """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats
-        that represents the transformation from sketch coordinates to part coordinates.
+        """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats that represents
+        the transformation from sketch coordinates to part coordinates.
 
         .. note::
             This function can be accessed by::
@@ -1332,8 +1324,8 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByExtendFace(self, cells: Sequence[Cell], extendFace: str) -> Feature:
-        """This method partitions one or more cells by extending the underlying geometry of a given
-        face to partition the target cells.
+        """This method partitions one or more cells by extending the underlying geometry of a given face to
+        partition the target cells.
 
         .. note::
             This function can be accessed by::
@@ -1363,8 +1355,7 @@ class Feature:
     def PartitionCellByExtrudeEdge(
         self, cells: Sequence[Cell], edges: str, line: str, sense: Literal[C.FORWARD, C.REVERSE]
     ) -> Feature:
-        """This method partitions one or more cells by extruding selected edges in the given
-        direction.
+        """This method partitions one or more cells by extruding selected edges in the given direction.
 
         .. note::
             This function can be accessed by::
@@ -1400,8 +1391,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPatchNCorners(self, cell: Cell, cornerPoints: tuple) -> Feature:
-        """This method partitions a cell using an N-sided cutting patch defined by the given corner
-        points.
+        """This method partitions a cell using an N-sided cutting patch defined by the given corner points.
 
         .. note::
             This function can be accessed by::
@@ -1464,8 +1454,7 @@ class Feature:
         edge: Edge,
         point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
     ) -> Feature:
-        """This method partitions one or more cells using a plane normal to an edge at the given
-        edge point.
+        """This method partitions one or more cells using a plane normal to an edge at the given edge point.
 
         .. note::
             This function can be accessed by::
@@ -1500,8 +1489,7 @@ class Feature:
         point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
         normal: Union[Edge, DatumAxis],
     ) -> Feature:
-        """This method partitions one or more cells using a plane defined by a point and a normal
-        direction.
+        """This method partitions one or more cells using a plane defined by a point and a normal direction.
 
         .. note::
             This function can be accessed by::
@@ -1564,8 +1552,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellBySweepEdge(self, cells: Sequence[Cell], edges: Sequence[Edge], sweepPath: Edge) -> Feature:
-        """This method partitions one or more cells by sweeping selected edges along the given
-        sweep path.
+        """This method partitions one or more cells by sweeping selected edges along the given sweep path.
 
         .. note::
             This function can be accessed by::
@@ -1683,8 +1670,8 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByAuto(self, face: Face) -> Feature:
-        """This method automatically partitions a target face into simple regions that can be
-        meshed using a structured meshing technique.
+        """This method automatically partitions a target face into simple regions that can be meshed using a
+        structured meshing technique.
 
         .. note::
             This function can be accessed by::
@@ -1708,8 +1695,8 @@ class Feature:
     def PartitionFaceByCurvedPathEdgeParams(
         self, face: Face, edge1: Edge, parameter1: float, edge2: Edge, parameter2: float
     ) -> Feature:
-        """This method partitions a face normal to two edges, using a curved path between the two
-        given edge points defined by the normalized edge parameters.
+        """This method partitions a face normal to two edges, using a curved path between the two given edge
+        points defined by the normalized edge parameters.
 
         .. note::
             This function can be accessed by::
@@ -1747,8 +1734,8 @@ class Feature:
     def PartitionFaceByCurvedPathEdgePoints(
         self, face: Face, edge1: Edge, point1: int, edge2: Edge, point2: int
     ) -> Feature:
-        """This method partitions a face normal to two edges, using a curved path between the two
-        given edge points.
+        """This method partitions a face normal to two edges, using a curved path between the two given edge
+        points.
 
         .. note::
             This function can be accessed by::
@@ -1806,8 +1793,8 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByExtendFace(self, faces: Sequence[Face], extendFace: Face) -> Feature:
-        """This method partitions one or more faces by extending the underlying geometry of another
-        given face to partition the target faces.
+        """This method partitions one or more faces by extending the underlying geometry of another given face
+        to partition the target faces.
 
         .. note::
             This function can be accessed by::
@@ -1832,8 +1819,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByIntersectFace(self, faces: Sequence[Face], cuttingFaces: Sequence[Face]) -> Feature:
-        """This method partitions one or more faces using the given cutting faces to partition the
-        target faces.
+        """This method partitions one or more faces using the given cutting faces to partition the target faces.
 
         .. note::
             This function can be accessed by::
@@ -1862,8 +1848,7 @@ class Feature:
         edges: Sequence[Edge],
         extendEdges: Boolean = False,
     ) -> Feature:
-        """This method partitions one or more faces by projecting the given edges on the target
-        faces.
+        """This method partitions one or more faces by projecting the given edges on the target faces.
 
         .. note::
             This function can be accessed by::
@@ -1891,8 +1876,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByShortestPath(self, faces: Sequence[Face], point1: int, point2: int) -> Feature:
-        """This method partitions one or more faces using a minimum distance path between the two
-        given points.
+        """This method partitions one or more faces using a minimum distance path between the two given points.
 
         .. note::
             This function can be accessed by::
@@ -1974,8 +1958,8 @@ class Feature:
         distance: float,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
-        """This method partitions one or more faces by sketching on a sketch plane and then
-        projecting the sketch toward the target faces through the given distance.
+        """This method partitions one or more faces by sketching on a sketch plane and then projecting the
+        sketch toward the target faces through the given distance.
 
         .. note::
             This function can be accessed by::
@@ -2024,9 +2008,8 @@ class Feature:
         point: int,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
-        """This method partitions one or more faces by sketching on a sketch plane and then
-        projecting the sketch toward the target faces through a distance governed by the
-        reference point.
+        """This method partitions one or more faces by sketching on a sketch plane and then projecting the
+        sketch toward the target faces through a distance governed by the reference point.
 
         .. note::
             This function can be accessed by::
@@ -2073,8 +2056,8 @@ class Feature:
         sketch: ConstrainedSketch,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
-        """This method partitions one or more faces by sketching on a sketch plane and then
-        projecting toward the target faces through an infinite distance.
+        """This method partitions one or more faces by sketching on a sketch plane and then projecting toward
+        the target faces through an infinite distance.
 
         .. note::
             This function can be accessed by::
@@ -2117,8 +2100,7 @@ class Feature:
         point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
         instanceName: str = "",
     ) -> Feature:
-        """This method creates a Feature object and a ReferencePoint object at the specified
-        location.
+        """This method creates a Feature object and a ReferencePoint object at the specified location.
 
         .. note::
             This function can be accessed by::
@@ -2172,11 +2154,11 @@ class Feature:
         mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
     ) -> Feature:
-        """This method creates an additional Feature object by creating a series of wires joining
-        points in pairs. When such a feature is created at the Part level, then each point can
-        be either a datum point, a vertex, a reference point, an interesting point, an orphan
-        mesh node, or the coordinates of a point. When such a feature is created at the Assembly
-        level, then each point can only be a vertex, a reference point, or an orphan mesh node.
+        """This method creates an additional Feature object by creating a series of wires joining points in
+        pairs. When such a feature is created at the Part level, then each point can be either a datum point, a
+        vertex, a reference point, an interesting point, an orphan mesh node, or the coordinates of a point.
+        When such a feature is created at the Assembly level, then each point can only be a vertex, a reference
+        point, or an orphan mesh node.
 
         .. note::
             This function can be accessed by::
@@ -2228,18 +2210,20 @@ class Feature:
 
     @abaqus_method_doc
     def restore(self) -> None:
-        """This method restores the parameters of a feature to the value they had when the backup
-        method was invoked on the part or assembly. Use the restore method after the backup
-        method.
+        """This method restores the parameters of a feature to the value they had when the backup method was
+        invoked on the part or assembly.
+
+        Use the restore method after the backup method.
         """
         ...
 
     @abaqus_method_doc
     def resume(self) -> None:
-        """This method resumes suppressed features. Resuming a feature fully restores it to the
-        part or assembly. You can resume the last feature you suppressed, all suppressed
-        features, or just selected features. When you resume a child feature, Abaqus/CAE also
-        resumes the parent features automatically.
+        """This method resumes suppressed features.
+
+        Resuming a feature fully restores it to the part or assembly. You can resume the last feature you
+        suppressed, all suppressed features, or just selected features. When you resume a child feature,
+        Abaqus/CAE also resumes the parent features automatically.
         """
         ...
 
@@ -2285,10 +2269,11 @@ class Feature:
 
     @abaqus_method_doc
     def suppress(self) -> None:
-        """This method suppresses features. Suppressing a feature is equivalent to temporarily
-        removing the feature from the part or assembly. Suppressed features remain suppressed
-        when you regenerate a part or assembly. You cannot suppress the base feature. In
-        addition, if you suppress a parent feature, all of its child features are also
+        """This method suppresses features.
+
+        Suppressing a feature is equivalent to temporarily removing the feature from the part or assembly.
+        Suppressed features remain suppressed when you regenerate a part or assembly. You cannot suppress
+        the base feature. In addition, if you suppress a parent feature, all of its child features are also
         suppressed automatically. Suppressed features can be restored with the resume command.
         """
         ...

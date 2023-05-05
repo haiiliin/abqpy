@@ -9,9 +9,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class XFEMCrack(Crack):
-    """The XFEMCrack object defines the parameters needed to model crack initiation or crack
-    growth using XFEM technology. Currently only assembly regions are supported.
-    The XFEMCrack object is derived from the Crack object.
+    """The XFEMCrack object defines the parameters needed to model crack initiation or crack growth using XFEM
+    technology. Currently only assembly regions are supported. The XFEMCrack object is derived from the Crack
+    object.
 
     .. note::
         This object can be accessed by::
@@ -95,9 +95,8 @@ class XFEMCrack(Crack):
         crackPlaneDist: tuple = (),
         crackFrontDist: tuple = (),
     ):
-        """This method creates a XFEMCrack object. Although the constructor is available both for
-        parts and for the assembly, XFEMCrack objects are currently supported only under the
-        assembly.
+        """This method creates a XFEMCrack object. Although the constructor is available both for parts and for
+        the assembly, XFEMCrack objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

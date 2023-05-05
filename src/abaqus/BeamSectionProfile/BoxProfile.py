@@ -6,8 +6,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class BoxProfile(Profile):
-    """The BoxProfile object defines the properties of a box profile.
-    The BoxProfile object is derived from the Profile object.
+    """The BoxProfile object defines the properties of a box profile. The BoxProfile object is derived from the
+    Profile object.
 
     .. note::
         This object can be accessed by::
@@ -105,7 +105,6 @@ class BoxProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -128,6 +127,5 @@ class BoxProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SelfContactStd(Interaction):
-    """The SelfContactStd object defines self-contact during an Abaqus/Standard analysis.
-    The SelfContactStd object is derived from the Interaction object.
+    """The SelfContactStd object defines self-contact during an Abaqus/Standard analysis. The SelfContactStd
+    object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -122,8 +122,7 @@ class SelfContactStd(Interaction):
         smooth: float = 0,
         contactControls: str = "",
     ):
-        """This method modifies the data for an existing SelfContactStd object in the step where it
-        is created.
+        """This method modifies the data for an existing SelfContactStd object in the step where it is created.
 
         Parameters
         ----------
@@ -146,8 +145,7 @@ class SelfContactStd(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
-        """This method modifies the propagating data of an existing SelfContactStd object in the
-        specified step.
+        """This method modifies the propagating data of an existing SelfContactStd object in the specified step.
 
         Parameters
         ----------

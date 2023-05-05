@@ -17,9 +17,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNION
 
 @abaqus_class_doc
 class Surface(Region):
-    """The Surface object stores surfaces selected from the assembly. A surface is comprised of
-    geometric or discrete entities but not both. An instance of a Surface object is
-    available from the **surface** member of the Assembly object.
+    """The Surface object stores surfaces selected from the assembly. A surface is comprised of geometric or
+    discrete entities but not both. An instance of a Surface object is available from the **surface** member of
+    the Assembly object.
 
     .. note::
         This object can be accessed by::
@@ -83,10 +83,9 @@ class Surface(Region):
         name: str = "",
         **kwargs,
     ) -> None:
-        """This method creates a surface from a sequence of objects in a model database. The
-        surface will apply to the sides specified by the arguments.For example
-        surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
-        name='Surf-1')
+        """This method creates a surface from a sequence of objects in a model database. The surface will apply
+        to the sides specified by the arguments.For example
+        surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')
 
         .. note::
             This function can be accessed by::
@@ -224,8 +223,7 @@ class Surface(Region):
         surfaces: Sequence[Surface],
         operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION,
     ) -> Surface:
-        """This method creates a surface by performing a boolean operation on two or more input
-        surfaces.
+        """This method creates a surface by performing a boolean operation on two or more input surfaces.
 
         .. note::
             This function can be accessed by::

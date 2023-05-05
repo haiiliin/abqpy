@@ -5,8 +5,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class AdaptiveMeshDomain:
-    """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
-    Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
+    """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary Lagrangian
+    Eularian (ALE) style adaptive smoothing mesh domain.
 
     .. note::
         This object can be accessed by::

@@ -10,14 +10,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
-    """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
-    Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint
-    in a step. One instance of this object is created internally by the
-    DisplacementAdaptiveMeshConstraint object for each step. The instance is also deleted
-    internally by the DisplacementAdaptiveMeshConstraint object.
-    The DisplacementAdaptiveMeshConstraintState object has no constructor or methods.
-    The DisplacementAdaptiveMeshConstraintState object is derived from the
-    AdaptiveMeshConstraintState object.
+    """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
+    Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint in a step. One instance of
+    this object is created internally by the DisplacementAdaptiveMeshConstraint object for each step. The
+    instance is also deleted internally by the DisplacementAdaptiveMeshConstraint object. The
+    DisplacementAdaptiveMeshConstraintState object has no constructor or methods. The
+    DisplacementAdaptiveMeshConstraintState object is derived from the AdaptiveMeshConstraintState object.
 
     .. note::
         This object can be accessed by::

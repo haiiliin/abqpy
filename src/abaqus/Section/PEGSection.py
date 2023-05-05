@@ -5,8 +5,8 @@ from .Section import Section
 
 @abaqus_class_doc
 class PEGSection(Section):
-    """The PEGSection object defines the properties of a solid section.
-    The PEGSection object is derived from the Section object.
+    """The PEGSection object defines the properties of a solid section. The PEGSection object is derived from
+    the Section object.
 
     .. note::
         This object can be accessed by::

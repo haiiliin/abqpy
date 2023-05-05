@@ -28,13 +28,13 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbDisplay:
-    """The OdbDisplay object stores the context of an output database for a viewport. The
-    OdbDisplay object has no constructor. Abaqus creates the **defaultOdbDisplay** member when
-    you import the Visualization module. Abaqus creates the **odbDisplay** member when a
-    viewport is created, using the attributes from the previous active viewport. The
-    previous active viewport contains the attributes from the **defaultOdbDisplay** object for
-    the session. The attributes from the **defaultOdbDisplay** object are copied from the
-    previous active viewport to create the new viewport.
+    """The OdbDisplay object stores the context of an output database for a viewport. The OdbDisplay object has
+    no constructor. Abaqus creates the **defaultOdbDisplay** member when you import the Visualization module.
+    Abaqus creates the **odbDisplay** member when a viewport is created, using the attributes from the previous
+    active viewport. The previous active viewport contains the attributes from the **defaultOdbDisplay** object
+    for the session. The attributes from the **defaultOdbDisplay** object are copied from the previous active
+    viewport to create the new viewport.
+
     OdbDisplay objects are accessed in one of two ways:
     - The default output database display options. These settings are used as defaults when
     other **odbDisplay** members are created and can be set to customize user preferences.
@@ -265,7 +265,9 @@ class OdbDisplay:
 
     @abaqus_method_doc
     def moveCameraToCsys(self):
-        """This method specifies a new position for the camera. It is available only when
+        """This method specifies a new position for the camera.
+
+        It is available only when
         **movieMode** = ON (in the View object). The new camera position is the origin of the
         coordinate system specified by the **cameraCsysName** member of the BasicOptions object.
         """
@@ -273,8 +275,8 @@ class OdbDisplay:
 
     @abaqus_method_doc
     def setDeformedVariable(self, variableLabel: str, field: str):
-        """This method specifies the field output variable or FieldOutput object to be used when
-        displaying the deformed shape of the model.
+        """This method specifies the field output variable or FieldOutput object to be used when displaying the
+        deformed shape of the model.
 
         Parameters
         ----------
@@ -394,8 +396,7 @@ class OdbDisplay:
 
     @abaqus_method_doc
     def setPrimarySectionPoint(self, sectionPoint: dict, activePly: str):
-        """This method specifies the section point for the current primary, symbol and status
-        variables.
+        """This method specifies the section point for the current primary, symbol and status variables.
 
         Parameters
         ----------
@@ -440,8 +441,8 @@ class OdbDisplay:
         useStatus: Boolean = OFF,
         applyStatusToUndeformed: Boolean = False,
     ):
-        """This method specifies the field output variable for filtering element display based on a
-        status criteria.
+        """This method specifies the field output variable for filtering element display based on a status
+        criteria.
 
         Parameters
         ----------
@@ -512,10 +513,9 @@ class OdbDisplay:
         tensorQuantity: Optional[SymbolicConstant] = None,
         vectorQuantity: Optional[SymbolicConstant] = None,
     ):
-        """This method specifies the field output variable for which to obtain results used for
-        symbol plots. This variable must be in the form of vector or tensor data. The output
-        quantity can also be specified with this command to control the display of resultants,
-        or components.
+        """This method specifies the field output variable for which to obtain results used for symbol plots.
+        This variable must be in the form of vector or tensor data. The output quantity can also be specified
+        with this command to control the display of resultants, or components.
 
         Parameters
         ----------
@@ -558,8 +558,8 @@ class OdbDisplay:
 
     @abaqus_method_doc
     def setStreamVariable(self, variableLabel: str):
-        """This method specifies the field output variable for which to obtain results used for
-        stream plots. This variable must be in the form of nodal vector data.
+        """This method specifies the field output variable for which to obtain results used for stream plots.
+        This variable must be in the form of nodal vector data.
 
         Parameters
         ----------

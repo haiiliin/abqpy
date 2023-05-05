@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceThicknessAssignment:
-    """The SurfaceThicknessAssignment object stores the surface thickness assignment definition
-    for surfaces in ContactExp and ContactStd objects. The SurfaceThicknessAssignment object
-    has no constructor or members.
+    """The SurfaceThicknessAssignment object stores the surface thickness assignment definition for surfaces in
+    ContactExp and ContactStd objects. The SurfaceThicknessAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -28,8 +27,8 @@ class SurfaceThicknessAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Union[Literal[C.THINNING, C.ORIGINAL], float]):
-        """This method allows modification of surface thickness assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface thickness assignments already defined on surfaces in a
+        given step.
 
         Parameters
         ----------
@@ -65,8 +64,7 @@ class SurfaceThicknessAssignment:
             ...,
         ],
     ):
-        """This method allows addition of surface thickness assignments to new surfaces in a given
-        step.
+        """This method allows addition of surface thickness assignments to new surfaces in a given step.
 
         Parameters
         ----------

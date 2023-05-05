@@ -24,8 +24,8 @@ class SketchModel(ModelBase):
         gridSpacing: Optional[float] = None,
         transform: tuple = (),
     ) -> ConstrainedSketch:
-        """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
-        method returns None.
+        """This method creates a ConstrainedSketch object. If the sketch cannot be created, the method returns
+        None.
 
         .. note::
             This function can be accessed by::

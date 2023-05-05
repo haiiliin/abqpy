@@ -129,8 +129,8 @@ class FieldOutput:
 
     @abaqus_method_doc
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
-        """This method creates a FieldOutput object from an existing FieldOutput object of the same
-        output database.
+        """This method creates a FieldOutput object from an existing FieldOutput object of the same output
+        database.
 
         .. note::
             This function can be accessed by::
@@ -228,9 +228,9 @@ class FieldOutput:
     @overload
     @abaqus_method_doc
     def addData(self, field: "FieldOutput"):
-        """This method adds the data from a field created using the getSubset method and
-        mathematical operators to the database. The user must create a field to contain the new
-        data and then use the addData method to assign the data from the fields.
+        """This method adds the data from a field created using the getSubset method and mathematical operators
+        to the database. The user must create a field to contain the new data and then use the addData method to
+        assign the data from the fields.
 
         Parameters
         ----------
@@ -311,11 +311,10 @@ class FieldOutput:
 
     @overload
     def getScalarField(self, invariant: SymbolicConstant):
-        """This method generates a scalar field containing the extracted component or calculated
-        invariant values. The new field will hold values for the same nodes or elements as the
-        parent field. Abaqus will perform this operation on only the real part of the
-        FieldOutput object. The operation is not performed on the conjugate data (the imaginary
-        portion of a complex result).
+        """This method generates a scalar field containing the extracted component or calculated invariant
+        values. The new field will hold values for the same nodes or elements as the parent field. Abaqus will
+        perform this operation on only the real part of the FieldOutput object. The operation is not performed
+        on the conjugate data (the imaginary portion of a complex result).
 
         Parameters
         ----------
@@ -334,11 +333,10 @@ class FieldOutput:
     @overload
     @abaqus_method_doc
     def getScalarField(self, componentLabel: str):
-        """This method generates a scalar field containing the extracted component or calculated
-        invariant values. The new field will hold values for the same nodes or elements as the
-        parent field. Abaqus will perform this operation on only the real part of the
-        FieldOutput object. The operation is not performed on the conjugate data (the imaginary
-        portion of a complex result).
+        """This method generates a scalar field containing the extracted component or calculated invariant
+        values. The new field will hold values for the same nodes or elements as the parent field. Abaqus will
+        perform this operation on only the real part of the FieldOutput object. The operation is not performed
+        on the conjugate data (the imaginary portion of a complex result).
 
         Parameters
         ----------
@@ -535,12 +533,11 @@ class FieldOutput:
 
     @overload
     def getTransformedField(self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""):
-        """This method generates a new vector or tensor field containing the transformed component
-        values of the parent field. The new field will hold values for the same nodes or
-        elements as the parent field. Results will be transformed based on the orientations
-        specified by the input DatumCsys object. Abaqus will perform this operation on only the
-        real part of the FieldOutput object. The operation is not performed on the conjugate
-        data (the imaginary portion of a complex result).
+        """This method generates a new vector or tensor field containing the transformed component values of the
+        parent field. The new field will hold values for the same nodes or elements as the parent field. Results
+        will be transformed based on the orientations specified by the input DatumCsys object. Abaqus will
+        perform this operation on only the real part of the FieldOutput object. The operation is not performed
+        on the conjugate data (the imaginary portion of a complex result).
 
         Parameters
         ----------
@@ -579,12 +576,11 @@ class FieldOutput:
         projected22Axis: Optional[int] = None,
         projectionTol: str = "",
     ):
-        """This method generates a new vector or tensor field containing the transformed component
-        values of the parent field. The new field will hold values for the same nodes or
-        elements as the parent field. Results will be transformed based on the orientations
-        specified by the input DatumCsys object. Abaqus will perform this operation on only the
-        real part of the FieldOutput object. The operation is not performed on the conjugate
-        data (the imaginary portion of a complex result).
+        """This method generates a new vector or tensor field containing the transformed component values of the
+        parent field. The new field will hold values for the same nodes or elements as the parent field. Results
+        will be transformed based on the orientations specified by the input DatumCsys object. Abaqus will
+        perform this operation on only the real part of the FieldOutput object. The operation is not performed
+        on the conjugate data (the imaginary portion of a complex result).
 
         Parameters
         ----------
@@ -627,12 +623,11 @@ class FieldOutput:
         projected22Axis: Optional[int] = None,
         projectionTol: str = "",
     ):
-        """This method generates a new vector or tensor field containing the transformed component
-        values of the parent field. The new field will hold values for the same nodes or
-        elements as the parent field. Results will be transformed based on the orientations
-        specified by the input DatumCsys object. Abaqus will perform this operation on only the
-        real part of the FieldOutput object. The operation is not performed on the conjugate
-        data (the imaginary portion of a complex result).
+        """This method generates a new vector or tensor field containing the transformed component values of the
+        parent field. The new field will hold values for the same nodes or elements as the parent field. Results
+        will be transformed based on the orientations specified by the input DatumCsys object. Abaqus will
+        perform this operation on only the real part of the FieldOutput object. The operation is not performed
+        on the conjugate data (the imaginary portion of a complex result).
 
         Parameters
         ----------
@@ -674,11 +669,10 @@ class FieldOutput:
         ...
 
     def getConnectorFieldXformedToNodeA(self, deformationField: Optional["FieldOutput"] = None):
-        """This method generates a new vector field containing the transformed component values of
-        the parent connector field to the node A coordinate system. The new field will hold
-        values for the same connector elements as the parent field. Some connection types such
-        as Axial, Link, Slip Ring, and Radial Thrust require that the deformationField be
-        specified.
+        """This method generates a new vector field containing the transformed component values of the parent
+        connector field to the node A coordinate system. The new field will hold values for the same connector
+        elements as the parent field. Some connection types such as Axial, Link, Slip Ring, and Radial Thrust
+        require that the deformationField be specified.
 
         Parameters
         ----------

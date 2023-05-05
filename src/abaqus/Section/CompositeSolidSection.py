@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class CompositeSolidSection(Section):
-    """The CompositeSolidSection object defines the properties of a composite solid section.
-    The CompositeSolidSection object is derived from the Section object.
+    """The CompositeSolidSection object defines the properties of a composite solid section. The
+    CompositeSolidSection object is derived from the Section object.
 
     .. note::
         This object can be accessed by::

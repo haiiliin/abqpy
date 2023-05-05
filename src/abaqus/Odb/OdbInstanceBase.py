@@ -196,8 +196,7 @@ class OdbInstanceBase:
 
     @abaqus_method_doc
     def getElementFromLabel(self, label: int):
-        """This method is used to retrieved an element with a specific label from an instance
-        object.
+        """This method is used to retrieved an element with a specific label from an instance object.
 
         Parameters
         ----------
@@ -278,7 +277,6 @@ class OdbInstanceBase:
             2D-Planar Analytic Rigid Surface can be defined only if the instance is of
             type TWO_D_PLANAR or AXISYMMETRIC.
             If OdbPart associated with the part instance is of type THREE_D.
-
         """
         ...
 
@@ -290,8 +288,7 @@ class OdbInstanceBase:
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
-        """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
-        instance.
+        """This method is used to define a three-dimensional cylindrical AnalyticSurface on the instance.
 
         Parameters
         ----------
@@ -312,7 +309,6 @@ class OdbInstanceBase:
         OdbError
             Analytic Rigid Surface of type CYLINDER can be defined only if the instance is
             of type THREE_D, If OdbPart associated with the part instance is not of type THREE_D.
-
         """
         ...
 
@@ -324,8 +320,7 @@ class OdbInstanceBase:
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
-        """This method is used to define a three-dimensional AnalyticSurface of revolution on the
-        instance.
+        """This method is used to define a three-dimensional AnalyticSurface of revolution on the instance.
 
         Parameters
         ----------
@@ -346,7 +341,6 @@ class OdbInstanceBase:
         OdbError
             Analytic Rigid Surface of type REVOLUTION can be defined only if the
             instance is of type THREE_D, If OdbPart associated with the part instance is not of type THREE_D.
-
         """
         ...
 

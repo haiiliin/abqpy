@@ -7,8 +7,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TensionStiffening:
-    """The TensionStiffening object defines the retained tensile stress normal to a crack in a
-    Concrete model.
+    """The TensionStiffening object defines the retained tensile stress normal to a crack in a Concrete model.
 
     .. note::
         This object can be accessed by::

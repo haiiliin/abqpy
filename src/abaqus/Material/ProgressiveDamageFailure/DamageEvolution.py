@@ -9,8 +9,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DamageEvolution:
-    """The DamageEvolution object specifies material properties to define the evolution of
-    damage.
+    """The DamageEvolution object specifies material properties to define the evolution of damage.
 
     .. note::
         This object can be accessed by::

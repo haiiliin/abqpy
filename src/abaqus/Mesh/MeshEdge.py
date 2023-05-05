@@ -5,9 +5,8 @@ from .MeshElementArray import MeshElementArray
 
 @abaqus_class_doc
 class MeshEdge:
-    """The MeshEdge object refers to an element edge. It has no constructor or members. A
-    MeshEdge object can be accessed via a MeshEdgeArray or a repository on a part or part
-    instance.
+    """The MeshEdge object refers to an element edge. It has no constructor or members. A MeshEdge object can be
+    accessed via a MeshEdgeArray or a repository on a part or part instance.
 
     .. note::
         This object can be accessed by::
@@ -35,8 +34,8 @@ class MeshEdge:
 
     @abaqus_method_doc
     def getElementsViaTopology(self, domain: MeshElementArray = MeshElementArray([])):
-        """This method returns an array of MeshElement objects that are obtained by recursively
-        finding adjacent elements via topology.
+        """This method returns an array of MeshElement objects that are obtained by recursively finding adjacent
+        elements via topology.
 
         Parameters
         ----------
@@ -53,8 +52,8 @@ class MeshEdge:
 
     @abaqus_method_doc
     def getNodesViaTopology(self, domain: MeshElementArray = MeshElementArray([])):
-        """This method returns an array of MeshNode objects that lie along element edges
-        topologically in line with the element edge.
+        """This method returns an array of MeshNode objects that lie along element edges topologically in line
+        with the element edge.
 
         Parameters
         ----------

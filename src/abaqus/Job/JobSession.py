@@ -23,8 +23,7 @@ class JobSession(SessionBase):
         deleteAfterCopy: Boolean = OFF,
         description: str = "",
     ) -> Queue:
-        """This method creates a Queue object.
-        Note:Remote queues are available only on Linux platforms.
+        """This method creates a Queue object. Note:Remote queues are available only on Linux platforms.
 
         .. note::
             This function can be accessed by::

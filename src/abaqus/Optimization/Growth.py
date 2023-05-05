@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class Growth(GeometricRestriction):
-    """The Growth object defines a growth geometric restriction.
-    The Growth object is derived from the GeometricRestriction object.
+    """The Growth object defines a growth geometric restriction. The Growth object is derived from the
+    GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

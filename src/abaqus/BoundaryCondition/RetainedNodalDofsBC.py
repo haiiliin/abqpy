@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class RetainedNodalDofsBC(BoundaryCondition):
-    """The RetainedNodalDofsBC object stores the data for a retained nodal dofs boundary
-    condition.
-    The RetainedNodalDofsBC object is derived from the BoundaryCondition object.
+    """The RetainedNodalDofsBC object stores the data for a retained nodal dofs boundary condition. The
+    RetainedNodalDofsBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -102,8 +101,8 @@ class RetainedNodalDofsBC(BoundaryCondition):
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
     ):
-        """This method modifies the data for an existing RetainedNodalDofsBC object in the step
-        where it is created.
+        """This method modifies the data for an existing RetainedNodalDofsBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -142,8 +141,8 @@ class RetainedNodalDofsBC(BoundaryCondition):
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
     ):
-        """This method modifies the propagating data for an existing RetainedNodalDofsBC object in
-        the specified step.
+        """This method modifies the propagating data for an existing RetainedNodalDofsBC object in the specified
+        step.
 
         Parameters
         ----------

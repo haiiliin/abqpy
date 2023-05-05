@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class LProfile(Profile):
-    """The LProfile object defines the properties of a L profile.
-    The LProfile object is derived from the Profile object.
+    """The LProfile object defines the properties of a L profile. The LProfile object is derived from the
+    Profile object.
 
     .. note::
         This object can be accessed by::
@@ -75,7 +75,6 @@ class LProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -86,6 +85,5 @@ class LProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

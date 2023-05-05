@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class DisplayBody(Constraint):
-    """The DisplayBody object defines a constraint such that the specified instance is used for
-    display only and does not take part in the analysis. However it will still be visible
-    during postprocessing and its position at any frame will be defined by the translation
-    and rotation of the specified control points.
-    The DisplayBody object is derived from the ConstrainedSketchConstraint object.
+    """The DisplayBody object defines a constraint such that the specified instance is used for display only and
+    does not take part in the analysis. However it will still be visible during postprocessing and its position
+    at any frame will be defined by the translation and rotation of the specified control points. The
+    DisplayBody object is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

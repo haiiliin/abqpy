@@ -381,9 +381,8 @@ class BoundaryConditionModel(ModelBase):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ) -> ConnAccelerationBC:
-        """This method creates an ConnAccelerationBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates an ConnAccelerationBC object on a wire region. Alternatively, the boundary
+        condition may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -487,9 +486,8 @@ class BoundaryConditionModel(ModelBase):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ) -> ConnDisplacementBC:
-        """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the boundary
+        condition may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -598,9 +596,8 @@ class BoundaryConditionModel(ModelBase):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ) -> ConnVelocityBC:
-        """This method creates a ConnVelocityBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates a ConnVelocityBC object on a wire region. Alternatively, the boundary condition
+        may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::

@@ -108,14 +108,13 @@ class Face:
         -------
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getElementFaces(self, faceSide: Literal[C.SIDE2, C.SIDE1, C.BOTH_SIDES] = BOTH_SIDES):
-        """This method returns an array of mesh face objects. Each mesh face object contains the
-        element label and the side of the element that lies on the geometric face.
+        """This method returns an array of mesh face objects. Each mesh face object contains the element label
+        and the side of the element that lies on the geometric face.
 
         Parameters
         ----------
@@ -128,14 +127,13 @@ class Face:
         -------
         MeshFaceArray
             A MeshFaceArray object which is a sequence of MeshFace objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getNodes(self, faceSide: Literal[C.SIDE2, C.BOTH_SIDES] = BOTH_SIDES):
-        """This method returns an array of mesh node objects. Each mesh node object contains the
-        label of the node that lies on the geometric face.
+        """This method returns an array of mesh node objects. Each mesh node object contains the label of the
+        node that lies on the geometric face.
 
         Parameters
         ----------
@@ -150,15 +148,14 @@ class Face:
         -------
         MeshNodeArray
             A MeshNodeArray object which is a sequence of MeshNode objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getNormal(self, point: Tuple[float, float, float] = ()):
-        """This method returns the normal to a face at the location specified by the **pointOn**
-        member. The normal at a different location on the face can be obtained by specifying the
-        optional **point** argument.
+        """This method returns the normal to a face at the location specified by the **pointOn** member. The
+        normal at a different location on the face can be obtained by specifying the optional **point**
+        argument.
 
         Parameters
         ----------
@@ -193,7 +190,6 @@ class Face:
         -------
         float
             A Float.
-
         """
         ...
 
@@ -205,7 +201,6 @@ class Face:
         -------
         Sequence[int]
         A tuple of integers.
-
         """
         ...
 
@@ -217,20 +212,17 @@ class Face:
         -------
         Sequence[int]
             A tuple of integers.
-
         """
         ...
 
     @abaqus_method_doc
     def getCells(self):
-        """This method returns a sequence consisting of the cell ids of the cells to which this
-        face belongs.
+        """This method returns a sequence consisting of the cell ids of the cells to which this face belongs.
 
         Returns
         -------
         Sequence[int]
             A tuple of integers.
-
         """
         ...
 
@@ -242,14 +234,13 @@ class Face:
         -------
         FaceArray
             A FaceArray object which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getFacesByFaceAngle(self, angle: str):
-        """This method returns an array of Face objects that are obtained by recursively finding
-        adjacent faces that are at an angle of less than or equal to the specified angle.
+        """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
+        that are at an angle of less than or equal to the specified angle.
 
         Parameters
         ----------
@@ -260,32 +251,29 @@ class Face:
         -------
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getFacesByCurvature(self):
-        """This method returns an array of Face objects that are obtained by recursively finding
-        adjacent faces that share the same curvature.
+        """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
+        that share the same curvature.
 
         Returns
         -------
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def isNormalFlipped(self):
-        """This method determines whether the normal to the face is flipped from its default
-        direction by the use of the flipNormal method on a Part object.
+        """This method determines whether the normal to the face is flipped from its default direction by the
+        use of the flipNormal method on a Part object.
 
         Returns
         -------
         Boolean
             A Boolean value of True if the normal is flipped and False if not.
-
         """
         ...

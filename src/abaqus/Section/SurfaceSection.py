@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class SurfaceSection(Section):
-    """The SurfaceSection object defines the properties of a surface section.
-    The SurfaceSection object is derived from the Section object.
+    """The SurfaceSection object defines the properties of a surface section. The SurfaceSection object is
+    derived from the Section object.
 
     .. note::
         This object can be accessed by::

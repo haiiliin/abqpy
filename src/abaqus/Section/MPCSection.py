@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MPCSection(Section):
-    """The MPCSection object defines the properties of a multi-point constraint section.
-    The MPCSection object is derived from the Section object.
+    """The MPCSection object defines the properties of a multi-point constraint section. The MPCSection object
+    is derived from the Section object.
 
     .. note::
         This object can be accessed by::

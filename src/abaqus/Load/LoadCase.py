@@ -5,9 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class LoadCase:
-    """The LoadCase object is used to define the loads and constraints comprising a particular
-    loading condition and the linear response of a structure subjected to that loading
-    condition.
+    """The LoadCase object is used to define the loads and constraints comprising a particular loading condition
+    and the linear response of a structure subjected to that loading condition.
 
     .. note::
         This object can be accessed by::

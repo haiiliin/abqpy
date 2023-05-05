@@ -5,10 +5,10 @@ from ..ConstrainedSketchBase import ConstrainedSketchBase
 
 @abaqus_class_doc
 class ConstrainedSketchParameterModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
-    objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
-    such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
-    contained in their respective repositories.
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The objects include
+    ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc,
+    and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and
+    ConstrainedSketchParameter objects are contained in their respective repositories.
 
     .. note::
         This object can be accessed by::
@@ -25,8 +25,7 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
         expression: str = "",
         previousParameter: str = "",
     ):
-        """This method creates a parameter and optionally associates a dimension with this
-        parameter.
+        """This method creates a parameter and optionally associates a dimension with this parameter.
 
         .. note::
             This function can be accessed by::

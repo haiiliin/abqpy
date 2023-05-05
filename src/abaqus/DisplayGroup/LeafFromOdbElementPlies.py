@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class LeafFromOdbElementPlies(Leaf):
-    """The LeafFromOdbElementPlies object can be used whenever a Leaf object is expected as an
-    argument. Leaf objects are used to specify the items in a display group. Leaf objects
-    are constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    The LeafFromOdbElementPlies object is derived from the Leaf object.
+    """The LeafFromOdbElementPlies object can be used whenever a Leaf object is expected as an argument. Leaf
+    objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects,
+    which are then used as arguments to DisplayGroup commands. The LeafFromOdbElementPlies object is derived
+    from the Leaf object.
 
     .. note::
         This object can be accessed by::
@@ -26,8 +25,8 @@ class LeafFromOdbElementPlies(Leaf):
 
     @abaqus_method_doc
     def __init__(self, elementPlies: tuple):
-        """This method creates a Leaf object from a sequence of Strings specifying ply names. Leaf
-        objects specify the items in a display group.
+        """This method creates a Leaf object from a sequence of Strings specifying ply names. Leaf objects
+        specify the items in a display group.
 
         .. note::
             This function can be accessed by::

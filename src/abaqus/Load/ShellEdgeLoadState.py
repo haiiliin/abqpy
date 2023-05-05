@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ShellEdgeLoadState(LoadState):
-    """The ShellEdgeLoadState object stores the propagating data for a ShellEdgeLoad object in
-    a step. One instance of this object is created internally by the ShellEdgeLoad object
-    for each step. The instance is also deleted internally by the ShellEdgeLoad object.
-    The ShellEdgeLoadState object has no constructor or methods.
-    The ShellEdgeLoadState object is derived from the LoadState object.
+    """The ShellEdgeLoadState object stores the propagating data for a ShellEdgeLoad object in a step. One
+    instance of this object is created internally by the ShellEdgeLoad object for each step. The instance is
+    also deleted internally by the ShellEdgeLoad object. The ShellEdgeLoadState object has no constructor or
+    methods. The ShellEdgeLoadState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

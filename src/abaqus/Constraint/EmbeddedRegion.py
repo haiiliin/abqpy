@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class EmbeddedRegion(Constraint):
-    """The EmbeddedRegion object allows you to embed a region of the model within a “host”
-    region of the model or within the whole model.
-    The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.
+    """The EmbeddedRegion object allows you to embed a region of the model within a “host” region of the model
+    or within the whole model. The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

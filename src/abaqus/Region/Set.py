@@ -230,11 +230,10 @@ class Set(Region):
 
     @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> Set:
-        """This method creates a set containing faces of the part marked with a specified color
-        attribute. Third-party applications can assign color attributes to faces, and the color
-        attribute can be imported into Abaqus from an ACIS file. You can use this method to
-        create sets only on parts; however, you can access the sets from instances of the parts
-        in the assembly.
+        """This method creates a set containing faces of the part marked with a specified color attribute.
+        Third-party applications can assign color attributes to faces, and the color attribute can be imported
+        into Abaqus from an ACIS file. You can use this method to create sets only on parts; however, you can
+        access the sets from instances of the parts in the assembly.
 
         .. note::
             This function can be accessed by::
@@ -321,8 +320,7 @@ class Set(Region):
 
     @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
-        """This method creates sets based on mapping sets from element centroid locations in an
-        Odb.
+        """This method creates sets based on mapping sets from element centroid locations in an Odb.
 
         .. note::
             This function can be accessed by::

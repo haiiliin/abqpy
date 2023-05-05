@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceOffsetAssignment:
-    """The SurfaceOffsetAssignment object stores the surface offset fraction assignment
-    definition for surfaces in ContactExp and ContactStd objects. The
-    SurfaceOffsetAssignment object has no constructor or members.
+    """The SurfaceOffsetAssignment object stores the surface offset fraction assignment definition for surfaces
+    in ContactExp and ContactStd objects. The SurfaceOffsetAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -27,8 +26,8 @@ class SurfaceOffsetAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Union[Literal[C.SPOS, C.ORIGINAL, C.SNEG], float]):
-        """This method allows modification of surface offset fraction assignments already defined
-        on surfaces in a given step.
+        """This method allows modification of surface offset fraction assignments already defined on surfaces in
+        a given step.
 
         Parameters
         ----------
@@ -53,8 +52,7 @@ class SurfaceOffsetAssignment:
         stepName: str,
         assignments: Sequence[Tuple[Union[Region, Material, Literal[C.SPOS, C.ORIGINAL, C.SNEG, C.GLOBAL]], float]],
     ):
-        """This method allows addition of surface offset fraction assignments to new surfaces in a
-        given step.
+        """This method allows addition of surface offset fraction assignments to new surfaces in a given step.
 
         Parameters
         ----------

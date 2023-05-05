@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PipePressure(Load):
-    """The PipePressure object stores the data for a pressure applied to pipe or elbow
-    elements.
-    The PipePressure object is derived from the Load object.
+    """The PipePressure object stores the data for a pressure applied to pipe or elbow elements. The
+    PipePressure object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -115,8 +114,7 @@ class PipePressure(Load):
         distributionType: Literal[C.USER_DEFINED, C.HYDROSTATIC, C.UNIFORM, C.FIELD] = UNIFORM,
         side: Literal[C.EXTERNAL, C.INTERNAL] = INTERNAL,
     ):
-        """This method modifies the data for an existing PipePressure object in the step where it
-        is created.
+        """This method modifies the data for an existing PipePressure object in the step where it is created.
 
         Parameters
         ----------
@@ -146,8 +144,7 @@ class PipePressure(Load):
         hReference: Optional[float] = None,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing PipePressure object in the
-        specified step.
+        """This method modifies the propagating data for an existing PipePressure object in the specified step.
 
         Parameters
         ----------

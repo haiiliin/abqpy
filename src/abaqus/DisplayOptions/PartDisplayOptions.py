@@ -15,9 +15,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PartDisplayOptions:
-    """The PartDisplayOptions object stores settings that specify how parts are to be displayed
-    in a particular viewport. The PartDisplayOptions object has no constructor. When you
-    create a new viewport, the settings are copied from the current viewport.
+    """The PartDisplayOptions object stores settings that specify how parts are to be displayed in a particular
+    viewport. The PartDisplayOptions object has no constructor. When you create a new viewport, the settings are
+    copied from the current viewport.
 
     .. note::
         This object can be accessed by::

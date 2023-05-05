@@ -27,8 +27,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshPart(PartBase):
-    """The following commands operate on Part objects. For more information about the Part
-    object, see Part object.
+    """The following commands operate on Part objects. For more information about the Part object, see Part
+    object.
 
     .. note::
         This object can be accessed by::
@@ -38,8 +38,8 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def assignStackDirection(self, cells: Sequence[Cell], referenceRegion: Face):
-        """This method assigns a stack direction to geometric cells. The stack direction will be
-        used to orient the elements during mesh generation.
+        """This method assigns a stack direction to geometric cells. The stack direction will be used to orient
+        the elements during mesh generation.
 
         Parameters
         ----------
@@ -59,8 +59,8 @@ class MeshPart(PartBase):
         elemEdges: Sequence[MeshEdge] = (),
         node: MeshNode = MeshNode((0, 0, 0)),
     ):
-        """This method associates a geometric entity with mesh entities that are either orphan
-        elements, bounds orphan elements, or were created using the bottom-up meshing technique.
+        """This method associates a geometric entity with mesh entities that are either orphan elements, bounds
+        orphan elements, or were created using the bottom-up meshing technique.
 
         Parameters
         ----------
@@ -105,9 +105,9 @@ class MeshPart(PartBase):
         blendSubtendedAngleTolerance: Optional[float] = None,
         blendRadiusTolerance: Optional[float] = None,
     ) -> Feature:
-        """This method creates a virtual topology feature by automatically merging faces and edges
-        based on a set of geometric parameters. The edges and vertices that are being merged
-        will be ignored during mesh generation.
+        """This method creates a virtual topology feature by automatically merging faces and edges based on a
+        set of geometric parameters. The edges and vertices that are being merged will be ignored during mesh
+        generation.
 
         Parameters
         ----------
@@ -187,8 +187,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: Sequence[Cell]):
-        """This method deletes the control parameters for boundary layer mesh for all the specified
-        regions.
+        """This method deletes the control parameters for boundary layer mesh for all the specified regions.
 
         Parameters
         ----------
@@ -200,8 +199,8 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def deleteMesh(self, regions: Sequence[MeshPart]):
-        """This method deletes a subset of the mesh that contains the native elements from the
-        given parts or regions.
+        """This method deletes a subset of the mesh that contains the native elements from the given parts or
+        regions.
 
         Parameters
         ----------
@@ -233,15 +232,17 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def deletePreviewMesh(self):
-        """This method deletes all boundary meshes in the parts. See the **boundaryPreview** argument
-        of generateMesh for information about generating boundary meshes.
+        """This method deletes all boundary meshes in the parts.
+
+        See the **boundaryPreview** argument of generateMesh for information about generating boundary
+        meshes.
         """
         ...
 
     @abaqus_method_doc
     def deleteSeeds(self, regions: Sequence[MeshPart]):
-        """This method deletes the global edge seeds from the given parts or deletes the local edge
-        seeds from the given edges.
+        """This method deletes the global edge seeds from the given parts or deletes the local edge seeds from
+        the given edges.
 
         Parameters
         ----------
@@ -300,8 +301,8 @@ class MeshPart(PartBase):
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by extruding a 2D mesh along a vector, either on an
-        orphan mesh or within a cell region using a bottom-up technique.
+        """This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh
+        or within a cell region using a bottom-up technique.
 
         Parameters
         ----------
@@ -355,8 +356,8 @@ class MeshPart(PartBase):
         numberOfLayers: Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or
-        within a cell region using a bottom-up technique.
+        """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell
+        region using a bottom-up technique.
 
         Parameters
         ----------
@@ -403,8 +404,8 @@ class MeshPart(PartBase):
         elemSourceSide: tuple = (),
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by revolving a 2D mesh around an axis, either on an
-        orphan mesh or within a cell region using a bottom-up technique.
+        """This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh
+        or within a cell region using a bottom-up technique.
 
         Parameters
         ----------
@@ -539,8 +540,7 @@ class MeshPart(PartBase):
             C.TET,
         ],
     ) -> ElemType:
-        """This method returns the ElemType object of a given element shape assigned to a region of
-        a part.
+        """This method returns the ElemType object of a given element shape assigned to a region of a part.
 
         Parameters
         ----------
@@ -572,8 +572,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()) -> Sequence[Face]:
-        """This method returns a sequence of Face objects that are meshed with incompatible
-        elements.
+        """This method returns a sequence of Face objects that are meshed with incompatible elements.
 
         Parameters
         ----------
@@ -721,8 +720,8 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def getUnmeshedRegions(self) -> Union[Region, None]:
-        """This method returns all geometric regions in the part that require a mesh for submitting
-        an analysis but are either unmeshed or are meshed incompletely.
+        """This method returns all geometric regions in the part that require a mesh for submitting an analysis
+        but are either unmeshed or are meshed incompletely.
 
         Returns
         -------
@@ -733,10 +732,9 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def ignoreEntity(self, entities: tuple) -> Feature:
-        """This method creates a virtual topology feature. Virtual topology allows unimportant
-        entities to be ignored during mesh generation. You can combine two adjacent faces by
-        specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
-        specifying a common vertex to ignore.
+        """This method creates a virtual topology feature. Virtual topology allows unimportant entities to be
+        ignored during mesh generation. You can combine two adjacent faces by specifying a common edge to
+        ignore. Similarly, you can combine two adjacent edges by specifying a common vertex to ignore.
 
         Parameters
         ----------
@@ -752,8 +750,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]) -> Feature:
-        """This method restores vertices and edges that have been merged using a virtual topology
-        feature.
+        """This method restores vertices and edges that have been merged using a virtual topology feature.
 
         Parameters
         ----------
@@ -782,8 +779,8 @@ class MeshPart(PartBase):
         maxSize: float = ...,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
-        """This method seeds the given edges nonuniformly using the specified number of elements
-        and bias ratio or the specified minimum and maximum element sizes.
+        """This method seeds the given edges nonuniformly using the specified number of elements and bias ratio
+        or the specified minimum and maximum element sizes.
 
         Parameters
         ----------
@@ -842,8 +839,7 @@ class MeshPart(PartBase):
         number: int,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
-        """This method seeds the given edges uniformly based on the number of elements along the
-        edges.
+        """This method seeds the given edges uniformly based on the number of elements along the edges.
 
         Parameters
         ----------
@@ -873,8 +869,8 @@ class MeshPart(PartBase):
         minSizeFactor: Optional[float] = None,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
-        """This method seeds the given edges either uniformly or following edge curvature
-        distribution, based on the desired element size.
+        """This method seeds the given edges either uniformly or following edge curvature distribution, based on
+        the desired element size.
 
         Parameters
         ----------
@@ -940,8 +936,7 @@ class MeshPart(PartBase):
         inactiveFaces: Sequence[Face] = (),
         setName: str = "",
     ):
-        """This method sets the control parameters for boundary layer mesh for the specified
-        regions.
+        """This method sets the control parameters for boundary layer mesh for the specified regions.
 
         Parameters
         ----------
@@ -1105,8 +1100,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def setSweepPath(self, region: str, edge: Edge, sense: Literal[C.FORWARD]):
-        """This method sets the sweep path for a sweepable region or the revolve path for a
-        revolvable region.
+        """This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.
 
         Parameters
         ----------

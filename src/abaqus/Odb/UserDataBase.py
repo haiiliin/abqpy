@@ -10,8 +10,8 @@ from ..XY.XYData import XYData
 
 @abaqus_class_doc
 class UserDataBase:
-    """The UserData object contains user-defined XY data. The UserData object has no
-    constructor; it is created automatically when an Odb object is created.
+    """The UserData object contains user-defined XY data. The UserData object has no constructor; it is created
+    automatically when an Odb object is created.
 
     .. note::
         This object can be accessed by::

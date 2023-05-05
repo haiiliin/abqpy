@@ -32,10 +32,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GeostaticStep(AnalysisStep):
-    """The GeostaticStep object is used to verify that the geostatic stress field is in
-    equilibrium with the applied loads and boundary conditions on the model and to iterate,
-    if needed, to obtain equilibrium.
-    The GeostaticStep object is derived from the AnalysisStep object.
+    """The GeostaticStep object is used to verify that the geostatic stress field is in equilibrium with the
+    applied loads and boundary conditions on the model and to iterate, if needed, to obtain equilibrium. The
+    GeostaticStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

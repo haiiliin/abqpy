@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceTraction(Load):
-    """The SurfaceTraction object defines surface traction on a region.
-    The SurfaceTraction object is derived from the Load object.
+    """The SurfaceTraction object defines surface traction on a region. The SurfaceTraction object is derived
+    from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -181,8 +181,7 @@ class SurfaceTraction(Load):
         resultant: Boolean = OFF,
         traction: Literal[C.SHEAR, C.GENERAL] = SHEAR,
     ):
-        """This method modifies the data for an existing SurfaceTraction object in the step where
-        it is created.
+        """This method modifies the data for an existing SurfaceTraction object in the step where it is created.
 
         Parameters
         ----------
@@ -240,8 +239,8 @@ class SurfaceTraction(Load):
         magnitude: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing SurfaceTraction object in the
-        specified step.
+        """This method modifies the propagating data for an existing SurfaceTraction object in the specified
+        step.
 
         Parameters
         ----------

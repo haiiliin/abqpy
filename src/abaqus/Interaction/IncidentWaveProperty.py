@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class IncidentWaveProperty(ContactProperty):
-    """The IncidentWaveProperty object is an interaction property that defines the properties
-    referred to by an IncidentWave object.
-    The IncidentWaveProperty object is derived from the InteractionProperty object.
+    """The IncidentWaveProperty object is an interaction property that defines the properties referred to by an
+    IncidentWave object. The IncidentWaveProperty object is derived from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

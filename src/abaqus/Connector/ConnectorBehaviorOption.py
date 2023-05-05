@@ -17,10 +17,9 @@ class DerivedComponent:
 
 @abaqus_class_doc
 class ConnectorBehaviorOption:
-    """The ConnectorBehaviorOption object is the abstract base type for other
-    ConnectorBehaviorOption objects. The ConnectorBehaviorOption object has no explicit
-    constructor. The members of the ConnectorBehaviorOption object are common to all objects
-    derived from the ConnectorBehaviorOption.
+    """The ConnectorBehaviorOption object is the abstract base type for other ConnectorBehaviorOption objects.
+    The ConnectorBehaviorOption object has no explicit constructor. The members of the ConnectorBehaviorOption
+    object are common to all objects derived from the ConnectorBehaviorOption.
 
     .. note::
         This object can be accessed by::
@@ -172,8 +171,8 @@ class ConnectorBehaviorOption:
         useBehExtSettings: Boolean = ON,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ) -> ConnectorOptions:
-        """This method creates a connector options object to be used in conjunction with an
-        allowable connector behavior option, derived component term, or connector section.
+        """This method creates a connector options object to be used in conjunction with an allowable connector
+        behavior option, derived component term, or connector section.
 
         .. note::
             This function can be accessed by::

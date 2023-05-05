@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OptionArg:
-    """The OptionArg object is used to store values and attributes as a temporary object to be
-    associated with a viewCutOptions object. The OptionArg object has only a constructor
-    command.
+    """The OptionArg object is used to store values and attributes as a temporary object to be associated with a
+    viewCutOptions object. The OptionArg object has only a constructor command.
 
     .. note::
         This object can be accessed by::

@@ -18,8 +18,8 @@ class VerticalDimension(ConstrainedSketchDimension):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
-        dimension controls the vertical distance along the **Y** axis between two vertices.
+        """This method constructs a ConstrainedSketchDimension between two vertices. A vertical dimension
+        controls the vertical distance along the **Y** axis between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -44,6 +44,5 @@ class VerticalDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

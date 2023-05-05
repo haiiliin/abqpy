@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FluidCavityProperty(ContactProperty):
-    """The FluidCavityProperty object is an interaction property that defines the fluid
-    behavior for a surface-based fluid cavity.
-    The FluidCavityProperty object is derived from the InteractionProperty object.
+    """The FluidCavityProperty object is an interaction property that defines the fluid behavior for a surface-
+    based fluid cavity. The FluidCavityProperty object is derived from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

@@ -7,8 +7,8 @@ from .SolidSection import SolidSection
 
 @abaqus_class_doc
 class HomogeneousSolidSection(SolidSection):
-    """The HomogeneousSolidSection object defines the properties of a solid section.
-    The HomogeneousSolidSection object is derived from the SolidSection object.
+    """The HomogeneousSolidSection object defines the properties of a solid section. The HomogeneousSolidSection
+    object is derived from the SolidSection object.
 
     .. note::
         This object can be accessed by::

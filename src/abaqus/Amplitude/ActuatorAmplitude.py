@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ActuatorAmplitude(Amplitude):
-    """The ActuatorAmplitude object defines an actuator amplitude curve.
-    The ActuatorAmplitude object is derived from the Amplitude object.
+    """The ActuatorAmplitude object defines an actuator amplitude curve. The ActuatorAmplitude object is derived
+    from the Amplitude object.
 
     .. note::
         This object can be accessed by::

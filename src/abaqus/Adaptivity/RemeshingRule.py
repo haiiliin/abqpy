@@ -18,8 +18,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class RemeshingRule:
-    """The RemeshingRule object controls the adaptive remeshing resizing and the error
-    indicators written to the output database for a specified region of the model.
+    """The RemeshingRule object controls the adaptive remeshing resizing and the error indicators written to the
+    output database for a specified region of the model.
 
     .. note::
         This object can be accessed by::
@@ -230,8 +230,9 @@ class RemeshingRule:
 
     @abaqus_method_doc
     def suppress(self):
-        """This method suppresses the remeshing rule. Abaqus will not remesh regions where the
-        rules are suppressed.
+        """This method suppresses the remeshing rule.
+
+        Abaqus will not remesh regions where the rules are suppressed.
         """
         ...
 

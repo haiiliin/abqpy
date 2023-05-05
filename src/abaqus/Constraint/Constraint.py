@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Constraint:
-    """The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The
-    ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
-    common to all objects derived from the ConstrainedSketchConstraint.
+    """The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint
+    objects. The ConstrainedSketchConstraint object has no explicit constructor. The members of the
+    ConstrainedSketchConstraint object are common to all objects derived from the ConstrainedSketchConstraint.
 
     .. note::
         This object can be accessed by::

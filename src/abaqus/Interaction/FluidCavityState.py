@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class FluidCavityState(InteractionState):
-    """The FluidCavityState object stores the propagating data for an FluidCavity object. One
-    instance of this object is created internally by the FluidCavity object for each step.
-    The instance is also deleted internally by the FluidCavity object.
-    The FluidCavityState object has no constructor or methods.
-    The FluidCavityState object is derived from the InteractionState object.
+    """The FluidCavityState object stores the propagating data for an FluidCavity object. One instance of this
+    object is created internally by the FluidCavity object for each step. The instance is also deleted
+    internally by the FluidCavity object. The FluidCavityState object has no constructor or methods. The
+    FluidCavityState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

@@ -7,10 +7,9 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class ActuatorSensor(Interaction):
-    """The ActuatorSensor object defines a single point actuator where the actuation is
-    determined by a user subroutine (UEL). The subroutine senses the data at the same point
-    as the actuator.
-    The ActuatorSensor object is derived from the Interaction object.
+    """The ActuatorSensor object defines a single point actuator where the actuation is determined by a user
+    subroutine (UEL). The subroutine senses the data at the same point as the actuator. The ActuatorSensor
+    object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

@@ -13,9 +13,9 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         point1: Sequence[float],
         point2: Sequence[float],
     ):
-        """This method constructs an arc using a center point and two vertices. The Arc object is
-        added to the geometry repository of the ConstrainedSketch object. The arc is created in
-        a clockwise fashion from **point1** to **point2**.
+        """This method constructs an arc using a center point and two vertices. The Arc object is added to the
+        geometry repository of the ConstrainedSketch object. The arc is created in a clockwise fashion from
+        **point1** to **point2**.
 
         .. note::
             This function can be accessed by::

@@ -33,9 +33,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MassDiffusionStep(AnalysisStep):
-    """The MassDiffusionStep object is used to control uncoupled transient or steady-state mass
-    diffusion analysis.
-    The MassDiffusionStep object is derived from the AnalysisStep object.
+    """The MassDiffusionStep object is used to control uncoupled transient or steady-state mass diffusion
+    analysis. The MassDiffusionStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

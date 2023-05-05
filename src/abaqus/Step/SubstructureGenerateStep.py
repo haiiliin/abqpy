@@ -30,8 +30,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SubstructureGenerateStep(AnalysisStep):
-    """TheSubstructureGenerateStep object is used to generate a substructure.
-    The SubstructureGenerateStep object is derived from the AnalysisStep object.
+    """TheSubstructureGenerateStep object is used to generate a substructure. The SubstructureGenerateStep
+    object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

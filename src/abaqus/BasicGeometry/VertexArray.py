@@ -53,7 +53,6 @@ class VertexArray(List[Vertex]):
         -------
         VertexArray
             A VertexArray object.
-
         """
         ...
 
@@ -90,15 +89,13 @@ class VertexArray(List[Vertex]):
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
-        """This method returns the object or objects in the VertexArray located at the given
-        coordinates.
-        findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
-        object that is at the arbitrary point specified or at a distance of less than 1E-6 from
-        the arbitrary point. If nothing is found, findAt uses the tolerance for imprecise
-        geometry (applicable only for imprecise geometric entities).
-        findAt will always try to find objects among all the vertices in the part or assembly
-        instance and will not restrict itself to a subset even if the VertexArray represents
-        such subset.
+        """This method returns the object or objects in the VertexArray located at the given coordinates. findAt
+        initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
+        object that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary
+        point. If nothing is found, findAt uses the tolerance for imprecise geometry (applicable only for
+        imprecise geometric entities). findAt will always try to find objects among all the vertices in the part
+        or assembly instance and will not restrict itself to a subset even if the VertexArray represents such
+        subset.
 
         Parameters
         ----------
@@ -123,7 +120,6 @@ class VertexArray(List[Vertex]):
         -------
         ConstrainedSketchVertex
             A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
-
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return ConstrainedSketchVertex() if isinstance(first_arg[0], float) else [ConstrainedSketchVertex()]
@@ -142,10 +138,9 @@ class VertexArray(List[Vertex]):
     def getSequenceFromMask(
         self, mask: Union[str, Sequence[str]]
     ) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
-        """This method returns the object or objects in the VertexArray identified using the
-        specified **mask**. This command is generated when the JournalOptions are set to
-        COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
-        efficient.
+        """This method returns the object or objects in the VertexArray identified using the specified **mask**.
+        This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
+        objects are involved, this method is highly efficient.
 
         Parameters
         ----------
@@ -156,7 +151,6 @@ class VertexArray(List[Vertex]):
         -------
         ConstrainedSketchVertex
             A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
-
         """
         ...
 
@@ -168,7 +162,6 @@ class VertexArray(List[Vertex]):
         -------
         str
             A String specifying the object or objects.
-
         """
         ...
 
@@ -182,8 +175,7 @@ class VertexArray(List[Vertex]):
         yMax: float = ...,
         zMax: float = ...,
     ) -> VertexArray:
-        """This method returns an array of vertex objects that lie within the specified bounding
-        box.
+        """This method returns an array of vertex objects that lie within the specified bounding box.
 
         Parameters
         ----------
@@ -204,14 +196,12 @@ class VertexArray(List[Vertex]):
         -------
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
-
         """
         ...
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
-        """This method returns an array of vertex objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of vertex objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -228,14 +218,12 @@ class VertexArray(List[Vertex]):
         -------
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
-
         """
         ...
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str):
-        """This method returns an array of vertex objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of vertex objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -248,14 +236,13 @@ class VertexArray(List[Vertex]):
         -------
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
-
         """
         ...
 
     @abaqus_method_doc
     def getBoundingBox(self):
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the vertex sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the vertex sequence.
 
         Returns
         -------
@@ -266,14 +253,13 @@ class VertexArray(List[Vertex]):
               values of the bounding box.
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
-
         """
         ...
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
-        """This method returns a object or objects in the VertexArray closest to the given set of
-        points, where the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.
+        """This method returns a object or objects in the VertexArray closest to the given set of points, where
+        the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.
 
         Parameters
         ----------

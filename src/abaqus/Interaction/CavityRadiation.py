@@ -12,9 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CavityRadiation(Interaction):
-    """The CavityRadiation object defines cavities for thermal radiation heat transfer and
-    controls the calculation of viewfactors.
-    The CavityRadiation object is derived from the Interaction object.
+    """The CavityRadiation object defines cavities for thermal radiation heat transfer and controls the
+    calculation of viewfactors. The CavityRadiation object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -400,8 +399,7 @@ class CavityRadiation(Interaction):
         reflectionSymPlane_3: str = "",
         reflectionSymZ: Optional[float] = None,
     ):
-        """This method modifies the data for an existing CavityRadiation object in the step where
-        it is created.
+        """This method modifies the data for an existing CavityRadiation object in the step where it is created.
 
         Parameters
         ----------
@@ -561,8 +559,8 @@ class CavityRadiation(Interaction):
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
     ):
-        """This method modifies the propagating data of an existing CavityRadiation object in the
-        specified step.
+        """This method modifies the propagating data of an existing CavityRadiation object in the specified
+        step.
 
         Parameters
         ----------

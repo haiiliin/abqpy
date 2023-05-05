@@ -14,9 +14,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AdaptiveMeshControl:
-    r"""The AdaptiveMeshControl object is used to control various aspects of Arbitrary
-    Lagrangian Eularian (ALE) style adaptive smoothing and advection algorithms applied to
-    an ALE adaptive mesh domain.
+    r"""The AdaptiveMeshControl object is used to control various aspects of Arbitrary Lagrangian Eularian (ALE)
+    style adaptive smoothing and advection algorithms applied to an ALE adaptive mesh domain.
 
     .. note::
         This object can be accessed by::

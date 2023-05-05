@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class IgnoredEdgeArray(List[IgnoredEdge]):
-    """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
-    IgnoredEdgeArray must be updated for that part.
+    """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then IgnoredEdgeArray
+    must be updated for that part.
 
     .. note::
         This object can be accessed by::
@@ -52,18 +52,15 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, List[IgnoredEdge]]:
-        """This method returns the object or objects in the IgnoredEdgeArray located at the given
-        coordinates.
-        findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
-        IgnoredEdge that is at the arbitrary point specified or at a distance of less than 1E-6
-        from the arbitrary point. If nothing is found, findAt uses the tolerance for imprecise
-        geometry (applicable only for imprecise geometric entities). The arbitrary point must
-        not be shared by a second IgnoredEdge. If two IgnoredEdge objects intersect or coincide
-        at the arbitrary point, findAt chooses the first IgnoredEdge that it encounters, and you
-        should not rely on the return value being consistent.
-        findAt will always try to find objects among all the ignored edges in the part or
-        assembly instance and will not restrict itself to a subset even if the IgnoredEdgeArray
-        represents such subset.
+        """This method returns the object or objects in the IgnoredEdgeArray located at the given coordinates.
+        findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredEdge that is at
+        the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is
+        found, findAt uses the tolerance for imprecise geometry (applicable only for imprecise geometric
+        entities). The arbitrary point must not be shared by a second IgnoredEdge. If two IgnoredEdge objects
+        intersect or coincide at the arbitrary point, findAt chooses the first IgnoredEdge that it encounters,
+        and you should not rely on the return value being consistent. findAt will always try to find objects
+        among all the ignored edges in the part or assembly instance and will not restrict itself to a subset
+        even if the IgnoredEdgeArray represents such subset.
 
         Parameters
         ----------
@@ -88,7 +85,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         -------
         IgnoredEdge
             An IgnoredEdge object or a sequence of IgnoredEdge objects.
-
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return IgnoredEdge() if isinstance(first_arg[0], float) else [IgnoredEdge()]
@@ -105,10 +101,9 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, List[IgnoredEdge]]:
-        """This method returns the object or objects in the IgnoredEdgeArray identified using the
-        specified **mask**. This command is generated when the JournalOptions are set to
-        COMPRESSEDINDEX. When large number of objects are involved, this method is highly
-        efficient.
+        """This method returns the object or objects in the IgnoredEdgeArray identified using the specified
+        **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
+        number of objects are involved, this method is highly efficient.
 
         Parameters
         ----------
@@ -119,7 +114,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         -------
         IgnoredEdge
             An IgnoredEdge object or a sequence of IgnoredEdge objects.
-
         """
         ...
 
@@ -131,14 +125,13 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         -------
         str
             A String specifying the object or objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
-        """This method returns a object or objects in the IgnoredEdgeArray closest to the given set
-        of points, where the given points need not lie on the edges in the IgnoredEdgeArray.
+        """This method returns a object or objects in the IgnoredEdgeArray closest to the given set of points,
+        where the given points need not lie on the edges in the IgnoredEdgeArray.
 
         Parameters
         ----------

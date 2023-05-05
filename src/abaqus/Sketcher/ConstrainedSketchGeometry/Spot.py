@@ -9,8 +9,8 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class Spot(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(self, point: Sequence[float]):
-        """This method creates a spot construction point located at the specified coordinates. The
-        spot is added to the vertex repository of the ConstrainedSketch object.
+        """This method creates a spot construction point located at the specified coordinates. The spot is added
+        to the vertex repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -26,6 +26,5 @@ class Spot(ConstrainedSketchGeometry):
         -------
         ConstrainedSketchGeometry
             A ConstrainedSketchGeometry object (None if the spot cannot be created).
-
         """
         ...

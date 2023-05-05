@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class FaceArray(List[Face]):
-    """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
-    must be updated for that part.
+    """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray must be updated for
+    that part.
 
     .. note::
         This object can be accessed by::
@@ -59,7 +59,6 @@ class FaceArray(List[Face]):
         -------
         FaceArray
             A FaceArray object.
-
         """
         ...
 
@@ -96,18 +95,14 @@ class FaceArray(List[Face]):
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Face, List[Face]]:
-        """This method returns the object or objects in the FaceArray located at the given
-        coordinates.
-        findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face
-        that is at the arbitrary point specified or at a distance of less than 1E-6 from the
-        arbitrary point. If nothing is found, findAt uses the tolerance for imprecise geometry
-        (applicable only for imprecise geometric entities). The arbitrary point must not be
-        shared by a second face. If two faces intersect or coincide at the arbitrary point,
-        findAt chooses the first face that it encounters, and you should not rely on the return
-        value being consistent.
-        findAt will always try to find objects among all the faces in the part or assembly
-        instance and will not restrict itself to a subset even if the FaceArray represents such
-        subset.
+        """This method returns the object or objects in the FaceArray located at the given coordinates. findAt
+        initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face that is at the arbitrary
+        point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is found, findAt
+        uses the tolerance for imprecise geometry (applicable only for imprecise geometric entities). The
+        arbitrary point must not be shared by a second face. If two faces intersect or coincide at the arbitrary
+        point, findAt chooses the first face that it encounters, and you should not rely on the return value
+        being consistent. findAt will always try to find objects among all the faces in the part or assembly
+        instance and will not restrict itself to a subset even if the FaceArray represents such subset.
 
         Parameters
         ----------
@@ -137,17 +132,15 @@ class FaceArray(List[Face]):
         -------
         Face
             A Face object.
-
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: str):
-        """This method returns the object or objects in the FaceArray identified using the
-        specified **mask**. This command is generated when the JournalOptions are set to
-        COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
-        efficient.
+        """This method returns the object or objects in the FaceArray identified using the specified **mask**.
+        This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
+        objects are involved, this method is highly efficient.
 
         Parameters
         ----------
@@ -158,7 +151,6 @@ class FaceArray(List[Face]):
         -------
         Face
             A Face object or a sequence of Face objects.
-
         """
         ...
 
@@ -170,7 +162,6 @@ class FaceArray(List[Face]):
         -------
         str
             A String specifying the object or objects.
-
         """
         ...
 
@@ -205,14 +196,12 @@ class FaceArray(List[Face]):
         -------
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> FaceArray:
-        """This method returns an array of face objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of face objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -229,14 +218,12 @@ class FaceArray(List[Face]):
         -------
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str) -> FaceArray:
-        """This method returns an array of face objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of face objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -249,14 +236,13 @@ class FaceArray(List[Face]):
         -------
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getBoundingBox(self) -> Dict[str, Sequence[float]]:
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the face sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the face sequence.
 
         Returns
         -------
@@ -272,8 +258,8 @@ class FaceArray(List[Face]):
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
-        """This method returns an object or objects in the FaceArray closest to the given set of
-        points, where the given points need not lie on the faces in the FaceArray.
+        """This method returns an object or objects in the FaceArray closest to the given set of points, where
+        the given points need not lie on the faces in the FaceArray.
 
         Parameters
         ----------

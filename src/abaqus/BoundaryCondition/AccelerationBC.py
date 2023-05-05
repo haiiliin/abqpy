@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AccelerationBC(BoundaryCondition):
-    """The AccelerationBC object stores the data for an acceleration boundary condition.
-    The AccelerationBC object is derived from the BoundaryCondition object.
+    """The AccelerationBC object stores the data for an acceleration boundary condition. The AccelerationBC
+    object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -138,8 +138,7 @@ class AccelerationBC(BoundaryCondition):
         localCsys: Optional[str] = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
-        """This method modifies the data for an existing AccelerationBC object in the step where it
-        is created.
+        """This method modifies the data for an existing AccelerationBC object in the step where it is created.
 
         Parameters
         ----------
@@ -197,8 +196,8 @@ class AccelerationBC(BoundaryCondition):
         ar3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing AccelerationBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing AccelerationBC object in the specified
+        step.
 
         Parameters
         ----------

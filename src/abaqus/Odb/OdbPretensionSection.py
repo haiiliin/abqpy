@@ -7,8 +7,8 @@ from .OdbSet import OdbSet
 
 @abaqus_class_doc
 class OdbPretensionSection:
-    """The pretension section object is used to define an assembly load. It associates a
-    pretension node with a pretension section.
+    """The pretension section object is used to define an assembly load. It associates a pretension node with a
+    pretension section.
 
     .. note::
         This object can be accessed by::

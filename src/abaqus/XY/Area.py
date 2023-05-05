@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Area:
-    """The Area object is used to display a rectangular area in an XYPlot. The Area object has
-    no constructor. Area objects are automatically created whenever a XYPlot, Chart,
-    PlotTitle, or Legend objects are created.
+    """The Area object is used to display a rectangular area in an XYPlot. The Area object has no constructor.
+    Area objects are automatically created whenever a XYPlot, Chart, PlotTitle, or Legend objects are created.
 
     .. note::
         This object can be accessed by::

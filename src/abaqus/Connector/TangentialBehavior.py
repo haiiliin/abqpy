@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TangentialBehavior:
-    """The TangentialBehavior object specifies tangential behavior for a connector friction
-    behavior option.
+    """The TangentialBehavior object specifies tangential behavior for a connector friction behavior option.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class CompositeDampingComponent:
-    """A CompositeDampingComponent object is used to define composite damping over a range of
-    modes.
+    """A CompositeDampingComponent object is used to define composite damping over a range of modes.
 
     .. note::
         This object can be accessed by::

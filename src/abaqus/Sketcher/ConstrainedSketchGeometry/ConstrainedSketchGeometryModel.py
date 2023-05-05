@@ -8,10 +8,10 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
-    objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
-    such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
-    contained in their respective repositories.
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The objects include
+    ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc,
+    and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and
+    ConstrainedSketchParameter objects are contained in their respective repositories.
 
     .. note::
         This object can be accessed by::
@@ -22,8 +22,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def Arc3Points(self, point1: Sequence[float], point2: Sequence[float], point3: Sequence[float]):
-        """This method constructs an arc using a two endpoints and an intermediate third point on
-        the arc.
+        """This method constructs an arc using a two endpoints and an intermediate third point on the arc.
 
         .. note::
             This function can be accessed by::
@@ -53,9 +52,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         point1: Sequence[float],
         point2: Sequence[float],
     ):
-        """This method constructs an arc using a center point and two vertices. The Arc object is
-        added to the geometry repository of the ConstrainedSketch object. The arc is created in
-        a clockwise fashion from **point1** to **point2**.
+        """This method constructs an arc using a center point and two vertices. The Arc object is added to the
+        geometry repository of the ConstrainedSketch object. The arc is created in a clockwise fashion from
+        **point1** to **point2**.
 
         .. note::
             This function can be accessed by::
@@ -85,8 +84,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ArcByStartEndTangent(self, point1: Sequence[float], point2: Sequence[float], vector: tuple):
-        """This method constructs an arc using two vertices. The Arc object is added to the
-        geometry repository of the ConstrainedSketch object.
+        """This method constructs an arc using two vertices. The Arc object is added to the geometry repository
+        of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -111,8 +110,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def CircleByCenterPerimeter(self, center: Sequence[float], point1: Sequence[float]):
-        """This method constructs a circle using a center point and a point on the perimeter. The
-        circle is added to the geometry repository of the ConstrainedSketch object.
+        """This method constructs a circle using a center point and a point on the perimeter. The circle is
+        added to the geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -135,9 +134,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ConstructionCircleByCenterPerimeter(self, center: Sequence[float], point1: Sequence[float]):
-        """This method constructs a construction circle using a center point and a point on the
-        perimeter. The circle is added to the geometry repository of the ConstrainedSketch
-        object.
+        """This method constructs a construction circle using a center point and a point on the perimeter. The
+        circle is added to the geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -162,9 +160,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def EllipseByCenterPerimeter(
         self, center: Sequence[float], axisPoint1: Sequence[float], axisPoint2: Sequence[float]
     ):
-        """This method constructs an ellipse using a center point, a major axis point, and a minor
-        axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
-        object.
+        """This method constructs an ellipse using a center point, a major axis point, and a minor axis point.
+        The ellipse is added to the geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -196,8 +193,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         curve2: "ConstrainedSketchGeometryModel",
         nearPoint2: Sequence[float],
     ):
-        """This method constructs a fillet arc of a given radius between two curves. The fillet is
-        added to the geometry repository of the ConstrainedSketch object.
+        """This method constructs a fillet arc of a given radius between two curves. The fillet is added to the
+        geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -307,8 +304,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def Spot(self, point: Sequence[float]):
-        """This method creates a spot construction point located at the specified coordinates. The
-        spot is added to the vertex repository of the ConstrainedSketch object.
+        """This method creates a spot construction point located at the specified coordinates. The spot is added
+        to the vertex repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -329,8 +326,8 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def getVertices(self):
-        """This method returns an list of ConstrainedSketchVertex objects which are a part of the
-        given ConstrainedSketchGeometry object.
+        """This method returns an list of ConstrainedSketchVertex objects which are a part of the given
+        ConstrainedSketchGeometry object.
 
         Returns
         -------
@@ -352,9 +349,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def getPointAtDistance(self, point: Sequence[float], distance: str, percentage: Boolean = OFF):
-        """This method returns a point offset along the given ConstrainedSketchGeometry from the
-        given end by a specified arc length distance or a percentage of the total length of the
-        ConstrainedSketchGeometry object.
+        """This method returns a point offset along the given ConstrainedSketchGeometry from the given end by a
+        specified arc length distance or a percentage of the total length of the ConstrainedSketchGeometry
+        object.
 
         Parameters
         ----------

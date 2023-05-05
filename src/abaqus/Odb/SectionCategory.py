@@ -6,12 +6,10 @@ from .SectionPointArray import SectionPointArray
 
 @abaqus_class_doc
 class SectionCategory:
-    """The SectionCategory object is used to group regions of the model with like sections.
-    Section definitions that contain the same number of section points or integration points
-    are grouped together.
-    To access data for a particular section definition, use the individual Section objects
-    in the output database. For more information, see Beam Section profile commands and
-    Section commands.
+    """The SectionCategory object is used to group regions of the model with like sections. Section definitions
+    that contain the same number of section points or integration points are grouped together. To access data
+    for a particular section definition, use the individual Section objects in the output database. For more
+    information, see Beam Section profile commands and Section commands.
 
     .. note::
         This object can be accessed by::

@@ -12,8 +12,8 @@ from ..UtilityAndView.abaqusConstants import BENDING, Boolean, DEFAULT, GRADIENT
 
 @abaqus_class_doc
 class HomogeneousShellSection(GeometryShellSection):
-    """The HomogeneousShellSection object defines the properties of a shell section.
-    The HomogeneousShellSection object is derived from the GeometryShellSection object.
+    """The HomogeneousShellSection object defines the properties of a shell section. The HomogeneousShellSection
+    object is derived from the GeometryShellSection object.
 
     .. note::
         This object can be accessed by::

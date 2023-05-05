@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class DamageStabilizationCohesive:
-    """The DamageStabilizationCohesive object specifies the viscosity coefficients for the
-    damage model for surface-based cohesive behavior or enriched cohesive behavior.
+    """The DamageStabilizationCohesive object specifies the viscosity coefficients for the damage model for
+    surface-based cohesive behavior or enriched cohesive behavior.
 
     .. note::
         This object can be accessed by::

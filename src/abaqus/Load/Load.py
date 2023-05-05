@@ -5,9 +5,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class Load:
-    """The Load object is the abstract base type for other Load objects. The Load object has no
-    explicit constructor. The methods and members of the Load object are common to all
-    objects derived from Load.
+    """The Load object is the abstract base type for other Load objects. The Load object has no explicit
+    constructor. The methods and members of the Load object are common to all objects derived from Load.
 
     .. note::
         This object can be accessed by::
@@ -48,8 +47,8 @@ class Load:
 
     @abaqus_method_doc
     def reset(self, stepName: str):
-        """This method resets the load state of the specified step to the state of the previous
-        general analysis step.
+        """This method resets the load state of the specified step to the state of the previous general analysis
+        step.
 
         Parameters
         ----------

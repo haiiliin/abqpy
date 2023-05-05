@@ -1,14 +1,11 @@
-"""These functions execute Python commands or functions.
-
-"""
+"""These functions execute Python commands or functions."""
 from abqpy.decorators import abaqus_function_doc
 
 
 @abaqus_function_doc
 def addImportCallback(moduleName: str, callback: str, userData: str = ""):
-    """This function defines a function to be called when a specified Abaqus/CAE module is
-    imported. You cannot specify a custom module.
-    For more information, see An example of a callback function.
+    """This function defines a function to be called when a specified Abaqus/CAE module is imported. You cannot
+    specify a custom module. For more information, see An example of a callback function.
 
     .. note::
         This function can be accessed by::

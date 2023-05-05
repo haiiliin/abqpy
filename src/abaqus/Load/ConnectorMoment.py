@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorMoment(Load):
-    """The ConnectorMoment object stores the data for a connector moment.
-    The ConnectorMoment object is derived from the Load object.
+    """The ConnectorMoment object stores the data for a connector moment. The ConnectorMoment object is derived
+    from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -51,8 +51,8 @@ class ConnectorMoment(Load):
         m3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
-        may also be applied to a wire set referenced from an assembled fastener template model.
+        """This method creates a ConnectorMoment object on a wire region. Alternatively, the load may also be
+        applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -109,8 +109,7 @@ class ConnectorMoment(Load):
         m3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing ConnectorMoment object in the step where
-        it is created.
+        """This method modifies the data for an existing ConnectorMoment object in the step where it is created.
 
         Parameters
         ----------
@@ -151,8 +150,8 @@ class ConnectorMoment(Load):
         m3: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ConnectorMoment object in the
-        specified step.
+        """This method modifies the propagating data for an existing ConnectorMoment object in the specified
+        step.
 
         Parameters
         ----------

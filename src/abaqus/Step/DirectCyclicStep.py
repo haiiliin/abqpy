@@ -33,11 +33,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DirectCyclicStep(AnalysisStep):
-    """The DirectCyclicStep object is used to provide a direct cyclic procedure for nonlinear,
-    non-isothermal quasi-static analysis. It can also be used to predict progressive damage
-    and failure for ductile bulk materials and/or to predict delamination/debonding growth
-    at the interfaces in laminated composites in a low-cycle fatigue analysis.
-    The DirectCyclicStep object is derived from the AnalysisStep object.
+    """The DirectCyclicStep object is used to provide a direct cyclic procedure for nonlinear, non-isothermal
+    quasi-static analysis. It can also be used to predict progressive damage and failure for ductile bulk
+    materials and/or to predict delamination/debonding growth at the interfaces in laminated composites in a
+    low-cycle fatigue analysis. The DirectCyclicStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

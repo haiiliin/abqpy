@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Chebyshev2Filter(Filter):
-    """The Chebyshev2Filter object defines a Chebyshev type 2 filter.
-    The Chebyshev2Filter object is derived from the Filter object.
+    """The Chebyshev2Filter object defines a Chebyshev type 2 filter. The Chebyshev2Filter object is derived
+    from the Filter object.
 
     .. note::
         This object can be accessed by::

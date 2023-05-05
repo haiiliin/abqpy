@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON, SymbolicConstant
 
 @abaqus_class_doc
 class XFEMCrackGrowthState(InteractionState):
-    """The XFEMCrackGrowthState object stores the propagating data of an XFEMCrackGrowth object
-    in a step. One instance of this object is created internally by the XFEMCrackGrowth
-    object for each step. The instance is also deleted internally by the XFEMCrackGrowth
-    object.
-    The XFEMCrackGrowthState object has no constructor or methods.
-    The XFEMCrackGrowthState object is derived from the InteractionState object.
+    """The XFEMCrackGrowthState object stores the propagating data of an XFEMCrackGrowth object in a step. One
+    instance of this object is created internally by the XFEMCrackGrowth object for each step. The instance is
+    also deleted internally by the XFEMCrackGrowth object. The XFEMCrackGrowthState object has no constructor or
+    methods. The XFEMCrackGrowthState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

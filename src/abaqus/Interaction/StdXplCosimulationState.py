@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class StdXplCosimulationState(InteractionState):
-    """The StdXplCosimulationState object stores the propagating data for a StdXplCosimulation
-    object. One instance of this object is created internally by the StdXplCosimulation
-    object for each step. The instance is also deleted internally by the StdXplCosimulation
-    object.
-    The StdXplCosimulationState object has no constructor or methods.
-    The StdXplCosimulationState object is derived from the InteractionState object.
+    """The StdXplCosimulationState object stores the propagating data for a StdXplCosimulation object. One
+    instance of this object is created internally by the StdXplCosimulation object for each step. The instance
+    is also deleted internally by the StdXplCosimulation object. The StdXplCosimulationState object has no
+    constructor or methods. The StdXplCosimulationState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

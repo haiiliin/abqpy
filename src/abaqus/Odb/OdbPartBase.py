@@ -21,8 +21,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbPartBase:
-    """The OdbPart object is similar to the kernel Part object and contains nodes and elements,
-    but not geometry.
+    """The OdbPart object is similar to the kernel Part object and contains nodes and elements, but not
+    geometry.
 
     .. note::
         This object can be accessed by::
@@ -71,8 +71,7 @@ class OdbPartBase:
         embeddedSpace: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR],
         type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
     ):
-        """This method creates an OdbPart object. Nodes and elements are added to this object at a
-        later stage.
+        """This method creates an OdbPart object. Nodes and elements are added to this object at a later stage.
 
         .. note::
             This function can be accessed by::
@@ -107,10 +106,9 @@ class OdbPartBase:
         elementSetName: str = "",
         sectionCategory: Optional[SectionCategory] = None,
     ):
-        """This method adds elements to an OdbPart object using element labels and nodal
-        connectivity.
-        Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer
-        to plot contours incorrectly.
+        """This method adds elements to an OdbPart object using element labels and nodal connectivity.
+        Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer to plot contours
+        incorrectly.
 
         Parameters
         ----------
@@ -136,10 +134,9 @@ class OdbPartBase:
         elementSetName: Optional[str] = None,
         sectionCategory: Optional[SectionCategory] = None,
     ):
-        """This method adds elements to an OdbPart object using a sequence of element labels and
-        nodal connectivity.
-        Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer
-        to plot contours incorrectly.
+        """This method adds elements to an OdbPart object using a sequence of element labels and nodal
+        connectivity. Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer to
+        plot contours incorrectly.
 
         Parameters
         ----------
@@ -161,9 +158,8 @@ class OdbPartBase:
 
     @overload
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: Optional[str] = None):
-        """This method adds nodes to an OdbPart object using node labels and coordinates.
-        Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
-        plot contours incorrectly.
+        """This method adds nodes to an OdbPart object using node labels and coordinates. Warning:Adding nodes
+        not in ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
 
         Parameters
         ----------
@@ -179,10 +175,9 @@ class OdbPartBase:
     @overload
     @abaqus_method_doc
     def addNodes(self, nodeData: tuple, nodeSetName: Optional[str] = None):
-        """This method adds nodes to an OdbPart object using a sequence of node labels and
-        coordinates.
-        Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
-        plot contours incorrectly.
+        """This method adds nodes to an OdbPart object using a sequence of node labels and coordinates.
+        Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours
+        incorrectly.
 
         Parameters
         ----------
@@ -317,8 +312,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
-        """This method is used to define a two-dimensional AnalyticSurface object on the part
-        object.
+        """This method is used to define a two-dimensional AnalyticSurface object on the part object.
 
         Parameters
         ----------
@@ -341,8 +335,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfExtrude(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
-        """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
-        part object.
+        """This method is used to define a three-dimensional cylindrical AnalyticSurface on the part object.
 
         Parameters
         ----------
@@ -365,8 +358,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfRevolve(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
-        """This method is used to define a three-dimensional AnalyticSurface of revolution on the
-        part object.
+        """This method is used to define a three-dimensional AnalyticSurface of revolution on the part object.
 
         Parameters
         ----------

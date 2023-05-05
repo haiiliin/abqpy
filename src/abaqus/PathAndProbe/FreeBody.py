@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FreeBody:
-    """The FreeBody object defines a section across which resultant forces and moments are
-    computed.
+    """The FreeBody object defines a section across which resultant forces and moments are computed.
 
     .. note::
         This object can be accessed by::

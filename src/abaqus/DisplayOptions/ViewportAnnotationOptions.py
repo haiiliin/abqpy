@@ -9,8 +9,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ViewportAnnotationOptions:
-    """The ViewportAnnotationOptions object stores settings that control how annotations are
-    rendered in a particular viewport. ViewportAnnotationOptions objects are accessed in one
+    """The ViewportAnnotationOptions object stores settings that control how annotations are rendered in a
+    particular viewport. ViewportAnnotationOptions objects are accessed in one.
+
     of two ways:
     - The default viewport annotations. These settings are used as defaults when other
     **viewportAnnotationOptions** members are created and can be set to customize user

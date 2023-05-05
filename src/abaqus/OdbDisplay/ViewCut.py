@@ -19,10 +19,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ViewCut:
-    """The ViewCut object is used to store values and attributes associate with ViewCut type
-    objects. ViewCut objects can be created using the methods described below. The methods
-    accessed via the OdbDisplay object cause the ViewCut object to be added to the
-    session.viewports[name].odbDisplay.viewCuts repository.
+    """The ViewCut object is used to store values and attributes associate with ViewCut type objects. ViewCut
+    objects can be created using the methods described below. The methods accessed via the OdbDisplay object
+    cause the ViewCut object to be added to the session.viewports[name].odbDisplay.viewCuts repository.
 
     .. note::
         This object can be accessed by::
@@ -292,7 +291,6 @@ class ViewCut:
 
     @abaqus_method_doc
     def updateVariable(self):
-        """This method updates the field associated with an isosurface cut to be consistent with
-        the current primary variable.
-        """
+        """This method updates the field associated with an isosurface cut to be consistent with the current
+        primary variable."""
         ...

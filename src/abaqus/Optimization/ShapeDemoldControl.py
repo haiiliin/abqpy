@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapeDemoldControl(GeometricRestriction):
-    """The ShapeDemoldControl object defines a shape demold control geometric restriction.
-    The ShapeDemoldControl object is derived from the GeometricRestriction object.
+    """The ShapeDemoldControl object defines a shape demold control geometric restriction. The
+    ShapeDemoldControl object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

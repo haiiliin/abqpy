@@ -3,8 +3,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class ConstrainedSketchParameter:
-    """The ConstrainedSketchParameter object stores the definition of a parameter in the
-    sketch.
+    """The ConstrainedSketchParameter object stores the definition of a parameter in the sketch.
 
     .. note::
         This object can be accessed by::
@@ -36,8 +35,7 @@ class ConstrainedSketchParameter:
         expression: str = "",
         previousParameter: str = "",
     ):
-        """This method creates a parameter and optionally associates a dimension with this
-        parameter.
+        """This method creates a parameter and optionally associates a dimension with this parameter.
 
         .. note::
             This function can be accessed by::
@@ -64,6 +62,5 @@ class ConstrainedSketchParameter:
         -------
         ConstrainedSketchParameter
             A ConstrainedSketchParameter object.
-
         """
         ...

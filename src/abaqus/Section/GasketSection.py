@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GasketSection(Section):
-    """The GasketSection object defines the properties of a gasket section.
-    The GasketSection object is derived from the Section object.
+    """The GasketSection object defines the properties of a gasket section. The GasketSection object is derived
+    from the Section object.
 
     .. note::
         This object can be accessed by::

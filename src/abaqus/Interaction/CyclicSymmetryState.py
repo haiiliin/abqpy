@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import ALL_NODAL_DIAMETER, SymbolicConstan
 
 @abaqus_class_doc
 class CyclicSymmetryState(InteractionState):
-    """The CyclicSymmetryState object stores the propagating data for a CyclicSymmetry object.
-    One instance of this object is created internally by the CyclicSymmetry object for each
-    step. The instance is also deleted internally by the CyclicSymmetry object.
-    The CyclicSymmetryState object has no constructor or methods.
-    The CyclicSymmetryState object is derived from the InteractionState object.
+    """The CyclicSymmetryState object stores the propagating data for a CyclicSymmetry object. One instance of
+    this object is created internally by the CyclicSymmetry object for each step. The instance is also deleted
+    internally by the CyclicSymmetry object. The CyclicSymmetryState object has no constructor or methods. The
+    CyclicSymmetryState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

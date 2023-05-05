@@ -8,9 +8,12 @@ class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
     def _parse_options(self, **options: str | bool | None) -> str:  # noqa
-        """Parse options to be passed to Abaqus/CAE command line interface. If the value is a string, the option will
+        """Parse options to be passed to Abaqus/CAE command line interface.
+
+        If the value is a string, the option will
         be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or
-        ignored if False; if the value is None, the option will be ignored."""
+        ignored if False; if the value is None, the option will be ignored.
+        """
         return " ".join([f"{key}={val}" if isinstance(val, str) else key for key, val in options.items() if val])
 
     def run(self, cmd: str):  # noqa
@@ -216,7 +219,7 @@ class AbqpyMiscCLI(AbqpyCLIBase):
 
 
 class AbqpyCLI(AbqpyCLIBase):
-    """The abqpy command line interface"""
+    """The abqpy command line interface."""
 
     def __init__(self):
         self.misc = AbqpyMiscCLI()

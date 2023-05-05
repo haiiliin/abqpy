@@ -30,8 +30,8 @@ class BeamSectionProfileModel(ModelBase):
 
     @abaqus_method_doc
     def beamProfilesFromOdb(self, fileName: str):
-        """This method creates Profile objects by reading an output database. The new profiles are
-        placed in the profiles repository.
+        """This method creates Profile objects by reading an output database. The new profiles are placed in the
+        profiles repository.
 
         .. note::
             This function can be accessed by::

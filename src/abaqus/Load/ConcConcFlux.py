@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcConcFlux(Load):
-    """The ConcConcFlux object stores the data for a concentrated concentration flux.
-    The ConcConcFlux object is derived from the Load object.
+    """The ConcConcFlux object stores the data for a concentrated concentration flux. The ConcConcFlux object is
+    derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -91,8 +91,7 @@ class ConcConcFlux(Load):
         field: str = "",
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing ConcConcFlux object in the step where it
-        is created.
+        """This method modifies the data for an existing ConcConcFlux object in the step where it is created.
 
         Parameters
         ----------
@@ -112,8 +111,7 @@ class ConcConcFlux(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing ConcConcFlux object in the
-        specified step.
+        """This method modifies the propagating data for an existing ConcConcFlux object in the specified step.
 
         Parameters
         ----------

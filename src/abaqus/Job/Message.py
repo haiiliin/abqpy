@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class Message:
-    """The Message object contains information about a given phase of the simulation. Job
-    messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI
-    option).
+    """The Message object contains information about a given phase of the simulation. Job messages are not
+    returned if a script is run without the Abaqus/CAE GUI (using the noGUI option).
 
     .. note::
         This object can be accessed by::

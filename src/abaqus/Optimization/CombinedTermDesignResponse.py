@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CombinedTermDesignResponse(DesignResponse):
-    """The CombinedTermDesignResponse object defines a combined-term design response.
-    The CombinedTermDesignResponse object is derived from the DesignResponse object.
+    """The CombinedTermDesignResponse object defines a combined-term design response. The
+    CombinedTermDesignResponse object is derived from the DesignResponse object.
 
     .. note::
         This object can be accessed by::
