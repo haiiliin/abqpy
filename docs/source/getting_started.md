@@ -44,7 +44,7 @@ You can install `abqpy` with the following commands.
     You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
 
-### Two Python interpreters
+## Two Python interpreters
 
 Before we go any further, it is necessary for us to understand two Python interpreters.
 
@@ -169,6 +169,15 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
   :alt: Extract Output Data
   :width: 100%
   ```
+
+```{warning}
+`abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
+If you run the script under the debug mode, the script will not be submitted to Abaqus, but it will run in the
+Python interpreter where `abqpy` is installed. Since `abqpy` does not implement the whole Abaqus/Python APIs,
+the script may not (and most likely) run correctly. However, for some simple scripts, it may work, in this way
+you can use the debugger to check the variables in the Abaqus API roughly. But still, the script will not be
+submitted to Abaqus.
+```
 
 ## Comments
 
