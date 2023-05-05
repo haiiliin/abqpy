@@ -47,7 +47,7 @@ class SizingTask(OptimizationTask):
     #: sensitivities. The default value is False.
     #:
     #: .. versionadded:: 2019
-    #:     The `abaqusSensitivities` attribute was added.
+    #:     The ``abaqusSensitivities`` attribute was added.
     abaqusSensitivities: Boolean = False
 
     #: A Float specifying the stop criteria based on the change in element thickness. The
@@ -121,7 +121,7 @@ class SizingTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -183,7 +183,7 @@ class SizingTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².

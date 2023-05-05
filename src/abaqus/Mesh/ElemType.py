@@ -153,7 +153,7 @@ class ElemType:
     #: nonlinear asymmetric deformation.
     #:
     #: .. versionadded:: 2019
-    #:     The `numFourierModes` attribute was added.
+    #:     The ``numFourierModes`` attribute was added.
     numFourierModes: int = 1
 
     #: An Int specifying the positive offset number for specifying the additional nodes needed
@@ -161,7 +161,7 @@ class ElemType:
     #: nonlinear asymmetric deformation.
     #:
     #: .. versionadded:: 2019
-    #:     The `nodeOffset` attribute was added.
+    #:     The ``nodeOffset`` attribute was added.
     nodeOffset: Optional[int] = None
 
     @abaqus_method_doc
@@ -306,14 +306,14 @@ class ElemType:
             nonlinear asymmetric deformation.
 
             .. versionadded:: 2019
-                The `numFourierModes` argument was added.
+                The ``numFourierModes`` argument was added.
         nodeOffset
             An Int specifying the positive offset number for specifying the additional nodes needed
             in the connectivity.This argument is applicable only for axisymmetric elements with
             nonlinear asymmetric deformation.
 
             .. versionadded:: 2019
-                The `nodeOffset` argument was added.
+                The ``nodeOffset`` argument was added.
 
         Returns
         -------

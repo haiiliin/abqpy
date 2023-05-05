@@ -25,7 +25,7 @@ class ExpInitialization(ContactInitialization):
         - CONTACT INITIALIZATION DATA
 
     .. versionadded:: 2020
-        The `ExpInitialization` class was added.
+        The ``ExpInitialization`` class was added.
     """
 
     #: A String specifying the contact initialization repository key.

@@ -232,19 +232,19 @@ class ModelBase:
     #: A repository of TableCollection objects.
     #:
     #: .. versionadded:: 2020
-    #:     The `tableCollections` attribute was added.
+    #:     The ``tableCollections`` attribute was added.
     tableCollections: Dict[str, TableCollection] = {}
 
     #: A repository of EventSeriesType objects.
     #:
     #: .. versionadded:: 2020
-    #:     The `eventSeriesTypes` attribute was added.
+    #:     The ``eventSeriesTypes`` attribute was added.
     eventSeriesTypes: Dict[str, EventSeriesType] = {}
 
     #: A repository of EventSeriesData objects.
     #:
     #: .. versionadded:: 2020
-    #:     The `eventSeriesDatas` attribute was added.
+    #:     The ``eventSeriesDatas`` attribute was added.
     eventSeriesDatas: Dict[str, EventSeriesData] = {}
 
     @abaqus_method_doc
