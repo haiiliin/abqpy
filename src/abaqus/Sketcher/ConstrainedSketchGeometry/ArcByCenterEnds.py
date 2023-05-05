@@ -30,6 +30,15 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
             A pair of Floats specifying the first endpoint of the arc.
         point2
             A pair of Floats specifying the second endpoint of the arc.
+<<<<<<< HEAD
+=======
+        direction
+            A SymbolicConstant specifying the direction of the arc. Possible values are CLOCKWISE
+            and COUNTERCLOCKWISE.
+
+            .. versionadded:: 2017
+                The ``direction`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

@@ -56,8 +56,16 @@ class TopologyTask(OptimizationTask):
     name: str
 
     #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+<<<<<<< HEAD
     #: sensitivities. The default value is True.
     abaqusSensitivities: Boolean = True
+=======
+    #: sensitivities. The default value is False.
+    #:
+    #: .. versionadded:: 2019
+    #:     The ``abaqusSensitivities`` attribute was added.
+    abaqusSensitivities: Boolean = False
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A SymbolicConstant specifying the optimization task algorithm. Possible values are
     #: GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -193,6 +201,17 @@ class TopologyTask(OptimizationTask):
     #: default value is None.
     viscousStiffnessDamping: Optional[float] = None
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether the group in the design response will be evaluated using
+    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+    #: value of False means that the existing algorithm will be used.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``groupSensitivities`` attribute was added.
+    groupOperator: Boolean = OFF
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -250,7 +269,14 @@ class TopologyTask(OptimizationTask):
             A String specifying the optimization task repository key.
         abaqusSensitivities
             A Boolean specifying whether to use Abaqus to compute the design responses and their
+<<<<<<< HEAD
             sensitivities. The default value is True.
+=======
+            sensitivities. The default value is False.
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -354,6 +380,16 @@ class TopologyTask(OptimizationTask):
         viscousStiffnessDamping
             None or a Float specifying the viscous stiffness damping for the task region. The
             default value is None.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -412,6 +448,12 @@ class TopologyTask(OptimizationTask):
         abaqusSensitivities
             A Boolean specifying whether to use Abaqus to compute the design responses and their
             sensitivities. The default value is True.
+<<<<<<< HEAD
+=======
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         algorithm
             A SymbolicConstant specifying the optimization task algorithm. Possible values are
             GENERAL_OPTIMIZATION and CONDITION_BASED_OPTIMIZATION. The default value is
@@ -515,5 +557,15 @@ class TopologyTask(OptimizationTask):
         viscousStiffnessDamping
             None or a Float specifying the viscous stiffness damping for the task region. The
             default value is None.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...

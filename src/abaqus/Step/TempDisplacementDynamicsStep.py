@@ -78,6 +78,19 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: 1.2.
     quadBulkViscosity: float = 1
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
+    #: "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
+    #: increment for three-dimensional continuum elements and elements with plane stress
+    #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
+    #: value is ON.
+    #:
+    #: .. versionadded:: 2018
+    #:     The ``improvedDtMethod`` attribute was added.
+    improvedDtMethod: Boolean = ON
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
     previous: str = ""

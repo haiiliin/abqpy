@@ -50,5 +50,23 @@ class MesherOptions:
         minTransition
             A Boolean specifying whether Abaqus/CAE should attempt to minimize the mesh transition
             when it moves from a coarse mesh to a fine mesh. The default value is ON.
+<<<<<<< HEAD
+=======
+        guiPreferredElements
+            A list of SymbolicConstants specifying preferred Abaqus element types. This setting is
+            relevant only when Abaqus/CAE is run interactively. When a part or part instance that
+            has never been assigned an element type is meshed, this list is consulted. If an element
+            type appropriate to the geometry is found in the list, it is assigned to the geometry.
+            Multiple element types representing different shapes (for example, triangles and
+            quadrilaterals) can be assigned in combination, but only element types that are
+            compatible with each other are used. When more than one appropriate element type is
+            found in the list, the first element type encountered takes precedence. This list is
+            also consulted when populating the element type dialog; preferred types are selected by
+            default for a region not previously assigned any element types. The default value is an
+            empty list.
+
+            .. versionadded:: 2018
+                The ``guiPreferredElements`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...
