@@ -46,8 +46,9 @@ def run(cae: bool = True) -> None:
 
     # Alternative to use abaqus command line options at run time
     options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
+    noGUI = options.pop("noGUI", True)
     if cae:
-        options["gui"] = not options.pop("noGUI", True)
+        options["gui"] = not noGUI
         abaqus.cae(filePath, *sys.argv[1:], **options)
     else:
         abaqus.python(filePath, *sys.argv[1:], **options)
