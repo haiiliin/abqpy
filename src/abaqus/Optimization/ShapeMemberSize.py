@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapeMemberSize(GeometricRestriction):
-    """The ShapeMemberSize object defines a shape member size geometric restriction.
-    The ShapeMemberSize object is derived from the GeometricRestriction object.
+    """The ShapeMemberSize object defines a shape member size geometric restriction. The ShapeMemberSize object
+    is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

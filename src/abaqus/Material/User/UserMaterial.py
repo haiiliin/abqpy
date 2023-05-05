@@ -7,8 +7,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class UserMaterial:
-    """The UserMaterial object defines material constants for use in subroutines UMAT, UMATHT,
-    or VUMAT.
+    """The UserMaterial object defines material constants for use in subroutines UMAT, UMATHT, or VUMAT.
 
     .. note::
         This object can be accessed by::

@@ -6,9 +6,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class CavityRadiationProp(ContactProperty):
-    """The CavityRadiationProp object is an interaction property that defines emissivity as a
-    function of temperature and field variables.
-    The CavityRadiationProp object is derived from the InteractionProperty object.
+    """The CavityRadiationProp object is an interaction property that defines emissivity as a function of
+    temperature and field variables. The CavityRadiationProp object is derived from the InteractionProperty
+    object.
 
     .. note::
         This object can be accessed by::

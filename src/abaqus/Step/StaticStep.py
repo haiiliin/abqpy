@@ -35,9 +35,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StaticStep(AnalysisStep):
-    """The StaticStep object is used to indicate that the step should be analyzed as a static
-    load step.
-    The StaticStep object is derived from the AnalysisStep object.
+    """The StaticStep object is used to indicate that the step should be analyzed as a static load step. The
+    StaticStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

@@ -9,9 +9,8 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class ConstructionCircleByCenterPerimeter(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(self, center: Sequence[float], point1: Sequence[float]):
-        """This method constructs a construction circle using a center point and a point on the
-        perimeter. The circle is added to the geometry repository of the ConstrainedSketch
-        object.
+        """This method constructs a construction circle using a center point and a point on the perimeter. The
+        circle is added to the geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::
@@ -29,6 +28,5 @@ class ConstructionCircleByCenterPerimeter(ConstrainedSketchGeometry):
         -------
         ConstrainedSketchGeometry
             A ConstrainedSketchGeometry object (None if the circle cannot be created).
-
         """
         ...

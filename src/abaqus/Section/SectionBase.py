@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import ANALYSIS_DEFAULT
 
 @abaqus_class_doc
 class SectionBase:
-    """The Section object defines the properties of a section. The Section object is the
-    abstract base type for other Section objects. The Section object has no explicit
-    constructor. The methods and members of the Section object are common to all objects
-    derived from the Section.
+    """The Section object defines the properties of a section. The Section object is the abstract base type for
+    other Section objects. The Section object has no explicit constructor. The methods and members of the
+    Section object are common to all objects derived from the Section.
 
     .. note::
         This object can be accessed by::
@@ -36,8 +35,8 @@ class SectionBase:
 
     @abaqus_method_doc
     def sectionsFromOdb(self, fileName: str):
-        """This method creates Section objects by reading an output database. The new sections are
-        placed in the sections repository.
+        """This method creates Section objects by reading an output database. The new sections are placed in the
+        sections repository.
 
         .. note::
             This function can be accessed by::

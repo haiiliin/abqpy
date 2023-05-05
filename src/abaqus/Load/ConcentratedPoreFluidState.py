@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcentratedPoreFluidState(LoadState):
-    """The ConcentratedPoreFluidState object stores the propagating data of a concentrated pore
-    fluid flow load in a step. One instance of this object is created internally by the
-    ConcPoreFluid object for each step. The instance is also deleted internally by the
-    ConcPoreFluid object.
-    The ConcentratedPoreFluidState object has no constructor or methods.
-    The ConcentratedPoreFluidState object is derived from the LoadState object.
+    """The ConcentratedPoreFluidState object stores the propagating data of a concentrated pore fluid flow load
+    in a step. One instance of this object is created internally by the ConcPoreFluid object for each step. The
+    instance is also deleted internally by the ConcPoreFluid object. The ConcentratedPoreFluidState object has
+    no constructor or methods. The ConcentratedPoreFluidState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

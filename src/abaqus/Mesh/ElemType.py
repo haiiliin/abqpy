@@ -20,8 +20,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ElemType:
-    """The ElemType object is an argument object used as an argument in the setElementType
-    command.
+    """The ElemType object is an argument object used as an argument in the setElementType command.
 
     .. note::
         This object can be accessed by::

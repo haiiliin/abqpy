@@ -10,9 +10,9 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class AVIOptions(_OptionsBase):
-    """The AVIOptions object is used to store values and attributes to be used in generating
-    AVI animation. The AVIOptions object has no constructor. Abaqus creates the **aviOptions**
-    member when the animation module is imported.
+    """The AVIOptions object is used to store values and attributes to be used in generating AVI animation. The
+    AVIOptions object has no constructor. Abaqus creates the **aviOptions** member when the animation module is
+    imported.
 
     .. note::
         This object can be accessed by::

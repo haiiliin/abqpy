@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorDamping(ConnectorBehaviorOption):
-    """The ConnectorDamping object defines damping behavior for one or more components of a
-    connector's relative motion.
-    The ConnectorDamping object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorDamping object defines damping behavior for one or more components of a connector's relative
+    motion. The ConnectorDamping object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::

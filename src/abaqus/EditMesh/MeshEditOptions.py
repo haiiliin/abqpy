@@ -5,10 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class MeshEditOptions:
-    """The MeshEditOptions object stores settings that specify the behavior when editing meshes
-    on parts or part instances.
-    The MeshEditOptions object has no constructor. Abaqus creates the **MeshEditOptions**
-    member when a session is started.
+    """The MeshEditOptions object stores settings that specify the behavior when editing meshes on parts or part
+    instances. The MeshEditOptions object has no constructor. Abaqus creates the **MeshEditOptions** member when
+    a session is started.
 
     .. note::
         This object can be accessed by::

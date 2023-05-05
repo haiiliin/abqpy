@@ -6,8 +6,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 class FileImperfection(Imperfection):
-    """The FileImperfection object defines geometric imperfection on an assembly region.
-    The FileImperfection object is derived from the Imperfection object.
+    """The FileImperfection object defines geometric imperfection on an assembly region. The FileImperfection
+    object is derived from the Imperfection object.
 
     .. note::
         This object can be accessed by::

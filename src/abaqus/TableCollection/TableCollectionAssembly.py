@@ -12,9 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TableCollectionAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
-    constructor command. Abaqus creates the **rootAssembly** member when a Model object is
-    created.
+    """An Assembly object is a container for instances of parts. The Assembly object has no constructor command.
+    Abaqus creates the **rootAssembly** member when a Model object is created.
 
     .. note::
         This object can be accessed by::

@@ -25,8 +25,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PointFastener(Fastener):
-    """The PointFastener object defines a point fastener.
-    The PointFastener object is derived from the Fastener object.
+    """The PointFastener object defines a point fastener. The PointFastener object is derived from the Fastener
+    object.
 
     .. note::
         This object can be accessed by::
@@ -202,9 +202,8 @@ class PointFastener(Fastener):
         angle2: float = 0,
         unsorted: Boolean = OFF,
     ):
-        """This method creates a PointFastener object. Although the constructor is available both
-        for parts and for the assembly, PointFastener objects are currently supported only under
-        the assembly.
+        """This method creates a PointFastener object. Although the constructor is available both for parts and
+        for the assembly, PointFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

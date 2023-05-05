@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DrillControl(GeometricRestriction):
-    """The DrillControl object defines a drill control geometric restriction.
-    The DrillControl object is derived from the GeometricRestriction object.
+    """The DrillControl object defines a drill control geometric restriction. The DrillControl object is derived
+    from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

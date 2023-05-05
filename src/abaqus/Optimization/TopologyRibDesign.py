@@ -13,8 +13,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyRibDesign(GeometricRestriction):
-    """The TopologyRibDesign object defines a topology rib design geometric restriction.
-    The TopologyRibDesign object is derived from the GeometricRestriction object.
+    """The TopologyRibDesign object defines a topology rib design geometric restriction. The TopologyRibDesign
+    object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

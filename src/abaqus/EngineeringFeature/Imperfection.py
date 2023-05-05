@@ -5,7 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Imperfection:
-    """The Imperfection object is the abstract base type for FileImperfection, InputImperfection, and DataImperfection.
+    """The Imperfection object is the abstract base type for FileImperfection, InputImperfection, and
+    DataImperfection.
 
     .. note::
         This object can be accessed by::

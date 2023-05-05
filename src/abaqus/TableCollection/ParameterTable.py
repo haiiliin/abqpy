@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ParameterTable:
-    """A ParameterTable is an object that is used to define the containers that encapsulate
-    ParameterColumn and DataTable objects. The data of DataTable is dependent on the
-    contents of ParameterColumn. After DataTable is instantiated, making changes to
-    ParameterColumn may lead to data corruption.
+    """A ParameterTable is an object that is used to define the containers that encapsulate ParameterColumn and
+    DataTable objects. The data of DataTable is dependent on the contents of ParameterColumn. After DataTable is
+    instantiated, making changes to ParameterColumn may lead to data corruption.
 
     .. note::
         This object can be accessed by::
@@ -35,8 +34,7 @@ class ParameterTable:
 
     @abaqus_method_doc
     def __init__(self, name: str):
-        """This method creates a ParameterTable object and places it in the parameterTables
-        repository.
+        """This method creates a ParameterTable object and places it in the parameterTables repository.
 
         .. note::
             This function can be accessed by::
@@ -64,9 +62,8 @@ class ParameterTable:
         default: str = "",
         allowedValues: str = "",
     ) -> ParameterColumn:
-        """ParameterColumn is a constructor method that creates a ParameterColumn object and stores
-        it in the array data structure. It is accessible from the ParameterTable object using a
-        column member.
+        """ParameterColumn is a constructor method that creates a ParameterColumn object and stores it in the
+        array data structure. It is accessible from the ParameterTable object using a column member.
 
         .. note::
             This function can be accessed by::

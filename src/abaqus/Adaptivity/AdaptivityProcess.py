@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class AdaptivityProcess:
-    """The AdaptivityProcess object defines a series of jobs that will be submitted for
-    analysis. Abaqus performs adaptive remeshing between each job.
+    """The AdaptivityProcess object defines a series of jobs that will be submitted for analysis. Abaqus
+    performs adaptive remeshing between each job.
 
     .. note::
         This object can be accessed by::

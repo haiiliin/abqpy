@@ -3,9 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class SurfaceBeamSmoothingAssignment:
-    """The SurfaceBeamSmoothingAssignment object stores the surface beam smoothing assignment
-    definition for surfaces in ContactStd objects. The SurfaceBeamSmoothingAssignment object
-    has no constructor or members.
+    """The SurfaceBeamSmoothingAssignment object stores the surface beam smoothing assignment definition for
+    surfaces in ContactStd objects. The SurfaceBeamSmoothingAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -23,8 +22,8 @@ class SurfaceBeamSmoothingAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: float):
-        """This method allows modification of surface beam smoothing assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface beam smoothing assignments already defined on surfaces in
+        a given step.
 
         Parameters
         ----------
@@ -43,8 +42,7 @@ class SurfaceBeamSmoothingAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: tuple):
-        """This method allows addition of surface beam smoothing assignments to new surfaces in a
-        given step.
+        """This method allows addition of surface beam smoothing assignments to new surfaces in a given step.
 
         Parameters
         ----------
@@ -60,8 +58,8 @@ class SurfaceBeamSmoothingAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing surface beam smoothing assignments from
-        ContactStd objects.
+        """The delete method allows you to delete existing surface beam smoothing assignments from ContactStd
+        objects.
 
         Parameters
         ----------

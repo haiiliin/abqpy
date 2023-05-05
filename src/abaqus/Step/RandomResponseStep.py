@@ -35,8 +35,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class RandomResponseStep(AnalysisStep):
-    """The RandomResponseStep object is used to give the linearized response of a model to
-    random excitation.
+    """The RandomResponseStep object is used to give the linearized response of a model to random excitation.
     The RandomResponseStep object is derived from the AnalysisStep object.
 
     .. note::

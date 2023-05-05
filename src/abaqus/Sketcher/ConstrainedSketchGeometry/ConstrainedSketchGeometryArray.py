@@ -19,8 +19,7 @@ class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
 
     @abaqus_method_doc
     def findAt(self, coordinates: Tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchGeometry:
-        """This method returns the ConstrainedSketchGeometry object located at the given
-        coordinates.
+        """This method returns the ConstrainedSketchGeometry object located at the given coordinates.
 
         Parameters
         ----------

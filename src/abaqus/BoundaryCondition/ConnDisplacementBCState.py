@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConnDisplacementBCState(BoundaryConditionState):
-    """The ConnDisplacementBCState object stores the propagating data for a connector
-    displacement/rotation boundary condition in a step. One instance of this object is
-    created internally by the ConnDisplacementBC object for each step. The instance is also
-    deleted internally by the ConnDisplacementBC object.
-    The ConnDisplacementBCState object has no constructor or methods.
-    The ConnDisplacementBCState object is derived from the BoundaryConditionState object.
+    """The ConnDisplacementBCState object stores the propagating data for a connector displacement/rotation
+    boundary condition in a step. One instance of this object is created internally by the ConnDisplacementBC
+    object for each step. The instance is also deleted internally by the ConnDisplacementBC object. The
+    ConnDisplacementBCState object has no constructor or methods. The ConnDisplacementBCState object is derived
+    from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

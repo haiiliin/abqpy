@@ -5,8 +5,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class MohrCoulombHardening:
-    """The MohrCoulombHardening object specifies hardening for the Mohr-Coulomb plasticity
-    model.
+    """The MohrCoulombHardening object specifies hardening for the Mohr-Coulomb plasticity model.
 
     .. note::
         This object can be accessed by::

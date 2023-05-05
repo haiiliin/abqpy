@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class NetworkDatabaseConnector:
-    """The NetworkDatabaseConnector object allows you to access an output database on a remote
-    system.
+    """The NetworkDatabaseConnector object allows you to access an output database on a remote system.
 
     .. note::
         This object can be accessed by::
@@ -70,11 +69,11 @@ class NetworkDatabaseConnector:
         serverTimeout: int = 86400,
         allowAutomaticStartup: Boolean = ON,
     ):
-        """This method creates a NetworkDatabaseConnector object that you can use to access a
-        remote output database. You can create a network database connector from any platform:
-        Windows or Linux. However, the network database connector server must reside on a Linux
-        platform; you cannot access an output database that resides on a remote Windows system.
-        You can access only a remote output database; you cannot access a remote model database.
+        """This method creates a NetworkDatabaseConnector object that you can use to access a remote output
+        database. You can create a network database connector from any platform: Windows or Linux. However, the
+        network database connector server must reside on a Linux platform; you cannot access an output database
+        that resides on a remote Windows system. You can access only a remote output database; you cannot access
+        a remote model database.
 
         .. note::
             This function can be accessed by::

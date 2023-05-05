@@ -8,7 +8,7 @@ ABAQUS_COMMAND_OPTIONS = {"noGUI": True}
 
 
 def run(cae: bool = True) -> None:
-    """Runs Abaqus command in system's CLI
+    """Runs Abaqus command in system's CLI.
 
     This function uses the top level script file to run the Abaqus
     command, and the arguments passed to it

@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SOLID, S
 
 @abaqus_class_doc
 class AcisMdb(MdbBase):
-    """The Mdb object is the high-level Abaqus model database. A model database stores models
-    and analysis controls.
+    """The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+    controls.
 
     .. note::
         This object can be accessed by::
@@ -21,8 +21,8 @@ class AcisMdb(MdbBase):
     @staticmethod
     @abaqus_method_doc
     def openAcis(fileName: str, scaleFromFile: Boolean = OFF):
-        """This method creates an AcisFile object from a file containing ACIS-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing ACIS-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -59,8 +59,8 @@ class AcisMdb(MdbBase):
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
-        """This method creates an AcisFile object from a file containing V5-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing V5-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -100,9 +100,9 @@ class AcisMdb(MdbBase):
         topology: SymbolicConstant = SOLID,
         convertUnits: Boolean = OFF,
     ):
-        """This method creates an AcisFile object from a file containing Elysium Neutral
-        File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object
-        is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry
+        that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object is subsequently used by the
+        PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -146,8 +146,8 @@ class AcisMdb(MdbBase):
         topology: SymbolicConstant = SOLID,
         uniteWires: Union[SymbolicConstant, Boolean] = ON,
     ):
-        """This method creates an AcisFile object from a file containing IGES-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing IGES-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -202,8 +202,8 @@ class AcisMdb(MdbBase):
     @staticmethod
     @abaqus_method_doc
     def openParasolid(fileName: str, topology: SymbolicConstant = SOLID):
-        """This method creates an AcisFile object from a file containing Parasolid-format geometry.
-        This object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing Parasolid-format geometry. This object
+        is subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -231,8 +231,8 @@ class AcisMdb(MdbBase):
     @staticmethod
     @abaqus_method_doc
     def openStep(fileName: str, scale: float = 1):
-        """This method creates an AcisFile object from a file containing STEP-format geometry. This
-        object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing STEP-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -262,8 +262,8 @@ class AcisMdb(MdbBase):
     @staticmethod
     @abaqus_method_doc
     def openVda(fileName: str):
-        """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
-        This object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing VDA-FS-format geometry. This object is
+        subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::
@@ -290,8 +290,8 @@ class AcisMdb(MdbBase):
     @staticmethod
     @abaqus_method_doc
     def openSolidworks(fileName: str, topology: SymbolicConstant = SOLID):
-        """This method creates an AcisFile object from a file containing Solidworks format
-        geometry. This object is subsequently used by the PartFromGeometryFile method.
+        """This method creates an AcisFile object from a file containing Solidworks format geometry. This object
+        is subsequently used by the PartFromGeometryFile method.
 
         .. note::
             This function can be accessed by::

@@ -43,8 +43,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ContactProperty(InteractionProperty):
-    """The ContactProperty object defines a contact interaction property.
-    The ContactProperty object is derived from the InteractionProperty object.
+    """The ContactProperty object defines a contact interaction property. The ContactProperty object is derived
+    from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

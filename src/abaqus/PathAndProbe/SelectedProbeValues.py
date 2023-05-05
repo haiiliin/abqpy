@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class SelectedProbeValues:
-    """The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
-    created when you import the Visualization module.
+    """The SelectedProbeValues object has no constructor. The SelectedProbeValues object is created when you
+    import the Visualization module.
 
     .. note::
         This object can be accessed by::

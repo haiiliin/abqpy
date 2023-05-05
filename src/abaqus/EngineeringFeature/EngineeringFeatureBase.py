@@ -12,8 +12,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class EngineeringFeatureBase:
-    """The EngineeringFeature object is a container for various specific engineering feature
-    repositories. The EngineeringFeature object has no explicit constructor or methods.
+    """The EngineeringFeature object is a container for various specific engineering feature repositories. The
+    EngineeringFeature object has no explicit constructor or methods.
 
     .. note::
         This object can be accessed by::

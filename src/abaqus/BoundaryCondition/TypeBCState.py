@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class TypeBCState(BoundaryConditionState):
-    """The TypeBCState object stores the propagating data for a predefined boundary condition
-    in a step. One instance of this object is created internally by the TypeBC object for
-    each step. The instance is also deleted internally by the TypeBC object.
-    The TypeBCState object has no constructor or methods.
-    The TypeBCState object is derived from the BoundaryConditionState object.
+    """The TypeBCState object stores the propagating data for a predefined boundary condition in a step. One
+    instance of this object is created internally by the TypeBC object for each step. The instance is also
+    deleted internally by the TypeBC object. The TypeBCState object has no constructor or methods. The
+    TypeBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

@@ -5,9 +5,9 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class GapConvection:
-    """The GapConvection object specifies the Nusselt number (Nu) to calculate the convective
-    coefficient for heat transfer between the gap flow and both the top and bottom surfaces
-    of a coupled temperature-pore pressure cohesive element.
+    """The GapConvection object specifies the Nusselt number (Nu) to calculate the convective coefficient for
+    heat transfer between the gap flow and both the top and bottom surfaces of a coupled temperature-pore
+    pressure cohesive element.
 
     .. note::
         This object can be accessed by::

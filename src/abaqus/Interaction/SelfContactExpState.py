@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SelfContactExpState(InteractionState):
-    """The SelfContactExpState object stores the propagating data for a SelfContactExp object.
-    One instance of this object is created internally by the SelfContactExp object for each
-    step. The instance is also deleted internally by the SelfContactExp object.
-    The SelfContactExpState object has no constructor or methods.
-    The SelfContactExpState object is derived from the InteractionState object.
+    """The SelfContactExpState object stores the propagating data for a SelfContactExp object. One instance of
+    this object is created internally by the SelfContactExp object for each step. The instance is also deleted
+    internally by the SelfContactExp object. The SelfContactExpState object has no constructor or methods. The
+    SelfContactExpState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 class DataImperfection(Imperfection):
-    """The DataImperfection object defines geometric imperfection on an assembly region.
-    The DataImperfection object is derived from the Imperfection object.
+    """The DataImperfection object defines geometric imperfection on an assembly region. The DataImperfection
+    object is derived from the Imperfection object.
 
     .. note::
         This object can be accessed by::

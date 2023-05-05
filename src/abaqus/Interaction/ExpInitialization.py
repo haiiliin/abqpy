@@ -10,9 +10,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ExpInitialization(ContactInitialization):
-    """The ExpInitialization object is used in conjunction with ContactExp in Abaqus/Explicit
-    analyses to specify contact initialization data.
-    The ExpInitialization object is derived from the ContactInitialization object.
+    """The ExpInitialization object is used in conjunction with ContactExp in Abaqus/Explicit analyses to
+    specify contact initialization data. The ExpInitialization object is derived from the ContactInitialization
+    object.
 
     .. note::
         This object can be accessed by::

@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class IncidentWaveState(InteractionState):
-    """The IncidentWaveState object stores the propagating data of an IncidentWave object in a
-    step. One instance of this object is created internally by the IncidentWave object for
-    each step. The instance is also deleted internally by the IncidentWave object.
-    The IncidentWaveState object has no constructor or methods.
+    """The IncidentWaveState object stores the propagating data of an IncidentWave object in a step. One
+    instance of this object is created internally by the IncidentWave object for each step. The instance is also
+    deleted internally by the IncidentWave object. The IncidentWaveState object has no constructor or methods.
     The IncidentWaveState object is derived from the InteractionState object.
 
     .. note::

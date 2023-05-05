@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ElectricPotentialBC(BoundaryCondition):
-    """The ElectricPotentialBC object stores the data for an electrical potential boundary
-    condition.
-    The ElectricPotentialBC object is derived from the BoundaryCondition object.
+    """The ElectricPotentialBC object stores the data for an electrical potential boundary condition. The
+    ElectricPotentialBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -108,8 +107,8 @@ class ElectricPotentialBC(BoundaryCondition):
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
     ):
-        """This method modifies the data for an existing ElectricPotentialBC object in the step
-        where it is created.
+        """This method modifies the data for an existing ElectricPotentialBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -141,8 +140,8 @@ class ElectricPotentialBC(BoundaryCondition):
         magnitude: Union[Literal[C.FREED], float] = UNCHANGED,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ElectricPotentialBC object in
-        the specified step.
+        """This method modifies the propagating data for an existing ElectricPotentialBC object in the specified
+        step.
 
         Parameters
         ----------

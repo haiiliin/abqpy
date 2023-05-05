@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SingleTermDesignResponse(DesignResponse):
-    """The SingleTermDesignResponse object defines a single-term design response.
-    The SingleTermDesignResponse object is derived from the DesignResponse object.
+    """The SingleTermDesignResponse object defines a single-term design response. The SingleTermDesignResponse
+    object is derived from the DesignResponse object.
 
     .. note::
         This object can be accessed by::

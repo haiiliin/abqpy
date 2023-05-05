@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class FixedRegion(GeometricRestriction):
-    """The FixedRegion object defines a fixed region geometric restriction.
-    The FixedRegion object is derived from the GeometricRestriction object.
+    """The FixedRegion object defines a fixed region geometric restriction. The FixedRegion object is derived
+    from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

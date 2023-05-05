@@ -32,9 +32,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AssemblyBase(AssemblyFeature):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
-    constructor command. Abaqus creates the **rootAssembly** member when a Model object is
-    created.
+    """An Assembly object is a container for instances of parts. The Assembly object has no constructor command.
+    Abaqus creates the **rootAssembly** member when a Model object is created.
 
     .. note::
         This object can be accessed by::
@@ -231,15 +230,17 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def backup(self):
-        """This method makes a backup copy of the features in the assembly. The backup() method is
-        used in conjunction with the restore() method.
+        """This method makes a backup copy of the features in the assembly.
+
+        The backup() method is used in conjunction with the restore() method.
         """
         ...
 
     @abaqus_method_doc
     def clearGeometryCache(self):
-        """This method deletes the geometry cache. Deleting the geometry cache reduces the amount
-        of memory being used.
+        """This method deletes the geometry cache.
+
+        Deleting the geometry cache reduces the amount of memory being used.
         """
         ...
 
@@ -292,9 +293,8 @@ class AssemblyBase(AssemblyFeature):
         miAboutCenterOfMass: Boolean = True,
         miAboutPoint: Tuple[float, float, float] = ...,
     ):
-        """This method returns the mass properties of the assembly, or instances or regions. Only
-        beams, trusses, shells, solids, point, nonstructural mass, and rotary inertia elements
-        are supported.
+        """This method returns the mass properties of the assembly, or instances or regions. Only beams,
+        trusses, shells, solids, point, nonstructural mass, and rotary inertia elements are supported.
 
         Parameters
         ----------
@@ -486,9 +486,8 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def getFacesAndVerticesOfAttachmentLines(self, edges: EdgeArray):
-        """Given an array of edge objects, this method returns a tuple of dictionary objects. Each
-        object consists of five members including the attachment line and associated face and
-        vertex objects.
+        """Given an array of edge objects, this method returns a tuple of dictionary objects. Each object
+        consists of five members including the attachment line and associated face and vertex objects.
 
         Parameters
         ----------
@@ -514,8 +513,8 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def getSurfaceSections(self, surface: str):
-        """This method returns a list of the sections assigned to the regions encompassed by the
-        specified surface.
+        """This method returns a list of the sections assigned to the regions encompassed by the specified
+        surface.
 
         Parameters
         ----------
@@ -564,8 +563,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def importCatiaV5File(self, filename: str, ids: tuple = ()):
-        """This method imports an assembly from a CATIA V5 Elysium Neutral file into the root
-        assembly.
+        """This method imports an assembly from a CATIA V5 Elysium Neutral file into the root assembly.
 
         Parameters
         ----------
@@ -582,8 +580,8 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def importEnfFile(self, filename: str, ids: tuple = ()):
-        """This method imports an assembly from an Elysium Neutral file created by Pro/ENGINEER,
-        I-DEAS, or CATIA V5 into the root assembly.
+        """This method imports an assembly from an Elysium Neutral file created by Pro/ENGINEER, I-DEAS, or
+        CATIA V5 into the root assembly.
 
         Parameters
         ----------
@@ -600,8 +598,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def importIdeasFile(self, filename: str, ids: tuple = ()):
-        """This method imports an assembly from an I-DEAS Elysium Neutral file into the root
-        assembly.
+        """This method imports an assembly from an I-DEAS Elysium Neutral file into the root assembly.
 
         Parameters
         ----------
@@ -618,8 +615,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def importProEFile(self, filename: str, ids: tuple = ()):
-        """This method imports an assembly from a Pro/ENGINEER Elysium Neutral file into the root
-        assembly.
+        """This method imports an assembly from a Pro/ENGINEER Elysium Neutral file into the root assembly.
 
         Parameters
         ----------
@@ -636,8 +632,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def makeDependent(self, instances: Sequence[PartInstance]):
-        """This method converts the specified part instances from independent to dependent part
-        instances.
+        """This method converts the specified part instances from independent to dependent part instances.
 
         Parameters
         ----------
@@ -648,8 +643,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def makeIndependent(self, instances: Sequence[PartInstance]):
-        """This method converts the specified part instances from dependent to independent part
-        instances.
+        """This method converts the specified part instances from dependent to independent part instances.
 
         Parameters
         ----------
@@ -677,9 +671,9 @@ class AssemblyBase(AssemblyFeature):
         edges: tuple = (),
         vertices: tuple = (),
     ):
-        """This method projects the specified edges, vertices, and datum points from the assembly
-        onto the specified ConstrainedSketch object. The edges, vertices, and datum points
-        appear on the sketch as reference geometry.
+        """This method projects the specified edges, vertices, and datum points from the assembly onto the
+        specified ConstrainedSketch object. The edges, vertices, and datum points appear on the sketch as
+        reference geometry.
 
         Parameters
         ----------
@@ -706,19 +700,22 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def queryCachedStates(self):
-        """This method displays the position of geometric states relative to the sequence of
-        features in the assembly cache. The output is displayed in the message area.
+        """This method displays the position of geometric states relative to the sequence of features in the
+        assembly cache.
+
+        The output is displayed in the message area.
         """
         ...
 
     @abaqus_method_doc
     def regenerate(self):
-        """This method regenerates the assembly and brings it up to date with the latest values of
-        the assembly parameters. When you modify features of an assembly, it may be convenient
-        to postpone regeneration until you make all your changes, since regeneration can be time
-        consuming. In contrast, when you modify features of a part that is included in the
-        assembly, you should use this command to regenerate the assembly. When you regenerate
-        the assembly, it will reflect the changes that you made to the part.
+        """This method regenerates the assembly and brings it up to date with the latest values of the assembly
+        parameters.
+
+        When you modify features of an assembly, it may be convenient to postpone regeneration until you
+        make all your changes, since regeneration can be time consuming. In contrast, when you modify
+        features of a part that is included in the assembly, you should use this command to regenerate the
+        assembly. When you regenerate the assembly, it will reflect the changes that you made to the part.
         """
         ...
 
@@ -729,9 +726,10 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def restore(self):
-        """This method restores the parameters of all features in the assembly to the value they
-        had before a failed regeneration. Use the restore method after a failed regeneration,
-        followed by a regenerate command.
+        """This method restores the parameters of all features in the assembly to the value they had before a
+        failed regeneration.
+
+        Use the restore method after a failed regeneration, followed by a regenerate command.
         """
         ...
 
@@ -830,9 +828,8 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def unlinkInstances(self, instances: Sequence[PartInstance]):
-        """This method converts the specified PartInstance objects from linked child instances to
-        regular instances. The parts associated with the selected instances will be converted to
-        regular parts as well.
+        """This method converts the specified PartInstance objects from linked child instances to regular
+        instances. The parts associated with the selected instances will be converted to regular parts as well.
 
         Parameters
         ----------
@@ -843,8 +840,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: Optional[float] = None):
-        """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT)
-        format.
+        """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT) format.
 
         Parameters
         ----------
@@ -860,8 +856,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def writeCADParameters(self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""):
-        """This method writes the parameters that were imported from the CAD system to a parameter
-        file.
+        """This method writes the parameters that were imported from the CAD system to a parameter file.
 
         Parameters
         ----------
@@ -879,15 +874,18 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def lock(self):
-        """This method locks the assembly. Locking the assembly prevents any further changes to the
-        assembly that can trigger regeneration of the assembly.
+        """This method locks the assembly.
+
+        Locking the assembly prevents any further changes to the assembly that can trigger regeneration of
+        the assembly.
         """
         ...
 
     @abaqus_method_doc
     def unlock(self):
-        """This method unlocks the assembly. Unlocking the assembly allows it to be regenerated
-        after any modifications to the assembly.
+        """This method unlocks the assembly.
+
+        Unlocking the assembly allows it to be regenerated after any modifications to the assembly.
         """
         ...
 
@@ -898,10 +896,9 @@ class AssemblyBase(AssemblyFeature):
         startNodeLabel: Optional[int] = None,
         startElemLabel: Optional[int] = None,
     ):
-        """This method changes the start node and/or element labels on the specified independent
-        part instances before or after Abaqus/CAE generates the meshes. For the meshed
-        instances, Abaqus/CAE changes the node and/or element labels while preserving the
-        original order and incrementation.
+        """This method changes the start node and/or element labels on the specified independent part instances
+        before or after Abaqus/CAE generates the meshes. For the meshed instances, Abaqus/CAE changes the node
+        and/or element labels while preserving the original order and incrementation.
 
         Parameters
         ----------
@@ -924,9 +921,9 @@ class AssemblyBase(AssemblyFeature):
         nodes: Sequence[MeshNode] = (),
         coordinates: tuple = (),
     ):
-        """This method copies a mesh pattern from a source region consisting of a set of shell
-        elements or element faces onto a target face, mapping nodes and elements in a one-one
-        correspondence between source and target.
+        """This method copies a mesh pattern from a source region consisting of a set of shell elements or
+        element faces onto a target face, mapping nodes and elements in a one-one correspondence between source
+        and target.
 
         Parameters
         ----------
@@ -955,8 +952,8 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def smoothNodes(self, nodes: Sequence[MeshNode] = ()):
-        """This method smooths the given nodes of a native mesh, moving them locally to a more
-        optimal location that improves the quality of the mesh
+        """This method smooths the given nodes of a native mesh, moving them locally to a more optimal location
+        that improves the quality of the mesh.
 
         Parameters
         ----------

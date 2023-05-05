@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class SizingPointSymmetry(GeometricRestriction):
-    """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction.
-    The SizingPointSymmetry object is derived from the GeometricRestriction object.
+    """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction. The
+    SizingPointSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

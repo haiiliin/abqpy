@@ -6,8 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PolarityAssignments:
-    """The PolarityAssignments object stores the polarity assignment definition for surfaces in
-    ContactExp objects. The PolarityAssignments object has no constructor or members.
+    """The PolarityAssignments object stores the polarity assignment definition for surfaces in ContactExp
+    objects. The PolarityAssignments object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -22,8 +22,8 @@ class PolarityAssignments:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.TWO_SIDED, C.SPOS, C.SNEG]):
-        """This method allows you to modify polarity assignments already defined on surface pairs
-        in a given step.
+        """This method allows you to modify polarity assignments already defined on surface pairs in a given
+        step.
 
         Parameters
         ----------

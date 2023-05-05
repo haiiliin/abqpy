@@ -28,9 +28,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ModalDynamicsStep(AnalysisStep):
-    """The ModalDynamicsStep object is used to provide dynamic time history response as a
-    linear perturbation procedure using modal superposition.
-    The ModalDynamicsStep object is derived from the AnalysisStep object.
+    """The ModalDynamicsStep object is used to provide dynamic time history response as a linear perturbation
+    procedure using modal superposition. The ModalDynamicsStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

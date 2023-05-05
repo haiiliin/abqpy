@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class EdgeArray(List[Edge]):
-    """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
-    must be updated for that part.
+    """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray must be updated for
+    that part.
 
     .. note::
         This object can be accessed by::
@@ -61,7 +61,6 @@ class EdgeArray(List[Edge]):
         -------
         EdgeArray
             A EdgeArray object.
-
         """
         ...
 
@@ -98,18 +97,14 @@ class EdgeArray(List[Edge]):
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Edge, List[Edge]]:
-        """This method returns the object or objects in the EdgeArray located at the given
-        coordinates.
-        findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
-        that is at the arbitrary point specified or at a distance of less than 1E-6 from the
-        arbitrary point. If nothing is found, findAt uses the tolerance for imprecise geometry
-        (applicable only for imprecise geometric entities). The arbitrary point must not be
-        shared by a second edge. If two edges intersect or coincide at the arbitrary point,
-        findAt chooses the first edge that it encounters, and you should not rely on the return
-        value being consistent.
-        findAt will always try to find objects among all the edges in the part or assembly
-        instance and will not restrict itself to a subset even if the EdgeArray represents such
-        subset.
+        """This method returns the object or objects in the EdgeArray located at the given coordinates. findAt
+        initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge that is at the arbitrary
+        point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is found, findAt
+        uses the tolerance for imprecise geometry (applicable only for imprecise geometric entities). The
+        arbitrary point must not be shared by a second edge. If two edges intersect or coincide at the arbitrary
+        point, findAt chooses the first edge that it encounters, and you should not rely on the return value
+        being consistent. findAt will always try to find objects among all the edges in the part or assembly
+        instance and will not restrict itself to a subset even if the EdgeArray represents such subset.
 
         Parameters
         ----------
@@ -134,15 +129,14 @@ class EdgeArray(List[Edge]):
         -------
         Edge
             An Edge object or a sequence of Edge objects.
-
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
-        """This method returns an object or objects in the EdgeArray closest to the given set of
-        points, where the given points need not lie on the edges in the EdgeArray.
+        """This method returns an object or objects in the EdgeArray closest to the given set of points, where
+        the given points need not lie on the edges in the EdgeArray.
 
         Parameters
         ----------
@@ -184,10 +178,9 @@ class EdgeArray(List[Edge]):
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, List[Edge]]:
-        """This method returns the object or objects in the EdgeArray identified using the
-        specified **mask**. This command is generated when the JournalOptions are set to
-        COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
-        efficient.
+        """This method returns the object or objects in the EdgeArray identified using the specified **mask**.
+        This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
+        objects are involved, this method is highly efficient.
 
         Parameters
         ----------
@@ -214,7 +207,6 @@ class EdgeArray(List[Edge]):
         -------
         str
             A String specifying the object or objects.
-
         """
         ...
 
@@ -249,7 +241,6 @@ class EdgeArray(List[Edge]):
         -------
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
-
         """
         ...
 
@@ -260,8 +251,7 @@ class EdgeArray(List[Edge]):
         center2: Tuple[float, float, float],
         radius: float,
     ) -> EdgeArray:
-        """This method returns an array of edge objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of edge objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -278,7 +268,6 @@ class EdgeArray(List[Edge]):
         -------
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
-
         """
         ...
 
@@ -288,8 +277,7 @@ class EdgeArray(List[Edge]):
         center: Tuple[float, float, float],
         radius: float,
     ) -> Dict[str, Tuple[float, float, float]]:
-        """This method returns an array of edge objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of edge objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -302,14 +290,13 @@ class EdgeArray(List[Edge]):
         -------
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the edge sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the edge sequence.
 
         Returns
         -------

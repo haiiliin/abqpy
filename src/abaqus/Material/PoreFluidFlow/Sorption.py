@@ -7,8 +7,8 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Sorption:
-    r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated
-    porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
+    r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated porous medium in
+    the analysis of coupled wetting liquid flow and porous medium stress.
 
     .. note::
         This object can be accessed by::

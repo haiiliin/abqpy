@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CoriolisForce(Load):
-    """The CoriolisForce object stores the data for a coriolis force.
-    The CoriolisForce object is derived from the Load object.
+    """The CoriolisForce object stores the data for a coriolis force. The CoriolisForce object is derived from
+    the Load object.
 
     .. note::
         This object can be accessed by::
@@ -103,8 +103,7 @@ class CoriolisForce(Load):
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
-        """This method modifies the data for an existing CoriolisForce object in the step where it
-        is created.
+        """This method modifies the data for an existing CoriolisForce object in the step where it is created.
 
         Parameters
         ----------
@@ -124,8 +123,7 @@ class CoriolisForce(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing CoriolisForce object in the
-        specified step.
+        """This method modifies the propagating data for an existing CoriolisForce object in the specified step.
 
         Parameters
         ----------

@@ -21,8 +21,8 @@ if TYPE_CHECKING:  # to avoid circular imports
 
 @abaqus_class_doc
 class MdbBase:
-    """The Mdb object is the high-level Abaqus model database. A model database stores models
-    and analysis controls.
+    """The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+    controls.
 
     .. note::
         This object can be accessed by::
@@ -89,9 +89,9 @@ class MdbBase:
 
     @abaqus_method_doc
     def importDxf(self, fileName: str) -> Mdb:
-        """This method creates a ConstrainedSketch object from a file containing dxf-format
-        (AutoCAD) geometry. Only a limited number of entities are supported. This format should
-        be used only if no other formats are available.
+        """This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.
+        Only a limited number of entities are supported. This format should be used only if no other formats are
+        available.
 
         .. note::
             This function can be accessed by::
@@ -150,8 +150,9 @@ class MdbBase:
 
     @abaqus_method_doc
     def close(self):
-        """This method closes an open Mdb object but does not save the Mdb object to disk. After
-        closing the Mdb object, this method creates a new unnamed empty Mdb object.
+        """This method closes an open Mdb object but does not save the Mdb object to disk.
+
+        After closing the Mdb object, this method creates a new unnamed empty Mdb object.
         """
         ...
 
@@ -200,8 +201,8 @@ class MdbBase:
 
     @abaqus_method_doc
     def openAuxMdb(self, pathName: str):
-        """This method opens an auxiliary Mdb object on the disk at the specified location. This
-        enables models from the auxiliary Mdb object to be copied into the current Mdb.
+        """This method opens an auxiliary Mdb object on the disk at the specified location. This enables models
+        from the auxiliary Mdb object to be copied into the current Mdb.
 
         Parameters
         ----------
@@ -226,8 +227,7 @@ class MdbBase:
 
     @abaqus_method_doc
     def closeAuxMdb(self):
-        """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb
-        command.
+        """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.
 
         Parameters
         ----------
@@ -239,8 +239,8 @@ class MdbBase:
 
     @abaqus_method_doc
     def getAuxMdbModelNames(self) -> List[str]:
-        """This method returns a list of model names present in the auxiliary Mdb which had been
-        opened earlier using the openAuxMdb command.
+        """This method returns a list of model names present in the auxiliary Mdb which had been opened earlier
+        using the openAuxMdb command.
 
         Returns
         -------
@@ -257,8 +257,8 @@ class MdbBase:
 
     @abaqus_method_doc
     def copyAuxMdbModel(self, fromName: str, toName: str = ""):
-        """This method copies a specified model from the auxiliary Mdb which had been opened
-        earlier using the openAuxMdb command.
+        """This method copies a specified model from the auxiliary Mdb which had been opened earlier using the
+        openAuxMdb command.
 
         Parameters
         ----------

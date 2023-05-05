@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C, Boolean, ON
 
 @abaqus_class_doc
 class SurfaceFeatureAssignment:
-    """The SurfaceFeatureAssignment object stores the surface feature angle assignment
-    definition for surfaces in ContactExp or ContactStd objects. The
-    SurfaceFeatureAssignment object has no constructor or members.
+    """The SurfaceFeatureAssignment object stores the surface feature angle assignment definition for surfaces
+    in ContactExp or ContactStd objects. The SurfaceFeatureAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -31,8 +30,8 @@ class SurfaceFeatureAssignment:
         value: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
         useDynFeatEdge: Boolean = ON,
     ):
-        """This method allows modification of surface feature angle assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface feature angle assignments already defined on surfaces in a
+        given step.
 
         Parameters
         ----------
@@ -74,8 +73,7 @@ class SurfaceFeatureAssignment:
         assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
         useDynFeatEdge: Boolean = ON,
     ):
-        """This method allows addition of surface feature angle assignments to new surfaces in a
-        given step.
+        """This method allows addition of surface feature angle assignments to new surfaces in a given step.
 
         Parameters
         ----------
@@ -110,8 +108,8 @@ class SurfaceFeatureAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing surface feature angle assignments from a
-        ContactExp object.
+        """The delete method allows you to delete existing surface feature angle assignments from a ContactExp
+        object.
 
         Parameters
         ----------

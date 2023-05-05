@@ -55,9 +55,8 @@ class OdbPart(OdbPartBase):
 
     @abaqus_method_doc
     def NodeSet(self, name: str, nodes: Sequence[OdbMeshNode]) -> OdbSet:
-        """This method creates a node set from an array of OdbMeshNode objects (for part
-        instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
-        assembly-level sets).
+        """This method creates a node set from an array of OdbMeshNode objects (for part instance-level sets) or
+        from a sequence of arrays of OdbMeshNode objects (for assembly-level sets).
 
         .. note::
             This function can be accessed by::

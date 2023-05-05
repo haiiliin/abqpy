@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceFrictionAssignment:
-    """The SurfaceFrictionAssignment object stores the surface friction assignment definition
-    for surfaces in ContactExp objects. The SurfaceFrictionAssignment object has no
-    constructor or members.
+    """The SurfaceFrictionAssignment object stores the surface friction assignment definition for surfaces in
+    ContactExp objects. The SurfaceFrictionAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -28,8 +27,8 @@ class SurfaceFrictionAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: float):
-        """This method allows modification of surface friction assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface friction assignments already defined on surfaces in a
+        given step.
 
         Parameters
         ----------
@@ -49,8 +48,7 @@ class SurfaceFrictionAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]):
-        """This method allows addition of surface friction assignments to new surfaces in a given
-        step.
+        """This method allows addition of surface friction assignments to new surfaces in a given step.
 
         Parameters
         ----------

@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OptimizationConstraint:
-    """The OptimizationConstraint object constrains an optimization from making changes to the
-    topology of the model.
+    """The OptimizationConstraint object constrains an optimization from making changes to the topology of the
+    model.
 
     .. note::
         This object can be accessed by::

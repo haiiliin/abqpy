@@ -39,9 +39,8 @@ def getGuiPrefsFileName() -> str:
 
 @abaqus_function_doc
 def getDisplayNamesInGuiPreferences(fileName: str) -> List[str]:
-    """The abaqus_2021.gpr file stores a separate guiPreferences record for each display that
-    you use. This function returns a list of every displayName recorded in the preferences
-    file.
+    """The abaqus_2021.gpr file stores a separate guiPreferences record for each display that you use. This
+    function returns a list of every displayName recorded in the preferences file.
 
     .. note::
         This function can be accessed by::
@@ -68,8 +67,8 @@ def printValuesList(
     maxRecursionDepth: Union[int, Literal[C.UNLIMITED]] = UNLIMITED,
     asString: Boolean = False,
 ) -> str:
-    """This function enables you to print all of the options and their values for a set of
-    guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
+    """This function enables you to print all of the options and their values for a set of guiPreferences or
+    sessionOptions settings derived from the abaqus_2021.gpr file.
 
     .. note::
         This function can be accessed by::
@@ -101,9 +100,9 @@ def printValuesList(
 
 @abaqus_function_doc
 def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
-    """This function enables you to examine and change many default behaviors in the Abaqus/CAE
-    graphical user interface. Abaqus stores preferences for each display you use in a
-    separate guiPreferences section of the abaqus_2021.gpr file.
+    """This function enables you to examine and change many default behaviors in the Abaqus/CAE graphical user
+    interface. Abaqus stores preferences for each display you use in a separate guiPreferences section of the
+    abaqus_2021.gpr file.
 
     .. note::
         This function can be accessed by::
@@ -132,10 +131,10 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 @abaqus_function_doc
 def openSessionOptions(fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME) -> CaeKerPrefs:
-    """This function enables you to examine and change the default behavior for many session
-    options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
-    FileSave Display ConstrainedSketchOptions menu option. Abaqus stores default session options in the
-    sessionOptions section of the abaqus_2021.gpr file.
+    """This function enables you to examine and change the default behavior for many session options Abaqus/CAE;
+    that is, the settings that you can save in Abaqus/CAE from the FileSave Display ConstrainedSketchOptions
+    menu option. Abaqus stores default session options in the sessionOptions section of the abaqus_2021.gpr
+    file.
 
     .. note::
         This function can be accessed by::

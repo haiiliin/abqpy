@@ -9,7 +9,8 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PlasticityCorrection:
-    r"""The PlasticityCorrection object specifies the elastic-plastic response of the material with linear elasticity.
+    r"""The PlasticityCorrection object specifies the elastic-plastic response of the material with linear
+    elasticity.
 
     .. note::
         This object can be accessed by::

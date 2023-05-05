@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BeadFilter(GeometricRestriction):
-    """The BeadFilter object defines a growth geometric restriction.
-    The BeadFilter object is derived from the GeometricRestriction object.
+    """The BeadFilter object defines a growth geometric restriction. The BeadFilter object is derived from the
+    GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

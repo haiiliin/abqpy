@@ -3,8 +3,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class GapRadiation:
-    """The GapRadiation object specifies radiative heat transfer between closely adjacent
-    surfaces.
+    """The GapRadiation object specifies radiative heat transfer between closely adjacent surfaces.
 
     .. note::
         This object can be accessed by::

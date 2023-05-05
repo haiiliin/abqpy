@@ -35,10 +35,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ResponseSpectrumStep(AnalysisStep):
-    """The ResponseSpectrumStep object is used to calculate estimates of peak values of
-    displacements and stresses based on user-supplied response spectra and on the natural
-    modes of the system.
-    The ResponseSpectrumStep object is derived from the AnalysisStep object.
+    """The ResponseSpectrumStep object is used to calculate estimates of peak values of displacements and
+    stresses based on user-supplied response spectra and on the natural modes of the system. The
+    ResponseSpectrumStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

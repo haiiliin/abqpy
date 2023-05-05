@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class CoriolisForceState(LoadState):
-    """The CoriolisForceState object stores the propagating data of a coriolis force in a step.
-    One instance of this object is created internally by the CoriolisForce object for each
-    step. The instance is also deleted internally by the CoriolisForce object.
-    The CoriolisForceState object has no constructor or methods.
-    The CoriolisForceState object is derived from the LoadState object.
+    """The CoriolisForceState object stores the propagating data of a coriolis force in a step. One instance of
+    this object is created internally by the CoriolisForce object for each step. The instance is also deleted
+    internally by the CoriolisForce object. The CoriolisForceState object has no constructor or methods. The
+    CoriolisForceState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

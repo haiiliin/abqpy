@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MembraneSection(Section):
-    """The MembraneSection object defines the properties of a membrane section.
-    The MembraneSection object is derived from the Section object.
+    """The MembraneSection object defines the properties of a membrane section. The MembraneSection object is
+    derived from the Section object.
 
     .. note::
         This object can be accessed by::

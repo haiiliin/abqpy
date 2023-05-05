@@ -266,8 +266,7 @@ class ConnectorSection(SectionBase):
         independentComponents: tuple = (),
         components: tuple = (),
     ):
-        """This method creates a connector elasticity behavior option for a ConnectorSection
-        object.
+        """This method creates a connector elasticity behavior option for a ConnectorSection object.
 
         .. note::
             This function can be accessed by::
@@ -405,9 +404,8 @@ class ConnectorSection(SectionBase):
         table: tuple = (),
         independentComponents: tuple = (),
     ):
-        """This method creates a connector friction behavior option for a ConnectorSection object.
-        Depending upon the arguments provided, the friction behavior can be Coulomb-like or
-        hysteretic in nature.
+        """This method creates a connector friction behavior option for a ConnectorSection object. Depending
+        upon the arguments provided, the friction behavior can be Coulomb-like or hysteretic in nature.
 
         .. note::
             This function can be accessed by::
@@ -597,8 +595,7 @@ class ConnectorSection(SectionBase):
         kinematicTable: tuple = (),
         components: tuple = (),
     ):
-        """This method creates a connector plasticity behavior option for a ConnectorSection
-        object.
+        """This method creates a connector plasticity behavior option for a ConnectorSection object.
 
         .. note::
             This function can be accessed by::
@@ -688,8 +685,8 @@ class ConnectorSection(SectionBase):
         shiftFactor: float = 0,
         hFunction: Literal[C.MACAULEY, C.IDENTITY, C.ABS] = ABS,
     ):
-        """This method creates a connector potential object to be used in conjunction with an
-        allowable connector behavior option.
+        """This method creates a connector potential object to be used in conjunction with an allowable
+        connector behavior option.
 
         .. note::
             This function can be accessed by::

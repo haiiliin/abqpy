@@ -5,8 +5,8 @@ from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, SymbolicCons
 
 @abaqus_class_doc
 class Queue:
-    """A Queue object tells the job where and how to submit a job remotely. A Queue object can
-    be used as the **queue** argument to the Job method.
+    """A Queue object tells the job where and how to submit a job remotely. A Queue object can be used as the
+    **queue** argument to the Job method.
 
     .. note::
         This object can be accessed by::
@@ -66,8 +66,7 @@ class Queue:
         deleteAfterCopy: Boolean = OFF,
         description: str = "",
     ):
-        """This method creates a Queue object.
-        Note:Remote queues are available only on Linux platforms.
+        """This method creates a Queue object. Note:Remote queues are available only on Linux platforms.
 
         .. note::
             This function can be accessed by::

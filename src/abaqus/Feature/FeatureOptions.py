@@ -5,8 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class FeatureOptions:
-    """The FeatureOptions object stores the options that control the behavior of feature
-    regeneration for all features in a model.
+    """The FeatureOptions object stores the options that control the behavior of feature regeneration for all
+    features in a model.
 
     .. note::
         This object can be accessed by::

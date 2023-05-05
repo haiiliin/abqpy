@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ModelChange(Interaction):
-    """The ModelChange object defines model change interactions for element removal and
-    reactivation.
-    The ModelChange object is derived from the Interaction object.
+    """The ModelChange object defines model change interactions for element removal and reactivation. The
+    ModelChange object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -114,8 +113,7 @@ class ModelChange(Interaction):
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ):
-        """This method modifies the data for an existing ModelChange object in the step where it is
-        created.
+        """This method modifies the data for an existing ModelChange object in the step where it is created.
 
         Parameters
         ----------
@@ -142,8 +140,7 @@ class ModelChange(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF):
-        """This method modifies the propagating data of an existing ModelChange object in the
-        specified step.
+        """This method modifies the propagating data of an existing ModelChange object in the specified step.
 
         Parameters
         ----------

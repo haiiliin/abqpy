@@ -12,8 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
-    """The AdaptivityProcess object defines a series of jobs that will be submitted for
-    analysis. Abaqus performs adaptive remeshing between each job.
+    """The AdaptivityProcess object defines a series of jobs that will be submitted for analysis. Abaqus
+    performs adaptive remeshing between each job.
 
     .. note::
         This object can be accessed by::
@@ -126,8 +126,8 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
         localCsys: Optional[str] = None,
     ):
-        """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object
-        in the step where it is created.
+        """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object in the step
+        where it is created.
 
         Parameters
         ----------
@@ -182,8 +182,8 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing
-        DisplacementAdaptiveMeshConstraint object in the specified step.
+        """This method modifies the propagating data for an existing DisplacementAdaptiveMeshConstraint object
+        in the specified step.
 
         Parameters
         ----------

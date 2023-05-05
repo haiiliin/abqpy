@@ -5,9 +5,9 @@ from .CommandRegister import CommandRegister
 
 @abaqus_class_doc
 class RegisteredList(CommandRegister, list):
-    """This class allows you to create a list that can be queried from the GUI and is capable
-    of notifying the GUI when the contents of the list change.
-    The RegisteredList object is derived from the CommandRegister object.
+    """This class allows you to create a list that can be queried from the GUI and is capable of notifying the
+    GUI when the contents of the list change. The RegisteredList object is derived from the CommandRegister
+    object.
 
     .. note::
         This object can be accessed by::

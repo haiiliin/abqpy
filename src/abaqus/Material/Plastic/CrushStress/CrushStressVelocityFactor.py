@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class CrushStressVelocityFactor:
-    """The CrushStressVelocityFactor object defines how the approach velocity at a crushing interface
-    influences a material's resistance to crushing.
+    """The CrushStressVelocityFactor object defines how the approach velocity at a crushing interface influences
+    a material's resistance to crushing.
 
     .. note::
         This object can be accessed by::

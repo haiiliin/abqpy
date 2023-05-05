@@ -17,8 +17,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ContactTangentialBehavior:
-    """The ContactTangentialBehavior object specifies tangential behavior for a contact
-    interaction property.
+    """The ContactTangentialBehavior object specifies tangential behavior for a contact interaction property.
 
     .. note::
         This object can be accessed by::

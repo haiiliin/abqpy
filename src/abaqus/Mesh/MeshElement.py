@@ -16,10 +16,9 @@ if TYPE_CHECKING:  # to avoid circular imports
 
 @abaqus_class_doc
 class MeshElement:
-    """The MeshElement object refers to an element of a native mesh or an orphan mesh. A
-    MeshElement object can be accessed via a part or part instance using an index that
-    refers to the internal numbering of the element repository. The index does not refer to
-    the element label.
+    """The MeshElement object refers to an element of a native mesh or an orphan mesh. A MeshElement object can
+    be accessed via a part or part instance using an index that refers to the internal numbering of the element
+    repository. The index does not refer to the element label.
 
     .. note::
         This object can be accessed by::
@@ -155,9 +154,8 @@ class MeshElement:
 
     @abaqus_method_doc
     def getElementsByFeatureEdge(self, angle: float) -> MeshElementArray:
-        """This method returns an array of mesh element objects that are obtained by recursively
-        finding adjacent elements along a feature edge with a face angle of less than or equal
-        to the specified angle.
+        """This method returns an array of mesh element objects that are obtained by recursively finding
+        adjacent elements along a feature edge with a face angle of less than or equal to the specified angle.
 
         Parameters
         ----------

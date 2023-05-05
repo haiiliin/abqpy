@@ -17,7 +17,7 @@ class TieConstraint:
 
     @abaqus_method_doc
     def constraintData(self):
-        """This method returns constraint data if any are associated with the object
+        """This method returns constraint data if any are associated with the object.
 
         Returns
         -------

@@ -8,7 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class LightOptions:
-    """The LightOptions object stores settings that control how objects are lit when the
+    """The LightOptions object stores settings that control how objects are lit when the.
+
     **renderStyle** is set to SHADED. LightOptions objects are accessed in one of two ways:
     - The default light options. These settings are used as defaults when you start a
     session and by the Defaults button on the Light ConstrainedSketchOptions dialog box.

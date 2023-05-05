@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class IgnoredEdge:
-    """An IgnoredEdge object is a one-dimensional region of geometry that has been abstracted
-    away by a virtual topology feature.
+    """An IgnoredEdge object is a one-dimensional region of geometry that has been abstracted away by a virtual
+    topology feature.
 
     .. note::
         This object can be accessed by::
@@ -38,7 +38,6 @@ class IgnoredEdge:
         -------
         float
             A Float.
-
         """
         ...
 

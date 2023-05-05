@@ -19,9 +19,8 @@ from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import Constrain
 
 @abaqus_class_doc
 class RegionAssembly(RegionAssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
-    constructor command. Abaqus creates the **rootAssembly** member when a Model object is
-    created.
+    """An Assembly object is a container for instances of parts. The Assembly object has no constructor command.
+    Abaqus creates the **rootAssembly** member when a Model object is created.
 
     .. note::
         This object can be accessed by::
@@ -55,10 +54,9 @@ class RegionAssembly(RegionAssemblyBase):
         circumElements: Union[Face, Sequence[Face], None] = None,
         name: str = "",
     ) -> Surface:
-        """This method creates a surface from a sequence of objects in a model database. The
-        surface will apply to the sides specified by the arguments.For example
-        surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
-        name='Surf-1')
+        """This method creates a surface from a sequence of objects in a model database. The surface will apply
+        to the sides specified by the arguments.For example
+        surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')
 
         .. note::
             This function can be accessed by::

@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SlidingTransitionAssignment:
-    """The SlidingTransitionAssignment object stores the sliding transition assignment
-    definition for surfaces in ContactStd objects. The SlidingTransitionAssignment object
-    has no constructor or members.
+    """The SlidingTransitionAssignment object stores the sliding transition assignment definition for surfaces
+    in ContactStd objects. The SlidingTransitionAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -28,8 +27,8 @@ class SlidingTransitionAssignment:
         index: int,
         value: Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING],
     ):
-        """This method allows you to modify sliding transition assignments already defined on
-        surface pairs in a given step.
+        """This method allows you to modify sliding transition assignments already defined on surface pairs in a
+        given step.
 
         Parameters
         ----------
@@ -52,8 +51,7 @@ class SlidingTransitionAssignment:
         stepName: str,
         assignments: Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING, C.GLOBAL],
     ):
-        """This method allows you to add sliding transition assignments to new surface pairs in a
-        given step.
+        """This method allows you to add sliding transition assignments to new surface pairs in a given step.
 
         Parameters
         ----------

@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, CONSTANT, NONE, ON, UNSPEC
 
 @abaqus_class_doc
 class ConnectorSection(Section):
-    """A ConnectorSection object describes the connection type and the behavior of a connector.
-    The ConnectorSection object is derived from the Section object.
+    """A ConnectorSection object describes the connection type and the behavior of a connector. The
+    ConnectorSection object is derived from the Section object.
 
     .. note::
         This object can be accessed by::

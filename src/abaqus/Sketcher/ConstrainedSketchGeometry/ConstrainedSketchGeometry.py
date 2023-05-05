@@ -7,8 +7,8 @@ from ...UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConstrainedSketchGeometry:
-    """The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines,
-    circles, arcs, and construction lines.
+    """The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines, circles, arcs, and
+    construction lines.
 
     .. note::
         This object can be accessed by::

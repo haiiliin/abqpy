@@ -5,8 +5,8 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class GapConductance:
-    """The GapConductance object specifies conductive heat transfer between closely adjacent
-    (or contacting) surfaces.
+    """The GapConductance object specifies conductive heat transfer between closely adjacent (or contacting)
+    surfaces.
 
     .. note::
         This object can be accessed by::

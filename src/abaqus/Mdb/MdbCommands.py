@@ -21,9 +21,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
-    """
-    This method upgrades an existing Mdb object to the current release and writes the
-    upgraded version of the Mdb object to a file. In addition, Abaqus/CAE writes
+    """This method upgrades an existing Mdb object to the current release and writes the upgraded version of the
+    Mdb object to a file. In addition, Abaqus/CAE writes.
+
     information about the status of the upgrade to the log file ( upgradedMdbPath.log
     ).
 
@@ -54,9 +54,8 @@ def CombineOptResults(
     includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = FIRST,
     originalModel: str = ...,
 ) -> None:
-    """
-    This method combines the results from existing ODB files for each optimization
-    cycle and writes a merged ODB file.
+    """This method combines the results from existing ODB files for each optimization cycle and writes a merged
+    ODB file.
 
     Parameters
     ----------

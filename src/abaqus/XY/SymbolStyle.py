@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SymbolStyle:
-    """The SymbolStyle object is used to define the marker properties to be used when drawing
-    curves.
+    """The SymbolStyle object is used to define the marker properties to be used when drawing curves.
     SymbolStyle objects can be created using the methods described below.
 
     .. note::

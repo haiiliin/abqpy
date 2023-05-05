@@ -6,8 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 class InputImperfection(Imperfection):
-    """The InputImperfection object defines geometric imperfection on an assembly region.
-    The InputImperfection object is derived from the Imperfection object.
+    """The InputImperfection object defines geometric imperfection on an assembly region. The InputImperfection
+    object is derived from the Imperfection object.
 
     .. note::
         This object can be accessed by::

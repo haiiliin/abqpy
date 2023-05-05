@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class XYSessionBase(SessionBase):
-    """The following commands operate on Session objects. For more information about the
-    Session object, see Session object.
+    """The following commands operate on Session objects. For more information about the Session object, see
+    Session object.
 
     .. note::
         This object can be accessed by::
@@ -145,10 +145,9 @@ class XYSessionBase(SessionBase):
 
     @abaqus_method_doc
     def setPathTolerance(self, tolerance: float = 0.00001):
-        """This method is used to set the **tolerance** to be used when creating XYData objects by
-        extracting results along Path objects. This command should be exercised with caution
-        since setting a value too low or too high may result in getting no results or
-        unpredictable results.
+        """This method is used to set the **tolerance** to be used when creating XYData objects by extracting
+        results along Path objects. This command should be exercised with caution since setting a value too low
+        or too high may result in getting no results or unpredictable results.
 
         Parameters
         ----------
@@ -163,8 +162,8 @@ class XYSessionBase(SessionBase):
 
     @abaqus_method_doc
     def getPathTolerance(self):
-        """This method is used to get the **tolerance** used when creating XYData objects by
-        extracting results along Path objects.
+        """This method is used to get the **tolerance** used when creating XYData objects by extracting results
+        along Path objects.
 
         Returns
         -------
@@ -175,8 +174,8 @@ class XYSessionBase(SessionBase):
 
     @abaqus_method_doc
     def setLimitForXYDataPlots(self, limit: Optional[int] = None):
-        """This method is used to set the **limit** for number of XY data objects while creating
-        XYData from field output.
+        """This method is used to set the **limit** for number of XY data objects while creating XYData from
+        field output.
 
         Parameters
         ----------
@@ -192,8 +191,8 @@ class XYSessionBase(SessionBase):
 
     @abaqus_method_doc
     def getLimitForXYDataPlots(self):
-        """This method is used to get the **limit** for number of XY data objects while creating
-        XYData from field output.
+        """This method is used to get the **limit** for number of XY data objects while creating XYData from
+        field output.
 
         Returns
         -------

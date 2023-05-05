@@ -825,8 +825,7 @@ class XYSession(XYSessionBase):
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
     ) -> List[XYData]:
-        """This method creates a list of XYData objects by computing free body data from an Odb
-        object.
+        """This method creates a list of XYData objects by computing free body data from an Odb object.
 
         .. note::
             This function can be accessed by::
@@ -903,8 +902,8 @@ class XYSession(XYSessionBase):
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
     ) -> List[XYData]:
-        """This method creates a list of XYData objects by reading through the thickness field data
-        from an Odb object.
+        """This method creates a list of XYData objects by reading through the thickness field data from an Odb
+        object.
 
         .. note::
             This function can be accessed by::

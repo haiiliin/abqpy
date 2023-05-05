@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbRigidBody:
-    """The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
-    analytical surface with a reference node.
+    """The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an analytical
+    surface with a reference node.
 
     .. note::
         This object can be accessed by::

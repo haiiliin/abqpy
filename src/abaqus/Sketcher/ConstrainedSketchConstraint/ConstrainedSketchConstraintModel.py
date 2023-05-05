@@ -9,10 +9,10 @@ from ...BasicGeometry.Vertex import Vertex
 
 @abaqus_class_doc
 class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
-    objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
-    such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
-    contained in their respective repositories.
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The objects include
+    ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc,
+    and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and
+    ConstrainedSketchParameter objects are contained in their respective repositories.
 
     .. note::
         This object can be accessed by::
@@ -23,9 +23,9 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def CoincidentConstraint(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates a coincident constraint. This constraint applies to two vertices, to
-        a vertex and a ConstrainedSketchGeometry object, or to two ConstrainedSketchGeometry
-        objects of the same type and constrains them to be coincident.
+        """This method creates a coincident constraint. This constraint applies to two vertices, to a vertex and
+        a ConstrainedSketchGeometry object, or to two ConstrainedSketchGeometry objects of the same type and
+        constrains them to be coincident.
 
         .. note::
             This function can be accessed by::
@@ -48,10 +48,9 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ConcentricConstraint(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates a concentric constraint. This constraint applies to any combination
-        of circles, arcs, ellipses, and points and constrains them to be concentric. A
-        concentric constraint implies that the center of ConstrainedSketchGeometry objects
-        coincide.
+        """This method creates a concentric constraint. This constraint applies to any combination of circles,
+        arcs, ellipses, and points and constrains them to be concentric. A concentric constraint implies that
+        the center of ConstrainedSketchGeometry objects coincide.
 
         .. note::
             This function can be accessed by::
@@ -76,8 +75,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def EqualLengthConstraint(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates an equal length constraint. This constraint applies to lines and
-        constrains them such that their lengths are equal.
+        """This method creates an equal length constraint. This constraint applies to lines and constrains them
+        such that their lengths are equal.
 
         .. note::
             This function can be accessed by::
@@ -100,8 +99,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def EqualRadiusConstraint(self, entity1: ConstrainedSketchGeometry, entity2: str):
-        """This method creates an equal radius constraint. This constraint applies to circles and
-        arcs and constrains them such that their radii are equal.
+        """This method creates an equal radius constraint. This constraint applies to circles and arcs and
+        constrains them such that their radii are equal.
 
         .. note::
             This function can be accessed by::
@@ -124,9 +123,9 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def FixedConstraint(self, entity: ConstrainedSketchGeometry):
-        """This method creates a fixed constraint. This constraint applies to a
-        ConstrainedSketchGeometry object or a ConstrainedSketchVertex object and constrains them to be fixed in
-        space. Both the location and the shape of the sketch geometry is fixed.
+        """This method creates a fixed constraint. This constraint applies to a ConstrainedSketchGeometry object
+        or a ConstrainedSketchVertex object and constrains them to be fixed in space. Both the location and the
+        shape of the sketch geometry is fixed.
 
         .. note::
             This function can be accessed by::
@@ -148,8 +147,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def HorizontalConstraint(self, entity: ConstrainedSketchGeometry):
-        """This method creates a horizontal constraint. This constraint applies to a line and
-        constrains it to be horizontal.
+        """This method creates a horizontal constraint. This constraint applies to a line and constrains it to
+        be horizontal.
 
         .. note::
             This function can be accessed by::
@@ -170,8 +169,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def VerticalConstraint(self, entity: ConstrainedSketchGeometry):
-        """This method creates a vertical constraint. This constraint applies to a line and
-        constrains it to be vertical.
+        """This method creates a vertical constraint. This constraint applies to a line and constrains it to be
+        vertical.
 
         .. note::
             This function can be accessed by::
@@ -192,8 +191,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ParallelConstraint(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates a parallel constraint. This constraint applies to lines and
-        constrains them to be parallel.
+        """This method creates a parallel constraint. This constraint applies to lines and constrains them to be
+        parallel.
 
         .. note::
             This function can be accessed by::
@@ -216,9 +215,8 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def PerpendicularConstraint(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates a perpendicular constraint. This constraint applies to different
-        types of ConstrainedSketchGeometry objects and constrains them to be perpendicular to
-        each other.
+        """This method creates a perpendicular constraint. This constraint applies to different types of
+        ConstrainedSketchGeometry objects and constrains them to be perpendicular to each other.
 
         .. note::
             This function can be accessed by::
@@ -241,11 +239,10 @@ class ConstrainedSketchConstraintModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def EqualDistanceConstraint(self, entity1: str, entity2: ConstrainedSketchGeometry, midpoint: Vertex):
-        """This method creates an equal distance constraint. This constraint can be applied between
-        a midpoint ConstrainedSketchVertex object and any other two ConstrainedSketchVertex objects or between a
-        midpoint ConstrainedSketchVertex
-        object and two ConstrainedSketchGeometry objects that are lines. The equal distance
-        constraint forces the midpoint vertex to remain at an equal distance from the two other
+        """This method creates an equal distance constraint. This constraint can be applied between a midpoint
+        ConstrainedSketchVertex object and any other two ConstrainedSketchVertex objects or between a midpoint
+        ConstrainedSketchVertex object and two ConstrainedSketchGeometry objects that are lines. The equal
+        distance constraint forces the midpoint vertex to remain at an equal distance from the two other
         vertices or lines.
 
         .. note::
