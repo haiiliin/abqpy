@@ -38,14 +38,14 @@ class PressurePenetration(Interaction):
     #: fluid.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `masterPoints` was renamed to `mainPoints`.
+    #:     The attribute ``masterPoints`` was renamed to ``mainPoints``.
     mainPoints: RegionArray = []
 
     #: A RegionArray object specifying the points on the secondary surface that are exposed to
     #: the fluid.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `slavePoints` was renamed to `secondaryPoints`.
+    #:     The attribute ``slavePoints`` was renamed to ``secondaryPoints``.
     secondaryPoints: RegionArray = []
 
     @abaqus_method_doc
@@ -82,13 +82,13 @@ class PressurePenetration(Interaction):
             fluid.
 
             .. versionchanged:: 2022
-                The argument `masterPoints` was renamed to `mainPoints`.
+                The argument ``masterPoints`` was renamed to ``mainPoints``.
         secondaryPoints
             A RegionArray object specifying the points on the secondary surface that are exposed to
             the fluid.
 
             .. versionchanged:: 2022
-                The argument `slavePoints` was renamed to `secondaryPoints`.
+                The argument ``slavePoints`` was renamed to ``secondaryPoints``.
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
             analyses, a tuple of Complexes specifying the fluid pressure magnitude.

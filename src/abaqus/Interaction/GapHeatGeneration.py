@@ -25,7 +25,7 @@ class GapHeatGeneration:
     #: The default value is 0.5.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `slaveFraction` was renamed to `secondaryFraction`.
+    #:     The attribute ``slaveFraction`` was renamed to ``secondaryFraction``.
     secondaryFraction: float = 0
 
     @abaqus_method_doc
@@ -47,7 +47,7 @@ class GapHeatGeneration:
             The default value is 0.5.
 
             .. versionchanged:: 2022
-                The argument `slaveFraction` was renamed to `secondaryFraction`.
+                The argument ``slaveFraction`` was renamed to ``secondaryFraction``.
 
         Returns
         -------

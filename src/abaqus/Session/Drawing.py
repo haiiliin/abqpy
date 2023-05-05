@@ -430,7 +430,7 @@ class Drawing:
             it.
 
             .. versionadded:: 2018
-                The `depthTest` argument was added.
+                The ``depthTest`` argument was added.
 
         Raises
         ------

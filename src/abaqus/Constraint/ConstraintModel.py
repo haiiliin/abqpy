@@ -147,7 +147,7 @@ class ConstraintModel(ModelBase):
             The alpha argument applies only when couplingType=KINEMATIC.
 
             .. versionadded:: 2022
-                The `alpha` argument was added.
+                The ``alpha`` argument was added.
 
         Returns
         -------
@@ -495,12 +495,12 @@ class ConstraintModel(ModelBase):
             A String specifying the constraint repository key.
 
             .. versionchanged:: 2022
-                The `master` argument was renamed to `main`.
+                The ``master`` argument was renamed to ``main``.
         main
             A Region object specifying the name of the main surface.
 
             .. versionchanged:: 2022
-                The `slave` argument was renamed to `secondary`.
+                The ``slave`` argument was renamed to ``secondary``.
         secondary
             A Region object specifying the name of the secondary surface.
         adjust

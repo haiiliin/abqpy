@@ -23,7 +23,7 @@ class TableCollectionAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
 
     .. versionadded:: 2020
-        The `TableCollectionAssembly` class was added.
+        The ``TableCollectionAssembly`` class was added.
     """
 
     elementProgressiveActivations: Dict[str, ElementProgressiveActivation] = {}

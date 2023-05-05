@@ -26,7 +26,7 @@ class SectionLayer:
         - SHELL GENERAL SECTION
 
     .. versionchanged:: 2017
-        The `thicknessType` attribute and `thicknessField` attribute were removed.
+        The ``thicknessType`` attribute and ``thicknessField`` attribute were removed.
     """
 
     #: A Float specifying the thickness of the section layer.
@@ -97,7 +97,7 @@ class SectionLayer:
                 odbSection.SectionLayer
 
         .. versionchanged:: 2017
-            The `thicknessType` argument and `thicknessField` argument were removed.
+            The ``thicknessType`` argument and ``thicknessField`` argument were removed.
 
         Parameters
         ----------

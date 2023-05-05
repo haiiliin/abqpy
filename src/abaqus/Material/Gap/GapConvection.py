@@ -31,7 +31,7 @@ class GapConvection:
         - GAP CONVECTION
 
     .. versionadded:: 2021
-        The `GapConvection` class was added.
+        The ``GapConvection`` class was added.
     """
 
     @abaqus_method_doc

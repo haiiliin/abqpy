@@ -18,7 +18,7 @@ class SurfaceBeamSmoothingAssignment:
         - SURFACE PROPERTY ASSIGNMENT
 
     .. versionadded:: 2021
-        The `SurfaceBeamSmoothingAssignment` class was added.
+        The ``SurfaceBeamSmoothingAssignment`` class was added.
     """
 
     @abaqus_method_doc

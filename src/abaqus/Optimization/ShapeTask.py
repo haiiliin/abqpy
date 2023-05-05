@@ -62,7 +62,7 @@ class ShapeTask(OptimizationTask):
     #: sensitivities. The default value is False.
     #:
     #: .. versionadded:: 2019
-    #:     The `abaqusSensitivities` attribute was added.
+    #:     The ``abaqusSensitivities`` attribute was added.
     abaqusSensitivities: Boolean = False
 
     #: A SymbolicConstant specifying whether to control the permitted absolute step size by the
@@ -250,7 +250,7 @@ class ShapeTask(OptimizationTask):
     #: value of False means that the existing algorithm will be used.
     #:
     #: .. versionadded:: 2022
-    #:     The `groupSensitivities` attribute was added.
+    #:     The ``groupSensitivities`` attribute was added.
     groupOperator: Boolean = OFF
 
     @abaqus_method_doc
@@ -318,7 +318,7 @@ class ShapeTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -463,7 +463,7 @@ class ShapeTask(OptimizationTask):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------
@@ -530,7 +530,7 @@ class ShapeTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         absoluteStepSizeControl
             A SymbolicConstant specifying whether to control the permitted absolute step size by the
             average optimization displacement or minimum optimization displacement. Possible values
@@ -679,6 +679,6 @@ class ShapeTask(OptimizationTask):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
         """
         ...

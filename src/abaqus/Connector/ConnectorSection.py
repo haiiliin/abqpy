@@ -206,7 +206,7 @@ class ConnectorSection(SectionBase):
             VISCOUS and STRUCTURAL. The default value is VISCOUS.
 
             .. versionadded:: 2022
-                The `type` argument was added.
+                The ``type`` argument was added.
         behavior
             A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
             values are LINEAR and NONLINEAR. The default value is LINEAR.

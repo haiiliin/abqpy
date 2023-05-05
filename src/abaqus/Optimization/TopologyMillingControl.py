@@ -22,7 +22,7 @@ class TopologyMillingControl(GeometricRestriction):
             mdb.models[name].optimizationTasks[name].geometricRestrictions[name]
 
     .. versionadded:: 2022
-        The `TopologyMillingControl` class was added.
+        The ``TopologyMillingControl`` class was added.
     """
 
     #: A String specifying the geometric restriction repository key.

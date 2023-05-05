@@ -25,7 +25,7 @@ class ExpInitialization(ContactInitialization):
         - CONTACT INITIALIZATION DATA
 
     .. versionadded:: 2020
-        The `ExpInitialization` class was added.
+        The ``ExpInitialization`` class was added.
     """
 
     #: A String specifying the contact initialization repository key.
@@ -66,7 +66,7 @@ class ExpInitialization(ContactInitialization):
     #: specified. The default value is None.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`.
+    #:     The attribute ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
     secondaryNodesetName: Optional[str] = None
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
@@ -128,7 +128,7 @@ class ExpInitialization(ContactInitialization):
             specified. The default value is None.
 
             .. versionchanged:: 2022
-                The argument `slaveNodesetName` was renamed to `secondaryNodesetName`.
+                The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -191,7 +191,7 @@ class ExpInitialization(ContactInitialization):
             specified. The default value is None.
 
             .. versionchanged:: 2022
-                The argument `slaveNodesetName` was renamed to `secondaryNodesetName`.
+                The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only

@@ -24,7 +24,7 @@ class ParameterTable:
         - PARAMETER TABLE
 
     .. versionadded:: 2020
-        The `ParameterTable` class was added.
+        The ``ParameterTable`` class was added.
     """
 
     #: A ParameterColumnArray specifying all the columns in the ParameterTable.

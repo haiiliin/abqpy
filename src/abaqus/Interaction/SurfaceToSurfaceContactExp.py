@@ -33,13 +33,13 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: A Region object specifying the main surface.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `master` was renamed to `main`.
+    #:     The attribute ``master`` was renamed to ``main``.
     main: Region
 
     #: A Region object specifying the secondary surface.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `slave` was renamed to `secondary`.
+    #:     The attribute ``slave`` was renamed to ``secondary``.
     secondary: Region
 
     #: A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
@@ -138,12 +138,12 @@ class SurfaceToSurfaceContactExp(Interaction):
             A Region object specifying the main surface.
 
             .. versionchanged:: 2022
-                The argument `master` was renamed to `main`.
+                The argument ``master`` was renamed to ``main``.
         secondary
             A Region object specifying the secondary surface.
 
             .. versionchanged:: 2022
-                The argument `slave` was renamed to `secondary`.
+                The argument ``slave`` was renamed to ``secondary``.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
