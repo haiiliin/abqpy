@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3224,8 +3224,8 @@ msgstr ""
 #: abaqus.Region.Set.Set.SetFromNodeLabels:24 of
 msgid ""
 "A Boolean specifying whether the created set is unsorted. The default "
-"value is False.  .. versionadded:: 2018     The `unsorted` argument was "
-"added."
+"value is False.  .. versionadded:: 2018     The ``unsorted`` argument was"
+" added."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:24
@@ -3237,7 +3237,7 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:26
 #: abaqus.Region.Set.Set.SetFromNodeLabels:26 of
-msgid "The `unsorted` argument was added."
+msgid "The ``unsorted`` argument was added."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Skin:1 abaqus.Region.Skin.Skin:16 of
@@ -3541,7 +3541,7 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:101
 #: abaqus.Region.RegionPart.RegionPart.Surface:102
 #: abaqus.Region.Surface.Surface.SurfaceByBoolean:21
-#: abaqus.Region.Surface.Surface.SurfaceFromElsets:20 of
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:24 of
 msgid ":class:`Surface`"
 msgstr ""
 
@@ -4488,7 +4488,7 @@ msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:100
 #: abaqus.Region.Surface.Surface.SurfaceByBoolean:20
-#: abaqus.Region.Surface.Surface.SurfaceFromElsets:19 of
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:23 of
 msgid "A Surface object."
 msgstr ""
 
@@ -4825,10 +4825,14 @@ msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceFromElsets:15 of
 msgid ""
-"A sequence of element sets. For example,`elementSetSeq=((elset1, "
-"S1),(elset2, S2))`where "
-"`elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` "
-"indicate the side of the element set."
+"A sequence of element sets. For example::      elementSetSeq=((elset1, "
+"S1),(elset2, S2))      where "
+"``elset1=mdb.models[name].rootAssembly.sets['Clutch']``     and ``S1`` "
+"and ``S2`` indicate the side of the element set."
+msgstr ""
+
+#: abaqus.Region.Surface.Surface.SurfaceFromElsets:16 of
+msgid "A sequence of element sets. For example::"
 msgstr ""
 
 #: ../../docstring abaqus.Region.Surface.Surface.instances:1 of
@@ -8550,5 +8554,23 @@ msgstr ""
 #~ "Check `Stringer.__init__ on help.3ds.com/2021 "
 #~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerpyc.htm?contextscope=all"
 #~ "#simaker-stringer__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the created"
+#~ " set is unsorted. The default value"
+#~ " is False.  .. versionadded:: 2018     "
+#~ "The `unsorted` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `unsorted` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of element sets. For "
+#~ "example,`elementSetSeq=((elset1, S1),(elset2, S2))`where"
+#~ " `elset1=mdb.models[name].rootAssembly.sets['Clutch']` and"
+#~ " `S1` and `S2` indicate the side "
+#~ "of the element set."
 #~ msgstr ""
 
