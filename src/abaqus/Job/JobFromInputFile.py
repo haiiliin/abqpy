@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class JobFromInputFile(Job):
-    """The JobFromInputFile object defines a Job object which analyzes a model contained in an
-    input file.
-    The JobFromInputFile object is derived from the Job object.
+    """The JobFromInputFile object defines a Job object which analyzes a model contained in an input file. The
+    JobFromInputFile object is derived from the Job object.
 
     .. note::
         This object can be accessed by::

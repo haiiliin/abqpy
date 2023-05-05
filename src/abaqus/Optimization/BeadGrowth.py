@@ -6,8 +6,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class BeadGrowth(GeometricRestriction):
-    """The BeadGrowth object defines a growth geometric restriction.
-    The BeadGrowth object is derived from the GeometricRestriction object.
+    """The BeadGrowth object defines a growth geometric restriction. The BeadGrowth object is derived from the
+    GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

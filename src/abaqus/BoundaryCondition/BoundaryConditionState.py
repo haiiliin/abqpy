@@ -7,10 +7,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BoundaryConditionState:
-    """The BoundaryConditionState object is the abstract base type for other
-    BoundaryConditionState objects. The BoundaryConditionState object has no explicit
-    constructor or methods. The members of the BoundaryConditionState object are common to
-    all objects derived from the BoundaryConditionState object.
+    """The BoundaryConditionState object is the abstract base type for other BoundaryConditionState objects. The
+    BoundaryConditionState object has no explicit constructor or methods. The members of the
+    BoundaryConditionState object are common to all objects derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

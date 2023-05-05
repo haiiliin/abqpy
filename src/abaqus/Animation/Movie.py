@@ -10,8 +10,8 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class Movie(_OptionsBase):
-    """The Movie object is used to store values and attributes associated with a movie file.
-    Upon creation, the Movie object is added to the session.movies repository.
+    """The Movie object is used to store values and attributes associated with a movie file. Upon creation, the
+    Movie object is added to the session.movies repository.
 
     .. note::
         This object can be accessed by::

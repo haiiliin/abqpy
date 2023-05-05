@@ -23,9 +23,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorFriction(ConnectorBehaviorOption):
-    """The ConnectorFriction object defines Coulomb-like or hysteretic friction behavior for
-    one or more components of a connector's relative motion.
-    The ConnectorFriction object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorFriction object defines Coulomb-like or hysteretic friction behavior for one or more
+    components of a connector's relative motion. The ConnectorFriction object is derived from the
+    ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::
@@ -175,9 +175,8 @@ class ConnectorFriction(ConnectorBehaviorOption):
         table: tuple = (),
         independentComponents: tuple = (),
     ):
-        """This method creates a connector friction behavior option for a ConnectorSection object.
-        Depending upon the arguments provided, the friction behavior can be Coulomb-like or
-        hysteretic in nature.
+        """This method creates a connector friction behavior option for a ConnectorSection object. Depending
+        upon the arguments provided, the friction behavior can be Coulomb-like or hysteretic in nature.
 
         .. note::
             This function can be accessed by::

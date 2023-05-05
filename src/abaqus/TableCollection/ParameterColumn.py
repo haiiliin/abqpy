@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ParameterColumn:
-    """The ParameterColumn object is used to define the type of parameters that will
-    collectively build the type of parameter table. Once the object is created, it is
-    noneditable.
+    """The ParameterColumn object is used to define the type of parameters that will collectively build the type
+    of parameter table. Once the object is created, it is noneditable.
 
     .. note::
         This object can be accessed by::
@@ -51,9 +50,8 @@ class ParameterColumn:
         default: str = "",
         allowedValues: str = "",
     ):
-        """ParameterColumn is a constructor method that creates a ParameterColumn object and stores
-        it in the array data structure. It is accessible from the ParameterTable object using a
-        column member.
+        """ParameterColumn is a constructor method that creates a ParameterColumn object and stores it in the
+        array data structure. It is accessible from the ParameterTable object using a column member.
 
         .. note::
             This function can be accessed by::

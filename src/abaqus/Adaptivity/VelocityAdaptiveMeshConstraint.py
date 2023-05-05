@@ -21,10 +21,9 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
-    """The VelocityAdaptiveMeshConstraint object stores the data for an Arbitrary Lagrangian
-    Eularian (ALE) style velocity adaptive mesh constraint.
-    The VelocityAdaptiveMeshConstraint object is derived from the AdaptiveMeshConstraint
-    object.
+    """The VelocityAdaptiveMeshConstraint object stores the data for an Arbitrary Lagrangian Eularian (ALE)
+    style velocity adaptive mesh constraint. The VelocityAdaptiveMeshConstraint object is derived from the
+    AdaptiveMeshConstraint object.
 
     .. note::
         This object can be accessed by::
@@ -137,8 +136,8 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         localCsys: Optional[DatumCsys] = None,
         motionType: Literal[INDEPENDENT, FOLLOW, USER_DEFINED] = INDEPENDENT,
     ):
-        """This method modifies the data for an existing VelocityAdaptiveMeshConstraint object in
-        the step where it is created.
+        """This method modifies the data for an existing VelocityAdaptiveMeshConstraint object in the step where
+        it is created.
 
         Parameters
         ----------
@@ -193,8 +192,8 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         vr3: Union[float, Literal[SET, UNSET]] = ...,
         amplitude: Union[str, Literal[UNCHANGED, FREED]] = ...,
     ):
-        """This method modifies the propagating data for an existing VelocityAdaptiveMeshConstraint
-        object in the specified step.
+        """This method modifies the propagating data for an existing VelocityAdaptiveMeshConstraint object in
+        the specified step.
 
         Parameters
         ----------

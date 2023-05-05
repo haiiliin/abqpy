@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class TopologyPointSymmetry(GeometricRestriction):
-    """The TopologyPointSymmetry object defines a topology point symmetry geometric
-    restriction.
-    The TopologyPointSymmetry object is derived from the GeometricRestriction object.
+    """The TopologyPointSymmetry object defines a topology point symmetry geometric restriction. The
+    TopologyPointSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

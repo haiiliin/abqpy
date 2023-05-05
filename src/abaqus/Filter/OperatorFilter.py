@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OperatorFilter(Filter):
-    """The OperatorFilter object defines an operator filter.
-    The OperatorFilter object is derived from the Filter object.
+    """The OperatorFilter object defines an operator filter. The OperatorFilter object is derived from the
+    Filter object.
 
     .. note::
         This object can be accessed by::

@@ -7,9 +7,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class XYReportOptions:
-    """The XYReportOptions object stores settings used by the writeXYReport method when you
-    write an XYData object to an ASCII file. The XYReportOptions object has no constructor.
-    Abaqus creates the **xyReportOptions** member when you import the Visualization module.
+    """The XYReportOptions object stores settings used by the writeXYReport method when you write an XYData
+    object to an ASCII file. The XYReportOptions object has no constructor. Abaqus creates the
+    **xyReportOptions** member when you import the Visualization module.
 
     .. note::
         This object can be accessed by::

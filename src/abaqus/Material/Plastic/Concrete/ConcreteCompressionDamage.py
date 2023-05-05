@@ -5,8 +5,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ConcreteCompressionDamage:
-    r"""The ConcreteCompressionDamage object specifies hardening for the concrete damaged
-    plasticity model.
+    r"""The ConcreteCompressionDamage object specifies hardening for the concrete damaged plasticity model.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Fastener:
-    """The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and
-    AssembledFastener.
+    """The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and AssembledFastener.
 
     .. note::
         This object can be accessed by::

@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class LineLoadState(LoadState):
-    """The LineLoadState object stores the propagating data of a line load in a step. One
-    instance of this object is created internally by the LineLoad object for each step. The
-    instance is also deleted internally by the LineLoad object.
-    The LineLoadState object has no constructor or methods.
-    The LineLoadState object is derived from the LoadState object.
+    """The LineLoadState object stores the propagating data of a line load in a step. One instance of this
+    object is created internally by the LineLoad object for each step. The instance is also deleted internally
+    by the LineLoad object. The LineLoadState object has no constructor or methods. The LineLoadState object is
+    derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

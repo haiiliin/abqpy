@@ -307,8 +307,8 @@ class ModelBase:
 
     @abaqus_method_doc
     def ModelFromInputFile(self, name: str, inputFileName: str):
-        """This method creates a Model object by reading the keywords in an input file and creating
-        the corresponding Abaqus/CAE objects.
+        """This method creates a Model object by reading the keywords in an input file and creating the
+        corresponding Abaqus/CAE objects.
 
         .. note::
             This function can be accessed by::
@@ -333,8 +333,8 @@ class ModelBase:
 
     @abaqus_method_doc
     def ModelFromOdbFile(self, name: str, odbFileName: str):
-        """This method creates a Model object by reading an output database and creating any
-        corresponding Abaqus/CAE objects.
+        """This method creates a Model object by reading an output database and creating any corresponding
+        Abaqus/CAE objects.
 
         .. note::
             This function can be accessed by::
@@ -373,11 +373,10 @@ class ModelBase:
         ctetra: str = C3D10,
         keepTranslatedFiles: Boolean = ON,
     ):
-        """This method creates a Model object by reading the keywords in a Nastran bulk data file
-        or Nastran input file and creating any corresponding Abaqus/CAE objects. The default
-        values is discussed in following and can be defined alternatively in the Abaqus
-        environment file as the one used for the translator from Nastran to Abaqus. For more
-        information, see Translating Nastran data to Abaqus files.
+        """This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran
+        input file and creating any corresponding Abaqus/CAE objects. The default values is discussed in
+        following and can be defined alternatively in the Abaqus environment file as the one used for the
+        translator from Nastran to Abaqus. For more information, see Translating Nastran data to Abaqus files.
 
         .. note::
             This function can be accessed by::

@@ -113,8 +113,8 @@ class OdbDiagnosticStep:
 
     @abaqus_method_doc
     def extractData(self, incrementStatistics: str):
-        """This method creates a temporary XYData object, with increments on the x-axis and
-        requested output on the y-axis.
+        """This method creates a temporary XYData object, with increments on the x-axis and requested output on
+        the y-axis.
 
         Parameters
         ----------

@@ -5,9 +5,9 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class Annotation:
-    """The Annotation object is the abstract base type for other Annotation objects. The
-    Annotation object has no explicit constructor. The methods and members of the Annotation
-    object are common to all objects derived from Annotation.
+    """The Annotation object is the abstract base type for other Annotation objects. The Annotation object has
+    no explicit constructor. The methods and members of the Annotation object are common to all objects derived
+    from Annotation.
 
     .. note::
         This object can be accessed by::

@@ -9,11 +9,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AdaptiveMeshConstraintState:
-    """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
-    Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects. The
-    AdaptiveMeshConstraintState object has no explicit constructor or methods. The members
-    of the AdaptiveMeshConstraintState object are common to all objects derived from the
-    AdaptiveMeshConstraintState object.
+    """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian Eularian
+    (ALE) style AdaptiveMeshConstraintState objects. The AdaptiveMeshConstraintState object has no explicit
+    constructor or methods. The members of the AdaptiveMeshConstraintState object are common to all objects
+    derived from the AdaptiveMeshConstraintState object.
 
     .. note::
         This object can be accessed by::
@@ -69,11 +68,10 @@ class AdaptiveMeshConstraintState:
         ] = None,
         amplitude: str = "",
     ):
-        """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
-        Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects. The
-        AdaptiveMeshConstraintState object has no explicit constructor or methods. The members
-        of the AdaptiveMeshConstraintState object are common to all objects derived from the
-        AdaptiveMeshConstraintState object.
+        """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
+        Eularian (ALE) style AdaptiveMeshConstraintState objects. The AdaptiveMeshConstraintState object has no
+        explicit constructor or methods. The members of the AdaptiveMeshConstraintState object are common to all
+        objects derived from the AdaptiveMeshConstraintState object.
 
         .. note::
             This function can be accessed by::

@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON, SymbolicConstant
 
 @abaqus_class_doc
 class SubmodelBC(BoundaryCondition):
-    """The SubmodelBC object stores the data for a submodel boundary condition.
-    The SubmodelBC object is derived from the BoundaryCondition object.
+    """The SubmodelBC object stores the data for a submodel boundary condition. The SubmodelBC object is derived
+    from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -141,8 +141,7 @@ class SubmodelBC(BoundaryCondition):
         globalIncrement: int = 0,
         centerZoneSize: Optional[float] = None,
     ):
-        """This method modifies the data for an existing SubmodelBC object in the step where it is
-        created.
+        """This method modifies the data for an existing SubmodelBC object in the step where it is created.
 
         Parameters
         ----------
@@ -182,8 +181,7 @@ class SubmodelBC(BoundaryCondition):
         globalIncrement: int = 0,
         centerZoneSize: Optional[float] = None,
     ):
-        """This method modifies the propagating data for an existing SubmodelBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing SubmodelBC object in the specified step.
 
         Parameters
         ----------

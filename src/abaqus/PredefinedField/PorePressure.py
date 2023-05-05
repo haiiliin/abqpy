@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PorePressure(PredefinedField):
-    """The PorePressure object stores the data for an initial pore pressure predefined field.
-    The PorePressure object is derived from the PredefinedField object.
+    """The PorePressure object stores the data for an initial pore pressure predefined field. The PorePressure
+    object is derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

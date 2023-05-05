@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class DisplayGroupInstanceRepository:
-    """The DisplayGroupInstanceRepository object stores DisplayGroupInstance objects. In
-    addition to all the standard Python repository methods, the DisplayGroupInstance
-    repository defines additional methods as described below.
+    """The DisplayGroupInstanceRepository object stores DisplayGroupInstance objects. In addition to all the
+    standard Python repository methods, the DisplayGroupInstance repository defines additional methods as
+    described below.
 
     .. note::
         This object can be accessed by::
@@ -19,8 +19,8 @@ class DisplayGroupInstanceRepository:
 
     @abaqus_method_doc
     def syncOptions(self, name: str, updateInstances: Boolean = ON):
-        """This method synchronizes the display options stored on the OdbDisplay object with the
-        display options stored on the DisplayGroupInstance object.
+        """This method synchronizes the display options stored on the OdbDisplay object with the display options
+        stored on the DisplayGroupInstance object.
 
         Parameters
         ----------

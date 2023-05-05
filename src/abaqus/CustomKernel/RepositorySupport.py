@@ -7,10 +7,9 @@ from .CommandRegister import CommandRegister
 
 @abaqus_class_doc
 class RepositorySupport(CommandRegister):
-    """The class from which you can derive your own classes that
-    are designed to contain custom repositories. Instances of this class can be queried from
-    the GUI and are capable of notifying the GUI when the contents of the instance change.
-    The RepositorySupport object is derived from the CommandRegister object.
+    """The class from which you can derive your own classes that are designed to contain custom repositories.
+    Instances of this class can be queried from the GUI and are capable of notifying the GUI when the contents
+    of the instance change. The RepositorySupport object is derived from the CommandRegister object.
 
     .. note::
         This object can be accessed by::
@@ -40,10 +39,9 @@ class RepositorySupport(CommandRegister):
     @abaqus_method_doc
     def Repository(self, name: str, constructors: Union[Callable, List[Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
-        RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods.
-        The objects stored in the repository are assumed to have an attribute called **name** that
-        stores the key used to access the object in the repository. The name attribute will be
-        modified by the changeKey method.
+        RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored
+        in the repository are assumed to have an attribute called **name** that stores the key used to access
+        the object in the repository. The name attribute will be modified by the changeKey method.
 
         Parameters
         ----------

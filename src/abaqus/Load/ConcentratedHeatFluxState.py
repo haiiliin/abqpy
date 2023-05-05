@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcentratedHeatFluxState(LoadState):
-    """The ConcentratedHeatFluxState object stores the propagating data of a concentrated heat
-    flux load in a step. One instance of this object is created internally by the
-    ConcentratedHeatFlux object for each step. The instance is also deleted internally by
-    the ConcentratedHeatFlux object.
-    The ConcentratedHeatFluxState object has no constructor or methods.
-    The ConcentratedHeatFluxState object is derived from the LoadState object.
+    """The ConcentratedHeatFluxState object stores the propagating data of a concentrated heat flux load in a
+    step. One instance of this object is created internally by the ConcentratedHeatFlux object for each step.
+    The instance is also deleted internally by the ConcentratedHeatFlux object. The ConcentratedHeatFluxState
+    object has no constructor or methods. The ConcentratedHeatFluxState object is derived from the LoadState
+    object.
 
     .. note::
         This object can be accessed by::

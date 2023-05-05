@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class VelocityBC(BoundaryCondition):
-    """The VelocityBC object stores the data for a velocity boundary condition.
-    The VelocityBC object is derived from the BoundaryCondition object.
+    """The VelocityBC object stores the data for a velocity boundary condition. The VelocityBC object is derived
+    from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -138,8 +138,7 @@ class VelocityBC(BoundaryCondition):
         localCsys: Optional[str] = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
-        """This method modifies the data for an existing VelocityBC object in the step where it is
-        created.
+        """This method modifies the data for an existing VelocityBC object in the step where it is created.
 
         Parameters
         ----------
@@ -197,8 +196,7 @@ class VelocityBC(BoundaryCondition):
         vr3: Union[Literal[C.SET, C.FREED], float] = SET,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing VelocityBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing VelocityBC object in the specified step.
 
         Parameters
         ----------

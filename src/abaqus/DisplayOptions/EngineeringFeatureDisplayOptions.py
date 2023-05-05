@@ -5,11 +5,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class EngineeringFeatureDisplayOptions:
-    """The EngineeringFeatureDisplayOptions object stores settings that specify how assemblies
-    are to be displayed in a particular viewport when
-    session.viewports[name].assemblyDisplay.engineeringFeatures=ON
-    The EngineeringFeatureDisplayOptions object has no constructor. When you create a new
-    viewport, the settings are copied from the current viewport.
+    """The EngineeringFeatureDisplayOptions object stores settings that specify how assemblies are to be
+    displayed in a particular viewport when session.viewports[name].assemblyDisplay.engineeringFeatures=ON The
+    EngineeringFeatureDisplayOptions object has no constructor. When you create a new viewport, the settings are
+    copied from the current viewport.
 
     .. note::
         This object can be accessed by::

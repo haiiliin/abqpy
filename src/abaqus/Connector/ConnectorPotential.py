@@ -8,13 +8,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorPotential:
-    """The ConnectorPotential object is used to define a restricted set of mathematical
-    functions to represent yield or limiting surfaces in the space spanned by connector
-    available components. It can be used only in conjunction with ConnectorDamage,
-    ConnectorFriction, and ConnectorPlasticity objects. Because the ConnectorDamage object
-    contains two separate ConnectorPotential repositories (one for damage initiation and one
-    for damage evolution), there are two ConnectorPotential constructors associated with
-    that behavior—IniPotential and EvoPotential.
+    """The ConnectorPotential object is used to define a restricted set of mathematical functions to represent
+    yield or limiting surfaces in the space spanned by connector available components. It can be used only in
+    conjunction with ConnectorDamage, ConnectorFriction, and ConnectorPlasticity objects. Because the
+    ConnectorDamage object contains two separate ConnectorPotential repositories (one for damage initiation and
+    one for damage evolution), there are two ConnectorPotential constructors associated with that
+    behavior—IniPotential and EvoPotential.
 
     .. note::
         This object can be accessed by::
@@ -81,8 +80,8 @@ class ConnectorPotential:
         shiftFactor: float = 0,
         hFunction: Literal[C.MACAULEY, C.IDENTITY, C.ABS] = ABS,
     ):
-        """This method creates a connector potential object to be used in conjunction with an
-        allowable connector behavior option.
+        """This method creates a connector potential object to be used in conjunction with an allowable
+        connector behavior option.
 
         .. note::
             This function can be accessed by::

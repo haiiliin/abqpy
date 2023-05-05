@@ -5,9 +5,8 @@ from .Interaction import Interaction
 
 @abaqus_class_doc
 class FluidInflator(Interaction):
-    """The FluidInflator object is used to define a fluid inflator to model deployment of an
-    airbag.
-    The FluidInflator object is derived from the Interaction object.
+    """The FluidInflator object is used to define a fluid inflator to model deployment of an airbag. The
+    FluidInflator object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

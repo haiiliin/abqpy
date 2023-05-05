@@ -5,10 +5,9 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class GeometricRestriction:
-    """The GeometricRestriction object is the abstract base type for other GeometricRestriction
-    objects. The GeometricRestriction object has no explicit constructor. The methods and
-    members of the GeometricRestriction object are common to all objects derived from
-    GeometricRestriction.
+    """The GeometricRestriction object is the abstract base type for other GeometricRestriction objects. The
+    GeometricRestriction object has no explicit constructor. The methods and members of the GeometricRestriction
+    object are common to all objects derived from GeometricRestriction.
 
     .. note::
         This object can be accessed by::

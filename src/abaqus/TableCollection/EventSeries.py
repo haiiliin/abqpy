@@ -5,10 +5,8 @@ from ..UtilityAndView.abaqusConstants import NONE, STEP_TIME
 
 @abaqus_class_doc
 class EventSeries:
-    """The EventSeries object is used to define an event based on an already defined
-    EventSeriesType object.
-    After EventSeries is instantiated, making changes to EventSeriesType may lead to data
-    corruption.
+    """The EventSeries object is used to define an event based on an already defined EventSeriesType object.
+    After EventSeries is instantiated, making changes to EventSeriesType may lead to data corruption.
 
     .. note::
         This object can be accessed by::

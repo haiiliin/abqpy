@@ -14,9 +14,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshEditAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
-    constructor command. Abaqus creates the **rootAssembly** member when a Model object is
-    created.
+    """An Assembly object is a container for instances of parts. The Assembly object has no constructor command.
+    Abaqus creates the **rootAssembly** member when a Model object is created.
 
     .. note::
         This object can be accessed by::
@@ -27,8 +26,7 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def collapseMeshEdge(self, edge: str, collapseMethod: Literal[C.FORWARD, C.REVERSE, C.AVERAGE]):
-        """This method collapses an edge of a quadrilateral or triangular element of a part
-        instance.
+        """This method collapses an edge of a quadrilateral or triangular element of a part instance.
 
         Parameters
         ----------
@@ -53,8 +51,8 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deleteElement(self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF):
-        """This method deletes the given elements from a part instance. The elements must have been
-        generated using the bottom-up meshing technique.
+        """This method deletes the given elements from a part instance. The elements must have been generated
+        using the bottom-up meshing technique.
 
         Parameters
         ----------
@@ -68,8 +66,8 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def projectNode(self, nodes: Sequence[MeshNode], projectionReference: str):
-        """This method projects the given nodes of a part instance onto a mesh entity, geometric
-        entity, or a datum object.
+        """This method projects the given nodes of a part instance onto a mesh entity, geometric entity, or a
+        datum object.
 
         Parameters
         ----------
@@ -149,8 +147,8 @@ class MeshEditAssembly(AssemblyBase):
         tolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
-        """Merge the nodes of a part instance. The nodes must have been generated using the
-        bottom-up meshing technique.
+        """Merge the nodes of a part instance. The nodes must have been generated using the bottom-up meshing
+        technique.
 
         Parameters
         ----------
@@ -169,8 +167,8 @@ class MeshEditAssembly(AssemblyBase):
     @overload
     @abaqus_method_doc
     def mergeNodes(self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True):
-        """Merge two nodes of a part instance. At least one of the two nodes must have been
-        generated using the bottom-up meshing technique.
+        """Merge two nodes of a part instance. At least one of the two nodes must have been generated using the
+        bottom-up meshing technique.
 
         Parameters
         ----------
@@ -239,8 +237,8 @@ class MeshEditAssembly(AssemblyBase):
         constantThicknessCorners: Boolean = False,
         extendElementSets: Boolean = False,
     ):
-        """This method generates a solid or shell mesh from an orphan mesh surface by generating
-        layers of elements that propagate out normal to the surface boundary.
+        """This method generates a solid or shell mesh from an orphan mesh surface by generating layers of
+        elements that propagate out normal to the surface boundary.
 
         Parameters
         ----------
@@ -280,21 +278,23 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def redoMeshEdit(self):
-        """This method executes the edit mesh or the bottom-up meshing operation most recently
-        undone by the undoMeshEdit method on an assembly. A redo action must be currently
-        available for the assembly. This implies that the user must have executed the
-        undoMeshEdit method on the assembly and that the user has not subsequently executed any
-        further edit mesh commands on the assembly. It also implies that the user provided a
-        sufficient cache allowance to store the undo operation.
+        """This method executes the edit mesh or the bottom-up meshing operation most recently undone by the
+        undoMeshEdit method on an assembly.
+
+        A redo action must be currently available for the assembly. This implies that the user must have
+        executed the undoMeshEdit method on the assembly and that the user has not subsequently executed any
+        further edit mesh commands on the assembly. It also implies that the user provided a sufficient
+        cache allowance to store the undo operation.
         """
         ...
 
     @abaqus_method_doc
     def undoMeshEdit(self):
-        """This method undoes the most recent edit mesh or the bottom-up meshing operation on an
-        assembly and restores the mesh on the affected part instance to its previous state. An
-        edit mesh undo action must be available for the assembly. This implies that prior to
-        executing an edit mesh command on the assembly, the user enabled edit mesh undo with a
-        sufficient cache allowance to store the edit mesh operation.
+        """This method undoes the most recent edit mesh or the bottom-up meshing operation on an assembly and
+        restores the mesh on the affected part instance to its previous state.
+
+        An edit mesh undo action must be available for the assembly. This implies that prior to executing an
+        edit mesh command on the assembly, the user enabled edit mesh undo with a sufficient cache allowance
+        to store the edit mesh operation.
         """
         ...

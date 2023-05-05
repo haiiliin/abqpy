@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class AcousticPressureBCState(BoundaryConditionState):
-    """The AcousticPressureBCState object stores the propagating data for an acoustic pressure
-    boundary condition in a step. One instance of this object is created internally by the
-    AcousticPressureBC object for each step. The instance is also deleted internally by the
-    AcousticPressureBC object.
-    The AcousticPressureBCState object has no constructor or methods.
-    The AcousticPressureBCState object is derived from the BoundaryConditionState object.
+    """The AcousticPressureBCState object stores the propagating data for an acoustic pressure boundary
+    condition in a step. One instance of this object is created internally by the AcousticPressureBC object for
+    each step. The instance is also deleted internally by the AcousticPressureBC object. The
+    AcousticPressureBCState object has no constructor or methods. The AcousticPressureBCState object is derived
+    from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TwoPointSpringDashpot(SpringDashpot):
-    """The TwoPointSpringDashpot object defines springs and/or dashpots between two points on a
-    part or an assembly.
-    The TwoPointSpringDashpot object is derived from the SpringDashpot object.
+    """The TwoPointSpringDashpot object defines springs and/or dashpots between two points on a part or an
+    assembly. The TwoPointSpringDashpot object is derived from the SpringDashpot object.
 
     .. note::
         This object can be accessed by::

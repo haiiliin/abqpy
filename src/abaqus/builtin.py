@@ -6,9 +6,8 @@ def execfile(
     globals: Optional[Dict[str, Any]] = None,
     locals: Optional[Dict[str, Any]] = None,
 ) -> None:
-    """Read and execute a Python script from a file.
-    The globals and locals are dictionaries, defaulting to the current
-    globals and locals.  If only globals is given, locals defaults to it.
+    """Read and execute a Python script from a file. The globals and locals are dictionaries, defaulting to the
+    current globals and locals.  If only globals is given, locals defaults to it.
 
     Parameters
     ----------
@@ -42,10 +41,9 @@ def execPyFile(
 
 
 def raw_input(prompt: str = "") -> str:
-    """Read a string from standard input.  The trailing newline is stripped.
-    If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
-    On Unix, GNU readline is used if enabled.  The prompt string, if given,
-    is printed without a trailing newline before reading.
+    """Read a string from standard input.  The trailing newline is stripped. If the user hits EOF (Unix: Ctl-D,
+    Windows: Ctl-Z+Return), raise EOFError. On Unix, GNU readline is used if enabled.  The prompt string, if
+    given, is printed without a trailing newline before reading.
 
     Parameters
     ----------
@@ -61,7 +59,7 @@ def raw_input(prompt: str = "") -> str:
 
 
 def cliCommand(text: str) -> None:
-    """Excutes Abaqus/CAE CLI command
+    """Excutes Abaqus/CAE CLI command.
 
     called from cmdK_CommandDeliveryRole::sendCliCommand
 

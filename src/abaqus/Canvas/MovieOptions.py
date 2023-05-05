@@ -10,12 +10,11 @@ from .._OptionsBase import _CopyOptionsBase
 
 @abaqus_class_doc
 class MovieOptions(_CopyOptionsBase):
-    """The MovieOptions object stores settings that control how the movie background for an
-    animation is rendered in a particular viewport. MovieOptions objects are accessed from
-    the movie options associated with a particular viewport.
-    The MovieOptions object has no constructor; Abaqus creates the **movieOptions** member for
-    a viewport when the viewport is created using the values in the **movieOptions** member of
-    the current viewport.
+    """The MovieOptions object stores settings that control how the movie background for an animation is
+    rendered in a particular viewport. MovieOptions objects are accessed from the movie options associated with
+    a particular viewport. The MovieOptions object has no constructor; Abaqus creates the **movieOptions**
+    member for a viewport when the viewport is created using the values in the **movieOptions** member of the
+    current viewport.
 
     .. note::
         This object can be accessed by::

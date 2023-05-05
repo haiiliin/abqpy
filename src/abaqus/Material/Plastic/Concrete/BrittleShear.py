@@ -7,8 +7,8 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BrittleShear:
-    """The BrittleShear object specifies the postcracking shear behavior of a material used in
-    a brittle cracking model.
+    """The BrittleShear object specifies the postcracking shear behavior of a material used in a brittle
+    cracking model.
 
     .. note::
         This object can be accessed by::

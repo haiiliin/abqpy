@@ -7,8 +7,8 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GasketTransverseShearElastic:
-    """The GasketTransverseShearElastic object defines the elastic parameters for the
-    transverse shear behavior of a gasket.
+    """The GasketTransverseShearElastic object defines the elastic parameters for the transverse shear behavior
+    of a gasket.
 
     .. note::
         This object can be accessed by::

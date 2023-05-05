@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcentratedHeatFlux(Load):
-    """The ConcentratedHeatFlux object stores the data for a concentrated heat flux load.
-    The ConcentratedHeatFlux object is derived from the Load object.
+    """The ConcentratedHeatFlux object stores the data for a concentrated heat flux load. The
+    ConcentratedHeatFlux object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -100,8 +100,8 @@ class ConcentratedHeatFlux(Load):
         amplitude: str = UNSET,
         dof: int = 11,
     ):
-        """This method modifies the data for an existing ConcentratedHeatFlux object in the step
-        where it is created.
+        """This method modifies the data for an existing ConcentratedHeatFlux object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -124,8 +124,8 @@ class ConcentratedHeatFlux(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing ConcentratedHeatFlux object in
-        the specified step.
+        """This method modifies the propagating data for an existing ConcentratedHeatFlux object in the
+        specified step.
 
         Parameters
         ----------

@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class DisplacementBCState(BoundaryConditionState):
-    """The DisplacementBCState object stores the propagating data for a displacement/rotation
-    boundary condition in a step. One instance of this object is created internally by the
-    DisplacementBC object for each step. The instance is also deleted internally by the
-    DisplacementBC object.
-    The DisplacementBCState object has no constructor or methods.
-    The DisplacementBCState object is derived from the BoundaryConditionState object.
+    """The DisplacementBCState object stores the propagating data for a displacement/rotation boundary condition
+    in a step. One instance of this object is created internally by the DisplacementBC object for each step. The
+    instance is also deleted internally by the DisplacementBC object. The DisplacementBCState object has no
+    constructor or methods. The DisplacementBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

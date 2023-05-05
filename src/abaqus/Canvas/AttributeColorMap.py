@@ -8,11 +8,10 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class AttributeColorMap(_OptionsBase):
-    """The AttributeColorMap object is used to store values and attributes associated with
-    AttributeColorMap type objects. AttributeColorMap objects can be modified using the
-    methods described below. The methods accessed via the Viewport object cause the
-    AttributeColorMap object to be updated in the session.viewports[name].colorMappings
-    repository.
+    """The AttributeColorMap object is used to store values and attributes associated with AttributeColorMap
+    type objects. AttributeColorMap objects can be modified using the methods described below. The methods
+    accessed via the Viewport object cause the AttributeColorMap object to be updated in the
+    session.viewports[name].colorMappings repository.
 
     .. note::
         This object can be accessed by::

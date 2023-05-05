@@ -9,8 +9,9 @@ from .._OptionsBase import _OptionsBase
 @abaqus_class_doc
 class PngOptions(_OptionsBase):
     """The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
-    The PngOptions object has no constructor. Abaqus creates the **pngOptions** member when a
-    session is started.
+
+    The PngOptions object has no constructor. Abaqus creates the **pngOptions** member when a session is
+    started.
     """
 
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of

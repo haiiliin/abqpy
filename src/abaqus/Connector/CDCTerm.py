@@ -163,7 +163,8 @@ class CDCTerm:
 
         Raises
         ------
-        ValueError and TextError"""
+        ValueError and TextError
+        """
         ...
 
     @abaqus_method_doc
@@ -189,8 +190,8 @@ class CDCTerm:
         useBehExtSettings: Boolean = ON,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ) -> ConnectorOptions:
-        """This method creates a connector options object to be used in conjunction with an
-        allowable connector behavior option, derived component term, or connector section.
+        """This method creates a connector options object to be used in conjunction with an allowable connector
+        behavior option, derived component term, or connector section.
 
         .. note::
             This function can be accessed by::
@@ -253,7 +254,8 @@ class CDCTerm:
 
         Raises
         ------
-        ValueError and TextError"""
+        ValueError and TextError
+        """
         self.options = connectorOptions = ConnectorOptions(
             useBehRegSettings,
             regularize,

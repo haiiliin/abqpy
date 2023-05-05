@@ -7,11 +7,11 @@ from .ContactProperty import ContactProperty
 
 @abaqus_class_doc
 class FluidInflatorProperty(ContactProperty):
-    """The FluidInflatorProperty object is an interaction property that defines a fluid
-    inflator property to model the deployment of an airbag. The inflator property defines
-    the mass flow rate and temperature as a function of inflation time either directly or by
-    entering tank test data. It also defines the mixture of gases entering the fluid cavity.
-    The FluidInflatorProperty object is derived from the InteractionProperty object.
+    """The FluidInflatorProperty object is an interaction property that defines a fluid inflator property to
+    model the deployment of an airbag. The inflator property defines the mass flow rate and temperature as a
+    function of inflation time either directly or by entering tank test data. It also defines the mixture of
+    gases entering the fluid cavity. The FluidInflatorProperty object is derived from the InteractionProperty
+    object.
 
     .. note::
         This object can be accessed by::

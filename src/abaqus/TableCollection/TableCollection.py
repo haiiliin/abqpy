@@ -9,8 +9,8 @@ from ..TableCollection.PropertyTable import PropertyTable
 
 @abaqus_class_doc
 class TableCollection:
-    """A TableCollection is an object used to define the containers that encapsulate the
-    ParameterTable and PropertyTable objects.
+    """A TableCollection is an object used to define the containers that encapsulate the ParameterTable and
+    PropertyTable objects.
 
     .. note::
         This object can be accessed by::
@@ -36,8 +36,7 @@ class TableCollection:
 
     @abaqus_method_doc
     def __init__(self, name: str):
-        """This method creates a TableCollection object and places it in the tableCollections
-        repository.
+        """This method creates a TableCollection object and places it in the tableCollections repository.
 
         .. note::
             This function can be accessed by::
@@ -85,8 +84,7 @@ class TableCollection:
 
     @abaqus_method_doc
     def ParameterTable(self, name: str) -> ParameterTable:
-        """This method creates a ParameterTable object and places it in the parameterTables
-        repository.
+        """This method creates a ParameterTable object and places it in the parameterTables repository.
 
         .. note::
             This function can be accessed by::

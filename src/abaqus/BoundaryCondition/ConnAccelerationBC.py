@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnAccelerationBC(BoundaryCondition):
-    """The ConnAccelerationBC object stores the data for a connector acceleration boundary
-    condition.
-    The ConnAccelerationBC object is derived from the BoundaryCondition object.
+    """The ConnAccelerationBC object stores the data for a connector acceleration boundary condition. The
+    ConnAccelerationBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -70,9 +69,8 @@ class ConnAccelerationBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
-        """This method creates an ConnAccelerationBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates an ConnAccelerationBC object on a wire region. Alternatively, the boundary
+        condition may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -154,8 +152,8 @@ class ConnAccelerationBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
-        """This method modifies the data for an existing ConnAccelerationBC object in the step
-        where it is created.
+        """This method modifies the data for an existing ConnAccelerationBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -220,8 +218,8 @@ class ConnAccelerationBC(BoundaryCondition):
         ar3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ConnAccelerationBC object in
-        the specified step.
+        """This method modifies the propagating data for an existing ConnAccelerationBC object in the specified
+        step.
 
         Parameters
         ----------

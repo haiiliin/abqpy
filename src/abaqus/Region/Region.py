@@ -13,25 +13,20 @@ from ..Mesh.MeshNode import MeshNode as Node
 
 @abaqus_class_doc
 class Region:
-    """The purpose of the Region object is to provide a link between an attribute and the
-    geometric or discrete entities to which the attribute is applied. An attribute (Load,
-    BC, IC, etc.) is applied to one or more Region objects; each Region object in turn is
-    associated with a picked Set or Surface or with a named Set or Surface. The Region
-    object provides a unified interface (or "façade") to data and functionality located at
-    the Set or Surface.
-    A script that applies an attribute to a picked Set or Surface requires the explicit
-    creation of a Region object and will implicitly create a matching internal Set or
-    Surface. Conversely, a script that applies an attribute to a named Set or Surface
-    requires the explicit creation of that Set or Surface (see 39.4) and will implicitly
-    create a region object.
-    The reference between Region and Set/Surface is by name (user-provided or internal.) If
-    the Set/Surface is suppressed, deleted, or renamed, the Region object will not be able
-    to find the associated Set/Surface, and will communicate that to the attribute, but will
-    not be affected otherwise. If a Set/Surface with the same name becomes available (only
-    possible with user-provided names) the Region object will re-establish the connection.
-    Another way of correcting this problem is to re-apply the attribute.
-    Wherever a particular Load, BC, IC, etc. command accepts a named set or a named surface,
-    that command will also accept a Region object. For example::
+    """The purpose of the Region object is to provide a link between an attribute and the geometric or discrete
+    entities to which the attribute is applied. An attribute (Load, BC, IC, etc.) is applied to one or more
+    Region objects; each Region object in turn is associated with a picked Set or Surface or with a named Set or
+    Surface. The Region object provides a unified interface (or "façade") to data and functionality located at
+    the Set or Surface. A script that applies an attribute to a picked Set or Surface requires the explicit
+    creation of a Region object and will implicitly create a matching internal Set or Surface. Conversely, a
+    script that applies an attribute to a named Set or Surface requires the explicit creation of that Set or
+    Surface (see 39.4) and will implicitly create a region object. The reference between Region and Set/Surface
+    is by name (user-provided or internal.) If the Set/Surface is suppressed, deleted, or renamed, the Region
+    object will not be able to find the associated Set/Surface, and will communicate that to the attribute, but
+    will not be affected otherwise. If a Set/Surface with the same name becomes available (only possible with
+    user-provided names) the Region object will re-establish the connection. Another way of correcting this
+    problem is to re-apply the attribute. Wherever a particular Load, BC, IC, etc. command accepts a named set
+    or a named surface, that command will also accept a Region object. For example::
 
         myRegion = regionToolset.Region(edges=edges1)
         mdb.models['Model-1'].DisplacementBC(name='BC-1'

@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class RandomResponseFrequency:
-    """A RandomResponseFrequency is an object used to define frequency over a range of modes.
-    This page discusses:
+    """A RandomResponseFrequency is an object used to define frequency over a range of modes. This page
+    discusses:
 
     .. note::
         This object can be accessed by::

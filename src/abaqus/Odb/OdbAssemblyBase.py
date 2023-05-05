@@ -20,9 +20,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbAssemblyBase:
-    """The OdbAssembly object has no constructor; it is created automatically when an Odb
-    object is created. Abaqus creates the **rootAssembly** member when an Odb object is
-    created.
+    """The OdbAssembly object has no constructor; it is created automatically when an Odb object is created.
+    Abaqus creates the **rootAssembly** member when an Odb object is created.
 
     .. note::
         This object can be accessed by::
@@ -115,8 +114,8 @@ class OdbAssemblyBase:
 
     @abaqus_method_doc
     def SectionAssignment(self, region: str, section: Section):
-        """This method is used to assign a section on an assembly or part. Section assignment on
-        the assembly is limited to the connector elements only.
+        """This method is used to assign a section on an assembly or part. Section assignment on the assembly is
+        limited to the connector elements only.
 
         Parameters
         ----------
@@ -142,12 +141,10 @@ class OdbAssemblyBase:
         elementSetName: str = "",
         sectionCategory: Optional[SectionCategory] = None,
     ):
-        """This method is used to define elements using nodes defined at the OdbAssembly and/or
-        OdbInstance level. For connector elements connected to ground, specify the lone node in
-        the connectivity. The position of the ground node cannot be specified. This is a
-        limitation.
-        Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer
-        to plot contours incorrectly.
+        """This method is used to define elements using nodes defined at the OdbAssembly and/or OdbInstance
+        level. For connector elements connected to ground, specify the lone node in the connectivity. The
+        position of the ground node cannot be specified. This is a limitation. Warning:Adding elements not in
+        ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
 
         Parameters
         ----------
@@ -178,9 +175,8 @@ class OdbAssemblyBase:
 
     @abaqus_method_doc
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: Optional[str] = None):
-        """This method adds nodes to the OdbAssembly object using node labels and coordinates.
-        Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
-        plot contours incorrectly.
+        """This method adds nodes to the OdbAssembly object using node labels and coordinates. Warning:Adding
+        nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
 
         Parameters
         ----------

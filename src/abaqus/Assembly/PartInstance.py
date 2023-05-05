@@ -112,7 +112,7 @@ class PartInstance:
 
     #: A repository of MeshFace objects specifying all the element faces in the part instance.
     #: For a given element and a given face index within that element, the corresponding
-    #: MeshFace object can be retrieved from the repository by using the key calculated as 
+    #: MeshFace object can be retrieved from the repository by using the key calculated as
     # (i*8 + j), where i and j are zero-based element and face indices, respectively.
     elemFaces: Dict[str, MeshFace] = {}
 
@@ -188,8 +188,8 @@ class PartInstance:
         cuttingInstances: Sequence["PartInstance"],
         originalInstances: Literal[C.SUPPRESS, C.DELETE] = SUPPRESS,
     ):
-        """This method creates a PartInstance in the instances repository after subtracting or
-        cutting the geometries of a group of part instances from that of a base part instance.
+        """This method creates a PartInstance in the instances repository after subtracting or cutting the
+        geometries of a group of part instances from that of a base part instance.
 
         .. note::
             This function can be accessed by::
@@ -229,8 +229,8 @@ class PartInstance:
         nodeMergingTolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
-        """This method creates a PartInstance in the instances repository after merging two or more
-        part instances.
+        """This method creates a PartInstance in the instances repository after merging two or more part
+        instances.
 
         .. note::
             This function can be accessed by::
@@ -286,8 +286,8 @@ class PartInstance:
         direction1: tuple = (),
         direction2: tuple = (),
     ) -> Sequence["PartInstance"]:
-        """This method creates multiple PartInstance objects in a linear pattern and puts them into
-        the instances repository.
+        """This method creates multiple PartInstance objects in a linear pattern and puts them into the
+        instances repository.
 
         .. note::
             This function can be accessed by::
@@ -333,8 +333,8 @@ class PartInstance:
         point: Sequence[float] = (),
         axis: Sequence[float] = (),
     ):
-        """This method creates multiple PartInstance objects in a radial pattern and puts them into
-        the instances repository.
+        """This method creates multiple PartInstance objects in a radial pattern and puts them into the
+        instances repository.
 
         .. note::
             This function can be accessed by::
@@ -370,8 +370,8 @@ class PartInstance:
 
     @abaqus_method_doc
     def checkGeometry(self, detailed: Boolean = OFF, level: Optional[int] = None):
-        """This method checks the validity of the geometry of the part instance and prints a count
-        of all topological entities on the part instance (faces, edges, vertices, etc.).
+        """This method checks the validity of the geometry of the part instance and prints a count of all
+        topological entities on the part instance (faces, edges, vertices, etc.).
 
         Parameters
         ----------
@@ -403,8 +403,8 @@ class PartInstance:
         clearance: float,
         isFaceEdges: Boolean = OFF,
     ):
-        """This method translates an instance along the specified direction until it is in contact
-        with a fixed instance.
+        """This method translates an instance along the specified direction until it is in contact with a fixed
+        instance.
 
         Parameters
         ----------
@@ -431,23 +431,21 @@ class PartInstance:
 
     @abaqus_method_doc
     def ConvertConstraints(self):
-        """This method converts the position constraints of an instance to absolute positions. The
-        method deletes the constraint features on the instance but preserves the position in
-        space.
+        """This method converts the position constraints of an instance to absolute positions.
+
+        The method deletes the constraint features on the instance but preserves the position in space.
         """
         ...
 
     @abaqus_method_doc
     def getPosition(self):
-        """This method prints the sum of the translations and rotations applied to the PartInstance
-        object.
-        """
+        """This method prints the sum of the translations and rotations applied to the PartInstance object."""
         ...
 
     @abaqus_method_doc
     def getRotation(self):
-        """This method returns a tuple including the point of rotation, axis of rotation, and
-        rotation angle (in degrees).
+        """This method returns a tuple including the point of rotation, axis of rotation, and rotation angle (in
+        degrees).
 
         Returns
         -------
@@ -459,8 +457,8 @@ class PartInstance:
 
     @abaqus_method_doc
     def getTranslation(self) -> Tuple[float, float, float]:
-        """This method returns a tuple of three Floats representing translation in the **X**, **Y**,
-        and **Z** directions.
+        """This method returns a tuple of three Floats representing translation in the **X**, **Y**, and **Z**
+        directions.
 
         Returns
         -------
@@ -522,8 +520,8 @@ class PartInstance:
         clearance: float,
         vector: tuple = (),
     ):
-        """This method translates an instance along the specified direction until it is in contact
-        with a fixed instance.
+        """This method translates an instance along the specified direction until it is in contact with a fixed
+        instance.
 
         Parameters
         ----------

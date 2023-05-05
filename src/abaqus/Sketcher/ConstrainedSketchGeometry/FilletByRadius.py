@@ -16,8 +16,8 @@ class FilletByRadius(ConstrainedSketchGeometry):
         curve2: "ConstrainedSketchGeometry",
         nearPoint2: Sequence[float],
     ):
-        """This method constructs a fillet arc of a given radius between two curves. The fillet is
-        added to the geometry repository of the ConstrainedSketch object.
+        """This method constructs a fillet arc of a given radius between two curves. The fillet is added to the
+        geometry repository of the ConstrainedSketch object.
 
         .. note::
             This function can be accessed by::

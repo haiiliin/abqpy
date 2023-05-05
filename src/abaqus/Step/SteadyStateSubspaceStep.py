@@ -35,10 +35,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SteadyStateSubspaceStep(AnalysisStep):
-    """The SteadyStateSubspaceStep object is used to calculate the linearized steady-state
-    response of the system to harmonic excitation on the basis of the subspace projection
-    method.
-    The SteadyStateSubspaceStep object is derived from the AnalysisStep object.
+    """The SteadyStateSubspaceStep object is used to calculate the linearized steady-state response of the
+    system to harmonic excitation on the basis of the subspace projection method. The SteadyStateSubspaceStep
+    object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Gravity(Load):
-    """The Gravity object stores the data of a gravity load.
-    The Gravity object is derived from the Load object.
+    """The Gravity object stores the data of a gravity load. The Gravity object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -102,8 +101,7 @@ class Gravity(Load):
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing Gravity object in the step where it is
-        created.
+        """This method modifies the data for an existing Gravity object in the step where it is created.
 
         Parameters
         ----------
@@ -140,8 +138,7 @@ class Gravity(Load):
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing Gravity object in the
-        specified step.
+        """This method modifies the propagating data for an existing Gravity object in the specified step.
 
         Parameters
         ----------

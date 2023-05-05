@@ -15,9 +15,9 @@ if TYPE_CHECKING:  # to avoid circular imports
 
 @abaqus_class_doc
 class MeshNode:
-    """The MeshNode object refers to a node of a native mesh or an orphan mesh. A MeshNode
-    object can be accessed via a part or part instance using an index that refers to the
-    internal numbering of the node repository. The index does not refer to the node label.
+    """The MeshNode object refers to a node of a native mesh or an orphan mesh. A MeshNode object can be
+    accessed via a part or part instance using an index that refers to the internal numbering of the node
+    repository. The index does not refer to the node label.
 
     .. note::
         This object can be accessed by::
@@ -125,9 +125,8 @@ class MeshNode:
 
     @abaqus_method_doc
     def getNodesByFeatureEdge(self, angle: float) -> MeshNodeArray:
-        """This method returns an array of mesh node objects that are obtained by recursively
-        finding adjacent nodes along a feature edge that are at an angle of less than or equal
-        to the specified face angle.
+        """This method returns an array of mesh node objects that are obtained by recursively finding adjacent
+        nodes along a feature edge that are at an angle of less than or equal to the specified face angle.
 
         Parameters
         ----------

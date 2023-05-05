@@ -13,8 +13,8 @@ from ..UtilityAndView.abaqusConstants import BENDING, Boolean, DEFAULT, GRADIENT
 
 @abaqus_class_doc
 class CompositeShellSection(GeometryShellSection):
-    """The CompositeShellSection object defines the properties of a composite shell section.
-    The CompositeShellSection object is derived from the GeometryShellSection object.
+    """The CompositeShellSection object defines the properties of a composite shell section. The
+    CompositeShellSection object is derived from the GeometryShellSection object.
 
     .. note::
         This object can be accessed by::

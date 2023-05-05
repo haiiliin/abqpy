@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorElasticity(ConnectorBehaviorOption):
-    """The ConnectorElasticity object defines elastic behavior for one or more components of a
-    connector's relative motion.
-    The ConnectorElasticity object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorElasticity object defines elastic behavior for one or more components of a connector's
+    relative motion. The ConnectorElasticity object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::
@@ -129,8 +128,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         independentComponents: tuple = (),
         components: tuple = (),
     ):
-        """This method creates a connector elasticity behavior option for a ConnectorSection
-        object.
+        """This method creates a connector elasticity behavior option for a ConnectorSection object.
 
         .. note::
             This function can be accessed by::

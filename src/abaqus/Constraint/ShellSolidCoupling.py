@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShellSolidCoupling(Constraint):
-    """The ShellSolidCoupling object defines two surfaces to be tied together for the duration
-    of a simulation.
+    """The ShellSolidCoupling object defines two surfaces to be tied together for the duration of a simulation.
     The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object.
 
     .. note::

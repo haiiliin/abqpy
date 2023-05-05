@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import CORRELATED, STEP, SymbolicConstant
 
 @abaqus_class_doc
 class Correlation(Amplitude):
-    """A Correlation is an object used to define the cross-correlation as part of the
-    definition of random loading.
-    The Correlation object is derived from the Amplitude object.
+    """A Correlation is an object used to define the cross-correlation as part of the definition of random
+    loading. The Correlation object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

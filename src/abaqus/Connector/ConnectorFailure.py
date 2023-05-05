@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorFailure(ConnectorBehaviorOption):
-    """The ConnectorFailure object defines failure criteria for one or more components of a
-    connector's relative motion.
-    The ConnectorFailure object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorFailure object defines failure criteria for one or more components of a connector's relative
+    motion. The ConnectorFailure object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::

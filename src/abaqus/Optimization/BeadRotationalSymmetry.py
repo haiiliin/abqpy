@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BeadRotationalSymmetry(GeometricRestriction):
-    """The BeadRotationalSymmetry object defines a bead rotational symmetry geometric
-    restriction.
-    The BeadRotationalSymmetry object is derived from the GeometricRestriction object.
+    """The BeadRotationalSymmetry object defines a bead rotational symmetry geometric restriction. The
+    BeadRotationalSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FluidExchange(Interaction):
-    """The FluidExchange object is used to define fluid exchange between two fluid cavities or
-    between a fluid cavity and its environment.
-    The FluidExchange object is derived from the Interaction object.
+    """The FluidExchange object is used to define fluid exchange between two fluid cavities or between a fluid
+    cavity and its environment. The FluidExchange object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

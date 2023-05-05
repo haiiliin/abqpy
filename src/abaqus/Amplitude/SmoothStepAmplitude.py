@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SmoothStepAmplitude(Amplitude):
-    """The SmoothStepAmplitude object defines an amplitude that ramps up or down smoothly from
-    one data point to another.
-    The SmoothStepAmplitude object is derived from the Amplitude object.
+    """The SmoothStepAmplitude object defines an amplitude that ramps up or down smoothly from one data point to
+    another. The SmoothStepAmplitude object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

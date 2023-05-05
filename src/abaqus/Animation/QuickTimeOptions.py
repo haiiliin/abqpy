@@ -10,9 +10,9 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class QuickTimeOptions(_OptionsBase):
-    """The QuickTimeOptions object is used to store values and attributes to be used in
-    generating QuickTime animation. The QuickTimeOptions object has no constructor. Abaqus
-    creates the **quickTimeOptions** member when the animation module is imported.
+    """The QuickTimeOptions object is used to store values and attributes to be used in generating QuickTime
+    animation. The QuickTimeOptions object has no constructor. Abaqus creates the **quickTimeOptions** member
+    when the animation module is imported.
 
     .. note::
         This object can be accessed by::

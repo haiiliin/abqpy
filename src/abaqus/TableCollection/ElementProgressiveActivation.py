@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ElementProgressiveActivation:
-    """The ElementProgressiveActivation object is used to specify elements that can be
-    activated during an analysis.
+    """The ElementProgressiveActivation object is used to specify elements that can be activated during an
+    analysis.
 
     .. note::
         This object can be accessed by::

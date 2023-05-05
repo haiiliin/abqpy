@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StabilizationAssignment:
-    """The StabilizationAssignment object stores the contact stabilization assignment
-    definition for domain pairs in a ContactStd object. The StabilizationAssignment object
-    has no constructor or members.
+    """The StabilizationAssignment object stores the contact stabilization assignment definition for domain
+    pairs in a ContactStd object. The StabilizationAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -23,8 +22,8 @@ class StabilizationAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
-        """This method allows modification of contact stabilization assignments to domain pairs
-        already defined in a given step.
+        """This method allows modification of contact stabilization assignments to domain pairs already defined
+        in a given step.
 
         Parameters
         ----------
@@ -42,8 +41,7 @@ class StabilizationAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
-        """This method allows addition of contact stabilization assignments to new domain pairs in
-        a given step.
+        """This method allows addition of contact stabilization assignments to new domain pairs in a given step.
 
         Parameters
         ----------
@@ -61,8 +59,8 @@ class StabilizationAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing contact stabilization assignments from a
-        ContactStd object.
+        """The delete method allows you to delete existing contact stabilization assignments from a ContactStd
+        object.
 
         Parameters
         ----------

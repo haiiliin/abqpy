@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, SymbolicConstant, 
 
 @abaqus_class_doc
 class FieldBulkData:
-    """The FieldBulkData object represents the entire field data for a class of elements or
-    nodes. All elements in a class correspond to the same element type and material.
+    """The FieldBulkData object represents the entire field data for a class of elements or nodes. All elements
+    in a class correspond to the same element type and material.
 
     .. note::
         This object can be accessed by::

@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class SecondaryBaseBC(BoundaryCondition):
-    """The SecondaryBaseBC object stores the data for a slave base boundary condition.
-    The SecondaryBaseBC object is derived from the BoundaryCondition object.
+    """The SecondaryBaseBC object stores the data for a slave base boundary condition. The SecondaryBaseBC
+    object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -72,15 +72,14 @@ class SecondaryBaseBC(BoundaryCondition):
 
     @abaqus_method_doc
     def setValues(self, *args, **kwargs):
-        """This method modifies the data for an existing SecondaryBaseBC object in the step where
-        it is created.
-        """
+        """This method modifies the data for an existing SecondaryBaseBC object in the step where it is
+        created."""
         ...
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
-        """This method modifies the propagating data for an existing SecondaryBaseBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing SecondaryBaseBC object in the specified
+        step.
 
         Parameters
         ----------

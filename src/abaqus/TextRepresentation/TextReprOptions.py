@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TextReprOptions:
-    """The TextReprOptions object is used to configure the output of the Python `str()` command
-    within Abaqus/CAE. (The `str()` command is used by the Python print function.) The
-    TextReprOptions object stores the various settings that determine how objects are
-    printed on the Python command line.
-    The TextReprOptions object has no constructor. Abaqus creates the **textReprOptions**
-    member when a session is started.
+    """The TextReprOptions object is used to configure the output of the Python `str()` command within
+    Abaqus/CAE. (The `str()` command is used by the Python print function.) The TextReprOptions object stores
+    the various settings that determine how objects are printed on the Python command line. The TextReprOptions
+    object has no constructor. Abaqus creates the **textReprOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

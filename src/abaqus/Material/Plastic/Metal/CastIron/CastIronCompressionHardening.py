@@ -5,8 +5,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class CastIronCompressionHardening:
-    r"""The CastIronCompressionHardening object specifies hardening for the Cast- Iron
-    plasticity model.
+    r"""The CastIronCompressionHardening object specifies hardening for the Cast- Iron plasticity model.
 
     .. note::
         This object can be accessed by::

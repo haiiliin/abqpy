@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapePlanarSymmetry(GeometricRestriction):
-    """The ShapePlanarSymmetry object defines a shape planar symmetry geometric restriction.
-    The ShapePlanarSymmetry object is derived from the GeometricRestriction object.
+    """The ShapePlanarSymmetry object defines a shape planar symmetry geometric restriction. The
+    ShapePlanarSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class FluidCavity(Interaction):
-    """The FluidCavity object defines a surface-based cavity.
-    The FluidCavity object is derived from the Interaction object.
+    """The FluidCavity object defines a surface-based cavity. The FluidCavity object is derived from the
+    Interaction object.
 
     .. note::
         This object can be accessed by::

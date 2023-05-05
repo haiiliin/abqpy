@@ -819,8 +819,8 @@ class LoadModel(ModelBase):
         f3: Optional[float] = None,
         amplitude: str = UNSET,
     ) -> ConnectorForce:
-        """This method creates a ConnectorForce object on a wire region. Alternatively, the load
-        may also be applied to a wire set referenced from an assembled fastener template model.
+        """This method creates a ConnectorForce object on a wire region. Alternatively, the load may also be
+        applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -891,8 +891,8 @@ class LoadModel(ModelBase):
         m3: Optional[float] = None,
         amplitude: str = UNSET,
     ) -> ConnectorMoment:
-        """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
-        may also be applied to a wire set referenced from an assembled fastener template model.
+        """This method creates a ConnectorMoment object on a wire region. Alternatively, the load may also be
+        applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::

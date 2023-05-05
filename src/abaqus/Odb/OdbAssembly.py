@@ -26,8 +26,8 @@ class OdbAssembly(OdbAssemblyBase):
         point1: tuple,
         point2: tuple,
     ):
-        """This method creates an OdbDatumCsys object using three points. A datum coordinate system
-        created with this method results in a fixed system.
+        """This method creates an OdbDatumCsys object using three points. A datum coordinate system created with
+        this method results in a fixed system.
 
         .. note::
             This function can be accessed by::
@@ -66,12 +66,11 @@ class OdbAssembly(OdbAssemblyBase):
         point1: OdbMeshNode,
         point2: OdbMeshNode,
     ):
-        """This method creates an OdbDatumCsys object using the coordinates of three OdbMeshNode
-        objects. A datum coordinate system created with this method results in a system that
-        follows the position of the three nodes. Results, such as those for displacement, are
-        resolved into the orientation of the datum coordinate system without regard to the
-        position of its origin. The last three arguments are given in the form of an OdbMeshNode
-        object.
+        """This method creates an OdbDatumCsys object using the coordinates of three OdbMeshNode objects. A
+        datum coordinate system created with this method results in a system that follows the position of the
+        three nodes. Results, such as those for displacement, are resolved into the orientation of the datum
+        coordinate system without regard to the position of its origin. The last three arguments are given in
+        the form of an OdbMeshNode object.
 
         .. note::
             This function can be accessed by::
@@ -109,12 +108,11 @@ class OdbAssembly(OdbAssemblyBase):
         node2Arc: OdbMeshNode,
         node3Arc: OdbMeshNode,
     ):
-        """This method is convenient to use where there are no nodes along the axis of a hollow
-        cylinder or at the center of a hollow sphere. The three nodes that you provide as
-        arguments determine a circle in space. The center of the circle is the origin of the
-        datum coordinate system. The normal to the circle is parallel to the zz-axis of a
-        cylindrical coordinate system or to the ϕϕ-axis of a spherical coordinate system. The
-        line from the origin to the first node defines the rr-axis.
+        """This method is convenient to use where there are no nodes along the axis of a hollow cylinder or at
+        the center of a hollow sphere. The three nodes that you provide as arguments determine a circle in
+        space. The center of the circle is the origin of the datum coordinate system. The normal to the circle
+        is parallel to the zz-axis of a cylindrical coordinate system or to the ϕϕ-axis of a spherical
+        coordinate system. The line from the origin to the first node defines the rr-axis.
 
         .. note::
             This function can be accessed by::
@@ -147,12 +145,11 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsysBy6dofNode(
         self, name: str, coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL], origin: OdbMeshNode
     ):
-        """A datum coordinate system created with this method results in a system that follows the
-        position of a node. The node location defines the origin of the datum coordinate system.
-        The rotational displacement (UR1, UR2, UR3) of the node defines the orientation of the
-        coordinate system axes. Results, such as those for displacement, are resolved into the
-        orientation of the datum coordinate system without regard to the position of its origin.
-        The last argument is given in the form of an OdbMeshNode object.
+        """A datum coordinate system created with this method results in a system that follows the position of a
+        node. The node location defines the origin of the datum coordinate system. The rotational displacement
+        (UR1, UR2, UR3) of the node defines the orientation of the coordinate system axes. Results, such as
+        those for displacement, are resolved into the orientation of the datum coordinate system without regard
+        to the position of its origin. The last argument is given in the form of an OdbMeshNode object.
 
         .. note::
             This function can be accessed by::
@@ -300,9 +297,8 @@ class OdbAssembly(OdbAssemblyBase):
 
     @abaqus_method_doc
     def NodeSet(self, name: str, nodes: Sequence[OdbMeshNode]) -> OdbSet:
-        """This method creates a node set from an array of OdbMeshNode objects (for part
-        instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
-        assembly-level sets).
+        """This method creates a node set from an array of OdbMeshNode objects (for part instance-level sets) or
+        from a sequence of arrays of OdbMeshNode objects (for assembly-level sets).
 
         .. note::
             This function can be accessed by::

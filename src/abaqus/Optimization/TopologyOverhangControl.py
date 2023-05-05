@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyOverhangControl(GeometricRestriction):
-    """The TopologyOverhangControl object defines a topology overhang control geometric
-    restriction.
-    The TopologyOverhangControl object is derived from the GeometricRestriction object.
+    """The TopologyOverhangControl object defines a topology overhang control geometric restriction. The
+    TopologyOverhangControl object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

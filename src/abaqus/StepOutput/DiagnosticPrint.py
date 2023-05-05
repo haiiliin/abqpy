@@ -5,8 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class DiagnosticPrint:
-    """The DiagnosticPrint object is used to request detailed diagnostic output or to disable
-    specific diagnostic checks
+    """The DiagnosticPrint object is used to request detailed diagnostic output or to disable specific
+    diagnostic checks.
 
     .. note::
         This object can be accessed by::

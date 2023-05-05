@@ -18,9 +18,9 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class EpsOptions(_OptionsBase):
-    """The EpsOptions object stores the settings that Abaqus uses when printing using
-    Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
-    the **epsOptions** member when a session is started.
+    """The EpsOptions object stores the settings that Abaqus uses when printing using Encapsulated PostScript
+    format. The EpsOptions object has no constructor. Abaqus creates the **epsOptions** member when a session is
+    started.
 
     .. note::
         This object can be accessed by::

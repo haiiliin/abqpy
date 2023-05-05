@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class InertiaReliefState(LoadState):
-    """The InertiaReliefState object stores the propagating data for an inertia relief load in
-    a step. One instance of this object is created internally by the InertiaRelief object
-    for each step. The instance is also deleted internally by the InertiaRelief object.
-    The InertiaReliefState object has no constructor or methods.
-    The InertiaReliefState object is derived from the LoadState object.
+    """The InertiaReliefState object stores the propagating data for an inertia relief load in a step. One
+    instance of this object is created internally by the InertiaRelief object for each step. The instance is
+    also deleted internally by the InertiaRelief object. The InertiaReliefState object has no constructor or
+    methods. The InertiaReliefState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

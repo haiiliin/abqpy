@@ -21,9 +21,8 @@ class RadialDimension(ConstrainedSketchDimension):
         majorRadius: Optional[float] = None,
         minorRadius: Optional[float] = None,
     ):
-        """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
-        arc. A radial dimension indicates the radius of an arc or circle or the major or minor
-        radius of an ellipse.
+        """This method constructs a ConstrainedSketchDimension object on a circular or elliptical arc. A radial
+        dimension indicates the radius of an arc or circle or the major or minor radius of an ellipse.
 
         .. note::
             This function can be accessed by::
@@ -52,6 +51,5 @@ class RadialDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

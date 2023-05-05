@@ -8,8 +8,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class DisplayGroup:
-    """DisplayGroup objects are used to select a subset of the entities displayed in the
-    viewport.
+    """DisplayGroup objects are used to select a subset of the entities displayed in the viewport.
 
     .. note::
         This object can be accessed by::
@@ -83,8 +82,8 @@ class DisplayGroup:
 
     @abaqus_method_doc
     def either(self, leaf: Leaf):
-        """This method redefines the display group to be only those items that are not shared by
-        the **leaf** argument and by the display group.
+        """This method redefines the display group to be only those items that are not shared by the **leaf**
+        argument and by the display group.
 
         Parameters
         ----------

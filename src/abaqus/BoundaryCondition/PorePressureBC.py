@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PorePressureBC(BoundaryCondition):
-    """The PorePressureBC object stores the data for a pore pressure boundary condition.
-    The PorePressureBC object is derived from the BoundaryCondition object.
+    """The PorePressureBC object stores the data for a pore pressure boundary condition. The PorePressureBC
+    object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -107,8 +107,7 @@ class PorePressureBC(BoundaryCondition):
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
     ):
-        """This method modifies the data for an existing PorePressureBC object in the step where it
-        is created.
+        """This method modifies the data for an existing PorePressureBC object in the step where it is created.
 
         Parameters
         ----------
@@ -140,8 +139,8 @@ class PorePressureBC(BoundaryCondition):
         magnitude: Union[Literal[C.FREED], float] = UNCHANGED,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing PorePressureBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing PorePressureBC object in the specified
+        step.
 
         Parameters
         ----------

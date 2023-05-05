@@ -3,9 +3,7 @@ from typing import List
 
 
 class _OptionsBase:
-    """
-    This is a base class for all options classes.
-    """
+    """This is a base class for all options classes."""
 
     @classmethod
     def get_user_attributes(cls) -> List[str]:
@@ -36,10 +34,8 @@ class _OptionsBase:
 
 
 class _CopyOptionsBase(_OptionsBase):
-    """
-    This is a base class for options classes where the first argument is the options object used to copy options
-    in the setValues method.
-    """
+    """This is a base class for options classes where the first argument is the options object used to copy
+    options in the setValues method."""
 
     def setValues(self, options, **kwargs):
         """This method modifies the CopyOptions object.

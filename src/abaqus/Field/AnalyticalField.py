@@ -22,10 +22,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AnalyticalField(Field):
-    """The AnalyticalField object is the abstract base type for other AnalyticalField objects.
-    The AnalyticalField object has no explicit constructor. The methods and members of the
-    AnalyticalField object are common to all objects derived from the AnalyticalField.
-    The AnalyticalField object is derived from the Field object.
+    """The AnalyticalField object is the abstract base type for other AnalyticalField objects. The
+    AnalyticalField object has no explicit constructor. The methods and members of the AnalyticalField object
+    are common to all objects derived from the AnalyticalField. The AnalyticalField object is derived from the
+    Field object.
 
     .. note::
         This object can be accessed by::

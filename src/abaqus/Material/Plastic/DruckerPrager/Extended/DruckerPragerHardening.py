@@ -7,8 +7,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DruckerPragerHardening:
-    r"""The DruckerPragerHardening object specifies hardening for Drucker-Prager plasticity
-    models.
+    r"""The DruckerPragerHardening object specifies hardening for Drucker-Prager plasticity models.
 
     .. note::
         This object can be accessed by::

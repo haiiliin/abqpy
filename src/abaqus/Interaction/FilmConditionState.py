@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class FilmConditionState(InteractionState):
-    """The FilmConditionState object stores the propagating data for a FilmCondition object.
-    One instance of this object is created internally by the FilmCondition object for each
-    step. The instance is also deleted internally by the FilmCondition object.
-    The FilmConditionState object has no constructor or methods.
-    The FilmConditionState object is derived from the InteractionState object.
+    """The FilmConditionState object stores the propagating data for a FilmCondition object. One instance of
+    this object is created internally by the FilmCondition object for each step. The instance is also deleted
+    internally by the FilmCondition object. The FilmConditionState object has no constructor or methods. The
+    FilmConditionState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

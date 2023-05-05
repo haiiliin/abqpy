@@ -6,12 +6,11 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class PredefinedField:
-    """The PredefinedField object is the base object for the objects in the predefined field
-    repository. The methods and members of the PredefinedField object are common to all
-    objects derived from PredefinedField.
-    An instance of any PredefinedField object can be obtained through the predefined field
-    repository of the Model object. An instance of any PredefinedFieldState object can be
-    obtained through the predefined field repository of the Step object.
+    """The PredefinedField object is the base object for the objects in the predefined field repository. The
+    methods and members of the PredefinedField object are common to all objects derived from PredefinedField. An
+    instance of any PredefinedField object can be obtained through the predefined field repository of the Model
+    object. An instance of any PredefinedFieldState object can be obtained through the predefined field
+    repository of the Step object.
 
     .. note::
         This object can be accessed by::
@@ -34,8 +33,7 @@ class PredefinedField:
 
     @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
-        """This method moves a specific PredefinedFieldState object from one step to a different
-        step.
+        """This method moves a specific PredefinedFieldState object from one step to a different step.
 
         Parameters
         ----------

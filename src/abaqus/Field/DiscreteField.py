@@ -13,9 +13,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DiscreteField(Field):
-    """The DiscreteField object defines a varying field whose values correspond to distinct
-    points within a domain.
-    The DiscreteField object is derived from the Field object.
+    """The DiscreteField object defines a varying field whose values correspond to distinct points within a
+    domain. The DiscreteField object is derived from the Field object.
 
     .. note::
         This object can be accessed by::
@@ -124,8 +123,8 @@ class DiscreteField(Field):
         description: str = "",
         scaleFactor: str = "",
     ):
-        """This method creates a DiscreteField object that represents the volume fraction of each
-        element of an Eulerian Instance that is occupied by a reference instance.
+        """This method creates a DiscreteField object that represents the volume fraction of each element of an
+        Eulerian Instance that is occupied by a reference instance.
 
         .. note::
             This function can be accessed by::

@@ -12,9 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceToSurfaceContactExp(Interaction):
-    """The SurfaceToSurfaceContactExp object defines surface-to-surface contact during an
-    Abaqus/Explicit analysis.
-    The SurfaceToSurfaceContactExp object is derived from the Interaction object.
+    """The SurfaceToSurfaceContactExp object defines surface-to-surface contact during an Abaqus/Explicit
+    analysis. The SurfaceToSurfaceContactExp object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -184,8 +183,9 @@ class SurfaceToSurfaceContactExp(Interaction):
 
     @abaqus_method_doc
     def swapSurfaces(self):
-        """This method switches the master and slave surfaces of a surface-to-surface contact
-        pair. This command is valid only during the step in which the interaction is created.
+        """This method switches the master and slave surfaces of a surface-to-surface contact pair.
+
+        This command is valid only during the step in which the interaction is created.
         """
         ...
 
@@ -205,8 +205,8 @@ class SurfaceToSurfaceContactExp(Interaction):
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
     ):
-        """This method modifies the data for an existing SurfaceToSurfaceContactExp object in the
-        step where it is created.
+        """This method modifies the data for an existing SurfaceToSurfaceContactExp object in the step where it
+        is created.
 
         Parameters
         ----------
@@ -251,8 +251,8 @@ class SurfaceToSurfaceContactExp(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
-        """This method modifies the propagating data for an existing SurfaceToSurfaceContactExp
-        object in the specified step.
+        """This method modifies the propagating data for an existing SurfaceToSurfaceContactExp object in the
+        specified step.
 
         Parameters
         ----------
