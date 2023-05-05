@@ -90,8 +90,13 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: formulations (shell, membrane, and two-dimensional plane stress elements). The default
     #: value is ON.
     #:
+<<<<<<< HEAD
     #: .. versionadded:: 2018
     #:     The `improvedDtMethod` attribute was added.
+=======
+    #: ..versionadded:: 2018
+    #:     The ``improvedDtMethod`` attribute was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     improvedDtMethod: Boolean = ON
 
     #: A String specifying the name of the previous step. The new step appears after this step
