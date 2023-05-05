@@ -22,7 +22,7 @@ class AbqpyCLIBase:
 
     def abaqus(self, name: str, *args, **options):
         """Run custom Abaqus command: ``abaqus {name} {args} {options}``, arguments are separated by space, options are
-        handled by the :py:meth:`~abqpy.cli.AbqpyCLIBase._parse_options` method.
+        handled by the :meth:`._parse_options` method.
 
         Parameters
         ----------
