@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -426,7 +426,7 @@ msgid ""
 "An Int specifying the number of Fourier modes. Possible values are 1, 2, "
 "3, and 4. The default value is 1.This argument is applicable only for "
 "axisymmetric elements with nonlinear asymmetric deformation.  .. "
-"versionadded:: 2019     The `numFourierModes` argument was added."
+"versionadded:: 2019     The ``numFourierModes`` argument was added."
 msgstr ""
 
 #: ../../docstring abaqus.Mesh.ElemType.ElemType:116
@@ -438,7 +438,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType:120 of
-msgid "The `numFourierModes` argument was added."
+msgid "The ``numFourierModes`` argument was added."
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType:123 of
@@ -446,7 +446,7 @@ msgid ""
 "An Int specifying the positive offset number for specifying the "
 "additional nodes needed in the connectivity.This argument is applicable "
 "only for axisymmetric elements with nonlinear asymmetric deformation.  .."
-" versionadded:: 2019     The `nodeOffset` argument was added."
+" versionadded:: 2019     The ``nodeOffset`` argument was added."
 msgstr ""
 
 #: ../../docstring abaqus.Mesh.ElemType.ElemType:123
@@ -458,7 +458,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType:127 of
-msgid "The `nodeOffset` argument was added."
+msgid "The ``nodeOffset`` argument was added."
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType
@@ -642,11 +642,11 @@ msgid "Member Details:"
 msgstr ""
 
 #: ../../docstring abaqus.Mesh.MeshPart.ElemType.nodeOffset:5 of
-msgid "The `nodeOffset` attribute was added."
+msgid "The ``nodeOffset`` attribute was added."
 msgstr ""
 
 #: ../../docstring abaqus.Mesh.MeshPart.ElemType.numFourierModes:5 of
-msgid "The `numFourierModes` attribute was added."
+msgid "The ``numFourierModes`` attribute was added."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly:1 of
@@ -3577,7 +3577,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:4 of
-msgid "The `getExteriorEdges` method was added."
+msgid "The ``getExteriorEdges`` method was added."
 msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:7 of
@@ -3596,7 +3596,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:4 of
-msgid "The `getExteriorFaces` method was added."
+msgid "The ``getExteriorFaces`` method was added."
 msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:7 of
@@ -4725,7 +4725,7 @@ msgid ""
 "encountered takes precedence. This list is also consulted when populating"
 " the element type dialog; preferred types are selected by default for a "
 "region not previously assigned any element types. The default value is an"
-" empty list.  .. versionadded:: 2018     The `guiPreferredElements` "
+" empty list.  .. versionadded:: 2018     The ``guiPreferredElements`` "
 "argument was added."
 msgstr ""
 
@@ -4747,7 +4747,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MesherOptions.MesherOptions.setValues:37 of
-msgid "The `guiPreferredElements` argument was added."
+msgid "The ``guiPreferredElements`` argument was added."
 msgstr ""
 
 #~ msgid ""
@@ -14589,5 +14589,77 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 #~ "#simaker-partverifymeshqualitypyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "Fourier modes. Possible values are 1,"
+#~ " 2, 3, and 4. The default value"
+#~ " is 1.This argument is applicable "
+#~ "only for axisymmetric elements with "
+#~ "nonlinear asymmetric deformation.  .. "
+#~ "versionadded:: 2019     The `numFourierModes` "
+#~ "argument was added."
+#~ msgstr ""
+
+#~ msgid "The `numFourierModes` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the positive offset"
+#~ " number for specifying the additional "
+#~ "nodes needed in the connectivity.This "
+#~ "argument is applicable only for "
+#~ "axisymmetric elements with nonlinear "
+#~ "asymmetric deformation.  .. versionadded:: "
+#~ "2019     The `nodeOffset` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid "The `nodeOffset` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `nodeOffset` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `numFourierModes` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `getExteriorEdges` method was added."
+#~ msgstr ""
+
+#~ msgid "The `getExteriorFaces` method was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A list of SymbolicConstants specifying "
+#~ "preferred Abaqus element types. This "
+#~ "setting is relevant only when Abaqus/CAE"
+#~ " is run interactively. When a part"
+#~ " or part instance that has never "
+#~ "been assigned an element type is "
+#~ "meshed, this list is consulted. If "
+#~ "an element type appropriate to the "
+#~ "geometry is found in the list, it"
+#~ " is assigned to the geometry. "
+#~ "Multiple element types representing different"
+#~ " shapes (for example, triangles and "
+#~ "quadrilaterals) can be assigned in "
+#~ "combination, but only element types that"
+#~ " are compatible with each other are"
+#~ " used. When more than one appropriate"
+#~ " element type is found in the "
+#~ "list, the first element type encountered"
+#~ " takes precedence. This list is also"
+#~ " consulted when populating the element "
+#~ "type dialog; preferred types are "
+#~ "selected by default for a region "
+#~ "not previously assigned any element "
+#~ "types. The default value is an "
+#~ "empty list.  .. versionadded:: 2018     "
+#~ "The `guiPreferredElements` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `guiPreferredElements` argument was added."
 #~ msgstr ""
 
