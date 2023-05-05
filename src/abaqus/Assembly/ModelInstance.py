@@ -100,29 +100,6 @@ class ModelInstance:
         ...
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def replace(self, instanceOf: Model, applyConstraints: Boolean = True):
-        """This method replaces one instance with an instance of another model.
-
-        .. versionadded:: 2019
-            The ``replace`` method was added.
-
-        Parameters
-        ----------
-        instanceOf
-            A Model object to be instanced. If the model does not exist, no ModelInstance object is
-            created.
-        applyConstraints
-            A Boolean specifying whether to apply existing constraints on the new instance or to
-            position the new instance in the same place as the original instance. The default value
-            is True. A value of False indicates that constraints applies to the instance are deleted
-            will be deleted from the feature list.
-        """
-        ...
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
 

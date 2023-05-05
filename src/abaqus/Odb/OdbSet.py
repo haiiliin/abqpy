@@ -50,21 +50,6 @@ class OdbSet:
     #: part instance, this member is a sequence of sequences for each part instance.
     faces: Optional[SymbolicConstant] = None
 
-<<<<<<< HEAD
-=======
-    #: A repository of an OdbInstance object.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``instances`` attribute was added.
-    instances: str = ""
-
-    #: A Boolean specifying whether the set is internal.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``isInternal`` attribute was added.
-    isInternal: Boolean = OFF
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(self, name: str, nodes: Sequence[OdbMeshNode]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
