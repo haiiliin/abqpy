@@ -10,8 +10,8 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 class EqualRadiusConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
     def __init__(self, entity1: ConstrainedSketchGeometry, entity2: str):
-        """This method creates an equal radius constraint. This constraint applies to circles and
-        arcs and constrains them such that their radii are equal.
+        """This method creates an equal radius constraint. This constraint applies to circles and arcs and
+        constrains them such that their radii are equal.
 
         .. note::
             This function can be accessed by::
@@ -29,6 +29,5 @@ class EqualRadiusConstraint(ConstrainedSketchConstraint):
         -------
         ConstrainedSketchConstraint
             A ConstrainedSketchConstraint object.
-
         """
         ...

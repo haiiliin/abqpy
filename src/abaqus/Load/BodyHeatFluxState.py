@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BodyHeatFluxState(LoadState):
-    """The BodyHeatFluxState object stores the propagating data for a Body BodyHeatFlux object
-    in a step. One instance of this object is created internally by the BodyHeatFlux object
-    for each step. The instance is also deleted internally by the BodyHeatFlux object.
-    The BodyHeatFluxState object has no constructor or methods.
+    """The BodyHeatFluxState object stores the propagating data for a Body BodyHeatFlux object in a step. One
+    instance of this object is created internally by the BodyHeatFlux object for each step. The instance is also
+    deleted internally by the BodyHeatFlux object. The BodyHeatFluxState object has no constructor or methods.
     The BodyHeatFluxState object is derived from the LoadState object.
 
     .. note::

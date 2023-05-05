@@ -7,9 +7,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class InteractionState:
-    """The InteractionState object is the abstract base type for other InteractionState
-    objects. The InteractionState object has no explicit constructor. The members of the
-    InteractionState object are common to all objects derived from InteractionState.
+    """The InteractionState object is the abstract base type for other InteractionState objects. The
+    InteractionState object has no explicit constructor. The members of the InteractionState object are common
+    to all objects derived from InteractionState.
 
     .. note::
         This object can be accessed by::

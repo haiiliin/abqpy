@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ThermalConductance:
-    """The ThermalConductance object specifies thermal conductance for a contact interaction
-    property.
+    """The ThermalConductance object specifies thermal conductance for a contact interaction property.
 
     .. note::
         This object can be accessed by::

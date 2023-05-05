@@ -3,8 +3,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class ActivateElements:
-    """The ActivateElements object is used turn on progressive element activation within a step
-    definition.
+    """The ActivateElements object is used turn on progressive element activation within a step definition.
 
     .. note::
         This object can be accessed by::

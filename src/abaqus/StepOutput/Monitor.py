@@ -70,8 +70,8 @@ class Monitor:
         ],
         frequency: int,
     ):
-        """This method creates a request for a degree of freedom to be monitored in a general or
-        modal procedure.
+        """This method creates a request for a degree of freedom to be monitored in a general or modal
+        procedure.
 
         .. note::
             This function can be accessed by::

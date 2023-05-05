@@ -5,10 +5,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, NONE, ON, PLY,
 
 @abaqus_class_doc
 class DGOrientationOptions:
-    """The DGOrientationOptions object stores values and attributes associated with a material
-    orientation plot. The DGOrientationOptions object has no constructor command. Abaqus
-    creates an *odbDisplayOptions.materialOrientationOptions* member when a display group
-    instance is created, using values from *odbDisplay.materialOrientationOptions*.
+    """The DGOrientationOptions object stores values and attributes associated with a material orientation plot.
+    The DGOrientationOptions object has no constructor command. Abaqus creates an
+    *odbDisplayOptions.materialOrientationOptions* member when a display group instance is created, using values
+    from *odbDisplay.materialOrientationOptions*.
 
     .. note::
         This object can be accessed by::

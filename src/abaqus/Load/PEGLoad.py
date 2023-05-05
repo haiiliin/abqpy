@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PEGLoad(Load):
-    """The PEGLoad object stores the data for a PEG load.
-    The PEGLoad object is derived from the Load object.
+    """The PEGLoad object stores the data for a PEG load. The PEGLoad object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -101,8 +100,7 @@ class PEGLoad(Load):
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing PEGLoad object in the step where it is
-        created.
+        """This method modifies the data for an existing PEGLoad object in the step where it is created.
 
         Parameters
         ----------
@@ -137,8 +135,7 @@ class PEGLoad(Load):
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing PEGLoad object in the
-        specified step.
+        """This method modifies the propagating data for an existing PEGLoad object in the specified step.
 
         Parameters
         ----------

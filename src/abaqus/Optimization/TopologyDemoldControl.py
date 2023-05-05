@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyDemoldControl(GeometricRestriction):
-    """The TopologyDemoldControl object defines a topology demold control geometric
-    restriction.
-    The TopologyDemoldControl object is derived from the GeometricRestriction object.
+    """The TopologyDemoldControl object defines a topology demold control geometric restriction. The
+    TopologyDemoldControl object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

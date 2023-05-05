@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SolutionDependentAmplitude(Amplitude):
-    """The SolutionDependentAmplitude object defines a solution-dependent amplitude for
-    superplastic forming analysis.
-    The SolutionDependentAmplitude object is derived from the Amplitude object.
+    """The SolutionDependentAmplitude object defines a solution-dependent amplitude for superplastic forming
+    analysis. The SolutionDependentAmplitude object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

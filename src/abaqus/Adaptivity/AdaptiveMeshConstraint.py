@@ -11,10 +11,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AdaptiveMeshConstraint:
-    """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
-    Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
-    AdaptiveMeshConstraint object has no explicit constructor. The methods and members of
-    the AdaptiveMeshConstraint object are common to all objects derived from the
+    """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE)
+    style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit constructor. The
+    methods and members of the AdaptiveMeshConstraint object are common to all objects derived from the
     AdaptiveMeshConstraint object.
 
     .. note::
@@ -47,11 +46,10 @@ class AdaptiveMeshConstraint:
         region: Region,
         localCsys: Optional[DatumCsys] = None,
     ):
-        """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
-        Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
-        AdaptiveMeshConstraint object has no explicit constructor. The methods and members of
-        the AdaptiveMeshConstraint object are common to all objects derived from the
-        AdaptiveMeshConstraint object.
+        """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian
+        (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit
+        constructor. The methods and members of the AdaptiveMeshConstraint object are common to all objects
+        derived from the AdaptiveMeshConstraint object.
 
         .. note::
             This function can be accessed by::
@@ -75,8 +73,7 @@ class AdaptiveMeshConstraint:
 
     @abaqus_method_doc
     def deactivate(self, stepName: str):
-        """This method deactivates the adaptive mesh constraint in the specified step and all
-        subsequent steps.
+        """This method deactivates the adaptive mesh constraint in the specified step and all subsequent steps.
 
         Parameters
         ----------
@@ -111,8 +108,8 @@ class AdaptiveMeshConstraint:
 
     @abaqus_method_doc
     def reset(self, stepName: str):
-        """This method resets the adaptive mesh constraint state of the specified step to the state
-        of the previous analysis step.
+        """This method resets the adaptive mesh constraint state of the specified step to the state of the
+        previous analysis step.
 
         Parameters
         ----------

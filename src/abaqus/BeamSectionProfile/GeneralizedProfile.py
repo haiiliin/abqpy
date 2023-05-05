@@ -5,8 +5,7 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class GeneralizedProfile(Profile):
-    """The GeneralizedProfile object defines the properties of a profile via its area, moment
-    of inertia, etc.
+    """The GeneralizedProfile object defines the properties of a profile via its area, moment of inertia, etc.
     The GeneralizedProfile object is derived from the Profile object.
 
     .. note::
@@ -93,7 +92,6 @@ class GeneralizedProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -104,6 +102,5 @@ class GeneralizedProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

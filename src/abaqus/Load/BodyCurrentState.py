@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BodyCurrentState(LoadState):
-    """The BodyCurrentState object stores the propagating data of a body current in a step. One
-    instance of this object is created internally by the BodyCurrent object for each step.
-    The instance is also deleted internally by the BodyCurrent object.
-    The BodyCurrentState object has no constructor or methods.
-    The BodyCurrentState object is derived from the LoadState object.
+    """The BodyCurrentState object stores the propagating data of a body current in a step. One instance of this
+    object is created internally by the BodyCurrent object for each step. The instance is also deleted
+    internally by the BodyCurrent object. The BodyCurrentState object has no constructor or methods. The
+    BodyCurrentState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

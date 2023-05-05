@@ -12,10 +12,9 @@ from ..UtilityAndView.abaqusConstants import MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class OptimizationTaskBase:
-    """The OptimizationTask object is the abstract base type for other OptimizationTask
-    objects. The OptimizationTask object has no explicit constructor. The methods and
-    members of the OptimizationTask object are common to all objects derived from
-    OptimizationTask.
+    """The OptimizationTask object is the abstract base type for other OptimizationTask objects. The
+    OptimizationTask object has no explicit constructor. The methods and members of the OptimizationTask object
+    are common to all objects derived from OptimizationTask.
 
     .. note::
         This object can be accessed by::

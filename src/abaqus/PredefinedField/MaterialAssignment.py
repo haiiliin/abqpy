@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class MaterialAssignment(PredefinedField):
-    """The MaterialAssignment object stores the data for an initial material assignment
-    predefined field, for use with an Eulerian analysis.
-    The MaterialAssignment object is derived from the PredefinedField object.
+    """The MaterialAssignment object stores the data for an initial material assignment predefined field, for
+    use with an Eulerian analysis. The MaterialAssignment object is derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

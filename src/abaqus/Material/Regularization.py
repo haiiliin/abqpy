@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Regularization:
-    """The Regularization object defines the tolerance to be used for regularizing material
-    data.
+    """The Regularization object defines the tolerance to be used for regularizing material data.
 
     .. note::
         This object can be accessed by::

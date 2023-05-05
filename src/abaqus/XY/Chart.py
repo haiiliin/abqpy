@@ -15,8 +15,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 @abaqus_class_doc
 class Chart:
-    """The Chart object is used to display XYCurve objects. A Chart object is automatically
-    created when creating an XYPlot object
+    """The Chart object is used to display XYCurve objects. A Chart object is automatically created when
+    creating an XYPlot object.
 
     .. note::
         This object can be accessed by::
@@ -90,8 +90,8 @@ class Chart:
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
-        """This method distributes the colors on all curves displayed in the chart using the color
-        palette defined by the xyColors object.
+        """This method distributes the colors on all curves displayed in the chart using the color palette
+        defined by the xyColors object.
 
         Parameters
         ----------
@@ -109,13 +109,16 @@ class Chart:
 
     @abaqus_method_doc
     def fitCurves(self):
-        """This method resets the transform of the chart. It cancels any zoom or pan action."""
+        """This method resets the transform of the chart.
+
+        It cancels any zoom or pan action.
+        """
         ...
 
     @abaqus_method_doc
     def getAxis1(self, curve: str, quantityType: str):
-        """This method returns the Axis object used for displaying the Axis1 of the XYCurve
-        specified by name or object or used for the given QuantityType object.
+        """This method returns the Axis object used for displaying the Axis1 of the XYCurve specified by name or
+        object or used for the given QuantityType object.
 
         Parameters
         ----------
@@ -142,8 +145,8 @@ class Chart:
 
     @abaqus_method_doc
     def getAxis2(self, curve: str, quantityType: str):
-        """This method returns the Axis object used for displaying the Axis2 of the XYCurve
-        specified by name or object or used for the given QuantityType object.
+        """This method returns the Axis object used for displaying the Axis2 of the XYCurve specified by name or
+        object or used for the given QuantityType object.
 
         Parameters
         ----------
@@ -170,8 +173,8 @@ class Chart:
 
     @abaqus_method_doc
     def moveAxisUp(self, axis: str):
-        """This method moves the relative position of the given Axis object up in the axis sequence
-        of the Chart.
+        """This method moves the relative position of the given Axis object up in the axis sequence of the
+        Chart.
 
         Parameters
         ----------
@@ -182,8 +185,8 @@ class Chart:
 
     @abaqus_method_doc
     def moveAxisDown(self, axis: str):
-        """This method moves the relative position of the given Axis object down in the axis
-        sequence of the Chart.
+        """This method moves the relative position of the given Axis object down in the axis sequence of the
+        Chart.
 
         Parameters
         ----------

@@ -7,9 +7,8 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ConstrainedSketchImageOptions:
-    """The ConstrainedSketchImageOptions object is used to store values and attributes
-    associated with the background image for a particular sketch. The
-    ConstrainedSketchImageOptions object has no constructor.
+    """The ConstrainedSketchImageOptions object is used to store values and attributes associated with the
+    background image for a particular sketch. The ConstrainedSketchImageOptions object has no constructor.
 
     .. note::
         This object can be accessed by::
@@ -57,6 +56,5 @@ class ConstrainedSketchImageOptions:
         Raises
         ------
         RangeError
-
         """
         ...

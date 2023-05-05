@@ -8,12 +8,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class PropertyTable:
-    """A PropertyTable is an object that is used to define the container that encapsulates the
-    PropertyTableData object.
-    The data of the PropertyTableData object is dependent on the contents of the
-    PropertyTable object.
-    After PropertyTableDatais instantiated, making changes to PropertyTable may lead to data
-    corruption.
+    """A PropertyTable is an object that is used to define the container that encapsulates the PropertyTableData
+    object. The data of the PropertyTableData object is dependent on the contents of the PropertyTable object.
+    After PropertyTableDatais instantiated, making changes to PropertyTable may lead to data corruption.
 
     .. note::
         This object can be accessed by::

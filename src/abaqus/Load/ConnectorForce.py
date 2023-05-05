@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorForce(Load):
-    """The ConnectorForce object defines a connector force.
-    The ConnectorForce object is derived from the Load object.
+    """The ConnectorForce object defines a connector force. The ConnectorForce object is derived from the Load
+    object.
 
     .. note::
         This object can be accessed by::
@@ -51,8 +51,8 @@ class ConnectorForce(Load):
         f3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method creates a ConnectorForce object on a wire region. Alternatively, the load
-        may also be applied to a wire set referenced from an assembled fastener template model.
+        """This method creates a ConnectorForce object on a wire region. Alternatively, the load may also be
+        applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -110,8 +110,7 @@ class ConnectorForce(Load):
         f3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing ConnectorForce object in the step where it
-        is created.
+        """This method modifies the data for an existing ConnectorForce object in the step where it is created.
 
         Parameters
         ----------
@@ -153,8 +152,8 @@ class ConnectorForce(Load):
         f3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ConnectorForce object in the
-        specified step.
+        """This method modifies the propagating data for an existing ConnectorForce object in the specified
+        step.
 
         Parameters
         ----------

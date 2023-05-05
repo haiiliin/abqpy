@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class MeshStats:
-    """The MeshStats object is a query object for holding mesh statistics and is returned by
-    the getMeshStats command. The object does not have any methods.
+    """The MeshStats object is a query object for holding mesh statistics and is returned by the getMeshStats
+    command. The object does not have any methods.
 
     .. note::
         This object can be accessed by::

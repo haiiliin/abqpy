@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class TProfile(Profile):
-    """The TProfile object defines the properties of a T profile.
-    The TProfile object is derived from the Profile object.
+    """The TProfile object defines the properties of a T profile. The TProfile object is derived from the
+    Profile object.
 
     .. note::
         This object can be accessed by::
@@ -82,7 +82,6 @@ class TProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -93,6 +92,5 @@ class TProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

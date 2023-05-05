@@ -5,8 +5,8 @@ from .GeometricRestriction import GeometricRestriction
 
 @abaqus_class_doc
 class SizingClusterAreas(GeometricRestriction):
-    """The SizingClusterAreas object defines a sizing cluster areas geometric restriction.
-    The SizingClusterAreas object is derived from the GeometricRestriction object.
+    """The SizingClusterAreas object defines a sizing cluster areas geometric restriction. The
+    SizingClusterAreas object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyCyclicSymmetry(GeometricRestriction):
-    """The TopologyCyclicSymmetry object defines a topology cyclic symmetry geometric
-    restriction.
-    The TopologyCyclicSymmetry object is derived from the GeometricRestriction object.
+    """The TopologyCyclicSymmetry object defines a topology cyclic symmetry geometric restriction. The
+    TopologyCyclicSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

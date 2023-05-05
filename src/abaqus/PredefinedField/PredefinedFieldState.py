@@ -7,10 +7,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PredefinedFieldState:
-    """The PredefinedFieldState object is the base object for the objects in the
-    predefinedFieldState repository of the Step object. The members of the
-    PredefinedFieldState object are common to all objects derived from PredefinedFieldState.
-    The PredefinedFieldState object has no constructor or methods.
+    """The PredefinedFieldState object is the base object for the objects in the predefinedFieldState repository
+    of the Step object. The members of the PredefinedFieldState object are common to all objects derived from
+    PredefinedFieldState. The PredefinedFieldState object has no constructor or methods.
 
     .. note::
         This object can be accessed by::

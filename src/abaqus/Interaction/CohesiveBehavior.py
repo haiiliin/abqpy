@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CohesiveBehavior:
-    """The CohesiveBehaviour
+    """The CohesiveBehaviour.
 
     .. note::
         This object can be accessed by::

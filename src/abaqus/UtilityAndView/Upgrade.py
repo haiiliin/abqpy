@@ -27,12 +27,11 @@ def upgradeScript(
     toVersion: str = LATEST,
     scriptType: SymbolicConstant = BOTH,
 ):
-    """This function can be used to upgrade a directory, a file, or a list of both directories
-    and files. You can preview the changes before you choose to upgrade the file. A user
-    interface to this function is available via the Plug-ins menu. For more information, see
-    Upgrading a script. You can also use a simpler interface from the command line to
-    upgrade scripts. For more information, see the summary of changed commands at the end of
-    this guide.
+    """This function can be used to upgrade a directory, a file, or a list of both directories and files. You
+    can preview the changes before you choose to upgrade the file. A user interface to this function is
+    available via the Plug-ins menu. For more information, see Upgrading a script. You can also use a simpler
+    interface from the command line to upgrade scripts. For more information, see the summary of changed
+    commands at the end of this guide.
 
     .. note::
         This function can be accessed by::

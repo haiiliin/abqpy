@@ -6,8 +6,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class RegionPartBase(PartBase):
-    """The following commands operate on Part objects. For more information about the Part
-    object, see Part object.
+    """The following commands operate on Part objects. For more information about the Part object, see Part
+    object.
 
     .. note::
         This object can be accessed by::
@@ -17,8 +17,8 @@ class RegionPartBase(PartBase):
 
     @abaqus_method_doc
     def clashSets(self, arg1: str, arg2: str):
-        """This command prints a message describing the relationship between the contents of two
-        sets. Possible outcomes are:
+        """This command prints a message describing the relationship between the contents of two sets. Possible
+        outcomes are:
 
         - Both sets are the same.
         - Set 2 is a subset of set 1.

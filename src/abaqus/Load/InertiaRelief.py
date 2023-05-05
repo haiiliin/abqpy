@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class InertiaRelief(Load):
-    """The InertiaRelief object defines an inertia relief load.
-    The InertiaRelief object is derived from the Load object.
+    """The InertiaRelief object defines an inertia relief load. The InertiaRelief object is derived from the
+    Load object.
 
     .. note::
         This object can be accessed by::
@@ -103,8 +103,7 @@ class InertiaRelief(Load):
         referencePoint: tuple = (),
         localCoordinates: Optional[int] = None,
     ):
-        """This method modifies the data for an existing InertiaRelief object in the step where it
-        is created.
+        """This method modifies the data for an existing InertiaRelief object in the step where it is created.
 
         Parameters
         ----------
@@ -149,8 +148,7 @@ class InertiaRelief(Load):
         referencePoint: tuple = (),
         fixed: Boolean = OFF,
     ):
-        """This method modifies the propagating data for an existing InertiaRelief object in the
-        specified step.
+        """This method modifies the propagating data for an existing InertiaRelief object in the specified step.
 
         Parameters
         ----------

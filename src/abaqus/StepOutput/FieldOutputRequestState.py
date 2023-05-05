@@ -7,11 +7,10 @@ from ..UtilityAndView.abaqusConstants import ALL, Boolean, EVERY_TIME_INCREMENT,
 
 @abaqus_class_doc
 class FieldOutputRequestState:
-    """The FieldOutputRequestState object stores the propagating data of a field output request
-    current in a step. One instance of this object is created internally by the
-    FieldOutputRequest object for each step. The instance is also deleted internally by the
-    FieldOutputRequest object.
-    The FieldOutputRequestState object has no constructor or methods.
+    """The FieldOutputRequestState object stores the propagating data of a field output request current in a
+    step. One instance of this object is created internally by the FieldOutputRequest object for each step. The
+    instance is also deleted internally by the FieldOutputRequest object. The FieldOutputRequestState object has
+    no constructor or methods.
 
     .. note::
         This object can be accessed by::

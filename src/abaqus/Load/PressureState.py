@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PressureState(LoadState):
-    """The PressureState object stores the propagating data for a pressure in a step. One
-    instance of this object is created internally by the Pressure object for each step. The
-    instance is also deleted internally by the Pressure object.
-    The PressureState object has no constructor or methods.
-    The PressureState object is derived from the LoadState object.
+    """The PressureState object stores the propagating data for a pressure in a step. One instance of this
+    object is created internally by the Pressure object for each step. The instance is also deleted internally
+    by the Pressure object. The PressureState object has no constructor or methods. The PressureState object is
+    derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

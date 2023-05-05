@@ -27,6 +27,5 @@ class Line(ConstrainedSketchGeometry):
         -------
         ConstrainedSketchGeometry
             A ConstrainedSketchGeometry object (None if the line cannot be created).
-
         """
         ...

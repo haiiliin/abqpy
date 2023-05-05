@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Legend:
-    """The Legend object is used to store the display attributes of the chart legend. A legend
-    object is automatically created when creating a Chart object.
+    """The Legend object is used to store the display attributes of the chart legend. A legend object is
+    automatically created when creating a Chart object.
 
     .. note::
         This object can be accessed by::

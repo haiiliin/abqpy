@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceConcentrationFlux(Load):
-    """The SurfaceConcentrationFlux object defines surface concentration flux from a region or
-    into a region.
+    """The SurfaceConcentrationFlux object defines surface concentration flux from a region or into a region.
     The SurfaceConcentrationFlux object is derived from the Load object.
 
     .. note::
@@ -94,8 +93,8 @@ class SurfaceConcentrationFlux(Load):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing SurfaceConcentrationFlux object in the
-        step where it is created.
+        """This method modifies the data for an existing SurfaceConcentrationFlux object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -116,8 +115,8 @@ class SurfaceConcentrationFlux(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing SurfaceConcentrationFlux
-        object in the specified step.
+        """This method modifies the propagating data for an existing SurfaceConcentrationFlux object in the
+        specified step.
 
         Parameters
         ----------

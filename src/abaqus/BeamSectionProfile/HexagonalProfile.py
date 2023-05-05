@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class HexagonalProfile(Profile):
-    """The HexagonalProfile object defines the properties of a hexagonal profile.
-    The HexagonalProfile object is derived from the Profile object.
+    """The HexagonalProfile object defines the properties of a hexagonal profile. The HexagonalProfile object is
+    derived from the Profile object.
 
     .. note::
         This object can be accessed by::
@@ -63,7 +63,6 @@ class HexagonalProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -74,6 +73,5 @@ class HexagonalProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

@@ -7,8 +7,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Ornl:
-    """The Ornl object specifies the constitutive model developed by Oak Ridge National
-    Laboratory.
+    """The Ornl object specifies the constitutive model developed by Oak Ridge National Laboratory.
 
     .. note::
         This object can be accessed by::

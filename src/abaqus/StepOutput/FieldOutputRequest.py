@@ -177,8 +177,7 @@ class FieldOutputRequest:
 
     @abaqus_method_doc
     def deactivate(self, stepName: str) -> None:
-        """This method deactivates the field output request in the specified step and all its
-        subsequent steps.
+        """This method deactivates the field output request in the specified step and all its subsequent steps.
 
         Parameters
         ----------
@@ -190,8 +189,7 @@ class FieldOutputRequest:
 
     @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str) -> None:
-        """This method moves the field output request state object from one step to a different
-        step.
+        """This method moves the field output request state object from one step to a different step.
 
         Parameters
         ----------
@@ -206,8 +204,8 @@ class FieldOutputRequest:
 
     @abaqus_method_doc
     def reset(self, stepName: str) -> None:
-        """This method resets the field output request state of the specified step to the state of
-        the previous step.
+        """This method resets the field output request state of the specified step to the state of the previous
+        step.
 
         Parameters
         ----------
@@ -254,8 +252,8 @@ class FieldOutputRequest:
         outputAtPlyBottom: Boolean = False,
         position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, NODES] = INTEGRATION_POINTS,
     ) -> None:
-        """This method modifies the data for an existing FieldOutputRequest object in the step
-        where it is created.
+        """This method modifies the data for an existing FieldOutputRequest object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -346,8 +344,8 @@ class FieldOutputRequest:
         timePoints: Optional[str] = None,
         timeMarks: Boolean = OFF,
     ) -> None:
-        """This method modifies the propagating data for an existing FieldOutputRequest object in
-        the specified step.
+        """This method modifies the propagating data for an existing FieldOutputRequest object in the specified
+        step.
 
         Parameters
         ----------

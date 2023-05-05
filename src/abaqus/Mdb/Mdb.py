@@ -12,8 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Mdb(AcisMdb, JobMdb):
-    """The Mdb object is the high-level Abaqus model database. A model database stores models
-    and analysis controls.
+    """The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+    controls.
 
     .. note::
         This object can be accessed by::

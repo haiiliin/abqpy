@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class PressurePenetrationState(InteractionState):
-    """The PressurePenetrationState object stores the propagating data of a PressurePenetration
-    object in a step. One instance of this object is created internally by the
-    PressurePenetration object for each step. The instance is also deleted internally by the
-    PressurePenetration object.
-    The PressurePenetrationState object has no constructor or methods.
-    The PressurePenetrationState object is derived from the InteractionState object.
+    """The PressurePenetrationState object stores the propagating data of a PressurePenetration object in a
+    step. One instance of this object is created internally by the PressurePenetration object for each step. The
+    instance is also deleted internally by the PressurePenetration object. The PressurePenetrationState object
+    has no constructor or methods. The PressurePenetrationState object is derived from the InteractionState
+    object.
 
     .. note::
         This object can be accessed by::

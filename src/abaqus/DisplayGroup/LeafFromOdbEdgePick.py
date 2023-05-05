@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class LeafFromOdbEdgePick(Leaf):
-    """The LeafFromOdbEdgePick object can be used whenever a Leaf object is expected as an
-    argument. Leaf objects are used to specify the items in a display group. Leaf objects
-    are constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    The LeafFromOdbEdgePick object is derived from the Leaf object.
+    """The LeafFromOdbEdgePick object can be used whenever a Leaf object is expected as an argument. Leaf
+    objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects,
+    which are then used as arguments to DisplayGroup commands. The LeafFromOdbEdgePick object is derived from
+    the Leaf object.
 
     .. note::
         This object can be accessed by::
@@ -26,9 +25,8 @@ class LeafFromOdbEdgePick(Leaf):
 
     @abaqus_method_doc
     def __init__(self, edgePick: tuple):
-        """This method creates a Leaf object from a tuple containing machine readable, compact
-        strings defining the edges picked for each part instance. Leaf objects specify the items
-        in a display group.
+        """This method creates a Leaf object from a tuple containing machine readable, compact strings defining
+        the edges picked for each part instance. Leaf objects specify the items in a display group.
 
         .. note::
             This function can be accessed by::

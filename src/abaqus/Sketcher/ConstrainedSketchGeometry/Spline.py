@@ -28,6 +28,5 @@ class Spline(ConstrainedSketchGeometry):
         -------
         ConstrainedSketchGeometry
             A ConstrainedSketchGeometry object (None if the spline cannot be created).
-
         """
         ...

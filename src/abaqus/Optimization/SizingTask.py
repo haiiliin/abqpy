@@ -15,8 +15,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SizingTask(OptimizationTask):
-    """The SizingTask object defines a Sizing task.
-    The SizingTask object is derived from the OptimizationTask object.
+    """The SizingTask object defines a Sizing task. The SizingTask object is derived from the OptimizationTask
+    object.
 
     .. note::
         This object can be accessed by::

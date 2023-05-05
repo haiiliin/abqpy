@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FractureCriterion:
-    r"""The FractureCriterion object specifies fractureCriterion options for a contact
-    interaction property.
+    r"""The FractureCriterion object specifies fractureCriterion options for a contact interaction property.
 
     .. note::
         This object can be accessed by::

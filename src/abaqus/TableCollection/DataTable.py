@@ -3,12 +3,10 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class DataTable:
-    """The DataTable object is used to specify the parameter table of the respective parameter
-    table type.
-    The data type of the values in each column in the DataTable object corresponds to the
-    data type mentioned for the respective ParameterColumn object. The DataTable object
-    should be created when all the required ParameterColumn objects are created for the
-    current ParameterTable.
+    """The DataTable object is used to specify the parameter table of the respective parameter table type. The
+    data type of the values in each column in the DataTable object corresponds to the data type mentioned for
+    the respective ParameterColumn object. The DataTable object should be created when all the required
+    ParameterColumn objects are created for the current ParameterTable.
 
     .. note::
         This object can be accessed by::

@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class EulerianMotionBC(BoundaryCondition):
-    """The EulerianMotionBC object stores the data for an Eulerian mesh motion boundary
-    condition.
-    The EulerianMotionBC object is derived from the BoundaryCondition object.
+    """The EulerianMotionBC object stores the data for an Eulerian mesh motion boundary condition. The
+    EulerianMotionBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -295,8 +294,8 @@ class EulerianMotionBC(BoundaryCondition):
         volThreshold: float = 0,
         bufferSize: float = 2,
     ):
-        """This method modifies the data for an existing EulerianMotionBC object in the step where
-        it is created.
+        """This method modifies the data for an existing EulerianMotionBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -407,8 +406,8 @@ class EulerianMotionBC(BoundaryCondition):
         volThreshold: float = 0,
         bufferSize: float = 2,
     ):
-        """This method modifies the propagating data for an existing EulerianMotionBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing EulerianMotionBC object in the specified
+        step.
 
         Parameters
         ----------

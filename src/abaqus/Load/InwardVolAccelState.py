@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class InwardVolAccelState(LoadState):
-    """The InwardVolAccelState object stores the propagating data of an inward volume
-    acceleration acoustic load in a step. One instance of this object is created internally
-    by the InwardVolAccel object for each step. The instance is also deleted internally by
-    the InwardVolAccel object.
-    The InwardVolAccelState object has no constructor or methods.
-    The InwardVolAccelState object is derived from the LoadState object.
+    """The InwardVolAccelState object stores the propagating data of an inward volume acceleration acoustic load
+    in a step. One instance of this object is created internally by the InwardVolAccel object for each step. The
+    instance is also deleted internally by the InwardVolAccel object. The InwardVolAccelState object has no
+    constructor or methods. The InwardVolAccelState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

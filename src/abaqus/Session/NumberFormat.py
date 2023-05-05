@@ -7,9 +7,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class NumberFormat:
-    """The NumberFormat object is a formatting template used to define formatting options for
-    certain numeric output.This page
-    discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members
+    """The NumberFormat object is a formatting template used to define formatting options for certain numeric
+    output.This page discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established
+    /SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-
+    numberformatnumberformatpyc)Members.
 
     .. note::
         This object can be accessed by::

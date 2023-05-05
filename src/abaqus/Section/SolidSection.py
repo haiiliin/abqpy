@@ -5,10 +5,9 @@ from .Section import Section
 
 @abaqus_class_doc
 class SolidSection(Section):
-    """The ShellSection object defines the properties of a shell section. The ShellSection
-    object is derived from the Section object. The ShellSection object has no explicit
-    constructor and no methods or members.
-    The ShellSection object is derived from the Section object.
+    """The ShellSection object defines the properties of a shell section. The ShellSection object is derived
+    from the Section object. The ShellSection object has no explicit constructor and no methods or members. The
+    ShellSection object is derived from the Section object.
 
     .. note::
         This object can be accessed by::

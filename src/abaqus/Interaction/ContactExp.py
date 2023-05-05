@@ -18,9 +18,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, OFF, ON, ORIGINAL,
 
 @abaqus_class_doc
 class ContactExp(Interaction):
-    """The ContactExp object defines the contact domain and associated properties during
-    contact in an Abaqus/Explicit analysis.
-    The ContactExp object is derived from the Interaction object.
+    """The ContactExp object defines the contact domain and associated properties during contact in an
+    Abaqus/Explicit analysis. The ContactExp object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

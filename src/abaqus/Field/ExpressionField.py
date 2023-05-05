@@ -7,9 +7,8 @@ from .AnalyticalField import AnalyticalField
 
 @abaqus_class_doc
 class ExpressionField(AnalyticalField):
-    """The ExpressionField object defines a spatially varying field whose value is calculated
-    from a user-supplied mathematical expression.
-    The ExpressionField object is derived from the AnalyticalField object.
+    """The ExpressionField object defines a spatially varying field whose value is calculated from a user-
+    supplied mathematical expression. The ExpressionField object is derived from the AnalyticalField object.
 
     .. note::
         This object can be accessed by::

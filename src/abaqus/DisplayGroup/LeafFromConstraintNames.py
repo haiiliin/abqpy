@@ -10,12 +10,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class LeafFromConstraintNames(Leaf):
-    """The LeafFromConstraintNames object can be used whenever a Leaf object is expected as an
-    argument.
-    A Leaf object is used used to specify the items in a display group. Leaf objects are
-    constructed as temporary objects that are used as arguments to DisplayGroup
-    (DisplayGroup object) commands.
-    The LeafFromConstraintNames object is derived from the Leaf object.
+    """The LeafFromConstraintNames object can be used whenever a Leaf object is expected as an argument. A Leaf
+    object is used used to specify the items in a display group. Leaf objects are constructed as temporary
+    objects that are used as arguments to DisplayGroup (DisplayGroup object) commands. The
+    LeafFromConstraintNames object is derived from the Leaf object.
 
     .. note::
         This object can be accessed by::
@@ -38,8 +36,8 @@ class LeafFromConstraintNames(Leaf):
             C.DISTRIBUTING_COUPLING, C.TIE, C.RIGID_BODY, C.MPC, C.SHELL_TO_SOLID_COUPLING, C.KINEMATIC_COUPLING
         ],
     ):
-        """This method creates a Leaf object from a sequence of constraint objects. Leaf objects
-        specify the items in a display group.
+        """This method creates a Leaf object from a sequence of constraint objects. Leaf objects specify the
+        items in a display group.
 
         .. note::
             This function can be accessed by::

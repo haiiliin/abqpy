@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FilmCondition(Interaction):
-    """The FilmCondition object defines film coefficients and associated sink temperatures for
-    coupled temperature-displacement analyses.
-    The FilmCondition object is derived from the Interaction object.
+    """The FilmCondition object defines film coefficients and associated sink temperatures for coupled
+    temperature-displacement analyses. The FilmCondition object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -169,8 +168,7 @@ class FilmCondition(Interaction):
         sinkFieldName: str = "",
         sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
-        """This method modifies the data for an existing FilmCondition object in the step where it
-        is created.
+        """This method modifies the data for an existing FilmCondition object in the step where it is created.
 
         Parameters
         ----------
@@ -215,8 +213,7 @@ class FilmCondition(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
-        """This method modifies the propagating data of an existing FilmCondition object in the
-        specified step.
+        """This method modifies the propagating data of an existing FilmCondition object in the specified step.
 
         Parameters
         ----------

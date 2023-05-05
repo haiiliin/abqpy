@@ -7,8 +7,7 @@ from .ConstrainedSketchParameter import ConstrainedSketchParameter
 class Parameter(ConstrainedSketchParameter):
     @abaqus_method_doc
     def __init__(self, name: str, path: str = "", expression: str = "", previous: str = ""):
-        """This method creates a parameter and optionally associates a dimension with this
-        parameter.
+        """This method creates a parameter and optionally associates a dimension with this parameter.
 
         .. note::
             This function can be accessed by::
@@ -35,6 +34,5 @@ class Parameter(ConstrainedSketchParameter):
         -------
         sketch: ConstrainedSketch
             A ConstrainedSketch object.
-
         """
         ...

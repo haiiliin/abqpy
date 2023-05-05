@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class LineLoad(Load):
-    """The LineLoad object stores the data of an applied line load.
-    The LineLoad object is derived from the Load object.
+    """The LineLoad object stores the data of an applied line load. The LineLoad object is derived from the Load
+    object.
 
     .. note::
         This object can be accessed by::
@@ -111,8 +111,7 @@ class LineLoad(Load):
         amplitude: str = UNSET,
         system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
-        """This method modifies the data for an existing LineLoad object in the step where it is
-        created.
+        """This method modifies the data for an existing LineLoad object in the step where it is created.
 
         Parameters
         ----------
@@ -151,8 +150,7 @@ class LineLoad(Load):
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing LineLoad object in the
-        specified step.
+        """This method modifies the propagating data for an existing LineLoad object in the specified step.
 
         Parameters
         ----------

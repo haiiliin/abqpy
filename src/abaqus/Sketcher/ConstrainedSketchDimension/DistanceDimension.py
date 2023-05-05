@@ -18,9 +18,9 @@ class DistanceDimension(ConstrainedSketchDimension):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two
-        ConstrainedSketchGeometry, or aConstrainedSketchVertex and ConstrainedSketchGeometry
-        object. A distance dimension specifies the shortest distance between two entities.
+        """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry, or
+        aConstrainedSketchVertex and ConstrainedSketchGeometry object. A distance dimension specifies the
+        shortest distance between two entities.
 
         .. note::
             This function can be accessed by::
@@ -48,6 +48,5 @@ class DistanceDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

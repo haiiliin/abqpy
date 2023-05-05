@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AnimationSession(SessionBase):
-    """The following commands operate on Session objects. For more information about the
-    Session object, see Session object.
+    """The following commands operate on Session objects. For more information about the Session object, see
+    Session object.
 
     .. note::
         This object can be accessed by::
@@ -24,9 +24,9 @@ class AnimationSession(SessionBase):
     def writeImageAnimation(
         self, fileName: str, format: Literal[C.AVI, C.VRML, C.QUICKTIME, C.COMPRESSED_VRML], canvasObjects: tuple = ()
     ):
-        """This method writes the animations present in the list of canvas objects to a file. It
-        generates an animation file using the given file name and file format and uses the
-        values in the appropriate options object.
+        """This method writes the animations present in the list of canvas objects to a file. It generates an
+        animation file using the given file name and file format and uses the values in the appropriate options
+        object.
 
         Parameters
         ----------

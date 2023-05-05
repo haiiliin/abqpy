@@ -44,8 +44,8 @@ class Skin:
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
     ):
-        """This method creates a skin from a sequence of objects in a model database. At least one
-        of the optional arguments needs to be specified.
+        """This method creates a skin from a sequence of objects in a model database. At least one of the
+        optional arguments needs to be specified.
 
         .. note::
             This function can be accessed by::
@@ -85,8 +85,8 @@ class Skin:
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
     ):
-        """This method modifies underlying entities of the selected skin. At least one of the
-        optional arguments needs to be specified.
+        """This method modifies underlying entities of the selected skin. At least one of the optional arguments
+        needs to be specified.
 
         .. note::
             This function can be accessed by::

@@ -24,9 +24,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TempDisplacementDynamicsStep(AnalysisStep):
-    """The TempDisplacementDynamicsStep object is used to perform a dynamic coupled
-    thermal-stress analysis using explicit integration.
-    The TempDisplacementDynamicsStep object is derived from the AnalysisStep object.
+    """The TempDisplacementDynamicsStep object is used to perform a dynamic coupled thermal-stress analysis
+    using explicit integration. The TempDisplacementDynamicsStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

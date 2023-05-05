@@ -7,10 +7,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class PropertyTableData:
-    """A PropertyTableData is an object that is used to specify the property table of the
-    respective property table type.
-    The values in each column in the PropertyTableData object corresponds to the properties
-    and variables mentioned in the PropertyTable object.
+    """A PropertyTableData is an object that is used to specify the property table of the respective property
+    table type. The values in each column in the PropertyTableData object corresponds to the properties and
+    variables mentioned in the PropertyTable object.
 
     .. note::
         This object can be accessed by::

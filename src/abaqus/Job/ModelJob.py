@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ModelJob(Job):
-    """The ModelJob object defines a Job object which analyzes a model on a model database
-    (MDB).
-    The ModelJob object is derived from the Job object.
+    """The ModelJob object defines a Job object which analyzes a model on a model database (MDB). The ModelJob
+    object is derived from the Job object.
 
     .. note::
         This object can be accessed by::
@@ -183,8 +182,7 @@ class ModelJob(Job):
         *args,
         **kwargs,
     ):
-        """This method creates an analysis job using a model on a model database (MDB) for the
-        model definition.
+        """This method creates an analysis job using a model on a model database (MDB) for the model definition.
 
         .. note::
             This function can be accessed by::

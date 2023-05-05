@@ -5,8 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class DirectDampingByFrequencyComponent:
-    """A DirectDampingByFrequencyComponent object is used to define direct damping over a range
-    of frequencies.
+    """A DirectDampingByFrequencyComponent object is used to define direct damping over a range of frequencies.
 
     .. note::
         This object can be accessed by::

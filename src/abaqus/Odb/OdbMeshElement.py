@@ -10,8 +10,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbMeshElement:
-    """OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements
-    methods.
+    """OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements methods.
 
     .. note::
         This object can be accessed by::

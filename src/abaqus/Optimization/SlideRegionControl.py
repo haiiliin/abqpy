@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SlideRegionControl(GeometricRestriction):
-    """The SlideRegionControl object defines a slide region control geometric restriction.
-    The SlideRegionControl object is derived from the GeometricRestriction object.
+    """The SlideRegionControl object defines a slide region control geometric restriction. The
+    SlideRegionControl object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

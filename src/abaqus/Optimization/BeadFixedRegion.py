@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class BeadFixedRegion(GeometricRestriction):
-    """The BeadFixedRegion object defines a fixed region geometric restriction.
-    The BeadFixedRegion object is derived from the GeometricRestriction object.
+    """The BeadFixedRegion object defines a fixed region geometric restriction. The BeadFixedRegion object is
+    derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

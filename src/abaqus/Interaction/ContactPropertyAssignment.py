@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ContactPropertyAssignment:
-    """The ContactPropertyAssignment object stores the contact property assignment definition
-    for domain pairs in ContactExp and ContactStd objects. The ContactPropertyAssignment
-    object has no constructor or members.
+    """The ContactPropertyAssignment object stores the contact property assignment definition for domain pairs
+    in ContactExp and ContactStd objects. The ContactPropertyAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -23,8 +22,8 @@ class ContactPropertyAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
-        """This method allows modification of contact property assignments to domain pairs already
-        defined in a given step.
+        """This method allows modification of contact property assignments to domain pairs already defined in a
+        given step.
 
         Parameters
         ----------
@@ -42,8 +41,7 @@ class ContactPropertyAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
-        """This method allows addition of contact property assignments to new domain pairs in a
-        given step.
+        """This method allows addition of contact property assignments to new domain pairs in a given step.
 
         Parameters
         ----------

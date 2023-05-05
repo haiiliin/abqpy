@@ -5,8 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class InputFile:
-    """The InputFile object is used to store the definitions in an Abaqus input file. InputFile
-    objects can be created using the methods described in this section.
+    """The InputFile object is used to store the definitions in an Abaqus input file. InputFile objects can be
+    created using the methods described in this section.
 
     .. note::
         This object can be accessed by::

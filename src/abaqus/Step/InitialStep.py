@@ -21,10 +21,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class InitialStep(AnalysisStep):
-    """The InitialStep object is a placeholder that you cannot create, delete, or modify. The
-    InitialStep object exists in every model by default and is used to allow the preexisting
-    boundary conditions and interactions to be defined in the model.
-    The InitialStep object is derived from the AnalysisStep object.
+    """The InitialStep object is a placeholder that you cannot create, delete, or modify. The InitialStep object
+    exists in every model by default and is used to allow the preexisting boundary conditions and interactions
+    to be defined in the model. The InitialStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

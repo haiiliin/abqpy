@@ -32,9 +32,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StaticRiksStep(AnalysisStep):
-    """The StaticRiksStep object is used to indicate that the step should be analyzed as a
-    static load step using the modified Riks method for proportional loading cases.
-    The StaticRiksStep object is derived from the AnalysisStep object.
+    """The StaticRiksStep object is used to indicate that the step should be analyzed as a static load step
+    using the modified Riks method for proportional loading cases. The StaticRiksStep object is derived from the
+    AnalysisStep object.
 
     .. note::
         This object can be accessed by::

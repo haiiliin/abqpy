@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcentratedForce(Load):
-    """The ConcentratedForce object defines a concentrated force.
-    The ConcentratedForce object is derived from the Load object.
+    """The ConcentratedForce object defines a concentrated force. The ConcentratedForce object is derived from
+    the Load object.
 
     .. note::
         This object can be accessed by::
@@ -125,8 +125,8 @@ class ConcentratedForce(Load):
         follower: Boolean = OFF,
         localCsys: Optional[int] = None,
     ):
-        """This method modifies the data for an existing ConcentratedForce object in the step where
-        it is created.
+        """This method modifies the data for an existing ConcentratedForce object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -170,8 +170,8 @@ class ConcentratedForce(Load):
         cf3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ConcentratedForce object in
-        the specified step.
+        """This method modifies the propagating data for an existing ConcentratedForce object in the specified
+        step.
 
         Parameters
         ----------

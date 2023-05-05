@@ -50,7 +50,6 @@ class CellArray(List[Cell]):
         -------
         CellArray
             A CellArray object.
-
         """
         ...
 
@@ -87,17 +86,14 @@ class CellArray(List[Cell]):
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Cell, List[Cell]]:
-        """This method returns the object or objects in the CellArray located at the given
-        coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
-        returns any entity that is at the arbitrary point specified or at a distance of less
-        than 1E-6 from the arbitrary point. If nothing is found, findAt uses the tolerance for
-        imprecise geometry (applicable only for imprecise geometric entities). The arbitrary
-        point must not be shared by a second cell. If two cells intersect or coincide at the
-        arbitrary point, findAt chooses the first cell that it encounters, and you should not
-        rely on the return value being consistent.
-        findAt will always try to find objects among all the cells in the part or assembly
-        instance and will not restrict itself to a subset even if the CellArray represents such
-        subset.
+        """This method returns the object or objects in the CellArray located at the given coordinates. findAt
+        initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any entity that is at the
+        arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is
+        found, findAt uses the tolerance for imprecise geometry (applicable only for imprecise geometric
+        entities). The arbitrary point must not be shared by a second cell. If two cells intersect or coincide
+        at the arbitrary point, findAt chooses the first cell that it encounters, and you should not rely on the
+        return value being consistent. findAt will always try to find objects among all the cells in the part or
+        assembly instance and will not restrict itself to a subset even if the CellArray represents such subset.
 
         Parameters
         ----------
@@ -123,21 +119,19 @@ class CellArray(List[Cell]):
         -------
         Cell
             A Cell object.
-
         """
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
-        the faces that are referenced by exactly one of the cells in the sequence.
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns the faces
+        that are referenced by exactly one of the cells in the sequence.
 
         Returns
         -------
         FaceArray
             A FaceArray object representing the faces on the exterior of the cells.
-
         """
         ...
 
@@ -153,10 +147,9 @@ class CellArray(List[Cell]):
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, List[Cell]]:
-        """This method returns the object or objects in the CellArray identified using the
-        specified **mask**. This command is generated when the JournalOptions are set to
-        COMPRESSEDINDEX. When large number of objects are involved, this method is highly
-        efficient.
+        """This method returns the object or objects in the CellArray identified using the specified **mask**.
+        This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large number of
+        objects are involved, this method is highly efficient.
 
         Parameters
         ----------
@@ -183,7 +176,6 @@ class CellArray(List[Cell]):
         -------
         str
             A String specifying the object or objects.
-
         """
         ...
 
@@ -218,7 +210,6 @@ class CellArray(List[Cell]):
         -------
         CellArray
             A CellArray object, which is a sequence of Cell objects.
-
         """
         ...
 
@@ -229,8 +220,7 @@ class CellArray(List[Cell]):
         center2: Tuple[float, float, float],
         radius: float,
     ) -> CellArray:
-        """This method returns an array of cell objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of cell objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -247,14 +237,12 @@ class CellArray(List[Cell]):
         -------
         CellArray
             A CellArray object, which is a sequence of Cell objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> CellArray:
-        """This method returns an array of cell objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of cell objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -267,14 +255,13 @@ class CellArray(List[Cell]):
         -------
         CellArray
             A CellArray object, which is a sequence of Cell objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the cell sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the cell sequence.
 
         Returns
         -------

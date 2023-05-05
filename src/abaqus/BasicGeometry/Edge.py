@@ -66,14 +66,13 @@ class Edge:
 
     @abaqus_method_doc
     def isTangentFlipped(self) -> Boolean:
-        """This method determines whether the tangent to the edge is flipped from its default
-        direction by the use of the flipTangent method on a Part object.
+        """This method determines whether the tangent to the edge is flipped from its default direction by the
+        use of the flipTangent method on a Part object.
 
         Returns
         -------
         Boolean
             A Boolean value of True if the tangent is flipped and False if not.
-
         """
         ...
 
@@ -107,14 +106,12 @@ class Edge:
 
     @abaqus_method_doc
     def getFaces(self) -> Tuple[int]:
-        """This method returns a sequence consisting of the face ids of the faces which share this
-        edge.
+        """This method returns a sequence consisting of the face ids of the faces which share this edge.
 
         Returns
         -------
         Tuple[int]
             A tuple of integers.
-
         """
         ...
 
@@ -126,14 +123,13 @@ class Edge:
         -------
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getEdgesByEdgeAngle(self, angle: str) -> EdgeArray:
-        """This method returns an array of Edge objects that are obtained by recursively finding
-        adjacent edges that are at an angle of less than or equal to the specified face angle.
+        """This method returns an array of Edge objects that are obtained by recursively finding adjacent edges
+        that are at an angle of less than or equal to the specified face angle.
 
         Parameters
         ----------
@@ -144,7 +140,6 @@ class Edge:
         -------
         EdgeArray
             An EdgeArray object, which is a sequence of Edgeobjects.
-
         """
         ...
 
@@ -156,7 +151,6 @@ class Edge:
         -------
         MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects.
-
         """
         ...
 
@@ -168,7 +162,6 @@ class Edge:
         -------
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
-
         """
         ...
 
@@ -200,7 +193,6 @@ class Edge:
         -------
         float
             A Float.
-
         """
         ...
 

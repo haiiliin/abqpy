@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SectionAssignment:
-    """The SectionAssignment object is used to specify a section assignment on an assembly or
-    part. Section assignments on the assembly are limited to connector elements only.
+    """The SectionAssignment object is used to specify a section assignment on an assembly or part. Section
+    assignments on the assembly are limited to connector elements only.
 
     .. note::
         This object can be accessed by::
@@ -111,8 +111,8 @@ class SectionAssignment:
 
     @abaqus_method_doc
     def getVertices(self):
-        """This method is only valid for connector section assignments. This method returns a
-        sequence consisting of tuples of coordinates of the connector's endpoints.
+        """This method is only valid for connector section assignments. This method returns a sequence
+        consisting of tuples of coordinates of the connector's endpoints.
 
         Returns
         -------

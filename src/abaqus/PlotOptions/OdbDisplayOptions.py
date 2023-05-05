@@ -10,10 +10,9 @@ from .DGSymbolOptions import DGSymbolOptions
 
 @abaqus_class_doc
 class OdbDisplayOptions:
-    """The OdbDisplayOptions object stores the display options associated with an OdbInstance
-    object. This object does not have a constructor. Abaqus creates the OdbDisplayOptions
-    object when an OdbInstance object is created using the display options associated with
-    the current viewport at the time of creation.
+    """The OdbDisplayOptions object stores the display options associated with an OdbInstance object. This
+    object does not have a constructor. Abaqus creates the OdbDisplayOptions object when an OdbInstance object
+    is created using the display options associated with the current viewport at the time of creation.
 
     .. note::
         This object can be accessed by::

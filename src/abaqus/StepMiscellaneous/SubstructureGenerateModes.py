@@ -5,8 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class SubstructureGenerateModes:
-    """A SubstructureGenerateModes object is used to define the modes to be used in a modal
-    dynamic analysis.
+    """A SubstructureGenerateModes object is used to define the modes to be used in a modal dynamic analysis.
 
     .. note::
         This object can be accessed by::

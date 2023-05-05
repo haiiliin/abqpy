@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class VelocityDependence:
-    r"""The VelocityDependence object specifies the dependence of the permeability of a material
-    on the velocity of fluid flow.
+    r"""The VelocityDependence object specifies the dependence of the permeability of a material on the velocity
+    of fluid flow.
 
     .. note::
         This object can be accessed by::

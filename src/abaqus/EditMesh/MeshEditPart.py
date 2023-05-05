@@ -20,8 +20,8 @@ class Node(MeshNode):
 
 
 class MeshEditPart(PartBase):
-    """The following commands operate on Part objects. For more information about the Part
-    object, see Part object.
+    """The following commands operate on Part objects. For more information about the Part object, see Part
+    object.
 
     .. note::
         This object can be accessed by::
@@ -31,8 +31,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def adjustMidsideNode(self, cornerNodes: Sequence[Node], parameter: float):
-        """This method is used to adjust the midside node of second-order elements of an orphan
-        mesh part.
+        """This method is used to adjust the midside node of second-order elements of an orphan mesh part.
 
         Parameters
         ----------
@@ -56,8 +55,8 @@ class MeshEditPart(PartBase):
         thicknessDir: Optional[float] = None,
         moveLayers: Boolean = False,
     ):
-        """This method is used to collapse short element edges and delete collapsed elements, or
-        grow short element edges, on an orphan mesh part composed of linear elements.
+        """This method is used to collapse short element edges and delete collapsed elements, or grow short
+        element edges, on an orphan mesh part composed of linear elements.
 
         Parameters
         ----------
@@ -93,8 +92,8 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def collapseMeshEdge(self, edge: str, collapseMethod: Literal[C.FORWARD, C.REVERSE, C.AVERAGE]):
-        """This method collapses an edge of a quadrilateral or triangular element of an orphan mesh
-        part or part instance.
+        """This method collapses an edge of a quadrilateral or triangular element of an orphan mesh part or part
+        instance.
 
         Parameters
         ----------
@@ -108,8 +107,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def combineElement(self, elements: tuple):
-        """This method combines two triangular elements of an orphan mesh part or an Abaqus native
-        mesh.
+        """This method combines two triangular elements of an orphan mesh part or an Abaqus native mesh.
 
         Parameters
         ----------
@@ -120,16 +118,15 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def convertSolidMeshToShell(self):
-        """This method removes all solid elements from an orphan mesh part and creates triangular
-        or quadrilateral shell elements along their outer faces.
-        """
+        """This method removes all solid elements from an orphan mesh part and creates triangular or
+        quadrilateral shell elements along their outer faces."""
         ...
 
     @abaqus_method_doc
     def deleteElement(self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF):
-        """This method deletes the given elements from an orphan mesh part or an Abaqus native
-        mesh. If the elements belong to an Abaqus native mesh then the elements must have been
-        generated using the bottom-up meshing technique.
+        """This method deletes the given elements from an orphan mesh part or an Abaqus native mesh. If the
+        elements belong to an Abaqus native mesh then the elements must have been generated using the bottom-up
+        meshing technique.
 
         Parameters
         ----------
@@ -170,8 +167,8 @@ class MeshEditPart(PartBase):
         localCsys: Optional[DatumCsys] = None,
         projectToGeometry: Boolean = ON,
     ):
-        """This method changes the coordinates of the given nodes on an orphan mesh part or on an
-        Abaqus native mesh.
+        """This method changes the coordinates of the given nodes on an orphan mesh part or on an Abaqus native
+        mesh.
 
         Parameters
         ----------
@@ -218,8 +215,8 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def projectNode(self, nodes: Sequence[MeshNode], projectionReference: str):
-        """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
-        object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh.
+        """This method projects the given nodes onto a mesh entity, geometric entity, or a datum object. The
+        nodes may belong to an orphan mesh part or to an Abaqus native mesh.
 
         Parameters
         ----------
@@ -261,8 +258,8 @@ class MeshEditPart(PartBase):
         constantThicknessCorners: Boolean = False,
         extendElementSets: Boolean = False,
     ):
-        """This method generates a solid or shell mesh from an orphan mesh surface by generating
-        layers of elements that propagate out normal to the surface boundary.
+        """This method generates a solid or shell mesh from an orphan mesh surface by generating layers of
+        elements that propagate out normal to the surface boundary.
 
         Parameters
         ----------
@@ -302,8 +299,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def mergeElement(self, edge: str, elements: str):
-        """Merge a selection of elements arranged in layers on an orphan mesh part into a single
-        layer.
+        """Merge a selection of elements arranged in layers on an orphan mesh part into a single layer.
 
         Parameters
         ----------
@@ -327,8 +323,8 @@ class MeshEditPart(PartBase):
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
     ):
-        """Merge the nodes of an orphan mesh part, or nodes that were generated using the bottom-up
-        meshing technique.
+        """Merge the nodes of an orphan mesh part, or nodes that were generated using the bottom-up meshing
+        technique.
 
         Parameters
         ----------
@@ -357,9 +353,9 @@ class MeshEditPart(PartBase):
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
     ):
-        """Merge two nodes of an orphan mesh part or an Abaqus native mesh. If the nodes belong to
-        an Abaqus native mesh then at least one of the two nodes must have been generated using
-        the bottom-up meshing technique.
+        """Merge two nodes of an orphan mesh part or an Abaqus native mesh. If the nodes belong to an Abaqus
+        native mesh then at least one of the two nodes must have been generated using the bottom-up meshing
+        technique.
 
         Parameters
         ----------
@@ -492,8 +488,8 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def splitElement(self, elements: tuple):
-        """This method splits quadrilateral elements of an orphan mesh part or a Abaqus native mesh
-        into triangular elements.
+        """This method splits quadrilateral elements of an orphan mesh part or a Abaqus native mesh into
+        triangular elements.
 
         Parameters
         ----------
@@ -505,8 +501,8 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def splitMeshEdge(self, edge: str, parameter: float = 0):
-        """This method splits an edge of a quadrilateral or triangular element of an orphan mesh
-        part or an Abaqus native mesh.
+        """This method splits an edge of a quadrilateral or triangular element of an orphan mesh part or an
+        Abaqus native mesh.
 
         Parameters
         ----------
@@ -554,8 +550,8 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def swapMeshEdge(self, edge: str):
-        """This method swaps the diagonal of two adjacent triangular elements of an orphan mesh
-        part or an Abaqus native mesh.
+        """This method swaps the diagonal of two adjacent triangular elements of an orphan mesh part or an
+        Abaqus native mesh.
 
         Parameters
         ----------
@@ -579,21 +575,23 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def redoMeshEdit(self):
-        """This method executes the edit mesh or the bottom-up meshing operation most recently
-        undone by the undoMeshEdit method on an part. A redo action must be currently available
-        for the part. This implies that the user must have executed the undoMeshEdit method on
-        the part and that the user has not subsequently executed any further edit mesh commands
-        on the assembly. It also implies that the user provided a sufficient cache allowance to
-        store the undo operation.
+        """This method executes the edit mesh or the bottom-up meshing operation most recently undone by the
+        undoMeshEdit method on an part.
+
+        A redo action must be currently available for the part. This implies that the user must have
+        executed the undoMeshEdit method on the part and that the user has not subsequently executed any
+        further edit mesh commands on the assembly. It also implies that the user provided a sufficient
+        cache allowance to store the undo operation.
         """
         ...
 
     @abaqus_method_doc
     def undoMeshEdit(self):
-        """This method undoes the most recent edit mesh or the bottom-up meshing operation on a
-        part and restores the mesh to its previous state. An edit mesh undo action must be
-        available for the part. This implies that prior to executing an edit mesh command on the
-        part, the user enabled edit mesh undo with a sufficient cache allowance to store the
-        edit mesh operation.
+        """This method undoes the most recent edit mesh or the bottom-up meshing operation on a part and
+        restores the mesh to its previous state.
+
+        An edit mesh undo action must be available for the part. This implies that prior to executing an
+        edit mesh command on the part, the user enabled edit mesh undo with a sufficient cache allowance to
+        store the edit mesh operation.
         """
         ...

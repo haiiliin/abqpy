@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SurfaceTractionState(LoadState):
-    """The SurfaceTractionState object stores the propagating data for a SurfaceTraction object
-    in a step. One instance of this object is created internally by the SurfaceTraction
-    object for each step. The instance is also deleted internally by the SurfaceTraction
-    object.
-    The SurfaceTractionState object has no constructor or methods.
-    The SurfaceTractionState object is derived from the LoadState object.
+    """The SurfaceTractionState object stores the propagating data for a SurfaceTraction object in a step. One
+    instance of this object is created internally by the SurfaceTraction object for each step. The instance is
+    also deleted internally by the SurfaceTraction object. The SurfaceTractionState object has no constructor or
+    methods. The SurfaceTractionState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

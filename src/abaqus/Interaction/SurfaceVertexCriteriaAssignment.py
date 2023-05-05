@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceVertexCriteriaAssignment:
-    """The SurfaceVertexCriteriaAssignment object stores the surface vertex criteria assignment
-    definition for surfaces in ContactStd objects. The SurfaceVertexCriteriaAssignment
-    object has no constructor or members.
+    """The SurfaceVertexCriteriaAssignment object stores the surface vertex criteria assignment definition for
+    surfaces in ContactStd objects. The SurfaceVertexCriteriaAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -30,8 +29,8 @@ class SurfaceVertexCriteriaAssignment:
     def changeValuesInStep(
         self, stepName: str, index: int, value: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES], float]
     ):
-        """This method allows modification of surface vertex criteria assignments already defined
-        on surfaces in a given step.
+        """This method allows modification of surface vertex criteria assignments already defined on surfaces in
+        a given step.
 
         Parameters
         ----------
@@ -51,8 +50,7 @@ class SurfaceVertexCriteriaAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]):
-        """This method allows addition of surface vertex criteria assignments to new surfaces in a
-        given step.
+        """This method allows addition of surface vertex criteria assignments to new surfaces in a given step.
 
         Parameters
         ----------
@@ -71,8 +69,8 @@ class SurfaceVertexCriteriaAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing surface vertex criteria assignments from
-        a ContactStd object.
+        """The delete method allows you to delete existing surface vertex criteria assignments from a ContactStd
+        object.
 
         Parameters
         ----------

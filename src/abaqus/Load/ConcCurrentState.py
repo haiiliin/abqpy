@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcCurrentState(LoadState):
-    """The ConcCurrentState object stores the propagating data of a concentrated current in a
-    step. One instance of this object is created internally by the ConcCurrent object for
-    each step. The instance is also deleted internally by the ConcCurrent object.
-    The ConcCurrentState object has no constructor or methods.
-    The ConcCurrentState object is derived from the LoadState object.
+    """The ConcCurrentState object stores the propagating data of a concentrated current in a step. One instance
+    of this object is created internally by the ConcCurrent object for each step. The instance is also deleted
+    internally by the ConcCurrent object. The ConcCurrentState object has no constructor or methods. The
+    ConcCurrentState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

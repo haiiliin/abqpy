@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceCurrentDensity(Load):
-    """The SurfaceCurrentDensity object stores the data for a surface current.
-    The SurfaceCurrentDensity object is derived from the Load object.
+    """The SurfaceCurrentDensity object stores the data for a surface current. The SurfaceCurrentDensity object
+    is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -80,8 +80,8 @@ class SurfaceCurrentDensity(Load):
 
     @abaqus_method_doc
     def setValues(self, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM, amplitude: str = UNSET):
-        """This method modifies the data for an existing SurfaceCurrentDensity object in the step
-        where it is created.
+        """This method modifies the data for an existing SurfaceCurrentDensity object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -104,8 +104,8 @@ class SurfaceCurrentDensity(Load):
         comp3: str = "",
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing SurfaceCurrentDensity object
-        in the specified step.
+        """This method modifies the propagating data for an existing SurfaceCurrentDensity object in the
+        specified step.
 
         Parameters
         ----------

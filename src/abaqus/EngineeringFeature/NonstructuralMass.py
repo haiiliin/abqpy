@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class NonstructuralMass(Inertia):
-    """The NonstructuralMass object defines the mass contribution from nonstructural features
-    into the model.
+    """The NonstructuralMass object defines the mass contribution from nonstructural features into the model.
     The NonstructuralMass object is derived from the Inertia object.
 
     .. note::

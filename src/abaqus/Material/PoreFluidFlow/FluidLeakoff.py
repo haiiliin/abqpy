@@ -7,8 +7,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FluidLeakoff:
-    """The FluidLeakoff object specifies leak-off coefficients for pore pressure cohesive
-    elements.
+    """The FluidLeakoff object specifies leak-off coefficients for pore pressure cohesive elements.
 
     .. note::
         This object can be accessed by::

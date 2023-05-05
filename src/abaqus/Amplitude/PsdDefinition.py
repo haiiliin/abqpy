@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PsdDefinition(Amplitude):
-    """The PsdDefinition object defines the cross-spectral density frequency function for
-    random response loading.
-    The PsdDefinition object is derived from the Amplitude object.
+    """The PsdDefinition object defines the cross-spectral density frequency function for random response
+    loading. The PsdDefinition object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

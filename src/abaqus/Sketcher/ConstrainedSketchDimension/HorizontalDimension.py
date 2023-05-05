@@ -18,9 +18,8 @@ class HorizontalDimension(ConstrainedSketchDimension):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two vertices. A
-        horizontal dimension indicates the horizontal distance along the **X** axis between two
-        vertices.
+        """This method constructs a ConstrainedSketchDimension object between two vertices. A horizontal
+        dimension indicates the horizontal distance along the **X** axis between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -45,6 +44,5 @@ class HorizontalDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

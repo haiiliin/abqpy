@@ -60,8 +60,8 @@ class XYPlotBase:
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
-        """This method distributes the colors on all curves displayed in the XYPlot using the color
-        palette defined by the xyColors AutoColors object.
+        """This method distributes the colors on all curves displayed in the XYPlot using the color palette
+        defined by the xyColors AutoColors object.
 
         Parameters
         ----------
@@ -79,16 +79,17 @@ class XYPlotBase:
 
     @abaqus_method_doc
     def fitCurves(self):
-        """This method resets the transform of all the charts of the XYPlot object. It cancels any
-        zoom or pan action.
+        """This method resets the transform of all the charts of the XYPlot object.
+
+        It cancels any zoom or pan action.
         """
         ...
 
     @abaqus_method_doc
     def next(self, drawImmediately: Boolean = False):
-        """This method restores the **transform** member of the active Chart object to the next
-        setting in the transform list. (There is a list of eight transforms stored for each
-        chart.) If there is no next transform, no action is taken.
+        """This method restores the **transform** member of the active Chart object to the next setting in the
+        transform list. (There is a list of eight transforms stored for each chart.) If there is no next
+        transform, no action is taken.
 
         Parameters
         ----------
@@ -101,9 +102,9 @@ class XYPlotBase:
 
     @abaqus_method_doc
     def previous(self, drawImmediately: Boolean = False):
-        """This method restores the **transform** member of the active Chart object to the previous
-        setting in the transform list. (There is a list of eight transforms stored for each
-        chart.) If there is no next transform, no action is taken.
+        """This method restores the **transform** member of the active Chart object to the previous setting in
+        the transform list. (There is a list of eight transforms stored for each chart.) If there is no next
+        transform, no action is taken.
 
         Parameters
         ----------

@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorLock(ConnectorBehaviorOption):
-    """The ConnectorLock object defines locking criteria for one or more available components
-    of a connector's relative motion.
-    The ConnectorLock object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorLock object defines locking criteria for one or more available components of a connector's
+    relative motion. The ConnectorLock object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::
