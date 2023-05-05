@@ -50,7 +50,7 @@ class FluidInflatorProperty(ContactProperty):
         - FLUID INFLATOR PROPERTY
 
     .. versionadded:: 2019
-        The `FluidInflatorProperty` class was added.
+        The ``FluidInflatorProperty`` class was added.
     """
 
     @abaqus_method_doc

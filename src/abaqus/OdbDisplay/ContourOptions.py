@@ -130,7 +130,7 @@ class ContourOptions(DGContourOptions):
     #: default value is OFF.
     #:
     #: ..versionadded:: 2018
-    #:     The `reversedContourLegendRange` attribute was added.
+    #:     The ``reversedContourLegendRange`` attribute was added.
     reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
@@ -216,8 +216,13 @@ class ContourOptions(DGContourOptions):
     #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
     #: spectrum when **legendHideOutsideLimits** = ON.The default value is OFF.
     #:
+<<<<<<< HEAD
     #: .. versionadded:: 2019
     #:     The `legendHideOutsideLimits` attribute was added.
+=======
+    #: ..versionadded:: 2019
+    #:     The ``legendHideOutsideLimits`` attribute was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     legendHideOutsideLimits: Boolean = OFF
 
     @abaqus_method_doc
@@ -322,7 +327,7 @@ class ContourOptions(DGContourOptions):
             default value is OFF.
 
             .. versionadded:: 2018
-                The `reversedContourLegendRange` argument was added.
+                The ``reversedContourLegendRange`` argument was added.
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
@@ -386,7 +391,7 @@ class ContourOptions(DGContourOptions):
             for the contour interval when **legendHideOutsideLimits** = ON. The default value is OFF.
 
             .. versionadded:: 2019
-                The `legendHideOutsideLimits` argument was added.
+                The ``legendHideOutsideLimits`` argument was added.
 
         Raises
         ------

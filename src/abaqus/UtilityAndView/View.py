@@ -393,17 +393,17 @@ class View:
         .. note::
             This method is not available for a Layer View.
 
-        The optional arguments to `setValues` are the same as the arguments to the
-        View method, except for the `name`
-        and `autoFit` arguments. In addition, `setValues` has the following optional
+        The optional arguments to ``setValues`` are the same as the arguments to the
+        View method, except for the ``name``
+        and ``autoFit`` arguments. In addition, ``setValues`` has the following optional
         arguments:
 
         Parameters
         ----------
         options
             A View object from which the view settings are to be copied. If other
-            arguments are also supplied to `setValues`, they will override the values
-            in the View object specified by `view`.
+            arguments are also supplied to ``setValues``, they will override the values
+            in the View object specified by ``view``.
 
         drawImmediately
             A Boolean specifying the viewport should refresh immediately after the

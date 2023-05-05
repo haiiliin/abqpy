@@ -20,7 +20,7 @@ class MeanFieldMatrix:
         - CONSTITUENT
 
     .. versionadded:: 2018
-        The `MeanFieldMatrix` class was added.
+        The ``MeanFieldMatrix`` class was added.
     """
 
     @abaqus_method_doc

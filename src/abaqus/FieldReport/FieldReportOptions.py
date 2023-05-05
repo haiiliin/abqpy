@@ -65,6 +65,15 @@ class FieldReportOptions:
             A SymbolicConstant specifying the order in which values are to be sorted within a
             tabular report. Possible values are ASCENDING and DESCENDING. The default value is
             ASCENDING.
+<<<<<<< HEAD
+=======
+        printLocalCSYS
+            A Boolean specifying whether to include the local coordinate system values in the
+            tabular report. The default value is OFF.
+
+            .. versionadded:: 2022
+                The ``printLocalCSYS`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

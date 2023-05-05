@@ -46,3 +46,45 @@ class DatumCsys(Datum):
 
     #: A DatumAxis object specifying the 3-direction of the coordinate system.
     axis3: DatumAxis = DatumAxis()
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def globalToLocal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+        """This method transforms specified coordinates in the global coordinate system into this
+        local coordinate system.
+
+        .. versionadded:: 2022
+            The ``globalToLocal`` method was added.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the global coordinate system.
+
+        Returns
+        -------
+        Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this local coordinate system.
+        """
+        ...
+
+    @abaqus_method_doc
+    def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+
+        .. versionadded:: 2022
+            The ``localToGlobal`` method was added.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the local coordinate system.
+
+        Returns
+        -------
+        Tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this global coordinate system.
+        """
+        ...
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
