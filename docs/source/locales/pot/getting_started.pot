@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 00:55+0000\n"
+"POT-Creation-Date: 2023-05-05 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,6 +146,10 @@ msgstr ""
 msgid "Extract Output Data"
 msgstr ""
 
-#: ../../getting_started.md:173
+#: ../../getting_started.md:174
+msgid "`abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE. If you run the script under the debug mode, the script will not be submitted to Abaqus, but it will run in the Python interpreter where `abqpy` is installed. Since `abqpy` does not implement the whole Abaqus/Python APIs, the script may not (and most likely) run correctly. However, for some simple scripts, it may work, in this way you can use the debugger to check the variables in the Abaqus API roughly. But still, the script will not be submitted to Abaqus."
+msgstr ""
+
+#: ../../getting_started.md:182
 msgid "Comments"
 msgstr ""
