@@ -108,11 +108,11 @@ def openOdb(path: str, readOnly: Boolean = OFF, readInternalSets: Boolean = OFF)
         A String specifying the path to an existing output database (`.odb`) file.
     readOnly
         A Boolean specifying whether the file will permit only read access or both read and
-        write access. The initial value is `False`, indicating that both read and write access
+        write access. The initial value is ``False``, indicating that both read and write access
         will be permitted.
     readInternalSets
         A Boolean specifying whether the file will permit access to sets specified as Internal
-        on the database. The initial value is `False`, indicating that internal sets will not be
+        on the database. The initial value is ``False``, indicating that internal sets will not be
         read.
 
     Returns
@@ -167,8 +167,8 @@ def upgradeOdb(existingOdbPath: str, upgradedOdbPath: str):
     ...
 
 
-# The following method was originally in the `OdbSequenceAnalyticSurfaceSegment` page documentation
-# But it accessed only in `odbAccess` module, which is importing `abaqus.Odb.OdbCommands`
+# The following method was originally in the ``OdbSequenceAnalyticSurfaceSegment`` page documentation
+# But it accessed only in ``odbAccess`` module, which is importing `abaqus.Odb.OdbCommands`
 def AnalyticSurfaceProfile() -> OdbSequenceAnalyticSurfaceSegment:
     """This method creates a OdbSequenceAnalyticSurfaceSegment object.
 
