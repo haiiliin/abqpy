@@ -25,7 +25,7 @@ class GapRadiation:
         - GAP RADIATION
 
     .. versionadded:: 2021
-        The `GapRadiation` class was added.
+        The ``GapRadiation`` class was added.
     """
 
     @abaqus_method_doc

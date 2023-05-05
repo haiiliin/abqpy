@@ -68,12 +68,19 @@ class ContactExp(Interaction):
 
     #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
+<<<<<<< HEAD
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
+=======
+    #:
+    #: .. versionchanged:: 2022
+    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
+    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
     #:
     #: .. versionadded:: 2020
-    #:     The `polarityAssignments` attribute was added.
+    #:     The ``polarityAssignments`` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
     @overload
@@ -140,21 +147,31 @@ class ContactExp(Interaction):
             in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceCrushTriggerAssignments` argument was added.
+                The ``surfaceCrushTriggerAssignments`` argument was added.
         surfaceFrictionAssignments
             A SurfaceFrictionAssignment object specifying the surface friction assignments in the
             contact domain.
 
             .. versionadded:: 2021
+<<<<<<< HEAD
                 The `surfaceFrictionAssignments` argument was added.
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
+=======
+                The ``surfaceFrictionAssignments`` argument was added.
+        mainSecondaryAssignments
+            A MainSecondaryAssignment object specifying the main-secondary assignments in the
+            contact domain.
+
+            .. versionchanged:: 2022
+                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
             .. versionadded:: 2020
-                The `polarityAssignments` argument was added.
+                The ``polarityAssignments`` argument was added.
 
         Returns
         -------
@@ -204,13 +221,13 @@ class ContactExp(Interaction):
             in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceCrushTriggerAssignments` argument was added.
+                The ``surfaceCrushTriggerAssignments`` argument was added.
         surfaceFrictionAssignments
             A SurfaceFrictionAssignment object specifying the surface friction assignments in the
             contact domain.
 
             .. versionadded:: 2021
-                The `surfaceFrictionAssignments` argument was added.
+                The ``surfaceFrictionAssignments`` argument was added.
         useAllstar
             A Boolean specifying whether the contacting surface pair consists of all exterior faces,
             shell edges, beam segments, analytical rigid surfaces, and, when applicable, Eulerian
@@ -271,6 +288,12 @@ class ContactExp(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
+<<<<<<< HEAD
+=======
+
+            .. versionchanged:: 2022
+                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
             contains three entries:
@@ -282,7 +305,7 @@ class ContactExp(Interaction):
               SPOS, SNEG, and TWO_SIDED.
 
               .. versionadded:: 2020
-                    The `polarityAssignments` argument was added.
+                    The ``polarityAssignments`` argument was added.
 
         Returns
         -------

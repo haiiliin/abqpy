@@ -684,6 +684,12 @@ class ContactProperty(InteractionProperty):
             A Float specifying the fraction of converted heat distributed to the slave surface.
             The default value is 0.5.
 
+<<<<<<< HEAD
+=======
+            .. versionchanged:: 2022
+                The argument ``slaveFraction`` was renamed to ``secondaryFraction``.
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Returns
         -------
         GapHeatGeneration
@@ -703,10 +709,23 @@ class ContactProperty(InteractionProperty):
 
         Parameters
         ----------
+<<<<<<< HEAD
         masterEmissivity
             A Float specifying the emissivity of the master surface.
         slaveEmissivity
             A Float specifying the emissivity of the slave surface.
+=======
+        mainEmissivity
+            A Float specifying the emissivity of the main surface.
+
+            .. versionchanged:: 2022
+                The argument ``masterEmissivity`` was renamed to ``mainEmissivity``.
+        secondaryEmissivity
+            A Float specifying the emissivity of the secondary surface.
+
+            .. versionchanged:: 2022
+                The argument ``slaveEmissivity`` was renamed to ``secondaryEmissivity``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         table
             A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
             clearance, dd.

@@ -153,7 +153,7 @@ class ElemType:
     #: nonlinear asymmetric deformation.
     #:
     #: .. versionadded:: 2019
-    #:     The `numFourierModes` attribute was added.
+    #:     The ``numFourierModes`` attribute was added.
     numFourierModes: int = 1
 
     #: An Int specifying the positive offset number for specifying the additional nodes needed
@@ -161,9 +161,26 @@ class ElemType:
     #: nonlinear asymmetric deformation.
     #:
     #: .. versionadded:: 2019
-    #:     The `nodeOffset` attribute was added.
+    #:     The ``nodeOffset`` attribute was added.
     nodeOffset: Optional[int] = None
 
+<<<<<<< HEAD
+=======
+    #: A Float specifying the linear kinematic conversion value.This argument is applicable
+    #: only to some Abaqus/Explicit elements.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``linearKinematicCtrl`` attribute was added.
+    linearKinematicCtrl: Optional[float] = None
+
+    #: A Float specifying the initial gap opening.This parameter is applicable only to some
+    #: Abaqus/Standard elements.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``initialGapOpening`` attribute was added.
+    initialGapOpening: Optional[float] = None
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -306,14 +323,30 @@ class ElemType:
             nonlinear asymmetric deformation.
 
             .. versionadded:: 2019
-                The `numFourierModes` argument was added.
+                The ``numFourierModes`` argument was added.
         nodeOffset
             An Int specifying the positive offset number for specifying the additional nodes needed
             in the connectivity.This argument is applicable only for axisymmetric elements with
             nonlinear asymmetric deformation.
 
             .. versionadded:: 2019
+<<<<<<< HEAD
                 The `nodeOffset` argument was added.
+=======
+                The ``nodeOffset`` argument was added.
+        linearKinematicCtrl
+            A Float specifying the linear kinematic conversion value.This argument is applicable
+            only to some Abaqus/Explicit elements.
+
+            .. versionadded:: 2022
+                The ``linearKinematicCtrl`` argument was added.
+        initialGapOpening
+            A Float specifying the initial gap opening.This parameter is applicable only to some
+            Abaqus/Standard elements.
+
+            .. versionadded:: 2022
+                The ``initialGapOpening`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
