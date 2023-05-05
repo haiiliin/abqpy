@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2529,7 +2529,7 @@ msgid "This method returns the edges on the exterior of the faces in the FaceArr
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:4
-msgid "The `getExteriorEdges` method was added."
+msgid "The ``getExteriorEdges`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:7
@@ -2545,7 +2545,7 @@ msgid "This method returns the cell faces on the exterior of the CellArray. That
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:4
-msgid "The `getExteriorFaces` method was added."
+msgid "The ``getExteriorFaces`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:7
@@ -3243,7 +3243,7 @@ msgid "A Boolean specifying whether Abaqus/CAE should attempt to minimize the me
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:25
-msgid "A list of SymbolicConstants specifying preferred Abaqus element types. This setting is relevant only when Abaqus/CAE is run interactively. When a part or part instance that has never been assigned an element type is meshed, this list is consulted. If an element type appropriate to the geometry is found in the list, it is assigned to the geometry. Multiple element types representing different shapes (for example, triangles and quadrilaterals) can be assigned in combination, but only element types that are compatible with each other are used. When more than one appropriate element type is found in the list, the first element type encountered takes precedence. This list is also consulted when populating the element type dialog; preferred types are selected by default for a region not previously assigned any element types. The default value is an empty list.  .. versionadded:: 2018     The `guiPreferredElements` argument was added."
+msgid "A list of SymbolicConstants specifying preferred Abaqus element types. This setting is relevant only when Abaqus/CAE is run interactively. When a part or part instance that has never been assigned an element type is meshed, this list is consulted. If an element type appropriate to the geometry is found in the list, it is assigned to the geometry. Multiple element types representing different shapes (for example, triangles and quadrilaterals) can be assigned in combination, but only element types that are compatible with each other are used. When more than one appropriate element type is found in the list, the first element type encountered takes precedence. This list is also consulted when populating the element type dialog; preferred types are selected by default for a region not previously assigned any element types. The default value is an empty list.  .. versionadded:: 2018     The ``guiPreferredElements`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:25
@@ -3251,5 +3251,5 @@ msgid "A list of SymbolicConstants specifying preferred Abaqus element types. Th
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:37
-msgid "The `guiPreferredElements` argument was added."
+msgid "The ``guiPreferredElements`` argument was added."
 msgstr ""

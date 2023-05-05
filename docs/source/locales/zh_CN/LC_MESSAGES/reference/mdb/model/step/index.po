@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -3303,14 +3303,14 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:50 of
 msgid ""
 "An Int specifying the maximum number of increments in a step. The default"
-" value is 100.  .. versionadded:: 2017     The `maxNumInc` attribute was "
-"added to the GeostaticStep class."
+" value is 100.  .. versionadded:: 2017     The ``maxNumInc`` attribute "
+"was added to the GeostaticStep class."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:68
 #: abaqus.Step.StepModel.GeostaticStep.maxNumInc:3
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:52 of
-msgid "The `maxNumInc` attribute was added to the GeostaticStep class."
+msgid "The ``maxNumInc`` attribute was added to the GeostaticStep class."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:71
@@ -6674,9 +6674,7 @@ msgid "An ExplicitDynamicsStep object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod:7
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod:7
-#: of
+#: abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod:7 of
 msgid "The `improvedDtMethod` attribute was added."
 msgstr ""
 
@@ -7313,6 +7311,12 @@ msgstr ""
 msgid "A TempDisplacementDynamicsStep object."
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod:7
+#: of
+msgid "The ``improvedDtMethod`` attribute was added."
+msgstr ""
+
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:1
 #: of
 msgid "This method modifies the TempDisplacementDynamicsStep object."
@@ -7354,4 +7358,15 @@ msgid ""
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
 "#simaker-stepsetvaluespyc>`__."
 msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the maximum number "
+#~ "of increments in a step. The "
+#~ "default value is 100.  .. versionadded::"
+#~ " 2017     The `maxNumInc` attribute was "
+#~ "added to the GeostaticStep class."
+#~ msgstr ""
+
+#~ msgid "The `maxNumInc` attribute was added to the GeostaticStep class."
+#~ msgstr ""
 

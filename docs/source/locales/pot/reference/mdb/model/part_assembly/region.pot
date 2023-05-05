@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2344,7 +2344,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:24
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:24
-msgid "A Boolean specifying whether the created set is unsorted. The default value is False.  .. versionadded:: 2018     The `unsorted` argument was added."
+msgid "A Boolean specifying whether the created set is unsorted. The default value is False.  .. versionadded:: 2018     The ``unsorted`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:24
@@ -2354,7 +2354,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:26
 #: ../../../../src/abaqus/Region/Set.py:docstring of abaqus.Region.Set.Set.SetFromNodeLabels:26
-msgid "The `unsorted` argument was added."
+msgid "The ``unsorted`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Skin:1
@@ -2564,7 +2564,7 @@ msgstr ""
 #: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:101
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:102
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:21
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:20
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:24
 msgid ":class:`Surface`"
 msgstr ""
 
@@ -3216,7 +3216,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionAssembly.py:docstring of abaqus.Region.RegionAssembly.RegionAssembly.Surface:100
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceByBoolean:20
-#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:19
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:23
 msgid "A Surface object."
 msgstr ""
 
@@ -3462,7 +3462,11 @@ msgid "Check `SurfaceFromElsets on help.3ds.com/2018 <https://help.3ds.com/2018/
 msgstr ""
 
 #: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:15
-msgid "A sequence of element sets. For example,`elementSetSeq=((elset1, S1),(elset2, S2))`where `elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` indicate the side of the element set."
+msgid "A sequence of element sets. For example::      elementSetSeq=((elset1, S1),(elset2, S2))      where ``elset1=mdb.models[name].rootAssembly.sets['Clutch']``     and ``S1`` and ``S2`` indicate the side of the element set."
+msgstr ""
+
+#: ../../../../src/abaqus/Region/Surface.py:docstring of abaqus.Region.Surface.Surface.SurfaceFromElsets:16
+msgid "A sequence of element sets. For example::"
 msgstr ""
 
 #: ../../docstring of abaqus.Region.Surface.Surface.instances:1
