@@ -9,12 +9,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 @abaqus_class_doc
 class ConcentratedRadiationToAmbientState(InteractionState):
     """The ConcentratedRadiationToAmbientState object stores the propagating data for a
-    ConcentratedRadiationToAmbient object. One instance of this object is created internally
-    by the ConcentratedRadiationToAmbient object for each step. The instance is also deleted
-    internally by the ConcentratedRadiationToAmbient object.
-    The ConcentratedRadiationToAmbientState object has no constructor or methods.
-    The ConcentratedRadiationToAmbientState object is derived from the InteractionState
-    object.
+    ConcentratedRadiationToAmbient object. One instance of this object is created internally by the
+    ConcentratedRadiationToAmbient object for each step. The instance is also deleted internally by the
+    ConcentratedRadiationToAmbient object. The ConcentratedRadiationToAmbientState object has no constructor or
+    methods. The ConcentratedRadiationToAmbientState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

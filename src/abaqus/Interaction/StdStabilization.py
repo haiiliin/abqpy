@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class StdStabilization(ContactStabilization):
-    """The StdStabilization object is used in conjunction with ContactStd in Abaqus/Standard
-    analyses to specify contact stabilization.
-    The StdStabilization object is derived from the ContactStabilization object.
+    """The StdStabilization object is used in conjunction with ContactStd in Abaqus/Standard analyses to specify
+    contact stabilization. The StdStabilization object is derived from the ContactStabilization object.
 
     .. note::
         This object can be accessed by::

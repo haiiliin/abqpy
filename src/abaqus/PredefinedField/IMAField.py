@@ -5,8 +5,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class IMAField:
-    """A IMAField is an object used to define material instance name volume fractions for the
-    MaterialAssignment predefined field.
+    """A IMAField is an object used to define material instance name volume fractions for the MaterialAssignment
+    predefined field.
 
     .. note::
         This object can be accessed by::

@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcentrationBCState(BoundaryConditionState):
-    """The ConcentrationBCState object stores the propagating data for a concentration boundary
-    condition in a step. One instance of this object is created internally by the
-    ConcentrationBC object for each step. The instance is also deleted internally by the
-    ConcentrationBC object.
-    The ConcentrationBCState object has no constructor or methods.
-    The ConcentrationBCState object is derived from the BoundaryConditionState object.
+    """The ConcentrationBCState object stores the propagating data for a concentration boundary condition in a
+    step. One instance of this object is created internally by the ConcentrationBC object for each step. The
+    instance is also deleted internally by the ConcentrationBC object. The ConcentrationBCState object has no
+    constructor or methods. The ConcentrationBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

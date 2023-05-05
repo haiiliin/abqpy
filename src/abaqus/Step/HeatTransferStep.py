@@ -35,9 +35,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class HeatTransferStep(AnalysisStep):
-    """The HeatTransferStep object is used to control uncoupled heat transfer for either
-    transient or steady-state response.
-    The HeatTransferStep object is derived from the AnalysisStep object.
+    """The HeatTransferStep object is used to control uncoupled heat transfer for either transient or steady-
+    state response. The HeatTransferStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

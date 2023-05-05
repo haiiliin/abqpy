@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ConcentratedChargeState(LoadState):
-    """The ConcentratedChargeState object stores the propagating data of a concentrated charge
-    in a step. One instance of this object is created internally by the ConcCharge object
-    for each step. The instance is also deleted internally by the ConcCharge object.
-    The ConcentratedChargeState object has no constructor or methods.
-    The ConcentratedChargeState object is derived from the LoadState object.
+    """The ConcentratedChargeState object stores the propagating data of a concentrated charge in a step. One
+    instance of this object is created internally by the ConcCharge object for each step. The instance is also
+    deleted internally by the ConcCharge object. The ConcentratedChargeState object has no constructor or
+    methods. The ConcentratedChargeState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AxisData:
-    """The AxisData object is used to store the data attributes of axes. An AxisData object is
-    automatically created when creating an Axis object.
+    """The AxisData object is used to store the data attributes of axes. An AxisData object is automatically
+    created when creating an Axis object.
 
     .. note::
         This object can be accessed by::

@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class FluidCavityPressureBCState(BoundaryConditionState):
-    """The FluidCavityPressureBCState object stores the propagating data for a fluid cavity
-    pressure boundary condition in a step. One instance of this object is created internally
-    by the FluidCavityPressureBC object for each step. The instance is also deleted
-    internally by the FluidCavityPressureBC object.
-    The FluidCavityPressureBCState object has no constructor or methods.
-    The FluidCavityPressureBCState object is derived from the BoundaryConditionState object.
+    """The FluidCavityPressureBCState object stores the propagating data for a fluid cavity pressure boundary
+    condition in a step. One instance of this object is created internally by the FluidCavityPressureBC object
+    for each step. The instance is also deleted internally by the FluidCavityPressureBC object. The
+    FluidCavityPressureBCState object has no constructor or methods. The FluidCavityPressureBCState object is
+    derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

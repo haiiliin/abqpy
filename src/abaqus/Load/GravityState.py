@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class GravityState(LoadState):
-    """The GravityState object stores the propagating data for a gravity load in a step. One
-    instance of this object is created internally by the Gravity object for each step. The
-    instance is also deleted internally by the Gravity object.
-    The GravityState object has no constructor or methods.
-    The GravityState object is derived from the LoadState object.
+    """The GravityState object stores the propagating data for a gravity load in a step. One instance of this
+    object is created internally by the Gravity object for each step. The instance is also deleted internally by
+    the Gravity object. The GravityState object has no constructor or methods. The GravityState object is
+    derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

@@ -7,12 +7,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Leaf:
-    """Leaf objects are used to specify the items in a display group. Leaf objects are
-    constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    Leaf objects have similarities to Set objects; however, Leaf objects are evaluated when
-    the DisplayGroup expression is evaluated, and they can have SymbolicConstant values
-    (which are also evaluated when the DisplayGroup expression is evaluated).
+    """Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary
+    objects, which are then used as arguments to DisplayGroup commands. Leaf objects have similarities to Set
+    objects; however, Leaf objects are evaluated when the DisplayGroup expression is evaluated, and they can
+    have SymbolicConstant values (which are also evaluated when the DisplayGroup expression is evaluated).
 
     .. note::
         This object can be accessed by::

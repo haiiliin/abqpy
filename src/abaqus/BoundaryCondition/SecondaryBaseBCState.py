@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SecondaryBaseBCState(BoundaryConditionState):
-    """The SecondaryBaseBCState object stores the propagating data for a slave base
-    boundary condition in a step. One instance of this object is created internally by the
-    SecondaryBaseBC object for each step. The instance is also deleted internally by the
-    SecondaryBaseBC object.
-    The SecondaryBaseBCState object has no constructor or methods.
-    The SecondaryBaseBCState object is derived from the BoundaryConditionState object.
+    """The SecondaryBaseBCState object stores the propagating data for a slave base boundary condition in a
+    step. One instance of this object is created internally by the SecondaryBaseBC object for each step. The
+    instance is also deleted internally by the SecondaryBaseBC object. The SecondaryBaseBCState object has no
+    constructor or methods. The SecondaryBaseBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

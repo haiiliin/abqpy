@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Equation(Constraint):
-    """The Equation object defines a linear multi-point constraint between a set of degrees of
-    freedom.
-    The Equation object is derived from the ConstrainedSketchConstraint object.
+    """The Equation object defines a linear multi-point constraint between a set of degrees of freedom. The
+    Equation object is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

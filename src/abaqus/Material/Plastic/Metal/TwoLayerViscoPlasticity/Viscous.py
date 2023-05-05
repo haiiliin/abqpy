@@ -8,8 +8,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Viscous:
-    r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic
-    material model.
+    r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic material model.
 
     .. note::
         This object can be accessed by::

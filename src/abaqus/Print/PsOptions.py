@@ -18,9 +18,8 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class PsOptions(_OptionsBase):
-    """The PsOptions object stores the settings that Abaqus uses when printing using PostScript
-    format. The PsOptions object has no constructor. Abaqus creates the **psOptions** member
-    when a session is started.
+    """The PsOptions object stores the settings that Abaqus uses when printing using PostScript format. The
+    PsOptions object has no constructor. Abaqus creates the **psOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

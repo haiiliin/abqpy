@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SizingPlanarSymmetry(GeometricRestriction):
-    """The SizingPlanarSymmetry object defines a sizing planar symmetry geometric restriction.
-    The SizingPlanarSymmetry object is derived from the GeometricRestriction object.
+    """The SizingPlanarSymmetry object defines a sizing planar symmetry geometric restriction. The
+    SizingPlanarSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

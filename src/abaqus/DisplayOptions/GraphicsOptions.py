@@ -20,7 +20,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GraphicsOptions:
-    """The GraphicsOptions object stores settings that control how objects are rendered in all
+    """The GraphicsOptions object stores settings that control how objects are rendered in all.
+
     viewports. GraphicsOptions objects are accessed in one of two ways:
     - The default graphics options. These settings are used as defaults when you start a
     session and by the Defaults button on the Graphics ConstrainedSketchOptions dialog box.

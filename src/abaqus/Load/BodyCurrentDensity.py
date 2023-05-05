@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BodyCurrentDensity(Load):
-    """The BodyCurrentDensity object stores the data for a body current.
-    The BodyCurrentDensity object is derived from the Load object.
+    """The BodyCurrentDensity object stores the data for a body current. The BodyCurrentDensity object is
+    derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -80,8 +80,8 @@ class BodyCurrentDensity(Load):
 
     @abaqus_method_doc
     def setValues(self, amplitude: str = UNSET, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM):
-        """This method modifies the data for an existing BodyCurrentDensity object in the step
-        where it is created.
+        """This method modifies the data for an existing BodyCurrentDensity object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -104,8 +104,8 @@ class BodyCurrentDensity(Load):
         comp3: str = "",
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing BodyCurrentDensity object in
-        the specified step.
+        """This method modifies the propagating data for an existing BodyCurrentDensity object in the specified
+        step.
 
         Parameters
         ----------

@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SubmodelSBState(LoadState):
-    """The SubmodelSBState object stores the propagating data for a Submodel load in a step.
-    One instance of this object is created internally by the SubmodelSB object for each
-    step. The instance is also deleted internally by the SubmodelSB object.
-    The SubmodelSBState object has no constructor or methods.
-    The SubmodelSBState object is derived from the LoadState object.
+    """The SubmodelSBState object stores the propagating data for a Submodel load in a step. One instance of
+    this object is created internally by the SubmodelSB object for each step. The instance is also deleted
+    internally by the SubmodelSB object. The SubmodelSBState object has no constructor or methods. The
+    SubmodelSBState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

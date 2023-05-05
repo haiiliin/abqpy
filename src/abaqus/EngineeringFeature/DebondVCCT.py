@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DebondVCCT(Crack):
-    """The DebondVCCT object defines the parameters needed to activate crack propagation using
-    VCCT.
-    The DebondVCCT object is derived from the Crack object.
+    """The DebondVCCT object defines the parameters needed to activate crack propagation using VCCT. The
+    DebondVCCT object is derived from the Crack object.
 
     .. note::
         This object can be accessed by::
@@ -56,9 +55,8 @@ class DebondVCCT(Crack):
         debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,
         printToDATFrequency: int = 1,
     ):
-        """This method creates a DebondVCCT object. Although the constructor is available both for
-        parts and for the assembly, DebondVCCT objects are currently supported only under the
-        assembly.
+        """This method creates a DebondVCCT object. Although the constructor is available both for parts and for
+        the assembly, DebondVCCT objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

@@ -11,10 +11,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OutputStep(StepBase):
-    """The Step object stores the parameters that determine the context of the step. The Step
-    object is the abstract base type for other Step objects. The Step object has no explicit
-    constructor. The methods and members of the Step object are common to all objects
-    derived from the Step.
+    """The Step object stores the parameters that determine the context of the step. The Step object is the
+    abstract base type for other Step objects. The Step object has no explicit constructor. The methods and
+    members of the Step object are common to all objects derived from the Step.
 
     .. note::
         This object can be accessed by::
@@ -132,8 +131,8 @@ class OutputStep(StepBase):
         ],
         frequency: int,
     ) -> Monitor:
-        """This method creates a request for a degree of freedom to be monitored in a general or
-        modal procedure.
+        """This method creates a request for a degree of freedom to be monitored in a general or modal
+        procedure.
 
         .. note::
             This function can be accessed by::

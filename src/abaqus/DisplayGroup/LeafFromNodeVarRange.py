@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT_MODEL, ON, Symboli
 
 @abaqus_class_doc
 class LeafFromNodeVarRange(Leaf):
-    """The LeafFromNodeVarRange object can be used whenever a Leaf object is expected as an
-    argument. Leaf objects are used to specify the items in a display group. Leaf objects
-    are constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    The LeafFromNodeVarRange object is derived from the Leaf object.
+    """The LeafFromNodeVarRange object can be used whenever a Leaf object is expected as an argument. Leaf
+    objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects,
+    which are then used as arguments to DisplayGroup commands. The LeafFromNodeVarRange object is derived from
+    the Leaf object.
 
     .. note::
         This object can be accessed by::

@@ -12,8 +12,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BoltLoad(Load):
-    """The BoltLoad object defines a bolt load.
-    The BoltLoad object is derived from the Load object.
+    """The BoltLoad object defines a bolt load. The BoltLoad object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -108,8 +107,7 @@ class BoltLoad(Load):
         amplitude: str = UNSET,
         preTenSecPartLevel: Boolean = False,
     ):
-        """This method modifies the data for an existing BoltLoad object in the step where it is
-        created.
+        """This method modifies the data for an existing BoltLoad object in the step where it is created.
 
         Parameters
         ----------
@@ -140,8 +138,7 @@ class BoltLoad(Load):
         magnitude: Optional[float] = None,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing BoltLoad object in the
-        specified step.
+        """This method modifies the propagating data for an existing BoltLoad object in the specified step.
 
         Parameters
         ----------

@@ -68,8 +68,7 @@ from ..XY.XYReportOptions import XYReportOptions
 
 @abaqus_class_doc
 class SessionBase:
-    """The Session object has no constructor. Abaqus creates the **session** member when a
-    session is started.
+    """The Session object has no constructor. Abaqus creates the **session** member when a session is started.
 
     .. note::
         This object can be accessed by::
@@ -365,8 +364,8 @@ class SessionBase:
 
     @abaqus_method_doc
     def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: Optional[int] = None):
-        """This method enables parameter updates for ProE and NX by establishing a connection with
-        the listening port previously setup by the CAD application.
+        """This method enables parameter updates for ProE and NX by establishing a connection with the listening
+        port previously setup by the CAD application.
 
         Parameters
         ----------
@@ -387,9 +386,9 @@ class SessionBase:
 
     @abaqus_method_doc
     def setCADPortNumber(self, CADName: str, Port: str):
-        """This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a
-        connection with the listening port previously setup by the CAD application. This port
-        number is used to send the parameter information to the CAD system.
+        """This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the
+        listening port previously setup by the CAD application. This port number is used to send the parameter
+        information to the CAD system.
 
         Parameters
         ----------
@@ -411,8 +410,7 @@ class SessionBase:
         CADPartFile: str,
         CADPartName: str = "",
     ):
-        """This method updates the parameters for the specified model using the specified parameter
-        file.
+        """This method updates the parameters for the specified model using the specified parameter file.
 
         Parameters
         ----------
@@ -459,8 +457,8 @@ class SessionBase:
         canvasObjects: Sequence[Canvas] = (),
         compression: Boolean = OFF,
     ):
-        """This method prints canvas objects to a file using the attributes stored in the
-        PrintOptions object and the appropriate format options object.
+        """This method prints canvas objects to a file using the attributes stored in the PrintOptions object
+        and the appropriate format options object.
 
         Parameters
         ----------
@@ -487,10 +485,10 @@ class SessionBase:
         numCopies: int = 1,
         canvasObjects: Sequence[Canvas] = (),
     ):
-        """This method prints canvas objects to a Windows printer or to a PostScript printer. The
-        attributes used for printing to a Windows printer are stored in the PrintOptions object
-        and the PageSetupOptions object; the attributes used for printing to a PostScript
-        printer are stored in the PrintOptions object and the PsOptions object.
+        """This method prints canvas objects to a Windows printer or to a PostScript printer. The attributes
+        used for printing to a Windows printer are stored in the PrintOptions object and the PageSetupOptions
+        object; the attributes used for printing to a PostScript printer are stored in the PrintOptions object
+        and the PsOptions object.
 
         Parameters
         ----------
@@ -594,11 +592,10 @@ class SessionBase:
     # But it accessed only by ``session`` object.
     @abaqus_method_doc
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
-        """This method opens an existing output database (`.odb`) file and creates a new Odb object.
-        This method is accessed only via the session object inside Abaqus/CAE and adds the new
-        Odb object to the session.odbs repository. This method allows you to open multiple
-        output databases at the same time and to use the repository key to specify a particular
-        output database. For example::
+        """This method opens an existing output database (`.odb`) file and creates a new Odb object. This method
+        is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the
+        session.odbs repository. This method allows you to open multiple output databases at the same time and
+        to use the repository key to specify a particular output database. For example::
 
             import visualization
             session.openOdb(name='myOdb', path='stress.odb', readOnly=True)

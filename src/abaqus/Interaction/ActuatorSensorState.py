@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class ActuatorSensorState(InteractionState):
-    """The ActuatorSensorState object stores the propagating data of an actuator sensor in a
-    step. One instance of this object is created internally by the ActuatorSensor object for
-    each step. The instance is also deleted internally by the ActuatorSensor object.
-    The ActuatorSensorState object has no constructor, methods, or members.
-    The ActuatorSensorState object is derived from the InteractionState object.
+    """The ActuatorSensorState object stores the propagating data of an actuator sensor in a step. One instance
+    of this object is created internally by the ActuatorSensor object for each step. The instance is also
+    deleted internally by the ActuatorSensor object. The ActuatorSensorState object has no constructor, methods,
+    or members. The ActuatorSensorState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

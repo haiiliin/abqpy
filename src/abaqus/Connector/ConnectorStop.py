@@ -7,9 +7,8 @@ from .ConnectorBehaviorOption import ConnectorBehaviorOption
 
 @abaqus_class_doc
 class ConnectorStop(ConnectorBehaviorOption):
-    """The ConnectorStop object defines connector stops for one or more components of a
-    connector's relative motion.
-    The ConnectorStop object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorStop object defines connector stops for one or more components of a connector's relative
+    motion. The ConnectorStop object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::

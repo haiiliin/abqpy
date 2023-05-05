@@ -5,9 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class ViewerOptions:
-    """The ViewerOptions object specifies options to set the result caching parameters. The
-    ViewerOptions object has no constructor. Abaqus creates the **viewerOptions** member when
-    a session is started.
+    """The ViewerOptions object specifies options to set the result caching parameters. The ViewerOptions object
+    has no constructor. Abaqus creates the **viewerOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

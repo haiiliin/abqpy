@@ -10,9 +10,8 @@ from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, TOTAL
 
 @abaqus_class_doc
 class TabularAmplitude(Amplitude):
-    """The TabularAmplitude object defines an amplitude curve as a table of values at
-    convenient points on the time scale.
-    The TabularAmplitude object is derived from the Amplitude object.
+    """The TabularAmplitude object defines an amplitude curve as a table of values at convenient points on the
+    time scale. The TabularAmplitude object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

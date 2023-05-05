@@ -20,8 +20,8 @@ class AngularDimension(ConstrainedSketchDimension):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two
-        ConstrainedSketchGeometry objects, with the given angle between them.
+        """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry
+        objects, with the given angle between them.
 
         .. note::
             This function can be accessed by::
@@ -46,6 +46,5 @@ class AngularDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

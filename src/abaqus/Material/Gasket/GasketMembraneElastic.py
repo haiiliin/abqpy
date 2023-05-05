@@ -5,8 +5,8 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class GasketMembraneElastic:
-    r"""The GasketMembraneElastic object defines the elastic parameters for the membrane shear
-    behavior of a gasket.
+    r"""The GasketMembraneElastic object defines the elastic parameters for the membrane shear behavior of a
+    gasket.
 
     .. note::
         This object can be accessed by::

@@ -5,9 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class SubstructureGenerateFrequency:
-    """A SubstructureGenerateFrequency object is used to define the modes to be used in a modal
-    dynamic analysis. These modes are selected from the specified frequency range including
-    the frequency boundary.
+    """A SubstructureGenerateFrequency object is used to define the modes to be used in a modal dynamic
+    analysis. These modes are selected from the specified frequency range including the frequency boundary.
 
     .. note::
         This object can be accessed by::

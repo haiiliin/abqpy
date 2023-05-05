@@ -21,8 +21,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OdbMeshRegionData:
-    """The OdbMeshRegionData object defines the external source data of MappedField from an ODB
-    file.
+    """The OdbMeshRegionData object defines the external source data of MappedField from an ODB file.
 
     .. note::
         This object can be accessed by::

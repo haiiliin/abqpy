@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Path:
-    """The Path object defines a line through your model by specifying a series of nodes or
-    points.
+    """The Path object defines a line through your model by specifying a series of nodes or points.
 
     .. note::
         This object can be accessed by::

@@ -9,11 +9,10 @@ from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class LeafFromMeshElementLabels(Leaf):
-    """The LeafFromMeshElementLabels object can be used whenever a Leaf object is expected as
-    an argument. Leaf objects are used to specify the items in a display group. Leaf objects
-    are constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    The LeafFromMeshElementLabels object is derived from the Leaf object.
+    """The LeafFromMeshElementLabels object can be used whenever a Leaf object is expected as an argument. Leaf
+    objects are used to specify the items in a display group. Leaf objects are constructed as temporary objects,
+    which are then used as arguments to DisplayGroup commands. The LeafFromMeshElementLabels object is derived
+    from the Leaf object.
 
     .. note::
         This object can be accessed by::
@@ -27,8 +26,8 @@ class LeafFromMeshElementLabels(Leaf):
 
     @abaqus_method_doc
     def __init__(self, elementSeq: Sequence[MeshElement]):
-        """This method creates a Leaf object from a sequence of mesh element objects. Leaf objects
-        specify the items in a display group.
+        """This method creates a Leaf object from a sequence of mesh element objects. Leaf objects specify the
+        items in a display group.
 
         .. note::
             This function can be accessed by::

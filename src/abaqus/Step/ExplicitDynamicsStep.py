@@ -24,9 +24,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ExplicitDynamicsStep(AnalysisStep):
-    """The ExplicitDynamicsStep object is used to perform a dynamic stress/displacement
-    analysis using explicit integration in Abaqus/Explicit.
-    The ExplicitDynamicsStep object is derived from the AnalysisStep object.
+    """The ExplicitDynamicsStep object is used to perform a dynamic stress/displacement analysis using explicit
+    integration in Abaqus/Explicit. The ExplicitDynamicsStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

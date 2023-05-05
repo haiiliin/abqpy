@@ -21,9 +21,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 @abaqus_class_doc
 class AnnealStep(AnalysisStep):
-    """The AnnealStep object anneals a structure by setting the velocities and all appropriate
-    state variables to zero.
-    The AnnealStep object is derived from the AnalysisStep object.
+    """The AnnealStep object anneals a structure by setting the velocities and all appropriate state variables
+    to zero. The AnnealStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

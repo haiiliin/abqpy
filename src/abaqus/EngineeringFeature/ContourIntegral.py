@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ContourIntegral(Crack):
-    """The ContourIntegral object defines contour integral objects on an region. Currently only
-    assembly regions are supported.
-    The ContourIntegral object is derived from the Crack object.
+    """The ContourIntegral object defines contour integral objects on an region. Currently only assembly regions
+    are supported. The ContourIntegral object is derived from the Crack object.
 
     .. note::
         This object can be accessed by::
@@ -102,9 +101,8 @@ class ContourIntegral(Crack):
         midNodePosition: float = 0,
         collapsedElementAtTip: Literal[C.DUPLICATE_NODES, C.SINGLE_NODE, C.NONE] = NONE,
     ):
-        """This method creates a ContourIntegral object. Although the constructor is available both
-        for parts and for the assembly, ContourIntegral objects are currently supported only
-        under the assembly.
+        """This method creates a ContourIntegral object. Although the constructor is available both for parts
+        and for the assembly, ContourIntegral objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

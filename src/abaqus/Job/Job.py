@@ -18,9 +18,8 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class Job:
-    """The Job object is the abstract base type for other Job objects. The Job object has no
-    explicit constructor. The methods and members of the Job object are common to all
-    objects derived from Job.
+    """The Job object is the abstract base type for other Job objects. The Job object has no explicit
+    constructor. The methods and members of the Job object are common to all objects derived from Job.
 
     .. note::
         This object can be accessed by::
@@ -180,9 +179,9 @@ class Job:
 
     @abaqus_method_doc
     def waitForCompletion(self):
-        """This method interrupts the execution of the script until the end of the analysis. If you
-        call the waitForCompletion method and the **status** member is neither SUBMITTED nor
-        RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
-        immediately.
+        """This method interrupts the execution of the script until the end of the analysis.
+
+        If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING,
+        Abaqus assumes the analysis has either completed or aborted and returns immediately.
         """
         ...

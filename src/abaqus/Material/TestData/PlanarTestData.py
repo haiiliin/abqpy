@@ -7,8 +7,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class PlanarTestData:
-    r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
-    tension).
+    r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or tension).
 
     .. note::
         This object can be accessed by::

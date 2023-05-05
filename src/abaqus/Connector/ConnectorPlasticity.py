@@ -12,9 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorPlasticity(ConnectorBehaviorOption):
-    """The ConnectorPlasticity object defines Plastic behavior for one or more components of a
-    connector's relative motion.
-    The ConnectorPlasticity object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorPlasticity object defines Plastic behavior for one or more components of a connector's
+    relative motion. The ConnectorPlasticity object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::
@@ -178,8 +177,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
         kinematicTable: tuple = (),
         components: tuple = (),
     ):
-        """This method creates a connector plasticity behavior option for a ConnectorSection
-        object.
+        """This method creates a connector plasticity behavior option for a ConnectorSection object.
 
         .. note::
             This function can be accessed by::

@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import UNSET
 
 @abaqus_class_doc
 class PressurePenetration(Interaction):
-    """The PressurePenetration object defines pressure penetration loading simulated with
-    surface-to-surface contact.
-    The PressurePenetration object is derived from the Interaction object.
+    """The PressurePenetration object defines pressure penetration loading simulated with surface-to-surface
+    contact. The PressurePenetration object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -101,8 +100,8 @@ class PressurePenetration(Interaction):
 
     @abaqus_method_doc
     def setValues(self, amplitude: str = UNSET, penetrationTime: float = 0):
-        """This method modifies the data for an existing PressurePenetration object in the step
-        where it is created.
+        """This method modifies the data for an existing PressurePenetration object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -126,8 +125,8 @@ class PressurePenetration(Interaction):
         amplitude: str = "",
         penetrationTime: float = 0,
     ):
-        """This method modifies the propagating data for an existing PressurePenetration object in
-        the specified step.
+        """This method modifies the propagating data for an existing PressurePenetration object in the specified
+        step.
 
         Parameters
         ----------

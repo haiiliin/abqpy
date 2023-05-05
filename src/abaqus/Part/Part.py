@@ -11,8 +11,8 @@ from ..Region.RegionPart import RegionPart
 
 @abaqus_class_doc
 class Part(BasicGeometryPart, MeshEditPart, MeshPart, PropertyPart, RegionPart, Displayable):
-    """The Part object defines the physical attributes of a structure. Parts are instanced into
-    the assembly and positioned before an analysis.
+    """The Part object defines the physical attributes of a structure. Parts are instanced into the assembly and
+    positioned before an analysis.
 
     .. note::
         This object can be accessed by::
@@ -24,5 +24,5 @@ class Part(BasicGeometryPart, MeshEditPart, MeshPart, PropertyPart, RegionPart, 
     ...
 
     def insertElements(self, faces: Region):
-        """Insert elements on the Part"""
+        """Insert elements on the Part."""
         ...

@@ -10,8 +10,8 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 class EqualLengthConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
     def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
-        """This method creates an equal length constraint. This constraint applies to lines and
-        constrains them such that their lengths are equal.
+        """This method creates an equal length constraint. This constraint applies to lines and constrains them
+        such that their lengths are equal.
 
         .. note::
             This function can be accessed by::
@@ -29,6 +29,5 @@ class EqualLengthConstraint(ConstrainedSketchConstraint):
         -------
         ConstrainedSketchConstraint
             A ConstrainedSketchConstraint object.
-
         """
         ...

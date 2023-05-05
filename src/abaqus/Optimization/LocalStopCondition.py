@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class LocalStopCondition(StopCondition):
-    """The LocalStopCondition object defines a local stop condition.
-    The LocalStopCondition object is derived from the StopCondition object.
+    """The LocalStopCondition object defines a local stop condition. The LocalStopCondition object is derived
+    from the StopCondition object.
 
     .. note::
         This object can be accessed by::

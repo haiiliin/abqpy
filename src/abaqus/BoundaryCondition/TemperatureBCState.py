@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class TemperatureBCState(BoundaryConditionState):
-    """The TemperatureBCState object stores the propagating data for a temperature boundary
-    condition in a step. One instance of this object is created internally by the
-    TemperatureBC object for each step. The instance is also deleted internally by the
-    TemperatureBC object.
-    The TemperatureBCState object has no constructor or methods.
-    The TemperatureBCState object is derived from the BoundaryConditionState object.
+    """The TemperatureBCState object stores the propagating data for a temperature boundary condition in a step.
+    One instance of this object is created internally by the TemperatureBC object for each step. The instance is
+    also deleted internally by the TemperatureBC object. The TemperatureBCState object has no constructor or
+    methods. The TemperatureBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

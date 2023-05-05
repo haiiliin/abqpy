@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SubmodelBCState(BoundaryConditionState):
-    """The SubmodelBCState object stores the propagating data for a Submodel boundary condition
-    in a step. One instance of this object is created internally by the SubmodelBC object
-    for each step. The instance is also deleted internally by the SubmodelBC object.
-    The SubmodelBCState object has no constructor or methods.
-    The SubmodelBCState object is derived from the BoundaryConditionState object.
+    """The SubmodelBCState object stores the propagating data for a Submodel boundary condition in a step. One
+    instance of this object is created internally by the SubmodelBC object for each step. The instance is also
+    deleted internally by the SubmodelBC object. The SubmodelBCState object has no constructor or methods. The
+    SubmodelBCState object is derived from the BoundaryConditionState object.
 
     .. note::
         This object can be accessed by::

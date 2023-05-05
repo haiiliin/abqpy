@@ -9,11 +9,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MesherOptions:
-    """The MesherOptions object controls the default settings that Abaqus uses for all meshing
-    methods. The MesherOptions object has no constructor. Abaqus creates the **MesherOptions**
-    member when a session is started.
-    MesherOptions commands are intended for use at the beginning of scripts and in the
-    abaqus_v6.env file only; they should not be used during an Abaqus/CAE session.
+    """The MesherOptions object controls the default settings that Abaqus uses for all meshing methods. The
+    MesherOptions object has no constructor. Abaqus creates the **MesherOptions** member when a session is
+    started. MesherOptions commands are intended for use at the beginning of scripts and in the abaqus_v6.env
+    file only; they should not be used during an Abaqus/CAE session.
 
     .. note::
         This object can be accessed by::

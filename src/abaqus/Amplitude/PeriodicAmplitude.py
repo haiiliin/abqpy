@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PeriodicAmplitude(Amplitude):
-    """The PeriodicAmplitude object defines an amplitude curve using a Fourier series.
-    The PeriodicAmplitude object is derived from the Amplitude object.
+    """The PeriodicAmplitude object defines an amplitude curve using a Fourier series. The PeriodicAmplitude
+    object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FluidExchangeProperty(ContactProperty):
-    """The FluidExchangeProperty object is an interaction property that defines the fluid
-    exchange property for a flow between two fluid cavities or between a fluid cavity and
-    its environment.
-    The FluidExchangeProperty object is derived from the InteractionProperty object.
+    """The FluidExchangeProperty object is an interaction property that defines the fluid exchange property for
+    a flow between two fluid cavities or between a fluid cavity and its environment. The FluidExchangeProperty
+    object is derived from the InteractionProperty object.
 
     .. note::
         This object can be accessed by::

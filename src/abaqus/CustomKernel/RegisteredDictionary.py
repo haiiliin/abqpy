@@ -5,10 +5,9 @@ from .CommandRegister import CommandRegister
 
 @abaqus_class_doc
 class RegisteredDictionary(CommandRegister, dict):
-    """This class allows you to create a dictionary that can be queried from the GUI and is
-    capable of notifying the GUI when the contents of the dictionary change. The keys to a
-    RegisteredDictionary must be either strings or integers.
-    The RegisteredDictionary object is derived from the CommandRegister object.
+    """This class allows you to create a dictionary that can be queried from the GUI and is capable of notifying
+    the GUI when the contents of the dictionary change. The keys to a RegisteredDictionary must be either
+    strings or integers. The RegisteredDictionary object is derived from the CommandRegister object.
 
     .. note::
         This object can be accessed by::
@@ -34,8 +33,9 @@ class RegisteredDictionary(CommandRegister, dict):
 
     @abaqus_method_doc
     def Methods(self):
-        """The RegisteredDictionary object supports the same methods as a Python dictionary. In
-        addition, the RegisteredDictionary object supports the changeKey method.
+        """The RegisteredDictionary object supports the same methods as a Python dictionary.
+
+        In addition, the RegisteredDictionary object supports the changeKey method.
         """
         # TODO: Implement this method
         ...

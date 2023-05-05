@@ -7,9 +7,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class DataObject:
-    """An instance of the DataObject object is passed to each callback. The DataObject object
-    has no methods. The members of a DataObject object depend on the type of the object. All
-    DataObject instances have the following members, regardless of type:
+    """An instance of the DataObject object is passed to each callback.
+
+    The DataObject object has no methods. The members of a DataObject object depend on the type of the
+    object. All DataObject instances have the following members, regardless of type:
     """
 
     #: A SymbolicConstant specifying the phase of the analysis. Possible values are

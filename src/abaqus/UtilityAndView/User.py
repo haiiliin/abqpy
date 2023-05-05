@@ -1,6 +1,4 @@
-"""The following commands are used to request data entry from a user.
-
-"""
+"""The following commands are used to request data entry from a user."""
 from typing import overload
 
 from abqpy.decorators import abaqus_function_doc
@@ -9,12 +7,11 @@ from abqpy.decorators import abaqus_function_doc
 @abaqus_function_doc
 @overload
 def getInput(prompt: str, default: str = ""):
-    r"""This method is used to obtain a single input from a user from a dialog box. The method
-    displays a modal dialog box with a text field prefaced by the specified label. The user
-    enters data in the text field or accepts the optional default value that is displayed in
-    the text field. When the user clicks the OK button, the getInput method reads the data
-    from the dialog box and closes the dialog box. You can use a \t separator in the label
-    argument to provide a tooltip from the dialog box; for example::
+    r"""This method is used to obtain a single input from a user from a dialog box. The method displays a modal
+    dialog box with a text field prefaced by the specified label. The user enters data in the text field or
+    accepts the optional default value that is displayed in the text field. When the user clicks the OK button,
+    the getInput method reads the data from the dialog box and closes the dialog box. You can use a \t separator
+    in the label argument to provide a tooltip from the dialog box; for example::
 
         getInput('Enter a number:\tEnter the number of nodes to delete')
 
@@ -91,11 +88,10 @@ def getInput(*args, **kwargs):
 
 @abaqus_function_doc
 def getWarningReply(message: str, buttons: str):
-    r"""This method is used to obtain a reply from a user from a warning dialog box. The method
-    displays a modal warning dialog box with a message and standard buttons. The user clicks
-    the one of the standard buttons, the getWarningReply returns the corresponding button
-    value and closes the dialog box. You can use a separator in the message argument to
-    provide a multi-line message in the warning dialog box; for example::
+    r"""This method is used to obtain a reply from a user from a warning dialog box. The method displays a modal
+    warning dialog box with a message and standard buttons. The user clicks the one of the standard buttons, the
+    getWarningReply returns the corresponding button value and closes the dialog box. You can use a separator in
+    the message argument to provide a multi-line message in the warning dialog box; for example::
 
         from abaqus import *
         getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))

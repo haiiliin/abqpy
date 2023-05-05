@@ -10,8 +10,8 @@ class ErrorIndicatorResult:
 
 @abaqus_class_doc
 class RuleResult:
-    """The RuleResult object contains result information corresponding to a RemeshingRule
-    object for an adaptivity iteration.
+    """The RuleResult object contains result information corresponding to a RemeshingRule object for an
+    adaptivity iteration.
 
     .. note::
         This object can be accessed by::
@@ -48,8 +48,7 @@ class RuleResult:
         minSizeElemCount: int,
         satisfiedVars: tuple = (),
     ):
-        """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
-        iteration.
+        """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity iteration.
 
         .. note::
             This function can be accessed by::

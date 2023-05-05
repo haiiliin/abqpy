@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcentratedRadiationToAmbient(Interaction):
-    """The ConcentratedRadiationToAmbient object defines radiant heat transfer between a point
-    and its nonreflecting environment.
-    The ConcentratedRadiationToAmbient object is derived from the Interaction object.
+    """The ConcentratedRadiationToAmbient object defines radiant heat transfer between a point and its
+    nonreflecting environment. The ConcentratedRadiationToAmbient object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -135,8 +134,8 @@ class ConcentratedRadiationToAmbient(Interaction):
         field: str = "",
         distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
-        """This method modifies the data for an existing ConcentratedRadiationToAmbient object in
-        the step where it is created.
+        """This method modifies the data for an existing ConcentratedRadiationToAmbient object in the step where
+        it is created.
 
         Parameters
         ----------
@@ -166,8 +165,8 @@ class ConcentratedRadiationToAmbient(Interaction):
         field: str = "",
         distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
-        """This method modifies the propagating data of an existing ConcentratedRadiationToAmbient
-        object in the specified step.
+        """This method modifies the propagating data of an existing ConcentratedRadiationToAmbient object in the
+        specified step.
 
         Parameters
         ----------

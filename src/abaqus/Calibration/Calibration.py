@@ -8,8 +8,8 @@ from .DataSet import DataSet
 
 @abaqus_class_doc
 class Calibration:
-    """A Calibration object is the object used to specify a material calibration. The
-    Calibration object stores the data that is used for specifying materials from test data.
+    """A Calibration object is the object used to specify a material calibration. The Calibration object stores
+    the data that is used for specifying materials from test data.
 
     .. note::
         This object can be accessed by::

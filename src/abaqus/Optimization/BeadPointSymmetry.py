@@ -8,8 +8,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class BeadPointSymmetry(GeometricRestriction):
-    """The BeadPointSymmetry object defines a point symmetry geometric restriction.
-    The BeadPointSymmetry object is derived from the GeometricRestriction object.
+    """The BeadPointSymmetry object defines a point symmetry geometric restriction. The BeadPointSymmetry object
+    is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

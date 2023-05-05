@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class BaselineCorrection:
-    """The BaselineCorrection object modifies an acceleration history to minimize the overall
-    drift of the displacement obtained from the time integration of the given acceleration.
+    """The BaselineCorrection object modifies an acceleration history to minimize the overall drift of the
+    displacement obtained from the time integration of the given acceleration.
 
     .. note::
         This object can be accessed by::

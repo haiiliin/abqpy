@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnVelocityBC(BoundaryCondition):
-    """The ConnVelocityBC object stores the data for a connector velocity boundary condition.
-    The ConnVelocityBC object is derived from the BoundaryCondition object.
+    """The ConnVelocityBC object stores the data for a connector velocity boundary condition. The ConnVelocityBC
+    object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -69,9 +69,8 @@ class ConnVelocityBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
-        """This method creates a ConnVelocityBC object on a wire region. Alternatively, the
-        boundary condition may also be applied to a wire set referenced from an assembled
-        fastener template model.
+        """This method creates a ConnVelocityBC object on a wire region. Alternatively, the boundary condition
+        may also be applied to a wire set referenced from an assembled fastener template model.
 
         .. note::
             This function can be accessed by::
@@ -153,8 +152,7 @@ class ConnVelocityBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
-        """This method modifies the data for an existing ConnVelocityBC object in the step where it
-        is created.
+        """This method modifies the data for an existing ConnVelocityBC object in the step where it is created.
 
         Parameters
         ----------
@@ -219,8 +217,8 @@ class ConnVelocityBC(BoundaryCondition):
         vr3: Union[Literal[C.SET, C.FREED], float] = SET,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ConnVelocityBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing ConnVelocityBC object in the specified
+        step.
 
         Parameters
         ----------

@@ -11,9 +11,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MultipointConstraint(Constraint):
-    """The MultipointConstraint object defines a constraint between a group of
-    MultipointConstraint nodes located on a region and a reference point.
-    The MultipointConstraint object is derived from the ConstrainedSketchConstraint object.
+    """The MultipointConstraint object defines a constraint between a group of MultipointConstraint nodes
+    located on a region and a reference point. The MultipointConstraint object is derived from the
+    ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

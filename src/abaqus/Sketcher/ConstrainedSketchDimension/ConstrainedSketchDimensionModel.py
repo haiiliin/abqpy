@@ -12,10 +12,10 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
-    """A ConstrainedSketch object contains the entities that are used to create a sketch. The
-    objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
-    such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
-    contained in their respective repositories.
+    """A ConstrainedSketch object contains the entities that are used to create a sketch. The objects include
+    ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository, such as Line, Arc,
+    and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and
+    ConstrainedSketchParameter objects are contained in their respective repositories.
 
     .. note::
         This object can be accessed by::
@@ -33,8 +33,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two
-        ConstrainedSketchGeometry objects, with the given angle between them.
+        """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry
+        objects, with the given angle between them.
 
         .. note::
             This function can be accessed by::
@@ -71,9 +71,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two vertices. A
-        horizontal dimension indicates the horizontal distance along the **X** axis between two
-        vertices.
+        """This method constructs a ConstrainedSketchDimension object between two vertices. A horizontal
+        dimension indicates the horizontal distance along the **X** axis between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -110,8 +109,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two vertices. An
-        oblique dimension indicates the distance between two vertices.
+        """This method constructs a ConstrainedSketchDimension object between two vertices. An oblique dimension
+        indicates the distance between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -149,9 +148,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         majorRadius: Optional[float] = None,
         minorRadius: Optional[float] = None,
     ):
-        """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
-        arc. A radial dimension indicates the radius of an arc or circle or the major or minor
-        radius of an ellipse.
+        """This method constructs a ConstrainedSketchDimension object on a circular or elliptical arc. A radial
+        dimension indicates the radius of an arc or circle or the major or minor radius of an ellipse.
 
         .. note::
             This function can be accessed by::
@@ -192,8 +190,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
-        dimension controls the vertical distance along the **Y** axis between two vertices.
+        """This method constructs a ConstrainedSketchDimension between two vertices. A vertical dimension
+        controls the vertical distance along the **Y** axis between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -230,9 +228,9 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two
-        ConstrainedSketchGeometry, or aConstrainedSketchVertex and ConstrainedSketchGeometry
-        object. A distance dimension specifies the shortest distance between two entities.
+        """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry, or
+        aConstrainedSketchVertex and ConstrainedSketchGeometry object. A distance dimension specifies the
+        shortest distance between two entities.
 
         .. note::
             This function can be accessed by::

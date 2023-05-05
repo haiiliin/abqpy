@@ -64,14 +64,13 @@ from ..UtilityAndView.abaqusConstants import FREQUENCY
 
 @abaqus_class_doc
 class MaterialBase:
-    """A Material object is the object used to specify a material. The Material object stores
-    the various settings that determine how a material behaves.
-    A material is created by combining one or more individual material options and sub
-    options. A particular material option is associated with the Material object through a
-    member. For example: the **acousticMedium** member may contain an AcousticMedium object.
-    The alternative of having a MaterialOption abstract base class and a container of
-    MaterialOptions was rejected because it would make it more difficult to enforce the fact
-    that one Material object cannot contain two AcousticMedium objects, for example.
+    """A Material object is the object used to specify a material. The Material object stores the various
+    settings that determine how a material behaves. A material is created by combining one or more individual
+    material options and sub options. A particular material option is associated with the Material object
+    through a member. For example: the **acousticMedium** member may contain an AcousticMedium object. The
+    alternative of having a MaterialOption abstract base class and a container of MaterialOptions was rejected
+    because it would make it more difficult to enforce the fact that one Material object cannot contain two
+    AcousticMedium objects, for example.
 
     .. note::
         This object can be accessed by::
@@ -339,8 +338,8 @@ class MaterialBase:
 
     @abaqus_method_doc
     def materialsFromOdb(self, fileName: str):
-        """This methods creates Material objects by reading an output database. The new materials
-        are placed in the materials repository.
+        """This methods creates Material objects by reading an output database. The new materials are placed in
+        the materials repository.
 
         .. note::
             This function can be accessed by::

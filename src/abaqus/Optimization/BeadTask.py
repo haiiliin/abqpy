@@ -24,8 +24,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BeadTask(OptimizationTask):
-    """The BeadTask object defines a bead task.
-    The BeadTask object is derived from the OptimizationTask object.
+    """The BeadTask object defines a bead task. The BeadTask object is derived from the OptimizationTask object.
 
     .. note::
         This object can be accessed by::

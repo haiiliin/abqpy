@@ -35,9 +35,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SteadyStateModalStep(AnalysisStep):
-    """he SteadyStateModalStep object is used to calculate the linearized steady-state response
-    of the system to harmonic excitation.
-    The SteadyStateModalStep object is derived from the AnalysisStep object.
+    """He SteadyStateModalStep object is used to calculate the linearized steady-state response of the system to
+    harmonic excitation. The SteadyStateModalStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

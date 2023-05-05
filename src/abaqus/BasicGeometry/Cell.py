@@ -60,20 +60,17 @@ class Cell:
         -------
         float
             A Float.
-
         """
         ...
 
     @abaqus_method_doc
     def getFaces(self):
-        """This method returns a sequence consisting of the face IDs of the faces which bound the
-        cell.
+        """This method returns a sequence consisting of the face IDs of the faces which bound the cell.
 
         Returns
         -------
         Sequence[int]
             A tuple of integers.
-
         """
         ...
 
@@ -85,7 +82,6 @@ class Cell:
         -------
         Sequence[int]
             A tuple of integers.
-
         """
         ...
 
@@ -97,7 +93,6 @@ class Cell:
         -------
         Sequence[int]
             A tuple of integers.
-
         """
         ...
 
@@ -109,7 +104,6 @@ class Cell:
         -------
         CellArray
             A CellArray object which is a sequence of Cell objects.
-
         """
         ...
 
@@ -121,7 +115,6 @@ class Cell:
         -------
         MeshNodeArray
             A MeshNodeArray object which is a sequence of MeshNode objects.
-
         """
         ...
 
@@ -133,19 +126,17 @@ class Cell:
         -------
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
-
         """
         ...
 
     @abaqus_method_doc
     def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the cell when the
-        part was created from CAD data.
+        """This method returns an array of CAD attribute strings associated with the cell when the part was
+        created from CAD data.
 
         Returns
         -------
         List[str]
             An array of String.
-
         """
         ...

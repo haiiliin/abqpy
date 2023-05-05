@@ -11,13 +11,11 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class View:
-    """The Session and Viewport View objects store view settings for custom (both predefined
-    and user-defined) views. The paradigm used to define a view is based on a camera
-    analogy. Similar to taking a photograph with a camera, features such as camera position,
-    view direction, orientation, depth of field, and projection are specified to transform
-    three-dimensional views to the screen.
-    The Layer View objects store a transformation matrix used to position the contents of
-    the Layer within a viewport.
+    """The Session and Viewport View objects store view settings for custom (both predefined and user-defined)
+    views. The paradigm used to define a view is based on a camera analogy. Similar to taking a photograph with
+    a camera, features such as camera position, view direction, orientation, depth of field, and projection are
+    specified to transform three-dimensional views to the screen. The Layer View objects store a transformation
+    matrix used to position the contents of the Layer within a viewport.
 
     .. note::
         This object can be accessed by::
@@ -115,9 +113,8 @@ class View:
         autoFit: Boolean,
         movieMode: Boolean = OFF,
     ):
-        """This method creates a View object.
-        Note:All dimensions and coordinates are specified in the model coordinate system.
-        Note:This method cannot be used to create a View for a Layer object.
+        """This method creates a View object. Note:All dimensions and coordinates are specified in the model
+        coordinate system. Note:This method cannot be used to create a View for a Layer object.
 
         .. note::
             This function can be accessed by::
@@ -198,10 +195,9 @@ class View:
 
     @abaqus_method_doc
     def next(self, drawImmediately: Boolean = False):
-        """This method restores the view in the viewport to the next view setting in the list.
-        (There is a list of eight views stored for each viewport.) If there is no next view, no
-        action is taken.
-        Note:This method is not available for a Layer View.
+        """This method restores the view in the viewport to the next view setting in the list. (There is a list
+        of eight views stored for each viewport.) If there is no next view, no action is taken. Note:This method
+        is not available for a Layer View.
 
         Parameters
         ----------
@@ -245,9 +241,8 @@ class View:
 
     @abaqus_method_doc
     def previous(self, drawImmediately: Boolean = False):
-        """This method restores the view in the viewport to the previous view setting in the list.
-        (There is a list of eight views stored for each viewport.) If there is no previous view,
-        no action is taken.
+        """This method restores the view in the viewport to the previous view setting in the list. (There is a
+        list of eight views stored for each viewport.) If there is no previous view, no action is taken.
         Note:This method is not available for a Layer View.
 
         Parameters
@@ -270,9 +265,8 @@ class View:
         asMovie: Boolean = OFF,
         drawImmediately: Boolean = False,
     ):
-        """This method rotates the view in the viewport. If a center of rotation has been
-        previously specified and **asMovie** is OFF then this method will honor that rotation
-        center.
+        """This method rotates the view in the viewport. If a center of rotation has been previously specified
+        and **asMovie** is OFF then this method will honor that rotation center.
 
         Parameters
         ----------
@@ -308,8 +302,8 @@ class View:
         options: Optional["View"] = None,
         drawImmediately: Boolean = False,
     ):
-        """This method modifies the transformation used to position a Layer.
-        Note:This method is not available for Session and Viewport Views.
+        """This method modifies the transformation used to position a Layer. Note:This method is not available
+        for Session and Viewport Views.
 
         Parameters
         ----------
@@ -329,10 +323,9 @@ class View:
 
     @abaqus_method_doc
     def setProjection(self, projection: Literal[C.PARALLEL, C.PERSPECTIVE], drawImmediately: Boolean = False):
-        """This method modifies the appearance of three-dimensional models in the viewport.
-        Choosing PERSPECTIVE makes a model appear more realistic by decreasing the apparent size
-        of features that are farther away from the viewing point.
-        Note:This method is not available for a Layer View.
+        """This method modifies the appearance of three-dimensional models in the viewport. Choosing PERSPECTIVE
+        makes a model appear more realistic by decreasing the apparent size of features that are farther away
+        from the viewing point. Note:This method is not available for a Layer View.
 
         Parameters
         ----------
@@ -436,8 +429,8 @@ class View:
         cameraUpVector: tuple = (),
         drawImmediately: Boolean = False,
     ):
-        """This method sets the camera's position in the viewport.
-        Note:This method is not available for a Layer View.
+        """This method sets the camera's position in the viewport. Note:This method is not available for a Layer
+        View.
 
         Parameters
         ----------

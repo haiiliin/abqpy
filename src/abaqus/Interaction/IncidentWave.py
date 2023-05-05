@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class IncidentWave(Interaction):
-    """The IncidentWave object defines incident wave interactions for acoustic and coupled
-    acoustic-structural analyses.
-    The IncidentWave object is derived from the Interaction object.
+    """The IncidentWave object defines incident wave interactions for acoustic and coupled acoustic-structural
+    analyses. The IncidentWave object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::

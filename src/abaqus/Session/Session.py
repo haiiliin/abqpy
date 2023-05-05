@@ -21,8 +21,7 @@ class Session(
     PathSession,
     XYSession,
 ):
-    """The Session object has no constructor. Abaqus creates the **session** member when a
-    session is started.
+    """The Session object has no constructor. Abaqus creates the **session** member when a session is started.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,8 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class TensionCutOff:
-    """The TensionCutOff object specifies tension cutoff for different material models for
-    example the Mohr-Coulomb plasticity model.
+    """The TensionCutOff object specifies tension cutoff for different material models for example the Mohr-
+    Coulomb plasticity model.
 
     .. note::
         This object can be accessed by::

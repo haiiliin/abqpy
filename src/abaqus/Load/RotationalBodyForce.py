@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class RotationalBodyForce(Load):
-    """The RotationalBodyForce object stores the data for a rotational body force.
-    The RotationalBodyForce object is derived from the Load object.
+    """The RotationalBodyForce object stores the data for a rotational body force. The RotationalBodyForce
+    object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -125,8 +125,8 @@ class RotationalBodyForce(Load):
         rotaryAcceleration: Boolean = OFF,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing RotationalBodyForce object in the step
-        where it is created.
+        """This method modifies the data for an existing RotationalBodyForce object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -154,8 +154,8 @@ class RotationalBodyForce(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing RotationalBodyForce object in
-        the specified step.
+        """This method modifies the propagating data for an existing RotationalBodyForce object in the specified
+        step.
 
         Parameters
         ----------

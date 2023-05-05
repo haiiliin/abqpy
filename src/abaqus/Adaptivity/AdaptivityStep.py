@@ -16,10 +16,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AdaptivityStep(StepBase):
-    """The Step object stores the parameters that determine the context of the step. The Step
-    object is the abstract base type for other Step objects. The Step object has no explicit
-    constructor. The methods and members of the Step object are common to all objects
-    derived from the Step.
+    """The Step object stores the parameters that determine the context of the step. The Step object is the
+    abstract base type for other Step objects. The Step object has no explicit constructor. The methods and
+    members of the Step object are common to all objects derived from the Step.
 
     .. note::
         This object can be accessed by::
@@ -50,11 +49,10 @@ class AdaptivityStep(StepBase):
         ] = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
-        """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
-        Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects. The
-        AdaptiveMeshConstraintState object has no explicit constructor or methods. The members
-        of the AdaptiveMeshConstraintState object are common to all objects derived from the
-        AdaptiveMeshConstraintState object.
+        """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
+        Eularian (ALE) style AdaptiveMeshConstraintState objects. The AdaptiveMeshConstraintState object has no
+        explicit constructor or methods. The members of the AdaptiveMeshConstraintState object are common to all
+        objects derived from the AdaptiveMeshConstraintState object.
 
         .. note::
             This function can be accessed by::
@@ -130,14 +128,12 @@ class AdaptivityStep(StepBase):
         ] = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
-        """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
-        Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint
-        in a step. One instance of this object is created internally by the
-        DisplacementAdaptiveMeshConstraint object for each step. The instance is also deleted
-        internally by the DisplacementAdaptiveMeshConstraint object.
-        The DisplacementAdaptiveMeshConstraintState object has no constructor or methods.
-        The DisplacementAdaptiveMeshConstraintState object is derived from the
-        AdaptiveMeshConstraintState object.
+        """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
+        Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint in a step. One instance
+        of this object is created internally by the DisplacementAdaptiveMeshConstraint object for each step. The
+        instance is also deleted internally by the DisplacementAdaptiveMeshConstraint object. The
+        DisplacementAdaptiveMeshConstraintState object has no constructor or methods. The
+        DisplacementAdaptiveMeshConstraintState object is derived from the AdaptiveMeshConstraintState object.
 
         .. note::
             This function can be accessed by::
@@ -254,13 +250,11 @@ class AdaptivityStep(StepBase):
         ] = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
-        """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
-        Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.
-        One instance of this object is created internally by the VelocityAdaptiveMeshConstraint
-        object for each step. The instance is also deleted internally by the
-        VelocityAdaptiveMeshConstraint object.
-        The VelocityAdaptiveMeshConstraintState object has no constructor or methods.
-        The VelocityAdaptiveMeshConstraintState object is derived from the
+        """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
+        Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step. One instance of this object
+        is created internally by the VelocityAdaptiveMeshConstraint object for each step. The instance is also
+        deleted internally by the VelocityAdaptiveMeshConstraint object. The VelocityAdaptiveMeshConstraintState
+        object has no constructor or methods. The VelocityAdaptiveMeshConstraintState object is derived from the
         AdaptiveMeshConstraintState object.
 
         .. note::
@@ -354,8 +348,8 @@ class AdaptivityStep(StepBase):
         initialMeshSweeps: int = 5,
         meshSweeps: int = 1,
     ) -> AdaptiveMeshDomain:
-        """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
-        Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
+        """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary Lagrangian
+        Eularian (ALE) style adaptive smoothing mesh domain.
 
         This method creates an AdaptiveMeshDomain object.
 

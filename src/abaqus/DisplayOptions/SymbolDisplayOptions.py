@@ -5,9 +5,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class SymbolDisplayOptions:
-    """The SymbolDisplayOptions object stores settings that specify how the assembly is
-    displayed in a particular viewport. The SymbolDisplayOptions object has no constructor.
-    When you create a new viewport, the settings are copied from the current viewport.
+    """The SymbolDisplayOptions object stores settings that specify how the assembly is displayed in a
+    particular viewport. The SymbolDisplayOptions object has no constructor. When you create a new viewport, the
+    settings are copied from the current viewport.
 
     .. note::
         This object can be accessed by::

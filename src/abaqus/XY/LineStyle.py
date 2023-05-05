@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class LineStyle:
-    """The LineStyle object is used to define the line style to be used for drawing XY-Plot
-    objects.
-    LineStyle objects can be created using the methods described below.
+    """The LineStyle object is used to define the line style to be used for drawing XY-Plot objects. LineStyle
+    objects can be created using the methods described below.
 
     .. note::
         This object can be accessed by::

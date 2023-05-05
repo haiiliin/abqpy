@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SizingRotationalSymmetry(GeometricRestriction):
-    """The SizingRotationalSymmetry object defines a sizing rotational symmetry geometric
-    restriction.
-    The SizingRotationalSymmetry object is derived from the GeometricRestriction object.
+    """The SizingRotationalSymmetry object defines a sizing rotational symmetry geometric restriction. The
+    SizingRotationalSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

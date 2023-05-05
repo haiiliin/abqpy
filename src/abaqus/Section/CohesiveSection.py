@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT
 
 @abaqus_class_doc
 class CohesiveSection(Section):
-    """The CohesiveSection object defines the properties of a cohesive section.
-    The CohesiveSection object is derived from the Section object.
+    """The CohesiveSection object defines the properties of a cohesive section. The CohesiveSection object is
+    derived from the Section object.
 
     .. note::
         This object can be accessed by::

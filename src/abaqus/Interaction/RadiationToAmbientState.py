@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class RadiationToAmbientState(InteractionState):
-    """The RadiationToAmbientState object stores the propagating data for a RadiationToAmbient
-    object. One instance of this object is created internally by the RadiationToAmbient
-    object for each step. The instance is also deleted internally by the RadiationToAmbient
-    object.
-    The RadiationToAmbientState object has no constructor or methods.
-    The RadiationToAmbientState object is derived from the InteractionState object.
+    """The RadiationToAmbientState object stores the propagating data for a RadiationToAmbient object. One
+    instance of this object is created internally by the RadiationToAmbient object for each step. The instance
+    is also deleted internally by the RadiationToAmbient object. The RadiationToAmbientState object has no
+    constructor or methods. The RadiationToAmbientState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

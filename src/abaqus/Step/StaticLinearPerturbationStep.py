@@ -23,9 +23,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StaticLinearPerturbationStep(AnalysisStep):
-    """The StaticLinearPerturbationStep object is used to indicate that the static step should
-    be analyzed as a linear perturbation load step.
-    The StaticLinearPerturbationStep object is derived from the AnalysisStep object.
+    """The StaticLinearPerturbationStep object is used to indicate that the static step should be analyzed as a
+    linear perturbation load step. The StaticLinearPerturbationStep object is derived from the AnalysisStep
+    object.
 
     .. note::
         This object can be accessed by::

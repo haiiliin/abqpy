@@ -7,11 +7,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshDisplayOptions:
-    """The MeshDisplayOptions object stores settings that specify how the assembly is displayed
-    in a particular viewport when
-    session.viewports[name].assemblyDisplay.mesh=ON
-    The MeshDisplayOptions object has no constructor. When you create a new viewport, the
-    settings are copied from the current viewport.
+    """The MeshDisplayOptions object stores settings that specify how the assembly is displayed in a particular
+    viewport when session.viewports[name].assemblyDisplay.mesh=ON The MeshDisplayOptions object has no
+    constructor. When you create a new viewport, the settings are copied from the current viewport.
 
     .. note::
         This object can be accessed by::

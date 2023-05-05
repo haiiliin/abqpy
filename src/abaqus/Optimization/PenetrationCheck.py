@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class PenetrationCheck(GeometricRestriction):
-    """The PenetrationCheck object defines a penetration check geometric restriction.
-    The PenetrationCheck object is derived from the GeometricRestriction object.
-    This page discusses:
+    """The PenetrationCheck object defines a penetration check geometric restriction. The PenetrationCheck
+    object is derived from the GeometricRestriction object. This page discusses:
 
     .. note::
         This object can be accessed by::

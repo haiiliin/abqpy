@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class KinematicHardening(PredefinedField):
-    """The KinematicHardening object stores the data for initial equivalent Plastic strains
-    and, if relevant, the initial backstress tensor.
-    The KinematicHardening object is derived from the PredefinedField object.
+    """The KinematicHardening object stores the data for initial equivalent Plastic strains and, if relevant,
+    the initial backstress tensor. The KinematicHardening object is derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

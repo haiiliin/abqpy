@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class SuperElasticHardening:
-    """The SuperElasticHardening object specifies the dependence of the yield stress on the
-    total strain to define the piecewise linear hardening of a martensite material model.
+    """The SuperElasticHardening object specifies the dependence of the yield stress on the total strain to
+    define the piecewise linear hardening of a martensite material model.
 
     .. note::
         This object can be accessed by::

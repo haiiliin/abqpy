@@ -9,7 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ProbeOptions:
-    """The ProbeOptions object is used to store settings associated with probing a model or an
+    """The ProbeOptions object is used to store settings associated with probing a model or an.
+
     **X - Y** plot. The ProbeOptions object has no constructor. Abaqus creates the
     **defaultProbeOptions** and the **probeOptions** members when you import the Visualization
     module. When probing is initiated for the first time, the values in the **probeOptions**

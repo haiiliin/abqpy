@@ -5,8 +5,8 @@ from .RuleResult import RuleResult
 
 @abaqus_class_doc
 class ErrorIndicatorResult(RuleResult):
-    """The ErrorIndicatorResult object contains result information corresponding to an error
-    indicator variable in a RemeshingRule object for an adaptivity iteration.
+    """The ErrorIndicatorResult object contains result information corresponding to an error indicator variable
+    in a RemeshingRule object for an adaptivity iteration.
 
     .. note::
         This object can be accessed by::
@@ -25,8 +25,8 @@ class ErrorIndicatorResult(RuleResult):
 
     @abaqus_method_doc
     def __init__(self, name: str, results: str):
-        """This method creates an ErrorIndicatorResult with data for an error indicator variable in
-        a RemeshingRule for a given adaptivity iteration.
+        """This method creates an ErrorIndicatorResult with data for an error indicator variable in a
+        RemeshingRule for a given adaptivity iteration.
 
         .. note::
             This function can be accessed by::
