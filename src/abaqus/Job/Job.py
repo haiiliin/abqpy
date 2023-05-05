@@ -33,6 +33,13 @@ class Job:
 
         - HEADING
         - PREPRINT
+<<<<<<< HEAD
+=======
+
+    .. versionchanged:: 2023
+
+        The ``parallelizationMethodExplicit`` attribute was removed.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
@@ -86,8 +93,17 @@ class Job:
     parallelizationMethodExplicit: SymbolicConstant = LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
+<<<<<<< HEAD
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
     #: The default value is 1.
+=======
+    #: using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
+    #:
+    #: .. versionchanged:: 2023
+    #:
+    #:     The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
+    #:     argument was removed in 2023.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     numDomains: int = 1
 
     #: A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -120,10 +136,10 @@ class Job:
     queue: str = ""
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
-    #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+    #: syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
     #: valid according to the system administrator. The default value is an empty
     #: string. Note: You can use the **atTime** argument when creating a Job object on a Windows
-    #: workstation; however, the `at` command is available only on Linux platforms.
+    #: workstation; however, the ``at`` command is available only on Linux platforms.
     atTime: str = ""
 
     #: A String specifying the location of the scratch directory. The default value is an empty
@@ -144,6 +160,12 @@ class Job:
     #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
     #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
     #: available.
+<<<<<<< HEAD
+=======
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``licenseType`` attribute was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     licenseType: SymbolicConstant = DEFAULT
 
     @abaqus_method_doc

@@ -33,6 +33,12 @@ class DistanceDimension(ConstrainedSketchDimension):
             A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
         vertex2
             A ConstrainedSketchVertex object or ConstrainedSketchGeometry object.
+<<<<<<< HEAD
+=======
+
+            .. versionchanged:: 2017
+                The ``vertex2`` argument was renamed to ``entity2``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         textPoint
             A pair of Floats specifying the location of the dimension text.
         value

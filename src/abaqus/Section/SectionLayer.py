@@ -24,6 +24,12 @@ class SectionLayer:
 
         - SHELL SECTION
         - SHELL GENERAL SECTION
+<<<<<<< HEAD
+=======
+
+    .. versionchanged:: 2017
+        The ``thicknessType`` attribute and ``thicknessField`` attribute were removed.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     #: A Float specifying the thickness of the section layer.
@@ -99,6 +105,12 @@ class SectionLayer:
                 section.SectionLayer
                 odbSection.SectionLayer
 
+<<<<<<< HEAD
+=======
+        .. versionchanged:: 2017
+            The ``thicknessType`` argument and ``thicknessField`` argument were removed.
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         thickness

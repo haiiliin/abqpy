@@ -43,6 +43,16 @@ class SizingTask(OptimizationTask):
     #: A String specifying the optimization task repository key.
     name: str
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to use Abaqus to compute the design responses and their
+    #: sensitivities. The default value is False.
+    #:
+    #: .. versionadded:: 2019
+    #:     The ``abaqusSensitivities`` attribute was added.
+    abaqusSensitivities: Boolean = False
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A Float specifying the stop criteria based on the change in element thickness. The
     #: default value is 0.5 x 10⁻².
     elementThicknessDeltaStopCriteria: float = 0
@@ -82,6 +92,17 @@ class SizingTask(OptimizationTask):
     #: The default value is NORMAL.
     thicknessUpdateStrategy: SymbolicConstant = NORMAL
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether the group in the design response will be evaluated using
+    #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+    #: value of False means that the existing algorithm will be used.
+    #:
+    #: .. versionadded:: 2022
+    #:     The ``groupSensitivities`` attribute was added.
+    groupOperator: Boolean = OFF
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -108,6 +129,15 @@ class SizingTask(OptimizationTask):
         ----------
         name
             A String specifying the optimization task repository key.
+<<<<<<< HEAD
+=======
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -137,6 +167,16 @@ class SizingTask(OptimizationTask):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -163,6 +203,15 @@ class SizingTask(OptimizationTask):
 
         Parameters
         ----------
+<<<<<<< HEAD
+=======
+        abaqusSensitivities
+            A Boolean specifying whether to use Abaqus to compute the design responses and their
+            sensitivities. The default value is True.
+
+            .. versionadded:: 2019
+                The ``abaqusSensitivities`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -192,5 +241,15 @@ class SizingTask(OptimizationTask):
             A SymbolicConstant specifying the strategy for how the thickness is updated in the
             method of moving asymptotes. Possible values are NORMAL, CONSERVATIVE, and AGGRESSIVE.
             The default value is NORMAL.
+<<<<<<< HEAD
+=======
+        groupOperator
+            A Boolean specifying whether the group in the design response will be evaluated using
+            the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
+            value of False means that the existing algorithm will be used.
+
+            .. versionadded:: 2022
+                The ``groupOperator`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...
