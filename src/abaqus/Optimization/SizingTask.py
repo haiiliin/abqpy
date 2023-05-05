@@ -47,7 +47,7 @@ class SizingTask(OptimizationTask):
     #: sensitivities. The default value is False.
     #:
     #: .. versionadded:: 2019
-    #:     The `abaqusSensitivities` attribute was added.
+    #:     The ``abaqusSensitivities`` attribute was added.
     abaqusSensitivities: Boolean = False
 
     #: A Float specifying the stop criteria based on the change in element thickness. The
@@ -94,7 +94,7 @@ class SizingTask(OptimizationTask):
     #: value of False means that the existing algorithm will be used.
     #:
     #: .. versionadded:: 2022
-    #:     The `groupSensitivities` attribute was added.
+    #:     The ``groupSensitivities`` attribute was added.
     groupOperator: Boolean = OFF
 
     @abaqus_method_doc
@@ -130,7 +130,7 @@ class SizingTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -166,7 +166,7 @@ class SizingTask(OptimizationTask):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
 
         Returns
         -------
@@ -200,7 +200,7 @@ class SizingTask(OptimizationTask):
             sensitivities. The default value is True.
 
             .. versionadded:: 2019
-                The `abaqusSensitivities` argument was added.
+                The ``abaqusSensitivities`` argument was added.
         elementThicknessDeltaStopCriteria
             A Float specifying the stop criteria based on the change in element thickness. The
             default value is 0.5 x 10⁻².
@@ -236,6 +236,6 @@ class SizingTask(OptimizationTask):
             value of False means that the existing algorithm will be used.
 
             .. versionadded:: 2022
-                The `groupOperator` argument was added.
+                The ``groupOperator`` argument was added.
         """
         ...

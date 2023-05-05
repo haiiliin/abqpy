@@ -26,7 +26,7 @@ class PropertyTable:
         - PROPERTY TABLE
 
     .. versionadded:: 2020
-        The `PropertyTable` class was added.
+        The ``PropertyTable`` class was added.
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable

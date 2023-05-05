@@ -67,6 +67,6 @@ class MesherOptions:
             empty list.
 
             .. versionadded:: 2018
-                The `guiPreferredElements` argument was added.
+                The ``guiPreferredElements`` argument was added.
         """
         ...

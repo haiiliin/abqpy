@@ -23,7 +23,7 @@ class SurfaceVertexCriteriaAssignment:
         - SURFACE PROPERTY ASSIGNMENT
 
     .. versionadded:: 2021
-        The `SurfaceVertexCriteriaAssignment` class was added.
+        The ``SurfaceVertexCriteriaAssignment`` class was added.
     """
 
     @abaqus_method_doc

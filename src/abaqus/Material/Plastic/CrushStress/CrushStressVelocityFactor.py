@@ -26,7 +26,7 @@ class CrushStressVelocityFactor:
         - CRUSH STRESS VELOCITY FACTOR
 
     .. versionadded:: 2022
-        The `CrushStressVelocityFactor` class was added.
+        The ``CrushStressVelocityFactor`` class was added.
     """
 
     #: A sequence of sequences of Floats specifying the items described below.

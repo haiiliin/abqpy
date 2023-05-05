@@ -123,10 +123,10 @@ class Job:
     queue: str = ""
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
-    #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+    #: syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
     #: valid according to the system administrator. The default value is an empty
     #: string. Note: You can use the **atTime** argument when creating a Job object on a Windows
-    #: workstation; however, the `at` command is available only on Linux platforms.
+    #: workstation; however, the ``at`` command is available only on Linux platforms.
     atTime: str = ""
 
     #: A String specifying the location of the scratch directory. The default value is an empty
@@ -149,7 +149,7 @@ class Job:
     #: available.
     #:
     #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
+    #:     The ``licenseType`` attribute was added.
     licenseType: SymbolicConstant = DEFAULT
 
     @abaqus_method_doc

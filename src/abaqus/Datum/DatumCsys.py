@@ -53,7 +53,7 @@ class DatumCsys(Datum):
         local coordinate system.
 
         .. versionadded:: 2022
-            The `globalToLocal` method was added.
+            The ``globalToLocal`` method was added.
 
         Parameters
         ----------
@@ -72,7 +72,7 @@ class DatumCsys(Datum):
         """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
 
         .. versionadded:: 2022
-            The `localToGlobal` method was added.
+            The ``localToGlobal`` method was added.
 
         Parameters
         ----------

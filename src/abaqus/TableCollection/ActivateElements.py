@@ -17,7 +17,7 @@ class ActivateElements:
         - ElementProgressiveActivation
 
     .. versionadded:: 2020
-        The `ActivateElements` class was added.
+        The ``ActivateElements`` class was added.
     """
 
     #: A String specifying the name of the tableCollection object.

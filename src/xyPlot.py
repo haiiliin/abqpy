@@ -302,13 +302,13 @@ def XYDataFromPath(
         default value is True.
 
         .. versionadded:: 2018
-            The `removeDuplicateXYPairs` argument was added.
+            The ``removeDuplicateXYPairs`` argument was added.
     includeAllElements
         A Boolean specifying whether to include elements which do not lie in the direction of
         the path. The default value is False.
         
         .. versionadded:: 2018
-            The `includeAllElements` argument was added.
+            The ``includeAllElements`` argument was added.
     step
         An Int identifying the step from which to obtain values. The default value is the
         current step.

@@ -91,7 +91,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: value is ON.
     #:
     #: ..versionadded:: 2018
-    #:     The `improvedDtMethod` attribute was added.
+    #:     The ``improvedDtMethod`` attribute was added.
     improvedDtMethod: Boolean = ON
 
     #: A String specifying the name of the previous step. The new step appears after this step
