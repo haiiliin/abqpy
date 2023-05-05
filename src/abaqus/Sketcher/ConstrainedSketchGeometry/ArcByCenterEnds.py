@@ -39,7 +39,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
             and COUNTERCLOCKWISE.
 
             .. versionadded:: 2017
-                The `direction` argument was added.
+                The ``direction`` argument was added.
 
         Returns
         -------

@@ -1112,7 +1112,7 @@ class PartBase(PartFeature):
             coordinates. By default, coordinates are given in the global coordinate system.
 
             .. versionadded:: 2022
-                The `csys` argument was added.
+                The ``csys`` argument was added.
 
         Returns
         -------

@@ -36,7 +36,7 @@ class Coexecution:
     #: co-execution. The default value is ABAQUS.
     #:
     #: .. versionchanged:: 2022
-    #:     The `masterAnalysisProduct` attribute was changed to `mainAnalysisProduct`.
+    #:     The ``masterAnalysisProduct`` attribute was changed to ``mainAnalysisProduct``.
     mainAnalysisProduct: SymbolicConstant = ABAQUS
 
     #: An Int specifying the number of hours to wait before submitting the co-execution. This
@@ -62,10 +62,10 @@ class Coexecution:
     queue: str = ""
 
     #: A String specifying the time at which to submit the co-execution. If **queue** is empty,
-    #: the string syntax must be valid for the Linux `at` command. If **queue** is set, the
+    #: the string syntax must be valid for the Linux ``at`` command. If **queue** is set, the
     #: syntax must be valid according to the system administrator. The default value is an
     #: empty string. Note: You can use the **atTime** argument when creating a Coexecution object
-    #: on a Windows workstation; however, the `at` command is available only on Linux
+    #: on a Windows workstation; however, the ``at`` command is available only on Linux
     #: platforms.
     atTime: str = ""
 
@@ -75,20 +75,20 @@ class Coexecution:
     #: A tuple of Strings specifying the names of the secondary models for the co-execution.
     #:
     #: .. versionchanged:: 2022
-    #:     The `slaveModels` attribute was changed to `secondaryModels`.
+    #:     The ``slaveModels`` attribute was changed to ``secondaryModels``.
     secondaryModels: tuple = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the secondary
     #: models for the co-execution. The default value is an empty sequence.
     #:
     #: .. versionchanged:: 2022
-    #:     The `slaveAnalysisProducts` attribute was changed to `secondaryAnalysisProducts`.
+    #:     The ``slaveAnalysisProducts`` attribute was changed to ``secondaryAnalysisProducts``.
     secondaryAnalysisProducts: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the main model for the co-execution.
     #:
     #: .. versionchanged:: 2022
-    #:     The `masterModel` attribute was changed to `mainModel`.
+    #:     The ``masterModel`` attribute was changed to ``mainModel``.
     mainModel: str = ""
 
     #: A SymbolicConstant specifying the type of license type being used in case of DSLS
@@ -97,7 +97,7 @@ class Coexecution:
     #: available.
     #:
     #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
+    #:     The ``licenseType`` attribute was added.
     licenseType: SymbolicConstant = DEFAULT
 
     @abaqus_method_doc

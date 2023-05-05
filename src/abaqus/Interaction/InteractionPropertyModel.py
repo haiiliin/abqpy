@@ -479,7 +479,7 @@ class InteractionPropertyModel(ModelBase):
                 mdb.models[name].FluidInflatorProperty
 
         .. versionadded:: 2019
-            The `FluidInflatorProperty` method was added.
+            The ``FluidInflatorProperty`` method was added.
 
         Parameters
         ----------

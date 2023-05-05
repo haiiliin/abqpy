@@ -75,10 +75,10 @@ class JobFromInputFile(Job):
     waitMinutes: int = 0
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
-    #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+    #: syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
     #: valid according to the system administrator. The default value is an empty string. Note:
     #: You can use the **atTime** argument when creating a Job object on a Windows workstation;
-    #: however, the `at` command is available only on Linux platforms.
+    #: however, the ``at`` command is available only on Linux platforms.
     atTime: str = ""
 
     #: A String specifying the location of the scratch directory. The default value is an empty
@@ -140,7 +140,7 @@ class JobFromInputFile(Job):
     #: available.
     #:
     #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
+    #:     The ``licenseType`` attribute was added.
     licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT
 
     @abaqus_method_doc
@@ -205,10 +205,10 @@ class JobFromInputFile(Job):
             with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
-            syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+            syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
             valid according to the system administrator. The default value is an empty string. Note:
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
-            however, the `at` command is available only on Linux platforms.
+            however, the ``at`` command is available only on Linux platforms.
         scratch
             A String specifying the location of the scratch directory. The default value is an empty
             string.
@@ -256,7 +256,7 @@ class JobFromInputFile(Job):
             available.
 
             .. versionchanged:: 2022
-                The `licenseType` argument was added.
+                The ``licenseType`` argument was added.
         getMemoryFromAnalysis
             A Boolean specifying whether to retrieve the recommended memory settings from the last
             datacheck or analysis run and use those values in subsequent submissions. The default
@@ -326,10 +326,10 @@ class JobFromInputFile(Job):
             with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
-            syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+            syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
             valid according to the system administrator. The default value is an empty string. Note:
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
-            however, the `at` command is available only on Linux platforms.
+            however, the ``at`` command is available only on Linux platforms.
         scratch
             A String specifying the location of the scratch directory. The default value is an empty
             string.

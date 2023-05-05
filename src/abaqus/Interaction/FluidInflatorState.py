@@ -21,7 +21,7 @@ class FluidInflatorState(InteractionState):
             mdb.models[name].steps[name].interactionStates[name]
 
     .. versionadded:: 2019
-        The `FluidInflatorState` class was added.
+        The ``FluidInflatorState`` class was added.
     """
 
     #: A **SymbolicConstant** specifying the propagation state of the InteractionState object.

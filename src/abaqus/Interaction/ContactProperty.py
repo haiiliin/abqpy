@@ -685,7 +685,7 @@ class ContactProperty(InteractionProperty):
             The default value is 0.5.
 
             .. versionchanged:: 2022
-                The argument `slaveFraction` was renamed to `secondaryFraction`.
+                The argument ``slaveFraction`` was renamed to ``secondaryFraction``.
 
         Returns
         -------
@@ -710,12 +710,12 @@ class ContactProperty(InteractionProperty):
             A Float specifying the emissivity of the main surface.
 
             .. versionchanged:: 2022
-                The argument `masterEmissivity` was renamed to `mainEmissivity`.
+                The argument ``masterEmissivity`` was renamed to ``mainEmissivity``.
         secondaryEmissivity
             A Float specifying the emissivity of the secondary surface.
 
             .. versionchanged:: 2022
-                The argument `slaveEmissivity` was renamed to `secondaryEmissivity`.
+                The argument ``slaveEmissivity`` was renamed to ``secondaryEmissivity``.
         table
             A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
             clearance, dd.

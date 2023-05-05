@@ -38,14 +38,14 @@ class DesignDirection(GeometricRestriction):
     #: SPECIFY. The default value is None.
     #:
     #: .. versionchanged:: 2022
-    #:    The attribute `masterPoint` was renamed to `mainPoint`.
+    #:    The attribute ``masterPoint`` was renamed to ``mainPoint``.
     mainPoint: Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
     #:
     #: .. versionchanged:: 2022
-    #:    The attribute `masterPointDetermination` was renamed to `mainPointDetermination`.
+    #:    The attribute ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
     mainPointDetermination: SymbolicConstant = MAXIMUM
 
     #: A SymbolicConstant specifying whether movement in the region should follow only the
@@ -111,13 +111,13 @@ class DesignDirection(GeometricRestriction):
             SPECIFY. The default value is None.
 
             .. versionchanged:: 2022
-                The argument `masterPoint` was renamed to `mainPoint`.
+                The argument ``masterPoint`` was renamed to ``mainPoint``.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
 
             .. versionchanged:: 2022
-                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
+                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
         movementRestriction
             A SymbolicConstant specifying whether movement in the region should follow only the
             direction of the **mainPoint**, only the magnitude, or both the magnitude of the
@@ -171,13 +171,13 @@ class DesignDirection(GeometricRestriction):
             SPECIFY. The default value is None.
 
             .. versionchanged:: 2022
-                The argument `masterPoint` was renamed to `mainPoint`.
+                The argument ``masterPoint`` was renamed to ``mainPoint``.
         mainPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
 
             .. versionchanged:: 2022
-                The argument `masterPointDetermination` was renamed to `mainPointDetermination`.
+                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
         movementRestriction
             A SymbolicConstant specifying whether movement in the region should follow only the
             direction of the **mainPoint**, only the magnitude, or both the magnitude of the

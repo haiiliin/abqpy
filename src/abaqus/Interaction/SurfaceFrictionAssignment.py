@@ -23,7 +23,7 @@ class SurfaceFrictionAssignment:
         - SURFACE PROPERTY ASSIGNMENT
 
     .. versionadded:: 2021
-        The `SurfaceFrictionAssignment` class was added.
+        The ``SurfaceFrictionAssignment`` class was added.
     """
 
     @abaqus_method_doc

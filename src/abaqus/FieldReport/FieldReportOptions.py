@@ -71,7 +71,7 @@ class FieldReportOptions:
             tabular report. The default value is OFF.
 
             .. versionadded:: 2022
-                The `printLocalCSYS` argument was added.
+                The ``printLocalCSYS`` argument was added.
 
         Returns
         -------
