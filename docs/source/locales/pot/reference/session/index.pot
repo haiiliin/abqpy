@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"POT-Creation-Date: 2023-05-05 14:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1456,7 +1456,7 @@ msgid "A Float specifying the opacity for polygonal graphics primitives. Possibl
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:47
-msgid "A Boolean specifying whether an object's depth will be considered during rendering. The default value is ON.When OFF, the object will not be hidden by other objects in front of it.  .. versionadded:: 2018     The `depthTest` argument was added."
+msgid "A Boolean specifying whether an object's depth will be considered during rendering. The default value is ON.When OFF, the object will not be hidden by other objects in front of it.  .. versionadded:: 2018     The ``depthTest`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:47
@@ -1464,7 +1464,7 @@ msgid "A Boolean specifying whether an object's depth will be considered during 
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:51
-msgid "The `depthTest` argument was added."
+msgid "The ``depthTest`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:54
@@ -1878,7 +1878,7 @@ msgid "Check `SessionBase.openOdb on help.3ds.com/2019 <https://help.3ds.com/201
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:14
-msgid "A String specifying the repository key. If the `name` is not the same as the `path` to the output database (`.odb`) file, the `path` must be specified as well. Additionally, to support backwards compatibility of the interface, if the `name` parameter is omitted, the `path` and `name` will be presumed to be the same."
+msgid "A String specifying the repository key. If the ``name`` is not the same as the ``path`` to the output database (`.odb`) file, the ``path`` must be specified as well. Additionally, to support backwards compatibility of the interface, if the ``name`` parameter is omitted, the ``path`` and ``name`` will be presumed to be the same."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:19
@@ -1939,7 +1939,7 @@ msgid "Check `SessionBase.printToPrinter on help.3ds.com/2019 <https://help.3ds.
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:10
-msgid "A String specifying the operating system command or printer name to issue for printing to the printer. The default value is “lpr” or the value specified by the printOptions method. If you create a script to print directly to a Windows printer, the **printCommand** must take the following form::      session.printToPrinter.setValues(         printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'     )  The `PROPERTIES` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
+msgid "A String specifying the operating system command or printer name to issue for printing to the printer. The default value is “lpr” or the value specified by the printOptions method. If you create a script to print directly to a Windows printer, the **printCommand** must take the following form::      session.printToPrinter.setValues(         printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'     )  The ``PROPERTIES`` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:10
@@ -1947,7 +1947,7 @@ msgid "A String specifying the operating system command or printer name to issue
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:20
-msgid "The `PROPERTIES` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
+msgid "The ``PROPERTIES`` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:25
@@ -2031,7 +2031,7 @@ msgid "A String specifying the CAD system for which Abaqus updates the parameter
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:13
-msgid "A parameter file containing the parameters that were exposed in the CAD system using the `ABQ_` prefix."
+msgid "A parameter file containing the parameters that were exposed in the CAD system using the ``ABQ_`` prefix."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:16
