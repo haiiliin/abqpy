@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BodyConcentrationFlux(Load):
-    """The BodyConcentrationFlux object defines body concentration flux from a region or into a
-    region.
-    The BodyConcentrationFlux object is derived from the Load object.
+    """The BodyConcentrationFlux object defines body concentration flux from a region or into a region. The
+    BodyConcentrationFlux object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -92,8 +91,8 @@ class BodyConcentrationFlux(Load):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing BodyConcentrationFlux object in the step
-        where it is created.
+        """This method modifies the data for an existing BodyConcentrationFlux object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -113,8 +112,8 @@ class BodyConcentrationFlux(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing BodyConcentrationFlux object
-        in the specified step.
+        """This method modifies the propagating data for an existing BodyConcentrationFlux object in the
+        specified step.
 
         Parameters
         ----------

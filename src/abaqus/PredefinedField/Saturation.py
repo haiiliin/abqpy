@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Saturation(PredefinedField):
-    """The Saturation object stores the data for a saturation predefined field.
-    The Saturation object is derived from the PredefinedField object.
+    """The Saturation object stores the data for a saturation predefined field. The Saturation object is derived
+    from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorOrientation:
-    """The ConnectorOrientation object is used to assign a connector orientation to a
-    connector.
+    """The ConnectorOrientation object is used to assign a connector orientation to a connector.
 
     .. note::
         This object can be accessed by::

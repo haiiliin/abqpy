@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Coupling(Constraint):
-    """The Coupling object defines a constraint between a group of coupling nodes located on a
-    region and a reference point.
-    The Coupling object is derived from the ConstrainedSketchConstraint object.
+    """The Coupling object defines a constraint between a group of coupling nodes located on a region and a
+    reference point. The Coupling object is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

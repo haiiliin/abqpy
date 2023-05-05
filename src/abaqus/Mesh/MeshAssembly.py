@@ -20,9 +20,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MeshAssembly(AssemblyBase):
-    """An Assembly object is a container for instances of parts. The Assembly object has no
-    constructor command. Abaqus creates the **rootAssembly** member when a Model object is
-    created.
+    """An Assembly object is a container for instances of parts. The Assembly object has no constructor command.
+    Abaqus creates the **rootAssembly** member when a Model object is created.
 
     .. note::
         This object can be accessed by::
@@ -33,8 +32,8 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def assignStackDirection(self, cells: Sequence[Cell], referenceRegion: Face):
-        """This method assigns a stack direction to geometric cells. The stack direction will be
-        used to orient the elements during mesh generation.
+        """This method assigns a stack direction to geometric cells. The stack direction will be used to orient
+        the elements during mesh generation.
 
         Parameters
         ----------
@@ -54,8 +53,8 @@ class MeshAssembly(AssemblyBase):
         elemEdges: Sequence[MeshEdge] = (),
         node: MeshNode = MeshNode((0, 0, 0)),
     ):
-        """This method associates a geometric entity with mesh entities that are either orphan
-        elements, bounds orphan elements, or were created using the bottom-up meshing technique.
+        """This method associates a geometric entity with mesh entities that are either orphan elements, bounds
+        orphan elements, or were created using the bottom-up meshing technique.
 
         Parameters
         ----------
@@ -100,9 +99,9 @@ class MeshAssembly(AssemblyBase):
         blendSubtendedAngleTolerance: Optional[float] = None,
         blendRadiusTolerance: Optional[float] = None,
     ):
-        """This method creates a virtual topology feature by automatically merging faces and edges
-        based on a set of geometric parameters. The edges and vertices that are being merged
-        will be ignored during mesh generation.
+        """This method creates a virtual topology feature by automatically merging faces and edges based on a
+        set of geometric parameters. The edges and vertices that are being merged will be ignored during mesh
+        generation.
 
         Parameters
         ----------
@@ -181,8 +180,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: Sequence[Cell]):
-        """This method deletes the control parameters for boundary layer mesh for all the specified
-        regions.
+        """This method deletes the control parameters for boundary layer mesh for all the specified regions.
 
         Parameters
         ----------
@@ -194,8 +192,8 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deleteMesh(self, regions: Sequence[PartInstance]):
-        """This method deletes a subset of the mesh that contains the native elements from the
-        given part instances or regions.
+        """This method deletes a subset of the mesh that contains the native elements from the given part
+        instances or regions.
 
         Parameters
         ----------
@@ -227,15 +225,17 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deletePreviewMesh(self):
-        """This method deletes all boundary meshes in the assembly. See the **boundaryPreview**
-        argument of generateMesh for information about generating boundary meshes.
+        """This method deletes all boundary meshes in the assembly.
+
+        See the **boundaryPreview** argument of generateMesh for information about generating boundary
+        meshes.
         """
         ...
 
     @abaqus_method_doc
     def deleteSeeds(self, regions: Sequence[PartInstance]):
-        """This method deletes the global edge seeds from the given part instances or deletes the
-        local edge seeds from the given edges.
+        """This method deletes the global edge seeds from the given part instances or deletes the local edge
+        seeds from the given edges.
 
         Parameters
         ----------
@@ -259,8 +259,8 @@ class MeshAssembly(AssemblyBase):
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by extruding a 2D mesh along a vector, either on an
-        orphan mesh or within a cell region using a bottom-up technique.
+        """This method generates solid elements by extruding a 2D mesh along a vector, either on an orphan mesh
+        or within a cell region using a bottom-up technique.
 
         Parameters
         ----------
@@ -314,8 +314,8 @@ class MeshAssembly(AssemblyBase):
         numberOfLayers: Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or
-        within a cell region using a bottom-up technique.
+        """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell
+        region using a bottom-up technique.
 
         Parameters
         ----------
@@ -362,8 +362,8 @@ class MeshAssembly(AssemblyBase):
         elemSourceSide: tuple = (),
         extendElementSets: Boolean = False,
     ):
-        """This method generates solid elements by revolving a 2D mesh around an axis, either on an
-        orphan mesh or within a cell region using a bottom-up technique.
+        """This method generates solid elements by revolving a 2D mesh around an axis, either on an orphan mesh
+        or within a cell region using a bottom-up technique.
 
         Parameters
         ----------
@@ -524,8 +524,8 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getElementType(self, region: str, elemShape: SymbolicConstant):
-        """This method returns the ElemType object of a given element shape assigned to a region of
-        the assembly.
+        """This method returns the ElemType object of a given element shape assigned to a region of the
+        assembly.
 
         Parameters
         ----------
@@ -550,8 +550,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()):
-        """This method returns a sequence of face objects that are meshed with incompatible
-        elements.
+        """This method returns a sequence of face objects that are meshed with incompatible elements.
 
         Parameters
         ----------
@@ -697,8 +696,8 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getUnmeshedRegions(self):
-        """This method returns all geometric regions in the assembly that require a mesh for
-        submitting an analysis but are either unmeshed or are meshed incompletely.
+        """This method returns all geometric regions in the assembly that require a mesh for submitting an
+        analysis but are either unmeshed or are meshed incompletely.
 
         Returns
         -------
@@ -709,10 +708,9 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def ignoreEntity(self, entities: tuple):
-        """This method creates a virtual topology feature. Virtual topology allows unimportant
-        entities to be ignored during mesh generation. You can combine two adjacent faces by
-        specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
-        specifying a common vertex to ignore.
+        """This method creates a virtual topology feature. Virtual topology allows unimportant entities to be
+        ignored during mesh generation. You can combine two adjacent faces by specifying a common edge to
+        ignore. Similarly, you can combine two adjacent edges by specifying a common vertex to ignore.
 
         Parameters
         ----------
@@ -728,8 +726,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]):
-        """This method restores vertices and edges that have been merged using a virtual topology
-        feature.
+        """This method restores vertices and edges that have been merged using a virtual topology feature.
 
         Parameters
         ----------
@@ -758,8 +755,8 @@ class MeshAssembly(AssemblyBase):
         maxSize: float,
         constraint: Literal[C.FINER, C.FREE, C.FIXED] = FREE,
     ):
-        """This method seeds the given edges nonuniformly using the specified number of elements
-        and bias ratio or the specified minimum and maximum element sizes.
+        """This method seeds the given edges nonuniformly using the specified number of elements and bias ratio
+        or the specified minimum and maximum element sizes.
 
         Parameters
         ----------
@@ -813,8 +810,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def seedEdgeByNumber(self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE] = FREE):
-        """This method seeds the given edges uniformly based on the number of elements along the
-        edges.
+        """This method seeds the given edges uniformly based on the number of elements along the edges.
 
         Parameters
         ----------
@@ -842,8 +838,8 @@ class MeshAssembly(AssemblyBase):
         minSizeFactor: Optional[float] = None,
         constraint: Literal[C.FREE] = FREE,
     ):
-        """This method seeds the given edges either uniformly or following edge curvature
-        distribution, based on the desired element size.
+        """This method seeds the given edges either uniformly or following edge curvature distribution, based on
+        the desired element size.
 
         Parameters
         ----------
@@ -908,8 +904,7 @@ class MeshAssembly(AssemblyBase):
         inactiveFaces: Sequence[Face] = (),
         setName: str = "",
     ):
-        """This method sets the control parameters for boundary layer mesh for the specified
-        regions.
+        """This method sets the control parameters for boundary layer mesh for the specified regions.
 
         Parameters
         ----------
@@ -1061,8 +1056,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def setSweepPath(self, region: str, edge: Edge, sense: Literal[C.FORWARD]):
-        """This method sets the sweep path for a sweepable region or the revolve path for a
-        revolvable region.
+        """This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.
 
         Parameters
         ----------

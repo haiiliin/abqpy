@@ -18,8 +18,8 @@ class ObliqueDimension(ConstrainedSketchDimension):
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
-        """This method constructs a ConstrainedSketchDimension object between two vertices. An
-        oblique dimension indicates the distance between two vertices.
+        """This method constructs a ConstrainedSketchDimension object between two vertices. An oblique dimension
+        indicates the distance between two vertices.
 
         .. note::
             This function can be accessed by::
@@ -44,6 +44,5 @@ class ObliqueDimension(ConstrainedSketchDimension):
         -------
         ConstrainedSketchDimension
             A ConstrainedSketchDimension object (None if the dimension cannot be created).
-
         """
         ...

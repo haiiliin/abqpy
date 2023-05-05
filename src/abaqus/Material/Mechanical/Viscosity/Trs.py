@@ -7,8 +7,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Trs:
-    r"""The Trs object defines the temperature-time shift for time history viscoelastic
-    analysis.
+    r"""The Trs object defines the temperature-time shift for time history viscoelastic analysis.
 
     .. note::
         This object can be accessed by::

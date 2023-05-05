@@ -6,9 +6,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MasterSlaveAssignment:
-    """The MasterSlaveAssignment object stores the master-slave assignment definition for
-    surfaces in ContactExp and ContactStd objects. The MasterSlaveAssignment object has no
-    constructor or members.
+    """The MasterSlaveAssignment object stores the master-slave assignment definition for surfaces in ContactExp
+    and ContactStd objects. The MasterSlaveAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -23,8 +22,8 @@ class MasterSlaveAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.BALANCED, C.SECONDARY, C.MAIN]):
-        """This method allows modification of master-slave assignments already defined on surface
-        pairs in a given step.
+        """This method allows modification of master-slave assignments already defined on surface pairs in a
+        given step.
 
         Parameters
         ----------
@@ -43,8 +42,7 @@ class MasterSlaveAssignment:
 
     @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.BALANCED, C.SECONDARY, C.MAIN, C.GLOBAL]):
-        """This method allows addition of master-slave assignments to new surface pairs in a
-        given step.
+        """This method allows addition of master-slave assignments to new surface pairs in a given step.
 
         Parameters
         ----------

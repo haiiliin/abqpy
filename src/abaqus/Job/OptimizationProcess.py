@@ -12,8 +12,8 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class OptimizationProcess:
-    """The OptimizationProcess object defines a process to perform an optimization of a model
-    defined using an optimization task.
+    """The OptimizationProcess object defines a process to perform an optimization of a model defined using an
+    optimization task.
 
     .. note::
         This object can be accessed by::
@@ -160,10 +160,10 @@ class OptimizationProcess:
 
     @abaqus_method_doc
     def waitForCompletion(self):
-        """This method interrupts the execution of the script until the end of all the analyses. If
-        you call the waitForCompletion method and the **status** member is neither SUBMITTED nor
-        RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
-        immediately.
+        """This method interrupts the execution of the script until the end of all the analyses.
+
+        If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING,
+        Abaqus assumes the analysis has either completed or aborted and returns immediately.
         """
         ...
 

@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class InitialState(PredefinedField):
-    """The InitialState object stores the data for an initial state predefined field.
-    The InitialState object is derived from the PredefinedField object.
+    """The InitialState object stores the data for an initial state predefined field. The InitialState object is
+    derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::

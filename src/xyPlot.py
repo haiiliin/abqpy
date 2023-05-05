@@ -38,7 +38,7 @@ def XYDataFromFile(
 ) -> XYData:
     """This method creates an XYData object from data in an ASCII file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.XYDataFromFile
@@ -109,10 +109,9 @@ def XYDataFromFreeBody(
     comp2: Boolean = OFF,
     comp3: Boolean = OFF,
 ) -> List[XYData]:
-    """This method creates a list of XYData objects by computing free body data from an Odb
-    object.
+    """This method creates a list of XYData objects by computing free body data from an Odb object.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.XYDataFromFreeBody
@@ -165,15 +164,13 @@ def XYDataFromHistory(
     positionDescription: str = "",
     legendLabel: str = "",
     skipFrequency: Optional[int] = None,
-    numericForm: Literal[
-        C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-    ] = REAL,
+    numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
     stepTuple: Optional[int] = None,
 ) -> XYData:
     """This method creates an XYData object by reading history data from an Odb object.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.XYDataFromHistory
@@ -257,16 +254,14 @@ def XYDataFromPath(
     frame: Optional[int] = None,
     variable: Optional[SymbolicConstant] = None,
     deformedMag: Optional[float] = None,
-    numericForm: Literal[
-        C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-    ] = REAL,
+    numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
     projectOntoMesh: Boolean = False,
     projectionTolerance: float = 0,
 ) -> XYData:
     """This method creates an XYData object from path information.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.XYDataFromPath
@@ -319,10 +314,10 @@ def XYDataFromPath(
         the location. The dictionary contains pairs of the following:A String specifying the
         category selection label.A String specifying the section point label. For
         example::
-        
-            variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
+
+            variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), )
             variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
-                        ('U',NODAL,((COMPONENT, 'U1'),)),) 
+                        ('U',NODAL,((COMPONENT, 'U1'),)),)
             variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
                         {'shell < STEEL > < 3 section points >':'SNEG,
                         (fraction = -1.0)', }), )
@@ -399,15 +394,13 @@ def XYDataFromShellThickness(
     elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
     nodeSets: Union[str, Sequence[str]] = ...,
     nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-    numericForm: Literal[
-        C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-    ] = REAL,
+    numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
 ) -> List[XYData]:
-    """This method creates a list of XYData objects by reading through the thickness field data
-    from an Odb object.
+    """This method creates a list of XYData objects by reading through the thickness field data from an Odb
+    object.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.XYDataFromShellThickness
@@ -439,7 +432,7 @@ def XYDataFromShellThickness(
 
         * Location: An optional Dictionary specifying the location. The
             dictionary contains pairs of the following:
-            
+
             * A String specifying the category selection label.
             * A String specifying the section point label.
 
@@ -456,7 +449,7 @@ def XYDataFromShellThickness(
     elementLabels
         A sequence of expressions specifying element labels per part instance in the model. Each
         part instance element expression is a sequence of a String specifying the part instance
-        name and a sequence of element expressions; for example, 
+        name and a sequence of element expressions; for example,
         `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
         expressions can be any of the following:An Int specifying a single element label; for
         example, `1`.A String specifying a single element label; for example, `'7'`.A String
@@ -519,9 +512,7 @@ def xyDataListFromField(
     elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
     nodeSets: Union[str, Sequence[str]] = ...,
     nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-    numericForm: Literal[
-        C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-    ] = REAL,
+    numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
     operator: Literal[
         C.ADD,
@@ -562,7 +553,7 @@ def xyDataListFromField(
 ) -> List[XYData]:
     """This method creates a list of XYData objects by reading field data from an Odb object.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.xyDataListFromField
@@ -577,8 +568,8 @@ def xyDataListFromField(
         values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
     variable
         A tuple of tuples containing the descriptions of variables for which to extract data
-        from the field. Each tuple specifies the following: 
-        
+        from the field. Each tuple specifies the following:
+
         * Variable label: A String specifying the variable; for example, 'U'.
         * Variable output position: A SymbolicConstant specifying the output position. Possible values are
             ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL,
@@ -586,18 +577,18 @@ def xyDataListFromField(
         * Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are
             written  for all components and invariants (if applicable). This element is required if the
             location dictionary (the following element in the tuple) is included. The refinement tuple
-            contains the following: 
-            
+            contains the following:
+
             * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
             COMPONENT.
             * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-            
+
         * Location: An optional Dictionary specifying the location. The dictionary contains pairs of the
             following:
-            
+
             * A String specifying the category selection label.
             * A String specifying the section point label.
-            
+
         For example::
 
             variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )

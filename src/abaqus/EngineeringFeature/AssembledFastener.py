@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AssembledFastener(Fastener):
-    """The AssembledFastener object defines an assembled fastener.
-    The AssembledFastener object is derived from the Fastener object.
+    """The AssembledFastener object defines an assembled fastener. The AssembledFastener object is derived from
+    the Fastener object.
 
     .. note::
         This object can be accessed by::
@@ -82,9 +82,8 @@ class AssembledFastener(Fastener):
         localCsys: Optional[int] = None,
         scriptName: str = "",
     ):
-        """This method creates an AssembledFastener object. Although the constructor is available
-        both for parts and for the assembly, AssembledFastener objects are currently supported
-        only under the assembly.
+        """This method creates an AssembledFastener object. Although the constructor is available both for parts
+        and for the assembly, AssembledFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

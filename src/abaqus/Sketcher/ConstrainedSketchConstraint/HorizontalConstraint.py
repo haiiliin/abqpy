@@ -10,8 +10,8 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 class HorizontalConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
     def __init__(self, entity: ConstrainedSketchGeometry):
-        """This method creates a horizontal constraint. This constraint applies to a line and
-        constrains it to be horizontal.
+        """This method creates a horizontal constraint. This constraint applies to a line and constrains it to
+        be horizontal.
 
         .. note::
             This function can be accessed by::
@@ -27,6 +27,5 @@ class HorizontalConstraint(ConstrainedSketchConstraint):
         -------
         ConstrainedSketchConstraint
             A ConstrainedSketchConstraint object.
-
         """
         ...

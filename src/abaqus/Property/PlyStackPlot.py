@@ -7,8 +7,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class PlyStackPlot:
-    """The PlyStackPlot object is used to plot the stacking of plies in a composite layup or in
-    a composite shell section.
+    """The PlyStackPlot object is used to plot the stacking of plies in a composite layup or in a composite
+    shell section.
 
     .. note::
         This object can be accessed by::
@@ -20,8 +20,7 @@ class PlyStackPlot:
 
 @abaqus_function_doc
 def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
-    """This method creates a PlyStackPlot object from a region of a part that contains a
-    composite shell layup.
+    """This method creates a PlyStackPlot object from a region of a part that contains a composite shell layup.
 
     .. note::
         This function can be accessed by::
@@ -49,8 +48,7 @@ def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
 
 @abaqus_function_doc
 def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
-    """This method creates a PlyStackPlot object from a composite shell section of an Odb
-    object.
+    """This method creates a PlyStackPlot object from a composite shell section of an Odb object.
 
     .. note::
         This function can be accessed by::

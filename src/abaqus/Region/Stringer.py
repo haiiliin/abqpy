@@ -31,8 +31,8 @@ class Stringer:
 
     @abaqus_method_doc
     def __init__(self, name: str, edges: Sequence[Edge] = (), elementEdges: Sequence[MeshEdge] = ()):
-        """This method creates a stringer from a sequence of objects in a model database. At least
-        one of the optional arguments needs to be specified.
+        """This method creates a stringer from a sequence of objects in a model database. At least one of the
+        optional arguments needs to be specified.
 
         .. note::
             This function can be accessed by::
@@ -59,8 +59,8 @@ class Stringer:
 
     @abaqus_method_doc
     def EditStringer(self, name: str, edges: Sequence[Edge] = (), elementEdges: Sequence[MeshEdge] = ()):
-        """This method modifies underlying entities of the selected stringer. At least one of the
-        optional arguments needs to be specified.
+        """This method modifies underlying entities of the selected stringer. At least one of the optional
+        arguments needs to be specified.
 
         .. note::
             This function can be accessed by::

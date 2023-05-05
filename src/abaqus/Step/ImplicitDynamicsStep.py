@@ -35,10 +35,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ImplicitDynamicsStep(AnalysisStep):
-    """The ImplicitDynamicsStep object is used to provide direct integration of a dynamic
-    stress/displacement response in Abaqus/Standard analyses and is generally used for
-    nonlinear cases.
-    The ImplicitDynamicsStep object is derived from the AnalysisStep object.
+    """The ImplicitDynamicsStep object is used to provide direct integration of a dynamic stress/displacement
+    response in Abaqus/Standard analyses and is generally used for nonlinear cases. The ImplicitDynamicsStep
+    object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

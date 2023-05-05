@@ -8,12 +8,11 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SurfaceToSurfaceExpState(InteractionState):
-    """The SurfaceToSurfaceExpState object stores the propagating data for a
-    SurfaceToSurfaceContactExp object. One instance of this object is created internally by
-    the SurfaceToSurfaceContactExp object for each step. The instance is also deleted
-    internally by the SurfaceToSurfaceContactExp object.
-    The SurfaceToSurfaceExpState object has no constructor or methods.
-    The SurfaceToSurfaceExpState object is derived from the InteractionState object.
+    """The SurfaceToSurfaceExpState object stores the propagating data for a SurfaceToSurfaceContactExp object.
+    One instance of this object is created internally by the SurfaceToSurfaceContactExp object for each step.
+    The instance is also deleted internally by the SurfaceToSurfaceContactExp object. The
+    SurfaceToSurfaceExpState object has no constructor or methods. The SurfaceToSurfaceExpState object is
+    derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

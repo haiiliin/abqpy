@@ -9,9 +9,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AcousticImpedance(Interaction):
-    """The AcousticImpedance object defines surface impedance information or nonreflecting
-    boundaries for acoustic and coupled acoustic-structural analyses.
-    The AcousticImpedance object is derived from the Interaction object.
+    """The AcousticImpedance object defines surface impedance information or nonreflecting boundaries for
+    acoustic and coupled acoustic-structural analyses. The AcousticImpedance object is derived from the
+    Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -159,8 +159,8 @@ class AcousticImpedance(Interaction):
         centerCoordinates: tuple = (),
         directionCosine: tuple = (),
     ):
-        """This method modifies the data for an existing AcousticImpedance object in the step where
-        it is created.
+        """This method modifies the data for an existing AcousticImpedance object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -200,8 +200,8 @@ class AcousticImpedance(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = ""):
-        """This method modifies the propagating data for an existing AcousticImpedance object in
-        the specified step.
+        """This method modifies the propagating data for an existing AcousticImpedance object in the specified
+        step.
 
         Parameters
         ----------

@@ -7,11 +7,10 @@ from ..UtilityAndView.abaqusConstants import NONE
 
 @abaqus_class_doc
 class QuantityType:
-    """The QuantityType object is used to store attributes defining the physical dimension and
-    label of the quantity type to be associated with an XYData or an AxisData object.
-    QuantityType objects are automatically created when creating XYData objects from the
-    odb.
-    QuantityType objects can be created using the methods described below.
+    """The QuantityType object is used to store attributes defining the physical dimension and label of the
+    quantity type to be associated with an XYData or an AxisData object. QuantityType objects are automatically
+    created when creating XYData objects from the odb. QuantityType objects can be created using the methods
+    described below.
 
     .. note::
         This object can be accessed by::

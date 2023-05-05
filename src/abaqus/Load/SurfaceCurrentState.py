@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SurfaceCurrentState(LoadState):
-    """The SurfaceCurrentState object stores the propagating data of a surface current in a
-    step. One instance of this object is created internally by the SurfaceCurrent object for
-    each step. The instance is also deleted internally by the SurfaceCurrent object.
-    The SurfaceCurrentState object has no constructor or methods.
-    The SurfaceCurrentState object is derived from the LoadState object.
+    """The SurfaceCurrentState object stores the propagating data of a surface current in a step. One instance
+    of this object is created internally by the SurfaceCurrent object for each step. The instance is also
+    deleted internally by the SurfaceCurrent object. The SurfaceCurrentState object has no constructor or
+    methods. The SurfaceCurrentState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

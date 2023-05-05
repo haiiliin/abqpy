@@ -9,8 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StdXplCosimulation(Interaction):
-    """The StdXplCosimulation object defines co-simulation behavior between Abaqus/Standard and
-    Abaqus/Explicit.
+    """The StdXplCosimulation object defines co-simulation behavior between Abaqus/Standard and Abaqus/Explicit.
     The StdXplCosimulation object is derived from the Interaction object.
 
     .. note::

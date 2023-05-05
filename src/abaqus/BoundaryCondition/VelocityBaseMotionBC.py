@@ -12,9 +12,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class VelocityBaseMotionBC(BoundaryCondition):
-    """The VelocityBaseMotionBC object stores the data for a velocity base motion boundary
-    condition.
-    The VelocityBaseMotionBC object is derived from the BoundaryCondition object.
+    """The VelocityBaseMotionBC object stores the data for a velocity base motion boundary condition. The
+    VelocityBaseMotionBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -121,8 +120,8 @@ class VelocityBaseMotionBC(BoundaryCondition):
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing VelocityBaseMotionBC object in the step
-        where it is created.
+        """This method modifies the data for an existing VelocityBaseMotionBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -149,8 +148,8 @@ class VelocityBaseMotionBC(BoundaryCondition):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, amplitude: str = ""):
-        """This method modifies the propagating data for an existing VelocityBaseMotionBC object in
-        the specified step.
+        """This method modifies the propagating data for an existing VelocityBaseMotionBC object in the
+        specified step.
 
         Parameters
         ----------

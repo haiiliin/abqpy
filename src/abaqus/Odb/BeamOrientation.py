@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BeamOrientation:
-    """The BeamOrientation object represents the direction of the first beam section axis n1n1.
-    Specifying the beam orientation using an additional node in the element connectivity
-    list is not supported.
+    """The BeamOrientation object represents the direction of the first beam section axis n1n1. Specifying the
+    beam orientation using an additional node in the element connectivity list is not supported.
 
     .. note::
         This object can be accessed by::

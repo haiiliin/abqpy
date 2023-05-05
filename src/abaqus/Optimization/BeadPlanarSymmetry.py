@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BeadPlanarSymmetry(GeometricRestriction):
-    """The BeadPlanarSymmetry object defines a bead planar symmetry geometric restriction.
-    The BeadPlanarSymmetry object is derived from the GeometricRestriction object.
+    """The BeadPlanarSymmetry object defines a bead planar symmetry geometric restriction. The
+    BeadPlanarSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

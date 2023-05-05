@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 @abaqus_class_doc
 class SubmodelSB(Load):
-    """The SubmodelSB object stores the data for a submodel surface based load.
-    The SubmodelSB object is derived from the Load object.
+    """The SubmodelSB object stores the data for a submodel surface based load. The SubmodelSB object is derived
+    from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -103,8 +103,7 @@ class SubmodelSB(Load):
         exteriorTolerance: float = 0,
         globalIncrement: int = 0,
     ):
-        """This method modifies the data for an existing SubmodelSB object in the step where it is
-        created.
+        """This method modifies the data for an existing SubmodelSB object in the step where it is created.
 
         Parameters
         ----------
@@ -135,8 +134,7 @@ class SubmodelSB(Load):
         globalStep: str = "",
         globalIncrement: int = 0,
     ):
-        """This method modifies the propagating data for an existing SubmodelSB object in the
-        specified step.
+        """This method modifies the propagating data for an existing SubmodelSB object in the specified step.
 
         Parameters
         ----------

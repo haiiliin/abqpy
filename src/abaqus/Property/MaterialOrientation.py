@@ -25,8 +25,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MaterialOrientation:
-    """The MaterialOrientation object represents the orientation of the material properties and
-    composite layups.
+    """The MaterialOrientation object represents the orientation of the material properties and composite
+    layups.
 
     .. note::
         This object can be accessed by::

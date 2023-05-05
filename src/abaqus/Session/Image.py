@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class Image:
-    """The Image object is used to store color values and attributes associated with a raster
-    file. Upon creation, the Image object is added to the session.images repository.
+    """The Image object is used to store color values and attributes associated with a raster file. Upon
+    creation, the Image object is added to the session.images repository.
 
     .. note::
         This object can be accessed by::

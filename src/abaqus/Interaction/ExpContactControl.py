@@ -10,9 +10,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ExpContactControl(ContactControl):
-    """The ExpContactControl object is used in Abaqus/Explicit analyses to specify optional
-    solution controls for problems involving contact between bodies.
-    The ExpContactControl object is derived from the ContactControl object.
+    """The ExpContactControl object is used in Abaqus/Explicit analyses to specify optional solution controls
+    for problems involving contact between bodies. The ExpContactControl object is derived from the
+    ContactControl object.
 
     .. note::
         This object can be accessed by::

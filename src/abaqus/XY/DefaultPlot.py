@@ -6,9 +6,9 @@ from .Title import Title
 
 @abaqus_class_doc
 class DefaultPlot:
-    """The DefaultPlot object is used to hold on default plot attributes. The DefaultPlot
-    object attributes are used whenever an XYPlot object is created. A DefaultPlot object is
-    automatically created when opening a session.
+    """The DefaultPlot object is used to hold on default plot attributes. The DefaultPlot object attributes are
+    used whenever an XYPlot object is created. A DefaultPlot object is automatically created when opening a
+    session.
 
     .. note::
         This object can be accessed by::

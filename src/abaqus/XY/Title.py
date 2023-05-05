@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class Title:
-    """The Title object is used to store the display attributes of the XYPlot title. An Title
-    object is automatically created when creating a XYPlot object.
+    """The Title object is used to store the display attributes of the XYPlot title. An Title object is
+    automatically created when creating a XYPlot object.
 
     .. note::
         This object can be accessed by::

@@ -149,8 +149,7 @@ class MeshNodeArray(List[MeshNode]):
         center2: Tuple[float, float, float],
         radius: float,
     ) -> MeshNodeArray:
-        """This method returns an array of node objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of node objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -171,8 +170,7 @@ class MeshNodeArray(List[MeshNode]):
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str) -> MeshNodeArray:
-        """This method returns an array of node objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of node objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -190,8 +188,8 @@ class MeshNodeArray(List[MeshNode]):
 
     @abaqus_method_doc
     def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the node sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the node sequence.
 
         Returns
         -------
@@ -236,8 +234,7 @@ class MeshNodeArray(List[MeshNode]):
 
     @abaqus_method_doc
     def sequenceFromLabels(self, labels: Sequence[int]) -> MeshNodeArray:
-        """This method returns the objects in the MeshNodeArray identified using the specified
-        labels.
+        """This method returns the objects in the MeshNodeArray identified using the specified labels.
 
         Parameters
         ----------

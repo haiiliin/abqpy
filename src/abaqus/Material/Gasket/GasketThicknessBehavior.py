@@ -10,8 +10,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class GasketThicknessBehavior:
-    """The GasketThicknessBehavior object defines the behavior in the thickness direction for a
-    gasket.
+    """The GasketThicknessBehavior object defines the behavior in the thickness direction for a gasket.
 
     .. note::
         This object can be accessed by::

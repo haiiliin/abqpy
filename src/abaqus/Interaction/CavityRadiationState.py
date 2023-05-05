@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON, SymbolicConstant
 
 @abaqus_class_doc
 class CavityRadiationState(InteractionState):
-    """The CavityRadiationState object stores the propagating data for a CavityRadiation
-    object. One instance of this object is created internally by the CavityRadiation object
-    for each step. The instance is also deleted internally by the CavityRadiation object.
-    The CavityRadiationState object has no constructor or methods.
-    The CavityRadiationState object is derived from the InteractionState object.
+    """The CavityRadiationState object stores the propagating data for a CavityRadiation object. One instance of
+    this object is created internally by the CavityRadiation object for each step. The instance is also deleted
+    internally by the CavityRadiation object. The CavityRadiationState object has no constructor or methods. The
+    CavityRadiationState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class FailureRatios:
-    """The FailureRatios object specifies the shape of the failure surface for a Concrete
-    model.
+    """The FailureRatios object specifies the shape of the failure surface for a Concrete model.
 
     .. note::
         This object can be accessed by::

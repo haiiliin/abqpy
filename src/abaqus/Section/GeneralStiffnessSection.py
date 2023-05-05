@@ -12,8 +12,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF
 
 @abaqus_class_doc
 class GeneralStiffnessSection(ShellSection):
-    """The GeneralStiffnessSection object defines the properties of a shell section via the
-    stiffness matrix.
+    """The GeneralStiffnessSection object defines the properties of a shell section via the stiffness matrix.
     The GeneralStiffnessSection object is derived from the ShellSection object.
 
     .. note::

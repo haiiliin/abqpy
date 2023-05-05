@@ -12,8 +12,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AccelerationBaseMotionBC(BoundaryCondition):
-    """The AccelerationBaseMotionBC object stores the data for an acceleration base motion
-    boundary condition.
+    """The AccelerationBaseMotionBC object stores the data for an acceleration base motion boundary condition.
     The AccelerationBaseMotionBC object is derived from the BoundaryCondition object.
 
     .. note::
@@ -121,8 +120,8 @@ class AccelerationBaseMotionBC(BoundaryCondition):
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing AccelerationBaseMotionBC object in the
-        step where it is created.
+        """This method modifies the data for an existing AccelerationBaseMotionBC object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -149,8 +148,8 @@ class AccelerationBaseMotionBC(BoundaryCondition):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, amplitude: str = ""):
-        """This method modifies the propagating data for an existing AccelerationBaseMotionBC
-        object in the specified step.
+        """This method modifies the propagating data for an existing AccelerationBaseMotionBC object in the
+        specified step.
 
         Parameters
         ----------

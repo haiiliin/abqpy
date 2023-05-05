@@ -5,8 +5,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class PoreFluidExpansion:
-    r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a
-    hydraulic fluid.
+    r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a hydraulic fluid.
 
     .. note::
         This object can be accessed by::

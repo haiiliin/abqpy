@@ -110,10 +110,9 @@ class OdbBase:
 
     @abaqus_method_doc
     def getFrame(self, frameValue: str, match: Literal[C.BEFORE, C.EXACT, C.AFTER, C.CLOSEST] = CLOSEST):
-        """This method returns the frame at the specified time, frequency, or mode. It will not
-        interpolate values between frames. The method is not applicable to an Odb object
-        containing steps with different domains or to an Odb object containing a step with load
-        case specific data.
+        """This method returns the frame at the specified time, frequency, or mode. It will not interpolate
+        values between frames. The method is not applicable to an Odb object containing steps with different
+        domains or to an Odb object containing a step with load case specific data.
 
         Parameters
         ----------
@@ -154,10 +153,10 @@ class OdbBase:
 
     @abaqus_method_doc
     def update(self):
-        """This method is used to update an Odb object in memory while an Abaqus analysis writes
-        data to the associated output database. update checks if additional steps have been
-        written to the output database since it was opened or last updated. If additional steps
-        have been written to the output database, update adds them to the Odb object.
+        """This method is used to update an Odb object in memory while an Abaqus analysis writes data to the
+        associated output database. update checks if additional steps have been written to the output database
+        since it was opened or last updated. If additional steps have been written to the output database,
+        update adds them to the Odb object.
 
         Returns
         -------

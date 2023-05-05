@@ -7,9 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class HeatCapacitance(Inertia):
-    """The HeatCapacitance object defines point heat capacitance on a part or an assembly
-    region.
-    The HeatCapacitance object is derived from the Inertia object.
+    """The HeatCapacitance object defines point heat capacitance on a part or an assembly region. The
+    HeatCapacitance object is derived from the Inertia object.
 
     .. note::
         This object can be accessed by::

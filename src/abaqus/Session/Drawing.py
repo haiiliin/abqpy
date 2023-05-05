@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Drawing:
-    """A drawing is the container for a geometric object. The Drawing object stores the vertex
-    data and various settings that determine how the drawing will be displayed.
+    """A drawing is the container for a geometric object. The Drawing object stores the vertex data and various
+    settings that determine how the drawing will be displayed.
 
     .. note::
         This object can be accessed by::
@@ -118,9 +118,9 @@ class Drawing:
 
     @abaqus_method_doc
     def setVertices(self, vertexDimension: float, vertexData: tuple):
-        """This method accepts the vertex data that defines the Drawing object. It defines in an
-        array of vertices with a length equal to the length of the **vertexData** sequence divided
-        by **vertexDimension**.
+        """This method accepts the vertex data that defines the Drawing object. It defines in an array of
+        vertices with a length equal to the length of the **vertexData** sequence divided by
+        **vertexDimension**.
 
         Parameters
         ----------
@@ -149,8 +149,8 @@ class Drawing:
 
     @abaqus_method_doc
     def setNormals(self, normalData: tuple):
-        """This method accepts the normal data for each vertex. It defines in an array of normal
-        vectors with a length equal to the length of the **normalData** sequence divided by 3.
+        """This method accepts the normal data for each vertex. It defines in an array of normal vectors with a
+        length equal to the length of the **normalData** sequence divided by 3.
 
         Parameters
         ----------
@@ -212,10 +212,10 @@ class Drawing:
 
     @abaqus_method_doc
     def setEdgeColor(self, edgeColor: tuple):
-        """This method allows a separate, single color to be used when rendering the edges of the
-        drawing. Once called, edges will be rendered using the specified color but facets will
-        continue to use the colors specified in the setColors method. An empty sequence can be
-        specified to resume using the colors arrays for edges.
+        """This method allows a separate, single color to be used when rendering the edges of the drawing. Once
+        called, edges will be rendered using the specified color but facets will continue to use the colors
+        specified in the setColors method. An empty sequence can be specified to resume using the colors arrays
+        for edges.
 
         Parameters
         ----------
@@ -234,10 +234,10 @@ class Drawing:
 
     @abaqus_method_doc
     def setPointColor(self, pointColor: tuple):
-        """This method allows a separate, single color to be used when rendering the points of the
-        drawing. Once called, points will be rendered using the specified color but facets will
-        continue to use the colors specified in the setColors method. An empty sequence can be
-        specified to resume using the colors arrays for points.
+        """This method allows a separate, single color to be used when rendering the points of the drawing. Once
+        called, points will be rendered using the specified color but facets will continue to use the colors
+        specified in the setColors method. An empty sequence can be specified to resume using the colors arrays
+        for points.
 
         Parameters
         ----------

@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DiscreteFastener(Fastener):
-    """The DiscreteFastener object defines a discrete fastener.
-    The DiscreteFastener object is derived from the Fastener object.
+    """The DiscreteFastener object defines a discrete fastener. The DiscreteFastener object is derived from the
+    Fastener object.
 
     .. note::
         This object can be accessed by::
@@ -84,9 +84,8 @@ class DiscreteFastener(Fastener):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: Optional[int] = None,
     ):
-        """This method creates a DiscreteFastener object. Although the constructor is available
-        both for parts and for the assembly, DiscreteFastener objects are currently supported
-        only under the assembly.
+        """This method creates a DiscreteFastener object. Although the constructor is available both for parts
+        and for the assembly, DiscreteFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

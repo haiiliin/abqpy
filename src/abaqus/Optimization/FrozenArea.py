@@ -6,8 +6,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class FrozenArea(GeometricRestriction):
-    """The FrozenArea object defines a frozen area geometric restriction.
-    The FrozenArea object is derived from the GeometricRestriction object.
+    """The FrozenArea object defines a frozen area geometric restriction. The FrozenArea object is derived from
+    the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

@@ -5,8 +5,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class CycledPlastic:
-    """The CycledPlastic object specifies cycled yield stress data for the ORNL constitutive
-    model.
+    """The CycledPlastic object specifies cycled yield stress data for the ORNL constitutive model.
 
     .. note::
         This object can be accessed by::

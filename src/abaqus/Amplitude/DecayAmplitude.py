@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DecayAmplitude(Amplitude):
-    """The DecayAmplitude object defines an amplitude curve using an exponential decay.
-    The DecayAmplitude object is derived from the Amplitude object.
+    """The DecayAmplitude object defines an amplitude curve using an exponential decay. The DecayAmplitude
+    object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

@@ -10,9 +10,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StdContactControl(ContactControl):
-    """The StdContactControl object is used in Abaqus/Standard analyses to specify optional
-    solution controls for problems involving contact between bodies.
-    The StdContactControl object is derived from the ContactControl object.
+    """The StdContactControl object is used in Abaqus/Standard analyses to specify optional solution controls
+    for problems involving contact between bodies. The StdContactControl object is derived from the
+    ContactControl object.
 
     .. note::
         This object can be accessed by::

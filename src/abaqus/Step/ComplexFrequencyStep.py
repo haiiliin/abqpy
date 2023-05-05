@@ -23,9 +23,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ComplexFrequencyStep(AnalysisStep):
-    """The ComplexFrequencyStep object is used to perform eigenvalue extraction to calculate
-    the complex eigenvalues and corresponding complex mode shapes of a system.
-    The ComplexFrequencyStep object is derived from the AnalysisStep object.
+    """The ComplexFrequencyStep object is used to perform eigenvalue extraction to calculate the complex
+    eigenvalues and corresponding complex mode shapes of a system. The ComplexFrequencyStep object is derived
+    from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TemperatureBC(BoundaryCondition):
-    """The TemperatureBC object stores the data for a temperature boundary condition.
-    The TemperatureBC object is derived from the BoundaryCondition object.
+    """The TemperatureBC object stores the data for a temperature boundary condition. The TemperatureBC object
+    is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -111,8 +111,7 @@ class TemperatureBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         fixed: Boolean = OFF,
     ):
-        """This method modifies the data for an existing TemperatureBC object in the step where it
-        is created.
+        """This method modifies the data for an existing TemperatureBC object in the step where it is created.
 
         Parameters
         ----------
@@ -147,8 +146,7 @@ class TemperatureBC(BoundaryCondition):
         dof: tuple = (),
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing TemperatureBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing TemperatureBC object in the specified step.
 
         Parameters
         ----------

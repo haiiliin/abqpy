@@ -5,8 +5,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class CombinedTestData:
-    r"""The CombinedTestData object specifies simultaneously the normalized shear and bulk
-    compliances or relaxation moduli as functions of time.
+    r"""The CombinedTestData object specifies simultaneously the normalized shear and bulk compliances or
+    relaxation moduli as functions of time.
 
     .. note::
         This object can be accessed by::

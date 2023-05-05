@@ -33,9 +33,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FrequencyStep(AnalysisStep):
-    """The FrequencyStep object is used to perform eigenvalue extraction to calculate the
-    natural frequencies and corresponding mode shapes of a system.
-    The FrequencyStep object is derived from the AnalysisStep object.
+    """The FrequencyStep object is used to perform eigenvalue extraction to calculate the natural frequencies
+    and corresponding mode shapes of a system. The FrequencyStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

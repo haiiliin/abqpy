@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class SuperElasticHardeningModifications:
-    """The SuperElasticHardeningModifications object specifies the variation of the
-    transformation stress levels of a material model.
+    """The SuperElasticHardeningModifications object specifies the variation of the transformation stress levels
+    of a material model.
 
     .. note::
         This object can be accessed by::

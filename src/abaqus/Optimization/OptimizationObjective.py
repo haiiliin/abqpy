@@ -7,8 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, SymbolicCons
 
 @abaqus_class_doc
 class OptimizationObjective:
-    """An OptimizationObjective is an object used to define objectives in an objective
-    function.
+    """An OptimizationObjective is an object used to define objectives in an objective function.
 
     .. note::
         This object can be accessed by::

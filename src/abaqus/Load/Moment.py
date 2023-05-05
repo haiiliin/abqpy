@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Moment(Load):
-    """The Moment object stores the data for a moment.
-    The Moment object is derived from the Load object.
+    """The Moment object stores the data for a moment. The Moment object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -125,8 +124,7 @@ class Moment(Load):
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
-        """This method modifies the data for an existing Moment object in the step where it is
-        created.
+        """This method modifies the data for an existing Moment object in the step where it is created.
 
         Parameters
         ----------
@@ -170,8 +168,7 @@ class Moment(Load):
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing Moment object in the specified
-        step.
+        """This method modifies the propagating data for an existing Moment object in the specified step.
 
         Parameters
         ----------

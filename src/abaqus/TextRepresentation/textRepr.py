@@ -62,8 +62,8 @@ def getPaths(
     maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
-    """This method processes the argument and interprets its structure. It then returns a
-    String containing the object paths of all the child objects found.
+    """This method processes the argument and interprets its structure. It then returns a String containing the
+    object paths of all the child objects found.
 
     Parameters
     ----------
@@ -101,8 +101,8 @@ def getTypes(
     maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
-    """This method processes the argument, interprets its structure, and returns a String
-    containing all the object types within the object in the form '*TypeName* **Path**'.
+    """This method processes the argument, interprets its structure, and returns a String containing all the
+    object types within the object in the form '*TypeName* **Path**'.
 
     Parameters
     ----------
@@ -138,10 +138,9 @@ def prettyPrint(
     maxElementsInSequence: Optional[SymbolicConstant] = None,
     significantDigits: float = 6,
 ):
-    """This method prints a formatted version of the object. The prettyPrint function uses
-    getIndentedRepr to format the String representation, but does not save the full text
-    output of getIndentedRepr. Therefore this function can be used in cases where
-    getIndentedRepr would run out of memory.
+    """This method prints a formatted version of the object. The prettyPrint function uses getIndentedRepr to
+    format the String representation, but does not save the full text output of getIndentedRepr. Therefore this
+    function can be used in cases where getIndentedRepr would run out of memory.
 
     Parameters
     ----------
@@ -171,9 +170,9 @@ def printPaths(
     maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
-    """This method prints the object path of the **object** argument and its members, depending
-    on the **maxRecursionDepth** argument. The printPaths function uses getPaths to print a
-    list of paths to each of the child objects in **object**.
+    """This method prints the object path of the **object** argument and its members, depending on the
+    **maxRecursionDepth** argument. The printPaths function uses getPaths to print a list of paths to each of
+    the child objects in **object**.
 
     Parameters
     ----------
@@ -205,8 +204,8 @@ def printTypes(
     maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
-    """This method prints the object type. The printTypes function uses getTypes to print a
-    list of all the object types in **object**.
+    """This method prints the object type. The printTypes function uses getTypes to print a list of all the
+    object types in **object**.
 
     Parameters
     ----------

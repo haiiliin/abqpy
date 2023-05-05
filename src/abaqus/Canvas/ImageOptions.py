@@ -10,12 +10,10 @@ from .._OptionsBase import _CopyOptionsBase
 
 @abaqus_class_doc
 class ImageOptions(_CopyOptionsBase):
-    """The ImageOptions object stores settings that control how an image is rendered in a
-    particular viewport. ImageOptions objects are accessed from the image options associated
-    with a particular viewport.
-    The ImageOptions object has no constructor; Abaqus creates the **imageOptions** member for
-    a viewport when the viewport is created using the values in the **imageOptions** member of
-    the current viewport.
+    """The ImageOptions object stores settings that control how an image is rendered in a particular viewport.
+    ImageOptions objects are accessed from the image options associated with a particular viewport. The
+    ImageOptions object has no constructor; Abaqus creates the **imageOptions** member for a viewport when the
+    viewport is created using the values in the **imageOptions** member of the current viewport.
 
     .. note::
         This object can be accessed by::

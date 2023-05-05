@@ -117,8 +117,7 @@ class MeshElementArray(List[MeshElement]):
         yMax: float = ...,
         zMax: float = ...,
     ) -> MeshElementArray:
-        """This method returns an array of element objects that lie within the specified bounding
-        box.
+        """This method returns an array of element objects that lie within the specified bounding box.
 
         Parameters
         ----------
@@ -144,8 +143,7 @@ class MeshElementArray(List[MeshElement]):
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> MeshElementArray:
-        """This method returns an array of element objects that lie within the specified bounding
-        cylinder.
+        """This method returns an array of element objects that lie within the specified bounding cylinder.
 
         Parameters
         ----------
@@ -166,8 +164,7 @@ class MeshElementArray(List[MeshElement]):
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> MeshElementArray:
-        """This method returns an array of element objects that lie within the specified bounding
-        sphere.
+        """This method returns an array of element objects that lie within the specified bounding sphere.
 
         Parameters
         ----------
@@ -185,8 +182,8 @@ class MeshElementArray(List[MeshElement]):
 
     @abaqus_method_doc
     def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
-        """This method returns a dictionary of two tuples representing minimum and maximum boundary
-        values of the bounding box of the minimum size containing the element sequence.
+        """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
+        the bounding box of the minimum size containing the element sequence.
 
         Returns
         -------
@@ -202,8 +199,7 @@ class MeshElementArray(List[MeshElement]):
 
     @abaqus_method_doc
     def sequenceFromLabels(self, labels: Sequence[int]) -> MeshElementArray:
-        """This method returns the objects in the MeshElementArray identified using the specified
-        labels.
+        """This method returns the objects in the MeshElementArray identified using the specified labels.
 
         Parameters
         ----------

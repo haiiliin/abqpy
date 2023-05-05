@@ -8,9 +8,9 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class ImageAnimationOptions(_OptionsBase):
-    """The ImageAnimationOptions object is used to store values and attributes associated with
-    saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus
-    creates the **imageAnimationOptions** member when the animation module is imported.
+    """The ImageAnimationOptions object is used to store values and attributes associated with saving viewport
+    animations. The ImageAnimationOptions object has no constructor. Abaqus creates the
+    **imageAnimationOptions** member when the animation module is imported.
 
     .. note::
         This object can be accessed by::

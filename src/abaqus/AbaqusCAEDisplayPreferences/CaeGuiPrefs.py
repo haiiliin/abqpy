@@ -5,8 +5,8 @@ from ..UtilityAndView.abaqusConstants import Boolean
 
 @abaqus_class_doc
 class CaeGuiPrefs:
-    """The CaeGuiPrefs object contains the details of the graphical preferences in a
-    guiPreferences section of the abaqus_2021.gpr file.
+    """The CaeGuiPrefs object contains the details of the graphical preferences in a guiPreferences section of
+    the abaqus_2021.gpr file.
 
     .. note::
         This object can be accessed by::

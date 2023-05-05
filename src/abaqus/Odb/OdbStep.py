@@ -108,8 +108,8 @@ class OdbStep(OdbStepBase):
     @overload
     @abaqus_method_doc
     def Frame(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0) -> OdbFrame:
-        """This constructor creates an OdbFrame object for a specific load case and appends it to
-        the frame sequence.
+        """This constructor creates an OdbFrame object for a specific load case and appends it to the frame
+        sequence.
 
         .. note::
             This function can be accessed by::

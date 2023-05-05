@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Stress(PredefinedField):
-    """The Stress object stores the data for an initial stress predefined field.
-    The Stress object is derived from the PredefinedField object.
+    """The Stress object stores the data for an initial stress predefined field. The Stress object is derived
+    from the PredefinedField object.
 
     .. note::
         This object can be accessed by::
@@ -24,7 +24,6 @@ class Stress(PredefinedField):
 
     .. versionadded:: 2017
         The ``Stress`` class was added.
-
     """
 
     @abaqus_method_doc

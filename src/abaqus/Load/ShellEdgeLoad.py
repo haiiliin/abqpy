@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShellEdgeLoad(Load):
-    """The ShellEdgeLoad object defines shell edge loads on a region.
-    The ShellEdgeLoad object is derived from the Load object.
+    """The ShellEdgeLoad object defines shell edge loads on a region. The ShellEdgeLoad object is derived from
+    the Load object.
 
     .. note::
         This object can be accessed by::
@@ -142,8 +142,7 @@ class ShellEdgeLoad(Load):
         resultant: Boolean = OFF,
         traction: Literal[C.TRANSVERSE, C.SHEAR, C.GENERAL, C.NORMAL, C.MOMENT] = NORMAL,
     ):
-        """This method modifies the data for an existing ShellEdgeLoad object in the step where it
-        is created.
+        """This method modifies the data for an existing ShellEdgeLoad object in the step where it is created.
 
         Parameters
         ----------
@@ -203,8 +202,7 @@ class ShellEdgeLoad(Load):
         magnitude: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing ShellEdgeLoad object in the
-        specified step.
+        """This method modifies the propagating data for an existing ShellEdgeLoad object in the specified step.
 
         Parameters
         ----------

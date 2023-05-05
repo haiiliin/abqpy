@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DisplacementBC(BoundaryCondition):
-    """The DisplacementBC object stores the data for a displacement/rotation boundary
-    condition.
-    The DisplacementBC object is derived from the BoundaryCondition object.
+    """The DisplacementBC object stores the data for a displacement/rotation boundary condition. The
+    DisplacementBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -169,8 +168,7 @@ class DisplacementBC(BoundaryCondition):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ):
-        """This method modifies the data for an existing DisplacementBC object in the step where it
-        is created.
+        """This method modifies the data for an existing DisplacementBC object in the step where it is created.
 
         Parameters
         ----------
@@ -242,8 +240,8 @@ class DisplacementBC(BoundaryCondition):
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
     ):
-        """This method modifies the propagating data for an existing DisplacementBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing DisplacementBC object in the specified
+        step.
 
         Parameters
         ----------

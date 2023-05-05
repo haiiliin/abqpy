@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcPoreFluid(Load):
-    """The ConcPoreFluid object stores the data for a concentrated pore fluid flow load.
-    The ConcPoreFluid object is derived from the Load object.
+    """The ConcPoreFluid object stores the data for a concentrated pore fluid flow load. The ConcPoreFluid
+    object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -91,8 +91,7 @@ class ConcPoreFluid(Load):
         field: str = "",
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing ConcPoreFluid object in the step where it
-        is created.
+        """This method modifies the data for an existing ConcPoreFluid object in the step where it is created.
 
         Parameters
         ----------
@@ -112,8 +111,7 @@ class ConcPoreFluid(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing ConcPoreFluid object in the
-        specified step.
+        """This method modifies the propagating data for an existing ConcPoreFluid object in the specified step.
 
         Parameters
         ----------

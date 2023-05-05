@@ -10,8 +10,8 @@ from .RuleResult import RuleResult
 
 @abaqus_class_doc
 class AdaptivityIteration:
-    """The AdaptivityIteration object contains information about a given iteration of the
-    varying topology adaptivity process (adaptive remeshing).
+    """The AdaptivityIteration object contains information about a given iteration of the varying topology
+    adaptivity process (adaptive remeshing).
 
     .. note::
         This object can be accessed by::
@@ -82,8 +82,8 @@ class AdaptivityIteration:
 
     @abaqus_method_doc
     def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResult:
-        """This method creates an ErrorIndicatorResult with data for an error indicator variable in
-        a RemeshingRule for a given adaptivity iteration.
+        """This method creates an ErrorIndicatorResult with data for an error indicator variable in a
+        RemeshingRule for a given adaptivity iteration.
 
         .. note::
             This function can be accessed by::
@@ -120,8 +120,7 @@ class AdaptivityIteration:
         minSizeElemCount: int,
         satisfiedVars: tuple = (),
     ) -> RuleResult:
-        """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
-        iteration.
+        """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity iteration.
 
         .. note::
             This function can be accessed by::

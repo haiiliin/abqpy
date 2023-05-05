@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class BodyChargeState(LoadState):
-    """The BodyChargeState object stores the propagating data of a body charge in a step. One
-    instance of this object is created internally by the BodyCharge object for each step.
-    The instance is also deleted internally by the BodyCharge object.
-    The BodyChargeState object has no constructor or methods.
-    The BodyChargeState object is derived from the LoadState object.
+    """The BodyChargeState object stores the propagating data of a body charge in a step. One instance of this
+    object is created internally by the BodyCharge object for each step. The instance is also deleted internally
+    by the BodyCharge object. The BodyChargeState object has no constructor or methods. The BodyChargeState
+    object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

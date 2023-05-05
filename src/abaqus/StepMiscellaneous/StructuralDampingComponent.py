@@ -5,8 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class StructuralDampingComponent:
-    """A StructuralDampingComponent object is used to define structural damping over a range of
-    modes.
+    """A StructuralDampingComponent object is used to define structural damping over a range of modes.
 
     .. note::
         This object can be accessed by::

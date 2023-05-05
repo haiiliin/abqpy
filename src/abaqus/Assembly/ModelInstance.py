@@ -86,17 +86,15 @@ class ModelInstance:
 
     @abaqus_method_doc
     def ConvertConstraints(self):
-        """This method converts the position constraints of an instance to absolute positions. The
-        method deletes the constraint features on the instance but preserves the position in
-        space.
+        """This method converts the position constraints of an instance to absolute positions.
+
+        The method deletes the constraint features on the instance but preserves the position in space.
         """
         ...
 
     @abaqus_method_doc
     def getPosition(self):
-        """This method prints the sum of the translations and rotations applied to the
-        ModelInstance object.
-        """
+        """This method prints the sum of the translations and rotations applied to the ModelInstance object."""
         ...
 
     @abaqus_method_doc

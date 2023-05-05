@@ -14,9 +14,8 @@ from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, FACE_UNKNOWN, Symb
 
 @abaqus_class_doc
 class HistoryPoint:
-    """The HistoryPoint object specifies the point at which history data will be collected. The
-    HistoryPoint object is a temporary object used as an argument to the HistoryRegion
-    method.
+    """The HistoryPoint object specifies the point at which history data will be collected. The HistoryPoint
+    object is a temporary object used as an argument to the HistoryRegion method.
 
     .. note::
         This object can be accessed by::

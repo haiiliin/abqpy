@@ -8,10 +8,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FieldReportOptions:
-    """The FieldReportOptions object stores settings used by the writeFieldReport method when
-    you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no
-    constructor. Abaqus creates the **fieldReportOptions** member when you import the
-    Visualization module.
+    """The FieldReportOptions object stores settings used by the writeFieldReport method when you write a
+    FieldOutput object to an ASCII file. The FieldReportOptions object has no constructor. Abaqus creates the
+    **fieldReportOptions** member when you import the Visualization module.
 
     .. note::
         This object can be accessed by::

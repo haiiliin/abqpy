@@ -5,8 +5,8 @@ from .Section import Section
 
 @abaqus_class_doc
 class TrussSection(Section):
-    """The TrussSection object defines the properties of a truss section.
-    The TrussSection object is derived from the Section object.
+    """The TrussSection object defines the properties of a truss section. The TrussSection object is derived
+    from the Section object.
 
     .. note::
         This object can be accessed by::

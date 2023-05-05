@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class FluidExchangeState(InteractionState):
-    """The FluidExchangeState object stores the propagating data for an FluidExchange object.
-    One instance of this object is created internally by the FluidExchange object for each
-    step. The instance is also deleted internally by the FluidExchange object.
-    The FluidExchangeState object has no constructor or methods.
-    The FluidExchangeState object is derived from the InteractionState object.
+    """The FluidExchangeState object stores the propagating data for an FluidExchange object. One instance of
+    this object is created internally by the FluidExchange object for each step. The instance is also deleted
+    internally by the FluidExchange object. The FluidExchangeState object has no constructor or methods. The
+    FluidExchangeState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

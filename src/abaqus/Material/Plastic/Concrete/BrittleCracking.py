@@ -9,8 +9,8 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BrittleCracking:
-    """The BrittleCracking object specifies cracking and postcracking properties for the
-    brittle cracking material model.
+    """The BrittleCracking object specifies cracking and postcracking properties for the brittle cracking
+    material model.
 
     .. note::
         This object can be accessed by::
