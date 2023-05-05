@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -788,8 +788,8 @@ msgstr ""
 msgid ""
 "A DatumCsys object specifying the desired coordinate system of the "
 "returned coordinates. By default, coordinates are given in the global "
-"coordinate system.  .. versionadded:: 2023      The `csys` argument was "
-"added."
+"coordinate system.  .. versionadded:: 2023      The ``csys`` argument was"
+" added."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:9 of
@@ -800,7 +800,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:14 of
-msgid "The `csys` argument was added."
+msgid "The ``csys`` argument was added."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:16 of
@@ -832,7 +832,7 @@ msgid "The minimum distance between two edges."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:9 of
-msgid "The `csys` argument was removed."
+msgid "The ``csys`` argument was removed."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:12 of
@@ -1571,8 +1571,8 @@ msgstr ""
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:8 of
 msgid ""
 "A sequence of MeshNode objects or a Set object containing nodes.  .. "
-"versionchanged:: 2020     The `coordinates` arguments was removed, the "
-"`nodes` now replaces it."
+"versionchanged:: 2020     The ``coordinates`` arguments was removed, the "
+"``nodes`` now replaces it."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:8 of
@@ -1580,7 +1580,7 @@ msgid "A sequence of MeshNode objects or a Set object containing nodes."
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:10 of
-msgid "The `coordinates` arguments was removed, the `nodes` now replaces it."
+msgid "The ``coordinates`` arguments was removed, the ``nodes`` now replaces it."
 msgstr ""
 
 #: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.stringers:1 of
@@ -2122,7 +2122,7 @@ msgid "This method replaces one instance with an instance of another model."
 msgstr ""
 
 #: abaqus.Assembly.ModelInstance.ModelInstance.replace:3 of
-msgid "The `replace` method was added."
+msgid "The ``replace`` method was added."
 msgstr ""
 
 #: abaqus.Assembly.ModelInstance.ModelInstance.replace:7 of
@@ -2682,4 +2682,33 @@ msgid ""
 "argument is specified, the movable instance will be translated by the "
 "specified amount without solving for the actual contact."
 msgstr ""
+
+#~ msgid ""
+#~ "A DatumCsys object specifying the "
+#~ "desired coordinate system of the "
+#~ "returned coordinates. By default, coordinates"
+#~ " are given in the global coordinate"
+#~ " system.  .. versionadded:: 2023      The"
+#~ " `csys` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `csys` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `csys` argument was removed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of MeshNode objects or "
+#~ "a Set object containing nodes.  .. "
+#~ "versionchanged:: 2020     The `coordinates` "
+#~ "arguments was removed, the `nodes` now"
+#~ " replaces it."
+#~ msgstr ""
+
+#~ msgid "The `coordinates` arguments was removed, the `nodes` now replaces it."
+#~ msgstr ""
+
+#~ msgid "The `replace` method was added."
+#~ msgstr ""
 

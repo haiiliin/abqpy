@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,7 +329,7 @@ msgid "A Float specifying the quadratic bulk viscosity scaling factor option for
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:116
-msgid "An Int specifying the number of Fourier modes. Possible values are 1, 2, 3, and 4. The default value is 1.This argument is applicable only for axisymmetric elements with nonlinear asymmetric deformation.  .. versionadded:: 2019     The `numFourierModes` argument was added."
+msgid "An Int specifying the number of Fourier modes. Possible values are 1, 2, 3, and 4. The default value is 1.This argument is applicable only for axisymmetric elements with nonlinear asymmetric deformation.  .. versionadded:: 2019     The ``numFourierModes`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:116
@@ -338,11 +338,11 @@ msgid "An Int specifying the number of Fourier modes. Possible values are 1, 2, 
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:120
-msgid "The `numFourierModes` argument was added."
+msgid "The ``numFourierModes`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:123
-msgid "An Int specifying the positive offset number for specifying the additional nodes needed in the connectivity.This argument is applicable only for axisymmetric elements with nonlinear asymmetric deformation.  .. versionadded:: 2019     The `nodeOffset` argument was added."
+msgid "An Int specifying the positive offset number for specifying the additional nodes needed in the connectivity.This argument is applicable only for axisymmetric elements with nonlinear asymmetric deformation.  .. versionadded:: 2019     The ``nodeOffset`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:123
@@ -351,11 +351,11 @@ msgid "An Int specifying the positive offset number for specifying the additiona
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:127
-msgid "The `nodeOffset` argument was added."
+msgid "The ``nodeOffset`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:130
-msgid "A Float specifying the linear kinematic conversion value.This argument is applicable only to some Abaqus/Explicit elements.  .. versionadded:: 2022     The `linearKinematicCtrl` argument was added."
+msgid "A Float specifying the linear kinematic conversion value.This argument is applicable only to some Abaqus/Explicit elements.  .. versionadded:: 2022     The ``linearKinematicCtrl`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:130
@@ -364,11 +364,11 @@ msgid "A Float specifying the linear kinematic conversion value.This argument is
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:133
-msgid "The `linearKinematicCtrl` argument was added."
+msgid "The ``linearKinematicCtrl`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:136
-msgid "A Float specifying the initial gap opening.This parameter is applicable only to some Abaqus/Standard elements.  .. versionadded:: 2022     The `initialGapOpening` argument was added."
+msgid "A Float specifying the initial gap opening.This parameter is applicable only to some Abaqus/Standard elements.  .. versionadded:: 2022     The ``initialGapOpening`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:136
@@ -377,7 +377,7 @@ msgid "A Float specifying the initial gap opening.This parameter is applicable o
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:139
-msgid "The `initialGapOpening` argument was added."
+msgid "The ``initialGapOpening`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/ElemType.py:docstring of abaqus.Mesh.ElemType.ElemType:0
@@ -568,19 +568,19 @@ msgid "Member Details:"
 msgstr ""
 
 #: ../../docstring of abaqus.Mesh.MeshPart.ElemType.initialGapOpening:4
-msgid "The `initialGapOpening` attribute was added."
+msgid "The ``initialGapOpening`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Mesh.MeshPart.ElemType.linearKinematicCtrl:4
-msgid "The `linearKinematicCtrl` attribute was added."
+msgid "The ``linearKinematicCtrl`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Mesh.MeshPart.ElemType.nodeOffset:5
-msgid "The `nodeOffset` attribute was added."
+msgid "The ``nodeOffset`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Mesh.MeshPart.ElemType.numFourierModes:5
-msgid "The `numFourierModes` attribute was added."
+msgid "The ``numFourierModes`` attribute was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly:1
@@ -2589,7 +2589,7 @@ msgid "This method returns the edges on the exterior of the faces in the FaceArr
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:4
-msgid "The `getExteriorEdges` method was added."
+msgid "The ``getExteriorEdges`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges:7
@@ -2605,7 +2605,7 @@ msgid "This method returns the cell faces on the exterior of the CellArray. That
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:4
-msgid "The `getExteriorFaces` method was added."
+msgid "The ``getExteriorFaces`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElementArray.py:docstring of abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces:7
@@ -2703,7 +2703,7 @@ msgid "This method creates a MeshEdgeArray object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:23
-msgid "A list of MeshEdge objects.  .. versionchanged:: 2022     The argument `edges` was renamed to `elemEdges`."
+msgid "A list of MeshEdge objects.  .. versionchanged:: 2022     The argument ``edges`` was renamed to ``elemEdges``."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:23
@@ -2711,7 +2711,7 @@ msgid "A list of MeshEdge objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:25
-msgid "The argument `edges` was renamed to `elemEdges`."
+msgid "The argument ``edges`` was renamed to ``elemEdges``."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdgeArray.py:docstring of abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:28
@@ -2744,7 +2744,7 @@ msgid "This method creates a MeshFaceArray object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:23
-msgid "A list of MeshFace objects.  .. versionchanged:: 2022     The argument `faces` was renamed to `elemFaces`."
+msgid "A list of MeshFace objects.  .. versionchanged:: 2022     The argument ``faces`` was renamed to ``elemFaces``."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:23
@@ -2752,7 +2752,7 @@ msgid "A list of MeshFace objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:25
-msgid "The argument `faces` was renamed to `elemFaces`."
+msgid "The argument ``faces`` was renamed to ``elemFaces``."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFaceArray.py:docstring of abaqus.Mesh.MeshFaceArray.MeshFaceArray:28
@@ -3319,7 +3319,7 @@ msgid "A Boolean specifying whether Abaqus/CAE should attempt to minimize the me
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:25
-msgid "A list of SymbolicConstants specifying preferred Abaqus element types. This setting is relevant only when Abaqus/CAE is run interactively. When a part or part instance that has never been assigned an element type is meshed, this list is consulted. If an element type appropriate to the geometry is found in the list, it is assigned to the geometry. Multiple element types representing different shapes (for example, triangles and quadrilaterals) can be assigned in combination, but only element types that are compatible with each other are used. When more than one appropriate element type is found in the list, the first element type encountered takes precedence. This list is also consulted when populating the element type dialog; preferred types are selected by default for a region not previously assigned any element types. The default value is an empty list.  .. versionadded:: 2018     The `guiPreferredElements` argument was added."
+msgid "A list of SymbolicConstants specifying preferred Abaqus element types. This setting is relevant only when Abaqus/CAE is run interactively. When a part or part instance that has never been assigned an element type is meshed, this list is consulted. If an element type appropriate to the geometry is found in the list, it is assigned to the geometry. Multiple element types representing different shapes (for example, triangles and quadrilaterals) can be assigned in combination, but only element types that are compatible with each other are used. When more than one appropriate element type is found in the list, the first element type encountered takes precedence. This list is also consulted when populating the element type dialog; preferred types are selected by default for a region not previously assigned any element types. The default value is an empty list.  .. versionadded:: 2018     The ``guiPreferredElements`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:25
@@ -3327,5 +3327,5 @@ msgid "A list of SymbolicConstants specifying preferred Abaqus element types. Th
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MesherOptions.py:docstring of abaqus.Mesh.MesherOptions.MesherOptions.setValues:37
-msgid "The `guiPreferredElements` argument was added."
+msgid "The ``guiPreferredElements`` argument was added."
 msgstr ""

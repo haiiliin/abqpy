@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1536,8 +1536,8 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSet:22
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:20
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:36
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:21
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:20
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:24
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:23
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:20
 msgid "An OdbSet object."
 msgstr ""
@@ -1549,8 +1549,8 @@ msgstr ""
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSet:23
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:21
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurface:37
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:22
-#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:21
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:25
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:24
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:21
 msgid ":class:`OdbSet`"
 msgstr ""
@@ -1632,7 +1632,15 @@ msgid "Check `MeshSurfaceFromElsets on help.3ds.com/2023 <https://help.3ds.com/2
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:16
-msgid "A sequence of element sets. For example,`elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))`where `elset1=session.odbs[name].rootAssembly.elementSets['Clutch'] `and `SIDE1` and `SIDE2` indicate the side of the element set."
+msgid "A sequence of element sets. For example::      elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))``  where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` and ``SIDE1`` and ``SIDE2`` indicate the side of the element set."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:17
+msgid "A sequence of element sets. For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:21
+msgid "where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` and ``SIDE1`` and ``SIDE2`` indicate the side of the element set."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:1
@@ -1644,7 +1652,15 @@ msgid "Check `MeshSurfaceFromLabels on help.3ds.com/2023 <https://help.3ds.com/2
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:16
-msgid "A sequence of surface labels. For example,`surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))),  ('Instance-2', ((10, FACE3), (12, FACE4))))`where `10` is an element number and `FACE1` indicates the side of the element."
+msgid "A sequence of surface labels. For example::      surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))),  ('Instance-2', ((10, FACE3), (12, FACE4))))  where ``10`` is an element number and ``FACE1`` indicates the side of the element."
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:17
+msgid "A sequence of surface labels. For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:21
+msgid "where ``10`` is an element number and ``FACE1`` indicates the side of the element."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSet.py:docstring of abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:1
@@ -1676,7 +1692,7 @@ msgid "A repository of an OdbInstance object."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.RebarOrientation.OdbSet.instances:3
-msgid "The `instances` attribute was added."
+msgid "The ``instances`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.RebarOrientation.OdbSet.isInternal:1
@@ -1684,7 +1700,7 @@ msgid "A Boolean specifying whether the set is internal."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.RebarOrientation.OdbSet.isInternal:3
-msgid "The `isInternal` attribute was added."
+msgid "The ``isInternal`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Odb.RebarOrientation.OdbSet.nodes:1
@@ -3015,7 +3031,7 @@ msgid "This method transforms specified coordinates in the global coordinate sys
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.globalToLocal:4
-msgid "The `globalToLocal` method was added."
+msgid "The ``globalToLocal`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.globalToLocal:8
@@ -3040,7 +3056,7 @@ msgid "This method transforms specified coordinates in this local coordinate sys
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.localToGlobal:3
-msgid "The `localToGlobal` method was added."
+msgid "The ``localToGlobal`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbDatumCsys.py:docstring of abaqus.Odb.OdbDatumCsys.OdbDatumCsys.localToGlobal:7
@@ -3208,11 +3224,11 @@ msgid "A String specifying the path to an existing output database (`.odb`) file
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:14
-msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is `False`, indicating that both read and write access will be permitted."
+msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is ``False``, indicating that both read and write access will be permitted."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:18
-msgid "A Boolean specifying whether the file will permit access to sets specified as Internal on the database. The initial value is `False`, indicating that internal sets will not be read."
+msgid "A Boolean specifying whether the file will permit access to sets specified as Internal on the database. The initial value is ``False``, indicating that internal sets will not be read."
 msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbCommands.py:docstring of abaqus.Odb.OdbCommands.openOdb:25

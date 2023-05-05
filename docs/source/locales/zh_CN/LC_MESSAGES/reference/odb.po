@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1642,8 +1642,8 @@ msgstr ""
 #: abaqus.Odb.OdbSet.OdbSet.ElementSet:22
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:20
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:36
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:21
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:20
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:24
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:23
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:20 of
 msgid "An OdbSet object."
 msgstr ""
@@ -1654,8 +1654,8 @@ msgstr ""
 #: abaqus.Odb.OdbSet.OdbSet.ElementSet:23
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:21
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:37
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:22
-#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:21
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:25
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:24
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:21 of
 msgid ":class:`OdbSet`"
 msgstr ""
@@ -1788,10 +1788,20 @@ msgstr ""
 
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:16 of
 msgid ""
-"A sequence of element sets. For "
-"example,`elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))`where "
-"`elset1=session.odbs[name].rootAssembly.elementSets['Clutch'] `and "
-"`SIDE1` and `SIDE2` indicate the side of the element set."
+"A sequence of element sets. For example::      "
+"elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))``  where "
+"``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` and "
+"``SIDE1`` and ``SIDE2`` indicate the side of the element set."
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:17 of
+msgid "A sequence of element sets. For example::"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:21 of
+msgid ""
+"where ``elset1=session.odbs[name].rootAssembly.elementSets['Clutch']`` "
+"and ``SIDE1`` and ``SIDE2`` indicate the side of the element set."
 msgstr ""
 
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:1 of
@@ -1806,10 +1816,20 @@ msgstr ""
 
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:16 of
 msgid ""
-"A sequence of surface labels. For example,`surfaceLabels=(('Instance-1', "
-"((10, FACE1), (11, FACE2))),  ('Instance-2', ((10, FACE3), (12, "
-"FACE4))))`where `10` is an element number and `FACE1` indicates the side "
-"of the element."
+"A sequence of surface labels. For example::      "
+"surfaceLabels=(('Instance-1', ((10, FACE1), (11, FACE2))),  "
+"('Instance-2', ((10, FACE3), (12, FACE4))))  where ``10`` is an element "
+"number and ``FACE1`` indicates the side of the element."
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:17 of
+msgid "A sequence of surface labels. For example::"
+msgstr ""
+
+#: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromLabels:21 of
+msgid ""
+"where ``10`` is an element number and ``FACE1`` indicates the side of the"
+" element."
 msgstr ""
 
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:1 of
@@ -1855,7 +1875,7 @@ msgid "A repository of an OdbInstance object."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.RebarOrientation.OdbSet.instances:3 of
-msgid "The `instances` attribute was added."
+msgid "The ``instances`` attribute was added."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.RebarOrientation.OdbSet.isInternal:1 of
@@ -1863,7 +1883,7 @@ msgid "A Boolean specifying whether the set is internal."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.RebarOrientation.OdbSet.isInternal:3 of
-msgid "The `isInternal` attribute was added."
+msgid "The ``isInternal`` attribute was added."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.RebarOrientation.OdbSet.nodes:1 of
@@ -3741,7 +3761,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.globalToLocal:4 of
-msgid "The `globalToLocal` method was added."
+msgid "The ``globalToLocal`` method was added."
 msgstr ""
 
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.globalToLocal:8 of
@@ -3775,7 +3795,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.localToGlobal:3 of
-msgid "The `localToGlobal` method was added."
+msgid "The ``localToGlobal`` method was added."
 msgstr ""
 
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.localToGlobal:7 of
@@ -4011,14 +4031,14 @@ msgstr ""
 #: abaqus.Odb.OdbCommands.openOdb:14 of
 msgid ""
 "A Boolean specifying whether the file will permit only read access or "
-"both read and write access. The initial value is `False`, indicating that"
-" both read and write access will be permitted."
+"both read and write access. The initial value is ``False``, indicating "
+"that both read and write access will be permitted."
 msgstr ""
 
 #: abaqus.Odb.OdbCommands.openOdb:18 of
 msgid ""
 "A Boolean specifying whether the file will permit access to sets "
-"specified as Internal on the database. The initial value is `False`, "
+"specified as Internal on the database. The initial value is ``False``, "
 "indicating that internal sets will not be read."
 msgstr ""
 
@@ -14265,5 +14285,52 @@ msgstr ""
 #~ ":py:obj:`XYData <abaqus.Odb.UserDataBase.UserDataBase.XYData>`\\"
 #~ " \\(name\\, data\\[\\, sourceDescription\\, "
 #~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of element sets. For "
+#~ "example,`elementSetSeq=((elset1,SIDE1),(elset2,SIDE2))`where "
+#~ "`elset1=session.odbs[name].rootAssembly.elementSets['Clutch'] "
+#~ "`and `SIDE1` and `SIDE2` indicate the"
+#~ " side of the element set."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of surface labels. For "
+#~ "example,`surfaceLabels=(('Instance-1', ((10, FACE1), "
+#~ "(11, FACE2))),  ('Instance-2', ((10, FACE3),"
+#~ " (12, FACE4))))`where `10` is an "
+#~ "element number and `FACE1` indicates the"
+#~ " side of the element."
+#~ msgstr ""
+
+#~ msgid "The `instances` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `isInternal` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `globalToLocal` method was added."
+#~ msgstr ""
+
+#~ msgid "The `localToGlobal` method was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the file"
+#~ " will permit only read access or "
+#~ "both read and write access. The "
+#~ "initial value is `False`, indicating "
+#~ "that both read and write access "
+#~ "will be permitted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the file"
+#~ " will permit access to sets specified"
+#~ " as Internal on the database. The "
+#~ "initial value is `False`, indicating "
+#~ "that internal sets will not be "
+#~ "read."
 #~ msgstr ""
 

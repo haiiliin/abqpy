@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1153,7 +1153,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask:23
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.setValues:7
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.setValues:7
-msgid "A Boolean specifying whether to use Abaqus to compute the design responses and their sensitivities. The default value is True.  .. versionadded:: 2019     The `abaqusSensitivities` argument was added."
+msgid "A Boolean specifying whether to use Abaqus to compute the design responses and their sensitivities. The default value is True.  .. versionadded:: 2019     The ``abaqusSensitivities`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:23
@@ -1182,7 +1182,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.setValues:10
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:26
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.setValues:10
-msgid "The `abaqusSensitivities` argument was added."
+msgid "The ``abaqusSensitivities`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:29
@@ -1358,7 +1358,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.setValues:42
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:132
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.setValues:116
-msgid "A Boolean specifying whether the group in the design response will be evaluated using the existing algorithm or a new algorithm based on Abaqus sensitivities. The default value of False means that the existing algorithm will be used.  .. versionadded:: 2022     The `groupOperator` argument was added."
+msgid "A Boolean specifying whether the group in the design response will be evaluated using the existing algorithm or a new algorithm based on Abaqus sensitivities. The default value of False means that the existing algorithm will be used.  .. versionadded:: 2022     The ``groupOperator`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:87
@@ -1392,7 +1392,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/SizingTask.py:docstring of abaqus.Optimization.SizingTask.SizingTask.setValues:46
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:136
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask.setValues:120
-msgid "The `groupOperator` argument was added."
+msgid "The ``groupOperator`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask:94
@@ -2452,7 +2452,7 @@ msgid "This method creates a TurnControl object."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter:10
-msgid "The `BeadFilter` method was added."
+msgid "The ``BeadFilter`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFilter.py:docstring of abaqus.Optimization.BeadFilter.BeadFilter:15
@@ -2943,7 +2943,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues:17
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:36
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:13
-msgid "None or a Region object specifying the main point used when **mainPointDetermination** is SPECIFY. The default value is None.  .. versionchanged:: 2022     The argument `masterPoint` was renamed to `mainPoint`."
+msgid "None or a Region object specifying the main point used when **mainPointDetermination** is SPECIFY. The default value is None.  .. versionchanged:: 2022     The argument ``masterPoint`` was renamed to ``mainPoint``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:31
@@ -2982,7 +2982,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues:20
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl:39
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:16
-msgid "The argument `masterPoint` was renamed to `mainPoint`."
+msgid "The argument ``masterPoint`` was renamed to ``mainPoint``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:37
@@ -2997,7 +2997,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:19
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:38
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.setValues:14
-msgid "A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:37
@@ -3041,7 +3041,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/StampControl.py:docstring of abaqus.Optimization.StampControl.StampControl.setValues:22
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl:41
 #: ../../../../src/abaqus/Optimization/TurnControl.py:docstring of abaqus.Optimization.TurnControl.TurnControl.setValues:17
-msgid "The argument `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection:43
@@ -3471,7 +3471,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:32
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl:41
 #: ../../../../src/abaqus/Optimization/ShapeDemoldControl.py:docstring of abaqus.Optimization.ShapeDemoldControl.ShapeDemoldControl.setValues:18
-msgid "A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM and MINIMUM. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "A SymbolicConstant specifying the rule for assigning point priority. Possible values are MAXIMUM and MINIMUM. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl:32
@@ -3528,7 +3528,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:25
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:34
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:14
-msgid "A bool specifying whether to use the node group region. The default value is OFF.  .. versionadded:: 2022     The `assignNodeGroupRegion` argument was added."
+msgid "A bool specifying whether to use the node group region. The default value is OFF.  .. versionadded:: 2022     The ``assignNodeGroupRegion`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:25
@@ -3541,13 +3541,13 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:27
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:36
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:16
-msgid "The `assignNodeGroupRegion` argument was added."
+msgid "The ``assignNodeGroupRegion`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:30
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:39
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:19
-msgid "A Node Region object specifying the check node group.  .. versionadded:: 2022     The `nodeGroupRegion` argument was added."
+msgid "A Node Region object specifying the check node group.  .. versionadded:: 2022     The ``nodeGroupRegion`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:30
@@ -3560,7 +3560,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:32
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize:41
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:21
-msgid "The `nodeGroupRegion` argument was added."
+msgid "The ``nodeGroupRegion`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize:35
@@ -3588,7 +3588,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:22
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry:31
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry:32
-msgid "A Boolean specifying whether to allow a nonsymmetric mesh for this geometric restriction. The default value is TRUE.  .. versionadded:: 2021     The `alloowNonSymmetricMesh` argument was added."
+msgid "A Boolean specifying whether to allow a nonsymmetric mesh for this geometric restriction. The default value is TRUE.  .. versionadded:: 2021     The ``alloowNonSymmetricMesh`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:22
@@ -3606,14 +3606,14 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:25
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry:34
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry:35
-msgid "The `alloowNonSymmetricMesh` argument was added."
+msgid "The ``alloowNonSymmetricMesh`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:32
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry:22
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry:31
 #: ../../../../src/abaqus/Optimization/ShapePointSymmetry.py:docstring of abaqus.Optimization.ShapePointSymmetry.ShapePointSymmetry.setValues:11
-msgid "A SymbolicConstant specifying the rule for determining the main node. Possible values are MAXIMUM and MINIMUM. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "A SymbolicConstant specifying the rule for determining the main node. Possible values are MAXIMUM and MINIMUM. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry:32
@@ -3680,7 +3680,7 @@ msgstr ""
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:41
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry:51
 #: ../../../../src/abaqus/Optimization/ShapeRotationalSymmetry.py:docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.setValues:23
-msgid "A SymbolicConstant specifying the rule for determining the main node. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "A SymbolicConstant specifying the rule for determining the main node. Possible values are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.  .. versionchanged:: 2022     The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry:41
@@ -4117,7 +4117,7 @@ msgid ":class:`TopologyMemberSize`"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:8
-msgid "The `TopologyMillingControl` method was added."
+msgid "The ``TopologyMillingControl`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl:12
@@ -4163,7 +4163,7 @@ msgid ":class:`TopologyMillingControl`"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:8
-msgid "The `TopologyOverhangControl` method was added."
+msgid "The ``TopologyOverhangControl`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl:12
@@ -4239,7 +4239,7 @@ msgid ":class:`TopologyPointSymmetry`"
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:10
-msgid "The `TopologyRibDesign` method was added."
+msgid "The ``TopologyRibDesign`` method was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/OptimizationTask.py:docstring of abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRibDesign:13
@@ -4370,7 +4370,7 @@ msgid "The BeadFilter object defines a growth geometric restriction. The BeadFil
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFilter.py:docstring of abaqus.Optimization.BeadFilter.BeadFilter:12
-msgid "The `BeadFilter` class was added."
+msgid "The ``BeadFilter`` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadFilter.py:docstring of abaqus.Optimization.BeadFilter.BeadFilter.setValues:1
@@ -4491,14 +4491,14 @@ msgstr ""
 #: ../../docstring of abaqus.Optimization.ShapeTask.ShapeTask.abaqusSensitivities:4
 #: ../../docstring of abaqus.Optimization.SizingTask.SizingTask.abaqusSensitivities:4
 #: ../../docstring of abaqus.Optimization.TopologyTask.TopologyTask.abaqusSensitivities:4
-msgid "The `abaqusSensitivities` attribute was added."
+msgid "The ``abaqusSensitivities`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Optimization.OptimizationTaskModel.BeadTask.groupOperator:5
 #: ../../docstring of abaqus.Optimization.ShapeTask.ShapeTask.groupOperator:5
 #: ../../docstring of abaqus.Optimization.SizingTask.SizingTask.groupOperator:5
 #: ../../docstring of abaqus.Optimization.TopologyTask.TopologyTask.groupOperator:5
-msgid "The `groupSensitivities` attribute was added."
+msgid "The ``groupSensitivities`` attribute was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/BeadTask.py:docstring of abaqus.Optimization.BeadTask.BeadTask.setValues:1
@@ -4826,7 +4826,7 @@ msgstr ""
 #: ../../docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.mainPoint:4
 #: ../../docstring of abaqus.Optimization.StampControl.StampControl.mainPoint:4
 #: ../../docstring of abaqus.Optimization.TurnControl.TurnControl.mainPoint:4
-msgid "The attribute `masterPoint` was renamed to `mainPoint`."
+msgid "The attribute ``masterPoint`` was renamed to ``mainPoint``."
 msgstr ""
 
 #: ../../docstring of abaqus.Optimization.OptimizationTask.DesignDirection.mainPointDetermination:4
@@ -4836,7 +4836,7 @@ msgstr ""
 #: ../../docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.mainPointDetermination:4
 #: ../../docstring of abaqus.Optimization.StampControl.StampControl.mainPointDetermination:4
 #: ../../docstring of abaqus.Optimization.TurnControl.TurnControl.mainPointDetermination:4
-msgid "The attribute `masterPointDetermination` was renamed to `mainPointDetermination`."
+msgid "The attribute ``masterPointDetermination`` was renamed to ``mainPointDetermination``."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/DesignDirection.py:docstring of abaqus.Optimization.DesignDirection.DesignDirection.setValues:1
@@ -5101,11 +5101,11 @@ msgid "The ShapeMemberSize object defines a shape member size geometric restrict
 msgstr ""
 
 #: ../../docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.assignNodeGroupRegion:3
-msgid "The `assignNodeGroupRegion` attribute was added."
+msgid "The ``assignNodeGroupRegion`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.nodeGroupRegion:3
-msgid "The `nodeGroupRegion` attribute was added."
+msgid "The ``nodeGroupRegion`` attribute was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapeMemberSize.py:docstring of abaqus.Optimization.ShapeMemberSize.ShapeMemberSize.setValues:1
@@ -5122,7 +5122,7 @@ msgstr ""
 
 #: ../../docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh:4
 #: ../../docstring of abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh:4
-msgid "The `allowNonSymmetricMesh` attribute was added."
+msgid "The ``allowNonSymmetricMesh`` attribute was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/ShapePlanarSymmetry.py:docstring of abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.setValues:1
@@ -5302,7 +5302,7 @@ msgid "The TopologyMillingControl object defines a topology milling control geom
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl:11
-msgid "The `TopologyMillingControl` class was added."
+msgid "The ``TopologyMillingControl`` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyMillingControl.py:docstring of abaqus.Optimization.TopologyMillingControl.TopologyMillingControl.setValues:1
@@ -5318,7 +5318,7 @@ msgid "The TopologyOverhangControl object defines a topology overhang control ge
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyOverhangControl.py:docstring of abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl:11
-msgid "The `TopologyOverhangControl` class was added."
+msgid "The ``TopologyOverhangControl`` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyOverhangControl.py:docstring of abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl:32
@@ -5372,7 +5372,7 @@ msgid "The TopologyRibDesign object defines a topology rib design geometric rest
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign:12
-msgid "The `TopologyRibDesign` class was added."
+msgid "The ``TopologyRibDesign`` class was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyRibDesign.py:docstring of abaqus.Optimization.TopologyRibDesign.TopologyRibDesign.setValues:1
@@ -5446,7 +5446,7 @@ msgid "The TopologyTask object defines a topology task. The TopologyTask object 
 msgstr ""
 
 #: ../../../../src/abaqus/Optimization/TopologyTask.py:docstring of abaqus.Optimization.TopologyTask.TopologyTask:23
-msgid "A Boolean specifying whether to use Abaqus to compute the design responses and their sensitivities. The default value is False.  .. versionadded:: 2019     The `abaqusSensitivities` argument was added."
+msgid "A Boolean specifying whether to use Abaqus to compute the design responses and their sensitivities. The default value is False.  .. versionadded:: 2019     The ``abaqusSensitivities`` argument was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Optimization.TopologyTask.TopologyTask.materialInterpolationTechnique:1
