@@ -142,16 +142,6 @@ class Plastic:
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.
-<<<<<<< HEAD
-=======
-        extrapolation
-            A SymbolicConstant specifying the extrapolation method for the yield stress with respect
-            to the equivalent plastic strain. This argument is valid only if hardening=ISOTROPIC.
-            Possible values are CONSTANT and LINEAR . The default value is CONSTANT.
-
-            .. versionadded:: 2022
-                The ``extrapolation`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

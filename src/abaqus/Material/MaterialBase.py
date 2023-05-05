@@ -116,15 +116,6 @@ class MaterialBase:
     #: A CrushableFoam object.
     crushableFoam: CrushableFoam = CrushableFoam(((),))
 
-<<<<<<< HEAD
-=======
-    #: A CrushStress object
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``crushStress`` attribute was added.
-    crushStress: CrushStress = CrushStress(((),))
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     #: A DamageInitiation object.
     ductileDamageInitiation: DamageInitiation = DamageInitiation()
 

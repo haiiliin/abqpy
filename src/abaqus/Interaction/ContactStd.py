@@ -60,14 +60,7 @@ class ContactStd(Interaction):
 
     #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
-<<<<<<< HEAD
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: An InitializationAssignment object specifying the contact initialization assignments in
     #: the contact domain.
@@ -151,41 +144,9 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments
             A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
-<<<<<<< HEAD
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceBeamSmoothingAssignments`` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceVertexCriteriaAssignments`` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The ``slidingFormulationAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
             the contact domain.
@@ -242,32 +203,6 @@ class ContactStd(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
-<<<<<<< HEAD
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceBeamSmoothingAssignments`` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceVertexCriteriaAssignments`` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The ``slidingFormulationAssignments`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.
@@ -320,12 +255,6 @@ class ContactStd(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN, SECONDARY, and BALANCED.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initializationAssignments
             A sequence of tuples specifying the contact initialization data assigned to each surface
             pair. Each tuple contains three entries:

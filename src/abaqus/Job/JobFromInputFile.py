@@ -20,13 +20,6 @@ class JobFromInputFile(Job):
 
             import job
             mdb.jobs[name]
-<<<<<<< HEAD
-=======
-
-    .. versionchanged:: 2023
-
-        The ``parallelizationMethodExplicit`` attribute was removed.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     #: A Boolean specifying whether to retrieve the recommended memory settings from the last
@@ -128,17 +121,8 @@ class JobFromInputFile(Job):
     parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
     #: The default value is 1.
-=======
-    #: using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-    #:
-    #: .. versionchanged:: 2023
-    #:
-    #:     The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-    #:     argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     numDomains: int = 1
 
     #: A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -150,18 +134,6 @@ class JobFromInputFile(Job):
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
     multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT
 
-<<<<<<< HEAD
-=======
-    #: A SymbolicConstant specifying the type of license type being used in the case of the
-    #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-    #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-    #: available.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``licenseType`` attribute was added.
-    licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,
@@ -193,13 +165,6 @@ class JobFromInputFile(Job):
 
                 mdb.JobFromInputFile
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2023
-
-            The ``parallelizationMethodExplicit`` argument was removed.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         name
@@ -262,17 +227,8 @@ class JobFromInputFile(Job):
                 The default value for parallelizationMethodExplicit is now `DOMAIN`
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
-=======
-            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-
-            .. versionchanged:: 2023
-
-                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-                argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.
@@ -280,17 +236,6 @@ class JobFromInputFile(Job):
             A SymbolicConstant specifying whether an analysis is decomposed into threads or into
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-<<<<<<< HEAD
-=======
-        licenseType
-            A SymbolicConstant specifying the type of license type being used in the case of the
-            DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-            value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-            available.
-
-            .. versionchanged:: 2022
-                The ``licenseType`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         getMemoryFromAnalysis
             A Boolean specifying whether to retrieve the recommended memory settings from the last
             datacheck or analysis run and use those values in subsequent submissions. The default
@@ -339,13 +284,6 @@ class JobFromInputFile(Job):
     ):
         """This method modifies the JobFromInputFile object.
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2023
-
-            The ``parallelizationMethodExplicit`` argument was removed.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         type
@@ -401,17 +339,8 @@ class JobFromInputFile(Job):
                 The default value for parallelizationMethodExplicit is now `DOMAIN`
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
-=======
-            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-
-            .. versionchanged:: 2023
-
-                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-                argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.

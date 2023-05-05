@@ -66,14 +66,7 @@ class ContactExp(Interaction):
 
     #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
-<<<<<<< HEAD
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
     #:
@@ -138,30 +131,9 @@ class ContactExp(Interaction):
         smoothingAssignments
             A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
-<<<<<<< HEAD
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceCrushTriggerAssignments`` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceFrictionAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
@@ -209,21 +181,6 @@ class ContactExp(Interaction):
         globalSmoothing
             A Boolean specifying whether surface smoothing (geometric correction) is automatically
             applied to all eligible surfaces. The default value is ON.
-<<<<<<< HEAD
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceCrushTriggerAssignments`` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceFrictionAssignments`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         useAllstar
             A Boolean specifying whether the contacting surface pair consists of all exterior faces,
             shell edges, beam segments, analytical rigid surfaces, and, when applicable, Eulerian
@@ -284,12 +241,6 @@ class ContactExp(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
             contains three entries:

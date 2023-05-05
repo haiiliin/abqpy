@@ -31,25 +31,11 @@ class Tie(Constraint):
     #: A String specifying the constraint repository key.
     name: str
 
-<<<<<<< HEAD
     #: A Region object specifying the name of the master surface.
     master: Region
 
     #: A Region object specifying the name of the slave surface.
     slave: Region
-=======
-    #: A Region object specifying the name of the main surface.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``master`` attribute was renamed to ``main``.
-    main: Region
-
-    #: A Region object specifying the name of the secondary surface.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``slave`` attribute was renamed to ``secondary``.
-    secondary: Region
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A Boolean specifying whether initial positions of tied slave nodes are adjusted to
     #: lie on the master surface. The default value is ON.
@@ -111,23 +97,10 @@ class Tie(Constraint):
         ----------
         name
             A String specifying the constraint repository key.
-<<<<<<< HEAD
         master
             A Region object specifying the name of the master surface.
         slave
             A Region object specifying the name of the slave surface.
-=======
-        main
-            A Region object specifying the name of the main surface.
-
-            .. versionchanged:: 2022
-                The ``master`` argument was renamed to ``main``.
-        secondary
-            A Region object specifying the name of the secondary surface.
-
-            .. versionchanged:: 2022
-                The ``slave`` argument was renamed to ``secondary``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.
