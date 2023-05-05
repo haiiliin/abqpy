@@ -25,7 +25,7 @@ class ExpInitialization(ContactInitialization):
         - CONTACT INITIALIZATION DATA
 
     .. versionadded:: 2020
-        The `ExpInitialization` class was added.
+        The ``ExpInitialization`` class was added.
     """
 
     #: A String specifying the contact initialization repository key.
@@ -64,7 +64,14 @@ class ExpInitialization(ContactInitialization):
     #: included in the initial clearance specification. This argument is not valid when
     #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
     #: specified. The default value is None.
+<<<<<<< HEAD
     slaveNodesetName: Optional[str] = None
+=======
+    #:
+    #: .. versionchanged:: 2022
+    #:     The attribute ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
+    secondaryNodesetName: Optional[str] = None
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
     #: interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -123,6 +130,12 @@ class ExpInitialization(ContactInitialization):
             included in the initial clearance specification. This argument is not valid when
             **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
             specified. The default value is None.
+<<<<<<< HEAD
+=======
+
+            .. versionchanged:: 2022
+                The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -183,6 +196,12 @@ class ExpInitialization(ContactInitialization):
             included in the initial clearance specification. This argument is not valid when
             **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
             specified. The default value is None.
+<<<<<<< HEAD
+=======
+
+            .. versionchanged:: 2022
+                The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         stepFraction
             A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
             interference fit has to be solved. The default value is 1.0. This argument is valid only

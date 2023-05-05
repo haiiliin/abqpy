@@ -56,6 +56,16 @@ class SurfaceFeatureAssignment:
               GLOBAL region constant and can be used only in the Abaqus/Explicit version of general
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
+<<<<<<< HEAD
+=======
+        useDynFeatEdge
+            A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface
+            in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF.
+
+            .. versionadded:: 2023
+
+                The ``useDynFeatEdge`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...
 
@@ -89,6 +99,16 @@ class SurfaceFeatureAssignment:
               GLOBAL region constant and can be used only in the Abaqus/Explicit version of general
               contact.
             - A SymbolicConstant ORIGINAL or CURRENT specifying the configuration.
+<<<<<<< HEAD
+=======
+        useDynFeatEdge
+            A Boolean specifying whether the dynamic feature edge criterion should be activated for the contact surface
+            in an Abaqus/Explicit analysis. This argument can be set to ON (default) or OFF.
+
+            .. versionadded:: 2023
+
+                The ``useDynFeatEdge`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         """
         ...
 
