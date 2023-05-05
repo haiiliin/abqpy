@@ -2108,53 +2108,6 @@ class Material(MaterialBase):
         return self.plastic
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def PlasticityCorrection(
-        self,
-        type: Literal[C.RAMBERG_OSGOOD, C.TABULAR],
-        table: Sequence[Sequence[float]],
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-    ) -> PlasticityCorrection:
-        """This method creates a PlasticityCorrection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].PlasticityCorrection
-                session.odbs[name].materials[name].PlasticityCorrection
-
-        .. versionadded:: 2023
-
-            The ``PlasticityCorrection`` method was added.
-
-        Parameters
-        ----------
-        type
-            Set type=RAMBERG_OSGOOD to specify the Ramberg-Osgood relationship.
-            Set type=TABULAR to specify the tabular form.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-
-        Returns
-        -------
-        PlasticityCorrection
-            A PlasticCorrection object.
-
-        Raises
-        ------
-        RangeError
-        """
-        self.plasticityCorrection = PlasticityCorrection(type, table, temperatureDependency, dependencies)
-        return self.plasticityCorrection
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def PoreFluidExpansion(
         self,
         table: tuple,

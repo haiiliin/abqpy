@@ -439,16 +439,6 @@ class AssemblyBase(AssemblyFeature):
         ----------
         entity
             A ConstrainedSketchVertex, Datum point, MeshNode, or ReferencePoint specifying the entity to query.
-<<<<<<< HEAD
-=======
-        csys
-            A DatumCsys object specifying the desired coordinate system of the returned coordinates. By default,
-            coordinates are given in the global coordinate system.
-
-            .. versionadded:: 2023
-
-                The ``csys`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -465,13 +455,6 @@ class AssemblyBase(AssemblyFeature):
         - The minimum distance between a point and an edge.
         - The minimum distance between two edges.
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2023
-
-            The ``csys`` argument was removed.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         entity1

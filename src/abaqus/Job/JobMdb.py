@@ -73,13 +73,6 @@ class JobMdb(MdbBase):
 
                 mdb.Job
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2023
-
-            The ``parallelizationMethodExplicit`` argument was removed.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         name
@@ -152,17 +145,8 @@ class JobMdb(MdbBase):
             is DOMAIN.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
-=======
-            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-
-            .. versionchanged:: 2023
-
-                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-                argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.
@@ -253,13 +237,6 @@ class JobMdb(MdbBase):
 
                 mdb.JobFromInputFile
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2023
-
-            The ``parallelizationMethodExplicit`` argument was removed.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         name
@@ -320,17 +297,8 @@ class JobMdb(MdbBase):
             is DOMAIN.
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
-=======
-            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-
-            .. versionchanged:: 2023
-
-                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-                argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.

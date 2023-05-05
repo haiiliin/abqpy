@@ -21,13 +21,6 @@ class ModelJob(Job):
             import job
             mdb.adaptivityProcesses[name].job
             mdb.jobs[name]
-<<<<<<< HEAD
-=======
-
-    .. versionchanged:: 2023
-
-        The ``parallelizationMethodExplicit`` attribute was removed.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
@@ -108,17 +101,8 @@ class ModelJob(Job):
     parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
     #: The default value is 1.
-=======
-    #: using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-    #:
-    #: .. versionchanged:: 2023
-    #:
-    #:     The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-    #:     argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     numDomains: int = 1
 
     #: A Boolean specifying whether to activate dyanmic load balancing for jobs running on
@@ -282,17 +266,8 @@ class ModelJob(Job):
                 The default value for parallelizationMethodExplicit is now `DOMAIN`
         numDomains
             An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
-<<<<<<< HEAD
             **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
             The default value is 1.
-=======
-            using more than 1 numCpus, numDomains must be a multiple of numCpus. The default value is 1.
-
-            .. versionchanged:: 2023
-
-                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
-                argument was removed in 2023.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on
             multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF.
