@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 14:37+0000\n"
+"POT-Creation-Date: 2023-05-05 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,14 +51,14 @@ msgstr ""
 #: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:5
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:8
 #: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:6
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:5
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:6
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:5
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:5
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:4
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:7
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:4
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:4
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:10
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:9
 msgid "Check `Session on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1148,13 +1148,13 @@ msgstr ""
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:15
 #: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:15
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:4
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:19
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:21
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:18
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:22
 msgid "This function can be accessed by::"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:20
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:24
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:23
 #: ../../docstring of abaqus.Session.SessionBase.Drawing.name:1
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.name:1
 msgid "A String specifying the repository key."
@@ -1585,46 +1585,46 @@ msgid "Check `JournalOptions on help.3ds.com/2017 <https://help.3ds.com/2017/Eng
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:1
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:18
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:19
 msgid "This method creates a NumberFormat object."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:11
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:16
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:17
 msgid "Check `NumberFormat on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:14
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:28
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:29
 #: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.blankPad:1
 msgid "A Boolean specifying whether the printed digits should be padded with blank characters to ensure equal sized fields. The **blankPad** argument is useful when your printed output includes columns. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:18
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:32
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:33
 #: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.format:1
 msgid "A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING, SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:21
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:35
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:36
 #: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.numDigits:1
 msgid "An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0. The default value is 6."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:24
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:38
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:39
 #: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.precision:1
 msgid "An Int specifying the number of decimal places to which the number is to be truncated for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default value is 0."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:28
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:42
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:43
 msgid "A NumberFormat object."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:29
-#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:43
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:44
 msgid ":class:`NumberFormat`"
 msgstr ""
 
@@ -1661,7 +1661,7 @@ msgid "A NumberFormat object specifying the default format for numbers in geomet
 msgstr ""
 
 #: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1
-msgid "The NumberFormat object is a formatting template used to define formatting options for certain numeric output.This page discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members"
+msgid "The NumberFormat object is a formatting template used to define formatting options for certain numeric output.This page discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established /SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker- numberformatnumberformatpyc)Members."
 msgstr ""
 
 #: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
@@ -1692,72 +1692,72 @@ msgstr ""
 msgid "The NetworkDatabaseConnector object allows you to access an output database on a remote system."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:10
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:9
 msgid "Check `NetworkDatabaseConnector on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:12
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:11
 msgid "This method creates a NetworkDatabaseConnector object that you can use to access a remote output database. You can create a network database connector from any platform: Windows or Linux. However, the network database connector server must reside on a Linux platform; you cannot access an output database that resides on a remote Windows system. You can access only a remote output database; you cannot access a remote model database."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:26
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:25
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.hostName:1
 msgid "A String specifying the name of the remote computer."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:28
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:27
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.directory:1
 msgid "A String specifying the directory on the remote computer."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:30
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:29
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:7
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.remoteAbaqusDriverName:1
 msgid "A String specifying the name of command to execute Abaqus/CAE on the remote computer."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:32
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:31
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:9
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.remoteLoginMechanism:1
 msgid "A SymbolicConstant specifying the remote shell command on the local system. Possible values are RSH and SSH. The default value is SSH."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:35
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:34
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:12
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.sshPath:1
 msgid "A String specifying the path to the`ssh` command on the local system. The default value is an empty string."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:38
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:37
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:15
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:7
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.serverPort:1
 msgid "An Int specifying the server port on the remote computer. If **serverPort** =0, the host and remote systems are allowed to establish their own port numbers. The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:42
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:41
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:19
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.connectionPort:1
 msgid "An Int specifying the connection port on the remote computer. The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:44
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:43
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:21
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:11
 msgid "An Int specifying the timeout in seconds for the remote server. For example: 86400 corresponds to one day. The server exits if it does not receive any communication from the client during the time specified. The default value is 86400."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:48
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:47
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:25
 #: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.allowAutomaticStartup:1
 msgid "A Boolean specifying whether to start the remote network database connector server. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:51
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:50
 msgid "A NetworkDatabaseConnector object."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:52
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:51
 msgid ":class:`NetworkDatabaseConnector`"
 msgstr ""
 
@@ -1797,7 +1797,7 @@ msgstr ""
 msgid "This method stops the remote network database connector server on the remote host."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:10
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:9
 msgid "Check `SessionBase on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1861,39 +1861,39 @@ msgstr ""
 msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:11
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:10
 msgid "Check `SessionBase.openOdb on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionopenodbpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:14
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:13
 msgid "A String specifying the repository key. If the ``name`` is not the same as the ``path`` to the output database (`.odb`) file, the ``path`` must be specified as well. Additionally, to support backwards compatibility of the interface, if the ``name`` parameter is omitted, the ``path`` and ``name`` will be presumed to be the same."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:19
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:18
 msgid "A String specifying the path to an existing output database (`.odb`) file."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:21
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:20
 msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is TRUE when the output database file is opened from Abaqus/CAE, indicating that only read access will be permitted."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:25
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:24
 msgid "An Odb object."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:26
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:25
 msgid ":class:`Odb`"
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:28
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:27
 msgid "The database is from a previous release of Abaqus, If the output database was generated by a previous release of Abaqus and needs     upgrading, Run  `abaqus upgrade -job <newFilename> -odb <oldFileName>` to upgrade it."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:29
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:28
 msgid "Abaqus installation must be upgraded before this output database can be opened, If the output database was generated by a newer release of Abaqus, and the     installation of Abaqus needs upgrading."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:30
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:29
 msgid "If the file is not a valid database."
 msgstr ""
 
@@ -2006,27 +2006,27 @@ msgstr ""
 msgid "For optimal performance, the memory limit should be set to a value less than the physical amount of memory on the machine.The minimum setting allowed is 256 MB."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:5
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:4
 msgid "Check `SessionBase.updateCADParameters on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionupdatecadparameterspyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:8
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:7
 msgid "A String specifying the model name to update."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:10
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:9
 msgid "A String specifying the CAD system for which Abaqus updates the parameters. The available options are 'Pro/ENGINEER', 'CATIA V5' and 'CATIA V6'."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:13
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:12
 msgid "A parameter file containing the parameters that were exposed in the CAD system using the ``ABQ_`` prefix."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:16
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:15
 msgid "A file name specifying the CAD part file for which parameter update is triggered.For **CADName** = 'CATIA V5' or 'CATIA V6', you can specify either products or parts using this argument. If you specify a product, Abaqus updates all of the parts associated with that product.For **CADName** = 'Pro/ENGINEER', this argument is optional, and you can specify update for parts only. However, a single file can be associated with multiple parts in the case of family tables. In this case, Abaqus updates all listed parts."
 msgstr ""
 
-#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:23
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:22
 msgid "An String specifying the part name to update. This part name should match the part name in the originating CAD system.If you specify neither **CADPartFile** nor **CADPartName** during an update in which you specified **CADName** = 'Pro/ENGINEER', Abaqus updates all of the parts in the specified file."
 msgstr ""
 
