@@ -6,9 +6,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class FilmConditionProp(ContactProperty):
-    """The FilmConditionProp object is an interaction property that defines a film coefficient
-    as a function of temperature and field variables.
-    The FilmConditionProp object is derived from the InteractionProperty object.
+    """The FilmConditionProp object is an interaction property that defines a film coefficient as a function of
+    temperature and field variables. The FilmConditionProp object is derived from the InteractionProperty
+    object.
 
     .. note::
         This object can be accessed by::

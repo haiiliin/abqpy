@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapePointSymmetry(GeometricRestriction):
-    """The ShapePointSymmetry object defines a shape point symmetry geometric restriction.
-    The ShapePointSymmetry object is derived from the GeometricRestriction object.
+    """The ShapePointSymmetry object defines a shape point symmetry geometric restriction. The
+    ShapePointSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

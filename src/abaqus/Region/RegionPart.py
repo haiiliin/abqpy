@@ -25,8 +25,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSEC
 
 @abaqus_class_doc
 class RegionPart(RegionPartBase):
-    """The following commands operate on Part objects. For more information about the Part
-    object, see Part object.
+    """The following commands operate on Part objects. For more information about the Part object, see Part
+    object.
 
     .. note::
         This object can be accessed by::
@@ -60,8 +60,8 @@ class RegionPart(RegionPartBase):
         name: str = "",
         **kwargs,
     ) -> Surface:
-        """This method creates a surface from a sequence of objects in a model database. The
-        surface will apply to the sides specified by the arguments.For example::
+        """This method creates a surface from a sequence of objects in a model database. The surface will apply
+        to the sides specified by the arguments.For example::
 
             surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')
 
@@ -388,8 +388,8 @@ class RegionPart(RegionPartBase):
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
     ) -> Skin:
-        """This method creates a skin from a sequence of objects in a model database. At least one
-        of the optional arguments needs to be specified.
+        """This method creates a skin from a sequence of objects in a model database. At least one of the
+        optional arguments needs to be specified.
 
         .. note::
             This function can be accessed by::
@@ -430,8 +430,8 @@ class RegionPart(RegionPartBase):
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
     ) -> Skin:
-        """This method modifies underlying entities of the selected skin. At least one of the
-        optional arguments needs to be specified.
+        """This method modifies underlying entities of the selected skin. At least one of the optional arguments
+        needs to be specified.
 
         .. note::
             This function can be accessed by::
@@ -470,8 +470,8 @@ class RegionPart(RegionPartBase):
         edges: Sequence[Edge] = (),
         elementEdges: Sequence[MeshEdge] = (),
     ) -> Stringer:
-        """This method creates a stringer from a sequence of objects in a model database. At least
-        one of the optional arguments needs to be specified.
+        """This method creates a stringer from a sequence of objects in a model database. At least one of the
+        optional arguments needs to be specified.
 
         .. note::
             This function can be accessed by::
@@ -532,11 +532,10 @@ class RegionPart(RegionPartBase):
 
     @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> Set:
-        """This method creates a set containing faces of the part marked with a specified color
-        attribute. Third-party applications can assign color attributes to faces, and the color
-        attribute can be imported into Abaqus from an ACIS file. You can use this method to
-        create sets only on parts; however, you can access the sets from instances of the parts
-        in the assembly.
+        """This method creates a set containing faces of the part marked with a specified color attribute.
+        Third-party applications can assign color attributes to faces, and the color attribute can be imported
+        into Abaqus from an ACIS file. You can use this method to create sets only on parts; however, you can
+        access the sets from instances of the parts in the assembly.
 
         .. note::
             This function can be accessed by::
@@ -629,8 +628,7 @@ class RegionPart(RegionPartBase):
 
     @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
-        """This method creates sets based on mapping sets from element centroid locations in an
-        Odb.
+        """This method creates sets based on mapping sets from element centroid locations in an Odb.
 
         .. note::
             This function can be accessed by::

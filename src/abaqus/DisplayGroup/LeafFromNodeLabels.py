@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 @abaqus_class_doc
 class LeafFromNodeLabels(Leaf):
-    """The LeafFromNodeLabels object can be used whenever a Leaf object is expected as an
-    argument. Leaf objects are used to specify the items in a display group. Leaf objects
-    are constructed as temporary objects, which are then used as arguments to DisplayGroup
-    commands.
-    The LeafFromNodeLabels object is derived from the Leaf object.
+    """The LeafFromNodeLabels object can be used whenever a Leaf object is expected as an argument. Leaf objects
+    are used to specify the items in a display group. Leaf objects are constructed as temporary objects, which
+    are then used as arguments to DisplayGroup commands. The LeafFromNodeLabels object is derived from the Leaf
+    object.
 
     .. note::
         This object can be accessed by::
@@ -35,8 +34,8 @@ class LeafFromNodeLabels(Leaf):
 
     @abaqus_method_doc
     def __init__(self, partInstanceName: str, nodeLabels: tuple):
-        """This method creates a Leaf object from a sequence of node labels that belong to a single
-        part instance.
+        """This method creates a Leaf object from a sequence of node labels that belong to a single part
+        instance.
 
         .. note::
             This function can be accessed by::

@@ -23,9 +23,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorDamage(ConnectorBehaviorOption):
-    """The ConnectorDamage object defines damage behavior for one or more components of a
-    connector's relative motion.
-    The ConnectorDamage object is derived from the ConnectorBehaviorOption object.
+    """The ConnectorDamage object defines damage behavior for one or more components of a connector's relative
+    motion. The ConnectorDamage object is derived from the ConnectorBehaviorOption object.
 
     .. note::
         This object can be accessed by::

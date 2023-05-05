@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ModulatedAmplitude(Amplitude):
-    """The ModulatedAmplitude object defines a modulated amplitude curve.
-    The ModulatedAmplitude object is derived from the Amplitude object.
+    """The ModulatedAmplitude object defines a modulated amplitude curve. The ModulatedAmplitude object is
+    derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

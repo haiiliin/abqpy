@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MaterialFlowBC(BoundaryCondition):
-    """The MaterialFlowBC object stores the data for a connector material flow boundary
-    condition.
-    The MaterialFlowBC object is derived from the BoundaryCondition object.
+    """The MaterialFlowBC object stores the data for a connector material flow boundary condition. The
+    MaterialFlowBC object is derived from the BoundaryCondition object.
 
     .. note::
         This object can be accessed by::
@@ -108,8 +107,7 @@ class MaterialFlowBC(BoundaryCondition):
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
     ):
-        """This method modifies the data for an existing MaterialFlowBC object in the step where it
-        is created.
+        """This method modifies the data for an existing MaterialFlowBC object in the step where it is created.
 
         Parameters
         ----------
@@ -141,8 +139,8 @@ class MaterialFlowBC(BoundaryCondition):
         magnitude: Union[Literal[C.FREED], float] = UNCHANGED,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing MaterialFlowBC object in the
-        specified step.
+        """This method modifies the propagating data for an existing MaterialFlowBC object in the specified
+        step.
 
         Parameters
         ----------

@@ -6,9 +6,9 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class FluidCavityPressure(PredefinedField):
-    """The FluidCavityPressure object stores the data for initial fluid cavity pressures. The
-    base class *region* argument can not be specifed with this object.
-    The FluidCavityPressure object is derived from the PredefinedField object.
+    """The FluidCavityPressure object stores the data for initial fluid cavity pressures. The base class
+    *region* argument can not be specifed with this object. The FluidCavityPressure object is derived from the
+    PredefinedField object.
 
     .. note::
         This object can be accessed by::

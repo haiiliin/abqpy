@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfacePoreFluid(Load):
-    """The SurfacePoreFluid object defines surface pore fluid flow from a region or into a
-    region.
-    The SurfacePoreFluid object is derived from the Load object.
+    """The SurfacePoreFluid object defines surface pore fluid flow from a region or into a region. The
+    SurfacePoreFluid object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -92,8 +91,8 @@ class SurfacePoreFluid(Load):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing SurfacePoreFluid object in the step where
-        it is created.
+        """This method modifies the data for an existing SurfacePoreFluid object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -113,8 +112,8 @@ class SurfacePoreFluid(Load):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
-        """This method modifies the propagating data for an existing SurfacePoreFluid object in the
-        specified step.
+        """This method modifies the propagating data for an existing SurfacePoreFluid object in the specified
+        step.
 
         Parameters
         ----------

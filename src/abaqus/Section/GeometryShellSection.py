@@ -24,9 +24,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 @abaqus_class_doc
 class GeometryShellSection(ShellSection):
     """The GeometryShellSection object defines the properties of a geometry shell section. The
-    GeometryShellSection object has no explicit constructor and no methods. The
-    GeometryShellSection object is an abstract base type.
-    The GeometryShellSection object is derived from the ShellSection object.
+    GeometryShellSection object has no explicit constructor and no methods. The GeometryShellSection object is
+    an abstract base type. The GeometryShellSection object is derived from the ShellSection object.
 
     .. note::
         This object can be accessed by::

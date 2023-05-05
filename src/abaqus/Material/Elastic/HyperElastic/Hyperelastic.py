@@ -27,8 +27,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Hyperelastic:
-    r"""The Hyperelastic object specifies elastic properties for approximately incompressible
-    elastomers.
+    r"""The Hyperelastic object specifies elastic properties for approximately incompressible elastomers.
 
     .. note::
         This object can be accessed by::

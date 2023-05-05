@@ -30,8 +30,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapeTask(OptimizationTask):
-    """The ShapeTask object defines a shape task.
-    The ShapeTask object is derived from the OptimizationTask object.
+    """The ShapeTask object defines a shape task. The ShapeTask object is derived from the OptimizationTask
+    object.
 
     .. note::
         This object can be accessed by::

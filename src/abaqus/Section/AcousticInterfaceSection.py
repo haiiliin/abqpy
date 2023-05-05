@@ -5,8 +5,8 @@ from .Section import Section
 
 @abaqus_class_doc
 class AcousticInterfaceSection(Section):
-    """The AcousticInterfaceSection object defines the properties of an acoustic section.
-    The AcousticInterfaceSection object is derived from the Section object.
+    """The AcousticInterfaceSection object defines the properties of an acoustic section. The
+    AcousticInterfaceSection object is derived from the Section object.
 
     .. note::
         This object can be accessed by::

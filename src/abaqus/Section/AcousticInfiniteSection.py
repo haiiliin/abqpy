@@ -5,8 +5,8 @@ from .Section import Section
 
 @abaqus_class_doc
 class AcousticInfiniteSection(Section):
-    """The AcousticInfiniteSection object defines the properties of an acoustic section.
-    The AcousticInfiniteSection object is derived from the Section object.
+    """The AcousticInfiniteSection object defines the properties of an acoustic section. The
+    AcousticInfiniteSection object is derived from the Section object.
 
     .. note::
         This object can be accessed by::

@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ShapeRotationalSymmetry(GeometricRestriction):
-    """The ShapeRotationalSymmetry object defines a shape rotational symmetry geometric
-    restriction.
-    The ShapeRotationalSymmetry object is derived from the GeometricRestriction object.
+    """The ShapeRotationalSymmetry object defines a shape rotational symmetry geometric restriction. The
+    ShapeRotationalSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

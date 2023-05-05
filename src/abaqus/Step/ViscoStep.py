@@ -36,9 +36,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ViscoStep(AnalysisStep):
-    """The ViscoStep object is used to obtain a transient static response in an analysis with
-    time-dependent material behavior (creep, swelling, and viscoelasticity).
-    The ViscoStep object is derived from the AnalysisStep object.
+    """The ViscoStep object is used to obtain a transient static response in an analysis with time-dependent
+    material behavior (creep, swelling, and viscoelasticity). The ViscoStep object is derived from the
+    AnalysisStep object.
 
     .. note::
         This object can be accessed by::

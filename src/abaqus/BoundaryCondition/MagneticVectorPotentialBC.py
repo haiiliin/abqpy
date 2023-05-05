@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MagneticVectorPotentialBC(BoundaryCondition):
-    """The MagneticVectorPotentialBC object stores the data for a magnetic vector potential
-    boundary condition.
+    """The MagneticVectorPotentialBC object stores the data for a magnetic vector potential boundary condition.
     The MagneticVectorPotentialBC object is derived from the BoundaryCondition object.
 
     .. note::
@@ -111,8 +110,8 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         localCsys: Optional[str] = None,
     ):
-        """This method modifies the data for an existing MagneticVectorPotentialBC object in the
-        step where it is created.
+        """This method modifies the data for an existing MagneticVectorPotentialBC object in the step where it
+        is created.
 
         Parameters
         ----------
@@ -152,8 +151,8 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         component3: Optional[Literal[C.UNCHANGED]] = None,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing MagneticVectorPotentialBC
-        object in the specified step.
+        """This method modifies the propagating data for an existing MagneticVectorPotentialBC object in the
+        specified step.
 
         Parameters
         ----------

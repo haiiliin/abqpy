@@ -24,8 +24,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class JobMdb(MdbBase):
-    """The Mdb object is the high-level Abaqus model database. A model database stores models
-    and analysis controls.
+    """The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+    controls.
 
     .. note::
         This object can be accessed by::
@@ -65,8 +65,7 @@ class JobMdb(MdbBase):
         *args,
         **kwargs,
     ) -> ModelJob:
-        """This method creates an analysis job using a model on a model database (MDB) for the
-        model definition.
+        """This method creates an analysis job using a model on a model database (MDB) for the model definition.
 
         .. note::
             This function can be accessed by::

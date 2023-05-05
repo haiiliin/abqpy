@@ -43,8 +43,8 @@ class AdaptivityModel(ModelBase):
 
     @abaqus_method_doc
     def adaptiveRemesh(self, odb: Odb):
-        """This method remeshes the model using the active remesh rules in the model and the error
-        indicator results from a previous analysis.
+        """This method remeshes the model using the active remesh rules in the model and the error indicator
+        results from a previous analysis.
 
         Parameters
         ----------
@@ -66,11 +66,10 @@ class AdaptivityModel(ModelBase):
         region: Region,
         localCsys: Optional[DatumCsys] = None,
     ) -> AdaptiveMeshConstraint:
-        """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
-        Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
-        AdaptiveMeshConstraint object has no explicit constructor. The methods and members of
-        the AdaptiveMeshConstraint object are common to all objects derived from the
-        AdaptiveMeshConstraint object.
+        """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian
+        (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit
+        constructor. The methods and members of the AdaptiveMeshConstraint object are common to all objects
+        derived from the AdaptiveMeshConstraint object.
 
         .. note::
             This function can be accessed by::

@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class AnalyticSurface:
-    """The AnalyticSurface object is a geometric surface that can be described with straight
-    and/or curved line segments.
+    """The AnalyticSurface object is a geometric surface that can be described with straight and/or curved line
+    segments.
 
     .. note::
         This object can be accessed by::

@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Tie(Constraint):
-    """The Tie object defines two surfaces to be tied together for the duration of a
-    simulation.
-    The Tie object is derived from the ConstrainedSketchConstraint object.
+    """The Tie object defines two surfaces to be tied together for the duration of a simulation. The Tie object
+    is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::
@@ -149,8 +148,9 @@ class Tie(Constraint):
 
     @abaqus_method_doc
     def swapSurfaces(self):
-        """This method switches the main and secondary surfaces of a tied constraint. This command
-        is valid only during the step in which the interaction is created.
+        """This method switches the main and secondary surfaces of a tied constraint.
+
+        This command is valid only during the step in which the interaction is created.
         """
         ...
 

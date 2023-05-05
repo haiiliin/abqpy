@@ -10,13 +10,11 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
-    """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
-    Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.
-    One instance of this object is created internally by the VelocityAdaptiveMeshConstraint
-    object for each step. The instance is also deleted internally by the
-    VelocityAdaptiveMeshConstraint object.
-    The VelocityAdaptiveMeshConstraintState object has no constructor or methods.
-    The VelocityAdaptiveMeshConstraintState object is derived from the
+    """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary Lagrangian
+    Eularian (ALE) style velocity adaptive mesh constraint in a step. One instance of this object is created
+    internally by the VelocityAdaptiveMeshConstraint object for each step. The instance is also deleted
+    internally by the VelocityAdaptiveMeshConstraint object. The VelocityAdaptiveMeshConstraintState object has
+    no constructor or methods. The VelocityAdaptiveMeshConstraintState object is derived from the
     AdaptiveMeshConstraintState object.
 
     .. note::
@@ -121,13 +119,11 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         ] = None,
         amplitude: str = "",
     ):
-        """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
-        Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.
-        One instance of this object is created internally by the VelocityAdaptiveMeshConstraint
-        object for each step. The instance is also deleted internally by the
-        VelocityAdaptiveMeshConstraint object.
-        The VelocityAdaptiveMeshConstraintState object has no constructor or methods.
-        The VelocityAdaptiveMeshConstraintState object is derived from the
+        """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
+        Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step. One instance of this object
+        is created internally by the VelocityAdaptiveMeshConstraint object for each step. The instance is also
+        deleted internally by the VelocityAdaptiveMeshConstraint object. The VelocityAdaptiveMeshConstraintState
+        object has no constructor or methods. The VelocityAdaptiveMeshConstraintState object is derived from the
         AdaptiveMeshConstraintState object.
 
         .. note::

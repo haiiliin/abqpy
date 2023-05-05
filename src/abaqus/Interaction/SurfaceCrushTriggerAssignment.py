@@ -8,9 +8,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SurfaceCrushTriggerAssignment:
-    """The SurfaceCrushTriggerAssignment object stores the surface crush trigger assignment
-    definition for surfaces in ContactExp objects. The SurfaceCrushTriggerAssignment object
-    has no constructor or members.
+    """The SurfaceCrushTriggerAssignment object stores the surface crush trigger assignment definition for
+    surfaces in ContactExp objects. The SurfaceCrushTriggerAssignment object has no constructor or members.
 
     .. note::
         This object can be accessed by::
@@ -30,8 +29,8 @@ class SurfaceCrushTriggerAssignment:
     def changeValuesInStep(
         self, stepName: str, index: int, value: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER], float]
     ):
-        """This method allows modification of surface crush trigger assignments already defined on
-        surfaces in a given step.
+        """This method allows modification of surface crush trigger assignments already defined on surfaces in a
+        given step.
 
         Parameters
         ----------
@@ -56,8 +55,7 @@ class SurfaceCrushTriggerAssignment:
     def appendInStep(
         self, stepName: str, assignments: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER, C.GLOBAL], float]
     ):
-        """This method allows addition of surface crush trigger assignments to new surfaces in a
-        given step.
+        """This method allows addition of surface crush trigger assignments to new surfaces in a given step.
 
         Parameters
         ----------
@@ -79,8 +77,8 @@ class SurfaceCrushTriggerAssignment:
 
     @abaqus_method_doc
     def delete(self, indices: tuple):
-        """The delete method allows you to delete existing surface crush trigger assignments from a
-        ContactExp object.
+        """The delete method allows you to delete existing surface crush trigger assignments from a ContactExp
+        object.
 
         Parameters
         ----------

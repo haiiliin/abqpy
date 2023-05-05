@@ -6,8 +6,8 @@ from ..Region.Region import Region
 
 @abaqus_class_doc
 class SizingMemberSize(GeometricRestriction):
-    """The SizingMemberSize object defines a sizing member size geometric restriction.
-    The SizingMemberSize object is derived from the GeometricRestriction object.
+    """The SizingMemberSize object defines a sizing member size geometric restriction. The SizingMemberSize
+    object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

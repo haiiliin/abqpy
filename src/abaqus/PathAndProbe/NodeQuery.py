@@ -5,9 +5,8 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class NodeQuery:
-    """The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery
-    object has no constructor or methods. Abaqus creates the **nodeQuery** member when you
-    import the visualization module.
+    """The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery object has no
+    constructor or methods. Abaqus creates the **nodeQuery** member when you import the visualization module.
 
     .. note::
         This object can be accessed by::

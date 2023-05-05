@@ -11,8 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class BodyForce(Load):
-    """The BodyForce object defines a distributed load.
-    The BodyForce object is derived from the Load object.
+    """The BodyForce object defines a distributed load. The BodyForce object is derived from the Load object.
 
     .. note::
         This object can be accessed by::
@@ -105,8 +104,7 @@ class BodyForce(Load):
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
-        """This method modifies the data for an existing BodyForce object in the step where it is
-        created.
+        """This method modifies the data for an existing BodyForce object in the step where it is created.
 
         Parameters
         ----------
@@ -141,8 +139,7 @@ class BodyForce(Load):
         comp3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
-        """This method modifies the propagating data for an existing BodyForce object in the
-        specified step.
+        """This method modifies the propagating data for an existing BodyForce object in the specified step.
 
         Parameters
         ----------

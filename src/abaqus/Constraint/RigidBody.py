@@ -9,9 +9,9 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class RigidBody(Constraint):
-    """The RigidBody object constrains all the degrees of freedom on the specified regions to
-    the degree of freedom of its associated reference point.
-    The RigidBody object is derived from the ConstrainedSketchConstraint object.
+    """The RigidBody object constrains all the degrees of freedom on the specified regions to the degree of
+    freedom of its associated reference point. The RigidBody object is derived from the
+    ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

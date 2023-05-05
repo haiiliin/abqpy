@@ -7,10 +7,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class MonitorMgr:
-    """An instance of the MonitorMgr object is created when you import the abaqus module. No
-    other instance of the MonitorMgr object is required. (This MonitorMgr object is not to
-    be confused with the degree of freedom (DOF) monitor that is constructed from the Step
-    object.)
+    """An instance of the MonitorMgr object is created when you import the abaqus module. No other instance of
+    the MonitorMgr object is required. (This MonitorMgr object is not to be confused with the degree of freedom
+    (DOF) monitor that is constructed from the Step object.)
 
     .. note::
         This object can be accessed by::
@@ -53,9 +52,8 @@ class MonitorMgr:
         callback: SymbolicConstant,
         userData: str = "",
     ):
-        """This method specifies a callback function that will be called when the specified message
-        is received from the analysis product.
-        For more information, see An example of a callback function.
+        """This method specifies a callback function that will be called when the specified message is received
+        from the analysis product. For more information, see An example of a callback function.
 
         Parameters
         ----------
@@ -138,8 +136,8 @@ class MonitorMgr:
         callback: str,
         userData: str,
     ):
-        """This method removes a callback function. You specify the callback function to remove
-        using the same arguments you used to add the callback.
+        """This method removes a callback function. You specify the callback function to remove using the same
+        arguments you used to add the callback.
 
         Parameters
         ----------

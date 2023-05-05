@@ -48,8 +48,8 @@ def milestone(message: str, percent: int):
 @abaqus_function_doc
 @overload
 def milestone(message: str, object: str, done: int, total: int):
-    """This function displays a message in the prompt area indicating the number done out of a
-    total. The form of the message is `operation: object nn out of nn`
+    """This function displays a message in the prompt area indicating the number done out of a total. The form
+    of the message is `operation: object nn out of nn`
 
     .. note::
         This function can be accessed by::

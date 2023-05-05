@@ -35,11 +35,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CoupledThermalElectricalStructuralStep(AnalysisStep):
-    """The CoupledThermalElectricalStructuralStep object is used to analyze problems where the
-    simultaneous solution of the temperature, stress/displacement and electrical fields is
-    necessary.
-    The CoupledThermalElectricalStructuralStep object is derived from the AnalysisStep
-    object.
+    """The CoupledThermalElectricalStructuralStep object is used to analyze problems where the simultaneous
+    solution of the temperature, stress/displacement and electrical fields is necessary. The
+    CoupledThermalElectricalStructuralStep object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class SurfaceChargeState(LoadState):
-    """The SurfaceChargeState object stores the propagating data of a surface charge in a step.
-    One instance of this object is created internally by the SurfaceCharge object for each
-    step. The instance is also deleted internally by the SurfaceCharge object.
-    The SurfaceChargeState object has no constructor or methods.
-    The SurfaceChargeState object is derived from the LoadState object.
+    """The SurfaceChargeState object stores the propagating data of a surface charge in a step. One instance of
+    this object is created internally by the SurfaceCharge object for each step. The instance is also deleted
+    internally by the SurfaceCharge object. The SurfaceChargeState object has no constructor or methods. The
+    SurfaceChargeState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

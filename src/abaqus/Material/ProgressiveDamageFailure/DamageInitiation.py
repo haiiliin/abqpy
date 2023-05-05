@@ -23,8 +23,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DamageInitiation:
-    """The DamageInitiation object specifies material properties to define the initiation of
-    damage.
+    """The DamageInitiation object specifies material properties to define the initiation of damage.
 
     .. note::
         This object can be accessed by::

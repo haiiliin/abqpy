@@ -10,9 +10,9 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 class getPointAtDistance(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(self, point: Sequence[float], distance: str, percentage: Boolean = OFF):
-        """This method returns a point offset along the given ConstrainedSketchGeometry from the
-        given end by a specified arc length distance or a percentage of the total length of the
-        ConstrainedSketchGeometry object.
+        """This method returns a point offset along the given ConstrainedSketchGeometry from the given end by a
+        specified arc length distance or a percentage of the total length of the ConstrainedSketchGeometry
+        object.
 
         Parameters
         ----------
@@ -29,6 +29,5 @@ class getPointAtDistance(ConstrainedSketchGeometry):
         -------
         Sequence[float]
             A pair of floats representing the point along the edge.
-
         """
         ...

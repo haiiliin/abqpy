@@ -10,10 +10,9 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class DatumCsys(Datum):
-    """The DatumCsys object has no direct constructor; it is created when a Feature object is
-    created. For example, the DatumCsysByOffset method creates a Feature object that creates
-    a DatumCsys object.
-    The DatumCsys object is derived from the Datum object.
+    """The DatumCsys object has no direct constructor; it is created when a Feature object is created. For
+    example, the DatumCsysByOffset method creates a Feature object that creates a DatumCsys object. The
+    DatumCsys object is derived from the Datum object.
 
     .. note::
         This object can be accessed by::
@@ -49,8 +48,8 @@ class DatumCsys(Datum):
 
     @abaqus_method_doc
     def globalToLocal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
-        """This method transforms specified coordinates in the global coordinate system into this
-        local coordinate system.
+        """This method transforms specified coordinates in the global coordinate system into this local
+        coordinate system.
 
         .. versionadded:: 2022
             The ``globalToLocal`` method was added.
@@ -69,7 +68,8 @@ class DatumCsys(Datum):
 
     @abaqus_method_doc
     def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
-        """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
+        """This method transforms specified coordinates in this local coordinate system into the global
+        coordinate system.
 
         .. versionadded:: 2022
             The ``localToGlobal`` method was added.

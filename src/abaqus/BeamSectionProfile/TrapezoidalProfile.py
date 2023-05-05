@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class TrapezoidalProfile(Profile):
-    """The TrapezoidalProfile object defines the properties of a trapezoidal profile.
-    The TrapezoidalProfile object is derived from the Profile object.
+    """The TrapezoidalProfile object defines the properties of a trapezoidal profile. The TrapezoidalProfile
+    object is derived from the Profile object.
 
     .. note::
         This object can be accessed by::
@@ -71,7 +71,6 @@ class TrapezoidalProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -82,6 +81,5 @@ class TrapezoidalProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

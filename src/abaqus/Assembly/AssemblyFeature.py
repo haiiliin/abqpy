@@ -10,8 +10,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, PROJECT_BY_NUMBER, PR
 
 @abaqus_class_doc
 class AssemblyFeature(FeatureBase):
-    """The following commands operate on Feature objects. For more information about the
-    Feature object, see Feature object.
+    """The following commands operate on Feature objects. For more information about the Feature object, see
+    Feature object.
 
     .. note::
         This object can be accessed by::
@@ -37,13 +37,12 @@ class AssemblyFeature(FeatureBase):
         flipSourceToTargetDirection: Boolean = OFF,
         setName: str = "",
     ) -> "AssemblyFeature":
-        """This method creates a Feature object by creating attachment lines between the given set
-        of source and target faces. The given points are first projected onto the source faces
-        using the specified projection method. The points are then projected normal to the
-        source faces onto the target faces. The user can specify the number of projections or
-        the length of projection vector for projection onto the target faces. The lines are then
-        created between the source face and the closest target face. Subsequent lines are
-        created between the target faces.
+        """This method creates a Feature object by creating attachment lines between the given set of source and
+        target faces. The given points are first projected onto the source faces using the specified projection
+        method. The points are then projected normal to the source faces onto the target faces. The user can
+        specify the number of projections or the length of projection vector for projection onto the target
+        faces. The lines are then created between the source face and the closest target face. Subsequent lines
+        are created between the target faces.
 
         .. note::
             This function can be accessed by::
@@ -109,8 +108,8 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def Coaxial(movableAxis: str, fixedAxis: str, flip: Boolean) -> "AssemblyFeature":
-        """This method moves an instance so that its selected face is coaxial with the selected
-        face of a fixed instance.
+        """This method moves an instance so that its selected face is coaxial with the selected face of a fixed
+        instance.
 
         .. note::
             This function can be accessed by::
@@ -140,8 +139,8 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def CoincidentPoint(movablePoint: str, fixedPoint: str) -> "AssemblyFeature":
-        """This method moves an instance so that a specified point is coincident with a specified
-        point of a fixed instance.
+        """This method moves an instance so that a specified point is coincident with a specified point of a
+        fixed instance.
 
         .. note::
             This function can be accessed by::
@@ -167,8 +166,7 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def EdgeToEdge(movableAxis: str, fixedAxis: str, flip: Boolean, clearance: float) -> "AssemblyFeature":
-        """This method moves an instance so that its edge is parallel to an edge of a fixed
-        instance.
+        """This method moves an instance so that its edge is parallel to an edge of a fixed instance.
 
         .. note::
             This function can be accessed by::
@@ -204,8 +202,7 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def FaceToFace(movablePlane: str, fixedPlane: str, flip: Boolean, clearance: float) -> "AssemblyFeature":
-        """This method moves an instance so that its face is coincident with a face of a fixed
-        instance.
+        """This method moves an instance so that its face is coincident with a face of a fixed instance.
 
         .. note::
             This function can be accessed by::
@@ -240,8 +237,8 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def ParallelCsys(movableCsys: str, fixedCsys: str) -> "AssemblyFeature":
-        """This method moves an instance so that its Datum coordinate system is parallel to a Datum
-        coordinate system of a fixed instance.
+        """This method moves an instance so that its Datum coordinate system is parallel to a Datum coordinate
+        system of a fixed instance.
 
         .. note::
             This function can be accessed by::
@@ -269,8 +266,7 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def ParallelEdge(movableAxis: str, fixedAxis: str, flip: Boolean) -> "AssemblyFeature":
-        """This method moves an instance so that its edge is parallel to an edge of a fixed
-        instance.
+        """This method moves an instance so that its edge is parallel to an edge of a fixed instance.
 
         .. note::
             This function can be accessed by::
@@ -303,8 +299,7 @@ class AssemblyFeature(FeatureBase):
     @staticmethod
     @abaqus_method_doc
     def ParallelFace(movablePlane: str, fixedPlane: str, flip: Boolean) -> "AssemblyFeature":
-        """This method moves an instance so that its face is parallel to a face of a fixed
-        instance.
+        """This method moves an instance so that its face is parallel to a face of a fixed instance.
 
         .. note::
             This function can be accessed by::

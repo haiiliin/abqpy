@@ -10,7 +10,6 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class CrushStress:
     """The CrushStress object specifies the crush stress of a material.
 
-
     .. note::
         This object can be accessed by::
 

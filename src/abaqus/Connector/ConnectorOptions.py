@@ -7,16 +7,14 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConnectorOptions:
-    """The ConnectorOptions object is used to define various options for connector behaviors.
-    It can be used only in conjunction with CDCTerm, ConnectorDamage, ConnectorDamping,
-    ConnectorElasticity, ConnectorFriction, and ConnectorPlasticity objects. Because the
-    ConnectorDamage object contains two separate ConnectorOptions repositories (one for
-    damage initiation and one for damage evolution), there are two ConnectorOptions
-    constructors associated with that behavior—initiationOptions and evolutionOptions. The
-    ConnectorPlasticity object also contains two separate ConnectorOptions repositories (one
-    for isotropic hardening and one for kinematic hardening), so there are two
-    ConnectorOptions constructors associated with that behavior—isotropicOptions and
-    kinematicOptions.
+    """The ConnectorOptions object is used to define various options for connector behaviors. It can be used
+    only in conjunction with CDCTerm, ConnectorDamage, ConnectorDamping, ConnectorElasticity, ConnectorFriction,
+    and ConnectorPlasticity objects. Because the ConnectorDamage object contains two separate ConnectorOptions
+    repositories (one for damage initiation and one for damage evolution), there are two ConnectorOptions
+    constructors associated with that behavior—initiationOptions and evolutionOptions. The ConnectorPlasticity
+    object also contains two separate ConnectorOptions repositories (one for isotropic hardening and one for
+    kinematic hardening), so there are two ConnectorOptions constructors associated with that
+    behavior—isotropicOptions and kinematicOptions.
 
     .. note::
         This object can be accessed by::
@@ -115,8 +113,8 @@ class ConnectorOptions:
         useBehExtSettings: Boolean = ON,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ):
-        """This method creates a connector options object to be used in conjunction with an
-        allowable connector behavior option, derived component term, or connector section.
+        """This method creates a connector options object to be used in conjunction with an allowable connector
+        behavior option, derived component term, or connector section.
 
         .. note::
             This function can be accessed by::

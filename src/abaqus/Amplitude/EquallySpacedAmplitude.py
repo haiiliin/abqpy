@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class EquallySpacedAmplitude(Amplitude):
-    """The EquallySpacedAmplitude object defines a list of amplitude values at fixed time
-    intervals beginning at a specified value of time.
-    The EquallySpacedAmplitude object is derived from the Amplitude object.
+    """The EquallySpacedAmplitude object defines a list of amplitude values at fixed time intervals beginning at
+    a specified value of time. The EquallySpacedAmplitude object is derived from the Amplitude object.
 
     .. note::
         This object can be accessed by::

@@ -217,8 +217,7 @@ class Field(PredefinedField):
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
     ):
-        """This method modifies the data for an existing Field object in the step where it is
-        created.
+        """This method modifies the data for an existing Field object in the step where it is created.
 
         Parameters
         ----------
@@ -313,8 +312,7 @@ class Field(PredefinedField):
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
     ):
-        """This method modifies the propagating data for an existing Field object in the specified
-        step.
+        """This method modifies the propagating data for an existing Field object in the specified step.
 
         Parameters
         ----------

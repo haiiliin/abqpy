@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class RadiationToAmbient(Interaction):
-    """The RadiationToAmbient object defines radiant heat transfer between a surface and its
-    environment.
-    The RadiationToAmbient object is derived from the Interaction object.
+    """The RadiationToAmbient object defines radiant heat transfer between a surface and its environment. The
+    RadiationToAmbient object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -130,8 +129,8 @@ class RadiationToAmbient(Interaction):
         ambientTemperature: float = 0,
         ambientTemperatureAmp: str = "",
     ):
-        """This method modifies the data for an existing RadiationToAmbient object in the step
-        where it is created.
+        """This method modifies the data for an existing RadiationToAmbient object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -162,8 +161,8 @@ class RadiationToAmbient(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
-        """This method modifies the propagating data of an existing RadiationToAmbient object in
-        the specified step.
+        """This method modifies the propagating data of an existing RadiationToAmbient object in the specified
+        step.
 
         Parameters
         ----------

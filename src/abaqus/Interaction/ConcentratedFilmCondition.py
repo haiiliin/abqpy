@@ -9,9 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ConcentratedFilmCondition(Interaction):
-    """The ConcentratedFilmCondition object defines concentrated film coefficients and
-    associated sink temperatures.
-    The ConcentratedFilmCondition object is derived from the Interaction object.
+    """The ConcentratedFilmCondition object defines concentrated film coefficients and associated sink
+    temperatures. The ConcentratedFilmCondition object is derived from the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -193,8 +192,8 @@ class ConcentratedFilmCondition(Interaction):
         sinkFieldName: str = "",
         sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
-        """This method modifies the data for an existing ConcentratedFilmCondition object in the
-        step where it is created.
+        """This method modifies the data for an existing ConcentratedFilmCondition object in the step where it
+        is created.
 
         Parameters
         ----------
@@ -247,8 +246,8 @@ class ConcentratedFilmCondition(Interaction):
 
     @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
-        """This method modifies the propagating data of an existing ConcentratedFilmCondition
-        object in the specified step.
+        """This method modifies the propagating data of an existing ConcentratedFilmCondition object in the
+        specified step.
 
         Parameters
         ----------

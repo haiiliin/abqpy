@@ -26,10 +26,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SteadyStateDirectStep(AnalysisStep):
-    """The SteadyStateDirectStep object is used to calculate the linearized steady-state
-    response of the system to harmonic excitation in terms of the physical degrees of
-    freedom of the model.
-    The SteadyStateDirectStep object is derived from the AnalysisStep object.
+    """The SteadyStateDirectStep object is used to calculate the linearized steady-state response of the system
+    to harmonic excitation in terms of the physical degrees of freedom of the model. The SteadyStateDirectStep
+    object is derived from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

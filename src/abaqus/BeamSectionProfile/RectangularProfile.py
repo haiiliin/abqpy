@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class RectangularProfile(Profile):
-    """The RectangularProfile object defines the properties of a solid rectangular profile.
-    The RectangularProfile object is derived from the Profile object.
+    """The RectangularProfile object defines the properties of a solid rectangular profile. The
+    RectangularProfile object is derived from the Profile object.
 
     .. note::
         This object can be accessed by::
@@ -61,7 +61,6 @@ class RectangularProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -72,6 +71,5 @@ class RectangularProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

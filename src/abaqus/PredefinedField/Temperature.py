@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Temperature(PredefinedField):
-    """The Temperature object stores the data for temperature predefined fields.
-    The Temperature object is derived from the PredefinedField object.
+    """The Temperature object stores the data for temperature predefined fields. The Temperature object is
+    derived from the PredefinedField object.
 
     .. note::
         This object can be accessed by::
@@ -213,8 +213,7 @@ class Temperature(PredefinedField):
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
     ):
-        """This method modifies the data for an existing Temperature object in the step where it is
-        created.
+        """This method modifies the data for an existing Temperature object in the step where it is created.
 
         Parameters
         ----------
@@ -311,8 +310,7 @@ class Temperature(PredefinedField):
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
     ):
-        """This method modifies the propagating data for an existing Temperature object in the
-        specified step.
+        """This method modifies the propagating data for an existing Temperature object in the specified step.
 
         Parameters
         ----------

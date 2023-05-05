@@ -57,8 +57,8 @@ class PartInstance:
 
 
 class PartBase(PartFeature):
-    """The Part object defines the physical attributes of a structure. Parts are instanced into
-    the assembly and positioned before an analysis.
+    """The Part object defines the physical attributes of a structure. Parts are instanced into the assembly and
+    positioned before an analysis.
 
     .. note::
         This object can be accessed by::
@@ -271,8 +271,8 @@ class PartBase(PartFeature):
         ...
 
     def PartFromBooleanCut(self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]):
-        """This method creates a Part in the parts repository after subtracting or cutting the
-        geometries of a group of part instances from that of a base part instance.
+        """This method creates a Part in the parts repository after subtracting or cutting the geometries of a
+        group of part instances from that of a base part instance.
 
         .. note::
             This function can be accessed by::
@@ -307,9 +307,9 @@ class PartBase(PartFeature):
         removeDuplicateElements: Boolean = ON,
         domain: Literal[C.MESH, C.BOTH, C.GEOMETRY] = GEOMETRY,
     ):
-        """This method creates a Part in the parts repository after merging two or more part
-        instances. The part instances can be either Abaqus native parts or orphan mesh parts,
-        but they cannot be a combination of both.
+        """This method creates a Part in the parts repository after merging two or more part instances. The part
+        instances can be either Abaqus native parts or orphan mesh parts, but they cannot be a combination of
+        both.
 
         .. note::
             This function can be accessed by::
@@ -350,8 +350,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def PartFromExtrude2DMesh(self, name: str, part: "PartBase", depth: float, elementSize: float):
-        """This method creates a Part object by extruding an existing two-dimensional orphan mesh
-        Part object in the positive **Z** direction and places it in the parts repository.
+        """This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in
+        the positive **Z** direction and places it in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -473,7 +473,7 @@ class PartBase(PartFeature):
         PartError
             the file is corrupt, If the dimensionality does not correspond to what is found in the ACIS file
         PartError
-            type does not match the contents of the file, dimensionality does not match the contents of the file, 
+            type does not match the contents of the file, dimensionality does not match the contents of the file,
             If the type does not correspond to what is found in the ACIS file
         """
         ...
@@ -486,8 +486,8 @@ class PartBase(PartFeature):
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
-        """This method creates a Part object containing the mesh found in the supplied PartInstance
-        objects and places the new Part object in the parts repository.
+        """This method creates a Part object containing the mesh found in the supplied PartInstance objects and
+        places the new Part object in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -526,8 +526,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def PartFromMesh(self, name: str, copySets: Boolean = False):
-        """This method creates a Part object containing the mesh found in the part and places the
-        new Part object in the parts repository.
+        """This method creates a Part object containing the mesh found in the part and places the new Part
+        object in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -605,8 +605,7 @@ class PartBase(PartFeature):
         elements: tuple,
         twist: Boolean = OFF,
     ):
-        """This method creates a Part object from nodes and elements and places it in the parts
-        repository.
+        """This method creates a Part object from nodes and elements and places it in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -657,8 +656,8 @@ class PartBase(PartFeature):
         frame: Optional[int] = None,
         twist: Boolean = OFF,
     ):
-        """This method creates an orphan mesh Part object by reading an output database. The new
-        part is placed in the parts repository.
+        """This method creates an orphan mesh Part object by reading an output database. The new part is placed
+        in the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -730,9 +729,9 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def PartFromSection3DMeshByPlane(self, name: str, part: "PartBase", point1: float, point2: float, point3: tuple):
-        """This method creates a Part object by cutting an existing three-dimensional orphan mesh
-        Part object by a plane and places it in the parts repository. This method is valid only
-        for orphan mesh parts composed of 8-node brick elements.
+        """This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by
+        a plane and places it in the parts repository. This method is valid only for orphan mesh parts composed
+        of 8-node brick elements.
 
         .. note::
             This function can be accessed by::
@@ -785,8 +784,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def PartFromSubstructure(self, name: str, substructureFile: str, odbFile: str):
-        """This method creates a substructure Part object by reading a substructure sim file and
-        places it in the parts repository.
+        """This method creates a substructure Part object by reading a substructure sim file and places it in
+        the parts repository.
 
         .. note::
             This function can be accessed by::
@@ -832,11 +831,10 @@ class PartBase(PartFeature):
         splineCurvatureLimit: float = 90,
         twist: Boolean = OFF,
     ):
-        """This method creates a geometric Part object from the outline of an existing
-        two-dimensional orphan mesh Part object and places it in the parts repository. If the
-        Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the
-        two-dimensional mesh, the method fails and creates an empty geometry part with a failed
-        base shell feature.
+        """This method creates a geometric Part object from the outline of an existing two-dimensional orphan
+        mesh Part object and places it in the parts repository. If the Part2DGeomFrom2DMesh method cannot create
+        a valid two-dimensional shell section from the two-dimensional mesh, the method fails and creates an
+        empty geometry part with a failed base shell feature.
 
         .. note::
             This function can be accessed by::
@@ -888,9 +886,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def addGeomToSketch(self, sketch: ConstrainedSketch):
-        """This method converts a part into a sketch by projecting all of the edges of the part
-        onto the X-Y plane of the sketch. You can use addGeomToSketch with a part of any
-        modeling space.
+        """This method converts a part into a sketch by projecting all of the edges of the part onto the X-Y
+        plane of the sketch. You can use addGeomToSketch with a part of any modeling space.
 
         Parameters
         ----------
@@ -907,8 +904,8 @@ class PartBase(PartFeature):
         topFaces: Sequence[Face] = (),
         bottomFaces: Sequence[Face] = (),
     ):
-        """This method assigns thickness data to shell faces. The thickness can be used while
-        assigning shell and membrane sections to faces.
+        """This method assigns thickness data to shell faces. The thickness can be used while assigning shell
+        and membrane sections to faces.
 
         Parameters
         ----------
@@ -936,8 +933,9 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def backup(self):
-        """This method makes a backup copy of the features in the part. Use the restore method to
-        retrieve the part's features from the backup.
+        """This method makes a backup copy of the features in the part.
+
+        Use the restore method to retrieve the part's features from the backup.
         """
         ...
 
@@ -948,8 +946,8 @@ class PartBase(PartFeature):
         reportFacetErrors: Boolean = OFF,
         level: Optional[int] = None,
     ):
-        """This method checks the validity of the geometry of the part and prints a count of all
-        topological entities on the part (faces, edges, vertices, etc.).
+        """This method checks the validity of the geometry of the part and prints a count of all topological
+        entities on the part (faces, edges, vertices, etc.).
 
         Parameters
         ----------
@@ -969,8 +967,9 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def clearGeometryCache(self):
-        """This method clears the geometry cache. Clearing the geometry cache reduces the amount of
-        memory being used to cache part features.
+        """This method clears the geometry cache.
+
+        Clearing the geometry cache reduces the amount of memory being used to cache part features.
         """
         ...
 
@@ -1045,10 +1044,9 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getAssociatedCADPaths(self):
-        """This method returns the paths to the associated CAD part and root file. These are only
-        available if the part was imported from one of the supported CAD softwares using the
-        Associative Import capability. The root file can be the assembly file or the part file,
-        depending on what which one was imported.
+        """This method returns the paths to the associated CAD part and root file. These are only available if
+        the part was imported from one of the supported CAD softwares using the Associative Import capability.
+        The root file can be the assembly file or the part file, depending on what which one was imported.
 
         Returns
         -------
@@ -1059,10 +1057,10 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getCADParameters(self):
-        """This method returns the names and values of the CAD parameters associated with the part.
-        These are only available if the part was imported from one of the supported CAD
-        softwares using the Associative Import capability, and if the parameter names defined in
-        that CAD software are prefixed with the string ABQ.
+        """This method returns the names and values of the CAD parameters associated with the part. These are
+        only available if the part was imported from one of the supported CAD softwares using the Associative
+        Import capability, and if the parameter names defined in that CAD software are prefixed with the string
+        ABQ.
 
         Returns
         -------
@@ -1074,7 +1072,7 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getCentroid(self, faces: Sequence[Face], cells: Sequence[Face], relativeAccuracy: float = 0):
-        """Location of the centroid of a given face/cell or group of faces/cells
+        """Location of the centroid of a given face/cell or group of faces/cells.
 
         Parameters
         ----------
@@ -1122,10 +1120,10 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getCurvature(self, edges: Sequence[Edge], samplePoints: int = 100):
-        """This method returns the maximum curvature of a given edge or group of edges. For an arc,
-        the curvature is constant over the entire edge, and equal to the inverse of the radius.
-        For a straight line, the curvature is constant and equal to 0. For a spline edge, the
-        curvature varies over a range, and this methods computes the maximum.
+        """This method returns the maximum curvature of a given edge or group of edges. For an arc, the
+        curvature is constant over the entire edge, and equal to the inverse of the radius. For a straight line,
+        the curvature is constant and equal to 0. For a spline edge, the curvature varies over a range, and this
+        methods computes the maximum.
 
         Parameters
         ----------
@@ -1185,10 +1183,9 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getPerimeter(self, faces: Sequence[Face]):
-        """This method returns the total perimeter of a given face or group of faces. All faces
-        need to be on the same part. If the specified faces have shared edges, these edges are
-        excluded from the computation, thus providing the length of the outer perimeter of the
-        specified faces.
+        """This method returns the total perimeter of a given face or group of faces. All faces need to be on
+        the same part. If the specified faces have shared edges, these edges are excluded from the computation,
+        thus providing the length of the outer perimeter of the specified faces.
 
         Parameters
         ----------
@@ -1234,8 +1231,8 @@ class PartBase(PartFeature):
         miAboutCenterOfMass: Boolean = True,
         miAboutPoint: tuple = (),
     ):
-        """This method returns the mass properties of a part or region. Only beams, trusses,
-        shells, solids, point, nonstructural mass, and rotary inertia elements are supported.
+        """This method returns the mass properties of a part or region. Only beams, trusses, shells, solids,
+        point, nonstructural mass, and rotary inertia elements are supported.
 
         Parameters
         ----------
@@ -1409,7 +1406,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getFeatureVertices(self, name: str):
-        """This method returns a sequence of ConstrainedSketchVertex objects that are created by the given feature.
+        """This method returns a sequence of ConstrainedSketchVertex objects that are created by the given
+        feature.
 
         Parameters
         ----------
@@ -1430,8 +1428,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def isAlignedWithSketch(self):
-        """This method checks if the normal of an analytical rigid surface part is aligned with
-        that of its sketch.
+        """This method checks if the normal of an analytical rigid surface part is aligned with that of its
+        sketch.
 
         Returns
         -------
@@ -1448,9 +1446,7 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def printAssignedSections(self):
-        """This method prints information on each section that has been assigned to a region of the
-        part.
-        """
+        """This method prints information on each section that has been assigned to a region of the part."""
         ...
 
     @abaqus_method_doc
@@ -1484,9 +1480,9 @@ class PartBase(PartFeature):
         edges: tuple = (),
         vertices: tuple = (),
     ):
-        """This method projects the vertices of specified edges, and datum points from the part
-        onto the specified ConstrainedSketch object. The vertices and datum points appear on the
-        sketch as reference geometry.
+        """This method projects the vertices of specified edges, and datum points from the part onto the
+        specified ConstrainedSketch object. The vertices and datum points appear on the sketch as reference
+        geometry.
 
         Parameters
         ----------
@@ -1514,6 +1510,7 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def queryAttributes(self, printResults: Boolean = OFF):
         """This method prints the following information about a part:
+
             - the name, modeling space, and analysis type; and
             - whether twist is included (only available when the modeling space is axisymmetric and
         the analysis type is deformable); and
@@ -1536,8 +1533,10 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def queryCachedStates(self):
-        """This method displays the position of geometric states relative to the sequence of
-        features in the part cache. The output is displayed in the message area.
+        """This method displays the position of geometric states relative to the sequence of features in the
+        part cache.
+
+        The output is displayed in the message area.
         """
         ...
 
@@ -1572,8 +1571,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def queryRegionsMissingSections(self):
-        """This method returns all regions in the part that do not have a section assignment but
-        require one for analysis.
+        """This method returns all regions in the part that do not have a section assignment but require one for
+        analysis.
 
         Returns
         -------
@@ -1584,16 +1583,15 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def queryDisjointPlyRegions(self):
-        """This method provides a list of all composite plys in the current part which have
-        disjoint regions.
-        """
+        """This method provides a list of all composite plys in the current part which have disjoint regions."""
         ...
 
     @abaqus_method_doc
     def regenerate(self):
-        """This method regenerates a part. When you modify features, it may be convenient to
-        postpone regeneration until you make all your changes, since regeneration can be time
-        consuming.
+        """This method regenerates a part.
+
+        When you modify features, it may be convenient to postpone regeneration until you make all your
+        changes, since regeneration can be time consuming.
         """
         ...
 
@@ -1604,19 +1602,21 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def removeInvalidGeometry(self):
-        """Removes all invalid entities from the part, leaving a valid part. This is not recorded
-        as a feature in the feature list, therefore it should be used on parts that have a
-        single feature (such as an imported part).
-        Note:This may remove valid entities that are connected to invalid ones. You can identify
-        invalid entities using the query toolset before using this command.
+        """Removes all invalid entities from the part, leaving a valid part.
+
+        This is not recorded as a feature in the feature list, therefore it should be used on parts that
+        have a single feature (such as an imported part). Note:This may remove valid entities that are
+        connected to invalid ones. You can identify invalid entities using the query toolset before using
+        this command.
         """
         ...
 
     @abaqus_method_doc
     def restore(self):
-        """This method restores the parameters of all features in the assembly to the value they
-        had before a failed regeneration. Use the restore method after a failed regeneration,
-        followed by a regenerate command.
+        """This method restores the parameters of all features in the assembly to the value they had before a
+        failed regeneration.
+
+        Use the restore method after a failed regeneration, followed by a regenerate command.
         """
         ...
 
@@ -1643,18 +1643,18 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def saveGeometryCache(self):
-        """This method caches the current geometry. Caching the current geometry improves
-        regeneration performance.
+        """This method caches the current geometry.
+
+        Caching the current geometry improves regeneration performance.
         """
         ...
 
     @abaqus_method_doc
     def setAssociatedCADPaths(self, partFile: str = "", rootFile: str = ""):
-        """This method sets the paths to the associated CAD part and root file. This method is only
-        available if the part was imported from one of the supported CAD softwares using the
-        Associative Import capability. The root file can be the assembly file or the part file,
-        depending on the one that was imported. This method can be used to specify the new paths
-        when the CAD data is moved to a different directory.
+        """This method sets the paths to the associated CAD part and root file. This method is only available if
+        the part was imported from one of the supported CAD softwares using the Associative Import capability.
+        The root file can be the assembly file or the part file, depending on the one that was imported. This
+        method can be used to specify the new paths when the CAD data is moved to a different directory.
 
         Parameters
         ----------
@@ -1704,8 +1704,7 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def writeCADParameters(self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""):
-        """This method writes the parameters that were imported from the CAD system to a parameter
-        file.
+        """This method writes the parameters that were imported from the CAD system to a parameter file.
 
         Parameters
         ----------
@@ -1785,9 +1784,9 @@ class PartBase(PartFeature):
         nodes: Sequence[MeshNode],
         coordinates: tuple,
     ):
-        """This method copies a mesh pattern from a source region consisting of a set of shell
-        elements or element faces onto a target face, mapping nodes and elements in a one-one
-        correspondence between source and target.
+        """This method copies a mesh pattern from a source region consisting of a set of shell elements or
+        element faces onto a target face, mapping nodes and elements in a one-one correspondence between source
+        and target.
 
         Parameters
         ----------
@@ -1815,8 +1814,8 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def smoothNodes(self, nodes: Sequence[MeshNode]):
-        """This method smooths the given nodes of a native mesh, moving them locally to a more
-        optimal location that improves the quality of the mesh
+        """This method smooths the given nodes of a native mesh, moving them locally to a more optimal location
+        that improves the quality of the mesh.
 
         Parameters
         ----------
@@ -1827,22 +1826,25 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def Lock(self):
-        """This method locks the part. Locking the part prevents any further changes to the part
-        that can trigger regeneration of the part.
+        """This method locks the part.
+
+        Locking the part prevents any further changes to the part that can trigger regeneration of the part.
         """
         ...
 
     @abaqus_method_doc
     def Unlock(self):
-        """This method unlocks the part. Unlocking the part allows it to be regenerated after any
-        modifications to the part.
+        """This method unlocks the part.
+
+        Unlocking the part allows it to be regenerated after any modifications to the part.
         """
         ...
 
     @abaqus_method_doc
     def LockForUpgrade(self):
-        """This method locks the part for upgrade. Locking the part prevents any further changes to
-        the part that can trigger regeneration of the part. When the part is unlocked, all the
-        parts are upgraded and regenrated.
+        """This method locks the part for upgrade.
+
+        Locking the part prevents any further changes to the part that can trigger regeneration of the part.
+        When the part is unlocked, all the parts are upgraded and regenrated.
         """
         ...

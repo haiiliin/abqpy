@@ -8,9 +8,9 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class PrintOptions(_OptionsBase):
-    """The PrintOptions object stores the common settings that Abaqus uses for all print
-    methods. The PrintOptions object has no constructor. Abaqus creates the **printOptions**
-    member when a session is started.
+    """The PrintOptions object stores the common settings that Abaqus uses for all print methods. The
+    PrintOptions object has no constructor. Abaqus creates the **printOptions** member when a session is
+    started.
 
     .. note::
         This object can be accessed by::

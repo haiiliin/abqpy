@@ -10,9 +10,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StdInitialization(ContactInitialization):
-    """The StdInitialization object is used in conjunction with ContactStd in Abaqus/Standard
-    analyses to specify contact initialization data.
-    The StdInitialization object is derived from the ContactInitialization object.
+    """The StdInitialization object is used in conjunction with ContactStd in Abaqus/Standard analyses to
+    specify contact initialization data. The StdInitialization object is derived from the ContactInitialization
+    object.
 
     .. note::
         This object can be accessed by::

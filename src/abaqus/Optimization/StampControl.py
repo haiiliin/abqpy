@@ -11,8 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class StampControl(GeometricRestriction):
-    """The StampControl object defines a stamp control geometric restriction.
-    The StampControl object is derived from the GeometricRestriction object.
+    """The StampControl object defines a stamp control geometric restriction. The StampControl object is derived
+    from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

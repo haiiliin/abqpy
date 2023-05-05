@@ -5,8 +5,8 @@ from .Profile import Profile
 
 @abaqus_class_doc
 class ArbitraryProfile(Profile):
-    """The ArbitraryProfile object defines the properties of an arbitrary profile.
-    The ArbitraryProfile object is derived from the Profile object.
+    """The ArbitraryProfile object defines the properties of an arbitrary profile. The ArbitraryProfile object
+    is derived from the Profile object.
 
     .. note::
         This object can be accessed by::
@@ -64,7 +64,6 @@ class ArbitraryProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         super().__init__()
 
@@ -75,6 +74,5 @@ class ArbitraryProfile(Profile):
         Raises
         ------
         RangeError
-
         """
         ...

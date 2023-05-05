@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class DerivedComponent:
-    """A DerivedComponent object describes user-customized components for use in defining
-    ConnectorFriction and Potential objects.
+    """A DerivedComponent object describes user-customized components for use in defining ConnectorFriction and
+    Potential objects.
 
     .. note::
         This object can be accessed by::

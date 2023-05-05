@@ -8,8 +8,8 @@ from ..UtilityAndView.abaqusConstants import ABAQUS, ANALYSIS, Boolean, DEFAULT,
 
 @abaqus_class_doc
 class Coexecution:
-    """The Coexecution object contains a set of jobs as associated parameters to define a
-    co-simulation analysis.
+    """The Coexecution object contains a set of jobs as associated parameters to define a co-simulation
+    analysis.
 
     .. note::
         This object can be accessed by::
@@ -146,9 +146,9 @@ class Coexecution:
 
     @abaqus_method_doc
     def waitForCompletion(self):
-        """This method interrupts the execution of the script until the end of all the analyses. If
-        you call the waitForCompletion method and the **status** member is neither SUBMITTED nor
-        RUNNING, Abaqus assumes the analysis has either completed or aborted and returns
-        immediately.
+        """This method interrupts the execution of the script until the end of all the analyses.
+
+        If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING,
+        Abaqus assumes the analysis has either completed or aborted and returns immediately.
         """
         ...

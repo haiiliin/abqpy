@@ -8,12 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class RotationalBodyForceState(LoadState):
-    """The RotationalBodyForceState object stores the propagating data of a rotational body
-    force in a step. One instance of this object is created internally by the
-    RotationalBodyForce object for each step. The instance is also deleted internally by the
-    RotationalBodyForce object.
-    The RotationalBodyForceState object has no constructor or methods.
-    The RotationalBodyForceState object is derived from the LoadState object.
+    """The RotationalBodyForceState object stores the propagating data of a rotational body force in a step. One
+    instance of this object is created internally by the RotationalBodyForce object for each step. The instance
+    is also deleted internally by the RotationalBodyForce object. The RotationalBodyForceState object has no
+    constructor or methods. The RotationalBodyForceState object is derived from the LoadState object.
 
     .. note::
         This object can be accessed by::

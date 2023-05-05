@@ -9,8 +9,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CyclicSymmetry(Interaction):
-    """The CyclicSymmetry object defines a cyclic symmetry analysis.
-    The CyclicSymmetry object is derived from the Interaction object.
+    """The CyclicSymmetry object defines a cyclic symmetry analysis. The CyclicSymmetry object is derived from
+    the Interaction object.
 
     .. note::
         This object can be accessed by::
@@ -187,6 +187,7 @@ class CyclicSymmetry(Interaction):
     @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a cyclic symmetry interaction.
+
         This command is valid only during the step in which the interaction is created.
         """
         ...
@@ -202,8 +203,7 @@ class CyclicSymmetry(Interaction):
         positionTolerance: float = 0,
         positionToleranceMethod: Literal[C.SPECIFY_TOLERANCE, C.COMPUTED_TOLERANCE] = COMPUTED_TOLERANCE,
     ):
-        """This method modifies the data for an existing CyclicSymmetry object in the step where it
-        is created.
+        """This method modifies the data for an existing CyclicSymmetry object in the step where it is created.
 
         Parameters
         ----------
@@ -247,8 +247,7 @@ class CyclicSymmetry(Interaction):
         highestNodalDiameter: int = 0,
         excitationNodalDiameter: int = 0,
     ):
-        """This method modifies the propagating data of an existing CyclicSymmetry object in the
-        specified step.
+        """This method modifies the propagating data of an existing CyclicSymmetry object in the specified step.
 
         Parameters
         ----------

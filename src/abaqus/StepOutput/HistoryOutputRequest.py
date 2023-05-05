@@ -182,8 +182,7 @@ class HistoryOutputRequest:
 
     @abaqus_method_doc
     def deactivate(self, stepName: str) -> None:
-        """This method deactivates the history output request in the specified step and all
-        subsequent steps.
+        """This method deactivates the history output request in the specified step and all subsequent steps.
 
         Parameters
         ----------
@@ -195,8 +194,7 @@ class HistoryOutputRequest:
 
     @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str) -> None:
-        """This method moves the history output request state object from one step to a different
-        step.
+        """This method moves the history output request state object from one step to a different step.
 
         Parameters
         ----------
@@ -211,8 +209,8 @@ class HistoryOutputRequest:
 
     @abaqus_method_doc
     def reset(self, stepName: str) -> None:
-        """This method resets the history output request state of the specified step to the state
-        of the previous step.
+        """This method resets the history output request state of the specified step to the state of the
+        previous step.
 
         Parameters
         ----------
@@ -260,8 +258,8 @@ class HistoryOutputRequest:
         sensor: Boolean = OFF,
         useGlobal: Boolean = True,
     ) -> None:
-        """This method modifies the data for an existing HistoryOutputRequest object in the step
-        where it is created.
+        """This method modifies the data for an existing HistoryOutputRequest object in the step where it is
+        created.
 
         Parameters
         ----------
@@ -351,8 +349,8 @@ class HistoryOutputRequest:
         numIntervals: int = 20,
         timePoints: Optional[str] = None,
     ) -> None:
-        """This method modifies the propagating data for an existing HistoryOutputRequest object in
-        the specified step.
+        """This method modifies the propagating data for an existing HistoryOutputRequest object in the
+        specified step.
 
         Parameters
         ----------

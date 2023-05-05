@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class TopologyRotationalSymmetry(GeometricRestriction):
-    """The TopologyRotationalSymmetry object defines a topology rotational symmetry geometric
-    restriction.
-    The TopologyRotationalSymmetry object is derived from the GeometricRestriction object.
+    """The TopologyRotationalSymmetry object defines a topology rotational symmetry geometric restriction. The
+    TopologyRotationalSymmetry object is derived from the GeometricRestriction object.
 
     .. note::
         This object can be accessed by::

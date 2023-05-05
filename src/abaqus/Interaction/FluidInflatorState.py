@@ -8,11 +8,10 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 @abaqus_class_doc
 class FluidInflatorState(InteractionState):
-    """The FluidInflatorState object stores the propagating data for a FluidInflator object.
-    One instance of this object is created internally by the FluidInflator object for each
-    step. The instance is also deleted internally by the FluidInflator object.
-    The FluidInflatorState object has no constructor or methods.
-    The FluidInflatorState object is derived from the InteractionState object.
+    """The FluidInflatorState object stores the propagating data for a FluidInflator object. One instance of
+    this object is created internally by the FluidInflator object for each step. The instance is also deleted
+    internally by the FluidInflator object. The FluidInflatorState object has no constructor or methods. The
+    FluidInflatorState object is derived from the InteractionState object.
 
     .. note::
         This object can be accessed by::

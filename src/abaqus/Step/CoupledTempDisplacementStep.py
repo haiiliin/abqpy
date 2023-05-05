@@ -36,9 +36,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CoupledTempDisplacementStep(AnalysisStep):
-    """The CoupledTempDisplacementStep object is used to analyze problems where the
-    simultaneous solution of the temperature and stress/displacement fields is necessary.
-    The CoupledTempDisplacementStep object is derived from the AnalysisStep object.
+    """The CoupledTempDisplacementStep object is used to analyze problems where the simultaneous solution of the
+    temperature and stress/displacement fields is necessary. The CoupledTempDisplacementStep object is derived
+    from the AnalysisStep object.
 
     .. note::
         This object can be accessed by::

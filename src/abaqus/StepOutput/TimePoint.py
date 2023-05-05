@@ -3,8 +3,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
 class TimePoint:
-    """The TimePoint object defines time points at which data are written to the output
-    database or restart files.
+    """The TimePoint object defines time points at which data are written to the output database or restart
+    files.
 
     .. note::
         This object can be accessed by::

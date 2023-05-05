@@ -53,9 +53,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         localCsys: Optional[int] = None,
         scriptName: str = "",
     ) -> AssembledFastener:
-        """This method creates an AssembledFastener object. Although the constructor is available
-        both for parts and for the assembly, AssembledFastener objects are currently supported
-        only under the assembly.
+        """This method creates an AssembledFastener object. Although the constructor is available both for parts
+        and for the assembly, AssembledFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::
@@ -132,9 +131,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         midNodePosition: float = 0,
         collapsedElementAtTip: Literal[C.DUPLICATE_NODES, C.SINGLE_NODE, C.NONE] = NONE,
     ) -> ContourIntegral:
-        """This method creates a ContourIntegral object. Although the constructor is available both
-        for parts and for the assembly, ContourIntegral objects are currently supported only
-        under the assembly.
+        """This method creates a ContourIntegral object. Although the constructor is available both for parts
+        and for the assembly, ContourIntegral objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::
@@ -220,9 +218,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,
         printToDATFrequency: int = 1,
     ) -> DebondVCCT:
-        """This method creates a DebondVCCT object. Although the constructor is available both for
-        parts and for the assembly, DebondVCCT objects are currently supported only under the
-        assembly.
+        """This method creates a DebondVCCT object. Although the constructor is available both for parts and for
+        the assembly, DebondVCCT objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::
@@ -274,9 +271,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: Optional[int] = None,
     ) -> DiscreteFastener:
-        """This method creates a DiscreteFastener object. Although the constructor is available
-        both for parts and for the assembly, DiscreteFastener objects are currently supported
-        only under the assembly.
+        """This method creates a DiscreteFastener object. Although the constructor is available both for parts
+        and for the assembly, DiscreteFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::
@@ -449,9 +445,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         angle2: float = 0,
         unsorted: Boolean = OFF,
     ) -> PointFastener:
-        """This method creates a PointFastener object. Although the constructor is available both
-        for parts and for the assembly, PointFastener objects are currently supported only under
-        the assembly.
+        """This method creates a PointFastener object. Although the constructor is available both for parts and
+        for the assembly, PointFastener objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::
@@ -854,9 +849,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         crackFrontDist: tuple = (),
         autoDetectValue: str = "",
     ) -> XFEMCrack:
-        """This method creates a XFEMCrack object. Although the constructor is available both for
-        parts and for the assembly, XFEMCrack objects are currently supported only under the
-        assembly.
+        """This method creates a XFEMCrack object. Although the constructor is available both for parts and for
+        the assembly, XFEMCrack objects are currently supported only under the assembly.
 
         .. note::
             This function can be accessed by::

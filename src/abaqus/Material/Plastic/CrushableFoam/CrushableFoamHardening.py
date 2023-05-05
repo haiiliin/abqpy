@@ -5,8 +5,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class CrushableFoamHardening:
-    r"""The CrushableFoamHardening object specifies hardening for the crushable foam plasticity
-    model.
+    r"""The CrushableFoamHardening object specifies hardening for the crushable foam plasticity model.
 
     .. note::
         This object can be accessed by::

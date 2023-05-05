@@ -16,9 +16,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SpectrumAmplitude(Amplitude):
-    """The SpectrumAmplitude object defines the spectrum of responses for displacement,
-    velocity, or acceleration to be used in a response spectrum analysis.
-    The SpectrumAmplitude object is derived from the Amplitude object.
+    """The SpectrumAmplitude object defines the spectrum of responses for displacement, velocity, or
+    acceleration to be used in a response spectrum analysis. The SpectrumAmplitude object is derived from the
+    Amplitude object.
 
     .. note::
         This object can be accessed by::

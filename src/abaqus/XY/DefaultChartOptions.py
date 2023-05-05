@@ -14,8 +14,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 @abaqus_class_doc
 class DefaultChartOptions:
     """The DefaultChartOptions object is used to hold on default chart and axis attributes. The
-    DefaultChartOptions object attributes are used whenever Chart or Axis are created. A
-    DefaultChartOptions object is automatically created when opening a session.
+    DefaultChartOptions object attributes are used whenever Chart or Axis are created. A DefaultChartOptions
+    object is automatically created when opening a session.
 
     .. note::
         This object can be accessed by::

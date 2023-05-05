@@ -7,8 +7,8 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class AdjustPoints(Constraint):
-    """The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
-    The AdjustPoints object is derived from the ConstrainedSketchConstraint object.
+    """The AdjustPoints constraint object is used to adjust points (nodes) to a surface. The AdjustPoints object
+    is derived from the ConstrainedSketchConstraint object.
 
     .. note::
         This object can be accessed by::

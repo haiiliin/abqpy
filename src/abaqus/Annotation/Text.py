@@ -11,8 +11,8 @@ from .._OptionsBase import _OptionsBase
 
 @abaqus_class_doc
 class Text(Annotation, _OptionsBase):
-    """The Text object stores the text settings and location of a text annotation.
-    The Text object is derived from the Annotation object.
+    """The Text object stores the text settings and location of a text annotation. The Text object is derived
+    from the Annotation object.
 
     .. note::
         This object can be accessed by::
@@ -224,7 +224,6 @@ class Text(Annotation, _OptionsBase):
         -------
         Text
             A Text object.
-
         """
         super().__init__()
         self.name = name
@@ -348,7 +347,6 @@ class Text(Annotation, _OptionsBase):
             A SymbolicConstant specifying the Text object justification for multiline text. Possible
             values are JUSTIFY_LEFT, JUSTIFY_CENTER, and JUSTIFY_RIGHT. The default value is
             JUSTIFY_LEFT.
-
         """
         super().setValues(
             text=text,
