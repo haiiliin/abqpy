@@ -129,7 +129,7 @@ class ViewCut:
     #: ON.
     #:
     #: ..versionadded:: 2018
-    #:     The `crossSectionalArea` attribute was added.
+    #:     The ``crossSectionalArea`` attribute was added.
     crossSectionalArea: Optional[float] = None
 
     @abaqus_method_doc

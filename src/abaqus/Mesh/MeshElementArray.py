@@ -232,7 +232,7 @@ class MeshElementArray(List[MeshElement]):
         returns the edges that are referenced by exactly one of the faces in the sequence.
 
         .. versionadded:: 2018
-            The `getExteriorEdges` method was added.
+            The ``getExteriorEdges`` method was added.
 
         Returns
         -------
@@ -248,7 +248,7 @@ class MeshElementArray(List[MeshElement]):
         the faces that are referenced by exactly one of the cells in the sequence.
 
         .. versionadded:: 2018
-            The `getExteriorFaces` method was added.
+            The ``getExteriorFaces`` method was added.
 
         Returns
         -------

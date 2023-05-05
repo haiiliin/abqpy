@@ -108,7 +108,7 @@ autoapi_ignore = ["*_version.py"]
 autoapi_options = [
     'members', 
     'undoc-members', 
-    # 'private-members', 
+    'private-members', 
     'show-inheritance', 
     'show-module-summary', 
     'special-members', 
