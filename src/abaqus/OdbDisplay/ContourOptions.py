@@ -129,8 +129,13 @@ class ContourOptions(DGContourOptions):
     #: and the highest value at the bottom (**reversedContourLegendRange=ON**) or vice versa. The
     #: default value is OFF.
     #:
+<<<<<<< HEAD
     #: .. versionadded:: 2018
     #:     The `reversedContourLegendRange` attribute was added.
+=======
+    #: ..versionadded:: 2018
+    #:     The ``reversedContourLegendRange`` attribute was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
@@ -212,6 +217,17 @@ class ContourOptions(DGContourOptions):
     #: default is ((SOLID, VERY_THIN), ).
     intervalLineAttributes: Optional[SymbolicConstant] = None
 
+<<<<<<< HEAD
+=======
+    #: A Boolean specifying whether to hide the values outside the specified min/max in the
+    #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
+    #: spectrum when **legendHideOutsideLimits** = ON.The default value is OFF.
+    #:
+    #: ..versionadded:: 2019
+    #:     The ``legendHideOutsideLimits`` attribute was added.
+    legendHideOutsideLimits: Boolean = OFF
+
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def setValues(
         self,
@@ -313,7 +329,7 @@ class ContourOptions(DGContourOptions):
             default value is OFF.
 
             .. versionadded:: 2018
-                The `reversedContourLegendRange` argument was added.
+                The ``reversedContourLegendRange`` argument was added.
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the
@@ -372,6 +388,15 @@ class ContourOptions(DGContourOptions):
         showMinLocation
             A Boolean specifying whether to display location of minimum value. The default value is
             OFF.
+<<<<<<< HEAD
+=======
+        legendHideOutsideLimits
+            A Boolean specifying whether to hide the values outside the specified minimum/maximum
+            for the contour interval when **legendHideOutsideLimits** = ON. The default value is OFF.
+
+            .. versionadded:: 2019
+                The ``legendHideOutsideLimits`` argument was added.
+>>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Raises
         ------

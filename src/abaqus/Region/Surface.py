@@ -267,9 +267,12 @@ class Surface(Region):
         name
             A String specifying the repository key.
         elementSetSeq
-            A sequence of element sets. For example,`elementSetSeq=((elset1, S1),(elset2, S2))`where
-            `elset1=mdb.models[name].rootAssembly.sets['Clutch']` and `S1` and `S2` indicate the
-            side of the element set.
+            A sequence of element sets. For example::
+
+            elementSetSeq=((elset1, S1),(elset2, S2))
+
+            where ``elset1=mdb.models[name].rootAssembly.sets['Clutch']``
+            and ``S1`` and ``S2`` indicate the side of the element set.
 
         Returns
         -------
