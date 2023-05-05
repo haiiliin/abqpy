@@ -32,7 +32,7 @@ class GapConductance:
         - GAP CONDUCTANCE
 
     .. versionadded:: 2021
-        The `GapConductance` class was added.
+        The ``GapConductance`` class was added.
     """
 
     @abaqus_method_doc

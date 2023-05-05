@@ -155,13 +155,13 @@ class ContactStd(Interaction):
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
+                The ``surfaceBeamSmoothingAssignments`` argument was added.
         surfaceVertexCriteriaAssignments
             A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
+                The ``surfaceVertexCriteriaAssignments`` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -172,7 +172,7 @@ class ContactStd(Interaction):
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
 
             .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
+                The ``slidingFormulationAssignments`` argument was added.
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
@@ -240,13 +240,13 @@ class ContactStd(Interaction):
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
+                The ``surfaceBeamSmoothingAssignments`` argument was added.
         surfaceVertexCriteriaAssignments
             A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
+                The ``surfaceVertexCriteriaAssignments`` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -257,7 +257,7 @@ class ContactStd(Interaction):
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
 
             .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
+                The ``slidingFormulationAssignments`` argument was added.
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.

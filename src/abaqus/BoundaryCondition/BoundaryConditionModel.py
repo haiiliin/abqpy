@@ -1545,7 +1545,7 @@ class BoundaryConditionModel(ModelBase):
             default value is OFF.
 
             .. versionadded:: 2021
-                The `intersectionOnly` argument was added.
+                The ``intersectionOnly`` argument was added.
 
         Returns
         -------
