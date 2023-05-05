@@ -63,14 +63,7 @@ class ContactStd(Interaction):
 
     #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
-<<<<<<< HEAD
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: An InitializationAssignment object specifying the contact initialization assignments in
     #: the contact domain.
@@ -179,20 +172,10 @@ class ContactStd(Interaction):
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
 
             .. versionadded:: 2021
-<<<<<<< HEAD
-                The `slidingFormulationAssignments` argument was added.
+                The ``slidingFormulationAssignments`` argument was added.
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
-=======
-                The ``slidingFormulationAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
             the contact domain.
@@ -327,12 +310,6 @@ class ContactStd(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN, SECONDARY, and BALANCED.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initializationAssignments
             A sequence of tuples specifying the contact initialization data assigned to each surface
             pair. Each tuple contains three entries:

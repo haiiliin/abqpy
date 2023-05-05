@@ -49,14 +49,7 @@ class ShapeDemoldControl(GeometricRestriction):
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
     masterPointDetermination: SymbolicConstant = MAXIMUM
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -125,12 +118,6 @@ class ShapeDemoldControl(GeometricRestriction):
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -184,12 +171,6 @@ class ShapeDemoldControl(GeometricRestriction):
         masterPointDetermination
             A SymbolicConstant specifying the rule for assigning point priority. Possible values are
             MAXIMUM and MINIMUM. The default value is MAXIMUM.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.

@@ -68,14 +68,7 @@ class ContactExp(Interaction):
 
     #: A MasterSlaveAssignment object specifying the master-slave assignments in the
     #: contact domain.
-<<<<<<< HEAD
     masterSlaveAssignments: MasterSlaveAssignment = MasterSlaveAssignment()
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
-    mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A PolarityAssignments object specifying the polarity assignments in the contact domain.
     #:
@@ -153,20 +146,10 @@ class ContactExp(Interaction):
             contact domain.
 
             .. versionadded:: 2021
-<<<<<<< HEAD
                 The `surfaceFrictionAssignments` argument was added.
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
-=======
-                The ``surfaceFrictionAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A PolarityAssignments object specifying the polarity assignments in the contact domain.
 
@@ -288,12 +271,6 @@ class ContactExp(Interaction):
               definition.
             - A SymbolicConstant specifying the status of the first surface. Possible values are
               MAIN and SECONDARY.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         polarityAssignments
             A sequence of tuples specifying polarity assignments in the contact domain. Each tuple
             contains three entries:

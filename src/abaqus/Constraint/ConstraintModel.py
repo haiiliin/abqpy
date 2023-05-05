@@ -141,15 +141,6 @@ class ConstraintModel(ModelBase):
             distributing weight factors. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC.
             The default value is UNIFORM.The **weightingMethod** argument applies only when
             **couplingType** = DISTRIBUTING.
-<<<<<<< HEAD
-=======
-        alpha
-            A Float specifying the value of the thermal expansion coefficient. The default value is 0.0.
-            The alpha argument applies only when couplingType=KINEMATIC.
-
-            .. versionadded:: 2022
-                The ``alpha`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------
@@ -494,23 +485,10 @@ class ConstraintModel(ModelBase):
         ----------
         name
             A String specifying the constraint repository key.
-<<<<<<< HEAD
         master
             A Region object specifying the name of the master surface.
         slave
             A Region object specifying the name of the slave surface.
-=======
-
-            .. versionchanged:: 2022
-                The ``master`` argument was renamed to ``main``.
-        main
-            A Region object specifying the name of the main surface.
-
-            .. versionchanged:: 2022
-                The ``slave`` argument was renamed to ``secondary``.
-        secondary
-            A Region object specifying the name of the secondary surface.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         adjust
             A Boolean specifying whether initial positions of tied slave nodes are adjusted to
             lie on the master surface. The default value is ON.

@@ -53,25 +53,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-<<<<<<< HEAD
     masterPoint: Optional[str] = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute ``masterPoint`` was renamed to ``mainPoint``.
-    mainPoint: Optional[str] = None
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A SymbolicConstant specifying the rule for determining the master node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-<<<<<<< HEAD
     masterPointDetermination: SymbolicConstant = MAXIMUM
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
-    mainPointDetermination: SymbolicConstant = MAXIMUM
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -145,21 +131,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
-            are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
@@ -214,21 +188,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         masterPoint
             None or a Region object specifying the master point used when **masterPointDetermination** is
             SPECIFY. The default value is None.
-<<<<<<< HEAD
         masterPointDetermination
             A SymbolicConstant specifying the rule for determining the master node. Possible values
             are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoint`` was renamed to ``mainPoint``.
-        mainPointDetermination
-            A SymbolicConstant specifying the rule for determining the main node. Possible values
-            are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
-
-            .. versionchanged:: 2022
-                The argument ``masterPointDetermination`` was renamed to ``mainPointDetermination``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         presumeFeasibleRegionAtStart
             A Boolean specifying whether to ignore the geometric restriction in the first design
             cycle. The default value is ON.
