@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:1
-#: abaqus.Canvas.Viewport.Viewport:1 abaqus.Canvas.ViewportBase.ViewportBase:13
+#: abaqus.Canvas.Viewport.Viewport:1 abaqus.Canvas.ViewportBase.ViewportBase:12
 #: of
 msgid ""
 "This method creates a Viewport object with the specified origin and "
@@ -55,7 +55,7 @@ msgstr ""
 #: abaqus.Canvas.Highlight.highlight:4 abaqus.Canvas.Highlight.unhighlight:4
 #: abaqus.Canvas.Layer.Layer:14 abaqus.Canvas.Viewport.Viewport:4
 #: abaqus.Canvas.Viewport.Viewport.Layer:4
-#: abaqus.Canvas.ViewportBase.ViewportBase:16 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:15 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -83,14 +83,14 @@ msgstr ""
 #: abaqus.Canvas.Layer.Layer:19 abaqus.Canvas.Viewport.Viewport:9
 #: abaqus.Canvas.Viewport.Viewport.Layer:12
 #: abaqus.Canvas.ViewportBase.Layer.name:1
-#: abaqus.Canvas.ViewportBase.ViewportBase:21
+#: abaqus.Canvas.ViewportBase.ViewportBase:20
 #: abaqus.Canvas.ViewportBase.ViewportBase.name:1 of
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:14
 #: abaqus.Canvas.Viewport.Viewport:11
-#: abaqus.Canvas.ViewportBase.ViewportBase:23
+#: abaqus.Canvas.ViewportBase.ViewportBase:22
 #: abaqus.Canvas.ViewportBase.ViewportBase.origin:1 of
 msgid ""
 "A pair of Floats specifying the **X**  and **Y** coordinates in "
@@ -100,7 +100,7 @@ msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:18
 #: abaqus.Canvas.Viewport.Viewport:15
-#: abaqus.Canvas.ViewportBase.ViewportBase:27 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:26 of
 msgid ""
 "A Float specifying the width in millimeters of the viewport. Possible "
 "values are 30 ≤ **width** ≤ (*maxWidth*). The default value is 120.0. "
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:22
 #: abaqus.Canvas.Viewport.Viewport:19
-#: abaqus.Canvas.ViewportBase.ViewportBase:31
+#: abaqus.Canvas.ViewportBase.ViewportBase:30
 #: abaqus.Canvas.ViewportBase.ViewportBase.height:1 of
 msgid ""
 "A Float specifying the height in millimeters of the viewport. This height"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:27
 #: abaqus.Canvas.Viewport.Viewport:24
-#: abaqus.Canvas.ViewportBase.ViewportBase:36
+#: abaqus.Canvas.ViewportBase.ViewportBase:35
 #: abaqus.Canvas.ViewportBase.ViewportBase.border:1 of
 msgid ""
 "A Boolean specifying whether the viewport border is visible in a printed "
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:30
 #: abaqus.Canvas.Viewport.Viewport:27
-#: abaqus.Canvas.ViewportBase.ViewportBase:39
+#: abaqus.Canvas.ViewportBase.ViewportBase:38
 #: abaqus.Canvas.ViewportBase.ViewportBase.titleBar:1 of
 msgid ""
 "A Boolean specifying whether the viewport title should be displayed in a "
@@ -140,7 +140,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:34
 #: abaqus.Canvas.Viewport.Viewport:31
-#: abaqus.Canvas.ViewportBase.ViewportBase:43
+#: abaqus.Canvas.ViewportBase.ViewportBase:42
 #: abaqus.Canvas.ViewportBase.ViewportBase.titleStyle:1 of
 msgid ""
 "A SymbolicConstant specifying which title to use for the viewport title. "
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:39
 #: abaqus.Canvas.Viewport.Viewport:36
-#: abaqus.Canvas.ViewportBase.ViewportBase:48
+#: abaqus.Canvas.ViewportBase.ViewportBase:47
 #: abaqus.Canvas.ViewportBase.ViewportBase.customTitleString:1 of
 msgid ""
 "A String specifying the viewport title when **titleStyle** =CUSTOM. The "
@@ -169,7 +169,7 @@ msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:42
 #: abaqus.Canvas.Viewport.Viewport:39
-#: abaqus.Canvas.ViewportBase.ViewportBase:51 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:50 of
 msgid "A Viewport object."
 msgstr ""
 
@@ -184,7 +184,7 @@ msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:43
 #: abaqus.Canvas.Viewport.Viewport:40
-#: abaqus.Canvas.ViewportBase.ViewportBase:52 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:51 of
 msgid ":class:`Viewport`"
 msgstr ""
 
@@ -200,7 +200,7 @@ msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:45
 #: abaqus.Canvas.Viewport.Viewport:42
-#: abaqus.Canvas.ViewportBase.ViewportBase:54 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:53 of
 msgid ""
 "the current viewport may not be deleted, If the user attempts to delete "
 "the only viewport."
@@ -208,13 +208,13 @@ msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:46
 #: abaqus.Canvas.Viewport.Viewport:43
-#: abaqus.Canvas.ViewportBase.ViewportBase:55 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:54 of
 msgid "If **width** is out of range."
 msgstr ""
 
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:47
 #: abaqus.Canvas.Viewport.Viewport:44
-#: abaqus.Canvas.ViewportBase.ViewportBase:56 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:55 of
 msgid "If **height** is out of range."
 msgstr ""
 
@@ -692,7 +692,7 @@ msgstr ""
 #: abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors:1 of
 msgid ""
 "This method disables applying multiple color mappings that was enabled "
-"using enableMultipleColors"
+"using enableMultipleColors."
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -702,6 +702,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh:1 of
 msgid "This method disables Viewport refresh."
 msgstr ""
 
@@ -713,6 +714,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates:1 of
 msgid ""
 "This method disables Viewport updates and internal computations triggered"
 " because of color coding."
@@ -725,6 +727,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors:1 of
 msgid ""
 "This method enables multiple color mappings to be applied at the same "
 "time."
@@ -878,6 +881,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh:1 of
 msgid "This method causes the Viewport to refresh immediately."
 msgstr ""
 
@@ -1000,15 +1004,15 @@ msgid ""
 "in the session.viewports[name].colorMappings repository."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:8
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:7
 #: abaqus.Canvas.DrawingArea.DrawingArea:5
-#: abaqus.Canvas.ImageOptions.ImageOptions:9 abaqus.Canvas.Layer.Layer:4
-#: abaqus.Canvas.MovieOptions.MovieOptions:9
-#: abaqus.Canvas.ViewportBase.ViewportBase:6 of
+#: abaqus.Canvas.ImageOptions.ImageOptions:7 abaqus.Canvas.Layer.Layer:4
+#: abaqus.Canvas.MovieOptions.MovieOptions:8
+#: abaqus.Canvas.ViewportBase.ViewportBase:5 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:13 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:12 of
 msgid ""
 "Check `AttributeColorMap on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?contextscope=all>`__."
@@ -1278,7 +1282,7 @@ msgid ""
 " the values in the **imageOptions** member of the current viewport."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions:14 of
+#: abaqus.Canvas.ImageOptions.ImageOptions:12 of
 msgid ""
 "Check `ImageOptions on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageoptionspyc.htm?contextscope=all>`__."
@@ -1626,7 +1630,7 @@ msgid ""
 "viewport."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions:14 of
+#: abaqus.Canvas.MovieOptions.MovieOptions:13 of
 msgid ""
 "Check `MovieOptions on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-movieoptionspyc.htm?contextscope=all>`__."
@@ -1702,7 +1706,7 @@ msgid ""
 "determine how objects are displayed within that viewport."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase:11 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:10 of
 msgid ""
 "Check `ViewportBase on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
@@ -1958,20 +1962,17 @@ msgid ""
 "affected by view manipulations when*viewManipLayers* =CURRENT."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates:1 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates:3 of
 msgid ""
-"This method disables Viewport updates and internal computations triggered"
-" because of color coding. Performance improvement will be significant "
-"when color coding is ON and repeating operations are performed using a "
-"script each of which requires color code updates. No benefit will be had "
-"when color coding is OFF."
+"Performance improvement will be significant when color coding is ON and "
+"repeating operations are performed using a script each of which requires "
+"color code updates. No benefit will be had when color coding is OFF."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh:1 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh:3 of
 msgid ""
-"This method disables Viewport refresh. Some methods that require the "
-"Viewport to be up-to-date will override this setting. It is advisable to "
-"use this method sparingly."
+"Some methods that require the Viewport to be up-to-date will override "
+"this setting. It is advisable to use this method sparingly."
 msgstr ""
 
 #: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayMode:1 of
@@ -1997,19 +1998,17 @@ msgid ""
 "The default value is an empty sequence."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors:1 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors:3 of
 msgid ""
-"This method enables multiple color mappings to be applied at the same "
-"time. It also ensures that the Viewport is updated correctly when "
+"It also ensures that the Viewport is updated correctly when "
 "**initialColor** is set."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh:1 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh:3 of
 msgid ""
-"This method causes the Viewport to refresh immediately. It is provided to"
-" allow scripts to refresh the Viewport before the script terminates. "
-"Normally, there would only be a single cumulative refresh that takes "
-"place immediately after the script completes."
+"It is provided to allow scripts to refresh the Viewport before the script"
+" terminates. Normally, there would only be a single cumulative refresh "
+"that takes place immediately after the script completes."
 msgstr ""
 
 #: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:1 of
@@ -2020,33 +2019,33 @@ msgid ""
 "Odb. The getActiveElementLabels method has the following arguments:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:7 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:6 of
 msgid ""
 "Check `ViewportBase.getActiveElementLabels on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportgetactiveelementlabelspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:10 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:9 of
 msgid ""
 "A Boolean flag to specify if any active cutting plane is to be considered"
 " in determining active elements."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:13 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:12 of
 msgid ""
 "A Boolean flag to specify if the active element labels are to be printed "
 "to the replay file."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:16 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:15 of
 msgid ""
 "A Dictionary object of element labels, keyed by OdbInstance name. Returns"
 " None if the **displayedObject** member is not an Odb object."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:18
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:18
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:17
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:17
 #: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:7 of
 msgid ":class:`dict`"
 msgstr ""
@@ -2059,26 +2058,26 @@ msgid ""
 "The getActiveNodeLabels method has the following arguments:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:7 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:6 of
 msgid ""
 "Check `ViewportBase.getActiveNodeLabels on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportgetactivenodelabelspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:10 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:9 of
 msgid ""
 "A Boolean flag to specify if any active cutting plane is to be considered"
 " in determining active nodes."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:13 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:12 of
 msgid ""
 "A Boolean flag to specify if the active node labels are to be printed to "
 "the replay file."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:16 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:15 of
 msgid ""
 "A Dictionary object of node labels, keyed by OdbInstance name. Returns "
 "None if the **displayedObject** member is not an Odb object."
@@ -2123,33 +2122,33 @@ msgid ""
 "apparent order in which the layers are plotted."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:5 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:4 of
 msgid ""
 "Check `ViewportBase.offset on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportoffsetpyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:8 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:7 of
 msgid ""
 "A Float specifying the offset in millimeters of the **X** component of "
 "the viewport origin. The default value is 0."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:11 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:10 of
 msgid ""
 "A Float specifying the offset in millimeters of the **Y** component of "
 "the viewport origin. The default value is 0."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:5 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:4 of
 msgid ""
 "Check `ViewportBase.removeDrawings on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportremovedrawingspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:8 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:7 of
 msgid "A sequence of String values identifying keys in the Viewport sequence."
 msgstr ""
 
@@ -5505,5 +5504,11 @@ msgstr ""
 #~ "help.3ds.com/2018 "
 #~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all"
 #~ "#simaker-annotationstoplotarraysendtobackpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method disables applying multiple "
+#~ "color mappings that was enabled using"
+#~ " enableMultipleColors"
 #~ msgstr ""
 

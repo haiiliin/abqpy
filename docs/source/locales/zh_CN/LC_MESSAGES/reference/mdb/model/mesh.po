@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 14:36+0000\n"
+"POT-Creation-Date: 2023-05-05 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,28 +45,28 @@ msgid ""
 "setElementType command."
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:5 abaqus.Mesh.MeshAssembly.MeshAssembly:6
-#: abaqus.Mesh.MeshEdge.MeshEdge:6 abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:4
-#: abaqus.Mesh.MeshElement.MeshElement:7
+#: abaqus.Mesh.ElemType.ElemType:4 abaqus.Mesh.MeshAssembly.MeshAssembly:5
+#: abaqus.Mesh.MeshEdge.MeshEdge:5 abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:4
+#: abaqus.Mesh.MeshElement.MeshElement:6
 #: abaqus.Mesh.MeshElementArray.MeshElementArray:4
-#: abaqus.Mesh.MeshFace.MeshFace:6 abaqus.Mesh.MeshFaceArray.MeshFaceArray:4
+#: abaqus.Mesh.MeshFace.MeshFace:5 abaqus.Mesh.MeshFaceArray.MeshFaceArray:4
 #: abaqus.Mesh.MeshNode.MeshNode:6 abaqus.Mesh.MeshNodeArray.MeshNodeArray:4
 #: abaqus.Mesh.MeshPart.MeshPart:5 abaqus.Mesh.MeshStats.MeshStats:5
-#: abaqus.Mesh.MesherOptions.MesherOptions:8 of
+#: abaqus.Mesh.MesherOptions.MesherOptions:7 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:10 of
+#: abaqus.Mesh.ElemType.ElemType:9 of
 msgid ""
 "Check `ElemType on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elemtypepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:12 of
+#: abaqus.Mesh.ElemType.ElemType:11 of
 msgid "This method creates an ElemType object."
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:15 abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:18
+#: abaqus.Mesh.ElemType.ElemType:14 abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:18
 #: abaqus.Mesh.MeshElement.MeshElement.Element:4
 #: abaqus.Mesh.MeshElementArray.MeshElementArray:38
 #: abaqus.Mesh.MeshFaceArray.MeshFaceArray:18 abaqus.Mesh.MeshNode.MeshNode:41
@@ -172,7 +172,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:20 of
+#: abaqus.Mesh.ElemType.ElemType:19 of
 msgid ""
 "A SymbolicConstant specifying the Abaqus element code or just the element"
 " shape. Possible values are:  - C3D8R, specifying a 8-node linear brick, "
@@ -186,68 +186,68 @@ msgid ""
 "tetrahedral shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:20
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:19
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:1 of
 msgid ""
 "A SymbolicConstant specifying the Abaqus element code or just the element"
 " shape. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:23
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:22
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:4 of
 msgid ""
 "C3D8R, specifying a 8-node linear brick, reduced integration with "
 "hourglass control."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:24
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:23
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:5 of
 msgid "CODE, specifying add more codes."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:25
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:24
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:6 of
 msgid ""
 "UNKNOWN_TRI, specifying an unknown element type associated with a "
 "triangular shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:26
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:25
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:7 of
 msgid ""
 "UNKNOWN_QUAD, specifying an unknown element type associated with a "
 "quadrilateral shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:28
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:27
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:9 of
 msgid ""
 "UNKNOWN_HEX, specifying an unknown element type associated with a "
 "hexahedral shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:29
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:28
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:10 of
 msgid ""
 "UNKNOWN_WEDGE, specifying an unknown element type associated with a wedge"
 " shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:30
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:29
 #: abaqus.Mesh.MeshPart.ElemType.elemCode:11 of
 msgid ""
 "UNKNOWN_TET, specifying an unknown element type associated with a "
 "tetrahedral shape."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:32
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:31
 #: abaqus.Mesh.MeshPart.ElemType.elemLibrary:1 of
 msgid ""
 "A SymbolicConstant specifying the Abaqus element library to use. Possible"
 " values are STANDARD and EXPLICIT. The default value is STANDARD."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:35
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:34
 #: abaqus.Mesh.MeshPart.ElemType.hourglassStiffness:1 of
 msgid ""
 "A Float specifying the hourglass stiffness. (For shell elements this is "
@@ -257,7 +257,7 @@ msgid ""
 "Abaqus/Standard elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:40
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:39
 #: abaqus.Mesh.MeshPart.ElemType.bendingHourglass:1 of
 msgid ""
 "A Float specifying the bending hourglass stiffness. A value of zero "
@@ -266,7 +266,7 @@ msgid ""
 "applicable only to some Abaqus/Standard elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:44
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:43
 #: abaqus.Mesh.MeshPart.ElemType.drillingHourglass:1 of
 msgid ""
 "A Float specifying the drilling hourglass scaling factor. A value of zero"
@@ -275,7 +275,7 @@ msgid ""
 "applicable only to some Abaqus/Standard elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:48
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:47
 #: abaqus.Mesh.MeshPart.ElemType.kinematicSplit:1 of
 msgid ""
 "A SymbolicConstant specifying the kinematic split control. Possible "
@@ -284,7 +284,7 @@ msgid ""
 "elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:52
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:51
 #: abaqus.Mesh.MeshPart.ElemType.distortionControl:1 of
 msgid ""
 "A Boolean specifying whether to prevent negative element volumes or other"
@@ -292,7 +292,7 @@ msgid ""
 "OFF.This argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:56
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:55
 #: abaqus.Mesh.MeshPart.ElemType.lengthRatio:1 of
 msgid ""
 "A Float specifying the length ratio for distortion control in crushable "
@@ -301,14 +301,14 @@ msgid ""
 "**distortionControl** is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:60
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:59
 #: abaqus.Mesh.MeshPart.ElemType.secondOrderAccuracy:1 of
 msgid ""
 "A Boolean specifying the second-order accuracy option. The default value "
 "is OFF.This argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:63
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:62
 #: abaqus.Mesh.MeshPart.ElemType.hourglassControl:1 of
 msgid ""
 "A SymbolicConstant specifying the hourglass control. Possible values are "
@@ -317,7 +317,7 @@ msgid ""
 "Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:67
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:66
 #: abaqus.Mesh.MeshPart.ElemType.weightFactor:1 of
 msgid ""
 "A Float specifying a weight factor when **hourglassControl** = COMBINED. "
@@ -325,7 +325,7 @@ msgid ""
 "Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:70
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:69
 #: abaqus.Mesh.MeshPart.ElemType.displacementHourglass:1 of
 msgid ""
 "A Float specifying the displacement hourglass scaling factor. The default"
@@ -333,7 +333,7 @@ msgid ""
 "argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:74
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:73
 #: abaqus.Mesh.MeshPart.ElemType.rotationalHourglass:1 of
 msgid ""
 "A Float specifying the rotational hourglass scaling factor. The default "
@@ -341,7 +341,7 @@ msgid ""
 "argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:78
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:77
 #: abaqus.Mesh.MeshPart.ElemType.outOfPlaneDisplacementHourglass:1 of
 msgid ""
 "A Float specifying the out-of-plane displacement hourglass scaling "
@@ -350,14 +350,14 @@ msgid ""
 "elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:82
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:81
 #: abaqus.Mesh.MeshPart.ElemType.elemDeletion:1 of
 msgid ""
 "A SymbolicConstant specifying the element deletion option. Possible "
 "values are DEFAULT, ON, and OFF. The default value is DEFAULT."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:85
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:84
 #: abaqus.Mesh.MeshPart.ElemType.particleConversion:1 of
 msgid ""
 "A SymbolicConstant specifying the particle conversion option for smoothed"
@@ -368,7 +368,7 @@ msgid ""
 "elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:91
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:90
 #: abaqus.Mesh.MeshPart.ElemType.particleConversionThreshold:1 of
 msgid ""
 "A Float specifying the threshold value for the particle conversion "
@@ -376,7 +376,7 @@ msgid ""
 "0.0.This argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:95
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:94
 #: abaqus.Mesh.MeshPart.ElemType.particleConversionPPD:1 of
 msgid ""
 "An Int specifying the number of particles per direction for element "
@@ -384,7 +384,7 @@ msgid ""
 " 1.This argument is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:99
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:98
 #: abaqus.Mesh.MeshPart.ElemType.particleConversionKernel:1 of
 msgid ""
 "A SymbolicConstant specifying the interpolation function for particle "
@@ -393,28 +393,28 @@ msgid ""
 "is applicable only to some Abaqus/Explicit elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:104
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:103
 #: abaqus.Mesh.MeshPart.ElemType.maxDegradation:1 of
 msgid ""
 "A Float specifying the maximum degradation option for damage control. The"
 " default value is −1.0."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:107
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:106
 #: abaqus.Mesh.MeshPart.ElemType.viscosity:1 of
 msgid ""
 "A Float specifying the viscosity option. The default value is 0.0.This "
 "argument is applicable only to some Abaqus/Standard elements."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:110
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:109
 #: abaqus.Mesh.MeshPart.ElemType.linearBulkViscosity:1 of
 msgid ""
 "A Float specifying the linear bulk viscosity scaling factor option for "
 "Abaqus/Explicit. The default value is 1.0."
 msgstr ""
 
-#: ../../docstring abaqus.Mesh.ElemType.ElemType:113
+#: ../../docstring abaqus.Mesh.ElemType.ElemType:112
 #: abaqus.Mesh.MeshPart.ElemType.quadraticBulkViscosity:1 of
 msgid ""
 "A Float specifying the quadratic bulk viscosity scaling factor option for"
@@ -502,7 +502,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:116 of
+#: abaqus.Mesh.ElemType.ElemType:115 of
 msgid "**elemType** -- An ElemType object"
 msgstr ""
 
@@ -586,7 +586,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: abaqus.Mesh.ElemType.ElemType:117 of
+#: abaqus.Mesh.ElemType.ElemType:116 of
 msgid ":class:`ElemType`"
 msgstr ""
 
@@ -624,7 +624,7 @@ msgid ""
 "member when a Model object is created."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly:12 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly:11 of
 msgid ""
 "Check `MeshAssembly on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all>`__."
@@ -860,20 +860,20 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology:74
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:12
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:11
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:11
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:10
 #: abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:75
-#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:12
-#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:11 of
+#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:11
+#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:10 of
 msgid "**feature** -- A Feature object"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.createVirtualTopology:75
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:13
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:12
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:12
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:11
 #: abaqus.Mesh.MeshPart.MeshPart.createVirtualTopology:76
-#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:13
-#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:12 of
+#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:12
+#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:11 of
 msgid ":class:`Feature`"
 msgstr ""
 
@@ -884,17 +884,17 @@ msgid ""
 "all the specified regions."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls:4 of
 msgid ""
 "Check `MeshAssembly.deleteBoundaryLayerControls on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblydeleteboundarylayercontrolspyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls:8
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:8
-#: abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls:8
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:8 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteBoundaryLayerControls:7
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:7
+#: abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls:7
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:7 of
 msgid ""
 "A sequence of Cell objects specifying the regions for which to set the "
 "boundary layer mesh control parameters."
@@ -953,10 +953,14 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh:1 of
+msgid "This method deletes all boundary meshes in the assembly."
+msgstr ""
+
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.deletePreviewMesh:3
+#: abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh:3 of
 msgid ""
-"This method deletes all boundary meshes in the assembly. See the "
-"**boundaryPreview** argument of generateMesh for information about "
-"generating boundary meshes."
+"See the **boundaryPreview** argument of generateMesh for information "
+"about generating boundary meshes."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.deleteSeeds:1 of
@@ -1534,7 +1538,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType:8
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:7
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:8
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:7
 #: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:7 of
 msgid "A Cell, a Face, or an Edge object specifying the region to be queried."
 msgstr ""
@@ -1546,12 +1550,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType:13
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:20 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:19 of
 msgid "An ElemType object."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getElementType:14
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:21 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:20 of
 msgid ":class:`ElementType`"
 msgstr ""
 
@@ -1582,26 +1586,26 @@ msgid ""
 "incompatible elements."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:4 of
 msgid ""
 "Check `MeshAssembly.getIncompatibleMeshInterfaces on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblygetincompatiblemeshinterfacespyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:8 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:7 of
 msgid ""
 "A sequence of Cell objects which will be used to search the incompatible "
 "faces."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:10
-#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:10 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:9
+#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:9 of
 msgid "A sequence of Face objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:11
-#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:11 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:10
+#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:10 of
 msgid ":class:`Sequence[Face]`"
 msgstr ""
 
@@ -1883,15 +1887,15 @@ msgid ""
 "vertex to ignore."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:7 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:6 of
 msgid ""
 "Check `MeshAssembly.ignoreEntity on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblyignoreentitypyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:10
-#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:10 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.ignoreEntity:9
+#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:9 of
 msgid ""
 "A sequence of vertices and edges specifying the entities to be ignored "
 "during meshing."
@@ -1904,15 +1908,15 @@ msgid ""
 "virtual topology feature."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:4 of
 msgid ""
 "Check `MeshAssembly.restoreIgnoredEntity on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblyrestoreignoredentitypyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:8
-#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:8 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.restoreIgnoredEntity:7
+#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:7 of
 msgid ""
 "A sequence of IgnoredVertex objects and IgnoredEdge objects specifying "
 "the entities to be restored."
@@ -2004,9 +2008,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:35
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:10
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:9
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:35
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:10 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:9 of
 msgid ""
 "An Int specifying the number of elements along each edge. Possible values"
 " are 1 ≤ **number** ≤ 10⁴."
@@ -2027,7 +2031,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:43
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:43
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:13
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:12
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18 of
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
@@ -2041,7 +2045,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:43
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:43
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:13
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:12
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18
 #: abaqus.Mesh.MeshPart.MeshPart.seedPart:15 of
 msgid ""
@@ -2052,7 +2056,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:47
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:47
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:17
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:16
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:22
 #: abaqus.Mesh.MeshPart.MeshPart.seedPart:19 of
 msgid "FREE: The resulting mesh can be finer or coarser than the specified seeds."
@@ -2060,7 +2064,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:48
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:48
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:18
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:17
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:23
 #: abaqus.Mesh.MeshPart.MeshPart.seedPart:20 of
 msgid "FINER: The resulting mesh can be finer than the specified seeds."
@@ -2068,7 +2072,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:49
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:49
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:19
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:18
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:24 of
 msgid ""
 "FIXED: The seeds must be exactly matched by the mesh (only with respect "
@@ -2082,21 +2086,21 @@ msgid ""
 "elements along the edges."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:4 of
 msgid ""
 "Check `MeshAssembly.seedEdgeByNumber on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblyseededgebynumberpyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:8
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:7
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize:8
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:8
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:7
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:8 of
 msgid "A sequence of Edge objects specifying the edges to seed."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:13
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByNumber:12
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeBySize:18 of
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
@@ -2181,44 +2185,44 @@ msgid ""
 "specified regions."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:4 of
 msgid ""
 "Check `MeshAssembly.setBoundaryLayerControls on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblysetboundarylayercontrolspyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:11
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:10
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:10 of
 msgid ""
 "A Float specifying the height of the first element layer off boundary. "
 "Possible values are 0.0 < **firstElemSize** ≤ 10⁶."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:14
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:14 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:13
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:13 of
 msgid ""
 "A Float specifying the ratio of heights of any two consecutive element "
 "layers. Possible values are 1.0 ≤ **growthFactor** ≤ 10.0."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:17
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:17 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:16
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:16 of
 msgid ""
 "An Int specifying the number of element layers to be generated. Possible "
 "values are 1 ≤ **numLayers** ≤ 10⁴."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:20
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:20 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:19
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:19 of
 msgid ""
 "A sequence of Face objects specifying the faces where boundary layer "
 "should not be generated. By default, boundary layer mesh will be "
 "generated on all faces of the selected regions."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:24
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:24 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:23
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:23 of
 msgid ""
 "A String specifying a unique name for a set that will contain boundary "
 "layer elements."
@@ -2557,25 +2561,25 @@ msgid ""
 "path for a revolvable region."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:5 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:4 of
 msgid ""
 "Check `MeshAssembly.setSweepPath on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblymgnpyc.htm?contextscope=all"
 "#simaker-assemblysetsweeppathpyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:8
-#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:8 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:7
+#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:7 of
 msgid "A sweepable region."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:10
-#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:10 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:9
+#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:9 of
 msgid "An Edge object specifying the sweep or revolve path."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:12
-#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:12 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.setSweepPath:11
+#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:11 of
 msgid ""
 "A SymbolicConstant specifying the sweep sense. The sense will affect only"
 " how gasket elements will be created; it will have no effect if gasket "
@@ -2786,7 +2790,7 @@ msgid ""
 "repository on a part or part instance."
 msgstr ""
 
-#: abaqus.Mesh.MeshEdge.MeshEdge:18 of
+#: abaqus.Mesh.MeshEdge.MeshEdge:17 of
 msgid ""
 "Check `MeshEdge on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshedgepyc.htm?contextscope=all>`__."
@@ -2843,23 +2847,23 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology:11
-#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:11
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:20
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:15
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:12 of
+#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:10
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:19
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:14
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:11 of
 msgid "A MeshElementArray object, which is a sequence of MeshElement objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology:12
 #: abaqus.Mesh.MeshElement.MeshElement.getAdjacentElements:4
-#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:12
+#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:11
 #: abaqus.Mesh.MeshElementArray.MeshElementArray:46
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:21
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:16
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:13
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:20
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:15
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:12
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask:12
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:11
-#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:12
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:10
+#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:11
 #: abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology:5 of
 msgid ":class:`MeshElementArray`"
 msgstr ""
@@ -2893,20 +2897,20 @@ msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology:11
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:19
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:15
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:12 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:14
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:11 of
 msgid "A MeshNodeArray object, which is a sequence of MeshNode objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology:12
-#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:12
-#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:12
+#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:11
+#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:11
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray:47
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:20
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:16
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:13
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:15
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:12
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask:12
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:11 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:10 of
 msgid ":class:`MeshNodeArray`"
 msgstr ""
 
@@ -2918,7 +2922,7 @@ msgid ""
 "repository. The index does not refer to the element label."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement:36 of
+#: abaqus.Mesh.MeshElement.MeshElement:35 of
 msgid ""
 "Check `MeshElement on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementpyc.htm?contextscope=all>`__."
@@ -3006,17 +3010,17 @@ msgid ""
 "angle of less than or equal to the specified angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:6 of
+#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:5 of
 msgid ""
 "Check `MeshElement.getElementsByFeatureEdge on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementpyc.htm?contextscope=all"
 "#simaker-meshelementgetelementsbyfeatureedgepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:9
-#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:9
+#: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:8
+#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:8
 #: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle:9
-#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:9 of
+#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:8 of
 msgid "A float specifying the value of the face angle in degrees."
 msgstr ""
 
@@ -3062,7 +3066,7 @@ msgid ""
 "repository on a part or part instance."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace:18 of
+#: abaqus.Mesh.MeshFace.MeshFace:17 of
 msgid ""
 "Check `MeshFace on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all>`__."
@@ -3093,14 +3097,14 @@ msgid ""
 "than or equal to the specified face angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:6 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:5 of
 msgid ""
 "Check `MeshFace.getElemEdgesByFaceAngle on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all"
 "#simaker-meshfacegetelemedgesbyfaceanglepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:11 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:10 of
 msgid ""
 "**edges** -- A MeshEdgeArray object, which is a sequence of MeshEdge "
 "objects."
@@ -3108,7 +3112,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:26
 #: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask:11
-#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:12 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:11 of
 msgid ":class:`MeshEdgeArray`"
 msgstr ""
 
@@ -3119,29 +3123,29 @@ msgid ""
 "than or equal to the specified angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:6 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:5 of
 msgid ""
 "Check `MeshFace.getElemFacesByFaceAngle on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all"
 "#simaker-meshfacegetelemfacesbyfaceanglepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:9
-#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:9
-#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:9 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:8
+#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:8
+#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:8 of
 msgid "A float specifying the value of the face angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:11
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:11
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:10
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:10
 #: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle:11 of
 msgid ""
 "**faces** -- A MeshFaceArray object, which is a sequence of MeshFace "
 "objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:12
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:12
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByFaceAngle:11
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:11
 #: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle:12
 #: abaqus.Mesh.MeshFaceArray.MeshFaceArray:26
 #: abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask:11 of
@@ -3155,14 +3159,14 @@ msgid ""
 "recursively finding adjacent element faces by layer."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:6 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:5 of
 msgid ""
 "Check `MeshFace.getElemFacesByLayer on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all"
 "#simaker-meshfacegetelemfacesbylayerpyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:9 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLayer:8 of
 msgid "A int specifying the value of the number of layers."
 msgstr ""
 
@@ -3196,14 +3200,14 @@ msgid ""
 "than or equal to the specified angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:6 of
+#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:5 of
 msgid ""
 "Check `MeshFace.getElementsByFaceAngle on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all"
 "#simaker-meshfacegetelementsbyfaceanglepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:11
+#: abaqus.Mesh.MeshFace.MeshFace.getElementsByFaceAngle:10
 #: abaqus.Mesh.MeshFace.MeshFace.getElementsViaTopology:4 of
 msgid ""
 "**elements** -- A MeshElementArray object, which is a sequence of "
@@ -3231,15 +3235,15 @@ msgid ""
 "than or equal to the specified angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:6 of
+#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:5 of
 msgid ""
 "Check `MeshFace.getNodesByFaceAngle on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacepyc.htm?contextscope=all"
 "#simaker-meshfacegetnodesbyfaceanglepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:11
-#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:11 of
+#: abaqus.Mesh.MeshFace.MeshFace.getNodesByFaceAngle:10
+#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:10 of
 msgid ""
 "**nodes** -- A MeshNodeArray object, which is a sequence of MeshNode "
 "objects"
@@ -3335,7 +3339,7 @@ msgid ""
 "angle of less than or equal to the specified face angle."
 msgstr ""
 
-#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:6 of
+#: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:5 of
 msgid ""
 "Check `MeshNode.getNodesByFeatureEdge on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodepyc.htm?contextscope=all"
@@ -3394,7 +3398,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray:45
 #: abaqus.Mesh.MeshElementArray.MeshElementArray.getSequenceFromMask:11
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:10 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:9 of
 msgid "A MeshElementArray object."
 msgstr ""
 
@@ -3441,39 +3445,39 @@ msgid ""
 "specified bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:5 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:4 of
 msgid ""
 "Check `MeshElementArray.getByBoundingBox on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementarraypyc.htm?contextscope=all"
 "#simaker-meshelementarraygetbyboundingboxpyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:8
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:7
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:7 of
 msgid "A float specifying the minimum X boundary of the bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:10
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:9
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:9 of
 msgid "A float specifying the minimum Y boundary of the bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:12
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:11
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:11 of
 msgid "A float specifying the minimum Z boundary of the bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:14
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:13
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:13 of
 msgid "A float specifying the maximum X boundary of the bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:16
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:15
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:15 of
 msgid "A float specifying the maximum Y boundary of the bounding box."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:18
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingBox:17
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingBox:17 of
 msgid "A float specifying the maximum Z boundary of the bounding box."
 msgstr ""
@@ -3484,29 +3488,29 @@ msgid ""
 "specified bounding cylinder."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:5 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:4 of
 msgid ""
 "Check `MeshElementArray.getByBoundingCylinder on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementarraypyc.htm?contextscope=all"
 "#simaker-meshelementarraygetbyboundingcylinderpyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:8
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:8 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:7
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:7 of
 msgid ""
 "A tuple of the X-, Y-, and Z-coordinates of the center of the first end "
 "of the cylinder."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:10
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:10 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:9
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:9 of
 msgid ""
 "A tuple of the X-, Y-, and Z-coordinates of the center of the second end "
 "of the cylinder."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:13
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:13 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingCylinder:12
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:12 of
 msgid "A float specifying the radius of the cylinder."
 msgstr ""
 
@@ -3516,20 +3520,20 @@ msgid ""
 "specified bounding sphere."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:5 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:4 of
 msgid ""
 "Check `MeshElementArray.getByBoundingSphere on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementarraypyc.htm?contextscope=all"
 "#simaker-meshelementarraygetbyboundingspherepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:8
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:8 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:7
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:7 of
 msgid "A tuple of the X-, Y-, and Z-coordinates of the center of the sphere."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:10
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:10 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.getByBoundingSphere:9
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:9 of
 msgid "A float specifying the radius of the sphere."
 msgstr ""
 
@@ -3639,22 +3643,22 @@ msgid ""
 "the specified labels."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:5 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:4 of
 msgid ""
 "Check `MeshElementArray.sequenceFromLabels on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshelementarraypyc.htm?contextscope=all"
 "#simaker-meshelementarraysequencefromlabelspyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:8
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:8 of
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:7
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:7 of
 msgid "A sequence of Ints specifying the labels."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray.getSequenceFromMask:13
-#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:13
+#: abaqus.Mesh.MeshElementArray.MeshElementArray.sequenceFromLabels:12
 #: abaqus.Mesh.MeshFaceArray.MeshFaceArray.getSequenceFromMask:13
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:13 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:12 of
 msgid ""
 "The mask results in an empty sequence, An exception occurs if the "
 "resulting sequence is empty."
@@ -3772,7 +3776,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray:46
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask:11
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:10 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:9 of
 msgid "A MeshNodeArray object."
 msgstr ""
 
@@ -3822,7 +3826,7 @@ msgid ""
 "specified bounding cylinder."
 msgstr ""
 
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:5 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingCylinder:4 of
 msgid ""
 "Check `MeshNodeArray.getByBoundingCylinder on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all"
@@ -3835,7 +3839,7 @@ msgid ""
 "specified bounding sphere."
 msgstr ""
 
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:5 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getByBoundingSphere:4 of
 msgid ""
 "Check `MeshNodeArray.getByBoundingSphere on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all"
@@ -3921,7 +3925,7 @@ msgid ""
 " specified labels."
 msgstr ""
 
-#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:5 of
+#: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:4 of
 msgid ""
 "Check `MeshNodeArray.sequenceFromLabels on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all"
@@ -4037,7 +4041,7 @@ msgid ""
 "similar geometric characteristics. The default value is False."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.deleteBoundaryLayerControls:4 of
 msgid ""
 "Check `MeshPart.deleteBoundaryLayerControls on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
@@ -4071,10 +4075,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.deletePreviewMesh:1 of
-msgid ""
-"This method deletes all boundary meshes in the parts. See the "
-"**boundaryPreview** argument of generateMesh for information about "
-"generating boundary meshes."
+msgid "This method deletes all boundary meshes in the parts."
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.deleteSeeds:1 of
@@ -4231,51 +4232,51 @@ msgid ""
 " to a region of a part."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:4 of
 msgid ""
 "Check `MeshPart.getElementType on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
 "#simaker-partgetelementtypepyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:10 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:9 of
 msgid ""
 "A SymbolicConstant specifying the shape of the element for which to "
 "return the element type. Possible values are:  - LINE - QUAD - TRI - HEX "
 "- WEDGE - TET"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:10 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:9 of
 msgid ""
 "A SymbolicConstant specifying the shape of the element for which to "
 "return the element type. Possible values are:"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:13 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:12 of
 msgid "LINE"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:14 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:13 of
 msgid "QUAD"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:15 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:14 of
 msgid "TRI"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:16 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:15 of
 msgid "HEX"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:17 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:16 of
 msgid "WEDGE"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:18 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:17 of
 msgid "TET"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getElementType:23 of
+#: abaqus.Mesh.MeshPart.MeshPart.getElementType:22 of
 msgid ""
 "The region cannot be associated with element types or the **elemShape** "
 "is not     consistent with the dimension of the **region**."
@@ -4287,14 +4288,14 @@ msgid ""
 "incompatible elements."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:4 of
 msgid ""
 "Check `MeshPart.getIncompatibleMeshInterfaces on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
 "#simaker-partgetincompatiblemeshinterfacespyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:8 of
+#: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:7 of
 msgid ""
 "A sequence of cell objects which will be used to search the incompatible "
 "faces."
@@ -4406,14 +4407,14 @@ msgid ""
 "incompletely."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:7 of
+#: abaqus.Mesh.MeshPart.MeshPart.ignoreEntity:6 of
 msgid ""
 "Check `MeshPart.ignoreEntity on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
 "#simaker-partignoreentitypyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.restoreIgnoredEntity:4 of
 msgid ""
 "Check `MeshPart.restoreIgnoredEntity on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
@@ -4427,7 +4428,7 @@ msgid ""
 "#simaker-partseededgebybiaspyc>`__."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:4 of
 msgid ""
 "Check `MeshPart.seedEdgeByNumber on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
@@ -4461,7 +4462,7 @@ msgid ""
 " The resulting mesh can be finer than the specified seeds."
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:4 of
 msgid ""
 "Check `MeshPart.setBoundaryLayerControls on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
@@ -4531,7 +4532,7 @@ msgid ""
 "specified, the default"
 msgstr ""
 
-#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:5 of
+#: abaqus.Mesh.MeshPart.MeshPart.setSweepPath:4 of
 msgid ""
 "Check `MeshPart.setSweepPath on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partmgnpyc.htm?contextscope=all"
@@ -4624,7 +4625,7 @@ msgid ""
 "Abaqus/CAE session."
 msgstr ""
 
-#: abaqus.Mesh.MesherOptions.MesherOptions:13 of
+#: abaqus.Mesh.MesherOptions.MesherOptions:12 of
 msgid ""
 "Check `MesherOptions on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mesheroptionspyc.htm?contextscope=all>`__."
@@ -14590,5 +14591,21 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The `guiPreferredElements` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method deletes all boundary meshes"
+#~ " in the assembly. See the "
+#~ "**boundaryPreview** argument of generateMesh "
+#~ "for information about generating boundary "
+#~ "meshes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method deletes all boundary meshes"
+#~ " in the parts. See the "
+#~ "**boundaryPreview** argument of generateMesh "
+#~ "for information about generating boundary "
+#~ "meshes."
 #~ msgstr ""
 

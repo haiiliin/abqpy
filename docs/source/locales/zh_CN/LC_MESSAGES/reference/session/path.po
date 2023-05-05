@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -694,7 +694,7 @@ msgid ""
 "\\(name\\, type\\, expression\\, ...\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.PathAndProbe.Path.Path:13
+#: ../../None:5:<autosummary>:1 abaqus.PathAndProbe.Path.Path:12
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:1 of
 msgid "This method creates a Path object."
 msgstr ""
@@ -918,7 +918,7 @@ msgstr ""
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:4
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:4
 #: abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:4
-#: abaqus.PathAndProbe.Path.Path:16
+#: abaqus.PathAndProbe.Path.Path:15
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:4
 #: abaqus.PathAndProbe.PathSession.PathSession.Spectrum:4
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:4
@@ -927,7 +927,7 @@ msgstr ""
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:11
+#: abaqus.PathAndProbe.Path.Path:10
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:9 of
 msgid ""
 "Check `Path on help.3ds.com/2018 "
@@ -947,13 +947,13 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:21
+#: ../../docstring abaqus.PathAndProbe.Path.Path:20
 #: abaqus.PathAndProbe.PathSession.Path.name:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:12 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:23
+#: ../../docstring abaqus.PathAndProbe.Path.Path:22
 #: abaqus.PathAndProbe.PathSession.Path.type:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:14 of
 msgid ""
@@ -961,7 +961,7 @@ msgid ""
 "values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:26
+#: abaqus.PathAndProbe.Path.Path:25
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:17 of
 msgid ""
 "A sequence specifying the nodes or points that make up the path. The "
@@ -985,14 +985,14 @@ msgid ""
 "coordinates of the points used to define a coordinate   system."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:26
+#: abaqus.PathAndProbe.Path.Path:25
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:17 of
 msgid ""
 "A sequence specifying the nodes or points that make up the path. The "
 "definition of the path expression depends on the **type** argument."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:29
+#: abaqus.PathAndProbe.Path.Path:28
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:20 of
 msgid ""
 "If **type** = NODE_LIST, **expression** must be a sequence of sequences. "
@@ -1002,14 +1002,14 @@ msgid ""
 "Ints."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:33
+#: abaqus.PathAndProbe.Path.Path:32
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:24 of
 msgid ""
 "If **type** = POINT_LIST, **expression** must be a sequence of tuples of "
 "three Floats, specifying the coordinates of each point."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:35
+#: abaqus.PathAndProbe.Path.Path:34
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:26 of
 msgid ""
 "If **type** = EDGE_LIST, **expression** must be a sequence of sequences. "
@@ -1023,7 +1023,7 @@ msgid ""
 "opposite."
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:44
+#: abaqus.PathAndProbe.Path.Path:43
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:35 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a "
@@ -1031,7 +1031,7 @@ msgid ""
 "the points used to define a coordinate system."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:48
+#: ../../docstring abaqus.PathAndProbe.Path.Path:47
 #: abaqus.PathAndProbe.PathSession.Path.circleDefinition:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:39 of
 msgid ""
@@ -1044,7 +1044,7 @@ msgid ""
 "arc of the circle."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:55
+#: ../../docstring abaqus.PathAndProbe.Path.Path:54
 #: abaqus.PathAndProbe.PathSession.Path.numSegments:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:46 of
 msgid ""
@@ -1052,7 +1052,7 @@ msgid ""
 " is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:58
+#: ../../docstring abaqus.PathAndProbe.Path.Path:57
 #: abaqus.PathAndProbe.PathSession.Path.startAngle:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:49 of
 msgid ""
@@ -1060,7 +1060,7 @@ msgid ""
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:61
+#: ../../docstring abaqus.PathAndProbe.Path.Path:60
 #: abaqus.PathAndProbe.PathSession.Path.endAngle:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:52 of
 msgid ""
@@ -1068,7 +1068,7 @@ msgid ""
 "argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:64
+#: ../../docstring abaqus.PathAndProbe.Path.Path:63
 #: abaqus.PathAndProbe.PathSession.Path.radius:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:55 of
 msgid ""
@@ -1077,7 +1077,7 @@ msgid ""
 "CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:67
+#: ../../docstring abaqus.PathAndProbe.Path.Path:66
 #: abaqus.PathAndProbe.PathSession.Path.radialAngle:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:58 of
 msgid ""
@@ -1086,7 +1086,7 @@ msgid ""
 "**type** = RADIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:70
+#: ../../docstring abaqus.PathAndProbe.Path.Path:69
 #: abaqus.PathAndProbe.PathSession.Path.startRadius:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:61 of
 msgid ""
@@ -1094,7 +1094,7 @@ msgid ""
 " of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: ../../docstring abaqus.PathAndProbe.Path.Path:73
+#: ../../docstring abaqus.PathAndProbe.Path.Path:72
 #: abaqus.PathAndProbe.PathSession.Path.endRadius:1
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:64 of
 msgid ""
@@ -1113,7 +1113,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:76
+#: abaqus.PathAndProbe.Path.Path:75
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:67 of
 msgid "A Path object."
 msgstr ""
@@ -1129,7 +1129,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:77
+#: abaqus.PathAndProbe.Path.Path:76
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:68 of
 msgid ":class:`Path`"
 msgstr ""
@@ -1139,7 +1139,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.PathAndProbe.Path.Path:81
+#: abaqus.PathAndProbe.Path.Path:80
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:72 of
 msgid ""
 "When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in"
@@ -1242,9 +1242,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:5
-#: abaqus.PathAndProbe.FreeBody.FreeBody:5
-#: abaqus.PathAndProbe.NodeQuery.NodeQuery:6 abaqus.PathAndProbe.Path.Path:5
-#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:8
+#: abaqus.PathAndProbe.FreeBody.FreeBody:4
+#: abaqus.PathAndProbe.NodeQuery.NodeQuery:5 abaqus.PathAndProbe.Path.Path:4
+#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:9
 #: abaqus.PathAndProbe.ProbeReport.ProbeReport:8
 #: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:5
 #: abaqus.PathAndProbe.Spectrum.Spectrum:4 abaqus.PathAndProbe.Stream.Stream:4
@@ -1252,7 +1252,7 @@ msgstr ""
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.PathAndProbe.FreeBody.FreeBody:11 of
+#: abaqus.PathAndProbe.FreeBody.FreeBody:10 of
 msgid ""
 "Check `FreeBody on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodypyc.htm?contextscope=all>`__."
@@ -1393,7 +1393,7 @@ msgid ""
 "**nodeQuery** member when you import the visualization module."
 msgstr ""
 
-#: abaqus.PathAndProbe.NodeQuery.NodeQuery:12 of
+#: abaqus.PathAndProbe.NodeQuery.NodeQuery:11 of
 msgid ""
 "Check `NodeQuery on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodequerypyc.htm?contextscope=all>`__."
@@ -1441,15 +1441,19 @@ msgstr ""
 #: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1 of
 msgid ""
 "The ProbeOptions object is used to store settings associated with probing"
-" a model or an **X - Y** plot. The ProbeOptions object has no "
-"constructor. Abaqus creates the **defaultProbeOptions** and the "
-"**probeOptions** members when you import the Visualization module. When "
-"probing is initiated for the first time, the values in the "
-"**probeOptions** member are initialized using the values from the "
-"**defaultProbeOptions** member."
+" a model or an."
 msgstr ""
 
-#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:15 of
+#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:3 of
+msgid ""
+"**X - Y** plot. The ProbeOptions object has no constructor. Abaqus "
+"creates the **defaultProbeOptions** and the **probeOptions** members when"
+" you import the Visualization module. When probing is initiated for the "
+"first time, the values in the **probeOptions** member are initialized "
+"using the values from the **defaultProbeOptions** member."
+msgstr ""
+
+#: abaqus.PathAndProbe.ProbeOptions.ProbeOptions:16 of
 msgid ""
 "Check `ProbeOptions on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probeoptionspyc.htm?contextscope=all>`__."
@@ -3123,5 +3127,20 @@ msgstr ""
 #~ "**x**- and **y**-coordinates (when "
 #~ "**probeObject** = XYPlot). The default "
 #~ "value is OFF."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ProbeOptions object is used to "
+#~ "store settings associated with probing a"
+#~ " model or an **X - Y** plot."
+#~ " The ProbeOptions object has no "
+#~ "constructor. Abaqus creates the "
+#~ "**defaultProbeOptions** and the **probeOptions** "
+#~ "members when you import the "
+#~ "Visualization module. When probing is "
+#~ "initiated for the first time, the "
+#~ "values in the **probeOptions** member "
+#~ "are initialized using the values from"
+#~ " the **defaultProbeOptions** member."
 #~ msgstr ""
 
