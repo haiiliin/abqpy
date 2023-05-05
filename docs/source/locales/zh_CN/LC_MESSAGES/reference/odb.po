@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 14:36+0000\n"
+"POT-Creation-Date: 2023-05-05 16:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,27 +55,27 @@ msgstr ""
 
 #: abaqus.Odb.AnalyticSurface.AnalyticSurface:5
 #: abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment:4
-#: abaqus.Odb.BeamOrientation.BeamOrientation:6
+#: abaqus.Odb.BeamOrientation.BeamOrientation:5
 #: abaqus.Odb.FieldBulkData.FieldBulkData:5
-#: abaqus.Odb.FieldLocation.FieldLocation:8
-#: abaqus.Odb.FieldOutput.FieldOutput:4 abaqus.Odb.FieldValue.FieldValue:7
-#: abaqus.Odb.HistoryOutput.HistoryOutput:5
-#: abaqus.Odb.HistoryPoint.HistoryPoint:6
+#: abaqus.Odb.FieldLocation.FieldLocation:7
+#: abaqus.Odb.FieldOutput.FieldOutput:4 abaqus.Odb.FieldValue.FieldValue:6
+#: abaqus.Odb.HistoryOutput.HistoryOutput:4
+#: abaqus.Odb.HistoryPoint.HistoryPoint:5
 #: abaqus.Odb.HistoryRegion.HistoryRegion:4 abaqus.Odb.JobData.JobData:4
-#: abaqus.Odb.Odb.Odb:4 abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase:6
-#: abaqus.Odb.OdbBase.OdbBase:4 abaqus.Odb.OdbDatumCsys.OdbDatumCsys:8
+#: abaqus.Odb.Odb.Odb:4 abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase:5
+#: abaqus.Odb.OdbBase.OdbBase:4 abaqus.Odb.OdbDatumCsys.OdbDatumCsys:7
 #: abaqus.Odb.OdbFrame.OdbFrame:4 abaqus.Odb.OdbInstanceBase.OdbInstanceBase:4
 #: abaqus.Odb.OdbLoadCase.OdbLoadCase:4
-#: abaqus.Odb.OdbMeshElement.OdbMeshElement:5
+#: abaqus.Odb.OdbMeshElement.OdbMeshElement:4
 #: abaqus.Odb.OdbMeshNode.OdbMeshNode:4 abaqus.Odb.OdbPartBase.OdbPartBase:5
 #: abaqus.Odb.OdbPretensionSection.OdbPretensionSection:5
 #: abaqus.Odb.OdbRigidBody.OdbRigidBody:5
 #: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment:4
 #: abaqus.Odb.OdbSet.OdbSet:4 abaqus.Odb.OdbStepBase.OdbStepBase:4
 #: abaqus.Odb.RebarOrientation.RebarOrientation:4
-#: abaqus.Odb.ScratchOdb.ScratchOdb:8
-#: abaqus.Odb.SectionCategory.SectionCategory:9
-#: abaqus.Odb.SectionPoint.SectionPoint:5
+#: abaqus.Odb.ScratchOdb.ScratchOdb:7
+#: abaqus.Odb.SectionCategory.SectionCategory:7
+#: abaqus.Odb.SectionPoint.SectionPoint:4
 #: abaqus.Odb.SectorDefinition.SectorDefinition:5
 #: abaqus.Odb.UserDataBase.UserDataBase:5 of
 msgid "This object can be accessed by::"
@@ -93,32 +93,32 @@ msgid "This method creates a new Odb object."
 msgstr ""
 
 #: abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment:17
-#: abaqus.Odb.HistoryOutput.HistoryOutput:16
+#: abaqus.Odb.HistoryOutput.HistoryOutput:15
 #: abaqus.Odb.HistoryRegion.HistoryRegion:15
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:4 abaqus.Odb.Odb.Odb:15
-#: abaqus.Odb.Odb.Odb.Part:5 abaqus.Odb.Odb.Odb.SectionCategory:4
+#: abaqus.Odb.Odb.Odb.Part:4 abaqus.Odb.Odb.Odb.SectionCategory:4
 #: abaqus.Odb.Odb.Odb.Step:4 abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsys:4
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:9
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:9
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:9
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:8
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:8
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:8
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreePoints:5
 #: abaqus.Odb.OdbAssembly.OdbAssembly.Instance:4
-#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:6
+#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:5
 #: abaqus.Odb.OdbAssembly.OdbAssembly.RigidBody:4 abaqus.Odb.OdbBase.OdbBase:15
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:4
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:9
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:9
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:9
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:8
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:8
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:8
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreePoints:5
 #: abaqus.Odb.OdbInstance.OdbInstance:4
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:6
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:5
 #: abaqus.Odb.OdbInstanceBase.OdbInstanceBase:16
-#: abaqus.Odb.OdbLoadCase.OdbLoadCase:17 abaqus.Odb.OdbPart.OdbPart:5
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:6 abaqus.Odb.OdbPartBase.OdbPartBase:17
+#: abaqus.Odb.OdbLoadCase.OdbLoadCase:17 abaqus.Odb.OdbPart.OdbPart:4
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:5 abaqus.Odb.OdbPartBase.OdbPartBase:16
 #: abaqus.Odb.OdbRigidBody.OdbRigidBody:19
 #: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment:17
-#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:4 abaqus.Odb.OdbSet.OdbSet:28
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:6
+#: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:4 abaqus.Odb.OdbSet.OdbSet:27
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:5
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:4
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:4
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:4
@@ -126,10 +126,10 @@ msgstr ""
 #: abaqus.Odb.OdbSet.OdbSet.NodeSetFromNodeLabels:4
 #: abaqus.Odb.OdbStep.OdbStep:4 abaqus.Odb.OdbStep.OdbStep.HistoryRegion:4
 #: abaqus.Odb.OdbStep.OdbStep.LoadCase:4 abaqus.Odb.OdbStepBase.OdbStepBase:15
-#: abaqus.Odb.ScratchOdb.ScratchOdb:19
-#: abaqus.Odb.SectionCategory.SectionCategory:36
+#: abaqus.Odb.ScratchOdb.ScratchOdb:18
+#: abaqus.Odb.SectionCategory.SectionCategory:34
 #: abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:4
-#: abaqus.Odb.SectionPoint.SectionPoint:34
+#: abaqus.Odb.SectionPoint.SectionPoint:33
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData:4 of
 msgid "This function can be accessed by::"
 msgstr ""
@@ -215,15 +215,15 @@ msgstr ""
 
 #: ../../docstring abaqus.Odb.Odb.Odb:20 abaqus.Odb.Odb.Odb.Step:12
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsys:12
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:17
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:17
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:17
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:16
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:16
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:16
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreePoints:13
 #: abaqus.Odb.OdbBase.OdbBase:20
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:12
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:17
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:17
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:17
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:16
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:16
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:16
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreePoints:13
 #: abaqus.Odb.OdbStep.OdbStep:9 abaqus.Odb.OdbStepBase.OdbStepBase:20
 #: abaqus.Odb.RebarOrientation.OdbDatumCsys.name:1
@@ -533,7 +533,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 abaqus.Odb.Odb.Odb.SectionCategory:1
-#: abaqus.Odb.SectionCategory.SectionCategory:33 of
+#: abaqus.Odb.SectionCategory.SectionCategory:31 of
 msgid "This method creates a SectionCategory object."
 msgstr ""
 
@@ -903,69 +903,69 @@ msgid ""
 "this object at a later stage."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:10 of
+#: abaqus.Odb.Odb.Odb.Part:9 of
 msgid ""
 "Check `Part on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:13 abaqus.Odb.OdbPart.OdbPart:10
-#: abaqus.Odb.OdbPartBase.OdbPartBase:22 of
+#: abaqus.Odb.Odb.Odb.Part:12 abaqus.Odb.OdbPart.OdbPart:9
+#: abaqus.Odb.OdbPartBase.OdbPartBase:21 of
 msgid "A String specifying the part name."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:15 abaqus.Odb.OdbPart.OdbPart:12
-#: abaqus.Odb.OdbPartBase.OdbPartBase:24 of
+#: abaqus.Odb.Odb.Odb.Part:14 abaqus.Odb.OdbPart.OdbPart:11
+#: abaqus.Odb.OdbPartBase.OdbPartBase:23 of
 msgid ""
 "A SymbolicConstant specifying the dimensionality of the Part object. "
 "Possible values are THREE_D, TWO_D_PLANAR, and AXISYMMETRIC."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:18 abaqus.Odb.OdbPart.OdbPart:15
-#: abaqus.Odb.OdbPartBase.OdbPartBase:27 of
+#: abaqus.Odb.Odb.Odb.Part:17 abaqus.Odb.OdbPart.OdbPart:14
+#: abaqus.Odb.OdbPartBase.OdbPartBase:26 of
 msgid ""
 "A SymbolicConstant specifying the type of the Part object. Possible "
 "values are DEFORMABLE_BODY and ANALYTIC_RIGID_SURFACE."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:21 abaqus.Odb.OdbAssembly.OdbAssembly.Instance:14
+#: abaqus.Odb.Odb.Odb.Part:20 abaqus.Odb.OdbAssembly.OdbAssembly.Instance:14
 #: abaqus.Odb.OdbInstance.OdbInstance:11
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase:23 abaqus.Odb.OdbPart.OdbPart:18
-#: abaqus.Odb.OdbPartBase.OdbPartBase:30 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase:23 abaqus.Odb.OdbPart.OdbPart:17
+#: abaqus.Odb.OdbPartBase.OdbPartBase:29 of
 msgid "An OdbPart object."
 msgstr ""
 
-#: abaqus.Odb.Odb.Odb.Part:22 abaqus.Odb.OdbPart.OdbPart:19
-#: abaqus.Odb.OdbPartBase.OdbPartBase:31 of
+#: abaqus.Odb.Odb.Odb.Part:21 abaqus.Odb.OdbPart.OdbPart:18
+#: abaqus.Odb.OdbPartBase.OdbPartBase:30 of
 msgid ":class:`OdbPart`"
 msgstr ""
 
 #: abaqus.Odb.Odb.Odb.SectionCategory:9
-#: abaqus.Odb.SectionCategory.SectionCategory:31 of
+#: abaqus.Odb.SectionCategory.SectionCategory:29 of
 msgid ""
 "Check `SectionCategory on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectioncategorypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.Odb.Odb.SectionCategory:12
-#: abaqus.Odb.SectionCategory.SectionCategory:41
+#: abaqus.Odb.SectionCategory.SectionCategory:39
 #: abaqus.Odb.SectionCategory.SectionCategory.name:1 of
 msgid "A String specifying the name of the category."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.Odb.Odb.SectionCategory:14
-#: abaqus.Odb.SectionCategory.SectionCategory:43
+#: abaqus.Odb.SectionCategory.SectionCategory:41
 #: abaqus.Odb.SectionCategory.SectionCategory.description:1 of
 msgid "A String specifying the description of the category."
 msgstr ""
 
 #: abaqus.Odb.Odb.Odb.SectionCategory:16
-#: abaqus.Odb.SectionCategory.SectionCategory:45 of
+#: abaqus.Odb.SectionCategory.SectionCategory:43 of
 msgid "A SectionCategory object."
 msgstr ""
 
 #: abaqus.Odb.Odb.Odb.SectionCategory:17
-#: abaqus.Odb.SectionCategory.SectionCategory:46 of
+#: abaqus.Odb.SectionCategory.SectionCategory:44 of
 msgid ":class:`SectionCategory`"
 msgstr ""
 
@@ -1429,21 +1429,21 @@ msgid ""
 "of the surface profile."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:5
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:4
 #: of
 msgid ""
 "Check `Circle on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-circlepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:8
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:7
 #: of
 msgid ""
 "A sequence of Floats specifying the coordinates of center of the circular"
 " segment."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:10
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Circle:9
 #: of
 msgid ""
 "A sequence of Floats specifying the coordinates of end point of the "
@@ -1457,14 +1457,14 @@ msgid ""
 "the surface profile."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Line:5
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Line:4
 #: of
 msgid ""
 "Check `Line on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-linepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Line:8
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Line:7
 #: of
 msgid "A sequence of Floats specifying the coordinates of end point."
 msgstr ""
@@ -1476,21 +1476,21 @@ msgid ""
 "of the surface profile."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:5
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:4
 #: of
 msgid ""
 "Check `Parabola on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parabolapyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:8
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:7
 #: of
 msgid ""
 "A sequence of Floats specifying the coordinates of middle point of the "
 "parabolic segment."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:11
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Parabola:10
 #: of
 msgid ""
 "A sequence of Floats specifying the coordinates of end point of the "
@@ -1504,14 +1504,14 @@ msgid ""
 " the surface profile."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Start:5
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Start:4
 #: of
 msgid ""
 "Check `Start on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-startpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Start:8
+#: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment.Start:7
 #: of
 msgid "A sequence of Floats specifying the coordinates of start point."
 msgstr ""
@@ -1565,7 +1565,7 @@ msgid ""
 "node in the element connectivity list is not supported."
 msgstr ""
 
-#: abaqus.Odb.BeamOrientation.BeamOrientation:14 of
+#: abaqus.Odb.BeamOrientation.BeamOrientation:13 of
 msgid ""
 "Check `BeamOrientation on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-beamorientationpyc.htm?contextscope=all>`__."
@@ -1608,10 +1608,10 @@ msgid ""
 "objects (for assembly-level sets)."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:16
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:16
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:16 abaqus.Odb.OdbSet.OdbSet:35
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:16
+#: ../../docstring abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:15
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:15
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:15 abaqus.Odb.OdbSet.OdbSet:34
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:15
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:14
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:14
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:14
@@ -1621,19 +1621,19 @@ msgstr ""
 msgid "A String specifying the name of the set and the repository key."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:18
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:18
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:18 abaqus.Odb.OdbSet.OdbSet:37 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:17
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:17
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:17 abaqus.Odb.OdbSet.OdbSet:36 of
 msgid ""
 "A sequence of OdbMeshNode objects. For example, for a "
 "part:`nodes=part1.nodes[1:5]`For an "
 "assembly:`nodes=(instance1.nodes[6:7], instance2.nodes[1:5])`"
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:21
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:21
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:21 abaqus.Odb.OdbSet.OdbSet:40
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:22
+#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:20
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:20
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:20 abaqus.Odb.OdbSet.OdbSet:39
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:21
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:20
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:36
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:24
@@ -1642,10 +1642,10 @@ msgstr ""
 msgid "An OdbSet object."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:22
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:22
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:22 abaqus.Odb.OdbSet.OdbSet:41
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:23
+#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:21
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:21
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:21 abaqus.Odb.OdbSet.OdbSet:40
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:22
 #: abaqus.Odb.OdbSet.OdbSet.ElementSetFromElementLabels:21
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurface:37
 #: abaqus.Odb.OdbSet.OdbSet.MeshSurfaceFromElsets:25
@@ -1661,13 +1661,13 @@ msgid ""
 "OdbMeshElement objects (for assembly-level sets)."
 msgstr ""
 
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:13 of
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:12 of
 msgid ""
 "Check `ElementSet on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elementsetpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbSet.OdbSet.ElementSet:18 of
+#: abaqus.Odb.OdbSet.OdbSet.ElementSet:17 of
 msgid ""
 "A sequence of OdbMeshElement objects. For example, for a "
 "part:`elements=instance1.elements[1:5]`For an "
@@ -2059,9 +2059,9 @@ msgstr ""
 msgid ":class:`OdbInstance`"
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:13
-#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:13
-#: abaqus.Odb.OdbPart.OdbPart.NodeSet:13 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.NodeSet:12
+#: abaqus.Odb.OdbInstance.OdbInstance.NodeSet:12
+#: abaqus.Odb.OdbPart.OdbPart.NodeSet:12 of
 msgid ""
 "Check `NodeSet on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodesetpyc.htm?contextscope=all>`__."
@@ -2149,19 +2149,19 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:9
-#: abaqus.Odb.SectionPoint.SectionPoint:29 of
+#: abaqus.Odb.SectionPoint.SectionPoint:28 of
 msgid ""
 "Check `SectionPoint on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectionpointpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:1
-#: abaqus.Odb.SectionPoint.SectionPoint:31 of
+#: abaqus.Odb.SectionPoint.SectionPoint:30 of
 msgid "This method creates a SectionPoint object."
 msgstr ""
 
 #: ../../docstring abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:12
-#: abaqus.Odb.SectionPoint.SectionPoint:39
+#: abaqus.Odb.SectionPoint.SectionPoint:38
 #: abaqus.Odb.SectionPointArray.SectionPoint.number:1 of
 msgid ""
 "An Int specifying the number of the section point. See Beam elements and "
@@ -2169,7 +2169,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:15
-#: abaqus.Odb.SectionPoint.SectionPoint:42
+#: abaqus.Odb.SectionPoint.SectionPoint:41
 #: abaqus.Odb.SectionPointArray.SectionPoint.description:1 of
 msgid "A String specifying the description of the section point."
 msgstr ""
@@ -2177,12 +2177,12 @@ msgstr ""
 #: ../../docstring abaqus.Odb.FieldValueArray.FieldValue.sectionPoint:1
 #: abaqus.Odb.OdbStepBase.HistoryPoint.sectionPoint:1
 #: abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:17
-#: abaqus.Odb.SectionPoint.SectionPoint:44 of
+#: abaqus.Odb.SectionPoint.SectionPoint:43 of
 msgid "A SectionPoint object."
 msgstr ""
 
 #: abaqus.Odb.SectionCategory.SectionCategory.SectionPoint:18
-#: abaqus.Odb.SectionPoint.SectionPoint:45 of
+#: abaqus.Odb.SectionPoint.SectionPoint:44 of
 msgid ":class:`SectionPoint`"
 msgstr ""
 
@@ -2196,7 +2196,7 @@ msgid ""
 "addData method of a FieldOutput object."
 msgstr ""
 
-#: abaqus.Odb.FieldLocation.FieldLocation:14 of
+#: abaqus.Odb.FieldLocation.FieldLocation:13 of
 msgid ""
 "Check `FieldLocation on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldlocationpyc.htm?contextscope=all>`__."
@@ -2270,21 +2270,21 @@ msgid ""
 "and Radial Thrust require that the deformationField be specified."
 msgstr ""
 
-#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:8 of
+#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:7 of
 msgid ""
 "A FieldOutput object specifying the nodal displacement vectors required "
 "by moving coordinate systems to determine instantaneous configurations."
 msgstr ""
 
-#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:11 of
+#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:10 of
 msgid "A FieldOutput object."
 msgstr ""
 
-#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:12 of
+#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:11 of
 msgid ":class:`FieldOutput`"
 msgstr ""
 
-#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:14 of
+#: abaqus.Odb.FieldOutput.FieldOutput.getConnectorFieldXformedToNodeA:13 of
 msgid ""
 "The getConnectorFieldXformedToNodeA method throws an exception if the "
 "field requires a     deformationField and the argument is not supplied."
@@ -2307,7 +2307,7 @@ msgstr ""
 msgid "A FieldLocationArray object."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:21
+#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:20
 #: abaqus.Odb.HistoryRegion.HistoryOutput.name:1
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:9
 #: abaqus.Odb.OdbStepBase.FieldOutput.name:1 of
@@ -2437,7 +2437,7 @@ msgid ""
 "database."
 msgstr ""
 
-#: abaqus.Odb.FieldValue.FieldValue:13 of
+#: abaqus.Odb.FieldValue.FieldValue:12 of
 msgid ""
 "Check `FieldValue on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldvaluepyc.htm?contextscope=all>`__."
@@ -2648,24 +2648,24 @@ msgid ""
 "specified variable."
 msgstr ""
 
-#: abaqus.Odb.HistoryOutput.HistoryOutput:11 of
+#: abaqus.Odb.HistoryOutput.HistoryOutput:10 of
 msgid ""
 "Check `HistoryOutput on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.HistoryOutput.HistoryOutput:13
+#: abaqus.Odb.HistoryOutput.HistoryOutput:12
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:1 of
 msgid "This method creates a HistoryOutput object."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:23
+#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:22
 #: abaqus.Odb.HistoryRegion.HistoryOutput.description:1
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:11 of
 msgid "A String specifying the output variable."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:25
+#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:24
 #: abaqus.Odb.HistoryRegion.HistoryOutput.type:1
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:13 of
 msgid ""
@@ -2673,7 +2673,7 @@ msgid ""
 "supported."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:27
+#: ../../docstring abaqus.Odb.HistoryOutput.HistoryOutput:26
 #: abaqus.Odb.HistoryRegion.HistoryOutput.validInvariants:1
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:15 of
 msgid ""
@@ -2683,12 +2683,12 @@ msgid ""
 " value is an empty sequence."
 msgstr ""
 
-#: abaqus.Odb.HistoryOutput.HistoryOutput:31
+#: abaqus.Odb.HistoryOutput.HistoryOutput:30
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:19 of
 msgid "A HistoryOutput object."
 msgstr ""
 
-#: abaqus.Odb.HistoryOutput.HistoryOutput:32
+#: abaqus.Odb.HistoryOutput.HistoryOutput:31
 #: abaqus.Odb.HistoryRegion.HistoryRegion.HistoryOutput:20 of
 msgid ":class:`HistoryOutput`"
 msgstr ""
@@ -2715,7 +2715,7 @@ msgid ""
 "argument to the HistoryRegion method."
 msgstr ""
 
-#: abaqus.Odb.HistoryPoint.HistoryPoint:12 of
+#: abaqus.Odb.HistoryPoint.HistoryPoint:11 of
 msgid ""
 "Check `HistoryPoint on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historypointpyc.htm?contextscope=all>`__."
@@ -2895,27 +2895,27 @@ msgid "An OdbDatumCsys object specifying the object to be copied."
 msgstr ""
 
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsys:16
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:24
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:28
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:28
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:23
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:27
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:27
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreePoints:25
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:16
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:24
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:28
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:28
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:23
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:27
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:27
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreePoints:25 of
 msgid "An OdbDatumCsys object."
 msgstr ""
 
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsys:17
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:25
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:29
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:29
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:24
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:28
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:28
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreePoints:26
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsys:17
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:25
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:29
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:29
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:24
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:28
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:28
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreePoints:26 of
 msgid ":class:`OdbDatumCsys`"
 msgstr ""
@@ -2933,20 +2933,20 @@ msgid ""
 "object."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:14
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:14 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:13
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:13 of
 msgid ""
 "Check `DatumCsysBy6dofNode on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysby6dofnodepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:19
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:19
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:19
+#: ../../docstring abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:18
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:18
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:18
 #: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreePoints:15
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:19
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:19
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:19
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:18
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:18
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:18
 #: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreePoints:15
 #: abaqus.Odb.RebarOrientation.OdbDatumCsys.coordSysType:1 of
 msgid ""
@@ -2954,8 +2954,8 @@ msgid ""
 "values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:22
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:22 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysBy6dofNode:21
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysBy6dofNode:21 of
 msgid ""
 "An OdbMeshNode object specifying the origin of the datum coordinate "
 "system."
@@ -2973,19 +2973,19 @@ msgid ""
 "origin to the first node defines the rr-axis."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:14
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:14 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:13
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:13 of
 msgid ""
 "Check `DatumCsysByThreeCircNodes on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbythreecircnodespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:22
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:24
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:26
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:22
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:24
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:26 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:21
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:23
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeCircNodes:25
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:21
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:23
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeCircNodes:25 of
 msgid "An OdbMeshNode object that lies on the circular arc."
 msgstr ""
 
@@ -3001,27 +3001,27 @@ msgid ""
 "OdbMeshNode object."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:14
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:14 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:13
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:13 of
 msgid ""
 "Check `DatumCsysByThreeNodes on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbythreenodespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:22
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:22 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:21
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:21 of
 msgid ""
 "An OdbMeshNode object specifying a node at the origin of the datum "
 "coordinate system."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:24
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:24 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:23
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:23 of
 msgid "An OdbMeshNode object specifying a node on the local 1- or rr-axis."
 msgstr ""
 
-#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:26
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:26 of
+#: abaqus.Odb.OdbAssembly.OdbAssembly.DatumCsysByThreeNodes:25
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys.DatumCsysByThreeNodes:25 of
 msgid "An OdbMeshNode object specifying a node in the 1-2 or rr-θθ plane."
 msgstr ""
 
@@ -3163,7 +3163,7 @@ msgid ""
 "rootAssembly.addElements methods."
 msgstr ""
 
-#: abaqus.Odb.OdbMeshElement.OdbMeshElement:26 of
+#: abaqus.Odb.OdbMeshElement.OdbMeshElement:25 of
 msgid ""
 "Check `OdbMeshElement on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmeshelementpyc.htm?contextscope=all>`__."
@@ -3210,7 +3210,7 @@ msgid ""
 "**frameValue** can be the total fime or frequency."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:13
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:12
 #: abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:18 of
 msgid ""
 "A SymbolicConstant specifying which frame to return if there is no frame "
@@ -3229,7 +3229,7 @@ msgid ""
 "vector is returned."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:23
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:22
 #: abaqus.Odb.OdbMeshElement.OdbMeshElement.getNormal:28 of
 msgid "Frame not found, If the exact frame is not found."
 msgstr ""
@@ -3249,7 +3249,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:8
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:7
 #: abaqus.Odb.OdbPartBase.OdbPartBase.getElementFromLabel:7
 #: abaqus.Odb.OdbSet.OdbMeshElement.label:1 of
 msgid "An Int specifying the element label."
@@ -3259,7 +3259,7 @@ msgstr ""
 msgid "A SectionCategory object specifying the element section properties."
 msgstr ""
 
-#: ../../docstring abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:20
+#: ../../docstring abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:18
 #: abaqus.Odb.OdbSet.OdbMeshElement.type:1 of
 msgid "A String specifying the element type."
 msgstr ""
@@ -3335,13 +3335,13 @@ msgstr ""
 
 #: abaqus.Odb.HistoryRegion.HistoryRegion:29
 #: abaqus.Odb.OdbStep.OdbStep.HistoryRegion:21
-#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:9 of
+#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:8 of
 msgid "A HistoryRegion object."
 msgstr ""
 
 #: abaqus.Odb.HistoryRegion.HistoryRegion:30
 #: abaqus.Odb.OdbStep.OdbStep.HistoryRegion:22
-#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:10 of
+#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:9 of
 msgid ":class:`HistoryRegion`"
 msgstr ""
 
@@ -3449,7 +3449,7 @@ msgid ""
 " when an Odb object is created."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase:12 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase:11 of
 msgid ""
 "Check `OdbAssemblyBase on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
@@ -3572,46 +3572,46 @@ msgid ""
 "to plot contours incorrectly."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:9 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:7 of
 msgid ""
 "Check `OdbAssemblyBase.addElements on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyaddelementspyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:12 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:10 of
 msgid "A sequence of Ints specifying the element labels."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:14 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:12 of
 msgid "A sequence of sequences of Ints specifying the nodal connectivity."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:16 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:14 of
 msgid ""
 "A sequence of Strings specifying the instanceNames of each node in the "
 "nodal connectivity array. If the node is defined at the assembly level, "
 "the instance name should be an empty string"
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:22 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:20 of
 msgid ""
 "A String specifying a name for this element set. The default value is the"
 " empty string."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:24 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:22 of
 msgid "A SectionCategory object for this element set."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:26 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:24 of
 msgid ""
 "Addition of this element type is not permitted at the assembly level, "
 "Only certain element types are permitted at the assembly level. e.g., "
 "connector     elements."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:27 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addElements:25 of
 msgid ""
 "Connectivity array must be provided for all element, If length of label "
 "array does not match connectivity data length."
@@ -3624,32 +3624,32 @@ msgid ""
 "may cause Abaqus/Viewer to plot contours incorrectly."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:6 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:5 of
 msgid ""
 "Check `OdbAssemblyBase.addNodes on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyaddnodespyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:9 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:8 of
 msgid "A sequence of Ints specifying the node labels."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:11 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:10 of
 msgid "A sequence of sequences of Floats specifying the nodal coordinates."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:13 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:12 of
 msgid "A String specifying a name for this node set. The default value is None."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:15 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:14 of
 msgid ""
 "Number of node labels and coordinates does not match, If length of labels"
 " does not match length of coordinates."
 msgstr ""
 
-#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:16 of
+#: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase.addNodes:15 of
 msgid ""
 "Node location specification does not correspond to part dimensions, If "
 "width of coordinate array does not match assembly dimension."
@@ -3726,7 +3726,7 @@ msgid ""
 " the output database."
 msgstr ""
 
-#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys:14 of
+#: abaqus.Odb.OdbDatumCsys.OdbDatumCsys:13 of
 msgid ""
 "Check `OdbDatumCsys on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatumcsyspyc.htm?contextscope=all>`__."
@@ -3776,24 +3776,24 @@ msgid ""
 " an Odb object containing a step with load case specific data."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:7 of
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:6 of
 msgid ""
 "Check `OdbBase.getFrame on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all"
 "#simaker-odbgetframepyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:10 of
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:9 of
 msgid ""
 "A Double specifying the value at which the frame is required. "
 "**frameValue** can be the total time or frequency."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:20 of
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:19 of
 msgid "An OdbFrame object."
 msgstr ""
 
-#: abaqus.Odb.OdbBase.OdbBase.getFrame:21 of
+#: abaqus.Odb.OdbBase.OdbBase.getFrame:20 of
 msgid ":class:`OdbFrame`"
 msgstr ""
 
@@ -3819,7 +3819,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbBase.OdbBase.update:7
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:25 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:24 of
 msgid ":class:`Boolean`"
 msgstr ""
 
@@ -3861,30 +3861,30 @@ msgid ""
 "following techniques:"
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:5
-#: abaqus.Odb.OdbCommands.upgradeOdb:6 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:4
+#: abaqus.Odb.OdbCommands.upgradeOdb:5 of
 msgid "From a script running outside Abaqus/CAE. For example::"
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:11 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:10 of
 msgid "From the Visualization module in Abaqus/CAE. For example::"
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:17 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:16 of
 msgid ""
 "Check `OdbCommands.isUpgradeRequiredForOdb on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all"
 "#simaker-functionodbcommandsisupgraderequiredforodbpyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:20 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:19 of
 msgid ""
 "An String specifying the path to an output database file to test. The "
 "test determines if the output database needs to be upgraded to the "
 "current release."
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:23 of
+#: abaqus.Odb.OdbCommands.isUpgradeRequiredForOdb:22 of
 msgid ""
 "A Boolean indicating the result of the test. A value of True indicates "
 "that the output database needs to be upgraded to the current release."
@@ -3979,30 +3979,30 @@ msgid ""
 "techniques:"
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.upgradeOdb:11 of
+#: abaqus.Odb.OdbCommands.upgradeOdb:10 of
 msgid "From the session object in Abaqus/CAE. For example::"
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.upgradeOdb:17 of
+#: abaqus.Odb.OdbCommands.upgradeOdb:16 of
 msgid ""
 "Check `OdbCommands.upgradeOdb on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionodbcommandspyc.htm?contextscope=all"
 "#simaker-functionodbcommandsupgradeodbpyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.upgradeOdb:20 of
+#: abaqus.Odb.OdbCommands.upgradeOdb:19 of
 msgid ""
 "An String specifying the path to the file containing the output database "
 "to be upgraded."
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.upgradeOdb:22 of
+#: abaqus.Odb.OdbCommands.upgradeOdb:21 of
 msgid ""
 "An String specifying the path to the file that will contain the upgraded "
 "output database."
 msgstr ""
 
-#: abaqus.Odb.OdbCommands.upgradeOdb:25 of
+#: abaqus.Odb.OdbCommands.upgradeOdb:24 of
 msgid "If the output database upgrade fails."
 msgstr ""
 
@@ -4111,38 +4111,38 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:4
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:5 of
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:4 of
 msgid ""
 "Check `AnalyticRigidSurf2DPlanar on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurf2dplanarpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:7
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:8
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:8
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:8
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:8
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:8 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:7
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:7
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:7
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:7
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:7 of
 msgid "The name of the analytic surface."
 msgstr ""
 
 #: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:9
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:10
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:10
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:10
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:10
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:10 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:9
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:9
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:9
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:9
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:9 of
 msgid ""
 "A sequence of AnalyticSurfaceSegment objects or an "
 "OdbSequenceAnalyticSurfaceSegment object."
 msgstr ""
 
 #: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurf2DPlanar:12
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:13
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:13
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:13
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:13
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:13 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:12
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:12
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:12
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:12
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:12 of
 msgid ""
 "A Double specifying the radius of curvature to smooth discontinuities "
 "between adjoining segments. The default value is 0.0."
@@ -4161,21 +4161,21 @@ msgid ""
 "AnalyticSurface on the instance."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:5
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:5 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:4
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:4 of
 msgid ""
 "Check `AnalyticRigidSurfExtrude on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurfextrudepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:16
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:16 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:15
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:15 of
 msgid ""
 "A sequence of sequences of Floats specifying the global coordinates of "
 "points used to define the local coordinate system."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:19 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfExtrude:18 of
 msgid ""
 "Analytic Rigid Surface of type CYLINDER can be defined only if the "
 "instance is     of type THREE_D, If OdbPart associated with the part "
@@ -4188,14 +4188,14 @@ msgid ""
 "revolution on the instance."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:5
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:5 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:4
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:4 of
 msgid ""
 "Check `AnalyticRigidSurfRevolve on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-analyticrigidsurfrevolvepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:19 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.AnalyticRigidSurfRevolve:18 of
 msgid ""
 "Analytic Rigid Surface of type REVOLUTION can be defined only if the     "
 "instance is of type THREE_D, If OdbPart associated with the part instance"
@@ -4357,24 +4357,24 @@ msgid ""
 " instance object."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:5 of
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:4 of
 msgid ""
 "Check `OdbInstanceBase.getElementFromLabel on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbinstancepyc.htm?contextscope=all"
 "#simaker-odbinstancegetelementfromlabelpyc>`__."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:10
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:9
 #: abaqus.Odb.OdbPartBase.OdbPartBase.getElementFromLabel:9 of
 msgid "An OdbMeshElement object."
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:11
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:10
 #: abaqus.Odb.OdbPartBase.OdbPartBase.getElementFromLabel:10 of
 msgid ":class:`OdbMeshElement`"
 msgstr ""
 
-#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:13
+#: abaqus.Odb.OdbInstanceBase.OdbInstanceBase.getElementFromLabel:12
 #: abaqus.Odb.OdbPartBase.OdbPartBase.getElementFromLabel:12 of
 msgid "Invalid element label, If no element with the specified label exists."
 msgstr ""
@@ -4453,7 +4453,7 @@ msgid ""
 " the part object."
 msgstr ""
 
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:17 of
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurf2DPlanar:16 of
 msgid "If OdbPart is of type THREE_D."
 msgstr ""
 
@@ -4463,8 +4463,8 @@ msgid ""
 "AnalyticSurface on the part object."
 msgstr ""
 
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:17
-#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:17 of
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfExtrude:16
+#: abaqus.Odb.OdbPartBase.OdbPartBase.AnalyticRigidSurfRevolve:16 of
 msgid "If OdbPart is not of type THREE_D."
 msgstr ""
 
@@ -4563,7 +4563,7 @@ msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:1
-#: abaqus.Odb.ScratchOdb.ScratchOdb:16 of
+#: abaqus.Odb.ScratchOdb.ScratchOdb:15 of
 msgid "This method creates a new ScratchOdb object."
 msgstr ""
 
@@ -4574,31 +4574,31 @@ msgid ""
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:12
-#: abaqus.Odb.ScratchOdb.ScratchOdb:24 of
+#: abaqus.Odb.ScratchOdb.ScratchOdb:23 of
 msgid "An Odb object specifying the output database with which to associate."
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:14
-#: abaqus.Odb.ScratchOdb.ScratchOdb:26 of
+#: abaqus.Odb.ScratchOdb.ScratchOdb:25 of
 msgid "A ScratchOdb object."
 msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15
-#: abaqus.Odb.ScratchOdb.ScratchOdb:27 of
+#: abaqus.Odb.ScratchOdb.ScratchOdb:26 of
 msgid ":class:`ScratchOdb`"
 msgstr ""
 
 #: abaqus.Odb.ScratchOdb.ScratchOdb:1 of
 msgid ""
 "A scratch output database is associated with an open output database and "
-"is used to store session-related, non-persistent objects, such as Step, "
+"is used to store session- related, non-persistent objects, such as Step, "
 "Frame and FieldOutput objects. Abaqus creates a scratch output database "
 "when needed for these non-persistent objects during an Abaqus/CAE "
 "session. Abaqus deletes the scratch output database when the associated "
 "output database is closed."
 msgstr ""
 
-#: abaqus.Odb.ScratchOdb.ScratchOdb:14 of
+#: abaqus.Odb.ScratchOdb.ScratchOdb:13 of
 msgid ""
 "Check `ScratchOdb on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`__."
@@ -4638,15 +4638,15 @@ msgid ""
 "HistoryPoint in the model."
 msgstr ""
 
-#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:5 of
+#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:4 of
 msgid "A HistoryPoint object specifying the point in the model."
 msgstr ""
 
-#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:7 of
+#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:6 of
 msgid "An OdbLoadCase object specifying a load case in the step."
 msgstr ""
 
-#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:12 of
+#: abaqus.Odb.OdbStepBase.OdbStepBase.getHistoryRegion:11 of
 msgid "HistoryRegion not found, If a HistoryRegion object is not found."
 msgstr ""
 
@@ -13018,5 +13018,19 @@ msgstr ""
 #~ "initial value is `False`, indicating "
 #~ "that internal sets will not be "
 #~ "read."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A scratch output database is associated"
+#~ " with an open output database and "
+#~ "is used to store session-related, "
+#~ "non-persistent objects, such as Step, "
+#~ "Frame and FieldOutput objects. Abaqus "
+#~ "creates a scratch output database when"
+#~ " needed for these non-persistent "
+#~ "objects during an Abaqus/CAE session. "
+#~ "Abaqus deletes the scratch output "
+#~ "database when the associated output "
+#~ "database is closed."
 #~ msgstr ""
 
