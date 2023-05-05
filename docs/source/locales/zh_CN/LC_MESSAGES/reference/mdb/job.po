@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,11 +142,11 @@ msgstr ""
 #: abaqus.Job.ModelJob.ModelJob.atTime:1 of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
-"empty, the string syntax must be valid for the Linux `at` command. If "
+"empty, the string syntax must be valid for the Linux ``at`` command. If "
 "**queue** is set, the syntax must be valid according to the system "
 "administrator. The default value is an empty string. Note: You can use "
 "the **atTime** argument when creating a Job object on a Windows "
-"workstation; however, the `at` command is available only on Linux "
+"workstation; however, the ``at`` command is available only on Linux "
 "platforms."
 msgstr ""
 
@@ -310,7 +310,7 @@ msgid ""
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
 "TOKEN, and CREDIT. The default value is DEFAULT.If the license model is "
 "not the DSLS SimUnit, the licenseType is not available.  .. "
-"versionchanged:: 2022     The `licenseType` argument was added."
+"versionchanged:: 2022     The ``licenseType`` argument was added."
 msgstr ""
 
 #: ../../docstring abaqus.Job.JobFromInputFile.JobFromInputFile:91
@@ -327,7 +327,7 @@ msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile:96
 #: abaqus.Job.JobMdb.JobMdb.Job:97 of
-msgid "The `licenseType` argument was added."
+msgid "The ``licenseType`` argument was added."
 msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile abaqus.Job.JobMdb.JobMdb
@@ -513,12 +513,12 @@ msgstr ""
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.atTime:1 of
 msgid ""
 "A String specifying the time at which to submit the co-execution. If "
-"**queue** is empty, the string syntax must be valid for the Linux `at` "
+"**queue** is empty, the string syntax must be valid for the Linux ``at`` "
 "command. If **queue** is set, the syntax must be valid according to the "
 "system administrator. The default value is an empty string. Note: You can"
 " use the **atTime** argument when creating a Coexecution object on a "
-"Windows workstation; however, the `at` command is available only on Linux"
-" platforms."
+"Windows workstation; however, the ``at`` command is available only on "
+"Linux platforms."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.jobs:1 of
@@ -541,7 +541,7 @@ msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.licenseType:6
 #: abaqus.Job.JobMdb.JobFromInputFile.licenseType:6 of
-msgid "The `licenseType` attribute was added."
+msgid "The ``licenseType`` attribute was added."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct:1 of
@@ -552,8 +552,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct:4 of
 msgid ""
-"The `masterAnalysisProduct` attribute was changed to "
-"`mainAnalysisProduct`."
+"The ``masterAnalysisProduct`` attribute was changed to "
+"``mainAnalysisProduct``."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.mainModel:1 of
@@ -561,7 +561,7 @@ msgid "A String specifying the name of the main model for the co-execution."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.mainModel:3 of
-msgid "The `masterModel` attribute was changed to `mainModel`."
+msgid "The ``masterModel`` attribute was changed to ``mainModel``."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.queue:1 of
@@ -584,8 +584,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts:4 of
 msgid ""
-"The `slaveAnalysisProducts` attribute was changed to "
-"`secondaryAnalysisProducts`."
+"The ``slaveAnalysisProducts`` attribute was changed to "
+"``secondaryAnalysisProducts``."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.secondaryModels:1 of
@@ -595,7 +595,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.secondaryModels:3 of
-msgid "The `slaveModels` attribute was changed to `secondaryModels`."
+msgid "The ``slaveModels`` attribute was changed to ``secondaryModels``."
 msgstr ""
 
 #: ../../docstring abaqus.Job.Coexecution.Coexecution.status:1 of
@@ -2626,5 +2626,72 @@ msgstr ""
 #~ "Check `Queue.__init__ on help.3ds.com/2022 "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all"
 #~ "#simaker-queue__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the time at "
+#~ "which to submit the job. If "
+#~ "**queue** is empty, the string syntax"
+#~ " must be valid for the Linux "
+#~ "`at` command. If **queue** is set, "
+#~ "the syntax must be valid according "
+#~ "to the system administrator. The default"
+#~ " value is an empty string. Note: "
+#~ "You can use the **atTime** argument "
+#~ "when creating a Job object on a"
+#~ " Windows workstation; however, the `at` "
+#~ "command is available only on Linux "
+#~ "platforms."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the type "
+#~ "of license type being used in the"
+#~ " case of the DSLS SimUnit license "
+#~ "model. Possible values are DEFAULT, "
+#~ "TOKEN, and CREDIT. The default value "
+#~ "is DEFAULT.If the license model is "
+#~ "not the DSLS SimUnit, the licenseType"
+#~ " is not available.  .. versionchanged:: "
+#~ "2022     The `licenseType` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid "The `licenseType` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the time at "
+#~ "which to submit the co-execution. "
+#~ "If **queue** is empty, the string "
+#~ "syntax must be valid for the Linux"
+#~ " `at` command. If **queue** is set,"
+#~ " the syntax must be valid according"
+#~ " to the system administrator. The "
+#~ "default value is an empty string. "
+#~ "Note: You can use the **atTime** "
+#~ "argument when creating a Coexecution "
+#~ "object on a Windows workstation; "
+#~ "however, the `at` command is available"
+#~ " only on Linux platforms."
+#~ msgstr ""
+
+#~ msgid "The `licenseType` attribute was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `masterAnalysisProduct` attribute was "
+#~ "changed to `mainAnalysisProduct`."
+#~ msgstr ""
+
+#~ msgid "The `masterModel` attribute was changed to `mainModel`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `slaveAnalysisProducts` attribute was "
+#~ "changed to `secondaryAnalysisProducts`."
+#~ msgstr ""
+
+#~ msgid "The `slaveModels` attribute was changed to `secondaryModels`."
 #~ msgstr ""
 

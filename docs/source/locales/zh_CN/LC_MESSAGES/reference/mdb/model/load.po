@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2435,7 +2435,7 @@ msgid ""
 "**preTenSecPartLevel** argument only if the selected region belongs to a "
 "dependent part instance. A pre-tension section cannot be defined at the "
 "part level for independent and model instances.  .. versionadded:: 2018"
-"     The `preTenSecPartLevel` argument was added."
+"     The ``preTenSecPartLevel`` argument was added."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad:47 abaqus.Load.BoltLoad.BoltLoad.setValues:19
@@ -2450,7 +2450,7 @@ msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad:52 abaqus.Load.LoadModel.LoadModel.BoltLoad:37
 #: of
-msgid "The `preTenSecPartLevel` argument was added."
+msgid "The ``preTenSecPartLevel`` argument was added."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad:55 abaqus.Load.LoadModel.LoadModel.BoltLoad:40
@@ -13810,5 +13810,22 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacetractionpyc.htm?contextscope=all"
 #~ "#simaker-surfacetraction__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether the pre-"
+#~ "tension section is to be defined "
+#~ "at the part level. The default "
+#~ "value is False. You should provide "
+#~ "the **preTenSecPartLevel** argument only if"
+#~ " the selected region belongs to a "
+#~ "dependent part instance. A pre-tension"
+#~ " section cannot be defined at the "
+#~ "part level for independent and model "
+#~ "instances.  .. versionadded:: 2018     The "
+#~ "`preTenSecPartLevel` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `preTenSecPartLevel` argument was added."
 #~ msgstr ""
 

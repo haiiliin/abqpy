@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 #: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:48
 #: ../../docstring of abaqus.Job.JobMdb.JobFromInputFile.atTime:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.atTime:1
-msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
+msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the ``at`` command is available only on Linux platforms."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:43
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:91
 #: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:92
-msgid "A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not available.  .. versionchanged:: 2022     The `licenseType` argument was added."
+msgid "A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not available.  .. versionchanged:: 2022     The ``licenseType`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:91
@@ -275,7 +275,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:96
 #: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:97
-msgid "The `licenseType` argument was added."
+msgid "The ``licenseType`` argument was added."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:0
@@ -461,7 +461,7 @@ msgid "Member Details:"
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.atTime:1
-msgid "A String specifying the time at which to submit the co-execution. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Coexecution object on a Windows workstation; however, the `at` command is available only on Linux platforms."
+msgid "A String specifying the time at which to submit the co-execution. If **queue** is empty, the string syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Coexecution object on a Windows workstation; however, the ``at`` command is available only on Linux platforms."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.jobs:1
@@ -478,7 +478,7 @@ msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.licenseType:6
 #: ../../docstring of abaqus.Job.JobMdb.JobFromInputFile.licenseType:6
-msgid "The `licenseType` attribute was added."
+msgid "The ``licenseType`` attribute was added."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct:1
@@ -486,7 +486,7 @@ msgid "A SymbolicConstant specifying the analysis product type of the main model
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.mainAnalysisProduct:4
-msgid "The `masterAnalysisProduct` attribute was changed to `mainAnalysisProduct`."
+msgid "The ``masterAnalysisProduct`` attribute was changed to ``mainAnalysisProduct``."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.mainModel:1
@@ -494,7 +494,7 @@ msgid "A String specifying the name of the main model for the co-execution."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.mainModel:3
-msgid "The `masterModel` attribute was changed to `mainModel`."
+msgid "The ``masterModel`` attribute was changed to ``mainModel``."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.queue:1
@@ -506,7 +506,7 @@ msgid "A tuple of SymbolicConstants specifying the analysis product types of the
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts:4
-msgid "The `slaveAnalysisProducts` attribute was changed to `secondaryAnalysisProducts`."
+msgid "The ``slaveAnalysisProducts`` attribute was changed to ``secondaryAnalysisProducts``."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.secondaryModels:1
@@ -514,7 +514,7 @@ msgid "A tuple of Strings specifying the names of the secondary models for the c
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.secondaryModels:3
-msgid "The `slaveModels` attribute was changed to `secondaryModels`."
+msgid "The ``slaveModels`` attribute was changed to ``secondaryModels``."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.status:1

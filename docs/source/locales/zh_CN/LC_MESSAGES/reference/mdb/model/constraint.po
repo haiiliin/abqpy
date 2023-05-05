@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1132,8 +1132,8 @@ msgstr ""
 msgid ""
 "A Float specifying the value of the thermal expansion coefficient. The "
 "default value is 0.0. The alpha argument applies only when "
-"couplingType=KINEMATIC.  .. versionadded:: 2022     The `alpha` argument "
-"was added."
+"couplingType=KINEMATIC.  .. versionadded:: 2022     The ``alpha`` "
+"argument was added."
 msgstr ""
 
 #: ../../docstring
@@ -1148,7 +1148,7 @@ msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:63
 #: abaqus.Constraint.Coupling.Coupling:77 of
-msgid "The `alpha` argument was added."
+msgid "The ``alpha`` argument was added."
 msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:66
@@ -1567,19 +1567,19 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:12 of
 msgid ""
 "A String specifying the constraint repository key.  .. versionchanged:: "
-"2022     The `master` argument was renamed to `main`."
+"2022     The ``master`` argument was renamed to ``main``."
 msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:14
 #: abaqus.Constraint.Tie.Tie:30 of
-msgid "The `master` argument was renamed to `main`."
+msgid "The ``master`` argument was renamed to ``main``."
 msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:17 of
 msgid ""
 "A Region object specifying the name of the main surface.  .. "
-"versionchanged:: 2022     The `slave` argument was renamed to "
-"`secondary`."
+"versionchanged:: 2022     The ``slave`` argument was renamed to "
+"``secondary``."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:17
@@ -1589,7 +1589,7 @@ msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:19
 #: abaqus.Constraint.Tie.Tie:35 of
-msgid "The `slave` argument was renamed to `secondary`."
+msgid "The ``slave`` argument was renamed to ``secondary``."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:22
@@ -1782,7 +1782,7 @@ msgid "COUPLING"
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.Coupling.Coupling.alpha:4 of
-msgid "The `alpha` attribute was added."
+msgid "The ``alpha`` attribute was added."
 msgstr ""
 
 #: abaqus.Constraint.Coupling.Coupling.setValues:1 of
@@ -1934,22 +1934,23 @@ msgstr ""
 #: abaqus.Constraint.Tie.Tie:28 of
 msgid ""
 "A Region object specifying the name of the main surface.  .. "
-"versionchanged:: 2022     The `master` argument was renamed to `main`."
+"versionchanged:: 2022     The ``master`` argument was renamed to "
+"``main``."
 msgstr ""
 
 #: abaqus.Constraint.Tie.Tie:33 of
 msgid ""
 "A Region object specifying the name of the secondary surface.  .. "
-"versionchanged:: 2022     The `slave` argument was renamed to "
-"`secondary`."
+"versionchanged:: 2022     The ``slave`` argument was renamed to "
+"``secondary``."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.Tie.Tie.main:3 of
-msgid "The `master` attribute was renamed to `main`."
+msgid "The ``master`` attribute was renamed to ``main``."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.Tie.Tie.secondary:3 of
-msgid "The `slave` attribute was renamed to `secondary`."
+msgid "The ``slave`` attribute was renamed to ``secondary``."
 msgstr ""
 
 #: abaqus.Constraint.Tie.Tie.setValues:1 of
@@ -3631,5 +3632,60 @@ msgstr ""
 #~ "Check `Tie.__init__ on help.3ds.com/2022 "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiepyc.htm?contextscope=all"
 #~ "#simaker-tie__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the value of "
+#~ "the thermal expansion coefficient. The "
+#~ "default value is 0.0. The alpha "
+#~ "argument applies only when "
+#~ "couplingType=KINEMATIC.  .. versionadded:: 2022"
+#~ "     The `alpha` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `alpha` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the constraint "
+#~ "repository key.  .. versionchanged:: 2022"
+#~ "     The `master` argument was renamed "
+#~ "to `main`."
+#~ msgstr ""
+
+#~ msgid "The `master` argument was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the name "
+#~ "of the main surface.  .. "
+#~ "versionchanged:: 2022     The `slave` argument"
+#~ " was renamed to `secondary`."
+#~ msgstr ""
+
+#~ msgid "The `slave` argument was renamed to `secondary`."
+#~ msgstr ""
+
+#~ msgid "The `alpha` attribute was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the name "
+#~ "of the main surface.  .. "
+#~ "versionchanged:: 2022     The `master` "
+#~ "argument was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the name "
+#~ "of the secondary surface.  .. "
+#~ "versionchanged:: 2022     The `slave` argument"
+#~ " was renamed to `secondary`."
+#~ msgstr ""
+
+#~ msgid "The `master` attribute was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid "The `slave` attribute was renamed to `secondary`."
 #~ msgstr ""
 

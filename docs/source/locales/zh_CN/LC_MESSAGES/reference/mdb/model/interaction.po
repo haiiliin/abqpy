@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:49+0000\n"
+"POT-Creation-Date: 2023-05-05 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3057,7 +3057,7 @@ msgstr ""
 msgid ""
 "A SurfaceCrushTriggerAssignment object specifying the surface crush "
 "trigger assignments in the contact domain.  .. versionadded:: 2021     "
-"The `surfaceCrushTriggerAssignments` argument was added."
+"The ``surfaceCrushTriggerAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:42 of
@@ -3067,14 +3067,14 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:45 of
-msgid "The `surfaceCrushTriggerAssignments` argument was added."
+msgid "The ``surfaceCrushTriggerAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:48 of
 msgid ""
 "A SurfaceFrictionAssignment object specifying the surface friction "
 "assignments in the contact domain.  .. versionadded:: 2021     The "
-"`surfaceFrictionAssignments` argument was added."
+"``surfaceFrictionAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:48 of
@@ -3084,7 +3084,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:51 of
-msgid "The `surfaceFrictionAssignments` argument was added."
+msgid "The ``surfaceFrictionAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:54
@@ -3092,8 +3092,8 @@ msgstr ""
 msgid ""
 "A MainSecondaryAssignment object specifying the main-secondary "
 "assignments in the contact domain.  .. versionchanged:: 2022     The "
-"argument `masterSlaveAssignments` was renamed to "
-"`mainSecondaryAssignments`."
+"argument ``masterSlaveAssignments`` was renamed to "
+"``mainSecondaryAssignments``."
 msgstr ""
 
 #: ../../docstring
@@ -3109,14 +3109,14 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:57
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:64 of
 msgid ""
-"The argument `masterSlaveAssignments` was renamed to "
-"`mainSecondaryAssignments`."
+"The argument ``masterSlaveAssignments`` was renamed to "
+"``mainSecondaryAssignments``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:60 of
 msgid ""
 "A PolarityAssignments object specifying the polarity assignments in the "
-"contact domain.  .. versionadded:: 2020     The `polarityAssignments` "
+"contact domain.  .. versionadded:: 2020     The ``polarityAssignments`` "
 "argument was added."
 msgstr ""
 
@@ -3129,7 +3129,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:62 of
-msgid "The `polarityAssignments` argument was added."
+msgid "The ``polarityAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactExp:65 of
@@ -3156,7 +3156,7 @@ msgstr ""
 msgid ""
 "A SurfaceBeamSmoothingAssignment object specifying the surface beam "
 "smoothing assignments in the contact domain.  .. versionadded:: 2021     "
-"The `surfaceBeamSmoothingAssignments` argument was added."
+"The ``surfaceBeamSmoothingAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:38 of
@@ -3166,14 +3166,14 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:41 of
-msgid "The `surfaceBeamSmoothingAssignments` argument was added."
+msgid "The ``surfaceBeamSmoothingAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:44 of
 msgid ""
 "A SurfaceVertexCriteriaAssignment object specifying the surface vertex "
 "criteria assignments in the contact domain.  .. versionadded:: 2021     "
-"The `surfaceVertexCriteriaAssignments` argument was added."
+"The ``surfaceVertexCriteriaAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:44 of
@@ -3183,7 +3183,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:47 of
-msgid "The `surfaceVertexCriteriaAssignments` argument was added."
+msgid "The ``surfaceVertexCriteriaAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:50 of
@@ -3195,7 +3195,7 @@ msgid ""
 "SymbolicConstant specifying the overriding the smoothness value to be "
 "used for the   first surface. Possible values of the SymbolicConstant are"
 " NONE and SMALL_SLIDING.  .. versionadded:: 2021     The "
-"`slidingFormulationAssignments` argument was added."
+"``slidingFormulationAssignments`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:50 of
@@ -3218,7 +3218,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.ContactStd:58 of
-msgid "The `slidingFormulationAssignments` argument was added."
+msgid "The ``slidingFormulationAssignments`` argument was added."
 msgstr ""
 
 #: ../../docstring
@@ -3274,7 +3274,7 @@ msgstr ""
 #: of
 msgid ""
 "A Region object specifying the main surface.  .. versionchanged:: 2022"
-"     The argument `master` was renamed to `main`."
+"     The argument ``master`` was renamed to ``main``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:34
@@ -3295,7 +3295,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:19
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp:29
 #: of
-msgid "The argument `master` was renamed to `main`."
+msgid "The argument ``master`` was renamed to ``main``."
 msgstr ""
 
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:39
@@ -3305,7 +3305,7 @@ msgstr ""
 #: of
 msgid ""
 "A Region object specifying the secondary surface.  .. versionchanged:: "
-"2022     The argument `slave` was renamed to `secondary`."
+"2022     The argument ``slave`` was renamed to ``secondary``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:39
@@ -3326,7 +3326,7 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp:24
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp:34
 #: of
-msgid "The argument `slave` was renamed to `secondary`."
+msgid "The argument ``slave`` was renamed to ``secondary``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:44
@@ -3709,7 +3709,7 @@ msgid ":class:`FluidExchange`"
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:8 of
-msgid "The `FluidInflator` method was added."
+msgid "The ``FluidInflator`` method was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator:12 of
@@ -4012,7 +4012,7 @@ msgstr ""
 msgid ""
 "A RegionArray object specifying the points on the main surface that are "
 "exposed to the fluid.  .. versionchanged:: 2022     The argument "
-"`masterPoints` was renamed to `mainPoints`."
+"``masterPoints`` was renamed to ``mainPoints``."
 msgstr ""
 
 #: ../../docstring
@@ -4026,7 +4026,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:22
 #: abaqus.Interaction.PressurePenetration.PressurePenetration:36 of
-msgid "The argument `masterPoints` was renamed to `mainPoints`."
+msgid "The argument ``masterPoints`` was renamed to ``mainPoints``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:25
@@ -4034,7 +4034,7 @@ msgstr ""
 msgid ""
 "A RegionArray object specifying the points on the secondary surface that "
 "are exposed to the fluid.  .. versionchanged:: 2022     The argument "
-"`slavePoints` was renamed to `secondaryPoints`."
+"``slavePoints`` was renamed to ``secondaryPoints``."
 msgstr ""
 
 #: ../../docstring
@@ -4049,7 +4049,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration:28
 #: abaqus.Interaction.PressurePenetration.PressurePenetration:42 of
-msgid "The argument `slavePoints` was renamed to `secondaryPoints`."
+msgid "The argument ``slavePoints`` was renamed to ``secondaryPoints``."
 msgstr ""
 
 #: ../../docstring
@@ -4931,7 +4931,7 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the bolt handedness formulation. Possible "
 "values are RIGHT and LEFT. The default value is RIGHT.  .. versionadded::"
-" 2019     The `normalAdjustment` argument was added."
+" 2019     The ``normalAdjustment`` argument was added."
 msgstr ""
 
 #: ../../docstring
@@ -4952,7 +4952,7 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:102
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:109
 #: of
-msgid "The `normalAdjustment` argument was added."
+msgid "The ``normalAdjustment`` argument was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd:124
@@ -4963,7 +4963,7 @@ msgid ""
 "A SymbolicConstant specifying the bolt normal adjustment formulation for "
 "all secondary nodes. Possible values are UNIFORM AXIAL COMPONENT and "
 "LOCATION DEPENDENT. The default value is UNIFORM AXIAL COMPONENT.  .. "
-"versionadded:: 2019     The `normalAdjustment` argument was added."
+"versionadded:: 2019     The ``normalAdjustment`` argument was added."
 msgstr ""
 
 #: ../../docstring
@@ -5115,8 +5115,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to create a surface that is the union of all"
 " main surfaces found. The default value is OFF.  .. versionchanged:: 2022"
-"     The argument `createUnionOfMasterSurfaces` was renamed to "
-"`createUnionOfMainSurfaces`."
+"     The argument ``createUnionOfMasterSurfaces`` was renamed to "
+"``createUnionOfMainSurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:43 of
@@ -5127,16 +5127,16 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:46 of
 msgid ""
-"The argument `createUnionOfMasterSurfaces` was renamed to "
-"`createUnionOfMainSurfaces`."
+"The argument ``createUnionOfMasterSurfaces`` was renamed to "
+"``createUnionOfMainSurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:49 of
 msgid ""
 "A Boolean specifying whether to create a surface that is the union of all"
 " secondary surfaces found. The default value is OFF.  .. versionchanged::"
-" 2022     The argument `createUnionOfSlaveSurfaces` was renamed to "
-"`createUnionOfSecondarySurfaces`."
+" 2022     The argument ``createUnionOfSlaveSurfaces`` was renamed to "
+"``createUnionOfSecondarySurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:49 of
@@ -5147,16 +5147,17 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:52 of
 msgid ""
-"The argument `createUnionOfSlaveSurfaces` was renamed to "
-"`createUnionOfSecondarySurfaces`."
+"The argument ``createUnionOfSlaveSurfaces`` was renamed to "
+"``createUnionOfSecondarySurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:55 of
 msgid ""
 "A Boolean specifying whether to create a surface that is the union of all"
 " main and secondary surfaces found. The default value is OFF.  .. "
-"versionchanged:: 2022     The argument `createUnionOfMasterSlaveSurfaces`"
-" was renamed to `createUnionOfMainSecondarySurfaces`."
+"versionchanged:: 2022     The argument "
+"``createUnionOfMasterSlaveSurfaces`` was renamed to "
+"``createUnionOfMainSecondarySurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:55 of
@@ -5167,8 +5168,8 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:58 of
 msgid ""
-"The argument `createUnionOfMasterSlaveSurfaces` was renamed to "
-"`createUnionOfMainSecondarySurfaces`."
+"The argument ``createUnionOfMasterSlaveSurfaces`` was renamed to "
+"``createUnionOfMainSecondarySurfaces``."
 msgstr ""
 
 #: abaqus.Interaction.InteractionModel.InteractionModel.contactDetection:61 of
@@ -5782,7 +5783,7 @@ msgid ""
 "argument is not valid when **overclosureType** = INTERFERENCE and if "
 "**openingTolerance** or **overclosureTolerance** is specified. The "
 "default value is None.  .. versionchanged:: 2022     The argument "
-"`slaveNodesetName` was renamed to `secondaryNodesetName`."
+"``slaveNodesetName`` was renamed to ``secondaryNodesetName``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.ExpInitialization.ExpInitialization:54
@@ -5802,7 +5803,7 @@ msgstr ""
 #: abaqus.Interaction.ExpInitialization.ExpInitialization.setValues:35
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.ExpInitialization:42
 #: of
-msgid "The argument `slaveNodesetName` was renamed to `secondaryNodesetName`."
+msgid "The argument ``slaveNodesetName`` was renamed to ``secondaryNodesetName``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.ExpInitialization.ExpInitialization:62
@@ -5830,7 +5831,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:8
 #: of
-msgid "The `ExpInitialization` method was added."
+msgid "The ``ExpInitialization`` method was added."
 msgstr ""
 
 #: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization:12
@@ -7049,7 +7050,7 @@ msgstr ""
 
 #: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty:8
 #: of
-msgid "The `FluidInflatorProperty` method was added."
+msgid "The ``FluidInflatorProperty`` method was added."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:47
@@ -8574,7 +8575,7 @@ msgstr ""
 msgid ""
 "A Float specifying the fraction of converted heat distributed to the "
 "secondary surface. The default value is 0.5.  .. versionchanged:: 2022"
-"     The argument `slaveFraction` was renamed to `secondaryFraction`."
+"     The argument ``slaveFraction`` was renamed to ``secondaryFraction``."
 msgstr ""
 
 #: ../../docstring
@@ -8589,7 +8590,7 @@ msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.HeatGeneration:18
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration:31 of
-msgid "The argument `slaveFraction` was renamed to `secondaryFraction`."
+msgid "The argument ``slaveFraction`` was renamed to ``secondaryFraction``."
 msgstr ""
 
 #: ../../docstring
@@ -8801,8 +8802,8 @@ msgstr ""
 #: abaqus.Interaction.Radiation.Radiation:24 of
 msgid ""
 "A Float specifying the emissivity of the main surface.  .. "
-"versionchanged:: 2022     The argument `masterEmissivity` was renamed to "
-"`mainEmissivity`."
+"versionchanged:: 2022     The argument ``masterEmissivity`` was renamed "
+"to ``mainEmissivity``."
 msgstr ""
 
 #: ../../docstring
@@ -8814,15 +8815,15 @@ msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.Radiation:14
 #: abaqus.Interaction.Radiation.Radiation:26 of
-msgid "The argument `masterEmissivity` was renamed to `mainEmissivity`."
+msgid "The argument ``masterEmissivity`` was renamed to ``mainEmissivity``."
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.Radiation:17
 #: abaqus.Interaction.Radiation.Radiation:29 of
 msgid ""
 "A Float specifying the emissivity of the secondary surface.  .. "
-"versionchanged:: 2022     The argument `slaveEmissivity` was renamed to "
-"`secondaryEmissivity`."
+"versionchanged:: 2022     The argument ``slaveEmissivity`` was renamed to"
+" ``secondaryEmissivity``."
 msgstr ""
 
 #: ../../docstring
@@ -8834,7 +8835,7 @@ msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.Radiation:19
 #: abaqus.Interaction.Radiation.Radiation:31 of
-msgid "The argument `slaveEmissivity` was renamed to `secondaryEmissivity`."
+msgid "The argument ``slaveEmissivity`` was renamed to ``secondaryEmissivity``."
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.Radiation:22
@@ -10376,13 +10377,13 @@ msgstr ""
 #: abaqus.Interaction.InteractionModel.ContactExp.mainSecondaryAssignments:4
 #: abaqus.Interaction.InteractionModel.ContactStd.mainSecondaryAssignments:4 of
 msgid ""
-"The attribute `masterSlaveAssignments` was renamed to "
-"`mainSecondaryAssignments`."
+"The attribute ``masterSlaveAssignments`` was renamed to "
+"``mainSecondaryAssignments``."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments:3 of
-msgid "The `polarityAssignments` attribute was added."
+msgid "The ``polarityAssignments`` attribute was added."
 msgstr ""
 
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment:1 of
@@ -11037,7 +11038,7 @@ msgstr ""
 
 #: abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment:15
 #: of
-msgid "The `SurfaceCrushTriggerAssignment` class was added."
+msgid "The ``SurfaceCrushTriggerAssignment`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment:19
@@ -11342,7 +11343,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment:15 of
-msgid "The `SurfaceFrictionAssignment` class was added."
+msgid "The ``SurfaceFrictionAssignment`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment:19 of
@@ -12038,7 +12039,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.secondaryFraction:4
 #: of
-msgid "The attribute `slaveFraction` was renamed to `secondaryFraction`."
+msgid "The attribute ``slaveFraction`` was renamed to ``secondaryFraction``."
 msgstr ""
 
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration.setValues:1 of
@@ -12115,12 +12116,12 @@ msgid "GAP RADIATION"
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.Radiation.Radiation.mainEmissivity:3 of
-msgid "The attribute `masterEmissivity` was renamed to `mainEmissivity`."
+msgid "The attribute ``masterEmissivity`` was renamed to ``mainEmissivity``."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.Radiation.Radiation.secondaryEmissivity:3
 #: of
-msgid "The attribute `slaveEmissivity` was renamed to `secondaryEmissivity`."
+msgid "The attribute ``slaveEmissivity`` was renamed to ``secondaryEmissivity``."
 msgstr ""
 
 #: abaqus.Interaction.Radiation.Radiation.setValues:1 of
@@ -12313,7 +12314,7 @@ msgstr ""
 
 #: abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment:15
 #: of
-msgid "The `SlidingFormulationAssignment` class was added."
+msgid "The ``SlidingFormulationAssignment`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment:19
@@ -12644,7 +12645,7 @@ msgstr ""
 
 #: abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment:15
 #: of
-msgid "The `SurfaceBeamSmoothingAssignment` class was added."
+msgid "The ``SurfaceBeamSmoothingAssignment`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment:19
@@ -12756,7 +12757,7 @@ msgstr ""
 
 #: abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment:15
 #: of
-msgid "The `SurfaceVertexCriteriaAssignment` class was added."
+msgid "The ``SurfaceVertexCriteriaAssignment`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment:19
@@ -12897,14 +12898,14 @@ msgstr ""
 #: ../../docstring abaqus.Interaction.InteractionModel.CyclicSymmetry.main:3
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.main:3
 #: of
-msgid "The attribute `master` was renamed to `main`."
+msgid "The attribute ``master`` was renamed to ``main``."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.InteractionModel.CyclicSymmetry.secondary:3
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp.secondary:3
 #: of
-msgid "The attribute `slave` was renamed to `secondary`."
+msgid "The attribute ``slave`` was renamed to ``secondary``."
 msgstr ""
 
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry.setValues:1 of
@@ -13133,13 +13134,15 @@ msgid "CONTACT INITIALIZATION DATA"
 msgstr ""
 
 #: abaqus.Interaction.ExpInitialization.ExpInitialization:15 of
-msgid "The `ExpInitialization` class was added."
+msgid "The ``ExpInitialization`` class was added."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization.secondaryNodesetName:6
 #: of
-msgid "The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`."
+msgid ""
+"The attribute ``slaveNodesetName`` was renamed to "
+"``secondaryNodesetName``."
 msgstr ""
 
 #: abaqus.Interaction.ExpInitialization.ExpInitialization.setValues:1 of
@@ -13405,7 +13408,7 @@ msgid "FLUID INFLATOR"
 msgstr ""
 
 #: abaqus.Interaction.FluidInflator.FluidInflator:15 of
-msgid "The `FluidInflator` class was added."
+msgid "The ``FluidInflator`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflator.FluidInflator:19 of
@@ -13492,7 +13495,7 @@ msgid "FLUID INFLATOR PROPERTY"
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:43 of
-msgid "The `FluidInflatorProperty` class was added."
+msgid "The ``FluidInflatorProperty`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty:88 of
@@ -13523,7 +13526,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorState.FluidInflatorState:13 of
-msgid "The `FluidInflatorState` class was added."
+msgid "The ``FluidInflatorState`` class was added."
 msgstr ""
 
 #: abaqus.Interaction.FluidInflatorState.FluidInflatorState:17 of
@@ -13754,13 +13757,13 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.mainPoints:4 of
-msgid "The attribute `masterPoints` was renamed to `mainPoints`."
+msgid "The attribute ``masterPoints`` was renamed to ``mainPoints``."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.secondaryPoints:4
 #: of
-msgid "The attribute `slavePoints` was renamed to `secondaryPoints`."
+msgid "The attribute ``slavePoints`` was renamed to ``secondaryPoints``."
 msgstr ""
 
 #: abaqus.Interaction.PressurePenetration.PressurePenetration.setValues:1 of
@@ -14056,13 +14059,13 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.handedness:4
 #: of
-msgid "The `handedness` attribute was added."
+msgid "The ``handedness`` attribute was added."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.normalAdjustment:5
 #: of
-msgid "The `normalAdjustment` attribute was added."
+msgid "The ``normalAdjustment`` attribute was added."
 msgstr ""
 
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues:1
@@ -27260,5 +27263,325 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackgrowthpyc.htm?contextscope=all"
 #~ "#simaker-xfemcrackgrowth__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SurfaceCrushTriggerAssignment object specifying"
+#~ " the surface crush trigger assignments "
+#~ "in the contact domain.  .. "
+#~ "versionadded:: 2021     The "
+#~ "`surfaceCrushTriggerAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `surfaceCrushTriggerAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SurfaceFrictionAssignment object specifying "
+#~ "the surface friction assignments in the"
+#~ " contact domain.  .. versionadded:: 2021"
+#~ "     The `surfaceFrictionAssignments` argument "
+#~ "was added."
+#~ msgstr ""
+
+#~ msgid "The `surfaceFrictionAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A MainSecondaryAssignment object specifying "
+#~ "the main-secondary assignments in the"
+#~ " contact domain.  .. versionchanged:: 2022"
+#~ "     The argument `masterSlaveAssignments` was"
+#~ " renamed to `mainSecondaryAssignments`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The argument `masterSlaveAssignments` was "
+#~ "renamed to `mainSecondaryAssignments`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A PolarityAssignments object specifying the"
+#~ " polarity assignments in the contact "
+#~ "domain.  .. versionadded:: 2020     The "
+#~ "`polarityAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `polarityAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SurfaceBeamSmoothingAssignment object specifying"
+#~ " the surface beam smoothing assignments "
+#~ "in the contact domain.  .. "
+#~ "versionadded:: 2021     The "
+#~ "`surfaceBeamSmoothingAssignments` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid "The `surfaceBeamSmoothingAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SurfaceVertexCriteriaAssignment object specifying"
+#~ " the surface vertex criteria assignments"
+#~ " in the contact domain.  .. "
+#~ "versionadded:: 2021     The "
+#~ "`surfaceVertexCriteriaAssignments` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid "The `surfaceVertexCriteriaAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of tuples of "
+#~ "SlidingFormulationAssignment specifying the sliding"
+#~ " formulation assignments. Each tuple "
+#~ "contains two entries:  - A region "
+#~ "object or the SymbolicConstant GLOBAL "
+#~ "specifying the surface to which the"
+#~ "   sliding formulation attribute is "
+#~ "assigned. - A SymbolicConstant specifying "
+#~ "the overriding the smoothness value to"
+#~ " be used for the   first surface. "
+#~ "Possible values of the SymbolicConstant "
+#~ "are NONE and SMALL_SLIDING.  .. "
+#~ "versionadded:: 2021     The "
+#~ "`slidingFormulationAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `slidingFormulationAssignments` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the main "
+#~ "surface.  .. versionchanged:: 2022     The "
+#~ "argument `master` was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid "The argument `master` was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Region object specifying the secondary"
+#~ " surface.  .. versionchanged:: 2022     The"
+#~ " argument `slave` was renamed to "
+#~ "`secondary`."
+#~ msgstr ""
+
+#~ msgid "The argument `slave` was renamed to `secondary`."
+#~ msgstr ""
+
+#~ msgid "The `FluidInflator` method was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A RegionArray object specifying the "
+#~ "points on the main surface that "
+#~ "are exposed to the fluid.  .. "
+#~ "versionchanged:: 2022     The argument "
+#~ "`masterPoints` was renamed to `mainPoints`."
+#~ msgstr ""
+
+#~ msgid "The argument `masterPoints` was renamed to `mainPoints`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A RegionArray object specifying the "
+#~ "points on the secondary surface that "
+#~ "are exposed to the fluid.  .. "
+#~ "versionchanged:: 2022     The argument "
+#~ "`slavePoints` was renamed to "
+#~ "`secondaryPoints`."
+#~ msgstr ""
+
+#~ msgid "The argument `slavePoints` was renamed to `secondaryPoints`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the bolt "
+#~ "handedness formulation. Possible values are"
+#~ " RIGHT and LEFT. The default value"
+#~ " is RIGHT.  .. versionadded:: 2019     "
+#~ "The `normalAdjustment` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `normalAdjustment` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the bolt "
+#~ "normal adjustment formulation for all "
+#~ "secondary nodes. Possible values are "
+#~ "UNIFORM AXIAL COMPONENT and LOCATION "
+#~ "DEPENDENT. The default value is UNIFORM"
+#~ " AXIAL COMPONENT.  .. versionadded:: 2019"
+#~ "     The `normalAdjustment` argument was "
+#~ "added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to create"
+#~ " a surface that is the union of"
+#~ " all main surfaces found. The default"
+#~ " value is OFF.  .. versionchanged:: "
+#~ "2022     The argument `createUnionOfMasterSurfaces`"
+#~ " was renamed to `createUnionOfMainSurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The argument `createUnionOfMasterSurfaces` was "
+#~ "renamed to `createUnionOfMainSurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to create"
+#~ " a surface that is the union of"
+#~ " all secondary surfaces found. The "
+#~ "default value is OFF.  .. "
+#~ "versionchanged:: 2022     The argument "
+#~ "`createUnionOfSlaveSurfaces` was renamed to "
+#~ "`createUnionOfSecondarySurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The argument `createUnionOfSlaveSurfaces` was "
+#~ "renamed to `createUnionOfSecondarySurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to create"
+#~ " a surface that is the union of"
+#~ " all main and secondary surfaces "
+#~ "found. The default value is OFF.  "
+#~ ".. versionchanged:: 2022     The argument "
+#~ "`createUnionOfMasterSlaveSurfaces` was renamed to"
+#~ " `createUnionOfMainSecondarySurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The argument `createUnionOfMasterSlaveSurfaces` was"
+#~ " renamed to `createUnionOfMainSecondarySurfaces`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the node set containing the secondary"
+#~ " nodes to be included in the "
+#~ "initial clearance specification. This argument"
+#~ " is not valid when **overclosureType** "
+#~ "= INTERFERENCE and if **openingTolerance** "
+#~ "or **overclosureTolerance** is specified. The"
+#~ " default value is None.  .. "
+#~ "versionchanged:: 2022     The argument "
+#~ "`slaveNodesetName` was renamed to "
+#~ "`secondaryNodesetName`."
+#~ msgstr ""
+
+#~ msgid "The argument `slaveNodesetName` was renamed to `secondaryNodesetName`."
+#~ msgstr ""
+
+#~ msgid "The `ExpInitialization` method was added."
+#~ msgstr ""
+
+#~ msgid "The `FluidInflatorProperty` method was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the fraction of "
+#~ "converted heat distributed to the "
+#~ "secondary surface. The default value is"
+#~ " 0.5.  .. versionchanged:: 2022     The "
+#~ "argument `slaveFraction` was renamed to "
+#~ "`secondaryFraction`."
+#~ msgstr ""
+
+#~ msgid "The argument `slaveFraction` was renamed to `secondaryFraction`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the emissivity of "
+#~ "the main surface.  .. versionchanged:: "
+#~ "2022     The argument `masterEmissivity` was"
+#~ " renamed to `mainEmissivity`."
+#~ msgstr ""
+
+#~ msgid "The argument `masterEmissivity` was renamed to `mainEmissivity`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the emissivity of "
+#~ "the secondary surface.  .. versionchanged::"
+#~ " 2022     The argument `slaveEmissivity` "
+#~ "was renamed to `secondaryEmissivity`."
+#~ msgstr ""
+
+#~ msgid "The argument `slaveEmissivity` was renamed to `secondaryEmissivity`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The attribute `masterSlaveAssignments` was "
+#~ "renamed to `mainSecondaryAssignments`."
+#~ msgstr ""
+
+#~ msgid "The `polarityAssignments` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `SurfaceCrushTriggerAssignment` class was added."
+#~ msgstr ""
+
+#~ msgid "The `SurfaceFrictionAssignment` class was added."
+#~ msgstr ""
+
+#~ msgid "The attribute `slaveFraction` was renamed to `secondaryFraction`."
+#~ msgstr ""
+
+#~ msgid "The attribute `masterEmissivity` was renamed to `mainEmissivity`."
+#~ msgstr ""
+
+#~ msgid "The attribute `slaveEmissivity` was renamed to `secondaryEmissivity`."
+#~ msgstr ""
+
+#~ msgid "The `SlidingFormulationAssignment` class was added."
+#~ msgstr ""
+
+#~ msgid "The `SurfaceBeamSmoothingAssignment` class was added."
+#~ msgstr ""
+
+#~ msgid "The `SurfaceVertexCriteriaAssignment` class was added."
+#~ msgstr ""
+
+#~ msgid "The attribute `master` was renamed to `main`."
+#~ msgstr ""
+
+#~ msgid "The attribute `slave` was renamed to `secondary`."
+#~ msgstr ""
+
+#~ msgid "The `ExpInitialization` class was added."
+#~ msgstr ""
+
+#~ msgid "The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`."
+#~ msgstr ""
+
+#~ msgid "The `FluidInflator` class was added."
+#~ msgstr ""
+
+#~ msgid "The `FluidInflatorProperty` class was added."
+#~ msgstr ""
+
+#~ msgid "The `FluidInflatorState` class was added."
+#~ msgstr ""
+
+#~ msgid "The attribute `masterPoints` was renamed to `mainPoints`."
+#~ msgstr ""
+
+#~ msgid "The attribute `slavePoints` was renamed to `secondaryPoints`."
+#~ msgstr ""
+
+#~ msgid "The `handedness` attribute was added."
+#~ msgstr ""
+
+#~ msgid "The `normalAdjustment` attribute was added."
 #~ msgstr ""
 
