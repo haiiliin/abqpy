@@ -296,7 +296,7 @@ class AcisFile:
                 mdb.openAcis
 
         .. versionadded:: 2020
-            The `openSolidworks` method was added.
+            The ``openSolidworks`` method was added.
 
         Parameters
         ----------

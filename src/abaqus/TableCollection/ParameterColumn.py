@@ -22,7 +22,7 @@ class ParameterColumn:
         - PARAMETER TABLE
 
     .. versionadded:: 2020
-        The `ParameterColumn` class was added.
+        The ``ParameterColumn`` class was added.
     """
 
     #: A SymbolicConstant specifying the data type of the parameter. Possible values are
