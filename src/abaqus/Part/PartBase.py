@@ -1513,7 +1513,7 @@ class PartBase(PartFeature):
 
             - the name, modeling space, and analysis type; and
             - whether twist is included (only available when the modeling space is axisymmetric and
-        the analysis type is deformable); and
+              the analysis type is deformable); and
             - the number of vertices, edges, faces and cells if applicable.
 
         Parameters
