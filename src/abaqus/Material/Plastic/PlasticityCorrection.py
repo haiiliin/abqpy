@@ -43,7 +43,7 @@ class PlasticityCorrection:
 
     .. versionadded:: 2023
 
-        The `PlasticityCorrection` class was added.
+        The ``PlasticityCorrection`` class was added.
     """
 
     #: Set type=RAMBERG_OSGOOD to specify the Ramberg-Osgood relationship.

@@ -22,7 +22,7 @@ class BeadFilter(GeometricRestriction):
 
     .. versionadded:: 2023
 
-        The `BeadFilter` class was added.
+        The ``BeadFilter`` class was added.
     """
 
     #: A String specifying the geometric restriction repository key.

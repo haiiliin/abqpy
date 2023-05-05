@@ -24,7 +24,7 @@ class TopologyRibDesign(GeometricRestriction):
 
     .. versionadded:: 2023
 
-        The `TopologyRibDesign` class was added.
+        The ``TopologyRibDesign`` class was added.
     """
 
     #: A String specifying the geometric restriction repository key.

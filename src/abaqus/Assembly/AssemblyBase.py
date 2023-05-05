@@ -445,7 +445,7 @@ class AssemblyBase(AssemblyFeature):
 
             .. versionadded:: 2023
 
-                The `csys` argument was added.
+                The ``csys`` argument was added.
 
         Returns
         -------
@@ -464,7 +464,7 @@ class AssemblyBase(AssemblyFeature):
 
         .. versionchanged:: 2023
 
-            The `csys` argument was removed.
+            The ``csys`` argument was removed.
 
         Parameters
         ----------
@@ -964,6 +964,6 @@ class AssemblyBase(AssemblyFeature):
             A sequence of MeshNode objects or a Set object containing nodes.
 
             .. versionchanged:: 2020
-                The `coordinates` arguments was removed, the `nodes` now replaces it.
+                The ``coordinates`` arguments was removed, the ``nodes`` now replaces it.
         """
         ...

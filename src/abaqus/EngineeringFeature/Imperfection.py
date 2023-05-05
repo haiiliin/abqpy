@@ -14,7 +14,7 @@ class Imperfection:
             mdb.models[name].rootAssembly.engineeringFeatures.imperfections[name]
 
     .. versionadded:: 2023
-        The `Imperfection` class was added.
+        The ``Imperfection`` class was added.
     """
 
     #: A String specifying the repository key.

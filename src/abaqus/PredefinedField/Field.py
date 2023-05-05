@@ -27,7 +27,7 @@ class Field(PredefinedField):
         - FIELD
 
     .. versionadded:: 2018
-        The `Field` class was added.
+        The ``Field`` class was added.
     """
 
     #: A String specifying the repository key.

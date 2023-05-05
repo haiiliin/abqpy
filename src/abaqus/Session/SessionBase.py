@@ -423,7 +423,7 @@ class SessionBase:
             available options are 'Pro/ENGINEER', 'CATIA V5' and 'CATIA V6'.
         parameterFile
             A parameter file containing the parameters that were exposed in the CAD system using the
-            `ABQ_` prefix.
+            ``ABQ_`` prefix.
         CADPartFile
             A file name specifying the CAD part file for which parameter update is triggered.For
             **CADName** = 'CATIA V5' or 'CATIA V6', you can specify either products or parts using this
@@ -508,7 +508,7 @@ class SessionBase:
                     printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'
                 )
 
-            The `PROPERTIES` is a list of characters that represents the
+            The ``PROPERTIES`` is a list of characters that represents the
             printing preferences for the selected Windows printer. The properties are not required
             in a script; the printed output will use the current settings for the selected printer.
             You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer.
@@ -593,8 +593,8 @@ class SessionBase:
         """
         ...
 
-    # The following method was originally in the `OdbCommands` page documentation
-    # But it accessed only by `session` object.
+    # The following method was originally in the ``OdbCommands`` page documentation
+    # But it accessed only by ``session`` object.
     @abaqus_method_doc
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
         """This method opens an existing output database (`.odb`) file and creates a new Odb object.
@@ -609,10 +609,10 @@ class SessionBase:
         Parameters
         ----------
         name
-            A String specifying the repository key. If the `name` is not the same as the `path` to the
-            output database (`.odb`) file, the `path` must be specified as well. Additionally, to
-            support backwards compatibility of the interface, if the `name` parameter is omitted,
-            the `path` and `name` will be presumed to be the same.
+            A String specifying the repository key. If the ``name`` is not the same as the ``path`` to the
+            output database (`.odb`) file, the ``path`` must be specified as well. Additionally, to
+            support backwards compatibility of the interface, if the ``name`` parameter is omitted,
+            the ``path`` and ``name`` will be presumed to be the same.
         path
             A String specifying the path to an existing output database (`.odb`) file.
         readOnly

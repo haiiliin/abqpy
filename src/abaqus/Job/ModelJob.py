@@ -24,7 +24,7 @@ class ModelJob(Job):
 
     .. versionchanged:: 2023
 
-        The `parallelizationMethodExplicit` attribute was removed.
+        The ``parallelizationMethodExplicit`` attribute was removed.
     """
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
@@ -102,7 +102,7 @@ class ModelJob(Job):
     #:
     #: .. versionchanged:: 2023
     #:
-    #:     The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+    #:     The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
     #:     argument was removed in 2023.
     numDomains: int = 1
 
@@ -133,10 +133,10 @@ class ModelJob(Job):
     queue: Optional[str] = ""
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
-    #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+    #: syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
     #: valid according to the system administrator. The default value is an empty
     #: string. Note: You can use the **atTime** argument when creating a Job object on a Windows
-    #: workstation; however, the `at` command is available only on Linux platforms.
+    #: workstation; however, the ``at`` command is available only on Linux platforms.
     atTime: Optional[str] = ""
 
     #: A String specifying the location of the scratch directory. The default value is an empty
@@ -220,10 +220,10 @@ class ModelJob(Job):
             with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive.
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
-            syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
+            syntax must be valid for the Linux ``at`` command. If **queue** is set, the syntax must be
             valid according to the system administrator. The default value is an empty
             string. Note: You can use the **atTime** argument when creating a Job object on a Windows
-            workstation; however, the `at` command is available only on Linux platforms.
+            workstation; however, the ``at`` command is available only on Linux platforms.
         echoPrint
             A Boolean specifying whether an echo of the input data is printed. The default value is
             OFF.
@@ -264,7 +264,7 @@ class ModelJob(Job):
 
             .. versionchanged:: 2023
 
-                The docs for this argument were updated to reflect that the `parallelizationMethodExplicit`
+                The docs for this argument were updated to reflect that the ``parallelizationMethodExplicit``
                 argument was removed in 2023.
         activateLoadBalancing
             A Boolean specifying whether to activate dyanmic load balancing for jobs running on

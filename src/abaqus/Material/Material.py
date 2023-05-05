@@ -577,7 +577,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].CrushStress
 
         .. versionadded:: 2022
-            The `CrushStress` method was added.
+            The ``CrushStress`` method was added.
 
         Parameters
         ----------
@@ -2084,7 +2084,7 @@ class Material(MaterialBase):
             Possible values are CONSTANT and LINEAR . The default value is CONSTANT.
 
             .. versionadded:: 2022
-                The `extrapolation` argument was added.
+                The ``extrapolation`` argument was added.
 
         Returns
         -------
@@ -2126,7 +2126,7 @@ class Material(MaterialBase):
 
         .. versionadded:: 2023
 
-            The `PlasticityCorrection` method was added.
+            The ``PlasticityCorrection`` method was added.
 
         Parameters
         ----------
@@ -3924,7 +3924,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].MeanFieldHomogenization
 
         .. versionadded:: 2018
-            The `MeanFieldHomogenization` method was added.
+            The ``MeanFieldHomogenization`` method was added.
 
         Parameters
         ----------
@@ -3967,7 +3967,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].GapConductance
 
         .. versionadded:: 2021
-            The `GapConductance` method was added.
+            The ``GapConductance`` method was added.
 
         Parameters
         ----------
@@ -4001,7 +4001,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].GapConvection
 
         .. versionadded:: 2021
-            The `GapConvection` method was added.
+            The ``GapConvection`` method was added.
 
         Parameters
         ----------
@@ -4037,7 +4037,7 @@ class Material(MaterialBase):
                 session.odbs[name].materials[name].Gapradiation
 
         .. versionadded:: 2021
-            The `GapRadiation` method was added.
+            The ``GapRadiation`` method was added.
 
         Parameters
         ----------

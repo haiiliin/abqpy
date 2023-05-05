@@ -29,7 +29,7 @@ class DataImperfection(Imperfection):
         - Component of imperfection in the third coordinate direction.
 
     .. versionadded:: 2023
-        The `DataImperfection` class was added.
+        The ``DataImperfection`` class was added.
     """
 
     #: A String specifying the repository key.
