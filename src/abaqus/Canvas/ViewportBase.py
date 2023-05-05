@@ -339,7 +339,7 @@ class ViewportBase(_OptionsBase):
     #: An AnimationController object.
     #:
     #: .. versionadded:: 2020
-    #:     The `animationController` attribute was added.
+    #:     The ``animationController`` attribute was added.
     animationController: AnimationController = AnimationController()
 
     #: A tuple of Strings specifying keys to the session.drawings repository. The default value

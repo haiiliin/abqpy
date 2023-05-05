@@ -65,7 +65,7 @@ class ContactStd(Interaction):
     #: contact domain.
     #:
     #: .. versionchanged:: 2022
-    #:     The attribute `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
+    #:     The attribute ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
     mainSecondaryAssignments: MainSecondaryAssignment = MainSecondaryAssignment()
 
     #: An InitializationAssignment object specifying the contact initialization assignments in
@@ -158,13 +158,13 @@ class ContactStd(Interaction):
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
+                The ``surfaceBeamSmoothingAssignments`` argument was added.
         surfaceVertexCriteriaAssignments
             A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
+                The ``surfaceVertexCriteriaAssignments`` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -175,13 +175,13 @@ class ContactStd(Interaction):
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
 
             .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
+                The ``slidingFormulationAssignments`` argument was added.
         mainSecondaryAssignments
             A MainSecondaryAssignment object specifying the main-secondary assignments in the
             contact domain.
 
             .. versionchanged:: 2022
-                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
+                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
             the contact domain.
@@ -246,13 +246,13 @@ class ContactStd(Interaction):
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceBeamSmoothingAssignments` argument was added.
+                The ``surfaceBeamSmoothingAssignments`` argument was added.
         surfaceVertexCriteriaAssignments
             A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
             assignments in the contact domain.
 
             .. versionadded:: 2021
-                The `surfaceVertexCriteriaAssignments` argument was added.
+                The ``surfaceVertexCriteriaAssignments`` argument was added.
         slidingFormulationAssignments
             A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
             two entries:
@@ -263,7 +263,7 @@ class ContactStd(Interaction):
               first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
 
             .. versionadded:: 2021
-                The `slidingFormulationAssignments` argument was added.
+                The ``slidingFormulationAssignments`` argument was added.
         useAllstar
             A Boolean specifying whether the contacting surface pairs consist of all exterior faces
             in the model.
@@ -318,7 +318,7 @@ class ContactStd(Interaction):
               MAIN, SECONDARY, and BALANCED.
 
             .. versionchanged:: 2022
-                The argument `masterSlaveAssignments` was renamed to `mainSecondaryAssignments`.
+                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
         initializationAssignments
             A sequence of tuples specifying the contact initialization data assigned to each surface
             pair. Each tuple contains three entries:

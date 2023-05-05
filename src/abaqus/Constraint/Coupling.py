@@ -96,7 +96,7 @@ class Coupling(Constraint):
     #: The alpha argument applies only when couplingType=KINEMATIC.
     #:
     #: .. versionadded:: 2022
-    #:     The `alpha` attribute was added.
+    #:     The ``alpha`` attribute was added.
     alpha: float = 0.0
 
     @abaqus_method_doc
@@ -180,7 +180,7 @@ class Coupling(Constraint):
             The alpha argument applies only when couplingType=KINEMATIC.
 
             .. versionadded:: 2022
-                The `alpha` argument was added.
+                The ``alpha`` argument was added.
 
         Returns
         -------
