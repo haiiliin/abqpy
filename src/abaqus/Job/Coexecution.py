@@ -34,14 +34,7 @@ class Coexecution:
 
     #: A SymbolicConstant specifying the analysis product type of the master model for the
     #: co-execution. The default value is ABAQUS.
-<<<<<<< HEAD
     masterAnalysisProduct: SymbolicConstant = ABAQUS
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``masterAnalysisProduct`` attribute was changed to ``mainAnalysisProduct``.
-    mainAnalysisProduct: SymbolicConstant = ABAQUS
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: An Int specifying the number of hours to wait before submitting the co-execution. This
     #: argument is ignored if **queue** is set. The default value is 0.This argument works in
@@ -76,45 +69,15 @@ class Coexecution:
     #: A repository of Job objects specifying the jobs that comprise this co-execution.
     jobs: Dict[str, Job] = {}
 
-<<<<<<< HEAD
     #: A tuple of Strings specifying the names of the slave models for the co-execution.
     slaveModels: tuple = ()
-=======
-    #: A tuple of Strings specifying the names of the secondary models for the co-execution.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``slaveModels`` attribute was changed to ``secondaryModels``.
-    secondaryModels: tuple = ()
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the slave
     #: models for the co-execution. The default value is an empty sequence.
-<<<<<<< HEAD
     slaveAnalysisProducts: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the master model for the co-execution.
     masterModel: str = ""
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``slaveAnalysisProducts`` attribute was changed to ``secondaryAnalysisProducts``.
-    secondaryAnalysisProducts: Optional[SymbolicConstant] = None
-
-    #: A String specifying the name of the main model for the co-execution.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``masterModel`` attribute was changed to ``mainModel``.
-    mainModel: str = ""
-
-    #: A SymbolicConstant specifying the type of license type being used in case of DSLS
-    #: SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
-    #: is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
-    #: available.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``licenseType`` attribute was added.
-    licenseType: SymbolicConstant = DEFAULT
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     @abaqus_method_doc
     def kill(self):

@@ -30,12 +30,6 @@ class OdbMeshRegionData:
 
             import field
             mdb.models[name].analyticalFields[name].odbMeshRegionData
-<<<<<<< HEAD
-=======
-
-    .. versionchanged:: 2017
-        The ``transformationType`` attribute was moved.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     #: An Int specifying the step index. Possible values are 0 ≤ **stepIndex** ≤ (*numSteps* −
@@ -250,12 +244,6 @@ class OdbMeshRegionData:
 
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
 
-<<<<<<< HEAD
-=======
-        .. versionchanged:: 2017
-            The ``transformationType`` argument was moved.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Parameters
         ----------
         odbFileName

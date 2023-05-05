@@ -36,25 +36,11 @@ class PressurePenetration(Interaction):
 
     #: A RegionArray object specifying the points on the master surface that are exposed to the
     #: fluid.
-<<<<<<< HEAD
     masterPoints: RegionArray = []
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``masterPoints`` was renamed to ``mainPoints``.
-    mainPoints: RegionArray = []
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     #: A RegionArray object specifying the points on the slave surface that are exposed to
     #: the fluid.
-<<<<<<< HEAD
     slavePoints: RegionArray = []
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``slavePoints`` was renamed to ``secondaryPoints``.
-    secondaryPoints: RegionArray = []
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
     @abaqus_method_doc
     def __init__(
@@ -88,21 +74,9 @@ class PressurePenetration(Interaction):
         masterPoints
             A RegionArray object specifying the points on the master surface that are exposed to the
             fluid.
-<<<<<<< HEAD
         slavePoints
             A RegionArray object specifying the points on the slave surface that are exposed to
             the fluid.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoints`` was renamed to ``mainPoints``.
-        secondaryPoints
-            A RegionArray object specifying the points on the secondary surface that are exposed to
-            the fluid.
-
-            .. versionchanged:: 2022
-                The argument ``slavePoints`` was renamed to ``secondaryPoints``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
             analyses, a tuple of Complexes specifying the fluid pressure magnitude.

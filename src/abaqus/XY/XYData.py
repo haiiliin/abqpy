@@ -726,21 +726,9 @@ class XYData(tuple):
         removeDuplicateXYPairs
             A Boolean specifying whether to remove duplicate XY values from the final result. The
             default value is True.
-<<<<<<< HEAD
         includeAllElements
             A Boolean specifying whether to include elements which do not lie in the direction of
             the path. The default value is False.
-=======
-
-            .. versionadded:: 2018
-                The ``removeDuplicateXYPairs`` argument was added.
-        includeAllElements
-            A Boolean specifying whether to include elements which do not lie in the direction of
-            the path. The default value is False.
-
-            .. versionadded:: 2018
-                The ``includeAllElements`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         step
             An Int identifying the step from which to obtain values. The default value is the
             current step.

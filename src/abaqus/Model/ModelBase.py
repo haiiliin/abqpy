@@ -226,27 +226,6 @@ class ModelBase:
     #: A repository of OptimizationTask objects.
     optimizationTasks: Dict[str, OptimizationTask] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of TableCollection objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``tableCollections`` attribute was added.
-    tableCollections: Dict[str, TableCollection] = {}
-
-    #: A repository of EventSeriesType objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``eventSeriesTypes`` attribute was added.
-    eventSeriesTypes: Dict[str, EventSeriesType] = {}
-
-    #: A repository of EventSeriesData objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``eventSeriesDatas`` attribute was added.
-    eventSeriesDatas: Dict[str, EventSeriesData] = {}
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     @abaqus_method_doc
     def __init__(
         self,

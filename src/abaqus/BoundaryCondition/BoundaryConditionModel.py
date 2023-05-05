@@ -1538,16 +1538,6 @@ class BoundaryConditionModel(ModelBase):
         centerZoneSize
             A Float specifying the thickness of the center zone size around the shell midsurface.
             The default value is None.
-<<<<<<< HEAD
-=======
-        intersectionOnly
-            A Boolean specifying whether to ignore driven nodes that lie outside the region of
-            elements of the global model after accounting for the exterior search tolerance. The
-            default value is OFF.
-
-            .. versionadded:: 2021
-                The ``intersectionOnly`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

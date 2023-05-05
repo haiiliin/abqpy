@@ -159,30 +159,12 @@ class InteractionModel(
         createUnionOfMasterSurfaces
             A Boolean specifying whether to create a surface that is the union of all master surfaces
             found. The default value is OFF.
-<<<<<<< HEAD
         createUnionOfSlaveSurfaces
             A Boolean specifying whether to create a surface that is the union of all slave
             surfaces found. The default value is OFF.
         createUnionOfMasterSlaveSurfaces
             A Boolean specifying whether to create a surface that is the union of all master and
             slave surfaces found. The default value is OFF.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``createUnionOfMasterSurfaces`` was renamed to ``createUnionOfMainSurfaces``.
-        createUnionOfSecondarySurfaces
-            A Boolean specifying whether to create a surface that is the union of all secondary
-            surfaces found. The default value is OFF.
-
-            .. versionchanged:: 2022
-                The argument ``createUnionOfSlaveSurfaces`` was renamed to ``createUnionOfSecondarySurfaces``.
-        createUnionOfMainSecondarySurfaces
-            A Boolean specifying whether to create a surface that is the union of all main and
-            secondary surfaces found. The default value is OFF.
-
-            .. versionchanged:: 2022
-                The argument ``createUnionOfMasterSlaveSurfaces`` was renamed to ``createUnionOfMainSecondarySurfaces``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         includePlanar
             A Boolean specifying whether to include planar geometry. The default value is ON.
         includeCylindricalSphericalToric
@@ -879,37 +861,10 @@ class InteractionModel(
         smoothingAssignments
             A SmoothingAssignment object specifying the surface smoothing assignments in the contact
             domain.
-<<<<<<< HEAD
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
 
-=======
-        surfaceCrushTriggerAssignments
-            A SurfaceCrushTriggerAssignment object specifying the surface crush trigger assignments
-            in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceCrushTriggerAssignments`` argument was added.
-        surfaceFrictionAssignments
-            A SurfaceFrictionAssignment object specifying the surface friction assignments in the
-            contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceFrictionAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
-        polarityAssignments
-            A PolarityAssignments object specifying the polarity assignments in the contact domain.
-
-            .. versionadded:: 2020
-                The ``polarityAssignments`` argument was added.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         Returns
         -------
         ContactExp
@@ -985,41 +940,9 @@ class InteractionModel(
         surfaceFeatureAssignments
             A SurfaceFeatureAssignment object specifying the surface feature angle assignments in
             the contact domain.
-<<<<<<< HEAD
         masterSlaveAssignments
             A MasterSlaveAssignment object specifying the master-slave assignments in the
             contact domain.
-=======
-        surfaceBeamSmoothingAssignments
-            A SurfaceBeamSmoothingAssignment object specifying the surface beam smoothing
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceBeamSmoothingAssignments`` argument was added.
-        surfaceVertexCriteriaAssignments
-            A SurfaceVertexCriteriaAssignment object specifying the surface vertex criteria
-            assignments in the contact domain.
-
-            .. versionadded:: 2021
-                The ``surfaceVertexCriteriaAssignments`` argument was added.
-        slidingFormulationAssignments
-            A sequence of tuples of SlidingFormulationAssignment specifying the sliding formulation assignments. Each tuple contains
-            two entries:
-
-            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
-              sliding formulation attribute is assigned.
-            - A SymbolicConstant specifying the overriding the smoothness value to be used for the
-              first surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
-
-            .. versionadded:: 2021
-                The ``slidingFormulationAssignments`` argument was added.
-        mainSecondaryAssignments
-            A MainSecondaryAssignment object specifying the main-secondary assignments in the
-            contact domain.
-
-            .. versionchanged:: 2022
-                The argument ``masterSlaveAssignments`` was renamed to ``mainSecondaryAssignments``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initializationAssignments
             An InitializationAssignment object specifying the contact initialization assignments in
             the contact domain.
@@ -1089,23 +1012,10 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the cyclic symmetry interaction should
             be created.
-<<<<<<< HEAD
         master
             A Region object specifying the master surface.
         slave
             A Region object specifying the slave surface.
-=======
-        main
-            A Region object specifying the main surface.
-
-            .. versionchanged:: 2022
-                The argument ``master`` was renamed to ``main``.
-        secondary
-            A Region object specifying the secondary surface.
-
-            .. versionchanged:: 2022
-                The argument ``slave`` was renamed to ``secondary``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         repetitiveSectors
             An Int specifying the total number of sectors in the cyclic symmetric model.
         axisPoint1
@@ -1409,60 +1319,6 @@ class InteractionModel(
         return interaction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def FluidInflator(
-        self,
-        name: str,
-        createStepName: str,
-        cavity: str,
-        interactionProperty: str,
-        inflationTimeAmplitude: str = "",
-        massFlowAmplitude: str = "",
-    ) -> FluidInflator:
-        """This method creates a FluidInflator object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].FluidInflator
-
-        .. versionadded:: 2019
-            The ``FluidInflator`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        createStepName
-            A String specifying the name of the step in which the FluidInflator object is created.
-        cavity
-            A String specifying the first FluidCavity object associated with this interaction.
-        interactionProperty
-            A String specifying the FluidInflatorProperty object associated with this interaction.
-        inflationTimeAmplitude
-            A string specifying the name of the amplitude curve defining a mapping between the
-            inflation time and the actual time.
-        massFlowAmplitude
-            A string specifying the name of the amplitude curve by which to modify the mass flow
-            rate.
-
-        Returns
-        -------
-            A FluidInflator object.
-        """
-        self.interactions[name] = interaction = FluidInflator(
-            name,
-            createStepName,
-            cavity,
-            interactionProperty,
-            inflationTimeAmplitude,
-            massFlowAmplitude,
-        )
-        return interaction
-
-    @abaqus_method_doc
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     def IncidentWave(
         self,
         name: str,
@@ -1651,21 +1507,9 @@ class InteractionModel(
         masterPoints
             A RegionArray object specifying the points on the master surface that are exposed to the
             fluid.
-<<<<<<< HEAD
         slavePoints
             A RegionArray object specifying the points on the slave surface that are exposed to
             the fluid.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``masterPoints`` was renamed to ``mainPoints``.
-        secondaryPoints
-            A RegionArray object specifying the points on the secondary surface that are exposed to
-            the fluid.
-
-            .. versionchanged:: 2022
-                The argument ``slavePoints`` was renamed to ``secondaryPoints``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         penetrationPressure
             A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
             analyses, a tuple of Complexes specifying the fluid pressure magnitude.
@@ -1972,19 +1816,8 @@ class InteractionModel(
             is created.
         master
             A Region object specifying the main surface.
-<<<<<<< HEAD
         slave
             A Region object specifying the secondary surface.
-=======
-
-            .. versionchanged:: 2022
-                The argument ``master`` was renamed to ``main``.
-        secondary
-            A Region object specifying the secondary surface.
-
-            .. versionchanged:: 2022
-                The argument ``slave`` was renamed to ``secondary``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2205,22 +2038,6 @@ class InteractionModel(
         bondingSet
             A Region object specifying the slave node sub-set for bonding, used only when the
             contact property CohesiveBehavior option specifies use.
-<<<<<<< HEAD
-=======
-        handedness
-            A SymbolicConstant specifying the bolt handedness formulation. Possible values are RIGHT
-            and LEFT. The default value is RIGHT.
-
-            .. versionadded:: 2019
-                The ``normalAdjustment`` argument was added.
-        normalAdjustment
-            A SymbolicConstant specifying the bolt normal adjustment formulation for all secondary
-            nodes. Possible values are UNIFORM AXIAL COMPONENT and LOCATION DEPENDENT. The default
-            value is UNIFORM AXIAL COMPONENT.
-
-            .. versionadded:: 2019
-                The ``normalAdjustment`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
 
         Returns
         -------

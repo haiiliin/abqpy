@@ -22,12 +22,6 @@ class Stress(PredefinedField):
 
         - INITIAL CONDITIONS
 
-<<<<<<< HEAD
-=======
-    .. versionadded:: 2017
-        The ``Stress`` class was added.
-
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
     """
 
     @abaqus_method_doc

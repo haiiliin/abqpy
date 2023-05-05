@@ -199,15 +199,6 @@ class ConnectorSection(SectionBase):
 
         Parameters
         ----------
-<<<<<<< HEAD
-=======
-        type
-            A SymbolicConstant specifying if the damping type is viscous or structural. Possible values are
-            VISCOUS and STRUCTURAL. The default value is VISCOUS.
-
-            .. versionadded:: 2022
-                The ``type`` argument was added.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         behavior
             A SymbolicConstant specifying if the damping behavior is linear or nonlinear. Possible
             values are LINEAR and NONLINEAR. The default value is LINEAR.

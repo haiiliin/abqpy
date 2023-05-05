@@ -1256,14 +1256,6 @@ class StepModel(ModelBase):
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
-<<<<<<< HEAD
-=======
-        maxNumInc
-            An Int specifying the maximum number of increments in a step. The default value is 100.
-
-            .. versionadded:: 2017
-                The ``maxNumInc`` attribute was added to the GeostaticStep class.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         initialInc
             A Float specifying the initial time increment. The default value is the total time
             period for the step. Note: This parameter is ignored unless

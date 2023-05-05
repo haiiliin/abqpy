@@ -373,12 +373,6 @@ class FieldOutputRequest:
             A String specifying the name of a time point object. The default value is equal to the
             number of intervals during the step at which output database states are to be written.
             The default value is None.
-<<<<<<< HEAD
-=======
-
-            .. versionchanged:: 2022
-                The argument ``timePoints`` was renamed to ``timePoint``.
->>>>>>> 0ca8d932 ([bugfix] Fix backquotes for code and add autoapi class template (#4221))
         timeMarks
             A Boolean specifying when to write results to the output database. The default value is
             OFF.
