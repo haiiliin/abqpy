@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0000\n"
+"POT-Creation-Date: 2023-05-05 00:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,11 +93,11 @@ msgid "`abqpy` is just a package to provide type hints for Abaqus/Python scripti
 msgstr ""
 
 #: ../../getting_started.md:103
-msgid "The secret is hided in the {py:func}`~abqpy.abaqus.run` function:"
+msgid "The secret is hided in the {py:func}`~abqpy.run.run` function:"
 msgstr ""
 
 #: ../../getting_started.md:119
-msgid "In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the **abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.abaqus.run` will exit the interpreter, because the script will already run in Abaqus Python interpreter."
+msgid "In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the **abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.run.run` will exit the interpreter, because the script will already run in Abaqus Python interpreter."
 msgstr ""
 
 #: ../../getting_started.md:124
@@ -105,11 +105,11 @@ msgid "In the output script, we might not want to always use the {py:mod}`~abaqu
 msgstr ""
 
 #: ../../getting_started.md:132
-msgid "So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:func}`~abqpy.abaqus.run` function with the argument `cae = False`."
+msgid "So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:func}`~abqpy.run.run` function with the argument `cae = False`."
 msgstr ""
 
 #: ../../getting_started.md:134
-msgid "In summary, the {py:func}`~abqpy.abaqus.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True` in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module. Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules on the top of your script."
+msgid "In summary, the {py:func}`~abqpy.run.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True` in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module. Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules on the top of your script."
 msgstr ""
 
 #: ../../getting_started.md:139
