@@ -313,7 +313,7 @@ class ContourOptions(DGContourOptions):
             default value is OFF.
 
             .. versionadded:: 2018
-                The `reversedContourLegendRange` argument was added.
+                The ``reversedContourLegendRange`` argument was added.
         outsideLimitsMode
             A SymbolicConstant specifying the color of contour values that exceed the limits of the
             plot. Possible values are SPECTRUM and SPECIFY.When **outsideLimitsMode** = SPECTRUM, the

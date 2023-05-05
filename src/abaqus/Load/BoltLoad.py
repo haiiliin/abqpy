@@ -87,7 +87,7 @@ class BoltLoad(Load):
             be defined at the part level for independent and model instances.
 
             .. versionadded:: 2018
-                The `preTenSecPartLevel` argument was added.
+                The ``preTenSecPartLevel`` argument was added.
 
         Returns
         -------
