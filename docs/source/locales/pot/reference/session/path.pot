@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -581,7 +581,7 @@ msgstr ""
 msgid ":py:obj:`Path <abaqus.PathAndProbe.PathSession.PathSession.Path>`\\ \\(name\\, type\\, expression\\, ...\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:13
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:12
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates a Path object."
@@ -735,7 +735,7 @@ msgstr ""
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromEdges:4
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromFaces:4
 #: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody.FreeBodyFromNodesElements:4
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:16
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:15
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:4
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Spectrum:4
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:4
@@ -744,7 +744,7 @@ msgstr ""
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:11
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:10
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:9
 msgid "Check `Path on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pathpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -763,91 +763,91 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:21
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:20
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:12
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.name:1
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:23
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:22
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:14
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.type:1
 msgid "A SymbolicConstant specifying the type of path being created. Possible values are NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:26
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:25
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:17
 msgid "A sequence specifying the nodes or points that make up the path. The definition of the path expression depends on the **type** argument.  - If **type** = NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence   contains two items, the first item is a String specifying the name of a part instance,   and the second item can be either a sequence of Ints or a sequence of Strings, each   specifying a range of Ints. - If **type** = POINT_LIST, **expression** must be a sequence of tuples of three Floats,   specifying the coordinates of each point. - If **type** = EDGE_LIST, **expression** must be a sequence of sequences. Each inner sequence   contains two items, the first item is a String specifying the name of the part instance,   and the second item is a sequence of tuples of four Ints that uniquely identify an   element edge. The four Ints are:   1. The element label.   2. The element face index (one-based).   3. The face edge index (one-based).   4. The edge direction. A positive number specifies that the edge direction runs from the   edge start node to the edge end node. A negative number specifies the opposite. - When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a sequence of three tuples   of three Floats, specifying the coordinates of the points used to define a coordinate   system."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:26
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:25
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:17
 msgid "A sequence specifying the nodes or points that make up the path. The definition of the path expression depends on the **type** argument."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:29
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:28
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:20
 msgid "If **type** = NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence contains two items, the first item is a String specifying the name of a part instance, and the second item can be either a sequence of Ints or a sequence of Strings, each specifying a range of Ints."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:33
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:32
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:24
 msgid "If **type** = POINT_LIST, **expression** must be a sequence of tuples of three Floats, specifying the coordinates of each point."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:35
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:34
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:26
 msgid "If **type** = EDGE_LIST, **expression** must be a sequence of sequences. Each inner sequence contains two items, the first item is a String specifying the name of the part instance, and the second item is a sequence of tuples of four Ints that uniquely identify an element edge. The four Ints are: 1. The element label. 2. The element face index (one-based). 3. The face edge index (one-based). 4. The edge direction. A positive number specifies that the edge direction runs from the edge start node to the edge end node. A negative number specifies the opposite."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:44
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:43
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:35
 msgid "When **type** = CIRCUMFERENTIAL or RADIAL, **expression** must be a sequence of three tuples of three Floats, specifying the coordinates of the points used to define a coordinate system."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:48
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:47
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:39
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.circleDefinition:1
 msgid "A SymbolicConstant specifying the method in which the circle is being defined. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL. Possible values are ORIGIN_AXIS and POINT_ARC.When the value is ORIGIN_AXIS, the first two points in **expression** are points on the rotational axis and the third point lies on the x-axis. When the value is POINT_ARC, the three points in **expression** are points lying on the arc of the circle."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:55
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:54
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:46
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.numSegments:1
 msgid "An Int specifying the number of equal segments in the path. This argument is valid only when **type** = CIRCUMFERENTIAL or RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:58
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:57
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:49
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startAngle:1
 msgid "A Float specifying the start angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:61
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:60
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:52
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endAngle:1
 msgid "A Float specifying the end angle of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:64
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:63
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:55
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:67
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:66
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:58
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.radialAngle:1
 msgid "A Float specifying the angle between the radial path and the **X** axis of the specified coordinate system. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:70
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:69
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:61
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.startRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial path. This argument is valid only when **type** = RADIAL."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:73
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:72
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:64
 #: ../../docstring of abaqus.PathAndProbe.PathSession.Path.endRadius:1
 msgid "The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial path. This argument is valid only when **type** = RADIAL."
@@ -865,7 +865,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:76
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:75
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:67
 msgid "A Path object."
 msgstr ""
@@ -882,7 +882,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:77
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:76
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:68
 msgid ":class:`Path`"
 msgstr ""
@@ -892,7 +892,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:81
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:80
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:72
 msgid "When **type** = CIRCUMFERENTIAL or RADIAL, the three points specified in     **expression** are collinear."
 msgstr ""
@@ -983,10 +983,10 @@ msgid "The FreeBody object defines a section across which resultant forces and m
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/CurrentProbeValues.py:docstring of abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues:5
-#: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:5
-#: ../../../../src/abaqus/PathAndProbe/NodeQuery.py:docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery:6
-#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:5
-#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:8
+#: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:4
+#: ../../../../src/abaqus/PathAndProbe/NodeQuery.py:docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery:5
+#: ../../../../src/abaqus/PathAndProbe/Path.py:docstring of abaqus.PathAndProbe.Path.Path:4
+#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:9
 #: ../../../../src/abaqus/PathAndProbe/ProbeReport.py:docstring of abaqus.PathAndProbe.ProbeReport.ProbeReport:8
 #: ../../../../src/abaqus/PathAndProbe/SelectedProbeValues.py:docstring of abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues:5
 #: ../../../../src/abaqus/PathAndProbe/Spectrum.py:docstring of abaqus.PathAndProbe.Spectrum.Spectrum:4
@@ -994,7 +994,7 @@ msgstr ""
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:11
+#: ../../../../src/abaqus/PathAndProbe/FreeBody.py:docstring of abaqus.PathAndProbe.FreeBody.FreeBody:10
 msgid "Check `FreeBody on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1098,7 +1098,7 @@ msgstr ""
 msgid "The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery object has no constructor or methods. Abaqus creates the **nodeQuery** member when you import the visualization module."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/NodeQuery.py:docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery:12
+#: ../../../../src/abaqus/PathAndProbe/NodeQuery.py:docstring of abaqus.PathAndProbe.NodeQuery.NodeQuery:11
 msgid "Check `NodeQuery on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nodequerypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1131,10 +1131,14 @@ msgid "TheStream object defines a set of streamlines in fluid mechanics."
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:1
-msgid "The ProbeOptions object is used to store settings associated with probing a model or an **X - Y** plot. The ProbeOptions object has no constructor. Abaqus creates the **defaultProbeOptions** and the **probeOptions** members when you import the Visualization module. When probing is initiated for the first time, the values in the **probeOptions** member are initialized using the values from the **defaultProbeOptions** member."
+msgid "The ProbeOptions object is used to store settings associated with probing a model or an."
 msgstr ""
 
-#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:15
+#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:3
+msgid "**X - Y** plot. The ProbeOptions object has no constructor. Abaqus creates the **defaultProbeOptions** and the **probeOptions** members when you import the Visualization module. When probing is initiated for the first time, the values in the **probeOptions** member are initialized using the values from the **defaultProbeOptions** member."
+msgstr ""
+
+#: ../../../../src/abaqus/PathAndProbe/ProbeOptions.py:docstring of abaqus.PathAndProbe.ProbeOptions.ProbeOptions:16
 msgid "Check `ProbeOptions on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-probeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 

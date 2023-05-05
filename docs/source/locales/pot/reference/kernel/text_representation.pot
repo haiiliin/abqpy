@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-08 00:24+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,11 +36,11 @@ msgstr ""
 msgid "The TextReprOptions object is used to configure the output of the Python `str()` command within Abaqus/CAE. (The `str()` command is used by the Python print function.) The TextReprOptions object stores the various settings that determine how objects are printed on the Python command line. The TextReprOptions object has no constructor. Abaqus creates the **textReprOptions** member when a session is started."
 msgstr ""
 
-#: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:9
+#: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:7
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:16
+#: ../../../../src/abaqus/TextRepresentation/TextReprOptions.py:docstring of abaqus.TextRepresentation.TextReprOptions.TextReprOptions:14
 msgid "Check `TextReprOptions on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -149,14 +149,14 @@ msgstr ""
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getIndentedRepr:18
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getPaths:18
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getTypes:16
-#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:18
+#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:17
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.printPaths:18
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.printTypes:16
 msgid "An Int specifying the maximum number of elements of a sequence to return or the SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of elements have been printed, the remainder are indicated by the string '...'."
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getIndentedRepr:22
-#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:22
+#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:21
 msgid "An Int specifying the number of significant digits for Floats in the output. Possible values are 0 < **significantDigits** ≤ 15. The default value is 6."
 msgstr ""
 
@@ -198,13 +198,13 @@ msgid "Check `textRepr.getTypes on help.3ds.com/2023 <https://help.3ds.com/2023/
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getTypes:8
-#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:10
+#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:9
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.printTypes:8
 msgid "An Abaqus object."
 msgstr ""
 
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.getTypes:10
-#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:12
+#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:11
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.printPaths:12
 #: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.printTypes:10
 msgid "An Int specifying the maximum depth to which the object will be printed, the SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in the TextReprOptions object will be used. The default value is None.You should take care when setting **maxRecursionDepth** = UNLIMITED because the resulting output can be very large. To limit the output, you should set **maxElementsInSequence** to a small number."
@@ -214,7 +214,7 @@ msgstr ""
 msgid "This method prints a formatted version of the object. The prettyPrint function uses getIndentedRepr to format the String representation, but does not save the full text output of getIndentedRepr. Therefore this function can be used in cases where getIndentedRepr would run out of memory."
 msgstr ""
 
-#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:7
+#: ../../../../src/abaqus/TextRepresentation/textRepr.py:docstring of abaqus.TextRepresentation.textRepr.prettyPrint:6
 msgid "Check `textRepr.prettyPrint on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprettyprintpyc>`__."
 msgstr ""
 

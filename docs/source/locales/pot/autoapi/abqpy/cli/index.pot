@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 13:36+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid ":py:obj:`AbqpyMiscCLI <abqpy.cli.AbqpyMiscCLI>`\\"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:65
+#: ../../autoapi/abqpy/cli/index.rst:67
 #: ../../autoapi/abqpy/cli/index.rst:21:<autosummary>:1
 msgid "Less frequently used Abaqus/CAE commands."
 msgstr ""
@@ -50,9 +50,9 @@ msgstr ""
 msgid ":py:obj:`AbqpyCLI <abqpy.cli.AbqpyCLI>`\\"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:230
+#: ../../autoapi/abqpy/cli/index.rst:232
 #: ../../autoapi/abqpy/cli/index.rst:21:<autosummary>:1
-msgid "The abqpy command line interface"
+msgid "The abqpy command line interface."
 msgstr ""
 
 #: ../../autoapi/abqpy/cli/index.rst:23
@@ -71,7 +71,7 @@ msgstr ""
 msgid ":py:obj:`run <abqpy.cli.AbqpyCLIBase.run>`\\ \\(cmd\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:46
+#: ../../autoapi/abqpy/cli/index.rst:48
 #: ../../None:4:<autosummary>:1
 msgid "Run custom command."
 msgstr ""
@@ -80,7 +80,7 @@ msgstr ""
 msgid ":py:obj:`abaqus <abqpy.cli.AbqpyCLIBase.abaqus>`\\ \\(name\\, \\*args\\, \\*\\*options\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:51
+#: ../../autoapi/abqpy/cli/index.rst:53
 #: ../../None:4:<autosummary>:1
 msgid "Run custom Abaqus command: ``abaqus {name} {args} {options}``, arguments are separated by space, options are handled by the :meth:`._parse_options` method."
 msgstr ""
@@ -93,29 +93,30 @@ msgstr ""
 msgid ":py:obj:`_parse_options <abqpy.cli.AbqpyCLIBase._parse_options>`\\ \\(\\*\\*options\\)"
 msgstr ""
 
+#: ../../autoapi/abqpy/cli/index.rst:39
 #: ../../None:3:<autosummary>:1
 msgid "Parse options to be passed to Abaqus/CAE command line interface."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:39
-msgid "Parse options to be passed to Abaqus/CAE command line interface. If the value is a string, the option will be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option will be ignored."
+#: ../../autoapi/abqpy/cli/index.rst:41
+msgid "If the value is a string, the option will be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option will be ignored."
 msgstr ""
 
 #: ../../autoapi/abqpy/cli/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:54
+#: ../../autoapi/abqpy/cli/index.rst:56
 msgid "The name of the Abaqus command to be run."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:56
-#: ../../autoapi/abqpy/cli/index.rst:57
+#: ../../autoapi/abqpy/cli/index.rst:58
+#: ../../autoapi/abqpy/cli/index.rst:59
 msgid "Arguments and options to be passed to the Abaqus command."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:63
-#: ../../autoapi/abqpy/cli/index.rst:228
+#: ../../autoapi/abqpy/cli/index.rst:65
+#: ../../autoapi/abqpy/cli/index.rst:230
 msgid "Bases: :py:obj:`AbqpyCLIBase`"
 msgstr ""
 
@@ -123,7 +124,7 @@ msgstr ""
 msgid ":py:obj:`optimization <abqpy.cli.AbqpyMiscCLI.optimization>`\\ \\(task\\, job\\, \\*\\[\\, cpus\\, gpus\\, ...\\]\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:72
+#: ../../autoapi/abqpy/cli/index.rst:74
 #: ../../None:47:<autosummary>:1
 msgid "Run Abaqus optimization command."
 msgstr ""
@@ -304,41 +305,41 @@ msgstr ""
 msgid ":py:obj:`sysVerify <abqpy.cli.AbqpyMiscCLI.sysVerify>`\\ \\(\\*args\\, \\*\\*options\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:74
+#: ../../autoapi/abqpy/cli/index.rst:76
 msgid "The file containing the parameters that are used to execute the optimization."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:76
+#: ../../autoapi/abqpy/cli/index.rst:78
 msgid "The name of the folder in which the results of the optimization are stored."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:78
+#: ../../autoapi/abqpy/cli/index.rst:80
 msgid "The number of processors to use during an analysis run if parallel processing is available."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:80
+#: ../../autoapi/abqpy/cli/index.rst:82
 msgid "This acceleration of the Abaqus/Standard direct solver."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:82
+#: ../../autoapi/abqpy/cli/index.rst:84
 msgid "Maximum amount of memory or maximum percentage of the physical memory that can be allocated."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:84
+#: ../../autoapi/abqpy/cli/index.rst:86
 msgid "This option will cause the job to run interactively."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:86
+#: ../../autoapi/abqpy/cli/index.rst:88
 msgid "The name of the global model's results file, ODB output database file, or SIM database file."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:88
+#: ../../autoapi/abqpy/cli/index.rst:90
 msgid "The name of the directory used for scratch files."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:90
-#: ../../autoapi/abqpy/cli/index.rst:265
-#: ../../autoapi/abqpy/cli/index.rst:280
+#: ../../autoapi/abqpy/cli/index.rst:92
+#: ../../autoapi/abqpy/cli/index.rst:267
+#: ../../autoapi/abqpy/cli/index.rst:282
 msgid "Other unrecognized keyword arguments"
 msgstr ""
 
@@ -350,7 +351,7 @@ msgstr ""
 msgid ":py:obj:`cae <abqpy.cli.AbqpyCLI.cae>`\\ \\(script\\, \\*args\\[\\, database\\, replay\\, ...\\]\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:241
+#: ../../autoapi/abqpy/cli/index.rst:243
 #: ../../None:6:<autosummary>:1
 msgid "Run Abaqus/CAE command."
 msgstr ""
@@ -363,61 +364,61 @@ msgstr ""
 msgid ":py:obj:`python <abqpy.cli.AbqpyCLI.python>`\\ \\(script\\, \\*args\\[\\, sim\\, log\\]\\)"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:270
+#: ../../autoapi/abqpy/cli/index.rst:272
 #: ../../None:6:<autosummary>:1
 msgid "Run Abaqus/Python command."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:243
-#: ../../autoapi/abqpy/cli/index.rst:272
+#: ../../autoapi/abqpy/cli/index.rst:245
+#: ../../autoapi/abqpy/cli/index.rst:274
 msgid "The name of the python script to run"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:245
-#: ../../autoapi/abqpy/cli/index.rst:274
+#: ../../autoapi/abqpy/cli/index.rst:247
+#: ../../autoapi/abqpy/cli/index.rst:276
 msgid "Extra arguments to be passed after the Abaqus/CAE command line options"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:247
+#: ../../autoapi/abqpy/cli/index.rst:249
 msgid "The name of the database file to open, by default None"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:249
+#: ../../autoapi/abqpy/cli/index.rst:251
 msgid "The name of the replay file to open, by default None"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:251
+#: ../../autoapi/abqpy/cli/index.rst:253
 msgid "The name of the journal file to open, by default None"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:253
+#: ../../autoapi/abqpy/cli/index.rst:255
 msgid "Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False."
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:255
+#: ../../autoapi/abqpy/cli/index.rst:257
 msgid "Do not execute the Abaqus/CAE startup file, by default False"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:257
+#: ../../autoapi/abqpy/cli/index.rst:259
 msgid "Do not use the saved options, by default False"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:259
+#: ../../autoapi/abqpy/cli/index.rst:261
 msgid "Do not display the startup dialog, by default False"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:261
+#: ../../autoapi/abqpy/cli/index.rst:263
 msgid "Record the GUI commands to a file, by default False"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:263
+#: ../../autoapi/abqpy/cli/index.rst:265
 msgid "Do not record the GUI commands to a file, by default False"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:276
+#: ../../autoapi/abqpy/cli/index.rst:278
 msgid "The name of the simulation file to open, by default None"
 msgstr ""
 
-#: ../../autoapi/abqpy/cli/index.rst:278
+#: ../../autoapi/abqpy/cli/index.rst:280
 msgid "The name of the log file to open, by default None"
 msgstr ""

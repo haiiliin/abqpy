@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:38+0000\n"
+"POT-Creation-Date: 2023-05-05 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -816,7 +816,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "Location of the centroid of a given face/cell or group of faces/cells"
+msgid "Location of the centroid of a given face/cell or group of faces/cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1228,7 +1228,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 "This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh"
+" to a more optimal location that improves the quality of the mesh."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2749,8 +2749,8 @@ msgstr ""
 #: abaqus.Property.CompositePly.CompositePly:15
 #: abaqus.Property.MaterialOrientation.MaterialOrientation:21
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:4
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:5
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:5
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:4
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:4
 #: abaqus.Property.Property.assignBeamSectionOrientation:4
 #: abaqus.Property.Property.assignMaterialOrientation:4
 #: abaqus.Property.Property.assignRebarOrientation:4
@@ -3388,7 +3388,7 @@ msgstr ""
 #: abaqus.Property.CompositePly.CompositePly:4
 #: abaqus.Property.MaterialOrientation.MaterialOrientation:5
 #: abaqus.Property.PlyStackPlot.PlyStackPlot:5
-#: abaqus.Property.PropertyAssembly.PropertyAssembly:6
+#: abaqus.Property.PropertyAssembly.PropertyAssembly:5
 #: abaqus.Property.SectionAssignment.SectionAssignment:5 of
 msgid "This object can be accessed by::"
 msgstr ""
@@ -3946,26 +3946,26 @@ msgid ""
 "contains a composite shell layup."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:10 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:9 of
 msgid ""
 "Check `MdbPlyStackPlot on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:13 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:12 of
 msgid "A Part object."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:15 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:14 of
 msgid "A Region object which contains a composite shell layup."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:19 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:16
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:18 of
 msgid "A PlyStackPlot object."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:18 of
+#: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:17 of
 msgid ":class:`PlyStackPlot`"
 msgstr ""
 
@@ -3975,23 +3975,23 @@ msgid ""
 "of an Odb object."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:10 of
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:9 of
 msgid ""
 "Check `OdbPlyStackPlot on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:13 of
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:12 of
 msgid "An Odb object."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:15 of
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:14 of
 msgid ""
 "A String specifying the section name that contains a composite shell "
 "section."
 msgstr ""
 
-#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:17 of
+#: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:16 of
 msgid "A Float specifying the shell offset. The default value is 0.0."
 msgstr ""
 
@@ -4062,7 +4062,7 @@ msgid ""
 "member when a Model object is created."
 msgstr ""
 
-#: abaqus.Property.PropertyAssembly.PropertyAssembly:12 of
+#: abaqus.Property.PropertyAssembly.PropertyAssembly:11 of
 msgid ""
 "Check `PropertyAssembly on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
@@ -7437,5 +7437,16 @@ msgstr ""
 #~ "help.3ds.com/2023 "
 #~ "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectionassignmentpyc.htm?contextscope=all"
 #~ "#simaker-sectionassignment__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid "Location of the centroid of a given face/cell or group of faces/cells"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method smooths the given nodes "
+#~ "of a native mesh, moving them "
+#~ "locally to a more optimal location "
+#~ "that improves the quality of the "
+#~ "mesh"
 #~ msgstr ""
 
