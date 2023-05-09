@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2021\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 07:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../user/output/python/execute-script.md:1
+msgid "Executing a script that accesses an output database"
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:3
+msgid "If your script accesses and manipulates data in an output database, you can use either of the following methods to execute the script:"
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:5
+msgid "Type abaqus python **scriptname.py** at the system prompt."
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:6
+msgid "Select **File -> Run Script** from the Abaqus/CAE main menu bar, and select the file to execute."
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:8
+msgid "Your script must contain the following statement:"
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:14
+msgid "In addition, if your script refers to any of the Symbolic Constants defined in the Abaqus Scripting Interface, your script must contain the following statement:"
+msgstr ""
+
+#: ../../user/output/python/execute-script.md:20
+msgid "If your script accesses or creates material objects, or if it accesses or creates section or beam profile objects, it must contain the following statements, respectively:"
+msgstr ""
