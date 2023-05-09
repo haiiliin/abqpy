@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2019\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 07:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../user/examples/cantilever.md:1
+msgid "Reproducing the cantilever beam tutorial"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:3
+msgid "This section explains how to use the Abaqus Scripting Interface commands to reproduce a tutorial that shows the basic steps to create and analyze a simple model. The tutorial, [Creating and Analyzing a Simple Model in Abaqus/CAE](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb), is available in [Getting Started with Abaqus/CAE](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-c-ov.htm?contextscope=all#simagsa-c-ov)."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:5
+msgid "About the cantilever beam example"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:7
+msgid "The example leads you through the Abaqus/CAE modeling process by visiting each of the modules and shows you the basic steps to create and analyze a simple model. In [Creating and Analyzing a Simple Model in Abaqus/CAE](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb), you create a model of a steel cantilever beam and load its top surface. You then analyze the beam and plot the resulting stresses and displacements. {numref}`gst-beam` illustrates the model that you create and analyze."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:15
+msgid "A loaded cantilever beam."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:18
+msgid "Running the example"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:20
+msgid "Use the following command to retrieve the output database that is read by the scripts:"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:26
+msgid "To run the script, do the following:"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:28
+msgid "Start Abaqus/CAE from a directory in which you have write permission by typing `abaqus cae`."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:29
+msgid "From the startup screen, select **Run Script**."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:30
+msgid "From the **Run Script** dialog box that appears, enter the path given above and select the file containing the script."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:31
+msgid "Click **OK** to run the script."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:34
+msgid "If Abaqus/CAE is already running, you can run the script by selecting **File -> Run Script** from the main menu bar."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:37
+msgid "The cantilever beam example script"
+msgstr ""
+
+#: ../../user/examples/cantilever.md:39
+msgid "The first line of the script, `from abaqus import *`, imports the Mdb and Session objects. The current viewport is `session.viewports['Viewport: 1']`, and the current model is `mdb.models['Model-1']`. Both of these objects are available to the script after you import the `abaqus` module. The second line of the script, `from abaqusConstants import *`, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the {doc}`/reference/index`."
+msgstr ""
+
+#: ../../user/examples/cantilever.md:41
+msgid "The script then imports the `Part` module. Most of the sections in this example begin with importing the appropriate module, which illustrates how a script can import a module at any time to extend or augment the object model. However, the Abaqus Scripting Interface has a convention that all the required modules are imported at the start of a script; and that convention is followed in other example scripts in this guide."
+msgstr ""
