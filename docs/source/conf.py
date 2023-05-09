@@ -42,7 +42,7 @@ sys.path.insert(0, os.path.abspath('./_ext'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
-gettext_compact = "abqpy-docs"      # optional.
+gettext_compact = False      # optional.
 
 # -- General configuration ---------------------------------------------------
 
