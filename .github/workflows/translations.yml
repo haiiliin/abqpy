@@ -31,7 +31,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add .
-        git commit -m "[skip ci] Update translations for ${{ github.sha }}"
+        git commit -m "[skip ci] Update translations for ${{ github.sha }}" || true
     - name: Push the changes
       uses: CasperWA/push-protected@v2
       with:
