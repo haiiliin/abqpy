@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2018\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 07:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../CHANGES.md:1
+msgid "Abaqus API Changes"
+msgstr ""
+
+#: ../../CHANGES.md:3
+msgid "Abaqus 2018"
+msgstr ""
+
+#: ../../CHANGES.md:5
+msgid "{py:obj}`abaqus.Part.PartBase`"
+msgstr ""
+
+#: ../../CHANGES.md:7
+msgid "{py:obj}`abaqus.Part.PartBase.PartBase.writeAcisFile`: *changed*: Changed in version 2018: Add description for thr file name's extension."
+msgstr ""
+
+#: ../../CHANGES.md:8
+msgid "{py:obj}`abaqus.Part.PartBase.AcisFile.writeAcisFile`: *changed*: Changed in version 2018: Add description for thr file name's extension."
+msgstr ""
+
+#: ../../CHANGES.md:10
+msgid "{py:obj}`abaqus.Region.RegionPart`"
+msgstr ""
+
+#: ../../CHANGES.md:12
+msgid "{py:obj}`abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels`: *added*: New in version 2018: The unsorted argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:14
+msgid "{py:obj}`abaqus.Region.Set`"
+msgstr ""
+
+#: ../../CHANGES.md:16
+msgid "{py:obj}`abaqus.Region.Set.Set.SetFromNodeLabels`: *added*: New in version 2018: The unsorted argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:18
+#: ../../CHANGES.md:119
+msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel`"
+msgstr ""
+
+#: ../../CHANGES.md:20
+msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field`: *added*: New in version 2018: The Field method was added."
+msgstr ""
+
+#: ../../CHANGES.md:21
+msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.Field`: *added*: New in version 2018: The Field class was added."
+msgstr ""
+
+#: ../../CHANGES.md:23
+msgid "{py:obj}`abaqus.PredefinedField.FieldState`"
+msgstr ""
+
+#: ../../CHANGES.md:25
+msgid "{py:obj}`abaqus.PredefinedField.FieldState.FieldState`: *added*: New in version 2018: The FieldState class was added."
+msgstr ""
+
+#: ../../CHANGES.md:27
+msgid "{py:obj}`abaqus.Section.SectionModel`"
+msgstr ""
+
+#: ../../CHANGES.md:29
+msgid "{py:obj}`abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection`: *changed*: Changed in version 2018: The default value is now 1.0 instead of None."
+msgstr ""
+
+#: ../../CHANGES.md:31
+msgid "{py:obj}`abaqus.Section.SectionOdb`"
+msgstr ""
+
+#: ../../CHANGES.md:33
+msgid "{py:obj}`abaqus.Section.SectionOdb.SectionOdb.HomogeneousSolidSection`: *changed*: Changed in version 2018: The default value is now 1.0 instead of None."
+msgstr ""
+
+#: ../../CHANGES.md:34
+msgid "{py:obj}`abaqus.Section.SectionOdb.HomogeneousSolidSection`: *changed*: Changed in version 2018: The default value is now 1.0 instead of None."
+msgstr ""
+
+#: ../../CHANGES.md:35
+msgid "{py:obj}`abaqus.Section.SectionOdb.HomogeneousSolidSection.thickness`: *changed*: Changed in version 2018: The default value is now 1.0 instead of None."
+msgstr ""
+
+#: ../../CHANGES.md:37
+msgid "{py:obj}`abaqus.Sketcher.SketchModel`"
+msgstr ""
+
+#: ../../CHANGES.md:39
+msgid "{py:obj}`abaqus.Sketcher.SketchModel.ConstrainedSketch.writeAcisFile`: *changed*: Changed in version 2018: Add description for thr file name's extension."
+msgstr ""
+
+#: ../../CHANGES.md:41
+#: ../../CHANGES.md:140
+msgid "{py:obj}`abaqus.Step.StepModel`"
+msgstr ""
+
+#: ../../CHANGES.md:43
+msgid "{py:obj}`abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:44
+msgid "{py:obj}`abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:45
+msgid "{py:obj}`abaqus.Step.StepModel.ExplicitDynamicsStep`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:46
+msgid "{py:obj}`abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod`: *added*: New in version 2018: The improvedDtMethod attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:47
+msgid "{py:obj}`abaqus.Step.StepModel.ExplicitDynamicsStep.setValues`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:49
+msgid "{py:obj}`abaqus.Step.TempDisplacementDynamicsStep`"
+msgstr ""
+
+#: ../../CHANGES.md:51
+msgid "{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:52
+msgid "{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod`: *added*: New in version 2018: The improvedDtMethod attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:53
+msgid "{py:obj}`abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues`: *added*: New in version 2018: The improvedDtMethod argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:55
+msgid "{py:obj}`abaqus.Session.SessionBase`"
+msgstr ""
+
+#: ../../CHANGES.md:57
+msgid "{py:obj}`abaqus.Session.SessionBase.Drawing.setValues`: *added*: New in version 2018: The depthTest argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:59
+msgid "{py:obj}`abaqus.OdbDisplay.OdbDisplay`"
+msgstr ""
+
+#: ../../CHANGES.md:61
+msgid "{py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.reversedContourLegendRange`: *added*: New in version 2018: The reversedContourLegendRange attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:62
+msgid "{py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues`: *added*: New in version 2018: The reversedContourLegendRange argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:64
+msgid "{py:obj}`abaqus.OdbDisplay.ViewCut`"
+msgstr ""
+
+#: ../../CHANGES.md:66
+msgid "{py:obj}`abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea`: *added*: New in version 2018: The crossSectionalArea attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:68
+msgid "{py:obj}`abaqus.XY.XYSession`"
+msgstr ""
+
+#: ../../CHANGES.md:70
+msgid "{py:obj}`abaqus.XY.XYSession.XYSession.XYDataFromPath`: *added*: New in version 2018: The removeDuplicateXYPairs argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:71
+msgid "{py:obj}`abaqus.XY.XYSession.XYSession.XYDataFromPath`: *added*: New in version 2018: The includeAllElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:73
+msgid "{py:obj}`abaqus.XY.writeXYReport`"
+msgstr ""
+
+#: ../../CHANGES.md:75
+msgid "{py:obj}`abaqus.XY.writeXYReport.XYData.XYDataFromPath`: *added*: New in version 2018: The removeDuplicateXYPairs argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:76
+msgid "{py:obj}`abaqus.XY.writeXYReport.XYData.XYDataFromPath`: *added*: New in version 2018: The includeAllElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:78
+msgid "{py:obj}`abaqus.Load.LoadModel`"
+msgstr ""
+
+#: ../../CHANGES.md:80
+msgid "{py:obj}`abaqus.Load.LoadModel.LoadModel.BoltLoad`: *added*: New in version 2018: The preTenSecPartLevel argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:81
+msgid "{py:obj}`abaqus.Load.LoadModel.BoltLoad`: *added*: New in version 2018: The preTenSecPartLevel argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:83
+msgid "{py:obj}`abaqus.Material.Material`"
+msgstr ""
+
+#: ../../CHANGES.md:85
+msgid "{py:obj}`abaqus.Material.Material.Material.MeanFieldHomogenization`: *added*: New in version 2018: The MeanFieldHomogenization method was added."
+msgstr ""
+
+#: ../../CHANGES.md:87
+msgid "{py:obj}`abaqus.Material.MaterialBase`"
+msgstr ""
+
+#: ../../CHANGES.md:89
+msgid "{py:obj}`abaqus.Material.MaterialBase.MaterialBase.meanFieldHomogenization`: *added*: New in version 2018: The meanFieldHomogenization attribute was added."
+msgstr ""
+
+#: ../../CHANGES.md:91
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldHomogenization`"
+msgstr ""
+
+#: ../../CHANGES.md:93
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization`: *added*: New in version 2018: The MeanFieldHomogenization class was added."
+msgstr ""
+
+#: ../../CHANGES.md:95
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldInclusion`"
+msgstr ""
+
+#: ../../CHANGES.md:97
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion`: *added*: New in version 2018: The MeanFieldInclusion class was added."
+msgstr ""
+
+#: ../../CHANGES.md:99
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldMatrix`"
+msgstr ""
+
+#: ../../CHANGES.md:101
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix`: *added*: New in version 2018: The MeanFieldMatrix class was added."
+msgstr ""
+
+#: ../../CHANGES.md:103
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldVoid`"
+msgstr ""
+
+#: ../../CHANGES.md:105
+msgid "{py:obj}`abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid`: *added*: New in version 2018: The MeanFieldMatrix class was added."
+msgstr ""
+
+#: ../../CHANGES.md:107
+msgid "{py:obj}`abaqus.Mesh.MeshElementArray`"
+msgstr ""
+
+#: ../../CHANGES.md:109
+msgid "{py:obj}`abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorEdges`: *added*: New in version 2018: The getExteriorEdges method was added."
+msgstr ""
+
+#: ../../CHANGES.md:110
+msgid "{py:obj}`abaqus.Mesh.MeshElementArray.MeshElementArray.getExteriorFaces`: *added*: New in version 2018: The getExteriorFaces method was added."
+msgstr ""
+
+#: ../../CHANGES.md:112
+msgid "{py:obj}`abaqus.Mesh.MesherOptions`"
+msgstr ""
+
+#: ../../CHANGES.md:114
+msgid "{py:obj}`abaqus.Mesh.MesherOptions.MesherOptions.setValues`: *added*: New in version 2018: The guiPreferredElements argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:117
+msgid "Abaqus 2017"
+msgstr ""
+
+#: ../../CHANGES.md:121
+msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress`: *added*: New in version 2017: The Stress method was added."
+msgstr ""
+
+#: ../../CHANGES.md:123
+msgid "{py:obj}`abaqus.PredefinedField.Stress`"
+msgstr ""
+
+#: ../../CHANGES.md:125
+msgid "{py:obj}`abaqus.PredefinedField.Stress.Stress`: *added*: New in version 2017: The Stress class was added."
+msgstr ""
+
+#: ../../CHANGES.md:127
+msgid "{py:obj}`abaqus.Section.SectionLayerArray`"
+msgstr ""
+
+#: ../../CHANGES.md:129
+msgid "{py:obj}`abaqus.Section.SectionLayerArray.SectionLayer`: *changed*: Changed in version 2017: The thicknessType attribute and thicknessField attribute were removed."
+msgstr ""
+
+#: ../../CHANGES.md:130
+msgid "{py:obj}`abaqus.Section.SectionLayerArray.SectionLayer`: *changed*: Changed in version 2017: The thicknessType argument and thicknessField argument were removed."
+msgstr ""
+
+#: ../../CHANGES.md:132
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension`"
+msgstr ""
+
+#: ../../CHANGES.md:134
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension`: *changed*: Changed in version 2017: The vertex2 argument was renamed to entity2."
+msgstr ""
+
+#: ../../CHANGES.md:136
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds`"
+msgstr ""
+
+#: ../../CHANGES.md:138
+msgid "{py:obj}`abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds`: *added*: New in version 2017: The direction argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:142
+msgid "{py:obj}`abaqus.Step.StepModel.StepModel.GeostaticStep`: *added*: New in version 2017: The maxNumInc attribute was added to the GeostaticStep class."
+msgstr ""
+
+#: ../../CHANGES.md:143
+msgid "{py:obj}`abaqus.Step.StepModel.GeostaticStep`: *added*: New in version 2017: The maxNumInc attribute was added to the GeostaticStep class."
+msgstr ""
+
+#: ../../CHANGES.md:144
+msgid "{py:obj}`abaqus.Step.StepModel.GeostaticStep.maxNumInc`: *added*: New in version 2017: The maxNumInc attribute was added to the GeostaticStep class."
+msgstr ""
+
+#: ../../CHANGES.md:146
+msgid "{py:obj}`abaqus.Odb.OdbSet`"
+msgstr ""
+
+#: ../../CHANGES.md:148
+msgid "{py:obj}`abaqus.Odb.OdbSet.OdbMeshElement.getNormal`: *added*: New in version 2017: The getNormal method was added."
+msgstr ""
+
+#: ../../CHANGES.md:150
+msgid "{py:obj}`abaqus.Job.JobMdb`"
+msgstr ""
+
+#: ../../CHANGES.md:152
+msgid "{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in version 2017: The default value for parallelizationMethodExplicit is now DOMAIN"
+msgstr ""
+
+#: ../../CHANGES.md:153
+msgid "{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.parallelizationMethodExplicit`: *changed*: Changed in version 2017: The default value for parallelizationMethodExplicit is now DOMAIN"
+msgstr ""
+
+#: ../../CHANGES.md:154
+msgid "{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.setValues`: *changed*: Changed in version 2017: The default value for parallelizationMethodExplicit is now DOMAIN"
+msgstr ""
+
+#: ../../CHANGES.md:156
+msgid "{py:obj}`abaqus.Job.ModelJob`"
+msgstr ""
+
+#: ../../CHANGES.md:158
+msgid "{py:obj}`abaqus.Job.ModelJob.ModelJob`: *changed*: Changed in version 2017: The default value for parallelizationMethodExplicit is now DOMAIN"
+msgstr ""
+
+#: ../../CHANGES.md:159
+msgid "{py:obj}`abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit`: *changed*: Changed in version 2017: The default value for parallelizationMethodExplicit is now DOMAIN"
+msgstr ""
+
+#: ../../CHANGES.md:161
+msgid "{py:obj}`abaqus.Field.OdbMeshRegionData`"
+msgstr ""
+
+#: ../../CHANGES.md:163
+msgid "{py:obj}`abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`: *changed*: Changed in version 2017: The transformationType attribute was moved."
+msgstr ""
+
+#: ../../CHANGES.md:164
+msgid "{py:obj}`abaqus.Field.OdbMeshRegionData.OdbMeshRegionData`: *changed*: Changed in version 2017: The transformationType argument was moved."
+msgstr ""
