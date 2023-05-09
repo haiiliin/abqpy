@@ -1,0 +1,2089 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, WANG Hailin
+# This file is distributed under the same license as the abqpy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abqpy 2022\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 07:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../reference/session/index.md:5
+msgid "Objects of Session"
+msgstr ""
+
+#: ../../reference/session/index.md:1
+msgid "Abaqus Session"
+msgstr ""
+
+#: ../../reference/session/index.md:3
+msgid "Session commands are used to create objects that are not stored with the model; for example, viewports and display groups. Abaqus/CAE retains Session objects only for the duration of the session; they are not saved when the model database is saved."
+msgstr ""
+
+#: ../../reference/session/index.md:21
+msgid "Classes"
+msgstr ""
+
+#: ../../reference/session/index.md:23
+msgid "Session"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:1
+msgid "Bases: :py:class:`~abaqus.Animation.AnimationSession.AnimationSession`, :py:class:`~abaqus.Canvas.CanvasSession.CanvasSession`, :py:class:`~abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession`, :py:class:`~abaqus.FieldReport.FieldReportSession.FieldReportSession`, :py:class:`~abaqus.Job.JobSession.JobSession`, :py:class:`~abaqus.Odb.OdbSession.OdbSession`, :py:class:`~abaqus.PathAndProbe.PathSession.PathSession`, :py:class:`~abaqus.XY.XYSession.XYSession`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:1
+msgid "The Session object has no constructor. Abaqus creates the **session** member when a session is started."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:4
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:4
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:5
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:5
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:8
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:6
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:4
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:7
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:4
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:4
+msgid "This object can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:9
+msgid "Check `Session on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.attachedToGui:1
+msgid "A Boolean specifying whether an Abaqus interactive session is running."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.replayInProgress:1
+msgid "A Boolean specifying whether Abaqus is executing a replay file."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint:1
+msgid "A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint:1
+msgid "A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit:1
+msgid "A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.colors:1
+msgid "A repository of Color objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.journalOptions:1
+msgid "A JournalOptions object specifying how to record selection of geometry in the journal and replay files."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.memoryReductionOptions:1
+msgid "A MemoryReductionOptions object specifying options for running in reduced memory mode."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.nodeQuery:1
+msgid "A NodeQuery object specifying nodes and their coordinates in a path."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.sketcherOptions:1
+msgid "A ConstrainedSketcherOptions object specifying common options for all sketches."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.viewerOptions:1
+msgid "A ViewerOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.animationOptions:1
+msgid "An AnimationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.aviOptions:1
+msgid "An AVIOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.imageAnimationOptions:1
+msgid "An ImageAnimationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.imageAnimation:1
+msgid "An ImageAnimation object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.quickTimeOptions:1
+msgid "A QuickTimeOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.viewports:1
+msgid "A repository of Viewport objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.customData:1
+msgid "A RepositorySupport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.fieldReportOptions:1
+msgid "A FieldReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions:1
+msgid "A FreeBodyReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`fieldReportOptions <abaqus.Session.SessionBase.SessionBase.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.odbs:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.scratchOdbs:1
+msgid "A repository of ScratchOdb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay:1
+msgid "A DefaultOdbDisplay object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultPlot:1
+msgid "A DefaultPlot object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultChartOptions:1
+msgid "A DefaultChartOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.odbData:1
+msgid "A repository of OdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.mdbData:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.paths:1
+msgid "A repository of Path objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.freeBodies:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.streams:1
+msgid "A repository of Stream objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.spectrums:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.currentProbeValues:1
+msgid "A CurrentProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultProbeOptions:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.probeOptions:1
+msgid "A ProbeOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Session.SessionBase.SessionBase.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultProbeReport:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.probeReport:1
+msgid "A ProbeReport object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeReport <abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.selectedProbeValues:1
+msgid "A SelectedProbeValues object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.printOptions:1
+msgid "A PrintOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.epsOptions:1
+msgid "An EpsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.pageSetupOptions:1
+msgid "A PageSetupOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.pngOptions:1
+msgid "A PngOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.psOptions:1
+msgid "A PsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.svgOptions:1
+msgid "A SvgOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.tiffOptions:1
+msgid "A TiffOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.autoColors:1
+msgid "An AutoColors object specifying the color palette to be used for color coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.xyColors:1
+msgid "An AutoColors object specifying the color palette to be used forXYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Session.SessionBase.SessionBase.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.xyDataObjects:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.curves:1
+msgid "A repository of XYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.xyPlots:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.charts:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.xyReportOptions:1
+msgid "An XYReportOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyReportOptions <abaqus.Session.SessionBase.SessionBase.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.views:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`networkDatabaseConnectors <abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors:1
+msgid "A repository of NetworkDatabaseConnector objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Session.SessionBase.SessionBase.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.displayGroups:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.graphicsInfo:1
+msgid "A GraphicsInfo object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.graphicsOptions:1
+msgid "A GraphicsOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsOptions <abaqus.Session.SessionBase.SessionBase.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions:1
+msgid "A ViewportAnnotationOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.queues:1
+msgid "A repository of Queue objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentViewportName <abaqus.Session.SessionBase.SessionBase.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.currentViewportName:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.images:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.movies:1
+msgid "A repository of Movie objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultLightOptions:1
+msgid "A LightOptions object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.drawingArea:1
+msgid "A DrawingArea object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.defaultMesherOptions:1
+msgid "A MesherOptions object specifying how to control default settings in the Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.drawings:1
+msgid "A repository of Drawing objects."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`writeImageAnimation <abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation>`\\ \\(fileName\\, format\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method writes the animations present in the list of canvas objects to a file."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`Movie <abaqus.Animation.AnimationSession.AnimationSession.Movie>`\\ \\(name\\, fileName\\[\\, startFrame\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a Movie object from the contents of the specified file."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Viewport <abaqus.Canvas.CanvasSession.CanvasSession.Viewport>`\\ \\(name\\[\\, origin\\, width\\, height\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Viewport object with the specified origin and dimensions."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`DisplayGroup <abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup>`\\ \\(name\\, leaf\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a DisplayGroup object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`writeFieldReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport>`\\ \\(filename\\, append\\, sortItem\\, ...\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method writes a FieldOutput object to a user-defined ASCII file."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`writeFreeBodyReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport>`\\ \\(fileName\\, append\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method writes a FreeBody object to a user-defined ASCII file."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`Queue <abaqus.Job.JobSession.JobSession.Queue>`\\ \\(name\\, queueName\\[\\, hostName\\, fileCopy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a Queue object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`ScratchOdb <abaqus.Odb.OdbSession.OdbSession.ScratchOdb>`\\ \\(odb\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates a new ScratchOdb object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Path <abaqus.PathAndProbe.PathSession.PathSession.Path>`\\ \\(name\\, type\\, expression\\, ...\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates a Path object."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Spectrum <abaqus.PathAndProbe.PathSession.PathSession.Spectrum>`\\ \\(name\\, colors\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates a Spectrum object and places it in the spectrums repository."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ":py:obj:`Stream <abaqus.PathAndProbe.PathSession.PathSession.Stream>`\\ \\(name\\, numPointsOnRake\\[\\, pointA\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid "This method creates aStream object and places it in the streams repository."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`AreaStyle <abaqus.XY.XYSession.XYSession.AreaStyle>`\\ \\(\\[color\\, fill\\, style\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates an AreaStyle."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`LineStyle <abaqus.XY.XYSession.XYSession.LineStyle>`\\ \\(\\[color\\, show\\, style\\, thickness\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a LineStyle."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`QuantityType <abaqus.XY.XYSession.XYSession.QuantityType>`\\ \\(\\[label\\, type\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a QuantityType object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`SymbolStyle <abaqus.XY.XYSession.XYSession.SymbolStyle>`\\ \\(\\[color\\, show\\, marker\\, size\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a SymbolStyle object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`TextStyle <abaqus.XY.XYSession.XYSession.TextStyle>`\\ \\(\\[color\\, show\\, font\\, rotationAngle\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a TextStyle."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYData <abaqus.XY.XYSession.XYSession.XYData>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromFile <abaqus.XY.XYSession.XYSession.XYDataFromFile>`\\ \\(fileName\\[\\, name\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates an XYData object from data in an ASCII file."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromHistory <abaqus.XY.XYSession.XYSession.XYDataFromHistory>`\\ \\(odb\\, outputVariableName\\, steps\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates an XYData object by reading history data from an Odb object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`xyDataListFromField <abaqus.XY.XYSession.XYSession.xyDataListFromField>`\\ \\(odb\\, outputPosition\\, ...\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a list of XYData objects by reading field data from an Odb object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromFreeBody <abaqus.XY.XYSession.XYSession.XYDataFromFreeBody>`\\ \\(odb\\[\\, force\\, moment\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a list of XYData objects by computing free body data from an Odb object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromShellThickness <abaqus.XY.XYSession.XYSession.XYDataFromShellThickness>`\\ \\(odb\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates a list of XYData objects by reading through the thickness field data from an Odb object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`XYDataFromPath <abaqus.XY.XYSession.XYSession.XYDataFromPath>`\\ \\(path\\, name\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid "This method creates an XYData object from path information."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`linearizeStress <abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress>`\\ \\(name\\, path\\, startPoint\\, ...\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to perform stress linearization along a defined stress line."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setPathTolerance <abaqus.XY.XYSessionBase.XYSessionBase.setPathTolerance>`\\ \\(\\[tolerance\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to set the **tolerance** to be used when creating XYData objects by extracting results along Path objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`getPathTolerance <abaqus.XY.XYSessionBase.XYSessionBase.getPathTolerance>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to get the **tolerance** used when creating XYData objects by extracting results along Path objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setLimitForXYDataPlots <abaqus.XY.XYSessionBase.XYSessionBase.setLimitForXYDataPlots>`\\ \\(\\[limit\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to set the **limit** for number of XY data objects while creating XYData from field output."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`getLimitForXYDataPlots <abaqus.XY.XYSessionBase.XYSessionBase.getLimitForXYDataPlots>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method is used to get the **limit** for number of XY data objects while creating XYData from field output."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Session.SessionBase.SessionBase.setValues>`\\ \\(\\[kernelMemoryLimit\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:1
+#: ../../None:17:<autosummary>:1
+msgid "This method modifies the Session object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`enableCADConnection <abaqus.Session.SessionBase.SessionBase.enableCADConnection>`\\ \\(CADName\\[\\, portNum\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:1
+#: ../../None:17:<autosummary>:1
+msgid "This method enables the Abaqus/CAE listening port for the specified **CAD** system."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`isCADConnectionEnabled <abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled:1
+#: ../../None:17:<autosummary>:1
+msgid "This method checks the status of CAD Connection."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`disableCADConnection <abaqus.Session.SessionBase.SessionBase.disableCADConnection>`\\ \\(CADName\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableCADConnection:1
+#: ../../None:17:<autosummary>:1
+msgid "This method disables an associative import CAD connection that was enabled."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`enableParameterUpdate <abaqus.Session.SessionBase.SessionBase.enableParameterUpdate>`\\ \\(CADName\\, CADVersion\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:1
+#: ../../None:17:<autosummary>:1
+msgid "This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`setCADPortNumber <abaqus.Session.SessionBase.SessionBase.setCADPortNumber>`\\ \\(CADName\\, Port\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`updateCADParameters <abaqus.Session.SessionBase.SessionBase.updateCADParameters>`\\ \\(modelName\\, CADName\\, ...\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:1
+#: ../../None:17:<autosummary>:1
+msgid "This method updates the parameters for the specified model using the specified parameter file."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`disableParameterUpdate <abaqus.Session.SessionBase.SessionBase.disableParameterUpdate>`\\ \\(CADName\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableParameterUpdate:1
+#: ../../None:17:<autosummary>:1
+msgid "This method disables an associative CAD connection using parameters."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`printToFile <abaqus.Session.SessionBase.SessionBase.printToFile>`\\ \\(fileName\\[\\, format\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:1
+#: ../../None:17:<autosummary>:1
+msgid "This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`printToPrinter <abaqus.Session.SessionBase.SessionBase.printToPrinter>`\\ \\(\\[printCommand\\, numCopies\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method prints canvas objects to a Windows printer or to a PostScript printer."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`saveOptions <abaqus.Session.SessionBase.SessionBase.saveOptions>`\\ \\(directory\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.saveOptions:1
+#: ../../None:17:<autosummary>:1
+msgid "This method saves your customized display settings."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`writeVrmlFile <abaqus.Session.SessionBase.SessionBase.writeVrmlFile>`\\ \\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeOBJFile:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:1
+#: ../../None:17:<autosummary>:1
+msgid "This method exports the current viewport objects to a file."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`write3DXMLFile <abaqus.Session.SessionBase.SessionBase.write3DXMLFile>`\\ \\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`writeOBJFile <abaqus.Session.SessionBase.SessionBase.writeOBJFile>`\\ \\(fileName\\[\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`openOdb <abaqus.Session.SessionBase.SessionBase.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:1
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:1
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:1
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:1
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:1
+msgid "Member Details:"
+msgstr ""
+
+#: ../../reference/session/index.md:33
+msgid "Other Classes"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:1
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:1
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:1
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:1
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:1
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
+msgid "The AutoColors object defines a color palette."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:9
+msgid "Check `AutoColors on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-autocolorspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors.setValues:1
+msgid "This method changes the color palette."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors.setValues:4
+msgid "Check `AutoColors.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-autocolorspyc.htm?contextscope=all#simaker-autocolorssetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors.setValues:0
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color.setByRGB:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:0
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:0
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:0
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:0
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:0
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:0
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:0
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableCADConnection:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableParameterUpdate:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.saveOptions:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setCADPortNumber:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeOBJFile:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors.setValues:7
+msgid "A sequence of Strings specifying the colors of the palette. Strings must be named colors or represent red, green, blue components in hexadecimal form. For instance, '#FF0000' for red, '#00FF00' for green and '#0000FF' for blue"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:1
+msgid "The Color object contains the RGB definition of a system color."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:9
+msgid "Check `Color on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-colorpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Color.name:1
+msgid "A String specifying the name of the color."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Color.rgb:1
+msgid "A tuple of three Floats specifying the RGB value of the color. The Float values must be between 0.0 and 1.0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color.setByRGB:1
+msgid "This method changes the RGB value of a user-defined color. However, users cannot define colors, and this method does not modify system-defined colors."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color.setByRGB:5
+msgid "Check `Color.setByRGB on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-colorpyc.htm?contextscope=all#simaker-colorsetbyrgbpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color.setByRGB:8
+msgid "A sequence of three Floats specifying the RGB value of the color. The Float values must be between 0.0 and 1.0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:1
+msgid "A drawing is the container for a geometric object. The Drawing object stores the vertex data and various settings that determine how the drawing will be displayed."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:10
+msgid "Check `Drawing on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:12
+msgid "This method creates an empty Drawing object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:15
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:15
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:4
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:18
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:22
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:20
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:23
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.name:1
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.name:1
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:0
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:0
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:0
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:22
+msgid "A Drawing object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:0
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:0
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:0
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:23
+msgid ":class:`Drawing`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:0
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:0
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:0
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:25
+msgid "- If the user attempts to create a new drawing with the name of an existing drawing:       ValueError: There is already a drawing with this name"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:25
+msgid "If the user attempts to create a new drawing with the name of an existing drawing:       ValueError: There is already a drawing with this name"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:1
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:1
+msgid "This method adds a rendering command to the drawing and can be called multiple times to add additional rendering commands. When the drawing is referenced by a Viewport, the drawing commands are used the render the Drawing. The rendering command constructs the specified type of geometric primitive using **numVertices** array elements starting at element index **startIndex**."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:8
+msgid "Check `Drawing.addArrayDraw on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingaddarraydrawpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:11
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:11
+msgid "A SymbolicConstant specifying the type of graphics primitive rendered by this command. Possible values are POINTS, LINES, LINE_LOOP, LINE_STRIP, TRIANGLES, TRIANGLE_STRIP, TRIANGLE_FAN, QUADS, and QUAD_STRIP."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:15
+msgid "An Integer specifying the index of the first vertex to render."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:17
+msgid "An Integer specifying the total number of vertices to render."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:19
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:17
+msgid "A SymbolicConstant specifying how polygonal graphics primitives will be rendered by this command. Possible values are FILL, EDGES, and POINTS. The default value is FILL."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:22
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:20
+msgid "The total number of rendering commands that have been specified."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:23
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:21
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:21
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:13
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:16
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:16
+msgid ":class:`int`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:25
+msgid "If (**startIndex** + **numVertices** - 1) is larger than the length of the vertex array:"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addArrayDraw:26
+msgid "Drawing request extends past array size of vertices, - If (**startIndex** + **numVertices** - 1) is larger than the length of the normal array       and normals are required for the graphics primitive:       Drawing request extends past array size of normals.     - If (**startIndex** + **numVertices** - 1) is larger than the length of the color array and       vertex colors are required for the graphics primitive:       Drawing request extends past array size of colors."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:8
+msgid "Check `Drawing.addIndexDraw on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingaddindexdrawpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:15
+msgid "A sequence of Integer values specifying index of each vertex to render."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:23
+msgid "- If any value in the **indices** sequence negative:       ValueError     Index values must be positive, - If any value in the **indices** sequence is larger than the length of the vertex array:"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:23
+msgid "If any value in the **indices** sequence negative:       ValueError     Index values must be positive, - If any value in the **indices** sequence is larger than the length of the vertex array:"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.addIndexDraw:24
+msgid "Drawing request extends past array size of vertices, - If any value in the **indices** sequence is larger than the length of the normal array       and normals are required for the graphics primitive:       Drawing request extends past array size of normals.     - If any value in the **indices** sequence is larger than the length of the color array       and vertex colors are required for the graphics primitive:       Drawing request extends past array size of colors."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.colorCount:1
+msgid "An Int specifying the number of colors in the color array after a call to the setColors method. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:10
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.cullBackfaces:1
+msgid "A Boolean specifying whether polygonal graphics primitives facing away from the viewer should be culled (not rendered). The default value is OFF.The winding order, and not the normal, of the graphics primitive is used to determine its facing."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.edgeColor:1
+msgid "A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for the edge color. Possible values for each component are between 0.0 and 1.0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:23
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.edgesInShaded:1
+msgid "A Boolean specifying whether edge and point drawing commands will be issued in a FILLED or SHADED display. The default value is ON.If no edge or point drawing commands have been defined, the polygonal drawing commands will be issued in WIREFRAME and HIDDEN_LINE displays with the **polygonMode** set to EDGES. If only edge and point drawing commands have been defined, the Drawing will not be rendered in FILLED or SHADED displays."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:14
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.frontFaceOrder:1
+msgid "A SymbolicConstant specifying the winding order for polygonal graphics primitives that face the viewer. Possible values are:CCW, specifying front face winding order is counter-clockwise.CW, specifying front face winding order is clockwise.The default value is CCW."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:35
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.lineSize:1
+msgid "A Float specifying the width of the line, in millimeters, used to render edges. Possible values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the thinnest possible line. The default value is 0.0.A value of 0.0 will be one pixel on the output device. One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not be clear."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.normalCount:1
+msgid "An Int specifying the number of normal vectors in the normal array after a call to the setNormals method. The default value is 0."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.pointColor:1
+msgid "A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for the point color. Possible values for each component are between 0.0 and 1.0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:41
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.pointSize:1
+msgid "A Float specifying the width of points, in millimeters, used to render points. Possible values are 0.0 ≤ **lineSize** ≤ 5.0 with 0.0 being interpreted as the smallest possible point. The default value is 0.0.A value of 0.0 will be one pixel on the output device. One pixel on the screen is generally visible but one pixel on a 1200 DPI printer may not be clear."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:1
+msgid "This method accepts the color data for each vertex. It defines in an array of colors with a length equal to the length of the **colorData** sequence divided by **colorDimension**."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:6
+msgid "Check `Drawing.setColors on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetcolorspyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:9
+msgid "An Integer in the range of 3 to 4 specifying how many Float values are needed to compose a single color."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:12
+msgid "A sequence of Float values in the range of 0.0 to 1.0 that will be used to compose the colors. There must be **colorDimension** values in the sequence for each color. The first color will be associated with the fist vertex and so on.The first Float will be the red value for the first color. The second Float will be the green value and the third will be the blue value. When **colorDimension** is 4 the 4th Float will be the alpha value for the first color but is ignored.If only one color is specified, all vertices will use the color value."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:20
+msgid "The number of colors described."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:23
+msgid "If an invalid **colorDimension** is specified."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:24
+msgid "If **colorData** is an empty sequence."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setColors:25
+msgid "If setColors has already been called and this call is sending fewer colors."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:1
+msgid "This method allows a separate, single color to be used when rendering the edges of the drawing. Once called, edges will be rendered using the specified color but facets will continue to use the colors specified in the setColors method. An empty sequence can be specified to resume using the colors arrays for edges."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:7
+msgid "Check `Drawing.setEdgeColor on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetedgecolorpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:10
+msgid "A sequence of 0 or 3 Float values in the range of 0.0 to 1.0 that will be used to compose the edge color.If the initial Float value is -1, the viewport background color will be used for the edge color."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:14
+msgid "- If **edgeColor** is not a sequence of 0 or 3 Floats:       ValueError: **edgeColor** must be a tuple with 3 values"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setEdgeColor:14
+msgid "If **edgeColor** is not a sequence of 0 or 3 Floats:       ValueError: **edgeColor** must be a tuple with 3 values"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:1
+msgid "This method accepts the normal data for each vertex. It defines in an array of normal vectors with a length equal to the length of the **normalData** sequence divided by 3."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:5
+msgid "Check `Drawing.setNormals on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetnormalspyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:8
+msgid "A sequence of Float values that will be used to compose the normals. There must be 3 values in the sequence for each normal.If only one normal is specified, all vertices will use the normal value."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:12
+msgid "The number of normals described."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:16
+msgid "If **normalData** is sequence with less than 3 values."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setNormals:17
+msgid "If setNormals has already been called and this call is sending fewer values."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:1
+msgid "This method allows a separate, single color to be used when rendering the points of the drawing. Once called, points will be rendered using the specified color but facets will continue to use the colors specified in the setColors method. An empty sequence can be specified to resume using the colors arrays for points."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:7
+msgid "Check `Drawing.setPointColor on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetpointcolorpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:10
+msgid "A sequence of 0 or 3 Float values in the range of 0.0 to 1.0 that will be used to compose the point color.If the initial Float value is -1, the viewport background color will be used for the edge color."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:14
+msgid "- If **pointColor** is a not sequence of 0 or 3 Floats:       ValueError: **pointColor** must be a tuple with 3 values"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setPointColor:14
+msgid "If **pointColor** is a not sequence of 0 or 3 Floats:       ValueError: **pointColor** must be a tuple with 3 values"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:1
+msgid "This method modifies the rendering of the Drawing object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:4
+msgid "Check `Drawing.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:7
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.show:1
+msgid "A Boolean specifying whether the drawing object will be rendered when referenced. The default value is OFF."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:19
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.smoothShade:1
+msgid "A Boolean specifying whether the lighting of polygonal graphics primitives is consistent for each facet or calculated for each displayed pixel. The default value is ON.When False, only the last normal for each facet will be used in the lighting calculation."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:29
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.translucency:1
+msgid "A Float specifying the opacity for polygonal graphics primitives. Possible values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being completely transparent (invisible) and 1.0 being opaque. The default value is 1.0.A value greater than 0.3 will cause the translucent facets to be sorted by depth before being rendered and has the side effect of disabling two-sided lighting for those facets."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:47
+msgid "A Boolean specifying whether an object's depth will be considered during rendering. The default value is ON.When OFF, the object will not be hidden by other objects in front of it.  .. versionadded:: 2018     The ``depthTest`` argument was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:47
+msgid "A Boolean specifying whether an object's depth will be considered during rendering. The default value is ON.When OFF, the object will not be hidden by other objects in front of it."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:51
+msgid "The ``depthTest`` argument was added."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:54
+msgid "- If an invalid **translucency** value is specified:       RangeError: **translucency** must be in the range 0.0 <= value <= 1.0     - If an invalid **lineSize** value is specified:       RangeError: **lineSize** must be in the range 0.0 <= value <= 5.0     - If an invalid **pointSize** value is specified:       RangeError: **pointSize** must be in the range 0.0 <= value <= 5.0"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setValues:54
+msgid "If an invalid **translucency** value is specified:       RangeError: **translucency** must be in the range 0.0 <= value <= 1.0     - If an invalid **lineSize** value is specified:       RangeError: **lineSize** must be in the range 0.0 <= value <= 5.0     - If an invalid **pointSize** value is specified:       RangeError: **pointSize** must be in the range 0.0 <= value <= 5.0"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:1
+msgid "This method accepts the vertex data that defines the Drawing object. It defines in an array of vertices with a length equal to the length of the **vertexData** sequence divided by **vertexDimension**."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:6
+msgid "Check `Drawing.setVertices on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingpyc.htm?contextscope=all#simaker-drawingsetverticespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:9
+msgid "An Integer in the range of 2 to 4 specifying how many Float values are needed to compose a single vertex."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:12
+msgid "A sequence of Float values that will be used to compose the vertices. There must be **vertexDimension** values in the sequence for each vertex."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:15
+msgid "The number of vertices described."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:18
+msgid "If an invalid **vertexDimension** is specified."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:19
+msgid "If **vertexData** is an empty sequence."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing.setVertices:20
+msgid "If setVertices has already been called and this call is sending fewer vertices."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.Drawing.vertexCount:1
+msgid "An Int specifying the number of vertices in the vertex array after a call to the setVertices method. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:1
+msgid "The Image object is used to store color values and attributes associated with a raster file. Upon creation, the Image object is added to the session.images repository."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:10
+msgid "Check `Image on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imagepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:12
+msgid "This method creates an Image object from the contents of the specified file."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:20
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:7
+#: ../../docstring of abaqus.Session.SessionBase.Image.name:1
+msgid "A String specifying the repository name for the image."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:22
+#: ../../docstring of abaqus.Session.SessionBase.Image.fileName:1
+msgid "A String specifying the file from which the image is to be read. The file extension must be specified and indicate the image format (.bmp, .gif, .jpg, .jpeg, .ico, .pcx, .png, .rgb, .tga, .tif, or .xpm)."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:26
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:16
+msgid "An Image object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:27
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:17
+msgid ":class:`Image`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:29
+msgid "- If **fileName** does not exist or can not be read:       ValueError     Unable to open image file, - If **fileName** references an unsupported image file format:       ValueError     Unsupported image format, - If the contents of **fileName** are corrupt or can not be decoded:       ValueError: Unable to decode image file"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:29
+msgid "If **fileName** does not exist or can not be read:       ValueError     Unable to open image file, - If **fileName** references an unsupported image file format:       ValueError     Unsupported image format, - If the contents of **fileName** are corrupt or can not be decoded:       ValueError: Unable to decode image file"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:1
+msgid "This method creates an Image object from a given frame of an existing Movie object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:4
+msgid "Check `ImageFromMovie on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imagefrommoviepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:9
+msgid "A String specifying the name of the movie from which the image is to be extracted. The movie must exist in the session.movies repository."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:12
+msgid "An Int specifying the movie frame number defining the image to be extracted."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:14
+msgid "A Float specifying the time of the movie defining the image to be extracted."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:19
+msgid "If **movieName** does not exist."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:20
+msgid "If **frame** references an non existing frame."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:21
+msgid "If **time** references an non existing frame."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.ImageFromMovie:22
+msgid "keyword error on time, If **time** and **frame** are given in the same command."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:1
+msgid "A JournalOptions object specifies how to record selection of geometry in the journal and replay files. **journalOptions** can also be used to set the numeric formatting options for field report output, geometry commands output, and a default format for other numeric output. The JournalOptions object has no constructor. Abaqus creates the **journalOptions** member when a session is started."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:13
+msgid "Check `JournalOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-journaloptionspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:1
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:19
+msgid "This method creates a NumberFormat object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:11
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:17
+msgid "Check `NumberFormat on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:14
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:29
+#: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.blankPad:1
+msgid "A Boolean specifying whether the printed digits should be padded with blank characters to ensure equal sized fields. The **blankPad** argument is useful when your printed output includes columns. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:18
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:33
+#: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.format:1
+msgid "A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING, SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:21
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:36
+#: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.numDigits:1
+msgid "An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0. The default value is 6."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:24
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:39
+#: ../../docstring of abaqus.Session.NumberFormat.NumberFormat.precision:1
+msgid "An Int specifying the number of decimal places to which the number is to be truncated for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:28
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:43
+msgid "A NumberFormat object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.NumberFormat:29
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:44
+msgid ":class:`NumberFormat`"
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.JournalOptions.numberFormat:1
+msgid "Format of the number"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:1
+msgid "This method modifies the JournalOptions object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:4
+msgid "Check `JournalOptions.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-journaloptionspyc.htm?contextscope=all#simaker-journaloptionssetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:7
+msgid "A SymbolicConstant specifying the format of the geometry in the replay file. Possible values are COORDINATE, INDEX, and COMPRESSEDINDEX. The default value is COMPRESSEDINDEX."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:10
+msgid "A SymbolicConstant specifying the format of the geometry in the recovery file. Possible values are COORDINATE, INDEX, and COMPRESSEDINDEX. The default value is COMPRESSEDINDEX."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:13
+msgid "A NumberFormat object specifying the default format for numeric output. The default values are the same as the default values for the NumberFormat object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:16
+msgid "A NumberFormat object specifying the default format for numbers in a field report output. The default values are the same as the default values for the NumberFormat object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions.setValues:20
+msgid "A NumberFormat object specifying the default format for numbers in geometry commands output. The default values are the same as the default values for the NumberFormat object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1
+msgid "The NumberFormat object is a formatting template used to define formatting options for certain numeric output.This page discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established /SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker- numberformatnumberformatpyc)Members."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+msgid "The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for running in reduced memory mode. The MemoryReductionOptions object has no constructor. Abaqus creates the **MemoryReductionOptions** member when a session is started."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:11
+msgid "Check `MemoryReductionOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-memoryreductionoptionspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:1
+msgid "This method modifies the MemoryReductionOptions object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:4
+msgid "Check `MemoryReductionOptions.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-memoryreductionoptionspyc.htm?contextscope=all#simaker-memoryreductionoptionssetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:7
+msgid "A Boolean specifying whether Abaqus/CAE should run in reduced memory mode. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:10
+msgid "A Float specifying the percent of **kernelMemoryLimit** at which the reduced memory mode starts. The default value is 75.0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+msgid "The NetworkDatabaseConnector object allows you to access an output database on a remote system."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:9
+msgid "Check `NetworkDatabaseConnector on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:11
+msgid "This method creates a NetworkDatabaseConnector object that you can use to access a remote output database. You can create a network database connector from any platform: Windows or Linux. However, the network database connector server must reside on a Linux platform; you cannot access an output database that resides on a remote Windows system. You can access only a remote output database; you cannot access a remote model database."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:25
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.hostName:1
+msgid "A String specifying the name of the remote computer."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:27
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.directory:1
+msgid "A String specifying the directory on the remote computer."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:29
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:7
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.remoteAbaqusDriverName:1
+msgid "A String specifying the name of command to execute Abaqus/CAE on the remote computer."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:31
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:9
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.remoteLoginMechanism:1
+msgid "A SymbolicConstant specifying the remote shell command on the local system. Possible values are RSH and SSH. The default value is SSH."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:34
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:12
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.sshPath:1
+msgid "A String specifying the path to the`ssh` command on the local system. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:37
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:15
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:7
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.serverPort:1
+msgid "An Int specifying the server port on the remote computer. If **serverPort** =0, the host and remote systems are allowed to establish their own port numbers. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:41
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:19
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.connectionPort:1
+msgid "An Int specifying the connection port on the remote computer. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:43
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:21
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:11
+msgid "An Int specifying the timeout in seconds for the remote server. For example: 86400 corresponds to one day. The server exits if it does not receive any communication from the client during the time specified. The default value is 86400."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:47
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:25
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.allowAutomaticStartup:1
+msgid "A Boolean specifying whether to start the remote network database connector server. The default value is ON."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:50
+msgid "A NetworkDatabaseConnector object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:51
+msgid ":class:`NetworkDatabaseConnector`"
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.connected:1
+msgid "A Boolean specifying if the connection between the client and the server is established."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.serverTimeout:1
+msgid "86400 corresponds to one day. The server exits if it does not receive any communication from the client during the time specified. The default value is 86400."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.serverTimeout:0
+msgid "type"
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.NetworkDatabaseConnector.serverTimeout:5
+msgid "An Int specifying the timeout in seconds for the remote server. For example"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:1
+msgid "This method modifies the NetworkDatabaseConnector object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.setValues:4
+msgid "Check `NetworkDatabaseConnector.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all#simaker-networkdatabaseconnectorsetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:1
+msgid "This method starts the remote network database connector server on the remote host."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:4
+msgid "Check `NetworkDatabaseConnector.start on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all#simaker-networkdatabaseconnectorstartpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.stop:1
+msgid "This method stops the remote network database connector server on the remote host."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:9
+msgid "Check `SessionBase on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableCADConnection:4
+msgid "Check `SessionBase.disableCADConnection on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessiondisablecadconnectionpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableCADConnection:7
+msgid "A String specifying the CAD system for which associative import will be disabled. Available options are Pro/ENGINEER, CATIA V5, and CATIA V6, NX and SolidWorks."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableParameterUpdate:4
+msgid "Check `SessionBase.disableParameterUpdate on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessiondisableparameterupdatepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.disableParameterUpdate:7
+msgid "A String specifying the CAD system for which the parameter update will be disabled. Available option is Pro/ENGINEER."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:4
+msgid "Check `SessionBase.enableCADConnection on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionenablecadconnectionpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:7
+msgid "A String specifying the CAD system. Available options are Pro/ENGINEER, CATIA V5, CATIA V6, NX and SolidWorks."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:10
+msgid "An Integer specifying the port number to be used by the CAD system to communicate with Abaqus/CAE. If unspecified, attempts will be made to identify an open port. The default ports used are as follow: Pro/E : 49178CATIA V5 : 49179SolidWorks : 49180NX : 49181CATIA V6 : 49182"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableCADConnection:15
+msgid "The connection port number used for the CAD connection."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:5
+msgid "Check `SessionBase.enableParameterUpdate on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionenableparameterupdatepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:8
+msgid "A String specifying the CAD system for which parameter update will be enabled. Available options are Pro/ENGINEER and NX."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:11
+msgid "A String specifying the CAD system version. Allowable options take the form of the specific CAD system plus a version string. Examples for Pro/ENGINEER are \"Wildfire5\" and \"Creo4.\" An NX example is \"NX11.\""
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.enableParameterUpdate:15
+msgid "An Integer specifying the port number to be used by Abaqus/CAE to communicate with the CAD system. If unspecified, attempts will be made to identify an open port. This port number is not the same as the **portNum** used by the associative import interface. The default CAD listening ports are as follow:ProE : 3344NX : 3344"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled:3
+msgid "A Boolean value of True if the CAD connection enabled and False if the CAD connection disabled."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled:5
+msgid ":class:`Boolean`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:1
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:10
+msgid "Check `SessionBase.openOdb on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionopenodbpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:13
+msgid "A String specifying the repository key. If the ``name`` is not the same as the ``path`` to the output database (`.odb`) file, the ``path`` must be specified as well. Additionally, to support backwards compatibility of the interface, if the ``name`` parameter is omitted, the ``path`` and ``name`` will be presumed to be the same."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:18
+msgid "A String specifying the path to an existing output database (`.odb`) file."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:20
+msgid "A Boolean specifying whether the file will permit only read access or both read and write access. The initial value is TRUE when the output database file is opened from Abaqus/CAE, indicating that only read access will be permitted."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:24
+msgid "An Odb object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:25
+msgid ":class:`Odb`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:27
+msgid "The database is from a previous release of Abaqus, If the output database was generated by a previous release of Abaqus and needs     upgrading, Run  `abaqus upgrade -job <newFilename> -odb <oldFileName>` to upgrade it."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:28
+msgid "Abaqus installation must be upgraded before this output database can be opened, If the output database was generated by a newer release of Abaqus, and the     installation of Abaqus needs upgrading."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.openOdb:29
+msgid "If the file is not a valid database."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:5
+msgid "Check `SessionBase.printToFile on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionprinttofilepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:8
+msgid "A String specifying the file to which the image is to be written. If no file extension is supplied, an extension is added based on the selected image format (.ps, .eps, .png, .tif, .svg, or .svgz)."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:12
+msgid "A SymbolicConstant specifying the image format. Possible values are PNG, SVG, TIFF, PS, and EPS. The default value is PNG."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:15
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:28
+msgid "A sequence of canvas objects (viewports, text strings, or arrows) to print. The default is to print all canvas objects."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:18
+msgid "A Boolean specifying the format for an SVG file. It is valid to use this argument only when **format** is SVG. Possible values are False (Uncompressed) and True (Compressed).  .. versionchanged:: 2022     It is \"only\" valid to use this argument ..."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:18
+msgid "A Boolean specifying the format for an SVG file. It is valid to use this argument only when **format** is SVG. Possible values are False (Uncompressed) and True (Compressed)."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToFile:21
+msgid "It is \"only\" valid to use this argument ..."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:1
+msgid "This method prints canvas objects to a Windows printer or to a PostScript printer. The attributes used for printing to a Windows printer are stored in the PrintOptions object and the PageSetupOptions object; the attributes used for printing to a PostScript printer are stored in the PrintOptions object and the PsOptions object."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:7
+msgid "Check `SessionBase.printToPrinter on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionprinttoprinterpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:10
+msgid "A String specifying the operating system command or printer name to issue for printing to the printer. The default value is “lpr” or the value specified by the printOptions method. If you create a script to print directly to a Windows printer, the **printCommand** must take the following form::      session.printToPrinter.setValues(         printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'     )  The ``PROPERTIES`` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:10
+msgid "A String specifying the operating system command or printer name to issue for printing to the printer. The default value is “lpr” or the value specified by the printOptions method. If you create a script to print directly to a Windows printer, the **printCommand** must take the following form::"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:20
+msgid "The ``PROPERTIES`` is a list of characters that represents the printing preferences for the selected Windows printer. The properties are not required in a script; the printed output will use the current settings for the selected printer. You can use `'PRINTER[7]: DEFAULT'` to specify the default Windows printer."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:25
+msgid "An Int specifying the number of copies to print. Possible values are 1 ≤ **numCopies** ≤ 100. The default value is 1."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:31
+msgid "invalid print command, If **printCommand** is invalid."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:32
+msgid "print command failed, If the print command fails."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:33
+msgid "If **numCopies** is out of range."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.printToPrinter:34
+msgid "keyword error on compression, If **compression** is specified when **format** is not SVG."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.saveOptions:4
+msgid "Check `SessionBase.saveOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionsaveoptionspyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.saveOptions:7
+msgid "A SymbolicConstant specifying the directory in which Abaqus saves the file that will be used to restore your customized settings (abaqus_2021.gpr). Possible values are HOME and CURRENT."
+msgstr ""
+
+#: ../../docstring of abaqus.Session.SessionBase.SessionBase.sessionState:1
+msgid "A Dictionary object specifying the viewports and their associated models. The Dictionary key specifies the viewport name. The Dictionary value is a Dictionary specifying the model name."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setCADPortNumber:1
+msgid "This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application. This port number is used to send the parameter information to the CAD system."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setCADPortNumber:6
+msgid "Check `SessionBase.setCADPortNumber on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionsetcadportnumberpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setCADPortNumber:9
+msgid "A String specifying the CAD system for which the port number will be saved. The available options are 'CATIA V5' and ' CATIA V6'."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setCADPortNumber:12
+msgid "An integer specifying the port number to be used by Abaqus/CAE to send the modified parameters to the CAD system."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:4
+msgid "Check `SessionBase.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionsetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:7
+msgid "A Float specifying the memory limit value for the Abaqus/CAE kernel process in megabytes. If the limit is exceeded, Abaqus/CAE displays an error message.The default memory limit value for Windows 32-bit systems if not set is 1800 MB. Increasing the memory limit is not recommended unless you are using a Windows 32-bit system with the boot option `/3GB /userva = SizeInMBytes` to extend the amount of memory available for Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size reaches the **abq_ker_memory** value or the virtual memory limit of the machine, the following message will be displayed:  `Operation did not complete due to a memory allocation failure.`  For optimal performance, the memory limit should be set to a value less than the physical amount of memory on the machine.The minimum setting allowed is 256 MB."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:7
+msgid "A Float specifying the memory limit value for the Abaqus/CAE kernel process in megabytes. If the limit is exceeded, Abaqus/CAE displays an error message.The default memory limit value for Windows 32-bit systems if not set is 1800 MB. Increasing the memory limit is not recommended unless you are using a Windows 32-bit system with the boot option `/3GB /userva = SizeInMBytes` to extend the amount of memory available for Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size reaches the **abq_ker_memory** value or the virtual memory limit of the machine, the following message will be displayed:"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:16
+msgid "`Operation did not complete due to a memory allocation failure.`"
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.setValues:18
+msgid "For optimal performance, the memory limit should be set to a value less than the physical amount of memory on the machine.The minimum setting allowed is 256 MB."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:4
+msgid "Check `SessionBase.updateCADParameters on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionupdatecadparameterspyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:7
+msgid "A String specifying the model name to update."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:9
+msgid "A String specifying the CAD system for which Abaqus updates the parameters. The available options are 'Pro/ENGINEER', 'CATIA V5' and 'CATIA V6'."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:12
+msgid "A parameter file containing the parameters that were exposed in the CAD system using the ``ABQ_`` prefix."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:15
+msgid "A file name specifying the CAD part file for which parameter update is triggered.For **CADName** = 'CATIA V5' or 'CATIA V6', you can specify either products or parts using this argument. If you specify a product, Abaqus updates all of the parts associated with that product.For **CADName** = 'Pro/ENGINEER', this argument is optional, and you can specify update for parts only. However, a single file can be associated with multiple parts in the case of family tables. In this case, Abaqus updates all listed parts."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.updateCADParameters:22
+msgid "An String specifying the part name to update. This part name should match the part name in the originating CAD system.If you specify neither **CADPartFile** nor **CADPartName** during an update in which you specified **CADName** = 'Pro/ENGINEER', Abaqus updates all of the parts in the specified file."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:4
+msgid "Check `SessionBase.write3DXMLFile on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionwrite3dxmlfilepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:7
+msgid "A String specifying the file to which the graphics data is to be written. If no file extension is supplied, (.3dxml) will be added."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:10
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:10
+msgid "A Boolean specifying the format. Possible values are False (Uncompressed) and True (Compressed)."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.write3DXMLFile:13
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeOBJFile:10
+msgid "A sequence of canvas objects to export."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeOBJFile:4
+msgid "Check `SessionBase.writeOBJFile on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionwriteobjfilepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeOBJFile:7
+msgid "A String specifying the file to which the graphics data is to be written. If no file extension is supplied, (.obj) will be added."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:4
+msgid "Check `SessionBase.writeVrmlFile on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all#simaker-sessionwritevrmlfilepyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:7
+msgid "A String specifying the file to which the graphics data is to be written. If no file extension is supplied, an extension is added based on the selected format (.wrl, .wrz)."
+msgstr ""
+
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase.writeVrmlFile:13
+msgid "A sequence of canvas objects (viewports, text strings, or arrows) to export."
+msgstr ""
