@@ -3,6 +3,6 @@
 
 set -ex
 cd "$(dirname "$0")"
-cd ..
-sphinx-build -T -b gettext -j auto . locales/pot
-sphinx-intl update -p locales/pot -l zh_CN 
+cd ../..
+sphinx-build -T -b gettext -j auto source build/gettext
+sphinx-intl update -p build/gettext -l zh_CN 
