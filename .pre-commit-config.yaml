@@ -5,11 +5,8 @@ repos:
   hooks:
     - id: black
 
-- repo: local
+- repo: https://github.com/frostming/pofmt
+  rev: 'main'
   hooks:
     - id: pofmt
-      name: pofmt
-      entry: pofmt
-      language: python
-      types: ['text', 'pofile']
-      additional_dependencies: ['pofmt', 'pangu']
+      additional_dependencies: ['pangu']  # for handling Chinese documents
