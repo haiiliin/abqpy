@@ -2,6 +2,8 @@ from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, ON, Boolean
+from ..UtilityAndView.View import View
 from .Area import Area
 from .AreaStyle import AreaStyle
 from .AxisArray import AxisArray
@@ -9,8 +11,6 @@ from .Legend import Legend
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from .XYCurve import XYCurve
-from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 
 @abaqus_class_doc

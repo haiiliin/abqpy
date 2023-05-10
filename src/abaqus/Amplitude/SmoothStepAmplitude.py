@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Amplitude import Amplitude
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Amplitude import Amplitude
 
 
 @abaqus_class_doc

@@ -1,17 +1,18 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Amplitude import Amplitude
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
     ABSOLUTE_VALUE,
     ACCELERATION,
-    Boolean,
     EVENT_ACCELERATION,
     OFF,
     STEP,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Amplitude import Amplitude
 
 
 @abaqus_class_doc

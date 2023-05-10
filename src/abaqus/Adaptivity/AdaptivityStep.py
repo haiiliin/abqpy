@@ -1,17 +1,18 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Region.Region import Region
+from ..Step.StepBase import StepBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from .AdaptiveMeshDomain import AdaptiveMeshDomain
 from .DisplacementAdaptiveMeshConstraintState import (
     DisplacementAdaptiveMeshConstraintState,
 )
 from .VelocityAdaptiveMeshConstraintState import VelocityAdaptiveMeshConstraintState
-from ..Region.Region import Region
-from ..Step.StepBase import StepBase
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,8 +1,8 @@
 from typing import Sequence
 
-from .Imperfection import Imperfection
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
+from .Imperfection import Imperfection
 
 
 class FileImperfection(Imperfection):

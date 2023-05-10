@@ -2,10 +2,10 @@ from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

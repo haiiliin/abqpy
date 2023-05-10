@@ -1,11 +1,19 @@
 from typing import Optional, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import BEST_FIT, Boolean, CENTER, FIT_TO_VIEWPORT, OFF, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .._OptionsBase import _CopyOptionsBase
+from ..UtilityAndView.abaqusConstants import (
+    BEST_FIT,
+    CENTER,
+    FIT_TO_VIEWPORT,
+    OFF,
+    Boolean,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

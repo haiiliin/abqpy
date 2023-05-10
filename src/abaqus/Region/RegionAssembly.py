@@ -1,20 +1,22 @@
 from __future__ import annotations
 
-from typing import Optional, Union, Sequence, overload, Tuple
+from typing import Optional, Sequence, Tuple, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Region import Region
-from .RegionAssemblyBase import RegionAssemblyBase
-from .Set import Set
-from .Surface import Surface
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
-from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
+from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import (
+    ConstrainedSketchVertex,
+)
+from .Region import Region
+from .RegionAssemblyBase import RegionAssemblyBase
+from .Set import Set
+from .Surface import Surface
 
 
 @abaqus_class_doc

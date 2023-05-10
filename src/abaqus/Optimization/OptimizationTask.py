@@ -1,8 +1,35 @@
 from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..BasicGeometry.VertexArray import VertexArray
+from ..Datum.DatumCsys import DatumCsys
+from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_EQUAL,
+    ABSOLUTE_VALUE,
+    AUTO,
+    AXIS_1,
+    DEMOLD_REGION,
+    FILTER_REGION,
+    FREE_FORM,
+    MAXIMUM,
+    MILLING_REGION,
+    MINIMIZE,
+    MINIMUM,
+    MODEL,
+    OFF,
+    ON,
+    OVERHANG_REGION,
+    RIBDESIGN_REGION,
+    SUM,
+    TRUE,
+    VECTOR,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .BeadFilter import BeadFilter
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
@@ -46,32 +73,6 @@ from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRibDesign import TopologyRibDesign
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
-from ..BasicGeometry.VertexArray import VertexArray
-from ..Datum.DatumCsys import DatumCsys
-from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    ABSOLUTE_EQUAL,
-    AUTO,
-    AXIS_1,
-    Boolean,
-    DEMOLD_REGION,
-    FREE_FORM,
-    MAXIMUM,
-    MILLING_REGION,
-    MINIMIZE,
-    MINIMUM,
-    MODEL,
-    OFF,
-    ON,
-    OVERHANG_REGION,
-    SUM,
-    TRUE,
-    VECTOR,
-    ABSOLUTE_VALUE,
-    FILTER_REGION,
-    RIBDESIGN_REGION,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

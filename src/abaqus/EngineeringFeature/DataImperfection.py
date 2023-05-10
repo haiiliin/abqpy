@@ -2,9 +2,9 @@ from typing import Sequence, Union
 
 from typing_extensions import Literal
 
-from .Imperfection import Imperfection
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, R
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, R
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Imperfection import Imperfection
 
 
 class DataImperfection(Imperfection):

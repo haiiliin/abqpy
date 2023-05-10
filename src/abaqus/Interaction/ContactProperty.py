@@ -1,24 +1,12 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .CohesiveBehavior import CohesiveBehavior
-from .ContactDamage import ContactDamage
-from .ContactDamping import ContactDamping
-from .ContactTangentialBehavior import ContactTangentialBehavior
-from .FractureCriterion import FractureCriterion
-from .GapElectricalConductance import GapElectricalConductance
-from .GapHeatGeneration import GapHeatGeneration
-from .GeometricProperties import GeometricProperties
-from .InteractionProperty import InteractionProperty
-from .NormalBehavior import NormalBehavior
-from .Radiation import Radiation
-from .ThermalConductance import ThermalConductance
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
     ALL_NODES,
     BK,
-    Boolean,
     COEFFICIENTS,
     DAMPING_COEFFICIENT,
     DEFAULT,
@@ -33,12 +21,25 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     STEP,
-    SymbolicConstant,
     TABULAR,
     UNCOUPLED,
     VCCT,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .CohesiveBehavior import CohesiveBehavior
+from .ContactDamage import ContactDamage
+from .ContactDamping import ContactDamping
+from .ContactTangentialBehavior import ContactTangentialBehavior
+from .FractureCriterion import FractureCriterion
+from .GapElectricalConductance import GapElectricalConductance
+from .GapHeatGeneration import GapHeatGeneration
+from .GeometricProperties import GeometricProperties
+from .InteractionProperty import InteractionProperty
+from .NormalBehavior import NormalBehavior
+from .Radiation import Radiation
+from .ThermalConductance import ThermalConductance
 
 
 @abaqus_class_doc

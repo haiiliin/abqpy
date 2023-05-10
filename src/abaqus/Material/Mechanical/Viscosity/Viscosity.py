@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Trs import Trs
-from ....UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ....UtilityAndView.abaqusConstants import NEWTONIAN, OFF, Boolean
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Trs import Trs
 
 
 @abaqus_class_doc

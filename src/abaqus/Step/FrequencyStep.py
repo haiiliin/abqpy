@@ -1,9 +1,9 @@
 from typing import Dict, Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AnalysisStep import AnalysisStep
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from ..Adaptivity.AdaptiveMeshDomain import AdaptiveMeshDomain
 from ..BoundaryCondition.BoundaryConditionState import BoundaryConditionState
@@ -20,15 +20,16 @@ from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import (
     AC_ON,
     ALL,
-    Boolean,
     DEFAULT,
     DISPLACEMENT,
     OFF,
     ON,
     SOLVER_DEFAULT,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .AnalysisStep import AnalysisStep
 
 
 @abaqus_class_doc

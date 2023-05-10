@@ -1,10 +1,10 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     EXTRAPOLATE_COMPUTE_AVERAGE,
     FIELD_OUTPUT,
     FLOAT,
@@ -13,8 +13,9 @@ from ..UtilityAndView.abaqusConstants import (
     ON,
     REAL,
     SCALAR,
-    SymbolicConstant,
     UNDEFINED_POSITION,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

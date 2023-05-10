@@ -1,7 +1,8 @@
 from typing import Optional, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
@@ -10,8 +11,15 @@ from ..BasicGeometry.Vertex import Vertex
 from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
+from ..UtilityAndView.abaqusConstants import (
+    IMPRINT,
+    OFF,
+    ON,
+    RECOMPUTE_GEOMETRY,
+    RIGHT,
+    Boolean,
+)
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, IMPRINT, OFF, ON, RECOMPUTE_GEOMETRY, RIGHT
 
 
 @abaqus_class_doc

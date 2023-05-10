@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DesignResponse import DesignResponse
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import ADD, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DesignResponse import DesignResponse
 
 
 @abaqus_class_doc

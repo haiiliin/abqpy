@@ -1,9 +1,8 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ConnectorOptions import ConnectorOptions
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     CONSTANT,
     LINEAR,
     OFF,
@@ -11,9 +10,11 @@ from ..UtilityAndView.abaqusConstants import (
     POSITION,
     POSITIVE,
     RSS,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ConnectorOptions import ConnectorOptions
 
 
 @abaqus_class_doc

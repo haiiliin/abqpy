@@ -1,10 +1,18 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    LINEAR,
+    OFF,
+    UNCOUPLED,
+    VISCOUS,
+    Boolean,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
-from ..UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant, UNCOUPLED, VISCOUS
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

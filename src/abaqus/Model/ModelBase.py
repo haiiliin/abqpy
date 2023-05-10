@@ -1,9 +1,9 @@
 from typing import Dict, Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .KeywordBlock import KeywordBlock
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
 from ..Adaptivity.RemeshingRule import RemeshingRule
@@ -40,18 +40,19 @@ from ..TableCollection.EventSeriesType import EventSeriesType
 from ..TableCollection.TableCollection import TableCollection
 from ..UtilityAndView.abaqusConstants import (
     B31,
-    Boolean,
-    C3D10,
     C3D8I,
+    C3D10,
     NOT_SET,
     OFF,
     ON,
     PRESERVE_SECTION,
     S4,
     STANDARD_EXPLICIT,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .KeywordBlock import KeywordBlock
 
 
 @abaqus_class_doc

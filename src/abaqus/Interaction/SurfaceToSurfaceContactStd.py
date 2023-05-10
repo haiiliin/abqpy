@@ -1,13 +1,12 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Interaction import Interaction
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     COMPUTED,
     NONE,
     OFF,
@@ -16,10 +15,12 @@ from ..UtilityAndView.abaqusConstants import (
     RIGHT,
     SELECTIVE,
     SURFACE_TO_SURFACE,
-    SymbolicConstant,
     TWO_CONFIG,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Interaction import Interaction
 
 
 @abaqus_class_doc

@@ -34,8 +34,9 @@ The output of this script is:
     Best modulus=1000.0 with fitness=0.0012505635619163569
 """
 import os
-import pandas as pd
+
 import numpy as np
+import pandas as pd
 
 
 def fitness(x: float, maxdisp_expected: float = -0.1):

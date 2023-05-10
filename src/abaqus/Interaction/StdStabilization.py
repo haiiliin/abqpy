@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from .ContactStabilization import ContactStabilization
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

@@ -28,9 +28,9 @@ The script does the following:
 - Prints the contour plot to a file.
 """
 
+import visualization
 from abaqus import *
 from abaqusConstants import *
-import visualization
 
 # Create a viewport for this example.
 
