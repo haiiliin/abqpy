@@ -77,9 +77,7 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[Edge]:
         ...
@@ -88,9 +86,7 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[Edge]:
         ...
