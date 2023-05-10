@@ -23,23 +23,23 @@ msgstr ""
 
 #: ../../user/output/cpp/access.md:3
 msgid ""
-"This section provides information that may be helpful to users who need "
-"to access results in an output database from an existing application. "
-"Most users should find that the **abaqus make** utility is sufficient for"
-" their postprocessing needs. Since linking and executing with dynamically"
-" linked runtime libraries is highly system dependent, the information in "
-"this section is intended for users who have an advanced working knowledge"
-" of compilation and linking with runtime libraries."
+"This section provides information that may be helpful to users who need to"
+" access results in an output database from an existing application. Most "
+"users should find that the **abaqus make** utility is sufficient for their"
+" postprocessing needs. Since linking and executing with dynamically linked"
+" runtime libraries is highly system dependent, the information in this "
+"section is intended for users who have an advanced working knowledge of "
+"compilation and linking with runtime libraries."
 msgstr ""
 
 #: ../../user/output/cpp/access.md:5
 msgid ""
 "It is important to ensure that the compiler used to compile and link the "
-"existing application is consistent with the compilers used to generate "
-"the Abaqus release. The “System Requirements” document lists the name and"
-" version of the compiler used for the Abaqus release on each supported "
-"platform. You can access this document through the **System Information**"
-" section of the **Support** page at <https:www.3ds.com/simulia>. You can "
+"existing application is consistent with the compilers used to generate the"
+" Abaqus release. The “System Requirements” document lists the name and "
+"version of the compiler used for the Abaqus release on each supported "
+"platform. You can access this document through the **System Information** "
+"section of the **Support** page at <https:www.3ds.com/simulia>. You can "
 "also find information on compiling and linking with the C++ interface to "
 "an output database in the Dassault Systèmes Knowledge Base at "
 "<https://support.3ds.com/knowledge-base/>."
@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../user/output/cpp/access.md:9
 msgid ""
-"Before any calls are made to the C++ interface, the following call must "
-"be made to initialize the interface:"
+"Before any calls are made to the C++ interface, the following call must be"
+" made to initialize the interface:"
 msgstr ""
 
 #: ../../user/output/cpp/access.md:15
@@ -66,8 +66,8 @@ msgstr ""
 
 #: ../../user/output/cpp/access.md:21
 msgid ""
-"If the finalization call is not made explicitly, the finalize routine "
-"will be called automatically when the application exits."
+"If the finalization call is not made explicitly, the finalize routine will"
+" be called automatically when the application exits."
 msgstr ""
 
 #: ../../user/output/cpp/access.md:23
@@ -76,8 +76,8 @@ msgstr ""
 
 #: ../../user/output/cpp/access.md:25
 msgid ""
-"The libraries necessary to link applications that access the C++ "
-"interface are located in the following directories:"
+"The libraries necessary to link applications that access the C++ interface"
+" are located in the following directories:"
 msgstr ""
 
 #: ../../user/output/cpp/access.md:27 ../../user/output/cpp/access.md:43
@@ -102,21 +102,21 @@ msgstr ""
 #: ../../user/output/cpp/access.md:67
 msgid ""
 "where **abaqus_dir** is the name of the directory in which Abaqus is "
-"installed. To determine the location of **abaqus_dir** at your site, type"
-" `abaqus whereami` at an operating system prompt."
+"installed. To determine the location of **abaqus_dir** at your site, type "
+"`abaqus whereami` at an operating system prompt."
 msgstr ""
 
 #: ../../user/output/cpp/access.md:37
 msgid ""
 "During linking, the `ABQodb` library and several other libraries shipped "
-"with the Abaqus release are used to resolve all the functions available "
-"in the interface to the output database. The command used by Abaqus to "
-"link runtime libraries (for example, for user subroutines) is available "
-"through the Abaqus environment variable **link_sl**. Additional "
-"information about linking with the Abaqus libraries, including the names "
-"of all libraries which must be specified as part of the link command, may"
-" be obtained by running the **abaqus make** utility in verbose mode with "
-"a verbosity level of 3."
+"with the Abaqus release are used to resolve all the functions available in"
+" the interface to the output database. The command used by Abaqus to link "
+"runtime libraries (for example, for user subroutines) is available through"
+" the Abaqus environment variable **link_sl**. Additional information about"
+" linking with the Abaqus libraries, including the names of all libraries "
+"which must be specified as part of the link command, may be obtained by "
+"running the **abaqus make** utility in verbose mode with a verbosity level"
+" of 3."
 msgstr ""
 
 #: ../../user/output/cpp/access.md:39
@@ -125,8 +125,8 @@ msgstr ""
 
 #: ../../user/output/cpp/access.md:41
 msgid ""
-"The runtime libraries required to execute a program that accesses the C++"
-" interface are located in the following directories:"
+"The runtime libraries required to execute a program that accesses the C++ "
+"interface are located in the following directories:"
 msgstr ""
 
 #: ../../user/output/cpp/access.md:45
@@ -143,13 +143,14 @@ msgid ""
 "to starting the user application. The runtime library path is typically "
 "set using the system environment variable `LD_LIBRARY_PATH`, but the "
 "method used to set the path may vary depending on your operating system "
-"configuration. The `ABQodb` library and several utility libraries resolve"
-" all the functions available in the interface to the output database, as "
-"described in [Link library "
-"location](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-odbintrocpplinklibrary.htm?contextscope=all)."
-" At runtime these libraries depend on many of the underlying Abaqus "
-"libraries. As a result, if you do not define the correct runtime library "
-"path, your application will not run."
+"configuration. The `ABQodb` library and several utility libraries resolve "
+"all the functions available in the interface to the output database, as "
+"described in [Link library location](https://help.3ds.com/2021/English/DSS"
+"IMULIA_Established/SIMACAECMDRefMap/simacmd-c-"
+"odbintrocpplinklibrary.htm?contextscope=all). At runtime these libraries "
+"depend on many of the underlying Abaqus libraries. As a result, if you do "
+"not define the correct runtime library path, your application will not "
+"run."
 msgstr ""
 
 #: ../../user/output/cpp/access.md:55

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:3
 msgid ""
-"This section describes the style that is used to describe Abaqus "
-"Scripting Interface commands. The commands are found in the "
+"This section describes the style that is used to describe Abaqus Scripting"
+" Interface commands. The commands are found in the "
 "{doc}`/reference/index`. You may want to refer to the "
-"{doc}`/reference/index` while you read this section and compare the style"
-" of a documented command with the descriptions provided here."
+"{doc}`/reference/index` while you read this section and compare the style "
+"of a documented command with the descriptions provided here."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:5
@@ -36,8 +36,8 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:7
 msgid ""
-"The following list describes the order in which commands are documented "
-"in the {doc}`/reference/index`:"
+"The following list describes the order in which commands are documented in"
+" the {doc}`/reference/index`:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:9
@@ -107,9 +107,9 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:28
 msgid ""
-"Some methods are not associated with an object and appear at the end of a"
-" chapter; for example, the `evaluateMaterial()` method appears at the end"
-" of {doc}`/reference/mdb/model/material` commands."
+"Some methods are not associated with an object and appear at the end of a "
+"chapter; for example, the `evaluateMaterial()` method appears at the end "
+"of {doc}`/reference/mdb/model/material` commands."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:30
@@ -118,8 +118,8 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:32
 msgid ""
-"The description of each object in the {doc}`/reference/index` begins with"
-" a section that describes how you access an instance of the object. The "
+"The description of each object in the {doc}`/reference/index` begins with "
+"a section that describes how you access an instance of the object. The "
 "import statements are provided for completeness. Abaqus/CAE imports all "
 "modules when you start a session, and you do not need to include the "
 "`import module name` statement in your scripts. However, you must import "
@@ -129,8 +129,8 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:38
 msgid ""
-"These should be the first statement in all your Abaqus Scripting "
-"Interface scripts."
+"These should be the first statement in all your Abaqus Scripting Interface"
+" scripts."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:40
@@ -161,10 +161,10 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:65
 msgid ""
-"The first line indicates that Abaqus/CAE imported the odbAccess module to"
-" make the Odb objects, methods, and members available to your Abaqus "
-"Scripting Interface script. The second line indicates how your script can"
-" access HistoryRegion objects from a particular step."
+"The first line indicates that Abaqus/CAE imported the odbAccess module to "
+"make the Odb objects, methods, and members available to your Abaqus "
+"Scripting Interface script. The second line indicates how your script can "
+"access HistoryRegion objects from a particular step."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:67
@@ -184,7 +184,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:85
-msgid "The last line shows the validInvariants member of the FieldOutput object."
+msgid ""
+"The last line shows the validInvariants member of the FieldOutput object."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:87
@@ -195,17 +196,17 @@ msgstr ""
 msgid ""
 "A method that creates an object is called a constructor. The Abaqus "
 "Scripting Interface uses the convention that constructors begin with an "
-"uppercase character. In contrast, methods that operate on an object begin"
-" with a lowercase character. The description of each constructor in the "
+"uppercase character. In contrast, methods that operate on an object begin "
+"with a lowercase character. The description of each constructor in the "
 "{doc}`/reference/index` includes a path to the command. For example, the "
 "following describes the path to the Viewport constructor:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:95
 msgid ""
-"Some constructors include more than one path. For example, you can create"
-" a datum that is associated with either a Part object or the RootAssembly"
-" object, and each path is listed."
+"Some constructors include more than one path. For example, you can create "
+"a datum that is associated with either a Part object or the RootAssembly "
+"object, and each path is listed."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:102
@@ -215,12 +216,12 @@ msgstr ""
 #: ../../user/python/python-abaqus/style.md:104
 msgid ""
 "If you are using the Abaqus Scripting Interface to read data from an "
-"output database, the objects exist when you open the output database, and"
-" you do not have to use constructors to create them. However, if you are "
+"output database, the objects exist when you open the output database, and "
+"you do not have to use constructors to create them. However, if you are "
 "creating or writing to an output database, you may need to use "
-"constructors to create new objects, such as part instances and steps. The"
-" documentation describes the path to the constructors that create objects"
-" in an output database."
+"constructors to create new objects, such as part instances and steps. The "
+"documentation describes the path to the constructors that create objects "
+"in an output database."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:106
@@ -237,9 +238,9 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:122
 msgid ""
-"The ellipsis `(...)` in the command description indicates that the "
-"command takes one or more arguments. For example, the Viewport "
-"constructor takes arguments."
+"The ellipsis `(...)` in the command description indicates that the command"
+" takes one or more arguments. For example, the Viewport constructor takes "
+"arguments."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:128
@@ -248,31 +249,30 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:134
 msgid ""
-"Some arguments of a command are required, and some arguments are "
-"optional. In the {doc}`/reference/index` the required arguments are "
-"listed first, followed by the optional arguments. If the argument is "
-"optional, the default value is provided. The default value is the value "
-"of an optional argument when you call a method and omit the argument."
+"Some arguments of a command are required, and some arguments are optional."
+" In the {doc}`/reference/index` the required arguments are listed first, "
+"followed by the optional arguments. If the argument is optional, the "
+"default value is provided. The default value is the value of an optional "
+"argument when you call a method and omit the argument."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:136
 msgid ""
 "The `setValues` method is a special case. All of the arguments to the "
 "`setValues` method are optional, but any argument that you omit retains "
-"its current value; Abaqus does not assign a default value to the "
-"argument."
+"its current value; Abaqus does not assign a default value to the argument."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:138
 msgid ""
-"Some objects have no constructors; Abaqus creates the objects for you. "
-"For such objects the documentation describes the initial value of an "
-"optional argument. The initial value given for the argument is the "
-"initial value assigned to the corresponding member when Abaqus creates "
-"the object. For example, the defaultViewportAnnotationOptions object has "
-"no constructor; Abaqus creates the defaultViewportAnnotationOptions "
-"object when you start a session. When you create a new viewport, the "
-"settings are copied from the current viewport."
+"Some objects have no constructors; Abaqus creates the objects for you. For"
+" such objects the documentation describes the initial value of an optional"
+" argument. The initial value given for the argument is the initial value "
+"assigned to the corresponding member when Abaqus creates the object. For "
+"example, the defaultViewportAnnotationOptions object has no constructor; "
+"Abaqus creates the defaultViewportAnnotationOptions object when you start "
+"a session. When you create a new viewport, the settings are copied from "
+"the current viewport."
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:140
@@ -293,9 +293,8 @@ msgstr ""
 #: ../../user/python/python-abaqus/style.md:148
 msgid ""
 "Keyword and positional arguments are described in Creating functions. We "
-"recommend that you use keyword arguments since they can be supplied in "
-"any order and they make your scripts easier to read and debug; for "
-"example,"
+"recommend that you use keyword arguments since they can be supplied in any"
+" order and they make your scripts easier to read and debug; for example,"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:155
@@ -307,9 +306,9 @@ msgstr ""
 #: ../../user/python/python-abaqus/style.md:162
 msgid ""
 "You can use a combination of keyword and positional arguments. Keyword "
-"arguments can be supplied after positional arguments; however, positional"
-" arguments cannot be entered after keyword arguments. For example, you "
-"can use the following statement:"
+"arguments can be supplied after positional arguments; however, positional "
+"arguments cannot be entered after keyword arguments. For example, you can "
+"use the following statement:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:169
@@ -338,8 +337,8 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/style.md:187
 msgid ""
-"You can use the object returned by a command in subsequent statements. "
-"For example, the `titlebar` member of a Viewport object is a Boolean "
+"You can use the object returned by a command in subsequent statements. For"
+" example, the `titlebar` member of a Viewport object is a Boolean "
 "specifying whether the viewport title bar is displayed and can have a "
 "value of either ON or OFF. The following statement tests the titlebar "
 "member of the new viewport created by the previous statement:"
