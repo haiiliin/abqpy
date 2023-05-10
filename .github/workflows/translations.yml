@@ -26,6 +26,7 @@ jobs:
       run: pip install .[docs]
     - name: Update translations
       run: sh docs/source/locales/update.sh
+    - uses: pre-commit/action@v3.0.0
     - name: Commit changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
