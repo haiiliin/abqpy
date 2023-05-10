@@ -1,21 +1,13 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 05:33+0000\n"
-"PO-Revision-Date: 2023-05-10 06:19\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: abqpy\n"
-"X-Crowdin-Project-ID: 586189\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /2023/docs/source/locales/pot/envvars.pot\n"
-"X-Crowdin-File-ID: 955\n"
-"Language: zh_CN\n"
+"Project-Id-Version: abqpy\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: "
+"2023-05-09 05:33+0000\nPO-Revision-Date: 2023-05-10 06:19\nLast-"
+"Translator: \nLanguage-Team: Chinese Simplified\nMIME-Version: "
+"1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: "
+"8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Crowdin-Project: abqpy\nX-"
+"Crowdin-Project-ID: 586189\nX-Crowdin-Language: zh-CN\nX-Crowdin-File: "
+"/2023/docs/source/locales/pot/envvars.pot\nX-Crowdin-File-ID: "
+"955\nLanguage: zh_CN\n"
 
 #: ../../envvars.md:1
 msgid "Environment Variables"
@@ -26,7 +18,12 @@ msgid "`ABAQUS_BAT_PATH`"
 msgstr ""
 
 #: ../../envvars.md:5
-msgid "The file path of the `abaqus` command line batch file (`.bat`). Only set this environment variable if `abaqus` is not  the default Abaqus command line executable. This variable is used by `abqpy` to run the Abaqus command line procedure inside the Python interpreter environment where it is installed."
+msgid ""
+"The file path of the `abaqus` command line batch file (`.bat`). Only set "
+"this environment variable if `abaqus` is not  the default Abaqus command "
+"line executable. This variable is used by `abqpy` to run the Abaqus "
+"command line procedure inside the Python interpreter environment where it "
+"is installed."
 msgstr ""
 
 #: ../../envvars.md:9
@@ -34,19 +31,32 @@ msgid "`ABAQUS_COMMAND_OPTIONS`"
 msgstr ""
 
 #: ../../envvars.md:11
-msgid "The default execution procedure invoked by `abqpy` inside the Python interpreter environment where it is installed is to run one of the two following command lines:"
+msgid ""
+"The default execution procedure invoked by `abqpy` inside the Python "
+"interpreter environment where it is installed is to run one of the two "
+"following command lines:"
 msgstr ""
 
 #: ../../envvars.md:14
-msgid "When there is a `import abaqus` or `from abaqus import ...` statement:"
+msgid ""
+"When there is a `import abaqus` or `from abaqus import ...` statement:"
 msgstr ""
 
 #: ../../envvars.md:20
-msgid "When there is a `import odbAccess` or `from odbAccess import ...` statement:"
+msgid ""
+"When there is a `import odbAccess` or `from odbAccess import ...` "
+"statement:"
 msgstr ""
 
 #: ../../envvars.md:26
-msgid "However, there are other execution procedures that can be run with the `abaqus` command and also another options that could be passed to these commands. To define these procedures and options you can create a new system environment variable named `ABAQUS_COMMAND_OPTIONS`, and set a **dictionary** to this variable with the options you want to use. The values of the dictionary keys would be booleans or strings, e.g.: `{'noGUI':True, 'database':'file.odb'}`"
+msgid ""
+"However, there are other execution procedures that can be run with the "
+"`abaqus` command and also another options that could be passed to these "
+"commands. To define these procedures and options you can create a new "
+"system environment variable named `ABAQUS_COMMAND_OPTIONS`, and set a "
+"**dictionary** to this variable with the options you want to use. The "
+"values of the dictionary keys would be booleans or strings, e.g.: "
+"`{'noGUI':True, 'database':'file.odb'}`"
 msgstr ""
 
 #: ../../envvars.md:33
@@ -58,11 +68,14 @@ msgid "Using `abaqus cae` command line options (import `abaqus` module):"
 msgstr ""
 
 #: ../../envvars.md:55
-msgid "Using `abaqus python` command line options (import `odbAccess` module):"
+msgid ""
+"Using `abaqus python` command line options (import `odbAccess` module):"
 msgstr ""
 
 #: ../../envvars.md:64
-msgid "One advantage in using this alternative is to change the options at run time inside the code."
+msgid ""
+"One advantage in using this alternative is to change the options at run "
+"time inside the code."
 msgstr ""
 
 #: ../../envvars.md:66
@@ -70,11 +83,16 @@ msgid "Example"
 msgstr ""
 
 #: ../../envvars.md:68
-msgid "The snippet bellow changes the default procedure options before calling abaqus cae command procedure, at run time."
+msgid ""
+"The snippet bellow changes the default procedure options before calling "
+"abaqus cae command procedure, at run time."
 msgstr ""
 
 #: ../../envvars.md:79
-msgid "In this specific case, the procedure will use the graphical user interface (GUI mode) and load a *database* file, i.e., it will run the following command line."
+msgid ""
+"In this specific case, the procedure will use the graphical user interface"
+" (GUI mode) and load a *database* file, i.e., it will run the following "
+"command line."
 msgstr ""
 
 #: ../../envvars.md:86
