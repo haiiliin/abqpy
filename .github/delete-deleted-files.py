@@ -20,13 +20,13 @@ import re
 
 # Change the work directory to the root of the repository
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.chdir('..')
+os.chdir("..")
 
-if os.path.exists('pull_request_body.txt'):
+if os.path.exists("pull_request_body.txt"):
     # Get the pull request body
-    with open('pull_request_body.txt', 'r', encoding='utf-8') as f:
+    with open("pull_request_body.txt", "r", encoding="utf-8") as f:
         body = f.read()
-        print('Pull request body: \n' + body)
+        print("Pull request body: \n" + body)
 
     # Get the list of files that have been deleted and delete them
     for file in re.findall(r"deleted by us:\s+(.+?)\n", body):
@@ -35,4 +35,4 @@ if os.path.exists('pull_request_body.txt'):
             print(f"Delete file: {file}")
 
     # Remove the pull request body file
-    os.remove('pull_request_body.txt')
+    os.remove("pull_request_body.txt")
