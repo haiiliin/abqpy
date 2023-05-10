@@ -16,7 +16,6 @@ import numpy as np
 
 
 def run(modulus, poisson=0.2):
-
     executeOnCaeStartup()
 
     # Model
