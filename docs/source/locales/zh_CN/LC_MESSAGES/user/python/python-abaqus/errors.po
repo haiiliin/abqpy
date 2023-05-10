@@ -26,9 +26,9 @@ msgid ""
 "The basics of Python's exception handling apply to the Abaqus Scripting "
 "Interface. Python's exception handling is described in {ref}`error-"
 "handling`. If certain circumstances arise while a script is running, "
-"Python allows you to take the necessary action and still allows the "
-"script to continue. Alternatively, when Abaqus/CAE issues (or \"throws\")"
-" an exception and the exception is not handled by the script, Abaqus/CAE "
+"Python allows you to take the necessary action and still allows the script"
+" to continue. Alternatively, when Abaqus/CAE issues (or \"throws\") an "
+"exception and the exception is not handled by the script, Abaqus/CAE "
 "displays the exception message in the message area and the script stops "
 "executing."
 msgstr ""
@@ -42,15 +42,15 @@ msgid ""
 "Python exceptions arise from either system-related problems, such as a "
 "disk or network error, or from programming errors, such as numeric "
 "overflow or reference to an index that does not exist. Standard Python "
-"exceptions are not described in this guide and are not listed as possible"
-" exceptions in the {doc}`/reference/index`."
+"exceptions are not described in this guide and are not listed as possible "
+"exceptions in the {doc}`/reference/index`."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:9
 msgid ""
 "Look at the standard Python documentation on the official Python website "
-"([https://www.python.org](https://www.python.org)) for a list of standard"
-" Python exceptions. Standard exceptions are described in the Built-in "
+"([https://www.python.org](https://www.python.org)) for a list of standard "
+"Python exceptions. Standard exceptions are described in the Built-in "
 "Exceptions section of the Python Library Reference."
 msgstr ""
 
@@ -61,13 +61,14 @@ msgstr ""
 #: ../../user/python/python-abaqus/errors.md:13
 msgid ""
 "Standard Abaqus Scripting Interface exceptions arise from errors in a "
-"script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface"
-" exceptions that can be raised by a method are listed with each command "
-"in the {doc}`/reference/index`."
+"script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface "
+"exceptions that can be raised by a method are listed with each command in "
+"the {doc}`/reference/index`."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:15
-msgid "The standard Abaqus Scripting Interface exception types are listed below:"
+msgid ""
+"The standard Abaqus Scripting Interface exception types are listed below:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:17
@@ -76,20 +77,20 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:19
 msgid ""
-"You specified an invalid name. Abaqus/CAE enforces a naming convention "
-"for objects that you create. Names must adhere to the following rules:"
+"You specified an invalid name. Abaqus/CAE enforces a naming convention for"
+" objects that you create. Names must adhere to the following rules:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:21
 msgid ""
-"Part, model, instance, set, surface, feature, and job names can have up "
-"to 80 characters; other object names can have up to 38 characters. "
-"Instance names of models that have been instantiated as model instances "
-"in another model still have a 38-character limit. For imported "
-"sets/surfaces, parts, and model instances, the names are generated "
-"internally in Abaqus/CAE by combining part/instance/set names. You must "
-"ensure that the combined length will not exceed 80 characters; otherwise,"
-" the data check analysis will fail."
+"Part, model, instance, set, surface, feature, and job names can have up to"
+" 80 characters; other object names can have up to 38 characters. Instance "
+"names of models that have been instantiated as model instances in another "
+"model still have a 38-character limit. For imported sets/surfaces, parts, "
+"and model instances, the names are generated internally in Abaqus/CAE by "
+"combining part/instance/set names. You must ensure that the combined "
+"length will not exceed 80 characters; otherwise, the data check analysis "
+"will fail."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:23
@@ -100,11 +101,11 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:26
 msgid ""
-"While Python allows most punctuation marks and special characters, some "
-"of the strings you provide will be used in an Abaqus input file; "
-"therefore, you cannot use the following characters: `` "
-"\\$\\&\\*\\~\\!\\(\\)\\[\\]\\{\\}\\|\\;\\'\\`\\\"\\,\\.\\?\\/\\\\ `` when"
-" you are naming an object, such as a part, a model or a job."
+"While Python allows most punctuation marks and special characters, some of"
+" the strings you provide will be used in an Abaqus input file; therefore, "
+"you cannot use the following characters: `` "
+"\\$\\&\\*\\~\\!\\(\\)\\[\\]\\{\\}\\|\\;\\'\\`\\\"\\,\\.\\?\\/\\\\ `` when "
+"you are naming an object, such as a part, a model or a job."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:29
@@ -173,12 +174,13 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:59
 msgid ""
-"For example, {numref}`cmd-int-exception-nls` shows the layout of a "
-"typical exception description in the online documentation."
+"For example, {numref}`cmd-int-exception-nls` shows the layout of a typical"
+" exception description in the online documentation."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:67
-msgid "The layout of a typical exception description in the online documentation."
+msgid ""
+"The layout of a typical exception description in the online documentation."
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:70
@@ -191,12 +193,12 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:76
 msgid ""
-"The Python exception handling techniques described in Error handling "
-"apply to the Abaqus Scripting Interface. You should use the command "
-"description in the {doc}`/reference/index` to decide for which exception "
-"types you need to account. For example, the following Abaqus Scripting "
-"Interface script attempts to create a viewport and prints a message if "
-"the width or height are too small:"
+"The Python exception handling techniques described in Error handling apply"
+" to the Abaqus Scripting Interface. You should use the command description"
+" in the {doc}`/reference/index` to decide for which exception types you "
+"need to account. For example, the following Abaqus Scripting Interface "
+"script attempts to create a viewport and prints a message if the width or "
+"height are too small:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/errors.md:86

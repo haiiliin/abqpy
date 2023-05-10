@@ -30,20 +30,20 @@ msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:45
 msgid ""
-"The `addImportCallback` statement instructs Abaqus to call a function "
-"when the user first imports a module. In this example Abaqus calls the "
+"The `addImportCallback` statement instructs Abaqus to call a function when"
+" the user first imports a module. In this example Abaqus calls the "
 "`setJobPreferences` function when the user first enters the Job module, "
 "and Abaqus calls the `setVisPreferences` function when the user first "
-"enters the Visualization module. The `setJobPreferences` function creates"
-" a queue on a remote host. The `setVisPreferences` function sets default "
+"enters the Visualization module. The `setJobPreferences` function creates "
+"a queue on a remote host. The `setVisPreferences` function sets default "
 "options for contour plots."
 msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:47
 msgid ""
-"The example environment file uses the `onCaeStartup()` function to "
-"control a set of Python statements that are executed when Abaqus/CAE "
-"first starts. The environment file can also contain the following:"
+"The example environment file uses the `onCaeStartup()` function to control"
+" a set of Python statements that are executed when Abaqus/CAE first "
+"starts. The environment file can also contain the following:"
 msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:49
@@ -70,8 +70,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:79
 msgid ""
-"The job identifier that was specified as the value of the job option from"
-" the command line."
+"The job identifier that was specified as the value of the job option from "
+"the command line."
 msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:81
@@ -108,11 +108,11 @@ msgstr ""
 
 #: ../../user/python/use-scripts/environment-file.md:95
 msgid ""
-"For more information on the environment file, see [Environment File "
-"Settings](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-envfile.htm?contextscope=all)"
-" and [Customizing the Abaqus "
-"environment](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m"
-"-Environment-sb.htm?contextscope=all)."
+"For more information on the environment file, see [Environment File Settin"
+"gs](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefM"
+"ap/simaexc-c-envfile.htm?contextscope=all) and [Customizing the Abaqus env"
+"ironment](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEI"
+"LGRefMap/simailg-m-Environment-sb.htm?contextscope=all)."
 msgstr ""
 
 #~ msgid ""

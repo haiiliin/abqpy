@@ -23,10 +23,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:3
 msgid ""
-"Region commands are used to create part and assembly sets or surfaces "
-"from elements, nodes, and geometry. For more information, see Specifying "
-"a region. Part and assembly objects have the following member, a "
-"repository of Set objects:"
+"Region commands are used to create part and assembly sets or surfaces from"
+" elements, nodes, and geometry. For more information, see Specifying a "
+"region. Part and assembly objects have the following member, a repository "
+"of Set objects:"
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:5
@@ -85,14 +85,14 @@ msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:25
 msgid ""
-"Region commands are also used to create surfaces on the assembly. "
-"Surfaces are sets with additional sidedness information."
+"Region commands are also used to create surfaces on the assembly. Surfaces"
+" are sets with additional sidedness information."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:27
 msgid ""
-"Part sets contain regions of a part. You can assign section definitions "
-"to a set created by selecting a region of a part. The part sets can be "
+"Part sets contain regions of a part. You can assign section definitions to"
+" a set created by selecting a region of a part. The part sets can be "
 "accessed from the instance; however, the section definition you assigned "
 "to a region is copied automatically to all instances of that part in the "
 "assembly."
@@ -100,10 +100,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:29
 msgid ""
-"Assembly sets contain regions of an assembly and are used by many "
-"commands that operate on the assembly. For example, you can apply a load "
-"or boundary condition to a set created by selecting a region of the "
-"assembly. Sets can include regions from multiple part instances."
+"Assembly sets contain regions of an assembly and are used by many commands"
+" that operate on the assembly. For example, you can apply a load or "
+"boundary condition to a set created by selecting a region of the assembly."
+" Sets can include regions from multiple part instances."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/region.md:31
@@ -117,8 +117,8 @@ msgstr ""
 #: abaqus.Region.RegionPart.RegionPart:1
 #: abaqus.Region.RegionPartBase.RegionPartBase:1 of
 msgid ""
-"The following commands operate on Part objects. For more information "
-"about the Part object, see Part object."
+"The following commands operate on Part objects. For more information about"
+" the Part object, see Part object."
 msgstr ""
 
 #: abaqus.Region.Region.Region:36 abaqus.Region.RegionAssembly.RegionAssembly:5
@@ -132,8 +132,9 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart:10 of
 msgid ""
-"Check `RegionPart on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partregpyc.htm?contextscope=all>`__."
+"Check `RegionPart on help.3ds.com/2017 <https://help.3ds.com/2017/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly
@@ -157,8 +158,8 @@ msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
-"An Int specifying that feature parameters have been modified but that the"
-" part has not been regenerated."
+"An Int specifying that feature parameters have been modified but that the "
+"part has not been regenerated."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -198,11 +199,13 @@ msgid "An EdgeArray object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
+msgid ""
+":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "An IgnoredEdgeArray object specifying all the ignored edges in the part."
+msgid ""
+"An IgnoredEdgeArray object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -226,11 +229,13 @@ msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Feature objects specifying all the features in the part."
+msgid ""
+"A repository of Feature objects specifying all the features in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
+msgid ""
+":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -266,7 +271,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
+msgid ""
+":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -284,7 +290,8 @@ msgid "A MeshNodeArray object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
+msgid ""
+":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -298,7 +305,8 @@ msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Set objects specifying for more information, see Set."
+msgid ""
+"A repository of Set objects specifying for more information, see Set."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -338,8 +346,8 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 "A repository of Surface objects specifying the contents of the "
-"**allSurfaces** repository is the same as the contents of the "
-"**surfaces** repository."
+"**allSurfaces** repository is the same as the contents of the **surfaces**"
+" repository."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -357,7 +365,8 @@ msgid ":py:obj:`skins <abaqus.Part.PartBase.PartBase.skins>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Skin objects specifying the skins created on the part."
+msgid ""
+"A repository of Skin objects specifying the skins created on the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -431,7 +440,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
+msgid ""
+":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -497,12 +507,13 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
-":py:obj:`Skin <abaqus.Region.RegionPart.RegionPart.Skin>`\\ \\(name\\[\\,"
-" faces\\, edges\\, elementFaces\\, ...\\]\\)"
+":py:obj:`Skin <abaqus.Region.RegionPart.RegionPart.Skin>`\\ \\(name\\[\\, "
+"faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid "This method creates a skin from a sequence of objects in a model database."
+msgid ""
+"This method creates a skin from a sequence of objects in a model database."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -538,8 +549,8 @@ msgstr ""
 #: abaqus.Region.RegionPart.RegionPart.SetByBoolean:1
 #: abaqus.Region.Set.Set.SetByBoolean:1 of
 msgid ""
-"This method creates a set by performing a boolean operation on two or "
-"more input sets."
+"This method creates a set by performing a boolean operation on two or more"
+" input sets."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -661,14 +672,14 @@ msgstr ""
 #: ../../None:9:<autosummary>:1
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:1
 #: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:1 of
-msgid "This command returns a flag indicating whether the Surface is Internal."
+msgid ""
+"This command returns a flag indicating whether the Surface is Internal."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
 msgid ""
 ":py:obj:`deleteSets "
-"<abaqus.Region.RegionPartBase.RegionPartBase.deleteSets>`\\ "
-"\\(setNames\\)"
+"<abaqus.Region.RegionPartBase.RegionPartBase.deleteSets>`\\ \\(setNames\\)"
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -728,9 +739,9 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object by extruding an existing two-"
-"dimensional orphan mesh Part object in the positive **Z** direction and "
-"places it in the parts repository."
+"This method creates a Part object by extruding an existing two-dimensional"
+" orphan mesh Part object in the positive **Z** direction and places it in "
+"the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -741,7 +752,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method creates a Part object and places it in the parts repository."
+msgid ""
+"This method creates a Part object and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -754,8 +766,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 "This method creates a Part object containing the mesh found in the "
-"supplied PartInstance objects and places the new Part object in the parts"
-" repository."
+"supplied PartInstance objects and places the new Part object in the parts "
+"repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -780,8 +792,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 "This method creates a Part object by mirroring an existing orphan mesh "
-"Part object about a specified plane and places it in the parts "
-"repository."
+"Part object about a specified plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -793,8 +804,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object from nodes and elements and places it "
-"in the parts repository."
+"This method creates a Part object from nodes and elements and places it in"
+" the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -812,15 +823,14 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromSection3DMeshByPlane "
-"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ "
-"\\(name\\, part\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ \\(name\\,"
+" part\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object by cutting an existing three-"
-"dimensional orphan mesh Part object by a plane and places it in the parts"
-" repository."
+"This method creates a Part object by cutting an existing three-dimensional"
+" orphan mesh Part object by a plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -839,8 +849,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`Part2DGeomFrom2DMesh "
-"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, "
-"part\\, featureAngle\\)"
+"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, part\\,"
+" featureAngle\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -926,8 +936,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\"
-" \\(featureNames\\)"
+":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -936,8 +946,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ "
-"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ \\(plane1\\,"
+" plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
@@ -946,8 +956,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ "
-"\\(faces\\[\\, relativeAccuracy\\]\\)"
+":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ \\(faces\\[\\,"
+" relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -963,7 +973,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the paths to the associated CAD part and root file."
+msgid ""
+"This method returns the paths to the associated CAD part and root file."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -974,8 +985,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method returns the names and values of the CAD parameters associated"
-" with the part."
+"This method returns the names and values of the CAD parameters associated "
+"with the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -985,13 +996,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "Location of the centroid of a given face/cell or group of faces/cells."
+msgid ""
+"Location of the centroid of a given face/cell or group of faces/cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\"
-" \\(entity\\)"
+":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\ "
+"\\(entity\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1039,7 +1051,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the total perimeter of a given face or group of faces."
+msgid ""
+"This method returns the total perimeter of a given face or group of faces."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1049,7 +1062,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the volume area of a given cell or group of cells."
+msgid ""
+"This method returns the volume area of a given cell or group of cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1107,8 +1121,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method returns a sequence of ConstrainedSketchVertex objects that "
-"are created by the given feature."
+"This method returns a sequence of ConstrainedSketchVertex objects that are"
+" created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1131,8 +1145,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method prints information on each section that has been assigned to "
-"a region of the part."
+"This method prints information on each section that has been assigned to a"
+" region of the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1215,7 +1229,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
+msgid ""
+":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1229,7 +1244,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
-msgid "This method prints any regeneration warnings associated with the features."
+msgid ""
+"This method prints any regeneration warnings associated with the features."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1248,8 +1264,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid ""
-"This method restores the parameters of all features in the assembly to "
-"the value they had before a failed regeneration."
+"This method restores the parameters of all features in the assembly to the"
+" value they had before a failed regeneration."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1264,8 +1280,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\"
-" \\(featureNames\\)"
+":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1279,7 +1295,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method resumes the last set of features to be suppressed in the part."
+msgid ""
+"This method resumes the last set of features to be suppressed in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1295,8 +1312,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`setAssociatedCADPaths "
-"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ "
-"\\(\\[partFile\\, rootFile\\]\\)"
+"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ \\(\\[partFile\\,"
+" rootFile\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1377,15 +1394,15 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, "
-"faces\\, elemFaces\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, faces\\,"
+" elemFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid ""
-"This method copies a mesh pattern from a source region consisting of a "
-"set of shell elements or element faces onto a target face, mapping nodes "
-"and elements in a one-one correspondence between source and target."
+"This method copies a mesh pattern from a source region consisting of a set"
+" of shell elements or element faces onto a target face, mapping nodes and "
+"elements in a one-one correspondence between source and target."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1396,8 +1413,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid ""
-"This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh."
+"This method smooths the given nodes of a native mesh, moving them locally "
+"to a more optimal location that improves the quality of the mesh."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1418,8 +1435,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\"
-" \\(\\)"
+":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1457,9 +1474,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by creating a planar wire from the given ConstrainedSketch "
-"object."
+"This method creates a first Feature object for an analytical rigid surface"
+" by creating a planar wire from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1471,9 +1487,9 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by extruding the given ConstrainedSketch object by the given "
-"depth, creating a surface."
+"This method creates a first Feature object for an analytical rigid surface"
+" by extruding the given ConstrainedSketch object by the given depth, "
+"creating a surface."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1485,9 +1501,9 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by revolving the given ConstrainedSketch object by 360° about the"
-" **Y** axis."
+"This method creates a first Feature object for an analytical rigid surface"
+" by revolving the given ConstrainedSketch object by 360° about the **Y** "
+"axis."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1498,7 +1514,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid "This method assign a mid-surface property to sequence of Cell objects."
+msgid ""
+"This method assign a mid-surface property to sequence of Cell objects."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1549,8 +1566,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object by creating a planar shell "
-"from the given ConstrainedSketch object."
+"This method creates a first Feature object by creating a planar shell from"
+" the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1601,8 +1618,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object by creating a planar wire from"
-" the given ConstrainedSketch object."
+"This method creates a first Feature object by creating a planar wire from "
+"the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1613,8 +1630,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a Feature object by creating new faces that blends "
-"two sets of faces."
+"This method creates a Feature object by creating new faces that blends two"
+" sets of faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1650,8 +1667,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method attempts to change entities into a simpler form that will "
-"speed up processing and make entities available during feature "
-"operations."
+"speed up processing and make entities available during feature operations."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1725,8 +1741,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by revolving the given "
-"ConstrainedSketch object by the given angle and cutting away material "
-"from the part."
+"ConstrainedSketch object by the given angle and cutting away material from"
+" the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1738,20 +1754,20 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object along a path which may be a ConstrainedSketch or"
-" a sequence of Edge objects and cutting away material from the part."
+"ConstrainedSketch object along a path which may be a ConstrainedSketch or "
+"a sequence of Edge objects and cutting away material from the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\"
-" \\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
+":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\ "
+"\\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method extends faces along its free edges by offsetting the external"
-" edges along the surfaces."
+"This method extends faces along its free edges by offsetting the external "
+"edges along the surfaces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1798,15 +1814,15 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`HoleThruAllFromEdges "
-"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\,"
-" planeSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\, "
+"planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by creating a circular "
-"through hole of the given diameter and cutting away material in the solid"
-" and shell regions of the part."
+"through hole of the given diameter and cutting away material in the solid "
+"and shell regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1823,8 +1839,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\"
-" \\(faceList\\[\\, distance\\, ...\\]\\)"
+":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\ "
+"\\(faceList\\[\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1833,8 +1849,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\"
-" \\(cellList\\)"
+":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\ "
+"\\(cellList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1843,12 +1859,13 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\"
-" \\(faceList\\[\\, deleteCells\\]\\)"
+":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\ "
+"\\(faceList\\[\\, deleteCells\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid "This method removes faces from a solid entity or from a shell entity."
+msgid ""
+"This method removes faces from a solid entity or from a shell entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1891,8 +1908,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairInvalidEdges "
-"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ "
-"\\(edgeList\\)"
+"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ \\(edgeList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1902,8 +1918,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairSliver "
-"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, "
-"point1\\, point2\\[\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, point1\\,"
+" point2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1945,8 +1961,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ "
-"\\(radius\\, edgeList\\, vertexList\\)"
+":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ \\(radius\\,"
+" edgeList\\, vertexList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2014,9 +2030,9 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object or a sequence of Edge objects along a path which"
-" may be a ConstrainedSketch or a sequence of Edge objects, creating a "
-"shell swept protrusion."
+"ConstrainedSketch object or a sequence of Edge objects along a path which "
+"may be a ConstrainedSketch or a sequence of Edge objects, creating a shell"
+" swept protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2091,8 +2107,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates an additional Feature object by creating a planar "
-"wire from the given ConstrainedSketch object."
+"This method creates an additional Feature object by creating a planar wire"
+" from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2103,8 +2119,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates an additional Feature object by creating a spline "
-"wire that passes through a sequence of given points."
+"This method creates an additional Feature object by creating a spline wire"
+" that passes through a sequence of given points."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -2152,8 +2168,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object by creating attachment points along "
-"a direction or between two points."
+"This method creates a Feature object by creating attachment points along a"
+" direction or between two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2177,8 +2193,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"axis of a cylinder or cone."
+"This method creates a Feature object and a DatumAxis object along the axis"
+" of a cylinder or cone."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2190,8 +2206,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" specified plane and passing through the specified point."
+"This method creates a Feature object and a DatumAxis object normal to the "
+"specified plane and passing through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2235,8 +2251,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" circle described by three points and through its center."
+"This method creates a Feature object and a DatumAxis object normal to the "
+"circle described by three points and through its center."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2273,8 +2289,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"line joining two points."
+"This method creates a Feature object and a DatumAxis object along the line"
+" joining two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2299,8 +2315,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumCsys object by offsetting"
-" the origin of an existing datum coordinate system to a specified point."
+"This method creates a Feature object and a DatumCsys object by offsetting "
+"the origin of an existing datum coordinate system to a specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2319,8 +2335,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByTwoLines "
-"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
-"\\(coordSysType\\, line1\\, line2\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ \\(coordSysType\\,"
+" line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2357,8 +2373,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPlane object by rotating "
-"a plane about the specified axis through the specified angle."
+"This method creates a Feature object and a DatumPlane object by rotating a"
+" plane about the specified axis through the specified angle."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2397,8 +2413,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPlane object normal to "
-"the specified line and running through the specified point."
+"This method creates a Feature object and a DatumPlane object normal to the"
+" specified line and running through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2422,8 +2438,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object at the point"
-" defined by the specified coordinates."
+"This method creates a Feature object and a DatumPoint object at the point "
+"defined by the specified coordinates."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2455,8 +2471,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOnFace "
-"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
-"edge1\\, offset1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, edge1\\,"
+" offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2474,8 +2490,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge at a selected distance from one end of the edge."
+"This method creates a Feature object and a DatumPoint object along an edge"
+" at a selected distance from one end of the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2487,8 +2503,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge by projecting an existing point along the normal to the edge."
+"This method creates a Feature object and a DatumPoint object along an edge"
+" by projecting an existing point along the normal to the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2518,19 +2534,20 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more cells using the given datum plane."
+msgid ""
+"This method partitions one or more cells using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtendFace "
-"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
-" extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\, "
+"extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2542,8 +2559,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
-"\\(cells\\, edges\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ \\(cells\\,"
+" edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2568,8 +2585,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
-" edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\, "
+"edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2600,8 +2617,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more cells using a plane defined by a point"
-" and a normal direction."
+"This method partitions one or more cells using a plane defined by a point "
+"and a normal direction."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2626,19 +2643,20 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more cells by sweeping selected edges along"
-" the given sweep path."
+"This method partitions one or more cells by sweeping selected edges along "
+"the given sweep path."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions an edge where it intersects with a datum plane."
+msgid ""
+"This method partitions an edge where it intersects with a datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2707,19 +2725,20 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more faces using the given datum plane."
+msgid ""
+"This method partitions one or more faces using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
-" extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\, "
+"extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2737,8 +2756,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more faces using the given cutting faces to"
-" partition the target faces."
+"This method partitions one or more faces using the given cutting faces to "
+"partition the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2750,8 +2769,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more faces by projecting the given edges on"
-" the target faces."
+"This method partitions one or more faces by projecting the given edges on "
+"the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2775,7 +2794,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more planar faces by sketching on them."
+msgid ""
+"This method partitions one or more planar faces by sketching on them."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2802,8 +2822,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 "This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through a distance"
-" governed by the reference point."
+"and then projecting the sketch toward the target faces through a distance "
+"governed by the reference point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2821,9 +2841,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`ReferencePoint "
-"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
-"instanceName\\]\\)"
+":py:obj:`ReferencePoint <abaqus.Feature.Feature.Feature.ReferencePoint>`\\"
+" \\(point\\[\\, instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2893,7 +2912,8 @@ msgid "This method modifies the Feature object."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
+msgid ""
+":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2939,8 +2959,9 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.EditSkin:10 of
 msgid ""
-"Check `EditSkin on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-editskinregpyc.htm?contextscope=all>`__."
+"Check `EditSkin on help.3ds.com/2017 <https://help.3ds.com/2017/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"editskinregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface
@@ -3075,8 +3096,9 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:9 of
 msgid ""
-"Check `MapSetsFromOdb on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mapsetsfromodbregpyc.htm?contextscope=all>`__."
+"Check `MapSetsFromOdb on help.3ds.com/2017 <https://help.3ds.com/2017/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mapsetsfromodbregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:12
@@ -3091,14 +3113,15 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:16
 #: abaqus.Region.Set.Set.MapSetsFromOdb:16 of
-msgid "A list of names of sets to construct or use corresponding to the ODB sets."
+msgid ""
+"A list of names of sets to construct or use corresponding to the ODB sets."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:18
 #: abaqus.Region.Set.Set.MapSetsFromOdb:18 of
 msgid ""
-"An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default "
-"is OVERWRITE."
+"An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default is"
+" OVERWRITE."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:20
@@ -3128,9 +3151,9 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the boolean operation to perform. Possible "
 "values are UNION, INTERSECTION, and DIFFERENCE. The default value is "
-"UNION. Note that if DIFFERENCE is specified, the order of the given input"
-" sets is important; All sets specified after the first one are subtracted"
-" from the first one."
+"UNION. Note that if DIFFERENCE is specified, the order of the given input "
+"sets is important; All sets specified after the first one are subtracted "
+"from the first one."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetByBoolean:19
@@ -3156,23 +3179,25 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromColor:12 of
 msgid ""
-"Check `SetFromColor on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromcolorregpyc.htm?contextscope=all>`__."
+"Check `SetFromColor on help.3ds.com/2017 <https://help.3ds.com/2017/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromcolorregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromColor:17
 #: abaqus.Region.Set.Set.SetFromColor:17 of
 msgid ""
-"A sequence of three Ints specifying the RGB color. Values can range from "
-"0 to 255. The first integer is for red, the second for green, and the "
-"third for blue. For example, a face colored in yellow is identified "
+"A sequence of three Ints specifying the RGB color. Values can range from 0"
+" to 255. The first integer is for red, the second for green, and the third"
+" for blue. For example, a face colored in yellow is identified "
 "by:`color=(255,255,0)`"
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:10 of
 msgid ""
-"Check `SetFromElementLabels on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromelementlabelsregpyc.htm?contextscope=all>`__."
+"Check `SetFromElementLabels on help.3ds.com/2017 <https://help.3ds.com/201"
+"7/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromelementlabelsregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:15
@@ -3200,8 +3225,9 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:10 of
 msgid ""
-"Check `SetFromNodeLabels on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromnodelabelsregpyc.htm?contextscope=all>`__."
+"Check `SetFromNodeLabels on help.3ds.com/2017 <https://help.3ds.com/2017/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromnodelabelsregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:15
@@ -3222,14 +3248,15 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Skin:1 abaqus.Region.Skin.Skin:16 of
 msgid ""
-"This method creates a skin from a sequence of objects in a model "
-"database. At least one of the optional arguments needs to be specified."
+"This method creates a skin from a sequence of objects in a model database."
+" At least one of the optional arguments needs to be specified."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Skin:10 of
 msgid ""
-"Check `Skin on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-skinregpyc.htm?contextscope=all>`__."
+"Check `Skin on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"skinregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Stringer:1
@@ -3241,14 +3268,15 @@ msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Stringer:10 of
 msgid ""
-"Check `Stringer on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerregpyc.htm?contextscope=all>`__."
+"Check `Stringer on help.3ds.com/2017 <https://help.3ds.com/2017/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"stringerregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Stringer:15 of
 msgid ""
-"A sequence of Edge objects specifying the edges on which stringers should"
-" be created. Applicable to three and two-dimensional parts."
+"A sequence of Edge objects specifying the edges on which stringers should "
+"be created. Applicable to three and two-dimensional parts."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Stringer:18 of
@@ -3278,8 +3306,9 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:12
 #: abaqus.Region.RegionPart.RegionPart.Surface:13 of
 msgid ""
-"Check `Surface on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceregpyc.htm?contextscope=all>`__."
+"Check `Surface on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:17
@@ -3299,8 +3328,8 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:23
 #: abaqus.Region.RegionPart.RegionPart.Surface:24 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to both SIDE1 and "
-"SIDE2 of element). The default value is None."
+"A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2"
+" of element). The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:26
@@ -3327,57 +3356,57 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:35
 #: abaqus.Region.RegionPart.RegionPart.Surface:36 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE1 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE1 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:38
 #: abaqus.Region.RegionPart.RegionPart.Surface:39 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE2 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE2 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:41
 #: abaqus.Region.RegionPart.RegionPart.Surface:42 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE3 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE3 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:44
 #: abaqus.Region.RegionPart.RegionPart.Surface:45 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE4 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE4 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:47
 #: abaqus.Region.RegionPart.RegionPart.Surface:48 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE5 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE5 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:50
 #: abaqus.Region.RegionPart.RegionPart.Surface:51 of
 msgid ""
-"A sequence of MeshElement objects (surface applies to FACE6 of element) "
-"or MeshFace objects. The default value is None."
+"A sequence of MeshElement objects (surface applies to FACE6 of element) or"
+" MeshFace objects. The default value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:53
 #: abaqus.Region.RegionPart.RegionPart.Surface:54 of
 msgid ""
-"A sequence of Face objects (surface applies to SIDE1 of face). The "
-"default value is None."
+"A sequence of Face objects (surface applies to SIDE1 of face). The default"
+" value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:55
 #: abaqus.Region.RegionPart.RegionPart.Surface:56 of
 msgid ""
-"A sequence of Face objects (surface applies to SIDE2 of face). The "
-"default value is None."
+"A sequence of Face objects (surface applies to SIDE2 of face). The default"
+" value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:57
@@ -3390,29 +3419,29 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:60
 #: abaqus.Region.RegionPart.RegionPart.Surface:61 of
 msgid ""
-"A sequence of Edge objects (surface applies to SIDE1 of edge). The "
-"default value is None."
+"A sequence of Edge objects (surface applies to SIDE1 of edge). The default"
+" value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:62
 #: abaqus.Region.RegionPart.RegionPart.Surface:63 of
 msgid ""
-"A sequence of Edge objects (surface applies to SIDE2 of edge). The "
-"default value is None."
+"A sequence of Edge objects (surface applies to SIDE2 of edge). The default"
+" value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:64
 #: abaqus.Region.RegionPart.RegionPart.Surface:65 of
 msgid ""
-"A sequence of Edge objects (surface applies to END1 of edge). The default"
-" value is None."
+"A sequence of Edge objects (surface applies to END1 of edge). The default "
+"value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:66
 #: abaqus.Region.RegionPart.RegionPart.Surface:67 of
 msgid ""
-"A sequence of Edge objects (surface applies to END2 of edge). The default"
-" value is None."
+"A sequence of Edge objects (surface applies to END2 of edge). The default "
+"value is None."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:68
@@ -3431,15 +3460,15 @@ msgid ""
 "the following arguments:   side1Faces, side2Faces, side12Faces  - On "
 "three-dimensional wire edges, you can use the following arguments:   "
 "end1Edges, end2Edges, circumEdges  - On three-dimensional or two-"
-"dimensional or axisymmetric edges, you can use the following arguments:"
-"   side1Edges, side2Edges  - On two-dimensional or axisymmetric shell "
+"dimensional or axisymmetric edges, you can use the following arguments:   "
+"side1Edges, side2Edges  - On two-dimensional or axisymmetric shell "
 "elements, you can use the following arguments:   face1Elements, "
-"face2Elements, face3Elements, face4Elements  - On solid elements, you can"
-" use the following arguments:   face1Elements, face2Elements, "
+"face2Elements, face3Elements, face4Elements  - On solid elements, you can "
+"use the following arguments:   face1Elements, face2Elements, "
 "face3Elements, face4Elements, face5Elements, face6Elements  - On three-"
 "dimensional shell elements, you can use the following arguments:   "
-"side1Elements, side2Elements, side12Elements  - On three-dimensional wire"
-" elements, you can use the following arguments:   end1Elements, "
+"side1Elements, side2Elements, side12Elements  - On three-dimensional wire "
+"elements, you can use the following arguments:   end1Elements, "
 "end2Elements, circumElements  - On two-dimensional or axisymmetric wire "
 "elements, you can use the following arguments:   side1Elements, "
 "side2Elements"
@@ -3474,8 +3503,8 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:81
 #: abaqus.Region.RegionPart.RegionPart.Surface:83 of
 msgid ""
-"On three-dimensional or two-dimensional or axisymmetric edges, you can "
-"use the following arguments: side1Edges, side2Edges"
+"On three-dimensional or two-dimensional or axisymmetric edges, you can use"
+" the following arguments: side1Edges, side2Edges"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:84
@@ -3496,8 +3525,8 @@ msgstr ""
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:90
 #: abaqus.Region.RegionPart.RegionPart.Surface:92 of
 msgid ""
-"On three-dimensional shell elements, you can use the following arguments:"
-" side1Elements, side2Elements, side12Elements"
+"On three-dimensional shell elements, you can use the following arguments: "
+"side1Elements, side2Elements, side12Elements"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:93
@@ -3530,7 +3559,8 @@ msgid "Create regions for Assembly"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly:1 of
-msgid "Bases: :py:class:`~abaqus.Region.RegionAssemblyBase.RegionAssemblyBase`"
+msgid ""
+"Bases: :py:class:`~abaqus.Region.RegionAssemblyBase.RegionAssemblyBase`"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly:1 of
@@ -3542,8 +3572,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly:11 of
 msgid ""
-"Check `RegionAssembly on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblyregpyc.htm?contextscope=all>`__."
+"Check `RegionAssembly on help.3ds.com/2017 <https://help.3ds.com/2017/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblyregpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3554,8 +3585,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"An Int specifying that feature parameters have been modified but that the"
-" assembly has not been regenerated."
+"An Int specifying that feature parameters have been modified but that the "
+"assembly has not been regenerated."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3571,7 +3602,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
+msgid ""
+":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3580,8 +3612,8 @@ msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-":py:obj:`regenerateConstraintsTogether "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
+":py:obj:`regenerateConstraintsTogether <abaqus.Assembly.AssemblyBase.Assem"
+"blyBase.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3592,13 +3624,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
+msgid ""
+":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A VertexArray object specifying all the vertices existing at the assembly"
-" level."
+"A VertexArray object specifying all the vertices existing at the assembly "
+"level."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3612,7 +3645,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
+msgid ""
+":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3642,7 +3676,8 @@ msgid "A repository of PartInstance objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
+msgid ""
+":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3652,7 +3687,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
+msgid ""
+":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3675,15 +3711,15 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
+msgid ""
+":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 "A repository of Surface objects specifying for more information, see "
-"[Region "
-"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
-"-RegPyc-sb.htm?ContextScope=all)."
+"[Region commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/"
+"SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3707,14 +3743,15 @@ msgid "A repository of Set objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
+msgid ""
+":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
-"A repository of Set objects specifying for more information, see [Region "
-"commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m"
-"-RegPyc-sb.htm?ContextScope=all)."
+"A repository of Set objects specifying for more information, see [Region c"
+"ommands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKE"
+"RRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3728,7 +3765,8 @@ msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A repository of Skin objects specifying the skins created on the assembly."
+msgid ""
+"A repository of Skin objects specifying the skins created on the assembly."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3784,7 +3822,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A String specifying the name of the model to which the assembly belongs."
+msgid ""
+"A String specifying the name of the model to which the assembly belongs."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -3805,8 +3844,8 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`Surface <abaqus.Region.RegionAssembly.RegionAssembly.Surface>`\\"
-" \\(\\[side1Faces\\, side2Faces\\, ...\\]\\)"
+":py:obj:`Surface <abaqus.Region.RegionAssembly.RegionAssembly.Surface>`\\ "
+"\\(\\[side1Faces\\, side2Faces\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -3816,7 +3855,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`Set <abaqus.Region.RegionAssembly.RegionAssembly.Set>`\\ \\(\\)"
+msgid ""
+":py:obj:`Set <abaqus.Region.RegionAssembly.RegionAssembly.Set>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -3847,9 +3887,8 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1
 msgid ""
-":py:obj:`markSurfaceInternal "
-"<abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal>`\\"
-" \\(setName\\, internalSurface\\)"
+":py:obj:`markSurfaceInternal <abaqus.Region.RegionAssemblyBase.RegionAssem"
+"blyBase.markSurfaceInternal>`\\ \\(setName\\, internalSurface\\)"
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -3880,8 +3919,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\"
-" \\(\\)"
+":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -3950,8 +3989,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method prints the name and status of all the features in the feature"
-" lists."
+"This method prints the name and status of all the features in the feature "
+"lists."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -3969,15 +4008,14 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`getAngle <abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle>`\\"
-" \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+":py:obj:`getAngle <abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle>`\\ "
+"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getCoordinates "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
-"\\(entity\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ \\(entity\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -3993,15 +4031,14 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`getFacesAndVerticesOfAttachmentLines "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines>`\\"
-" \\(edges\\)"
+":py:obj:`getFacesAndVerticesOfAttachmentLines <abaqus.Assembly.AssemblyBas"
+"e.AssemblyBase.getFacesAndVerticesOfAttachmentLines>`\\ \\(edges\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"Given an array of edge objects, this method returns a tuple of dictionary"
-" objects."
+"Given an array of edge objects, this method returns a tuple of dictionary "
+"objects."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4025,7 +4062,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid "This method imports an assembly from an EAF file into the root assembly."
+msgid ""
+"This method imports an assembly from an EAF file into the root assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4050,8 +4088,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method imports an assembly from a CATIA V5 Elysium Neutral file into"
-" the root assembly."
+"This method imports an assembly from a CATIA V5 Elysium Neutral file into "
+"the root assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4133,8 +4171,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printConnectorOrientations "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4150,8 +4188,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method projects the specified edges, vertices, and datum points from"
-" the assembly onto the specified ConstrainedSketch object."
+"This method projects the specified edges, vertices, and datum points from "
+"the assembly onto the specified ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4181,8 +4219,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerationWarnings "
-"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4198,7 +4235,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid "This method resumes all the suppressed features in the part or assembly."
+msgid ""
+"This method resumes all the suppressed features in the part or assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4209,7 +4247,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid "This method resumes the specified suppressed features in the assembly."
+msgid ""
+"This method resumes the specified suppressed features in the assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4266,7 +4305,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid "This method modifies the behavior associated with the specified assembly."
+msgid ""
+"This method modifies the behavior associated with the specified assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4289,8 +4329,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method converts the specified PartInstance objects from linked child"
-" instances to regular instances."
+"This method converts the specified PartInstance objects from linked child "
+"instances to regular instances."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4314,7 +4354,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid ":py:obj:`lock <abaqus.Assembly.AssemblyBase.AssemblyBase.lock>`\\ \\(\\)"
+msgid ""
+":py:obj:`lock <abaqus.Assembly.AssemblyBase.AssemblyBase.lock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -4340,8 +4381,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method changes the start node and/or element labels on the specified"
-" independent part instances before or after Abaqus/CAE generates the "
+"This method changes the start node and/or element labels on the specified "
+"independent part instances before or after Abaqus/CAE generates the "
 "meshes."
 msgstr ""
 
@@ -4368,8 +4409,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-"This method creates a Feature object by creating attachment lines between"
-" the given set of source and target faces."
+"This method creates a Feature object by creating attachment lines between "
+"the given set of source and target faces."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4394,8 +4435,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-"This method moves an instance so that a specified point is coincident "
-"with a specified point of a fixed instance."
+"This method moves an instance so that a specified point is coincident with"
+" a specified point of a fixed instance."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4407,8 +4448,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-"This method moves an instance so that its edge is parallel to an edge of "
-"a fixed instance."
+"This method moves an instance so that its edge is parallel to an edge of a"
+" fixed instance."
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -4453,17 +4494,16 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-"This method moves an instance so that its face is parallel to a face of a"
-" fixed instance."
+"This method moves an instance so that its face is parallel to a face of a "
+"fixed instance."
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:1 of
 msgid ""
 "This method creates a surface from a sequence of objects in a model "
 "database. The surface will apply to the sides specified by the "
-"arguments.For example "
-"surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,"
-" name='Surf-1')"
+"arguments.For example surface=mdb.models['Model-1'].parts['Part-"
+"1'].Surface(side1Faces=side1Faces, name='Surf-1')"
 msgstr ""
 
 #: abaqus.Region.RegionAssembly.RegionAssembly.Surface:99
@@ -4483,48 +4523,49 @@ msgstr ""
 
 #: abaqus.Region.Region.Region:1 of
 msgid ""
-"The purpose of the Region object is to provide a link between an "
-"attribute and the geometric or discrete entities to which the attribute "
-"is applied. An attribute (Load, BC, IC, etc.) is applied to one or more "
-"Region objects; each Region object in turn is associated with a picked "
-"Set or Surface or with a named Set or Surface. The Region object provides"
-" a unified interface (or \"façade\") to data and functionality located at"
-" the Set or Surface. A script that applies an attribute to a picked Set "
-"or Surface requires the explicit creation of a Region object and will "
-"implicitly create a matching internal Set or Surface. Conversely, a "
-"script that applies an attribute to a named Set or Surface requires the "
-"explicit creation of that Set or Surface (see 39.4) and will implicitly "
-"create a region object. The reference between Region and Set/Surface is "
-"by name (user-provided or internal.) If the Set/Surface is suppressed, "
-"deleted, or renamed, the Region object will not be able to find the "
-"associated Set/Surface, and will communicate that to the attribute, but "
-"will not be affected otherwise. If a Set/Surface with the same name "
-"becomes available (only possible with user-provided names) the Region "
-"object will re-establish the connection. Another way of correcting this "
-"problem is to re-apply the attribute. Wherever a particular Load, BC, IC,"
-" etc. command accepts a named set or a named surface, that command will "
-"also accept a Region object. For example::"
+"The purpose of the Region object is to provide a link between an attribute"
+" and the geometric or discrete entities to which the attribute is applied."
+" An attribute (Load, BC, IC, etc.) is applied to one or more Region "
+"objects; each Region object in turn is associated with a picked Set or "
+"Surface or with a named Set or Surface. The Region object provides a "
+"unified interface (or \"façade\") to data and functionality located at the"
+" Set or Surface. A script that applies an attribute to a picked Set or "
+"Surface requires the explicit creation of a Region object and will "
+"implicitly create a matching internal Set or Surface. Conversely, a script"
+" that applies an attribute to a named Set or Surface requires the explicit"
+" creation of that Set or Surface (see 39.4) and will implicitly create a "
+"region object. The reference between Region and Set/Surface is by name "
+"(user-provided or internal.) If the Set/Surface is suppressed, deleted, or"
+" renamed, the Region object will not be able to find the associated "
+"Set/Surface, and will communicate that to the attribute, but will not be "
+"affected otherwise. If a Set/Surface with the same name becomes available "
+"(only possible with user-provided names) the Region object will re-"
+"establish the connection. Another way of correcting this problem is to re-"
+"apply the attribute. Wherever a particular Load, BC, IC, etc. command "
+"accepts a named set or a named surface, that command will also accept a "
+"Region object. For example::"
 msgstr ""
 
 #: abaqus.Region.Region.Region:24 of
 msgid ""
 "Abaqus does not provide a regions repository; as an alternative, you "
-"should assign a variable to a Region object and refer to the variable. "
-"The lifecycle of a Region object is similar to the lifecycle of a Leaf "
-"object used by display groups; as a result, you should use a Region "
-"object immediately after you create it. The contents of a Region object "
-"are not intended to survive regeneration. If you use an out-of-date "
-"Region object, the script is unlikely to function correctly. Querying an "
-"attribute's Region will return a Region tuple. The contents of the tuple "
-"are the set name followed by the owners of the set and three flags "
-"expressed as integers. The flags indicate the region space, the type of "
-"region and the whether the region is an internal set."
+"should assign a variable to a Region object and refer to the variable. The"
+" lifecycle of a Region object is similar to the lifecycle of a Leaf object"
+" used by display groups; as a result, you should use a Region object "
+"immediately after you create it. The contents of a Region object are not "
+"intended to survive regeneration. If you use an out-of-date Region object,"
+" the script is unlikely to function correctly. Querying an attribute's "
+"Region will return a Region tuple. The contents of the tuple are the set "
+"name followed by the owners of the set and three flags expressed as "
+"integers. The flags indicate the region space, the type of region and the "
+"whether the region is an internal set."
 msgstr ""
 
 #: abaqus.Region.Region.Region:41 of
 msgid ""
-"Check `Region on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-regionpyc.htm?contextscope=all>`__."
+"Check `Region on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSI"
+"MULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"regionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:1 of
@@ -4539,8 +4580,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase:10 of
 msgid ""
-"Check `RegionAssemblyBase on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
+"Check `RegionAssemblyBase on help.3ds.com/2017 <https://help.3ds.com/2017/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:1
@@ -4587,9 +4629,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:14 of
 msgid ""
-"Check `RegionAssemblyBase.clashSets on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyclashsetspyc>`__."
+"Check `RegionAssemblyBase.clashSets on help.3ds.com/2017 <https://help.3ds"
+".com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all#simaker-assemblyclashsetspyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.clashSets:17
@@ -4604,9 +4646,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:4 of
 msgid ""
-"Check `RegionAssemblyBase.deleteSets on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblydeletesetspyc>`__."
+"Check `RegionAssemblyBase.deleteSets on help.3ds.com/2017 <https://help.3d"
+"s.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all#simaker-assemblydeletesetspyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSets:7 of
@@ -4617,9 +4659,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:4 of
 msgid ""
-"Check `RegionAssemblyBase.deleteSurfaces on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblydeletesurfacespyc>`__."
+"Check `RegionAssemblyBase.deleteSurfaces on help.3ds.com/2017 <https://hel"
+"p.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all#simaker-assemblydeletesurfacespyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.deleteSurfaces:7 of
@@ -4630,9 +4672,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:4 of
 msgid ""
-"Check `RegionAssemblyBase.isSetInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyissetinternalpyc>`__."
+"Check `RegionAssemblyBase.isSetInternal on help.3ds.com/2017 <https://help"
+".3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all#simaker-assemblyissetinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSetInternal:7
@@ -4644,9 +4686,10 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:4 of
 msgid ""
-"Check `RegionAssemblyBase.isSurfaceInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblyissurfaceinternalpyc>`__."
+"Check `RegionAssemblyBase.isSurfaceInternal on help.3ds.com/2017 <https://"
+"help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-assemblypyc.htm?contextscope=all#simaker-"
+"assemblyissurfaceinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.isSurfaceInternal:7
@@ -4658,9 +4701,9 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:4 of
 msgid ""
-"Check `RegionAssemblyBase.markSetInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblymarksetinternalpyc>`__."
+"Check `RegionAssemblyBase.markSetInternal on help.3ds.com/2017 <https://he"
+"lp.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all#simaker-assemblymarksetinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSetInternal:9
@@ -4670,14 +4713,16 @@ msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:4 of
 msgid ""
-"Check `RegionAssemblyBase.markSurfaceInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
-"#simaker-assemblymarksurfaceinternalpyc>`__."
+"Check `RegionAssemblyBase.markSurfaceInternal on help.3ds.com/2017 <https:"
+"//help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-assemblypyc.htm?contextscope=all#simaker-"
+"assemblymarksurfaceinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase.markSurfaceInternal:9
 #: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:9 of
-msgid "A Boolean specifying whether the Surface should be marked as internal."
+msgid ""
+"A Boolean specifying whether the Surface should be marked as internal."
 msgstr ""
 
 #: abaqus.Region.Set.Set:1 abaqus.Region.Surface.Surface:1 of
@@ -4694,32 +4739,36 @@ msgstr ""
 
 #: abaqus.Region.Set.Set:32 of
 msgid ""
-"Check `Set on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setpyc.htm?contextscope=all>`__."
+"Check `Set on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMUL"
+"IA_Established/SIMACAEKERRefMap/simaker-c-setpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Set.Set.MapSetsFromOdb:9 of
 msgid ""
-"Check `MapSetsFromOdb on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mapsetsfromodbpyc.htm?contextscope=all>`__."
+"Check `MapSetsFromOdb on help.3ds.com/2017 <https://help.3ds.com/2017/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mapsetsfromodbpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Set.Set.SetFromColor:12 of
 msgid ""
-"Check `SetFromColor on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromcolorpyc.htm?contextscope=all>`__."
+"Check `SetFromColor on help.3ds.com/2017 <https://help.3ds.com/2017/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromcolorpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Set.Set.SetFromElementLabels:10 of
 msgid ""
-"Check `SetFromElementLabels on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromelementlabelspyc.htm?contextscope=all>`__."
+"Check `SetFromElementLabels on help.3ds.com/2017 <https://help.3ds.com/201"
+"7/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromelementlabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Set.Set.SetFromNodeLabels:10 of
 msgid ""
-"Check `SetFromNodeLabels on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromnodelabelspyc.htm?contextscope=all>`__."
+"Check `SetFromNodeLabels on help.3ds.com/2017 <https://help.3ds.com/2017/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"setfromnodelabelspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Region.Set.Set.cells:1 of
@@ -4768,14 +4817,15 @@ msgstr ""
 
 #: abaqus.Region.Surface.Surface:21 of
 msgid ""
-"Check `Surface on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacepyc.htm?contextscope=all>`__."
+"Check `Surface on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceByBoolean:1 of
 msgid ""
-"This method creates a surface by performing a boolean operation on two or"
-" more input surfaces."
+"This method creates a surface by performing a boolean operation on two or "
+"more input surfaces."
 msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceByBoolean:12 of
@@ -4786,8 +4836,8 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the boolean operation to perform. Possible "
 "values are UNION, INTERSECTION, and DIFFERENCE. The default value is "
-"UNION. Note that if DIFFERENCE is specified, the order of the given input"
-" surfaces is important; All surfaces specified after the first one are "
+"UNION. Note that if DIFFERENCE is specified, the order of the given input "
+"surfaces is important; All surfaces specified after the first one are "
 "subtracted from the first one."
 msgstr ""
 
@@ -4799,16 +4849,17 @@ msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceFromElsets:10 of
 msgid ""
-"Check `SurfaceFromElsets on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacefromelsetspyc.htm?contextscope=all>`__."
+"Check `SurfaceFromElsets on help.3ds.com/2017 <https://help.3ds.com/2017/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacefromelsetspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceFromElsets:15 of
 msgid ""
 "A sequence of element sets. For example::      elementSetSeq=((elset1, "
 "S1),(elset2, S2))      where "
-"``elset1=mdb.models[name].rootAssembly.sets['Clutch']``     and ``S1`` "
-"and ``S2`` indicate the side of the element set."
+"``elset1=mdb.models[name].rootAssembly.sets['Clutch']``     and ``S1`` and"
+" ``S2`` indicate the side of the element set."
 msgstr ""
 
 #: abaqus.Region.Surface.Surface.SurfaceFromElsets:16 of
@@ -4833,22 +4884,23 @@ msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase:10 of
 msgid ""
-"Check `RegionPartBase on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
+"Check `RegionPartBase on help.3ds.com/2017 <https://help.3ds.com/2017/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.clashSets:14 of
 msgid ""
-"Check `RegionPartBase.clashSets on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partclashsetspyc>`__."
+"Check `RegionPartBase.clashSets on help.3ds.com/2017 <https://help.3ds.com"
+"/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partclashsetspyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:4 of
 msgid ""
-"Check `RegionPartBase.deleteSets on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partdeletesetspyc>`__."
+"Check `RegionPartBase.deleteSets on help.3ds.com/2017 <https://help.3ds.co"
+"m/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partdeletesetspyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.deleteSets:7 of
@@ -4859,9 +4911,9 @@ msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:4 of
 msgid ""
-"Check `RegionPartBase.deleteSurfaces on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partdeletesurfacespyc>`__."
+"Check `RegionPartBase.deleteSurfaces on help.3ds.com/2017 <https://help.3d"
+"s.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partdeletesurfacespyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.deleteSurfaces:7 of
@@ -4872,30 +4924,30 @@ msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.isSetInternal:4 of
 msgid ""
-"Check `RegionPartBase.isSetInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partissetinternalpyc>`__."
+"Check `RegionPartBase.isSetInternal on help.3ds.com/2017 <https://help.3ds"
+".com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partissetinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.isSurfaceInternal:4 of
 msgid ""
-"Check `RegionPartBase.isSurfaceInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partissurfaceinternalpyc>`__."
+"Check `RegionPartBase.isSurfaceInternal on help.3ds.com/2017 <https://help"
+".3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partissurfaceinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.markSetInternal:4 of
 msgid ""
-"Check `RegionPartBase.markSetInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partmarksetinternalpyc>`__."
+"Check `RegionPartBase.markSetInternal on help.3ds.com/2017 <https://help.3"
+"ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partmarksetinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.RegionPartBase.RegionPartBase.markSurfaceInternal:4 of
 msgid ""
-"Check `RegionPartBase.markSurfaceInternal on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partmarksurfaceinternalpyc>`__."
+"Check `RegionPartBase.markSurfaceInternal on help.3ds.com/2017 <https://he"
+"lp.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partmarksurfaceinternalpyc>`__."
 msgstr ""
 
 #: abaqus.Region.Skin.Skin:1 of
@@ -4906,8 +4958,9 @@ msgstr ""
 
 #: abaqus.Region.Skin.Skin:14 of
 msgid ""
-"Check `Skin on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-skinpyc.htm?contextscope=all>`__."
+"Check `Skin on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"skinpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Skin.Skin:27 abaqus.Region.Skin.Skin.EditSkin:15 of
@@ -4928,27 +4981,29 @@ msgstr ""
 
 #: abaqus.Region.Skin.Skin.EditSkin:10 of
 msgid ""
-"Check `EditSkin on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-editskinpyc.htm?contextscope=all>`__."
+"Check `EditSkin on help.3ds.com/2017 <https://help.3ds.com/2017/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"editskinpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Stringer.Stringer:1 of
 msgid ""
-"The Stringer object stores information on stringer reinforcements created"
-" on entities."
+"The Stringer object stores information on stringer reinforcements created "
+"on entities."
 msgstr ""
 
 #: abaqus.Region.Stringer.Stringer:14 of
 msgid ""
-"Check `Stringer on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stringerpyc.htm?contextscope=all>`__."
+"Check `Stringer on help.3ds.com/2017 <https://help.3ds.com/2017/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"stringerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Region.Stringer.Stringer:27
 #: abaqus.Region.Stringer.Stringer.EditStringer:15 of
 msgid ""
-"A sequence of Edge objects specifying the edges on which stringers should"
-" be created. Applicable to three and two dimensional parts."
+"A sequence of Edge objects specifying the edges on which stringers should "
+"be created. Applicable to three and two dimensional parts."
 msgstr ""
 
 #: abaqus.Region.Stringer.Stringer:30
@@ -4972,8 +5027,9 @@ msgstr ""
 
 #: abaqus.Region.Stringer.Stringer.EditStringer:10 of
 msgid ""
-"Check `EditStringer on help.3ds.com/2017 "
-"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-editstringerpyc.htm?contextscope=all>`__."
+"Check `EditStringer on help.3ds.com/2017 <https://help.3ds.com/2017/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"editstringerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #~ msgid ""
