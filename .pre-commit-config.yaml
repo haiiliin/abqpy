@@ -11,3 +11,12 @@ repos:
     - id: docformatter
       additional_dependencies: [tomli]
       args: [src]
+
+- repo: local
+  hooks:
+    - id: pofmt
+      name: pofmt
+      entry: pofmt
+      language: python
+      types: ['text', 'pofile']
+      additional_dependencies: ['pofmt', 'pangu']
