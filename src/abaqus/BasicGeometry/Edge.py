@@ -1,15 +1,15 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple, Dict, TYPE_CHECKING
+from typing import TYPE_CHECKING, Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
 if TYPE_CHECKING:  # to avoid circular imports
-    from .EdgeArray import EdgeArray
-    from ..Mesh.MeshNodeArray import MeshNodeArray
     from ..Mesh.MeshElementArray import MeshElementArray
+    from ..Mesh.MeshNodeArray import MeshNodeArray
+    from .EdgeArray import EdgeArray
 
 
 @abaqus_class_doc

@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ContactControl import ContactControl
-from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, ON, SymbolicConstant
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import DEFAULT, ON, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ContactControl import ContactControl
 
 
 @abaqus_class_doc

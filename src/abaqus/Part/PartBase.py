@@ -1,11 +1,10 @@
-from typing import overload, Dict, List, Optional, Sequence
+from typing import Dict, List, Optional, Sequence, overload
+
+from typing_extensions import Literal
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing_extensions import Literal
 
-from .AcisFile import AcisFile
-from .PartFeature import PartFeature
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.Edge import Edge
@@ -38,17 +37,19 @@ from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.abaqusConstants import (
     ALL_EDGES,
     BOUNDARY_ONLY,
-    Boolean,
     FALSE,
     GEOMETRY,
     LOW,
     NONE,
     OFF,
     ON,
-    SymbolicConstant,
     UNDEFORMED,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .AcisFile import AcisFile
+from .PartFeature import PartFeature
 
 
 @abaqus_class_doc

@@ -1,24 +1,25 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DamageEvolution import DamageEvolution
-from .DamageStabilization import DamageStabilization
-from .DamageStabilizationCohesive import DamageStabilizationCohesive
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ...UtilityAndView.abaqusConstants import (
-    Boolean,
     CENTROID,
+    ENERGY,
+    LINEAR,
+    MAXIMUM,
+    MODE_INDEPENDENT,
     MSFLD,
     NMORI,
     OFF,
-    MAXIMUM,
-    MODE_INDEPENDENT,
-    ENERGY,
-    LINEAR,
+    Boolean,
     SymbolicConstant,
 )
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DamageEvolution import DamageEvolution
+from .DamageStabilization import DamageStabilization
+from .DamageStabilizationCohesive import DamageStabilizationCohesive
 
 
 @abaqus_class_doc

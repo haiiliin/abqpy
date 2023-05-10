@@ -7,16 +7,15 @@ Script to build the compression model for the parameter identification
 
 # run with: python compression.py 1000,0.2
 
+import numpy as np
+
 from abaqus import *
 from abaqusConstants import *
 from caeModules import *
 from driverUtils import *
 
-import numpy as np
-
 
 def run(modulus, poisson=0.2):
-
     executeOnCaeStartup()
 
     # Model

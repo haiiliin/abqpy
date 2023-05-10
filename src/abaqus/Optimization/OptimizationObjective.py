@@ -2,7 +2,7 @@ from typing import Union
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import DEFAULT, OFF, Boolean, SymbolicConstant
 
 
 @abaqus_class_doc

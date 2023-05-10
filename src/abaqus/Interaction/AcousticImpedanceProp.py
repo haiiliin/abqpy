@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ContactProperty import ContactProperty
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ContactProperty import ContactProperty
 
 
 @abaqus_class_doc

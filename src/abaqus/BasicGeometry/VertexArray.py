@@ -1,12 +1,14 @@
 from __future__ import annotations
 
-from typing import List, Sequence, Union, overload, Tuple
+from typing import List, Sequence, Tuple, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Vertex import Vertex
-from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
+from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import (
+    ConstrainedSketchVertex,
+)
 from ..UtilityAndView.abaqusConstants import Boolean
+from .Vertex import Vertex
 
 
 @abaqus_class_doc
@@ -69,9 +71,7 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[ConstrainedSketchVertex]:
         ...
@@ -80,9 +80,7 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[ConstrainedSketchVertex]:
         ...

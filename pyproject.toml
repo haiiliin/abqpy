@@ -73,6 +73,9 @@ line-length = 120
 target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
 include = '(src/abaqus/.*\.py|src/abqpy/.*\.py|tests/.*\.py|setup\.py)'
 
+[tool.isort]
+profile = "black"
+
 [tool.docformatter]
 recursive = true
 wrap-summaries = 112

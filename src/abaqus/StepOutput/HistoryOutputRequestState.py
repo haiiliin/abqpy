@@ -1,4 +1,4 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc
 

@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from typing import Union, List, Dict, Sequence, overload, Tuple
+from typing import Dict, List, Sequence, Tuple, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .IgnoredEdge import IgnoredEdge
 from ..UtilityAndView.abaqusConstants import Boolean
+from .IgnoredEdge import IgnoredEdge
 
 
 @abaqus_class_doc
@@ -32,9 +32,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[IgnoredEdge]:
         ...
@@ -43,9 +41,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[IgnoredEdge]:
         ...

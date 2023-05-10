@@ -1,16 +1,24 @@
 from typing import Dict
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    MODEL,
+    NORMAL,
+    OFF,
+    ON,
+    Boolean,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import Boolean, MODEL, NORMAL, OFF, ON, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

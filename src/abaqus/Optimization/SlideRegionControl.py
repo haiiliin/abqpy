@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .GeometricRestriction import GeometricRestriction
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, FREE_FORM, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import FREE_FORM, ON, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .GeometricRestriction import GeometricRestriction
 
 
 @abaqus_class_doc

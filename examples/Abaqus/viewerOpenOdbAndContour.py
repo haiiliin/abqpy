@@ -30,9 +30,9 @@ The script does the following:
 - Prints a color image of the viewport to a .png file.
 """
 
+import visualization
 from abaqus import *
 from abaqusConstants import *
-import visualization
 
 # Create a new Viewport for this example.
 

@@ -1,15 +1,18 @@
 repos:
 
 - repo: https://github.com/psf/black
-  rev: 22.10.0
+  rev: 23.3.0
   hooks:
     - id: black
 
-- repo: local
+- repo: https://github.com/frostming/pofmt
+  rev: '0.4.0'
   hooks:
     - id: pofmt
-      name: pofmt
-      entry: pofmt
-      language: python
-      types: ['text', 'pofile']
-      additional_dependencies: ['pofmt', 'pangu']
+      additional_dependencies: ['pangu']  # for handling Chinese documents
+
+- repo: https://github.com/pycqa/isort
+  rev: 5.12.0
+  hooks:
+    - id: isort
+      args: ["--profile", "black", "--filter-files"]

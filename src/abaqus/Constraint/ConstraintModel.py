@@ -1,8 +1,25 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Assembly.PartInstance import PartInstance
+from ..BasicGeometry.ModelDotArray import ModelDotArray
+from ..Model.ModelBase import ModelBase
+from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (
+    BOTH,
+    COMPUTED,
+    DEFAULT,
+    DOF_MODE_MPC,
+    OFF,
+    ON,
+    SOLVER_DEFAULT,
+    UNIFORM,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AdjustPoints import AdjustPoints
 from .Coupling import Coupling
 from .DisplayBody import DisplayBody
@@ -12,22 +29,6 @@ from .MultipointConstraint import MultipointConstraint
 from .RigidBody import RigidBody
 from .ShellSolidCoupling import ShellSolidCoupling
 from .Tie import Tie
-from ..Assembly.PartInstance import PartInstance
-from ..BasicGeometry.ModelDotArray import ModelDotArray
-from ..Model.ModelBase import ModelBase
-from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    BOTH,
-    Boolean,
-    COMPUTED,
-    DEFAULT,
-    DOF_MODE_MPC,
-    OFF,
-    ON,
-    SOLVER_DEFAULT,
-    UNIFORM,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

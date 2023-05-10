@@ -1,5 +1,7 @@
 from abaqus.Job.Job import Job  # noqa # pylint: disable=unused-import
-from abaqus.Odb.AnalyticSurfaceSegment import AnalyticSurfaceSegment  # noqa # pylint: disable=unused-import
+from abaqus.Odb.AnalyticSurfaceSegment import (  # noqa # pylint: disable=unused-import
+    AnalyticSurfaceSegment,
+)
 from abaqus.Odb.HistoryPoint import HistoryPoint  # noqa # pylint: disable=unused-import
 from odbAccess import AnalyticSurfaceProfile  # noqa # pylint: disable=unused-import
 from odbAccess import Odb  # noqa # pylint: disable=unused-import
