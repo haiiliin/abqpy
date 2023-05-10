@@ -1,12 +1,20 @@
-from typing import Union, Optional, Sequence
+from typing import Optional, Sequence, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Annotation import Annotation
-from ..UtilityAndView.abaqusConstants import BOTTOM_LEFT, FILLED_ARROW, NONE, SOLID, SymbolicConstant, VERY_THIN
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .._OptionsBase import _OptionsBase
+from ..UtilityAndView.abaqusConstants import (
+    BOTTOM_LEFT,
+    FILLED_ARROW,
+    NONE,
+    SOLID,
+    VERY_THIN,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Annotation import Annotation
 
 
 @abaqus_class_doc

@@ -1,18 +1,19 @@
-from typing import Union, Optional, Sequence
+from typing import Optional, Sequence, Union
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (
     AXIS_1,
     AXIS_2,
     AXIS_3,
-    Boolean,
     FIRST_FRAME,
     OFF,
     ON,
-    SymbolicConstant,
     TRANSLATE,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

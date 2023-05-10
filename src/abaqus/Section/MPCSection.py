@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Section import Section
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import DOF_MODE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Section import Section
 
 
 @abaqus_class_doc

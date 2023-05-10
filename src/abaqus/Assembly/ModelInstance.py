@@ -10,7 +10,7 @@ from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
 
 # prevent circular imports

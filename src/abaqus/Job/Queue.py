@@ -1,6 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import ALL, OFF, ON, Boolean, SymbolicConstant
 
 
 @abaqus_class_doc

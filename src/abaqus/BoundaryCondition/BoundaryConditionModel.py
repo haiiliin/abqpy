@@ -1,12 +1,29 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AccelerationBC import AccelerationBC
-from .AccelerationBCState import AccelerationBCState
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Amplitude.Correlation import Correlation
+from ..Model.ModelBase import ModelBase
+from ..Region.Region import Region
+from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import (
+    FREE,
+    INFLOW,
+    NOT_APPLICABLE,
+    OFF,
+    ON,
+    UNIFORM,
+    UNSET,
+    ZERO_PRESSURE,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AccelerationBaseMotionBC import AccelerationBaseMotionBC
 from .AccelerationBaseMotionBCState import AccelerationBaseMotionBCState
+from .AccelerationBC import AccelerationBC
+from .AccelerationBCState import AccelerationBCState
 from .AcousticPressureBC import AcousticPressureBC
 from .AcousticPressureBCState import AcousticPressureBCState
 from .ConcentrationBC import ConcentrationBC
@@ -17,10 +34,10 @@ from .ConnDisplacementBC import ConnDisplacementBC
 from .ConnDisplacementBCState import ConnDisplacementBCState
 from .ConnVelocityBC import ConnVelocityBC
 from .ConnVelocityBCState import ConnVelocityBCState
-from .DisplacementBC import DisplacementBC
-from .DisplacementBCState import DisplacementBCState
 from .DisplacementBaseMotionBC import DisplacementBaseMotionBC
 from .DisplacementBaseMotionBCState import DisplacementBaseMotionBCState
+from .DisplacementBC import DisplacementBC
+from .DisplacementBCState import DisplacementBCState
 from .ElectricPotentialBC import ElectricPotentialBC
 from .ElectricPotentialBCState import ElectricPotentialBCState
 from .EulerianBC import EulerianBC
@@ -42,26 +59,10 @@ from .SubmodelBCState import SubmodelBCState
 from .TemperatureBC import TemperatureBC
 from .TemperatureBCState import TemperatureBCState
 from .TypeBC import TypeBC
-from .VelocityBC import VelocityBC
-from .VelocityBCState import VelocityBCState
 from .VelocityBaseMotionBC import VelocityBaseMotionBC
 from .VelocityBaseMotionBCState import VelocityBaseMotionBCState
-from ..Amplitude.Correlation import Correlation
-from ..Model.ModelBase import ModelBase
-from ..Region.Region import Region
-from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (
-    Boolean,
-    FREE,
-    INFLOW,
-    NOT_APPLICABLE,
-    OFF,
-    ON,
-    UNIFORM,
-    UNSET,
-    ZERO_PRESSURE,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .VelocityBC import VelocityBC
+from .VelocityBCState import VelocityBCState
 
 
 @abaqus_class_doc

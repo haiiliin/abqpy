@@ -1,8 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Inertia import Inertia
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
+from .Inertia import Inertia
 
 
 @abaqus_class_doc

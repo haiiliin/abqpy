@@ -3,10 +3,10 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     OFF,
     OPT_DATASAVE_SPECIFY_CYCLE,
     OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE,
+    Boolean,
 )
 
 

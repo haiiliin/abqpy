@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Material import Material
 from ..Odb.OdbBase import OdbBase
+from .Material import Material
 
 
 @abaqus_class_doc

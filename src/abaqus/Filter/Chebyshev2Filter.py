@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Filter import Filter
-from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import NONE, OFF, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Filter import Filter
 
 
 @abaqus_class_doc

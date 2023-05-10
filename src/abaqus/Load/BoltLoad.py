@@ -1,13 +1,14 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Load import Load
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import APPLY_FORCE, Boolean, UNSET
+from ..UtilityAndView.abaqusConstants import APPLY_FORCE, UNSET, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Load import Load
 
 
 @abaqus_class_doc

@@ -1,5 +1,5 @@
 from sphinx.application import Sphinx
-from sphinx.ext.autodoc import ClassDocumenter, ALL
+from sphinx.ext.autodoc import ALL, ClassDocumenter
 
 
 class AbqpyClassDocumenter(ClassDocumenter):

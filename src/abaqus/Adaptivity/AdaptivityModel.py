@@ -1,19 +1,14 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
-from .AdaptiveMeshControl import AdaptiveMeshControl
-from .DisplacementAdaptiveMeshConstraint import DisplacementAdaptiveMeshConstraint
-from .RemeshingRule import RemeshingRule
-from .VelocityAdaptiveMeshConstraint import VelocityAdaptiveMeshConstraint
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumCsys import DatumCsys
 from ..Model.ModelBase import ModelBase
 from ..Odb.Odb import Odb
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     CURRENT,
     DEFAULT,
     DEFAULT_LIMIT,
@@ -27,8 +22,14 @@ from ..UtilityAndView.abaqusConstants import (
     SECOND_ORDER_ADVECTION,
     UNIFORM,
     UNSET,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
+from .AdaptiveMeshControl import AdaptiveMeshControl
+from .DisplacementAdaptiveMeshConstraint import DisplacementAdaptiveMeshConstraint
+from .RemeshingRule import RemeshingRule
+from .VelocityAdaptiveMeshConstraint import VelocityAdaptiveMeshConstraint
 
 
 @abaqus_class_doc

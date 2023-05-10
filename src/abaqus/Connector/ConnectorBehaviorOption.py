@@ -1,13 +1,23 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    COEFFICIENTS,
+    CONSTANT,
+    FRACTION,
+    LINEAR,
+    OFF,
+    ON,
+    PENALTY,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
-from ..UtilityAndView.abaqusConstants import Boolean, COEFFICIENTS, CONSTANT, FRACTION, LINEAR, OFF, ON, PENALTY
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 # Prevent circular import

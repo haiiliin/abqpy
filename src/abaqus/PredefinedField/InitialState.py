@@ -1,10 +1,17 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .PredefinedField import PredefinedField
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Assembly.PartInstanceArray import PartInstanceArray
-from ..UtilityAndView.abaqusConstants import Boolean, LAST_STEP, OFF, STEP_END, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    LAST_STEP,
+    OFF,
+    STEP_END,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .PredefinedField import PredefinedField
 
 
 @abaqus_class_doc

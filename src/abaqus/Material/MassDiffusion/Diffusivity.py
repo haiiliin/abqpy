@@ -1,10 +1,11 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ...UtilityAndView.abaqusConstants import GENERAL, ISOTROPIC, OFF, Boolean
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from .PressureEffect import PressureEffect
 from .SoretEffect import SoretEffect
-from ...UtilityAndView.abaqusConstants import Boolean, GENERAL, ISOTROPIC, OFF
-from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

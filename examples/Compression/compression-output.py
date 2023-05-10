@@ -5,11 +5,12 @@ Compression Output Script
 A script to get the output of the compression model.
 """
 
+import numpy as np
+
+import visualization
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
-import visualization
-import numpy as np
 
 executeOnCaeStartup()
 

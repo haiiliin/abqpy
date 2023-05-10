@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Section import Section
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from .Section import Section
 
 
 @abaqus_class_doc

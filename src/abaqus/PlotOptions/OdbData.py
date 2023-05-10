@@ -1,8 +1,12 @@
 from typing import Dict, Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from .._OptionsBase import _OptionsBase
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .CouplingConstraint import CouplingConstraint
 from .HistoryVariable import HistoryVariable
 from .MpcConstraint import MpcConstraint
@@ -17,9 +21,6 @@ from .OdbDataSurfaceSet import OdbDataSurfaceSet
 from .OdbDiagnosticData import OdbDiagnosticData
 from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from .._OptionsBase import _OptionsBase
 
 
 @abaqus_class_doc

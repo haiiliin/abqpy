@@ -2,11 +2,11 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Displayable import Displayable
 from ..DisplayOptions.AssemblyDisplayOptions import AssemblyDisplayOptions
 from ..DisplayOptions.PartDisplayOptions import PartDisplayOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..UtilityAndView.View import View
+from .Displayable import Displayable
 
 
 @abaqus_class_doc

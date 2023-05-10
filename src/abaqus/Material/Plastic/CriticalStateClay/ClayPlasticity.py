@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ClayHardening import ClayHardening
-from ....UtilityAndView.abaqusConstants import Boolean, EXPONENTIAL, OFF
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ....UtilityAndView.abaqusConstants import EXPONENTIAL, OFF, Boolean
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ClayHardening import ClayHardening
 
 
 @abaqus_class_doc

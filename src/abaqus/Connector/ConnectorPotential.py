@@ -1,9 +1,15 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DerivedComponent import DerivedComponent
-from ..UtilityAndView.abaqusConstants import ABS, COMPONENT_NUMBER, POSITIVE, SymbolicConstant
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    ABS,
+    COMPONENT_NUMBER,
+    POSITIVE,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DerivedComponent import DerivedComponent
 
 
 @abaqus_class_doc

@@ -1,12 +1,13 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .TransverseShearBeam import TransverseShearBeam
-from .TransverseShearShell import TransverseShearShell
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Connector.ConnectorSection import ConnectorSection
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .TransverseShearBeam import TransverseShearBeam
+from .TransverseShearShell import TransverseShearShell
 
 
 @abaqus_class_doc
