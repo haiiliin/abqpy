@@ -2,6 +2,12 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import (
+    DEFORMABLE_BODY,
+    FACE_UNKNOWN,
+    THREE_D,
+    SymbolicConstant,
+)
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
 from .OdbMeshElement import OdbMeshElement
@@ -9,7 +15,6 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, FACE_UNKNOWN, SymbolicConstant, THREE_D
 
 
 @abaqus_class_doc

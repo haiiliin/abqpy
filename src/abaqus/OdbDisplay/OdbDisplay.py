@@ -1,15 +1,9 @@
-from typing import Union, overload, Dict, Optional, Sequence
+from typing import Dict, Optional, Sequence, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .CommonOptions import CommonOptions
-from .ContourOptions import ContourOptions
-from .DisplayBodyOptions import DisplayBodyOptions
-from .OrientationOptions import OrientationOptions
-from .SuperimposeOptions import SuperimposeOptions
-from .SymbolOptions import SymbolOptions
-from .ViewCut import ViewCut
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstanceRepository import DisplayGroupInstanceRepository
 from ..DisplayGroup.Leaf import Leaf
@@ -22,8 +16,22 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
-from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    EMPTY_LEAF,
+    FIRST_FRAME,
+    OFF,
+    ON,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .CommonOptions import CommonOptions
+from .ContourOptions import ContourOptions
+from .DisplayBodyOptions import DisplayBodyOptions
+from .OrientationOptions import OrientationOptions
+from .SuperimposeOptions import SuperimposeOptions
+from .SymbolOptions import SymbolOptions
+from .ViewCut import ViewCut
 
 
 @abaqus_class_doc

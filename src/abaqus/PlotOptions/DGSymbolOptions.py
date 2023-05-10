@@ -1,14 +1,14 @@
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     MODEL_SIZE,
     OFF,
     SCIENTIFIC,
     SPECTRUM,
-    SymbolicConstant,
     VERY_THIN,
     WIRE,
+    Boolean,
+    SymbolicConstant,
 )
 
 

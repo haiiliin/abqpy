@@ -1,9 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from .....UtilityAndView.abaqusConstants import OFF, Boolean
 from .CapCreepCohesion import CapCreepCohesion
 from .CapCreepConsolidation import CapCreepConsolidation
 from .CapHardening import CapHardening
-from .....UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

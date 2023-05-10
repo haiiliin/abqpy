@@ -38,9 +38,9 @@ The following shows the contents of the script skewExample.py. The parametric st
 
   The theoretical results are also plotted.
 """
+import visualization
 from abaqus import *
 from abaqusConstants import *
-import visualization
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,10 @@ def createModel():
     Create the skew example model, including material, step, load, bc, and job.
     """
 
-    import regionToolset, part, step, mesh
+    import mesh
+    import part
+    import regionToolset
+    import step
 
     # Create the Plate
     m = mdb.models["Model-1"]
@@ -244,10 +247,10 @@ def createModel():
     )
 
 
-import part
-import mesh
-from mesh import S4, S8R, STANDARD, STRUCTURED
 import job
+import mesh
+import part
+from mesh import S4, S8R, STANDARD, STRUCTURED
 
 # Create a list of angle parameters and a list of
 # element type parameters.

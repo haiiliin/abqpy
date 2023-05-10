@@ -1,18 +1,19 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Sequence, overload
+from typing import Optional, Sequence, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Region import Region
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
+from ..UtilityAndView.abaqusConstants import UNION, SymbolicConstant
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNION
+from .Region import Region
 
 
 @abaqus_class_doc

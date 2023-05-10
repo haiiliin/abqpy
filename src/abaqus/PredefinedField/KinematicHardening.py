@@ -1,10 +1,15 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .PredefinedField import PredefinedField
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import KINEMATIC_HARDENING, MAGNITUDE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    KINEMATIC_HARDENING,
+    MAGNITUDE,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .PredefinedField import PredefinedField
 
 
 @abaqus_class_doc

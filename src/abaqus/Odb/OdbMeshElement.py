@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .SectionCategory import SectionCategory
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import CLOSEST
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .SectionCategory import SectionCategory
 
 
 @abaqus_class_doc

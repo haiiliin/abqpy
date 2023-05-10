@@ -2,10 +2,10 @@ from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 """The Odb commands do the following: 
 

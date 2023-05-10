@@ -1,8 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, ON
+from ..UtilityAndView.abaqusConstants import ON, Boolean
+from .GeometricRestriction import GeometricRestriction
 
 
 @abaqus_class_doc

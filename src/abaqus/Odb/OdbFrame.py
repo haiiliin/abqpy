@@ -1,10 +1,10 @@
-from typing import overload, Dict, Optional
+from typing import Dict, Optional, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 from .FieldOutput import FieldOutput
 from .OdbLoadCase import OdbLoadCase
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

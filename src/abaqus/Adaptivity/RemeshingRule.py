@@ -1,16 +1,17 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     DEFAULT,
     DEFAULT_LIMIT,
     LAST_INCREMENT,
     MODEL,
     OFF,
     ON,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C

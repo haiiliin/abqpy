@@ -1,6 +1,6 @@
 from typing import Union
 
-from auto_all import start_all, end_all
+from auto_all import end_all, start_all
 from typing_extensions import Literal
 
 start_all()

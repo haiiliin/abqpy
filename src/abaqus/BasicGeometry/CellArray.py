@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, List, Dict, overload, Sequence
+from typing import Dict, List, Sequence, Tuple, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import Boolean
 from .Cell import Cell
 from .FaceArray import FaceArray
-from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc

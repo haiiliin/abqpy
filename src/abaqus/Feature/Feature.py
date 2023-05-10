@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, Sequence, overload
+from typing import Optional, Sequence, Tuple, Union, overload
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing_extensions import Literal
 
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
@@ -18,7 +19,16 @@ from ..Datum.DatumPoint import DatumPoint
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
-from ..UtilityAndView.abaqusConstants import AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON, PROJECT_BY_PROXIMITY, RIGHT, SIDE1
+from ..UtilityAndView.abaqusConstants import (
+    AUTO_FIT_PTS,
+    IMPRINT,
+    OFF,
+    ON,
+    PROJECT_BY_PROXIMITY,
+    RIGHT,
+    SIDE1,
+    Boolean,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
