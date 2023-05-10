@@ -24,8 +24,8 @@ msgstr ""
 #: ../../reference/session/plot_options.md:3
 msgid ""
 "Plot options commands are used to control the appearance of plots in the "
-"Visualization module. Plots can be undeformed, deformed, contour, symbol,"
-" or material orientation."
+"Visualization module. Plots can be undeformed, deformed, contour, symbol, "
+"or material orientation."
 msgstr ""
 
 #: ../../reference/session/plot_options.md:5
@@ -42,22 +42,22 @@ msgstr ""
 msgid ""
 "The BasicOptions object stores values and attributes associated with an "
 "OdbDisplay object. The BasicOptions object has no constructor command. "
-"Abaqus creates the *defaultOdbDisplay.basicOptions* member when you "
-"import the Visualization module. Abaqus creates a **basicOptions** member"
-" when it creates the OdbDisplay object, using the values from "
-"*defaultOdbDisplay.basicOptions*. Abaqus creates the **odbDisplay** "
-"member when a viewport is created, using the attributes from the previous"
-" active viewport. The previous active viewport contains the attributes "
-"from the **defaultOdbDisplay** object for the session. The attributes "
-"from the **defaultOdbDisplay** object are copied from the previous active"
-" viewport to create the new viewport. BasicOptions objects are accessed "
-"in one of two ways:"
+"Abaqus creates the *defaultOdbDisplay.basicOptions* member when you import"
+" the Visualization module. Abaqus creates a **basicOptions** member when "
+"it creates the OdbDisplay object, using the values from "
+"*defaultOdbDisplay.basicOptions*. Abaqus creates the **odbDisplay** member"
+" when a viewport is created, using the attributes from the previous active"
+" viewport. The previous active viewport contains the attributes from the "
+"**defaultOdbDisplay** object for the session. The attributes from the "
+"**defaultOdbDisplay** object are copied from the previous active viewport "
+"to create the new viewport. BasicOptions objects are accessed in one of "
+"two ways:"
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions:13 of
 msgid ""
-"The default basic options: these settings are used as defaults when other"
-" **basicOptions** members are created. These settings can be set to "
+"The default basic options: these settings are used as defaults when other "
+"**basicOptions** members are created. These settings can be set to "
 "customize user preferences."
 msgstr ""
 
@@ -114,8 +114,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions:27 of
 msgid ""
-"Check `BasicOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basicoptionspyc.htm?contextscope=all>`__."
+"Check `BasicOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"basicoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions:1
@@ -176,8 +177,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.automaticExtrudeDepth:1 of
 msgid ""
-"A Float specifying the automatic extrude depth used to extrude analytical"
-" rigid surfaces in the default setting. This value is read-only."
+"A Float specifying the automatic extrude depth used to extrude analytical "
+"rigid surfaces in the default setting. This value is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -193,8 +194,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.computeOutput:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:248 of
 msgid ""
-"A Boolean specifying whether to average only values on displayed "
-"elements. The default value is ON."
+"A Boolean specifying whether to average only values on displayed elements."
+" The default value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -216,8 +217,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.beamScaleFactor:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:39 of
 msgid ""
-"A Float specifying the beam profile scale factor. The beamScaleFactor "
-"must be greater than zero. The default value is 1.0."
+"A Float specifying the beam profile scale factor. The beamScaleFactor must"
+" be greater than zero. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring
@@ -240,16 +241,16 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.cameraMovesWithCsys:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:13 of
 msgid ""
-"A Boolean specifying whether the camera moves with the coordinate system."
-" The default value is OFF."
+"A Boolean specifying whether the camera moves with the coordinate system. "
+"The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.complexAngle:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:117 of
 msgid ""
-"A Float specifying the angle (in degrees) at which to display results "
-"that contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE."
-" The default value is 0.0."
+"A Float specifying the angle (in degrees) at which to display results that"
+" contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The "
+"default value is 0.0."
 msgstr ""
 
 #: ../../docstring
@@ -272,8 +273,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.couplingDisplay:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:216 of
 msgid ""
-"A Boolean specifying whether to display coupling constraints. The default"
-" value is ON."
+"A Boolean specifying whether to display coupling constraints. The default "
+"value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -296,8 +297,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.envelopeCriteria:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:124 of
 msgid ""
-"A SymbolicConstant specifying the envelope criterion. Possible values are"
-" MAX_VALUE, MIN_VALUE, and MAX_ABS_VALUE. The default value is "
+"A SymbolicConstant specifying the envelope criterion. Possible values are "
+"MAX_VALUE, MIN_VALUE, and MAX_ABS_VALUE. The default value is "
 "MAX_ABS_VALUE."
 msgstr ""
 
@@ -313,9 +314,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.extrapAlgorithm:1 of
 msgid ""
-"A SymbolicConstant specifying the extrapolation algorithm. This member is"
-" for internal use only. The only possible value is "
-"EXTRAP_COMPUTE_AVERAGE."
+"A SymbolicConstant specifying the extrapolation algorithm. This member is "
+"for internal use only. The only possible value is EXTRAP_COMPUTE_AVERAGE."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.extrudeArs:1
@@ -330,8 +330,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:165 of
 msgid ""
 "A Float specifying the depth (in model units) by which the analytical "
-"surfaces are to be extruded when **extrudeArs** = ON. The default value "
-"is 1.0."
+"surfaces are to be extruded when **extrudeArs** = ON. The default value is"
+" 1.0."
 msgstr ""
 
 #: ../../docstring
@@ -339,8 +339,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:159 of
 msgid ""
 "A Boolean specifying whether to use automatic depth determination when "
-"extruding analytical surfaces. The default value is ON. The default value"
-" is ON."
+"extruding analytical surfaces. The default value is ON. The default value "
+"is ON."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.extrudeElem:1
@@ -386,8 +386,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:67 of
 msgid ""
 "A Boolean specifying whether to display mass, heat capacity and inertia "
-"elements. **massElements** is valid only when **pointElements** = ON. The"
-" default value is OFF."
+"elements. **massElements** is valid only when **pointElements** = ON. The "
+"default value is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -434,8 +434,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.mirrorPatternOrder:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:171 of
 msgid ""
-"A SymbolicConstant specifying the order of operations to create the "
-"mirror pattern. Possible values are MIRROR_RECT_CIRC, RECT_MIRROR_CIRC, "
+"A SymbolicConstant specifying the order of operations to create the mirror"
+" pattern. Possible values are MIRROR_RECT_CIRC, RECT_MIRROR_CIRC, "
 "MIRROR_CIRC_RECT, RECT_CIRC_MIRROR, CIRC_MIRROR_RECT, and "
 "CIRC_RECT_MIRROR. The default value is MIRROR_RECT_CIRC."
 msgstr ""
@@ -483,11 +483,11 @@ msgstr ""
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:109 of
 msgid ""
-"A SymbolicConstant specifying the numeric form in which to display "
-"results that contain complex numbers. Possible values are "
-"COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_MAG_AT_ANGLE, "
-"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN."
-" The default value is REAL."
+"A SymbolicConstant specifying the numeric form in which to display results"
+" that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, "
+"COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_MAG_AT_ANGLE, "
+"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN. "
+"The default value is REAL."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm:6
@@ -501,8 +501,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.otherSymbolSize:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:34 of
 msgid ""
-"An Int specifying the size of various glyph symbols (boundary conditions,"
-" coupling constraints, etc.). The default value is 6."
+"An Int specifying the size of various glyph symbols (boundary conditions, "
+"coupling constraints, etc.). The default value is 6."
 msgstr ""
 
 #: ../../docstring
@@ -517,29 +517,29 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.patternNumCircular:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:213 of
 msgid ""
-"An Int specifying the number of patterns to create in a circular pattern."
-" The default value is 1."
+"An Int specifying the number of patterns to create in a circular pattern. "
+"The default value is 1."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.patternNumX:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:190 of
 msgid ""
-"An Int specifying the number of patterns to create in the X-direction for"
-" a rectangular pattern. The default value is 1."
+"An Int specifying the number of patterns to create in the X-direction for "
+"a rectangular pattern. The default value is 1."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.patternNumY:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:193 of
 msgid ""
-"An Int specifying the number of patterns to create in the Y-direction for"
-" a rectangular pattern. The default value is 1."
+"An Int specifying the number of patterns to create in the Y-direction for "
+"a rectangular pattern. The default value is 1."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.patternNumZ:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:196 of
 msgid ""
-"An Int specifying the number of patterns to create in the Z-direction for"
-" a rectangular pattern. The default value is 1."
+"An Int specifying the number of patterns to create in the Z-direction for "
+"a rectangular pattern. The default value is 1."
 msgstr ""
 
 #: ../../docstring
@@ -585,23 +585,23 @@ msgstr ""
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.pc3dElements:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:79 of
 msgid ""
-"A Boolean specifying whether to display PC3D elements. **pc3dElements** "
-"is valid only when **pointElements** = ON. The default value is ON."
+"A Boolean specifying whether to display PC3D elements. **pc3dElements** is"
+" valid only when **pointElements** = ON. The default value is ON."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.pd3dElements:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:82 of
 msgid ""
-"A Boolean specifying whether to display PD3D elements. **pd3dElements** "
-"is valid only when **pointElements** = ON. The default value is ON."
+"A Boolean specifying whether to display PD3D elements. **pd3dElements** is"
+" valid only when **pointElements** = ON. The default value is ON."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.plyResultLocation:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:131 of
 msgid ""
-"A SymbolicConstant specifying the ply result location. Possible values "
-"are BOTTOM, MIDDLE, TOP, and TOP_AND_BOTTOM. The default value is MIDDLE."
+"A SymbolicConstant specifying the ply result location. Possible values are"
+" BOTTOM, MIDDLE, TOP, and TOP_AND_BOTTOM. The default value is MIDDLE."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.pointElements:1
@@ -624,8 +624,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:64 of
 msgid ""
 "A Boolean specifying whether to display reference points. "
-"**referencePoints** is valid only when **pointElements** = ON. The "
-"default value is ON."
+"**referencePoints** is valid only when **pointElements** = ON. The default"
+" value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -664,8 +664,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.rigidTransformDeformed:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:240 of
 msgid ""
-"A Boolean specifying whether to perform a rigid transformation of current"
-" deformedVariable based on the active user specific system The default "
+"A Boolean specifying whether to perform a rigid transformation of current "
+"deformedVariable based on the active user specific system The default "
 "value is OFF."
 msgstr ""
 
@@ -674,16 +674,16 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:237 of
 msgid ""
 "A Boolean specifying whether to perform a rigid transformation of nodal "
-"vector datasets based on the active user specific system The default "
-"value is OFF."
+"vector datasets based on the active user specific system The default value"
+" is OFF."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.scratchCoordSystemDisplay:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:220 of
 msgid ""
-"A Boolean specifying whether to display coordinate systems that represent"
-" user-defined orientations. The default value is OFF."
+"A Boolean specifying whether to display coordinate systems that represent "
+"user-defined orientations. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -698,17 +698,17 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sectionResults:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:120 of
 msgid ""
-"A SymbolicConstant specifying which of the section points to use. "
-"Possible values are USE_BOTTOM, USE_TOP, USE_BOTTOM_AND_TOP, and "
-"USE_ENVELOPE. The default value is USE_BOTTOM."
+"A SymbolicConstant specifying which of the section points to use. Possible"
+" values are USE_BOTTOM, USE_TOP, USE_BOTTOM_AND_TOP, and USE_ENVELOPE. The"
+" default value is USE_BOTTOM."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.sectorAngle:1
 #: of
 msgid ""
-"A Float specifying the sector angle of a cyclic symmetric model. The "
-"value is automatically computed from the cyclic symmetric model. This "
-"value is read-only."
+"A Float specifying the sector angle of a cyclic symmetric model. The value"
+" is automatically computed from the cyclic symmetric model. This value is "
+"read-only."
 msgstr ""
 
 #: ../../docstring
@@ -716,8 +716,8 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:140 of
 msgid ""
 "A SymbolicConstant specifying how sectors will be selected for sweeping. "
-"Possible values are SELECT_BY_NUMBER, SELECT_BY_ANGLE, and SELECT_ALL. "
-"The default value is SELECT_BY_NUMBER."
+"Possible values are SELECT_BY_NUMBER, SELECT_BY_ANGLE, and SELECT_ALL. The"
+" default value is SELECT_BY_NUMBER."
 msgstr ""
 
 #: ../../docstring
@@ -735,9 +735,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:4 of
 msgid ""
-"Check `BasicOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-basicoptionspyc.htm?contextscope=all"
-"#simaker-basicoptionssetvaluespyc>`__."
+"Check `BasicOptions.setValues on help.3ds.com/2021 <https://help.3ds.com/2"
+"021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"basicoptionspyc.htm?contextscope=all#simaker-basicoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues
@@ -757,15 +757,15 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:7 of
 msgid ""
 "A BasicOptions object from which values are to be copied. If other "
-"arguments are also supplied to setValues, they will override the values "
-"in **options**. The default value is None."
+"arguments are also supplied to setValues, they will override the values in"
+" **options**. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:44
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.shellScaleFactor:1 of
 msgid ""
-"A Float specifying the shell thickness scale factor. The shellScaleFactor"
-" must be greater than zero. The default value is 1.0."
+"A Float specifying the shell thickness scale factor. The shellScaleFactor "
+"must be greater than zero. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:56
@@ -786,54 +786,52 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.springElements:1 of
 msgid ""
 "A Boolean specifying whether to display spring and dashpot elements. "
-"**springElements** is valid only when **pointElements** = ON. The default"
-" value is OFF."
+"**springElements** is valid only when **pointElements** = ON. The default "
+"value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:73
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.spotWelds:1 of
 msgid ""
-"A Boolean specifying whether to display spot weld and distributed "
-"coupling elements. **spotWelds** is valid only when **pointElements** = "
-"ON. The default value is OFF."
+"A Boolean specifying whether to display spot weld and distributed coupling"
+" elements. **spotWelds** is valid only when **pointElements** = ON. The "
+"default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:76
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.tracerParticles:1 of
 msgid ""
 "A Boolean specifying whether to display tracer particles. "
-"**tracerParticles** is valid only when **pointElements** = ON. The "
-"default value is OFF."
+"**tracerParticles** is valid only when **pointElements** = ON. The default"
+" value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:85
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepArs:1 of
 msgid ""
-"A Boolean specifying whether to sweep the analytical surfaces. The "
-"default value is ON or OFF, depending on the characteristics of your "
-"model."
+"A Boolean specifying whether to sweep the analytical surfaces. The default"
+" value is ON or OFF, depending on the characteristics of your model."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:88
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepElem:1 of
 msgid ""
-"A Boolean specifying whether to sweep the deformable elements. The "
-"default value is ON or OFF, depending on the characteristics of your "
-"model."
+"A Boolean specifying whether to sweep the deformable elements. The default"
+" value is ON or OFF, depending on the characteristics of your model."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:91
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepStartAngleArs:1 of
 msgid ""
-"A Float specifying the starting angle (in degrees) from which to sweep "
-"the analytical surfaces when **sweepArs** = ON. The default value is 0.0."
+"A Float specifying the starting angle (in degrees) from which to sweep the"
+" analytical surfaces when **sweepArs** = ON. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:94
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepStartAngleElem:1 of
 msgid ""
-"A Float specifying the starting angle (in degrees) from which to sweep "
-"the model when **sweepElem** = ON. The default value is 0.0."
+"A Float specifying the starting angle (in degrees) from which to sweep the"
+" model when **sweepElem** = ON. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:97
@@ -846,17 +844,17 @@ msgstr ""
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:100
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepEndAngleElem:1 of
 msgid ""
-"A Float specifying the angle (in degrees) through which to sweep the "
-"model when **sweepElem** = ON. The default value is 180.0."
+"A Float specifying the angle (in degrees) through which to sweep the model"
+" when **sweepElem** = ON. The default value is 180.0."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:109 of
 msgid ""
-"A SymbolicConstant specifying the numeric form in which to display "
-"results that contain complex numbers. Possible values are "
-"COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_MAG_AT_ANGLE, "
-"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN."
-" The default value is REAL.  .. versionchanged:: 2019     Add possible "
+"A SymbolicConstant specifying the numeric form in which to display results"
+" that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, "
+"COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_MAG_AT_ANGLE, "
+"COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN. "
+"The default value is REAL.  .. versionchanged:: 2019     Add possible "
 "values: COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and "
 "COMPLEX_ENVELOPE_MIN."
 msgstr ""
@@ -880,18 +878,18 @@ msgstr ""
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepSectorStartAngle:1 of
 msgid ""
 "A Float specifying the angle (in degrees) from which to sweep cyclic "
-"symmetry sectors when **sweepSectors** = ON. Possible values are "
-"multiples of the sector angle such that 0 ≤ **sweepSectorStartAngle** ≤ "
-"360. The default value is 0.0."
+"symmetry sectors when **sweepSectors** = ON. Possible values are multiples"
+" of the sector angle such that 0 ≤ **sweepSectorStartAngle** ≤ 360. The "
+"default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:152
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.sweepSectorEndAngle:1 of
 msgid ""
 "A Float specifying the angle (in degrees) through which to sweep cyclic "
-"symmetry sectors when **sweepSectors** = ON. Possible values are "
-"multiples of the sector angle such that 0 < **sweepSectorEndAngle** ≤ "
-"360. The default value is 360.0."
+"symmetry sectors when **sweepSectors** = ON. Possible values are multiples"
+" of the sector angle such that 0 < **sweepSectorEndAngle** ≤ 360. The "
+"default value is 360.0."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:223
@@ -900,11 +898,11 @@ msgid ""
 "A SymbolicConstant specifying the transformation to apply to the "
 "PrimaryVariable. Possible values are DEFAULT, NODAL, USER_SPECIFIED, "
 "ANGULAR, and LAYUP_ORIENTATION. The default value is DEFAULT.If "
-"**transformationType** = NODAL, Abaqus will transform nodal vector fields"
-" into any orientation defined in the analysis with the TRANSFORM option. "
+"**transformationType** = NODAL, Abaqus will transform nodal vector fields "
+"into any orientation defined in the analysis with the TRANSFORM option. "
 "Setting **transformationType** = NODAL has no effect on element-based "
-"results.If **transformationType** = USER_SPECIFIED, Abaqus will transform"
-" tensor and vector fields into the coordinate system specified by "
+"results.If **transformationType** = USER_SPECIFIED, Abaqus will transform "
+"tensor and vector fields into the coordinate system specified by "
 "**datumCsys**.If **transformationType** = LAYUP_ORIENTATION, Abaqus will "
 "transform tensor and vector fields into the layup orientation defined in "
 "the composite section. The odb should contain the field SORIENT in order "
@@ -914,8 +912,8 @@ msgstr ""
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:243
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.transformOnDeformed:1 of
 msgid ""
-"A Boolean specifying whether to include the effects of deformation on the"
-" transformation calculations The default value is ON."
+"A Boolean specifying whether to include the effects of deformation on the "
+"transformation calculations The default value is ON."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:251 of
@@ -930,15 +928,15 @@ msgstr ""
 #: ../../docstring abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:260
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.useRegionBoundaries:1 of
 msgid ""
-"A Boolean specifying whether to use region boundaries when averaging. The"
-" default value is ON."
+"A Boolean specifying whether to use region boundaries when averaging. The "
+"default value is ON."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:263 of
 msgid ""
-"A sequence of Strings specifying either element set or display group "
-"names (depending on the value of regionBoundaries) defining the averaging"
-" region boundaries. The default value is an empty sequence."
+"A sequence of Strings specifying either element set or display group names"
+" (depending on the value of regionBoundaries) defining the averaging "
+"region boundaries. The default value is an empty sequence."
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues
@@ -962,8 +960,8 @@ msgstr ""
 #: of
 msgid ""
 "A tuple of Strings specifying either element set or display group names "
-"(depending on the value of regionBoundaries) defining the averaging "
-"region boundaries. The default value is an empty sequence."
+"(depending on the value of regionBoundaries) defining the averaging region"
+" boundaries. The default value is an empty sequence."
 msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:1
@@ -1012,8 +1010,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:12 of
 msgid ""
-"Check `CouplingConstraint on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-couplingconstraintpyc.htm?contextscope=all>`__."
+"Check `CouplingConstraint on help.3ds.com/2021 <https://help.3ds.com/2021/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"couplingconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint.constraintData:1 of
@@ -1041,22 +1040,23 @@ msgid "A String specifying the coupling name. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.CouplingConstraint.type:1 of
-msgid "A String specifying the type of coupling. This attribute is read-only."
+msgid ""
+"A String specifying the type of coupling. This attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1 of
 msgid ""
-"The DGCommonOptions object stores values and attributes that are common "
-"to all plot states. The DGCommonOptions object has no constructor "
-"command. Abaqus creates an *odbDisplayOptions.commonOptions* member when "
-"a display group instance is created, using values from "
-"*odbDisplay.commonOptions*."
+"The DGCommonOptions object stores values and attributes that are common to"
+" all plot states. The DGCommonOptions object has no constructor command. "
+"Abaqus creates an *odbDisplayOptions.commonOptions* member when a display "
+"group instance is created, using values from *odbDisplay.commonOptions*."
 msgstr ""
 
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:17 of
 msgid ""
-"Check `DGCommonOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgcommonoptionspyc.htm?contextscope=all>`__."
+"Check `DGCommonOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgcommonoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1159,8 +1159,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.edgeThickness:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:15 of
 msgid ""
-"A SymbolicConstant specifying the edge line thickness. Possible values "
-"are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
+"A SymbolicConstant specifying the edge line thickness. Possible values are"
+" VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
 msgstr ""
 
 #: ../../docstring
@@ -1176,8 +1176,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.elemLabels:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.elemLabels:1 of
 msgid ""
-"A Boolean specifying whether to plot the element labels. The default "
-"value is OFF."
+"A Boolean specifying whether to plot the element labels. The default value"
+" is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -1196,8 +1196,8 @@ msgstr ""
 #: of
 msgid ""
 "An Int specifying the percentage to shrink the elements when "
-"**elementShrink** = ON. Possible values are 0≤ "
-"**elementShrinkPercentage** ≤ 90. The default value is 5."
+"**elementShrink** = ON. Possible values are 0≤ **elementShrinkPercentage**"
+" ≤ 90. The default value is 5."
 msgstr ""
 
 #: ../../docstring
@@ -1213,8 +1213,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.faceLabels:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.faceLabels:1 of
 msgid ""
-"A Boolean specifying whether to plot the face labels. The default value "
-"is OFF."
+"A Boolean specifying whether to plot the face labels. The default value is"
+" OFF."
 msgstr ""
 
 #: ../../docstring
@@ -1255,8 +1255,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.nodeLabels:1
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.nodeLabels:1 of
 msgid ""
-"A Boolean specifying whether to plot the node labels. The default value "
-"is OFF."
+"A Boolean specifying whether to plot the node labels. The default value is"
+" OFF."
 msgstr ""
 
 #: ../../docstring
@@ -1280,9 +1280,9 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGCommonOptions.nodeSymbolType:1 of
 msgid ""
-"A SymbolicConstant specifying the node symbol types. Possible values "
-"are:FILLED_CIRCLEFILLED_SQUAREFILLED_DIAMONDFILLED_TRIHOLLOW_CIRCLEHOLLOW_SQUAREHOLLOW_DIAMONDHOLLOW_TRICROSSXMARKERThe"
-" default value is HOLLOW_CIRCLE."
+"A SymbolicConstant specifying the node symbol types. Possible values are:F"
+"ILLED_CIRCLEFILLED_SQUAREFILLED_DIAMONDFILLED_TRIHOLLOW_CIRCLEHOLLOW_SQUAR"
+"EHOLLOW_DIAMONDHOLLOW_TRICROSSXMARKERThe default value is HOLLOW_CIRCLE."
 msgstr ""
 
 #: ../../docstring
@@ -1324,9 +1324,9 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.normalLineThickness:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the thickness of the normal arrows. "
-"Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value"
-" is VERY_THIN."
+"A SymbolicConstant specifying the thickness of the normal arrows. Possible"
+" values are VERY_THIN, THIN, MEDIUM, and THICK. The default value is "
+"VERY_THIN."
 msgstr ""
 
 #: ../../docstring
@@ -1376,31 +1376,31 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGDisplayBodyOptions.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
-"ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is "
-"EXTERIOR.NONE can be used only when **renderStyle** = SHADED."
+"ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE"
+" can be used only when **renderStyle** = SHADED."
 msgstr ""
 
 #: abaqus.PlotOptions.DGContourOptions.DGContourOptions:1 of
 msgid ""
-"The DGContourOptions object stores values and attributes associated with "
-"a contour plot. The DGContourOptions object has no constructor command. "
-"Abaqus creates an *odbDisplayOptions.contourOptions* member when a "
-"display group instance is created, using values from "
-"*odbDisplay.contourOptions*."
+"The DGContourOptions object stores values and attributes associated with a"
+" contour plot. The DGContourOptions object has no constructor command. "
+"Abaqus creates an *odbDisplayOptions.contourOptions* member when a display"
+" group instance is created, using values from *odbDisplay.contourOptions*."
 msgstr ""
 
 #: abaqus.PlotOptions.DGContourOptions.DGContourOptions:17 of
 msgid ""
-"Check `DGContourOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgcontouroptionspyc.htm?contextscope=all>`__."
+"Check `DGContourOptions on help.3ds.com/2021 <https://help.3ds.com/2021/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgcontouroptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGContourOptions.averagedOrientationDisplay:1
 #: of
 msgid ""
-"A Boolean specifying the display of the nodal averaged coordinate systems"
-" used when averaging element vector or tensor data. The default value is "
+"A Boolean specifying the display of the nodal averaged coordinate systems "
+"used when averaging element vector or tensor data. The default value is "
 "OFF."
 msgstr ""
 
@@ -1423,9 +1423,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGContourOptions.contourEdgeStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the edge line style to be used to plot the "
-"contour edges when **contourType** = BANDED or ISOSURFACE. Possible "
-"values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is "
-"SOLID."
+"contour edges when **contourType** = BANDED or ISOSURFACE. Possible values"
+" are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
 msgstr ""
 
 #: ../../docstring
@@ -1471,21 +1470,21 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGContourOptions.edgeColorLine:1 of
 msgid ""
-"A String specifying the edge color to be used when **contourType** = "
-"LINE. The default value is \"White\"."
+"A String specifying the edge color to be used when **contourType** = LINE."
+" The default value is \"White\"."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGContourOptions.intervalLineAttributes:1
 #: of
 msgid ""
-"A tuple of tuples of SymbolicConstants specifying the line style and line"
-" thickness for each interval in the plot when **contourType** = LINE. The"
-" size of the outer sequence must be equal to **numIntervals**-1. The "
-"inner sequence consists of two SymbolicConstants specifying the line "
-"style and line thickness. For possible values, refer to the "
-"**edgeLineStyle** and **edgeLineThickness** members of the "
-"DGCommonOptions object. The default is ((SOLID, VERY_THIN), )."
+"A tuple of tuples of SymbolicConstants specifying the line style and line "
+"thickness for each interval in the plot when **contourType** = LINE. The "
+"size of the outer sequence must be equal to **numIntervals**-1. The inner "
+"sequence consists of two SymbolicConstants specifying the line style and "
+"line thickness. For possible values, refer to the **edgeLineStyle** and "
+"**edgeLineThickness** members of the DGCommonOptions object. The default "
+"is ((SOLID, VERY_THIN), )."
 msgstr ""
 
 #: ../../docstring
@@ -1516,8 +1515,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGContourOptions.tickmarkCurveColor:1
 #: of
 msgid ""
-"A String specifying the color to be used to plot the tick mark curve. The"
-" default value is \"Cyan\"."
+"A String specifying the color to be used to plot the tick mark curve. The "
+"default value is \"Cyan\"."
 msgstr ""
 
 #: ../../docstring
@@ -1533,8 +1532,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether tick mark plots should be displayed on line-"
 "type elements. If **tickmarkPlots** = ON, Abaqus displays a tick mark "
-"plot. If **tickmarkPlots** = OFF, Abaqus displays contours on the element"
-" faces. The default value is OFF."
+"plot. If **tickmarkPlots** = OFF, Abaqus displays contours on the element "
+"faces. The default value is OFF."
 msgstr ""
 
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions:1 of
@@ -1548,8 +1547,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions:17 of
 msgid ""
-"Check `DGDisplayBodyOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgdisplaybodyoptionspyc.htm?contextscope=all>`__."
+"Check `DGDisplayBodyOptions on help.3ds.com/2021 <https://help.3ds.com/202"
+"1/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgdisplaybodyoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions:1 of
@@ -1557,15 +1557,16 @@ msgid ""
 "The DGOrientationOptions object stores values and attributes associated "
 "with a material orientation plot. The DGOrientationOptions object has no "
 "constructor command. Abaqus creates an "
-"*odbDisplayOptions.materialOrientationOptions* member when a display "
-"group instance is created, using values from "
+"*odbDisplayOptions.materialOrientationOptions* member when a display group"
+" instance is created, using values from "
 "*odbDisplay.materialOrientationOptions*."
 msgstr ""
 
 #: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions:17 of
 msgid ""
-"Check `DGOrientationOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgorientationoptionspyc.htm?contextscope=all>`__."
+"Check `DGOrientationOptions on help.3ds.com/2021 <https://help.3ds.com/202"
+"1/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgorientationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1573,37 +1574,37 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the arrowhead style for the material "
-"orientation triad. Possible values are NONE, FILLED, and WIRE. The "
-"default value is NONE."
+"orientation triad. Possible values are NONE, FILLED, and WIRE. The default"
+" value is NONE."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGOrientationOptions.axis1Color:1 of
 msgid ""
-"A String specifying the color of axis 1 of the material orientation "
-"triad. The default value is \"Cyan\"."
+"A String specifying the color of axis 1 of the material orientation triad."
+" The default value is \"Cyan\"."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGOrientationOptions.axis2Color:1 of
 msgid ""
-"A String specifying the color of axis 2 of the material orientation "
-"triad. The default value is \"Yellow\"."
+"A String specifying the color of axis 2 of the material orientation triad."
+" The default value is \"Yellow\"."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGOrientationOptions.axis3Color:1 of
 msgid ""
-"A String specifying the color of axis 3 of the material orientation "
-"triad. The default value is \"Red\"."
+"A String specifying the color of axis 3 of the material orientation triad."
+" The default value is \"Red\"."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGOrientationOptions.lineThickness:1 of
 msgid ""
 "A SymbolicConstant specifying the thickness of the material orientation "
-"triad. Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The "
-"default value is VERY_THIN."
+"triad. Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default"
+" value is VERY_THIN."
 msgstr ""
 
 #: ../../docstring
@@ -1645,8 +1646,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGOrientationOptions.symbolSize:1 of
 msgid ""
-"A Float specifying the size of the material orientation triad. The "
-"default value is 6.0."
+"A Float specifying the size of the material orientation triad. The default"
+" value is 6.0."
 msgstr ""
 
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions:1 of
@@ -1661,8 +1662,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions:18 of
 msgid ""
-"Check `DGSuperimposeOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgsuperimposeoptionspyc.htm?contextscope=all>`__."
+"Check `DGSuperimposeOptions on help.3ds.com/2021 <https://help.3ds.com/202"
+"1/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgsuperimposeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1686,7 +1688,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.nodeSymbolType:1
 #: of
-msgid "A SymbolicConstant specifying the node symbol types. Possible values are:"
+msgid ""
+"A SymbolicConstant specifying the node symbol types. Possible values are:"
 msgstr ""
 
 #: ../../docstring
@@ -1758,8 +1761,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSuperimposeOptions.normalDisplay:1 of
 msgid ""
-"A SymbolicConstant specifying whether to draw element normals and surface"
-" normals. Possible values are ELEMENT and SURFACE. The default value is "
+"A SymbolicConstant specifying whether to draw element normals and surface "
+"normals. Possible values are ELEMENT and SURFACE. The default value is "
 "ELEMENT."
 msgstr ""
 
@@ -1779,29 +1782,30 @@ msgstr ""
 #: abaqus.PlotOptions.OptionArg.OptionArg.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
-"ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is FEATURE.NONE"
-" can be used only when **renderStyle** = SHADED."
+"ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is FEATURE.NONE "
+"can be used only when **renderStyle** = SHADED."
 msgstr ""
 
 #: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions:1 of
 msgid ""
-"The DGSymbolOptions object stores values and attributes associated with a"
-" symbol plot. The DGSymbolOptions object has no constructor command. "
-"Abaqus creates an *odbDisplayOptions.symbolOptions* member when a display"
-" group instance is created, using values from *odbDisplay.symbolOptions*."
+"The DGSymbolOptions object stores values and attributes associated with a "
+"symbol plot. The DGSymbolOptions object has no constructor command. Abaqus"
+" creates an *odbDisplayOptions.symbolOptions* member when a display group "
+"instance is created, using values from *odbDisplay.symbolOptions*."
 msgstr ""
 
 #: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions:17 of
 msgid ""
-"Check `DGSymbolOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dgsymboloptionspyc.htm?contextscope=all>`__."
+"Check `DGSymbolOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dgsymboloptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.arrowScaleMode:1 of
 msgid ""
-"A SymbolicConstant specifying the arrow scaling mode. Possible values are"
-" MODEL_SIZE and SCREEN_SIZE. The default value is MODEL_SIZE."
+"A SymbolicConstant specifying the arrow scaling mode. Possible values are "
+"MODEL_SIZE and SCREEN_SIZE. The default value is MODEL_SIZE."
 msgstr ""
 
 #: ../../docstring
@@ -1881,8 +1885,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.tensorColorMethod:1 of
 msgid ""
-"A SymbolicConstant specifying the tensor color method. Possible values "
-"are UNIFORM and SPECTRUM. The default value is SPECTRUM."
+"A SymbolicConstant specifying the tensor color method. Possible values are"
+" UNIFORM and SPECTRUM. The default value is SPECTRUM."
 msgstr ""
 
 #: ../../docstring
@@ -1906,15 +1910,15 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the line thickness of the tensor symbols. "
-"Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value"
-" is VERY_THIN."
+"Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value "
+"is VERY_THIN."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.tensorMaxPrinColor:1 of
 msgid ""
-"A String specifying the color of the maximum principal tensor symbols. "
-"The default value is \"Red\"."
+"A String specifying the color of the maximum principal tensor symbols. The"
+" default value is \"Red\"."
 msgstr ""
 
 #: ../../docstring
@@ -1927,8 +1931,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.tensorMinPrinColor:1 of
 msgid ""
-"A String specifying the color of the minimum principal tensor symbols. "
-"The default value is \"Cyan\"."
+"A String specifying the color of the minimum principal tensor symbols. The"
+" default value is \"Cyan\"."
 msgstr ""
 
 #: ../../docstring
@@ -1971,8 +1975,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.vectorArrowheadStyle:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the vector arrowhead style. Possible values"
-" are NONE, FILLED, and WIRE. The default value is WIRE."
+"A SymbolicConstant specifying the vector arrowhead style. Possible values "
+"are NONE, FILLED, and WIRE. The default value is WIRE."
 msgstr ""
 
 #: ../../docstring
@@ -1983,8 +1987,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDisplayOptions.DGSymbolOptions.vectorColorMethod:1 of
 msgid ""
-"A SymbolicConstant specifying the vector color method. Possible values "
-"are UNIFORM and SPECTRUM. The default value is SPECTRUM."
+"A SymbolicConstant specifying the vector color method. Possible values are"
+" UNIFORM and SPECTRUM. The default value is SPECTRUM."
 msgstr ""
 
 #: ../../docstring
@@ -2013,16 +2017,17 @@ msgstr ""
 
 #: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions:1 of
 msgid ""
-"The DetailPlotOptions object stores values and attributes associated with"
-" a Viewport object. The DetailPlotOptions object has no constructor "
+"The DetailPlotOptions object stores values and attributes associated with "
+"a Viewport object. The DetailPlotOptions object has no constructor "
 "command. Abaqus creates the **detailPlotOptions** member whenever a "
 "Viewport is created."
 msgstr ""
 
 #: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions:11 of
 msgid ""
-"Check `DetailPlotOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-detailplotoptionspyc.htm?contextscope=all>`__."
+"Check `DetailPlotOptions on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"detailplotoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2048,8 +2053,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions:11 of
 msgid ""
-"Check `PlyStackPlotOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-plystackplotoptionspyc.htm?contextscope=all>`__."
+"Check `PlyStackPlotOptions on help.3ds.com/2021 <https://help.3ds.com/2021"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"plystackplotoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2067,8 +2073,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:26 of
 msgid ""
 "A String specifying the ply color for the even numbered plies. The "
-"numbering is based on the displayed plies and not on the actual ply "
-"number in the layup. The default value is \"#A2B3FF\"."
+"numbering is based on the displayed plies and not on the actual ply number"
+" in the layup. The default value is \"#A2B3FF\"."
 msgstr ""
 
 #: ../../docstring
@@ -2089,8 +2095,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.fiberStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:38 of
 msgid ""
-"A SymbolicConstant specifying the fiber style. Possible values are SOLID,"
-" DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
+"A SymbolicConstant specifying the fiber style. Possible values are SOLID, "
+"DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
 msgstr ""
 
 #: ../../docstring
@@ -2120,7 +2126,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.numLayers:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:24 of
-msgid "An Int specifying the number of plies to show. The default value is 30."
+msgid ""
+"An Int specifying the number of plies to show. The default value is 30."
 msgstr ""
 
 #: ../../docstring
@@ -2128,8 +2135,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:30 of
 msgid ""
 "A String specifying the ply color for the odd numbered plies. The "
-"numbering is based on the displayed plies and not on the actual ply "
-"number in the layup. The default value is \"#ECC9AD\"."
+"numbering is based on the displayed plies and not on the actual ply number"
+" in the layup. The default value is \"#ECC9AD\"."
 msgstr ""
 
 #: ../../docstring
@@ -2169,9 +2176,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.referenceOutlineStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:61 of
 msgid ""
-"A SymbolicConstant specifying the reference outline style. Possible "
-"values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is "
-"SOLID."
+"A SymbolicConstant specifying the reference outline style. Possible values"
+" are SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
 msgstr ""
 
 #: ../../docstring
@@ -2195,9 +2201,9 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.renderStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:7 of
 msgid ""
-"A SymbolicConstant specifying how the plies in the viewport are rendered."
-" Possible values are WIRE_FRAME, FILLED, and SHADED. The default value is"
-" SHADED."
+"A SymbolicConstant specifying how the plies in the viewport are rendered. "
+"Possible values are WIRE_FRAME, FILLED, and SHADED. The default value is "
+"SHADED."
 msgstr ""
 
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:1 of
@@ -2206,17 +2212,18 @@ msgstr ""
 
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:4 of
 msgid ""
-"Check `PlyStackPlotOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-plystackplotoptionspyc.htm?contextscope=all"
-"#simaker-plystackplotoptionssetvaluespyc>`__."
+"Check `PlyStackPlotOptions.setValues on help.3ds.com/2021 <https://help.3d"
+"s.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"plystackplotoptionspyc.htm?contextscope=all#simaker-"
+"plystackplotoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:10
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.showEdges:1 of
 msgid ""
-"A Boolean specifying whether to draw the edges for the plies. The default"
-" value is OFF."
+"A Boolean specifying whether to draw the edges for the plies. The default "
+"value is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -2228,7 +2235,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:34
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.showFibers:1 of
-msgid "A Boolean specifying whether to show the fibers. The default value is ON."
+msgid ""
+"A Boolean specifying whether to show the fibers. The default value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -2263,8 +2271,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.showMaterialNames:1
 #: of
 msgid ""
-"A Boolean specifying whether to show the material names. The default "
-"value is OFF."
+"A Boolean specifying whether to show the material names. The default value"
+" is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -2281,8 +2289,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.showStateBlock:1
 #: of
 msgid ""
-"A Boolean specifying whether to show the state block. The default value "
-"is ON."
+"A Boolean specifying whether to show the state block. The default value is"
+" ON."
 msgstr ""
 
 #: ../../docstring
@@ -2316,8 +2324,8 @@ msgstr ""
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.thicknessLabelsColor:1
 #: of
 msgid ""
-"A String specifying the thickness labels text color. The default value is"
-" \"Red\"."
+"A String specifying the thickness labels text color. The default value is "
+"\"Red\"."
 msgstr ""
 
 #: ../../docstring
@@ -2359,8 +2367,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions:11 of
 msgid ""
-"Check `DisplayOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displayoptionspyc.htm?contextscope=all>`__."
+"Check `DisplayOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.DisplayOptions.DisplayOptions.plotState:1
@@ -2378,46 +2387,48 @@ msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:4 of
 msgid ""
-"Check `DisplayOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displayoptionspyc.htm?contextscope=all"
-"#simaker-displayoptionssetvaluespyc>`__."
+"Check `DisplayOptions.setValues on help.3ds.com/2021 <https://help.3ds.com"
+"/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displayoptionspyc.htm?contextscope=all#simaker-"
+"displayoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:7 of
 msgid ""
 "A DisplayOptions object from which values are to be copied. If other "
-"arguments are also supplied to setValues, they will override the values "
-"in **options**. The default value is None."
+"arguments are also supplied to setValues, they will override the values in"
+" **options**. The default value is None."
 msgstr ""
 
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:11 of
 msgid ""
-"A sequence of SymbolicConstants specifying the plot state of the display."
-" Possible values are UNDEFORMED, DEFORMED, CONTOURS_ON_UNDEF, "
+"A sequence of SymbolicConstants specifying the plot state of the display. "
+"Possible values are UNDEFORMED, DEFORMED, CONTOURS_ON_UNDEF, "
 "CONTOURS_ON_DEF, SYMBOLS_ON_UNDEF, SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and "
 "ORIENT_ON_DEF. The default value is (UNDEFORMED)."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:1 of
 msgid ""
-"The FreeBodyOptions object stores values and attributes associated with a"
-" free body plot. The FreeBodyOptions object has no constructor command. "
+"The FreeBodyOptions object stores values and attributes associated with a "
+"free body plot. The FreeBodyOptions object has no constructor command. "
 "Abaqus creates a *defaultOdbDisplay.freeBodyOptions* member when you "
 "import the Visualization module. Abaqus creates a **FreeBodyOptions** "
 "member when it creates the OdbDisplay object, using the values from "
 "*defaultOdbDisplay.freeBodyOptions*. Abaqus creates the **odbDisplay** "
 "member when a viewport is created, using the values from "
-"**defaultOdbDisplay**. FreeBodyOptions objects are accessed in one of two"
-" ways: - The default free body options. These settings are used as "
-"defaults when other **freeBodyOptions** members are created. These "
-"settings can be set to customize user preferences. - The free body "
-"options associated with a particular viewport."
+"**defaultOdbDisplay**. FreeBodyOptions objects are accessed in one of two "
+"ways: - The default free body options. These settings are used as defaults"
+" when other **freeBodyOptions** members are created. These settings can be"
+" set to customize user preferences. - The free body options associated "
+"with a particular viewport."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:22 of
 msgid ""
-"Check `FreeBodyOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyoptionspyc.htm?contextscope=all>`__."
+"Check `FreeBodyOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"freebodyoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:1 of
@@ -2426,27 +2437,28 @@ msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:4 of
 msgid ""
-"Check `FreeBodyOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyoptionspyc.htm?contextscope=all"
-"#simaker-freebodyoptionssetvaluespyc>`__."
+"Check `FreeBodyOptions.setValues on help.3ds.com/2021 <https://help.3ds.co"
+"m/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"freebodyoptionspyc.htm?contextscope=all#simaker-"
+"freebodyoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:7 of
 msgid ""
-"A String specifying color of the first force component. The default value"
-" is \"#FF1932\"."
+"A String specifying color of the first force component. The default value "
+"is \"#FF1932\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:9 of
 msgid ""
-"A String specifying color of the first moment component. The default "
-"value is \"#0000FF\"."
+"A String specifying color of the first moment component. The default value"
+" is \"#0000FF\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:11 of
 msgid ""
-"A String specifying color of the second force component. The default "
-"value is \"#FF1932\"."
+"A String specifying color of the second force component. The default value"
+" is \"#FF1932\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:13 of
@@ -2457,14 +2469,14 @@ msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:16 of
 msgid ""
-"A String specifying color of the third force component. The default value"
-" is \"#FF1932\"."
+"A String specifying color of the third force component. The default value "
+"is \"#FF1932\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:18 of
 msgid ""
-"A String specifying color of the third moment component. The default "
-"value is \"#0000FF\"."
+"A String specifying color of the third moment component. The default value"
+" is \"#0000FF\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:20 of
@@ -2480,7 +2492,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:24 of
-msgid "A String specifying text color for force. The default value is \"Yellow\"."
+msgid ""
+"A String specifying text color for force. The default value is \"Yellow\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:26 of
@@ -2490,7 +2503,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:28 of
-msgid "A String specifying text font for force. The default value is \"verdana\"."
+msgid ""
+"A String specifying text font for force. The default value is \"verdana\"."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:30 of
@@ -2501,9 +2515,8 @@ msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:32 of
 msgid ""
-"A SymbolicConstant specifying the number format for force. Possible "
-"values are SCIENTIFIC, FIXED, and ENGINEERING. The default value is "
-"SCIENTIFIC."
+"A SymbolicConstant specifying the number format for force. Possible values"
+" are SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:35 of
@@ -2527,8 +2540,8 @@ msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:44 of
 msgid ""
-"A SymbolicConstant specifying the vector display mode. Possible values "
-"are RESULTANT and COMPONENT. The default value is RESULTANT."
+"A SymbolicConstant specifying the vector display mode. Possible values are"
+" RESULTANT and COMPONENT. The default value is RESULTANT."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:47 of
@@ -2556,11 +2569,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:57 of
-msgid "A Float specifying the force threshold value. The default value is 10⁻⁶."
+msgid ""
+"A Float specifying the force threshold value. The default value is 10⁻⁶."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:59 of
-msgid "A Float specifying the moment threshold value. The default value is 10⁻⁶."
+msgid ""
+"A Float specifying the moment threshold value. The default value is 10⁻⁶."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:61 of
@@ -2612,17 +2627,19 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:81 of
-msgid "A Boolean specifying whether to show forces. The default value is ON."
+msgid ""
+"A Boolean specifying whether to show forces. The default value is ON."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:83 of
-msgid "A Boolean specifying whether to show moments. The default value is ON."
+msgid ""
+"A Boolean specifying whether to show moments. The default value is ON."
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:85 of
 msgid ""
-"A Boolean specifying whether to use a constant length for all arrows. The"
-" default value is OFF."
+"A Boolean specifying whether to use a constant length for all arrows. The "
+"default value is OFF."
 msgstr ""
 
 #: abaqus.PlotOptions.HistoryVariable.HistoryVariable:1 of
@@ -2631,8 +2648,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.HistoryVariable.HistoryVariable:10 of
 msgid ""
-"Check `HistoryVariable on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyvariablepyc.htm?contextscope=all>`__."
+"Check `HistoryVariable on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyvariablepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.HistoryVariable.legendLabel:1 of
@@ -2640,15 +2658,16 @@ msgid "A String specifying the legend text. This String is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.HistoryVariable.name:1 of
-msgid "A String specifying the history request label. This String is read-only."
+msgid ""
+"A String specifying the history request label. This String is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.HistoryVariable.steps:1 of
 msgid ""
 "A tuple of (String, Int, SymbolicConstant) tuples specifying the steps. "
 "This sequence is read-only. Each inner sequence contains the following "
-"elements:*stepLabel*: A String specifying the step label. *stepNumber*: "
-"An Int specifying the step number. *procedureDomain*: A SymbolicConstant "
+"elements:*stepLabel*: A String specifying the step label. *stepNumber*: An"
+" Int specifying the step number. *procedureDomain*: A SymbolicConstant "
 "specifying the analysis type of the step, which can have these values: "
 "“TIME,” “FREQUENCY,” or “MODAL.”"
 msgstr ""
@@ -2656,21 +2675,22 @@ msgstr ""
 #: abaqus.PlotOptions.MdbData.MdbData:1 of
 msgid ""
 "The MdbData object has no constructor. Abaqus creates an MdbData object "
-"when a cae file is opened or a new model is created. There is one MdbData"
-" for each model in session. MdbData is updated when it is displayed in a "
+"when a cae file is opened or a new model is created. There is one MdbData "
+"for each model in session. MdbData is updated when it is displayed in a "
 "viewport."
 msgstr ""
 
 #: abaqus.PlotOptions.MdbData.MdbData:12 of
 msgid ""
-"Check `MdbData on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbdatapyc.htm?contextscope=all>`__."
+"Check `MdbData on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mdbdatapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.MdbData.MdbData.instances:1 of
 msgid ""
-"A repository of MdbDataInstance objects specifying the list of instances."
-" The repository is read-only."
+"A repository of MdbDataInstance objects specifying the list of instances. "
+"The repository is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.MdbData.MdbData.stepPeriods:1 of
@@ -2693,8 +2713,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.MdbDataInstance.MdbDataInstance:11 of
 msgid ""
-"Check `MdbDataInstance on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbdatainstancepyc.htm?contextscope=all>`__."
+"Check `MdbDataInstance on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mdbdatainstancepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.MdbDataInstance.MdbDataInstance.name:1
@@ -2703,13 +2724,15 @@ msgid "A String specifying the instance name. This attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.MdbDataStep.MdbDataStep:1 of
-msgid "The MdbDataStep object.It corresponds to same named step in the cae model."
+msgid ""
+"The MdbDataStep object.It corresponds to same named step in the cae model."
 msgstr ""
 
 #: abaqus.PlotOptions.MdbDataStep.MdbDataStep:10 of
 msgid ""
-"Check `MdbDataStep on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `MdbDataStep on help.3ds.com/2021 <https://help.3ds.com/2021/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames:1 of
@@ -2726,8 +2749,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.MdbDataFrame.MdbDataFrame:10 of
 msgid ""
-"Check `MdbDataFrame on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbdataframepyc.htm?contextscope=all>`__."
+"Check `MdbDataFrame on help.3ds.com/2021 <https://help.3ds.com/2021/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mdbdataframepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint:1 of
@@ -2736,14 +2760,16 @@ msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint:10 of
 msgid ""
-"Check `MpcConstraint on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mpcconstraintpyc.htm?contextscope=all>`__."
+"Check `MpcConstraint on help.3ds.com/2021 <https://help.3ds.com/2021/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mpcconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData:1
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData:1
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData:1 of
-msgid "This method returns constraint data if any are associated with the object."
+msgid ""
+"This method returns constraint data if any are associated with the object."
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData
@@ -2755,7 +2781,8 @@ msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData:3
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData:3 of
-msgid "A tuple containing coordinates of the nodes pertaining to the constraint."
+msgid ""
+"A tuple containing coordinates of the nodes pertaining to the constraint."
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData:4
@@ -2777,8 +2804,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError:10 of
 msgid ""
-"Check `OdbAnalysisError on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbanalysiserrorpyc.htm?contextscope=all>`__."
+"Check `OdbAnalysisError on help.3ds.com/2021 <https://help.3ds.com/2021/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbanalysiserrorpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2790,7 +2818,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.category:1 of
-msgid "String specifying the category of error. This attribute is read-only."
+msgid ""
+"String specifying the category of error. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.data:1
@@ -2800,14 +2829,15 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.description:1 of
-msgid "String specifying the cause of the error. This attribute is read-only."
+msgid ""
+"String specifying the cause of the error. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.detailStrings:1 of
 msgid ""
-"String specifying the exact nature of the problem. This attribute is "
-"read-only."
+"String specifying the exact nature of the problem. This attribute is read-"
+"only."
 msgstr ""
 
 #: ../../docstring
@@ -2834,50 +2864,55 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.numberOfVariations:1
 #: of
-msgid "An int specifying the number of variations. This attribute is read-only."
+msgid ""
+"An int specifying the number of variations. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbAnalysisError.stepNumber:1 of
 msgid ""
-"An int specifying the step number on which the error was encountered. "
-"This attribute is read-only."
+"An int specifying the step number on which the error was encountered. This"
+" attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData:1 of
 msgid ""
-"The OdbAuxiliaryData object stores auxiliary data related to the steps in"
-" the analysis."
+"The OdbAuxiliaryData object stores auxiliary data related to the steps in "
+"the analysis."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData:12 of
 msgid ""
-"Check `OdbAuxiliaryData on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbauxiliarydatapyc.htm?contextscope=all>`__."
+"Check `OdbAuxiliaryData on help.3ds.com/2021 <https://help.3ds.com/2021/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbauxiliarydatapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbAuxiliaryData.elementInstanceNames:1
 #: of
-msgid "A tuple consisting of element instance names. This attribute is read-only."
+msgid ""
+"A tuple consisting of element instance names. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbAuxiliaryData.elementLabels:1 of
-msgid "A tuple consisting of element label names. This attribute is read-only."
+msgid ""
+"A tuple consisting of element label names. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbAuxiliaryData.hasValues:1 of
 msgid ""
-"A boolean specifying whether the OdbAuxiliaryData object has values in "
-"it. This attribute is read-only."
+"A boolean specifying whether the OdbAuxiliaryData object has values in it."
+" This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbAuxiliaryData.nodeInstanceNames:1
 #: of
-msgid "A tuple consisting of node instance names. This attribute is read-only."
+msgid ""
+"A tuple consisting of node instance names. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -2887,14 +2922,15 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:1 of
 msgid ""
-"The OdbAnalysisWarning object stores the description of different "
-"warnings encountered during the analysis."
+"The OdbAnalysisWarning object stores the description of different warnings"
+" encountered during the analysis."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:11 of
 msgid ""
-"Check `OdbAnalysisWarning on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbanalysiswarningpyc.htm?contextscope=all>`__."
+"Check `OdbAnalysisWarning on help.3ds.com/2021 <https://help.3ds.com/2021/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbanalysiswarningpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics:1 of
@@ -2903,19 +2939,22 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics:10 of
 msgid ""
-"Check `OdbContactDiagnostics on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbcontactdiagnosticspyc.htm?contextscope=all>`__."
+"Check `OdbContactDiagnostics on help.3ds.com/2021 <https://help.3ds.com/20"
+"21/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbcontactdiagnosticspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbContactDiagnostics.data:1 of
-msgid "A repository of OdbAuxiliaryData objects. This attribute is read-only."
+msgid ""
+"A repository of OdbAuxiliaryData objects. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbContactDiagnostics.defaultFormats:1
 #: of
-msgid "A string specifying the default format value. This attribute is read-only."
+msgid ""
+"A string specifying the default format value. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -2936,35 +2975,38 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbContactDiagnostics.elementDescriptions:1
 #: of
-msgid "A string specifying the element description. This attribute is read-only."
+msgid ""
+"A string specifying the element description. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbContactDiagnostics.nodeDescriptions:1
 #: of
-msgid "A string specifying the node description. This attribute is read-only."
+msgid ""
+"A string specifying the node description. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbContactDiagnostics.type:1 of
 msgid ""
-"A string specifying the type of contact initialization. This attribute is"
-" read-only."
+"A string specifying the type of contact initialization. This attribute is "
+"read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbData.OdbData:1 of
 msgid ""
-"The OdbData object stores non persistent values and attributes associated"
-" with an open odb for the given session. The OdbData object has no "
-"constructor. Abaqus creates the **odbData** repository when you import "
-"the Visualization module. Abaqus creates a OdbData object when an odb is "
+"The OdbData object stores non persistent values and attributes associated "
+"with an open odb for the given session. The OdbData object has no "
+"constructor. Abaqus creates the **odbData** repository when you import the"
+" Visualization module. Abaqus creates a OdbData object when an odb is "
 "opened."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbData.OdbData:13 of
 msgid ""
-"Check `OdbData on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatapyc.htm?contextscope=all>`__."
+"Check `OdbData on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.activeFrames:1 of
@@ -2982,8 +3024,8 @@ msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.datumCsyses:1 of
 msgid ""
-"A repository of OdbDataDatumCsys objects specifying the list of "
-"coordinate systems defined in the model. The repository is read-only."
+"A repository of OdbDataDatumCsys objects specifying the list of coordinate"
+" systems defined in the model. The repository is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.diagnosticData:1 of
@@ -3011,8 +3053,8 @@ msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.instances:1 of
 msgid ""
-"A repository of OdbDataInstance objects specifying the list of instances."
-" The repository is read-only."
+"A repository of OdbDataInstance objects specifying the list of instances. "
+"The repository is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.kinematicCouplings:1 of
@@ -3023,8 +3065,8 @@ msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.materials:1 of
 msgid ""
-"A repository of OdbDataMaterial objects specifying the list of materials."
-" The repository is read-only."
+"A repository of OdbDataMaterial objects specifying the list of materials. "
+"The repository is read-only."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.multiPointConstraints:1
@@ -3058,22 +3100,22 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbData.OdbData.setValues:4 of
 msgid ""
-"Check `OdbData.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatapyc.htm?contextscope=all"
-"#simaker-odbdatasetvaluespyc>`__."
+"Check `OdbData.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatapyc.htm?contextscope=all#simaker-odbdatasetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbData.OdbData.setValues:7 of
 msgid ""
-"A sequence specifying the active frames, or the SymbolicConstant ALL. "
-"Each item in the sequence is a tuple defining the stepName followed by a "
+"A sequence specifying the active frames, or the SymbolicConstant ALL. Each"
+" item in the sequence is a tuple defining the stepName followed by a "
 "sequence of expressions specifying frame numbers. The expression can be "
-"any of the following:An Int specifying a single frame number; for "
-"example, `1`.A String specifying a single frame number ; for example, "
-"`'7'`.A String specifying a sequence of frame numbers; for example, "
-"`'3:5'` and `'3:15:3'`.For these expressions a negative number will "
-"indicate reverse numbering: -1 is the last frame of the step, -2 is the "
-"one before the last frame. Frame numbering starts at 0."
+"any of the following:An Int specifying a single frame number; for example,"
+" `1`.A String specifying a single frame number ; for example, `'7'`.A "
+"String specifying a sequence of frame numbers; for example, `'3:5'` and "
+"`'3:15:3'`.For these expressions a negative number will indicate reverse "
+"numbering: -1 is the last frame of the step, -2 is the one before the last"
+" frame. Frame numbering starts at 0."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbData.OdbData.setValues:16 of
@@ -3118,13 +3160,15 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys:10 of
 msgid ""
-"Check `OdbDataDatumCsys on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatadatumcsyspyc.htm?contextscope=all>`__."
+"Check `OdbDataDatumCsys on help.3ds.com/2021 <https://help.3ds.com/2021/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatadatumcsyspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys.name:1
 #: of
-msgid "A String specifying the coordinate system name. This String is read-only."
+msgid ""
+"A String specifying the coordinate system name. This String is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3168,8 +3212,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet:10 of
 msgid ""
-"Check `OdbDataElementSet on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdataelementsetpyc.htm?contextscope=all>`__."
+"Check `OdbDataElementSet on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdataelementsetpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3197,8 +3242,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataInstance.OdbDataInstance:10 of
 msgid ""
-"Check `OdbDataInstance on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatainstancepyc.htm?contextscope=all>`__."
+"Check `OdbDataInstance on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatainstancepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial:1 of
@@ -3207,8 +3253,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial:10 of
 msgid ""
-"Check `OdbDataMaterial on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatamaterialpyc.htm?contextscope=all>`__."
+"Check `OdbDataMaterial on help.3ds.com/2021 <https://help.3ds.com/2021/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatamaterialpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet:1 of
@@ -3217,14 +3264,15 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet:10 of
 msgid ""
-"Check `OdbDataNodeSet on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatanodesetpyc.htm?contextscope=all>`__."
+"Check `OdbDataNodeSet on help.3ds.com/2021 <https://help.3ds.com/2021/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatanodesetpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet.nodes:1 of
 msgid ""
-"A String-to-tuple-of-Ints Dictionary specifying the nodes in the set. "
-"This attribute is read-only."
+"A String-to-tuple-of-Ints Dictionary specifying the nodes in the set. This"
+" attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataSection.OdbDataSection:1 of
@@ -3233,8 +3281,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataSection.OdbDataSection:10 of
 msgid ""
-"Check `OdbDataSection on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatasectionpyc.htm?contextscope=all>`__."
+"Check `OdbDataSection on help.3ds.com/2021 <https://help.3ds.com/2021/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatasectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep:1 of
@@ -3243,8 +3292,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep:10 of
 msgid ""
-"Check `OdbDataStep on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `OdbDataStep on help.3ds.com/2021 <https://help.3ds.com/2021/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbDataStep.OdbDataStep.frames:1 of
@@ -3259,9 +3309,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:4 of
 msgid ""
-"Check `OdbDataStep.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `OdbDataStep.setValues on help.3ds.com/2021 <https://help.3ds.com/20"
+"21/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:7 of
@@ -3270,7 +3320,8 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues:9
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues:9 of
-msgid "A Boolean specifying whether to update the model. The default value is ON"
+msgid ""
+"A Boolean specifying whether to update the model. The default value is ON"
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet:1 of
@@ -3279,8 +3330,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet:10 of
 msgid ""
-"Check `OdbDataSurfaceSet on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdatasurfacesetpyc.htm?contextscope=all>`__."
+"Check `OdbDataSurfaceSet on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdatasurfacesetpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3296,8 +3348,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData:10 of
 msgid ""
-"Check `OdbDiagnosticData on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdiagnosticdatapyc.htm?contextscope=all>`__."
+"Check `OdbDiagnosticData on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdiagnosticdatapyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3332,7 +3385,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData.numDomains:1 of
-msgid "An int specifying the number of domains. This attribute is read-only."
+msgid ""
+"An int specifying the number of domains. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3375,8 +3429,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint:10 of
 msgid ""
-"Check `RigidBodyConstraint on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rigidbodyconstraintpyc.htm?contextscope=all>`__."
+"Check `RigidBodyConstraint on help.3ds.com/2021 <https://help.3ds.com/2021"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"rigidbodyconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData:3
@@ -3392,8 +3447,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.name:1 of
 msgid ""
-"A String specifying the rigidbody constraint name. This attribute is "
-"read-only."
+"A String specifying the rigidbody constraint name. This attribute is read-"
+"only."
 msgstr ""
 
 #: abaqus.PlotOptions.TieConstraint.TieConstraint:1 of
@@ -3402,12 +3457,14 @@ msgstr ""
 
 #: abaqus.PlotOptions.TieConstraint.TieConstraint:10 of
 msgid ""
-"Check `TieConstraint on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tieconstraintpyc.htm?contextscope=all>`__."
+"Check `TieConstraint on help.3ds.com/2021 <https://help.3ds.com/2021/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"tieconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.TieConstraint.TieConstraint.name:1 of
-msgid "A String specifying the tie constraint name. This attribute is read-only."
+msgid ""
+"A String specifying the tie constraint name. This attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame:1 of
@@ -3416,8 +3473,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame:10 of
 msgid ""
-"Check `OdbDataFrame on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdataframepyc.htm?contextscope=all>`__."
+"Check `OdbDataFrame on help.3ds.com/2021 <https://help.3ds.com/2021/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdataframepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues:1 of
@@ -3426,9 +3484,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues:4 of
 msgid ""
-"Check `OdbDataFrame.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdataframepyc.htm?contextscope=all"
-"#simaker-odbdataframesetvaluespyc>`__."
+"Check `OdbDataFrame.setValues on help.3ds.com/2021 <https://help.3ds.com/2"
+"021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdataframepyc.htm?contextscope=all#simaker-odbdataframesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues:7 of
@@ -3441,8 +3499,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt:10 of
 msgid ""
-"Check `OdbDiagnosticAttempt on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdiagnosticattemptpyc.htm?contextscope=all>`__."
+"Check `OdbDiagnosticAttempt on help.3ds.com/2021 <https://help.3ds.com/202"
+"1/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdiagnosticattemptpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3464,7 +3523,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticAttempt.isCutBack:1
 #: of
-msgid "A boolean specifying the state of cutback. This attribute is read-only."
+msgid ""
+"A boolean specifying the state of cutback. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3512,8 +3572,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:10 of
 msgid ""
-"Check `OdbDiagnosticStep on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `OdbDiagnosticStep on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3551,9 +3612,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData:5 of
 msgid ""
-"Check `OdbDiagnosticStep.extractData on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepextractdatapyc>`__."
+"Check `OdbDiagnosticStep.extractData on help.3ds.com/2021 <https://help.3d"
+"s.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepextractdatapyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData:8 of
@@ -3562,8 +3623,8 @@ msgid ""
 "Possible enum values are NUM_ATTEMPTS (the number of attempts), NUM_SDI "
 "(the number of severe discontinuity iterations), NUM_EQI (the number of "
 "equivalent iterations), NUM_ITERS (the number of iterations), STEP_TIME "
-"(the cumulative step time until that increment) or INC_SIZE (the step "
-"time for each increment)."
+"(the cumulative step time until that increment) or INC_SIZE (the step time"
+" for each increment)."
 msgstr ""
 
 #: ../../docstring
@@ -3598,8 +3659,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.initialTimeIncrement:1
 #: of
 msgid ""
-"A float specifying the initial increment size for the step. This "
-"attribute is read-only."
+"A float specifying the initial increment size for the step. This attribute"
+" is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3612,8 +3673,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.isPerturbation:1 of
 msgid ""
-"A boolean specifying whether or not the step is a perturbation step. This"
-" attribute is read-only."
+"A boolean specifying whether or not the step is a perturbation step. This "
+"attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3670,7 +3731,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.name:1 of
-msgid "A string specifying the name of the step. This attribute is read-only."
+msgid ""
+"A string specifying the name of the step. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3704,7 +3766,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.stabilizeFactor:1 of
-msgid "A float specifying the stabilize factor. This attribute is read-only."
+msgid ""
+"A float specifying the stabilize factor. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3717,7 +3780,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.timePeriod:1 of
-msgid "A float specifying the duration for the step. This attribute is read-only."
+msgid ""
+"A float specifying the duration for the step. This attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbJobTime.OdbJobTime:1 of
@@ -3726,8 +3790,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbJobTime.OdbJobTime:10 of
 msgid ""
-"Check `OdbJobTime on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbjobtimepyc.htm?contextscope=all>`__."
+"Check `OdbJobTime on help.3ds.com/2021 <https://help.3ds.com/2021/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbjobtimepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbJobTime.OdbJobTime.systemTime:1 of
@@ -3751,15 +3816,16 @@ msgstr ""
 #: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary:1
 #: of
 msgid ""
-"The OdbNumericalProblemSummary object stores the numerical problem "
-"summary of a job."
+"The OdbNumericalProblemSummary object stores the numerical problem summary"
+" of a job."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary:10
 #: of
 msgid ""
-"Check `OdbNumericalProblemSummary on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbnumericalproblemsummarypyc.htm?contextscope=all>`__."
+"Check `OdbNumericalProblemSummary on help.3ds.com/2021 <https://help.3ds.c"
+"om/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbnumericalproblemsummarypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3774,8 +3840,8 @@ msgstr ""
 #: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary.convergedNumericalSingularities:1
 #: of
 msgid ""
-"A boolean specifying whether numerical singularities converged during the"
-" analysis. This attribute is read-only."
+"A boolean specifying whether numerical singularities converged during the "
+"analysis. This attribute is read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3798,14 +3864,15 @@ msgstr ""
 #: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary.numberOfNumericalSingularities:1
 #: of
 msgid ""
-"An int specifying the number of numerical singularities. This attribute "
-"is read-only."
+"An int specifying the number of numerical singularities. This attribute is"
+" read-only."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary.numberOfZeroPivots:1
 #: of
-msgid "An int specifying the number of zero pivots. This attribute is read-only."
+msgid ""
+"An int specifying the number of zero pivots. This attribute is read-only."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement:1 of
@@ -3814,8 +3881,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement:10 of
 msgid ""
-"Check `OdbDiagnosticIncrement on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdiagnosticincrementpyc.htm?contextscope=all>`__."
+"Check `OdbDiagnosticIncrement on help.3ds.com/2021 <https://help.3ds.com/2"
+"021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdiagnosticincrementpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3856,8 +3924,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticIncrement.size:1 of
 msgid ""
-"A float specifying the size of the particular increment. This attribute "
-"is read-only."
+"A float specifying the size of the particular increment. This attribute is"
+" read-only."
 msgstr ""
 
 #: ../../docstring
@@ -3870,17 +3938,18 @@ msgstr ""
 
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions:1 of
 msgid ""
-"The OdbDisplayOptions object stores the display options associated with "
-"an OdbInstance object. This object does not have a constructor. Abaqus "
-"creates the OdbDisplayOptions object when an OdbInstance object is "
-"created using the display options associated with the current viewport at"
-" the time of creation."
+"The OdbDisplayOptions object stores the display options associated with an"
+" OdbInstance object. This object does not have a constructor. Abaqus "
+"creates the OdbDisplayOptions object when an OdbInstance object is created"
+" using the display options associated with the current viewport at the "
+"time of creation."
 msgstr ""
 
 #: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions:19 of
 msgid ""
-"Check `OdbDisplayOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplayoptionspyc.htm?contextscope=all>`__."
+"Check `OdbDisplayOptions on help.3ds.com/2021 <https://help.3ds.com/2021/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbdisplayoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3918,15 +3987,16 @@ msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg:1 of
 msgid ""
-"The OptionArg object is used to store values and attributes as a "
-"temporary object to be associated with a viewCutOptions object. The "
-"OptionArg object has only a constructor command."
+"The OptionArg object is used to store values and attributes as a temporary"
+" object to be associated with a viewCutOptions object. The OptionArg "
+"object has only a constructor command."
 msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg:19 of
 msgid ""
-"Check `OptionArg on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all>`__."
+"Check `OptionArg on help.3ds.com/2021 <https://help.3ds.com/2021/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"optionargpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg:21 of
@@ -3949,16 +4019,16 @@ msgstr ""
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeColorFillShade:1 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the "
-"undeformed plot when **renderStyle** = FILLED or SHADED. The default "
-"value is \"Black\"."
+"undeformed plot when **renderStyle** = FILLED or SHADED. The default value"
+" is \"Black\"."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg:56
 #: abaqus.PlotOptions.OptionArg.OptionArg.translucencyFactor:1 of
 msgid ""
 "A Float specifying the translucency factor when **translucency** = ON. "
-"Possible values are 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value"
-" is 0.3."
+"Possible values are 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value "
+"is 0.3."
 msgstr ""
 
 #: abaqus.PlotOptions.OptionArg.OptionArg:59 of
@@ -3984,9 +4054,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions:9 of
 msgid ""
-"The default stream options. These settings are used as defaults when "
-"other **streamOptions** members are created. These settings can be set to"
-" customize user preferences."
+"The default stream options. These settings are used as defaults when other"
+" **streamOptions** members are created. These settings can be set to "
+"customize user preferences."
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions:12 of
@@ -3995,8 +4065,9 @@ msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions:23 of
 msgid ""
-"Check `StreamOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streamoptionspyc.htm?contextscope=all>`__."
+"Check `StreamOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"streamoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:1 of
@@ -4005,9 +4076,10 @@ msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:4 of
 msgid ""
-"Check `StreamOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streamoptionspyc.htm?contextscope=all"
-"#simaker-streamoptionssetvaluespyc>`__."
+"Check `StreamOptions.setValues on help.3ds.com/2021 <https://help.3ds.com/"
+"2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"streamoptionspyc.htm?contextscope=all#simaker-"
+"streamoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:7 of
@@ -4024,11 +4096,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:12 of
-msgid "A Float specifying the stream line thickness. The default value is 6.0."
+msgid ""
+"A Float specifying the stream line thickness. The default value is 6.0."
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:14 of
-msgid "A Boolean specifying whether to show arrows. The default value is OFF."
+msgid ""
+"A Boolean specifying whether to show arrows. The default value is OFF."
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:16 of
@@ -4041,49 +4115,48 @@ msgstr ""
 msgid ""
 "The ViewCutOptions object stores values and attributes associated with a "
 "view cut plot. The ViewCutOptions object has no constructor command. "
-"Abaqus creates a *defaultOdbDisplay.viewCutOptions* member when you "
-"import the Visualization module. Abaqus creates an **viewCutOptions** "
-"member when it creates the OdbDisplay object, using the values from "
+"Abaqus creates a *defaultOdbDisplay.viewCutOptions* member when you import"
+" the Visualization module. Abaqus creates an **viewCutOptions** member "
+"when it creates the OdbDisplay object, using the values from "
 "*defaultOdbDisplay.viewCutOptions*. Abaqus creates the **odbDisplay** "
 "member when a viewport is created, using the values from "
 "**defaultOdbDisplay**. ViewCutOptions objects are accessed in one of two "
-"ways: - The default view cut options. These settings are used as defaults"
-" when other **viewCutOptions** members are created. These settings can be"
-" set to customize user preferences. - The view cut options associated "
-"with a particular viewport."
+"ways: - The default view cut options. These settings are used as defaults "
+"when other **viewCutOptions** members are created. These settings can be "
+"set to customize user preferences. - The view cut options associated with "
+"a particular viewport."
 msgstr ""
 
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions:22 of
 msgid ""
-"Check `ViewCutOptions on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutoptionspyc.htm?contextscope=all>`__."
+"Check `ViewCutOptions on help.3ds.com/2021 <https://help.3ds.com/2021/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewcutoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.aboveOptions:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:23 of
 msgid ""
-"None or an OptionArg object specifying values to be used for defining the"
-" options applicable on the model above the cut. The default value is "
-"None."
+"None or an OptionArg object specifying values to be used for defining the "
+"options applicable on the model above the cut. The default value is None."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.belowOptions:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:11 of
 msgid ""
-"None or an OptionArg object specifying values to be used for defining the"
-" options applicable on the model below the cut. The default value is "
-"None."
+"None or an OptionArg object specifying values to be used for defining the "
+"options applicable on the model below the cut. The default value is None."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.componentResolution:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:55 of
 msgid ""
-"A SymbolicConstant specifying the component resolution choice for the "
-"free body cut. Possible values are NORMAL_TANGENTIAL and CSYS. The "
-"default value is NORMAL_TANGENTIAL."
+"A SymbolicConstant specifying the component resolution choice for the free"
+" body cut. Possible values are NORMAL_TANGENTIAL and CSYS. The default "
+"value is NORMAL_TANGENTIAL."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.csysName:1
@@ -4097,28 +4170,31 @@ msgstr ""
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.cutFreeBodyMax:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:47 of
-msgid "A Float specifying free body maximum value. The default value is 0.0."
+msgid ""
+"A Float specifying free body maximum value. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.cutFreeBodyMin:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:45 of
-msgid "A Float specifying free body minimum value. The default value is 0.0."
+msgid ""
+"A Float specifying free body minimum value. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.displaySlicing:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:38 of
-msgid "A Boolean specifying whether to display slicing. The default value is OFF."
+msgid ""
+"A Boolean specifying whether to display slicing. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.freeBodyCutThru:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:29 of
 msgid ""
-"A SymbolicConstant specifying the domain through which the free body "
-"cuts. Possible values are CURRENT_DISPLAY_GROUP and WHOLE_MODEL. The "
-"default value is CURRENT_DISPLAY_GROUP."
+"A SymbolicConstant specifying the domain through which the free body cuts."
+" Possible values are CURRENT_DISPLAY_GROUP and WHOLE_MODEL. The default "
+"value is CURRENT_DISPLAY_GROUP."
 msgstr ""
 
 #: ../../docstring
@@ -4142,15 +4218,15 @@ msgstr ""
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.numCutFreeBody:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:36 of
 msgid ""
-"An Int specifying number of free bodies per view cut. The default value "
-"is 1."
+"An Int specifying number of free bodies per view cut. The default value is"
+" 1."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.onOptions:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:17 of
 msgid ""
-"None or an OptionArg object specifying values to be used for defining the"
-" options applicable on the model on the cut. The default value is None."
+"None or an OptionArg object specifying values to be used for defining the "
+"options applicable on the model on the cut. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.pathName:1
@@ -4166,48 +4242,49 @@ msgstr ""
 
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:4 of
 msgid ""
-"Check `ViewCutOptions.setValues on help.3ds.com/2021 "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutoptionspyc.htm?contextscope=all"
-"#simaker-viewcutoptionssetvaluespyc>`__."
+"Check `ViewCutOptions.setValues on help.3ds.com/2021 <https://help.3ds.com"
+"/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewcutoptionspyc.htm?contextscope=all#simaker-"
+"viewcutoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:7 of
 msgid ""
 "A ViewCutOptions object from which values are to be copied. If other "
-"arguments are also supplied to setValues, they will override the values "
-"in **options**. The default value is None."
+"arguments are also supplied to setValues, they will override the values in"
+" **options**. The default value is None."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:14
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.useBelowOptions:1 of
 msgid ""
-"A Boolean specifying whether to use the options defined for displaying "
-"the model below the cut. The default value is OFF."
+"A Boolean specifying whether to use the options defined for displaying the"
+" model below the cut. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:20
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.useOnOptions:1 of
 msgid ""
-"A Boolean specifying whether to use the options defined for displaying "
-"the model on the cut. The default value is OFF."
+"A Boolean specifying whether to use the options defined for displaying the"
+" model on the cut. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:26
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.useAboveOptions:1 of
 msgid ""
-"A Boolean specifying whether to use the options defined for displaying "
-"the model above the cut. The default value is OFF."
+"A Boolean specifying whether to use the options defined for displaying the"
+" model above the cut. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:40
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.slicingAtPathNodes:1 of
 msgid ""
-"A Boolean specifying whether to slice at path nodes. The default value is"
-" OFF."
+"A Boolean specifying whether to slice at path nodes. The default value is "
+"OFF."
 msgstr ""
 
 #: ../../docstring

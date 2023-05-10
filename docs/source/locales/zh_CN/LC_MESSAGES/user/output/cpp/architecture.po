@@ -23,12 +23,12 @@ msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:5
 msgid ""
-"This section describes the architecture of the Abaqus C++ interface to an"
-" output database. The output database is an object-oriented database, "
-"which means that the data are held by “objects” (C++ classes) that have "
+"This section describes the architecture of the Abaqus C++ interface to an "
+"output database. The output database is an object-oriented database, which"
+" means that the data are held by “objects” (C++ classes) that have "
 "certain behavior (C++ methods). The methods of an object in the database "
-"allow access to and manipulation of the data held by the object. The data"
-" members of an object can be either primitives (integer, floating point, "
+"allow access to and manipulation of the data held by the object. The data "
+"members of an object can be either primitives (integer, floating point, "
 "string) or other objects."
 msgstr ""
 
@@ -48,8 +48,8 @@ msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:15
 msgid ""
-"A constructor is a method that creates an object. The Abaqus C++ API uses"
-" the following three types of constructors:"
+"A constructor is a method that creates an object. The Abaqus C++ API uses "
+"the following three types of constructors:"
 msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:17
@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:19
 msgid ""
-"Constructors for nonpersistent objects are the standard C++ constructors."
-" For example,"
+"Constructors for nonpersistent objects are the standard C++ constructors. "
+"For example,"
 msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:25
@@ -71,8 +71,8 @@ msgid ""
 "You create a persistent object by calling a method on an existing Abaqus "
 "C++ API object. In Abaqus the convention is that the constructor method "
 "name corresponds to the name of the object created and that the first "
-"letter of the constructor name is capitalized. The object can be accessed"
-" using the return value of the constructor call or using a lowercase "
+"letter of the constructor name is capitalized. The object can be accessed "
+"using the return value of the constructor call or using a lowercase "
 "version of the method name. For example, a Frame object can be created "
 "using the following:"
 msgstr ""
@@ -102,11 +102,11 @@ msgstr ""
 #: ../../user/output/cpp/architecture.rst:54
 msgid ""
 "To use a class in a C++ program, the relevant header files must be "
-"included. The naming convention followed is that the file name is the "
-"same as the name of the class declared in the header file. For example, "
-"the `odb_FieldValue` object is declared in the file `odb_FieldValue.h`. "
-"The file `odb_API.h` includes all the header files required to use the "
-"API. Other header files must be included to use some classes:"
+"included. The naming convention followed is that the file name is the same"
+" as the name of the class declared in the header file. For example, the "
+"`odb_FieldValue` object is declared in the file `odb_FieldValue.h`. The "
+"file `odb_API.h` includes all the header files required to use the API. "
+"Other header files must be included to use some classes:"
 msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:56
@@ -116,6 +116,7 @@ msgid ""
 msgstr ""
 
 #: ../../user/output/cpp/architecture.rst:57
-msgid "To access section objects you must include the file `odb_SectionTypes.h`."
+msgid ""
+"To access section objects you must include the file `odb_SectionTypes.h`."
 msgstr ""
 
