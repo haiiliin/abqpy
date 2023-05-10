@@ -23,7 +23,7 @@ jobs:
       with:
         python-version: 3.11
     - name: Install dependencies
-      run: pip install .[docs]
+      run: pip install .[dev,docs]
     - name: Update translations
       run: sh docs/source/locales/update.sh
     - name: Commit changes
