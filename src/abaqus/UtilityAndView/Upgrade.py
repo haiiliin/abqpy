@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import BOTH, Boolean, EARLIEST, LATEST, SymbolicConstant
+
 """The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a later release. The
 upgradeScript module allows you to upgrade over several releases at one time. It also allows you to upgrade only
 kernel commands, only GUI commands, or both.

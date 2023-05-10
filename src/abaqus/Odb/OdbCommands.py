@@ -6,6 +6,7 @@ from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
+
 """The Odb commands do the following:
 
 - Determine if an output database (.odb) file needs to be upgraded to the current

@@ -6,6 +6,7 @@ from typing_extensions import Literal
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+
 """This command evaluates the behavior of a hyperelastic material under standard test conditions.
 
 .. note::

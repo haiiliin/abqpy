@@ -3,6 +3,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
+
 """The deleteObjectCallback module provides methods that allow you to register a callback that will be invoked
 when specified Abaqus Scripting Interface objects are about to be deleted. This callback allows you to examine
 an object before it is deleted. For example, in the following script the myCallback function is executed when

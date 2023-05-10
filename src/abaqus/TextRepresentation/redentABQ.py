@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
+
 """The Python module redentABQ is a wrapper around the Python redent module. The module makes the indentation in
 a Python text file consistent. The module can be run as a script from a command prompt using the following
 statement: abaqus Python -m redentABQ [options] pathToFile where the following options are available to
