@@ -36,15 +36,14 @@ import visualization
 
 # Create a new Viewport for this example.
 
-myViewport=session.Viewport(name='Print a contour plot', 
-    origin=(10, 10), width=200, height=100)
+myViewport = session.Viewport(name="Print a contour plot", origin=(10, 10), width=200, height=100)
 
 # Open the output database and associate it
 # with the new viewport.
 
 odbPath = "viewer_tutorial.odb"
 myOdb = visualization.openOdb(path=odbPath)
-    
+
 myViewport.setValues(displayedObject=myOdb)
 
 
@@ -53,7 +52,7 @@ myViewport.setValues(displayedObject=myOdb)
 myViewport.odbDisplay.display.setValues(plotState=(CONTOURS_ON_DEF,))
 
 # Change to the first frame of the third step.
-# Remember that indices in Python begin with zero: 
+# Remember that indices in Python begin with zero:
 #   The index of the first frame is 0.
 #   The index of the third step is 2.
 
@@ -62,17 +61,19 @@ myViewport.odbDisplay.setFrame(step=2, frame=0)
 # Change the number of contour intervals to 10
 # starting at 0.0 and ending at 0.10.
 
-myViewport.odbDisplay.contourOptions.setValues(numIntervals=10, 
-    maxAutoCompute=OFF, maxValue=0.10, 
-    minAutoCompute=OFF, minValue=0.0,)
+myViewport.odbDisplay.contourOptions.setValues(
+    numIntervals=10,
+    maxAutoCompute=OFF,
+    maxValue=0.10,
+    minAutoCompute=OFF,
+    minValue=0.0,
+)
 
-# Generate color output. 
+# Generate color output.
 # Do not print the viewport decorations or the black background.
 
-session.printOptions.setValues(rendition=COLOR,
-    vpDecorations=OFF, vpBackground=OFF)
+session.printOptions.setValues(rendition=COLOR, vpDecorations=OFF, vpBackground=OFF)
 
 # Print the viewport to a local PNG-format file.
 
-session.printToFile(fileName='contourPlot', format=PNG,
-    canvasObjects=(myViewport,))
+session.printToFile(fileName="contourPlot", format=PNG, canvasObjects=(myViewport,))
