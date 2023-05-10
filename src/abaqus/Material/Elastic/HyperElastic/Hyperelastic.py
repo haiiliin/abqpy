@@ -1,15 +1,10 @@
 from typing import Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ViscoElastic.Hysteresis import Hysteresis
-from ...TestData.BiaxialTestData import BiaxialTestData
-from ...TestData.PlanarTestData import PlanarTestData
-from ...TestData.UniaxialTestData import UniaxialTestData
-from ...TestData.VolumetricTestData import VolumetricTestData
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ....UtilityAndView.abaqusConstants import (
-    Boolean,
     DEFAULT,
     FITTED_VALUE,
     FUNG_ANISOTROPIC,
@@ -21,8 +16,14 @@ from ....UtilityAndView.abaqusConstants import (
     STRAIN,
     UNIAXIAL,
     UNKNOWN,
+    Boolean,
 )
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
+from ...TestData.BiaxialTestData import BiaxialTestData
+from ...TestData.PlanarTestData import PlanarTestData
+from ...TestData.UniaxialTestData import UniaxialTestData
+from ...TestData.VolumetricTestData import VolumetricTestData
+from .ViscoElastic.Hysteresis import Hysteresis
 
 
 @abaqus_class_doc

@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ...TestData.UniaxialTestData import UniaxialTestData
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, VOLUMETRIC
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ....UtilityAndView.abaqusConstants import OFF, VOLUMETRIC, Boolean
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
+from ...TestData.UniaxialTestData import UniaxialTestData
 
 
 @abaqus_class_doc

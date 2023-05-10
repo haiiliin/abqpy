@@ -1,10 +1,11 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Crack import Crack
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import NONE, OFF, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Crack import Crack
 
 
 @abaqus_class_doc

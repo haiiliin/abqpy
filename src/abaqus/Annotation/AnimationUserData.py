@@ -1,14 +1,12 @@
-from typing import Union, Sequence
+from typing import Sequence, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Arrow import Arrow
-from .Text import Text
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Odb.UserDataBase import UserDataBase
 from ..UtilityAndView.abaqusConstants import (
     BOTTOM_LEFT,
-    Boolean,
     FILLED_ARROW,
     JUSTIFY_LEFT,
     NONE,
@@ -16,8 +14,11 @@ from ..UtilityAndView.abaqusConstants import (
     SOLID,
     TRANSPARENT,
     VERY_THIN,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Arrow import Arrow
+from .Text import Text
 
 
 @abaqus_class_doc

@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import CORRELATED, STEP, SymbolicConstant
+from .Amplitude import Amplitude
 
 
 @abaqus_class_doc

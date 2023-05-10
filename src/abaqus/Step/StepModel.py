@@ -1,7 +1,8 @@
-from typing import Union, Optional
+from typing import Optional, Union
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing_extensions import Literal
 
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
@@ -9,10 +10,10 @@ from ..Step.AnnealStep import AnnealStep
 from ..Step.BuckleStep import BuckleStep
 from ..Step.ComplexFrequencyStep import ComplexFrequencyStep
 from ..Step.CoupledTempDisplacementStep import CoupledTempDisplacementStep
-from ..Step.CoupledThermalElectricStep import CoupledThermalElectricStep
 from ..Step.CoupledThermalElectricalStructuralStep import (
     CoupledThermalElectricalStructuralStep,
 )
+from ..Step.CoupledThermalElectricStep import CoupledThermalElectricStep
 from ..Step.DirectCyclicStep import DirectCyclicStep
 from ..Step.EmagTimeHarmonicStep import EmagTimeHarmonicStep
 from ..Step.ExplicitDynamicsStep import ExplicitDynamicsStep
@@ -77,7 +78,6 @@ from ..UtilityAndView.abaqusConstants import (
     ANALYSIS_PRODUCT_DEFAULT,
     AUTOMATIC,
     AUTOMATIC_GLOBAL,
-    Boolean,
     COMPLEX,
     DEFAULT,
     DIRECT,
@@ -99,10 +99,11 @@ from ..UtilityAndView.abaqusConstants import (
     SOLVER_DEFAULT,
     STEP,
     SUBSPACE,
-    SymbolicConstant,
     TRANSIENT,
     VALUE,
     WHOLE_MODEL,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

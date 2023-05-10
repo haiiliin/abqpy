@@ -3,15 +3,15 @@ import re
 import sys
 
 from abaqus import Mdb, backwardCompatibility, getInput, mdb
-from abaqus.Mdb.MdbCommands import upgradeMdb, CombineOptResults, openMdb  # noqa # pylint: disable=unused-import
+from abaqus.Mdb.MdbCommands import (  # noqa # pylint: disable=unused-import
+    CombineOptResults,
+    openMdb,
+    upgradeMdb,
+)
 from abaqus.Session.Session import Session
-from abaqus.UtilityAndView import SymbolicConstant, BackwardCompatibility
+from abaqus.UtilityAndView import BackwardCompatibility, SymbolicConstant
 from abaqus.UtilityAndView.AbaqusBoolean import AbaqusBoolean
-from abaqus.UtilityAndView.Repository import Repository
 from abaqus.UtilityAndView.abaqusConstants import (
-    AbaqusBooleanType,
-    Boolean,
-    BooleanType,
     CFD,
     EMAG,
     FALSE,
@@ -21,10 +21,14 @@ from abaqus.UtilityAndView.abaqusConstants import (
     SCATTERED,
     STANDARD_EXPLICIT,
     STEP_END,
-    SymbolicConstantType,
     TOTAL,
     TRUE,
+    AbaqusBooleanType,
+    Boolean,
+    BooleanType,
+    SymbolicConstantType,
 )
+from abaqus.UtilityAndView.Repository import Repository
 
 NoneType = type(None)
 

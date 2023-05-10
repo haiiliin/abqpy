@@ -1,12 +1,13 @@
 from typing import Tuple
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Viewport import Viewport
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import Boolean, ON, SYSTEM
+from ..UtilityAndView.abaqusConstants import ON, SYSTEM, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Viewport import Viewport
 
 
 @abaqus_class_doc

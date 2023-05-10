@@ -1,14 +1,15 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, Sequence, List, Dict, overload
+from typing import Dict, List, Optional, Sequence, Tuple, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .QuantityType import QuantityType
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, REAL, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import OFF, ON, REAL, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .QuantityType import QuantityType
 
 
 class Odb:

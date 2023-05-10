@@ -1,16 +1,11 @@
 from __future__ import annotations
 
-from typing import Optional, Union, overload, Sequence, Tuple
+from typing import Optional, Sequence, Tuple, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Region import Region
-from .RegionPartBase import RegionPartBase
-from .Set import Set
-from .Skin import Skin
-from .Stringer import Stringer
-from .Surface import Surface
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
@@ -20,7 +15,19 @@ from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
-from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
+from ..UtilityAndView.abaqusConstants import (
+    DIFFERENCE,
+    INTERSECTION,
+    OVERWRITE,
+    UNION,
+    Boolean,
+)
+from .Region import Region
+from .RegionPartBase import RegionPartBase
+from .Set import Set
+from .Skin import Skin
+from .Stringer import Stringer
+from .Surface import Surface
 
 
 @abaqus_class_doc

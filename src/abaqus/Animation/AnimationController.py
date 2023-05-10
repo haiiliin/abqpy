@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import NONE, STOP, SymbolicConstant, UNLIMITED
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .._OptionsBase import _OptionsBase
+from ..UtilityAndView.abaqusConstants import NONE, STOP, UNLIMITED, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

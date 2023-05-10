@@ -1,17 +1,11 @@
-from typing import Union, Dict, Optional
+from typing import Dict, Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DesignResponse import DesignResponse
-from .GeometricRestriction import GeometricRestriction
-from .ObjectiveFunction import ObjectiveFunction
-from .OptimizationConstraint import OptimizationConstraint
-from .OptimizationTask import OptimizationTask
-from .StopCondition import StopCondition
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
     AVERAGE_EDGE_LENGTH,
-    Boolean,
     DEFAULT,
     GENERAL_OPTIMIZATION,
     MEDIUM,
@@ -20,9 +14,16 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     STANDARD,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DesignResponse import DesignResponse
+from .GeometricRestriction import GeometricRestriction
+from .ObjectiveFunction import ObjectiveFunction
+from .OptimizationConstraint import OptimizationConstraint
+from .OptimizationTask import OptimizationTask
+from .StopCondition import StopCondition
 
 
 @abaqus_class_doc

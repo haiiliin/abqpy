@@ -1,10 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
+from ...BasicGeometry.Vertex import Vertex
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
-from ...BasicGeometry.Vertex import Vertex
+from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 
 @abaqus_class_doc

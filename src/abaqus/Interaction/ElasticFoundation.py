@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Interaction import Interaction
 from ..Region.Region import Region
+from .Interaction import Interaction
 
 
 @abaqus_class_doc

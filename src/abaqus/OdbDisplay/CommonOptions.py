@@ -1,12 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
 from ..UtilityAndView.abaqusConstants import (
     AUTO,
-    Boolean,
     ELEMENT,
     EXTERIOR,
     HOLLOW_CIRCLE,
@@ -16,9 +16,10 @@ from ..UtilityAndView.abaqusConstants import (
     SHADED,
     SMALL,
     SOLID,
-    SymbolicConstant,
     VERY_THIN,
     WIRE,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

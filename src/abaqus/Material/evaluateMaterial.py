@@ -1,11 +1,12 @@
 from typing import Optional, Sequence
 
-from abqpy.decorators import abaqus_function_doc
 from typing_extensions import Literal
 
-from .Material import Material
+from abqpy.decorators import abaqus_function_doc
+
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Material import Material
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 

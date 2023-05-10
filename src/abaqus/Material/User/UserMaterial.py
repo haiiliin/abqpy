@@ -1,7 +1,8 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import Boolean, INCREMENTAL, MECHANICAL, OFF
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ...UtilityAndView.abaqusConstants import INCREMENTAL, MECHANICAL, OFF, Boolean
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

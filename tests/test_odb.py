@@ -1,8 +1,9 @@
+import numpy as np
+
+import visualization
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
-import visualization
-import numpy as np
 
 
 def test_odb():

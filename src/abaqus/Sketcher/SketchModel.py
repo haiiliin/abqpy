@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .ConstrainedSketch import ConstrainedSketch
 from ..Model.ModelBase import ModelBase
+from .ConstrainedSketch import ConstrainedSketch
 
 
 @abaqus_class_doc

@@ -1,8 +1,13 @@
-from typing import overload, Dict, Optional, Sequence
+from typing import Dict, Optional, Sequence, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Property.MaterialOrientationArray import MaterialOrientationArray
+from ..Property.SectionAssignmentArray import SectionAssignmentArray
+from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AnalyticSurface import AnalyticSurface
 from .AnalyticSurfaceSegment import AnalyticSurfaceSegment
 from .BeamOrientationArray import BeamOrientationArray
@@ -13,10 +18,6 @@ from .OdbRigidBodyArray import OdbRigidBodyArray
 from .OdbSet import OdbSet
 from .RebarOrientationArray import RebarOrientationArray
 from .SectionCategory import SectionCategory
-from ..Property.MaterialOrientationArray import MaterialOrientationArray
-from ..Property.SectionAssignmentArray import SectionAssignmentArray
-from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
-from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import AXIS_1, ON, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

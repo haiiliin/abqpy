@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Type, List
+from typing import List, Type
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 

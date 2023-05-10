@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .IMAField import IMAField
 from ..Region.Region import Region
+from .IMAField import IMAField
 
 
 @abaqus_class_doc

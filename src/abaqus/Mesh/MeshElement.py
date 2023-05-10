@@ -1,17 +1,19 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, TYPE_CHECKING
+from typing import TYPE_CHECKING, Optional, Sequence, Tuple
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C, SymbolicConstant
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 if TYPE_CHECKING:  # to avoid circular imports
-    from .MeshNode import MeshNode
     from .MeshEdge import MeshEdge
-    from .MeshFace import MeshFace
     from .MeshElementArray import MeshElementArray
+    from .MeshFace import MeshFace
+    from .MeshNode import MeshNode
 
 
 @abaqus_class_doc

@@ -1,15 +1,15 @@
 from abqpy.decorators import abaqus_class_doc
 
+from ..PlotOptions.BasicOptions import BasicOptions
+from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
+from ..PlotOptions.StreamOptions import StreamOptions
+from ..PlotOptions.ViewCutOptions import ViewCutOptions
 from .CommonOptions import CommonOptions
 from .ContourOptions import ContourOptions
 from .DisplayBodyOptions import DisplayBodyOptions
 from .OrientationOptions import OrientationOptions
 from .SuperimposeOptions import SuperimposeOptions
 from .SymbolOptions import SymbolOptions
-from ..PlotOptions.BasicOptions import BasicOptions
-from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
-from ..PlotOptions.StreamOptions import StreamOptions
-from ..PlotOptions.ViewCutOptions import ViewCutOptions
 
 
 @abaqus_class_doc

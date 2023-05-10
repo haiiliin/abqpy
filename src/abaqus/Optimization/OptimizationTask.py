@@ -1,8 +1,28 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_EQUAL,
+    AUTO,
+    AXIS_1,
+    DEMOLD_REGION,
+    FREE_FORM,
+    MAXIMUM,
+    MINIMIZE,
+    MINIMUM,
+    MODEL,
+    OFF,
+    ON,
+    OVERHANG_REGION,
+    SUM,
+    VECTOR,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
 from .BeadPenetrationCheck import BeadPenetrationCheck
@@ -43,25 +63,6 @@ from .TopologyPlanarSymmetry import TopologyPlanarSymmetry
 from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
-from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    ABSOLUTE_EQUAL,
-    AUTO,
-    AXIS_1,
-    Boolean,
-    DEMOLD_REGION,
-    FREE_FORM,
-    MAXIMUM,
-    MINIMIZE,
-    MINIMUM,
-    MODEL,
-    OFF,
-    ON,
-    OVERHANG_REGION,
-    SUM,
-    VECTOR,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

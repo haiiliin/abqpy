@@ -1,8 +1,21 @@
 from typing import Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Odb.OdbBase import OdbBase
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_VALUE,
+    ACCELERATION,
+    EVENT_ACCELERATION,
+    FORCE,
+    OFF,
+    SOLVER_DEFAULT,
+    STEP,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .ActuatorAmplitude import ActuatorAmplitude
 from .DecayAmplitude import DecayAmplitude
 from .EquallySpacedAmplitude import EquallySpacedAmplitude
@@ -13,18 +26,6 @@ from .SmoothStepAmplitude import SmoothStepAmplitude
 from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
-from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import (
-    ABSOLUTE_VALUE,
-    ACCELERATION,
-    Boolean,
-    EVENT_ACCELERATION,
-    FORCE,
-    OFF,
-    SOLVER_DEFAULT,
-    STEP,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

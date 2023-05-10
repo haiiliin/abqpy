@@ -8,7 +8,9 @@ from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
 from .ConstrainedSketchDimension.ConstrainedSketchDimension import (
     ConstrainedSketchDimension,
 )
-from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import ConstrainedSketchGeometryArray
+from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import (
+    ConstrainedSketchGeometryArray,
+)
 from .ConstrainedSketchOptions.ConstrainedSketchImageOptions import (
     ConstrainedSketchImageOptions,
 )

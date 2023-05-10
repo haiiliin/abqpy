@@ -1,8 +1,27 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Datum.DatumAxis import DatumAxis
+from ..Model.ModelBase import ModelBase
+from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (
+    APPLY_FORCE,
+    AXIS_1,
+    GENERAL,
+    GLOBAL,
+    INTERNAL,
+    NORMAL,
+    OFF,
+    ON,
+    SHEAR,
+    UNIFORM,
+    UNSET,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .BodyCharge import BodyCharge
 from .BodyConcentrationFlux import BodyConcentrationFlux
 from .BodyCurrent import BodyCurrent
@@ -13,9 +32,9 @@ from .BoltLoad import BoltLoad
 from .ConcCharge import ConcCharge
 from .ConcConcFlux import ConcConcFlux
 from .ConcCurrent import ConcCurrent
-from .ConcPoreFluid import ConcPoreFluid
 from .ConcentratedForce import ConcentratedForce
 from .ConcentratedHeatFlux import ConcentratedHeatFlux
+from .ConcPoreFluid import ConcPoreFluid
 from .ConnectorForce import ConnectorForce
 from .ConnectorMoment import ConnectorMoment
 from .CoriolisForce import CoriolisForce
@@ -38,24 +57,6 @@ from .SurfaceCurrentDensity import SurfaceCurrentDensity
 from .SurfaceHeatFlux import SurfaceHeatFlux
 from .SurfacePoreFluid import SurfacePoreFluid
 from .SurfaceTraction import SurfaceTraction
-from ..Datum.DatumAxis import DatumAxis
-from ..Model.ModelBase import ModelBase
-from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    APPLY_FORCE,
-    AXIS_1,
-    Boolean,
-    GENERAL,
-    GLOBAL,
-    INTERNAL,
-    NORMAL,
-    OFF,
-    ON,
-    SHEAR,
-    UNIFORM,
-    UNSET,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
