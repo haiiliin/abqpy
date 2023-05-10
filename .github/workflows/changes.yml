@@ -27,6 +27,7 @@ jobs:
       run: pip install .[docs]
     - name: Build the documentation
       run: sphinx-build -b changes -j auto -W docs/source docs/build/changes
+    - uses: pre-commit/action@v3.0.0
     - name: Commit the changes
       run: |
         git config --global user.name "github-actions[bot]"
