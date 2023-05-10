@@ -1,12 +1,54 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    CENTROID,
+    COEFFICIENTS,
+    CONSTANTVOLUME,
+    DEFAULT,
+    ELASTIC_PLASTIC,
+    EXPONENTIAL,
+    FITTED_VALUE,
+    FORMULA,
+    FUNG_ANISOTROPIC,
+    GENERAL,
+    HALF_CYCLE,
+    IDEALGAS,
+    INCOMPRESSIBLE,
+    INCREMENTAL,
+    INPUT,
+    ISOTROPIC,
+    LINEAR,
+    LOGARITHMIC,
+    LONG_TERM,
+    MECHANICAL,
+    MSFLD,
+    NEWTONIAN,
+    NMORI,
+    NONE,
+    OFF,
+    ON,
+    POISSON,
+    PRONY,
+    RELATIVE_SLOPE_DROP,
+    STRAIN,
+    STRESS,
+    TABULAR,
+    TOTAL,
+    UNIAXIAL,
+    UNIFORM,
+    UNKNOWN,
+    VOLUMETRIC,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Acoustic.AcousticMedium import AcousticMedium
 from .Density.Density import Density
-from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
+from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.ViscoElastic.Viscoelastic import Viscoelastic
 from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
@@ -59,47 +101,6 @@ from .Regularization import Regularization
 from .User.Depvar import Depvar
 from .User.UserMaterial import UserMaterial
 from .User.UserOutputVariables import UserOutputVariables
-from ..UtilityAndView.abaqusConstants import (
-    Boolean,
-    CENTROID,
-    COEFFICIENTS,
-    CONSTANTVOLUME,
-    DEFAULT,
-    ELASTIC_PLASTIC,
-    EXPONENTIAL,
-    FITTED_VALUE,
-    FORMULA,
-    FUNG_ANISOTROPIC,
-    GENERAL,
-    HALF_CYCLE,
-    IDEALGAS,
-    INCOMPRESSIBLE,
-    INCREMENTAL,
-    INPUT,
-    ISOTROPIC,
-    LINEAR,
-    LOGARITHMIC,
-    LONG_TERM,
-    MECHANICAL,
-    MSFLD,
-    NEWTONIAN,
-    NMORI,
-    NONE,
-    OFF,
-    ON,
-    POISSON,
-    PRONY,
-    RELATIVE_SLOPE_DROP,
-    STRAIN,
-    STRESS,
-    TABULAR,
-    TOTAL,
-    UNIAXIAL,
-    UNIFORM,
-    UNKNOWN,
-    VOLUMETRIC,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

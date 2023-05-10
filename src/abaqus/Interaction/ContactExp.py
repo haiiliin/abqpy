@@ -1,7 +1,16 @@
-from typing import Union, overload, Optional
+from typing import Optional, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import (
+    GLOBAL,
+    OFF,
+    ON,
+    ORIGINAL,
+    PERIMETER,
+    Boolean,
+    SymbolicConstant,
+)
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .Interaction import Interaction
 from .MasterSlaveAssignment import MasterSlaveAssignment
@@ -10,7 +19,6 @@ from .SmoothingAssignment import SmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER, SymbolicConstant
 
 
 @abaqus_class_doc

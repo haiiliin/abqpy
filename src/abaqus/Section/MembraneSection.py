@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import DEFAULT, UNIFORM, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .RebarLayers import RebarLayers
 from .Section import Section
-from ..UtilityAndView.abaqusConstants import DEFAULT, SymbolicConstant, UNIFORM
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

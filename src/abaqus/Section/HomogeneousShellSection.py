@@ -1,13 +1,23 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    BENDING,
+    DEFAULT,
+    GRADIENT,
+    NO_IDEALIZATION,
+    OFF,
+    SIMPSON,
+    UNIFORM,
+    Boolean,
+)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import BENDING, Boolean, DEFAULT, GRADIENT, NO_IDEALIZATION, OFF, SIMPSON, UNIFORM
 
 
 @abaqus_class_doc

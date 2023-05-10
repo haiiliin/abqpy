@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import cast, Dict, List
+from typing import Dict, List, cast
 
 from sphinx.application import Sphinx
 from sphinx.builders.changes import ChangesBuilder

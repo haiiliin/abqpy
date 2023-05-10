@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc
 from typing_extensions import Literal
 
-from .StdInitialization import StdInitialization
+from abqpy.decorators import abaqus_class_doc
+
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import ADJUST
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .StdInitialization import StdInitialization
 
 
 @abaqus_class_doc

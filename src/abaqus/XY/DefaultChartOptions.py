@@ -2,13 +2,13 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import ON, Boolean
 from .Area import Area
 from .AreaStyle import AreaStyle
 from .Axis import Axis
 from .Legend import Legend
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
-from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 
 @abaqus_class_doc

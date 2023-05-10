@@ -1,9 +1,27 @@
-from abaqus.Connector.ConnectorDamage import ConnectorDamage  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorDamping import ConnectorDamping  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorElasticity import ConnectorElasticity  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorFailure import ConnectorFailure  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorFriction import ConnectorFriction  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorLock import ConnectorLock  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorPlasticity import ConnectorPlasticity  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorPotential import ConnectorPotential  # noqa # pylint: disable=unused-import
-from abaqus.Connector.ConnectorStop import ConnectorStop  # noqa # pylint: disable=unused-import
+from abaqus.Connector.ConnectorDamage import (  # noqa # pylint: disable=unused-import
+    ConnectorDamage,
+)
+from abaqus.Connector.ConnectorDamping import (  # noqa # pylint: disable=unused-import
+    ConnectorDamping,
+)
+from abaqus.Connector.ConnectorElasticity import (  # noqa # pylint: disable=unused-import
+    ConnectorElasticity,
+)
+from abaqus.Connector.ConnectorFailure import (  # noqa # pylint: disable=unused-import
+    ConnectorFailure,
+)
+from abaqus.Connector.ConnectorFriction import (  # noqa # pylint: disable=unused-import
+    ConnectorFriction,
+)
+from abaqus.Connector.ConnectorLock import (  # noqa # pylint: disable=unused-import
+    ConnectorLock,
+)
+from abaqus.Connector.ConnectorPlasticity import (  # noqa # pylint: disable=unused-import
+    ConnectorPlasticity,
+)
+from abaqus.Connector.ConnectorPotential import (  # noqa # pylint: disable=unused-import
+    ConnectorPotential,
+)
+from abaqus.Connector.ConnectorStop import (  # noqa # pylint: disable=unused-import
+    ConnectorStop,
+)

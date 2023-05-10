@@ -1,12 +1,20 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Fastener import Fastener
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, CONTINUUM, OFF, ON, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import (
+    CONTINUUM,
+    OFF,
+    ON,
+    UNIFORM,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Fastener import Fastener
 
 
 @abaqus_class_doc

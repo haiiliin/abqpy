@@ -1,8 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .LoadCase import LoadCase
 from ..Step.StepBase import StepBase
-from ..UtilityAndView.abaqusConstants import Boolean, ON
+from ..UtilityAndView.abaqusConstants import ON, Boolean
+from .LoadCase import LoadCase
 
 
 @abaqus_class_doc

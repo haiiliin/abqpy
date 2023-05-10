@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from .OdbSet import OdbSet
 
 
 @abaqus_class_doc

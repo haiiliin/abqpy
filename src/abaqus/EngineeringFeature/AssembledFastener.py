@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Fastener import Fastener
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, NORMALS, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import NORMALS, OFF, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Fastener import Fastener
 
 
 @abaqus_class_doc

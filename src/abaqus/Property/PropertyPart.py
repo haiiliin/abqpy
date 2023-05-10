@@ -1,11 +1,9 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .CompositeLayup import CompositeLayup
-from .MaterialOrientation import MaterialOrientation
-from .SectionAssignment import SectionAssignment
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.Datum import Datum
 from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
@@ -16,7 +14,6 @@ from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import (
     AXIS_1,
     AXIS_3,
-    Boolean,
     FROM_SECTION,
     GLOBAL,
     NORMAL_VECTOR,
@@ -25,8 +22,12 @@ from ..UtilityAndView.abaqusConstants import (
     SHELL,
     SINGLE_VALUE,
     STACK_3,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .CompositeLayup import CompositeLayup
+from .MaterialOrientation import MaterialOrientation
+from .SectionAssignment import SectionAssignment
 
 
 @abaqus_class_doc

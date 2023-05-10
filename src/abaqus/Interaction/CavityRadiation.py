@@ -1,13 +1,14 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Interaction import Interaction
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import BLOCKING_ALL, Boolean, OFF, ON
+from ..UtilityAndView.abaqusConstants import BLOCKING_ALL, OFF, ON, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Interaction import Interaction
 
 
 @abaqus_class_doc

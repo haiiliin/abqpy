@@ -2,18 +2,18 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .MessageArray import MessageArray
 from ..UtilityAndView.abaqusConstants import (
     ANALYSIS,
-    Boolean,
     DEFAULT,
+    LOOP,
     OFF,
     ON,
     PERCENTAGE,
     SINGLE,
+    Boolean,
     SymbolicConstant,
-    LOOP,
 )
+from .MessageArray import MessageArray
 
 
 @abaqus_class_doc

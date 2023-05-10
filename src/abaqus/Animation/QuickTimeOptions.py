@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from .._OptionsBase import _OptionsBase
 from ..UtilityAndView.abaqusConstants import RLE24, SIZE_ON_SCREEN, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from .._OptionsBase import _OptionsBase
 
 
 @abaqus_class_doc

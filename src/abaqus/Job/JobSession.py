@@ -1,10 +1,11 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Queue import Queue
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, LINUX
+from ..UtilityAndView.abaqusConstants import ALL, LINUX, OFF, ON, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Queue import Queue
 
 
 @abaqus_class_doc

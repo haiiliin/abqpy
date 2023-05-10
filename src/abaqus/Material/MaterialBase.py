@@ -1,9 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import FREQUENCY
 from .Acoustic.AcousticMedium import AcousticMedium
 from .Density.Density import Density
-from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
+from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.ViscoElastic.Viscoelastic import Viscoelastic
 from .Elastic.HypoElastic.Hypoelastic import Hypoelastic
 from .Elastic.Linear.Elastic import Elastic
@@ -58,7 +59,6 @@ from .User.Depvar import Depvar
 from .User.UserDefinedField import UserDefinedField
 from .User.UserMaterial import UserMaterial
 from .User.UserOutputVariables import UserOutputVariables
-from ..UtilityAndView.abaqusConstants import FREQUENCY
 
 
 @abaqus_class_doc

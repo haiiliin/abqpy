@@ -1,8 +1,14 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import ALL, Boolean, EVERY_TIME_INCREMENT, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    EVERY_TIME_INCREMENT,
+    OFF,
+    Boolean,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc

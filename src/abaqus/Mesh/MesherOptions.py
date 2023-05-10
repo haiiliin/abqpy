@@ -1,7 +1,15 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import ADVANCING_FRONT, Boolean, HEX, OFF, ON, QUAD_DOMINATED
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    ADVANCING_FRONT,
+    HEX,
+    OFF,
+    ON,
+    QUAD_DOMINATED,
+    Boolean,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

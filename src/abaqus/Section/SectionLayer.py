@@ -1,9 +1,15 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import AXIS_3, ROTATION_NONE, SymbolicConstant, THICKNESS_MAGNITUDE
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    AXIS_3,
+    ROTATION_NONE,
+    THICKNESS_MAGNITUDE,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

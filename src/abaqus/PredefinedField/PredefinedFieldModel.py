@@ -1,8 +1,25 @@
 from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Assembly.PartInstanceArray import PartInstanceArray
+from ..Model.ModelBase import ModelBase
+from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (
+    CONSTANT_RATIO,
+    CONSTANT_THROUGH_THICKNESS,
+    KINEMATIC_HARDENING,
+    LAST_STEP,
+    MAGNITUDE,
+    OFF,
+    STEP_END,
+    UNIFORM,
+    UNSET,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
@@ -13,22 +30,6 @@ from .Stress import Stress
 from .Temperature import Temperature
 from .Velocity import Velocity
 from .VoidsRatio import VoidsRatio
-from ..Assembly.PartInstanceArray import PartInstanceArray
-from ..Model.ModelBase import ModelBase
-from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    Boolean,
-    CONSTANT_THROUGH_THICKNESS,
-    CONSTANT_RATIO,
-    KINEMATIC_HARDENING,
-    LAST_STEP,
-    MAGNITUDE,
-    OFF,
-    STEP_END,
-    UNIFORM,
-    UNSET,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

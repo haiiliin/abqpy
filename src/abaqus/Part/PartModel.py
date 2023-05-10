@@ -1,10 +1,11 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Model.ModelBase import ModelBase
 from ..Part.Part import Part
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
