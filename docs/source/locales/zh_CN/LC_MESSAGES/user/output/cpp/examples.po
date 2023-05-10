@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:3
 msgid ""
-"The following examples illustrate how you use the output database "
-"commands to access data from an output database."
+"The following examples illustrate how you use the output database commands"
+" to access data from an output database."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:5
@@ -53,23 +53,23 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:13
 msgid ""
-"In addition, you can supply an optional assembly element set argument "
-"from the command line, in which case the program searches only the "
-"element set for the maximum value of von Mises stress."
+"In addition, you can supply an optional assembly element set argument from"
+" the command line, in which case the program searches only the element set"
+" for the maximum value of von Mises stress."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:15
 msgid ""
 "The following illustrates how you can run the example program from the "
-"system prompt. The program will search the element set ALL ELEMENTS in "
-"the viewer tutorial output database for the maximum value of von Mises "
+"system prompt. The program will search the element set ALL ELEMENTS in the"
+" viewer tutorial output database for the maximum value of von Mises "
 "stress:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:23
 msgid ""
-"If a command line argument is a String that contains spaces, some systems"
-" will interpret the String correctly only if it is enclosed in double "
+"If a command line argument is a String that contains spaces, some systems "
+"will interpret the String correctly only if it is enclosed in double "
 "quotation marks. For example, \"ALL ELEMENTS\"."
 msgstr ""
 
@@ -81,8 +81,8 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:28
 msgid ""
-"Use the following commands to retrieve the example program and the viewer"
-" tutorial output database:"
+"Use the following commands to retrieve the example program and the viewer "
+"tutorial output database:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:243
@@ -225,15 +225,15 @@ msgstr ""
 msgid ""
 "This example illustrates how you can decrease the size of an output "
 "database. In most cases a large output database results from excessive "
-"field output being generated over a large number of frames. The Abaqus "
-"C++ API does not support the deletion of data from an output database; "
-"however, you can use this example program to copy data from select frames"
-" into a second output database created by a **datacheck** analysis that "
-"has identical model data. The original analysis and the **datacheck** "
+"field output being generated over a large number of frames. The Abaqus C++"
+" API does not support the deletion of data from an output database; "
+"however, you can use this example program to copy data from select frames "
+"into a second output database created by a **datacheck** analysis that has"
+" identical model data. The original analysis and the **datacheck** "
 "analysis must be run using the same number of processors because the "
 "internal organization of data may differ based on the number of "
-"processors. The program uses addData to copy data at specified frames "
-"from the large output database into the new output database. The addData "
+"processors. The program uses addData to copy data at specified frames from"
+" the large output database into the new output database. The addData "
 "method works only when the model data in the two output databases are "
 "identical. For more information, see "
 "{py:meth}`~abaqus.Odb.FieldOutput.FieldOutput.addData`."
@@ -253,8 +253,8 @@ msgstr ""
 msgid ""
 "The name of the output database created with a **datacheck** analysis of "
 "the original problem. For more information, see [Abaqus/Standard and "
-"Abaqus/Explicit "
-"execution](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-analysisproc.htm?contextscope=all)."
+"Abaqus/Explicit execution](https://help.3ds.com/2021/English/DSSIMULIA_Est"
+"ablished/SIMACAEEXCRefMap/simaexc-c-analysisproc.htm?contextscope=all)."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:697
@@ -283,8 +283,8 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:708
 msgid ""
-"Copying large amounts of history data can result in the program creating "
-"a very large output database."
+"Copying large amounts of history data can result in the program creating a"
+" very large output database."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:711
@@ -293,25 +293,24 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:713
 msgid ""
-"Print a detailed report of all the operations performed during the "
-"running of the program. By default, no debug information is generated."
+"Print a detailed report of all the operations performed during the running"
+" of the program. By default, no debug information is generated."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:716
 msgid ""
-"If you are extracting data from a large output database, the debug option"
-" can generate large amounts of information."
+"If you are extracting data from a large output database, the debug option "
+"can generate large amounts of information."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:721
 msgid ""
-"The following is an example of how you can use this program in "
-"conjunction with the output database generated by the problem described "
-"in [Free ring under initial velocity: comparison of rate-independent and "
-"rate-dependent "
-"plasticity](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEBMKRefMap/simabmk-c-freering.htm?contextscope=all)."
-" Use the following commands to retrieve the example program and the "
-"benchmark input file:"
+"The following is an example of how you can use this program in conjunction"
+" with the output database generated by the problem described in [Free ring"
+" under initial velocity: comparison of rate-independent and rate-dependent"
+" plasticity](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMAC"
+"AEBMKRefMap/simabmk-c-freering.htm?contextscope=all). Use the following "
+"commands to retrieve the example program and the benchmark input file:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:728
@@ -337,19 +336,19 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:748
 msgid ""
-"The program displays the number of frames available in each step. For "
-"each step you must specify the number of increments between frames, which"
-" is the frequency at which the data will be copied to the new output "
-"database. Data for the first and last increment in each step are always "
-"copied. For example, if a step has 100 frames, and you enter a frame "
-"interval of 37, the program will copy data for frames 0, 37, 74, and 100."
+"The program displays the number of frames available in each step. For each"
+" step you must specify the number of increments between frames, which is "
+"the frequency at which the data will be copied to the new output database."
+" Data for the first and last increment in each step are always copied. For"
+" example, if a step has 100 frames, and you enter a frame interval of 37, "
+"the program will copy data for frames 0, 37, 74, and 100."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:750
 msgid ""
-"The following statement will run the executable program and read data "
-"from the small output database containing only model data and the large "
-"output database created by the benchmark example:"
+"The following statement will run the executable program and read data from"
+" the small output database containing only model data and the large output"
+" database created by the benchmark example:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:756
@@ -369,8 +368,8 @@ msgstr ""
 #: ../../user/output/cpp/examples.md:781
 msgid ""
 "This example illustrates how you can use the envelope operations to "
-"compute the stress range over a number of load cases. The example program"
-" does the following:"
+"compute the stress range over a number of load cases. The example program "
+"does the following:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:783
@@ -397,8 +396,8 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:787
 msgid ""
-"Writes the computed stress range into a new FieldOutput object in the new"
-" frame."
+"Writes the computed stress range into a new FieldOutput object in the new "
+"frame."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:795
@@ -413,26 +412,26 @@ msgstr ""
 
 #: ../../user/output/cpp/examples.md:870
 msgid ""
-"This example illustrates the use of a C++ program to read selected "
-"element integration point records from an output database and to "
-"postprocess the elbow element results. The program creates **X - Y** data"
-" that can be plotted with the *X–Y* plotting capability in Abaqus/CAE. "
-"The program performs the same function as the Fortran program described "
-"in [Creation of a data file to facilitate the postprocessing of elbow "
-"element results: "
-"FELBOW](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all)."
+"This example illustrates the use of a C++ program to read selected element"
+" integration point records from an output database and to postprocess the "
+"elbow element results. The program creates **X - Y** data that can be "
+"plotted with the *X–Y* plotting capability in Abaqus/CAE. The program "
+"performs the same function as the Fortran program described in [Creation "
+"of a data file to facilitate the postprocessing of elbow element results: "
+"FELBOW](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXA"
+"RefMap/simaexa-c-felbow.htm?contextscope=all)."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:872
 msgid ""
-"The program reads integration point data for elbow elements from an "
-"output database to visualize one of the following:"
+"The program reads integration point data for elbow elements from an output"
+" database to visualize one of the following:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:874
 msgid ""
-"Variation of an output variable around the circumference of a given elbow"
-" element, or"
+"Variation of an output variable around the circumference of a given elbow "
+"element, or"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:875
@@ -448,15 +447,15 @@ msgstr ""
 #: ../../user/output/cpp/examples.md:879
 msgid ""
 "To use option 2, you must ensure that the integration point coordinates "
-"(COORD) are written to the output database. For option 1 the *X*-data are"
-" data for the distance around the circumference of the elbow element, "
+"(COORD) are written to the output database. For option 1 the *X*-data are "
+"data for the distance around the circumference of the elbow element, "
 "measured along the middle surface, and the *Y*-data are data for the "
 "output variable. For option 2 the *X–Y* data are the current coordinates "
 "of the middle-surface integration points around the circumference of the "
-"elbow element, projected to a local coordinate system in the plane of the"
-" deformed cross-section. The origin of the local system coincides with "
-"the center of the cross-section; the plane of the deformed cross-section "
-"is defined as the plane that contains the center of the cross-section."
+"elbow element, projected to a local coordinate system in the plane of the "
+"deformed cross-section. The origin of the local system coincides with the "
+"center of the cross-section; the plane of the deformed cross-section is "
+"defined as the plane that contains the center of the cross-section."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:881
@@ -467,7 +466,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:883
-msgid "Your choice for storing results (ASCII file or a new output database)"
+msgid ""
+"Your choice for storing results (ASCII file or a new output database)"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:884
@@ -517,36 +517,34 @@ msgid ""
 "After successful compilation, the program's object code is linked "
 "automatically with the Abaqus object codes stored in the shared program "
 "library and interface library to build the executable program. Refer to "
-"[Customizing the Abaqus "
-"environment](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m"
-"-Environment-sb.htm?contextscope=all) to see which compile and link "
-"commands are used for a particular computer."
+"[Customizing the Abaqus environment](https://help.3ds.com/2021/English/DSS"
+"IMULIA_Established/SIMACAEILGRefMap/simailg-m-Environment-"
+"sb.htm?contextscope=all) to see which compile and link commands are used "
+"for a particular computer."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:902
 msgid ""
 "Before executing the program, run an analysis that creates an output "
 "database file containing the appropriate output. This analysis includes, "
-"for example, output for the elements and the integration point "
-"coordinates of the elements. Execute the program using the following "
-"command:"
+"for example, output for the elements and the integration point coordinates"
+" of the elements. Execute the program using the following command:"
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:908
 msgid ""
 "The program prompts for other information, such as the desired "
-"postprocessing option, part name, etc. The program processes the data and"
-" produces a text file or a new output database file that contains the "
+"postprocessing option, part name, etc. The program processes the data and "
+"produces a text file or a new output database file that contains the "
 "information required to visualize the elbow element results."
 msgstr ""
 
 #: ../../user/output/cpp/examples.md:910
 msgid ""
 "[Elastic-plastic collapse of a thin-walled elbow under in-plane bending "
-"and internal "
-"pressure](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-elbowcollapse.htm?contextscope=all)"
-" contains several figures that can be created with the aid of this "
-"program."
+"and internal pressure](https://help.3ds.com/2021/English/DSSIMULIA_Establi"
+"shed/SIMACAEEXARefMap/simaexa-c-elbowcollapse.htm?contextscope=all) "
+"contains several figures that can be created with the aid of this program."
 msgstr ""
 
 #~ msgid ""

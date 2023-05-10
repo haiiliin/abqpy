@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../reference/mdb/model/output.md:3
 msgid ""
-"Step output commands are used for configuring output requests, integrated"
-" output sections, diagnostic printing, monitoring, and restart."
+"Step output commands are used for configuring output requests, integrated "
+"output sections, diagnostic printing, monitoring, and restart."
 msgstr ""
 
 #: ../../reference/mdb/model/output.md:5
@@ -36,7 +36,8 @@ msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:1 of
-msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgid ""
+"Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:5
@@ -55,8 +56,9 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:9 of
 msgid ""
-"Check `OutputModel on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `OutputModel on help.3ds.com/2019 <https://help.3ds.com/2019/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 abaqus.StepOutput.OutputModel.OutputModel:11 of
@@ -143,16 +145,15 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:28 of
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:32 of
 msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
+"A SymbolicConstant specifying the analysis model type. Possible values are"
+" STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:35 of
@@ -163,8 +164,8 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:37 of
 msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:40 of
@@ -175,8 +176,8 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel:43 of
 msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
@@ -235,7 +236,8 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ""
+":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -250,12 +252,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ""
+":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -270,8 +273,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -294,16 +297,18 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+"A Boolean specifying that the step specified by **restartStep** should be "
+"terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ""
+":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgid ""
+"A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -319,7 +324,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ""
+":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -331,11 +337,13 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
+msgid ""
+"A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ""
+":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -350,8 +358,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+"A String specifying the name of the job that generated the results for the"
+" global model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -362,8 +370,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+"A boolean specifying the status of constraints created in a model, in the "
+"model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -386,12 +394,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+"A boolean specifying the status of interactions created in a model, in the"
+" model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ""
+":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -399,7 +408,8 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ""
+":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -433,7 +443,8 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ""
+":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -471,7 +482,8 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ""
+":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -526,20 +538,20 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+"A tuple of tuples of Strings specifying the linked child PartInstance name"
+" in the current model to the corresponding parent PartInstance name in a "
+"different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child Part name in the "
+"current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -559,7 +571,8 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ""
+":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -786,8 +799,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\,"
+" inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -824,15 +837,17 @@ msgstr ""
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:24
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:9 of
 msgid ""
-"Check `FieldOutputRequest on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all>`__."
+"Check `FieldOutputRequest on help.3ds.com/2019 <https://help.3ds.com/2019/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:36
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:36
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:14
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:14 of
-msgid "A String specifying the name of the step in which the object is created."
+msgid ""
+"A String specifying the name of the step in which the object is created."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:38
@@ -841,8 +856,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:16 of
 msgid ""
 "The SymbolicConstant MODEL or a Region object specifying the region from "
-"which output is requested. The SymbolicConstant MODEL represents the "
-"whole model. The default value is MODEL."
+"which output is requested. The SymbolicConstant MODEL represents the whole"
+" model. The default value is MODEL."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:42
@@ -853,8 +868,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:21 of
 msgid ""
 "A sequence of Strings specifying output request variable or component "
-"names, or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all"
-" default output variables for the given step. ALL represents all valid "
+"names, or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all "
+"default output variables for the given step. ALL represents all valid "
 "output variables. The default value is PRESELECT."
 msgstr ""
 
@@ -912,8 +927,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:34
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:35 of
 msgid ""
-"An Int specifying the number of intervals during the step at which output"
-" database states are to be written. The default value is 20."
+"An Int specifying the number of intervals during the step at which output "
+"database states are to be written. The default value is 20."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:59
@@ -922,9 +937,9 @@ msgstr ""
 msgid ""
 "A Boolean specifying when to write results to the output database. OFF "
 "indicates that output is written immediately after the time dictated by "
-"the specified number of intervals. ON indicates that output is written at"
-" the exact times dictated by the specified number of intervals. The "
-"default value is OFF."
+"the specified number of intervals. ON indicates that output is written at "
+"the exact times dictated by the specified number of intervals. The default"
+" value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:64
@@ -938,8 +953,8 @@ msgstr ""
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues:36
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:44 of
 msgid ""
-"The SymbolicConstant DEFAULT or a sequence of Ints specifying the section"
-" points for which output requested. The default is DEFAULT."
+"The SymbolicConstant DEFAULT or a sequence of Ints specifying the section "
+"points for which output requested. The default is DEFAULT."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:69
@@ -1023,8 +1038,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest:66 of
 msgid ""
 "A Boolean specifying whether the output domain is restricted to the "
-"exterior of the model. This argument is only valid if **region** = MODEL."
-" The default value is OFF."
+"exterior of the model. This argument is only valid if **region** = MODEL. "
+"The default value is OFF."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest:91
@@ -1087,16 +1102,17 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:24
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:9 of
 msgid ""
-"Check `HistoryOutputRequest on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all>`__."
+"Check `HistoryOutputRequest on help.3ds.com/2019 <https://help.3ds.com/201"
+"9/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequestpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:16 of
 msgid ""
 "The SymbolicConstant MODEL or a Region object specifying the region from "
-"which output is requested. The SymbolicConstant MODEL represents the "
-"whole model. The default value is MODEL. If the region is a surface "
-"region, the surface must lie within the general contact surface domain."
+"which output is requested. The SymbolicConstant MODEL represents the whole"
+" model. The default value is MODEL. If the region is a surface region, the"
+" surface must lie within the general contact surface domain."
 msgstr ""
 
 #: ../../docstring
@@ -1113,8 +1129,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:33
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:41 of
 msgid ""
-"The SymbolicConstant DEFAULT or a sequence of Ints specifying the section"
-" points for which output is requested. The default value is DEFAULT."
+"The SymbolicConstant DEFAULT or a sequence of Ints specifying the section "
+"points for which output is requested. The default value is DEFAULT."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:66
@@ -1128,7 +1144,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:71
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:41
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:49 of
-msgid "A String specifying the contour integral name. The default value is None."
+msgid ""
+"A String specifying the contour integral name. The default value is None."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:73
@@ -1161,17 +1178,16 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:60 of
 msgid ""
 "A SymbolicConstant specifying the stress intensity factor direction. "
-"Possible values are MTS, MERR, and K110. The **kFactorDirection** "
-"argument is valid only if **contourType** = K_FACTORS. The default value "
-"is MTS."
+"Possible values are MTS, MERR, and K110. The **kFactorDirection** argument"
+" is valid only if **contourType** = K_FACTORS. The default value is MTS."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:89
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:59
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:67 of
 msgid ""
-"A String specifying the integrated output section. The default value is "
-"an empty string."
+"A String specifying the integrated output section. The default value is an"
+" empty string."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:91
@@ -1186,8 +1202,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:74
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:82 of
 msgid ""
-"A Boolean specifying whether to associate the output request with a "
-"sensor definition. The default value is OFF."
+"A Boolean specifying whether to associate the output request with a sensor"
+" definition. The default value is OFF."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest:107
@@ -1209,8 +1225,9 @@ msgstr ""
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection:10
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:9 of
 msgid ""
-"Check `IntegratedOutputSection on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-integratedoutputsectionpyc.htm?contextscope=all>`__."
+"Check `IntegratedOutputSection on help.3ds.com/2019 <https://help.3ds.com/"
+"2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"integratedoutputsectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1218,7 +1235,8 @@ msgstr ""
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues:7
 #: abaqus.StepOutput.OutputModel.IntegratedOutputSection.surface:1
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:14 of
-msgid "A Region object specifying the surface over which the output is based."
+msgid ""
+"A Region object specifying the surface over which the output is based."
 msgstr ""
 
 #: ../../docstring
@@ -1229,8 +1247,8 @@ msgstr ""
 msgid ""
 "None or a Region object specifying the anchor point about which the "
 "integrated moment over the output region is computed or the "
-"SymbolicConstant None representing the global origin. The default value "
-"is None."
+"SymbolicConstant None representing the global origin. The default value is"
+" None."
 msgstr ""
 
 #: ../../docstring
@@ -1251,15 +1269,14 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.IntegratedOutputSection.refPointMotion:1
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:24 of
 msgid ""
-"A SymbolicConstant specifying how to relate the motion of **refPoint** to"
-" the average motion of the output region. A value of INDEPENDENT will "
-"allow the **refPoint** to move independent of the output region. A value "
-"of AVERAGE_TRANSLATION will set the displacement of the **refPoint** "
-"equal to the average translation of the output region. A value of AVERAGE"
-" will set the displacement and rotation of the **refPoint** equal to the "
-"average translation of the output region. The default value is "
-"INDEPENDENT.This argument is valid only when you include the **refPoint**"
-" argument."
+"A SymbolicConstant specifying how to relate the motion of **refPoint** to "
+"the average motion of the output region. A value of INDEPENDENT will allow"
+" the **refPoint** to move independent of the output region. A value of "
+"AVERAGE_TRANSLATION will set the displacement of the **refPoint** equal to"
+" the average translation of the output region. A value of AVERAGE will set"
+" the displacement and rotation of the **refPoint** equal to the average "
+"translation of the output region. The default value is INDEPENDENT.This "
+"argument is valid only when you include the **refPoint** argument."
 msgstr ""
 
 #: ../../docstring
@@ -1268,9 +1285,9 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.IntegratedOutputSection.localCsys:1
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:32 of
 msgid ""
-"None or a DatumCsys object specifying the local coordinate system used to"
-" express vector output. If **localCsys** = None, the degrees of freedom "
-"are defined in the global coordinate system. The default value is None."
+"None or a DatumCsys object specifying the local coordinate system used to "
+"express vector output. If **localCsys** = None, the degrees of freedom are"
+" defined in the global coordinate system. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -1280,8 +1297,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.IntegratedOutputSection:36 of
 msgid ""
 "A Boolean specifying that the coordinate system be projected onto the "
-"**surface** such that the 1-axis is normal to the **surface**. Projection"
-" onto a planar **surface** is such that the 1-axis is normal to the "
+"**surface** such that the 1-axis is normal to the **surface**. Projection "
+"onto a planar **surface** is such that the 1-axis is normal to the "
 "surface, and a projection onto a nonplanar **surface** is such that a "
 "least-squares fit surface will be used. The default value is OFF."
 msgstr ""
@@ -1299,16 +1316,17 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.OutputModel.TimePoint:9
 #: abaqus.StepOutput.TimePoint.TimePoint:15 of
 msgid ""
-"Check `TimePoint on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-timepointpyc.htm?contextscope=all>`__."
+"Check `TimePoint on help.3ds.com/2019 <https://help.3ds.com/2019/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"timepointpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.OutputModel.OutputModel.TimePoint:14
 #: abaqus.StepOutput.TimePoint.TimePoint:27
 #: abaqus.StepOutput.TimePoint.TimePoint.points:1 of
 msgid ""
-"A sequence of sequences of Floats specifying time points at which data "
-"are written to the output database or restart files."
+"A sequence of sequences of Floats specifying time points at which data are"
+" written to the output database or restart files."
 msgstr ""
 
 #: abaqus.StepOutput.OutputModel.OutputModel.TimePoint:17
@@ -1350,8 +1368,9 @@ msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep:12 of
 msgid ""
-"Check `OutputStep on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `OutputStep on help.3ds.com/2019 <https://help.3ds.com/2019/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -1370,23 +1389,28 @@ msgid ""
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
+msgid ""
+":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Boolean specifying whether the step has a perturbation procedure type."
+msgid ""
+"A Boolean specifying whether the step has a perturbation procedure type."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
+msgid ""
+":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid "A Boolean specifying whether the step has a mechanical procedure type."
+msgid ""
+"A Boolean specifying whether the step has a mechanical procedure type."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
+msgid ""
+":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -1477,7 +1501,8 @@ msgid "A Control object."
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
-msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
+msgid ""
+":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
 msgstr ""
 
 #: ../../None:22:<autosummary>:1
@@ -1552,8 +1577,8 @@ msgstr ""
 #: ../../None:5:<autosummary>:1 abaqus.StepOutput.Monitor.Monitor:16
 #: abaqus.StepOutput.OutputStep.OutputStep.Monitor:1 of
 msgid ""
-"This method creates a request for a degree of freedom to be monitored in "
-"a general or modal procedure."
+"This method creates a request for a degree of freedom to be monitored in a"
+" general or modal procedure."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -1587,8 +1612,9 @@ msgstr ""
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:15
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:9 of
 msgid ""
-"Check `DiagnosticPrint on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-diagnosticprintpyc.htm?contextscope=all>`__."
+"Check `DiagnosticPrint on help.3ds.com/2019 <https://help.3ds.com/2019/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"diagnosticprintpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:25
@@ -1614,9 +1640,9 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.DiagnosticPrint.dmass:1
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:19 of
 msgid ""
-"A Boolean specifying a request for a column containing the percent change"
-" in total mass of the model as a result of mass scaling. This argument is"
-" valid only for an Abaqus/Explicit analysis. The default value is OFF "
+"A Boolean specifying a request for a column containing the percent change "
+"in total mass of the model as a result of mass scaling. This argument is "
+"valid only for an Abaqus/Explicit analysis. The default value is OFF "
 "unless mass scaling is present in the model."
 msgstr ""
 
@@ -1624,9 +1650,9 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.DiagnosticPrint.etotal:1
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:24 of
 msgid ""
-"A Boolean specifying a request for a column containing the energy balance"
-" of the model. This argument is valid only for an Abaqus/Explicit "
-"analysis. The default value is OFF."
+"A Boolean specifying a request for a column containing the energy balance "
+"of the model. This argument is valid only for an Abaqus/Explicit analysis."
+" The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:40
@@ -1643,8 +1669,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:31 of
 msgid ""
 "A Boolean specifying a request for detailed output of which elements are "
-"being removed or reactivated in the step. This argument is valid only for"
-" an Abaqus/Standard analysis. The default value is OFF."
+"being removed or reactivated in the step. This argument is valid only for "
+"an Abaqus/Standard analysis. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:48
@@ -1652,17 +1678,17 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:35 of
 msgid ""
 "A Boolean specifying a request for detailed output of element and "
-"integration point numbers for which the plasticity algorithms have failed"
-" to converge in the material routines. This argument is valid only for an"
-" Abaqus/Standard analysis. The default value is OFF."
+"integration point numbers for which the plasticity algorithms have failed "
+"to converge in the material routines. This argument is valid only for an "
+"Abaqus/Standard analysis. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:53
 #: abaqus.StepOutput.OutputStep.DiagnosticPrint.residual:1
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:40 of
 msgid ""
-"A Boolean specifying a request for output of equilibrium residuals during"
-" the equilibrium iterations. This argument is valid only for an "
+"A Boolean specifying a request for output of equilibrium residuals during "
+"the equilibrium iterations. This argument is valid only for an "
 "Abaqus/Standard analysis. The default value is ON."
 msgstr ""
 
@@ -1677,9 +1703,9 @@ msgstr ""
 #: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:59
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:46 of
 msgid ""
-"A Boolean specifying a request for information regarding the actual "
-"number of equations and the wavefront in each iteration. This argument is"
-" valid only for an Abaqus/Standard analysis. The default value is ON."
+"A Boolean specifying a request for information regarding the actual number"
+" of equations and the wavefront in each iteration. This argument is valid "
+"only for an Abaqus/Standard analysis. The default value is ON."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint:63
@@ -1687,8 +1713,8 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:50 of
 msgid ""
 "A Boolean specifying a request for a column containing the total mass of "
-"the model as a result of mass scaling. This argument is valid only for an"
-" Abaqus/Explicit analysis. The default value is OFF."
+"the model as a result of mass scaling. This argument is valid only for an "
+"Abaqus/Explicit analysis. The default value is OFF."
 msgstr ""
 
 #: abaqus.StepOutput.OutputStep.OutputStep.DiagnosticPrint:54 of
@@ -1703,8 +1729,9 @@ msgstr ""
 #: abaqus.StepOutput.Monitor.Monitor:14
 #: abaqus.StepOutput.OutputStep.OutputStep.Monitor:10 of
 msgid ""
-"Check `Monitor on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitorpyc.htm?contextscope=all>`__."
+"Check `Monitor on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"monitorpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.Monitor.Monitor:25
@@ -1716,19 +1743,19 @@ msgstr ""
 #: abaqus.StepOutput.Monitor.Monitor:27
 #: abaqus.StepOutput.OutputStep.OutputStep.Monitor:15 of
 msgid ""
-"A SymbolicConstant specifying the degree of freedom to be monitored at "
-"the node. Possible values are:  - U1 - U2 - U3 - UR1 - UR2 - UR3 - WARP -"
-" FLUID_PRESSURE - ELECTRICAL_POTENTIAL - NT11 - NT30 - NN11 - NN30  The "
-"NT identifiers are not available for mass diffusion. The NN identifiers "
-"are available only for mass diffusion."
+"A SymbolicConstant specifying the degree of freedom to be monitored at the"
+" node. Possible values are:  - U1 - U2 - U3 - UR1 - UR2 - UR3 - WARP - "
+"FLUID_PRESSURE - ELECTRICAL_POTENTIAL - NT11 - NT30 - NN11 - NN30  The NT "
+"identifiers are not available for mass diffusion. The NN identifiers are "
+"available only for mass diffusion."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.Monitor.Monitor:27
 #: abaqus.StepOutput.OutputStep.Monitor.dof:1
 #: abaqus.StepOutput.OutputStep.OutputStep.Monitor:15 of
 msgid ""
-"A SymbolicConstant specifying the degree of freedom to be monitored at "
-"the node. Possible values are:"
+"A SymbolicConstant specifying the degree of freedom to be monitored at the"
+" node. Possible values are:"
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.Monitor.Monitor:30
@@ -1837,25 +1864,26 @@ msgstr ""
 #: abaqus.StepOutput.OutputStep.OutputStep.Restart:9
 #: abaqus.StepOutput.Restart.Restart:14 of
 msgid ""
-"Check `Restart on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-restartpyc.htm?contextscope=all>`__."
+"Check `Restart on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"restartpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.OutputStep.OutputStep.Restart:12
 #: abaqus.StepOutput.Restart.Restart:24
 #: abaqus.StepOutput.Restart.Restart.numberIntervals:1 of
 msgid ""
-"An Int specifying the number of intervals during the step at which "
-"restart information will be written. The default value is 0. The default "
-"value is 1."
+"An Int specifying the number of intervals during the step at which restart"
+" information will be written. The default value is 0. The default value is"
+" 1."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.OutputStep.OutputStep.Restart:15
 #: abaqus.StepOutput.Restart.Restart:27
 #: abaqus.StepOutput.Restart.Restart.timeMarks:1 of
 msgid ""
-"A Boolean specifying whether to use exact time marks for writing during "
-"an analysis. The default value is OFF. The default value is OFF."
+"A Boolean specifying whether to use exact time marks for writing during an"
+" analysis. The default value is OFF. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.StepOutput.OutputStep.OutputStep.Restart:18
@@ -1968,21 +1996,22 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate:1 of
 msgid ""
-"This method deactivates the field output request in the specified step "
-"and all its subsequent steps."
+"This method deactivates the field output request in the specified step and"
+" all its subsequent steps."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate:4 of
 msgid ""
-"Check `FieldOutputRequest.deactivate on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all"
-"#simaker-fieldoutputrequestdeactivatepyc>`__."
+"Check `FieldOutputRequest.deactivate on help.3ds.com/2019 <https://help.3d"
+"s.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all#simaker-"
+"fieldoutputrequestdeactivatepyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate:7 of
 msgid ""
-"A String specifying the name of the step in which the field output "
-"request is deactivated."
+"A String specifying the name of the step in which the field output request"
+" is deactivated."
 msgstr ""
 
 #: ../../docstring
@@ -1995,15 +2024,16 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move:1 of
 msgid ""
-"This method moves the field output request state object from one step to "
-"a different step."
+"This method moves the field output request state object from one step to a"
+" different step."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move:4 of
 msgid ""
-"Check `FieldOutputRequest.move on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all"
-"#simaker-fieldoutputrequestmovepyc>`__."
+"Check `FieldOutputRequest.move on help.3ds.com/2019 <https://help.3ds.com/"
+"2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all#simaker-"
+"fieldoutputrequestmovepyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move:7 of
@@ -2014,27 +2044,28 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.move:10 of
 msgid ""
-"A String specifying the name of the step to which the field output "
-"request state is moved."
+"A String specifying the name of the step to which the field output request"
+" state is moved."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset:1 of
 msgid ""
-"This method resets the field output request state of the specified step "
-"to the state of the previous step."
+"This method resets the field output request state of the specified step to"
+" the state of the previous step."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset:5 of
 msgid ""
-"Check `FieldOutputRequest.reset on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all"
-"#simaker-fieldoutputrequestresetpyc>`__."
+"Check `FieldOutputRequest.reset on help.3ds.com/2019 <https://help.3ds.com"
+"/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all#simaker-"
+"fieldoutputrequestresetpyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.reset:8 of
 msgid ""
-"A String specifying the name of the step in which the field output "
-"request state is reset."
+"A String specifying the name of the step in which the field output request"
+" state is reset."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.resume:1 of
@@ -2045,15 +2076,16 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues:1 of
 msgid ""
-"This method modifies the data for an existing FieldOutputRequest object "
-"in the step where it is created."
+"This method modifies the data for an existing FieldOutputRequest object in"
+" the step where it is created."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValues:5 of
 msgid ""
-"Check `FieldOutputRequest.setValues on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all"
-"#simaker-fieldoutputrequestsetvaluespyc>`__."
+"Check `FieldOutputRequest.setValues on help.3ds.com/2019 <https://help.3ds"
+".com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all#simaker-"
+"fieldoutputrequestsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep:1 of
@@ -2064,23 +2096,24 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep:5 of
 msgid ""
-"Check `FieldOutputRequest.setValuesInStep on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all"
-"#simaker-fieldoutputrequestsetvaluesinsteppyc>`__."
+"Check `FieldOutputRequest.setValuesInStep on help.3ds.com/2019 <https://he"
+"lp.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequestpyc.htm?contextscope=all#simaker-"
+"fieldoutputrequestsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep:8 of
 msgid ""
-"A String specifying the name of the step in which the field output "
-"request is modified."
+"A String specifying the name of the step in which the field output request"
+" is modified."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.setValuesInStep:10
 #: of
 msgid ""
 "A sequence of Strings specifying output request variable or component "
-"names, or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all"
-" default output variables for the given step. ALL represents all valid "
+"names, or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all "
+"default output variables for the given step. ALL represents all valid "
 "output variables."
 msgstr ""
 
@@ -2095,9 +2128,9 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep:27
 #: of
 msgid ""
-"A String specifying the name of a time point object. The default value is"
-" equal to the number of intervals during the step at which output "
-"database states are to be written. The default value is None."
+"A String specifying the name of a time point object. The default value is "
+"equal to the number of intervals during the step at which output database "
+"states are to be written. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -2115,17 +2148,18 @@ msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState:1 of
 msgid ""
-"The FieldOutputRequestState object stores the propagating data of a field"
-" output request current in a step. One instance of this object is created"
-" internally by the FieldOutputRequest object for each step. The instance "
-"is also deleted internally by the FieldOutputRequest object. The "
+"The FieldOutputRequestState object stores the propagating data of a field "
+"output request current in a step. One instance of this object is created "
+"internally by the FieldOutputRequest object for each step. The instance is"
+" also deleted internally by the FieldOutputRequest object. The "
 "FieldOutputRequestState object has no constructor or methods."
 msgstr ""
 
 #: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState:13 of
 msgid ""
-"Check `FieldOutputRequestState on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequeststatepyc.htm?contextscope=all>`__."
+"Check `FieldOutputRequestState on help.3ds.com/2019 <https://help.3ds.com/"
+"2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fieldoutputrequeststatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2141,8 +2175,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyType:1
 #: of
 msgid ""
-"A String specifying a read-only SymbolicConstant describing which type of"
-" frequency of output is used. Possible values areFREQUENCY, "
+"A String specifying a read-only SymbolicConstant describing which type of "
+"frequency of output is used. Possible values areFREQUENCY, "
 "NUMBER_INTERVALS, TIME_INTERVAL, TIME_POINT and MODES. The default value "
 "depends on the procedure. The default value is an empty string."
 msgstr ""
@@ -2206,10 +2240,10 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variables:1
 #: of
 msgid ""
-"A tuple of Strings specifying output request variable or component names,"
-" or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all "
-"default output variables for the given step. ALL represents all valid "
-"output variables."
+"A tuple of Strings specifying output request variable or component names, "
+"or the SymbolicConstant PRESELECT or ALL. PRESELECT represents all default"
+" output variables for the given step. ALL represents all valid output "
+"variables."
 msgstr ""
 
 #: ../../docstring
@@ -2230,9 +2264,9 @@ msgstr ""
 #: abaqus.StepOutput.OutputModel.HistoryOutputRequest.region:1 of
 msgid ""
 "The SymbolicConstant MODEL or a Region object specifying the region from "
-"which output is requested. The SymbolicConstant MODEL represents the "
-"whole model. The default value is MODEL.If the region is a surface "
-"region, the surface must lie within the general contact surface domain."
+"which output is requested. The SymbolicConstant MODEL represents the whole"
+" model. The default value is MODEL.If the region is a surface region, the "
+"surface must lie within the general contact surface domain."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate:1 of
@@ -2243,9 +2277,10 @@ msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate:4 of
 msgid ""
-"Check `HistoryOutputRequest.deactivate on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all"
-"#simaker-historyoutputrequestdeactivatepyc>`__."
+"Check `HistoryOutputRequest.deactivate on help.3ds.com/2019 <https://help."
+"3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequestpyc.htm?contextscope=all#simaker-"
+"historyoutputrequestdeactivatepyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate:7 of
@@ -2256,15 +2291,16 @@ msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move:1 of
 msgid ""
-"This method moves the history output request state object from one step "
-"to a different step."
+"This method moves the history output request state object from one step to"
+" a different step."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move:4 of
 msgid ""
-"Check `HistoryOutputRequest.move on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all"
-"#simaker-historyoutputrequestmovepyc>`__."
+"Check `HistoryOutputRequest.move on help.3ds.com/2019 <https://help.3ds.co"
+"m/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequestpyc.htm?contextscope=all#simaker-"
+"historyoutputrequestmovepyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move:7 of
@@ -2281,15 +2317,16 @@ msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset:1 of
 msgid ""
-"This method resets the history output request state of the specified step"
-" to the state of the previous step."
+"This method resets the history output request state of the specified step "
+"to the state of the previous step."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset:5 of
 msgid ""
-"Check `HistoryOutputRequest.reset on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all"
-"#simaker-historyoutputrequestresetpyc>`__."
+"Check `HistoryOutputRequest.reset on help.3ds.com/2019 <https://help.3ds.c"
+"om/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequestpyc.htm?contextscope=all#simaker-"
+"historyoutputrequestresetpyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset:8 of
@@ -2313,15 +2350,16 @@ msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:1 of
 msgid ""
-"This method modifies the data for an existing HistoryOutputRequest object"
-" in the step where it is created."
+"This method modifies the data for an existing HistoryOutputRequest object "
+"in the step where it is created."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:5 of
 msgid ""
-"Check `HistoryOutputRequest.setValues on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all"
-"#simaker-historyoutputrequestsetvaluespyc>`__."
+"Check `HistoryOutputRequest.setValues on help.3ds.com/2019 <https://help.3"
+"ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequestpyc.htm?contextscope=all#simaker-"
+"historyoutputrequestsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep:1
@@ -2334,9 +2372,10 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep:5
 #: of
 msgid ""
-"Check `HistoryOutputRequest.setValuesInStep on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all"
-"#simaker-historyoutputrequestsetvaluesinsteppyc>`__."
+"Check `HistoryOutputRequest.setValuesInStep on help.3ds.com/2019 <https://"
+"help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-historyoutputrequestpyc.htm?contextscope=all#simaker-"
+"historyoutputrequestsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValuesInStep:8
@@ -2370,24 +2409,25 @@ msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState:13 of
 msgid ""
-"Check `HistoryOutputRequestState on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequeststatepyc.htm?contextscope=all>`__."
+"Check `HistoryOutputRequestState on help.3ds.com/2019 <https://help.3ds.co"
+"m/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"historyoutputrequeststatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.frequencyState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the history output"
-" request frequency. Possible values are UNSET, SET, and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the history output "
+"request frequency. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.modesState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the history output"
-" request modes. Possible values are UNSET, SET, and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the history output "
+"request modes. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -2395,8 +2435,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timePointState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the history output"
-" request. Possible values are UNSET, SET, and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the history output "
+"request. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -2413,8 +2453,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.timeIntervalState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the history output"
-" request time interval. Possible values are UNSET, SET, and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the history output "
+"request time interval. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -2430,8 +2470,8 @@ msgstr ""
 #: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState.variablesState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the history output"
-" request variables. Possible values are UNSET, SET, and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the history output "
+"request variables. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection:1 of
@@ -2448,9 +2488,10 @@ msgstr ""
 #: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues:4
 #: of
 msgid ""
-"Check `IntegratedOutputSection.setValues on help.3ds.com/2019 "
-"<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-integratedoutputsectionpyc.htm?contextscope=all"
-"#simaker-integratedoutputsectionsetvaluespyc>`__."
+"Check `IntegratedOutputSection.setValues on help.3ds.com/2019 <https://hel"
+"p.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"integratedoutputsectionpyc.htm?contextscope=all#simaker-"
+"integratedoutputsectionsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.StepOutput.Monitor.Monitor:1 of
@@ -2467,8 +2508,8 @@ msgstr ""
 
 #: abaqus.StepOutput.TimePoint.TimePoint:1 of
 msgid ""
-"The TimePoint object defines time points at which data are written to the"
-" output database or restart files."
+"The TimePoint object defines time points at which data are written to the "
+"output database or restart files."
 msgstr ""
 
 #: abaqus.StepOutput.TimePoint.TimePoint:12 of

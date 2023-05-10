@@ -36,12 +36,12 @@ msgstr ""
 #: ../../user/python/use-scripts/interact.md:7
 msgid ""
 "You can use the `addMessageCallback` method to associate an event-driven "
-"function with a particular message that is retrieved from Abaqus/Standard"
-" or Abaqus/Explicit. When Abaqus/CAE retrieves the specific message from "
+"function with a particular message that is retrieved from Abaqus/Standard "
+"or Abaqus/Explicit. When Abaqus/CAE retrieves the specific message from "
 "Abaqus/Standard or Abaqus/Explicit, the function executes and takes the "
-"necessary action. This type of function is called a callback function. "
-"The `addMessageCallback` method specifies which callback function to use "
-"for which message."
+"necessary action. This type of function is called a callback function. The"
+" `addMessageCallback` method specifies which callback function to use for "
+"which message."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:9
@@ -69,8 +69,8 @@ msgstr ""
 #: ../../user/python/use-scripts/interact.md:16
 msgid ""
 "These arguments allow you to associate the callback function with both a "
-"particular job and a particular message. Alternatively, you can associate"
-" the callback function with all jobs and all messages. The commands are "
+"particular job and a particular message. Alternatively, you can associate "
+"the callback function with all jobs and all messages. The commands are "
 "described in {doc}`/reference/kernel/messaging`."
 msgstr ""
 
@@ -84,15 +84,15 @@ msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:26
 msgid ""
-"**jobName**: A String specifying the name of the job to be monitored. You"
-" can also use the SymbolicConstant ANY_JOB that specifies that the "
-"callback function will monitor messages from all jobs."
+"**jobName**: A String specifying the name of the job to be monitored. You "
+"can also use the SymbolicConstant ANY_JOB that specifies that the callback"
+" function will monitor messages from all jobs."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:28
 msgid ""
-"**messageType**: A SymbolicConstant specifying the message type that will"
-" call the callback function. You can also use the SymbolicConstant "
+"**messageType**: A SymbolicConstant specifying the message type that will "
+"call the callback function. You can also use the SymbolicConstant "
 "ANY_MESSAGE_TYPE that specifies that all messages will call the callback "
 "function. The following is a list of the message types issued by "
 "Abaqus/Standard and Abaqus/Explicit:"
@@ -271,7 +271,8 @@ msgid "HEALER_PHASE"
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:78
-msgid "**processId**: An Int specifying the process ID of the analysis program."
+msgid ""
+"**processId**: An Int specifying the process ID of the analysis program."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:80
@@ -283,8 +284,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:82
 msgid ""
-"**timeStamp**: An Int specifying the time the message was sent in seconds"
-" since 00:00:00 UTC, January 1, 1970."
+"**timeStamp**: An Int specifying the time the message was sent in seconds "
+"since 00:00:00 UTC, January 1, 1970."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:84
@@ -308,8 +309,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:94
 msgid ""
-"From the Abaqus/CAE command line interface type from simpleMonitor import"
-" printMessages"
+"From the Abaqus/CAE command line interface type from simpleMonitor import "
+"printMessages"
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:95
@@ -336,14 +337,14 @@ msgstr ""
 msgid ""
 "You can use the Job object's `waitForCompletion` method to synchronize "
 "your script with a job that has been submitted. If you call the "
-"`waitForCompletion` method after you submit a job, the script waits until"
-" the analysis is complete before continuing. When the script continues, "
-"you should check the status of the job to ensure that the job completed "
+"`waitForCompletion` method after you submit a job, the script waits until "
+"the analysis is complete before continuing. When the script continues, you"
+" should check the status of the job to ensure that the job completed "
 "successfully and did not abort. For example, the script described in "
 "Reproducing the cantilever beam tutorial uses `waitForCompletion` to "
 "ensure that the analysis job has finished executing successfully before "
-"the script opens the resulting output database and displays a contour "
-"plot of the results."
+"the script opens the resulting output database and displays a contour plot"
+" of the results."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:149
@@ -369,13 +370,13 @@ msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:173
 msgid ""
-"The following section describes how you can use a callback function as an"
-" alternative to the `waitForCompletion` method described in [waiting for "
-"a job to complete]. The example uses messaging commands to synchronize a "
+"The following section describes how you can use a callback function as an "
+"alternative to the `waitForCompletion` method described in [waiting for a "
+"job to complete]. The example uses messaging commands to synchronize a "
 "script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging "
 "commands set up a callback function that monitors messages from "
-"Abaqus/Standard and Abaqus/Explicit. When the desired message is "
-"received, the callback function executes."
+"Abaqus/Standard and Abaqus/Explicit. When the desired message is received,"
+" the callback function executes."
 msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:175
@@ -401,8 +402,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/interact.md:211
 msgid ""
-"You can use the `removeMessageCallback` method at the end of the callback"
-" function to remove it from the system. The arguments to the "
+"You can use the `removeMessageCallback` method at the end of the callback "
+"function to remove it from the system. The arguments to the "
 "`removeMessageCallback` method must be identical to the arguments to the "
 "corresponding `addMessageCallback` command that set up the callback "
 "function."

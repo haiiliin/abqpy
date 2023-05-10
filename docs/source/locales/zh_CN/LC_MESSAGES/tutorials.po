@@ -55,11 +55,11 @@ msgstr ""
 #: ../../tutorials.md:17
 msgid ""
 "The most convenient way to build an Abaqus model is to do it in Abaqus "
-"CAE. When we use the Abaqus/CAE graphical user interface (GUI) to create "
-"a model and to visualize the results, commands are issued internally by "
-"Abaqus/CAE after every operation. These commands reflect the geometry you"
-" created along with the options and settings you selected from each "
-"dialog box."
+"CAE. When we use the Abaqus/CAE graphical user interface (GUI) to create a"
+" model and to visualize the results, commands are issued internally by "
+"Abaqus/CAE after every operation. These commands reflect the geometry you "
+"created along with the options and settings you selected from each dialog "
+"box."
 msgstr ""
 
 #: ../../tutorials.md:22
@@ -73,14 +73,14 @@ msgstr ""
 
 #: ../../tutorials.md:27
 msgid ""
-"However, if type hints are provided in Python scripting of Abaqus, things"
-" will getting much easier, and that is what `abqpy` does."
+"However, if type hints are provided in Python scripting of Abaqus, things "
+"will getting much easier, and that is what `abqpy` does."
 msgstr ""
 
 #: ../../tutorials.md:30
 msgid ""
-"The example model described in the following is simple, there is a square"
-" structure, the vertical displacement of the bottom face is fixed, and "
+"The example model described in the following is simple, there is a square "
+"structure, the vertical displacement of the bottom face is fixed, and "
 "there is a vertical pressure in the top surface, the Abaqus model is "
 "showed as follows:"
 msgstr ""
@@ -105,16 +105,16 @@ msgstr ""
 
 #: ../../tutorials.md:53
 msgid ""
-"`THREE_D` indicates the part is a 3D part, `DEFORMABLE_BODY` indicates "
-"the part is deformable."
+"`THREE_D` indicates the part is a 3D part, `DEFORMABLE_BODY` indicates the"
+" part is deformable."
 msgstr ""
 
 #: ../../tutorials.md:55
 msgid ""
-"Module `driverUtils` contains an important function "
-"`executeOnCaeStartup`, this function will be execute each time we open "
-"the Abaqus, so we need to call this function in our Python script. Now, "
-"the header of our Python script would be like:"
+"Module `driverUtils` contains an important function `executeOnCaeStartup`,"
+" this function will be execute each time we open the Abaqus, so we need to"
+" call this function in our Python script. Now, the header of our Python "
+"script would be like:"
 msgstr ""
 
 #: ../../tutorials.md:65
@@ -123,8 +123,8 @@ msgstr ""
 
 #: ../../tutorials.md:67
 msgid ""
-"First we need to create a sketch that will be used to create the part, we"
-" need to use "
+"First we need to create a sketch that will be used to create the part, we "
+"need to use "
 "{py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to "
 "create a sketch:"
 msgstr ""
@@ -138,8 +138,8 @@ msgstr ""
 #: ../../tutorials.md:82
 msgid ""
 "The first line creates a 3D and deformable part. Then we use the "
-"{py:meth}`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method "
-"to create a part using the sketch."
+"{py:meth}`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method to"
+" create a part using the sketch."
 msgstr ""
 
 #: ../../tutorials.md:84
@@ -149,15 +149,15 @@ msgstr ""
 #: ../../tutorials.md:86
 msgid ""
 "Unlike building a model in Abaqus/CAE, we can just click the nodes/faces "
-"to create sets, when we use a Python script to build the model, we can "
-"use coordinates to find nodes/faces we need."
+"to create sets, when we use a Python script to build the model, we can use"
+" coordinates to find nodes/faces we need."
 msgstr ""
 
 #: ../../tutorials.md:88
 msgid ""
 "We can use {py:meth}`~abaqus.Region.RegionPart.RegionPart.Set` and "
-"{py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets "
-"and surfaces:"
+"{py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and"
+" surfaces:"
 msgstr ""
 
 #: ../../tutorials.md:98
@@ -166,8 +166,8 @@ msgstr ""
 
 #: ../../tutorials.md:100
 msgid ""
-"We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance`"
-" to create instances："
+"We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` "
+"to create instances："
 msgstr ""
 
 #: ../../tutorials.md:106
@@ -189,9 +189,8 @@ msgstr ""
 
 #: ../../tutorials.md:121
 msgid ""
-"Then we create a "
-"{py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection`"
-" and assign the section to the part region "
+"Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.Homog"
+"eneousSolidSection` and assign the section to the part region "
 "({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):"
 msgstr ""
 
@@ -224,17 +223,17 @@ msgstr ""
 
 #: ../../tutorials.md:149
 msgid ""
-"We can use "
-"{py:meth}`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC`"
-" to create a displacement boundary condition:"
+"We can use {py:meth}`~abaqus.BoundaryCondition.BoundaryConditionModel.Boun"
+"daryConditionModel.DisplacementBC` to create a displacement boundary "
+"condition:"
 msgstr ""
 
 #: ../../tutorials.md:157
 msgid ""
 "It should be noted that region of the boundary condition should be a "
-"region of the instances instead of parts, since sets created in parts are"
-" copied to the instance, we can use the sets in the parts that we defined"
-" before."
+"region of the instances instead of parts, since sets created in parts are "
+"copied to the instance, we can use the sets in the parts that we defined "
+"before."
 msgstr ""
 
 #: ../../tutorials.md:159
@@ -243,8 +242,8 @@ msgstr ""
 
 #: ../../tutorials.md:161
 msgid ""
-"We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create"
-" a pressure:"
+"We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create "
+"a pressure:"
 msgstr ""
 
 #: ../../tutorials.md:169
@@ -254,8 +253,8 @@ msgstr ""
 #: ../../tutorials.md:171
 msgid ""
 "To mesh the model, we have to set the "
-"{py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the "
-"`mesh` module, so we need to import `mesh` module:"
+"{py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh`"
+" module, so we need to import `mesh` module:"
 msgstr ""
 
 #: ../../tutorials.md:184
@@ -301,7 +300,8 @@ msgid "Extract output data"
 msgstr ""
 
 #: ../../tutorials.md:297
-msgid "If we want to extract the output data, we have to write an output script."
+msgid ""
+"If we want to extract the output data, we have to write an output script."
 msgstr ""
 
 #: ../../tutorials.md:299
@@ -335,9 +335,9 @@ msgstr ""
 
 #: ../../tutorials.md:331
 msgid ""
-"`dataList` is a list of `XYData` objects. `XYData` is a data type defined"
-" in Abaqus, the data is stored in tuples of tuples, so we can simply save"
-" it to a file, i.e., using the `numpy` (`numpy` is installed in Python "
+"`dataList` is a list of `XYData` objects. `XYData` is a data type defined "
+"in Abaqus, the data is stored in tuples of tuples, so we can simply save "
+"it to a file, i.e., using the `numpy` (`numpy` is installed in Python "
 "interpreter of Abaqus already):"
 msgstr ""
 

@@ -29,9 +29,9 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:5
 msgid ""
-"**Model data** Model data describe the parts and part instances that make"
-" up the root assembly; for example, nodal coordinates, set definitions, "
-"and element types."
+"**Model data** Model data describe the parts and part instances that make "
+"up the root assembly; for example, nodal coordinates, set definitions, and"
+" element types."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:8
@@ -40,24 +40,24 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:10
 msgid ""
-"Results data describe the results of your analysis; for example, "
-"stresses, strains, and displacements. You use output requests to "
-"configure the contents of the results data. Results data can be either "
-"field output data or history output data."
+"Results data describe the results of your analysis; for example, stresses,"
+" strains, and displacements. You use output requests to configure the "
+"contents of the results data. Results data can be either field output data"
+" or history output data."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:13
 msgid ""
-"For a description of object models, see {doc}`/user/python/use-scripts"
-"/object-model`."
+"For a description of object models, see {doc}`/user/python/use-"
+"scripts/object-model`."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:16
 msgid ""
 "You can find more information on the format of the output database in "
-"[Output to the Output "
-"Database](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEOUTRefMap/simaout-m"
-"-dboutput-sb.htm?contextscope=all#simaout-m-dboutput-sb)."
+"[Output to the Output Database](https://help.3ds.com/2021/English/DSSIMULI"
+"A_Established/SIMACAEOUTRefMap/simaout-m-dboutput-"
+"sb.htm?contextscope=all#simaout-m-dboutput-sb)."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:18
@@ -66,11 +66,12 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:20
 msgid ""
-"Model data define the model used in the analysis; for example, the parts,"
-" materials, initial and boundary conditions, and physical constants. More"
-" information about model data can be found in The {doc}`/user/python/use-"
-"scripts/object-model` and [Assembly "
-"definition](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-partassy.htm?contextscope=all)."
+"Model data define the model used in the analysis; for example, the parts, "
+"materials, initial and boundary conditions, and physical constants. More "
+"information about model data can be found in The {doc}`/user/python/use-"
+"scripts/object-model` and [Assembly definition](https://help.3ds.com/2021/"
+"English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-"
+"partassy.htm?contextscope=all)."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:22
@@ -79,8 +80,8 @@ msgid ""
 "example, you cannot access loads, and only certain interactions are "
 "available. Model data that are stored in the output database include "
 "parts, the root assembly, part instances, regions, materials, sections, "
-"section assignments, and section categories, each of which is stored as "
-"an Abaqus Scripting Interface object. These components of model data are "
+"section assignments, and section categories, each of which is stored as an"
+" Abaqus Scripting Interface object. These components of model data are "
 "described below."
 msgstr ""
 
@@ -117,9 +118,9 @@ msgstr ""
 #: ../../user/output/python/output-object-model.md:34
 msgid ""
 "A part instance is a usage of a part within the assembly. All "
-"characteristics (such as mesh and section definitions) defined for a part"
-" become characteristics for each instance of that part—they are inherited"
-" by the part instances. Each part instance is positioned independently "
+"characteristics (such as mesh and section definitions) defined for a part "
+"become characteristics for each instance of that part—they are inherited "
+"by the part instances. Each part instance is positioned independently "
 "within the root assembly."
 msgstr ""
 
@@ -133,8 +134,8 @@ msgid ""
 "property definitions. The same material models may be used repeatedly "
 "within a model; each component that uses the same material model shares "
 "identical material properties. Many materials may exist within a model "
-"database, but only the materials that are used in the assembly are copied"
-" to the output database."
+"database, but only the materials that are used in the assembly are copied "
+"to the output database."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:40
@@ -171,8 +172,8 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:50
 msgid ""
-"You use section categories to group the regions of the model that use the"
-" same section definitions; for example, the regions that use a shell "
+"You use section categories to group the regions of the model that use the "
+"same section definitions; for example, the regions that use a shell "
 "section with five section points. Within a section category, you use the "
 "section points to identify the location of results; for example, you can "
 "associate section point 1 with the top surface of a shell and section "
@@ -185,9 +186,9 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:54
 msgid ""
-"Analytical rigid surfaces are geometric surfaces with profiles that can "
-"be described with straight and curved line segments. Using analytical "
-"rigid surfaces offers important advantages in contact modeling."
+"Analytical rigid surfaces are geometric surfaces with profiles that can be"
+" described with straight and curved line segments. Using analytical rigid "
+"surfaces offers important advantages in contact modeling."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:56
@@ -244,8 +245,8 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:83
 msgid ""
-"The objects stored as model data in an output database are similar to the"
-" objects stored in an Abaqus/CAE model database. However, the output "
+"The objects stored as model data in an output database are similar to the "
+"objects stored in an Abaqus/CAE model database. However, the output "
 "database does not require a model name because an analysis job always "
 "refers to a single model and the resulting output database can contain "
 "only one model. For example, the following Abaqus Scripting Interface "
@@ -253,7 +254,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:91
-msgid "Similar statements refer to an Instance object in the output database."
+msgid ""
+"Similar statements refer to an Instance object in the output database."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:98
@@ -287,8 +289,8 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:159
 msgid ""
-"An Abaqus analysis contains a sequence of one or more analysis steps. "
-"Each step is associated with an analysis procedure."
+"An Abaqus analysis contains a sequence of one or more analysis steps. Each"
+" step is associated with an analysis procedure."
 msgstr ""
 
 #: ../../user/output/python/output-object-model.md:161
@@ -298,8 +300,8 @@ msgstr ""
 #: ../../user/output/python/output-object-model.md:163
 msgid ""
 "Each step contains a sequence of frames, where each increment of the "
-"analysis that resulted in output to the output database is called a "
-"frame. In a frequency or buckling analysis each eigenmode is stored as a "
+"analysis that resulted in output to the output database is called a frame."
+" In a frequency or buckling analysis each eigenmode is stored as a "
 "separate frame. Similarly, in a steady-state harmonic response analysis "
 "each frequency is stored as a separate frame."
 msgstr ""
@@ -317,9 +319,9 @@ msgid ""
 "plot. Only complete sets of basic variables (for example, all the stress "
 "or strain components) can be requested as field output. Field output is "
 "composed of a cloud of data values (e.g., stress tensors at each "
-"integration point for all elements). Each data value has a location, "
-"type, and value. You use the regions defined in the model data, such as "
-"an element set, to access subsets of the field output data. {numref}`odb-"
+"integration point for all elements). Each data value has a location, type,"
+" and value. You use the regions defined in the model data, such as an "
+"element set, to access subsets of the field output data. {numref}`odb-"
 "field-nls` shows the field output data object model within an output "
 "database."
 msgstr ""
@@ -335,8 +337,8 @@ msgstr ""
 #: ../../user/output/python/output-object-model.md:180
 msgid ""
 "History output is output defined for a single point or for values "
-"calculated for a portion of the model as a whole, such as energy. History"
-" output is intended for relatively frequent output requests for small "
+"calculated for a portion of the model as a whole, such as energy. History "
+"output is intended for relatively frequent output requests for small "
 "portions of the model and can be displayed in the form of **X - Y** data "
 "plots in the Visualization module of Abaqus/CAE. Individual variables "
 "(such as a particular stress component) can be requested."
@@ -366,8 +368,8 @@ msgstr ""
 
 #: ../../user/output/python/output-object-model.md:189
 msgid ""
-"The output from all history requests that relate to a particular point or"
-" region is then collected in one HistoryRegion object. {numref}`odb-"
+"The output from all history requests that relate to a particular point or "
+"region is then collected in one HistoryRegion object. {numref}`odb-"
 "history-nls` shows the history output data object model within an output "
 "database."
 msgstr ""
