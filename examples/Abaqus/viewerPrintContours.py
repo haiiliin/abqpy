@@ -34,18 +34,16 @@ import visualization
 
 # Create a viewport for this example.
 
-myViewport=session.Viewport(name=
-    'Print contour plot after each step', origin=(10, 10),
-    width=150, height=100)
+myViewport = session.Viewport(name="Print contour plot after each step", origin=(10, 10), width=150, height=100)
 
 # Open the output database and associate it with the viewport.
 # Then set the plot state to CONTOURS_ON_DEF
 
 try:
-    myOdb = visualization.openOdb(path='viewer_tutorial.odb')
+    myOdb = visualization.openOdb(path="viewer_tutorial.odb")
 
 except Exception as e:
-    print('Error:', e)
+    print("Error:", e)
 
 myViewport.setValues(displayedObject=myOdb)
 
@@ -59,18 +57,18 @@ numSteps = len(mySteps)
 
 # Set the maximum and minimum limits of the contour legend.
 
-myViewport.odbDisplay.contourOptions.setValues(numIntervals=10,
-    maxAutoCompute=OFF, maxValue=0.1,
-    minAutoCompute=OFF, minValue=0.0)
+myViewport.odbDisplay.contourOptions.setValues(
+    numIntervals=10, maxAutoCompute=OFF, maxValue=0.1, minAutoCompute=OFF, minValue=0.0
+)
 
 # Establish print preferences.
 
 session.printOptions.setValues(vpBackground=OFF)
 session.psOptions.setValues(orientation=LANDSCAPE)
-myViewport.viewportAnnotationOptions.setValues(
-    triad=OFF,title=OFF,state=OFF)
+myViewport.viewportAnnotationOptions.setValues(triad=OFF, title=OFF, state=OFF)
 myViewport.odbDisplay.basicOptions.setValues(
-    coordSystemDisplay=OFF, )
+    coordSystemDisplay=OFF,
+)
 
 # For each step, obtain the following:
 #     1) The step key.
@@ -83,18 +81,18 @@ for i in range(numSteps):
     step = mySteps[stepKey]
     numFrames = len(step.frames)
 
-#   Go to the last frame.
-#   Display a contour plot.
-#   Display the step description and the increment number.
+    #   Go to the last frame.
+    #   Display a contour plot.
+    #   Display the step description and the increment number.
 
-    myViewport.odbDisplay.setFrame(step=i, frame=numFrames-1)
+    myViewport.odbDisplay.setFrame(step=i, frame=numFrames - 1)
     myViewport.odbDisplay.display.setValues(plotState=(CONTOURS_ON_DEF,))
-    
-# Remove white space from the step key and use the result
-# to name the file.
 
-    fileName=stepKey.replace(' ','')
+    # Remove white space from the step key and use the result
+    # to name the file.
 
-# Print the viewport to a file.
+    fileName = stepKey.replace(" ", "")
+
+    # Print the viewport to a file.
 
     session.printToFile(fileName, PNG, (myViewport,))
