@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:3
 msgid ""
-"This section includes an example that shows how you can use an Abaqus/CAE"
-" script to replicate the functionality of Abaqus/CAE."
+"This section includes an example that shows how you can use an Abaqus/CAE "
+"script to replicate the functionality of Abaqus/CAE."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:5
@@ -55,8 +55,8 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:14
 msgid ""
-"Extrudes the two-dimensional sketch to create the first geometric feature"
-" of the part."
+"Extrudes the two-dimensional sketch to create the first geometric feature "
+"of the part."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:15
@@ -85,19 +85,19 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:35
 msgid ""
-"where scriptName.py is the name of the script (see [Fetching sample input"
-" "
-"files](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEEXCRefMap/simaexc-c-fetchproc.htm?contextscope=all?))."
-" Use the following command to retrieve the script for this example:"
+"where scriptName.py is the name of the script (see [Fetching sample input "
+"files](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEEXCR"
+"efMap/simaexc-c-fetchproc.htm?contextscope=all?)). Use the following "
+"command to retrieve the script for this example:"
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:42
 msgid ""
 "Abaqus does not install the sample scripts by default during the "
-"installation procedure. As a result, if the Abaqus fetch utility fails to"
-" find the sample script, the script may be missing from your Abaqus "
-"installation. You must rerun the installation procedure and request "
-"Abaqus sample problems from the list of items to install."
+"installation procedure. As a result, if the Abaqus fetch utility fails to "
+"find the sample script, the script may be missing from your Abaqus "
+"installation. You must rerun the installation procedure and request Abaqus"
+" sample problems from the list of items to install."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:45
@@ -113,7 +113,8 @@ msgid "From the startup screen, select Run Script."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:49
-msgid "From the Run Script dialog box that appears, select modelAExample.py."
+msgid ""
+"From the Run Script dialog box that appears, select modelAExample.py."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:50
@@ -122,8 +123,8 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:53
 msgid ""
-"If Abaqus/CAE is already running, you can run the script by selecting "
-"from the main menu bar."
+"If Abaqus/CAE is already running, you can run the script by selecting from"
+" the main menu bar."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:56
@@ -140,11 +141,11 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:111
 msgid ""
-"This statement makes the basic Abaqus objects accessible to the script. "
-"It also provides access to a default model database using the variable "
-"named mdb. The statement, `from abaqusConstants import *`, makes the "
-"Symbolic Constants defined by the Abaqus Scripting Interface available to"
-" the script."
+"This statement makes the basic Abaqus objects accessible to the script. It"
+" also provides access to a default model database using the variable named"
+" mdb. The statement, `from abaqusConstants import *`, makes the Symbolic "
+"Constants defined by the Abaqus Scripting Interface available to the "
+"script."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:118
@@ -177,9 +178,9 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:139
 msgid ""
-"This statement creates a new sketch object named Sketch A in myModel. The"
-" variable mySketch is assigned to the new sketch. The sketch will be "
-"placed on a sheet 200 units square. Note the following:"
+"This statement creates a new sketch object named Sketch A in myModel. The "
+"variable mySketch is assigned to the new sketch. The sketch will be placed"
+" on a sheet 200 units square. Note the following:"
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:141
@@ -199,8 +200,8 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:153
 msgid ""
-"These two statements define the X- and Y-coordinates of the vertices that"
-" form the inner and outer profile of the letter A. The variable "
+"These two statements define the X- and Y-coordinates of the vertices that "
+"form the inner and outer profile of the letter A. The variable "
 "xyCoordsInner refers to the vertices of the inner profile, and the "
 "variable xyCoordsOuter refers to the vertices of the outer profile."
 msgstr ""
@@ -227,14 +228,15 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:165
 msgid ""
-"The `range()` function returns a sequence of integers. In Python, as in C"
-" and C++, the index of an array starts at zero. In our example range(4) "
+"The `range()` function returns a sequence of integers. In Python, as in C "
+"and C++, the index of an array starts at zero. In our example range(4) "
 "returns 0,1,2,3. For each iteration of the loop in the example the "
 "variable i is assigned to the next value in the sequence of integers."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:167
-msgid "Similarly, a second loop creates the outer profile of the A character."
+msgid ""
+"Similarly, a second loop creates the outer profile of the A character."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:174
@@ -245,8 +247,8 @@ msgstr ""
 
 #: ../../user/about/examples/create-part.md:180
 msgid ""
-"This statement creates a base solid extrude feature in myPart by "
-"extruding mySketch through a depth of 20.0."
+"This statement creates a base solid extrude feature in myPart by extruding"
+" mySketch through a depth of 20.0."
 msgstr ""
 
 #: ../../user/about/examples/create-part.md:187

@@ -27,9 +27,9 @@ msgid ""
 "programmer. A namespace can be thought of as a program execution "
 "environment, and namespaces are independent of each other. Namespaces "
 "prevent conflict between variable names. You can use the same variable "
-"name to refer to different objects in different name spaces. {numref"
-"}`acl-all-schematic-nls-2` illustrates how commands interact with the "
-"Abaqus/CAE kernel."
+"name to refer to different objects in different name spaces. {numref}`acl-"
+"all-schematic-nls-2` illustrates how commands interact with the Abaqus/CAE"
+" kernel."
 msgstr ""
 
 #: ../../user/python/use-scripts/namespace.md:11
@@ -68,10 +68,9 @@ msgstr ""
 
 #: ../../user/python/use-scripts/namespace.md:29
 msgid ""
-"Abaqus Scripting Interface commands issued by the GUI are executed in the"
-" journal namespace. For example, if you use the GUI to partition an edge,"
-" Abaqus/CAE writes the following statements to the replay file, "
-"abaqus.rpy:"
+"Abaqus Scripting Interface commands issued by the GUI are executed in the "
+"journal namespace. For example, if you use the GUI to partition an edge, "
+"Abaqus/CAE writes the following statements to the replay file, abaqus.rpy:"
 msgstr ""
 
 #: ../../user/python/use-scripts/namespace.md:38
@@ -79,8 +78,8 @@ msgid ""
 "The variables defined in the replay file (p1, e, and edges, in the above "
 "example) exist only in the journal namespace. Abaqus/CAE issues an "
 "exception if you attempt to refer to one of these variables from the "
-"script namespace. For example, the following statement was issued from "
-"the command line interface and tries to partition the same edge:"
+"script namespace. For example, the following statement was issued from the"
+" command line interface and tries to partition the same edge:"
 msgstr ""
 
 #: ../../user/python/use-scripts/namespace.md:45
@@ -93,10 +92,10 @@ msgid ""
 "imports the mdb variable into the script namespace. You can then use the "
 "mdb variable in your scripts to access the objects in the object model. "
 "Although variables in one namespace are not visible to the other "
-"namespace, the object repositories are now available in both. As a "
-"result, an object created in one namespace can still be referred to in "
-"another namespace if you use its full path (`mdb.models['Model A']...`) "
-"and its repository key."
+"namespace, the object repositories are now available in both. As a result,"
+" an object created in one namespace can still be referred to in another "
+"namespace if you use its full path (`mdb.models['Model A']...`) and its "
+"repository key."
 msgstr ""
 
 #: ../../user/python/use-scripts/namespace.md:49

@@ -23,9 +23,9 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:3
 msgid ""
-"This section describe the most common Abaqus Scripting Interface data "
-"type The standard {ref}`python-data-types` described in Python data types"
-" include integers, floats, strings, and sequences. The Abaqus Scripting "
+"This section describe the most common Abaqus Scripting Interface data type"
+" The standard {ref}`python-data-types` described in Python data types "
+"include integers, floats, strings, and sequences. The Abaqus Scripting "
 "Interface adds over 500 additional data types."
 msgstr ""
 
@@ -52,16 +52,16 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:15
 msgid ""
-"Similarly, a data member can be a SymbolicConstant. For example, the type"
-" member of the Elastic object can be one of the following "
+"Similarly, a data member can be a SymbolicConstant. For example, the type "
+"member of the Elastic object can be one of the following "
 "SymbolicConstants: ISOTROPIC, ORTHOTROPIC, ANISOTROPIC, "
 "ENGINEERING_CONSTANTS, LAMINA, TRACTION, or COUPLED_TRACTION."
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:17
 msgid ""
-"If the SymbolicConstants provided by the Abaqus Scripting Interface do "
-"not meet your needs, you can create your own SymbolicConstants using the "
+"If the SymbolicConstants provided by the Abaqus Scripting Interface do not"
+" meet your needs, you can create your own SymbolicConstants using the "
 "SymbolicConstant constructor. For more information, see SymbolicConstant "
 "object."
 msgstr ""
@@ -79,21 +79,22 @@ msgstr ""
 #: ../../user/python/python-abaqus/types.md:29
 msgid ""
 "In addition, the Abaqus Scripting Interface defines a Boolean object, "
-"derived from the SymbolicConstant object, which can take the values ON "
-"and OFF. For example, `noPartsInputFile` is a member of a Model object "
-"that indicates whether the input file will be written with parts and "
+"derived from the SymbolicConstant object, which can take the values ON and"
+" OFF. For example, `noPartsInputFile` is a member of a Model object that "
+"indicates whether the input file will be written with parts and "
 "assemblies. The type of the `noPartsInputFile` member is \\<type "
 "'AbaqusBoolean'>."
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:31
 msgid ""
-"Abaqus recommends that you use the Python Boolean in your scripts and "
-"that you convert existing scripts to use the Python Boolean."
+"Abaqus recommends that you use the Python Boolean in your scripts and that"
+" you convert existing scripts to use the Python Boolean."
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:33
-msgid "The value of a Boolean argument can appear to be ambiguous; for example,"
+msgid ""
+"The value of a Boolean argument can appear to be ambiguous; for example,"
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:43
@@ -111,13 +112,12 @@ msgstr ""
 #: ../../user/python/python-abaqus/types.md:56
 msgid ""
 "Repositories are containers that store a particular type of object; for "
-"example, the steps repository contains all the steps defined in the "
-"model. A repository maps to a set of information and is similar to a "
-"Python dictionary; for more information, see {ref}`using-dictionaries`. "
-"However, only a constructor can add an object to a repository. In "
-"addition, all the objects in a repository are of the same type. For "
-"example, the following repository contains all the models in the model "
-"database:"
+"example, the steps repository contains all the steps defined in the model."
+" A repository maps to a set of information and is similar to a Python "
+"dictionary; for more information, see {ref}`using-dictionaries`. However, "
+"only a constructor can add an object to a repository. In addition, all the"
+" objects in a repository are of the same type. For example, the following "
+"repository contains all the models in the model database:"
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:62
@@ -128,10 +128,10 @@ msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:68
 msgid ""
-"As with dictionaries, you can refer to an object in a repository using "
-"its key. The key is typically the name you provided in the constructor "
-"command when the object was created. For example, the Viewport "
-"constructor creates a new Viewport object in the viewports repository."
+"As with dictionaries, you can refer to an object in a repository using its"
+" key. The key is typically the name you provided in the constructor "
+"command when the object was created. For example, the Viewport constructor"
+" creates a new Viewport object in the viewports repository."
 msgstr ""
 
 #: ../../user/python/python-abaqus/types.md:75
