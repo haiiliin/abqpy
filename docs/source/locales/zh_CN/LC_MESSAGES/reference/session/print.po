@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../reference/session/print.md:3
 msgid ""
-"The print commands are used to print selected canvas objects to a file or"
-" to a Windows or PostScript printer and to control the format of the "
+"The print commands are used to print selected canvas objects to a file or "
+"to a Windows or PostScript printer and to control the format of the "
 "printed output."
 msgstr ""
 
@@ -57,8 +57,9 @@ msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions:11 of
 msgid ""
-"Check `EpsOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`__."
+"Check `EpsOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"epsoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions:1
@@ -73,8 +74,8 @@ msgstr ""
 #: abaqus.Print.EpsOptions.EpsOptions.setValues:20
 #: abaqus.Print.PsOptions.PsOptions.setValues:45 of
 msgid ""
-"A SymbolicConstant specifying the PostScript font substitution rules to "
-"be applied. Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and "
+"A SymbolicConstant specifying the PostScript font substitution rules to be"
+" applied. Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and "
 "AS_DISPLAYED. The default value is PS_IF_AVAILABLE."
 msgstr ""
 
@@ -94,17 +95,16 @@ msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the "
 "width and height of the image in the units specified by **units**. "
 "Possible numeric values are **imageSize** ≥ (*minWidth*, **minHeight**). "
-"The default value is SIZE_ON_SCREEN. Note: The minimum value of width and"
-" height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 "
-"inches)."
+"The default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
+"height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
 #: ../../docstring abaqus.Print.EpsOptions.EpsOptions.resolution:1
 #: abaqus.Print.EpsOptions.EpsOptions.setValues:16
 #: abaqus.Print.PsOptions.PsOptions.setValues:41 of
 msgid ""
-"A SymbolicConstant specifying the resolution of the image in dots per "
-"inch (dpi). The **resolution** can be DPI_1200 only if **imageFormat** = "
+"A SymbolicConstant specifying the resolution of the image in dots per inch"
+" (dpi). The **resolution** can be DPI_1200 only if **imageFormat** = "
 "VECTOR. Possible values are DPI_75, DPI_150, DPI_300, DPI_450, DPI_600, "
 "and DPI_1200. The default value is DPI_150."
 msgstr ""
@@ -115,9 +115,9 @@ msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions.setValues:4 of
 msgid ""
-"Check `EpsOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all"
-"#simaker-epsoptionssetvaluespyc>`__."
+"Check `EpsOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"epsoptionspyc.htm?contextscope=all#simaker-epsoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions.setValues
@@ -141,9 +141,9 @@ msgstr ""
 #: abaqus.Print.EpsOptions.EpsOptions.shadingQuality:1
 #: abaqus.Print.PsOptions.PsOptions.setValues:52 of
 msgid ""
-"A SymbolicConstant specifying how fine the shading of curved surfaces "
-"will be for vector images. Possible values are EXTRA COARSE, COARSE, "
-"MEDIUM, FINE, and EXTRA FINE. The default value is MEDIUM."
+"A SymbolicConstant specifying how fine the shading of curved surfaces will"
+" be for vector images. Possible values are EXTRA COARSE, COARSE, MEDIUM, "
+"FINE, and EXTRA FINE. The default value is MEDIUM."
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions.setValues
@@ -162,14 +162,15 @@ msgstr ""
 msgid ""
 "The PageSetupOptions object stores the settings that Abaqus uses when "
 "printing using a Windows printer. The PageSetupOptions object has no "
-"constructor. Abaqus creates the **pageSetupOptions** member when a "
-"session is started."
+"constructor. Abaqus creates the **pageSetupOptions** member when a session"
+" is started."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions:11 of
 msgid ""
-"Check `PageSetupOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`__."
+"Check `PageSetupOptions on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pagesetupoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -193,9 +194,9 @@ msgstr ""
 #: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin:1
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:25 of
 msgid ""
-"A Float specifying the left margin of the paper in the currently selected"
-" units (inches or millimeters). Possible values are **leftMargin** ≥ 0. "
-"The default value is 0.5."
+"A Float specifying the left margin of the paper in the currently selected "
+"units (inches or millimeters). Possible values are **leftMargin** ≥ 0. The"
+" default value is 0.5."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.logo:1
@@ -226,9 +227,9 @@ msgstr ""
 #: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin:1
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:28 of
 msgid ""
-"A Float specifying the right margin of the paper in the currently "
-"selected units (inches or millimeters). Possible values are "
-"**rightMargin** ≥ 0. The default value is 0.5."
+"A Float specifying the right margin of the paper in the currently selected"
+" units (inches or millimeters). Possible values are **rightMargin** ≥ 0. "
+"The default value is 0.5."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:1 of
@@ -237,15 +238,16 @@ msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:4 of
 msgid ""
-"Check `PageSetupOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all"
-"#simaker-pagesetupoptionssetvaluespyc>`__."
+"Check `PageSetupOptions.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pagesetupoptionspyc.htm?contextscope=all#simaker-"
+"pagesetupoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:7 of
 msgid ""
-"A SymbolicConstant or a pair of Floats specifying the size of the printed"
-" image in the currently selected units (inches or millimeters). Possible "
+"A SymbolicConstant or a pair of Floats specifying the size of the printed "
+"image in the currently selected units (inches or millimeters). Possible "
 "values are FIT_TO_PAGE and SIZE_ON_SCREEN. The default value is "
 "FIT_TO_PAGE. Note: The minimum value of width and height (*minWidth* and "
 "**minHeight**) is 10 mm (approximately 0.4 inches)."
@@ -262,15 +264,15 @@ msgstr ""
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin:1 of
 msgid ""
 "A Float specifying the top margin of the paper in the currently selected "
-"units (inches or millimeters). Possible values are **topMargin** ≥ 0. The"
-" default value is 0.5."
+"units (inches or millimeters). Possible values are **topMargin** ≥ 0. The "
+"default value is 0.5."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:39
 #: abaqus.Print.PsOptions.PsOptions.setValues:56 of
 msgid ""
-"Note: The minimum value of width and height (*minWidth* and "
-"**minHeight**) is 10 mm     (approximately 0.4 inches)."
+"Note: The minimum value of width and height (*minWidth* and **minHeight**)"
+" is 10 mm     (approximately 0.4 inches)."
 msgstr ""
 
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:40
@@ -297,22 +299,23 @@ msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions:7 of
 msgid ""
-"Check `PngOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`__."
+"Check `PngOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pngoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:1 of
 msgid ""
-"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are "
-"(**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and "
-"**maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum "
-"value of width and height (**minWidth** and **minHeight**) is the number "
-"of pixels that occupy 10 mm at the current screen resolution. The value "
-"is typically around 50pixels and may be different for width and height. "
-"The maximum value of width and height (**maxWidth** and **maxHeight**) is"
-" the largest number of pixels supported by the system graphics and will "
-"be at least as large as the screen dimensions."
+"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width"
+" and height of the image in pixels. Possible values are (**minWidth**, "
+"**minHeight**) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The "
+"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
+"height (**minWidth** and **minHeight**) is the number of pixels that "
+"occupy 10 mm at the current screen resolution. The value is typically "
+"around 50pixels and may be different for width and height. The maximum "
+"value of width and height (**maxWidth** and **maxHeight**) is the largest "
+"number of pixels supported by the system graphics and will be at least as "
+"large as the screen dimensions."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:1 of
@@ -321,32 +324,32 @@ msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:4 of
 msgid ""
-"Check `PngOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all"
-"#simaker-pngoptionssetvaluespyc>`__."
+"Check `PngOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pngoptionspyc.htm?contextscope=all#simaker-pngoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:7 of
 msgid ""
-"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are "
-"(**minWidth**, **minHeight**) ≤ **imageSize** ≤ (**maxWidth** and "
-"**maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum "
-"value of width and height (**minWidth** and **minHeight**) is the number "
-"of pixels that occupy 10 mm at the current screen resolution. The value "
-"is typically around 50 pixels and may be different for width and height. "
-"The maximum value of width and height (**maxWidth** and **maxHeight**) is"
-" the largest number of pixels supported by the system graphics and will "
-"be at least as large as the screen dimensions."
+"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width"
+" and height of the image in pixels. Possible values are (**minWidth**, "
+"**minHeight**) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The "
+"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
+"height (**minWidth** and **minHeight**) is the number of pixels that "
+"occupy 10 mm at the current screen resolution. The value is typically "
+"around 50 pixels and may be different for width and height. The maximum "
+"value of width and height (**maxWidth** and **maxHeight**) is the largest "
+"number of pixels supported by the system graphics and will be at least as "
+"large as the screen dimensions."
 msgstr ""
 
 #: abaqus.Print.PngOptions.PngOptions.setValues:17
 #: abaqus.Print.SvgOptions.SvgOptions.setValues:16 of
 msgid ""
-"imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range"
-"     (minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)"
-"     If either the width or height arguments of **imageSize** are out of "
-"range (where     **minWidth** and **minHeight** are the number of pixels "
+"imageSize must be SIZE_ON_SCREEN or a sequence of 2 Ints in the range     "
+"(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)     If "
+"either the width or height arguments of **imageSize** are out of range "
+"(where     **minWidth** and **minHeight** are the number of pixels "
 "corresponding to approximately 10 mm     for a given display and "
 "**maxWidth** and **maxHeight** are the largest allowable number of     "
 "pixels supported by the system graphics)."
@@ -361,8 +364,9 @@ msgstr ""
 
 #: abaqus.Print.PrintOptions.PrintOptions:11 of
 msgid ""
-"Check `PrintOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`__."
+"Check `PrintOptions on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"printoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.compass:1 of
@@ -375,8 +379,8 @@ msgstr ""
 #: abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles:1
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:22 of
 msgid ""
-"A Boolean specifying whether to delete the temporary files created when "
-"an image is printed. The default value is ON. You should set the "
+"A Boolean specifying whether to delete the temporary files created when an"
+" image is printed. The default value is ON. You should set the "
 "**deleteTemporaryFiles** argument to False if your printer does not "
 "support print spooling."
 msgstr ""
@@ -392,9 +396,9 @@ msgstr ""
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.reduceColors:1
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:26 of
 msgid ""
-"A Boolean specifying whether the raster image printed is reduced from "
-"true color to 256 colors to reduce file size. The quality of the image "
-"will be compromised. The default value is OFF."
+"A Boolean specifying whether the raster image printed is reduced from true"
+" color to 256 colors to reduce file size. The quality of the image will be"
+" compromised. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.rendition:1
@@ -410,9 +414,9 @@ msgstr ""
 
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:4 of
 msgid ""
-"Check `PrintOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all"
-"#simaker-printoptionssetvaluespyc>`__."
+"Check `PrintOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"printoptionspyc.htm?contextscope=all#simaker-printoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:10
@@ -425,8 +429,8 @@ msgstr ""
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:13
 #: abaqus.Print.PrintOptions.PrintOptions.vpBackground:1 of
 msgid ""
-"A Boolean specifying whether the output includes viewport backgrounds. "
-"The default value is OFF."
+"A Boolean specifying whether the output includes viewport backgrounds. The"
+" default value is OFF."
 msgstr ""
 
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:16 of
@@ -444,8 +448,9 @@ msgstr ""
 
 #: abaqus.Print.PsOptions.PsOptions:10 of
 msgid ""
-"Check `PsOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`__."
+"Check `PsOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"psoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PsOptions.PsOptions.bottomMargin:1
@@ -458,8 +463,8 @@ msgstr ""
 #: ../../docstring abaqus.Print.PsOptions.PsOptions.leftMargin:1
 #: abaqus.Print.PsOptions.PsOptions.setValues:27 of
 msgid ""
-"A Float specifying the left margin of the paper in inches. Possible "
-"values are **leftMargin** ≥ 0. The default value is 0.5."
+"A Float specifying the left margin of the paper in inches. Possible values"
+" are **leftMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
 #: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:1
@@ -530,9 +535,9 @@ msgstr ""
 
 #: abaqus.Print.PsOptions.PsOptions.setValues:4 of
 msgid ""
-"Check `PsOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all"
-"#simaker-psoptionssetvaluespyc>`__."
+"Check `PsOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"psoptionspyc.htm?contextscope=all#simaker-psoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Print.PsOptions.PsOptions.setValues:7 of
@@ -545,8 +550,8 @@ msgstr ""
 #: ../../docstring abaqus.Print.PsOptions.PsOptions.setValues:21
 #: abaqus.Print.PsOptions.PsOptions.topMargin:1 of
 msgid ""
-"A Float specifying the top margin of the paper in inches. Possible values"
-" are **topMargin** ≥ 0. The default value is 0.5."
+"A Float specifying the top margin of the paper in inches. Possible values "
+"are **topMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
 #: abaqus.Print.SvgOptions.SvgOptions:1 of
@@ -558,23 +563,24 @@ msgstr ""
 
 #: abaqus.Print.SvgOptions.SvgOptions:10 of
 msgid ""
-"Check `SvgOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`__."
+"Check `SvgOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"svgoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Print.SvgOptions.SvgOptions.imageSize:1
 #: abaqus.Print.SvgOptions.SvgOptions.setValues:7 of
 msgid ""
-"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
-"width and height of the image in pixels. Possible values are "
-"(**minWidth**, **minHeight** ) ≤ **imageSize** ≤ (**maxWidth** and "
-"**maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum "
-"value of width and height (**minWidth** and **minHeight**) is the number "
-"of pixels that occupy 10 mm at the current screen resolution. The value "
-"is typically around 50 pixels and may be different for width and "
-"height.The maximum value of width and height (**maxWidth** and "
-"**maxHeight**) is the largest number of pixels supported by the system "
-"graphics and will be at least as large as the screen dimensions."
+"The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width"
+" and height of the image in pixels. Possible values are (**minWidth**, "
+"**minHeight** ) ≤ **imageSize** ≤ (**maxWidth** and **maxHeight**). The "
+"default value is SIZE_ON_SCREEN. Note: The minimum value of width and "
+"height (**minWidth** and **minHeight**) is the number of pixels that "
+"occupy 10 mm at the current screen resolution. The value is typically "
+"around 50 pixels and may be different for width and height.The maximum "
+"value of width and height (**maxWidth** and **maxHeight**) is the largest "
+"number of pixels supported by the system graphics and will be at least as "
+"large as the screen dimensions."
 msgstr ""
 
 #: abaqus.Print.SvgOptions.SvgOptions.setValues:1 of
@@ -583,9 +589,9 @@ msgstr ""
 
 #: abaqus.Print.SvgOptions.SvgOptions.setValues:4 of
 msgid ""
-"Check `SvgOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all"
-"#simaker-svgoptionssetvaluespyc>`__."
+"Check `SvgOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"svgoptionspyc.htm?contextscope=all#simaker-svgoptionssetvaluespyc>`__."
 msgstr ""
 
 #~ msgid ""

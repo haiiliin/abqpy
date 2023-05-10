@@ -24,8 +24,8 @@ msgstr ""
 #: ../../user/output/cpp/output-object-model.md:3
 msgid ""
 "An output database generated from an Abaqus analysis contains both model "
-"and results data. The output database object model is shown in {numref"
-"}`odb-model-nls`"
+"and results data. The output database object model is shown in "
+"{numref}`odb-model-nls`"
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:5
@@ -45,24 +45,24 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:11
 msgid ""
-"Results data describe the results of your analysis; for example, "
-"stresses, strains, and displacements. You use output requests to "
-"configure the contents of the results data. Results data can be either "
-"field output data or history output data."
+"Results data describe the results of your analysis; for example, stresses,"
+" strains, and displacements. You use output requests to configure the "
+"contents of the results data. Results data can be either field output data"
+" or history output data."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:14
 msgid ""
-"For a description of object models, see {doc}`/user/python/use-scripts"
-"/object-model`."
+"For a description of object models, see {doc}`/user/python/use-"
+"scripts/object-model`."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:17
 msgid ""
 "You can find more information on the format of the output database in "
-"[Output to the Output "
-"Database](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEOUTRefMap/simaout-m"
-"-dboutput-sb.htm?contextscope=all#simaout-m-dboutput-sb)."
+"[Output to the Output Database](https://help.3ds.com/2021/English/DSSIMULI"
+"A_Established/SIMACAEOUTRefMap/simaout-m-dboutput-"
+"sb.htm?contextscope=all#simaout-m-dboutput-sb)."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:19
@@ -71,11 +71,12 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:21
 msgid ""
-"Model data define the model used in the analysis; for example, the parts,"
-" materials, initial and boundary conditions, and physical constants. More"
-" information about model data can be found in The {doc}`/user/python/use-"
-"scripts/object-model` and [Assembly "
-"definition](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-partassy.htm?contextscope=all)."
+"Model data define the model used in the analysis; for example, the parts, "
+"materials, initial and boundary conditions, and physical constants. More "
+"information about model data can be found in The {doc}`/user/python/use-"
+"scripts/object-model` and [Assembly definition](https://help.3ds.com/2021/"
+"English/DSSIMULIA_Established/SIMACAEMODRefMap/simamod-c-"
+"partassy.htm?contextscope=all)."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:23
@@ -84,8 +85,8 @@ msgid ""
 "example, you cannot access loads, and only certain interactions are "
 "available. Model data that are stored in the output database include "
 "parts, the root assembly, part instances, regions, materials, sections, "
-"section assignments, and section categories, each of which is stored as "
-"an Abaqus Scripting Interface object. These components of model data are "
+"section assignments, and section categories, each of which is stored as an"
+" Abaqus Scripting Interface object. These components of model data are "
 "described below."
 msgstr ""
 
@@ -122,9 +123,9 @@ msgstr ""
 #: ../../user/output/cpp/output-object-model.md:35
 msgid ""
 "A part instance is a usage of a part within the assembly. All "
-"characteristics (such as mesh and section definitions) defined for a part"
-" become characteristics for each instance of that part—they are inherited"
-" by the part instances. Each part instance is positioned independently "
+"characteristics (such as mesh and section definitions) defined for a part "
+"become characteristics for each instance of that part—they are inherited "
+"by the part instances. Each part instance is positioned independently "
 "within the root assembly."
 msgstr ""
 
@@ -138,8 +139,8 @@ msgid ""
 "property definitions. The same material models may be used repeatedly "
 "within a model; each component that uses the same material model shares "
 "identical material properties. Many materials may exist within a model "
-"database, but only the materials that are used in the assembly are copied"
-" to the output database."
+"database, but only the materials that are used in the assembly are copied "
+"to the output database."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:41
@@ -176,8 +177,8 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:51
 msgid ""
-"You use section categories to group the regions of the model that use the"
-" same section definitions; for example, the regions that use a shell "
+"You use section categories to group the regions of the model that use the "
+"same section definitions; for example, the regions that use a shell "
 "section with five section points. Within a section category, you use the "
 "section points to identify the location of results; for example, you can "
 "associate section point 1 with the top surface of a shell and section "
@@ -190,9 +191,9 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:55
 msgid ""
-"Analytical rigid surfaces are geometric surfaces with profiles that can "
-"be described with straight and curved line segments. Using analytical "
-"rigid surfaces offers important advantages in contact modeling."
+"Analytical rigid surfaces are geometric surfaces with profiles that can be"
+" described with straight and curved line segments. Using analytical rigid "
+"surfaces offers important advantages in contact modeling."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:57
@@ -263,8 +264,8 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:90
 msgid ""
-"An Abaqus analysis contains a sequence of one or more analysis steps. "
-"Each step is associated with an analysis procedure."
+"An Abaqus analysis contains a sequence of one or more analysis steps. Each"
+" step is associated with an analysis procedure."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:92
@@ -274,8 +275,8 @@ msgstr ""
 #: ../../user/output/cpp/output-object-model.md:94
 msgid ""
 "Each step contains a sequence of frames, where each increment of the "
-"analysis that resulted in output to the output database is called a "
-"frame. In a frequency or buckling analysis each eigenmode is stored as a "
+"analysis that resulted in output to the output database is called a frame."
+" In a frequency or buckling analysis each eigenmode is stored as a "
 "separate frame. Similarly, in a steady-state harmonic response analysis "
 "each frequency is stored as a separate frame."
 msgstr ""
@@ -293,9 +294,9 @@ msgid ""
 "plot. Only complete sets of basic variables (for example, all the stress "
 "or strain components) can be requested as field output. Field output is "
 "composed of a cloud of data values (e.g., stress tensors at each "
-"integration point for all elements). Each data value has a location, "
-"type, and value. You use the regions defined in the model data, such as "
-"an element set, to access subsets of the field output data. {numref}`odb-"
+"integration point for all elements). Each data value has a location, type,"
+" and value. You use the regions defined in the model data, such as an "
+"element set, to access subsets of the field output data. {numref}`odb-"
 "field-nls-1` shows the field output data object model within an output "
 "database."
 msgstr ""
@@ -311,8 +312,8 @@ msgstr ""
 #: ../../user/output/cpp/output-object-model.md:111
 msgid ""
 "History output is output defined for a single point or for values "
-"calculated for a portion of the model as a whole, such as energy. History"
-" output is intended for relatively frequent output requests for small "
+"calculated for a portion of the model as a whole, such as energy. History "
+"output is intended for relatively frequent output requests for small "
 "portions of the model and can be displayed in the form of **X - Y** data "
 "plots in the Visualization module of Abaqus/CAE. Individual variables "
 "(such as a particular stress component) can be requested."
@@ -342,10 +343,10 @@ msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:120
 msgid ""
-"The output from all history requests that relate to a particular point or"
-" region is then collected in one HistoryRegion object. {numref}`odb-"
-"history-nls-2` shows the history output data object model within an "
-"output database."
+"The output from all history requests that relate to a particular point or "
+"region is then collected in one HistoryRegion object. {numref}`odb-"
+"history-nls-2` shows the history output data object model within an output"
+" database."
 msgstr ""
 
 #: ../../user/output/cpp/output-object-model.md:128

@@ -25,12 +25,12 @@ msgstr ""
 msgid ""
 "A specific type of boundary condition object and a specific type of "
 "boundary condition state object are designed for each type of boundary "
-"condition. A BoundaryCondition object stores the non-propagating data of "
-"a boundary condition as well as a number of instances of the "
-"corresponding BoundaryConditionState object, each of which stores the "
-"propagating data of the boundary condition in a single step. Instances of"
-" the BoundaryConditionState object are created and deleted internally by "
-"its corresponding BoundaryCondition object."
+"condition. A BoundaryCondition object stores the non-propagating data of a"
+" boundary condition as well as a number of instances of the corresponding "
+"BoundaryConditionState object, each of which stores the propagating data "
+"of the boundary condition in a single step. Instances of the "
+"BoundaryConditionState object are created and deleted internally by its "
+"corresponding BoundaryCondition object."
 msgstr ""
 
 #: ../../reference/mdb/model/bc.md:5
@@ -42,7 +42,8 @@ msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:1 of
-msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgid ""
+"Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:5
@@ -98,8 +99,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:9 of
 msgid ""
-"Check `BoundaryConditionModel on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `BoundaryConditionModel on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -312,16 +314,15 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:28 of
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:32 of
 msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
+"A SymbolicConstant specifying the analysis model type. Possible values are"
+" STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:35 of
@@ -332,8 +333,8 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:37 of
 msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:40 of
@@ -344,8 +345,8 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel:43 of
 msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC
@@ -503,7 +504,8 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ""
+":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -518,12 +520,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ""
+":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -538,8 +541,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -562,16 +565,18 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+"A Boolean specifying that the step specified by **restartStep** should be "
+"terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ""
+":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgid ""
+"A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -587,7 +592,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ""
+":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -599,11 +605,13 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
+msgid ""
+"A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ""
+":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -618,8 +626,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+"A String specifying the name of the job that generated the results for the"
+" global model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -630,8 +638,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+"A boolean specifying the status of constraints created in a model, in the "
+"model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -654,12 +662,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+"A boolean specifying the status of interactions created in a model, in the"
+" model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ""
+":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -667,7 +676,8 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ""
+":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -701,7 +711,8 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ""
+":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -739,7 +750,8 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ""
+":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -794,20 +806,20 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+"A tuple of tuples of Strings specifying the linked child PartInstance name"
+" in the current model to the corresponding parent PartInstance name in a "
+"different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child Part name in the "
+"current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -827,7 +839,8 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ""
+":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -968,9 +981,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AccelerationBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`AccelerationBaseMotionBC <abaqus.BoundaryCondition.BoundaryCondit"
+"ionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -982,9 +995,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`AccelerationBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.AccelerationBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -996,9 +1009,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AcousticPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`AcousticPressureBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.AcousticPressureBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1010,9 +1023,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConcentrationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`ConcentrationBC <abaqus.BoundaryCondition.BoundaryConditionModel."
+"BoundaryConditionModel.ConcentrationBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1023,9 +1036,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnAccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnAccelerationBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.ConnAccelerationBC>`\\ \\(name\\, "
+"createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1034,9 +1047,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnDisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnDisplacementBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.ConnDisplacementBC>`\\ \\(name\\, "
+"createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1045,9 +1058,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnVelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnVelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.ConnVelocityBC>`\\ \\(name\\, createStepName\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1056,9 +1069,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`DisplacementBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`DisplacementBaseMotionBC <abaqus.BoundaryCondition.BoundaryCondit"
+"ionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1070,9 +1083,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`DisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`DisplacementBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.DisplacementBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1083,9 +1096,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ElectricPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`ElectricPotentialBC <abaqus.BoundaryCondition.BoundaryConditionMo"
+"del.BoundaryConditionModel.ElectricPotentialBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1096,9 +1109,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EulerianBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`EulerianBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.EulerianBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1109,9 +1122,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EulerianMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`EulerianMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel"
+".BoundaryConditionModel.EulerianMotionBC>`\\ \\(name\\, createStepName\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1122,9 +1135,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`FluidCavityPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`FluidCavityPressureBC <abaqus.BoundaryCondition.BoundaryCondition"
+"Model.BoundaryConditionModel.FluidCavityPressureBC>`\\ \\(name\\, "
+"createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1135,9 +1148,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`MagneticVectorPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`MagneticVectorPotentialBC <abaqus.BoundaryCondition.BoundaryCondi"
+"tionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1149,9 +1162,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`MaterialFlowBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`MaterialFlowBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.MaterialFlowBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1162,9 +1175,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`PorePressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`PorePressureBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.PorePressureBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1175,9 +1188,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`RetainedNodalDofsBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`RetainedNodalDofsBC <abaqus.BoundaryCondition.BoundaryConditionMo"
+"del.BoundaryConditionModel.RetainedNodalDofsBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1188,9 +1201,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`SecondaryBaseBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`SecondaryBaseBC <abaqus.BoundaryCondition.BoundaryConditionModel."
+"BoundaryConditionModel.SecondaryBaseBC>`\\ \\(name\\, createStepName\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1201,9 +1214,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`SubmodelBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`SubmodelBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.SubmodelBC>`\\ \\(name\\, createStepName\\, region\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1214,9 +1227,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`TemperatureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`TemperatureBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bo"
+"undaryConditionModel.TemperatureBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1227,9 +1240,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`VelocityBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC>`\\"
-" \\(name\\, createStepName\\, dof\\)"
+":py:obj:`VelocityBaseMotionBC <abaqus.BoundaryCondition.BoundaryConditionM"
+"odel.BoundaryConditionModel.VelocityBaseMotionBC>`\\ \\(name\\, "
+"createStepName\\, dof\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1240,9 +1253,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`VelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`VelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.VelocityBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1253,9 +1266,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EncastreBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`EncastreBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.EncastreBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1266,9 +1279,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`PinnedBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PinnedBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`PinnedBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.PinnedBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1279,9 +1292,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`XsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`XsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.XsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1294,9 +1307,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`YsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`YsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.YsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1309,9 +1322,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ZsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`ZsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.ZsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1324,47 +1337,47 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`XasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`XasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.XasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC:1
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.XasymmBC:1 of
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **X** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**X** axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`YasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`YasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.YasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC:1
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.YasymmBC:1 of
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Y** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**Y** axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ZasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`ZasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.ZasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC:1
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.ZasymmBC:1 of
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Z** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**Z** axis."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1402,8 +1415,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\,"
+" inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1478,8 +1491,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC:9
 #: of
 msgid ""
-"Check `AccelerationBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbcpyc.htm?contextscope=all>`__."
+"Check `AccelerationBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:21
@@ -1747,9 +1761,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.fieldName:1
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:8 of
 msgid ""
-"A String specifying the name of the AnalyticalField object associated "
-"with this boundary condition. The **fieldName** argument applies only "
-"when **distributionType** = FIELD. The default value is an empty string."
+"A String specifying the name of the AnalyticalField object associated with"
+" this boundary condition. The **fieldName** argument applies only when "
+"**distributionType** = FIELD. The default value is an empty string."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:31
@@ -1757,11 +1771,11 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC:22
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 1-direction. Possible values for the SymbolicConstant are UNSET and "
-"SET. The default value is UNSET. Note: Although **a1**, **a2**, **a3**, "
-"**ar1**, **ar2**, and **ar3** are optional arguments, at least one of "
-"them must be specified."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 1-direction. Possible values for the SymbolicConstant are UNSET and SET. "
+"The default value is UNSET. Note: Although **a1**, **a2**, **a3**, "
+"**ar1**, **ar2**, and **ar3** are optional arguments, at least one of them"
+" must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:36
@@ -1769,9 +1783,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC:27
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 2-direction. Possible values for the SymbolicConstant are UNSET and "
-"SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 2-direction. Possible values for the SymbolicConstant are UNSET and SET. "
+"The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:39
@@ -1779,9 +1793,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC:30
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 3-direction. Possible values for the SymbolicConstant are UNSET and "
-"SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 3-direction. Possible values for the SymbolicConstant are UNSET and SET. "
+"The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:42
@@ -1790,8 +1804,8 @@ msgstr ""
 #: of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 1-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"component about the 1-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:46
@@ -1800,8 +1814,8 @@ msgstr ""
 #: of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 2-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"component about the 2-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:50
@@ -1810,8 +1824,8 @@ msgstr ""
 #: of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 3-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"component about the 3-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:54
@@ -1868,9 +1882,9 @@ msgstr ""
 #: of
 msgid ""
 "A String or the SymbolicConstant UNSET specifying the name of the "
-"amplitude reference. UNSET should be used if the boundary condition has "
-"no amplitude reference. The default value is UNSET. You should provide "
-"the **amplitude** argument only if it is valid for the specified step."
+"amplitude reference. UNSET should be used if the boundary condition has no"
+" amplitude reference. The default value is UNSET. You should provide the "
+"**amplitude** argument only if it is valid for the specified step."
 msgstr ""
 
 #: ../../docstring abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:59
@@ -1991,8 +2005,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC:9
 #: of
 msgid ""
-"Check `AccelerationBaseMotionBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbasemotionbcpyc.htm?contextscope=all>`__."
+"Check `AccelerationBaseMotionBC on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbasemotionbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC:26
@@ -2002,9 +2017,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC:26
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:26 of
 msgid ""
-"A SymbolicConstant specifying the constrained degree-of-freedom. Possible"
-" values for the SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The "
-"default value is U1."
+"A SymbolicConstant specifying the constrained degree-of-freedom. Possible "
+"values for the SymbolicConstant are U1, U2, U3, UR1, UR2, UR3. The default"
+" value is U1."
 msgstr ""
 
 #: ../../docstring
@@ -2078,8 +2093,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:15
 #: of
 msgid ""
-"A String specifying the name of the SecondaryBaseBC object associated "
-"with this boundary condition. The default value is an empty string."
+"A String specifying the name of the SecondaryBaseBC object associated with"
+" this boundary condition. The default value is an empty string."
 msgstr ""
 
 #: ../../docstring
@@ -2117,8 +2132,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC:9
 #: of
 msgid ""
-"Check `AcousticPressureBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticpressurebcpyc.htm?contextscope=all>`__."
+"Check `AcousticPressureBC on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"acousticpressurebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC:32
@@ -2162,8 +2178,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:44
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:25 of
 msgid ""
-"A Boolean specifying whether the boundary condition should remain fixed "
-"at the current values at the start of the step. The default value is OFF."
+"A Boolean specifying whether the boundary condition should remain fixed at"
+" the current values at the start of the step. The default value is OFF."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC:36
@@ -2180,8 +2196,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC:9
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC:11 of
 msgid ""
-"Check `ConcentrationBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentrationbcpyc.htm?contextscope=all>`__."
+"Check `ConcentrationBC on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentrationbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC:22
@@ -2214,8 +2231,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:11
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC:12 of
 msgid ""
-"Check `ConnAccelerationBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connaccelerationbcpyc.htm?contextscope=all>`__."
+"Check `ConnAccelerationBC on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connaccelerationbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:18
@@ -2228,9 +2246,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:27
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:8 of
 msgid ""
-"The wire region to which the boundary condition is applied. This argument"
-" is not valid when **fastenerName** and **fastenerSetName** are "
-"specified."
+"The wire region to which the boundary condition is applied. This argument "
+"is not valid when **fastenerName** and **fastenerSetName** are specified."
 msgstr ""
 
 #: ../../docstring
@@ -2250,8 +2267,8 @@ msgid ""
 "A String specifying the name of the assembled fastener to which the "
 "boundary condition will be applied. This argument is not valid when "
 "**region** is specified. When this argument is specified, "
-"**fastenerSetName** must also be specified. The default value is an empty"
-" string."
+"**fastenerSetName** must also be specified. The default value is an empty "
+"string."
 msgstr ""
 
 #: ../../docstring
@@ -2268,11 +2285,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.fastenerSetName:1
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:16 of
 msgid ""
-"A String specifying the assembled fastener template model set to which "
-"the boundary condition will be applied. This argument is not valid when "
-"**region** is specified. When this argument is specified, "
-"**fastenerName** must also be specified. The default value is an empty "
-"string."
+"A String specifying the assembled fastener template model set to which the"
+" boundary condition will be applied. This argument is not valid when "
+"**region** is specified. When this argument is specified, **fastenerName**"
+" must also be specified. The default value is an empty string."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:31
@@ -2280,11 +2296,11 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:21
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the connector's local 1-direction. Possible values for the "
-"SymbolicConstant are UNSET and SET. The default value is UNSET. Note: "
-"Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are "
-"optional arguments, at least one of them must be specified."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" connector's local 1-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET. Note: Although **a1**, "
+"**a2**, **a3**, **ar1**, **ar2**, and **ar3** are optional arguments, at "
+"least one of them must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:36
@@ -2292,9 +2308,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:26
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the connector's local 2-direction. Possible values for the "
-"SymbolicConstant are UNSET and SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" connector's local 2-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:40
@@ -2302,9 +2318,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:30
 #: of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the connector's local 3-direction. Possible values for the "
-"SymbolicConstant are UNSET and SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" connector's local 3-direction. Possible values for the SymbolicConstant "
+"are UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:44
@@ -2357,8 +2373,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying how the boundary condition is distributed "
-"spatially. Possible values are UNIFORM and USER_DEFINED. The default "
-"value is UNIFORM."
+"spatially. Possible values are UNIFORM and USER_DEFINED. The default value"
+" is UNIFORM."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC:64
@@ -2382,8 +2398,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC:11
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC:12 of
 msgid ""
-"Check `ConnDisplacementBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conndisplacementbcpyc.htm?contextscope=all>`__."
+"Check `ConnDisplacementBC on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conndisplacementbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC:31
@@ -2480,8 +2497,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.setValues:13 of
 msgid ""
 "A SymbolicConstant specifying how the boundary condition is defined in a "
-"BUCKLE analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION,"
-" BUCKLING_MODES, and PERTURBATION_AND_BUCKLING. The default value is "
+"BUCKLE analysis. Possible values are NOT_APPLICABLE, STRESS_PERTURBATION, "
+"BUCKLING_MODES, and PERTURBATION_AND_BUCKLING. The default value is "
 "NOT_APPLICABLE."
 msgstr ""
 
@@ -2506,8 +2523,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC:11
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:11 of
 msgid ""
-"Check `ConnVelocityBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connvelocitybcpyc.htm?contextscope=all>`__."
+"Check `ConnVelocityBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connvelocitybcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC:31
@@ -2543,8 +2561,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:53
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:34 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 4-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 4-direction. Possible values for the "
 "SymbolicConstant are UNSET and SET. The default value is UNSET."
 msgstr ""
 
@@ -2552,8 +2570,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:57
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:38 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 5-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 5-direction. Possible values for the "
 "SymbolicConstant are UNSET and SET. The default value is UNSET."
 msgstr ""
 
@@ -2561,8 +2579,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:61
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:42 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 6-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 6-direction. Possible values for the "
 "SymbolicConstant are UNSET and SET. The default value is UNSET."
 msgstr ""
 
@@ -2579,8 +2597,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:9
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC:12 of
 msgid ""
-"Check `DisplacementBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbcpyc.htm?contextscope=all>`__."
+"Check `DisplacementBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2590,10 +2609,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:8 of
 msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
-"object associated with this boundary condition. The **fieldName** "
-"argument applies only when **distributionType** = FIELD or "
-"**distributionType** = DISCRETE_FIELD. The default value is an empty "
-"string."
+"object associated with this boundary condition. The **fieldName** argument"
+" applies only when **distributionType** = FIELD or **distributionType** = "
+"DISCRETE_FIELD. The default value is an empty string."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:23
@@ -2601,10 +2619,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:13 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 1-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET. Note: Although **u1**, "
-"**u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at "
-"least one of them must be specified."
+"component in the 1-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET. Note: Although **u1**, **u2**,"
+" **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at least "
+"one of them must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:28
@@ -2612,8 +2630,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:18 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 2-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET."
+"component in the 2-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:32
@@ -2621,8 +2639,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:22 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 3-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET."
+"component in the 3-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC:36
@@ -2677,8 +2695,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC:12
 #: of
 msgid ""
-"Check `DisplacementBaseMotionBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbasemotionbcpyc.htm?contextscope=all>`__."
+"Check `DisplacementBaseMotionBC on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbasemotionbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC:37
@@ -2695,8 +2714,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC:9
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC:12 of
 msgid ""
-"Check `ElectricPotentialBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-electricpotentialbcpyc.htm?contextscope=all>`__."
+"Check `ElectricPotentialBC on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"electricpotentialbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC:22
@@ -2722,8 +2742,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.EncastreBC:9 of
 msgid ""
-"Check `EncastreBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-encastrebcpyc.htm?contextscope=all>`__."
+"Check `EncastreBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"encastrebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC:26
@@ -2767,8 +2788,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC:9
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC:11 of
 msgid ""
-"Check `EulerianBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianbcpyc.htm?contextscope=all>`__."
+"Check `EulerianBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2776,8 +2798,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC:27
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.definition:1 of
 msgid ""
-"A SymbolicConstant specifying the flow conditions to be defined. Possible"
-" values are INFLOW, OUTFLOW, and BOTH. The default value is INFLOW."
+"A SymbolicConstant specifying the flow conditions to be defined. Possible "
+"values are INFLOW, OUTFLOW, and BOTH. The default value is INFLOW."
 msgstr ""
 
 #: ../../docstring
@@ -2798,8 +2820,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.outflowType:1 of
 msgid ""
 "A SymbolicConstant specifying the control of flow of material out of the "
-"Eulerian domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING,"
-" and EQUILIBRIUM. The default value is ZERO_PRESSURE."
+"Eulerian domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, "
+"and EQUILIBRIUM. The default value is ZERO_PRESSURE."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC:28
@@ -2815,8 +2837,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC:9
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC:12 of
 msgid ""
-"Check `EulerianMotionBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianmotionbcpyc.htm?contextscope=all>`__."
+"Check `EulerianMotionBC on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianmotionbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2833,8 +2856,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.followRegion:1
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValues:10 of
 msgid ""
-"A Boolean specifying whether the mesh will follow a regular surface "
-"region or an Eulerian surface. The default value is ON."
+"A Boolean specifying whether the mesh will follow a regular surface region"
+" or an Eulerian surface. The default value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -2856,9 +2879,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.ctrPosition1:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the 1-direction translational constraint on"
-" the center of the Eulerian mesh. Possible values are FREE and FIXED. The"
-" default value is FREE."
+"A SymbolicConstant specifying the 1-direction translational constraint on "
+"the center of the Eulerian mesh. Possible values are FREE and FIXED. The "
+"default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2870,9 +2893,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.posPosition1:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"positive (maximum) bounds of the mesh in the 1 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the positive"
+" (maximum) bounds of the mesh in the 1 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2884,9 +2907,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.negPosition1:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"negative (minimum) bounds of the mesh in the 1 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the negative"
+" (minimum) bounds of the mesh in the 1 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2899,8 +2922,8 @@ msgstr ""
 #: of
 msgid ""
 "None or a Float specifying the upper bounds on the allowable scaling of "
-"the mesh in the 1 direction. If **expansionRatio1** = None, then there is"
-" no upper limit. The default value is None."
+"the mesh in the 1 direction. If **expansionRatio1** = None, then there is "
+"no upper limit. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -2925,9 +2948,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.ctrPosition2:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the 2-direction translational constraint on"
-" the center of the Eulerian mesh. Possible values are FREE and FIXED. The"
-" default value is FREE."
+"A SymbolicConstant specifying the 2-direction translational constraint on "
+"the center of the Eulerian mesh. Possible values are FREE and FIXED. The "
+"default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2939,9 +2962,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.posPosition2:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"positive (maximum) bounds of the mesh in the 2 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the positive"
+" (maximum) bounds of the mesh in the 2 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2953,9 +2976,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.negPosition2:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"negative (minimum) bounds of the mesh in the 2 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the negative"
+" (minimum) bounds of the mesh in the 2 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -2968,8 +2991,8 @@ msgstr ""
 #: of
 msgid ""
 "None or a Float specifying the upper bounds on the allowable scaling of "
-"the mesh in the 2 direction. If **expansionRatio2** = None, then there is"
-" no upper limit. The default value is None."
+"the mesh in the 2 direction. If **expansionRatio2** = None, then there is "
+"no upper limit. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -2994,9 +3017,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.ctrPosition3:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the 3-direction translational constraint on"
-" the center of the Eulerian mesh. Possible values are FREE and FIXED. The"
-" default value is FREE."
+"A SymbolicConstant specifying the 3-direction translational constraint on "
+"the center of the Eulerian mesh. Possible values are FREE and FIXED. The "
+"default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -3008,9 +3031,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.posPosition3:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"positive (maximum) bounds of the mesh in the 3 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the positive"
+" (maximum) bounds of the mesh in the 3 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -3022,9 +3045,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.negPosition3:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the translational constraint on the "
-"negative (minimum) bounds of the mesh in the 3 direction. Possible values"
-" are FREE and FIXED. The default value is FREE."
+"A SymbolicConstant specifying the translational constraint on the negative"
+" (minimum) bounds of the mesh in the 3 direction. Possible values are FREE"
+" and FIXED. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
@@ -3037,8 +3060,8 @@ msgstr ""
 #: of
 msgid ""
 "None or a Float specifying the upper bounds on the allowable scaling of "
-"the mesh in the 3 direction. If **expansionRatio3** = None, then there is"
-" no upper limit. The default value is None."
+"the mesh in the 3 direction. If **expansionRatio3** = None, then there is "
+"no upper limit. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -3063,8 +3086,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.allowContraction:1
 #: of
 msgid ""
-"A Boolean specifying whether the mesh is allowed to contract . The "
-"default value is ON."
+"A Boolean specifying whether the mesh is allowed to contract . The default"
+" value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -3076,8 +3099,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState.aspectLimit:1
 #: of
 msgid ""
-"A Float specifying the maximum change in allowed aspect ratio (for any of"
-" the three mesh aspects, 1-2, 2-3, 3-1). The default value is 10.0."
+"A Float specifying the maximum change in allowed aspect ratio (for any of "
+"the three mesh aspects, 1-2, 2-3, 3-1). The default value is 10.0."
 msgstr ""
 
 #: ../../docstring
@@ -3103,9 +3126,9 @@ msgstr ""
 #: of
 msgid ""
 "A Float specifying the lower bounds on the volume fraction when "
-"determining which nodes to include in the surface bounding box "
-"calculation for an Eulerian material surface. This argument applies only "
-"when **followRegion** = False. The default value is 0.5."
+"determining which nodes to include in the surface bounding box calculation"
+" for an Eulerian material surface. This argument applies only when "
+"**followRegion** = False. The default value is 0.5."
 msgstr ""
 
 #: ../../docstring
@@ -3134,8 +3157,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC:9
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC:12 of
 msgid ""
-"Check `FluidCavityPressureBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurebcpyc.htm?contextscope=all>`__."
+"Check `FluidCavityPressureBC on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fluidcavitypressurebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3151,8 +3175,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues:8
 #: of
 msgid ""
-"A Float specifying the fluid cavity pressure magnitude. The default value"
-" is 0."
+"A Float specifying the fluid cavity pressure magnitude. The default value "
+"is 0."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC:28
@@ -3169,8 +3193,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC:12
 #: of
 msgid ""
-"Check `MagneticVectorPotentialBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-magneticvectorpotentialbcpyc.htm?contextscope=all>`__."
+"Check `MagneticVectorPotentialBC on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"magneticvectorpotentialbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:18
@@ -3178,9 +3203,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues:8
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 1-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET"
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 1-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET"
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:22
@@ -3188,9 +3213,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues:12
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 2-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET."
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 2-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:26
@@ -3198,9 +3223,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues:16
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 3-direction. Possible values for the SymbolicConstant "
-"are UNSET and SET. The default value is UNSET."
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 3-direction. Possible values for the SymbolicConstant are"
+" UNSET and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC:42
@@ -3217,8 +3242,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC:9
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC:12 of
 msgid ""
-"Check `MaterialFlowBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialflowbcpyc.htm?contextscope=all>`__."
+"Check `MaterialFlowBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"materialflowbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC:22
@@ -3243,15 +3269,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PinnedBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.PinnedBC:9 of
 msgid ""
-"Check `PinnedBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pinnedbcpyc.htm?contextscope=all>`__."
+"Check `PinnedBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pinnedbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC:9
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC:11 of
 msgid ""
-"Check `PorePressureBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-porepressurebcpyc.htm?contextscope=all>`__."
+"Check `PorePressureBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"porepressurebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC:22
@@ -3276,8 +3304,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:9
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC:12 of
 msgid ""
-"Check `RetainedNodalDofsBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-retainednodaldofsbcpyc.htm?contextscope=all>`__."
+"Check `RetainedNodalDofsBC on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"retainednodaldofsbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:18
@@ -3316,8 +3345,8 @@ msgstr ""
 #: of
 msgid ""
 "A Boolean specifying whether to retain the rotational degree of freedom "
-"about the 1-direction. The default value is OFF indicating that the "
-"degree of freedom is not retained."
+"about the 1-direction. The default value is OFF indicating that the degree"
+" of freedom is not retained."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:31
@@ -3326,8 +3355,8 @@ msgstr ""
 #: of
 msgid ""
 "A Boolean specifying whether to retain the rotational degree of freedom "
-"about the 2-direction. The default value is OFF indicating that the "
-"degree of freedom is not retained."
+"about the 2-direction. The default value is OFF indicating that the degree"
+" of freedom is not retained."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:35
@@ -3336,8 +3365,8 @@ msgstr ""
 #: of
 msgid ""
 "A Boolean specifying whether to retain the rotational degree of freedom "
-"about the 3-direction. The default value is OFF indicating that the "
-"degree of freedom is not retained."
+"about the 3-direction. The default value is OFF indicating that the degree"
+" of freedom is not retained."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC:39
@@ -3353,8 +3382,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC:9
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC:11 of
 msgid ""
-"Check `SecondaryBaseBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-secondarybasebcpyc.htm?contextscope=all>`__."
+"Check `SecondaryBaseBC on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"secondarybasebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3362,9 +3392,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC:25
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.regions:1 of
 msgid ""
-"A RegionArray object specifying the region to which the boundary "
-"condition is applied. Note that the usual **region** is ignored. The "
-"default value is MODEL."
+"A RegionArray object specifying the region to which the boundary condition"
+" is applied. Note that the usual **region** is ignored. The default value "
+"is MODEL."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC:19
@@ -3387,16 +3417,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:9
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:11 of
 msgid ""
-"Check `SubmodelBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelbcpyc.htm?contextscope=all>`__."
+"Check `SubmodelBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:18
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:27
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep:12 of
 msgid ""
-"A sequence of Ints specifying the degrees of freedom to which the "
-"boundary condition is applied."
+"A sequence of Ints specifying the degrees of freedom to which the boundary"
+" condition is applied."
 msgstr ""
 
 #: ../../docstring
@@ -3424,8 +3455,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.shellThickness:1 of
 msgid ""
 "A Float specifying the thickness of the shell in the global model. This "
-"argument is required for shell-to-solid submodeling and is not applicable"
-" to other submodels. The default value is 0.0."
+"argument is required for shell-to-solid submodeling and is not applicable "
+"to other submodels. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring
@@ -3435,9 +3466,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:8 of
 msgid ""
 "A String specifying the element set in the global model that will be "
-"searched for elements whose responses will be used to drive the submodel."
-" An empty string indicates that the entire global model will be searched."
-" The default value is an empty string."
+"searched for elements whose responses will be used to drive the submodel. "
+"An empty string indicates that the entire global model will be searched. "
+"The default value is an empty string."
 msgstr ""
 
 #: ../../docstring
@@ -3457,29 +3488,28 @@ msgstr ""
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.exteriorTolerance:1
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:15 of
 msgid ""
-"None or a Float specifying the fraction of the average element size in "
-"the global model by which a driven node of the submodel can lie outside "
-"the region of the elements of the global model. The default value is "
-"0.05."
+"None or a Float specifying the fraction of the average element size in the"
+" global model by which a driven node of the submodel can lie outside the "
+"region of the elements of the global model. The default value is 0.05."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:48
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:57
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:23 of
 msgid ""
-"An Int specifying the increment number in the global model step from "
-"which the solution will be used to specify the values of the driven "
-"variables. If **globalIncrement** = 0, the solution from the last "
-"increment will be used. The **globalIncrement** argument is applicable "
-"only for linear perturbation steps. The default value is 0."
+"An Int specifying the increment number in the global model step from which"
+" the solution will be used to specify the values of the driven variables. "
+"If **globalIncrement** = 0, the solution from the last increment will be "
+"used. The **globalIncrement** argument is applicable only for linear "
+"perturbation steps. The default value is 0."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:53
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:62
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:28 of
 msgid ""
-"A Float specifying the thickness of the center zone size around the shell"
-" midsurface. The default value is None."
+"A Float specifying the thickness of the center zone size around the shell "
+"midsurface. The default value is None."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC:56
@@ -3495,22 +3525,24 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:9
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:11 of
 msgid ""
-"Check `TemperatureBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturebcpyc.htm?contextscope=all>`__."
+"Check `TemperatureBC on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"temperaturebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:22
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:31
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:12 of
-msgid "A Float specifying the temperature magnitude. The default value is 0."
+msgid ""
+"A Float specifying the temperature magnitude. The default value is 0."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:24
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:33
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:14 of
 msgid ""
-"A sequence of Ints specifying the degrees of freedom to which the "
-"boundary condition is applied. The default value is (11,)."
+"A sequence of Ints specifying the degrees of freedom to which the boundary"
+" condition is applied. The default value is (11,)."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC:38
@@ -3526,8 +3558,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:9
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:11 of
 msgid ""
-"Check `VelocityBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybcpyc.htm?contextscope=all>`__."
+"Check `VelocityBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:22
@@ -3537,8 +3570,8 @@ msgid ""
 "A Float or a SymbolicConstant specifying the velocity component in the "
 "1-direction. Possible values for the SymbolicConstant are UNSET and SET. "
 "The default value is UNSET. Note: Although **v1**, **v2**, **v3**, "
-"**vr1**, **vr2**, and **vr3** are optional arguments, at least one of "
-"them must be specified."
+"**vr1**, **vr2**, and **vr3** are optional arguments, at least one of them"
+" must be specified."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:27
@@ -3563,27 +3596,27 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:42
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:23 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 1-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 1-direction. Possible values for the SymbolicConstant are UNSET"
+" and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:37
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:46
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:27 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 2-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 2-direction. Possible values for the SymbolicConstant are UNSET"
+" and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:41
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:50
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:31 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 3-direction. Possible values for the SymbolicConstant"
-" are UNSET and SET. The default value is UNSET."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 3-direction. Possible values for the SymbolicConstant are UNSET"
+" and SET. The default value is UNSET."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC:57
@@ -3599,8 +3632,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC:9
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:12 of
 msgid ""
-"Check `VelocityBaseMotionBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybasemotionbcpyc.htm?contextscope=all>`__."
+"Check `VelocityBaseMotionBC on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybasemotionbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC:37
@@ -3616,43 +3650,49 @@ msgstr ""
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.XasymmBC:9 of
 msgid ""
-"Check `XasymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xasymmbcpyc.htm?contextscope=all>`__."
+"Check `XasymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"xasymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XsymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.XsymmBC:9 of
 msgid ""
-"Check `XsymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xsymmbcpyc.htm?contextscope=all>`__."
+"Check `XsymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"xsymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.YasymmBC:9 of
 msgid ""
-"Check `YasymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-yasymmbcpyc.htm?contextscope=all>`__."
+"Check `YasymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"yasymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YsymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.YsymmBC:9 of
 msgid ""
-"Check `YsymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ysymmbcpyc.htm?contextscope=all>`__."
+"Check `YsymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"ysymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.ZasymmBC:9 of
 msgid ""
-"Check `ZasymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-zasymmbcpyc.htm?contextscope=all>`__."
+"Check `ZasymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"zasymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZsymmBC:9
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.ZsymmBC:9 of
 msgid ""
-"Check `ZsymmBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-zsymmbcpyc.htm?contextscope=all>`__."
+"Check `ZsymmBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"zsymmbcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/bc.md:16
@@ -3690,8 +3730,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:1 of
 msgid ""
 "The AccelerationBC object stores the data for an acceleration boundary "
-"condition. The AccelerationBC object is derived from the "
-"BoundaryCondition object."
+"condition. The AccelerationBC object is derived from the BoundaryCondition"
+" object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC:66 of
@@ -3731,15 +3771,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing AccelerationBC object in "
-"the step where it is created."
+"This method modifies the data for an existing AccelerationBC object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValues:5 of
 msgid ""
-"Check `AccelerationBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbcpyc.htm?contextscope=all"
-"#simaker-accelerationbcsetvaluespyc>`__."
+"Check `AccelerationBC.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbcpyc.htm?contextscope=all#simaker-"
+"accelerationbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:1 of
@@ -3750,9 +3791,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:5 of
 msgid ""
-"Check `AccelerationBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbcpyc.htm?contextscope=all"
-"#simaker-accelerationbcsetvaluesinsteppyc>`__."
+"Check `AccelerationBC.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbcpyc.htm?contextscope=all#simaker-"
+"accelerationbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:8
@@ -3786,44 +3828,44 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:10 of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 1-direction. Possible values for the SymbolicConstant are SET, "
-"UNCHANGED, and FREED."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 1-direction. Possible values for the SymbolicConstant are SET, UNCHANGED,"
+" and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:13 of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 2-direction. Possible values for the SymbolicConstant are SET, "
-"UNCHANGED, and FREED."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 2-direction. Possible values for the SymbolicConstant are SET, UNCHANGED,"
+" and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:16 of
 msgid ""
-"A Float or a SymbolicConstant specifying the acceleration component in "
-"the 3-direction. Possible values for the SymbolicConstant are SET, "
-"UNCHANGED, and FREED."
+"A Float or a SymbolicConstant specifying the acceleration component in the"
+" 3-direction. Possible values for the SymbolicConstant are SET, UNCHANGED,"
+" and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:19 of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 1-direction. Possible values for the SymbolicConstant"
-" are SET, UNCHANGED, and FREED."
+"component about the 1-direction. Possible values for the SymbolicConstant "
+"are SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:22 of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 2-direction. Possible values for the SymbolicConstant"
-" are SET, UNCHANGED, and FREED."
+"component about the 2-direction. Possible values for the SymbolicConstant "
+"are SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:25 of
 msgid ""
 "A Float or a SymbolicConstant specifying the rotational acceleration "
-"component about the 3-direction. Possible values for the SymbolicConstant"
-" are SET, UNCHANGED, and FREED."
+"component about the 3-direction. Possible values for the SymbolicConstant "
+"are SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep:28
@@ -3848,8 +3890,8 @@ msgid ""
 "A String or a SymbolicConstant specifying the name of the amplitude "
 "reference. Possible values for the SymbolicConstant are UNCHANGED and "
 "FREED. UNCHANGED should be used if the amplitude is propagated from the "
-"previous analysis step. FREED should be used if the boundary condition is"
-" changed to have no amplitude reference. You should provide the "
+"previous analysis step. FREED should be used if the boundary condition is "
+"changed to have no amplitude reference. You should provide the "
 "**amplitude** argument only if it is valid for the specified step."
 msgstr ""
 
@@ -3868,8 +3910,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition:13 of
 msgid ""
-"Check `BoundaryCondition on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionpyc.htm?contextscope=all>`__."
+"Check `BoundaryCondition on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate:1 of
@@ -3880,9 +3923,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate:5 of
 msgid ""
-"Check `BoundaryCondition.deactivate on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionpyc.htm?contextscope=all"
-"#simaker-boundaryconditiondeactivatepyc>`__."
+"Check `BoundaryCondition.deactivate on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionpyc.htm?contextscope=all#simaker-"
+"boundaryconditiondeactivatepyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate:8 of
@@ -3897,9 +3941,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete:4 of
 msgid ""
-"Check `BoundaryCondition.delete on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionpyc.htm?contextscope=all"
-"#simaker-boundaryconditiondeletepyc>`__."
+"Check `BoundaryCondition.delete on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionpyc.htm?contextscope=all#simaker-"
+"boundaryconditiondeletepyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete:7 of
@@ -3916,15 +3961,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move:4 of
 msgid ""
-"Check `BoundaryCondition.move on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionpyc.htm?contextscope=all"
-"#simaker-boundaryconditionmovepyc>`__."
+"Check `BoundaryCondition.move on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionpyc.htm?contextscope=all#simaker-"
+"boundaryconditionmovepyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move:7 of
 msgid ""
-"A String specifying the name of the step from which the boundary "
-"condition state is moved."
+"A String specifying the name of the step from which the boundary condition"
+" state is moved."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move:10 of
@@ -3941,9 +3987,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset:5 of
 msgid ""
-"Check `BoundaryCondition.reset on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionpyc.htm?contextscope=all"
-"#simaker-boundaryconditionresetpyc>`__."
+"Check `BoundaryCondition.reset on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionpyc.htm?contextscope=all#simaker-"
+"boundaryconditionresetpyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset:8 of
@@ -3953,7 +4000,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume:1 of
-msgid "This method resumes the boundary condition that was previously suppressed."
+msgid ""
+"This method resumes the boundary condition that was previously suppressed."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress:1 of
@@ -3983,15 +4031,15 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState:1
 #: of
 msgid ""
-"Bases: "
-":py:class:`~abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState`"
+"Bases: :py:class:`~abaqus.BoundaryCondition.BoundaryConditionState.Boundar"
+"yConditionState`"
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState:1 of
 msgid ""
 "The AccelerationBCState object stores the propagating data of an "
-"acceleration boundary condition in a step. One instance of this object is"
-" created internally by the AccelerationBC object for each step. The "
+"acceleration boundary condition in a step. One instance of this object is "
+"created internally by the AccelerationBC object for each step. The "
 "instance is also deleted internally by the AccelerationBC object. The "
 "AccelerationBCState object has no constructor or methods. The "
 "AccelerationBCState object is derived from the BoundaryConditionState "
@@ -4041,8 +4089,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState:19 of
 msgid ""
-"Check `AccelerationBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbcstatepyc.htm?contextscope=all>`__."
+"Check `AccelerationBCState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4142,8 +4191,7 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the amplitude "
-"reference. Possible values are UNSET, SET, UNCHANGED, FREED, and "
-"MODIFIED."
+"reference. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -4551,15 +4599,16 @@ msgstr ""
 msgid ""
 "The BoundaryConditionState object is the abstract base type for other "
 "BoundaryConditionState objects. The BoundaryConditionState object has no "
-"explicit constructor or methods. The members of the "
-"BoundaryConditionState object are common to all objects derived from the "
-"BoundaryConditionState object."
+"explicit constructor or methods. The members of the BoundaryConditionState"
+" object are common to all objects derived from the BoundaryConditionState "
+"object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState:13 of
 msgid ""
-"Check `BoundaryConditionState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boundaryconditionstatepyc.htm?contextscope=all>`__."
+"Check `BoundaryConditionState on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boundaryconditionstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC:1
@@ -4585,9 +4634,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValues:5
 #: of
 msgid ""
-"Check `AccelerationBaseMotionBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbasemotionbcpyc.htm?contextscope=all"
-"#simaker-accelerationbasemotionbcsetvaluespyc>`__."
+"Check `AccelerationBaseMotionBC.setValues on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbasemotionbcpyc.htm?contextscope=all#simaker-"
+"accelerationbasemotionbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValuesInStep:1
@@ -4600,21 +4650,22 @@ msgstr ""
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `AccelerationBaseMotionBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbasemotionbcpyc.htm?contextscope=all"
-"#simaker-accelerationbasemotionbcsetvaluesinsteppyc>`__."
+"Check `AccelerationBaseMotionBC.setValuesInStep on help.3ds.com/2018 <http"
+"s://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simak"
+"er-c-accelerationbasemotionbcpyc.htm?contextscope=all#simaker-"
+"accelerationbasemotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState:1
 #: of
 msgid ""
-"The AccelerationBaseMotionBCState object stores the propagating data for "
-"a velocity base motion boundary condition in a step. One instance of this"
-" object is created internally by the AccelerationBaseMotionBC object for "
+"The AccelerationBaseMotionBCState object stores the propagating data for a"
+" velocity base motion boundary condition in a step. One instance of this "
+"object is created internally by the AccelerationBaseMotionBC object for "
 "each step. The instance is also deleted internally by the "
-"AccelerationBaseMotionBC object. The AccelerationBaseMotionBCState object"
-" has no constructor or methods. The AccelerationBaseMotionBCState object "
-"is derived from the BoundaryConditionState object."
+"AccelerationBaseMotionBC object. The AccelerationBaseMotionBCState object "
+"has no constructor or methods. The AccelerationBaseMotionBCState object is"
+" derived from the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState:17
@@ -4627,8 +4678,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState:20
 #: of
 msgid ""
-"Check `AccelerationBaseMotionBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-accelerationbasemotionbcstatepyc.htm?contextscope=all>`__."
+"Check `AccelerationBaseMotionBCState on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"accelerationbasemotionbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC:1 of
@@ -4645,16 +4697,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValues:1
 #: of
 msgid ""
-"This method modifies the data for an existing AcousticPressureBC object "
-"in the step where it is created."
+"This method modifies the data for an existing AcousticPressureBC object in"
+" the step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValues:5
 #: of
 msgid ""
-"Check `AcousticPressureBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticpressurebcpyc.htm?contextscope=all"
-"#simaker-acousticpressurebcsetvaluespyc>`__."
+"Check `AcousticPressureBC.setValues on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"acousticpressurebcpyc.htm?contextscope=all#simaker-"
+"acousticpressurebcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValuesInStep:1
@@ -4667,9 +4720,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `AcousticPressureBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticpressurebcpyc.htm?contextscope=all"
-"#simaker-acousticpressurebcsetvaluesinsteppyc>`__."
+"Check `AcousticPressureBC.setValuesInStep on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"acousticpressurebcpyc.htm?contextscope=all#simaker-"
+"acousticpressurebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValuesInStep:10
@@ -4686,16 +4740,17 @@ msgid ""
 "acoustic pressure boundary condition in a step. One instance of this "
 "object is created internally by the AcousticPressureBC object for each "
 "step. The instance is also deleted internally by the AcousticPressureBC "
-"object. The AcousticPressureBCState object has no constructor or methods."
-" The AcousticPressureBCState object is derived from the "
+"object. The AcousticPressureBCState object has no constructor or methods. "
+"The AcousticPressureBCState object is derived from the "
 "BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState:19
 #: of
 msgid ""
-"Check `AcousticPressureBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticpressurebcstatepyc.htm?contextscope=all>`__."
+"Check `AcousticPressureBCState on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"acousticpressurebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4709,8 +4764,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the acoustic "
-"pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and"
-" MODIFIED."
+"pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
+"MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC:1 of
@@ -4732,24 +4787,26 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValues:5 of
 msgid ""
-"Check `ConcentrationBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentrationbcpyc.htm?contextscope=all"
-"#simaker-concentrationbcsetvaluespyc>`__."
+"Check `ConcentrationBC.setValues on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentrationbcpyc.htm?contextscope=all#simaker-"
+"concentrationbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValuesInStep:1
 #: of
 msgid ""
-"This method modifies the propagating data for an existing ConcentrationBC"
-" object in the specified step."
+"This method modifies the propagating data for an existing ConcentrationBC "
+"object in the specified step."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `ConcentrationBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentrationbcpyc.htm?contextscope=all"
-"#simaker-concentrationbcsetvaluesinsteppyc>`__."
+"Check `ConcentrationBC.setValuesInStep on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentrationbcpyc.htm?contextscope=all#simaker-"
+"concentrationbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValuesInStep:10
@@ -4762,8 +4819,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState:1 of
 msgid ""
 "The ConcentrationBCState object stores the propagating data for a "
-"concentration boundary condition in a step. One instance of this object "
-"is created internally by the ConcentrationBC object for each step. The "
+"concentration boundary condition in a step. One instance of this object is"
+" created internally by the ConcentrationBC object for each step. The "
 "instance is also deleted internally by the ConcentrationBC object. The "
 "ConcentrationBCState object has no constructor or methods. The "
 "ConcentrationBCState object is derived from the BoundaryConditionState "
@@ -4772,8 +4829,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState:19 of
 msgid ""
-"Check `ConcentrationBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentrationbcstatepyc.htm?contextscope=all>`__."
+"Check `ConcentrationBCState on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentrationbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4787,15 +4845,14 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the concentration "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
-"MODIFIED."
+"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC:1 of
 msgid ""
-"The ConnAccelerationBC object stores the data for a connector "
-"acceleration boundary condition. The ConnAccelerationBC object is derived"
-" from the BoundaryCondition object."
+"The ConnAccelerationBC object stores the data for a connector acceleration"
+" boundary condition. The ConnAccelerationBC object is derived from the "
+"BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC:74 of
@@ -4805,16 +4862,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:1
 #: of
 msgid ""
-"This method modifies the data for an existing ConnAccelerationBC object "
-"in the step where it is created."
+"This method modifies the data for an existing ConnAccelerationBC object in"
+" the step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues:5
 #: of
 msgid ""
-"Check `ConnAccelerationBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connaccelerationbcpyc.htm?contextscope=all"
-"#simaker-connaccelerationbcsetvaluespyc>`__."
+"Check `ConnAccelerationBC.setValues on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connaccelerationbcpyc.htm?contextscope=all#simaker-"
+"connaccelerationbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValuesInStep:1
@@ -4827,9 +4885,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `ConnAccelerationBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connaccelerationbcpyc.htm?contextscope=all"
-"#simaker-connaccelerationbcsetvaluesinsteppyc>`__."
+"Check `ConnAccelerationBC.setValuesInStep on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connaccelerationbcpyc.htm?contextscope=all#simaker-"
+"connaccelerationbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValuesInStep:10
@@ -4884,11 +4943,11 @@ msgstr ""
 #: of
 msgid ""
 "The ConnAccelerationBCState object stores the propagating data of a "
-"connector acceleration boundary condition in a step. One instance of this"
-" object is created internally by the ConnAccelerationBC object for each "
+"connector acceleration boundary condition in a step. One instance of this "
+"object is created internally by the ConnAccelerationBC object for each "
 "step. The instance is also deleted internally by the ConnAccelerationBC "
-"object. The ConnAccelerationBCState object has no constructor or methods."
-" The ConnAccelerationBCState object is derived from the "
+"object. The ConnAccelerationBCState object has no constructor or methods. "
+"The ConnAccelerationBCState object is derived from the "
 "BoundaryConditionState object."
 msgstr ""
 
@@ -4901,16 +4960,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState:19
 #: of
 msgid ""
-"Check `ConnAccelerationBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connaccelerationbcstatepyc.htm?contextscope=all>`__."
+"Check `ConnAccelerationBCState on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connaccelerationbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.a1:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 1-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 1-direction."
 msgstr ""
 
 #: ../../docstring
@@ -4926,8 +4986,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.a2:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 2-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 2-direction."
 msgstr ""
 
 #: ../../docstring
@@ -4943,8 +5003,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.a3:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 3-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 3-direction."
 msgstr ""
 
 #: ../../docstring
@@ -4960,8 +5020,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.ar1:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 4-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 4-direction."
 msgstr ""
 
 #: ../../docstring
@@ -4977,8 +5037,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.ar2:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 5-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 5-direction."
 msgstr ""
 
 #: ../../docstring
@@ -4994,8 +5054,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState.ar3:1
 #: of
 msgid ""
-"A Float specifying the connector acceleration component in the "
-"connector's local 6-direction."
+"A Float specifying the connector acceleration component in the connector's"
+" local 6-direction."
 msgstr ""
 
 #: ../../docstring
@@ -5010,8 +5070,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC:1 of
 msgid ""
 "The ConnDisplacementBC object stores the data for a connector "
-"displacement/rotation boundary condition. The ConnDisplacementBC object "
-"is derived from the BoundaryCondition object."
+"displacement/rotation boundary condition. The ConnDisplacementBC object is"
+" derived from the BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC:81 of
@@ -5021,16 +5081,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValues:1
 #: of
 msgid ""
-"This method modifies the data for an existing ConnDisplacementBC object "
-"in the step where it is created."
+"This method modifies the data for an existing ConnDisplacementBC object in"
+" the step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValues:5
 #: of
 msgid ""
-"Check `ConnDisplacementBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conndisplacementbcpyc.htm?contextscope=all"
-"#simaker-conndisplacementbcsetvaluespyc>`__."
+"Check `ConnDisplacementBC.setValues on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conndisplacementbcpyc.htm?contextscope=all#simaker-"
+"conndisplacementbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValuesInStep:1
@@ -5043,9 +5104,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `ConnDisplacementBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conndisplacementbcpyc.htm?contextscope=all"
-"#simaker-conndisplacementbcsetvaluesinsteppyc>`__."
+"Check `ConnDisplacementBC.setValuesInStep on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conndisplacementbcpyc.htm?contextscope=all#simaker-"
+"conndisplacementbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValuesInStep:10
@@ -5100,19 +5162,20 @@ msgstr ""
 #: of
 msgid ""
 "The ConnDisplacementBCState object stores the propagating data for a "
-"connector displacement/rotation boundary condition in a step. One "
-"instance of this object is created internally by the ConnDisplacementBC "
-"object for each step. The instance is also deleted internally by the "
+"connector displacement/rotation boundary condition in a step. One instance"
+" of this object is created internally by the ConnDisplacementBC object for"
+" each step. The instance is also deleted internally by the "
 "ConnDisplacementBC object. The ConnDisplacementBCState object has no "
-"constructor or methods. The ConnDisplacementBCState object is derived "
-"from the BoundaryConditionState object."
+"constructor or methods. The ConnDisplacementBCState object is derived from"
+" the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState:19
 #: of
 msgid ""
-"Check `ConnDisplacementBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conndisplacementbcstatepyc.htm?contextscope=all>`__."
+"Check `ConnDisplacementBCState on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conndisplacementbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5128,8 +5191,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
-"component in the connector's local 1-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 1-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5145,8 +5208,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
-"component in the connector's local 2-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 2-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5162,8 +5225,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
-"component in the connector's local 3-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 3-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5179,8 +5242,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"component in the connector's local 4-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 4-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5196,8 +5259,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"component in the connector's local 5-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 5-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5213,8 +5276,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"component in the connector's local 6-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 6-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC:1 of
@@ -5230,15 +5293,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ConnVelocityBC object in "
-"the step where it is created."
+"This method modifies the data for an existing ConnVelocityBC object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues:5 of
 msgid ""
-"Check `ConnVelocityBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connvelocitybcpyc.htm?contextscope=all"
-"#simaker-connvelocitybcsetvaluespyc>`__."
+"Check `ConnVelocityBC.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connvelocitybcpyc.htm?contextscope=all#simaker-"
+"connvelocitybcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:1 of
@@ -5249,9 +5313,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:5 of
 msgid ""
-"Check `ConnVelocityBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connvelocitybcpyc.htm?contextscope=all"
-"#simaker-connvelocitybcsetvaluesinsteppyc>`__."
+"Check `ConnVelocityBC.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connvelocitybcpyc.htm?contextscope=all#simaker-"
+"connvelocitybcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:10 of
@@ -5277,29 +5342,29 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:19 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 4-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 4-direction. Possible values for the "
 "SymbolicConstant are SET and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:23 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 5-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 5-direction. Possible values for the "
 "SymbolicConstant are SET and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep:27 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component in the connector's local 6-direction. Possible values for the "
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" in the connector's local 6-direction. Possible values for the "
 "SymbolicConstant are SET and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState:1 of
 msgid ""
-"The ConnVelocityBCState object stores the propagating data for a velocity"
-" boundary condition in a step. One instance of this object is created "
+"The ConnVelocityBCState object stores the propagating data for a velocity "
+"boundary condition in a step. One instance of this object is created "
 "internally by the ConnVelocityBC object for each step. The instance is "
 "also deleted internally by the ConnVelocityBC object. The "
 "ConnVelocityBCState object has no constructor or methods. The "
@@ -5309,8 +5374,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState:19 of
 msgid ""
-"Check `ConnVelocityBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connvelocitybcstatepyc.htm?contextscope=all>`__."
+"Check `ConnVelocityBCState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connvelocitybcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5325,8 +5391,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
-"component in the connector's local 1-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 1-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5341,8 +5407,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
-"component in the connector's local 2-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 2-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5357,8 +5423,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
-"component in the connector's local 3-direction. Possible values are "
-"UNSET, SET, UNCHANGED, FREED, and MODIFIED."
+"component in the connector's local 3-direction. Possible values are UNSET,"
+" SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -5422,15 +5488,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing DisplacementBC object in "
-"the step where it is created."
+"This method modifies the data for an existing DisplacementBC object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues:5 of
 msgid ""
-"Check `DisplacementBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbcpyc.htm?contextscope=all"
-"#simaker-displacementbcsetvaluespyc>`__."
+"Check `DisplacementBC.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbcpyc.htm?contextscope=all#simaker-"
+"displacementbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:1 of
@@ -5441,30 +5508,31 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:5 of
 msgid ""
-"Check `DisplacementBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbcpyc.htm?contextscope=all"
-"#simaker-displacementbcsetvaluesinsteppyc>`__."
+"Check `DisplacementBC.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbcpyc.htm?contextscope=all#simaker-"
+"displacementbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:10 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 1-direction. Possible values for the SymbolicConstant "
-"are SET, UNCHANGED, and FREED."
+"component in the 1-direction. Possible values for the SymbolicConstant are"
+" SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:13 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 2-direction. Possible values for the SymbolicConstant "
-"are SET, UNCHANGED, and FREED."
+"component in the 2-direction. Possible values for the SymbolicConstant are"
+" SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:16 of
 msgid ""
 "A Float, a Complex, or a SymbolicConstant specifying the displacement "
-"component in the 3-direction. Possible values for the SymbolicConstant "
-"are SET, UNCHANGED, and FREED."
+"component in the 3-direction. Possible values for the SymbolicConstant are"
+" SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep:19 of
@@ -5493,16 +5561,17 @@ msgid ""
 "The DisplacementBCState object stores the propagating data for a "
 "displacement/rotation boundary condition in a step. One instance of this "
 "object is created internally by the DisplacementBC object for each step. "
-"The instance is also deleted internally by the DisplacementBC object. The"
-" DisplacementBCState object has no constructor or methods. The "
+"The instance is also deleted internally by the DisplacementBC object. The "
+"DisplacementBCState object has no constructor or methods. The "
 "DisplacementBCState object is derived from the BoundaryConditionState "
 "object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState:19 of
 msgid ""
-"Check `DisplacementBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbcstatepyc.htm?contextscope=all>`__."
+"Check `DisplacementBCState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5624,9 +5693,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValues:5
 #: of
 msgid ""
-"Check `DisplacementBaseMotionBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbasemotionbcpyc.htm?contextscope=all"
-"#simaker-displacementbasemotionbcsetvaluespyc>`__."
+"Check `DisplacementBaseMotionBC.setValues on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbasemotionbcpyc.htm?contextscope=all#simaker-"
+"displacementbasemotionbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValuesInStep:1
@@ -5639,35 +5709,37 @@ msgstr ""
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `DisplacementBaseMotionBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbasemotionbcpyc.htm?contextscope=all"
-"#simaker-displacementbasemotionbcsetvaluesinsteppyc>`__."
+"Check `DisplacementBaseMotionBC.setValuesInStep on help.3ds.com/2018 <http"
+"s://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simak"
+"er-c-displacementbasemotionbcpyc.htm?contextscope=all#simaker-"
+"displacementbasemotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState:1
 #: of
 msgid ""
-"The DisplacementBaseMotionBCState object stores the propagating data for "
-"a velocity base motion boundary condition in a step. One instance of this"
-" object is created internally by the DisplacementBaseMotionBC object for "
+"The DisplacementBaseMotionBCState object stores the propagating data for a"
+" velocity base motion boundary condition in a step. One instance of this "
+"object is created internally by the DisplacementBaseMotionBC object for "
 "each step. The instance is also deleted internally by the "
-"DisplacementBaseMotionBC object. The DisplacementBaseMotionBCState object"
-" has no constructor or methods. The DisplacementBaseMotionBCState object "
-"is derived from the BoundaryConditionState object."
+"DisplacementBaseMotionBC object. The DisplacementBaseMotionBCState object "
+"has no constructor or methods. The DisplacementBaseMotionBCState object is"
+" derived from the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState:20
 #: of
 msgid ""
-"Check `DisplacementBaseMotionBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementbasemotionbcstatepyc.htm?contextscope=all>`__."
+"Check `DisplacementBaseMotionBCState on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"displacementbasemotionbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC:1 of
 msgid ""
-"The ElectricPotentialBC object stores the data for an electrical "
-"potential boundary condition. The ElectricPotentialBC object is derived "
-"from the BoundaryCondition object."
+"The ElectricPotentialBC object stores the data for an electrical potential"
+" boundary condition. The ElectricPotentialBC object is derived from the "
+"BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC:46 of
@@ -5684,9 +5756,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValues:5
 #: of
 msgid ""
-"Check `ElectricPotentialBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-electricpotentialbcpyc.htm?contextscope=all"
-"#simaker-electricpotentialbcsetvaluespyc>`__."
+"Check `ElectricPotentialBC.setValues on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"electricpotentialbcpyc.htm?contextscope=all#simaker-"
+"electricpotentialbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValuesInStep:1
@@ -5699,16 +5772,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `ElectricPotentialBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-electricpotentialbcpyc.htm?contextscope=all"
-"#simaker-electricpotentialbcsetvaluesinsteppyc>`__."
+"Check `ElectricPotentialBC.setValuesInStep on help.3ds.com/2018 <https://h"
+"elp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"electricpotentialbcpyc.htm?contextscope=all#simaker-"
+"electricpotentialbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValuesInStep:10
 #: of
 msgid ""
-"A Float or the SymbolicConstant FREED specifying the electrical potential"
-" magnitude."
+"A Float or the SymbolicConstant FREED specifying the electrical potential "
+"magnitude."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState:1
@@ -5718,16 +5792,17 @@ msgid ""
 "electrical potential boundary condition in a step. One instance of this "
 "object is created internally by the ElectricPotentialBC object for each "
 "step. The instance is also deleted internally by the ElectricPotentialBC "
-"object. The ElectricPotentialBCState object has no constructor or "
-"methods. The ElectricPotentialBCState object is derived from the "
+"object. The ElectricPotentialBCState object has no constructor or methods."
+" The ElectricPotentialBCState object is derived from the "
 "BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState:19
 #: of
 msgid ""
-"Check `ElectricPotentialBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-electricpotentialbcstatepyc.htm?contextscope=all>`__."
+"Check `ElectricPotentialBCState on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"electricpotentialbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5741,14 +5816,14 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the electrical "
-"potential magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, "
-"and MODIFIED."
+"potential magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and"
+" MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC:1 of
 msgid ""
-"The EulerianBC object stores the data for an Eulerian boundary condition."
-" The EulerianBC object is derived from the BoundaryCondition object."
+"The EulerianBC object stores the data for an Eulerian boundary condition. "
+"The EulerianBC object is derived from the BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC:37 of
@@ -5763,17 +5838,17 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValues:5 of
 msgid ""
-"Check `EulerianBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianbcpyc.htm?contextscope=all"
-"#simaker-eulerianbcsetvaluespyc>`__."
+"Check `EulerianBC.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianbcpyc.htm?contextscope=all#simaker-eulerianbcsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValues:10
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep:10
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.definition:1 of
 msgid ""
-"A SymbolicConstant specifying the material flow conditions to be defined."
-" Possible values are INFLOW, OUTFLOW, and BOTH. The default value is "
+"A SymbolicConstant specifying the material flow conditions to be defined. "
+"Possible values are INFLOW, OUTFLOW, and BOTH. The default value is "
 "INFLOW."
 msgstr ""
 
@@ -5781,8 +5856,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep:16 of
 msgid ""
 "A SymbolicConstant specifying the control of material flow out of the "
-"Eulerian domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING,"
-" and EQUILIBRIUM. The default value is ZERO_PRESSURE."
+"Eulerian domain. Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, "
+"and EQUILIBRIUM. The default value is ZERO_PRESSURE."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep:1 of
@@ -5793,9 +5868,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep:5 of
 msgid ""
-"Check `EulerianBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianbcpyc.htm?contextscope=all"
-"#simaker-eulerianbcsetvaluesinsteppyc>`__."
+"Check `EulerianBC.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianbcpyc.htm?contextscope=all#simaker-"
+"eulerianbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState:1 of
@@ -5804,8 +5880,8 @@ msgid ""
 "boundary condition in a step. One instance of this object is created "
 "internally by the EulerianBC object for each step. The instance is also "
 "deleted internally by the EulerianBC object. The EulerianBCState object "
-"has no constructor or methods. The EulerianBCState object is derived from"
-" the BoundaryConditionState object."
+"has no constructor or methods. The EulerianBCState object is derived from "
+"the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState:15 of
@@ -5814,8 +5890,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState:18 of
 msgid ""
-"Check `EulerianBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianbcstatepyc.htm?contextscope=all>`__."
+"Check `EulerianBCState on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5831,16 +5908,16 @@ msgstr ""
 #: ../../docstring
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.inflowType:1 of
 msgid ""
-"A SymbolicConstant specifying the material flow conditions to be defined."
-" Possible values are FREE, NONE, and VOID. The default value is FREE."
+"A SymbolicConstant specifying the material flow conditions to be defined. "
+"Possible values are FREE, NONE, and VOID. The default value is FREE."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState.outflowType:1 of
 msgid ""
-"A SymbolicConstant specifying the material flow conditions to be defined."
-" Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and "
-"EQUILIBRIUM. The default value is ZERO_PRESSURE."
+"A SymbolicConstant specifying the material flow conditions to be defined. "
+"Possible values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. "
+"The default value is ZERO_PRESSURE."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC:1 of
@@ -5862,35 +5939,37 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValues:5 of
 msgid ""
-"Check `EulerianMotionBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianmotionbcpyc.htm?contextscope=all"
-"#simaker-eulerianmotionbcsetvaluespyc>`__."
+"Check `EulerianMotionBC.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianmotionbcpyc.htm?contextscope=all#simaker-"
+"eulerianmotionbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValuesInStep:1
 #: of
 msgid ""
-"This method modifies the propagating data for an existing "
-"EulerianMotionBC object in the specified step."
+"This method modifies the propagating data for an existing EulerianMotionBC"
+" object in the specified step."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `EulerianMotionBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianmotionbcpyc.htm?contextscope=all"
-"#simaker-eulerianmotionbcsetvaluesinsteppyc>`__."
+"Check `EulerianMotionBC.setValuesInStep on help.3ds.com/2018 <https://help"
+".3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianmotionbcpyc.htm?contextscope=all#simaker-"
+"eulerianmotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState:1 of
 msgid ""
 "The EulerianMotionBCState object stores the propagating data for an "
 "Eulerian mesh motion boundary condition in a step. One instance of this "
-"object is created internally by the EulerianMotionBC object for each "
-"step. The instance is also deleted internally by the EulerianMotionBC "
-"object. The EulerianMotionBCState object has no constructor or methods. "
-"The EulerianMotionBCState object is derived from the "
-"BoundaryConditionState object."
+"object is created internally by the EulerianMotionBC object for each step."
+" The instance is also deleted internally by the EulerianMotionBC object. "
+"The EulerianMotionBCState object has no constructor or methods. The "
+"EulerianMotionBCState object is derived from the BoundaryConditionState "
+"object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState:16 of
@@ -5899,8 +5978,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState:19 of
 msgid ""
-"Check `EulerianMotionBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eulerianmotionbcstatepyc.htm?contextscope=all>`__."
+"Check `EulerianMotionBCState on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"eulerianmotionbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC:1 of
@@ -5917,16 +5997,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues:1
 #: of
 msgid ""
-"This method modifies the data for an existing FluidCavityPressureBC "
-"object in the step where it is created."
+"This method modifies the data for an existing FluidCavityPressureBC object"
+" in the step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues:5
 #: of
 msgid ""
-"Check `FluidCavityPressureBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurebcpyc.htm?contextscope=all"
-"#simaker-fluidcavitypressurebcsetvaluespyc>`__."
+"Check `FluidCavityPressureBC.setValues on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fluidcavitypressurebcpyc.htm?contextscope=all#simaker-"
+"fluidcavitypressurebcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValuesInStep:1
@@ -5939,16 +6020,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `FluidCavityPressureBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurebcpyc.htm?contextscope=all"
-"#simaker-fluidcavitypressurebcsetvaluesinsteppyc>`__."
+"Check `FluidCavityPressureBC.setValuesInStep on help.3ds.com/2018 <https:/"
+"/help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-fluidcavitypressurebcpyc.htm?contextscope=all#simaker-"
+"fluidcavitypressurebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValuesInStep:10
 #: of
 msgid ""
-"A Float or the SymbolicConstant FREED specifying the fluid cavity "
-"pressure magnitude."
+"A Float or the SymbolicConstant FREED specifying the fluid cavity pressure"
+" magnitude."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState:1
@@ -5956,18 +6038,19 @@ msgstr ""
 msgid ""
 "The FluidCavityPressureBCState object stores the propagating data for a "
 "fluid cavity pressure boundary condition in a step. One instance of this "
-"object is created internally by the FluidCavityPressureBC object for each"
-" step. The instance is also deleted internally by the "
-"FluidCavityPressureBC object. The FluidCavityPressureBCState object has "
-"no constructor or methods. The FluidCavityPressureBCState object is "
-"derived from the BoundaryConditionState object."
+"object is created internally by the FluidCavityPressureBC object for each "
+"step. The instance is also deleted internally by the FluidCavityPressureBC"
+" object. The FluidCavityPressureBCState object has no constructor or "
+"methods. The FluidCavityPressureBCState object is derived from the "
+"BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState:19
 #: of
 msgid ""
-"Check `FluidCavityPressureBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurebcstatepyc.htm?contextscope=all>`__."
+"Check `FluidCavityPressureBCState on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"fluidcavitypressurebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5981,16 +6064,16 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the fluid cavity "
-"pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and"
-" MODIFIED."
+"pressure magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
+"MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC:1
 #: of
 msgid ""
-"The MagneticVectorPotentialBC object stores the data for a magnetic "
-"vector potential boundary condition. The MagneticVectorPotentialBC object"
-" is derived from the BoundaryCondition object."
+"The MagneticVectorPotentialBC object stores the data for a magnetic vector"
+" potential boundary condition. The MagneticVectorPotentialBC object is "
+"derived from the BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC:52
@@ -6008,9 +6091,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues:5
 #: of
 msgid ""
-"Check `MagneticVectorPotentialBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-magneticvectorpotentialbcpyc.htm?contextscope=all"
-"#simaker-magneticvectorpotentialbcsetvaluespyc>`__."
+"Check `MagneticVectorPotentialBC.setValues on help.3ds.com/2018 <https://h"
+"elp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"magneticvectorpotentialbcpyc.htm?contextscope=all#simaker-"
+"magneticvectorpotentialbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep:1
@@ -6023,32 +6107,33 @@ msgstr ""
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `MagneticVectorPotentialBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-magneticvectorpotentialbcpyc.htm?contextscope=all"
-"#simaker-magneticvectorpotentialbcsetvaluesinsteppyc>`__."
+"Check `MagneticVectorPotentialBC.setValuesInStep on help.3ds.com/2018 <htt"
+"ps://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/sima"
+"ker-c-magneticvectorpotentialbcpyc.htm?contextscope=all#simaker-"
+"magneticvectorpotentialbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep:10
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 1-direction. Possible values for the SymbolicConstant "
-"are SET and UNCHANGED."
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 1-direction. Possible values for the SymbolicConstant are"
+" SET and UNCHANGED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep:13
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 2-direction. Possible values for the SymbolicConstant "
-"are SET and UNCHANGED."
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 2-direction. Possible values for the SymbolicConstant are"
+" SET and UNCHANGED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep:16
 #: of
 msgid ""
-"A Complex, or a SymbolicConstant specifying the magnetic vector potential"
-" component in the 3-direction. Possible values for the SymbolicConstant "
+"A Complex, or a SymbolicConstant specifying the magnetic vector potential "
+"component in the 3-direction. Possible values for the SymbolicConstant "
 "areSET and UNCHANGED."
 msgstr ""
 
@@ -6065,15 +6150,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing MaterialFlowBC object in "
-"the step where it is created."
+"This method modifies the data for an existing MaterialFlowBC object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValues:5 of
 msgid ""
-"Check `MaterialFlowBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialflowbcpyc.htm?contextscope=all"
-"#simaker-materialflowbcsetvaluespyc>`__."
+"Check `MaterialFlowBC.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"materialflowbcpyc.htm?contextscope=all#simaker-"
+"materialflowbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValuesInStep:1 of
@@ -6084,9 +6170,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValuesInStep:5 of
 msgid ""
-"Check `MaterialFlowBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialflowbcpyc.htm?contextscope=all"
-"#simaker-materialflowbcsetvaluesinsteppyc>`__."
+"Check `MaterialFlowBC.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"materialflowbcpyc.htm?contextscope=all#simaker-"
+"materialflowbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValuesInStep:10 of
@@ -6097,19 +6184,20 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState:1 of
 msgid ""
-"The MaterialFlowBCState object stores the propagating data for a "
-"connector material flow boundary condition in a step. One instance of "
-"this object is created internally by the MaterialFlowBC object for each "
-"step. The instance is also deleted internally by the MaterialFlowBC "
-"object. The MaterialFlowBCState object has no constructor or methods. The"
-" MaterialFlowBCState object is derived from the BoundaryConditionState "
+"The MaterialFlowBCState object stores the propagating data for a connector"
+" material flow boundary condition in a step. One instance of this object "
+"is created internally by the MaterialFlowBC object for each step. The "
+"instance is also deleted internally by the MaterialFlowBC object. The "
+"MaterialFlowBCState object has no constructor or methods. The "
+"MaterialFlowBCState object is derived from the BoundaryConditionState "
 "object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState:19 of
 msgid ""
-"Check `MaterialFlowBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialflowbcstatepyc.htm?contextscope=all>`__."
+"Check `MaterialFlowBCState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"materialflowbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6123,15 +6211,14 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the material flow "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
-"MODIFIED."
+"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC:1 of
 msgid ""
 "The PorePressureBC object stores the data for a pore pressure boundary "
-"condition. The PorePressureBC object is derived from the "
-"BoundaryCondition object."
+"condition. The PorePressureBC object is derived from the BoundaryCondition"
+" object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC:45 of
@@ -6140,15 +6227,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing PorePressureBC object in "
-"the step where it is created."
+"This method modifies the data for an existing PorePressureBC object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValues:5 of
 msgid ""
-"Check `PorePressureBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-porepressurebcpyc.htm?contextscope=all"
-"#simaker-porepressurebcsetvaluespyc>`__."
+"Check `PorePressureBC.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"porepressurebcpyc.htm?contextscope=all#simaker-"
+"porepressurebcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValuesInStep:1 of
@@ -6159,9 +6247,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValuesInStep:5 of
 msgid ""
-"Check `PorePressureBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-porepressurebcpyc.htm?contextscope=all"
-"#simaker-porepressurebcsetvaluesinsteppyc>`__."
+"Check `PorePressureBC.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"porepressurebcpyc.htm?contextscope=all#simaker-"
+"porepressurebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValuesInStep:10 of
@@ -6183,8 +6272,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState:19 of
 msgid ""
-"Check `PorePressureBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-porepressurebcstatepyc.htm?contextscope=all>`__."
+"Check `PorePressureBCState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"porepressurebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6198,8 +6288,7 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the pore pressure "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
-"MODIFIED."
+"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC:1 of
@@ -6223,9 +6312,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValues:5
 #: of
 msgid ""
-"Check `RetainedNodalDofsBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-retainednodaldofsbcpyc.htm?contextscope=all"
-"#simaker-retainednodaldofsbcsetvaluespyc>`__."
+"Check `RetainedNodalDofsBC.setValues on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"retainednodaldofsbcpyc.htm?contextscope=all#simaker-"
+"retainednodaldofsbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValuesInStep:1
@@ -6238,9 +6328,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `RetainedNodalDofsBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-retainednodaldofsbcpyc.htm?contextscope=all"
-"#simaker-retainednodaldofsbcsetvaluesinsteppyc>`__."
+"Check `RetainedNodalDofsBC.setValuesInStep on help.3ds.com/2018 <https://h"
+"elp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"retainednodaldofsbcpyc.htm?contextscope=all#simaker-"
+"retainednodaldofsbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValuesInStep:10
@@ -6298,7 +6389,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.dofs:1 of
-msgid "A tuple of tuples of Ints specifying the constrained degrees-of-freedom."
+msgid ""
+"A tuple of tuples of Ints specifying the constrained degrees-of-freedom."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValues:1 of
@@ -6310,23 +6402,24 @@ msgstr ""
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValuesInStep:1
 #: of
 msgid ""
-"This method modifies the propagating data for an existing SecondaryBaseBC"
-" object in the specified step."
+"This method modifies the propagating data for an existing SecondaryBaseBC "
+"object in the specified step."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `SecondaryBaseBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-secondarybasebcpyc.htm?contextscope=all"
-"#simaker-secondarybasebcsetvaluesinsteppyc>`__."
+"Check `SecondaryBaseBC.setValuesInStep on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"secondarybasebcpyc.htm?contextscope=all#simaker-"
+"secondarybasebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState:1 of
 msgid ""
 "The SecondaryBaseBCState object stores the propagating data for a slave "
-"base boundary condition in a step. One instance of this object is created"
-" internally by the SecondaryBaseBC object for each step. The instance is "
+"base boundary condition in a step. One instance of this object is created "
+"internally by the SecondaryBaseBC object for each step. The instance is "
 "also deleted internally by the SecondaryBaseBC object. The "
 "SecondaryBaseBCState object has no constructor or methods. The "
 "SecondaryBaseBCState object is derived from the BoundaryConditionState "
@@ -6335,8 +6428,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState:19 of
 msgid ""
-"Check `SecondaryBaseBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-secondarybasebcstatepyc.htm?contextscope=all>`__."
+"Check `SecondaryBaseBCState on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"secondarybasebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC:1 of
@@ -6357,9 +6451,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues:5 of
 msgid ""
-"Check `SubmodelBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelbcpyc.htm?contextscope=all"
-"#simaker-submodelbcsetvaluespyc>`__."
+"Check `SubmodelBC.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelbcpyc.htm?contextscope=all#simaker-submodelbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:1 of
@@ -6370,22 +6464,23 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:5 of
 msgid ""
-"Check `SubmodelBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelbcpyc.htm?contextscope=all"
-"#simaker-submodelbcsetvaluesinsteppyc>`__."
+"Check `SubmodelBC.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelbcpyc.htm?contextscope=all#simaker-"
+"submodelbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:10 of
 msgid ""
-"A Boolean specifying whether the boundary condition should remain fixed "
-"at the current values at the start of the step. The default value is ON."
+"A Boolean specifying whether the boundary condition should remain fixed at"
+" the current values at the start of the step. The default value is ON."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:13 of
 msgid ""
-"A sequence of Ints specifying the degrees of freedom to which the "
-"boundary condition is applied. The **dof** argument is applicable only if"
-" **fixed** = OFF."
+"A sequence of Ints specifying the degrees of freedom to which the boundary"
+" condition is applied. The **dof** argument is applicable only if "
+"**fixed** = OFF."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:16 of
@@ -6408,9 +6503,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep:27 of
 msgid ""
-"A Float specifying the thickness of the center zone size around the shell"
-" midsurface. The default value is None.The **centerZoneSize** argument is"
-" applicable only if **fixed** = OFF."
+"A Float specifying the thickness of the center zone size around the shell "
+"midsurface. The default value is None.The **centerZoneSize** argument is "
+"applicable only if **fixed** = OFF."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState:1 of
@@ -6419,8 +6514,8 @@ msgid ""
 "boundary condition in a step. One instance of this object is created "
 "internally by the SubmodelBC object for each step. The instance is also "
 "deleted internally by the SubmodelBC object. The SubmodelBCState object "
-"has no constructor or methods. The SubmodelBCState object is derived from"
-" the BoundaryConditionState object."
+"has no constructor or methods. The SubmodelBCState object is derived from "
+"the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState:15 of
@@ -6429,8 +6524,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState:19 of
 msgid ""
-"Check `SubmodelBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelbcstatepyc.htm?contextscope=all>`__."
+"Check `SubmodelBCState on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6460,8 +6556,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.dofState:1
 #: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState.dofState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **dof** "
-"member. Possible values are SET and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the **dof** member."
+" Possible values are SET and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -6485,8 +6581,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState.globalStepState:1
 #: of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **globalStep**"
-" member. Possible values are SET and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the **globalStep** "
+"member. Possible values are SET and UNCHANGED."
 msgstr ""
 
 #: ../../docstring
@@ -6506,8 +6602,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:1 of
 msgid ""
 "The TemperatureBC object stores the data for a temperature boundary "
-"condition. The TemperatureBC object is derived from the BoundaryCondition"
-" object."
+"condition. The TemperatureBC object is derived from the BoundaryCondition "
+"object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC:47 of
@@ -6516,15 +6612,16 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:1 of
 msgid ""
-"This method modifies the data for an existing TemperatureBC object in the"
-" step where it is created."
+"This method modifies the data for an existing TemperatureBC object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues:5 of
 msgid ""
-"Check `TemperatureBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturebcpyc.htm?contextscope=all"
-"#simaker-temperaturebcsetvaluespyc>`__."
+"Check `TemperatureBC.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"temperaturebcpyc.htm?contextscope=all#simaker-"
+"temperaturebcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep:1 of
@@ -6535,9 +6632,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep:5 of
 msgid ""
-"Check `TemperatureBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturebcpyc.htm?contextscope=all"
-"#simaker-temperaturebcsetvaluesinsteppyc>`__."
+"Check `TemperatureBC.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"temperaturebcpyc.htm?contextscope=all#simaker-"
+"temperaturebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep:10 of
@@ -6550,8 +6648,8 @@ msgstr ""
 msgid ""
 "The TemperatureBCState object stores the propagating data for a "
 "temperature boundary condition in a step. One instance of this object is "
-"created internally by the TemperatureBC object for each step. The "
-"instance is also deleted internally by the TemperatureBC object. The "
+"created internally by the TemperatureBC object for each step. The instance"
+" is also deleted internally by the TemperatureBC object. The "
 "TemperatureBCState object has no constructor or methods. The "
 "TemperatureBCState object is derived from the BoundaryConditionState "
 "object."
@@ -6559,8 +6657,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState:19 of
 msgid ""
-"Check `TemperatureBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturebcstatepyc.htm?contextscope=all>`__."
+"Check `TemperatureBCState on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"temperaturebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6574,21 +6673,21 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the temperature "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and "
-"MODIFIED."
+"magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC:1 of
 msgid ""
-"The TypeBC object stores the data for several types of predefined "
-"boundary conditions that are commonly used in stress/displacement "
-"analyses. The TypeBC object is derived from the BoundaryCondition object."
+"The TypeBC object stores the data for several types of predefined boundary"
+" conditions that are commonly used in stress/displacement analyses. The "
+"TypeBC object is derived from the BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC:12 of
 msgid ""
-"Check `TypeBC on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-typebcpyc.htm?contextscope=all>`__."
+"Check `TypeBC on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSI"
+"MULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"typebcpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC:14 of
@@ -6603,9 +6702,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.setValues:5 of
 msgid ""
-"Check `TypeBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-typebcpyc.htm?contextscope=all"
-"#simaker-typebcsetvaluespyc>`__."
+"Check `TypeBC.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"typebcpyc.htm?contextscope=all#simaker-typebcsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.BoundaryCondition.TypeBC.TypeBC.setValues:10
@@ -6625,9 +6724,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep:5 of
 msgid ""
-"Check `TypeBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-typebcpyc.htm?contextscope=all"
-"#simaker-typebcsetvaluesinsteppyc>`__."
+"Check `TypeBC.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"typebcpyc.htm?contextscope=all#simaker-typebcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep of
@@ -6635,7 +6734,8 @@ msgid "Raises"
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep:13 of
-msgid "A Symmetry/Antisymmetry/Encastre BC cannot be edited in a propagated step."
+msgid ""
+"A Symmetry/Antisymmetry/Encastre BC cannot be edited in a propagated step."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC:1 of
@@ -6656,9 +6756,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues:5 of
 msgid ""
-"Check `VelocityBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybcpyc.htm?contextscope=all"
-"#simaker-velocitybcsetvaluespyc>`__."
+"Check `VelocityBC.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybcpyc.htm?contextscope=all#simaker-velocitybcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:1 of
@@ -6669,9 +6769,10 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:5 of
 msgid ""
-"Check `VelocityBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybcpyc.htm?contextscope=all"
-"#simaker-velocitybcsetvaluesinsteppyc>`__."
+"Check `VelocityBC.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybcpyc.htm?contextscope=all#simaker-"
+"velocitybcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:10 of
@@ -6694,23 +6795,23 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:19 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 1-direction. Possible values for the SymbolicConstant"
-" are SET and FREED."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 1-direction. Possible values for the SymbolicConstant are SET "
+"and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:22 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 2-direction. Possible values for the SymbolicConstant"
-" are SET and FREED."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 2-direction. Possible values for the SymbolicConstant are SET "
+"and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep:25 of
 msgid ""
-"A Float or a SymbolicConstant specifying the rotational velocity "
-"component about the 3-direction. Possible values for the SymbolicConstant"
-" are SET and FREED."
+"A Float or a SymbolicConstant specifying the rotational velocity component"
+" about the 3-direction. Possible values for the SymbolicConstant are SET "
+"and FREED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState:1 of
@@ -6719,14 +6820,15 @@ msgid ""
 "boundary condition in a step. One instance of this object is created "
 "internally by the VelocityBC object for each step. The instance is also "
 "deleted internally by the VelocityBC object. The VelocityBCState object "
-"has no constructor or methods. The VelocityBCState object is derived from"
-" the BoundaryConditionState object."
+"has no constructor or methods. The VelocityBCState object is derived from "
+"the BoundaryConditionState object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState:18 of
 msgid ""
-"Check `VelocityBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybcstatepyc.htm?contextscope=all>`__."
+"Check `VelocityBCState on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6779,8 +6881,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.vr1State:1 of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"velocity component about the 1-direction. Possible values are UNSET, SET,"
-" UNCHANGED, FREED, and MODIFIED."
+"velocity component about the 1-direction. Possible values are UNSET, SET, "
+"UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -6794,8 +6896,8 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.vr2State:1 of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"velocity component about the 2-direction. Possible values are UNSET, SET,"
-" UNCHANGED, FREED, and MODIFIED."
+"velocity component about the 2-direction. Possible values are UNSET, SET, "
+"UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
@@ -6809,15 +6911,15 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState.vr3State:1 of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
-"velocity component about the 3-direction. Possible values are UNSET, SET,"
-" UNCHANGED, FREED, and MODIFIED."
+"velocity component about the 3-direction. Possible values are UNSET, SET, "
+"UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:1 of
 msgid ""
-"The VelocityBaseMotionBC object stores the data for a velocity base "
-"motion boundary condition. The VelocityBaseMotionBC object is derived "
-"from the BoundaryCondition object."
+"The VelocityBaseMotionBC object stores the data for a velocity base motion"
+" boundary condition. The VelocityBaseMotionBC object is derived from the "
+"BoundaryCondition object."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC:47 of
@@ -6827,16 +6929,17 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:1
 #: of
 msgid ""
-"This method modifies the data for an existing VelocityBaseMotionBC object"
-" in the step where it is created."
+"This method modifies the data for an existing VelocityBaseMotionBC object "
+"in the step where it is created."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues:5
 #: of
 msgid ""
-"Check `VelocityBaseMotionBC.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybasemotionbcpyc.htm?contextscope=all"
-"#simaker-velocitybasemotionbcsetvaluespyc>`__."
+"Check `VelocityBaseMotionBC.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybasemotionbcpyc.htm?contextscope=all#simaker-"
+"velocitybasemotionbcsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValuesInStep:1
@@ -6849,9 +6952,10 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValuesInStep:5
 #: of
 msgid ""
-"Check `VelocityBaseMotionBC.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybasemotionbcpyc.htm?contextscope=all"
-"#simaker-velocitybasemotionbcsetvaluesinsteppyc>`__."
+"Check `VelocityBaseMotionBC.setValuesInStep on help.3ds.com/2018 <https://"
+"help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-velocitybasemotionbcpyc.htm?contextscope=all#simaker-"
+"velocitybasemotionbcsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState:1
@@ -6860,8 +6964,8 @@ msgid ""
 "The VelocityBaseMotionBCState object stores the propagating data for a "
 "velocity base motion boundary condition in a step. One instance of this "
 "object is created internally by the VelocityBaseMotionBC object for each "
-"step. The instance is also deleted internally by the VelocityBaseMotionBC"
-" object. The VelocityBaseMotionBCState object has no constructor or "
+"step. The instance is also deleted internally by the VelocityBaseMotionBC "
+"object. The VelocityBaseMotionBCState object has no constructor or "
 "methods. The VelocityBaseMotionBCState object is derived from the "
 "BoundaryConditionState object."
 msgstr ""
@@ -6869,8 +6973,9 @@ msgstr ""
 #: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState:19
 #: of
 msgid ""
-"Check `VelocityBaseMotionBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitybasemotionbcstatepyc.htm?contextscope=all>`__."
+"Check `VelocityBaseMotionBCState on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"velocitybasemotionbcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBCState.TypeBCState:1 of
@@ -6885,8 +6990,9 @@ msgstr ""
 
 #: abaqus.BoundaryCondition.TypeBCState.TypeBCState:18 of
 msgid ""
-"Check `TypeBCState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-typebcstatepyc.htm?contextscope=all>`__."
+"Check `TypeBCState on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"typebcstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring

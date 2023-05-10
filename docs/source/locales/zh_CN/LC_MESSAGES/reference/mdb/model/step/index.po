@@ -33,8 +33,8 @@ msgid ""
 "configure analysis steps. Step commands (output) describes the commands "
 "used to create and configure output requests and integrated output "
 "sections and the commands to configure diagnostic printing, monitoring, "
-"and restart. Step commands (miscellaneous) describes the commands used to"
-" configure controls, damping, and frequency tables."
+"and restart. Step commands (miscellaneous) describes the commands used to "
+"configure controls, damping, and frequency tables."
 msgstr ""
 
 #: ../../reference/mdb/model/step/index.md:12
@@ -46,7 +46,8 @@ msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:1 of
-msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgid ""
+"Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
 #: abaqus.Step.AnalysisStep.AnalysisStep:6 abaqus.Step.AnnealStep.AnnealStep:5
@@ -85,8 +86,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:9 of
 msgid ""
-"Check `StepModel on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `StepModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 abaqus.Step.StepModel.StepModel:11 of
@@ -345,16 +347,15 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:28 of
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:32 of
 msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
+"A SymbolicConstant specifying the analysis model type. Possible values are"
+" STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:35 of
@@ -365,8 +366,8 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:37 of
 msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:40 of
@@ -377,8 +378,8 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel:43 of
 msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep abaqus.Step.BuckleStep.BuckleStep
@@ -522,7 +523,8 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ""
+":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -537,12 +539,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ""
+":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -557,8 +560,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -581,16 +584,18 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+"A Boolean specifying that the step specified by **restartStep** should be "
+"terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ""
+":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgid ""
+"A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -606,7 +611,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ""
+":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -618,11 +624,13 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
+msgid ""
+"A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ""
+":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -637,8 +645,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+"A String specifying the name of the job that generated the results for the"
+" global model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -649,8 +657,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+"A boolean specifying the status of constraints created in a model, in the "
+"model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -673,12 +681,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+"A boolean specifying the status of interactions created in a model, in the"
+" model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ""
+":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -686,7 +695,8 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ""
+":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -720,7 +730,8 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ""
+":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -758,7 +769,8 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ""
+":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -813,20 +825,20 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+"A tuple of tuples of Strings specifying the linked child PartInstance name"
+" in the current model to the corresponding parent PartInstance name in a "
+"different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child Part name in the "
+"current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -846,7 +858,8 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ""
+":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -1035,9 +1048,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`CoupledThermalElectricalStructuralStep "
-"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep>`\\"
-" \\(name\\, ...\\)"
+":py:obj:`CoupledThermalElectricalStructuralStep <abaqus.Step.StepModel.Ste"
+"pModel.CoupledThermalElectricalStructuralStep>`\\ \\(name\\, ...\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -1049,8 +1061,8 @@ msgstr ""
 #: ../../None:30:<autosummary>:1
 msgid ""
 ":py:obj:`CoupledThermalElectricStep "
-"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep>`\\ "
-"\\(name\\, previous\\[\\, ...\\]\\)"
+"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep>`\\ \\(name\\,"
+" previous\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -1100,8 +1112,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`FrequencyStep <abaqus.Step.StepModel.StepModel.FrequencyStep>`\\"
-" \\(name\\, previous\\, eigensolver\\[\\, ...\\]\\)"
+":py:obj:`FrequencyStep <abaqus.Step.StepModel.StepModel.FrequencyStep>`\\ "
+"\\(name\\, previous\\, eigensolver\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1 abaqus.Step.FrequencyStep.FrequencyStep:18
@@ -1111,8 +1123,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`GeostaticStep <abaqus.Step.StepModel.StepModel.GeostaticStep>`\\"
-" \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+":py:obj:`GeostaticStep <abaqus.Step.StepModel.StepModel.GeostaticStep>`\\ "
+"\\(name\\, previous\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1 abaqus.Step.GeostaticStep.GeostaticStep:19
@@ -1369,8 +1381,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\,"
+" inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1426,8 +1438,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.AnnealStep:9 of
 msgid ""
-"Check `AnnealStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annealsteppyc.htm?contextscope=all>`__."
+"Check `AnnealStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"annealsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.AnnealStep.AnnealStep:28
@@ -1632,8 +1645,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.description:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:7 of
 msgid ""
-"A String specifying a description of the new step. The default value is "
-"an empty string."
+"A String specifying a description of the new step. The default value is an"
+" empty string."
 msgstr ""
 
 #: ../../docstring abaqus.Step.AnnealStep.AnnealStep:33
@@ -1713,8 +1726,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.BuckleStep:9 of
 msgid ""
-"Check `BuckleStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bucklesteppyc.htm?contextscope=all>`__."
+"Check `BuckleStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bucklesteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:31
@@ -1737,8 +1751,8 @@ msgstr ""
 #: abaqus.Step.StepModel.BuckleStep.minEigen:1
 #: abaqus.Step.StepModel.StepModel.BuckleStep:24 of
 msgid ""
-"None or a Float specifying the minimum eigenvalue of interest. The "
-"default value is None."
+"None or a Float specifying the minimum eigenvalue of interest. The default"
+" value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:41
@@ -1746,8 +1760,8 @@ msgstr ""
 #: abaqus.Step.StepModel.BuckleStep.maxEigen:1
 #: abaqus.Step.StepModel.StepModel.BuckleStep:27 of
 msgid ""
-"None or a Float specifying the maximum eigenvalue of interest. The "
-"default value is None."
+"None or a Float specifying the maximum eigenvalue of interest. The default"
+" value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:44
@@ -1755,9 +1769,9 @@ msgstr ""
 #: abaqus.Step.StepModel.BuckleStep.vectors:1
 #: abaqus.Step.StepModel.StepModel.BuckleStep:30 of
 msgid ""
-"An Int specifying the number of vectors used in the iteration. The "
-"default value is the minimum of (2*n*, **n** + 8), where **n** is the "
-"number of eigenvalues requested."
+"An Int specifying the number of vectors used in the iteration. The default"
+" value is the minimum of (2*n*, **n** + 8), where **n** is the number of "
+"eigenvalues requested."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:47
@@ -1778,8 +1792,8 @@ msgstr ""
 #: abaqus.Step.StepModel.BuckleStep.blockSize:1
 #: abaqus.Step.StepModel.StepModel.BuckleStep:35 of
 msgid ""
-"The SymbolicConstant DEFAULT or an Int specifying the size of the Lanczos"
-" block steps. The default value is DEFAULT."
+"The SymbolicConstant DEFAULT or an Int specifying the size of the Lanczos "
+"block steps. The default value is DEFAULT."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:52
@@ -1788,9 +1802,9 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.BuckleStep:38 of
 msgid ""
 "The SymbolicConstant DEFAULT or an Int specifying the maximum number of "
-"Lanczos block steps within each Lanczos run. The default value is "
-"DEFAULT. Note: *minEigen*, **blockSize**, and **maxBlocks** are ignored "
-"unless **eigensolver** = LANCZOS."
+"Lanczos block steps within each Lanczos run. The default value is DEFAULT."
+" Note: *minEigen*, **blockSize**, and **maxBlocks** are ignored unless "
+"**eigensolver** = LANCZOS."
 msgstr ""
 
 #: ../../docstring abaqus.Step.BuckleStep.BuckleStep:56
@@ -1863,8 +1877,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.matrixStorage:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:27 of
 msgid ""
-"A SymbolicConstant specifying the type of matrix storage. Possible values"
-" are SYMMETRIC, UNSYMMETRIC, and SOLVER_DEFAULT. The default value is "
+"A SymbolicConstant specifying the type of matrix storage. Possible values "
+"are SYMMETRIC, UNSYMMETRIC, and SOLVER_DEFAULT. The default value is "
 "SOLVER_DEFAULT."
 msgstr ""
 
@@ -1879,8 +1893,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ComplexFrequencyStep:9 of
 msgid ""
-"Check `ComplexFrequencyStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-complexfrequencysteppyc.htm?contextscope=all>`__."
+"Check `ComplexFrequencyStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"complexfrequencysteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:32
@@ -1898,8 +1913,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ComplexFrequencyStep.shift:1
 #: abaqus.Step.StepModel.StepModel.ComplexFrequencyStep:22 of
 msgid ""
-"None or a Float specifying the shift point in cycles per time. The "
-"default value is None."
+"None or a Float specifying the shift point in cycles per time. The default"
+" value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:40
@@ -1932,8 +1947,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.ComplexFrequencyStep:34
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:33 of
 msgid ""
-"None or a Float specifying the minimum frequency of interest in cycles "
-"per time. The default value is None."
+"None or a Float specifying the minimum frequency of interest in cycles per"
+" time. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:52
@@ -1945,8 +1960,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.ComplexFrequencyStep:37
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:36 of
 msgid ""
-"None or a Float specifying the maximum frequency of interest in cycles "
-"per time. The default value is None."
+"None or a Float specifying the maximum frequency of interest in cycles per"
+" time. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:55
@@ -1959,10 +1974,10 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:58 of
 msgid ""
 "None or a Float specifying the frequency at which to evaluate frequency-"
-"dependent properties for viscoelasticity, springs, and dashpots during "
-"the eigenvalue extraction. If the value is None, the analysis product "
-"will evaluate the stiffness associated with frequency-dependent springs "
-"and dashpots at zero frequency and will not consider the stiffness "
+"dependent properties for viscoelasticity, springs, and dashpots during the"
+" eigenvalue extraction. If the value is None, the analysis product will "
+"evaluate the stiffness associated with frequency-dependent springs and "
+"dashpots at zero frequency and will not consider the stiffness "
 "contributions from frequency-domain viscoelasticity in the step. The "
 "default value is None."
 msgstr ""
@@ -1978,8 +1993,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledTempDisplacementStep:9 of
 msgid ""
-"Check `CoupledTempDisplacementStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coupledtempdisplacementsteppyc.htm?contextscope=all>`__."
+"Check `CoupledTempDisplacementStep on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coupledtempdisplacementsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2057,8 +2073,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:11
 #: of
 msgid ""
-"A Boolean specifying whether geometric nonlinearities should be accounted"
-" for during the step. The default value is OFF."
+"A Boolean specifying whether geometric nonlinearities should be accounted "
+"for during the step. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
@@ -2083,9 +2099,9 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:14
 #: abaqus.Step.ViscoStep.ViscoStep.stabilizationMethod:1 of
 msgid ""
-"A SymbolicConstant specifying the stabilization type. Possible values are"
-" NONE, DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value "
-"is NONE."
+"A SymbolicConstant specifying the stabilization type. Possible values are "
+"NONE, DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is"
+" NONE."
 msgstr ""
 
 #: ../../docstring
@@ -2210,8 +2226,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.maxNumInc:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:33 of
 msgid ""
-"An Int specifying the maximum number of increments in a step. The default"
-" value is 100."
+"An Int specifying the maximum number of increments in a step. The default "
+"value is 100."
 msgstr ""
 
 #: ../../docstring
@@ -2382,9 +2398,9 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.CoupledTempDisplacementStep:55
 #: abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep:55 of
 msgid ""
-"A SymbolicConstant specifying the type of integration to be used for "
-"creep and swelling effects throughout the step. Possible values are "
-"IMPLICIT, EXPLICIT, and NONE. The default value is IMPLICIT."
+"A SymbolicConstant specifying the type of integration to be used for creep"
+" and swelling effects throughout the step. Possible values are IMPLICIT, "
+"EXPLICIT, and NONE. The default value is IMPLICIT."
 msgstr ""
 
 #: ../../docstring
@@ -2420,8 +2436,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.SoilsStep:61 of
 msgid ""
 "A SymbolicConstant specifying the amplitude variation for loading "
-"magnitudes during the step. The default value is STEP. Possible values "
-"are STEP and RAMP."
+"magnitudes during the step. The default value is STEP. Possible values are"
+" STEP and RAMP."
 msgstr ""
 
 #: ../../docstring
@@ -2522,9 +2538,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:62 of
 msgid ""
 "A SymbolicConstant specifying whether to force a new iteration if severe "
-"discontinuities occur during an iteration. Possible values are "
-"PROPAGATED, CONVERT_SDI_OFF, and CONVERT_SDI_ON. The default value is "
-"PROPAGATED."
+"discontinuities occur during an iteration. Possible values are PROPAGATED,"
+" CONVERT_SDI_OFF, and CONVERT_SDI_ON. The default value is PROPAGATED."
 msgstr ""
 
 #: ../../docstring
@@ -2549,8 +2564,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.adaptiveDampingRatio:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:66 of
 msgid ""
-"A Float specifying the maximum allowable ratio of the stabilization "
-"energy to the total strain energy and can be used only if "
+"A Float specifying the maximum allowable ratio of the stabilization energy"
+" to the total strain energy and can be used only if "
 "**stabilizationMethod** is not NONE. The default value is 0.05."
 msgstr ""
 
@@ -2576,10 +2591,10 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.continueDampingFactors:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:70 of
 msgid ""
-"A Boolean specifying whether this step will carry over the damping "
-"factors from the results of the preceding general step. This parameter "
-"must be used in conjunction with the **adaptiveDampingRatio** parameter. "
-"The default value is OFF."
+"A Boolean specifying whether this step will carry over the damping factors"
+" from the results of the preceding general step. This parameter must be "
+"used in conjunction with the **adaptiveDampingRatio** parameter. The "
+"default value is OFF."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledTempDisplacementStep:87 of
@@ -2593,8 +2608,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep:9 of
 msgid ""
-"Check `CoupledThermalElectricStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coupledthermalelectricsteppyc.htm?contextscope=all>`__."
+"Check `CoupledThermalElectricStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coupledthermalelectricsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2627,8 +2643,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.HeatTransferStep:46 of
 msgid ""
 "A Float specifying the maximum allowable emissivity change with "
-"temperature and field variables during an increment. The default value is"
-" 0.1."
+"temperature and field variables during an increment. The default value is "
+"0.1."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep:67 of
@@ -2642,8 +2658,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep:9 of
 msgid ""
-"Check `CoupledThermalElectricalStructuralStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coupledthermalelectricalstructuralsteppyc.htm?contextscope=all>`__."
+"Check `CoupledThermalElectricalStructuralStep on help.3ds.com/2018 <https:"
+"//help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-coupledthermalelectricalstructuralsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep:84 of
@@ -2657,8 +2674,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:9 of
 msgid ""
-"Check `DirectCyclicStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directcyclicsteppyc.htm?contextscope=all>`__."
+"Check `DirectCyclicStep on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"directcyclicsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:35
@@ -2666,8 +2684,8 @@ msgstr ""
 #: abaqus.Step.StepModel.DirectCyclicStep.timePeriod:1
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:19 of
 msgid ""
-"A Float specifying the time of single loading cycle. The default value is"
-" 1.0."
+"A Float specifying the time of single loading cycle. The default value is "
+"1.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:51
@@ -2675,8 +2693,8 @@ msgstr ""
 #: abaqus.Step.StepModel.DirectCyclicStep.maxNumIterations:1
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:35 of
 msgid ""
-"An Int specifying the maximum number of iterations in a step. The default"
-" value is 200."
+"An Int specifying the maximum number of iterations in a step. The default "
+"value is 200."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:53
@@ -2702,8 +2720,8 @@ msgstr ""
 #: abaqus.Step.StepModel.DirectCyclicStep.termsIncrement:1
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:43 of
 msgid ""
-"An Int specifying the increment in number of terms in the Fourier series."
-" The default value is 5."
+"An Int specifying the increment in number of terms in the Fourier series. "
+"The default value is 5."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:62
@@ -2721,8 +2739,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:53 of
 msgid ""
 "None or a String specifying a String specifying the name of a time point "
-"object used to determine at which times the response of the structure "
-"will be evaluated. The default value is NONE."
+"object used to determine at which times the response of the structure will"
+" be evaluated. The default value is NONE."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:73
@@ -2740,8 +2758,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:60 of
 msgid ""
 "A Boolean specifying whether the displacement solution in the Fourier "
-"series obtained in the previous direct cyclic step is used as the "
-"starting values for the current step. The default value is OFF."
+"series obtained in the previous direct cyclic step is used as the starting"
+" values for the current step. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:80
@@ -2768,9 +2786,9 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:70 of
 msgid ""
 "The SymbolicConstant DEFAULT or an Int specifying the maximum number of "
-"cycles allowed in a step or DEFAULT. A value of 1 plus half of the "
-"maximum number of cycles will be used if DEFAULT is specified. The "
-"default value is DEFAULT."
+"cycles allowed in a step or DEFAULT. A value of 1 plus half of the maximum"
+" number of cycles will be used if DEFAULT is specified. The default value "
+"is DEFAULT."
 msgstr ""
 
 #: ../../docstring abaqus.Step.DirectCyclicStep.DirectCyclicStep:90
@@ -2778,8 +2796,8 @@ msgstr ""
 #: abaqus.Step.StepModel.DirectCyclicStep.damageExtrapolationTolerance:1
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:74 of
 msgid ""
-"A Float specifying the maximum extrapolated damage increment. The default"
-" value is 1.0."
+"A Float specifying the maximum extrapolated damage increment. The default "
+"value is 1.0."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.DirectCyclicStep:90 of
@@ -2793,8 +2811,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.EmagTimeHarmonicStep:9 of
 msgid ""
-"Check `EmagTimeHarmonicStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-emagtimeharmonicsteppyc.htm?contextscope=all>`__."
+"Check `EmagTimeHarmonicStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"emagtimeharmonicsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:31
@@ -2832,8 +2851,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:9 of
 msgid ""
-"Check `ExplicitDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-explicitdynamicssteppyc.htm?contextscope=all>`__."
+"Check `ExplicitDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"explicitdynamicssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:39
@@ -2841,8 +2861,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ExplicitDynamicsStep.nlgeom:1
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:21 of
 msgid ""
-"A Boolean specifying whether geometric nonlinearities should be accounted"
-" for during the step. The default value is ON."
+"A Boolean specifying whether geometric nonlinearities should be accounted "
+"for during the step. The default value is ON."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:42
@@ -2850,8 +2870,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ExplicitDynamicsStep.adiabatic:1
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:24 of
 msgid ""
-"A Boolean specifying that an adiabatic stress analysis is to be "
-"performed. The default value is OFF."
+"A Boolean specifying that an adiabatic stress analysis is to be performed."
+" The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:45
@@ -2876,8 +2896,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:31 of
 msgid ""
 "None or a Float specifying the maximum time increment. If there is no "
-"upper limit, **maxIncrement** = None. This argument is required only when"
-" **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The "
+"upper limit, **maxIncrement** = None. This argument is required only when "
+"**timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The "
 "default value is None."
 msgstr ""
 
@@ -2920,8 +2940,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:30
 #: of
 msgid ""
-"A Float specifying the linear bulk viscosity parameter, b1b1. The default"
-" value is 0.06."
+"A Float specifying the linear bulk viscosity parameter, b1b1. The default "
+"value is 0.06."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:62
@@ -2943,32 +2963,30 @@ msgstr ""
 #: abaqus.Step.StepModel.ExplicitDynamicsStep.userDefinedInc:1
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:47 of
 msgid ""
-"None or a Float specifying the user-defined time increment. This argument"
-" is required only when **timeIncrementationMethod** = "
+"None or a Float specifying the user-defined time increment. This argument "
+"is required only when **timeIncrementationMethod** = "
 "FIXED_USER_DEFINED_INC. The default value is None."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:53
 #: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:48 of
 msgid ""
-"A Boolean specifying whether to use the \"improved\" "
-"(**improvedDtMethod** = ON) or \"conservative\" (**improvedDtMethod** = "
-"OFF) method to estimate the element stable time increment for three-"
-"dimensional continuum elements and elements with plane stress "
-"formulations (shell, membrane, and two-dimensional plane stress "
-"elements). The default value is ON.  .. versionadded:: 2018     The "
-"**improvedDtMethod** argument was added."
+"A Boolean specifying whether to use the \"improved\" (**improvedDtMethod**"
+" = ON) or \"conservative\" (**improvedDtMethod** = OFF) method to estimate"
+" the element stable time increment for three-dimensional continuum "
+"elements and elements with plane stress formulations (shell, membrane, and"
+" two-dimensional plane stress elements). The default value is ON.  .. "
+"versionadded:: 2018     The **improvedDtMethod** argument was added."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep:53
 #: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:48 of
 msgid ""
-"A Boolean specifying whether to use the \"improved\" "
-"(**improvedDtMethod** = ON) or \"conservative\" (**improvedDtMethod** = "
-"OFF) method to estimate the element stable time increment for three-"
-"dimensional continuum elements and elements with plane stress "
-"formulations (shell, membrane, and two-dimensional plane stress "
-"elements). The default value is ON."
+"A Boolean specifying whether to use the \"improved\" (**improvedDtMethod**"
+" = ON) or \"conservative\" (**improvedDtMethod** = OFF) method to estimate"
+" the element stable time increment for three-dimensional continuum "
+"elements and elements with plane stress formulations (shell, membrane, and"
+" two-dimensional plane stress elements). The default value is ON."
 msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:77
@@ -2992,8 +3010,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:9 of
 msgid ""
-"Check `FrequencyStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-frequencysteppyc.htm?contextscope=all>`__."
+"Check `FrequencyStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"frequencysteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:31
@@ -3003,8 +3022,8 @@ msgid ""
 "A SymbolicConstant specifying the eigensolver. Possible values are "
 "LANCZOS, SUBSPACE, and AMS.The following optional arguments are ignored "
 "unless **eigensolver** = LANCZOS: **blockSize**, **maxBlocks**, "
-"**normalization**, **propertyEvaluationFrequency**.The following optional"
-" arguments are ignored unless **eigensolver** = LANCZOS or AMS: "
+"**normalization**, **propertyEvaluationFrequency**.The following optional "
+"arguments are ignored unless **eigensolver** = LANCZOS or AMS: "
 "**minEigen**, **maxEigen**, and **acousticCoupling**.The following "
 "optional arguments are ignored unless **eigensolver** = AMS: "
 "**projectDamping**, **acousticRangeFactor**, "
@@ -3018,8 +3037,8 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.numEigen:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:26 of
 msgid ""
-"The SymbolicConstant ALL or an Int specifying the number of eigenvalues "
-"to be calculated or ALL. The default value is ALL."
+"The SymbolicConstant ALL or an Int specifying the number of eigenvalues to"
+" be calculated or ALL. The default value is ALL."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:45
@@ -3036,9 +3055,9 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.vectors:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:39 of
 msgid ""
-"None or an Int specifying the number of vectors used in the iteration. "
-"The default is the minimum of (2*n*, **n** + 8), where **n** is the "
-"number of eigenvalues requested. The default value is None."
+"None or an Int specifying the number of vectors used in the iteration. The"
+" default is the minimum of (2*n*, **n** + 8), where **n** is the number of"
+" eigenvalues requested. The default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:59
@@ -3068,9 +3087,9 @@ msgid ""
 "Possible values are DISPLACEMENT and MASS. The default value is "
 "DISPLACEMENT.A value of DISPLACEMENT indicates normalizing the "
 "eigenvectors so that the largest displacement entry in each vector is "
-"unity. A value of MASS indicates normalizing the eigenvectors with "
-"respect to the structure's mass matrix, which results in scaling the "
-"eigenvectors so that the generalized mass for each vector is unity."
+"unity. A value of MASS indicates normalizing the eigenvectors with respect"
+" to the structure's mass matrix, which results in scaling the eigenvectors"
+" so that the generalized mass for each vector is unity."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:79
@@ -3088,10 +3107,10 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.acousticCoupling:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:69 of
 msgid ""
-"A SymbolicConstant specifying the type of acoustic-structural coupling in"
-" models with acoustic and structural elements coupled using the TIE "
-"option or in models with ASI-type elements. Possible values are AC_ON, "
-"AC_OFF, and AC_PROJECTION. The default value is AC_ON."
+"A SymbolicConstant specifying the type of acoustic-structural coupling in "
+"models with acoustic and structural elements coupled using the TIE option "
+"or in models with ASI-type elements. Possible values are AC_ON, AC_OFF, "
+"and AC_PROJECTION. The default value is AC_ON."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:88
@@ -3117,9 +3136,8 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.residualModes:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:89 of
 msgid ""
-"A Boolean specifying whether to include residual modes from an "
-"immediately preceding Static, Linear Perturbation step. The default value"
-" is OFF."
+"A Boolean specifying whether to include residual modes from an immediately"
+" preceding Static, Linear Perturbation step. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:106
@@ -3128,8 +3146,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:92 of
 msgid ""
 "A Float specifying the cutoff frequency for substructure eigenproblems, "
-"defined as a multiplier of the maximum frequency of interest. The default"
-" value is 5.0."
+"defined as a multiplier of the maximum frequency of interest. The default "
+"value is 5.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:109
@@ -3137,9 +3155,9 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.firstCutoffMultiplier:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:95 of
 msgid ""
-"A Float specifying the first cutoff frequency for a reduced eigenproblem,"
-" defined as a multiplier of the maximum frequency of interest. The "
-"default value is 1.7."
+"A Float specifying the first cutoff frequency for a reduced eigenproblem, "
+"defined as a multiplier of the maximum frequency of interest. The default "
+"value is 1.7."
 msgstr ""
 
 #: ../../docstring abaqus.Step.FrequencyStep.FrequencyStep:112
@@ -3147,9 +3165,9 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.secondCutoffMultiplier:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:98 of
 msgid ""
-"A Float specifying the second cutoff frequency for a reduced eigenproblem"
-" defined as a multiplier of the maximum frequency of interest. The "
-"default value is 1.1."
+"A Float specifying the second cutoff frequency for a reduced eigenproblem "
+"defined as a multiplier of the maximum frequency of interest. The default "
+"value is 1.1."
 msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep:115
@@ -3173,8 +3191,8 @@ msgstr ""
 #: abaqus.Step.StepModel.FrequencyStep.limitSavedEigenvectorRegion:1
 #: abaqus.Step.StepModel.StepModel.FrequencyStep:107 of
 msgid ""
-"None or a Region object specifying a region for which eigenvectors should"
-" be saved or the SymbolicConstant None representing the whole model. The "
+"None or a Region object specifying a region for which eigenvectors should "
+"be saved or the SymbolicConstant None representing the whole model. The "
 "default value is None."
 msgstr ""
 
@@ -3189,8 +3207,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:9 of
 msgid ""
-"Check `GeostaticStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geostaticsteppyc.htm?contextscope=all>`__."
+"Check `GeostaticStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"geostaticsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:37
@@ -3247,9 +3266,9 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:56
 #: abaqus.Step.ViscoStep.ViscoStep.solutionTechnique:1 of
 msgid ""
-"A SymbolicConstant specifying the technique used to for solving nonlinear"
-" equations. Possible values are FULL_NEWTON and QUASI_NEWTON. The default"
-" value is FULL_NEWTON."
+"A SymbolicConstant specifying the technique used to for solving nonlinear "
+"equations. Possible values are FULL_NEWTON and QUASI_NEWTON. The default "
+"value is FULL_NEWTON."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:49
@@ -3277,8 +3296,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.reformKernel:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:59 of
 msgid ""
-"An Int specifying the number of quasi-Newton iterations allowed before "
-"the kernel matrix is reformed.. The default value is 8."
+"An Int specifying the number of quasi-Newton iterations allowed before the"
+" kernel matrix is reformed.. The default value is 8."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:56
@@ -3294,17 +3313,16 @@ msgstr ""
 #: abaqus.Step.GeostaticStep.GeostaticStep.setValues:31
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:44 of
 msgid ""
-"A Float specifying the total time period. The default value is 1.0. Note:"
-" This parameter is ignored unless **timeIncrementationMethod** = "
-"AUTOMATIC."
+"A Float specifying the total time period. The default value is 1.0. Note: "
+"This parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
 #: abaqus.Step.GeostaticStep.GeostaticStep:65
 #: abaqus.Step.StepModel.StepModel.GeostaticStep:50 of
 msgid ""
-"An Int specifying the maximum number of increments in a step. The default"
-" value is 100.  .. versionadded:: 2017     The ``maxNumInc`` attribute "
-"was added to the GeostaticStep class."
+"An Int specifying the maximum number of increments in a step. The default "
+"value is 100.  .. versionadded:: 2017     The ``maxNumInc`` attribute was "
+"added to the GeostaticStep class."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep:67
@@ -3355,8 +3373,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.HeatTransferStep:9 of
 msgid ""
-"Check `HeatTransferStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heattransfersteppyc.htm?contextscope=all>`__."
+"Check `HeatTransferStep on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"heattransfersteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.HeatTransferStep.HeatTransferStep:36
@@ -3418,8 +3437,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.HeatTransferStep:43 of
 msgid ""
 "A Float specifying the maximum temperature change to be allowed in an "
-"increment during a transient heat transfer analysis. The default value is"
-" 0.0."
+"increment during a transient heat transfer analysis. The default value is "
+"0.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.HeatTransferStep.HeatTransferStep:63
@@ -3432,8 +3451,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.MassDiffusionStep:44 of
 msgid ""
 "A SymbolicConstant specifying the amplitude variation for loading "
-"magnitudes during the step. The default is STEP. Possible values are STEP"
-" and RAMP."
+"magnitudes during the step. The default is STEP. Possible values are STEP "
+"and RAMP."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.HeatTransferStep:75 of
@@ -3447,8 +3466,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:9 of
 msgid ""
-"Check `ImplicitDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-implicitdynamicssteppyc.htm?contextscope=all>`__."
+"Check `ImplicitDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"implicitdynamicssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:34
@@ -3460,8 +3480,8 @@ msgstr ""
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.setValues:9
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.timePeriod:1 of
 msgid ""
-"A Float specifying the total time period of the step. The default value "
-"is 1.0."
+"A Float specifying the total time period of the step. The default value is"
+" 1.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:36
@@ -3469,8 +3489,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ImplicitDynamicsStep.nlgeom:1
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:21 of
 msgid ""
-"A Boolean specifying whether geometric nonlinearities should be accounted"
-" for during the step. The default value is based on the previous step."
+"A Boolean specifying whether geometric nonlinearities should be accounted "
+"for during the step. The default value is based on the previous step."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:42
@@ -3508,9 +3528,9 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:47 of
 msgid ""
 "A SymbolicConstant specifying the way of specifying half-increment "
-"residual tolerance with the automatic time incrementation scheme. "
-"Possible values are ANALYSIS_PRODUCT_DEFAULT, VALUE, and SCALE. The "
-"default value is VALUE."
+"residual tolerance with the automatic time incrementation scheme. Possible"
+" values are ANALYSIS_PRODUCT_DEFAULT, VALUE, and SCALE. The default value "
+"is VALUE."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:66
@@ -3538,8 +3558,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ImplicitDynamicsStep.nohaf:1
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:57 of
 msgid ""
-"A Boolean specifying whether to suppress calculation of the half-"
-"increment residual. The default value is OFF."
+"A Boolean specifying whether to suppress calculation of the half-increment"
+" residual. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:75
@@ -3560,8 +3580,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:49 of
 msgid ""
 "A SymbolicConstant specifying the amplitude variation for loading "
-"magnitudes during the step. Possible values are STEP and RAMP. The "
-"default value is STEP."
+"magnitudes during the step. Possible values are STEP and RAMP. The default"
+" value is STEP."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:78
@@ -3569,8 +3589,8 @@ msgstr ""
 #: abaqus.Step.StepModel.ImplicitDynamicsStep.alpha:1
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:63 of
 msgid ""
-"The SymbolicConstant DEFAULT or a Float specifying the nondefault value "
-"of the numerical (artificial) damping control parameter, αα, in the "
+"The SymbolicConstant DEFAULT or a Float specifying the nondefault value of"
+" the numerical (artificial) damping control parameter, αα, in the "
 "implicit operator. Possible values are −.333 <α< 0. The default value is "
 "DEFAULT."
 msgstr ""
@@ -3581,8 +3601,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:67 of
 msgid ""
 "A SymbolicConstant specifying whether accelerations should be calculated "
-"or recalculated at the beginning of the step. Possible values are "
-"DEFAULT, BYPASS, and ALLOW. The default value is DEFAULT."
+"or recalculated at the beginning of the step. Possible values are DEFAULT,"
+" BYPASS, and ALLOW. The default value is DEFAULT."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:86
@@ -3601,11 +3621,11 @@ msgstr ""
 #: abaqus.Step.StepModel.ImplicitDynamicsStep.noStop:1
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:76 of
 msgid ""
-"A Boolean specifying whether to accept the solution to an increment after"
-" the maximum number of iterations allowed have been completed, even if "
-"the equilibrium tolerances are not satisfied. The default value is "
-"OFF.Warning:You should set **noStop** = OFF only in special cases when "
-"you have a thorough understanding of how to interpret the results."
+"A Boolean specifying whether to accept the solution to an increment after "
+"the maximum number of iterations allowed have been completed, even if the "
+"equilibrium tolerances are not satisfied. The default value is "
+"OFF.Warning:You should set **noStop** = OFF only in special cases when you"
+" have a thorough understanding of how to interpret the results."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ImplicitDynamicsStep:94 of
@@ -3619,8 +3639,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.MassDiffusionStep:9 of
 msgid ""
-"Check `MassDiffusionStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-massdiffusionsteppyc.htm?contextscope=all>`__."
+"Check `MassDiffusionStep on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"massdiffusionsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.MassDiffusionStep.MassDiffusionStep:55
@@ -3643,8 +3664,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ModalDynamicsStep:9 of
 msgid ""
-"Check `ModalDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modaldynamicssteppyc.htm?contextscope=all>`__."
+"Check `ModalDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modaldynamicssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:35
@@ -3771,8 +3793,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.RandomResponseStep:9 of
 msgid ""
-"Check `RandomResponseStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-randomresponsesteppyc.htm?contextscope=all>`__."
+"Check `RandomResponseStep on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"randomresponsesteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.RandomResponseStep.RandomResponseStep:33
@@ -3827,8 +3850,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ResponseSpectrumStep:9 of
 msgid ""
-"Check `ResponseSpectrumStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-responsespectrumsteppyc.htm?contextscope=all>`__."
+"Check `ResponseSpectrumStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"responsespectrumsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:32
@@ -3871,8 +3895,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SoilsStep:9 of
 msgid ""
-"Check `SoilsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-soilssteppyc.htm?contextscope=all>`__."
+"Check `SoilsStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"soilssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.SoilsStep.SoilsStep:45
@@ -3898,8 +3923,8 @@ msgstr ""
 #: abaqus.Step.StepModel.SoilsStep.creep:1
 #: abaqus.Step.StepModel.StepModel.SoilsStep:34 of
 msgid ""
-"A Boolean specifying whether a creep response occurs during this step. "
-"The default value is ON."
+"A Boolean specifying whether a creep response occurs during this step. The"
+" default value is ON."
 msgstr ""
 
 #: ../../docstring abaqus.Step.SoilsStep.SoilsStep:69
@@ -3918,8 +3943,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.SoilsStep:57 of
 msgid ""
 "A Float specifying the maximum allowable difference in the creep strain "
-"increment calculated from the creep strain rates at the beginning and end"
-" of the increment. The default value is 0.0."
+"increment calculated from the creep strain rates at the beginning and end "
+"of the increment. The default value is 0.0."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SoilsStep:95 of
@@ -3933,8 +3958,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.StaticLinearPerturbationStep:9 of
 msgid ""
-"Check `StaticLinearPerturbationStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-staticlinearperturbationsteppyc.htm?contextscope=all>`__."
+"Check `StaticLinearPerturbationStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"staticlinearperturbationsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.StaticLinearPerturbationStep:28 of
@@ -3948,8 +3974,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:9 of
 msgid ""
-"Check `StaticRiksStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-staticrikssteppyc.htm?contextscope=all>`__."
+"Check `StaticRiksStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"staticrikssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:34
@@ -3981,8 +4008,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:22
 #: abaqus.Step.StepModel.StepModel.StaticStep:31 of
 msgid ""
-"A Boolean specifying whether to perform an adiabatic stress analysis. The"
-" default value is OFF."
+"A Boolean specifying whether to perform an adiabatic stress analysis. The "
+"default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:40
@@ -4009,8 +4036,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:31 of
 msgid ""
 "A Float specifying the value of the total displacement (or rotation) at "
-"the node and degree of freedom that, if crossed during an increment, ends"
-" the step at the current increment. This argument is required when "
+"the node and degree of freedom that, if crossed during an increment, ends "
+"the step at the current increment. This argument is required when "
 "**nodeOn** = ON. The default value is 0.0."
 msgstr ""
 
@@ -4019,8 +4046,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StaticRiksStep.dof:1
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:35 of
 msgid ""
-"An Int specifying the degree of freedom being monitored. This argument is"
-" required when **nodeOn** = ON. The default value is 0."
+"An Int specifying the degree of freedom being monitored. This argument is "
+"required when **nodeOn** = ON. The default value is 0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:53
@@ -4028,9 +4055,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StaticRiksStep.region:1
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:38 of
 msgid ""
-"A Region object specifying the vertex at which the finishing displacement"
-" value is being monitored. This argument is required when **nodeOn** = "
-"ON."
+"A Region object specifying the vertex at which the finishing displacement "
+"value is being monitored. This argument is required when **nodeOn** = ON."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:61
@@ -4057,8 +4083,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:52 of
 msgid ""
 "A Float specifying the minimum arc length increment allowed. The default "
-"value is the smaller of the suggested initial load proportionality factor"
-" or 10−5 times the total load proportionality factor for the step."
+"value is the smaller of the suggested initial load proportionality factor "
+"or 10−5 times the total load proportionality factor for the step."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:71
@@ -4084,11 +4110,11 @@ msgstr ""
 #: abaqus.Step.StepModel.StaticRiksStep.noStop:1
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:69 of
 msgid ""
-"A Boolean specifying whether to accept the solution to an increment after"
-" the maximum number of iterations allowed have been completed, even if "
-"the equilibrium tolerances are not satisfied. The default value is "
-"OFF.Warning:You should set **noStop** = ON only in special cases when you"
-" have a thorough understanding of how to interpret the results."
+"A Boolean specifying whether to accept the solution to an increment after "
+"the maximum number of iterations allowed have been completed, even if the "
+"equilibrium tolerances are not satisfied. The default value is "
+"OFF.Warning:You should set **noStop** = ON only in special cases when you "
+"have a thorough understanding of how to interpret the results."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticRiksStep.StaticRiksStep:92
@@ -4100,9 +4126,9 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:77
 #: abaqus.Step.StepModel.StepModel.StaticStep:72 of
 msgid ""
-"A Boolean specifying wether to obtain the fully relaxed long-term elastic"
-" solution with time-domain viscoelasticity or the long-term elastic-"
-"Plastic solution for two-layer viscoplasticity. The default value is OFF."
+"A Boolean specifying wether to obtain the fully relaxed long-term elastic "
+"solution with time-domain viscoelasticity or the long-term elastic-Plastic"
+" solution for two-layer viscoplasticity. The default value is OFF."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.StaticRiksStep:85
@@ -4118,8 +4144,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.StaticStep:9 of
 msgid ""
-"Check `StaticStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-staticsteppyc.htm?contextscope=all>`__."
+"Check `StaticStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"staticsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticStep.StaticStep:56
@@ -4138,8 +4165,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StepModel.StaticStep:54 of
 msgid ""
 "A SymbolicConstant specifying the amplitude variation for loading "
-"magnitudes during the step. Possible values are STEP and RAMP. The "
-"default value is RAMP."
+"magnitudes during the step. Possible values are STEP and RAMP. The default"
+" value is RAMP."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticStep.StaticStep:75
@@ -4147,8 +4174,8 @@ msgstr ""
 #: abaqus.Step.StepModel.StaticStep.fullyPlastic:1
 #: abaqus.Step.StepModel.StepModel.StaticStep:61 of
 msgid ""
-"A String specifying the region being monitored for fully Plastic "
-"behavior. The default value is an empty string."
+"A String specifying the region being monitored for fully Plastic behavior."
+" The default value is an empty string."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StaticStep.StaticStep:78
@@ -4156,17 +4183,18 @@ msgstr ""
 #: abaqus.Step.StepModel.StaticStep.noStop:1
 #: abaqus.Step.StepModel.StepModel.StaticStep:64 of
 msgid ""
-"A Boolean specifying whether to accept the solution to an increment after"
-" the maximum number of iterations allowed has been completed, even if the"
-" equilibrium tolerances are not satisfied. The default value is "
-"OFF.Warning:You should set **noStop** = ON only in special cases when you"
-" have a thorough understanding of how to interpret the results."
+"A Boolean specifying whether to accept the solution to an increment after "
+"the maximum number of iterations allowed has been completed, even if the "
+"equilibrium tolerances are not satisfied. The default value is "
+"OFF.Warning:You should set **noStop** = ON only in special cases when you "
+"have a thorough understanding of how to interpret the results."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SteadyStateDirectStep:9 of
 msgid ""
-"Check `SteadyStateDirectStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatedirectsteppyc.htm?contextscope=all>`__."
+"Check `SteadyStateDirectStep on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steadystatedirectsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:32
@@ -4214,8 +4242,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SteadyStateModalStep:9 of
 msgid ""
-"Check `SteadyStateModalStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatemodalsteppyc.htm?contextscope=all>`__."
+"Check `SteadyStateModalStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steadystatemodalsteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:33
@@ -4248,8 +4277,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SteadyStateSubspaceStep:9 of
 msgid ""
-"Check `SteadyStateSubspaceStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatesubspacesteppyc.htm?contextscope=all>`__."
+"Check `SteadyStateSubspaceStep on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steadystatesubspacesteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4304,8 +4334,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SubspaceDynamicsStep:9 of
 msgid ""
-"Check `SubspaceDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-subspacedynamicssteppyc.htm?contextscope=all>`__."
+"Check `SubspaceDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"subspacedynamicssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.SubspaceDynamicsStep:21
@@ -4314,15 +4345,16 @@ msgstr ""
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.vectors:1 of
 msgid ""
 "The SymbolicConstant ALL or an Int specifying the number of modes to be "
-"used for subspace projection. The possible value for the SymbolicConstant"
-" is ALL. The default value is ALL."
+"used for subspace projection. The possible value for the SymbolicConstant "
+"is ALL. The default value is ALL."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.SubspaceDynamicsStep:30
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:45
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.incSize:1
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.setValues:20 of
-msgid "A Float specifying the suggested time increment. The default value is 0.0."
+msgid ""
+"A Float specifying the suggested time increment. The default value is 0.0."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SubspaceDynamicsStep:38 of
@@ -4336,8 +4368,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SubstructureGenerateStep:9 of
 msgid ""
-"Check `SubstructureGenerateStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructuregeneratesteppyc.htm?contextscope=all>`__."
+"Check `SubstructureGenerateStep on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"substructuregeneratesteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SubstructureGenerateStep:17
@@ -4454,8 +4487,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the field to which the global damping "
-"factors should be applied. Possible values are ALL, ACOUSTIC, MECHANICAL,"
-" and NONE. The default value is NONE."
+"factors should be applied. Possible values are ALL, ACOUSTIC, MECHANICAL, "
+"and NONE. The default value is NONE."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.SubstructureGenerateStep:56
@@ -4464,8 +4497,8 @@ msgstr ""
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.setValues:44
 #: of
 msgid ""
-"A Float specifying the factor to create global Rayleigh mass proportional"
-" damping. The default value is 0.0."
+"A Float specifying the factor to create global Rayleigh mass proportional "
+"damping. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.SubstructureGenerateStep:59
@@ -4506,8 +4539,8 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the damping control to include the "
-"structural damping matrix. Possible values are ELEMENT, FACTOR, COMBINED,"
-" and NONE. The default value is NONE."
+"structural damping matrix. Possible values are ELEMENT, FACTOR, COMBINED, "
+"and NONE. The default value is NONE."
 msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.SubstructureGenerateStep:72 of
@@ -4521,8 +4554,9 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep:9 of
 msgid ""
-"Check `TempDisplacementDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tempdisplacementdynamicssteppyc.htm?contextscope=all>`__."
+"Check `TempDisplacementDynamicsStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"tempdisplacementdynamicssteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4531,7 +4565,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:9
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.timePeriod:1
 #: of
-msgid "A Float specifying the time period of the step. The default value is 1.0."
+msgid ""
+"A Float specifying the time period of the step. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring
@@ -4541,8 +4576,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:18
 #: of
 msgid ""
-"None or a Float specifying the maximum time increment allowed. If there "
-"is no upper limit, **maxIncrement** = None. The default value is None."
+"None or a Float specifying the maximum time increment allowed. If there is"
+" no upper limit, **maxIncrement** = None. The default value is None."
 msgstr ""
 
 #: ../../docstring
@@ -4567,16 +4602,17 @@ msgstr ""
 
 #: abaqus.Step.StepModel.StepModel.ViscoStep:9 of
 msgid ""
-"Check `ViscoStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscosteppyc.htm?contextscope=all>`__."
+"Check `ViscoStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viscosteppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.ViscoStep:48
 #: abaqus.Step.ViscoStep.ViscoStep:63 abaqus.Step.ViscoStep.ViscoStep.maxInc:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:38 of
 msgid ""
-"A Float specifying the maximum time increment allowed. The default is the"
-" total time period for the step. The default value is 1.0."
+"A Float specifying the maximum time increment allowed. The default is the "
+"total time period for the step. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.StepModel.ViscoStep:51
@@ -4584,8 +4620,8 @@ msgstr ""
 #: abaqus.Step.ViscoStep.ViscoStep.integration:1
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:41 of
 msgid ""
-"A SymbolicConstant specifying which type of integration to use throughout"
-" the step. Possible values are IMPLICIT_EXPLICIT and EXPLICIT_ONLY. The "
+"A SymbolicConstant specifying which type of integration to use throughout "
+"the step. Possible values are IMPLICIT_EXPLICIT and EXPLICIT_ONLY. The "
 "default value is IMPLICIT_EXPLICIT."
 msgstr ""
 
@@ -4608,16 +4644,17 @@ msgstr ""
 
 #: abaqus.Step.AnalysisStep.AnalysisStep:1 of
 msgid ""
-"The AnalysisStep object is the abstract base type for other Step objects,"
-" except the InitialStep object. It has no explicit constructor, no "
-"methods, and has only inherited members. The AnalysisStep object is "
-"derived from the Step object."
+"The AnalysisStep object is the abstract base type for other Step objects, "
+"except the InitialStep object. It has no explicit constructor, no methods,"
+" and has only inherited members. The AnalysisStep object is derived from "
+"the Step object."
 msgstr ""
 
 #: abaqus.Step.AnalysisStep.AnalysisStep:12 of
 msgid ""
-"Check `AnalysisStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `AnalysisStep on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -5066,7 +5103,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.nonmechanical:1
 #: abaqus.Step.ViscoStep.AnalysisStep.nonmechanical:1
 #: abaqus.Step.ViscoStep.ViscoStep.nonmechanical:1 of
-msgid "A Boolean specifying whether the step has a mechanical procedure type."
+msgid ""
+"A Boolean specifying whether the step has a mechanical procedure type."
 msgstr ""
 
 #: ../../docstring abaqus.Step.InitialStep.InitialStep.perturbation:1
@@ -5100,7 +5138,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.perturbation:1
 #: abaqus.Step.ViscoStep.AnalysisStep.perturbation:1
 #: abaqus.Step.ViscoStep.ViscoStep.perturbation:1 of
-msgid "A Boolean specifying whether the step has a perturbation procedure type."
+msgid ""
+"A Boolean specifying whether the step has a perturbation procedure type."
 msgstr ""
 
 #: ../../docstring abaqus.Step.InitialStep.InitialStep.predefinedFieldStates:1
@@ -5167,7 +5206,8 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.procedureType:1
 #: abaqus.Step.ViscoStep.AnalysisStep.procedureType:1
 #: abaqus.Step.ViscoStep.ViscoStep.procedureType:1 of
-msgid "A SymbolicConstant specifying the Abaqus procedure. Possible values are:"
+msgid ""
+"A SymbolicConstant specifying the Abaqus procedure. Possible values are:"
 msgstr ""
 
 #: ../../docstring abaqus.Step.AnnealStep.AnnealStep:12
@@ -6180,8 +6220,9 @@ msgstr ""
 
 #: abaqus.Step.Step.Step:12 of
 msgid ""
-"Check `Step on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `Step on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep:1 abaqus.Step.BuckleStep.BuckleStep:1
@@ -6218,8 +6259,8 @@ msgstr ""
 #: abaqus.Step.AnnealStep.AnnealStep:1 of
 msgid ""
 "The AnnealStep object anneals a structure by setting the velocities and "
-"all appropriate state variables to zero. The AnnealStep object is derived"
-" from the AnalysisStep object."
+"all appropriate state variables to zero. The AnnealStep object is derived "
+"from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep:10 abaqus.Step.BuckleStep.BuckleStep:10
@@ -6282,8 +6323,9 @@ msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep:16 of
 msgid ""
-"Check `AnnealStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `AnnealStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep:39 of
@@ -6353,9 +6395,9 @@ msgstr ""
 
 #: abaqus.Step.AnnealStep.AnnealStep.setValues:4 of
 msgid ""
-"Check `AnnealStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `AnnealStep.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.BuckleStep.BuckleStep:1 of
@@ -6366,8 +6408,9 @@ msgstr ""
 
 #: abaqus.Step.BuckleStep.BuckleStep:16 of
 msgid ""
-"Check `BuckleStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `BuckleStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.BuckleStep.BuckleStep:62 of
@@ -6380,16 +6423,16 @@ msgstr ""
 
 #: abaqus.Step.BuckleStep.BuckleStep.setValues:4 of
 msgid ""
-"Check `BuckleStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `BuckleStep.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:1 of
 msgid ""
 "The ComplexFrequencyStep object is used to perform eigenvalue extraction "
-"to calculate the complex eigenvalues and corresponding complex mode "
-"shapes of a system. The ComplexFrequencyStep object is derived from the "
+"to calculate the complex eigenvalues and corresponding complex mode shapes"
+" of a system. The ComplexFrequencyStep object is derived from the "
 "AnalysisStep object."
 msgstr ""
 
@@ -6399,8 +6442,9 @@ msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:17 of
 msgid ""
-"Check `ComplexFrequencyStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ComplexFrequencyStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep:62 of
@@ -6413,9 +6457,9 @@ msgstr ""
 
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.setValues:4 of
 msgid ""
-"Check `ComplexFrequencyStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ComplexFrequencyStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:1 of
@@ -6441,8 +6485,9 @@ msgstr ""
 
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:18 of
 msgid ""
-"Check `CoupledTempDisplacementStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `CoupledTempDisplacementStep on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep:103 of
@@ -6457,17 +6502,17 @@ msgstr ""
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.setValues:4
 #: of
 msgid ""
-"Check `CoupledTempDisplacementStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `CoupledTempDisplacementStep.setValues on help.3ds.com/2018 <https:/"
+"/help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:1 of
 msgid ""
 "The CoupledThermalElectricStep object is used to analyze problems where "
 "the electrical potential and temperature fields must be solved "
-"simultaneously. The CoupledThermalElectricStep object is derived from the"
-" AnalysisStep object."
+"simultaneously. The CoupledThermalElectricStep object is derived from the "
+"AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:13 of
@@ -6476,8 +6521,9 @@ msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:18 of
 msgid ""
-"Check `CoupledThermalElectricStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `CoupledThermalElectricStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep:83 of
@@ -6492,9 +6538,9 @@ msgstr ""
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.setValues:4
 #: of
 msgid ""
-"Check `CoupledThermalElectricStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `CoupledThermalElectricStep.setValues on help.3ds.com/2018 <https://"
+"help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:1
@@ -6510,8 +6556,9 @@ msgstr ""
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:18
 #: of
 msgid ""
-"Check `CoupledThermalElectricalStructuralStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `CoupledThermalElectricalStructuralStep on help.3ds.com/2018 <https:"
+"//help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep:100
@@ -6521,16 +6568,17 @@ msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.setValues:1
 #: of
-msgid "This method modifies the CoupledThermalElectricalStructuralStep object."
+msgid ""
+"This method modifies the CoupledThermalElectricalStructuralStep object."
 msgstr ""
 
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.setValues:4
 #: of
 msgid ""
 "Check `CoupledThermalElectricalStructuralStep.setValues on "
-"help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established"
+"/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all#simaker-"
+"stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:1 of
@@ -6539,8 +6587,8 @@ msgid ""
 "for nonlinear, non-isothermal quasi-static analysis. It can also be used "
 "to predict progressive damage and failure for ductile bulk materials "
 "and/or to predict delamination/debonding growth at the interfaces in "
-"laminated composites in a low-cycle fatigue analysis. The "
-"DirectCyclicStep object is derived from the AnalysisStep object."
+"laminated composites in a low-cycle fatigue analysis. The DirectCyclicStep"
+" object is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:14 of
@@ -6549,8 +6597,9 @@ msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:18 of
 msgid ""
-"Check `DirectCyclicStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `DirectCyclicStep on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep:106 of
@@ -6563,9 +6612,9 @@ msgstr ""
 
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep.setValues:4 of
 msgid ""
-"Check `DirectCyclicStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `DirectCyclicStep.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:1 of
@@ -6581,8 +6630,9 @@ msgstr ""
 
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:16 of
 msgid ""
-"Check `EmagTimeHarmonicStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `EmagTimeHarmonicStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep:39 of
@@ -6595,9 +6645,9 @@ msgstr ""
 
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.setValues:4 of
 msgid ""
-"Check `EmagTimeHarmonicStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `EmagTimeHarmonicStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:1 of
@@ -6636,8 +6686,9 @@ msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:20 of
 msgid ""
-"Check `ExplicitDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ExplicitDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:71
@@ -6646,11 +6697,11 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:35
 #: of
 msgid ""
-"A Boolean specifying whether to use the \"improved\" (*improvedDtMethod* "
-"= ON) or \"conservative\" (*improvedDtMethod* = OFF) method to estimate "
-"the element stable time increment for three-dimensional continuum "
-"elements and elements with plane stress formulations (shell, membrane, "
-"and two-dimensional plane stress elements). The default value is ON.  .. "
+"A Boolean specifying whether to use the \"improved\" (*improvedDtMethod* ="
+" ON) or \"conservative\" (*improvedDtMethod* = OFF) method to estimate the"
+" element stable time increment for three-dimensional continuum elements "
+"and elements with plane stress formulations (shell, membrane, and two-"
+"dimensional plane stress elements). The default value is ON.  .. "
 "versionadded:: 2018     The **improvedDtMethod** argument was added."
 msgstr ""
 
@@ -6662,11 +6713,11 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:35
 #: of
 msgid ""
-"A Boolean specifying whether to use the \"improved\" (*improvedDtMethod* "
-"= ON) or \"conservative\" (*improvedDtMethod* = OFF) method to estimate "
-"the element stable time increment for three-dimensional continuum "
-"elements and elements with plane stress formulations (shell, membrane, "
-"and two-dimensional plane stress elements). The default value is ON."
+"A Boolean specifying whether to use the \"improved\" (*improvedDtMethod* ="
+" ON) or \"conservative\" (*improvedDtMethod* = OFF) method to estimate the"
+" element stable time increment for three-dimensional continuum elements "
+"and elements with plane stress formulations (shell, membrane, and two-"
+"dimensional plane stress elements). The default value is ON."
 msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep:80 of
@@ -6684,9 +6735,9 @@ msgstr ""
 
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:4 of
 msgid ""
-"Check `ExplicitDynamicsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ExplicitDynamicsStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep:1 of
@@ -6698,8 +6749,9 @@ msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep:16 of
 msgid ""
-"Check `FrequencyStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `FrequencyStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep:124 of
@@ -6724,23 +6776,24 @@ msgstr ""
 
 #: abaqus.Step.FrequencyStep.FrequencyStep.setValues:4 of
 msgid ""
-"Check `FrequencyStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `FrequencyStep.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.GeostaticStep.GeostaticStep:1 of
 msgid ""
-"The GeostaticStep object is used to verify that the geostatic stress "
-"field is in equilibrium with the applied loads and boundary conditions on"
-" the model and to iterate, if needed, to obtain equilibrium. The "
-"GeostaticStep object is derived from the AnalysisStep object."
+"The GeostaticStep object is used to verify that the geostatic stress field"
+" is in equilibrium with the applied loads and boundary conditions on the "
+"model and to iterate, if needed, to obtain equilibrium. The GeostaticStep "
+"object is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.GeostaticStep.GeostaticStep:17 of
 msgid ""
-"Check `GeostaticStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `GeostaticStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.GeostaticStep.GeostaticStep:82 of
@@ -6753,13 +6806,14 @@ msgstr ""
 
 #: abaqus.Step.GeostaticStep.GeostaticStep.setValues:4 of
 msgid ""
-"Check `GeostaticStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `GeostaticStep.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.GeostaticStep.timePeriod:1 of
-msgid "This parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC."
+msgid ""
+"This parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC."
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.GeostaticStep.timePeriod of
@@ -6767,14 +6821,15 @@ msgid "type"
 msgstr ""
 
 #: ../../docstring abaqus.Step.StepModel.GeostaticStep.timePeriod:4 of
-msgid "A Float specifying the total time period. The default value is 1.0. Note"
+msgid ""
+"A Float specifying the total time period. The default value is 1.0. Note"
 msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:1 of
 msgid ""
-"The HeatTransferStep object is used to control uncoupled heat transfer "
-"for either transient or steady- state response. The HeatTransferStep "
-"object is derived from the AnalysisStep object."
+"The HeatTransferStep object is used to control uncoupled heat transfer for"
+" either transient or steady- state response. The HeatTransferStep object "
+"is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:12 of
@@ -6783,8 +6838,9 @@ msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:16 of
 msgid ""
-"Check `HeatTransferStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `HeatTransferStep on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep:89 of
@@ -6797,23 +6853,24 @@ msgstr ""
 
 #: abaqus.Step.HeatTransferStep.HeatTransferStep.setValues:4 of
 msgid ""
-"Check `HeatTransferStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `HeatTransferStep.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:1 of
 msgid ""
-"The ImplicitDynamicsStep object is used to provide direct integration of "
-"a dynamic stress/displacement response in Abaqus/Standard analyses and is"
-" generally used for nonlinear cases. The ImplicitDynamicsStep object is "
+"The ImplicitDynamicsStep object is used to provide direct integration of a"
+" dynamic stress/displacement response in Abaqus/Standard analyses and is "
+"generally used for nonlinear cases. The ImplicitDynamicsStep object is "
 "derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:17 of
 msgid ""
-"Check `ImplicitDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ImplicitDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep:109 of
@@ -6826,24 +6883,25 @@ msgstr ""
 
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.setValues:4 of
 msgid ""
-"Check `ImplicitDynamicsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ImplicitDynamicsStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.InitialStep.InitialStep:1 of
 msgid ""
-"The InitialStep object is a placeholder that you cannot create, delete, "
-"or modify. The InitialStep object exists in every model by default and is"
-" used to allow the preexisting boundary conditions and interactions to be"
-" defined in the model. The InitialStep object is derived from the "
+"The InitialStep object is a placeholder that you cannot create, delete, or"
+" modify. The InitialStep object exists in every model by default and is "
+"used to allow the preexisting boundary conditions and interactions to be "
+"defined in the model. The InitialStep object is derived from the "
 "AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.InitialStep.InitialStep:12 of
 msgid ""
-"Check `InitialStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `InitialStep on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep:1 of
@@ -6859,8 +6917,9 @@ msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep:16 of
 msgid ""
-"Check `MassDiffusionStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `MassDiffusionStep on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep:72 of
@@ -6873,16 +6932,16 @@ msgstr ""
 
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep.setValues:4 of
 msgid ""
-"Check `MassDiffusionStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `MassDiffusionStep.setValues on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:1 of
 msgid ""
 "The ModalDynamicsStep object is used to provide dynamic time history "
-"response as a linear perturbation procedure using modal superposition. "
-"The ModalDynamicsStep object is derived from the AnalysisStep object."
+"response as a linear perturbation procedure using modal superposition. The"
+" ModalDynamicsStep object is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:12
@@ -6903,8 +6962,9 @@ msgstr ""
 
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:18 of
 msgid ""
-"Check `ModalDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ModalDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep:58 of
@@ -6917,16 +6977,16 @@ msgstr ""
 
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.setValues:4 of
 msgid ""
-"Check `ModalDynamicsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ModalDynamicsStep.setValues on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep:1 of
 msgid ""
-"The RandomResponseStep object is used to give the linearized response of "
-"a model to random excitation. The RandomResponseStep object is derived "
-"from the AnalysisStep object."
+"The RandomResponseStep object is used to give the linearized response of a"
+" model to random excitation. The RandomResponseStep object is derived from"
+" the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep:14 of
@@ -6935,8 +6995,9 @@ msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep:18 of
 msgid ""
-"Check `RandomResponseStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `RandomResponseStep on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep:57 of
@@ -6949,9 +7010,9 @@ msgstr ""
 
 #: abaqus.Step.RandomResponseStep.RandomResponseStep.setValues:4 of
 msgid ""
-"Check `RandomResponseStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `RandomResponseStep.setValues on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:1 of
@@ -6968,8 +7029,9 @@ msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:17 of
 msgid ""
-"Check `ResponseSpectrumStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ResponseSpectrumStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep:57 of
@@ -6982,23 +7044,24 @@ msgstr ""
 
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.setValues:4 of
 msgid ""
-"Check `ResponseSpectrumStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ResponseSpectrumStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.SoilsStep.SoilsStep:1 of
 msgid ""
 "The SoilsStep object is used to specify transient (consolidation) or "
 "steady-state response analysis of partially or fully saturated fluid-"
-"filled porous media. The SoilsStep object is derived from the "
-"AnalysisStep object."
+"filled porous media. The SoilsStep object is derived from the AnalysisStep"
+" object."
 msgstr ""
 
 #: abaqus.Step.SoilsStep.SoilsStep:17 of
 msgid ""
-"Check `SoilsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SoilsStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SoilsStep.SoilsStep:110 of
@@ -7011,9 +7074,9 @@ msgstr ""
 
 #: abaqus.Step.SoilsStep.SoilsStep.setValues:4 of
 msgid ""
-"Check `SoilsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SoilsStep.setValues on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:1 of
@@ -7032,8 +7095,9 @@ msgstr ""
 
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:17 of
 msgid ""
-"Check `StaticLinearPerturbationStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `StaticLinearPerturbationStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep:43 of
@@ -7048,23 +7112,24 @@ msgstr ""
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.setValues:4
 #: of
 msgid ""
-"Check `StaticLinearPerturbationStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `StaticLinearPerturbationStep.setValues on help.3ds.com/2018 <https:"
+"//help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.StaticRiksStep.StaticRiksStep:1 of
 msgid ""
 "The StaticRiksStep object is used to indicate that the step should be "
 "analyzed as a static load step using the modified Riks method for "
-"proportional loading cases. The StaticRiksStep object is derived from the"
-" AnalysisStep object."
+"proportional loading cases. The StaticRiksStep object is derived from the "
+"AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.StaticRiksStep.StaticRiksStep:17 of
 msgid ""
-"Check `StaticRiksStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `StaticRiksStep on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StaticRiksStep.StaticRiksStep:100 of
@@ -7077,22 +7142,23 @@ msgstr ""
 
 #: abaqus.Step.StaticRiksStep.StaticRiksStep.setValues:4 of
 msgid ""
-"Check `StaticRiksStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `StaticRiksStep.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.StaticStep.StaticStep:1 of
 msgid ""
-"The StaticStep object is used to indicate that the step should be "
-"analyzed as a static load step. The StaticStep object is derived from the"
-" AnalysisStep object."
+"The StaticStep object is used to indicate that the step should be analyzed"
+" as a static load step. The StaticStep object is derived from the "
+"AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.StaticStep.StaticStep:16 of
 msgid ""
-"Check `StaticStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `StaticStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StaticStep.StaticStep:108 of
@@ -7109,16 +7175,16 @@ msgstr ""
 
 #: abaqus.Step.StaticStep.StaticStep.setValues:4 of
 msgid ""
-"Check `StaticStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `StaticStep.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:1 of
 msgid ""
 "The SteadyStateDirectStep object is used to calculate the linearized "
-"steady-state response of the system to harmonic excitation in terms of "
-"the physical degrees of freedom of the model. The SteadyStateDirectStep "
+"steady-state response of the system to harmonic excitation in terms of the"
+" physical degrees of freedom of the model. The SteadyStateDirectStep "
 "object is derived from the AnalysisStep object."
 msgstr ""
 
@@ -7130,8 +7196,9 @@ msgstr ""
 
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:17 of
 msgid ""
-"Check `SteadyStateDirectStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SteadyStateDirectStep on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep:55 of
@@ -7144,22 +7211,23 @@ msgstr ""
 
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.setValues:4 of
 msgid ""
-"Check `SteadyStateDirectStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SteadyStateDirectStep.setValues on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:1 of
 msgid ""
-"He SteadyStateModalStep object is used to calculate the linearized "
-"steady-state response of the system to harmonic excitation. The "
+"He SteadyStateModalStep object is used to calculate the linearized steady-"
+"state response of the system to harmonic excitation. The "
 "SteadyStateModalStep object is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:18 of
 msgid ""
-"Check `SteadyStateModalStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SteadyStateModalStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep:60 of
@@ -7172,23 +7240,24 @@ msgstr ""
 
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.setValues:4 of
 msgid ""
-"Check `SteadyStateModalStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SteadyStateModalStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:1 of
 msgid ""
 "The SteadyStateSubspaceStep object is used to calculate the linearized "
-"steady-state response of the system to harmonic excitation on the basis "
-"of the subspace projection method. The SteadyStateSubspaceStep object is "
+"steady-state response of the system to harmonic excitation on the basis of"
+" the subspace projection method. The SteadyStateSubspaceStep object is "
 "derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:17 of
 msgid ""
-"Check `SteadyStateSubspaceStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SteadyStateSubspaceStep on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep:65 of
@@ -7201,9 +7270,9 @@ msgstr ""
 
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.setValues:4 of
 msgid ""
-"Check `SteadyStateSubspaceStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SteadyStateSubspaceStep.setValues on help.3ds.com/2018 <https://hel"
+"p.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.StepBase.StepBase:1 of
@@ -7212,8 +7281,9 @@ msgstr ""
 
 #: abaqus.Step.StepBase.StepBase:12 of
 msgid ""
-"Check `StepBase on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `StepBase on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.StepBase.StepBase.resume:1 of
@@ -7227,15 +7297,16 @@ msgstr ""
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:1 of
 msgid ""
 "The SubspaceDynamicsStep object is used to calculate the linearized "
-"steady-state response of the system to harmonic excitation on the basis "
-"of the subspace projection method. The SubspaceDynamicsStep object is "
+"steady-state response of the system to harmonic excitation on the basis of"
+" the subspace projection method. The SubspaceDynamicsStep object is "
 "derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:17 of
 msgid ""
-"Check `SubspaceDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SubspaceDynamicsStep on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep:53 of
@@ -7248,16 +7319,15 @@ msgstr ""
 
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.setValues:4 of
 msgid ""
-"Check `SubspaceDynamicsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SubspaceDynamicsStep.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:1 of
 msgid ""
-"TheSubstructureGenerateStep object is used to generate a substructure. "
-"The SubstructureGenerateStep object is derived from the AnalysisStep "
-"object."
+"TheSubstructureGenerateStep object is used to generate a substructure. The"
+" SubstructureGenerateStep object is derived from the AnalysisStep object."
 msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:12 of
@@ -7266,8 +7336,9 @@ msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:16 of
 msgid ""
-"Check `SubstructureGenerateStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `SubstructureGenerateStep on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep:86 of
@@ -7280,17 +7351,17 @@ msgstr ""
 
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.setValues:4 of
 msgid ""
-"Check `SubstructureGenerateStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `SubstructureGenerateStep.setValues on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.substructureIdentifier:1
 #: of
 msgid ""
-"A String specifying a unique identifier for the substructure. The default"
-" value is an empty string."
+"A String specifying a unique identifier for the substructure. The default "
+"value is an empty string."
 msgstr ""
 
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:1 of
@@ -7303,8 +7374,9 @@ msgstr ""
 
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:20 of
 msgid ""
-"Check `TempDisplacementDynamicsStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `TempDisplacementDynamicsStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep:75 of
@@ -7325,9 +7397,9 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:4
 #: of
 msgid ""
-"Check `TempDisplacementDynamicsStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `TempDisplacementDynamicsStep.setValues on help.3ds.com/2018 <https:"
+"//help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Step.ViscoStep.ViscoStep:1 of
@@ -7340,8 +7412,9 @@ msgstr ""
 
 #: abaqus.Step.ViscoStep.ViscoStep:17 of
 msgid ""
-"Check `ViscoStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all>`__."
+"Check `ViscoStep on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Step.ViscoStep.ViscoStep:102 of
@@ -7354,9 +7427,9 @@ msgstr ""
 
 #: abaqus.Step.ViscoStep.ViscoStep.setValues:4 of
 msgid ""
-"Check `ViscoStep.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
-"#simaker-stepsetvaluespyc>`__."
+"Check `ViscoStep.setValues on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"steppyc.htm?contextscope=all#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #~ msgid ""

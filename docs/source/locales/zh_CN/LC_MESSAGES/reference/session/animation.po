@@ -42,8 +42,8 @@ msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions:1 of
 msgid ""
-"The AVIOptions object is used to store values and attributes to be used "
-"in generating AVI animation. The AVIOptions object has no constructor. "
+"The AVIOptions object is used to store values and attributes to be used in"
+" generating AVI animation. The AVIOptions object has no constructor. "
 "Abaqus creates the **aviOptions** member when the animation module is "
 "imported."
 msgstr ""
@@ -61,8 +61,9 @@ msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions:12 of
 msgid ""
-"Check `AVIOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all>`__."
+"Check `AVIOptions on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"avioptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions:1
@@ -120,15 +121,15 @@ msgstr ""
 #: ../../docstring abaqus.Animation.AVIOptions.AVIOptions.compressionQuality:1
 #: abaqus.Animation.AVIOptions.AVIOptions.setValues:17 of
 msgid ""
-"An Int specifying the quality of the compression as a percentage when the"
-" **compressionMethod** is set to CODEC."
+"An Int specifying the quality of the compression as a percentage when the "
+"**compressionMethod** is set to CODEC."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.AVIOptions.AVIOptions.imageSize:1 of
 msgid ""
-"A pair of Ints specifying the width and height of the image in pixels "
-"when **sizeDefinition** = USER_DEFINED. Possible values are Ints in the "
-"range (*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
+"A pair of Ints specifying the width and height of the image in pixels when"
+" **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range "
+"(*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
 "**maxHeight**). The default value is the screen size."
 msgstr ""
 
@@ -138,9 +139,9 @@ msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions.setValues:4 of
 msgid ""
-"Check `AVIOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all"
-"#simaker-avioptionssetvaluespyc>`__."
+"Check `AVIOptions.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"avioptionspyc.htm?contextscope=all#simaker-avioptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions.setValues
@@ -161,12 +162,11 @@ msgstr ""
 #: abaqus.Animation.AVIOptions.AVIOptions.setValues:7 of
 msgid ""
 "A SymbolicConstant specifying the compression method for the AVI format. "
-"Possible values are:  - RAW8, specifying an uncompressed format of 8 bits"
-" per pixel. - RAW32, specifying an uncompressed format of 32 bits per "
-"pixel. - RLE8, specifying a run length encoded format of 8 bits per "
-"pixel. - CODEC, specifying a format defined by CODEC (encoder/decoder). "
-"The availability of   theCODEC is system dependent  The default value is "
-"RLE8."
+"Possible values are:  - RAW8, specifying an uncompressed format of 8 bits "
+"per pixel. - RAW32, specifying an uncompressed format of 32 bits per "
+"pixel. - RLE8, specifying a run length encoded format of 8 bits per pixel."
+" - CODEC, specifying a format defined by CODEC (encoder/decoder). The "
+"availability of   theCODEC is system dependent  The default value is RLE8."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.AVIOptions.AVIOptions.setValues:23
@@ -181,14 +181,14 @@ msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions.setValues:27 of
 msgid ""
-"A pair of Ints specifying the width and height of the image in pixels "
-"when **sizeDefinition** = USER_DEFINED. Possible values are Ints in the "
-"range (*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
+"A pair of Ints specifying the width and height of the image in pixels when"
+" **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range "
+"(*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
 "**maxHeight**). The default value is the screen size. Note:The values of "
 "the minimum width (*minWidth*) and height (*minHeight*) depend on the "
 "following:viewport font size,whether decorations are printed,decoration "
-"size, andscreen resolution.The minimum width and height are normally < 50"
-" pixels. The values of the maximum width (*maxWidth*) and height "
+"size, andscreen resolution.The minimum width and height are normally < 50 "
+"pixels. The values of the maximum width (*maxWidth*) and height "
 "(*maxHeight*) depend on the graphics capabilities of the system. The "
 "maximum width and height will be at least as large as the screen "
 "dimensions."
@@ -204,8 +204,9 @@ msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController:12 of
 msgid ""
-"Check `AnimationController on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all>`__."
+"Check `AnimationController on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationcontrollerpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -231,9 +232,10 @@ msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.play:4 of
 msgid ""
-"Check `AnimationController.play on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all"
-"#simaker-animationcontrollerplaypyc>`__."
+"Check `AnimationController.play on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationcontrollerpyc.htm?contextscope=all#simaker-"
+"animationcontrollerplaypyc>`__."
 msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.play:7 of
@@ -259,9 +261,10 @@ msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.setValues:4 of
 msgid ""
-"Check `AnimationController.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all"
-"#simaker-animationcontrollersetvaluespyc>`__."
+"Check `AnimationController.setValues on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationcontrollerpyc.htm?contextscope=all#simaker-"
+"animationcontrollersetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.showFirstFrame:1 of
@@ -274,9 +277,10 @@ msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.showFrame:4 of
 msgid ""
-"Check `AnimationController.showFrame on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all"
-"#simaker-animationcontrollershowframepyc>`__."
+"Check `AnimationController.showFrame on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationcontrollerpyc.htm?contextscope=all#simaker-"
+"animationcontrollershowframepyc>`__."
 msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.showFrame:7 of
@@ -288,8 +292,8 @@ msgid ""
 "A Float specifying the frame: for **animationType** = TIME_HISTORY the "
 "frame with the time nearest to this value, for **animationType** = "
 "HARMONIC the frame with the angle nearest to this value, for "
-"**animationType** = SCALE_FACTOR the frame with the scale value nearest "
-"to this value."
+"**animationType** = SCALE_FACTOR the frame with the scale value nearest to"
+" this value."
 msgstr ""
 
 #: abaqus.Animation.AnimationController.AnimationController.showLastFrame:1 of
@@ -310,39 +314,39 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions:1 of
 msgid ""
 "The AnimationOptions object is used to store values and attributes "
-"associated with an AnimationController object. The AnimationOptions "
-"object has no constructor command. Abaqus creates the "
-"**animationOptions** member when it creates the AnimationController "
-"object."
+"associated with an AnimationController object. The AnimationOptions object"
+" has no constructor command. Abaqus creates the **animationOptions** "
+"member when it creates the AnimationController object."
 msgstr ""
 
 #: abaqus.Animation.AnimationOptions.AnimationOptions:13 of
 msgid ""
-"Check `AnimationOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all>`__."
+"Check `AnimationOptions on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter:1
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:13 of
 msgid ""
-"A Boolean specifying whether to show the frame counter. The default value"
-" is ON."
+"A Boolean specifying whether to show the frame counter. The default value "
+"is ON."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.frameRate:1
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:10 of
 msgid ""
-"An Int specifying the animation rate in frames/second. Possible values "
-"are 1 ≤ **frameRate** ≤ 100. The default value is 50."
+"An Int specifying the animation rate in frames/second. Possible values are"
+" 1 ≤ **frameRate** ≤ 100. The default value is 50."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.AnimationOptions.AnimationOptions.maxTime:1
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:25 of
 msgid ""
-"A Float specifying the maximum time for time based time history animation"
-" when **maxTimeAutoCompute** = False."
+"A Float specifying the maximum time for time based time history animation "
+"when **maxTimeAutoCompute** = False."
 msgstr ""
 
 #: ../../docstring
@@ -366,8 +370,8 @@ msgstr ""
 #: ../../docstring abaqus.Animation.AnimationOptions.AnimationOptions.minTime:1
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:31 of
 msgid ""
-"A Float specifying the minimum time for time based time history animation"
-" when **minTimeAutoCompute** = False."
+"A Float specifying the minimum time for time based time history animation "
+"when **minTimeAutoCompute** = False."
 msgstr ""
 
 #: ../../docstring
@@ -400,8 +404,8 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:19 of
 msgid ""
 "An Int specifying the number of frames to be used when the "
-"AnimationController object's **animationType** = SCALE_FACTOR or "
-"HARMONIC. The default value is 7."
+"AnimationController object's **animationType** = SCALE_FACTOR or HARMONIC."
+" The default value is 7."
 msgstr ""
 
 #: ../../docstring
@@ -409,9 +413,9 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:15 of
 msgid ""
 "A SymbolicConstant specifying the relative scaling when the "
-"AnimationController object's **animationType** = SCALE_FACTOR or "
-"HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE. The default "
-"value is HALF_CYCLE."
+"AnimationController object's **animationType** = SCALE_FACTOR or HARMONIC."
+" Possible values are FULL_CYCLE and HALF_CYCLE. The default value is "
+"HALF_CYCLE."
 msgstr ""
 
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:1 of
@@ -420,9 +424,10 @@ msgstr ""
 
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:4 of
 msgid ""
-"Check `AnimationOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all"
-"#simaker-animationoptionssetvaluespyc>`__."
+"Check `AnimationOptions.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationoptionspyc.htm?contextscope=all#simaker-"
+"animationoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -430,8 +435,8 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode:1 of
 msgid ""
 "A SymbolicConstant specifying whether the time history animation is time "
-"based or frame based. Possible values are FRAME_BASED and TIME_BASED. The"
-" default value is FRAME_BASED."
+"based or frame based. Possible values are FRAME_BASED and TIME_BASED. The "
+"default value is FRAME_BASED."
 msgstr ""
 
 #: ../../docstring
@@ -446,8 +451,8 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:40
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod:1 of
 msgid ""
-"A Boolean specifying whether to use the highlight method to draw the time"
-" tracker line and symbols. The default value is ON."
+"A Boolean specifying whether to use the highlight method to draw the time "
+"tracker line and symbols. The default value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -463,8 +468,8 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the **X - Y** time tracker line style. "
-"Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default "
-"value is SOLID."
+"Possible values are SOLID, DASHED, DOTTED, and DOT_DASH. The default value"
+" is SOLID."
 msgstr ""
 
 #: ../../docstring
@@ -472,45 +477,44 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness:1 of
 msgid ""
 "A SymbolicConstant specifying the **X - Y** time tracker line thickness. "
-"Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value"
-" is MEDIUM."
+"Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value "
+"is MEDIUM."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:51
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor:1 of
 msgid ""
-"A String specifying the color used to plot the **X - Y** time tracker "
-"line when **xyUseHighlightMethod** = False. The default value is "
-"\"Yellow\"."
+"A String specifying the color used to plot the **X - Y** time tracker line"
+" when **xyUseHighlightMethod** = False. The default value is \"Yellow\"."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:54
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol:1 of
 msgid ""
-"A Boolean specifying whether to show the time tracker symbols. The "
-"default value is ON."
+"A Boolean specifying whether to show the time tracker symbols. The default"
+" value is ON."
 msgstr ""
 
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:56 of
 msgid ""
-"A SymbolicConstant specifying the marker type to be used for all "
-"animation capable **X - Y** curve or the SymbolicConstant DEFAULT "
-"specifying that the system will take the marker associated to each curve "
-"Possible values are:  - FILLED_CIRCLE - FILLED_SQUARE - FILLED_DIAMOND - "
-"FILLED_TRI - HOLLOW_CIRCLE - HOLLOW_SQUARE - HOLLOW_DIAMOND - HOLLOW_TRI "
-"- CROSS - XMARKER - DEFAULT  The default value is DEFAULT."
+"A SymbolicConstant specifying the marker type to be used for all animation"
+" capable **X - Y** curve or the SymbolicConstant DEFAULT specifying that "
+"the system will take the marker associated to each curve Possible values "
+"are:  - FILLED_CIRCLE - FILLED_SQUARE - FILLED_DIAMOND - FILLED_TRI - "
+"HOLLOW_CIRCLE - HOLLOW_SQUARE - HOLLOW_DIAMOND - HOLLOW_TRI - CROSS - "
+"XMARKER - DEFAULT  The default value is DEFAULT."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:56
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker:1 of
 msgid ""
-"A SymbolicConstant specifying the marker type to be used for all "
-"animation capable **X - Y** curve or the SymbolicConstant DEFAULT "
-"specifying that the system will take the marker associated to each curve "
-"Possible values are:"
+"A SymbolicConstant specifying the marker type to be used for all animation"
+" capable **X - Y** curve or the SymbolicConstant DEFAULT specifying that "
+"the system will take the marker associated to each curve Possible values "
+"are:"
 msgstr ""
 
 #: ../../docstring
@@ -589,18 +593,18 @@ msgstr ""
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:74
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize:1 of
 msgid ""
-"A SymbolicConstant specifying the size of the markers. Possible values "
-"are SMALL, MEDIUM, and LARGE. The default value is MEDIUM."
+"A SymbolicConstant specifying the size of the markers. Possible values are"
+" SMALL, MEDIUM, and LARGE. The default value is MEDIUM."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Animation.AnimationOptions.AnimationOptions.setValues:77
 #: abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor:1 of
 msgid ""
-"A String specifying the color used to plot **X - Y** time tracker symbols"
-" when **xyUseHighlightMethod** = False. When setting the color to "
-"'Default' the system will take the color associated to each curve. The "
-"default value is \"Default\"."
+"A String specifying the color used to plot **X - Y** time tracker symbols "
+"when **xyUseHighlightMethod** = False. When setting the color to 'Default'"
+" the system will take the color associated to each curve. The default "
+"value is \"Default\"."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession:1 of
@@ -615,8 +619,9 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession:10 of
 msgid ""
-"Check `AnimationSession on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all>`__."
+"Check `AnimationSession on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"animationsessionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:1
@@ -635,8 +640,9 @@ msgstr ""
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:9
 #: abaqus.Animation.Movie.Movie:11 of
 msgid ""
-"Check `Movie on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all>`__."
+"Check `Movie on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIM"
+"ULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"moviepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:12
@@ -647,8 +653,8 @@ msgstr ""
 #: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:14
 #: abaqus.Animation.Movie.Movie:23 abaqus.Animation.Movie.Movie.fileName:1 of
 msgid ""
-"A String specifying the file from which the movie is to be read. The file"
-" extension must be specified and indicates the movie format (.avi, .mov, "
+"A String specifying the file from which the movie is to be read. The file "
+"extension must be specified and indicates the movie format (.avi, .mov, "
 ".mpeg, or .wmv)."
 msgstr ""
 
@@ -674,8 +680,8 @@ msgstr ""
 #: abaqus.Animation.Movie.Movie.timelineStartFrame:1 of
 msgid ""
 "An Int specifying the global timeline frame number that corresponds to "
-"**startFrame**. A value of 0 will indicate the first frame to be "
-"displayed in the viewport. The default value is 0."
+"**startFrame**. A value of 0 will indicate the first frame to be displayed"
+" in the viewport. The default value is 0."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.AnimationSession.AnimationSession.Movie:27
@@ -737,8 +743,8 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:42 of
 msgid ""
-"Unsupported movie format, If **fileName** references an unsupported movie"
-" file format"
+"Unsupported movie format, If **fileName** references an unsupported movie "
+"file format"
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:43
@@ -750,16 +756,17 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:1 of
 msgid ""
-"This method writes the animations present in the list of canvas objects "
-"to a file. It generates an animation file using the given file name and "
-"file format and uses the values in the appropriate options object."
+"This method writes the animations present in the list of canvas objects to"
+" a file. It generates an animation file using the given file name and file"
+" format and uses the values in the appropriate options object."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:6 of
 msgid ""
-"Check `AnimationSession.writeImageAnimation on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all"
-"#simaker-animationsessionwriteimageanimationpyc>`__."
+"Check `AnimationSession.writeImageAnimation on help.3ds.com/2018 <https://"
+"help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-animationsessionpyc.htm?contextscope=all#simaker-"
+"animationsessionwriteimageanimationpyc>`__."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:9
@@ -775,21 +782,21 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation:14 of
 msgid ""
-"A sequence specifying the canvas objects to capture. The default behavior"
-" is to capture all canvas objects."
+"A sequence specifying the canvas objects to capture. The default behavior "
+"is to capture all canvas objects."
 msgstr ""
 
 #: abaqus.Animation.Movie.Movie:1 of
 msgid ""
-"The Movie object is used to store values and attributes associated with a"
-" movie file. Upon creation, the Movie object is added to the "
-"session.movies repository."
+"The Movie object is used to store values and attributes associated with a "
+"movie file. Upon creation, the Movie object is added to the session.movies"
+" repository."
 msgstr ""
 
 #: abaqus.Animation.Movie.Movie:51 of
 msgid ""
-"Unsupported movie format, If **fileName** references an unsupported movie"
-" file format."
+"Unsupported movie format, If **fileName** references an unsupported movie "
+"file format."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.Movie.Movie.duration:1 of
@@ -814,16 +821,16 @@ msgstr ""
 
 #: abaqus.Animation.Movie.Movie.setValues:4 of
 msgid ""
-"Check `Movie.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all"
-"#simaker-moviesetvaluespyc>`__."
+"Check `Movie.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"moviepyc.htm?contextscope=all#simaker-moviesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Animation.Movie.Movie.setValues:28 of
 msgid ""
-"If "
-"**startFrame**,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*timelineStartTime*,"
-"     or*timelineEndTime* are outside their respective valid range."
+"If **startFrame**,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*time"
+"lineStartTime*,     or*timelineEndTime* are outside their respective valid"
+" range."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.Movie.Movie.width:1 of
@@ -840,8 +847,9 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation:10 of
 msgid ""
-"Check `ImageAnimation on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all>`__."
+"Check `ImageAnimation on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"imageanimationpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation:12 of
@@ -870,8 +878,8 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation.closed:1 of
 msgid ""
-"This method indicates if the ImageAnimation is open or closed for writing"
-" animation frames."
+"This method indicates if the ImageAnimation is open or closed for writing "
+"animation frames."
 msgstr ""
 
 #: ../../docstring abaqus.Animation.ImageAnimation.ImageAnimation.fileName:1 of
@@ -886,9 +894,10 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame:4 of
 msgid ""
-"Check `ImageAnimation.writeFrame on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all"
-"#simaker-imageanimationwriteframepyc>`__."
+"Check `ImageAnimation.writeFrame on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"imageanimationpyc.htm?contextscope=all#simaker-"
+"imageanimationwriteframepyc>`__."
 msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame:7 of
@@ -907,8 +916,9 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:12 of
 msgid ""
-"Check `ImageAnimationOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all>`__."
+"Check `ImageAnimationOptions on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"imageanimationoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -924,8 +934,8 @@ msgstr ""
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues:7 of
 msgid ""
 "An Int specifying the frame rate to record on the saved animation file. "
-"The effective frame rate in frames per second will be obtained by "
-"dividing the given frame rate by the time scale."
+"The effective frame rate in frames per second will be obtained by dividing"
+" the given frame rate by the time scale."
 msgstr ""
 
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues:1 of
@@ -934,9 +944,10 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues:4 of
 msgid ""
-"Check `ImageAnimationOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all"
-"#simaker-imageanimationoptionssetvaluespyc>`__."
+"Check `ImageAnimationOptions.setValues on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"imageanimationoptionspyc.htm?contextscope=all#simaker-"
+"imageanimationoptionssetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -948,8 +959,8 @@ msgstr ""
 
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues:13 of
 msgid ""
-"A Boolean specifying whether to capture the viewport border and title. "
-"The default value is ON."
+"A Boolean specifying whether to capture the viewport border and title. The"
+" default value is ON."
 msgstr ""
 
 #: ../../docstring
@@ -957,22 +968,23 @@ msgstr ""
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpBackground:1
 #: of
 msgid ""
-"A Boolean specifying whether to capture viewport backgrounds. The default"
-" value is OFF."
+"A Boolean specifying whether to capture viewport backgrounds. The default "
+"value is OFF."
 msgstr ""
 
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1 of
 msgid ""
 "The QuickTimeOptions object is used to store values and attributes to be "
-"used in generating QuickTime animation. The QuickTimeOptions object has "
-"no constructor. Abaqus creates the **quickTimeOptions** member when the "
+"used in generating QuickTime animation. The QuickTimeOptions object has no"
+" constructor. Abaqus creates the **quickTimeOptions** member when the "
 "animation module is imported."
 msgstr ""
 
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:12 of
 msgid ""
-"Check `QuickTimeOptions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all>`__."
+"Check `QuickTimeOptions on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"quicktimeoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -1005,14 +1017,14 @@ msgstr ""
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize:1
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:19 of
 msgid ""
-"A pair of Ints specifying the width and height of the image in pixels "
-"when **sizeDefinition** = USER_DEFINED. Possible values are Ints in the "
-"range (*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
-"**maxHeight**). The default value is the screen size. Note: The values of"
-" the minimum width (*minWidth*) and height (*minHeight*) depend on the "
+"A pair of Ints specifying the width and height of the image in pixels when"
+" **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range "
+"(*minWidth*, **minHeight**) ≤ (width, height) ≤ (*maxWidth*, "
+"**maxHeight**). The default value is the screen size. Note: The values of "
+"the minimum width (*minWidth*) and height (*minHeight*) depend on the "
 "following:viewport font size,whether decorations are printed,decoration "
-"size, and screen resolution.The minimum width and height are normally < "
-"50 pixels. The values of the maximum width (*maxWidth*) and height "
+"size, and screen resolution.The minimum width and height are normally < 50"
+" pixels. The values of the maximum width (*maxWidth*) and height "
 "(*maxHeight*) depend on the graphics capabilities of the system. The "
 "maximum width and height will be at least as large as the screen "
 "dimensions."
@@ -1024,9 +1036,10 @@ msgstr ""
 
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:4 of
 msgid ""
-"Check `QuickTimeOptions.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all"
-"#simaker-quicktimeoptionssetvaluespyc>`__."
+"Check `QuickTimeOptions.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"quicktimeoptionspyc.htm?contextscope=all#simaker-"
+"quicktimeoptionssetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:7 of

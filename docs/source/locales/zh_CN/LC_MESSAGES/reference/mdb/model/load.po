@@ -26,9 +26,9 @@ msgid ""
 "A specific type of load object and a specific type of load state object "
 "are designed for each type of load. A load object stores the "
 "nonpropagating data of a load as well as a number of instances of the "
-"corresponding load state object, each of which stores the propagating "
-"data of the load in a single step. Instances of the load state object are"
-" created and deleted internally by its corresponding load object."
+"corresponding load state object, each of which stores the propagating data"
+" of the load in a single step. Instances of the load state object are "
+"created and deleted internally by its corresponding load object."
 msgstr ""
 
 #: ../../reference/mdb/model/load.md:5
@@ -39,9 +39,9 @@ msgstr ""
 
 #: ../../reference/mdb/model/load.md:9 abaqus.Load.Load.Load:1 of
 msgid ""
-"The Load object is the abstract base type for other Load objects. The "
-"Load object has no explicit constructor. The methods and members of the "
-"Load object are common to all objects derived from Load."
+"The Load object is the abstract base type for other Load objects. The Load"
+" object has no explicit constructor. The methods and members of the Load "
+"object are common to all objects derived from Load."
 msgstr ""
 
 #: ../../reference/mdb/model/load.md:11
@@ -53,7 +53,8 @@ msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:1 of
-msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgid ""
+"Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge:5
@@ -125,8 +126,9 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:9 of
 msgid ""
-"Check `LoadModel on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `LoadModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 abaqus.Load.LoadModel.LoadModel:11 of
@@ -367,16 +369,15 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:28 of
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:32 of
 msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
+"A SymbolicConstant specifying the analysis model type. Possible values are"
+" STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:35 of
@@ -387,8 +388,8 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:37 of
 msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:40 of
@@ -399,8 +400,8 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel:43 of
 msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge
@@ -564,7 +565,8 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ""
+":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -579,12 +581,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ""
+":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -599,8 +602,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -623,16 +626,18 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+"A Boolean specifying that the step specified by **restartStep** should be "
+"terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ""
+":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgid ""
+"A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -648,7 +653,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ""
+":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -660,11 +666,13 @@ msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid "A String specifying the name of the job that generated the restart data."
+msgid ""
+"A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ""
+":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -679,8 +687,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+"A String specifying the name of the job that generated the results for the"
+" global model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -691,8 +699,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+"A boolean specifying the status of constraints created in a model, in the "
+"model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -715,12 +723,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+"A boolean specifying the status of interactions created in a model, in the"
+" model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ""
+":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -728,7 +737,8 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ""
+":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -762,7 +772,8 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ""
+":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -800,7 +811,8 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ""
+":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -855,20 +867,20 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
-msgstr ""
-
-#: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+"A tuple of tuples of Strings specifying the linked child PartInstance name"
+" in the current model to the corresponding parent PartInstance name in a "
+"different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ""
+"A tuple of tuples of Strings specifying the linked child Part name in the "
+"current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -888,7 +900,8 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ""
+":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -1099,8 +1112,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`BoltLoad <abaqus.Load.LoadModel.LoadModel.BoltLoad>`\\ "
-"\\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`BoltLoad <abaqus.Load.LoadModel.LoadModel.BoltLoad>`\\ \\(name\\,"
+" createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 abaqus.Load.BoltLoad.BoltLoad:19
@@ -1169,8 +1182,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`ConcPoreFluid <abaqus.Load.LoadModel.LoadModel.ConcPoreFluid>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`ConcPoreFluid <abaqus.Load.LoadModel.LoadModel.ConcPoreFluid>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 abaqus.Load.ConcPoreFluid.ConcPoreFluid:13
@@ -1202,8 +1215,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`CoriolisForce <abaqus.Load.LoadModel.LoadModel.CoriolisForce>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`CoriolisForce <abaqus.Load.LoadModel.LoadModel.CoriolisForce>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 abaqus.Load.CoriolisForce.CoriolisForce:13
@@ -1224,8 +1237,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`InertiaRelief <abaqus.Load.LoadModel.LoadModel.InertiaRelief>`\\"
-" \\(name\\, createStepName\\[\\, u1\\, ...\\]\\)"
+":py:obj:`InertiaRelief <abaqus.Load.LoadModel.LoadModel.InertiaRelief>`\\ "
+"\\(name\\, createStepName\\[\\, u1\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 abaqus.Load.InertiaRelief.InertiaRelief:13
@@ -1247,8 +1260,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`LineLoad <abaqus.Load.LoadModel.LoadModel.LineLoad>`\\ "
-"\\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`LineLoad <abaqus.Load.LoadModel.LoadModel.LineLoad>`\\ \\(name\\,"
+" createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 abaqus.Load.LineLoad.LineLoad:13
@@ -1292,8 +1305,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`Pressure <abaqus.Load.LoadModel.LoadModel.Pressure>`\\ "
-"\\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`Pressure <abaqus.Load.LoadModel.LoadModel.Pressure>`\\ \\(name\\,"
+" createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1311,8 +1324,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`ShellEdgeLoad <abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`ShellEdgeLoad <abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1347,8 +1360,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`SurfaceCharge <abaqus.Load.LoadModel.LoadModel.SurfaceCharge>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`SurfaceCharge <abaqus.Load.LoadModel.LoadModel.SurfaceCharge>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1470,8 +1483,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\,"
+" inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1562,8 +1575,9 @@ msgstr ""
 #: abaqus.Load.BodyCharge.BodyCharge:11
 #: abaqus.Load.LoadModel.LoadModel.BodyCharge:9 of
 msgid ""
-"Check `BodyCharge on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodychargepyc.htm?contextscope=all>`__."
+"Check `BodyCharge on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodychargepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyCharge.BodyCharge:21
@@ -2114,9 +2128,9 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.field:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:11 of
 msgid ""
-"A String specifying the name of the AnalyticalField object associated "
-"with this load. The **field** argument applies only when "
-"**distributionType** = FIELD. The default value is an empty string."
+"A String specifying the name of the AnalyticalField object associated with"
+" this load. The **field** argument applies only when **distributionType** "
+"= FIELD. The default value is an empty string."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge:41
@@ -2132,8 +2146,9 @@ msgstr ""
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux:12
 #: abaqus.Load.LoadModel.LoadModel.BodyConcentrationFlux:9 of
 msgid ""
-"Check `BodyConcentrationFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyconcentrationfluxpyc.htm?contextscope=all>`__."
+"Check `BodyConcentrationFlux on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyconcentrationfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux:24
@@ -2167,14 +2182,15 @@ msgstr ""
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux:23
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid:24
 #: abaqus.Load.SurfaceTraction.SurfaceTraction:23 of
-msgid "A String specifying the name of the step in which the load is created."
+msgid ""
+"A String specifying the name of the step in which the load is created."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux:28
 #: abaqus.Load.LoadModel.LoadModel.BodyConcentrationFlux:18 of
 msgid ""
-"A Float specifying the body concentration flux magnitude. **magnitude** "
-"is optional if **distributionType** = USER_DEFINED."
+"A Float specifying the body concentration flux magnitude. **magnitude** is"
+" optional if **distributionType** = USER_DEFINED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux:35
@@ -2200,8 +2216,9 @@ msgstr ""
 #: abaqus.Load.BodyCurrent.BodyCurrent:11
 #: abaqus.Load.LoadModel.LoadModel.BodyCurrent:9 of
 msgid ""
-"Check `BodyCurrent on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentpyc.htm?contextscope=all>`__."
+"Check `BodyCurrent on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent:41
@@ -2217,8 +2234,9 @@ msgstr ""
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity:11
 #: abaqus.Load.LoadModel.LoadModel.BodyCurrentDensity:9 of
 msgid ""
-"Check `BodyCurrentDensity on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentdensitypyc.htm?contextscope=all>`__."
+"Check `BodyCurrentDensity on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentdensitypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity:28
@@ -2278,8 +2296,9 @@ msgstr ""
 #: abaqus.Load.BodyForce.BodyForce:15
 #: abaqus.Load.LoadModel.LoadModel.BodyForce:9 of
 msgid ""
-"Check `BodyForce on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyforcepyc.htm?contextscope=all>`__."
+"Check `BodyForce on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyforcepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyForce.BodyForce:35
@@ -2291,8 +2310,8 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.LineLoad:18 of
 msgid ""
 "A SymbolicConstant specifying how the load is distributed spatially. "
-"Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value "
-"is UNIFORM."
+"Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is"
+" UNIFORM."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce:38
@@ -2336,15 +2355,16 @@ msgstr ""
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux:11
 #: abaqus.Load.LoadModel.LoadModel.BodyHeatFlux:9 of
 msgid ""
-"Check `BodyHeatFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyheatfluxpyc.htm?contextscope=all>`__."
+"Check `BodyHeatFlux on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyheatfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux:27
 #: abaqus.Load.LoadModel.LoadModel.BodyHeatFlux:18 of
 msgid ""
-"A Float specifying the body heat flux magnitude. **magnitude** is "
-"optional if **distributionType** = USER_DEFINED."
+"A Float specifying the body heat flux magnitude. **magnitude** is optional"
+" if **distributionType** = USER_DEFINED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyHeatFlux.BodyHeatFlux:34
@@ -2370,8 +2390,9 @@ msgstr ""
 #: abaqus.Load.BoltLoad.BoltLoad:17 abaqus.Load.LoadModel.LoadModel.BoltLoad:9
 #: of
 msgid ""
-"Check `BoltLoad on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boltloadpyc.htm?contextscope=all>`__."
+"Check `BoltLoad on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boltloadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BoltLoad.BoltLoad:34
@@ -2441,8 +2462,9 @@ msgstr ""
 #: abaqus.Load.ConcCharge.ConcCharge:11
 #: abaqus.Load.LoadModel.LoadModel.ConcCharge:9 of
 msgid ""
-"Check `ConcCharge on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concchargepyc.htm?contextscope=all>`__."
+"Check `ConcCharge on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concchargepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge:41
@@ -2458,8 +2480,9 @@ msgstr ""
 #: abaqus.Load.ConcConcFlux.ConcConcFlux:11
 #: abaqus.Load.LoadModel.LoadModel.ConcConcFlux:9 of
 msgid ""
-"Check `ConcConcFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concconcfluxpyc.htm?contextscope=all>`__."
+"Check `ConcConcFlux on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concconcfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux:41
@@ -2475,8 +2498,9 @@ msgstr ""
 #: abaqus.Load.ConcCurrent.ConcCurrent:11
 #: abaqus.Load.LoadModel.LoadModel.ConcCurrent:9 of
 msgid ""
-"Check `ConcCurrent on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conccurrentpyc.htm?contextscope=all>`__."
+"Check `ConcCurrent on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conccurrentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent:41
@@ -2492,8 +2516,9 @@ msgstr ""
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid:11
 #: abaqus.Load.LoadModel.LoadModel.ConcPoreFluid:9 of
 msgid ""
-"Check `ConcPoreFluid on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concporefluidpyc.htm?contextscope=all>`__."
+"Check `ConcPoreFluid on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concporefluidpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid:41
@@ -2509,8 +2534,9 @@ msgstr ""
 #: abaqus.Load.ConcentratedForce.ConcentratedForce:11
 #: abaqus.Load.LoadModel.LoadModel.ConcentratedForce:9 of
 msgid ""
-"Check `ConcentratedForce on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedforcepyc.htm?contextscope=all>`__."
+"Check `ConcentratedForce on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedforcepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.ConcentratedForce.ConcentratedForce:34
@@ -2548,8 +2574,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether the direction of the force rotates with the "
 "rotation at each node of the region. You should provide the **follower** "
-"argument only if it is valid for the specified step. The default value is"
-" OFF."
+"argument only if it is valid for the specified step. The default value is "
+"OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Load.ConcentratedForce.ConcentratedForce:50
@@ -2558,9 +2584,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ConcentratedForce:41 of
 msgid ""
 "None or a DatumCsys object specifying the local coordinate system of the "
-"load's degrees of freedom. If **localCsys** = None, the degrees of "
-"freedom are defined in the global coordinate system. When this member is "
-"queried, it returns an Int. The default value is None."
+"load's degrees of freedom. If **localCsys** = None, the degrees of freedom"
+" are defined in the global coordinate system. When this member is queried,"
+" it returns an Int. The default value is None."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce:55
@@ -2576,8 +2602,9 @@ msgstr ""
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux:11
 #: abaqus.Load.LoadModel.LoadModel.ConcentratedHeatFlux:9 of
 msgid ""
-"Check `ConcentratedHeatFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedheatfluxpyc.htm?contextscope=all>`__."
+"Check `ConcentratedHeatFlux on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedheatfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux:41
@@ -2603,15 +2630,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ConnectorForce:1 of
 msgid ""
 "This method creates a ConnectorForce object on a wire region. "
-"Alternatively, the load may also be applied to a wire set referenced from"
-" an assembled fastener template model."
+"Alternatively, the load may also be applied to a wire set referenced from "
+"an assembled fastener template model."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce:11
 #: abaqus.Load.LoadModel.LoadModel.ConnectorForce:10 of
 msgid ""
-"Check `ConnectorForce on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorforcepyc.htm?contextscope=all>`__."
+"Check `ConnectorForce on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectorforcepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce:26
@@ -2635,8 +2663,8 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ConnectorMoment:20 of
 msgid ""
 "A String specifying the name of the assembled fastener to which the load "
-"will be applied. This argument is not valid when **region** is specified."
-" When this argument is specified, **fastenerSetName** must also be "
+"will be applied. This argument is not valid when **region** is specified. "
+"When this argument is specified, **fastenerSetName** must also be "
 "specified. The default value is an empty string."
 msgstr ""
 
@@ -2649,10 +2677,10 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ConnectorForce:25
 #: abaqus.Load.LoadModel.LoadModel.ConnectorMoment:25 of
 msgid ""
-"A String specifying the assembled fastener template model set to which "
-"the load will be applied. This argument is not valid when **region** is "
-"specified. When this argument is specified, **fastenerName** must also be"
-" specified. The default value is an empty string."
+"A String specifying the assembled fastener template model set to which the"
+" load will be applied. This argument is not valid when **region** is "
+"specified. When this argument is specified, **fastenerName** must also be "
+"specified. The default value is an empty string."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce:38
@@ -2696,15 +2724,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ConnectorMoment:1 of
 msgid ""
 "This method creates a ConnectorMoment object on a wire region. "
-"Alternatively, the load may also be applied to a wire set referenced from"
-" an assembled fastener template model."
+"Alternatively, the load may also be applied to a wire set referenced from "
+"an assembled fastener template model."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment:11
 #: abaqus.Load.LoadModel.LoadModel.ConnectorMoment:10 of
 msgid ""
-"Check `ConnectorMoment on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectormomentpyc.htm?contextscope=all>`__."
+"Check `ConnectorMoment on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectormomentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment:38
@@ -2744,8 +2773,9 @@ msgstr ""
 #: abaqus.Load.CoriolisForce.CoriolisForce:11
 #: abaqus.Load.LoadModel.LoadModel.CoriolisForce:9 of
 msgid ""
-"Check `CoriolisForce on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coriolisforcepyc.htm?contextscope=all>`__."
+"Check `CoriolisForce on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coriolisforcepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce:30
@@ -2778,8 +2808,9 @@ msgstr ""
 
 #: abaqus.Load.Gravity.Gravity:11 abaqus.Load.LoadModel.LoadModel.Gravity:9 of
 msgid ""
-"Check `Gravity on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gravitypyc.htm?contextscope=all>`__."
+"Check `Gravity on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"gravitypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity:34 abaqus.Load.Gravity.Gravity.setValues:17
@@ -2815,8 +2846,9 @@ msgstr ""
 #: abaqus.Load.InertiaRelief.InertiaRelief:11
 #: abaqus.Load.LoadModel.LoadModel.InertiaRelief:9 of
 msgid ""
-"Check `InertiaRelief on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiareliefpyc.htm?contextscope=all>`__."
+"Check `InertiaRelief on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inertiareliefpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief:25
@@ -2825,8 +2857,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying the 1-direction as a free direction. Note: Although "
 "**u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional "
-"arguments, at least one of them must be specified. Further, any specified"
-" set of free directions cannot include only two rotational degrees of "
+"arguments, at least one of them must be specified. Further, any specified "
+"set of free directions cannot include only two rotational degrees of "
 "freedom."
 msgstr ""
 
@@ -2880,9 +2912,9 @@ msgstr ""
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValues:23
 #: abaqus.Load.LoadModel.LoadModel.InertiaRelief:31 of
 msgid ""
-"A sequence of Floats specifying the **X**, **Y** and **Z** coordinates of"
-" a fixed rotation point or a point on the rotation axis or a point on the"
-" symmetry line, about which rotations are defined. Such a point must be "
+"A sequence of Floats specifying the **X**, **Y** and **Z** coordinates of "
+"a fixed rotation point or a point on the rotation axis or a point on the "
+"symmetry line, about which rotations are defined. Such a point must be "
 "specified only for certain combinations of free directions."
 msgstr ""
 
@@ -2893,9 +2925,9 @@ msgstr ""
 msgid ""
 "None or a DatumCsys object specifying the local coordinate system of the "
 "rigid body degrees of freedom for the inertia relief load. If "
-"**localCoordinates** = None, the free directions are defined in the "
-"global coordinate system. When this member is queried, it returns an Int."
-" The default value is None."
+"**localCoordinates** = None, the free directions are defined in the global"
+" coordinate system. When this member is queried, it returns an Int. The "
+"default value is None."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief:50
@@ -2911,8 +2943,9 @@ msgstr ""
 #: abaqus.Load.InwardVolAccel.InwardVolAccel:12
 #: abaqus.Load.LoadModel.LoadModel.InwardVolAccel:9 of
 msgid ""
-"Check `InwardVolAccel on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inwardvolaccelpyc.htm?contextscope=all>`__."
+"Check `InwardVolAccel on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inwardvolaccelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel:24
@@ -2935,15 +2968,16 @@ msgstr ""
 #: abaqus.Load.LineLoad.LineLoad:11 abaqus.Load.LoadModel.LoadModel.LineLoad:9
 #: of
 msgid ""
-"Check `LineLoad on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lineloadpyc.htm?contextscope=all>`__."
+"Check `LineLoad on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"lineloadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad:34 abaqus.Load.LineLoad.LineLoad.setValues:15
 #: abaqus.Load.LoadModel.LoadModel.LineLoad:25 of
 msgid ""
-"A Float or a Complex specifying the component of the load in the global "
-"or the beam local 1-direction. Note: Although **comp1**, **comp2**, and "
+"A Float or a Complex specifying the component of the load in the global or"
+" the beam local 1-direction. Note: Although **comp1**, **comp2**, and "
 "**comp3** are optional arguments, at least one of them must be nonzero "
 "unless **distributionType** = USER_DEFINED."
 msgstr ""
@@ -2951,8 +2985,8 @@ msgstr ""
 #: abaqus.Load.LineLoad.LineLoad:38 abaqus.Load.LineLoad.LineLoad.setValues:19
 #: abaqus.Load.LoadModel.LoadModel.LineLoad:29 of
 msgid ""
-"A Float or a Complex specifying the component of the load in the global "
-"or the beam local 2-direction."
+"A Float or a Complex specifying the component of the load in the global or"
+" the beam local 2-direction."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad:41 abaqus.Load.LineLoad.LineLoad.setValues:22
@@ -2984,27 +3018,30 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Moment:9 abaqus.Load.Moment.Moment:11 of
 msgid ""
-"Check `Moment on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-momentpyc.htm?contextscope=all>`__."
+"Check `Moment on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSI"
+"MULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"momentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Moment:18 abaqus.Load.Moment.Moment:27
 #: abaqus.Load.Moment.Moment.setValues:8 of
 msgid ""
 "A Float or a Complex specifying the load component in the 4-direction. "
-"Note: Although **comp1**, **comp2**, and **comp3** are optional "
-"arguments, at least one of them must be nonzero."
+"Note: Although **comp1**, **comp2**, and **comp3** are optional arguments,"
+" at least one of them must be nonzero."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Moment:22 abaqus.Load.Moment.Moment:31
 #: abaqus.Load.Moment.Moment.setValues:12 of
-msgid "A Float or a Complex specifying the load component in the 5- direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 5- direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.Moment:24
 #: abaqus.Load.Moment.Moment:33 abaqus.Load.Moment.Moment.setValues:14
 #: abaqus.Load.MomentState.MomentState.cm3:1 of
-msgid "A Float or a Complex specifying the load component in the 6-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 6-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.Moment:30
@@ -3012,8 +3049,8 @@ msgstr ""
 #: abaqus.Load.Moment.Moment.setValues:20 of
 msgid ""
 "A Boolean specifying whether the direction of the force rotates with the "
-"rotation of the node. You should provide the **follower** argument only "
-"if it is valid for the specified step. The default value is OFF."
+"rotation of the node. You should provide the **follower** argument only if"
+" it is valid for the specified step. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.Moment:34
@@ -3021,8 +3058,8 @@ msgstr ""
 #: abaqus.Load.Moment.Moment.setValues:24 of
 msgid ""
 "None or a DatumCsys object specifying the ID of the Datum coordinate "
-"system used as the local coordinate system of the load. If **localCsys** "
-"= None, the load is defined in the global coordinate system. When this "
+"system used as the local coordinate system of the load. If **localCsys** ="
+" None, the load is defined in the global coordinate system. When this "
 "member is queried, it returns an Int. The default value is None."
 msgstr ""
 
@@ -3036,8 +3073,9 @@ msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PEGLoad:9 abaqus.Load.PEGLoad.PEGLoad:11 of
 msgid ""
-"Check `PEGLoad on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pegloadpyc.htm?contextscope=all>`__."
+"Check `PEGLoad on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSS"
+"IMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pegloadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PEGLoad:25 abaqus.Load.PEGLoad.PEGLoad:34
@@ -3075,14 +3113,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.PipePressure:9
 #: abaqus.Load.PipePressure.PipePressure:12 of
 msgid ""
-"Check `PipePressure on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipepressurepyc.htm?contextscope=all>`__."
+"Check `PipePressure on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pipepressurepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PipePressure:14
 #: abaqus.Load.LoadModel.LoadModel.Pressure:14
 #: abaqus.Load.PipePressure.PipePressure:24 abaqus.Load.Pressure.Pressure:23 of
-msgid "A String specifying the name of the step in which the pressure is created."
+msgid ""
+"A String specifying the name of the step in which the pressure is created."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.PipePressure:18
@@ -3125,9 +3165,9 @@ msgstr ""
 #: abaqus.Load.PipePressure.PipePressure.distributionType:1
 #: abaqus.Load.PipePressure.PipePressure.setValues:16 of
 msgid ""
-"A SymbolicConstant specifying whether the load is uniform. Possible "
-"values are UNIFORM, HYDROSTATIC, USER_DEFINED, and FIELD. The default "
-"value is UNIFORM."
+"A SymbolicConstant specifying whether the load is uniform. Possible values"
+" are UNIFORM, HYDROSTATIC, USER_DEFINED, and FIELD. The default value is "
+"UNIFORM."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.PipePressure:40
@@ -3153,15 +3193,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.Pressure:9 abaqus.Load.Pressure.Pressure:11
 #: of
 msgid ""
-"Check `Pressure on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pressurepyc.htm?contextscope=all>`__."
+"Check `Pressure on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pressurepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Pressure:18 abaqus.Load.Pressure.Pressure:27
 #: of
 msgid ""
-"A Float or a Complex specifying the pressure magnitude. Note: *magnitude*"
-" is optional if **distributionType** = USER_DEFINED."
+"A Float or a Complex specifying the pressure magnitude. Note: *magnitude* "
+"is optional if **distributionType** = USER_DEFINED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.Pressure:27
@@ -3169,9 +3210,9 @@ msgstr ""
 #: abaqus.Load.Pressure.Pressure.setValues:8 of
 msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
-"object associated with this load. The **field** argument applies only "
-"when **distributionType** = FIELD or **distributionType** = "
-"DISCRETE_FIELD. The default value is an empty string."
+"object associated with this load. The **field** argument applies only when"
+" **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. "
+"The default value is an empty string."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Pressure:31 abaqus.Load.Pressure.Pressure:40
@@ -3187,9 +3228,8 @@ msgstr ""
 #: abaqus.Load.Pressure.Pressure.setValues:15 of
 msgid ""
 "A SymbolicConstant specifying how the pressure is distributed spatially. "
-"Possible values are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, "
-"STAGNATION, VISCOUS, TOTAL_FORCE, and DISCRETE_FIELD. The default value "
-"is UNIFORM."
+"Possible values are UNIFORM, USER_DEFINED, FIELD, HYDROSTATIC, STAGNATION,"
+" VISCOUS, TOTAL_FORCE, and DISCRETE_FIELD. The default value is UNIFORM."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.Pressure:42 abaqus.Load.Pressure.Pressure:51
@@ -3205,8 +3245,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.RotationalBodyForce:9
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce:11 of
 msgid ""
-"Check `RotationalBodyForce on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rotationalbodyforcepyc.htm?contextscope=all>`__."
+"Check `RotationalBodyForce on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"rotationalbodyforcepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.RotationalBodyForce:32
@@ -3214,10 +3255,10 @@ msgstr ""
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.centrifugal:1
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValues:15 of
 msgid ""
-"A Boolean specifying whether or not the effect of the load is "
-"centrifugal. The default value is OFF. Note: At least one of "
-"**centrifugal** or **rotaryAcceleration** must be specified and only one "
-"must have the value ON."
+"A Boolean specifying whether or not the effect of the load is centrifugal."
+" The default value is OFF. Note: At least one of **centrifugal** or "
+"**rotaryAcceleration** must be specified and only one must have the value "
+"ON."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.RotationalBodyForce:36
@@ -3244,8 +3285,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:9
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:11 of
 msgid ""
-"Check `ShellEdgeLoad on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shelledgeloadpyc.htm?contextscope=all>`__."
+"Check `ShellEdgeLoad on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"shelledgeloadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:18
@@ -3269,8 +3311,8 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:41
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:19 of
 msgid ""
-"A Float specifying an additional rotation of **directionVector** about an"
-" axis. The default value is 0.This parameter is available only if "
+"A Float specifying an additional rotation of **directionVector** about an "
+"axis. The default value is 0.This parameter is available only if "
 "**traction** is GENERAL."
 msgstr ""
 
@@ -3278,8 +3320,8 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:44
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:22 of
 msgid ""
-"A SymbolicConstant specifying the axis about which to apply an additional"
-" rotation of **directionVector**. Possible values are AXIS_1, AXIS_2, "
+"A SymbolicConstant specifying the axis about which to apply an additional "
+"rotation of **directionVector**. Possible values are AXIS_1, AXIS_2, "
 "AXIS_3. The default value is AXIS_1.This parameter is available only if "
 "**traction** is GENERAL."
 msgstr ""
@@ -3289,8 +3331,8 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:26 of
 msgid ""
 "A DatumCsys object specifying the local coordinate system of the load's "
-"degrees of freedom. The default value is None, indicating that the "
-"degrees of freedom are defined in the global coordinate system or by the "
+"degrees of freedom. The default value is None, indicating that the degrees"
+" of freedom are defined in the global coordinate system or by the "
 "**userCsys** parameter if defined. This parameter is available only if "
 "**traction** is GENERAL. When this member is queried, it returns an Int."
 msgstr ""
@@ -3299,20 +3341,20 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:54
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:32 of
 msgid ""
-"A String specifying a CSYS defined by a user-subroutine. The default "
-"value is None, indicating that the degrees of freedom are defined in the "
-"global coordinate system or by the **localCsys** parameter if defined. "
-"This parameter is available only if **traction** is GENERAL."
+"A String specifying a CSYS defined by a user-subroutine. The default value"
+" is None, indicating that the degrees of freedom are defined in the global"
+" coordinate system or by the **localCsys** parameter if defined. This "
+"parameter is available only if **traction** is GENERAL."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:50
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:59
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:37 of
 msgid ""
-"A tuple of two points specifying the direction of the load. Each point is"
-" specified as a point region or a tuple of coordinates. If **traction** "
-"is SHEAR, then **directionVector** will be projected onto the region "
-"surface. This parameter is available only if **traction** is GENERAL."
+"A tuple of two points specifying the direction of the load. Each point is "
+"specified as a point region or a tuple of coordinates. If **traction** is "
+"SHEAR, then **directionVector** will be projected onto the region surface."
+" This parameter is available only if **traction** is GENERAL."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:55
@@ -3320,9 +3362,9 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:42 of
 msgid ""
 "A Boolean specifying whether the direction of the force changes with "
-"rotation. The default value is ON. This parameter may be modified only if"
-" **traction** is GENERAL. You should provide the **follower** argument "
-"only if it is valid for the specified step."
+"rotation. The default value is ON. This parameter may be modified only if "
+"**traction** is GENERAL. You should provide the **follower** argument only"
+" if it is valid for the specified step."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad:59
@@ -3331,8 +3373,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to maintain a constant resultant force by "
 "defining traction per unit undeformed area. If **resultant** is OFF, "
-"traction is defined per unit deformed area. The default value is OFF. You"
-" should provide the **resultant** argument only if it is valid for the "
+"traction is defined per unit deformed area. The default value is OFF. You "
+"should provide the **resultant** argument only if it is valid for the "
 "specified step."
 msgstr ""
 
@@ -3358,8 +3400,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SubmodelSB:9
 #: abaqus.Load.SubmodelSB.SubmodelSB:11 of
 msgid ""
-"Check `SubmodelSB on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelsbpyc.htm?contextscope=all>`__."
+"Check `SubmodelSB on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelsbpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SubmodelSB:18
@@ -3378,9 +3421,9 @@ msgstr ""
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValues:8 of
 msgid ""
 "A String specifying the element set in the global model that will be "
-"searched for elements whose responses will be used to drive the submodel."
-" An empty string indicates that the entire global model will be searched."
-" The default value is an empty string."
+"searched for elements whose responses will be used to drive the submodel. "
+"An empty string indicates that the entire global model will be searched. "
+"The default value is an empty string."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SubmodelSB:27
@@ -3398,21 +3441,20 @@ msgstr ""
 #: abaqus.Load.SubmodelSB.SubmodelSB.exteriorTolerance:1
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValues:15 of
 msgid ""
-"None or a Float specifying the fraction of the average element size in "
-"the global model by which a driven node of the submodel can lie outside "
-"the region of the elements of the global model. The default value is "
-"0.05."
+"None or a Float specifying the fraction of the average element size in the"
+" global model by which a driven node of the submodel can lie outside the "
+"region of the elements of the global model. The default value is 0.05."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubmodelSB:34
 #: abaqus.Load.SubmodelSB.SubmodelSB:43
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValues:19 of
 msgid ""
-"An Int specifying the increment number in the global model step from "
-"which the solution will be used to specify the values of the driven "
-"variables. If **globalIncrement** = 0, the solution from the last "
-"increment will be used. The **globalIncrement** argument is applicable "
-"only for linear perturbation steps. The default value is 0."
+"An Int specifying the increment number in the global model step from which"
+" the solution will be used to specify the values of the driven variables. "
+"If **globalIncrement** = 0, the solution from the last increment will be "
+"used. The **globalIncrement** argument is applicable only for linear "
+"perturbation steps. The default value is 0."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubmodelSB:39
@@ -3428,15 +3470,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SubstructureLoad:9
 #: abaqus.Load.SubstructureLoad.SubstructureLoad:11 of
 msgid ""
-"Check `SubstructureLoad on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructureloadpyc.htm?contextscope=all>`__."
+"Check `SubstructureLoad on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"substructureloadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubstructureLoad:14
 #: abaqus.Load.SubstructureLoad.SubstructureLoad:23 of
 msgid ""
-"A String specifying the name of the step in which the substructure load "
-"is created."
+"A String specifying the name of the step in which the substructure load is"
+" created."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SubstructureLoad:18
@@ -3466,8 +3509,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCharge:9
 #: abaqus.Load.SurfaceCharge.SurfaceCharge:11 of
 msgid ""
-"Check `SurfaceCharge on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacechargepyc.htm?contextscope=all>`__."
+"Check `SurfaceCharge on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacechargepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCharge:32
@@ -3483,15 +3527,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceConcentrationFlux:9
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux:12 of
 msgid ""
-"Check `SurfaceConcentrationFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceconcentrationfluxpyc.htm?contextscope=all>`__."
+"Check `SurfaceConcentrationFlux on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceconcentrationfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceConcentrationFlux:18
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux:28 of
 msgid ""
-"A Float specifying the surface concentration flux magnitude. "
-"**magnitude** is optional if **distributionType** = USER_DEFINED."
+"A Float specifying the surface concentration flux magnitude. **magnitude**"
+" is optional if **distributionType** = USER_DEFINED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceConcentrationFlux:25
@@ -3518,8 +3563,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrent:9
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent:11 of
 msgid ""
-"Check `SurfaceCurrent on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentpyc.htm?contextscope=all>`__."
+"Check `SurfaceCurrent on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrent:32
@@ -3535,8 +3581,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrentDensity:9
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity:11 of
 msgid ""
-"Check `SurfaceCurrentDensity on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentdensitypyc.htm?contextscope=all>`__."
+"Check `SurfaceCurrentDensity on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentdensitypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceCurrentDensity:32
@@ -3552,8 +3599,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceHeatFlux:9
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux:11 of
 msgid ""
-"Check `SurfaceHeatFlux on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceheatfluxpyc.htm?contextscope=all>`__."
+"Check `SurfaceHeatFlux on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceheatfluxpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceHeatFlux:18
@@ -3586,15 +3634,16 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:9
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid:12 of
 msgid ""
-"Check `SurfacePoreFluid on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceporefluidpyc.htm?contextscope=all>`__."
+"Check `SurfacePoreFluid on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceporefluidpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:18
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid:28 of
 msgid ""
-"A Float specifying the surface pore fluid flow magnitude. **magnitude** "
-"is optional if **distributionType** = USER_DEFINED."
+"A Float specifying the surface pore fluid flow magnitude. **magnitude** is"
+" optional if **distributionType** = USER_DEFINED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:25
@@ -3602,9 +3651,8 @@ msgstr ""
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.distributionType:1
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValues:12 of
 msgid ""
-"A SymbolicConstant specifying whether the load is uniform. Possible "
-"values are UNIFORM, USER_DEFINED, and FIELD. The default value is "
-"UNIFORM."
+"A SymbolicConstant specifying whether the load is uniform. Possible values"
+" are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfacePoreFluid:32
@@ -3620,8 +3668,9 @@ msgstr ""
 #: abaqus.Load.LoadModel.LoadModel.SurfaceTraction:9
 #: abaqus.Load.SurfaceTraction.SurfaceTraction:11 of
 msgid ""
-"Check `SurfaceTraction on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacetractionpyc.htm?contextscope=all>`__."
+"Check `SurfaceTraction on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacetractionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadModel.LoadModel.SurfaceTraction:18
@@ -3646,8 +3695,8 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.angle:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:19 of
 msgid ""
-"A Float specifying an additional rotation of **directionVector** about an"
-" axis. The default value is 0.0."
+"A Float specifying an additional rotation of **directionVector** about an "
+"axis. The default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:35
@@ -3655,9 +3704,9 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.axis:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:22 of
 msgid ""
-"A SymbolicConstant specifying the axis about which to apply an additional"
-" rotation of **directionVector**. Possible values are AXIS_1, AXIS_2, and"
-" AXIS_3. The default value is AXIS_1."
+"A SymbolicConstant specifying the axis about which to apply an additional "
+"rotation of **directionVector**. Possible values are AXIS_1, AXIS_2, and "
+"AXIS_3. The default value is AXIS_1."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:39
@@ -3666,10 +3715,10 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:26 of
 msgid ""
 "None or a DatumCsys object specifying the local coordinate system of the "
-"load's degrees of freedom. If **localCsys** = None, the degrees of "
-"freedom are defined in the global coordinate system or by the "
-"**userCsys** parameter if defined. When this member is queried, it "
-"returns an Int. The default value is None."
+"load's degrees of freedom. If **localCsys** = None, the degrees of freedom"
+" are defined in the global coordinate system or by the **userCsys** "
+"parameter if defined. When this member is queried, it returns an Int. The "
+"default value is None."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:44
@@ -3677,10 +3726,10 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:31
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.userCsys:1 of
 msgid ""
-"A String specifying a CSYS defined by a user-subroutine. If **userCsys** "
-"= None, the degrees of freedom are defined in the global coordinate "
-"system or by the **localCsys** parameter if defined. The default value is"
-" \"None\"."
+"A String specifying a CSYS defined by a user-subroutine. If **userCsys** ="
+" None, the degrees of freedom are defined in the global coordinate system "
+"or by the **localCsys** parameter if defined. The default value is "
+"\"None\"."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:48
@@ -3689,8 +3738,8 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:35 of
 msgid ""
 "A VertexArray object of length 2 specifying the direction of the load. "
-"Instead of through a ConstrainedSketchVertex, each point may be specified"
-" through a tuple of coordinates. If **traction** is SHEAR, then "
+"Instead of through a ConstrainedSketchVertex, each point may be specified "
+"through a tuple of coordinates. If **traction** is SHEAR, then "
 "**directionVector** will be projected onto the region surface. This "
 "parameter is available only if **traction** is GENERAL or SHEAR."
 msgstr ""
@@ -3702,8 +3751,8 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether the direction of the force changes with "
 "rotation. The default value is ON.This parameter may be modified only if "
-"**traction** is GENERAL. You should provide the **follower** argument "
-"only if it is valid for the specified step."
+"**traction** is GENERAL. You should provide the **follower** argument only"
+" if it is valid for the specified step."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LoadModel.LoadModel.SurfaceTraction:57
@@ -3711,8 +3760,8 @@ msgstr ""
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.resultant:1
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:44 of
 msgid ""
-"A Boolean specifying whether the to maintain a constant resultant force "
-"by defining traction per unit undeformed area. If **resultant** is OFF, "
+"A Boolean specifying whether the to maintain a constant resultant force by"
+" defining traction per unit undeformed area. If **resultant** is OFF, "
 "traction is defined per unit deformed area. The default value is OFF.You "
 "should provide the **resultant** argument only if it is valid for the "
 "specified step."
@@ -3787,9 +3836,9 @@ msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.setValues:5 of
 msgid ""
-"Check `BodyCharge.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodychargepyc.htm?contextscope=all"
-"#simaker-bodychargesetvaluespyc>`__."
+"Check `BodyCharge.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodychargepyc.htm?contextscope=all#simaker-bodychargesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.setValuesInStep:1 of
@@ -3800,9 +3849,10 @@ msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.setValuesInStep:5 of
 msgid ""
-"Check `BodyCharge.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodychargepyc.htm?contextscope=all"
-"#simaker-bodychargesetvaluesinsteppyc>`__."
+"Check `BodyCharge.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodychargepyc.htm?contextscope=all#simaker-"
+"bodychargesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.setValuesInStep:8
@@ -3834,7 +3884,8 @@ msgstr ""
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValuesInStep:8
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValuesInStep:8
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep:8 of
-msgid "A String specifying the name of the step in which the load is modified."
+msgid ""
+"A String specifying the name of the step in which the load is modified."
 msgstr ""
 
 #: abaqus.Load.BodyCharge.BodyCharge.setValuesInStep:12
@@ -3861,9 +3912,9 @@ msgid ""
 "A String or a SymbolicConstant specifying the name of the amplitude "
 "reference. Possible values for the SymbolicConstant are UNCHANGED and "
 "FREED. UNCHANGED should be used if the amplitude is propagated from the "
-"previous static analysis step. FREED should be used if the load is "
-"changed to have no amplitude reference. You should provide the "
-"**amplitude** argument only if it is valid for the specified step."
+"previous static analysis step. FREED should be used if the load is changed"
+" to have no amplitude reference. You should provide the **amplitude** "
+"argument only if it is valid for the specified step."
 msgstr ""
 
 #: abaqus.Load.Load.Load:1 abaqus.Load.LoadCase.LoadCase:1
@@ -3873,8 +3924,9 @@ msgstr ""
 
 #: abaqus.Load.Load.Load:12 of
 msgid ""
-"Check `Load on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadpyc.htm?contextscope=all>`__."
+"Check `Load on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.Load.Load.deactivate:1 of
@@ -3885,13 +3937,14 @@ msgstr ""
 
 #: abaqus.Load.Load.Load.deactivate:4 of
 msgid ""
-"Check `Load.deactivate on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadpyc.htm?contextscope=all"
-"#simaker-loaddeactivatepyc>`__."
+"Check `Load.deactivate on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadpyc.htm?contextscope=all#simaker-loaddeactivatepyc>`__."
 msgstr ""
 
 #: abaqus.Load.Load.Load.deactivate:7 of
-msgid "A String specifying the name of the step in which the load is deactivated."
+msgid ""
+"A String specifying the name of the step in which the load is deactivated."
 msgstr ""
 
 #: abaqus.Load.Load.Load.delete:1 of
@@ -3900,9 +3953,9 @@ msgstr ""
 
 #: abaqus.Load.Load.Load.delete:4 of
 msgid ""
-"Check `Load.delete on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadpyc.htm?contextscope=all"
-"#simaker-loaddeletepyc>`__."
+"Check `Load.delete on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadpyc.htm?contextscope=all#simaker-loaddeletepyc>`__."
 msgstr ""
 
 #: abaqus.Load.Load.Load.delete:7 of
@@ -3910,14 +3963,15 @@ msgid "A sequence of Ints specifying the index of each load to delete."
 msgstr ""
 
 #: abaqus.Load.Load.Load.move:1 of
-msgid "This method moves the load state object from one step to a different step."
+msgid ""
+"This method moves the load state object from one step to a different step."
 msgstr ""
 
 #: abaqus.Load.Load.Load.move:4 of
 msgid ""
-"Check `Load.move on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadpyc.htm?contextscope=all"
-"#simaker-loadmovepyc>`__."
+"Check `Load.move on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadpyc.htm?contextscope=all#simaker-loadmovepyc>`__."
 msgstr ""
 
 #: abaqus.Load.Load.Load.move:7 of
@@ -3927,7 +3981,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.Load.Load.Load.move:9 of
-msgid "A String specifying the name of the step to which the load state is moved."
+msgid ""
+"A String specifying the name of the step to which the load state is moved."
 msgstr ""
 
 #: abaqus.Load.Load.Load.reset:1 of
@@ -3938,13 +3993,14 @@ msgstr ""
 
 #: abaqus.Load.Load.Load.reset:5 of
 msgid ""
-"Check `Load.reset on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadpyc.htm?contextscope=all"
-"#simaker-loadresetpyc>`__."
+"Check `Load.reset on help.3ds.com/2018 <https://help.3ds.com/2018/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadpyc.htm?contextscope=all#simaker-loadresetpyc>`__."
 msgstr ""
 
 #: abaqus.Load.Load.Load.reset:8 of
-msgid "A String specifying the name of the step in which the load state is reset."
+msgid ""
+"A String specifying the name of the step in which the load state is reset."
 msgstr ""
 
 #: abaqus.Load.Load.Load.resume:1 of
@@ -3994,12 +4050,11 @@ msgstr ""
 
 #: abaqus.Load.BodyChargeState.BodyChargeState:1 of
 msgid ""
-"The BodyChargeState object stores the propagating data of a body charge "
-"in a step. One instance of this object is created internally by the "
+"The BodyChargeState object stores the propagating data of a body charge in"
+" a step. One instance of this object is created internally by the "
 "BodyCharge object for each step. The instance is also deleted internally "
-"by the BodyCharge object. The BodyChargeState object has no constructor "
-"or methods. The BodyChargeState object is derived from the LoadState "
-"object."
+"by the BodyCharge object. The BodyChargeState object has no constructor or"
+" methods. The BodyChargeState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.BodyChargeState.BodyChargeState:13
@@ -4046,8 +4101,9 @@ msgstr ""
 
 #: abaqus.Load.BodyChargeState.BodyChargeState:18 of
 msgid ""
-"Check `BodyChargeState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodychargestatepyc.htm?contextscope=all>`__."
+"Check `BodyChargeState on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodychargestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyChargeState.BodyChargeState.amplitude:1
@@ -4144,8 +4200,8 @@ msgstr ""
 #: abaqus.Load.SurfaceChargeState.SurfaceChargeState.magnitudeState:1
 #: abaqus.Load.SurfaceCurrentState.SurfaceCurrentState.magnitudeState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, and FREED."
+"A SymbolicConstant specifying the propagation state of the load magnitude."
+" Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyChargeState.BodyChargeState.status:1
@@ -4524,35 +4580,37 @@ msgstr ""
 #: abaqus.Load.LoadState.LoadState:1 of
 msgid ""
 "The LoadState object is the abstract base type for other LoadState "
-"objects. The LoadState object has no explicit constructor or methods. The"
-" members of the LoadState object are common to all objects derived from "
+"objects. The LoadState object has no explicit constructor or methods. The "
+"members of the LoadState object are common to all objects derived from "
 "LoadState."
 msgstr ""
 
 #: abaqus.Load.LoadState.LoadState:12 of
 msgid ""
-"Check `LoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadstatepyc.htm?contextscope=all>`__."
+"Check `LoadState on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux:1 of
 msgid ""
 "The BodyConcentrationFlux object defines body concentration flux from a "
-"region or into a region. The BodyConcentrationFlux object is derived from"
-" the Load object."
+"region or into a region. The BodyConcentrationFlux object is derived from "
+"the Load object."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValues:1 of
 msgid ""
-"This method modifies the data for an existing BodyConcentrationFlux "
-"object in the step where it is created."
+"This method modifies the data for an existing BodyConcentrationFlux object"
+" in the step where it is created."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValues:5 of
 msgid ""
-"Check `BodyConcentrationFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyconcentrationfluxpyc.htm?contextscope=all"
-"#simaker-bodyconcentrationfluxsetvaluespyc>`__."
+"Check `BodyConcentrationFlux.setValues on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyconcentrationfluxpyc.htm?contextscope=all#simaker-"
+"bodyconcentrationfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValuesInStep:1 of
@@ -4563,9 +4621,10 @@ msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValuesInStep:5 of
 msgid ""
-"Check `BodyConcentrationFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyconcentrationfluxpyc.htm?contextscope=all"
-"#simaker-bodyconcentrationfluxsetvaluesinsteppyc>`__."
+"Check `BodyConcentrationFlux.setValuesInStep on help.3ds.com/2018 <https:/"
+"/help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-bodyconcentrationfluxpyc.htm?contextscope=all#simaker-"
+"bodyconcentrationfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux.setValuesInStep:8 of
@@ -4592,8 +4651,8 @@ msgid ""
 "A String or a SymbolicConstant specifying the name of the amplitude "
 "reference. Possible values for the SymbolicConstant are UNCHANGED and "
 "FREED. UNCHANGED should be used if the amplitude is propagated from the "
-"previous analysis step. FREED should be used if the load has no amplitude"
-" reference. You should provide the **amplitude** argument only if it is "
+"previous analysis step. FREED should be used if the load has no amplitude "
+"reference. You should provide the **amplitude** argument only if it is "
 "valid for the specified step."
 msgstr ""
 
@@ -4601,10 +4660,10 @@ msgstr ""
 msgid ""
 "The BodyConcentrationFluxState object stores the propagating data for a "
 "BodyConcentrationFlux object in a step. One instance of this object is "
-"created internally by the BodyConcentrationFlux object for each step. The"
-" instance is also deleted internally by the BodyConcentrationFlux object."
-" The BodyConcentrationFluxState object has no constructor or methods. The"
-" BodyConcentrationFluxState object is derived from the LoadState object."
+"created internally by the BodyConcentrationFlux object for each step. The "
+"instance is also deleted internally by the BodyConcentrationFlux object. "
+"The BodyConcentrationFluxState object has no constructor or methods. The "
+"BodyConcentrationFluxState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState:16
@@ -4615,8 +4674,9 @@ msgstr ""
 
 #: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState:19 of
 msgid ""
-"Check `BodyConcentrationFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyconcentrationfluxstatepyc.htm?contextscope=all>`__."
+"Check `BodyConcentrationFluxState on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyconcentrationfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4636,8 +4696,8 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent:1 of
 msgid ""
-"The BodyCurrent object stores the data for a body current. The "
-"BodyCurrent object is derived from the Load object."
+"The BodyCurrent object stores the data for a body current. The BodyCurrent"
+" object is derived from the Load object."
 msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.setValues:1 of
@@ -4648,9 +4708,9 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.setValues:5 of
 msgid ""
-"Check `BodyCurrent.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentpyc.htm?contextscope=all"
-"#simaker-bodycurrentsetvaluespyc>`__."
+"Check `BodyCurrent.setValues on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentpyc.htm?contextscope=all#simaker-bodycurrentsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.setValuesInStep:1 of
@@ -4661,9 +4721,10 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrent.BodyCurrent.setValuesInStep:5 of
 msgid ""
-"Check `BodyCurrent.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentpyc.htm?contextscope=all"
-"#simaker-bodycurrentsetvaluesinsteppyc>`__."
+"Check `BodyCurrent.setValuesInStep on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentpyc.htm?contextscope=all#simaker-"
+"bodycurrentsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity:1 of
@@ -4674,15 +4735,16 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValues:1 of
 msgid ""
-"This method modifies the data for an existing BodyCurrentDensity object "
-"in the step where it is created."
+"This method modifies the data for an existing BodyCurrentDensity object in"
+" the step where it is created."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValues:5 of
 msgid ""
-"Check `BodyCurrentDensity.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentdensitypyc.htm?contextscope=all"
-"#simaker-bodycurrentdensitysetvaluespyc>`__."
+"Check `BodyCurrentDensity.setValues on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentdensitypyc.htm?contextscope=all#simaker-"
+"bodycurrentdensitysetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValuesInStep:1 of
@@ -4693,19 +4755,20 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity.setValuesInStep:5 of
 msgid ""
-"Check `BodyCurrentDensity.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentdensitypyc.htm?contextscope=all"
-"#simaker-bodycurrentdensitysetvaluesinsteppyc>`__."
+"Check `BodyCurrentDensity.setValuesInStep on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentdensitypyc.htm?contextscope=all#simaker-"
+"bodycurrentdensitysetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentState.BodyCurrentState:1 of
 msgid ""
-"The BodyCurrentState object stores the propagating data of a body current"
-" in a step. One instance of this object is created internally by the "
-"BodyCurrent object for each step. The instance is also deleted internally"
-" by the BodyCurrent object. The BodyCurrentState object has no "
-"constructor or methods. The BodyCurrentState object is derived from the "
-"LoadState object."
+"The BodyCurrentState object stores the propagating data of a body current "
+"in a step. One instance of this object is created internally by the "
+"BodyCurrent object for each step. The instance is also deleted internally "
+"by the BodyCurrent object. The BodyCurrentState object has no constructor "
+"or methods. The BodyCurrentState object is derived from the LoadState "
+"object."
 msgstr ""
 
 #: abaqus.Load.BodyCurrentState.BodyCurrentState:15 of
@@ -4714,8 +4777,9 @@ msgstr ""
 
 #: abaqus.Load.BodyCurrentState.BodyCurrentState:18 of
 msgid ""
-"Check `BodyCurrentState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodycurrentstatepyc.htm?contextscope=all>`__."
+"Check `BodyCurrentState on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodycurrentstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce:1 of
@@ -4739,49 +4803,49 @@ msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValues:1 of
 msgid ""
-"This method modifies the data for an existing BodyForce object in the "
-"step where it is created."
+"This method modifies the data for an existing BodyForce object in the step"
+" where it is created."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValues:5 of
 msgid ""
-"Check `BodyForce.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyforcepyc.htm?contextscope=all"
-"#simaker-bodyforcesetvaluespyc>`__."
+"Check `BodyForce.setValues on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyforcepyc.htm?contextscope=all#simaker-bodyforcesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing BodyForce "
-"object in the specified step."
+"This method modifies the propagating data for an existing BodyForce object"
+" in the specified step."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:5 of
 msgid ""
-"Check `BodyForce.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyforcepyc.htm?contextscope=all"
-"#simaker-bodyforcesetvaluesinsteppyc>`__."
+"Check `BodyForce.setValuesInStep on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyforcepyc.htm?contextscope=all#simaker-bodyforcesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body"
-" force component in the 1-direction. UNCHANGED should be used if the body"
-" force component is propagated from the previous analysis step."
+"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body "
+"force component in the 1-direction. UNCHANGED should be used if the body "
+"force component is propagated from the previous analysis step."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:14 of
 msgid ""
-"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body"
-" force component in the 2-direction. UNCHANGED should be used if the body"
-" force component is propagated from the previous analysis step."
+"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body "
+"force component in the 2-direction. UNCHANGED should be used if the body "
+"force component is propagated from the previous analysis step."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:18 of
 msgid ""
-"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body"
-" force component in the 3-direction. UNCHANGED should be used if the body"
-" force component is propagated from the previous analysis step."
+"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the body "
+"force component in the 3-direction. UNCHANGED should be used if the body "
+"force component is propagated from the previous analysis step."
 msgstr ""
 
 #: abaqus.Load.BodyForce.BodyForce.setValuesInStep:22
@@ -4793,23 +4857,24 @@ msgid ""
 "reference. Possible values for the SymbolicConstant are UNCHANGED and "
 "FREED. UNCHANGED should be used if the amplitude is propagated from the "
 "previous analysis step. FREED should be used if the load is changed to "
-"have no amplitude reference. You should provide the **amplitude** "
-"argument only if it is valid for the specified step."
+"have no amplitude reference. You should provide the **amplitude** argument"
+" only if it is valid for the specified step."
 msgstr ""
 
 #: abaqus.Load.BodyForceState.BodyForceState:1 of
 msgid ""
-"The BodyForceState object stores the propagating data of a body force in "
-"a step. One instance of this object is created internally by the "
-"BodyForce object for each step. The instance is also deleted internally "
-"by the BodyForce object. The BodyForceState object has no constructor or "
-"methods. The BodyForceState object is derived from the LoadState object."
+"The BodyForceState object stores the propagating data of a body force in a"
+" step. One instance of this object is created internally by the BodyForce "
+"object for each step. The instance is also deleted internally by the "
+"BodyForce object. The BodyForceState object has no constructor or methods."
+" The BodyForceState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.BodyForceState.BodyForceState:18 of
 msgid ""
-"Check `BodyForceState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyforcestatepyc.htm?contextscope=all>`__."
+"Check `BodyForceState on help.3ds.com/2018 <https://help.3ds.com/2018/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyforcestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyForceState.BodyForceState.comp1:1 of
@@ -4853,9 +4918,9 @@ msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValues:5 of
 msgid ""
-"Check `BodyHeatFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyheatfluxpyc.htm?contextscope=all"
-"#simaker-bodyheatfluxsetvaluespyc>`__."
+"Check `BodyHeatFlux.setValues on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyheatfluxpyc.htm?contextscope=all#simaker-bodyheatfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValuesInStep:1 of
@@ -4866,9 +4931,10 @@ msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValuesInStep:5 of
 msgid ""
-"Check `BodyHeatFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyheatfluxpyc.htm?contextscope=all"
-"#simaker-bodyheatfluxsetvaluesinsteppyc>`__."
+"Check `BodyHeatFlux.setValuesInStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyheatfluxpyc.htm?contextscope=all#simaker-"
+"bodyheatfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BodyHeatFlux.BodyHeatFlux.setValuesInStep:8 of
@@ -4885,8 +4951,8 @@ msgstr ""
 msgid ""
 "The BodyHeatFluxState object stores the propagating data for a Body "
 "BodyHeatFlux object in a step. One instance of this object is created "
-"internally by the BodyHeatFlux object for each step. The instance is also"
-" deleted internally by the BodyHeatFlux object. The BodyHeatFluxState "
+"internally by the BodyHeatFlux object for each step. The instance is also "
+"deleted internally by the BodyHeatFlux object. The BodyHeatFluxState "
 "object has no constructor or methods. The BodyHeatFluxState object is "
 "derived from the LoadState object."
 msgstr ""
@@ -4897,8 +4963,9 @@ msgstr ""
 
 #: abaqus.Load.BodyHeatFluxState.BodyHeatFluxState:18 of
 msgid ""
-"Check `BodyHeatFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-bodyheatfluxstatepyc.htm?contextscope=all>`__."
+"Check `BodyHeatFluxState on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"bodyheatfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BodyHeatFluxState.BodyHeatFluxState.magnitude:1
@@ -4909,8 +4976,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.BodyHeatFluxState.BodyHeatFluxState.magnitudeState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the Body heat flux"
-" magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the Body heat flux "
+"magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad:1 of
@@ -4934,34 +5001,34 @@ msgstr ""
 #: ../../docstring abaqus.Load.LoadModel.BoltLoad.datumAxis:1 of
 msgid ""
 "A DatumAxis object specifying the orientation of the pre-tension section "
-"normal. Note: *datumAxis* is required only for Solid and Shell regions; "
-"it has no meaning for Wire regions."
+"normal. Note: *datumAxis* is required only for Solid and Shell regions; it"
+" has no meaning for Wire regions."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValues:1 of
 msgid ""
-"This method modifies the data for an existing BoltLoad object in the step"
-" where it is created."
+"This method modifies the data for an existing BoltLoad object in the step "
+"where it is created."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValues:5 of
 msgid ""
-"Check `BoltLoad.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boltloadpyc.htm?contextscope=all"
-"#simaker-boltloadsetvaluespyc>`__."
+"Check `BoltLoad.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boltloadpyc.htm?contextscope=all#simaker-boltloadsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing BoltLoad object"
-" in the specified step."
+"This method modifies the propagating data for an existing BoltLoad object "
+"in the specified step."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValuesInStep:5 of
 msgid ""
-"Check `BoltLoad.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boltloadpyc.htm?contextscope=all"
-"#simaker-boltloadsetvaluesinsteppyc>`__."
+"Check `BoltLoad.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boltloadpyc.htm?contextscope=all#simaker-boltloadsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.BoltLoad.BoltLoad.setValuesInStep:10 of
@@ -4994,8 +5061,9 @@ msgstr ""
 
 #: abaqus.Load.BoltLoadState.BoltLoadState:19 of
 msgid ""
-"Check `BoltLoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boltloadstatepyc.htm?contextscope=all>`__."
+"Check `BoltLoadState on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"boltloadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BoltLoadState.BoltLoadState.boltMethod:1 of
@@ -5006,8 +5074,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.BoltLoadState.BoltLoadState.boltMethodState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the bolt load "
-"type. Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the bolt load type."
+" Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.BoltLoadState.BoltLoadState.magnitudeState:1 of
@@ -5030,9 +5098,9 @@ msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge.setValues:5 of
 msgid ""
-"Check `ConcCharge.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concchargepyc.htm?contextscope=all"
-"#simaker-concchargesetvaluespyc>`__."
+"Check `ConcCharge.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concchargepyc.htm?contextscope=all#simaker-concchargesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge.setValuesInStep:1 of
@@ -5043,9 +5111,10 @@ msgstr ""
 
 #: abaqus.Load.ConcCharge.ConcCharge.setValuesInStep:5 of
 msgid ""
-"Check `ConcCharge.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concchargepyc.htm?contextscope=all"
-"#simaker-concchargesetvaluesinsteppyc>`__."
+"Check `ConcCharge.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concchargepyc.htm?contextscope=all#simaker-"
+"concchargesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux:1 of
@@ -5062,9 +5131,9 @@ msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux.setValues:5 of
 msgid ""
-"Check `ConcConcFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concconcfluxpyc.htm?contextscope=all"
-"#simaker-concconcfluxsetvaluespyc>`__."
+"Check `ConcConcFlux.setValues on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concconcfluxpyc.htm?contextscope=all#simaker-concconcfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux.setValuesInStep:1 of
@@ -5075,9 +5144,10 @@ msgstr ""
 
 #: abaqus.Load.ConcConcFlux.ConcConcFlux.setValuesInStep:5 of
 msgid ""
-"Check `ConcConcFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concconcfluxpyc.htm?contextscope=all"
-"#simaker-concconcfluxsetvaluesinsteppyc>`__."
+"Check `ConcConcFlux.setValuesInStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concconcfluxpyc.htm?contextscope=all#simaker-"
+"concconcfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent:1 of
@@ -5094,9 +5164,9 @@ msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent.setValues:5 of
 msgid ""
-"Check `ConcCurrent.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conccurrentpyc.htm?contextscope=all"
-"#simaker-conccurrentsetvaluespyc>`__."
+"Check `ConcCurrent.setValues on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conccurrentpyc.htm?contextscope=all#simaker-conccurrentsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent.setValuesInStep:1 of
@@ -5107,15 +5177,16 @@ msgstr ""
 
 #: abaqus.Load.ConcCurrent.ConcCurrent.setValuesInStep:5 of
 msgid ""
-"Check `ConcCurrent.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conccurrentpyc.htm?contextscope=all"
-"#simaker-conccurrentsetvaluesinsteppyc>`__."
+"Check `ConcCurrent.setValuesInStep on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conccurrentpyc.htm?contextscope=all#simaker-"
+"conccurrentsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcCurrentState.ConcCurrentState:1 of
 msgid ""
-"The ConcCurrentState object stores the propagating data of a concentrated"
-" current in a step. One instance of this object is created internally by "
+"The ConcCurrentState object stores the propagating data of a concentrated "
+"current in a step. One instance of this object is created internally by "
 "the ConcCurrent object for each step. The instance is also deleted "
 "internally by the ConcCurrent object. The ConcCurrentState object has no "
 "constructor or methods. The ConcCurrentState object is derived from the "
@@ -5128,8 +5199,9 @@ msgstr ""
 
 #: abaqus.Load.ConcCurrentState.ConcCurrentState:18 of
 msgid ""
-"Check `ConcCurrentState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-conccurrentstatepyc.htm?contextscope=all>`__."
+"Check `ConcCurrentState on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"conccurrentstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid:1 of
@@ -5140,15 +5212,16 @@ msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ConcPoreFluid object in the"
-" step where it is created."
+"This method modifies the data for an existing ConcPoreFluid object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValues:5 of
 msgid ""
-"Check `ConcPoreFluid.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concporefluidpyc.htm?contextscope=all"
-"#simaker-concporefluidsetvaluespyc>`__."
+"Check `ConcPoreFluid.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concporefluidpyc.htm?contextscope=all#simaker-"
+"concporefluidsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValuesInStep:1 of
@@ -5159,9 +5232,10 @@ msgstr ""
 
 #: abaqus.Load.ConcPoreFluid.ConcPoreFluid.setValuesInStep:5 of
 msgid ""
-"Check `ConcPoreFluid.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concporefluidpyc.htm?contextscope=all"
-"#simaker-concporefluidsetvaluesinsteppyc>`__."
+"Check `ConcPoreFluid.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concporefluidpyc.htm?contextscope=all#simaker-"
+"concporefluidsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState:1 of
@@ -5180,17 +5254,18 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState:18 of
 msgid ""
-"Check `ConcentratedChargeState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedchargestatepyc.htm?contextscope=all>`__."
+"Check `ConcentratedChargeState on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedchargestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:1
 #: of
 msgid ""
-"The ConcentratedConcentrationFluxState object stores the propagating data"
-" of a concentrated concentration flux in a step. One instance of this "
-"object is created internally by the ConcConcFlux object for each step. "
-"The instance is also deleted internally by the ConcConcFlux object. The "
+"The ConcentratedConcentrationFluxState object stores the propagating data "
+"of a concentrated concentration flux in a step. One instance of this "
+"object is created internally by the ConcConcFlux object for each step. The"
+" instance is also deleted internally by the ConcConcFlux object. The "
 "ConcentratedConcentrationFluxState object has no constructor or methods. "
 "The ConcentratedConcentrationFluxState object is derived from the "
 "LoadState object."
@@ -5199,8 +5274,9 @@ msgstr ""
 #: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState:19
 #: of
 msgid ""
-"Check `ConcentratedConcentrationFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedconcentrationfluxstatepyc.htm?contextscope=all>`__."
+"Check `ConcentratedConcentrationFluxState on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedconcentrationfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce:1 of
@@ -5211,15 +5287,16 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ConcentratedForce object in"
-" the step where it is created."
+"This method modifies the data for an existing ConcentratedForce object in "
+"the step where it is created."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValues:5 of
 msgid ""
-"Check `ConcentratedForce.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedforcepyc.htm?contextscope=all"
-"#simaker-concentratedforcesetvaluespyc>`__."
+"Check `ConcentratedForce.setValues on help.3ds.com/2018 <https://help.3ds."
+"com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedforcepyc.htm?contextscope=all#simaker-"
+"concentratedforcesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep:1 of
@@ -5230,32 +5307,33 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep:5 of
 msgid ""
-"Check `ConcentratedForce.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedforcepyc.htm?contextscope=all"
-"#simaker-concentratedforcesetvaluesinsteppyc>`__."
+"Check `ConcentratedForce.setValuesInStep on help.3ds.com/2018 <https://hel"
+"p.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedforcepyc.htm?contextscope=all#simaker-"
+"concentratedforcesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep:10 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"concentrated force component in the 1-direction. UNCHANGED should be used"
-" if the concentrated force component is propagated from the previous "
+"concentrated force component in the 1-direction. UNCHANGED should be used "
+"if the concentrated force component is propagated from the previous "
 "analysis step."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep:14 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"concentrated force component in the 2-direction. UNCHANGED should be used"
-" if the concentrated force component is propagated from the previous "
+"concentrated force component in the 2-direction. UNCHANGED should be used "
+"if the concentrated force component is propagated from the previous "
 "analysis step."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForce.ConcentratedForce.setValuesInStep:18 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"concentrated force component in the 3-direction. UNCHANGED should be used"
-" if the concentrated force component is propagated from the previous "
+"concentrated force component in the 3-direction. UNCHANGED should be used "
+"if the concentrated force component is propagated from the previous "
 "analysis step."
 msgstr ""
 
@@ -5263,24 +5341,25 @@ msgstr ""
 msgid ""
 "The ConcentratedForceState object stores the propagating data for a "
 "concentrated force in a step. One instance of this object is created "
-"internally by the ConcentratedForce object for each step. The instance is"
-" also deleted internally by the ConcentratedForce object. The "
+"internally by the ConcentratedForce object for each step. The instance is "
+"also deleted internally by the ConcentratedForce object. The "
 "ConcentratedForceState object has no constructor or methods. The "
 "ConcentratedForceState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.ConcentratedForceState.ConcentratedForceState:19 of
 msgid ""
-"Check `ConcentratedForceState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedforcestatepyc.htm?contextscope=all>`__."
+"Check `ConcentratedForceState on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedforcestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.ConcentratedForceState.ConcentratedForceState.amplitude:1 of
 msgid ""
 "A String specifying the name of the amplitude reference. The String is "
-"empty if the load has no amplitude reference. - NOT_YET_ACTIVE - CREATED "
-"- PROPAGATED - MODIFIED - DEACTIVATED - NO_LONGER_ACTIVE - "
+"empty if the load has no amplitude reference. - NOT_YET_ACTIVE - CREATED -"
+" PROPAGATED - MODIFIED - DEACTIVATED - NO_LONGER_ACTIVE - "
 "TYPE_NOT_APPLICABLE - INSTANCE_NOT_APPLICABLE - BUILT_INTO_BASE_STATE"
 msgstr ""
 
@@ -5317,15 +5396,16 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ConcentratedHeatFlux object"
-" in the step where it is created."
+"This method modifies the data for an existing ConcentratedHeatFlux object "
+"in the step where it is created."
 msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValues:5 of
 msgid ""
-"Check `ConcentratedHeatFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedheatfluxpyc.htm?contextscope=all"
-"#simaker-concentratedheatfluxsetvaluespyc>`__."
+"Check `ConcentratedHeatFlux.setValues on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedheatfluxpyc.htm?contextscope=all#simaker-"
+"concentratedheatfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValuesInStep:1 of
@@ -5336,9 +5416,10 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux.setValuesInStep:5 of
 msgid ""
-"Check `ConcentratedHeatFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedheatfluxpyc.htm?contextscope=all"
-"#simaker-concentratedheatfluxsetvaluesinsteppyc>`__."
+"Check `ConcentratedHeatFlux.setValuesInStep on help.3ds.com/2018 <https://"
+"help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-concentratedheatfluxpyc.htm?contextscope=all#simaker-"
+"concentratedheatfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:1 of
@@ -5353,8 +5434,9 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState:19 of
 msgid ""
-"Check `ConcentratedHeatFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedheatfluxstatepyc.htm?contextscope=all>`__."
+"Check `ConcentratedHeatFluxState on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedheatfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState:1 of
@@ -5369,8 +5451,9 @@ msgstr ""
 
 #: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState:19 of
 msgid ""
-"Check `ConcentratedPoreFluidState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedporefluidstatepyc.htm?contextscope=all>`__."
+"Check `ConcentratedPoreFluidState on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"concentratedporefluidstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce:1 of
@@ -5381,15 +5464,16 @@ msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ConnectorForce object in "
-"the step where it is created."
+"This method modifies the data for an existing ConnectorForce object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValues:5 of
 msgid ""
-"Check `ConnectorForce.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorforcepyc.htm?contextscope=all"
-"#simaker-connectorforcesetvaluespyc>`__."
+"Check `ConnectorForce.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectorforcepyc.htm?contextscope=all#simaker-"
+"connectorforcesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep:1 of
@@ -5400,43 +5484,44 @@ msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep:5 of
 msgid ""
-"Check `ConnectorForce.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorforcepyc.htm?contextscope=all"
-"#simaker-connectorforcesetvaluesinsteppyc>`__."
+"Check `ConnectorForce.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectorforcepyc.htm?contextscope=all#simaker-"
+"connectorforcesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep:10 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"connector force component in the connector's local 1-direction. UNCHANGED"
-" should be used if the connector force component is propagated from the "
+"connector force component in the connector's local 1-direction. UNCHANGED "
+"should be used if the connector force component is propagated from the "
 "previous analysis step."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep:14 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"connector force component in the connector's local 2-direction. UNCHANGED"
-" should be used if the connector force component is propagated from the "
+"connector force component in the connector's local 2-direction. UNCHANGED "
+"should be used if the connector force component is propagated from the "
 "previous analysis step."
 msgstr ""
 
 #: abaqus.Load.ConnectorForce.ConnectorForce.setValuesInStep:18 of
 msgid ""
 "A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the "
-"connector force component in the connector's local 3-direction. UNCHANGED"
-" should be used if the connector force component is propagated from the "
+"connector force component in the connector's local 3-direction. UNCHANGED "
+"should be used if the connector force component is propagated from the "
 "previous analysis step."
 msgstr ""
 
 #: abaqus.Load.ConnectorForceState.ConnectorForceState:1 of
 msgid ""
-"The ConnectorForceState object stores the propagating data for a "
-"connector force in a step. One instance of this object is created "
-"internally by the ConnectorForce object for each step. The instance is "
-"also deleted internally by the ConnectorForce object. The "
-"ConnectorForceState object has no constructor or methods. The "
-"ConnectorForceState object is derived from the LoadState object."
+"The ConnectorForceState object stores the propagating data for a connector"
+" force in a step. One instance of this object is created internally by the"
+" ConnectorForce object for each step. The instance is also deleted "
+"internally by the ConnectorForce object. The ConnectorForceState object "
+"has no constructor or methods. The ConnectorForceState object is derived "
+"from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.ConnectorForceState.ConnectorForceState:15
@@ -5446,8 +5531,9 @@ msgstr ""
 
 #: abaqus.Load.ConnectorForceState.ConnectorForceState:18 of
 msgid ""
-"Check `ConnectorForceState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorforcestatepyc.htm?contextscope=all>`__."
+"Check `ConnectorForceState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectorforcestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.ConnectorForceState.ConnectorForceState.f1:1 of
@@ -5459,25 +5545,25 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.ConnectorForceState.ConnectorForceState.f1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the connector "
-"force component in the connector's local 1-direction. Possible values are"
-" UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the connector force"
+" component in the connector's local 1-direction. Possible values are "
+"UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.ConnectorForceState.ConnectorForceState.f2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the connector "
-"force component in the connector's local 2-direction. Possible values are"
-" UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the connector force"
+" component in the connector's local 2-direction. Possible values are "
+"UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.ConnectorForceState.ConnectorForceState.f3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the connector "
-"force component in the connector's local 3-direction. Possible values are"
-" UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the connector force"
+" component in the connector's local 3-direction. Possible values are "
+"UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment:1 of
@@ -5494,49 +5580,51 @@ msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValues:5 of
 msgid ""
-"Check `ConnectorMoment.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectormomentpyc.htm?contextscope=all"
-"#simaker-connectormomentsetvaluespyc>`__."
+"Check `ConnectorMoment.setValues on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectormomentpyc.htm?contextscope=all#simaker-"
+"connectormomentsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing ConnectorMoment"
-" object in the specified step."
+"This method modifies the propagating data for an existing ConnectorMoment "
+"object in the specified step."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep:5 of
 msgid ""
-"Check `ConnectorMoment.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectormomentpyc.htm?contextscope=all"
-"#simaker-connectormomentsetvaluesinsteppyc>`__."
+"Check `ConnectorMoment.setValuesInStep on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectormomentpyc.htm?contextscope=all#simaker-"
+"connectormomentsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the moment component"
-" in the connector's local 4-direction. Possible values for the "
-"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the"
-" load component is propagated from the previous static analysis step. Use"
-" FREED to remove a previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the moment component "
+"in the connector's local 4-direction. Possible values for the "
+"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the "
+"load component is propagated from the previous static analysis step. Use "
+"FREED to remove a previously defined load component."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep:15 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the moment component"
-" in the connector's local 5-direction. Possible values for the "
-"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the"
-" load component is propagated from the previous static analysis step. Use"
-" FREED to remove a previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the moment component "
+"in the connector's local 5-direction. Possible values for the "
+"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the "
+"load component is propagated from the previous static analysis step. Use "
+"FREED to remove a previously defined load component."
 msgstr ""
 
 #: abaqus.Load.ConnectorMoment.ConnectorMoment.setValuesInStep:20 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the moment component"
-" in the connector's local 6-direction. Possible values for the "
-"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the"
-" load component is propagated from the previous static analysis step. Use"
-" FREED to remove a previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the moment component "
+"in the connector's local 6-direction. Possible values for the "
+"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the "
+"load component is propagated from the previous static analysis step. Use "
+"FREED to remove a previously defined load component."
 msgstr ""
 
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState:1 of
@@ -5551,8 +5639,9 @@ msgstr ""
 
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState:18 of
 msgid ""
-"Check `ConnectorMomentState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectormomentstatepyc.htm?contextscope=all>`__."
+"Check `ConnectorMomentState on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"connectormomentstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.ConnectorMomentState.ConnectorMomentState.m1:1
@@ -5566,8 +5655,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState.m1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the connector's local 4-direction. Possible values are UNSET, SET, "
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the connector's local 4-direction. Possible values are UNSET, SET, "
 "UNCHANGED, and FREED."
 msgstr ""
 
@@ -5581,8 +5670,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState.m2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the connector's local 5-direction. Possible values are UNSET, SET, "
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the connector's local 5-direction. Possible values are UNSET, SET, "
 "UNCHANGED, and FREED."
 msgstr ""
 
@@ -5596,8 +5685,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.ConnectorMomentState.ConnectorMomentState.m3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the connector's local 6-direction. Possible values are UNSET, SET, "
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the connector's local 6-direction. Possible values are UNSET, SET, "
 "UNCHANGED, and FREED."
 msgstr ""
 
@@ -5617,21 +5706,22 @@ msgstr ""
 #: ../../docstring abaqus.Load.LoadModel.CoriolisForce.point2:1
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.point2:1 of
 msgid ""
-"A tuple of Floats specifying the second point on the axis of rotation for"
-" the load."
+"A tuple of Floats specifying the second point on the axis of rotation for "
+"the load."
 msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.setValues:1 of
 msgid ""
-"This method modifies the data for an existing CoriolisForce object in the"
-" step where it is created."
+"This method modifies the data for an existing CoriolisForce object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.setValues:5 of
 msgid ""
-"Check `CoriolisForce.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coriolisforcepyc.htm?contextscope=all"
-"#simaker-coriolisforcesetvaluespyc>`__."
+"Check `CoriolisForce.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coriolisforcepyc.htm?contextscope=all#simaker-"
+"coriolisforcesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.setValuesInStep:1 of
@@ -5642,25 +5732,27 @@ msgstr ""
 
 #: abaqus.Load.CoriolisForce.CoriolisForce.setValuesInStep:5 of
 msgid ""
-"Check `CoriolisForce.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coriolisforcepyc.htm?contextscope=all"
-"#simaker-coriolisforcesetvaluesinsteppyc>`__."
+"Check `CoriolisForce.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coriolisforcepyc.htm?contextscope=all#simaker-"
+"coriolisforcesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.CoriolisForceState.CoriolisForceState:1 of
 msgid ""
 "The CoriolisForceState object stores the propagating data of a coriolis "
-"force in a step. One instance of this object is created internally by the"
-" CoriolisForce object for each step. The instance is also deleted "
-"internally by the CoriolisForce object. The CoriolisForceState object has"
-" no constructor or methods. The CoriolisForceState object is derived from"
-" the LoadState object."
+"force in a step. One instance of this object is created internally by the "
+"CoriolisForce object for each step. The instance is also deleted "
+"internally by the CoriolisForce object. The CoriolisForceState object has "
+"no constructor or methods. The CoriolisForceState object is derived from "
+"the LoadState object."
 msgstr ""
 
 #: abaqus.Load.CoriolisForceState.CoriolisForceState:18 of
 msgid ""
-"Check `CoriolisForceState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coriolisforcestatepyc.htm?contextscope=all>`__."
+"Check `CoriolisForceState on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"coriolisforcestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity:1 of
@@ -5677,9 +5769,9 @@ msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValues:5 of
 msgid ""
-"Check `Gravity.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gravitypyc.htm?contextscope=all"
-"#simaker-gravitysetvaluespyc>`__."
+"Check `Gravity.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"gravitypyc.htm?contextscope=all#simaker-gravitysetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValuesInStep:1 of
@@ -5690,78 +5782,79 @@ msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValuesInStep:5 of
 msgid ""
-"Check `Gravity.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gravitypyc.htm?contextscope=all"
-"#simaker-gravitysetvaluesinsteppyc>`__."
+"Check `Gravity.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"gravitypyc.htm?contextscope=all#simaker-gravitysetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 1-direction. Possible values for the SymbolicConstant are "
-"UNCHANGED and FREED. UNCHANGED should be used if the load component is "
-"propagated from the previous static analysis step. Use FREED to remove a "
-"previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 1-direction. Possible values for the SymbolicConstant are UNCHANGED "
+"and FREED. UNCHANGED should be used if the load component is propagated "
+"from the previous static analysis step. Use FREED to remove a previously "
+"defined load component."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValuesInStep:15 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 2-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 2-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.Gravity.Gravity.setValuesInStep:18 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 3-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 3-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.GravityState.GravityState:1 of
 msgid ""
-"The GravityState object stores the propagating data for a gravity load in"
-" a step. One instance of this object is created internally by the Gravity"
-" object for each step. The instance is also deleted internally by the "
-"Gravity object. The GravityState object has no constructor or methods. "
-"The GravityState object is derived from the LoadState object."
+"The GravityState object stores the propagating data for a gravity load in "
+"a step. One instance of this object is created internally by the Gravity "
+"object for each step. The instance is also deleted internally by the "
+"Gravity object. The GravityState object has no constructor or methods. The"
+" GravityState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.GravityState.GravityState:18 of
 msgid ""
-"Check `GravityState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gravitystatepyc.htm?contextscope=all>`__."
+"Check `GravityState on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"gravitystatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp1:1 of
-msgid "A Float or a Complex specifying the load component in the 1-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 1-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 1-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 1-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp2:1 of
-msgid "A Float or a Complex specifying the load component in the 2-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 2-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 2-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 2-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp3:1 of
-msgid "A Float or a Complex specifying the load component in the 3-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 3-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.GravityState.GravityState.comp3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 3-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 3-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState:1 of
@@ -5769,8 +5862,8 @@ msgid ""
 "The HydrostaticFluidFlowState object stores the propagating data for a "
 "concentrated HydrostaticFluidFlow object in a step. One instance of this "
 "object is created internally by the HydrostaticFluidFlow object for each "
-"step. The instance is also deleted internally by the HydrostaticFluidFlow"
-" object. The HydrostaticFluidFlowState object has no constructor or "
+"step. The instance is also deleted internally by the HydrostaticFluidFlow "
+"object. The HydrostaticFluidFlowState object has no constructor or "
 "methods. The HydrostaticFluidFlowState object is derived from the "
 "LoadState object."
 msgstr ""
@@ -5781,27 +5874,29 @@ msgstr ""
 
 #: abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState:19 of
 msgid ""
-"Check `HydrostaticFluidFlowState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-hydrostaticfluidflowstatepyc.htm?contextscope=all>`__."
+"Check `HydrostaticFluidFlowState on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"hydrostaticfluidflowstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief:1 of
 msgid ""
-"The InertiaRelief object defines an inertia relief load. The "
-"InertiaRelief object is derived from the Load object."
+"The InertiaRelief object defines an inertia relief load. The InertiaRelief"
+" object is derived from the Load object."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValues:1 of
 msgid ""
-"This method modifies the data for an existing InertiaRelief object in the"
-" step where it is created."
+"This method modifies the data for an existing InertiaRelief object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValues:5 of
 msgid ""
-"Check `InertiaRelief.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiareliefpyc.htm?contextscope=all"
-"#simaker-inertiareliefsetvaluespyc>`__."
+"Check `InertiaRelief.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inertiareliefpyc.htm?contextscope=all#simaker-"
+"inertiareliefsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:1 of
@@ -5812,9 +5907,10 @@ msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:5 of
 msgid ""
-"Check `InertiaRelief.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiareliefpyc.htm?contextscope=all"
-"#simaker-inertiareliefsetvaluesinsteppyc>`__."
+"Check `InertiaRelief.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inertiareliefpyc.htm?contextscope=all#simaker-"
+"inertiareliefsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:10
@@ -5825,17 +5921,17 @@ msgstr ""
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:22 of
 msgid ""
 "A sequence of Floats specifying the point about which rotations are "
-"defined. The point can be specified only for certain combinations of free"
-" directions. The **referencePoint** argument can be one of the following:"
-"  - The **X**, **Y** and **Z** coordinates of a fixed rotation point. - A"
-" point on the rotation axis. - A point on the symmetry line."
+"defined. The point can be specified only for certain combinations of free "
+"directions. The **referencePoint** argument can be one of the following:  "
+"- The **X**, **Y** and **Z** coordinates of a fixed rotation point. - A "
+"point on the rotation axis. - A point on the symmetry line."
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:22 of
 msgid ""
 "A sequence of Floats specifying the point about which rotations are "
-"defined. The point can be specified only for certain combinations of free"
-" directions. The **referencePoint** argument can be one of the following:"
+"defined. The point can be specified only for certain combinations of free "
+"directions. The **referencePoint** argument can be one of the following:"
 msgstr ""
 
 #: abaqus.Load.InertiaRelief.InertiaRelief.setValuesInStep:26 of
@@ -5863,9 +5959,9 @@ msgid ""
 "The InertiaReliefState object stores the propagating data for an inertia "
 "relief load in a step. One instance of this object is created internally "
 "by the InertiaRelief object for each step. The instance is also deleted "
-"internally by the InertiaRelief object. The InertiaReliefState object has"
-" no constructor or methods. The InertiaReliefState object is derived from"
-" the LoadState object."
+"internally by the InertiaRelief object. The InertiaReliefState object has "
+"no constructor or methods. The InertiaReliefState object is derived from "
+"the LoadState object."
 msgstr ""
 
 #: abaqus.Load.InertiaReliefState.InertiaReliefState:15 of
@@ -5874,59 +5970,60 @@ msgstr ""
 
 #: abaqus.Load.InertiaReliefState.InertiaReliefState:18 of
 msgid ""
-"Check `InertiaReliefState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inertiareliefstatepyc.htm?contextscope=all>`__."
+"Check `InertiaReliefState on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inertiareliefstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.InertiaReliefState.InertiaReliefState.fixedState:1 of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the Boolean that "
-"identifies whether the inertia relief load should remain fixed at current"
-" level at the start of the step. Possible values are UNSET, SET, "
-"UNCHANGED, and MODIFIED."
+"identifies whether the inertia relief load should remain fixed at current "
+"level at the start of the step. Possible values are UNSET, SET, UNCHANGED,"
+" and MODIFIED."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.InertiaReliefState.InertiaReliefState.referencePoint:1 of
 msgid ""
-"A tuple of Floats specifying the point about which rotations are defined."
-" The point can be specified only for certain combinations of free "
-"directions. The **referencePoint** argument can be one of the following: "
-"- The **X**, **Y** and **Z** coordinates of a fixed rotation point. - A "
+"A tuple of Floats specifying the point about which rotations are defined. "
+"The point can be specified only for certain combinations of free "
+"directions. The **referencePoint** argument can be one of the following: -"
+" The **X**, **Y** and **Z** coordinates of a fixed rotation point. - A "
 "point on the rotation axis. - A point on the symmetry line."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.InertiaReliefState.InertiaReliefState.referencePointState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the reference "
-"point of the inertia relief load. Possible values are UNSET, SET, "
-"UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the reference point"
+" of the inertia relief load. Possible values are UNSET, SET, UNCHANGED, "
+"and MODIFIED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.InertiaReliefState.InertiaReliefState.u1State:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the Boolean that "
-"identifies the local 1-direction as a free direction. Possible values are"
-" UNSET, SET, UNCHANGED, and MODIFIED."
+"identifies the local 1-direction as a free direction. Possible values are "
+"UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.InertiaReliefState.InertiaReliefState.u2State:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the Boolean that "
-"identifies the local 2-direction as a free direction. Possible values are"
-" UNSET, SET, UNCHANGED, and MODIFIED."
+"identifies the local 2-direction as a free direction. Possible values are "
+"UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.InertiaReliefState.InertiaReliefState.u3State:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the Boolean that "
-"identifies the local the 3-direction as a free direction. Possible values"
-" are UNSET, SET, UNCHANGED, and MODIFIED."
+"identifies the local the 3-direction as a free direction. Possible values "
+"are UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.InertiaReliefState.InertiaReliefState.ur1State:1
@@ -5956,21 +6053,22 @@ msgstr ""
 #: abaqus.Load.InwardVolAccel.InwardVolAccel:1 of
 msgid ""
 "The InwardVolAccel object stores the data for an inward volume "
-"acceleration acoustic load. The InwardVolAccel object is derived from the"
-" Load object."
+"acceleration acoustic load. The InwardVolAccel object is derived from the "
+"Load object."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.setValues:1 of
 msgid ""
-"This method modifies the data for an existing InwardVolAccel object in "
-"the step where it is created."
+"This method modifies the data for an existing InwardVolAccel object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.setValues:5 of
 msgid ""
-"Check `InwardVolAccel.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inwardvolaccelpyc.htm?contextscope=all"
-"#simaker-inwardvolaccelsetvaluespyc>`__."
+"Check `InwardVolAccel.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inwardvolaccelpyc.htm?contextscope=all#simaker-"
+"inwardvolaccelsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.setValuesInStep:1 of
@@ -5981,9 +6079,10 @@ msgstr ""
 
 #: abaqus.Load.InwardVolAccel.InwardVolAccel.setValuesInStep:5 of
 msgid ""
-"Check `InwardVolAccel.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inwardvolaccelpyc.htm?contextscope=all"
-"#simaker-inwardvolaccelsetvaluesinsteppyc>`__."
+"Check `InwardVolAccel.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inwardvolaccelpyc.htm?contextscope=all#simaker-"
+"inwardvolaccelsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.InwardVolAccelState.InwardVolAccelState:1 of
@@ -5998,61 +6097,62 @@ msgstr ""
 
 #: abaqus.Load.InwardVolAccelState.InwardVolAccelState:19 of
 msgid ""
-"Check `InwardVolAccelState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inwardvolaccelstatepyc.htm?contextscope=all>`__."
+"Check `InwardVolAccelState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"inwardvolaccelstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad:1 of
 msgid ""
-"The LineLoad object stores the data of an applied line load. The LineLoad"
-" object is derived from the Load object."
+"The LineLoad object stores the data of an applied line load. The LineLoad "
+"object is derived from the Load object."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValues:1 of
 msgid ""
-"This method modifies the data for an existing LineLoad object in the step"
-" where it is created."
+"This method modifies the data for an existing LineLoad object in the step "
+"where it is created."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValues:5 of
 msgid ""
-"Check `LineLoad.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lineloadpyc.htm?contextscope=all"
-"#simaker-lineloadsetvaluespyc>`__."
+"Check `LineLoad.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"lineloadpyc.htm?contextscope=all#simaker-lineloadsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing LineLoad object"
-" in the specified step."
+"This method modifies the propagating data for an existing LineLoad object "
+"in the specified step."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValuesInStep:5 of
 msgid ""
-"Check `LineLoad.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lineloadpyc.htm?contextscope=all"
-"#simaker-lineloadsetvaluesinsteppyc>`__."
+"Check `LineLoad.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"lineloadpyc.htm?contextscope=all#simaker-lineloadsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the global or the beam local 1-direction. Possible values for the "
-"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the"
-" load component is propagated from the previous static analysis step. Use"
-" FREED to remove a previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the global or the beam local 1-direction. Possible values for the "
+"SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the "
+"load component is propagated from the previous static analysis step. Use "
+"FREED to remove a previously defined load component."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValuesInStep:15 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the global or the beam local 2-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the global or the beam local 2-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.LineLoad.LineLoad.setValuesInStep:18 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the global 3-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the global 3-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.LineLoadState.LineLoadState:1 of
@@ -6066,8 +6166,9 @@ msgstr ""
 
 #: abaqus.Load.LineLoadState.LineLoadState:18 of
 msgid ""
-"Check `LineLoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lineloadstatepyc.htm?contextscope=all>`__."
+"Check `LineLoadState on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"lineloadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.LineLoadState.LineLoadState.comp1:1 of
@@ -6078,8 +6179,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.LineLoadState.LineLoadState.comp1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the global or the beam local 1-direction. Possible values are UNSET, "
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the global or the beam local 1-direction. Possible values are UNSET, "
 "SET, UNCHANGED, and FREED."
 msgstr ""
 
@@ -6091,8 +6192,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.LineLoadState.LineLoadState.comp2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the global or the beam local 2-direction. Possible values are UNSET, "
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the global or the beam local 2-direction. Possible values are UNSET, "
 "SET, UNCHANGED, and FREED."
 msgstr ""
 
@@ -6104,22 +6205,23 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.LineLoadState.LineLoadState.comp3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the global 3-direction. Possible values are UNSET, SET, UNCHANGED, "
-"and FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the global 3-direction. Possible values are UNSET, SET, UNCHANGED, and "
+"FREED."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase:1 of
 msgid ""
-"The LoadCase object is used to define the loads and constraints "
-"comprising a particular loading condition and the linear response of a "
-"structure subjected to that loading condition."
+"The LoadCase object is used to define the loads and constraints comprising"
+" a particular loading condition and the linear response of a structure "
+"subjected to that loading condition."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase:12 abaqus.Load.LoadStep.LoadStep.LoadCase:9 of
 msgid ""
-"Check `LoadCase on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadcasepyc.htm?contextscope=all>`__."
+"Check `LoadCase on help.3ds.com/2018 <https://help.3ds.com/2018/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadcasepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase:14 abaqus.Load.LoadStep.LoadStep.LoadCase:1 of
@@ -6135,8 +6237,8 @@ msgstr ""
 #: abaqus.Load.LoadStep.LoadStep.LoadCase:14 of
 msgid ""
 "A sequence of (String, Float) sequences specifying the name of a "
-"BoundaryCondition followed by a nonzero Float scaling factor. The default"
-" value is an empty sequence."
+"BoundaryCondition followed by a nonzero Float scaling factor. The default "
+"value is an empty sequence."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase:27 abaqus.Load.LoadCase.LoadCase.setValues:10
@@ -6173,9 +6275,9 @@ msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase.setValues:4 of
 msgid ""
-"Check `LoadCase.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-loadcasepyc.htm?contextscope=all"
-"#simaker-loadcasesetvaluespyc>`__."
+"Check `LoadCase.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"loadcasepyc.htm?contextscope=all#simaker-loadcasesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.LoadCase.LoadCase.suppress:1 of
@@ -6202,43 +6304,43 @@ msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValues:5 of
 msgid ""
-"Check `Moment.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-momentpyc.htm?contextscope=all"
-"#simaker-momentsetvaluespyc>`__."
+"Check `Moment.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"momentpyc.htm?contextscope=all#simaker-momentsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing Moment object "
-"in the specified step."
+"This method modifies the propagating data for an existing Moment object in"
+" the specified step."
 msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValuesInStep:5 of
 msgid ""
-"Check `Moment.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-momentpyc.htm?contextscope=all"
-"#simaker-momentsetvaluesinsteppyc>`__."
+"Check `Moment.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"momentpyc.htm?contextscope=all#simaker-momentsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 4-direction. Possible values for the SymbolicConstant are "
-"UNCHANGED and FREED. UNCHANGED should be used if the load component is "
-"propagated from the previous static analysis step. Use FREED to remove a "
-"previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 4-direction. Possible values for the SymbolicConstant are UNCHANGED "
+"and FREED. UNCHANGED should be used if the load component is propagated "
+"from the previous static analysis step. Use FREED to remove a previously "
+"defined load component."
 msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValuesInStep:15 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 5-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 5-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.Moment.Moment.setValuesInStep:18 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"in the 6-direction. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component in"
+" the 6-direction. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad:1 of
@@ -6255,9 +6357,9 @@ msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValues:5 of
 msgid ""
-"Check `PEGLoad.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pegloadpyc.htm?contextscope=all"
-"#simaker-pegloadsetvaluespyc>`__."
+"Check `PEGLoad.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pegloadpyc.htm?contextscope=all#simaker-pegloadsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValuesInStep:1 of
@@ -6268,36 +6370,36 @@ msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValuesInStep:5 of
 msgid ""
-"Check `PEGLoad.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pegloadpyc.htm?contextscope=all"
-"#simaker-pegloadsetvaluesinsteppyc>`__."
+"Check `PEGLoad.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pegloadpyc.htm?contextscope=all#simaker-pegloadsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"at dof 1 of reference node 1. Possible values for the SymbolicConstant "
-"are UNCHANGED and FREED. UNCHANGED should be used if the load component "
-"is propagated from the previous static analysis step. Use FREED to remove"
-" a previously defined load component."
+"A Float, a Complex, or a SymbolicConstant specifying the load component at"
+" dof 1 of reference node 1. Possible values for the SymbolicConstant are "
+"UNCHANGED and FREED. UNCHANGED should be used if the load component is "
+"propagated from the previous static analysis step. Use FREED to remove a "
+"previously defined load component."
 msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValuesInStep:15 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"at dof 1 of reference node 2. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component at"
+" dof 1 of reference node 2. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.PEGLoad.PEGLoad.setValuesInStep:18 of
 msgid ""
-"A Float, a Complex, or a SymbolicConstant specifying the load component "
-"at dof 2 of reference node 2. For details see **comp1**."
+"A Float, a Complex, or a SymbolicConstant specifying the load component at"
+" dof 2 of reference node 2. For details see **comp1**."
 msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure:1 of
 msgid ""
-"The PipePressure object stores the data for a pressure applied to pipe or"
-" elbow elements. The PipePressure object is derived from the Load object."
+"The PipePressure object stores the data for a pressure applied to pipe or "
+"elbow elements. The PipePressure object is derived from the Load object."
 msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure.setValues:1 of
@@ -6308,9 +6410,9 @@ msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure.setValues:5 of
 msgid ""
-"Check `PipePressure.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipepressurepyc.htm?contextscope=all"
-"#simaker-pipepressuresetvaluespyc>`__."
+"Check `PipePressure.setValues on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pipepressurepyc.htm?contextscope=all#simaker-pipepressuresetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure.setValuesInStep:1 of
@@ -6321,9 +6423,10 @@ msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure.setValuesInStep:5 of
 msgid ""
-"Check `PipePressure.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipepressurepyc.htm?contextscope=all"
-"#simaker-pipepressuresetvaluesinsteppyc>`__."
+"Check `PipePressure.setValuesInStep on help.3ds.com/2018 <https://help.3ds"
+".com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pipepressurepyc.htm?contextscope=all#simaker-"
+"pipepressuresetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.PipePressure.PipePressure.setValuesInStep:10 of
@@ -6336,8 +6439,8 @@ msgid ""
 "reference. Possible values for the SymbolicConstant are UNCHANGED and "
 "FREED. UNCHANGED should be used if the amplitude is propagated from the "
 "previous static analysis step. FREED should be used if the load has no "
-"amplitude reference. You should provide the **amplitude** argument only "
-"if it is valid for the specified step."
+"amplitude reference. You should provide the **amplitude** argument only if"
+" it is valid for the specified step."
 msgstr ""
 
 #: abaqus.Load.Pressure.Pressure:1 of
@@ -6348,28 +6451,28 @@ msgstr ""
 
 #: abaqus.Load.Pressure.Pressure.setValues:1 of
 msgid ""
-"This method modifies the data for an existing Pressure object in the step"
-" where it is created."
+"This method modifies the data for an existing Pressure object in the step "
+"where it is created."
 msgstr ""
 
 #: abaqus.Load.Pressure.Pressure.setValues:5 of
 msgid ""
-"Check `Pressure.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pressurepyc.htm?contextscope=all"
-"#simaker-pressuresetvaluespyc>`__."
+"Check `Pressure.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pressurepyc.htm?contextscope=all#simaker-pressuresetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.Pressure.Pressure.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing Pressure object"
-" in the specified step."
+"This method modifies the propagating data for an existing Pressure object "
+"in the specified step."
 msgstr ""
 
 #: abaqus.Load.Pressure.Pressure.setValuesInStep:5 of
 msgid ""
-"Check `Pressure.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pressurepyc.htm?contextscope=all"
-"#simaker-pressuresetvaluesinsteppyc>`__."
+"Check `Pressure.setValuesInStep on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pressurepyc.htm?contextscope=all#simaker-pressuresetvaluesinsteppyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.Pressure.Pressure.setValuesInStep:10
@@ -6391,9 +6494,10 @@ msgstr ""
 
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValues:5 of
 msgid ""
-"Check `RotationalBodyForce.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rotationalbodyforcepyc.htm?contextscope=all"
-"#simaker-rotationalbodyforcesetvaluespyc>`__."
+"Check `RotationalBodyForce.setValues on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"rotationalbodyforcepyc.htm?contextscope=all#simaker-"
+"rotationalbodyforcesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValuesInStep:1 of
@@ -6404,9 +6508,10 @@ msgstr ""
 
 #: abaqus.Load.RotationalBodyForce.RotationalBodyForce.setValuesInStep:5 of
 msgid ""
-"Check `RotationalBodyForce.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rotationalbodyforcepyc.htm?contextscope=all"
-"#simaker-rotationalbodyforcesetvaluesinsteppyc>`__."
+"Check `RotationalBodyForce.setValuesInStep on help.3ds.com/2018 <https://h"
+"elp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"rotationalbodyforcepyc.htm?contextscope=all#simaker-"
+"rotationalbodyforcesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad:1 of
@@ -6417,15 +6522,16 @@ msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:1 of
 msgid ""
-"This method modifies the data for an existing ShellEdgeLoad object in the"
-" step where it is created."
+"This method modifies the data for an existing ShellEdgeLoad object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValues:5 of
 msgid ""
-"Check `ShellEdgeLoad.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shelledgeloadpyc.htm?contextscope=all"
-"#simaker-shelledgeloadsetvaluespyc>`__."
+"Check `ShellEdgeLoad.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"shelledgeloadpyc.htm?contextscope=all#simaker-"
+"shelledgeloadsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep:1 of
@@ -6436,9 +6542,10 @@ msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep:5 of
 msgid ""
-"Check `ShellEdgeLoad.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shelledgeloadpyc.htm?contextscope=all"
-"#simaker-shelledgeloadsetvaluesinsteppyc>`__."
+"Check `ShellEdgeLoad.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"shelledgeloadpyc.htm?contextscope=all#simaker-"
+"shelledgeloadsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep:8
@@ -6451,8 +6558,8 @@ msgstr ""
 #: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad.setValuesInStep:11
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep:10 of
 msgid ""
-"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the load"
-" magnitude. UNCHANGED should be used if the magnitude is propagated from "
+"A Float, a Complex, or the SymbolicConstant UNCHANGED specifying the load "
+"magnitude. UNCHANGED should be used if the magnitude is propagated from "
 "the previous analysis step."
 msgstr ""
 
@@ -6470,9 +6577,9 @@ msgstr ""
 
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValues:5 of
 msgid ""
-"Check `SubmodelSB.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelsbpyc.htm?contextscope=all"
-"#simaker-submodelsbsetvaluespyc>`__."
+"Check `SubmodelSB.setValues on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelsbpyc.htm?contextscope=all#simaker-submodelsbsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValuesInStep:1 of
@@ -6483,9 +6590,10 @@ msgstr ""
 
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValuesInStep:5 of
 msgid ""
-"Check `SubmodelSB.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelsbpyc.htm?contextscope=all"
-"#simaker-submodelsbsetvaluesinsteppyc>`__."
+"Check `SubmodelSB.setValuesInStep on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelsbpyc.htm?contextscope=all#simaker-"
+"submodelsbsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SubmodelSB.SubmodelSB.setValuesInStep:10 of
@@ -6526,22 +6634,24 @@ msgstr ""
 
 #: abaqus.Load.SubstructureLoad.SubstructureLoad.setValues:5 of
 msgid ""
-"Check `SubstructureLoad.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructureloadpyc.htm?contextscope=all"
-"#simaker-substructureloadsetvaluespyc>`__."
+"Check `SubstructureLoad.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"substructureloadpyc.htm?contextscope=all#simaker-"
+"substructureloadsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SubstructureLoad.SubstructureLoad.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing "
-"SubstructureLoad object in the specified step."
+"This method modifies the propagating data for an existing SubstructureLoad"
+" object in the specified step."
 msgstr ""
 
 #: abaqus.Load.SubstructureLoad.SubstructureLoad.setValuesInStep:5 of
 msgid ""
-"Check `SubstructureLoad.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructureloadpyc.htm?contextscope=all"
-"#simaker-substructureloadsetvaluesinsteppyc>`__."
+"Check `SubstructureLoad.setValuesInStep on help.3ds.com/2018 <https://help"
+".3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"substructureloadpyc.htm?contextscope=all#simaker-"
+"substructureloadsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceCharge.SurfaceCharge:1 of
@@ -6552,15 +6662,16 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCharge.SurfaceCharge.setValues:1 of
 msgid ""
-"This method modifies the data for an existing SurfaceCharge object in the"
-" step where it is created."
+"This method modifies the data for an existing SurfaceCharge object in the "
+"step where it is created."
 msgstr ""
 
 #: abaqus.Load.SurfaceCharge.SurfaceCharge.setValues:5 of
 msgid ""
-"Check `SurfaceCharge.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacechargepyc.htm?contextscope=all"
-"#simaker-surfacechargesetvaluespyc>`__."
+"Check `SurfaceCharge.setValues on help.3ds.com/2018 <https://help.3ds.com/"
+"2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacechargepyc.htm?contextscope=all#simaker-"
+"surfacechargesetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceCharge.SurfaceCharge.setValuesInStep:1 of
@@ -6571,9 +6682,10 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCharge.SurfaceCharge.setValuesInStep:5 of
 msgid ""
-"Check `SurfaceCharge.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacechargepyc.htm?contextscope=all"
-"#simaker-surfacechargesetvaluesinsteppyc>`__."
+"Check `SurfaceCharge.setValuesInStep on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacechargepyc.htm?contextscope=all#simaker-"
+"surfacechargesetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux:1 of
@@ -6591,9 +6703,10 @@ msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValues:5 of
 msgid ""
-"Check `SurfaceConcentrationFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceconcentrationfluxpyc.htm?contextscope=all"
-"#simaker-surfaceconcentrationfluxsetvaluespyc>`__."
+"Check `SurfaceConcentrationFlux.setValues on help.3ds.com/2018 <https://he"
+"lp.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceconcentrationfluxpyc.htm?contextscope=all#simaker-"
+"surfaceconcentrationfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValuesInStep:1
@@ -6606,9 +6719,10 @@ msgstr ""
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValuesInStep:5
 #: of
 msgid ""
-"Check `SurfaceConcentrationFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceconcentrationfluxpyc.htm?contextscope=all"
-"#simaker-surfaceconcentrationfluxsetvaluesinsteppyc>`__."
+"Check `SurfaceConcentrationFlux.setValuesInStep on help.3ds.com/2018 <http"
+"s://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simak"
+"er-c-surfaceconcentrationfluxpyc.htm?contextscope=all#simaker-"
+"surfaceconcentrationfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux.setValuesInStep:8
@@ -6633,15 +6747,16 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValues:1 of
 msgid ""
-"This method modifies the data for an existing SurfaceCurrent object in "
-"the step where it is created."
+"This method modifies the data for an existing SurfaceCurrent object in the"
+" step where it is created."
 msgstr ""
 
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValues:5 of
 msgid ""
-"Check `SurfaceCurrent.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentpyc.htm?contextscope=all"
-"#simaker-surfacecurrentsetvaluespyc>`__."
+"Check `SurfaceCurrent.setValues on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentpyc.htm?contextscope=all#simaker-"
+"surfacecurrentsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValuesInStep:1 of
@@ -6652,9 +6767,10 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCurrent.SurfaceCurrent.setValuesInStep:5 of
 msgid ""
-"Check `SurfaceCurrent.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentpyc.htm?contextscope=all"
-"#simaker-surfacecurrentsetvaluesinsteppyc>`__."
+"Check `SurfaceCurrent.setValuesInStep on help.3ds.com/2018 <https://help.3"
+"ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentpyc.htm?contextscope=all#simaker-"
+"surfacecurrentsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity:1 of
@@ -6665,15 +6781,16 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValues:1 of
 msgid ""
-"This method modifies the data for an existing SurfaceCurrentDensity "
-"object in the step where it is created."
+"This method modifies the data for an existing SurfaceCurrentDensity object"
+" in the step where it is created."
 msgstr ""
 
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValues:5 of
 msgid ""
-"Check `SurfaceCurrentDensity.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentdensitypyc.htm?contextscope=all"
-"#simaker-surfacecurrentdensitysetvaluespyc>`__."
+"Check `SurfaceCurrentDensity.setValues on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentdensitypyc.htm?contextscope=all#simaker-"
+"surfacecurrentdensitysetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValuesInStep:1 of
@@ -6684,16 +6801,16 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity.setValuesInStep:5 of
 msgid ""
-"Check `SurfaceCurrentDensity.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentdensitypyc.htm?contextscope=all"
-"#simaker-surfacecurrentdensitysetvaluesinsteppyc>`__."
+"Check `SurfaceCurrentDensity.setValuesInStep on help.3ds.com/2018 <https:/"
+"/help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-surfacecurrentdensitypyc.htm?contextscope=all#simaker-"
+"surfacecurrentdensitysetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux:1 of
 msgid ""
-"The SurfaceHeatFlux object defines surface heat flux from a region or "
-"into a region. The SurfaceHeatFlux object is derived from the Load "
-"object."
+"The SurfaceHeatFlux object defines surface heat flux from a region or into"
+" a region. The SurfaceHeatFlux object is derived from the Load object."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValues:1 of
@@ -6704,28 +6821,30 @@ msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValues:5 of
 msgid ""
-"Check `SurfaceHeatFlux.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceheatfluxpyc.htm?contextscope=all"
-"#simaker-surfaceheatfluxsetvaluespyc>`__."
+"Check `SurfaceHeatFlux.setValues on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceheatfluxpyc.htm?contextscope=all#simaker-"
+"surfaceheatfluxsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing SurfaceHeatFlux"
-" object in the specified step."
+"This method modifies the propagating data for an existing SurfaceHeatFlux "
+"object in the specified step."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValuesInStep:5 of
 msgid ""
-"Check `SurfaceHeatFlux.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceheatfluxpyc.htm?contextscope=all"
-"#simaker-surfaceheatfluxsetvaluesinsteppyc>`__."
+"Check `SurfaceHeatFlux.setValuesInStep on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceheatfluxpyc.htm?contextscope=all#simaker-"
+"surfaceheatfluxsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux.setValuesInStep:8 of
 msgid ""
-"A String specifying the name of the step in which the surface heat flux "
-"is modified."
+"A String specifying the name of the step in which the surface heat flux is"
+" modified."
 msgstr ""
 
 #: ../../docstring
@@ -6736,8 +6855,8 @@ msgstr ""
 
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid:1 of
 msgid ""
-"The SurfacePoreFluid object defines surface pore fluid flow from a region"
-" or into a region. The SurfacePoreFluid object is derived from the Load "
+"The SurfacePoreFluid object defines surface pore fluid flow from a region "
+"or into a region. The SurfacePoreFluid object is derived from the Load "
 "object."
 msgstr ""
 
@@ -6749,22 +6868,24 @@ msgstr ""
 
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValues:5 of
 msgid ""
-"Check `SurfacePoreFluid.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceporefluidpyc.htm?contextscope=all"
-"#simaker-surfaceporefluidsetvaluespyc>`__."
+"Check `SurfacePoreFluid.setValues on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceporefluidpyc.htm?contextscope=all#simaker-"
+"surfaceporefluidsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing "
-"SurfacePoreFluid object in the specified step."
+"This method modifies the propagating data for an existing SurfacePoreFluid"
+" object in the specified step."
 msgstr ""
 
 #: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid.setValuesInStep:5 of
 msgid ""
-"Check `SurfacePoreFluid.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceporefluidpyc.htm?contextscope=all"
-"#simaker-surfaceporefluidsetvaluesinsteppyc>`__."
+"Check `SurfacePoreFluid.setValuesInStep on help.3ds.com/2018 <https://help"
+".3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceporefluidpyc.htm?contextscope=all#simaker-"
+"surfaceporefluidsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -6787,22 +6908,24 @@ msgstr ""
 
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValues:5 of
 msgid ""
-"Check `SurfaceTraction.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacetractionpyc.htm?contextscope=all"
-"#simaker-surfacetractionsetvaluespyc>`__."
+"Check `SurfaceTraction.setValues on help.3ds.com/2018 <https://help.3ds.co"
+"m/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacetractionpyc.htm?contextscope=all#simaker-"
+"surfacetractionsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep:1 of
 msgid ""
-"This method modifies the propagating data for an existing SurfaceTraction"
-" object in the specified step."
+"This method modifies the propagating data for an existing SurfaceTraction "
+"object in the specified step."
 msgstr ""
 
 #: abaqus.Load.SurfaceTraction.SurfaceTraction.setValuesInStep:5 of
 msgid ""
-"Check `SurfaceTraction.setValuesInStep on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacetractionpyc.htm?contextscope=all"
-"#simaker-surfacetractionsetvaluesinsteppyc>`__."
+"Check `SurfaceTraction.setValuesInStep on help.3ds.com/2018 <https://help."
+"3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacetractionpyc.htm?contextscope=all#simaker-"
+"surfacetractionsetvaluesinsteppyc>`__."
 msgstr ""
 
 #: abaqus.Load.LoadStep.LoadStep:1 of
@@ -6815,61 +6938,62 @@ msgstr ""
 
 #: abaqus.Load.MomentState.MomentState:1 of
 msgid ""
-"The MomentState object stores the propagating data for a moment in a "
-"step. One instance of this object is created internally by the Moment "
-"object for each step. The instance is also deleted internally by the "
-"Moment object. The MomentState object has no constructor or methods. The "
+"The MomentState object stores the propagating data for a moment in a step."
+" One instance of this object is created internally by the Moment object "
+"for each step. The instance is also deleted internally by the Moment "
+"object. The MomentState object has no constructor or methods. The "
 "MomentState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.MomentState.MomentState:18 of
 msgid ""
-"Check `MomentState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-momentstatepyc.htm?contextscope=all>`__."
+"Check `MomentState on help.3ds.com/2018 <https://help.3ds.com/2018/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"momentstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.MomentState.MomentState.cm1:1 of
-msgid "A Float or a Complex specifying the load component in the 4-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 4-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.MomentState.MomentState.cm1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 4-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 4-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.MomentState.MomentState.cm2:1 of
-msgid "A Float or a Complex specifying the load component in the 5-direction."
+msgid ""
+"A Float or a Complex specifying the load component in the 5-direction."
 msgstr ""
 
 #: ../../docstring abaqus.Load.MomentState.MomentState.cm2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 5-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 5-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.MomentState.MomentState.cm3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" in the 6-direction. Possible values are UNSET, SET, UNCHANGED, and "
-"FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"in the 6-direction. Possible values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: abaqus.Load.PEGLoadState.PEGLoadState:1 of
 msgid ""
 "The PEGLoadState object stores the propagating data for a concentrated "
-"force in a step. One instance of this object is created internally by the"
-" PEGLoad object for each step. The instance is also deleted internally by"
-" the PEGLoad object. The PEGLoadState object has no constructor or "
-"methods. The PEGLoadState object is derived from the LoadState object."
+"force in a step. One instance of this object is created internally by the "
+"PEGLoad object for each step. The instance is also deleted internally by "
+"the PEGLoad object. The PEGLoadState object has no constructor or methods."
+" The PEGLoadState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.PEGLoadState.PEGLoadState:18 of
 msgid ""
-"Check `PEGLoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pegloadstatepyc.htm?contextscope=all>`__."
+"Check `PEGLoadState on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pegloadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PEGLoadState.PEGLoadState.comp1:1 of
@@ -6880,23 +7004,23 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.PEGLoadState.PEGLoadState.comp1State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" at dof 1 of reference node 1. Possible values are UNSET, SET, UNCHANGED,"
-" and FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"at dof 1 of reference node 1. Possible values are UNSET, SET, UNCHANGED, "
+"and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PEGLoadState.PEGLoadState.comp2State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" at dof 1 of reference node 2. Possible values are UNSET, SET, UNCHANGED,"
-" and FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"at dof 1 of reference node 2. Possible values are UNSET, SET, UNCHANGED, "
+"and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PEGLoadState.PEGLoadState.comp3State:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load component"
-" at dof 2 of reference node 2. Possible values are UNSET, SET, UNCHANGED,"
-" and FREED."
+"A SymbolicConstant specifying the propagation state of the load component "
+"at dof 2 of reference node 2. Possible values are UNSET, SET, UNCHANGED, "
+"and FREED."
 msgstr ""
 
 #: abaqus.Load.PipePressureState.PipePressureState:1 of
@@ -6904,9 +7028,9 @@ msgid ""
 "The PipePressureState object stores the propagating data for a pipe "
 "pressure in a step. One instance of this object is created internally by "
 "the PipePressure object for each step. The instance is also deleted "
-"internally by the PipePressure object. The PipePressureState object has "
-"no constructor or methods. The PipePressureState object is derived from "
-"the LoadState object."
+"internally by the PipePressure object. The PipePressureState object has no"
+" constructor or methods. The PipePressureState object is derived from the "
+"LoadState object."
 msgstr ""
 
 #: abaqus.Load.PipePressureState.PipePressureState:15
@@ -6919,8 +7043,9 @@ msgstr ""
 
 #: abaqus.Load.PipePressureState.PipePressureState:19 of
 msgid ""
-"Check `PipePressureState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipepressurestatepyc.htm?contextscope=all>`__."
+"Check `PipePressureState on help.3ds.com/2018 <https://help.3ds.com/2018/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pipepressurestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PipePressureState.PipePressureState.hReference:1
@@ -6947,8 +7072,8 @@ msgstr ""
 #: ../../docstring abaqus.Load.PipePressureState.PipePressureState.hZeroState:1
 #: abaqus.Load.PressureState.PressureState.hZeroState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of **hZero**. "
-"Possible values are UNSET, SET, UNCHANGED, and FREED."
+"A SymbolicConstant specifying the propagation state of **hZero**. Possible"
+" values are UNSET, SET, UNCHANGED, and FREED."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PipePressureState.PipePressureState.magnitude:1
@@ -6969,8 +7094,9 @@ msgstr ""
 
 #: abaqus.Load.PressureState.PressureState:19 of
 msgid ""
-"Check `PressureState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pressurestatepyc.htm?contextscope=all>`__."
+"Check `PressureState on help.3ds.com/2018 <https://help.3ds.com/2018/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"pressurestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PressureState.PressureState.hReference:1 of
@@ -6981,8 +7107,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Load.PressureState.PressureState.hZero:1 of
 msgid ""
-"A Float specifying the height of the zero pressure level when the "
-"pressure **distributionType** = HYDROSTATIC."
+"A Float specifying the height of the zero pressure level when the pressure"
+" **distributionType** = HYDROSTATIC."
 msgstr ""
 
 #: ../../docstring abaqus.Load.PressureState.PressureState.magnitudeState:1 of
@@ -7003,24 +7129,26 @@ msgstr ""
 
 #: abaqus.Load.RotationalBodyForceState.RotationalBodyForceState:19 of
 msgid ""
-"Check `RotationalBodyForceState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rotationalbodyforcestatepyc.htm?contextscope=all>`__."
+"Check `RotationalBodyForceState on help.3ds.com/2018 <https://help.3ds.com"
+"/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"rotationalbodyforcestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState:1 of
 msgid ""
 "The ShellEdgeLoadState object stores the propagating data for a "
 "ShellEdgeLoad object in a step. One instance of this object is created "
-"internally by the ShellEdgeLoad object for each step. The instance is "
-"also deleted internally by the ShellEdgeLoad object. The "
-"ShellEdgeLoadState object has no constructor or methods. The "
-"ShellEdgeLoadState object is derived from the LoadState object."
+"internally by the ShellEdgeLoad object for each step. The instance is also"
+" deleted internally by the ShellEdgeLoad object. The ShellEdgeLoadState "
+"object has no constructor or methods. The ShellEdgeLoadState object is "
+"derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState:19 of
 msgid ""
-"Check `ShellEdgeLoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shelledgeloadstatepyc.htm?contextscope=all>`__."
+"Check `ShellEdgeLoadState on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"shelledgeloadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -7028,18 +7156,17 @@ msgstr ""
 #: abaqus.Load.SubstructureLoadState.SubstructureLoadState.magnitudeState:1
 #: abaqus.Load.SurfaceTractionState.SurfaceTractionState.magnitudeState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the load "
-"magnitude. Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
+"A SymbolicConstant specifying the propagation state of the load magnitude."
+" Possible values are UNSET, SET, UNCHANGED, and MODIFIED."
 msgstr ""
 
 #: abaqus.Load.SubmodelSBState.SubmodelSBState:1 of
 msgid ""
-"The SubmodelSBState object stores the propagating data for a Submodel "
-"load in a step. One instance of this object is created internally by the "
+"The SubmodelSBState object stores the propagating data for a Submodel load"
+" in a step. One instance of this object is created internally by the "
 "SubmodelSB object for each step. The instance is also deleted internally "
-"by the SubmodelSB object. The SubmodelSBState object has no constructor "
-"or methods. The SubmodelSBState object is derived from the LoadState "
-"object."
+"by the SubmodelSB object. The SubmodelSBState object has no constructor or"
+" methods. The SubmodelSBState object is derived from the LoadState object."
 msgstr ""
 
 #: abaqus.Load.SubmodelSBState.SubmodelSBState:15 of
@@ -7048,8 +7175,9 @@ msgstr ""
 
 #: abaqus.Load.SubmodelSBState.SubmodelSBState:19 of
 msgid ""
-"Check `SubmodelSBState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-submodelsbstatepyc.htm?contextscope=all>`__."
+"Check `SubmodelSBState on help.3ds.com/2018 <https://help.3ds.com/2018/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"submodelsbstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -7070,8 +7198,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Load.SubmodelSBState.SubmodelSBState.globalStepState:1 of
 msgid ""
-"A SymbolicConstant specifying the propagation state of the **globalStep**"
-" member. Possible values are SET and UNCHANGED."
+"A SymbolicConstant specifying the propagation state of the **globalStep** "
+"member. Possible values are SET and UNCHANGED."
 msgstr ""
 
 #: abaqus.Load.SubstructureLoadState.SubstructureLoadState:1 of
@@ -7090,23 +7218,25 @@ msgstr ""
 
 #: abaqus.Load.SubstructureLoadState.SubstructureLoadState:18 of
 msgid ""
-"Check `SubstructureLoadState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructureloadstatepyc.htm?contextscope=all>`__."
+"Check `SubstructureLoadState on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"substructureloadstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Load.SubstructureLoadState.SubstructureLoadState.loadCaseNames:1 of
-msgid "A tuple of strings specifying the names of the load cases to be activated."
+msgid ""
+"A tuple of strings specifying the names of the load cases to be activated."
 msgstr ""
 
 #: abaqus.Load.SurfaceChargeState.SurfaceChargeState:1 of
 msgid ""
 "The SurfaceChargeState object stores the propagating data of a surface "
-"charge in a step. One instance of this object is created internally by "
-"the SurfaceCharge object for each step. The instance is also deleted "
-"internally by the SurfaceCharge object. The SurfaceChargeState object has"
-" no constructor or methods. The SurfaceChargeState object is derived from"
-" the LoadState object."
+"charge in a step. One instance of this object is created internally by the"
+" SurfaceCharge object for each step. The instance is also deleted "
+"internally by the SurfaceCharge object. The SurfaceChargeState object has "
+"no constructor or methods. The SurfaceChargeState object is derived from "
+"the LoadState object."
 msgstr ""
 
 #: abaqus.Load.SurfaceChargeState.SurfaceChargeState:15 of
@@ -7115,19 +7245,20 @@ msgstr ""
 
 #: abaqus.Load.SurfaceChargeState.SurfaceChargeState:18 of
 msgid ""
-"Check `SurfaceChargeState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacechargestatepyc.htm?contextscope=all>`__."
+"Check `SurfaceChargeState on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacechargestatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState:1 of
 msgid ""
-"The SurfaceConcentrationFluxState object stores the propagating data for "
-"a SurfaceConcentrationFlux object in a step. One instance of this object "
-"is created internally by the SurfaceConcentrationFlux object for each "
-"step. The instance is also deleted internally by the "
-"SurfaceConcentrationFlux object. The SurfaceConcentrationFluxState object"
-" has no constructor or methods. The SurfaceConcentrationFluxState object "
-"is derived from the LoadState object."
+"The SurfaceConcentrationFluxState object stores the propagating data for a"
+" SurfaceConcentrationFlux object in a step. One instance of this object is"
+" created internally by the SurfaceConcentrationFlux object for each step. "
+"The instance is also deleted internally by the SurfaceConcentrationFlux "
+"object. The SurfaceConcentrationFluxState object has no constructor or "
+"methods. The SurfaceConcentrationFluxState object is derived from the "
+"LoadState object."
 msgstr ""
 
 #: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState:16
@@ -7138,8 +7269,9 @@ msgstr ""
 #: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState:19
 #: of
 msgid ""
-"Check `SurfaceConcentrationFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceconcentrationfluxstatepyc.htm?contextscope=all>`__."
+"Check `SurfaceConcentrationFluxState on help.3ds.com/2018 <https://help.3d"
+"s.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceconcentrationfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -7167,15 +7299,16 @@ msgstr ""
 
 #: abaqus.Load.SurfaceCurrentState.SurfaceCurrentState:18 of
 msgid ""
-"Check `SurfaceCurrentState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacecurrentstatepyc.htm?contextscope=all>`__."
+"Check `SurfaceCurrentState on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacecurrentstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState:1 of
 msgid ""
-"The SurfaceHeatFluxState object stores the propagating data for a surface"
-" SurfaceHeatFlux object in a step. One instance of this object is created"
-" internally by the SurfaceHeatFlux object for each step. The instance is "
+"The SurfaceHeatFluxState object stores the propagating data for a surface "
+"SurfaceHeatFlux object in a step. One instance of this object is created "
+"internally by the SurfaceHeatFlux object for each step. The instance is "
 "also deleted internally by the SurfaceHeatFlux object. The "
 "SurfaceHeatFluxState object has no constructor or methods. The "
 "SurfaceHeatFluxState object is derived from the LoadState object."
@@ -7183,8 +7316,9 @@ msgstr ""
 
 #: abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState:19 of
 msgid ""
-"Check `SurfaceHeatFluxState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceheatfluxstatepyc.htm?contextscope=all>`__."
+"Check `SurfaceHeatFluxState on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceheatfluxstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -7197,9 +7331,9 @@ msgstr ""
 #: abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState:1 of
 msgid ""
 "The SurfacePoreFluidState object stores the propagating data for a "
-"SurfacePoreFluid object in a step. One instance of this object is created"
-" internally by the SurfacePoreFluid object for each step. The instance is"
-" also deleted internally by the SurfacePoreFluid object. The "
+"SurfacePoreFluid object in a step. One instance of this object is created "
+"internally by the SurfacePoreFluid object for each step. The instance is "
+"also deleted internally by the SurfacePoreFluid object. The "
 "SurfacePoreFluidState object has no constructor or methods. The "
 "SurfacePoreFluidState object is derived from the LoadState object."
 msgstr ""
@@ -7210,8 +7344,9 @@ msgstr ""
 
 #: abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState:19 of
 msgid ""
-"Check `SurfacePoreFluidState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfaceporefluidstatepyc.htm?contextscope=all>`__."
+"Check `SurfacePoreFluidState on help.3ds.com/2018 <https://help.3ds.com/20"
+"18/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfaceporefluidstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -7234,8 +7369,9 @@ msgstr ""
 
 #: abaqus.Load.SurfaceTractionState.SurfaceTractionState:20 of
 msgid ""
-"Check `SurfaceTractionState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacetractionstatepyc.htm?contextscope=all>`__."
+"Check `SurfaceTractionState on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"surfacetractionstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #~ msgid ""

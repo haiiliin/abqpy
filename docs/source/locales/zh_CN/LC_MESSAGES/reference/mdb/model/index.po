@@ -43,27 +43,27 @@ msgstr ""
 msgid ""
 "Bases: :py:class:`~abaqus.Adaptivity.AdaptivityModel.AdaptivityModel`, "
 ":py:class:`~abaqus.Amplitude.AmplitudeModel.AmplitudeModel`, "
-":py:class:`~abaqus.Assembly.AssemblyModel.AssemblyModel`, "
-":py:class:`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel`,"
-" :py:class:`~abaqus.Calibration.CalibrationModel.CalibrationModel`, "
+":py:class:`~abaqus.Assembly.AssemblyModel.AssemblyModel`, :py:class:`~abaq"
+"us.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel`, "
+":py:class:`~abaqus.Calibration.CalibrationModel.CalibrationModel`, "
 ":py:class:`~abaqus.Constraint.ConstraintModel.ConstraintModel`, "
 ":py:class:`~abaqus.Filter.FilterModel.FilterModel`, "
 ":py:class:`~abaqus.Interaction.InteractionModel.InteractionModel`, "
 ":py:class:`~abaqus.Load.LoadModel.LoadModel`, "
-":py:class:`~abaqus.Material.MaterialModel.MaterialModel`, "
-":py:class:`~abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel`,"
-" :py:class:`~abaqus.Part.PartModel.PartModel`, "
-":py:class:`~abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel`,"
-" "
-":py:class:`~abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel`,"
-" :py:class:`~abaqus.StepOutput.OutputModel.OutputModel`, "
+":py:class:`~abaqus.Material.MaterialModel.MaterialModel`, :py:class:`~abaq"
+"us.Optimization.OptimizationTaskModel.OptimizationTaskModel`, "
+":py:class:`~abaqus.Part.PartModel.PartModel`, :py:class:`~abaqus.Predefine"
+"dField.PredefinedFieldModel.PredefinedFieldModel`, :py:class:`~abaqus.Beam"
+"SectionProfile.BeamSectionProfileModel.BeamSectionProfileModel`, "
+":py:class:`~abaqus.StepOutput.OutputModel.OutputModel`, "
 ":py:class:`~abaqus.Section.SectionModel.SectionModel`, "
 ":py:class:`~abaqus.Sketcher.SketchModel.SketchModel`, "
 ":py:class:`~abaqus.Step.StepModel.StepModel`"
 msgstr ""
 
 #: abaqus.Model.Model.Model:1 abaqus.Model.ModelBase.ModelBase:1 of
-msgid "Abaqus creates a Model object named `Model-1` when a session is started."
+msgid ""
+"Abaqus creates a Model object named `Model-1` when a session is started."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock:10 abaqus.Model.Model.Model:4
@@ -81,8 +81,9 @@ msgstr ""
 
 #: abaqus.Model.Model.Model:13 of
 msgid ""
-"Check `Model on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `Model on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIM"
+"ULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 abaqus.Model.Model.Model:15
@@ -150,16 +151,15 @@ msgstr ""
 #: abaqus.Model.ModelBase.ModelBase.setValues:17
 #: abaqus.Model.ModelBase.ModelBase.waveFormulation:1 of
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
 "TOTAL. The default value is NOT_SET."
 msgstr ""
 
 #: abaqus.Model.Model.Model:36 abaqus.Model.ModelBase.ModelBase:36 of
 msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
+"A SymbolicConstant specifying the analysis model type. Possible values are"
+" STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT."
 msgstr ""
 
 #: ../../docstring abaqus.Model.Model.Model:39
@@ -173,8 +173,8 @@ msgstr ""
 
 #: abaqus.Model.Model.Model:41 abaqus.Model.ModelBase.ModelBase:41 of
 msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Model.Model.Model:44 abaqus.Model.ModelBase.ModelBase:44 of
@@ -185,8 +185,8 @@ msgstr ""
 
 #: abaqus.Model.Model.Model:47 abaqus.Model.ModelBase.ModelBase:47 of
 msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
+"A boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model. The default value is ON."
 msgstr ""
 
 #: abaqus.Model.Model.Model abaqus.Model.ModelBase.ModelBase
@@ -236,7 +236,8 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgid ""
+":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -251,12 +252,13 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems."
+"A SymbolicConstant specifying the type of incident wave formulation to be "
+"used in acoustic problems."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgid ""
+":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -271,8 +273,8 @@ msgstr ""
 
 #: ../../None:52:<autosummary>:1
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -297,18 +299,20 @@ msgstr ""
 #: abaqus.Model.ModelBase.ModelBase.endRestartStep:1
 #: abaqus.Model.ModelBase.ModelBase.setValues:30 of
 msgid ""
-"A Boolean specifying that the step specified by **restartStep** should be"
-" terminated at the increment specified by **restartIncrement**."
+"A Boolean specifying that the step specified by **restartStep** should be "
+"terminated at the increment specified by **restartIncrement**."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgid ""
+":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.setValues:35
 #: abaqus.Model.ModelBase.ModelBase.shellToSolid:1 of
-msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgid ""
+"A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -325,7 +329,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgid ""
+":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -339,11 +344,13 @@ msgstr ""
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.restartJob:1
 #: abaqus.Model.ModelBase.ModelBase.setValues:23 of
-msgid "A String specifying the name of the job that generated the restart data."
+msgid ""
+"A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgid ""
+":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -362,8 +369,8 @@ msgstr ""
 #: abaqus.Model.ModelBase.ModelBase.globalJob:1
 #: abaqus.Model.ModelBase.ModelBase.setValues:33 of
 msgid ""
-"A String specifying the name of the job that generated the results for "
-"the global model."
+"A String specifying the name of the job that generated the results for the"
+" global model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -375,8 +382,8 @@ msgstr ""
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.copyConstraints:1 of
 msgid ""
-"A boolean specifying the status of constraints created in a model, in the"
-" model which instances this model."
+"A boolean specifying the status of constraints created in a model, in the "
+"model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -401,12 +408,13 @@ msgstr ""
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.copyInteractions:1 of
 msgid ""
-"A boolean specifying the status of interactions created in a model, in "
-"the model which instances this model."
+"A boolean specifying the status of interactions created in a model, in the"
+" model which instances this model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgid ""
+":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -415,7 +423,8 @@ msgid "A KeywordBlock object."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgid ""
+":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -453,7 +462,8 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgid ""
+":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -495,7 +505,8 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgid ""
+":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -556,21 +567,21 @@ msgstr ""
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.linkedInstances:1 of
 msgid ""
-"A tuple of tuples of Strings specifying the linked child PartInstance "
-"name in the current model to the corresponding parent PartInstance name "
-"in a different model."
+"A tuple of tuples of Strings specifying the linked child PartInstance name"
+" in the current model to the corresponding parent PartInstance name in a "
+"different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgid ""
+":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
 #: abaqus.Model.ModelBase.ModelBase.linkedParts:1 of
 msgid ""
-"A tuple of tuples of Strings specifying the linked child Part name in the"
-" current model to the corresponding parent Part name in a different "
-"model."
+"A tuple of tuples of Strings specifying the linked child Part name in the "
+"current model to the corresponding parent Part name in a different model."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
@@ -592,7 +603,8 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:52:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgid ""
+":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:52:<autosummary>:1 ../../docstring
@@ -755,15 +767,14 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid ""
-"This method remeshes the model using the active remesh rules in the model"
-" and the error indicator results from a previous analysis."
+"This method remeshes the model using the active remesh rules in the model "
+"and the error indicator results from a previous analysis."
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid ""
-":py:obj:`AdaptiveMeshConstraint "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint>`\\"
-" \\(name\\, category\\, region\\)"
+":py:obj:`AdaptiveMeshConstraint <abaqus.Adaptivity.AdaptivityModel.Adaptiv"
+"ityModel.AdaptiveMeshConstraint>`\\ \\(name\\, category\\, region\\)"
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -785,9 +796,9 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid ""
-":py:obj:`DisplacementAdaptiveMeshConstraint "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint>`\\"
-" \\(name\\, ...\\)"
+":py:obj:`DisplacementAdaptiveMeshConstraint <abaqus.Adaptivity.AdaptivityM"
+"odel.AdaptivityModel.DisplacementAdaptiveMeshConstraint>`\\ \\(name\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -807,9 +818,9 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid ""
-":py:obj:`VelocityAdaptiveMeshConstraint "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`VelocityAdaptiveMeshConstraint <abaqus.Adaptivity.AdaptivityModel"
+".AdaptivityModel.VelocityAdaptiveMeshConstraint>`\\ \\(name\\, ...\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:8:<autosummary>:1
@@ -895,9 +906,9 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
-":py:obj:`SolutionDependentAmplitude "
-"<abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude>`\\"
-" \\(name\\[\\, initial\\, ...\\]\\)"
+":py:obj:`SolutionDependentAmplitude <abaqus.Amplitude.AmplitudeModel.Ampli"
+"tudeModel.SolutionDependentAmplitude>`\\ \\(name\\[\\, initial\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -967,9 +978,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AccelerationBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`AccelerationBaseMotionBC <abaqus.BoundaryCondition.BoundaryCondit"
+"ionModel.BoundaryConditionModel.AccelerationBaseMotionBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -978,9 +989,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AccelerationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`AccelerationBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.AccelerationBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -989,9 +1000,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`AcousticPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.AcousticPressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`AcousticPressureBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.AcousticPressureBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1000,9 +1011,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConcentrationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConcentrationBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`ConcentrationBC <abaqus.BoundaryCondition.BoundaryConditionModel."
+"BoundaryConditionModel.ConcentrationBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1011,9 +1022,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnAccelerationBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnAccelerationBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnAccelerationBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.ConnAccelerationBC>`\\ \\(name\\, "
+"createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1022,9 +1033,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnDisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnDisplacementBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnDisplacementBC <abaqus.BoundaryCondition.BoundaryConditionMod"
+"el.BoundaryConditionModel.ConnDisplacementBC>`\\ \\(name\\, "
+"createStepName\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1033,9 +1044,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ConnVelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ConnVelocityBC>`\\"
-" \\(name\\, createStepName\\[\\, ...\\]\\)"
+":py:obj:`ConnVelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.ConnVelocityBC>`\\ \\(name\\, createStepName\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1044,9 +1055,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`DisplacementBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`DisplacementBaseMotionBC <abaqus.BoundaryCondition.BoundaryCondit"
+"ionModel.BoundaryConditionModel.DisplacementBaseMotionBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1055,9 +1066,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`DisplacementBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`DisplacementBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.DisplacementBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1066,9 +1077,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ElectricPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ElectricPotentialBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`ElectricPotentialBC <abaqus.BoundaryCondition.BoundaryConditionMo"
+"del.BoundaryConditionModel.ElectricPotentialBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1077,9 +1088,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EulerianBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`EulerianBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.EulerianBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1088,9 +1099,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EulerianMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EulerianMotionBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`EulerianMotionBC <abaqus.BoundaryCondition.BoundaryConditionModel"
+".BoundaryConditionModel.EulerianMotionBC>`\\ \\(name\\, createStepName\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1099,9 +1110,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`FluidCavityPressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.FluidCavityPressureBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`FluidCavityPressureBC <abaqus.BoundaryCondition.BoundaryCondition"
+"Model.BoundaryConditionModel.FluidCavityPressureBC>`\\ \\(name\\, "
+"createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1110,9 +1121,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`MagneticVectorPotentialBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`MagneticVectorPotentialBC <abaqus.BoundaryCondition.BoundaryCondi"
+"tionModel.BoundaryConditionModel.MagneticVectorPotentialBC>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1121,9 +1132,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`MaterialFlowBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.MaterialFlowBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`MaterialFlowBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.MaterialFlowBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1132,9 +1143,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`PorePressureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PorePressureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`PorePressureBC <abaqus.BoundaryCondition.BoundaryConditionModel.B"
+"oundaryConditionModel.PorePressureBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1143,9 +1154,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`RetainedNodalDofsBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.RetainedNodalDofsBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`RetainedNodalDofsBC <abaqus.BoundaryCondition.BoundaryConditionMo"
+"del.BoundaryConditionModel.RetainedNodalDofsBC>`\\ \\(name\\, "
+"createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1154,9 +1165,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`SecondaryBaseBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SecondaryBaseBC>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`SecondaryBaseBC <abaqus.BoundaryCondition.BoundaryConditionModel."
+"BoundaryConditionModel.SecondaryBaseBC>`\\ \\(name\\, createStepName\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1165,9 +1176,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`SubmodelBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`SubmodelBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.SubmodelBC>`\\ \\(name\\, createStepName\\, region\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1176,9 +1187,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`TemperatureBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.TemperatureBC>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`TemperatureBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bo"
+"undaryConditionModel.TemperatureBC>`\\ \\(name\\, createStepName\\, "
+"region\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1187,9 +1198,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`VelocityBaseMotionBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBaseMotionBC>`\\"
-" \\(name\\, createStepName\\, dof\\)"
+":py:obj:`VelocityBaseMotionBC <abaqus.BoundaryCondition.BoundaryConditionM"
+"odel.BoundaryConditionModel.VelocityBaseMotionBC>`\\ \\(name\\, "
+"createStepName\\, dof\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1198,9 +1209,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`VelocityBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.VelocityBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`VelocityBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.VelocityBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1209,9 +1220,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`EncastreBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.EncastreBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`EncastreBC <abaqus.BoundaryCondition.BoundaryConditionModel.Bound"
+"aryConditionModel.EncastreBC>`\\ \\(name\\, createStepName\\, region\\[\\,"
+" ...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1220,9 +1231,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`PinnedBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.PinnedBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`PinnedBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.PinnedBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1231,9 +1242,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`XsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`XsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.XsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1244,9 +1255,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`YsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`YsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.YsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1257,9 +1268,9 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ZsymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZsymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`ZsymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundary"
+"ConditionModel.ZsymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
@@ -1270,41 +1281,41 @@ msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`XasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.XasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`XasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.XasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **X** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**X** axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`YasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.YasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`YasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.YasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Y** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**Y** axis."
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-":py:obj:`ZasymmBC "
-"<abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.ZasymmBC>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`ZasymmBC <abaqus.BoundaryCondition.BoundaryConditionModel.Boundar"
+"yConditionModel.ZasymmBC>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:32:<autosummary>:1
 msgid ""
-"This method creates a TypeBC object that specifies antisymmetry about the"
-" **Z** axis."
+"This method creates a TypeBC object that specifies antisymmetry about the "
+"**Z** axis."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1332,8 +1343,8 @@ msgstr ""
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`Coupling "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling>`\\ "
-"\\(name\\, surface\\, controlPoint\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling>`\\ \\(name\\,"
+" surface\\, controlPoint\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1365,8 +1376,8 @@ msgstr ""
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`Equation "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.Equation>`\\ "
-"\\(name\\, terms\\)"
+"<abaqus.Constraint.ConstraintModel.ConstraintModel.Equation>`\\ \\(name\\,"
+" terms\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1375,9 +1386,8 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1
 msgid ""
-":py:obj:`MultipointConstraint "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint>`\\"
-" \\(name\\, surface\\, ...\\[\\, ...\\]\\)"
+":py:obj:`MultipointConstraint <abaqus.Constraint.ConstraintModel.Constrain"
+"tModel.MultipointConstraint>`\\ \\(name\\, surface\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1398,8 +1408,8 @@ msgstr ""
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`ShellSolidCoupling "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling>`\\"
-" \\(name\\, shellEdge\\, solidFace\\)"
+"<abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling>`\\ "
+"\\(name\\, shellEdge\\, solidFace\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1475,9 +1485,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`getSurfaceSeparation "
-"<abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation>`\\"
-" \\(\\)"
+":py:obj:`getSurfaceSeparation <abaqus.Interaction.InteractionModel.Interac"
+"tionModel.getSurfaceSeparation>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1488,9 +1497,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`AcousticImpedance "
-"<abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance>`\\"
-" \\(name\\, createStepName\\, surface\\)"
+":py:obj:`AcousticImpedance <abaqus.Interaction.InteractionModel.Interactio"
+"nModel.AcousticImpedance>`\\ \\(name\\, createStepName\\, surface\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1511,8 +1519,8 @@ msgstr ""
 #: ../../None:26:<autosummary>:1
 msgid ""
 ":py:obj:`CavityRadiation "
-"<abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation>`\\"
-" \\(name\\, createStepName\\, surfaces\\)"
+"<abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation>`\\ "
+"\\(name\\, createStepName\\, surfaces\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1521,9 +1529,9 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`ConcentratedFilmCondition "
-"<abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedFilmCondition>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`ConcentratedFilmCondition <abaqus.Interaction.InteractionModel.In"
+"teractionModel.ConcentratedFilmCondition>`\\ \\(name\\, ...\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1532,9 +1540,9 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`ConcentratedRadiationToAmbient "
-"<abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedRadiationToAmbient>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`ConcentratedRadiationToAmbient <abaqus.Interaction.InteractionMod"
+"el.InteractionModel.ConcentratedRadiationToAmbient>`\\ \\(name\\, "
+"...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1576,9 +1584,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`ElasticFoundation "
-"<abaqus.Interaction.InteractionModel.InteractionModel.ElasticFoundation>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`ElasticFoundation <abaqus.Interaction.InteractionModel.Interactio"
+"nModel.ElasticFoundation>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1642,9 +1649,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`PressurePenetration "
-"<abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`PressurePenetration <abaqus.Interaction.InteractionModel.Interact"
+"ionModel.PressurePenetration>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1653,9 +1659,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`RadiationToAmbient "
-"<abaqus.Interaction.InteractionModel.InteractionModel.RadiationToAmbient>`\\"
-" \\(name\\, createStepName\\, ...\\)"
+":py:obj:`RadiationToAmbient <abaqus.Interaction.InteractionModel.Interacti"
+"onModel.RadiationToAmbient>`\\ \\(name\\, createStepName\\, ...\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1686,9 +1691,8 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`StdXplCosimulation "
-"<abaqus.Interaction.InteractionModel.InteractionModel.StdXplCosimulation>`\\"
-" \\(name\\, createStepName\\, region\\)"
+":py:obj:`StdXplCosimulation <abaqus.Interaction.InteractionModel.Interacti"
+"onModel.StdXplCosimulation>`\\ \\(name\\, createStepName\\, region\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1697,9 +1701,9 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`SurfaceToSurfaceContactExp "
-"<abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`SurfaceToSurfaceContactExp <abaqus.Interaction.InteractionModel.I"
+"nteractionModel.SurfaceToSurfaceContactExp>`\\ \\(name\\, ...\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1708,9 +1712,9 @@ msgstr ""
 
 #: ../../None:26:<autosummary>:1
 msgid ""
-":py:obj:`SurfaceToSurfaceContactStd "
-"<abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+":py:obj:`SurfaceToSurfaceContactStd <abaqus.Interaction.InteractionModel.I"
+"nteractionModel.SurfaceToSurfaceContactStd>`\\ \\(name\\, ...\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1720,8 +1724,8 @@ msgstr ""
 #: ../../None:26:<autosummary>:1
 msgid ""
 ":py:obj:`XFEMCrackGrowth "
-"<abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth>`\\"
-" \\(name\\, createStepName\\, crackName\\)"
+"<abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth>`\\ "
+"\\(name\\, createStepName\\, crackName\\)"
 msgstr ""
 
 #: ../../None:26:<autosummary>:1
@@ -1730,9 +1734,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`ExpContactControl "
-"<abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.ExpContactControl>`\\"
-" \\(name\\[\\, globTrkChoice\\, ...\\]\\)"
+":py:obj:`ExpContactControl <abaqus.Interaction.InteractionContactControlMo"
+"del.InteractionContactControlModel.ExpContactControl>`\\ \\(name\\[\\, "
+"globTrkChoice\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1741,9 +1745,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`StdContactControl "
-"<abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel.StdContactControl>`\\"
-" \\(name\\[\\, ...\\]\\)"
+":py:obj:`StdContactControl <abaqus.Interaction.InteractionContactControlMo"
+"del.InteractionContactControlModel.StdContactControl>`\\ \\(name\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1752,9 +1756,9 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ""
-":py:obj:`StdInitialization "
-"<abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization>`\\"
-" \\(name\\[\\, overclosureType\\, ...\\]\\)"
+":py:obj:`StdInitialization <abaqus.Interaction.InteractionContactInitializ"
+"ationModel.InteractionContactInitializationModel.StdInitialization>`\\ "
+"\\(name\\[\\, overclosureType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1763,9 +1767,9 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ""
-":py:obj:`StdStabilization "
-"<abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel.StdStabilization>`\\"
-" \\(name\\[\\, zeroDistance\\, ...\\]\\)"
+":py:obj:`StdStabilization <abaqus.Interaction.InteractionContactStabilizat"
+"ionModel.InteractionContactStabilizationModel.StdStabilization>`\\ "
+"\\(name\\[\\, zeroDistance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1774,9 +1778,9 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`AcousticImpedanceProp "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.AcousticImpedanceProp>`\\"
-" \\(name\\, tableType\\, table\\)"
+":py:obj:`AcousticImpedanceProp <abaqus.Interaction.InteractionPropertyMode"
+"l.InteractionPropertyModel.AcousticImpedanceProp>`\\ \\(name\\, "
+"tableType\\, table\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1785,9 +1789,9 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`ActuatorSensorProp "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.ActuatorSensorProp>`\\"
-" \\(name\\[\\, realProperties\\, ...\\]\\)"
+":py:obj:`ActuatorSensorProp <abaqus.Interaction.InteractionPropertyModel.I"
+"nteractionPropertyModel.ActuatorSensorProp>`\\ \\(name\\[\\, "
+"realProperties\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1796,9 +1800,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`CavityRadiationProp "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.CavityRadiationProp>`\\"
-" \\(name\\[\\, ...\\]\\)"
+":py:obj:`CavityRadiationProp <abaqus.Interaction.InteractionPropertyModel."
+"InteractionPropertyModel.CavityRadiationProp>`\\ \\(name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1807,9 +1810,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`ContactProperty "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.ContactProperty>`\\"
-" \\(name\\)"
+":py:obj:`ContactProperty <abaqus.Interaction.InteractionPropertyModel.Inte"
+"ractionPropertyModel.ContactProperty>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1818,9 +1820,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`FilmConditionProp "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FilmConditionProp>`\\"
-" \\(name\\[\\, ...\\]\\)"
+":py:obj:`FilmConditionProp <abaqus.Interaction.InteractionPropertyModel.In"
+"teractionPropertyModel.FilmConditionProp>`\\ \\(name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1829,9 +1830,9 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`FluidCavityProperty "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidCavityProperty>`\\"
-" \\(name\\[\\, definition\\, ...\\]\\)"
+":py:obj:`FluidCavityProperty <abaqus.Interaction.InteractionPropertyModel."
+"InteractionPropertyModel.FluidCavityProperty>`\\ \\(name\\[\\, "
+"definition\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1840,9 +1841,9 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`FluidExchangeProperty "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidExchangeProperty>`\\"
-" \\(name\\, dataTable\\[\\, ...\\]\\)"
+":py:obj:`FluidExchangeProperty <abaqus.Interaction.InteractionPropertyMode"
+"l.InteractionPropertyModel.FluidExchangeProperty>`\\ \\(name\\, "
+"dataTable\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1851,9 +1852,9 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`IncidentWaveProperty "
-"<abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.IncidentWaveProperty>`\\"
-" \\(name\\[\\, definition\\, ...\\]\\)"
+":py:obj:`IncidentWaveProperty <abaqus.Interaction.InteractionPropertyModel"
+".InteractionPropertyModel.IncidentWaveProperty>`\\ \\(name\\[\\, "
+"definition\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1924,8 +1925,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`BoltLoad <abaqus.Load.LoadModel.LoadModel.BoltLoad>`\\ "
-"\\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`BoltLoad <abaqus.Load.LoadModel.LoadModel.BoltLoad>`\\ \\(name\\,"
+" createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -1986,8 +1987,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`ConcPoreFluid <abaqus.Load.LoadModel.LoadModel.ConcPoreFluid>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`ConcPoreFluid <abaqus.Load.LoadModel.LoadModel.ConcPoreFluid>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2018,8 +2019,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`CoriolisForce <abaqus.Load.LoadModel.LoadModel.CoriolisForce>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`CoriolisForce <abaqus.Load.LoadModel.LoadModel.CoriolisForce>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2038,8 +2039,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`InertiaRelief <abaqus.Load.LoadModel.LoadModel.InertiaRelief>`\\"
-" \\(name\\, createStepName\\[\\, u1\\, ...\\]\\)"
+":py:obj:`InertiaRelief <abaqus.Load.LoadModel.LoadModel.InertiaRelief>`\\ "
+"\\(name\\, createStepName\\[\\, u1\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2059,8 +2060,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`LineLoad <abaqus.Load.LoadModel.LoadModel.LineLoad>`\\ "
-"\\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`LineLoad <abaqus.Load.LoadModel.LoadModel.LineLoad>`\\ \\(name\\,"
+" createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2099,8 +2100,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`Pressure <abaqus.Load.LoadModel.LoadModel.Pressure>`\\ "
-"\\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`Pressure <abaqus.Load.LoadModel.LoadModel.Pressure>`\\ \\(name\\,"
+" createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2116,8 +2117,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`ShellEdgeLoad <abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`ShellEdgeLoad <abaqus.Load.LoadModel.LoadModel.ShellEdgeLoad>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2147,8 +2148,8 @@ msgstr ""
 
 #: ../../None:37:<autosummary>:1
 msgid ""
-":py:obj:`SurfaceCharge <abaqus.Load.LoadModel.LoadModel.SurfaceCharge>`\\"
-" \\(name\\, createStepName\\, region\\, ...\\)"
+":py:obj:`SurfaceCharge <abaqus.Load.LoadModel.LoadModel.SurfaceCharge>`\\ "
+"\\(name\\, createStepName\\, region\\, ...\\)"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1
@@ -2234,9 +2235,8 @@ msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid ""
-":py:obj:`BeadTask "
-"<abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask>`\\"
-" \\(name\\[\\, algorithm\\, ...\\]\\)"
+":py:obj:`BeadTask <abaqus.Optimization.OptimizationTaskModel.OptimizationT"
+"askModel.BeadTask>`\\ \\(name\\[\\, algorithm\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2245,9 +2245,8 @@ msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid ""
-":py:obj:`ShapeTask "
-"<abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask>`\\"
-" \\(name\\[\\, absoluteStepSizeControl\\, ...\\]\\)"
+":py:obj:`ShapeTask <abaqus.Optimization.OptimizationTaskModel.Optimization"
+"TaskModel.ShapeTask>`\\ \\(name\\[\\, absoluteStepSizeControl\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2256,9 +2255,8 @@ msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid ""
-":py:obj:`SizingTask "
-"<abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask>`\\"
-" \\(name\\[\\, ...\\]\\)"
+":py:obj:`SizingTask <abaqus.Optimization.OptimizationTaskModel.Optimizatio"
+"nTaskModel.SizingTask>`\\ \\(name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2267,9 +2265,8 @@ msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid ""
-":py:obj:`TopologyTask "
-"<abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask>`\\"
-" \\(name\\[\\, algorithm\\, ...\\]\\)"
+":py:obj:`TopologyTask <abaqus.Optimization.OptimizationTaskModel.Optimizat"
+"ionTaskModel.TopologyTask>`\\ \\(name\\[\\, algorithm\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2283,14 +2280,15 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid "This method creates a Part object and places it in the parts repository."
+msgid ""
+"This method creates a Part object and places it in the parts repository."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`FluidCavityPressure "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure>`\\"
-" \\(name\\, fluidCavity\\, ...\\)"
+":py:obj:`FluidCavityPressure <abaqus.PredefinedField.PredefinedFieldModel."
+"PredefinedFieldModel.FluidCavityPressure>`\\ \\(name\\, fluidCavity\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2299,9 +2297,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`InitialState "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState>`\\"
-" \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
+":py:obj:`InitialState <abaqus.PredefinedField.PredefinedFieldModel.Predefi"
+"nedFieldModel.InitialState>`\\ \\(name\\, instances\\, fileName\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2310,9 +2308,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`KinematicHardening "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening>`\\"
-" \\(name\\, region\\[\\, ...\\]\\)"
+":py:obj:`KinematicHardening <abaqus.PredefinedField.PredefinedFieldModel.P"
+"redefinedFieldModel.KinematicHardening>`\\ \\(name\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2321,9 +2319,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`MaterialAssignment "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment>`\\"
-" \\(name\\, instanceList\\[\\, ...\\]\\)"
+":py:obj:`MaterialAssignment <abaqus.PredefinedField.PredefinedFieldModel.P"
+"redefinedFieldModel.MaterialAssignment>`\\ \\(name\\, instanceList\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2332,9 +2330,8 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`PorePressure "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure>`\\"
-" \\(name\\, region\\[\\, ...\\]\\)"
+":py:obj:`PorePressure <abaqus.PredefinedField.PredefinedFieldModel.Predefi"
+"nedFieldModel.PorePressure>`\\ \\(name\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2343,9 +2340,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`Temperature "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`Temperature <abaqus.PredefinedField.PredefinedFieldModel.Predefin"
+"edFieldModel.Temperature>`\\ \\(name\\, createStepName\\, region\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2354,9 +2351,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`Velocity "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity>`\\"
-" \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
+":py:obj:`Velocity <abaqus.PredefinedField.PredefinedFieldModel.PredefinedF"
+"ieldModel.Velocity>`\\ \\(name\\, region\\, velocity1\\, velocity2\\, "
+"...\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2365,9 +2362,9 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`Saturation "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation>`\\"
-" \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+":py:obj:`Saturation <abaqus.PredefinedField.PredefinedFieldModel.Predefine"
+"dFieldModel.Saturation>`\\ \\(name\\, region\\[\\, distributionType\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2376,9 +2373,8 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`Stress "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress>`\\"
-" \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+":py:obj:`Stress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFie"
+"ldModel.Stress>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2387,9 +2383,8 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`Field "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Field>`\\"
-" \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+":py:obj:`Field <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFiel"
+"dModel.Field>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -2398,16 +2393,15 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`VoidsRatio "
-"<abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio>`\\"
-" \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+":py:obj:`VoidsRatio <abaqus.PredefinedField.PredefinedFieldModel.Predefine"
+"dFieldModel.VoidsRatio>`\\ \\(name\\, region\\[\\, distributionType\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`beamProfilesFromOdb "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.beamProfilesFromOdb>`\\"
-" \\(fileName\\)"
+":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.BeamSectionProfile"
+"Model.BeamSectionProfileModel.beamProfilesFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2416,9 +2410,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`ArbitraryProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile>`\\"
-" \\(name\\, table\\)"
+":py:obj:`ArbitraryProfile <abaqus.BeamSectionProfile.BeamSectionProfileMod"
+"el.BeamSectionProfileModel.ArbitraryProfile>`\\ \\(name\\, table\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2427,9 +2420,9 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`BoxProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile>`\\"
-" \\(name\\, a\\, b\\, uniformThickness\\, t1\\)"
+":py:obj:`BoxProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.Bea"
+"mSectionProfileModel.BoxProfile>`\\ \\(name\\, a\\, b\\, "
+"uniformThickness\\, t1\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2438,9 +2431,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`CircularProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile>`\\"
-" \\(name\\, r\\)"
+":py:obj:`CircularProfile <abaqus.BeamSectionProfile.BeamSectionProfileMode"
+"l.BeamSectionProfileModel.CircularProfile>`\\ \\(name\\, r\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2449,9 +2441,9 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`GeneralizedProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile>`\\"
-" \\(name\\, area\\, i11\\, i12\\, ...\\)"
+":py:obj:`GeneralizedProfile <abaqus.BeamSectionProfile.BeamSectionProfileM"
+"odel.BeamSectionProfileModel.GeneralizedProfile>`\\ \\(name\\, area\\, "
+"i11\\, i12\\, ...\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2460,9 +2452,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`HexagonalProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile>`\\"
-" \\(name\\, r\\, t\\)"
+":py:obj:`HexagonalProfile <abaqus.BeamSectionProfile.BeamSectionProfileMod"
+"el.BeamSectionProfileModel.HexagonalProfile>`\\ \\(name\\, r\\, t\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2471,9 +2462,9 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`IProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile>`\\"
-" \\(name\\, l\\, h\\, b1\\, b2\\, t1\\, t2\\, t3\\)"
+":py:obj:`IProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamS"
+"ectionProfileModel.IProfile>`\\ \\(name\\, l\\, h\\, b1\\, b2\\, t1\\, "
+"t2\\, t3\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2482,9 +2473,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`LProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile>`\\"
-" \\(name\\, a\\, b\\, t1\\, t2\\)"
+":py:obj:`LProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamS"
+"ectionProfileModel.LProfile>`\\ \\(name\\, a\\, b\\, t1\\, t2\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2493,9 +2483,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`PipeProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile>`\\"
-" \\(name\\, r\\, t\\)"
+":py:obj:`PipeProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.Be"
+"amSectionProfileModel.PipeProfile>`\\ \\(name\\, r\\, t\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2504,9 +2493,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`RectangularProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile>`\\"
-" \\(name\\, a\\, b\\)"
+":py:obj:`RectangularProfile <abaqus.BeamSectionProfile.BeamSectionProfileM"
+"odel.BeamSectionProfileModel.RectangularProfile>`\\ \\(name\\, a\\, b\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2515,9 +2503,8 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`TProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile>`\\"
-" \\(name\\, b\\, h\\, l\\, tf\\, tw\\)"
+":py:obj:`TProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamS"
+"ectionProfileModel.TProfile>`\\ \\(name\\, b\\, h\\, l\\, tf\\, tw\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2526,9 +2513,9 @@ msgstr ""
 
 #: ../../None:14:<autosummary>:1
 msgid ""
-":py:obj:`TrapezoidalProfile "
-"<abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile>`\\"
-" \\(name\\, a\\, b\\, c\\, d\\)"
+":py:obj:`TrapezoidalProfile <abaqus.BeamSectionProfile.BeamSectionProfileM"
+"odel.BeamSectionProfileModel.TrapezoidalProfile>`\\ \\(name\\, a\\, b\\, "
+"c\\, d\\)"
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
@@ -2747,8 +2734,8 @@ msgstr ""
 #: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`SurfaceSection "
-"<abaqus.Section.SectionModel.SectionModel.SurfaceSection>`\\ "
-"\\(name\\[\\, useDensity\\, density\\]\\)"
+"<abaqus.Section.SectionModel.SectionModel.SurfaceSection>`\\ \\(name\\[\\,"
+" useDensity\\, density\\]\\)"
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
@@ -2769,8 +2756,8 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`ConstrainedSketch "
-"<abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch>`\\ \\(name\\,"
-" sheetSize\\[\\, ...\\]\\)"
+"<abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch>`\\ \\(name\\, "
+"sheetSize\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2821,9 +2808,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`CoupledThermalElectricalStructuralStep "
-"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricalStructuralStep>`\\"
-" \\(name\\, ...\\)"
+":py:obj:`CoupledThermalElectricalStructuralStep <abaqus.Step.StepModel.Ste"
+"pModel.CoupledThermalElectricalStructuralStep>`\\ \\(name\\, ...\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -2833,8 +2819,8 @@ msgstr ""
 #: ../../None:30:<autosummary>:1
 msgid ""
 ":py:obj:`CoupledThermalElectricStep "
-"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep>`\\ "
-"\\(name\\, previous\\[\\, ...\\]\\)"
+"<abaqus.Step.StepModel.StepModel.CoupledThermalElectricStep>`\\ \\(name\\,"
+" previous\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -2876,8 +2862,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`FrequencyStep <abaqus.Step.StepModel.StepModel.FrequencyStep>`\\"
-" \\(name\\, previous\\, eigensolver\\[\\, ...\\]\\)"
+":py:obj:`FrequencyStep <abaqus.Step.StepModel.StepModel.FrequencyStep>`\\ "
+"\\(name\\, previous\\, eigensolver\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -2886,8 +2872,8 @@ msgstr ""
 
 #: ../../None:30:<autosummary>:1
 msgid ""
-":py:obj:`GeostaticStep <abaqus.Step.StepModel.StepModel.GeostaticStep>`\\"
-" \\(name\\, previous\\[\\, description\\, ...\\]\\)"
+":py:obj:`GeostaticStep <abaqus.Step.StepModel.StepModel.GeostaticStep>`\\ "
+"\\(name\\, previous\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:30:<autosummary>:1
@@ -3115,8 +3101,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
-"\\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\,"
+" inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -3153,20 +3139,21 @@ msgstr ""
 #: abaqus.Model.KeywordBlock.KeywordBlock:1 of
 msgid ""
 "The KeywordBlock object contains a representation of its model in the "
-"Abaqus input file format. You may edit the contents of the KeywordBlock "
-"to add solver functionality that is not supported by Abaqus/CAE. As a "
-"general rule, edits to the KeywordBlock object should be made as the last"
-" step prior to writing the actual Abaqus input file, thus avoiding "
-"possible conflicts with changes made using other MDB commands. The "
-"KeywordBlock object has no constructor. A KeywordBlock object is created "
-"when you create a model object. A model object contains only one "
-"KeywordBlock object."
+"Abaqus input file format. You may edit the contents of the KeywordBlock to"
+" add solver functionality that is not supported by Abaqus/CAE. As a "
+"general rule, edits to the KeywordBlock object should be made as the last "
+"step prior to writing the actual Abaqus input file, thus avoiding possible"
+" conflicts with changes made using other MDB commands. The KeywordBlock "
+"object has no constructor. A KeywordBlock object is created when you "
+"create a model object. A model object contains only one KeywordBlock "
+"object."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock:15 of
 msgid ""
-"Check `KeywordBlock on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all>`__."
+"Check `KeywordBlock on help.3ds.com/2018 <https://help.3ds.com/2018/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"keywordblockpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Model.ModelBase.KeywordBlock.edited:1 of
@@ -3177,27 +3164,27 @@ msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.insert:1 of
 msgid ""
-"This method inserts a String at a specified position in the **sieBlocks**"
-" member."
+"This method inserts a String at a specified position in the **sieBlocks** "
+"member."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.insert:4 of
 msgid ""
-"Check `KeywordBlock.insert on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblockinsertpyc>`__."
+"Check `KeywordBlock.insert on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"keywordblockpyc.htm?contextscope=all#simaker-keywordblockinsertpyc>`__."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.insert:7 of
 msgid ""
-"An Int specifying the position in the **sieBlocks** member after which "
-"the new string will be inserted."
+"An Int specifying the position in the **sieBlocks** member after which the"
+" new string will be inserted."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.insert:10 of
 msgid ""
-"A String specifying the text to be inserted. The text represents an "
-"Abaqus input file keyword and its associated data"
+"A String specifying the text to be inserted. The text represents an Abaqus"
+" input file keyword and its associated data"
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.insert
@@ -3208,21 +3195,21 @@ msgstr ""
 
 #: ../../docstring abaqus.Model.ModelBase.KeywordBlock.lastSynchCount:1 of
 msgid ""
-"A Float specifying the value of the counter associated with the Mdb "
-"object at the most recent synchronization."
+"A Float specifying the value of the counter associated with the Mdb object"
+" at the most recent synchronization."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.replace:1 of
 msgid ""
-"This method replaces a String at a specified position in the "
-"**sieBlocks** member."
+"This method replaces a String at a specified position in the **sieBlocks**"
+" member."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.replace:4 of
 msgid ""
-"Check `KeywordBlock.replace on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblockreplacepyc>`__."
+"Check `KeywordBlock.replace on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"keywordblockpyc.htm?contextscope=all#simaker-keywordblockreplacepyc>`__."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.replace:7 of
@@ -3233,8 +3220,8 @@ msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.replace:9 of
 msgid ""
-"A String specifying the text to be replaced. The text represents an "
-"Abaqus input file keyword and its associated data."
+"A String specifying the text to be replaced. The text represents an Abaqus"
+" input file keyword and its associated data."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.setValues:1 of
@@ -3243,49 +3230,49 @@ msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.setValues:4 of
 msgid ""
-"Check `KeywordBlock.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblocksetvaluespyc>`__."
+"Check `KeywordBlock.setValues on help.3ds.com/2018 <https://help.3ds.com/2"
+"018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"keywordblockpyc.htm?contextscope=all#simaker-keywordblocksetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.setValues:7 of
 msgid ""
 "A Boolean specifying whether this objects **sieBlocks** member has been "
-"edited. Setting edited=False will set the **sieBlocks** member to an "
-"empty tuple, thereby discarding all previous edits."
+"edited. Setting edited=False will set the **sieBlocks** member to an empty"
+" tuple, thereby discarding all previous edits."
 msgstr ""
 
 #: ../../docstring abaqus.Model.ModelBase.KeywordBlock.sieBlocks:1 of
 msgid ""
 "A tuple of Strings specifying a sequence of Strings that is identical to "
 "the information written to the Abaqus input file. Each String in the "
-"sequence represents an Abaqus input file keyword along with the "
-"parameters and data lines associated with the keyword. A String can also "
-"be a comment in the input file. You initialize this data member by "
-"calling synchVersions. After you initialize the data member, you use "
-"calls to replace and insert to record your edits in the correct location."
-" If the last call to synchVersions used the argument "
-"**storeNodesAndElements** = False, the entry for the keywords NODE and "
-"ELEMENT will contain only the keyword and its parameters, not the data "
-"lines."
+"sequence represents an Abaqus input file keyword along with the parameters"
+" and data lines associated with the keyword. A String can also be a "
+"comment in the input file. You initialize this data member by calling "
+"synchVersions. After you initialize the data member, you use calls to "
+"replace and insert to record your edits in the correct location. If the "
+"last call to synchVersions used the argument **storeNodesAndElements** = "
+"False, the entry for the keywords NODE and ELEMENT will contain only the "
+"keyword and its parameters, not the data lines."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:1 of
 msgid ""
 "This method synchronizes, or merges, the edits made in this object with "
 "those made in the model using other scripting commands or the user "
-"interface. The synchVersions method updates the **sieBlocks** member. The"
-" **sieBlocks** member is empty prior to the first call to synchVersions. "
-"As a side effect, synchVersions sets **lastSynchCount** to the current "
-"value of the counter associated with the Mdb object, which is used to "
-"determine if synchronization is necessary."
+"interface. The synchVersions method updates the **sieBlocks** member. The "
+"**sieBlocks** member is empty prior to the first call to synchVersions. As"
+" a side effect, synchVersions sets **lastSynchCount** to the current value"
+" of the counter associated with the Mdb object, which is used to determine"
+" if synchronization is necessary."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:9 of
 msgid ""
-"Check `KeywordBlock.synchVersions on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordblockpyc.htm?contextscope=all"
-"#simaker-keywordblocksynchversionspyc>`__."
+"Check `KeywordBlock.synchVersions on help.3ds.com/2018 <https://help.3ds.c"
+"om/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"keywordblockpyc.htm?contextscope=all#simaker-"
+"keywordblocksynchversionspyc>`__."
 msgstr ""
 
 #: abaqus.Model.KeywordBlock.KeywordBlock.synchVersions:12 of
@@ -3294,13 +3281,13 @@ msgid ""
 "connectivities (i.e. the data lines for the *NODE and *ELEMENT keyword "
 "blocks) are to be stored in the **sieBlocks** member. All other keywords "
 "and their data lines are always stored. The default value is True. If "
-"**storeNodesAndElements** is True, the size of the keywordBlock data will"
-" be similar to that of the input file. Since the KeywordBlock is stored "
-"in the Abaqus/CAE database, this will result in a larger database. It "
-"will also result in a slower execution of the synchVersions command. If "
+"**storeNodesAndElements** is True, the size of the keywordBlock data will "
+"be similar to that of the input file. Since the KeywordBlock is stored in "
+"the Abaqus/CAE database, this will result in a larger database. It will "
+"also result in a slower execution of the synchVersions command. If "
 "**storeNodesAndElements** is False, the data lines are not stored in "
-"**sieBlocks**. Consequently, only set **storeNodesAndElements** = True if"
-" you wish to make changes to the **NODE** or **ELEMENT** data lines "
+"**sieBlocks**. Consequently, only set **storeNodesAndElements** = True if "
+"you wish to make changes to the **NODE** or **ELEMENT** data lines "
 "themselves. If your task is limited to reading nodal coordinates and "
 "element connectivities (i.e. not editing this information) then it is "
 "generally better to access this information from other parts of the Mdb."
@@ -3308,14 +3295,16 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase:13 of
 msgid ""
-"Check `ModelBase on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
+"Check `ModelBase on help.3ds.com/2018 <https://help.3ds.com/2018/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:10 of
 msgid ""
-"Check `ModelFromInputFile on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelfrominputfilepyc.htm?contextscope=all>`__."
+"Check `ModelFromInputFile on help.3ds.com/2018 <https://help.3ds.com/2018/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelfrominputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromInputFile:15 of
@@ -3337,16 +3326,17 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:13 of
 msgid ""
-"Check `ModelFromNastranFile on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelfromnastranfilepyc.htm?contextscope=all>`__."
+"Check `ModelFromNastranFile on help.3ds.com/2018 <https://help.3ds.com/201"
+"8/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelfromnastranfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:18 of
 msgid ""
 "A String specifying the name of the Nastran input file (including the "
-".bdf, .dat, .nas, .nastran, .blk, .bulk extension) to be read into the "
-"new model. This String can also be the full path to the Nastran input "
-"file if it is located in another directory."
+".bdf, .dat, .nas, .nastran, .blk, .bulk extension) to be read into the new"
+" model. This String can also be the full path to the Nastran input file if"
+" it is located in another directory."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:22 of
@@ -3384,10 +3374,10 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:42 of
 msgid ""
-"A Boolean specifying whether to translate the beam element connectivity "
-"to newly created nodes at the offset location and rigidly coupling the "
-"new and original nodes. If not, beam element offsets are translated to "
-"the CENTROID and SHEAR CENTER options, which are suboptions of the BEAM "
+"A Boolean specifying whether to translate the beam element connectivity to"
+" newly created nodes at the offset location and rigidly coupling the new "
+"and original nodes. If not, beam element offsets are translated to the "
+"CENTROID and SHEAR CENTER options, which are suboptions of the BEAM "
 "GENERAL SECTION option. The default value is ON. When the beam element "
 "references a PBARL or PBEAML property or if the beam offset has a "
 "significant component in the direction of the beam axis, the setting for "
@@ -3402,18 +3392,18 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:52 of
 msgid ""
-"A String specifying the 4-node shell that is created from CQUAD4 "
-"elements. Possible values are S4 and S4R. The default is S4. If a "
-"reduced-integration element is chosen, the enhanced hourglass formulation"
-" is applied automatically."
+"A String specifying the 4-node shell that is created from CQUAD4 elements."
+" Possible values are S4 and S4R. The default is S4. If a reduced-"
+"integration element is chosen, the enhanced hourglass formulation is "
+"applied automatically."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:56 of
 msgid ""
-"A String specifying the 8-node brick that is created from CHEXA elements."
-" Possible values are C3D8I, C3D8 and C3D8R. The default is C3D8I. If a "
-"reduced-integration element is chosen, the enhanced hourglass formulation"
-" is applied automatically."
+"A String specifying the 8-node brick that is created from CHEXA elements. "
+"Possible values are C3D8I, C3D8 and C3D8R. The default is C3D8I. If a "
+"reduced-integration element is chosen, the enhanced hourglass formulation "
+"is applied automatically."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:60 of
@@ -3424,30 +3414,31 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile:63 of
 msgid ""
-"A Boolean specifying whether to keep the generated Abaqus input file "
-"after the model is created from the Nastran input file. The default value"
-" is ON."
+"A Boolean specifying whether to keep the generated Abaqus input file after"
+" the model is created from the Nastran input file. The default value is "
+"ON."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:10 of
 msgid ""
-"Check `ModelFromOdbFile on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelfromodbfilepyc.htm?contextscope=all>`__."
+"Check `ModelFromOdbFile on help.3ds.com/2018 <https://help.3ds.com/2018/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelfromodbfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile:15 of
 msgid ""
 "A String specifying the name of the output database file (including the "
-".odb extension) to be read into the new model. This String can also be "
-"the full path to the output database file if it is located in another "
+".odb extension) to be read into the new model. This String can also be the"
+" full path to the output database file if it is located in another "
 "directory."
 msgstr ""
 
 #: ../../docstring abaqus.Model.ModelBase.ModelBase.noPartsInputFile:1
 #: abaqus.Model.ModelBase.ModelBase.setValues:10 of
 msgid ""
-"A Boolean specifying whether an input file should be written without "
-"parts and assemblies. The default value is OFF."
+"A Boolean specifying whether an input file should be written without parts"
+" and assemblies. The default value is OFF."
 msgstr ""
 
 #: ../../docstring abaqus.Model.ModelBase.ModelBase.restartIncrement:1
@@ -3460,15 +3451,15 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.setValues:4 of
 msgid ""
-"Check `ModelBase.setValues on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all"
-"#simaker-modelsetvaluespyc>`__."
+"Check `ModelBase.setValues on help.3ds.com/2018 <https://help.3ds.com/2018"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"modelpyc.htm?contextscope=all#simaker-modelsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.setValues:37 of
 msgid ""
-"A Boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model."
+"A Boolean specifying whether to copy the constraints created in the model "
+"to the model that instances this model."
 msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.setValues:40 of
@@ -3479,7 +3470,7 @@ msgstr ""
 
 #: abaqus.Model.ModelBase.ModelBase.setValues:43 of
 msgid ""
-"A Boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model."
+"A Boolean specifying whether to copy the interactions created in the model"
+" to the model that instances this model."
 msgstr ""
 
