@@ -1,10 +1,16 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Inertia import Inertia
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, MASS_PROPORTIONAL, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    MASS_PROPORTIONAL,
+    OFF,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Inertia import Inertia
 
 
 @abaqus_class_doc

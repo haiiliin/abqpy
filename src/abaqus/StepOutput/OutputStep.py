@@ -1,12 +1,13 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Step.StepBase import StepBase
+from ..UtilityAndView.abaqusConstants import OFF, ON, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .DiagnosticPrint import DiagnosticPrint
 from .Monitor import Monitor
 from .Restart import Restart
-from ..Step.StepBase import StepBase
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,16 +1,23 @@
 from typing import Dict, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
-from .GeometryDisplayOptions import GeometryDisplayOptions
-from .MeshDisplayOptions import MeshDisplayOptions
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, OFF, SymbolicConstant, WIREFRAME
+from ..UtilityAndView.abaqusConstants import (
+    EMPTY_LEAF,
+    OFF,
+    WIREFRAME,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
+from .GeometryDisplayOptions import GeometryDisplayOptions
+from .MeshDisplayOptions import MeshDisplayOptions
 
 
 @abaqus_class_doc

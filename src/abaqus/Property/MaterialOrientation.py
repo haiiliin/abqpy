@@ -1,7 +1,8 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
@@ -10,15 +11,15 @@ from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import (
     AXIS_1,
     AXIS_3,
-    Boolean,
     GLOBAL,
     NORMAL_VECTOR,
     OFF,
     PRIMARY_VECTOR,
     ROTATION_NONE,
     STACK_3,
-    SymbolicConstant,
     VECTOR,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

@@ -2,8 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
+from ..UtilityAndView.abaqusConstants import FREE, ON, Boolean, SymbolicConstant
 from .BoundaryConditionState import BoundaryConditionState
-from ..UtilityAndView.abaqusConstants import Boolean, FREE, ON, SymbolicConstant
 
 
 @abaqus_class_doc

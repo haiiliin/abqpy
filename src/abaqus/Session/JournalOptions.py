@@ -1,11 +1,12 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .NumberFormat import NumberFormat
-from ..UtilityAndView.abaqusConstants import Boolean, COMPRESSEDINDEX, ENGINEERING, ON
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import COMPRESSEDINDEX, ENGINEERING, ON, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .NumberFormat import NumberFormat
 
 
 @abaqus_class_doc

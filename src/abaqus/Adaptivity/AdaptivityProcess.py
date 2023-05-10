@@ -2,9 +2,9 @@ from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
+from .AdaptivityIteration import AdaptivityIteration
 
 
 @abaqus_class_doc

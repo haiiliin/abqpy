@@ -1,1 +1,3 @@
-from abaqus.Property.PlyStackPlot import MdbPlyStackPlot  # noqa # pylint: disable=unused-import
+from abaqus.Property.PlyStackPlot import (  # noqa # pylint: disable=unused-import
+    MdbPlyStackPlot,
+)

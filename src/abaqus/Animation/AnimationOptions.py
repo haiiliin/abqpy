@@ -1,10 +1,11 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from .._OptionsBase import _OptionsBase
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     DEFAULT,
     FRAME_BASED,
     HALF_CYCLE,
@@ -12,10 +13,10 @@ from ..UtilityAndView.abaqusConstants import (
     MEDIUM,
     ON,
     SOLID,
+    Boolean,
     SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from .._OptionsBase import _OptionsBase
 
 
 @abaqus_class_doc

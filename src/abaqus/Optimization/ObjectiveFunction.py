@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .OptimizationObjectiveArray import OptimizationObjectiveArray
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import MINIMIZE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .OptimizationObjectiveArray import OptimizationObjectiveArray
 
 
 @abaqus_class_doc

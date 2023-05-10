@@ -1,8 +1,30 @@
-from typing import Union, Optional, Tuple
+from typing import Optional, Tuple, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
+from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import (
+    BENDING,
+    CONSTANT,
+    DEFAULT,
+    DOF_MODE,
+    FULLY,
+    GRADIENT,
+    LINEAR,
+    NO_IDEALIZATION,
+    NONE,
+    OFF,
+    ON,
+    SIMPSON,
+    SOLVER_DEFAULT,
+    UNIFORM,
+    UNSPECIFIED,
+    Boolean,
+)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .AcousticInfiniteSection import AcousticInfiniteSection
 from .AcousticInterfaceSection import AcousticInterfaceSection
 from .BeamSection import BeamSection
@@ -15,33 +37,12 @@ from .GasketSection import GasketSection
 from .GeneralStiffnessSection import GeneralStiffnessSection
 from .HomogeneousShellSection import HomogeneousShellSection
 from .HomogeneousSolidSection import HomogeneousSolidSection
-from .MPCSection import MPCSection
 from .MembraneSection import MembraneSection
+from .MPCSection import MPCSection
 from .PEGSection import PEGSection
 from .SectionLayerArray import SectionLayerArray
 from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
-from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
-from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (
-    BENDING,
-    Boolean,
-    CONSTANT,
-    DEFAULT,
-    DOF_MODE,
-    FULLY,
-    GRADIENT,
-    LINEAR,
-    NONE,
-    NO_IDEALIZATION,
-    OFF,
-    ON,
-    SIMPSON,
-    SOLVER_DEFAULT,
-    UNIFORM,
-    UNSPECIFIED,
-)
 
 
 @abaqus_class_doc

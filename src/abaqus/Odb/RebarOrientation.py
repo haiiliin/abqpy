@@ -2,9 +2,9 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from .OdbDatumCsys import OdbDatumCsys
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

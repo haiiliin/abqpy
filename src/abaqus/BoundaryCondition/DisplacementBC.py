@@ -1,12 +1,21 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .BoundaryCondition import BoundaryCondition
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import (
+    NOT_APPLICABLE,
+    OFF,
+    SET,
+    UNIFORM,
+    UNSET,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .BoundaryCondition import BoundaryCondition
 
 
 @abaqus_class_doc

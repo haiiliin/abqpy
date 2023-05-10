@@ -1,12 +1,20 @@
 from typing import Optional, Tuple
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    ANALYSIS_DEFAULT,
+    CONSTANT,
+    FULLY,
+    LINEAR,
+    OFF,
+    Boolean,
+)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import ANALYSIS_DEFAULT, Boolean, CONSTANT, FULLY, LINEAR, OFF
 
 
 @abaqus_class_doc

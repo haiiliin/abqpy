@@ -1,13 +1,10 @@
-from typing import Optional, Tuple, Sequence, Dict, overload
+from typing import Dict, Optional, Sequence, Tuple, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AttributeColorMap import AttributeColorMap
-from .Displayable import Displayable
-from .ImageOptions import ImageOptions
-from .Layer import Layer
-from .MovieOptions import MovieOptions
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from .._OptionsBase import _OptionsBase
 from ..Annotation.AnnotationsToPlotArray import AnnotationsToPlotArray
 from ..DisplayGroup.Leaf import Leaf
 from ..DisplayOptions.AssemblyDisplayOptions import AssemblyDisplayOptions
@@ -16,19 +13,23 @@ from ..DisplayOptions.PartDisplayOptions import PartDisplayOptions
 from ..DisplayOptions.ViewportAnnotationOptions import ViewportAnnotationOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..PlotOptions.DetailPlotOptions import DetailPlotOptions
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.View import View
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     DEFAULT_COLORS,
     HOLLOW_CIRCLE,
     OFF,
     ON,
     SMALL,
     SYSTEM,
+    Boolean,
     SymbolicConstant,
 )
-from .._OptionsBase import _OptionsBase
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.View import View
+from .AttributeColorMap import AttributeColorMap
+from .Displayable import Displayable
+from .ImageOptions import ImageOptions
+from .Layer import Layer
+from .MovieOptions import MovieOptions
 
 
 @abaqus_class_doc

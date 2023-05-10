@@ -1,11 +1,12 @@
 from typing import Optional, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from .._OptionsBase import _CopyOptionsBase
 from ..Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     CATEGORY_BASED,
     COARSE,
     DEFAULT,
@@ -21,12 +22,12 @@ from ..UtilityAndView.abaqusConstants import (
     ON,
     REAL,
     SELECT_BY_NUMBER,
-    SymbolicConstant,
     USE_BOTTOM,
     ZAXIS,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from .._OptionsBase import _CopyOptionsBase
 
 
 @abaqus_class_doc

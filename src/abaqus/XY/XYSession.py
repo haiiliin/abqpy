@@ -1,22 +1,14 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Sequence, List, Dict, overload
+from typing import Dict, List, Sequence, Tuple, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AreaStyle import AreaStyle
-from .LineStyle import LineStyle
-from .QuantityType import QuantityType
-from .SymbolStyle import SymbolStyle
-from .TextStyle import TextStyle
-from .XYData import XYData
-from .XYSessionBase import XYSessionBase
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     COMPLEX_VAL_AT_ANGLE,
     FILLED_CIRCLE,
     IMAGINARY,
@@ -24,8 +16,17 @@ from ..UtilityAndView.abaqusConstants import (
     ON,
     REAL,
     SOLID,
+    Boolean,
     SymbolicConstant,
 )
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from .AreaStyle import AreaStyle
+from .LineStyle import LineStyle
+from .QuantityType import QuantityType
+from .SymbolStyle import SymbolStyle
+from .TextStyle import TextStyle
+from .XYData import XYData
+from .XYSessionBase import XYSessionBase
 
 
 @abaqus_class_doc

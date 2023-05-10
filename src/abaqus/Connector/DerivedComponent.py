@@ -1,10 +1,11 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import OFF, POSITION, POSITIVE, RSS, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .CDCTerm import CDCTerm
 from .CDCTermArray import CDCTermArray
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, POSITION, POSITIVE, RSS
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

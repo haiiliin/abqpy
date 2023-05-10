@@ -1,9 +1,16 @@
 from __future__ import annotations
 
-from typing import overload, Optional
+from typing import Optional, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import (
+    FILLED_CIRCLE,
+    ON,
+    SOLID,
+    Boolean,
+    SymbolicConstant,
+)
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from .QuantityType import QuantityType
@@ -11,7 +18,6 @@ from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYPlotBase import XYPlotBase
-from ..UtilityAndView.abaqusConstants import Boolean, FILLED_CIRCLE, ON, SOLID, SymbolicConstant
 
 
 @abaqus_class_doc

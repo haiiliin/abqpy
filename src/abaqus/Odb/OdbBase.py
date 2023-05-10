@@ -1,8 +1,17 @@
 from typing import Dict
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Amplitude.Amplitude import Amplitude
+from ..BeamSectionProfile.Profile import Profile
+from ..CustomKernel.RepositorySupport import RepositorySupport
+from ..Filter.Filter import Filter
+from ..Material.Material import Material
+from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import CLOSEST, OFF, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly
 from .OdbPart import OdbPart
@@ -10,14 +19,6 @@ from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
 from .SectorDefinition import SectorDefinition
 from .UserData import UserData
-from ..Amplitude.Amplitude import Amplitude
-from ..BeamSectionProfile.Profile import Profile
-from ..CustomKernel.RepositorySupport import RepositorySupport
-from ..Filter.Filter import Filter
-from ..Material.Material import Material
-from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

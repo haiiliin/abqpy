@@ -1,12 +1,19 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    OFF,
+    ON,
+    Boolean,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Area import Area
 from .TextStyle import TextStyle
-from ..UtilityAndView.abaqusConstants import AUTOMATIC, Boolean, OFF, ON, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
