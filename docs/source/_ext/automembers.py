@@ -40,8 +40,11 @@ class AutoMembers(SphinxDirective):
 
     def should_include(self, obj: object) -> bool:
         module_or_name = getattr(obj, "__module__", obj.__name__)
-        return (self.module_name == module_or_name or f"{self.module_name}." in module_or_name and
-                obj.__name__ not in self.excluded_members)
+        return (
+            self.module_name == module_or_name
+            or f"{self.module_name}." in module_or_name
+            and obj.__name__ not in self.excluded_members
+        )
 
     def get_members(self, module: str | ModuleType) -> dict[str, list[str]]:
         autodoc_options = self.env.config.automembers_autodoc_options
@@ -51,29 +54,25 @@ class AutoMembers(SphinxDirective):
             module = importlib.import_module(module)
             # Class members
             classes = [
-                member
-                for member in inspect.getmembers(module, inspect.isclass)
-                if self.should_include(member[1])
+                member for member in inspect.getmembers(module, inspect.isclass) if self.should_include(member[1])
             ]
             class_members = {
-                cls.__qualname__:
-                [f".. currentmodule:: {module.__name__}"]
+                cls.__qualname__: [f".. currentmodule:: {module.__name__}"]
                 + [f".. autoclass:: {cls.__qualname__}"]
                 + [f"    {option}" for option in autodoc_options]
-                for name, cls in classes if cls.__qualname__ not in members
+                for name, cls in classes
+                if cls.__qualname__ not in members
             }
             members.update(class_members)
             # Function members
             functions = [
-                member
-                for member in inspect.getmembers(module, inspect.isfunction)
-                if self.should_include(member[1])
+                member for member in inspect.getmembers(module, inspect.isfunction) if self.should_include(member[1])
             ]
             function_members = {
-                func.__qualname__:
-                [f".. currentmodule:: {module.__name__}"]
+                func.__qualname__: [f".. currentmodule:: {module.__name__}"]
                 + [f".. autofunction:: {func.__qualname__}"]
-                for name, func in functions if func.__qualname__ not in members
+                for name, func in functions
+                if func.__qualname__ not in members
             }
             members.update(function_members)
             # submodule members
