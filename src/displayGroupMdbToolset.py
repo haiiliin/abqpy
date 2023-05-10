@@ -9,11 +9,17 @@ from abaqus.DisplayGroup.LeafFromNodeLabels import LeafFromNodeLabels  # noqa # 
 from abaqus.DisplayGroup.LeafFromNodeSets import LeafFromNodeSets  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromNodeVarRange import LeafFromNodeVarRange  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromOdbEdgePick import LeafFromOdbEdgePick  # noqa # pylint: disable=unused-import
-from abaqus.DisplayGroup.LeafFromOdbElementLayups import LeafFromOdbElementLayups  # noqa # pylint: disable=unused-import
-from abaqus.DisplayGroup.LeafFromOdbElementMaterials import LeafFromOdbElementMaterials  # noqa # pylint: disable=unused-import
+from abaqus.DisplayGroup.LeafFromOdbElementLayups import (
+    LeafFromOdbElementLayups,
+)  # noqa # pylint: disable=unused-import
+from abaqus.DisplayGroup.LeafFromOdbElementMaterials import (
+    LeafFromOdbElementMaterials,
+)  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromOdbElementPick import LeafFromOdbElementPick  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromOdbElementPlies import LeafFromOdbElementPlies  # noqa # pylint: disable=unused-import
-from abaqus.DisplayGroup.LeafFromOdbElementSections import LeafFromOdbElementSections  # noqa # pylint: disable=unused-import
+from abaqus.DisplayGroup.LeafFromOdbElementSections import (
+    LeafFromOdbElementSections,
+)  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromOdbElementTypes import LeafFromOdbElementTypes  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromOdbNodePick import LeafFromOdbNodePick  # noqa # pylint: disable=unused-import
 from abaqus.DisplayGroup.LeafFromPartInstance import LeafFromPartInstance  # noqa # pylint: disable=unused-import
