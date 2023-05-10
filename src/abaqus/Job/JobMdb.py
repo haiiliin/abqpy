@@ -1,25 +1,26 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .JobFromInputFile import JobFromInputFile
-from .ModelJob import ModelJob
-from .OptimizationProcess import OptimizationProcess
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Mdb.MdbBase import MdbBase
 from ..UtilityAndView.abaqusConstants import (
     ANALYSIS,
-    Boolean,
     DEFAULT,
     DOMAIN,
-    ON,
-    OFF,
     ODB,
+    OFF,
+    ON,
     OPT_DATASAVE_SPECIFY_CYCLE,
     PERCENTAGE,
     SINGLE,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .JobFromInputFile import JobFromInputFile
+from .ModelJob import ModelJob
+from .OptimizationProcess import OptimizationProcess
 
 
 @abaqus_class_doc

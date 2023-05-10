@@ -1,10 +1,14 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple, Sequence, overload
+from typing import Optional, Sequence, Tuple, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Part.AcisFile import AcisFile
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraintModel import (
     ConstrainedSketchConstraintModel,
 )
@@ -24,9 +28,6 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVe
 from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
     ConstrainedSketchVertexModel,
 )
-from ..Part.AcisFile import AcisFile
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

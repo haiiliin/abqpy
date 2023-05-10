@@ -1,12 +1,18 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Constraint import Constraint
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, DOF_MODE_MPC, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    DOF_MODE_MPC,
+    OFF,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Constraint import Constraint
 
 
 @abaqus_class_doc

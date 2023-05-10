@@ -1,17 +1,12 @@
-from typing import Optional, Tuple, Sequence, Union, List, Dict
+from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 from typing_extensions import Literal
 
 from abaqus.Odb.Odb import Odb
 from abaqus.PathAndProbe.Path import Path
+from abaqus.UtilityAndView.abaqusConstants import OFF, ON, REAL, Boolean
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 from abaqus.UtilityAndView.SymbolicConstant import abaqusConstants as C
-from abaqus.UtilityAndView.abaqusConstants import (
-    Boolean,
-    OFF,
-    ON,
-    REAL,
-)
 from abaqus.XY.AreaStyle import AreaStyle  # noqa # pylint: disable=unused-import
 from abaqus.XY.LineStyle import LineStyle  # noqa # pylint: disable=unused-import
 from abaqus.XY.QuantityType import QuantityType  # noqa # pylint: disable=unused-import

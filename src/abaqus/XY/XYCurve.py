@@ -1,13 +1,14 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import CURVE_LEGEND, ON, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .LineStyle import LineStyle
 from .SymbolStyle import SymbolStyle
 from .XYData import XYData
-from ..UtilityAndView.abaqusConstants import Boolean, CURVE_LEGEND, ON, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

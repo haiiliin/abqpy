@@ -2,7 +2,13 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import BELOW_MIN, GLOBAL_X, MODEL, SEMI_AUTOMATIC, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    BELOW_MIN,
+    GLOBAL_X,
+    MODEL,
+    SEMI_AUTOMATIC,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc

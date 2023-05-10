@@ -1,23 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ConnectorDamage import ConnectorDamage
-from .ConnectorDamping import ConnectorDamping
-from .ConnectorElasticity import ConnectorElasticity
-from .ConnectorFailure import ConnectorFailure
-from .ConnectorFriction import ConnectorFriction
-from .ConnectorLock import ConnectorLock
-from .ConnectorPlasticity import ConnectorPlasticity
-from .ConnectorPotential import ConnectorPotential
-from .ConnectorPotentialArray import ConnectorPotentialArray
-from .ConnectorStop import ConnectorStop
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Section.SectionBase import SectionBase
 from ..UtilityAndView.abaqusConstants import (
     ABS,
     ALL,
-    Boolean,
     COMPONENT_NUMBER,
     FORCE,
     HALF_CYCLE,
@@ -34,8 +24,19 @@ from ..UtilityAndView.abaqusConstants import (
     TABULAR,
     UNCOUPLED,
     VISCOUS,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ConnectorDamage import ConnectorDamage
+from .ConnectorDamping import ConnectorDamping
+from .ConnectorElasticity import ConnectorElasticity
+from .ConnectorFailure import ConnectorFailure
+from .ConnectorFriction import ConnectorFriction
+from .ConnectorLock import ConnectorLock
+from .ConnectorPlasticity import ConnectorPlasticity
+from .ConnectorPotential import ConnectorPotential
+from .ConnectorPotentialArray import ConnectorPotentialArray
+from .ConnectorStop import ConnectorStop
 
 
 @abaqus_class_doc

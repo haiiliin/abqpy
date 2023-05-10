@@ -1,12 +1,13 @@
 from typing import Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Amplitude import Amplitude
-from .BaselineCorrection import BaselineCorrection
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Amplitude import Amplitude
+from .BaselineCorrection import BaselineCorrection
 
 
 @abaqus_class_doc

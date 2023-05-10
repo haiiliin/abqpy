@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Dict, List, overload, Sequence
+from typing import Dict, List, Sequence, Tuple, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .Edge import Edge
 from ..UtilityAndView.abaqusConstants import Boolean
+from .Edge import Edge
 
 
 @abaqus_class_doc

@@ -1,26 +1,14 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AssembledFastener import AssembledFastener
-from .ContourIntegral import ContourIntegral
-from .DebondVCCT import DebondVCCT
-from .DiscreteFastener import DiscreteFastener
-from .EngineeringFeatureBase import EngineeringFeatureBase
-from .HeatCapacitance import HeatCapacitance
-from .NonstructuralMass import NonstructuralMass
-from .PointFastener import PointFastener
-from .PointMassInertia import PointMassInertia
-from .SpringDashpotToGround import SpringDashpotToGround
-from .TwoPointSpringDashpot import TwoPointSpringDashpot
-from .XFEMCrack import XFEMCrack
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (
     ALL,
     AXIS_1,
-    Boolean,
     CONNECTOR,
     CONTINUUM,
     DEFAULT,
@@ -33,8 +21,21 @@ from ..UtilityAndView.abaqusConstants import (
     ON,
     STEP,
     UNIFORM,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .AssembledFastener import AssembledFastener
+from .ContourIntegral import ContourIntegral
+from .DebondVCCT import DebondVCCT
+from .DiscreteFastener import DiscreteFastener
+from .EngineeringFeatureBase import EngineeringFeatureBase
+from .HeatCapacitance import HeatCapacitance
+from .NonstructuralMass import NonstructuralMass
+from .PointFastener import PointFastener
+from .PointMassInertia import PointMassInertia
+from .SpringDashpotToGround import SpringDashpotToGround
+from .TwoPointSpringDashpot import TwoPointSpringDashpot
+from .XFEMCrack import XFEMCrack
 
 
 @abaqus_class_doc

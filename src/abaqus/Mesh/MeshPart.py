@@ -2,14 +2,10 @@ from __future__ import annotations
 
 from typing import Optional, Sequence, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .ElemType import ElemType
-from .MeshEdge import MeshEdge
-from .MeshElement import MeshElement
-from .MeshFace import MeshFace
-from .MeshNode import MeshNode
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
@@ -20,9 +16,16 @@ from ..Mesh.MeshStats import MeshStats
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
-from ..Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry import ConstrainedSketchGeometry
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SINGLE, SymbolicConstant
+from ..Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
+    ConstrainedSketchGeometry,
+)
+from ..UtilityAndView.abaqusConstants import OFF, ON, SINGLE, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ElemType import ElemType
+from .MeshEdge import MeshEdge
+from .MeshElement import MeshElement
+from .MeshFace import MeshFace
+from .MeshNode import MeshNode
 
 
 @abaqus_class_doc

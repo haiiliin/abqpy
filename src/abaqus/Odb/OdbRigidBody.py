@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import INPUT, ON, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AnalyticSurface import AnalyticSurface
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

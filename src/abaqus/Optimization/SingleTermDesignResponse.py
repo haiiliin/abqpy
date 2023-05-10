@@ -1,12 +1,13 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DesignResponse import DesignResponse
-from .StepOptionArray import StepOptionArray
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import MAXIMUM, MODEL, SUM, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DesignResponse import DesignResponse
+from .StepOptionArray import StepOptionArray
 
 
 @abaqus_class_doc

@@ -1,15 +1,26 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import (
+    CARTESIAN,
+    NODES,
+    OFF,
+    POINT,
+    RELATIVE,
+    SURFACE,
+    XYPLANE,
+    XYZ,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField
 from .MappedField import MappedField
-from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE, SURFACE, XYPLANE, XYZ
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

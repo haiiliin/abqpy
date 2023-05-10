@@ -1,6 +1,15 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ...UtilityAndView.abaqusConstants import (
+    CONSTANT,
+    HALF_CYCLE,
+    ISOTROPIC,
+    OFF,
+    Boolean,
+)
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Metal.Annealing.AnnealTemperature import AnnealTemperature
 from .Metal.Cyclic.CycledPlastic import CycledPlastic
 from .Metal.Cyclic.CyclicHardening import CyclicHardening
@@ -8,8 +17,6 @@ from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from .TensileFailure import TensileFailure
-from ...UtilityAndView.abaqusConstants import Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF
-from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

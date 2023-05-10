@@ -2,8 +2,8 @@ from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 from .PropertyTableData import PropertyTableData
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

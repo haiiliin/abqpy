@@ -1,16 +1,17 @@
-from typing import Optional, Dict, overload
+from typing import Dict, Optional, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..UtilityAndView.abaqusConstants import CLOSEST, OFF, Boolean
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .FieldOutput import FieldOutput
 from .HistoryPoint import HistoryPoint
 from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame
 from .OdbFrameArray import OdbFrameArray
 from .OdbLoadCase import OdbLoadCase
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
 
 
 @abaqus_class_doc

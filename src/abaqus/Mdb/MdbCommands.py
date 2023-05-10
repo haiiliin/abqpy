@@ -10,14 +10,15 @@ This page discusses:
 * CombineOptResults
 
 """
-from typing import Union, Sequence
+from typing import Sequence, Union
 
-from abqpy.decorators import abaqus_function_doc
 from typing_extensions import Literal
 
-from .Mdb import Mdb
-from ..UtilityAndView.abaqusConstants import INITIAL_AND_LAST, ALL, FIRST
+from abqpy.decorators import abaqus_function_doc
+
+from ..UtilityAndView.abaqusConstants import ALL, FIRST, INITIAL_AND_LAST
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Mdb import Mdb
 
 
 def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:

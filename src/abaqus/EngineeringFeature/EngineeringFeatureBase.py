@@ -2,11 +2,11 @@ from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from .Crack import Crack
 from .Fastener import Fastener
 from .Inertia import Inertia
 from .SpringDashpot import SpringDashpot
-from ..Region.Region import Region
 
 
 @abaqus_class_doc

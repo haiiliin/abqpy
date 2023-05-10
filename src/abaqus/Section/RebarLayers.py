@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .LayerPropertiesArray import LayerPropertiesArray
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .LayerPropertiesArray import LayerPropertiesArray
 
 
 @abaqus_class_doc

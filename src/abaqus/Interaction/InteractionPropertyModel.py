@@ -1,8 +1,21 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import (
+    ACOUSTIC,
+    BULK_VISCOSITY,
+    HYDRAULIC,
+    OFF,
+    ON,
+    PLANAR,
+    POLYNOMIAL,
+    Boolean,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
 from .CavityRadiationProp import CavityRadiationProp
@@ -12,9 +25,6 @@ from .FluidCavityProperty import FluidCavityProperty
 from .FluidExchangeProperty import FluidExchangeProperty
 from .FluidInflatorProperty import FluidInflatorProperty
 from .IncidentWaveProperty import IncidentWaveProperty
-from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON, PLANAR, POLYNOMIAL
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
