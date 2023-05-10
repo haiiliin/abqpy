@@ -25,59 +25,61 @@ import typing
 
 import git
 
-project = 'abqpy'
-copyright = '2022, WANG Hailin'
-author = 'WANG Hailin'
+project = "abqpy"
+copyright = "2022, WANG Hailin"
+author = "WANG Hailin"
 
 # The full version, including alpha/beta/rc tags
 try:
     import abqpy
+
     release, version = abqpy.__version__, abqpy.__semver__.split(".")[0]
 except (ImportError, AttributeError):
     import warnings
-    warnings.warn('abqpy is not installed, using 2023.0.0')
-    release, version = '2016.0.0', '2016'
-sys.path.insert(0, os.path.abspath('../../src'))
-sys.path.insert(0, os.path.abspath('./_ext'))
+
+    warnings.warn("abqpy is not installed, using 2016.0.0")
+    release, version = "2016.0.0", "2016"
+sys.path.insert(0, os.path.abspath("../../src"))
+sys.path.insert(0, os.path.abspath("./_ext"))
 
 # For multiple languages
-locale_dirs = ['locales/']   # path is example but recommended.
-gettext_compact = False      # optional.
+locale_dirs = ["locales/"]  # path is example but recommended.
+gettext_compact = False  # optional.
 
 # -- General configuration ---------------------------------------------------
 
 # Environment variables
-os.environ['ABQPY_MAKE_DOCS'] = 'true'
+os.environ["ABQPY_MAKE_DOCS"] = "true"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'autoclasstoc',
-    'automembers',
-    'changes',
-    'classdocumenter',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.linkcode',
-    'sphinx.ext.githubpages',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.napoleon',
-    'sphinx_autodoc_typehints',
-    'sphinx_copybutton',
-    'sphinx_codeautolink',
-    'sphinx_comments',
-    'sphinx_design',
-    'sphinx_gallery.gen_gallery',
-    'sphinx_togglebutton',
-    'sphinx_toolbox.confval',
-    'sphinx_toolbox.more_autodoc.overloads',
-    'sphinxcontrib.programoutput',
-    'hoverxref.extension',
-    'myst_parser',
-    'version',
-    'autoapi.extension',
+    "autoclasstoc",
+    "automembers",
+    "changes",
+    "classdocumenter",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.linkcode",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.napoleon",
+    "sphinx_autodoc_typehints",
+    "sphinx_copybutton",
+    "sphinx_codeautolink",
+    "sphinx_comments",
+    "sphinx_design",
+    "sphinx_gallery.gen_gallery",
+    "sphinx_togglebutton",
+    "sphinx_toolbox.confval",
+    "sphinx_toolbox.more_autodoc.overloads",
+    "sphinxcontrib.programoutput",
+    "hoverxref.extension",
+    "myst_parser",
+    "version",
+    "autoapi.extension",
 ]
 
 # changes configuration
@@ -86,9 +88,9 @@ changes_versions = [str(v) for v in range(int(version), 2015, -1)]
 
 # sphinx-comments
 comments_config = {
-   "utterances": {
-      "repo": "haiiliin/abqpy",
-   }
+    "utterances": {
+        "repo": "haiiliin/abqpy",
+    }
 }
 
 # automembers configuration
@@ -99,49 +101,49 @@ automembers_autodoc_options = [
 
 # MyST configuration
 myst_enable_extensions = [
-  "colon_fence",
+    "colon_fence",
 ]
 
 # AutoAPI configuration
 autoapi_dirs = ["../../src/abqpy"]
 autoapi_ignore = ["*_version.py"]
 autoapi_options = [
-    'members', 
-    'undoc-members', 
-    'private-members', 
-    'show-inheritance', 
-    'show-module-summary', 
-    'special-members', 
-    # 'imported-members', 
+    "members",
+    "undoc-members",
+    "private-members",
+    "show-inheritance",
+    "show-module-summary",
+    "special-members",
+    # 'imported-members',
 ]
-autoapi_template_dir = '_autoapi_templates'
+autoapi_template_dir = "_autoapi_templates"
 
 # Default behavior for code block concatenation for sphinx_codeautolink
 codeautolink_concat_default = False
 
 # Suppress warnings
 suppress_warnings = [
-    'app.add_directive',
+    "app.add_directive",
 ]
 
 intersphinx_mapping = {
-    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
-    'matplotlib': ('https://matplotlib.org/stable/', None),
-    'numpy': ('https://numpy.org/doc/stable/', None),
-    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
-    'pytest': ('https://pytest.org/en/stable/', None),
-    'python': ('https://docs.python.org/3/', None),
-    'readthedocs': ('https://docs.readthedocs.io/en/stable/', None),
-    'scipy': ('https://docs.scipy.org/doc/scipy/', None),
+    "jinjia2": ("https://jinja.palletsprojects.com/en/3.0.x/", None),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
+    "pytest": ("https://pytest.org/en/stable/", None),
+    "python": ("https://docs.python.org/3/", None),
+    "readthedocs": ("https://docs.readthedocs.io/en/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
 }
 
 # Hoverxref configuration
 hoverxref_auto_ref = True
 hoverxref_domains = ["py"]
 hoverxref_roles = [
-    'numref',
-    'confval',
-    'setting',
+    "numref",
+    "confval",
+    "setting",
     "option",
     "doc",  # Documentation pages
     "term",  # Glossary terms
@@ -158,30 +160,30 @@ hoverxref_role_types = {
     "ref": "tooltip",  # for hoverxref_auto_ref config
     "confval": "tooltip",  # for custom object
     "term": "tooltip",  # for glossaries
-    "numref": "tooltip", 
+    "numref": "tooltip",
 }
 hoverxref_intersphinx = [
-    'numpy',
-    'pytest',
-    'python',
-    'readthedocs',
+    "numpy",
+    "pytest",
+    "python",
+    "readthedocs",
 ]
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
-    'examples_dirs': '../../examples',
-    'gallery_dirs': 'examples',
-    'filename_pattern': '/.+\.py',
-    'plot_gallery': False,
+    "examples_dirs": "../../examples",
+    "gallery_dirs": "examples",
+    "filename_pattern": "/.+\.py",
+    "plot_gallery": False,
 }
 
 # Show short type hints for user-defined classes and defaults for parameters
 python_use_unqualified_type_names = True
-autodoc_typehints_format = 'short'
-typehints_defaults = 'comma'
+autodoc_typehints_format = "short"
+typehints_defaults = "comma"
 typehints_document_rtype = False
 autodoc_default_options = {
-    'undoc-members': False,
+    "undoc-members": False,
 }
 
 add_module_names = False
@@ -193,7 +195,7 @@ numfig = True
 napoleon_preprocess_types = True
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -204,7 +206,7 @@ exclude_patterns = ["locales/README.md", "_autoapi_templates"]
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
@@ -212,7 +214,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # -- Options for LaTeX output -------------------------------------------------
 
@@ -225,7 +227,7 @@ latex_show_pagerefs = True
 # 'no' - do not display URLs (default)
 # 'footnote' - display URLs in footnotes
 # 'inline' - display URLs inline in parentheses
-latex_show_urls = 'footnote'
+latex_show_urls = "footnote"
 
 # If given, this must be the name of an image file (relative to the
 # configuration directory) that is the logo of the docs. It is placed at the
@@ -242,23 +244,23 @@ latex_logo = None
 # A LaTeX theme for writing an article. It imports the article document class
 # (Japanese documents use jreport rather). latex_appendices is available only for this theme.
 # It defaults to 'manual'.
-latex_theme = 'manual'
+latex_theme = "manual"
 
-autoclass_content = 'both'
+autoclass_content = "both"
 
-latex_toplevel_sectioning = 'part'
-latex_engine = 'xelatex'
+latex_toplevel_sectioning = "part"
+latex_engine = "xelatex"
 latex_use_xindy = False
 latex_elements = {
-    'preamble': '\\usepackage[UTF8]{ctex}\n\\setcounter{tocdepth}{3}\n\\setcounter{secnumdepth}{5}',
-    'printindex': '\\def\\twocolumn[#1]{#1}\\printindex',
+    "preamble": "\\usepackage[UTF8]{ctex}\n\\setcounter{tocdepth}{3}\n\\setcounter{secnumdepth}{5}",
+    "printindex": "\\def\\twocolumn[#1]{#1}\\printindex",
 }
 
 
 # linkcode source
 def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
     """Resolve linkcode source
-    
+
     Parameters
     ----------
     domain : str
@@ -275,25 +277,25 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     -------
     source url of the object
     """
-    if domain != 'py':
+    if domain != "py":
         return None
 
-    modname = info['module']
-    fullname = info['fullname']
+    modname = info["module"]
+    fullname = info["fullname"]
 
-    filename = modname.replace('.', '/')
+    filename = modname.replace(".", "/")
     try:
-        branch_name = git.repo.Repo('../../').active_branch.name
+        branch_name = git.repo.Repo("../../").active_branch.name
     except Exception:
         branch_name = version[:4]
-    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
+    baseurl = f"https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py"
 
     submod = sys.modules.get(modname)
     if submod is None:
         return baseurl
 
     obj = submod
-    for part in fullname.split('.'):
+    for part in fullname.split("."):
         try:
             obj = getattr(obj, part)
         except Exception:
@@ -302,15 +304,15 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
         source, lineno = inspect.getsourcelines(obj)
     except TypeError:
         # Find source line for an attribute, the obj is None
-        attr = fullname.split('.')[-1]
+        attr = fullname.split(".")[-1]
         obj = submod
-        for part in fullname.split('.')[:-1]:
+        for part in fullname.split(".")[:-1]:
             try:
                 obj = getattr(obj, part)
             except Exception:
                 return baseurl
         source, lineno = inspect.getsourcelines(obj)
-        attr_sources: list[str] = re.findall(rf'\n(    {attr}: [\w\W]+?)\n\n', '\n'.join(source))
+        attr_sources: list[str] = re.findall(rf"\n(    {attr}: [\w\W]+?)\n\n", "\n".join(source))
         if len(attr_sources) > 0:
             attr_source = attr_sources[0].splitlines()
 
@@ -321,7 +323,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
 
             index = find_line_number(attr_source[0], source)
             for row in range(index - 1, -1, -1):
-                if source[row].startswith('    #: '):
+                if source[row].startswith("    #: "):
                     attr_source.insert(0, source[row])
                 else:
                     break
@@ -330,4 +332,4 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     except Exception:
         return baseurl
 
-    return baseurl + f'#L{lineno}-L{lineno + len(source) - 1}'
+    return baseurl + f"#L{lineno}-L{lineno + len(source) - 1}"
