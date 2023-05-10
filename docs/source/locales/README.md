@@ -14,7 +14,7 @@ After that, submit a pull request with the new script (only), do not include the
 
 ## How to translate the docs
 
-Open the `.po` files for the language you want to translate and use a tool like [Poedit](https://poedit.net/) to translate the strings. Create a pull request with the translated `.po` file.
+The translation takes place on [Crowdin](https://crowdin.com/project/abqpy).
 
 ## How to build the docs with specific language
 
