@@ -2,12 +2,12 @@ from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
 
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from .OdbAnalysisError import OdbAnalysisError
 from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep
 from .OdbJobTime import OdbJobTime
 from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

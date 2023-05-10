@@ -1,9 +1,10 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import Boolean, COLOR, OFF, ON, SymbolicConstant
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .._OptionsBase import _OptionsBase
+from ..UtilityAndView.abaqusConstants import COLOR, OFF, ON, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,16 +1,10 @@
 from typing import Dict, Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .DesignResponse import DesignResponse
-from .GeometricRestriction import GeometricRestriction
-from .ObjectiveFunction import ObjectiveFunction
-from .OptimizationConstraint import OptimizationConstraint
-from .OptimizationTask import OptimizationTask
-from .StopCondition import StopCondition
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     CONDITION_BASED_OPTIMIZATION,
     CONSTRAINED_LAPLACIAN,
     EVERY_CYCLE,
@@ -22,10 +16,17 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     POSITIONS,
-    SymbolicConstant,
     TASK_REGION_LAYERS,
+    Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .DesignResponse import DesignResponse
+from .GeometricRestriction import GeometricRestriction
+from .ObjectiveFunction import ObjectiveFunction
+from .OptimizationConstraint import OptimizationConstraint
+from .OptimizationTask import OptimizationTask
+from .StopCondition import StopCondition
 
 
 @abaqus_class_doc

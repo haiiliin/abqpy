@@ -1,10 +1,19 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
-from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant, VERY_THIN
+from ..UtilityAndView.abaqusConstants import (
+    MODEL_SIZE,
+    NONE,
+    ON,
+    PLY,
+    VERY_THIN,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

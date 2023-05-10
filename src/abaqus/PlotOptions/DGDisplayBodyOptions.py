@@ -2,7 +2,15 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant, VERY_THIN
+from ..UtilityAndView.abaqusConstants import (
+    EXTERIOR,
+    OFF,
+    ON,
+    SOLID,
+    VERY_THIN,
+    Boolean,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc

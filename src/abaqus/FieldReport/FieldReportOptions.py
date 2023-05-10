@@ -1,8 +1,16 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Session.NumberFormat import NumberFormat
-from ..UtilityAndView.abaqusConstants import ASCENDING, Boolean, ENGINEERING, NO_LIMIT, ON, SINGLE_TABLE
+from ..UtilityAndView.abaqusConstants import (
+    ASCENDING,
+    ENGINEERING,
+    NO_LIMIT,
+    ON,
+    SINGLE_TABLE,
+    Boolean,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

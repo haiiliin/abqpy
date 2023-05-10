@@ -1,13 +1,9 @@
-from typing import Union, overload, Dict, List, Optional, Tuple, Sequence
+from typing import Dict, List, Optional, Sequence, Tuple, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AssemblyFeature import AssemblyFeature
-from .AssemblyModel import AssemblyModel
-from .ConnectorOrientationArray import ConnectorOrientationArray
-from .ModelInstance import ModelInstance
-from .PartInstance import PartInstance
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.ReferencePoint import ReferencePoint
@@ -25,8 +21,13 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON
+from ..UtilityAndView.abaqusConstants import ALL_EDGES, LOW, OFF, ON, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .AssemblyFeature import AssemblyFeature
+from .AssemblyModel import AssemblyModel
+from .ConnectorOrientationArray import ConnectorOrientationArray
+from .ModelInstance import ModelInstance
+from .PartInstance import PartInstance
 
 
 @abaqus_class_doc

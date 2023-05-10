@@ -1,10 +1,9 @@
 from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Field import Field
-from .OdbMeshRegionData import OdbMeshRegionData
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import (
     EXTRAPOLATE_COMPUTE_AVERAGE,
@@ -18,6 +17,8 @@ from ..UtilityAndView.abaqusConstants import (
     UNDEFINED_POSITION,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Field import Field
+from .OdbMeshRegionData import OdbMeshRegionData
 
 
 @abaqus_class_doc

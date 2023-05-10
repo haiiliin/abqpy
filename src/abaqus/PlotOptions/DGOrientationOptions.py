@@ -1,6 +1,14 @@
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant, VERY_THIN
+from ..UtilityAndView.abaqusConstants import (
+    MODEL_SIZE,
+    NONE,
+    ON,
+    PLY,
+    VERY_THIN,
+    Boolean,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc

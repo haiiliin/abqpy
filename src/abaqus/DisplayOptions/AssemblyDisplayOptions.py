@@ -1,8 +1,21 @@
 from typing import Dict, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
+from ..DisplayGroup.DisplayGroup import DisplayGroup
+from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
+from ..DisplayGroup.Leaf import Leaf
+from ..UtilityAndView.abaqusConstants import (
+    EMPTY_LEAF,
+    OFF,
+    ON,
+    WIREFRAME,
+    Boolean,
+    SymbolicConstant,
+)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .BCDisplayOptions import BCDisplayOptions
 from .ConstraintDisplayOptions import ConstraintDisplayOptions
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
@@ -15,11 +28,6 @@ from .OptimizationTaskDisplayOptions import OptimizationTaskDisplayOptions
 from .PredefinedFieldDisplayOptions import PredefinedFieldDisplayOptions
 from .StopConditionDisplayOptions import StopConditionDisplayOptions
 from .SymbolDisplayOptions import SymbolDisplayOptions
-from ..DisplayGroup.DisplayGroup import DisplayGroup
-from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
-from ..DisplayGroup.Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, OFF, ON, SymbolicConstant, WIREFRAME
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

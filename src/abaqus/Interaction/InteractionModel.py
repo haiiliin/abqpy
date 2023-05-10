@@ -1,18 +1,9 @@
-from typing import Union, Optional, Sequence, Tuple
+from typing import Optional, Sequence, Tuple, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .InteractionContactControlModel import InteractionContactControlModel
-from .InteractionContactInitializationModel import InteractionContactInitializationModel
-from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
-from .InteractionPropertyModel import InteractionPropertyModel
-from .PolarityAssignments import PolarityAssignments
-from .SlidingFormulationAssignment import SlidingFormulationAssignment
-from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
-from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
-from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
-from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -51,11 +42,10 @@ from ..Interaction.XFEMCrackGrowth import XFEMCrackGrowth
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (
-    ALLOW_SUBCYCLING,
     ALL_NODAL_DIAMETER,
+    ALLOW_SUBCYCLING,
     AMBIENT,
     BLOCKING_ALL,
-    Boolean,
     COMPUTED,
     COMPUTED_TOLERANCE,
     CONTACT,
@@ -77,8 +67,19 @@ from ..UtilityAndView.abaqusConstants import (
     UNIFORM,
     UNSET,
     USE_GEOMETRY,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .InteractionContactControlModel import InteractionContactControlModel
+from .InteractionContactInitializationModel import InteractionContactInitializationModel
+from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
+from .InteractionPropertyModel import InteractionPropertyModel
+from .PolarityAssignments import PolarityAssignments
+from .SlidingFormulationAssignment import SlidingFormulationAssignment
+from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
+from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
+from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
+from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
 
 
 @abaqus_class_doc

@@ -3,7 +3,6 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import (
-    Boolean,
     ELEMENT,
     EXTERIOR,
     HOLLOW_CIRCLE,
@@ -13,9 +12,10 @@ from ..UtilityAndView.abaqusConstants import (
     SHADED,
     SMALL,
     SOLID,
-    SymbolicConstant,
     VERY_THIN,
     WIRE,
+    Boolean,
+    SymbolicConstant,
 )
 
 

@@ -1,14 +1,15 @@
 from __future__ import annotations
 
-from typing import Optional, Dict, overload
+from typing import Dict, Optional, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .HistoryOutput import HistoryOutput
-from .HistoryPoint import HistoryPoint
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .HistoryOutput import HistoryOutput
+from .HistoryPoint import HistoryPoint
 
 
 @abaqus_class_doc

@@ -1,12 +1,13 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .Movie import Movie
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import END_FRAME_TIME
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .Movie import Movie
 
 
 @abaqus_class_doc

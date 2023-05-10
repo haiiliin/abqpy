@@ -1,12 +1,12 @@
-from typing import Union, Optional, Sequence
+from typing import Optional, Sequence, Union
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (
     ALL,
-    Boolean,
     DEFAULT,
     EVERY_TIME_INCREMENT,
     EXCLUDE,
@@ -15,6 +15,7 @@ from ..UtilityAndView.abaqusConstants import (
     MTS,
     OFF,
     PRESELECT,
+    Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 

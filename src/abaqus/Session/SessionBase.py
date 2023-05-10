@@ -1,17 +1,11 @@
 from typing import Dict, Optional, Sequence
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from .AutoColors import AutoColors
-from .Color import Color
-from .Drawing import Drawing
-from .Image import Image
-from .JournalOptions import JournalOptions
-from .MemoryReductionOptions import MemoryReductionOptions
-from .NetworkDatabaseConnector import NetworkDatabaseConnector
-from ..Animation.AVIOptions import AVIOptions
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Animation.AnimationOptions import AnimationOptions
+from ..Animation.AVIOptions import AVIOptions
 from ..Animation.ImageAnimation import ImageAnimation
 from ..Animation.ImageAnimationOptions import ImageAnimationOptions
 from ..Animation.Movie import Movie
@@ -54,9 +48,9 @@ from ..Print.SvgOptions import SvgOptions
 from ..Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions import (
     ConstrainedSketcherOptions,
 )
-from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import AVI, Boolean, OFF, PNG
+from ..UtilityAndView.abaqusConstants import AVI, OFF, PNG, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.View import View
 from ..XY.Chart import Chart
 from ..XY.DefaultChartOptions import DefaultChartOptions
 from ..XY.DefaultPlot import DefaultPlot
@@ -64,6 +58,13 @@ from ..XY.XYCurve import XYCurve
 from ..XY.XYData import XYData
 from ..XY.XYPlot import XYPlot
 from ..XY.XYReportOptions import XYReportOptions
+from .AutoColors import AutoColors
+from .Color import Color
+from .Drawing import Drawing
+from .Image import Image
+from .JournalOptions import JournalOptions
+from .MemoryReductionOptions import MemoryReductionOptions
+from .NetworkDatabaseConnector import NetworkDatabaseConnector
 
 
 @abaqus_class_doc

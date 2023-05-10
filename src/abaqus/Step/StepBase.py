@@ -16,7 +16,7 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..TableCollection.ActivateElements import ActivateElements
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 
 
 @abaqus_class_doc
