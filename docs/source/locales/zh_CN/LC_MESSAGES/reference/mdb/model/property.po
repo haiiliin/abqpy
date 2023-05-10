@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../reference/mdb/model/property.md:3
 msgid ""
-"The Property commands are used to create and manage reinforcements and to"
-" assign properties to a part. (See also Material commands and Section "
+"The Property commands are used to create and manage reinforcements and to "
+"assign properties to a part. (See also Material commands and Section "
 "commands.) The Property commands are methods of a Part object."
 msgstr ""
 
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
-"An Int specifying that feature parameters have been modified but that the"
-" part has not been regenerated."
+"An Int specifying that feature parameters have been modified but that the "
+"part has not been regenerated."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -97,11 +97,13 @@ msgid "An EdgeArray object specifying all the edges in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
+msgid ""
+":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "An IgnoredEdgeArray object specifying all the ignored edges in the part."
+msgid ""
+"An IgnoredEdgeArray object specifying all the ignored edges in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -125,11 +127,13 @@ msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Feature objects specifying all the features in the part."
+msgid ""
+"A repository of Feature objects specifying all the features in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
+msgid ""
+":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -165,7 +169,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
+msgid ""
+":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -183,7 +188,8 @@ msgid "A MeshNodeArray object specifying all the nodes in the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
+msgid ""
+":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -197,7 +203,8 @@ msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Set objects specifying for more information, see Set."
+msgid ""
+"A repository of Set objects specifying for more information, see Set."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -237,8 +244,8 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 "A repository of Surface objects specifying the contents of the "
-"**allSurfaces** repository is the same as the contents of the "
-"**surfaces** repository."
+"**allSurfaces** repository is the same as the contents of the **surfaces**"
+" repository."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -256,7 +263,8 @@ msgid ":py:obj:`skins <abaqus.Part.PartBase.PartBase.skins>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid "A repository of Skin objects specifying the skins created on the part."
+msgid ""
+"A repository of Skin objects specifying the skins created on the part."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -330,7 +338,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
+msgid ""
+":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -415,15 +424,15 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`assignBeamSectionOrientation "
-"<abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation>`\\"
-" \\(region\\, method\\, n1\\)"
+":py:obj:`assignBeamSectionOrientation <abaqus.Property.PropertyPart.Proper"
+"tyPart.assignBeamSectionOrientation>`\\ \\(region\\, method\\, n1\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 #: abaqus.Property.Property.assignBeamSectionOrientation:1
 #: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:1 of
-msgid "This method assigns a beam section orientation to a region of a part."
+msgid ""
+"This method assigns a beam section orientation to a region of a part."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -455,8 +464,8 @@ msgstr ""
 #: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`flipNormal "
-"<abaqus.Property.PropertyPart.PropertyPart.flipNormal>`\\ "
-"\\(regions\\[\\, referenceRegion\\]\\)"
+"<abaqus.Property.PropertyPart.PropertyPart.flipNormal>`\\ \\(regions\\[\\,"
+" referenceRegion\\]\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1 abaqus.Property.Property.flipNormal:1
@@ -475,15 +484,14 @@ msgstr ""
 #: ../../None:13:<autosummary>:1 abaqus.Property.Property.flipTangent:1
 #: abaqus.Property.PropertyPart.PropertyPart.flipTangent:1 of
 msgid ""
-"This method flips the tangents of beam or truss elements of an orphan "
-"mesh or of one-dimensional geometric regions."
+"This method flips the tangents of beam or truss elements of an orphan mesh"
+" or of one-dimensional geometric regions."
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
 msgid ""
-":py:obj:`unassignBeamSectionOrientation "
-"<abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation>`\\"
-" \\(index\\)"
+":py:obj:`unassignBeamSectionOrientation <abaqus.Property.PropertyPart.Prop"
+"ertyPart.unassignBeamSectionOrientation>`\\ \\(index\\)"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -559,9 +567,9 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object by extruding an existing two-"
-"dimensional orphan mesh Part object in the positive **Z** direction and "
-"places it in the parts repository."
+"This method creates a Part object by extruding an existing two-dimensional"
+" orphan mesh Part object in the positive **Z** direction and places it in "
+"the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -572,7 +580,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method creates a Part object and places it in the parts repository."
+msgid ""
+"This method creates a Part object and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -585,8 +594,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 "This method creates a Part object containing the mesh found in the "
-"supplied PartInstance objects and places the new Part object in the parts"
-" repository."
+"supplied PartInstance objects and places the new Part object in the parts "
+"repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -611,8 +620,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 "This method creates a Part object by mirroring an existing orphan mesh "
-"Part object about a specified plane and places it in the parts "
-"repository."
+"Part object about a specified plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -624,8 +632,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object from nodes and elements and places it "
-"in the parts repository."
+"This method creates a Part object from nodes and elements and places it in"
+" the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -643,15 +651,14 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromSection3DMeshByPlane "
-"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ "
-"\\(name\\, part\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ \\(name\\,"
+" part\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method creates a Part object by cutting an existing three-"
-"dimensional orphan mesh Part object by a plane and places it in the parts"
-" repository."
+"This method creates a Part object by cutting an existing three-dimensional"
+" orphan mesh Part object by a plane and places it in the parts repository."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -670,8 +677,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`Part2DGeomFrom2DMesh "
-"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, "
-"part\\, featureAngle\\)"
+"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, part\\,"
+" featureAngle\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -757,8 +764,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\"
-" \\(featureNames\\)"
+":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -767,8 +774,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ "
-"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ \\(plane1\\,"
+" plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -777,8 +784,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ "
-"\\(faces\\[\\, relativeAccuracy\\]\\)"
+":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ \\(faces\\[\\,"
+" relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -794,7 +801,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the paths to the associated CAD part and root file."
+msgid ""
+"This method returns the paths to the associated CAD part and root file."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -805,8 +813,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method returns the names and values of the CAD parameters associated"
-" with the part."
+"This method returns the names and values of the CAD parameters associated "
+"with the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -816,13 +824,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "Location of the centroid of a given face/cell or group of faces/cells."
+msgid ""
+"Location of the centroid of a given face/cell or group of faces/cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\"
-" \\(entity\\)"
+":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\ "
+"\\(entity\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -870,7 +879,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the total perimeter of a given face or group of faces."
+msgid ""
+"This method returns the total perimeter of a given face or group of faces."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -880,7 +890,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method returns the volume area of a given cell or group of cells."
+msgid ""
+"This method returns the volume area of a given cell or group of cells."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -938,8 +949,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method returns a sequence of ConstrainedSketchVertex objects that "
-"are created by the given feature."
+"This method returns a sequence of ConstrainedSketchVertex objects that are"
+" created by the given feature."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -962,8 +973,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method prints information on each section that has been assigned to "
-"a region of the part."
+"This method prints information on each section that has been assigned to a"
+" region of the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1046,7 +1057,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
+msgid ""
+":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1060,7 +1072,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method prints any regeneration warnings associated with the features."
+msgid ""
+"This method prints any regeneration warnings associated with the features."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1079,8 +1092,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method restores the parameters of all features in the assembly to "
-"the value they had before a failed regeneration."
+"This method restores the parameters of all features in the assembly to the"
+" value they had before a failed regeneration."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1095,8 +1108,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\"
-" \\(featureNames\\)"
+":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1110,7 +1123,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid "This method resumes the last set of features to be suppressed in the part."
+msgid ""
+"This method resumes the last set of features to be suppressed in the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1126,8 +1140,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`setAssociatedCADPaths "
-"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ "
-"\\(\\[partFile\\, rootFile\\]\\)"
+"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ \\(\\[partFile\\,"
+" rootFile\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1208,15 +1222,15 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, "
-"faces\\, elemFaces\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, faces\\,"
+" elemFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method copies a mesh pattern from a source region consisting of a "
-"set of shell elements or element faces onto a target face, mapping nodes "
-"and elements in a one-one correspondence between source and target."
+"This method copies a mesh pattern from a source region consisting of a set"
+" of shell elements or element faces onto a target face, mapping nodes and "
+"elements in a one-one correspondence between source and target."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1227,8 +1241,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-"This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh."
+"This method smooths the given nodes of a native mesh, moving them locally "
+"to a more optimal location that improves the quality of the mesh."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1249,8 +1263,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\"
-" \\(\\)"
+":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -1288,9 +1302,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by creating a planar wire from the given ConstrainedSketch "
-"object."
+"This method creates a first Feature object for an analytical rigid surface"
+" by creating a planar wire from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1302,9 +1315,9 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by extruding the given ConstrainedSketch object by the given "
-"depth, creating a surface."
+"This method creates a first Feature object for an analytical rigid surface"
+" by extruding the given ConstrainedSketch object by the given depth, "
+"creating a surface."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1316,9 +1329,9 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object for an analytical rigid "
-"surface by revolving the given ConstrainedSketch object by 360° about the"
-" **Y** axis."
+"This method creates a first Feature object for an analytical rigid surface"
+" by revolving the given ConstrainedSketch object by 360° about the **Y** "
+"axis."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1329,7 +1342,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid "This method assign a mid-surface property to sequence of Cell objects."
+msgid ""
+"This method assign a mid-surface property to sequence of Cell objects."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1380,8 +1394,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object by creating a planar shell "
-"from the given ConstrainedSketch object."
+"This method creates a first Feature object by creating a planar shell from"
+" the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1432,8 +1446,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a first Feature object by creating a planar wire from"
-" the given ConstrainedSketch object."
+"This method creates a first Feature object by creating a planar wire from "
+"the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1444,8 +1458,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates a Feature object by creating new faces that blends "
-"two sets of faces."
+"This method creates a Feature object by creating new faces that blends two"
+" sets of faces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1481,8 +1495,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method attempts to change entities into a simpler form that will "
-"speed up processing and make entities available during feature "
-"operations."
+"speed up processing and make entities available during feature operations."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1556,8 +1569,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by revolving the given "
-"ConstrainedSketch object by the given angle and cutting away material "
-"from the part."
+"ConstrainedSketch object by the given angle and cutting away material from"
+" the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1569,20 +1582,20 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object along a path which may be a ConstrainedSketch or"
-" a sequence of Edge objects and cutting away material from the part."
+"ConstrainedSketch object along a path which may be a ConstrainedSketch or "
+"a sequence of Edge objects and cutting away material from the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\"
-" \\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
+":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\ "
+"\\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method extends faces along its free edges by offsetting the external"
-" edges along the surfaces."
+"This method extends faces along its free edges by offsetting the external "
+"edges along the surfaces."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1629,15 +1642,15 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`HoleThruAllFromEdges "
-"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\,"
-" planeSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\, "
+"planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by creating a circular "
-"through hole of the given diameter and cutting away material in the solid"
-" and shell regions of the part."
+"through hole of the given diameter and cutting away material in the solid "
+"and shell regions of the part."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1654,8 +1667,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\"
-" \\(faceList\\[\\, distance\\, ...\\]\\)"
+":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\ "
+"\\(faceList\\[\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1664,8 +1677,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\"
-" \\(cellList\\)"
+":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\ "
+"\\(cellList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1674,12 +1687,13 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\"
-" \\(faceList\\[\\, deleteCells\\]\\)"
+":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\ "
+"\\(faceList\\[\\, deleteCells\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
-msgid "This method removes faces from a solid entity or from a shell entity."
+msgid ""
+"This method removes faces from a solid entity or from a shell entity."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1722,8 +1736,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairInvalidEdges "
-"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ "
-"\\(edgeList\\)"
+"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ \\(edgeList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1733,8 +1746,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairSliver "
-"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, "
-"point1\\, point2\\[\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, point1\\,"
+" point2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1776,8 +1789,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ "
-"\\(radius\\, edgeList\\, vertexList\\)"
+":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ \\(radius\\,"
+" edgeList\\, vertexList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1845,9 +1858,9 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by sweeping the given "
-"ConstrainedSketch object or a sequence of Edge objects along a path which"
-" may be a ConstrainedSketch or a sequence of Edge objects, creating a "
-"shell swept protrusion."
+"ConstrainedSketch object or a sequence of Edge objects along a path which "
+"may be a ConstrainedSketch or a sequence of Edge objects, creating a shell"
+" swept protrusion."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1922,8 +1935,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates an additional Feature object by creating a planar "
-"wire from the given ConstrainedSketch object."
+"This method creates an additional Feature object by creating a planar wire"
+" from the given ConstrainedSketch object."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1934,8 +1947,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-"This method creates an additional Feature object by creating a spline "
-"wire that passes through a sequence of given points."
+"This method creates an additional Feature object by creating a spline wire"
+" that passes through a sequence of given points."
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -1983,8 +1996,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object by creating attachment points along "
-"a direction or between two points."
+"This method creates a Feature object by creating attachment points along a"
+" direction or between two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2008,8 +2021,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"axis of a cylinder or cone."
+"This method creates a Feature object and a DatumAxis object along the axis"
+" of a cylinder or cone."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2021,8 +2034,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" specified plane and passing through the specified point."
+"This method creates a Feature object and a DatumAxis object normal to the "
+"specified plane and passing through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2066,8 +2079,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" circle described by three points and through its center."
+"This method creates a Feature object and a DatumAxis object normal to the "
+"circle described by three points and through its center."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2104,8 +2117,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"line joining two points."
+"This method creates a Feature object and a DatumAxis object along the line"
+" joining two points."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2130,8 +2143,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumCsys object by offsetting"
-" the origin of an existing datum coordinate system to a specified point."
+"This method creates a Feature object and a DatumCsys object by offsetting "
+"the origin of an existing datum coordinate system to a specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2150,8 +2163,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByTwoLines "
-"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
-"\\(coordSysType\\, line1\\, line2\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ \\(coordSysType\\,"
+" line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2188,8 +2201,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPlane object by rotating "
-"a plane about the specified axis through the specified angle."
+"This method creates a Feature object and a DatumPlane object by rotating a"
+" plane about the specified axis through the specified angle."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2228,8 +2241,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPlane object normal to "
-"the specified line and running through the specified point."
+"This method creates a Feature object and a DatumPlane object normal to the"
+" specified line and running through the specified point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2253,8 +2266,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object at the point"
-" defined by the specified coordinates."
+"This method creates a Feature object and a DatumPoint object at the point "
+"defined by the specified coordinates."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2286,8 +2299,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOnFace "
-"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
-"edge1\\, offset1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, edge1\\,"
+" offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2305,8 +2318,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge at a selected distance from one end of the edge."
+"This method creates a Feature object and a DatumPoint object along an edge"
+" at a selected distance from one end of the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2318,8 +2331,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge by projecting an existing point along the normal to the edge."
+"This method creates a Feature object and a DatumPoint object along an edge"
+" by projecting an existing point along the normal to the edge."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2349,19 +2362,20 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more cells using the given datum plane."
+msgid ""
+"This method partitions one or more cells using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtendFace "
-"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
-" extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\, "
+"extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2373,8 +2387,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
-"\\(cells\\, edges\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ \\(cells\\,"
+" edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2399,8 +2413,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
-" edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\, "
+"edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2431,8 +2445,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more cells using a plane defined by a point"
-" and a normal direction."
+"This method partitions one or more cells using a plane defined by a point "
+"and a normal direction."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2457,19 +2471,20 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more cells by sweeping selected edges along"
-" the given sweep path."
+"This method partitions one or more cells by sweeping selected edges along "
+"the given sweep path."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions an edge where it intersects with a datum plane."
+msgid ""
+"This method partitions an edge where it intersects with a datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2538,19 +2553,20 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
-" datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\, "
+"datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more faces using the given datum plane."
+msgid ""
+"This method partitions one or more faces using the given datum plane."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
-" extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\, "
+"extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2568,8 +2584,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more faces using the given cutting faces to"
-" partition the target faces."
+"This method partitions one or more faces using the given cutting faces to "
+"partition the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2581,8 +2597,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-"This method partitions one or more faces by projecting the given edges on"
-" the target faces."
+"This method partitions one or more faces by projecting the given edges on "
+"the target faces."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2606,7 +2622,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more planar faces by sketching on them."
+msgid ""
+"This method partitions one or more planar faces by sketching on them."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2633,8 +2650,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 "This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through a distance"
-" governed by the reference point."
+"and then projecting the sketch toward the target faces through a distance "
+"governed by the reference point."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2652,9 +2669,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`ReferencePoint "
-"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
-"instanceName\\]\\)"
+":py:obj:`ReferencePoint <abaqus.Feature.Feature.Feature.ReferencePoint>`\\"
+" \\(point\\[\\, instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2724,7 +2740,8 @@ msgid "This method modifies the Feature object."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
+msgid ""
+":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2777,8 +2794,9 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup:16
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:9 of
 msgid ""
-"Check `CompositeLayup on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositelayuppyc.htm?contextscope=all>`__."
+"Check `CompositeLayup on help.3ds.com/2020 <https://help.3ds.com/2020/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"compositelayuppyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup
@@ -2827,11 +2845,11 @@ msgstr ""
 #: abaqus.Property.PropertyPart.CompositeLayup.offsetType:1
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:16 of
 msgid ""
-"A SymbolicConstant specifying the method used to define the shell offset."
-" If **offsetType** = OFFSET_FIELD the **offsetField** argument is "
-"required. This member is valid only if **elementType** = SHELL. Possible "
-"values are SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, BOTTOM_SURFACE, "
-"OFFSET_FIELD, and GLOBAL. The default value is GLOBAL."
+"A SymbolicConstant specifying the method used to define the shell offset. "
+"If **offsetType** = OFFSET_FIELD the **offsetField** argument is required."
+" This member is valid only if **elementType** = SHELL. Possible values are"
+" SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, BOTTOM_SURFACE, OFFSET_FIELD, "
+"and GLOBAL. The default value is GLOBAL."
 msgstr ""
 
 #: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup:35
@@ -2858,9 +2876,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.CompositeLayup.elementType:1
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:27 of
 msgid ""
-"A SymbolicConstant specifying the type of element in the composite layup."
-" Possible values are SHELL, CONTINUUM_SHELL, and SOLID. The default value"
-" is SHELL."
+"A SymbolicConstant specifying the type of element in the composite layup. "
+"Possible values are SHELL, CONTINUUM_SHELL, and SOLID. The default value "
+"is SHELL."
 msgstr ""
 
 #: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup:44
@@ -2869,8 +2887,8 @@ msgstr ""
 #: abaqus.Property.PropertyPart.CompositeLayup.symmetric:1
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:30 of
 msgid ""
-"A Boolean specifying whether or not the layup should be made symmetric by"
-" the analysis. The default value is OFF."
+"A Boolean specifying whether or not the layup should be made symmetric by "
+"the analysis. The default value is OFF."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup
@@ -2932,8 +2950,9 @@ msgstr ""
 #: abaqus.Property.MaterialOrientation.MaterialOrientation:16
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:9 of
 msgid ""
-"Check `MaterialOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialorientationpyc.htm?contextscope=all>`__."
+"Check `MaterialOrientation on help.3ds.com/2020 <https://help.3ds.com/2020"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"materialorientationpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:26
@@ -2950,9 +2969,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:14 of
 msgid ""
 "A DatumCsys object specifying the local coordinate system or None, "
-"describing the material orientation for the given region. In the ODB, "
-"this member was previously accessible using \"csys,\" but support has now"
-" been added for localCsys and the csys member will be deprecated."
+"describing the material orientation for the given region. In the ODB, this"
+" member was previously accessible using \"csys,\" but support has now been"
+" added for localCsys and the csys member will be deprecated."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:33
@@ -2960,10 +2979,10 @@ msgstr ""
 #: abaqus.Property.PropertyPart.MaterialOrientation.axis:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:19 of
 msgid ""
-"A SymbolicConstant specifying the axis of a datum coordinate system about"
-" which an additional rotation is applied. For shells this axis is also "
-"the shell normal. Possible values are AXIS_1, AXIS_2, and AXIS_3. The "
-"default value is AXIS_1."
+"A SymbolicConstant specifying the axis of a datum coordinate system about "
+"which an additional rotation is applied. For shells this axis is also the "
+"shell normal. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default "
+"value is AXIS_1."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:37
@@ -2971,9 +2990,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.MaterialOrientation.angle:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:23 of
 msgid ""
-"A Float specifying the angle of the additional rotation (if accessed from"
-" the ODB instead of the MDB, it will be a string instead of a float). The"
-" default value is 0.0."
+"A Float specifying the angle of the additional rotation (if accessed from "
+"the ODB instead of the MDB, it will be a string instead of a float). The "
+"default value is 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:40
@@ -3002,8 +3021,8 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the method used to define the material "
 "orientation. If **orientationType** = SYSTEM, the **region** and "
-"**localCsys** arguments are required. If **orientationType** = FIELD, the"
-" **fieldName** argument is required. Possible values are GLOBAL, SYSTEM, "
+"**localCsys** arguments are required. If **orientationType** = FIELD, the "
+"**fieldName** argument is required. Possible values are GLOBAL, SYSTEM, "
 "FIELD, DISCRETE, and USER. The default value is GLOBAL."
 msgstr ""
 
@@ -3012,9 +3031,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.MaterialOrientation.normalAxisDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:37 of
 msgid ""
-"A SymbolicConstant specifying the axis that is defined by the normal axis"
-" direction for a discrete orientation. Possible values are AXIS_1, "
-"AXIS_2, and AXIS_3. The default value is AXIS_3."
+"A SymbolicConstant specifying the axis that is defined by the normal axis "
+"direction for a discrete orientation. Possible values are AXIS_1, AXIS_2, "
+"and AXIS_3. The default value is AXIS_3."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:55
@@ -3067,9 +3086,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.MaterialOrientation.primaryAxisDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:57 of
 msgid ""
-"A SymbolicConstant specifying the axis that is defined by the primary "
-"axis direction for a discrete orientation. Possible values are AXIS_1, "
-"AXIS_2, and AXIS_3. The default value is AXIS_1."
+"A SymbolicConstant specifying the axis that is defined by the primary axis"
+" direction for a discrete orientation. Possible values are AXIS_1, AXIS_2,"
+" and AXIS_3. The default value is AXIS_1."
 msgstr ""
 
 #: ../../docstring abaqus.Property.MaterialOrientation.MaterialOrientation:75
@@ -3131,8 +3150,9 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:10
 #: abaqus.Property.SectionAssignment.SectionAssignment:18 of
 msgid ""
-"Check `SectionAssignment on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectionassignmentpyc.htm?contextscope=all>`__."
+"Check `SectionAssignment on help.3ds.com/2020 <https://help.3ds.com/2020/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"sectionassignmentpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3179,9 +3199,9 @@ msgstr ""
 #: abaqus.Property.SectionAssignment.SectionAssignment:38
 #: abaqus.Property.SectionAssignmentArray.SectionAssignment.offsetType:1 of
 msgid ""
-"A SymbolicConstant specifying the method used to define the shell offset."
-" If **offsetType** is set to OFFSET_FIELD the **offsetField** must have a"
-" value. Possible values are SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, "
+"A SymbolicConstant specifying the method used to define the shell offset. "
+"If **offsetType** is set to OFFSET_FIELD the **offsetField** must have a "
+"value. Possible values are SINGLE_VALUE, MIDDLE_SURFACE, TOP_SURFACE, "
 "BOTTOM_SURFACE, FROM_GEOMETRY, and OFFSET_FIELD. The default value is "
 "SINGLE_VALUE."
 msgstr ""
@@ -3208,16 +3228,17 @@ msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:9 of
 msgid ""
-"Check `PropertyPart.assignBeamSectionOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partassignbeamsectionorientationpyc>`__."
+"Check `PropertyPart.assignBeamSectionOrientation on help.3ds.com/2020 <htt"
+"ps://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/sima"
+"ker-c-partpyc.htm?contextscope=all#simaker-"
+"partassignbeamsectionorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.assignBeamSectionOrientation:12
 #: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:12 of
 msgid ""
-"A sequence of geomSequences of Edge objects or a sequence of sequences of"
-" one-dimensional elements."
+"A sequence of geomSequences of Edge objects or a sequence of sequences of "
+"one-dimensional elements."
 msgstr ""
 
 #: abaqus.Property.Property.assignBeamSectionOrientation:15
@@ -3230,15 +3251,16 @@ msgstr ""
 #: abaqus.Property.Property.assignBeamSectionOrientation:18
 #: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:18 of
 msgid ""
-"A sequence of three Floats specifying the approximate local "
-"n1n1-direction of the beam cross-section."
+"A sequence of three Floats specifying the approximate local n1n1-direction"
+" of the beam cross-section."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:9 of
 msgid ""
-"Check `PropertyPart.assignMaterialOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partassignmaterialorientationpyc>`__."
+"Check `PropertyPart.assignMaterialOrientation on help.3ds.com/2020 <https:"
+"//help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker"
+"-c-partpyc.htm?contextscope=all#simaker-"
+"partassignmaterialorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.assignMaterialOrientation:12
@@ -3255,8 +3277,8 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:15
 #: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:15 of
 msgid ""
-"A Datum object specifying the local coordinate system or None, indicating"
-" the global coordinate system."
+"A Datum object specifying the local coordinate system or None, indicating "
+"the global coordinate system."
 msgstr ""
 
 #: abaqus.Property.Property.assignMaterialOrientation:18
@@ -3264,10 +3286,10 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:18
 #: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:18 of
 msgid ""
-"A SymbolicConstant specifying the axis of a cylindrical or spherical "
-"datum coordinate system about which an additional rotation is applied. "
-"For shells this axis is also the shell normal. Possible values are "
-"AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1."
+"A SymbolicConstant specifying the axis of a cylindrical or spherical datum"
+" coordinate system about which an additional rotation is applied. For "
+"shells this axis is also the shell normal. Possible values are AXIS_1, "
+"AXIS_2, and AXIS_3. The default value is AXIS_1."
 msgstr ""
 
 #: abaqus.Property.Property.assignMaterialOrientation:23
@@ -3275,31 +3297,31 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:23
 #: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:23 of
 msgid ""
-"A Float specifying the angle of the additional rotation. The default "
-"value is 0.0."
+"A Float specifying the angle of the additional rotation. The default value"
+" is 0.0."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:9 of
 msgid ""
-"Check `PropertyPart.assignRebarOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partassignrebarorientationpyc>`__."
+"Check `PropertyPart.assignRebarOrientation on help.3ds.com/2020 <https://h"
+"elp.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partassignrebarorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.flipNormal:10 of
 msgid ""
-"Check `PropertyPart.flipNormal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partflipnormalpyc>`__."
+"Check `PropertyPart.flipNormal on help.3ds.com/2020 <https://help.3ds.com/"
+"2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partflipnormalpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.flipNormal:13
 #: abaqus.Property.PropertyPart.PropertyPart.flipNormal:13 of
 msgid ""
-"A Region object specifying the region on which normals are flipped. For "
-"3D parts, the region contains Face objects or two-dimensional triangle or"
-" quadrilateral Element objects. For axisymmetric parts, the region "
-"contains Edge objects or line Elements objects."
+"A Region object specifying the region on which normals are flipped. For 3D"
+" parts, the region contains Face objects or two-dimensional triangle or "
+"quadrilateral Element objects. For axisymmetric parts, the region contains"
+" Edge objects or line Elements objects."
 msgstr ""
 
 #: abaqus.Property.Property.flipNormal:18
@@ -3314,9 +3336,9 @@ msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.flipTangent:10 of
 msgid ""
-"Check `PropertyPart.flipTangent on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partfliptangentpyc>`__."
+"Check `PropertyPart.flipTangent on help.3ds.com/2020 <https://help.3ds.com"
+"/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"partpyc.htm?contextscope=all#simaker-partfliptangentpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.flipTangent:13
@@ -3329,43 +3351,47 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:9
 #: of
 msgid ""
-"Check `PropertyPart.unassignBeamSectionOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partunassignbeamsectionorientationpyc>`__."
+"Check `PropertyPart.unassignBeamSectionOrientation on help.3ds.com/2020 <h"
+"ttps://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/si"
+"maker-c-partpyc.htm?contextscope=all#simaker-"
+"partunassignbeamsectionorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignBeamSectionOrientation:12
 #: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:12
 #: of
 msgid ""
-"An Int specifying the number of the beam section orientation assignment "
-"to be deleted."
+"An Int specifying the number of the beam section orientation assignment to"
+" be deleted."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:9 of
 msgid ""
-"Check `PropertyPart.unassignMaterialOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partunassignmaterialorientationpyc>`__."
+"Check `PropertyPart.unassignMaterialOrientation on help.3ds.com/2020 <http"
+"s://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simak"
+"er-c-partpyc.htm?contextscope=all#simaker-"
+"partunassignmaterialorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignMaterialOrientation:12
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:12 of
-msgid "An Int specifying the number of the material assignment to be deleted."
+msgid ""
+"An Int specifying the number of the material assignment to be deleted."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:9 of
 msgid ""
-"Check `PropertyPart.unassignRebarOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
-"#simaker-partunassignrebarorientationpyc>`__."
+"Check `PropertyPart.unassignRebarOrientation on help.3ds.com/2020 <https:/"
+"/help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-partpyc.htm?contextscope=all#simaker-"
+"partunassignrebarorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignRebarOrientation:12
 #: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:12 of
 msgid ""
-"An Int specifying the number of the rebar reference orientation "
-"assignment to be deleted."
+"An Int specifying the number of the rebar reference orientation assignment"
+" to be deleted."
 msgstr ""
 
 #: ../../reference/mdb/model/property.md:16
@@ -3381,7 +3407,8 @@ msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup:1 of
-msgid "The CompositeLayup object is used to specify a composite layup on a part."
+msgid ""
+"The CompositeLayup object is used to specify a composite layup on a part."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup:4
@@ -3421,8 +3448,9 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:9
 #: abaqus.Property.CompositePly.CompositePly:10 of
 msgid ""
-"Check `CompositePly on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositeplypyc.htm?contextscope=all>`__."
+"Check `CompositePly on help.3ds.com/2020 <https://help.3ds.com/2020/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"compositeplypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3436,7 +3464,8 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:14
 #: abaqus.Property.CompositePly.CompositePly:22
 #: abaqus.Property.CompositePlyArray.CompositePly.region:1 of
-msgid "A Region object specifying the region to which the composite ply applies."
+msgid ""
+"A Region object specifying the region to which the composite ply applies."
 msgstr ""
 
 #: ../../docstring
@@ -3451,8 +3480,8 @@ msgstr ""
 #: abaqus.Property.CompositePly.CompositePly:26
 #: abaqus.Property.CompositePlyArray.CompositePly.plyName:1 of
 msgid ""
-"A String specifying the ply identifier for this section layer. The "
-"default value is an empty string."
+"A String specifying the ply identifier for this section layer. The default"
+" value is an empty string."
 msgstr ""
 
 #: ../../docstring
@@ -3464,14 +3493,14 @@ msgid ""
 "orientation. If **orientationType** = SPECIFY_ORIENT the "
 "**orientationValue** argument is required. If **orientationType** = CSYS "
 "the **orientation** argument is required. Possible values are CSYS, "
-"SPECIFY_ORIENT, ANGLE_0, ANGLE_45, ANGLE_90, and ANGLE_NEG45. The default"
-" value is ANGLE_0."
+"SPECIFY_ORIENT, ANGLE_0, ANGLE_45, ANGLE_90, and ANGLE_NEG45. The default "
+"value is ANGLE_0."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:27 of
 msgid ""
-"A SymbolicConstant specifying the method used to define the thickness. If"
-" **thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is "
+"A SymbolicConstant specifying the method used to define the thickness. If "
+"**thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is "
 "required. Possible values are SPECIFY_THICKNESS, FIELD_THICKNESS, and "
 "ANALYTICAL_FIELD_THICKNESS. The default value is SPECIFY_THICKNESS."
 msgstr ""
@@ -3490,8 +3519,8 @@ msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
 "object used to define the thickness of the shell elements and composite "
 "ply. The **thicknessField** argument applies when **thicknessType** = "
-"ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD for shell elements"
-" and **thicknessType** = FIELD_THICKNESS or **thicknessType** = "
+"ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD for shell elements "
+"and **thicknessType** = FIELD_THICKNESS or **thicknessType** = "
 "ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an "
 "empty string."
 msgstr ""
@@ -3501,9 +3530,9 @@ msgstr ""
 #: abaqus.Property.CompositePly.CompositePly:48
 #: abaqus.Property.CompositePlyArray.CompositePly.numIntPts:1 of
 msgid ""
-"An Int specifying the number of integration points to be used through the"
-" section layer. This argument is valid only if **preIntegrate** = OFF. "
-"The default value is 3."
+"An Int specifying the number of integration points to be used through the "
+"section layer. This argument is valid only if **preIntegrate** = OFF. The "
+"default value is 3."
 msgstr ""
 
 #: ../../docstring
@@ -3511,12 +3540,11 @@ msgstr ""
 #: abaqus.Property.CompositePly.CompositePly:51
 #: abaqus.Property.CompositePlyArray.CompositePly.axis:1 of
 msgid ""
-"A SymbolicConstant specifying the axis of a cylindrical or spherical "
-"datum coordinate system about which an additional rotation is applied. "
-"For shells this axis is also the shell normal. The **axis** argument "
-"applies only if a valid reference is provided for the **orientation**. "
-"Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is "
-"AXIS_1."
+"A SymbolicConstant specifying the axis of a cylindrical or spherical datum"
+" coordinate system about which an additional rotation is applied. For "
+"shells this axis is also the shell normal. The **axis** argument applies "
+"only if a valid reference is provided for the **orientation**. Possible "
+"values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_1."
 msgstr ""
 
 #: ../../docstring
@@ -3535,8 +3563,8 @@ msgstr ""
 #: abaqus.Property.CompositePlyArray.CompositePly.additionalRotationType:1 of
 msgid ""
 "A SymbolicConstant specifying the method used to describe the additional "
-"rotation when a valid orientation is specified. Use **orientationType** ="
-" ANGLE_0 and **additionalRotationType** = ROTATION_FIELD to specify a "
+"rotation when a valid orientation is specified. Use **orientationType** = "
+"ANGLE_0 and **additionalRotationType** = ROTATION_FIELD to specify a "
 "discrete field of rotations for this CompositePly. Possible values are "
 "ROTATION_NONE, ROTATION_ANGLE, and ROTATION_FIELD. The default value is "
 "ROTATION_NONE."
@@ -3577,8 +3605,9 @@ msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:9 of
 msgid ""
-"Check `CompositeShellSection on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositeshellsectionpyc.htm?contextscope=all>`__."
+"Check `CompositeShellSection on help.3ds.com/2020 <https://help.3ds.com/20"
+"20/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"compositeshellsectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:14 of
@@ -3590,8 +3619,8 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:24 of
 msgid ""
 "A SymbolicConstant specifying the distribution used for defining the "
-"thickness of the elements. Possible values are UNIFORM, ANALYTICAL_FIELD,"
-" DISCRETE_FIELD, NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The "
+"thickness of the elements. Possible values are UNIFORM, ANALYTICAL_FIELD, "
+"DISCRETE_FIELD, NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The "
 "default value is UNIFORM."
 msgstr ""
 
@@ -3599,8 +3628,8 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:26
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:28 of
 msgid ""
-"A Boolean specifying whether the shell section properties are specified "
-"by the user prior to the analysis (ON) or integrated during the analysis "
+"A Boolean specifying whether the shell section properties are specified by"
+" the user prior to the analysis (ON) or integrated during the analysis "
 "(OFF). The default value is OFF."
 msgstr ""
 
@@ -3609,9 +3638,9 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:32 of
 msgid ""
 "A SymbolicConstant specifying whether to use the default value for the "
-"Poisson's ratio. Possible values are:DEFAULT, specifying that the default"
-" value for the Poisson's ratio is 0.5 in an Abaqus/Standard analysis and "
-"is obtained from the material definition in an Abaqus/Explicit "
+"Poisson's ratio. Possible values are:DEFAULT, specifying that the default "
+"value for the Poisson's ratio is 0.5 in an Abaqus/Standard analysis and is"
+" obtained from the material definition in an Abaqus/Explicit "
 "analysis.VALUE, specifying that the Poisson's ratio used in the analysis "
 "is the value provided in **poisson**.The default value is DEFAULT."
 msgstr ""
@@ -3621,16 +3650,16 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:38 of
 msgid ""
 "A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ "
-"**poisson** ≤ 0.5. This argument is valid only when **poissonDefinition**"
-" = VALUE. The default value is 0.5."
+"**poisson** ≤ 0.5. This argument is valid only when **poissonDefinition** "
+"= VALUE. The default value is 0.5."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:36
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:39
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:41 of
 msgid ""
-"A SymbolicConstant specifying the shell section integration rule. "
-"Possible values are SIMPSON and GAUSS. The default value is SIMPSON."
+"A SymbolicConstant specifying the shell section integration rule. Possible"
+" values are SIMPSON and GAUSS. The default value is SIMPSON."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:39
@@ -3638,18 +3667,17 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:44 of
 msgid ""
 "A SymbolicConstant specifying the mode used for temperature and field "
-"variable input across the section thickness. Possible values are GRADIENT"
-" and POINTWISE. The default value is GRADIENT."
+"variable input across the section thickness. Possible values are GRADIENT "
+"and POINTWISE. The default value is GRADIENT."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:43
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:48 of
 msgid ""
 "A SymbolicConstant specifying the mechanical idealization used for the "
-"section calculations. This member is only applicable when "
-"**preIntegrate** is set to ON. Possible values are NO_IDEALIZATION, "
-"SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value is "
-"NO_IDEALIZATION."
+"section calculations. This member is only applicable when **preIntegrate**"
+" is set to ON. Possible values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, "
+"MEMBRANE, and BENDING. The default value is NO_IDEALIZATION."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:48
@@ -3657,17 +3685,17 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:53 of
 msgid ""
 "None or an Int specifying the number of temperature points to be input. "
-"This argument is valid only when **temperature** = POINTWISE. The default"
-" value is None."
+"This argument is valid only when **temperature** = POINTWISE. The default "
+"value is None."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:51
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:49
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:56 of
 msgid ""
-"None or a Float specifying the effective thickness modulus. This argument"
-" is relevant only for continuum shells and must be used in conjunction "
-"with the argument **poisson**. The default value is None."
+"None or a Float specifying the effective thickness modulus. This argument "
+"is relevant only for continuum shells and must be used in conjunction with"
+" the argument **poisson**. The default value is None."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:55
@@ -3688,8 +3716,8 @@ msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:61 of
 msgid ""
-"A String specifying the layup name for this section. The default value is"
-" an empty string."
+"A String specifying the layup name for this section. The default value is "
+"an empty string."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:64
@@ -3699,8 +3727,8 @@ msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
 "object used to define the thickness of the shell elements. The "
 "**thicknessField** argument applies only when **thicknessType** = "
-"ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default value"
-" is an empty string."
+"ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default value "
+"is an empty string."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:69
@@ -3709,9 +3737,9 @@ msgstr ""
 msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
 "object used to define the thickness of the shell elements at each node. "
-"The **nodalThicknessField** argument applies only when **thicknessType** "
-"= NODAL_ANALYTICAL_FIELD or **thicknessType** = NODAL_DISCRETE_FIELD. The"
-" default value is an empty string."
+"The **nodalThicknessField** argument applies only when **thicknessType** ="
+" NODAL_ANALYTICAL_FIELD or **thicknessType** = NODAL_DISCRETE_FIELD. The "
+"default value is an empty string."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:74 of
@@ -3728,8 +3756,9 @@ msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:9 of
 msgid ""
-"Check `GeometryShellSection on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geometryshellsectionpyc.htm?contextscope=all>`__."
+"Check `GeometryShellSection on help.3ds.com/2020 <https://help.3ds.com/202"
+"0/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"geometryshellsectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3748,8 +3777,9 @@ msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:9 of
 msgid ""
-"Check `HomogeneousShellSection on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-homogeneousshellsectionpyc.htm?contextscope=all>`__."
+"Check `HomogeneousShellSection on help.3ds.com/2020 <https://help.3ds.com/"
+"2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"homogeneousshellsectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:14 of
@@ -3759,16 +3789,16 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:16 of
 msgid ""
 "A Float specifying the thickness of the section. The **thickness** "
-"argument applies only when **thicknessType** = UNIFORM. The default value"
-" is 0.0."
+"argument applies only when **thicknessType** = UNIFORM. The default value "
+"is 0.0."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:19 of
 msgid ""
-"An Int specifying the number of integration points to be used through the"
-" section. Possible values are **numIntPts** > 0. The default value is "
-"5.To use the default settings of the analysis products, set **numIntPts**"
-" to 5 if **integrationRule** = SIMPSON or set **numIntPts** to 7 if "
+"An Int specifying the number of integration points to be used through the "
+"section. Possible values are **numIntPts** > 0. The default value is 5.To "
+"use the default settings of the analysis products, set **numIntPts** to 5 "
+"if **integrationRule** = SIMPSON or set **numIntPts** to 7 if "
 "**integrationRule** = GAUSS."
 msgstr ""
 
@@ -3797,7 +3827,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.resume:1 of
-msgid "This method resumes a composite layup that was previously suppressed."
+msgid ""
+"This method resumes a composite layup that was previously suppressed."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:1 of
@@ -3806,9 +3837,10 @@ msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:4 of
 msgid ""
-"Check `CompositeLayup.setValues on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositelayuppyc.htm?contextscope=all"
-"#simaker-compositelayupsetvaluespyc>`__."
+"Check `CompositeLayup.setValues on help.3ds.com/2020 <https://help.3ds.com"
+"/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"compositelayuppyc.htm?contextscope=all#simaker-"
+"compositelayupsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.suppress:1 of
@@ -3816,14 +3848,15 @@ msgid "This method suppresses a composite layup."
 msgstr ""
 
 #: abaqus.Property.CompositePly.CompositePly:1 of
-msgid "The CompositePly object defines the material layers in a composite layup."
+msgid ""
+"The CompositePly object defines the material layers in a composite layup."
 msgstr ""
 
 #: ../../docstring abaqus.Property.CompositePly.CompositePly:35
 #: abaqus.Property.CompositePlyArray.CompositePly.thicknessType:1 of
 msgid ""
-"A SymbolicConstant specifying the method used to define the thickness. If"
-" thicknessType=SPECIFY_THICKNESS, the thickness argument is required. "
+"A SymbolicConstant specifying the method used to define the thickness. If "
+"thicknessType=SPECIFY_THICKNESS, the thickness argument is required. "
 "Possible values are SPECIFY_THICKNESS and FIELD_THICKNESS. The default "
 "value is SPECIFY_THICKNESS."
 msgstr ""
@@ -3839,15 +3872,16 @@ msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation:1 of
 msgid ""
-"The MaterialOrientation object represents the orientation of the material"
-" properties and composite layups."
+"The MaterialOrientation object represents the orientation of the material "
+"properties and composite layups."
 msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:9
 #: of
 msgid ""
-"Check `ReferenceOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referenceorientationpyc.htm?contextscope=all>`__."
+"Check `ReferenceOrientation on help.3ds.com/2020 <https://help.3ds.com/202"
+"0/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"referenceorientationpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../docstring
@@ -3873,16 +3907,16 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the method used to define the normal axis "
-"direction for a discrete orientation. Possible values are SURFACE, DATUM,"
-" and VECTOR. The default value is VECTOR."
+"direction for a discrete orientation. Possible values are SURFACE, DATUM, "
+"and VECTOR. The default value is VECTOR."
 msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:66
 #: of
 msgid ""
 "A SymbolicConstant specifying the method used to define the primary axis "
-"direction for a discrete orientation. Possible values are EDGE, DATUM, "
-"and VECTOR. The default value is VECTOR."
+"direction for a discrete orientation. Possible values are EDGE, DATUM, and"
+" VECTOR. The default value is VECTOR."
 msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.setValues:1 of
@@ -3897,8 +3931,9 @@ msgstr ""
 
 #: abaqus.Property.PlyStackPlot.PlyStackPlot:11 of
 msgid ""
-"Check `PlyStackPlot on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-plystackplotpyc.htm?contextscope=all>`__."
+"Check `PlyStackPlot on help.3ds.com/2020 <https://help.3ds.com/2020/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"plystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:1 of
@@ -3909,8 +3944,9 @@ msgstr ""
 
 #: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:9 of
 msgid ""
-"Check `MdbPlyStackPlot on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbplystackplotpyc.htm?contextscope=all>`__."
+"Check `MdbPlyStackPlot on help.3ds.com/2020 <https://help.3ds.com/2020/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"mdbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.PlyStackPlot.MdbPlyStackPlot:12 of
@@ -3938,8 +3974,9 @@ msgstr ""
 
 #: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:9 of
 msgid ""
-"Check `OdbPlyStackPlot on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbplystackplotpyc.htm?contextscope=all>`__."
+"Check `OdbPlyStackPlot on help.3ds.com/2020 <https://help.3ds.com/2020/Eng"
+"lish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"odbplystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.PlyStackPlot.OdbPlyStackPlot:12 of
@@ -3958,58 +3995,66 @@ msgstr ""
 
 #: abaqus.Property.Property.assignBeamSectionOrientation:9 of
 msgid ""
-"Check `Property.assignBeamSectionOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyassignbeamsectionorientationpyc>`__."
+"Check `Property.assignBeamSectionOrientation on help.3ds.com/2020 <https:/"
+"/help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyassignbeamsectionorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.assignMaterialOrientation:9 of
 msgid ""
-"Check `Property.assignMaterialOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyassignmaterialorientationpyc>`__."
+"Check `Property.assignMaterialOrientation on help.3ds.com/2020 <https://he"
+"lp.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyassignmaterialorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.assignRebarOrientation:9 of
 msgid ""
-"Check `Property.assignRebarOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyassignrebarorientationpyc>`__."
+"Check `Property.assignRebarOrientation on help.3ds.com/2020 <https://help."
+"3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyassignrebarorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.flipNormal:10 of
 msgid ""
-"Check `Property.flipNormal on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyflipnormalpyc>`__."
+"Check `Property.flipNormal on help.3ds.com/2020 <https://help.3ds.com/2020"
+"/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyflipnormalpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.flipTangent:10 of
 msgid ""
-"Check `Property.flipTangent on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyfliptangentpyc>`__."
+"Check `Property.flipTangent on help.3ds.com/2020 <https://help.3ds.com/202"
+"0/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyfliptangentpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignBeamSectionOrientation:9 of
 msgid ""
-"Check `Property.unassignBeamSectionOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyunassignbeamsectionorientationpyc>`__."
+"Check `Property.unassignBeamSectionOrientation on help.3ds.com/2020 <https"
+"://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simake"
+"r-c-functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyunassignbeamsectionorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignMaterialOrientation:9 of
 msgid ""
-"Check `Property.unassignMaterialOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyunassignmaterialorientationpyc>`__."
+"Check `Property.unassignMaterialOrientation on help.3ds.com/2020 <https://"
+"help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-"
+"c-functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyunassignmaterialorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.Property.unassignRebarOrientation:9 of
 msgid ""
-"Check `Property.unassignRebarOrientation on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionpropertypyc.htm?contextscope=all"
-"#simaker-functionpropertyunassignrebarorientationpyc>`__."
+"Check `Property.unassignRebarOrientation on help.3ds.com/2020 <https://hel"
+"p.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionpropertypyc.htm?contextscope=all#simaker-"
+"functionpropertyunassignrebarorientationpyc>`__."
 msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly:1 of
@@ -4025,8 +4070,9 @@ msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly:11 of
 msgid ""
-"Check `PropertyAssembly on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
+"Check `PropertyAssembly on help.3ds.com/2020 <https://help.3ds.com/2020/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:30
@@ -4036,16 +4082,16 @@ msgstr ""
 
 #: abaqus.Property.SectionAssignment.SectionAssignment:1 of
 msgid ""
-"The SectionAssignment object is used to specify a section assignment on "
-"an assembly or part. Section assignments on the assembly are limited to "
+"The SectionAssignment object is used to specify a section assignment on an"
+" assembly or part. Section assignments on the assembly are limited to "
 "connector elements only."
 msgstr ""
 
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices:1 of
 msgid ""
 "This method is only valid for connector section assignments. This method "
-"returns a sequence consisting of tuples of coordinates of the connector's"
-" endpoints."
+"returns a sequence consisting of tuples of coordinates of the connector's "
+"endpoints."
 msgstr ""
 
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices:4 of
@@ -4064,7 +4110,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.Property.SectionAssignment.SectionAssignment.resume:1 of
-msgid "This method resumes the section assignment that was previously suppressed."
+msgid ""
+"This method resumes the section assignment that was previously suppressed."
 msgstr ""
 
 #: abaqus.Property.SectionAssignment.SectionAssignment.setValues:1 of
@@ -4078,8 +4125,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.SectionAssignmentArray.SectionAssignment.suppressed:1 of
 msgid ""
-"A Boolean specifying whether the section assignment is suppressed or not."
-" The default value is OFF."
+"A Boolean specifying whether the section assignment is suppressed or not. "
+"The default value is OFF."
 msgstr ""
 
 #~ msgid ""

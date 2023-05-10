@@ -34,10 +34,10 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:9
 msgid ""
 "You can define your own functions in Python. A function is like a "
-"subroutine in Fortran. You can pass arguments into a function, it "
-"performs the operation, and it can return one or more values. For "
-"example, the following function returns the distance of a point from the "
-"origin. The def statement starts a function definition."
+"subroutine in Fortran. You can pass arguments into a function, it performs"
+" the operation, and it can return one or more values. For example, the "
+"following function returns the distance of a point from the origin. The "
+"def statement starts a function definition."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:17
@@ -53,11 +53,10 @@ msgid ""
 "One of the methods provided by Abaqus uses as many as 50 arguments. Some "
 "of the arguments are required by the method; others are optional, and "
 "Abaqus provides an initial or default value. Fortunately, you can call a "
-"function or a method without providing every optional argument if you use"
-" Python's keyword arguments. A keyword specifies the argument that you "
-"are providing. Keyword arguments also make your scripts more readable. "
-"For example, the following defines a function called "
-"calculateCylinderVolume:"
+"function or a method without providing every optional argument if you use "
+"Python's keyword arguments. A keyword specifies the argument that you are "
+"providing. Keyword arguments also make your scripts more readable. For "
+"example, the following defines a function called calculateCylinderVolume:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:41
@@ -66,9 +65,9 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:47
 msgid ""
-"Here the arguments are called positional arguments because you are "
-"relying on their position in the function call to determine the variable "
-"to which they are assigned in the function—radius followed by height."
+"Here the arguments are called positional arguments because you are relying"
+" on their position in the function call to determine the variable to which"
+" they are assigned in the function—radius followed by height."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:49
@@ -84,8 +83,8 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:61
 msgid ""
 "You can define default values for an argument in a function definition. "
-"For example, the following sets the default value of radius to 0.5 and "
-"the default value of height to 1.0:"
+"For example, the following sets the default value of radius to 0.5 and the"
+" default value of height to 1.0:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:70
@@ -98,9 +97,9 @@ msgstr ""
 msgid ""
 "It is good programming practice to use a documentation string that "
 "indicates the purpose of a function and the arguments expected. A "
-"documentation string appears at the top of a function and is delimited by"
-" triple quotes \"\"\". You can use the \\_\\_doc\\_\\_ method to obtain "
-"the documentation string from a function while running the Python "
+"documentation string appears at the top of a function and is delimited by "
+"triple quotes \"\"\". You can use the \\_\\_doc\\_\\_ method to obtain the"
+" documentation string from a function while running the Python "
 "interpreter. For example,"
 msgstr ""
 
@@ -112,17 +111,17 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:112
 msgid ""
-"The documentation string shows the name of each argument name and whether"
-" the argument is required or optional. The string also shows a brief "
+"The documentation string shows the name of each argument name and whether "
+"the argument is required or optional. The string also shows a brief "
 "description of the method."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:114
 msgid ""
 "You can use the sys module to retrieve command line arguments and pass "
-"them to a function. For example, the following script takes two "
-"arguments—the X- and Y-coordinates of a point—and calculates the distance"
-" from the point to the origin. The script uses the following modules:"
+"them to a function. For example, the following script takes two arguments—"
+"the X- and Y-coordinates of a point—and calculates the distance from the "
+"point to the origin. The script uses the following modules:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:116
@@ -159,18 +158,18 @@ msgstr ""
 msgid ""
 "Dictionaries are a powerful tool in Python. A dictionary maps a variable "
 "to a set of data, much like a real dictionary maps a word to its "
-"definition, its pronunciation, and its synonyms. Dictionaries are similar"
-" to lists in that they are not homogeneous and can contain objects of any"
-" type. To access an object in a list, you provide the integer index that "
+"definition, its pronunciation, and its synonyms. Dictionaries are similar "
+"to lists in that they are not homogeneous and can contain objects of any "
+"type. To access an object in a list, you provide the integer index that "
 "specifies the position of the object in the list. For example,"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:181
 msgid ""
 "In contrast, you access an object in a dictionary through its key, which "
-"can be a string, an integer, or any type of immutable Python object. "
-"There is no implicit order to the keys in a dictionary. In most cases you"
-" will assign a string to the dictionary key. The key then becomes a more "
+"can be a string, an integer, or any type of immutable Python object. There"
+" is no implicit order to the keys in a dictionary. In most cases you will "
+"assign a string to the dictionary key. The key then becomes a more "
 "intuitive way to access the elements in a dictionary. You use square "
 "brackets and the dictionary key to access a particular object. For "
 "example,"
@@ -186,10 +185,10 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:209
 msgid ""
-"Dictionaries are not sequences, and you cannot apply sequence methods "
-"such as slicing and concatenating to dictionaries. Dictionaries have "
-"their own methods. The following statement lists the methods of the "
-"dictionary myPart."
+"Dictionaries are not sequences, and you cannot apply sequence methods such"
+" as slicing and concatenating to dictionaries. Dictionaries have their own"
+" methods. The following statement lists the methods of the dictionary "
+"myPart."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:217
@@ -204,15 +203,15 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:231
 msgid ""
-"The `items()` method returns a list of tuples. Each tuple contains the "
-"key and its value."
+"The `items()` method returns a list of tuples. Each tuple contains the key"
+" and its value."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:239
 msgid ""
-"You use the `has_key()` method to see if a key exists. A return value of "
-"1 indicates the key exists in the dictionary. A return value of 0 "
-"indicates the key does not exist."
+"You use the `has_key()` method to see if a key exists. A return value of 1"
+" indicates the key exists in the dictionary. A return value of 0 indicates"
+" the key does not exist."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:246
@@ -225,10 +224,9 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:260
 msgid ""
-"You can use the `keys()`, `values()`, or `items()` methods to loop "
-"through a dictionary. In the following example, `items()` returns two "
-"values; the first is assigned to property, and the second is assigned to "
-"setting."
+"You can use the `keys()`, `values()`, or `items()` methods to loop through"
+" a dictionary. In the following example, `items()` returns two values; the"
+" first is assigned to property, and the second is assigned to setting."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:273
@@ -237,8 +235,8 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:275
 msgid ""
-"Many of the file commands are built-in Python commands. You do not have "
-"to import a module to use file commands. You use the open() function to "
+"Many of the file commands are built-in Python commands. You do not have to"
+" import a module to use file commands. You use the open() function to "
 "create a file."
 msgstr ""
 
@@ -246,15 +244,15 @@ msgstr ""
 msgid ""
 "The first line opens an existing file in the crash_test directory called "
 "fender.txt. The file is opened in read-only mode; myInputFile is a "
-"variable that refers to a file object. The second line creates and opens "
-"a new file object in the local directory called peak_deflection.txt. This"
-" file is opened in read and write mode."
+"variable that refers to a file object. The second line creates and opens a"
+" new file object in the local directory called peak_deflection.txt. This "
+"file is opened in read and write mode."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:284
 msgid ""
-"Use the `__methods__` technique that we saw earlier to see the methods of"
-" a file object."
+"Use the `__methods__` technique that we saw earlier to see the methods of "
+"a file object."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:294
@@ -262,16 +260,16 @@ msgid ""
 "The `readline()` method reads a single line from a file into a string, "
 "including the new line character that terminates the string. The "
 "`readlines()` method reads all the lines in a file into a list. The "
-"`write()` function writes a string to a file. Look at the standard Python"
-" documentation on the official Python website (<https://www.python.org>) "
+"`write()` function writes a string to a file. Look at the standard Python "
+"documentation on the official Python website (<https://www.python.org>) "
 "for a description of functions that operate on files. File objects are "
 "described in the Built-in Types section of the Python Library Reference."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:296
 msgid ""
-"The following example reads each line of a text file and changes the line"
-" to uppercase characters:"
+"The following example reads each line of a text file and changes the line "
+"to uppercase characters:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:315
@@ -279,8 +277,8 @@ msgid ""
 "The first line opens the input file; you do not need the `'r'` because "
 "read-only is the default access mode. The next line opens a new file to "
 "which you will write. You read the lines in the input file into a list. "
-"Finally, you enter a loop that converts each line to uppercase characters"
-" and writes the result to the output file. The final two lines close the "
+"Finally, you enter a loop that converts each line to uppercase characters "
+"and writes the result to the output file. The final two lines close the "
 "files."
 msgstr ""
 
@@ -301,8 +299,8 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:323
 msgid ""
 "Python provides exception handling through the try and except commands. "
-"For example, the following statement attempts to open an existing file "
-"for reading:"
+"For example, the following statement attempts to open an existing file for"
+" reading:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:329
@@ -313,19 +311,19 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:338
 msgid ""
-"If you use exception handling, you can catch the error, display a helpful"
-" message, and take the appropriate action. For example, a revised version"
-" of the code attempts to open the same file within a try statement. If an"
-" IOError error is encountered, the except statement catches the IOError "
+"If you use exception handling, you can catch the error, display a helpful "
+"message, and take the appropriate action. For example, a revised version "
+"of the code attempts to open the same file within a try statement. If an "
+"IOError error is encountered, the except statement catches the IOError "
 "exception and assigns the exception's value to the variable error."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:349
 msgid ""
 "You can raise your own exceptions by providing the error type and the "
-"error message to the raise statement. The following example script raises"
-" an exception and displays a message if the function myFunction "
-"encounters a problem."
+"error message to the raise statement. The following example script raises "
+"an exception and displays a message if the function myFunction encounters "
+"a problem."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:365
@@ -341,17 +339,16 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:371
 msgid ""
 "When you start Python from a local window or from Abaqus/CAE, the Python "
-"interpreter is aware of a limited set of built-in functions. For example,"
-" try entering the following at the Python prompt:"
+"interpreter is aware of a limited set of built-in functions. For example, "
+"try entering the following at the Python prompt:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:378
 msgid ""
-"Python returns the number 8, indicating the length of the string "
-"`myName`. The `len()` function is a built-in function and is always "
-"available when you are using Python. To see a list of the built-in "
-"functions provided by Python, type `dir(__builtins__)` at the Python "
-"prompt."
+"Python returns the number 8, indicating the length of the string `myName`."
+" The `len()` function is a built-in function and is always available when "
+"you are using Python. To see a list of the built-in functions provided by "
+"Python, type `dir(__builtins__)` at the Python prompt."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:380
@@ -375,9 +372,9 @@ msgid ""
 "functions, such as `sin()` and `cos()`, are not available when you start "
 "Python. Functions that are not built-in are defined in modules. Modules "
 "are a way of grouping functionality and are similar to a Fortran library "
-"of subroutines. For example, the following code could be the opening "
-"lines of a Python script. The code imports the Python module `sys` and "
-"uses the `argv` member of `sys` to print the command line arguments:"
+"of subroutines. For example, the following code could be the opening lines"
+" of a Python script. The code imports the Python module `sys` and uses the"
+" `argv` member of `sys` to print the command line arguments:"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:392
@@ -389,9 +386,9 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:401
 msgid ""
 "The first line imports all of the names from the math module. The second "
-"line uses `pi`, a float number defined in the math module. The third line"
-" refers to a `sin()` function. Python can use the `sin()` function "
-"because you imported it from the math module."
+"line uses `pi`, a float number defined in the math module. The third line "
+"refers to a `sin()` function. Python can use the `sin()` function because "
+"you imported it from the math module."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:403
@@ -407,10 +404,9 @@ msgstr ""
 
 #: ../../user/python/introduction/programming.md:411
 msgid ""
-"To see a list of all the functions that come with the math module, look "
-"at the Miscellaneous Services section of the Python Library Reference. "
-"You can download public-domain modules, and you can create your own "
-"modules."
+"To see a list of all the functions that come with the math module, look at"
+" the Miscellaneous Services section of the Python Library Reference. You "
+"can download public-domain modules, and you can create your own modules."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:413
@@ -421,18 +417,18 @@ msgstr ""
 msgid ""
 "The `import` approach shown above imports the module as a unit, and you "
 "must qualify the name of an object from the module. To access a function "
-"from the `math` module in our example, you must prepend the function with"
-" `math.`; the `math.` statement is said to qualify the `sin()` function."
+"from the `math` module in our example, you must prepend the function with "
+"`math.`; the `math.` statement is said to qualify the `sin()` function."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:424
 msgid ""
-"What is the difference between the two approaches to importing modules? "
-"If two modules contain an object with the same name, Python cannot "
-"distinguish between the objects if you use the `from modulename import *`"
-" approach. If two objects have the same name, Python uses the object most"
-" recently imported. However, if you use the `import modulename` approach,"
-" modulename qualifies the name of the object and makes it unique."
+"What is the difference between the two approaches to importing modules? If"
+" two modules contain an object with the same name, Python cannot "
+"distinguish between the objects if you use the `from modulename import *` "
+"approach. If two objects have the same name, Python uses the object most "
+"recently imported. However, if you use the `import modulename` approach, "
+"modulename qualifies the name of the object and makes it unique."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:426
@@ -450,27 +446,27 @@ msgstr ""
 #: ../../user/python/introduction/programming.md:430
 msgid ""
 "For example, you can create a module called myUtilities by copying a "
-"modified version of the function that calculates the distance from a "
-"point to the origin into a file called myUtilities.py."
+"modified version of the function that calculates the distance from a point"
+" to the origin into a file called myUtilities.py."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:453
 msgid ""
-"You must import the module to make use of the functions and constants "
-"that it contains."
+"You must import the module to make use of the functions and constants that"
+" it contains."
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:461
 msgid ""
-"You can use the `__doc__` method to obtain the documentation string from "
-"a module. For example,"
+"You can use the `__doc__` method to obtain the documentation string from a"
+" module. For example,"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:468
 msgid ""
-"A tool for finding bugs in your modules is provided with Abaqus. The tool"
-" is called pychecker. When you import a module, pychecker prints warnings"
-" for any problems it finds with the Python source code. For example,"
+"A tool for finding bugs in your modules is provided with Abaqus. The tool "
+"is called pychecker. When you import a module, pychecker prints warnings "
+"for any problems it finds with the Python source code. For example,"
 msgstr ""
 
 #: ../../user/python/introduction/programming.md:478
