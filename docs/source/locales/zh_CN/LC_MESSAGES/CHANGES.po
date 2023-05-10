@@ -24,10 +24,244 @@ msgid "Abaqus API Changes"
 msgstr ""
 
 #: ../../CHANGES.md:3
+<<<<<<< HEAD
 msgid "Abaqus 2022"
 msgstr ""
 
 #: ../../CHANGES.md:5 ../../CHANGES.md:391 ../../CHANGES.md:560
+=======
+msgid "Abaqus 2023"
+msgstr ""
+
+#: ../../CHANGES.md:5
+#: ../../CHANGES.md:92
+msgid "{py:obj}`abaqus.Job.JobMdb`"
+msgstr ""
+
+#: ../../CHANGES.md:7
+#: ../../CHANGES.md:15
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
+"2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:8
+#: ../../CHANGES.md:16
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
+"2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:9
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The parallelizationMethodExplicit attribute was removed."
+msgstr ""
+
+#: ../../CHANGES.md:10
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:11
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile`: *changed*: Changed in "
+"version 2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:12
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.numDomains`: *changed*: "
+"Changed in version 2023: The docs for this argument were updated to "
+"reflect that the parallelizationMethodExplicit argument was removed in "
+"2023."
+msgstr ""
+
+#: ../../CHANGES.md:13
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.setValues`: *changed*: Changed"
+" in version 2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:14
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobFromInputFile.setValues`: *changed*: Changed"
+" in version 2023: The docs for this argument were updated to reflect that "
+"the parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:17
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.JobFromInputFile`: *changed*: Changed in"
+" version 2023: The parallelizationMethodExplicit argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:18
+msgid ""
+"{py:obj}`abaqus.Job.JobMdb.JobMdb.JobFromInputFile`: *changed*: Changed in"
+" version 2023: The docs for this argument were updated to reflect that the"
+" parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:20
+msgid "{py:obj}`abaqus.Job.ModelJob`"
+msgstr ""
+
+#: ../../CHANGES.md:22
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob`: *changed*: Changed in version "
+"2023: The parallelizationMethodExplicit attribute was removed."
+msgstr ""
+
+#: ../../CHANGES.md:23
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob`: *changed*: Changed in version "
+"2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:24
+msgid ""
+"{py:obj}`abaqus.Job.ModelJob.ModelJob.numDomains`: *changed*: Changed in "
+"version 2023: The docs for this argument were updated to reflect that the "
+"parallelizationMethodExplicit argument was removed in 2023."
+msgstr ""
+
+#: ../../CHANGES.md:26
+msgid "{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment`"
+msgstr ""
+
+#: ../../CHANGES.md:28
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignm"
+"ent.appendInStep`: *added*: New in version 2023: The useDynFeatEdge "
+"argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:29
+msgid ""
+"{py:obj}`abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignm"
+"ent.changeValuesInStep`: *added*: New in version 2023: The useDynFeatEdge "
+"argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:31
+#: ../../CHANGES.md:213
+#: ../../CHANGES.md:425
+#: ../../CHANGES.md:516
+#: ../../CHANGES.md:693
+msgid "{py:obj}`abaqus.Material.Material`"
+msgstr ""
+
+#: ../../CHANGES.md:33
+msgid ""
+"{py:obj}`abaqus.Material.Material.Material.PlasticityCorrection`: *added*:"
+" New in version 2023: The PlasticityCorrection method was added."
+msgstr ""
+
+#: ../../CHANGES.md:35
+msgid "{py:obj}`abaqus.Material.Plastic.PlasticityCorrection`"
+msgstr ""
+
+#: ../../CHANGES.md:37
+msgid ""
+"{py:obj}`abaqus.Material.Plastic.PlasticityCorrection.PlasticityCorrection"
+"`: *added*: New in version 2023: The PlasticityCorrection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:39
+#: ../../CHANGES.md:262
+#: ../../CHANGES.md:434
+#: ../../CHANGES.md:588
+msgid "{py:obj}`abaqus.Optimization.OptimizationTask`"
+msgstr ""
+
+#: ../../CHANGES.md:41
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFilter`"
+": *added*: New in version 2023."
+msgstr ""
+
+#: ../../CHANGES.md:42
+msgid ""
+"{py:obj}`abaqus.Optimization.OptimizationTask.BeadFilter`: *added*: New in"
+" version 2023: The BeadFilter class was added."
+msgstr ""
+
+#: ../../CHANGES.md:44
+msgid "{py:obj}`abaqus.Optimization.TopologyRibDesign`"
+msgstr ""
+
+#: ../../CHANGES.md:46
+msgid ""
+"{py:obj}`abaqus.Optimization.TopologyRibDesign.TopologyRibDesign`: "
+"*added*: New in version 2023: The TopologyRibDesign class was added."
+msgstr ""
+
+#: ../../CHANGES.md:48
+#: ../../CHANGES.md:526
+msgid "{py:obj}`abaqus.Assembly.AssemblyBase`"
+msgstr ""
+
+#: ../../CHANGES.md:50
+msgid ""
+"{py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates`: "
+"*added*: New in version 2023: The csys argument was added."
+msgstr ""
+
+#: ../../CHANGES.md:51
+msgid ""
+"{py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance`: "
+"*changed*: Changed in version 2023: The csys argument was removed."
+msgstr ""
+
+#: ../../CHANGES.md:53
+msgid "{py:obj}`abaqus.EngineeringFeature.EngineeringFeature`"
+msgstr ""
+
+#: ../../CHANGES.md:55
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.EngineeringFeature.DataImperfection`: "
+"*added*: New in version 2023: The DataImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:57
+msgid "{py:obj}`abaqus.EngineeringFeature.InputImperfection`"
+msgstr ""
+
+#: ../../CHANGES.md:59
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.InputImperfection.Imperfection`: "
+"*added*: New in version 2023: The Imperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:60
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.InputImperfection.InputImperfection`: "
+"*added*: New in version 2023: The InputImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:62
+msgid "{py:obj}`abaqus.EngineeringFeature.FileImperfection`"
+msgstr ""
+
+#: ../../CHANGES.md:64
+msgid ""
+"{py:obj}`abaqus.EngineeringFeature.FileImperfection.FileImperfection`: "
+"*added*: New in version 2023: The FileImperfection class was added."
+msgstr ""
+
+#: ../../CHANGES.md:67
+msgid "Abaqus 2022"
+msgstr ""
+
+#: ../../CHANGES.md:69
+#: ../../CHANGES.md:452
+#: ../../CHANGES.md:621
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Part.PartBase`"
 msgstr ""
 
@@ -59,7 +293,12 @@ msgid ""
 "*added*: New in version 2022: The type attribute was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:15 ../../CHANGES.md:399
+=======
+#: ../../CHANGES.md:79
+#: ../../CHANGES.md:460
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Odb.RebarOrientation`"
 msgstr ""
 
@@ -85,7 +324,12 @@ msgid ""
 "s`: *added*: New in version 2022: The printLocalCSYS argument was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:24 ../../CHANGES.md:609
+=======
+#: ../../CHANGES.md:88
+#: ../../CHANGES.md:670
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Session.SessionBase`"
 msgstr ""
 
@@ -95,11 +339,16 @@ msgid ""
 "Changed in version 2022: It is \"only\" valid to use this argument ..."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:28 ../../CHANGES.md:699
 msgid "{py:obj}`abaqus.Job.JobMdb`"
 msgstr ""
 
 #: ../../CHANGES.md:30 ../../CHANGES.md:33
+=======
+#: ../../CHANGES.md:94
+#: ../../CHANGES.md:97
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid ""
 "{py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version "
 "2022: The licenseType argument was added."
@@ -222,8 +471,15 @@ msgid ""
 "version 2022: The slave attribute was renamed to secondary."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:61 ../../CHANGES.md:326 ../../CHANGES.md:445
 #: ../../CHANGES.md:485
+=======
+#: ../../CHANGES.md:125
+#: ../../CHANGES.md:387
+#: ../../CHANGES.md:506
+#: ../../CHANGES.md:546
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Interaction.InteractionModel`"
 msgstr ""
 
@@ -363,7 +619,12 @@ msgid ""
 "Slave node was changed to secondary node."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:86 ../../CHANGES.md:450
+=======
+#: ../../CHANGES.md:150
+#: ../../CHANGES.md:511
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Interaction.InteractionContactInitializationModel`"
 msgstr ""
 
@@ -396,7 +657,12 @@ msgid ""
 "slaveNodesetName was renamed to secondaryNodesetName."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:93 ../../CHANGES.md:492
+=======
+#: ../../CHANGES.md:157
+#: ../../CHANGES.md:553
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Interaction.InteractionPropertyModel`"
 msgstr ""
 
@@ -606,7 +872,12 @@ msgid ""
 "slave were changed to main and secondary."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:145 ../../CHANGES.md:501
+=======
+#: ../../CHANGES.md:209
+#: ../../CHANGES.md:562
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd`"
 msgstr ""
 
@@ -640,7 +911,12 @@ msgid ""
 "version 2022: The extrapolation argument was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:155 ../../CHANGES.md:636
+=======
+#: ../../CHANGES.md:219
+#: ../../CHANGES.md:697
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Material.MaterialBase`"
 msgstr ""
 
@@ -694,7 +970,12 @@ msgid ""
 "CrushStressVelocityFactor class was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:173 ../../CHANGES.md:510
+=======
+#: ../../CHANGES.md:237
+#: ../../CHANGES.md:571
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Mesh.MeshPart`"
 msgstr ""
 
@@ -742,7 +1023,12 @@ msgid ""
 "version 2022: The argument faces was renamed to elemFaces."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:188 ../../CHANGES.md:517
+=======
+#: ../../CHANGES.md:252
+#: ../../CHANGES.md:578
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Optimization.OptimizationTaskModel`"
 msgstr ""
 
@@ -1086,7 +1372,12 @@ msgid ""
 "masterPointDetermination was renamed to mainPointDetermination."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:250 ../../CHANGES.md:383
+=======
+#: ../../CHANGES.md:315
+#: ../../CHANGES.md:444
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Optimization.ShapeRotationalSymmetry`"
 msgstr ""
 
@@ -1221,7 +1512,12 @@ msgid ""
 "was renamed to mainPointDetermination."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:279 ../../CHANGES.md:535
+=======
+#: ../../CHANGES.md:344
+#: ../../CHANGES.md:596
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Optimization.ShapeTask`"
 msgstr ""
 
@@ -1243,7 +1539,12 @@ msgid ""
 "in version 2022: The groupOperator argument was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:285 ../../CHANGES.md:541
+=======
+#: ../../CHANGES.md:350
+#: ../../CHANGES.md:602
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Optimization.SizingTask`"
 msgstr ""
 
@@ -1265,7 +1566,12 @@ msgid ""
 "New in version 2022: The groupOperator argument was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:291 ../../CHANGES.md:547
+=======
+#: ../../CHANGES.md:356
+#: ../../CHANGES.md:608
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Optimization.TopologyTask`"
 msgstr ""
 
@@ -1820,7 +2126,12 @@ msgid ""
 "added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:476 ../../CHANGES.md:613
+=======
+#: ../../CHANGES.md:537
+#: ../../CHANGES.md:674
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.OdbDisplay.OdbDisplay`"
 msgstr ""
 
@@ -1854,7 +2165,12 @@ msgid ""
 "r`: *added*: New in version 2019: The FluidInflator method was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:488 ../../CHANGES.md:489
+=======
+#: ../../CHANGES.md:549
+#: ../../CHANGES.md:550
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid ""
 "{py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSur"
 "faceContactStd`: *added*: New in version 2019: The normalAdjustment "
@@ -1891,7 +2207,12 @@ msgid ""
 "*added*: New in version 2019: The FluidInflatorState class was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:503 ../../CHANGES.md:504
+=======
+#: ../../CHANGES.md:564
+#: ../../CHANGES.md:565
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid ""
 "{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceCon"
 "tactStd`: *added*: New in version 2019: The normalAdjustment argument was "
@@ -1912,7 +2233,12 @@ msgid ""
 "normalAdjustment attribute was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:507 ../../CHANGES.md:508
+=======
+#: ../../CHANGES.md:568
+#: ../../CHANGES.md:569
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid ""
 "{py:obj}`abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceCon"
 "tactStd.setValues`: *added*: New in version 2019: The normalAdjustment "
@@ -2109,7 +2435,12 @@ msgid ""
 " 2018: The unsorted argument was added."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:573 ../../CHANGES.md:668
+=======
+#: ../../CHANGES.md:634
+#: ../../CHANGES.md:729
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.PredefinedField.PredefinedFieldModel`"
 msgstr ""
 
@@ -2181,7 +2512,12 @@ msgid ""
 "extension."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../CHANGES.md:596 ../../CHANGES.md:689
+=======
+#: ../../CHANGES.md:657
+#: ../../CHANGES.md:750
+>>>>>>> 20f29ec1 (New Crowdin updates (#4303))
 msgid "{py:obj}`abaqus.Step.StepModel`"
 msgstr ""
 
