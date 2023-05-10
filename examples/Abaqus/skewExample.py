@@ -42,9 +42,9 @@ from abaqus import *
 from abaqusConstants import *
 import visualization
 
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getResults():
-
     """
     Retrieve the displacement and calculate the minimum
     and maximum bending moment at the center of plate.
@@ -91,7 +91,6 @@ def getResults():
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def createXYPlot(vpOrigin, vpName, plotName, data):
-
     """
     Display curves of theoretical and computed results in
     a new viewport.
@@ -115,7 +114,6 @@ def createXYPlot(vpOrigin, vpName, plotName, data):
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def createModel():
-
     """
     Create the skew example model, including material, step, load, bc, and job.
     """
@@ -327,7 +325,6 @@ minMomentData["Theoretical"] = ((90, 0.0479), (80, 0.0448), (60, 0.0333), (40, 0
 # Loop over the parameters to perform the parameter study.
 
 for elemCode in elemTypeCodes:
-
     # Convert the element type codes to strings.
 
     elemName = repr(elemCode)
@@ -339,7 +336,6 @@ for elemCode in elemTypeCodes:
     assembly.setElementType(regions=(instance.faces,), elemTypes=(elemType,))
 
     for angle in angles:
-
         # Skew the geometry and regenerate the mesh.
         assembly.deleteMesh(regions=(instance,))
 
