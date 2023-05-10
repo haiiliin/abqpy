@@ -75,9 +75,7 @@ class FaceArray(List[Face]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[Face]:
         ...
@@ -86,9 +84,7 @@ class FaceArray(List[Face]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[Face]:
         ...

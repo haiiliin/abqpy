@@ -32,9 +32,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[IgnoredVertex]:
         ...
@@ -43,9 +41,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[
-            Tuple[float, float, float],
-        ],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[IgnoredVertex]:
         ...
