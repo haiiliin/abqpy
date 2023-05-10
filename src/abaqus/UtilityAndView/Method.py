@@ -3,27 +3,23 @@ from typing import Optional
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
+"""The methodCallback module provides functions that allow you to register a callback that will be invoked when
+certain Abaqus Scripting Interface commands are about to be executed. This callback allows you to augment the
+standard behavior of Abaqus Scripting Interface commands. For example, in the following script the myCallback
+function is executed when the writeInput method of an object whose type is JobType (in other words, any Job
+object) is about to be called::
 
-"""The methodCallback module provides functions that allow you to register a callback that 
-will be invoked when certain Abaqus Scripting Interface commands are about to be 
-executed. This callback allows you to augment the standard behavior of Abaqus Scripting 
-Interface commands. 
-For example, in the following script the myCallback function is executed when the 
-writeInput method of an object whose type is JobType (in other words, any Job object) is 
-about to be called::
+    import methodCallback
+    from job import JobType
 
-    import methodCallback 
-    from job import JobType 
-    
-    def myCallback(callingObject, arguments, keywordArguments, userData): 
-        print 'An input file  is about to be written.' 
-    methodCallback.addCallback(JobType, 'writeInput', myCallback) 
+    def myCallback(callingObject, arguments, keywordArguments, userData):
+        print 'An input file  is about to be written.'
+    methodCallback.addCallback(JobType, 'writeInput', myCallback)
 
-.. note:: 
+.. note::
     This object can be accessed by::
 
         import methodCallback
-
 """
 
 

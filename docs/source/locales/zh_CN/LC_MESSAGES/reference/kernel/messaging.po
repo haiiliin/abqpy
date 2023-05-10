@@ -49,8 +49,9 @@ msgstr ""
 
 #: abaqus.Messaging.DataObject.DataObject:7 of
 msgid ""
-"Check `DataObject on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dataobjectpyc.htm?contextscope=all>`__."
+"Check `DataObject on help.3ds.com/2023 <https://help.3ds.com/2023/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"dataobjectpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Messaging.DataObject.DataObject:1
@@ -60,8 +61,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.attempts:1 of
 msgid ""
-"An Int specifying the number of attempts made to reach equilibrium during"
-" this step."
+"An Int specifying the number of attempts made to reach equilibrium during "
+"this step."
 msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.clientHost:1 of
@@ -72,9 +73,9 @@ msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.clientName:1 of
 msgid ""
-"A String specifying the name of the client that responded to the callback"
-" function. Possible values are BatchPre, Packager, Standard, Explicit, "
-"and Calculator."
+"A String specifying the name of the client that responded to the callback "
+"function. Possible values are BatchPre, Packager, Standard, Explicit, and "
+"Calculator."
 msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.dof:1 of
@@ -127,8 +128,8 @@ msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.severe:1 of
 msgid ""
-"An Int specifying the number of severe discontinuity iterations completed"
-" during this increment."
+"An Int specifying the number of severe discontinuity iterations completed "
+"during this increment."
 msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.step:1 of
@@ -146,13 +147,14 @@ msgid "A String specifying the name of the step."
 msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.stepTime:1 of
-msgid "A Float specifying the step time corresponding to the current increment."
+msgid ""
+"A Float specifying the step time corresponding to the current increment."
 msgstr ""
 
 #: ../../docstring abaqus.Messaging.DataObject.DataObject.threadId:1 of
 msgid ""
-"An Int specifying the thread ID of the analysis product. Threads are used"
-" for parallel or multiprocessing; in most cases **threadId** is set to "
+"An Int specifying the thread ID of the analysis product. Threads are used "
+"for parallel or multiprocessing; in most cases **threadId** is set to "
 "zero."
 msgstr ""
 
@@ -192,10 +194,10 @@ msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr:1 of
 msgid ""
-"An instance of the MonitorMgr object is created when you import the "
-"abaqus module. No other instance of the MonitorMgr object is required. "
-"(This MonitorMgr object is not to be confused with the degree of freedom "
-"(DOF) monitor that is constructed from the Step object.)"
+"An instance of the MonitorMgr object is created when you import the abaqus"
+" module. No other instance of the MonitorMgr object is required. (This "
+"MonitorMgr object is not to be confused with the degree of freedom (DOF) "
+"monitor that is constructed from the Step object.)"
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr:6 of
@@ -204,8 +206,9 @@ msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr:11 of
 msgid ""
-"Check `MonitorMgr on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all>`__."
+"Check `MonitorMgr on help.3ds.com/2023 <https://help.3ds.com/2023/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"monitormgrpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:1 of
@@ -217,9 +220,10 @@ msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:5 of
 msgid ""
-"Check `MonitorMgr.addMessageCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all"
-"#simaker-monitormgraddmessagecallbackpyc>`__."
+"Check `MonitorMgr.addMessageCallback on help.3ds.com/2023 <https://help.3d"
+"s.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"monitormgrpyc.htm?contextscope=all#simaker-"
+"monitormgraddmessagecallbackpyc>`__."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback
@@ -236,19 +240,19 @@ msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:10 of
 msgid ""
-"A SymbolicConstant specifying which message type will call this callback."
-" Possible values are:  - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED"
-" - END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - "
-"ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED"
-" - MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - "
+"A SymbolicConstant specifying which message type will call this callback. "
+"Possible values are:  - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED -"
+" END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - "
+"ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED "
+"- MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - "
 "SIMULATION_COMPLETED - SIMULATION_INTERRUPTED - SIMULATION_SUBMITTED - "
 "STARTED - STATUS - STEP - WARNING"
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:10 of
 msgid ""
-"A SymbolicConstant specifying which message type will call this callback."
-" Possible values are:"
+"A SymbolicConstant specifying which message type will call this callback. "
+"Possible values are:"
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:13 of
@@ -361,12 +365,13 @@ msgid ""
 "function is `def onMessage(jobName, messageType, data, userData)` "
 "**jobName** is a String. **messageType** is a SymbolicConstant with "
 "possible values as listed previously for the addMessageCallback method. "
-"**data** is a DataObject object. **userData** is the object passed as the"
-" **userData** argument to the addMessageCallback method."
+"**data** is a DataObject object. **userData** is the object passed as the "
+"**userData** argument to the addMessageCallback method."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:46 of
-msgid "Any Python object or None. This object is passed to the callback function."
+msgid ""
+"Any Python object or None. This object is passed to the callback function."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:1 of
@@ -385,24 +390,25 @@ msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:1 of
 msgid ""
-"This method removes a callback function. You specify the callback "
-"function to remove using the same arguments you used to add the callback."
+"This method removes a callback function. You specify the callback function"
+" to remove using the same arguments you used to add the callback."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:5 of
 msgid ""
-"Check `MonitorMgr.removeMessageCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all"
-"#simaker-monitormgrremovemessagecallbackpyc>`__."
+"Check `MonitorMgr.removeMessageCallback on help.3ds.com/2023 <https://help"
+".3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"monitormgrpyc.htm?contextscope=all#simaker-"
+"monitormgrremovemessagecallbackpyc>`__."
 msgstr ""
 
 #: abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:10 of
 msgid ""
-"A SymbolicConstant specifying which message type will call this callback."
-" Possible values are: - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED "
-"- END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - "
-"ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED"
-" - MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - "
+"A SymbolicConstant specifying which message type will call this callback. "
+"Possible values are: - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED - "
+"END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - "
+"ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED "
+"- MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - "
 "SIMULATION_COMPLETED - SIMULATION_INTERRUPTED - SIMULATION_SUBMITTED - "
 "STARTED - STATUS - STEP - WARNING"
 msgstr ""

@@ -7,15 +7,13 @@ from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, HOME, UNLIMITED
+"""The Python module caePrefsAccess contains functions that enable you to edit the Abaqus/CAE preferences file,
+abaqus_2021.gpr.
 
-"""The Python module caePrefsAccess contains functions that enable you to edit the 
-Abaqus/CAE preferences file, abaqus_2021.gpr. 
-
-.. note:: 
+.. note::
     This object can be accessed by::
 
         import caePrefsAccess
-
 """
 
 

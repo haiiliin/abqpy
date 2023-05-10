@@ -35,18 +35,17 @@ msgstr ""
 msgid ""
 "Most Abaqus objects have a method that creates a copy of the object. The "
 "same command provides the name of the new object. Methods that create a "
-"copy of an object are called copy constructors. Although copy "
-"constructors exist for most objects, in most cases they are not "
-"documented in the Abaqus Scripting Reference Guide. The format of a copy "
-"constructor is"
+"copy of an object are called copy constructors. Although copy constructors"
+" exist for most objects, in most cases they are not documented in the "
+"Abaqus Scripting Reference Guide. The format of a copy constructor is"
 msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:17
 msgid ""
-"A copy constructor returns an object of the type of objectToBeCopied with"
-" the given name. For example, the following statements show you can "
-"create a Part object and then use a copy constructor to create a second "
-"Part object that is a copy of the first:"
+"A copy constructor returns an object of the type of objectToBeCopied with "
+"the given name. For example, the following statements show you can create "
+"a Part object and then use a copy constructor to create a second Part "
+"object that is a copy of the first:"
 msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:27
@@ -61,8 +60,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:40
 msgid ""
-"To create a copy of an object, some objects use the base type described "
-"in Abstract base type. For example, to copy a HomogeneousSolidSection "
+"To create a copy of an object, some objects use the base type described in"
+" Abstract base type. For example, to copy a HomogeneousSolidSection "
 "object, you use the abstract base type Section constructor."
 msgstr ""
 
@@ -73,8 +72,8 @@ msgstr ""
 #: ../../user/python/use-scripts/modify-objects.rst:63
 msgid ""
 "In general, if you can create an object, you can delete the object. For "
-"example, the following statements create a Material object in the "
-"material repository:"
+"example, the following statements create a Material object in the material"
+" repository:"
 msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:69
@@ -85,9 +84,9 @@ msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:75
 msgid ""
-"The variable myMaterial that referred to the object still exists; "
-"however, the variable no longer refers to the object. You can use the del"
-" statement to delete the variable."
+"The variable myMaterial that referred to the object still exists; however,"
+" the variable no longer refers to the object. You can use the del "
+"statement to delete the variable."
 msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:81
@@ -99,12 +98,12 @@ msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:90
 msgid ""
-"The previous explanation does not apply to the few Abaqus/CAE objects "
-"that are not members of either an Mdb object or a Session object; for "
-"example, XYData and Leaf objects. These objects are sometimes referred to"
-" as temporary, and the delete semantics for these objects are the same as"
-" for standard Python objects. The object exists as long as there is a "
-"reference to it. If you delete the reference, the object is also deleted."
+"The previous explanation does not apply to the few Abaqus/CAE objects that"
+" are not members of either an Mdb object or a Session object; for example,"
+" XYData and Leaf objects. These objects are sometimes referred to as "
+"temporary, and the delete semantics for these objects are the same as for "
+"standard Python objects. The object exists as long as there is a reference"
+" to it. If you delete the reference, the object is also deleted."
 msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:93
@@ -113,8 +112,8 @@ msgstr ""
 
 #: ../../user/python/use-scripts/modify-objects.rst:95
 msgid ""
-"When you rename an object, variables that refer to that object may become"
-" stale, depending on the implementation detail of that object interface. "
-"It is always best to create new variables after you rename an object."
+"When you rename an object, variables that refer to that object may become "
+"stale, depending on the implementation detail of that object interface. It"
+" is always best to create new variables after you rename an object."
 msgstr ""
 

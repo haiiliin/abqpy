@@ -1,10 +1,7 @@
 from typing import overload
 
 from abqpy.decorators import abaqus_function_doc
-
-"""These functions display status information. 
-
-"""
+"""These functions display status information."""
 
 
 @abaqus_function_doc

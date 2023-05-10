@@ -52,9 +52,9 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:11
 msgid ""
-"Definitions of the relationships between the objects. These relationships"
-" form the structure or the hierarchy of the object model. The "
-"relationships between the objects are summarized in the following list:"
+"Definitions of the relationships between the objects. These relationships "
+"form the structure or the hierarchy of the object model. The relationships"
+" between the objects are summarized in the following list:"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:13
@@ -73,24 +73,22 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:19
 msgid ""
-"Associations describe the relationships between the objects; for example,"
-" whether one object refers to another and whether an object is an "
-"instance of another."
+"Associations describe the relationships between the objects; for example, "
+"whether one object refers to another and whether an object is an instance "
+"of another."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:21
 msgid ""
-"Abaqus extends Python with approximately 500 additional objects, and "
-"there are many relationships between these objects. As a result, the "
-"complete Abaqus object model is too complex to illustrate in a single "
-"figure."
+"Abaqus extends Python with approximately 500 additional objects, and there"
+" are many relationships between these objects. As a result, the complete "
+"Abaqus object model is too complex to illustrate in a single figure."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:23
 msgid ""
-"In general terms the Abaqus object model is divided into the Session, the"
-" Mdb, and the Odb objects, as shown in {numref}`cmd-int-model-overview-"
-"nls`"
+"In general terms the Abaqus object model is divided into the Session, the "
+"Mdb, and the Odb objects, as shown in {numref}`cmd-int-model-overview-nls`"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:31
@@ -120,10 +118,10 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:42
 msgid ""
-"Objects that are not containers are shown as a Singular object. A "
-"singular object contains no other objects of a similar type; for example,"
-" the Session object and the Mdb object. There is only one Session object "
-"and only one Mdb object in the Abaqus object model."
+"Objects that are not containers are shown as a Singular object. A singular"
+" object contains no other objects of a similar type; for example, the "
+"Session object and the Mdb object. There is only one Session object and "
+"only one Mdb object in the Abaqus object model."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:44
@@ -138,9 +136,9 @@ msgstr ""
 msgid ""
 "The statement `from abaqus import *` imports the Session object (named "
 "`session`) and the Mdb object (named `mdb`) and makes them available to "
-"your scripts. The statement `from odbAccess import *` allows you to "
-"access Abaqus output results from your script. The Session, Mdb, and Odb "
-"objects are described as follows:"
+"your scripts. The statement `from odbAccess import *` allows you to access"
+" Abaqus output results from your script. The Session, Mdb, and Odb objects"
+" are described as follows:"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:48
@@ -175,13 +173,12 @@ msgstr ""
 #: ../../user/python/use-scripts/object-model.md:74
 msgid ""
 "The statement from abaqus import * creates an instance of the Mdb object "
-"called mdb. Mdb objects are objects that are saved in a model database "
-"and can be recovered between Abaqus/CAE sessions. Mdb objects include the"
-" Model object and the Job object. The Model object, in turn, is comprised"
-" of Part objects, Section objects, Material objects, Step objects, etc. "
-"{numref}`cmd-int-model-model-nls` shows the basic structure of the "
-"objects under the Model object. For more information, see The Model "
-"object model."
+"called mdb. Mdb objects are objects that are saved in a model database and"
+" can be recovered between Abaqus/CAE sessions. Mdb objects include the "
+"Model object and the Job object. The Model object, in turn, is comprised "
+"of Part objects, Section objects, Material objects, Step objects, etc. "
+"{numref}`cmd-int-model-model-nls` shows the basic structure of the objects"
+" under the Model object. For more information, see The Model object model."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:82
@@ -217,27 +214,27 @@ msgid ""
 "You can use tab completion from the command line interface to speed up "
 "your typing and to explore the object model. For example, you can type "
 "`mdb.models['Model-1'].parts[` in the command line interface. When you "
-"press the **\\[Tab\\]** key, the command line cycles through the parts in"
-" the model. When you press **\\[Shift\\]\\[Tab\\]**, the command line "
+"press the **\\[Tab\\]** key, the command line cycles through the parts in "
+"the model. When you press **\\[Shift\\]\\[Tab\\]**, the command line "
 "cycles backwards through the parts in the model."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:110
 msgid ""
-"Tab completion also searches the file system when it detects an "
-"incomplete string. For example,"
+"Tab completion also searches the file system when it detects an incomplete"
+" string. For example,"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:127
 msgid ""
-"You can use tab completion when you are accessing an output database. For"
-" example,"
+"You can use tab completion when you are accessing an output database. For "
+"example,"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:134
 msgid ""
-"You can also use tab completion when you are accessing an output database"
-" from the Abaqus Python prompt. For example,"
+"You can also use tab completion when you are accessing an output database "
+"from the Abaqus Python prompt. For example,"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:144
@@ -261,10 +258,9 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:166
 msgid ""
-"The Job object is separate from the Model object. The object model for "
-"the Job object is straightforward; the Job object owns no other objects. "
-"The Job object refers to a Model object but is not owned by the Model "
-"object."
+"The Job object is separate from the Model object. The object model for the"
+" Job object is straightforward; the Job object owns no other objects. The "
+"Job object refers to a Model object but is not owned by the Model object."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:168
@@ -279,12 +275,12 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:171
 msgid ""
-"The object model describes the relationships between objects. For "
-"example, in object-oriented programming terms a geometry object, such as "
-"a Cell, Face, Edge, or Vertex object, is said to be owned by the Part "
-"object. The Part object, in turn, is owned by the Model object. This "
-"ownership relationship between objects is referred to as the ownership "
-"hierarchy of the object model."
+"The object model describes the relationships between objects. For example,"
+" in object-oriented programming terms a geometry object, such as a Cell, "
+"Face, Edge, or Vertex object, is said to be owned by the Part object. The "
+"Part object, in turn, is owned by the Model object. This ownership "
+"relationship between objects is referred to as the ownership hierarchy of "
+"the object model."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:172
@@ -292,27 +288,26 @@ msgid ""
 "Ownership implies that if an object is copied, everything owned by that "
 "object is also copied. Similarly, if an object is deleted, everything "
 "owned by the object is deleted. This concept is similar to parent-child "
-"relationships in Abaqus/CAE. If you delete a Part, all the children of "
-"the part—such as geometry, datums, and regions—are also deleted."
+"relationships in Abaqus/CAE. If you delete a Part, all the children of the"
+" part—such as geometry, datums, and regions—are also deleted."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:173
 msgid ""
-"The relationships between objects are described in the `Path` and "
-"`Access` descriptions in the command reference. For example, the "
-"following statement uses the path to a Cell object:"
+"The relationships between objects are described in the `Path` and `Access`"
+" descriptions in the command reference. For example, the following "
+"statement uses the path to a Cell object:"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:181
 msgid ""
 "The associations between the objects are captured by the object model. "
-"Objects can refer to other objects; for example, the section objects "
-"refer to a material, and the interaction objects refer to a region, to "
-"steps, and possibly to amplitudes. An object that refers to another "
-"object usually has a data member that indicates the name of the object to"
-" which it is referring. For example, `material` is a member of the "
-"section objects, and createStepName is a member of the interaction "
-"objects."
+"Objects can refer to other objects; for example, the section objects refer"
+" to a material, and the interaction objects refer to a region, to steps, "
+"and possibly to amplitudes. An object that refers to another object "
+"usually has a data member that indicates the name of the object to which "
+"it is referring. For example, `material` is a member of the section "
+"objects, and createStepName is a member of the interaction objects."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:183
@@ -321,20 +316,20 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:185
 msgid ""
-"The Abaqus object model includes the concept of an abstract base type. An"
-" abstract base type allows similar objects to share common attributes. "
-"For example, pressure and concentrated force are both kinds of loads. "
-"Object-oriented programmers call the relationship between pressure and "
-"load an is a relationship—a pressure is a kind of load. In this example "
-"Load is the name of the abstract base type. In the type hierachy Pressure"
-" and ConcentratedForce types have a base type Load. A Pressure is a Load."
+"The Abaqus object model includes the concept of an abstract base type. An "
+"abstract base type allows similar objects to share common attributes. For "
+"example, pressure and concentrated force are both kinds of loads. Object-"
+"oriented programmers call the relationship between pressure and load an is"
+" a relationship—a pressure is a kind of load. In this example Load is the "
+"name of the abstract base type. In the type hierachy Pressure and "
+"ConcentratedForce types have a base type Load. A Pressure is a Load."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:187
 msgid ""
-"In {numref}`cmd-int-abstract-nls` AnalysisStep and Step are both abstract"
-" base types. In terms of the real world a static step is an analysis step"
-" and a static step is also a step. In terms of the object model a "
+"In {numref}`cmd-int-abstract-nls` AnalysisStep and Step are both abstract "
+"base types. In terms of the real world a static step is an analysis step "
+"and a static step is also a step. In terms of the object model a "
 "StaticStep object is an AnalysisStep object and a StaticStep object is "
 "also a Step object."
 msgstr ""
@@ -355,18 +350,18 @@ msgstr ""
 msgid ""
 "Abaqus uses the name of the abstract base type as the name of the "
 "repository that contains objects of similar types. For example, the "
-"StaticStep, BuckleStep, and FrequencyStep constructors all create objects"
-" in the steps repository. Other abstract base types include Amplitude, "
+"StaticStep, BuckleStep, and FrequencyStep constructors all create objects "
+"in the steps repository. Other abstract base types include Amplitude, "
 "BoundaryCondition, Datum, Field, Interaction, and Section."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:202
 msgid ""
-"The term abstract implies that the Abaqus object model does not contain "
-"an object that has the type of an abstract base type. For example, there "
-"are no objects of type Load or Step in the Abaqus object model. In "
-"contrast, the Feature object is a base type, but it is not abstract. The "
-"Abaqus object model includes Feature objects."
+"The term abstract implies that the Abaqus object model does not contain an"
+" object that has the type of an abstract base type. For example, there are"
+" no objects of type Load or Step in the Abaqus object model. In contrast, "
+"the Feature object is a base type, but it is not abstract. The Abaqus "
+"object model includes Feature objects."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:204
@@ -378,18 +373,18 @@ msgid ""
 "To access the objects referred to by the Model object, such as Part and "
 "Section objects, Abaqus/CAE extends or augments the object model by "
 "importing additional modules. For example, to create or access a Part "
-"object, Abaqus/CAE needs to import the part module. Abaqus/CAE imports "
-"all the modules when you start a session. As a result the entire object "
-"model is available to your scripts."
+"object, Abaqus/CAE needs to import the part module. Abaqus/CAE imports all"
+" the modules when you start a session. As a result the entire object model"
+" is available to your scripts."
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:208
 msgid ""
 "However, in some cases, your script may need to import a module; for "
 "example, to access a module constant, type, or function. In addition, it "
-"is useful for you to know which module Abaqus/CAE imported to augment the"
-" object model with a particular object. You have already seen the syntax "
-"to import a module:"
+"is useful for you to know which module Abaqus/CAE imported to augment the "
+"object model with a particular object. You have already seen the syntax to"
+" import a module:"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:215
@@ -410,9 +405,9 @@ msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:223
 msgid ""
-"The following table describes the relationship between some of the "
-"modules in the Abaqus Scripting Interface and the functionality of the "
-"modules and toolsets found in Abaqus/CAE:"
+"The following table describes the relationship between some of the modules"
+" in the Abaqus Scripting Interface and the functionality of the modules "
+"and toolsets found in Abaqus/CAE:"
 msgstr ""
 
 #: ../../user/python/use-scripts/object-model.md:191

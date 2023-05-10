@@ -5,10 +5,7 @@ from abqpy.decorators import abaqus_function_doc
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY, SymbolicConstant
-
-"""This command writes a field output report to a file. 
-
-"""
+"""This command writes a field output report to a file."""
 
 
 @abaqus_function_doc

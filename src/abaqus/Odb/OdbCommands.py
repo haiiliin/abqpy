@@ -6,16 +6,15 @@ from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
+"""The Odb commands do the following:
 
-"""The Odb commands do the following: 
-
-- Determine if an output database (.odb) file needs to be upgraded to the current 
-  release. 
-- Determine the extreme value for an output variable over a number of fields; for 
-  example, over a number of load cases. 
-- Open an existing output database file and create a new Odb object. 
-- Upgrade an output database file to the current release and write the upgraded output 
-  database to a new file. 
+- Determine if an output database (.odb) file needs to be upgraded to the current
+  release.
+- Determine the extreme value for an output variable over a number of fields; for
+  example, over a number of load cases.
+- Open an existing output database file and create a new Odb object.
+- Upgrade an output database file to the current release and write the upgraded output
+  database to a new file.
 """
 
 

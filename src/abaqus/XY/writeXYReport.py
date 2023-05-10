@@ -4,10 +4,7 @@ from abqpy.decorators import abaqus_function_doc
 
 from .XYData import XYData
 from ..UtilityAndView.abaqusConstants import Boolean, ON
-
-"""This method writes an XYData object to a user-defined ASCII file. 
-
-"""
+"""This method writes an XYData object to a user-defined ASCII file."""
 
 
 @abaqus_function_doc

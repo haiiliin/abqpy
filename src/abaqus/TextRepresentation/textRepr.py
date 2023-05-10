@@ -3,17 +3,13 @@ from typing import Optional
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
-
-"""The Python module textRepr contains functions to print an Abaqus object and to convert 
-the output from the str() function into a formatted string, indented for each object in 
-the recursive listing of a Python object. 
-
+"""The Python module textRepr contains functions to print an Abaqus object and to convert the output from the
+str() function into a formatted string, indented for each object in the recursive listing of a Python object.
 
 .. note::
     Theses functions can be accessed by::
 
         import textRepr
-
 """
 
 

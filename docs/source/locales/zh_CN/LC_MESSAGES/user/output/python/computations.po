@@ -35,8 +35,8 @@ msgstr ""
 msgid ""
 "Mathematical operations are supported for FieldOutput, FieldValue, and "
 "HistoryOutput objects. These operators allow you to perform linear "
-"superposition of Abaqus results or to create more complex derived results"
-" from Abaqus results."
+"superposition of Abaqus results or to create more complex derived results "
+"from Abaqus results."
 msgstr ""
 
 #: ../../user/output/python/computations.md:9
@@ -44,20 +44,21 @@ msgid "The following rules apply:"
 msgstr ""
 
 #: ../../user/output/python/computations.md:11
-msgid "The operations are performed on the components of a tensor or vector."
+msgid ""
+"The operations are performed on the components of a tensor or vector."
 msgstr ""
 
 #: ../../user/output/python/computations.md:13
 msgid ""
-"The invariants are computed from the component values. For example, "
-"taking the absolute value of a tensor can result in negative values of "
-"the pressure invariant."
+"The invariants are computed from the component values. For example, taking"
+" the absolute value of a tensor can result in negative values of the "
+"pressure invariant."
 msgstr ""
 
 #: ../../user/output/python/computations.md:15
 msgid ""
-"Operations between FieldOutput, FieldValue, and HistoryOutput objects are"
-" not supported."
+"Operations between FieldOutput, FieldValue, and HistoryOutput objects are "
+"not supported."
 msgstr ""
 
 #: ../../user/output/python/computations.md:17
@@ -76,8 +77,8 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:22
 msgid ""
-"A three-dimensional surface tensor cannot be added to a three-dimensional"
-" planar tensor."
+"A three-dimensional surface tensor cannot be added to a three-dimensional "
+"planar tensor."
 msgstr ""
 
 #: ../../user/output/python/computations.md:23
@@ -86,9 +87,9 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:25
 msgid ""
-"If the fields in the expression were obtained using the getSubset method,"
-" the same getSubset operations must have been applied in the same order "
-"to obtain each field."
+"If the fields in the expression were obtained using the getSubset method, "
+"the same getSubset operations must have been applied in the same order to "
+"obtain each field."
 msgstr ""
 
 #: ../../user/output/python/computations.md:27
@@ -97,21 +98,21 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:29
 msgid ""
-"Operations on tensors are performed in the local coordinate system, if it"
-" is available. Otherwise the global system is used. Abaqus assumes that "
-"the local coordinate systems are consistent for operations involving more"
-" than one tensor."
+"Operations on tensors are performed in the local coordinate system, if it "
+"is available. Otherwise the global system is used. Abaqus assumes that the"
+" local coordinate systems are consistent for operations involving more "
+"than one tensor."
 msgstr ""
 
 #: ../../user/output/python/computations.md:31
 msgid ""
-"Operations between FieldValue objects associated with different locations"
-" in the model are allowed only if the data types are the same. If the "
+"Operations between FieldValue objects associated with different locations "
+"in the model are allowed only if the data types are the same. If the "
 "locations in the model differ, the FieldValue computed will not be "
 "associated with a location. If the local coordinate systems of the "
-"FieldValue objects are not the same, the local coordinate systems of both"
-" fieldValues will be disregarded and the fieldValue computed will have no"
-" local coordinate system."
+"FieldValue objects are not the same, the local coordinate systems of both "
+"fieldValues will be disregarded and the fieldValue computed will have no "
+"local coordinate system."
 msgstr ""
 
 #: ../../user/output/python/computations.md:33
@@ -454,15 +455,15 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:95
 msgid ""
-"You use envelope calculations to retrieve the extreme value for an output"
-" variable over a number of fields. Envelope calculations are especially "
+"You use envelope calculations to retrieve the extreme value for an output "
+"variable over a number of fields. Envelope calculations are especially "
 "useful for retrieving the extreme values over a number of load cases."
 msgstr ""
 
 #: ../../user/output/python/computations.md:97
 msgid ""
-"The following operators consider a list of fields and perform the "
-"envelope calculation:"
+"The following operators consider a list of fields and perform the envelope"
+" calculation:"
 msgstr ""
 
 #: ../../user/output/python/computations.md:114
@@ -475,15 +476,15 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:117
 msgid ""
-"The second object contains the indices of the fields for which the "
-"extreme values were found. The indices derive from the order in which you"
-" supplied the fields to the command."
+"The second object contains the indices of the fields for which the extreme"
+" values were found. The indices derive from the order in which you "
+"supplied the fields to the command."
 msgstr ""
 
 #: ../../user/output/python/computations.md:119
 msgid ""
-"The optional **invariant** argument is a Symbolic Constant specifying the"
-" invariant to be used when comparing vectors or tensors. The optional "
+"The optional **invariant** argument is a Symbolic Constant specifying the "
+"invariant to be used when comparing vectors or tensors. The optional "
 "**componentLabel** argument is a odb_String specifying the component of "
 "the vector or tensor to be used for selecting the extreme value."
 msgstr ""
@@ -511,8 +512,8 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:128
 msgid ""
-"The output region of all the fields must be the same. All the fields must"
-" apply to the whole model, or all the fields must apply to the same set."
+"The output region of all the fields must be the same. All the fields must "
+"apply to the whole model, or all the fields must apply to the same set."
 msgstr ""
 
 #: ../../user/output/python/computations.md:130
@@ -521,20 +522,20 @@ msgstr ""
 
 #: ../../user/output/python/computations.md:132
 msgid ""
-"Transformations of vector and tensor fields are supported for "
-"rectangular, cylindrical, and spherical coordinate systems. The "
-"coordinate systems can be fixed or model based. Model-based coordinate "
-"systems refer to nodes for position and orientation. Abaqus uses the "
-"coordinates of the deformed state to determine a systems origin and "
-"orientation for model-based coordinate systems. Transformations that use "
-"a model-based coordinate system can account for large displacements of "
-"both the coordinate system and the structure."
+"Transformations of vector and tensor fields are supported for rectangular,"
+" cylindrical, and spherical coordinate systems. The coordinate systems can"
+" be fixed or model based. Model-based coordinate systems refer to nodes "
+"for position and orientation. Abaqus uses the coordinates of the deformed "
+"state to determine a systems origin and orientation for model-based "
+"coordinate systems. Transformations that use a model-based coordinate "
+"system can account for large displacements of both the coordinate system "
+"and the structure."
 msgstr ""
 
 #: ../../user/output/python/computations.md:134
 msgid ""
-"The steps required to transform results are (see also the example {ref"
-"}`transformation-of-field-results`):"
+"The steps required to transform results are (see also the example "
+"{ref}`transformation-of-field-results`):"
 msgstr ""
 
 #: ../../user/output/python/computations.md:136
@@ -573,25 +574,24 @@ msgstr ""
 msgid ""
 "The component directions 1, 2, and 3 of the transformed results will "
 "correspond to the system directions **X**, **Y**, and **Z** for "
-"rectangular coordinate systems; $R$, $\\theta$, and **Z** for cylindrical"
-" coordinate systems; and $R$, $\\theta$, and $\\phi$ for spherical "
+"rectangular coordinate systems; $R$, $\\theta$, and **Z** for cylindrical "
+"coordinate systems; and $R$, $\\theta$, and $\\phi$ for spherical "
 "coordinate systems."
 msgstr ""
 
 #: ../../user/output/python/computations.md:148
 msgid ""
-"Stress results for three-dimensional continuum elements transformed into "
-"a cylindrical system would have the hoop stress in S22, which is "
-"consistent with the coordinate system axis but inconsistent with the "
-"stress state for a three-dimensional axisymmetric elements having hoop "
-"stress in S33."
+"Stress results for three-dimensional continuum elements transformed into a"
+" cylindrical system would have the hoop stress in S22, which is consistent"
+" with the coordinate system axis but inconsistent with the stress state "
+"for a three-dimensional axisymmetric elements having hoop stress in S33."
 msgstr ""
 
 #: ../../user/output/python/computations.md:151
 msgid ""
 "When you are transforming a tensor, the location or integration point "
-"always takes into account the deformation. The location of the coordinate"
-" system depends on the model, as follows:"
+"always takes into account the deformation. The location of the coordinate "
+"system depends on the model, as follows:"
 msgstr ""
 
 #: ../../user/output/python/computations.md:153
@@ -610,13 +610,13 @@ msgid ""
 "Abaqus will perform transformations of tensor results for shells, "
 "membranes, and planar elements as rotations of results about the element "
 "normal at the element result location. The element normal is the normal "
-"computed for the frame associated with the field by Abaqus, and you "
-"cannot redefine the normal. Abaqus defines the location of the results "
-"location from the nodal locations. You specify optional arguments if you "
-"want to use the deformed nodal locations to transform results. For "
-"rectangular, cylindrical, and spherical coordinate systems the second "
-"component direction for the transformed results will be determined by one"
-" of the following:"
+"computed for the frame associated with the field by Abaqus, and you cannot"
+" redefine the normal. Abaqus defines the location of the results location "
+"from the nodal locations. You specify optional arguments if you want to "
+"use the deformed nodal locations to transform results. For rectangular, "
+"cylindrical, and spherical coordinate systems the second component "
+"direction for the transformed results will be determined by one of the "
+"following:"
 msgstr ""
 
 #: ../../user/output/python/computations.md:158

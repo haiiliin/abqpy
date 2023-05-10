@@ -63,8 +63,8 @@ msgstr ""
 
 #: ../../reference/kernel/utility.md:13
 msgid ""
-"Upgrade Abaqus kernel or GUI scripts from one release of Abaqus to a "
-"later release."
+"Upgrade Abaqus kernel or GUI scripts from one release of Abaqus to a later"
+" release."
 msgstr ""
 
 #: ../../reference/kernel/utility.md:15
@@ -84,20 +84,20 @@ msgstr ""
 
 #: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:1 of
 msgid ""
-"The AbaqusBoolean object is used in a similar way to the SymbolicConstant"
-" object. If you pass an AbaqusBoolean object to the Python repr() "
-"function, the function returns the text without quotes. In effect, the "
-"text is the variable that, by convention, refers to the AbaqusBoolean "
-"object. An AbaqusBoolean object has a value of 0 or 1, and an "
-"AbaqusBoolean object can be tested in an if statement. You can use an "
-"AbaqusBoolean object as an argument to a method in place of 1 or 0. "
-"Conversely, you can pass a 0 or a 1 to an Abaqus Scripting Interface "
-"method that expects a Boolean argument, and the 0 or 1 will be coerced to"
-" the appropriate AbaqusBoolean value. There are only two possible values "
-"for an AbaqusBoolean object: 1 and 0. You can import both values from the"
-" symbolicConstants module or from the abaqus module. Abaqus Scripting "
-"Interface commands that expect an AbaqusBoolean object will also accept a"
-" Python bool (True, False), or a Python int (1, 0)."
+"The AbaqusBoolean object is used in a similar way to the SymbolicConstant "
+"object. If you pass an AbaqusBoolean object to the Python repr() function,"
+" the function returns the text without quotes. In effect, the text is the "
+"variable that, by convention, refers to the AbaqusBoolean object. An "
+"AbaqusBoolean object has a value of 0 or 1, and an AbaqusBoolean object "
+"can be tested in an if statement. You can use an AbaqusBoolean object as "
+"an argument to a method in place of 1 or 0. Conversely, you can pass a 0 "
+"or a 1 to an Abaqus Scripting Interface method that expects a Boolean "
+"argument, and the 0 or 1 will be coerced to the appropriate AbaqusBoolean "
+"value. There are only two possible values for an AbaqusBoolean object: 1 "
+"and 0. You can import both values from the symbolicConstants module or "
+"from the abaqus module. Abaqus Scripting Interface commands that expect an"
+" AbaqusBoolean object will also accept a Python bool (True, False), or a "
+"Python int (1, 0)."
 msgstr ""
 
 #: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:13
@@ -109,8 +109,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:19 of
 msgid ""
-"Check `AbaqusBoolean on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusbooleanpyc.htm?contextscope=all>`__."
+"Check `AbaqusBoolean on help.3ds.com/2023 <https://help.3ds.com/2023/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"abaqusbooleanpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:21 of
@@ -211,23 +212,23 @@ msgstr ""
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:1 of
 msgid ""
 "The BackwardCompatibility object enables the user to control access to "
-"deprecated commands in the Abaqus Scripting Interface and to collect data"
-" on which deprecated commands have been used. This enables the user to "
+"deprecated commands in the Abaqus Scripting Interface and to collect data "
+"on which deprecated commands have been used. This enables the user to "
 "check that no deprecated methods, members, or arguments have been used. "
 "Data are recorded on any deprecated members, methods, or arguments that "
-"are used. The BackwardCompatibility object has no constructor. The abaqus"
-" module and the odbAccess module each have a member named "
-"backwardCompatibility. By default, the value of the **includeDeprecated**"
-" member is ON, and Abaqus will execute a script containing deprecated "
-"commands with no indication that you should update the script. You can do"
-" either of the following to change the value of the **includeDeprecated**"
-" member and to determine which commands have been deprecated:"
+"are used. The BackwardCompatibility object has no constructor. The abaqus "
+"module and the odbAccess module each have a member named "
+"backwardCompatibility. By default, the value of the **includeDeprecated** "
+"member is ON, and Abaqus will execute a script containing deprecated "
+"commands with no indication that you should update the script. You can do "
+"either of the following to change the value of the **includeDeprecated** "
+"member and to determine which commands have been deprecated:"
 msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:13 of
 msgid ""
-"From the command line interface in Abaqus/CAE or from an Abaqus Scripting"
-" Interface script that is run from within Abaqus/CAE, use the following "
+"From the command line interface in Abaqus/CAE or from an Abaqus Scripting "
+"Interface script that is run from within Abaqus/CAE, use the following "
 "command::"
 msgstr ""
 
@@ -239,16 +240,17 @@ msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:24 of
 msgid ""
-"In addition, the BackwardCompatibility object provides tools to assist "
-"you in determining the deprecated commands that have been used. For "
-"example, to determine the deprecated commands used in the script "
-"createLug.py, use the following commands::"
+"In addition, the BackwardCompatibility object provides tools to assist you"
+" in determining the deprecated commands that have been used. For example, "
+"to determine the deprecated commands used in the script createLug.py, use "
+"the following commands::"
 msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:42 of
 msgid ""
-"Check `BackwardCompatibility on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-backwardcompatibilitypyc.htm?contextscope=all>`__."
+"Check `BackwardCompatibility on help.3ds.com/2023 <https://help.3ds.com/20"
+"23/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"backwardcompatibilitypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed:1
@@ -273,8 +275,8 @@ msgstr ""
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed:1
 #: of
 msgid ""
-"This method returns a list of deprecated methods used since the last call"
-" to resetDeprecatedMethodsUsed."
+"This method returns a list of deprecated methods used since the last call "
+"to resetDeprecatedMethodsUsed."
 msgstr ""
 
 #: ../../docstring
@@ -282,8 +284,8 @@ msgstr ""
 #: of
 msgid ""
 "A Boolean specifying whether deprecated members, methods, and arguments "
-"can be seen and used. Possible values are ON and OFF. The default value "
-"is ON."
+"can be seen and used. Possible values are ON and OFF. The default value is"
+" ON."
 msgstr ""
 
 #: ../../docstring
@@ -291,8 +293,8 @@ msgstr ""
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues:10
 #: of
 msgid ""
-"A Boolean specifying whether a warning is displayed after running a "
-"script that contains deprecated commands. The default value is True."
+"A Boolean specifying whether a warning is displayed after running a script"
+" that contains deprecated commands. The default value is True."
 msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.resetDeprecatedArgsUsed:1
@@ -313,9 +315,10 @@ msgstr ""
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues:4
 #: of
 msgid ""
-"Check `BackwardCompatibility.setValues on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-backwardcompatibilitypyc.htm?contextscope=all"
-"#simaker-backwardcompatibilitysetvaluespyc>`__."
+"Check `BackwardCompatibility.setValues on help.3ds.com/2023 <https://help."
+"3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"backwardcompatibilitypyc.htm?contextscope=all#simaker-"
+"backwardcompatibilitysetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.setValues:7
@@ -337,16 +340,17 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:1 of
 msgid ""
-"This function defines a function to be called when a specified Abaqus/CAE"
-" module is imported. You cannot specify a custom module. For more "
+"This function defines a function to be called when a specified Abaqus/CAE "
+"module is imported. You cannot specify a custom module. For more "
 "information, see An example of a callback function."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:10 of
 msgid ""
-"Check `Callback.addImportCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncallbackpyc.htm?contextscope=all"
-"#simaker-functioncallbackaddimportcallbackpyc>`__."
+"Check `Callback.addImportCallback on help.3ds.com/2023 <https://help.3ds.c"
+"om/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functioncallbackpyc.htm?contextscope=all#simaker-"
+"functioncallbackaddimportcallbackpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:13 of
@@ -356,13 +360,14 @@ msgstr ""
 #: abaqus.UtilityAndView.Callback.addImportCallback:15 of
 msgid ""
 "A Python function to be called. The interface definition of the callback "
-"function is `def functionName(moduleName, userData)`. **moduleName** is a"
-" String. **userData** is the object passed as the **userData** argument "
-"to the addImportCallback method."
+"function is `def functionName(moduleName, userData)`. **moduleName** is a "
+"String. **userData** is the object passed as the **userData** argument to "
+"the addImportCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.addImportCallback:19 of
-msgid "Any Python object or None. This object is passed to the callback function."
+msgid ""
+"Any Python object or None. This object is passed to the callback function."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.removeImportCallback:1 of
@@ -371,9 +376,10 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Callback.removeImportCallback:9 of
 msgid ""
-"Check `Callback.removeImportCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncallbackpyc.htm?contextscope=all"
-"#simaker-functioncallbackremoveimportcallbackpyc>`__."
+"Check `Callback.removeImportCallback on help.3ds.com/2023 <https://help.3d"
+"s.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functioncallbackpyc.htm?contextscope=all#simaker-"
+"functioncallbackremoveimportcallbackpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Callback.removeImportCallback:12 of
@@ -396,18 +402,18 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Customization.journalMethodCall:12 of
 msgid ""
-"Your command should not call journalMethodCall if the command changes the"
-" mdb using built-in Abaqus Scripting Interface commands, because built-in"
-" commands are journaled by default. A command that changes the mdb "
-"customData is one example of a command that should call "
-"journalMethodCall."
+"Your command should not call journalMethodCall if the command changes the "
+"mdb using built-in Abaqus Scripting Interface commands, because built-in "
+"commands are journaled by default. A command that changes the mdb "
+"customData is one example of a command that should call journalMethodCall."
 msgstr ""
 
 #: abaqus.UtilityAndView.Customization.journalMethodCall:23 of
 msgid ""
-"Check `Customization.journalMethodCall on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functioncustomizationpyc.htm?contextscope=all"
-"#simaker-functioncustomizationjournalmethodcallpyc>`__."
+"Check `Customization.journalMethodCall on help.3ds.com/2023 <https://help."
+"3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functioncustomizationpyc.htm?contextscope=all#simaker-"
+"functioncustomizationjournalmethodcallpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Customization.journalMethodCall:26 of
@@ -426,15 +432,15 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Customization.journalMethodCall:32 of
 msgid ""
-"A Python dict object specifying the keyword arguments to be written to "
-"the journal file."
+"A Python dict object specifying the keyword arguments to be written to the"
+" journal file."
 msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:1 of
 msgid ""
 "This method adds a callback function that will be invoked when the "
-"specified Abaqus Scripting Interface objects are about to be deleted. The"
-" callback is invoked only when the object is deleted using the Python "
+"specified Abaqus Scripting Interface objects are about to be deleted. The "
+"callback is invoked only when the object is deleted using the Python "
 "statement del object. The callback is not invoked when the object is "
 "deleted using an Abaqus Scripting Interface command such as "
 "mdb.models[name].parts[name].deleteFeature()."
@@ -442,25 +448,26 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:12 of
 msgid ""
-"Check `Delete.deleteObjectCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiondeletepyc.htm?contextscope=all"
-"#simaker-functiondeletedeleteobjectcallbackpyc>`__."
+"Check `Delete.deleteObjectCallback on help.3ds.com/2023 <https://help.3ds."
+"com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functiondeletepyc.htm?contextscope=all#simaker-"
+"functiondeletedeleteobjectcallbackpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:15 of
 msgid ""
-"A Python function to be called when an object matching the specified path"
-" is about to be deleted. The interface definition of the callback "
-"function is `def functionName(objectPath, userData)` where **objectPath**"
-" is the path to the object about to be deleted. **userData** is the "
-"object passed as the **userData** argument to the addCallback method."
+"A Python function to be called when an object matching the specified path "
+"is about to be deleted. The interface definition of the callback function "
+"is `def functionName(objectPath, userData)` where **objectPath** is the "
+"path to the object about to be deleted. **userData** is the object passed "
+"as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:21 of
 msgid ""
-"A String specifying the path to an object or the SymbolicConstant ANY. "
-"You can include wildcards in the path to specify a pattern to be matched."
-" Examples of valid paths are  `path='mdb.models[*]' "
+"A String specifying the path to an object or the SymbolicConstant ANY. You"
+" can include wildcards in the path to specify a pattern to be matched. "
+"Examples of valid paths are  `path='mdb.models[*]' "
 "path=\"mdb.models['Axle*'].parts[*]\"`, and "
 "`path='mdb.models[*].materials[*]'`"
 msgstr ""
@@ -475,9 +482,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Delete.deleteObjectCallback:29 of
 msgid ""
-"A Boolean specifying that the callback should be called if an object "
-"owned by the object specified by the **path** argument is about to be "
-"deleted. The default value is False."
+"A Boolean specifying that the callback should be called if an object owned"
+" by the object specified by the **path** argument is about to be deleted. "
+"The default value is False."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:1 of
@@ -488,24 +495,24 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:10 of
 msgid ""
-"Check `Method.addCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionmethodpyc.htm?contextscope=all"
-"#simaker-functionmethodaddcallbackpyc>`__."
+"Check `Method.addCallback on help.3ds.com/2023 <https://help.3ds.com/2023/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionmethodpyc.htm?contextscope=all#simaker-"
+"functionmethodaddcallbackpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:13
 #: abaqus.UtilityAndView.Method.removeCallback:13 of
 msgid ""
-"An object or type object specifying which object will trigger the "
-"callback function to be invoked or the Symbolic Constant ALL_TYPES."
+"An object or type object specifying which object will trigger the callback"
+" function to be invoked or the Symbolic Constant ALL_TYPES."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:16
 #: abaqus.UtilityAndView.Method.removeCallback:16 of
 msgid ""
-"A String specifying the name of the method on the caller that will "
-"trigger the callback function to be invoked or the Symbolic Constant "
-"ALL_METHODS."
+"A String specifying the name of the method on the caller that will trigger"
+" the callback function to be invoked or the Symbolic Constant ALL_METHODS."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:19 of
@@ -513,11 +520,11 @@ msgid ""
 "A Python function to be called when a command matching the specified "
 "caller and method name is about to be executed. The interface definition "
 "of the callback function is `def functionName(callingMethod, args, "
-"keywordArgs, userData)` where **callingMethod** is the method that called"
-" this function. **args** is the sequence of non-keyword arguments that "
-"was passed to the calling method. **keywordArgs** is the dictionary of "
-"keyword arguments that was passed to the calling method. **userData** is "
-"the object passed as the **userData** argument to the addCallback method."
+"keywordArgs, userData)` where **callingMethod** is the method that called "
+"this function. **args** is the sequence of non-keyword arguments that was "
+"passed to the calling method. **keywordArgs** is the dictionary of keyword"
+" arguments that was passed to the calling method. **userData** is the "
+"object passed as the **userData** argument to the addCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.addCallback:30 of
@@ -541,9 +548,10 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Method.removeCallback:10 of
 msgid ""
-"Check `Method.removeCallback on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionmethodpyc.htm?contextscope=all"
-"#simaker-functionmethodremovecallbackpyc>`__."
+"Check `Method.removeCallback on help.3ds.com/2023 <https://help.3ds.com/20"
+"23/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionmethodpyc.htm?contextscope=all#simaker-"
+"functionmethodremovecallbackpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Method.removeCallback:19 of
@@ -551,12 +559,11 @@ msgid ""
 "A Python function to be called when a command matching the specified "
 "caller and method name is about to be executed. The interface definition "
 "of the callback function is `def functionName(callingMethod, args, "
-"keywordArgs, userData)` where **callingMethod** is the method that called"
-" this function. **args** is the sequence of nonkeyword arguments that was"
-" passed to the calling method. **keywordArgs** is the dictionary of "
-"keyword arguments that was passed to the calling method. **userData** is "
-"the object passed as the **userData** argument to the removeCallback "
-"method."
+"keywordArgs, userData)` where **callingMethod** is the method that called "
+"this function. **args** is the sequence of nonkeyword arguments that was "
+"passed to the calling method. **keywordArgs** is the dictionary of keyword"
+" arguments that was passed to the calling method. **userData** is the "
+"object passed as the **userData** argument to the removeCallback method."
 msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository:1 of
@@ -566,31 +573,32 @@ msgstr ""
 #: abaqus.UtilityAndView.Repository.Repository:1 of
 msgid ""
 "Repositories are containers that store a particular type of object; for "
-"example, the steps repository contains all the steps defined in the "
-"model. An Abaqus Scripting Interface Repository maps a key to a value. "
-"The key is usually a String, and the value is any Python object, usually "
-"an Abaqus object. A repository is similar to a Python dictionary; "
-"however, only a constructor can add an object to a repository. In "
-"addition, all of the objects in a repository are of the same base type. "
-"For more information, see Repositories. A Repository has no constructor. "
-"Abaqus creates empty repositories when you import a module. For example, "
-"Abaqus creates an empty parts repository when you import the part module."
-" The following methods of the Repository object are standard Python "
-"dictionary methods and are not described here:"
+"example, the steps repository contains all the steps defined in the model."
+" An Abaqus Scripting Interface Repository maps a key to a value. The key "
+"is usually a String, and the value is any Python object, usually an Abaqus"
+" object. A repository is similar to a Python dictionary; however, only a "
+"constructor can add an object to a repository. In addition, all of the "
+"objects in a repository are of the same base type. For more information, "
+"see Repositories. A Repository has no constructor. Abaqus creates empty "
+"repositories when you import a module. For example, Abaqus creates an "
+"empty parts repository when you import the part module. The following "
+"methods of the Repository object are standard Python dictionary methods "
+"and are not described here:"
 msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository:10 of
 msgid ""
-"The Repository object is derived from the dict object. - has_key - items "
-"- keys - values - "
-"[changeKey(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-utlrepositorypyc.htm?ContextScope=all"
-"#simaker-utlrepositorychangekeypyc)"
+"The Repository object is derived from the dict object. - has_key - items -"
+" keys - values - [changeKey(...)](https://help.3ds.com/2022/english/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"utlrepositorypyc.htm?ContextScope=all#simaker-utlrepositorychangekeypyc)"
 msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository:19 of
 msgid ""
-"Check `Repository on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorypyc.htm?contextscope=all>`__."
+"Check `Repository on help.3ds.com/2023 <https://help.3ds.com/2023/English/"
+"DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"repositorypyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository.changeKey:1 of
@@ -601,9 +609,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository.changeKey:4 of
 msgid ""
-"Check `Repository.changeKey on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorypyc.htm?contextscope=all"
-"#simaker-repositorychangekeypyc>`__."
+"Check `Repository.changeKey on help.3ds.com/2023 <https://help.3ds.com/202"
+"3/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"repositorypyc.htm?contextscope=all#simaker-repositorychangekeypyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Repository.Repository.changeKey:7 of
@@ -624,9 +632,9 @@ msgid ""
 "stored in a replay file and used as an argument to Abaqus Scripting "
 "Interface methods and functions. By convention the string representation "
 "of the SymbolicConstant object is the same as its variable name. If you "
-"pass a SymbolicConstant object to the Python repr() function, the "
-"function returns the text without quotes. In effect, the text is the "
-"variable that, by convention, refers to the SymbolicConstant object. Two "
+"pass a SymbolicConstant object to the Python repr() function, the function"
+" returns the text without quotes. In effect, the text is the variable "
+"that, by convention, refers to the SymbolicConstant object. Two "
 "SymbolicConstant objects with the same text are the same Python object, "
 "although you can assign them to different variables. All of the "
 "SymbolicConstant objects that are required in Abaqus Scripting Interface "
@@ -638,8 +646,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:18 of
 msgid ""
-"Check `SymbolicConstant on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symbolicconstantpyc.htm?contextscope=all>`__."
+"Check `SymbolicConstant on help.3ds.com/2023 <https://help.3ds.com/2023/En"
+"glish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"symbolicconstantpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:20
@@ -675,26 +684,27 @@ msgstr ""
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:1 of
 msgid ""
 "This function can be used to upgrade a directory, a file, or a list of "
-"both directories and files. You can preview the changes before you choose"
-" to upgrade the file. A user interface to this function is available via "
+"both directories and files. You can preview the changes before you choose "
+"to upgrade the file. A user interface to this function is available via "
 "the Plug-ins menu. For more information, see Upgrading a script. You can "
-"also use a simpler interface from the command line to upgrade scripts. "
-"For more information, see the summary of changed commands at the end of "
-"this guide."
+"also use a simpler interface from the command line to upgrade scripts. For"
+" more information, see the summary of changed commands at the end of this "
+"guide."
 msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:13 of
 msgid ""
-"Check `Upgrade.upgradeScript on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionupgradepyc.htm?contextscope=all"
-"#simaker-functionupgradeupgradescriptpyc>`__."
+"Check `Upgrade.upgradeScript on help.3ds.com/2023 <https://help.3ds.com/20"
+"23/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionupgradepyc.htm?contextscope=all#simaker-"
+"functionupgradeupgradescriptpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:16 of
 msgid ""
 "A String or sequence of Strings specifying the files or directories to "
-"upgrade. If a directory path is found, it will be searched for files with"
-" the suffix .py or .guiLog. If **searchSubdirectories** is True, any "
+"upgrade. If a directory path is found, it will be searched for files with "
+"the suffix .py or .guiLog. If **searchSubdirectories** is True, any "
 "directories found within a directory will also be searched."
 msgstr ""
 
@@ -715,18 +725,18 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:29 of
 msgid ""
-"A Boolean specifying whether to preview the changes to the file instead "
-"of changing the file. If **preview** is True, display a preview of the "
-"file changes. The default value is True.By default, the preview is "
-"displayed in a web browser. The **diffExecutable** argument allows you to"
-" specify a different application in which to preview the changes."
+"A Boolean specifying whether to preview the changes to the file instead of"
+" changing the file. If **preview** is True, display a preview of the file "
+"changes. The default value is True.By default, the preview is displayed in"
+" a web browser. The **diffExecutable** argument allows you to specify a "
+"different application in which to preview the changes."
 msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:34 of
 msgid ""
 "A String specifying the application used to display the differences "
-"between the script and the upgraded script. The default value is an empty"
-" string, and the differences are displayed by a web browser. Examples of "
+"between the script and the upgraded script. The default value is an empty "
+"string, and the differences are displayed by a web browser. Examples of "
 "values for **diffExecutable** are winmerge and diff. This argument is "
 "ignored if **preview** is False."
 msgstr ""
@@ -740,8 +750,8 @@ msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:42 of
 msgid ""
-"A String specifying the Abaqus release from which to upgrade. The default"
-" value is EARLIEST."
+"A String specifying the Abaqus release from which to upgrade. The default "
+"value is EARLIEST."
 msgstr ""
 
 #: abaqus.UtilityAndView.Upgrade.upgradeScript:45 of
@@ -788,9 +798,10 @@ msgstr ""
 
 #: abaqus.UtilityAndView.User.getWarningReply:20 of
 msgid ""
-"Check `User.getWarningReply on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionuserpyc.htm?contextscope=all"
-"#simaker-functionusergetwarningreplypyc>`__."
+"Check `User.getWarningReply on help.3ds.com/2023 <https://help.3ds.com/202"
+"3/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"functionuserpyc.htm?contextscope=all#simaker-"
+"functionusergetwarningreplypyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.User.getWarningReply:23 of
@@ -799,8 +810,8 @@ msgstr ""
 
 #: abaqus.UtilityAndView.User.getWarningReply:25 of
 msgid ""
-"A Sequence of standard buttons to be displayed in the warning dialog box."
-" Permissible values are YES, NO, YES_TO_ALL and CANCEL."
+"A Sequence of standard buttons to be displayed in the warning dialog box. "
+"Permissible values are YES, NO, YES_TO_ALL and CANCEL."
 msgstr ""
 
 #: abaqus.UtilityAndView.User.getWarningReply:28 of
@@ -809,27 +820,27 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View:1 of
 msgid ""
-"The Session and Viewport View objects store view settings for custom "
-"(both predefined and user-defined) views. The paradigm used to define a "
-"view is based on a camera analogy. Similar to taking a photograph with a "
-"camera, features such as camera position, view direction, orientation, "
-"depth of field, and projection are specified to transform three-"
-"dimensional views to the screen. The Layer View objects store a "
-"transformation matrix used to position the contents of the Layer within a"
-" viewport."
+"The Session and Viewport View objects store view settings for custom (both"
+" predefined and user-defined) views. The paradigm used to define a view is"
+" based on a camera analogy. Similar to taking a photograph with a camera, "
+"features such as camera position, view direction, orientation, depth of "
+"field, and projection are specified to transform three-dimensional views "
+"to the screen. The Layer View objects store a transformation matrix used "
+"to position the contents of the Layer within a viewport."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View:15 of
 msgid ""
-"Check `View on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all>`__."
+"Check `View on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMU"
+"LIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View:17 of
 msgid ""
-"This method creates a View object. Note:All dimensions and coordinates "
-"are specified in the model coordinate system. Note:This method cannot be "
-"used to create a View for a Layer object."
+"This method creates a View object. Note:All dimensions and coordinates are"
+" specified in the model coordinate system. Note:This method cannot be used"
+" to create a View for a Layer object."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View:26 of
@@ -852,23 +863,23 @@ msgstr ""
 #: ../../docstring abaqus.UtilityAndView.View.View:35
 #: abaqus.UtilityAndView.View.View.farPlane:1 of
 msgid ""
-"A Float specifying the distance from the camera to the far clipping plane"
-" when **farPlaneMode** =SPECIFY. Possible values are **farPlane** > "
+"A Float specifying the distance from the camera to the far clipping plane "
+"when **farPlaneMode** =SPECIFY. Possible values are **farPlane** > "
 "**nearPlane**."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View:38
 #: abaqus.UtilityAndView.View.View.width:1 of
 msgid ""
-"A Float specifying the width of the front clipping plane. Possible values"
-" are **width** > 0.0."
+"A Float specifying the width of the front clipping plane. Possible values "
+"are **width** > 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View:41
 #: abaqus.UtilityAndView.View.View.height:1 of
 msgid ""
-"A Float specifying the height of the front clipping plane. Possible "
-"values are **height** > 0.0."
+"A Float specifying the height of the front clipping plane. Possible values"
+" are **height** > 0.0."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View:44
@@ -888,8 +899,8 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.cameraUpVector:1
 #: abaqus.UtilityAndView.View.View.setViewpoint:11 of
 msgid ""
-"A sequence of three Floats specifying the camera's up vector (the "
-"screen's positive **Y** axis). The initial value is (0, 0, 0)."
+"A sequence of three Floats specifying the camera's up vector (the screen's"
+" positive **Y** axis). The initial value is (0, 0, 0)."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View:52
@@ -905,8 +916,8 @@ msgid ""
 "model to the right. A negative value pans the model to the left. The "
 "*viewOffsetX* and **viewOffsetY** arguments allow you to pan the view "
 "without changing the position of the camera or the target "
-"(*cameraPosition* and **cameraTarget** arguments to the View method). The"
-" resulting change in the view allows you to pan a perspective display "
+"(*cameraPosition* and **cameraTarget** arguments to the View method). The "
+"resulting change in the view allows you to pan a perspective display "
 "without producing an apparent rotation of the model."
 msgstr ""
 
@@ -914,8 +925,8 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.viewOffsetY:1 of
 msgid ""
 "A Float specifying the amount to pan the model in the screen **Y** "
-"direction as a fraction of the viewport height. A positive value pans the"
-" model upward. A negative value pans the model downward."
+"direction as a fraction of the viewport height. A positive value pans the "
+"model upward. A negative value pans the model downward."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View:65
@@ -972,9 +983,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.fitView:5 of
 msgid ""
-"Check `View.fitView on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewfitviewpyc>`__."
+"Check `View.fitView on help.3ds.com/2023 <https://help.3ds.com/2023/Englis"
+"h/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewfitviewpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.fitView:8
@@ -988,8 +999,8 @@ msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View.layerTransform:1 of
 msgid ""
-"A tuple of Floats specifying a transformation matrix used to position the"
-" contents of the Layer within a viewport."
+"A tuple of Floats specifying a transformation matrix used to position the "
+"contents of the Layer within a viewport."
 msgstr ""
 
 #: ../../docstring abaqus.UtilityAndView.View.View.name:1 of
@@ -998,23 +1009,23 @@ msgid ""
 "key). Possible values are 'Front', 'Back', 'Top', 'Bottom', 'Left', "
 "'Right', 'Iso', 'User-1', 'User-2', 'User-3', and 'User-4'. The object "
 "member associated with this argument is a SymbolicConstant. Possible "
-"values of the **name** member are: FRONT, BACK, TOP, BOTTOM, LEFT, RIGHT,"
-" ISO, USER1, USER2, USER3, and USER4."
+"values of the **name** member are: FRONT, BACK, TOP, BOTTOM, LEFT, RIGHT, "
+"ISO, USER1, USER2, USER3, and USER4."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.next:1 of
 msgid ""
-"This method restores the view in the viewport to the next view setting in"
-" the list. (There is a list of eight views stored for each viewport.) If "
+"This method restores the view in the viewport to the next view setting in "
+"the list. (There is a list of eight views stored for each viewport.) If "
 "there is no next view, no action is taken. Note:This method is not "
 "available for a Layer View."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.next:6 of
 msgid ""
-"Check `View.next on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewnextpyc>`__."
+"Check `View.next on help.3ds.com/2023 <https://help.3ds.com/2023/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewnextpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.pan:1 of
@@ -1025,9 +1036,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.pan:4 of
 msgid ""
-"Check `View.pan on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewpanpyc>`__."
+"Check `View.pan on help.3ds.com/2023 <https://help.3ds.com/2023/English/DS"
+"SIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewpanpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.pan:7 of
@@ -1041,9 +1052,9 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.pan:11 of
 msgid ""
 "A Float specifying the amount to pan the model in the screen **Y** "
-"direction as a fraction of the viewport height. A positive value pans the"
-" model upward. A negative value pans the model downward. The default "
-"value is 0.0."
+"direction as a fraction of the viewport height. A positive value pans the "
+"model upward. A negative value pans the model downward. The default value "
+"is 0.0."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.pan:15 of
@@ -1064,50 +1075,50 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.zoomRectangle:13 of
 msgid ""
 "A Boolean specifying the viewport should refresh immediately after the "
-"command is processed. This argument is typically used only when writing a"
-" script and it is desirable to show intermediate results before the "
-"script completes. The default value is False."
+"command is processed. This argument is typically used only when writing a "
+"script and it is desirable to show intermediate results before the script "
+"completes. The default value is False."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.previous:1 of
 msgid ""
-"This method restores the view in the viewport to the previous view "
-"setting in the list. (There is a list of eight views stored for each "
-"viewport.) If there is no previous view, no action is taken. Note:This "
-"method is not available for a Layer View."
+"This method restores the view in the viewport to the previous view setting"
+" in the list. (There is a list of eight views stored for each viewport.) "
+"If there is no previous view, no action is taken. Note:This method is not "
+"available for a Layer View."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.previous:6 of
 msgid ""
-"Check `View.previous on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewpreviouspyc>`__."
+"Check `View.previous on help.3ds.com/2023 <https://help.3ds.com/2023/Engli"
+"sh/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewpreviouspyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:1 of
 msgid ""
-"This method rotates the view in the viewport. If a center of rotation has"
-" been previously specified and **asMovie** is OFF then this method will "
+"This method rotates the view in the viewport. If a center of rotation has "
+"been previously specified and **asMovie** is OFF then this method will "
 "honor that rotation center."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:5 of
 msgid ""
-"Check `View.rotate on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewrotatepyc>`__."
+"Check `View.rotate on help.3ds.com/2023 <https://help.3ds.com/2023/English"
+"/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewrotatepyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:8 of
 msgid ""
-"A Float specifying the degrees to rotate about the **X** axis. The "
-"default value is 0.0."
+"A Float specifying the degrees to rotate about the **X** axis. The default"
+" value is 0.0."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:10 of
 msgid ""
-"A Float specifying the degrees to rotate about the **Y** axis. The "
-"default value is 0.0."
+"A Float specifying the degrees to rotate about the **Y** axis. The default"
+" value is 0.0."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:12 of
@@ -1119,20 +1130,21 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.rotate:14 of
 msgid ""
 "A SymbolicConstant specifying the rotation mode. Possible values are:  * "
-"TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes "
-"(an absolute rotation). * SCREEN : Rotate incrementally about the "
-"screen's axes (a relative rotation). * MODEL : Rotate incrementally about"
-" the model's axes (a relative rotation).  The default value is MODEL."
+"TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an"
+" absolute rotation). * SCREEN : Rotate incrementally about the screen's "
+"axes (a relative rotation). * MODEL : Rotate incrementally about the "
+"model's axes (a relative rotation).  The default value is MODEL."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:14 of
-msgid "A SymbolicConstant specifying the rotation mode. Possible values are:"
+msgid ""
+"A SymbolicConstant specifying the rotation mode. Possible values are:"
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:16 of
 msgid ""
-"TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes "
-"(an absolute rotation)."
+"TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an"
+" absolute rotation)."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:17 of
@@ -1142,7 +1154,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:18 of
-msgid "MODEL : Rotate incrementally about the model's axes (a relative rotation)."
+msgid ""
+"MODEL : Rotate incrementally about the model's axes (a relative rotation)."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.rotate:20 of
@@ -1163,9 +1176,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setLayerTransform:5 of
 msgid ""
-"Check `View.setLayerTransform on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewsetlayertransformpyc>`__."
+"Check `View.setLayerTransform on help.3ds.com/2023 <https://help.3ds.com/2"
+"023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewsetlayertransformpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setLayerTransform:8 of
@@ -1175,8 +1188,8 @@ msgstr ""
 #: abaqus.UtilityAndView.View.View.setLayerTransform:10 of
 msgid ""
 "A View object from which the view settings are to be copied. If the "
-"**layerTransform** argument is also supplied to setLayerTransform, it "
-"will override the values in the View object specified by **view**."
+"**layerTransform** argument is also supplied to setLayerTransform, it will"
+" override the values in the View object specified by **view**."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setProjection:1 of
@@ -1189,9 +1202,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setProjection:6 of
 msgid ""
-"Check `View.setProjection on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewsetprojectionpyc>`__."
+"Check `View.setProjection on help.3ds.com/2023 <https://help.3ds.com/2023/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewsetprojectionpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setRotationCenter:1 of
@@ -1200,9 +1213,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setRotationCenter:4 of
 msgid ""
-"Check `View.setRotationCenter on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewsetrotationcenterpyc>`__."
+"Check `View.setRotationCenter on help.3ds.com/2023 <https://help.3ds.com/2"
+"023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewsetrotationcenterpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setRotationCenter:7 of
@@ -1234,9 +1247,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setValues:12 of
 msgid ""
-"Check `View.setValues on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewsetvaluespyc>`__."
+"Check `View.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/Engl"
+"ish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setValues:15 of
@@ -1254,8 +1267,8 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setValues:27 of
 msgid ""
-"A SymbolicConstant specifying how the distance from the camera to the far"
-" clipping plane is set. Possible values are AUTOCOMPUTE and SPECIFY."
+"A SymbolicConstant specifying how the distance from the camera to the far "
+"clipping plane is set. Possible values are AUTOCOMPUTE and SPECIFY."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setValues:30 of
@@ -1270,15 +1283,15 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setViewpoint:5 of
 msgid ""
-"Check `View.setViewpoint on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewsetviewpointpyc>`__."
+"Check `View.setViewpoint on help.3ds.com/2023 <https://help.3ds.com/2023/E"
+"nglish/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewsetviewpointpyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.setViewpoint:8 of
 msgid ""
-"A sequence of three Floats specifying the viewing vector (from the camera"
-" to the origin of the model)."
+"A sequence of three Floats specifying the viewing vector (from the camera "
+"to the origin of the model)."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoom:1 of
@@ -1287,9 +1300,9 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoom:4 of
 msgid ""
-"Check `View.zoom on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewzoompyc>`__."
+"Check `View.zoom on help.3ds.com/2023 <https://help.3ds.com/2023/English/D"
+"SSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewzoompyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoom:7 of
@@ -1333,21 +1346,21 @@ msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoomRectangle:1 of
 msgid ""
-"This method fills the viewport with the graphics located within the given"
-" rectangle."
+"This method fills the viewport with the graphics located within the given "
+"rectangle."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoomRectangle:4 of
 msgid ""
-"Check `View.zoomRectangle on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all"
-"#simaker-viewzoomrectanglepyc>`__."
+"Check `View.zoomRectangle on help.3ds.com/2023 <https://help.3ds.com/2023/"
+"English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-"
+"viewpyc.htm?contextscope=all#simaker-viewzoomrectanglepyc>`__."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoomRectangle:7 of
 msgid ""
-"A pair of Floats specifying the*X*- and **Y** coordinates of one corner "
-"of the rectangle in fractions of the viewport width and height."
+"A pair of Floats specifying the*X*- and **Y** coordinates of one corner of"
+" the rectangle in fractions of the viewport width and height."
 msgstr ""
 
 #: abaqus.UtilityAndView.View.View.zoomRectangle:10 of
