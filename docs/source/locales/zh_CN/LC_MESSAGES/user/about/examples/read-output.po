@@ -34,11 +34,11 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:7
 msgid ""
-"This example shows how you can use the Abaqus Scripting Interface to read"
-" an output database, manipulate the data, and display the results using "
-"the Visualization module in Abaqus/CAE. The Abaqus Scripting Interface "
-"allows you to display the data even though you have not written it back "
-"to an output database."
+"This example shows how you can use the Abaqus Scripting Interface to read "
+"an output database, manipulate the data, and display the results using the"
+" Visualization module in Abaqus/CAE. The Abaqus Scripting Interface allows"
+" you to display the data even though you have not written it back to an "
+"output database."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:9
@@ -63,14 +63,14 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:14
 msgid ""
-"Creates variables that refer to the displacement field output in the last"
-" frame of the first and second steps."
+"Creates variables that refer to the displacement field output in the last "
+"frame of the first and second steps."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:15
 msgid ""
-"Creates variables that refer to the stress field output in the last frame"
-" of the first and second steps."
+"Creates variables that refer to the stress field output in the last frame "
+"of the first and second steps."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:16
@@ -91,8 +91,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:19
 msgid ""
-"Selects the von Mises invariant of deltaStress as the default field "
-"output variable."
+"Selects the von Mises invariant of deltaStress as the default field output"
+" variable."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:20
@@ -109,8 +109,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:33
 msgid ""
-"Use the following commands to retrieve the script and the output database"
-" that is read by the script:"
+"Use the following commands to retrieve the script and the output database "
+"that is read by the script:"
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:40
@@ -127,8 +127,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:110
 msgid ""
-"These statements make the basic Abaqus objects accessible to the script "
-"as well as all the Symbolic Constants defined in the Abaqus Scripting "
+"These statements make the basic Abaqus objects accessible to the script as"
+" well as all the Symbolic Constants defined in the Abaqus Scripting "
 "Interface."
 msgstr ""
 
@@ -151,8 +151,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:134
 msgid ""
-"This statement uses the path variable odbPath to open the output database"
-" and to assign it to the variable myOdb."
+"This statement uses the path variable odbPath to open the output database "
+"and to assign it to the variable myOdb."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:140
@@ -163,8 +163,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:146
 msgid ""
-"These statements assign the first and second steps in the output database"
-" to the variables firstStep and secondStep."
+"These statements assign the first and second steps in the output database "
+"to the variables firstStep and secondStep."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:153
@@ -177,8 +177,8 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:160
 msgid ""
-"These statements assign the displacement field output in the last frame "
-"of the first and second steps to the variables displacement1 and "
+"These statements assign the displacement field output in the last frame of"
+" the first and second steps to the variables displacement1 and "
 "displacement2."
 msgstr ""
 
@@ -190,9 +190,9 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:173
 msgid ""
-"This statement subtracts the displacement field output from the last "
-"frame of the two steps and puts the resulting field output into a new "
-"variable deltaDisplacement."
+"This statement subtracts the displacement field output from the last frame"
+" of the two steps and puts the resulting field output into a new variable "
+"deltaDisplacement."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:179
@@ -211,9 +211,9 @@ msgstr ""
 
 #: ../../user/about/examples/read-output.md:193
 msgid ""
-"This statement uses deltaStress, our stress field output variable, to set"
-" the primary variable. This is the variable that Abaqus will display in a"
-" contour or symbol plot."
+"This statement uses deltaStress, our stress field output variable, to set "
+"the primary variable. This is the variable that Abaqus will display in a "
+"contour or symbol plot."
 msgstr ""
 
 #: ../../user/about/examples/read-output.md:199

@@ -24,34 +24,34 @@ msgstr ""
 #: ../../user/output/cpp/write.md:3
 msgid ""
 "You can write your own data to an output database, and you can use "
-"Abaqus/CAE to view the data. Writing to an output database is very "
-"similar to reading from an output database. When you open an existing "
-"database, the Odb object contains all the objects found in the output "
-"database, such as instances, steps, and field output data. In contrast, "
-"when you are writing to a new output database, these objects do not "
-"exist. As a result you must use a constructor to create the objects. For "
-"example, you use the Part constructor to create a Part object, the "
-"Instance constructor to create an OdbInstance object, and the Step "
-"constructor to create an OdbStep object."
+"Abaqus/CAE to view the data. Writing to an output database is very similar"
+" to reading from an output database. When you open an existing database, "
+"the Odb object contains all the objects found in the output database, such"
+" as instances, steps, and field output data. In contrast, when you are "
+"writing to a new output database, these objects do not exist. As a result "
+"you must use a constructor to create the objects. For example, you use the"
+" Part constructor to create a Part object, the Instance constructor to "
+"create an OdbInstance object, and the Step constructor to create an "
+"OdbStep object."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:5
 msgid ""
 "After you create an object, you use methods of the objects to enter or "
 "modify the data associated with the object. For example, if you are "
-"creating an output database, you first create an Odb object. You then use"
-" the Part constructor to create a part. After creating the part, you use "
+"creating an output database, you first create an Odb object. You then use "
+"the Part constructor to create a part. After creating the part, you use "
 "the addNodes and addElements methods of the Part object to add nodes and "
 "elements, respectively. Similarly, you use the addData method of the "
-"FieldOutput object to add field output data to the output database. After"
-" creating an output database, you should use the save method on the Odb "
+"FieldOutput object to add field output data to the output database. After "
+"creating an output database, you should use the save method on the Odb "
 "object to save the output database."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:7
 msgid ""
-"The example script in {ref}`creating-an-output-database` also illustrates"
-" how you can write to an output database."
+"The example script in {ref}`creating-an-output-database` also illustrates "
+"how you can write to an output database."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:9
@@ -85,10 +85,10 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:30
 msgid ""
-"To define the geometry of your model, you first create the parts that are"
-" used by the model and then you add nodes and elements to the parts. You "
-"then define the assembly by creating instances of the parts. If the "
-"output database already contains results data, you should not change the "
+"To define the geometry of your model, you first create the parts that are "
+"used by the model and then you add nodes and elements to the parts. You "
+"then define the assembly by creating instances of the parts. If the output"
+" database already contains results data, you should not change the "
 "geometry of the model. This is to ensure that the results remain "
 "synchronized with the model."
 msgstr ""
@@ -100,8 +100,8 @@ msgstr ""
 #: ../../user/output/cpp/write.md:34
 msgid ""
 "If the part was created by Abaqus/CAE, the description of the native "
-"Abaqus/CAE geometry is stored in the model database, but it is not stored"
-" in the output database. A part is stored in an output database as a "
+"Abaqus/CAE geometry is stored in the model database, but it is not stored "
+"in the output database. A part is stored in an output database as a "
 "collection of nodes, elements, surfaces, and sets. You use the Part "
 "constructor to add a part to the Odb object. You can specify the type of "
 "the part; however, only DEFORMABLE_BODY is currently supported. For "
@@ -111,9 +111,9 @@ msgstr ""
 #: ../../user/output/cpp/write.md:41
 msgid ""
 "For a full description of the Part constructor, see "
-"{py:class}`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and"
-" does not contain geometry. After you create the Part object, you add "
-"nodes and elements."
+"{py:class}`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and "
+"does not contain geometry. After you create the Part object, you add nodes"
+" and elements."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:43
@@ -126,13 +126,13 @@ msgstr ""
 msgid ""
 "For a full description of the addNodes command, see "
 "{py:meth}`~abaqus.Odb.OdbPart.OdbPart.addNodes`. After you have created "
-"nodes, you can use the NodeSetFromNodeLabels constructor to create a node"
-" set from the node labels. For more information, see "
+"nodes, you can use the NodeSetFromNodeLabels constructor to create a node "
+"set from the node labels. For more information, see "
 "{py:meth}`~abaqus.Odb.OdbPart.OdbPart.NodeSetFromNodeLabels`. Similarly, "
 "you use the addElements method to add elements to the part using a "
 "sequence of element labels, element connectivity, and element type. You "
-"can also define an optional element set and an optional section category."
-" For example,"
+"can also define an optional element set and an optional section category. "
+"For example,"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:89
@@ -153,7 +153,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/output/cpp/write.md:99
-msgid "You can create both instances and regions on the RootAssembly object."
+msgid ""
+"You can create both instances and regions on the RootAssembly object."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:101
@@ -162,14 +163,14 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:103
 msgid ""
-"You use the Instance constructor to create part instances of the parts "
-"you have already defined using the Part constructor. For example,"
+"You use the Instance constructor to create part instances of the parts you"
+" have already defined using the Part constructor. For example,"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:110
 msgid ""
-"You can also supply an optional local coordinate system that specifies "
-"the rotation and translation of the part instance. You can add nodes and "
+"You can also supply an optional local coordinate system that specifies the"
+" rotation and translation of the part instance. You can add nodes and "
 "elements only to a part; you cannot add elements and nodes to a part "
 "instance. As a result, you should create the nodes and elements that "
 "define the geometry of a part before you instance the part. For a full "
@@ -183,13 +184,12 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:114
 msgid ""
-"Region commands are used to create sets from element labels, node labels,"
-" and element faces. You can create a set on a part, part instance, or the"
-" root assembly. Node and element labels are unique within an instance but"
-" not within the assembly. As a result, a set on the root assembly "
-"requires the names of the part instances associated with the nodes and "
-"elements. You can also use region commands to create surfaces. For "
-"example,"
+"Region commands are used to create sets from element labels, node labels, "
+"and element faces. You can create a set on a part, part instance, or the "
+"root assembly. Node and element labels are unique within an instance but "
+"not within the assembly. As a result, a set on the root assembly requires "
+"the names of the part instances associated with the nodes and elements. "
+"You can also use region commands to create surfaces. For example,"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:136
@@ -209,7 +209,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/output/cpp/write.md:142
-msgid "Materials are stored in the materials repository under the Odb object."
+msgid ""
+"Materials are stored in the materials repository under the Odb object."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:144
@@ -220,8 +221,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:151
 msgid ""
-"To create an isotropic elastic material, with a Young's modulus of "
-"12000.0 and an effective Poisson's ratio of 0.3 in the output database:"
+"To create an isotropic elastic material, with a Young's modulus of 12000.0"
+" and an effective Poisson's ratio of 0.3 in the output database:"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:164
@@ -250,9 +251,9 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:180
 msgid ""
-"The following code creates a homogeneous solid section object. A Material"
-" object must be present before creating a Section object. An exception is"
-" thrown if the material does not exist."
+"The following code creates a homogeneous solid section object. A Material "
+"object must be present before creating a Section object. An exception is "
+"thrown if the material does not exist."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:191
@@ -266,19 +267,19 @@ msgstr ""
 #: ../../user/output/cpp/write.md:201
 msgid ""
 "You use the SectionAssignment object to assign sections and their "
-"associated material properties to regions of the model. SectionAssignment"
-" objects are members of the Odb object. For a full description of the "
+"associated material properties to regions of the model. SectionAssignment "
+"objects are members of the Odb object. For a full description of the "
 "assignSection method, see "
 "{py:meth}`~abaqus.Odb.OdbInstance.OdbInstance.assignSection`."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:203
 msgid ""
-"All Elements in an Abaqus analysis need to be associated with section and"
-" material properties. Section assignments provide the relationship "
-"between elements in an Instance object and their section properties. The "
-"section properties include the associated material name. To create an "
-"element set and assign a section:"
+"All Elements in an Abaqus analysis need to be associated with section and "
+"material properties. Section assignments provide the relationship between "
+"elements in an Instance object and their section properties. The section "
+"properties include the associated material name. To create an element set "
+"and assign a section:"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:215
@@ -289,8 +290,8 @@ msgstr ""
 msgid ""
 "To write results data to the output database, you first create the Step "
 "objects that correspond to each step of the analysis. If you are writing "
-"field output data, you also create the Frame objects that will contain "
-"the field data. History output data are associated with Step objects."
+"field output data, you also create the Frame objects that will contain the"
+" field data. History output data are associated with Step objects."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:219
@@ -299,8 +300,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:221
 msgid ""
-"You use the Step constructor to create a results step for time, "
-"frequency, or modal domain results. For example,"
+"You use the Step constructor to create a results step for time, frequency,"
+" or modal domain results. For example,"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:232
@@ -333,12 +334,12 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:246
 msgid ""
-"A FieldOutput object contains a cloud of data values (e.g., stress "
-"tensors at each integration point for all elements). Each data value has "
-"a location, type, and value. You add field output data to a Frame object "
-"by first creating a FieldOutput object using the FieldOutput constructor "
-"and then adding data to the FieldOutput object using the `addData` "
-"method. For example,"
+"A FieldOutput object contains a cloud of data values (e.g., stress tensors"
+" at each integration point for all elements). Each data value has a "
+"location, type, and value. You add field output data to a Frame object by "
+"first creating a FieldOutput object using the FieldOutput constructor and "
+"then adding data to the FieldOutput object using the `addData` method. For"
+" example,"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:276
@@ -349,8 +350,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:278
 msgid ""
-"The **type** argument to the FieldOutput constructor describes the type "
-"of the data—tensor, vector, or scalar. The properties of the different "
+"The **type** argument to the FieldOutput constructor describes the type of"
+" the data—tensor, vector, or scalar. The properties of the different "
 "tensor types are:"
 msgstr ""
 
@@ -370,9 +371,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:286
 msgid ""
-"A tensor that has only three in-plane components and two principal "
-"values. Full three-dimensional rotation of the tensor components is "
-"possible."
+"A tensor that has only three in-plane components and two principal values."
+" Full three-dimensional rotation of the tensor components is possible."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:288
@@ -382,8 +382,8 @@ msgstr ""
 #: ../../user/output/cpp/write.md:290
 msgid ""
 "A tensor that has three in-plane components, one out-of-plane component, "
-"and three principal values. Full three-dimensional rotation of the tensor"
-" components is possible."
+"and three principal values. Full three-dimensional rotation of the tensor "
+"components is possible."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:292
@@ -392,8 +392,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:294
 msgid ""
-"A tensor that has only three in-plane components and two principal "
-"values. Only in-plane rotation of the tensor components is possible."
+"A tensor that has only three in-plane components and two principal values."
+" Only in-plane rotation of the tensor components is possible."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:296
@@ -409,8 +409,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:300
 msgid ""
-"The valid components and invariants for the different data types are "
-"given in Table 1."
+"The valid components and invariants for the different data types are given"
+" in Table 1."
 msgstr ""
 
 #: ../../user/output/cpp/write.md
@@ -450,7 +450,8 @@ msgid "11, 22, 33, 12, 13, 23"
 msgstr ""
 
 #: ../../user/output/cpp/write.md
-msgid "MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, MIN_PRINCIPAL"
+msgid ""
+"MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, MIN_PRINCIPAL"
 msgstr ""
 
 #: ../../user/output/cpp/write.md
@@ -462,7 +463,8 @@ msgid "11, 22, 12"
 msgstr ""
 
 #: ../../user/output/cpp/write.md
-msgid "MAX_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL"
+msgid ""
+"MAX_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL"
 msgstr ""
 
 #: ../../user/output/cpp/write.md
@@ -489,8 +491,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:312
 msgid ""
-"For example, the following statements add element data to the FieldOutput"
-" object:"
+"For example, the following statements add element data to the FieldOutput "
+"object:"
 msgstr ""
 
 #: ../../user/output/cpp/write.md:352
@@ -501,10 +503,10 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:354
 msgid ""
-"As a convenience, **localCoordSystem** can be a single transform or a "
-"list of transforms. If **localCoordSystem** is a single transform, it "
-"applies to all values. If **localCoordSystem** is a list of transforms, "
-"the number of items in the list must match the number of data values."
+"As a convenience, **localCoordSystem** can be a single transform or a list"
+" of transforms. If **localCoordSystem** is a single transform, it applies "
+"to all values. If **localCoordSystem** is a list of transforms, the number"
+" of items in the list must match the number of data values."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:356
@@ -516,8 +518,8 @@ msgid ""
 "The previous examples show how you can use commands to set the default "
 "field variable and deformed field variable. Abaqus/CAE uses the default "
 "field variable setting to determine the variable to display in a contour "
-"plot; for example, stress. Similarly, the default deformed field variable"
-" determines the variable that distinguishes a deformed plot from an "
+"plot; for example, stress. Similarly, the default deformed field variable "
+"determines the variable that distinguishes a deformed plot from an "
 "undeformed plot. Typically, you will use displacement for the default "
 "deformed field variable; you cannot specify an invariant or a component. "
 "The default variable settings apply for each frame in the step. For "
@@ -528,8 +530,8 @@ msgstr ""
 
 #: ../../user/output/cpp/write.md:365
 msgid ""
-"You can set a different default field variable and deformed field "
-"variable for different steps."
+"You can set a different default field variable and deformed field variable"
+" for different steps."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:367
@@ -594,18 +596,18 @@ msgstr ""
 #: ../../user/output/cpp/write.md:403
 msgid ""
 "Each HistoryOutput object contains a sequence of (**frameValue**, "
-"**value**) sequences. The HistoryOutput object has a method (addData) for"
-" adding data. Each data item is a sequence of (**frameValue**, "
-"**value**). In a time domain analysis (**domain** = TIME) the sequence is"
-" (**stepTime**, **value**). In a frequency domain analysis (**domain** = "
+"**value**) sequences. The HistoryOutput object has a method (addData) for "
+"adding data. Each data item is a sequence of (**frameValue**, **value**). "
+"In a time domain analysis (**domain** = TIME) the sequence is "
+"(**stepTime**, **value**). In a frequency domain analysis (**domain** = "
 "FREQUENCY) the sequence is (**frequency**, **value**). In a modal domain "
 "analysis (**domain** = MODAL) the sequence is (**mode**, **value**)."
 msgstr ""
 
 #: ../../user/output/cpp/write.md:405
 msgid ""
-"You add the data values as time and data tuples. The number of data items"
-" must correspond to the number of time items. For example,"
+"You add the data values as time and data tuples. The number of data items "
+"must correspond to the number of time items. For example,"
 msgstr ""
 
 #~ msgid ""

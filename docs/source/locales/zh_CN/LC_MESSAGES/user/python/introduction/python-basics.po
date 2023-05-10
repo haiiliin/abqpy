@@ -22,7 +22,8 @@ msgid "The basics of Python"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:3
-msgid "The following sections introduce you to the basics of the Python language."
+msgid ""
+"The following sections introduce you to the basics of the Python language."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:5
@@ -63,11 +64,11 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:40
 msgid ""
-"Variable names must start with a letter or an underscore character and "
-"can contain any number of letters, digits, or underscores. load_3 and "
+"Variable names must start with a letter or an underscore character and can"
+" contain any number of letters, digits, or underscores. load_3 and "
 "\\_frictionStep are legal variable names; 3load, load_3\\$, and "
-"\\$frictionStep are not legal names. There is no limit on the length of a"
-" variable name."
+"\\$frictionStep are not legal names. There is no limit on the length of a "
+"variable name."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:41
@@ -85,11 +86,11 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:44
 msgid ""
 "When you assign a variable in a Python program, the variable refers to a "
-"Python object, but the variable is not an object itself. For example, the"
-" expression numSpokes=3 creates a variable that refers to an integer "
-"object; however, numSpokes is not an object. You can change the object to"
-" which a variable refers. numSpokes can refer to a real number on one "
-"line, an integer on the next line, and a viewport on the next line."
+"Python object, but the variable is not an object itself. For example, the "
+"expression numSpokes=3 creates a variable that refers to an integer "
+"object; however, numSpokes is not an object. You can change the object to "
+"which a variable refers. numSpokes can refer to a real number on one line,"
+" an integer on the next line, and a viewport on the next line."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:46
@@ -107,16 +108,15 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:54
 msgid ""
-"An object always has a type. In our example the type of "
-"`mdb.models['Model A']` is Model. An object's type cannot be changed. The"
-" type defines the data encapsulated by an object—its members—and the "
-"functions that can manipulate those data—its methods. Unlike most "
-"programming languages, you do not need to declare the type of a variable "
-"before you use it. Python determines the type when the assignment "
-"statement is executed. The Abaqus Scripting Interface uses the term "
-"object to refer to a specific Abaqus type as well as to an instance of "
-"that type; for example, a Model object refers to a Model type and to an "
-"instance of a Model type."
+"An object always has a type. In our example the type of `mdb.models['Model"
+" A']` is Model. An object's type cannot be changed. The type defines the "
+"data encapsulated by an object—its members—and the functions that can "
+"manipulate those data—its methods. Unlike most programming languages, you "
+"do not need to declare the type of a variable before you use it. Python "
+"determines the type when the assignment statement is executed. The Abaqus "
+"Scripting Interface uses the term object to refer to a specific Abaqus "
+"type as well as to an instance of that type; for example, a Model object "
+"refers to a Model type and to an instance of a Model type."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:58
@@ -133,8 +133,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:64
 msgid ""
-"To create variables called i and j that refer to integer objects, type "
-"the following at the Python prompt:"
+"To create variables called i and j that refer to integer objects, type the"
+" following at the Python prompt:"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:71
@@ -148,16 +148,16 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:78
 msgid ""
-"Use int(*n*) to convert a variable to an integer; use long(*n*) to "
-"convert a variable to a long integer."
+"Use int(*n*) to convert a variable to an integer; use long(*n*) to convert"
+" a variable to a long integer."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:93
 msgid ""
 "All Abaqus Scripting Interface object types begin with an uppercase "
 "character; for example, a Part or a Viewport. An integer is another kind "
-"of object and follows the same convention. The Abaqus Scripting Interface"
-" refers to an integer object as an Int. Similarly, the Abaqus Scripting "
+"of object and follows the same convention. The Abaqus Scripting Interface "
+"refers to an integer object as an Int. Similarly, the Abaqus Scripting "
 "Interface refers to a floating-point object as a Float."
 msgstr ""
 
@@ -173,8 +173,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:108
 msgid ""
-"A float is based on a C double and can be compared to a Fortran real\\*8."
-" Use float(**n**) to convert a variable to a float."
+"A float is based on a C double and can be compared to a Fortran real\\*8. "
+"Use float(**n**) to convert a variable to a float."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:110
@@ -225,8 +225,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:147
 msgid ""
-"You use the `type()` function to return the type of the object to which a"
-" variable refers."
+"You use the `type()` function to return the type of the object to which a "
+"variable refers."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:165
@@ -235,8 +235,7 @@ msgid ""
 "an object containing a series of objects. There are three types of built-"
 "in sequences in Python—list, tuple, and string. In addition, imported "
 "modules allow you to use arrays in your scripts. The following table "
-"describes the characteristics of list, tuple, string, and array "
-"sequences."
+"describes the characteristics of list, tuple, string, and array sequences."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:167
@@ -249,8 +248,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:169
 msgid ""
-"Methods: The type has methods that can be used to manipulate the "
-"sequence; for example, `sort()`, `reverse()`."
+"Methods: The type has methods that can be used to manipulate the sequence;"
+" for example, `sort()`, `reverse()`."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:170
@@ -264,22 +263,22 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:174
 msgid ""
 "Lists are mutable heterogeneous sequences (anything that can be modified "
-"is called mutable). A list can be a sequence of strings, integers, "
-"floats, or any combination of these. In fact, a list can contain any type"
-" of object; for example,"
+"is called mutable). A list can be a sequence of strings, integers, floats,"
+" or any combination of these. In fact, a list can contain any type of "
+"object; for example,"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:181
 msgid ""
 "You can refer to individual items from a sequence using the index of the "
-"item. Indices start at zero. Negative indices count backward from the end"
-" of a sequence."
+"item. Indices start at zero. Negative indices count backward from the end "
+"of a sequence."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:197
 msgid ""
-"Lists are heterogeneous, which means they can contain objects of "
-"different type."
+"Lists are heterogeneous, which means they can contain objects of different"
+" type."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:203
@@ -299,7 +298,8 @@ msgid ""
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:233
-msgid "The following are some additional built-in methods that operate on lists:"
+msgid ""
+"The following are some additional built-in methods that operate on lists:"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:235
@@ -315,7 +315,8 @@ msgid "`index()`"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:247
-msgid "Return the index indicating the first time an item appears in the list."
+msgid ""
+"Return the index indicating the first time an item appears in the list."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:256
@@ -349,11 +350,11 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:288
 msgid ""
 "Tuples are very similar to lists; however, they are immutable "
-"heterogeneous sequences, which means that you cannot change them after "
-"you create them. You can think of a tuple as a list that cannot be "
-"modified. Tuples have no methods; you cannot append items to a tuple, and"
-" you cannot modify or delete the items in a tuple. The following "
-"statement creates an empty tuple:"
+"heterogeneous sequences, which means that you cannot change them after you"
+" create them. You can think of a tuple as a list that cannot be modified. "
+"Tuples have no methods; you cannot append items to a tuple, and you cannot"
+" modify or delete the items in a tuple. The following statement creates an"
+" empty tuple:"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:294
@@ -394,8 +395,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:352
 msgid ""
-"As with all sequences, you use negative indices to index backward from "
-"the end of a string."
+"As with all sequences, you use negative indices to index backward from the"
+" end of a string."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:360
@@ -405,8 +406,8 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:368
 msgid ""
 "Look at the standard Python documentation on the official Python website "
-"(<https://www.python.org>) for a list of common string operations. String"
-" functions are described in the String Services section of the Python "
+"(<https://www.python.org>) for a list of common string operations. String "
+"functions are described in the String Services section of the Python "
 "Library Reference."
 msgstr ""
 
@@ -417,8 +418,8 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:372
 msgid ""
 "Arrays are mutable homogeneous sequences. The numpy module allows you to "
-"create and operate on multidimensional arrays. Python determines the type"
-" of elements in the array; you do not have to declare the type when you "
+"create and operate on multidimensional arrays. Python determines the type "
+"of elements in the array; you do not have to declare the type when you "
 "create the array. For more information about the numpy module, see "
 "<https://numpy.org>."
 msgstr ""
@@ -428,7 +429,8 @@ msgid "Sequence operations"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:396
-msgid "Python provides a set of tools that allow you to operate on a sequence."
+msgid ""
+"Python provides a set of tools that allow you to operate on a sequence."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:398
@@ -437,10 +439,10 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:400
 msgid ""
-"Sequences can be divided into smaller sequences. This operation is called"
-" slicing. The expression sequence\\[m:n\\] returns a copy of sequence "
-"from m to n−1. The default value for m is zero; the default value for n "
-"is the length of the sequence."
+"Sequences can be divided into smaller sequences. This operation is called "
+"slicing. The expression sequence\\[m:n\\] returns a copy of sequence from "
+"m to n−1. The default value for m is zero; the default value for n is the "
+"length of the sequence."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:413
@@ -461,12 +463,12 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:450
 msgid ""
-"The `range()` function generates a list containing a sequence of "
-"integers. You can use the `range()` function to control iterative loops. "
-"The arguments to range are start (the starting value), end (the ending "
-"value plus one), and step (the step between each value). The start and "
-"step arguments are optional; the default start argument is 0, and the "
-"default step argument is 1. The arguments must be integers."
+"The `range()` function generates a list containing a sequence of integers."
+" You can use the `range()` function to control iterative loops. The "
+"arguments to range are start (the starting value), end (the ending value "
+"plus one), and step (the step between each value). The start and step "
+"arguments are optional; the default start argument is 0, and the default "
+"step argument is 1. The arguments must be integers."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:461
@@ -483,10 +485,10 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:480
 msgid ""
-"Python defines a special object called the None object or Python None "
-"that represents an empty value. The None object is returned by functions "
-"and methods that do not have a return value. The None object has no value"
-" and prints as None. For example"
+"Python defines a special object called the None object or Python None that"
+" represents an empty value. The None object is returned by functions and "
+"methods that do not have a return value. The None object has no value and "
+"prints as None. For example"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:492
@@ -496,9 +498,9 @@ msgstr ""
 #: ../../user/python/introduction/python-basics.md:494
 msgid ""
 "You can continue a statement on the following line if you break the "
-"statement between a set of (), {}, or \\[\\] delimiters. For example, "
-"look at the tuple that was used in {doc}`/user/about/examples/create-"
-"part` to assign the coordinates of the vertices to a variable:"
+"statement between a set of (), {}, or \\[\\] delimiters. For example, look"
+" at the tuple that was used in {doc}`/user/about/examples/create-part` to "
+"assign the coordinates of the vertices to a variable:"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:502
@@ -512,8 +514,8 @@ msgstr ""
 msgid ""
 "When you are running Python from a local Linux or Windows window, the "
 "prompt changes to the . . . characters to indicate that you are on a "
-"continuation line. Comments in a Python script begin with the # character"
-" and continue to the end of the line."
+"continuation line. Comments in a Python script begin with the # character "
+"and continue to the end of the line."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:517
@@ -549,8 +551,8 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:551
 msgid ""
-"The following list includes some additional useful printing operators. "
-"The `+` flag indicates that a number should include a sign."
+"The following list includes some additional useful printing operators. The"
+" `+` flag indicates that a number should include a sign."
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:554
@@ -571,18 +573,18 @@ msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:568
 msgid ""
-"Python does not use a special character, such as }, to signify the end of"
-" a control block such as an if statement. Instead, Python uses "
-"indentation to indicate the end of a control block. You define the "
-"indentation that governs a block. When your script returns to the "
-"original indentation, the block ends. For example,"
+"Python does not use a special character, such as }, to signify the end of "
+"a control block such as an if statement. Instead, Python uses indentation "
+"to indicate the end of a control block. You define the indentation that "
+"governs a block. When your script returns to the original indentation, the"
+" block ends. For example,"
 msgstr ""
 
 #: ../../user/python/introduction/python-basics.md:581
 msgid ""
-"When you are using the Python interpreter from the Abaqus/CAE command "
-"line interface or if you are running Python from a local Linux or Windows"
-" window, the prompt changes to the \"...\"\" characters to indicate that "
+"When you are using the Python interpreter from the Abaqus/CAE command line"
+" interface or if you are running Python from a local Linux or Windows "
+"window, the prompt changes to the \"...\"\" characters to indicate that "
 "you are in a block controlled by indentation."
 msgstr ""
 
