@@ -6,8 +6,6 @@ on:
       - "20**"
     paths:
       - '.github/workflows/crowdin.yml'
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
 
 concurrency:
