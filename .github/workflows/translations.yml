@@ -8,9 +8,6 @@ on:
       - 'src/**'
       - 'docs/source/**'
       - '.github/workflows/translations.yml'
-  pull_request:
-    branches:
-      - "20**"
   workflow_dispatch:
 
 concurrency:
@@ -32,17 +29,16 @@ jobs:
     - name: Install dependencies
       run: pip install .[dev,docs]
     - name: Update translations
-      run: sh docs/source/locales/update.sh
+      run: sh docs/source/update.sh
       env:
         version: ${{ github.ref_name }}
-    - run: pre-commit run --all-files || true
     - name: Pushes to another repository
       id: push_directory
       uses: cpina/github-action-push-to-another-repository@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
       with:
-        source-directory: docs/source/locales/${{ github.ref_name }}
+        source-directory: docs/source/locale/${{ github.ref_name }}
         destination-github-username: 'haiiliin'
         destination-repository-name: 'abqpy-locale'
         target-directory: ${{ github.ref_name }}
@@ -50,15 +46,3 @@ jobs:
         user-email: github-actions[bot]@users.noreply.github.com
         commit-message: See ORIGIN_COMMIT from $GITHUB_REF
         target-branch: main
-    - name: Update the submodule
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git submodule update --remote --merge
-        git add .
-        git commit -m "[skip ci] Update submodule for ${{ github.sha }}" || true
-    - name: Push the changes
-      uses: CasperWA/push-protected@v2
-      with:
-        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-        branch: ${{ github.ref_name }}
