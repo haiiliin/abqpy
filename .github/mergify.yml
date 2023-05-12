@@ -6,7 +6,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2023
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2023"
         assignees:
@@ -22,7 +22,7 @@ pull_request_rules:
         - label=disable-auto-merge-2023
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2023"
         assignees:
@@ -41,7 +41,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2022
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2022"
         assignees:
@@ -59,7 +59,7 @@ pull_request_rules:
         - label=disable-auto-merge-2022
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2022"
         assignees:
@@ -78,7 +78,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2021
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2021"
         assignees:
@@ -96,7 +96,7 @@ pull_request_rules:
         - label=disable-auto-merge-2021
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2021"
         assignees:
@@ -115,7 +115,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2020
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2020"
         assignees:
@@ -133,7 +133,7 @@ pull_request_rules:
         - label=disable-auto-merge-2020
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2020"
         assignees:
@@ -152,7 +152,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2019
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2019"
         assignees:
@@ -170,7 +170,7 @@ pull_request_rules:
         - label=disable-auto-merge-2019
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2019"
         assignees:
@@ -189,7 +189,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2018
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2018"
         assignees:
@@ -207,7 +207,7 @@ pull_request_rules:
         - label=disable-auto-merge-2018
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2018"
         assignees:
@@ -226,7 +226,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2017
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2017"
         assignees:
@@ -244,7 +244,7 @@ pull_request_rules:
         - label=disable-auto-merge-2017
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2017"
         assignees:
@@ -263,7 +263,7 @@ pull_request_rules:
       - label!=disable-auto-merge-2016
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2016"
         assignees:
@@ -281,7 +281,7 @@ pull_request_rules:
         - label=disable-auto-merge-2016
     actions:
       backport:
-        title: "[skip rtd] {{ title }} (backport #{{ number }})"
+        title: "{{ title }} (backport #{{ number }})"
         branches:
           - "2016"
         assignees:
