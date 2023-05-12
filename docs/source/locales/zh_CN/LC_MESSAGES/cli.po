@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 16:20+0000\n"
-"PO-Revision-Date: 2023-05-12 07:02\n"
+"PO-Revision-Date: 2023-05-12 09:59\n"
 "Last-Translator: Crowdin\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,28 +28,31 @@ msgid ""
 "`20**.5.0`, and it is not compatible with the command line interface of "
 "previous versions."
 msgstr ""
+"自版本 `20**.5.0` 以来，命令行接口基于 "
+"[`fire`](https://github.com/google/python-fire) 库，"
+"与之前版本的命令行接口不兼容。"
 
 #: ../../cli.md:9
 msgid ""
 "The default execution procedure invoked by `abqpy` inside the Python "
 "interpreter environment where it is installed is to run one of the two "
 "following command lines:"
-msgstr ""
+msgstr "在 Python 环境中使用 `abqpy` 默认将运行以下两个命令之一："
 
 #: ../../cli.md:12
 msgid "When the `abaqus` module is imported for the first time:"
-msgstr ""
+msgstr "当 `abaqus` 模块首次导入时："
 
 #: ../../cli.md:18
 msgid "When the `odbAccess` module is imported for the first time:"
-msgstr ""
+msgstr "当 `odbAccess` 模块首次导入时："
 
 #: ../../cli.md:24
 msgid ""
 "These commands lines are invoked when you run your script containing the "
 "above statements in your installed Python interpreter, with a simple "
 "command line launch:"
-msgstr ""
+msgstr "当您在已安装的 Python 解释器中运行包含上述语句的脚本时，将调用这些命令行："
 
 #: ../../cli.md:31
 msgid ""
@@ -60,6 +63,8 @@ msgid ""
 "(another alternative is to use an {doc}`System Environment Variable "
 "<envvars>`)."
 msgstr ""
+"为了提供提供运行自定义 abaqus 命令的功能，`abqpy` 提供两种选择。一种是使用单独的 "
+"`abqpy` 命令行，另一种是使用 {doc}`系统环境变量 <envvars>`."
 
 #: ../../cli.md:37
 msgid ""
@@ -67,6 +72,8 @@ msgid ""
 "modes: **Abaqus/CAE Execution** mode and **Abaqus Python Execution** mode,"
 " and more:"
 msgstr ""
+"目前，`abqpy` 命令行接口提供了几种运行模式：**Abaqus/CAE 执行 ** 模式和 **Abaqus"
+" Python 执行 ** 模式："
 
 #: ../../cli.md:42
 msgid ""
@@ -77,20 +84,24 @@ msgid ""
 " see the [References](#references) section or run  `abqpy COMMAND --help` "
 "for help."
 msgstr ""
+"`COMMAND` 是 `abaqus`、`cae`、`python`、`run` 或任何其他 Abaqus "
+"命令之一，`SCRIPT` 是你的 Python 脚本的文件名称，`flags` "
+"是可以传递给命令的选项，`ARGS` 是命令行选项之后传递的额外参数。 欲了解详情，请参阅 "
+"[References](#reference) 部分或运行 `abqpy COMMAND --help` 获取帮助。"
 
 #: ../../cli.md:49
 msgid ""
 "For the following commands, the boolean flags can be specified with the "
 "following syntax (take `gui` as an example):"
-msgstr ""
+msgstr "对于下面的命令，可以用以下语法指定布尔类型的选项（以 `gui` 选项为例）："
 
 #: ../../cli.md:51
 msgid "`--gui` or `--gui=True` to set the flag to `True`;"
-msgstr ""
+msgstr "`--gui` 或 `--gui=True` 将选项设为 `True`;"
 
 #: ../../cli.md:52
 msgid "`--nogui` or `--gui=False` to set the flag to `False`."
-msgstr ""
+msgstr "`--nogui` 或 `--gui=False` 将选项设为 `False` 。"
 
 #: ../../cli.md:54
 msgid ""
@@ -98,33 +109,39 @@ msgid ""
 "fire/blob/master/docs/guide.md#boolean-arguments) for more detailed "
 "information."
 msgstr ""
+"更详细的信息请查看 [这里](https://github.com/google/python-"
+"fire/blob/master/docs/guide.md#boolean-arcents)。"
 
 #: ../../cli.md:57
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../cli.md:59
 msgid ""
 "If you want to run you python script in Abaqus/CAE mode, you could run:"
-msgstr ""
+msgstr "如果您想要在 Abaqus/CAE 模式下运行您的 Python 脚本，您可以运行："
 
 #: ../../cli.md:65
 msgid ""
 "If you want to run your python script in Abaqus/CAE GUI or noGUI mode, "
 "providing the `database` file option, you could run:"
 msgstr ""
+"如果您想在 Abaqus/CAE GUI 或无 GUI 模式下运行您的 Python 脚本，并提供 `database`"
+" 文件选项，您可以运行："
 
 #: ../../cli.md:74
 msgid ""
 "If you want to run your python script in Abaqus Python Execution mode, you"
 " could run:"
-msgstr ""
+msgstr "如果您想要在 Abaqus/CAE 模式下运行您的 Python 脚本，您可以运行："
 
 #: ../../cli.md:80
 msgid ""
 "If you want to call the cli in your python script, you could use the "
 "{py:obj}`abqpy.cli.abaqus` object:"
 msgstr ""
+"如果你想在你的 Python 脚本中调用命令行，你可以使用 {py:obj}`abqpy.cli.abaqus` "
+"对象："
 
 #: ../../cli.md:89
 msgid ""
@@ -133,6 +150,8 @@ msgid ""
 " run `abqpy` command line interface as a module script and customize your "
 "default abaqus execution procedure."
 msgstr ""
+"一些现代的 Python IDE 允许您自定义默认的 Python 启动参数传递给解释器。 "
+"这允许你直接运行 `abqpy` 命令行，并自定义您的默认 abaqus 运行选项。"
 
 #: ../../cli.md:93
 msgid ""
@@ -140,18 +159,22 @@ msgid ""
 "Extension](https://marketplace.visualstudio.com/items?itemName=ms-"
 "python.python), you can specify the following setting:"
 msgstr ""
+"例如：在 [VSCode Python "
+"扩展](https://marketplace.visualstudio.com/items?itemName=ms-Python.python)"
+" 中，您可以指定以下设置："
 
 #: ../../cli.md:101
 msgid ""
 "That setting will make VS Code Python Extension run by default all python "
 "script files in the integrated terminal with the following command line:"
 msgstr ""
+"此设置将默认使用 VSCode Python 扩展运行的所有 Python 脚本文件，其运行命令如下："
 
 #: ../../cli.md:108
 msgid ""
 "Which provides a way to change the default abaqus execution procedure to "
 "GUI mode."
-msgstr ""
+msgstr "它提供了一种将默认 abaqus 执行过程更改为 GUI 模式的方法。"
 
 #: ../../cli.md:111
 msgid ""
@@ -160,23 +183,26 @@ msgid ""
 "token rather than the boolean value.  Thus `--gui=True` instead of `--gui`"
 " is used here to prevent this problem."
 msgstr ""
+"请注意，如果有另外的选项紧跟在波尔值选项之后，"
+"则该布尔值选项将采用后面的值而不是一个布尔值。 因此这里使用 `--gui=True` 而不是 "
+"`--gui` 来避免这个问题。"
 
 #: ../../cli.md:117
 msgid "References"
-msgstr ""
+msgstr "参考"
 
 #: ../../cli.md:122
 msgid "Abaqus/CAE Execution Mode"
-msgstr ""
+msgstr "Abaqus/CAE 运行模式"
 
 #: ../../cli.md:128
 msgid "Abaqus Python Execution Mode"
-msgstr ""
+msgstr "Abaqus Python 运行模式"
 
 #: ../../cli.md:134
 msgid "Less Frequently Used Commands"
-msgstr ""
+msgstr "使用较少的命令"
 
 #: ../../cli.md:139
 msgid "Comments"
-msgstr ""
+msgstr "评论"
