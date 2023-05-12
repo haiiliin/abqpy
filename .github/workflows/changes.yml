@@ -24,11 +24,12 @@ jobs:
       with:
         fetch-depth: 0
     - name: Installing the library
-      run: pip install .[docs]
+      run: pip install .[dev,docs]
     - name: Build the documentation
       run: sphinx-build -b changes -j auto -W docs/source docs/build/changes
     - name: Commit the changes
       run: |
+        pre-commit run --all-files || true
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add docs/source/CHANGES.md
