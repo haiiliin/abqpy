@@ -32,7 +32,7 @@ jobs:
         write-mode: overwrite
     - name: Delete deleted files
       run: |
-        python ".github/delete-deleted-files.py"
+        python "scripts/conflicts.py"
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
