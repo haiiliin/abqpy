@@ -35,6 +35,7 @@ classifiers = [
 
 [project.scripts]
 abqpy = "abqpy.__main__:main"
+crowdin = "abqpy.crowdin:main"
 
 [tool.setuptools]
 py-modules = [
