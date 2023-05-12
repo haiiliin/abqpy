@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: abqpy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 13:50+0000\n"
-"PO-Revision-Date: 2023-05-12 07:03\n"
+"PO-Revision-Date: 2023-05-12 09:59\n"
 "Last-Translator: Crowdin\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,6 +63,9 @@ msgid ""
 "created along with the options and settings you selected from each dialog "
 "box."
 msgstr ""
+"建立 Abaqus 模型的最方便的方法是在 Abaqus CAE 中进行。 当我们使用 Abaqus/CAE "
+"图形用户界面 (GUI) 创建模型并可视化结果时， 每次操作后由 Abaqus/CAE 内部发布命令。 "
+"这些命令反映了您创建的几何形状以及您从每个对话框中选择的选项和设置。"
 
 #: ../../tutorials.md:22
 msgid ""
@@ -72,12 +75,18 @@ msgid ""
 "the Python script in the reply file (`.rpy`). And then copy it to our "
 "script file, this works, but not nicely."
 msgstr ""
+"因此，我们可以使用 Python 脚本构建我们的 Abaqus 模型。 我们可以完全使用 Python "
+"脚本构建我们的 Abak 模型，尽管它不是一个有效的方法。 通常，我们在 Abaqus/CAE "
+"中做一些事情，并在 reply (`.rpy`) 文件中检查 Python 脚本。"
+"然后将其复制到我们的脚本文件，这样做没有任何问题，但并不是很方便。"
 
 #: ../../tutorials.md:27
 msgid ""
 "However, if type hints are provided in Python scripting of Abaqus, things "
 "will getting much easier, and that is what `abqpy` does."
 msgstr ""
+"但是，如果在 Abaqus 的 Python 脚本中提供类型提示，事情就会变得更容易了，这就是 "
+"`abqpy` 所做的事情。"
 
 #: ../../tutorials.md:30
 msgid ""
@@ -86,16 +95,18 @@ msgid ""
 "there is a vertical pressure in the top surface, the Abaqus model is "
 "showed as follows:"
 msgstr ""
+"下面描述的示例很简单，有一个正方形结构，底部的垂直位移是固定的， 表面有垂直压力，"
+"Abaqus 模型如下所示："
 
 #: ../../tutorials.md:37
 msgid "Header of the script"
-msgstr ""
+msgstr "脚本的导入部分"
 
 #: ../../tutorials.md:39
 msgid ""
 "Usually, when we use Python script to build the model, we need to import "
 "the following modules:"
-msgstr ""
+msgstr "通常，当我们使用 Python 脚本构建模型时，我们需要导入以下模块："
 
 #: ../../tutorials.md:47
 msgid ""
@@ -104,12 +115,14 @@ msgid ""
 "strings used in modelling, i.e., when we defines a part using the "
 "following code:"
 msgstr ""
+"模块 `abaqus` 包含两个最重要的变量 `mdb` 和 `session` 用于控制模型。 模块 "
+"`abaqusConstants` 包含用于建模的常量字符串，例如，当我们使用以下代码定义部件时："
 
 #: ../../tutorials.md:53
 msgid ""
 "`THREE_D` indicates the part is a 3D part, `DEFORMABLE_BODY` indicates the"
 " part is deformable."
-msgstr ""
+msgstr "`THREE_D` 表示该部件是三维的，`DEFORMABLE_BODY` 表示该部件是可变形的。"
 
 #: ../../tutorials.md:55
 msgid ""
@@ -118,10 +131,13 @@ msgid ""
 " call this function in our Python script. Now, the header of our Python "
 "script would be like:"
 msgstr ""
+"模块 `driverUtils` 包含一个重要函数 `executeOnCaeStartup` ， 当我们打开 Abaqus "
+"时都会执行此功能，所以我们需要在我们的 Python 脚本中调用此函数。 现在，我们的 "
+"Python 脚本就像："
 
 #: ../../tutorials.md:65
 msgid "Create parts"
-msgstr ""
+msgstr "创建部件"
 
 #: ../../tutorials.md:67
 msgid ""
@@ -130,12 +146,15 @@ msgid ""
 "{py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to "
 "create a sketch:"
 msgstr ""
+"首先，我们需要创建一个用于创建部件的草图，我们需要使用 "
+"{py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` "
+"来创建草图："
 
 #: ../../tutorials.md:75
 msgid ""
 "In this code, we draw a sketch with a square. Now we can create a part "
 "using this sketch:"
-msgstr ""
+msgstr "在该代码中，我们绘制了一个正方形。现在我们可以使用这个草图创建一个部件："
 
 #: ../../tutorials.md:82
 msgid ""
@@ -143,10 +162,13 @@ msgid ""
 "{py:meth}`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method to"
 " create a part using the sketch."
 msgstr ""
+"第一行代码创建了一个三维可变形的部件。然后我们使用 "
+"{py:meth}`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` "
+"方法并利用草图赋予部件几何特征。"
 
 #: ../../tutorials.md:84
 msgid "Create some sets for boundary conditions and loads"
-msgstr ""
+msgstr "为边界条件和荷载创建一些集合"
 
 #: ../../tutorials.md:86
 msgid ""
@@ -154,6 +176,9 @@ msgid ""
 "to create sets, when we use a Python script to build the model, we can use"
 " coordinates to find nodes/faces we need."
 msgstr ""
+"与在 Abaqus/CAE 中构建模型不同的是，在 Abaqus/CAE 中我们可以点击节点 / "
+"面来创建集合， 当我们使用 Python 脚本来构建模型时，"
+"我们需要使用坐标来找到我们需要的节点 / 面。"
 
 #: ../../tutorials.md:88
 msgid ""
@@ -161,26 +186,34 @@ msgid ""
 "{py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and"
 " surfaces:"
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.RegionPart.RegionPart.RegionPart.Set` 和 "
+"{py:meth}`~abaqus.Region.RegionPart.RegionPart.RegionPart.Surface` "
+"来创建集合和表面："
 
 #: ../../tutorials.md:98
 msgid "Merge parts to assembly"
-msgstr ""
+msgstr "将部件合并到装配集"
 
 #: ../../tutorials.md:100
 msgid ""
 "We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` "
 "to create instances："
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.AssemblyBase.AssemblyBase.Instance` "
+"方法创建装配实例："
 
 #: ../../tutorials.md:106
 msgid "Create materials and sections, and assign materials to sections"
-msgstr ""
+msgstr "创建材料和截面，并将材料分配给部件"
 
 #: ../../tutorials.md:108
 msgid ""
 "First we create a Material object using "
 "{py:meth}`~abaqus.Material.MaterialModel.MaterialModel.Material`:"
 msgstr ""
+"首先，我们使用 "
+"{py:meth}`~abaqus.Material.MaterialModel.MaterialModel.Material` "
+"方法创建一个材料对象："
 
 #: ../../tutorials.md:114
 msgid ""
@@ -188,6 +221,9 @@ msgid ""
 "{py:meth}`~abaqus.Material.Material.Material.Elastic` and "
 "{py:meth}`~abaqus.Material.Material.Material.Density`:"
 msgstr ""
+"然后我们给材料分配一些属性，例如 "
+"{py:meth}`~abaqus.Material.Material.Material.Elastic` 和 "
+"{py:meth}`~abaqus.Material.Density`："
 
 #: ../../tutorials.md:121
 msgid ""
@@ -195,20 +231,26 @@ msgid ""
 "eneousSolidSection` and assign the section to the part region "
 "({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):"
 msgstr ""
+"然后我们创建一个 "
+"{py:meth}`~abaqus.Section.SectionModel.SectionModel.AlimenousSolidSection`"
+" 截面并将该截面分配给部件 "
+"({py:meth}`~abaqus.PropertyPart.PropertyPart.SectionAssignment`):"
 
 #: ../../tutorials.md:128
 msgid "Create steps"
-msgstr ""
+msgstr "创建分析步"
 
 #: ../../tutorials.md:130
 msgid ""
 "It is easy to create a "
 "{py:meth}`~abaqus.Step.StepModel.StepModel.StaticStep`:"
 msgstr ""
+"可以使用 {py:meth}`~abaqus.StepModel.StepModel.StaticStep` "
+"创建一个简单的静力分析步："
 
 #: ../../tutorials.md:138
 msgid "Specify output requests"
-msgstr ""
+msgstr "指定输出变量"
 
 #: ../../tutorials.md:140
 msgid ""
@@ -218,10 +260,14 @@ msgid ""
 "{py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest`"
 " to specify field output and history output information."
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.Stepoutput.OutModel.OutputModel.OutputModel.F"
+"ieldOutputRequest` 和 "
+"{py:meth}`~abaqus.Stepput.OutputModel.OutModel.HistoryOutPutRequest` "
+"来指定场变量输出和历史变量输出信息。"
 
 #: ../../tutorials.md:147
 msgid "Create boundary conditions"
-msgstr ""
+msgstr "创建边界条件"
 
 #: ../../tutorials.md:149
 msgid ""
@@ -229,6 +275,9 @@ msgid ""
 "daryConditionModel.DisplacementBC` to create a displacement boundary "
 "condition:"
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.Boundary "
+"Condition.BoundaryConditionModel.BloundaryConditionModel.DisplacementBC` "
+"来创建一个位移边界条件："
 
 #: ../../tutorials.md:157
 msgid ""
@@ -237,20 +286,24 @@ msgid ""
 "copied to the instance, we can use the sets in the parts that we defined "
 "before."
 msgstr ""
+"应当指出，指定边界条件的几何区域需为实例而不是部件的几何区域，"
+"由于定义在部件的集合会被自动复制到实例，因此我们可以使用上面我们定义在部件的集合。"
 
 #: ../../tutorials.md:159
 msgid "Create loads"
-msgstr ""
+msgstr "创建荷载"
 
 #: ../../tutorials.md:161
 msgid ""
 "We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create "
 "a pressure:"
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` "
+"方法来创建压力："
 
 #: ../../tutorials.md:169
 msgid "Mesh"
-msgstr ""
+msgstr "网格"
 
 #: ../../tutorials.md:171
 msgid ""
@@ -258,75 +311,82 @@ msgid ""
 "{py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh`"
 " module, so we need to import `mesh` module:"
 msgstr ""
+"为了给模型划分网格，我们必须指定单元类型 "
+"{py:class}`~abaqus.Mesh.ElemType.ElemType`，可用单元类型在 `mesh` 模块中定义，"
+"因此我们需要导入 `mesh` 模块："
 
 #: ../../tutorials.md:184
 msgid "Create jobs"
-msgstr ""
+msgstr "创建作业"
 
 #: ../../tutorials.md:186
 msgid "We can use {py:meth}`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:"
-msgstr ""
+msgstr "我们可以使用 {py:meth}`~abaqus.Job.JobMdb.JobMdb.Job` 方法来创建作业："
 
 #: ../../tutorials.md:192
 msgid "Then we can write the model to an input file (`.inp`):"
-msgstr ""
+msgstr "然后我们可以将模型写入一个 inp 文件（`.inp`）："
 
 #: ../../tutorials.md:198
 msgid "Then we can submit the job:"
-msgstr ""
+msgstr "然后我们就可以提交创建好的作业："
 
 #: ../../tutorials.md:205
 msgid "Save the Abaqus model to a `.cae` file"
-msgstr ""
+msgstr "将 Abaqus 模型保存到 `.cae` 文件"
 
 #: ../../tutorials.md:207
 msgid ""
 "We can use {py:class}`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the "
 "Abaqus model to a `.cae` file:"
 msgstr ""
+"我们可以使用 {py:class}`~abaqus.MdbBase.MdbBase.SaveAs` 方法保存 Abaqus "
+"模型到一个 `.cae` 文件："
 
 #: ../../tutorials.md:213
 msgid "The whole script"
-msgstr ""
+msgstr "完整的脚本"
 
 #: ../../tutorials.md:215
 msgid "The whole script of this example is showed as follows:"
-msgstr ""
+msgstr "此示例的完整脚本如下："
 
 #: ../../tutorials.md:217
 msgid "compression.py"
-msgstr ""
+msgstr "compression.py"
 
 #: ../../tutorials.md:295
 msgid "Extract output data"
-msgstr ""
+msgstr "提取输出数据"
 
 #: ../../tutorials.md:297
 msgid ""
 "If we want to extract the output data, we have to write an output script."
-msgstr ""
+msgstr "如果我们想要提取输出数据，我们必须写一个输出脚本。"
 
 #: ../../tutorials.md:299
 msgid "Header of the output script"
-msgstr ""
+msgstr "脚本的导入部分"
 
 #: ../../tutorials.md:301
 msgid "Similarly, we have to import some modules:"
-msgstr ""
+msgstr "同样，我们必须导入一些模块："
 
 #: ../../tutorials.md:311
 msgid "Open the output database"
-msgstr ""
+msgstr "打开输出数据库"
 
 #: ../../tutorials.md:313
 msgid ""
 "We can use {py:meth}`~abaqus.Session.SessionBase.SessionBase.openOdb` to "
 "open the output database:"
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.Session.SessionBase.SessionBase.openOdb` "
+"方法打开输出数据库："
 
 #: ../../tutorials.md:321
 msgid "Extract the data"
-msgstr ""
+msgstr "提取输出数据"
 
 #: ../../tutorials.md:323
 msgid ""
@@ -334,6 +394,8 @@ msgid ""
 "{py:meth}`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract "
 "the output data:"
 msgstr ""
+"我们可以使用 {py:meth}`~abaqus.XY.XYSession.XYSession.xyDataListFromField` "
+"方法提取输出数据："
 
 #: ../../tutorials.md:331
 msgid ""
@@ -342,33 +404,36 @@ msgid ""
 "it to a file, i.e., using the `numpy` (`numpy` is installed in Python "
 "interpreter of Abaqus already):"
 msgstr ""
+"`dataList` 是一个 `XYData` 对象列表。 `XYData` 是在 Abaqus 中定义的数据类型。 "
+"数据存储在元组中，因此我们可以使用 `numpy` （`numpy` 已安装在 Abaqus Python "
+"解释器中）简单地将其保存到一个文件。"
 
 #: ../../tutorials.md:340
 msgid "Results of above example"
-msgstr ""
+msgstr "以上示例的结果"
 
 #: ../../tutorials.md:342
 msgid "The distribution of `U3` of above model is showed as follows:"
-msgstr ""
+msgstr "上述模型的 `U3` 的分布如下："
 
 #: ../../tutorials.md:351
 msgid ""
 "The distribution of the vertical displacement of a point in the top "
 "surface is showed as follows:"
-msgstr ""
+msgstr "上表面某点的竖直位移的分布如图所示："
 
 #: ../../tutorials.md:360
 msgid "The whole output script"
-msgstr ""
+msgstr "完整输出脚本"
 
 #: ../../tutorials.md:362
 msgid "The whole output script of this example is showed as follows:"
-msgstr ""
+msgstr "此示例的完整脚本如下："
 
 #: ../../tutorials.md:364
 msgid "compression-output.py"
-msgstr ""
+msgstr "compression-output.py"
 
 #: ../../tutorials.md:387
 msgid "Comments"
-msgstr ""
+msgstr "评论"
