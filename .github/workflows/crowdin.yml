@@ -23,10 +23,11 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install .[dev]
-      - run: crowdin sync && pre-commit run --all-files || true
+      - run: crowdin sync
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
       - run: |
+          pre-commit run --all-files || true
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
