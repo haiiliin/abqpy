@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install .[dev]
-      - run: crowdin sync
+      - run: python scripts/crowdin.py sync
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
       - run: |
