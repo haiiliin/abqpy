@@ -1,0 +1,41 @@
+name: Crowdin
+
+on:
+  push:
+    branches:
+      - "20**"
+    paths:
+      - '.github/workflows/crowdin.yml'
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install .[dev]
+      - run: crowdin sync && pre-commit run --all-files || true
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+      - uses: pre-commit/action@v3.0.0
+      - run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "[skip ci] Sync translations from Crowdin" || echo "Nothing to commit"
+      - name: Push the changes
+        uses: CasperWA/push-protected@v2
+        with:
+          token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+          branch: ${{ github.ref_name }}
