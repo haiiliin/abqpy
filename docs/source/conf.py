@@ -43,7 +43,7 @@ sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
 # For multiple languages
-locale_dirs = ["locales/"]  # path is example but recommended.
+locale_dirs = [f"locale/{version}"]  # path is example but recommended.
 gettext_compact = False  # optional.
 
 # -- General configuration ---------------------------------------------------
