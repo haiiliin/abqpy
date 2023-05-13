@@ -53,6 +53,7 @@ user/index
 reference/index
 CHANGES
 autoapi/index
+localization
 ```
 
 ```{toctree}
