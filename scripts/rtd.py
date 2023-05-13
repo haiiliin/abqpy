@@ -75,8 +75,8 @@ class ReadTheDocsRedirect(ReadTheDocsAPI):
         for redirect in self._lists().json()["results"]:
             url = URL.format(pk=redirect["pk"])
             from_url, to_url = redirect["from_url"], redirect["to_url"]
-            lang, prefix, major, minor, patch = re.match(r"/(\w+)?/([vV]?)(\d+)\.(\d+)\.(\d+)/?", to_url).groups()
-            data = dict(url=url, from_url=from_url, to_url=f"/{lang}/{prefix}{major}.{minor_patch}", type="exact")
+            lang, prefix, major, minor, patch, suffix = re.match(r"/(\w+)?/([vV]?)(\d+)\.(\d+)\.(\d+)(.+?)", to_url).groups()
+            data = dict(url=url, from_url=from_url, to_url=f"/{lang}/{prefix}{major}.{minor_patch}{suffix}", type="exact")
             print(requests.put(url, json=data, headers=self.HEADERS))
 
 
