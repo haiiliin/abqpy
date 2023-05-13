@@ -40,4 +40,4 @@ jobs:
         if: ${{ github.event.inputs.previous != '' }}
         env:
           MINOR_PATCH: ${{ github.event.inputs.previous }}
-          ARGS: --noactive --hidden
+          ARGS: --hidden
