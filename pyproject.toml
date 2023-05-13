@@ -1,5 +1,5 @@
 # pyproject.toml, for more information about configuration options, see 
-# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+# https://setuptools.pypa.io/en/stable/userguide/pyproject_config.html
 
 [build-system]
 requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
@@ -31,7 +31,7 @@ classifiers = [
 "GitHub" = "https://github.com/haiiliin/abqpy"
 "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
 "Read the Docs" = "https://readthedocs.org/projects/abqpy"
-"Documentation" = "https://docs.abqpy.com"
+"Documentation" = "https://docs.abqpy.com/en/stable/"
 
 [project.scripts]
 abqpy = "abqpy.__main__:main"
