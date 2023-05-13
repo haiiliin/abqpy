@@ -23,22 +23,11 @@ import re
 import sys
 import typing
 
-import git
-
 project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
-# The full version, including alpha/beta/rc tags
-try:
-    import abqpy
-
-    release, version = abqpy.__version__, abqpy.__semver__.split(".")[0]
-except (ImportError, AttributeError):
-    import warnings
-
-    warnings.warn("abqpy is not installed, using 2020.0.0")
-    release, version = "2020.0.0", "2020"
+release = version = "2020"
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
@@ -284,11 +273,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     fullname = info["fullname"]
 
     filename = modname.replace(".", "/")
-    try:
-        branch_name = git.repo.Repo("../../").active_branch.name
-    except Exception:
-        branch_name = version[:4]
-    baseurl = f"https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py"
+    baseurl = f"https://github.com/haiiliin/abqpy/blob/{version}/src/{filename}.py"
 
     submod = sys.modules.get(modname)
     if submod is None:
