@@ -29,6 +29,10 @@ jobs:
         python-version: 3.11
     - name: Install dependencies
       run: pip install .[dev,docs]
+    - name: Update submodules
+      run: |
+        git pull --recurse-submodules
+        git submodule update --remote --recursive
     - name: Update translations
       run: sh docs/update-locale.sh
       env:
