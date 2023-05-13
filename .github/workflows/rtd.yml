@@ -41,3 +41,7 @@ jobs:
         env:
           MINOR_PATCH: ${{ github.event.inputs.previous }}
           ARGS: --hidden
+      - name: Update Redirects
+        run: sh scripts/rtd.sh
+        env:
+          MINOR_PATCH: ${{ github.event.inputs.current }}
