@@ -18,7 +18,7 @@ Abaqus/Python 脚本的类型提示
 
 - GitHub 仓库: [https://github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [https://pypi.org/project/abqpy](https://pypi.org/project/abqpy)
-- 中文文档: [https://docs.abqpy.com/en/latest](https://docs.abqpy.com/zh_CN/latest)
+- 中文文档: [https://docs.abqpy.com/en/stable](https://docs.abqpy.com/zh_CN/stable)
 
 ## 快速开始
 
@@ -29,7 +29,7 @@ Abaqus/Python 脚本的类型提示
 pip install abqpy==2023.*  # 将主版本号替换为你的 Abaqus 版本号
 ```
 然后，在你喜欢的开发环境中使用 Python 3.7+ 运行你的 Abaqus/Python 脚本，看看奇迹如何发生。
-更多信息，请参阅 [文档](https://docs.abqpy.com/zh_CN/latest).
+更多信息，请参阅 [文档](https://docs.abqpy.com/zh_CN/stable).
 
 ## 欢迎拉取合并请求
 
