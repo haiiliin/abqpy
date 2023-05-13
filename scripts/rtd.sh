@@ -4,15 +4,10 @@
 set -ex
 cd "$(dirname "$0")"
 
-# Activate the current versions
+# Activate the current versions and hide the previous ones
 for MAJOR in $(seq 2016 2023)
 do
     python rtd.py version update --project=$PROJECT --version=v$MAJOR.$CURRENT_MINOR_PATCH --active --nohidden
-done
-
-# Hide the previous versions
-for MAJOR in $(seq 2016 2023)
-do
     python rtd.py version update --project=$PROJECT --version=v$MAJOR.$PREVIOUS_MINOR_PATCH --hidden
 done
 
