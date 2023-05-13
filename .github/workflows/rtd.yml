@@ -1,0 +1,38 @@
+name: ReadTheDocs Versioning
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Current Minor.Patch versions to be activated'
+        required: true
+      previous:
+        description: 'Previous Minor.Patch versions to be hidden'
+        required: true
+
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [abqpy, abqpy-zh-cn]
+    env:
+      RTD_TOKEN: ${{ secrets.RTD_TOKEN }}
+      PROJECT: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - run: |
+          python -m pip install --upgrade pip
+          pip install fire requests
+      - run: sh scripts/rtd-version-update.sh
+        env:
+          VERSION: ${{ github.event.inputs.version }}
+          ARGS: --active --nohidden
+      - run: sh scripts/rtd-version-update.sh
+        env:
+          VERSION: ${{ github.event.inputs.previous }}
+          ARGS: --hidden
