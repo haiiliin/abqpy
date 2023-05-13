@@ -16,9 +16,9 @@ def _get_version():
     # a warning from setuptools_scm.
     root = Path(__file__).resolve().parents[2]
     if (root / ".git").exists() and not (root / ".git/shallow").exists():
-        import setuptools_scm
-
         try:
+            import setuptools_scm
+
             return setuptools_scm.get_version(
                 root=str(root),
                 version_scheme="post-release",
