@@ -3,12 +3,13 @@ name: ReadTheDocs Versioning
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Current Minor.Patch versions to be activated'
+      current:
+        description: 'Current Minor.Patch version to be activated'
         required: true
       previous:
-        description: 'Previous Minor.Patch versions to be hidden'
-        required: true
+        description: 'Previous Minor.Patch version to be hidden'
+        required: false
+        default: ''
 
 
 jobs:
@@ -25,14 +26,18 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.11
-      - run: |
+      - name: Install Dependencies
+        run: |
           python -m pip install --upgrade pip
           pip install fire requests
-      - run: sh scripts/rtd-version-update.sh
+      - name: Activate Current Versions
+        run: sh scripts/rtd.sh
         env:
-          VERSION: ${{ github.event.inputs.version }}
+          MINOR_PATCH: ${{ github.event.inputs.current }}
           ARGS: --active --nohidden
-      - run: sh scripts/rtd-version-update.sh
+      - name: Hide Previous Versions
+        run: sh scripts/rtd.sh
+        if: ${{ github.event.inputs.previous != '' }}
         env:
-          VERSION: ${{ github.event.inputs.previous }}
-          ARGS: --hidden
+          MINOR_PATCH: ${{ github.event.inputs.previous }}
+          ARGS: --noactive --hidden
