@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       current:
-        description: 'Current Minor.Patch versions to be activated'
+        description: 'Current Minor.Patch version to be activated'
         required: true
       previous:
-        description: 'Previous Minor.Patch versions to be hidden'
+        description: 'Previous Minor.Patch version to be hidden'
         required: false
         default: ''
 
