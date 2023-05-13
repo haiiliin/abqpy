@@ -7,6 +7,7 @@ on:
     paths:
       - 'src/**'
       - 'docs/source/**'
+      - 'docs/update-locale.sh'
       - '.github/workflows/translations.yml'
   workflow_dispatch:
 
@@ -29,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: pip install .[dev,docs]
     - name: Update translations
-      run: sh docs/source/update.sh
+      run: sh docs/update-locale.sh
       env:
         version: ${{ github.ref_name }}
     - name: Pushes to another repository
