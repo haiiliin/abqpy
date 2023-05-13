@@ -27,20 +27,7 @@ project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
-<<<<<<< HEAD
-# The full version, including alpha/beta/rc tags
-try:
-    import abqpy
-
-    release, version = abqpy.__version__, abqpy.__semver__.split(".")[0]
-except (ImportError, AttributeError):
-    import warnings
-
-    warnings.warn("abqpy is not installed, using 2017.0.0")
-    release, version = "2017.0.0", "2017"
-=======
-release = version = "2023"
->>>>>>> af8c777b ([docs] Use deterministic version in conf.py (#4384))
+release = version = "2017"
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
