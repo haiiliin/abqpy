@@ -3,7 +3,6 @@ import re
 
 import fire
 import requests
-from requests import Response
 
 
 class ReadTheDocsAPI:
@@ -18,7 +17,18 @@ class ReadTheDocsAPI:
 class ReadTheDocsVersion(ReadTheDocsAPI):
     """Manage versions of a project"""
 
-    def update(self, version: str, *, active: bool = None, hidden: bool = None, privacy_level: str = None) -> Response:
+    def build(self, version: str):
+        """Build a version
+
+        Parameters
+        ----------
+        version : str
+            Version to build
+        """
+        URL = f"https://readthedocs.org/api/v3/projects/{self.project}/versions/{version}/builds/"
+        print(requests.post(URL, headers=self.HEADERS))
+
+    def update(self, version: str, *, active: bool = None, hidden: bool = None, privacy_level: str = None):
         """Update status of a version
 
         Parameters
@@ -31,23 +41,19 @@ class ReadTheDocsVersion(ReadTheDocsAPI):
             Whether the version is hidden
         privacy_level : str, optional
             Privacy level of the version
-
-        Returns
-        -------
-        Response from the API
         """
         URL = f"https://readthedocs.org/api/v3/projects/{self.project}/versions/{version}/"
         data = {}
         for option in ("active", "hidden", "privacy_level"):
             if locals()[option] is not None:
                 data[option] = locals()[option]
-        return requests.patch(URL, json=data, headers=self.HEADERS)
+        print(requests.patch(URL, json=data, headers=self.HEADERS))
 
 
 class ReadTheDocsRedirect(ReadTheDocsAPI):
     """Manage redirects of a project"""
 
-    def lists(self) -> requests.Response:
+    def _lists(self) -> requests.Response:
         """List redirects
 
         Returns
@@ -57,27 +63,21 @@ class ReadTheDocsRedirect(ReadTheDocsAPI):
         URL = f"https://readthedocs.org/api/v3/projects/{self.project}/redirects/"
         return requests.get(URL, headers=self.HEADERS)
 
-    def update(self, minor_patch: str) -> list[requests.Response]:
+    def update(self, minor_patch: str):
         """Update a redirect from /{lang}/{major} to the latest /{lang}/{major}.{minor}.{patch} version
 
         Parameters
         ----------
         minor_patch : str
             {minor}.{patch} version to update
-
-        Returns
-        -------
-        A list of responses from the API
         """
         URL = f"https://readthedocs.org/api/v3/projects/{self.project}/redirects/{{pk}}/"
-        responses = []
-        for redirect in self.lists().json()["results"]:
+        for redirect in self._lists().json()["results"]:
             url = URL.format(pk=redirect["pk"])
             from_url, to_url = redirect["from_url"], redirect["to_url"]
             lang, prefix, major, minor, patch = re.match(r"/(\w+)?/([vV]?)(\d+)\.(\d+)\.(\d+)/?", to_url).groups()
             data = dict(url=url, from_url=from_url, to_url=f"/{lang}/{prefix}{major}.{minor_patch}", type="exact")
-            responses.append(requests.put(url, json=data, headers=self.HEADERS))
-        return responses
+            print(requests.put(url, json=data, headers=self.HEADERS))
 
 
 class ReadTheDocs(ReadTheDocsAPI):

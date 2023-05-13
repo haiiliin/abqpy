@@ -33,15 +33,5 @@ jobs:
       - name: Activate Current Versions
         run: sh scripts/rtd.sh
         env:
-          MINOR_PATCH: ${{ github.event.inputs.current }}
-          ARGS: --active --nohidden
-      - name: Hide Previous Versions
-        run: sh scripts/rtd.sh
-        if: ${{ github.event.inputs.previous != '' }}
-        env:
-          MINOR_PATCH: ${{ github.event.inputs.previous }}
-          ARGS: --hidden
-      - name: Update Redirects
-        run: sh scripts/rtd.sh
-        env:
-          MINOR_PATCH: ${{ github.event.inputs.current }}
+          CURRENT_MINOR_PATCH: ${{ github.event.inputs.current }}
+          PREVIOUS_MINOR_PATCH: ${{ github.event.inputs.previous }}
