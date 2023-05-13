@@ -20,7 +20,7 @@ Python script, even without opening the Abaqus/CAE.
 
 - GitHub repository: [https://github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [https://pypi.org/project/abqpy](https://pypi.org/project/abqpy)
-- Documentation: [https://docs.abqpy.com/en/latest](https://docs.abqpy.com/en/latest)
+- Documentation: [https://docs.abqpy.com/en/latest](https://docs.abqpy.com/en/stable)
 
 ## Quick Start
 
