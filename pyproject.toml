@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Type hints for Abaqus/Python scripting"
 readme = "README.md"
-dynamic = ["version", "dependencies", "optional-dependencies"]
+dynamic = ["version"]
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python",
@@ -24,6 +24,50 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "auto-all",
+    "fire",
+    "typing-extensions",
+]
+
+[project.optional-dependencies]
+jupyter = [
+    "ipynbname",
+    "nbconvert",
+]
+dev = [
+    "black",
+    "coverage",
+    "crowdin-api-client",
+    "docformatter",
+    "flake8",
+    "numpy",
+    "pofmt",
+    "pre-commit",
+    "polib",
+    "pytest",
+    "pytest-cov",
+]
+docs = [
+    "autoclasstoc",
+    "myst-parser",
+    "pandas",
+    "pillow",
+    "sphinx",
+    "sphinx-autoapi",
+    "sphinx-toolbox",
+    "sphinx-autodoc-typehints",
+    "sphinx-copybutton",
+    "sphinx-comments",
+    "sphinx-design",
+    "sphinx-gallery",
+    "sphinx-hoverxref",
+    "sphinx-intl",
+    "sphinx-codeautolink",
+    "sphinx-rtd-theme",
+    "sphinx-togglebutton",
+    "sphinxcontrib-programoutput",
 ]
 
 [project.urls]
@@ -49,14 +93,6 @@ py-modules = [
     "upgradeScript", "visualization", "regionToolset", "step", 
     "load", "optimization", "job", "sketch", "xyPlot",
 ]
-
-[tool.setuptools.dynamic.dependencies]
-file = ["requirements/deps.txt"]
-
-[tool.setuptools.dynamic.optional-dependencies]
-dev.file = ["requirements/dev.txt"]
-juptyer.file = ["requirements/jupyter.txt"]
-docs.file = ["requirements/docs.txt"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
