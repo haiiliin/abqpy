@@ -2,7 +2,8 @@
 # https://setuptools.pypa.io/en/stable/userguide/pyproject_config.html
 
 [build-system]
-requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [project]
 name = "abqpy"
@@ -97,13 +98,6 @@ py-modules = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools_scm]
-root = "."
-relative_to = "__file__"
-version_scheme = "post-release"
-write_to = "src/abqpy/_version.py"
-fallback_version = "2023.0.0-dev"
-
 [tool.black]
 line-length = 120
 target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
@@ -119,3 +113,6 @@ wrap-descriptions = 108
 blank = false
 in-place = true
 black = true
+
+[tool.pdm.version]
+source = "scm"
