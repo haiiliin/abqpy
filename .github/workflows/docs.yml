@@ -7,7 +7,6 @@ on:
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
-    - 'requirements/docs.txt'
     - 'docs/source/**'
     - '.github/workflows/docs.yml'
     - 'pyproject.toml'
