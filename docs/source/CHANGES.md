@@ -2,6 +2,19 @@
 
 ## Abaqus 2023
 
+### {py:obj}`abaqus.EngineeringFeature.EngineeringFeature`
+
+- {py:obj}`abaqus.EngineeringFeature.EngineeringFeature.DataImperfection`: *added*: New in version 2023: The DataImperfection class was added.
+
+### {py:obj}`abaqus.EngineeringFeature.InputImperfection`
+
+- {py:obj}`abaqus.EngineeringFeature.InputImperfection.Imperfection`: *added*: New in version 2023: The Imperfection class was added.
+- {py:obj}`abaqus.EngineeringFeature.InputImperfection.InputImperfection`: *added*: New in version 2023: The InputImperfection class was added.
+
+### {py:obj}`abaqus.EngineeringFeature.FileImperfection`
+
+- {py:obj}`abaqus.EngineeringFeature.FileImperfection.FileImperfection`: *added*: New in version 2023: The FileImperfection class was added.
+
 ### {py:obj}`abaqus.Job.JobMdb`
 
 - {py:obj}`abaqus.Job.JobMdb.JobMdb.Job`: *changed*: Changed in version 2023: The parallelizationMethodExplicit argument was removed.
@@ -49,19 +62,6 @@
 
 - {py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates`: *added*: New in version 2023: The csys argument was added.
 - {py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance`: *changed*: Changed in version 2023: The csys argument was removed.
-
-### {py:obj}`abaqus.EngineeringFeature.EngineeringFeature`
-
-- {py:obj}`abaqus.EngineeringFeature.EngineeringFeature.DataImperfection`: *added*: New in version 2023: The DataImperfection class was added.
-
-### {py:obj}`abaqus.EngineeringFeature.InputImperfection`
-
-- {py:obj}`abaqus.EngineeringFeature.InputImperfection.Imperfection`: *added*: New in version 2023: The Imperfection class was added.
-- {py:obj}`abaqus.EngineeringFeature.InputImperfection.InputImperfection`: *added*: New in version 2023: The InputImperfection class was added.
-
-### {py:obj}`abaqus.EngineeringFeature.FileImperfection`
-
-- {py:obj}`abaqus.EngineeringFeature.FileImperfection.FileImperfection`: *added*: New in version 2023: The FileImperfection class was added.
 
 
 ## Abaqus 2022
