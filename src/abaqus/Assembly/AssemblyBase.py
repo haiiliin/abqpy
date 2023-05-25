@@ -4,9 +4,11 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.ReferencePoint import ReferencePoint
+from ..BasicGeometry.Vertex import Vertex
 from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
 from ..EngineeringFeature.EngineeringFeature import EngineeringFeature
@@ -21,6 +23,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.abaqusConstants import (
     ALL_EDGES,
     BOUNDARY_ONLY,
@@ -851,11 +854,11 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def projectReferencesOntoSketch(
         self,
-        sketch: str,
+        sketch: ConstrainedSketch,
         filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
         upToFeature: Optional[AssemblyFeature] = None,
-        edges: tuple = (),
-        vertices: tuple = (),
+        edges: Sequence[Edge] = (),
+        vertices: Sequence[Vertex] = (),
     ):
         """This method projects the specified edges, vertices, and datum points from the assembly onto the
         specified ConstrainedSketch object. The edges, vertices, and datum points appear on the sketch as
