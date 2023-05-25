@@ -1258,11 +1258,11 @@ class Feature:
     @abaqus_method_doc
     def MakeSketchTransform(
         self,
-        sketchPlane: str,
+        sketchPlane: Union[DatumPlane, Face],
         origin: tuple = (),
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2] = SIDE1,
-        sketchUpEdge: str = "",
+        sketchUpEdge: Union[Edge, DatumAxis, None] = None,
     ) -> Transform:
         """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats that represents
         the transformation from sketch coordinates to part coordinates.
