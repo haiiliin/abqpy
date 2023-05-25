@@ -1,4 +1,4 @@
-from typing import Optional, Sequence
+from typing import Optional, Sequence, Union
 
 from typing_extensions import Literal
 
@@ -8,6 +8,8 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.Vertex import Vertex
+from ..Datum.DatumAxis import DatumAxis
+from ..Datum.DatumPlane import DatumPlane
 from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
@@ -1950,12 +1952,12 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def SolidExtrude(
         self,
-        sketchPlane: str,
+        sketchPlane: Union[DatumPlane, Face],
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
-        sketchUpEdge: Edge,
+        sketchUpEdge: Union[Edge, DatumAxis],
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
-        upToFace: str = "",
+        upToFace: Optional[Face] = None,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
