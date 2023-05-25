@@ -14,6 +14,7 @@ from ..BasicGeometry.FaceArray import FaceArray
 from ..BasicGeometry.IgnoredEdgeArray import IgnoredEdgeArray
 from ..BasicGeometry.IgnoredVertexArray import IgnoredVertexArray
 from ..BasicGeometry.ReferencePoints import ReferencePoints
+from ..BasicGeometry.Vertex import Vertex
 from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
 from ..EngineeringFeature.EngineeringFeature import EngineeringFeature
@@ -1469,11 +1470,11 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def projectReferencesOntoSketch(
         self,
-        sketch: str,
+        sketch: ConstrainedSketch,
         filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
         upToFeature: Optional[PartFeature] = None,
-        edges: tuple = (),
-        vertices: tuple = (),
+        edges: Sequence[Edge] = (),
+        vertices: Sequence[Vertex] = (),
     ):
         """This method projects the vertices of specified edges, and datum points from the part onto the
         specified ConstrainedSketch object. The vertices and datum points appear on the sketch as reference
