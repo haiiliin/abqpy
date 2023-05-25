@@ -5,8 +5,8 @@ from typing_extensions import Literal
 from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Edge import Edge
+from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Vertex import Vertex
