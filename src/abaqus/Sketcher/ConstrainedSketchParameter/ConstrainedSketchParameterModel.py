@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..ConstrainedSketchBase import ConstrainedSketchBase
+from .ConstrainedSketchParameter import ConstrainedSketchParameter
 
 
 @abaqus_class_doc
@@ -24,7 +25,7 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
         path: str = "",
         expression: str = "",
         previousParameter: str = "",
-    ):
+    ) -> ConstrainedSketchParameter:
         """This method creates a parameter and optionally associates a dimension with this parameter.
 
         .. note::
@@ -50,7 +51,7 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
 
         Returns
         -------
-        obj: ConstrainedSketchParameter
+        parameter: ConstrainedSketchParameter
             A ConstrainedSketchParameter object
         """
-        ...
+        return ConstrainedSketchParameter()
