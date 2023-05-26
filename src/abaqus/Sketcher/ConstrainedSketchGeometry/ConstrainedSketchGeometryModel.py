@@ -54,12 +54,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         center: Sequence[float],
         point1: Sequence[float],
         point2: Sequence[float],
-<<<<<<< HEAD
-    ):
-=======
-        direction: Literal[C.COUNTERCLOCKWISE, C.CLOCKWISE],
     ) -> ConstrainedSketchGeometry:
->>>>>>> f0d7f068 ([bugfix] Fix ConstrainedSketch methods for returning None (#4523))
         """This method constructs an arc using a center point and two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object. The arc is created in a clockwise fashion from
         **point1** to **point2**.
