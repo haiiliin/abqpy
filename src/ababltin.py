@@ -33,10 +33,10 @@ from abaqus.UtilityAndView.Repository import Repository
 NoneType = type(None)
 
 
-MdbType = type(Mdb)
-BackwardCompatibilityType = type(BackwardCompatibility)
-SessionType = type(Session)
-RepositoryType = type(Repository)
+MdbType = Mdb
+BackwardCompatibilityType = BackwardCompatibility
+SessionType = Session
+RepositoryType = Repository
 
 
 # Inspected from Abaqus/CAE 2021 Command Line Interface
