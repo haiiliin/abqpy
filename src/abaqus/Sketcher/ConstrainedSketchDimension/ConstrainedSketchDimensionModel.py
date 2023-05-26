@@ -8,6 +8,7 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
+from .ConstrainedSketchDimension import ConstrainedSketchDimension
 
 
 @abaqus_class_doc
@@ -32,7 +33,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry
         objects, with the given angle between them.
 
@@ -60,7 +61,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
 
     @abaqus_method_doc
     def HorizontalDimension(
@@ -70,7 +71,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two vertices. A horizontal
         dimension indicates the horizontal distance along the **X** axis between two vertices.
 
@@ -98,7 +99,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
 
     @abaqus_method_doc
     def ObliqueDimension(
@@ -108,7 +109,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two vertices. An oblique dimension
         indicates the distance between two vertices.
 
@@ -136,7 +137,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
 
     @abaqus_method_doc
     def RadialDimension(
@@ -147,7 +148,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         reference: Boolean = OFF,
         majorRadius: Optional[float] = None,
         minorRadius: Optional[float] = None,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical arc. A radial
         dimension indicates the radius of an arc or circle or the major or minor radius of an ellipse.
 
@@ -179,7 +180,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
 
     @abaqus_method_doc
     def VerticalDimension(
@@ -189,7 +190,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical dimension
         controls the vertical distance along the **Y** axis between two vertices.
 
@@ -217,7 +218,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
 
     @abaqus_method_doc
     def DistanceDimension(
@@ -227,7 +228,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
-    ):
+    ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry, or
         aConstrainedSketchVertex and ConstrainedSketchGeometry object. A distance dimension specifies the
         shortest distance between two entities.
@@ -256,4 +257,4 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         dimension
             A ConstrainedSketchDimension object
         """
-        ...
+        return ConstrainedSketchDimension()
