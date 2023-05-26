@@ -1,43 +1,55 @@
-# .github/release-drafter.yml
-
 name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
+version-template: '$MAJOR.$MINOR.$PATCH'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 filter-by-commitish: true
 commitish: "2020"
+
+exclude-labels:
+  - 'skip-changelog'
 categories:
   - title: '🚀 New Features'
+    collapse-after: 5
     labels:
+      - 'breaking change'
       - 'feature'
       - 'new feature'
       - 'enhancement'
       - 'customization'
   - title: '🐛 Bug Fixes'
+    collapse-after: 5
     labels:
       - 'fix'
       - 'bugfix'
       - 'bug'
-      - 'test'
-      - 'typo'
-      - 'refactor'
   - title: '💁‍♂️ Typing Annotations'
+    collapse-after: 5
     labels:
       - 'typing'
   - title: '📝 Documentation'
+    collapse-after: 5
     labels:
       - 'documentation'
       - 'docs'
       - 'doc'
   - title: '🌐 Translations'
+    collapse-after: 5
     labels:
       - 'translation'
+  - title: '🧰 Maintenance'
+    collapse-after: 5
+    labels:
+      - 'chore'
+      - 'refactor'
+      - 'test'
+      - 'typo'
   - title: '🤖 Automation'
+    collapse-after: 5
     labels:
       - 'automation'
       - 'release'
       - 'workflow'
-version-template: '$MAJOR.$MINOR.$PATCH'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
   major:
     labels:
@@ -55,4 +67,3 @@ template: |
   $CHANGES
 
   **Full Changelog**: https://github.com/haiiliin/abqpy/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
-
