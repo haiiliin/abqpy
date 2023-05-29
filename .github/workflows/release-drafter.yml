@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install build
       - name: Substring version
-        uses: bhowell2/github-substring-action@1.0.1
+        uses: bhowell2/github-substring-action@1.0.2
         id: tag
         with:
           value: ${{ steps.release_drafter.outputs.tag_name }}
