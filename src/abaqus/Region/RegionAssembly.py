@@ -34,6 +34,7 @@ class RegionAssembly(RegionAssemblyBase):
     @abaqus_method_doc
     def Surface(
         self,
+        name: str,
         side1Faces: Union[Face, Sequence[Face], None] = None,
         side2Faces: Union[Face, Sequence[Face], None] = None,
         side12Faces: Union[Face, Sequence[Face], None] = None,
@@ -54,7 +55,6 @@ class RegionAssembly(RegionAssemblyBase):
         end1Elements: Union[Face, Sequence[Face], None] = None,
         end2Elements: Union[Face, Sequence[Face], None] = None,
         circumElements: Union[Face, Sequence[Face], None] = None,
-        name: str = "",
     ) -> Surface:
         """This method creates a surface from a sequence of objects in a model database. The surface will apply
         to the sides specified by the arguments.For example
