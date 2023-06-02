@@ -16,7 +16,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         center: Sequence[float],
         point1: Sequence[float],
         point2: Sequence[float],
-        direction: Literal[C.COUNTERCLOCKWISE, C.CLOCKWISE],
+        direction: Literal[C.COUNTERCLOCKWISE, C.CLOCKWISE] = C.COUNTERCLOCKWISE,
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object. The arc is created in a clockwise fashion from
