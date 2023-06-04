@@ -17,12 +17,13 @@
 
 # -- Project information -----------------------------------------------------
 
-import abqpy
 import inspect
 import os
 import re
 import sys
 import typing
+
+import abqpy
 
 project = "abqpy"
 copyright = "2022, WANG Hailin"
