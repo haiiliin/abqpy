@@ -17,6 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
+import abqpy
 import inspect
 import os
 import re
@@ -27,7 +28,7 @@ project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
-release = version = "2023"
+release = version = abqpy.__version__
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
