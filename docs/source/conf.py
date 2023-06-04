@@ -23,16 +23,24 @@ import re
 import sys
 import typing
 
+import abqpy
+
 project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
+<<<<<<< HEAD
 release = version = "2022"
+=======
+release = version = abqpy.__version__
+major, minor, patch, *_ = version.split(".")
+
+>>>>>>> 77567d64 ([docs] Update docs version (#4556))
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
 # For multiple languages
-locale_dirs = [f"locale/{version}"]  # path is example but recommended.
+locale_dirs = [f"locale/{major}"]  # path is example but recommended.
 gettext_compact = False  # optional.
 
 # -- General configuration ---------------------------------------------------
@@ -73,7 +81,7 @@ extensions = [
 
 # changes configuration
 changes_write_to = "CHANGES.md"
-changes_versions = [str(v) for v in range(int(version), 2015, -1)]
+changes_versions = [str(v) for v in range(int(major), 2015, -1)]
 
 # sphinx-comments
 comments_config = {
@@ -273,7 +281,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     fullname = info["fullname"]
 
     filename = modname.replace(".", "/")
-    baseurl = f"https://github.com/haiiliin/abqpy/blob/{version}/src/{filename}.py"
+    baseurl = f"https://github.com/haiiliin/abqpy/blob/{major}/src/{filename}.py"
 
     submod = sys.modules.get(modname)
     if submod is None:
