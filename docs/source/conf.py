@@ -29,8 +29,9 @@ project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
-release = version = abqpy.__version__
-major, minor, patch, *_ = version.split(".")
+release = abqpy.__version__
+major, minor, patch, *_ = release.split(".")
+version = major
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
