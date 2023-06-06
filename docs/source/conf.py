@@ -30,7 +30,7 @@ copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
 release = abqpy.__version__
-major, minor, patch, *_ = version.split(".")
+major, minor, patch, *_ = release.split(".")
 version = major
 
 sys.path.insert(0, os.path.abspath("../../src"))
