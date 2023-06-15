@@ -18,14 +18,6 @@ The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2,
 must write codes that are compatiable with Python 2 and Python 3.
 ```
 
-## Other links for this project
-
-- Website: <https://abqpy.com>
-- GitHub repository: <https://github.com/haiiliin/abqpy>
-- PyPI: <https://pypi.org/project/abqpy>
-- Read the Docs: <https://readthedocs.org/projects/abqpy>
-- Bug report: <https://github.com/haiiliin/abqpy/issues>
-
 ## Table of Contents
 
 ```{toctree}
@@ -54,6 +46,17 @@ reference/index
 CHANGES
 autoapi/index
 localization
+```
+
+```{toctree}
+:caption: Project Links
+:maxdepth: 1
+:hidden:
+
+GitHub <https://github.com/haiiliin/abqpy>
+PyPI <https://pypi.org/project/abqpy>
+Read the Docs <https://readthedocs.org/projects/abqpy>
+Bug Report <https://github.com/haiiliin/abqpy/issues>
 ```
 
 ```{toctree}
