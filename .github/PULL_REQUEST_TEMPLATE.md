@@ -1,9 +1,11 @@
 # Description
 
+<!--
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. 
 List any dependencies that are required for this change.
 
 Fixes # (issue)
+-->
 
 # Backporting
 
@@ -17,25 +19,3 @@ Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve back
 - [x] 2020
 - [x] 2021
 - [x] 2022
-
-# Type of change
-
-Please check the options that are relevant, the corresponding labels will be added automatically.
-
-- [ ] Bug Fix (non-breaking change which fixes an issue)
-  - [ ] test (adds/updates test)
-  - [ ] typo (fixes typo)
-  - [ ] refactor (refactors code)
-  - [ ] reformat with black (check this to reformat the code with black)
-- [ ] New Feature (non-breaking change which adds functionality)
-- [ ] Typing Annotations (adds/updates typing annotations)
-- [ ] Documentation Update
-  - [ ] docs (adds/updates documentation)
-  - [ ] docs preview (check this to preview docs)
-- [ ] Automation/Translation/Release
-  - [ ] workflow (adds/updates workflow)
-  - [ ] release (adds/updates release)
-  - [ ] translation (adds/updates translation)
-
-More labels listed in [keylabeler.yml](https://github.com/haiiliin/abqpy/blob/2023/.github/keylabeler.yml)
-can be added in this list to add the corresponding labels automatically.
