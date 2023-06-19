@@ -867,16 +867,16 @@ computeStressRange(odb_Step& step)
 
 ## A C++ version of FELBOW
 
-This example illustrates the use of a C++ program to read selected element integration point records from an output database and to postprocess the elbow element results. The program creates **X - Y** data that can be plotted with the *X–Y* plotting capability in Abaqus/CAE. The program performs the same function as the Fortran program described in [Creation of a data file to facilitate the postprocessing of elbow element results: FELBOW](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all).
+This example illustrates the use of a C++ program to read selected element integration point records from an output database and to postprocess the elbow element results. The program creates **X - Y** data that can be plotted with the _X–Y_ plotting capability in Abaqus/CAE. The program performs the same function as the Fortran program described in [Creation of a data file to facilitate the postprocessing of elbow element results: FELBOW](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all).
 
 The program reads integration point data for elbow elements from an output database to visualize one of the following:
 
 1. Variation of an output variable around the circumference of a given elbow element, or
 2. Ovalization of a given elbow element.
 
-The program creates either an ASCII file containing *X–Y* data or a new output database file that can be viewed using Abaqus/CAE.
+The program creates either an ASCII file containing _X–Y_ data or a new output database file that can be viewed using Abaqus/CAE.
 
-To use option 2, you must ensure that the integration point coordinates (COORD) are written to the output database. For option 1 the *X*-data are data for the distance around the circumference of the elbow element, measured along the middle surface, and the *Y*-data are data for the output variable. For option 2 the *X–Y* data are the current coordinates of the middle-surface integration points around the circumference of the elbow element, projected to a local coordinate system in the plane of the deformed cross-section. The origin of the local system coincides with the center of the cross-section; the plane of the deformed cross-section is defined as the plane that contains the center of the cross-section.
+To use option 2, you must ensure that the integration point coordinates (COORD) are written to the output database. For option 1 the _X_-data are data for the distance around the circumference of the elbow element, measured along the middle surface, and the _Y_-data are data for the output variable. For option 2 the _X–Y_ data are the current coordinates of the middle-surface integration points around the circumference of the elbow element, projected to a local coordinate system in the plane of the deformed cross-section. The origin of the local system coincides with the center of the cross-section; the plane of the deformed cross-section is defined as the plane that contains the center of the cross-section.
 
 You should specify the name of the output database during program execution. The program prompts for more information, depending on the option that was chosen; this information includes the following:
 
