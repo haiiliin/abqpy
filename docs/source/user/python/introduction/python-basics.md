@@ -75,7 +75,7 @@ An integer is based on a C long and can be compared to a Fortran integer\*4 or \
 >>> bigNumber = 120L**21
 ```
 
-Use int(*n*) to convert a variable to an integer; use long(*n*) to convert a variable to a long integer.
+Use int(_n_) to convert a variable to an integer; use long(_n_) to convert a variable to a long integer.
 
 ```python2
 >>> load  = 279.86
