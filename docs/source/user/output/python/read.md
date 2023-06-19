@@ -56,7 +56,7 @@ The following list describes the objects in model data and the commands you use 
   myAssembly = odb.rootAssembly
   ```
 
-- Part instances
+- **Part instances**
 
   Part instances are stored in the instances repository under the OdbAssembly object. The following statements display the repository keys of the part instances in the tutorial output database:
 
@@ -71,7 +71,7 @@ The following list describes the objects in model data and the commands you use 
   PART-1-1
   ```
 
-  - **Regions**
+- **Regions**
 
   Regions in the output database are OdbSet objects. Regions refer to the part and assembly sets stored in the output database. A part set refers to elements or nodes in an individual part and appears in each instance of the part in the assembly. An assembly set refers to the elements or nodes in part instances in the assembly. A region can be one of the following:
 
@@ -529,7 +529,7 @@ In the analysis that generated the Abaqus/CAE Visualization module tutorial outp
   - V
   - A
 
-- At the corner element
+- **At the corner element**
 
   - MISES
   - LE22
@@ -688,8 +688,7 @@ displacement = lastFrame.fieldOutputs['U']
 # located at the center of the hemispherical punch.
 # The set is  associated with the part instance 'PART-1-1'.
 
-center = odb.rootAssembly.instances['PART-1-1'].\
-    nodeSets['PUNCH']
+center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
 
 # Create a variable that refers to the displacement of the node
 # set in the last frame of the first step.

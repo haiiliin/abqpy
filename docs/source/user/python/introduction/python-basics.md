@@ -502,8 +502,7 @@ xyCoordsOuter = ((-10, 30), (10, 30), (40, -30),
 If a statement breaks at any other place, you must include a \\ character at the end of the line to indicate that it is continued on the next line. For example,
 
 ```python2
-distance = mdb.models['Model-1'].parts['housing'].\
-    getDistance(entity1=node1, entity2=node2)
+distance = mdb.models['Model-1'].parts['housing'].getDistance(entity1=node1, entity2=node2)
 ```
 
 When you are running Python from a local Linux or Windows window, the prompt changes to the . . . characters to indicate that you are on a continuation line.
