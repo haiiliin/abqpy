@@ -2,9 +2,9 @@ name: conflicts
 
 on:
   pull_request:
-    branches: [ "2016", "2017", "2018", "2019", "2020", "2021", "2022" ]
+    branches: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]
     types: [opened, reopened, synchronize, labeled]
-    paths: ['src/**', 'docs/**', '.github/**']
+    paths: ["src/**", "docs/**", ".github/**"]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,37 +17,37 @@ jobs:
       contains(github.event.pull_request.labels.*.name, 'conflicts')
     runs-on: ubuntu-latest
     steps:
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Write pull request body to file
-      uses: DamianReeves/write-file-action@v1.2
-      with:
-        path: ${{ github.workspace }}/pull_request_body.txt
-        contents: ${{ github.event.pull_request.body }}
-        write-mode: overwrite
-    - name: Delete deleted files
-      run: |
-        python "scripts/conflicts.py"
-    - name: Commit files
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -m "Delete conflicted deleted files by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a || true
-    - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.head_ref }}
-    - name: Comment PR
-      uses: Beakyn/gha-comment-pull-request@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-      with:
-        comment-message: |
-          Hi @${{ github.event.pull_request.user.login }}, I have deleted the conflicted deleted files in this pull request. Please check it again. Thanks!
-        delete-previous-comment: true
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Write pull request body to file
+        uses: DamianReeves/write-file-action@v1.2
+        with:
+          path: ${{ github.workspace }}/pull_request_body.txt
+          contents: ${{ github.event.pull_request.body }}
+          write-mode: overwrite
+      - name: Delete deleted files
+        run: |
+          python "scripts/conflicts.py"
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Delete conflicted deleted files by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a || true
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
+      - name: Comment PR
+        uses: Beakyn/gha-comment-pull-request@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          comment-message: |
+            Hi @${{ github.event.pull_request.user.login }}, I have deleted the conflicted deleted files in this pull request. Please check it again. Thanks!
+          delete-previous-comment: true
