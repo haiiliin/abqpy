@@ -10,9 +10,9 @@ Python script, even without opening the Abaqus/CAE.
 
 ## Installation
 
-Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> and 
+Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> and
 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> </a>
-are installed on your computer before installing `abqpy`. 
+are installed on your computer before installing `abqpy`.
 
 You can install `abqpy` with the following commands.
 

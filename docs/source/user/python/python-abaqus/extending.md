@@ -98,11 +98,11 @@ print mdb.customData.blocks['Block-1'].name Block-1
 
 Repositories have several useful methods for querying their contents, as shown in the following table:
 
-- **keys()**:   Returns a list of the keys in the repository.
-- **has_key()**:        Returns 1 if the key is found in the repository; otherwise, returns 0.
-- **values()**:         Returns a list of the objects in the repository.
-- **items()**:  Returns a list of key, value pairs in the repository.
-- **changeKey(fromName, toName)**:      Changes the name of a key in the repository. This method will also change the name attribute of the instance in the repository.
+- **keys()**: Returns a list of the keys in the repository.
+- **has_key()**: Returns 1 if the key is found in the repository; otherwise, returns 0.
+- **values()**: Returns a list of the objects in the repository.
+- **items()**: Returns a list of key, value pairs in the repository.
+- **changeKey(fromName, toName)**: Changes the name of a key in the repository. This method will also change the name attribute of the instance in the repository.
 
 The following script illustrates some of these methods:
 
@@ -144,7 +144,7 @@ The repository size is 2
 
 You can use the `RepositorySupport` class to derive a class that can contain one or more repositories. However, if you do not intend to create a repository as an attribute of your class, you should derive your class from `CommandRegister`, not from `RepositorySupport`.
 
-Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The  method is described in [repositories].
+Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The method is described in [repositories].
 
 ```python2
 from abaqus import *

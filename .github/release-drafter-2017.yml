@@ -1,65 +1,65 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
-tag-template: 'v$RESOLVED_VERSION'
-version-template: '$MAJOR.$MINOR.$PATCH'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+name-template: "v$RESOLVED_VERSION 🌈"
+tag-template: "v$RESOLVED_VERSION"
+version-template: "$MAJOR.$MINOR.$PATCH"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 filter-by-commitish: true
 commitish: "2017"
 
 exclude-labels:
-  - 'skip-changelog'
+  - "skip-changelog"
 categories:
-  - title: '🚀 New Features'
+  - title: "🚀 New Features"
     collapse-after: 5
     labels:
-      - 'breaking change'
-      - 'feature'
-      - 'new feature'
-      - 'enhancement'
-      - 'customization'
-  - title: '🐛 Bug Fixes'
+      - "breaking change"
+      - "feature"
+      - "new feature"
+      - "enhancement"
+      - "customization"
+  - title: "🐛 Bug Fixes"
     collapse-after: 5
     labels:
-      - 'fix'
-      - 'bugfix'
-      - 'bug'
-  - title: '💁‍♂️ Typing Annotations'
+      - "fix"
+      - "bugfix"
+      - "bug"
+  - title: "💁‍♂️ Typing Annotations"
     collapse-after: 5
     labels:
-      - 'typing'
-  - title: '📝 Documentation'
+      - "typing"
+  - title: "📝 Documentation"
     collapse-after: 5
     labels:
-      - 'documentation'
-      - 'docs'
-      - 'doc'
-  - title: '🌐 Translations'
+      - "documentation"
+      - "docs"
+      - "doc"
+  - title: "🌐 Translations"
     collapse-after: 5
     labels:
-      - 'translation'
-  - title: '🧰 Maintenance'
+      - "translation"
+  - title: "🧰 Maintenance"
     collapse-after: 5
     labels:
-      - 'chore'
-      - 'refactor'
-      - 'test'
-      - 'typo'
-  - title: '🤖 Automation'
+      - "chore"
+      - "refactor"
+      - "test"
+      - "typo"
+  - title: "🤖 Automation"
     collapse-after: 5
     labels:
-      - 'automation'
-      - 'release'
-      - 'workflow'
+      - "automation"
+      - "release"
+      - "workflow"
 version-resolver:
   major:
     labels:
-      - 'major'
+      - "major"
   minor:
     labels:
-      - 'minor'
+      - "minor"
   patch:
     labels:
-      - 'patch'
+      - "patch"
   default: patch
 template: |
   ## Changes
