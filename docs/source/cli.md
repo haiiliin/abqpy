@@ -1,7 +1,7 @@
 # Command Line Interface
 
 ```{warning}
-The command line interface is based on the [`fire`](https://github.com/google/python-fire) 
+The command line interface is based on the [`fire`](https://github.com/google/python-fire)
 package since version `20**.5.0`, and it is not compatible with the command line interface of
 previous versions.
 ```
@@ -36,17 +36,19 @@ separate **command line interface** (another alternative is to use an
 
 Currently, `abqpy` command line interface provides several execution modes: **Abaqus/CAE
 Execution** mode and **Abaqus Python Execution** mode, and more:
+
 ```sh
 abqpy COMMAND SCRIPT <flags> [ARGS]...
 ```
-where `COMMAND` is one of `abaqus`, `cae`, `python`, `run` or any other Abaqus commands, 
-`SCRIPT` is the file name of your python script, `flags` are the options that could be 
-passed to the command, and `ARGS` are the extra arguments to be passed after the command 
-line options. For details, see the [References](#references) section or run 
+
+where `COMMAND` is one of `abaqus`, `cae`, `python`, `run` or any other Abaqus commands,
+`SCRIPT` is the file name of your python script, `flags` are the options that could be
+passed to the command, and `ARGS` are the extra arguments to be passed after the command
+line options. For details, see the [References](#references) section or run
 `abqpy COMMAND --help` for help.
 
 ```{note}
-For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example): 
+For the following commands, the boolean flags can be specified with the following syntax (take `gui` as an example):
 
 - `--gui` or `--gui=True` to set the flag to `True`;
 - `--nogui` or `--gui=False` to set the flag to `False`.
@@ -108,15 +110,17 @@ python -m abqpy cae --gui=True script.py [args ...]
 Which provides a way to change the default abaqus execution procedure to GUI mode.
 
 ```{warning}
-Noted that if a token other than another flag immediately follows a flag that's supposed to be a boolean, 
-the flag will take on the value of the token rather than the boolean value. 
+Noted that if a token other than another flag immediately follows a flag that's supposed to be a boolean,
+the flag will take on the value of the token rather than the boolean value.
 Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 ```
 
 (references)=
+
 ## References
 
 ```{command-output} abqpy
+
 ```
 
 ### Abaqus/CAE Execution Mode
@@ -134,6 +138,7 @@ Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 ### Less Frequently Used Commands
 
 ```{command-output} abqpy misc --help
+
 ```
 
 ## Comments
