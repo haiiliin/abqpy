@@ -246,7 +246,7 @@ If you have custom kernel scripts that use custom data in a model database, you 
 
   The `verifyMdb` method is used to verify the partial contents of a model database when it is opened. You must write the verifyMdb method and install it using the `setVerifyMdb` method. You can call the `setVerifyMdb` method only once per application name, which prevents unauthorized changes to the method. However, the `setVerifyMdb` method may be called multiple times using different application names to allow more than one application to register with the same model database.
 
-  When Abaqus opens a model database, its first action is to load only the mdb.\`customData.appData\` object and pass that object to each `verifyMdb` method registered in the session. If the model database has no appData, then Abaqus passes None to each `verifyMdb` method. Inside your `verifyMdb` method you can query the appData object to determine if you need to take any action, such as upgrading your data.
+  When Abaqus opens a model database, its first action is to load only the `mdb.customData.appData` object and pass that object to each `verifyMdb` method registered in the session. If the model database has no appData, then Abaqus passes None to each `verifyMdb` method. Inside your `verifyMdb` method you can query the appData object to determine if you need to take any action, such as upgrading your data.
 
 - **Initializing a model database**
 
