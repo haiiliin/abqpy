@@ -234,11 +234,8 @@ def createODB():
         object=part1)
     # create instance level sets for section assignment
     elLabels = (1,2)
-    elset_1 = odb.rootAssembly.instances['part-1-1'].\
-        ElementSetFromElementLabels(name=materialName,
-        elementLabels=elLabels)
-    instance1.assignSection(region=elset_1,
-        section=section_1)
+    elset_1 = odb.rootAssembly.instances['part-1-1'].ElementSetFromElementLabels(name=materialName, elementLabels=elLabels)
+    instance1.assignSection(region=elset_1, section=section_1)
 
     #  Field data:
 
@@ -759,10 +756,8 @@ step = odb.steps[stepName]
 sFields = []
 
 for loadCase in step.loadCases.values():
-    stressField = step.getFrame(loadCase=loadCase).\
-        fieldOutputs['S']
-    sFields.append(stressField.getScalarField(
-        componentLabel='S11'))
+    stressField = step.getFrame(loadCase=loadCase).fieldOutputs['S']
+    sFields.append(stressField.getScalarField(componentLabel='S11'))
 
 # compute stress range
 maxStress, maxLoc = maxEnvelope(sFields)
