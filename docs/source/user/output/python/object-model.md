@@ -22,8 +22,7 @@ odb.steps['10 hz vibration'].frames[3]
 Similarly, the following command refers to the sequence of field data contained in a FieldOutput object.
 
 ```python2
-odb.steps['10 hz vibration'].frames[3].\
-    fieldOutputs['U'].values[47]
+odb.steps['10 hz vibration'].frames[3].fieldOutputs['U'].values[47]
 ```
 
 You use commands to access objects by stepping through the hierarchy of objects in the object model. The `Access` and `Path` descriptions in {doc}`/reference/odb` describe the interface definition of the command. The interface definition of the command reflects the hierarchy of objects in the object model. If you are unsure of the structure of the output database, you can issue the `objectname.__members__` command from the command line interface to view the members of an object.
