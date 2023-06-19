@@ -112,9 +112,7 @@ session.odbs[name].steps[name].frames[i].FieldOutput
 The following statement creates a FieldOutput object:
 
 ```python2
-myFieldOutput = session.odbs[name].steps['Side load'].frames[-1].\
-    FieldOutput(name='S', description='stress',
-    type=TENSOR_3D_FULL)
+myFieldOutput = session.odbs[name].steps['Side load'].frames[-1].FieldOutput(name='S', description='stress', type=TENSOR_3D_FULL)
 ```
 
 ## Arguments
