@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: "23.3.0"
     hooks:
       - id: black
 
@@ -13,10 +13,10 @@ repos:
     rev: "0.4.0"
     hooks:
       - id: pofmt
-        additional_dependencies: ["pangu"] # for handling Chinese documents
+        additional_dependencies: ["pangu"]
 
   - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: "5.12.0"
     hooks:
       - id: isort
-        args: ["--profile", "black", "--filter-files"]
+        args: ["--profile", "black"]
