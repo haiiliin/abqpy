@@ -5,10 +5,10 @@ on:
     branches:
       - "20**"
     paths:
-      - 'src/**'
-      - 'docs/source/**'
-      - 'docs/update-locale.sh'
-      - '.github/workflows/translations.yml'
+      - "src/**"
+      - "docs/source/**"
+      - "docs/update-locale.sh"
+      - ".github/workflows/translations.yml"
   workflow_dispatch:
 
 concurrency:
@@ -18,36 +18,36 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        submodules: recursive
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-    - name: Install dependencies
-      run: pip install .[dev,docs]
-    - name: Update submodules
-      run: |
-        git pull --recurse-submodules
-        git submodule update --remote --recursive
-    - name: Update translations
-      run: sh docs/update-locale.sh
-      env:
-        version: ${{ github.ref_name }}
-    - name: Pushes to another repository
-      id: push_directory
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-      with:
-        source-directory: docs/source/locale/${{ github.ref_name }}
-        destination-github-username: 'haiiliin'
-        destination-repository-name: 'abqpy-locale'
-        target-directory: ${{ github.ref_name }}
-        user-name: github-actions[bot]
-        user-email: github-actions[bot]@users.noreply.github.com
-        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-        target-branch: main
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: recursive
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: pip install .[dev,docs]
+      - name: Update submodules
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+      - name: Update translations
+        run: sh docs/update-locale.sh
+        env:
+          version: ${{ github.ref_name }}
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+        with:
+          source-directory: docs/source/locale/${{ github.ref_name }}
+          destination-github-username: "haiiliin"
+          destination-repository-name: "abqpy-locale"
+          target-directory: ${{ github.ref_name }}
+          user-name: github-actions[bot]
+          user-email: github-actions[bot]@users.noreply.github.com
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+          target-branch: main

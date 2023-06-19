@@ -81,42 +81,42 @@ Table 2 shows the valid operations on FieldOutput objects.
 
 **Table 2. Valid operations.**
 
-| Symbol                           | Operation                                  | Return value |
-| -------------------------------- | ------------------------------------------ | ------------ |
-| all + float                      | addition                                   | all          |
-| FO + FO                          |                                            | FO           |
-| FV + FV                          |                                            | FV           |
-| HO + HO                          |                                            | HO           |
-| -all                             | unary negation                             | all          |
-| all - float                      | subtraction                                | all          |
-| FO - FO                          |                                            | FO           |
-| FV - FV                          |                                            | FV           |
-| FO * FO (only if FO is a scalar) | multiplication                             | FO           |
-| all * float                      |                                            | all          |
-| FO / FO (only if FO is a scalar) | division                                   | FO           |
-| all / float                      |                                            | all          |
-| abs(all)                         | absolute value                             | all          |
-| acos(all)                        | arccosine                                  | all          |
-| asin(all)                        | arcsine                                    | all          |
-| atan(all)                        | arctangent                                 | all          |
-| cos(all)                         | cosine                                     | all          |
-| degreeToRadian (all)             | convert degrees to radians                 | all          |
-| exp(all)                         | natural exponent                           | all          |
-| exp10(all)                       | base 10 exponent                           | all          |
-| log(all)                         | natural logarithm                          | all          |
-| log10(all)                       | base 10 logarithm                          | all          |
-| float \*\* float                 | raise to a power                           | all          |
-| power(FO, float)                 |                                            | FO           |
-| power(FV, float)                 |                                            | FV           |
-| power(HO, float)                 |                                            | HO           |
-| radianToDegree (all)             | convert radian to degree                   | all          |
-| sin(all)                         | sine                                       | all          |
-| sqrt(all)                        | square root                                | all          |
-| tan(all)                         | tangent                                    | all          |
-| complexMagnitude(FO)             | magnitude of the complex field output      | FO           |
-| complexPhase(FO)                 | phase of the complex field output          | FO           |
-| complexReal(FO)                  | real part of the complex field output      | FO           |
-| complexImag(FO)                  | imaginary part of the complex field output | FO           |
+| Symbol                            | Operation                                  | Return value |
+| --------------------------------- | ------------------------------------------ | ------------ |
+| all + float                       | addition                                   | all          |
+| FO + FO                           |                                            | FO           |
+| FV + FV                           |                                            | FV           |
+| HO + HO                           |                                            | HO           |
+| -all                              | unary negation                             | all          |
+| all - float                       | subtraction                                | all          |
+| FO - FO                           |                                            | FO           |
+| FV - FV                           |                                            | FV           |
+| FO \* FO (only if FO is a scalar) | multiplication                             | FO           |
+| all \* float                      |                                            | all          |
+| FO / FO (only if FO is a scalar)  | division                                   | FO           |
+| all / float                       |                                            | all          |
+| abs(all)                          | absolute value                             | all          |
+| acos(all)                         | arccosine                                  | all          |
+| asin(all)                         | arcsine                                    | all          |
+| atan(all)                         | arctangent                                 | all          |
+| cos(all)                          | cosine                                     | all          |
+| degreeToRadian (all)              | convert degrees to radians                 | all          |
+| exp(all)                          | natural exponent                           | all          |
+| exp10(all)                        | base 10 exponent                           | all          |
+| log(all)                          | natural logarithm                          | all          |
+| log10(all)                        | base 10 logarithm                          | all          |
+| float \*\* float                  | raise to a power                           | all          |
+| power(FO, float)                  |                                            | FO           |
+| power(FV, float)                  |                                            | FV           |
+| power(HO, float)                  |                                            | HO           |
+| radianToDegree (all)              | convert radian to degree                   | all          |
+| sin(all)                          | sine                                       | all          |
+| sqrt(all)                         | square root                                | all          |
+| tan(all)                          | tangent                                    | all          |
+| complexMagnitude(FO)              | magnitude of the complex field output      | FO           |
+| complexPhase(FO)                  | phase of the complex field output          | FO           |
+| complexReal(FO)                   | real part of the complex field output      | FO           |
+| complexImag(FO)                   | imaginary part of the complex field output | FO           |
 
 ## Envelope calculations
 
