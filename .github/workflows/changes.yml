@@ -3,10 +3,10 @@ name: changes
 on:
   push:
     branches:
-    - 20**
+      - 20**
     paths:
-    - 'src/**'
-    - '.github/workflows/changes.yml'
+      - "src/**"
+      - ".github/workflows/changes.yml"
   workflow_dispatch:
 
 concurrency:
@@ -17,25 +17,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Installing the library
-      run: pip install .[dev,docs]
-    - name: Build the documentation
-      run: sphinx-build -b changes -j auto -W docs/source docs/build/changes
-    - name: Commit the changes
-      run: |
-        pre-commit run --all-files || true
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add docs/source/CHANGES.md
-        git commit -m "[skip ci] Update CHANGES.md" || echo "Nothing to commit"
-    - name: Push the changes
-      uses: CasperWA/push-protected@v2
-      with:
-        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
-        branch: ${{ github.ref_name }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Installing the library
+        run: pip install .[dev,docs]
+      - name: Build the documentation
+        run: sphinx-build -b changes -j auto -W docs/source docs/build/changes
+      - name: Commit the changes
+        run: |
+          pre-commit run --all-files || true
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/source/CHANGES.md
+          git commit -m "[skip ci] Update CHANGES.md" || echo "Nothing to commit"
+      - name: Push the changes
+        uses: CasperWA/push-protected@v2
+        with:
+          token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+          branch: ${{ github.ref_name }}

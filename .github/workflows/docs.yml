@@ -3,13 +3,13 @@ name: docs
 on:
   pull_request:
     branches:
-    - 20**
+      - 20**
     types: [opened, reopened, synchronize]
     paths:
-    - 'src/**'
-    - 'docs/source/**'
-    - '.github/workflows/docs.yml'
-    - 'pyproject.toml'
+      - "src/**"
+      - "docs/source/**"
+      - ".github/workflows/docs.yml"
+      - "pyproject.toml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -24,27 +24,27 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['en']
-        builder: ['html']
+        language: ["en"]
+        builder: ["html"]
     steps:
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Installing the library
-      run: |
-        pip install .[docs]
-        pip show abqpy
-    - name: Build the documentation
-      run: |
-        sphinx-build -b changes -j auto -W docs/source docs/build/changes
-        sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}
-      env:
-        SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
-    - name: Upload the documentation
-      uses: actions/upload-artifact@v3
-      with:
-        name: docs-${{ matrix.language }}-${{ matrix.builder }}
-        path: docs/build/${{ matrix.builder }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Installing the library
+        run: |
+          pip install .[docs]
+          pip show abqpy
+      - name: Build the documentation
+        run: |
+          sphinx-build -b changes -j auto -W docs/source docs/build/changes
+          sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}
+        env:
+          SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
+      - name: Upload the documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs-${{ matrix.language }}-${{ matrix.builder }}
+          path: docs/build/${{ matrix.builder }}
