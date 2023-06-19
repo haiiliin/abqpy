@@ -688,8 +688,7 @@ displacement = lastFrame.fieldOutputs['U']
 # located at the center of the hemispherical punch.
 # The set is  associated with the part instance 'PART-1-1'.
 
-center = odb.rootAssembly.instances['PART-1-1'].\
-    nodeSets['PUNCH']
+center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
 
 # Create a variable that refers to the displacement of the node
 # set in the last frame of the first step.
