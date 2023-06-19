@@ -57,7 +57,7 @@ The debugger consists of a call stack area, action buttons, and the debugger com
 
 ```{figure} /images/cmd-pde-debugger-nls.png
 :align: center
-:width: 50%
+:width: 100%
 
 The Abaqus PDE debugger.
 ```
