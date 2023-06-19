@@ -261,7 +261,7 @@ The following list describes the objects in results data and the commands you us
   Step-3
   ```
 
-  ```{note}
+  ````{note}
   An index of 0 in a sequence refers to the first value in the sequence, and an index of −1 refers to the last value. You can use the following syntax to refer to an individual item in a repository:
 
   ```python2
@@ -274,7 +274,7 @@ The following list describes the objects in results data and the commands you us
   ```python2
   Step-1
   ```
-  ```
+  ````
 
 - **Frames**
 

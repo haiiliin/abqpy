@@ -67,15 +67,15 @@ The following options are available from the File menu:
 
 - **New**
 
-  Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention `_abaqus*#*_.guiLog`, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog  icon to create a new file.Abaqus automatically designates the new script as the main file.
+  Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention `_abaqus*#*_.guiLog`, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog icon to create a new file.Abaqus automatically designates the new script as the main file.
 
 - **Open**
 
-  Open a script. You can also click the Open file  icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing. **Tip:** You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables.
+  Open a script. You can also click the Open file icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing. **Tip:** You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables.
 
 - **Select Main File**
 
-  Open a script as the main file for testing. You can also click the Open main file  icon to open a script as the main file.
+  Open a script as the main file for testing. You can also click the Open main file icon to open a script as the main file.
 
 - **Make Current Main**
 
@@ -83,7 +83,7 @@ The following options are available from the File menu:
 
 - **Save**
 
-  Save changes to the current file. You can also click Save  to save the current file.
+  Save changes to the current file. You can also click Save to save the current file.
 
 - **Save As**
 
@@ -91,7 +91,7 @@ The following options are available from the File menu:
 
 - **Reload Modules**
 
-  Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules  to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process.
+  Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process.
 
 - **Close File**
 

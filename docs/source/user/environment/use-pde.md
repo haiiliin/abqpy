@@ -10,7 +10,7 @@ To record actions from Abaqus/CAE, the Abaqus PDE session must be associated wit
 
 1. From the main menu bar in the Abaqus PDE, select FileNew to create a new empty file in the main window.
 
-   **Tip:** You can also click the New guiLog icon  to create a new `.guiLog` file.
+   **Tip:** You can also click the New guiLog icon to create a new `.guiLog` file.
 
 2. Click the Start Recording icon to begin recording actions from Abaqus/CAE.
 
@@ -27,7 +27,7 @@ To record actions from Abaqus/CAE, the Abaqus PDE session must be associated wit
    When you record .guiLog files, do not use mouse button 2 to close the dialog box for a procedure. Instead, use the buttons in the dialog box to close it. Using mouse button 2 adds multiple dialog box closing commands to the recorded .guiLog file. Since only one command is needed to close the dialog, the extra commands will result in an error when the recorded script is played.
    ```
 
-4. Click the Stop Recording icon  to stop recording.
+4. Click the Stop Recording icon to stop recording.
 
 5. Use standard text editing techniques to edit the file in the main window. Additional editing tools are available in the Edit menu (for more information, see [Editing files in the Abaqus PDE](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdeedit.htm?contextscope=all).)
 
@@ -88,7 +88,7 @@ Breakpoints are points where script execution pauses until you select Play or **
 
 You can add breakpoints at any line in a script. Breakpoints also allow you to pause plug-ins and custom applications so you can trace their execution.
 
-To add a breakpoint, position the cursor on the desired line of the script, click mouse button 3, and select **Add Breakpoint**. Use the same process, selecting **Remove Breakpoint**, to remove breakpoints. You can also add and remove breakpoints using the breakpoint tool  located above the main window or the F9 key.
+To add a breakpoint, position the cursor on the desired line of the script, click mouse button 3, and select **Add Breakpoint**. Use the same process, selecting **Remove Breakpoint**, to remove breakpoints. You can also add and remove breakpoints using the breakpoint tool located above the main window or the F9 key.
 
 Breakpoints are indicated by an asterisk to the right of the line number in the Abaqus PDE. If syntax colors are active, the line number, asterisk, and the line of code are colored using the current breakpoint color selection (for more information, see [Selecting the settings for use with a file](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all)).
 
