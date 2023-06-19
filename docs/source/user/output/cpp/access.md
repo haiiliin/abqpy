@@ -26,11 +26,11 @@ The libraries necessary to link applications that access the C++ interface are l
 
 - **Linux**
 
-  *abaqus_dir/code/lib*
+  _abaqus_dir/code/lib_
 
 - **Windows**
 
-  *abaqus_dircodelib*
+  _abaqus_dircodelib_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 
@@ -42,11 +42,11 @@ The runtime libraries required to execute a program that accesses the C++ interf
 
 - **Linux**
 
-  *abaqus_dir/code/bin*
+  _abaqus_dir/code/bin_
 
 - **Windows**
 
-  *abaqus_dircodebin*
+  _abaqus_dircodebin_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 
@@ -58,11 +58,11 @@ he header files required to compile a program that accesses the C++ interface ar
 
 - **Linux**
 
-  *abaqus_dir/code/include*
+  _abaqus_dir/code/include_
 
 - **Windows**
 
-  *abaqus_dircodeinclude*
+  _abaqus_dircodeinclude_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 

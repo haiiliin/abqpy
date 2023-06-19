@@ -71,7 +71,7 @@ An object in the object model can be one of the following:
 
 - **Mdb**
 
-  The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. {numref}`cmd-int-model-model-nls` shows the basic structure of the objects under the Model object. For more information, see The Model object model.
+  The statement `from abaqus import *` creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. {numref}`cmd-int-model-model-nls` shows the basic structure of the objects under the Model object. For more information, see The Model object model.
 
   (cmd-int-model-model-nls)=
 

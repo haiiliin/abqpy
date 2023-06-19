@@ -12,7 +12,7 @@
 
 Abaqus/Python 脚本的类型提示
 
-`abqpy` 是一个 Python 包，为 Abaqus 的 Python 脚本提供类型提示，您可以使用它方便地编写 Abaqus Python 脚本。 
+`abqpy` 是一个 Python 包，为 Abaqus 的 Python 脚本提供类型提示，您可以使用它方便地编写 Abaqus Python 脚本。
 它还提供了一些简单的 API 来执行 Abaqus 命令，以便您可以运行 Python 脚本来创建模型、
 提交作业并提取输出数据，即使不打开 Abaqus/CAE。
 
@@ -22,12 +22,14 @@ Abaqus/Python 脚本的类型提示
 
 ## 快速开始
 
-确保 <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> 和 
+确保 <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> 和
 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> </a>
 已经安装成功，然后打开 `cmd` 或者 `terminal`，输入：
+
 ```
 pip install abqpy==2023.*  # 将主版本号替换为你的 Abaqus 版本号
 ```
+
 然后，在你喜欢的开发环境中使用 Python 3.7+ 运行你的 Abaqus/Python 脚本，看看奇迹如何发生。
 更多信息，请参阅 [文档](https://docs.abqpy.com/zh_CN/stable).
 
