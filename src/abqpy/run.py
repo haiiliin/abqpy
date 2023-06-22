@@ -36,7 +36,7 @@ def run(cae: bool = True) -> None:
 
         filePath = ipynbname.path()
         os.system(f"jupyter nbconvert --to python {filePath}")
-        filePath = str(filePath).replace(".ipynb", ".py")
+        filePath = os.path.relpath(filePath.with_suffix(".py"))
     except (FileNotFoundError, ImportError, Exception):
         # Get the main script file
         main = sys.modules["__main__"]
