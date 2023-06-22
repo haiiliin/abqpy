@@ -8,14 +8,6 @@ This script performs a parameter study of element type versus
 skew angle. For more details, see Problem 2.3.4 in the 
 Abaqus Benchmarks manual.
 
-Before executing this script you must fetch the appropriate 
-files: 
-
-.. code-block:: sh
-
-    abaqus fetch job=skewExample
-    abaqus fetch job=skewExampleUtils.py
-
 Run the following command before running this script:
 
 .. code-block:: sh
@@ -245,6 +237,10 @@ def createModel():
         contactPrint=OFF,
         historyPrint=OFF,
     )
+    mdb.saveAs(pathName="skew.cae")
+
+
+createModel()
 
 
 import job
