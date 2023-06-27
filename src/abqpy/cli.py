@@ -224,7 +224,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     def cae(
         self,
-        script: str,
+        script: str = None,
         *args,
         database: str = None,
         replay: str = None,
@@ -283,7 +283,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     def python(
         self,
-        script: str,
+        script: str = None,
         *args,
         sim: str = None,
         log: str = None,
@@ -311,7 +311,7 @@ class AbqpyCLI(AbqpyCLIBase):
         options = self._parse_options(sim=sim, log=log)
 
         # Execute command
-        self.abaqus("python", script, options, *args)
+        self.abaqus("python", script or "", options, *args)
 
 
 #: The abqpy command line interface, use this object to run abqpy commands from the python scripts
