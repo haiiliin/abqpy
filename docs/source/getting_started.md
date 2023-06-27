@@ -152,7 +152,37 @@ add a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file
 
 ## Run your Abaqus/Python script
 
-Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed.
+Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed in with the
+following methods:
+
+- Open Abaqus/CAE and click `Run Script` in the menu bar, then select your script file, which is the most common way to
+  run a Python script in Abaqus/CAE.
+- Use the `abaqus` command in the command line:
+  ```sh
+  abaqus cae script=script.py
+  ```
+  See [here](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all)
+  for more information about the `abaqus` command.
+- Use the `abqpy` command in the command line:
+  ```sh
+  [python -m] abqpy cae script.py
+  ```
+  The advantage using `abqpy` command instead of using `abaqus` command directly is that you are able to customize the
+  default python launch command. See {doc}`cli` for more information about the `abqpy` command.
+- Use the Python 3 interpreter to run the script directly:
+  ```sh
+  python script.py
+  ```
+  This is the most convenient way to run the script, it is equivalent to the `abqpy` command with some default
+  predefined arguments.
+- Use the {py:obj}`abqpy.cli.abaqus` object (an {py:obj}`abqpy.cli.AbqpyCLI` object) to run the script:
+  ```python
+  from abqpy.cli import abaqus
+  abaqus.cae(script="script.py")
+  ```
+  The {py:obj}`abqpy.cli.abaqus` object is the cli object for the `abqpy` command, you can call the methods in this
+  object directly to run the script. Typing annotations are provided for the methods, so you can check the docstring of
+  the methods for more information.
 
 ```{warning}
 `abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
