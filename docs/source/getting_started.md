@@ -179,7 +179,7 @@ Now you can run your Abaqus/Python script with the following methods:
   from abqpy.cli import abaqus
   abaqus.cae(script="script.py")
   ```
-  The {py:obj}`abqpy.cli.abaqus` object is the cli object for the `abqpy` command, you can call the methods in this
+  The {py:obj}`abqpy.cli.abaqus` object is the object used for the `abqpy` command, you can call the methods in this
   object directly to run the script. This method is convenient when you want to call the Abaqus/Python script in another
   Python script since typing annotations are provided for the methods, so you can check the docstring of the methods for
   more information.
