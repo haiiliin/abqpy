@@ -23,20 +23,18 @@ class AbqpyCLIBase:
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
 
-    def abaqus(self, name: str, *args, **options):
-        """Run custom Abaqus command: ``abaqus {name} {args} {options}``, arguments are separated by space, options are
+    def abaqus(self, *args, **options):
+        """Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are
         handled by the :meth:`._parse_options` method.
 
         Parameters
         ----------
-        name : str
-            The name of the Abaqus command to be run.
         args, options
             Arguments and options to be passed to the Abaqus command.
         """
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")  # noqa
         args, options = " ".join(args), self._parse_options(**options)
-        self.run(f"{abaqus} {name} {args} {options}")
+        self.run(f"{abaqus} {args} {options}")
 
 
 class AbqpyMiscCLI(AbqpyCLIBase):
