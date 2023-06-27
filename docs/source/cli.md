@@ -120,13 +120,13 @@ Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 ## References
 
 ```{command-output} abqpy
-:returncode: 2
+
 ```
 
 ### Abaqus/CAE Execution Mode
 
 ```{command-output} abqpy cae --help
-
+:returncode: 2
 ```
 
 ### Abaqus Python Execution Mode
