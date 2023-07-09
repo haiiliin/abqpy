@@ -19,7 +19,7 @@ You can install `abqpy` with the following commands.
 ```{eval-rst}
 .. tab-set::
 
-    .. tab-item:: Install with pip
+    .. tab-item:: Install from `https://pypi.org/project/abqpy/ <PyPI>`_
 
         .. parsed-literal::
 
