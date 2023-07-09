@@ -27,17 +27,17 @@ You can install `abqpy` with the following commands.
             :version:`pip install abqpy==|abqpy|`
             pip install abqpy
 
+            # with jupyter notebook support
+            :version-major:`pip install abqpy[jupyter]==|abqpy|.*`  # recommended
+            :version:`pip install abqpy[jupyter]==|abqpy|`
+            pip install abqpy[jupyter]
+
     .. tab-item:: Install from source
 
         .. parsed-literal::
 
             :version-major:`pip install git+https://github.com/haiiliin/abqpy@|abqpy|`
-
-    .. tab-item:: Install with jupyter notebook support
-
-        .. code-block:: sh
-
-            pip install abqpy[jupyter]
+            pip install ipynbname nbconvert  # with jupyter notebook support
 
 .. note::
 
