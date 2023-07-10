@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install fire requests
       - name: Activate Current Versions
-        run: sh scripts/rtd.sh
+        run: sh .github/scripts/rtd.sh
         env:
           CURRENT_MINOR_PATCH: ${{ github.event.inputs.current }}
           PREVIOUS_MINOR_PATCH: ${{ github.event.inputs.previous }}
