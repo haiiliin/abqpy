@@ -80,26 +80,10 @@ docs = [
 [project.scripts]
 abqpy = "abqpy.__main__:main"
 
-[tool.setuptools]
-py-modules = [
-    "ababltin", "abaqusConstants", "animation", "annotationToolset", 
-    "assembly", "caeModules", "caePrefsAccess", "calibration", 
-    "connectorBehavior", "customKernel", "deleteObjectCallback",
-    "displayGroupMdbToolset", "displayGroupOdbToolset", "driverUtils", 
-    "field", "fields", "inpParser","interaction", "material", "mesh", 
-    "meshEdit", "methodCallback", "monitorManager", "odbAccess",
-    "odbConnectorBehavior", "odbMaterial", "odbSection", "part", 
-    "redentABQ", "section","symbolicConstants", "textRepr", 
-    "upgradeScript", "visualization", "regionToolset", "step", 
-    "load", "optimization", "job", "sketch", "xyPlot",
-]
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools_scm]
-root = "."
-relative_to = "__file__"
 version_scheme = "post-release"
 write_to = "src/abqpy/_version.py"
 fallback_version = "2020.0.0-dev"
