@@ -428,7 +428,7 @@ The resulting output is
 1000 array([0.0000, -76.4555], 'd')
 ```
 
-The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the `` range() `function, see :doc: ``/user/python/introduction/python-basics:sequences\` and {ref}`sequence-operations`.
+The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the ``range() `function, see :doc:``/user/python/introduction/python-basics:sequences\` and {ref}`sequence-operations`.
 
 ```python2
 opCenter = \
