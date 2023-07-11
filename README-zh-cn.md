@@ -7,7 +7,6 @@
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
 
-
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
 Abaqus/Python 脚本的类型提示
