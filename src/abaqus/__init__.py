@@ -1,5 +1,5 @@
 import sys
-from math import *  # noqa # pylint: disable=unused-import
+from math import *
 
 from abqpy import run
 
