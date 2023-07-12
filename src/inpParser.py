@@ -1,3 +1,1 @@
-from abaqus.InputFileParser.InputFile import (  # noqa # pylint: disable=unused-import
-    InputFile,
-)
+from abaqus.InputFileParser.InputFile import InputFile
