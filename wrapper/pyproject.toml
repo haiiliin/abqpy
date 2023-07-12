@@ -6,7 +6,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "abqpy2023"
+name = "abqpy2016"
 version = "0.0.1"
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
@@ -27,7 +27,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "abqpy>=2023,<2024",
+    "abqpy>=2016,<2017",
 ]
 
 [project.optional-dependencies]
