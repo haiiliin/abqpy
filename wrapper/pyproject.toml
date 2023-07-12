@@ -2,17 +2,22 @@
 # https://setuptools.pypa.io/en/stable/userguide/pyproject_config.html
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
+<<<<<<< HEAD
 name = "abqpy2019"
 version = "0.0.1"
+=======
+name = "abqpy2023"
+>>>>>>> c96da355 ([release] Pin abqpy version in the wrapper package (#4698))
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
 ]
 description = "Type hints for Abaqus/Python scripting"
 readme = "README.md"
+dynamic = ["version"]
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python",
@@ -26,12 +31,27 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+<<<<<<< HEAD
 dependencies = [
     "abqpy>=2019,<2020",
 ]
+=======
+>>>>>>> c96da355 ([release] Pin abqpy version in the wrapper package (#4698))
 
 [project.optional-dependencies]
 jupyter = [
     "ipynbname",
     "nbconvert",
 ]
+
+[project.urls]
+"Homepage" = "https://abqpy.com"
+"GitHub" = "https://github.com/haiiliin/abqpy"
+"Bug Tracker" = "https://github.com/haiiliin/abqpy/issues"
+"Read the Docs" = "https://readthedocs.org/projects/abqpy"
+"Documentation" = "https://docs.abqpy.com/en/stable/"
+
+[tool.setuptools_scm]
+root = ".."
+version_scheme = "post-release"
+fallback_version = "2023.0.0-dev"
