@@ -3,7 +3,7 @@ import re
 import sys
 
 from abaqus import Mdb, backwardCompatibility, getInput, mdb
-from abaqus.Mdb.MdbCommands import (  # noqa # pylint: disable=unused-import
+from abaqus.Mdb.MdbCommands import (  
     CombineOptResults,
     openMdb,
     upgradeMdb,

@@ -7,13 +7,13 @@ from abaqus.PathAndProbe.Path import Path
 from abaqus.UtilityAndView.abaqusConstants import OFF, ON, REAL, Boolean
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 from abaqus.UtilityAndView.SymbolicConstant import abaqusConstants as C
-from abaqus.XY.AreaStyle import AreaStyle  # noqa # pylint: disable=unused-import
-from abaqus.XY.LineStyle import LineStyle  # noqa # pylint: disable=unused-import
-from abaqus.XY.QuantityType import QuantityType  # noqa # pylint: disable=unused-import
-from abaqus.XY.SymbolStyle import SymbolStyle  # noqa # pylint: disable=unused-import
-from abaqus.XY.TextStyle import TextStyle  # noqa # pylint: disable=unused-import
-from abaqus.XY.XYData import XYData  # noqa # pylint: disable=unused-import
-from abaqus.XY.XYSession import XYSession  # noqa # pylint: disable=unused-import
+from abaqus.XY.AreaStyle import AreaStyle  
+from abaqus.XY.LineStyle import LineStyle  
+from abaqus.XY.QuantityType import QuantityType  
+from abaqus.XY.SymbolStyle import SymbolStyle  
+from abaqus.XY.TextStyle import TextStyle  
+from abaqus.XY.XYData import XYData  
+from abaqus.XY.XYSession import XYSession  
 
 
 def XYDataFromFile(
