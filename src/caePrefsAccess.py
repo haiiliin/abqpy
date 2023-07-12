@@ -1,3 +1,1 @@
-from abaqus.AbaqusCAEDisplayPreferences import (  
-    caePrefsAccess,
-)
+from abaqus.AbaqusCAEDisplayPreferences import caePrefsAccess

@@ -1,5 +1,5 @@
 import sys
-from math import *  
+from math import *
 
 from abqpy import run
 

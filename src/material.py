@@ -1,3 +1,1 @@
-from abaqus.Material.evaluateMaterial import (  
-    evaluateMaterial,
-)
+from abaqus.Material.evaluateMaterial import evaluateMaterial

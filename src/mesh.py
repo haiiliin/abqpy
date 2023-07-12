@@ -1,2 +1,2 @@
-from abaqus.Mesh.ElemType import ElemType  
-from abaqusConstants import *  
+from abaqus.Mesh.ElemType import ElemType
+from abaqusConstants import *

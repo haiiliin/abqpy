@@ -1,13 +1,13 @@
-from abaqus.Job.Job import Job  
-from abaqus.Odb.AnalyticSurfaceSegment import (  
-    AnalyticSurfaceSegment,
+from abaqus.Job.Job import Job
+from abaqus.Odb.AnalyticSurfaceSegment import AnalyticSurfaceSegment
+from abaqus.Odb.HistoryPoint import HistoryPoint
+from odbAccess import (
+    AnalyticSurfaceProfile,
+    Odb,
+    isUpgradeRequiredForOdb,
+    openOdb,
+    upgradeOdb,
 )
-from abaqus.Odb.HistoryPoint import HistoryPoint  
-from odbAccess import AnalyticSurfaceProfile  
-from odbAccess import Odb  
-from odbAccess import isUpgradeRequiredForOdb  
-from odbAccess import openOdb  
-from odbAccess import upgradeOdb  
 
-# from odbAccess import closeOdb  
-# from odbAccess import truncateOdb  
+# from odbAccess import closeOdb
+# from odbAccess import truncateOdb

@@ -1,17 +1,18 @@
-from regionToolset import Region  
-from sketch import Sketch  
-from sketch import SketchTransform  
-from xyPlot import AreaStyle  
-from xyPlot import LineStyle  
-from xyPlot import QuantityType  
-from xyPlot import SymbolStyle  
-from xyPlot import TextStyle  
-from xyPlot import XYData  
-from xyPlot import XYDataFromFile  
-from xyPlot import XYDataFromFreeBody  
-from xyPlot import XYDataFromHistory  
-from xyPlot import XYDataFromPath  
-from xyPlot import XYDataFromShellThickness  
-from xyPlot import xyDataListFromField  
+from regionToolset import Region
+from sketch import Sketch, SketchTransform
+from xyPlot import (
+    AreaStyle,
+    LineStyle,
+    QuantityType,
+    SymbolStyle,
+    TextStyle,
+    XYData,
+    XYDataFromFile,
+    XYDataFromFreeBody,
+    XYDataFromHistory,
+    XYDataFromPath,
+    XYDataFromShellThickness,
+    xyDataListFromField,
+)
 
 # inspected from Abaqus cli

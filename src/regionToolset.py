@@ -1,1 +1,1 @@
-from abaqus.Region.Region import Region  
+from abaqus.Region.Region import Region

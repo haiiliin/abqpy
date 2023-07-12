@@ -1,3 +1,1 @@
-from abaqus.Property.PlyStackPlot import (  
-    MdbPlyStackPlot,
-)
+from abaqus.Property.PlyStackPlot import MdbPlyStackPlot

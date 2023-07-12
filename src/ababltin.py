@@ -3,11 +3,7 @@ import re
 import sys
 
 from abaqus import Mdb, backwardCompatibility, getInput, mdb
-from abaqus.Mdb.MdbCommands import (  
-    CombineOptResults,
-    openMdb,
-    upgradeMdb,
-)
+from abaqus.Mdb.MdbCommands import CombineOptResults, openMdb, upgradeMdb
 from abaqus.Session.Session import Session
 from abaqus.UtilityAndView import BackwardCompatibility, SymbolicConstant
 from abaqus.UtilityAndView.AbaqusBoolean import AbaqusBoolean
