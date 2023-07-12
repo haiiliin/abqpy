@@ -6,12 +6,7 @@ requires = ["setuptools", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-<<<<<<< HEAD
 name = "abqpy2021"
-version = "0.0.1"
-=======
-name = "abqpy2023"
->>>>>>> c96da355 ([release] Pin abqpy version in the wrapper package (#4698))
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
 ]
@@ -31,12 +26,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-<<<<<<< HEAD
-dependencies = [
-    "abqpy>=2021,<2022",
-]
-=======
->>>>>>> c96da355 ([release] Pin abqpy version in the wrapper package (#4698))
 
 [project.optional-dependencies]
 jupyter = [
@@ -54,4 +43,4 @@ jupyter = [
 [tool.setuptools_scm]
 root = ".."
 version_scheme = "post-release"
-fallback_version = "2023.0.0-dev"
+fallback_version = "2021.0.0-dev"
