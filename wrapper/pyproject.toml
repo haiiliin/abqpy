@@ -29,3 +29,9 @@ classifiers = [
 dependencies = [
     "abqpy>=2023,<2024",
 ]
+
+[project.optional-dependencies]
+jupyter = [
+    "ipynbname",
+    "nbconvert",
+]
