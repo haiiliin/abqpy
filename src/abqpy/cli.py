@@ -7,7 +7,7 @@ import warnings
 class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
-    def _parse_options(self, **options: str | bool | None) -> str:  # noqa
+    def _parse_options(self, **options: str | bool | None) -> str:
         """Parse options to be passed to Abaqus/CAE command line interface.
 
         If the value is a string, the option will
@@ -16,7 +16,7 @@ class AbqpyCLIBase:
         """
         return " ".join([f"{key}={val}" if isinstance(val, str) else key for key, val in options.items() if val])
 
-    def run(self, cmd: str):  # noqa
+    def run(self, cmd: str):
         """Run custom command."""
         cmd = cmd.strip()
         message = f"Running the following command: {cmd}"
@@ -32,7 +32,7 @@ class AbqpyCLIBase:
         args, options
             Arguments and options to be passed to the Abaqus command.
         """
-        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")  # noqa
+        abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
         args, options = " ".join(args), self._parse_options(**options)
         self.run(f"{abaqus} {args} {options}")
 
