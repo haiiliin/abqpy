@@ -1,0 +1,37 @@
+# pyproject.toml, for more information about configuration options, see
+# https://setuptools.pypa.io/en/stable/userguide/pyproject_config.html
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abqpy2022"
+version = "0.0.1"
+authors = [
+  { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
+]
+description = "Type hints for Abaqus/Python scripting"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "abqpy>=2022,<2023",
+]
+
+[project.optional-dependencies]
+jupyter = [
+    "ipynbname",
+    "nbconvert",
+]
