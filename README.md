@@ -2,7 +2,11 @@
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
+<<<<<<< HEAD
 [![codecov](https://codecov.io/gh/haiiliin/abqpy/branch/2018/graph/badge.svg)](https://app.codecov.io/gh/haiiliin/abqpy/tree/2018)
+=======
+[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg)](https://coveralls.io/github/haiiliin/abqpy)
+>>>>>>> 8bd0f9a0 ([workflow] Use tox to manage tests (#4731))
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
