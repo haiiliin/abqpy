@@ -29,23 +29,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install build
-      - name: Substring version
-        uses: bhowell2/github-substring-action@1.0.1
-        id: tag
-        with:
-          value: ${{ steps.release_drafter.outputs.tag_name }}
-          index_of_str: "v"
       - name: Tag the next version
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git tag -a ${{ steps.release_drafter.outputs.tag_name }} -m "Release ${{ steps.release_drafter.outputs.tag_name }}"
       - name: Build package
-        run: python -m build
+        run: |
+          python -m build
+          cd wrapper && python -m build
       - name: Upload binaries to release
         run: |
-          gh release upload --clobber ${{ env.VERSION }} ${{ env.FILES }}
+          gh release upload --clobber ${{ env.VERSION }} dist/*.tar.gz dist/*.whl
+          gh release upload --clobber ${{ env.VERSION }} wrapper/dist/*.tar.gz wrapper/dist/*.whl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.release_drafter.outputs.tag_name }}
-          FILES: dist/abqpy-${{ steps.tag.outputs.substring }}.tar.gz dist/abqpy-${{ steps.tag.outputs.substring }}-py3-none-any.whl
