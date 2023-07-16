@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   build:
-    name: Build tarballs and wheels for ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
