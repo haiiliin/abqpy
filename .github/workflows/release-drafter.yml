@@ -3,6 +3,8 @@ name: Release Drafter
 on:
   push:
     branches: ["20**"]
+  pull_request:
+    branches: ["20**"]
   workflow_dispatch:
 
 permissions:
@@ -10,8 +12,12 @@ permissions:
   pull-requests: write
 
 jobs:
-  update:
-    runs-on: ubuntu-latest
+  build:
+    name: Build tarballs and wheels for ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, windows-2022, macos-12]
     steps:
       - uses: release-drafter/release-drafter@v5
         id: release_drafter
@@ -38,10 +44,34 @@ jobs:
         run: |
           python -m build
           cd wrapper && python -m build
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.14.1
+        with:
+          package-dir: .
+          output-dir: wheelhouse
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.14.1
+        with:
+          package-dir: wrapper
+          output-dir: wrapper/wheelhouse
       - name: Upload binaries to release
+        if: github.event_name == 'push'
         run: |
           gh release upload --clobber ${{ env.VERSION }} dist/*.tar.gz dist/*.whl
           gh release upload --clobber ${{ env.VERSION }} wrapper/dist/*.tar.gz wrapper/dist/*.whl
+          gh release upload --clobber ${{ env.VERSION }} wheelhouse/*.whl
+          gh release upload --clobber ${{ env.VERSION }} wrapper/wheelhouse/*.whl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.release_drafter.outputs.tag_name }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: release-artifacts
+          path: |
+            dist/*.tar.gz
+            dist/*.whl
+            wrapper/dist/*.tar.gz
+            wrapper/dist/*.whl
+            wheelhouse/*.whl
+            wrapper/wheelhouse/*.whl
