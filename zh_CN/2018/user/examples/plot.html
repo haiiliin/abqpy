@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generating a customized plot &mdash; abqpy 2018.5.4.post3.dev10+g3e9e58326 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Investigating the skew sensitivity of shell elements" href="sensitivity.html" />
+    <link rel="prev" title="Reproducing the cantilever beam tutorial" href="cantilever.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2018
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Putting it all Together: Abaqus Scripting Interface Examples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cantilever.html">Reproducing the cantilever beam tutorial</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Generating a customized plot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#opening-the-tutorial-output-database">Opening the tutorial output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opening-an-output-database-and-displaying-a-contour-plot">Opening an output database and displaying a contour plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#printing-a-contour-plot-at-the-end-of-each-step">Printing a contour plot at the end of each step</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="settings.html">Editing display preferences and GUI settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+      <li class="breadcrumb-item active">Generating a customized plot</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/user/examples/plot.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generating-a-customized-plot">
+<h1>Generating a customized plot<a class="headerlink" href="#generating-a-customized-plot" title="此标题的永久链接"></a></h1>
+<p>The following section provides examples of Abaqus Scripting Interface scripts that open an output database and generate a customized plot. In effect, these scripts reproduce the functionality of the Visualization module in Abaqus/CAE.</p>
+<section id="opening-the-tutorial-output-database">
+<span id="id1"></span><h2>Opening the tutorial output database<a class="headerlink" href="#opening-the-tutorial-output-database" title="此标题的永久链接"></a></h2>
+<p>Each of the following example scripts opens the output database used by the Visualization module tutorial in Getting Started with Abaqus/CAE. Use the following command to retrieve the output database that is read by the scripts:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewer_tutorial
+</pre></div>
+</div>
+</section>
+<section id="opening-an-output-database-and-displaying-a-contour-plot">
+<span id="id2"></span><h2>Opening an output database and displaying a contour plot<a class="headerlink" href="#opening-an-output-database-and-displaying-a-contour-plot" title="此标题的永久链接"></a></h2>
+<p>The following example of a script containing Abaqus Scripting Interface commands uses the output database used by <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caevismod-sb.htm?contextscope=all#simagsa-m-Caevismod-sb">Viewing the Output from Your Analysis</a>.</p>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewerOpenOdbAndContour
+</pre></div>
+</div>
+<p>The script does the following:</p>
+<ul class="simple">
+<li><p>Creates a viewport, and makes it the current viewport.</p></li>
+<li><p>Opens an output database.</p></li>
+<li><p>Displays a contour plot.</p></li>
+<li><p>Displays the model in the first frame of the third step.</p></li>
+<li><p>Sets the number of contour intervals and the contour limits.</p></li>
+<li><p>Prints a color image of the viewport to a .png file.</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">viewerOpenOdbAndContour.py</span>
+
+<span class="sd">Print a contour plot to a local PNG-format file.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="c1"># Create a new Viewport for this example.</span>
+
+<span class="n">myViewport</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Print a contour plot&#39;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Open the output database and associate it</span>
+<span class="c1"># with the new viewport.</span>
+
+<span class="n">odbPath</span> <span class="o">=</span> <span class="s2">&quot;viewer_tutorial.odb&quot;</span>
+<span class="n">myOdb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">odbPath</span><span class="p">)</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+
+
+<span class="c1"># Display a contour plot of the output database.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span><span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
+
+<span class="c1"># Change to the first frame of the third step.</span>
+<span class="c1"># Remember that indices in Python begin with zero:</span>
+<span class="c1">#   The index of the first frame is 0.</span>
+<span class="c1">#   The index of the third step is 2.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setFrame</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Change the number of contour intervals to 10</span>
+<span class="c1"># starting at 0.0 and ending at 0.10.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">contourOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">numIntervals</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">maxAutoCompute</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mf">0.10</span><span class="p">,</span>
+    <span class="n">minAutoCompute</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">minValue</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,)</span>
+
+<span class="c1"># Generate color output.</span>
+<span class="c1"># Do not print the viewport decorations or the black background.</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">printOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">rendition</span><span class="o">=</span><span class="n">COLOR</span><span class="p">,</span>
+    <span class="n">vpDecorations</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">vpBackground</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+
+<span class="c1"># Print the viewport to a local PNG-format file.</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">printToFile</span><span class="p">(</span><span class="n">fileName</span><span class="o">=</span><span class="s1">&#39;contourPlot&#39;</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="n">PNG</span><span class="p">,</span>
+    <span class="n">canvasObjects</span><span class="o">=</span><span class="p">(</span><span class="n">myViewport</span><span class="p">,))</span>
+</pre></div>
+</div>
+</section>
+<section id="printing-a-contour-plot-at-the-end-of-each-step">
+<span id="id3"></span><h2>Printing a contour plot at the end of each step<a class="headerlink" href="#printing-a-contour-plot-at-the-end-of-each-step" title="此标题的永久链接"></a></h2>
+<p>The following example script demonstrates how to produce and print a contour plot at the last frame of every step within an output database file. The example sets the appropriate contour limits so that all plots can be viewed within a fixed range.</p>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewerPrintContours
+</pre></div>
+</div>
+<p>The script does the following:</p>
+<ul class="simple">
+<li><p>Defines the contour limits function.</p></li>
+<li><p>Determines the final frame of every step within an output database file.</p></li>
+<li><p>Produces a contour plot at the final frame of every step.</p></li>
+<li><p>Prints the contour plot to a file.</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">viewerPrintContours.py</span>
+
+<span class="sd">Print a set of contour plots to .png files.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="c1"># Create a viewport for this example.</span>
+
+<span class="n">myViewport</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span>
+    <span class="s1">&#39;Print contour plot after each step&#39;</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Open the output database and associate it with the viewport.</span>
+<span class="c1"># Then set the plot state to CONTOURS_ON_DEF</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">myOdb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;viewer_tutorial.odb&#39;</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="p">(</span><span class="n">AbaqusException</span><span class="p">),</span> <span class="n">value</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;Error:&#39;</span><span class="p">,</span> <span class="n">value</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span><span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
+
+<span class="c1"># Determine the number of steps in the output database.</span>
+
+<span class="n">mySteps</span> <span class="o">=</span> <span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span>
+<span class="n">numSteps</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mySteps</span><span class="p">)</span>
+
+<span class="c1"># Set the maximum and minimum limits of the contour legend.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">contourOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">numIntervals</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">maxAutoCompute</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">maxValue</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">minAutoCompute</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">minValue</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># Establish print preferences.</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">printOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">vpBackground</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">psOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">LANDSCAPE</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">viewportAnnotationOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
+    <span class="n">triad</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span><span class="n">state</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">basicOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
+    <span class="n">coordSystemDisplay</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="p">)</span>
+
+<span class="c1"># For each step, obtain the following:</span>
+<span class="c1">#     1) The step key.</span>
+<span class="c1">#     2) The number of frames in the step.</span>
+<span class="c1">#     3) The increment number of the last frame in the step.</span>
+<span class="c1">#</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numSteps</span><span class="p">):</span>
+    <span class="n">stepKey</span> <span class="o">=</span> <span class="n">mySteps</span><span class="o">.</span><span class="n">keys</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="n">mySteps</span><span class="p">[</span><span class="n">stepKey</span><span class="p">]</span>
+    <span class="n">numFrames</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">)</span>
+
+<span class="c1">#   Go to the last frame.</span>
+<span class="c1">#   Display a contour plot.</span>
+<span class="c1">#   Display the step description and the increment number.</span>
+
+    <span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setFrame</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">numFrames</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span><span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
+
+<span class="c1"># Remove white space from the step key and use the result</span>
+<span class="c1"># to name the file.</span>
+
+    <span class="n">fileName</span><span class="o">=</span><span class="n">stepKey</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Print the viewport to a file.</span>
+
+    <span class="n">session</span><span class="o">.</span><span class="n">printToFile</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">PNG</span><span class="p">,</span> <span class="p">(</span><span class="n">myViewport</span><span class="p">,))</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="cantilever.html" class="btn btn-neutral float-left" title="Reproducing the cantilever beam tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="sensitivity.html" class="btn btn-neutral float-right" title="Investigating the skew sensitivity of shell elements" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

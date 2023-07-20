@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="zh-CN/html">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Environment Variables — abqpy 2018.5.4.post3.dev10+g3e9e58326 文档</title>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-punk.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-noir.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
+<link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
+<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/sphinx_rtd_theme.css" rel="stylesheet" type="text/css"/>
+<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script src="_static/jquery.js"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/sphinx_highlight.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script src="_static/js/hoverxref.js"></script>
+<script src="_static/js/tooltipster.bundle.min.js"></script>
+<script src="_static/js/micromodal.min.js"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="_static/togglebutton.js"></script>
+<script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="_static/design-tabs.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="_static/js/theme.js"></script>
+<link href="genindex.html" rel="index" title="索引"/>
+<link href="search.html" rel="search" title="搜索"/>
+<link href="cli.html" rel="next" title="Command Line Interface"/>
+<link href="getting_started.html" rel="prev" title="Getting Started"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="index.html">
+            abqpy
+          </a>
+<div class="version">
+                2018
+              </div>
+<div role="search">
+<form action="search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="搜索文档" name="q" placeholder="搜索文档" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+</div><div aria-label="导航菜单" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Environment Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abaqus-bat-path"><code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abaqus-command-options"><code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policy.html">Comment Policy</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="移动版导航菜单" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="index.html">abqpy</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="页面导航" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
+<li class="breadcrumb-item active">Environment Variables</li>
+<li class="wy-breadcrumbs-aside">
+<a href="_sources/envvars.md.txt" rel="nofollow"> 查看页面源码</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="environment-variables">
+<h1>Environment Variables<a class="headerlink" href="#environment-variables" title="此标题的永久链接"></a></h1>
+<section id="abaqus-bat-path">
+<h2><code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code><a class="headerlink" href="#abaqus-bat-path" title="此标题的永久链接"></a></h2>
+<p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
+the default Abaqus command line executable. This variable is used by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> to run the Abaqus command line
+procedure inside the Python interpreter environment where it is installed.</p>
+</section>
+<section id="abaqus-command-options">
+<h2><code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code><a class="headerlink" href="#abaqus-command-options" title="此标题的永久链接"></a></h2>
+<p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
+environment where it is installed is to run one of the two following command lines:</p>
+<ol class="arabic">
+<li><p>When there is a <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">abaqus</span></code> or <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">...</span></code> statement:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">noGUI</span><span class="o">=</span>script.py<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>When there is a <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">odbAccess</span></code> or <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">odbAccess</span> <span class="pre">import</span> <span class="pre">...</span></code> statement:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>python<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>However, there are other execution procedures that can be run with the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>
+command and also another options that could be passed to these commands. To define
+these procedures and options you can create a new system environment variable
+named <code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code>, and set a <strong>dictionary</strong> to this variable with the
+options you want to use. The values of the dictionary keys would be booleans or
+strings, e.g.: <code class="docutils literal notranslate"><span class="pre">{'noGUI':True,</span> <span class="pre">'database':'file.odb'}</span></code></p>
+<p>The possible options are:</p>
+<ol class="arabic">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">cae</span></code> command line options (import <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> module):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">'noGUI'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'database'</span><span class="p">:</span> <span class="s1">'database-file'</span><span class="p">,</span>
+    <span class="s1">'replay'</span><span class="p">:</span> <span class="s1">'replay-file'</span><span class="p">,</span>
+    <span class="s1">'recover'</span><span class="p">:</span> <span class="s1">'journal-file'</span><span class="p">,</span>
+    <span class="s1">'startup'</span><span class="p">:</span> <span class="s1">'startup-file'</span><span class="p">,</span>
+    <span class="s1">'noenvstartup'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'noSavedOptions'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'noSavedGuiPrefs'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'noStartupDialog'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'custom'</span><span class="p">:</span> <span class="s1">'script-file'</span><span class="p">,</span>
+    <span class="s1">'guiTester'</span><span class="p">:</span> <span class="s1">'GUI-script'</span><span class="p">,</span>
+    <span class="s1">'guiRecord'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+    <span class="s1">'guiNoRecord'</span><span class="p">:</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#bool" title="bool"><span class="nb">bool</span></a><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">python</span></code> command line options (import <code class="docutils literal notranslate"><span class="pre">odbAccess</span></code> module):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">'sim'</span><span class="p">:</span> <span class="s1">'sim_file_name'</span><span class="p">,</span>
+    <span class="s1">'log'</span><span class="p">:</span> <span class="s1">'log_file_name'</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>One advantage in using this alternative is to change the options at run time inside the code.</p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="此标题的永久链接"></a></h2>
+<p>The snippet bellow changes the default procedure options before calling
+abaqus cae command procedure, at run time.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/os.html#module-os" title="os"><span class="nn">os</span></a>
+<a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/os.html#os.environ" title="os.environ"><span class="n">os</span><span class="o">.</span><span class="n">environ</span></a><span class="p">[</span><span class="s1">'ABAQUS_COMMAND_OPTIONS'</span><span class="p">]</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#str" title="str"><span class="nb">str</span></a><span class="p">({</span><span class="s1">'noGUI'</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">'database'</span><span class="p">:</span><span class="s1">'file.odb'</span><span class="p">})</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>In this specific case, the procedure will use the graphical user interface (GUI mode)
+and load a <em>database</em> file, i.e., it will run the following command line.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">script</span><span class="o">=</span>script.py<span class="w"> </span><span class="nv">database</span><span class="o">=</span>file.odb<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="此标题的永久链接"></a></h2>
+<script async="async" crossorigin="anonymous" issue-term="pathname" label="💬 comment" repo="haiiliin/abqpy" src="https://utteranc.es/client.js" theme="github-light" type="text/javascript"></script>
+</section>
+</section>
+</div>
+</div>
+<footer><div aria-label="页脚" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="getting_started.html" rel="prev" title="Getting Started"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> 上一页</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="cli.html" rel="next" title="Command Line Interface">下一页 <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© 版权所有 2022, WANG Hailin.</p>
+</div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+</div>
+</div>
+</section>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
