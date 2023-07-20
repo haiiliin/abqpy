@@ -31,6 +31,8 @@ jobs:
   sphinx:
     if: >
       github.event_name == 'push' ||
+      github.event_name == 'release' ||
+      github.event_name == 'workflow_dispatch' ||
       github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
