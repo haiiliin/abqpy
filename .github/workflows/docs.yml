@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ["en"]
+        language: ["en", "zh_CN"]
         builder: ["html"]
     steps:
       - uses: actions/setup-python@v4
