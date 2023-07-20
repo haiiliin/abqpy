@@ -41,6 +41,9 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
+        theme: ["sphinx_rtd_theme"]
+    env:
+      SPHINX_THEME: ${{ matrix.theme }}
     steps:
       - uses: actions/setup-python@v4
         with:
