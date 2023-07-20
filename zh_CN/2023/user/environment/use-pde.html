@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using the Abaqus PDE &mdash; abqpy 2023.5.4.post3.dev10+ge5e7fd7ab 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Putting it all Together: Abaqus Scripting Interface Examples" href="../examples/index.html" />
+    <link rel="prev" title="Abaqus PDE basics" href="pde-basics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2023
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">The Abaqus Python Development Environment</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="about.html">About the Abaqus Python development environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pde-basics.html">Abaqus PDE basics</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Using the Abaqus PDE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-guilog-files">Creating .guiLog files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-a-script">Running a script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-debugger">Using the debugger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-breakpoints">Using breakpoints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-abaqus-pde-with-plug-ins">Using the Abaqus PDE with plug-ins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-abaqus-pde-with-custom-applications">Using the Abaqus PDE with custom applications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="index.html">The Abaqus Python Development Environment</a></li>
+      <li class="breadcrumb-item active">Using the Abaqus PDE</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/user/environment/use-pde.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-the-abaqus-pde">
+<h1>Using the Abaqus PDE<a class="headerlink" href="#using-the-abaqus-pde" title="此标题的永久链接"></a></h1>
+<p>The following sections contain detailed information that you can use to create and work with files in the Abaqus PDE.</p>
+<section id="creating-guilog-files">
+<h2>Creating .guiLog files<a class="headerlink" href="#creating-guilog-files" title="此标题的永久链接"></a></h2>
+<p>The Abaqus PDE is designed to work any type of Python files, including <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code> files. A <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code> is a Python script that records actions in the Abaqus/CAE GUI. When you create a <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code>, it records every mouse click, dialog box entry, and menu, tool, or viewport selection.</p>
+<p>To record actions from Abaqus/CAE, the Abaqus PDE session must be associated with a Abaqus/CAE session. The Abaqus PDE and Abaqus/CAE sessions are associated if you started them together from a command prompt or if you started the Abaqus PDE by selecting File -&gt; Abaqus PDE in Abaqus/CAE. For more information on starting the Abaqus PDE, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdestart.htm?contextscope=all">Starting the Abaqus Python development environment</a>.</p>
+<ol class="arabic">
+<li><p>From the main menu bar in the Abaqus PDE, select FileNew to create a new empty file in the main window.</p>
+<p><strong>Tip:</strong> You can also click the New guiLog icon to create a new <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code> file.</p>
+</li>
+<li><p>Click the Start Recording icon to begin recording actions from Abaqus/CAE.</p>
+<p>Abaqus writes the following two lines to begin the file:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqusTester</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">abaqusGui</span>
+</pre></div>
+</div>
+</li>
+<li><p>Complete all the desired actions in the Abaqus/CAE session to record them in the .guiLog file.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When you record .guiLog files, do not use mouse button 2 to close the dialog box for a procedure. Instead, use the buttons in the dialog box to close it. Using mouse button 2 adds multiple dialog box closing commands to the recorded .guiLog file. Since only one command is needed to close the dialog, the extra commands will result in an error when the recorded script is played.</p>
+</div>
+</li>
+<li><p>Click the Stop Recording icon to stop recording.</p></li>
+<li><p>Use standard text editing techniques to edit the file in the main window. Additional editing tools are available in the Edit menu (for more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdeedit.htm?contextscope=all">Editing files in the Abaqus PDE</a>.)</p></li>
+<li><p>To add more recorded commands to the file, position the cursor at the desired location or click End of Main File to position the cursor at the end of the file, then repeat Step 2 through Step 4.</p></li>
+<li><p>Select FileSave to save the file or FileSave As to save the file with a new name; new files automatically use Save As.</p></li>
+</ol>
+</section>
+<section id="running-a-script">
+<h2>Running a script<a class="headerlink" href="#running-a-script" title="此标题的永久链接"></a></h2>
+<p>The Abaqus PDE runs scripts using one of three processes - GUI, kernel, or local. By default, <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code> files are run in the Abaqus/CAE GUI process. If the Abaqus PDE was opened from within Abaqus/CAE, <code class="docutils literal notranslate"><span class="pre">.py</span></code> files and all other file types are run in the Abaqus/CAE kernel process by default. If the Abaqus PDE was opened without Abaqus/CAE, <code class="docutils literal notranslate"><span class="pre">.py</span></code> files are run in the local process by default. The local process runs the script without Abaqus/CAE, using Python in the local (PDE) process. You can change the process by selecting <strong>Settings -&gt; Run Script</strong> In and choosing the desired process, or by clicking the <strong>GUI</strong>, <strong>Kernel</strong>, or <strong>Local</strong> radio buttons located above the main window. If the Abaqus PDE was opened without Abaqus/CAE and you run a script with the <strong>GUI</strong> or <strong>Kernel</strong> process, Abaqus PDE will start Abaqus/CAE to run the script.</p>
+<p>To run the main file, click <strong>Play</strong> above the main window. The Abaqus PDE runs the main file until it completes, encounters an error, or reaches a breakpoint. As the script runs, the current line is highlighted according to the <strong>Line Animation</strong> settings.</p>
+<p>Use the other buttons - <strong>Next Line</strong>, <strong>Stop</strong>, <strong>Go to Start</strong>, and <strong>Go to End</strong> - to execute the main file one line at a time, stop running the file, or reposition the cursor at the beginning or end of the file, respectively.</p>
+<p>As you run a script, you might want to specify a breakpoint to pause script execution at a particular line. For more information about breakpoints, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdebreakpoint.htm?contextscope=all">Using breakpoints</a>.</p>
+</section>
+<section id="using-the-debugger">
+<h2>Using the debugger<a class="headerlink" href="#using-the-debugger" title="此标题的永久链接"></a></h2>
+<p>You can use the debugger in the Abaqus PDE to troubleshoot your scripts.</p>
+<p>To open the debugger, select <strong>Window -&gt; Debugger</strong> or click <strong>Start debugger</strong>. If you have a script paused in the main window, the debugger opens at the current position of the test. If you do not have a paused script, the debugger automatically begins running the main file and positions the cursor at the start of the script.</p>
+<p>The debugger consists of a call stack area, action buttons, and the debugger command line interface (CLI) window, as shown in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-pde-debugger-nls"><span class="std std-numref">图 21</span></a> The debugger is positioned between the Abaqus PDE main window and the message area.</p>
+<figure class="align-center" id="id1">
+<span id="cmd-pde-debugger-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-debugger-nls.png"><img alt="../../_images/cmd-pde-debugger-nls.png" src="../../_images/cmd-pde-debugger-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 21 </span><span class="caption-text">The Abaqus PDE debugger.</span><a class="headerlink" href="#id1" title="此图像的永久链接"></a></p>
+</figcaption>
+</figure>
+<p>The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see [running a script]).</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If you enter a command in the debugger CLI and it does not seem to work, it may be conflicting with a Pdb command.</p>
+</div>
+<p>The call stack area shows the commands that are currently being executed.</p>
+<p>The debugger contains a tool to watch variables as scripts are executed. To add a variable to the watch list, click mouse button 3 over the variable name in the Abaqus PDE main window and select <strong>Add Watch: variable name</strong> from the menu that appears. The Abaqus PDE adds the variable to the watch list, indicating the namespace that the variable is defined within, the variable name, the type of data the variable can store, the current value, and the file and line where the variable is located. When you execute or step through the script, the variable information is updated as needed. You can also activate the watch list tool after starting the debugger by selecting <strong>Show Watch</strong> from the action buttons below the call stack area or by selecting <strong>Window -&gt; Debug Windows -&gt; Watch List</strong>. Abaqus displays the Watch List area below the debugger or below the main window if the debugger is not open.</p>
+<p>You can also customize the following aspects of variable display in the Watch <strong>List</strong>:</p>
+<ul>
+<li><p>You can switch a variable's display format between repr and str formats. The <code class="docutils literal notranslate"><span class="pre">repr()</span></code> function returns a string that is better suited to being read by the Python interpreter, while the <code class="docutils literal notranslate"><span class="pre">str()</span></code> function returns a string better suited to printing. For more information about the built-in Python functions <code class="docutils literal notranslate"><span class="pre">repr()</span></code> and <code class="docutils literal notranslate"><span class="pre">str()</span></code>, refer to the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>).</p>
+<p>To toggle between these settings, click mouse button 3 on a watch variable row and <strong>select Display repr (not str) value of variable name or Display str (not repr) value of variable name</strong> from the list that appears. If the variable is a local variable and the program is not accessing that section of code, the variable value will be set to “not evaluated.” Variable values are also set to “not evaluated” if the program is not running.</p>
+</li>
+<li><p>You can prompt the Abaqus PDE to pause when the program reaches a line in which the value of a selected watch variable has changed. To toggle on the “stop on change” option for a particular watch variable, click mouse button 3 on the variable's line and select <strong>Stop on change to variable name</strong> from the list that appears. When this option is selected, Abaqus PDE stops at the line after the change.</p></li>
+<li><p>You can remove any watch variables from the debugger by clicking mouse button 3 on the variable's line and selecting <strong>Delete watch var variable name</strong> from the list that appears.</p></li>
+</ul>
+</section>
+<section id="using-breakpoints">
+<h2>Using breakpoints<a class="headerlink" href="#using-breakpoints" title="此标题的永久链接"></a></h2>
+<p>Breakpoints are points where script execution pauses until you select Play or <strong>Next Line</strong> above the main window.</p>
+<p>You can add breakpoints at any line in a script. Breakpoints also allow you to pause plug-ins and custom applications so you can trace their execution.</p>
+<p>To add a breakpoint, position the cursor on the desired line of the script, click mouse button 3, and select <strong>Add Breakpoint</strong>. Use the same process, selecting <strong>Remove Breakpoint</strong>, to remove breakpoints. You can also add and remove breakpoints using the breakpoint tool located above the main window or the F9 key.</p>
+<p>Breakpoints are indicated by an asterisk to the right of the line number in the Abaqus PDE. If syntax colors are active, the line number, asterisk, and the line of code are colored using the current breakpoint color selection (for more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all">Selecting the settings for use with a file</a>).</p>
+<p>You can review breakpoints in all open files by selecting <strong>Window -&gt; Debug Windows -&gt; Breakpoints List</strong>. The <strong>Abaqus PDE Breakpoints</strong> dialog box lists the file path, name, and each line number where a breakpoint is located. You can double-click the paths to position the cursor in the main window at the selected breakpoint.</p>
+</section>
+<section id="using-the-abaqus-pde-with-plug-ins">
+<h2>Using the Abaqus PDE with plug-ins<a class="headerlink" href="#using-the-abaqus-pde-with-plug-ins" title="此标题的永久链接"></a></h2>
+<p>The functions and tools in the Abaqus PDE work the same way for plug-ins as they do for other scripts. However, since plug-ins are launched within Abaqus/CAE, you cannot load and run them as a main file like you can with other scripts. Instead, you add breakpoints, then run the plug-ins as usual.</p>
+<p>If the plug-in contains both kernel and GUI functions, you must trace them separately. Tracing the kernel and GUI functions separately prevents problems that can occur in Abaqus/CAE as the Abaqus PDE attempts to switch between kernel and GUI modes while the code is running. Separating the functions also provides a logical approach to locating problems in the kernel code versus ones in the user interface.</p>
+<p>After you save the changes to your plug-in, you can trace its execution.</p>
+<ol class="arabic">
+<li><p>Open the file that you want to debug.</p></li>
+<li><p>Position the cursor where you want to add a breakpoint. Click mouse button 3, and select <strong>Add Breakpoint</strong>. (For more information, see [using breakpoints].)</p></li>
+<li><p>Start the plug-in from within Abaqus/CAE.</p>
+<p>The plug-in code appears in the Abaqus PDE window, stopped at the breakpoint or at the line immediately following the start trace statement, if you added one.</p>
+</li>
+<li><p>Use the Abaqus PDE controls and options described in the previous sections to step through the execution of the plug-in.</p></li>
+</ol>
+</section>
+<section id="using-the-abaqus-pde-with-custom-applications">
+<h2>Using the Abaqus PDE with custom applications<a class="headerlink" href="#using-the-abaqus-pde-with-custom-applications" title="此标题的永久链接"></a></h2>
+<p>Custom applications are scripts created to modify or add functionality to Abaqus/CAE. They typically use a combination of the Abaqus Scripting Interface commands and the Abaqus GUI toolkit commands to extend the user interface and the underlying kernel commands. Custom applications are launched concurrent with the start of an Abaqus/CAE session, and they are integrated into the existing functionality.</p>
+<p>If the application contains both kernel and GUI functions, you must trace them separately. Tracing the kernel and GUI functions separately prevents problems that can occur in Abaqus/CAE as the Abaqus PDE attempts to switch between kernel and GUI modes while the code is running. Separating the functions also provides a logical approach to locating problems in the kernel code versus ones in the GUI code.</p>
+<ol class="arabic">
+<li><p>Enter the following at a command prompt to start the Abaqus PDE and the custom application:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>pde<span class="w"> </span>-pde<span class="w"> </span><span class="o">[</span>args<span class="o">]</span>
+</pre></div>
+</div>
+<p>where <strong>abaqus</strong> is the command you use to start Abaqus and <strong>args</strong> are the arguments required to start the custom application. For example, if you enter <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">cae</span> <span class="pre">-custom</span> <span class="pre">xxx.py</span></code> to start Abaqus/CAE and your application, enter <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">pde</span> <span class="pre">-pde</span> <span class="pre">-custom</span> <span class="pre">xxx.py</span></code>.</p>
+<p>Note:</p>
+<p>You cannot start the custom application and launch the Abaqus PDE from within Abaqus/CAE since the initial startup processes would already be complete.</p>
+</li>
+<li><p>Open the file that you want to debug.</p></li>
+<li><p>Position the cursor where you want to add a breakpoint. Click mouse button 3, and select <strong>Add Breakpoint</strong>. (For more information, see [using breakpoints].)</p></li>
+<li><p>Click <strong>Start CAE</strong> at the top right of the Abaqus PDE to start Abaqus/CAE with the custom startup commands.</p></li>
+<li><p>The application code appears in the Abaqus PDE window, stopped at a breakpoint.</p></li>
+<li><p>Use the Abaqus PDE controls and options described in the previous sections to step through the execution of the custom application.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="pde-basics.html" class="btn btn-neutral float-left" title="Abaqus PDE basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../examples/index.html" class="btn btn-neutral float-right" title="Putting it all Together: Abaqus Scripting Interface Examples" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

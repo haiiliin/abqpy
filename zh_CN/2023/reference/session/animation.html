@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation Options &mdash; abqpy 2023.5.4.post3.dev10+ge5e7fd7ab 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Canvas" href="canvas.html" />
+    <link rel="prev" title="Abaqus Session" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2023
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Abaqus Session</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Animation Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display.html">Display Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="field_report.html">FieldReport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xy.html">XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Abaqus Session</a></li>
+      <li class="breadcrumb-item active">Animation Options</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/session/animation.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="animation-options">
+<h1>Animation Options<a class="headerlink" href="#animation-options" title="此标题的永久链接"></a></h1>
+<p>Animation commands are used to create and control object-based and image-based animations in the viewport.</p>
+<section id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="此标题的永久链接"></a></h2>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AVIOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L12-L106"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The AVIOptions object is used to store values and attributes to be used in generating AVI animation. The
+AVIOptions object has no constructor. Abaqus creates the <strong>aviOptions</strong> member when the animation module is
+imported.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">aviOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all">AVIOptions on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.codecOptions">
+<span class="sig-name descname"><span class="pre">codecOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L40-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.codecOptions" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the system specific options defining the CODEC when the
+<strong>compressionMethod</strong> is set to CODEC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.compressionMethod">
+<span class="sig-name descname"><span class="pre">compressionMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">RLE8</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L33-L34"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.compressionMethod" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the compression method for the AVI format. Possible values are:</p>
+<ul class="simple">
+<li><p>RAW8, specifying an uncompressed format of 8 bits per pixel.</p></li>
+<li><p>RAW32, specifying an uncompressed format of 32 bits per pixel.</p></li>
+<li><p>RLE8, specifying a run length encoded format of 8 bits per pixel.</p></li>
+<li><p>CODEC, specifying a format defined by CODEC (encoder/decoder). The availability of
+theCODEC is system dependent</p></li>
+</ul>
+<p>The default value is RLE8.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.compressionQuality">
+<span class="sig-name descname"><span class="pre">compressionQuality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L36-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.compressionQuality" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the quality of the compression as a percentage when the
+<strong>compressionMethod</strong> is set to CODEC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L49-L53"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.imageSize" title="永久链接至目标"></a></dt>
+<dd><p>A pair of Ints specifying the width and height of the image in pixels when
+<strong>sizeDefinition</strong> = USER_DEFINED. Possible values are Ints in the range (<em>minWidth</em>,
+<strong>minHeight</strong>) ≤ (width, height) ≤ (<em>maxWidth</em>, <strong>maxHeight</strong>). The default value is the
+screen size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compressionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RLE8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressionQuality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codecOptions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeDefinition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIZE_ON_SCREEN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L55-L106"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the AVIOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-avioptionspyc.htm?contextscope=all#simaker-avioptionssetvaluespyc">AVIOptions.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>compressionMethod</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">CODEC</span></code>, <code class="docutils literal notranslate"><span class="pre">RLE8</span></code>, <code class="docutils literal notranslate"><span class="pre">RAW32</span></code>, <code class="docutils literal notranslate"><span class="pre">AVI</span></code>, <code class="docutils literal notranslate"><span class="pre">RAW8</span></code>], default: <code class="docutils literal notranslate"><span class="pre">RLE8</span></code>) -- <p>A SymbolicConstant specifying the compression method for the AVI format. Possible values are:</p>
+<ul>
+<li><p>RAW8, specifying an uncompressed format of 8 bits per pixel.</p></li>
+<li><p>RAW32, specifying an uncompressed format of 32 bits per pixel.</p></li>
+<li><p>RLE8, specifying a run length encoded format of 8 bits per pixel.</p></li>
+<li><p>CODEC, specifying a format defined by CODEC (encoder/decoder). The availability of
+theCODEC is system dependent</p></li>
+</ul>
+<p>The default value is RLE8.</p>
+</p></li>
+<li><p><strong>compressionQuality</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the quality of the compression as a percentage when the
+<strong>compressionMethod</strong> is set to CODEC.</p></li>
+<li><p><strong>codecOptions</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the system specific options defining the CODEC when the
+<strong>compressionMethod</strong> is set to CODEC.</p></li>
+<li><p><strong>sizeDefinition</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">USER_DEFINED</span></code>, <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>) -- A SymbolicConstant specifying how the width and height of the image are specified.
+Possible values are SIZE_ON_SCREEN and USER_DEFINED. The default value is
+SIZE_ON_SCREEN.</p></li>
+<li><p><strong>imageSize</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A pair of Ints specifying the width and height of the image in pixels when
+<strong>sizeDefinition</strong> = USER_DEFINED. Possible values are Ints in the range (<em>minWidth</em>,
+<strong>minHeight</strong>) ≤ (width, height) ≤ (<em>maxWidth</em>, <strong>maxHeight</strong>). The default value is the
+screen size.
+Note:The values of the minimum width (<em>minWidth</em>) and height (<em>minHeight</em>) depend on the
+following:viewport font size,whether decorations are printed,decoration size, andscreen
+resolution.The minimum width and height are normally &lt; 50 pixels. The values of the
+maximum width (<em>maxWidth</em>) and height (<em>maxHeight</em>) depend on the graphics capabilities
+of the system. The maximum width and height will be at least as large as the screen
+dimensions.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AVIOptions.AVIOptions.sizeDefinition">
+<span class="sig-name descname"><span class="pre">sizeDefinition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SIZE_ON_SCREEN</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AVIOptions.py#L44-L47"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AVIOptions.AVIOptions.sizeDefinition" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying how the width and height of the image are specified.
+Possible values are SIZE_ON_SCREEN and USER_DEFINED. The default value is
+SIZE_ON_SCREEN.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnimationController</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L12-L112"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The AnimationController object controls all object-based animation to be displayed in
+the viewports. The AnimationController object has no constructor. Abaqus creates the
+<strong>animationController</strong> member when it creates the Session object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">animationController</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all">AnimationController on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.animationType">
+<span class="sig-name descname"><span class="pre">animationType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">NONE</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L25-L27"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.animationType" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the type of movie to play. Possible values are
+SCALE_FACTOR, HARMONIC, TIME_HISTORY, and NONE. The default value is NONE.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.decrementFrame">
+<span class="sig-name descname"><span class="pre">decrementFrame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L63-L67"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.decrementFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method decrements the animation frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.incrementFrame">
+<span class="sig-name descname"><span class="pre">incrementFrame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L57-L61"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.incrementFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method increments the animation frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.play">
+<span class="sig-name descname"><span class="pre">play</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNLIMITED</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L33-L49"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.play" title="永久链接至目标"></a></dt>
+<dd><p>This method begins the animation.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all#simaker-animationcontrollerplaypyc">AnimationController.play on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>duration</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">UNLIMITED</span></code>], default: <code class="docutils literal notranslate"><span class="pre">UNLIMITED</span></code>) -- The SymbolicConstant UNLIMITED or an Int specifying how many seconds to play the
+animation. The default value is UNLIMITED.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AnimationError</strong> -- animationType not set, If <strong>animationType</strong> = NONE:</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animationType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NONE</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L98-L112"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the AnimationController object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all#simaker-animationcontrollersetvaluespyc">AnimationController.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>animationType</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">HARMONIC</span></code>, <code class="docutils literal notranslate"><span class="pre">SCALE_FACTOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TIME_HISTORY</span></code>, <code class="docutils literal notranslate"><span class="pre">NONE</span></code>], default: <code class="docutils literal notranslate"><span class="pre">NONE</span></code>) -- A SymbolicConstant specifying the type of movie to play. Possible values are
+SCALE_FACTOR, HARMONIC, TIME_HISTORY, and NONE. The default value is NONE.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> -- </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.showFirstFrame">
+<span class="sig-name descname"><span class="pre">showFirstFrame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L86-L90"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.showFirstFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method renders the first frame of the animation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.showFrame">
+<span class="sig-name descname"><span class="pre">showFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L69-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.showFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method renders the specified frame of the animation.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationcontrollerpyc.htm?contextscope=all#simaker-animationcontrollershowframepyc">AnimationController.showFrame on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the frame number.</p></li>
+<li><p><strong>value</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the frame: for <strong>animationType</strong> = TIME_HISTORY the frame with the time
+nearest to this value, for <strong>animationType</strong> = HARMONIC the frame with the angle nearest to
+this value, for <strong>animationType</strong> = SCALE_FACTOR the frame with the scale value nearest to
+this value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.showLastFrame">
+<span class="sig-name descname"><span class="pre">showLastFrame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L92-L96"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.showLastFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method renders the last frame of the animation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.state">
+<span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">STOP</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L29-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.state" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the state of the animation controller. Possible values are
+STOP and PLAY. The default value is STOP.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationController.AnimationController.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationController.py#L51-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationController.AnimationController.stop" title="永久链接至目标"></a></dt>
+<dd><p>This method stops the animation.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnimationOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L22-L276"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The AnimationOptions object is used to store values and attributes associated with an
+AnimationController object.
+The AnimationOptions object has no constructor command. Abaqus creates the
+<strong>animationOptions</strong> member when it creates the AnimationController object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">animationOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all">AnimationOptions on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter">
+<span class="sig-name descname"><span class="pre">frameCounter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L44-L45"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameCounter" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to show the frame counter. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.frameRate">
+<span class="sig-name descname"><span class="pre">frameRate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L40-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.frameRate" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the animation rate in frames/second. Possible values are 1 ≤
+<strong>frameRate</strong> ≤ 100. The default value is 50.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTime">
+<span class="sig-name descname"><span class="pre">maxTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L60-L62"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTime" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the maximum time for time based time history animation when
+<strong>maxTimeAutoCompute</strong> = False.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute">
+<span class="sig-name descname"><span class="pre">maxTimeAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L64-L66"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoCompute" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether the animation maximum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue">
+<span class="sig-name descname"><span class="pre">maxTimeAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L68-L71"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.maxTimeAutoValue" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the maximum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the
+<strong>maxTimeAutoCompute</strong> value is True. This value is computed as the maximum time of all
+active frames displayed in viewports where the animation is active.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTime">
+<span class="sig-name descname"><span class="pre">minTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L73-L75"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTime" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the minimum time for time based time history animation when
+<strong>minTimeAutoCompute</strong> = False.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute">
+<span class="sig-name descname"><span class="pre">minTimeAutoCompute</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L77-L79"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoCompute" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether the animation minimum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue">
+<span class="sig-name descname"><span class="pre">minTimeAutoValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L81-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.minTimeAutoValue" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the minimum time when <strong>timeHistoryMode</strong> is set to TIME_BASED and the
+<strong>minTimeAutoCompute</strong> value is True. This value is computed as the minimum time of all
+active frames displayed in viewports where the animation is active.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">LOOP</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L36-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.mode" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,
+LOOP_BACKWARD, and SWING. The default value is LOOP.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames">
+<span class="sig-name descname"><span class="pre">numScaleFactorFrames</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L52-L54"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.numScaleFactorFrames" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the number of frames to be used when the AnimationController object's
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. The default value is 7.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling">
+<span class="sig-name descname"><span class="pre">relativeScaling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">HALF_CYCLE</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L47-L50"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.relativeScaling" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the relative scaling when the AnimationController object's
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
+The default value is HALF_CYCLE.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.LOOP</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameRate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frameCounter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relativeScaling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.HALF_CYCLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numScaleFactorFrames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeHistoryMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.FRAME_BASED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxTimeAutoCompute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minTimeAutoCompute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeIncrement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyUseHighlightMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyShowLine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineStyle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SOLID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineThickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MEDIUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyLineColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyShowSymbol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolMarker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MEDIUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xySymbolColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L140-L276"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the AnimationOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationoptionspyc.htm?contextscope=all#simaker-animationoptionssetvaluespyc">AnimationOptions.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mode</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">LOOP</span></code>, <code class="docutils literal notranslate"><span class="pre">SWING</span></code>, <code class="docutils literal notranslate"><span class="pre">PLAY_ONCE</span></code>, <code class="docutils literal notranslate"><span class="pre">LOOP_BACKWARD</span></code>], default: <code class="docutils literal notranslate"><span class="pre">LOOP</span></code>) -- A SymbolicConstant specifying the animation mode. Possible values are PLAY_ONCE, LOOP,
+LOOP_BACKWARD, and SWING. The default value is LOOP.</p></li>
+<li><p><strong>frameRate</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">50</span></code>) -- An Int specifying the animation rate in frames/second. Possible values are 1 ≤
+<strong>frameRate</strong> ≤ 100. The default value is 50.</p></li>
+<li><p><strong>frameCounter</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to show the frame counter. The default value is ON.</p></li>
+<li><p><strong>relativeScaling</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">HARMONIC</span></code>, <code class="docutils literal notranslate"><span class="pre">SCALE_FACTOR</span></code>, <code class="docutils literal notranslate"><span class="pre">HALF_CYCLE</span></code>, <code class="docutils literal notranslate"><span class="pre">FULL_CYCLE</span></code>], default: <code class="docutils literal notranslate"><span class="pre">HALF_CYCLE</span></code>) -- A SymbolicConstant specifying the relative scaling when the AnimationController object's
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. Possible values are FULL_CYCLE and HALF_CYCLE.
+The default value is HALF_CYCLE.</p></li>
+<li><p><strong>numScaleFactorFrames</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">7</span></code>) -- An Int specifying the number of frames to be used when the AnimationController object's
+<strong>animationType</strong> = SCALE_FACTOR or HARMONIC. The default value is 7.</p></li>
+<li><p><strong>timeHistoryMode</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">FRAME_BASED</span></code>, <code class="docutils literal notranslate"><span class="pre">TIME_BASED</span></code>], default: <code class="docutils literal notranslate"><span class="pre">FRAME_BASED</span></code>) -- A SymbolicConstant specifying whether the time history animation is time based or frame
+based. Possible values are FRAME_BASED and TIME_BASED. The default value is FRAME_BASED.</p></li>
+<li><p><strong>maxTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the maximum time for time based time history animation when
+<strong>maxTimeAutoCompute</strong> = False.</p></li>
+<li><p><strong>maxTimeAutoCompute</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether the animation maximum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p></li>
+<li><p><strong>minTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the minimum time for time based time history animation when
+<strong>minTimeAutoCompute</strong> = False.</p></li>
+<li><p><strong>minTimeAutoCompute</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether the animation minimum time value should be computed from
+the active frames when <strong>timeHistoryMode</strong> is set to TIME_BASED. The default value is ON.</p></li>
+<li><p><strong>timeIncrement</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the time increment for frame selection when <strong>timeHistoryMode</strong> is set
+to TIME_BASED.</p></li>
+<li><p><strong>xyUseHighlightMethod</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to use the highlight method to draw the time tracker line
+and symbols. The default value is ON.</p></li>
+<li><p><strong>xyShowLine</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to show the time tracker line. The default value is ON.</p></li>
+<li><p><strong>xyLineStyle</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">DASHED</span></code>, <code class="docutils literal notranslate"><span class="pre">SOLID</span></code>, <code class="docutils literal notranslate"><span class="pre">DOT_DASH</span></code>, <code class="docutils literal notranslate"><span class="pre">DOTTED</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SOLID</span></code>) -- A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line style. Possible values are
+SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p></li>
+<li><p><strong>xyLineThickness</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">THIN</span></code>, <code class="docutils literal notranslate"><span class="pre">THICK</span></code>, <code class="docutils literal notranslate"><span class="pre">VERY_THIN</span></code>, <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>], default: <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>) -- A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line thickness. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.</p></li>
+<li><p><strong>xyLineColor</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the color used to plot the <strong>X - Y</strong> time tracker line when
+<strong>xyUseHighlightMethod</strong> = False. The default value is &quot;Yellow&quot;.</p></li>
+<li><p><strong>xyShowSymbol</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to show the time tracker symbols. The default value is ON.</p></li>
+<li><p><strong>xySymbolMarker</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">CROSS</span></code>, <code class="docutils literal notranslate"><span class="pre">FILLED_DIAMOND</span></code>, <code class="docutils literal notranslate"><span class="pre">FILLED_SQUARE</span></code>, <code class="docutils literal notranslate"><span class="pre">HOLLOW_CIRCLE</span></code>, <code class="docutils literal notranslate"><span class="pre">HOLLOW_TRI</span></code>, <code class="docutils literal notranslate"><span class="pre">HOLLOW_SQUARE</span></code>, <code class="docutils literal notranslate"><span class="pre">DEFAULT</span></code>, <code class="docutils literal notranslate"><span class="pre">FILLED_TRI</span></code>, <code class="docutils literal notranslate"><span class="pre">HOLLOW_DIAMOND</span></code>, <code class="docutils literal notranslate"><span class="pre">FILLED_CIRCLE</span></code>, <code class="docutils literal notranslate"><span class="pre">XMARKER</span></code>], default: <code class="docutils literal notranslate"><span class="pre">DEFAULT</span></code>) -- <p>A SymbolicConstant specifying the marker type to be used for all animation capable <strong>X - Y</strong>
+curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
+associated to each curve Possible values are:</p>
+<ul>
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>FILLED_TRI</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>HOLLOW_TRI</p></li>
+<li><p>CROSS</p></li>
+<li><p>XMARKER</p></li>
+<li><p>DEFAULT</p></li>
+</ul>
+<p>The default value is DEFAULT.</p>
+</p></li>
+<li><p><strong>xySymbolSize</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">SMALL</span></code>, <code class="docutils literal notranslate"><span class="pre">LARGE</span></code>, <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>], default: <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>) -- A SymbolicConstant specifying the size of the markers. Possible values are SMALL,
+MEDIUM, and LARGE. The default value is MEDIUM.</p></li>
+<li><p><strong>xySymbolColor</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the color used to plot <strong>X - Y</strong> time tracker symbols when
+<strong>xyUseHighlightMethod</strong> = False. When setting the color to 'Default' the system will take
+the color associated to each curve. The default value is &quot;Default&quot;.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode">
+<span class="sig-name descname"><span class="pre">timeHistoryMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FRAME_BASED</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L56-L58"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeHistoryMode" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying whether the time history animation is time based or frame
+based. Possible values are FRAME_BASED and TIME_BASED. The default value is FRAME_BASED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement">
+<span class="sig-name descname"><span class="pre">timeIncrement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L86-L88"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.timeIncrement" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the time increment for frame selection when <strong>timeHistoryMode</strong> is set
+to TIME_BASED.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor">
+<span class="sig-name descname"><span class="pre">xyLineColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L131-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineColor" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the color used to plot the <strong>X - Y</strong> time tracker line when
+<strong>xyUseHighlightMethod</strong> = False. The default value is &quot;Yellow&quot;.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle">
+<span class="sig-name descname"><span class="pre">xyLineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SOLID</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L97-L99"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineStyle" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line style. Possible values are
+SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness">
+<span class="sig-name descname"><span class="pre">xyLineThickness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">MEDIUM</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L101-L103"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyLineThickness" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the <strong>X - Y</strong> time tracker line thickness. Possible values are
+VERY_THIN, THIN, MEDIUM, and THICK. The default value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine">
+<span class="sig-name descname"><span class="pre">xyShowLine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L94-L95"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowLine" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to show the time tracker line. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol">
+<span class="sig-name descname"><span class="pre">xyShowSymbol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L105-L106"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyShowSymbol" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to show the time tracker symbols. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor">
+<span class="sig-name descname"><span class="pre">xySymbolColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L135-L138"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolColor" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the color used to plot <strong>X - Y</strong> time tracker symbols when
+<strong>xyUseHighlightMethod</strong> = False. When setting the color to 'Default' the system will take
+the color associated to each curve. The default value is &quot;Default&quot;.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker">
+<span class="sig-name descname"><span class="pre">xySymbolMarker</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">DEFAULT</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L124-L125"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolMarker" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the marker type to be used for all animation capable <strong>X - Y</strong>
+curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
+associated to each curve Possible values are:</p>
+<ul class="simple">
+<li><p>FILLED_CIRCLE</p></li>
+<li><p>FILLED_SQUARE</p></li>
+<li><p>FILLED_DIAMOND</p></li>
+<li><p>FILLED_TRI</p></li>
+<li><p>HOLLOW_CIRCLE</p></li>
+<li><p>HOLLOW_SQUARE</p></li>
+<li><p>HOLLOW_DIAMOND</p></li>
+<li><p>HOLLOW_TRI</p></li>
+<li><p>CROSS</p></li>
+<li><p>XMARKER</p></li>
+<li><p>DEFAULT</p></li>
+</ul>
+<p>The default value is DEFAULT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize">
+<span class="sig-name descname"><span class="pre">xySymbolSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">MEDIUM</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L127-L129"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xySymbolSize" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the size of the markers. Possible values are SMALL,
+MEDIUM, and LARGE. The default value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod">
+<span class="sig-name descname"><span class="pre">xyUseHighlightMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationOptions.py#L90-L92"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationOptions.AnimationOptions.xyUseHighlightMethod" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to use the highlight method to draw the time tracker line
+and symbols. The default value is ON.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationSession.AnimationSession">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnimationSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationSession.py#L13-L118"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationSession.AnimationSession" title="永久链接至目标"></a></dt>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></p>
+<p>The following commands operate on Session objects. For more information about the Session object, see
+Session object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all">AnimationSession on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationSession.AnimationSession.Movie">
+<span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.END_FRAME_TIME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationSession.py#L46-L118"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationSession.AnimationSession.Movie" title="永久链接至目标"></a></dt>
+<dd><p>This method creates a Movie object from the contents of the specified file.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Movie</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all">Movie on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the repository name for the movie.</p></li>
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the file from which the movie is to be read. The file extension must
+be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv).</p></li>
+<li><p><strong>startFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the first frame to be displayed from this movie. The default value is
+0.</p></li>
+<li><p><strong>endFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the last frame to be displayed from this movie. A negative number will
+indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p></li>
+<li><p><strong>timelineStartFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
+value of 0 will indicate the first frame to be displayed in the viewport. The default
+value is 0.</p></li>
+<li><p><strong>timelineEndFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
+negative number will indicate reverse numbering: -1 indicates the last frame to be
+displayed in the viewport. The default value is −1.</p></li>
+<li><p><strong>timelineStartTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- A Float specifying the global timeline time that corresponds to the time of
+<strong>startFrame</strong>. The default value is 0.0.</p></li>
+<li><p><strong>timelineEndTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>) -- The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
+corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
+time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Movie object.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Animation.AnimationSession.AnimationSession.Movie" title="abaqus.Animation.AnimationSession.AnimationSession.Movie"><code class="xref py py-class docutils literal notranslate"><span class="pre">Movie</span></code></a></p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unable to open movie file, If <strong>fileName</strong> does not exist or can not be read.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unsupported movie format, If <strong>fileName</strong> references an unsupported movie file format</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unable to decode movie file, If the contents of <strong>fileName</strong> are corrupt or can not be decoded.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation">
+<span class="sig-name descname"><span class="pre">writeImageAnimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/AnimationSession.py#L24-L44"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation" title="永久链接至目标"></a></dt>
+<dd><p>This method writes the animations present in the list of canvas objects to a file. It generates an
+animation file using the given file name and file format and uses the values in the appropriate options
+object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-animationsessionpyc.htm?contextscope=all#simaker-animationsessionwriteimageanimationpyc">AnimationSession.writeImageAnimation on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the animation file to generate.</p></li>
+<li><p><strong>format</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">AVI</span></code>, <code class="docutils literal notranslate"><span class="pre">VRML</span></code>, <code class="docutils literal notranslate"><span class="pre">QUICKTIME</span></code>, <code class="docutils literal notranslate"><span class="pre">COMPRESSED_VRML</span></code>]) -- A SymbolicConstant specifying the format of the generated file. Possible values are AVI,
+QUICKTIME, VRML, and COMPRESSED_VRML.</p></li>
+<li><p><strong>canvasObjects</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) -- A sequence specifying the canvas objects to capture. The default behavior is to capture
+all canvas objects.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Movie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.END_FRAME_TIME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L12-L193"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The Movie object is used to store values and attributes associated with a movie file. Upon creation, the
+Movie object is added to the session.movies repository.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">movies</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all">Movie on help.3ds.com/2023</a>.</p>
+</div>
+<p>This method creates a Movie object from the contents of the specified file.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Movie</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the repository name for the movie.</p></li>
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the file from which the movie is to be read. The file extension must
+be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv).</p></li>
+<li><p><strong>startFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the first frame to be displayed from this movie. The default value is
+0.</p></li>
+<li><p><strong>endFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the last frame to be displayed from this movie. A negative number will
+indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p></li>
+<li><p><strong>timelineStartFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
+value of 0 will indicate the first frame to be displayed in the viewport. The default
+value is 0.</p></li>
+<li><p><strong>timelineEndFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
+negative number will indicate reverse numbering: -1 indicates the last frame to be
+displayed in the viewport. The default value is −1.</p></li>
+<li><p><strong>timelineStartTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- A Float specifying the global timeline time that corresponds to the time of
+<strong>startFrame</strong>. The default value is 0.0.</p></li>
+<li><p><strong>timelineEndTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>) -- The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
+corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
+time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Movie object.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Animation.Movie.Movie" title="abaqus.Animation.Movie.Movie"><code class="xref py py-class docutils literal notranslate"><span class="pre">Movie</span></code></a></p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unable to open movie file, If <strong>fileName</strong> does not exist or can not be read.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unsupported movie format, If <strong>fileName</strong> references an unsupported movie file format.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> -- Unable to decode movie file, If the contents of <strong>fileName</strong> are corrupt or can not be decoded.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.duration">
+<span class="sig-name descname"><span class="pre">duration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L33-L34"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.duration" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the duration of the movie in seconds.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.endFrame">
+<span class="sig-name descname"><span class="pre">endFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L50-L52"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.endFrame" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the last frame to be displayed from this movie. A negative number will
+indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.fileName" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the file from which the movie is to be read. The file extension must
+be specified and indicates the movie format (.avi, .mov, .mpeg, or .wmv).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L27-L28"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.height" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the height of the movie in pixels.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L36-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.memory" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the memory taken by the movie frames as selected.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.name" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the repository name for the movie.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.numFrames">
+<span class="sig-name descname"><span class="pre">numFrames</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L30-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.numFrames" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the total number of frames on the movie file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">startFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineStartTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timelineEndTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.END_FRAME_TIME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L144-L193"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the Movie object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-moviepyc.htm?contextscope=all#simaker-moviesetvaluespyc">Movie.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>startFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the first frame to be displayed from this movie. The default value is
+0.</p></li>
+<li><p><strong>endFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the last frame to be displayed from this movie. A negative number will
+indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.</p></li>
+<li><p><strong>timelineStartFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
+value of 0 will indicate the first frame to be displayed in the viewport. The default
+value is 0.</p></li>
+<li><p><strong>timelineEndFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
+negative number will indicate reverse numbering: -1 indicates the last frame to be
+displayed in the viewport. The default value is −1.</p></li>
+<li><p><strong>timelineStartTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- A Float specifying the global timeline time that corresponds to the time of
+<strong>startFrame</strong>. The default value is 0.0.</p></li>
+<li><p><strong>timelineEndTime</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">END_FRAME_TIME</span></code>) -- The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
+corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
+time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> -- If <strong>startFrame</strong>,*endFrame*,*timelineStartFrame*,*timelineEndFrame*,*timelineStartTime*,
+    or*timelineEndTime* are outside their respective valid range.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.startFrame">
+<span class="sig-name descname"><span class="pre">startFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L46-L48"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.startFrame" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the first frame to be displayed from this movie. The default value is
+0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineEndFrame">
+<span class="sig-name descname"><span class="pre">timelineEndFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L59-L62"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineEndFrame" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the global timeline frame number that corresponds to <strong>endFrame</strong>. A
+negative number will indicate reverse numbering: -1 indicates the last frame to be
+displayed in the viewport. The default value is −1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineEndTime">
+<span class="sig-name descname"><span class="pre">timelineEndTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">END_FRAME_TIME</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L68-L71"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineEndTime" title="永久链接至目标"></a></dt>
+<dd><p>The SymbolicConstant END_FRAME_TIME or a Float specifying the global timeline time that
+corresponds to the time of <strong>endFrame</strong>. The SymbolicConstant END_FRAME_TIME indicates the
+time in this movie corresponding to <strong>endFrame</strong>. The default value is END_FRAME_TIME.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineStartFrame">
+<span class="sig-name descname"><span class="pre">timelineStartFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L54-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineStartFrame" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the global timeline frame number that corresponds to <strong>startFrame</strong>. A
+value of 0 will indicate the first frame to be displayed in the viewport. The default
+value is 0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.timelineStartTime">
+<span class="sig-name descname"><span class="pre">timelineStartTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L64-L66"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.timelineStartTime" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the global timeline time that corresponds to the time of
+<strong>startFrame</strong>. The default value is 0.0.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.Movie.Movie.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/Movie.py#L24-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.Movie.Movie.width" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the width of the movie in pixels.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ImageAnimation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimation.py#L8-L69"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation" title="永久链接至目标"></a></dt>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ImageAnimation object is used to build frame by frame animation.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">imageAnimation</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all">ImageAnimation on help.3ds.com/2023</a>.</p>
+</div>
+<p>This method creates an ImageAnimation object from the specified filename and format.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">ImageAnimation</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the animation file to generate.</p></li>
+<li><p><strong>format</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">AVI</span></code>, <code class="docutils literal notranslate"><span class="pre">QUICKTIME</span></code>]) -- A SymbolicConstant specifying the format of the generated file. Possible values are AVI,
+QUICKTIME.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>An ImageAnimation object.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimation.py#L59-L63"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.close" title="永久链接至目标"></a></dt>
+<dd><p>This method closes the ImageAnimation object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.closed">
+<span class="sig-name descname"><span class="pre">closed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimation.py#L65-L69"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.closed" title="永久链接至目标"></a></dt>
+<dd><p>This method indicates if the ImageAnimation is open or closed for writing animation frames.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimation.py#L19-L20"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.fileName" title="永久链接至目标"></a></dt>
+<dd><p>A String specifying the file to which the animation frames is to be written.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame">
+<span class="sig-name descname"><span class="pre">writeFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvasObjects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimation.py#L46-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimation.ImageAnimation.writeFrame" title="永久链接至目标"></a></dt>
+<dd><p>This method adds a frame to the ImageAnimation object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationpyc.htm?contextscope=all#simaker-imageanimationwriteframepyc">ImageAnimation.writeFrame on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>canvasObjects</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) -- A sequence specifying the canvas objects to capture. The default is to capture all
+canvas objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ImageAnimationOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L9-L69"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The ImageAnimationOptions object is used to store values and attributes associated with saving viewport
+animations. The ImageAnimationOptions object has no constructor. Abaqus creates the
+<strong>imageAnimationOptions</strong> member when the animation module is imported.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">imageAnimationOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all">ImageAnimationOptions on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.compass">
+<span class="sig-name descname"><span class="pre">compass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L33-L34"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.compass" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to capture the view compass. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.frameRate">
+<span class="sig-name descname"><span class="pre">frameRate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L22-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.frameRate" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the frame rate to record on the saved animation file. The effective
+frame rate in frames per second will be obtained by dividing the given frame rate by the
+time scale.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frameRate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpDecorations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpBackground</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L36-L69"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the ImageAnimationOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageanimationoptionspyc.htm?contextscope=all#simaker-imageanimationoptionssetvaluespyc">ImageAnimationOptions.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frameRate</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the frame rate to record on the saved animation file. The effective
+frame rate in frames per second will be obtained by dividing the given frame rate by the
+time scale.</p></li>
+<li><p><strong>timeScale</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the time scale to apply to the frame rate.</p></li>
+<li><p><strong>vpDecorations</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to capture the viewport border and title. The default value
+is ON.</p></li>
+<li><p><strong>vpBackground</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) -- A Boolean specifying whether to capture viewport backgrounds. The default value is OFF.</p></li>
+<li><p><strong>compass</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) -- A Boolean specifying whether to capture the view compass. The default value is OFF.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpBackground">
+<span class="sig-name descname"><span class="pre">vpBackground</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L30-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpBackground" title="永久链接至目标"></a></dt>
+<dd><p>A Boolean specifying whether to capture viewport backgrounds. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpDecorations">
+<span class="sig-name descname"><span class="pre">vpDecorations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/ImageAnimationOptions.py#L27-L28"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions.vpDecorations" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the time scale to apply to the frame rate.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">QuickTimeOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/QuickTimeOptions.py#L12-L89"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The QuickTimeOptions object is used to store values and attributes to be used in generating QuickTime
+animation. The QuickTimeOptions object has no constructor. Abaqus creates the <strong>quickTimeOptions</strong> member
+when the animation module is imported.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">animation</span>
+<span class="n">session</span><span class="o">.</span><span class="n">quickTimeOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all">QuickTimeOptions on help.3ds.com/2023</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.compressionMethod">
+<span class="sig-name descname"><span class="pre">compressionMethod</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">RLE24</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/QuickTimeOptions.py#L31-L32"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions.compressionMethod" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying the compression method for the QuickTime format. Possible
+values are:</p>
+<ul class="simple">
+<li><p>RAW24, specifying an uncompressed format of 24 bits per pixel.</p></li>
+<li><p>RLE24, specifying a run length encoded format of 24 bits per pixel.</p></li>
+</ul>
+<p>The default value is RLE24.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/QuickTimeOptions.py#L39-L48"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize" title="永久链接至目标"></a></dt>
+<dd><p>A pair of Ints specifying the width and height of the image in pixels when
+<strong>sizeDefinition</strong> = USER_DEFINED. Possible values are Ints in the range (<em>minWidth</em>,
+<strong>minHeight</strong>) ≤ (width, height) ≤ (<em>maxWidth</em>, <strong>maxHeight</strong>). The default value is the
+screen size.
+Note: The values of the minimum width (<em>minWidth</em>) and height (<em>minHeight</em>) depend on the
+following:viewport font size,whether decorations are printed,decoration size, and screen
+resolution.The minimum width and height are normally &lt; 50 pixels. The values of the maximum
+width (<em>maxWidth</em>) and height (<em>maxHeight</em>) depend on the graphics capabilities of the system.
+The maximum width and height will be at least as large as the screen dimensions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compressionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RLE24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizeDefinition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIZE_ON_SCREEN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/QuickTimeOptions.py#L50-L89"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the QuickTimeOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all#simaker-quicktimeoptionssetvaluespyc">QuickTimeOptions.setValues on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>compressionMethod</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">RLE24</span></code>, <code class="docutils literal notranslate"><span class="pre">RAW24</span></code>], default: <code class="docutils literal notranslate"><span class="pre">RLE24</span></code>) -- <p>A SymbolicConstant specifying the compression method for the QuickTime format. Possible
+values are:</p>
+<ul>
+<li><p>RAW24, specifying an uncompressed format of 24 bits per pixel.</p></li>
+<li><p>RLE24, specifying a run length encoded format of 24 bits per pixel.</p></li>
+</ul>
+<p>The default value is RLE24.</p>
+</p></li>
+<li><p><strong>sizeDefinition</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">USER_DEFINED</span></code>, <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>) -- A SymbolicConstant specifying how the width and height of the image are specified.
+Possible values are SIZE_ON_SCREEN and USER_DEFINED. The default value is
+SIZE_ON_SCREEN.</p></li>
+<li><p><strong>imageSize</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A pair of Ints specifying the width and height of the image in pixels when
+<strong>sizeDefinition</strong> = USER_DEFINED. Possible values are Ints in the range (<em>minWidth</em>,
+<strong>minHeight</strong>) ≤ (width, height) ≤ (<em>maxWidth</em>, <strong>maxHeight</strong>). The default value is the
+screen size.
+Note: The values of the minimum width (<em>minWidth</em>) and height (<em>minHeight</em>) depend on the
+following:viewport font size,whether decorations are printed,decoration size, and screen
+resolution.The minimum width and height are normally &lt; 50 pixels. The values of the
+maximum width (<em>maxWidth</em>) and height (<em>maxHeight</em>) depend on the graphics capabilities
+of the system. The maximum width and height will be at least as large as the screen
+dimensions.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Animation.QuickTimeOptions.QuickTimeOptions.sizeDefinition">
+<span class="sig-name descname"><span class="pre">sizeDefinition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SIZE_ON_SCREEN</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Animation/QuickTimeOptions.py#L34-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Animation.QuickTimeOptions.QuickTimeOptions.sizeDefinition" title="永久链接至目标"></a></dt>
+<dd><p>A SymbolicConstant specifying how the width and height of the image are specified.
+Possible values are SIZE_ON_SCREEN and USER_DEFINED. The default value is
+SIZE_ON_SCREEN.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="index.html" class="btn btn-neutral float-left" title="Abaqus Session" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="canvas.html" class="btn btn-neutral float-right" title="Canvas" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
