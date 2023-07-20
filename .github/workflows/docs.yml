@@ -19,6 +19,8 @@ on:
       - "docs/source/**"
       - ".github/workflows/docs.yml"
       - "pyproject.toml"
+  release:
+    types: [published]
   workflow_dispatch:
 
 concurrency:
@@ -54,11 +56,24 @@ jobs:
           sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
+      - name: Get the branch name
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
+          elif [[ "${{ github.event_name }}" == "release" ]]; then
+            echo "BRANCH_NAME=${{ github.event.release.target_commitish }}" >> $GITHUB_ENV
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          else
+            echo "::set-output name=BRANCH_NAME::INVALID_EVENT_BRANCH_UNKNOWN"
+          fi
       - name: Upload the documentation
-        if: github.event_name == 'push' && matrix.builder == 'html'
+        if: github.event_name == 'release' && matrix.builder == 'html'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/${{ matrix.builder }}
-          destination_dir: ${{ matrix.language }}/${{ github.ref_name }}
+          destination_dir: ${{ matrix.language }}/${BRANCH_NAME}
           keep_files: true
