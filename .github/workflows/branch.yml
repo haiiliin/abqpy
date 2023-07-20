@@ -1,0 +1,34 @@
+name: Branch
+
+on:
+  push:
+    branches:
+      - "2023"
+
+concurrency:
+  group: branch-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch:
+          - sphinx-book-theme
+          - furo
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create the branch if it doesn't exist
+        uses: peterjgrainger/action-create-branch@v2.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: ${{ matrix.branch }}
+      - uses: connor-baer/action-sync-branch@v1.0.3
+        with:
+          branch: ${{ matrix.branch }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
