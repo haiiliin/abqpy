@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus Scripting Interface documentation style &mdash; abqpy 2021.5.4.post3.dev9+g22f278641 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="How the object model for the output database relates to commands" href="object-model.html" />
+    <link rel="prev" title="What do you need to access the output database?" href="need-what-access.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2021
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Accessing an Output Database</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface to access an output database</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using C++ to access an output database</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="about.html">About the C++ interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="need-what-access.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compile-link.html">Compiling and linking your C++ source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access.html">Accessing the C++ interface from an existing application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">The Abaqus C++ API architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utility.html">Utility interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="read.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.html">Example programs that access data from an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Accessing an Output Database</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using C++ to access an output database</a></li>
+      <li class="breadcrumb-item active">Abaqus Scripting Interface documentation style</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/output/cpp/style.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-scripting-interface-documentation-style">
+<h1>Abaqus Scripting Interface documentation style<a class="headerlink" href="#abaqus-scripting-interface-documentation-style" title="Permalink to this heading"></a></h1>
+<p>This section describes the style that is used to describe a command in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>. You may want to refer to the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
+<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>:</p>
+<ul class="simple">
+<li><p>Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, <a class="reference internal" href="../../../reference/session/animation.html"><span class="doc">Animation Options</span></a>, and <a class="reference internal" href="../../../reference/mdb/model/part_assembly/assembly.html"><span class="doc">Assembly</span></a>.</p></li>
+<li><p>Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in <a class="reference internal" href="../../../reference/mdb/model/mesh.html"><span class="doc">Mesh</span></a> the objects are listed in the following order:</p>
+<ul>
+<li><p>Assembly</p></li>
+<li><p>Part</p></li>
+<li><p>ElemType</p></li>
+<li><p>MeshEdge</p></li>
+<li><p>MeshElement</p></li>
+<li><p>MeshFace</p></li>
+<li><p>MeshNode</p></li>
+<li><p>MeshStats</p></li>
+</ul>
+</li>
+<li><p>Within each object description, the commands are listed in the following order:
+- Constructors (in alphabetical order)
+- Methods (in alphabetical order)
+- Members</p></li>
+<li><p>Some methods are not associated with an object and appear at the end of a chapter; for example, the <code class="xref py py-meth docutils literal notranslate"><span class="pre">evaluateMaterial()</span></code> method appears at the end of <a class="reference internal" href="../../../reference/mdb/model/material.html"><span class="doc">Material</span></a>.</p></li>
+</ul>
+<section id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this heading"></a></h2>
+<p>The description of each object in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> begins with a section that describes how you access an instance of the object.</p>
+<p>The following is the access description for the Part object:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">parts</span><span class="p">()[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The access description specifies where instances of the object are located in the data model. The Part object can accordingly be accessed as:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_PartContainer</span><span class="w"> </span><span class="n">partCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">parts</span><span class="p">();</span>
+<span class="n">odb_Part</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">partCon</span><span class="p">[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>The Access description for the FieldOutput object is</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="n">name</span><span class="p">].</span><span class="n">frames</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The following statements show how you use the object described by this <code class="docutils literal notranslate"><span class="pre">Access</span></code> description:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_StepContainer</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span>
+<span class="n">odb_Step</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Side load&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceFrame</span><span class="w"> </span><span class="n">frameSeq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span>
+<span class="n">odb_Frame</span><span class="w"> </span><span class="n">lastFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSeq</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="w"> </span><span class="n">frameSeq</span><span class="p">.</span><span class="n">Size</span><span class="p">()</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="p">);</span>
+<span class="n">odb_FieldOutputContainer</span><span class="w"> </span><span class="n">fieldCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">field</span><span class="o">=</span><span class="w"> </span><span class="n">fieldCon</span><span class="p">[</span><span class="s">&quot;S&quot;</span><span class="p">];</span>
+
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">iPointFieldData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">INTEGRATION_POINT</span><span class="p">);</span>
+
+<span class="n">odb_SequenceInvariant</span><span class="w"> </span><span class="n">myInvariants</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">validInvariants</span><span class="p">();</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The next to last line shows the getSubset method of the FieldOutput object.</p></li>
+<li><p>The last line shows the <strong>validInvariants</strong> member of the FieldOutput object.</p></li>
+</ul>
+</section>
+<section id="path">
+<h2>Path<a class="headerlink" href="#path" title="Permalink to this heading"></a></h2>
+<p>A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> includes a path to the command. For example, the following describes the path to the Part constructor:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">Part</span>
+</pre></div>
+</div>
+<p>Some constructors include more than one path. For example, you can create a nodeSet that is associated with either a Part object or the RootAssembly object, and each path is listed.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">parts</span><span class="p">()[</span><span class="n">name</span><span class="p">].</span><span class="n">NodeSet</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">NodeSet</span>
+</pre></div>
+</div>
+<p>The path is not listed if the method is not a constructor.</p>
+<p>If you are using the Abaqus C++ API to read data from an output database, the objects exist when you open the output database, and you do not have to use constructors to create them. However, if you are creating or writing to an output database, you may need to use constructors to create new objects, such as part instances and steps. The documentation describes the path to the constructors that create objects in an output database.</p>
+<p>For example, the Path description for the FieldOutput constructor is</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="n">name</span><span class="p">].</span><span class="n">frames</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">FieldOutput</span>
+</pre></div>
+</div>
+<p>The following statement creates a FieldOutput object:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_StepContainer</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span>
+<span class="n">odb_Step</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Side load&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceFrame</span><span class="w"> </span><span class="n">frameSeq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span>
+<span class="n">odb_Frame</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSeq</span><span class="p">.</span><span class="n">Get</span><span class="p">(</span><span class="w"> </span><span class="n">frameSeq</span><span class="p">.</span><span class="n">Size</span><span class="p">()</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myFieldOutput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;S&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;stress&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TENSOR_3D_FULL</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="prototype">
+<h2>Prototype<a class="headerlink" href="#prototype" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="../../../reference/odb.html"><span class="doc">Abaqus Output Database</span></a> contains a prototype section for each C++ command. The prototype provides the type returned by the command, the name of the command, and a list of all its arguments along with the type of each argument. Required arguments appear first in the list followed by default arguments along with their default value. For example, the Frame constructor is given as</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">Frame</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">incrementNumber</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">frameValue</span><span class="p">,</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">description</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>indicating that the <strong>incrementNumber</strong> and <strong>frameValue</strong> arguments are required, that the optional <strong>description</strong> argument has a default value of the empty string, and that the method returns a reference to the Frame object created.</p>
+</section>
+<section id="return-value">
+<h2>Return value<a class="headerlink" href="#return-value" title="Permalink to this heading"></a></h2>
+<p>All commands return a value. Many commands return the value void. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a variable. For example, in the following statement the Odb constructor returns an Odb object, and the variable newOdb refers to this new object.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Odb</span><span class="w"> </span><span class="n">newOdb</span><span class="o">&amp;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Odb</span><span class="p">(</span><span class="s">&quot;new&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fileName</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You can use the object returned by a command in subsequent statements. The following statement uses the output database created by the previous statement:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Part</span><span class="o">&amp;</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newOdb</span><span class="p">.</span><span class="n">Part</span><span class="p">(</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">THREE_D</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">DEFORMABLE_BODY</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>If an exception is raised while a statement is executing, the command does not return a value.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="need-what-access.html" class="btn btn-neutral float-left" title="What do you need to access the output database?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="object-model.html" class="btn btn-neutral float-right" title="How the object model for the output database relates to commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
