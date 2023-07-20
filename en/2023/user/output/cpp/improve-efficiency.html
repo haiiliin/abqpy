@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improving the efficiency of your scripts &mdash; abqpy 2023.5.4.post3.dev10+ge5e7fd7ab documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Example programs that access data from an output database" href="examples.html" />
+    <link rel="prev" title="Computations with Abaqus results" href="computations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2023
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Accessing an Output Database</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface to access an output database</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using C++ to access an output database</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="about.html">About the C++ interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="need-what-access.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compile-link.html">Compiling and linking your C++ source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access.html">Accessing the C++ interface from an existing application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">The Abaqus C++ API architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utility.html">Utility interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="read.html">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="write.html">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.html">Example programs that access data from an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Accessing an Output Database</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using C++ to access an output database</a></li>
+      <li class="breadcrumb-item active">Improving the efficiency of your scripts</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/output/cpp/improve-efficiency.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="improving-the-efficiency-of-your-scripts">
+<h1>Improving the efficiency of your scripts<a class="headerlink" href="#improving-the-efficiency-of-your-scripts" title="Permalink to this heading"></a></h1>
+<p>If you are accessing large amounts of data from an output database, you should be aware of potential inefficiencies in your script and techniques that will help to speed up your scripts.</p>
+<section id="creating-objects-to-hold-loop-counters">
+<h2>Creating objects to hold loop counters<a class="headerlink" href="#creating-objects-to-hold-loop-counters" title="Permalink to this heading"></a></h2>
+<p>A program can spend a large proportion of its computation time executing statements inside loops. As a result, you can make your scripts more efficient if you consider how Abaqus computes the next value of a loop counter each time the loop is executed. If possible, you should create an integer or a sequence object to hold the value of a loop counter. If you use a value derived from an Abaqus object, the time taken to calculate the next value can slow your program significantly.</p>
+<p>The following example uses the number of nodes in a part instance to determine the range of a loop counter:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeSequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myInstance</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nodeSequence</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Node</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeSequence</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">  </span><span class="n">nodeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myNode</span><span class="p">.</span><span class="n">label</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can make the program more efficient if you create an object to hold the value of the number of nodes.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeSequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myInstance</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numNodes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeSequence</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numNodes</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Node</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeSequence</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">  </span><span class="n">nodeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myNode</span><span class="p">.</span><span class="n">label</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can use this technique only if the maximum value of the loop counter remains fixed for the duration of the loop.</p>
+</section>
+<section id="creating-objects-to-hold-temporary-variables">
+<h2>Creating objects to hold temporary variables<a class="headerlink" href="#creating-objects-to-hold-temporary-variables" title="Permalink to this heading"></a></h2>
+<p>To improve the efficiency of scripts that access an output database, you should create objects that will be used to hold temporary variables that are accessed multiple times while the program is executing. For example, if the program accesses the temporary variable while inside a loop that is executed many times, creating an object to hold the variable will speed up your program significantly.</p>
+<p>The following example examines the von Mises stress in each element during a particular frame of field output. If the stress is greater than a certain maximum value, the program prints the strain components for the element.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldRep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame1</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stressField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldRep</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;S&quot;</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">strainField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldRep</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;LE&quot;</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqStressVal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">stressField</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressVal</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">strainComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numFV</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">stressVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressVal</span><span class="p">[</span><span class="n">loc</span><span class="p">];</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stressVal</span><span class="p">.</span><span class="n">mises</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">stressCap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element label = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stressVal</span><span class="p">.</span><span class="n">elementLabel</span><span class="p">()</span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Integration Point = &quot;</span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stressVal</span><span class="p">.</span><span class="n">integrationPoint</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqStrainVal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                </span><span class="n">strainField</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">strainVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStrainVal</span><span class="p">[</span><span class="n">loc</span><span class="p">];</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strainVal</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">strainComp</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; LE : &quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">strainComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">comp</span><span class="p">];</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In this example every time the script calls the strainField.values method, Abaqus must reconstruct the sequence of FieldValue objects. This reconstruction could result in a significant performance degradation, particularly for a large model.</p>
+<p>A slight change in the program greatly improves its performance, as shown in the following example:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldRep</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">frame1</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stressField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldRep</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;S&quot;</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">strainField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldRep</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;LE&quot;</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqStressVal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">stressField</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqStrainVal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">strainField</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressVal</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">strainComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numFV</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">stressVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressVal</span><span class="p">[</span><span class="n">loc</span><span class="p">];</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stressVal</span><span class="p">.</span><span class="n">mises</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">stressCap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element label = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stressVal</span><span class="p">.</span><span class="n">elementLabel</span><span class="p">()</span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Integration Point = &quot;</span>
+<span class="w">            </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stressVal</span><span class="p">.</span><span class="n">integrationPoint</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">strainVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStrainVal</span><span class="p">[</span><span class="n">loc</span><span class="p">];</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strainVal</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">strainComp</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; LE : &quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">strainComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">comp</span><span class="p">];</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Similarly, if you expect to retrieve more than one frame from an output database, you should create a temporary variable that holds the entire frame repository. You can then provide the logic to retrieve the desired frames from the repository and avoid recreating the repository each time. For example, executing the following statements could be very slow:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">numFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">frames</span><span class="p">().</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numFrames</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="n">odb_Frame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">frames</span><span class="p">()[</span><span class="n">n</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>Creating a temporary variable to hold the frame repository provides the same functionality and speeds up the process:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameRepository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameRepository</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numFrames</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="n">odb_Frame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameRepository</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>Such a potential loss of performance will not be a problem when accessing a load case frame. Accessing a load case frame does not result in the creation of a frame repository and, thus, does not suffer from a corresponding loss of performance.</p>
+</section>
+<section id="using-references-to-objects">
+<h2>Using references to objects<a class="headerlink" href="#using-references-to-objects" title="Permalink to this heading"></a></h2>
+<p>Many functions return a reference to an object rather than an object. Returning a reference is much more efficient because it avoids unnecessary memory operations. To maintain the efficiency of references, you should use the reference itself. You should not assign the reference to a new object, since assigning the reference to a new object creates a copy of the object that is denoted by the reference and invokes potentially expensive copy constructors. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Instance</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">()</span>
+<span class="w">                            </span><span class="p">[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="w"> </span><span class="n">nodeSequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myInstance</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>In the above case a copy of the nodeSequence object has to be created in memory.</p>
+<p>Many of the methods in the Abaqus Scripting Interface that provide access to an output database return a reference to an object rather than the object itself. It is much more efficient to modify the previous example to specify the returned type to be a reference:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">()[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeSequence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myInstance</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>In this case no new object is created and no copy constructors are called.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="computations.html" class="btn btn-neutral float-left" title="Computations with Abaqus results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Example programs that access data from an output database" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

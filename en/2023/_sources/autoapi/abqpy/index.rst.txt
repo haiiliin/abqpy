@@ -1,0 +1,59 @@
+:py:mod:`abqpy`
+===============
+
+.. py:module:: abqpy
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   __main__/index.rst
+   cli/index.rst
+   decorators/index.rst
+   run/index.rst
+
+
+Package Contents
+----------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   abqpy._get_version
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   abqpy._default_version
+   abqpy.__version__
+   abqpy.__semver__
+
+
+.. py:data:: _default_version
+   :value: '2023.0.0-dev'
+
+   
+
+.. py:function:: _get_version()
+
+   Return the version string used for __version__.
+
+
+.. py:data:: __version__
+
+   
+
+.. py:data:: __semver__
+
+   
+

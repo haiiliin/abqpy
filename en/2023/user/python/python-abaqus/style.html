@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus Scripting Interface documentation style &mdash; abqpy 2023.5.4.post3.dev10+ge5e7fd7ab documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Abaqus Scripting Interface data types" href="types.html" />
+    <link rel="prev" title="Executing scripts" href="executing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2023
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using Python and the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="executing.html">Executing scripts</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types.html">Abaqus Scripting Interface data types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="oop.html">Object-oriented programming and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="errors.html">Error handling in the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extending.html">Extending the Abaqus Scripting Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../use-scripts/index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using Python and the Abaqus Scripting Interface</a></li>
+      <li class="breadcrumb-item active">Abaqus Scripting Interface documentation style</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/python-abaqus/style.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-scripting-interface-documentation-style">
+<h1>Abaqus Scripting Interface documentation style<a class="headerlink" href="#abaqus-scripting-interface-documentation-style" title="Permalink to this heading"></a></h1>
+<p>This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>. You may want to refer to the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
+<section id="how-the-commands-are-ordered">
+<h2>How the commands are ordered<a class="headerlink" href="#how-the-commands-are-ordered" title="Permalink to this heading"></a></h2>
+<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>:</p>
+<p>Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, Amplitude commands, Animation commands, and Assembly commands.</p>
+<p>Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in Mesh commands the objects are listed in the following order:</p>
+<ul class="simple">
+<li><p>Assembly</p></li>
+<li><p>Part</p></li>
+<li><p>ElemType</p></li>
+<li><p>MeshEdge</p></li>
+<li><p>MeshElement</p></li>
+<li><p>MeshFace</p></li>
+<li><p>MeshNode</p></li>
+<li><p>MeshStats</p></li>
+</ul>
+<p>Within each object description, the commands are listed in the following order:</p>
+<ul class="simple">
+<li><p>Constructors (in alphabetical order)</p></li>
+<li><p>Methods (in alphabetical order)</p></li>
+<li><p>Members</p></li>
+</ul>
+<p>Some methods are not associated with an object and appear at the end of a chapter; for example, the <code class="docutils literal notranslate"><span class="pre">evaluateMaterial()</span></code> method appears at the end of <a class="reference internal" href="../../../reference/mdb/model/material.html"><span class="doc">Material</span></a> commands.</p>
+</section>
+<section id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this heading"></a></h2>
+<p>The description of each object in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">module</span> <span class="pre">name</span></code> statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>These should be the first statement in all your Abaqus Scripting Interface scripts.</p>
+<p>The following is the access description for the Material object:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">material</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">materials</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The first line of the access description indicates the module that Abaqus/CAE imported to make this object, and its methods and members, available to your script.</p>
+<p>The access description also specifies where instances of the object are located in the data model. In the previous example the second line indicates how your script can access Material objects from a particular model. You must qualify a material object, command, or member with the variable mdb, as described in Functions and modules. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">crash</span><span class="p">]</span><span class="o">.</span><span class="n">Material</span><span class="p">[</span><span class="n">steel</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">crash</span><span class="p">]</span><span class="o">.</span><span class="n">materials</span><span class="p">[</span><span class="n">steel</span><span class="p">]</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span>
+    <span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mf">30000000.0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span> <span class="p">))</span>
+<span class="n">elasticityType</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">crash</span><span class="p">]</span><span class="o">.</span><span class="n">materials</span><span class="p">[</span><span class="n">steel</span><span class="p">]</span><span class="o">.</span><span class="n">elastic</span><span class="o">.</span><span class="n">type</span>
+</pre></div>
+</div>
+<p>Similarly, if you are reading from an output database, the following is the access description for the HistoryRegion object:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">odbAccess</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">historyRegions</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The first line indicates that Abaqus/CAE imported the odbAccess module to make the Odb objects, methods, and members available to your Abaqus Scripting Interface script. The second line indicates how your script can access HistoryRegion objects from a particular step.</p>
+<p>The Access description for the FieldOutput object is</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The following statements show how you use the object described by this Access description:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">sideLoadStep</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="s1">&#39;Forming loads&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Side load&#39;</span><span class="p">]</span>
+<span class="n">lastFrame</span> <span class="o">=</span> <span class="n">sideLoadStep</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">stressData</span> <span class="o">=</span> <span class="n">lastFrame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+<span class="n">integrationPointData</span> <span class="o">=</span> <span class="n">stressData</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span>
+    <span class="n">position</span><span class="o">=</span><span class="n">INTEGRATION_POINT</span><span class="p">)</span>
+<span class="n">invariantsData</span> <span class="o">=</span> <span class="n">stressData</span><span class="o">.</span><span class="n">validInvariants</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The next to last line shows the getSubset method of the FieldOutput object.</p></li>
+<li><p>The last line shows the validInvariants member of the FieldOutput object.</p></li>
+</ul>
+</section>
+<section id="path">
+<h2>Path<a class="headerlink" href="#path" title="Permalink to this heading"></a></h2>
+<p>A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> includes a path to the command. For example, the following describes the path to the Viewport constructor:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span>
+</pre></div>
+</div>
+<p>Some constructors include more than one path. For example, you can create a datum that is associated with either a Part object or the RootAssembly object, and each path is listed.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DatumAxisByCylFace</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumAxisByCylFace</span>
+</pre></div>
+</div>
+<p>The path is not listed if the method is not a constructor.</p>
+<p>If you are using the Abaqus Scripting Interface to read data from an output database, the objects exist when you open the output database, and you do not have to use constructors to create them. However, if you are creating or writing to an output database, you may need to use constructors to create new objects, such as part instances and steps. The documentation describes the path to the constructors that create objects in an output database.</p>
+<p>For example, the Path description for the FieldOutput constructor is</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">FieldOutput</span>
+</pre></div>
+</div>
+<p>The following statement creates a FieldOutput object:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myFieldOutput</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Side load&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;stress&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">TENSOR_3D_FULL</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="arguments">
+<h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this heading"></a></h2>
+<p>The ellipsis <code class="docutils literal notranslate"><span class="pre">(...)</span></code> in the command description indicates that the command takes one or more arguments. For example, the Viewport constructor takes arguments.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">Viewport</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In contrast, the <code class="docutils literal notranslate"><span class="pre">makeCurrent</span></code> method takes no arguments.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">makeCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Some arguments of a command are required, and some arguments are optional. In the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">setValues</span></code> method is a special case. All of the arguments to the <code class="docutils literal notranslate"><span class="pre">setValues</span></code> method are optional, but any argument that you omit retains its current value; Abaqus does not assign a default value to the argument.</p>
+<p>Some objects have no constructors; Abaqus creates the objects for you. For such objects the documentation describes the initial value of an optional argument. The initial value given for the argument is the initial value assigned to the corresponding member when Abaqus creates the object. For example, the defaultViewportAnnotationOptions object has no constructor; Abaqus creates the defaultViewportAnnotationOptions object when you start a session. When you create a new viewport, the settings are copied from the current viewport.</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">setValues</span></code> method to modify the value of a member; for example, to modify the value of the triad member of the defaultViewportAnnotationsOptions object. When you call session.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">defaultViewportAnnotationOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">triad</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>the value of the triad member is set to off. The other member values remain unchanged; this behavior is called &quot;as is&quot; behavior because the values remain &quot;as is.&quot; The <code class="docutils literal notranslate"><span class="pre">setValuesInStep</span></code> method displays similar &quot;as is&quot; behavior.</p>
+<p>Keyword and positional arguments are described in Creating functions. We recommend that you use keyword arguments since they can be supplied in any order and they make your scripts easier to read and debug; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;myViewport&#39;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you choose not to use keywords, the arguments must be provided in the order in which they are documented.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="s1">&#39;myViewport&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use a combination of keyword and positional arguments. Keyword arguments can be supplied after positional arguments; however, positional arguments cannot be entered after keyword arguments. For example, you can use the following statement:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="s1">&#39;myViewport&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>However, you cannot use the following statement:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;myViewport&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You will find it easier to use keyword arguments so that you do not have to concern yourself with the positional requirements.</p>
+</section>
+<section id="return-value">
+<h2>Return value<a class="headerlink" href="#return-value" title="Permalink to this heading"></a></h2>
+<p>All commands return a value. Many commands return the None object described in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/python-basics.html#python-none"><span class="std std-ref">Python None</span></a>. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable <code class="docutils literal notranslate"><span class="pre">newViewport</span></code> refers to this new object.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;myViewport&#39;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use the object returned by a command in subsequent statements. For example, the <code class="docutils literal notranslate"><span class="pre">titlebar</span></code> member of a Viewport object is a Boolean specifying whether the viewport title bar is displayed and can have a value of either ON or OFF. The following statement tests the titlebar member of the new viewport created by the previous statement:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">newViewport</span><span class="o">.</span><span class="n">titleBar</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;The title bar will be displayed.&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="executing.html" class="btn btn-neutral float-left" title="Executing scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="types.html" class="btn btn-neutral float-right" title="Abaqus Scripting Interface data types" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
