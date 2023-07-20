@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading from an output database &mdash; abqpy 2019.5.4.post3.dev9+g884490177 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Summary" href="summary.html" />
+    <link rel="prev" title="Creating a part" href="create-part.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2019
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">About the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Simple examples</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="create-part.html">Creating a part</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Reading from an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">About the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Simple examples</a></li>
+      <li class="breadcrumb-item active">Reading from an output database</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/about/examples/read-output.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="reading-from-an-output-database">
+<h1>Reading from an output database<a class="headerlink" href="#reading-from-an-output-database" title="此标题的永久链接"></a></h1>
+<p>This section includes an example that shows how you can use the Abaqus Scripting Interface to read an output database, manipulate the data, and display the results using the Visualization module in Abaqus/CAE.</p>
+<section id="the-example-script">
+<h2>The example script<a class="headerlink" href="#the-example-script" title="此标题的永久链接"></a></h2>
+<p>This example shows how you can use the Abaqus Scripting Interface to read an output database, manipulate the data, and display the results using the Visualization module in Abaqus/CAE. The Abaqus Scripting Interface allows you to display the data even though you have not written it back to an output database.</p>
+<p>The script does the following:</p>
+<ul class="simple">
+<li><p>Opens the tutorial output database.</p></li>
+<li><p>Creates variables that refer to the first and second steps in the output database.</p></li>
+<li><p>Creates variables that refer to the last frame of the first and second steps.</p></li>
+<li><p>Creates variables that refer to the displacement field output in the last frame of the first and second steps.</p></li>
+<li><p>Creates variables that refer to the stress field output in the last frame of the first and second steps.</p></li>
+<li><p>Subtracts the displacement field output from the two steps and puts the result in a variable called deltaDisplacement.</p></li>
+<li><p>Subtracts the stress field output from the two steps and puts the result in a variable called deltaStress.</p></li>
+<li><p>Selects deltaDisplacement as the default deformed variable.</p></li>
+<li><p>Selects the von Mises invariant of deltaStress as the default field output variable.</p></li>
+<li><p>Plots a contour plot of the result.</p></li>
+</ul>
+<p>The resulting contour plot is shown in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-super"><span class="std std-numref">图 7</span></a>.</p>
+<figure class="align-center" id="id1">
+<span id="cmd-super"></span><a class="reference internal image-reference" href="../../../_images/cmd-super.png"><img alt="../../../_images/cmd-super.png" src="../../../_images/cmd-super.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 7 </span><span class="caption-text">The resulting contour plot.</span><a class="headerlink" href="#id1" title="此图像的永久链接"></a></p>
+</figcaption>
+</figure>
+<p>Use the following commands to retrieve the script and the output database that is read by the script:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">abaqus</span> <span class="n">fetch</span> <span class="n">job</span><span class="o">=</span><span class="n">odbExample</span>
+<span class="n">abaqus</span> <span class="n">fetch</span> <span class="n">job</span><span class="o">=</span><span class="n">viewer_tutorial</span>
+</pre></div>
+</div>
+<p>The example follows:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">odbExample.py</span>
+
+<span class="sd">Script to open an output database, superimpose variables</span>
+<span class="sd">from the last frame of different steps, and display a contour</span>
+<span class="sd">plot of the result.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="n">myViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Superposition example&#39;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Open the tutorial output database.</span>
+
+<span class="n">myOdb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;viewer_tutorial.odb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Associate the output database with the viewport.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+
+<span class="c1"># Create variables that refer to the first two steps.</span>
+
+<span class="n">firstStep</span> <span class="o">=</span> <span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-1&#39;</span><span class="p">]</span>
+<span class="n">secondStep</span> <span class="o">=</span> <span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-2&#39;</span><span class="p">]</span>
+
+<span class="c1"># Read displacement and stress data from the last frame</span>
+<span class="c1"># of the first two steps.</span>
+
+<span class="n">frame1</span> <span class="o">=</span> <span class="n">firstStep</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">frame2</span> <span class="o">=</span> <span class="n">secondStep</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">displacement1</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+<span class="n">displacement2</span> <span class="o">=</span> <span class="n">frame2</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+
+<span class="n">stress1</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+<span class="n">stress2</span> <span class="o">=</span> <span class="n">frame2</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+
+<span class="c1"># Find the added displacement and stress caused by</span>
+<span class="c1"># the loading in the second step.</span>
+
+<span class="n">deltaDisplacement</span> <span class="o">=</span> <span class="n">displacement2</span> <span class="o">-</span> <span class="n">displacement1</span>
+<span class="n">deltaStress</span> <span class="o">=</span> <span class="n">stress2</span> <span class="o">-</span> <span class="n">stress1</span>
+
+<span class="c1"># Create a Mises stress contour plot of the result.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setDeformedVariable</span><span class="p">(</span><span class="n">deltaDisplacement</span><span class="p">)</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setPrimaryVariable</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">deltaStress</span><span class="p">,</span>
+    <span class="n">outputPosition</span><span class="o">=</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span>
+    <span class="n">refinement</span><span class="o">=</span><span class="p">(</span><span class="n">INVARIANT</span><span class="p">,</span> <span class="s1">&#39;Mises&#39;</span><span class="p">))</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span>
+                                        <span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
+</pre></div>
+</div>
+</section>
+<section id="how-does-the-script-work">
+<h2>How does the script work?<a class="headerlink" href="#how-does-the-script-work" title="此标题的永久链接"></a></h2>
+<p>This section explains each portion of the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>These statements make the basic Abaqus objects accessible to the script as well as all the Symbolic Constants defined in the Abaqus Scripting Interface.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+</pre></div>
+</div>
+<p>This statement provides access to the commands that replicate the functionality of the Visualization module in Abaqus/CAE (Abaqus/Viewer).</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Superposition example&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This statement creates a new viewport named Superposition example in the session. The new viewport is assigned to the variable myViewport. The origin and the size of the viewport assume the default values.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">odbPath</span> <span class="o">=</span> <span class="s1">&#39;viewer_tutorial.odb&#39;</span>
+</pre></div>
+</div>
+<p>This statement creates a path to the tutorial output database.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myOdb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">odbPath</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This statement uses the path variable odbPath to open the output database and to assign it to the variable myOdb.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This statement displays the default plot of the output database in the viewport.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">firstStep</span> <span class="o">=</span> <span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>These statements assign the first and second steps in the output database to the variables firstStep and secondStep.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">frame1</span> <span class="o">=</span> <span class="n">firstStep</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">frame2</span> <span class="o">=</span> <span class="n">secondStep</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>These statements assign the last frame of the first and second steps to the variables frame1 and frame2. In Python an index of 0 refers to the first item in a sequence. An index of −1 refers to the last item in a sequence.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">displacement1</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+<span class="n">displacement2</span> <span class="o">=</span> <span class="n">frame2</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>These statements assign the displacement field output in the last frame of the first and second steps to the variables displacement1 and displacement2.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">stress1</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+<span class="n">stress2</span> <span class="o">=</span> <span class="n">frame2</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Similarly, these statements assign the stress field output in the last frame of the first and second steps to the variables stress1 and stress2.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">deltaDisplacement</span> <span class="o">=</span> <span class="n">displacement2</span> <span class="o">-</span> <span class="n">displacement1</span>
+</pre></div>
+</div>
+<p>This statement subtracts the displacement field output from the last frame of the two steps and puts the resulting field output into a new variable deltaDisplacement.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">deltaStress</span> <span class="o">=</span> <span class="n">stress2</span> <span class="o">-</span> <span class="n">stress1</span>
+</pre></div>
+</div>
+<p>Similarly, this statement subtracts the stress field output and puts the result in the variable deltaStress.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setDeformedVariable</span><span class="p">(</span><span class="n">deltaDisplacement</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This statement uses deltaDisplacement, the displacement field output variable that we created earlier, to set the deformed variable. This is the variable that Abaqus will use to display the shape of the deformed model.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">setPrimaryVariable</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">deltaStress</span><span class="p">,</span>
+    <span class="n">outputPosition</span><span class="o">=</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span>
+    <span class="n">refinement</span><span class="o">=</span><span class="p">(</span><span class="n">INVARIANT</span><span class="p">,</span> <span class="s1">&#39;Mises&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>This statement uses deltaStress, our stress field output variable, to set the primary variable. This is the variable that Abaqus will display in a contour or symbol plot.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span><span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
+</pre></div>
+</div>
+<p>The final statement sets the plot state to display a contour plot on the deformed model shape.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="create-part.html" class="btn btn-neutral float-left" title="Creating a part" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="summary.html" class="btn btn-neutral float-right" title="Summary" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

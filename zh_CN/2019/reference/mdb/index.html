@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus Model Database &mdash; abqpy 2019.5.4.post3.dev9+g884490177 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Model" href="model/index.html" />
+    <link rel="prev" title="Abaqus Class References" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2019
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Abaqus Model Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model/index.html">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotation.html">Annotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_mesh.html">Edit Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mdb">Mdb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session/index.html">Abaqus Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+      <li class="breadcrumb-item active">Abaqus Model Database</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/mdb/index.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-model-database">
+<h1>Abaqus Model Database<a class="headerlink" href="#abaqus-model-database" title="此标题的永久链接"></a></h1>
+<p>Mdb commands are used to create and upgrade an Abaqus model database that stores models and analysis controls.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Objects in Mdb</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="model/index.html">Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job.html">Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annotation.html">Annotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_mesh.html">Edit Mesh</a></li>
+</ul>
+</div>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="此标题的永久链接"></a></h2>
+<section id="mdb">
+<h3>Mdb<a class="headerlink" href="#mdb" title="此标题的永久链接"></a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/Mdb.py#L14-L93"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb" title="永久链接至目标"></a></dt>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb" title="abaqus.Part.AcisMdb.AcisMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcisMdb</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobMdb" title="abaqus.Job.JobMdb.JobMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobMdb</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+controls.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all">Mdb on help.3ds.com/2019</a>.</p>
+</div>
+<p>This constructor creates an empty Mdb object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to be used when the model database is saved to a file. If
+you do not provide a file extension, .cae is appended automatically to the path. The
+default value is an empty string.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Mdb object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.Mdb.Mdb" title="abaqus.Mdb.Mdb.Mdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></a></p>
+</dd>
+</dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.version" title="abaqus.Mdb.MdbBase.MdbBase.version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">version</span></code></a></p></td>
+<td><p>An Int specifying the release number of the Mdb object in memory.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.lastChangedCount" title="abaqus.Mdb.MdbBase.MdbBase.lastChangedCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></a></p></td>
+<td><p>A Float specifying the value of a counter associated with the Mdb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.jobs" title="abaqus.Mdb.MdbBase.MdbBase.jobs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobs</span></code></a></p></td>
+<td><p>A repository of Job objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses" title="abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptivityProcesses</span></code></a></p></td>
+<td><p>A repository of AdaptivityProcess objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses" title="abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationProcesses</span></code></a></p></td>
+<td><p>A repository of OptimizationProcess objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.meshEditOptions" title="abaqus.Mdb.MdbBase.MdbBase.meshEditOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshEditOptions</span></code></a></p></td>
+<td><p>A MeshEditOptions object specifying the undo/redo behavior when editing meshes on parts or part instances.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.models" title="abaqus.Mdb.MdbBase.MdbBase.models"><code class="xref py py-obj docutils literal notranslate"><span class="pre">models</span></code></a></p></td>
+<td><p>A repository of Model objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.customData" title="abaqus.Mdb.MdbBase.MdbBase.customData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></a></p></td>
+<td><p>A RepositorySupport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.annotations" title="abaqus.Mdb.MdbBase.MdbBase.annotations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotations</span></code></a></p></td>
+<td><p>A repository of Annotation objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Model</span></code></a>(name[, description, stefanBoltzmann, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb" title="abaqus.Part.AcisMdb.AcisMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcisMdb</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openAcis" title="abaqus.Part.AcisMdb.AcisMdb.openAcis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAcis</span></code></a>(fileName[, scaleFromFile])</p></td>
+<td><p>This method creates an AcisFile object from a file containing ACIS-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openCatia" title="abaqus.Part.AcisMdb.AcisMdb.openCatia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openCatia</span></code></a>(fileName[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing V5-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openEnf" title="abaqus.Part.AcisMdb.AcisMdb.openEnf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openEnf</span></code></a>(fileName, fileType[, topology, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Elysium Neutral File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openIges" title="abaqus.Part.AcisMdb.AcisMdb.openIges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openIges</span></code></a>(fileName[, trimCurve, ...])</p></td>
+<td><p>This method creates an AcisFile object from a file containing IGES-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openParasolid" title="abaqus.Part.AcisMdb.AcisMdb.openParasolid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openParasolid</span></code></a>(fileName[, topology])</p></td>
+<td><p>This method creates an AcisFile object from a file containing Parasolid-format geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openStep" title="abaqus.Part.AcisMdb.AcisMdb.openStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openStep</span></code></a>(fileName[, scale])</p></td>
+<td><p>This method creates an AcisFile object from a file containing STEP-format geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openVda" title="abaqus.Part.AcisMdb.AcisMdb.openVda"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openVda</span></code></a>(fileName)</p></td>
+<td><p>This method creates an AcisFile object from a file containing VDA-FS-format geometry.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobMdb" title="abaqus.Job.JobMdb.JobMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobMdb</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobMdb.Job" title="abaqus.Job.JobMdb.JobMdb.Job"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Job</span></code></a>(name, model[, description, type, queue, ...])</p></td>
+<td><p>This method creates an analysis job using a model on a model database (MDB) for the model definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobMdb.JobFromInputFile" title="abaqus.Job.JobMdb.JobMdb.JobFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">JobFromInputFile</span></code></a>(name, inputFileName[, ...])</p></td>
+<td><p>This method creates an analysis job using an input file for the model definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobMdb.OptimizationProcess" title="abaqus.Job.JobMdb.JobMdb.OptimizationProcess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationProcess</span></code></a>(name, model, task, ...)</p></td>
+<td><p>This method creates an OptimizationProcess object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([pathName])</p></td>
+<td><p>This constructor creates an empty Mdb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.importDxf" title="abaqus.Mdb.MdbBase.MdbBase.importDxf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">importDxf</span></code></a>(fileName)</p></td>
+<td><p>This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.openMdb" title="abaqus.Mdb.MdbBase.MdbBase.openMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openMdb</span></code></a>(pathName)</p></td>
+<td><p>This method opens an existing model database file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.close" title="abaqus.Mdb.MdbBase.MdbBase.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
+<td><p>This method closes an open Mdb object but does not save the Mdb object to disk.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.save" title="abaqus.Mdb.MdbBase.MdbBase.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>This method saves an Mdb object to disk at the location specified by <strong>pathName</strong> (<em>pathName</em> is a member of the Mdb object).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(pathName)</p></td>
+<td><p>This method saves an Mdb object to disk at the specified location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.openAuxMdb" title="abaqus.Mdb.MdbBase.MdbBase.openAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAuxMdb</span></code></a>(pathName)</p></td>
+<td><p>This method opens an auxiliary Mdb object on the disk at the specified location.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb" title="abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closeAuxMdb</span></code></a>()</p></td>
+<td><p>This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames" title="abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAuxMdbModelNames</span></code></a>()</p></td>
+<td><p>This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel" title="abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyAuxMdbModel</span></code></a>(fromName[, toName])</p></td>
+<td><p>This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.Model">
+<span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/Mdb.py#L25-L93"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.Model" title="永久链接至目标"></a></dt>
+<dd><p>This method creates a Model object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all">Model on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the repository key.</p></li>
+<li><p><strong>description</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the purpose and contents of the Model object. The default value is
+an empty string.</p></li>
+<li><p><strong>stefanBoltzmann</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- None or a Float specifying the Stefan-Boltzmann constant. The default value is None.</p></li>
+<li><p><strong>absoluteZero</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- None or a Float specifying the absolute zero constant. The default value is None.</p></li>
+<li><p><strong>waveFormulation</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">SCATTERED</span></code>, <code class="docutils literal notranslate"><span class="pre">NOT_SET</span></code>, <code class="docutils literal notranslate"><span class="pre">TOTAL</span></code>], default: <code class="docutils literal notranslate"><span class="pre">NOT_SET</span></code>) -- A SymbolicConstant specifying the type of incident wave formulation to be used in
+acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
+is NOT_SET.</p></li>
+<li><p><strong>modelType</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">STANDARD_EXPLICIT</span></code>, <code class="docutils literal notranslate"><span class="pre">ELECTROMAGNETIC</span></code>], default: <code class="docutils literal notranslate"><span class="pre">STANDARD_EXPLICIT</span></code>) -- A SymbolicConstant specifying the analysis model type. Possible values are
+STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is STANDARD_EXPLICIT.</p></li>
+<li><p><strong>universalGas</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- None or a Float specifying the universal gas constant. The default value is None.</p></li>
+<li><p><strong>copyConstraints</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A boolean specifying whether to copy the constraints created in the model to the model
+that instances this model. The default value is ON.</p></li>
+<li><p><strong>copyConnectors</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A boolean specifying whether to copy the connectors created in the model to the model
+that instances this model. The default value is ON.</p></li>
+<li><p><strong>copyInteractions</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A boolean specifying whether to copy the interactions created in the model to the model
+that instances this model. The default value is ON.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>model</strong> -- A Model object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Mdb.Mdb.Mdb.Model" title="abaqus.Mdb.Mdb.Mdb.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="other-classes">
+<h3>Other Classes<a class="headerlink" href="#other-classes" title="此标题的永久链接"></a></h3>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MdbBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L21-L277"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase" title="永久链接至目标"></a></dt>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models and analysis
+controls.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all">MdbBase on help.3ds.com/2019</a>.</p>
+</div>
+<p>This constructor creates an empty Mdb object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to be used when the model database is saved to a file. If
+you do not provide a file extension, .cae is appended automatically to the path. The
+default value is an empty string.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Mdb object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses">
+<span class="sig-name descname"><span class="pre">adaptivityProcesses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="model/adaptivity.html#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess" title="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityProcess</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L42-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses" title="永久链接至目标"></a></dt>
+<dd><p>A repository of AdaptivityProcess objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.annotations">
+<span class="sig-name descname"><span class="pre">annotations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="annotation.html#abaqus.Annotation.Text.Annotation" title="abaqus.Annotation.Annotation.Annotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Annotation</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L58-L59"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.annotations" title="永久链接至目标"></a></dt>
+<dd><p>A repository of Annotation objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L147-L153"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.close" title="永久链接至目标"></a></dt>
+<dd><p>This method closes an open Mdb object but does not save the Mdb object to disk.</p>
+<p>After closing the Mdb object, this method creates a new unnamed empty Mdb object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb">
+<span class="sig-name descname"><span class="pre">closeAuxMdb</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L224-L234"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb" title="永久链接至目标"></a></dt>
+<dd><p>This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbcloseauxmdbpyc">MdbBase.closeAuxMdb on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>MdbError</strong> -- The auxiliary Mdb was not opened;
+If the auxiliary Mdb was not opened earlier</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel">
+<span class="sig-name descname"><span class="pre">copyAuxMdbModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fromName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L254-L277"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel" title="永久链接至目标"></a></dt>
+<dd><p>This method copies a specified model from the auxiliary Mdb which had been opened earlier using the
+openAuxMdb command.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbcopyauxmdbmodelpyc">MdbBase.copyAuxMdbModel on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fromName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the model name in the auxiliary Mdb which is to be copied.</p></li>
+<li><p><strong>toName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the name to be given to the model after it is copied into the Mdb.
+If this argument is not specified <strong>toName</strong> is assumed to be the same as <strong>fromName</strong>. If a
+model with name <strong>toName</strong> already exists in Mdb, it is overwritten.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- The auxiliary Mdb was not opened;
+    If the auxiliary Mdb was not opened earlier</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="（在 Python v3.11）"><strong>KeyError</strong></a> -- fromName does not exist;
+    If the model fromName does not exist in the auxiliary Mdb</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.customData">
+<span class="sig-name descname"><span class="pre">customData</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.CustomKernel.RepositorySupport.RepositorySupport</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L55-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.customData" title="永久链接至目标"></a></dt>
+<dd><p>A RepositorySupport object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames">
+<span class="sig-name descname"><span class="pre">getAuxMdbModelNames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L236-L252"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames" title="永久链接至目标"></a></dt>
+<dd><p>This method returns a list of model names present in the auxiliary Mdb which had been opened earlier
+using the openAuxMdb command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of model names present in the auxiliaryMdb</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[str]</span></code></p>
+</dd>
+<dt class="field-odd">抛出<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>MdbError</strong> -- The auxiliary Mdb was not opened;
+    If the auxiliary Mdb was not opened earlier</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.importDxf">
+<span class="sig-name descname"><span class="pre">importDxf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L86-L107"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.importDxf" title="永久链接至目标"></a></dt>
+<dd><p>This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.
+Only a limited number of entities are supported. This format should be used only if no other formats are
+available.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbimportdxfpyc">MdbBase.importDxf on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the dxf file to open.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Mdb object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.jobs">
+<span class="sig-name descname"><span class="pre">jobs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.ModelJob.ModelJob" title="abaqus.Job.ModelJob.ModelJob"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelJob</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.JobMdb.JobFromInputFile" title="abaqus.Job.JobFromInputFile.JobFromInputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobFromInputFile</span></code></a><span class="pre">]]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L39-L40"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.jobs" title="永久链接至目标"></a></dt>
+<dd><p>A repository of Job objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.lastChangedCount">
+<span class="sig-name descname"><span class="pre">lastChangedCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L35-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.lastChangedCount" title="永久链接至目标"></a></dt>
+<dd><p>A Float specifying the value of a counter associated with the Mdb object. The counter
+indicates when the Mdb object was last changed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.meshEditOptions">
+<span class="sig-name descname"><span class="pre">meshEditOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="edit_mesh.html#abaqus.EditMesh.MeshEditOptions.MeshEditOptions" title="abaqus.EditMesh.MeshEditOptions.MeshEditOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEditOptions</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.EditMesh.MeshEditOptions.MeshEditOptions</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L48-L50"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.meshEditOptions" title="永久链接至目标"></a></dt>
+<dd><p>A MeshEditOptions object specifying the undo/redo behavior when editing meshes on parts
+or part instances.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.models">
+<span class="sig-name descname"><span class="pre">models</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="model/index.html#abaqus.Model.Model.Model" title="abaqus.Model.Model.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'Model-1':</span> <span class="pre">&lt;abaqus.Model.Model.Model</span> <span class="pre">object&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L52-L53"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.models" title="永久链接至目标"></a></dt>
+<dd><p>A repository of Model objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.openAuxMdb">
+<span class="sig-name descname"><span class="pre">openAuxMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L198-L222"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.openAuxMdb" title="永久链接至目标"></a></dt>
+<dd><p>This method opens an auxiliary Mdb object on the disk at the specified location. This enables models
+from the auxiliary Mdb object to be copied into the current Mdb.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbopenauxmdbpyc">MdbBase.openAuxMdb on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the auxiliary Mdb which is to be opened. If you do not
+provide a file extension, .cae is appended automatically to the path.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- invalid model database;
+    If the file is an invalid model database</p></li>
+<li><p><strong>MdbError</strong> -- incompatible release number;
+    If the file contains a model database from an Abaqus release other than the Abaqus
+    release you are currently running</p></li>
+<li><p><strong>MdbError</strong> -- cannot open file;
+    If the command fails to open the model database file for reasons not mentioned above</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.openMdb">
+<span class="sig-name descname"><span class="pre">openMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L109-L145"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.openMdb" title="永久链接至目标"></a></dt>
+<dd><p>This method opens an existing model database file.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbopenmdbpyc">MdbBase.openMdb on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the model database file to open. If you do not provide a
+file extension, Abaqus/CAE attempts to open the file with .cae appended to the path.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Mdb object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- invalid model database;
+    If the file is an invalid model database</p></li>
+<li><p><strong>MdbError</strong> -- incompatible release number, expected <em>&lt;Abaqus release&gt;</em>, got <em>&lt;earlier or later Abaqus release&gt;</em>;
+    If the file contains a model database from an Abaqus release other than the Abaqus
+    release you are currently running</p></li>
+<li><p><strong>MdbError</strong> -- cannot open file; may be in use by another CAE session;
+    If the model database file is already opened in write mode</p></li>
+<li><p><strong>MdbError</strong> -- cannot open file;
+    If the command fails to open the model database file for reasons not mentioned above</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses">
+<span class="sig-name descname"><span class="pre">optimizationProcesses</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><span class="pre">,</span> <a class="hxr-hoverxref hxr-tooltip reference internal" href="job.html#abaqus.Job.OptimizationProcess.OptimizationProcess" title="abaqus.Job.OptimizationProcess.OptimizationProcess"><code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationProcess</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L45-L46"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses" title="永久链接至目标"></a></dt>
+<dd><p>A repository of OptimizationProcess objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L155-L175"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.save" title="永久链接至目标"></a></dt>
+<dd><p>This method saves an Mdb object to disk at the location specified by <strong>pathName</strong>
+(<em>pathName</em> is a member of the Mdb object).</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbsavepyc">MdbBase.save on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>MdbError</strong> -- cannot save file;
+If the command fails to save the Mdb object to disk for reasons not mentioned above</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- cannot save file: pathname member is empty;
+    If <strong>pathName</strong> is empty</p></li>
+<li><p><strong>MdbError</strong> -- “abaqus.cae” is an invalid CAE filename;
+    If <strong>pathName</strong> is abaqus.cae</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.saveAs">
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L177-L196"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="永久链接至目标"></a></dt>
+<dd><p>This method saves an Mdb object to disk at the specified location.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all#simaker-mdbsaveaspyc">MdbBase.saveAs on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to be used when the model database is saved to a file. If
+you do not provide a file extension, .cae is appended automatically to the path.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- “abaqus.cae” is an invalid CAE filename;
+    If <strong>pathName</strong> is abaqus.cae</p></li>
+<li><p><strong>MdbError</strong> -- cannot save file;
+    If the command fails to save the Mdb object to disk for reasons not mentioned above</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.version">
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbBase.py#L32-L33"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.version" title="永久链接至目标"></a></dt>
+<dd><p>An Int specifying the release number of the Mdb object in memory.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbCommands.CombineOptResults">
+<span class="sig-name descname"><span class="pre">CombineOptResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optResultLocation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optIter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INITIAL_AND_LAST</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nValues</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">models</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisFieldVariables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeResultsFrom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.FIRST</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalModel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbCommands.py#L48-L90"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbCommands.CombineOptResults" title="永久链接至目标"></a></dt>
+<dd><p>This method combines the results from existing ODB files for each optimization cycle and writes a merged
+ODB file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>optResultLocation</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the folder in which optimization results are present.</p></li>
+<li><p><strong>optIter</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">INITIAL_AND_LAST</span></code>, <code class="docutils literal notranslate"><span class="pre">NONE</span></code>, <code class="docutils literal notranslate"><span class="pre">ALL</span></code>, <code class="docutils literal notranslate"><span class="pre">LAST</span></code>, <code class="docutils literal notranslate"><span class="pre">EVERY_NCYCLES</span></code>, <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>], default: <code class="docutils literal notranslate"><span class="pre">INITIAL_AND_LAST</span></code>) -- A Symbolic Constant to specify the optimization cycles from which the results
+should be merged. The possible values are INITIAL_AND_LAST, NONE, ALL, LAST,
+EVERY_NCYCLES, SPECIFY. The default value is INITIAL_AND_LAST.</p></li>
+<li><p><strong>nValues</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) -- An Int or a tuple of Ints specifying the optimization cycles from which the
+results should be merged. This argument is used only when EVERY_NCYCLES or
+SPECIFY is selected for optIter. The default value is ALL.</p></li>
+<li><p><strong>models</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) -- A tuple of strings specifying the list of models for which the merging of
+results is performed. The default value is ALL.</p></li>
+<li><p><strong>steps</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) -- A tuple of strings specifying the list of steps from the selected models to
+be included in the odb merge. The default value is ALL.</p></li>
+<li><p><strong>analysisFieldVariables</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) -- A tuple of strings specifying the list of analysisFieldVariables to be
+included in the odb merge. The default value is ALL.</p></li>
+<li><p><strong>includeResultsFrom</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ORIGINAL_MODEL</span></code>, <code class="docutils literal notranslate"><span class="pre">FIRST</span></code>, <code class="docutils literal notranslate"><span class="pre">LAST</span></code>], default: <code class="docutils literal notranslate"><span class="pre">FIRST</span></code>) -- A Symbolic Constant to specify the target odb to which the results will be
+merged. The possible values are ORIGINAL_MODEL, FIRST or LAST. The default
+value is FIRST.</p></li>
+<li><p><strong>originalModel</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">Ellipsis</span></code>) -- A String to specify the path of target odb if includeResultsFrom is set to
+ORIGINAL_MODEL.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbCommands.openMdb">
+<span class="sig-name descname"><span class="pre">openMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbCommands.py#L93-L129"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbCommands.openMdb" title="永久链接至目标"></a></dt>
+<dd><p>This method opens an existing model database file.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mdb</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionmdbcommandspyc.htm?contextscope=all#simaker-functionmdbcommandsopenmdbpyc">MdbCommands.openMdb on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the model database file to open. If you do not provide a
+file extension, Abaqus/CAE attempts to open the file with .cae appended to the path.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Mdb object</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>MdbError</strong> -- invalid model database;
+    If the file is an invalid model database</p></li>
+<li><p><strong>MdbError</strong> -- incompatible release number, expected <em>&lt;Abaqus release&gt;</em>, got <em>&lt;earlier or later Abaqus release&gt;</em>;
+    If the file contains a model database from an Abaqus release other than the Abaqus
+    release you are currently running</p></li>
+<li><p><strong>MdbError</strong> -- cannot open file; may be in use by another CAE session;
+    If the model database file is already opened in write mode</p></li>
+<li><p><strong>MdbError</strong> -- cannot open file;
+    If the command fails to open the model database file for reasons not mentioned above</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbCommands.upgradeMdb">
+<span class="sig-name descname"><span class="pre">upgradeMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">existingMdbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upgradedMdbPath</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2019/src/abaqus/Mdb/MdbCommands.py#L24-L45"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbCommands.upgradeMdb" title="永久链接至目标"></a></dt>
+<dd><p>This method upgrades an existing Mdb object to the current release and writes the upgraded version of the
+Mdb object to a file. In addition, Abaqus/CAE writes.</p>
+<p>information about the status of the upgrade to the log file ( upgradedMdbPath.log
+).</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>existingMdbPath</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the file containing the model database to be
+upgraded.</p></li>
+<li><p><strong>upgradedMdbPath</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the file that will contain the upgraded model
+database.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>MdbError</strong> -- Cannot convert file</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Abaqus Class References" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="model/index.html" class="btn btn-neutral float-right" title="Model" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
