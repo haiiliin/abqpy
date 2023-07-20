@@ -51,6 +51,8 @@ dev = [
 ]
 docs = [
     "autoclasstoc",
+    "furo",
+    "gitpython",
     "myst-parser",
     "pandas",
     "pillow",
@@ -58,6 +60,7 @@ docs = [
     "sphinx-autoapi",
     "sphinx-toolbox",
     "sphinx-autodoc-typehints",
+    "sphinx-book-theme",
     "sphinx-copybutton",
     "sphinx-comments",
     "sphinx-design",
@@ -84,7 +87,7 @@ abqpy = "abqpy.__main__:main"
 where = ["src"]
 
 [tool.setuptools_scm]
-version_scheme = "post-release"
+version_scheme = "guess-next-dev"
 write_to = "src/abqpy/_version.py"
 fallback_version = "2023.0.0-dev"
 
