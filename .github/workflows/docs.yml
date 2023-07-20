@@ -27,6 +27,7 @@ concurrency:
 jobs:
   sphinx:
     if: >
+      github.event_name == 'push' ||
       github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
