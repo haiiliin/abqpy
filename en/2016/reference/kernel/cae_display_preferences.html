@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus CAE Display Preferences &mdash; abqpy 2016.5.4.post3.dev9+ge59b89019 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Input File Parser" href="input.html" />
+    <link rel="prev" title="Kernel" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2016
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session/index.html">Abaqus Session</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Kernel</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Abaqus CAE Display Preferences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Kernel</a></li>
+      <li class="breadcrumb-item active">Abaqus CAE Display Preferences</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/kernel/cae_display_preferences.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-cae-display-preferences">
+<h1>Abaqus CAE Display Preferences<a class="headerlink" href="#abaqus-cae-display-preferences" title="Permalink to this heading"></a></h1>
+<p>Display preferences commands are used to edit the Abaqus/CAE preferences file, <code class="docutils literal notranslate"><span class="pre">abaqus_2021.gpr</span></code>.</p>
+<section id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this heading"></a></h2>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeGuiPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L6-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The CaeGuiPrefs object contains the details of the graphical preferences in a guiPreferences section of
+the abaqus_2021.gpr file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">caePrefsAccess</span>
+<span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openGuiPreferences</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all">CaeGuiPrefs on help.3ds.com/2016</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L18-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.fileName" title="Permalink to this definition"></a></dt>
+<dd><p>A String specifying the path to the preferences file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L21-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.save" title="Permalink to this definition"></a></dt>
+<dd><p>This method saves the guiPreferences section specified in the current <strong>fileName</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all#simaker-caeguiprefssavepyc">CaeGuiPrefs.save on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>backupFile</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Boolean</span></code>) -- A Boolean specifying whether Abaqus should save a numbered backup copy of the
+preferences file, <strong>fileName</strong>. Default is True.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.saveAs">
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L34-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs.saveAs" title="Permalink to this definition"></a></dt>
+<dd><p>This method saves the guiPreferences settings to the specified location.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all#simaker-caeguiprefssaveaspyc">CaeGuiPrefs.saveAs on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the preferences file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CaeKerPrefs</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L9-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The CaeKerPrefs object contains the details of the sessionOptions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">caePrefsAccess</span>
+<span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openSessionOptions</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all">CaeKerPrefs on help.3ds.com/2016</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.fileName">
+<span class="sig-name descname"><span class="pre">fileName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L20-L22"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.fileName" title="Permalink to this definition"></a></dt>
+<dd><p>A String specifying the path to the preferences file that the CaeKerPrefs object
+represents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L24-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.save" title="Permalink to this definition"></a></dt>
+<dd><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all#simaker-caekerprefssavepyc">CaeKerPrefs.save on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>backupFile</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Boolean</span></code>) -- A Boolean specifying whether save a numbered backup copy of the preferences file,
+<strong>fileName</strong>. Default is True.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.saveAs">
+<span class="sig-name descname"><span class="pre">saveAs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.HOME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L37-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.saveAs" title="Permalink to this definition"></a></dt>
+<dd><p>This method saves the sessionOptions to the specified location.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all#simaker-caekerprefssaveaspyc">CaeKerPrefs.saveAs on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the preferences file.</p></li>
+<li><p><strong>directory</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code>) -- <p>A SymbolicConstant specifying the location of the preferences file. Possible values
+are:</p>
+<ul>
+<li><p>CURRENT to open the preferences file in the current directory
+(caePrefsAccess.CURRENT)</p></li>
+<li><p>HOME to open the preferences file in your home directory
+(caePrefsAccess.HOME)</p></li>
+</ul>
+<p>The default value is HOME. Either <strong>fileName</strong> or <strong>directory</strong> must be
+supplied. The <strong>fileName</strong> or <strong>directory</strong> arguments are mutually exclusive.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences">
+<span class="sig-name descname"><span class="pre">getDisplayNamesInGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L41-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences" title="Permalink to this definition"></a></dt>
+<dd><p>The abaqus_2021.gpr file stores a separate guiPreferences record for each display that you use. This
+function returns a list of every displayName recorded in the preferences file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">getDisplayNamesInGuiPreferences</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all#simaker-gprfunctioncaeprefsaccessgetdisplaynamesinguipreferencespyc">caePrefsAccess.getDisplayNamesInGuiPreferences on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String that specifies the path to the preferences file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of Strings of displayNames.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[str]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName">
+<span class="sig-name descname"><span class="pre">getGuiPrefsFileName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L23-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName" title="Permalink to this definition"></a></dt>
+<dd><p>This function enables you to retrieve the location of your abaqus_2021.gpr file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">getGuiPrefsFileName</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A String with the default file name for the GUI preferences file.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences">
+<span class="sig-name descname"><span class="pre">openGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L102-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences" title="Permalink to this definition"></a></dt>
+<dd><p>This function enables you to examine and change many default behaviors in the Abaqus/CAE graphical user
+interface. Abaqus stores preferences for each display you use in a separate guiPreferences section of the
+abaqus_2021.gpr file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openGuiPreferences</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all#simaker-gprfunctioncaeprefsaccessopenguipreferencespyc">caePrefsAccess.openGuiPreferences on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>displayName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String that specifies the display for which you want to investigate GUI preferences
+from the abaqus_2021.gpr file. You can retrieve the available display names in the file
+by using the getDisplayNamesInGuiPreferences method.</p></li>
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the preferences file. The openGuiPreferences method uses
+this argument if you are working with a preferences file that is not at the default
+location.If this argument is omitted, the abaqus_2021.gpr file in your home directory is
+opened.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A CaeGuiPrefs object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs"><code class="xref py py-class docutils literal notranslate"><span class="pre">CaeGuiPrefs</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions">
+<span class="sig-name descname"><span class="pre">openSessionOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.HOME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L133-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions" title="Permalink to this definition"></a></dt>
+<dd><p>This function enables you to examine and change the default behavior for many session options Abaqus/CAE;
+that is, the settings that you can save in Abaqus/CAE from the FileSave Display ConstrainedSketchOptions
+menu option. Abaqus stores default session options in the sessionOptions section of the abaqus_2021.gpr
+file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">openSessionOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all#simaker-gprfunctioncaeprefsaccessopensessionoptionspyc">caePrefsAccess.openSessionOptions on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the preferences file. The openSessionOptions method uses
+this argument if you are working with a preferences file that is not at the default
+location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is
+opened.</p></li>
+<li><p><strong>directory</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Literal[C.CURRENT</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">C.HOME]</span></code>) -- <p>A SymbolicConstant specifying the location of the preferences file. Possible values
+are:</p>
+<ul>
+<li><p>CURRENT to open the preferences file in the current directory
+(caePrefsAccess.CURRENT)</p></li>
+<li><p>HOME to open the preferences file in your home directory
+(caePrefsAccess.HOME)</p></li>
+</ul>
+<p>The default value is HOME. Either <strong>fileName</strong> or <strong>directory</strong> must be
+supplied. The <code class="docutils literal notranslate"><span class="pre">fileName</span></code> or <code class="docutils literal notranslate"><span class="pre">directory</span></code> arguments are mutually exclusive.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A CaeKerPrefs object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs"><code class="xref py py-class docutils literal notranslate"><span class="pre">CaeKerPrefs</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList">
+<span class="sig-name descname"><span class="pre">printValuesList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNLIMITED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L65-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="Permalink to this definition"></a></dt>
+<dd><p>This function enables you to print all of the options and their values for a set of guiPreferences or
+sessionOptions settings derived from the abaqus_2021.gpr file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caePrefsAccess</span><span class="o">.</span><span class="n">printValuesList</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all#simaker-gprfunctioncaeprefsaccessprintvalueslistpyc">caePrefsAccess.printValuesList on help.3ds.com/2016</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The guiPreferences object or sessionOptions object for which you want to print options
+and their values.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Union[int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Literal[C.UNLIMITED]]</span></code>) -- An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
+accessing the attributes of <strong>object</strong>.</p></li>
+<li><p><strong>asString</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Boolean</span></code>) -- A Boolean specifying how the string representation of each option is printed. If
+<strong>asString</strong> is True, printValuesList prints the str of each option; otherwise
+printValuesList prints the repr of the options. The default value is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A String displaying the path, name, and value for all of the options in the object that
+you select.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Kernel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="input.html" class="btn btn-neutral float-right" title="Input File Parser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

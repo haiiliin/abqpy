@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Specifying a region &mdash; abqpy 2016.5.4.post3.dev9+ge59b89019 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Prompting the user for input" href="user-input.html" />
+    <link rel="prev" title="Specifying what is displayed in the viewport" href="specify-viewport.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2016
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-abaqus/index.html">Using Python and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Specifying a region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+      <li class="breadcrumb-item active">Specifying a region</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/use-scripts/specify-region.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="specifying-a-region">
+<h1>Specifying a region<a class="headerlink" href="#specifying-a-region" title="Permalink to this heading"></a></h1>
+<p>Many of the commands used by the Abaqus Scripting Interface require a region argument. For example,</p>
+<ul class="simple">
+<li><p>Load commands use the region argument to specify where the load is applied. You apply a concentrated force to vertices; you apply pressure to a face or an edge.</p></li>
+<li><p>Mesh commands, such as setting the element type and creating the mesh, use the region argument to specify where the operation should be applied.</p></li>
+<li><p>Set commands use the region argument to specify the region that comprises the set.</p></li>
+</ul>
+<p>A region can be either a predefined Set or Surface object or a temporary Region object. For more information, see Region commands.</p>
+<p>You should not rely on the integer id to identify a vertex, edge, face, or cell in a region command; for example, myFace=myModel.parts['Door'].faces[3]. The id can change if you add or delete features to your model; in addition, the id can change with a new release of Abaqus.</p>
+<p>Rather than using the integer <code class="docutils literal notranslate"><span class="pre">id</span></code>, you should use the <code class="docutils literal notranslate"><span class="pre">findAt</span></code> method to identify a vertex, edge, face, or cell. The arguments to <code class="docutils literal notranslate"><span class="pre">findAt</span></code> are an arbitrary point on an edge, face, or cell or the X-, Y-, and Z-coordinates of a vertex. <code class="docutils literal notranslate"><span class="pre">findAt</span></code> returns an object that contains the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the vertex or the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the edge, face, or cell that includes the arbitrary point.</p>
+<p><code class="docutils literal notranslate"><span class="pre">findAt</span></code> initially uses the ACIS tolerance of 1E-6. As a result, <code class="docutils literal notranslate"><span class="pre">findAt</span></code> returns any entity that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is found, <code class="docutils literal notranslate"><span class="pre">findAt</span></code> uses the tolerance for imprecise geometry (applicable only for imprecise geometric entities). If necessary, it can open the tolerance further to find a suitable object. The arbitrary point must not be shared by a second edge, face, or cell. If two entities intersect or coincide at the arbitrary point, <code class="docutils literal notranslate"><span class="pre">findAt</span></code> chooses the first entity that it encounters, and you should not rely on the return value being consistent.</p>
+<p>Alternatively, if you are working with an existing model that contains named regions, you can specify a region by referring to its name. For example, in the example described in Investigating the skew sensitivity of shell elements, you create a model using Abaqus/CAE. While you define the model, you must create a set that includes the vertex at the center of a planar part and you must name the set <code class="docutils literal notranslate"><span class="pre">CENTER</span></code>. You subsequently run a script that parameterizes the model and performs a series of analyses. The script uses the named region to retrieve the displacement and the bending moment at the center of the plate. The following statement refers to the set that you created and named using Abaqus/CAE:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">centerNSet</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">nodeSets</span><span class="p">[</span><span class="s1">&#39;CENTER&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The following script illustrates how you can create a region. Regions are created from each of the following:</p>
+<ul class="simple">
+<li><p>A sequence of tuples indicating the vertices, edges, faces, or cells in the region. The sequence can include multiple tuples of the same type.</p></li>
+<li><p>A sequence of tuples indicating a combination of the vertices, edges, faces, and cells in the region. The tuples can appear in any order in the sequence. In addition, you can include multiple tuples of the same type, and you can omit any type from the sequence.</p></li>
+<li><p>A Surface object specifying an entity and the side of the entity.</p></li>
+</ul>
+<p>Use the following command to retrieve the script:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># abaqus fetch job=createRegions</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">createRegions.py</span>
+
+<span class="sd">Script to illustrate different techniques for defining regions.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Import the modules used by this script.</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">part</span>
+<span class="kn">import</span> <span class="nn">assembly</span>
+<span class="kn">import</span> <span class="nn">step</span>
+<span class="kn">import</span> <span class="nn">load</span>
+<span class="kn">import</span> <span class="nn">interaction</span>
+
+<span class="n">myModel</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create a new Viewport for this example.</span>
+
+<span class="n">myViewport</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Region syntax&#39;</span><span class="p">,</span>
+            <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Create a Sketch and draw two rectangles.</span>
+
+<span class="n">mySketch</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Sketch A&#39;</span><span class="p">,</span>
+    <span class="n">sheetSize</span><span class="o">=</span><span class="mf">200.0</span><span class="p">)</span>
+
+<span class="n">mySketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">40.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">),</span>
+    <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+
+<span class="n">mySketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">),</span>
+    <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="mf">40.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+
+<span class="c1"># Create a 3D part and extrude the rectangles.</span>
+
+<span class="n">door</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Door&#39;</span><span class="p">,</span>
+    <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+
+<span class="n">door</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">mySketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mf">20.0</span><span class="p">)</span>
+
+<span class="c1"># Instance the part.</span>
+
+<span class="n">myAssembly</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">doorInstance</span> <span class="o">=</span> <span class="n">myAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Door-1&#39;</span><span class="p">,</span>
+    <span class="n">part</span><span class="o">=</span><span class="n">door</span><span class="p">)</span>
+
+<span class="c1"># Select two vertices.</span>
+
+<span class="n">pillarVertices</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">vertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span>
+    <span class="p">((</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">0</span><span class="p">),),</span> <span class="p">((</span><span class="mi">40</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),)</span> <span class="p">)</span>
+
+<span class="c1"># Create a static step.</span>
+
+<span class="n">myModel</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;impact&#39;</span><span class="p">,</span>
+    <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Create a concentrated force on the selected</span>
+<span class="c1"># vertices.</span>
+
+<span class="n">myPillarLoad</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">ConcentratedForce</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;pillarForce&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;impact&#39;</span><span class="p">,</span>
+    <span class="n">region</span><span class="o">=</span><span class="p">(</span><span class="n">pillarVertices</span><span class="p">,),</span> <span class="n">cf1</span><span class="o">=</span><span class="mf">12.50E4</span><span class="p">)</span>
+
+<span class="c1"># Select two faces</span>
+
+<span class="n">topFace</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="o">-</span><span class="mi">25</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">10</span><span class="p">),))</span>
+<span class="n">bottomFace</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="o">-</span><span class="mi">25</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),))</span>
+
+<span class="c1"># Create a pressure load on the selected faces.</span>
+<span class="c1"># You can use the &quot;+&quot; notation if the entities are of</span>
+<span class="c1"># the same type and are from the same part instance.</span>
+
+<span class="n">myFenderLoad</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;pillarPressure&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;impact&#39;</span><span class="p">,</span>
+    <span class="n">region</span><span class="o">=</span><span class="p">((</span><span class="n">topFace</span><span class="o">+</span><span class="n">bottomFace</span><span class="p">,</span> <span class="n">SIDE1</span><span class="p">),),</span>
+    <span class="n">magnitude</span><span class="o">=</span><span class="mf">10E4</span><span class="p">)</span>
+
+<span class="c1"># Select two edges from one instance.</span>
+
+<span class="n">myEdge1</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">edges</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">),))</span>
+<span class="n">myEdge2</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">edges</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">0</span><span class="p">),))</span>
+
+<span class="c1"># Create a boundary condition on one face,</span>
+<span class="c1"># two edges, and two vertices.</span>
+
+<span class="n">myDisplacementBc</span><span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;xBC&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;impact&#39;</span><span class="p">,</span>
+    <span class="n">region</span><span class="o">=</span><span class="p">(</span><span class="n">pillarVertices</span><span class="p">,</span> <span class="n">myEdge1</span><span class="o">+</span><span class="n">myEdge2</span><span class="p">,</span>
+    <span class="n">topFace</span><span class="p">),</span> <span class="n">u1</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+
+<span class="c1"># Select two faces using an arbitrary point</span>
+<span class="c1"># on the face.</span>
+
+<span class="n">faceRegion</span> <span class="o">=</span> <span class="n">doorInstance</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span>
+    <span class="p">((</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="p">),</span> <span class="p">((</span><span class="mi">30</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">),))</span>
+
+<span class="c1"># Create a surface containing the two faces.</span>
+<span class="c1"># Indicate which side of the surface to include.</span>
+
+<span class="n">mySurface</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;exterior&#39;</span><span class="p">,</span> <span class="n">side1Faces</span><span class="o">=</span><span class="n">faceRegion</span><span class="p">)</span>
+
+<span class="c1"># Create an elastic foundation using the surface.</span>
+
+<span class="n">myFoundation</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">ElasticFoundation</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;elasticFloor&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
+    <span class="n">surface</span><span class="o">=</span><span class="n">mySurface</span><span class="p">,</span> <span class="n">stiffness</span><span class="o">=</span><span class="mi">1500</span><span class="p">)</span>
+
+<span class="c1"># Display the assembly along with the new boundary</span>
+<span class="c1"># conditions and loads.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myAssembly</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="s1">&#39;impact&#39;</span><span class="p">,</span>
+    <span class="n">loads</span><span class="o">=</span><span class="n">ON</span><span class="p">,</span> <span class="n">bcs</span><span class="o">=</span><span class="n">ON</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="specify-viewport.html" class="btn btn-neutral float-left" title="Specifying what is displayed in the viewport" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="user-input.html" class="btn btn-neutral float-right" title="Prompting the user for input" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing to an output database &mdash; abqpy 2016.5.4.post3.dev9+ge59b89019 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Exception handling in an output database" href="exceptions.html" />
+    <link rel="prev" title="Reading from an output database" href="read.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2016
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Accessing an Output Database</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface to access an output database</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using C++ to access an output database</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="about.html">About the C++ interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="need-what-access.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="compile-link.html">Compiling and linking your C++ source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access.html">Accessing the C++ interface from an existing application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">The Abaqus C++ API architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utility.html">Utility interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="read.html">Reading from an output database</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.html">Example programs that access data from an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Accessing an Output Database</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using C++ to access an output database</a></li>
+      <li class="breadcrumb-item active">Writing to an output database</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/output/cpp/write.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="writing-to-an-output-database">
+<h1>Writing to an output database<a class="headerlink" href="#writing-to-an-output-database" title="Permalink to this heading"></a></h1>
+<p>You can write your own data to an output database, and you can use Abaqus/CAE to view the data. Writing to an output database is very similar to reading from an output database. When you open an existing database, the Odb object contains all the objects found in the output database, such as instances, steps, and field output data. In contrast, when you are writing to a new output database, these objects do not exist. As a result you must use a constructor to create the objects. For example, you use the Part constructor to create a Part object, the Instance constructor to create an OdbInstance object, and the Step constructor to create an OdbStep object.</p>
+<p>After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.</p>
+<p>The example script in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../python/examples.html#creating-an-output-database"><span class="std std-ref">Creating an output database</span></a> also illustrates how you can write to an output database.</p>
+<section id="creating-a-new-output-database">
+<h2>Creating a new output database<a class="headerlink" href="#creating-a-new-output-database" title="Permalink to this heading"></a></h2>
+<p>You use the Odb constructor to create a new, empty Odb object.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Odb</span><span class="p">(</span><span class="s">&quot;myData&quot;</span><span class="p">,</span><span class="s">&quot;derived data&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;test problem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;testWrite.odb&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the Odb command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object. Abaqus creates the RootAssembly object when you create or open an output database.</p>
+<p>You use the <code class="docutils literal notranslate"><span class="pre">save</span></code> method to <code class="docutils literal notranslate"><span class="pre">save</span></code> the output database.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">save</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>For a full description of the save command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
+</section>
+<section id="writing-model-data">
+<h2>Writing model data<a class="headerlink" href="#writing-model-data" title="Permalink to this heading"></a></h2>
+<p>To define the geometry of your model, you first create the parts that are used by the model and then you add nodes and elements to the parts. You then define the assembly by creating instances of the parts. If the output database already contains results data, you should not change the geometry of the model. This is to ensure that the results remain synchronized with the model.</p>
+<ul>
+<li><p><strong>Part</strong></p>
+<p>If the part was created by Abaqus/CAE, the description of the native Abaqus/CAE geometry is stored in the model database, but it is not stored in the output database. A part is stored in an output database as a collection of nodes, elements, surfaces, and sets. You use the Part constructor to add a part to the Odb object. You can specify the type of the part; however, only DEFORMABLE_BODY is currently supported. For example,`</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Part</span><span class="o">&amp;</span><span class="w"> </span><span class="n">part1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Part</span><span class="p">(</span><span class="s">&quot;part-1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">THREE_D</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">DEFORMABLE_BODY</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the Part constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart" title="abaqus.Odb.OdbPart.OdbPart"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPart</span></code></a>. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.</p>
+<p>You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">nodeLabels</span><span class="p">;</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+<span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">);</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">c</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">{</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">nodeCoor</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">&lt;</span><span class="n">nodeLabels</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">loc</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="n">loc</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">nodeCoor</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">part1</span><span class="p">.</span><span class="n">addNodes</span><span class="p">(</span><span class="n">nodeLabels</span><span class="p">,</span><span class="w"> </span><span class="n">nodeCoor</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nodes_1&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the addNodes command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addNodes()</span></code>. After you have created nodes, you can use the NodeSetFromNodeLabels constructor to create a node set from the node labels. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeSetFromNodeLabels()</span></code>. Similarly, you use the addElements method to add elements to the part using a sequence of element labels, element connectivity, and element type. You can also define an optional element set and an optional section category. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">elLabels</span><span class="p">;</span>
+<span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">elLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">99</span><span class="p">);</span>
+<span class="n">odb_SequenceSequenceInt</span><span class="w"> </span><span class="n">connect</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">numNodePerEl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">conn</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="n">numNodePerEl</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">}};</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">e</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="o">&lt;</span><span class="n">elLabels</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">e</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">l</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="n">numNodePerEl</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">    </span><span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">conn</span><span class="p">[</span><span class="n">e</span><span class="p">][</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">connect</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">part1</span><span class="p">.</span><span class="n">addElements</span><span class="p">(</span><span class="n">elLabels</span><span class="p">,</span><span class="w"> </span><span class="n">connect</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;S4R&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s">&quot;s4_els&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">shellCat</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the addElements command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addElements()</span></code>.</p>
+</li>
+<li><p><strong>The RootAssembly object</strong></p>
+<p>The root assembly is created when you create the output database. You access the RootAssembly object using the same syntax as that used for reading from an output database.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Assembly</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rootAssy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>You can create both instances and regions on the RootAssembly object.</p>
+</li>
+<li><p><strong>Part instances</strong></p>
+<p>You use the Instance constructor to create part instances of the parts you have already defined using the Part constructor. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instanceA</span><span class="w"> </span><span class="o">=</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">Instance</span><span class="p">(</span><span class="s">&quot;part-1-1&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">part1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You can also supply an optional local coordinate system that specifies the rotation and translation of the part instance. You can add nodes and elements only to a part; you cannot add elements and nodes to a part instance. As a result, you should create the nodes and elements that define the geometry of a part before you instance the part. For a full description of the Instance command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbInstance.OdbInstance" title="abaqus.Odb.OdbInstance.OdbInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstance</span></code></a>.</p>
+</li>
+<li><p><strong>Regions</strong></p>
+<p>Region commands are used to create sets from element labels, node labels, and element faces. You can create a set on a part, part instance, or the root assembly. Node and element labels are unique within an instance but not within the assembly. As a result, a set on the root assembly requires the names of the part instances associated with the nodes and elements. You can also use region commands to create surfaces. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// An ElementSet on an instance</span>
+<span class="n">odb_SequenceInt</span><span class="w"> </span><span class="nf">eLabelsA</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">eLabelsA</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">eLabelsA</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">99</span><span class="p">);</span>
+<span class="n">instanceA</span><span class="p">.</span><span class="n">ElementSet</span><span class="p">(</span><span class="s">&quot;elSetA&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">eLabelsA</span><span class="p">);</span>
+
+<span class="c1">// A NodeSet on the rootAssembly</span>
+
+<span class="n">odb_SequenceSequenceInt</span><span class="w"> </span><span class="n">nodeLabelsRA</span><span class="p">;</span>
+<span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">namesRA</span><span class="p">;</span>
+<span class="n">namesRA</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;part-1-1&quot;</span><span class="p">);</span>
+<span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">nodeLabelsRA_A</span><span class="p">;</span>
+<span class="n">nodeLabelsRA_A</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">nodeLabelsRA_A</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">);</span>
+<span class="n">nodeLabelsRA</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">nodeLabelsRA_A</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nSetRA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rootAssy</span><span class="p">.</span><span class="n">NodeSet</span><span class="p">(</span><span class="s">&quot;nodeSetRA&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">namesRA</span><span class="p">,</span><span class="w"> </span><span class="n">nodeLabelsRA</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The region commands are described in <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html"><span class="doc">Region</span></a>.</p>
+</li>
+<li><p><strong>Materials</strong></p>
+<p>You use the Material object to list material properties.Materials are stored in the materials repository under the Odb object.</p>
+<p>Materials are stored in the materials repository under the Odb object.</p>
+<p>Extend the Material commands available to the Odb object using the following statement:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_MaterialApi</span><span class="w"> </span><span class="n">materialApi</span><span class="p">;</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_MATERIAL</span><span class="p">,</span><span class="n">materialApi</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>To create an isotropic elastic material, with a Young's modulus of 12000.0 and an effective Poisson's ratio of 0.3 in the output database:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_String</span><span class="w"> </span><span class="n">materialName</span><span class="p">(</span><span class="s">&quot;Elastic Material&quot;</span><span class="p">);</span>
+<span class="n">odb_Material</span><span class="o">&amp;</span><span class="w"> </span><span class="n">material</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">materialApi</span><span class="p">.</span><span class="n">Material</span><span class="p">(</span><span class="n">materialName</span><span class="p">);</span>
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">myTable</span><span class="p">;</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">myData</span><span class="p">;</span>
+<span class="n">myData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">12000.0</span><span class="p">);</span><span class="w"> </span><span class="n">myData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.3</span><span class="p">);</span>
+<span class="n">myTable</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">myData</span><span class="p">);</span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">type</span><span class="p">(</span><span class="s">&quot;ISOTROPIC&quot;</span><span class="p">);</span>
+<span class="n">material</span><span class="p">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">myTable</span><span class="p">,</span><span class="n">type</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For more information, see <a class="reference internal" href="../../../reference/mdb/model/material.html"><span class="doc">Material</span></a>.</p>
+</li>
+<li><p><strong>Sections</strong></p>
+<p>You use the Section object to create sections and profiles.Sections are stored in the sections repository under the Odb object.</p>
+<p>Sections are stored in the sections repository under the Odb object.</p>
+<p>Extend the API commands available to the Odb object using the following statement:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SectionApi</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">;</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_SECTION</span><span class="p">,</span>
+<span class="w">              </span><span class="n">sectionApi</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The following code creates a homogeneous solid section object. A Material object must be present before creating a Section object. An exception is thrown if the material does not exist.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionName</span><span class="p">(</span><span class="s">&quot;Homogeneous Solid Section&quot;</span><span class="p">);</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">thickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span>
+<span class="n">odb_HomogeneousSolidSection</span><span class="o">&amp;</span><span class="w"> </span><span class="n">mySection</span><span class="w"> </span><span class="o">=</span>
+<span class="w">    </span><span class="n">sectionApi</span><span class="p">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="w"> </span><span class="n">sectionName</span><span class="p">,</span>
+<span class="w">                                        </span><span class="n">materialName</span><span class="p">,</span>
+<span class="w">                                        </span><span class="n">thickness</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>To create a circular beam profile object in the output database:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_String</span><span class="w"> </span><span class="n">profileName</span><span class="p">(</span><span class="s">&quot;Circular Profile&quot;</span><span class="p">);</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10.00</span><span class="p">;</span>
+<span class="n">sectionApi</span><span class="p">.</span><span class="n">CircularProfile</span><span class="p">(</span><span class="n">profileName</span><span class="p">,</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Section assignments</strong></p>
+<p>You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">assignSection()</span></code>.</p>
+<p>All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">setLabels</span><span class="p">;</span>
+<span class="n">setLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">setLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">elsetName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Material 1&quot;</span><span class="p">;</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">ElementSet</span><span class="p">(</span><span class="n">elsetName</span><span class="p">,</span><span class="n">setLabels</span><span class="p">);</span>
+<span class="c1">// section assignment on instance</span>
+<span class="n">instance</span><span class="p">.</span><span class="n">assignSection</span><span class="p">(</span><span class="n">elset</span><span class="p">,</span><span class="n">section</span><span class="p">);</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="writing-results-data">
+<h2>Writing results data<a class="headerlink" href="#writing-results-data" title="Permalink to this heading"></a></h2>
+<p>To write results data to the output database, you first create the Step objects that correspond to each step of the analysis. If you are writing field output data, you also create the Frame objects that will contain the field data. History output data are associated with Step objects.</p>
+<ul>
+<li><p><strong>Steps</strong></p>
+<p>You use the Step constructor to create a results step for time, frequency, or modal domain results. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;s1&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="s">&quot;Perturbation Step&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">);</span>
+<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;sT&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;Time domain analysis&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;sF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s">&quot;Frequency analysis&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">FREQUENCY</span><span class="p">,</span><span class="w"> </span><span class="mf">123.4</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">Step</span></code> constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/mdb/model/step/index.html#abaqus.Step.Step.Step" title="abaqus.Step.Step.Step"><code class="xref py py-class docutils literal notranslate"><span class="pre">Step</span></code></a>.</p>
+</li>
+<li><p><strong>Frames</strong></p>
+<p>You use the Frame constructor to create a frame for field output. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">frameOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step2</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;first frame&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the Frame command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a>.</p>
+</li>
+</ul>
+</section>
+<section id="writing-field-output-data">
+<h2>Writing field output data<a class="headerlink" href="#writing-field-output-data" title="Permalink to this heading"></a></h2>
+<p>A FieldOutput object contains a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You add field output data to a Frame object by first creating a FieldOutput object using the FieldOutput constructor and then adding data to the FieldOutput object using the <code class="docutils literal notranslate"><span class="pre">addData</span></code> method. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// vector</span>
+<span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">vectorCompLabels</span><span class="p">;</span>
+<span class="n">vectorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">);</span>
+<span class="n">vectorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">);</span>
+<span class="n">vectorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">);</span>
+<span class="n">odb_SequenceInvariant</span><span class="w"> </span><span class="n">vectorInvar</span><span class="p">;</span>
+<span class="n">vectorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MAGNITUDE</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vectorField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameOne</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s">&quot;displacement vector&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">VECTOR</span><span class="p">,</span>
+<span class="w">                </span><span class="n">vectorCompLabels</span><span class="p">,</span><span class="w"> </span><span class="n">vectorInvar</span><span class="p">);</span>
+
+<span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">labels2</span><span class="p">;</span>
+<span class="n">labels2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">labels2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">vecDat</span><span class="p">;</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">v1</span><span class="p">;</span>
+<span class="n">v1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.1</span><span class="p">);</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.2</span><span class="p">);</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.3</span><span class="p">);</span>
+<span class="n">vecDat</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">v1</span><span class="p">);</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">v2</span><span class="p">;</span>
+<span class="n">v2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.1</span><span class="p">);</span><span class="w"> </span><span class="n">v2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.2</span><span class="p">);</span><span class="w"> </span><span class="n">v2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.3</span><span class="p">);</span>
+<span class="n">vecDat</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">v2</span><span class="p">);</span>
+
+<span class="n">vectorField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">NODAL</span><span class="p">,</span><span class="w"> </span><span class="n">instanceA</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">labels2</span><span class="p">,</span><span class="w"> </span><span class="n">vecDat</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the FieldOutput constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a>.</p>
+<p>The <strong>type</strong> argument to the FieldOutput constructor describes the type of the data—tensor, vector, or scalar. The properties of the different tensor types are:</p>
+<ul>
+<li><p>Full tensor</p>
+<p>A tensor that has six components and three principal values. Full three-dimensional rotation of the tensor is possible.</p>
+</li>
+<li><p>Three-dimensional surface tensor</p>
+<p>A tensor that has only three in-plane components and two principal values. Full three-dimensional rotation of the tensor components is possible.</p>
+</li>
+<li><p>Three-dimensional planar tensor</p>
+<p>A tensor that has three in-plane components, one out-of-plane component, and three principal values. Full three-dimensional rotation of the tensor components is possible.</p>
+</li>
+<li><p>Two-dimensional surface tensor</p>
+<p>A tensor that has only three in-plane components and two principal values. Only in-plane rotation of the tensor components is possible.</p>
+</li>
+<li><p>Two-dimensional planar tensor</p>
+<p>A tensor that has three in-plane components, one out-of-plane component, and three principal values. Only in-plane rotation of the tensor components is possible.</p>
+</li>
+</ul>
+<p>The valid components and invariants for the different data types are given in Table 1.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Data type</p></th>
+<th class="head"><p>Components</p></th>
+<th class="head"><p>Invariants</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SCALAR</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>VECTOR</p></td>
+<td><p>1, 2, 3</p></td>
+<td><p>MAGNITUDE</p></td>
+</tr>
+<tr class="row-even"><td><p>TENSOR_3D_FULL</p></td>
+<td><p>11, 22, 33, 12, 13, 23</p></td>
+<td><p>MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, MIN_PRINCIPAL</p></td>
+</tr>
+<tr class="row-odd"><td><p>TENSOR_3D_SURFACE</p></td>
+<td><p>11, 22, 12</p></td>
+<td><p>MAX_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TENSOR_3D_PLANAR</p></td>
+<td><p>11, 22, 33, 12</p></td>
+<td><p>MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL, OUTOFPLANE_PRINCIPAL</p></td>
+</tr>
+<tr class="row-odd"><td><p>TENSOR_2D_SURFACE</p></td>
+<td><p>11, 22, 12</p></td>
+<td><p>MAX_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TENSOR_2D_PLANAR</p></td>
+<td><p>11, 22, 33, 12</p></td>
+<td><p>MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL, MID_PRINCIPAL, MIN_PRINCIPAL, MAX_INPLANE_PRINCIPAL, MIN_INPLANE_PRINCIPAL, OUTOFPLANE_PRINCIPAL</p></td>
+</tr>
+</tbody>
+</table>
+<p>For example, the following statements add element data to the FieldOutput object:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">tensorCompLabels</span><span class="p">;</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s11&quot;</span><span class="p">);</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s22&quot;</span><span class="p">);</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s33&quot;</span><span class="p">);</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s12&quot;</span><span class="p">);</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s13&quot;</span><span class="p">);</span>
+<span class="n">tensorCompLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;s23&quot;</span><span class="p">);</span>
+<span class="n">odb_SequenceInvariant</span><span class="w"> </span><span class="n">tensorInvar</span><span class="p">;</span>
+<span class="n">tensorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MISES</span><span class="p">);</span>
+<span class="n">tensorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TRESCA</span><span class="p">);</span>
+<span class="n">tensorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MAX_PRINCIPAL</span><span class="p">);</span>
+<span class="n">tensorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MID_PRINCIPAL</span><span class="p">);</span>
+<span class="n">tensorInvar</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">MIN_PRINCIPAL</span><span class="p">);</span>
+
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tensorField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameOne</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;S&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s">&quot;stress tensor&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TENSOR_3D_FULL</span><span class="p">,</span>
+<span class="w">                </span><span class="n">tensorCompLabels</span><span class="p">,</span><span class="w"> </span><span class="n">tensorInvar</span><span class="p">);</span>
+
+<span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">tensorLabels</span><span class="p">;</span>
+<span class="n">tensorLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">tensorLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">99</span><span class="p">);</span>
+
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">tensorDat</span><span class="p">;</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">t1</span><span class="p">;</span>
+<span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
+<span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">t2</span><span class="p">;</span>
+<span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">120.0</span><span class="p">);</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">-55.0</span><span class="p">);</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">-85.0</span><span class="p">);</span>
+<span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">-55.0</span><span class="p">);</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">-75.0</span><span class="p">);</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">33.0</span><span class="p">);</span>
+<span class="n">tensorDat</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">t1</span><span class="p">);</span>
+<span class="n">tensorDat</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">t2</span><span class="p">);</span>
+
+<span class="n">tensorField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">CENTROID</span><span class="p">,</span><span class="w"> </span><span class="n">instanceA</span><span class="p">,</span><span class="w"> </span><span class="n">tensorLabels</span><span class="p">,</span>
+<span class="w">            </span><span class="n">tensorDat</span><span class="p">,</span><span class="w"> </span><span class="n">topShell</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the <code class="docutils literal notranslate"><span class="pre">addData</span></code> command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code>.</p>
+<p>As a convenience, <strong>localCoordSystem</strong> can be a single transform or a list of transforms. If <strong>localCoordSystem</strong> is a single transform, it applies to all values. If <strong>localCoordSystem</strong> is a list of transforms, the number of items in the list must match the number of data values.</p>
+</section>
+<section id="default-display-properties">
+<h2>Default display properties<a class="headerlink" href="#default-display-properties" title="Permalink to this heading"></a></h2>
+<p>The previous examples show how you can use commands to set the default field variable and deformed field variable. Abaqus/CAE uses the default field variable setting to determine the variable to display in a contour plot; for example, stress. Similarly, the default deformed field variable determines the variable that distinguishes a deformed plot from an undeformed plot. Typically, you will use displacement for the default deformed field variable; you cannot specify an invariant or a component. The default variable settings apply for each frame in the step. For example, the following statements use the deformation 'U' as the default setting for both field variable and deformed field variable settings during a particular step:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">step1</span><span class="p">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">tensorField</span><span class="p">);</span>
+<span class="n">step1</span><span class="p">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">vectorField</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You can set a different default field variable and deformed field variable for different steps.</p>
+</section>
+<section id="writing-history-output-data">
+<h2>Writing history output data<a class="headerlink" href="#writing-history-output-data" title="Permalink to this heading"></a></h2>
+<p>History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. Depending on the type of output expected, the historyRegions repository contains data from one of the following:</p>
+<ul class="simple">
+<li><p>a node</p></li>
+<li><p>an element, or a location in an element</p></li>
+<li><p>a region</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>History data from an analysis cannot contain multiple points.</p>
+</div>
+<p>The output from all history requests that relate to a specified point is collected in one HistoryRegion object. You use the HistoryPoint constructor to create the point. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">db_HistoryPoint</span><span class="w"> </span><span class="nf">hPoint1</span><span class="p">(</span><span class="n">instanceA</span><span class="p">.</span><span class="n">elements</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>For a full description of the HistoryPoint command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>.</p>
+<p>You then use the HistoryRegion constructor to create a HistoryRegion object:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="s">&quot;ElHist&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;output at element&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hPoint1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>For a full description of the HistoryRegion command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.HistoryRegion" title="abaqus.Odb.HistoryRegion.HistoryRegion"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryRegion</span></code></a>.</p>
+<p>You use the HistoryOutput constructor to add variables to the HistoryRegion object.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="s">&quot;ElHist&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;output at element&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hPoint1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Each HistoryOutput object contains a sequence of (<strong>frameValue</strong>, <strong>value</strong>) sequences. The HistoryOutput object has a method (addData) for adding data. Each data item is a sequence of (<strong>frameValue</strong>, <strong>value</strong>). In a time domain analysis (<strong>domain</strong> = TIME) the sequence is (<strong>stepTime</strong>, <strong>value</strong>). In a frequency domain analysis (<strong>domain</strong> = FREQUENCY) the sequence is (<strong>frequency</strong>, <strong>value</strong>). In a modal domain analysis (<strong>domain</strong> = MODAL) the sequence is (<strong>mode</strong>, <strong>value</strong>).</p>
+<p>You add the data values as time and data tuples. The number of data items must correspond to the number of time items. For example,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">ho1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+
+<span class="c1">// or using two sequences</span>
+
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">timeData</span><span class="p">;</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">values</span><span class="p">;</span>
+<span class="n">timeData</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.001</span><span class="p">);</span>
+<span class="n">values</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="n">ho1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">timeData</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="p">);</span>
+
+<span class="c1">// or using a sequence of sequences</span>
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">s11</span><span class="p">;</span>
+<span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">value1</span><span class="p">;</span>
+<span class="n">value1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.001</span><span class="p">);</span>
+<span class="n">value1</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="n">s11</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">value1</span><span class="p">);</span>
+<span class="n">ho1</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">s11</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="read.html" class="btn btn-neutral float-left" title="Reading from an output database" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exceptions.html" class="btn btn-neutral float-right" title="Exception handling in an output database" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

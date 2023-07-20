@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus PDE basics &mdash; abqpy 2016.5.4.post3.dev9+ge59b89019 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Using the Abaqus PDE" href="use-pde.html" />
+    <link rel="prev" title="About the Abaqus Python development environment" href="about.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2016
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">The Abaqus Python Development Environment</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="about.html">About the Abaqus Python development environment</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Abaqus PDE basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starting-the-abaqus-python-development-environment">Starting the Abaqus Python development environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#managing-files-in-the-abaqus-pde">Managing files in the Abaqus PDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-files-in-the-abaqus-pde">Editing files in the Abaqus PDE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#selecting-the-settings-for-use-with-a-file">Selecting the settings for use with a file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-message-area-and-gui-command-line-interface">The message area and GUI command line interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="use-pde.html">Using the Abaqus PDE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="index.html">The Abaqus Python Development Environment</a></li>
+      <li class="breadcrumb-item active">Abaqus PDE basics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/user/environment/pde-basics.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-pde-basics">
+<h1>Abaqus PDE basics<a class="headerlink" href="#abaqus-pde-basics" title="Permalink to this heading"></a></h1>
+<p>The following sections describe the basic functions of the PDE.</p>
+<section id="starting-the-abaqus-python-development-environment">
+<h2>Starting the Abaqus Python development environment<a class="headerlink" href="#starting-the-abaqus-python-development-environment" title="Permalink to this heading"></a></h2>
+<p>You can choose from several methods to start the Abaqus Python development environment. If you plan to work on scripts that use the Abaqus/CAE GUI, you should start the Abaqus PDE from within an Abaqus/CAE session or start it from the command prompt when you start Abaqus/CAE. These startup methods link the Abaqus PDE to the corresponding Abaqus/CAE session. Alternatively, you can start the Abaqus PDE independently to save system memory or avoid using an Abaqus license.</p>
+<p>Use one of the following methods to start the Abaqus PDE. The first two methods start the Abaqus PDE with a link to an Abaqus/CAE session. The last method starts the Abaqus PDE independently from Abaqus/CAE:</p>
+<ul>
+<li><p>In Abaqus/CAE, select File -&gt; Abaqus PDE from the main menu bar.</p></li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>cae<span class="w"> </span>-pde
+</pre></div>
+</div>
+<p>where <strong>abaqus</strong> is the command used to start Abaqus.</p>
+<p>Note:</p>
+<p>Using this method starts Abaqus/CAE without any local user preference settings. Ignoring user preferences allows you to record and run .guiLog tests using the consistent default startup settings.</p>
+</li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>pde<span class="w"> </span><span class="o">[</span>filenames<span class="o">]</span><span class="w"> </span><span class="o">[</span>-script<span class="w"> </span>filename<span class="o">]</span><span class="w"> </span><span class="o">[</span>-pde<span class="w"> </span>Abaqus/CAE<span class="w"> </span><span class="nb">command</span><span class="w"> </span>line<span class="w"> </span>arguments<span class="o">]</span>
+</pre></div>
+</div>
+<p>where <strong>abaqus</strong> is the command used to start Abaqus, and <strong>filenames</strong> are the names, including the directory paths, of scripts to be opened at startup.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">-script</span></code> option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>File names and paths specified without the <code class="docutils literal notranslate"><span class="pre">-script</span></code> option are opened for editing—not as the main file.</p>
+<p>The -pde option is used to specify options for use with Abaqus/CAE if you run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or user interface. You can also add command line options for Abaqus/CAE using the Settings menu. For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all">Selecting the settings for use with a file</a>.</p>
+</div>
+</li>
+</ul>
+<p>The sections that follow describe how to use the menus and tools within the Abaqus PDE.</p>
+</section>
+<section id="managing-files-in-the-abaqus-pde">
+<h2>Managing files in the Abaqus PDE<a class="headerlink" href="#managing-files-in-the-abaqus-pde" title="Permalink to this heading"></a></h2>
+<p>You can use the File menu and tools to manage files in the Abaqus PDE. You can work with multiple scripts, but you can test only one script at a time. The file to be tested is called the Main File. The path and file name of the main file are displayed near the upper left corner of the Abaqus PDE window. You can open the main file by using the Select Main File or Recent Main Files items in the File menu. You can also create a new main file or select an open file to be the main file.</p>
+<p>Note:</p>
+<p>When the Set Last Main File on Startup setting is toggled on, the Abaqus PDE automatically reopens the main file that was open when you closed your last session.</p>
+<p>The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .py file typically designates a standard Python or Abaqus Scripting Interface script, and a .guiLog file is a specialized Python script that records actions in the Abaqus/CAE GUI.</p>
+<p>As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps.</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-pde-filemenu-nls"><span class="std std-numref">Fig. 19</span></a> shows the items in the Abaqus PDE File menu.</p>
+<figure class="align-center" id="id1">
+<span id="cmd-pde-filemenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-filemenu-nls.png"><img alt="../../_images/cmd-pde-filemenu-nls.png" src="../../_images/cmd-pde-filemenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">The File menu</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The following options are available from the File menu:</p>
+<ul>
+<li><p><strong>New</strong></p>
+<p>Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention <code class="docutils literal notranslate"><span class="pre">_abaqus*#*_.guiLog</span></code>, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog icon to create a new file.Abaqus automatically designates the new script as the main file.</p>
+</li>
+<li><p><strong>Open</strong></p>
+<p>Open a script. You can also click the Open file icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing. <strong>Tip:</strong> You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables.</p>
+</li>
+<li><p><strong>Select Main File</strong></p>
+<p>Open a script as the main file for testing. You can also click the Open main file icon to open a script as the main file.</p>
+</li>
+<li><p><strong>Make Current Main</strong></p>
+<p>Designate the current script in the main window as the main file for testing.</p>
+</li>
+<li><p><strong>Save</strong></p>
+<p>Save changes to the current file. You can also click Save to save the current file.</p>
+</li>
+<li><p><strong>Save As</strong></p>
+<p>Save the current file with a new name.</p>
+</li>
+<li><p><strong>Reload Modules</strong></p>
+<p>Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process.</p>
+</li>
+<li><p><strong>Close File</strong></p>
+<p>Close the current file.</p>
+</li>
+<li><p><strong>Filename.py</strong></p>
+<p>The name and file extension of the current main file, if one is selected.Clicking here shows a list of dependent files that were found when the main file was run. If the current main file has not been run in the Abaqus PDE, this list will be empty.</p>
+</li>
+<li><p><strong>Recent Main Files</strong></p>
+<p>A list of the files that you have opened as the main file for testing. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Traced Files</strong></p>
+<p>A list of files that were opened by the Abaqus PDE to trace a function called by one of the main files that you tested. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Files</strong></p>
+<p>A list of all files that you have opened, regardless of whether you opened them to view and edit them or opened them as the main file for testing. Recent Files from previous sessions will be read from the <code class="docutils literal notranslate"><span class="pre">abaqus_pde.deps</span></code> file, if it exists in the current directory.</p>
+</li>
+</ul>
+<p>The recently used files lists are stored in the <code class="docutils literal notranslate"><span class="pre">abaqus_pde.deps</span></code> file in the directory from which you start the current Abaqus PDE session. If you start an Abaqus PDE session from another location, the lists contain only the files that you used the last time you opened a session in that directory. If you have not previously used the Abaqus PDE in the current directory, a new set of recently used files is recorded as you work.</p>
+</section>
+<section id="editing-files-in-the-abaqus-pde">
+<h2>Editing files in the Abaqus PDE<a class="headerlink" href="#editing-files-in-the-abaqus-pde" title="Permalink to this heading"></a></h2>
+<p>You can use the <strong>Edit</strong> menu to edit scripts in the Abaqus PDE. The <strong>Edit</strong> menu contains common editing tools, including <strong>Undo</strong>, <strong>Redo</strong>, <strong>Copy</strong>, <strong>Cut</strong>, <strong>Paste</strong>, <strong>Find</strong>, and <strong>Replace</strong>. It also contains the following tools for editing scripts:</p>
+<ul class="simple">
+<li><p><strong>Indent Region &gt;</strong></p></li>
+<li><p><strong>Unindent Region &lt;</strong></p></li>
+<li><p><strong>Comment Region ##</strong></p></li>
+<li><p><strong>Uncomment Region</strong></p></li>
+</ul>
+<p>To use these tools, highlight one or more lines of code in the main window and select the desired option from the <strong>Edit</strong> menu. The <strong>Edit</strong> menu also contains a keyboard shortcut for each of the editing tools.</p>
+</section>
+<section id="selecting-the-settings-for-use-with-a-file">
+<h2>Selecting the settings for use with a file<a class="headerlink" href="#selecting-the-settings-for-use-with-a-file" title="Permalink to this heading"></a></h2>
+<p>Use the <strong>Settings</strong> menu and tools to change some of the options in the Abaqus PDE.</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-pde-settingsmenu-nls"><span class="std std-numref">Fig. 20</span></a> shows the items and default selections in the Abaqus PDE <strong>Settings</strong> menu.</p>
+<figure class="align-center" id="id2">
+<span id="cmd-pde-settingsmenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-settingsmenu-nls.png"><img alt="../../_images/cmd-pde-settingsmenu-nls.png" src="../../_images/cmd-pde-settingsmenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">The Settings menu.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The following items are available from the <strong>Settings</strong> menu:</p>
+<ul>
+<li><p><strong>Recording Options</strong></p>
+<p>Set the display of the triad, state block, and title block and whether the legend background matches the viewport. These options affect the commands recorded for an output database.</p>
+</li>
+<li><p><strong>Allow Editing of Files</strong></p>
+<p>Toggle between edit and read-only modes for all files. Editing is allowed by default.</p>
+</li>
+<li><p><strong>Show File Line Numbers</strong></p>
+<p>Display line numbers for any open files on the left side of the main window. Line numbers are displayed by default.</p>
+</li>
+<li><p><strong>Ignore Breakpoints During Play</strong></p>
+<p>Run the main file continuously, skipping any breakpoints, until it completes or stops for an error. Breaks are not skipped by default. You can also skip breakpoints by toggling on Ignore breaks, located in the toolbar above the main window.</p>
+</li>
+<li><p><strong>Allow Pause in Play</strong></p>
+<p>Pause a running file by clicking the <strong>Pause</strong> button. Pause is allowed by default. Allowing pause also causes the main file to run in the debugger. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdedebug.htm?contextscope=all">Using the debugger</a>.)</p>
+</li>
+<li><p><strong>Set Last Main File on Startup</strong></p>
+<p>Upon startup, automatically reopen the main file that was open when you last closed the Abaqus PDE.</p>
+</li>
+<li><p><strong>Run Script In</strong></p>
+<p>Select whether the main file is run in the Abaqus/CAE GUI, the Abaqus/CAE kernel, or run locally. By default, <code class="docutils literal notranslate"><span class="pre">.guiLog</span></code> files are run in the GUI, and <code class="docutils literal notranslate"><span class="pre">.py</span></code> and other file types are run in the kernel. You can also set this option using the GUI, Kernel, and Local radio buttons located above the main window.If the Abaqus PDE was opened without Abaqus/CAE and you run a script with the <strong>GUI</strong> or <strong>Kernel</strong> process, the Abaqus PDE will start Abaqus/CAE to run the script.</p>
+</li>
+<li><p><strong>.py Default to Kernel</strong></p>
+<p>Set <code class="docutils literal notranslate"><span class="pre">.py</span></code> files to run in the Abaqus/CAE kernel. This option is selected by default. If <code class="docutils literal notranslate"><span class="pre">.py</span></code> Default to Kernel is not selected, <code class="docutils literal notranslate"><span class="pre">.py</span></code> files are run locally. Select the <strong>GUI</strong> or <strong>Local</strong> radio button to run a Python script in one of these modes without changing the default behavior.</p>
+</li>
+<li><p><strong>Line Animation</strong></p>
+<p>Highlight the line currently being executed in the main window. The following animation settings are available:</p>
+<ul class="simple">
+<li><p>No animation.</p></li>
+<li><p>Animate main file (default). Highlights only the statements in the main function or method. Functions called from the main script are not highlighted.</p></li>
+<li><p>Animate main file functions. Highlights the main script statements and the statements in functions that are defined within the main file.</p></li>
+<li><p>Animate all files. Highlights the main script statements and statements within all functions for which the source code is available.</p></li>
+</ul>
+</li>
+<li><p><strong>Python Code</strong></p>
+<p>Control the appearance and editing behavior of Python scripts in the Abaqus PDE main window.</p>
+<ul>
+<li><p><strong>Syntax Coloring</strong></p>
+<p>Display the code using various font colors according to its purpose. This option is selected by default.You can view or change the color selections with the Choose Syntax Colors option.</p>
+</li>
+<li><p><strong>Python Editing</strong></p>
+<p>Edit scripts with Python formatting, such as indentation, included automatically. This option is selected by default.</p>
+</li>
+<li><p><strong>Choose Syntax Colors</strong></p>
+<p>Opens the <strong>PDE Syntax Colors</strong> dialog box in which you can view or change the color selections for editing scripts. Click <strong>Reset Defaults</strong> to restore the default colors.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>CAE Command Line Extra Args...</strong></p>
+<p>Enter extra arguments for use when Abaqus/CAE is launched from the Abaqus PDE.</p>
+</li>
+<li><p><strong>Auto Trace in CAE</strong></p>
+<p>Automatically trace code in GUI and kernel processes of Abaqus/CAE. The script will be traced until it returns from the frame in which the trace started. The trace will therefore stop when the function returns or the end of the script is reached. This option is selected by default.</p>
+</li>
+</ul>
+</section>
+<section id="the-message-area-and-gui-command-line-interface">
+<h2>The message area and GUI command line interface<a class="headerlink" href="#the-message-area-and-gui-command-line-interface" title="Permalink to this heading"></a></h2>
+<p>The message area and the GUI command line interface share the space at the bottom of the Abaqus PDE, similar to the kernel command line interface in Abaqus/CAE. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all">Components of the main window</a>.) The message area is displayed by default. It displays messages and warnings as you run scripts in the Abaqus PDE.</p>
+<p>The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click <img alt="ico_guiCli" src="../../_images/ico_guiCli.png" /> in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (&gt;&gt;&gt;) and secondary (...) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click <img alt="afxI_messageArea" src="../../_images/afxI_messageArea.png" /> to display the message area.</p>
+<p>If new messages are generated in the message area while the GUI command line interface is active, the background around the message area icon turns red. The background reverts to its normal color when you display the message area.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="about.html" class="btn btn-neutral float-left" title="About the Abaqus Python development environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="use-pde.html" class="btn btn-neutral float-right" title="Using the Abaqus PDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
