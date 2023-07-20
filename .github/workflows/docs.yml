@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 20**
+      - furo
+      - sphinx-book-theme
     paths:
       - "src/**"
       - "docs/source/**"
@@ -12,6 +14,8 @@ on:
   pull_request:
     branches:
       - 20**
+      - furo
+      - sphinx-book-theme
     types: [opened, reopened, synchronize]
     paths:
       - "src/**"
