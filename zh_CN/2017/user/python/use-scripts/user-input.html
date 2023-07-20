@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompting the user for input &mdash; abqpy 2017.5.4.post3.dev9+g880398aa1 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Interacting with Abaqus/Standard and Abaqus/Explicit" href="interact.html" />
+    <link rel="prev" title="Specifying a region" href="specify-region.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2017
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-abaqus/index.html">Using Python and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-region.html">Specifying a region</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+      <li class="breadcrumb-item active">Prompting the user for input</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/use-scripts/user-input.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prompting-the-user-for-input">
+<h1>Prompting the user for input<a class="headerlink" href="#prompting-the-user-for-input" title="此标题的永久链接"></a></h1>
+<p>You may want to request input from a user while an Abaqus Scripting Interface script is executing. There are many reasons for requesting input; for example, to specify design parameters, to enable a macro to take action based on the input received, or to force parts of the script to be repeated. The Abaqus Scripting Interface provides three functions that request input from the user and return the data entered by the user:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function requests a single input from the user from a text field in a dialog box.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> function requests multiple inputs from the user from text fields in a dialog box.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">getWarningReply</span></code> function requests a reply to a warning message from the user from a warning dialog box.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Note: You cannot use a script that contains getInput, getInputs or getWarningReply if you are running the script from the command line and passing the script name to the command line options -start,-replay or -noGUI.</p>
+</div>
+<section id="requesting-a-single-input-from-the-user">
+<h2>Requesting a single input from the user<a class="headerlink" href="#requesting-a-single-input-from-the-user" title="此标题的永久链接"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function displays a dialog box in the center of the main window, and the user enters the requested value in the text field in the dialog box. The value is returned to the executing script as a String after the user presses the <strong>[Enter]</strong> key or clicks <strong>[OK]</strong>. Optionally, you can specify a default value to be displayed in the text field. The <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function does not provide any error checking; it is the script author's responsibility to verify the user input. For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.User.getInput" title="abaqus.UtilityAndView.User.getInput"><code class="xref py py-func docutils literal notranslate"><span class="pre">getInput()</span></code></a>.</p>
+<p>The following examples illustrate the use of the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function. The first example shows a script that uses the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function to obtain a number from the user. The script then prints the square root of that number.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getInput</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">getInput</span><span class="p">(</span><span class="s1">&#39;Enter a number:&#39;</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">float</span></code> function on the third line converts the string returned by <code class="docutils literal notranslate"><span class="pre">getInput</span></code> into a floating point number. The following figure shows the dialog box that appears when this script is executed:</p>
+<figure class="align-center" id="utl-getinput-nls">
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-nls.png"><img alt="../../../_images/utl-getinput-nls.png" src="../../../_images/utl-getinput-nls.png" style="width: 50%;" /></a>
+</figure>
+<p>The next example shows how to modify a macro recorded by the <strong>Macro Manager</strong> in Abaqus/CAE to use the getInput function. The following text shows a macro named <code class="docutils literal notranslate"><span class="pre">createViewport</span></code> that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file <code class="docutils literal notranslate"><span class="pre">abaqusMacros.py</span></code> in your local or home directory.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">createViewport</span><span class="p">():</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Viewport: 2&#39;</span><span class="p">,</span>
+        <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mf">15.0</span><span class="p">,</span><span class="mf">15.0</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mf">145.0</span><span class="p">,</span>
+        <span class="n">height</span><span class="o">=</span><span class="mf">90.0</span><span class="p">)</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport: 2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">makeCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The following shows how you can modify the macro to accept input from the user. Default values for the viewport width and height have been added to the input request.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">createViewport</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">getInput</span><span class="p">(</span><span class="s1">&#39;Enter viewport name:&#39;</span><span class="p">)</span>
+    <span class="n">prompt</span> <span class="o">=</span> <span class="s1">&#39;Enter viewport width, height (mm):&#39;</span>
+    <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">getInput</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="s1">&#39;100,50&#39;</span><span class="p">))</span>
+    <span class="n">vp</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">w</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">restore</span><span class="p">()</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">makeCurrent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">eval</span></code> function in the third line of the macro converts the string returned by the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function into two integers. When you supply the default values shown in this example to the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function, the prompt and the text field in the dialog box that appears are shown in the following figure. If the user clicks <strong>[OK]</strong> or presses <strong>[Enter]</strong>, the default values are accepted and returned to the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function. If the user clicks <strong>[Cancel]</strong>, None is returned.</p>
+<figure class="align-center" id="utl-getinput-default-nls">
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-default-nls.png"><img alt="../../../_images/utl-getinput-default-nls.png" src="../../../_images/utl-getinput-default-nls.png" style="width: 50%;" /></a>
+</figure>
+</section>
+<section id="requesting-multiple-inputs-from-the-user">
+<h2>Requesting multiple inputs from the user<a class="headerlink" href="#requesting-multiple-inputs-from-the-user" title="此标题的永久链接"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> function displays a dialog box in the center of the main window, and the user enters the requested values in text fields in the dialog box. The values are returned to the executing script as a sequence of Strings after the user clicks the <strong>[OK]</strong> button or presses <strong>[Enter]</strong>. Optionally, you can specify default values to be displayed in the text fields. For more information, see <code class="xref py py-func docutils literal notranslate"><span class="pre">getInputs()</span></code>.</p>
+<p>The following examples illustrate the use of the <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> function to obtain a sequence of numbers from the user:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getInputs</span>
+<span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Width:&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Length:&#39;</span><span class="p">,</span> <span class="s1">&#39;20&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Height:&#39;</span><span class="p">,</span> <span class="s1">&#39;30&#39;</span><span class="p">))</span>
+<span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span>
+    <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="n">fields</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Specify block dimensions:&#39;</span><span class="p">,</span>
+        <span class="n">dialogTitle</span><span class="o">=</span><span class="s1">&#39;Create Block&#39;</span><span class="p">,</span> <span class="p">)</span>
+<span class="k">print</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span>
+</pre></div>
+</div>
+<p>The following figure shows the dialog box that these statements create:</p>
+<figure class="align-center" id="utl-getinputs-nls">
+<a class="reference internal image-reference" href="../../../_images/utl-getinputs-nls.png"><img alt="../../../_images/utl-getinputs-nls.png" src="../../../_images/utl-getinputs-nls.png" style="width: 50%;" /></a>
+</figure>
+<p>The <code class="docutils literal notranslate"><span class="pre">fields</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Width&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Length&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span>
+    <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="n">fields</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Specify block dimensions:&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">label</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> method is an optional label that appears across the top of the dialog box. The dialogTitle argument is an optional string that appears in the title bar of the dialog box.</p>
+<p>If the user clicks <strong>[Cancel]</strong>, the <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> method returns a sequence of <code class="docutils literal notranslate"><span class="pre">None</span></code> objects. You can check the first value in the sequence to determine if the user clicked <strong>[Cancel]</strong>; for example:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Density&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Youngs modulus&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
+<span class="n">density</span><span class="p">,</span> <span class="n">modulus</span> <span class="o">=</span> <span class="n">getInputs</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="s1">&#39;Material properties&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">density</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;User pressed Cancel&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="requesting-a-warning-reply-from-the-user">
+<h2>Requesting a warning reply from the user<a class="headerlink" href="#requesting-a-warning-reply-from-the-user" title="此标题的永久链接"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">getWarningReply</span></code> function displays a warning dialog box in the center of the main window, and the user clicks on one of the standard reply buttons in the dialog box. The clicked button value is returned to the executing script. For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.User.getWarningReply" title="abaqus.UtilityAndView.User.getWarningReply"><code class="xref py py-func docutils literal notranslate"><span class="pre">getWarningReply()</span></code></a>.</p>
+<p>The following example illustrates the use of the <code class="docutils literal notranslate"><span class="pre">getWarningReply</span></code> function:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="n">getWarningReply</span><span class="p">,</span> <span class="n">YES</span><span class="p">,</span> <span class="n">NO</span>
+
+<span class="n">reply</span> <span class="o">=</span> <span class="n">getWarningReply</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;Okay to continue?&#39;</span><span class="p">,</span> <span class="n">buttons</span><span class="o">=</span><span class="p">(</span><span class="n">YES</span><span class="p">,</span><span class="n">NO</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">YES</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;YES clicked&#39;</span>
+<span class="k">elif</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">NO</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;NO clicked&#39;</span>
+</pre></div>
+</div>
+<p>The following figure shows the dialog box that appears when this script is executed:</p>
+<figure class="align-center" id="utl-getwarningreply-nls">
+<a class="reference internal image-reference" href="../../../_images/utl-getwarningreply-nls.png"><img alt="../../../_images/utl-getwarningreply-nls.png" src="../../../_images/utl-getwarningreply-nls.png" style="width: 50%;" /></a>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="specify-region.html" class="btn btn-neutral float-left" title="Specifying a region" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="interact.html" class="btn btn-neutral float-right" title="Interacting with Abaqus/Standard and Abaqus/Explicit" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Abaqus Scripting Interface commands in your environment file &mdash; abqpy 2017.5.4.post3.dev9+g880398aa1 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="The Abaqus Python Development Environment" href="../../environment/index.html" />
+    <link rel="prev" title="Interacting with Abaqus/Standard and Abaqus/Explicit" href="interact.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2017
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-abaqus/index.html">Using Python and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-region.html">Specifying a region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+      <li class="breadcrumb-item active">Using Abaqus Scripting Interface commands in your environment file</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/use-scripts/environment-file.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-abaqus-scripting-interface-commands-in-your-environment-file">
+<h1>Using Abaqus Scripting Interface commands in your environment file<a class="headerlink" href="#using-abaqus-scripting-interface-commands-in-your-environment-file" title="此标题的永久链接"></a></h1>
+<p>The Abaqus environment file is read by Abaqus/CAE when you start a session. The environment file can contain Abaqus Scripting Interface commands. The following is an example environment file:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">scratch</span> <span class="o">=</span> <span class="s1">&#39;c:/temp&#39;</span>
+<span class="n">memory</span> <span class="o">=</span> <span class="mi">256</span><span class="n">mb</span>
+
+<span class="k">def</span> <span class="nf">onCaeGraphicsStartup</span><span class="p">():</span>
+
+    <span class="c1"># Graphics preferences</span>
+    <span class="c1">#</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">defaultGraphicsOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
+        <span class="n">displayLists</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">dragMode</span><span class="o">=</span><span class="n">AS_IS</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">onCaeStartup</span><span class="p">():</span>
+
+    <span class="c1"># Print preferences</span>
+    <span class="c1">#</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">printOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">vpDecorations</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span>
+        <span class="n">vpBackground</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">rendition</span><span class="o">=</span><span class="n">COLOR</span><span class="p">,</span>
+        <span class="n">printCommand</span><span class="o">=</span><span class="s1">&#39;lpr&#39;</span><span class="p">)</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">psOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">date</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+
+    <span class="c1"># Job preferences</span>
+    <span class="c1">#</span>
+    <span class="k">def</span> <span class="nf">setJobPreferences</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
+
+        <span class="kn">import</span> <span class="nn">job</span>
+        <span class="n">session</span><span class="o">.</span><span class="n">Queue</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;long&#39;</span><span class="p">,</span> <span class="n">hostName</span><span class="o">=</span><span class="s1">&#39;server&#39;</span><span class="p">,</span>
+            <span class="n">queueName</span><span class="o">=</span><span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;/tmp&#39;</span><span class="p">)</span>
+    <span class="n">addImportCallback</span><span class="p">(</span><span class="s1">&#39;job&#39;</span><span class="p">,</span> <span class="n">setJobPreferences</span><span class="p">)</span>
+
+    <span class="c1"># Visualization preferences</span>
+    <span class="c1">#</span>
+    <span class="k">def</span> <span class="nf">setVisPreferences</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
+
+        <span class="kn">import</span> <span class="nn">visualization</span>
+        <span class="n">session</span><span class="o">.</span><span class="n">defaultOdbDisplay</span><span class="o">.</span><span class="n">contourOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
+            <span class="n">renderStyle</span><span class="o">=</span><span class="n">SHADED</span><span class="p">,</span> <span class="n">visibleEdges</span><span class="o">=</span><span class="n">EXTERIOR</span><span class="p">,</span>
+            <span class="n">contourStyle</span><span class="o">=</span><span class="n">CONTINUOUS</span><span class="p">)</span>
+    <span class="n">addImportCallback</span><span class="p">(</span><span class="s1">&#39;visualization&#39;</span><span class="p">,</span> <span class="n">setVisPreferences</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">addImportCallback</span></code> statement instructs Abaqus to call a function when the user first imports a module. In this example Abaqus calls the <code class="docutils literal notranslate"><span class="pre">setJobPreferences</span></code> function when the user first enters the Job module, and Abaqus calls the <code class="docutils literal notranslate"><span class="pre">setVisPreferences</span></code> function when the user first enters the Visualization module. The <code class="docutils literal notranslate"><span class="pre">setJobPreferences</span></code> function creates a queue on a remote host. The <code class="docutils literal notranslate"><span class="pre">setVisPreferences</span></code> function sets default options for contour plots.</p>
+<p>The example environment file uses the <code class="docutils literal notranslate"><span class="pre">onCaeStartup()</span></code> function to control a set of Python statements that are executed when Abaqus/CAE first starts. The environment file can also contain the following:</p>
+<ul>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">onJobStartup()</span></code> function controls a set of statements that execute when an analysis job starts. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">onJobStartup</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">shutil</span>
+    <span class="n">restartDir</span> <span class="o">=</span> <span class="n">savedir</span> <span class="o">+</span> <span class="nb">id</span> <span class="o">+</span> <span class="s1">&#39;_restart&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">restartDir</span><span class="p">)):</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">restartDir</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>The onJobCompletion() function controls a set of statements that execute when an analysis job completes. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">onJobCompletion</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="n">extensions</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;res&#39;</span><span class="p">,</span><span class="s1">&#39;stt&#39;</span><span class="p">,</span><span class="s1">&#39;mdl&#39;</span><span class="p">,</span><span class="s1">&#39;prt&#39;</span><span class="p">,</span><span class="s1">&#39;abq&#39;</span><span class="p">,</span><span class="s1">&#39;pac&#39;</span><span class="p">)</span>
+    <span class="n">restartDir</span> <span class="o">=</span> <span class="n">savedir</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">+</span> <span class="nb">id</span> <span class="o">+</span> <span class="s1">&#39;_restart&#39;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">restartDir</span><span class="p">)):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">restartDir</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">extension</span> <span class="ow">in</span> <span class="n">extensions</span><span class="p">:</span>
+        <span class="n">fileName</span> <span class="o">=</span> <span class="nb">id</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">extension</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">savedir</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">+</span> <span class="n">fileName</span><span class="p">)):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">savedir</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">+</span> <span class="n">fileName</span><span class="p">,</span>
+                <span class="n">restartDir</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">sep</span> <span class="o">+</span> <span class="n">fileName</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>The following variables are available to the <code class="docutils literal notranslate"><span class="pre">onJobStartup()</span></code> and <code class="docutils literal notranslate"><span class="pre">onJobCompletion()</span></code> functions:</p>
+<ul>
+<li><p><strong>id</strong></p>
+<p>The job identifier that was specified as the value of the job option from the command line.</p>
+</li>
+<li><p><strong>savedir</strong></p>
+<p>The path to the directory from which the job was submitted.</p>
+</li>
+<li><p><strong>scrdir</strong></p>
+<p>The path to the scratch directory.</p>
+</li>
+<li><p><strong>analysisType</strong></p>
+<p>The type of analysis to be executed. Possible values are STANDARD and EXPLICIT.</p>
+</li>
+</ul>
+<p>For a list of the variables that are available outside of the <code class="docutils literal notranslate"><span class="pre">onJobStartup()</span></code> and <code class="docutils literal notranslate"><span class="pre">onJobCompletion()</span></code> functions, see Job variables.</p>
+<p>For more information on the environment file, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-envfile.htm?contextscope=all">Environment File Settings</a> and <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEILGRefMap/simailg-m-Environment-sb.htm?contextscope=all">Customizing the Abaqus environment</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="interact.html" class="btn btn-neutral float-left" title="Interacting with Abaqus/Standard and Abaqus/Explicit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../environment/index.html" class="btn btn-neutral float-right" title="The Abaqus Python Development Environment" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
