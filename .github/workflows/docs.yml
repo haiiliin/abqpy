@@ -1,6 +1,14 @@
 name: docs
 
 on:
+  push:
+    branches:
+      - 20**
+    paths:
+      - "src/**"
+      - "docs/source/**"
+      - ".github/workflows/docs.yml"
+      - "pyproject.toml"
   pull_request:
     branches:
       - 20**
@@ -10,6 +18,7 @@ on:
       - "docs/source/**"
       - ".github/workflows/docs.yml"
       - "pyproject.toml"
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,13 +27,14 @@ concurrency:
 jobs:
   sphinx:
     if: >
+      github.event_name == 'push' ||
       github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ["en"]
+        language: ["en", "zh_CN"]
         builder: ["html"]
     steps:
       - uses: actions/setup-python@v4
@@ -44,7 +54,10 @@ jobs:
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
       - name: Upload the documentation
-        uses: actions/upload-artifact@v3
+        if: github.event_name == 'push' && matrix.builder == 'html'
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: docs-${{ matrix.language }}-${{ matrix.builder }}
-          path: docs/build/${{ matrix.builder }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/${{ matrix.builder }}
+          destination_dir: ${{ matrix.language }}/${{ github.ref_name }}
+          keep_files: true
