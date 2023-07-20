@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus Scripting Interface data types &mdash; abqpy 2016.5.4.post3.dev9+ge59b89019 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Object-oriented programming and the Abaqus Scripting Interface" href="oop.html" />
+    <link rel="prev" title="Abaqus Scripting Interface documentation style" href="style.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2016
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using Python and the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="executing.html">Executing scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Abaqus Scripting Interface data types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="oop.html">Object-oriented programming and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="errors.html">Error handling in the Abaqus Scripting Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extending.html">Extending the Abaqus Scripting Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../use-scripts/index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using Python and the Abaqus Scripting Interface</a></li>
+      <li class="breadcrumb-item active">Abaqus Scripting Interface data types</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/python-abaqus/types.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-scripting-interface-data-types">
+<h1>Abaqus Scripting Interface data types<a class="headerlink" href="#abaqus-scripting-interface-data-types" title="此标题的永久链接"></a></h1>
+<p>This section describe the most common Abaqus Scripting Interface data type The standard <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/python-basics.html#python-data-types"><span class="std std-ref">Python data types</span></a> described in Python data types include integers, floats, strings, and sequences. The Abaqus Scripting Interface adds over 500 additional data types.</p>
+<section id="symbolicconstants">
+<h2>SymbolicConstants<a class="headerlink" href="#symbolicconstants" title="此标题的永久链接"></a></h2>
+<p>Some arguments require that you provide a SymbolicConstant. SymbolicConstants are defined by the Abaqus Scripting Interface and are written in all capital letters. If your script uses a SymbolicConstant defined by the Abaqus Scripting Interface, you must import the SymbolicConstant with the following statement before you refer to it:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>When an argument to a command is a SymbolicConstant, the description in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> lists all its possible values. For example, when you are printing an image, the image can be rendered in one of the following formats: BLACK_AND_WHITE, GREYSCALE, or COLOR.</p>
+<p>Similarly, a data member can be a SymbolicConstant. For example, the type member of the Elastic object can be one of the following SymbolicConstants: ISOTROPIC, ORTHOTROPIC, ANISOTROPIC, ENGINEERING_CONSTANTS, LAMINA, TRACTION, or COUPLED_TRACTION.</p>
+<p>If the SymbolicConstants provided by the Abaqus Scripting Interface do not meet your needs, you can create your own SymbolicConstants using the SymbolicConstant constructor. For more information, see SymbolicConstant object.</p>
+</section>
+<section id="booleans">
+<h2>Booleans<a class="headerlink" href="#booleans" title="此标题的永久链接"></a></h2>
+<p>Python defines two Boolean values, True and False. The type of a Python Boolean is &lt;type 'bool'&gt;.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myPythonBoolean</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">myPythonBoolean</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;bool&#39;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>In addition, the Abaqus Scripting Interface defines a Boolean object, derived from the SymbolicConstant object, which can take the values ON and OFF. For example, <code class="docutils literal notranslate"><span class="pre">noPartsInputFile</span></code> is a member of a Model object that indicates whether the input file will be written with parts and assemblies. The type of the <code class="docutils literal notranslate"><span class="pre">noPartsInputFile</span></code> member is &lt;type 'AbaqusBoolean'&gt;.</p>
+<p>Abaqus recommends that you use the Python Boolean in your scripts and that you convert existing scripts to use the Python Boolean.</p>
+<p>The value of a Boolean argument can appear to be ambiguous; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">newModel</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">ModelFromInputFile</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;beamTutorial&#39;</span><span class="p">,</span>
+    <span class="n">inputFileName</span><span class="o">=</span><span class="s1">&#39;Deform&#39;</span><span class="p">)</span>
+<span class="n">newModel</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">noPartsInputFile</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span>
+<span class="n">OFF</span>
+</pre></div>
+</div>
+<p>Because of this ambiguity, you should test a Boolean for a positive or negative value, as opposed to comparing it to a specific value like 0, OFF, or False. For example, the following statements show how you should test the value of a Boolean member:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s1">&#39;Input file will be written without parts and assemblies. &#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;Input file will be written with parts and assemblies.&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="repositories">
+<span id="id1"></span><h2>Repositories<a class="headerlink" href="#repositories" title="此标题的永久链接"></a></h2>
+<p>Repositories are containers that store a particular type of object; for example, the steps repository contains all the steps defined in the model. A repository maps to a set of information and is similar to a Python dictionary; for more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#using-dictionaries"><span class="std std-ref">Using dictionaries</span></a>. However, only a constructor can add an object to a repository. In addition, all the objects in a repository are of the same type. For example, the following repository contains all the models in the model database:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span>
+</pre></div>
+</div>
+<p>In turn, the following repository contains all the parts in the model <code class="docutils literal notranslate"><span class="pre">Model-1</span></code>:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span>
+</pre></div>
+</div>
+<p>As with dictionaries, you can refer to an object in a repository using its key. The key is typically the name you provided in the constructor command when the object was created. For example, the Viewport constructor creates a new Viewport object in the viewports repository.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Side view&#39;</span><span class="p">,</span>
+    <span class="n">origin</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The key to this new Viewport object in the viewports repository is Side view. You use this key to access this particular Viewport object. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Side view&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">viewportAnnotationOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">legend</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can make your scripts more readable by assigning a variable to an object in a repository. For example, you could rewrite the previous statement after assigning the Viewport object to the variable myViewport:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Side view&#39;</span><span class="p">]</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">viewportAnnotationOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
+    <span class="n">legend</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In general, if the user can create the object, its repository key is a string. In some cases Abaqus/CAE creates an object, and the key can be a string, an integer, or a SymbolicConstant.</p>
+<p>As with dictionaries, you can use the keys() method to access the repository keys.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Side view&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Top view&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Front view&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="o">...</span>
+        <span class="k">print</span> <span class="n">key</span>
+<span class="n">Front</span> <span class="n">view</span>
+<span class="n">Top</span> <span class="n">view</span>
+<span class="n">Side</span> <span class="n">view</span>
+</pre></div>
+</div>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">keys()[i]</span></code> method to access an individual key; however, most repositories are not ordered, and this is not recommended.</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">changeKey()</span></code> method to change the name of a key in a repository. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myPart</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;housing&#39;</span><span class="p">,</span>
+    <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="o">.</span><span class="n">changeKey</span><span class="p">(</span><span class="n">fromName</span><span class="o">=</span><span class="s1">&#39;housing&#39;</span><span class="p">,</span> <span class="n">toName</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="style.html" class="btn btn-neutral float-left" title="Abaqus Scripting Interface documentation style" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="oop.html" class="btn btn-neutral float-right" title="Object-oriented programming and the Abaqus Scripting Interface" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
