@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abaqus/CAE sequences &mdash; abqpy 2018.5.4.post3.dev10+g3e9e58326 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Namespace" href="namespace.html" />
+    <link rel="prev" title="Copying, deleting, and renaming Abaqus Scripting Interface objects" href="modify-objects.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2018
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Abaqus Scripting Interface</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">Introduction to Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python-abaqus/index.html">Using Python and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Abaqus/CAE sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace.html">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="specify-region.html">Specifying a region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../output/index.html">Accessing an Output Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Using the Abaqus Scripting Interface</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a></li>
+      <li class="breadcrumb-item active">Abaqus/CAE sequences</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/python/use-scripts/sequences.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abaqus-cae-sequences">
+<h1>Abaqus/CAE sequences<a class="headerlink" href="#abaqus-cae-sequences" title="Permalink to this heading"></a></h1>
+<p>Some methods take arguments that are described as a sequence of sequences of Floats or a sequence of sequences of Ints. Data that are entered into the table editor in Abaqus/CAE appear as a sequence of sequences in the equivalent Abaqus Scripting Interface command. In effect the data are a two-dimensional array. The data across one row form one sequence, and multiple rows form a sequence of those sequences.</p>
+<p>For example, consider the case where the user is creating an elastic material and describing a temperature-dependent behavior.</p>
+<figure class="align-center" id="cmd-int-table-editor-nls">
+<a class="reference internal image-reference" href="../../../_images/cmd-int-table-editor-nls.png"><img alt="../../../_images/cmd-int-table-editor-nls.png" src="../../../_images/cmd-int-table-editor-nls.png" style="width: 50%;" /></a>
+</figure>
+<p>The equivalent Abaqus Scripting Interface command is</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">materials</span><span class="p">[</span><span class="s1">&#39;steel&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span>
+    <span class="n">temperatureDependency</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="p">(</span>
+    <span class="p">(</span><span class="mf">200.0E9</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">210.0E9</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">220.0E9</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">250.0</span><span class="p">),</span>
+    <span class="p">(</span><span class="mf">225.0E9</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">500.0</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">table</span></code> argument is described in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> as a sequence of sequences of Floats.</p>
+<p>Lists, tuples, strings, and arrays are described in Sequences. In addition, the Abaqus Scripting Interface defines some of its own sequences that contain objects of the same type.</p>
+<ul>
+<li><p><strong>GeomSequence</strong></p>
+<p>A GeomSequence is a sequence of geometry objects, such as Vertices or Edges. An Edge sequence is derived from the GeomSequence object. Use the len() function to determine the number of objects in a GeomSequence. A GeomSequence has methods and members too.</p>
+<p>For example, the following creates a three-dimensional part by extruding a 70 x 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="s1">&#39;Body&#39;</span><span class="p">)</span>
+<span class="n">mySketch</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Body&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;__profile__&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">200.0</span><span class="p">)</span>
+<span class="n">mySketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+    <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="mf">70.0</span><span class="p">,</span> <span class="mf">70.0</span><span class="p">))</span>
+<span class="n">switch</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Body&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Switch&#39;</span><span class="p">,</span>
+    <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">switch</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">mySketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mf">20.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following statement displays the members of the resulting three-dimensional part:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Body&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;Switch&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">__members__</span>
+<span class="p">[</span><span class="s1">&#39;allInternalSets&#39;</span><span class="p">,</span> <span class="s1">&#39;allInternalSurfaces&#39;</span><span class="p">,</span> <span class="s1">&#39;allSets&#39;</span><span class="p">,</span>
+<span class="s1">&#39;allSurfaces&#39;</span><span class="p">,</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span> <span class="s1">&#39;cells&#39;</span><span class="p">,</span> <span class="s1">&#39;datum&#39;</span><span class="p">,</span> <span class="s1">&#39;datums&#39;</span><span class="p">,</span> <span class="s1">&#39;edge&#39;</span><span class="p">,</span>
+<span class="s1">&#39;edges&#39;</span><span class="p">,</span> <span class="s1">&#39;elemEdge&#39;</span><span class="p">,</span> <span class="s1">&#39;elemEdges&#39;</span><span class="p">,</span> <span class="s1">&#39;elemFace&#39;</span><span class="p">,</span>  <span class="s1">&#39;elemFaces&#39;</span><span class="p">,</span>
+<span class="s1">&#39;element&#39;</span><span class="p">,</span> <span class="s1">&#39;elements&#39;</span><span class="p">,</span> <span class="s1">&#39;engineeringFeatures&#39;</span><span class="p">,</span> <span class="s1">&#39;face&#39;</span><span class="p">,</span>
+<span class="s1">&#39;faces&#39;</span><span class="p">,</span> <span class="s1">&#39;feature&#39;</span><span class="p">,</span> <span class="s1">&#39;featureById&#39;</span><span class="p">,</span> <span class="s1">&#39;features&#39;</span><span class="p">,</span>
+<span class="s1">&#39;featuresById&#39;</span><span class="p">,</span> <span class="s1">&#39;geometryPrecision&#39;</span><span class="p">,</span> <span class="s1">&#39;geometryRefinement&#39;</span><span class="p">,</span>
+<span class="s1">&#39;geometryValidity&#39;</span><span class="p">,</span> <span class="s1">&#39;ip&#39;</span><span class="p">,</span> <span class="s1">&#39;ips&#39;</span><span class="p">,</span> <span class="s1">&#39;isOutOfDate&#39;</span><span class="p">,</span> <span class="s1">&#39;modelName&#39;</span><span class="p">,</span>
+<span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="s1">&#39;nodes&#39;</span><span class="p">,</span> <span class="s1">&#39;referencePoint&#39;</span><span class="p">,</span> <span class="s1">&#39;referencePoints&#39;</span><span class="p">,</span>
+<span class="s1">&#39;reinforcement&#39;</span><span class="p">,</span> <span class="s1">&#39;reinforcements&#39;</span><span class="p">,</span>  <span class="s1">&#39;sectionAssignments&#39;</span><span class="p">,</span>
+<span class="s1">&#39;sets&#39;</span><span class="p">,</span> <span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;surfaces&#39;</span><span class="p">,</span> <span class="s1">&#39;twist&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span>
+<span class="s1">&#39;vertex&#39;</span><span class="p">,</span> <span class="s1">&#39;vertices&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The edges, faces, vertices, cells, and ips members are all derived from the <code class="docutils literal notranslate"><span class="pre">GeomSequence</span></code> object.</p>
+<p>The following statements display some information about the edges sequence:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Single edge type = &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">switch</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">Single</span> <span class="n">edge</span> <span class="nb">type</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;Edge&#39;</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Edge sequence type = &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">switch</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span>
+<span class="n">Edge</span> <span class="n">sequence</span> <span class="nb">type</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;EdgeArray&#39;</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Members of edge sequence = &#39;</span><span class="p">,</span>
+        <span class="n">switch</span><span class="o">.</span><span class="n">edges</span><span class="o">.</span><span class="n">__members__</span>
+<span class="n">Members</span> <span class="n">of</span> <span class="n">edge</span> <span class="n">sequence</span> <span class="o">=</span>  <span class="p">[</span><span class="s1">&#39;pointsOn&#39;</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Number of edges in sequence = &#39;</span><span class="p">,</span>
+        <span class="nb">len</span><span class="p">(</span><span class="n">switch</span><span class="o">.</span><span class="n">edges</span><span class="p">)</span>
+
+<span class="n">Number</span> <span class="n">of</span> <span class="n">edges</span> <span class="ow">in</span> <span class="n">sequence</span> <span class="o">=</span>  <span class="mi">12</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>MeshSequence</strong></p>
+<p>A sequence of Nodes or Elements.</p>
+</li>
+<li><p><strong>SurfSequence</strong></p>
+<p>A sequence of Surfaces.</p>
+</li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modify-objects.html" class="btn btn-neutral float-left" title="Copying, deleting, and renaming Abaqus Scripting Interface objects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="namespace.html" class="btn btn-neutral float-right" title="Namespace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

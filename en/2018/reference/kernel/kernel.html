@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Kernel &mdash; abqpy 2018.5.4.post3.dev10+g3e9e58326 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Messaging" href="messaging.html" />
+    <link rel="prev" title="Input File Parser" href="input.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2018
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session/index.html">Abaqus Session</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Kernel</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input.html">Input File Parser</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Custom Kernel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_representation.html">Text Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Kernel</a></li>
+      <li class="breadcrumb-item active">Custom Kernel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/kernel/kernel.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="custom-kernel">
+<h1>Custom Kernel<a class="headerlink" href="#custom-kernel" title="Permalink to this heading"></a></h1>
+<p>The customKernel module augments the mdb, odb, and session objects with an object called customData. The customData object can contain custom data that you created using standard Python objects; for example, dictionaries, strings, numbers, and classes. In addition, the customData object can contain objects that you created using the classes described in this section.</p>
+<p>All objects that you create under the mdb.customData and odb[odbName].customData object will be stored in the Abaqus/CAE model and output database, respectively, when you save the database; all objects that you create under the session.customData object will be lost when you exit Abaqus/CAE.</p>
+<p>The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI.</p>
+<section id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this heading"></a></h2>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.CommandRegister">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommandRegister</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RepositorySupport.py#L4-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This class allows you to derive a general class that can be queried from the GUI and is capable of
+notifying the GUI when the contents of the class change.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all">CommandRegister on help.3ds.com/2018</a>.</p>
+</div>
+<p>This class allows you to derive a general class that can be queried from the GUI and is capable of
+notifying the GUI when the contents of the class change.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">CommandRegister</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A CommandRegister object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.RepositorySupport.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredDictionary</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredDictionary.py#L6-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<p>This class allows you to create a dictionary that can be queried from the GUI and is capable of notifying
+the GUI when the contents of the dictionary change. The keys to a RegisteredDictionary must be either
+strings or integers. The RegisteredDictionary object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all">RegisteredDictionary on help.3ds.com/2018</a>.</p>
+</div>
+<p>This method creates a RegisteredDictionary object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredDictionary</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A RegisteredDictionary object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegisteredDictionary</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredDictionary.py#L34-L41"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="Permalink to this definition"></a></dt>
+<dd><p>The RegisteredDictionary object supports the same methods as a Python dictionary.</p>
+<p>In addition, the RegisteredDictionary object supports the changeKey method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey">
+<span class="sig-name descname"><span class="pre">changeKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fromName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredDictionary.py#L43-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="Permalink to this definition"></a></dt>
+<dd><p>This method changes the name of a key in the dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all#simaker-registereddictionarychangekeypyc">RegisteredDictionary.changeKey on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fromName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String or an integer specifying the name of the key to be changed.</p></li>
+<li><p><strong>toName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String or an integer specifying the new name for the key.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredList.py#L6-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a></p>
+<p>This class allows you to create a list that can be queried from the GUI and is capable of notifying the
+GUI when the contents of the list change. The RegisteredList object is derived from the CommandRegister
+object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all">RegisteredList on help.3ds.com/2018</a>.</p>
+</div>
+<p>This method creates a RegisteredList object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredList</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A RegisteredList object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="abaqus.CustomKernel.RegisteredList.RegisteredList"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegisteredList</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredList.py#L34-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="Permalink to this definition"></a></dt>
+<dd><p>The RegisteredList object supports the same methods as a standard Python list object.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredTuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredTuple.py#L6-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<p>This class allows you to create a tuple that can be queried from the GUI and is capable of notifying the
+GUI when the contents of any of the tuple's members change. The RegisteredTuple object is derived from the
+CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all">RegisteredTuple on help.3ds.com/2018</a>.</p>
+</div>
+<p>This method creates a RegisteredTuple object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RegisteredTuple</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tuple</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>) -- A tuple of objects. These objects must be derived from the CommandRegister class.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A RegisteredTuple object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegisteredTuple</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RegisteredTuple.py#L39-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="Permalink to this definition"></a></dt>
+<dd><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RepositorySupport.py#L8-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a></p>
+<p>The class from which you can derive your own classes that are designed to contain custom repositories.
+Instances of this class can be queried from the GUI and are capable of notifying the GUI when the contents
+of the instance change. The RepositorySupport object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">customData</span>
+<span class="n">session</span><span class="o">.</span><span class="n">customData</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">customData</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all">RepositorySupport on help.3ds.com/2018</a>.</p>
+</div>
+<p>This method creates a RepositorySupport object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">customKernel</span><span class="o">.</span><span class="n">RepositorySupport</span>
+</pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A RepositorySupport object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a></p>
+</dd>
+</dl>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository">
+<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/CustomKernel/RepositorySupport.py#L39-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="Permalink to this definition"></a></dt>
+<dd><p>This method installs a repository on the class. The repository is an instance of a
+RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored
+in the repository are assumed to have an attribute called <strong>name</strong> that stores the key used to access
+the object in the repository. The name attribute will be modified by the changeKey method.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorypyc.htm?contextscope=all">Repository on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the repository.</p></li>
+<li><p><strong>constructors</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>]]) -- A constructor or sequence of constructors specifying which classes will store their
+instances in the repository.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="input.html" class="btn btn-neutral float-left" title="Input File Parser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="messaging.html" class="btn btn-neutral float-right" title="Messaging" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
