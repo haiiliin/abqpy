@@ -198,9 +198,42 @@ exclude_patterns = ["locale/README.md", "_autoapi_templates"]
 
 # -- Options for HTML output -------------------------------------------------
 
+# Get the sphinx theme from the branch name
+default_theme = "sphinx_rtd_theme"
+html_themes = {
+    "sphinx-rtd-theme": "sphinx_rtd_theme",
+    "sphinx-book-theme": "sphinx_book_theme",
+    "furo": "furo",
+}
+try:
+    import git
+
+    branch = git.repo.Repo("../../").active_branch.name
+except Exception:
+    branch = "main"
+    if os.environ.get("READTHEDOCS_VERSION_TYPE", None) == "branch":
+        branch = os.environ.get("READTHEDOCS_VERSION_NAME", "main")
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "sphinx_rtd_theme"
+html_theme = os.environ.get("SPHINX_THEME", None) or html_themes.get(branch, default_theme)
+
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
+if html_theme == "sphinx_book_theme":
+    html_theme_options = {
+        "repository_url": "https://github.com/haiiliin/abqpy",
+        "use_source_button": True,
+        "repository_branch": branch,
+        "use_edit_page_button": True,
+        "use_repository_button": True,
+        "use_issues_button": True,
+    }
+elif html_theme == "sphinx_rtd_theme":
+    html_theme_options = {}
+elif html_theme == "furo":
+    html_theme_options = {}
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
