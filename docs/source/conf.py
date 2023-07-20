@@ -210,9 +210,9 @@ try:
 
     branch = git.repo.Repo("../../").active_branch.name
 except Exception:
-    branch = "main"
+    branch = "2023"
     if os.environ.get("READTHEDOCS_VERSION_TYPE", None) == "branch":
-        branch = os.environ.get("READTHEDOCS_VERSION_NAME", "main")
+        branch = os.environ.get("READTHEDOCS_VERSION_NAME", "2023")
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
