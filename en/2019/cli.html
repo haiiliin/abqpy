@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en/html">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Command Line Interface — abqpy 2019.5.4.post3.dev9+g884490177 documentation</title>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-punk.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-noir.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
+<link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
+<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/sphinx_rtd_theme.css" rel="stylesheet" type="text/css"/>
+<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script src="_static/jquery.js"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/sphinx_highlight.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script src="_static/js/hoverxref.js"></script>
+<script src="_static/js/tooltipster.bundle.min.js"></script>
+<script src="_static/js/micromodal.min.js"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="_static/togglebutton.js"></script>
+<script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="_static/design-tabs.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="_static/js/theme.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="tutorials.html" rel="next" title="Tutorials"/>
+<link href="envvars.html" rel="prev" title="Environment Variables"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="index.html">
+            abqpy
+          </a>
+<div class="version">
+                2019
+              </div>
+<div role="search">
+<form action="search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+</div><div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="envvars.html">Environment Variables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-cae-execution-mode">Abaqus/CAE Execution Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-python-execution-mode">Abaqus Python Execution Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#less-frequently-used-commands">Less Frequently Used Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policy.html">Comment Policy</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="Mobile navigation menu" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="index.html">abqpy</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="Page navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Home" class="icon icon-home" href="index.html"></a></li>
+<li class="breadcrumb-item active">Command Line Interface</li>
+<li class="wy-breadcrumbs-aside">
+<a href="_sources/cli.md.txt" rel="nofollow"> View page source</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="command-line-interface">
+<h1>Command Line Interface<a class="headerlink" href="#command-line-interface" title="Permalink to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The command line interface is based on the <a class="reference external" href="https://github.com/google/python-fire"><code class="docutils literal notranslate"><span class="pre">fire</span></code></a>
+package since version <code class="docutils literal notranslate"><span class="pre">20**.5.0</span></code>, and it is not compatible with the command line interface of
+previous versions.</p>
+</div>
+<p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
+environment where it is installed is to run one of the two following command lines:</p>
+<ol class="arabic">
+<li><p>When the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> module is imported for the first time:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">noGUI</span><span class="o">=</span>script.py<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>When the <code class="docutils literal notranslate"><span class="pre">odbAccess</span></code> module is imported for the first time:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus<span class="w"> </span>python<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>These commands lines are invoked when you run your script containing the above
+statements in your installed Python interpreter, with a simple command line launch:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+<p>However, there are other execution procedures that can be run with the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>
+command and also another options that could be passed to these commands. To supply
+that procedures and options, <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> provides two alternatives. One of them is a
+separate <strong>command line interface</strong> (another alternative is to use an
+<a class="reference internal" href="envvars.html"><span class="doc">System Environment Variable</span></a>).</p>
+<p>Currently, <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command line interface provides several execution modes: <strong>Abaqus/CAE
+Execution</strong> mode and <strong>Abaqus Python Execution</strong> mode, and more:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abqpy<span class="w"> </span>COMMAND<span class="w"> </span>SCRIPT<span class="w"> </span>&lt;flags&gt;<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">COMMAND</span></code> is one of <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>, <code class="docutils literal notranslate"><span class="pre">cae</span></code>, <code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">run</span></code> or any other Abaqus commands,
+<code class="docutils literal notranslate"><span class="pre">SCRIPT</span></code> is the file name of your python script, <code class="docutils literal notranslate"><span class="pre">flags</span></code> are the options that could be
+passed to the command, and <code class="docutils literal notranslate"><span class="pre">ARGS</span></code> are the extra arguments to be passed after the command
+line options. For details, see the <a class="reference internal" href="#references">References</a> section or run
+<code class="docutils literal notranslate"><span class="pre">abqpy</span> <span class="pre">COMMAND</span> <span class="pre">--help</span></code> for help.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the following commands, the boolean flags can be specified with the following syntax (take <code class="docutils literal notranslate"><span class="pre">gui</span></code> as an example):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--gui</span></code> or <code class="docutils literal notranslate"><span class="pre">--gui=True</span></code> to set the flag to <code class="docutils literal notranslate"><span class="pre">True</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--nogui</span></code> or <code class="docutils literal notranslate"><span class="pre">--gui=False</span></code> to set the flag to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+</ul>
+<p>See <a class="reference external" href="https://github.com/google/python-fire/blob/master/docs/guide.md#boolean-arguments">here</a> for more detailed information.</p>
+</div>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>If you want to run you python script in Abaqus/CAE mode, you could run:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abqpy<span class="w"> </span>cae<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>If you want to run your python script in Abaqus/CAE GUI or noGUI mode, providing
+the <code class="docutils literal notranslate"><span class="pre">database</span></code> file option, you could run:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abqpy<span class="w"> </span>cae<span class="w"> </span>script.py<span class="w"> </span>--gui<span class="w"> </span>--database<span class="o">=</span>file.odb<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span><span class="w"> </span><span class="c1"># GUI mode</span>
+
+abqpy<span class="w"> </span>cae<span class="w"> </span>script.py<span class="w"> </span>--nogui<span class="w"> </span>--database<span class="o">=</span>file.odb<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span><span class="w"> </span><span class="c1"># noGUI mode</span>
+</pre></div>
+</div>
+</li>
+<li><p>If you want to run your python script in Abaqus Python Execution mode, you could run:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abqpy<span class="w"> </span>python<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>If you want to call the cli in your python script, you could use the
+<a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.abaqus</span></code></a> object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#module-abqpy.cli" title="abqpy.cli"><span class="nn">abqpy.cli</span></a> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus"><span class="n">abaqus</span></a>
+
+<a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#abqpy.cli.AbqpyCLI.cae" title="abqpy.cli.AbqpyCLI.cae"><span class="n">abaqus</span><span class="o">.</span><span class="n">cae</span></a><span class="p">(</span><span class="s2">"script.py"</span><span class="p">,</span> <span class="n">gui</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s2">"file.odb"</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Some modern Python IDEs allow you to customize the default python launch parameters
+that will be passed to the interpreter. This feature permits to run <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command line
+interface as a module script and customize your default abaqus execution procedure.</p>
+<p>Example: In
+<a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">VS Code Python Extension</a>,
+you can specify the following setting:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">"python.terminal.launchArgs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"-m"</span><span class="p">,</span><span class="w"> </span><span class="s2">"abqpy"</span><span class="p">,</span><span class="w"> </span><span class="s2">"cae"</span><span class="p">,</span><span class="w"> </span><span class="s2">"--gui=True"</span><span class="w"> </span><span class="p">]</span>
+</pre></div>
+</div>
+<p>That setting will make VS Code Python Extension run by default all python script
+files in the integrated terminal with the following command line:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>abqpy<span class="w"> </span>cae<span class="w"> </span>--gui<span class="o">=</span>True<span class="w"> </span>script.py<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
+</pre></div>
+</div>
+<p>Which provides a way to change the default abaqus execution procedure to GUI mode.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Noted that if a token other than another flag immediately follows a flag that's supposed to be a boolean,
+the flag will take on the value of the token rather than the boolean value.
+Thus <code class="docutils literal notranslate"><span class="pre">--gui=True</span></code> instead of <code class="docutils literal notranslate"><span class="pre">--gui</span></code> is used here to prevent this problem.</p>
+</div>
+</section>
+<section id="references">
+<span id="id1"></span><h2>References<a class="headerlink" href="#references" title="Permalink to this heading"></a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy
+NAME
+    abqpy - The abqpy command line interface.
+
+SYNOPSIS
+    abqpy GROUP | COMMAND
+
+DESCRIPTION
+    The abqpy command line interface.
+
+GROUPS
+    GROUP is one of the following:
+
+     misc
+       Less frequently used Abaqus/CAE commands.
+
+COMMANDS
+    COMMAND is one of the following:
+
+     abaqus
+       Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are handled by the :meth:`._parse_options` method.
+
+     cae
+       Run Abaqus/CAE command.
+
+     python
+       Run Abaqus/Python command.
+
+     run
+       Run custom command.
+
+     viewer
+       Run Abaqus/CAE command.
+</pre></div>
+</div>
+<section id="abaqus-cae-execution-mode">
+<h3>Abaqus/CAE Execution Mode<a class="headerlink" href="#abaqus-cae-execution-mode" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy cae --help
+INFO: Showing help with the command 'abqpy cae -- --help'.
+
+NAME
+    abqpy cae - Run Abaqus/CAE command.
+
+SYNOPSIS
+    abqpy cae SCRIPT &lt;flags&gt; [ARGS]...
+
+DESCRIPTION
+    Run Abaqus/CAE command.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: 'str'
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -d, --database=DATABASE
+        Type: Optional['str']
+        Default: None
+        The name of the database file to open, by default None
+    --replay=REPLAY
+        Type: Optional['str']
+        Default: None
+        The name of the replay file to open, by default None
+    --recover=RECOVER
+        Type: Optional['str']
+        Default: None
+        The name of the journal file to open, by default None
+    --gui=GUI
+        Type: 'bool'
+        Default: False
+        Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+    --noenvstartup=NOENVSTARTUP
+        Type: 'bool'
+        Default: False
+        Do not execute the Abaqus/CAE startup file, by default False
+    --noSavedOptions=NOSAVEDOPTIONS
+        Type: 'bool'
+        Default: False
+        Do not use the saved options, by default False
+    --noStartupDialog=NOSTARTUPDIALOG
+        Type: 'bool'
+        Default: False
+        Do not display the startup dialog, by default False
+    --guiRecord=GUIRECORD
+        Type: 'bool'
+        Default: False
+        Record the GUI commands to a file, by default False
+    --guiNoRecord=GUINORECORD
+        Type: 'bool'
+        Default: False
+        Do not record the GUI commands to a file, by default False
+    Additional flags are accepted.
+        Other unrecognized keyword arguments
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+</pre></div>
+</div>
+</section>
+<section id="abaqus-python-execution-mode">
+<h3>Abaqus Python Execution Mode<a class="headerlink" href="#abaqus-python-execution-mode" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy python --help
+INFO: Showing help with the command 'abqpy python -- --help'.
+
+NAME
+    abqpy python - Run Abaqus/Python command.
+
+SYNOPSIS
+    abqpy python SCRIPT &lt;flags&gt; [ARGS]...
+
+DESCRIPTION
+    Run Abaqus/Python command.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: 'str'
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -s, --sim=SIM
+        Type: Optional['str']
+        Default: None
+        The name of the simulation file to open, by default None
+    -l, --log=LOG
+        Type: Optional['str']
+        Default: None
+        The name of the log file to open, by default None
+    Additional flags are accepted.
+        Other unrecognized keyword arguments
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+</pre></div>
+</div>
+</section>
+<section id="less-frequently-used-commands">
+<h3>Less Frequently Used Commands<a class="headerlink" href="#less-frequently-used-commands" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy misc --help
+INFO: Showing help with the command 'abqpy misc -- --help'.
+
+NAME
+    abqpy misc - Less frequently used Abaqus/CAE commands.
+
+SYNOPSIS
+    abqpy misc COMMAND
+
+DESCRIPTION
+    Less frequently used Abaqus/CAE commands.
+
+COMMANDS
+    COMMAND is one of the following:
+
+     abaqus
+       Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are handled by the :meth:`._parse_options` method.
+
+     adams
+
+     append
+
+     ascfil
+
+     cosimulation
+
+     cse
+
+     decrypt
+
+     doc
+
+     emloads
+
+     encrypt
+
+     fetch
+
+     findkeyword
+
+     fmu
+
+     fromansys
+
+     fromdyna
+
+     fromnastran
+
+     frompamcrash
+
+     fromradioss
+
+     fromsimpack
+
+     help
+
+     information
+
+     licensing
+
+     make
+
+     moldflow
+
+     mtxasm
+
+     networkDBConnector
+
+     odb2sim
+
+     odbcombine
+
+     odbreport
+
+     optimization
+       Run Abaqus optimization command.
+
+     restartjoin
+
+     resume
+
+     run
+       Run custom command.
+
+     script
+
+     sim_version
+
+     substructurecombine
+
+     substructurerecover
+
+     suspend
+
+     sysVerify
+
+     terminate
+
+     toOutput2
+
+     toexcite
+
+     tonastran
+
+     tosimpack
+
+     tozaero
+
+     upgrade
+
+     whereami
+</pre></div>
+</div>
+</section>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading"></a></h2>
+<script async="async" crossorigin="anonymous" issue-term="pathname" label="💬 comment" repo="haiiliin/abqpy" src="https://utteranc.es/client.js" theme="github-light" type="text/javascript"></script>
+</section>
+</section>
+</div>
+</div>
+<footer><div aria-label="Footer" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="envvars.html" rel="prev" title="Environment Variables"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> Previous</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="tutorials.html" rel="next" title="Tutorials">Next <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© Copyright 2022, WANG Hailin.</p>
+</div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+</div>
+</div>
+</section>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
