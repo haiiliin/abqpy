@@ -43,7 +43,7 @@ jobs:
       SPHINX_THEME: ${{ matrix.theme }}
       REPO_NAME: ${{ github.event.repository.name }}
       LANGUAGE: ${{ matrix.language }}
-      VERSION: ${{ github.ref_name && github.event_name != 'pull_request' || github.head_ref }}
+      VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
     steps:
       - uses: actions/setup-python@v4
         with:
