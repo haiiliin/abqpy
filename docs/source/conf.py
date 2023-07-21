@@ -233,16 +233,11 @@ if html_theme == "sphinx_book_theme":
     }
 elif html_theme == "sphinx_rtd_theme":
     html_theme_options = {}
+    html_sidebars = {
+        "*": ["versions.html"],
+    }
 elif html_theme == "furo":
     html_theme_options = {}
-
-# The default sidebars (for documents that don't match any pattern) are
-# defined by theme itself.  Builtin themes are using these templates by
-# default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
-# 'searchbox.html']``.
-html_sidebars = {
-    "*": ["versions.html"],
-}
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
