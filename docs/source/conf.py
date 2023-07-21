@@ -400,6 +400,9 @@ html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
 
 # POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
 html_context["downloads"] = [
-    (fmt, f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}")
+    (
+        fmt,
+        f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
+    )
     for fmt in ("pdf", "epub")
 ]
