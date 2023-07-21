@@ -382,8 +382,7 @@ current_language = os.environ.get("LANGUAGE", "en")
 html_context["current_language"] = current_language
 
 # GET CURRENT_VERSION
-repo = git.Repo(search_parent_directories=True)
-current_version = os.environ.get("VERSION", repo.active_branch.name)
+current_version = os.environ.get("VERSION", branch)
 
 # tell the theme which version we're currently on ('current_version' affects
 # the lower-left rtd menu and 'version' affects the logo-area version)
@@ -394,7 +393,8 @@ html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
                              for lang in ("en", "zh_CN")]  # fmt: skip
 
 # POPULATE LINKS TO OTHER VERSIONS
-branches = [branch.name for branch in repo.branches if branch.name != "gh-pages"]
+branches = [str(v) for v in range(2016, 2024)]
+branches += ["latest", "sphinx-book-theme", "furo"]
 html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
                             for ver in [branch for branch in branches]]  # fmt: skip
 
