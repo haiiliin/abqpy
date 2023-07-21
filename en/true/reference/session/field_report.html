@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FieldReport &mdash; abqpy 2018.5.4.post3.dev13+g377a9fa06 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Odb Display" href="odb_display.html" />
+    <link rel="prev" title="Display Group" href="display.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                true
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Abaqus Session</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="animation.html">Animation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_options.html">Display Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display.html">Display Group</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">FieldReport</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-field-reports-in-session">Create field reports in Session</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="odb_display.html">Odb Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="path.html">Path and Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_options.html">Plot Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="print.html">Print</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xy.html">XY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Abaqus Session</a></li>
+      <li class="breadcrumb-item active">FieldReport</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/session/field_report.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fieldreport">
+<h1>FieldReport<a class="headerlink" href="#fieldreport" title="Permalink to this heading"></a></h1>
+<p>Field report commands are used to write a field output report and free body computational results to an ASCII file.</p>
+<section id="create-field-reports-in-session">
+<h2>Create field reports in Session<a class="headerlink" href="#create-field-reports-in-session" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportSession.py#L14-L169"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.attachedToGui" title="abaqus.Session.SessionBase.SessionBase.attachedToGui"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></a></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.replayInProgress" title="abaqus.Session.SessionBase.SessionBase.replayInProgress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></a></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint" title="abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></a></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint" title="abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></a></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit" title="abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></a></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.colors" title="abaqus.Session.SessionBase.SessionBase.colors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></a></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.journalOptions" title="abaqus.Session.SessionBase.SessionBase.journalOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></a></p></td>
+<td><p>A JournalOptions object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.memoryReductionOptions" title="abaqus.Session.SessionBase.SessionBase.memoryReductionOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></a></p></td>
+<td><p>A MemoryReductionOptions object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.nodeQuery" title="abaqus.Session.SessionBase.SessionBase.nodeQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></a></p></td>
+<td><p>A NodeQuery object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.sketcherOptions" title="abaqus.Session.SessionBase.SessionBase.sketcherOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></a></p></td>
+<td><p>A ConstrainedSketcherOptions object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.viewerOptions" title="abaqus.Session.SessionBase.SessionBase.viewerOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></a></p></td>
+<td><p>A ViewerOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.animationOptions" title="abaqus.Session.SessionBase.SessionBase.animationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></a></p></td>
+<td><p>An AnimationOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.aviOptions" title="abaqus.Session.SessionBase.SessionBase.aviOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></a></p></td>
+<td><p>An AVIOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.imageAnimationOptions" title="abaqus.Session.SessionBase.SessionBase.imageAnimationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></a></p></td>
+<td><p>An ImageAnimationOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.imageAnimation" title="abaqus.Session.SessionBase.SessionBase.imageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></a></p></td>
+<td><p>An ImageAnimation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.quickTimeOptions" title="abaqus.Session.SessionBase.SessionBase.quickTimeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></a></p></td>
+<td><p>A QuickTimeOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.viewports" title="abaqus.Session.SessionBase.SessionBase.viewports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></a></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.customData" title="abaqus.Session.SessionBase.SessionBase.customData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></a></p></td>
+<td><p>A RepositorySupport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions" title="abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></a></p></td>
+<td><p>A FieldReportOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions" title="abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></a></p></td>
+<td><p>A FreeBodyReportOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.fieldReportOptions" title="abaqus.Session.SessionBase.SessionBase.fieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></a></p></td>
+<td><p>A FieldReportOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions" title="abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></a></p></td>
+<td><p>A FreeBodyReportOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.odbs" title="abaqus.Session.SessionBase.SessionBase.odbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></a></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.scratchOdbs" title="abaqus.Session.SessionBase.SessionBase.scratchOdbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></a></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay" title="abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></a></p></td>
+<td><p>A DefaultOdbDisplay object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultPlot" title="abaqus.Session.SessionBase.SessionBase.defaultPlot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></a></p></td>
+<td><p>A DefaultPlot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultChartOptions" title="abaqus.Session.SessionBase.SessionBase.defaultChartOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></a></p></td>
+<td><p>A DefaultChartOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.odbData" title="abaqus.Session.SessionBase.SessionBase.odbData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></a></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.mdbData" title="abaqus.Session.SessionBase.SessionBase.mdbData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></a></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.paths" title="abaqus.Session.SessionBase.SessionBase.paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></a></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.freeBodies" title="abaqus.Session.SessionBase.SessionBase.freeBodies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></a></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.streams" title="abaqus.Session.SessionBase.SessionBase.streams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></a></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.spectrums" title="abaqus.Session.SessionBase.SessionBase.spectrums"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></a></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.currentProbeValues" title="abaqus.Session.SessionBase.SessionBase.currentProbeValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></a></p></td>
+<td><p>A CurrentProbeValues object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultProbeOptions" title="abaqus.Session.SessionBase.SessionBase.defaultProbeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></a></p></td>
+<td><p>A ProbeOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.probeOptions" title="abaqus.Session.SessionBase.SessionBase.probeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></a></p></td>
+<td><p>A ProbeOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.probeReport" title="abaqus.Session.SessionBase.SessionBase.probeReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></a></p></td>
+<td><p>A ProbeReport object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultProbeReport" title="abaqus.Session.SessionBase.SessionBase.defaultProbeReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></a></p></td>
+<td><p>A ProbeReport object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.selectedProbeValues" title="abaqus.Session.SessionBase.SessionBase.selectedProbeValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></a></p></td>
+<td><p>A SelectedProbeValues object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.printOptions" title="abaqus.Session.SessionBase.SessionBase.printOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></a></p></td>
+<td><p>A PrintOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.epsOptions" title="abaqus.Session.SessionBase.SessionBase.epsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></a></p></td>
+<td><p>An EpsOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.pageSetupOptions" title="abaqus.Session.SessionBase.SessionBase.pageSetupOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></a></p></td>
+<td><p>A PageSetupOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.pngOptions" title="abaqus.Session.SessionBase.SessionBase.pngOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></a></p></td>
+<td><p>A PngOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.psOptions" title="abaqus.Session.SessionBase.SessionBase.psOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></a></p></td>
+<td><p>A PsOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.svgOptions" title="abaqus.Session.SessionBase.SessionBase.svgOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></a></p></td>
+<td><p>A SvgOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.tiffOptions" title="abaqus.Session.SessionBase.SessionBase.tiffOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></a></p></td>
+<td><p>A TiffOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.autoColors" title="abaqus.Session.SessionBase.SessionBase.autoColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></a></p></td>
+<td><p>An AutoColors object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.xyColors" title="abaqus.Session.SessionBase.SessionBase.xyColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></a></p></td>
+<td><p>An AutoColors object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.xyDataObjects" title="abaqus.Session.SessionBase.SessionBase.xyDataObjects"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></a></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.curves" title="abaqus.Session.SessionBase.SessionBase.curves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></a></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.xyPlots" title="abaqus.Session.SessionBase.SessionBase.xyPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></a></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.charts" title="abaqus.Session.SessionBase.SessionBase.charts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></a></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions" title="abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></a></p></td>
+<td><p>An XYReportOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.xyReportOptions" title="abaqus.Session.SessionBase.SessionBase.xyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></a></p></td>
+<td><p>An XYReportOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.views" title="abaqus.Session.SessionBase.SessionBase.views"><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></a></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors" title="abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></a></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.displayGroups" title="abaqus.Session.SessionBase.SessionBase.displayGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></a></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.graphicsInfo" title="abaqus.Session.SessionBase.SessionBase.graphicsInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></a></p></td>
+<td><p>A GraphicsInfo object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions" title="abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></a></p></td>
+<td><p>A GraphicsOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.graphicsOptions" title="abaqus.Session.SessionBase.SessionBase.graphicsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></a></p></td>
+<td><p>A GraphicsOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions" title="abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></a></p></td>
+<td><p>A ViewportAnnotationOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.queues" title="abaqus.Session.SessionBase.SessionBase.queues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></a></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.currentViewportName" title="abaqus.Session.SessionBase.SessionBase.currentViewportName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></a></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.sessionState" title="abaqus.Session.SessionBase.SessionBase.sessionState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></a></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.images" title="abaqus.Session.SessionBase.SessionBase.images"><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></a></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.movies" title="abaqus.Session.SessionBase.SessionBase.movies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></a></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultLightOptions" title="abaqus.Session.SessionBase.SessionBase.defaultLightOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></a></p></td>
+<td><p>A LightOptions object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.drawingArea" title="abaqus.Session.SessionBase.SessionBase.drawingArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></a></p></td>
+<td><p>A DrawingArea object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.defaultMesherOptions" title="abaqus.Session.SessionBase.SessionBase.defaultMesherOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></a></p></td>
+<td><p>A MesherOptions object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.drawings" title="abaqus.Session.SessionBase.SessionBase.drawings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></a></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFieldReport</span></code></a>(filename, append, sortItem, ...)</p></td>
+<td><p>This method writes a FieldOutput object to a user-defined ASCII file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport" title="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFreeBodyReport</span></code></a>(fileName, append[, ...])</p></td>
+<td><p>This method writes a FreeBody object to a user-defined ASCII file.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.setValues" title="abaqus.Session.SessionBase.SessionBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.enableCADConnection" title="abaqus.Session.SessionBase.SessionBase.enableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code></a>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled" title="abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code></a>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.disableCADConnection" title="abaqus.Session.SessionBase.SessionBase.disableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code></a>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.enableParameterUpdate" title="abaqus.Session.SessionBase.SessionBase.enableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code></a>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.setCADPortNumber" title="abaqus.Session.SessionBase.SessionBase.setCADPortNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code></a>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.updateCADParameters" title="abaqus.Session.SessionBase.SessionBase.updateCADParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code></a>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.disableParameterUpdate" title="abaqus.Session.SessionBase.SessionBase.disableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code></a>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.printToFile" title="abaqus.Session.SessionBase.SessionBase.printToFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code></a>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.printToPrinter" title="abaqus.Session.SessionBase.SessionBase.printToPrinter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code></a>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.saveOptions" title="abaqus.Session.SessionBase.SessionBase.saveOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code></a>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.writeVrmlFile" title="abaqus.Session.SessionBase.SessionBase.writeVrmlFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.write3DXMLFile" title="abaqus.Session.SessionBase.SessionBase.write3DXMLFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.writeOBJFile" title="abaqus.Session.SessionBase.SessionBase.writeOBJFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code></a>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code></a>(name[, path, readOnly])</p></td>
+<td><p>This method opens an existing output database (<cite>.odb</cite>) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport">
+<span class="sig-name descname"><span class="pre">writeFieldReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFY</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportSession.py#L16-L124"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport" title="Permalink to this definition"></a></dt>
+<dd><p>This method writes a FieldOutput object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefieldreportpyc">FieldReportSession.writeFieldReport on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the file to which field output will be written.</p></li>
+<li><p><strong>append</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- A Boolean specifying whether to append the field output to an existing file. The default
+value is ON.</p></li>
+<li><p><strong>sortItem</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the item by which to sort the tabular values.</p></li>
+<li><p><strong>odb</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a>) -- An Odb object from which to obtain field output values.</p></li>
+<li><p><strong>step</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- An Int (or stepIndex) specifying the step from which to obtain field output values.
+Possible values are 0 ≤ <strong>step</strong> ≤ (<em>numSteps</em> − 1).</p></li>
+<li><p><strong>frame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- An Int (or frameIndex) specifying the frame from which to obtain field output values.
+Possible values are 0 ≤ <strong>frame</strong> ≤ (<em>numFramesInStep</em> − 1).</p></li>
+<li><p><strong>outputPosition</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ELEMENT_NODAL</span></code>, <code class="docutils literal notranslate"><span class="pre">ELEMENT_FACE</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_ELEMENT</span></code>, <code class="docutils literal notranslate"><span class="pre">NODAL</span></code>, <code class="docutils literal notranslate"><span class="pre">INTEGRATION_POINT</span></code>, <code class="docutils literal notranslate"><span class="pre">ELEMENT_CENTROID</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_MODEL</span></code>, <code class="docutils literal notranslate"><span class="pre">GENERAL_PARTICLE</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_PART_INSTANCE</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_REGION</span></code>]) -- A SymbolicConstant specifying the position from which to obtain data. Possible values
+are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
+WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p></li>
+<li><p><strong>displayGroup</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroupSession.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a>) -- A DisplayGroup object specifying the subset of the model for which to obtain data.</p></li>
+<li><p><strong>variable</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ELEMENT_FACE</span></code>, <code class="docutils literal notranslate"><span class="pre">ELEMENT_NODAL</span></code>, <code class="docutils literal notranslate"><span class="pre">SPOS</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_ELEMENT</span></code>, <code class="docutils literal notranslate"><span class="pre">NODAL</span></code>, <code class="docutils literal notranslate"><span class="pre">INTEGRATION_POINT</span></code>, <code class="docutils literal notranslate"><span class="pre">ELEMENT_CENTROID</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_MODEL</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_REGION</span></code>, <code class="docutils literal notranslate"><span class="pre">GENERAL_PARTICLE</span></code>, <code class="docutils literal notranslate"><span class="pre">WHOLE_PART_INSTANCE</span></code>]) -- <p>A sequence of variable description sequences specifying one or more field output
+variables for which to obtain data. Each variable description sequence contains the
+following elements:</p>
+<ul>
+<li><p><strong>element0</strong>: A String specifying the name of the variable.</p></li>
+<li><p><strong>element1</strong>: A SymbolicConstant specifying the output position at which to report data.
+Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
+INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+WHOLE_REGION.</p></li>
+<li><p><strong>element2</strong>: A Sequence of tuples each consisting of a SymbolicConstant specifying the
+refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
+component or invariant for which to obtain values.
+If this element is omitted, data are written for all components and invariants (if
+applicable). This element is required if <strong>element3</strong> (the following element in the tuple)
+is included.</p></li>
+<li><p><strong>element3 (if applicable)</strong>: A Dictionary with a String key and a String value
+specifying a single section point at which to report data. The key specifies a region in
+the model; the corresponding value specifies a section point within that region. For
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;shell &lt; MAT &gt; &lt; 7 section points &gt;&#39;</span><span class="p">:</span> <span class="s1">&#39;SPOS (fraction = 1.0)&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>If this element is omitted, data are written for all section points (if applicable).
+If this element is omitted, data are written for all section points (if applicable).</p>
+</li>
+</ul>
+</p></li>
+<li><p><strong>numericForm</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">COMPLEX_PHASE</span></code>, <code class="docutils literal notranslate"><span class="pre">COMPLEX_MAG_AT_ANGLE</span></code>, <code class="docutils literal notranslate"><span class="pre">REAL</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGINARY</span></code>, <code class="docutils literal notranslate"><span class="pre">COMPLEX_MAGNITUDE</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A SymbolicConstant specifying the numeric form in which to display results that contain
+complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE.</p></li>
+<li><p><strong>complexAngle</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <strong>numericForm</strong> = COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p></li>
+<li><p><strong>stepFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>, <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>) -- A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport">
+<span class="sig-name descname"><span class="pre">writeFreeBodyReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportSession.py#L126-L169"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport" title="Permalink to this definition"></a></dt>
+<dd><p>This method writes a FreeBody object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefreebodyreportpyc">FieldReportSession.writeFreeBodyReport on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the file to which the free body output will be written.</p></li>
+<li><p><strong>append</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- A Boolean specifying whether to append the free body output to an existing file. The
+default value is ON.</p></li>
+<li><p><strong>step</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int identifying the step from which to obtain values. The default value is the
+current step.</p></li>
+<li><p><strong>frame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int identifying the frame from which to obtain values. The default value is the
+current frame.</p></li>
+<li><p><strong>stepFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ALL</span></code>, <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>) -- A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p></li>
+<li><p><strong>odb</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Odb object specifying the output database from which data will be read.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this heading"></a></h2>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportOptions.py#L17-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FieldReportOptions object stores settings used by the writeFieldReport method when you write a
+FieldOutput object to an ASCII file. The FieldReportOptions object has no constructor. Abaqus creates the
+<strong>fieldReportOptions</strong> member when you import the Visualization module.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all">FieldReportOptions on help.3ds.com/2018</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat">
+<span class="sig-name descname"><span class="pre">NumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blankPad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ENGINEERING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportOptions.py#L83-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="Permalink to this definition"></a></dt>
+<dd><p>This method creates a NumberFormat object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">defaultFieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">fieldReportOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+<span class="n">session</span><span class="o">.</span><span class="n">journalOptions</span><span class="o">.</span><span class="n">NumberFormat</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all">NumberFormat on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>blankPad</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether the printed digits should be padded with blank characters
+to ensure equal sized fields. The <strong>blankPad</strong> argument is useful when your printed output
+includes columns. The default value is ON.</p></li>
+<li><p><strong>format</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">AUTOMATIC</span></code>, <code class="docutils literal notranslate"><span class="pre">ENGINEERING</span></code>, <code class="docutils literal notranslate"><span class="pre">SCIENTIFIC</span></code>], default: <code class="docutils literal notranslate"><span class="pre">ENGINEERING</span></code>) -- A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING,
+SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING.</p></li>
+<li><p><strong>numDigits</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">6</span></code>) -- An Int specifying the number of digits to be displayed in the result. <strong>numDigits</strong> &gt;0&gt;0.
+The default value is 6.</p></li>
+<li><p><strong>precision</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- An Int specifying the number of decimal places to which the number is to be truncated
+for display. <strong>precision</strong> ≤0≤0. If <strong>precision</strong> =0, no truncation is applied. The default
+value is 0.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A NumberFormat object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberFormat</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat">
+<span class="sig-name descname"><span class="pre">numberFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberFormat</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;abaqus.Session.NumberFormat.NumberFormat</span> <span class="pre">object&gt;</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportOptions.py#L31-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat" title="Permalink to this definition"></a></dt>
+<dd><p>Format of the number</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numColumns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printXYData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printTotal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printMinMax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pageWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NO_LIMIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnLayout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE_TABLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ASCENDING</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FieldReportOptions.py#L34-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues" title="Permalink to this definition"></a></dt>
+<dd><p>This method modifies the FieldReportOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all#simaker-fieldreportoptionssetvaluespyc">FieldReportOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numColumns</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- An Int specifying the number of columns to display for the tabular report. The default
+value is 80.</p></li>
+<li><p><strong>numberFormat</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.NumberFormat.NumberFormat" title="abaqus.Session.NumberFormat.NumberFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberFormat</span></code></a>) -- A NumberFormat object specifying the format type, number of digits and precision used to
+print the numeric output.</p></li>
+<li><p><strong>printXYData</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to include <strong>X - Y</strong> data values in the tabular report. The
+default value is ON.</p></li>
+<li><p><strong>printTotal</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to include column totals in the tabular report. The default
+value is ON.</p></li>
+<li><p><strong>printMinMax</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) -- A Boolean specifying whether to include column summary minimum and maximum values in the
+tabular report. The default value is ON.</p></li>
+<li><p><strong>pageWidth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>, <code class="docutils literal notranslate"><span class="pre">NO_LIMIT</span></code>], default: <code class="docutils literal notranslate"><span class="pre">NO_LIMIT</span></code>) -- A SymbolicConstant specifying how the width of the tabular report is to be determined.
+Possible values are NO_LIMIT and SPECIFY. The default value is NO_LIMIT.</p></li>
+<li><p><strong>columnLayout</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">SINGLE_TABLE</span></code>, <code class="docutils literal notranslate"><span class="pre">SEPARATE_TABLES</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SINGLE_TABLE</span></code>) -- A SymbolicConstant specifying how values are to be presented in the tabular report.
+Possible values are SINGLE_TABLE and SEPARATE_TABLES. The default value is SINGLE_TABLE.</p></li>
+<li><p><strong>sort</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">ASCENDING</span></code>, <code class="docutils literal notranslate"><span class="pre">DESCENDING</span></code>], default: <code class="docutils literal notranslate"><span class="pre">ASCENDING</span></code>) -- A SymbolicConstant specifying the order in which values are to be sorted within a
+tabular report. Possible values are ASCENDING and DESCENDING. The default value is
+ASCENDING.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A FieldReportOptions object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBodyReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FreeBodyReportOptions.py#L11-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
+when you write free body computational results to an ASCII file. The
+FreeBodyReportOptions object has no constructor. Abaqus creates the
+<strong>freeBodyReportOptions</strong> member when you import the Visualization module.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">defaultFreeBodyReportOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">freeBodyReportOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all">FreeBodyReportOptions on help.3ds.com/2018</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentThreshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SCIENTIFIC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reportFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NORMAL_ANNOTATED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.GLOBAL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/FreeBodyReportOptions.py#L26-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues" title="Permalink to this definition"></a></dt>
+<dd><p>This method modifies the FreeBodyReportOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all#simaker-freebodyreportoptionssetvaluespyc">FreeBodyReportOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numDigits</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">3</span></code>) -- An Int specifying the number of decimal places. The default value is 3.</p></li>
+<li><p><strong>forceThreshold</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the threshold value for force. The default value is 10⁻⁶.</p></li>
+<li><p><strong>momentThreshold</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the threshold value for moment. The default value is 10⁻⁶.</p></li>
+<li><p><strong>numberFormat</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">SCIENTIFIC</span></code>, <code class="docutils literal notranslate"><span class="pre">ENGINEERING</span></code>, <code class="docutils literal notranslate"><span class="pre">FIXED</span></code>], default: <code class="docutils literal notranslate"><span class="pre">SCIENTIFIC</span></code>) -- A SymbolicConstant specifying the number format. Possible values are SCIENTIFIC, FIXED,
+and ENGINEERING. The default value is SCIENTIFIC.</p></li>
+<li><p><strong>reportFormat</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">COMMA_SEPARATED_VALUES</span></code>, <code class="docutils literal notranslate"><span class="pre">NORMAL_ANNOTATED</span></code>], default: <code class="docutils literal notranslate"><span class="pre">NORMAL_ANNOTATED</span></code>) -- A SymbolicConstant specifying the report format. Possible values are NORMAL_ANNOTATED
+and COMMA_SEPARATED_VALUES. The default value is NORMAL_ANNOTATED.</p></li>
+<li><p><strong>csysType</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">LOCAL</span></code>, <code class="docutils literal notranslate"><span class="pre">GLOBAL</span></code>], default: <code class="docutils literal notranslate"><span class="pre">GLOBAL</span></code>) -- A SymbolicConstant specifying the coordinate system type. Possible values are GLOBAL and
+LOCAL. The default value is GLOBAL.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A FreeBodyReportOptions object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFieldVarList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/OdbFieldVarList.py#L6-L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<p>The read-only OdbFieldVarList object is a sequence listing all variables available for the current step
+and frame. Each item in the sequence is itself a sequence fully describing the given variable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">fieldVariables</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">fieldVariables</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbfieldvarlistpyc.htm?contextscope=all">OdbFieldVarList on help.3ds.com/2018</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbModelFieldVarList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/OdbModelFieldVarList.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The read-only OdbModelFieldVarList object lists all variables available for the model in the current
+OdbDisplay object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">visualization</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">modelVariableList</span>
+<span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">modelVariableList</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all">OdbModelFieldVarList on help.3ds.com/2018</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.FieldReport.writeFieldReport.writeFieldReport">
+<span class="sig-name descname"><span class="pre">writeFieldReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFY</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/writeFieldReport.py#L14-L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.writeFieldReport.writeFieldReport" title="Permalink to this definition"></a></dt>
+<dd><p>This function writes a FieldOutput object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFieldReport</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefieldreportpyc.htm?contextscope=all#simaker-functionwritefieldreportwritefieldreportpyc">writeFieldReport.writeFieldReport on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the file to which field output will be written.</p></li>
+<li><p><strong>append</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- A Boolean specifying whether to append the field output to an existing file. The default
+value is ON.</p></li>
+<li><p><strong>sortItem</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the item by which to sort the tabular values.</p></li>
+<li><p><strong>odb</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a>) -- An Odb object from which to obtain field output values.</p></li>
+<li><p><strong>step</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- An Int (or stepIndex) specifying the step from which to obtain field output values.
+Possible values are 0 ≤ <strong>step</strong> ≤ (<em>numSteps</em> − 1).</p></li>
+<li><p><strong>frame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- An Int (or frameIndex) specifying the frame from which to obtain field output values.
+Possible values are 0 ≤ <strong>frame</strong> ≤ (<em>numFramesInStep</em> − 1).</p></li>
+<li><p><strong>outputPosition</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) -- A SymbolicConstant specifying the position from which to obtain data. Possible values
+are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID,
+WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE.</p></li>
+<li><p><strong>displayGroup</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="display.html#abaqus.DisplayGroup.DisplayGroupSession.DisplayGroup" title="abaqus.DisplayGroup.DisplayGroup.DisplayGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a>) -- A DisplayGroup object specifying the subset of the model for which to obtain data.</p></li>
+<li><p><strong>variable</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) -- <p>A sequence of variable description sequences specifying one or more field output
+variables for which to obtain data. Each variable description sequence contains the
+following elements:</p>
+<ul>
+<li><p><strong>element0</strong>: A String specifying the name of the variable.</p></li>
+<li><p><strong>element1</strong>: A SymbolicConstant specifying the output position at which to report data.
+Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
+INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+WHOLE_REGION.</p></li>
+<li><p><strong>element2</strong>: A Sequence of tuples each consisting of a SymbolicConstant specifying the
+refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a
+component or invariant for which to obtain values.
+If this element is omitted, data are written for all components and invariants (if
+applicable). This element is required if <strong>element3</strong> (the following element in the tuple)
+is included.</p></li>
+<li><p><strong>element3 (if applicable)</strong>: A Dictionary with a String key and a String value
+specifying a single section point at which to report data. The key specifies a region in
+the model; the corresponding value specifies a section point within that region. For
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;shell &lt; MAT &gt; &lt; 7 section points &gt;&#39;</span><span class="p">:</span> <span class="s1">&#39;SPOS (fraction = 1.0)&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>If this element is omitted, data are written for all section points (if applicable).
+If this element is omitted, data are written for all section points (if applicable).</p>
+</li>
+</ul>
+</p></li>
+<li><p><strong>numericForm</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A SymbolicConstant specifying the numeric form in which to display results that contain
+complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
+and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE.</p></li>
+<li><p><strong>complexAngle</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A Float specifying the angle (in degrees) at which to display results that contain
+complex numbers when <strong>numericForm</strong> = COMPLEX_MAG_AT_ANGLE. The initial value is 0.</p></li>
+<li><p><strong>stepFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>) -- A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport">
+<span class="sig-name descname"><span class="pre">writeFreeBodyReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/FieldReport/writeFreeBodyReport.py#L13-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport" title="Permalink to this definition"></a></dt>
+<dd><p>This method writes a FreeBody object to a user-defined ASCII file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">writeFreeBodyReport</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefreebodyreportpyc.htm?contextscope=all#simaker-functionwritefreebodyreportwritefreebodyreportpyc">writeFreeBodyReport.writeFreeBodyReport on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the file to which the free body output will be written.</p></li>
+<li><p><strong>append</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- A Boolean specifying whether to append the free body output to an existing file. The
+default value is ON.</p></li>
+<li><p><strong>step</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int identifying the step from which to obtain values. The default value is the
+current step.</p></li>
+<li><p><strong>frame</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int identifying the frame from which to obtain values. The default value is the
+current frame.</p></li>
+<li><p><strong>stepFrame</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SPECIFY</span></code>) -- A SymbolicConstant indicating whether to obtain the values from the specified frame or
+from all active frames. Possible values are SPECIFY and ALL. The default value is
+SPECIFY.</p></li>
+<li><p><strong>odb</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Odb object specifying the output database from which data will be read.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="display.html" class="btn btn-neutral float-left" title="Display Group" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="odb_display.html" class="btn btn-neutral float-right" title="Odb Display" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, WANG Hailin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+<div
+  class="rst-versions"
+  data-toggle="rst-versions"
+  role="note"
+  aria-label="versions"
+>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: true
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+    <dl>
+      <dt>Languages</dt>
+       
+      <strong>
+        
+        <dd><a href="/abqpy/en/true/">en</a></dd>
+        
+      </strong>
+        
+        <dd><a href="/abqpy/zh_CN/true/">zh_CN</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>Versions</dt>
+       
+        <dd><a href="/abqpy/en/2016/">2016</a></dd>
+          
+        <dd><a href="/abqpy/en/2017/">2017</a></dd>
+          
+        <dd><a href="/abqpy/en/2018/">2018</a></dd>
+          
+        <dd><a href="/abqpy/en/2019/">2019</a></dd>
+          
+        <dd><a href="/abqpy/en/2020/">2020</a></dd>
+          
+        <dd><a href="/abqpy/en/2021/">2021</a></dd>
+          
+        <dd><a href="/abqpy/en/2022/">2022</a></dd>
+          
+        <dd><a href="/abqpy/en/2023/">2023</a></dd>
+          
+        <dd><a href="/abqpy/en/latest/">latest</a></dd>
+          
+        <dd><a href="/abqpy/en/sphinx-book-theme/">sphinx-book-theme</a></dd>
+          
+        <dd><a href="/abqpy/en/furo/">furo</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>Downloads</dt>
+      
+      <dd><a href="/abqpy/en/true/abqpy-docs-en-true.pdf">pdf</a></dd>
+      
+      <dd><a href="/abqpy/en/true/abqpy-docs-en-true.epub">epub</a></dd>
+      
+    </dl>
+     
+    <hr />
+    <a
+      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
+      >Continuous Documentation</a
+    >
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

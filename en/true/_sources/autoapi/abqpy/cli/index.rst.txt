@@ -1,0 +1,287 @@
+:py:mod:`abqpy.cli`
+===================
+
+.. py:module:: abqpy.cli
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   abqpy.cli.AbqpyCLIBase
+   abqpy.cli.AbqpyMiscCLI
+   abqpy.cli.AbqpyCLI
+
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   abqpy.cli.abaqus
+
+
+.. py:class:: AbqpyCLIBase
+
+   Base class for Abaqus/CAE command line interface to run Abaqus commands.
+
+
+   .. autoclasstoc::
+
+   .. py:method:: _parse_options(**options: str | bool | None) -> str
+
+      Parse options to be passed to Abaqus/CAE command line interface.
+
+      If the value is a string, the option will
+      be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or
+      ignored if False; if the value is None, the option will be ignored.
+
+
+   .. py:method:: run(cmd: str)
+
+      Run custom command.
+
+
+   .. py:method:: abaqus(*args, **options)
+
+      Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are
+      handled by the :meth:`._parse_options` method.
+
+      :param args: Arguments and options to be passed to the Abaqus command.
+      :param options: Arguments and options to be passed to the Abaqus command.
+
+
+
+.. py:class:: AbqpyMiscCLI
+
+   Bases: :py:obj:`AbqpyCLIBase`
+
+   Less frequently used Abaqus/CAE commands.
+
+
+   .. autoclasstoc::
+
+   .. py:method:: optimization(task: str, job: str, *, cpus: int = None, gpus: int = None, memory: int = None, interactive: bool = False, globalmodel: str = None, scratch: str = None, **kwargs)
+
+      Run Abaqus optimization command.
+
+      :param task: The file containing the parameters that are used to execute the optimization.
+      :type task: :class:`str`
+      :param job: The name of the folder in which the results of the optimization are stored.
+      :type job: :class:`str`
+      :param cpus: The number of processors to use during an analysis run if parallel processing is available.
+      :type cpus: :class:`int`, *optional*
+      :param gpus: This acceleration of the Abaqus/Standard direct solver.
+      :type gpus: :class:`int`, *optional*
+      :param memory: Maximum amount of memory or maximum percentage of the physical memory that can be allocated.
+      :type memory: :class:`int`, *optional*
+      :param interactive: This option will cause the job to run interactively.
+      :type interactive: :class:`bool`, *optional*
+      :param globalmodel: The name of the global model's results file, ODB output database file, or SIM database file.
+      :type globalmodel: :class:`str`, *optional*
+      :param scratch: The name of the directory used for scratch files.
+      :type scratch: :class:`str`, *optional*
+      :param kwargs: Other unrecognized keyword arguments
+
+
+   .. py:method:: help(*args, **options)
+
+
+   .. py:method:: information(*args, **options)
+
+
+   .. py:method:: whereami(*args, **options)
+
+
+   .. py:method:: cse(*args, **options)
+
+
+   .. py:method:: cosimulation(*args, **options)
+
+
+   .. py:method:: fmu(*args, **options)
+
+
+   .. py:method:: script(*args, **options)
+
+
+   .. py:method:: doc(*args, **options)
+
+
+   .. py:method:: licensing(*args, **options)
+
+
+   .. py:method:: ascfil(*args, **options)
+
+
+   .. py:method:: append(*args, **options)
+
+
+   .. py:method:: findkeyword(*args, **options)
+
+
+   .. py:method:: fetch(*args, **options)
+
+
+   .. py:method:: make(*args, **options)
+
+
+   .. py:method:: upgrade(*args, **options)
+
+
+   .. py:method:: sim_version(*args, **options)
+
+
+   .. py:method:: odb2sim(*args, **options)
+
+
+   .. py:method:: odbreport(*args, **options)
+
+
+   .. py:method:: restartjoin(*args, **options)
+
+
+   .. py:method:: substructurecombine(*args, **options)
+
+
+   .. py:method:: substructurerecover(*args, **options)
+
+
+   .. py:method:: odbcombine(*args, **options)
+
+
+   .. py:method:: networkDBConnector(*args, **options)
+
+
+   .. py:method:: emloads(*args, **options)
+
+
+   .. py:method:: mtxasm(*args, **options)
+
+
+   .. py:method:: fromnastran(*args, **options)
+
+
+   .. py:method:: tonastran(*args, **options)
+
+
+   .. py:method:: fromansys(*args, **options)
+
+
+   .. py:method:: frompamcrash(*args, **options)
+
+
+   .. py:method:: fromradioss(*args, **options)
+
+
+   .. py:method:: toOutput2(*args, **options)
+
+
+   .. py:method:: fromdyna(*args, **options)
+
+
+   .. py:method:: tozaero(*args, **options)
+
+
+   .. py:method:: adams(*args, **options)
+
+
+   .. py:method:: tosimpack(*args, **options)
+
+
+   .. py:method:: fromsimpack(*args, **options)
+
+
+   .. py:method:: toexcite(*args, **options)
+
+
+   .. py:method:: moldflow(*args, **options)
+
+
+   .. py:method:: encrypt(*args, **options)
+
+
+   .. py:method:: decrypt(*args, **options)
+
+
+   .. py:method:: suspend(*args, **options)
+
+
+   .. py:method:: resume(*args, **options)
+
+
+   .. py:method:: terminate(*args, **options)
+
+
+   .. py:method:: sysVerify(*args, **options)
+
+
+
+.. py:class:: AbqpyCLI
+
+   Bases: :py:obj:`AbqpyCLIBase`
+
+   The abqpy command line interface.
+
+
+   .. autoclasstoc::
+
+   .. py:attribute:: viewer
+
+      
+
+   .. py:method:: cae(script: str, *args, database: str = None, replay: str = None, recover: str = None, gui: bool = False, noenvstartup: bool = False, noSavedOptions: bool = False, noStartupDialog: bool = False, guiRecord: bool = False, guiNoRecord: bool = False, **kwargs)
+
+      Run Abaqus/CAE command.
+
+      :param script: The name of the python script to run
+      :type script: :class:`str`
+      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
+      :type args: :class:`str`
+      :param database: The name of the database file to open, by default None
+      :type database: :class:`str`, *optional*
+      :param replay: The name of the replay file to open, by default None
+      :type replay: :class:`str`, *optional*
+      :param recover: The name of the journal file to open, by default None
+      :type recover: :class:`str`, *optional*
+      :param gui: Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+      :type gui: :class:`bool`, *optional*
+      :param noenvstartup: Do not execute the Abaqus/CAE startup file, by default False
+      :type noenvstartup: :class:`bool`, *optional*
+      :param noSavedOptions: Do not use the saved options, by default False
+      :type noSavedOptions: :class:`bool`, *optional*
+      :param noStartupDialog: Do not display the startup dialog, by default False
+      :type noStartupDialog: :class:`bool`, *optional*
+      :param guiRecord: Record the GUI commands to a file, by default False
+      :type guiRecord: :class:`bool`, *optional*
+      :param guiNoRecord: Do not record the GUI commands to a file, by default False
+      :type guiNoRecord: :class:`bool`, *optional*
+      :param kwargs: Other unrecognized keyword arguments
+
+
+   .. py:method:: python(script: str, *args, sim: str = None, log: str = None, **kwargs)
+
+      Run Abaqus/Python command.
+
+      :param script: The name of the python script to run
+      :type script: :class:`str`
+      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
+      :type args: :class:`str`
+      :param sim: The name of the simulation file to open, by default None
+      :type sim: :class:`str`, *optional*
+      :param log: The name of the log file to open, by default None
+      :type log: :class:`str`, *optional*
+      :param kwargs: Other unrecognized keyword arguments
+
+
+
+.. py:data:: abaqus
+
+   
+
