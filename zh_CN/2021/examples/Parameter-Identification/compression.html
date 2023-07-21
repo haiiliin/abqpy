@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parameter Identification: Model Script &mdash; abqpy 2021.5.4.post3.dev13+g31404220e 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Abaqus Scripting User&#39;s Guide" href="../../user/index.html" />
+    <link rel="prev" title="Parameter Identification" href="optimize.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2021
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#how-to-add-a-new-example">How to add a new example</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#examples-from-abaqus-documentation">Examples from Abaqus Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#compression-model">Compression Model</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#parameter-identification">Parameter Identification</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Abaqus/index.html">Examples from Abaqus Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Compression/index.html">Compression Model</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Parameter Identification</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Examples</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Parameter Identification</a></li>
+      <li class="breadcrumb-item active">Parameter Identification: Model Script</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/examples/Parameter-Identification/compression.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">备注</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#sphx-glr-download-examples-parameter-identification-compression-py"><span class="std std-ref">Go to the end</span></a>
+to download the full example code</p>
+</div>
+<section class="sphx-glr-example-title" id="parameter-identification-model-script">
+<span id="sphx-glr-examples-parameter-identification-compression-py"></span><h1>Parameter Identification: Model Script<a class="headerlink" href="#parameter-identification-model-script" title="此标题的永久链接"></a></h1>
+<p>Script to build the compression model for the parameter identification</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># run with: python compression.py 1000,0.2</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">caeModules</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">modulus</span><span class="p">,</span> <span class="n">poisson</span><span class="o">=</span><span class="mf">0.2</span><span class="p">):</span>
+    <span class="n">executeOnCaeStartup</span><span class="p">()</span>
+
+    <span class="c1"># Model</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s2">&quot;Model-1&quot;</span><span class="p">]</span>
+
+    <span class="c1"># Part</span>
+    <span class="n">sketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;sketch&quot;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">sketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">part</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;part&quot;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">sketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Create sets</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;set-all&quot;</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),)))</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;set-bottom&quot;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),)))</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;set-top&quot;</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),)))</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;surface-top&quot;</span><span class="p">,</span> <span class="n">side1Faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),)))</span>
+
+    <span class="c1"># Assembly</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;instance&quot;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+
+    <span class="c1"># Material</span>
+    <span class="n">material</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;material&quot;</span><span class="p">)</span>
+    <span class="n">material</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="n">modulus</span><span class="p">,</span> <span class="n">poisson</span><span class="p">),))</span>
+    <span class="n">material</span><span class="o">.</span><span class="n">Density</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">2500</span><span class="p">,),))</span>
+
+    <span class="c1"># Section</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;section&quot;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="s2">&quot;material&quot;</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s2">&quot;set-all&quot;</span><span class="p">],</span> <span class="n">sectionName</span><span class="o">=</span><span class="s2">&quot;section&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Step</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Step-1&quot;</span><span class="p">,</span>
+        <span class="n">previous</span><span class="o">=</span><span class="s2">&quot;Initial&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">timeIncrementationMethod</span><span class="o">=</span><span class="n">AUTOMATIC</span><span class="p">,</span>
+        <span class="n">maxNumInc</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+        <span class="n">initialInc</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+        <span class="n">minInc</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+        <span class="n">maxInc</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Output request</span>
+    <span class="n">field</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="s2">&quot;F-Output-1&quot;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s2">&quot;Step-1&quot;</span><span class="p">,</span> <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">))</span>
+
+    <span class="c1"># Boundary condition</span>
+    <span class="n">bottom_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s2">&quot;instance&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s2">&quot;set-bottom&quot;</span><span class="p">]</span>
+    <span class="n">bc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;BC-1&quot;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s2">&quot;Initial&quot;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">bottom_instance</span><span class="p">,</span> <span class="n">u1</span><span class="o">=</span><span class="n">SET</span><span class="p">,</span> <span class="n">u2</span><span class="o">=</span><span class="n">SET</span><span class="p">,</span> <span class="n">u3</span><span class="o">=</span><span class="n">SET</span><span class="p">,</span> <span class="n">ur1</span><span class="o">=</span><span class="n">SET</span><span class="p">,</span> <span class="n">ur2</span><span class="o">=</span><span class="n">SET</span><span class="p">,</span> <span class="n">ur3</span><span class="o">=</span><span class="n">SET</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Load</span>
+    <span class="n">top_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s2">&quot;instance&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="s2">&quot;surface-top&quot;</span><span class="p">]</span>
+    <span class="n">pressure</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="s2">&quot;pressure&quot;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s2">&quot;Step-1&quot;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">top_instance</span><span class="p">,</span> <span class="n">magnitude</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="c1"># Mesh</span>
+    <span class="n">elem1</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8R</span><span class="p">)</span>
+    <span class="n">elem2</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D6</span><span class="p">)</span>
+    <span class="n">elem3</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D4</span><span class="p">)</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="p">,),</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><span class="n">elem1</span><span class="p">,</span> <span class="n">elem2</span><span class="p">,</span> <span class="n">elem3</span><span class="p">))</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">seedPart</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">part</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
+
+    <span class="c1"># Job</span>
+    <span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Job-1&quot;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">&quot;Model-1&quot;</span><span class="p">)</span>
+    <span class="n">job</span><span class="o">.</span><span class="n">writeInput</span><span class="p">()</span>
+
+    <span class="c1"># Submit the job</span>
+    <span class="n">job</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+    <span class="n">job</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+
+    <span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="s2">&quot;compression.cae&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Open output database</span>
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s2">&quot;Job-1.odb&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Show the output database in viewport</span>
+    <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s2">&quot;Viewport: 1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">odb</span><span class="p">)</span>
+
+    <span class="c1"># Extract output data</span>
+    <span class="n">dataList</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span><span class="p">(</span>
+        <span class="n">odb</span><span class="o">=</span><span class="n">odb</span><span class="p">,</span> <span class="n">outputPosition</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="p">((</span><span class="s2">&quot;U&quot;</span><span class="p">,</span> <span class="n">NODAL</span><span class="p">,</span> <span class="p">((</span><span class="n">COMPONENT</span><span class="p">,</span> <span class="s2">&quot;U3&quot;</span><span class="p">),)),),</span> <span class="n">nodeSets</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;INSTANCE.SET-TOP&quot;</span><span class="p">,)</span>
+    <span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><span class="n">dataList</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <a href="https://numpy.org/doc/stable/reference/generated/numpy.savetxt.html#numpy.savetxt" title="numpy.savetxt" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">savetxt</span></a><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s2">&quot;time,U3&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">E</span><span class="p">,</span> <span class="n">mu</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+    <span class="n">run</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">E</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">mu</span><span class="p">))</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-parameter-identification-compression-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/7e5f26f486f92ed693442b2a99cbef92/compression.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">compression.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/8d2e74dad8eb4b669fd579d41c168fe4/compression.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">compression.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="optimize.html" class="btn btn-neutral float-left" title="Parameter Identification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../user/index.html" class="btn btn-neutral float-right" title="Abaqus Scripting User&#39;s Guide" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+<div
+  class="rst-versions"
+  data-toggle="rst-versions"
+  role="note"
+  aria-label="versions"
+>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 2021
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+    <dl>
+      <dt>Languages</dt>
+       
+        <dd><a href="/abqpy/en/2021/">en</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2021/">zh_CN</a></dd>
+        
+      </strong>
+       
+    </dl>
+     
+    <dl>
+      <dt>版本</dt>
+       
+        <dd><a href="/abqpy/zh_CN/2016/">2016</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2017/">2017</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2018/">2018</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2019/">2019</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2020/">2020</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2021/">2021</a></dd>
+        
+      </strong>
+        
+        <dd><a href="/abqpy/zh_CN/2022/">2022</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2023/">2023</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/latest/">latest</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/sphinx-book-theme/">sphinx-book-theme</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/furo/">furo</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>下载</dt>
+      
+      <dd><a href="/abqpy/zh_CN/2021/abqpy-docs-zh_CN-2021.pdf">pdf</a></dd>
+      
+      <dd><a href="/abqpy/zh_CN/2021/abqpy-docs-zh_CN-2021.epub">epub</a></dd>
+      
+    </dl>
+     
+    <hr />
+    <a
+      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
+      >Continuous Documentation</a
+    >
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
