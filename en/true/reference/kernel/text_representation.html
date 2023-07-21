@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Text Representation &mdash; abqpy 2021.5.4.post3.dev12+g26dcce5db documentation</title>
+  <title>Text Representation &mdash; abqpy 2016.5.4.post3.dev12+g9b60bb757 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -85,7 +85,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Utility and View" href="utility.html" />
-    <link rel="prev" title="Table Collection" href="table_collection.html" /> 
+    <link rel="prev" title="Messaging" href="messaging.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -133,7 +133,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l3"><a class="reference internal" href="input.html">Input File Parser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kernel.html">Custom Kernel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="table_collection.html">Table Collection</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Text Representation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
 </ul>
@@ -199,7 +198,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="toggle docutils container">
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.TextReprOptions.TextReprOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextReprOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/TextReprOptions.py#L10-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextReprOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/TextReprOptions.py#L10-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The TextReprOptions object is used to configure the output of the Python <cite>str()</cite> command within
 Abaqus/CAE. (The <cite>str()</cite> command is used by the Python print function.) The TextReprOptions object stores
@@ -216,17 +215,17 @@ object has no constructor. Abaqus creates the <strong>textReprOptions</strong> m
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all">TextReprOptions on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all">TextReprOptions on help.3ds.com/2016</a>.</p>
 </div>
 <p class="rubric">Member Details:</p>
 <div class="toggle docutils container">
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/TextReprOptions.py#L25-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/TextReprOptions.py#L25-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues" title="Permalink to this definition"></a></dt>
 <dd><p>This method modifies the TextReprOptions object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all#simaker-textreproptionssetvaluespyc">TextReprOptions.setValues on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all#simaker-textreproptionssetvaluespyc">TextReprOptions.setValues on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -257,12 +256,12 @@ sequence to return. Possible values are UNLIMITED or Ints &gt; 0. The initial va
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.redentABQ.indentFile">
-<span class="sig-name descname"><span class="pre">indentFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runTest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/redentABQ.py#L25-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.redentABQ.indentFile" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">indentFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runTest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/redentABQ.py#L25-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.redentABQ.indentFile" title="Permalink to this definition"></a></dt>
 <dd><p>This method outputs the indented file to the terminal window or backs up the specified file and replaces
 it.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionredentabqpyc.htm?contextscope=all#simaker-functionredentabqindentfilepyc">redentABQ.indentFile on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionredentabqpyc.htm?contextscope=all#simaker-functionredentabqindentfilepyc">redentABQ.indentFile on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -288,11 +287,11 @@ semantically the same after any changes. The default value is False.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getIndentedRepr">
-<span class="sig-name descname"><span class="pre">getIndentedRepr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L20-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getIndentedRepr" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">getIndentedRepr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L20-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getIndentedRepr" title="Permalink to this definition"></a></dt>
 <dd><p>This method returns a String with each level of parentheses indented.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetindentedreprpyc">textRepr.getIndentedRepr on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetindentedreprpyc">textRepr.getIndentedRepr on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -324,12 +323,12 @@ values are 0 &lt; <strong>significantDigits</strong> ≤ 15. The default value i
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getPaths">
-<span class="sig-name descname"><span class="pre">getPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L58-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getPaths" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">getPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L58-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getPaths" title="Permalink to this definition"></a></dt>
 <dd><p>This method processes the argument and interprets its structure. It then returns a String containing the
 object paths of all the child objects found.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetpathspyc">textRepr.getPaths on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetpathspyc">textRepr.getPaths on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -361,12 +360,12 @@ The default value is None, implying that the path to <strong>object</strong> wil
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getTypes">
-<span class="sig-name descname"><span class="pre">getTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L97-L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getTypes" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">getTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L97-L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getTypes" title="Permalink to this definition"></a></dt>
 <dd><p>This method processes the argument, interprets its structure, and returns a String containing all the
 object types within the object in the form '<em>TypeName</em> <strong>Path</strong>'.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgettypespyc">textRepr.getTypes on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgettypespyc">textRepr.getTypes on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -396,13 +395,13 @@ The default value is None, implying that the path to <strong>object</strong> wil
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.prettyPrint">
-<span class="sig-name descname"><span class="pre">prettyPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L134-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.prettyPrint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">prettyPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L134-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.prettyPrint" title="Permalink to this definition"></a></dt>
 <dd><p>This method prints a formatted version of the object. The prettyPrint function uses getIndentedRepr to
 format the String representation, but does not save the full text output of getIndentedRepr. Therefore this
 function can be used in cases where getIndentedRepr would run out of memory.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprettyprintpyc">textRepr.prettyPrint on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprettyprintpyc">textRepr.prettyPrint on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -425,13 +424,13 @@ values are 0 &lt; <strong>significantDigits</strong> ≤ 15. The default value i
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.printPaths">
-<span class="sig-name descname"><span class="pre">printPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L166-L197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printPaths" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">printPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L166-L197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printPaths" title="Permalink to this definition"></a></dt>
 <dd><p>This method prints the object path of the <strong>object</strong> argument and its members, depending on the
 <strong>maxRecursionDepth</strong> argument. The printPaths function uses getPaths to print a list of paths to each of
 the child objects in <strong>object</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprintpathspyc">textRepr.printPaths on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprintpathspyc">textRepr.printPaths on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -456,12 +455,12 @@ used.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.printTypes">
-<span class="sig-name descname"><span class="pre">printTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/TextRepresentation/textRepr.py#L200-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printTypes" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">printTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/TextRepresentation/textRepr.py#L200-L229"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printTypes" title="Permalink to this definition"></a></dt>
 <dd><p>This method prints the object type. The printTypes function uses getTypes to print a list of all the
 object types in <strong>object</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprinttypespyc">textRepr.printTypes on help.3ds.com/2021</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprinttypespyc">textRepr.printTypes on help.3ds.com/2016</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -491,7 +490,7 @@ used.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="table_collection.html" class="btn btn-neutral float-left" title="Table Collection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="messaging.html" class="btn btn-neutral float-left" title="Messaging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="utility.html" class="btn btn-neutral float-right" title="Utility and View" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
