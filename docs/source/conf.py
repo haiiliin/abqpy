@@ -23,8 +23,9 @@ import re
 import sys
 import typing
 
-import abqpy
 import git
+
+import abqpy
 
 project = "abqpy"
 copyright = "2022, WANG Hailin"
