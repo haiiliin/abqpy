@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abaqus API Changes &mdash; abqpy 2021.5.4.post3.dev12+g26dcce5db 文档</title>
+  <title>Abaqus API Changes &mdash; abqpy 2018.5.4.post3.dev13+g377a9fa06 文档</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
@@ -126,63 +126,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="user/index.html">Abaqus Scripting User's Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Abaqus Class References</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Abaqus API Changes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#abaqus-2021">Abaqus 2021</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-property-compositeplyarray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-boundarycondition-boundaryconditionmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.BoundaryConditionModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-boundarycondition-submodelbc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.SubmodelBC</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-interactionmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacecrushtriggerassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceCrushTriggerAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacefrictionassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceFrictionAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfaceoffsetassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceOffsetAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacethicknessassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceThicknessAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-slidingformulationassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SlidingFormulationAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacebeamsmoothingassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceBeamSmoothingAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacevertexcriteriaassignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceVertexCriteriaAssignment</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-material-material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-optimizationtask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-shapeplanarsymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapePlanarSymmetry</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-shaperotationalsymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeRotationalSymmetry</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#abaqus-2020">Abaqus 2020</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-part-partbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-part-acismdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.AcisMdb</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-odb-rebarorientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Odb.RebarOrientation</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-canvas-viewportbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Canvas.ViewportBase</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-tablecollectionassembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionAssembly</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-tablecollectionmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-tablecollectionstep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionStep</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-tablecollection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-parametertable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.ParameterTable</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-tablecollection-propertytabledata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.PropertyTableData</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-model-modelbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Model.ModelBase</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-interactioncontactinitializationmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionContactInitializationModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-material-plastic-tensilefailure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Plastic.TensileFailure</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-assembly-assemblybase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.AssemblyBase</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#abaqus-2019">Abaqus 2019</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-displaygroup-leaffromconstraintnames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.DisplayGroup.LeafFromConstraintNames</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-odbdisplay-odbdisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-plotoptions-basicoptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PlotOptions.BasicOptions</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-interactionpropertymodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionPropertyModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-fluidinflatorstate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.FluidInflatorState</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-interaction-surfacetosurfacecontactstd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-mesh-meshpart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-optimizationtaskmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-topologyoverhangcontrol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyOverhangControl</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-shapetask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeTask</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-sizingtask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.SizingTask</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-optimization-topologytask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyTask</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#abaqus-assembly-modelinstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.ModelInstance</span></code></a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#abaqus-2018">Abaqus 2018</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-part-partbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-region-regionpart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Region.RegionPart</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-region-set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Region.Set</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-predefinedfield-predefinedfieldmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel</span></code></a></li>
@@ -193,11 +138,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-step-stepmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-step-tempdisplacementdynamicsstep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.TempDisplacementDynamicsStep</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-session-sessionbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Session.SessionBase</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-odbdisplay-odbdisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-odbdisplay-viewcut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.ViewCut</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-xy-xysession"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.XY.XYSession</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-xy-writexyreport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.XY.writeXYReport</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-load-loadmodel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Load.LoadModel</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abaqus-material-material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-material-materialbase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.MaterialBase</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-material-multiscale-meanfieldhomogenization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Multiscale.MeanFieldHomogenization</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-material-multiscale-meanfieldinclusion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Multiscale.MeanFieldInclusion</span></code></a></li>
@@ -208,12 +154,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#abaqus-2017">Abaqus 2017</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-predefinedfield-stress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.Stress</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-section-sectionlayerarray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Section.SectionLayerArray</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-sketcher-constrainedsketchdimension-distancedimension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-sketcher-constrainedsketchgeometry-arcbycenterends"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-odb-odbset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Odb.OdbSet</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-job-jobmdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Job.JobMdb</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#abaqus-job-modeljob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Job.ModelJob</span></code></a></li>
@@ -269,351 +215,10 @@ commentsRunWhenDOMLoaded(addUtterances);
              
   <section id="abaqus-api-changes">
 <h1>Abaqus API Changes<a class="headerlink" href="#abaqus-api-changes" title="此标题的永久链接"></a></h1>
-<section id="abaqus-2021">
-<h2>Abaqus 2021<a class="headerlink" href="#abaqus-2021" title="此标题的永久链接"></a></h2>
-<section id="abaqus-property-compositeplyarray">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray</span></code><a class="headerlink" href="#abaqus-property-compositeplyarray" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/property.html#abaqus.Property.CompositePlyArray.CompositePly" title="abaqus.Property.CompositePlyArray.CompositePly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray.CompositePly</span></code></a>: <em>changed</em>: Changed in version 2021: Add possible value ANALYTICAL_FIELD_THICKNESS.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/property.html#abaqus.Property.CompositePlyArray.CompositePly" title="abaqus.Property.CompositePlyArray.CompositePly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray.CompositePly</span></code></a>: <em>changed</em>: Changed in version 2021: Update docs for ANALYTICAL_FIELD_THICKNESS</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/property.html#abaqus.Property.CompositePlyArray.CompositePly.thicknessField" title="abaqus.Property.CompositePlyArray.CompositePly.thicknessField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray.CompositePly.thicknessField</span></code></a>: <em>changed</em>: Changed in version 2021: Update docs for ANALYTICAL_FIELD_THICKNESS</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/property.html#abaqus.Property.CompositePlyArray.CompositePly.thicknessType" title="abaqus.Property.CompositePlyArray.CompositePly.thicknessType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Property.CompositePlyArray.CompositePly.thicknessType</span></code></a>: <em>changed</em>: Changed in version 2021: Add possible value ANALYTICAL_FIELD_THICKNESS.</p></li>
-</ul>
-</section>
-<section id="abaqus-boundarycondition-boundaryconditionmodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.BoundaryConditionModel</span></code><a class="headerlink" href="#abaqus-boundarycondition-boundaryconditionmodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/bc.html#abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC" title="abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC</span></code></a>: <em>added</em>: New in version 2021: The intersectionOnly argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-boundarycondition-submodelbc">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.SubmodelBC</span></code><a class="headerlink" href="#abaqus-boundarycondition-submodelbc" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/bc.html#abaqus.BoundaryCondition.SubmodelBC.SubmodelBC" title="abaqus.BoundaryCondition.SubmodelBC.SubmodelBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.BoundaryCondition.SubmodelBC.SubmodelBC</span></code></a>: <em>added</em>: New in version 2021: The intersectionOnly argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-interactionmodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code><a class="headerlink" href="#abaqus-interaction-interactionmodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactExp</span></code></a>: <em>added</em>: New in version 2021: The surfaceCrushTriggerAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactExp</span></code></a>: <em>added</em>: New in version 2021: The surfaceFrictionAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactStd</span></code></a>: <em>added</em>: New in version 2021: The surfaceBeamSmoothingAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactStd</span></code></a>: <em>added</em>: New in version 2021: The surfaceVertexCriteriaAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactStd</span></code></a>: <em>added</em>: New in version 2021: The slidingFormulationAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.ContactPropertyAssignment.appendInStep" title="abaqus.Interaction.InteractionModel.ContactPropertyAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.ContactPropertyAssignment.appendInStep</span></code></a>: <em>changed</em>: Changed in version 2021: Update descriptions of the three entries in the tuple.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.ContactPropertyAssignment.delete" title="abaqus.Interaction.InteractionModel.ContactPropertyAssignment.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.ContactPropertyAssignment.delete</span></code></a>: <em>changed</em>: Changed in version 2021: Update descriptions of the two entries in the tuple.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacecrushtriggerassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceCrushTriggerAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfacecrushtriggerassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment" title="abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment</span></code></a>: <em>added</em>: New in version 2021: The SurfaceCrushTriggerAssignment class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacefrictionassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceFrictionAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfacefrictionassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment" title="abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment</span></code></a>: <em>added</em>: New in version 2021: The SurfaceFrictionAssignment class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfaceoffsetassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceOffsetAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfaceoffsetassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep" title="abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep</span></code></a>: <em>changed</em>: Changed in version 2021: The first entry in the tuple can be a material object now.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacethicknessassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceThicknessAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfacethicknessassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep" title="abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep</span></code></a>: <em>changed</em>: Changed in version 2021: The first entry in the tuple can be a material object now.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-slidingformulationassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SlidingFormulationAssignment</span></code><a class="headerlink" href="#abaqus-interaction-slidingformulationassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment" title="abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment</span></code></a>: <em>added</em>: New in version 2021: The SlidingFormulationAssignment class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacebeamsmoothingassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceBeamSmoothingAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfacebeamsmoothingassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment" title="abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment</span></code></a>: <em>added</em>: New in version 2021: The SurfaceBeamSmoothingAssignment class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacevertexcriteriaassignment">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceVertexCriteriaAssignment</span></code><a class="headerlink" href="#abaqus-interaction-surfacevertexcriteriaassignment" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment" title="abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment</span></code></a>: <em>added</em>: New in version 2021: The SurfaceVertexCriteriaAssignment class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-material-material">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code><a class="headerlink" href="#abaqus-material-material" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.GapConductance" title="abaqus.Material.Material.Material.GapConductance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.GapConductance</span></code></a>: <em>added</em>: New in version 2021: The GapConductance method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.GapConvection" title="abaqus.Material.Material.Material.GapConvection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.GapConvection</span></code></a>: <em>added</em>: New in version 2021: The GapConvection method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.GapRadiation" title="abaqus.Material.Material.Material.GapRadiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.GapRadiation</span></code></a>: <em>added</em>: New in version 2021: The GapRadiation method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.GapConductance" title="abaqus.Material.Material.GapConductance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.GapConductance</span></code></a>: <em>added</em>: New in version 2021: The GapConductance class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.GapConvection" title="abaqus.Material.Material.GapConvection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.GapConvection</span></code></a>: <em>added</em>: New in version 2021: The GapConvection class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.GapRadiation" title="abaqus.Material.Material.GapRadiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.GapRadiation</span></code></a>: <em>added</em>: New in version 2021: The GapRadiation class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-optimizationtask">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask</span></code><a class="headerlink" href="#abaqus-optimization-optimizationtask" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry</span></code></a>: <em>added</em>: New in version 2021: The alloowNonSymmetricMesh argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry</span></code></a>: <em>added</em>: New in version 2021: The alloowNonSymmetricMesh argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-shapeplanarsymmetry">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapePlanarSymmetry</span></code><a class="headerlink" href="#abaqus-optimization-shapeplanarsymmetry" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry" title="abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry</span></code></a>: <em>added</em>: New in version 2021: The alloowNonSymmetricMesh argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh" title="abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh</span></code></a>: <em>added</em>: New in version 2021: The allowNonSymmetricMesh attribute was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-shaperotationalsymmetry">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeRotationalSymmetry</span></code><a class="headerlink" href="#abaqus-optimization-shaperotationalsymmetry" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry" title="abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry</span></code></a>: <em>added</em>: New in version 2021: The alloowNonSymmetricMesh argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh" title="abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh</span></code></a>: <em>added</em>: New in version 2021: The allowNonSymmetricMesh attribute was added.</p></li>
-</ul>
-</section>
-</section>
-<section id="abaqus-2020">
-<h2>Abaqus 2020<a class="headerlink" href="#abaqus-2020" title="此标题的永久链接"></a></h2>
-<section id="abaqus-part-partbase">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code><a class="headerlink" href="#abaqus-part-partbase" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/part.html#abaqus.Part.PartBase.AcisFile.openSolidworks" title="abaqus.Part.PartBase.AcisFile.openSolidworks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase.AcisFile.openSolidworks</span></code></a>: <em>added</em>: New in version 2020: The openSolidworks method was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-part-acismdb">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.AcisMdb</span></code><a class="headerlink" href="#abaqus-part-acismdb" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/part.html#abaqus.Part.AcisMdb.AcisMdb.openSolidworks" title="abaqus.Part.AcisMdb.AcisMdb.openSolidworks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.AcisMdb.AcisMdb.openSolidworks</span></code></a>: <em>added</em>: New in version 2020: The openSolidworks method was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-odb-rebarorientation">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Odb.RebarOrientation</span></code><a class="headerlink" href="#abaqus-odb-rebarorientation" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/odb.html#abaqus.Odb.RebarOrientation.OdbSet.instances" title="abaqus.Odb.RebarOrientation.OdbSet.instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Odb.RebarOrientation.OdbSet.instances</span></code></a>: <em>added</em>: New in version 2020: The instances attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/odb.html#abaqus.Odb.RebarOrientation.OdbSet.isInternal" title="abaqus.Odb.RebarOrientation.OdbSet.isInternal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Odb.RebarOrientation.OdbSet.isInternal</span></code></a>: <em>added</em>: New in version 2020: The isInternal attribute was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-canvas-viewportbase">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Canvas.ViewportBase</span></code><a class="headerlink" href="#abaqus-canvas-viewportbase" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/canvas.html#abaqus.Canvas.ViewportBase.ViewportBase.animationController" title="abaqus.Canvas.ViewportBase.ViewportBase.animationController"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Canvas.ViewportBase.ViewportBase.animationController</span></code></a>: <em>added</em>: New in version 2020: The animationController attribute was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-tablecollectionassembly">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionAssembly</span></code><a class="headerlink" href="#abaqus-tablecollection-tablecollectionassembly" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly" title="abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly</span></code></a>: <em>added</em>: New in version 2020: The TableCollectionAssembly class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionAssembly.ElementProgressiveActivation" title="abaqus.TableCollection.TableCollectionAssembly.ElementProgressiveActivation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionAssembly.ElementProgressiveActivation</span></code></a>: <em>added</em>: New in version 2020: The ElementProgressiveActivation class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-tablecollectionmodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionModel</span></code><a class="headerlink" href="#abaqus-tablecollection-tablecollectionmodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionModel.TableCollectionModel" title="abaqus.TableCollection.TableCollectionModel.TableCollectionModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionModel.TableCollectionModel</span></code></a>: <em>added</em>: New in version 2020: The TableCollectionModel class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionModel.EventSeries" title="abaqus.TableCollection.TableCollectionModel.EventSeries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionModel.EventSeries</span></code></a>: <em>added</em>: New in version 2020: The EventSeries class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionModel.EventSeriesType" title="abaqus.TableCollection.TableCollectionModel.EventSeriesType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionModel.EventSeriesType</span></code></a>: <em>added</em>: New in version 2020: The EventSeriesType class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-tablecollectionstep">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionStep</span></code><a class="headerlink" href="#abaqus-tablecollection-tablecollectionstep" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionStep.ActivateElements" title="abaqus.TableCollection.TableCollectionStep.ActivateElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionStep.ActivateElements</span></code></a>: <em>added</em>: New in version 2020: The ActivateElements class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollectionStep.TableCollectionStep" title="abaqus.TableCollection.TableCollectionStep.TableCollectionStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollectionStep.TableCollectionStep</span></code></a>: <em>added</em>: New in version 2020: The TableCollectionStep class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-tablecollection">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection</span></code><a class="headerlink" href="#abaqus-tablecollection-tablecollection" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollection.DataTable" title="abaqus.TableCollection.TableCollection.DataTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection.DataTable</span></code></a>: <em>added</em>: New in version 2020: The DataTable class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollection.ParameterTable" title="abaqus.TableCollection.TableCollection.ParameterTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection.ParameterTable</span></code></a>: <em>added</em>: New in version 2020: The ParameterTable class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollection.PropertyTable" title="abaqus.TableCollection.TableCollection.PropertyTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection.PropertyTable</span></code></a>: <em>added</em>: New in version 2020: The PropertyTable class was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.TableCollection.TableCollection" title="abaqus.TableCollection.TableCollection.TableCollection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.TableCollection.TableCollection</span></code></a>: <em>added</em>: New in version 2020: The TableCollection class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-parametertable">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.ParameterTable</span></code><a class="headerlink" href="#abaqus-tablecollection-parametertable" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.ParameterTable.ParameterColumn" title="abaqus.TableCollection.ParameterTable.ParameterColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.ParameterTable.ParameterColumn</span></code></a>: <em>added</em>: New in version 2020: The ParameterColumn class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-tablecollection-propertytabledata">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.PropertyTableData</span></code><a class="headerlink" href="#abaqus-tablecollection-propertytabledata" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/kernel/table_collection.html#abaqus.TableCollection.PropertyTableData.PropertyTableData" title="abaqus.TableCollection.PropertyTableData.PropertyTableData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.TableCollection.PropertyTableData.PropertyTableData</span></code></a>: <em>added</em>: New in version 2020: The PropertyTableData class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-model-modelbase">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Model.ModelBase</span></code><a class="headerlink" href="#abaqus-model-modelbase" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.eventSeriesDatas" title="abaqus.Model.ModelBase.ModelBase.eventSeriesDatas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Model.ModelBase.ModelBase.eventSeriesDatas</span></code></a>: <em>added</em>: New in version 2020: The eventSeriesDatas attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.eventSeriesTypes" title="abaqus.Model.ModelBase.ModelBase.eventSeriesTypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Model.ModelBase.ModelBase.eventSeriesTypes</span></code></a>: <em>added</em>: New in version 2020: The eventSeriesTypes attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.tableCollections" title="abaqus.Model.ModelBase.ModelBase.tableCollections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Model.ModelBase.ModelBase.tableCollections</span></code></a>: <em>added</em>: New in version 2020: The tableCollections attribute was added.</p></li>
-</ul>
-</section>
-<section id="id1">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code><a class="headerlink" href="#id1" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.ContactExp</span></code></a>: <em>added</em>: New in version 2020: The polarityAssignments argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments" title="abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments</span></code></a>: <em>added</em>: New in version 2020: The polarityAssignments attribute was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-interactioncontactinitializationmodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionContactInitializationModel</span></code><a class="headerlink" href="#abaqus-interaction-interactioncontactinitializationmodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization" title="abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization</span></code></a>: <em>added</em>: New in version 2020: The ExpInitialization method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization" title="abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization</span></code></a>: <em>added</em>: New in version 2020: The ExpInitialization class was added.</p></li>
-</ul>
-</section>
-<section id="id2">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code><a class="headerlink" href="#id2" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.Creep" title="abaqus.Material.Material.Material.Creep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.Creep</span></code></a>: <em>added</em>: New in version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.GapFlow" title="abaqus.Material.Material.Material.GapFlow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.GapFlow</span></code></a>: <em>added</em>: New in version 2020: The options BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.Viscous" title="abaqus.Material.Material.Material.Viscous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.Viscous</span></code></a>: <em>added</em>: New in version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.</p></li>
-</ul>
-</section>
-<section id="abaqus-material-plastic-tensilefailure">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Plastic.TensileFailure</span></code><a class="headerlink" href="#abaqus-material-plastic-tensilefailure" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Plastic.TensileFailure.TensileFailure" title="abaqus.Material.Plastic.TensileFailure.TensileFailure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Plastic.TensileFailure.TensileFailure</span></code></a>: <em>added</em>: New in version 2020: The TensileFailure class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-assembly-assemblybase">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.AssemblyBase</span></code><a class="headerlink" href="#abaqus-assembly-assemblybase" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/assembly.html#abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes" title="abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes</span></code></a>: <em>changed</em>: Changed in version 2020: The coordinates arguments was removed, the nodes now replaces it.</p></li>
-</ul>
-</section>
-</section>
-<section id="abaqus-2019">
-<h2>Abaqus 2019<a class="headerlink" href="#abaqus-2019" title="此标题的永久链接"></a></h2>
-<section id="abaqus-displaygroup-leaffromconstraintnames">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.DisplayGroup.LeafFromConstraintNames</span></code><a class="headerlink" href="#abaqus-displaygroup-leaffromconstraintnames" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/display.html#abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames" title="abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames</span></code></a>: <em>added</em>: New in version 2019: The LeafFromConstraintNames class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-odbdisplay-odbdisplay">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code><a class="headerlink" href="#abaqus-odbdisplay-odbdisplay" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/odb_display.html#abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues" title="abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues</span></code></a>: <em>added</em>: New in version 2019: The legendHideOutsideLimits argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-plotoptions-basicoptions">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PlotOptions.BasicOptions</span></code><a class="headerlink" href="#abaqus-plotoptions-basicoptions" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/plot_options.html#abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm" title="abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PlotOptions.BasicOptions.BasicOptions.numericForm</span></code></a>: <em>changed</em>: Changed in version 2019: Add possible values: COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/plot_options.html#abaqus.PlotOptions.BasicOptions.BasicOptions.setValues" title="abaqus.PlotOptions.BasicOptions.BasicOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PlotOptions.BasicOptions.BasicOptions.setValues</span></code></a>: <em>changed</em>: Changed in version 2019: Add possible values: COMPLEX_ENVELOPE_MAX_ABS, COMPLEX_ENVELOPE_MAX, and COMPLEX_ENVELOPE_MIN.</p></li>
-</ul>
-</section>
-<section id="id3">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel</span></code><a class="headerlink" href="#id3" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator</span></code></a>: <em>added</em>: New in version 2019: The FluidInflator method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.FluidInflator" title="abaqus.Interaction.InteractionModel.FluidInflator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionModel.FluidInflator</span></code></a>: <em>added</em>: New in version 2019: The FluidInflator class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-interactionpropertymodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionPropertyModel</span></code><a class="headerlink" href="#abaqus-interaction-interactionpropertymodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty" title="abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel.FluidInflatorProperty</span></code></a>: <em>added</em>: New in version 2019: The FluidInflatorProperty method was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.InteractionPropertyModel.FluidInflatorProperty" title="abaqus.Interaction.InteractionPropertyModel.FluidInflatorProperty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.InteractionPropertyModel.FluidInflatorProperty</span></code></a>: <em>added</em>: New in version 2019: The FluidInflatorProperty class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-fluidinflatorstate">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.FluidInflatorState</span></code><a class="headerlink" href="#abaqus-interaction-fluidinflatorstate" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.FluidInflatorState.FluidInflatorState" title="abaqus.Interaction.FluidInflatorState.FluidInflatorState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.FluidInflatorState.FluidInflatorState</span></code></a>: <em>added</em>: New in version 2019: The FluidInflatorState class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-interaction-surfacetosurfacecontactstd">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd</span></code><a class="headerlink" href="#abaqus-interaction-surfacetosurfacecontactstd" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.handedness" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.handedness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.handedness</span></code></a>: <em>added</em>: New in version 2019: The handedness attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.normalAdjustment" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.normalAdjustment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.normalAdjustment</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/interaction.html#abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues" title="abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd.setValues</span></code></a>: <em>added</em>: New in version 2019: The normalAdjustment argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-mesh-meshpart">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart</span></code><a class="headerlink" href="#abaqus-mesh-meshpart" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.MeshPart.ElemType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart.ElemType</span></code></a>: <em>added</em>: New in version 2019: The numFourierModes argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.MeshPart.ElemType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart.ElemType</span></code></a>: <em>added</em>: New in version 2019: The nodeOffset argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType.nodeOffset" title="abaqus.Mesh.MeshPart.ElemType.nodeOffset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart.ElemType.nodeOffset</span></code></a>: <em>added</em>: New in version 2019: The nodeOffset attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType.numFourierModes" title="abaqus.Mesh.MeshPart.ElemType.numFourierModes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Mesh.MeshPart.ElemType.numFourierModes</span></code></a>: <em>added</em>: New in version 2019: The numFourierModes attribute was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-optimizationtaskmodel">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel</span></code><a class="headerlink" href="#abaqus-optimization-optimizationtaskmodel" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.BeadTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.ShapeTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.SizingTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask" title="abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel.TopologyTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.BeadTask" title="abaqus.Optimization.OptimizationTaskModel.BeadTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.BeadTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.BeadTask.abaqusSensitivities" title="abaqus.Optimization.OptimizationTaskModel.BeadTask.abaqusSensitivities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.BeadTask.abaqusSensitivities</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTaskModel.BeadTask.setValues" title="abaqus.Optimization.OptimizationTaskModel.BeadTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTaskModel.BeadTask.setValues</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-</ul>
-</section>
-<section id="id4">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask</span></code><a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl</span></code></a>: <em>added</em>: New in version 2019: The TopologyOverhangControl method was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-topologyoverhangcontrol">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyOverhangControl</span></code><a class="headerlink" href="#abaqus-optimization-topologyoverhangcontrol" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl" title="abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyOverhangControl.TopologyOverhangControl</span></code></a>: <em>added</em>: New in version 2019: The TopologyOverhangControl class was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-shapetask">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeTask</span></code><a class="headerlink" href="#abaqus-optimization-shapetask" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapeTask.ShapeTask" title="abaqus.Optimization.ShapeTask.ShapeTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeTask.ShapeTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapeTask.ShapeTask.abaqusSensitivities" title="abaqus.Optimization.ShapeTask.ShapeTask.abaqusSensitivities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeTask.ShapeTask.abaqusSensitivities</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.ShapeTask.ShapeTask.setValues" title="abaqus.Optimization.ShapeTask.ShapeTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.ShapeTask.ShapeTask.setValues</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-sizingtask">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.SizingTask</span></code><a class="headerlink" href="#abaqus-optimization-sizingtask" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.SizingTask.SizingTask" title="abaqus.Optimization.SizingTask.SizingTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.SizingTask.SizingTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.SizingTask.SizingTask.abaqusSensitivities" title="abaqus.Optimization.SizingTask.SizingTask.abaqusSensitivities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.SizingTask.SizingTask.abaqusSensitivities</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.SizingTask.SizingTask.setValues" title="abaqus.Optimization.SizingTask.SizingTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.SizingTask.SizingTask.setValues</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-optimization-topologytask">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyTask</span></code><a class="headerlink" href="#abaqus-optimization-topologytask" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.TopologyTask.TopologyTask" title="abaqus.Optimization.TopologyTask.TopologyTask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyTask.TopologyTask</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.TopologyTask.TopologyTask.abaqusSensitivities" title="abaqus.Optimization.TopologyTask.TopologyTask.abaqusSensitivities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyTask.TopologyTask.abaqusSensitivities</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities attribute was added.</p></li>
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/optimization.html#abaqus.Optimization.TopologyTask.TopologyTask.setValues" title="abaqus.Optimization.TopologyTask.TopologyTask.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Optimization.TopologyTask.TopologyTask.setValues</span></code></a>: <em>added</em>: New in version 2019: The abaqusSensitivities argument was added.</p></li>
-</ul>
-</section>
-<section id="abaqus-assembly-modelinstance">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.ModelInstance</span></code><a class="headerlink" href="#abaqus-assembly-modelinstance" title="此标题的永久链接"></a></h3>
-<ul class="simple">
-<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/assembly.html#abaqus.Assembly.ModelInstance.ModelInstance.replace" title="abaqus.Assembly.ModelInstance.ModelInstance.replace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Assembly.ModelInstance.ModelInstance.replace</span></code></a>: <em>added</em>: New in version 2019: The replace method was added.</p></li>
-</ul>
-</section>
-</section>
 <section id="abaqus-2018">
 <h2>Abaqus 2018<a class="headerlink" href="#abaqus-2018" title="此标题的永久链接"></a></h2>
-<section id="id5">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code><a class="headerlink" href="#id5" title="此标题的永久链接"></a></h3>
+<section id="abaqus-part-partbase">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase</span></code><a class="headerlink" href="#abaqus-part-partbase" title="此标题的永久链接"></a></h3>
 <ul class="simple">
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/part.html#abaqus.Part.PartBase.PartBase.writeAcisFile" title="abaqus.Part.PartBase.PartBase.writeAcisFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase.PartBase.writeAcisFile</span></code></a>: <em>changed</em>: Changed in version 2018: Add description for thr file name's extension.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/part.html#abaqus.Part.PartBase.AcisFile.writeAcisFile" title="abaqus.Part.PartBase.AcisFile.writeAcisFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Part.PartBase.AcisFile.writeAcisFile</span></code></a>: <em>changed</em>: Changed in version 2018: Add description for thr file name's extension.</p></li>
@@ -670,6 +275,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep" title="abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.StepModel.ExplicitDynamicsStep</span></code></a>: <em>added</em>: New in version 2018: The improvedDtMethod argument was added.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep" title="abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.StepModel.TempDisplacementDynamicsStep</span></code></a>: <em>added</em>: New in version 2018: The improvedDtMethod argument was added.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.ExplicitDynamicsStep" title="abaqus.Step.StepModel.ExplicitDynamicsStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.ExplicitDynamicsStep</span></code></a>: <em>added</em>: New in version 2018: The improvedDtMethod argument was added.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod" title="abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.ExplicitDynamicsStep.improvedDtMethod</span></code></a>: <em>added</em>: New in version 2018: The improvedDtMethod attribute was added.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.ExplicitDynamicsStep.setValues" title="abaqus.Step.StepModel.ExplicitDynamicsStep.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.ExplicitDynamicsStep.setValues</span></code></a>: <em>added</em>: New in version 2018: The improvedDtMethod argument was added.</p></li>
 </ul>
 </section>
@@ -687,10 +293,17 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/index.html#abaqus.Session.SessionBase.Drawing.setValues" title="abaqus.Session.SessionBase.Drawing.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Session.SessionBase.Drawing.setValues</span></code></a>: <em>added</em>: New in version 2018: The depthTest argument was added.</p></li>
 </ul>
 </section>
-<section id="id6">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code><a class="headerlink" href="#id6" title="此标题的永久链接"></a></h3>
+<section id="abaqus-odbdisplay-odbdisplay">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay</span></code><a class="headerlink" href="#abaqus-odbdisplay-odbdisplay" title="此标题的永久链接"></a></h3>
 <ul class="simple">
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/odb_display.html#abaqus.OdbDisplay.OdbDisplay.ContourOptions.reversedContourLegendRange" title="abaqus.OdbDisplay.OdbDisplay.ContourOptions.reversedContourLegendRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay.ContourOptions.reversedContourLegendRange</span></code></a>: <em>added</em>: New in version 2018: The reversedContourLegendRange attribute was added.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/odb_display.html#abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues" title="abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues</span></code></a>: <em>added</em>: New in version 2018: The reversedContourLegendRange argument was added.</p></li>
+</ul>
+</section>
+<section id="abaqus-odbdisplay-viewcut">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.ViewCut</span></code><a class="headerlink" href="#abaqus-odbdisplay-viewcut" title="此标题的永久链接"></a></h3>
+<ul class="simple">
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/odb_display.html#abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea" title="abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea</span></code></a>: <em>added</em>: New in version 2018: The crossSectionalArea attribute was added.</p></li>
 </ul>
 </section>
 <section id="abaqus-xy-xysession">
@@ -714,8 +327,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/load.html#abaqus.Load.LoadModel.BoltLoad" title="abaqus.Load.LoadModel.BoltLoad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Load.LoadModel.BoltLoad</span></code></a>: <em>added</em>: New in version 2018: The preTenSecPartLevel argument was added.</p></li>
 </ul>
 </section>
-<section id="id7">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code><a class="headerlink" href="#id7" title="此标题的永久链接"></a></h3>
+<section id="abaqus-material-material">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material</span></code><a class="headerlink" href="#abaqus-material-material" title="此标题的永久链接"></a></h3>
 <ul class="simple">
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.Material.Material.MeanFieldHomogenization" title="abaqus.Material.Material.Material.MeanFieldHomogenization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Material.Material.Material.MeanFieldHomogenization</span></code></a>: <em>added</em>: New in version 2018: The MeanFieldHomogenization method was added.</p></li>
 </ul>
@@ -766,8 +379,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </section>
 <section id="abaqus-2017">
 <h2>Abaqus 2017<a class="headerlink" href="#abaqus-2017" title="此标题的永久链接"></a></h2>
-<section id="id8">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel</span></code><a class="headerlink" href="#id8" title="此标题的永久链接"></a></h3>
+<section id="id1">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel</span></code><a class="headerlink" href="#id1" title="此标题的永久链接"></a></h3>
 <ul class="simple">
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/predefined.html#abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress" title="abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress</span></code></a>: <em>added</em>: New in version 2017: The Stress method was added.</p></li>
 </ul>
@@ -797,8 +410,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds" title="abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds</span></code></a>: <em>added</em>: New in version 2017: The direction argument was added.</p></li>
 </ul>
 </section>
-<section id="id9">
-<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel</span></code><a class="headerlink" href="#id9" title="此标题的永久链接"></a></h3>
+<section id="id2">
+<h3><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel</span></code><a class="headerlink" href="#id2" title="此标题的永久链接"></a></h3>
 <ul class="simple">
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.StepModel.GeostaticStep" title="abaqus.Step.StepModel.StepModel.GeostaticStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.StepModel.GeostaticStep</span></code></a>: <em>added</em>: New in version 2017: The maxNumInc attribute was added to the GeostaticStep class.</p></li>
 <li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.GeostaticStep" title="abaqus.Step.StepModel.GeostaticStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus.Step.StepModel.GeostaticStep</span></code></a>: <em>added</em>: New in version 2017: The maxNumInc attribute was added to the GeostaticStep class.</p></li>
