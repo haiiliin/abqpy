@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="zh-CN/html">
+<head>
+<meta charset="utf-8"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abaqus Class References — abqpy 2021.5.4.post3.dev12+g26dcce5db 文档</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster-sideTip-punk.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster-sideTip-noir.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/sphinx_rtd_theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+<script src="../_static/jquery.js"></script>
+<script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/sphinx_highlight.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/js/hoverxref.js"></script>
+<script src="../_static/js/tooltipster.bundle.min.js"></script>
+<script src="../_static/js/micromodal.min.js"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../_static/togglebutton.js"></script>
+<script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../_static/design-tabs.js"></script>
+<script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../_static/js/theme.js"></script>
+<link href="../genindex.html" rel="index" title="索引"/>
+<link href="../search.html" rel="search" title="搜索"/>
+<link href="mdb/index.html" rel="next" title="Abaqus Model Database"/>
+<link href="../user/output/cpp/examples.html" rel="prev" title="Example programs that access data from an output database"/>
+</head>
+<body class="wy-body-for-nav">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="../index.html">
+            abqpy
+          </a>
+<div class="version">
+                true
+              </div>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="搜索文档" name="q" placeholder="搜索文档" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+</div><div aria-label="导航菜单" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Abaqus Class References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/index.html">Abaqus Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kernel/index.html">Kernel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy.html">Comment Policy</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift"><nav aria-label="移动版导航菜单" class="wy-nav-top">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../index.html">abqpy</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="页面导航" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Home" class="icon icon-home" href="../index.html"></a></li>
+<li class="breadcrumb-item active">Abaqus Class References</li>
+<li class="wy-breadcrumbs-aside">
+<a href="../_sources/reference/index.md.txt" rel="nofollow"> 查看页面源码</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<section id="abaqus-class-references">
+<h1>Abaqus Class References<a class="headerlink" href="#abaqus-class-references" title="此标题的永久链接"></a></h1>
+<p>Before you can access the Abaqus model and output database, you need to import some modules. In most cases, <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>, <code class="docutils literal notranslate"><span class="pre">abaqusConstants</span></code>, and <code class="docutils literal notranslate"><span class="pre">driverUtils</span></code> are required:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>In the module <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>, two important objects are provided, <code class="docutils literal notranslate"><span class="pre">mdb</span></code> and <code class="docutils literal notranslate"><span class="pre">session</span></code>, which represent the Abaqus model database and a object controls the Abaqus options.</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">mdb</span></code> object is the high-level Abaqus model database. A model database stores models and analysis controls. For more information about the <code class="docutils literal notranslate"><span class="pre">mdb</span></code> object, see <a class="reference internal" href="mdb/index.html"><span class="doc">mdb API Reference</span></a>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">odb</span></code> object is the in-memory representation of an output database (ODB) file. For more information about the <code class="docutils literal notranslate"><span class="pre">odb</span></code> object, see <a class="reference internal" href="odb.html"><span class="doc">odb API Reference</span></a>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">session</span></code> object has no constructor. Abaqus creates the session member when a session is started. For more information about the <code class="docutils literal notranslate"><span class="pre">session</span></code> object, see <a class="reference internal" href="session/index.html"><span class="doc">session API Reference</span></a>.</p></li>
+</ul>
+<p>In the module <code class="docutils literal notranslate"><span class="pre">abaqusConstants</span></code>, all the constant strings used in the Abaqus modeling are provided such as <code class="docutils literal notranslate"><span class="pre">THREE_D</span></code> (which specifies a 3-D model), for more constant strings, please refer to the API reference.</p>
+<p>In the module <code class="docutils literal notranslate"><span class="pre">driverUtils</span></code>, an important function <code class="docutils literal notranslate"><span class="pre">executeOnCaeStartup</span></code> is implemented, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">executeOnCaeStartup</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Other modules like <code class="docutils literal notranslate"><span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">material</span></code>, <code class="docutils literal notranslate"><span class="pre">mesh</span></code> can be imported whenever required.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session/index.html">Abaqus Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kernel/index.html">Kernel</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+<footer><div aria-label="页脚" class="rst-footer-buttons" role="navigation">
+<a accesskey="p" class="btn btn-neutral float-left" href="../user/output/cpp/examples.html" rel="prev" title="Example programs that access data from an output database"><span aria-hidden="true" class="fa fa-arrow-circle-left"></span> 上一页</a>
+<a accesskey="n" class="btn btn-neutral float-right" href="mdb/index.html" rel="next" title="Abaqus Model Database">下一页 <span aria-hidden="true" class="fa fa-arrow-circle-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<p>© 版权所有 2022, WANG Hailin.</p>
+</div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" data-toggle="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span class="fa fa-book"> Read the Docs</span>
+    v: true
+    <span class="fa fa-caret-down"></span>
+</span>
+<div class="rst-other-versions">
+<dl>
+<dt>Languages</dt>
+<dd><a href="/abqpy/en/true/">en</a></dd>
+<strong>
+<dd><a href="/abqpy/zh_CN/true/">zh_CN</a></dd>
+</strong>
+</dl>
+<dl>
+<dt>版本</dt>
+<dd><a href="/abqpy/zh_CN/2016/">2016</a></dd>
+<dd><a href="/abqpy/zh_CN/2017/">2017</a></dd>
+<dd><a href="/abqpy/zh_CN/2018/">2018</a></dd>
+<dd><a href="/abqpy/zh_CN/2019/">2019</a></dd>
+<dd><a href="/abqpy/zh_CN/2020/">2020</a></dd>
+<dd><a href="/abqpy/zh_CN/2021/">2021</a></dd>
+<dd><a href="/abqpy/zh_CN/2022/">2022</a></dd>
+<dd><a href="/abqpy/zh_CN/2023/">2023</a></dd>
+<dd><a href="/abqpy/zh_CN/latest/">latest</a></dd>
+<dd><a href="/abqpy/zh_CN/sphinx-book-theme/">sphinx-book-theme</a></dd>
+<dd><a href="/abqpy/zh_CN/furo/">furo</a></dd>
+</dl>
+<dl>
+<dt>下载</dt>
+<dd><a href="/abqpy/zh_CN/true/abqpy-docs-zh_CN-true.pdf">pdf</a></dd>
+<dd><a href="/abqpy/zh_CN/true/abqpy-docs-zh_CN-true.epub">epub</a></dd>
+</dl>
+<hr/>
+<a href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/">Continuous Documentation</a>
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
