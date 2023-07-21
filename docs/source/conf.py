@@ -376,14 +376,14 @@ html_context = dict(display_lower_left=True)
 REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
 
 # GET CURRENT_LANGUAGE
-current_language = os.environ.get("current_language", "en")
+current_language = os.environ.get("LANGUAGE", "en")
 
 # tell the theme which language to we're currently building
 html_context["current_language"] = current_language
 
 # GET CURRENT_VERSION
 repo = git.Repo(search_parent_directories=True)
-current_version = os.environ.get("current_version", repo.active_branch.name)
+current_version = os.environ.get("VERSION", repo.active_branch.name)
 
 # tell the theme which version we're currently on ('current_version' affects
 # the lower-left rtd menu and 'version' affects the logo-area version)
