@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abqpy.cli &mdash; abqpy 2020.5.4.post3.dev13+g7d7ef54b8 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="abqpy.decorators" href="../decorators/index.html" />
+    <link rel="prev" title="abqpy.__main__" href="../__main__/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2020
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abqpy API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy</span></code></a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../__main__/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.__main__</span></code></a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.cli</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../decorators/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.decorators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../run/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.run</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abqpy API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy</span></code></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.cli</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/autoapi/abqpy/cli/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-abqpy.cli">
+<span id="abqpy-cli"></span><h1><a class="hxr-hoverxref hxr-modal reference internal" href="#module-abqpy.cli" title="abqpy.cli"><code class="xref py py-mod docutils literal notranslate"><span class="pre">abqpy.cli</span></code></a><a class="headerlink" href="#module-abqpy.cli" title="此标题的永久链接"></a></h1>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="此标题的永久链接"></a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="此标题的永久链接"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></p></td>
+<td><p>Base class for Abaqus/CAE command line interface to run Abaqus commands.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI" title="abqpy.cli.AbqpyMiscCLI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyMiscCLI</span></code></a></p></td>
+<td><p>Less frequently used Abaqus/CAE commands.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLI" title="abqpy.cli.AbqpyCLI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyCLI</span></code></a></p></td>
+<td><p>The abqpy command line interface.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="此标题的永久链接"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.abaqus" title="abqpy.cli.abaqus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLIBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbqpyCLIBase</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L7-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLIBase" title="永久链接至目标"></a></dt>
+<dd><p>Base class for Abaqus/CAE command line interface to run Abaqus commands.</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.run" title="abqpy.cli.AbqpyCLIBase.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>(cmd)</p></td>
+<td><p>Run custom command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.abaqus" title="abqpy.cli.AbqpyCLIBase.abaqus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus</span></code></a>(*args, **options)</p></td>
+<td><p>Run custom Abaqus command: <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">{args}</span> <span class="pre">{options}</span></code>, arguments are separated by space, options are handled by the <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_parse_options()</span></code></a> method.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Private Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_parse_options</span></code></a>(**options)</p></td>
+<td><p>Parse options to be passed to Abaqus/CAE command line interface.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLIBase._parse_options">
+<span class="sig-name descname"><span class="pre">_parse_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/constants.html#None" title="（在 Python v3.11）"><span class="pre">None</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L10-L17"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="永久链接至目标"></a></dt>
+<dd><p>Parse options to be passed to Abaqus/CAE command line interface.</p>
+<p>If the value is a string, the option will
+be passed as <code class="docutils literal notranslate"><span class="pre">option=value</span></code>; if the value is a boolean, the option will be passed as <code class="docutils literal notranslate"><span class="pre">option</span></code> if True, or
+ignored if False; if the value is None, the option will be ignored.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLIBase.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cmd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L19-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLIBase.run" title="永久链接至目标"></a></dt>
+<dd><p>Run custom command.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLIBase.abaqus">
+<span class="sig-name descname"><span class="pre">abaqus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L26-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLIBase.abaqus" title="永久链接至目标"></a></dt>
+<dd><p>Run custom Abaqus command: <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">{args}</span> <span class="pre">{options}</span></code>, arguments are separated by space, options are
+handled by the <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_parse_options()</span></code></a> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> -- Arguments and options to be passed to the Abaqus command.</p></li>
+<li><p><strong>options</strong> -- Arguments and options to be passed to the Abaqus command.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbqpyMiscCLI</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L40-L216"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI" title="永久链接至目标"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></p>
+<p>Less frequently used Abaqus/CAE commands.</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.optimization" title="abqpy.cli.AbqpyMiscCLI.optimization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimization</span></code></a>(task, job, *[, cpus, gpus, ...])</p></td>
+<td><p>Run Abaqus optimization command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.help" title="abqpy.cli.AbqpyMiscCLI.help"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.information" title="abqpy.cli.AbqpyMiscCLI.information"><code class="xref py py-obj docutils literal notranslate"><span class="pre">information</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.whereami" title="abqpy.cli.AbqpyMiscCLI.whereami"><code class="xref py py-obj docutils literal notranslate"><span class="pre">whereami</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.cse" title="abqpy.cli.AbqpyMiscCLI.cse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cse</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.cosimulation" title="abqpy.cli.AbqpyMiscCLI.cosimulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cosimulation</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fmu" title="abqpy.cli.AbqpyMiscCLI.fmu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fmu</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.script" title="abqpy.cli.AbqpyMiscCLI.script"><code class="xref py py-obj docutils literal notranslate"><span class="pre">script</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.doc" title="abqpy.cli.AbqpyMiscCLI.doc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">doc</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.licensing" title="abqpy.cli.AbqpyMiscCLI.licensing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">licensing</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.ascfil" title="abqpy.cli.AbqpyMiscCLI.ascfil"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ascfil</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.append" title="abqpy.cli.AbqpyMiscCLI.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.findkeyword" title="abqpy.cli.AbqpyMiscCLI.findkeyword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findkeyword</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fetch" title="abqpy.cli.AbqpyMiscCLI.fetch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.make" title="abqpy.cli.AbqpyMiscCLI.make"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.upgrade" title="abqpy.cli.AbqpyMiscCLI.upgrade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upgrade</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.sim_version" title="abqpy.cli.AbqpyMiscCLI.sim_version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sim_version</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.odb2sim" title="abqpy.cli.AbqpyMiscCLI.odb2sim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odb2sim</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.odbreport" title="abqpy.cli.AbqpyMiscCLI.odbreport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbreport</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.restartjoin" title="abqpy.cli.AbqpyMiscCLI.restartjoin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartjoin</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.substructurecombine" title="abqpy.cli.AbqpyMiscCLI.substructurecombine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">substructurecombine</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.substructurerecover" title="abqpy.cli.AbqpyMiscCLI.substructurerecover"><code class="xref py py-obj docutils literal notranslate"><span class="pre">substructurerecover</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.odbcombine" title="abqpy.cli.AbqpyMiscCLI.odbcombine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbcombine</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.networkDBConnector" title="abqpy.cli.AbqpyMiscCLI.networkDBConnector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDBConnector</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.emloads" title="abqpy.cli.AbqpyMiscCLI.emloads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">emloads</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.mtxasm" title="abqpy.cli.AbqpyMiscCLI.mtxasm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mtxasm</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fromnastran" title="abqpy.cli.AbqpyMiscCLI.fromnastran"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromnastran</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.tonastran" title="abqpy.cli.AbqpyMiscCLI.tonastran"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tonastran</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fromansys" title="abqpy.cli.AbqpyMiscCLI.fromansys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromansys</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.frompamcrash" title="abqpy.cli.AbqpyMiscCLI.frompamcrash"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frompamcrash</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fromradioss" title="abqpy.cli.AbqpyMiscCLI.fromradioss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromradioss</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.toOutput2" title="abqpy.cli.AbqpyMiscCLI.toOutput2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toOutput2</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fromdyna" title="abqpy.cli.AbqpyMiscCLI.fromdyna"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromdyna</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.tozaero" title="abqpy.cli.AbqpyMiscCLI.tozaero"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tozaero</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.adams" title="abqpy.cli.AbqpyMiscCLI.adams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adams</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.tosimpack" title="abqpy.cli.AbqpyMiscCLI.tosimpack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tosimpack</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.fromsimpack" title="abqpy.cli.AbqpyMiscCLI.fromsimpack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromsimpack</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.toexcite" title="abqpy.cli.AbqpyMiscCLI.toexcite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toexcite</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.moldflow" title="abqpy.cli.AbqpyMiscCLI.moldflow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moldflow</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.encrypt" title="abqpy.cli.AbqpyMiscCLI.encrypt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">encrypt</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.decrypt" title="abqpy.cli.AbqpyMiscCLI.decrypt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decrypt</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.suspend" title="abqpy.cli.AbqpyMiscCLI.suspend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suspend</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.resume" title="abqpy.cli.AbqpyMiscCLI.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.terminate" title="abqpy.cli.AbqpyMiscCLI.terminate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">terminate</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyMiscCLI.sysVerify" title="abqpy.cli.AbqpyMiscCLI.sysVerify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysVerify</span></code></a>(*args, **options)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.run" title="abqpy.cli.AbqpyCLIBase.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>(cmd)</p></td>
+<td><p>Run custom command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.abaqus" title="abqpy.cli.AbqpyCLIBase.abaqus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus</span></code></a>(*args, **options)</p></td>
+<td><p>Run custom Abaqus command: <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">{args}</span> <span class="pre">{options}</span></code>, arguments are separated by space, options are handled by the <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_parse_options()</span></code></a> method.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Private Methods:</p>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_parse_options</span></code></a>(**options)</p></td>
+<td><p>Parse options to be passed to Abaqus/CAE command line interface.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.optimization">
+<span class="sig-name descname"><span class="pre">optimization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">job</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globalmodel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L43-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.optimization" title="永久链接至目标"></a></dt>
+<dd><p>Run Abaqus optimization command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>task</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The file containing the parameters that are used to execute the optimization.</p></li>
+<li><p><strong>job</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The name of the folder in which the results of the optimization are stored.</p></li>
+<li><p><strong>cpus</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) -- The number of processors to use during an analysis run if parallel processing is available.</p></li>
+<li><p><strong>gpus</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) -- This acceleration of the Abaqus/Standard direct solver.</p></li>
+<li><p><strong>memory</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) -- Maximum amount of memory or maximum percentage of the physical memory that can be allocated.</p></li>
+<li><p><strong>interactive</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- This option will cause the job to run interactively.</p></li>
+<li><p><strong>globalmodel</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the global model's results file, ODB output database file, or SIM database file.</p></li>
+<li><p><strong>scratch</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the directory used for scratch files.</p></li>
+<li><p><strong>kwargs</strong> -- Other unrecognized keyword arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.help">
+<span class="sig-name descname"><span class="pre">help</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L86-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.help" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.information">
+<span class="sig-name descname"><span class="pre">information</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L89-L90"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.information" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.whereami">
+<span class="sig-name descname"><span class="pre">whereami</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L92-L93"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.whereami" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.cse">
+<span class="sig-name descname"><span class="pre">cse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L95-L96"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.cse" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.cosimulation">
+<span class="sig-name descname"><span class="pre">cosimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L98-L99"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.cosimulation" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fmu">
+<span class="sig-name descname"><span class="pre">fmu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L101-L102"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fmu" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.script">
+<span class="sig-name descname"><span class="pre">script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L104-L105"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.script" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.doc">
+<span class="sig-name descname"><span class="pre">doc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L107-L108"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.doc" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.licensing">
+<span class="sig-name descname"><span class="pre">licensing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L110-L111"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.licensing" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.ascfil">
+<span class="sig-name descname"><span class="pre">ascfil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L113-L114"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.ascfil" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L116-L117"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.append" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.findkeyword">
+<span class="sig-name descname"><span class="pre">findkeyword</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L119-L120"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.findkeyword" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fetch">
+<span class="sig-name descname"><span class="pre">fetch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L122-L123"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fetch" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.make">
+<span class="sig-name descname"><span class="pre">make</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L125-L126"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.make" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.upgrade">
+<span class="sig-name descname"><span class="pre">upgrade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L128-L129"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.upgrade" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.sim_version">
+<span class="sig-name descname"><span class="pre">sim_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L131-L132"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.sim_version" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.odb2sim">
+<span class="sig-name descname"><span class="pre">odb2sim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L134-L135"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.odb2sim" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.odbreport">
+<span class="sig-name descname"><span class="pre">odbreport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L137-L138"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.odbreport" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.restartjoin">
+<span class="sig-name descname"><span class="pre">restartjoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L140-L141"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.restartjoin" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.substructurecombine">
+<span class="sig-name descname"><span class="pre">substructurecombine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L143-L144"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.substructurecombine" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.substructurerecover">
+<span class="sig-name descname"><span class="pre">substructurerecover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L146-L147"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.substructurerecover" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.odbcombine">
+<span class="sig-name descname"><span class="pre">odbcombine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L149-L150"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.odbcombine" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.networkDBConnector">
+<span class="sig-name descname"><span class="pre">networkDBConnector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L152-L153"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.networkDBConnector" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.emloads">
+<span class="sig-name descname"><span class="pre">emloads</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L155-L156"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.emloads" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.mtxasm">
+<span class="sig-name descname"><span class="pre">mtxasm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L158-L159"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.mtxasm" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fromnastran">
+<span class="sig-name descname"><span class="pre">fromnastran</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L161-L162"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fromnastran" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.tonastran">
+<span class="sig-name descname"><span class="pre">tonastran</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L164-L165"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.tonastran" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fromansys">
+<span class="sig-name descname"><span class="pre">fromansys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L167-L168"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fromansys" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.frompamcrash">
+<span class="sig-name descname"><span class="pre">frompamcrash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L170-L171"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.frompamcrash" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fromradioss">
+<span class="sig-name descname"><span class="pre">fromradioss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L173-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fromradioss" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.toOutput2">
+<span class="sig-name descname"><span class="pre">toOutput2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L176-L177"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.toOutput2" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fromdyna">
+<span class="sig-name descname"><span class="pre">fromdyna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L179-L180"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fromdyna" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.tozaero">
+<span class="sig-name descname"><span class="pre">tozaero</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L182-L183"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.tozaero" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.adams">
+<span class="sig-name descname"><span class="pre">adams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L185-L186"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.adams" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.tosimpack">
+<span class="sig-name descname"><span class="pre">tosimpack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L188-L189"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.tosimpack" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.fromsimpack">
+<span class="sig-name descname"><span class="pre">fromsimpack</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L191-L192"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.fromsimpack" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.toexcite">
+<span class="sig-name descname"><span class="pre">toexcite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L194-L195"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.toexcite" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.moldflow">
+<span class="sig-name descname"><span class="pre">moldflow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L197-L198"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.moldflow" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.encrypt">
+<span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L200-L201"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.encrypt" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.decrypt">
+<span class="sig-name descname"><span class="pre">decrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L203-L204"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.decrypt" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.suspend">
+<span class="sig-name descname"><span class="pre">suspend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L206-L207"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.suspend" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.resume">
+<span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L209-L210"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.resume" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.terminate">
+<span class="sig-name descname"><span class="pre">terminate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L212-L213"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.terminate" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyMiscCLI.sysVerify">
+<span class="sig-name descname"><span class="pre">sysVerify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L215-L216"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyMiscCLI.sysVerify" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbqpyCLI</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L219-L314"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLI" title="永久链接至目标"></a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></p>
+<p>The abqpy command line interface.</p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLI.cae" title="abqpy.cli.AbqpyCLI.cae"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cae</span></code></a>(script, *args[, database, replay, ...])</p></td>
+<td><p>Run Abaqus/CAE command.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLI.viewer" title="abqpy.cli.AbqpyCLI.viewer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewer</span></code></a>(script, *args[, database, replay, ...])</p></td>
+<td><p>Run Abaqus/CAE command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLI.python" title="abqpy.cli.AbqpyCLI.python"><code class="xref py py-obj docutils literal notranslate"><span class="pre">python</span></code></a>(script, *args[, sim, log])</p></td>
+<td><p>Run Abaqus/Python command.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.run" title="abqpy.cli.AbqpyCLIBase.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>(cmd)</p></td>
+<td><p>Run custom command.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase.abaqus" title="abqpy.cli.AbqpyCLIBase.abaqus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus</span></code></a>(*args, **options)</p></td>
+<td><p>Run custom Abaqus command: <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">{args}</span> <span class="pre">{options}</span></code>, arguments are separated by space, options are handled by the <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_parse_options()</span></code></a> method.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Private Methods:</p>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase" title="abqpy.cli.AbqpyCLIBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbqpyCLIBase</span></code></a></summary><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.cli.AbqpyCLIBase._parse_options" title="abqpy.cli.AbqpyCLIBase._parse_options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_parse_options</span></code></a>(**options)</p></td>
+<td><p>Parse options to be passed to Abaqus/CAE command line interface.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLI.viewer">
+<span class="sig-name descname"><span class="pre">viewer</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L225-L280"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLI.viewer" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLI.cae">
+<span class="sig-name descname"><span class="pre">cae</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recover</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gui</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noenvstartup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noSavedOptions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noStartupDialog</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guiRecord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guiNoRecord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L225-L280"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLI.cae" title="永久链接至目标"></a></dt>
+<dd><p>Run Abaqus/CAE command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>script</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The name of the python script to run</p></li>
+<li><p><strong>args</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- Extra arguments to be passed after the Abaqus/CAE command line options</p></li>
+<li><p><strong>database</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the database file to open, by default None</p></li>
+<li><p><strong>replay</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the replay file to open, by default None</p></li>
+<li><p><strong>recover</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the journal file to open, by default None</p></li>
+<li><p><strong>gui</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.</p></li>
+<li><p><strong>noenvstartup</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Do not execute the Abaqus/CAE startup file, by default False</p></li>
+<li><p><strong>noSavedOptions</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Do not use the saved options, by default False</p></li>
+<li><p><strong>noStartupDialog</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Do not display the startup dialog, by default False</p></li>
+<li><p><strong>guiRecord</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Record the GUI commands to a file, by default False</p></li>
+<li><p><strong>guiNoRecord</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) -- Do not record the GUI commands to a file, by default False</p></li>
+<li><p><strong>kwargs</strong> -- Other unrecognized keyword arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.cli.AbqpyCLI.python">
+<span class="sig-name descname"><span class="pre">python</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sim</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L284-L314"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.AbqpyCLI.python" title="永久链接至目标"></a></dt>
+<dd><p>Run Abaqus/Python command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>script</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The name of the python script to run</p></li>
+<li><p><strong>args</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- Extra arguments to be passed after the Abaqus/CAE command line options</p></li>
+<li><p><strong>sim</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the simulation file to open, by default None</p></li>
+<li><p><strong>log</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The name of the log file to open, by default None</p></li>
+<li><p><strong>kwargs</strong> -- Other unrecognized keyword arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="abqpy.cli.abaqus">
+<span class="sig-name descname"><span class="pre">abaqus</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abqpy/cli.py#L0-L317"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.cli.abaqus" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../__main__/index.html" class="btn btn-neutral float-left" title="abqpy.__main__" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../decorators/index.html" class="btn btn-neutral float-right" title="abqpy.decorators" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+<div
+  class="rst-versions"
+  data-toggle="rst-versions"
+  role="note"
+  aria-label="versions"
+>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 2020
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+    <dl>
+      <dt>Languages</dt>
+       
+        <dd><a href="/abqpy/en/2020/">en</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">zh_CN</a></dd>
+        
+      </strong>
+       
+    </dl>
+     
+    <dl>
+      <dt>版本</dt>
+       
+        <dd><a href="/abqpy/zh_CN/2016/">2016</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2017/">2017</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2018/">2018</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2019/">2019</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">2020</a></dd>
+        
+      </strong>
+        
+        <dd><a href="/abqpy/zh_CN/2021/">2021</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2022/">2022</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2023/">2023</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/latest/">latest</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/sphinx-book-theme/">sphinx-book-theme</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/furo/">furo</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>下载</dt>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.pdf">pdf</a></dd>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.epub">epub</a></dd>
+      
+    </dl>
+     
+    <hr />
+    <a
+      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
+      >Continuous Documentation</a
+    >
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

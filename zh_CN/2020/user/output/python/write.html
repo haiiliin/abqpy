@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing to an output database &mdash; abqpy 2020.5.4.post3.dev13+g7d7ef54b8 文档</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Exception handling in an output database" href="exceptions.html" />
+    <link rel="prev" title="Reading from an output database" href="read.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2020
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Abaqus Scripting User's Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../about/index.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/index.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../environment/index.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/index.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Accessing an Output Database</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Using the Abaqus Scripting Interface to access an output database</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="need-what-to-understand.html">What do you need to access the output database?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="execute-script.html">Executing a script that accesses an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="read.html">Reading from an output database</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Writing to an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.html">Example scripts that access data from an output database</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cpp/index.html">Using C++ to access an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">Abaqus Class References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Abaqus Scripting User's Guide</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Accessing an Output Database</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Using the Abaqus Scripting Interface to access an output database</a></li>
+      <li class="breadcrumb-item active">Writing to an output database</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/user/output/python/write.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="writing-to-an-output-database">
+<h1>Writing to an output database<a class="headerlink" href="#writing-to-an-output-database" title="此标题的永久链接"></a></h1>
+<p>You can write your own data to an output database, and you can use Abaqus/CAE to view the data. Writing to an output database is very similar to reading from an output database. When you open an existing database, the Odb object contains all the objects found in the output database, such as instances, steps, and field output data. In contrast, when you are writing to a new output database, these objects do not exist. As a result you must use a constructor to create the objects. For example, you use the Part constructor to create a Part object, the Instance constructor to create an OdbInstance object, and the Step constructor to create an OdbStep object.</p>
+<p>After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.</p>
+<p>The example script in <a class="hxr-hoverxref hxr-tooltip reference internal" href="examples.html#creating-an-output-database"><span class="std std-ref">Creating an output database</span></a> also illustrates how you can write to an output database.</p>
+<section id="creating-a-new-output-database">
+<h2>Creating a new output database<a class="headerlink" href="#creating-a-new-output-database" title="此标题的永久链接"></a></h2>
+<p>You use the Odb constructor to create a new, empty Odb object.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span> <span class="o">=</span> <span class="n">Odb</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;myData&#39;</span><span class="p">,</span>
+    <span class="n">analysisTitle</span><span class="o">=</span><span class="s1">&#39;derived data&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;test problem&#39;</span><span class="p">,</span>
+    <span class="n">path</span><span class="o">=</span><span class="s1">&#39;testWrite.odb&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the Odb command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object. Abaqus creates the RootAssembly object when you create or open an output database.</p>
+<p>You use the <code class="docutils literal notranslate"><span class="pre">save</span></code> method to <code class="docutils literal notranslate"><span class="pre">save</span></code> the output database.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>For a full description of the save command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
+</section>
+<section id="writing-model-data">
+<h2>Writing model data<a class="headerlink" href="#writing-model-data" title="此标题的永久链接"></a></h2>
+<p>To define the geometry of your model, you first create the parts that are used by the model and then you add nodes and elements to the parts. You then define the assembly by creating instances of the parts. If the output database already contains results data, you should not change the geometry of the model. This is to ensure that the results remain synchronized with the model.</p>
+<ul>
+<li><p><strong>Part</strong></p>
+<p>If the part was created by Abaqus/CAE, the description of the native Abaqus/CAE geometry is stored in the model database, but it is not stored in the output database. A part is stored in an output database as a collection of nodes, elements, surfaces, and sets. You use the Part constructor to add a part to the Odb object. You can specify the type of the part; however, only DEFORMABLE_BODY is currently supported. For example,`</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">part1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1&#39;</span><span class="p">,</span>
+    <span class="n">embeddedSpace</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the Part constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart" title="abaqus.Odb.OdbPart.OdbPart"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPart</span></code></a>. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.</p>
+<p>You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">nodeData</span> <span class="o">=</span> <span class="p">(</span>  <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>  <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+          <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span>  <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span>
+          <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1</span><span class="p">),</span>  <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">part1</span><span class="o">.</span><span class="n">addNodes</span><span class="p">(</span><span class="n">nodeData</span><span class="o">=</span><span class="n">nodeData</span><span class="p">,</span> <span class="n">nodeSetName</span><span class="o">=</span><span class="s1">&#39;nset-1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the addNodes command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addNodes()</span></code>. After you have created nodes, you can use the NodeSetFromNodeLabels constructor to create a node set from the node labels. For more information, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">NodeSetFromNodeLabels()</span></code>. Similarly, you use the addElements method to add elements to the part using a sequence of element labels, element connectivity, and element type. You can also define an optional element set and an optional section category. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up the section categories</span>
+
+<span class="n">sCat</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">SectionCategory</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;S5&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Five-Layered Shell&#39;</span><span class="p">)</span>
+
+<span class="n">spBot</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Bottom&#39;</span><span class="p">)</span>
+<span class="n">spMid</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Middle&#39;</span><span class="p">)</span>
+<span class="n">spTop</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Top&#39;</span><span class="p">)</span>
+
+<span class="n">elementData</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),)</span>
+<span class="n">part1</span><span class="o">.</span><span class="n">addElements</span><span class="p">(</span><span class="n">elementData</span><span class="o">=</span><span class="n">elementData</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;S4&#39;</span><span class="p">,</span>
+<span class="n">elementSetName</span><span class="o">=</span><span class="s1">&#39;eset-1&#39;</span><span class="p">,</span> <span class="n">sectionCategory</span><span class="o">=</span><span class="n">sCat</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the addElements command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addElements()</span></code>.</p>
+</li>
+<li><p><strong>The RootAssembly object</strong></p>
+<p>The root assembly is created when you create the output database. You access the RootAssembly object using the same syntax as that used for reading from an output database.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span>
+</pre></div>
+</div>
+<p>You can create both instances and regions on the RootAssembly object.</p>
+</li>
+<li><p><strong>Part instances</strong></p>
+<p>You use the Instance constructor to create part instances of the parts you have already defined using the Part constructor. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">instance1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1-1&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">part1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can also supply an optional local coordinate system that specifies the rotation and translation of the part instance. You can add nodes and elements only to a part; you cannot add elements and nodes to a part instance. As a result, you should create the nodes and elements that define the geometry of a part before you instance the part. For a full description of the Instance command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbInstance.OdbInstance" title="abaqus.Odb.OdbInstance.OdbInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstance</span></code></a>.</p>
+</li>
+<li><p><strong>Regions</strong></p>
+<p>Region commands are used to create sets from element labels, node labels, and element faces. You can create a set on a part, part instance, or the root assembly. Node and element labels are unique within an instance but not within the assembly. As a result, a set on the root assembly requires the names of the part instances associated with the nodes and elements. You can also use region commands to create surfaces. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># An element set on an instance</span>
+<span class="n">eLabels</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">99</span><span class="p">]</span>
+<span class="n">elementSet</span> <span class="o">=</span> <span class="n">instance1</span><span class="o">.</span><span class="n">ElementSetFromElementLabels</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;elsetA&#39;</span><span class="p">,</span><span class="n">elementLabels</span><span class="o">=</span><span class="n">eLabels</span><span class="p">)</span>
+<span class="c1"># A node set on the rootAssembly</span>
+<span class="n">nodeLabels</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">instanceName</span> <span class="o">=</span> <span class="s1">&#39;part-1-1&#39;</span>
+<span class="n">nodeSet</span> <span class="o">=</span> <span class="n">assembly</span><span class="o">.</span><span class="n">NodeSetFromNodeLabels</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;nodesetRA&#39;</span><span class="p">,((</span><span class="n">instanceName</span><span class="p">,</span><span class="n">nodeLabels</span><span class="p">),))</span>
+</pre></div>
+</div>
+<p>The region commands are described in <a class="reference internal" href="../../../reference/mdb/model/part_assembly/region.html"><span class="doc">Region</span></a>.</p>
+</li>
+<li><p><strong>Materials</strong></p>
+<p>You use the Material object to list material properties.Materials are stored in the materials repository under the Odb object.To create an isotropic elastic material, with a Young's modulus of 12000.0 and an effective Poisson's ratio of 0.3 in the output database:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">materialName</span> <span class="o">=</span> <span class="s2">&quot;Elastic Material&quot;</span>
+<span class="n">material_1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">materialName</span><span class="p">)</span>
+<span class="n">material_1</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">ISOTROPIC</span><span class="p">,</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">12000</span><span class="p">,</span><span class="mf">0.3</span><span class="p">),))</span>
+</pre></div>
+</div>
+<p>For more information, see <a class="reference internal" href="../../../reference/mdb/model/material.html"><span class="doc">Material</span></a>.</p>
+</li>
+<li><p><strong>Sections</strong></p>
+<p>You use the Section object to create sections and profiles.Sections are stored in the sections repository under the Odb object.The following code creates a homogeneous solid section object. A Material object must be present before creating a Section object. An exception is thrown if the material does not exist.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">sectionName</span> <span class="o">=</span> <span class="s1">&#39;Homogeneous Solid Section&#39;</span>
+<span class="n">mySection</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span>
+                  <span class="n">name</span> <span class="o">=</span> <span class="n">sectionName</span><span class="p">,</span>
+                  <span class="n">material</span> <span class="o">=</span> <span class="n">materialName</span><span class="p">,</span>
+                  <span class="n">thickness</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To create a circular beam profile object in the output database:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">profileName</span> <span class="o">=</span> <span class="s2">&quot;Circular Profile&quot;</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="mf">10.00</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">CircularProfile</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="n">profileName</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">radius</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Section assignments</strong></p>
+<p>You use the SectionAssignment object to assign sections and their associated material properties to regions of the model. SectionAssignment objects are members of the Odb object. For a full description of the assignSection method, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">assignSection()</span></code>.</p>
+<p>All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">elLabels</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">elset</span> <span class="o">=</span> <span class="n">instance</span><span class="o">.</span><span class="n">ElementSetFromElementLabels</span><span class="p">(</span>
+<span class="n">name</span><span class="o">=</span><span class="n">materialName</span><span class="p">,</span> <span class="n">elementLabels</span><span class="o">=</span><span class="n">elLabels</span><span class="p">)</span>
+<span class="n">instance</span><span class="o">.</span><span class="n">assignSection</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">elset</span><span class="p">,</span><span class="n">section</span><span class="o">=</span><span class="n">section</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="writing-results-data">
+<h2>Writing results data<a class="headerlink" href="#writing-results-data" title="此标题的永久链接"></a></h2>
+<p>To write results data to the output database, you first create the Step objects that correspond to each step of the analysis. If you are writing field output data, you also create the Frame objects that will contain the field data. History output data are associated with Step objects.</p>
+<ul>
+<li><p><strong>Steps</strong></p>
+<p>You use the Step constructor to create a results step for time, frequency, or modal domain results. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">step1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;step-1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">Step</span></code> constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/mdb/model/step/index.html#abaqus.Step.Step.Step" title="abaqus.Step.Step.Step"><code class="xref py py-class docutils literal notranslate"><span class="pre">Step</span></code></a>.</p>
+</li>
+<li><p><strong>Frames</strong></p>
+<p>You use the Frame constructor to create a frame for field output. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">frame1</span> <span class="o">=</span> <span class="n">step1</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">incrementNumber</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">frameValue</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the Frame command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a>.</p>
+</li>
+</ul>
+</section>
+<section id="writing-field-output-data">
+<h2>Writing field output data<a class="headerlink" href="#writing-field-output-data" title="此标题的永久链接"></a></h2>
+<p>A FieldOutput object contains a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You add field output data to a Frame object by first creating a FieldOutput object using the FieldOutput constructor and then adding data to the FieldOutput object using the <code class="docutils literal notranslate"><span class="pre">addData</span></code> method. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the part and the instance.</span>
+
+<span class="n">part1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1&#39;</span><span class="p">,</span>
+    <span class="n">embeddedSpace</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">instance1</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1-1&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">part1</span><span class="p">)</span>
+
+<span class="c1"># Write nodal displacements</span>
+
+<span class="n">uField</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacements&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">VECTOR</span><span class="p">)</span>
+
+<span class="c1"># Create the node labels.</span>
+
+<span class="n">nodeLabelData</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Each set of data corresponds to a node label.</span>
+
+<span class="n">dispData</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+            <span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">18</span><span class="p">))</span>
+
+<span class="c1"># Add nodal data to the FieldOutput object using the</span>
+<span class="c1"># node labels and the nodal data for this part instance.</span>
+
+<span class="n">uField</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="n">instance1</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="n">nodeLabelData</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">dispData</span><span class="p">)</span>
+
+<span class="c1"># Make this the default deformed field for this step.</span>
+
+<span class="n">step1</span><span class="o">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">uField</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the FieldOutput constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a>.</p>
+</section>
+<section id="default-display-properties">
+<h2>Default display properties<a class="headerlink" href="#default-display-properties" title="此标题的永久链接"></a></h2>
+<p>The previous examples show how you can use commands to set the default field variable and deformed field variable. Abaqus/CAE uses the default field variable setting to determine the variable to display in a contour plot; for example, stress. Similarly, the default deformed field variable determines the variable that distinguishes a deformed plot from an undeformed plot. Typically, you will use displacement for the default deformed field variable; you cannot specify an invariant or a component. The default variable settings apply for each frame in the step. For example, the following statements use the deformation 'U' as the default setting for both field variable and deformed field variable settings during a particular step:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">field</span><span class="o">=</span><span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;impact&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can set a different default field variable and deformed field variable for different steps. You will need to use a loop to set the defaults for each step. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+<span class="n">step</span><span class="o">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="writing-history-output-data">
+<h2>Writing history output data<a class="headerlink" href="#writing-history-output-data" title="此标题的永久链接"></a></h2>
+<p>History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. Depending on the type of output expected, the historyRegions repository contains data from one of the following:</p>
+<ul class="simple">
+<li><p>a node</p></li>
+<li><p>an element, or a location in an element</p></li>
+<li><p>a region</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>History data from an analysis cannot contain multiple points.</p>
+</div>
+<p>The output from all history requests that relate to a specified point is collected in one HistoryRegion object. You use the HistoryPoint constructor to create the point. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">point1</span> <span class="o">=</span> <span class="n">HistoryPoint</span><span class="p">(</span><span class="n">element</span><span class="o">=</span><span class="n">instance1</span><span class="o">.</span><span class="n">elements</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>For a full description of the HistoryPoint command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>.</p>
+<p>You then use the HistoryRegion constructor to create a HistoryRegion object:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">step1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;step-1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">h1</span> <span class="o">=</span> <span class="n">step1</span><span class="o">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;my history&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;my stuff&#39;</span><span class="p">,</span><span class="n">point</span><span class="o">=</span><span class="n">point1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For a full description of the HistoryRegion command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.HistoryRegion" title="abaqus.Odb.HistoryRegion.HistoryRegion"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryRegion</span></code></a>.</p>
+<p>You use the HistoryOutput constructor to add variables to the HistoryRegion object.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">h1_u1</span> <span class="o">=</span> <span class="n">h1</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+<span class="n">h1_rf1</span> <span class="o">=</span> <span class="n">h1</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;RF1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Reaction Force&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+
+
+<span class="c1"># Similarly for Step 2</span>
+
+<span class="n">step2</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;step-2&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">h2</span> <span class="o">=</span> <span class="n">step2</span><span class="o">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;my history&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;my stuff&#39;</span><span class="p">,</span> <span class="n">point</span><span class="o">=</span><span class="n">point1</span><span class="p">)</span>
+<span class="n">h2_u1</span> <span class="o">=</span> <span class="n">h2</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+<span class="n">h2_rf1</span> <span class="o">=</span> <span class="n">h2</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;RF1&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Reaction Force&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Each HistoryOutput object contains a sequence of (<strong>frameValue</strong>, <strong>value</strong>) sequences. The HistoryOutput object has a method (addData) for adding data. Each data item is a sequence of (<strong>frameValue</strong>, <strong>value</strong>). In a time domain analysis (<strong>domain</strong> = TIME) the sequence is (<strong>stepTime</strong>, <strong>value</strong>). In a frequency domain analysis (<strong>domain</strong> = FREQUENCY) the sequence is (<strong>frequency</strong>, <strong>value</strong>). In a modal domain analysis (<strong>domain</strong> = MODAL) the sequence is (<strong>mode</strong>, <strong>value</strong>).</p>
+<p>You add the data values as time and data tuples. The number of data items must correspond to the number of time items. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">timeData</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="n">u1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0004</span><span class="p">,</span> <span class="mf">0.0067</span><span class="p">,</span> <span class="mf">0.0514</span><span class="p">)</span>
+<span class="n">rf1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">27.456</span><span class="p">,</span> <span class="mf">32.555</span><span class="p">,</span> <span class="mf">8.967</span><span class="p">,</span> <span class="mf">41.222</span><span class="p">)</span>
+
+<span class="n">h1_u1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">u1Data</span><span class="p">)</span>
+<span class="n">h1_rf1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">rf1Data</span><span class="p">)</span>
+
+<span class="c1"># similar for step2</span>
+
+<span class="n">timeData</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span>
+<span class="n">u1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="n">rf1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+
+<span class="n">h2_u1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">u1Data</span><span class="p">)</span>
+<span class="n">h2_rf1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">rf1Data</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="read.html" class="btn btn-neutral float-left" title="Reading from an output database" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="exceptions.html" class="btn btn-neutral float-right" title="Exception handling in an output database" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+<div
+  class="rst-versions"
+  data-toggle="rst-versions"
+  role="note"
+  aria-label="versions"
+>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 2020
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+    <dl>
+      <dt>Languages</dt>
+       
+        <dd><a href="/abqpy/en/2020/">en</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">zh_CN</a></dd>
+        
+      </strong>
+       
+    </dl>
+     
+    <dl>
+      <dt>版本</dt>
+       
+        <dd><a href="/abqpy/zh_CN/2016/">2016</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2017/">2017</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2018/">2018</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2019/">2019</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">2020</a></dd>
+        
+      </strong>
+        
+        <dd><a href="/abqpy/zh_CN/2021/">2021</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2022/">2022</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2023/">2023</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/latest/">latest</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/sphinx-book-theme/">sphinx-book-theme</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/furo/">furo</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>下载</dt>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.pdf">pdf</a></dd>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.epub">epub</a></dd>
+      
+    </dl>
+     
+    <hr />
+    <a
+      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
+      >Continuous Documentation</a
+    >
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

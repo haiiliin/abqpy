@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN/html" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Representation &mdash; abqpy 2020.5.4.post3.dev13+g7d7ef54b8 文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/js/hoverxref.js"></script>
+        <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../_static/design-tabs.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Utility and View" href="utility.html" />
+    <link rel="prev" title="Table Collection" href="table_collection.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            abqpy
+          </a>
+              <div class="version">
+                2020
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../session/index.html">Abaqus Session</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Kernel</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="input.html">Input File Parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kernel.html">Custom Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="table_collection.html">Table Collection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Text Representation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="utility.html">Utility and View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">abqpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Kernel</a></li>
+      <li class="breadcrumb-item active">Text Representation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/reference/kernel/text_representation.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="text-representation">
+<h1>Text Representation<a class="headerlink" href="#text-representation" title="此标题的永久链接"></a></h1>
+<p>Text representation commands are used to determine how objects are printed on the Python command line.</p>
+<section id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="此标题的永久链接"></a></h2>
+<div class="toggle docutils container">
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.TextReprOptions.TextReprOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextReprOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/TextReprOptions.py#L10-L58"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions" title="永久链接至目标"></a></dt>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The TextReprOptions object is used to configure the output of the Python <cite>str()</cite> command within
+Abaqus/CAE. (The <cite>str()</cite> command is used by the Python print function.) The TextReprOptions object stores
+the various settings that determine how objects are printed on the Python command line. The TextReprOptions
+object has no constructor. Abaqus creates the <strong>textReprOptions</strong> member when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">textRepr</span>
+<span class="o">-</span> <span class="n">textReprOptions</span>
+<span class="n">session</span><span class="o">.</span><span class="n">textReprOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all">TextReprOptions on help.3ds.com/2020</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/TextReprOptions.py#L25-L58"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues" title="永久链接至目标"></a></dt>
+<dd><p>This method modifies the TextReprOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textreproptionspyc.htm?contextscope=all#simaker-textreproptionssetvaluespyc">TextReprOptions.setValues on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>style</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">RECURSIVE</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A SymbolicConstant specifying the style of the text representation. Possible values
+are:RECURSIVE: return a recursive representation of the object.SIMPLE: return a String
+representing the object as either 'interface object', 'dictionary object', or 'sequence
+object'.The initial value is RECURSIVE.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">UNLIMITED</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int, SymbolicConstant, or None specifying the maximum depth to which the object will
+be printed. Possible values for the depth are Ints ≥ 0, the SymbolicConstant UNLIMITED,
+or None. A value of None implies that the current setting in the TextReprOptions object
+will be used. If <strong>object</strong> is not an Abaqus object, <strong>maxRecursionDepth</strong> has no effect.
+The default value is None.</p></li>
+<li><p><strong>maxRecursionString</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the string to be returned when the maximum depth of recursion is
+reached. The string can include a format specifier (%s), which will be substituted by
+the object type. The initial value is '%s object'.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">UNLIMITED</span></code>]], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int or the SymbolicConstant UNLIMITED specifying the maximum number of elements of a
+sequence to return. Possible values are UNLIMITED or Ints &gt; 0. The initial value is
+100. After the maximum number of elements, the remainder are indicated by the string
+'...'.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.redentABQ.indentFile">
+<span class="sig-name descname"><span class="pre">indentFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runTest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/redentABQ.py#L25-L50"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.redentABQ.indentFile" title="永久链接至目标"></a></dt>
+<dd><p>This method outputs the indented file to the terminal window or backs up the specified file and replaces
+it.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionredentabqpyc.htm?contextscope=all#simaker-functionredentabqindentfilepyc">redentABQ.indentFile on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the file to be processed.</p></li>
+<li><p><strong>indent</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the amount of indentation to be used. The default value is four
+spaces of indentation. Custom indentation strings must be flanked by quotation marks (&quot;
+&quot;).</p></li>
+<li><p><strong>backup</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying whether to back up the file specified in the <strong>path</strong> argument if
+changes are made. The default value is False.</p></li>
+<li><p><strong>runTest</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying whether to test the newly indented file to ensure that it is
+semantically the same after any changes. The default value is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Boolean. True, if the indentation is successful; otherwise, False.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Boolean</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getIndentedRepr">
+<span class="sig-name descname"><span class="pre">getIndentedRepr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L20-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getIndentedRepr" title="永久链接至目标"></a></dt>
+<dd><p>This method returns a String with each level of parentheses indented.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetindentedreprpyc">textRepr.getIndentedRepr on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- A Python object to be processed. (The Python object can be an Abaqus object.) This
+argument can also be a String representation of a Python object obtained from
+str(<em>object</em>).</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. If <strong>object</strong> is not an Abaqus object,
+<strong>maxRecursionDepth</strong> has no effect. The default value is None.You should take care when
+setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very large. To
+limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>significantDigits</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">6</span></code>) -- An Int specifying the number of significant digits for Floats in the output. Possible
+values are 0 &lt; <strong>significantDigits</strong> ≤ 15. The default value is 6.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A String.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getPaths">
+<span class="sig-name descname"><span class="pre">getPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L58-L94"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getPaths" title="永久链接至目标"></a></dt>
+<dd><p>This method processes the argument and interprets its structure. It then returns a String containing the
+object paths of all the child objects found.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgetpathspyc">textRepr.getPaths on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- A Python object to be processed. (The Python object can be an Abaqus object.) This
+argument can also be a String representation of a Python object.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. If <strong>object</strong> is not an Abaqus object,
+<strong>maxRecursionDepth</strong> has no effect. The default value is None.You should take care when
+setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very large. To
+limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>pathRoot</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the root of the paths. This String is prepended to each path found.
+The default value is None, implying that the path to <strong>object</strong> will be used unless
+<strong>object</strong> is a String.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A String.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.getTypes">
+<span class="sig-name descname"><span class="pre">getTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L97-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.getTypes" title="永久链接至目标"></a></dt>
+<dd><p>This method processes the argument, interprets its structure, and returns a String containing all the
+object types within the object in the form '<em>TypeName</em> <strong>Path</strong>'.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprgettypespyc">textRepr.getTypes on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- An Abaqus object.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. The default value is None.You should take care
+when setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very
+large. To limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>pathRoot</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the root of the paths. This String is prepended to each path found.
+The default value is None, implying that the path to <strong>object</strong> will be used unless
+<strong>object</strong> is a String.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>A String.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.prettyPrint">
+<span class="sig-name descname"><span class="pre">prettyPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">significantDigits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L134-L163"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.prettyPrint" title="永久链接至目标"></a></dt>
+<dd><p>This method prints a formatted version of the object. The prettyPrint function uses getIndentedRepr to
+format the String representation, but does not save the full text output of getIndentedRepr. Therefore this
+function can be used in cases where getIndentedRepr would run out of memory.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprettyprintpyc">textRepr.prettyPrint on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- An Abaqus object.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. The default value is None.You should take care
+when setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very
+large. To limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>significantDigits</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">6</span></code>) -- An Int specifying the number of significant digits for Floats in the output. Possible
+values are 0 &lt; <strong>significantDigits</strong> ≤ 15. The default value is 6.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.printPaths">
+<span class="sig-name descname"><span class="pre">printPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L166-L197"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printPaths" title="永久链接至目标"></a></dt>
+<dd><p>This method prints the object path of the <strong>object</strong> argument and its members, depending on the
+<strong>maxRecursionDepth</strong> argument. The printPaths function uses getPaths to print a list of paths to each of
+the child objects in <strong>object</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprintpathspyc">textRepr.printPaths on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- An Abaqus object. This argument can also be a String representation of an Abaqus object
+obtained from str(<em>object</em>).</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. The default value is None.You should take care
+when setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very
+large. To limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>pathRoot</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the root of the paths to be printed. This String is prepended to
+each path found. The default value is None, implying that the path to <strong>object</strong> will be
+used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="abaqus.TextRepresentation.textRepr.printTypes">
+<span class="sig-name descname"><span class="pre">printTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementsInSequence</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/TextRepresentation/textRepr.py#L200-L229"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.TextRepresentation.textRepr.printTypes" title="永久链接至目标"></a></dt>
+<dd><p>This method prints the object type. The printTypes function uses getTypes to print a list of all the
+object types in <strong>object</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functiontextreprpyc.htm?contextscope=all#simaker-functiontextreprprinttypespyc">textRepr.printTypes on help.3ds.com/2020</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>object</strong> -- An Abaqus object.</p></li>
+<li><p><strong>maxRecursionDepth</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum depth to which the object will be printed, the
+SymbolicConstant UNLIMITED, or None. A value of None implies that the current setting in
+the TextReprOptions object will be used. The default value is None.You should take care
+when setting <strong>maxRecursionDepth</strong> = UNLIMITED because the resulting output can be very
+large. To limit the output, you should set <strong>maxElementsInSequence</strong> to a small number.</p></li>
+<li><p><strong>maxElementsInSequence</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- An Int specifying the maximum number of elements of a sequence to return or the
+SymbolicConstant UNLIMITED. The initial value is 100. After the maximum number of
+elements have been printed, the remainder are indicated by the string '...'.</p></li>
+<li><p><strong>pathRoot</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the root of the paths to be printed. This String is prepended to
+each path found. The default value is None, implying that the path to <strong>object</strong> will be
+used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="table_collection.html" class="btn btn-neutral float-left" title="Table Collection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="utility.html" class="btn btn-neutral float-right" title="Utility and View" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, WANG Hailin.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+   
+<div
+  class="rst-versions"
+  data-toggle="rst-versions"
+  role="note"
+  aria-label="versions"
+>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 2020
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    
+    <dl>
+      <dt>Languages</dt>
+       
+        <dd><a href="/abqpy/en/2020/">en</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">zh_CN</a></dd>
+        
+      </strong>
+       
+    </dl>
+     
+    <dl>
+      <dt>版本</dt>
+       
+        <dd><a href="/abqpy/zh_CN/2016/">2016</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2017/">2017</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2018/">2018</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2019/">2019</a></dd>
+          
+      <strong>
+        
+        <dd><a href="/abqpy/zh_CN/2020/">2020</a></dd>
+        
+      </strong>
+        
+        <dd><a href="/abqpy/zh_CN/2021/">2021</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2022/">2022</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/2023/">2023</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/latest/">latest</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/sphinx-book-theme/">sphinx-book-theme</a></dd>
+          
+        <dd><a href="/abqpy/zh_CN/furo/">furo</a></dd>
+         
+    </dl>
+     
+    <dl>
+      <dt>下载</dt>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.pdf">pdf</a></dd>
+      
+      <dd><a href="/abqpy/zh_CN/2020/abqpy-docs-zh_CN-2020.epub">epub</a></dd>
+      
+    </dl>
+     
+    <hr />
+    <a
+      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
+      >Continuous Documentation</a
+    >
+    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+  </div>
+</div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
