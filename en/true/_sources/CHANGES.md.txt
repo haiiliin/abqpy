@@ -1,5 +1,166 @@
 # Abaqus API Changes
 
+## Abaqus 2021
+
+### {py:obj}`abaqus.Property.CompositePlyArray`
+
+- {py:obj}`abaqus.Property.CompositePlyArray.CompositePly`: *changed*: Changed in version 2021: Add possible value ANALYTICAL_FIELD_THICKNESS.
+- {py:obj}`abaqus.Property.CompositePlyArray.CompositePly`: *changed*: Changed in version 2021: Update docs for ANALYTICAL_FIELD_THICKNESS
+- {py:obj}`abaqus.Property.CompositePlyArray.CompositePly.thicknessField`: *changed*: Changed in version 2021: Update docs for ANALYTICAL_FIELD_THICKNESS
+- {py:obj}`abaqus.Property.CompositePlyArray.CompositePly.thicknessType`: *changed*: Changed in version 2021: Add possible value ANALYTICAL_FIELD_THICKNESS.
+
+### {py:obj}`abaqus.BoundaryCondition.BoundaryConditionModel`
+
+- {py:obj}`abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.SubmodelBC`: *added*: New in version 2021: The intersectionOnly argument was added.
+
+### {py:obj}`abaqus.BoundaryCondition.SubmodelBC`
+
+- {py:obj}`abaqus.BoundaryCondition.SubmodelBC.SubmodelBC`: *added*: New in version 2021: The intersectionOnly argument was added.
+
+### {py:obj}`abaqus.Interaction.InteractionModel`
+
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`: *added*: New in version 2021: The surfaceCrushTriggerAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`: *added*: New in version 2021: The surfaceFrictionAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`: *added*: New in version 2021: The surfaceBeamSmoothingAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`: *added*: New in version 2021: The surfaceVertexCriteriaAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactStd`: *added*: New in version 2021: The slidingFormulationAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.ContactPropertyAssignment.appendInStep`: *changed*: Changed in version 2021: Update descriptions of the three entries in the tuple.
+- {py:obj}`abaqus.Interaction.InteractionModel.ContactPropertyAssignment.delete`: *changed*: Changed in version 2021: Update descriptions of the two entries in the tuple.
+
+### {py:obj}`abaqus.Interaction.SurfaceCrushTriggerAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceCrushTriggerAssignment.SurfaceCrushTriggerAssignment`: *added*: New in version 2021: The SurfaceCrushTriggerAssignment class was added.
+
+### {py:obj}`abaqus.Interaction.SurfaceFrictionAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceFrictionAssignment.SurfaceFrictionAssignment`: *added*: New in version 2021: The SurfaceFrictionAssignment class was added.
+
+### {py:obj}`abaqus.Interaction.SurfaceOffsetAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment.appendInStep`: *changed*: Changed in version 2021: The first entry in the tuple can be a material object now.
+
+### {py:obj}`abaqus.Interaction.SurfaceThicknessAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment.appendInStep`: *changed*: Changed in version 2021: The first entry in the tuple can be a material object now.
+
+### {py:obj}`abaqus.Interaction.SlidingFormulationAssignment`
+
+- {py:obj}`abaqus.Interaction.SlidingFormulationAssignment.SlidingFormulationAssignment`: *added*: New in version 2021: The SlidingFormulationAssignment class was added.
+
+### {py:obj}`abaqus.Interaction.SurfaceBeamSmoothingAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceBeamSmoothingAssignment.SurfaceBeamSmoothingAssignment`: *added*: New in version 2021: The SurfaceBeamSmoothingAssignment class was added.
+
+### {py:obj}`abaqus.Interaction.SurfaceVertexCriteriaAssignment`
+
+- {py:obj}`abaqus.Interaction.SurfaceVertexCriteriaAssignment.SurfaceVertexCriteriaAssignment`: *added*: New in version 2021: The SurfaceVertexCriteriaAssignment class was added.
+
+### {py:obj}`abaqus.Material.Material`
+
+- {py:obj}`abaqus.Material.Material.Material.GapConductance`: *added*: New in version 2021: The GapConductance method was added.
+- {py:obj}`abaqus.Material.Material.Material.GapConvection`: *added*: New in version 2021: The GapConvection method was added.
+- {py:obj}`abaqus.Material.Material.Material.GapRadiation`: *added*: New in version 2021: The GapRadiation method was added.
+- {py:obj}`abaqus.Material.Material.GapConductance`: *added*: New in version 2021: The GapConductance class was added.
+- {py:obj}`abaqus.Material.Material.GapConvection`: *added*: New in version 2021: The GapConvection class was added.
+- {py:obj}`abaqus.Material.Material.GapRadiation`: *added*: New in version 2021: The GapRadiation class was added.
+
+### {py:obj}`abaqus.Optimization.OptimizationTask`
+
+- {py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry`: *added*: New in version 2021: The alloowNonSymmetricMesh argument was added.
+- {py:obj}`abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry`: *added*: New in version 2021: The alloowNonSymmetricMesh argument was added.
+
+### {py:obj}`abaqus.Optimization.ShapePlanarSymmetry`
+
+- {py:obj}`abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry`: *added*: New in version 2021: The alloowNonSymmetricMesh argument was added.
+- {py:obj}`abaqus.Optimization.ShapePlanarSymmetry.ShapePlanarSymmetry.allowNonSymmetricMesh`: *added*: New in version 2021: The allowNonSymmetricMesh attribute was added.
+
+### {py:obj}`abaqus.Optimization.ShapeRotationalSymmetry`
+
+- {py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry`: *added*: New in version 2021: The alloowNonSymmetricMesh argument was added.
+- {py:obj}`abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry.allowNonSymmetricMesh`: *added*: New in version 2021: The allowNonSymmetricMesh attribute was added.
+
+
+## Abaqus 2020
+
+### {py:obj}`abaqus.Part.PartBase`
+
+- {py:obj}`abaqus.Part.PartBase.AcisFile.openSolidworks`: *added*: New in version 2020: The openSolidworks method was added.
+
+### {py:obj}`abaqus.Part.AcisMdb`
+
+- {py:obj}`abaqus.Part.AcisMdb.AcisMdb.openSolidworks`: *added*: New in version 2020: The openSolidworks method was added.
+
+### {py:obj}`abaqus.Odb.RebarOrientation`
+
+- {py:obj}`abaqus.Odb.RebarOrientation.OdbSet.instances`: *added*: New in version 2020: The instances attribute was added.
+- {py:obj}`abaqus.Odb.RebarOrientation.OdbSet.isInternal`: *added*: New in version 2020: The isInternal attribute was added.
+
+### {py:obj}`abaqus.Canvas.ViewportBase`
+
+- {py:obj}`abaqus.Canvas.ViewportBase.ViewportBase.animationController`: *added*: New in version 2020: The animationController attribute was added.
+
+### {py:obj}`abaqus.TableCollection.TableCollectionAssembly`
+
+- {py:obj}`abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly`: *added*: New in version 2020: The TableCollectionAssembly class was added.
+- {py:obj}`abaqus.TableCollection.TableCollectionAssembly.ElementProgressiveActivation`: *added*: New in version 2020: The ElementProgressiveActivation class was added.
+
+### {py:obj}`abaqus.TableCollection.TableCollectionModel`
+
+- {py:obj}`abaqus.TableCollection.TableCollectionModel.TableCollectionModel`: *added*: New in version 2020: The TableCollectionModel class was added.
+- {py:obj}`abaqus.TableCollection.TableCollectionModel.EventSeries`: *added*: New in version 2020: The EventSeries class was added.
+- {py:obj}`abaqus.TableCollection.TableCollectionModel.EventSeriesType`: *added*: New in version 2020: The EventSeriesType class was added.
+
+### {py:obj}`abaqus.TableCollection.TableCollectionStep`
+
+- {py:obj}`abaqus.TableCollection.TableCollectionStep.ActivateElements`: *added*: New in version 2020: The ActivateElements class was added.
+- {py:obj}`abaqus.TableCollection.TableCollectionStep.TableCollectionStep`: *added*: New in version 2020: The TableCollectionStep class was added.
+
+### {py:obj}`abaqus.TableCollection.TableCollection`
+
+- {py:obj}`abaqus.TableCollection.TableCollection.DataTable`: *added*: New in version 2020: The DataTable class was added.
+- {py:obj}`abaqus.TableCollection.TableCollection.ParameterTable`: *added*: New in version 2020: The ParameterTable class was added.
+- {py:obj}`abaqus.TableCollection.TableCollection.PropertyTable`: *added*: New in version 2020: The PropertyTable class was added.
+- {py:obj}`abaqus.TableCollection.TableCollection.TableCollection`: *added*: New in version 2020: The TableCollection class was added.
+
+### {py:obj}`abaqus.TableCollection.ParameterTable`
+
+- {py:obj}`abaqus.TableCollection.ParameterTable.ParameterColumn`: *added*: New in version 2020: The ParameterColumn class was added.
+
+### {py:obj}`abaqus.TableCollection.PropertyTableData`
+
+- {py:obj}`abaqus.TableCollection.PropertyTableData.PropertyTableData`: *added*: New in version 2020: The PropertyTableData class was added.
+
+### {py:obj}`abaqus.Model.ModelBase`
+
+- {py:obj}`abaqus.Model.ModelBase.ModelBase.eventSeriesDatas`: *added*: New in version 2020: The eventSeriesDatas attribute was added.
+- {py:obj}`abaqus.Model.ModelBase.ModelBase.eventSeriesTypes`: *added*: New in version 2020: The eventSeriesTypes attribute was added.
+- {py:obj}`abaqus.Model.ModelBase.ModelBase.tableCollections`: *added*: New in version 2020: The tableCollections attribute was added.
+
+### {py:obj}`abaqus.Interaction.InteractionModel`
+
+- {py:obj}`abaqus.Interaction.InteractionModel.InteractionModel.ContactExp`: *added*: New in version 2020: The polarityAssignments argument was added.
+- {py:obj}`abaqus.Interaction.InteractionModel.ContactExp.polarityAssignments`: *added*: New in version 2020: The polarityAssignments attribute was added.
+
+### {py:obj}`abaqus.Interaction.InteractionContactInitializationModel`
+
+- {py:obj}`abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel.StdInitialization`: *added*: New in version 2020: The ExpInitialization method was added.
+- {py:obj}`abaqus.Interaction.InteractionContactInitializationModel.ExpInitialization`: *added*: New in version 2020: The ExpInitialization class was added.
+
+### {py:obj}`abaqus.Material.Material`
+
+- {py:obj}`abaqus.Material.Material.Material.Creep`: *added*: New in version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.
+- {py:obj}`abaqus.Material.Material.Material.GapFlow`: *added*: New in version 2020: The options BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added.
+- {py:obj}`abaqus.Material.Material.Material.Viscous`: *added*: New in version 2020: The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.
+
+### {py:obj}`abaqus.Material.Plastic.TensileFailure`
+
+- {py:obj}`abaqus.Material.Plastic.TensileFailure.TensileFailure`: *added*: New in version 2020: The TensileFailure class was added.
+
+### {py:obj}`abaqus.Assembly.AssemblyBase`
+
+- {py:obj}`abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes`: *changed*: Changed in version 2020: The coordinates arguments was removed, the nodes now replaces it.
+
+
 ## Abaqus 2019
 
 ### {py:obj}`abaqus.DisplayGroup.LeafFromConstraintNames`
@@ -8,7 +169,6 @@
 
 ### {py:obj}`abaqus.OdbDisplay.OdbDisplay`
 
-- {py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.legendHideOutsideLimits`: *added*: New in version 2019: The legendHideOutsideLimits attribute was added.
 - {py:obj}`abaqus.OdbDisplay.OdbDisplay.ContourOptions.setValues`: *added*: New in version 2019: The legendHideOutsideLimits argument was added.
 
 ### {py:obj}`abaqus.PlotOptions.BasicOptions`
