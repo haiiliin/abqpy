@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feature &mdash; abqpy 2018.5.4.post3.dev13+g377a9fa06 documentation</title>
+  <title>Feature &mdash; abqpy 2017.5.4.post3.dev12+g4621e9a55 documentation</title>
       <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
@@ -219,7 +219,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="toggle docutils container">
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Feature</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L35-L2289"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Feature</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L35-L2289"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Abaqus/CAE is a feature-based modeling system, and features are stored in the Feature object. The user
 defines the parameters of the feature, and Abaqus/CAE modifies the model based on the value of the
@@ -239,13 +239,13 @@ both the parameters and the resulting model modification.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all">Feature on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all">Feature on help.3ds.com/2017</a>.</p>
 </div>
 <p class="rubric">Member Details:</p>
 <div class="toggle docutils container">
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.AttachmentPoints">
-<span class="sig-name descname"><span class="pre">AttachmentPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L59-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPoints" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttachmentPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L59-L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPoints" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates an attachment points Feature. Attachment points may be created using datum
 points, vertices, reference points, attachment points, interesting points, orphan mesh nodes or
 coordinates. Optionally, the attachment points can be projected on geometric faces or element faces.</p>
@@ -259,7 +259,7 @@ coordinates. Optionally, the attachment points can be projected on geometric fac
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointspyc.htm?contextscope=all">AttachmentPoints on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointspyc.htm?contextscope=all">AttachmentPoints on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -295,7 +295,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection">
-<span class="sig-name descname"><span class="pre">AttachmentPointsAlongDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointCreationMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPtsAlongDir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPtsBetweenPts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createPtAtStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createPtAtEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L117-L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttachmentPointsAlongDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointCreationMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPtsAlongDir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPtsBetweenPts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createPtAtStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createPtAtEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L117-L209"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object by creating attachment points along a direction or between two
 points. A Datum point, a ConstrainedSketchVertex, a Reference point, an Attachment point, an Interesting
 point, or an orphan mesh Node can be specified as the start or end point. The direction can be specified
@@ -310,7 +310,7 @@ using a straight edge or a datum axis.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsalongdirectionpyc.htm?contextscope=all">AttachmentPointsAlongDirection on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsalongdirectionpyc.htm?contextscope=all">AttachmentPointsAlongDirection on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -363,7 +363,7 @@ should be reversed. This argument is valid only when
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges">
-<span class="sig-name descname"><span class="pre">AttachmentPointsOffsetFromEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointCreationMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingBetweenPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromStartPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromEndPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.AUTO_FIT_PTS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">patterningMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceFace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPointForPatternDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPointForPatternDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfRows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingBetweenRows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L211-L333"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttachmentPointsOffsetFromEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flipDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointCreationMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingBetweenPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromStartPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromEndPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.AUTO_FIT_PTS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">patterningMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceFace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startPointForPatternDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endPointForPatternDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offsetFromEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfRows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacingBetweenRows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PROJECT_BY_PROXIMITY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOnElementFaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirStartPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectionDirEndPt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L211-L333"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object by creating attachment points along or offset from one or more
 connected edges.</p>
 <div class="admonition note">
@@ -376,7 +376,7 @@ connected edges.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsoffsetfromedgespyc.htm?contextscope=all">AttachmentPointsOffsetFromEdges on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attachmentpointsoffsetfromedgespyc.htm?contextscope=all">AttachmentPointsOffsetFromEdges on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -449,7 +449,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByCylFace">
-<span class="sig-name descname"><span class="pre">DatumAxisByCylFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L335-L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByCylFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByCylFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L335-L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByCylFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the axis of a cylinder or cone.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -461,7 +461,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbycylfacepyc.htm?contextscope=all">DatumAxisByCylFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbycylfacepyc.htm?contextscope=all">DatumAxisByCylFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -481,7 +481,7 @@ object, or a tuple of Floats representing the coordinates of a point.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane">
-<span class="sig-name descname"><span class="pre">DatumAxisByNormalToPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L361-L388"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByNormalToPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L361-L388"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object normal to the specified plane and passing
 through the specified point.</p>
 <div class="admonition note">
@@ -494,7 +494,7 @@ through the specified point.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbynormaltoplanepyc.htm?contextscope=all">DatumAxisByNormalToPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbynormaltoplanepyc.htm?contextscope=all">DatumAxisByNormalToPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -517,7 +517,7 @@ through the specified point.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByParToEdge">
-<span class="sig-name descname"><span class="pre">DatumAxisByParToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L390-L417"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByParToEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByParToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L390-L417"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByParToEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object parallel to the specified edge and
 passing through the specified point.</p>
 <div class="admonition note">
@@ -530,7 +530,7 @@ passing through the specified point.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbypartoedgepyc.htm?contextscope=all">DatumAxisByParToEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbypartoedgepyc.htm?contextscope=all">DatumAxisByParToEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -553,7 +553,7 @@ passing through the specified point.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis">
-<span class="sig-name descname"><span class="pre">DatumAxisByPrincipalAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalAxis</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L419-L444"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByPrincipalAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalAxis</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L419-L444"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along one of the three principal axes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -565,7 +565,7 @@ passing through the specified point.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbyprincipalaxispyc.htm?contextscope=all">DatumAxisByPrincipalAxis on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbyprincipalaxispyc.htm?contextscope=all">DatumAxisByPrincipalAxis on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -586,7 +586,7 @@ ZAXIS.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByRotation">
-<span class="sig-name descname"><span class="pre">DatumAxisByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L514-L516"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByRotation" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L514-L516"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByRotation" title="Permalink to this definition"></a></dt>
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">DatumAxisByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span></dt>
 <dt class="sig sig-object py">
@@ -595,7 +595,7 @@ ZAXIS.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByThreePoint">
-<span class="sig-name descname"><span class="pre">DatumAxisByThreePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L518-L549"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThreePoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByThreePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L518-L549"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThreePoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object normal to the circle described by three
 points and through its center.</p>
 <div class="admonition note">
@@ -631,7 +631,7 @@ specifying the third point on the circle.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByThruEdge">
-<span class="sig-name descname"><span class="pre">DatumAxisByThruEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L551-L575"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThruEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByThruEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L551-L575"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByThruEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the specified edge.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -643,7 +643,7 @@ specifying the third point on the circle.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbythruedgepyc.htm?contextscope=all">DatumAxisByThruEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbythruedgepyc.htm?contextscope=all">DatumAxisByThruEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -663,7 +663,7 @@ specifying the third point on the circle.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane">
-<span class="sig-name descname"><span class="pre">DatumAxisByTwoPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plane2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L577-L603"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByTwoPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plane2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L577-L603"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object at the intersection of two planes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -675,7 +675,7 @@ specifying the third point on the circle.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwoplanepyc.htm?contextscope=all">DatumAxisByTwoPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwoplanepyc.htm?contextscope=all">DatumAxisByTwoPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -698,7 +698,7 @@ specifying the third point on the circle.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint">
-<span class="sig-name descname"><span class="pre">DatumAxisByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L605-L631"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumAxisByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L605-L631"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumAxis object along the line joining two points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -710,7 +710,7 @@ specifying the third point on the circle.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwopointpyc.htm?contextscope=all">DatumAxisByTwoPoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxisbytwopointpyc.htm?contextscope=all">DatumAxisByTwoPoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -733,7 +733,7 @@ specifying the third point on the circle.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumCsysByDefault">
-<span class="sig-name descname"><span class="pre">DatumCsysByDefault</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L633-L665"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByDefault" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumCsysByDefault</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L633-L665"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByDefault" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object from the specified default coordinate
 system at the origin.</p>
 <div class="admonition note">
@@ -746,7 +746,7 @@ system at the origin.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbydefaultpyc.htm?contextscope=all">DatumCsysByDefault on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbydefaultpyc.htm?contextscope=all">DatumCsysByDefault on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -770,7 +770,7 @@ are CARTESIAN, CYLINDRICAL, and SPHERICAL.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumCsysByOffset">
-<span class="sig-name descname"><span class="pre">DatumCsysByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumCoordSys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L667-L713"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByOffset" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumCsysByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumCoordSys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L667-L713"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByOffset" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object by offsetting the origin of an existing
 datum coordinate system to a specified point.</p>
 <div class="admonition note">
@@ -783,7 +783,7 @@ datum coordinate system to a specified point.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbyoffsetpyc.htm?contextscope=all">DatumCsysByOffset on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbyoffsetpyc.htm?contextscope=all">DatumCsysByOffset on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -815,7 +815,7 @@ exclusive, and one of them must be specified.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumCsysByThreePoints">
-<span class="sig-name descname"><span class="pre">DatumCsysByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L715-L770"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByThreePoints" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumCsysByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L715-L770"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByThreePoints" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object from three points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -827,7 +827,7 @@ exclusive, and one of them must be specified.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbythreepointspyc.htm?contextscope=all">DatumCsysByThreePoints on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbythreepointspyc.htm?contextscope=all">DatumCsysByThreePoints on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -865,7 +865,7 @@ mutually exclusive. One of them must be specified.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumCsysByTwoLines">
-<span class="sig-name descname"><span class="pre">DatumCsysByTwoLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L772-L812"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByTwoLines" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumCsysByTwoLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordSysType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L772-L812"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumCsysByTwoLines" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumCsys object from two orthogonal lines. The origin of
 the new datum coordinate system is placed at the intersection of the two lines.</p>
 <div class="admonition note">
@@ -878,7 +878,7 @@ the new datum coordinate system is placed at the intersection of the two lines.<
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbytwolinespyc.htm?contextscope=all">DatumCsysByTwoLines on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsysbytwolinespyc.htm?contextscope=all">DatumCsysByTwoLines on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -906,7 +906,7 @@ a line in the <strong>X - Y</strong> plane or in the rr-θθ plane.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint">
-<span class="sig-name descname"><span class="pre">DatumPlaneByLinePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L973-L1000"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByLinePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L973-L1000"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object that pass through the specified line and
 through the specified point that does not lie on the line.</p>
 <div class="admonition note">
@@ -919,7 +919,7 @@ through the specified point that does not lie on the line.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebylinepointpyc.htm?contextscope=all">DatumPlaneByLinePoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebylinepointpyc.htm?contextscope=all">DatumPlaneByLinePoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -942,7 +942,7 @@ through the specified point that does not lie on the line.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByOffset">
-<span class="sig-name descname"><span class="pre">DatumPlaneByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><span class="pre">Literal</span></a><span class="p"><span class="pre">[</span></span><span class="pre">SIDE1</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SIDE2</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L909-L911"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByOffset" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">flip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.11)"><span class="pre">Literal</span></a><span class="p"><span class="pre">[</span></span><span class="pre">SIDE1</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">SIDE2</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L909-L911"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByOffset" title="Permalink to this definition"></a></dt>
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">DatumPlaneByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span></dt>
 <dt class="sig sig-object py">
@@ -951,7 +951,7 @@ through the specified point that does not lie on the line.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal">
-<span class="sig-name descname"><span class="pre">DatumPlaneByPointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1002-L1029"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByPointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1002-L1029"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object normal to the specified line and running
 through the specified point.</p>
 <div class="admonition note">
@@ -964,7 +964,7 @@ through the specified point.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebypointnormalpyc.htm?contextscope=all">DatumPlaneByPointNormal on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebypointnormalpyc.htm?contextscope=all">DatumPlaneByPointNormal on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -987,7 +987,7 @@ through the specified point.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane">
-<span class="sig-name descname"><span class="pre">DatumPlaneByPrincipalPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L814-L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByPrincipalPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">principalPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L814-L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object through the origin along one of the
 three principal planes.</p>
 <div class="admonition note">
@@ -1000,7 +1000,7 @@ three principal planes.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebyprincipalplanepyc.htm?contextscope=all">DatumPlaneByPrincipalPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebyprincipalplanepyc.htm?contextscope=all">DatumPlaneByPrincipalPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1024,7 +1024,7 @@ and XZPLANE.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByRotation">
-<span class="sig-name descname"><span class="pre">DatumPlaneByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L913-L941"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByRotation" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L913-L941"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByRotation" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object by rotating a plane about the specified
 axis through the specified angle.</p>
 <div class="admonition note">
@@ -1057,7 +1057,7 @@ axis through the specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints">
-<span class="sig-name descname"><span class="pre">DatumPlaneByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L943-L971"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L943-L971"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object defined by passing through three points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1069,7 +1069,7 @@ axis through the specified angle.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebythreepointspyc.htm?contextscope=all">DatumPlaneByThreePoints on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebythreepointspyc.htm?contextscope=all">DatumPlaneByThreePoints on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1093,7 +1093,7 @@ axis through the specified angle.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint">
-<span class="sig-name descname"><span class="pre">DatumPlaneByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1031-L1058"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPlaneByTwoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1031-L1058"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPlane object midway between two points and normal to
 the line connecting the points.</p>
 <div class="admonition note">
@@ -1106,7 +1106,7 @@ the line connecting the points.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebytwopointpyc.htm?contextscope=all">DatumPlaneByTwoPoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanebytwopointpyc.htm?contextscope=all">DatumPlaneByTwoPoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1129,7 +1129,7 @@ the line connecting the points.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByCoordinate">
-<span class="sig-name descname"><span class="pre">DatumPointByCoordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1060-L1082"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByCoordinate" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByCoordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1060-L1082"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByCoordinate" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object at the point defined by the specified
 coordinates.</p>
 <div class="admonition note">
@@ -1142,7 +1142,7 @@ coordinates.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbycoordinatepyc.htm?contextscope=all">DatumPointByCoordinate on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbycoordinatepyc.htm?contextscope=all">DatumPointByCoordinate on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1160,7 +1160,7 @@ point.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByEdgeParam">
-<span class="sig-name descname"><span class="pre">DatumPointByEdgeParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1168-L1197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByEdgeParam" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByEdgeParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1168-L1197"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByEdgeParam" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object along an edge at a selected distance
 from one end of the edge.</p>
 <div class="admonition note">
@@ -1173,7 +1173,7 @@ from one end of the edge.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyedgeparampyc.htm?contextscope=all">DatumPointByEdgeParam on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyedgeparampyc.htm?contextscope=all">DatumPointByEdgeParam on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1200,7 +1200,7 @@ are 0 &lt; <strong>parameter</strong> &lt; 1.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByMidPoint">
-<span class="sig-name descname"><span class="pre">DatumPointByMidPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1109-L1131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByMidPoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByMidPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1109-L1131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByMidPoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object midway between two points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1212,7 +1212,7 @@ are 0 &lt; <strong>parameter</strong> &lt; 1.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbymidpointpyc.htm?contextscope=all">DatumPointByMidPoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbymidpointpyc.htm?contextscope=all">DatumPointByMidPoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1232,7 +1232,7 @@ are 0 &lt; <strong>parameter</strong> &lt; 1.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByOffset">
-<span class="sig-name descname"><span class="pre">DatumPointByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1084-L1107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByOffset" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByOffset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1084-L1107"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByOffset" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object offset from an existing point by a
 vector.</p>
 <div class="admonition note">
@@ -1245,7 +1245,7 @@ vector.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyoffsetpyc.htm?contextscope=all">DatumPointByOffset on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyoffsetpyc.htm?contextscope=all">DatumPointByOffset on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1265,7 +1265,7 @@ vector.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByOnFace">
-<span class="sig-name descname"><span class="pre">DatumPointByOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1133-L1166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByOnFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1133-L1166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByOnFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object on the specified face, offset from two
 edges.</p>
 <div class="admonition note">
@@ -1278,7 +1278,7 @@ edges.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyonfacepyc.htm?contextscope=all">DatumPointByOnFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyonfacepyc.htm?contextscope=all">DatumPointByOnFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1304,7 +1304,7 @@ edges.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge">
-<span class="sig-name descname"><span class="pre">DatumPointByProjOnEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1199-L1226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByProjOnEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1199-L1226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object along an edge by projecting an existing
 point along the normal to the edge.</p>
 <div class="admonition note">
@@ -1317,7 +1317,7 @@ point along the normal to the edge.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonedgepyc.htm?contextscope=all">DatumPointByProjOnEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonedgepyc.htm?contextscope=all">DatumPointByProjOnEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1340,7 +1340,7 @@ point along the normal to the edge.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.DatumPointByProjOnFace">
-<span class="sig-name descname"><span class="pre">DatumPointByProjOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1228-L1256"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DatumPointByProjOnFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1228-L1256"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.DatumPointByProjOnFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a DatumPoint object on a specified face by projecting an
 existing point onto the face.</p>
 <div class="admonition note">
@@ -1353,7 +1353,7 @@ existing point onto the face.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonfacepyc.htm?contextscope=all">DatumPointByProjOnFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointbyprojonfacepyc.htm?contextscope=all">DatumPointByProjOnFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1377,7 +1377,7 @@ planes are not supported.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.MakeSketchTransform">
-<span class="sig-name descname"><span class="pre">MakeSketchTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIDE1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1258-L1305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.MakeSketchTransform" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MakeSketchTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIDE1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1258-L1305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.MakeSketchTransform" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Transform object. A Transform object is a 4x3 matrix of Floats that represents
 the transformation from sketch coordinates to part coordinates.</p>
 <div class="admonition note">
@@ -1390,7 +1390,7 @@ the transformation from sketch coordinates to part coordinates.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-makesketchtransformpyc.htm?contextscope=all">MakeSketchTransform on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-makesketchtransformpyc.htm?contextscope=all">MakeSketchTransform on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1422,7 +1422,7 @@ matrix.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane">
-<span class="sig-name descname"><span class="pre">PartitionCellByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1307-L1333"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1307-L1333"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells using the given datum plane.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1434,7 +1434,7 @@ matrix.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbydatumplanepyc.htm?contextscope=all">PartitionCellByDatumPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbydatumplanepyc.htm?contextscope=all">PartitionCellByDatumPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1457,7 +1457,7 @@ matrix.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByExtendFace">
-<span class="sig-name descname"><span class="pre">PartitionCellByExtendFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendFace</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1335-L1362"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtendFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByExtendFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendFace</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1335-L1362"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtendFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells by extending the underlying geometry of a given face to
 partition the target cells.</p>
 <div class="admonition note">
@@ -1470,7 +1470,7 @@ partition the target cells.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextendfacepyc.htm?contextscope=all">PartitionCellByExtendFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextendfacepyc.htm?contextscope=all">PartitionCellByExtendFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1493,7 +1493,7 @@ partition the target cells.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge">
-<span class="sig-name descname"><span class="pre">PartitionCellByExtrudeEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1364-L1400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByExtrudeEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sense</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1364-L1400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells by extruding selected edges in the given direction.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1505,7 +1505,7 @@ partition the target cells.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextrudeedgepyc.htm?contextscope=all">PartitionCellByExtrudeEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyextrudeedgepyc.htm?contextscope=all">PartitionCellByExtrudeEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1534,7 +1534,7 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners">
-<span class="sig-name descname"><span class="pre">PartitionCellByPatchNCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cornerPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1402-L1429"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByPatchNCorners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cornerPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1402-L1429"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions a cell using an N-sided cutting patch defined by the given corner points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1546,7 +1546,7 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchncornerspyc.htm?contextscope=all">PartitionCellByPatchNCorners on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchncornerspyc.htm?contextscope=all">PartitionCellByPatchNCorners on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1570,7 +1570,7 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges">
-<span class="sig-name descname"><span class="pre">PartitionCellByPatchNEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1431-L1458"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByPatchNEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1431-L1458"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions a cell using an N-sided cutting patch defined by the given edges.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1582,7 +1582,7 @@ FORWARD and REVERSE. If <strong>sense</strong> = FORWARD, the extrusion is in th
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchnedgespyc.htm?contextscope=all">PartitionCellByPatchNEdges on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbypatchnedgespyc.htm?contextscope=all">PartitionCellByPatchNEdges on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1606,7 +1606,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge">
-<span class="sig-name descname"><span class="pre">PartitionCellByPlaneNormalToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1460-L1493"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByPlaneNormalToEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1460-L1493"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells using a plane normal to an edge at the given edge point.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1618,7 +1618,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanenormaltoedgepyc.htm?contextscope=all">PartitionCellByPlaneNormalToEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanenormaltoedgepyc.htm?contextscope=all">PartitionCellByPlaneNormalToEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1642,7 +1642,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal">
-<span class="sig-name descname"><span class="pre">PartitionCellByPlanePointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1495-L1528"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByPlanePointNormal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1495-L1528"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells using a plane defined by a point and a normal direction.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1654,7 +1654,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanepointnormalpyc.htm?contextscope=all">PartitionCellByPlanePointNormal on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanepointnormalpyc.htm?contextscope=all">PartitionCellByPlanePointNormal on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1678,7 +1678,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints">
-<span class="sig-name descname"><span class="pre">PartitionCellByPlaneThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1530-L1561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellByPlaneThreePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1530-L1561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells using a plane defined by three points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1690,7 +1690,7 @@ Edge objects must belong to the same PartInstance object as <strong>cell</strong
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanethreepointspyc.htm?contextscope=all">PartitionCellByPlaneThreePoints on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbyplanethreepointspyc.htm?contextscope=all">PartitionCellByPlaneThreePoints on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1716,7 +1716,7 @@ plane. Note: <strong>point1</strong>, <strong>point2</strong>, and <strong>point
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge">
-<span class="sig-name descname"><span class="pre">PartitionCellBySweepEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sweepPath</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1563-L1594"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionCellBySweepEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sweepPath</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1563-L1594"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more cells by sweeping selected edges along the given sweep path.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1728,7 +1728,7 @@ plane. Note: <strong>point1</strong>, <strong>point2</strong>, and <strong>point
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbysweepedgepyc.htm?contextscope=all">PartitionCellBySweepEdge on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitioncellbysweepedgepyc.htm?contextscope=all">PartitionCellBySweepEdge on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1755,7 +1755,7 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane">
-<span class="sig-name descname"><span class="pre">PartitionEdgeByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1596-L1622"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionEdgeByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1596-L1622"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions an edge where it intersects with a datum plane.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1767,7 +1767,7 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebydatumplanepyc.htm?contextscope=all">PartitionEdgeByDatumPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebydatumplanepyc.htm?contextscope=all">PartitionEdgeByDatumPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1790,7 +1790,7 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByParam">
-<span class="sig-name descname"><span class="pre">PartitionEdgeByParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1624-L1651"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByParam" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionEdgeByParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1624-L1651"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByParam" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more edges at the given normalized edge parameter.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1802,7 +1802,7 @@ and perpendicular to the plane formed by <strong>edges</strong>. The sweep path 
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebyparampyc.htm?contextscope=all">PartitionEdgeByParam on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebyparampyc.htm?contextscope=all">PartitionEdgeByParam on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1826,7 +1826,7 @@ values are 0.0 &lt; <strong>parameter</strong> &lt; 1.0.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionEdgeByPoint">
-<span class="sig-name descname"><span class="pre">PartitionEdgeByPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1653-L1679"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByPoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionEdgeByPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1653-L1679"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionEdgeByPoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions an edge at the given point.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1838,7 +1838,7 @@ values are 0.0 &lt; <strong>parameter</strong> &lt; 1.0.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebypointpyc.htm?contextscope=all">PartitionEdgeByPoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionedgebypointpyc.htm?contextscope=all">PartitionEdgeByPoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1861,7 +1861,7 @@ values are 0.0 &lt; <strong>parameter</strong> &lt; 1.0.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByAuto">
-<span class="sig-name descname"><span class="pre">PartitionFaceByAuto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1681-L1702"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByAuto" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByAuto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1681-L1702"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByAuto" title="Permalink to this definition"></a></dt>
 <dd><p>This method automatically partitions a target face into simple regions that can be meshed using a
 structured meshing technique.</p>
 <div class="admonition note">
@@ -1874,7 +1874,7 @@ structured meshing technique.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyautopyc.htm?contextscope=all">PartitionFaceByAuto on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyautopyc.htm?contextscope=all">PartitionFaceByAuto on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1891,7 +1891,7 @@ structured meshing technique.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams">
-<span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgeParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1704-L1741"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgeParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1704-L1741"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions a face normal to two edges, using a curved path between the two given edge
 points defined by the normalized edge parameters.</p>
 <div class="admonition note">
@@ -1904,7 +1904,7 @@ points defined by the normalized edge parameters.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgeparamspyc.htm?contextscope=all">PartitionFaceByCurvedPathEdgeParams on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgeparamspyc.htm?contextscope=all">PartitionFaceByCurvedPathEdgeParams on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1932,7 +1932,7 @@ points defined by the normalized edge parameters.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints">
-<span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1743-L1778"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByCurvedPathEdgePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1743-L1778"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions a face normal to two edges, using a curved path between the two given edge
 points.</p>
 <div class="admonition note">
@@ -1945,7 +1945,7 @@ points.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgepointspyc.htm?contextscope=all">PartitionFaceByCurvedPathEdgePoints on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebycurvedpathedgepointspyc.htm?contextscope=all">PartitionFaceByCurvedPathEdgePoints on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1971,7 +1971,7 @@ points.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane">
-<span class="sig-name descname"><span class="pre">PartitionFaceByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1780-L1802"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByDatumPlane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datumPlane</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1780-L1802"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces using the given datum plane.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1983,7 +1983,7 @@ points.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebydatumplanepyc.htm?contextscope=all">PartitionFaceByDatumPlane on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebydatumplanepyc.htm?contextscope=all">PartitionFaceByDatumPlane on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2003,7 +2003,7 @@ points.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace">
-<span class="sig-name descname"><span class="pre">PartitionFaceByExtendFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendFace</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1804-L1828"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByExtendFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendFace</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1804-L1828"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces by extending the underlying geometry of another given face
 to partition the target faces.</p>
 <div class="admonition note">
@@ -2016,7 +2016,7 @@ to partition the target faces.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyextendfacepyc.htm?contextscope=all">PartitionFaceByExtendFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyextendfacepyc.htm?contextscope=all">PartitionFaceByExtendFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2037,7 +2037,7 @@ a planar, cylindrical, conical, or spherical face.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace">
-<span class="sig-name descname"><span class="pre">PartitionFaceByIntersectFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cuttingFaces</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1830-L1852"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByIntersectFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cuttingFaces</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1830-L1852"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces using the given cutting faces to partition the target faces.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2049,7 +2049,7 @@ a planar, cylindrical, conical, or spherical face.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyintersectfacepyc.htm?contextscope=all">PartitionFaceByIntersectFace on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyintersectfacepyc.htm?contextscope=all">PartitionFaceByIntersectFace on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2069,7 +2069,7 @@ a planar, cylindrical, conical, or spherical face.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges">
-<span class="sig-name descname"><span class="pre">PartitionFaceByProjectingEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1854-L1885"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByProjectingEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extendEdges</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1854-L1885"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces by projecting the given edges on the target faces.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2081,7 +2081,7 @@ a planar, cylindrical, conical, or spherical face.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyprojectingedgespyc.htm?contextscope=all">PartitionFaceByProjectingEdges on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyprojectingedgespyc.htm?contextscope=all">PartitionFaceByProjectingEdges on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2104,7 +2104,7 @@ direction before partitioning the target faces. The default value is False.</p><
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath">
-<span class="sig-name descname"><span class="pre">PartitionFaceByShortestPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1887-L1917"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceByShortestPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1887-L1917"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces using a minimum distance path between the two given points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2116,7 +2116,7 @@ direction before partitioning the target faces. The default value is False.</p><
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyshortestpathpyc.htm?contextscope=all">PartitionFaceByShortestPath on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebyshortestpathpyc.htm?contextscope=all">PartitionFaceByShortestPath on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2142,7 +2142,7 @@ the target faces.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceBySketch">
-<span class="sig-name descname"><span class="pre">PartitionFaceBySketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1919-L1958"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketch" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceBySketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1919-L1958"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketch" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more planar faces by sketching on them.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2154,7 +2154,7 @@ the target faces.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchpyc.htm?contextscope=all">PartitionFaceBySketch on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchpyc.htm?contextscope=all">PartitionFaceBySketch on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2182,7 +2182,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance">
-<span class="sig-name descname"><span class="pre">PartitionFaceBySketchDistance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L1960-L2009"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceBySketchDistance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L1960-L2009"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then projecting the
 sketch toward the target faces through the given distance.</p>
 <div class="admonition note">
@@ -2195,7 +2195,7 @@ sketch toward the target faces through the given distance.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchdistancepyc.htm?contextscope=all">PartitionFaceBySketchDistance on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchdistancepyc.htm?contextscope=all">PartitionFaceBySketchDistance on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2226,7 +2226,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint">
-<span class="sig-name descname"><span class="pre">PartitionFaceBySketchRefPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2011-L2057"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceBySketchRefPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2011-L2057"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then projecting the
 sketch toward the target faces through a distance governed by the reference point.</p>
 <div class="admonition note">
@@ -2239,7 +2239,7 @@ sketch toward the target faces through a distance governed by the reference poin
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchrefpointpyc.htm?contextscope=all">PartitionFaceBySketchRefPoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchrefpointpyc.htm?contextscope=all">PartitionFaceBySketchRefPoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2269,7 +2269,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll">
-<span class="sig-name descname"><span class="pre">PartitionFaceBySketchThruAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2059-L2105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PartitionFaceBySketchThruAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlane</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchPlaneSide</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchUpEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketchOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.RIGHT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2059-L2105"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll" title="Permalink to this definition"></a></dt>
 <dd><p>This method partitions one or more faces by sketching on a sketch plane and then projecting toward
 the target faces through an infinite distance.</p>
 <div class="admonition note">
@@ -2282,7 +2282,7 @@ the target faces through an infinite distance.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchthruallpyc.htm?contextscope=all">PartitionFaceBySketchThruAll on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partitionfacebysketchthruallpyc.htm?contextscope=all">PartitionFaceBySketchThruAll on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2312,7 +2312,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.ReferencePoint">
-<span class="sig-name descname"><span class="pre">ReferencePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2107-L2135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.ReferencePoint" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ReferencePoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2107-L2135"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.ReferencePoint" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates a Feature object and a ReferencePoint object at the specified location.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2324,7 +2324,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all">ReferencePoint on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all">ReferencePoint on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2346,7 +2346,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.RemoveWireEdges">
-<span class="sig-name descname"><span class="pre">RemoveWireEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wireEdgeList</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2137-L2158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.RemoveWireEdges" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RemoveWireEdges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wireEdgeList</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2137-L2158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.RemoveWireEdges" title="Permalink to this definition"></a></dt>
 <dd><p>This method removes wire edges.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2358,7 +2358,7 @@ values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.</p></li>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removewireedgespyc.htm?contextscope=all">RemoveWireEdges on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-removewireedgespyc.htm?contextscope=all">RemoveWireEdges on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2376,7 +2376,7 @@ not a wire edge will not be removed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.WirePolyLine">
-<span class="sig-name descname"><span class="pre">WirePolyLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.IMPRINT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2160-L2208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.WirePolyLine" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">WirePolyLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mergeType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.IMPRINT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2160-L2208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.WirePolyLine" title="Permalink to this definition"></a></dt>
 <dd><p>This method creates an additional Feature object by creating a series of wires joining points in
 pairs. When such a feature is created at the Part level, then each point can be either a datum point, a
 vertex, a reference point, an interesting point, an orphan mesh node, or the coordinates of a point.
@@ -2392,7 +2392,7 @@ point, or an orphan mesh node.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirepolylinepyc.htm?contextscope=all">WirePolyLine on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-wirepolylinepyc.htm?contextscope=all">WirePolyLine on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2428,13 +2428,13 @@ The default value is ON.</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.id">
-<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L56-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.id" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L56-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.id" title="Permalink to this definition"></a></dt>
 <dd><p>An Int specifying the ID of the feature.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.isSuppressed">
-<span class="sig-name descname"><span class="pre">isSuppressed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2210-L2219"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.isSuppressed" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">isSuppressed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2210-L2219"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.isSuppressed" title="Permalink to this definition"></a></dt>
 <dd><p>This method queries the suppressed state of the feature.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -2448,13 +2448,13 @@ The default value is ON.</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L53-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.name" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L53-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.name" title="Permalink to this definition"></a></dt>
 <dd><p>A String specifying the repository key.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.restore">
-<span class="sig-name descname"><span class="pre">restore</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2221-L2228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.restore" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">restore</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2221-L2228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.restore" title="Permalink to this definition"></a></dt>
 <dd><p>This method restores the parameters of a feature to the value they had when the backup method was
 invoked on the part or assembly.</p>
 <p>Use the restore method after the backup method.</p>
@@ -2462,7 +2462,7 @@ invoked on the part or assembly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.resume">
-<span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2230-L2238"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.resume" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2230-L2238"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.resume" title="Permalink to this definition"></a></dt>
 <dd><p>This method resumes suppressed features.</p>
 <p>Resuming a feature fully restores it to the part or assembly. You can resume the last feature you
 suppressed, all suppressed features, or just selected features. When you resume a child feature,
@@ -2471,11 +2471,11 @@ Abaqus/CAE also resumes the parent features automatically.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2240-L2278"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.setValues" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sketch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2240-L2278"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.setValues" title="Permalink to this definition"></a></dt>
 <dd><p>This method modifies the Feature object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all#simaker-featuresetvaluespyc">Feature.setValues on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featurepyc.htm?contextscope=all#simaker-featuresetvaluespyc">Feature.setValues on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2505,7 +2505,7 @@ PartitionFaceBySketchDistance method.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.Feature.Feature.suppress">
-<span class="sig-name descname"><span class="pre">suppress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/Feature.py#L2280-L2289"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.suppress" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">suppress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/Feature.py#L2280-L2289"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.Feature.Feature.suppress" title="Permalink to this definition"></a></dt>
 <dd><p>This method suppresses features.</p>
 <p>Suppressing a feature is equivalent to temporarily removing the feature from the part or assembly.
 Suppressed features remain suppressed when you regenerate a part or assembly. You cannot suppress
@@ -2518,7 +2518,7 @@ suppressed automatically. Suppressed features can be restored with the resume co
 
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Feature.FeatureOptions.FeatureOptions">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FeatureOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/FeatureOptions.py#L6-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.FeatureOptions.FeatureOptions" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FeatureOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/FeatureOptions.py#L6-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.FeatureOptions.FeatureOptions" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The FeatureOptions object stores the options that control the behavior of feature regeneration for all
 features in a model.</p>
@@ -2532,17 +2532,17 @@ features in a model.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all">FeatureOptions on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all">FeatureOptions on help.3ds.com/2017</a>.</p>
 </div>
 <p class="rubric">Member Details:</p>
 <div class="toggle docutils container">
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Feature.FeatureOptions.FeatureOptions.setValues">
-<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checkSelfIntersection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoCaching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxCachedStates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Feature/FeatureOptions.py#L18-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.FeatureOptions.FeatureOptions.setValues" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checkSelfIntersection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoCaching</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxCachedStates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/Feature/FeatureOptions.py#L18-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Feature.FeatureOptions.FeatureOptions.setValues" title="Permalink to this definition"></a></dt>
 <dd><p>This method modifies the FeatureOptions object for the specified model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all#simaker-featureoptionssetvaluespyc">FeatureOptions.setValues on help.3ds.com/2018</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-featureoptionspyc.htm?contextscope=all#simaker-featureoptionssetvaluespyc">FeatureOptions.setValues on help.3ds.com/2017</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
