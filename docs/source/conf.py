@@ -24,6 +24,7 @@ import sys
 import typing
 
 import abqpy
+import git
 
 project = "abqpy"
 copyright = "2022, WANG Hailin"
@@ -206,8 +207,6 @@ html_themes = {
     "furo": "furo",
 }
 try:
-    import git
-
     branch = git.repo.Repo("../../").active_branch.name
 except Exception:
     branch = "2023"
