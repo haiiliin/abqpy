@@ -236,6 +236,14 @@ elif html_theme == "sphinx_rtd_theme":
 elif html_theme == "furo":
     html_theme_options = {}
 
+# The default sidebars (for documents that don't match any pattern) are
+# defined by theme itself.  Builtin themes are using these templates by
+# default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
+# 'searchbox.html']``.
+html_sidebars = {
+    "*": ["versions.html"],
+}
+
 # Logo
 # html_logo = "_static/3ds-dark.svg"
 
@@ -357,3 +365,41 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
         return baseurl
 
     return baseurl + f"#L{lineno}-L{lineno + len(source) - 1}"
+
+
+############################
+# SETUP THE RTD LOWER-LEFT #
+############################
+html_context = dict(display_lower_left=True)
+
+# GET REPO_NAME
+REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
+
+# GET CURRENT_LANGUAGE
+current_language = os.environ.get("current_language", "en")
+
+# tell the theme which language to we're currently building
+html_context["current_language"] = current_language
+
+# GET CURRENT_VERSION
+repo = git.Repo(search_parent_directories=True)
+current_version = os.environ.get("current_version", repo.active_branch.name)
+
+# tell the theme which version we're currently on ('current_version' affects
+# the lower-left rtd menu and 'version' affects the logo-area version)
+html_context["current_version"] = html_context["version"] = current_version
+
+# POPULATE LINKS TO OTHER LANGUAGES
+html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
+                             for lang in ("en", "zh_CN")]  # fmt: skip
+
+# POPULATE LINKS TO OTHER VERSIONS
+branches = [branch.name for branch in repo.branches if branch.name != "gh-pages"]
+html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
+                            for ver in [branch for branch in branches]]  # fmt: skip
+
+# POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
+html_context["downloads"] = [
+    (fmt, f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}")
+    for fmt in ("pdf", "epub")
+]
