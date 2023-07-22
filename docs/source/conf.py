@@ -392,7 +392,7 @@ html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/", l
                              for lang in ("en", "zh_CN")]  # fmt: skip
 
 # POPULATE LINKS TO OTHER VERSIONS
-branches = [str(v) for v in range(2016, 2024)]
+branches = [str(v) for v in range(2023, 2015, -1)]
 branches += ["latest", "sphinx-book-theme", "furo"]
 html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/', ver)
                             for ver in [branch for branch in branches]]  # fmt: skip
