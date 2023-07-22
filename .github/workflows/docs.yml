@@ -64,6 +64,7 @@ jobs:
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
       - name: Upload artifacts
+        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
