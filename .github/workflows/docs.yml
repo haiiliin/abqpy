@@ -58,7 +58,6 @@ jobs:
           pip show abqpy
       - name: Build the documentation
         run: |
-          sphinx-build -b changes -j auto -W docs/source docs/build/changes
           sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
