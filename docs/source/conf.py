@@ -384,13 +384,17 @@ current_version = os.environ.get("VERSION", branch)
 html_context["current_version"] = html_context["version"] = current_version
 
 # POPULATE LINKS TO OTHER LANGUAGES
-html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
+language_aliases = {
+    "en": "English",
+    "zh_CN": "简体中文",
+}
+html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/", language_aliases.get(lang, lang))
                              for lang in ("en", "zh_CN")]  # fmt: skip
 
 # POPULATE LINKS TO OTHER VERSIONS
 branches = [str(v) for v in range(2016, 2024)]
 branches += ["latest", "sphinx-book-theme", "furo"]
-html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
+html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/', ver)
                             for ver in [branch for branch in branches]]  # fmt: skip
 
 # POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
