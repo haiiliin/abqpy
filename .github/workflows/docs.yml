@@ -68,7 +68,7 @@ jobs:
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          retention-days: 5
+          retention-days: 1
 
   upload:
     if: github.event_name != 'pull_request'
