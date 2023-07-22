@@ -25,11 +25,14 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  REPO_NAME: ${{ github.event.repository.name }}
+  VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
+
 jobs:
   sphinx:
     if: >
-      github.event_name == 'push' ||
-      github.event_name == 'workflow_dispatch' ||
+      github.event_name != 'pull_request' ||
       github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
@@ -41,9 +44,8 @@ jobs:
         theme: ["sphinx_rtd_theme"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
-      REPO_NAME: ${{ github.event.repository.name }}
       LANGUAGE: ${{ matrix.language }}
-      VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
+
     steps:
       - uses: actions/setup-python@v4
         with:
@@ -58,15 +60,43 @@ jobs:
           pip show abqpy
       - name: Build the documentation
         run: |
-          sphinx-build -b changes -j auto -W docs/source docs/build/changes
-          sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}
+          sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}/${{ matrix.language }}
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
+      - name: Upload artifacts
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs-${{ matrix.language }}-${{ env.VERSION }}
+          path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          retention-days: 1
+
+  upload:
+    if: github.event_name != 'pull_request'
+    needs: sphinx
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ["en", "zh_CN"]
+        builder: ["html"]
+        theme: ["sphinx_rtd_theme"]
+    env:
+      SPHINX_THEME: ${{ matrix.theme }}
+      LANGUAGE: ${{ matrix.language }}
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: docs-${{ matrix.language }}-${{ env.VERSION }}
+          path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
       - name: Upload the documentation
-        if: github.event_name != 'pull_request' && matrix.builder == 'html'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build/${{ matrix.builder }}
+          publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
           destination_dir: ${{ matrix.language }}/${{ env.VERSION }}
           keep_files: true
