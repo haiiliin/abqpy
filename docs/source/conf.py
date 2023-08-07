@@ -384,6 +384,10 @@ current_version = os.environ.get("VERSION", branch)
 html_context["current_version"] = html_context["version"] = current_version
 
 # POPULATE LINKS TO OTHER LANGUAGES
+html_context["language_alias"] = {
+    "en": "English",
+    "zh_CN": "简体中文",
+}
 html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
                              for lang in ("en", "zh_CN")]  # fmt: skip
 

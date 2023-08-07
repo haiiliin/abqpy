@@ -18,7 +18,7 @@ for small badge style. #}
       {% for slug, url in languages %} {% if slug == current_language %}
       <strong>
         {% endif %}
-        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        <dd><a href="{{ url }}">{{ language_alias.get(slug, slug) }}</a></dd>
         {% if slug == current_language %}
       </strong>
       {% endif %} {% endfor %}
