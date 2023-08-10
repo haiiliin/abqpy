@@ -179,7 +179,7 @@ typehints_document_rtype = False
 autodoc_default_options = {
     "undoc-members": False,
 }
-
+maximum_signature_line_length = 90
 add_module_names = False
 
 # Figure numbering
