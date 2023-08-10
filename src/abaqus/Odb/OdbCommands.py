@@ -51,7 +51,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 
 
 @abaqus_function_doc
-def maxEnvelop() -> Sequence[FieldOutput]:
+def maxEnvelope() -> Sequence[FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Returns
@@ -72,7 +72,7 @@ def maxEnvelop() -> Sequence[FieldOutput]:
 
 
 @abaqus_function_doc
-def minEnvelop() -> Sequence[FieldOutput]:
+def minEnvelope() -> Sequence[FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
 
     Returns
