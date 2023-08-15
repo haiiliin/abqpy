@@ -1,5 +1,3 @@
-import numpy as np
-
 import visualization
 from abaqus import *
 from abaqusConstants import *
@@ -21,5 +19,3 @@ def test_odb():
     )
 
     data = np.array(dataList[0])
-    if data.size > 0:
-        np.savetxt("data.csv", data, header="time,U3", delimiter=",", comments="")
