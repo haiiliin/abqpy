@@ -1,5 +1,3 @@
-import numpy as np
-
 import visualization
 from abaqus import *
 from abaqusConstants import *
@@ -19,7 +17,3 @@ def test_odb():
     dataList = session.xyDataListFromField(
         odb=odb, outputPosition=NODAL, variable=(("U", NODAL, ((COMPONENT, "U3"),)),), nodeSets=("INSTANCE.SET-TOP",)
     )
-
-    data = np.array(dataList[0])
-    if data.size > 0:
-        np.savetxt("data.csv", data, header="time,U3", delimiter=",", comments="")
