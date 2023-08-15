@@ -17,5 +17,3 @@ def test_odb():
     dataList = session.xyDataListFromField(
         odb=odb, outputPosition=NODAL, variable=(("U", NODAL, ((COMPONENT, "U3"),)),), nodeSets=("INSTANCE.SET-TOP",)
     )
-
-    data = np.array(dataList[0])
