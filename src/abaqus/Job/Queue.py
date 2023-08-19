@@ -1,6 +1,13 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import ALL, OFF, ON, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    LINUX,
+    OFF,
+    ON,
+    Boolean,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc
@@ -37,7 +44,7 @@ class Queue:
 
     #: A SymbolicConstant specifying the type of operating system on the remote machine. The
     #: default value is Linux.
-    remotePlatform: SymbolicConstant = "Linux"
+    remotePlatform: SymbolicConstant = LINUX
 
     #: A list of Strings specifying the files to be copied from the remote location to the
     #: local machine, or ALL. Strings specified in a list are the extensions of the job files
@@ -61,7 +68,7 @@ class Queue:
         fileCopy: Boolean = ON,
         directory: str = "",
         driver: str = "",
-        remotePlatform: SymbolicConstant = "Linux",
+        remotePlatform: SymbolicConstant = LINUX,
         filesToCopy: str = ALL,
         deleteAfterCopy: Boolean = OFF,
         description: str = "",

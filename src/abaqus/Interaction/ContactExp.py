@@ -1,4 +1,6 @@
-from typing import Optional, Union, overload
+from __future__ import annotations
+
+from typing import Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -91,16 +93,16 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None,
-        excludedPairs: Optional[RegionPairs] = None,
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
+        includedPairs: RegionPairs | None = None,
+        excludedPairs: RegionPairs | None = None,
+        contactPropertyAssignments: ContactPropertyAssignment | None = None,
+        surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
+        surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
+        surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
+        smoothingAssignments: SmoothingAssignment | None = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -180,15 +182,15 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         useAllstar: Boolean = OFF,
-        includedPairs: Optional[SymbolicConstant] = None,
-        excludedPairs: Optional[SymbolicConstant] = None,
-        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        includedPairs: SymbolicConstant | None = None,
+        excludedPairs: SymbolicConstant | None = None,
+        contactPropertyAssignments: SymbolicConstant | None = None,
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: Optional[SymbolicConstant] = None,
-        masterSlaveAssignments: Optional[SymbolicConstant] = None,
-        polarityAssignments: Optional[SymbolicConstant] = None,
+        smoothingAssignments: SymbolicConstant | None = None,
+        masterSlaveAssignments: SymbolicConstant | None = None,
+        polarityAssignments: SymbolicConstant | None = None,
     ):
         """This method creates a ContactExp object.
 

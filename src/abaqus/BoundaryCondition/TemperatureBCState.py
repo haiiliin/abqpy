@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -25,23 +25,23 @@ class TemperatureBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the temperature magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the temperature magnitude.
     #: Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    magnitudeState: Optional[SymbolicConstant] = None
+    magnitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **dof** member. Possible values
     #: are SET and UNCHANGED.
-    dofState: Optional[SymbolicConstant] = None
+    dofState: SymbolicConstant
 
     #: A tuple of Ints specifying the degrees of freedom to which the boundary condition is
     #: applied.
-    dof: Optional[int] = None
+    dof: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #:
@@ -57,7 +57,7 @@ class TemperatureBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

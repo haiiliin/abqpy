@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -48,7 +48,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
@@ -59,7 +59,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-    masterPoint: Optional[str] = None
+    masterPoint: str | None = None
 
     #: A SymbolicConstant specifying the rule for determining the master node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -71,7 +71,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: A tuple of Floats representing the coordinates of a start point of the rotational
     #: symmetry.
-    startPoint: Optional[float] = None
+    startPoint: float | None = None
 
     #: A Float specifying the geometric tolerance in the 1-direction. The default value is
     #: 0.01.
@@ -93,11 +93,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-        csys: Optional[int] = None,
-        masterPoint: Optional[str] = None,
+        csys: int | None = None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: Optional[float] = None,
+        startPoint: float | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -168,11 +168,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-        csys: Optional[int] = None,
-        masterPoint: Optional[str] = None,
+        csys: int | None = None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: Optional[float] = None,
+        startPoint: float | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,

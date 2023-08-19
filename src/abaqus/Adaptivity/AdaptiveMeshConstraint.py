@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -29,7 +29,7 @@ class AdaptiveMeshConstraint:
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -37,7 +37,7 @@ class AdaptiveMeshConstraint:
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[DatumCsys] = None
+    localCsys: DatumCsys | None = DatumCsys()
 
     @abaqus_method_doc
     def __init__(
@@ -45,7 +45,7 @@ class AdaptiveMeshConstraint:
         name: str,
         category: Literal[C.THERMAL, C.MECHANICAL],
         region: Region,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
     ):
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian
         (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit
