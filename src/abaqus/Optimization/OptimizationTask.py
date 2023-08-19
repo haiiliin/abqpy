@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 from typing import Optional
+=======
+from __future__ import annotations
+
+from typing import Union
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
 
@@ -75,13 +81,13 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         identifier: str,
-        csys: Optional[int] = None,
-        drivingRegion: Optional[str] = None,
+        csys: int | None = None,
+        drivingRegion: str | None = None,
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
         stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
-        stepOptions: Optional[StepOptionArray] = None,
+        stepOptions: StepOptionArray | None = None,
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
 
@@ -225,11 +231,61 @@ class OptimizationTask(OptimizationTaskBase):
         return optimizationConstraint
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def BeadFilter(
+        self,
+        name: str,
+        region: Region,
+        radius: float | None = None,
+        filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
+        filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
+    ):
+        """This method creates a BeadFilter object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].optimizationTasks[name].BeadFilter
+
+        .. versionadded:: 2023
+
+        The ``BeadFilter`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        region
+            A Region object specifying the region to which the geometric restriction is applied.
+        radius
+            A Float specifying the filter radius. The default value is double the average edge length of the model.
+        filterRadiusBy
+            The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute
+            radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is
+            ABSOLUTE_VALUE.
+        filterCheckRegion
+            The SymbolicConstant FILTER_REGION or a Region object specifying the filter check region. If the value is
+            FILTER_REGION, the value of the region is used as both the filter region and the filter check region.
+            The default value is FILTER_REGION.
+
+        Returns
+        -------
+        BeadFilter
+            A BeadFilter object.
+        """
+        self.geometricRestrictions[name] = geometricRestriction = BeadFilter(
+            name, region, radius, filterRadiusBy, filterCheckRegion
+        )
+        return geometricRestriction
+
+    @abaqus_method_doc
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     def BeadFixedRegion(
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
         u3: Boolean = OFF,
@@ -335,7 +391,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
     ) -> BeadPlanarSymmetry:
         """This method creates a BeadPlanarSymmetry object.
 
@@ -367,7 +423,7 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
-    def BeadPointSymmetry(self, name: str, region: Region, csys: Optional[int] = None) -> BeadPointSymmetry:
+    def BeadPointSymmetry(self, name: str, region: Region, csys: int | None = None) -> BeadPointSymmetry:
         """This method creates a BeadPointSymmetry object.
 
         .. note::
@@ -401,7 +457,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
     ) -> BeadRotationalSymmetry:
         """This method creates a BeadRotationalSymmetry object.
 
@@ -441,8 +497,8 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
-        mainPoint: Optional[str] = None,
+        csys: int | None = None,
+        mainPoint: str | None = None,
         mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -527,9 +583,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         drawAngle: float = 0,
-        mainPoint: Optional[str] = None,
+        mainPoint: str | None = None,
         mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -615,7 +671,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
@@ -779,7 +835,7 @@ class OptimizationTask(OptimizationTaskBase):
         pullDirection: tuple,
         region: Region,
         collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         drawAngle: float = 0,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -867,7 +923,7 @@ class OptimizationTask(OptimizationTaskBase):
         maxThickness: float = 0,
         minThickness: float = 0,
         sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
+        assignNodeGroupRegion: Boolean = OFF,
         nodeGroupRegion: str = "",
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
@@ -926,7 +982,7 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -1005,7 +1061,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -1075,11 +1131,11 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-        csys: Optional[int] = None,
-        mainPoint: Optional[str] = None,
+        csys: int | None = None,
+        mainPoint: str | None = None,
         mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: Optional[float] = None,
+        startPoint: float | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -1198,7 +1254,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         translation: float,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingCyclicSymmetry:
         """This method creates a SizingCyclicSymmetry object.
@@ -1294,7 +1350,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingPlanarSymmetry:
         """This method creates a SizingPlanarSymmetry object.
@@ -1335,7 +1391,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingPointSymmetry:
         """This method creates a SizingPointSymmetry object.
@@ -1375,7 +1431,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingRotationalSymmetry:
         """This method creates a SizingRotationalSymmetry object.
@@ -1420,10 +1476,10 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
-        csys: Optional[int] = None,
-        freeFormRegion: Optional[str] = None,
+        csys: int | None = None,
+        freeFormRegion: str | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: Optional[str] = None,
+        revolvedRegion: str | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -1501,9 +1557,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         drawAngle: float = 0,
-        mainPoint: Optional[str] = None,
+        mainPoint: str | None = None,
         mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -1590,7 +1646,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         translation: float,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyCyclicSymmetry:
         """This method creates a TopologyCyclicSymmetry object.
@@ -1636,10 +1692,10 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         draftAngle: float = 0,
         collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
-        pointRegion: Optional[Region] = None,
+        pointRegion: Region | None = None,
         pullDirection: tuple = (),
         technique: Literal[C.POINT, C.AUTO_TIGHT, C.SURFACE, C.STAMP, C.AUTO] = AUTO,
     ) -> TopologyDemoldControl:
@@ -1748,9 +1804,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         millingDirections: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
-        radius: Optional[float] = None,
+        radius: float | None = None,
     ) -> TopologyMillingControl:
         """This method creates a TopologyMillingControl object.
 
@@ -1801,11 +1857,11 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         pullDirection: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         draftAngle: float = 45,
         overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
-        radius: Optional[float] = None,
+        radius: float | None = None,
         technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ) -> TopologyOverhangControl:
         """This method creates a TopologyOverhangControl object.
@@ -1872,7 +1928,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyPlanarSymmetry:
         """This method creates a TopologyPlanarSymmetry object.
@@ -1915,7 +1971,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyPointSymmetry:
         """This method creates a TopologyPointSymmetry object.
@@ -1951,13 +2007,79 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def TopologyRibDesign(
+        self,
+        name: str,
+        ribDirection: VertexArray,
+        ribThickness: float,
+        ribDistance: float,
+        region: Region,
+        csys: DatumCsys | None = None,
+        ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION,
+    ):
+        """This method creates a TopologyRibDesign object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].optimizationTasks[name].TopologyRibDesign
+
+        .. versionadded:: 2022
+
+            The ``TopologyRibDesign`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the geometric restriction repository key.
+        ribDirection
+            A VertexArray object of length 2 specifying the out-of-plane growth direction of the ribs. Instead of
+            through a Vertex, each point can be specified through a tuple of coordinates.
+        ribThickness
+            A Float specifying the average thickness of the ribs.
+        ribDistance
+            A Float specifying the average distance between the rib centers. The distance must be larger than twice
+            the average element edge length.
+        region
+            A Region object specifying the region to which the geometric restriction is applied.
+            When used with a TopologyTask, there is no default value. When used with a ShapeTask,
+            the default value is MODEL.
+        csys
+            None or a DatumCsys object specifying the position of the symmetry point defined as the
+            origin of a local coordinate system. If **csys** = None, the global coordinate system is
+            used. When this member is queried, it returns an Int. The default value is None.
+        ribDesignCheckRegion
+            The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value
+            is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check
+            region. The default value is RIBDESIGN_REGION.
+
+        Returns
+        -------
+        TopologyRibDesign
+            A TopologyRibDesign object.
+        """
+        self.geometricRestrictions[name] = geometricRestriction = TopologyRibDesign(
+            name,
+            ribDirection,
+            ribThickness,
+            ribDistance,
+            region,
+            csys,
+            ribDesignCheckRegion,
+        )
+        return geometricRestriction
+
+    @abaqus_method_doc
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     def TopologyRotationalSymmetry(
         self,
         name: str,
         angle: float,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyRotationalSymmetry:
         """This method creates a TopologyRotationalSymmetry object.
@@ -2003,8 +2125,8 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: Optional[int] = None,
-        mainPoint: Optional[str] = None,
+        csys: int | None = None,
+        mainPoint: str | None = None,
         mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -65,7 +67,7 @@ class AdaptivityModel(ModelBase):
         name: str,
         category: Literal[C.THERMAL, C.MECHANICAL],
         region: Region,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
     ) -> AdaptiveMeshConstraint:
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian
         (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit
@@ -214,7 +216,7 @@ class AdaptivityModel(ModelBase):
         ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -310,7 +312,7 @@ class AdaptivityModel(ModelBase):
         specifyMaxSize: Boolean = ON,
         coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
-        elementCountLimit: Optional[int] = None,
+        elementCountLimit: int | None = None,
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
 
@@ -427,7 +429,7 @@ class AdaptivityModel(ModelBase):
         vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.

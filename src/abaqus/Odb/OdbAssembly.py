@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -244,7 +246,7 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: Optional[AnalyticSurface] = None,
+        analyticSurface: AnalyticSurface | None = None,
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 

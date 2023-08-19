@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -34,10 +34,10 @@ class HomogeneousSolidSection(SolidSection):
     #:
     #: .. versionchanged:: 2018
     #:    The default value is now 1.0 instead of None.
-    thickness: Optional[float] = None
+    thickness: float | None = None
 
     @abaqus_method_doc
-    def __init__(self, name: str, material: str, thickness: Optional[float] = None) -> None:
+    def __init__(self, name: str, material: str, thickness: float | None = None) -> None:
         """This method creates a HomogeneousSolidSection object.
 
         .. note::

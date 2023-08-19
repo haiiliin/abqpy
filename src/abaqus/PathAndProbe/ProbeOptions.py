@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -34,7 +34,7 @@ class ProbeOptions:
     #: ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity** = NODE, the only possible value is
     #: NODAL. When **probeEntity** = ELEMENT, the only possible values are INTEGRATION_POINT,
     #: ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.
-    probeOutputPosition: Optional[SymbolicConstant] = None
+    probeOutputPosition: SymbolicConstant
 
     #: A Boolean specifying whether to display the part instance information. This member is
     #: valid when **probeObject** = ODB. The default value is ON.
@@ -113,20 +113,19 @@ class ProbeOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["ProbeOptions"] = None,
+        options: "ProbeOptions" | None = None,
         probeEntity: Literal[C.NODE, C.ODB, C.ELEMENT] = ELEMENT,
-        probeOutputPosition: Optional[
-            Literal[
-                C.ELEMENT_NODAL,
-                C.ELEMENT_FACE,
-                C.ELEMENT,
-                C.NODAL,
-                C.INTEGRATION_POINT,
-                C.NODE,
-                C.ODB,
-                C.ELEMENT_CENTROID,
-            ]
-        ] = None,
+        probeOutputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.NODE,
+            C.ODB,
+            C.ELEMENT_CENTROID,
+        ]
+        | None = None,
         partInstance: Boolean = ON,
         elementID: Boolean = ON,
         elementType: Boolean = ON,

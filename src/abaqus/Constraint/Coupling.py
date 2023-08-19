@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -54,7 +56,7 @@ class Coupling(Constraint):
     #: None or a DatumCsys object specifying the initial orientation of the local coordinate
     #: system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
     #: defined in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     #: A Boolean specifying if the displacement component in the 1-direction is constrained to
     #: the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
@@ -108,7 +110,7 @@ class Coupling(Constraint):
         influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
         couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
         adjust: Boolean = OFF,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -193,7 +195,7 @@ class Coupling(Constraint):
     def setValues(
         self,
         adjust: Boolean = OFF,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
