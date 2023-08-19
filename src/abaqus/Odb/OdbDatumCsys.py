@@ -1,7 +1,9 @@
 <<<<<<< HEAD
 from typing import Optional
+
 =======
 from __future__ import annotations
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
