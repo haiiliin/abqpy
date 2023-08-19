@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -34,7 +34,7 @@ class MeanFieldHomogenization:
     @abaqus_method_doc
     def __init__(
         self,
-        angleSubdivision: Optional[int] = None,
+        angleSubdivision: int | None = None,
         formulation: Literal[C.VOIGT, C.REUSS, C.MT, C.UNSPECIFIED, C.BALANCED, C.INVERSED_MT] = MT,
         isotropization: Literal[C.EISO, C.PISO, C.ALLISO] = ALLISO,
         uniformMatrixStrain: Literal[C.YES, C.NO] = NO,
@@ -78,7 +78,7 @@ class MeanFieldHomogenization:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: Optional[float] = None,
+        isotropizationCoefficient: float | None = None,
         volumeFractionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
@@ -86,7 +86,7 @@ class MeanFieldHomogenization:
         orientationTensorType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: Literal[C.SPHERE, C.PENNY, C.PROLATE, C.OBLATE, C.CYLINDER, C.ELLIPTIC_CYLINDER] = SPHERE,
-        direction: Optional[Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED]] = None,
+        direction: Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED] | None = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):
@@ -162,7 +162,7 @@ class MeanFieldHomogenization:
         )
 
     @abaqus_method_doc
-    def MeanFieldMatrix(self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None):
+    def MeanFieldMatrix(self, name: str, material: str = "", isotropizationCoefficient: float | None = None):
         """This method creates a MeanFieldMatrix object.
 
         .. note::
@@ -197,7 +197,7 @@ class MeanFieldHomogenization:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: Optional[float] = None,
+        isotropizationCoefficient: float | None = None,
         volumeFractionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
@@ -205,7 +205,7 @@ class MeanFieldHomogenization:
         orientationTensorType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: Literal[C.SPHERE, C.PENNY, C.PROLATE, C.OBLATE, C.CYLINDER, C.ELLIPTIC_CYLINDER] = SPHERE,
-        direction: Optional[Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED]] = None,
+        direction: Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED] | None = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

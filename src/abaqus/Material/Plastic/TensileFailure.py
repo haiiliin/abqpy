@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -45,8 +45,8 @@ class TensileFailure:
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         elementDeletion: Boolean = True,
-        pressure: Optional[Literal[C.BRITTLE, C.DUCTILE]] = None,
-        shear: Optional[Literal[C.BRITTLE, C.DUCTILE]] = None,
+        pressure: Literal[C.BRITTLE, C.DUCTILE] | None = None,
+        shear: Literal[C.BRITTLE, C.DUCTILE] | None = None,
     ):
         """This method creates a tensileFailure object.
 

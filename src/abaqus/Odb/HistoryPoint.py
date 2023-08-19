@@ -1,4 +1,6 @@
-from typing import Optional
+from __future__ import annotations
+
+from typing import overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -70,13 +72,13 @@ class HistoryPoint:
     #: - WHOLE_REGION, specifying the results for an entire region of the model.
     #: - WHOLE_PART_INSTANCE, specifying the results for an entire part instance of the model.
     #: - WHOLE_MODEL, specifying the results for the entire model.
-    position: Optional[SymbolicConstant] = None
+    position: SymbolicConstant
 
     #: An OdbMeshElement object specifying the element for which the data are to be collected.
     element: OdbMeshElement = OdbMeshElement()
 
     #: A SectionPoint object.
-    sectionPoint: Optional[SectionPoint] = None
+    sectionPoint: SectionPoint
 
     #: An OdbSet object specifying the region for which the data are to be collected.
     region: OdbSet = OdbSet("set", ())
@@ -90,6 +92,7 @@ class HistoryPoint:
     #: An OdbMeshNode object specifying the node for which the data are to be collected.
     node: OdbMeshNode
 
+    @overload
     @abaqus_method_doc
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
@@ -111,14 +114,15 @@ class HistoryPoint:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
         element: OdbMeshElement,
         ipNumber: int = 0,
-        sectionPoint: Optional[SectionPoint] = None,
+        sectionPoint: SectionPoint | None = None,
         face: SymbolicConstant = FACE_UNKNOWN,
-        node: Optional[OdbMeshNode] = None,
+        node: OdbMeshNode | None = None,
     ):
         """This method creates a HistoryPoint object for an element.
 
@@ -166,6 +170,7 @@ class HistoryPoint:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
@@ -187,6 +192,7 @@ class HistoryPoint:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
@@ -208,6 +214,7 @@ class HistoryPoint:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.

@@ -1,11 +1,22 @@
-from typing import Optional, Tuple
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Sequence
 
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Mesh.MeshElement import MeshElement
+from ..Mesh.MeshFace import MeshFace
+from ..Mesh.MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import BOTH_SIDES, OFF, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+
+if TYPE_CHECKING:  # to avoid circular imports
+    from ..Mesh.MeshElementArray import MeshElementArray
+    from ..Mesh.MeshFaceArray import MeshFaceArray
+    from ..Mesh.MeshNodeArray import MeshNodeArray
+    from .FaceArray import FaceArray
 
 
 @abaqus_class_doc
@@ -41,7 +52,7 @@ class Face:
     """
 
     #: An Int specifying the index of the face in the FaceArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A Boolean specifying whether the face belongs to the reference representation of the
     #: Part or Instance.
@@ -51,17 +62,17 @@ class Face:
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face and the
     #: **X**, **Y**, and **Z** components of the normal to the face.For a face of a solid **pointOn**
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     #: A tuple of Floats specifying the name of the feature that created this face.
-    featureName: Optional[float] = None
+    featureName: float | None = None
 
     #: A tuple of Floats specifying the name of the part instance for this face (if
     #: applicable).
-    instanceName: Optional[float] = None
+    instanceName: float | None = None
 
     @abaqus_method_doc
-    def getCentroid(self):
+    def getCentroid(self) -> Sequence[float]:
         """This method returns the centroid of a face.
 
         Returns
@@ -70,10 +81,10 @@ class Face:
             A sequence of Floats specifying the **X**, **Y**, and **Z** coordinates of the centroid of
             the face.
         """
-        ...
+        return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
-    def getCurvature(self, point: Tuple[float, float, float], uParam: float, vParam: float):
+    def getCurvature(self, point: tuple[float, float, float], uParam: float, vParam: float) -> dict[str, float]:
         """This method returns information about the curvature at a location on the face.
 
         Parameters
@@ -92,17 +103,24 @@ class Face:
 
         Returns
         -------
-        dict
+        dict[str, float]
             A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxis2',
             'curvature1', 'curvature2' and 'gaussianCurvature'. Where the evaluationPoint specifies
             the location at which the curvature was evaluated. 'principalAxis1' and 'principalAxis2'
             refer to the vectors specifying the two principal axes of the face. 'curvature1' and
             'curvature2' specify the curvatures along the two principal axes.
         """
-        ...
+        return {
+            "evaluationPoint": 0.0,
+            "principalAxis1": 0.0,
+            "principalAxis2": 0.0,
+            "curvature1": 0.0,
+            "curvature2": 0.0,
+            "gaussianCurvature": 0.0,
+        }
 
     @abaqus_method_doc
-    def getElements(self):
+    def getElements(self) -> "MeshElementArray":
         """This method returns an array of element objects that are associated with the face.
 
         Returns
@@ -110,10 +128,12 @@ class Face:
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
         """
-        ...
+        from ..Mesh.MeshElementArray import MeshElementArray
+
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getElementFaces(self, faceSide: Literal[C.SIDE2, C.SIDE1, C.BOTH_SIDES] = BOTH_SIDES):
+    def getElementFaces(self, faceSide: Literal[C.SIDE2, C.SIDE1, C.BOTH_SIDES] = BOTH_SIDES) -> "MeshFaceArray":
         """This method returns an array of mesh face objects. Each mesh face object contains the element label
         and the side of the element that lies on the geometric face.
 
@@ -129,10 +149,12 @@ class Face:
         MeshFaceArray
             A MeshFaceArray object which is a sequence of MeshFace objects.
         """
-        ...
+        from ..Mesh.MeshFaceArray import MeshFaceArray
+
+        return MeshFaceArray([MeshFace()])
 
     @abaqus_method_doc
-    def getNodes(self, faceSide: Literal[C.SIDE2, C.BOTH_SIDES] = BOTH_SIDES):
+    def getNodes(self, faceSide: Literal[C.SIDE2, C.BOTH_SIDES] = BOTH_SIDES) -> "MeshNodeArray":
         """This method returns an array of mesh node objects. Each mesh node object contains the label of the
         node that lies on the geometric face.
 
@@ -150,10 +172,12 @@ class Face:
         MeshNodeArray
             A MeshNodeArray object which is a sequence of MeshNode objects.
         """
-        ...
+        from ..Mesh.MeshNodeArray import MeshNodeArray
+
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
-    def getNormal(self, point: Tuple[float, float, float] = ()):
+    def getNormal(self, point: tuple[float, float, float]) -> Sequence[float]:
         """This method returns the normal to a face at the location specified by the **pointOn** member. The
         normal at a different location on the face can be obtained by specifying the optional **point**
         argument.
@@ -176,10 +200,10 @@ class Face:
         An exception is raised if the optional argument **point** is provided but the point cannot
         be projected onto the face.
         """
-        ...
+        return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
-    def getSize(self, printResults: str = True):
+    def getSize(self, printResults: Boolean = True) -> float:
         """This method returns a Float indicating the area of the face.
 
         Parameters
@@ -192,10 +216,10 @@ class Face:
         float
             A Float.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
-    def getEdges(self):
+    def getEdges(self) -> Sequence[int]:
         """This method returns a sequence consisting of the edge ids of the edges on the face.
 
         Returns
@@ -203,10 +227,10 @@ class Face:
         Sequence[int]
         A tuple of integers.
         """
-        ...
+        return (0,)
 
     @abaqus_method_doc
-    def getVertices(self):
+    def getVertices(self) -> Sequence[int]:
         """This method returns a sequence consisting of the vertex ids of the vertices of the face.
 
         Returns
@@ -214,10 +238,10 @@ class Face:
         Sequence[int]
             A tuple of integers.
         """
-        ...
+        return (0,)
 
     @abaqus_method_doc
-    def getCells(self):
+    def getCells(self) -> Sequence[int]:
         """This method returns a sequence consisting of the cell ids of the cells to which this face belongs.
 
         Returns
@@ -225,10 +249,10 @@ class Face:
         Sequence[int]
             A tuple of integers.
         """
-        ...
+        return (0,)
 
     @abaqus_method_doc
-    def getAdjacentFaces(self):
+    def getAdjacentFaces(self) -> "FaceArray":
         """This method returns an array of face objects that share at least one edge of the face.
 
         Returns
@@ -236,10 +260,12 @@ class Face:
         FaceArray
             A FaceArray object which is a sequence of Face objects.
         """
-        ...
+        from .FaceArray import FaceArray
+
+        return FaceArray([Face()])
 
     @abaqus_method_doc
-    def getFacesByFaceAngle(self, angle: str):
+    def getFacesByFaceAngle(self, angle: str) -> "FaceArray":
         """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
         that are at an angle of less than or equal to the specified angle.
 
@@ -253,10 +279,12 @@ class Face:
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
         """
-        ...
+        from .FaceArray import FaceArray
+
+        return FaceArray([Face()])
 
     @abaqus_method_doc
-    def getFacesByCurvature(self):
+    def getFacesByCurvature(self) -> "FaceArray":
         """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
         that share the same curvature.
 
@@ -265,10 +293,12 @@ class Face:
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
         """
-        ...
+        from .FaceArray import FaceArray
+
+        return FaceArray([Face()])
 
     @abaqus_method_doc
-    def isNormalFlipped(self):
+    def isNormalFlipped(self) -> Boolean:
         """This method determines whether the normal to the face is flipped from its default direction by the
         use of the flipNormal method on a Part object.
 
@@ -277,16 +307,16 @@ class Face:
         Boolean
             A Boolean value of True if the normal is flipped and False if not.
         """
-        ...
+        return True
 
     @abaqus_method_doc
-    def getCADAttributes(self):
+    def getCADAttributes(self) -> list[str]:
         """This method returns an array of CAD attribute strings associated with the Face when the part was
         created from CAD data.
 
         Returns
         -------
-        List[str]
+        list[str]
             An array of String.
         """
-        ...
+        return [""]

@@ -1,8 +1,10 @@
+from typing import Dict
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
 @abaqus_class_doc
-class Repository(dict):
+class Repository(Dict):
     """Repositories are containers that store a particular type of object; for example, the steps repository
     contains all the steps defined in the model. An Abaqus Scripting Interface Repository maps a key to a value.
     The key is usually a String, and the value is any Python object, usually an Abaqus object. A repository is

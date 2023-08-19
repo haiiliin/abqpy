@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -48,7 +50,7 @@ class OdbSet:
 
     #: A tuple of SymbolicConstants specifying the element face. If a set spans more than one
     #: part instance, this member is a sequence of sequences for each part instance.
-    faces: Optional[SymbolicConstant] = None
+    faces: SymbolicConstant
 
     #: A repository of an OdbInstance object.
     #:

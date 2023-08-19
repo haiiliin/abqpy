@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -33,7 +33,7 @@ class ShapePointSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the symmetry point represented as the origin of a
     #: local coordinate system. If **csys** = None, the global coordinate system is used. When this
     #: member is queried, it returns an Int. The default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
@@ -63,7 +63,7 @@ class ShapePointSymmetry(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -118,7 +118,7 @@ class ShapePointSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

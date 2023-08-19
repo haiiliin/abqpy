@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -58,7 +60,7 @@ class PointFastener(Fastener):
     #: A VertexArray object of length 2 specifying the direction of projection. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
     #: default value is None.
-    directionVector: Optional[tuple] = None
+    directionVector: tuple | None = None
 
     #: A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
     targetSurfaces: RegionArray = MODEL
@@ -122,7 +124,7 @@ class PointFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
     #: the global coordinate system is used. When this member is queried, it returns an Int.
     #: The default value is None.
-    localCsys: Optional[int] = None
+    localCsys: int | None = None
 
     #: A SymbolicConstant specifying the fastener connection type. Possible values are
     #: CONNECTOR and BEAM_MPC. The default value is CONNECTOR.
@@ -136,7 +138,7 @@ class PointFastener(Fastener):
     #: point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
     #: freedom are defined in the global coordinate system. When this member is queried, it
     #: returns an Int. The default value is None.
-    connectorOrientationLocalCsys1: Optional[int] = None
+    connectorOrientationLocalCsys1: int | None = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the first point in generated connectors. Possible
@@ -156,7 +158,7 @@ class PointFastener(Fastener):
     #: connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
     #: degrees of freedom are defined in the global coordinate system. When this member is
     #: queried, it returns an Int. The default value is None.
-    connectorOrientationLocalCsys2: Optional[int] = None
+    connectorOrientationLocalCsys2: int | None = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the second point in generated connectors. Possible
@@ -178,7 +180,7 @@ class PointFastener(Fastener):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: Optional[tuple] = None,
+        directionVector: tuple | None = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
@@ -191,14 +193,14 @@ class PointFastener(Fastener):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: Optional[int] = None,
+        connectorOrientationLocalCsys1: int | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: Optional[int] = None,
+        connectorOrientationLocalCsys2: int | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -324,7 +326,7 @@ class PointFastener(Fastener):
     @abaqus_method_doc
     def setValues(
         self,
-        directionVector: Optional[tuple] = None,
+        directionVector: tuple | None = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
@@ -337,14 +339,14 @@ class PointFastener(Fastener):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: Optional[int] = None,
+        connectorOrientationLocalCsys1: int | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: Optional[int] = None,
+        connectorOrientationLocalCsys2: int | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,

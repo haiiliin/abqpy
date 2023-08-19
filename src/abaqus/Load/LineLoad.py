@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -49,9 +51,9 @@ class LineLoad(Load):
         region: Region,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
         system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
@@ -106,9 +108,9 @@ class LineLoad(Load):
         self,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
         system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
