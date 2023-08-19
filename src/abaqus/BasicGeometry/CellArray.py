@@ -1,24 +1,11 @@
 from __future__ import annotations
 
-<<<<<<< HEAD
-from typing import Dict, List, Tuple, Union, overload
-
-=======
-from typing import List, Sequence, Union, overload
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+from typing import List, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
 from .Cell import Cell
-
-<<<<<<< HEAD
-=======
-from .Face import Face
-from .FaceArray import FaceArray
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 
 @abaqus_class_doc
@@ -132,33 +119,7 @@ class CellArray(List[Cell]):
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc
-<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
-=======
-    def getExteriorFaces(self) -> FaceArray:
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns the faces
-        that are referenced by exactly one of the cells in the sequence.
-
-        Returns
-        -------
-        FaceArray
-            A FaceArray object representing the faces on the exterior of the cells.
-        """
-        return FaceArray([Face()])
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Cell:  # type: ignore
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Cell]:  # type: ignore
-        ...
-
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, list[Cell]]:  # type: ignore
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method returns the object or objects in the CellArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large number of
         objects are involved, this method is highly efficient.

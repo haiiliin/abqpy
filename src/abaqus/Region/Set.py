@@ -20,15 +20,8 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import DIFFERENCE, INTERSECTION, OVERWRITE, UNION
-
-=======
-from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION, Boolean
+from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 from .Region import Region
 
 

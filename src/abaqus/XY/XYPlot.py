@@ -100,11 +100,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-<<<<<<< HEAD
-    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
-=======
     def QuantityType(
-        label: str = "",
         type: Literal[
             C.NONE,
             C.ACCELERATION,
@@ -179,8 +175,8 @@ class XYPlot(XYPlotBase):
             C.VOLUME_FLUX_AREA,
             C.VOLUME_FRACTION,
         ] = NONE,
+        label: str = "",
     ) -> QuantityTypeType:
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method creates a QuantityType object.
 
         .. note::
@@ -274,11 +270,7 @@ class XYPlot(XYPlotBase):
         QuantityType
             A QuantityType object.
         """
-<<<<<<< HEAD
-        quantityType = QuantityType(type, label)
-=======
-        quantityType = QuantityTypeType(label, type)
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        quantityType = QuantityTypeType(type, label)
         return quantityType
 
     @staticmethod

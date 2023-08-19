@@ -78,7 +78,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: - UNIFORM.
     #:
     #: The default value is NONE.
-    interferenceType: Optional[SymbolicConstant] = None
+    interferenceType: SymbolicConstant | None = None
 
     #: A Float specifying the maximum overclosure distance allowed. This argument applies only
     #: when **interferenceType** = UNIFORM. The default value is 0.0.
@@ -120,7 +120,7 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant specifying the adjust method. Possible values are NONE, OVERCLOSED,
     #: TOLERANCE, and SET. The default value is NONE.
-    adjustMethod: Optional[SymbolicConstant] = None
+    adjustMethod: SymbolicConstant | None = None
 
     #: A Float specifying the adjust tolerance. The default value is 0.0.
     adjustTolerance: float = 0
@@ -180,7 +180,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
     #: SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
     #: default value is NONE.
-    surfaceSmoothing: Optional[SymbolicConstant] = None
+    surfaceSmoothing: SymbolicConstant | None = None
 
     #: A Region object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
@@ -219,13 +219,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
-<<<<<<< HEAD
-        bondingSet: Optional[Region] = None,
-=======
         bondingSet: Region | None = None,
-        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -385,13 +379,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
-<<<<<<< HEAD
-        bondingSet: Optional[Region] = None,
-=======
         bondingSet: Region | None = None,
-        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the step where it
         is created.

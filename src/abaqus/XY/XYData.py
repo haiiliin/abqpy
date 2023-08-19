@@ -369,48 +369,7 @@ class XYData(tuple):
         nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-<<<<<<< HEAD
-    ) -> List[XYData]:
-=======
-        operator: Literal[
-            C.ADD,
-            C.SUBTRACT,
-            C.MULTIPLY,
-            C.DIVIDE,
-            C.POWER,
-            C.MINIMUM,
-            C.MAXIMUM,
-            C.AVERAGE,
-            C.RANGE,
-            C.SRSS,
-            C.ABSOLUTE,
-            C.UNARY_NEGATIVE,
-            C.COSINE,
-            C.HYPERBOLIC_COSINE,
-            C.INVERSE_COSINE,
-            C.SINE,
-            C.HYPERBOLIC_SINE,
-            C.INVERSE_SINE,
-            C.TANGENT,
-            C.HYPERBOLIC_TANGENT,
-            C.INVERSE_TANGENT,
-            C.EXPONENTIAL,
-            C.NATURAL_LOG,
-            C.LOG,
-            C.SQUARE_ROOT,
-            C.NORMALIZE,
-            C.DEG2RAD,
-            C.RAD2DEG,
-            C.SMOOTH,
-            C.SWAP,
-            C.AVERAGE_ALL,
-            C.MAXIMUM_ENVELOPE,
-            C.MINIMUM_ENVELOPE,
-            C.RANGE_ALL,
-        ]
-        | None = None,
     ) -> list[XYData]:
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note::

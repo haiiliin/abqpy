@@ -211,16 +211,9 @@ class GeostaticStep(AnalysisStep):
         utol: float | None = None,
         timePeriod: float = 1,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
-<<<<<<< HEAD
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
-=======
-        maxNumInc: int = 100,
         initialInc: float | None = None,
         minInc: float | None = None,
         maxInc: float | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a GeostaticStep object.
 

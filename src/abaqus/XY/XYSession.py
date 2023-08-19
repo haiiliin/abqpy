@@ -8,26 +8,13 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import (  # 4879))
+from ..UtilityAndView.abaqusConstants import (
     FILLED_CIRCLE,
-    HEAD,
-    IMAGINARY,
-    NONE,
     OFF,
     ON,
     REAL,
     SOLID,
     Boolean,
-    Fix,
-    <<<<<<<,
-    =======,
-    >>>>>>>,
-    [typing],
-    annotations,
-    d7be4b47,
-    mypy,
-    typing,
-    wrong,
 )
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .AreaStyle import AreaStyle
@@ -196,14 +183,9 @@ class XYSession(XYSessionBase):
             C.VOLUME_FLUX,
             C.VOLUME_FLUX_AREA,
             C.VOLUME_FRACTION,
-<<<<<<< HEAD
         ],
         label: str = "",
-    ) -> QuantityType:
-=======
-        ] = NONE,
     ) -> QuantityTypeType:
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method creates a QuantityType object.
 
         .. note::
@@ -297,11 +279,7 @@ class XYSession(XYSessionBase):
         QuantityType
             A QuantityType object.
         """
-<<<<<<< HEAD
-        quantityType = QuantityType(type, label)
-=======
-        quantityType = QuantityTypeType(label, type)
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        quantityType = QuantityTypeType(type, label)
         return quantityType
 
     @staticmethod

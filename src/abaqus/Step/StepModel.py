@@ -746,7 +746,7 @@ class StepModel(ModelBase):
         termsIncrement: int = 5,
         deltmx: float = 0,
         cetol: float = 0,
-        timePoints: Optional[str] = None,
+        timePoints: str | None = None,
         fatigue: Boolean = OFF,
         continueAnalysis: Boolean = OFF,
         minCycleInc: int = 100,
@@ -1208,16 +1208,9 @@ class StepModel(ModelBase):
         utol: float | None = None,
         timePeriod: float = 1,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
-<<<<<<< HEAD
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
-=======
-        maxNumInc: int = 100,
         initialInc: float | None = None,
         minInc: float | None = None,
         maxInc: float | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> GeostaticStep:
         """This method creates a GeostaticStep object.
 

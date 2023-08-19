@@ -1001,11 +1001,7 @@ class SectionModel(ModelBase):
 
     @abaqus_method_doc
     def HomogeneousSolidSection(
-<<<<<<< HEAD
-        self, name: str, material: str, thickness: Optional[float] = None
-=======
-        self, name: str, material: str, thickness: float | None = 1.0
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        self, name: str, material: str, thickness: float | None = None
     ) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 
