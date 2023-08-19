@@ -91,16 +91,6 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: Optional[RegionPairs] = None,
-        excludedPairs: Optional[RegionPairs] = None,
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
         includedPairs: RegionPairs | None = None,
         excludedPairs: RegionPairs | None = None,
         contactPropertyAssignments: ContactPropertyAssignment | None = None,
@@ -108,10 +98,7 @@ class ContactExp(Interaction):
         surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         smoothingAssignments: SmoothingAssignment | None = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -183,15 +170,9 @@ class ContactExp(Interaction):
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
-<<<<<<< HEAD
-        smoothingAssignments: Optional[SymbolicConstant] = None,
-        masterSlaveAssignments: Optional[SymbolicConstant] = None,
-        polarityAssignments: Optional[SymbolicConstant] = None,
-=======
         smoothingAssignments: SymbolicConstant | None = None,
-        mainSecondaryAssignments: SymbolicConstant | None = None,
+        masterSlaveAssignments: SymbolicConstant | None = None,
         polarityAssignments: SymbolicConstant | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactExp object.
 

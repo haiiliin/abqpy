@@ -557,16 +557,9 @@ class OptimizationTaskModel(ModelBase):
         stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
         stiffnessMassDamping: Union[Literal[C.AVERAGE_EDGE_LENGTH], float] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
-<<<<<<< HEAD
-        structuralMassDamping: Optional[float] = None,
-        viscousMassDamping: Optional[float] = None,
-        viscousStiffnessDamping: Optional[float] = None,
-=======
         structuralMassDamping: float | None = None,
         viscousMassDamping: float | None = None,
         viscousStiffnessDamping: float | None = None,
-        groupOperator: Boolean = OFF,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> TopologyTask:
         """This method creates a TopologyTask object.
 

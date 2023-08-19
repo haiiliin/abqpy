@@ -65,14 +65,7 @@ class ExpInitialization(ContactInitialization):
     #: included in the initial clearance specification. This argument is not valid when
     #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
     #: specified. The default value is None.
-<<<<<<< HEAD
-    slaveNodesetName: Optional[str] = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute ``slaveNodesetName`` was renamed to ``secondaryNodesetName``.
-    secondaryNodesetName: str | None = None
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+    slaveNodesetName: str | None = None
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
     #: interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -89,11 +82,7 @@ class ExpInitialization(ContactInitialization):
         openingTolerance: float | None = None,
         overclosureTolerance: float | None = None,
         adjustNodalCoords: Boolean = True,
-<<<<<<< HEAD
-        slaveNodesetName: Optional[str] = None,
-=======
-        secondaryNodesetName: str | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        slaveNodesetName: str | None = None,
         stepFraction: float = 1,
     ):
         """This method creates an ExpInitialization object.
@@ -160,11 +149,7 @@ class ExpInitialization(ContactInitialization):
         openingTolerance: float | None = None,
         overclosureTolerance: float | None = None,
         adjustNodalCoords: Boolean = True,
-<<<<<<< HEAD
-        slaveNodesetName: Optional[str] = None,
-=======
-        secondaryNodesetName: str | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        slaveNodesetName: str | None = None,
         stepFraction: float = 1,
     ):
         """This method modifies the ExpInitialization object.
