@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -307,7 +309,7 @@ class Material(MaterialBase):
     def ClayPlasticity(
         self,
         table: tuple,
-        intercept: Optional[float] = None,
+        intercept: float | None = None,
         hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1150,7 +1152,7 @@ class Material(MaterialBase):
     def GapFlow(
         self,
         table: tuple,
-        kmax: Optional[float] = None,
+        kmax: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: Literal[C.NEWTONIAN, C.POWER_LAW] = NEWTONIAN,
@@ -1226,7 +1228,7 @@ class Material(MaterialBase):
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: Optional[float] = None,
+        tensileStiffnessFactor: float | None = None,
         type: Literal[C.ELASTIC_PLASTIC, C.DAMAGE] = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
@@ -1515,7 +1517,7 @@ class Material(MaterialBase):
     def Hyperfoam(
         self,
         testData: Boolean = OFF,
-        poisson: Optional[float] = None,
+        poisson: float | None = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: Literal[C.LONG_TERM, C.INSTANTANEOUS] = LONG_TERM,
@@ -1674,10 +1676,10 @@ class Material(MaterialBase):
     def LowDensityFoam(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: Optional[float] = None,
+        maxAllowablePrincipalStress: float | None = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: Literal[C.VOLUMETRIC, C.PRINCIPAL] = VOLUMETRIC,
-        mu0: Optional[float] = None,
+        mu0: float | None = None,
         mu1: float = 0,
         alpha: float = 2,
     ) -> LowDensityFoam:
@@ -1803,7 +1805,7 @@ class Material(MaterialBase):
     def MohrCoulombPlasticity(
         self,
         table: tuple,
-        deviatoricEccentricity: Optional[float] = None,
+        deviatoricEccentricity: float | None = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2140,7 +2142,7 @@ class Material(MaterialBase):
     def PorousMetalPlasticity(
         self,
         table: tuple,
-        relativeDensity: Optional[float] = None,
+        relativeDensity: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> PorousMetalPlasticity:

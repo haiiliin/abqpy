@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -43,7 +43,7 @@ class AnalyticalField(Field):
     #: None or a DatumCsys object specifying the local coordinate system of the field. If
     #: **localCsys** = None, the field is defined in the global coordinate system. The default
     #: value is None.
-    localCsys: DatumCsys = DatumCsys()
+    localCsys: DatumCsys | None = DatumCsys()
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
@@ -106,22 +106,21 @@ class AnalyticalField(Field):
         complexAngle: float = 0,
         transformationType: SymbolicConstant = DEFAULT,
         sectionPoint: str = "",
-        refinementType: Optional[Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT]] = None,
+        refinementType: Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT] | None = None,
         refinementLabel: str = "",
-        displayOutputPosition: Optional[
-            Literal[
-                C.ELEMENT_NODAL,
-                C.ELEMENT_FACE,
-                C.WHOLE_ELEMENT,
-                C.NODAL,
-                C.INTEGRATION_POINT,
-                C.ELEMENT_CENTROID,
-                C.WHOLE_MODEL,
-                C.GENERAL_PARTICLE,
-                C.WHOLE_PART_INSTANCE,
-                C.WHOLE_REGION,
-            ]
-        ] = None,
+        displayOutputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ]
+        | None = None,
     ) -> OdbMeshRegionData:
         """This method creates an OdbMeshRegionData object.
 

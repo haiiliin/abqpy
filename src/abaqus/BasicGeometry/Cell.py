@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -29,7 +29,7 @@ class Cell:
     """
 
     #: An Int specifying the index of the cell in the CellArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A Boolean specifying whether the cell belongs to the reference representation of the
     #: Part or Instance.
@@ -37,14 +37,14 @@ class Cell:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the cell.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     #: A tuple of Floats specifying the name of the feature that created this cell.
-    featureName: Optional[float] = None
+    featureName: float | None = None
 
     #: A tuple of Floats specifying the name of the part instance for this cell (if
     #: applicable).
-    instanceName: Optional[float] = None
+    instanceName: float | None = None
 
     @abaqus_method_doc
     def getSize(self, printResults: Boolean = True):

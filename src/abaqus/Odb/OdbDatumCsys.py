@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -28,20 +28,20 @@ class OdbDatumCsys:
 
     #: A SymbolicConstant specifying the type of coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: Optional[SymbolicConstant] = None
+    coordSysType: SymbolicConstant
 
     #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
     #: system.
-    origin: Optional[float] = None
+    origin: float | None = None
 
     #: A tuple of Floats specifying a point on the **X** axis.
-    xAxis: Optional[float] = None
+    xAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Y** axis.
-    yAxis: Optional[float] = None
+    yAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Z** axis.
-    zAxis: Optional[float] = None
+    zAxis: float | None = None
 
     @abaqus_method_doc
     def DatumCsysByThreePoints(

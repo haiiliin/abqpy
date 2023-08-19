@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -194,9 +196,9 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         instanceList: PartInstanceArray,
         useFields: Boolean = OFF,
-        assignmentList: tuple = (),
-        fieldList: tuple = (),
-        colorList: tuple = (),
+        assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = (),
+        fieldList: Sequence[tuple[Region, tuple[str, ...]]] = (),
+        colorList: Sequence[tuple[int, int, int]] = (),
     ) -> MaterialAssignment:
         """This method creates a MaterialAssignment predefined field object.
 
@@ -248,17 +250,17 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        porePressure1: float = ...,
-        porePressure2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        porePressure1: float = 0,
+        porePressure2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        pressure2Field: str = ...,
+        pressure2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: Boolean = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
+        interpolate: Boolean = OFF,
     ) -> PorePressure:
         """This method creates a PorePressure predefined field object.
 
@@ -347,10 +349,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
-        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        beginStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        beginIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
+        endStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        endIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
@@ -548,7 +550,7 @@ class PredefinedFieldModel(ModelBase):
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
         field: str = "",
-        value: float = ...,
+        value: float = 0,
     ) -> Saturation:
         """This method creates a Saturation predefined field object.
 
@@ -593,12 +595,12 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
-        sigma11: float = ...,
-        sigma22: float = ...,
-        sigma33: float = ...,
-        sigma12: float = ...,
-        sigma13: float = ...,
-        sigma23: float = ...,
+        sigma11: float = 0,
+        sigma22: float = 0,
+        sigma33: float = 0,
+        sigma12: float = 0,
+        sigma13: float = 0,
+        sigma23: float = 0,
     ) -> Stress:
         """This method creates a Stress predefined field object.
 
@@ -653,17 +655,17 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        voidsRatio1: float = ...,
-        voidsRatio2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        voidsRatio1: float = 0,
+        voidsRatio2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         ratio2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        ratio2Field: str = ...,
+        ratio2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: Boolean = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
+        interpolate: Boolean = OFF,
     ) -> VoidsRatio:
         """This method creates a PorePressure predefined field object.
 

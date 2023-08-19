@@ -1,4 +1,4 @@
-from typing import Tuple
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -84,12 +84,12 @@ class Behavior:
         biWeight: str = "",
         uMullinsReload: str = "",
         uMullinsUnload: str = "",
-        uPYieldPoint: Tuple[float, float, float] = (),
+        uPYieldPoint: tuple[float, float, float] = (0.0, 0.0, 0.0),
         uPermSet: str = "",
         uPrimary: str = "",
         bMullinsReload: str = "",
         bMullinsUnload: str = "",
-        bPYieldPoint: Tuple[float, float, float] = (),
+        bPYieldPoint: tuple[float, float, float] = (0.0, 0.0, 0.0),
         bPermSet: str = "",
         bPrimary: str = "",
     ):
@@ -285,7 +285,7 @@ class Behavior:
 
         Returns
         -------
-        Sequence[Tuple[float]]
+        Sequence[tuple[float]]
             A sequence of coordinates of the Plastic points..
         """
         ...

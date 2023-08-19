@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -43,9 +43,9 @@ class Message:
     #: - STATUS
     #: - STEP
     #: - WARNING
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A Dictionary object specifying the data returned by the analysis product. The value
     #: depends on the message returned. For a list of the possible entries, see the members of
     #: DataObject.
-    data: Optional[dict] = None
+    data: dict | None = None

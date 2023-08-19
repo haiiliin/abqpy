@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abaqus.DisplayGroup.Leaf import Leaf
 from abaqus.DisplayGroup.LeafFromDisplayGroup import LeafFromDisplayGroup
 from abaqus.DisplayGroup.LeafFromElementLabels import LeafFromElementLabels
