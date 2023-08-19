@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -194,9 +196,9 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         instanceList: PartInstanceArray,
         useFields: Boolean = OFF,
-        assignmentList: tuple = (),
-        fieldList: tuple = (),
-        colorList: tuple = (),
+        assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = (),
+        fieldList: Sequence[tuple[Region, tuple[str, ...]]] = (),
+        colorList: Sequence[tuple[int, int, int]] = (),
     ) -> MaterialAssignment:
         """This method creates a MaterialAssignment predefined field object.
 
@@ -248,17 +250,17 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        porePressure1: float = ...,
-        porePressure2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        porePressure1: float = 0,
+        porePressure2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        pressure2Field: str = ...,
+        pressure2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: Boolean = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
+        interpolate: Boolean = OFF,
     ) -> PorePressure:
         """This method creates a PorePressure predefined field object.
 
@@ -347,10 +349,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
-        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        beginStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        beginIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
+        endStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        endIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
@@ -548,7 +550,7 @@ class PredefinedFieldModel(ModelBase):
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
         field: str = "",
-        value: float = ...,
+        value: float = 0,
     ) -> Saturation:
         """This method creates a Saturation predefined field object.
 
@@ -593,12 +595,12 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
-        sigma11: float = ...,
-        sigma22: float = ...,
-        sigma33: float = ...,
-        sigma12: float = ...,
-        sigma13: float = ...,
-        sigma23: float = ...,
+        sigma11: float = 0,
+        sigma22: float = 0,
+        sigma33: float = 0,
+        sigma12: float = 0,
+        sigma13: float = 0,
+        sigma23: float = 0,
     ) -> Stress:
         """This method creates a Stress predefined field object.
 
@@ -651,22 +653,171 @@ class PredefinedFieldModel(ModelBase):
         return predefinedField
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def Field(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        outputVariable: str = "",
+        fieldVariableNum: int | None = None,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
+        field: str = "",
+        amplitude: str = UNSET,
+        fileName: str = "",
+        beginStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        beginIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
+        endStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP] | None = None,
+        endIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START] | None = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
+        magnitudes: str = "",
+    ):
+        """This method creates a Field object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].Field
+
+        .. versionadded:: 2018
+            The ``Field`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the predefined field is created.
+        region
+            A Region object specifying the region to which the predefined field is applied. *Region*
+            is ignored if the predefined field has a **distributionType** member available, and
+            **distributionType** = FROM_FILE.
+        outputVariable
+            A String specifying the scalar nodal output variable that will be read from an output
+            database and used to initialize a specified predefined field. This argument is a
+            required argument if **distributionType** = FROM_FILE or
+            **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        fieldVariableNum
+            An Int specifying the field variable number.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+            are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
+            DISCRETE_FIELD. The default value is UNIFORM.
+        crossSectionDistribution
+            A SymbolicConstant specifying how the predefined field is distributed over the
+            cross-section of the region. Possible values are
+
+            - CONSTANT_THROUGH_THICKNESS
+            - GRADIENTS_THROUGH_SHELL_CS
+            - GRADIENTS_THROUGH_BEAM_CS
+            - POINTS_THROUGH_SECTION
+
+            The default value is CONSTANT_THROUGH_THICKNESS.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
+            empty string.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the predefined field has no amplitude reference. The default
+            value is UNSET.
+
+            .. note::
+                **amplitude** should be given only if it is valid for the specified step.
+        fileName
+            A String specifying the name of the file from which the Field values are to be read when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        beginStep
+            An Int specifying the first step from which Field values are to be read or the
+            SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        beginIncrement
+            An Int specifying the first increment of the step set in **beginStep** or the
+            SymbolicConstants STEP_START or STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endStep
+            An Int specifying the last step from which Field values are to be read or the
+            SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endIncrement
+            An Int specifying the last increment of the step set in **endStep** or the
+            SymbolicConstants STEP_START and STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        interpolate
+            A SymbolicConstant specifying whether to interpolate a field read from an output
+            database or results file. Possible values are OFF, ON, or MIDSIDE_ONLY. The default
+            value is OFF.
+        magnitudes
+            A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
+            FIELD. The value of the **magnitudes** argument is a function of the
+            **crossSectionDistribution** argument, as shown in the following list:
+
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
+              specifying the Field.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
+              of Doubles specifying the mean value and the gradient in the thickness direction.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
+              Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
+              the N2 direction.
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
+              Doubles specifying the Field at each point.
+
+        Returns
+        -------
+            A Field object.
+        """
+        self.predefinedFields[name] = predefinedField = Field(
+            name,
+            createStepName,
+            region,
+            outputVariable,
+            fieldVariableNum,
+            distributionType,
+            crossSectionDistribution,
+            field,
+            amplitude,
+            fileName,
+            beginStep,
+            beginIncrement,
+            endStep,
+            endIncrement,
+            interpolate,
+            magnitudes,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     def VoidsRatio(
         self,
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        voidsRatio1: float = ...,
-        voidsRatio2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        voidsRatio1: float = 0,
+        voidsRatio2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         ratio2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        ratio2Field: str = ...,
+        ratio2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: Boolean = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
+        interpolate: Boolean = OFF,
     ) -> VoidsRatio:
         """This method creates a PorePressure predefined field object.
 

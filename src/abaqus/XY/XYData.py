@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -46,7 +46,7 @@ class XYData(tuple):
 
     #: A SymbolicConstant specifying the source type of the XYData object. Possible values are
     #: FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.
-    sourceType: Optional[SymbolicConstant] = None
+    sourceType: SymbolicConstant
 
     #: A String specifying the source file name of the XYData object.
     fileName: str = ""
@@ -89,11 +89,11 @@ class XYData(tuple):
 
     #: A QuantityType object specifying the QuantityType object associated to the
     #: X -axis1- values.
-    axis1QuantityType: Optional[QuantityType] = None
+    axis1QuantityType: QuantityType | None = None
 
     #: A QuantityType object specifying the QuantityType object associated to
     #: the Y -axis2- values.
-    axis2QuantityType: Optional[QuantityType] = None
+    axis2QuantityType: QuantityType | None = None
 
     @overload
     @abaqus_method_doc
@@ -107,8 +107,8 @@ class XYData(tuple):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityType | None = None,
+        axis2QuantityType: QuantityType | None = None,
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -196,11 +196,11 @@ class XYData(tuple):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityType | None = None,
+        axis2QuantityType: QuantityType | None = None,
         xField: int = 1,
         yField: int = 2,
-        skipFrequency: Optional[int] = None,
+        skipFrequency: int | None = None,
     ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
@@ -262,7 +262,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        ...
+        return XYData()
 
     @abaqus_method_doc
     def XYDataFromHistory(
@@ -275,10 +275,10 @@ class XYData(tuple):
         contentDescription: str = "",
         positionDescription: str = "",
         legendLabel: str = "",
-        skipFrequency: Optional[int] = None,
+        skipFrequency: int | None = None,
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-        stepTuple: Optional[int] = None,
+        stepTuple: int | None = None,
     ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
@@ -338,15 +338,15 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        ...
+        return XYData()
 
     @abaqus_method_doc
     def xyDataListFromField(
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -360,16 +360,57 @@ class XYData(tuple):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
+                tuple[tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
             ]
         ],
-        elementSets: Union[Sequence[str], str] = ...,
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        nodeSets: Union[str, Sequence[str]] = ...,
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+        elementSets: Union[Sequence[str], str] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
+        nodeSets: Union[str, Sequence[str]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
+<<<<<<< HEAD
     ) -> List[XYData]:
+=======
+        operator: Literal[
+            C.ADD,
+            C.SUBTRACT,
+            C.MULTIPLY,
+            C.DIVIDE,
+            C.POWER,
+            C.MINIMUM,
+            C.MAXIMUM,
+            C.AVERAGE,
+            C.RANGE,
+            C.SRSS,
+            C.ABSOLUTE,
+            C.UNARY_NEGATIVE,
+            C.COSINE,
+            C.HYPERBOLIC_COSINE,
+            C.INVERSE_COSINE,
+            C.SINE,
+            C.HYPERBOLIC_SINE,
+            C.INVERSE_SINE,
+            C.TANGENT,
+            C.HYPERBOLIC_TANGENT,
+            C.INVERSE_TANGENT,
+            C.EXPONENTIAL,
+            C.NATURAL_LOG,
+            C.LOG,
+            C.SQUARE_ROOT,
+            C.NORMALIZE,
+            C.DEG2RAD,
+            C.RAD2DEG,
+            C.SMOOTH,
+            C.SWAP,
+            C.AVERAGE_ALL,
+            C.MAXIMUM_ENVELOPE,
+            C.MINIMUM_ENVELOPE,
+            C.RANGE_ALL,
+        ]
+        | None = None,
+    ) -> list[XYData]:
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note::
@@ -453,7 +494,7 @@ class XYData(tuple):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -461,7 +502,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        ...
+        return [XYData()]
 
     @abaqus_method_doc
     def XYDataFromFreeBody(
@@ -474,7 +515,7 @@ class XYData(tuple):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ) -> List[XYData]:
+    ) -> list[XYData]:
         """This method creates a list of XYData objects by computing free body data from an Odb object.
 
         .. note::
@@ -509,7 +550,7 @@ class XYData(tuple):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -517,15 +558,15 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        ...
+        return [XYData()]
 
     @abaqus_method_doc
     def XYDataFromShellThickness(
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -539,18 +580,18 @@ class XYData(tuple):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
-                Dict[str, str],
+                tuple[Literal[C.INVARIANT, C.COMPONENT], str],
+                dict[str, str],
             ],
             ...,
         ],
-        elementSets: Union[str, Sequence[str]] = ...,
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        nodeSets: Union[str, Sequence[str]] = ...,
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+        elementSets: Union[str, Sequence[str]] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
+        nodeSets: Union[str, Sequence[str]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-    ) -> List[XYData]:
+    ) -> list[XYData]:
         """This method creates a list of XYData objects by reading through the thickness field data from an Odb
         object.
 
@@ -628,7 +669,7 @@ class XYData(tuple):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -636,7 +677,7 @@ class XYData(tuple):
         InvalidNameError
         RangeError
         """
-        ...
+        return [XYData()]
 
     @abaqus_method_doc
     def XYDataFromPath(
@@ -661,27 +702,26 @@ class XYData(tuple):
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,
-        step: Optional[int] = None,
-        frame: Optional[int] = None,
-        variable: Optional[
-            Literal[
-                C.ELEMENT_FACE,
-                C.ELEMENT_NODAL,
-                C.S22,
-                C.WHOLE_ELEMENT,
-                C.NODAL,
-                C.INTEGRATION_POINT,
-                C.ELEMENT_CENTROID,
-                C.INVARIANT,
-                C.S11,
-                C.WHOLE_MODEL,
-                C.GENERAL_PARTICLE,
-                C.STEEL,
-                C.SNEG,
-                C.WHOLE_PART_INSTANCE,
-            ]
-        ] = None,
-        deformedMag: Optional[float] = None,
+        step: int | None = None,
+        frame: int | None = None,
+        variable: Literal[
+            C.ELEMENT_FACE,
+            C.ELEMENT_NODAL,
+            C.S22,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.INVARIANT,
+            C.S11,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.STEEL,
+            C.SNEG,
+            C.WHOLE_PART_INSTANCE,
+        ]
+        | None = None,
+        deformedMag: float | None = None,
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
@@ -798,7 +838,7 @@ class XYData(tuple):
         ErrorDeformedMagTupleInPathExtract: Deformed magnification tuple must contain X, Y and Z values
             If **deformedMag** does not contain three Floats.
         """
-        ...
+        return XYData()
 
     @abaqus_method_doc
     def save(self):
@@ -817,8 +857,8 @@ class XYData(tuple):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityType | None = None,
+        axis2QuantityType: QuantityType | None = None,
     ):
         """This method modifies the XYData object.
 

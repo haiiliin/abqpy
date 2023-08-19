@@ -1,4 +1,4 @@
-from typing import Tuple
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -16,7 +16,7 @@ class CanvasSession(SessionBase):
     def Viewport(
         self,
         name: str,
-        origin: Tuple[float, float] = (0.0, 0.0),
+        origin: tuple[float, float] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,
