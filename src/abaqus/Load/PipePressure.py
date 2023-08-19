@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -34,7 +34,7 @@ class PipePressure(Load):
     side: SymbolicConstant = INTERNAL
 
     #: A Float specifying the effective inner or outer diameter.
-    diameter: Optional[float] = None
+    diameter: float | None = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -140,9 +140,9 @@ class PipePressure(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Optional[float] = None,
-        hZero: Optional[float] = None,
-        hReference: Optional[float] = None,
+        magnitude: float | None = None,
+        hZero: float | None = None,
+        hReference: float | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing PipePressure object in the specified step.

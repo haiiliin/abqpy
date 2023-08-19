@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -96,15 +98,15 @@ class ViewCutOptions(_CopyOptionsBase):
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model below the cut. The default value is None.
-    belowOptions: Optional[str] = None
+    belowOptions: str | None = None
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model on the cut. The default value is None.
-    onOptions: Optional[str] = None
+    onOptions: str | None = None
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model above the cut. The default value is None.
-    aboveOptions: Optional[str] = None
+    aboveOptions: str | None = None
 
     #: The SymbolicConstant GLOBAL or a String specifying the coordinate system name for the
     #: free body cut's component resolution. The default value is GLOBAL.
@@ -116,22 +118,22 @@ class ViewCutOptions(_CopyOptionsBase):
 
     #: A tuple of three Floats specifying the summation point for the free body cut. The
     #: default value is (0, 0, 0).
-    summationPoint: Optional[float] = None
+    summationPoint: float | None = None
 
     #: A tuple of three Floats specifying the Y axis for free body component resolution. The
     #: default value is (0, 1, 0).
-    yAxis: Optional[float] = None
+    yAxis: float | None = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["ViewCutOptions"] = None,
+        options: "ViewCutOptions" | None = None,
         *,
-        belowOptions: Optional[str] = None,
+        belowOptions: str | None = None,
         useBelowOptions: Boolean = OFF,
-        onOptions: Optional[str] = None,
+        onOptions: str | None = None,
         useOnOptions: Boolean = OFF,
-        aboveOptions: Optional[str] = None,
+        aboveOptions: str | None = None,
         useAboveOptions: Boolean = OFF,
         freeBodyCutThru: Literal[C.WHOLE_MODEL, C.CURRENT_DISPLAY_GROUP] = CURRENT_DISPLAY_GROUP,
         freeBodyStepThru: Literal[C.PREDEFINED_PATH, C.ACTIVE_CUT_RANGE] = ACTIVE_CUT_RANGE,

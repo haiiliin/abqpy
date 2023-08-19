@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -30,7 +30,7 @@ class FixedRegion(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -53,7 +53,7 @@ class FixedRegion(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
@@ -101,7 +101,7 @@ class FixedRegion(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = OFF,
         u2: Boolean = OFF,

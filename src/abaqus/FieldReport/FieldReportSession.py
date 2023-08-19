@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -48,10 +48,9 @@ class FieldReportSession(SessionBase):
             C.GENERAL_PARTICLE,
             C.WHOLE_PART_INSTANCE,
         ],
-        numericForm: Optional[
-            Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
-        ] = None,
-        complexAngle: Optional[float] = None,
+        numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
+        | None = None,
+        complexAngle: float | None = None,
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 
@@ -123,10 +122,10 @@ class FieldReportSession(SessionBase):
         self,
         fileName: str,
         append: Boolean,
-        step: Optional[int] = None,
-        frame: Optional[int] = None,
+        step: int | None = None,
+        frame: int | None = None,
         stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
-        odb: Optional[Odb] = None,
+        odb: Odb | None = None,
     ):
         """This method writes a FreeBody object to a user-defined ASCII file.
 

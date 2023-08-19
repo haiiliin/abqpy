@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -9,23 +9,20 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import (
-    COMPLEX_VAL_AT_ANGLE,
     FILLED_CIRCLE,
-    IMAGINARY,
     OFF,
     ON,
     REAL,
     SOLID,
     Boolean,
-    SymbolicConstant,
 )
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from .QuantityType import QuantityType
+from .QuantityType import QuantityType as QuantityTypeType
 from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
-from .XYData import XYData
+from .XYData import XYData as XYDataType
 from .XYSessionBase import XYSessionBase
 
 
@@ -33,7 +30,7 @@ from .XYSessionBase import XYSessionBase
 class XYSession(XYSessionBase):
     @staticmethod
     @abaqus_method_doc
-    def AreaStyle(color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID) -> AreaStyle:
+    def AreaStyle(color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID) -> AreaStyle:
         """This method creates an AreaStyle.
 
         .. note::
@@ -188,7 +185,7 @@ class XYSession(XYSessionBase):
             C.VOLUME_FRACTION,
         ],
         label: str = "",
-    ) -> QuantityType:
+    ) -> QuantityTypeType:
         """This method creates a QuantityType object.
 
         .. note::
@@ -282,7 +279,7 @@ class XYSession(XYSessionBase):
         QuantityType
             A QuantityType object.
         """
-        quantityType = QuantityType(type, label)
+        quantityType = QuantityTypeType(type, label)
         return quantityType
 
     @staticmethod
@@ -404,9 +401,9 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = ...,
-        axis2QuantityType: QuantityType = ...,
-    ) -> XYData:
+        axis1QuantityType: QuantityTypeType = QuantityTypeType(),
+        axis2QuantityType: QuantityTypeType = QuantityTypeType(),
+    ) -> XYDataType:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
         .. note::
@@ -459,7 +456,7 @@ class XYSession(XYSessionBase):
     @staticmethod
     @overload
     @abaqus_method_doc
-    def XYData(objectToCopy: XYData) -> XYData:
+    def XYData(objectToCopy: XYDataType) -> XYDataType:
         """This method creates an XYData object by copying an existing XYData object.
 
         .. note::
@@ -483,8 +480,8 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
-    def XYData(*args, **kwargs) -> XYData:
-        return XYData(())
+    def XYData(*args, **kwargs) -> XYDataType:
+        return XYDataType(())
 
     def XYDataFromFile(
         self,
@@ -496,12 +493,12 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = ...,
-        axis2QuantityType: QuantityType = ...,
+        axis1QuantityType: QuantityTypeType = QuantityTypeType(),
+        axis2QuantityType: QuantityTypeType = QuantityTypeType(),
         xField: int = 1,
         yField: int = 2,
         skipFrequency: int = 0,
-    ) -> XYData:
+    ) -> XYDataType:
         """This method creates an XYData object from data in an ASCII file.
 
         .. note::
@@ -562,7 +559,7 @@ class XYSession(XYSessionBase):
         InvalidNameError
         RangeError
         """
-        self.xyDataObjects[name] = xyData = XYData(())
+        self.xyDataObjects[name] = xyData = XYDataType(())
         return xyData
 
     @abaqus_method_doc
@@ -579,8 +576,8 @@ class XYSession(XYSessionBase):
         skipFrequency: int = 0,
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-        stepTuple: Sequence[int] = ...,
-    ) -> XYData:
+        stepTuple: Sequence[int] = (),
+    ) -> XYDataType:
         """This method creates an XYData object by reading history data from an Odb object.
 
         .. note::
@@ -639,7 +636,7 @@ class XYSession(XYSessionBase):
         InvalidNameError
         RangeError
         """
-        self.xyDataObjects[name] = xyData = XYData(())
+        self.xyDataObjects[name] = xyData = XYDataType(())
         return xyData
 
     @abaqus_method_doc
@@ -647,8 +644,8 @@ class XYSession(XYSessionBase):
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -662,13 +659,13 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
+                tuple[tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
             ]
         ],
-        elementSets: Union[Sequence[str], str] = ...,
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        nodeSets: Union[str, Sequence[str]] = ...,
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+        elementSets: Union[Sequence[str], str] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
+        nodeSets: Union[str, Sequence[str]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         operator: Literal[
@@ -706,8 +703,9 @@ class XYSession(XYSessionBase):
             C.MAXIMUM_ENVELOPE,
             C.MINIMUM_ENVELOPE,
             C.RANGE_ALL,
-        ] = ...,
-    ) -> List[XYData]:
+        ]
+        | None = None,
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note::
@@ -800,7 +798,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -808,7 +806,7 @@ class XYSession(XYSessionBase):
         InvalidNameError
         RangeError
         """
-        self.xyDataObjects["name"] = xyData = XYData(())
+        self.xyDataObjects["name"] = xyData = XYDataType(())
         return [xyData]
 
     @abaqus_method_doc
@@ -822,7 +820,7 @@ class XYSession(XYSessionBase):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ) -> List[XYData]:
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by computing free body data from an Odb object.
 
         .. note::
@@ -857,7 +855,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -865,7 +863,7 @@ class XYSession(XYSessionBase):
         InvalidNameError
         RangeError
         """
-        self.xyDataObjects["name"] = xyData = XYData(())
+        self.xyDataObjects["name"] = xyData = XYDataType(())
         return [xyData]
 
     @abaqus_method_doc
@@ -873,8 +871,8 @@ class XYSession(XYSessionBase):
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -888,18 +886,18 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
-                Dict[str, str],
+                tuple[Literal[C.INVARIANT, C.COMPONENT], str],
+                dict[str, str],
             ],
             ...,
         ],
-        elementSets: Union[str, Sequence[str]] = ...,
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        elementSets: Union[str, Sequence[str]] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
         nodeSets: Union[str, Sequence[str]] = (),
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-    ) -> List[XYData]:
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by reading through the thickness field data from an Odb
         object.
 
@@ -983,7 +981,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -991,7 +989,7 @@ class XYSession(XYSessionBase):
         InvalidNameError
         RangeError
         """
-        self.xyDataObjects["name"] = xyData = XYData(())
+        self.xyDataObjects["name"] = xyData = XYDataType(())
         return [xyData]
 
     @abaqus_method_doc
@@ -1000,8 +998,8 @@ class XYSession(XYSessionBase):
         path: Path,
         name: str,
         includeIntersections: Boolean = False,
-        shape: Literal[C.UNDEFORMED, C.DEFORMED] = ...,
-        pathStyle: Literal[C.PATH_POINTS, C.UNIFORM_SPACING] = ...,
+        shape: Literal[C.UNDEFORMED, C.DEFORMED] = C.UNDEFORMED,
+        pathStyle: Literal[C.PATH_POINTS, C.UNIFORM_SPACING] = C.PATH_POINTS,
         numIntervals: int = 10,
         labelType: Literal[
             C.NORM_DISTANCE,
@@ -1013,14 +1011,14 @@ class XYSession(XYSessionBase):
             C.X_COORDINATE,
             C.Y_COORDINATE,
             C.Z_COORDINATE,
-        ] = ...,
-        viewport: str = ...,
+        ] = C.NORM_DISTANCE,
+        viewport: str | int = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,
-        step: int = ...,
-        frame: int = ...,
-        variable: Tuple[
-            Tuple[
+        step: int = 0,
+        frame: int = 0,
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -1034,17 +1032,17 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
-                Dict[str, str],
+                tuple[Literal[C.INVARIANT, C.COMPONENT], str],
+                dict[str, str],
             ],
             ...,
-        ] = ...,
-        deformedMag: Tuple[float, float, float] = (1, 1, 1),
-        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE] = REAL,
+        ] = (),
+        deformedMag: tuple[float, float, float] = (1, 1, 1),
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
-    ) -> XYData:
+    ) -> XYDataType:
         """This method creates an XYData object from path information.
 
         .. note::
@@ -1158,5 +1156,5 @@ class XYSession(XYSessionBase):
         ErrorDeformedMagTupleInPathExtract: Deformed magnification tuple must contain X, Y and Z values
             If **deformedMag** does not contain three Floats.
         """
-        self.xyDataObjects[name] = xyData = XYData(())
+        self.xyDataObjects[name] = xyData = XYDataType(())
         return xyData

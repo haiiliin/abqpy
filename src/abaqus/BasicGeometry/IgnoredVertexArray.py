@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -25,29 +25,29 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: Tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
+    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredVertex]:
+    ) -> list[IgnoredVertex]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredVertex]:
+    ) -> list[IgnoredVertex]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredVertex object
         that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If
@@ -85,16 +85,16 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> IgnoredVertex:
+    def getSequenceFromMask(self, mask: str) -> IgnoredVertex:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[IgnoredVertex]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredVertex]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
         number of objects are involved, this method is highly efficient.
@@ -109,10 +109,10 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         IgnoredVertex
             An IgnoredVertex object or a sequence of IgnoredVertex objects.
         """
-        ...
+        return IgnoredVertex() if isinstance(mask, str) else [IgnoredVertex()]
 
     @abaqus_method_doc
-    def getMask(self):
+    def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
         Returns
@@ -120,10 +120,10 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict[int, tuple[IgnoredVertex, tuple]]:
         """This method returns a object or objects in the IgnoredVertexArray closest to the given set of points,
         where the given points need not lie on the vertices in the IgnoredVertexArray.
 
@@ -158,4 +158,4 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {0: (IgnoredVertex(), (0.0, 0.0, 0.0))}

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -174,7 +174,7 @@ class DamageEvolution:
         dependencies: int = 0,
         mixedModeBehavior: Literal[C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK] = MODE_INDEPENDENT,
         modeMixRatio: Literal[C.TRACTION, C.ENERGY] = ENERGY,
-        power: Optional[float] = None,
+        power: float | None = None,
         softening: Literal[C.LINEAR, C.EXPONENTIAL, C.TABULAR] = LINEAR,
     ) -> None:
         """This method creates a DamageEvolution object.
