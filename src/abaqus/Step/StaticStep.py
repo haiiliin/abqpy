@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -70,7 +68,7 @@ class StaticStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
     #: value is 2x10⁻⁴.
-    stabilizationMagnitude: Optional[float] = None
+    stabilizationMagnitude: float | None = None
 
     #: A Boolean specifying whether to perform an adiabatic stress analysis. The default value
     #: is OFF.
@@ -85,15 +83,15 @@ class StaticStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: Optional[float] = None
+    initialInc: float | None = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10⁻⁵ times the total time period.
-    minInc: Optional[float] = None
+    minInc: float | None = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: Optional[float] = None
+    maxInc: float | None = None
 
     #: A SymbolicConstant specifying the type of solver. Possible values are DIRECT and
     #: ITERATIVE. The default value is DIRECT.
@@ -201,25 +199,25 @@ class StaticStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -228,19 +226,19 @@ class StaticStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -251,13 +249,13 @@ class StaticStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
-        stabilizationMagnitude: Optional[float] = None,
+        stabilizationMagnitude: float | None = None,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         amplitude: Literal[C.STEP, C.RAMP] = RAMP,
@@ -382,13 +380,13 @@ class StaticStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
-        stabilizationMagnitude: Optional[float] = None,
+        stabilizationMagnitude: float | None = None,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         amplitude: Literal[C.STEP, C.RAMP] = RAMP,

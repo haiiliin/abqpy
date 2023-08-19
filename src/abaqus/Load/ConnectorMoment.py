@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -49,9 +49,9 @@ class ConnectorMoment(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        m1: Optional[float] = None,
-        m2: Optional[float] = None,
-        m3: Optional[float] = None,
+        m1: float | None = None,
+        m2: float | None = None,
+        m3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method creates a ConnectorMoment object on a wire region. Alternatively, the load may also be
@@ -107,9 +107,9 @@ class ConnectorMoment(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        m1: Optional[float] = None,
-        m2: Optional[float] = None,
-        m3: Optional[float] = None,
+        m1: float | None = None,
+        m2: float | None = None,
+        m3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing ConnectorMoment object in the step where it is created.

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -9,7 +9,7 @@ from .IgnoredVertex import IgnoredVertex
 
 
 @abaqus_class_doc
-class IgnoredVertexArray(List[IgnoredVertex]):
+class IgnoredVertexArray(list[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified, then
     IgnoredVertexArray must be updated for that part.
 
@@ -25,29 +25,29 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: Tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
+    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredVertex]:
+    ) -> list[IgnoredVertex]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredVertex]:
+    ) -> list[IgnoredVertex]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredVertex object
         that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If
@@ -90,11 +90,11 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[IgnoredVertex]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredVertex]:
         return [IgnoredVertex()]
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
         number of objects are involved, this method is highly efficient.
@@ -123,7 +123,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         return ""
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict[int, Tuple[IgnoredVertex, tuple]]:
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict[int, tuple[IgnoredVertex, tuple]]:
         """This method returns a object or objects in the IgnoredVertexArray closest to the given set of points,
         where the given points need not lie on the vertices in the IgnoredVertexArray.
 

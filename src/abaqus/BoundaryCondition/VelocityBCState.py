@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,22 +25,22 @@ class VelocityBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the velocity component in the 1-direction.
-    v1: Optional[float] = None
+    v1: float | None = None
 
     #: A Float specifying the velocity component in the 2-direction.
-    v2: Optional[float] = None
+    v2: float | None = None
 
     #: A Float specifying the velocity component in the 3-direction.
-    v3: Optional[float] = None
+    v3: float | None = None
 
     #: A Float specifying the rotational velocity component about the 1-direction.
-    vr1: Optional[float] = None
+    vr1: float | None = None
 
     #: A Float specifying the rotational velocity component about the 2-direction.
-    vr2: Optional[float] = None
+    vr2: float | None = None
 
     #: A Float specifying the rotational velocity component about the 3-direction.
-    vr3: Optional[float] = None
+    vr3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

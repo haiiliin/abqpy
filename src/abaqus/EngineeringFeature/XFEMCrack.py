@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -45,12 +43,12 @@ class XFEMCrack(Crack):
 
     #: A Region object specifying the initial crack location. This parameter is required when
     #: **allowCrackGrowth** = OFF.
-    crackLocation: Optional[Region] = None
+    crackLocation: Region | None = None
 
     #: None or a Float specifying the radius from the crack tips within which the elements are
     #: used for crack singularity calculations. This argument applies only when
     #: **allowCrackGrowth** = OFF. The default value is None.
-    singularityCalcRadius: Optional[float] = None
+    singularityCalcRadius: float | None = None
 
     #: A String specifying the name of the ContactProperty object that defines the contact
     #: properties for the crack surfaces. The default value is an empty string.
@@ -88,8 +86,8 @@ class XFEMCrack(Crack):
         name: str,
         crackDomain: Region,
         allowCrackGrowth: Boolean = ON,
-        crackLocation: Optional[Region] = None,
-        singularityCalcRadius: Optional[float] = None,
+        crackLocation: Region | None = None,
+        singularityCalcRadius: float | None = None,
         interactionProperty: str = "",
         elemId: tuple = (),
         nodeId: tuple = (),
@@ -159,8 +157,8 @@ class XFEMCrack(Crack):
     def setValues(
         self,
         allowCrackGrowth: Boolean = ON,
-        crackLocation: Optional[Region] = None,
-        singularityCalcRadius: Optional[float] = None,
+        crackLocation: Region | None = None,
+        singularityCalcRadius: float | None = None,
         interactionProperty: str = "",
         elemId: tuple = (),
         nodeId: tuple = (),

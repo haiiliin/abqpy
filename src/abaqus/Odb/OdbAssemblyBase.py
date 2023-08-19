@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -34,16 +32,16 @@ class OdbAssemblyBase:
     """
 
     #: A repository of OdbInstance objects.
-    instances: Dict[str, OdbInstance] = {}
+    instances: dict[str, OdbInstance] = {}
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: Dict[str, OdbSet] = {}
+    nodeSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: Dict[str, OdbSet] = {}
+    elementSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: Dict[str, OdbSet] = {}
+    surfaces: dict[str, OdbSet] = {}
 
     #: An OdbMeshNodeArray object.
     nodes: OdbMeshNodeArray = []
@@ -52,7 +50,7 @@ class OdbAssemblyBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbDatumCsys objects.
-    datumCsyses: Dict[str, OdbDatumCsys] = {}
+    datumCsyses: dict[str, OdbDatumCsys] = {}
 
     #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
@@ -70,11 +68,11 @@ class OdbAssemblyBase:
     def ConnectorOrientation(
         self,
         region: str,
-        localCsys1: Optional[OdbDatumCsys] = None,
+        localCsys1: OdbDatumCsys | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = OFF,
-        localCsys2: Optional[OdbDatumCsys] = None,
+        localCsys2: OdbDatumCsys | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ):
@@ -142,7 +140,7 @@ class OdbAssemblyBase:
         instanceNames: tuple,
         type: str,
         elementSetName: str = "",
-        sectionCategory: Optional[SectionCategory] = None,
+        sectionCategory: SectionCategory | None = None,
     ):
         """This method is used to define elements using nodes defined at the OdbAssembly and/or OdbInstance
         level. For connector elements connected to ground, specify the lone node in the connectivity. The
@@ -177,7 +175,7 @@ class OdbAssemblyBase:
         ...
 
     @abaqus_method_doc
-    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: Optional[str] = None):
+    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str | None = None):
         """This method adds nodes to the OdbAssembly object using node labels and coordinates. Warning:Adding
         nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
 

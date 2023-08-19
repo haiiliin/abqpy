@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
@@ -27,7 +25,7 @@ object is about to be deleted::
 
 
 @abaqus_function_doc
-def deleteObjectCallback(callback: str, path: str, userData: Optional[str] = None, includeChildren: Boolean = False):
+def deleteObjectCallback(callback: str, path: str, userData: str | None = None, includeChildren: Boolean = False):
     """This method adds a callback function that will be invoked when the specified Abaqus Scripting Interface
     objects are about to be deleted. The callback is invoked only when the object is deleted using the Python
     statement del object. The callback is not invoked when the object is deleted using an Abaqus Scripting

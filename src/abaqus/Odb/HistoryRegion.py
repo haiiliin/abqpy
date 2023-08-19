@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, overload
+from typing import overload
 
 from typing_extensions import Literal
 
@@ -29,7 +29,7 @@ class HistoryRegion:
     position: SymbolicConstant
 
     #: A repository of HistoryOutput objects.
-    historyOutputs: Dict[str, HistoryOutput] = {}
+    historyOutputs: dict[str, HistoryOutput] = {}
 
     #: A String specifying the name of the HistoryRegion object.
     name: str
@@ -42,7 +42,7 @@ class HistoryRegion:
 
     #: None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
     #: object. The default value is None.
-    loadCase: Optional[str] = None
+    loadCase: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -50,7 +50,7 @@ class HistoryRegion:
         name: str,
         description: str,
         point: HistoryPoint,
-        loadCase: Optional[str] = None,
+        loadCase: str | None = None,
     ) -> None:
         """This method creates a HistoryRegion object.
 
@@ -142,9 +142,10 @@ class HistoryRegion:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Optional[
-            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
-        ] = None,
+        validInvariants: Literal[
+            C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS
+        ]
+        | None = None,
     ) -> HistoryOutput:
         """This method creates a HistoryOutput object.
 

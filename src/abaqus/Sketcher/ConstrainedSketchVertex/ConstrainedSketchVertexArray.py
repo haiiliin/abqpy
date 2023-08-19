@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import List, Tuple
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ...UtilityAndView.abaqusConstants import Boolean
@@ -9,7 +7,7 @@ from .ConstrainedSketchVertex import ConstrainedSketchVertex
 
 
 @abaqus_class_doc
-class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
+class ConstrainedSketchVertexArray(list[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
     .. note::
@@ -20,7 +18,7 @@ class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: Tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchVertex:
+    def findAt(self, coordinates: tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchVertex:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 
         Parameters

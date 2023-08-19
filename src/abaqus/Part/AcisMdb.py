@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -64,7 +64,7 @@ class AcisMdb(MdbBase):
     @abaqus_method_doc
     def openCatia(
         fileName: str,
-        topology: Optional[SymbolicConstant] = None,
+        topology: SymbolicConstant | None = None,
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import FREE, ON, Boolean, SymbolicConstant
@@ -72,17 +70,17 @@ class EulerianMotionBCState(BoundaryConditionState):
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio1: Optional[float] = None
+    expansionRatio1: float | None = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio2: Optional[float] = None
+    expansionRatio2: float | None = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio3: Optional[float] = None
+    expansionRatio3: float | None = None
 
     #: A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
     #: direction. The default value is 0.0.

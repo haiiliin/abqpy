@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -102,12 +100,12 @@ class CompositeShellSection(GeometryShellSection):
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
-    nTemp: Optional[int] = None
+    nTemp: int | None = None
 
     #: None or a Float specifying the effective thickness modulus. This argument is relevant
     #: only for continuum shells and must be used in conjunction with the argument **poisson**.
     #: The default value is None.
-    thicknessModulus: Optional[float] = None
+    thicknessModulus: float | None = None
 
     #: A Boolean specifying whether or not to use the value of **density**. The default value is
     #: OFF.
@@ -152,8 +150,8 @@ class CompositeShellSection(GeometryShellSection):
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -258,8 +256,8 @@ class CompositeShellSection(GeometryShellSection):
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",

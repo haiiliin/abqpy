@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -45,10 +45,10 @@ class Gravity(Load):
         createStepName: str,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        region: Optional[Region] = None,
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        region: Region | None = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method creates a Gravity object.
@@ -98,10 +98,10 @@ class Gravity(Load):
         self,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        region: Optional[Region] = None,
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        region: Region | None = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing Gravity object in the step where it is created.

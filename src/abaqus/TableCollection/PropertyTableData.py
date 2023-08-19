@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
@@ -41,7 +39,7 @@ class PropertyTableData:
     isTemp: Boolean = OFF
 
     #: An Int specifying the field variables on which properties are dependent.
-    fieldNums: Optional[int] = None
+    fieldNums: int | None = None
 
     #: A Double specifying the tolerance to be used to regularize the property table data.
     regularizeTolerance: str = ""
@@ -54,10 +52,10 @@ class PropertyTableData:
     def __init__(
         self,
         label: str = "",
-        regularize: Optional[SymbolicConstant] = None,
-        extrapolate: Optional[SymbolicConstant] = None,
+        regularize: SymbolicConstant | None = None,
+        extrapolate: SymbolicConstant | None = None,
         isTemp: Boolean = OFF,
-        fieldNums: Optional[int] = None,
+        fieldNums: int | None = None,
         regularizeTolerance: str = "",
         data: str = "",
     ):

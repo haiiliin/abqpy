@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Optional, Tuple
+from typing import TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -57,14 +57,14 @@ class MeshNode:
     instanceName: str = ""
 
     #: A tuple of three Floats specifying the coordinates of the new node.
-    coordinates: Tuple[float, float, float]
+    coordinates: tuple[float, float, float]
 
     @abaqus_method_doc
     def __init__(
         self,
-        coordinates: Tuple[float, float, float],
-        localCsys: Optional[DatumCsys] = None,
-        label: Optional[int] = None,
+        coordinates: tuple[float, float, float],
+        localCsys: DatumCsys | None = None,
+        label: int | None = None,
     ) -> None:
         """This method creates a node on an orphan mesh part.
 
@@ -91,7 +91,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElemEdges(self) -> Tuple[MeshEdge, ...]:
+    def getElemEdges(self) -> tuple[MeshEdge, ...]:
         """This method returns a tuple of element edge objects that share the node.
 
         Returns
@@ -102,7 +102,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElemFaces(self) -> Tuple[MeshFace, ...]:
+    def getElemFaces(self) -> tuple[MeshFace, ...]:
         """This method returns a tuple of element face objects that share the node.
 
         Returns
@@ -113,7 +113,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElements(self) -> Tuple[MeshElement, ...]:
+    def getElements(self) -> tuple[MeshElement, ...]:
         """This method returns a tuple of element objects that share the node.
 
         Returns
@@ -141,7 +141,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: Optional[int] = None) -> None:
+    def setValues(self, label: int | None = None) -> None:
         """This method modifies the MeshNode object.
 
         Parameters

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -21,11 +19,11 @@ class IgnoredEdge:
     """
 
     #: An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the edge.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     @abaqus_method_doc
     def getSize(self, printResults: bool = True):
@@ -59,7 +57,7 @@ class IgnoredEdge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: Tuple[float, float, float]):
+    def getCurvature(self, parameter: float, point: tuple[float, float, float]):
         """This method returns curvature information at a location on the IgnoredEdge object.
 
         Parameters

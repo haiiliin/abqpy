@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -69,7 +67,7 @@ class AnimationController(_OptionsBase):
         ...
 
     @abaqus_method_doc
-    def showFrame(self, frame: Optional[int] = None, value: Optional[float] = None):
+    def showFrame(self, frame: int | None = None, value: float | None = None):
         """This method renders the specified frame of the animation.
 
         Parameters

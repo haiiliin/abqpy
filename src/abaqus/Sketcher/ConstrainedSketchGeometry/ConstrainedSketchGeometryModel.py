@@ -347,7 +347,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        vertices: List[ConstrainedSketchVertex]
+        vertices: list[ConstrainedSketchVertex]
             A list of ConstrainedSketchVertex objects
         """
         ...

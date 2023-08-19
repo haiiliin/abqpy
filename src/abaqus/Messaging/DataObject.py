@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -21,58 +19,58 @@ class DataObject:
     phase: SymbolicConstant
 
     #: An Int specifying the process ID of the analysis product.
-    processId: Optional[int] = None
+    processId: int | None = None
 
     #: An Int specifying the thread ID of the analysis product. Threads are used for parallel
     #: or multiprocessing; in most cases **threadId** is set to zero.
-    threadId: Optional[int] = None
+    threadId: int | None = None
 
     #: An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January
     #: 1, 1970.
-    timeStamp: Optional[int] = None
+    timeStamp: int | None = None
 
     #: An Int specifying the number of attempts made to reach equilibrium during this step.
-    attempts: Optional[int] = None
+    attempts: int | None = None
 
     #: An Int specifying the degree of freedom requested for monitoring the output.
-    dof: Optional[int] = None
+    dof: int | None = None
 
     #: An Int specifying the number of equilibrium iterations made during this increment.
-    equilibrium: Optional[int] = None
+    equilibrium: int | None = None
 
     #: An Int specifying the increment of the analysis.
-    increment: Optional[int] = None
+    increment: int | None = None
 
     #: An Int specifying the number of iterations in the step.
-    iterations: Optional[int] = None
+    iterations: int | None = None
 
     #: An Int specifying the node number requested for monitoring output.
-    node: Optional[int] = None
+    node: int | None = None
 
     #: An Int specifying the number of severe discontinuity iterations completed during this
     #: increment.
-    severe: Optional[int] = None
+    severe: int | None = None
 
     #: An Int specifying the current step number. Step number 1 corresponds to the first step.
-    step: Optional[int] = None
+    step: int | None = None
 
     #: An Int specifying the ID of the step.
-    stepId: Optional[int] = None
+    stepId: int | None = None
 
     #: A Float specifying the step time corresponding to the current increment.
-    stepTime: Optional[float] = None
+    stepTime: float | None = None
 
     #: A Float specifying the total time corresponding to the monitor data.
-    time: Optional[float] = None
+    time: float | None = None
 
     #: A Float specifying the time increment used in the current step.
-    timeIncrement: Optional[float] = None
+    timeIncrement: float | None = None
 
     #: A Float specifying the total time completed in the analysis.
-    totalTime: Optional[float] = None
+    totalTime: float | None = None
 
     #: A Float specifying the current value of the degree of freedom requested for monitoring.
-    value: Optional[float] = None
+    value: float | None = None
 
     #: A String specifying the host name of the machine that is running the analysis.
     clientHost: str = ""

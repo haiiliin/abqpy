@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -70,7 +68,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
 
     #: A tuple of three Floats specifying the offset value in each of the three coordinate
     #: directions when **deformedOffsetMode** = NONUNIFORM. The default value is (0, 0, 0).
-    nonuniformOffset: Optional[float] = None
+    nonuniformOffset: float | None = None
 
     #: A SymbolicConstant specifying the render style of the plot. Possible values are
     #: WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is WIREFRAME.
@@ -202,12 +200,12 @@ class SuperimposeOptions(DGSuperimposeOptions):
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: Optional[float] = None
+    coordinateScaleFactors: float | None = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["SuperimposeOptions"] = None,
+        options: "SuperimposeOptions" | None = None,
         renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,
         visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = FEATURE,
         edgeColorWireHide: str = "",

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -85,7 +85,7 @@ class BoundaryConditionModel(ModelBase):
         dof: Literal[C.U3, C.UR2, C.U1, C.UR3, C.UR1, C.U2],
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Optional[Correlation] = None,
+        correlation: Correlation | None = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -158,7 +158,7 @@ class BoundaryConditionModel(ModelBase):
         ar2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ) -> AccelerationBC:
         """This method creates an AccelerationBC object.
@@ -691,7 +691,7 @@ class BoundaryConditionModel(ModelBase):
         dof: Literal[C.U3, C.UR2, C.U1, C.UR3, C.UR1, C.U2],
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Optional[Correlation] = None,
+        correlation: Correlation | None = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -766,7 +766,7 @@ class BoundaryConditionModel(ModelBase):
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
@@ -980,22 +980,22 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         materialName: str = "",
         ctrPosition1: Literal[C.FREE, C.FIXED] = FREE,
         posPosition1: Literal[C.FREE, C.FIXED] = FREE,
         negPosition1: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio1: Optional[float] = None,
+        expansionRatio1: float | None = None,
         contractRatio1: float = 0,
         ctrPosition2: Literal[C.FREE, C.FIXED] = FREE,
         posPosition2: Literal[C.FREE, C.FIXED] = FREE,
         negPosition2: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio2: Optional[float] = None,
+        expansionRatio2: float | None = None,
         contractRatio2: float = 0,
         ctrPosition3: Literal[C.FREE, C.FIXED] = FREE,
         posPosition3: Literal[C.FREE, C.FIXED] = FREE,
         negPosition3: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio3: Optional[float] = None,
+        expansionRatio3: float | None = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -1185,12 +1185,12 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        component1: Optional[Literal[C.SET, C.UNSET]] = None,
+        component1: Literal[C.SET, C.UNSET | None] = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> MagneticVectorPotentialBC:
         """This method creates a MagneticVectorPotentialBC object.
 
@@ -1479,11 +1479,11 @@ class BoundaryConditionModel(ModelBase):
         timeScale: Boolean,
         shellThickness: float,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: Optional[float] = None,
+        absoluteExteriorTolerance: float | None = None,
         exteriorTolerance: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         globalIncrement: int = 0,
-        centerZoneSize: Optional[float] = None,
+        centerZoneSize: float | None = None,
         intersectionOnly: Boolean = OFF,
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
@@ -1647,7 +1647,7 @@ class BoundaryConditionModel(ModelBase):
         dof: Literal[C.U3, C.UR2, C.U1, C.UR3, C.UR1, C.U2],
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Optional[Correlation] = None,
+        correlation: Correlation | None = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -1720,7 +1720,7 @@ class BoundaryConditionModel(ModelBase):
         vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ) -> VelocityBC:
         """This method creates a VelocityBC object.
@@ -1810,7 +1810,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates an encastre TypeBC object.
 
@@ -1859,7 +1859,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a pinned TypeBC object.
 
@@ -1908,7 +1908,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **X** axis.
 
@@ -1957,7 +1957,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Y** axis.
 
@@ -2006,7 +2006,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Z** axis.
 
@@ -2055,7 +2055,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **X** axis.
 
@@ -2104,7 +2104,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Y** axis.
 
@@ -2153,7 +2153,7 @@ class BoundaryConditionModel(ModelBase):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Z** axis.
 

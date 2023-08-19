@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, THREE_D, SymbolicConstant
@@ -46,15 +44,15 @@ class FieldValue:
     #: An Int specifying the element label of the element containing the location.
     #: **elementLabel** is available only if **position** = INTEGRATION_POINT, CENTROID,
     #: ELEMENT_NODAL, or ELEMENT_FACE.
-    elementLabel: Optional[int] = None
+    elementLabel: int | None = None
 
     #: An Int specifying the node label of the node containing the location. **nodelabel** is
     #: available only if **position** = ELEMENT_NODAL or NODAL.
-    nodeLabel: Optional[int] = None
+    nodeLabel: int | None = None
 
     #: An Int specifying the integration point in the element. **integrationPoint** is available
     #: only if **position** = INTEGRATION_POINT.
-    integrationPoint: Optional[int] = None
+    integrationPoint: int | None = None
 
     #: A SymbolicConstant specifying the face of the element. **face** is available only if
     #: **position** = ELEMENT_FACE.
@@ -67,63 +65,63 @@ class FieldValue:
 
     #: A Float specifying the length or magnitude of the vector. **magnitude** is valid only when
     #: **type** = VECTOR.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A Float specifying the calculated von Mises stress. The value is valid only when the
     #: **validInvariants** member includes MISES; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    mises: Optional[float] = None
+    mises: float | None = None
 
     #: A Float specifying the calculated Tresca stress. The value is valid only when the
     #: **validInvariants** member includes TRESCA; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    tresca: Optional[float] = None
+    tresca: float | None = None
 
     #: A Float specifying the calculated pressure stress. The value is valid only when the
     #: **validInvariants** member includes PRESS; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    press: Optional[float] = None
+    press: float | None = None
 
     #: A Float specifying the calculated third stress invariant. The value is valid only when
     #: the **validInvariants** member includes INV3; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    inv3: Optional[float] = None
+    inv3: float | None = None
 
     #: A Float specifying the calculated maximum principal stress. The value is valid only when
     #: the **validInvariants** member includes MAX_PRINCIPAL; otherwise, the value is
     #: indeterminate. Conjugate data will be ignored in invariant calculation.
-    maxPrincipal: Optional[float] = None
+    maxPrincipal: float | None = None
 
     #: A Float specifying the calculated intermediate principal stress. The value is valid only
     #: when the **validInvariants** member includes MID_PRINCIPAL; otherwise, the value is
     #: indeterminate. Conjugate data will be ignored in invariant calculation.
-    midPrincipal: Optional[float] = None
+    midPrincipal: float | None = None
 
     #: A Float specifying the minimum principal stress. The value is valid only when the
     #: **validInvariants** member includes MIN_PRINCIPAL; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    minPrincipal: Optional[float] = None
+    minPrincipal: float | None = None
 
     #: A Float specifying the maximum principal in-plane stress. The value is valid only when
     #: the **validInvariants** member includes MAX_INPLANE_PRINCIPAL; otherwise, the value is
     #: indeterminate. Conjugate data will be ignored in invariant calculation.
-    maxInPlanePrincipal: Optional[float] = None
+    maxInPlanePrincipal: float | None = None
 
     #: A Float specifying the calculated minimum principal in-plane stress. The value is valid
     #: only when the **validInvariants** member includes MIN_INPLANE_PRINCIPAL; otherwise, the
     #: value is indeterminate. Conjugate data will be ignored in invariant calculation.
-    minInPlanePrincipal: Optional[float] = None
+    minInPlanePrincipal: float | None = None
 
     #: A Float specifying the calculated principal out-of-plane stress. The value is valid only
     #: when the **validInvariants** member includes OUTOFPLANE_PRINCIPAL; otherwise, the value is
     #: indeterminate. Conjugate data will be ignored in invariant calculation.
-    outOfPlanePrincipal: Optional[float] = None
+    outOfPlanePrincipal: float | None = None
 
     #: An OdbInstance object specifying the part to which the labels belong.
     instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
     #: A SectionPoint object.
-    sectionPoint: Optional[SectionPoint] = None
+    sectionPoint: SectionPoint | None = None
 
     #: A tuple of tuples of Floats specifying the 3 x 3 matrix of Floats specifying the
     #: direction cosines of the local coordinate system (the rotation from global to local).

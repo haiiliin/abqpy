@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -40,7 +38,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
@@ -52,7 +50,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
         angle: float,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method creates a SizingRotationalSymmetry object.
@@ -91,7 +89,7 @@ class SizingRotationalSymmetry(GeometricRestriction):
     def setValues(
         self,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method modifies the SizingRotationalSymmetry object.

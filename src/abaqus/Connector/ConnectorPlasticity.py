@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -152,7 +150,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
 
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
     #: potential contribution. This member can be specified only if **coupling** = COUPLED.
-    connectorPotentials: Optional[ConnectorPotentialArray] = None
+    connectorPotentials: ConnectorPotentialArray | None = None
 
     #: A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
     #: the **isotropicTable** data are described below. This argument is applicable only if
@@ -184,7 +182,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
         kinematicDependencies: int = 0,
         forcePotentialOperator: Literal[C.SUM, C.COUPLED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: Optional[ConnectorPotentialArray] = None,
+        connectorPotentials: ConnectorPotentialArray | None = None,
         isotropicTable: tuple = (),
         kinematicTable: tuple = (),
         components: tuple = (),

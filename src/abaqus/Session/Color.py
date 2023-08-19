@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -20,7 +18,7 @@ class Color:
 
     #: A tuple of three Floats specifying the RGB value of the color. The Float values must be
     #: between 0.0 and 1.0.
-    rgb: Optional[float] = None
+    rgb: float | None = None
 
     @abaqus_method_doc
     def setByRGB(self, rgb: tuple):

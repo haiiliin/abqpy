@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -39,7 +39,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[DatumCsys] = None
+    localCsys: DatumCsys | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -54,7 +54,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         vr2: Union[float, Literal[C.SET, C.C.UNSET]] = UNSET,
         vr3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         amplitude: Union[str, Literal[C.UNSET]] = UNSET,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
         motionType: Literal[C.INDEPENDENT, C.FOLLOW, C.USER_DEFINED] = INDEPENDENT,
     ):
         """This method creates a VelocityAdaptiveMeshConstraint object.
@@ -127,7 +127,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         vr2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         vr3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         amplitude: Union[str, Literal[C.UNSET]] = UNSET,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
         motionType: Literal[C.INDEPENDENT, C.FOLLOW, C.USER_DEFINED] = INDEPENDENT,
     ):
         """This method modifies the data for an existing VelocityAdaptiveMeshConstraint object in the step where

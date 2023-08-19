@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -87,20 +87,20 @@ class MeshAssembly(AssemblyBase):
         self,
         regions: Sequence[Face],
         mergeShortEdges: Boolean = False,
-        shortEdgeThreshold: Optional[float] = None,
+        shortEdgeThreshold: float | None = None,
         mergeSmallFaces: Boolean = False,
-        smallFaceAreaThreshold: Optional[float] = None,
+        smallFaceAreaThreshold: float | None = None,
         mergeSliverFaces: Boolean = False,
-        faceAspectRatioThreshold: Optional[float] = None,
+        faceAspectRatioThreshold: float | None = None,
         mergeSmallAngleFaces: Boolean = False,
-        smallFaceCornerAngleThreshold: Optional[float] = None,
+        smallFaceCornerAngleThreshold: float | None = None,
         mergeThinStairFaces: Boolean = False,
-        thinStairFaceThreshold: Optional[float] = None,
+        thinStairFaceThreshold: float | None = None,
         ignoreRedundantEntities: Boolean = False,
         cornerAngleTolerance: float = 30,
         applyBlendControls: Boolean = False,
-        blendSubtendedAngleTolerance: Optional[float] = None,
-        blendRadiusTolerance: Optional[float] = None,
+        blendSubtendedAngleTolerance: float | None = None,
+        blendRadiusTolerance: float | None = None,
     ):
         """This method creates a virtual topology feature by automatically merging faces and edges based on a
         set of geometric parameters. The edges and vertices that are being merged will be ignored during mesh
@@ -257,7 +257,7 @@ class MeshAssembly(AssemblyBase):
         geometrySourceSide: str = "",
         elemFacesSourceSide: Sequence[MeshFace] = (),
         elemSourceSide: tuple = (),
-        depth: Optional[float] = None,
+        depth: float | None = None,
         targetSide: str = "",
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
@@ -313,8 +313,8 @@ class MeshAssembly(AssemblyBase):
         geometryConnectingSides: str = "",
         elemFacesConnectingSides: Sequence[MeshFace] = (),
         elemConnectingSides: tuple = (),
-        targetSide: Optional[Face] = None,
-        numberOfLayers: Optional[int] = None,
+        targetSide: Face | None = None,
+        numberOfLayers: int | None = None,
         extendElementSets: Boolean = False,
     ):
         """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell
@@ -837,8 +837,8 @@ class MeshAssembly(AssemblyBase):
         self,
         edges: Sequence[Edge],
         size: float,
-        deviationFactor: Optional[float] = None,
-        minSizeFactor: Optional[float] = None,
+        deviationFactor: float | None = None,
+        minSizeFactor: float | None = None,
         constraint: Literal[C.FREE] = FREE,
     ):
         """This method seeds the given edges either uniformly or following edge curvature distribution, based on
@@ -871,8 +871,8 @@ class MeshAssembly(AssemblyBase):
         self,
         regions: Sequence[PartInstance],
         size: float,
-        deviationFactor: Optional[float] = None,
-        minSizeFactor: Optional[float] = None,
+        deviationFactor: float | None = None,
+        minSizeFactor: float | None = None,
         constraint: Literal[C.FREE] = FREE,
     ):
         """This method assigns global edge seeds to the given part instances.
@@ -980,11 +980,11 @@ class MeshAssembly(AssemblyBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: Optional[Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI]] = None,
-        technique: Optional[Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN]] = None,
-        algorithm: Optional[Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT]] = None,
+        elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI | None] = None,
+        technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN | None] = None,
+        algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT | None] = None,
         minTransition: Boolean = ON,
-        sizeGrowth: Optional[Literal[C.MODERATE, C.MAXIMUM]] = None,
+        sizeGrowth: Literal[C.MODERATE, C.MAXIMUM | None] = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1091,8 +1091,8 @@ class MeshAssembly(AssemblyBase):
             C.ASPECT_RATIO,
             C.SMALL_ANGLE,
         ],
-        threshold: Optional[float] = None,
-        elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
+        threshold: float | None = None,
+        elemShape: Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI | None] = None,
         regions: tuple = (),
     ):
         """This method tests the quality of part instance meshes and returns poor-quality elements.
@@ -1160,7 +1160,7 @@ class MeshAssembly(AssemblyBase):
 
         Returns
         -------
-        Dict[str, int | float | MeshElement]
+        dict[str, int | float | MeshElement]
             A Dictionary object containing values for some number of the following keys:
             failedElements, warningElements, naElements (sequences of MeshElement objects);
             numElements (Int); average, worst (Float); worstElement (MeshElement object) .

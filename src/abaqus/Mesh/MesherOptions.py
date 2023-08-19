@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -39,7 +37,7 @@ class MesherOptions:
         quadAlgorithm: Literal[C.MEDIAL_AXIS, C.ADVANCING_FRONT] = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
-        guiPreferredElements: Optional[SymbolicConstant] = None,
+        guiPreferredElements: SymbolicConstant | None = None,
     ):
         """This method modifies the MesherOptions object.
 

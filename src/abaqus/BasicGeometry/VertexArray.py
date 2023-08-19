@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -12,7 +12,7 @@ from .Vertex import Vertex
 
 
 @abaqus_class_doc
-class VertexArray(List[Vertex]):
+class VertexArray(list[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 
@@ -38,7 +38,7 @@ class VertexArray(List[Vertex]):
     """
 
     @abaqus_method_doc
-    def __init__(self, vertices: List[Vertex]):
+    def __init__(self, vertices: list[Vertex]):
         """This method creates a VertexArray object.
 
         .. note::
@@ -62,7 +62,7 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[float, float, float],
+        coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
     ) -> ConstrainedSketchVertex:
         ...
@@ -71,22 +71,22 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[ConstrainedSketchVertex]:
+    ) -> list[ConstrainedSketchVertex]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[ConstrainedSketchVertex]:
+    ) -> list[ConstrainedSketchVertex]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
+    def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
         object that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary
@@ -129,13 +129,13 @@ class VertexArray(List[Vertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[ConstrainedSketchVertex]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[ConstrainedSketchVertex]:
         ...
 
     @abaqus_method_doc
     def getSequenceFromMask(
         self, mask: Union[str, Sequence[str]]
-    ) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
+    ) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -244,7 +244,7 @@ class VertexArray(List[Vertex]):
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

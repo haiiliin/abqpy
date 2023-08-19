@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -20,12 +18,12 @@ class InteractionContactInitializationModel(ModelBase):
         self,
         name: str,
         overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,
-        interferenceDistance: Optional[float] = None,
-        clearanceDistance: Optional[float] = None,
-        openingTolerance: Optional[float] = None,
-        overclosureTolerance: Optional[float] = None,
+        interferenceDistance: float | None = None,
+        clearanceDistance: float | None = None,
+        openingTolerance: float | None = None,
+        overclosureTolerance: float | None = None,
         adjustNodalCoords: Boolean = True,
-        secondaryNodesetName: Optional[str] = None,
+        secondaryNodesetName: str | None = None,
         stepFraction: float = 1,
     ) -> ExpInitialization:
         """This method creates an ExpInitialization object.
@@ -102,10 +100,10 @@ class InteractionContactInitializationModel(ModelBase):
         self,
         name: str,
         overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,
-        interferenceDistance: Optional[float] = None,
-        clearanceDistance: Optional[float] = None,
-        openingTolerance: Optional[float] = None,
-        overclosureTolerance: Optional[float] = None,
+        interferenceDistance: float | None = None,
+        clearanceDistance: float | None = None,
+        openingTolerance: float | None = None,
+        overclosureTolerance: float | None = None,
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 

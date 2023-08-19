@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -49,7 +47,7 @@ class DatumCsys(Datum):
     axis3: DatumAxis = DatumAxis()
 
     @abaqus_method_doc
-    def globalToLocal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+    def globalToLocal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this local
         coordinate system.
 
@@ -63,13 +61,13 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        Tuple[float, float, float]
+        tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
         return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
-    def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+    def localToGlobal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global
         coordinate system.
 
@@ -83,7 +81,7 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        Tuple[float, float, float]
+        tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
         return (0.0, 0.0, 0.0)

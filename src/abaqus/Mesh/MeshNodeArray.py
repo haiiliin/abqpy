@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union
+from typing import Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -8,7 +8,7 @@ from .MeshNode import MeshNode
 
 
 @abaqus_class_doc
-class MeshNodeArray(List[MeshNode]):
+class MeshNodeArray(list[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
     .. note::
@@ -43,7 +43,7 @@ class MeshNodeArray(List[MeshNode]):
     """
 
     @abaqus_method_doc
-    def __init__(self, nodes: List[MeshNode]) -> None:
+    def __init__(self, nodes: list[MeshNode]) -> None:
         """This method creates a MeshNodeArray object.
 
         .. note::
@@ -145,8 +145,8 @@ class MeshNodeArray(List[MeshNode]):
     @abaqus_method_doc
     def getByBoundingCylinder(
         self,
-        center1: Tuple[float, float, float],
-        center2: Tuple[float, float, float],
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
         radius: float,
     ) -> MeshNodeArray:
         """This method returns an array of node objects that lie within the specified bounding cylinder.
@@ -187,13 +187,13 @@ class MeshNodeArray(List[MeshNode]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the node sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum x, y and z boundary values of
@@ -209,7 +209,7 @@ class MeshNodeArray(List[MeshNode]):
     @abaqus_method_doc
     def getClosest(
         self, coordinates: str, numToFind: int = 1, searchTolerance: float = ...
-    ) -> Union[MeshNode, List[MeshNode]]:
+    ) -> Union[MeshNode, list[MeshNode]]:
         """This method returns the node or nodes closest to the given point or set of points.
 
         Parameters
@@ -226,7 +226,7 @@ class MeshNodeArray(List[MeshNode]):
 
         Returns
         -------
-        MeshNode | List[MeshNode]
+        MeshNode | list[MeshNode]
             A MeshNode, or a list of MeshNode objects, or a list of lists of MeshNode objects,
             depending on the number of points given and the number of nodes requested.
         """

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -38,20 +36,20 @@ class OdbMeshElement:
     """
 
     #: An Int specifying the element label.
-    label: Optional[int] = None
+    label: int | None = None
 
     #: A String specifying the element type.
     type: str = ""
 
     #: A SectionCategory object specifying the element section properties.
-    sectionCategory: Optional[SectionCategory] = None
+    sectionCategory: SectionCategory | None = None
 
     #: A tuple of Ints specifying the element connectivity. For connector elements connected to
     #: ground, the other node is repeated in the connectivity data. The position of the ground
     #: node cannot be ascertained. This is a limitation. It is important to note the difference
     #: with MeshElement object of MDB where the connectivity is node indices instead of node
     #: labels.
-    connectivity: Optional[int] = None
+    connectivity: int | None = None
 
     #: A tuple of Strings specifying the instance names for nodes in the element connectivity.
     instanceNames: tuple = ()

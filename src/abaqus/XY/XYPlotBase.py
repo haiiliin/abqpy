@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -30,14 +28,14 @@ class XYPlotBase:
     title: Title = Title()
 
     #: A repository of Chart objects.
-    charts: Dict[str, Chart] = {}
+    charts: dict[str, Chart] = {}
 
     #: A repository of XYCurve objects.
-    curves: Dict[str, XYCurve] = {}
+    curves: dict[str, XYCurve] = {}
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the active Chart object of this XYPlot.
-    transform: Optional[float] = None
+    transform: float | None = None
 
     @abaqus_method_doc
     def __init__(self, name: str):

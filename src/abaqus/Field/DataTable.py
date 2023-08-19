@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -18,7 +16,7 @@ class DataTable:
 
     #: An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to
     #: scalar data, orientations and 4D tensors.
-    dataWidth: Optional[int] = None
+    dataWidth: int | None = None
 
     #: A String specifying the index.
     name: str = ""
@@ -27,7 +25,7 @@ class DataTable:
     instanceName: str = ""
 
     #: A tuple of Ints specifying the domain node, element or integration point identifiers.
-    domain: Optional[int] = None
+    domain: int | None = None
 
     #: A tuple of Floats specifying the data within the domain.
-    table: Optional[float] = None
+    table: float | None = None

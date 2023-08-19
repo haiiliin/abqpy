@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc
 
 from .OdbAuxiliaryData import OdbAuxiliaryData
@@ -19,7 +17,7 @@ class OdbContactDiagnostics:
     """
 
     #: A repository of OdbAuxiliaryData objects. This attribute is read-only.
-    data: Dict[str, OdbAuxiliaryData] = {}
+    data: dict[str, OdbAuxiliaryData] = {}
 
     #: A string specifying the opening/overclosure status of the contact. This attribute is
     #: read-only.

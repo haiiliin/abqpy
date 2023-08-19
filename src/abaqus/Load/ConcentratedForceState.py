@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -29,13 +27,13 @@ class ConcentratedForceState(LoadState):
     #: A Float or a Complex specifying the concentrated force component in the 1-direction.
     #: Although **cf1**, **cf2**, and **cf3** are optional arguments, at least one of them must be
     #: nonzero.
-    cf1: Optional[float] = None
+    cf1: float | None = None
 
     #: A Float or a Complex specifying the concentrated force component in the 2-direction.
-    cf2: Optional[float] = None
+    cf2: float | None = None
 
     #: A Float or a Complex specifying the concentrated force component in the 3-direction.
-    cf3: Optional[float] = None
+    cf3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 1-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.

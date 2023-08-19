@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -10,7 +10,7 @@ from .FaceArray import FaceArray
 
 
 @abaqus_class_doc
-class CellArray(List[Cell]):
+class CellArray(list[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note::
@@ -33,7 +33,7 @@ class CellArray(List[Cell]):
     """
 
     @abaqus_method_doc
-    def __init__(self, cells: List[Cell]) -> None:
+    def __init__(self, cells: list[Cell]) -> None:
         """This method creates a CellArray object.
 
         .. note::
@@ -57,7 +57,7 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[float, float, float],
+        coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
     ) -> Cell:
         ...
@@ -66,22 +66,22 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[Cell]:
+    ) -> list[Cell]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[Cell]:
+    ) -> list[Cell]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[Cell, List[Cell]]:
+    def findAt(self, *args, **kwargs) -> Union[Cell, list[Cell]]:
         """This method returns the object or objects in the CellArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any entity that is at the
         arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is
@@ -138,11 +138,11 @@ class CellArray(List[Cell]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Cell]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Cell]:
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, List[Cell]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, list[Cell]]:
         """This method returns the object or objects in the CellArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large number of
         objects are involved, this method is highly efficient.
@@ -212,8 +212,8 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def getByBoundingCylinder(
         self,
-        center1: Tuple[float, float, float],
-        center2: Tuple[float, float, float],
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
         radius: float,
     ) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding cylinder.
@@ -237,7 +237,7 @@ class CellArray(List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> CellArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding sphere.
 
         Parameters
@@ -255,13 +255,13 @@ class CellArray(List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the cell sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

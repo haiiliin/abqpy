@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc
 
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
@@ -40,10 +38,10 @@ class ConstrainedSketchBase:
     """
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: Dict[str, ConstrainedSketchConstraint] = {}
+    constraints: dict[str, ConstrainedSketchConstraint] = {}
 
     #: A repository of ConstrainedSketchDimension objects.
-    dimensions: Dict[str, ConstrainedSketchDimension] = {}
+    dimensions: dict[str, ConstrainedSketchDimension] = {}
 
     #: A ConstrainedSketchGeometryArray object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
@@ -51,7 +49,7 @@ class ConstrainedSketchBase:
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
-    parameters: Dict[str, ConstrainedSketchParameter] = {}
+    parameters: dict[str, ConstrainedSketchParameter] = {}
 
     #: A ConstrainedSketchOptions object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()

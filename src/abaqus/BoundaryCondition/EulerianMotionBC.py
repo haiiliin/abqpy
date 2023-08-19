@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -76,17 +74,17 @@ class EulerianMotionBC(BoundaryCondition):
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio1: Optional[float] = None
+    expansionRatio1: float | None = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio2: Optional[float] = None
+    expansionRatio2: float | None = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio3: Optional[float] = None
+    expansionRatio3: float | None = None
 
     #: A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
     #: direction. The default value is 0.0.
@@ -137,7 +135,7 @@ class EulerianMotionBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -146,22 +144,22 @@ class EulerianMotionBC(BoundaryCondition):
         createStepName: str,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         materialName: str = "",
         ctrPosition1: Literal[C.FREE, C.FIXED] = FREE,
         posPosition1: Literal[C.FREE, C.FIXED] = FREE,
         negPosition1: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio1: Optional[float] = None,
+        expansionRatio1: float | None = None,
         contractRatio1: float = 0,
         ctrPosition2: Literal[C.FREE, C.FIXED] = FREE,
         posPosition2: Literal[C.FREE, C.FIXED] = FREE,
         negPosition2: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio2: Optional[float] = None,
+        expansionRatio2: float | None = None,
         contractRatio2: float = 0,
         ctrPosition3: Literal[C.FREE, C.FIXED] = FREE,
         posPosition3: Literal[C.FREE, C.FIXED] = FREE,
         negPosition3: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio3: Optional[float] = None,
+        expansionRatio3: float | None = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -274,22 +272,22 @@ class EulerianMotionBC(BoundaryCondition):
         self,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         materialName: str = "",
         ctrPosition1: Literal[C.FREE, C.FIXED] = FREE,
         posPosition1: Literal[C.FREE, C.FIXED] = FREE,
         negPosition1: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio1: Optional[float] = None,
+        expansionRatio1: float | None = None,
         contractRatio1: float = 0,
         ctrPosition2: Literal[C.FREE, C.FIXED] = FREE,
         posPosition2: Literal[C.FREE, C.FIXED] = FREE,
         negPosition2: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio2: Optional[float] = None,
+        expansionRatio2: float | None = None,
         contractRatio2: float = 0,
         ctrPosition3: Literal[C.FREE, C.FIXED] = FREE,
         posPosition3: Literal[C.FREE, C.FIXED] = FREE,
         negPosition3: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio3: Optional[float] = None,
+        expansionRatio3: float | None = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -391,17 +389,17 @@ class EulerianMotionBC(BoundaryCondition):
         ctrPosition1: Literal[C.FREE, C.FIXED] = FREE,
         posPosition1: Literal[C.FREE, C.FIXED] = FREE,
         negPosition1: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio1: Optional[float] = None,
+        expansionRatio1: float | None = None,
         contractRatio1: float = 0,
         ctrPosition2: Literal[C.FREE, C.FIXED] = FREE,
         posPosition2: Literal[C.FREE, C.FIXED] = FREE,
         negPosition2: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio2: Optional[float] = None,
+        expansionRatio2: float | None = None,
         contractRatio2: float = 0,
         ctrPosition3: Literal[C.FREE, C.FIXED] = FREE,
         posPosition3: Literal[C.FREE, C.FIXED] = FREE,
         negPosition3: Literal[C.FREE, C.FIXED] = FREE,
-        expansionRatio3: Optional[float] = None,
+        expansionRatio3: float | None = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,

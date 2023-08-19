@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -32,7 +30,7 @@ class FilmConditionState(InteractionState):
     interactionPropertyState: SymbolicConstant
 
     #: A Float specifying the sink temperature.
-    sinkTemperature: Optional[float] = None
+    sinkTemperature: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **sinkTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
@@ -43,7 +41,7 @@ class FilmConditionState(InteractionState):
     sinkAmplitudeState: SymbolicConstant
 
     #: A Float specifying the film coefficient.
-    filmCoeff: Optional[float] = None
+    filmCoeff: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **filmCoeff** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.

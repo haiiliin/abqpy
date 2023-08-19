@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -32,25 +30,25 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     """
 
     #: A Float or a Complex specifying the displacement component in the 1-direction.
-    u1: Optional[float] = None
+    u1: float | None = None
 
     #: A Float or a Complex specifying the displacement component in the 2-direction.
-    u2: Optional[float] = None
+    u2: float | None = None
 
     #: A Float or a Complex specifying the displacement component in the 3-direction.
-    u3: Optional[float] = None
+    u3: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 1-direction.
-    ur1: Optional[float] = None
+    ur1: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 2-direction.
-    ur2: Optional[float] = None
+    ur2: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 3-direction.
-    ur3: Optional[float] = None
+    ur3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the displacement component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
@@ -97,35 +95,34 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     @abaqus_method_doc
     def __init__(
         self,
-        u1: Optional[float] = None,
-        u2: Optional[float] = None,
-        u3: Optional[float] = None,
-        ur1: Optional[float] = None,
-        ur2: Optional[float] = None,
-        ur3: Optional[float] = None,
-        u1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        u2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        u3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-        ] = None,
+        u1: float | None = None,
+        u2: float | None = None,
+        u3: float | None = None,
+        ur1: float | None = None,
+        ur2: float | None = None,
+        ur3: float | None = None,
+        u1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        u2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        u3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ):
         """

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -18,14 +16,14 @@ class RandomResponseFrequency:
     """
 
     #: A Float specifying the lower limit of the frequency range in cycles per time.
-    lower: Optional[float] = None
+    lower: float | None = None
 
     #: A Float specifying the upper limit of the frequency range in cycles per time.
-    upper: Optional[float] = None
+    upper: float | None = None
 
     #: An Int specifying the number of points between eigenfrequencies at which the response
     #: should be calculated.
-    nCalcs: Optional[int] = None
+    nCalcs: int | None = None
 
     #: A Float specifying the bias parameter.
-    bias: Optional[float] = None
+    bias: float | None = None

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -647,8 +647,8 @@ class XYSession(XYSessionBase):
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -662,13 +662,13 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
+                tuple[tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
             ]
         ],
         elementSets: Union[Sequence[str], str] = (),
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
         nodeSets: Union[str, Sequence[str]] = (),
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         operator: Literal[
@@ -708,7 +708,7 @@ class XYSession(XYSessionBase):
             C.RANGE_ALL,
         ]
         | None = None,
-    ) -> List[XYDataType]:
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note::
@@ -801,7 +801,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -823,7 +823,7 @@ class XYSession(XYSessionBase):
         comp1: Boolean = OFF,
         comp2: Boolean = OFF,
         comp3: Boolean = OFF,
-    ) -> List[XYDataType]:
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by computing free body data from an Odb object.
 
         .. note::
@@ -858,7 +858,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -874,8 +874,8 @@ class XYSession(XYSessionBase):
         self,
         odb: Odb,
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -889,18 +889,18 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
-                Dict[str, str],
+                tuple[Literal[C.INVARIANT, C.COMPONENT], str],
+                dict[str, str],
             ],
             ...,
         ],
         elementSets: Union[str, Sequence[str]] = (),
-        elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        elementLabels: Sequence[tuple[str, Union[int, str]]] = (),
         nodeSets: Union[str, Sequence[str]] = (),
-        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+        nodeLabels: Sequence[tuple[str, Union[int, str]]] = (),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
-    ) -> List[XYDataType]:
+    ) -> list[XYDataType]:
         """This method creates a list of XYData objects by reading through the thickness field data from an Odb
         object.
 
@@ -984,7 +984,7 @@ class XYSession(XYSessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of XYData objects.
 
         Raises
@@ -1020,8 +1020,8 @@ class XYSession(XYSessionBase):
         includeAllElements: Boolean = False,
         step: int = 0,
         frame: int = 0,
-        variable: Tuple[
-            Tuple[
+        variable: tuple[
+            tuple[
                 str,
                 Literal[
                     C.ELEMENT_CENTROID,
@@ -1035,12 +1035,12 @@ class XYSession(XYSessionBase):
                     C.WHOLE_PART_INSTANCE,
                     C.WHOLE_REGION,
                 ],
-                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
-                Dict[str, str],
+                tuple[Literal[C.INVARIANT, C.COMPONENT], str],
+                dict[str, str],
             ],
             ...,
         ] = (),
-        deformedMag: Tuple[float, float, float] = (1, 1, 1),
+        deformedMag: tuple[float, float, float] = (1, 1, 1),
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,

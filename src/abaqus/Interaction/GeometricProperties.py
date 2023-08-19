@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
@@ -30,12 +28,12 @@ class GeometricProperties:
     #: None or a Float specifying the thickness of an interfacial layer between the contacting
     #: surfaces. If **padThickness** = None, there is no interfacial layer. The default value is
     #: None.
-    padThickness: Optional[float] = None
+    padThickness: float | None = None
 
     #: None or a Float specifying the thickness that determines the contacting surfaces to be
     #: tracked. The input value for this parameter cannot be negative. An internal default
     #: value is used if a zero value is input or if the parameter is omitted.
-    trackingThickness: Optional[float] = None
+    trackingThickness: float | None = None
 
     #: An Int specifying the number of state-dependent variables. The default value is 0. This
     #: argument is applicable only if **modelType** = MODELTYPE_USER or
@@ -59,12 +57,12 @@ class GeometricProperties:
     def __init__(
         self,
         contactArea: float = 1,
-        padThickness: Optional[float] = None,
-        trackingThickness: Optional[float] = None,
+        padThickness: float | None = None,
+        trackingThickness: float | None = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: Optional[SymbolicConstant] = None,
+        modelType: SymbolicConstant | None = None,
     ):
         """This method creates a GeometricProperties object.
 

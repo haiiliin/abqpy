@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -66,7 +64,7 @@ class GapFlow:
     def __init__(
         self,
         table: tuple,
-        kmax: Optional[float] = None,
+        kmax: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: Literal[C.BINGHAM_PLASTIC, C.POWER_LAW, C.HERSCHEL_BULKLEY, C.NEWTONIAN] = NEWTONIAN,

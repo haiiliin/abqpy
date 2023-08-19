@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -27,7 +25,7 @@ class KeywordBlock:
 
     #: A Float specifying the value of the counter associated with the Mdb object at the most
     #: recent synchronization.
-    lastSynchCount: Optional[float] = None
+    lastSynchCount: float | None = None
 
     #: A tuple of Strings specifying a sequence of Strings that is identical to the information
     #: written to the Abaqus input file. Each String in the sequence represents an Abaqus input
@@ -38,7 +36,7 @@ class KeywordBlock:
     #: synchVersions used the argument **storeNodesAndElements** = False, the entry for the
     #: keywords NODE and ELEMENT will contain only the keyword and its parameters, not the data
     #: lines.
-    sieBlocks: Tuple[str, ...] = ()
+    sieBlocks: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def setValues(self, edited: Boolean = OFF):

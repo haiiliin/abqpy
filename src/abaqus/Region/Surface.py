@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -51,11 +51,11 @@ class Surface(Region):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
-    sides: Optional[Sequence[SymbolicConstant]] = None
+    sides: Sequence[SymbolicConstant | None] = None
 
     #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
     #: object on an output database.
-    instances: Optional[int] = None
+    instances: int | None = None
 
     @overload
     @abaqus_method_doc

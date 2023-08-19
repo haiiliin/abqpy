@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -128,16 +128,16 @@ class SectionOdb(OdbBase):
         thermalExpansion: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        density: Optional[float] = None,
-        referenceTemperature: Optional[float] = None,
+        density: float | None = None,
+        referenceTemperature: float | None = None,
         temperatureVar: Literal[C.INTERPOLATED, C.LINEAR] = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
         submerged: Literal[C.FULLY, C.HALF] = FULLY,
-        fluidMassDensity: Optional[float] = None,
-        crossSectionRadius: Optional[float] = None,
+        fluidMassDensity: float | None = None,
+        crossSectionRadius: float | None = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
@@ -293,7 +293,7 @@ class SectionOdb(OdbBase):
         material: str,
         initialThicknessType: Literal[C.SOLVER_DEFAULT] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: Optional[float] = None,
+        outOfPlaneThickness: float | None = None,
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
@@ -360,8 +360,8 @@ class SectionOdb(OdbBase):
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -513,20 +513,20 @@ class SectionOdb(OdbBase):
         rotationalType: Literal[C.NONE] = NONE,
         translationalType: Literal[C.NONE] = NONE,
         integration: Literal[C.EXPLICIT, C.IMPLICIT, C.UNSPECIFIED] = UNSPECIFIED,
-        u1ReferenceLength: Optional[float] = None,
-        u2ReferenceLength: Optional[float] = None,
-        u3ReferenceLength: Optional[float] = None,
-        ur1ReferenceAngle: Optional[float] = None,
-        ur2ReferenceAngle: Optional[float] = None,
-        ur3ReferenceAngle: Optional[float] = None,
-        massPerLength: Optional[float] = None,
-        contactAngle: Optional[float] = None,
+        u1ReferenceLength: float | None = None,
+        u2ReferenceLength: float | None = None,
+        u3ReferenceLength: float | None = None,
+        ur1ReferenceAngle: float | None = None,
+        ur2ReferenceAngle: float | None = None,
+        ur3ReferenceAngle: float | None = None,
+        massPerLength: float | None = None,
+        contactAngle: float | None = None,
         materialFlowFactor: float = 1,
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
-        behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None,
+        behaviorOptions: ConnectorBehaviorOptionArray | None = None,
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
@@ -740,7 +740,7 @@ class SectionOdb(OdbBase):
         self,
         name: str,
         stiffnessMatrix: tuple,
-        referenceTemperature: Optional[float] = None,
+        referenceTemperature: float | None = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -837,8 +837,8 @@ class SectionOdb(OdbBase):
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",

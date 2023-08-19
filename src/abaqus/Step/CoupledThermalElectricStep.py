@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -74,15 +72,15 @@ class CoupledThermalElectricStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: Optional[float] = None
+    initialInc: float | None = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: Optional[float] = None
+    minInc: float | None = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: Optional[float] = None
+    maxInc: float | None = None
 
     #: A SymbolicConstant specifying the time period to be analyzed in a transient analysis.
     #: Possible values are PERIOD and SS. The default value is PERIOD.
@@ -169,25 +167,25 @@ class CoupledThermalElectricStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -196,19 +194,19 @@ class CoupledThermalElectricStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -220,9 +218,9 @@ class CoupledThermalElectricStep(AnalysisStep):
         timePeriod: float = 1,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         end: Literal[C.SS, C.PERIOD] = PERIOD,
         deltmx: float = 0,
         mxdem: float = 0,
@@ -317,9 +315,9 @@ class CoupledThermalElectricStep(AnalysisStep):
         timePeriod: float = 1,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         end: Literal[C.SS, C.PERIOD] = PERIOD,
         deltmx: float = 0,
         mxdem: float = 0,

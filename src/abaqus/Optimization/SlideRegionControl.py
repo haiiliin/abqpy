@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -46,11 +44,11 @@ class SlideRegionControl(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. This
     #: is used when **approach** is TURN. The default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: None or a Region object specifying the free-form region. This is used when **approach** is
     #: FREE_FORM. The default value is None.
-    freeFormRegion: Optional[str] = None
+    freeFormRegion: str | None = None
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -58,7 +56,7 @@ class SlideRegionControl(GeometricRestriction):
 
     #: None or a Region object specifying the region to revolve into a slide region. This is
     #: used when **approach** is TURN. The default value is None.
-    revolvedRegion: Optional[str] = None
+    revolvedRegion: str | None = None
 
     #: A Float specifying the geometric tolerance in the 1-direction. This is used when
     #: **approach** is TURN. The default value is 0.01.
@@ -79,10 +77,10 @@ class SlideRegionControl(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
-        csys: Optional[int] = None,
-        freeFormRegion: Optional[str] = None,
+        csys: int | None = None,
+        freeFormRegion: str | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: Optional[str] = None,
+        revolvedRegion: str | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -145,10 +143,10 @@ class SlideRegionControl(GeometricRestriction):
     def setValues(
         self,
         approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
-        csys: Optional[int] = None,
-        freeFormRegion: Optional[str] = None,
+        csys: int | None = None,
+        freeFormRegion: str | None = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: Optional[str] = None,
+        revolvedRegion: str | None = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,

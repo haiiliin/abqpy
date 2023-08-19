@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Job.ModelJob import ModelJob
@@ -27,7 +25,7 @@ class AdaptivityProcess:
 
     #: A repository of AdaptivityIteration objects specifying the AdaptivityIteration objects
     #: received during running the adaptivity process.
-    iterations: Dict[int, AdaptivityIteration] = {}
+    iterations: dict[int, AdaptivityIteration] = {}
 
     #: A String specifying the name of the Adaptivity Process.
     name: str

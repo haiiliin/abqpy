@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, overload
+from typing import overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -19,7 +19,7 @@ class OdbStep(OdbStepBase):
         name: str,
         description: str,
         point: HistoryPoint,
-        loadCase: Optional[str] = None,
+        loadCase: str | None = None,
     ) -> HistoryRegion:
         """This method creates a HistoryRegion object.
 

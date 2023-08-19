@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -197,9 +197,9 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         instanceList: PartInstanceArray,
         useFields: Boolean = OFF,
-        assignmentList: Sequence[Tuple[Region, Tuple[float, ...]]] = (),
-        fieldList: Sequence[Tuple[Region, Tuple[str, ...]]] = (),
-        colorList: Sequence[Tuple[int, int, int]] = (),
+        assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = (),
+        fieldList: Sequence[tuple[Region, tuple[str, ...]]] = (),
+        colorList: Sequence[tuple[int, int, int]] = (),
     ) -> MaterialAssignment:
         """This method creates a MaterialAssignment predefined field object.
 
@@ -350,10 +350,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
-        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        beginStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP | None] = None,
+        beginIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START | None] = None,
+        endStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP | None] = None,
+        endIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START | None] = None,
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
@@ -660,7 +660,7 @@ class PredefinedFieldModel(ModelBase):
         createStepName: str,
         region: Region,
         outputVariable: str = "",
-        fieldVariableNum: Optional[int] = None,
+        fieldVariableNum: int | None = None,
         distributionType: Literal[
             C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
         ] = UNIFORM,
@@ -673,10 +673,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
-        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
-        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        beginStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP | None] = None,
+        beginIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START | None] = None,
+        endStep: Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP | None] = None,
+        endIncrement: Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START | None] = None,
         interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
     ):

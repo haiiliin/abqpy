@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -46,9 +46,9 @@ class PEGLoad(Load):
         region: Region,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method creates a PEGLoad object.
@@ -98,9 +98,9 @@ class PEGLoad(Load):
         self,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing PEGLoad object in the step where it is created.

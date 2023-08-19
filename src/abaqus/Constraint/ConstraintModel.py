@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -78,7 +78,7 @@ class ConstraintModel(ModelBase):
         influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
         couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
         adjust: Boolean = OFF,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -212,7 +212,7 @@ class ConstraintModel(ModelBase):
         name: str,
         embeddedRegion: Region,
         hostRegion: Region,
-        weightFactorTolerance: Optional[float] = None,
+        weightFactorTolerance: float | None = None,
         toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
@@ -305,7 +305,7 @@ class ConstraintModel(ModelBase):
         surface: Region,
         controlPoint: Region,
         mpcType: Literal[C.USER_MPC, C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.PIN_MPC, C.LINK_MPC],
-        csys: Optional[str] = None,
+        csys: str | None = None,
         userType: int = 0,
         userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ) -> MultipointConstraint:
@@ -357,10 +357,10 @@ class ConstraintModel(ModelBase):
         self,
         name: str,
         refPointRegion: Region,
-        bodyRegion: Optional[str] = None,
-        tieRegion: Optional[str] = None,
-        pinRegion: Optional[str] = None,
-        surfaceRegion: Optional[str] = None,
+        bodyRegion: str | None = None,
+        tieRegion: str | None = None,
+        pinRegion: str | None = None,
+        surfaceRegion: str | None = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ) -> RigidBody:

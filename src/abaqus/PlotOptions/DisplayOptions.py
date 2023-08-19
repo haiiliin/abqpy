@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -31,7 +31,7 @@ class DisplayOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["DisplayOptions"] = None,
+        options: "DisplayOptions" | None = None,
         plotState: Sequence[
             Literal[
                 C.SYMBOLS_ON_DEF,

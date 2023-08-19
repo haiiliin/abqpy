@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -59,7 +57,7 @@ class Hyperfoam:
     def __init__(
         self,
         testData: Boolean = OFF,
-        poisson: Optional[float] = None,
+        poisson: float | None = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,

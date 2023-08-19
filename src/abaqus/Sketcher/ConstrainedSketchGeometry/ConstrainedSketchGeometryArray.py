@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import List, Tuple
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ...UtilityAndView.abaqusConstants import Boolean
@@ -9,7 +7,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
 @abaqus_class_doc
-class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
+class ConstrainedSketchGeometryArray(list[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
     .. note::
@@ -20,7 +18,7 @@ class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: Tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchGeometry:
+    def findAt(self, coordinates: tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchGeometry:
         """This method returns the ConstrainedSketchGeometry object located at the given coordinates.
 
         Parameters

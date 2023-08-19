@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, THREE_D, SymbolicConstant
@@ -43,7 +41,7 @@ class FieldBulkData:
     instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
     #: A SectionPoint object specifying the section point number of the current block of data.
-    sectionPoint: Optional[SectionPoint] = None
+    sectionPoint: SectionPoint | None = None
 
     #: A sequence of Ints specifying the element labels of the elements in the block.
     #: **elementLabels** is valid only if **position** = INTEGRATION_POINT, CENTROID, ELEMENT_NODAL,
@@ -88,4 +86,4 @@ class FieldBulkData:
     #: outputs the quaternion form is q=(q0,q)q=(q0,q), which represents the rotation from
     #: local to global. If the underlying data are in double precision, an exception will be
     #: thrown.
-    localCoordSystem: Optional[float] = None
+    localCoordSystem: float | None = None

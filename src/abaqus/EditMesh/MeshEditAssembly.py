@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, overload
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -87,14 +87,14 @@ class MeshEditAssembly(AssemblyBase):
     def editNode(
         self,
         nodes: Sequence[MeshNode],
-        coordinate1: Optional[float] = None,
-        coordinate2: Optional[float] = None,
-        coordinate3: Optional[float] = None,
+        coordinate1: float | None = None,
+        coordinate2: float | None = None,
+        coordinate3: float | None = None,
         coordinates: Sequence[float] = (),
-        offset1: Optional[float] = None,
-        offset2: Optional[float] = None,
-        offset3: Optional[float] = None,
-        localCsys: Optional[DatumCsys] = None,
+        offset1: float | None = None,
+        offset2: float | None = None,
+        offset3: float | None = None,
+        localCsys: DatumCsys | None = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on a part instance.
@@ -147,7 +147,7 @@ class MeshEditAssembly(AssemblyBase):
     def mergeNodes(
         self,
         nodes: Sequence[MeshNode],
-        tolerance: Optional[float] = None,
+        tolerance: float | None = None,
         removeDuplicateElements: Boolean = True,
     ):
         """Merge the nodes of a part instance. The nodes must have been generated using the bottom-up meshing

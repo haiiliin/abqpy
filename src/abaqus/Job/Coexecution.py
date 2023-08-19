@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
@@ -79,7 +77,7 @@ class Coexecution:
     atTime: str = ""
 
     #: A repository of Job objects specifying the jobs that comprise this co-execution.
-    jobs: Dict[str, Job] = {}
+    jobs: dict[str, Job] = {}
 
     #: A tuple of Strings specifying the names of the secondary models for the co-execution.
     #:

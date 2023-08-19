@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -31,4 +29,4 @@ class BeamOrientation:
 
     #: A tuple of Floats specifying direction cosines of the n1-direction of the beam
     #: cross-section.
-    vector: Optional[float] = None
+    vector: float | None = None

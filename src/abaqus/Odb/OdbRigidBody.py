@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -54,7 +52,7 @@ class OdbRigidBody:
 
     #: An AnalyticSurface object specifying the analytic surface whose motion is governed by
     #: the motion of rigid body reference node.
-    analyticSurface: Optional[AnalyticSurface] = None
+    analyticSurface: AnalyticSurface | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -65,7 +63,7 @@ class OdbRigidBody:
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: Optional[AnalyticSurface] = None,
+        analyticSurface: AnalyticSurface | None = None,
     ):
         """This method creates a OdbRigidBody object.
 

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -34,11 +32,11 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly,
     def ConnectorOrientation(
         self,
         region: Set,
-        localCsys1: Optional[DatumCsys] = None,
+        localCsys1: DatumCsys | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = ON,
-        localCsys2: Optional[DatumCsys] = None,
+        localCsys2: DatumCsys | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ) -> ConnectorOrientation:

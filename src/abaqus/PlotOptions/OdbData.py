@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -51,73 +49,73 @@ class OdbData(_OptionsBase):
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
     #: Alternatively, this member may take the value ODB_VALUES.
-    stepPeriods: Optional[float] = None
+    stepPeriods: float | None = None
 
     #: A repository of HistoryVariable objects specifying the history request label. The
     #: repository is read-only.
-    historyVariables: Dict[str, HistoryVariable] = {}
+    historyVariables: dict[str, HistoryVariable] = {}
 
     #: A repository of OdbDataStep objects specifying the list of steps. The repository is
     #: read-only.
-    steps: Dict[str, OdbDataStep] = {}
+    steps: dict[str, OdbDataStep] = {}
 
     #: A repository of OdbDataInstance objects specifying the list of instances. The repository
     #: is read-only.
-    instances: Dict[str, OdbDataInstance] = {}
+    instances: dict[str, OdbDataInstance] = {}
 
     #: A repository of OdbDataMaterial objects specifying the list of materials. The repository
     #: is read-only.
-    materials: Dict[str, OdbDataMaterial] = {}
+    materials: dict[str, OdbDataMaterial] = {}
 
     #: A repository of OdbDataSection objects specifying the list of sections. The repository
     #: is read-only.
-    sections: Dict[str, OdbDataSection] = {}
+    sections: dict[str, OdbDataSection] = {}
 
     #: A repository of OdbDataElementSet objects specifying the list of element sets. The
     #: repository is read-only.
-    elementSets: Dict[str, OdbDataElementSet] = {}
+    elementSets: dict[str, OdbDataElementSet] = {}
 
     #: A repository of OdbDataNodeSet objects specifying the list of node sets. The repository
     #: is read-only.
-    nodeSets: Dict[str, OdbDataNodeSet] = {}
+    nodeSets: dict[str, OdbDataNodeSet] = {}
 
     #: A repository of OdbDataSurfaceSet objects specifying the list of surface sets. The
     #: repository is read-only.
-    surfaceSets: Dict[str, OdbDataSurfaceSet] = {}
+    surfaceSets: dict[str, OdbDataSurfaceSet] = {}
 
     #: A repository of OdbDataDatumCsys objects specifying the list of coordinate systems
     #: defined in the model. The repository is read-only.
-    datumCsyses: Dict[str, OdbDataDatumCsys] = {}
+    datumCsyses: dict[str, OdbDataDatumCsys] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of kinematic couplings.
     #: The repository is read-only.
-    kinematicCouplings: Dict[str, CouplingConstraint] = {}
+    kinematicCouplings: dict[str, CouplingConstraint] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of distributing
     #: couplings. The repository is read-only.
-    distributingCouplings: Dict[str, CouplingConstraint] = {}
+    distributingCouplings: dict[str, CouplingConstraint] = {}
 
     #: A repository of CouplingConstraint objects specifying the list of shellsolid couplings.
     #: The repository is read-only.
-    shellSolidCouplings: Dict[str, CouplingConstraint] = {}
+    shellSolidCouplings: dict[str, CouplingConstraint] = {}
 
     #: A repository of RigidBodyConstraint objects specifying the list of rigid body
     #: constraints. The repository is read-only.
-    rigidbodies: Dict[str, RigidBodyConstraint] = {}
+    rigidbodies: dict[str, RigidBodyConstraint] = {}
 
     #: A repository of MpcConstraint objects specifying the list of multipoint constraints. The
     #: repository is read-only.
-    multiPointConstraints: Dict[str, MpcConstraint] = {}
+    multiPointConstraints: dict[str, MpcConstraint] = {}
 
     #: A repository of TieConstraint objects specifying the list of Tie constraints. The
     #: repository is read-only.
-    ties: Dict[str, TieConstraint] = {}
+    ties: dict[str, TieConstraint] = {}
 
     #: An OdbDiagnosticData object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
     @abaqus_method_doc
-    def setValues(self, activeFrames: Optional[Literal[C.ALL]] = None, stepPeriods: tuple = ()):
+    def setValues(self, activeFrames: Literal[C.ALL | None] = None, stepPeriods: tuple = ()):
         """This method modifies the OdbData object.
 
         Parameters

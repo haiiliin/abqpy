@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -51,7 +49,7 @@ class XYCurve:
     legendSource: SymbolicConstant = CURVE_LEGEND
 
     #: An XYData object specifying the data for the curve.
-    data: Optional[XYData] = None
+    data: XYData | None = None
 
     #: A LineStyle object specifying the line properties used to display the curve.
     lineStyle: LineStyle = LineStyle()
@@ -93,7 +91,7 @@ class XYCurve:
     @abaqus_method_doc
     def setValues(
         self,
-        displayTypes: Optional[Literal[C.SYMBOL, C.LINE]] = None,
+        displayTypes: Literal[C.SYMBOL, C.LINE | None] = None,
         legendLabel: str = "",
         symbolFrequency: int = 1,
         useDefault: Boolean = ON,

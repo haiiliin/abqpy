@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -18,7 +16,7 @@ class SubstructureGenerateFrequency:
     """
 
     #: A Float specifying the lower limit of the frequency range, in cycles/time.
-    lower: Optional[float] = None
+    lower: float | None = None
 
     #: A Float specifying the upper limit of the frequency range, in cycles/time.
-    upper: Optional[float] = None
+    upper: float | None = None

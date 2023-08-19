@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -17,7 +15,7 @@ class DirectDampingByFrequencyComponent:
     """
 
     #: A Float specifying the frequency value in cycles/time.
-    frequency: Optional[float] = None
+    frequency: float | None = None
 
     #: A Float specifying the fraction of critical damping.
-    fraction: Optional[float] = None
+    fraction: float | None = None

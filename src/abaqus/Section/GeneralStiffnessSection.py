@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -46,7 +44,7 @@ class GeneralStiffnessSection(ShellSection):
 
     #: None or a Float specifying the reference temperature for thermal expansion. The default
     #: value is None.
-    referenceTemperature: Optional[float] = None
+    referenceTemperature: float | None = None
 
     #: A Boolean specifying whether or not the section stiffness varies with thermal stresses.
     #: The default value is OFF.
@@ -92,7 +90,7 @@ class GeneralStiffnessSection(ShellSection):
         self,
         name: str,
         stiffnessMatrix: tuple,
-        referenceTemperature: Optional[float] = None,
+        referenceTemperature: float | None = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -162,7 +160,7 @@ class GeneralStiffnessSection(ShellSection):
     @abaqus_method_doc
     def setValues(
         self,
-        referenceTemperature: Optional[float] = None,
+        referenceTemperature: float | None = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

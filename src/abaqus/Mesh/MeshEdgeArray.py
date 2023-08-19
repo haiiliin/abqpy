@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Sequence, Union
+from typing import Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -8,7 +8,7 @@ from .MeshEdge import MeshEdge
 
 
 @abaqus_class_doc
-class MeshEdgeArray(List[MeshEdge]):
+class MeshEdgeArray(list[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
     .. note::
@@ -22,7 +22,7 @@ class MeshEdgeArray(List[MeshEdge]):
     """
 
     @abaqus_method_doc
-    def __init__(self, elemEdges: List[MeshEdge]):
+    def __init__(self, elemEdges: list[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note::

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -53,7 +51,7 @@ class OperatorFilter(Filter):
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: Optional[float] = None
+    limit: float | None = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
@@ -67,7 +65,7 @@ class OperatorFilter(Filter):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method creates an OperatorFilter object.
@@ -122,7 +120,7 @@ class OperatorFilter(Filter):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method modifies the OperatorFilter object.

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -80,7 +78,7 @@ class TangentialBehavior:
 
     #: None or a Float specifying no upper limit or the friction coefficient shear stress
     #: limit. The default value is None.
-    shearStressLimit: Optional[float] = None
+    shearStressLimit: float | None = None
 
     #: A SymbolicConstant specifying the method for modifying the allowable elastic slip.
     #: Possible values are FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.This
@@ -90,11 +88,11 @@ class TangentialBehavior:
     #: A Float specifying the ratio of the allowable maximum elastic slip to a characteristic
     #: model dimension. The default value is 10⁻⁴.This argument applies only to Abaqus/Standard
     #: analyses.
-    fraction: Optional[float] = None
+    fraction: float | None = None
 
     #: None or a Float specifying the absolute magnitude of the allowable elastic slip. The
     #: default value is None.This argument applies only to Abaqus/Standard analyses.
-    absoluteDistance: Optional[float] = None
+    absoluteDistance: float | None = None
 
     #: A sequence of sequences of Floats specifying the tangential properties. Items in the
     #: table data are described below. The default value is an empty sequence.
@@ -109,10 +107,10 @@ class TangentialBehavior:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
-        shearStressLimit: Optional[float] = None,
+        shearStressLimit: float | None = None,
         maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
-        fraction: Optional[float] = None,
-        absoluteDistance: Optional[float] = None,
+        fraction: float | None = None,
+        absoluteDistance: float | None = None,
         table: tuple = (),
     ):
         """This method creates a TangentialBehavior object.

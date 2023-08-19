@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -33,9 +31,9 @@ class JournalOptions:
         self,
         replayGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
         recoverGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
-        defaultFormat: Optional[NumberFormat] = None,
-        fieldReportFormat: Optional[NumberFormat] = None,
-        geometryFormat: Optional[NumberFormat] = None,
+        defaultFormat: NumberFormat | None = None,
+        fieldReportFormat: NumberFormat | None = None,
+        geometryFormat: NumberFormat | None = None,
     ):
         """This method modifies the JournalOptions object.
 

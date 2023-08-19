@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -98,7 +96,7 @@ class GasketThicknessBehavior:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: Optional[float] = None,
+        tensileStiffnessFactor: float | None = None,
         type: Literal[C.DAMAGE, C.ELASTIC_PLASTIC] = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,

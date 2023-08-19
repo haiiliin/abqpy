@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -42,7 +40,7 @@ class ViewportAnnotationOptions:
     def setValues(
         self,
         triad: Boolean = ON,
-        triadPosition: Optional[int] = None,
+        triadPosition: int | None = None,
         triadColor: str = "",
         triadLabels: Literal[C.NUMBERS, C.LETTERS] = NUMBERS,
         triadFont: str = "",
@@ -51,21 +49,21 @@ class ViewportAnnotationOptions:
         legendMinMax: Boolean = OFF,
         legendBox: Boolean = ON,
         legendDecimalPlaces: int = 3,
-        legendPosition: Optional[int] = None,
+        legendPosition: int | None = None,
         legendFont: str = "",
         legendTextColor: str = "",
         legendBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         legendBackgroundColor: str = "",
         title: Boolean = ON,
         titleBox: Boolean = OFF,
-        titlePosition: Optional[int] = None,
+        titlePosition: int | None = None,
         titleFont: str = "",
         titleTextColor: str = "",
         titleBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         titleBackgroundColor: str = "",
         state: Boolean = ON,
         stateBox: Boolean = OFF,
-        statePosition: Optional[int] = None,
+        statePosition: int | None = None,
         stateFont: str = "",
         stateTextColor: str = "",
         stateBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,

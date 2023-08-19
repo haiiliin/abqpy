@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -62,26 +62,26 @@ class PartInstance:
 
     #: An Int specifying the reference node number. This member is valid only if
     #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
-    referenceNode: Optional[int] = None
+    referenceNode: int | None = None
 
     #: A Part object specifying the instanced part.
-    part: Optional[Part] = None
+    part: Part | None = None
 
     #: A repository of Set objects specifying the sets created on the part. For more
     #: information, see Region commands.
-    sets: Dict[str, Set] = {}
+    sets: dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the part. For more
     #: information, see Region commands.
-    surfaces: Dict[str, Surface] = {}
+    surfaces: dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part. For more
     #: information, see Region commands.
-    skins: Dict[str, Skin] = {}
+    skins: dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part. For more
     #: information, see Region commands.
-    stringers: Dict[str, Stringer] = {}
+    stringers: dict[str, Stringer] = {}
 
     #: A VertexArray object.
     vertices: VertexArray = VertexArray([])
@@ -102,7 +102,7 @@ class PartInstance:
     cells: CellArray = CellArray([])
 
     #: A repository of Datum objects.
-    datums: List[Datum] = []
+    datums: list[Datum] = []
 
     #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
@@ -114,7 +114,7 @@ class PartInstance:
     #: For a given element and a given face index within that element, the corresponding
     #: MeshFace object can be retrieved from the repository by using the key calculated as
     # (i*8 + j), where i and j are zero-based element and face indices, respectively.
-    elemFaces: Dict[str, MeshFace] = {}
+    elemFaces: dict[str, MeshFace] = {}
 
     #: A MeshFaceArray object.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -124,13 +124,13 @@ class PartInstance:
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: Dict[str, MeshEdge] = {}
+    elemEdges: dict[str, MeshEdge] = {}
 
     #: A MeshEdgeArray object.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     #: A repository of ReferencePoint objects.
-    referencePoints: Dict[str, ReferencePoint] = {}
+    referencePoints: dict[str, ReferencePoint] = {}
 
     #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
@@ -181,7 +181,7 @@ class PartInstance:
         self.elementEdges = part.elementEdges
 
     @abaqus_method_doc
-    def checkGeometry(self, detailed: Boolean = OFF, level: Optional[int] = None):
+    def checkGeometry(self, detailed: Boolean = OFF, level: int | None = None):
         """This method checks the validity of the geometry of the part instance and prints a count of all
         topological entities on the part instance (faces, edges, vertices, etc.).
 
@@ -268,13 +268,13 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def getTranslation(self) -> Tuple[float, float, float]:
+    def getTranslation(self) -> tuple[float, float, float]:
         """This method returns a tuple of three Floats representing translation in the **X**, **Y**, and **Z**
         directions.
 
         Returns
         -------
-        Tuple[float, float, float]
+        tuple[float, float, float]
             A tuple of three Floats representing the translation.
         """
         return (0.0, 0.0, 0.0)

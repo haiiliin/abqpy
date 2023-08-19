@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -150,8 +148,8 @@ class PropertyPart(PartBase):
     @abaqus_method_doc
     def MaterialOrientation(
         self,
-        region: Optional[Set] = None,
-        localCsys: Optional[DatumCsys] = None,
+        region: Set | None = None,
+        localCsys: DatumCsys | None = None,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
@@ -159,14 +157,14 @@ class PropertyPart(PartBase):
         orientationType: Literal[C.FIELD, C.GLOBAL, C.USER, C.SYSTEM, C.DISCRETE] = GLOBAL,
         normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         normalAxisDefinition: Literal[C.SURFACE, C.NORMAL_VECTOR, C.NORMAL_DATUM] = NORMAL_VECTOR,
-        normalAxisRegion: Optional[Surface] = None,
-        normalAxisDatum: Optional[DatumAxis] = None,
+        normalAxisRegion: Surface | None = None,
+        normalAxisDatum: DatumAxis | None = None,
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         primaryAxisDefinition: Literal[C.SURFACE, C.PRIMARY_VECTOR, C.PRIMARY_DATUM] = PRIMARY_VECTOR,
-        primaryAxisRegion: Optional[Set] = None,
-        primaryAxisDatum: Optional[DatumAxis] = None,
+        primaryAxisRegion: Set | None = None,
+        primaryAxisDatum: DatumAxis | None = None,
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ) -> MaterialOrientation:

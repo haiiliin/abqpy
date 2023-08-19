@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,7 +25,7 @@ class RadiationToAmbientState(InteractionState):
     """
 
     #: A Float specifying the ambient temperature.
-    ambientTemperature: Optional[float] = None
+    ambientTemperature: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
@@ -38,7 +36,7 @@ class RadiationToAmbientState(InteractionState):
     ambientTemperatureAmpState: SymbolicConstant
 
     #: A Float specifying the emissivity.
-    emissivity: Optional[float] = None
+    emissivity: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.

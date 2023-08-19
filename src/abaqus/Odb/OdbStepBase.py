@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, overload
+from typing import overload
 
 from typing_extensions import Literal
 
@@ -28,45 +28,45 @@ class OdbStepBase:
     """
 
     #: An Int specifying the step number.
-    number: Optional[int] = None
+    number: int | None = None
 
     #: A Boolean specifying whether geometric nonlinearity can occur in this step.
     nlgeom: Boolean = OFF
 
     #: A Float specifying the current value of the mass of the model. This does not include the
     #: mass of the acoustic media if any present.
-    mass: Optional[float] = None
+    mass: float | None = None
 
     #: A Float specifying the current value of the mass of the acoustic media of the model.
-    acousticMass: Optional[float] = None
+    acousticMass: float | None = None
 
     #: An OdbFrameArray object.
     frames: OdbFrameArray = []
 
     #: A repository of HistoryRegion objects.
-    historyRegions: Dict[str, HistoryRegion] = {}
+    historyRegions: dict[str, HistoryRegion] = {}
 
     #: A repository of OdbLoadCase objects.
-    loadCases: Dict[str, OdbLoadCase] = {}
+    loadCases: dict[str, OdbLoadCase] = {}
 
     #: A tuple of Floats specifying the coordinates of the center of mass.
-    massCenter: Optional[float] = None
+    massCenter: float | None = None
 
     #: A tuple of Floats specifying the moments and products of inertia about the center of
     #: mass. For 3-D models inertia quantities are written in the following order: I(XX),
     #: I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
     #: outputted.
-    inertiaAboutCenter: Optional[float] = None
+    inertiaAboutCenter: float | None = None
 
     #: A tuple of Floats specifying the moments and products of inertia about the origin of the
     #: global coordinate system. For 3-D models inertia quantities are written in the following
     #: order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
     #: are outputted.
-    inertiaAboutOrigin: Optional[float] = None
+    inertiaAboutOrigin: float | None = None
 
     #: A tuple of Floats specifying the coordinates of the center of mass of the acoustic
     #: media.
-    acousticMassCenter: Optional[float] = None
+    acousticMassCenter: float | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -77,7 +77,7 @@ class OdbStepBase:
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
-        totalTime: Optional[float] = None,
+        totalTime: float | None = None,
     ) -> None:
         """This method creates an OdbStep object.
 

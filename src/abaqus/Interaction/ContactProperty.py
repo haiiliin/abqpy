@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -85,7 +85,7 @@ class ContactProperty(InteractionProperty):
     heatGeneration: GapHeatGeneration = GapHeatGeneration()
 
     #: A Radiation object.
-    radiation: Optional[Radiation] = None
+    radiation: Radiation | None = None
 
     #: A GeometricProperties object.
     geometricProperties: GeometricProperties = GeometricProperties()
@@ -127,11 +127,11 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
         table: tuple = (),
-        shearStressLimit: Optional[float] = None,
+        shearStressLimit: float | None = None,
         maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
-        elasticSlipStiffness: Optional[float] = None,
+        elasticSlipStiffness: float | None = None,
         nStateDependentVars: int = 0,
         useProperties: Boolean = OFF,
     ):
@@ -215,7 +215,7 @@ class ContactProperty(InteractionProperty):
         contactStiffness: Union[Literal[C.AUGMENTED_LAGRANGE, C.PENALTY, C.DEFAULT, C.HARD, C.LINEAR], float] = DEFAULT,
         pressureOverclosure: Literal[C.EXPONENTIAL, C.TABULAR, C.HARD, C.LINEAR, C.SCALE_FACTOR] = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: Optional[float] = None,
+        maxStiffness: float | None = None,
         table: tuple = (),
         constraintEnforcementMethod: Literal[C.AUGMENTED_LAGRANGE, C.DEFAULT, C.DIRECT, C.PENALTY] = DEFAULT,
         overclosureFactor: float = 0,
@@ -372,12 +372,12 @@ class ContactProperty(InteractionProperty):
         useMixedMode: Boolean = OFF,
         mixedModeType: Literal[C.BK, C.ENERGY, C.POWER_LAW, C.TABULAR] = TABULAR,
         modeMixRatio: Literal[C.TRACTION, C.ENERGY, C.TABULAR] = ENERGY,
-        exponent: Optional[float] = None,
+        exponent: float | None = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
         evolTable: tuple = (),
         useStabilization: Boolean = OFF,
-        viscosityCoef: Optional[float] = None,
+        viscosityCoef: float | None = None,
     ):
         """This method creates a ContactDamage object.
 
@@ -735,12 +735,12 @@ class ContactProperty(InteractionProperty):
     def GeometricProperties(
         self,
         contactArea: float = 1,
-        padThickness: Optional[float] = None,
-        trackingThickness: Optional[float] = None,
+        padThickness: float | None = None,
+        trackingThickness: float | None = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: Optional[SymbolicConstant] = None,
+        modelType: SymbolicConstant | None = None,
     ):
         """This method creates a GeometricProperties object.
 

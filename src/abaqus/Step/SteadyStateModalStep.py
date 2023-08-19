@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -147,25 +145,25 @@ class SteadyStateModalStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -174,19 +172,19 @@ class SteadyStateModalStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -196,13 +194,13 @@ class SteadyStateModalStep(AnalysisStep):
         frequencyRange: SteadyStateModalFrequencyArray,
         description: str = "",
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
-        directDamping: Optional[DirectDamping] = None,
-        compositeDamping: Optional[CompositeDamping] = None,
-        rayleighDamping: Optional[RayleighDamping] = None,
-        structuralDamping: Optional[StructuralDamping] = None,
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
+        directDamping: DirectDamping | None = None,
+        compositeDamping: CompositeDamping | None = None,
+        rayleighDamping: RayleighDamping | None = None,
+        structuralDamping: StructuralDamping | None = None,
+        directDampingByFrequency: DirectDampingByFrequency | None = None,
+        rayleighDampingByFrequency: RayleighDampingByFrequency | None = None,
+        structuralDampingByFrequency: StructuralDampingByFrequency | None = None,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
     ):
@@ -264,13 +262,13 @@ class SteadyStateModalStep(AnalysisStep):
         self,
         description: str = "",
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
-        directDamping: Optional[DirectDamping] = None,
-        compositeDamping: Optional[CompositeDamping] = None,
-        rayleighDamping: Optional[RayleighDamping] = None,
-        structuralDamping: Optional[StructuralDamping] = None,
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
+        directDamping: DirectDamping | None = None,
+        compositeDamping: CompositeDamping | None = None,
+        rayleighDamping: RayleighDamping | None = None,
+        structuralDamping: StructuralDamping | None = None,
+        directDampingByFrequency: DirectDampingByFrequency | None = None,
+        rayleighDampingByFrequency: RayleighDampingByFrequency | None = None,
+        structuralDampingByFrequency: StructuralDampingByFrequency | None = None,
         subdivideUsingEigenfrequencies: Boolean = ON,
     ):
         """This method modifies the SteadyStateModalStep object.

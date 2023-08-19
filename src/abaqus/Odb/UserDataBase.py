@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Annotation.Annotation import Annotation
@@ -57,13 +55,13 @@ class UserDataBase:
     legendLabel: str = ""
 
     #: A repository of XYData objects.
-    xyDataObjects: Dict[str, XYData] = {}
+    xyDataObjects: dict[str, XYData] = {}
 
     #: A repository of Annotation objects.
-    annotations: Dict[str, Annotation] = {}
+    annotations: dict[str, Annotation] = {}
 
     #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
-    data: Optional[float] = None
+    data: float | None = None
 
     @abaqus_method_doc
     def XYData(
@@ -76,8 +74,8 @@ class UserDataBase:
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityType | None = None,
+        axis2QuantityType: QuantityType | None = None,
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 

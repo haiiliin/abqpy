@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -56,9 +56,9 @@ class OutputModel(ModelBase):
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
-        interactions: Optional[str] = None,
+        interactions: str | None = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
-        filter: Optional[Literal[C.ANTIALIASING]] = None,
+        filter: Literal[C.ANTIALIASING | None] = None,
         directions: Boolean = ON,
         fasteners: str = "",
         assembledFastener: str = "",
@@ -205,16 +205,16 @@ class OutputModel(ModelBase):
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
         stepName: str = "",
-        interactions: Optional[str] = None,
-        contourIntegral: Optional[str] = None,
+        interactions: str | None = None,
+        contourIntegral: str | None = None,
         numberOfContours: int = 0,
-        stressInitializationStep: Optional[str] = None,
+        stressInitializationStep: str | None = None,
         contourType: Literal[C.J_INTEGRAL, C.C_INTEGRAL, C.T_STRESS, C.K_FACTORS] = J_INTEGRAL,
         kFactorDirection: Literal[C.MTS, C.MERR, C.K110] = MTS,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
-        springs: Optional[tuple] = None,
-        filter: Optional[Literal[C.ANTIALIASING]] = None,
+        springs: tuple | None = None,
+        filter: Literal[C.ANTIALIASING | None] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",
@@ -347,10 +347,10 @@ class OutputModel(ModelBase):
         self,
         name: str,
         surface: Region,
-        refPoint: Optional[SymbolicConstant] = None,
+        refPoint: SymbolicConstant | None = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         projectOrientation: Boolean = OFF,
     ) -> IntegratedOutputSection:
         """This method creates an IntegratedOutputSection object.

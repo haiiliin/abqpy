@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
@@ -29,7 +27,7 @@ class PropertyTable:
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
-    propertyTableDatas: Dict[str, PropertyTableData] = {}
+    propertyTableDatas: dict[str, PropertyTableData] = {}
 
     #: A String specifying the repository key.
     name: str
@@ -94,10 +92,10 @@ class PropertyTable:
     def PropertyTableData(
         self,
         label: str = "",
-        regularize: Optional[SymbolicConstant] = None,
-        extrapolate: Optional[SymbolicConstant] = None,
+        regularize: SymbolicConstant | None = None,
+        extrapolate: SymbolicConstant | None = None,
         isTemp: Boolean = OFF,
-        fieldNums: Optional[int] = None,
+        fieldNums: int | None = None,
         regularizeTolerance: str = "",
         data: str = "",
     ) -> PropertyTableData:

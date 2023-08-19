@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, List
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..TableCollection.DataTable import DataTable
@@ -28,13 +26,13 @@ class TableCollection:
     """
 
     #: A repository of the PropertyTable object.
-    propertyTables: Dict[str, PropertyTable] = {}
+    propertyTables: dict[str, PropertyTable] = {}
 
     #: A repository of the ParameterTable object
-    parameterTables: Dict[str, ParameterTable] = {}
+    parameterTables: dict[str, ParameterTable] = {}
 
     #: sequence of the DataTable object
-    dataTables: List[DataTable] = []
+    dataTables: list[DataTable] = []
 
     @abaqus_method_doc
     def __init__(self, name: str):

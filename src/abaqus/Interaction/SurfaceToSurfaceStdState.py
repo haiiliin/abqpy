@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -42,7 +40,7 @@ class SurfaceToSurfaceStdState(InteractionState):
     interferenceTypeState: SymbolicConstant
 
     #: A Float specifying the allowable overclosure.
-    overclosure: Optional[float] = None
+    overclosure: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **overclosure** member.
     #: Possible values are COMPUTED and DIRECTION_COSINE.
@@ -84,7 +82,7 @@ class SurfaceToSurfaceStdState(InteractionState):
     #: - X-direction cosine of the interference direction vector.
     #: - Y-direction cosine of the interference direction vector.
     #: - Z-direction cosine of the interference direction vector.
-    direction: Optional[float] = None
+    direction: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:

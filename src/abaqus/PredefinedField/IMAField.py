@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Tuple
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..Region.Region import Region
@@ -26,4 +24,4 @@ class IMAField:
     #: A tuple of Strings specifying the name of the discrete fields that contain the volume
     #: fraction data. The length of the tuple corresponds to the number of material instance
     #: names, as established by the assigned Eulerian section.
-    discfieldList: Tuple[str, ...] = ()
+    discfieldList: tuple[str, ...] = ()

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -17,10 +15,10 @@ class DirectDampingComponent:
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.
-    start: Optional[int] = None
+    start: int | None = None
 
     #: An Int specifying the mode number of the highest mode of a range.
-    end: Optional[int] = None
+    end: int | None = None
 
     #: A Float specifying the fraction of critical damping.
-    fraction: Optional[float] = None
+    fraction: float | None = None

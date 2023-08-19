@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, Sequence
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -37,11 +37,11 @@ class Chart:
 
     #: A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
     #: gridArea will take up all available space. The default value is −1.
-    aspectRatio: Optional[float] = None
+    aspectRatio: float | None = None
 
     #: A repository of XYCurve objects specifying a repository of XYCurve objects to display in
     #: the Chart.
-    curves: Dict[str, XYCurve] = {}
+    curves: dict[str, XYCurve] = {}
 
     #: An AxisArray object specifying a read-only sequence of axis objects displayed as axes1 -
     #: the abscissa for a Cartesian chart.
@@ -88,7 +88,7 @@ class Chart:
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the Chart.
-    transform: Optional[float] = None
+    transform: float | None = None
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
@@ -212,11 +212,11 @@ class Chart:
     @abaqus_method_doc
     def setValues(
         self,
-        chart: Optional["Chart"] = None,
+        chart: "Chart" | None = None,
         curvesToPlot: Sequence[XYCurve] = (),
-        aspectRatio: Optional[float] = None,
+        aspectRatio: float | None = None,
         transform: tuple = (),
-        view: Optional[View] = None,
+        view: View | None = None,
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the Chart object.

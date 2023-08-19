@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -34,7 +32,7 @@ class BoundaryCondition:
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def deactivate(self, stepName: str):

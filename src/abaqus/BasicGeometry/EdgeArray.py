@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import Dict, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -9,7 +9,7 @@ from .Edge import Edge
 
 
 @abaqus_class_doc
-class EdgeArray(List[Edge]):
+class EdgeArray(list[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray must be updated for
     that part.
 
@@ -44,7 +44,7 @@ class EdgeArray(List[Edge]):
     """
 
     @abaqus_method_doc
-    def __init__(self, edges: List[Edge]) -> None:
+    def __init__(self, edges: list[Edge]) -> None:
         """This method creates an EdgeArray object.
 
         .. note::
@@ -68,7 +68,7 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[float, float, float],
+        coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
     ) -> Edge:
         ...
@@ -77,22 +77,22 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[Edge]:
+    ) -> list[Edge]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[Edge]:
+    ) -> list[Edge]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[Edge, List[Edge]]:
+    def findAt(self, *args, **kwargs) -> Union[Edge, list[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge that is at the arbitrary
         point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is found, findAt
@@ -169,11 +169,11 @@ class EdgeArray(List[Edge]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Edge]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Edge]:
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, List[Edge]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, list[Edge]]:
         """This method returns the object or objects in the EdgeArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -243,8 +243,8 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def getByBoundingCylinder(
         self,
-        center1: Tuple[float, float, float],
-        center2: Tuple[float, float, float],
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
         radius: float,
     ) -> EdgeArray:
         """This method returns an array of edge objects that lie within the specified bounding cylinder.
@@ -270,9 +270,9 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def getByBoundingSphere(
         self,
-        center: Tuple[float, float, float],
+        center: tuple[float, float, float],
         radius: float,
-    ) -> Dict[str, Tuple[float, float, float]]:
+    ) -> dict[str, tuple[float, float, float]]:
         """This method returns an array of edge objects that lie within the specified bounding sphere.
 
         Parameters
@@ -290,13 +290,13 @@ class EdgeArray(List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the edge sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

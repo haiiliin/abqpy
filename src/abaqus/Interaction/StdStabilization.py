@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -29,7 +27,7 @@ class StdStabilization(ContactStabilization):
 
     #: None or a Float specifying the clearance distance at which the stabilization becomes
     #: zero. The default value is None.
-    zeroDistance: Optional[float] = None
+    zeroDistance: float | None = None
 
     #: A Float specifying the factor by which the analysis will reduce the contact
     #: stabilization coefficient per increment. The default value is 0.1.
@@ -56,7 +54,7 @@ class StdStabilization(ContactStabilization):
     def __init__(
         self,
         name: str,
-        zeroDistance: Optional[float] = None,
+        zeroDistance: float | None = None,
         reductionFactor: float = 0,
         scaleFactor: float = 1,
         tangentialFactor: float = 0,
@@ -108,7 +106,7 @@ class StdStabilization(ContactStabilization):
     @abaqus_method_doc
     def setValues(
         self,
-        zeroDistance: Optional[float] = None,
+        zeroDistance: float | None = None,
         reductionFactor: float = 0,
         scaleFactor: float = 1,
         tangentialFactor: float = 0,

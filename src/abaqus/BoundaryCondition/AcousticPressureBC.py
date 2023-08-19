@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -53,7 +53,7 @@ class AcousticPressureBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(

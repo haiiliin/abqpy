@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -20,7 +18,7 @@ class Keyword:
     name: str = ""
 
     #: A Dictionary of Strings specifying the keyword parameters.
-    parameter: Optional[dict] = None
+    parameter: dict | None = None
 
     #: A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type
     #: of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if

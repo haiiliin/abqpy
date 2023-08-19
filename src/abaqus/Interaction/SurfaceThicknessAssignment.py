@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Tuple, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -58,8 +58,8 @@ class SurfaceThicknessAssignment:
     def appendInStep(
         self,
         stepName: str,
-        assignments: Tuple[
-            Tuple[
+        assignments: tuple[
+            tuple[
                 Union[Region, Material, Literal[C.THINNING, C.ORIGINAL, C.GLOBAL]],
                 Union[SymbolicConstant, float],
                 float,

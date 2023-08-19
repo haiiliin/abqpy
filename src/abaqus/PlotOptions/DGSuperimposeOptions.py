@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import (
@@ -181,4 +179,4 @@ class DGSuperimposeOptions:
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: Optional[float] = None
+    coordinateScaleFactors: float | None = None

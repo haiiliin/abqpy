@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -44,7 +42,7 @@ class EmbeddedRegion(Constraint):
 
     #: A Float specifying a small value below which the weighting factors will be zeroed out.
     #: The default value is 10⁻⁶.
-    weightFactorTolerance: Optional[float] = None
+    weightFactorTolerance: float | None = None
 
     #: A SymbolicConstant specifying the method used to determine the embedded element
     #: tolerance. Possible values are ABSOLUTE, FRACTIONAL, and BOTH. The default value is
@@ -70,7 +68,7 @@ class EmbeddedRegion(Constraint):
         name: str,
         embeddedRegion: Region,
         hostRegion: Region,
-        weightFactorTolerance: Optional[float] = None,
+        weightFactorTolerance: float | None = None,
         toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
@@ -120,7 +118,7 @@ class EmbeddedRegion(Constraint):
     @abaqus_method_doc
     def setValues(
         self,
-        weightFactorTolerance: Optional[float] = None,
+        weightFactorTolerance: float | None = None,
         toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,

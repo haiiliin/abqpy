@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -45,7 +45,7 @@ class Moment(Load):
     #: local coordinate system of the load. If **localCsys** = None, the load is defined in the
     #: global coordinate system. When this member is queried, it returns an Int. The default
     #: value is None.
-    localCsys: Optional[int] = None
+    localCsys: int | None = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -61,12 +61,12 @@ class Moment(Load):
         name: str,
         createStepName: str,
         region: Region,
-        cm1: Optional[float] = None,
-        cm2: Optional[float] = None,
-        cm3: Optional[float] = None,
+        cm1: float | None = None,
+        cm2: float | None = None,
+        cm3: float | None = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
@@ -124,12 +124,12 @@ class Moment(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        cm1: Optional[float] = None,
-        cm2: Optional[float] = None,
-        cm3: Optional[float] = None,
+        cm1: float | None = None,
+        cm2: float | None = None,
+        cm3: float | None = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):

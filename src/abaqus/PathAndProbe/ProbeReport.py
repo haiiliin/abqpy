@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -29,7 +27,7 @@ class ProbeReport:
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional[str] = None,
+        options: str | None = None,
         numColumns: int = 80,
         numDigits: int = 6,
         numFormat: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,

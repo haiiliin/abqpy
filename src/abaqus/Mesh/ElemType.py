@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -136,7 +136,7 @@ class ElemType:
 
     #: A Float specifying the maximum degradation option for damage control. The default value
     #: is −1.0.
-    maxDegradation: Optional[float] = None
+    maxDegradation: float | None = None
 
     #: A Float specifying the viscosity option. The default value is 0.0.This argument is
     #: applicable only to some Abaqus/Standard elements.
@@ -164,21 +164,21 @@ class ElemType:
     #:
     #: .. versionadded:: 2019
     #:     The ``nodeOffset`` attribute was added.
-    nodeOffset: Optional[int] = None
+    nodeOffset: int | None = None
 
     #: A Float specifying the linear kinematic conversion value.This argument is applicable
     #: only to some Abaqus/Explicit elements.
     #:
     #: .. versionadded:: 2022
     #:     The ``linearKinematicCtrl`` attribute was added.
-    linearKinematicCtrl: Optional[float] = None
+    linearKinematicCtrl: float | None = None
 
     #: A Float specifying the initial gap opening.This parameter is applicable only to some
     #: Abaqus/Standard elements.
     #:
     #: .. versionadded:: 2022
     #:     The ``initialGapOpening`` attribute was added.
-    initialGapOpening: Optional[float] = None
+    initialGapOpening: float | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -204,14 +204,14 @@ class ElemType:
         particleConversionThreshold: float = 0,
         particleConversionPPD: int = 1,
         particleConversionKernel: Literal[C.QUADRATIC, C.CUBIC, C.QUINTIC] = CUBIC,
-        maxDegradation: Optional[float] = None,
+        maxDegradation: float | None = None,
         viscosity: float = 0,
         linearBulkViscosity: float = 1,
         quadraticBulkViscosity: float = 1,
         numFourierModes: int = 1,
-        nodeOffset: Optional[int] = None,
-        linearKinematicCtrl: Optional[float] = None,
-        initialGapOpening: Optional[float] = None,
+        nodeOffset: int | None = None,
+        linearKinematicCtrl: float | None = None,
+        initialGapOpening: float | None = None,
     ):
         """This method creates an ElemType object.
 

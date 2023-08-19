@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -38,7 +36,7 @@ class SubmodelBCState(BoundaryConditionState):
     #: An Int specifying the increment number in the global model step at which the solution
     #: will be used to specify the values of the driven variables. This argument is applicable
     #: only for linear perturbation steps.
-    globalIncrement: Optional[int] = None
+    globalIncrement: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **globalIncrement** member.
     #: Possible values are SET and UNCHANGED.
@@ -46,7 +44,7 @@ class SubmodelBCState(BoundaryConditionState):
 
     #: None or a Float specifying the thickness of the center zone size around the shell
     #: midsurface. The default value is None.
-    centerZoneSize: Optional[float] = None
+    centerZoneSize: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **centerZoneSize** member.
     #: Possible values are SET and UNCHANGED.
@@ -68,7 +66,7 @@ class SubmodelBCState(BoundaryConditionState):
 
     #: A tuple of Ints specifying the degrees of freedom to which the boundary condition is
     #: applied.
-    dof: Optional[int] = None
+    dof: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

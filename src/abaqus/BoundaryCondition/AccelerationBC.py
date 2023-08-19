@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -46,7 +46,7 @@ class AccelerationBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -62,7 +62,7 @@ class AccelerationBC(BoundaryCondition):
         ar2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method creates an AccelerationBC object.
@@ -138,7 +138,7 @@ class AccelerationBC(BoundaryCondition):
         ar2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method modifies the data for an existing AccelerationBC object in the step where it is created.

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
@@ -32,7 +30,7 @@ class LeafFromElementVarRange(Leaf):
 
     #: A Float specifying the minimum value for the variable range. The default value is
     #: −3.40282346639E38.
-    minimumRange: Optional[float] = None
+    minimumRange: float | None = None
 
     #: A Float specifying the maximum value for the variable range. The default value is
     #: 3.40282346639e+038.
@@ -45,7 +43,7 @@ class LeafFromElementVarRange(Leaf):
     @abaqus_method_doc
     def __init__(
         self,
-        minimumRange: Optional[float] = None,
+        minimumRange: float | None = None,
         maximumRange: float = 3,
         insideRange: Boolean = ON,
     ):

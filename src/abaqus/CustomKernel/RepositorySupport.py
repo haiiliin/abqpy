@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Callable, List, Union
+from typing import Callable, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -39,7 +39,7 @@ class RepositorySupport(CommandRegister):
         super().__init__()
 
     @abaqus_method_doc
-    def Repository(self, name: str, constructors: Union[Callable, List[Callable]]) -> None:
+    def Repository(self, name: str, constructors: Union[Callable, list[Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
         RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored
         in the repository are assumed to have an attribute called **name** that stores the key used to access

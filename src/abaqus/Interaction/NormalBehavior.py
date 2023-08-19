@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -60,7 +60,7 @@ class NormalBehavior:
 
     #: None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
     #: upper limit. The default value is None.
-    maxStiffness: Optional[float] = None
+    maxStiffness: float | None = None
 
     #: A sequence of sequences of Floats specifying the normal behavior properties. This
     #: argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
@@ -121,7 +121,7 @@ class NormalBehavior:
         contactStiffness: Union[Literal[C.AUGMENTED_LAGRANGE, C.PENALTY, C.DEFAULT, C.HARD, C.LINEAR], float] = DEFAULT,
         pressureOverclosure: Literal[C.EXPONENTIAL, C.TABULAR, C.HARD, C.LINEAR, C.SCALE_FACTOR] = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: Optional[float] = None,
+        maxStiffness: float | None = None,
         table: tuple = (),
         constraintEnforcementMethod: Literal[C.AUGMENTED_LAGRANGE, C.DEFAULT, C.DIRECT, C.PENALTY] = DEFAULT,
         overclosureFactor: float = 0,

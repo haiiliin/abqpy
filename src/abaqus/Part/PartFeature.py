@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -181,8 +181,8 @@ class PartFeature(BaseFeature):
         self,
         sketch: ConstrainedSketch,
         depth: float,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
     ) -> BaseFeature:
         """This method creates a first Feature object by extruding the given ConstrainedSketch object by the
         given depth, creating a solid. The ConstrainedSketch object must define a closed profile.
@@ -224,7 +224,7 @@ class PartFeature(BaseFeature):
         self,
         sketch: ConstrainedSketch,
         angle: float,
-        pitch: Optional[float] = None,
+        pitch: float | None = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
@@ -331,8 +331,8 @@ class PartFeature(BaseFeature):
         self,
         sketch: ConstrainedSketch,
         depth: float,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
     ) -> BaseFeature:
         """This method creates a first Feature object by extruding the given ConstrainedSketch object by the
         given depth, creating a shell. The ConstrainedSketch object can define either an open or closed profile.
@@ -378,7 +378,7 @@ class PartFeature(BaseFeature):
         self,
         sketch: ConstrainedSketch,
         angle: float,
-        pitch: Optional[float] = None,
+        pitch: float | None = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
@@ -481,8 +481,8 @@ class PartFeature(BaseFeature):
         self,
         side1: Sequence[Edge],
         side2: tuple,
-        method: Optional[Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH]] = None,
-        path: Optional[Edge] = None,
+        method: Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH | None] = None,
+        path: Edge | None = None,
     ) -> BaseFeature:
         """This method creates a Feature object by creating new faces that blends two sets of faces.
 
@@ -656,7 +656,7 @@ class PartFeature(BaseFeature):
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        sketchOrientation: Optional[Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM]] = None,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM | None] = None,
     ) -> BaseFeature:
         """This method creates an additional Feature object by cutting a hole using the given ConstrainedSketch
         object.
@@ -697,10 +697,10 @@ class PartFeature(BaseFeature):
         sketchUpEdge: Edge,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM],
         sketch: ConstrainedSketch,
-        depth: Optional[float] = None,
+        depth: float | None = None,
         upToFace: str = "",
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         flipExtrudeDirection: Boolean = OFF,
     ) -> BaseFeature:
         """This method creates an additional Feature object by extruding the given
@@ -766,12 +766,12 @@ class PartFeature(BaseFeature):
     def CutLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        startTangent: Optional[float] = None,
-        startMagnitude: Optional[float] = None,
-        endTangent: Optional[float] = None,
-        endMagnitude: Optional[float] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startTangent: float | None = None,
+        startMagnitude: float | None = None,
+        endTangent: float | None = None,
+        endMagnitude: float | None = None,
         globalSmoothing: Boolean = OFF,
     ) -> BaseFeature:
         """This method creates an additional Feature object by lofting between the given sections and cutting
@@ -843,7 +843,7 @@ class PartFeature(BaseFeature):
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM],
         sketch: ConstrainedSketch,
         angle: float,
-        pitch: Optional[float] = None,
+        pitch: float | None = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
@@ -908,13 +908,13 @@ class PartFeature(BaseFeature):
         path: str,
         profile: str,
         pathPlane: str = "",
-        pathUpEdge: Optional[Edge] = None,
+        pathUpEdge: Edge | None = None,
         pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
-        sketchUpEdge: Optional[Edge] = None,
+        sketchUpEdge: Edge | None = None,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
     ) -> BaseFeature:
@@ -995,7 +995,7 @@ class PartFeature(BaseFeature):
         self,
         faces: Sequence[Face] = (),
         extendAlong: Sequence[Edge] = (),
-        distance: Optional[float] = None,
+        distance: float | None = None,
         upToFaces: Sequence[Face] = (),
         trimToExtendedTargetSurfaces: Boolean = True,
         upToReferenceRep: Boolean = OFF,
@@ -1044,8 +1044,8 @@ class PartFeature(BaseFeature):
         self,
         elementFaces: Region,
         stitch: Boolean = OFF,
-        stitchTolerance: Optional[float] = None,
-        analyticFitTolerance: Optional[float] = None,
+        stitchTolerance: float | None = None,
+        analyticFitTolerance: float | None = None,
         associateFace: Boolean = OFF,
     ) -> BaseFeature:
         """This method creates a geometry face from a collection of orphan element faces.
@@ -1242,12 +1242,11 @@ class PartFeature(BaseFeature):
     def OffsetFaces(
         self,
         faceList: Sequence[Face],
-        distance: Optional[float] = None,
+        distance: float | None = None,
         targetFaces: Sequence[Face] = (),
-        targetFacesMethod: Optional[
-            Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
-        ] = None,
-        fractionDistance: Optional[float] = None,
+        targetFacesMethod: Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
+        | None = None,
+        fractionDistance: float | None = None,
         trimToReferenceRep: Boolean = OFF,
     ) -> BaseFeature:
         """This method creates new faces by offsetting existing faces.
@@ -1632,11 +1631,11 @@ class PartFeature(BaseFeature):
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        depth: Optional[float] = None,
+        depth: float | None = None,
         upToFace: str = "",
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         flipExtrudeDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
     ) -> BaseFeature:
@@ -1704,12 +1703,12 @@ class PartFeature(BaseFeature):
     def ShellLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        startTangent: Optional[float] = None,
-        startMagnitude: Optional[float] = None,
-        endTangent: Optional[float] = None,
-        endMagnitude: Optional[float] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startTangent: float | None = None,
+        startMagnitude: float | None = None,
+        endTangent: float | None = None,
+        endMagnitude: float | None = None,
         paths: tuple = (),
         globalSmoothing: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
@@ -1795,7 +1794,7 @@ class PartFeature(BaseFeature):
         sketch: ConstrainedSketch,
         angle: float,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        pitch: Optional[float] = None,
+        pitch: float | None = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
@@ -1865,13 +1864,13 @@ class PartFeature(BaseFeature):
         path: str,
         profile: str,
         pathPlane: str = "",
-        pathUpEdge: Optional[Edge] = None,
+        pathUpEdge: Edge | None = None,
         pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
-        sketchUpEdge: Optional[Edge] = None,
+        sketchUpEdge: Edge | None = None,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
@@ -1958,11 +1957,11 @@ class PartFeature(BaseFeature):
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Union[Edge, DatumAxis],
         sketch: ConstrainedSketch,
-        depth: Optional[float] = None,
-        upToFace: Optional[Face] = None,
+        depth: float | None = None,
+        upToFace: Face | None = None,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         flipExtrudeDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
     ) -> BaseFeature:
@@ -2029,12 +2028,12 @@ class PartFeature(BaseFeature):
     def SolidLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
-        startTangent: Optional[float] = None,
-        startMagnitude: Optional[float] = None,
-        endTangent: Optional[float] = None,
-        endMagnitude: Optional[float] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startTangent: float | None = None,
+        startMagnitude: float | None = None,
+        endTangent: float | None = None,
+        endMagnitude: float | None = None,
         paths: tuple = (),
         globalSmoothing: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
@@ -2118,7 +2117,7 @@ class PartFeature(BaseFeature):
         sketch: ConstrainedSketch,
         angle: float,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        pitch: Optional[float] = None,
+        pitch: float | None = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
@@ -2187,13 +2186,13 @@ class PartFeature(BaseFeature):
         path: str,
         profile: str,
         pathPlane: str = "",
-        pathUpEdge: Optional[Edge] = None,
+        pathUpEdge: Edge | None = None,
         pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
-        sketchUpEdge: Optional[Edge] = None,
+        sketchUpEdge: Edge | None = None,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
-        draftAngle: Optional[float] = None,
-        pitch: Optional[float] = None,
+        draftAngle: float | None = None,
+        pitch: float | None = None,
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
@@ -2274,7 +2273,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def Stitch(self, edgeList: Sequence[Edge] = (), stitchTolerance: Optional[float] = None) -> BaseFeature:
+    def Stitch(self, edgeList: Sequence[Edge] = (), stitchTolerance: float | None = None) -> BaseFeature:
         """This method attempts to create a valid part by binding together free and imprecise edges of all the
         faces of a part. If **edgeList** is not given, a global stitch will be performed. If **stitchTolerance**
         is not specified, a value of 1.0 will be used.

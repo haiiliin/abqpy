@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ...UtilityAndView.abaqusConstants import SymbolicConstant
@@ -21,7 +19,7 @@ class ConstrainedSketchGeometry:
     """
 
     #: An Int specifying the index of the sketch entity in the ConstrainedSketchGeometryArray.
-    id: Optional[int] = None
+    id: int | None = None
 
     #: A SymbolicConstant specifying the geometry of the sketch entity. Possible values are
     #: ARC, CIRCLE, ELLIPSE, LINE, and SPLINE.
@@ -33,4 +31,4 @@ class ConstrainedSketchGeometry:
 
     #: A tuple of Floats specifying the **X**  and*Y*-coordinates of a point located on the
     #: geometry.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None

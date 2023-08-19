@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from .Datum import Datum
@@ -26,7 +24,7 @@ class DatumPlane(Datum):
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the datum.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     #: A tuple of Floats specifying a sequence of three Floats specifying the normal.
     normal: tuple = ()

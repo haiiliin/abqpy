@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, overload
+from typing import overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -103,7 +103,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-    def QuantityType(label: str = "", type: Optional[SymbolicConstant] = None) -> QuantityType:
+    def QuantityType(label: str = "", type: SymbolicConstant | None = None) -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note::
@@ -309,8 +309,8 @@ class XYPlot(XYPlotBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityType | None = None,
+        axis2QuantityType: QuantityType | None = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 

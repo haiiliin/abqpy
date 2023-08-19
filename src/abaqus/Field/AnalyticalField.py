@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -105,22 +103,21 @@ class AnalyticalField(Field):
         numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE] = REAL,
         complexAngle: float = 0,
         sectionPoint: str = "",
-        refinementType: Optional[Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT]] = None,
+        refinementType: Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT | None] = None,
         refinementLabel: str = "",
-        displayOutputPosition: Optional[
-            Literal[
-                C.ELEMENT_NODAL,
-                C.ELEMENT_FACE,
-                C.WHOLE_ELEMENT,
-                C.NODAL,
-                C.INTEGRATION_POINT,
-                C.ELEMENT_CENTROID,
-                C.WHOLE_MODEL,
-                C.GENERAL_PARTICLE,
-                C.WHOLE_PART_INSTANCE,
-                C.WHOLE_REGION,
-            ]
-        ] = None,
+        displayOutputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ]
+        | None = None,
     ) -> OdbMeshRegionData:
         """This method creates an OdbMeshRegionData object.
 

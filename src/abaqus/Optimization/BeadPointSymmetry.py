@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -29,10 +27,10 @@ class BeadPointSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the position of the symmetry point defined as the
     #: origin of a local coordinate system. If **csys** = None, the global coordinate system is
     #: used. When this member is queried, it returns an Int. The default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     @abaqus_method_doc
-    def __init__(self, name: str, region: Region, csys: Optional[int] = None):
+    def __init__(self, name: str, region: Region, csys: int | None = None):
         """This method creates a BeadPointSymmetry object.
 
         .. note::
@@ -59,7 +57,7 @@ class BeadPointSymmetry(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, csys: Optional[int] = None):
+    def setValues(self, csys: int | None = None):
         """This method modifies the BeadPointSymmetry object.
 
         Parameters

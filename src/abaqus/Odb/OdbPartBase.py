@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, Sequence, overload
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -41,13 +41,13 @@ class OdbPartBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: Dict[str, OdbSet] = {}
+    nodeSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: Dict[str, OdbSet] = {}
+    elementSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: Dict[str, OdbSet] = {}
+    surfaces: dict[str, OdbSet] = {}
 
     #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
@@ -107,7 +107,7 @@ class OdbPartBase:
         connectivity: tuple,
         type: str,
         elementSetName: str = "",
-        sectionCategory: Optional[SectionCategory] = None,
+        sectionCategory: SectionCategory | None = None,
     ):
         """This method adds elements to an OdbPart object using element labels and nodal connectivity.
         Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer to plot contours
@@ -134,8 +134,8 @@ class OdbPartBase:
         self,
         elementData: tuple,
         type: str,
-        elementSetName: Optional[str] = None,
-        sectionCategory: Optional[SectionCategory] = None,
+        elementSetName: str | None = None,
+        sectionCategory: SectionCategory | None = None,
     ):
         """This method adds elements to an OdbPart object using a sequence of element labels and nodal
         connectivity. Warning:Adding elements not in ascending order of their labels may cause Abaqus/Viewer to
@@ -160,7 +160,7 @@ class OdbPartBase:
         ...
 
     @overload
-    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: Optional[str] = None):
+    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str | None = None):
         """This method adds nodes to an OdbPart object using node labels and coordinates. Warning:Adding nodes
         not in ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
 
@@ -177,7 +177,7 @@ class OdbPartBase:
 
     @overload
     @abaqus_method_doc
-    def addNodes(self, nodeData: tuple, nodeSetName: Optional[str] = None):
+    def addNodes(self, nodeData: tuple, nodeSetName: str | None = None):
         """This method adds nodes to an OdbPart object using a sequence of node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours
         incorrectly.

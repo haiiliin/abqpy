@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -88,7 +86,7 @@ class SectionLayer:
         angle: float = 0,
         additionalRotationType: Literal[C.ROTATION_NONE, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
         plyName: str = "",
-        orientation: Optional[SymbolicConstant] = None,
+        orientation: SymbolicConstant | None = None,
         additionalRotationField: str = "",
     ):
         """This method creates a SectionLayer object.

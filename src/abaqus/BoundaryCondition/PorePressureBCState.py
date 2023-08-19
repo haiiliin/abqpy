@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,7 +25,7 @@ class PorePressureBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the pore pressure magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the pore pressure magnitude.
     #: Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

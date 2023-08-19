@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -34,7 +32,7 @@ def addCallback(
     caller: str,
     methodName: str,
     callback: str,
-    userData: Optional[str] = None,
+    userData: str | None = None,
     callAfter: Boolean = OFF,
 ):
     """This method adds a callback function that will be invoked when certain Abaqus/CAE commands are about to
@@ -76,7 +74,7 @@ def addCallback(
 
 
 @abaqus_function_doc
-def removeCallback(caller: str, methodName: str, callback: str, userData: Optional[str] = None):
+def removeCallback(caller: str, methodName: str, callback: str, userData: str | None = None):
     """This method removes a callback added by the addCallback method. To successfully remove a callback, all
     arguments must exactly match those used when the callback was added.
 

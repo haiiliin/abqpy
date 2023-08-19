@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -70,8 +68,8 @@ class Legend:
         title: str = "",
         numberFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         numDigits: int = 2,
-        textStyle: Optional[TextStyle] = None,
-        titleStyle: Optional[TextStyle] = None,
+        textStyle: TextStyle | None = None,
+        titleStyle: TextStyle | None = None,
     ):
         """This method modifies the Legend object.
 

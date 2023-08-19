@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -30,7 +28,7 @@ class PressurePenetrationState(InteractionState):
     #: A Float specifying the fraction of the current step time over which the fluid pressure
     #: on newly penetrated contact surface segments is ramped up to the current magnitude. The
     #: default value is 10⁻³.
-    penetrationTime: Optional[float] = None
+    penetrationTime: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **penetrationTime** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
@@ -50,7 +48,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
     #: analyses, a tuple of Complexes specifying the fluid pressure magnitude.
-    penetrationPressure: Optional[float] = None
+    penetrationPressure: float | None = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.
@@ -58,7 +56,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A tuple of Floats specifying the critical contact pressure below which fluid penetration
     #: starts to occur.
-    criticalPressure: Optional[float] = None
+    criticalPressure: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:

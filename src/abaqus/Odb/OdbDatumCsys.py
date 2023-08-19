@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -34,16 +32,16 @@ class OdbDatumCsys:
 
     #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
     #: system.
-    origin: Optional[float] = None
+    origin: float | None = None
 
     #: A tuple of Floats specifying a point on the **X** axis.
-    xAxis: Optional[float] = None
+    xAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Y** axis.
-    yAxis: Optional[float] = None
+    yAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Z** axis.
-    zAxis: Optional[float] = None
+    zAxis: float | None = None
 
     @abaqus_method_doc
     def DatumCsysByThreePoints(
@@ -222,7 +220,7 @@ class OdbDatumCsys:
         ...
 
     @abaqus_method_doc
-    def globalToLocal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+    def globalToLocal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this local
         coordinate system.
 
@@ -236,13 +234,13 @@ class OdbDatumCsys:
 
         Returns
         -------
-        Tuple[float, float, float]
+        tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
         return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
-    def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
+    def localToGlobal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global
         coordinate system.
 
@@ -256,7 +254,7 @@ class OdbDatumCsys:
 
         Returns
         -------
-        Tuple[float, float, float]
+        tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
         return (0.0, 0.0, 0.0)

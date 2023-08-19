@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Dict, List, Optional, Union
+from typing import TYPE_CHECKING, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -31,36 +31,36 @@ class MdbBase:
     """
 
     #: An Int specifying the release number of the Mdb object in memory.
-    version: Optional[int] = None
+    version: int | None = None
 
     #: A Float specifying the value of a counter associated with the Mdb object. The counter
     #: indicates when the Mdb object was last changed.
-    lastChangedCount: Optional[float] = None
+    lastChangedCount: float | None = None
 
     #: A repository of Job objects.
-    jobs: Dict[str, Union[Job, ModelJob, JobFromInputFile]] = {}
+    jobs: dict[str, Union[Job, ModelJob, JobFromInputFile]] = {}
 
     #: A repository of AdaptivityProcess objects.
-    adaptivityProcesses: Dict[str, AdaptivityProcess] = {}
+    adaptivityProcesses: dict[str, AdaptivityProcess] = {}
 
     #: A repository of Coexecution objects.
-    coexecutions: Dict[str, Coexecution] = {}
+    coexecutions: dict[str, Coexecution] = {}
 
     #: A repository of OptimizationProcess objects.
-    optimizationProcesses: Dict[str, OptimizationProcess] = {}
+    optimizationProcesses: dict[str, OptimizationProcess] = {}
 
     #: A MeshEditOptions object specifying the undo/redo behavior when editing meshes on parts
     #: or part instances.
     meshEditOptions: MeshEditOptions = MeshEditOptions()
 
     #: A repository of Model objects.
-    models: Dict[str, Model] = {}
+    models: dict[str, Model] = {}
 
     #: A RepositorySupport object.
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Annotation objects.
-    annotations: Dict[str, Annotation] = {}
+    annotations: dict[str, Annotation] = {}
 
     @abaqus_method_doc
     def __init__(self, pathName: str = ""):
@@ -238,13 +238,13 @@ class MdbBase:
         ...
 
     @abaqus_method_doc
-    def getAuxMdbModelNames(self) -> List[str]:
+    def getAuxMdbModelNames(self) -> list[str]:
         """This method returns a list of model names present in the auxiliary Mdb which had been opened earlier
         using the openAuxMdb command.
 
         Returns
         -------
-        List[str]
+        list[str]
             A list of model names present in the auxiliaryMdb
 
         Raises

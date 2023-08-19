@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -31,7 +29,7 @@ class SubmodelBC(BoundaryCondition):
 
     #: None or a Float specifying the absolute value by which a driven node of the submodel can
     #: lie outside the region of the elements of the global model. The default value is None.
-    absoluteExteriorTolerance: Optional[float] = None
+    absoluteExteriorTolerance: float | None = None
 
     #: None or a Float specifying the fraction of the average element size in the global model
     #: by which a driven node of the submodel can lie outside the region of the elements of the
@@ -53,7 +51,7 @@ class SubmodelBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -66,11 +64,11 @@ class SubmodelBC(BoundaryCondition):
         timeScale: Boolean,
         shellThickness: float,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: Optional[float] = None,
+        absoluteExteriorTolerance: float | None = None,
         exteriorTolerance: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         globalIncrement: int = 0,
-        centerZoneSize: Optional[float] = None,
+        centerZoneSize: float | None = None,
         intersectionOnly: Boolean = OFF,
     ):
         """This method creates a SubmodelBC object.
@@ -145,11 +143,11 @@ class SubmodelBC(BoundaryCondition):
     def setValues(
         self,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: Optional[float] = None,
+        absoluteExteriorTolerance: float | None = None,
         exteriorTolerance: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         globalIncrement: int = 0,
-        centerZoneSize: Optional[float] = None,
+        centerZoneSize: float | None = None,
     ):
         """This method modifies the data for an existing SubmodelBC object in the step where it is created.
 
@@ -189,7 +187,7 @@ class SubmodelBC(BoundaryCondition):
         dof: tuple = (),
         globalStep: str = "",
         globalIncrement: int = 0,
-        centerZoneSize: Optional[float] = None,
+        centerZoneSize: float | None = None,
     ):
         """This method modifies the propagating data for an existing SubmodelBC object in the specified step.
 

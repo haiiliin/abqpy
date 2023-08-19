@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, overload
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -31,10 +31,10 @@ class FieldOutput:
 
     #: An Int specifying the dimension of vector or the first dimension (number of rows) of
     #: matrix.
-    dim: Optional[int] = None
+    dim: int | None = None
 
     #: An Int specifying the second dimension (number of columns) of matrix.
-    dim2: Optional[int] = None
+    dim2: int | None = None
 
     #: A Boolean specifying whether the data are complex.
     isComplex: Boolean = OFF
@@ -45,7 +45,7 @@ class FieldOutput:
     #: A FieldValueArray object specifying the order of the objects in the array is determined
     #: by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
     #: description of the order.
-    values: Optional[FieldValueArray] = None
+    values: FieldValueArray | None = None
 
     #: A String specifying the output variable name.
     name: str
@@ -87,7 +87,7 @@ class FieldOutput:
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: Optional[SymbolicConstant] = None,
+        validInvariants: SymbolicConstant | None = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.
@@ -172,7 +172,7 @@ class FieldOutput:
         instance: OdbInstance,
         labels: tuple,
         data: tuple,
-        sectionPoint: Optional[SectionPoint] = None,
+        sectionPoint: SectionPoint | None = None,
         localCoordSystem: tuple = (),
     ):
         """This method adds data to a FieldOutput object.
@@ -259,8 +259,8 @@ class FieldOutput:
         position: SymbolicConstant,
         set: OdbSet,
         data: tuple,
-        sectionPoint: Optional[SectionPoint] = None,
-        conjugateData: Optional[float] = None,
+        sectionPoint: SectionPoint | None = None,
+        conjugateData: float | None = None,
     ):
         """This method adds data to a FieldOutput object.
 
@@ -540,7 +540,7 @@ class FieldOutput:
         return FieldOutput("", "", C.SCALAR)
 
     @overload
-    def getTransformedField(self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""):
+    def getTransformedField(self, datumCsys: str, projected22Axis: int | None = None, projectionTol: str = ""):
         """This method generates a new vector or tensor field containing the transformed component values of the
         parent field. The new field will hold values for the same nodes or elements as the parent field. Results
         will be transformed based on the orientations specified by the input DatumCsys object. Abaqus will
@@ -580,8 +580,8 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: Optional["FieldOutput"] = None,
-        projected22Axis: Optional[int] = None,
+        deformationField: "FieldOutput" | None = None,
+        projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component values of the
@@ -626,9 +626,9 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: Optional["FieldOutput"] = None,
-        rotationField: Optional["FieldOutput"] = None,
-        projected22Axis: Optional[int] = None,
+        deformationField: "FieldOutput" | None = None,
+        rotationField: "FieldOutput" | None = None,
+        projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component values of the
@@ -676,7 +676,7 @@ class FieldOutput:
     def getTransformedField(self, *args, **kwargs):
         ...
 
-    def getConnectorFieldXformedToNodeA(self, deformationField: Optional["FieldOutput"] = None):
+    def getConnectorFieldXformedToNodeA(self, deformationField: "FieldOutput" | None = None):
         """This method generates a new vector field containing the transformed component values of the parent
         connector field to the node A coordinate system. The new field will hold values for the same connector
         elements as the parent field. Some connection types such as Axial, Link, Slip Ring, and Radial Thrust

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -28,7 +26,7 @@ class PressureState(LoadState):
     """
 
     #: A Float or a Complex specifying the pressure magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the pressure magnitude. Possible
     #: values are UNSET, SET, UNCHANGED, and MODIFIED.
@@ -36,7 +34,7 @@ class PressureState(LoadState):
 
     #: A Float specifying the height of the zero pressure level when the pressure
     #: **distributionType** = HYDROSTATIC.
-    hZero: Optional[float] = None
+    hZero: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of **hZero**. Possible values are
     #: UNSET, SET, UNCHANGED, and FREED.
@@ -44,7 +42,7 @@ class PressureState(LoadState):
 
     #: A Float specifying the height of the reference pressure level when the pressure
     #: **distributionType** = HYDROSTATIC.
-    hReference: Optional[float] = None
+    hReference: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of **hReference**. Possible values are
     #: UNSET, SET, UNCHANGED, and FREED.

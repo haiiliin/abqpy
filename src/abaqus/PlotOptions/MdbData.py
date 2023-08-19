@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict, Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from .MdbDataInstance import MdbDataInstance
@@ -22,12 +20,12 @@ class MdbData:
     """
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
-    stepPeriods: Optional[float] = None
+    stepPeriods: float | None = None
 
     #: A repository of MdbDataStep objects specifying the list of steps. The repository is
     #: read-only.
-    steps: Dict[str, MdbDataStep] = {}
+    steps: dict[str, MdbDataStep] = {}
 
     #: A repository of MdbDataInstance objects specifying the list of instances. The repository
     #: is read-only.
-    instances: Dict[str, MdbDataInstance] = {}
+    instances: dict[str, MdbDataInstance] = {}

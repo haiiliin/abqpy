@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, Sequence
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -68,13 +68,13 @@ class OdbInstanceBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: Dict[str, OdbSet] = {}
+    nodeSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: Dict[str, OdbSet] = {}
+    elementSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: Dict[str, OdbSet] = {}
+    surfaces: dict[str, OdbSet] = {}
 
     #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -103,20 +103,20 @@ class GraphicsOptions:
     #: **polygonOffsetConstant** argument affects the behavior of only the OpenGL driver.
     #: Possible values are 0.0 ≤ **polygonOffsetConstant** ≤ 100.0. The default value is
     #: platform dependent and is typically between 0.0 and 2.0.
-    polygonOffsetConstant: Optional[float] = None
+    polygonOffsetConstant: float | None = None
 
     #: A Float specifying the factor that multiplies the slope of each line before the line is
     #: added to the vertexes of a polygon face. The **polygonOffsetSlope** argument affects the
     #: behavior of only the OpenGL driver. Possible values are 0.0 ≤ **polygonOffsetSlope** ≤
     #: 100.0. The default value is platform dependent and is typically between 0.0 and 2.0.
-    polygonOffsetSlope: Optional[float] = None
+    polygonOffsetSlope: float | None = None
 
     #: A Float specifying the offset added when drawing the faces of a polygon.
     #: **printPolygonOffsetConstant** is similar to **polygonOffsetConstant**; however,
     #: **printPolygonOffsetConstant** is used when printing and **polygonOffsetConstant** is used
     #: for display. Some systems, especially Windows, use different OpenGL drivers for printing
     #: and display, and you may have to use different offset values for each driver.
-    printPolygonOffsetConstant: Optional[float] = None
+    printPolygonOffsetConstant: float | None = None
 
     #: A Float specifying the factor that multiplies the slope of each line before the line is
     #: added to the vertexes of a polygon face. **printPolygonOffsetSlope** is similar to
@@ -124,7 +124,7 @@ class GraphicsOptions:
     #: **polygonOffsetSlope** is used for display. Some systems, especially Windows, use
     #: different OpenGL drivers for printing and display, and you may have to use different
     #: offset values for each driver.
-    printPolygonOffsetSlope: Optional[float] = None
+    printPolygonOffsetSlope: float | None = None
 
     #: A Boolean specifying how the three-dimensional vertices of the model are processed. When
     #: **vertexArrays** = OFF, each vertex of the model is processed separately. When
@@ -247,7 +247,7 @@ class GraphicsOptions:
     #: None or a GraphicsOptions object specifying the object from which values are to be
     #: copied. If other arguments are also supplied to setValues, they will override the values
     #: in the **options** member. The default value is None.
-    options: Optional[str] = None
+    options: str | None = None
 
     #: A tuple of SymbolicConstants specifying a hint used to modify the highlight method.
     #: Possible values are:HARDWARE_OVERLAY, specifying a hint of hardware overlay. The best
@@ -281,7 +281,7 @@ class GraphicsOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        graphicsDriver: Optional[Literal[C.OPEN_GL]] = None,
+        graphicsDriver: Literal[C.OPEN_GL | None] = None,
         doubleBuffering: Boolean = ON,
         displayLists: Boolean = ON,
         highlightMethodHint: Sequence[Literal[C.SOFTWARE_OVERLAY, C.HARDWARE_OVERLAY, C.XOR]] = (
@@ -293,10 +293,10 @@ class GraphicsOptions:
         dragMode: Literal[C.FAST, C.AS_IS] = AS_IS,
         antiAlias: Boolean = ON,
         autoFitAfterRotate: Boolean = OFF,
-        polygonOffsetConstant: Optional[float] = None,
-        polygonOffsetSlope: Optional[float] = None,
-        printPolygonOffsetConstant: Optional[float] = None,
-        printPolygonOffsetSlope: Optional[float] = None,
+        polygonOffsetConstant: float | None = None,
+        polygonOffsetSlope: float | None = None,
+        printPolygonOffsetConstant: float | None = None,
+        printPolygonOffsetSlope: float | None = None,
         vertexArrays: Boolean = ON,
         vertexArraysInDisplayLists: Boolean = ON,
         viewManipDisplayListThreshold: int = 40,
@@ -314,7 +314,7 @@ class GraphicsOptions:
         backingStore: Boolean = ON,
         shadersAvailable: Boolean = OFF,
         translucencyMode: int = 4,
-        options: Optional[str] = None,
+        options: str | None = None,
         contourRangeTexturePrecision: float = 0,
     ):
         """This method modifies the GraphicsOptions object.

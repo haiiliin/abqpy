@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -46,7 +44,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
@@ -82,7 +80,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -145,7 +143,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -32,10 +30,10 @@ class CoriolisForce(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     #: A tuple of Floats specifying the first point on the axis of rotation for the load.
-    point1: Optional[float] = None
+    point1: float | None = None
 
     #: A tuple of Floats specifying the second point on the axis of rotation for the load.
-    point2: Optional[float] = None
+    point2: float | None = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -125,7 +123,7 @@ class CoriolisForce(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
+    def setValuesInStep(self, stepName: str, magnitude: float | None = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing CoriolisForce object in the specified step.
 
         Parameters

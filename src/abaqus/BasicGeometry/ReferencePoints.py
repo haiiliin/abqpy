@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from .ReferencePoint import ReferencePoint
 
 
-class ReferencePoints(Dict[str, ReferencePoint]):
+class ReferencePoints(dict[str, ReferencePoint]):
     def __getitem__(self, key: str) -> ReferencePoint:
         if key in self.keys():
             return self.get(key)  # type: ignore

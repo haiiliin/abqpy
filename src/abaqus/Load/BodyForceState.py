@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,13 +25,13 @@ class BodyForceState(LoadState):
     """
 
     #: A Float or a Complex specifying the body force component in the 1-direction.
-    comp1: Optional[float] = None
+    comp1: float | None = None
 
     #: A Float or a Complex specifying the body force component in the 2-direction.
-    comp2: Optional[float] = None
+    comp2: float | None = None
 
     #: A Float or a Complex specifying the body force component in the 3-direction.
-    comp3: Optional[float] = None
+    comp3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the body force component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.

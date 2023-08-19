@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -37,16 +35,16 @@ class BeadTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: Dict[str, DesignResponse] = {}
+    designResponses: dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: dict[str, GeometricRestriction] = {}
 
     #: A String specifying the optimization task repository key.
     name: str

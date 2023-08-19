@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, overload
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -44,7 +44,7 @@ class ConstrainedSketch(
         self,
         name: str,
         sheetSize: float,
-        gridSpacing: Optional[float] = None,
+        gridSpacing: float | None = None,
         transform: tuple = (),
     ) -> None:
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the method returns
@@ -183,7 +183,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def autoTrimCurve(self, curve1: str, point1: Tuple[float, float], parameter1: float) -> None:
+    def autoTrimCurve(self, curve1: str, point1: tuple[float, float], parameter1: float) -> None:
         """This method automatically trims a selected ConstrainedSketchGeometry object at the specified
         location. If the object does not intersect other ConstrainedSketchGeometry objects, the entire selected
         object will be deleted.
@@ -205,9 +205,9 @@ class ConstrainedSketch(
     def breakCurve(
         self,
         curve1: ConstrainedSketchGeometry,
-        point1: Tuple[float, float],
+        point1: tuple[float, float],
         curve2: ConstrainedSketchGeometry,
-        point2: Tuple[float, float],
+        point2: tuple[float, float],
     ) -> None:
         """This method breaks a specified ConstrainedSketchGeometry object (*curve1*) using another specified
         ConstrainedSketchGeometry object (*curve2*). If the selected ConstrainedSketchGeometry objects
@@ -266,7 +266,7 @@ class ConstrainedSketch(
     @abaqus_method_doc
     def copyRotate(
         self,
-        centerPoint: Tuple[float, float],
+        centerPoint: tuple[float, float],
         angle: float,
         objectList: Sequence[ConstrainedSketchGeometry],
     ) -> None:
@@ -288,7 +288,7 @@ class ConstrainedSketch(
     def copyScale(
         self,
         scaleValue: float,
-        scaleCenter: Tuple[float, float],
+        scaleCenter: tuple[float, float],
         objectList: Sequence[ConstrainedSketchGeometry],
     ) -> None:
         """This method creates copies of the given ConstrainedSketchGeometry objects, scales them by the
@@ -356,8 +356,8 @@ class ConstrainedSketch(
         vertexList: Sequence[ConstrainedSketchVertex] = (),
         geomList: Sequence[ConstrainedSketchGeometry] = (),
         number2: int = 1,
-        spacing2: Optional[float] = None,
-        angle2: Optional[float] = None,
+        spacing2: float | None = None,
+        angle2: float | None = None,
     ) -> None:
         """This method copies ConstrainedSketchGeometry objects in a linear pattern along one or two directions.
         This method also copies any associated dimension or constraint objects that exist between the given
@@ -464,7 +464,7 @@ class ConstrainedSketch(
         self,
         number: int,
         totalAngle: float,
-        centerPoint: Tuple[float, float],
+        centerPoint: tuple[float, float],
         vertexList: Sequence[ConstrainedSketchVertex] = (),
         geomList: Sequence[ConstrainedSketchGeometry] = (),
     ) -> None:
@@ -497,7 +497,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rectangle(self, point1: Tuple[float, float], point2: Tuple[float, float]) -> int:
+    def rectangle(self, point1: tuple[float, float], point2: tuple[float, float]) -> int:
         """This method creates four lines that form a rectangle with diagonal corners defined by the given
         points and inserts them into the geometry repository of the ConstrainedSketch object.
 
@@ -567,7 +567,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rotate(self, centerPoint: Tuple[float, float], angle: float, objectList: tuple) -> None:
+    def rotate(self, centerPoint: tuple[float, float], angle: float, objectList: tuple) -> None:
         """This method rotates the given ConstrainedSketchGeometry objects by the given angle and about the
         given point.
 
@@ -586,7 +586,7 @@ class ConstrainedSketch(
     def scale(
         self,
         scaleValue: float,
-        scaleCenter: Tuple[float, float],
+        scaleCenter: tuple[float, float],
         objectList: Sequence[ConstrainedSketchGeometry],
     ) -> None:
         """This method scales the given ConstrainedSketchGeometry objects by the given scale factor and about
@@ -628,9 +628,9 @@ class ConstrainedSketch(
     def trimExtendCurve(
         self,
         curve1: str,
-        point1: Tuple[float, float],
+        point1: tuple[float, float],
         curve2: str,
-        point2: Tuple[float, float],
+        point2: tuple[float, float],
     ) -> None:
         """This method trims or extends a specified ConstrainedSketchGeometry object (*curve1*) using another
         specified ConstrainedSketchGeometry object (*curve2*). **curve2** is not affected by the operation. The
@@ -669,7 +669,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: Optional[float] = None) -> None:
+    def writeAcisFile(self, fileName: str, version: float | None = None) -> None:
         """This method exports the geometry of the sketch to a named file in ACIS format.
 
         Parameters

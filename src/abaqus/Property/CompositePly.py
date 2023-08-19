@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -109,7 +107,7 @@ class CompositePly:
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         additionalRotationType: Literal[C.ROTATION_NONE, C.ANGLE_0, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
-        orientation: Optional[SymbolicConstant] = None,
+        orientation: SymbolicConstant | None = None,
         additionalRotationField: str = "",
     ):
         """This method creates a CompositePly object.

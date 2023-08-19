@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, overload
+from typing import overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -120,9 +120,9 @@ class HistoryPoint:
         self,
         element: OdbMeshElement,
         ipNumber: int = 0,
-        sectionPoint: Optional[SectionPoint] = None,
+        sectionPoint: SectionPoint | None = None,
         face: SymbolicConstant = FACE_UNKNOWN,
-        node: Optional[OdbMeshNode] = None,
+        node: OdbMeshNode | None = None,
     ):
         """This method creates a HistoryPoint object for an element.
 

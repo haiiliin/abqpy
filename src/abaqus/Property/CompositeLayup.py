@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -209,7 +207,7 @@ class CompositeLayup:
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         additionalRotationType: Literal[C.ROTATION_NONE, C.ANGLE_0, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
-        orientation: Optional[SymbolicConstant] = None,
+        orientation: SymbolicConstant | None = None,
         additionalRotationField: str = "",
     ) -> CompositePly:
         """This method creates a CompositePly object.
@@ -319,8 +317,8 @@ class CompositeLayup:
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -438,8 +436,8 @@ class CompositeLayup:
         poisson: float = 0,
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
     ) -> GeometryShellSection:
@@ -537,8 +535,8 @@ class CompositeLayup:
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",

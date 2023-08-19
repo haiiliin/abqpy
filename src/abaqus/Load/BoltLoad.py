@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -106,7 +104,7 @@ class BoltLoad(Load):
     def setValues(
         self,
         boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         amplitude: str = UNSET,
         preTenSecPartLevel: Boolean = False,
     ):
@@ -138,7 +136,7 @@ class BoltLoad(Load):
         self,
         stepName: str,
         boltMethod: Literal[C.FIX_LENGTH, C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
-        magnitude: Optional[float] = None,
+        magnitude: float | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BoltLoad object in the specified step.

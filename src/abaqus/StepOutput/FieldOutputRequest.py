@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -58,7 +58,7 @@ class FieldOutputRequest:
 
     #: None or a tuple of Strings specifying the interaction names. The default value is
     #: None.The sequence can contain only one String.
-    interactions: Optional[tuple] = None
+    interactions: tuple | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -74,7 +74,7 @@ class FieldOutputRequest:
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
         sectionPoints: Union[Sequence[int], Literal[C.DEFAULT]] = DEFAULT,
-        interactions: Optional[str] = None,
+        interactions: str | None = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Union[Literal[C.ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
@@ -239,7 +239,7 @@ class FieldOutputRequest:
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
         sectionPoints: Union[int, Literal[C.DEFAULT]] = DEFAULT,
-        interactions: Optional[str] = None,
+        interactions: str | None = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Union[Literal[C.ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
@@ -343,7 +343,7 @@ class FieldOutputRequest:
         modes: Union[Literal[C.ALL], int] = ALL,
         timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-        timePoint: Optional[str] = None,
+        timePoint: str | None = None,
         timeMarks: Boolean = OFF,
     ) -> None:
         """This method modifies the propagating data for an existing FieldOutputRequest object in the specified

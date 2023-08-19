@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -104,37 +102,37 @@ class ConnectorSection(Section):
 
     #: None or a Float specifying the reference length associated with constitutive response
     #: for the first component of relative motion. The default value is None.
-    u1ReferenceLength: Optional[float] = None
+    u1ReferenceLength: float | None = None
 
     #: None or a Float specifying the reference length associated with constitutive response
     #: for the second component of relative motion. The default value is None.
-    u2ReferenceLength: Optional[float] = None
+    u2ReferenceLength: float | None = None
 
     #: None or a Float specifying the reference length associated with constitutive response
     #: for the third component of relative motion. The default value is None.
-    u3ReferenceLength: Optional[float] = None
+    u3ReferenceLength: float | None = None
 
     #: None or a Float specifying the reference angle in degrees associated with constitutive
     #: response for the fourth component of relative motion. The default value is None.
-    ur1ReferenceAngle: Optional[float] = None
+    ur1ReferenceAngle: float | None = None
 
     #: None or a Float specifying the reference angle in degrees associated with constitutive
     #: response for the fifth component of relative motion. The default value is None.
-    ur2ReferenceAngle: Optional[float] = None
+    ur2ReferenceAngle: float | None = None
 
     #: None or a Float specifying the reference angle in degrees associated with constitutive
     #: response for the sixth component of relative motion. The default value is None.
-    ur3ReferenceAngle: Optional[float] = None
+    ur3ReferenceAngle: float | None = None
 
     #: None or a Float specifying the mass per unit reference length of belt material. This
     #: argument is applicable only when **assembledType** = SLIPRING, and must be specified in that
     #: case. The default value is None.
-    massPerLength: Optional[float] = None
+    massPerLength: float | None = None
 
     #: None or a Float specifying the contact angle made by the belt wrapping around node b.
     #: This argument is applicable only to an Abaqus/Explicit analysis, and only when
     #: **assembledType** = SLIPRING. The default value is None.
-    contactAngle: Optional[float] = None
+    contactAngle: float | None = None
 
     #: A Float specifying the scaling factor for material flow at node b. This argument is
     #: applicable only when **assembledType** = RETRACTOR or **rotationalType** = FLOW_CONVERTER. The
@@ -211,14 +209,14 @@ class ConnectorSection(Section):
             C.SLOT,
         ] = NONE,
         integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED,
-        u1ReferenceLength: Optional[float] = None,
-        u2ReferenceLength: Optional[float] = None,
-        u3ReferenceLength: Optional[float] = None,
-        ur1ReferenceAngle: Optional[float] = None,
-        ur2ReferenceAngle: Optional[float] = None,
-        ur3ReferenceAngle: Optional[float] = None,
-        massPerLength: Optional[float] = None,
-        contactAngle: Optional[float] = None,
+        u1ReferenceLength: float | None = None,
+        u2ReferenceLength: float | None = None,
+        u3ReferenceLength: float | None = None,
+        ur1ReferenceAngle: float | None = None,
+        ur2ReferenceAngle: float | None = None,
+        ur3ReferenceAngle: float | None = None,
+        massPerLength: float | None = None,
+        contactAngle: float | None = None,
         materialFlowFactor: float = 1,
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
@@ -370,14 +368,14 @@ class ConnectorSection(Section):
             C.SLOT,
         ] = NONE,
         integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED,
-        u1ReferenceLength: Optional[float] = None,
-        u2ReferenceLength: Optional[float] = None,
-        u3ReferenceLength: Optional[float] = None,
-        ur1ReferenceAngle: Optional[float] = None,
-        ur2ReferenceAngle: Optional[float] = None,
-        ur3ReferenceAngle: Optional[float] = None,
-        massPerLength: Optional[float] = None,
-        contactAngle: Optional[float] = None,
+        u1ReferenceLength: float | None = None,
+        u2ReferenceLength: float | None = None,
+        u3ReferenceLength: float | None = None,
+        ur1ReferenceAngle: float | None = None,
+        ur2ReferenceAngle: float | None = None,
+        ur3ReferenceAngle: float | None = None,
+        massPerLength: float | None = None,
+        contactAngle: float | None = None,
         materialFlowFactor: float = 1,
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,

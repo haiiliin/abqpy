@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -46,7 +44,7 @@ class SpringDashpotToGround(SpringDashpot):
     #: None or a DatumCsys object specifying the local directions for the spring and/or
     #: dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
     #: coordinate system. The default value is None.
-    orientation: Optional[str] = None
+    orientation: str | None = None
 
     #: A Boolean specifying whether to apply spring behavior to the selected points. The
     #: default value is OFF.At least one of the arguments **springBehavior** = ON or
@@ -72,7 +70,7 @@ class SpringDashpotToGround(SpringDashpot):
         name: str,
         region: Region,
         dof: int,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -124,7 +122,7 @@ class SpringDashpotToGround(SpringDashpot):
     @abaqus_method_doc
     def setValues(
         self,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,

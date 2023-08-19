@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -47,8 +45,8 @@ class TensileFailure:
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         elementDeletion: Boolean = True,
-        pressure: Optional[Literal[C.BRITTLE, C.DUCTILE]] = None,
-        shear: Optional[Literal[C.BRITTLE, C.DUCTILE]] = None,
+        pressure: Literal[C.BRITTLE, C.DUCTILE | None] = None,
+        shear: Literal[C.BRITTLE, C.DUCTILE | None] = None,
     ):
         """This method creates a tensileFailure object.
 

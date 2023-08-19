@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,25 +25,25 @@ class DisplacementBCState(BoundaryConditionState):
     """
 
     #: A Float or a Complex specifying the displacement component in the 1-direction.
-    u1: Optional[float] = None
+    u1: float | None = None
 
     #: A Float or a Complex specifying the displacement component in the 2-direction.
-    u2: Optional[float] = None
+    u2: float | None = None
 
     #: A Float or a Complex specifying the displacement component in the 3-direction.
-    u3: Optional[float] = None
+    u3: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 1-direction.
-    ur1: Optional[float] = None
+    ur1: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 2-direction.
-    ur2: Optional[float] = None
+    ur2: float | None = None
 
     #: A Float or a Complex specifying the rotational displacement component about the
     #: 3-direction.
-    ur3: Optional[float] = None
+    ur3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the displacement component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

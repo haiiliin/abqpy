@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -72,7 +70,7 @@ class Annotation:
         ...
 
     @abaqus_method_doc
-    def translate(self, x: Optional[float] = None, y: Optional[float] = None):
+    def translate(self, x: float | None = None, y: float | None = None):
         """This method translates the Annotation object on the viewport plane.
 
         Parameters

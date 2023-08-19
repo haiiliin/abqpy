@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -33,8 +31,8 @@ class RegionPairs:
         self,
         stepName: str,
         useAllstar: Boolean = OFF,
-        addPairs: Optional[Literal[C.SELF, C.GLOBAL]] = None,
-        removePairs: Optional[Literal[C.SELF, C.GLOBAL]] = None,
+        addPairs: Literal[C.SELF, C.GLOBAL | None] = None,
+        removePairs: Literal[C.SELF, C.GLOBAL | None] = None,
     ):
         """This method allows addition and removal of domain pairs in a given step.
 

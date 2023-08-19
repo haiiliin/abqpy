@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, overload
+from typing import overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -22,7 +22,7 @@ class OdbFrame:
 
     #: An Int specifying the cyclic mode number associated with the data stored on this frame.
     #: Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
-    cyclicModeNumber: Optional[int] = None
+    cyclicModeNumber: int | None = None
 
     #: A SymbolicConstant specifying the domain of the step of which the frame is a member.
     #: Possible values are TIME, FREQUENCY, and MODAL.
@@ -33,15 +33,15 @@ class OdbFrame:
     frequency: float = 0
 
     #: An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
-    mode: Optional[int] = None
+    mode: int | None = None
 
     #: An OdbFrame object specifying the real or imaginary portion of the data corresponding to
     #: this cyclic symmetry mode.
-    associatedFrame: Optional["OdbFrame"] = None
+    associatedFrame: "OdbFrame" | None = None
 
     #: A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository
     #: is a String representing an output variable.
-    fieldOutputs: Dict[str, FieldOutput] = {}
+    fieldOutputs: dict[str, FieldOutput] = {}
 
     #: An OdbLoadCase object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")
@@ -160,7 +160,7 @@ class OdbFrame:
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: Optional[SymbolicConstant] = None,
+        validInvariants: SymbolicConstant | None = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.

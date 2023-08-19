@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -24,13 +22,13 @@ class OdbDiagnosticData:
     """
 
     #: A repository of OdbAnalysisError objects.
-    analysisErrors: Dict[str, OdbAnalysisError] = {}
+    analysisErrors: dict[str, OdbAnalysisError] = {}
 
     #: A repository of OdbAnalysisWarning objects.
-    analysisWarnings: Dict[str, OdbAnalysisWarning] = {}
+    analysisWarnings: dict[str, OdbAnalysisWarning] = {}
 
     #: A repository of OdbDiagnosticStep objects.
-    steps: Dict[str, OdbDiagnosticStep] = {}
+    steps: dict[str, OdbDiagnosticStep] = {}
 
     #: An OdbJobTime object.
     jobTime: OdbJobTime = OdbJobTime()

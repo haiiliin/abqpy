@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -43,7 +43,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -59,7 +59,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
-        localCsys: Optional[DatumCsys] = None,
+        localCsys: DatumCsys | None = None,
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -132,7 +132,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ):
         """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object in the step
         where it is created.

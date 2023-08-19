@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ...UtilityAndView.abaqusConstants import OFF, Boolean
@@ -52,8 +50,8 @@ class VolumetricTestData:
     def __init__(
         self,
         table: tuple,
-        volinf: Optional[float] = None,
-        smoothing: Optional[int] = None,
+        volinf: float | None = None,
+        smoothing: int | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -198,20 +198,20 @@ class RegionPart(RegionPartBase):
     def Set(
         self,
         name: str,
-        nodes: Optional[Sequence[MeshNode]] = None,
-        elements: Optional[Sequence[MeshElement]] = None,
-        region: Optional[Region] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
-        edges: Optional[Sequence[Edge]] = None,
-        faces: Optional[Union[Face, Sequence[Face]]] = None,
-        cells: Optional[Union[Cell, Sequence[Cell]]] = None,
-        xVertices: Optional[Sequence[Vertex]] = None,
-        xEdges: Optional[Sequence[Edge]] = None,
-        xFaces: Optional[Sequence[Face]] = None,
+        nodes: Sequence[MeshNode | None] = None,
+        elements: Sequence[MeshElement | None] = None,
+        region: Region | None = None,
+        vertices: Sequence[Vertex | None] = None,
+        edges: Sequence[Edge | None] = None,
+        faces: Union[Face, Sequence[Face | None]] = None,
+        cells: Union[Cell, Sequence[Cell | None]] = None,
+        xVertices: Sequence[Vertex | None] = None,
+        xEdges: Sequence[Edge | None] = None,
+        xFaces: Sequence[Face | None] = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        skinFaces: tuple[tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
     ) -> SetType:
         """This method creates a set from a sequence of objects in a model database.
 

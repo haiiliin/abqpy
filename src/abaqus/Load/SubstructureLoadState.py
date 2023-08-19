@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -30,7 +28,7 @@ class SubstructureLoadState(LoadState):
     loadCaseNames: tuple = ()
 
     #: A Float or a Complex specifying the load magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the load magnitude. Possible
     #: values are UNSET, SET, UNCHANGED, and MODIFIED.

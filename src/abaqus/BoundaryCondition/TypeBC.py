@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -42,7 +40,7 @@ class TypeBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -53,7 +51,7 @@ class TypeBC(BoundaryCondition):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> None:
         """This method creates an TypeBC object.
 
@@ -99,7 +97,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates an encastre TypeBC object.
 
@@ -139,7 +137,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a pinned TypeBC object.
 
@@ -179,7 +177,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **X** axis.
 
@@ -219,7 +217,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Y** axis.
 
@@ -259,7 +257,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Z** axis.
 
@@ -299,7 +297,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **X** axis.
 
@@ -339,7 +337,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Y** axis.
 
@@ -379,7 +377,7 @@ class TypeBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Z** axis.
 
@@ -416,13 +414,11 @@ class TypeBC(BoundaryCondition):
     def setValues(
         self,
         region: Region,
-        typeName: Optional[
-            Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]
-        ] = None,
+        typeName: Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM] | None = None,
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ):
         """This method modifies the data for an existing TypeBC object in the step where it is created.
 
@@ -448,9 +444,7 @@ class TypeBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        typeName: Optional[
-            Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]
-        ] = None,
+        typeName: Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM] | None = None,
     ):
         """This method always returns a value error for a TypeBC; it is inherited from the BoundaryCondition
         object.

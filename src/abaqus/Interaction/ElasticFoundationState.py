@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -23,7 +21,7 @@ class ElasticFoundationState(InteractionState):
     """
 
     #: A Float specifying the foundation stiffness per area.
-    stiffness: Optional[float] = None
+    stiffness: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the stiffness member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.

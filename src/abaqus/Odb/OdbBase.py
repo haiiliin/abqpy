@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -38,10 +36,10 @@ class OdbBase:
     isReadOnly: Boolean = OFF
 
     #: A repository of Amplitude objects.
-    amplitudes: Dict[str, Amplitude] = {}
+    amplitudes: dict[str, Amplitude] = {}
 
     #: A repository of Filter objects.
-    filters: Dict[str, Filter] = {}
+    filters: dict[str, Filter] = {}
 
     #: An OdbAssembly object.
     rootAssembly: OdbAssembly = OdbAssembly()
@@ -50,19 +48,19 @@ class OdbBase:
     jobData: JobData = JobData()
 
     #: A repository of OdbPart objects.
-    parts: Dict[str, OdbPart] = {}
+    parts: dict[str, OdbPart] = {}
 
     #: A repository of Material objects.
-    materials: Dict[str, Material] = {}
+    materials: dict[str, Material] = {}
 
     #: A repository of OdbStep objects.
-    steps: Dict[str, OdbStep] = {}
+    steps: dict[str, OdbStep] = {}
 
     #: A repository of Section objects.
-    sections: Dict[str, Section] = {}
+    sections: dict[str, Section] = {}
 
     #: A repository of SectionCategory objects.
-    sectionCategories: Dict[str, SectionCategory] = {}
+    sectionCategories: dict[str, SectionCategory] = {}
 
     #: A SectorDefinition object.
     sectorDefinition: SectorDefinition = SectorDefinition()
@@ -74,7 +72,7 @@ class OdbBase:
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Profile objects.
-    profiles: Dict[str, Profile] = {}
+    profiles: dict[str, Profile] = {}
 
     @abaqus_method_doc
     def __init__(self, name: str, analysisTitle: str = "", description: str = "", path: str = ""):

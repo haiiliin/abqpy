@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -56,7 +54,7 @@ class MultipointConstraint(Constraint):
     #: system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
     #: MultipointConstraint is defined in the global coordinate system. The default value is
     #: None.
-    csys: Optional[str] = None
+    csys: str | None = None
 
     #: An Int specifying to differentiate between different constraint types in a user-defined
     #: MultipointConstraint. The default value is 0.The **userType** argument applies only when
@@ -75,7 +73,7 @@ class MultipointConstraint(Constraint):
         surface: Region,
         controlPoint: Region,
         mpcType: Literal[C.USER_MPC, C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.PIN_MPC, C.LINK_MPC],
-        csys: Optional[str] = None,
+        csys: str | None = None,
         userType: int = 0,
         userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ):
@@ -122,7 +120,7 @@ class MultipointConstraint(Constraint):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[str] = None,
+        csys: str | None = None,
         userType: int = 0,
         userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ):

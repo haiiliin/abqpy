@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, Sequence
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -87,18 +87,18 @@ class SessionBase:
 
     #: A Float specifying the memory usage value for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryFootprint: Optional[float] = None
+    kernelMemoryFootprint: float | None = None
 
     #: A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel
     #: process in megabytes.
-    kernelMemoryMaxFootprint: Optional[float] = None
+    kernelMemoryMaxFootprint: float | None = None
 
     #: A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryLimit: Optional[float] = None
+    kernelMemoryLimit: float | None = None
 
     #: A repository of Color objects.
-    colors: Dict[str, Color] = {}
+    colors: dict[str, Color] = {}
 
     #: A JournalOptions object specifying how to record selection of geometry in the journal
     #: and replay files.
@@ -132,7 +132,7 @@ class SessionBase:
     quickTimeOptions: QuickTimeOptions = QuickTimeOptions()
 
     #: A repository of Viewport objects.
-    viewports: Dict[str, Viewport] = {}
+    viewports: dict[str, Viewport] = {}
 
     #: A RepositorySupport object.
     customData: RepositorySupport = RepositorySupport()
@@ -150,10 +150,10 @@ class SessionBase:
     freeBodyReportOptions: FreeBodyReportOptions = FreeBodyReportOptions()
 
     #: A repository of Odb objects.
-    odbs: Dict[str, Odb] = {}
+    odbs: dict[str, Odb] = {}
 
     #: A repository of ScratchOdb objects.
-    scratchOdbs: Dict[str, ScratchOdb] = {}
+    scratchOdbs: dict[str, ScratchOdb] = {}
 
     #: A DefaultOdbDisplay object.
     defaultOdbDisplay: DefaultOdbDisplay = DefaultOdbDisplay()
@@ -165,22 +165,22 @@ class SessionBase:
     defaultChartOptions: DefaultChartOptions = DefaultChartOptions()
 
     #: A repository of OdbData objects.
-    odbData: Dict[str, OdbData] = {}
+    odbData: dict[str, OdbData] = {}
 
     #: A repository of MdbData objects.
-    mdbData: Dict[str, MdbData] = {}
+    mdbData: dict[str, MdbData] = {}
 
     #: A repository of Path objects.
-    paths: Dict[str, Path] = {}
+    paths: dict[str, Path] = {}
 
     #: A repository of FreeBody objects.
-    freeBodies: Dict[str, FreeBody] = {}
+    freeBodies: dict[str, FreeBody] = {}
 
     #: A repository of Stream objects.
-    streams: Dict[str, Stream] = {}
+    streams: dict[str, Stream] = {}
 
     #: A repository of Spectrum objects.
-    spectrums: Dict[str, Spectrum] = {}
+    spectrums: dict[str, Spectrum] = {}
 
     #: A CurrentProbeValues object.
     currentProbeValues: CurrentProbeValues = CurrentProbeValues()
@@ -228,16 +228,16 @@ class SessionBase:
     xyColors: AutoColors = AutoColors()
 
     #: A repository of XYData objects.
-    xyDataObjects: Dict[str, XYData] = {}
+    xyDataObjects: dict[str, XYData] = {}
 
     #: A repository of XYCurve objects.
-    curves: Dict[str, XYCurve] = {}
+    curves: dict[str, XYCurve] = {}
 
     #: A repository of XYPlot objects.
-    xyPlots: Dict[str, XYPlot] = {}
+    xyPlots: dict[str, XYPlot] = {}
 
     #: A repository of Chart objects.
-    charts: Dict[str, Chart] = {}
+    charts: dict[str, Chart] = {}
 
     #: An XYReportOptions object.
     defaultXYReportOptions: XYReportOptions = XYReportOptions()
@@ -246,13 +246,13 @@ class SessionBase:
     xyReportOptions: XYReportOptions = XYReportOptions()
 
     #: A repository of View objects.
-    views: Dict[str, View] = {}
+    views: dict[str, View] = {}
 
     #: A repository of NetworkDatabaseConnector objects.
-    networkDatabaseConnectors: Dict[str, NetworkDatabaseConnector] = {}
+    networkDatabaseConnectors: dict[str, NetworkDatabaseConnector] = {}
 
     #: A repository of DisplayGroup objects.
-    displayGroups: Dict[str, DisplayGroup] = {}
+    displayGroups: dict[str, DisplayGroup] = {}
 
     #: A GraphicsInfo object.
     graphicsInfo: GraphicsInfo = GraphicsInfo()
@@ -267,7 +267,7 @@ class SessionBase:
     defaultViewportAnnotationOptions: ViewportAnnotationOptions = ViewportAnnotationOptions()
 
     #: A repository of Queue objects.
-    queues: Dict[str, Queue] = {}
+    queues: dict[str, Queue] = {}
 
     #: A String specifying the name of the current viewport.
     currentViewportName: str = ""
@@ -275,13 +275,13 @@ class SessionBase:
     #: A Dictionary object specifying the viewports and their associated models. The Dictionary
     #: key specifies the viewport name. The Dictionary value is a Dictionary specifying the
     #: model name.
-    sessionState: Optional[dict] = None
+    sessionState: dict | None = None
 
     #: A repository of Image objects.
-    images: Dict[str, Image] = {}
+    images: dict[str, Image] = {}
 
     #: A repository of Movie objects.
-    movies: Dict[str, Movie] = {}
+    movies: dict[str, Movie] = {}
 
     #: A LightOptions object.
     defaultLightOptions: LightOptions = LightOptions()
@@ -293,10 +293,10 @@ class SessionBase:
     defaultMesherOptions: MesherOptions = MesherOptions()
 
     #: A repository of Drawing objects.
-    drawings: Dict[str, Drawing] = {}
+    drawings: dict[str, Drawing] = {}
 
     @abaqus_method_doc
-    def setValues(self, kernelMemoryLimit: Optional[float] = None):
+    def setValues(self, kernelMemoryLimit: float | None = None):
         """This method modifies the Session object.
 
         Parameters
@@ -320,7 +320,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableCADConnection(self, CADName: str, portNum: Optional[int] = None):
+    def enableCADConnection(self, CADName: str, portNum: int | None = None):
         """This method enables the Abaqus/CAE listening port for the specified **CAD** system.
 
         Parameters
@@ -366,7 +366,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: Optional[int] = None):
+    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: int | None = None):
         """This method enables parameter updates for ProE and NX by establishing a connection with the listening
         port previously setup by the CAD application.
 

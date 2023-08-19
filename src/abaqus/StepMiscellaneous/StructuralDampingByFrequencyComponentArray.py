@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import List
-
 from .StructuralDampingByFrequencyComponent import StructuralDampingByFrequencyComponent
 
-StructuralDampingByFrequencyComponentArray = List[StructuralDampingByFrequencyComponent]
+StructuralDampingByFrequencyComponentArray = list[StructuralDampingByFrequencyComponent]

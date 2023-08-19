@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Optional, Tuple
+from typing import TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -37,29 +37,29 @@ class Vertex:
     """
 
     #: An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A Boolean specifying whether the vertex belongs to the reference representation of the
     #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
     #: A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
-    pointOn: Tuple[float, float, float]
+    pointOn: tuple[float, float, float]
 
     #: A tuple of Floats specifying the name of the feature that created this vertex.
-    featureName: Optional[float] = None
+    featureName: float | None = None
 
     #: A tuple of Floats specifying the name of the part instance for this vertex (if
     #: applicable).
-    instanceName: Optional[float] = None
+    instanceName: float | None = None
 
     @abaqus_method_doc
-    def getEdges(self) -> Tuple[int]:
+    def getEdges(self) -> tuple[int]:
         """This method returns a sequence consisting of the edge ids of the edges which share this vertex.
 
         Returns
         -------
-        Tuple[int]
+        tuple[int]
             A tuple of integers.
         """
         ...

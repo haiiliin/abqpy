@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,13 +25,13 @@ class PEGLoadState(LoadState):
     """
 
     #: A Float or a Complex specifying the load component at dof 1 of reference node 1.
-    comp1: Optional[float] = None
+    comp1: float | None = None
 
     #: A Float or a Complex specifying the load component at dof 1 of reference node 2.
-    comp2: Optional[float] = None
+    comp2: float | None = None
 
     #: A Float or a Complex specifying the load component at dof 2 of reference node 2.
-    comp3: Optional[float] = None
+    comp3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the load component at dof 1 of
     #: reference node 1. Possible values are UNSET, SET, UNCHANGED, and FREED.

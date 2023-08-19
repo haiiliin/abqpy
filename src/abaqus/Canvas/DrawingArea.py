@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -17,10 +17,10 @@ class DrawingArea:
     """
 
     #: A Float specifying the width in millimeters.
-    width: Optional[float] = None
+    width: float | None = None
 
     #: A Float specifying the height in millimeters.
-    height: Optional[float] = None
+    height: float | None = None
 
     #: A pair of Floats specifying the coordinates of the bottom left hand corner in
     #: millimeters.

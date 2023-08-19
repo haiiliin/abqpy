@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -54,7 +54,7 @@ class Feature:
     name: str = ""
 
     #: An Int specifying the ID of the feature.
-    id: Optional[int] = None
+    id: int | None = None
 
     @abaqus_method_doc
     def AttachmentPoints(
@@ -64,8 +64,8 @@ class Feature:
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Optional[float] = None,
-        projectionDirEndPt: Optional[float] = None,
+        projectionDirStartPt: float | None = None,
+        projectionDirEndPt: float | None = None,
         setName: str = "",
     ) -> Feature:
         """This method creates an attachment points Feature. Attachment points may be created using datum
@@ -120,7 +120,7 @@ class Feature:
         name: str,
         startPoint: float,
         pointCreationMethod: Literal[C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS],
-        endPoint: Optional[float] = None,
+        endPoint: float | None = None,
         direction: str = "",
         spacing: str = "",
         numPtsAlongDir: str = "",
@@ -130,8 +130,8 @@ class Feature:
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Optional[float] = None,
-        projectionDirEndPt: Optional[float] = None,
+        projectionDirStartPt: float | None = None,
+        projectionDirEndPt: float | None = None,
         flipDirection: Boolean = OFF,
         setName: str = "",
     ) -> Feature:
@@ -1058,7 +1058,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumPointByCoordinate(self, coords: Tuple[float, float, float]) -> Feature:
+    def DatumPointByCoordinate(self, coords: tuple[float, float, float]) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the specified
         coordinates.
 

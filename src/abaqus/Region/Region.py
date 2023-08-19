@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -59,19 +59,19 @@ class Region:
     @abaqus_method_doc
     def __init__(
         self,
-        elements: Optional[Sequence[Element]] = None,
-        nodes: Optional[Sequence[Node]] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
-        edges: Optional[Sequence[Edge]] = None,
-        faces: Optional[Sequence[Face]] = None,
-        cells: Optional[Sequence[Cell]] = None,
-        referencePoints: Optional[Sequence[ReferencePoint]] = (),
-        xVertices: Optional[Sequence[Vertex]] = None,
-        xEdges: Optional[Sequence[Vertex]] = None,
-        xFaces: Optional[Sequence[Vertex]] = None,
-        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        elements: Sequence[Element | None] = None,
+        nodes: Sequence[Node | None] = None,
+        vertices: Sequence[Vertex | None] = None,
+        edges: Sequence[Edge | None] = None,
+        faces: Sequence[Face | None] = None,
+        cells: Sequence[Cell | None] = None,
+        referencePoints: Sequence[ReferencePoint | None] = (),
+        xVertices: Sequence[Vertex | None] = None,
+        xEdges: Sequence[Vertex | None] = None,
+        xFaces: Sequence[Vertex | None] = None,
+        skinFaces: tuple[tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
     ):
         """This command creates a set-like region. For example
         myRegion = regionToolset.Region(vertices=v[2:4]

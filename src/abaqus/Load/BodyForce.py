@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -50,9 +50,9 @@ class BodyForce(Load):
         region: Region,
         field: str = "",
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method creates a BodyForce object.
@@ -102,9 +102,9 @@ class BodyForce(Load):
         self,
         field: str = "",
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
-        comp1: Optional[float] = None,
-        comp2: Optional[float] = None,
-        comp3: Optional[float] = None,
+        comp1: float | None = None,
+        comp2: float | None = None,
+        comp3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing BodyForce object in the step where it is created.

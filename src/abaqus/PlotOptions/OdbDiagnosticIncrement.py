@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -20,7 +18,7 @@ class OdbDiagnosticIncrement:
     """
 
     #: A repository of OdbDiagnosticAttempt objects.
-    attempts: Dict[str, OdbDiagnosticAttempt] = {}
+    attempts: dict[str, OdbDiagnosticAttempt] = {}
 
     #: A float specifying the size of the initial increment. This attribute is read-only.
     initialSize: str = ""

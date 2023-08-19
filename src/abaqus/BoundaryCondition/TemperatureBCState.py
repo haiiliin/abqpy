@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,7 +25,7 @@ class TemperatureBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the temperature magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the temperature magnitude.
     #: Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
@@ -39,7 +37,7 @@ class TemperatureBCState(BoundaryConditionState):
 
     #: A tuple of Ints specifying the degrees of freedom to which the boundary condition is
     #: applied.
-    dof: Optional[int] = None
+    dof: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

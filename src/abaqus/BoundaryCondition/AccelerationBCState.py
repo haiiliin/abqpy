@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -27,22 +25,22 @@ class AccelerationBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the acceleration component in the 1-direction.
-    a1: Optional[float] = None
+    a1: float | None = None
 
     #: A Float specifying the acceleration component in the 2-direction.
-    a2: Optional[float] = None
+    a2: float | None = None
 
     #: A Float specifying the acceleration component in the 3-direction.
-    a3: Optional[float] = None
+    a3: float | None = None
 
     #: A Float specifying the rotational acceleration component about the 1-direction.
-    ar1: Optional[float] = None
+    ar1: float | None = None
 
     #: A Float specifying the rotational acceleration component about the 2-direction.
-    ar2: Optional[float] = None
+    ar2: float | None = None
 
     #: A Float specifying the rotational acceleration component about the 3-direction.
-    ar3: Optional[float] = None
+    ar3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the acceleration component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

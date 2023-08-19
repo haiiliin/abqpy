@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Dict, List, Sequence, Tuple, Union
+from typing import TYPE_CHECKING, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:  # to avoid circular imports
 
 
 @abaqus_class_doc
-class MeshElementArray(List[MeshElement]):
+class MeshElementArray(list[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
     .. note::
@@ -46,7 +46,7 @@ class MeshElementArray(List[MeshElement]):
     """
 
     @abaqus_method_doc
-    def __init__(self, elements: List[MeshElement]) -> None:
+    def __init__(self, elements: list[MeshElement]) -> None:
         """This method creates a MeshElementArray object.
 
         .. note::
@@ -167,7 +167,7 @@ class MeshElementArray(List[MeshElement]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> MeshElementArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding sphere.
 
         Parameters
@@ -185,13 +185,13 @@ class MeshElementArray(List[MeshElement]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the element sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of

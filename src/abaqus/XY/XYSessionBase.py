@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -35,8 +33,8 @@ class XYSessionBase(SessionBase):
         xyBendingComps: tuple,
         invariantBendingComps: tuple = (),
         intervals: int = 40,
-        radiusOfCurvature: Optional[float] = None,
-        oopRadiusOfCurvature: Optional[float] = None,
+        radiusOfCurvature: float | None = None,
+        oopRadiusOfCurvature: float | None = None,
         curvatureCorrection: Boolean = OFF,
         curvatureCsys: str = "",
         useCurvatureCsysForOrient: Boolean = OFF,
@@ -126,7 +124,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        List[XYData]
+        list[XYData]
             A list of xyData objects.
 
         Raises
@@ -176,7 +174,7 @@ class XYSessionBase(SessionBase):
         ...
 
     @abaqus_method_doc
-    def setLimitForXYDataPlots(self, limit: Optional[int] = None):
+    def setLimitForXYDataPlots(self, limit: int | None = None):
         """This method is used to set the **limit** for number of XY data objects while creating XYData from
         field output.
 

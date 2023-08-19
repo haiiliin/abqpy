@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -36,7 +34,7 @@ class BoltLoadState(LoadState):
     boltMethodState: SymbolicConstant
 
     #: A Float specifying the bolt load magnitude.
-    magnitude: Optional[float] = None
+    magnitude: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the bolt load magnitude. Possible
     #: values are UNSET, SET, UNCHANGED, and MODIFIED.

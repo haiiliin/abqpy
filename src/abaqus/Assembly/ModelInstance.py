@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -34,12 +32,12 @@ class ModelInstance:
     #: A repository of Set objects specifying the sets created on the assembly. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    sets: Dict[str, Set] = {}
+    sets: dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the assembly. For
     #: more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: Dict[str, Surface] = {}
+    surfaces: dict[str, Surface] = {}
 
     #: A VertexArray object.
     vertices: VertexArray = VertexArray([])
@@ -54,10 +52,10 @@ class ModelInstance:
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Datum objects.
-    datums: Dict[str, Datum] = {}
+    datums: dict[str, Datum] = {}
 
     #: A repository of ReferencePoint objects.
-    referencePoints: Dict[str, ReferencePoint] = {}
+    referencePoints: dict[str, ReferencePoint] = {}
 
     @abaqus_method_doc
     def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):

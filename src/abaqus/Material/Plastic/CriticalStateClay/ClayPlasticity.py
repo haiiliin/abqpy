@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -63,7 +61,7 @@ class ClayPlasticity:
     def __init__(
         self,
         table: tuple,
-        intercept: Optional[float] = None,
+        intercept: float | None = None,
         hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

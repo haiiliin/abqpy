@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -43,7 +41,7 @@ class Face:
     """
 
     #: An Int specifying the index of the face in the FaceArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A Boolean specifying whether the face belongs to the reference representation of the
     #: Part or Instance.
@@ -53,14 +51,14 @@ class Face:
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face and the
     #: **X**, **Y**, and **Z** components of the normal to the face.For a face of a solid **pointOn**
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     #: A tuple of Floats specifying the name of the feature that created this face.
-    featureName: Optional[float] = None
+    featureName: float | None = None
 
     #: A tuple of Floats specifying the name of the part instance for this face (if
     #: applicable).
-    instanceName: Optional[float] = None
+    instanceName: float | None = None
 
     @abaqus_method_doc
     def getCentroid(self):
@@ -75,7 +73,7 @@ class Face:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, point: Tuple[float, float, float], uParam: float, vParam: float):
+    def getCurvature(self, point: tuple[float, float, float], uParam: float, vParam: float):
         """This method returns information about the curvature at a location on the face.
 
         Parameters
@@ -155,7 +153,7 @@ class Face:
         ...
 
     @abaqus_method_doc
-    def getNormal(self, point: Tuple[float, float, float] = ()):
+    def getNormal(self, point: tuple[float, float, float] = ()):
         """This method returns the normal to a face at the location specified by the **pointOn** member. The
         normal at a different location on the face can be obtained by specifying the optional **point**
         argument.
@@ -288,7 +286,7 @@ class Face:
 
         Returns
         -------
-        List[str]
+        list[str]
             An array of String.
         """
         ...

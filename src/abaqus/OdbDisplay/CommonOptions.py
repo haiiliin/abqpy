@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -62,16 +60,16 @@ class CommonOptions(DGCommonOptions):
 
     #: A Float specifying the uniform deformation scaling constant when
     #: **deformationScaling** = UNIFORM. The default value is **autoDeformationScaleValue**.
-    uniformScaleFactor: Optional[float] = None
+    uniformScaleFactor: float | None = None
 
     #: A Float specifying the deformation scale factor value when **deformationScaling** = AUTO.
     #: This value is read-only.
-    autoDeformationScaleValue: Optional[float] = None
+    autoDeformationScaleValue: float | None = None
 
     #: A tuple of three Floats specifying the deformation scaling in each of the three
     #: coordinate directions when **deformationScaling** = NONUNIFORM. The default value is
     #: (*autoDeformationScaleValue*, **autoDeformationScaleValue**, **autoDeformationScaleValue**).
-    nonuniformScaleFactor: Optional[float] = None
+    nonuniformScaleFactor: float | None = None
 
     #: A SymbolicConstant specifying the render style of the plot. Possible values are
     #: WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is SHADED.
@@ -214,16 +212,16 @@ class CommonOptions(DGCommonOptions):
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: Optional[float] = None
+    coordinateScaleFactors: float | None = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["CommonOptions"] = None,
+        options: "CommonOptions" | None = None,
         renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = SHADED,
         visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = EXTERIOR,
         deformationScaling: Literal[C.NONUNIFORM, C.UNIFORM, C.AUTO] = AUTO,
-        uniformScaleFactor: Optional[float] = None,
+        uniformScaleFactor: float | None = None,
         nonuniformScaleFactor: tuple = (),
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import List
-
 from .ResponseSpectrumComponent import ResponseSpectrumComponent
 
-ResponseSpectrumComponentArray = List[ResponseSpectrumComponent]
+ResponseSpectrumComponentArray = list[ResponseSpectrumComponent]

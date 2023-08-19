@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import ON, Boolean, SymbolicConstant
@@ -41,7 +39,7 @@ class CavityRadiationState(InteractionState):
     #: A Float specifying the distance beyond which factors need not be calculated because
     #: surfaces are judged to be too far apart to “see” each other (due to blocking by other
     #: surfaces).
-    rangeOfView: Optional[float] = None
+    rangeOfView: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **rangeOfView** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
@@ -56,7 +54,7 @@ class CavityRadiationState(InteractionState):
     surfaceReflectionState: SymbolicConstant
 
     #: A Float specifying the acceptable tolerance for the viewfactor calculations.
-    viewfactorAccuracyTol: Optional[float] = None
+    viewfactorAccuracyTol: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **viewfactorAccuracyTol**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -45,19 +45,19 @@ class MaterialAssignment(PredefinedField):
     #: object.A tuple of Floats specifying the uniform volume fraction values. The length of
     #: the tuple must match the number of material instance names specified in the Eulerain
     #: section assigned to part instances specified by **instanceList**.
-    assignmentList: Sequence[Tuple[Region, Tuple[float, ...]]] = ()
+    assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = ()
 
     #: A sequence of tuples specifying the discrete volume fractions to be assigned. This
     #: argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region
     #: object.A tuple of Strings specifying Discrete Field names. The length of the tuple must
     #: match the number of material instance names specified in the Eulerain section assigned
     #: to part instances specified by **instanceList**.
-    fieldList: Sequence[Tuple[Region, Tuple[str, ...]]] = ()  # type: ignore
+    fieldList: Sequence[tuple[Region, tuple[str, ...]]] = ()  # type: ignore
 
     #: A sequence of three Ints specifying colors used to display the material instance
     #: assignments. This is a sequence of R,G,B colors, where the values are represented by
     #: integers between 0 and 255. The default value is an empty sequence.
-    colorList: Sequence[Tuple[int, int, int]] = ()
+    colorList: Sequence[tuple[int, int, int]] = ()
 
     @abaqus_method_doc
     def __init__(
@@ -65,9 +65,9 @@ class MaterialAssignment(PredefinedField):
         name: str,
         instanceList: PartInstanceArray,
         useFields: Boolean = OFF,
-        assignmentList: Sequence[Tuple[Region, Tuple[float, ...]]] = (),
-        fieldList: Sequence[Tuple[Region, Tuple[str, ...]]] = (),
-        colorList: Sequence[Tuple[int, int, int]] = (),
+        assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = (),
+        fieldList: Sequence[tuple[Region, tuple[str, ...]]] = (),
+        colorList: Sequence[tuple[int, int, int]] = (),
     ):
         """This method creates a MaterialAssignment predefined field object.
 
@@ -114,9 +114,9 @@ class MaterialAssignment(PredefinedField):
     def setValues(
         self,
         useFields: Boolean = OFF,
-        assignmentList: Sequence[Tuple[Region, Tuple[float, ...]]] = (),
-        fieldList: Sequence[Tuple[Region, Tuple[str, ...]]] = (),
-        colorList: Sequence[Tuple[int, int, int]] = (),
+        assignmentList: Sequence[tuple[Region, tuple[float, ...]]] = (),
+        fieldList: Sequence[tuple[Region, tuple[str, ...]]] = (),
+        colorList: Sequence[tuple[int, int, int]] = (),
     ):
         """This method modifies the MaterialAssignment object.
 

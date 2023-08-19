@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -52,7 +52,7 @@ class TopologyRibDesign(GeometricRestriction):
     #: None or a DatumCsys object specifying the position of the symmetry point defined as the
     #: origin of a local coordinate system. If **csys** = None, the global coordinate system is
     #: used. When this member is queried, it returns an Int. The default value is None.
-    csys: Optional[DatumCsys] = None
+    csys: DatumCsys | None = None
 
     #: The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value
     #: is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check
@@ -67,7 +67,7 @@ class TopologyRibDesign(GeometricRestriction):
         ribThickness: float,
         ribDistance: float,
         region: Region,
-        csys: Optional[DatumCsys] = None,
+        csys: DatumCsys | None = None,
         ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION,
     ):
         """This method creates a TopologyRibDesign object.
@@ -116,7 +116,7 @@ class TopologyRibDesign(GeometricRestriction):
         ribThickness: float,
         ribDistance: float,
         region: Region,
-        csys: Optional[DatumCsys] = None,
+        csys: DatumCsys | None = None,
         ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION,
     ):
         """This method modifies the TopologyRibDesign object.

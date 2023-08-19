@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -34,7 +32,7 @@ class SubmodelSBState(LoadState):
     #: An Int specifying the increment number in the global model step at which the solution
     #: will be used to specify the values of the driven variables. This argument is applicable
     #: only for linear perturbation steps.
-    globalIncrement: Optional[int] = None
+    globalIncrement: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **globalIncrement** member.
     #: Possible values are SET and UNCHANGED.

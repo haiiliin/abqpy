@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -50,4 +48,4 @@ class Message:
     #: A Dictionary object specifying the data returned by the analysis product. The value
     #: depends on the message returned. For a list of the possible entries, see the members of
     #: DataObject.
-    data: Optional[dict] = None
+    data: dict | None = None

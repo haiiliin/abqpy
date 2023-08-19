@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Optional, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -75,7 +75,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: None or a Float specifying the maximum time increment. If there is no upper limit,
     #: **maxIncrement** = None. This argument is required only when
     #: **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
-    maxIncrement: Optional[float] = None
+    maxIncrement: float | None = None
 
     #: A Float specifying the factor that is used to scale the time increment. This argument is
     #: required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
@@ -91,7 +91,7 @@ class ExplicitDynamicsStep(AnalysisStep):
 
     #: None or a Float specifying the user-defined time increment. This argument is required
     #: only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
-    userDefinedInc: Optional[float] = None
+    userDefinedInc: float | None = None
 
     #: A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
     #: "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
@@ -158,25 +158,25 @@ class ExplicitDynamicsStep(AnalysisStep):
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -185,19 +185,19 @@ class ExplicitDynamicsStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -211,12 +211,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         timeIncrementationMethod: Literal[
             C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
         ] = AUTOMATIC_GLOBAL,
-        maxIncrement: Optional[float] = None,
+        maxIncrement: float | None = None,
         scaleFactor: float = 1,
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-        userDefinedInc: Optional[float] = None,
+        userDefinedInc: float | None = None,
         maintainAttributes: Boolean = False,
         improvedDtMethod: Boolean = ON,
     ):
@@ -301,12 +301,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         timeIncrementationMethod: Literal[
             C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
         ] = AUTOMATIC_GLOBAL,
-        maxIncrement: Optional[float] = None,
+        maxIncrement: float | None = None,
         scaleFactor: float = 1,
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-        userDefinedInc: Optional[float] = None,
+        userDefinedInc: float | None = None,
         improvedDtMethod: Boolean = ON,
     ):
         """This method modifies the ExplicitDynamicsStep object.

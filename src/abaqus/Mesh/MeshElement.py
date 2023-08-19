@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Optional, Sequence, Tuple
+from typing import TYPE_CHECKING, Sequence
 
 from typing_extensions import Literal
 
@@ -53,7 +53,7 @@ class MeshElement:
     """
 
     #: An Int specifying the element label.
-    label: Optional[int] = None
+    label: int | None = None
 
     #: A SymbolicConstant specifying the Abaqus element code.
     type: SymbolicConstant
@@ -64,7 +64,7 @@ class MeshElement:
     #: A tuple of Ints specifying the internal node indices that define the nodal connectivity.
     #: It is important to note the difference with OdbMeshElement object of ODB where the
     #: connectivity is node labels instead of node indices.
-    connectivity: Tuple[int, ...] = ()
+    connectivity: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def Element(
@@ -111,34 +111,34 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def getNodes(self) -> Tuple[MeshNode]:
+    def getNodes(self) -> tuple[MeshNode]:
         """This method returns a tuple of node objects of the element.
 
         Returns
         -------
-        Tuple[MeshNode]
+        tuple[MeshNode]
             A tuple of MeshNode objects.
         """
         ...
 
     @abaqus_method_doc
-    def getElemEdges(self) -> Tuple[MeshEdge]:
+    def getElemEdges(self) -> tuple[MeshEdge]:
         """This method returns a tuple of unique element edge objects on the element.
 
         Returns
         -------
-        Tuple[MeshEdge]
+        tuple[MeshEdge]
             A tuple of MeshEdge objects.
         """
         ...
 
     @abaqus_method_doc
-    def getElemFaces(self) -> Tuple[MeshFace]:
+    def getElemFaces(self) -> tuple[MeshFace]:
         """This method returns a tuple of unique element face objects on the element.
 
         Returns
         -------
-        Tuple[MeshFace]
+        tuple[MeshFace]
             A tuple of MeshFace objects.
         """
         ...
@@ -172,7 +172,7 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: Optional[int] = None) -> None:
+    def setValues(self, label: int | None = None) -> None:
         """This method modifies the MeshElement object.
 
         Parameters

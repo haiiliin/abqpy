@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -31,12 +29,12 @@ class ConstrainedSketchOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        sheetSize: Optional[float] = None,
-        gridSpacing: Optional[float] = None,
+        sheetSize: float | None = None,
+        gridSpacing: float | None = None,
         grid: Boolean = ON,
         gridFrequency: int = 1,
         dimensionTextHeight: float = 12,
-        decimalPlaces: Optional[int] = None,
+        decimalPlaces: int | None = None,
         constructionGeometry: Boolean = ON,
         gridSnap: Boolean = ON,
         preselection: Boolean = ON,
@@ -47,10 +45,9 @@ class ConstrainedSketchOptions:
         addImpliedConstraints: Boolean = ON,
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
-        autoConstrainLinearTolerance: Optional[float] = None,
-        autoConstrainOptions: Optional[
-            Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
-        ] = None,
+        autoConstrainLinearTolerance: float | None = None,
+        autoConstrainOptions: Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
+        | None = None,
         dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
         editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):

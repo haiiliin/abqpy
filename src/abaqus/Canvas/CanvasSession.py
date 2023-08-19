@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Tuple
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -18,7 +16,7 @@ class CanvasSession(SessionBase):
     def Viewport(
         self,
         name: str,
-        origin: Tuple[float, float] = (0.0, 0.0),
+        origin: tuple[float, float] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,

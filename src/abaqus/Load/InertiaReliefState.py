@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
@@ -93,7 +91,7 @@ class InertiaReliefState(LoadState):
     #: - The **X**, **Y** and **Z** coordinates of a fixed rotation point.
     #: - A point on the rotation axis.
     #: - A point on the symmetry line.
-    referencePoint: Optional[float] = None
+    referencePoint: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.

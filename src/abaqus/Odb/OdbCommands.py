@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
 
@@ -54,7 +54,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 
 
 @abaqus_function_doc
-def maxEnvelope() -> Sequence[Tuple[FieldOutput, FieldOutput]]:
+def maxEnvelope() -> Sequence[tuple[FieldOutput, FieldOutput]]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Returns
@@ -75,7 +75,7 @@ def maxEnvelope() -> Sequence[Tuple[FieldOutput, FieldOutput]]:
 
 
 @abaqus_function_doc
-def minEnvelope() -> Sequence[Tuple[FieldOutput, FieldOutput]]:
+def minEnvelope() -> Sequence[tuple[FieldOutput, FieldOutput]]:
     """Retrieve the minimum value of an output variable over a number of fields.
 
     Returns

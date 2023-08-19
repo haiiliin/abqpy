@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -199,13 +197,13 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: initiation potential contribution. This member can be specified only if
     #: **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
-    initiationPotentials: Optional[ConnectorPotentialArray] = None
+    initiationPotentials: ConnectorPotentialArray | None = None
 
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: evolution potential contribution). This member can be specified only if
     #: **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
     #: **criterion** = FORCE or MOTION.
-    evolutionPotentials: Optional[ConnectorPotentialArray] = None
+    evolutionPotentials: ConnectorPotentialArray | None = None
 
     #: A sequence of sequences of Floats specifying the initiation properties. The default
     #: value is an empty sequence.Items in the **initiationTable** data are described below.
@@ -246,8 +244,8 @@ class ConnectorDamage(ConnectorBehaviorOption):
         evolutionDependencies: int = 0,
         evolutionPotentialOperator: Literal[C.SUM, C.MOTION, C.MOTION_TYPE, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         evolutionPotentialExponent: float = 2,
-        initiationPotentials: Optional[ConnectorPotentialArray] = None,
-        evolutionPotentials: Optional[ConnectorPotentialArray] = None,
+        initiationPotentials: ConnectorPotentialArray | None = None,
+        evolutionPotentials: ConnectorPotentialArray | None = None,
         initiationTable: tuple = (),
         evolutionTable: tuple = (),
         affectedComponents: tuple = (),

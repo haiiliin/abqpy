@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -19,4 +19,4 @@ class CurrentProbeValues:
 
     #: A tuple of Floats specifying the values obtained while probing. These values are updated
     #: constantly as the user moves the mouse over the object being probed.
-    values: Optional[Sequence[float]] = None
+    values: Sequence[float | None] = None

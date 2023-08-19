@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Dict, Optional, Tuple
+from typing import TYPE_CHECKING, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -47,7 +47,7 @@ class Edge:
     """
 
     #: An Int specifying the index of the edge in the EdgeArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A Boolean specifying whether the edge belongs to the reference representation of the
     #: Part or Instance.
@@ -55,14 +55,14 @@ class Edge:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the edge.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
 
     #: A tuple of Floats specifying the name of the feature that created this edge.
-    featureName: Optional[float] = None
+    featureName: float | None = None
 
     #: A tuple of Floats specifying the name of the part instance for this edge (if
     #: applicable).
-    instanceName: Optional[float] = None
+    instanceName: float | None = None
 
     @abaqus_method_doc
     def isTangentFlipped(self) -> Boolean:
@@ -77,7 +77,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: Tuple[float, float, float]) -> Dict:
+    def getCurvature(self, parameter: float, point: tuple[float, float, float]) -> Dict:
         """This method returns curvature information at a location on the edge.
 
         Parameters
@@ -105,12 +105,12 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getFaces(self) -> Tuple[int]:
+    def getFaces(self) -> tuple[int]:
         """This method returns a sequence consisting of the face ids of the faces which share this edge.
 
         Returns
         -------
-        Tuple[int]
+        tuple[int]
             A tuple of integers.
         """
         ...
@@ -197,7 +197,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getVertices(self) -> Tuple[int]:
+    def getVertices(self) -> tuple[int]:
         """This method returns a sequence of indices of the vertices that bound this edge. The
         first index refers to the vertex where the normalized curve parameter = 0.0, and the
         second index refers to the vertex where the normalized curve parameter = 1.0. If the
@@ -205,7 +205,7 @@ class Edge:
 
         Returns
         -------
-        Tuple[int]
+        tuple[int]
             A tuple of integers.
 
         """
