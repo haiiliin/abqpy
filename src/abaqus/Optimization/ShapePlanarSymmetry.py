@@ -66,14 +66,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-<<<<<<< HEAD
-        csys: Optional[int] = None,
-        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int | None = None,
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -128,14 +122,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        csys: Optional[int] = None,
-        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int | None = None,
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

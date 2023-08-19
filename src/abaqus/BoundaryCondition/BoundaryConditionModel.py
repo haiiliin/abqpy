@@ -1483,12 +1483,7 @@ class BoundaryConditionModel(ModelBase):
         exteriorTolerance: float = 0,
         localCsys: str | None = None,
         globalIncrement: int = 0,
-<<<<<<< HEAD
-        centerZoneSize: Optional[float] = None,
-=======
         centerZoneSize: float | None = None,
-        intersectionOnly: Boolean = OFF,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
 

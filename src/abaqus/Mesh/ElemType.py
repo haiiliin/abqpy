@@ -166,23 +166,6 @@ class ElemType:
     #:     The ``nodeOffset`` attribute was added.
     nodeOffset: int | None = None
 
-<<<<<<< HEAD
-=======
-    #: A Float specifying the linear kinematic conversion value.This argument is applicable
-    #: only to some Abaqus/Explicit elements.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``linearKinematicCtrl`` attribute was added.
-    linearKinematicCtrl: float | None = None
-
-    #: A Float specifying the initial gap opening.This parameter is applicable only to some
-    #: Abaqus/Standard elements.
-    #:
-    #: .. versionadded:: 2022
-    #:     The ``initialGapOpening`` attribute was added.
-    initialGapOpening: float | None = None
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     @abaqus_method_doc
     def __init__(
         self,
@@ -212,13 +195,7 @@ class ElemType:
         linearBulkViscosity: float = 1,
         quadraticBulkViscosity: float = 1,
         numFourierModes: int = 1,
-<<<<<<< HEAD
-        nodeOffset: Optional[int] = None,
-=======
         nodeOffset: int | None = None,
-        linearKinematicCtrl: float | None = None,
-        initialGapOpening: float | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates an ElemType object.
 

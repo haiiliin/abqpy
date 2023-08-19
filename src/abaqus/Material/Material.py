@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-from typing import Optional, Union
-
-=======
 from __future__ import annotations
 
-from typing import Sequence, Union
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+from typing import Union
 
 from typing_extensions import Literal
 
