@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -27,8 +27,8 @@ class FreeBodyReportOptions:
     def setValues(
         self,
         numDigits: int = 3,
-        forceThreshold: Optional[float] = None,
-        momentThreshold: Optional[float] = None,
+        forceThreshold: float | None = None,
+        momentThreshold: float | None = None,
         numberFormat: Literal[C.SCIENTIFIC, C.ENGINEERING, C.FIXED] = SCIENTIFIC,
         reportFormat: Literal[C.COMMA_SEPARATED_VALUES, C.NORMAL_ANNOTATED] = NORMAL_ANNOTATED,
         csysType: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,

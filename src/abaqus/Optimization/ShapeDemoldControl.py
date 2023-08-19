@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -49,7 +49,7 @@ class ShapeDemoldControl(GeometricRestriction):
     #: **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
     #: is queried, it returns an Int indicating the identifier of the DatumCsys. The default
     #: value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Float specifying the draw angle. The default value is 0.0.
     drawAngle: float = 0
@@ -87,7 +87,7 @@ class ShapeDemoldControl(GeometricRestriction):
         pullDirection: tuple,
         region: Region,
         collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         drawAngle: float = 0,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -157,7 +157,7 @@ class ShapeDemoldControl(GeometricRestriction):
     def setValues(
         self,
         collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         drawAngle: float = 0,
         mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,

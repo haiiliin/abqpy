@@ -1,11 +1,10 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
-    BENDING,
     DEFAULT,
     GRADIENT,
     NO_IDEALIZATION,
@@ -42,10 +41,10 @@ class CompositeShellSection(GeometryShellSection):
     """
 
     #: A RebarLayers object specifying reinforcement properties.
-    rebarLayers: Optional[RebarLayers] = None
+    rebarLayers: RebarLayers
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: Optional[TransverseShearShell] = None
+    transverseShear: TransverseShearShell
 
     #: A String specifying the repository key.
     name: str
@@ -97,16 +96,16 @@ class CompositeShellSection(GeometryShellSection):
     #: calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
     #: values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
     #: is NO_IDEALIZATION.
-    idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION
+    idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
-    nTemp: Optional[int] = None
+    nTemp: int | None = None
 
     #: None or a Float specifying the effective thickness modulus. This argument is relevant
     #: only for continuum shells and must be used in conjunction with the argument **poisson**.
     #: The default value is None.
-    thicknessModulus: Optional[float] = None
+    thicknessModulus: float | None = None
 
     #: A Boolean specifying whether or not to use the value of **density**. The default value is
     #: OFF.
@@ -150,9 +149,9 @@ class CompositeShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -256,9 +255,9 @@ class CompositeShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
