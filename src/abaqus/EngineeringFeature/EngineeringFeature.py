@@ -25,6 +25,7 @@ from ..UtilityAndView.abaqusConstants import (
     UNIFORM,
     Boolean,
     R,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AssembledFastener import AssembledFastener
@@ -428,7 +429,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         region: Region,
         physicalRadius: float,
         directionVector: tuple | None = None,
-        targetSurfaces: RegionArray = MODEL,
+        targetSurfaces: RegionArray | SymbolicConstant = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
@@ -968,7 +969,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         FileImperfection
             A FileImperfection object.
         """
-        self.fileImperfections[name] = fileImperfection = FileImperfection(
+        self.imperfections[name] = fileImperfection = FileImperfection(
             name, file, step, linearSuperpositions, region, increment
         )
         return fileImperfection
@@ -1002,7 +1003,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         InputImperfection
             A InputImperfection object.
         """
-        self.inputImperfections[name] = inputImperfection = InputImperfection(name, file, system)
+        self.imperfections[name] = inputImperfection = InputImperfection(name, file, system)
         return inputImperfection
 
     def DataImperfection(
@@ -1035,5 +1036,5 @@ class EngineeringFeature(EngineeringFeatureBase):
         DataImperfection
             A DataImperfection object.
         """
-        self.dataImperfections[name] = dataImperfection = DataImperfection(name, imperfectionTable, system)
+        self.imperfections[name] = dataImperfection = DataImperfection(name, imperfectionTable, system)
         return dataImperfection

@@ -39,7 +39,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: DatumCsys | None = None
+    localCsys: DatumCsys | None = DatumCsys()
 
     @abaqus_method_doc
     def __init__(
@@ -51,7 +51,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         v2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         v3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         vr1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
-        vr2: Union[float, Literal[C.SET, C.C.UNSET]] = UNSET,
+        vr2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         vr3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
         amplitude: Union[str, Literal[C.UNSET]] = UNSET,
         localCsys: DatumCsys | None = None,
@@ -178,13 +178,13 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        v1: Union[float, Literal[C.SET, C.UNSET]] = ...,
-        v2: Union[float, Literal[C.SET, C.C.UNSET]] = ...,
-        v3: Union[float, Literal[C.SET, C.UNSET]] = ...,
-        vr1: Union[float, Literal[C.SET, C.UNSET]] = ...,
-        vr2: Union[float, Literal[C.SET, C.UNSET]] = ...,
-        vr3: Union[float, Literal[C.SET, C.UNSET]] = ...,
-        amplitude: Union[str, Literal[C.UNCHANGED, C.FREED]] = ...,
+        v1: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        v2: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        v3: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr1: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr2: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr3: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        amplitude: Union[str, Literal[C.UNCHANGED, C.FREED]] = C.UNCHANGED,
     ):
         """This method modifies the propagating data for an existing VelocityAdaptiveMeshConstraint object in
         the specified step.

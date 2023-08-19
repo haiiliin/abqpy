@@ -52,7 +52,7 @@ class TopologyRibDesign(GeometricRestriction):
     #: None or a DatumCsys object specifying the position of the symmetry point defined as the
     #: origin of a local coordinate system. If **csys** = None, the global coordinate system is
     #: used. When this member is queried, it returns an Int. The default value is None.
-    csys: DatumCsys | None = None
+    csys: DatumCsys | None = DatumCsys()
 
     #: The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value
     #: is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check

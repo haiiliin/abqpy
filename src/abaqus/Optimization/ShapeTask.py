@@ -502,7 +502,7 @@ class ShapeTask(OptimizationTask):
         meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
         meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
-        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
+        numFreeNodeLayers: Literal[C.FIX_NONE] | int = 0,
         numSmoothedElementLayers: int | None = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,

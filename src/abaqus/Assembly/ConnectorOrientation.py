@@ -23,21 +23,12 @@ class ConnectorOrientation:
             session.odbs[name].rootAssembly.connectorOrientations[i]
     """
 
-    region: Set
-    localCsys1: DatumCsys = DatumCsys()
-    axis1: SymbolicConstant = (AXIS_1,)
-    angle1: float = 0
-    orient2sameAs1: Boolean = ON
-    localCsys2: DatumCsys = DatumCsys()
-    axis2: SymbolicConstant = AXIS_1
-    angle2: float = 0
-
     #: A Set object specifying the region to which the orientation is assigned.
     region: Set
 
     #: A DatumCsys object specifying the local coordinate system of the first connector point.
     #: This value may be None, indicating the global coordinate system.
-    localCsys1: DatumCsys | None = None
+    localCsys1: DatumCsys | None = DatumCsys()
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
@@ -53,7 +44,7 @@ class ConnectorOrientation:
 
     #: A DatumCsys object specifying the local coordinate system of the second connector point.
     #: This value may be None, indicating the global coordinate system.
-    localCsys2: DatumCsys | None = None
+    localCsys2: DatumCsys | None = DatumCsys()
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The

@@ -57,7 +57,7 @@ class MaterialOrientation:
     #: material orientation for the given region. In the ODB, this member was previously
     #: accessible using "csys," but support has now been added for localCsys and the csys
     #: member will be deprecated.
-    localCsys: DatumCsys | None = None
+    localCsys: DatumCsys | None = DatumCsys()
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. For shells this axis is also the shell normal. Possible

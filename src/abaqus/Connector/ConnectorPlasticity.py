@@ -150,7 +150,7 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
 
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
     #: potential contribution. This member can be specified only if **coupling** = COUPLED.
-    connectorPotentials: ConnectorPotentialArray | None = None
+    connectorPotentials: ConnectorPotentialArray = []
 
     #: A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
     #: the **isotropicTable** data are described below. This argument is applicable only if

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Sequence
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -197,17 +199,17 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: initiation potential contribution. This member can be specified only if
     #: **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
-    initiationPotentials: ConnectorPotentialArray | None = None
+    initiationPotentials: ConnectorPotentialArray
 
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each
     #: evolution potential contribution). This member can be specified only if
     #: **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
     #: **criterion** = FORCE or MOTION.
-    evolutionPotentials: ConnectorPotentialArray | None = None
+    evolutionPotentials: ConnectorPotentialArray = []
 
     #: A sequence of sequences of Floats specifying the initiation properties. The default
     #: value is an empty sequence.Items in the **initiationTable** data are described below.
-    initiationTable: tuple = ()
+    initiationTable: Sequence[Sequence[float]] = ()
 
     #: A sequence of sequences of Floats specifying the evolution properties. The default value
     #: is an empty sequence.Items in the **evolutionTable** data are described below. This
@@ -218,7 +220,7 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: Possible values are 1 ≤ **components** ≤ 6. Only available components can be specified.
     #: This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
     #: value is an empty sequence.
-    affectedComponents: tuple = ()
+    affectedComponents: Sequence[int] = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be

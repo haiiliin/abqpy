@@ -48,7 +48,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: force component direction. This argument applies only if
     #: **frictionModel** = USER_CUSTOMIZED, if **useContactForceComponent** = ON, and if
     #: **contactForceStyle** = DERIVED_COMPONENT.
-    derivedComponent: DerivedComponent = DerivedComponent()
+    derivedComponent: DerivedComponent = DerivedComponent()  # type: ignore
 
     #: A ConnectorOptions object specifying the ConnectorOptions used to define tabular options
     #: for this ConnectorBehaviorOption.
@@ -123,7 +123,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: A ConnectorPotentialArray object specifying one ConnectorPotential object for each force
     #: potential contribution. This member can be specified only if
     #: **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
-    connectorPotentials: ConnectorPotentialArray | None = None
+    connectorPotentials: ConnectorPotentialArray = []
 
     #: A sequence of sequences of Floats specifying friction properties. The default value is
     #: an empty sequence.If **frictionModel** = PREDEFINED, each sequence of the table data

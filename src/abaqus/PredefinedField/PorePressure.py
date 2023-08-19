@@ -45,11 +45,11 @@ class PorePressure(PredefinedField):
         coord1: float = 0,
         coord2: float = 0,
         pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        pressure2Field: str = ...,
+        pressure2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
         interpolate: Boolean = OFF,
     ) -> None:
         """This method creates a PorePressure predefined field object.
