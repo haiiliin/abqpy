@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_function_doc
 
@@ -14,10 +14,10 @@ from ..UtilityAndView.abaqusConstants import SPECIFY, Boolean, SymbolicConstant
 def writeFreeBodyReport(
     fileName: str,
     append: Boolean,
-    step: Optional[int] = None,
-    frame: Optional[int] = None,
+    step: int | None = None,
+    frame: int | None = None,
     stepFrame: SymbolicConstant = SPECIFY,
-    odb: Optional[Odb] = None,
+    odb: Odb | None = None,
 ):
     """This method writes a FreeBody object to a user-defined ASCII file.
 

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -64,7 +64,7 @@ class GapFlow:
     def __init__(
         self,
         table: tuple,
-        kmax: Optional[float] = None,
+        kmax: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: Literal[C.BINGHAM_PLASTIC, C.POWER_LAW, C.HERSCHEL_BULKLEY, C.NEWTONIAN] = NEWTONIAN,

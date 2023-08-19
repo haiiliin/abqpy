@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -15,11 +15,11 @@ class SubstructureGenerateModes:
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.
-    start: Optional[int] = None
+    start: int | None = None
 
     #: An Int specifying the mode number of the highest mode of a range.
-    end: Optional[int] = None
+    end: int | None = None
 
     #: An Int specifying the increment used to define the intermediate mode numbers beginning
     #: from the lowest mode to the highest mode.
-    increment: Optional[int] = None
+    increment: int | None = None

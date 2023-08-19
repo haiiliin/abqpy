@@ -52,7 +52,7 @@ class SectionBase:
 
         Returns
         -------
-        List[Section]
+        list[Section]
             A list of Section objects.
         """
         ...

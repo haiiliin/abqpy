@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -86,7 +86,7 @@ class CompositePly:
 
     #: The SymbolicConstant None or a DatumCsys object specifying a coordinate system reference
     #: for the relative orientation of this layer. The default value is None.
-    orientation: Optional[SymbolicConstant] = None
+    orientation: SymbolicConstant
 
     #: A String specifying the name of the field specifying the additional rotation. The
     #: default value is an empty string.
@@ -107,7 +107,7 @@ class CompositePly:
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         additionalRotationType: Literal[C.ROTATION_NONE, C.ANGLE_0, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
-        orientation: Optional[SymbolicConstant] = None,
+        orientation: SymbolicConstant | None = None,
         additionalRotationField: str = "",
     ):
         """This method creates a CompositePly object.

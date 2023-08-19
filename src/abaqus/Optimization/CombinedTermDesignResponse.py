@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -29,7 +29,7 @@ class CombinedTermDesignResponse(DesignResponse):
 
     #: None or a sequence of Floats specifying the maximum radius of influence used when
     #: **method** is FILTER. The default value is None.
-    filterMaxRadius: Optional[str] = None
+    filterMaxRadius: str | None = None
 
     #: A Float specifying the exponent used when **method** is FILTER. The default value is 1.0.
     filterExponent: float = 1
@@ -41,7 +41,7 @@ class CombinedTermDesignResponse(DesignResponse):
     #: None or a sequence of Floats specifying the upper bound of the vector value used when
     #: **method** is CUT_OFF. All values greater than the **highCutOff** are set to the
     #: **highCutOff** value. The default value is None.
-    highCutOff: Optional[str] = None
+    highCutOff: str | None = None
 
     #: A Float specifying the lower bound of the vector value used when **method** is CUT_OFF.
     #: All values less than the **lowCutOff** are treated as 0. The default value is 0.0.
@@ -94,10 +94,10 @@ class CombinedTermDesignResponse(DesignResponse):
         self,
         name: str,
         terms: tuple,
-        filterMaxRadius: Optional[str] = None,
+        filterMaxRadius: str | None = None,
         filterExponent: float = 1,
         filterRadiusReduction: float = 0,
-        highCutOff: Optional[str] = None,
+        highCutOff: str | None = None,
         lowCutOff: float = 0,
         method: Literal[
             C.ABSOLUTE_DIFFERENCE,
@@ -213,10 +213,10 @@ class CombinedTermDesignResponse(DesignResponse):
     @abaqus_method_doc
     def setValues(
         self,
-        filterMaxRadius: Optional[str] = None,
+        filterMaxRadius: str | None = None,
         filterExponent: float = 1,
         filterRadiusReduction: float = 0,
-        highCutOff: Optional[str] = None,
+        highCutOff: str | None = None,
         lowCutOff: float = 0,
         method: Literal[
             C.ABSOLUTE_DIFFERENCE,

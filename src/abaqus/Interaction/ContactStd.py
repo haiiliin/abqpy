@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, Union, overload
+from __future__ import annotations
+
+from typing import Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -106,20 +108,29 @@ class ContactStd(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None,
-        excludedPairs: Optional[RegionPairs] = None,
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+        includedPairs: RegionPairs | None = None,
+        excludedPairs: RegionPairs | None = None,
+        contactPropertyAssignments: ContactPropertyAssignment | None = None,
+        surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
+        surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
+        surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+<<<<<<< HEAD
         slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         initializationAssignments: Optional[InitializationAssignment] = None,
         stabilizationAssignments: Optional[StabilizationAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
+=======
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
+        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        initializationAssignments: InitializationAssignment | None = None,
+        stabilizationAssignments: StabilizationAssignment | None = None,
+        smoothingAssignments: SmoothingAssignment | None = None,
+        slidingTransitionAssignments: SlidingTransitionAssignment | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactStd object.
 
@@ -200,7 +211,7 @@ class ContactStd(Interaction):
         ContactStd
             A ContactStd object.
         """
-        super().__init__()
+        ...
 
     @overload
     @abaqus_method_doc
@@ -211,19 +222,27 @@ class ContactStd(Interaction):
         globalSmoothing: Boolean = ON,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
         useAllstar: Boolean = OFF,
-        includedPairs: Optional[SymbolicConstant] = None,
-        excludedPairs: Optional[SymbolicConstant] = None,
-        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        includedPairs: SymbolicConstant | None = None,
+        excludedPairs: SymbolicConstant | None = None,
+        contactPropertyAssignments: SymbolicConstant | None = None,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+<<<<<<< HEAD
         masterSlaveAssignments: Optional[SymbolicConstant] = None,
         initializationAssignments: Optional[SymbolicConstant] = None,
         stabilizationAssignments: Optional[SymbolicConstant] = None,
         smoothingAssignments: Optional[SymbolicConstant] = None,
         slidingTransitionAssignments: Optional[SymbolicConstant] = None,
+=======
+        mainSecondaryAssignments: SymbolicConstant | None = None,
+        initializationAssignments: SymbolicConstant | None = None,
+        stabilizationAssignments: SymbolicConstant | None = None,
+        smoothingAssignments: SymbolicConstant | None = None,
+        slidingTransitionAssignments: SymbolicConstant | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactStd object.
 
@@ -350,7 +369,7 @@ class ContactStd(Interaction):
         ContactStd
             A ContactStd object.
         """
-        super().__init__()
+        ...
 
     def __init__(self, *args, **kwargs):
         ...
