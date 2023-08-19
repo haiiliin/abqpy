@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -25,7 +25,7 @@ class Ornl:
     """
 
     @abaqus_method_doc
-    def __init__(self, a: float = 0, h: Optional[float] = None, reset: Boolean = OFF):
+    def __init__(self, a: float = 0, h: float | None = None, reset: Boolean = OFF):
         """This method creates an Ornl object.
 
         .. note::

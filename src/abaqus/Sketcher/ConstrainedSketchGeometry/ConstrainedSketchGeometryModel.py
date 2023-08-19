@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Sequence
 
 from typing_extensions import Literal
@@ -345,7 +347,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        vertices: List[ConstrainedSketchVertex]
+        vertices: list[ConstrainedSketchVertex]
             A list of ConstrainedSketchVertex objects
         """
         ...

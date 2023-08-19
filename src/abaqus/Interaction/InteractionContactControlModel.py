@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -26,7 +26,7 @@ class InteractionContactControlModel(ModelBase):
         self,
         name: str,
         globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,
-        globTrkInc: Optional[int] = None,
+        globTrkInc: int | None = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,
@@ -91,9 +91,9 @@ class InteractionContactControlModel(ModelBase):
         name: str,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
-        relativePenetrationTolerance: Optional[float] = None,
-        absolutePenetrationTolerance: Optional[float] = None,
-        frictionOnset: Optional[Literal[C.IMMEDIATE, C.DELAYED]] = None,
+        relativePenetrationTolerance: float | None = None,
+        absolutePenetrationTolerance: float | None = None,
+        frictionOnset: Literal[C.IMMEDIATE, C.DELAYED] | None = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -104,7 +104,7 @@ class InteractionContactControlModel(ModelBase):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: Literal[C.COMPUTE, C.AUTOMATIC, C.SPECIFY, C.COEFFICIENT] = COMPUTE,
-        zeroDamping: Optional[float] = None,
+        zeroDamping: float | None = None,
         enforceWithLagrangeMultipliers: Literal[C.ENFORCEMENT_OFF, C.DEFAULT, C.ENFORCEMENT_ON] = DEFAULT,
     ) -> StdContactControl:
         """This method creates an StdContactControl object.

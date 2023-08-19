@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -96,7 +96,7 @@ class GasketThicknessBehavior:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: Optional[float] = None,
+        tensileStiffnessFactor: float | None = None,
         type: Literal[C.DAMAGE, C.ELASTIC_PLASTIC] = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,

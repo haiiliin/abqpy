@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -73,10 +73,10 @@ class ModelBase:
     name: str = ""
 
     #: None or a Float specifying the Stefan-Boltzmann constant. The default value is None.
-    stefanBoltzmann: Optional[float] = None
+    stefanBoltzmann: float | None = None
 
     #: None or a Float specifying the absolute zero constant. The default value is None.
-    absoluteZero: Optional[float] = None
+    absoluteZero: float | None = None
 
     #: A SymbolicConstant specifying the type of incident wave formulation to be used in
     #: acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
@@ -84,7 +84,7 @@ class ModelBase:
     waveFormulation: SymbolicConstant = NOT_SET
 
     #: None or a Float specifying the universal gas constant. The default value is None.
-    universalGas: Optional[float] = None
+    universalGas: float | None = None
 
     #: A Boolean specifying whether an input file should be written without parts and
     #: assemblies. The default value is OFF.
@@ -92,7 +92,7 @@ class ModelBase:
 
     #: An Int specifying the increment, interval, iteration or cycle where the restart analysis
     #: will start. To select the end of the step use the SymbolicConstant STEP_END.
-    restartIncrement: Optional[SymbolicConstant] = None
+    restartIncrement: int | SymbolicConstant
 
     #: A Boolean specifying that the step specified by **restartStep** should be terminated at
     #: the increment specified by **restartIncrement**.
@@ -102,7 +102,7 @@ class ModelBase:
     shellToSolid: Boolean = OFF
 
     #: A Float specifying the time stamp that indicates when the model was last changed.
-    lastChangedCount: Optional[float] = None
+    lastChangedCount: float | None = None
 
     #: A String specifying the purpose and contents of the Model object. The default value is
     #: an empty string.
@@ -136,40 +136,40 @@ class ModelBase:
     rootAssembly: Assembly = Assembly()
 
     #: A repository of Amplitude objects.
-    amplitudes: Dict[str, Amplitude] = {}
+    amplitudes: dict[str, Amplitude] = {}
 
     #: A repository of Profile objects.
-    profiles: Dict[str, Profile] = {}
+    profiles: dict[str, Profile] = {}
 
     #: A repository of BoundaryCondition objects.
-    boundaryConditions: Dict[str, BoundaryCondition] = {}
+    boundaryConditions: dict[str, BoundaryCondition] = {}
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: Dict[str, Constraint] = {}
+    constraints: dict[str, Constraint] = {}
 
     #: A repository of AnalyticalField objects.
-    analyticalFields: Dict[str, AnalyticalField] = {}
+    analyticalFields: dict[str, AnalyticalField] = {}
 
     #: A repository of DiscreteField objects.
-    discreteFields: Dict[str, DiscreteField] = {}
+    discreteFields: dict[str, DiscreteField] = {}
 
     #: A repository of PredefinedField objects.
-    predefinedFields: Dict[str, PredefinedField] = {}
+    predefinedFields: dict[str, PredefinedField] = {}
 
     #: A repository of Interaction objects.
-    interactions: Dict[str, Interaction] = {}
+    interactions: dict[str, Interaction] = {}
 
     #: A repository of InteractionProperty objects.
-    interactionProperties: Dict[str, ContactProperty] = {}
+    interactionProperties: dict[str, ContactProperty] = {}
 
     #: A repository of ContactControl objects.
-    contactControls: Dict[str, ContactControl] = {}
+    contactControls: dict[str, ContactControl] = {}
 
     #: A repository of ContactInitialization objects.
-    contactInitializations: Dict[str, ContactInitialization] = {}
+    contactInitializations: dict[str, ContactInitialization] = {}
 
     #: A repository of ContactStabilization objects.
-    contactStabilizations: Dict[str, ContactStabilization] = {}
+    contactStabilizations: dict[str, ContactStabilization] = {}
 
     #: A tuple of tuples of Strings specifying the linked child PartInstance name in the
     #: current model to the corresponding parent PartInstance name in a different model.
@@ -180,84 +180,84 @@ class ModelBase:
     linkedParts: tuple = ()
 
     #: A repository of Load objects.
-    loads: Dict[str, Load] = {}
+    loads: dict[str, Load] = {}
 
     #: A repository of Material objects.
-    materials: Dict[str, Material] = {}
+    materials: dict[str, Material] = {}
 
     #: A repository of Calibration objects.
-    calibrations: Dict[str, Calibration] = {}
+    calibrations: dict[str, Calibration] = {}
 
     #: A repository of Section objects.
-    sections: Dict[str, Section] = {}
+    sections: dict[str, Section] = {}
 
     #: A repository of RemeshingRule objects.
-    remeshingRules: Dict[str, RemeshingRule] = {}
+    remeshingRules: dict[str, RemeshingRule] = {}
 
     #: A repository of ConstrainedSketch objects.
-    sketches: Dict[str, ConstrainedSketch] = {}
+    sketches: dict[str, ConstrainedSketch] = {}
 
     #: A repository of Part objects.
-    parts: Dict[str, Part] = {}
+    parts: dict[str, Part] = {}
 
     #: A repository of Step objects.
-    steps: Dict[str, Step] = {}
+    steps: dict[str, Step] = {}
 
     #: A FeatureOptions object.
     featureOptions: FeatureOptions = FeatureOptions()
 
     #: A repository of AdaptiveMeshConstraint objects.
-    adaptiveMeshConstraints: Dict[str, AdaptiveMeshConstraint] = {}
+    adaptiveMeshConstraints: dict[str, AdaptiveMeshConstraint] = {}
 
     #: A repository of AdaptiveMeshControl objects.
-    adaptiveMeshControls: Dict[str, AdaptiveMeshControl] = {}
+    adaptiveMeshControls: dict[str, AdaptiveMeshControl] = {}
 
     #: A repository of TimePoint objects.
-    timePoints: Dict[str, TimePoint] = {}
+    timePoints: dict[str, TimePoint] = {}
 
     #: A repository of Filter objects.
-    filters: Dict[str, Filter] = {}
+    filters: dict[str, Filter] = {}
 
     #: A repository of IntegratedOutputSection objects.
-    integratedOutputSections: Dict[str, IntegratedOutputSection] = {}
+    integratedOutputSections: dict[str, IntegratedOutputSection] = {}
 
     #: A repository of FieldOutputRequest objects.
-    fieldOutputRequests: Dict[str, FieldOutputRequest] = {}
+    fieldOutputRequests: dict[str, FieldOutputRequest] = {}
 
     #: A repository of HistoryOutputRequest objects.
-    historyOutputRequests: Dict[str, HistoryOutputRequest] = {}
+    historyOutputRequests: dict[str, HistoryOutputRequest] = {}
 
     #: A repository of OptimizationTask objects.
-    optimizationTasks: Dict[str, OptimizationTask] = {}
+    optimizationTasks: dict[str, OptimizationTask] = {}
 
     #: A repository of TableCollection objects.
     #:
     #: .. versionadded:: 2020
     #:     The ``tableCollections`` attribute was added.
-    tableCollections: Dict[str, TableCollection] = {}
+    tableCollections: dict[str, TableCollection] = {}
 
     #: A repository of EventSeriesType objects.
     #:
     #: .. versionadded:: 2020
     #:     The ``eventSeriesTypes`` attribute was added.
-    eventSeriesTypes: Dict[str, EventSeriesType] = {}
+    eventSeriesTypes: dict[str, EventSeriesType] = {}
 
     #: A repository of EventSeriesData objects.
     #:
     #: .. versionadded:: 2020
     #:     The ``eventSeriesDatas`` attribute was added.
-    eventSeriesDatas: Dict[str, EventSeriesData] = {}
+    eventSeriesDatas: dict[str, EventSeriesData] = {}
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         description: str = "",
-        stefanBoltzmann: Optional[float] = None,
-        absoluteZero: Optional[float] = None,
+        stefanBoltzmann: float | None = None,
+        absoluteZero: float | None = None,
         waveFormulation: Literal[C.SCATTERED, C.NOT_SET, C.TOTAL] = NOT_SET,
         modelType: Literal[C.STANDARD_EXPLICIT, C.ELECTROMAGNETIC] = STANDARD_EXPLICIT,
-        universalGas: Optional[float] = None,
+        universalGas: float | None = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
         copyInteractions: Boolean = ON,
@@ -449,13 +449,13 @@ class ModelBase:
         self,
         description: str = "",
         noPartsInputFile: Boolean = OFF,
-        absoluteZero: Optional[float] = None,
-        stefanBoltzmann: Optional[float] = None,
+        absoluteZero: float | None = None,
+        stefanBoltzmann: float | None = None,
         waveFormulation: Literal[C.SCATTERED, C.NOT_SET, C.TOTAL] = NOT_SET,
-        universalGas: Optional[float] = None,
+        universalGas: float | None = None,
         restartJob: str = "",
         restartStep: str = "",
-        restartIncrement: Optional[Literal[C.STEP_END]] = None,
+        restartIncrement: Literal[C.STEP_END] | None = None,
         endRestartStep: Boolean = OFF,
         globalJob: str = "",
         shellToSolid: Boolean = OFF,

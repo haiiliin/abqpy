@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -25,50 +25,50 @@ class VelocityBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the velocity component in the 1-direction.
-    v1: Optional[float] = None
+    v1: float | None = None
 
     #: A Float specifying the velocity component in the 2-direction.
-    v2: Optional[float] = None
+    v2: float | None = None
 
     #: A Float specifying the velocity component in the 3-direction.
-    v3: Optional[float] = None
+    v3: float | None = None
 
     #: A Float specifying the rotational velocity component about the 1-direction.
-    vr1: Optional[float] = None
+    vr1: float | None = None
 
     #: A Float specifying the rotational velocity component about the 2-direction.
-    vr2: Optional[float] = None
+    vr2: float | None = None
 
     #: A Float specifying the rotational velocity component about the 3-direction.
-    vr3: Optional[float] = None
+    vr3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v1State: Optional[SymbolicConstant] = None
+    v1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v2State: Optional[SymbolicConstant] = None
+    v2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v3State: Optional[SymbolicConstant] = None
+    v3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr1State: Optional[SymbolicConstant] = None
+    vr1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr2State: Optional[SymbolicConstant] = None
+    vr2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr3State: Optional[SymbolicConstant] = None
+    vr3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #:
@@ -84,7 +84,7 @@ class VelocityBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

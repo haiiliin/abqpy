@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -26,7 +26,7 @@ class InertiaRelief(Load):
     #: degrees of freedom for the inertia relief load. If **localCoordinates** = None, the free
     #: directions are defined in the global coordinate system. When this member is queried, it
     #: returns an Int. The default value is None.
-    localCoordinates: Optional[int] = None
+    localCoordinates: int | None = None
 
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
@@ -43,7 +43,7 @@ class InertiaRelief(Load):
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
         referencePoint: tuple = (),
-        localCoordinates: Optional[int] = None,
+        localCoordinates: int | None = None,
     ):
         """This method creates an InertiaRelief object.
 
@@ -101,7 +101,7 @@ class InertiaRelief(Load):
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
         referencePoint: tuple = (),
-        localCoordinates: Optional[int] = None,
+        localCoordinates: int | None = None,
     ):
         """This method modifies the data for an existing InertiaRelief object in the step where it is created.
 
