@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -27,16 +27,16 @@ class SubmodelSBState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the **globalStep** member. Possible
     #: values are SET and UNCHANGED.
-    globalStepState: Optional[SymbolicConstant] = None
+    globalStepState: SymbolicConstant
 
     #: An Int specifying the increment number in the global model step at which the solution
     #: will be used to specify the values of the driven variables. This argument is applicable
     #: only for linear perturbation steps.
-    globalIncrement: Optional[int] = None
+    globalIncrement: int | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **globalIncrement** member.
     #: Possible values are SET and UNCHANGED.
-    globalIncrementState: Optional[SymbolicConstant] = None
+    globalIncrementState: SymbolicConstant
 
     #: A String specifying the step in the global model from which Abaqus reads the values of
     #: the variables that will drive the submodel analysis. The String indicates the position
@@ -46,7 +46,7 @@ class SubmodelSBState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -60,7 +60,7 @@ class SubmodelSBState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

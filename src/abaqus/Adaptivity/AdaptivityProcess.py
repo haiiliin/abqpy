@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -21,11 +21,11 @@ class AdaptivityProcess:
 
     #: A SymbolicConstant specifying the status of the adaptivity process. Possible values are
     #: SUBMITTED, RUNNING, ABORTED, TERMINATED, and COMPLETED.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A repository of AdaptivityIteration objects specifying the AdaptivityIteration objects
     #: received during running the adaptivity process.
-    iterations: Dict[int, AdaptivityIteration] = {}
+    iterations: dict[int, AdaptivityIteration] = {}
 
     #: A String specifying the name of the Adaptivity Process.
     name: str
@@ -156,7 +156,7 @@ class AdaptivityProcess:
         AdaptivityIteration
             An AdaptivityIteration object.
         """
-        self.iterations[iteration] = iteration = AdaptivityIteration(
+        self.iterations[iteration] = adaptivityIteration = AdaptivityIteration(
             iteration, jobName, modelName, odbPath, remeshingErrors
         )
-        return iteration
+        return adaptivityIteration

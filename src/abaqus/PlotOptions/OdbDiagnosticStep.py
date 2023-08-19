@@ -1,4 +1,4 @@
-from typing import Dict
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -26,7 +26,7 @@ class OdbDiagnosticStep:
     characteristicElementLength: str = ""
 
     #: A repository of OdbContactDiagnostics objects.
-    contactDiagnostics: Dict[str, OdbContactDiagnostics] = {}
+    contactDiagnostics: dict[str, OdbContactDiagnostics] = {}
 
     #: A sequence of string specifying the explicit increment status. This attribute is
     #: read-only.
@@ -44,7 +44,7 @@ class OdbDiagnosticStep:
     incrementsCompleted: str = ""
 
     #: A repository of OdbDiagnosticIncrement objects.
-    increments: Dict[str, OdbDiagnosticIncrement] = {}
+    increments: dict[str, OdbDiagnosticIncrement] = {}
 
     #: A float specifying the initial increment size for the step. This attribute is read-only.
     initialTimeIncrement: str = ""

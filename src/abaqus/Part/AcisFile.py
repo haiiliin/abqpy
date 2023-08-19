@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -26,7 +28,7 @@ class AcisFile:
     """
 
     #: An Int specifying the number of parts in the object.
-    numberOfParts: Optional[int] = None
+    numberOfParts: int | None = None
 
     @abaqus_method_doc
     def openAcis(self, fileName: str, scaleFromFile: Boolean = OFF):
@@ -64,7 +66,7 @@ class AcisFile:
     def openCatia(
         self,
         fileName: str,
-        topology: Optional[Literal[C.WIRE, C.SOLID, C.SHELL]] = None,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] | None = None,
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
@@ -294,7 +296,7 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: float | None = None):
         """This method exports the assembly to a named file in ACIS format.
 
         Parameters

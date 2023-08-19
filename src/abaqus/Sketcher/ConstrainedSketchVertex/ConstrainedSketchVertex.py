@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -16,7 +18,7 @@ class ConstrainedSketchVertex:
     """
 
     #: A tuple of Floats specifying the*X*-, **Y**, and **Z** coordinates of the sketch vertex.
-    coords: Optional[float] = None
+    coords: float | None = None
 
     @abaqus_method_doc
     def Spot(self, point: Sequence[float]):

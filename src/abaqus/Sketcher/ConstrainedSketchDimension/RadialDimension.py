@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -16,10 +18,10 @@ class RadialDimension(ConstrainedSketchDimension):
         self,
         curve: ConstrainedSketchGeometry,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
-        majorRadius: Optional[float] = None,
-        minorRadius: Optional[float] = None,
+        majorRadius: float | None = None,
+        minorRadius: float | None = None,
     ):
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical arc. A radial
         dimension indicates the radius of an arc or circle or the major or minor radius of an ellipse.
