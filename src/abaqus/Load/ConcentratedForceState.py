@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -27,33 +27,33 @@ class ConcentratedForceState(LoadState):
     #: A Float or a Complex specifying the concentrated force component in the 1-direction.
     #: Although **cf1**, **cf2**, and **cf3** are optional arguments, at least one of them must be
     #: nonzero.
-    cf1: Optional[float] = None
+    cf1: float | None = None
 
     #: A Float or a Complex specifying the concentrated force component in the 2-direction.
-    cf2: Optional[float] = None
+    cf2: float | None = None
 
     #: A Float or a Complex specifying the concentrated force component in the 3-direction.
-    cf3: Optional[float] = None
+    cf3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 1-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf1State: Optional[SymbolicConstant] = None
+    cf1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 2-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf2State: Optional[SymbolicConstant] = None
+    cf2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 3-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf3State: Optional[SymbolicConstant] = None
+    cf3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

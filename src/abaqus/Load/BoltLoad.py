@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -95,7 +95,7 @@ class BoltLoad(Load):
     def setValues(
         self,
         boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing BoltLoad object in the step where it is created.
@@ -121,7 +121,7 @@ class BoltLoad(Load):
         self,
         stepName: str,
         boltMethod: Literal[C.FIX_LENGTH, C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
-        magnitude: Optional[float] = None,
+        magnitude: float | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BoltLoad object in the specified step.

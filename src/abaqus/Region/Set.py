@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, overload
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -20,7 +20,8 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import DIFFERENCE, INTERSECTION, OVERWRITE, UNION
+from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Region import Region
 
 
@@ -92,20 +93,20 @@ class Set(Region):
     def __init__(
         self,
         name: str,
-        nodes: Optional[Sequence[MeshNode]] = None,
-        elements: Optional[Sequence[MeshElement]] = None,
-        region: Optional[Region] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
-        edges: Optional[Sequence[Edge]] = None,
-        faces: Optional[Sequence[Face]] = None,
-        cells: Optional[Sequence[Cell]] = None,
-        xVertices: Optional[Sequence[Vertex]] = None,
-        xEdges: Optional[Sequence[Edge]] = None,
-        xFaces: Optional[Sequence[Face]] = None,
+        nodes: Sequence[MeshNode] | None = None,
+        elements: Sequence[MeshElement] | None = None,
+        region: Region | None = None,
+        vertices: Sequence[Vertex] | None = None,
+        edges: Sequence[Edge] | None = None,
+        faces: Sequence[Face] | None = None,
+        cells: Sequence[Cell] | None = None,
+        xVertices: Sequence[Vertex] | None = None,
+        xEdges: Sequence[Edge] | None = None,
+        xFaces: Sequence[Face] | None = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        skinFaces: tuple[tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
     ) -> None:
         """This method creates a set from a sequence of objects in a model database.
 
@@ -200,7 +201,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
+        self, name: str, sets: Sequence[Set], operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
@@ -227,7 +228,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> Set:
@@ -255,7 +256,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
@@ -286,7 +287,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int]):
@@ -317,7 +318,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
@@ -344,4 +345,4 @@ class Set(Region):
         Set
             A Set object or a tuple of Set objects.
         """
-        ...
+        return Set("")

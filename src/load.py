@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from regionToolset import Region
 from sketch import Sketch, SketchTransform
 from xyPlot import (

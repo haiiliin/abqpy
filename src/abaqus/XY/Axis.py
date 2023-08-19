@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -81,13 +81,13 @@ class Axis:
         axis: "Axis",
         labelFrequency: int = 1,
         labelPlacement: Literal[C.INSIDE] = INSIDE,
-        labelStyle: Optional[TextStyle] = None,
-        lineStyle: Optional[LineStyle] = None,
+        labelStyle: TextStyle | None = None,
+        lineStyle: LineStyle | None = None,
         placement: Literal[C.MIN_MAX_EDGE] = MIN_MAX_EDGE,
         tickLength: float = 2,
         tickPlacement: Literal[C.INSIDE] = INSIDE,
-        tickStyle: Optional[LineStyle] = None,
-        titleStyle: Optional[TextStyle] = None,
+        tickStyle: LineStyle | None = None,
+        titleStyle: TextStyle | None = None,
     ):
         """This method modifies the Axis object.
 

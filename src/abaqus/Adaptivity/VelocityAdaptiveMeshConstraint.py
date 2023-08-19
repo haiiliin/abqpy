@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -6,17 +8,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (
-    FOLLOW,
-    FREED,
-    INDEPENDENT,
-    MECHANICAL,
-    SET,
-    THERMAL,
-    UNCHANGED,
-    UNSET,
-    USER_DEFINED,
-)
+from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 
 
@@ -38,7 +31,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: Optional[Literal[MECHANICAL, THERMAL]] = None
+    category: Literal[C.MECHANICAL, C.THERMAL]
 
     #: A Region object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -46,7 +39,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[DatumCsys] = None
+    localCsys: DatumCsys | None = DatumCsys()
 
     @abaqus_method_doc
     def __init__(
@@ -54,15 +47,15 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         name: str,
         createStepName: str,
         region: Region,
-        v1: Union[float, Literal[SET, UNSET]] = UNSET,
-        v2: Union[float, Literal[SET, UNSET]] = UNSET,
-        v3: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr1: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr2: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr3: Union[float, Literal[SET, UNSET]] = UNSET,
-        amplitude: Union[str, Literal[UNSET]] = UNSET,
-        localCsys: Optional[DatumCsys] = None,
-        motionType: Literal[INDEPENDENT, FOLLOW, USER_DEFINED] = INDEPENDENT,
+        v1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        v2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        v3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        amplitude: Union[str, Literal[C.UNSET]] = UNSET,
+        localCsys: DatumCsys | None = None,
+        motionType: Literal[C.INDEPENDENT, C.FOLLOW, C.USER_DEFINED] = INDEPENDENT,
     ):
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
@@ -127,15 +120,15 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     @abaqus_method_doc
     def setValues(
         self,
-        v1: Union[float, Literal[SET, UNSET]] = UNSET,
-        v2: Union[float, Literal[SET, UNSET]] = UNSET,
-        v3: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr1: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr2: Union[float, Literal[SET, UNSET]] = UNSET,
-        vr3: Union[float, Literal[SET, UNSET]] = UNSET,
-        amplitude: Union[str, Literal[UNSET]] = UNSET,
-        localCsys: Optional[DatumCsys] = None,
-        motionType: Literal[INDEPENDENT, FOLLOW, USER_DEFINED] = INDEPENDENT,
+        v1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        v2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        v3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr2: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        vr3: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
+        amplitude: Union[str, Literal[C.UNSET]] = UNSET,
+        localCsys: DatumCsys | None = None,
+        motionType: Literal[C.INDEPENDENT, C.FOLLOW, C.USER_DEFINED] = INDEPENDENT,
     ):
         """This method modifies the data for an existing VelocityAdaptiveMeshConstraint object in the step where
         it is created.
@@ -185,13 +178,13 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        v1: Union[float, Literal[SET, UNSET]] = ...,
-        v2: Union[float, Literal[SET, UNSET]] = ...,
-        v3: Union[float, Literal[SET, UNSET]] = ...,
-        vr1: Union[float, Literal[SET, UNSET]] = ...,
-        vr2: Union[float, Literal[SET, UNSET]] = ...,
-        vr3: Union[float, Literal[SET, UNSET]] = ...,
-        amplitude: Union[str, Literal[UNCHANGED, FREED]] = ...,
+        v1: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        v2: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        v3: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr1: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr2: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        vr3: Union[float, Literal[C.SET, C.UNSET]] = C.UNSET,
+        amplitude: Union[str, Literal[C.UNCHANGED, C.FREED]] = C.UNCHANGED,
     ):
         """This method modifies the propagating data for an existing VelocityAdaptiveMeshConstraint object in
         the specified step.

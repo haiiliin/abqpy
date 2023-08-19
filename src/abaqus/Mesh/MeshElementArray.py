@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union
+from typing import List, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -42,7 +42,7 @@ class MeshElementArray(List[MeshElement]):
     """
 
     @abaqus_method_doc
-    def __init__(self, elements: List[MeshElement]) -> None:
+    def __init__(self, elements: list[MeshElement]) -> None:
         """This method creates a MeshElementArray object.
 
         .. note::
@@ -76,7 +76,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElement
             A MeshElement object.
         """
-        ...
+        return MeshElement()
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshElementArray:
@@ -94,7 +94,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -105,17 +105,17 @@ class MeshElementArray(List[MeshElement]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: float = ...,
-        yMin: float = ...,
-        zMin: float = ...,
-        xMax: float = ...,
-        yMax: float = ...,
-        zMax: float = ...,
+        xMin: float = 0,
+        yMin: float = 0,
+        zMin: float = 0,
+        xMax: float = 0,
+        yMax: float = 0,
+        zMax: float = 0,
     ) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding box.
 
@@ -139,7 +139,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> MeshElementArray:
@@ -160,10 +160,10 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> MeshElementArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding sphere.
 
         Parameters
@@ -178,16 +178,16 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the element sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
@@ -195,7 +195,7 @@ class MeshElementArray(List[MeshElement]):
             - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
               the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
     def sequenceFromLabels(self, labels: Sequence[int]) -> MeshElementArray:
@@ -216,4 +216,4 @@ class MeshElementArray(List[MeshElement]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshElementArray([MeshElement()])
