@@ -38,19 +38,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-<<<<<<< HEAD
-    csys: Optional[int] = None
-=======
     csys: int | None = None
-
-    #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
-    #: restriction. The default value is TRUE.
-    #:
-    #: .. versionadded:: 2021
-    #:     The ``allowNonSymmetricMesh`` attribute was added.
-    allowNonSymmetricMesh: Boolean = TRUE
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     masterPointDetermination: SymbolicConstant = MAXIMUM
@@ -77,14 +65,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-<<<<<<< HEAD
-        csys: Optional[int] = None,
-        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int | None = None,
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -139,14 +121,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        csys: Optional[int] = None,
-        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: int | None = None,
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

@@ -343,11 +343,7 @@ class FieldOutputRequest:
         modes: Union[Literal[C.ALL], int] = ALL,
         timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-<<<<<<< HEAD
-        timePoints: Optional[str] = None,
-=======
-        timePoint: str | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        timePoints: str | None = None,
         timeMarks: Boolean = OFF,
     ) -> None:
         """This method modifies the propagating data for an existing FieldOutputRequest object in the specified

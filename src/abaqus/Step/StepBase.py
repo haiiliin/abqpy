@@ -119,12 +119,6 @@ class StepBase:
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of ActivateElements objects.
-    activateElements: dict[str, ActivateElements] = {}
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     @abaqus_method_doc
     def resume(self):
         """This method resumes the step that was previously suppressed."""

@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-from typing import Optional, Tuple, Union
-
-=======
 from __future__ import annotations
 
-from typing import Sequence, Union
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -822,16 +816,6 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: Optional[RegionPairs] = None,
-        excludedPairs: Optional[RegionPairs] = None,
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
         includedPairs: RegionPairs | None = None,
         excludedPairs: RegionPairs | None = None,
         contactPropertyAssignments: ContactPropertyAssignment | None = None,
@@ -839,11 +823,7 @@ class InteractionModel(
         surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         smoothingAssignments: SmoothingAssignment | None = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
-        polarityAssignments: PolarityAssignments = PolarityAssignments(),
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
     ):
         """This method creates a ContactExp object.
 
@@ -916,34 +896,17 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: Optional[RegionPairs] = None,
-        excludedPairs: Optional[RegionPairs] = None,
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-        initializationAssignments: Optional[InitializationAssignment] = None,
-        stabilizationAssignments: Optional[StabilizationAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
-=======
         includedPairs: RegionPairs | None = None,
         excludedPairs: RegionPairs | None = None,
         contactPropertyAssignments: ContactPropertyAssignment | None = None,
         surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
         surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
         initializationAssignments: InitializationAssignment | None = None,
         stabilizationAssignments: StabilizationAssignment | None = None,
         smoothingAssignments: SmoothingAssignment | None = None,
         slidingTransitionAssignments: SlidingTransitionAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
@@ -1961,13 +1924,7 @@ class InteractionModel(
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
-<<<<<<< HEAD
-        bondingSet: Optional[Region] = None,
-=======
         bondingSet: Region | None = None,
-        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

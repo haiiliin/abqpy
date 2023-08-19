@@ -37,12 +37,6 @@ class EngineeringFeatureBase:
     #: A repository of SpringDashpot objects.
     springDashpots: dict[str, SpringDashpot] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of Imperfection objects.
-    imperfections: dict[str, Imperfection] = {}
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     @abaqus_method_doc
     def assignSeam(self, regions: Sequence[Region]):
         """This method creates a seam crack along an edge or a face.
