@@ -356,7 +356,7 @@ class MaterialBase:
 
         Returns
         -------
-        List[Material]
+        list[Material]
             A list of Material objects.
         """
         ...

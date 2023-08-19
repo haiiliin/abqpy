@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -55,7 +55,7 @@ class StdContactControl(ContactControl):
     #: by this argument. The default value is 10⁻³.The **relativePenetrationTolerance** argument
     #: applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
     #: and **absolutePenetrationTolerance** arguments are mutually exclusive.
-    relativePenetrationTolerance: Optional[float] = None
+    relativePenetrationTolerance: float | None = None
 
     #: None or a Float specifying the allowable penetration. Only contact interactions defined
     #: with augmented Lagrangian surface behavior will be affected by this argument. The
@@ -63,7 +63,7 @@ class StdContactControl(ContactControl):
     #: **penetrationTolChoice** = ABSOLUTE. The **relativePenetrationTolerance** and
     #: **absolutePenetrationTolerance** arguments are mutually exclusive. The default value is
     #: None.
-    absolutePenetrationTolerance: Optional[float] = None
+    absolutePenetrationTolerance: float | None = None
 
     #: A SymbolicConstant specifying when the application of friction occurs. Possible values
     #: are:
@@ -72,7 +72,7 @@ class StdContactControl(ContactControl):
     #: - DELAYED, specifying the application of friction is delayed until the increment after
     #:
     #: contact occurs.
-    frictionOnset: Optional[SymbolicConstant] = None
+    frictionOnset: SymbolicConstant
 
     #: A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
     #: tolerance and a separation tolerance to prevent chattering in contact. The default value
@@ -128,7 +128,7 @@ class StdContactControl(ContactControl):
     #: None or a Float specifying the clearance at which damping becomes zero. This argument is
     #: valid only when **zeroDampingChoice** = SPECIFY. This argument is valid only if
     #: **stabilizeChoice** = AUTOMATIC or COEFFICIENT. The default value is None.
-    zeroDamping: Optional[float] = None
+    zeroDamping: float | None = None
 
     #: A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
     #: multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -141,9 +141,9 @@ class StdContactControl(ContactControl):
         name: str,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
-        relativePenetrationTolerance: Optional[float] = None,
-        absolutePenetrationTolerance: Optional[float] = None,
-        frictionOnset: Optional[Literal[C.IMMEDIATE, C.DELAYED]] = None,
+        relativePenetrationTolerance: float | None = None,
+        absolutePenetrationTolerance: float | None = None,
+        frictionOnset: Literal[C.IMMEDIATE, C.DELAYED] | None = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -154,7 +154,7 @@ class StdContactControl(ContactControl):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: Literal[C.COMPUTE, C.AUTOMATIC, C.SPECIFY, C.COEFFICIENT] = COMPUTE,
-        zeroDamping: Optional[float] = None,
+        zeroDamping: float | None = None,
         enforceWithLagrangeMultipliers: Literal[C.ENFORCEMENT_OFF, C.DEFAULT, C.ENFORCEMENT_ON] = DEFAULT,
     ):
         """This method creates an StdContactControl object.
@@ -265,9 +265,9 @@ class StdContactControl(ContactControl):
         self,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
-        relativePenetrationTolerance: Optional[float] = None,
-        absolutePenetrationTolerance: Optional[float] = None,
-        frictionOnset: Optional[Literal[C.IMMEDIATE, C.DELAYED]] = None,
+        relativePenetrationTolerance: float | None = None,
+        absolutePenetrationTolerance: float | None = None,
+        frictionOnset: Literal[C.IMMEDIATE, C.DELAYED] | None = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -278,7 +278,7 @@ class StdContactControl(ContactControl):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: Literal[C.COMPUTE, C.AUTOMATIC, C.SPECIFY, C.COEFFICIENT] = COMPUTE,
-        zeroDamping: Optional[float] = None,
+        zeroDamping: float | None = None,
         enforceWithLagrangeMultipliers: Literal[C.ENFORCEMENT_OFF, C.DEFAULT, C.ENFORCEMENT_ON] = DEFAULT,
     ):
         """This method modifies the StdContactControl object.

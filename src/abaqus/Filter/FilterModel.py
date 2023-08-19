@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,7 +31,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
@@ -92,7 +92,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
@@ -163,7 +163,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
@@ -233,7 +233,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
-        limit: Optional[float] = None,
+        limit: float | None = None,
         invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.

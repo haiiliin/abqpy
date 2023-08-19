@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -29,10 +29,9 @@ class ConstrainedSketcherOptions:
         addImpliedConstraints: Boolean = ON,
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
-        autoConstrainLinearTolerance: Optional[float] = None,
-        autoConstrainOptions: Optional[
-            Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
-        ] = None,
+        autoConstrainLinearTolerance: float | None = None,
+        autoConstrainOptions: Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
+        | None = None,
         dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
         editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):

@@ -22,7 +22,11 @@ class MeshEdgeArray(List[MeshEdge]):
     """
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def __init__(self, edges: List[MeshEdge]):
+=======
+    def __init__(self, elemEdges: list[MeshEdge]):
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method creates a MeshEdgeArray object.
 
         .. note::
@@ -62,7 +66,7 @@ class MeshEdgeArray(List[MeshEdge]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshEdgeArray([MeshEdge()])
 
     @abaqus_method_doc
     def getMask(self):
@@ -73,4 +77,4 @@ class MeshEdgeArray(List[MeshEdge]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""

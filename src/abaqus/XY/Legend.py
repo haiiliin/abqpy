@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -68,8 +68,8 @@ class Legend:
         title: str = "",
         numberFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         numDigits: int = 2,
-        textStyle: Optional[TextStyle] = None,
-        titleStyle: Optional[TextStyle] = None,
+        textStyle: TextStyle | None = None,
+        titleStyle: TextStyle | None = None,
     ):
         """This method modifies the Legend object.
 

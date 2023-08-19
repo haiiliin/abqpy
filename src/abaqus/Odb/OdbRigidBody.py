@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -52,7 +52,7 @@ class OdbRigidBody:
 
     #: An AnalyticSurface object specifying the analytic surface whose motion is governed by
     #: the motion of rigid body reference node.
-    analyticSurface: Optional[AnalyticSurface] = None
+    analyticSurface: AnalyticSurface | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -63,7 +63,7 @@ class OdbRigidBody:
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: Optional[AnalyticSurface] = None,
+        analyticSurface: AnalyticSurface | None = None,
     ):
         """This method creates a OdbRigidBody object.
 

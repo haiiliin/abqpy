@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -45,14 +45,14 @@ class QuickTimeOptions(_OptionsBase):
     #: resolution.The minimum width and height are normally < 50 pixels. The values of the maximum
     #: width (*maxWidth*) and height (*maxHeight*) depend on the graphics capabilities of the system.
     #: The maximum width and height will be at least as large as the screen dimensions.
-    imageSize: Optional[int] = None
+    imageSize: int | None = None
 
     @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: Literal[C.RLE24, C.RAW24] = RLE24,
         sizeDefinition: Literal[C.USER_DEFINED, C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN,
-        imageSize: Optional[int] = None,
+        imageSize: int | None = None,
     ):
         """This method modifies the QuickTimeOptions object.
 

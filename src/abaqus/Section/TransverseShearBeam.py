@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -31,11 +33,11 @@ class TransverseShearBeam:
 
     #: None or a Float specifying the k23 shear stiffness of the section. The default value is
     #: None.
-    k23: Optional[float] = None
+    k23: float | None = None
 
     #: None or a Float specifying the k13 shear stiffness of the section. The default value is
     #: None.
-    k13: Optional[float] = None
+    k13: float | None = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the slenderness compensation factor
     #: of the section. The default value is 0.25.
@@ -45,8 +47,8 @@ class TransverseShearBeam:
     def __init__(
         self,
         scfDefinition: Literal[C.VALUE, C.ANALYSIS_DEFAULT, C.COMPUTED],
-        k23: Optional[float] = None,
-        k13: Optional[float] = None,
+        k23: float | None = None,
+        k13: float | None = None,
         slendernessCompensation: Union[Literal[C.COMPUTED], float] = 0,
     ):
         """This method creates a TransverseShearBeam object.
