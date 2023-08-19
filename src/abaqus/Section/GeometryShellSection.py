@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -79,12 +79,12 @@ class GeometryShellSection(ShellSection):
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
-    nTemp: Optional[int] = None
+    nTemp: int | None = None
 
     #: None or a Float specifying the effective thickness modulus. This argument is relevant
     #: only for continuum shells and must be used in conjunction with the argument **poisson**.
     #: The default value is None.
-    thicknessModulus: Optional[float] = None
+    thicknessModulus: float | None = None
 
     #: A Boolean specifying whether or not to use the value of **density**. The default value is
     #: OFF.
@@ -110,7 +110,7 @@ class GeometryShellSection(ShellSection):
     nodalThicknessField: str = ""
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: Optional[TransverseShearShell] = None
+    transverseShear: TransverseShearShell
 
     @abaqus_method_doc
     def __init__(
@@ -125,8 +125,8 @@ class GeometryShellSection(ShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
     ):

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -19,16 +19,16 @@ class ConstrainedSketchGeometry:
     """
 
     #: An Int specifying the index of the sketch entity in the ConstrainedSketchGeometryArray.
-    id: Optional[int] = None
+    id: int | None = None
 
     #: A SymbolicConstant specifying the geometry of the sketch entity. Possible values are
     #: ARC, CIRCLE, ELLIPSE, LINE, and SPLINE.
-    curveType: Optional[SymbolicConstant] = None
+    curveType: SymbolicConstant
 
     #: A SymbolicConstant specifying the type of sketch entity. Possible values are REGULAR,
     #: REFERENCE, and CONSTRUCTION.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A tuple of Floats specifying the **X**  and*Y*-coordinates of a point located on the
     #: geometry.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -77,10 +77,10 @@ class ConnectorBehaviorOption:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
-        shearStressLimit: Optional[float] = None,
+        shearStressLimit: float | None = None,
         maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
-        fraction: Optional[float] = None,
-        absoluteDistance: Optional[float] = None,
+        fraction: float | None = None,
+        absoluteDistance: float | None = None,
         table: tuple = (),
     ) -> TangentialBehavior:
         """This method creates a TangentialBehavior object.

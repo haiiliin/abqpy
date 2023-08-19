@@ -1,4 +1,4 @@
-from typing import Dict
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -26,7 +26,7 @@ class TableCollectionAssembly(AssemblyBase):
         The ``TableCollectionAssembly`` class was added.
     """
 
-    elementProgressiveActivations: Dict[str, ElementProgressiveActivation] = {}
+    elementProgressiveActivations: dict[str, ElementProgressiveActivation] = {}
 
     @abaqus_method_doc
     def ElementProgressiveActivation(

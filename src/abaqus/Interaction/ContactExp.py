@@ -1,4 +1,6 @@
-from typing import Optional, Union, overload
+from __future__ import annotations
+
+from typing import Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -89,6 +91,7 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
+<<<<<<< HEAD
         includedPairs: Optional[RegionPairs] = None,
         excludedPairs: Optional[RegionPairs] = None,
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
@@ -97,6 +100,18 @@ class ContactExp(Interaction):
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        includedPairs: RegionPairs | None = None,
+        excludedPairs: RegionPairs | None = None,
+        contactPropertyAssignments: ContactPropertyAssignment | None = None,
+        surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
+        surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
+        surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
+        smoothingAssignments: SmoothingAssignment | None = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
+        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -162,15 +177,21 @@ class ContactExp(Interaction):
         createStepName: str,
         globalSmoothing: Boolean = ON,
         useAllstar: Boolean = OFF,
-        includedPairs: Optional[SymbolicConstant] = None,
-        excludedPairs: Optional[SymbolicConstant] = None,
-        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        includedPairs: SymbolicConstant | None = None,
+        excludedPairs: SymbolicConstant | None = None,
+        contactPropertyAssignments: SymbolicConstant | None = None,
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
+<<<<<<< HEAD
         smoothingAssignments: Optional[SymbolicConstant] = None,
         masterSlaveAssignments: Optional[SymbolicConstant] = None,
         polarityAssignments: Optional[SymbolicConstant] = None,
+=======
+        smoothingAssignments: SymbolicConstant | None = None,
+        mainSecondaryAssignments: SymbolicConstant | None = None,
+        polarityAssignments: SymbolicConstant | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactExp object.
 

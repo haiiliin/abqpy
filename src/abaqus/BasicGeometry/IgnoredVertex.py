@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -19,7 +19,7 @@ class IgnoredVertex:
     """
 
     #: An Int specifying the index of the IgnoredVertex in the IgnoredVertexArray.
-    index: Optional[int] = None
+    index: int | None = None
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the vertex.
-    pointOn: Optional[float] = None
+    pointOn: float | None = None
