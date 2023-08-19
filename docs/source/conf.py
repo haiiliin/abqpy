@@ -328,17 +328,18 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
         except Exception:
             return baseurl
     try:
-        source, lineno = inspect.getsourcelines(obj)
+        if obj is not None:
+            source, lineno = inspect.getsourcelines(obj)
+        else:
+            attr = fullname.split(".")[-1]
+            obj = submod
+            for part in fullname.split(".")[:-1]:
+                try:
+                    obj = getattr(obj, part)
+                except Exception:
+                    return baseurl
+            source, lineno = inspect.getsourcelines(obj)
     except TypeError:
-        # Find source line for an attribute, the obj is None
-        attr = fullname.split(".")[-1]
-        obj = submod
-        for part in fullname.split(".")[:-1]:
-            try:
-                obj = getattr(obj, part)
-            except Exception:
-                return baseurl
-        source, lineno = inspect.getsourcelines(obj)
         attr_sources: list[str] = re.findall(rf"\n(    {attr}: [\w\W]+?)\n\n", "\n".join(source))
         if len(attr_sources) > 0:
             attr_source = attr_sources[0].splitlines()
