@@ -2,8 +2,10 @@ from __future__ import annotations
 
 <<<<<<< HEAD
 from typing import Dict, List, Sequence, Tuple, Union
+
 =======
 from typing import TYPE_CHECKING, List, Sequence, Union
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from abaqus.BasicGeometry.Edge import Edge

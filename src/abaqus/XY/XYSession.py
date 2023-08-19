@@ -8,18 +8,26 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import (
+from ..UtilityAndView.abaqusConstants import (  # 4879))
     FILLED_CIRCLE,
-<<<<<<< HEAD
+    HEAD,
     IMAGINARY,
-=======
     NONE,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     OFF,
     ON,
     REAL,
     SOLID,
     Boolean,
+    Fix,
+    <<<<<<<,
+    =======,
+    >>>>>>>,
+    [typing],
+    annotations,
+    d7be4b47,
+    mypy,
+    typing,
+    wrong,
 )
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .AreaStyle import AreaStyle

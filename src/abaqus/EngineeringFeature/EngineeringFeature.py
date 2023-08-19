@@ -1,9 +1,11 @@
 <<<<<<< HEAD
 from typing import Optional, Union
+
 =======
 from __future__ import annotations
 
 from typing import Sequence, Union
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
@@ -12,13 +14,14 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (
+from ..UtilityAndView.abaqusConstants import (  # 4879))
     ALL,
     AXIS_1,
     CONNECTOR,
     CONTINUUM,
     DEFAULT,
     FACETOFACE,
+    HEAD,
     MASS_PROPORTIONAL,
     MODEL,
     NONE,
@@ -28,13 +31,22 @@ from ..UtilityAndView.abaqusConstants import (
     STEP,
     UNIFORM,
     Boolean,
-<<<<<<< HEAD
-=======
+    Fix,
     R,
     SymbolicConstant,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+    <<<<<<<,
+    =======,
+    >>>>>>>,
+    [typing],
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (  # 4879))
+    annotations,
+    d7be4b47,
+    mypy,
+    typing,
+    wrong,
+)
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
 from .DebondVCCT import DebondVCCT

@@ -1,9 +1,11 @@
 <<<<<<< HEAD
 from typing import Optional, Union, overload
+
 =======
 from __future__ import annotations
 
 from typing import Sequence, Union, overload
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
