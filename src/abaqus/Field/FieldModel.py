@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -33,7 +33,7 @@ class FieldModel(ModelBase):
         fieldType: Literal[C.PRESCRIBEDCONDITION_DOF, C.SCALAR, C.ORIENTATION],
         location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
-        data: Optional[DataTableArray] = None,
+        data: DataTableArray | None = None,
         description: str = "",
         orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
@@ -95,7 +95,7 @@ class FieldModel(ModelBase):
 
     @abaqus_method_doc
     def ExpressionField(
-        self, name: str, expression: str, localCsys: Optional[str] = None, description: str = ""
+        self, name: str, expression: str, localCsys: str | None = None, description: str = ""
     ) -> ExpressionField:
         """This method creates an ExpressionField object.
 
@@ -149,7 +149,7 @@ class FieldModel(ModelBase):
         gridPointData: tuple = (),
         xyzPointData: tuple = (),
         coordinateScalingFactors: tuple = (),
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         description: str = "",
     ) -> MappedField:
         """This method creates an MappedField object.

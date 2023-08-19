@@ -1,10 +1,12 @@
-from typing import Any, Dict, Optional
+from __future__ import annotations
+
+from typing import Any
 
 
 def execfile(
     filename: str,
-    globals: Optional[Dict[str, Any]] = None,
-    locals: Optional[Dict[str, Any]] = None,
+    globals: dict[str, Any] | None = None,
+    locals: dict[str, Any] | None = None,
 ) -> None:
     """Read and execute a Python script from a file. The globals and locals are dictionaries, defaulting to the
     current globals and locals.  If only globals is given, locals defaults to it.
@@ -12,16 +14,16 @@ def execfile(
     Parameters
     ----------
     filename : os.PathLike
-    globals : Optional[dict], optional, by default None
-    locals : Optional[dict], optional, by default None
+    globals : dict | None, optional, by default None
+    locals : dict | None, optional, by default None
     """
     ...
 
 
 def execPyFile(
     filePath: str,
-    globs: Optional[Dict[str, Any]] = None,
-    locs: Optional[Dict[str, Any]] = None,
+    globs: dict[str, Any] | None = None,
+    locs: dict[str, Any] | None = None,
     atxPort: int = -1,
 ) -> None:
     """Similar to execfile, but will run a compiled .pyc file
@@ -33,8 +35,8 @@ def execPyFile(
     Parameters
     ----------
     filePath : os.PathLike
-    globs : Optional[dict], optional, by default None
-    locs : Optional[dict], optional, by default None
+    globs : dict | None, optional, by default None
+    locs : dict | None, optional, by default None
     atxPort : int, optional, by default -1
     """
     ...

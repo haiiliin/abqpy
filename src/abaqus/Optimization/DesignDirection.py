@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -39,11 +39,11 @@ class DesignDirection(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-    masterPoint: Optional[str] = None
+    masterPoint: str | None = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -79,8 +79,8 @@ class DesignDirection(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
-        masterPoint: Optional[str] = None,
+        csys: int | None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -144,8 +144,8 @@ class DesignDirection(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
-        masterPoint: Optional[str] = None,
+        csys: int | None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
