@@ -102,11 +102,7 @@ class ContactExp(Interaction):
         smoothingAssignments: SmoothingAssignment | None = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-<<<<<<< HEAD
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -192,15 +188,9 @@ class ContactExp(Interaction):
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
-<<<<<<< HEAD
-        smoothingAssignments: Optional[SymbolicConstant] = None,
-        masterSlaveAssignments: Optional[SymbolicConstant] = None,
-        polarityAssignments: Optional[SymbolicConstant] = None,
-=======
         smoothingAssignments: SymbolicConstant | None = None,
-        mainSecondaryAssignments: SymbolicConstant | None = None,
+        masterSlaveAssignments: SymbolicConstant | None = None,
         polarityAssignments: SymbolicConstant | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactExp object.
 

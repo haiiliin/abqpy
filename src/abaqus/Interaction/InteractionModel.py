@@ -833,11 +833,7 @@ class InteractionModel(
         smoothingAssignments: SmoothingAssignment | None = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-<<<<<<< HEAD
-        masterSlaveAssignment: Optional[MasterSlaveAssignment] = None,
-=======
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+        masterSlaveAssignment: MasterSlaveAssignment | None = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -939,21 +935,12 @@ class InteractionModel(
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        masterSlaveAssignment: Optional[MasterSlaveAssignment] = None,
-        initializationAssignments: Optional[InitializationAssignment] = None,
-        stabilizationAssignments: Optional[StabilizationAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
-=======
         slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        masterSlaveAssignment: MasterSlaveAssignment | None = None,
         initializationAssignments: InitializationAssignment | None = None,
         stabilizationAssignments: StabilizationAssignment | None = None,
         smoothingAssignments: SmoothingAssignment | None = None,
         slidingTransitionAssignments: SlidingTransitionAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> ContactStd:
         """This method creates a ContactStd object.
 

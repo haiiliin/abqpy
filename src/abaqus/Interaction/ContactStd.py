@@ -116,21 +116,12 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-        initializationAssignments: Optional[InitializationAssignment] = None,
-        stabilizationAssignments: Optional[StabilizationAssignment] = None,
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
-=======
         slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
-        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        masterSlaveAssignments: MasterSlaveAssignment | None = None,
         initializationAssignments: InitializationAssignment | None = None,
         stabilizationAssignments: StabilizationAssignment | None = None,
         smoothingAssignments: SmoothingAssignment | None = None,
         slidingTransitionAssignments: SlidingTransitionAssignment | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactStd object.
 
@@ -230,19 +221,11 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceThicknessAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
-<<<<<<< HEAD
-        masterSlaveAssignments: Optional[SymbolicConstant] = None,
-        initializationAssignments: Optional[SymbolicConstant] = None,
-        stabilizationAssignments: Optional[SymbolicConstant] = None,
-        smoothingAssignments: Optional[SymbolicConstant] = None,
-        slidingTransitionAssignments: Optional[SymbolicConstant] = None,
-=======
-        mainSecondaryAssignments: SymbolicConstant | None = None,
+        masterSlaveAssignments: SymbolicConstant | None = None,
         initializationAssignments: SymbolicConstant | None = None,
         stabilizationAssignments: SymbolicConstant | None = None,
         smoothingAssignments: SymbolicConstant | None = None,
         slidingTransitionAssignments: SymbolicConstant | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactStd object.
 

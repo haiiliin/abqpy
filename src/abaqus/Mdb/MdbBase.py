@@ -42,12 +42,6 @@ class MdbBase:
     #: A repository of AdaptivityProcess objects.
     adaptivityProcesses: dict[str, AdaptivityProcess] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of Coexecution objects.
-    coexecutions: dict[str, Coexecution] = {}
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     #: A repository of OptimizationProcess objects.
     optimizationProcesses: dict[str, OptimizationProcess] = {}
 

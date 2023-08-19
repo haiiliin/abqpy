@@ -80,14 +80,7 @@ class Coexecution:
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the slave
     #: models for the co-execution. The default value is an empty sequence.
-<<<<<<< HEAD
-    slaveAnalysisProducts: Optional[SymbolicConstant] = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The ``slaveAnalysisProducts`` attribute was changed to ``secondaryAnalysisProducts``.
-    secondaryAnalysisProducts: SymbolicConstant
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+    slaveAnalysisProducts: SymbolicConstant | None = None
 
     #: A String specifying the name of the master model for the co-execution.
     masterModel: str = ""

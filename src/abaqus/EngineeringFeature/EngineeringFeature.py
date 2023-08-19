@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-from typing import Optional, Union
-
-=======
 from __future__ import annotations
 
-from typing import Sequence, Union
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -14,14 +8,13 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (  # 4879))
+from ..UtilityAndView.abaqusConstants import (
     ALL,
     AXIS_1,
     CONNECTOR,
     CONTINUUM,
     DEFAULT,
     FACETOFACE,
-    HEAD,
     MASS_PROPORTIONAL,
     MODEL,
     NONE,
@@ -31,22 +24,9 @@ from ..UtilityAndView.abaqusConstants import (  # 4879))
     STEP,
     UNIFORM,
     Boolean,
-    Fix,
-    R,
     SymbolicConstant,
-    <<<<<<<,
-    =======,
-    >>>>>>>,
-    [typing],
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (  # 4879))
-    annotations,
-    d7be4b47,
-    mypy,
-    typing,
-    wrong,
-)
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
 from .DebondVCCT import DebondVCCT
@@ -943,117 +923,3 @@ class EngineeringFeature(EngineeringFeatureBase):
             autoDetectValue,
         )
         return xFEMCrack
-<<<<<<< HEAD
-=======
-
-    def FileImperfection(
-        self,
-        name: str,
-        file: str,
-        step: int,
-        linearSuperpositions: Sequence[Sequence[int]],
-        region: Region = Region(),
-        increment: int = -1,
-    ):
-        """This method creates a FileImperfection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].rootAssembly.engineeringFeatures.FileImperfection
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        file
-            A String specifying the results file from a previous analysis from which the file imperfection is applied.
-        step
-            An Int specifying the step number (in the analysis whose file is being used as input to this option) from
-            which the modal or displacement data are to be read.
-        linearSuperpositions
-            A sequence of sequences of Integers and Floats specifying linearSuperpositions. The items in the table data
-            are described below.
-        region
-            A Region object specifying the region to which the file imperfection is applied. By default, the
-            imperfection will be applied to all nodes in the model.
-        increment
-            An Int specifying the increment number (in the analysis whose file is being used as input to this option)
-            from which the displacement data are to be read. By default, the data will be read from the last increment
-            available for the specified step.
-
-        Returns
-        -------
-        FileImperfection
-            A FileImperfection object.
-        """
-        self.imperfections[name] = fileImperfection = FileImperfection(
-            name, file, step, linearSuperpositions, region, increment
-        )
-        return fileImperfection
-
-    def InputImperfection(
-        self,
-        name: str,
-        file: str,
-        system: Literal[C.R, C.C, C.S] = R,
-    ):
-        """This method creates a InputImperfection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].rootAssembly.engineeringFeatures.InputImperfection
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        file
-            A String specifying the name of the alternate input file containing the imperfection data.
-        system
-            A SymbolicConstant specifying the coordinate system. The imperfection values in the alternate input file
-            being used as input to this option would be treated as perturbation values of respective coordinates.
-            Possible values are R, C and S. The default value is R.
-
-        Returns
-        -------
-        InputImperfection
-            A InputImperfection object.
-        """
-        self.imperfections[name] = inputImperfection = InputImperfection(name, file, system)
-        return inputImperfection
-
-    def DataImperfection(
-        self,
-        name: str,
-        imperfectionTable: Sequence[Sequence[Union[int, float]]],
-        system: Literal[C.R, C.C, C.S] = R,
-    ):
-        """This method creates a DataImperfection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].rootAssembly.engineeringFeatures.DataImperfection
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        imperfectionTable: Sequence[Sequence[Union[int, float]]]
-            A sequence of sequences of Ints and Floats specifying the imperfection components at a given node. The
-            items in the table data are described below.
-        system
-            A SymbolicConstant specifying the coordinate system. The imperfection values in the data lines would be
-            treated as perturbation values of the respective coordinates. Possible values are R, C, and S. The default
-            value is R.
-
-        Returns
-        -------
-        DataImperfection
-            A DataImperfection object.
-        """
-        self.imperfections[name] = dataImperfection = DataImperfection(name, imperfectionTable, system)
-        return dataImperfection
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
