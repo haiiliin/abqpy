@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Kernel &mdash; abqpy 2017.5.6.dev4+g1d7803de3 documentation</title>
+  <title>Custom Kernel &mdash; abqpy 2017.5.6.dev6+gf7f2e7a31 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -396,7 +396,7 @@ CommandRegister object.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/CustomKernel/RepositorySupport.py#L8-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/CustomKernel/RepositorySupport.py#L10-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a></p>
 <p>The class from which you can derive your own classes that are designed to contain custom repositories.
 Instances of this class can be queried from the GUI and are capable of notifying the GUI when the contents
@@ -435,7 +435,7 @@ of the instance change. The RepositorySupport object is derived from the Command
 <div class="toggle docutils container">
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository">
-<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/CustomKernel/RepositorySupport.py#L39-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/CustomKernel/RepositorySupport.py#L41-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="Permalink to this definition"></a></dt>
 <dd><p>This method installs a repository on the class. The repository is an instance of a
 RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored
 in the repository are assumed to have an attribute called <strong>name</strong> that stores the key used to access
@@ -448,7 +448,7 @@ the object in the repository. The name attribute will be modified by the changeK
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the name of the repository.</p></li>
-<li><p><strong>constructors</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>]]) -- A constructor or sequence of constructors specifying which classes will store their
+<li><p><strong>constructors</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>]]) -- A constructor or sequence of constructors specifying which classes will store their
 instances in the repository.</p></li>
 </ul>
 </dd>
