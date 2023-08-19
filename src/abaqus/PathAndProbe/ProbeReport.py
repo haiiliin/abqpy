@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -27,7 +27,7 @@ class ProbeReport:
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional[str] = None,
+        options: str | None = None,
         numColumns: int = 80,
         numDigits: int = 6,
         numFormat: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,

@@ -31,7 +31,7 @@ class Saturation(PredefinedField):
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
         field: str = "",
-        value: float = ...,
+        value: float = 0,
     ) -> None:
         """This method creates a Saturation predefined field object.
 
@@ -71,7 +71,7 @@ class Saturation(PredefinedField):
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
         field: str = "",
-        value: float = ...,
+        value: float = 0,
     ) -> None:
         """This method modifies the Saturation object.
 

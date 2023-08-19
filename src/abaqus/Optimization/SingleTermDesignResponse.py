@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,11 +31,11 @@ class SingleTermDesignResponse(DesignResponse):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: None or a sequence of Floats specifying the driving region used when **identifier** is an
     #: internal nodal variable. The default value is None.
-    drivingRegion: Optional[str] = None
+    drivingRegion: str | None = None
 
     #: A SymbolicConstant specifying the operation used on values in the region. Possible
     #: values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
@@ -54,20 +54,20 @@ class SingleTermDesignResponse(DesignResponse):
     stepOperation: SymbolicConstant = SUM
 
     #: A StepOptionArray object.
-    stepOptions: Optional[StepOptionArray] = None
+    stepOptions: StepOptionArray | None = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         identifier: str,
-        csys: Optional[int] = None,
-        drivingRegion: Optional[str] = None,
+        csys: int | None = None,
+        drivingRegion: str | None = None,
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
         stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
-        stepOptions: Optional[StepOptionArray] = None,
+        stepOptions: StepOptionArray | None = None,
     ):
         """This method creates a SingleTermDesignResponse object.
 
@@ -114,13 +114,13 @@ class SingleTermDesignResponse(DesignResponse):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
-        drivingRegion: Optional[str] = None,
+        csys: int | None = None,
+        drivingRegion: str | None = None,
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
         stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
-        stepOptions: Optional[StepOptionArray] = None,
+        stepOptions: StepOptionArray | None = None,
     ):
         """This method modifies the SingleTermDesignResponse object.
 

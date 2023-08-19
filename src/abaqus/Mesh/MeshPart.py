@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Union
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -93,20 +93,20 @@ class MeshPart(PartBase):
         self,
         regions: Sequence[Face] = (),
         mergeShortEdges: Boolean = False,
-        shortEdgeThreshold: Optional[float] = None,
+        shortEdgeThreshold: float | None = None,
         mergeSmallFaces: Boolean = False,
-        smallFaceAreaThreshold: Optional[float] = None,
+        smallFaceAreaThreshold: float | None = None,
         mergeSliverFaces: Boolean = False,
-        faceAspectRatioThreshold: Optional[float] = None,
+        faceAspectRatioThreshold: float | None = None,
         mergeSmallAngleFaces: Boolean = False,
-        smallFaceCornerAngleThreshold: Optional[float] = None,
+        smallFaceCornerAngleThreshold: float | None = None,
         mergeThinStairFaces: Boolean = False,
-        thinStairFaceThreshold: Optional[float] = None,
+        thinStairFaceThreshold: float | None = None,
         ignoreRedundantEntities: Boolean = False,
         cornerAngleTolerance: float = 30,
         applyBlendControls: Boolean = False,
-        blendSubtendedAngleTolerance: Optional[float] = None,
-        blendRadiusTolerance: Optional[float] = None,
+        blendSubtendedAngleTolerance: float | None = None,
+        blendRadiusTolerance: float | None = None,
     ) -> Feature:
         """This method creates a virtual topology feature by automatically merging faces and edges based on a
         set of geometric parameters. The edges and vertices that are being merged will be ignored during mesh
@@ -186,7 +186,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: Sequence[Cell]):
@@ -299,7 +299,7 @@ class MeshPart(PartBase):
         geometrySourceSide: str = "",
         elemFacesSourceSide: Sequence[MeshFace] = (),
         elemSourceSide: tuple = (),
-        depth: Optional[float] = None,
+        depth: float | None = None,
         targetSide: str = "",
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
@@ -355,8 +355,8 @@ class MeshPart(PartBase):
         geometryConnectingSides: str = "",
         elemFacesConnectingSides: Sequence[MeshFace] = (),
         elemConnectingSides: tuple = (),
-        targetSide: Optional[Face] = None,
-        numberOfLayers: Optional[int] = None,
+        targetSide: Face | None = None,
+        numberOfLayers: int | None = None,
         extendElementSets: Boolean = False,
     ):
         """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or within a cell
@@ -528,7 +528,7 @@ class MeshPart(PartBase):
 
             A value of NONE indicates that the edge is not seeded.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getElementType(
@@ -571,7 +571,7 @@ class MeshPart(PartBase):
             The region cannot be associated with element types or the **elemShape** is not
             consistent with the dimension of the **region**.
         """
-        ...
+        return ElemType(C.C3D8R)
 
     @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()) -> Sequence[Face]:
@@ -587,7 +587,7 @@ class MeshPart(PartBase):
         Sequence[Face]
             A sequence of Face objects.
         """
-        ...
+        return (Face(),)
 
     @abaqus_method_doc
     def getMeshControl(
@@ -655,7 +655,7 @@ class MeshPart(PartBase):
         TypeError
             The region cannot carry mesh controls.
         """
-        ...
+        return False
 
     @abaqus_method_doc
     def getMeshStats(self, regions: Sequence[ConstrainedSketchGeometry]) -> MeshStats:
@@ -671,7 +671,7 @@ class MeshPart(PartBase):
         MeshStats
             A MeshStats object.
         """
-        ...
+        return MeshStats()
 
     @abaqus_method_doc
     def getPartSeeds(
@@ -719,7 +719,7 @@ class MeshPart(PartBase):
         Error
             Part does not contain native geometry, An exception occurs if the part does not contain native geometry.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getUnmeshedRegions(self) -> Union[Region, None]:
@@ -731,7 +731,7 @@ class MeshPart(PartBase):
         Region
             A Region object, or None.
         """
-        ...
+        return Region()
 
     @abaqus_method_doc
     def ignoreEntity(self, entities: tuple) -> Feature:
@@ -749,7 +749,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]) -> Feature:
@@ -766,7 +766,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def seedEdgeByBias(
@@ -776,10 +776,10 @@ class MeshPart(PartBase):
         end2Edges: Sequence[Edge] = ...,
         centerEdges: Sequence[Edge] = ...,
         endEdges: Sequence[Edge] = ...,
-        ratio: float = ...,
+        ratio: float = 0,
         number: int = ...,
-        minSize: float = ...,
-        maxSize: float = ...,
+        minSize: float = 0,
+        maxSize: float = 0,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges nonuniformly using the specified number of elements and bias ratio
@@ -868,8 +868,8 @@ class MeshPart(PartBase):
         self,
         edges: Sequence[Edge],
         size: float,
-        deviationFactor: Optional[float] = None,
-        minSizeFactor: Optional[float] = None,
+        deviationFactor: float | None = None,
+        minSizeFactor: float | None = None,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges either uniformly or following edge curvature distribution, based on
@@ -903,8 +903,8 @@ class MeshPart(PartBase):
     def seedPart(
         self,
         size: float,
-        deviationFactor: Optional[float] = None,
-        minSizeFactor: Optional[float] = None,
+        deviationFactor: float | None = None,
+        minSizeFactor: float | None = None,
         constraint: Literal[C.FREE, C.FINER] = ...,
     ):
         """This method assigns global edge seeds to the given parts.
@@ -1025,11 +1025,11 @@ class MeshPart(PartBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: Optional[Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI]] = None,
-        technique: Optional[Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN]] = None,
-        algorithm: Optional[Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT]] = None,
+        elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI] | None = None,
+        technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN] | None = None,
+        algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT] | None = None,
         minTransition: Boolean = ON,
-        sizeGrowth: Optional[Literal[C.MODERATE, C.MAXIMUM]] = None,
+        sizeGrowth: Literal[C.MODERATE, C.MAXIMUM] | None = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1135,8 +1135,8 @@ class MeshPart(PartBase):
             C.ASPECT_RATIO,
             C.SMALL_ANGLE,
         ],
-        threshold: Optional[float] = None,
-        elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
+        threshold: float | None = None,
+        elemShape: Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI] | None = None,
         regions: tuple = (),
     ):
         """This method tests the mesh quality of a part and returns poor-quality elements.
@@ -1204,7 +1204,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        Dict[str, int | float, MeshElement]
+        dict[str, int | float, MeshElement]
             A Dictionary object containing values for some number of the following keys:
             failedElements, warningElements, naElements (sequences of MeshElement objects);
             numElements (Int); average, worst (Float); worstElement
@@ -1216,8 +1216,8 @@ class MeshPart(PartBase):
     def Node(
         self,
         coordinates: tuple,
-        localCsys: Optional[DatumCsys] = None,
-        label: Optional[int] = None,
+        localCsys: DatumCsys | None = None,
+        label: int | None = None,
     ):
         """This method creates a node on an orphan mesh part.
 

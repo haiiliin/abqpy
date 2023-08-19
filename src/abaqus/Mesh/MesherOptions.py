@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -37,7 +37,7 @@ class MesherOptions:
         quadAlgorithm: Literal[C.MEDIAL_AXIS, C.ADVANCING_FRONT] = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
-        guiPreferredElements: Optional[SymbolicConstant] = None,
+        guiPreferredElements: SymbolicConstant | None = None,
     ):
         """This method modifies the MesherOptions object.
 

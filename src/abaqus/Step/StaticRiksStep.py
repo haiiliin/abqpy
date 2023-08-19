@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -62,7 +62,7 @@ class StaticRiksStep(AnalysisStep):
 
     #: None or a Float specifying the maximum value of the load proportionality factor. The
     #: default value is None.
-    maxLPF: Optional[float] = None
+    maxLPF: float | None = None
 
     #: A Boolean specifying whether to monitor the finishing displacement value at a node. The
     #: default value is OFF.
@@ -90,16 +90,16 @@ class StaticRiksStep(AnalysisStep):
 
     #: A Float specifying the initial load proportionality factor. The default value is the
     #: total load proportionality factor for the step.
-    initialArcInc: Optional[float] = None
+    initialArcInc: float | None = None
 
     #: A Float specifying the minimum arc length increment allowed. The default value is the
     #: smaller of the suggested initial load proportionality factor or 10−5 times the total
     #: load proportionality factor for the step.
-    minArcInc: Optional[float] = None
+    minArcInc: float | None = None
 
     #: A Float specifying the maximum arc length increment allowed. The default value is the
     #: total load proportionality factor for the step.
-    maxArcInc: Optional[float] = None
+    maxArcInc: float | None = None
 
     #: A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
     #: UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
@@ -143,7 +143,7 @@ class StaticRiksStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -179,31 +179,31 @@ class StaticRiksStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -212,19 +212,19 @@ class StaticRiksStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -234,17 +234,17 @@ class StaticRiksStep(AnalysisStep):
         description: str = "",
         nlgeom: Boolean = OFF,
         adiabatic: Boolean = OFF,
-        maxLPF: Optional[float] = None,
+        maxLPF: float | None = None,
         nodeOn: Boolean = OFF,
         maximumDisplacement: float = 0,
         dof: int = 0,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         totalArcLength: float = 1,
-        initialArcInc: Optional[float] = None,
-        minArcInc: Optional[float] = None,
-        maxArcInc: Optional[float] = None,
+        initialArcInc: float | None = None,
+        minArcInc: float | None = None,
+        maxArcInc: float | None = None,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         fullyPlastic: str = "",
@@ -353,17 +353,17 @@ class StaticRiksStep(AnalysisStep):
         description: str = "",
         nlgeom: Boolean = OFF,
         adiabatic: Boolean = OFF,
-        maxLPF: Optional[float] = None,
+        maxLPF: float | None = None,
         nodeOn: Boolean = OFF,
         maximumDisplacement: float = 0,
         dof: int = 0,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         totalArcLength: float = 1,
-        initialArcInc: Optional[float] = None,
-        minArcInc: Optional[float] = None,
-        maxArcInc: Optional[float] = None,
+        initialArcInc: float | None = None,
+        minArcInc: float | None = None,
+        maxArcInc: float | None = None,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         fullyPlastic: str = "",

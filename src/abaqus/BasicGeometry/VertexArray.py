@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Sequence, Tuple, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -38,7 +38,7 @@ class VertexArray(List[Vertex]):
     """
 
     @abaqus_method_doc
-    def __init__(self, vertices: List[Vertex]):
+    def __init__(self, vertices: list[Vertex]):
         """This method creates a VertexArray object.
 
         .. note::
@@ -62,7 +62,7 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[float, float, float],
+        coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
     ) -> ConstrainedSketchVertex:
         ...
@@ -71,22 +71,22 @@ class VertexArray(List[Vertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[ConstrainedSketchVertex]:
+    ) -> list[ConstrainedSketchVertex]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[ConstrainedSketchVertex]:
+    ) -> list[ConstrainedSketchVertex]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
+    def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
         object that is at the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary
@@ -124,18 +124,18 @@ class VertexArray(List[Vertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
+    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[ConstrainedSketchVertex]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[ConstrainedSketchVertex]:  # type: ignore
         ...
 
     @abaqus_method_doc
     def getSequenceFromMask(
         self, mask: Union[str, Sequence[str]]
-    ) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
+    ) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:  # type: ignore
         """This method returns the object or objects in the VertexArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -147,10 +147,10 @@ class VertexArray(List[Vertex]):
 
         Returns
         -------
-        ConstrainedSketchVertex
+        ConstrainedSketchVertex | list[ConstrainedSketchVertex]
             A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return ConstrainedSketchVertex() if isinstance(mask, str) else [ConstrainedSketchVertex()]
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -161,17 +161,17 @@ class VertexArray(List[Vertex]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: float = ...,
-        yMin: float = ...,
-        zMin: float = ...,
-        xMax: float = ...,
-        yMax: float = ...,
-        zMax: float = ...,
+        xMin: float = 0,
+        yMin: float = 0,
+        zMin: float = 0,
+        xMax: float = 0,
+        yMax: float = 0,
+        zMax: float = 0,
     ) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding box.
 
@@ -195,10 +195,10 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
+    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding cylinder.
 
         Parameters
@@ -217,10 +217,10 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str):
+    def getByBoundingSphere(self, center: tuple, radius: str) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding sphere.
 
         Parameters
@@ -235,16 +235,16 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getBoundingBox(self):
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the vertex sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary
@@ -252,10 +252,10 @@ class VertexArray(List[Vertex]):
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict[int, tuple[Vertex, tuple]]:
         """This method returns a object or objects in the VertexArray closest to the given set of points, where
         the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.
 
@@ -290,4 +290,4 @@ class VertexArray(List[Vertex]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {0: (Vertex(), (0.0, 0.0, 0.0))}
