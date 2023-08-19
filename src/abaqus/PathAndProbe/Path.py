@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import List, Sequence, Union
 
 from typing_extensions import Literal
