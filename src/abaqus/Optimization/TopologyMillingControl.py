@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -39,7 +39,7 @@ class TopologyMillingControl(GeometricRestriction):
     #: **millingDirections**. If **csys** = None, the global coordinate system is used. When this
     #: member is queried, it returns an Int indicating the identifier of the DatumCsys. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
     #: region. If the value is MILLING_REGION, the value of **region** is used as both the
@@ -49,7 +49,7 @@ class TopologyMillingControl(GeometricRestriction):
 
     #: A Float specifying the radius for the collision check during the removal of the elements
     #: for the milling criteria.
-    radius: Optional[float] = None
+    radius: float | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -57,9 +57,9 @@ class TopologyMillingControl(GeometricRestriction):
         name: str,
         millingDirections: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
-        radius: Optional[float] = None,
+        radius: float | None = None,
     ):
         """This method creates a TopologyMillingControl object.
 
@@ -101,9 +101,9 @@ class TopologyMillingControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
-        radius: Optional[float] = None,
+        radius: float | None = None,
     ):
         """This method modifies the TopologyMillingControl object.
 

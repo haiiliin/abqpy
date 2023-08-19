@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -36,7 +36,7 @@ class DisplayGroup:
 
     #: A SymbolicConstant specifying the module in which the display group has been created.
     #: The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
-    module: Optional[SymbolicConstant] = None
+    module: SymbolicConstant
 
     #: A String specifying the name of the model to which the display group belongs when the
     #: module is part- or assembly-based.

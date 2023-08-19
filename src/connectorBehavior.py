@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abaqus.Connector.ConnectorDamage import ConnectorDamage
 from abaqus.Connector.ConnectorDamping import ConnectorDamping
 from abaqus.Connector.ConnectorElasticity import ConnectorElasticity

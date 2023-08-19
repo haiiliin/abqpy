@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -63,7 +63,7 @@ class AssembledFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
     #: the global coordinate system is used. When this member is queried, it returns an Int.
     #: The default value is None.This argument applies only when **orientMethod** = CSYS.
-    localCsys: Optional[int] = None
+    localCsys: int | None = None
 
     #: A String specifying the name of the property generation script. The default value is an
     #: empty string.
@@ -80,7 +80,7 @@ class AssembledFastener(Fastener):
         assignedSurfaces: tuple,
         propertyPrefix: str,
         orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         scriptName: str = "",
     ):
         """This method creates an AssembledFastener object. Although the constructor is available both for parts
@@ -137,7 +137,7 @@ class AssembledFastener(Fastener):
     def setValues(
         self,
         orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         scriptName: str = "",
     ):
         """This method modifies the AssembledFastener object.

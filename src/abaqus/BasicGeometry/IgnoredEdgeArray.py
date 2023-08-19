@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -25,29 +25,29 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: Tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge:
+    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredEdge]:
+    ) -> list[IgnoredEdge]:
         ...
 
     @overload
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> List[IgnoredEdge]:
+    ) -> list[IgnoredEdge]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, List[IgnoredEdge]]:
+    def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, list[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredEdge that is at
         the arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is
@@ -87,16 +87,16 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> IgnoredEdge:
+    def getSequenceFromMask(self, mask: str) -> IgnoredEdge:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[IgnoredEdge]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredEdge]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, List[IgnoredEdge]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, list[IgnoredEdge]]:  # type: ignore
         """This method returns the object or objects in the IgnoredEdgeArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
         number of objects are involved, this method is highly efficient.
@@ -111,7 +111,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         IgnoredEdge
             An IgnoredEdge object or a sequence of IgnoredEdge objects.
         """
-        ...
+        return IgnoredEdge() if isinstance(mask, str) else [IgnoredEdge()]
 
     @abaqus_method_doc
     def getMask(self):
@@ -122,10 +122,12 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(
+        self, coordinates: tuple, searchTolerance: str = ""
+    ) -> dict[str, tuple[IgnoredEdge, tuple[float, float, float]]]:
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set of points,
         where the given points need not lie on the edges in the IgnoredEdgeArray.
 
@@ -160,4 +162,4 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {"0": (IgnoredEdge(), (0.0, 0.0, 0.0))}
