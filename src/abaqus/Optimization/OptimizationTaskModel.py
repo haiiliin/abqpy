@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Optional, Union
 
 from typing_extensions import Literal
@@ -50,13 +52,13 @@ class OptimizationTaskModel(ModelBase):
         abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
-        beadIter: str = 1,
-        beadMaxMembraneStress: str = 0,
-        beadMinStress: str = 0,
-        beadPerturbation: str = 0,
+        beadIter: int = 1,
+        beadMaxMembraneStress: float = 0,
+        beadMinStress: float = 0,
+        beadPerturbation: float = 0,
         beadWidth: Literal[C.DEFAULT] = DEFAULT,
-        curveSmooth: str = 5,
-        filterRadius: str = 4,
+        curveSmooth: float = 5,
+        filterRadius: float = 4,
         filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
         frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
@@ -210,7 +212,7 @@ class OptimizationTaskModel(ModelBase):
         meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
         meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
-        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
+        numFreeNodeLayers: Literal[C.FIX_NONE] | int = 0,
         numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,

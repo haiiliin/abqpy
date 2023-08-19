@@ -41,10 +41,10 @@ class HomogeneousShellSection(GeometryShellSection):
     """
 
     #: A RebarLayers object specifying reinforcement properties.
-    rebarLayers: Optional[RebarLayers] = None
+    rebarLayers: RebarLayers
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: Optional[TransverseShearShell] = None
+    transverseShear: TransverseShearShell
 
     #: A String specifying the repository key.
     name: str
@@ -152,7 +152,7 @@ class HomogeneousShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -260,7 +260,7 @@ class HomogeneousShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,

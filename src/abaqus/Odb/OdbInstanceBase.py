@@ -266,7 +266,7 @@ class OdbInstanceBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
+    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
         Parameters
@@ -294,7 +294,7 @@ class OdbInstanceBase:
         self,
         name: str,
         profile: Sequence[AnalyticSurfaceSegment],
-        filletRadius: str = 0,
+        filletRadius: float = 0,
         localCoordData: tuple = (),
     ):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the instance.
@@ -326,7 +326,7 @@ class OdbInstanceBase:
         self,
         name: str,
         profile: Sequence[AnalyticSurfaceSegment],
-        filletRadius: str = 0,
+        filletRadius: float = 0,
         localCoordData: tuple = (),
     ):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the instance.

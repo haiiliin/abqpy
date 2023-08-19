@@ -574,7 +574,7 @@ class SectionModel(ModelBase):
         defaultTolerance: Boolean = ON,
         regularization: float = 0.03,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
-        behaviorOptions: ConnectorBehaviorOptionArray = ...,
+        behaviorOptions: ConnectorBehaviorOptionArray = list(),
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
@@ -888,7 +888,7 @@ class SectionModel(ModelBase):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,

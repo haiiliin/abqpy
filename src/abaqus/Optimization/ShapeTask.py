@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Dict, Optional, Union
 
 from typing_extensions import Literal
@@ -166,7 +168,7 @@ class ShapeTask(OptimizationTask):
     #: The SymbolicConstant FIX_NONE or an Int specifying the number of node layers adjoining
     #: the task region to remain free during mesh smoothing. A value of 0 indicates that no
     #: layers are free and all layers are fixed. The default value is 0.
-    numFreeNodeLayers: SymbolicConstant = 0
+    numFreeNodeLayers: SymbolicConstant | int = 0
 
     #: None or an Int specifying the number of layers for mesh smoothing when
     #: **meshSmoothingRegionMethod** is NUMBER_OF_LAYERS. The default value is None.
@@ -281,7 +283,7 @@ class ShapeTask(OptimizationTask):
         meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
         meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
-        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
+        numFreeNodeLayers: Literal[C.FIX_NONE] | int = 0,
         numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,

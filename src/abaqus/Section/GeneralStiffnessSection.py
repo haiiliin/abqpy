@@ -30,10 +30,10 @@ class GeneralStiffnessSection(ShellSection):
     """
 
     #: A RebarLayers object specifying reinforcement properties.
-    rebarLayers: Optional[RebarLayers] = None
+    rebarLayers: RebarLayers
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: Optional[TransverseShearShell] = None
+    transverseShear: TransverseShearShell
 
     #: A String specifying the repository key.
     name: str

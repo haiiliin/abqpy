@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Dict
 
 from typing_extensions import Literal
@@ -66,16 +68,16 @@ class BeadTask(OptimizationTask):
     areBCRegionsFrozen: Boolean = OFF
 
     #: An int specifying the step size of the optimization. The default value is 1.
-    beadIter: str = 1
+    beadIter: int = 1
 
     #: A float specifying maximum membrane/bending stress. The default value is 0.1.
-    beadMaxMembraneStress: str = 0
+    beadMaxMembraneStress: float = 0
 
     #: A float specifying minimum stress. The default value is 0.001.
-    beadMinStress: str = 0
+    beadMinStress: float = 0
 
     #: A Sets perturbation size for finite differences. The default value is 0.0001.
-    beadPerturbation: str = 0
+    beadPerturbation: float = 0
 
     #: A SymbolicConstant specifying the Optimization product default or a float specifying the
     #: bead width. The default value is DEFAULT.
@@ -83,10 +85,10 @@ class BeadTask(OptimizationTask):
 
     #: A float specifying relative value to the middle element edge length such that normals in
     #: this area do not cross each other. The default value is 5.
-    curveSmooth: str = 5
+    curveSmooth: float = 5
 
     #: A float specifying the filter radius. The default value is 4.
-    filterRadius: str = 4
+    filterRadius: float = 4
 
     #: A SymbolicConstant specifying the method used to define filter radius. Possible values
     #: are VALUE and REFERENCE. The default is VALUE.
@@ -148,13 +150,13 @@ class BeadTask(OptimizationTask):
         abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
-        beadIter: str = 1,
-        beadMaxMembraneStress: str = 0,
-        beadMinStress: str = 0,
-        beadPerturbation: str = 0,
+        beadIter: int = 1,
+        beadMaxMembraneStress: float = 0,
+        beadMinStress: float = 0,
+        beadPerturbation: float = 0,
         beadWidth: Literal[C.DEFAULT] = DEFAULT,
-        curveSmooth: str = 5,
-        filterRadius: str = 4,
+        curveSmooth: float = 5,
+        filterRadius: float = 4,
         filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
         frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
@@ -263,13 +265,13 @@ class BeadTask(OptimizationTask):
         abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
-        beadIter: str = 1,
-        beadMaxMembraneStress: str = 0,
-        beadMinStress: str = 0,
-        beadPerturbation: str = 0,
+        beadIter: int = 1,
+        beadMaxMembraneStress: float = 0,
+        beadMinStress: float = 0,
+        beadPerturbation: float = 0,
         beadWidth: Literal[C.DEFAULT] = DEFAULT,
-        curveSmooth: str = 5,
-        filterRadius: str = 4,
+        curveSmooth: float = 5,
+        filterRadius: float = 4,
         filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
         frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,

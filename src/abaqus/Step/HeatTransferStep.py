@@ -141,6 +141,8 @@ class HeatTransferStep(AnalysisStep):
     #: A Boolean specifying whether the step has a mechanical procedure type.
     nonmechanical: Boolean = OFF
 
+    #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -167,7 +169,7 @@ class HeatTransferStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: str = ""
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF

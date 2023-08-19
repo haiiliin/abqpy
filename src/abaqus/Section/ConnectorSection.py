@@ -162,7 +162,7 @@ class ConnectorSection(Section):
     extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT
 
     #: A ConnectorBehaviorOptionArray object.
-    behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None
+    behaviorOptions: ConnectorBehaviorOptionArray
 
     @abaqus_method_doc
     def __init__(
@@ -222,7 +222,7 @@ class ConnectorSection(Section):
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
-        behaviorOptions: ConnectorBehaviorOptionArray = ...,
+        behaviorOptions: ConnectorBehaviorOptionArray = list(),
     ) -> None:
         """This method creates a ConnectorSection object.
 
