@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_function_doc
 
@@ -22,8 +22,8 @@ def writeFieldReport(
     outputPosition: SymbolicConstant,
     displayGroup: DisplayGroup,
     variable: SymbolicConstant,
-    numericForm: Optional[SymbolicConstant] = None,
-    complexAngle: Optional[float] = None,
+    numericForm: SymbolicConstant | None = None,
+    complexAngle: float | None = None,
     stepFrame: SymbolicConstant = SPECIFY,
 ):
     """This function writes a FieldOutput object to a user-defined ASCII file.

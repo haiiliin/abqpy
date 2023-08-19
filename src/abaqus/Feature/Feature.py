@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -10,6 +10,7 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.InterestingPoint import InterestingPoint
+from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Transform import Transform
 from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
@@ -54,7 +55,7 @@ class Feature:
     name: str = ""
 
     #: An Int specifying the ID of the feature.
-    id: Optional[int] = None
+    id: int | None = None
 
     @abaqus_method_doc
     def AttachmentPoints(
@@ -64,8 +65,8 @@ class Feature:
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Optional[float] = None,
-        projectionDirEndPt: Optional[float] = None,
+        projectionDirStartPt: float | None = None,
+        projectionDirEndPt: float | None = None,
         setName: str = "",
     ) -> Feature:
         """This method creates an attachment points Feature. Attachment points may be created using datum
@@ -112,7 +113,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def AttachmentPointsAlongDirection(
@@ -120,7 +121,7 @@ class Feature:
         name: str,
         startPoint: float,
         pointCreationMethod: Literal[C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS],
-        endPoint: Optional[float] = None,
+        endPoint: float | None = None,
         direction: str = "",
         spacing: str = "",
         numPtsAlongDir: str = "",
@@ -130,8 +131,8 @@ class Feature:
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Optional[float] = None,
-        projectionDirEndPt: Optional[float] = None,
+        projectionDirStartPt: float | None = None,
+        projectionDirEndPt: float | None = None,
         flipDirection: Boolean = OFF,
         setName: str = "",
     ) -> Feature:
@@ -206,7 +207,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def AttachmentPointsOffsetFromEdges(
@@ -215,24 +216,44 @@ class Feature:
         edges: tuple,
         startPoint: str = "",
         flipDirection: str = "",
-        pointCreationMethod: Literal[C.BY_NUMBER, C.BY_SPACING] = ...,
+        pointCreationMethod: Literal[C.BY_NUMBER, C.BY_SPACING] = C.BY_NUMBER,
         numberOfPoints: str = "",
         spacingBetweenPoints: str = "",
         offsetFromStartPoint: float = 0,
         offsetFromEndPoint: float = 0,
         spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
-        patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = ...,
+        patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = C.PATTERN_ORTHOGONALLY,
         referenceFace: str = "",
-        startPointForPatternDirection: Sequence[float] = ...,
-        endPointForPatternDirection: Sequence[float] = ...,
+        startPointForPatternDirection: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
+        endPointForPatternDirection: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
         offsetFromEdges: str = "",
         numberOfRows: int = 1,
         spacingBetweenRows: str = "",
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Sequence[float] = ...,
-        projectionDirEndPt: Sequence[float] = ...,
+        projectionDirStartPt: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
+        projectionDirEndPt: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
         setName: str = "",
     ) -> Feature:
         """This method creates a Feature object by creating attachment points along or offset from one or more
@@ -330,7 +351,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByCylFace(self, face: str) -> Feature:
@@ -356,7 +377,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByNormalToPlane(self, plane: str, point: int) -> Feature:
@@ -385,7 +406,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByParToEdge(self, edge: str, point: int) -> Feature:
@@ -414,7 +435,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByPrincipalAxis(self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]) -> Feature:
@@ -441,7 +462,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @overload
     @abaqus_method_doc
@@ -513,7 +534,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByRotation(self, *args, **kwargs) -> Feature:
-        ...
+        return Feature()
 
     def DatumAxisByThreePoint(self, point1: int, point2: int, point3: int) -> Feature:
         """This method creates a Feature object and a DatumAxis object normal to the circle described by three
@@ -546,7 +567,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByThruEdge(self, edge: str) -> Feature:
@@ -572,7 +593,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByTwoPlane(self, plane1: str, plane2: str) -> Feature:
@@ -600,7 +621,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumAxisByTwoPoint(self, point1: int, point2: int) -> Feature:
@@ -628,7 +649,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumCsysByDefault(
@@ -662,7 +683,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumCsysByOffset(
@@ -710,7 +731,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumCsysByThreePoints(
@@ -767,7 +788,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumCsysByTwoLines(
@@ -809,7 +830,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPlaneByPrincipalPlane(
@@ -841,7 +862,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @overload
     @abaqus_method_doc
@@ -908,7 +929,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByOffset(self, *args, **kwargs) -> Feature:
-        ...
+        return Feature()
 
     def DatumPlaneByRotation(self, plane: str, axis: str, angle: float) -> Feature:
         """This method creates a Feature object and a DatumPlane object by rotating a plane about the specified
@@ -938,7 +959,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPlaneByThreePoints(self, point1: int, point2: int, point3: int) -> Feature:
@@ -968,7 +989,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPlaneByLinePoint(self, line: str, point: int) -> Feature:
@@ -997,7 +1018,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPlaneByPointNormal(self, point: int, normal: str) -> Feature:
@@ -1026,7 +1047,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPlaneByTwoPoint(self, point1: int, point2: int) -> Feature:
@@ -1055,10 +1076,10 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
-    def DatumPointByCoordinate(self, coords: Tuple[float, float, float]) -> Feature:
+    def DatumPointByCoordinate(self, coords: tuple[float, float, float]) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the specified
         coordinates.
 
@@ -1079,7 +1100,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByOffset(self, point: int, vector: tuple) -> Feature:
@@ -1104,7 +1125,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByMidPoint(self, point1: int, point2: int) -> Feature:
@@ -1128,7 +1149,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByOnFace(self, face: str, edge1: str, offset1: float, edge2: str, offset2: float) -> Feature:
@@ -1163,7 +1184,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByEdgeParam(self, edge: Edge, parameter: float) -> Feature:
@@ -1194,7 +1215,7 @@ class Feature:
         AbaqusException
         RangeError
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByProjOnEdge(self, point: int, edge: str) -> Feature:
@@ -1223,7 +1244,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def DatumPointByProjOnFace(self, point: int, face: Face) -> Feature:
@@ -1253,7 +1274,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def MakeSketchTransform(
@@ -1302,7 +1323,7 @@ class Feature:
             Up direction is parallel to plane normal,
             If the sketchUpEdge is parallel to the sketchPlane.
         """
-        ...
+        return Transform()
 
     @abaqus_method_doc
     def PartitionCellByDatumPlane(self, cells: Sequence[Cell], datumPlane: DatumPlane) -> Feature:
@@ -1330,7 +1351,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByExtendFace(self, cells: Sequence[Cell], extendFace: str) -> Feature:
@@ -1359,7 +1380,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByExtrudeEdge(
@@ -1397,7 +1418,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByPatchNCorners(self, cell: Cell, cornerPoints: tuple) -> Feature:
@@ -1426,7 +1447,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByPatchNEdges(self, cell: str, edges: Sequence[Edge]) -> Feature:
@@ -1455,7 +1476,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByPlaneNormalToEdge(
@@ -1490,7 +1511,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
@@ -1525,7 +1546,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellByPlaneThreePoints(self, cells: Sequence[Cell], point1: int, point2: int, point3: int) -> Feature:
@@ -1558,7 +1579,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionCellBySweepEdge(self, cells: Sequence[Cell], edges: Sequence[Edge], sweepPath: Edge) -> Feature:
@@ -1591,7 +1612,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionEdgeByDatumPlane(self, edges: Sequence[Edge], datumPlane: DatumPlane) -> Feature:
@@ -1619,7 +1640,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionEdgeByParam(self, edges: Sequence[Edge], parameter: float) -> Feature:
@@ -1648,7 +1669,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionEdgeByPoint(self, edge: Edge, point: int) -> Feature:
@@ -1676,7 +1697,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByAuto(self, face: Face) -> Feature:
@@ -1699,7 +1720,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByCurvedPathEdgeParams(
@@ -1738,7 +1759,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByCurvedPathEdgePoints(
@@ -1775,7 +1796,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByDatumPlane(self, faces: Sequence[Face], datumPlane: DatumPlane) -> Feature:
@@ -1799,7 +1820,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByExtendFace(self, faces: Sequence[Face], extendFace: Face) -> Feature:
@@ -1825,7 +1846,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByIntersectFace(self, faces: Sequence[Face], cuttingFaces: Sequence[Face]) -> Feature:
@@ -1849,7 +1870,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByProjectingEdges(
@@ -1882,7 +1903,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceByShortestPath(self, faces: Sequence[Face], point1: int, point2: int) -> Feature:
@@ -1914,7 +1935,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceBySketch(
@@ -1955,7 +1976,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceBySketchDistance(
@@ -2006,7 +2027,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceBySketchRefPoint(
@@ -2054,7 +2075,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def PartitionFaceBySketchThruAll(
@@ -2102,7 +2123,7 @@ class Feature:
         ------
         AbaqusException
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def ReferencePoint(
@@ -2155,7 +2176,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def WirePolyLine(
@@ -2205,7 +2226,7 @@ class Feature:
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def isSuppressed(self) -> bool:
@@ -2216,7 +2237,7 @@ class Feature:
         Boolean
             A Boolean value of True if the feature is suppressed and False if it is not suppressed.
         """
-        ...
+        return True
 
     @abaqus_method_doc
     def restore(self) -> None:
@@ -2240,11 +2261,11 @@ class Feature:
     @abaqus_method_doc
     def setValues(
         self,
-        parameter: float = ...,
-        parameter1: float = ...,
-        parameter2: float = ...,
+        parameter: float = 0,
+        parameter1: float = 0,
+        parameter2: float = 0,
         sketch: ConstrainedSketch = ...,
-        distance: float = ...,
+        distance: float = 0,
     ) -> None:
         """This method modifies the Feature object.
 

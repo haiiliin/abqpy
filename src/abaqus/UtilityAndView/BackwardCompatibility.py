@@ -65,7 +65,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        List[str]
+        list[str]
             A list of Strings.
         """
         ...
@@ -77,7 +77,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        List[str]
+        list[str]
             A list of Strings.
         """
         ...

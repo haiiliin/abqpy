@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -15,20 +15,20 @@ class ResponseSpectrumComponent:
     """
 
     #: A Float specifying the **X** direction cosine.
-    x: Optional[float] = None
+    x: float | None = None
 
     #: A Float specifying the **Y** direction cosine.
-    y: Optional[float] = None
+    y: float | None = None
 
     #: A Float specifying the **Z** direction cosine.
-    z: Optional[float] = None
+    z: float | None = None
 
     #: A Float specifying the scale factor.
-    scale: Optional[float] = None
+    scale: float | None = None
 
     #: A Float specifying the time duration of the dynamic event, from which this spectrum was
     #: created. Note: This parameter is ignored unless used with the DSC modal summation rule.
-    timeDuration: Optional[float] = None
+    timeDuration: float | None = None
 
     #: A String specifying the name of the response spectrum specified with the keyword
     #: SPECTRUM.
