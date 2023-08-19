@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -40,7 +40,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
@@ -52,7 +52,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
         angle: float,
         region: Region,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method creates a TopologyRotationalSymmetry object.
@@ -93,7 +93,7 @@ class TopologyRotationalSymmetry(GeometricRestriction):
     def setValues(
         self,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method modifies the TopologyRotationalSymmetry object.

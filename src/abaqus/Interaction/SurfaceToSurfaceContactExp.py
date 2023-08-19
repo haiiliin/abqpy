@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -75,11 +77,11 @@ class SurfaceToSurfaceContactExp(Interaction):
 
     #: None or a sequence of Floats specifying the half thread angle used for bolt clearance.
     #: The default value is None.
-    halfThreadAngle: Optional[str] = None
+    halfThreadAngle: str | None = None
 
     #: None or a sequence of Floats specifying the pitch used for bolt clearance. The default
     #: value is None.
-    pitch: Optional[str] = None
+    pitch: str | None = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
@@ -91,14 +93,14 @@ class SurfaceToSurfaceContactExp(Interaction):
 
     #: A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
-    datumAxis: Optional[DatumAxis] = None
+    datumAxis: DatumAxis | None = None
 
     #: A Boolean specifying whether to reverse the bolt clearance direction given by the datum
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
     #: A Region object specifying the contact region for which clearance is specified.
-    clearanceRegion: Optional[Region] = None
+    clearanceRegion: Region | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -114,13 +116,13 @@ class SurfaceToSurfaceContactExp(Interaction):
         weightingFactor: float = 0,
         contactControls: str = "",
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
     ):
         """This method creates a SurfaceToSurfaceContactExp object.
 
@@ -206,13 +208,13 @@ class SurfaceToSurfaceContactExp(Interaction):
         weightingFactor: float = 0,
         contactControls: str = "",
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactExp object in the step where it
         is created.

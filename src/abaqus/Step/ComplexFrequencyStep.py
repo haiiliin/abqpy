@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -55,7 +55,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the shift point in cycles per time. The default value is
     #: None.
-    shift: Optional[float] = None
+    shift: float | None = None
 
     #: A Boolean specifying whether to add to the damping matrix contributions due to friction
     #: effects. The default value is OFF.
@@ -67,11 +67,11 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the minimum frequency of interest in cycles per time. The
     #: default value is None.
-    minEigen: Optional[float] = None
+    minEigen: float | None = None
 
     #: None or a Float specifying the maximum frequency of interest in cycles per time. The
     #: default value is None.
-    maxEigen: Optional[float] = None
+    maxEigen: float | None = None
 
     #: None or a Float specifying the frequency at which to evaluate frequency-dependent
     #: properties for viscoelasticity, springs, and dashpots during the eigenvalue extraction.
@@ -79,7 +79,7 @@ class ComplexFrequencyStep(AnalysisStep):
     #: frequency-dependent springs and dashpots at zero frequency and will not consider the
     #: stiffness contributions from frequency-domain viscoelasticity in the step. The default
     #: value is None.
-    propertyEvaluationFrequency: Optional[float] = None
+    propertyEvaluationFrequency: float | None = None
 
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
@@ -90,7 +90,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -126,31 +126,31 @@ class ComplexFrequencyStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -159,19 +159,19 @@ class ComplexFrequencyStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -180,13 +180,13 @@ class ComplexFrequencyStep(AnalysisStep):
         previous: str,
         numEigen: Literal[C.ALL] = ALL,
         description: str = "",
-        shift: Optional[float] = None,
+        shift: float | None = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        minEigen: Optional[float] = None,
-        maxEigen: Optional[float] = None,
-        propertyEvaluationFrequency: Optional[float] = None,
+        minEigen: float | None = None,
+        maxEigen: float | None = None,
+        propertyEvaluationFrequency: float | None = None,
     ):
         """This method creates a ComplexFrequencyStep object.
 
@@ -249,12 +249,12 @@ class ComplexFrequencyStep(AnalysisStep):
         self,
         numEigen: Literal[C.ALL] = ALL,
         description: str = "",
-        shift: Optional[float] = None,
+        shift: float | None = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
-        minEigen: Optional[float] = None,
-        maxEigen: Optional[float] = None,
-        propertyEvaluationFrequency: Optional[float] = None,
+        minEigen: float | None = None,
+        maxEigen: float | None = None,
+        propertyEvaluationFrequency: float | None = None,
     ):
         """This method modifies the ComplexFrequencyStep object.
 

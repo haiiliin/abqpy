@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 from typing import Optional, Tuple, Union
+
+=======
+from __future__ import annotations
+
+from typing import Sequence, Union
+
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
 
@@ -97,7 +105,7 @@ class InteractionModel(
         searchDomain: Literal[C.MODEL] = MODEL,
         defaultType: Literal[C.CONTACT, C.CONTACT_EXPLICIT, C.TIE, C.CONTACT_STANDARD] = CONTACT,
         interactionProperty: str = "",
-        separationTolerance: Optional[float] = None,
+        separationTolerance: float | None = None,
         extendByAngle: float = 20,
         mergeWithinAngle: float = 20,
         searchSingleInstances: Boolean = OFF,
@@ -115,7 +123,7 @@ class InteractionModel(
         includeNonOverlapping: Boolean = OFF,
         meshedGeometrySearchTechnique: Literal[C.USE_MESH, C.USE_GEOMETRY] = USE_GEOMETRY,
         useShellThickness: Boolean = ON,
-        surfaceSmoothing: Optional[Literal[C.AUTOMATIC, C.NONE]] = None,
+        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] | None = None,
     ):
         """This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp,
         and Tie objects.
@@ -204,13 +212,13 @@ class InteractionModel(
         ...
 
     @abaqus_method_doc
-    def getSurfaceSeparation(self) -> Tuple[Tuple[str, str, float, bool]]:
+    def getSurfaceSeparation(self) -> tuple[tuple[str, str, float, bool]]:
         """This method returns a list of all possible contacts that can be created using the ContactDetection
         method.
 
         Returns
         -------
-        Tuple[Tuple[str, str, float, bool]]
+        tuple[tuple[str, str, float, bool]]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
 
@@ -220,7 +228,7 @@ class InteractionModel(
               surface.
             - A boolean specifying whether or not contact surfaces are overclosed.
         """
-        ...
+        return (("main", "secondary", 0.0, False),)
 
     @abaqus_method_doc
     def AcousticImpedance(
@@ -380,10 +388,10 @@ class InteractionModel(
         createStepName: str,
         surfaces: RegionArray,
         surfaceEmissivities: tuple = (),
-        ambientTemp: Optional[float] = None,
+        ambientTemp: float | None = None,
         blocking: Literal[C.NO_BLOCKING, C.BLOCKING_ALL, C.PARTIAL_BLOCKING] = BLOCKING_ALL,
-        blockingSurfaces: Optional[RegionArray] = None,
-        rangeOfView: Optional[float] = None,
+        blockingSurfaces: RegionArray | None = None,
+        rangeOfView: float | None = None,
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
         minInfinitesimalRatio: float = 64,
@@ -391,9 +399,9 @@ class InteractionModel(
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: Optional[ModelDot] = None,
-        cyclicRotEndPt: Optional[ModelDot] = None,
-        cyclicSymPt: Optional[ModelDot] = None,
+        cyclicRotPt: ModelDot | None = None,
+        cyclicRotEndPt: ModelDot | None = None,
+        cyclicSymPt: ModelDot | None = None,
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -406,15 +414,15 @@ class InteractionModel(
         periodicDistance_1: tuple = (),
         periodicDistance_2: tuple = (),
         periodicDistance_3: tuple = (),
-        periodicSymZ: Optional[float] = None,
-        periodicDistZ: Optional[float] = None,
+        periodicSymZ: float | None = None,
+        periodicDistZ: float | None = None,
         reflectionSymmetries: int = 0,
         reflectionSymAxis_1: str = "",
         reflectionSymAxis_2: str = "",
         reflectionSymPlane_1: str = "",
         reflectionSymPlane_2: str = "",
         reflectionSymPlane_3: str = "",
-        reflectionSymZ: Optional[float] = None,
+        reflectionSymZ: float | None = None,
     ) -> CavityRadiation:
         """This method creates a CavityRadiation object.
 
@@ -814,6 +822,7 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
+<<<<<<< HEAD
         includedPairs: Optional[RegionPairs] = None,
         excludedPairs: Optional[RegionPairs] = None,
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
@@ -822,6 +831,19 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        includedPairs: RegionPairs | None = None,
+        excludedPairs: RegionPairs | None = None,
+        contactPropertyAssignments: ContactPropertyAssignment | None = None,
+        surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
+        surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
+        surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
+        smoothingAssignments: SmoothingAssignment | None = None,
+        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
+        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
+        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        polarityAssignments: PolarityAssignments = PolarityAssignments(),
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a ContactExp object.
 
@@ -894,6 +916,7 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
+<<<<<<< HEAD
         includedPairs: Optional[RegionPairs] = None,
         excludedPairs: Optional[RegionPairs] = None,
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
@@ -905,6 +928,22 @@ class InteractionModel(
         stabilizationAssignments: Optional[StabilizationAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
+=======
+        includedPairs: RegionPairs | None = None,
+        excludedPairs: RegionPairs | None = None,
+        contactPropertyAssignments: ContactPropertyAssignment | None = None,
+        surfaceThicknessAssignments: SurfaceThicknessAssignment | None = None,
+        surfaceOffsetAssignments: SurfaceOffsetAssignment | None = None,
+        surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
+        mainSecondaryAssignments: MainSecondaryAssignment | None = None,
+        initializationAssignments: InitializationAssignment | None = None,
+        stabilizationAssignments: StabilizationAssignment | None = None,
+        smoothingAssignments: SmoothingAssignment | None = None,
+        slidingTransitionAssignments: SlidingTransitionAssignment | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
@@ -1332,9 +1371,9 @@ class InteractionModel(
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: Optional[float] = None,
-        referenceMagnitude: Optional[float] = None,
-        detonationTime: Optional[float] = None,
+        initialDepth: float | None = None,
+        referenceMagnitude: float | None = None,
+        detonationTime: float | None = None,
         magnitudeFactor: float = 1,
     ) -> IncidentWave:
         """This method creates an IncidentWave object.
@@ -1424,7 +1463,7 @@ class InteractionModel(
         createStepName: str,
         isRestart: Boolean = OFF,
         regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ) -> ModelChange:
@@ -1793,13 +1832,13 @@ class InteractionModel(
         weightingFactor: float = 0,
         contactControls: str = "",
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
     ) -> SurfaceToSurfaceContactExp:
         """This method creates a SurfaceToSurfaceContactExp object.
 
@@ -1908,21 +1947,27 @@ class InteractionModel(
         extensionZone: float = 0,
         adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
         adjustTolerance: float = 0,
-        adjustSet: Optional[Region] = None,
+        adjustSet: Region | None = None,
         enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+<<<<<<< HEAD
         bondingSet: Optional[Region] = None,
+=======
+        bondingSet: Region | None = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 
