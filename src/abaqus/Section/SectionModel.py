@@ -1,4 +1,6 @@
-from typing import Optional, Tuple, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -7,7 +9,6 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import (
-    BENDING,
     CONSTANT,
     DEFAULT,
     DOF_MODE,
@@ -135,16 +136,16 @@ class SectionModel(ModelBase):
         thermalExpansion: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        density: Optional[float] = None,
-        referenceTemperature: Optional[float] = None,
+        density: float | None = None,
+        referenceTemperature: float | None = None,
         temperatureVar: Literal[C.LINEAR, C.INTERPOLATED] = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
         submerged: Literal[C.FULLY, C.HALF] = FULLY,
-        fluidMassDensity: Optional[float] = None,
-        crossSectionRadius: Optional[float] = None,
+        fluidMassDensity: float | None = None,
+        crossSectionRadius: float | None = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
@@ -153,8 +154,8 @@ class SectionModel(ModelBase):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: Tuple[float, float] = (0.0, 0.0),
-        shearCenter: Tuple[float, float] = (0.0, 0.0),
+        centroid: tuple[float, float] = (0.0, 0.0),
+        shearCenter: tuple[float, float] = (0.0, 0.0),
         profileEnd: str = "",
     ) -> BeamSection:
         """This method creates a BeamSection object.
@@ -300,7 +301,7 @@ class SectionModel(ModelBase):
         material: str,
         initialThicknessType: Literal[C.SOLVER_DEFAULT, C.SPECIFY] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: Optional[float] = None,
+        outOfPlaneThickness: float | None = None,
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
@@ -371,8 +372,8 @@ class SectionModel(ModelBase):
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -561,20 +562,20 @@ class SectionModel(ModelBase):
             C.SLOT,
         ] = NONE,
         integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED,
-        u1ReferenceLength: Optional[float] = None,
-        u2ReferenceLength: Optional[float] = None,
-        u3ReferenceLength: Optional[float] = None,
-        ur1ReferenceAngle: Optional[float] = None,
-        ur2ReferenceAngle: Optional[float] = None,
-        ur3ReferenceAngle: Optional[float] = None,
-        massPerLength: Optional[float] = None,
-        contactAngle: Optional[float] = None,
+        u1ReferenceLength: float | None = None,
+        u2ReferenceLength: float | None = None,
+        u3ReferenceLength: float | None = None,
+        ur1ReferenceAngle: float | None = None,
+        ur2ReferenceAngle: float | None = None,
+        ur3ReferenceAngle: float | None = None,
+        massPerLength: float | None = None,
+        contactAngle: float | None = None,
         materialFlowFactor: float = 1.0,
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0.03,
         extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
-        behaviorOptions: ConnectorBehaviorOptionArray = ...,
+        behaviorOptions: ConnectorBehaviorOptionArray = list(),
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
@@ -788,7 +789,7 @@ class SectionModel(ModelBase):
         self,
         name: str,
         stiffnessMatrix: tuple,
-        referenceTemperature: Optional[float] = None,
+        referenceTemperature: float | None = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -888,9 +889,9 @@ class SectionModel(ModelBase):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
-        nTemp: Optional[int] = None,
-        thicknessModulus: Optional[float] = None,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
+        nTemp: int | None = None,
+        thicknessModulus: float | None = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",
@@ -1000,7 +1001,11 @@ class SectionModel(ModelBase):
 
     @abaqus_method_doc
     def HomogeneousSolidSection(
+<<<<<<< HEAD
         self, name: str, material: str, thickness: Optional[float] = None
+=======
+        self, name: str, material: str, thickness: float | None = 1.0
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 

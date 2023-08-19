@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -29,12 +29,21 @@ class HomogeneousSolidSection(SolidSection):
     #: A String specifying the name of the material.
     material: str
 
+<<<<<<< HEAD
     #: None or a Float specifying the thickness of the section. Possible values
     #: are None or a floating point value such that thickness >  0.0. The default value is None.
     thickness: Optional[float] = None
+=======
+    #: A Float specifying the thickness of the section. Possible values are None or greater
+    #: than zero. The default value is 1.0.
+    #:
+    #: .. versionchanged:: 2018
+    #:    The default value is now 1.0 instead of None.
+    thickness: float | None = None
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
     @abaqus_method_doc
-    def __init__(self, name: str, material: str, thickness: Optional[float] = None) -> None:
+    def __init__(self, name: str, material: str, thickness: float | None = None) -> None:
         """This method creates a HomogeneousSolidSection object.
 
         .. note::

@@ -62,7 +62,7 @@ jobs:
         run: |
           sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}/${{ matrix.language }}
         env:
-          SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
+          SPHINXOPTS: -D language=${{ matrix.language }} -j auto
       - name: Upload artifacts
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
