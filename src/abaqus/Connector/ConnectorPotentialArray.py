@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .ConnectorPotential import ConnectorPotential
 
-ConnectorPotentialArray = list[ConnectorPotential]
+ConnectorPotentialArray = List[ConnectorPotential]

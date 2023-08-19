@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -10,7 +10,7 @@ from .FaceArray import FaceArray
 
 
 @abaqus_class_doc
-class CellArray(list[Cell]):
+class CellArray(List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note::

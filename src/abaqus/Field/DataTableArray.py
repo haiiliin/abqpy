@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .DataTable import DataTable
 
-DataTableArray = list[DataTable]
+DataTableArray = List[DataTable]

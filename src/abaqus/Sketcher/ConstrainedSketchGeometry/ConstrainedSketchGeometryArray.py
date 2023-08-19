@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ...UtilityAndView.abaqusConstants import Boolean
@@ -7,7 +9,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 
 @abaqus_class_doc
-class ConstrainedSketchGeometryArray(list[ConstrainedSketchGeometry]):
+class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
     .. note::

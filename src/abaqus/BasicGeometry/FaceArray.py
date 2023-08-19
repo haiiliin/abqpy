@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Sequence, Union, overload
+from typing import Dict, List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -10,7 +10,7 @@ from .Face import Face
 
 
 @abaqus_class_doc
-class FaceArray(list[Face]):
+class FaceArray(List[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray must be updated for
     that part.
 

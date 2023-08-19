@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -9,7 +9,7 @@ from .IgnoredEdge import IgnoredEdge
 
 
 @abaqus_class_doc
-class IgnoredEdgeArray(list[IgnoredEdge]):
+class IgnoredEdgeArray(List[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then IgnoredEdgeArray
     must be updated for that part.
 
@@ -125,7 +125,7 @@ class IgnoredEdgeArray(list[IgnoredEdge]):
         ...
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict:
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set of points,
         where the given points need not lie on the edges in the IgnoredEdgeArray.
 

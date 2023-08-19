@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Sequence, Union
+from typing import TYPE_CHECKING, List, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -12,7 +12,7 @@ if TYPE_CHECKING:  # to avoid circular imports
 
 
 @abaqus_class_doc
-class MeshElementArray(list[MeshElement]):
+class MeshElementArray(List[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
     .. note::

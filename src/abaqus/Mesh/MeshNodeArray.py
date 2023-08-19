@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union
+from typing import List, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -8,7 +8,7 @@ from .MeshNode import MeshNode
 
 
 @abaqus_class_doc
-class MeshNodeArray(list[MeshNode]):
+class MeshNodeArray(List[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
     .. note::

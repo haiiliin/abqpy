@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .BiaxialTestData import BiaxialTestData
 
-BiaxialTestDataArray = list[BiaxialTestData]
+BiaxialTestDataArray = List[BiaxialTestData]

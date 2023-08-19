@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -9,7 +9,7 @@ from .IgnoredVertex import IgnoredVertex
 
 
 @abaqus_class_doc
-class IgnoredVertexArray(list[IgnoredVertex]):
+class IgnoredVertexArray(List[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified, then
     IgnoredVertexArray must be updated for that part.
 

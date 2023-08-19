@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .SteadyStateModalFrequency import SteadyStateModalFrequency
 
-SteadyStateModalFrequencyArray = list[SteadyStateModalFrequency]
+SteadyStateModalFrequencyArray = List[SteadyStateModalFrequency]

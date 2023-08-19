@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .PartInstance import PartInstance
 
-PartInstanceArray = list[PartInstance]
+PartInstanceArray = List[PartInstance]

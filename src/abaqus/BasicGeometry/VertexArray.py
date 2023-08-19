@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -12,7 +12,7 @@ from .Vertex import Vertex
 
 
 @abaqus_class_doc
-class VertexArray(list[Vertex]):
+class VertexArray(List[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 

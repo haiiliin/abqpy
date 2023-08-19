@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import List
+
 from .ReferencePoint import ReferencePoint
 
-ReferencePointArray = list[ReferencePoint]
+ReferencePointArray = List[ReferencePoint]
