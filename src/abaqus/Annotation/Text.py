@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -32,10 +34,10 @@ class Text(Annotation, _OptionsBase):
     """
 
     #: A Float specifying the width in millimeters of the Text object.
-    width: Optional[float] = None
+    width: float | None = None
 
     #: A Float specifying the height in millimeters of the Text object.
-    height: Optional[float] = None
+    height: float | None = None
 
     #: A String specifying the annotation repository key.
     name: str

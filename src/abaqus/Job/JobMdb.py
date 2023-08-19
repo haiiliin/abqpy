@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -41,10 +41,10 @@ class JobMdb(MdbBase):
         model: str,
         description: str = "",
         type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
-        queue: Optional[str] = "",
+        queue: str | None = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: Optional[str] = "",
+        atTime: str | None = "",
         echoPrint: Boolean = OFF,
         contactPrint: Boolean = OFF,
         modelPrint: Boolean = OFF,
@@ -205,10 +205,10 @@ class JobMdb(MdbBase):
         name: str,
         inputFileName: str,
         type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS,
-        queue: Optional[str] = "",
+        queue: str | None = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: Optional[str] = "",
+        atTime: str | None = "",
         scratch: str = "",
         userSubroutine: str = "",
         numCpus: int = 1,
@@ -354,7 +354,7 @@ class JobMdb(MdbBase):
         saveInitial: Boolean = True,
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
-        saveEvery: Optional[int] = None,
+        saveEvery: int | None = None,
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 

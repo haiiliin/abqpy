@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -39,11 +39,18 @@ class DesignDirection(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
+<<<<<<< HEAD
     masterPoint: Optional[str] = None
+=======
+    #:
+    #: .. versionchanged:: 2022
+    #:    The attribute ``masterPoint`` was renamed to ``mainPoint``.
+    mainPoint: str | None = None
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -79,9 +86,15 @@ class DesignDirection(GeometricRestriction):
         self,
         name: str,
         region: Region,
+<<<<<<< HEAD
         csys: Optional[int] = None,
         masterPoint: Optional[str] = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+=======
+        csys: int | None = None,
+        mainPoint: str | None = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
@@ -144,9 +157,15 @@ class DesignDirection(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
+<<<<<<< HEAD
         csys: Optional[int] = None,
         masterPoint: Optional[str] = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+=======
+        csys: int | None = None,
+        mainPoint: str | None = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,

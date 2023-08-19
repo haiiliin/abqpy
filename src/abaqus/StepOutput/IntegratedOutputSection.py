@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -29,7 +29,7 @@ class IntegratedOutputSection:
     #: None or a Region object specifying the anchor point about which the integrated moment
     #: over the output region is computed or the SymbolicConstant None representing the global
     #: origin. The default value is None.
-    refPoint: Optional[SymbolicConstant] = None
+    refPoint: SymbolicConstant
 
     #: A Boolean specifying that the **refPoint** be adjusted so that it coincides with the
     #: center of the output region in the initial configuration. This argument is valid only
@@ -48,7 +48,7 @@ class IntegratedOutputSection:
     #: None or a DatumCsys object specifying the local coordinate system used to express vector
     #: output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
     #: system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     #: A Boolean specifying that the coordinate system be projected onto the **surface** such
     #: that the 1-axis is normal to the **surface**. Projection onto a planar **surface** is such
@@ -61,10 +61,10 @@ class IntegratedOutputSection:
         self,
         name: str,
         surface: Region,
-        refPoint: Optional[SymbolicConstant] = None,
+        refPoint: SymbolicConstant | None = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         projectOrientation: Boolean = OFF,
     ) -> None:
         """This method creates an IntegratedOutputSection object.
@@ -117,10 +117,10 @@ class IntegratedOutputSection:
     def setValues(
         self,
         surface: Region,
-        refPoint: Optional[SymbolicConstant] = None,
+        refPoint: SymbolicConstant | None = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         projectOrientation: Boolean = OFF,
     ) -> None:
         """This method modifies the IntegratedOutputSection object.

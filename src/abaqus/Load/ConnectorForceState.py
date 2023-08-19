@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -26,34 +26,34 @@ class ConnectorForceState(LoadState):
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 1-direction.
-    f1: Optional[float] = None
+    f1: float | None = None
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 2-direction.
-    f2: Optional[float] = None
+    f2: float | None = None
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 3-direction.
-    f3: Optional[float] = None
+    f3: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 1-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f1State: Optional[SymbolicConstant] = None
+    f1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 2-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f2State: Optional[SymbolicConstant] = None
+    f2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 3-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f3State: Optional[SymbolicConstant] = None
+    f3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -67,7 +67,7 @@ class ConnectorForceState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.
