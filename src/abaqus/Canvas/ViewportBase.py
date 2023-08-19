@@ -1,4 +1,6 @@
-from typing import Dict, Optional, Sequence, Tuple, overload
+from __future__ import annotations
+
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -83,28 +85,28 @@ class ViewportBase(_OptionsBase):
     #: A SymbolicConstant specifying the display mode of the viewport. Possible values
     #: are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
     #: to be displayed simultaneously—each layer contains one **displayedObject**.
-    displayMode: Optional[SymbolicConstant] = None
+    displayMode: SymbolicConstant
 
     #: A SymbolicConstant specifying which layer or layers will be controlled by the view
     #: manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
-    viewManipLayers: Optional[SymbolicConstant] = None
+    viewManipLayers: SymbolicConstant
 
     #: A Float specifying a factor to be used in offsetting layers in the screen Z direction.
     #: Possible values are -1 to 1. A negative value reverses the apparent order in which the
     #: layers are plotted.
-    layerOffset: Optional[float] = None
+    layerOffset: float | None = None
 
     #: A SymbolicConstant specifying the current state of a viewport. Possible values are
     #: NORMAL, MAXIMIZED, and MINIMIZED.
-    windowState: Optional[SymbolicConstant] = None
+    windowState: SymbolicConstant
 
     #: A Float specifying the width in millimeters of the current viewport, regardless of the
     #: value of **windowState**.
-    currentWidth: Optional[float] = None
+    currentWidth: float | None = None
 
     #: A Float specifying the height in millimeters of the current viewport, regardless of the
     #: value of **windowState**, and including the title bar.
-    currentHeight: Optional[float] = None
+    currentHeight: float | None = None
 
     #: A Boolean specifying whether the viewport is linked for synchronization. The default
     #: value is ON.
@@ -209,7 +211,7 @@ class ViewportBase(_OptionsBase):
     #: A Float specifying the translucency that will be applied to objects colored using
     #: **initialColor** and it needs to be set along with **initialColor**. If **initialColor** is
     #: set to 'As is' then translucency will have no effect.
-    translucency: Optional[float] = None
+    translucency: float | None = None
 
     #: A Boolean specifying whether an animation is connected to the viewport.
     animationConnect: Boolean = OFF
@@ -266,7 +268,7 @@ class ViewportBase(_OptionsBase):
     #: - "initialColor"
     #: - "Layup"
     #: - "Ply"
-    colorMappings: Dict[str, AttributeColorMap] = {}
+    colorMappings: dict[str, AttributeColorMap] = {}
 
     #: A String specifying the color that will be applied to all objects in the viewport at the
     #: start of color coding. The possible values are 'As is', 'Default' or a string with a
@@ -286,7 +288,7 @@ class ViewportBase(_OptionsBase):
 
     #: A repository of Layer objects specifying the key to the repository is a String with the
     #: name of the layer.
-    layers: Dict[str, Layer] = {}
+    layers: dict[str, Layer] = {}
 
     #: A View object specifying the object that controls viewing of the
     #: viewport content.
@@ -350,7 +352,7 @@ class ViewportBase(_OptionsBase):
     def __init__(
         self,
         name: str,
-        origin: Tuple[float, float] = (0.0, 0.0),
+        origin: tuple[float, float] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,
@@ -687,12 +689,12 @@ class ViewportBase(_OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        displayedObject: Optional[Displayable] = None,
-        displayMode: Optional[Literal[C.SINGLE, C.OVERLAY]] = None,
+        displayedObject: Displayable | None = None,
+        displayMode: Literal[C.SINGLE, C.OVERLAY] | None = None,
         visibleLayers: Sequence[str] = (),
-        viewManipLayers: Optional[Literal[C.ALL, C.CURRENT]] = None,
+        viewManipLayers: Literal[C.ALL, C.CURRENT] | None = None,
         currentLayer: str = "",
-        layerOffset: Optional[float] = None,
+        layerOffset: float | None = None,
     ):
         """This method modifies the Viewport object. The arguments to setValues are the same as the arguments to
         the Viewport method, except for the **name** argument. In addition, the setValues method has the

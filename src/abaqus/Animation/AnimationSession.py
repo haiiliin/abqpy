@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -49,9 +51,9 @@ class AnimationSession(SessionBase):
         name: str,
         fileName: str,
         startFrame: int = 0,
-        endFrame: Optional[int] = None,
+        endFrame: int | None = None,
         timelineStartFrame: int = 0,
-        timelineEndFrame: Optional[int] = None,
+        timelineEndFrame: int | None = None,
         timelineStartTime: float = 0,
         timelineEndTime: Union[Literal[C.END_FRAME_TIME], float] = END_FRAME_TIME,
     ) -> Movie:

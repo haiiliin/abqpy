@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import overload
 
 from abqpy.decorators import abaqus_function_doc

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -30,7 +30,7 @@ class XFEMCrackGrowthState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **allowGrowth** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    allowGrowthState: Optional[SymbolicConstant] = None
+    allowGrowthState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -44,4 +44,4 @@ class XFEMCrackGrowthState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

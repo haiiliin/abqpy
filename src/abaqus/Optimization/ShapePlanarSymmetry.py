@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -44,7 +44,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
@@ -80,8 +80,13 @@ class ShapePlanarSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
+<<<<<<< HEAD
         csys: Optional[int] = None,
         masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+=======
+        csys: int | None = None,
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -143,8 +148,13 @@ class ShapePlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
+<<<<<<< HEAD
         csys: Optional[int] = None,
         masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+=======
+        csys: int | None = None,
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

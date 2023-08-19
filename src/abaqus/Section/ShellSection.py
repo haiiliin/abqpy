@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -25,4 +25,4 @@ class ShellSection(Section):
     name: str = ""
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: Optional[TransverseShearShell] = None
+    transverseShear: TransverseShearShell

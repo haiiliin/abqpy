@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Tuple, Union
+from typing import List, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -43,7 +43,7 @@ class MeshNodeArray(List[MeshNode]):
     """
 
     @abaqus_method_doc
-    def __init__(self, nodes: List[MeshNode]) -> None:
+    def __init__(self, nodes: list[MeshNode]) -> None:
         """This method creates a MeshNodeArray object.
 
         .. note::
@@ -77,7 +77,7 @@ class MeshNodeArray(List[MeshNode]):
         MeshNode
             A MeshNode object.
         """
-        ...
+        return MeshNode((0.0, 0.0, 0.0))
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshNodeArray:
@@ -95,7 +95,7 @@ class MeshNodeArray(List[MeshNode]):
         MeshNodeArray
             A MeshNodeArray object.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -106,17 +106,17 @@ class MeshNodeArray(List[MeshNode]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: float = ...,
-        yMin: float = ...,
-        zMin: float = ...,
-        xMax: float = ...,
-        yMax: float = ...,
-        zMax: float = ...,
+        xMin: float = 0,
+        yMin: float = 0,
+        zMin: float = 0,
+        xMax: float = 0,
+        yMax: float = 0,
+        zMax: float = 0,
     ) -> MeshNodeArray:
         """This method returns an array of nodes that lie within the specified bounding box.
 
@@ -140,13 +140,13 @@ class MeshNodeArray(List[MeshNode]):
         MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def getByBoundingCylinder(
         self,
-        center1: Tuple[float, float, float],
-        center2: Tuple[float, float, float],
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
         radius: float,
     ) -> MeshNodeArray:
         """This method returns an array of node objects that lie within the specified bounding cylinder.
@@ -166,7 +166,7 @@ class MeshNodeArray(List[MeshNode]):
         MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str) -> MeshNodeArray:
@@ -184,16 +184,16 @@ class MeshNodeArray(List[MeshNode]):
         MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the node sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, float, float]]
+        dict[str, tuple[float, float, float]]
             A Dictionary object with the following items:
 
             - **low**: a tuple of three floats representing the minimum x, y and z boundary values of
@@ -204,12 +204,12 @@ class MeshNodeArray(List[MeshNode]):
         Raises
         ------
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
     def getClosest(
-        self, coordinates: str, numToFind: int = 1, searchTolerance: float = ...
-    ) -> Union[MeshNode, List[MeshNode]]:
+        self, coordinates: tuple, numToFind: int = 1, searchTolerance: float = 0.0
+    ) -> Union[MeshNode, list[MeshNode]]:
         """This method returns the node or nodes closest to the given point or set of points.
 
         Parameters
@@ -226,11 +226,11 @@ class MeshNodeArray(List[MeshNode]):
 
         Returns
         -------
-        MeshNode | List[MeshNode]
+        MeshNode | list[MeshNode]
             A MeshNode, or a list of MeshNode objects, or a list of lists of MeshNode objects,
             depending on the number of points given and the number of nodes requested.
         """
-        ...
+        return MeshNode((0.0, 0.0, 0.0))
 
     @abaqus_method_doc
     def sequenceFromLabels(self, labels: Sequence[int]) -> MeshNodeArray:
@@ -251,4 +251,4 @@ class MeshNodeArray(List[MeshNode]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])

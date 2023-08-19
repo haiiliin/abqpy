@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -29,17 +29,17 @@ class PropertyTableData:
     label: str = ""
 
     #: A SymbolicConstant specifying the type of regularize to the user-defined property data.
-    regularize: Optional[SymbolicConstant] = None
+    regularize: SymbolicConstant
 
     #: A SymbolicConstant specifying the type of extrapolation of dependent variables outside
     #: the specified range of the independent variables.
-    extrapolate: Optional[SymbolicConstant] = None
+    extrapolate: SymbolicConstant
 
     #: A Boolean specifying the dependency of properties on temperature.
     isTemp: Boolean = OFF
 
     #: An Int specifying the field variables on which properties are dependent.
-    fieldNums: Optional[int] = None
+    fieldNums: int | None = None
 
     #: A Double specifying the tolerance to be used to regularize the property table data.
     regularizeTolerance: str = ""
@@ -52,10 +52,10 @@ class PropertyTableData:
     def __init__(
         self,
         label: str = "",
-        regularize: Optional[SymbolicConstant] = None,
-        extrapolate: Optional[SymbolicConstant] = None,
+        regularize: SymbolicConstant | None = None,
+        extrapolate: SymbolicConstant | None = None,
         isTemp: Boolean = OFF,
-        fieldNums: Optional[int] = None,
+        fieldNums: int | None = None,
         regularizeTolerance: str = "",
         data: str = "",
     ):

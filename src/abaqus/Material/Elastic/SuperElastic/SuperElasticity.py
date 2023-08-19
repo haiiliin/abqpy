@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -48,7 +48,7 @@ class SuperElasticity:
     superElasticHardeningModifications: SuperElasticHardeningModifications = SuperElasticHardeningModifications(((),))
 
     @abaqus_method_doc
-    def __init__(self, table: tuple, nonassociated: Optional[float] = None):
+    def __init__(self, table: tuple, nonassociated: float | None = None):
         """This method creates a SuperElasticity object.
 
         .. note::

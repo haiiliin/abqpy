@@ -18,7 +18,7 @@ class SizingClusterAreas(GeometricRestriction):
     #: A String specifying the geometric restriction repository key.
     name: str
 
-    #: Tuple of Region objects specifying the regions to which the geometric restriction is
+    #: tuple of Region objects specifying the regions to which the geometric restriction is
     #: applied.
     regions: tuple
 

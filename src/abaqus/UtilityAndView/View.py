@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -29,16 +29,16 @@ class View:
     #: A Float specifying the width in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenWidth: Optional[float] = None
+    displayedObjectScreenWidth: float | None = None
 
     #: A Float specifying the height in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenHeight: Optional[float] = None
+    displayedObjectScreenHeight: float | None = None
 
     #: A tuple of Floats specifying a transformation matrix used to position the contents of
     #: the Layer within a viewport.
-    layerTransform: Optional[float] = None
+    layerTransform: float | None = None
 
     #: A String specifying the name of the view (also used as the repository key). Possible
     #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
@@ -68,14 +68,14 @@ class View:
     projection: Literal[C.PERSPECTIVE, C.PARALLEL]
 
     #: A sequence of three Floats specifying the camera position.
-    cameraPosition: Tuple[float, float, float]
+    cameraPosition: tuple[float, float, float]
 
     #: A sequence of three Floats specifying the camera's up vector (the screen's positive
     #: **Y** axis). The initial value is (0, 0, 0).
-    cameraUpVector: Tuple[float, float, float]
+    cameraUpVector: tuple[float, float, float]
 
     #: A sequence of three Floats specifying the center of the scene.
-    cameraTarget: Tuple[float, float, float]
+    cameraTarget: tuple[float, float, float]
 
     #: A Float specifying the amount to pan the model in the screen **X** direction as a fraction
     #: of the viewport width. A positive value pans the model to the right. A negative value
@@ -106,9 +106,9 @@ class View:
         width: float,
         height: float,
         projection: Literal[C.PERSPECTIVE, C.PARALLEL],
-        cameraPosition: Tuple[float, float, float],
-        cameraUpVector: Tuple[float, float, float],
-        cameraTarget: Tuple[float, float, float],
+        cameraPosition: tuple[float, float, float],
+        cameraUpVector: tuple[float, float, float],
+        cameraTarget: tuple[float, float, float],
         viewOffsetX: float,
         viewOffsetY: float,
         autoFit: Boolean,
@@ -300,7 +300,7 @@ class View:
     def setLayerTransform(
         self,
         layerTransform: tuple = (),
-        options: Optional["View"] = None,
+        options: "View" | None = None,
         drawImmediately: Boolean = False,
     ):
         """This method modifies the transformation used to position a Layer. Note:This method is not available
@@ -368,18 +368,18 @@ class View:
         self,
         options: View = ...,
         drawImmediately: Boolean = False,
-        fieldOfViewAngle: float = ...,
+        fieldOfViewAngle: float = 0,
         farPlaneMode: Literal[C.AUTOCOMPUTE, C.SPECIFY] = ...,
-        nearPlane: float = ...,
-        farPlane: float = ...,
-        width: float = ...,
-        height: float = ...,
+        nearPlane: float = 0,
+        farPlane: float = 0,
+        width: float = 0,
+        height: float = 0,
         projection: Literal[C.PERSPECTIVE, C.PARALLEL] = ...,
-        cameraPosition: Tuple[float, float, float] = ...,
-        cameraUpVector: Tuple[float, float, float] = ...,
-        cameraTarget: Tuple[float, float, float] = ...,
-        viewOffsetX: float = ...,
-        viewOffsetY: float = ...,
+        cameraPosition: tuple[float, float, float] = ...,
+        cameraUpVector: tuple[float, float, float] = ...,
+        cameraTarget: tuple[float, float, float] = ...,
+        viewOffsetX: float = 0,
+        viewOffsetY: float = 0,
         movieMode: Boolean = OFF,
     ) -> None:
         """This method modifies the View object.

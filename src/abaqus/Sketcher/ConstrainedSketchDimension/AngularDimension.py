@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -17,7 +19,7 @@ class AngularDimension(ConstrainedSketchDimension):
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry

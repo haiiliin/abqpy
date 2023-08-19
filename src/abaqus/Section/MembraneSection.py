@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -29,7 +29,7 @@ class MembraneSection(Section):
     """
 
     #: A RebarLayers object specifying reinforcement properties.
-    rebarLayers: Optional[RebarLayers] = None
+    rebarLayers: RebarLayers | None = None
 
     #: A String specifying the repository key.
     name: str
@@ -71,7 +71,7 @@ class MembraneSection(Section):
         material: str,
         thickness: float = 1,
         thicknessType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
-        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT, C.VALUE] = DEFAULT,
         poisson: float = 0,
         thicknessField: str = "",
     ):

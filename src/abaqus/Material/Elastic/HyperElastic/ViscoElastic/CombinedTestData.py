@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -36,7 +36,7 @@ class CombinedTestData:
     """
 
     @abaqus_method_doc
-    def __init__(self, table: tuple, volinf: Optional[float] = None, shrinf: Optional[float] = None):
+    def __init__(self, table: tuple, volinf: float | None = None, shrinf: float | None = None):
         r"""This method creates a CombinedTestData object.
 
         .. note::
