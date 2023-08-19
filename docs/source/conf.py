@@ -338,7 +338,11 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
                 obj = getattr(obj, part)
             except Exception:
                 return baseurl
-        source, lineno = inspect.getsourcelines(obj)
+
+        try:
+            source, lineno = inspect.getsourcelines(obj)
+        except TypeError:
+            return baseurl
         attr_sources: list[str] = re.findall(rf"\n(    {attr}: [\w\W]+?)\n\n", "\n".join(source))
         if len(attr_sources) > 0:
             attr_source = attr_sources[0].splitlines()
