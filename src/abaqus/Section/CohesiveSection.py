@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -51,7 +51,7 @@ class CohesiveSection(Section):
 
     #: None or a Float specifying the out-of-plane thickness for the section. The default value
     #: is None.
-    outOfPlaneThickness: Optional[float] = None
+    outOfPlaneThickness: float | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -61,7 +61,7 @@ class CohesiveSection(Section):
         material: str,
         initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: Optional[float] = None,
+        outOfPlaneThickness: float | None = None,
     ) -> None:
         """This method creates a CohesiveSection object.
 
@@ -110,7 +110,7 @@ class CohesiveSection(Section):
         self,
         initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: Optional[float] = None,
+        outOfPlaneThickness: float | None = None,
     ) -> None:
         """This method modifies the CohesiveSection object.
 

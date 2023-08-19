@@ -27,12 +27,12 @@ def upgradeScript(
     searchSubdirectories: Boolean = True,
     backup: Boolean = True,
     preview: Boolean = True,
-    diffExecutable: str = False,
+    diffExecutable: str = "",
     logFileName: str = "asiUpgrade",
     fromVersion: str = EARLIEST,
     toVersion: str = LATEST,
     scriptType: SymbolicConstant = BOTH,
-):
+) -> int:
     """This function can be used to upgrade a directory, a file, or a list of both directories and files. You
     can preview the changes before you choose to upgrade the file. A user interface to this function is
     available via the Plug-ins menu. For more information, see Upgrading a script. You can also use a simpler
@@ -89,4 +89,4 @@ def upgradeScript(
         The number of changes made or, if **preview** was used, the number of changes that would
         have been made.
     """
-    ...
+    return 0

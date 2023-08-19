@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -47,9 +49,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: Optional[float] = None,
-        f2: Optional[float] = None,
-        f3: Optional[float] = None,
+        f1: float | None = None,
+        f2: float | None = None,
+        f3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method creates a ConnectorForce object on a wire region. Alternatively, the load may also be
@@ -106,9 +108,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: Optional[float] = None,
-        f2: Optional[float] = None,
-        f3: Optional[float] = None,
+        f1: float | None = None,
+        f2: float | None = None,
+        f3: float | None = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing ConnectorForce object in the step where it is created.

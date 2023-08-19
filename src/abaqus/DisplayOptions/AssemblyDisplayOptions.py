@@ -1,4 +1,6 @@
-from typing import Dict, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -117,7 +119,7 @@ class AssemblyDisplayOptions:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
-    displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
+    displayGroupInstances: dict[str, DisplayGroupInstance] = {}
 
     #: An EngineeringFeatureDisplayOptions object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = EngineeringFeatureDisplayOptions()
