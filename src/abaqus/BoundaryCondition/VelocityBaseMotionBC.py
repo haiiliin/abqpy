@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -46,7 +46,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -54,7 +54,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -64,7 +64,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
         dof: Literal[C.U3, C.UR2, C.U1, C.UR3, C.UR1, C.U2],
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Optional[Correlation] = None,
+        correlation: Correlation | None = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -116,7 +116,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
         self,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Optional[Correlation] = None,
+        correlation: Correlation | None = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,

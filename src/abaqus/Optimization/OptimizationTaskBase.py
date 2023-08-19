@@ -1,4 +1,4 @@
-from typing import Dict
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -31,16 +31,16 @@ class OptimizationTaskBase:
     region: SymbolicConstant = MODEL
 
     #: A repository of DesignResponse objects.
-    designResponses: Dict[str, DesignResponse] = {}
+    designResponses: dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: dict[str, GeometricRestriction] = {}
 
     #: A repository of StopCondition objects.
-    stopConditions: Dict[str, StopCondition] = {}
+    stopConditions: dict[str, StopCondition] = {}

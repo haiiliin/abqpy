@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,7 +31,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -39,7 +39,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -47,12 +47,12 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        component1: Optional[Literal[C.SET, C.UNSET]] = None,
+        component1: Literal[C.SET, C.UNSET] | None = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ):
         """This method creates a MagneticVectorPotentialBC object.
 
@@ -104,12 +104,12 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     @abaqus_method_doc
     def setValues(
         self,
-        component1: Optional[Literal[C.SET, C.UNSET]] = None,
+        component1: Literal[C.SET, C.UNSET] | None = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
     ):
         """This method modifies the data for an existing MagneticVectorPotentialBC object in the step where it
         is created.
@@ -147,9 +147,9 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        component1: Optional[Literal[C.SET, C.UNCHANGED]] = None,
-        component2: Optional[Literal[C.SET, C.UNCHANGED]] = None,
-        component3: Optional[Literal[C.UNCHANGED]] = None,
+        component1: Literal[C.SET, C.UNCHANGED] | None = None,
+        component2: Literal[C.SET, C.UNCHANGED] | None = None,
+        component3: Literal[C.UNCHANGED] | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing MagneticVectorPotentialBC object in the

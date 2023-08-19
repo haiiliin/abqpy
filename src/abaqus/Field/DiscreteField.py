@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -50,7 +50,7 @@ class DiscreteField(Field):
     dataWidth: int = 1
 
     #: A DataTableArray object.
-    data: Optional[DataTableArray] = None
+    data: DataTableArray | None = None
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
@@ -72,7 +72,7 @@ class DiscreteField(Field):
         fieldType: Literal[C.PRESCRIBEDCONDITION_DOF, C.SCALAR, C.ORIENTATION],
         location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
-        data: Optional[DataTableArray] = None,
+        data: DataTableArray | None = None,
         description: str = "",
         orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
@@ -216,7 +216,7 @@ class DiscreteField(Field):
         self,
         location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
-        data: Optional[DataTableArray] = None,
+        data: DataTableArray | None = None,
         description: str = "",
         orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,

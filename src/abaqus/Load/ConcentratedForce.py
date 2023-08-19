@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -44,7 +46,7 @@ class ConcentratedForce(Load):
     #: of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
     #: coordinate system. When this member is queried, it returns an Int. The default value is
     #: None.
-    localCsys: Optional[int] = None
+    localCsys: int | None = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -62,12 +64,12 @@ class ConcentratedForce(Load):
         region: Region,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        cf1: Optional[float] = None,
-        cf2: Optional[float] = None,
-        cf3: Optional[float] = None,
+        cf1: float | None = None,
+        cf2: float | None = None,
+        cf3: float | None = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ):
         """This method creates a ConcentratedForce object.
 
@@ -125,12 +127,12 @@ class ConcentratedForce(Load):
         self,
         distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
-        cf1: Optional[float] = None,
-        cf2: Optional[float] = None,
-        cf3: Optional[float] = None,
+        cf1: float | None = None,
+        cf2: float | None = None,
+        cf3: float | None = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ):
         """This method modifies the data for an existing ConcentratedForce object in the step where it is
         created.

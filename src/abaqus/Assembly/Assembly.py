@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -32,11 +32,11 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly,
     def ConnectorOrientation(
         self,
         region: Set,
-        localCsys1: Optional[DatumCsys] = None,
+        localCsys1: DatumCsys | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = ON,
-        localCsys2: Optional[DatumCsys] = None,
+        localCsys2: DatumCsys | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ) -> ConnectorOrientation:
