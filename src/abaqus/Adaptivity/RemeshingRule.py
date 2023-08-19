@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -114,7 +114,7 @@ class RemeshingRule:
     #: None or an Int specifying an approximate limit on the number of elements that will be
     #: created during remeshing. Use None to indicate there is not upper limit. The default
     #: value is None.
-    elementCountLimit: Optional[int] = None
+    elementCountLimit: int | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -136,7 +136,7 @@ class RemeshingRule:
         specifyMaxSize: Boolean = ON,
         coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
-        elementCountLimit: Optional[int] = None,
+        elementCountLimit: int | None = None,
     ):
         """This method creates a RemeshingRule object.
 
@@ -254,7 +254,7 @@ class RemeshingRule:
         specifyMaxSize: Boolean = ON,
         coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
-        elementCountLimit: Optional[int] = None,
+        elementCountLimit: int | None = None,
     ):
         """This method modifies the RemeshingRule object.
 

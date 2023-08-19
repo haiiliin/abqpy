@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -95,7 +95,7 @@ class OrientationOptions(DGOrientationOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["OrientationOptions"] = None,
+        options: "OrientationOptions" | None = None,
         axis1Color: str = "",
         showAxis1: Boolean = ON,
         axis2Color: str = "",

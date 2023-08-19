@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -35,7 +35,7 @@ class AVIOptions(_OptionsBase):
 
     #: An Int specifying the quality of the compression as a percentage when the
     #: **compressionMethod** is set to CODEC.
-    compressionQuality: Optional[int] = None
+    compressionQuality: int | None = None
 
     #: A String specifying the system specific options defining the CODEC when the
     #: **compressionMethod** is set to CODEC.
@@ -50,16 +50,16 @@ class AVIOptions(_OptionsBase):
     #: **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*,
     #: **minHeight**) ≤ (width, height) ≤ (*maxWidth*, **maxHeight**). The default value is the
     #: screen size.
-    imageSize: Optional[int] = None
+    imageSize: int | None = None
 
     @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: Literal[C.CODEC, C.RLE8, C.RAW32, C.AVI, C.RAW8] = RLE8,
-        compressionQuality: Optional[int] = None,
+        compressionQuality: int | None = None,
         codecOptions: str = "",
         sizeDefinition: Literal[C.USER_DEFINED, C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN,
-        imageSize: Optional[int] = None,
+        imageSize: int | None = None,
     ):
         """This method modifies the AVIOptions object.
 

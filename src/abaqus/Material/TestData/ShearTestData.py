@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -34,7 +34,7 @@ class ShearTestData:
     """
 
     @abaqus_method_doc
-    def __init__(self, table: tuple, shrinf: Optional[float] = None):
+    def __init__(self, table: tuple, shrinf: float | None = None):
         r"""This method creates a ShearTestData object.
 
         .. note::

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -24,7 +24,7 @@ class SecondaryBaseBC(BoundaryCondition):
     name: str = ""
 
     #: A tuple of tuples of Ints specifying the constrained degrees-of-freedom.
-    dofs: Optional[int] = None
+    dofs: int | None = None
 
     #: A RegionArray object specifying the region to which the boundary condition is applied.
     #: Note that the usual **region** is ignored. The default value is MODEL.
@@ -32,7 +32,7 @@ class SecondaryBaseBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -40,7 +40,7 @@ class SecondaryBaseBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple):

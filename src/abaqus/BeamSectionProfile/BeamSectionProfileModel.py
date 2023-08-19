@@ -1,4 +1,4 @@
-from typing import Dict
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -47,10 +47,10 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        List[Profile]
+        list[Profile]
             A list of Profile objects.
         """
-        profiles: Dict[str, Profile] = {}
+        profiles: dict[str, Profile] = {}
         self.profiles.update(profiles)
         return profiles
 

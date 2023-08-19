@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 from typing import Optional
+
+=======
+from __future__ import annotations
+
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
 
@@ -28,20 +34,20 @@ class OdbDatumCsys:
 
     #: A SymbolicConstant specifying the type of coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: Optional[SymbolicConstant] = None
+    coordSysType: SymbolicConstant
 
     #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
     #: system.
-    origin: Optional[float] = None
+    origin: float | None = None
 
     #: A tuple of Floats specifying a point on the **X** axis.
-    xAxis: Optional[float] = None
+    xAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Y** axis.
-    yAxis: Optional[float] = None
+    yAxis: float | None = None
 
     #: A tuple of Floats specifying a point on the **Z** axis.
-    zAxis: Optional[float] = None
+    zAxis: float | None = None
 
     @abaqus_method_doc
     def DatumCsysByThreePoints(
@@ -218,3 +224,46 @@ class OdbDatumCsys:
             An OdbDatumCsys object.
         """
         ...
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def globalToLocal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
+        """This method transforms specified coordinates in the global coordinate system into this local
+        coordinate system.
+
+        .. versionadded:: 2022
+            The ``globalToLocal`` method was added.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the global coordinate system.
+
+        Returns
+        -------
+        tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this local coordinate system.
+        """
+        return (0.0, 0.0, 0.0)
+
+    @abaqus_method_doc
+    def localToGlobal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
+        """This method transforms specified coordinates in this local coordinate system into the global
+        coordinate system.
+
+        .. versionadded:: 2022
+            The ``localToGlobal`` method was added.
+
+        Parameters
+        ----------
+        coordinates
+            A tuple of three Floats representing the coordinates in the local coordinate system.
+
+        Returns
+        -------
+        tuple[float, float, float]
+            A tuple of three Floats representing the coordinates in this global coordinate system.
+        """
+        return (0.0, 0.0, 0.0)
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

@@ -1,4 +1,6 @@
-from typing import Optional, overload
+from __future__ import annotations
+
+from typing import overload
 
 from typing_extensions import Literal
 
@@ -22,12 +24,12 @@ class HistoryOutput:
     #: A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where
     #: **frameValue** is either time, frequency, or mode and **value** is the value of the
     #: specified variable at **frameValue**. (This value depends on the type of the variable.)
-    data: Optional[float] = None
+    data: float | None = None
 
     #: A tuple of pairs of Floats specifying the imaginary portion of a specified complex
     #: variable at each frame value (time, frequency, or mode). The pairs have the form
     #: (*frameValue*, **value**).
-    conjugateData: Optional[float] = None
+    conjugateData: float | None = None
 
     #: A String specifying the output variable name.
     name: str
@@ -41,7 +43,7 @@ class HistoryOutput:
     #: A sequence of SymbolicConstants specifying which invariants should be calculated for
     #: this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
     #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
-    validInvariants: Optional[SymbolicConstant] = None
+    validInvariants: SymbolicConstant
 
     @abaqus_method_doc
     def __init__(
@@ -49,9 +51,10 @@ class HistoryOutput:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Optional[
-            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
-        ] = None,
+        validInvariants: Literal[
+            C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS
+        ]
+        | None = None,
     ) -> None:
         """This method creates a HistoryOutput object.
 
