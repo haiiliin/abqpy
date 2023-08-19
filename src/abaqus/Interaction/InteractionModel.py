@@ -125,7 +125,7 @@ class InteractionModel(
         includeNonOverlapping: Boolean = OFF,
         meshedGeometrySearchTechnique: Literal[C.USE_MESH, C.USE_GEOMETRY] = USE_GEOMETRY,
         useShellThickness: Boolean = ON,
-        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE | None] = None,
+        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] | None = None,
     ):
         """This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp,
         and Tie objects.
@@ -947,7 +947,7 @@ class InteractionModel(
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment | None] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
         mainSecondaryAssignments: MainSecondaryAssignment | None = None,
         initializationAssignments: InitializationAssignment | None = None,
         stabilizationAssignments: StabilizationAssignment | None = None,
@@ -2073,7 +2073,7 @@ class InteractionModel(
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
         bondingSet: Region | None = None,
         handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT | None] = None,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

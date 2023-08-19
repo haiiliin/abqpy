@@ -361,7 +361,7 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Literal[C.COMPONENT, C.INVARIANT | None] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
         sectionPoint: dict | None = None,
     ):
         """This method specifies the field output variable for which to obtain results.
@@ -443,7 +443,7 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Literal[C.COMPONENT, C.INVARIANT | None] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
         sectionPoint: dict | None = None,
         statusMinimum: float | None = None,
         statusMaximum: float | None = None,
@@ -518,7 +518,7 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Literal[C.COMPONENT, C.INVARIANT | None] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
         sectionPoint: dict | None = None,
         tensorQuantity: SymbolicConstant | None = None,
         vectorQuantity: SymbolicConstant | None = None,

@@ -481,7 +481,7 @@ class PartFeature(BaseFeature):
         self,
         side1: Sequence[Edge],
         side2: tuple,
-        method: Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH | None] = None,
+        method: Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH] | None = None,
         path: Edge | None = None,
     ) -> BaseFeature:
         """This method creates a Feature object by creating new faces that blends two sets of faces.
@@ -656,7 +656,7 @@ class PartFeature(BaseFeature):
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM | None] = None,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] | None = None,
     ) -> BaseFeature:
         """This method creates an additional Feature object by cutting a hole using the given ConstrainedSketch
         object.
@@ -766,8 +766,8 @@ class PartFeature(BaseFeature):
     def CutLoft(
         self,
         loftsections: tuple,
-        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
-        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
         startTangent: float | None = None,
         startMagnitude: float | None = None,
         endTangent: float | None = None,
@@ -1703,8 +1703,8 @@ class PartFeature(BaseFeature):
     def ShellLoft(
         self,
         loftsections: tuple,
-        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
-        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
         startTangent: float | None = None,
         startMagnitude: float | None = None,
         endTangent: float | None = None,
@@ -2028,8 +2028,8 @@ class PartFeature(BaseFeature):
     def SolidLoft(
         self,
         loftsections: tuple,
-        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
-        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED | None] = None,
+        startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
+        endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
         startTangent: float | None = None,
         startMagnitude: float | None = None,
         endTangent: float | None = None,

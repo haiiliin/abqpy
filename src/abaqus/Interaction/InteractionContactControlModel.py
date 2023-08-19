@@ -93,7 +93,7 @@ class InteractionContactControlModel(ModelBase):
         penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         relativePenetrationTolerance: float | None = None,
         absolutePenetrationTolerance: float | None = None,
-        frictionOnset: Literal[C.IMMEDIATE, C.DELAYED | None] = None,
+        frictionOnset: Literal[C.IMMEDIATE, C.DELAYED] | None = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,

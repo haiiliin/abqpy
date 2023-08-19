@@ -238,7 +238,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        radius: float = None,
+        radius: float | None = None,
         filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
         filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
     ):
@@ -923,7 +923,7 @@ class OptimizationTask(OptimizationTaskBase):
         maxThickness: float = 0,
         minThickness: float = 0,
         sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
+        assignNodeGroupRegion: Boolean = OFF,
         nodeGroupRegion: str = "",
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.

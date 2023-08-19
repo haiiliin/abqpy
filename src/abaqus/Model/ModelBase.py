@@ -455,7 +455,7 @@ class ModelBase:
         universalGas: float | None = None,
         restartJob: str = "",
         restartStep: str = "",
-        restartIncrement: Literal[C.STEP_END | None] = None,
+        restartIncrement: Literal[C.STEP_END] | None = None,
         endRestartStep: Boolean = OFF,
         globalJob: str = "",
         shellToSolid: Boolean = OFF,

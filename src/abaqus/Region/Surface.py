@@ -51,7 +51,7 @@ class Surface(Region):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
-    sides: Sequence[SymbolicConstant | None] = None
+    sides: Sequence[SymbolicConstant] | None = None
 
     #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
     #: object on an output database.

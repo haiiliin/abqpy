@@ -237,7 +237,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
         bondingSet: Region | None = None,
         handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT | None] = None,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -414,7 +414,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
         bondingSet: Region | None = None,
         handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT | None] = None,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the step where it
         is created.

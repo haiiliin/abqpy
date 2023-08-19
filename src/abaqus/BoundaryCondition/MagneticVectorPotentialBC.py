@@ -47,7 +47,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        component1: Literal[C.SET, C.UNSET | None] = None,
+        component1: Literal[C.SET, C.UNSET] | None = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
@@ -104,7 +104,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     @abaqus_method_doc
     def setValues(
         self,
-        component1: Literal[C.SET, C.UNSET | None] = None,
+        component1: Literal[C.SET, C.UNSET] | None = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
@@ -147,9 +147,9 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        component1: Literal[C.SET, C.UNCHANGED | None] = None,
-        component2: Literal[C.SET, C.UNCHANGED | None] = None,
-        component3: Literal[C.UNCHANGED | None] = None,
+        component1: Literal[C.SET, C.UNCHANGED] | None = None,
+        component2: Literal[C.SET, C.UNCHANGED] | None = None,
+        component3: Literal[C.UNCHANGED] | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing MagneticVectorPotentialBC object in the

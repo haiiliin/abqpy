@@ -1185,7 +1185,7 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        component1: Literal[C.SET, C.UNSET | None] = None,
+        component1: Literal[C.SET, C.UNSET] | None = None,
         component2: Literal[C.SET, C.UNSET] = UNSET,
         component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,

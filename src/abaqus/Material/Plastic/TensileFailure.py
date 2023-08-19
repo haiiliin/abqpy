@@ -45,8 +45,8 @@ class TensileFailure:
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         elementDeletion: Boolean = True,
-        pressure: Literal[C.BRITTLE, C.DUCTILE | None] = None,
-        shear: Literal[C.BRITTLE, C.DUCTILE | None] = None,
+        pressure: Literal[C.BRITTLE, C.DUCTILE] | None = None,
+        shear: Literal[C.BRITTLE, C.DUCTILE] | None = None,
     ):
         """This method creates a tensileFailure object.
 

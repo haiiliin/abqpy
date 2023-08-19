@@ -31,8 +31,8 @@ class RegionPairs:
         self,
         stepName: str,
         useAllstar: Boolean = OFF,
-        addPairs: Literal[C.SELF, C.GLOBAL | None] = None,
-        removePairs: Literal[C.SELF, C.GLOBAL | None] = None,
+        addPairs: Literal[C.SELF, C.GLOBAL] | None = None,
+        removePairs: Literal[C.SELF, C.GLOBAL] | None = None,
     ):
         """This method allows addition and removal of domain pairs in a given step.
 

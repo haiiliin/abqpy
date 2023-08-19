@@ -66,7 +66,7 @@ class AcisFile:
     def openCatia(
         self,
         fileName: str,
-        topology: Literal[C.WIRE, C.SOLID, C.SHELL | None] = None,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] | None = None,
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):

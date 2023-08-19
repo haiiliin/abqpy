@@ -980,11 +980,11 @@ class MeshAssembly(AssemblyBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI | None] = None,
-        technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN | None] = None,
-        algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT | None] = None,
+        elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI] | None = None,
+        technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN] | None = None,
+        algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT] | None = None,
         minTransition: Boolean = ON,
-        sizeGrowth: Literal[C.MODERATE, C.MAXIMUM | None] = None,
+        sizeGrowth: Literal[C.MODERATE, C.MAXIMUM] | None = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1092,7 +1092,7 @@ class MeshAssembly(AssemblyBase):
             C.SMALL_ANGLE,
         ],
         threshold: float | None = None,
-        elemShape: Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI | None] = None,
+        elemShape: Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI] | None = None,
         regions: tuple = (),
     ):
         """This method tests the quality of part instance meshes and returns poor-quality elements.

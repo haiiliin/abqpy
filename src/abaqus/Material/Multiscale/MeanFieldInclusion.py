@@ -50,7 +50,7 @@ class MeanFieldInclusion:
         orientationTensorType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: Literal[C.SPHERE, C.PENNY, C.PROLATE, C.OBLATE, C.CYLINDER, C.ELLIPTIC_CYLINDER] = SPHERE,
-        direction: Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED | None] = None,
+        direction: Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED] | None = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

@@ -281,7 +281,7 @@ class GraphicsOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        graphicsDriver: Literal[C.OPEN_GL | None] = None,
+        graphicsDriver: Literal[C.OPEN_GL] | None = None,
         doubleBuffering: Boolean = ON,
         displayLists: Boolean = ON,
         highlightMethodHint: Sequence[Literal[C.SOFTWARE_OVERLAY, C.HARDWARE_OVERLAY, C.XOR]] = (

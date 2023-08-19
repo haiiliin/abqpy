@@ -110,7 +110,7 @@ class GeometryShellSection(ShellSection):
     nodalThicknessField: str = ""
 
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
-    transverseShear: TransverseShearShell | None = None
+    transverseShear: TransverseShearShell
 
     @abaqus_method_doc
     def __init__(

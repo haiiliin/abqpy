@@ -35,7 +35,7 @@ class BeadFilter(GeometricRestriction):
     region: Region
 
     #: A Float specifying the filter radius. The default value is double the average edge length of the model.
-    radius: float = None
+    radius: float
 
     #: The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute
     #: radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is
@@ -52,7 +52,7 @@ class BeadFilter(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        radius: float = None,
+        radius: float | None = None,
         filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
         filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
     ):
@@ -91,7 +91,7 @@ class BeadFilter(GeometricRestriction):
     def setValues(
         self,
         region: Region,
-        radius: float = None,
+        radius: float | None = None,
         filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
         filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
     ):

@@ -119,7 +119,7 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: SurfaceFeatureAssignment | None = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment | None] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
         mainSecondaryAssignments: MainSecondaryAssignment | None = None,
         initializationAssignments: InitializationAssignment | None = None,
         stabilizationAssignments: StabilizationAssignment | None = None,
@@ -208,7 +208,7 @@ class ContactStd(Interaction):
         ContactStd
             A ContactStd object.
         """
-        super().__init__()
+        ...
 
     @overload
     @abaqus_method_doc
@@ -219,7 +219,7 @@ class ContactStd(Interaction):
         globalSmoothing: Boolean = ON,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment | None] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] | None = None,
         useAllstar: Boolean = OFF,
         includedPairs: SymbolicConstant | None = None,
         excludedPairs: SymbolicConstant | None = None,
@@ -361,7 +361,7 @@ class ContactStd(Interaction):
         ContactStd
             A ContactStd object.
         """
-        super().__init__()
+        ...
 
     def __init__(self, *args, **kwargs):
         ...

@@ -690,9 +690,9 @@ class ViewportBase(_OptionsBase):
     def setValues(
         self,
         displayedObject: Displayable | None = None,
-        displayMode: Literal[C.SINGLE, C.OVERLAY | None] = None,
+        displayMode: Literal[C.SINGLE, C.OVERLAY] | None = None,
         visibleLayers: Sequence[str] = (),
-        viewManipLayers: Literal[C.ALL, C.CURRENT | None] = None,
+        viewManipLayers: Literal[C.ALL, C.CURRENT] | None = None,
         currentLayer: str = "",
         layerOffset: float | None = None,
     ):

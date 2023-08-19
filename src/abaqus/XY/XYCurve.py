@@ -91,7 +91,7 @@ class XYCurve:
     @abaqus_method_doc
     def setValues(
         self,
-        displayTypes: Literal[C.SYMBOL, C.LINE | None] = None,
+        displayTypes: Literal[C.SYMBOL, C.LINE] | None = None,
         legendLabel: str = "",
         symbolFrequency: int = 1,
         useDefault: Boolean = ON,

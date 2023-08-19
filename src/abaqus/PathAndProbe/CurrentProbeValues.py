@@ -19,4 +19,4 @@ class CurrentProbeValues:
 
     #: A tuple of Floats specifying the values obtained while probing. These values are updated
     #: constantly as the user moves the mouse over the object being probed.
-    values: Sequence[float | None] = None
+    values: Sequence[float] | None = None

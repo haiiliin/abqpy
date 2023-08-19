@@ -1962,7 +1962,7 @@ class StepModel(ModelBase):
         minInc: float | None = None,
         maxInc: float | None = None,
         maxNumInc: int = 100,
-        end: Literal[C.SS, C.PERIOD | None] = PERIOD,
+        end: Literal[C.SS, C.PERIOD] | None = PERIOD,
         utol: float | None = None,
         cetol: float | None = 0,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,

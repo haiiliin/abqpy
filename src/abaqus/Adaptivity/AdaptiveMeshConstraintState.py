@@ -50,7 +50,7 @@ class AdaptiveMeshConstraintState:
     @abaqus_method_doc
     def __init__(
         self,
-        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED | None] = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         status: Literal[
             C.NOT_YET_ACTIVE,
             C.PROPAGATED_FROM_BASE_STATE,

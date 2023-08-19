@@ -103,7 +103,7 @@ class AnalyticalField(Field):
         numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE] = REAL,
         complexAngle: float = 0,
         sectionPoint: str = "",
-        refinementType: Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT | None] = None,
+        refinementType: Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT] | None = None,
         refinementLabel: str = "",
         displayOutputPosition: Literal[
             C.ELEMENT_NODAL,

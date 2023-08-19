@@ -25,10 +25,10 @@ class TextReprOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        style: Literal[C.RECURSIVE | None] = None,
-        maxRecursionDepth: Literal[C.UNLIMITED | None] = None,
+        style: Literal[C.RECURSIVE] | None = None,
+        maxRecursionDepth: Literal[C.UNLIMITED] | None = None,
         maxRecursionString: str = "",
-        maxElementsInSequence: Literal[C.UNLIMITED | None] = None,
+        maxElementsInSequence: Literal[C.UNLIMITED] | None = None,
     ):
         """This method modifies the TextReprOptions object.
 
