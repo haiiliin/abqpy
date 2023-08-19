@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-from typing import Optional
-
-=======
-from __future__ import annotations
-
-from typing import Union
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -233,56 +223,6 @@ class OptimizationTask(OptimizationTaskBase):
         return optimizationConstraint
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def BeadFilter(
-        self,
-        name: str,
-        region: Region,
-        radius: float | None = None,
-        filterRadiusBy: Literal[C.ABSOLUTE_VALUE, C.RELATIVE] = ABSOLUTE_VALUE,
-        filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION,
-    ):
-        """This method creates a BeadFilter object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].BeadFilter
-
-        .. versionadded:: 2023
-
-        The ``BeadFilter`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-        radius
-            A Float specifying the filter radius. The default value is double the average edge length of the model.
-        filterRadiusBy
-            The SymbolicConstant defines whether the filter radius is in absolute or relative units. For an absolute
-            radius, the value is ABSOLUTE_VALUE. For a relative radius, the value is RELATIVE. The default value is
-            ABSOLUTE_VALUE.
-        filterCheckRegion
-            The SymbolicConstant FILTER_REGION or a Region object specifying the filter check region. If the value is
-            FILTER_REGION, the value of the region is used as both the filter region and the filter check region.
-            The default value is FILTER_REGION.
-
-        Returns
-        -------
-        BeadFilter
-            A BeadFilter object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = BeadFilter(
-            name, region, radius, filterRadiusBy, filterCheckRegion
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     def BeadFixedRegion(
         self,
         name: str,
@@ -2009,72 +1949,6 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-=======
-    def TopologyRibDesign(
-        self,
-        name: str,
-        ribDirection: VertexArray,
-        ribThickness: float,
-        ribDistance: float,
-        region: Region,
-        csys: DatumCsys | None = None,
-        ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION,
-    ):
-        """This method creates a TopologyRibDesign object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyRibDesign
-
-        .. versionadded:: 2022
-
-            The ``TopologyRibDesign`` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        ribDirection
-            A VertexArray object of length 2 specifying the out-of-plane growth direction of the ribs. Instead of
-            through a Vertex, each point can be specified through a tuple of coordinates.
-        ribThickness
-            A Float specifying the average thickness of the ribs.
-        ribDistance
-            A Float specifying the average distance between the rib centers. The distance must be larger than twice
-            the average element edge length.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-            When used with a TopologyTask, there is no default value. When used with a ShapeTask,
-            the default value is MODEL.
-        csys
-            None or a DatumCsys object specifying the position of the symmetry point defined as the
-            origin of a local coordinate system. If **csys** = None, the global coordinate system is
-            used. When this member is queried, it returns an Int. The default value is None.
-        ribDesignCheckRegion
-            The SymbolicConstant RIBDESIGN_REGION or a Region object specifying the overhang check region. If the value
-            is OVERHANG_REGION, the value of region is used as both the overhang control region and the overhang check
-            region. The default value is RIBDESIGN_REGION.
-
-        Returns
-        -------
-        TopologyRibDesign
-            A TopologyRibDesign object.
-        """
-        self.geometricRestrictions[name] = geometricRestriction = TopologyRibDesign(
-            name,
-            ribDirection,
-            ribThickness,
-            ribDistance,
-            region,
-            csys,
-            ribDesignCheckRegion,
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     def TopologyRotationalSymmetry(
         self,
         name: str,
