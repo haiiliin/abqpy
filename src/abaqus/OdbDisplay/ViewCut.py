@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -33,25 +35,25 @@ class ViewCut:
     """
 
     #: A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
-    angle: Optional[float] = None
+    angle: float | None = None
 
     #: A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set
     #: to PLANE. Possible values are TRANSLATE and ROTATE. The default value is TRANSLATE.
     motion: SymbolicConstant = TRANSLATE
 
     #: A Float specifying the position of the cut defined with a **shape** set to PLANE.
-    position: Optional[float] = None
+    position: float | None = None
 
     #: A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or
     #: SPHERE.
-    radius: Optional[float] = None
+    radius: float | None = None
 
     #: A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set
     #: to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_2.
     rotationAxis: SymbolicConstant = AXIS_2
 
     #: A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE.
-    value: Optional[float] = None
+    value: float | None = None
 
     #: A Boolean specifying whether to display the model above the cut. The default value is
     #: OFF.
@@ -202,12 +204,12 @@ class ViewCut:
     @abaqus_method_doc
     def setValues(
         self,
-        angle: Optional[float] = None,
+        angle: float | None = None,
         motion: Literal[C.ROTATE, C.PLANE, C.TRANSLATE] = TRANSLATE,
-        position: Optional[float] = None,
-        radius: Optional[float] = None,
+        position: float | None = None,
+        radius: float | None = None,
         rotationAxis: Literal[C.AXIS_1, C.PLANE, C.AXIS_2, C.AXIS_3] = AXIS_2,
-        value: Optional[float] = None,
+        value: float | None = None,
         showModelAboveCut: Boolean = OFF,
         showModelOnCut: Boolean = ON,
         showModelBelowCut: Boolean = ON,

@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -62,7 +64,7 @@ class SymbolOptions(DGSymbolOptions):
 
     #: A Float specifying the user-specified maximum vector value. The default value is
     #: **autoVectorMaxValue**.
-    vectorMaxValue: Optional[float] = None
+    vectorMaxValue: float | None = None
 
     #: A Boolean specifying whether the minimum vector value is to be computed automatically.
     #: The default value is ON.
@@ -70,7 +72,7 @@ class SymbolOptions(DGSymbolOptions):
 
     #: A Float specifying the user-specified minimum vector value. The default value is
     #: **autoVectorMinValue**.
-    vectorMinValue: Optional[float] = None
+    vectorMinValue: float | None = None
 
     #: A SymbolicConstant specifying the tensor quantity to display. Possible values are
     #: ALL_PRINCIPAL_COMPONENTS, PRINCIPAL_COMPONENT, ALL_DIRECT_COMPONENTS, and
@@ -83,7 +85,7 @@ class SymbolOptions(DGSymbolOptions):
 
     #: A Float specifying the user-specified maximum tensor value. The default value is
     #: **autoTensorMaxValue**.
-    tensorMaxValue: Optional[float] = None
+    tensorMaxValue: float | None = None
 
     #: A Boolean specifying whether the minimum tensor value is to be computed automatically.
     #: The default value is ON.
@@ -91,7 +93,7 @@ class SymbolOptions(DGSymbolOptions):
 
     #: A Float specifying the user-specified minimum tensor value. The default value is
     #: **autoTensorMinValue**.
-    tensorMinValue: Optional[float] = None
+    tensorMinValue: float | None = None
 
     #: The SymbolicConstant NOT_SET or a Float specifying the vector maximum value when
     #: **vectorMaxValueAutoCompute** = ON. This value is read-only. The default value is NOT_SET.
@@ -215,7 +217,7 @@ class SymbolOptions(DGSymbolOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["SymbolOptions"] = None,
+        options: "SymbolOptions" | None = None,
         vectorQuantity: Literal[C.RESULTANT, C.VECTOR_COMPONENT] = RESULTANT,
         vectorLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         vectorArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
@@ -229,9 +231,9 @@ class SymbolOptions(DGSymbolOptions):
         tensorColorSpectrum: str = "",
         tensorIntervalNumber: int = 12,
         vectorMaxValueAutoCompute: Boolean = ON,
-        vectorMaxValue: Optional[float] = None,
+        vectorMaxValue: float | None = None,
         vectorMinValueAutoCompute: Boolean = ON,
-        vectorMinValue: Optional[float] = None,
+        vectorMinValue: float | None = None,
         tensorQuantity: Literal[
             C.PRINCIPAL_COMPONENT, C.DIRECT_COMPONENT, C.ALL_DIRECT_COMPONENTS, C.ALL_PRINCIPAL_COMPONENTS
         ] = ALL_PRINCIPAL_COMPONENTS,
@@ -243,9 +245,9 @@ class SymbolOptions(DGSymbolOptions):
         tensorLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         tensorArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
         tensorMaxValueAutoCompute: Boolean = ON,
-        tensorMaxValue: Optional[float] = None,
+        tensorMaxValue: float | None = None,
         tensorMinValueAutoCompute: Boolean = ON,
-        tensorMinValue: Optional[float] = None,
+        tensorMinValue: float | None = None,
     ):
         """This method modifies the SymbolOptions object.
 

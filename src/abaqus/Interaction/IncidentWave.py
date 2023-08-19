@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -73,15 +73,15 @@ class IncidentWave(Interaction):
 
     #: None or a Float specifying the initial depth of the UNDEX bubble. The default value is
     #: None.This argument is valid only when **definition** = UNDEX.
-    initialDepth: Optional[float] = None
+    initialDepth: float | None = None
 
     #: A Float specifying the reference magnitude.This argument is not valid when
     #: **definition** = CONWEP.
-    referenceMagnitude: Optional[float] = None
+    referenceMagnitude: float | None = None
 
     #: A Float specifying the time of detonation, given in total time.This argument is valid
     #: only when **definition** = CONWEP.
-    detonationTime: Optional[float] = None
+    detonationTime: float | None = None
 
     #: A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
     #: valid only when **definition** = CONWEP.
@@ -100,9 +100,9 @@ class IncidentWave(Interaction):
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: Optional[float] = None,
-        referenceMagnitude: Optional[float] = None,
-        detonationTime: Optional[float] = None,
+        initialDepth: float | None = None,
+        referenceMagnitude: float | None = None,
+        detonationTime: float | None = None,
         magnitudeFactor: float = 1,
     ):
         """This method creates an IncidentWave object.
@@ -176,9 +176,9 @@ class IncidentWave(Interaction):
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: Optional[float] = None,
-        referenceMagnitude: Optional[float] = None,
-        detonationTime: Optional[float] = None,
+        initialDepth: float | None = None,
+        referenceMagnitude: float | None = None,
+        detonationTime: float | None = None,
         magnitudeFactor: float = 1,
     ):
         """This method modifies the IncidentWave object.

@@ -22,7 +22,7 @@ class MeshFaceArray(List[MeshFace]):
     """
 
     @abaqus_method_doc
-    def __init__(self, faces: List[MeshFace]):
+    def __init__(self, faces: list[MeshFace]):
         """This method creates a MeshFaceArray object.
 
         .. note::
@@ -62,7 +62,7 @@ class MeshFaceArray(List[MeshFace]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshFaceArray([])
 
     @abaqus_method_doc
     def getMask(self):

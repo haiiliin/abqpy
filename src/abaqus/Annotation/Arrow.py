@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -310,7 +312,7 @@ class Arrow(Annotation, _OptionsBase):
         self.lineThickness = lineThickness
 
     @abaqus_method_doc
-    def translateStartPoint(self, x: Optional[float] = None, y: Optional[float] = None):
+    def translateStartPoint(self, x: float | None = None, y: float | None = None):
         """This method translates the start point of the Arrow object on the viewport plane.
 
         Parameters
@@ -324,7 +326,7 @@ class Arrow(Annotation, _OptionsBase):
         ...
 
     @abaqus_method_doc
-    def translateEndPoint(self, x: Optional[float] = None, y: Optional[float] = None):
+    def translateEndPoint(self, x: float | None = None, y: float | None = None):
         """This method translates the end point of the Arrow object on the viewport plane.
 
         Parameters

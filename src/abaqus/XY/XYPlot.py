@@ -1,19 +1,16 @@
 from __future__ import annotations
 
-from typing import Optional, overload
+from typing import overload
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import (
-    FILLED_CIRCLE,
-    ON,
-    SOLID,
-    Boolean,
-    SymbolicConstant,
-)
+from ..UtilityAndView.abaqusConstants import FILLED_CIRCLE, NONE, ON, SOLID, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from .QuantityType import QuantityType
+from .QuantityType import QuantityType as QuantityTypeType
 from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData
@@ -24,7 +21,7 @@ from .XYPlotBase import XYPlotBase
 class XYPlot(XYPlotBase):
     @staticmethod
     @abaqus_method_doc
-    def AreaStyle(color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID) -> AreaStyle:
+    def AreaStyle(color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID) -> AreaStyle:
         """This method creates an AreaStyle.
 
         .. note::
@@ -62,7 +59,7 @@ class XYPlot(XYPlotBase):
     def LineStyle(
         color: str = "",
         show: Boolean = ON,
-        style: SymbolicConstant = SOLID,
+        style: Literal[C.SOLID] = SOLID,
         thickness: float = 0,
     ) -> LineStyle:
         """This method creates a LineStyle.
@@ -103,7 +100,83 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
+    def QuantityType(
+        type: Literal[
+            C.NONE,
+            C.ACCELERATION,
+            C.ACOUSTIC_INTENSITY,
+            C.ANGLE,
+            C.ANGULAR_MOMENTUM,
+            C.ARC_LENGTH,
+            C.AREA,
+            C.AREA_VELOCITY_SQUARED,
+            C.BIMOMENT,
+            C.CURVATURE,
+            C.CORIOLIS_LOAD,
+            C.DAMAGE,
+            C.DAMAGE_CRITERION,
+            C.DENSITY,
+            C.DENSITY_ROTATIONAL_ACCELERATION,
+            C.DISPLACEMENT,
+            C.ECURRENT_AREA_TIME,
+            C.ELECTRIC_CHARGE,
+            C.ELECTRIC_CURRENT,
+            C.ELECTRIC_CURRENT_AREA,
+            C.ELECTRIC_POTENTIAL,
+            C.ENERGY,
+            C.ENERGY_DENSITY,
+            C.ENERGY_RELEASE_RATE,
+            C.EPOTENTIAL_GRADIENT,
+            C.FREQUENCY,
+            C.FORCE,
+            C.FORCE_VOLUME,
+            C.HEAT_FLUX,
+            C.HEAT_FLUX_AREA,
+            C.HEAT_FLUX_RATE,
+            C.HEAT_FLUX_VOLUME,
+            C.LENGTH,
+            C.LINEAR_PRESSURE,
+            C.LUMIN,
+            C.MASS,
+            C.MASS_FLOW_AREA,
+            C.MASS_FLOW_AREA_RATE,
+            C.MASS_FLOW_RATE,
+            C.MODE_NUMBER,
+            C.MOMENT,
+            C.NUMBER,
+            C.PATH,
+            C.PHASE,
+            C.POSITION,
+            C.PRESSURE,
+            C.PRESSURE_GRADIENT,
+            C.RATE,
+            C.ROTARY_INERTIA,
+            C.ROTATIONAL_ACCELERATION,
+            C.ROTATIONAL_VELOCITY,
+            C.STATUS,
+            C.STRAIN,
+            C.STRAIN_RATE,
+            C.STRESS,
+            C.STRESS_INTENS_FACTOR,
+            C.SUBSTANCE,
+            C.TEMPERATURE,
+            C.THICKNESS,
+            C.TIME,
+            C.TIME_INCREMENT,
+            C.TIME_HEAT_FLUX,
+            C.TIME_HEAT_FLUX_AREA,
+            C.TIME_VOLUME,
+            C.TIME_VOLUME_FLUX,
+            C.TWIST,
+            C.VELOCITY,
+            C.VELOCITY_SQUARED,
+            C.VOLUME,
+            C.VOLUME_FLUX,
+            C.VOLUME_FLUX_AREA,
+            C.VOLUME_FRACTION,
+        ] = NONE,
+        label: str = "",
+    ) -> QuantityTypeType:
         """This method creates a QuantityType object.
 
         .. note::
@@ -197,7 +270,7 @@ class XYPlot(XYPlotBase):
         QuantityType
             A QuantityType object.
         """
-        quantityType = QuantityType(type, label)
+        quantityType = QuantityTypeType(type, label)
         return quantityType
 
     @staticmethod
@@ -205,7 +278,19 @@ class XYPlot(XYPlotBase):
     def SymbolStyle(
         color: str = "",
         show: Boolean = ON,
-        marker: SymbolicConstant = FILLED_CIRCLE,
+        marker: Literal[
+            C.CROSS,
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.POINT,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_TRI,
+            C.HOLLOW_SQUARE,
+            C.FILLED_TRI,
+            C.HOLLOW_DIAMOND,
+            C.FILLED_CIRCLE,
+            C.XMARKER,
+        ] = FILLED_CIRCLE,
         size: float = 2,
     ) -> SymbolStyle:
         """This method creates a SymbolStyle object.
@@ -307,8 +392,8 @@ class XYPlot(XYPlotBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None,
-        axis2QuantityType: Optional[QuantityType] = None,
+        axis1QuantityType: QuantityTypeType | None = None,
+        axis2QuantityType: QuantityTypeType | None = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 

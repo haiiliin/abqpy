@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -24,7 +24,7 @@ class AdaptiveMeshConstraintState:
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState
     #: object. Possible values are:
@@ -41,7 +41,7 @@ class AdaptiveMeshConstraintState:
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: adaptive mesh constraint has no amplitude reference.
@@ -50,23 +50,22 @@ class AdaptiveMeshConstraintState:
     @abaqus_method_doc
     def __init__(
         self,
-        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-        ] = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ):
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
