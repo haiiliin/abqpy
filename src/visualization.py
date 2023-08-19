@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abaqus import session
 from abaqus.Odb.OdbCommands import *
 from abaqus.Property.PlyStackPlot import OdbPlyStackPlot

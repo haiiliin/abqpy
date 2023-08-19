@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -23,10 +23,10 @@ class RebarOrientation:
     #: A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
     #: system about which an additional rotation is applied. Possible values are AXIS_1,
     #: AXIS_2, and AXIS_3.
-    axis: Optional[SymbolicConstant] = None
+    axis: SymbolicConstant
 
     #: A Float specifying the angle of the additional rotation.
-    angle: Optional[float] = None
+    angle: float | None = None
 
     #: An OdbSet object specifying a region for which the rebar orientation is defined.
     region: OdbSet = OdbSet("set", ())

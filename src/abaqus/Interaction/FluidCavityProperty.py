@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -45,12 +45,12 @@ class FluidCavityProperty(ContactProperty):
 
     #: None or a Float specifying the reference fluid density. This argument is applicable only
     #: when **definition** = HYDRAULIC, and is required in that case. The default value is None.
-    fluidDensity: Optional[float] = None
+    fluidDensity: float | None = None
 
     #: None or a Float specifying the molecular weight of the ideal gas species. This argument
     #: is applicable only when **definition** = PNEUMATIC, and is required in that case. The
     #: default value is None.
-    molecularWeight: Optional[float] = None
+    molecularWeight: float | None = None
 
     #: A Boolean specifying whether thermal expansion coefficients will be defined. This
     #: argument is applicable only when **definition** = HYDRAULIC. The default value is OFF.
@@ -154,8 +154,8 @@ class FluidCavityProperty(ContactProperty):
         self,
         name: str,
         definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,
-        fluidDensity: Optional[float] = None,
-        molecularWeight: Optional[float] = None,
+        fluidDensity: float | None = None,
+        molecularWeight: float | None = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,
@@ -287,8 +287,8 @@ class FluidCavityProperty(ContactProperty):
     def setValues(
         self,
         definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,
-        fluidDensity: Optional[float] = None,
-        molecularWeight: Optional[float] = None,
+        fluidDensity: float | None = None,
+        molecularWeight: float | None = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,

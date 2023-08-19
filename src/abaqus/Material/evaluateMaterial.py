@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -26,18 +28,18 @@ def evaluateMaterial(
     simulationName: str,
     dataSource: Sequence[Literal[C.TEST_DATA, C.COEFFICIENTS]],
     strainEnergyPotentials: Sequence[Literal[C.POLY_N1]],
-    marlowData: Optional[SymbolicConstant] = None,
-    marlowDataType: Optional[SymbolicConstant] = None,
-    testDataTypes: Optional[SymbolicConstant] = None,
-    uniaxialStrainRange: Optional[float] = None,
-    biaxialStrainRange: Optional[float] = None,
-    planarStrainRange: Optional[float] = None,
-    volumeRatioRange: Optional[float] = None,
-    simpleShearStrainRange: Optional[float] = None,
-    viscoDataSource: Optional[SymbolicConstant] = None,
-    viscoTestDataTypes: Optional[SymbolicConstant] = None,
-    relaxationTime: Optional[float] = None,
-    creepTime: Optional[float] = None,
+    marlowData: SymbolicConstant | None = None,
+    marlowDataType: SymbolicConstant | None = None,
+    testDataTypes: SymbolicConstant | None = None,
+    uniaxialStrainRange: float | None = None,
+    biaxialStrainRange: float | None = None,
+    planarStrainRange: float | None = None,
+    volumeRatioRange: float | None = None,
+    simpleShearStrainRange: float | None = None,
+    viscoDataSource: SymbolicConstant | None = None,
+    viscoTestDataTypes: SymbolicConstant | None = None,
+    relaxationTime: float | None = None,
+    creepTime: float | None = None,
 ):
     """This method evaluates the behavior of a hyperelastic material under standard test conditions.
 
