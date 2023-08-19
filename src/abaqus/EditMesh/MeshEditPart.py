@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, overload
+from __future__ import annotations
+
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -53,7 +55,7 @@ class MeshEditPart(PartBase):
         growEdges: Boolean = OFF,
         elements: str = "",
         refEdge: str = "",
-        thicknessDir: Optional[float] = None,
+        thicknessDir: float | None = None,
         moveLayers: Boolean = False,
     ):
         """This method is used to collapse short element edges and delete collapsed elements, or grow short
@@ -158,14 +160,14 @@ class MeshEditPart(PartBase):
     def editNode(
         self,
         nodes: Sequence[MeshNode],
-        coordinate1: Optional[float] = None,
-        coordinate2: Optional[float] = None,
-        coordinate3: Optional[float] = None,
+        coordinate1: float | None = None,
+        coordinate2: float | None = None,
+        coordinate3: float | None = None,
         coordinates: Sequence[float] = (),
-        offset1: Optional[float] = None,
-        offset2: Optional[float] = None,
-        offset3: Optional[float] = None,
-        localCsys: Optional[DatumCsys] = None,
+        offset1: float | None = None,
+        offset2: float | None = None,
+        offset3: float | None = None,
+        localCsys: DatumCsys | None = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on an orphan mesh part or on an Abaqus native
@@ -231,7 +233,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def generateMesh(self, elemShape: Optional[SymbolicConstant] = None):
+    def generateMesh(self, elemShape: SymbolicConstant | None = None):
         """This method generates a new mesh on an orphan mesh part based on the original mesh.
 
         Parameters
@@ -254,7 +256,7 @@ class MeshEditPart(PartBase):
         numLayers: int,
         offsetDirection: str = OUTWARD,
         initialOffset: float = 0.0,
-        shareNodes: str = False,
+        shareNodes: Boolean = False,
         deleteBaseElements: Boolean = False,
         constantThicknessCorners: Boolean = False,
         extendElementSets: Boolean = False,
@@ -320,7 +322,7 @@ class MeshEditPart(PartBase):
     def mergeNodes(
         self,
         nodes: Sequence[Node],
-        tolerance: Optional[float] = None,
+        tolerance: float | None = None,
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
     ):
@@ -400,9 +402,9 @@ class MeshEditPart(PartBase):
     def renumberElement(
         self,
         elements: tuple = (),
-        startLabel: Optional[int] = None,
-        increment: Optional[int] = None,
-        offset: Optional[int] = None,
+        startLabel: int | None = None,
+        increment: int | None = None,
+        offset: int | None = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh elements.
@@ -440,9 +442,9 @@ class MeshEditPart(PartBase):
     def renumberNode(
         self,
         nodes: tuple = (),
-        startLabel: Optional[int] = None,
-        increment: Optional[int] = None,
-        offset: Optional[int] = None,
+        startLabel: int | None = None,
+        increment: int | None = None,
+        offset: int | None = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh nodes.
@@ -520,8 +522,8 @@ class MeshEditPart(PartBase):
         self,
         elements: str = "",
         divisionNumber: int = 2,
-        face: Optional[MeshFace] = None,
-        edge: Optional[MeshEdge] = None,
+        face: MeshFace | None = None,
+        edge: MeshEdge | None = None,
     ):
         """Subdivide a selection of elements on an orphan mesh part in one or more directions.
 

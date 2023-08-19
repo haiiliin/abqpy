@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -77,7 +79,7 @@ class DiscreteFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system of fastener couplings.
     #: If **localCsys** = None, couplings are defined in the global coordinate system. When this
     #: member is queried, it returns an Int. The default value is None.
-    localCsys: Optional[int] = None
+    localCsys: int | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -90,7 +92,7 @@ class DiscreteFastener(Fastener):
         ur3: Boolean = ON,
         coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ):
         """This method creates a DiscreteFastener object. Although the constructor is available both for parts
         and for the assembly, DiscreteFastener objects are currently supported only under the assembly.
@@ -150,7 +152,7 @@ class DiscreteFastener(Fastener):
         ur3: Boolean = ON,
         coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ):
         """This method modifies the DiscreteFastener object.
 

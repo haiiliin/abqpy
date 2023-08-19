@@ -49,7 +49,7 @@ class AbaqusBoolean(int):
 
     @abaqus_method_doc
     def getId(self) -> int:
-        ...
+        return id(self)
 
     def getText(self) -> str:
         if bool(self):
@@ -59,32 +59,3 @@ class AbaqusBoolean(int):
 
     def isTrue(self) -> bool:
         return bool(self)
-
-    def __copy__(self) -> AbaqusBoolean:
-        ...
-
-    def __getstate__(self) -> bool:
-        ...
-
-    def __hash__(self) -> int:
-        ...
-
-    # @staticmethod  # known case of __new__
-    # def __new__(cls, *args, **kargs):  # reliably restored by inspect
-    #     # no doc
-    #     pass
-
-    def __reduce__(self) -> tuple:  # known return case of __reduce__
-        ...
-
-    def __repr__(self) -> str:
-        return self.getText()
-
-    def __setstate__(self, *args) -> None:
-        ...
-
-    def __str__(self) -> str:
-        return self.getText()
-
-    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """List of weak references to the object (if defined)"""
