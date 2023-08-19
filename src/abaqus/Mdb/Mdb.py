@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -27,11 +27,11 @@ class Mdb(AcisMdb, JobMdb):
         self,
         name: str,
         description: str = "",
-        stefanBoltzmann: Optional[float] = None,
-        absoluteZero: Optional[float] = None,
+        stefanBoltzmann: float | None = None,
+        absoluteZero: float | None = None,
         waveFormulation: Literal[C.SCATTERED, C.NOT_SET, C.TOTAL] = NOT_SET,
         modelType: Literal[C.STANDARD_EXPLICIT, C.ELECTROMAGNETIC] = STANDARD_EXPLICIT,
-        universalGas: Optional[float] = None,
+        universalGas: float | None = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
         copyInteractions: Boolean = ON,

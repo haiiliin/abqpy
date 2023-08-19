@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -56,7 +56,7 @@ class Coexecution:
     #: SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and
     #: CHECK_COMPLETED.If the **message** member of all the jobs are empty, **status** is set to
     #: NONE.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the queue to which to submit the co-execution. The
     #: default value is an empty string. Note: You can use the **queue** argument when creating a
@@ -73,14 +73,14 @@ class Coexecution:
     atTime: str = ""
 
     #: A repository of Job objects specifying the jobs that comprise this co-execution.
-    jobs: Dict[str, Job] = {}
+    jobs: dict[str, Job] = {}
 
     #: A tuple of Strings specifying the names of the slave models for the co-execution.
     slaveModels: tuple = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the slave
     #: models for the co-execution. The default value is an empty sequence.
-    slaveAnalysisProducts: Optional[SymbolicConstant] = None
+    slaveAnalysisProducts: SymbolicConstant | None = None
 
     #: A String specifying the name of the master model for the co-execution.
     masterModel: str = ""

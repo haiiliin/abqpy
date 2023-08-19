@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -15,7 +15,7 @@ class CompositeDampingComponent:
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.
-    start: Optional[int] = None
+    start: int | None = None
 
     #: An Int specifying the mode number of the highest mode of a range.
-    end: Optional[int] = None
+    end: int | None = None

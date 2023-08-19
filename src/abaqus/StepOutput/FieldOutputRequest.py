@@ -1,4 +1,6 @@
-from typing import Optional, Sequence, Union
+from __future__ import annotations
+
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -12,7 +14,6 @@ from ..UtilityAndView.abaqusConstants import (
     EXCLUDE,
     INTEGRATION_POINTS,
     MODEL,
-    NODES,
     OFF,
     ON,
     PRESELECT,
@@ -57,7 +58,7 @@ class FieldOutputRequest:
 
     #: None or a tuple of Strings specifying the interaction names. The default value is
     #: None.The sequence can contain only one String.
-    interactions: Optional[tuple] = None
+    interactions: tuple | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -73,7 +74,7 @@ class FieldOutputRequest:
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
         sectionPoints: Union[Sequence[int], Literal[C.DEFAULT]] = DEFAULT,
-        interactions: Optional[str] = None,
+        interactions: str | None = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Union[Literal[C.ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
@@ -238,7 +239,7 @@ class FieldOutputRequest:
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
         sectionPoints: Union[int, Literal[C.DEFAULT]] = DEFAULT,
-        interactions: Optional[str] = None,
+        interactions: str | None = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Union[Literal[C.ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
@@ -251,7 +252,7 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, NODES] = INTEGRATION_POINTS,
+        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES] = INTEGRATION_POINTS,
     ) -> None:
         """This method modifies the data for an existing FieldOutputRequest object in the step where it is
         created.
@@ -342,7 +343,7 @@ class FieldOutputRequest:
         modes: Union[Literal[C.ALL], int] = ALL,
         timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-        timePoints: Optional[str] = None,
+        timePoints: str | None = None,
         timeMarks: Boolean = OFF,
     ) -> None:
         """This method modifies the propagating data for an existing FieldOutputRequest object in the specified

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abaqus.Job.Job import Job
 from abaqus.Odb.AnalyticSurfaceSegment import AnalyticSurfaceSegment
 from abaqus.Odb.HistoryPoint import HistoryPoint

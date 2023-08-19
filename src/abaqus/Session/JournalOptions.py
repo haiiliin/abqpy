@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,9 +31,9 @@ class JournalOptions:
         self,
         replayGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
         recoverGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
-        defaultFormat: Optional[NumberFormat] = None,
-        fieldReportFormat: Optional[NumberFormat] = None,
-        geometryFormat: Optional[NumberFormat] = None,
+        defaultFormat: NumberFormat | None = None,
+        fieldReportFormat: NumberFormat | None = None,
+        geometryFormat: NumberFormat | None = None,
     ):
         """This method modifies the JournalOptions object.
 

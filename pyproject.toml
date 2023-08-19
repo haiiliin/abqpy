@@ -42,6 +42,7 @@ dev = [
     "crowdin-api-client",
     "docformatter",
     "flake8",
+    "mypy",
     "pofmt",
     "polib",
     "pre-commit",
@@ -109,3 +110,6 @@ wrap-descriptions = 108
 blank = false
 in-place = true
 black = true
+
+[tool.mypy]
+ignore_missing_imports = true

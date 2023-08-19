@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -25,7 +25,7 @@ class AnalyticSurface:
 
     #: A SymbolicConstant specifying the type of AnalyticSurface object. Possible values are
     #: SEGMENTS, CYLINDER, and REVOLUTION.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A Float specifying radius of curvature to smooth discontinuities between adjoining
     #: segments. The default value is 0.0.
@@ -37,4 +37,4 @@ class AnalyticSurface:
 
     #: A tuple of tuples of Floats specifying the global coordinates of points representing the
     #: local coordinate system, if used.
-    localCoordData: Optional[float] = None
+    localCoordData: float | None = None

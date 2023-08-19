@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -44,7 +44,7 @@ class ModelChange(Interaction):
 
     #: A Region object specifying the elements to be removed or reactivated. This argument is
     #: valid only when **isRestart** = False.
-    region: Optional[Region] = None
+    region: Region | None = None
 
     #: A Boolean specifying whether elements are being removed or reactivated. This argument is
     #: valid only when **isRestart** = False. The default value is OFF.
@@ -62,7 +62,7 @@ class ModelChange(Interaction):
         createStepName: str,
         isRestart: Boolean = OFF,
         regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ):
@@ -110,7 +110,7 @@ class ModelChange(Interaction):
         self,
         isRestart: Boolean = OFF,
         regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
-        region: Optional[Region] = None,
+        region: Region | None = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ):
