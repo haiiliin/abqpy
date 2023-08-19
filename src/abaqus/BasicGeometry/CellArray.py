@@ -2,18 +2,22 @@ from __future__ import annotations
 
 <<<<<<< HEAD
 from typing import Dict, List, Tuple, Union, overload
+
 =======
 from typing import List, Sequence, Union, overload
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
 from .Cell import Cell
+
 <<<<<<< HEAD
 =======
 from .Face import Face
 from .FaceArray import FaceArray
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 

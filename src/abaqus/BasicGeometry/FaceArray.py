@@ -5,10 +5,12 @@ from typing import List, Sequence, Union, overload
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
+
 <<<<<<< HEAD
 =======
 from .Edge import Edge
 from .EdgeArray import EdgeArray
+
 >>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 from .Face import Face
 
