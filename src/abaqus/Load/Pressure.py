@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -136,9 +136,9 @@ class Pressure(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Optional[float] = None,
-        hZero: Optional[float] = None,
-        hReference: Optional[float] = None,
+        magnitude: float | None = None,
+        hZero: float | None = None,
+        hReference: float | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Pressure object in the specified step.

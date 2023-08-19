@@ -1,4 +1,6 @@
-from typing import Dict, Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -84,11 +86,11 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: Optional[float] = None
+    initialInc: float | None = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: Optional[float] = None
+    minInc: float | None = None
 
     #: The SymbolicConstant DEFAULT or a Float specifying the maximum time increment allowed.
     maxInc: Union[SymbolicConstant, float, None] = None
@@ -100,11 +102,11 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: None or a Float specifying the half-increment residual tolerance to be used with the
     #: automatic time incrementation scheme. The default value is None.
-    haftol: Optional[float] = None
+    haftol: float | None = None
 
     #: None or a Float specifying the half-increment residual tolerance scale factor to be used
     #: with the automatic time incrementation scheme. The default value is None.
-    halfIncScaleFactor: Optional[float] = None
+    halfIncScaleFactor: float | None = None
 
     #: A Boolean specifying whether to suppress calculation of the half-increment residual. The
     #: default value is OFF.
@@ -158,7 +160,7 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -194,31 +196,31 @@ class ImplicitDynamicsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -227,19 +229,19 @@ class ImplicitDynamicsStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -256,12 +258,12 @@ class ImplicitDynamicsStep(AnalysisStep):
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
         maxInc: Union[Literal[C.DEFAULT], float] = DEFAULT,
         hafTolMethod: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.VALUE, C.SCALE] = VALUE,
-        haftol: Optional[float] = None,
-        halfIncScaleFactor: Optional[float] = None,
+        haftol: float | None = None,
+        halfIncScaleFactor: float | None = None,
         nohaf: Boolean = OFF,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
@@ -391,12 +393,12 @@ class ImplicitDynamicsStep(AnalysisStep):
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
         maxInc: Union[Literal[C.DEFAULT], float] = DEFAULT,
         hafTolMethod: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.VALUE, C.SCALE] = VALUE,
-        haftol: Optional[float] = None,
-        halfIncScaleFactor: Optional[float] = None,
+        haftol: float | None = None,
+        halfIncScaleFactor: float | None = None,
         nohaf: Boolean = OFF,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,

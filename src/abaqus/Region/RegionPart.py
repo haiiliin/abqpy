@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Sequence, Tuple, Union, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -15,19 +15,14 @@ from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
-from ..UtilityAndView.abaqusConstants import (
-    DIFFERENCE,
-    INTERSECTION,
-    OVERWRITE,
-    UNION,
-    Boolean,
-)
+from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Region import Region
 from .RegionPartBase import RegionPartBase
-from .Set import Set
-from .Skin import Skin
+from .Set import Set as SetType
+from .Skin import Skin as SkinType
 from .Stringer import Stringer
-from .Surface import Surface
+from .Surface import Surface as SurfaceType
 
 
 @abaqus_class_doc
@@ -66,7 +61,7 @@ class RegionPart(RegionPartBase):
         end2Elements: Union[Face, Sequence[Face], None] = None,
         circumElements: Union[Face, Sequence[Face], None] = None,
         **kwargs,
-    ) -> Surface:
+    ) -> SurfaceType:
         """This method creates a surface from a sequence of objects in a model database. The surface will apply
         to the sides specified by the arguments.For example::
 
@@ -171,7 +166,8 @@ class RegionPart(RegionPartBase):
         surf: Surface
             A Surface object
         """
-        surface = Surface(
+        surface = SurfaceType(
+            name,
             side1Faces,
             side2Faces,
             side12Faces,
@@ -192,7 +188,6 @@ class RegionPart(RegionPartBase):
             end1Elements,
             end2Elements,
             circumElements,
-            name,
         )
         self.surfaces[name] = surface
         self.allSurfaces[name] = surface
@@ -203,21 +198,21 @@ class RegionPart(RegionPartBase):
     def Set(
         self,
         name: str,
-        nodes: Optional[Sequence[MeshNode]] = None,
-        elements: Optional[Sequence[MeshElement]] = None,
-        region: Optional[Region] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
-        edges: Optional[Sequence[Edge]] = None,
-        faces: Optional[Union[Face, Sequence[Face]]] = None,
-        cells: Optional[Union[Cell, Sequence[Cell]]] = None,
-        xVertices: Optional[Sequence[Vertex]] = None,
-        xEdges: Optional[Sequence[Edge]] = None,
-        xFaces: Optional[Sequence[Face]] = None,
+        nodes: Sequence[MeshNode] | None = None,
+        elements: Sequence[MeshElement] | None = None,
+        region: Region | None = None,
+        vertices: Sequence[Vertex] | None = None,
+        edges: Sequence[Edge] | None = None,
+        faces: Union[Face, Sequence[Face]] | None = None,
+        cells: Union[Cell, Sequence[Cell]] | None = None,
+        xVertices: Sequence[Vertex] | None = None,
+        xEdges: Sequence[Edge] | None = None,
+        xFaces: Sequence[Face] | None = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-    ) -> Set:
+        skinFaces: tuple[tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
+    ) -> SetType:
         """This method creates a set from a sequence of objects in a model database.
 
         .. note::
@@ -275,7 +270,7 @@ class RegionPart(RegionPartBase):
 
     @overload
     @abaqus_method_doc
-    def Set(self, name: str, objectToCopy: Set) -> Set:
+    def Set(self, name: str, objectToCopy: SetType) -> SetType:
         """This method copies a set from an existing set.
 
         .. note::
@@ -298,92 +293,9 @@ class RegionPart(RegionPartBase):
         """
         ...
 
-    @overload
     @abaqus_method_doc
-    def Set(
-        self,
-        name: str,
-        nodes: Optional[Sequence[MeshNode]] = None,
-        elements: Optional[Sequence[MeshElement]] = None,
-        region: Optional[Region] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
-        edges: Optional[Sequence[Edge]] = None,
-        faces: Optional[Sequence[Face]] = None,
-        cells: Optional[Sequence[Cell]] = None,
-        xVertices: Optional[Sequence[Vertex]] = None,
-        xEdges: Optional[Sequence[Edge]] = None,
-        xFaces: Optional[Sequence[Face]] = None,
-        referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-    ) -> Set:
-        """This method creates a set from a sequence of objects in a model database.
-
-        At least one sequence argument must be provided - elements, nodes, vertices, edges,
-        faces, cells, or referencePoints. The arguments xVertices, xEdges, and xFaces are
-        used to exclude lower-dimension entities and to provide finer control on the
-        content of the set. For example, the following statement defines a region enclosing
-        a square face but without two of its edges::
-
-            set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
-
-        Parameters
-        ----------
-        name
-            A String specifying the repository key.
-        nodes
-            A sequence of MeshNode objects. The default value is None.
-        elements
-            A sequence of MeshElement objects. The default value is None.
-        region
-            A Region object specifying other objects to be included in the set. The default value is
-            None.
-        vertices
-            A sequence of ConstrainedSketchVertex objects. The default value is None.
-        edges
-            A sequence of Edge objects. The default value is None.
-        faces
-            A sequence of Face objects. The default value is None.
-        cells
-            A sequence of Cell objects. The default value is None.
-        xVertices
-            A sequence of ConstrainedSketchVertex objects that excludes specific vertices from the set. The default
-            value is None.
-        xEdges
-            A sequence of Edge objects that excludes specific edges from the set. The default value
-            is None.
-        xFaces
-            A sequence of Face objects that excludes specific faces from the set. The default value
-            is None.
-        referencePoints
-            A sequence of ReferencePoint objects. The default value is an empty sequence.
-        skinFaces
-            A tuple of tuples specifying a skin name and the sequence of faces associated with this
-            skin. Valid only for geometric regions on 3D and 2D parts.
-        skinEdges
-            A tuple of tuples specifying a skin name and the sequence of edges associated with this
-            skin. Valid only for geometric regions on Axisymmetric parts.
-        stringerEdges
-            A tuple of tuples specifying a stringer name and the sequence of edges associated with
-            this stringer. Valid only for geometric regions on 3D and 2D parts.
-
-        Returns
-        -------
-        set: Set
-            A Set object
-        """
-        ...
-
-    @abaqus_method_doc
-    def Set(self, name, *args, **kwargs) -> Set:
-        self.sets[name] = aSet = Set(name, *args, **kwargs)
+    def Set(self, name, *args, **kwargs) -> SetType:
+        self.sets[name] = aSet = SetType(name, *args, **kwargs)
         return aSet
 
     @abaqus_method_doc
@@ -394,7 +306,7 @@ class RegionPart(RegionPartBase):
         edges: Sequence[Edge] = (),
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
-    ) -> Skin:
+    ) -> SkinType:
         """This method creates a skin from a sequence of objects in a model database. At least one of the
         optional arguments needs to be specified.
 
@@ -425,7 +337,7 @@ class RegionPart(RegionPartBase):
         skin: Skin
             A Skin object
         """
-        self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
+        self.skins[name] = skin = SkinType(name, faces, edges, elementFaces, elementEdges)
         return skin
 
     @abaqus_method_doc
@@ -436,7 +348,7 @@ class RegionPart(RegionPartBase):
         edges: Sequence[Edge] = (),
         elementFaces: Sequence[MeshFace] = (),
         elementEdges: Sequence[MeshEdge] = (),
-    ) -> Skin:
+    ) -> SkinType:
         """This method modifies underlying entities of the selected skin. At least one of the optional arguments
         needs to be specified.
 
@@ -467,7 +379,7 @@ class RegionPart(RegionPartBase):
         skin: Skin
             A Skin object
         """
-        self.skins[name] = skin = Skin(name, faces, edges, elementFaces, elementEdges)
+        self.skins[name] = skin = SkinType(name, faces, edges, elementFaces, elementEdges)
         return skin
 
     @abaqus_method_doc
@@ -508,8 +420,8 @@ class RegionPart(RegionPartBase):
     # But it accessed only by ``Part`` and ``rootAssembly`` objetcs.
 
     def SetByBoolean(
-        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
-    ) -> Set:
+        self, name: str, sets: Sequence[SetType], operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION
+    ) -> SetType:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
         .. note::
@@ -535,10 +447,10 @@ class RegionPart(RegionPartBase):
         Set
             A Set object.
         """
-        ...
+        return SetType(name)
 
     @abaqus_method_doc
-    def SetFromColor(self, name: str, color: tuple) -> Set:
+    def SetFromColor(self, name: str, color: tuple) -> SetType:
         """This method creates a set containing faces of the part marked with a specified color attribute.
         Third-party applications can assign color attributes to faces, and the color attribute can be imported
         into Abaqus from an ACIS file. You can use this method to create sets only on parts; however, you can
@@ -563,10 +475,10 @@ class RegionPart(RegionPartBase):
         Set
             A Set object.
         """
-        ...
+        return SetType(name)
 
     @abaqus_method_doc
-    def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
+    def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> SetType:
         """This method creates a set from a sequence of element labels in a model database.
 
         .. note::
@@ -594,10 +506,10 @@ class RegionPart(RegionPartBase):
         Set
             A Set object.
         """
-        ...
+        return SetType(name)
 
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> SetType:
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note::
@@ -625,10 +537,10 @@ class RegionPart(RegionPartBase):
         Set
             A Set object.
         """
-        ...
+        return SetType(name)
 
     @abaqus_method_doc
-    def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
+    def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> SetType:
         """This method creates sets based on mapping sets from element centroid locations in an Odb.
 
         .. note::
@@ -652,4 +564,4 @@ class RegionPart(RegionPartBase):
         Set
             A Set object or a tuple of Set objects.
         """
-        ...
+        return SetType("")

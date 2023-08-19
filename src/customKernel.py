@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abaqus.CustomKernel.CommandRegister import CommandRegister
 from abaqus.CustomKernel.RegisteredDictionary import RegisteredDictionary
 from abaqus.CustomKernel.RegisteredList import RegisteredList

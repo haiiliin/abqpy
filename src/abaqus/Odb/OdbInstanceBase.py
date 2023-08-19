@@ -1,4 +1,6 @@
-from typing import Dict, Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -46,11 +48,11 @@ class OdbInstanceBase:
 
     #: A SymbolicConstant specifying the type of the Part object. Only a value of
     #: DEFORMABLE_BODY is currently supported.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A SymbolicConstant specifying the dimensionality of the Part object. Possible values are
     #: THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
-    embeddedSpace: Optional[SymbolicConstant] = None
+    embeddedSpace: SymbolicConstant
 
     #: A SymbolicConstant specifying the state of the Instance as modified by the analysis.
     #: This member is only present if the Instance is part of the RootAssemblyState tree.
@@ -66,13 +68,13 @@ class OdbInstanceBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: Dict[str, OdbSet] = {}
+    nodeSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: Dict[str, OdbSet] = {}
+    elementSets: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: Dict[str, OdbSet] = {}
+    surfaces: dict[str, OdbSet] = {}
 
     #: A SectionAssignmentArray object.
     sectionAssignments: SectionAssignmentArray = []
@@ -266,7 +268,7 @@ class OdbInstanceBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
+    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
         Parameters
@@ -294,7 +296,7 @@ class OdbInstanceBase:
         self,
         name: str,
         profile: Sequence[AnalyticSurfaceSegment],
-        filletRadius: str = 0,
+        filletRadius: float = 0,
         localCoordData: tuple = (),
     ):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the instance.
@@ -326,7 +328,7 @@ class OdbInstanceBase:
         self,
         name: str,
         profile: Sequence[AnalyticSurfaceSegment],
-        filletRadius: str = 0,
+        filletRadius: float = 0,
         localCoordData: tuple = (),
     ):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the instance.

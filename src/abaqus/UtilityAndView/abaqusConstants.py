@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Union
 
 from auto_all import end_all, start_all
