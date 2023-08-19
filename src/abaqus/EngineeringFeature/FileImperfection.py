@@ -97,7 +97,8 @@ class FileImperfection(Imperfection):
         FileImperfection
             A FileImperfection object.
         """
-        super().__init__(name)
+        super().__init__()
+        self.name = name
 
     def setValues(
         self,

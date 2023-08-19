@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Sequence, Union
 
+from abaqus.BasicGeometry.Edge import Edge
+from abaqus.BasicGeometry.Face import Face
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .MeshElement import MeshElement
@@ -80,7 +82,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElement
             A MeshElement object.
         """
-        ...
+        return MeshElement()
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshElementArray:
@@ -98,7 +100,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -109,7 +111,7 @@ class MeshElementArray(List[MeshElement]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
@@ -143,7 +145,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> MeshElementArray:
@@ -164,7 +166,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshElementArray:
@@ -182,7 +184,7 @@ class MeshElementArray(List[MeshElement]):
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
@@ -199,7 +201,7 @@ class MeshElementArray(List[MeshElement]):
             - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of
               the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
     def sequenceFromLabels(self, labels: Sequence[int]) -> MeshElementArray:
@@ -220,7 +222,7 @@ class MeshElementArray(List[MeshElement]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getExteriorEdges(self) -> EdgeArray:
@@ -235,7 +237,7 @@ class MeshElementArray(List[MeshElement]):
         EdgeArray
             An EdgeArray object specifying the exterior edges.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
@@ -250,4 +252,4 @@ class MeshElementArray(List[MeshElement]):
         FaceArray
             A FaceArray object representing the faces on the exterior of the cells.
         """
-        ...
+        return FaceArray([Face()])

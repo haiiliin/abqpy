@@ -132,7 +132,7 @@ class ConstrainedSketch(
         sketch: ConstrainedSketch
             A ConstrainedSketch object
         """
-        ...
+        return ConstrainedSketch(name, 200.0)
 
     @abaqus_method_doc
     def print(self) -> None:
@@ -513,7 +513,7 @@ class ConstrainedSketch(
         success: int
             An Int specifying the success or failure of the method. A value of 0 indicates failure
         """
-        ...
+        return 0
 
     @abaqus_method_doc
     def removeGapsAndOverlaps(self, tolerance: str, geomList: Sequence[ConstrainedSketchGeometry]) -> None:

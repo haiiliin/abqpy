@@ -45,7 +45,7 @@ class ConstrainedSketchBase:
 
     #: A ConstrainedSketchGeometryArray object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
-    geometry: ConstrainedSketchGeometryArray = []
+    geometry: ConstrainedSketchGeometryArray = ConstrainedSketchGeometryArray()
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
@@ -55,7 +55,7 @@ class ConstrainedSketchBase:
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()
 
     #: A ConstrainedSketchVertexArray object.
-    vertices: ConstrainedSketchVertexArray = []
+    vertices: ConstrainedSketchVertexArray = ConstrainedSketchVertexArray()
 
     #: A ConstrainedSketchImageOptions object.
     imageOptions: ConstrainedSketchImageOptions = ConstrainedSketchImageOptions()

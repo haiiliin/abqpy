@@ -4,6 +4,8 @@ from typing import TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Mesh.MeshElement import MeshElement
+from ..Mesh.MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
 if TYPE_CHECKING:  # to avoid circular imports
@@ -37,7 +39,7 @@ class Vertex:
     """
 
     #: An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
-    index: int | None = None
+    index: int
 
     #: A Boolean specifying whether the vertex belongs to the reference representation of the
     #: Part or Instance.
@@ -47,11 +49,11 @@ class Vertex:
     pointOn: tuple[float, float, float]
 
     #: A tuple of Floats specifying the name of the feature that created this vertex.
-    featureName: float | None = None
+    featureName: tuple[float, ...]
 
     #: A tuple of Floats specifying the name of the part instance for this vertex (if
     #: applicable).
-    instanceName: float | None = None
+    instanceName: tuple[float, ...]
 
     @abaqus_method_doc
     def getEdges(self) -> tuple[int]:
@@ -62,7 +64,7 @@ class Vertex:
         tuple[int]
             A tuple of integers.
         """
-        ...
+        return (0,)
 
     @abaqus_method_doc
     def getNodes(self) -> MeshNodeArray:
@@ -73,7 +75,7 @@ class Vertex:
         MeshNodeArray
             A MeshNodeArray object which is a sequence of MeshNode objects.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def getElements(self) -> MeshElementArray:
@@ -84,4 +86,4 @@ class Vertex:
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])

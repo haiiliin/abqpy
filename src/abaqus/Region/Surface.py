@@ -249,7 +249,7 @@ class Surface(Region):
         Surface
             A Surface object.
         """
-        ...
+        return Surface(name)
 
     @abaqus_method_doc
     def SurfaceFromElsets(self, name: str, elementSetSeq: tuple) -> Surface:
@@ -278,4 +278,4 @@ class Surface(Region):
         Surface
             A Surface object.
         """
-        ...
+        return Surface(name)

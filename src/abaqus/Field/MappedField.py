@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing_extensions import Literal
 
+from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
@@ -104,16 +105,16 @@ class MappedField(AnalyticalField):
     xyzPointData: tuple = ()
 
     #: An OdbMeshRegionData object specifying the external source data from ODB mesh region.
-    odbMeshRegionData: OdbMeshRegionData | None = None
+    odbMeshRegionData: OdbMeshRegionData = OdbMeshRegionData("", "")
 
     #: A tuple of Floats specifying the scaling factors for the global 1, 2 and 3 directions.
     #: The default value is (1.0, 1.0, 1.0).
-    coordinateScalingFactors: float | None = None
+    coordinateScalingFactors: tuple[float, float, float] = (1.0, 1.0, 1.0)
 
     #: None or a DatumCsys object specifying the local coordinate system of the field. If
     #: **localCsys** = None, the field is defined in the global coordinate system. The default
     #: value is None.
-    localCsys: str | None = None
+    localCsys: DatumCsys | None = None
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""

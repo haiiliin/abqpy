@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -130,7 +130,9 @@ class EdgeArray(List[Edge]):
         return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(
+        self, coordinates: tuple, searchTolerance: str = ""
+    ) -> dict[int, tuple[Edge, tuple[float, float, float]]]:
         """This method returns an object or objects in the EdgeArray closest to the given set of points, where
         the given points need not lie on the edges in the EdgeArray.
 
@@ -160,20 +162,20 @@ class EdgeArray(List[Edge]):
             specifies the **X**, **Y**, and **Z**  location of the closest point on the Edge to the given
             point. See program listing above.
         """
+        return {0: (Edge(), (0.0, 0.0, 0.0))}
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Edge:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Edge:
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Edge]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Edge]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, list[Edge]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, list[Edge]]:  # type: ignore
         """This method returns the object or objects in the EdgeArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -193,7 +195,7 @@ class EdgeArray(List[Edge]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return Edge() if isinstance(mask, str) else [Edge()]
 
     @abaqus_method_doc
     def getMask(self):
@@ -204,7 +206,7 @@ class EdgeArray(List[Edge]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
@@ -238,7 +240,7 @@ class EdgeArray(List[Edge]):
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getByBoundingCylinder(
@@ -265,14 +267,14 @@ class EdgeArray(List[Edge]):
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getByBoundingSphere(
         self,
         center: tuple[float, float, float],
         radius: float,
-    ) -> dict[str, tuple[float, float, float]]:
+    ) -> EdgeArray:
         """This method returns an array of edge objects that lie within the specified bounding sphere.
 
         Parameters
@@ -287,7 +289,7 @@ class EdgeArray(List[Edge]):
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
@@ -304,4 +306,4 @@ class EdgeArray(List[Edge]):
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}

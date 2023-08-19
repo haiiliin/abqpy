@@ -84,7 +84,7 @@ class MeshElement:
             C.HEX8,
             C.HEX20,
         ],
-        label: int = ...,
+        label: int = 0,
     ) -> MeshElement:
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
@@ -108,7 +108,7 @@ class MeshElement:
         element: MeshElement
             A MeshElement object.
         """
-        ...
+        return MeshElement()
 
     @abaqus_method_doc
     def getNodes(self) -> tuple[MeshNode]:
@@ -119,7 +119,15 @@ class MeshElement:
         tuple[MeshNode]
             A tuple of MeshNode objects.
         """
-        ...
+        return (
+            MeshNode(
+                (
+                    0.0,
+                    0.0,
+                    0.0,
+                )
+            ),
+        )
 
     @abaqus_method_doc
     def getElemEdges(self) -> tuple[MeshEdge]:
@@ -130,7 +138,7 @@ class MeshElement:
         tuple[MeshEdge]
             A tuple of MeshEdge objects.
         """
-        ...
+        return (MeshEdge(),)
 
     @abaqus_method_doc
     def getElemFaces(self) -> tuple[MeshFace]:
@@ -141,7 +149,7 @@ class MeshElement:
         tuple[MeshFace]
             A tuple of MeshFace objects.
         """
-        ...
+        return (MeshFace(),)
 
     @abaqus_method_doc
     def getAdjacentElements(self) -> MeshElementArray:
@@ -152,7 +160,7 @@ class MeshElement:
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getElementsByFeatureEdge(self, angle: float) -> MeshElementArray:
@@ -169,7 +177,7 @@ class MeshElement:
         MeshElementArray
             A MeshElementArray object, which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def setValues(self, label: int | None = None) -> None:

@@ -1659,7 +1659,17 @@ class DamageInitiation:
         ------
         RangeError
         """
-        ...
+        return DamageEvolution(
+            type=type,
+            table=table,
+            degradation=degradation,
+            temperatureDependency=temperatureDependency,
+            dependencies=dependencies,
+            mixedModeBehavior=mixedModeBehavior,
+            modeMixRatio=modeMixRatio,
+            power=power,
+            softening=softening,
+        )
 
     @abaqus_method_doc
     def DamageStabilizationCohesive(self, cohesiveCoeff: float | None = None) -> DamageStabilizationCohesive:
@@ -1711,4 +1721,4 @@ class DamageInitiation:
         ------
         RangeError
         """
-        ...
+        return DamageStabilizationCohesive(cohesiveCoeff=cohesiveCoeff)

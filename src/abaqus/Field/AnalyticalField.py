@@ -41,7 +41,7 @@ class AnalyticalField(Field):
     #: None or a DatumCsys object specifying the local coordinate system of the field. If
     #: **localCsys** = None, the field is defined in the global coordinate system. The default
     #: value is None.
-    localCsys: DatumCsys = DatumCsys()
+    localCsys: DatumCsys | None = DatumCsys()
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""

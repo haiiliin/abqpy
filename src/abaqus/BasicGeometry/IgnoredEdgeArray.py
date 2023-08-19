@@ -87,16 +87,16 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> IgnoredEdge:
+    def getSequenceFromMask(self, mask: str) -> IgnoredEdge:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredEdge]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredEdge]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, list[IgnoredEdge]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, list[IgnoredEdge]]:  # type: ignore
         """This method returns the object or objects in the IgnoredEdgeArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
         number of objects are involved, this method is highly efficient.
@@ -111,7 +111,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         IgnoredEdge
             An IgnoredEdge object or a sequence of IgnoredEdge objects.
         """
-        ...
+        return IgnoredEdge() if isinstance(mask, str) else [IgnoredEdge()]
 
     @abaqus_method_doc
     def getMask(self):
@@ -122,10 +122,12 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict:
+    def getClosest(
+        self, coordinates: tuple, searchTolerance: str = ""
+    ) -> dict[str, tuple[IgnoredEdge, tuple[float, float, float]]]:
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set of points,
         where the given points need not lie on the edges in the IgnoredEdgeArray.
 
@@ -160,4 +162,4 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {"0": (IgnoredEdge(), (0.0, 0.0, 0.0))}

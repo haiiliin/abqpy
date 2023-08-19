@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-from typing import Dict, List, Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
+from .Edge import Edge
 from .EdgeArray import EdgeArray
 from .Face import Face
 
@@ -143,20 +144,20 @@ class FaceArray(List[Face]):
         EdgeArray
             An EdgeArray object specifying the exterior edges.
         """
+        return EdgeArray([Edge()])
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Face:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Face:
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Face]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Face]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, list[Face]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, list[Face]]:  # type: ignore
         """This method returns the object or objects in the FaceArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -171,7 +172,7 @@ class FaceArray(List[Face]):
         Face
             A Face object or a sequence of Face objects.
         """
-        ...
+        return Face() if isinstance(mask, str) else [Face()]
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -182,7 +183,7 @@ class FaceArray(List[Face]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
@@ -216,7 +217,7 @@ class FaceArray(List[Face]):
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
         """
-        ...
+        return FaceArray([Face()])
 
     @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> FaceArray:
@@ -238,7 +239,7 @@ class FaceArray(List[Face]):
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
         """
-        ...
+        return FaceArray([Face()])
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str) -> FaceArray:
@@ -256,7 +257,7 @@ class FaceArray(List[Face]):
         FaceArray
             A FaceArray object, which is a sequence of Face objects.
         """
-        ...
+        return FaceArray([Face()])
 
     @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, Sequence[float]]:
@@ -273,10 +274,12 @@ class FaceArray(List[Face]):
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z**  -boundary
               values of the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(
+        self, coordinates: tuple, searchTolerance: str = ""
+    ) -> dict[int, tuple[Face, tuple[float, float, float]]]:
         """This method returns an object or objects in the FaceArray closest to the given set of points, where
         the given points need not lie on the faces in the FaceArray.
 
@@ -311,4 +314,4 @@ class FaceArray(List[Face]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {0: (Face(), (0.0, 0.0, 0.0))}

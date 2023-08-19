@@ -66,7 +66,10 @@ class InputImperfection(Imperfection):
         InputImperfection
             A InputImperfection object.
         """
-        super().__init__(name)
+        super().__init__()
+        self.name = name
+        self.file = file
+        self.system = system
 
     def setValues(
         self,

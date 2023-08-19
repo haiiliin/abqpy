@@ -85,13 +85,13 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> IgnoredVertex:
-        return IgnoredVertex()
+    def getSequenceFromMask(self, mask: str) -> IgnoredVertex:  # type: ignore
+        ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredVertex]:
-        return [IgnoredVertex()]
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredVertex]:  # type: ignore
+        ...
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, list[IgnoredVertex]]:

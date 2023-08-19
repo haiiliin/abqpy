@@ -6,6 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
 from .Cell import Cell
+from .Face import Face
 from .FaceArray import FaceArray
 
 
@@ -59,7 +60,7 @@ class CellArray(List[Cell]):
         self,
         coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
-    ) -> Cell:
+    ) -> Cell:  # type: ignore
         ...
 
     @overload
@@ -68,7 +69,7 @@ class CellArray(List[Cell]):
         self,
         coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[Cell]:
+    ) -> list[Cell]:  # type: ignore
         ...
 
     @overload
@@ -77,11 +78,11 @@ class CellArray(List[Cell]):
         self,
         *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[Cell]:
+    ) -> list[Cell]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs) -> Union[Cell, list[Cell]]:
+    def findAt(self, *args, **kwargs) -> Union[Cell, list[Cell]]:  # type: ignore
         """This method returns the object or objects in the CellArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any entity that is at the
         arbitrary point specified or at a distance of less than 1E-6 from the arbitrary point. If nothing is
@@ -129,20 +130,20 @@ class CellArray(List[Cell]):
         FaceArray
             A FaceArray object representing the faces on the exterior of the cells.
         """
+        return FaceArray([Face()])
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Cell:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Cell:
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Cell]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Cell]:  # type: ignore
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, list[Cell]]:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, list[Cell]]:  # type: ignore
         """This method returns the object or objects in the CellArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large number of
         objects are involved, this method is highly efficient.
@@ -162,7 +163,7 @@ class CellArray(List[Cell]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return Cell() if isinstance(mask, str) else [Cell()]
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -173,7 +174,7 @@ class CellArray(List[Cell]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
@@ -207,7 +208,7 @@ class CellArray(List[Cell]):
         CellArray
             A CellArray object, which is a sequence of Cell objects.
         """
-        ...
+        return CellArray([Cell()])
 
     @abaqus_method_doc
     def getByBoundingCylinder(
@@ -234,7 +235,7 @@ class CellArray(List[Cell]):
         CellArray
             A CellArray object, which is a sequence of Cell objects.
         """
-        ...
+        return CellArray([Cell()])
 
     @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> CellArray:
@@ -252,7 +253,7 @@ class CellArray(List[Cell]):
         CellArray
             A CellArray object, which is a sequence of Cell objects.
         """
-        ...
+        return CellArray([Cell()])
 
     @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
@@ -269,4 +270,4 @@ class CellArray(List[Cell]):
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}

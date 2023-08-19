@@ -99,7 +99,7 @@ class MeshNode:
         edges: Sequence[MeshEdge]
             A tuple of MeshEdge objects
         """
-        ...
+        return (MeshEdge(),)
 
     @abaqus_method_doc
     def getElemFaces(self) -> tuple[MeshFace, ...]:
@@ -110,7 +110,7 @@ class MeshNode:
         faces: Sequence[MeshFace]
             A tuple of MeshFace objects
         """
-        ...
+        return (MeshFace(),)
 
     @abaqus_method_doc
     def getElements(self) -> tuple[MeshElement, ...]:
@@ -121,7 +121,7 @@ class MeshNode:
         elements: Sequence[MeshElement]
             A tuple of MeshElement objects
         """
-        ...
+        return (MeshElement(),)
 
     @abaqus_method_doc
     def getNodesByFeatureEdge(self, angle: float) -> MeshNodeArray:
@@ -138,7 +138,7 @@ class MeshNode:
         nodes: MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def setValues(self, label: int | None = None) -> None:

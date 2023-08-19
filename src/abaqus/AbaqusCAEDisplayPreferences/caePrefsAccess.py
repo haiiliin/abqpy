@@ -36,8 +36,7 @@ def getGuiPrefsFileName() -> str:
     str
         A String with the default file name for the GUI preferences file.
     """
-    # TODO: Implement this function
-    ...
+    return ""
 
 
 @abaqus_function_doc
@@ -60,8 +59,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> list[str]:
     list[str]
         A list of Strings of displayNames.
     """
-    # TODO: Implement this function
-    ...
+    return []
 
 
 @abaqus_function_doc
@@ -97,8 +95,7 @@ def printValuesList(
         A String displaying the path, name, and value for all of the options in the object that
         you select.
     """
-    # TODO: Implement this function
-    ...
+    return ""
 
 
 @abaqus_function_doc

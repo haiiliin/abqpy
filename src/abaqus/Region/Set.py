@@ -228,7 +228,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> Set:
@@ -256,7 +256,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
@@ -287,7 +287,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
@@ -324,7 +324,7 @@ class Set(Region):
         Set
             A Set object.
         """
-        ...
+        return Set(name)
 
     @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
@@ -351,4 +351,4 @@ class Set(Region):
         Set
             A Set object or a tuple of Set objects.
         """
-        ...
+        return Set("")

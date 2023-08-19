@@ -124,18 +124,18 @@ class VertexArray(List[Vertex]):
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
+    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:  # type: ignore
         ...
 
     @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[ConstrainedSketchVertex]:
+    def getSequenceFromMask(self, mask: Sequence[str]) -> list[ConstrainedSketchVertex]:  # type: ignore
         ...
 
     @abaqus_method_doc
     def getSequenceFromMask(
         self, mask: Union[str, Sequence[str]]
-    ) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:
+    ) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:  # type: ignore
         """This method returns the object or objects in the VertexArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
@@ -147,10 +147,10 @@ class VertexArray(List[Vertex]):
 
         Returns
         -------
-        ConstrainedSketchVertex
+        ConstrainedSketchVertex | list[ConstrainedSketchVertex]
             A ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return ConstrainedSketchVertex() if isinstance(mask, str) else [ConstrainedSketchVertex()]
 
     @abaqus_method_doc
     def getMask(self) -> str:
@@ -161,7 +161,7 @@ class VertexArray(List[Vertex]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
     def getByBoundingBox(
@@ -195,10 +195,10 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
+    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding cylinder.
 
         Parameters
@@ -217,10 +217,10 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str):
+    def getByBoundingSphere(self, center: tuple, radius: str) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding sphere.
 
         Parameters
@@ -235,10 +235,10 @@ class VertexArray(List[Vertex]):
         VertexArray
             A VertexArray object, which is a sequence of ConstrainedSketchVertex objects..
         """
-        ...
+        return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getBoundingBox(self):
+    def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the vertex sequence.
 
@@ -252,10 +252,10 @@ class VertexArray(List[Vertex]):
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
         """
-        ...
+        return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict[int, tuple[Vertex, tuple]]:
         """This method returns a object or objects in the VertexArray closest to the given set of points, where
         the given points need not lie on ConstrainedSketchVertex objects in the VertexArray.
 
@@ -290,4 +290,4 @@ class VertexArray(List[Vertex]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {0: (Vertex(), (0.0, 0.0, 0.0))}

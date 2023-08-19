@@ -1,9 +1,11 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Dict
+from typing import TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Mesh.MeshElement import MeshElement
+from ..Mesh.MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
 if TYPE_CHECKING:  # to avoid circular imports
@@ -74,10 +76,10 @@ class Edge:
         Boolean
             A Boolean value of True if the tangent is flipped and False if not.
         """
-        ...
+        return True
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: tuple[float, float, float]) -> Dict:
+    def getCurvature(self, parameter: float, point: tuple[float, float, float]) -> dict[str, float]:
         """This method returns curvature information at a location on the edge.
 
         Parameters
@@ -102,7 +104,7 @@ class Edge:
         ------
         The given edge is straight
         """
-        ...
+        return {"evaluationPoint": 0.0, "curvature": 0.0, "radius": 0.0, "tangent": 0.0}
 
     @abaqus_method_doc
     def getFaces(self) -> tuple[int]:
@@ -113,7 +115,7 @@ class Edge:
         tuple[int]
             A tuple of integers.
         """
-        ...
+        return (0,)
 
     @abaqus_method_doc
     def getAdjacentEdges(self) -> EdgeArray:
@@ -124,7 +126,7 @@ class Edge:
         EdgeArray
             An EdgeArray object, which is a sequence of Edge objects.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getEdgesByEdgeAngle(self, angle: str) -> EdgeArray:
@@ -141,7 +143,7 @@ class Edge:
         EdgeArray
             An EdgeArray object, which is a sequence of Edgeobjects.
         """
-        ...
+        return EdgeArray([Edge()])
 
     @abaqus_method_doc
     def getNodes(self) -> MeshNodeArray:
@@ -152,7 +154,7 @@ class Edge:
         MeshNodeArray
             A MeshNodeArray object, which is a sequence of MeshNode objects.
         """
-        ...
+        return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
     def getElements(self) -> MeshElementArray:
@@ -163,7 +165,7 @@ class Edge:
         MeshElementArray
             A MeshElementArray object which is a sequence of MeshElement objects.
         """
-        ...
+        return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
     def getRadius(self) -> float:
@@ -178,7 +180,7 @@ class Edge:
         ------
         The given edges is not circular
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getSize(self, printResults: bool = True) -> float:
@@ -194,7 +196,7 @@ class Edge:
         float
             A Float.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getVertices(self) -> tuple[int]:
@@ -209,4 +211,4 @@ class Edge:
             A tuple of integers.
 
         """
-        ...
+        return (0,)

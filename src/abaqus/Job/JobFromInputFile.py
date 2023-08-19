@@ -43,14 +43,12 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     #: Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
     #: the type JobFromInputFile, **analysis** = UNKNOWN.
-    analysis: Literal[C.STANDARD, C.EXPLICIT, C.UNKNOWN] | None = None
+    analysis: Literal[C.STANDARD, C.EXPLICIT, C.UNKNOWN]
 
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Literal[
-        C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED
-    ] | None = None
+    status: Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
 
     #: A MessageArray object specifying the messages received during an analysis.
     messages: MessageArray = []
