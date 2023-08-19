@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -39,14 +39,12 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     #: Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
     #: the type JobFromInputFile, **analysis** = UNKNOWN.
-    analysis: Optional[Literal[C.STANDARD, C.EXPLICIT, C.UNKNOWN]] = None
+    analysis: Literal[C.STANDARD, C.EXPLICIT, C.UNKNOWN]
 
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Optional[
-        Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
-    ] = None
+    status: Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
 
     #: A MessageArray object specifying the messages received during an analysis.
     messages: MessageArray = []
@@ -149,10 +147,10 @@ class JobFromInputFile(Job):
         name: str,
         inputFileName: str,
         type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS,
-        queue: Optional[str] = "",
+        queue: str | None = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: Optional[str] = "",
+        atTime: str | None = "",
         scratch: str = "",
         userSubroutine: str = "",
         numCpus: int = 1,

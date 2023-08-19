@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -124,7 +126,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     adjustTolerance: float = 0
 
     #: A Region object specifying the Set object to which the adjustment is to be applied.
-    adjustSet: Optional[Region] = None
+    adjustSet: Region | None = None
 
     #: A SymbolicConstant specifying the discretization method. Possible values are
     #: NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
@@ -150,11 +152,11 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: None or a sequence of Floats specifying the half thread angle used for bolt clearance.
     #: The default value is None.
-    halfThreadAngle: Optional[str] = None
+    halfThreadAngle: str | None = None
 
     #: None or a sequence of Floats specifying the pitch used for bolt clearance. The default
     #: value is None.
-    pitch: Optional[str] = None
+    pitch: str | None = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
@@ -166,14 +168,14 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A DatumAxis object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
-    datumAxis: Optional[DatumAxis] = None
+    datumAxis: DatumAxis | None = None
 
     #: A Boolean specifying whether to reverse the bolt clearance direction given by the datum
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
     #: A Region object specifying the contact region for which clearance is specified.
-    clearanceRegion: Optional[Region] = None
+    clearanceRegion: Region | None = None
 
     #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
     #: SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
@@ -182,7 +184,7 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A Region object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
-    bondingSet: Optional[Region] = None
+    bondingSet: Region | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -203,21 +205,27 @@ class SurfaceToSurfaceContactStd(Interaction):
         extensionZone: float = 0,
         adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
         adjustTolerance: float = 0,
-        adjustSet: Optional[Region] = None,
+        adjustSet: Region | None = None,
         enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+<<<<<<< HEAD
         bondingSet: Optional[Region] = None,
+=======
+        bondingSet: Region | None = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -363,21 +371,27 @@ class SurfaceToSurfaceContactStd(Interaction):
         extensionZone: float = 0,
         adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
         adjustTolerance: float = 0,
-        adjustSet: Optional[Region] = None,
+        adjustSet: Region | None = None,
         enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
         initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
-        halfThreadAngle: Optional[str] = None,
-        pitch: Optional[str] = None,
+        halfThreadAngle: str | None = None,
+        pitch: str | None = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None,
+        datumAxis: DatumAxis | None = None,
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Optional[Region] = None,
+        clearanceRegion: Region | None = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+<<<<<<< HEAD
         bondingSet: Optional[Region] = None,
+=======
+        bondingSet: Region | None = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT] | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the step where it
         is created.

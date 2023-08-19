@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -167,4 +167,4 @@ class DGCommonOptions:
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: Optional[float] = None
+    coordinateScaleFactors: float | None = None

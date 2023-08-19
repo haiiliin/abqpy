@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+from __future__ import annotations
+
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -34,6 +39,10 @@ class MesherOptions:
         quadAlgorithm: Literal[C.MEDIAL_AXIS, C.ADVANCING_FRONT] = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
+<<<<<<< HEAD
+=======
+        guiPreferredElements: SymbolicConstant | None = None,
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method modifies the MesherOptions object.
 

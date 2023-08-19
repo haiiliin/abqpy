@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -30,18 +30,18 @@ class DefaultChartOptions:
     def setValues(
         self,
         areaStyle: AreaStyle,
-        aspectRatio: Optional[float] = None,
-        defaultAxis1Options: Optional[Axis] = None,
-        defaultAxis2Options: Optional[Axis] = None,
-        gridArea: Optional[Area] = None,
-        legend: Optional[Legend] = None,
-        majorAxis1GridStyle: Optional[LineStyle] = None,
-        majorAxis2GridStyle: Optional[LineStyle] = None,
-        minorAxis1GridStyle: Optional[LineStyle] = None,
-        minorAxis2GridStyle: Optional[LineStyle] = None,
-        tagAreaStyle: Optional[AreaStyle] = None,
-        tagBorder: Optional[LineStyle] = None,
-        tagTextStyle: Optional[TextStyle] = None,
+        aspectRatio: float | None = None,
+        defaultAxis1Options: Axis | None = None,
+        defaultAxis2Options: Axis | None = None,
+        gridArea: Area | None = None,
+        legend: Legend | None = None,
+        majorAxis1GridStyle: LineStyle | None = None,
+        majorAxis2GridStyle: LineStyle | None = None,
+        minorAxis1GridStyle: LineStyle | None = None,
+        minorAxis2GridStyle: LineStyle | None = None,
+        tagAreaStyle: AreaStyle | None = None,
+        tagBorder: LineStyle | None = None,
+        tagTextStyle: TextStyle | None = None,
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the DefaultChartOptions object.

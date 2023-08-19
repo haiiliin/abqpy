@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -26,7 +26,7 @@ class SurfaceSection(Section):
     """
 
     #: A RebarLayers object specifying reinforcement properties.
-    rebarLayers: Optional[RebarLayers] = None
+    rebarLayers: RebarLayers | None = None
 
     #: A String specifying the repository key.
     name: str

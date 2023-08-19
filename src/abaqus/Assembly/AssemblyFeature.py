@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -35,8 +37,8 @@ class AssemblyFeature(FeatureBase):
         targetFaces: Sequence[Face],
         targetElementFaces: Sequence[MeshFace],
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectionDirStartPt: Optional[float] = None,
-        projectionDirEndPt: Optional[float] = None,
+        projectionDirStartPt: float | None = None,
+        projectionDirEndPt: float | None = None,
         sourceToTargetProjMethod: SymbolicConstant = PROJECT_BY_NUMBER,
         numProjections: str = "",
         projectionDistance: str = "",
