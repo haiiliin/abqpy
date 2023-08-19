@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 from typing import Optional, Union
+
+=======
+from __future__ import annotations
+
+from typing import Sequence, Union
+
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from typing_extensions import Literal
 
@@ -6,13 +14,14 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (
+from ..UtilityAndView.abaqusConstants import (  # 4879))
     ALL,
     AXIS_1,
     CONNECTOR,
     CONTINUUM,
     DEFAULT,
     FACETOFACE,
+    HEAD,
     MASS_PROPORTIONAL,
     MODEL,
     NONE,
@@ -22,8 +31,22 @@ from ..UtilityAndView.abaqusConstants import (
     STEP,
     UNIFORM,
     Boolean,
+    Fix,
+    R,
+    SymbolicConstant,
+    <<<<<<<,
+    =======,
+    >>>>>>>,
+    [typing],
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (  # 4879))
+    annotations,
+    d7be4b47,
+    mypy,
+    typing,
+    wrong,
+)
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
 from .DebondVCCT import DebondVCCT
@@ -51,7 +74,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         assignedSurfaces: tuple,
         propertyPrefix: str,
         orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         scriptName: str = "",
     ) -> AssembledFastener:
         """This method creates an AssembledFastener object. Although the constructor is available both for parts
@@ -270,7 +293,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         ur3: Boolean = ON,
         coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ) -> DiscreteFastener:
         """This method creates a DiscreteFastener object. Although the constructor is available both for parts
         and for the assembly, DiscreteFastener objects are currently supported only under the assembly.
@@ -421,8 +444,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: Optional[tuple] = None,
-        targetSurfaces: RegionArray = MODEL,
+        directionVector: tuple | None = None,
+        targetSurfaces: RegionArray | SymbolicConstant = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
@@ -434,14 +457,14 @@ class EngineeringFeature(EngineeringFeatureBase):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: Optional[int] = None,
+        connectorOrientationLocalCsys1: int | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: Optional[int] = None,
+        connectorOrientationLocalCsys2: int | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -608,7 +631,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         i12: float = 0,
         i13: float = 0,
         i23: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         alpha: float = 0,
         composite: float = 0,
     ) -> PointMassInertia:
@@ -695,7 +718,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         dof: int,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -762,7 +785,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         axis: Literal[C.FIXED_DOF, C.NODAL_LINE],
         dof1: int = 0,
         dof2: int = 0,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -840,8 +863,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         crackDomain: Region,
         allowCrackGrowth: Boolean = ON,
-        crackLocation: Optional[Region] = None,
-        singularityCalcRadius: Optional[float] = None,
+        crackLocation: Region | None = None,
+        singularityCalcRadius: float | None = None,
         interactionProperty: str = "",
         elemId: tuple = (),
         nodeId: tuple = (),
@@ -920,3 +943,117 @@ class EngineeringFeature(EngineeringFeatureBase):
             autoDetectValue,
         )
         return xFEMCrack
+<<<<<<< HEAD
+=======
+
+    def FileImperfection(
+        self,
+        name: str,
+        file: str,
+        step: int,
+        linearSuperpositions: Sequence[Sequence[int]],
+        region: Region = Region(),
+        increment: int = -1,
+    ):
+        """This method creates a FileImperfection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].rootAssembly.engineeringFeatures.FileImperfection
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        file
+            A String specifying the results file from a previous analysis from which the file imperfection is applied.
+        step
+            An Int specifying the step number (in the analysis whose file is being used as input to this option) from
+            which the modal or displacement data are to be read.
+        linearSuperpositions
+            A sequence of sequences of Integers and Floats specifying linearSuperpositions. The items in the table data
+            are described below.
+        region
+            A Region object specifying the region to which the file imperfection is applied. By default, the
+            imperfection will be applied to all nodes in the model.
+        increment
+            An Int specifying the increment number (in the analysis whose file is being used as input to this option)
+            from which the displacement data are to be read. By default, the data will be read from the last increment
+            available for the specified step.
+
+        Returns
+        -------
+        FileImperfection
+            A FileImperfection object.
+        """
+        self.imperfections[name] = fileImperfection = FileImperfection(
+            name, file, step, linearSuperpositions, region, increment
+        )
+        return fileImperfection
+
+    def InputImperfection(
+        self,
+        name: str,
+        file: str,
+        system: Literal[C.R, C.C, C.S] = R,
+    ):
+        """This method creates a InputImperfection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].rootAssembly.engineeringFeatures.InputImperfection
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        file
+            A String specifying the name of the alternate input file containing the imperfection data.
+        system
+            A SymbolicConstant specifying the coordinate system. The imperfection values in the alternate input file
+            being used as input to this option would be treated as perturbation values of respective coordinates.
+            Possible values are R, C and S. The default value is R.
+
+        Returns
+        -------
+        InputImperfection
+            A InputImperfection object.
+        """
+        self.imperfections[name] = inputImperfection = InputImperfection(name, file, system)
+        return inputImperfection
+
+    def DataImperfection(
+        self,
+        name: str,
+        imperfectionTable: Sequence[Sequence[Union[int, float]]],
+        system: Literal[C.R, C.C, C.S] = R,
+    ):
+        """This method creates a DataImperfection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].rootAssembly.engineeringFeatures.DataImperfection
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        imperfectionTable: Sequence[Sequence[Union[int, float]]]
+            A sequence of sequences of Ints and Floats specifying the imperfection components at a given node. The
+            items in the table data are described below.
+        system
+            A SymbolicConstant specifying the coordinate system. The imperfection values in the data lines would be
+            treated as perturbation values of the respective coordinates. Possible values are R, C, and S. The default
+            value is R.
+
+        Returns
+        -------
+        DataImperfection
+            A DataImperfection object.
+        """
+        self.imperfections[name] = dataImperfection = DataImperfection(name, imperfectionTable, system)
+        return dataImperfection
+>>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

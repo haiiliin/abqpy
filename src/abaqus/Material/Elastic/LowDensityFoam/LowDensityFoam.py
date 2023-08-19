@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -36,10 +36,10 @@ class LowDensityFoam:
     def __init__(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: Optional[float] = None,
+        maxAllowablePrincipalStress: float | None = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: Literal[C.PRINCIPAL, C.VOLUMETRIC] = VOLUMETRIC,
-        mu0: Optional[float] = None,
+        mu0: float | None = None,
         mu1: float = 0,
         alpha: float = 2,
     ):

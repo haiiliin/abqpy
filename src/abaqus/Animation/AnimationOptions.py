@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -59,7 +59,7 @@ class AnimationOptions(_OptionsBase):
 
     #: A Float specifying the maximum time for time based time history animation when
     #: **maxTimeAutoCompute** = False.
-    maxTime: Optional[float] = None
+    maxTime: float | None = None
 
     #: A Boolean specifying whether the animation maximum time value should be computed from
     #: the active frames when **timeHistoryMode** is set to TIME_BASED. The default value is ON.
@@ -68,11 +68,11 @@ class AnimationOptions(_OptionsBase):
     #: A Float specifying the maximum time when **timeHistoryMode** is set to TIME_BASED and the
     #: **maxTimeAutoCompute** value is True. This value is computed as the maximum time of all
     #: active frames displayed in viewports where the animation is active.
-    maxTimeAutoValue: Optional[float] = None
+    maxTimeAutoValue: float | None = None
 
     #: A Float specifying the minimum time for time based time history animation when
     #: **minTimeAutoCompute** = False.
-    minTime: Optional[float] = None
+    minTime: float | None = None
 
     #: A Boolean specifying whether the animation minimum time value should be computed from
     #: the active frames when **timeHistoryMode** is set to TIME_BASED. The default value is ON.
@@ -81,11 +81,11 @@ class AnimationOptions(_OptionsBase):
     #: A Float specifying the minimum time when **timeHistoryMode** is set to TIME_BASED and the
     #: **minTimeAutoCompute** value is True. This value is computed as the minimum time of all
     #: active frames displayed in viewports where the animation is active.
-    minTimeAutoValue: Optional[float] = None
+    minTimeAutoValue: float | None = None
 
     #: A Float specifying the time increment for frame selection when **timeHistoryMode** is set
     #: to TIME_BASED.
-    timeIncrement: Optional[float] = None
+    timeIncrement: float | None = None
 
     #: A Boolean specifying whether to use the highlight method to draw the time tracker line
     #: and symbols. The default value is ON.
@@ -146,11 +146,11 @@ class AnimationOptions(_OptionsBase):
         relativeScaling: Literal[C.HARMONIC, C.SCALE_FACTOR, C.HALF_CYCLE, C.FULL_CYCLE] = HALF_CYCLE,
         numScaleFactorFrames: int = 7,
         timeHistoryMode: Literal[C.FRAME_BASED, C.TIME_BASED] = FRAME_BASED,
-        maxTime: Optional[float] = None,
+        maxTime: float | None = None,
         maxTimeAutoCompute: Boolean = ON,
-        minTime: Optional[float] = None,
+        minTime: float | None = None,
         minTimeAutoCompute: Boolean = ON,
-        timeIncrement: Optional[float] = None,
+        timeIncrement: float | None = None,
         xyUseHighlightMethod: Boolean = ON,
         xyShowLine: Boolean = ON,
         xyLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,

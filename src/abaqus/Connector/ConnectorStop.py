@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -25,11 +25,11 @@ class ConnectorStop(ConnectorBehaviorOption):
 
     #: None or a Float specifying the lower bound for the connector's relative position for all
     #: specified components, or no lower bound. The default value is None.
-    minMotion: Optional[float] = None
+    minMotion: float | None = None
 
     #: None or a Float specifying the upper bound for the connector's relative position for all
     #: specified components, or no upper bound. The default value is None.
-    maxMotion: Optional[float] = None
+    maxMotion: float | None = None
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
@@ -37,7 +37,7 @@ class ConnectorStop(ConnectorBehaviorOption):
     components: tuple = ()
 
     @abaqus_method_doc
-    def __init__(self, minMotion: Optional[float] = None, maxMotion: Optional[float] = None, components: tuple = ()):
+    def __init__(self, minMotion: float | None = None, maxMotion: float | None = None, components: tuple = ()):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
         .. note::

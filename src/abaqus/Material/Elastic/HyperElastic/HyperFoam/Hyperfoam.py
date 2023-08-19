@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -57,7 +57,7 @@ class Hyperfoam:
     def __init__(
         self,
         testData: Boolean = OFF,
-        poisson: Optional[float] = None,
+        poisson: float | None = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,
