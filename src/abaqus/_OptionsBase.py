@@ -1,12 +1,13 @@
+from __future__ import annotations
+
 import inspect
-from typing import List
 
 
 class _OptionsBase:
     """This is a base class for all options classes."""
 
     @classmethod
-    def get_user_attributes(cls) -> List[str]:
+    def get_user_attributes(cls) -> list[str]:
         """Returns a list of the user attributes of the class.
 
         Returns

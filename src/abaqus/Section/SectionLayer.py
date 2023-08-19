@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -69,7 +69,7 @@ class SectionLayer:
     #: for the relative orientation of this layer. If this reference is valid it is used as the
     #: relative orientation of the layer, otherwise the **orientAngle** is used as described. The
     #: default value is None.
-    orientation: Optional[SymbolicConstant] = None
+    orientation: SymbolicConstant
 
     #: A String specifying the name of the field specifying the additional rotation. The
     #: default value is "".
@@ -86,7 +86,7 @@ class SectionLayer:
         angle: float = 0,
         additionalRotationType: Literal[C.ROTATION_NONE, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
         plyName: str = "",
-        orientation: Optional[SymbolicConstant] = None,
+        orientation: SymbolicConstant | None = None,
         additionalRotationField: str = "",
     ):
         """This method creates a SectionLayer object.

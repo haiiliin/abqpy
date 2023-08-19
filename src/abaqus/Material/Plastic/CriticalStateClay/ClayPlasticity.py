@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -61,7 +61,7 @@ class ClayPlasticity:
     def __init__(
         self,
         table: tuple,
-        intercept: Optional[float] = None,
+        intercept: float | None = None,
         hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

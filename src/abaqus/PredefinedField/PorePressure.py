@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Union
 
 from typing_extensions import Literal
@@ -5,7 +7,13 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import CONSTANT_RATIO, MAGNITUDE, UNIFORM, Boolean
+from ..UtilityAndView.abaqusConstants import (
+    CONSTANT_RATIO,
+    MAGNITUDE,
+    OFF,
+    UNIFORM,
+    Boolean,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .PredefinedField import PredefinedField
 
@@ -32,17 +40,17 @@ class PorePressure(PredefinedField):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        porePressure1: float = ...,
-        porePressure2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        porePressure1: float = 0,
+        porePressure2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
-        pressure2Field: str = ...,
+        pressure2Field: str = "",
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
-        fileName: str = ...,
-        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
-        step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: Boolean = ...,
+        fileName: str = "",
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = C.LAST_INCREMENT,
+        step: Union[int, Literal[C.LAST_STEP]] = C.LAST_STEP,
+        interpolate: Boolean = OFF,
     ) -> None:
         """This method creates a PorePressure predefined field object.
 
@@ -102,10 +110,10 @@ class PorePressure(PredefinedField):
     def setValues(
         self,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
-        porePressure1: float = ...,
-        porePressure2: float = ...,
-        coord1: float = ...,
-        coord2: float = ...,
+        porePressure1: float = 0,
+        porePressure2: float = 0,
+        coord1: float = 0,
+        coord2: float = 0,
         pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
         pressure2Field: str = ...,
         variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,

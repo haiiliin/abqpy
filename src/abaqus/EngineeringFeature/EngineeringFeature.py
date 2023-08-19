@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -22,6 +24,7 @@ from ..UtilityAndView.abaqusConstants import (
     STEP,
     UNIFORM,
     Boolean,
+    SymbolicConstant,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AssembledFastener import AssembledFastener
@@ -51,7 +54,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         assignedSurfaces: tuple,
         propertyPrefix: str,
         orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         scriptName: str = "",
     ) -> AssembledFastener:
         """This method creates an AssembledFastener object. Although the constructor is available both for parts
@@ -270,7 +273,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         ur3: Boolean = ON,
         coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
     ) -> DiscreteFastener:
         """This method creates a DiscreteFastener object. Although the constructor is available both for parts
         and for the assembly, DiscreteFastener objects are currently supported only under the assembly.
@@ -421,8 +424,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: Optional[tuple] = None,
-        targetSurfaces: RegionArray = MODEL,
+        directionVector: tuple | None = None,
+        targetSurfaces: RegionArray | SymbolicConstant = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
@@ -434,14 +437,14 @@ class EngineeringFeature(EngineeringFeatureBase):
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: Optional[int] = None,
+        localCsys: int | None = None,
         connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: Optional[int] = None,
+        connectorOrientationLocalCsys1: int | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: Optional[int] = None,
+        connectorOrientationLocalCsys2: int | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -608,7 +611,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         i12: float = 0,
         i13: float = 0,
         i23: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         alpha: float = 0,
         composite: float = 0,
     ) -> PointMassInertia:
@@ -695,7 +698,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         dof: int,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -762,7 +765,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         axis: Literal[C.FIXED_DOF, C.NODAL_LINE],
         dof1: int = 0,
         dof2: int = 0,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -840,8 +843,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         crackDomain: Region,
         allowCrackGrowth: Boolean = ON,
-        crackLocation: Optional[Region] = None,
-        singularityCalcRadius: Optional[float] = None,
+        crackLocation: Region | None = None,
+        singularityCalcRadius: float | None = None,
         interactionProperty: str = "",
         elemId: tuple = (),
         nodeId: tuple = (),
