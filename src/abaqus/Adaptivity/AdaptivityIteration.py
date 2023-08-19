@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .ErrorIndicatorResult import ErrorIndicatorResult
-from .RuleResult import RuleResult
+from .ErrorIndicatorResult import ErrorIndicatorResult as ErrorIndicatorResultType
+from .RuleResult import RuleResult as RuleResultType
 
 
 @abaqus_class_doc
@@ -23,7 +21,7 @@ class AdaptivityIteration:
     #: A repository of RuleResult objects specifying the calculated results from sizing
     #: functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
     #: process.
-    ruleResults: Dict[str, RuleResult] = {}
+    ruleResults: dict[str, RuleResultType] = {}
 
     #: An Int specifying the sequence number for this iteration in the adaptivity process.
     iteration: int
@@ -81,7 +79,7 @@ class AdaptivityIteration:
         ...
 
     @abaqus_method_doc
-    def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResult:
+    def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResultType:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in a
         RemeshingRule for a given adaptivity iteration.
 
@@ -108,18 +106,18 @@ class AdaptivityIteration:
         ------
         AbaqusException
         """
-        self.ruleResults[name] = ruleResult = ErrorIndicatorResult(name, results)
+        self.ruleResults[name] = ruleResult = ErrorIndicatorResultType(name, results)
         return ruleResult
 
     @abaqus_method_doc
     def RuleResult(
         self,
         name: str,
-        indicatorResults: Dict[str, ErrorIndicatorResult],
+        indicatorResults: dict[str, ErrorIndicatorResultType],
         numElems: int,
         minSizeElemCount: int,
         satisfiedVars: tuple = (),
-    ) -> RuleResult:
+    ) -> RuleResultType:
         """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity iteration.
 
         .. note::
@@ -153,7 +151,7 @@ class AdaptivityIteration:
         ------
         AbaqusException
         """
-        self.ruleResults[name] = ruleResult = RuleResult(
+        self.ruleResults[name] = ruleResult = RuleResultType(
             name, indicatorResults, numElems, minSizeElemCount, satisfiedVars
         )
         return ruleResult

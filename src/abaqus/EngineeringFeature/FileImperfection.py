@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Sequence
 
 from ..Region.Region import Region
@@ -95,7 +97,8 @@ class FileImperfection(Imperfection):
         FileImperfection
             A FileImperfection object.
         """
-        super().__init__(name)
+        super().__init__()
+        self.name = name
 
     def setValues(
         self,

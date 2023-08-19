@@ -1,4 +1,6 @@
-from typing import Dict, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -25,19 +27,19 @@ class EngineeringFeatureBase:
     """
 
     #: A repository of Inertia objects.
-    inertias: Dict[str, Inertia] = {}
+    inertias: dict[str, Inertia] = {}
 
     #: A repository of Crack objects.
-    cracks: Dict[str, Crack] = {}
+    cracks: dict[str, Crack] = {}
 
     #: A repository of Fastener objects.
-    fasteners: Dict[str, Fastener] = {}
+    fasteners: dict[str, Fastener] = {}
 
     #: A repository of SpringDashpot objects.
-    springDashpots: Dict[str, SpringDashpot] = {}
+    springDashpots: dict[str, SpringDashpot] = {}
 
     #: A repository of Imperfection objects.
-    imperfections: Dict[str, Imperfection] = {}
+    imperfections: dict[str, Imperfection] = {}
 
     @abaqus_method_doc
     def assignSeam(self, regions: Sequence[Region]):

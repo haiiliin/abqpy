@@ -37,7 +37,7 @@ class Profile:
 
         Returns
         -------
-        List[Profile]
+        list[Profile]
             A list of Profile objects.
         """
         ...

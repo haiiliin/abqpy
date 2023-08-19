@@ -20,7 +20,7 @@ class Transform:
 
         Returns
         -------
-        Tuple[float, float, float, float, float, float, float, float, float, float, float, float]
+        tuple[float, float, float, float, float, float, float, float, float, float, float, float]
             A tuple of 12 Floats.
         """
         ...

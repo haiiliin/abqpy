@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Sequence, Union
 
 from typing_extensions import Literal
@@ -77,7 +79,10 @@ class DataImperfection(Imperfection):
         DataImperfection
             A DataImperfection object.
         """
-        super().__init__(name)
+        super().__init__()
+        self.name = name
+        self.imperfectionTable = imperfectionTable
+        self.system = system
 
     def setValues(
         self,

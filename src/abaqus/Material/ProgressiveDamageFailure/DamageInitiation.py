@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -236,13 +236,13 @@ class DamageInitiation:
     direction: SymbolicConstant = NMORI
 
     #: A tuple of tuples of Floats specifying the items described in the "Table data" section.
-    table: Optional[float] = None
+    table: float | None = None
 
     #: A DamageEvolution object.
-    damageEvolution: Optional[DamageEvolution] = None
+    damageEvolution: DamageEvolution | None = None
 
     #: A DamageStabilization object.
-    damageStabilization: Optional[DamageStabilization] = None
+    damageStabilization: DamageStabilization | None = None
 
     #: A DamageStabilizationCohesive object.
     damageStabilizationCohesive: DamageStabilizationCohesive = DamageStabilizationCohesive()
@@ -1591,7 +1591,7 @@ class DamageInitiation:
         dependencies: int = 0,
         mixedModeBehavior: Literal[C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK] = MODE_INDEPENDENT,
         modeMixRatio: Literal[C.TRACTION, C.ENERGY] = ENERGY,
-        power: Optional[float] = None,
+        power: float | None = None,
         softening: Literal[C.LINEAR, C.EXPONENTIAL, C.TABULAR] = LINEAR,
     ) -> DamageEvolution:
         """This method creates a DamageEvolution object.
@@ -1659,10 +1659,20 @@ class DamageInitiation:
         ------
         RangeError
         """
-        ...
+        return DamageEvolution(
+            type=type,
+            table=table,
+            degradation=degradation,
+            temperatureDependency=temperatureDependency,
+            dependencies=dependencies,
+            mixedModeBehavior=mixedModeBehavior,
+            modeMixRatio=modeMixRatio,
+            power=power,
+            softening=softening,
+        )
 
     @abaqus_method_doc
-    def DamageStabilizationCohesive(self, cohesiveCoeff: Optional[float] = None) -> DamageStabilizationCohesive:
+    def DamageStabilizationCohesive(self, cohesiveCoeff: float | None = None) -> DamageStabilizationCohesive:
         """This method creates a DamageStabilizationCohesive object.
 
         .. note::
@@ -1711,4 +1721,4 @@ class DamageInitiation:
         ------
         RangeError
         """
-        ...
+        return DamageStabilizationCohesive(cohesiveCoeff=cohesiveCoeff)

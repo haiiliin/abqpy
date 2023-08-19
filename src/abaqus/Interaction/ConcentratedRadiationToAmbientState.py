@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -26,30 +26,30 @@ class ConcentratedRadiationToAmbientState(InteractionState):
     """
 
     #: A Float specifying the ambient temperature.
-    ambientTemperature: Optional[float] = None
+    ambientTemperature: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureState: Optional[SymbolicConstant] = None
+    ambientTemperatureState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureAmpState: Optional[SymbolicConstant] = None
+    ambientTemperatureAmpState: SymbolicConstant
 
     #: A Float specifying the emissivity.
-    emissivity: Optional[float] = None
+    emissivity: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    emissivityState: Optional[SymbolicConstant] = None
+    emissivityState: SymbolicConstant
 
     #: A Float specifying the area associated with the node where the concentrated radiation is
     #: applied.
-    nodalArea: Optional[float] = None
+    nodalArea: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the **nodalArea** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    nodalAreaState: Optional[SymbolicConstant] = None
+    nodalAreaState: SymbolicConstant
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
     #: ambient temperature with time.
@@ -67,4 +67,4 @@ class ConcentratedRadiationToAmbientState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

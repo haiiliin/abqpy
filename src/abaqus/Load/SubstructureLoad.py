@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -85,7 +85,7 @@ class SubstructureLoad(Load):
         self,
         stepName: str,
         loadCaseNames: str = "",
-        magnitude: Optional[float] = None,
+        magnitude: float | None = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing SubstructureLoad object in the specified
